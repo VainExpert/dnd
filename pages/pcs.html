@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>PCs</title>
+  <link rel="stylesheet" href="../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">PC Roster</div>
+      <div class="subtitle">Player characters</div>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Search..."/>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="nav">
+        <div class="group">
+          <div class="group-title">Home</div>
+          <a href="../index.html">Homepage</a>
+          <a href="../index.html#content/house-rules/index.md">House Rules</a>
+          <a href="../index.html#content/safety/index.md">Safety</a>
+          <a href="../index.html#content/character-options/index.md">Character Options</a>
+          <a href="../index.html#content/recaps/index.md">Recaps</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Libraries</div>
+          <a href="./bestiary.html">Bestiary</a>
+          <a href="./spells.html">Spells</a>
+          <a href="./items.html">Items</a>
+          <a href="./maps.html">Maps</a>
+          <a href="./pcs.html" class="active">PCs</a>
+          <a href="./tools.html">Tools</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="content" style="max-width:1100px;">
+        <div id="grid" class="card-grid"></div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany } from "../lib.js";
+
+    const grid = document.getElementById("grid");
+    const qEl = document.getElementById("q");
+
+    const files = await loadIndex("../data/pcs/index.json");
+    const pcs = await loadMany("../data/pcs", files);
+
+    function card(p){
+      const portrait = p.portrait ? `<img src="../${escapeHtml(p.portrait)}" alt="" style="width:100%; border-radius:12px; border:1px solid rgba(255,255,255,.08); margin-bottom:10px;" />` : "";
+      const subtitle = [p.race, p.class, p.subclass ? `(${p.subclass})` : null, p.level ? `Lv ${p.level}` : null].filter(Boolean).join(" • ");
+      return `
+        <div class="mini-card">
+          <div class="mini-head">
+            <div class="mini-title">${escapeHtml(p.name)}</div>
+            <div class="mini-sub">${escapeHtml(subtitle || (p.player ? `Player: ${p.player}` : ""))}</div>
+            <div class="pillbar">
+              ${p.ac != null ? `<span class="pill"><b>AC</b> ${escapeHtml(p.ac)}</span>` : ""}
+              ${p.hp != null ? `<span class="pill"><b>HP</b> ${escapeHtml(p.hp)}</span>` : ""}
+              ${p.speed != null ? `<span class="pill"><b>Speed</b> ${escapeHtml(p.speed)} ft.</span>` : ""}
+            </div>
+          </div>
+          <div class="mini-body">
+            ${portrait}
+            ${p.notes ? `<div class="mini-box"><div class="mini-box-title">Notes</div><div class="mini-box-text">${escapeHtml(p.notes)}</div></div>` : ""}
+            ${p.player ? `<div class="mini-footer muted">Player: ${escapeHtml(p.player)}</div>` : ""}
+          </div>
+        </div>
+      `;
+    }
+
+    function matches(p, q){
+      const hay = [p.name, p.player, p.race, p.class, p.subclass, p.notes].join(" ").toLowerCase();
+      return !q || hay.includes(q);
+    }
+
+    function render(){
+      const q = (qEl.value || "").trim().toLowerCase();
+      const filtered = pcs.filter(p => matches(p, q));
+      grid.innerHTML = filtered.map(card).join("") || `<p>No matches.</p>`;
+    }
+
+    qEl.addEventListener("input", render);
+    render();
+  </script>
+</body>
+</html>

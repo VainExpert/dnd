@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Spells</title>
+  <link rel="stylesheet" href="../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Spells</div>
+      <div class="subtitle">Custom spells from JSON</div>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Search..."/>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="nav">
+        <div class="group">
+          <div class="group-title">Home</div>
+          <a href="../index.html">Homepage</a>
+          <a href="../index.html#content/house-rules/index.md">House Rules</a>
+          <a href="../index.html#content/safety/index.md">Safety</a>
+          <a href="../index.html#content/character-options/index.md">Character Options</a>
+          <a href="../index.html#content/recaps/index.md">Recaps</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Libraries</div>
+          <a href="./bestiary.html">Bestiary</a>
+          <a href="./spells.html" class="active">Spells</a>
+          <a href="./items.html">Items</a>
+          <a href="./maps.html">Maps</a>
+          <a href="./pcs.html">PCs</a>
+          <a href="./tools.html">Tools</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="content" style="max-width:1100px;">
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
+          <select id="level" class="select">
+            <option value="">All levels</option>
+            <option value="0">Cantrip</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
+            <option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option>
+          </select>
+          <select id="class" class="select">
+            <option value="">All classes</option>
+          </select>
+        </div>
+
+        <div id="grid" class="card-grid"></div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany } from "../lib.js";
+
+    const grid = document.getElementById("grid");
+    const qEl = document.getElementById("q");
+    const levelEl = document.getElementById("level");
+    const classEl = document.getElementById("class");
+
+    const files = await loadIndex("../data/spells/index.json");
+    const spells = await loadMany("../data/spells", files);
+
+    // Fill class dropdown from data
+    const classes = Array.from(new Set(
+      spells.flatMap(s => Array.isArray(s.classes) ? s.classes : [])
+    )).sort((a,b)=>a.localeCompare(b));
+    for (const c of classes) {
+      const opt = document.createElement("option");
+      opt.value = c;
+      opt.textContent = c;
+      classEl.appendChild(opt);
+    }
+
+    function card(s){
+      const level = Number(s.level ?? 0);
+      const levelLabel = level === 0 ? "Cantrip" : `Level ${level}`;
+      const tags = [
+        s.school ? s.school : null,
+        s.ritual ? "Ritual" : null,
+        s.concentration ? "Concentration" : null,
+      ].filter(Boolean).join(" • ");
+
+      return `
+        <div class="mini-card">
+          <div class="mini-head">
+            <div class="mini-title">${escapeHtml(s.name)}</div>
+            <div class="mini-sub">${escapeHtml(levelLabel)}${tags ? " • " + escapeHtml(tags) : ""}</div>
+            <div class="pillbar">
+              ${s.casting_time ? `<span class="pill"><b>Cast</b> ${escapeHtml(s.casting_time)}</span>` : ""}
+              ${s.range ? `<span class="pill"><b>Range</b> ${escapeHtml(s.range)}</span>` : ""}
+              ${s.duration ? `<span class="pill"><b>Dur</b> ${escapeHtml(s.duration)}</span>` : ""}
+            </div>
+          </div>
+          <div class="mini-body">
+            ${s.components ? `<div class="mini-box"><div class="mini-box-title">Components</div><div class="mini-box-text">${escapeHtml(s.components)}</div></div>` : ""}
+            ${s.text ? `<div class="mini-box"><div class="mini-box-title">Effect</div><div class="mini-box-text">${escapeHtml(s.text)}</div></div>` : ""}
+            ${(s.classes && s.classes.length) ? `<div class="mini-footer muted">Classes: ${escapeHtml(s.classes.join(", "))}</div>` : ""}
+          </div>
+        </div>
+      `;
+    }
+
+    function matches(s, q, lvl, cls){
+      const hay = [
+        s.name, s.school, s.casting_time, s.range, s.duration, s.components,
+        ...(s.classes || []),
+        s.text
+      ].join(" ").toLowerCase();
+
+      if (q && !hay.includes(q)) return false;
+      if (lvl !== "" && String(s.level ?? 0) !== String(lvl)) return false;
+      if (cls && !(s.classes || []).includes(cls)) return false;
+      return true;
+    }
+
+    function render(){
+      const q = (qEl.value || "").trim().toLowerCase();
+      const lvl = levelEl.value;
+      const cls = classEl.value;
+
+      const filtered = spells.filter(s => matches(s, q, lvl, cls));
+      grid.innerHTML = filtered.map(card).join("") || `<p>No matches.</p>`;
+    }
+
+    qEl.addEventListener("input", render);
+    levelEl.addEventListener("change", render);
+    classEl.addEventListener("change", render);
+    render();
+  </script>
+</body>
+</html>

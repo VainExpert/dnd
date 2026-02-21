@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Maps</title>
+  <link rel="stylesheet" href="../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Maps</div>
+      <div class="subtitle">Map library</div>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Search..."/>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="nav">
+        <div class="group">
+          <div class="group-title">Home</div>
+          <a href="../index.html">Homepage</a>
+          <a href="../index.html#content/house-rules/index.md">House Rules</a>
+          <a href="../index.html#content/safety/index.md">Safety</a>
+          <a href="../index.html#content/character-options/index.md">Character Options</a>
+          <a href="../index.html#content/recaps/index.md">Recaps</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Libraries</div>
+          <a href="./bestiary.html">Bestiary</a>
+          <a href="./spells.html">Spells</a>
+          <a href="./items.html">Items</a>
+          <a href="./maps.html" class="active">Maps</a>
+          <a href="./pcs.html">PCs</a>
+          <a href="./tools.html">Tools</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="content" style="max-width:1100px;">
+        <div id="gallery" class="map-grid"></div>
+      </div>
+    </main>
+  </div>
+
+  <div id="modal" class="map-modal" style="display:none;">
+    <div class="map-modal-inner">
+      <button id="close" class="map-close">Close</button>
+      <div id="modalTitle" class="map-modal-title"></div>
+      <img id="modalImg" class="map-modal-img" alt="" />
+      <div id="modalMeta" class="map-modal-meta"></div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { escapeHtml } from "../lib.js";
+
+    const qEl = document.getElementById("q");
+    const gallery = document.getElementById("gallery");
+
+    const modal = document.getElementById("modal");
+    const closeBtn = document.getElementById("close");
+    const modalImg = document.getElementById("modalImg");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalMeta = document.getElementById("modalMeta");
+
+    const idx = await fetch("../data/maps/index.json", { cache: "no-cache" }).then(r => r.json());
+    const maps = idx.maps || [];
+
+    function openMap(m){
+      modalTitle.textContent = m.title || "Map";
+      modalImg.src = `../assets/maps/${m.file}`;
+      modalMeta.textContent = [m.blurb, (m.tags||[]).join(", ")].filter(Boolean).join(" • ");
+      modal.style.display = "block";
+    }
+    function close(){ modal.style.display = "none"; modalImg.src = ""; }
+    closeBtn.addEventListener("click", close);
+    modal.addEventListener("click", (e)=>{ if (e.target === modal) close(); });
+
+    function matches(m, q){
+      const hay = [m.title, m.blurb, ...(m.tags||[])].join(" ").toLowerCase();
+      return !q || hay.includes(q);
+    }
+
+    function render(){
+      const q = (qEl.value || "").trim().toLowerCase();
+      const filtered = maps.filter(m => matches(m, q));
+      gallery.innerHTML = filtered.map(m => `
+        <button class="map-thumb" title="${escapeHtml(m.title)}">
+          <img src="../assets/maps/${escapeHtml(m.file)}" alt="" />
+          <div class="map-cap">
+            <div class="map-cap-title">${escapeHtml(m.title)}</div>
+            <div class="map-cap-sub">${escapeHtml((m.tags||[]).join(", "))}</div>
+          </div>
+        </button>
+      `).join("") || `<p>No maps.</p>`;
+
+      [...gallery.querySelectorAll(".map-thumb")].forEach((btn, i)=>{
+        btn.addEventListener("click", ()=> openMap(filtered[i]));
+      });
+    }
+
+    qEl.addEventListener("input", render);
+    render();
+  </script>
+</body>
+</html>

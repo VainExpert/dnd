@@ -36,8 +36,8 @@ function groupPages(pages) {
 
 function renderNav(activePath) {
   navEl.innerHTML = "";
-  const grouped = groupPages(PAGES);
 
+  const grouped = groupPages(PAGES);
   for (const [group, items] of grouped.entries()) {
     const groupWrap = document.createElement("div");
     groupWrap.className = "group";
@@ -86,7 +86,12 @@ function simpleMarkdown(md) {
   md = md.replace(/`([^`]+)`/g, "<code>$1</code>");
 
   // links [text](url)
-  md = md.replace(/\[([^\]]+)\]\(([^)]+)\)/g, `<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>`);
+  md = md.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, text, url) => {
+    const safeText = text;
+    const safeUrl = url;
+    if (safeUrl.startsWith("#")) return `<a href="${safeUrl}">${safeText}</a>`;
+    return `<a href="${safeUrl}" target="_blank" rel="noopener noreferrer">${safeText}</a>`;
+  });
 
   // paragraphs (very basic)
   md = md
@@ -120,8 +125,9 @@ async function loadPage(path) {
 
 function getActivePathFromHash() {
   const h = location.hash.replace(/^#/, "");
-  if (!h) return PAGES[0][2];
-  try { return decodeURIComponent(h); } catch { return PAGES[0][2]; }
+  // If no hash, show homepage content instead of first markdown page
+  if (!h) return "content/home.md";
+  try { return decodeURIComponent(h); } catch { return "content/home.md"; }
 }
 
 function wireRouting() {

@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Items</title>
+  <link rel="stylesheet" href="../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Items</div>
+      <div class="subtitle">Custom items from JSON</div>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Search..."/>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="nav">
+        <div class="group">
+          <div class="group-title">Home</div>
+          <a href="../index.html">Homepage</a>
+          <a href="../index.html#content/house-rules/index.md">House Rules</a>
+          <a href="../index.html#content/safety/index.md">Safety</a>
+          <a href="../index.html#content/character-options/index.md">Character Options</a>
+          <a href="../index.html#content/recaps/index.md">Recaps</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Libraries</div>
+          <a href="./bestiary.html">Bestiary</a>
+          <a href="./spells.html">Spells</a>
+          <a href="./items.html" class="active">Items</a>
+          <a href="./maps.html">Maps</a>
+          <a href="./pcs.html">PCs</a>
+          <a href="./tools.html">Tools</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="content" style="max-width:1100px;">
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
+          <select id="type" class="select"><option value="">All types</option></select>
+          <select id="rarity" class="select">
+            <option value="">All rarity</option>
+            <option>common</option><option>uncommon</option><option>rare</option><option>very rare</option><option>legendary</option><option>artifact</option>
+          </select>
+        </div>
+        <div id="grid" class="card-grid"></div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany } from "../lib.js";
+
+    const grid = document.getElementById("grid");
+    const qEl = document.getElementById("q");
+    const typeEl = document.getElementById("type");
+    const rarityEl = document.getElementById("rarity");
+
+    const files = await loadIndex("../data/items/index.json");
+    const items = await loadMany("../data/items", files);
+
+    const types = Array.from(new Set(items.map(i => i.type).filter(Boolean))).sort((a,b)=>a.localeCompare(b));
+    for (const t of types){
+      const opt = document.createElement("option");
+      opt.value = t; opt.textContent = t;
+      typeEl.appendChild(opt);
+    }
+
+    function card(i){
+      return `
+        <div class="mini-card">
+          <div class="mini-head">
+            <div class="mini-title">${escapeHtml(i.name)}</div>
+            <div class="mini-sub">${escapeHtml(i.type ?? "Item")}${i.rarity ? " • " + escapeHtml(i.rarity) : ""}</div>
+            <div class="pillbar">
+              ${i.attunement ? `<span class="pill"><b>Attune</b> yes</span>` : ""}
+              ${i.price ? `<span class="pill"><b>Price</b> ${escapeHtml(i.price)}</span>` : ""}
+              ${i.weight ? `<span class="pill"><b>Wt</b> ${escapeHtml(i.weight)}</span>` : ""}
+            </div>
+          </div>
+          <div class="mini-body">
+            ${i.text ? `<div class="mini-box"><div class="mini-box-title">Effect</div><div class="mini-box-text">${escapeHtml(i.text)}</div></div>` : ""}
+            ${i.source ? `<div class="mini-footer muted">Source: ${escapeHtml(i.source)}</div>` : ""}
+          </div>
+        </div>
+      `;
+    }
+
+    function matches(i, q, type, rarity){
+      const hay = [i.name, i.type, i.rarity, i.text, i.source].join(" ").toLowerCase();
+      if (q && !hay.includes(q)) return false;
+      if (type && (i.type ?? "") !== type) return false;
+      if (rarity && (String(i.rarity ?? "").toLowerCase() !== rarity)) return false;
+      return true;
+    }
+
+    function render(){
+      const q = (qEl.value || "").trim().toLowerCase();
+      const t = typeEl.value;
+      const r = rarityEl.value;
+
+      const filtered = items.filter(i => matches(i, q, t, r));
+      grid.innerHTML = filtered.map(card).join("") || `<p>No matches.</p>`;
+    }
+
+    qEl.addEventListener("input", render);
+    typeEl.addEventListener("change", render);
+    rarityEl.addEventListener("change", render);
+    render();
+  </script>
+</body>
+</html>

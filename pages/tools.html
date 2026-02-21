@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Tools</title>
+  <link rel="stylesheet" href="../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Tools</div>
+      <div class="subtitle">Custom tools from JSON</div>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Search..."/>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="nav">
+        <div class="group">
+          <div class="group-title">Home</div>
+          <a href="../index.html">Homepage</a>
+          <a href="../index.html#content/house-rules/index.md">House Rules</a>
+          <a href="../index.html#content/safety/index.md">Safety</a>
+          <a href="../index.html#content/character-options/index.md">Character Options</a>
+          <a href="../index.html#content/recaps/index.md">Recaps</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Libraries</div>
+          <a href="./bestiary.html">Bestiary</a>
+          <a href="./spells.html">Spells</a>
+          <a href="./items.html">Items</a>
+          <a href="./maps.html">Maps</a>
+          <a href="./pcs.html">PCs</a>
+          <a href="./tools.html" class="active">Tools</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="content" style="max-width:1100px;">
+        <h1>Random Tables</h1>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+          <select id="table" class="select"></select>
+          <button id="roll" class="select" style="cursor:pointer;">Roll</button>
+        </div>
+        <div id="result" style="margin-top:12px;"></div>
+
+        <h2 style="margin-top:26px;">Encounter Picker (from your Bestiary)</h2>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+          <select id="cr" class="select">
+            <option value="">Any CR</option>
+            <option>0</option><option>1/8</option><option>1/4</option><option>1/2</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+          </select>
+          <input id="count" class="select" type="number" min="1" value="3" style="width:110px;" />
+          <button id="gen" class="select" style="cursor:pointer;">Generate</button>
+        </div>
+        <div id="enc" style="margin-top:12px;"></div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany } from "../lib.js";
+
+    // ----- Tables -----
+    const tableSel = document.getElementById("table");
+    const rollBtn = document.getElementById("roll");
+    const resultEl = document.getElementById("result");
+
+    const tFiles = await loadIndex("../data/tables/index.json");
+    const tables = await loadMany("../data/tables", tFiles);
+
+    for (const t of tables){
+      const opt = document.createElement("option");
+      opt.value = t.name;
+      opt.textContent = t.name;
+      tableSel.appendChild(opt);
+    }
+
+    function pick(arr){ return arr[Math.floor(Math.random() * arr.length)]; }
+
+    function roll(){
+      const name = tableSel.value;
+      const t = tables.find(x => x.name === name);
+      if (!t || !t.entries || !t.entries.length){
+        resultEl.innerHTML = `<p>No entries.</p>`;
+        return;
+      }
+      const r = pick(t.entries);
+      resultEl.innerHTML = `
+        <div class="mini-box">
+          <div class="mini-box-title">${escapeHtml(t.name)}${t.dice ? " ("+escapeHtml(t.dice)+")" : ""}</div>
+          <div class="mini-box-text">${escapeHtml(r)}</div>
+        </div>
+      `;
+    }
+    rollBtn.addEventListener("click", roll);
+    roll();
+
+    // ----- Encounter Picker -----
+    const crSel = document.getElementById("cr");
+    const countEl = document.getElementById("count");
+    const genBtn = document.getElementById("gen");
+    const encEl = document.getElementById("enc");
+
+    const mFiles = await loadIndex("../data/monsters/index.json");
+    const monsters = await loadMany("../data/monsters", mFiles);
+
+    function generate(){
+      const cr = crSel.value;
+      const n = Math.max(1, Number(countEl.value || 3));
+
+      let pool = monsters;
+      if (cr) pool = pool.filter(m => (m.challenge?.cr ?? "") === cr);
+
+      if (!pool.length){
+        encEl.innerHTML = `<p>No monsters match that filter.</p>`;
+        return;
+      }
+
+      const picks = [];
+      for (let i=0; i<n; i++) picks.push(pick(pool));
+
+      encEl.innerHTML = `
+        <div class="mini-box">
+          <div class="mini-box-title">Encounter</div>
+          <div class="mini-box-text">
+            <ul>
+              ${picks.map(m => `<li><b>${escapeHtml(m.name)}</b> (CR ${escapeHtml(m.challenge?.cr ?? "—")})</li>`).join("")}
+            </ul>
+          </div>
+        </div>
+      `;
+    }
+
+    genBtn.addEventListener("click", generate);
+    generate();
+  </script>
+</body>
+</html>

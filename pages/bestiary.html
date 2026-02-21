@@ -13,34 +13,59 @@
       <div class="subtitle">Custom monsters from JSON</div>
     </div>
     <div class="search">
-      <input id="q" type="search" placeholder="Search name/type/traits/actions..."/>
+      <input id="q" type="search" placeholder="Search..."/>
     </div>
   </header>
 
-  <main class="main">
-    <div class="content" style="max-width:1100px;">
-      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
-        <select id="cr" class="select">
-          <option value="">All CR</option>
-          <option>0</option><option>1/8</option><option>1/4</option><option>1/2</option>
-          <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
-        </select>
-        <select id="size" class="select">
-          <option value="">All sizes</option>
-          <option>Tiny</option><option>Small</option><option>Medium</option><option>Large</option><option>Huge</option><option>Gargantuan</option>
-        </select>
-        <select id="type" class="select">
-          <option value="">All types</option>
-          <option>aberration</option><option>beast</option><option>celestial</option><option>construct</option><option>dragon</option>
-          <option>elemental</option><option>fey</option><option>fiend</option><option>giant</option><option>humanoid</option>
-          <option>monstrosity</option><option>ooze</option><option>plant</option><option>undead</option>
-        </select>
-      </div>
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="nav">
+        <div class="group">
+          <div class="group-title">Home</div>
+          <a href="../index.html">Homepage</a>
+          <a href="../index.html#content/house-rules/index.md">House Rules</a>
+          <a href="../index.html#content/safety/index.md">Safety</a>
+          <a href="../index.html#content/character-options/index.md">Character Options</a>
+          <a href="../index.html#content/recaps/index.md">Recaps</a>
+        </div>
 
-      <div id="grid" class="card-grid"></div>
-    </div>
-  </main>
+        <div class="group">
+          <div class="group-title">Libraries</div>
+          <a href="./bestiary.html" class="active">Bestiary</a>
+          <a href="./spells.html">Spells</a>
+          <a href="./items.html">Items</a>
+          <a href="./maps.html">Maps</a>
+          <a href="./pcs.html">PCs</a>
+          <a href="./tools.html">Tools</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="content" style="max-width:1100px;">
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
+          <select id="cr" class="select">
+            <option value="">All CR</option>
+            <option>0</option><option>1/8</option><option>1/4</option><option>1/2</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+          </select>
+          <select id="size" class="select">
+            <option value="">All sizes</option>
+            <option>Tiny</option><option>Small</option><option>Medium</option><option>Large</option><option>Huge</option><option>Gargantuan</option>
+          </select>
+          <select id="type" class="select">
+            <option value="">All types</option>
+            <option>aberration</option><option>beast</option><option>celestial</option><option>construct</option><option>dragon</option>
+            <option>elemental</option><option>fey</option><option>fiend</option><option>giant</option><option>humanoid</option>
+            <option>monstrosity</option><option>ooze</option><option>plant</option><option>undead</option>
+          </select>
+        </div>
+
+        <div id="grid" class="card-grid"></div>
+      </div>
+    </main>
+  </div>
 
   <script type="module">
     import { escapeHtml, loadIndex, loadMany, mod, fmtSigned } from "../lib.js";

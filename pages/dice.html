@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Dice Roller</title>
+  <link rel="stylesheet" href="../styles.css"/>
+
+  <style>
+    .tool-row{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+    .btn{
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--rule);
+      background:#0b0e16;
+      color:var(--text);
+      cursor:pointer;
+    }
+    .btn:hover{ border-color: rgba(225,91,79,.35); background: rgba(225,91,79,.12); }
+    .btn:disabled{ opacity:.55; cursor:not-allowed; }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap:12px;
+      margin-top:12px;
+    }
+
+    .dice-buttons{
+      display:flex; gap:8px; flex-wrap:wrap;
+      margin-top:10px;
+    }
+    .chip{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      cursor:pointer;
+      user-select:none;
+      color: var(--text);
+      font-size: 12px;
+    }
+    .chip:hover{
+      border-color: rgba(138,180,255,.25);
+      background: rgba(138,180,255,.08);
+    }
+    .chip b{ font-weight:800; }
+
+    textarea.select{
+      min-height: 110px;
+      resize: vertical;
+      width: 100%;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      line-height: 1.35;
+    }
+
+    .history{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      margin-top:12px;
+    }
+    .entry{
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.03);
+      border-radius:14px;
+      padding:10px;
+    }
+    .entry-top{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+      align-items:baseline;
+    }
+    .entry-expr{ font-weight:800; }
+    .entry-total{ font-weight:900; font-size: 18px; }
+    .entry-sub{
+      color: var(--muted);
+      font-size: 12px;
+      margin-top:6px;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .small{ font-size: 12px; color: var(--muted); }
+    .two-col{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    @media (max-width: 820px){
+      .two-col{ grid-template-columns: 1fr; }
+    }
+    .roll-anim{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      margin-top:10px;
+    }
+    .die{
+      width:84px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      padding:10px;
+    }
+    .die .t{ font-size: 12px; color: var(--muted); }
+    .die .v{
+      margin-top:6px;
+      font-size: 24px;
+      font-weight: 900;
+    }
+    .die .k{ margin-top:4px; font-size: 11px; color: var(--muted); }
+    @media (prefers-reduced-motion: reduce){
+      .die{ transition:none !important; }
+    }
+  </style>
+</head>
+
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="title">Dice Roller</div>
+    <div class="subtitle">Multi-roll • advantage/disadvantage • extract from monsters/spells/items/pcs • tables</div>
+  </div>
+  <div class="top-actions">
+    <a class="home-btn" href="../index.html">← Home</a>
+  </div>
+</header>
+
+<main class="main">
+  <div class="content" style="max-width:1100px;">
+    <div class="grid">
+
+      <div class="mini-box">
+        <div class="mini-box-title">Quick Dice</div>
+        <div class="mini-box-text">
+          <div class="tool-row">
+            <label class="small">Count</label>
+            <input id="quickCount" class="select" type="number" min="1" value="1" style="width:110px;">
+            <label class="small">Modifier</label>
+            <input id="quickMod" class="select" type="number" step="1" value="0" style="width:110px;">
+          </div>
+
+          <div class="dice-buttons" id="quickDice"></div>
+
+          <div class="tool-row" style="margin-top:10px;">
+            <button id="advBtn" class="btn">d20 Advantage (2d20kh1)</button>
+            <button id="disBtn" class="btn">d20 Disadvantage (2d20kl1)</button>
+            <button id="pctBtn" class="btn">Percentile (d100)</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-box">
+        <div class="mini-box-title">Expression Roller</div>
+        <div class="mini-box-text">
+          <div class="small">One per line. You can label lines: <span class="mono">Fireball: 8d6</span>. Supports <span class="mono">kh/kl</span> (e.g. <span class="mono">2d20kh1</span>).</div>
+          <textarea id="expr" class="select" placeholder="e.g.
+Attack: 1d20+7
+Damage: 2d10+7
+Fireball: 8d6
+Adv: 2d20kh1+5"></textarea>
+
+          <div class="tool-row" style="margin-top:10px;">
+            <label class="small">Repeat each line</label>
+            <input id="repeat" class="select" type="number" min="1" value="1" style="width:110px;">
+            <button id="rollExpr" class="btn">Roll</button>
+            <div id="animArea" class="roll-anim"></div>
+            <button id="clearHistory" class="btn">Clear History</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="grid" style="margin-top:14px;">
+      <div class="mini-box">
+        <div class="mini-box-title">Extract & Roll from Libraries</div>
+        <div class="mini-box-text">
+          <div class="small">
+            This page can load a JSON and auto-extract dice.
+            Use URL params like:
+            <div class="mono" style="margin-top:6px;">
+              dice.html?monster=adult-blue-dracolich<br/>
+              dice.html?spell=fireball&auto=1<br/>
+              dice.html?item=wand-of-magic-missiles<br/>
+              dice.html?pc=mistletoe
+            </div>
+            Assumes the JSON file exists at <span class="mono">../data/&lt;collection&gt;/&lt;id&gt;.json</span>.
+          </div>
+
+          <div id="extractStatus" class="small" style="margin-top:10px;">No external source loaded.</div>
+          <div id="extractList" style="margin-top:10px;"></div>
+        </div>
+      </div>
+
+      <div class="mini-box">
+        <div class="mini-box-title">Random Tables</div>
+        <div class="mini-box-text">
+          <div class="small">
+            If you have <span class="mono">data/tables/index.json</span>, you can pick a table here.
+            Or use URL: <span class="mono">dice.html?table_file=rumors.json</span>
+          </div>
+
+          <div class="tool-row" style="margin-top:10px;">
+            <select id="tableSel" class="select" style="min-width: 260px;"></select>
+            <button id="rollTableBtn" class="btn">Roll Table</button>
+          </div>
+          <div id="tableResult" style="margin-top:10px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:22px;">History</h2>
+    <div id="history" class="history"></div>
+  </div>
+</main>
+
+<script type="module">
+  import { escapeHtml } from "../lib.js";
+
+  // ---------------- Dice engine ----------------
+  function randInt(min, max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  function parseDiceToken(tok){
+    // e.g. "2d20kh1", "d6", "1d%", "2d10dl1"
+    const m = tok.match(/^(\d*)d(\d+|%)(?:(kh|kl|dh|dl)(\d+))?$/i);
+    if (!m) return null;
+    const count = m[1] ? Number(m[1]) : 1;
+    const sides = (m[2] === "%") ? 100 : Number(m[2]);
+    const mode = m[3] ? m[3].toLowerCase() : null;
+    const keepDropN = m[4] ? Number(m[4]) : null;
+    return { count, sides, mode, keepDropN, raw: tok };
+  }
+
+  function rollDice(spec){
+    const rolls = Array.from({length: spec.count}, () => randInt(1, spec.sides));
+    let kept = [...rolls];
+
+    if (spec.mode && spec.keepDropN != null){
+      const n = Math.max(0, Math.min(spec.keepDropN, rolls.length));
+      const sorted = [...rolls].sort((a,b)=>a-b);
+      if (spec.mode === "kh") kept = sorted.slice(-n);
+      if (spec.mode === "kl") kept = sorted.slice(0, n);
+      if (spec.mode === "dh") kept = sorted.slice(0, sorted.length - n);
+      if (spec.mode === "dl") kept = sorted.slice(n);
+    }
+
+    const sum = kept.reduce((a,b)=>a+b,0);
+    return { rolls, kept, sum };
+  }
+
+  function tokenize(expr){
+    // Supports numbers, dice tokens, + - * / parentheses
+    const s = expr.replace(/\s+/g, "");
+    const tokens = [];
+    let i = 0;
+
+    const isOp = c => ["+","-","*","/","(",")"].includes(c);
+
+    while (i < s.length){
+      const c = s[i];
+      if (isOp(c)){
+        tokens.push({type:"op", v:c});
+        i++;
+        continue;
+      }
+
+      // dice token starting with digit or 'd'
+      const diceMatch = s.slice(i).match(/^(\d*d(\d+|%)(?:kh\d+|kl\d+|dh\d+|dl\d+)?)?/i);
+      if (diceMatch && diceMatch[0]){
+        const tok = diceMatch[0];
+        if (tok.includes("d") || tok.includes("D")){
+          tokens.push({type:"dice", v: tok});
+          i += tok.length;
+          continue;
+        }
+      }
+
+      // number
+      const num = s.slice(i).match(/^\d+(\.\d+)?/);
+      if (num){
+        tokens.push({type:"num", v: num[0]});
+        i += num[0].length;
+        continue;
+      }
+
+      // unknown char
+      tokens.push({type:"unknown", v:c});
+      i++;
+    }
+    return tokens;
+  }
+
+  function toRPN(tokens){
+    const out = [];
+    const ops = [];
+    const prec = { "+":1, "-":1, "*":2, "/":2 };
+
+    for (const t of tokens){
+      if (t.type === "num" || t.type === "dice"){
+        out.push(t);
+        continue;
+      }
+      if (t.type === "op"){
+        const op = t.v;
+        if (op === "("){
+          ops.push(op);
+          continue;
+        }
+        if (op === ")"){
+          while (ops.length && ops[ops.length-1] !== "(") out.push({type:"op", v: ops.pop()});
+          if (ops.length && ops[ops.length-1] === "(") ops.pop();
+          continue;
+        }
+        while (ops.length && ops[ops.length-1] !== "(" && prec[ops[ops.length-1]] >= prec[op]){
+          out.push({type:"op", v: ops.pop()});
+        }
+        ops.push(op);
+      }
+    }
+    while (ops.length) out.push({type:"op", v: ops.pop()});
+    return out;
+  }
+
+  function evalRPN(rpn){
+    const stack = [];
+    const breakdownParts = [];
+
+    function pushVal(val, label){
+      stack.push({ value: val, label });
+    }
+
+    for (const t of rpn){
+      if (t.type === "num"){
+        pushVal(Number(t.v), t.v);
+      } else if (t.type === "dice"){
+        const spec = parseDiceToken(t.v);
+        if (!spec) throw new Error(`Bad dice token: ${t.v}`);
+        const r = rollDice(spec);
+        const keptStr = (spec.mode ? ` -> [${r.kept.join(",")}]` : "");
+        breakdownParts.push(`${t.v} = [${r.rolls.join(",")}]${keptStr} = ${r.sum}`);
+        pushVal(r.sum, `${t.v}=${r.sum}`);
+      } else if (t.type === "op"){
+        const b = stack.pop();
+        const a = stack.pop();
+        if (!a || !b) throw new Error("Invalid expression");
+        let v = 0;
+        if (t.v === "+") v = a.value + b.value;
+        if (t.v === "-") v = a.value - b.value;
+        if (t.v === "*") v = a.value * b.value;
+        if (t.v === "/") v = a.value / b.value;
+        pushVal(v, `(${a.label}${t.v}${b.label})`);
+      }
+    }
+
+    if (stack.length !== 1) throw new Error("Invalid expression");
+    return { total: stack[0].value, breakdown: breakdownParts };
+  }
+
+  function rollExpression(expr){
+    const tokens = tokenize(expr);
+    // quick validation
+    if (tokens.some(t => t.type === "unknown")) throw new Error("Invalid characters in expression");
+    const rpn = toRPN(tokens);
+    return evalRPN(rpn);
+  }
+
+  // ---------------- UI helpers ----------------
+  const historyEl = document.getElementById("history");
+
+  function addHistory(label, expr, result){
+    const div = document.createElement("div");
+    div.className = "entry";
+    const sub = (result.breakdown && result.breakdown.length)
+      ? result.breakdown.join("\n")
+      : "";
+
+    div.innerHTML = `
+      <div class="entry-top">
+        <div class="entry-expr">${escapeHtml(label ? `${label}: ${expr}` : expr)}</div>
+        <div class="entry-total">${escapeHtml(String(Math.round(result.total * 1000) / 1000))}</div>
+      </div>
+      ${sub ? `<div class="entry-sub mono">${escapeHtml(sub)}</div>` : ""}
+    `;
+    historyEl.prepend(div);
+  }
+
+  function parseLines(text){
+    return text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+  }
+
+  function splitLabel(line){
+    // "Label: expr" or "Label | expr"
+    let m = line.match(/^(.+?)\s*[:|]\s*(.+)$/);
+    if (m) return { label: m[1].trim(), expr: m[2].trim() };
+    return { label: "", expr: line };
+  }
+
+  // ---------------- Quick dice buttons ----------------
+  const quickDiceEl = document.getElementById("quickDice");
+  const quickCountEl = document.getElementById("quickCount");
+  const quickModEl = document.getElementById("quickMod");
+
+  const QUICK = [2,4,6,8,10,12,20,100];
+
+  function makeChip(text, onClick){
+    const el = document.createElement("div");
+    el.className = "chip";
+    el.innerHTML = text;
+    el.addEventListener("click", onClick);
+    return el;
+  }
+
+  for (const d of QUICK){
+    quickDiceEl.appendChild(makeChip(`<b>d${d}</b> roll`, async () => {
+      const n = Math.max(1, Number(quickCountEl.value || 1));
+      const mod = Number(quickModEl.value || 0);
+      const expr = `${n}d${d}${mod ? (mod>0?`+${mod}`:`${mod}`) : ""}`;
+      const r = rollExpression(expr);
+      await animateRoll(expr, "");
+    }));
+  }
+
+  document.getElementById("advBtn").addEventListener("click", async () => {
+    const mod = Number(quickModEl.value || 0);
+    const expr = `2d20kh1${mod ? (mod>0?`+${mod}`:`${mod}`) : ""}`;
+    await animateRoll(expr, "Advantage");
+  });
+
+  document.getElementById("disBtn").addEventListener("click", async () => {
+    const mod = Number(quickModEl.value || 0);
+    const expr = `2d20kl1${mod ? (mod>0?`+${mod}`:`${mod}`) : ""}`;
+    await animateRoll(expr, "Disadvantage");
+  });
+
+  document.getElementById("pctBtn").addEventListener("click", async () => {
+    const expr = `1d100`;
+    await animateRoll(expr, "Percentile");
+  });
+
+  // ---------------- Expression roller ----------------
+  const exprEl = document.getElementById("expr");
+  const repeatEl = document.getElementById("repeat");
+  const animArea = document.getElementById("animArea");
+
+  function uniqDiceTokens(expr){
+    // returns array of dice tokens in expression, in order, deduped by position (keep repeats)
+    const tokens = tokenize(expr).filter(t => t.type === "dice").map(t => t.v);
+    return tokens;
+  }
+
+  function dieFace(sides){
+    // show plausible values during animation
+    return randInt(1, sides);
+  }
+
+  function makeDieEl(tok){
+    const spec = parseDiceToken(tok);
+    const die = document.createElement("div");
+    die.className = "die";
+    die.innerHTML = `
+      <div class="t mono">${escapeHtml(tok)}</div>
+      <div class="v mono" data-v>—</div>
+      <div class="k mono" data-k></div>
+    `;
+    die._spec = spec;
+    return die;
+  }
+
+  async function animateRoll(expr, label){
+    const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const diceTokens = uniqDiceTokens(expr);
+    animArea.innerHTML = "";
+    const dieEls = diceTokens.map(t => makeDieEl(t));
+    dieEls.forEach(d => animArea.appendChild(d));
+
+    if (!diceTokens.length || reduceMotion){
+      const r = rollExpression(expr);
+      addHistory(label, expr, r);
+      animArea.innerHTML = "";
+      return;
+    }
+
+    // animate for ~700ms with stagger
+    const start = performance.now();
+    const duration = 700;
+
+    function tick(now){
+      const t = now - start;
+      for (let i=0; i<dieEls.length; i++){
+        const el = dieEls[i];
+        const spec = el._spec;
+        if (!spec) continue;
+        const vEl = el.querySelector("[data-v]");
+        const kEl = el.querySelector("[data-k]");
+        const localT = t - i * 60; // stagger per die
+        if (localT < 0) continue;
+        if (localT < duration){
+          vEl.textContent = String(dieFace(spec.sides));
+          kEl.textContent = "rolling…";
+        }
+      }
+      if (t < duration + dieEls.length * 60){
+        requestAnimationFrame(tick);
+      }
+    }
+    requestAnimationFrame(tick);
+
+    // wait until animation completes
+    await new Promise(r => setTimeout(r, duration + dieEls.length * 60));
+
+    // compute real result (this will roll again, but that’s fine: animation is just visual)
+    const result = rollExpression(expr);
+    addHistory(label, expr, result);
+
+    // show final per-token values (from breakdown if possible)
+    // We'll parse breakdown lines like "2d6 = [..] = sum" to show the sum.
+    const byTok = new Map();
+    for (const line of (result.breakdown || [])){
+      const m = line.match(/^(\S+)\s*=\s*\[.*\]\s*(?:->\s*\[.*\]\s*)?=\s*(\d+)/);
+      if (m) byTok.set(m[1], m[2]);
+    }
+    for (const el of dieEls){
+      const spec = el._spec;
+      const tok = spec?.raw || "";
+      const vEl = el.querySelector("[data-v]");
+      const kEl = el.querySelector("[data-k]");
+      if (byTok.has(tok)){
+        vEl.textContent = byTok.get(tok);
+        kEl.textContent = "final";
+      } else {
+        kEl.textContent = "";
+      }
+    }
+
+    // clear the animation area shortly after
+    setTimeout(() => { animArea.innerHTML = ""; }, 1200);
+  }
+
+  document.getElementById("rollExpr").addEventListener("click", async () => {
+    const lines = parseLines(exprEl.value || "");
+    const rep = Math.max(1, Number(repeatEl.value || 1));
+    for (const line of lines){
+      const { label, expr } = splitLabel(line);
+      for (let i=0; i<rep; i++){
+        const lbl = label ? (rep>1 ? `${label} #${i+1}` : label) : (rep>1 ? `Roll #${i+1}` : "");
+        await animateRoll(expr, lbl);
+      }
+    }
+  });
+
+  document.getElementById("clearHistory").addEventListener("click", () => {
+    historyEl.innerHTML = "";
+  });
+
+  // ---------------- Extract dice from JSON sources ----------------
+  const extractStatus = document.getElementById("extractStatus");
+  const extractList = document.getElementById("extractList");
+
+  const DICE_EXPR_RE = /(?<!\w)(?:\d*d(?:\d+|%)(?:kh\d+|kl\d+|dh\d+|dl\d+)?)(?:\s*[+\-]\s*\d+)*(?!\w)/gi;
+
+  function extractDiceFromAny(obj){
+    const found = [];
+    function walk(v, path){
+      if (typeof v === "string"){
+        const matches = v.match(DICE_EXPR_RE);
+        if (matches){
+          for (const m of matches){
+            found.push({ expr: m.replace(/\s+/g,""), path: path.join(".") });
+          }
+        }
+      } else if (Array.isArray(v)){
+        v.forEach((x,i)=>walk(x, path.concat([`[${i}]`])));
+      } else if (v && typeof v === "object"){
+        for (const [k,val] of Object.entries(v)){
+          walk(val, path.concat([k]));
+        }
+      }
+    }
+    walk(obj, []);
+    // de-dupe by expr + path (keep first)
+    const seen = new Set();
+    const out = [];
+    for (const x of found){
+      const key = `${x.expr}@@${x.path}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      out.push(x);
+    }
+    return out;
+  }
+
+  function renderExtractList(items){
+    if (!items.length){
+      extractList.innerHTML = `<div class="small">No dice expressions found in the loaded data.</div>`;
+      return;
+    }
+    extractList.innerHTML = `
+      <div class="small">Found ${items.length} rollable expressions:</div>
+      <div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap;">
+        ${items.map((it, idx) => `
+          <div class="chip" data-idx="${idx}">
+            <b>${escapeHtml(it.expr)}</b>
+            <span class="small">(${escapeHtml(it.path)})</span>
+          </div>
+        `).join("")}
+      </div>
+      <div class="small" style="margin-top:10px;">Click a chip to roll it. Shift-click to append it into the expression box.</div>
+    `;
+
+    extractList.querySelectorAll(".chip").forEach(el => {
+      el.addEventListener("click", (e) => {
+        const idx = Number(el.getAttribute("data-idx"));
+        const it = items[idx];
+        if (!it) return;
+        if (e.shiftKey){
+          const line = `${it.expr}`;
+          exprEl.value = (exprEl.value ? (exprEl.value.trimEnd() + "\n") : "") + line;
+          return;
+        }
+        const r = rollExpression(it.expr);
+        addHistory(it.path, it.expr, r);
+      });
+    });
+  }
+
+  async function fetchJson(path){
+    const r = await fetch(path, { cache: "force-cache" });
+    if (!r.ok) throw new Error(`HTTP ${r.status} for ${path}`);
+    return r.json();
+  }
+
+  async function loadExternalFromParams(){
+    const p = new URLSearchParams(location.search);
+    const auto = p.get("auto") === "1";
+
+    // Direct expressions
+    const exprParam = p.get("expr");
+    if (exprParam){
+      exprEl.value = decodeURIComponent(exprParam);
+      if (auto) document.getElementById("rollExpr").click();
+    }
+
+    // Load a JSON and extract dice
+    const sources = [
+      ["monster", "../data/monsters/"],
+      ["spell",   "../data/spells/"],
+      ["pc",      "../data/pcs/"],
+      ["item",    "../data/items/"],
+    ];
+
+    for (const [key, base] of sources){
+      const id = p.get(key);
+      if (!id) continue;
+      const path = `${base}${id}.json`;
+      extractStatus.textContent = `Loading ${key}: ${id} …`;
+      try{
+        const obj = await fetchJson(path);
+        const items = extractDiceFromAny(obj);
+        extractStatus.textContent = `Loaded ${key}: ${id} (${items.length} expressions found)`;
+        renderExtractList(items);
+        if (auto && items.length){
+          // auto-roll each extracted expression once
+          for (const it of items){
+            try{
+              addHistory(it.path, it.expr, rollExpression(it.expr));
+            } catch {}
+          }
+        }
+      } catch (e){
+        extractStatus.textContent = `Failed to load ${key}: ${id} (expected ${path})`;
+      }
+      return; // only first matched source
+    }
+
+    // Roll a table by file
+    const tableFile = p.get("table_file");
+    if (tableFile){
+      try{
+        const t = await fetchJson(`../data/tables/${tableFile}`);
+        setActiveTableFromObject(t, tableFile);
+        if (auto) rollTable();
+      } catch {
+        // ignore
+      }
+    }
+  }
+
+  // ---------------- Tables ----------------
+  const tableSel = document.getElementById("tableSel");
+  const rollTableBtn = document.getElementById("rollTableBtn");
+  const tableResult = document.getElementById("tableResult");
+
+  let loadedTables = [];
+  let activeTable = null;
+
+  function parseDiceSides(diceStr){
+    // supports "d20" or "1d100" etc.
+    const m = (diceStr || "").trim().match(/(\d*)d(\d+|%)/i);
+    if (!m) return null;
+    const count = m[1] ? Number(m[1]) : 1;
+    const sides = (m[2] === "%") ? 100 : Number(m[2]);
+    return { count, sides };
+  }
+
+  function parseRangePrefix(entry){
+    // supports "1-3: text", "4: text"
+    const m = entry.match(/^\s*(\d+)\s*(?:-\s*(\d+))?\s*[:.)-]\s*(.*)$/);
+    if (!m) return null;
+    return { min: Number(m[1]), max: m[2] ? Number(m[2]) : Number(m[1]), text: m[3] };
+  }
+
+  function rollOnTable(t){
+    const entries = Array.isArray(t.entries) ? t.entries : [];
+    if (!entries.length) return { roll: null, text: "(no entries)" };
+
+    const ranged = entries
+      .map(e => typeof e === "string" ? parseRangePrefix(e) : null)
+      .filter(Boolean);
+
+    // If entries have ranges, use dice if available, else infer max
+    if (ranged.length){
+      const dice = parseDiceSides(t.dice || "");
+      const max = Math.max(...ranged.map(r => r.max));
+      const r = dice ? randInt(1, dice.count * dice.sides) : randInt(1, max);
+      const hit = ranged.find(x => r >= x.min && r <= x.max);
+      return { roll: r, text: hit ? hit.text : entries[Math.floor(Math.random()*entries.length)] };
+    }
+
+    // otherwise random entry
+    return { roll: null, text: entries[Math.floor(Math.random()*entries.length)] };
+  }
+
+  function setActiveTableFromObject(t, label){
+    activeTable = t;
+    tableResult.innerHTML = `<div class="small">Active table: <span class="mono">${escapeHtml(label || t.name || "table")}</span></div>`;
+  }
+
+  async function loadTablesIndex(){
+    try{
+      const idx = await fetchJson("../data/tables/index.json");
+      const files = idx.files || [];
+      tableSel.innerHTML = `<option value="">(select table)</option>` + files.map(f => `<option value="${escapeHtml(f)}">${escapeHtml(f)}</option>`).join("");
+      loadedTables = files;
+    } catch {
+      tableSel.innerHTML = `<option value="">(no tables index)</option>`;
+      rollTableBtn.disabled = true;
+    }
+  }
+
+  async function rollTable(){
+    try{
+      if (!activeTable){
+        const f = tableSel.value;
+        if (!f) return;
+        activeTable = await fetchJson(`../data/tables/${f}`);
+      }
+      const r = rollOnTable(activeTable);
+      tableResult.innerHTML = `
+        <div class="mini-box" style="margin:0;">
+          <div class="mini-box-title">${escapeHtml(activeTable.name || "Table")}${activeTable.dice ? ` (${escapeHtml(activeTable.dice)})` : ""}${r.roll!=null ? ` • Roll ${escapeHtml(String(r.roll))}` : ""}</div>
+          <div class="mini-box-text">${escapeHtml(String(r.text))}</div>
+        </div>
+      `;
+    } catch (e){
+      tableResult.innerHTML = `<div class="small">Failed to roll table.</div>`;
+    }
+  }
+
+  tableSel.addEventListener("change", async () => {
+    activeTable = null;
+    if (tableSel.value){
+      try{
+        const t = await fetchJson(`../data/tables/${tableSel.value}`);
+        setActiveTableFromObject(t, tableSel.value);
+      } catch {
+        tableResult.innerHTML = `<div class="small">Failed to load table.</div>`;
+      }
+    }
+  });
+  rollTableBtn.addEventListener("click", rollTable);
+
+  // init
+  await loadTablesIndex();
+  await loadExternalFromParams();
+</script>
+</body>
+</html>

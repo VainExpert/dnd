@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Unit Converter</div>
+      <div class="subtitle">D&D grid units + extra conversions (ft/yd/in/mi and lb)</div>
+    </div>
+    <div class="top-actions">
+      <a class="home-btn" href="../index.html">← Home</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="content" style="max-width:980px;">
+      <div class="mini-box">
+        <div class="mini-box-title">Mode</div>
+        <div class="mini-box-text">
+          <label style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+            <select id="mode" class="select">
+              <option value="dnd">D&D (5 ft → 1,5 m; 1 yd → 0,9 m; 1 in → 2,5 cm; 1 mi → 1,584 km; 1 lb → 0,5 kg)</option>
+              <option value="exact">Exact (0,3048 m/ft; 0,9144 m/yd; 2,54 cm/in; 1,609344 km/mi; 0,4536 kg/lb)</option>
+            </select>
+            <span class="muted">Tip: D&D mode keeps multiples “nice” for grid play.</span>
+          </label>
+        </div>
+      </div>
+
+      <h2 style="margin-top:18px;">Distance</h2>
+      <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));">
+        <div class="mini-box">
+          <div class="mini-box-title">Feet → Meters</div>
+          <div class="mini-box-text">
+            <input id="ft" class="select" type="number" step="1" min="0" value="5" style="width:100%;"/>
+            <div style="margin-top:10px;"><b id="ftOut"></b></div>
+          </div>
+        </div>
+
+        <div class="mini-box">
+          <div class="mini-box-title">Yards → Meters</div>
+          <div class="mini-box-text">
+            <input id="yd" class="select" type="number" step="1" min="0" value="10" style="width:100%;"/>
+            <div style="margin-top:10px;"><b id="ydOut"></b></div>
+          </div>
+        </div>
+
+        <div class="mini-box">
+          <div class="mini-box-title">Inches → Centimeters</div>
+          <div class="mini-box-text">
+            <input id="inch" class="select" type="number" step="1" min="0" value="12" style="width:100%;"/>
+            <div style="margin-top:10px;"><b id="inchOut"></b></div>
+          </div>
+        </div>
+
+        <div class="mini-box">
+          <div class="mini-box-title">Miles → Kilometers</div>
+          <div class="mini-box-text">
+            <input id="mi" class="select" type="number" step="0.1" min="0" value="1" style="width:100%;"/>
+            <div style="margin-top:10px;"><b id="miOut"></b></div>
+          </div>
+        </div>
+
+        <div class="mini-box">
+          <div class="mini-box-title">Meters → Feet</div>
+          <div class="mini-box-text">
+            <input id="m" class="select" type="number" step="0.1" min="0" value="1.5" style="width:100%;"/>
+            <div style="margin-top:10px;"><b id="mOut"></b></div>
+          </div>
+        </div>
+
+        <div class="mini-box">
+          <div class="mini-box-title">Kilometers → Miles</div>
+          <div class="mini-box-text">
+            <input id="km" class="select" type="number" step="0.1" min="0" value="1.6" style="width:100%;"/>
+            <div style="margin-top:10px;"><b id="kmOut"></b></div>
+          </div>
+        </div>
+      </div>
+
+      <h2 style="margin-top:18px;">Weight</h2>
+      <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));">
+        <div class="mini-box">
+          <div class="mini-box-title">lb → kg</div>
+          <div class="mini-box-text">
+            <input id="lb" class="select" type="number" step="1" min="0" value="10" style="width:100%;"/>
+            <div style="margin-top:10px;"><b id="lbOut"></b></div>
+          </div>
+        </div>
+
+        <div class="mini-box">
+          <div class="mini-box-title">kg → lb</div>
+          <div class="mini-box-text">
+            <input id="kg" class="select" type="number" step="0.1" min="0" value="5" style="width:100%;"/>
+            <div style="margin-top:10px;"><b id="kgOut"></b></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="muted" style="margin-top:14px;">
+        For rules text, standardize on either mode across your site.
+      </p>
+    </div>
+  </main>
+
+  <script>
+    const modeEl = document.getElementById("mode");
+
+    const ftEl = document.getElementById("ft");
+    const ydEl = document.getElementById("yd");
+    const inchEl = document.getElementById("inch");
+    const miEl = document.getElementById("mi");
+    const mEl = document.getElementById("m");
+    const kmEl = document.getElementById("km");
+
+    const lbEl = document.getElementById("lb");
+    const kgEl = document.getElementById("kg");
+
+    const ftOut = document.getElementById("ftOut");
+    const ydOut = document.getElementById("ydOut");
+    const inchOut = document.getElementById("inchOut");
+    const miOut = document.getElementById("miOut");
+    const mOut = document.getElementById("mOut");
+    const kmOut = document.getElementById("kmOut");
+
+    const lbOut = document.getElementById("lbOut");
+    const kgOut = document.getElementById("kgOut");
+
+    function fmtDE(x, decimals=1) {
+      const p = Math.pow(10, decimals);
+      const r = Math.round(x * p) / p;
+      const s = Math.abs(r - Math.round(r)) < 1e-9 ? String(Math.round(r)) : r.toFixed(decimals);
+      return s.replace(".", ",");
+    }
+
+    function factors() {
+      if (modeEl.value === "exact") {
+        return { ft2m: 0.3048, yd2m: 0.9144, in2cm: 2.54, mi2km: 1.609344, lb2kg: 0.45359237 };
+      }
+      return { ft2m: 0.3, yd2m: 0.9, in2cm: 2.5, mi2km: 1.584, lb2kg: 0.5 };
+    }
+
+    function update() {
+      const { ft2m, yd2m, in2cm, mi2km, lb2kg } = factors();
+
+      const ft = Number(ftEl.value || 0);
+      const yd = Number(ydEl.value || 0);
+      const inch = Number(inchEl.value || 0);
+      const mi = Number(miEl.value || 0);
+      const m = Number(mEl.value || 0);
+      const km = Number(kmEl.value || 0);
+
+      const lb = Number(lbEl.value || 0);
+      const kg = Number(kgEl.value || 0);
+
+      const mFromFt = ft * ft2m;
+      const mFromYd = yd * yd2m;
+      const cmFromIn = inch * in2cm;
+      const kmFromMi = mi * mi2km;
+
+      const ftFromM = ft2m > 0 ? (m / ft2m) : 0;
+      const miFromKm = mi2km > 0 ? (km / mi2km) : 0;
+
+      const kgFromLb = lb * lb2kg;
+      const lbFromKg = lb2kg > 0 ? (kg / lb2kg) : 0;
+
+      ftOut.textContent = `${fmtDE(mFromFt, 1)} m`;
+      ydOut.textContent = `${fmtDE(mFromYd, 1)} m`;
+      inchOut.textContent = `${fmtDE(cmFromIn, 1)} cm`;
+      miOut.textContent = `${fmtDE(kmFromMi, 3)} km`;
+
+      mOut.textContent = `${fmtDE(ftFromM, 1)} ft`;
+      kmOut.textContent = `${fmtDE(miFromKm, 3)} mi`;
+
+      lbOut.textContent = `${fmtDE(kgFromLb, 1)} kg`;
+      kgOut.textContent = `${fmtDE(lbFromKg, 1)} lb`;
+    }
+
+    [modeEl, ftEl, ydEl, inchEl, miEl, mEl, kmEl, lbEl, kgEl].forEach(el => el.addEventListener("input", update));
+    update();
+  </script>
+</body>
+</html>

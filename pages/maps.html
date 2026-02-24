@@ -30,19 +30,35 @@
         </div>
 
         <div class="group">
+          <div class="group-title">Tools</div>
+          <a href="./pages/tools.html">Random Tables & Generators</a>
+          <a href="./pages/dice.html">Dice Roller</a>
+          <a href="./pages/units.html">Unit Converter</a>
+        </div>
+
+        <div class="group">
           <div class="group-title">Libraries</div>
           <a href="./bestiary.html">Bestiary</a>
           <a href="./spells.html">Spells</a>
           <a href="./items.html">Items</a>
           <a href="./maps.html" class="active">Maps</a>
           <a href="./pcs.html">PCs</a>
-          <a href="./tools.html">Tools</a>
+          <a href="./icons.html">Icons</a>
         </div>
       </nav>
     </aside>
 
     <main class="main">
       <div class="content" style="max-width:1100px;">
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
+          <input id="q" class="select" type="search" placeholder="Search title/tags/blurb..." style="width:min(420px, 80vw);" />
+          <select id="tag" class="select">
+            <option value="">All tags</option>
+          </select>
+          <select id="size" class="select">
+            <option value="">All sizes</option>
+          </select>
+        </div>
         <div id="gallery" class="map-grid"></div>
       </div>
     </main>
@@ -52,7 +68,7 @@
     <div class="map-modal-inner">
       <button id="close" class="map-close">Close</button>
       <div id="modalTitle" class="map-modal-title"></div>
-      <img id="modalImg" class="map-modal-img" alt="" />
+      <img id="modalImg" class="map-modal-img" alt="" loading="lazy" decoding="async"/>
       <div id="modalMeta" class="map-modal-meta"></div>
     </div>
   </div>
@@ -61,6 +77,8 @@
     import { escapeHtml } from "../lib.js";
 
     const qEl = document.getElementById("q");
+    const tagEl = document.getElementById("tag");
+    const sizeEl = document.getElementById("size");
     const gallery = document.getElementById("gallery");
 
     const modal = document.getElementById("modal");
@@ -72,40 +90,126 @@
     const idx = await fetch("../data/maps/index.json", { cache: "no-cache" }).then(r => r.json());
     const maps = idx.maps || [];
 
+    function getSizeCategory(m) {
+      const s = m.size;
+      if (!s) return "";
+      if (typeof s === "string") return s;
+      if (typeof s === "object" && s.category) return String(s.category);
+      return "";
+    }
+
+    function getSizeLabel(m) {
+      const s = m.size;
+      if (!s) return "";
+      if (typeof s === "string") return s;
+      if (typeof s === "object") {
+        const cat = s.category ? String(s.category) : "";
+        const g = s.grid;
+        if (g && g.w && g.h) return `${cat ? cat + " • " : ""}${g.w}×${g.h} ${g.unit || ""}`.trim();
+        return cat;
+      }
+      return "";
+    }
+
     function openMap(m){
       modalTitle.textContent = m.title || "Map";
-      modalImg.src = `../assets/maps/${m.file}`;
-      modalMeta.textContent = [m.blurb, (m.tags||[]).join(", ")].filter(Boolean).join(" • ");
+      modalImg.src = `../assets/maps/${m.file}`; // NOTE: file includes subfolders now
+      const metaParts = [];
+      if (m.blurb) metaParts.push(m.blurb);
+      if (m.tags && m.tags.length) metaParts.push(m.tags.join(", "));
+      const sz = getSizeLabel(m);
+      if (sz) metaParts.push(sz);
+      modalMeta.textContent = metaParts.join(" • ");
       modal.style.display = "block";
     }
     function close(){ modal.style.display = "none"; modalImg.src = ""; }
     closeBtn.addEventListener("click", close);
     modal.addEventListener("click", (e)=>{ if (e.target === modal) close(); });
 
-    function matches(m, q){
-      const hay = [m.title, m.blurb, ...(m.tags||[])].join(" ").toLowerCase();
-      return !q || hay.includes(q);
+    // populate tag + size dropdowns
+    const allTags = Array.from(new Set(maps.flatMap(m => Array.isArray(m.tags) ? m.tags : [])))
+      .sort((a,b)=>a.localeCompare(b));
+    for (const t of allTags){
+      const opt = document.createElement("option");
+      opt.value = t; opt.textContent = t;
+      tagEl.appendChild(opt);
+    }
+
+    const allSizes = Array.from(new Set(maps.map(getSizeCategory).filter(Boolean)))
+      .sort((a,b)=>a.localeCompare(b));
+    for (const s of allSizes){
+      const opt = document.createElement("option");
+      opt.value = s; opt.textContent = s;
+      sizeEl.appendChild(opt);
+    }
+
+    function matches(m, q, tag, size){
+      const hay = [m.title, m.blurb, ...(m.tags||[]), m.folder, m.folder_title].join(" ").toLowerCase();
+      if (q && !hay.includes(q)) return false;
+      if (tag && !(m.tags || []).includes(tag)) return false;
+      if (size && getSizeCategory(m) !== size) return false;
+      return true;
+    }
+
+    function groupByFolder(list){
+      const map = new Map();
+      for (const m of list){
+        const key = m.folder_title || "Unsorted";
+        if (!map.has(key)) map.set(key, []);
+        map.get(key).push(m);
+      }
+      // stable ordering by group title
+      return Array.from(map.entries()).sort((a,b)=>a[0].localeCompare(b[0]));
     }
 
     function render(){
       const q = (qEl.value || "").trim().toLowerCase();
-      const filtered = maps.filter(m => matches(m, q));
-      gallery.innerHTML = filtered.map(m => `
-        <button class="map-thumb" title="${escapeHtml(m.title)}">
-          <img src="../assets/maps/${escapeHtml(m.file)}" alt="" />
-          <div class="map-cap">
-            <div class="map-cap-title">${escapeHtml(m.title)}</div>
-            <div class="map-cap-sub">${escapeHtml((m.tags||[]).join(", "))}</div>
-          </div>
-        </button>
-      `).join("") || `<p>No maps.</p>`;
+      const tag = tagEl.value || "";
+      const size = sizeEl.value || "";
 
-      [...gallery.querySelectorAll(".map-thumb")].forEach((btn, i)=>{
-        btn.addEventListener("click", ()=> openMap(filtered[i]));
+      const filtered = maps.filter(m => matches(m, q, tag, size));
+      const grouped = groupByFolder(filtered);
+
+      if (!filtered.length){
+        gallery.innerHTML = `<p>No maps.</p>`;
+        return;
+      }
+
+      gallery.innerHTML = grouped.map(([groupTitle, items]) => `
+        <div class="map-group">
+          <h2 class="map-group-title">${escapeHtml(groupTitle)}</h2>
+          <div class="map-grid">
+            ${items.map(m => `
+              <button class="map-thumb" data-file="${escapeHtml(m.file)}" title="${escapeHtml(m.title)}">
+                <img loading="lazy" decoding="async" src="../assets/maps/${escapeHtml(m.file)}" alt="" />
+                <div class="map-cap">
+                  <div class="map-cap-title">${escapeHtml(m.title)}</div>
+                  <div class="map-cap-sub">
+                    ${escapeHtml((m.tags||[]).slice(0,3).join(", "))}
+                    ${getSizeLabel(m) ? ` • ${escapeHtml(getSizeLabel(m))}` : ""}
+                  </div>
+                </div>
+              </button>
+            `).join("")}
+          </div>
+        </div>
+      `).join("");
+
+      // wire clicks
+      const byFile = new Map(filtered.map(m => [m.file, m]));
+      gallery.querySelectorAll(".map-thumb").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const file = btn.getAttribute("data-file");
+          const m = byFile.get(file);
+          if (m) openMap(m);
+        });
       });
     }
 
     qEl.addEventListener("input", render);
+    tagEl.addEventListener("change", render);
+    sizeEl.addEventListener("change", render);
+
     render();
   </script>
 </body>

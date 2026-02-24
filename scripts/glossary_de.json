@@ -1,0 +1,82 @@
+{
+  "language": "de",
+  "description": "Normalization rules to keep common D&D terms consistent after translation. Edit to your preference.",
+  "rules": [
+    {
+      "pattern": "(?i)\\bRettungsprobe(n)?\\b",
+      "replace": "Rettungswurf\\1"
+    },
+    {
+      "pattern": "(?i)\\bAttributscheck(s)?\\b",
+      "replace": "Attributsprobe\\1"
+    },
+    {
+      "pattern": "(?i)\\bEigenschaftsprobe(n)?\\b",
+      "replace": "Attributsprobe\\1"
+    },
+    {
+      "pattern": "(?i)\\bAngriffsprobe(n)?\\b",
+      "replace": "Angriffswurf\\1"
+    },
+    {
+      "pattern": "(?i)\\bAngriffswürfe(n)?\\b",
+      "replace": "Angriffswürfe\\1"
+    },
+    {
+      "pattern": "(?i)\\bTreffer:\\b",
+      "replace": "Treffer:"
+    },
+    {
+      "pattern": "(?i)\\bBonusaktion(en)?\\b",
+      "replace": "Bonusaktion\\1"
+    },
+    {
+      "pattern": "(?i)\\bZusatzaktion(en)?\\b",
+      "replace": "Bonusaktion\\1"
+    },
+    {
+      "pattern": "(?i)\\bReaktion(en)?\\b",
+      "replace": "Reaktion\\1"
+    },
+    {
+      "pattern": "(?i)\\blegendäre Aktion(en)?\\b",
+      "replace": "Legendäre Aktion\\1"
+    },
+    {
+      "pattern": "(?i)\\bUnterschlupf-Aktion(en)?\\b",
+      "replace": "Unterschlupfaktion\\1"
+    },
+    {
+      "pattern": "(?i)\\bRegional(e|en)\\s+Effekt(e|en)?\\b",
+      "replace": "Regional\\1 Effekt\\2"
+    },
+    {
+      "pattern": "(?i)\\bÜbungsbonus\\b",
+      "replace": "Übungsbonus"
+    },
+    {
+      "pattern": "(?i)\\bZauberrettungswurf[-\\s]*SG\\b",
+      "replace": "Zauberrettungswurf-SG"
+    },
+    {
+      "pattern": "(?i)\\bVorteil\\b",
+      "replace": "Vorteil"
+    },
+    {
+      "pattern": "(?i)\\bNachteil\\b",
+      "replace": "Nachteil"
+    },
+    {
+      "pattern": "(?i)\\bMelee Weapon Attack:\\b",
+      "replace": "Melee Weapon Attack:"
+    },
+    {
+      "pattern": "(?i)\\bRanged Weapon Attack:\\b",
+      "replace": "Ranged Weapon Attack:"
+    },
+    {
+      "pattern": "(?i)\\bHit:\\b",
+      "replace": "Hit:"
+    }
+  ]
+}

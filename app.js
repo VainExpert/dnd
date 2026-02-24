@@ -110,6 +110,16 @@ function simpleMarkdown(md) {
     return `<pre><code>${code}</code></pre>`;
   });
 
+  md = md.replace(/\[\[(spell|monster|pc):([^\]]+)\]\]/gi, (_, kind, id) => {
+    const k = kind.toLowerCase();
+    const slug = String(id).trim();
+    const label = slug.replaceAll("-", " ");
+    if (k === "spell") return `<a href="./pages/spell.html?id=${encodeURIComponent(slug)}">${label}</a>`;
+    if (k === "monster") return `<a href="./pages/monster.html?id=${encodeURIComponent(slug)}">${label}</a>`;
+    if (k === "pc") return `<a href="./pages/pc.html?id=${encodeURIComponent(slug)}">${label}</a>`;
+    return label;
+  });
+
   return md;
 }
 

@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Monster</title>
+  <link rel="stylesheet" href="../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title" id="title">Monster</div>
+      <div class="subtitle"><a href="./bestiary.html">← Back to Bestiary</a> • <a href="../index.html">Home</a></div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="content" style="max-width:900px;">
+      <div id="view"></div>
+    </div>
+  </main>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany, fmtSigned, mod } from "../lib.js";
+
+    const view = document.getElementById("view");
+    const titleEl = document.getElementById("title");
+    const id = new URLSearchParams(location.search).get("id");
+
+    if (!id) { view.innerHTML = "<p>Missing monster id.</p>"; throw new Error("Missing id"); }
+
+    const files = await loadIndex("../data/monsters/index.json");
+    const monsters = await loadMany("../data/monsters", files);
+
+    const m =
+      monsters.find(x => (x.id || "").toLowerCase() === id.toLowerCase()) ||
+      monsters.find(x => (x.name || "").toLowerCase() === id.toLowerCase());
+
+    if (!m) { view.innerHTML = `<p>Monster not found: <code>${escapeHtml(id)}</code></p>`; throw new Error("Not found"); }
+
+    titleEl.textContent = m.name || "Monster";
+
+    const ab = m.abilities || {};
+    const typeLine = `${m.size || "—"} ${m.type?.type || "—"}, ${m.alignment || "—"}`;
+
+    view.innerHTML = `
+      <h1>${escapeHtml(m.name)}</h1>
+      <p class="muted">${escapeHtml(typeLine)}</p>
+
+      <div class="mini-box">
+        <div class="mini-box-title">Stats</div>
+        <div class="mini-box-text">
+          <div><b>AC:</b> ${escapeHtml(m.ac)}</div>
+          <div><b>HP:</b> ${escapeHtml(m.hp?.average)} (${escapeHtml(m.hp?.formula)})</div>
+          <div><b>Speed:</b> ${escapeHtml(m.speed?.walk ? m.speed.walk + " ft." : "—")}</div>
+          <div style="margin-top:8px;">
+            <b>STR</b> ${ab.str ?? "—"} (${fmtSigned(mod(ab.str ?? 10))}) •
+            <b>DEX</b> ${ab.dex ?? "—"} (${fmtSigned(mod(ab.dex ?? 10))}) •
+            <b>CON</b> ${ab.con ?? "—"} (${fmtSigned(mod(ab.con ?? 10))}) •
+            <b>INT</b> ${ab.int ?? "—"} (${fmtSigned(mod(ab.int ?? 10))}) •
+            <b>WIS</b> ${ab.wis ?? "—"} (${fmtSigned(mod(ab.wis ?? 10))}) •
+            <b>CHA</b> ${ab.cha ?? "—"} (${fmtSigned(mod(ab.cha ?? 10))})
+          </div>
+        </div>
+      </div>
+
+      ${(m.traits && m.traits.length) ? `
+        <div class="mini-box" style="margin-top:12px;">
+          <div class="mini-box-title">Traits</div>
+          <div class="mini-box-text">
+            ${m.traits.map(t => `<div class="mini"><b>${escapeHtml(t.name)}.</b> ${escapeHtml(t.text)}</div>`).join("")}
+          </div>
+        </div>` : ""}
+
+      ${(m.actions && m.actions.length) ? `
+        <div class="mini-box" style="margin-top:12px;">
+          <div class="mini-box-title">Actions</div>
+          <div class="mini-box-text">
+            ${m.actions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${escapeHtml(a.text || a.type || "")}</div>`).join("")}
+          </div>
+        </div>` : ""}
+
+      ${m.source ? `<p class="muted" style="margin-top:12px;">Source: ${escapeHtml(typeof m.source === "string" ? m.source : "homebrew")}</p>` : ""}
+    `;
+  </script>
+</body>
+</html>

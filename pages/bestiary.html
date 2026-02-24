@@ -30,13 +30,20 @@
         </div>
 
         <div class="group">
+          <div class="group-title">Tools</div>
+          <a href="./pages/tools.html">Random Tables & Generators</a>
+          <a href="./pages/dice.html">Dice Roller</a>
+          <a href="./pages/units.html">Unit Converter</a>
+        </div>
+
+        <div class="group">
           <div class="group-title">Libraries</div>
           <a href="./bestiary.html" class="active">Bestiary</a>
           <a href="./spells.html">Spells</a>
           <a href="./items.html">Items</a>
           <a href="./maps.html">Maps</a>
           <a href="./pcs.html">PCs</a>
-          <a href="./tools.html">Tools</a>
+          <a href="./icons.html">Icons</a>
         </div>
       </nav>
     </aside>
@@ -76,6 +83,35 @@
     const sizeEl = document.getElementById("size");
     const typeEl = document.getElementById("type");
 
+    function formatSenses(s){
+      if (!s) return "";
+      if (typeof s === "string") return s;
+      const parts = [];
+      if (s.blindsight != null) parts.push(`blindsight ${s.blindsight} ft.`);
+      if (s.darkvision != null) parts.push(`darkvision ${s.darkvision} ft.`);
+      if (s.tremorsense != null) parts.push(`tremorsense ${s.tremorsense} ft.`);
+      if (s.truesight != null) parts.push(`truesight ${s.truesight} ft.`);
+      if (s.passive_perception != null) parts.push(`passive Perception ${s.passive_perception}`);
+      return parts.join(", ");
+    }
+
+    function formatSaves(s){
+      if (!s) return "";
+      if (typeof s === "string") return s;
+      const order = ["str","dex","con","int","wis","cha"];
+      const parts = [];
+      for (const k of order){
+        if (s[k] == null) continue;
+        parts.push(`${k.toUpperCase()} ${s[k] >= 0 ? "+"+s[k] : s[k]}`);
+      }
+      return parts.join(", ");
+    }
+
+    function formatList(x){
+      if (!x) return "";
+      return Array.isArray(x) ? x.join(", ") : String(x);
+    }
+
     function card(m){
       const ab = m.abilities || {};
       const cr = m.challenge?.cr ?? "—";
@@ -83,8 +119,34 @@
       const speed = m.speed?.walk ? `${m.speed.walk} ft.` : "—";
       const typeLine = `${m.size ?? "—"} ${m.type?.type ?? "—"}, ${m.alignment ?? "—"}`;
 
-      const traits = (m.traits || []).slice(0,2).map(t => `<div class="mini"><b>${escapeHtml(t.name)}:</b> ${escapeHtml(t.text)}</div>`).join("");
-      const actions = (m.actions || []).slice(0,2).map(a => `<div class="mini"><b>${escapeHtml(a.name)}:</b> ${escapeHtml((a.type||"").replaceAll("_"," "))}</div>`).join("");
+      const traits = (m.traits || []).slice(0,2)
+        .map(t => `<div class="mini"><b>${escapeHtml(t.name)}:</b> ${escapeHtml(t.text)}</div>`).join("");
+
+      const actions = (m.actions || []).slice(0,2)
+        .map(a => `<div class="mini"><b>${escapeHtml(a.name)}:</b> ${escapeHtml(a.text || a.type || "")}</div>`).join("");
+
+      const sensesLine = formatSenses(m.senses);
+      const languagesLine = (m.languages && m.languages.length) ? m.languages.join(", ") : "";
+      const savesLine = formatSaves(m.saving_throws);
+
+      const defenses = [];
+      const imm = formatList(m.damage_immunities);
+      const res = formatList(m.damage_resistances);
+      const vul = formatList(m.damage_vulnerabilities);
+      const cimm = formatList(m.condition_immunities);
+      if (vul) defenses.push(`<div class="mini"><b>Vuln:</b> ${escapeHtml(vul)}</div>`);
+      if (res) defenses.push(`<div class="mini"><b>Res:</b> ${escapeHtml(res)}</div>`);
+      if (imm) defenses.push(`<div class="mini"><b>Imm:</b> ${escapeHtml(imm)}</div>`);
+      if (cimm) defenses.push(`<div class="mini"><b>Cond Imm:</b> ${escapeHtml(cimm)}</div>`);
+
+      const legIntro = m.legendary_actions_intro ? `<div class="mini">${escapeHtml(m.legendary_actions_intro)}</div>` : "";
+      const legActions = (m.legendary_actions || []).slice(0,2).map(a => {
+        const cost = a.cost != null ? ` (Cost ${a.cost})` : "";
+        return `<div class="mini"><b>${escapeHtml(a.name)}${escapeHtml(cost)}:</b> ${escapeHtml(a.text)}</div>`;
+      }).join("");
+      const legBox = (m.legendary_actions && m.legendary_actions.length)
+        ? `<div class="mini-box"><div class="mini-box-title">Legendary Actions</div><div class="mini-box-text">${legIntro}${legActions}</div></div>`
+        : "";
 
       return `
         <div class="mini-card">
@@ -92,7 +154,7 @@
             <div class="mini-title">${escapeHtml(m.name)}</div>
             <div class="mini-sub">${escapeHtml(typeLine)}</div>
             <div class="pillbar">
-              <span class="pill"><b>AC</b> ${escapeHtml(m.ac)}</span>
+              <span class="pill"><b>AC</b> ${escapeHtml(m.ac)}${m.ac_note ? ` <span class="muted">(${escapeHtml(m.ac_note)})</span>` : ""}</span>
               <span class="pill"><b>HP</b> ${escapeHtml(m.hp?.average)} <span class="muted">(${escapeHtml(m.hp?.formula)})</span></span>
               <span class="pill"><b>Speed</b> ${escapeHtml(speed)}</span>
               <span class="pill"><b>CR</b> ${escapeHtml(cr)}</span>
@@ -113,25 +175,55 @@
               </div>
             </div>
 
+            ${(savesLine || sensesLine || languagesLine) ? `
+              <div class="mini-box">
+                <div class="mini-box-title">Saves • Senses • Languages</div>
+                <div class="mini-box-text">
+                  ${savesLine ? `<div class="mini"><b>Saves:</b> ${escapeHtml(savesLine)}</div>` : ""}
+                  ${sensesLine ? `<div class="mini"><b>Senses:</b> ${escapeHtml(sensesLine)}</div>` : ""}
+                  ${languagesLine ? `<div class="mini"><b>Languages:</b> ${escapeHtml(languagesLine)}</div>` : ""}
+                </div>
+              </div>` : ""}
+
+            ${defenses.length ? `<div class="mini-box"><div class="mini-box-title">Defenses</div><div class="mini-box-text">${defenses.join("")}</div></div>` : ""}
+
             ${(m.traits?.length) ? `<div class="mini-box"><div class="mini-box-title">Traits</div><div class="mini-box-text">${traits}</div></div>` : ""}
             ${(m.actions?.length) ? `<div class="mini-box"><div class="mini-box-title">Actions</div><div class="mini-box-text">${actions}</div></div>` : ""}
 
-            <div class="mini-footer muted">${m.source ? `Source: ${escapeHtml(m.source)}` : ""}</div>
+            ${legBox}
+
+            <div class="mini-footer muted">${m.source ? `Source: ${escapeHtml(typeof m.source === "string" ? m.source : "homebrew")}` : ""}</div>
           </div>
         </div>
       `;
     }
 
     function matches(m, q, cr, size, type){
+      const sensesStr = (m.senses && typeof m.senses === "object")
+        ? Object.entries(m.senses).map(([k,v]) => `${k} ${v}`).join(" ")
+        : (m.senses || "");
+      const savesStr = (m.saving_throws && typeof m.saving_throws === "object")
+        ? Object.entries(m.saving_throws).map(([k,v]) => `${k} ${v}`).join(" ")
+        : (m.saving_throws || "");
+
       const hay = [
         m.name,
         m.size,
         m.type?.type,
         ...(m.type?.tags || []),
         m.alignment,
+        m.ac_note,
         ...(m.languages || []),
+        sensesStr,
+        savesStr,
+        ...(m.damage_vulnerabilities || []),
+        ...(m.damage_resistances || []),
+        ...(m.damage_immunities || []),
+        ...(m.condition_immunities || []),
         ...(m.traits || []).flatMap(t => [t.name, t.text]),
-        ...(m.actions || []).flatMap(a => [a.name, a.type]),
+        ...(m.actions || []).flatMap(a => [a.name, a.type, a.text]),
+        ...(m.legendary_actions || []).flatMap(a => [a.name, a.text]),
+        m.legendary_actions_intro,
       ].join(" ").toLowerCase();
 
       if (q && !hay.includes(q)) return false;

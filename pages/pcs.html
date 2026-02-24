@@ -30,13 +30,20 @@
         </div>
 
         <div class="group">
+          <div class="group-title">Tools</div>
+          <a href="./pages/tools.html">Random Tables & Generators</a>
+          <a href="./pages/dice.html">Dice Roller</a>
+          <a href="./pages/units.html">Unit Converter</a>
+        </div>
+
+        <div class="group">
           <div class="group-title">Libraries</div>
           <a href="./bestiary.html">Bestiary</a>
           <a href="./spells.html">Spells</a>
           <a href="./items.html">Items</a>
           <a href="./maps.html">Maps</a>
           <a href="./pcs.html" class="active">PCs</a>
-          <a href="./tools.html">Tools</a>
+          <a href="./icons.html">Icons</a>
         </div>
       </nav>
     </aside>
@@ -58,7 +65,7 @@
     const pcs = await loadMany("../data/pcs", files);
 
     function card(p){
-      const portrait = p.portrait ? `<img src="../${escapeHtml(p.portrait)}" alt="" style="width:100%; border-radius:12px; border:1px solid rgba(255,255,255,.08); margin-bottom:10px;" />` : "";
+      const portrait = p.portrait ? `<img loading="lazy" decoding="async" src="../${escapeHtml(p.portrait)}" alt="" style="width:100%; border-radius:12px; border:1px solid rgba(255,255,255,.08); margin-bottom:10px;" />` : "";
       const subtitle = [p.race, p.class, p.subclass ? `(${p.subclass})` : null, p.level ? `Lv ${p.level}` : null].filter(Boolean).join(" • ");
       return `
         <div class="mini-card">

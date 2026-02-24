@@ -16,4 +16,5 @@ This is the player-facing campaign hub.
 - [Items](./pages/items.html)
 - [Maps](./pages/maps.html)
 - [PCs](./pages/pcs.html)
+- [Icons](./pages/icons.html)
 - [Tools](./pages/tools.html)

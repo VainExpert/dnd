@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Icons</title>
+  <link rel="stylesheet" href="../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Icons</div>
+      <div class="subtitle">PC • NPC • Monster icons</div>
+    </div>
+    <div class="top-actions">
+      <a class="home-btn" href="../index.html">← Home</a>
+    </div>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="nav">
+        <div class="group">
+          <div class="group-title">Home</div>
+          <a href="../index.html">Homepage</a>
+          <a href="../index.html#content/house-rules/index.md">House Rules</a>
+          <a href="../index.html#content/safety/index.md">Safety</a>
+          <a href="../index.html#content/character-options/index.md">Character Options</a>
+          <a href="../index.html#content/recaps/index.md">Recaps</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Tools</div>
+          <a href="./pages/tools.html">Random Tables & Generators</a>
+          <a href="./pages/dice.html">Dice Roller</a>
+          <a href="./pages/units.html">Unit Converter</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Libraries</div>
+          <a href="./bestiary.html">Bestiary</a>
+          <a href="./spells.html">Spells</a>
+          <a href="./items.html">Items</a>
+          <a href="./maps.html">Maps</a>
+          <a href="./pcs.html">PCs</a>
+          <a href="./icons.html" class="active">Icons</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="content" style="max-width:1100px;">
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px; align-items:center;">
+          <input id="q" class="select" type="search" placeholder="Search title/tags..." style="width:min(420px, 80vw);" />
+          <select id="kind" class="select">
+            <option value="">All kinds</option>
+            <option value="pc">PC</option>
+            <option value="npc">NPC</option>
+            <option value="monster">Monster</option>
+            <option value="other">Other</option>
+          </select>
+          <select id="tag" class="select">
+            <option value="">All tags</option>
+          </select>
+        </div>
+
+        <div id="grid" class="icon-grid"></div>
+      </div>
+    </main>
+  </div>
+
+  <div id="modal" class="map-modal" style="display:none;">
+    <div class="map-modal-inner">
+      <button id="close" class="map-close">Close</button>
+      <div id="modalTitle" class="map-modal-title"></div>
+      <img loading="lazy" decoding="async" id="modalImg" class="map-modal-img" alt="" />
+      <div id="modalMeta" class="map-modal-meta"></div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { escapeHtml } from "../lib.js";
+
+    const qEl = document.getElementById("q");
+    const kindEl = document.getElementById("kind");
+    const tagEl = document.getElementById("tag");
+    const grid = document.getElementById("grid");
+
+    const modal = document.getElementById("modal");
+    const closeBtn = document.getElementById("close");
+    const modalImg = document.getElementById("modalImg");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalMeta = document.getElementById("modalMeta");
+
+    const idx = await fetch("../data/icons/index.json", { cache: "no-cache" }).then(r => r.json());
+    const icons = idx.icons || [];
+
+    // populate tags dropdown
+    const allTags = Array.from(new Set(icons.flatMap(i => Array.isArray(i.tags) ? i.tags : [])))
+      .sort((a,b)=>a.localeCompare(b));
+    for (const t of allTags){
+      const opt = document.createElement("option");
+      opt.value = t; opt.textContent = t;
+      tagEl.appendChild(opt);
+    }
+
+    function openIcon(i){
+      modalTitle.textContent = i.title || "Icon";
+      modalImg.src = `../assets/icons/${i.file}`;
+      const metaParts = [];
+      if (i.kind) metaParts.push(i.kind.toUpperCase());
+      if (i.tags && i.tags.length) metaParts.push(i.tags.join(", "));
+      if (i.blurb) metaParts.push(i.blurb);
+      if (i.credit) metaParts.push(`Credit: ${i.credit}`);
+      modalMeta.textContent = metaParts.join(" • ");
+      modal.style.display = "block";
+    }
+    function close(){ modal.style.display = "none"; modalImg.src = ""; }
+    closeBtn.addEventListener("click", close);
+    modal.addEventListener("click", (e)=>{ if (e.target === modal) close(); });
+
+    function matches(i, q, kind, tag){
+      const hay = [i.title, i.kind, i.blurb, i.credit, ...(i.tags||[]), i.file].join(" ").toLowerCase();
+      if (q && !hay.includes(q)) return false;
+      if (kind && (i.kind || "") !== kind) return false;
+      if (tag && !(i.tags || []).includes(tag)) return false;
+      return true;
+    }
+
+    function render(){
+      const q = (qEl.value || "").trim().toLowerCase();
+      const kind = kindEl.value || "";
+      const tag = tagEl.value || "";
+      const filtered = icons.filter(i => matches(i, q, kind, tag));
+
+      if (!filtered.length){
+        grid.innerHTML = `<p>No icons.</p>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(i => `
+        <button class="icon-thumb" data-file="${escapeHtml(i.file)}" title="${escapeHtml(i.title)}">
+          <div class="icon-img-wrap">
+            <img loading="lazy" decoding="async" src="../assets/icons/${escapeHtml(i.file)}" alt="" />
+          </div>
+          <div class="icon-cap">
+            <div class="icon-cap-title">${escapeHtml(i.title || "")}</div>
+            <div class="icon-cap-sub muted">
+              ${escapeHtml((i.kind || "").toUpperCase())}
+              ${(i.tags && i.tags.length) ? ` • ${escapeHtml(i.tags.slice(0,3).join(", "))}` : ""}
+            </div>
+          </div>
+        </button>
+      `).join("");
+
+      const byFile = new Map(filtered.map(i => [i.file, i]));
+      grid.querySelectorAll(".icon-thumb").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const file = btn.getAttribute("data-file");
+          const i = byFile.get(file);
+          if (i) openIcon(i);
+        });
+      });
+    }
+
+    qEl.addEventListener("input", render);
+    kindEl.addEventListener("change", render);
+    tagEl.addEventListener("change", render);
+
+    render();
+  </script>
+</body>
+</html>

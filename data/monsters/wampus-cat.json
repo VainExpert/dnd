@@ -1,0 +1,70 @@
+{
+  "name": "Wampus Cat",
+  "size": "Medium",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr1",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 14,
+  "hp": {
+    "average": 58,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20,
+    "swim": 20
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 18,
+    "con": 15,
+    "int": 12,
+    "wis": 14,
+    "cha": 16
+  },
+  "skills": {
+    "Deception": 5,
+    "Persuasion": 5
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Focused Animosity",
+      "text": "The wampus cat has advantage on melee attacks against any male she has seen employ divine magic or wield a holy symbol."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The wampus cat's innate spellcasting ability is Charisma (spell save DC 13). She can innately cast the following spells, requiring no material components:\n\n* At will: <i>disguise self </i>(appearance of a female human)<i>, mage hand</i>\n\n* 2/day: <i>hex</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The wampus cat has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+    },
+    {
+      "name": "Yowl (Recharge 5-6)",
+      "type": "special",
+      "text": "Intelligent creatures within 60 feet of the cat who are able to hear its voice must make a DC 13 Charisma saving throw. Those who fail find the sound of the wampus cat's voice pleasant and alluring, so that the cat has advantage on Charisma checks against them for 1 minute. The affected characters cannot attack the wampus cat during this time unless they are wounded in that time."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Elusa Hound",
+  "size": "Medium",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr1",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 12,
+  "hp": {
+    "average": 26,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 15,
+    "con": 15,
+    "int": 6,
+    "wis": 12,
+    "cha": 8
+  },
+  "skills": {
+    "Athletics": 4,
+    "Perception": 3,
+    "Survival": 3
+  },
+  "languages": [
+    "understands Common but can't speak"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Arcane Sight",
+      "text": "Elusa hounds can perceive magical auras from active\nspells, magical effects, and magic items within a radius of 120 feet. Once\nan elusa hound has seen one of the above, it has advantage on Wisdom\n(Survival) checks to track the origin of the effect for 24 hours."
+    },
+    {
+      "name": "Keen Hearing and Smell",
+      "text": "The elusa hound has advantage on Wisdom\n(Perception) checks that rely on hearing or smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage. If the target is a creature, it must succeed on a DC\n11 Strength saving throw or be knocked prone and grappled. The elusa\nhound can only grapple one creature at a time."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Monk of the Scattered Sands",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr4",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "neutral good",
+  "ac": 16,
+  "hp": {
+    "average": 65,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 16,
+    "con": 14,
+    "int": 10,
+    "wis": 16,
+    "cha": 11
+  },
+  "skills": {
+    "Acrobatics": 5,
+    "Medicine": 5,
+    "Religion": 2
+  },
+  "languages": [
+    "any three languages"
+  ],
+  "challenge": {
+    "cr": "4",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Sand Glide",
+      "text": "The monk has a flight speed of 20 ft. as\nsands swirl to carry it. This benefit works only in\nshort bursts; the monk falls at the end of its turn if\nit is in the air and nothing else is holding it aloft."
+    },
+    {
+      "name": "Unarmored Defense",
+      "text": "While the monk is wearing no\narmor and wielding no shield, its AC incluces its\nWisdom modifier."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The monk makes three attacks with its\nquarterstaff. It can also use Manipulate Sands once,\neither before or after one of the attacks."
+    },
+    {
+      "name": "Quarterstaff",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach\n5ft., one target. Hit: 7 (1d8 + 3) bludgeoning\ndamage."
+    },
+    {
+      "name": "Manipulate Sands",
+      "type": "special",
+      "text": "The monk sends a stream of sand\nat a target within 30 ft. The target must make a DC\n13 Dexterity saving throw, taking 15 (6d4)\nbludgeoning damage and becoming blinded until\nthe end of their next turn on a fail, or half as much\ndamage and are not blinded on a success."
+    }
+  ],
+  "source": "creature"
+}

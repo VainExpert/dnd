@@ -1,0 +1,75 @@
+{
+  "name": "Flame Hydra",
+  "size": "Huge",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "huge",
+      "monstrosity",
+      "cr9",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 15,
+  "hp": {
+    "average": 172,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 12,
+    "con": 20,
+    "int": 3,
+    "wis": 12,
+    "cha": 7
+  },
+  "skills": {
+    "Perception": 9
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Multiple Heads",
+      "text": "The hydra has five heads. While it\nhas more than one head, the hydra has advantage\non saving throws against being blinded, charmed,\ndeafened, frightened, stunned, and knocked\nunconscious. Whenever the hydra takes 25 or more\ndamage in a single turn, one of its heads dies. If all\nits heads die, the hydra dies. At the end of its turn,\nit grows two heads for each of its heads that died\nsince its last turn, unless it has taken cold damage\nsince its last turn. The hydra regains 10 hit points\nfor each head regrown in this way and when a head\ngrows it releases a burst of flame. Each creature\nwithin 10 feet of the hydra when a head regrows\nmust succeed on a DC 16 Dexterity saving throw or\ntake 11 (2d10) fire damage."
+    },
+    {
+      "name": "Reactive Heads",
+      "text": "For each head the hydra has beyond\none, it gets an extra reaction that can be used only\nfor opportunity attacks."
+    },
+    {
+      "name": "Wakeful",
+      "text": "While the hydra sleeps, at least one of its\nheads is awake."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The hydra makes as many bite or fire\nblast attacks as it has heads."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 10 ft.,\none target. Hit: 10 (1d10 + 5) piercing damage."
+    },
+    {
+      "name": "Fire Blast",
+      "type": "special",
+      "text": "Ranged Spell Attack: +9 to hit, range\n60/240 ft., one target. Hit: 9 (2d8) fire damage."
+    },
+    {
+      "name": "Inferno (Recharge 5-6)",
+      "type": "special",
+      "text": "The hydra exhales fiery\nbreath from all of its heads, creating a 30 foot cone\nof flame. Each creature in this area must make a DC\n16 Dexterity saving throw, taking 7 (2d6) fire\ndamage for each living head on a failed save, or half\nas much damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

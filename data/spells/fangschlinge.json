@@ -1,0 +1,19 @@
+{
+  "id": "fangschlinge",
+  "name": "Fangschlinge",
+  "level": 1,
+  "school": "Bannmagie",
+  "casting_time": "1 min",
+  "range": "Berührung",
+  "components": "G, M (7,5 Meter Seil, die der Zauber verbraucht)",
+  "duration": "8 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Druide",
+    "Waldläufer",
+    "Magier"
+  ],
+  "text": "Du legst das Seil in einem Kreis mit einem 1,5 m Radius auf den Boden. Wenn du den Zauber fertig gewirkt hast, verschwindet das Seil und der Kreis wird zu einer magischen Falle.\n Die Falle ist so gut wie unsichtbar und erfordert einen erfolgreichen Nachforschungswurf um entdeckt zu werden.\nDie Falle wird ausgelöst, wenn eine Große oder kleinere Kreatur in dem Kreis auf den Boden tritt. Sie muss einen DEX-Rettungswurf machen. Bei einem Fehlschlag wird sie magisch in die Luft gezogen, eingeschränkt und hängt für die Wirkungsdauer 1 m über dem Boden.\nEine gefangene Kreatur kann am Ende jedes Zuges einen DEX-Rettungswurf machen, um der Falle zu entkommen. Alternativ kann die Kreatur oder jemand anderes, der in Griffreichweite ist, einen Arkana-Wurf machen. Bei Erfolg endet die Einschränkung.\nNachdem die Falle ausgelöst wurde, endet der Zauber, falls keine Kreatur mehr eingeschränkt wird."
+}

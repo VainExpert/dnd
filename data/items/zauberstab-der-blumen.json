@@ -1,0 +1,46 @@
+{
+  "id": "zauberstab-der-blumen",
+  "type": "item",
+  "name": "Zauberstab der Blumen",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Holzstab hat 10 Ladungen. Wenn der Stab gehalten wird, kann mit einer Aktion eine Ladung verwendet werden um eine Blume aus der Erde in einem Abstand von 1,5 m von dir wachsen zu lassen. Du bestimmst die Art der Blume. Sie ist nicht-magisch und hat alle Eigenschaften einer normalen Blume. Der Stab bekommt 1W6+4 Ladungen jeden Morgen zurück. Wenn die letzte Ladung verwendet wurde, muss ein W20 gewürfelt werden. Bei einer 1 verwandelt sich der Stab in Blumenblüten und ist verloren.",
+  "tags": [
+    "magisch",
+    "zauberstab",
+    "blumen",
+    "beschwören",
+    "ladungen",
+    "aktion"
+  ]
+}

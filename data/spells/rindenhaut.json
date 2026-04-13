@@ -1,0 +1,17 @@
+{
+  "id": "rindenhaut",
+  "name": "Rindenhaut",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G, M (Handvoll Eichenrinde)",
+  "duration": "Konzentration, bis zu 1 h",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Waldläufer"
+  ],
+  "text": "Du berührst eine willige Kreatur.\nFür die Wirkungsdauer wird die Haut des Ziels rau und rindenartig und seine RK ist mindestens 16, egal welche Rüstung es trägt."
+}

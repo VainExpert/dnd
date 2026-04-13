@@ -1,0 +1,566 @@
+{
+  "character": {
+    "identity": {
+      "name": "Sam “Nightshade”",
+      "player_name": "Marco",
+      "class": {
+        "name": "Schurke",
+        "level": 3,
+        "subclass": "Dieb"
+      },
+      "race": "Mensch",
+      "background": "Krimineller",
+      "alignment": "chaotisch-neutral",
+      "deity": null,
+      "gender": "männlich",
+      "age": 24,
+      "size": "Mittel",
+      "height": 1.69,
+      "weight": 74,
+      "appearance": {
+        "skin": "hell",
+        "eyes": "blau",
+        "hair": "braun"
+      },
+      "organizations": [
+        "Tybalds Abenteuertruppe"
+      ]
+    },
+    "ability_scores": {
+      "STR": {
+        "score": 8,
+        "mod": -1,
+        "save": -1
+      },
+      "DEX": {
+        "score": 15,
+        "mod": 2,
+        "save": 4
+      },
+      "CON": {
+        "score": 11,
+        "mod": 1,
+        "save": 1
+      },
+      "INT": {
+        "score": 13,
+        "mod": 1,
+        "save": 3
+      },
+      "WIS": {
+        "score": 13,
+        "mod": 1,
+        "save": 1
+      },
+      "CHA": {
+        "score": 15,
+        "mod": 2,
+        "save": 2
+      }
+    },
+    "proficiency_bonus": 2,
+    "inspiration": true,
+    "skills": {
+      "Akrobatik": 4,
+      "Arkane Kunde": 2,
+      "Athletik": 1,
+      "Auftreten": 2,
+      "Einschüchtern": 2,
+      "Fingerfertigkeit": 6,
+      "Geschichte": 1,
+      "Heimlichkeit": 6,
+      "Medizin": 1,
+      "Mit Tieren umgehen": 1,
+      "Motiv erkennen": 3,
+      "Nachforschungen": 3,
+      "Naturkunde": 1,
+      "Religion": 1,
+      "Täuschen": 4,
+      "Überlebenskunst": 1,
+      "Überzeugen": 2,
+      "Wahrnehmung": 1
+    },
+    "passive_scores": {
+      "passive_wahrnehmung": 11,
+      "passiver_einblick": 13,
+      "passive_nachforschungen": 13
+    },
+    "combat": {
+      "armor_class": 13,
+      "initiative": 6,
+      "speeds": {
+        "walk": 9,
+        "climb": 9
+      },
+      "hp": {
+        "max": 20,
+        "hit_dice": "3d8"
+      },
+      "heroic_inspiration": 1,
+      "defenses": {
+        "resistances": [],
+        "immunities": [],
+        "advantages": [],
+        "condition_immunities": []
+      },
+      "senses": {},
+      "attacks_and_cantrips": [
+        {
+          "name": "Giftdolch*",
+          "attack_bonus": 6,
+          "damage": "1d4+3 Stich",
+          "properties": [
+            "Einfach",
+            "Finesse",
+            "Leicht",
+            "Geworfen",
+            "Reichweite 6 m / 18 m",
+            "Kerben",
+            "*-Effekt"
+          ],
+          "notes": [
+            "Eingestimmtes magisches Item (siehe Merkmale/Talente).",
+            "*-Effekt: Bonusaktion Gift auftragen; beim nächsten Treffer innerhalb 1 Minute: SG 15 KON-RW, bei Misslingen 2d10 Giftschaden und 1 Minute vergiftet (RW-Wiederholungen nicht im Sheet genannt)."
+          ],
+          "item_ref": {
+            "id": "giftdolch",
+            "name": "Giftdolch"
+          }
+        },
+        {
+          "name": "Dolch (2x)",
+          "attack_bonus": 5,
+          "damage": "1d4+2 Stich",
+          "properties": [
+            "Einfach",
+            "Finesse",
+            "Leicht",
+            "Geworfen",
+            "Reichweite 6 m / 18 m",
+            "Kerben"
+          ],
+          "item_ref": {
+            "id": "dolch",
+            "name": "Dolch"
+          }
+        },
+        {
+          "name": "Kurzschwert",
+          "attack_bonus": 4,
+          "damage": "1d6+2 Stich",
+          "properties": [
+            "Kriegswaffe",
+            "Finesse",
+            "Leicht"
+          ],
+          "item_ref": {
+            "id": "kurzschwert",
+            "name": "Kurzschwert"
+          }
+        },
+        {
+          "name": "Kurzbogen",
+          "attack_bonus": 5,
+          "damage": "1d6+2 Stich",
+          "properties": [
+            "Einfach",
+            "Munition",
+            "Reichweite 24 m / 100 m",
+            "Peinigen"
+          ],
+          "item_ref": {
+            "id": "kurzbogen",
+            "name": "Kurzbogen"
+          }
+        },
+        {
+          "name": "Unbewaffneter Schlag",
+          "attack_bonus": 1,
+          "damage": "0 Wucht"
+        }
+      ],
+      "actions": {
+        "standard": [
+          "Angriff",
+          "Ausweichen",
+          "Beeinflussen",
+          "Interagieren",
+          "Flucht",
+          "Helfen",
+          "Magie",
+          "Packen",
+          "Sprint",
+          "Stoßen",
+          "Studieren",
+          "Verstecken",
+          "Verwenden",
+          "Vorbereiten",
+          "2-Waffen Kampf"
+        ],
+        "bonus_actions": [
+          "Raffinierte Aktion (Flucht / Sprint / Verstecken) (1/Zug)",
+          "Flinke Finger (1/Zug)",
+          "Ruhige Hände"
+        ],
+        "reactions": [
+          "Gelegenheitsangriff",
+          "Initiativentausch (Alarmiert)"
+        ],
+        "special": [
+          "Hinterhältiger Angriff (1/Zug): +2d6 Extraschaden bei Treffer (Finesse-/Reichweite-Waffe; Bedingungen siehe Merkmale)"
+        ]
+      }
+    },
+    "proficiencies": {
+      "armor": [
+        "Leichte Rüstung"
+      ],
+      "weapons": [
+        "Armbrust",
+        "Einfache Waffen",
+        "Handarmbrust",
+        "Krummsäbel",
+        "Kurzschwert",
+        "Peitsche",
+        "Rapier"
+      ],
+      "tools": [
+        "Diebeswerkzeug",
+        "Verkleidungsausrüstung",
+        "Fälscherausrüstung"
+      ],
+      "languages": [
+        "Gemeinsprache",
+        "Zwergisch",
+        "Gnomisch",
+        "Orkisch",
+        "Diebessprech"
+      ]
+    },
+    "spellcasting": null,
+    "features": {
+      "class": [
+        {
+          "name": "Diebessprech",
+          "description": "Du kennst Diebessprech."
+        },
+        {
+          "name": "Expertise",
+          "description": "Du bist Experte in 2 Fertigkeiten. Dein Übungsbonus wird für diese Fertigkeiten verdoppelt.",
+          "expertise_skills": [
+            "Fingerfertigkeit",
+            "Heimlichkeit"
+          ]
+        },
+        {
+          "name": "Hinterhältiger Angriff",
+          "uses": "1/Zug",
+          "extra_damage": "2d6",
+          "description": "Wenn du bei einem Angriff mit einer Finesse- oder Reichweite-Waffe Vorteil hast, kannst du bei einem Treffer 2d6 Extraschaden des Waffentyps machen. Vorteil ist nicht nötig, wenn ein Verbündeter in 1,5 m um dein Ziel steht und nicht kampfunfähig ist. Du darfst keinen Nachteil auf den Angriff haben."
+        },
+        {
+          "name": "Raffinierte Aktion",
+          "uses": "1/Zug",
+          "activation": "Bonusaktion",
+          "options": [
+            "Flucht",
+            "Sprint",
+            "Verstecken"
+          ]
+        },
+        {
+          "name": "Waffenmeisterungen",
+          "description": "Siehe Talente."
+        }
+      ],
+      "subclass": [
+        {
+          "name": "Ruhige Hände",
+          "activation": "Bonusaktion",
+          "effect": "Als Bonusaktion kannst du dir Vorteil auf deinen nächsten Angriffswurf geben, wenn du dich nicht bewegt hast oder bewegen wirst.",
+          "always_prepared_spells": []
+        },
+        {
+          "name": "Flinke Finger",
+          "uses": "1/Zug",
+          "activation": "Bonusaktion",
+          "options": [
+            "Fingerfertigkeit-Wurf mit Diebeswerkzeug (Schloss knacken / Falle entschärfen) oder Taschendiebstahl",
+            "Mit der Magie-Aktion ein magisches Item nutzen",
+            "Mit der Verwenden-Aktion einen Gegenstand nutzen"
+          ],
+          "always_prepared_spells": []
+        },
+        {
+          "name": "Arbeit im Zweiten Stockwerk",
+          "effects": [
+            "Du bekommst eine Klettergeschwindigkeit.",
+            "Du kannst deine Sprungdistanz über deinen DEX-Wert bestimmen, anstelle deines STR-Wertes."
+          ],
+          "always_prepared_spells": []
+        }
+      ],
+      "racial": [
+        {
+          "name": "Einfallsreich",
+          "description": "Nach jeder Langen Rast bekommst du 1 Heroische Inspiration."
+        }
+      ],
+      "background": [
+        {
+          "name": "Krimineller Kontakt",
+          "description": "Du hast einen vertrauenswürdigen und zuverlässlichen Kontakt zu Kriminellen-Netzwerken. Du kannst mit diesem immer Nachrichten austauschen und (er)kennst alle Gestalten des Untergrunds, mit denen du kommunizieren kannst."
+        }
+      ],
+      "talents": [
+        {
+          "name": "Wilder Angreifer",
+          "effect": "Einmal pro Zug, wenn du dein Ziel mit einer Waffe triffst, kannst du den Schadenswürfel 2x werfen und den Wurf deiner Wahl gegen das Ziel verwenden."
+        },
+        {
+          "name": "Alarmiert",
+          "subfeatures": [
+            {
+              "name": "Initiativentausch",
+              "activation": "Reaktion (direkt nach dem Initiativenwurf)",
+              "effect": "Du kannst deine Initiative mit einem willigen Verbündeten tauschen, solange keiner von euch beiden kampfunfähig ist."
+            }
+          ]
+        },
+        {
+          "name": "Waffenmeisterungen",
+          "description": "Du hast 2 Arten von Waffen deiner Wahl gemeistert. Du kannst eine der Meisterungen bei jeder Langen Rast tauschen.",
+          "masteries": [
+            {
+              "name": "Kerben",
+              "weapon": "Dolch",
+              "cost": "1 Aktion",
+              "effect": "Einmal pro Zug kannst du den Extra-Angriff der Leicht-Eigenschaft als Teil der Hauptangriffs-Aktion machen, statt als Bonusaktion."
+            },
+            {
+              "name": "Peinigen",
+              "weapon": "Kurzbogen",
+              "cost": "1 Aktion",
+              "effect": "Wenn du eine Kreatur triffst und Schaden verursachst, hast du Vorteil bei deinem nächsten Angriffswurf gegen die Kreatur vor dem Ende deines nächsten Zuges."
+            }
+          ]
+        }
+      ],
+      "attuned_magic_items_text": [
+        {
+          "name": "Giftdolch",
+          "type": "Magischer Gegenstand (eingestimmt)",
+          "activation": "Bonusaktion",
+          "duration": "1 Minute oder bis zum nächsten Treffer",
+          "effects": [
+            "Du kannst den Dolch mit schwarzem Gift überziehen.",
+            "Beim nächsten Treffer gegen eine Kreatur: SG 15 KON-Rettungswurf; bei Fehlschlag 2d10 Giftschaden und 1 Minute vergiftet."
+          ],
+          "item_ref": {
+            "id": "giftdolch",
+            "name": "Giftdolch"
+          }
+        }
+      ]
+    },
+    "equipment": {
+      "currency": {
+        "cp": 0,
+        "sp": 3,
+        "gp": 30,
+        "pp": 0
+      },
+      "weights": {
+        "carried": 30.5,
+        "encumbered_at": 55,
+        "push_drag_lift": 110
+      },
+      "items": [
+        {
+          "name": "Lederrüstung (Leicht, RK = 11 + DEX-Modifikator)",
+          "quantity": 1,
+          "weight": 4.5,
+          "item_ref": {
+            "id": "lederruestung",
+            "name": "Lederrüstung"
+          }
+        },
+        {
+          "name": "Giftdolch",
+          "quantity": 1,
+          "weight": 0.5,
+          "item_ref": {
+            "id": "giftdolch",
+            "name": "Giftdolch"
+          }
+        },
+        {
+          "name": "Dolch",
+          "quantity": 2,
+          "weight": 1,
+          "item_ref": {
+            "id": "dolch",
+            "name": "Dolch"
+          }
+        },
+        {
+          "name": "Kurzschwert",
+          "quantity": 1,
+          "weight": 1,
+          "item_ref": {
+            "id": "kurzschwert",
+            "name": "Kurzschwert"
+          }
+        },
+        {
+          "name": "Kurzbogen",
+          "quantity": 1,
+          "weight": 1,
+          "item_ref": {
+            "id": "kurzbogen",
+            "name": "Kurzbogen"
+          }
+        },
+        {
+          "name": "Köcher",
+          "quantity": 1,
+          "weight": 0.5,
+          "item_ref": {
+            "id": "koecher",
+            "name": "Köcher"
+          }
+        },
+        {
+          "name": "Pfeile",
+          "quantity": 10,
+          "weight": 0.5,
+          "item_ref": {
+            "id": "pfeile",
+            "name": "Pfeile"
+          }
+        },
+        {
+          "name": "Wanderklamotten",
+          "quantity": 1,
+          "weight": 2
+        },
+        {
+          "name": "Diebeswerkzeug",
+          "quantity": 1,
+          "weight": 0.5,
+          "item_ref": {
+            "id": "diebeswerkzeug",
+            "name": "Diebeswerkzeug"
+          }
+        },
+        {
+          "name": "Fälscherausrüstung",
+          "quantity": 1,
+          "weight": 2.5,
+          "item_ref": {
+            "id": "faelscherausruestung",
+            "name": "Fälscherausrüstung"
+          }
+        },
+        {
+          "name": "Rucksack",
+          "quantity": 1,
+          "weight": 2.5,
+          "contents_listed": [
+            {
+              "name": "Öl",
+              "quantity": 7,
+              "weight": 3.5,
+              "item_ref": {
+                "id": "oel",
+                "name": "Öl"
+              }
+            },
+            {
+              "name": "Murmeln",
+              "quantity": 1000,
+              "weight": 1
+            },
+            {
+              "name": "Hanf-Seil, 15 m",
+              "quantity": 1,
+              "weight": 2
+            },
+            {
+              "name": "Glocke",
+              "quantity": 1,
+              "weight": null,
+              "item_ref": {
+                "id": "glocke",
+                "name": "Glocke"
+              }
+            },
+            {
+              "name": "Zunderkästchen",
+              "quantity": 1,
+              "weight": 0.5,
+              "item_ref": {
+                "id": "zunderkaestchen",
+                "name": "Zunderkästchen"
+              }
+            },
+            {
+              "name": "Kerze",
+              "quantity": 10,
+              "weight": null,
+              "item_ref": {
+                "id": "kerze",
+                "name": "Kerze"
+              }
+            },
+            {
+              "name": "Hauben-Laterne",
+              "quantity": 1,
+              "weight": 1
+            },
+            {
+              "name": "Brecheisen",
+              "quantity": 1,
+              "weight": 2.5
+            },
+            {
+              "name": "Schlafsack",
+              "quantity": 1,
+              "weight": 3.5,
+              "item_ref": {
+                "id": "schlafsack",
+                "name": "Schlafsack"
+              }
+            }
+          ],
+          "item_ref": {
+            "id": "rucksack",
+            "name": "Rucksack"
+          }
+        }
+      ]
+    },
+    "personality": {
+      "traits": [
+        "Du sprichst im Flüsterton, wenn du nervös bist."
+      ],
+      "ideals": [
+        "Gerechtigkeit. Niemand sollte andere misshandeln können und damit davon kommen."
+      ],
+      "motivation": [
+        "Du willst, dass es kein Kind so schwer hat, wie du damals."
+      ],
+      "flaws": [
+        "Du gehst ungern einen Kampf ein, bei dem du nicht denkst, dass du ihn gewinnen kannst."
+      ]
+    },
+    "backstory": {
+      "summary": "Du bist auf den Straßen der Hauptstadt aufgewachsen und hattest oft nicht genug Essen. Deinen Familiennamen kennst du nicht; den Nachnamen „Nightshade“ hast du dir selbst gegeben. Irgendwann hast du angefangen, Essen und andere Waren von den Docks und aus Lagerhallen zu stehlen – erst nur, um dich selbst durchzubringen. Dann hast du zunehmend andere Kinder der Stadt unterstützt. Das meiste, was du heute erbeutest, spendest du.",
+      "allies": [
+        "Brutus kennst du schon seit ihr Teenager seid. Du hast ihm geholfen Schmuggelware und Diebesgut in die Stadt zu schleusen und zu vertreiben.",
+        "Tybald hast du auf einer Spendengala kennengelernt. Seine Art war dir erst unsympathisch; mittlerweile kommt er dir aber ganz nett vor. Du hast gemerkt, dass er aufrichtig Leuten helfen möchte."
+      ]
+    }
+  },
+  "id": "samnightshade"
+}

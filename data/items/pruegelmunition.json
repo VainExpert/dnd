@@ -1,0 +1,44 @@
+{
+  "id": "pruegelmunition",
+  "type": "item",
+  "name": "Prügelmunition",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "ammunition",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 25,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Eine Kreatur, die von dieser Munition getroffen wird, muss einen SG-10 STR-Rettungswurf bestehen oder wird zu Boden geworfen.",
+  "tags": [
+    "magisch",
+    "munition",
+    "stoßen",
+    "liegend"
+  ]
+}

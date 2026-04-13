@@ -1,0 +1,20 @@
+{
+  "id": "zielsicherer-schlag",
+  "name": "Zielsicherer Schlag",
+  "level": 0,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "G",
+  "duration": "Konzentration, bis zu 1 Runde",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Durch magische Einsicht kannst du einen Angriff mit der im Zauber verwendeten Waffe machen in dem du deine Zauberfähigkeit als Angriffs- und Schadensmodifikator verwendest, anstelle von deinem STR- oder DEX-Modifikator. Der Schadenstyp ist entweder der von der Waffe oder Strahlenschaden (deine Entscheidung)."
+}

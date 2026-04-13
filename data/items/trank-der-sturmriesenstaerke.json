@@ -1,0 +1,46 @@
+{
+  "id": "trank-der-sturmriesenstaerke",
+  "type": "item",
+  "name": "Trank der Sturmriesenstärke",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "potion",
+  "rarity": "legendär",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 6000,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diesen Trank trinkst, verändert sich 1 h lang dein Stärkewert zu 29. Der Trank hat keinen Effekt, wenn deine Stärke bereits gleich oder größer als dieser Wert ist. In der klaren Flüssigkeit dieses Tranks schwimmt ein kleines Stück eines Fingernagels eines Sturmriesens.",
+  "tags": [
+    "magisch",
+    "konsumiert",
+    "trank",
+    "flüssigkeit",
+    "stärke",
+    "bonus"
+  ]
+}

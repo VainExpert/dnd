@@ -1,0 +1,55 @@
+{
+  "name": "Feral Zombie",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr1/2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 12,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 14,
+    "con": 16,
+    "int": 5,
+    "wis": 7,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages it knew in life but can’t speak"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Undead Fortitude",
+      "text": "If damage reduces the zombie to 0\nhit points, it must make a Constitution saving throw\nwith a DC of 5 + the damage taken, unless the damage\nis radiant or from a critical hit. On a success, the\nzombie drops to 1 hit point instead."
+    },
+    {
+      "name": "Aggressive",
+      "text": "As a bonus action, the zombie can move up\nto half its speed toward a hostile creature it can see."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Ravage",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5ft., one\ntarget. Hit: 6 (1d8 + 2) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

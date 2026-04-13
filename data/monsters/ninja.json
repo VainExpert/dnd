@@ -1,0 +1,75 @@
+{
+  "name": "Ninja",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 14,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 16,
+    "con": 12,
+    "int": 10,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Stealth": 7,
+    "Sleight of Hand": 5,
+    "Perception": 3
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Sneak Attack",
+      "text": "Once per turn, whenever the ninja\nattacks, it can deal an extra 7 (2d6) damage to one\ncreature hit with an attack if it had advantage on the\nattack roll or if it has an ally within 5 feet of its\ntarget that isn’t incapacitated."
+    },
+    {
+      "name": "Rigorous Training",
+      "text": "The ninja can hold its breath for\nup to five minutes and cannot be poisoned."
+    },
+    {
+      "name": "Grappling Hook",
+      "text": "The ninja is skilled in the use of a\ngrappling hook, allowing it to scale structures with\nease. The ninja gains a 20 ft. climb speed."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5ft.,\none target. Hit: 5 (1d4 + 3) piercing damage."
+    },
+    {
+      "name": "Throwing Star",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +5 to hit,\nrange 20/60 ft., one target. Hit: 5 (1d4 + 3)\npiercing damage."
+    },
+    {
+      "name": "Smoke Bomb",
+      "type": "special",
+      "text": "The ninja throws a smoke bomb at its\nfeet. This creates a cloud of smoke in a 10-foot\nradius area that renders all creatures within it blind\nand heavily obscures the area to creatures outside\nof it. This cloud persists until the beginning of the\nninja’s next turn."
+    }
+  ],
+  "source": "creature"
+}

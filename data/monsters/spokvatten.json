@@ -1,0 +1,65 @@
+{
+  "name": "Spökvatten",
+  "size": "Medium",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr5",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 14,
+  "hp": {
+    "average": 78,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 30
+  },
+  "abilities": {
+    "str": 9,
+    "dex": 18,
+    "con": 14,
+    "int": 10,
+    "wis": 16,
+    "cha": 18
+  },
+  "skills": {
+    "Deception": 10,
+    "Insight": 6,
+    "Nature": 3,
+    "Perception": 9,
+    "Persuasion": 10,
+    "Stealth": 10
+  },
+  "languages": [
+    "Aquan",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Shapechanger",
+      "text": "The spökvatten can use its action to magically\npolymorph into a Large cloud of mist, into a beast or humanoid of\nchallenge rating 2 or lower, or back into its true form (that of a Medium\nfey). Anything it is carrying or wearing transforms with it. It reverts to its\ntrue form if it dies.\n\nWhile in beast or humanoid form, the spökvatten retains its game statistics\nand ability to speak, but its AC, movement modes, Strength, Dexterity,\nand special senses are replaced by those of the new form, and it gains any\nstatistics and capabilities (except class features, legendary actions, and\nlair actions) that the new form has but that it lacks.\n\nIn mist form, the spökvatten can only use its icy fog ability, and it\nis unable to speak or manipulate objects. It is weightless, has a flying\nspeed of 20 feet, can hover, and can enter a hostile creature’s space and\nstop there. In addition, if air can pass through a space, the mist can do so\nwithout squeezing, and it can’t pass through water. It has advantage on\nStrength, Dexterity, and Constitution saving throws, and it is immune to\nall nonmagical damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Cold Touch",
+      "type": "special",
+      "text": "Melee Spell Attack: +7 to hit, reach 5 ft., one target.\nHit: 26 (4d10 + 4) cold damage. The target must succeed on a DC 15\nConstitution saving throw or be paralyzed for 1 minute. The target can\nrepeat the saving throw at the end of each of its turns, ending the effect on\nitself on a success."
+    },
+    {
+      "name": "Icy Fog (Recharge 5–6)",
+      "type": "special",
+      "text": "The spökvatten exhales a cloud of freezing\nmist in a 15-foot cone. Each creature in that area must make a DC 15\nDexterity saving throw, taking 36 (8d8) cold damage on a failed save, or\nhalf as much damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

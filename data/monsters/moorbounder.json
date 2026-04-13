@@ -1,0 +1,51 @@
+{
+  "name": "Moorbounder",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr1",
+      "explorers-guide-to-wildemount"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 30,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 14,
+    "int": 2,
+    "wis": 13,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Standing Leap",
+      "text": "The moorbounder’s long jump is up to 40 feet and its high jump is up to 20 feet, with or without a running start."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14 (4d4 + 4) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

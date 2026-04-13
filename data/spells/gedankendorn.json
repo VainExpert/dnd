@@ -1,0 +1,18 @@
+{
+  "id": "gedankendorn",
+  "name": "Gedankendorn",
+  "level": 2,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "G",
+  "duration": "Konzentration, bis zu 1 h",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du greifst in die Gedanken einer Kreatur in Reichweite, die du sehen kannst.\nDas Zeil muss einen WIS-Rettungswurf machen.\nBei Fehlschlag: 2W8 psychischer Schaden, sonst die Hälfte. Außerdem kennst du für die Wirkungsdauer die Position des Ziels auf der selben Ebene wie du. Das Ziel kann sich nicht vor dir verstecken, auch nicht unsichtbar.\n\nAuf höheren Level gewirkt: pro Level 1W8 mehr Schaden"
+}

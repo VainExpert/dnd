@@ -1,0 +1,44 @@
+{
+  "id": "metallkuegelchen",
+  "type": "item",
+  "name": "1000 Metallkügelchen",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 1,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein Beutel mit 1000 Metallkügelchen. Mit einer Aktion können die Kügelchen ausgeschüttet werden. Sie breiten sich von da über ein 3 m Quadrat aus. Eine Kreatur in dem Bereich muss einen DEX-Rettungswurf (SG 10) machen oder fällt auf den Boden. Es braucht 10 min um alle Kügelchen wieder einzusammeln.",
+  "tags": [
+    "abenteuer",
+    "hindernis",
+    "kampf",
+    "nützlich"
+  ]
+}

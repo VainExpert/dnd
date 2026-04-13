@@ -1,0 +1,16 @@
+{
+  "id": "zauberhafte-explosion",
+  "name": "Zauberhafte Explosion",
+  "level": 0,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "36 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Zauberer"
+  ],
+  "text": "Du schleuderst magische Energie auf eine Kreatur oder ein Objekt in Reichweite.\nDu machst einen Fernkampf-Zauberangriff gegen das Ziel.\nBei Treffer: 1W8 Schaden von einem der folgenden Typen (selbst wählbar): Säure, Kälte, Feuer, Blitz, Gift, Psychisch oder Schall.\nWenn du für den Schaden eine 8 würfelst, kannst du einen weiteren W8 werfen und diesen zum Schaden addieren. Die Anzahl maximal hinzufügbarer Würfelwürfe entspricht deinem Zauberfähigkeit-Modifikator.\n\nAuf höheren Level: Schaden steigt um je 1W8 auf Level 5, 11 und 17."
+}

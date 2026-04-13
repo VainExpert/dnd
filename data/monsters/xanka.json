@@ -1,0 +1,61 @@
+{
+  "name": "Xanka",
+  "size": "Small",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "small",
+      "construct",
+      "cr1/4",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 15,
+  "hp": {
+    "average": 18,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 15
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 15,
+    "con": 12,
+    "int": 4,
+    "wis": 10,
+    "cha": 7
+  },
+  "skills": {},
+  "languages": [
+    "Understands the languages of its creator but can't"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Ingest Weapons",
+      "text": "When the xanka is hit by a melee weapon and the final, adjusted attack roll is 19 or less, the weapon gains a permanent -1 penalty to damage rolls, after inflicting damage for this attack. If the penalty reaches -5, the weapon is destroyed. Even magic weapons are subject to this effect."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The xanka's weapon attacks are magical."
+    },
+    {
+      "name": "Constructed Nature",
+      "text": "A xanka doesn't require air, food, drink, or sleep."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Absorb",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) force damage, and the xanka regains hit points equal to the damage caused by its attack. In addition, a living creature hit by this attack must make a successful DC 12 Dexterity saving throw or suffer a gaping wound that causes 2 (1d4) necrotic damage at the end of each of the creature's turns until the wound is treated with magical healing or with a successful DC 10 Intelligence (Medicine) check. If a creature who fails this saving throw is wearing armor or using a shield, the creature can choose to prevent the necrotic damage by permanently reducing the AC of its armor or shield by 1 instead."
+    }
+  ],
+  "source": "creature"
+}

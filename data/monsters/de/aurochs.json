@@ -1,0 +1,49 @@
+{
+  "name": "Auerochse",
+  "size": "Groß",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr2",
+      "volos-guide"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 11,
+  "hp": {
+    "average": 38,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 10,
+    "con": 19,
+    "int": 2,
+    "wis": 12,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Last",
+      "text": "Wenn sich der Auerochse mindestens20 feet  geradlinig auf ein Ziel zubewegt und es dann im selben Zug mit einem Hornstoß trifft, erleidet das Ziel zusätzlich 9 (2d8) Durchschlagschaden. Handelt es sich bei dem Ziel um eine Kreatur, muss diese einenDC 15  Stärke-Rettungswurf bestehen oder wird zu Boden geworfen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Um",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 14 (2d8+5) Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Frulam Mondath",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "tyranny-of-dragons",
+      "human"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 16,
+  "hp": {
+    "average": 44,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 13,
+    "int": 11,
+    "wis": 18,
+    "cha": 15
+  },
+  "skills": {
+    "Deception": 4,
+    "History": 2,
+    "Religion": 2
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Infernal"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "text": "Frulam is a 5th-level spellcaster that uses Wisdom as her spellcasting ability (spell save DC 14, +6 to hit with spell attacks). Frulam has the following spells prepared from the cleric spell list:\n\n* Cantrips (at will): <i>light, sacred flame, thaumaturgy</i>\n\n* 1st level (4 slots): <i>command, cure wounds, healing word, sanctuary</i>\n\n* 2nd level (3 slots): <i>calm emotions, hold person, spiritual weapon</i>\n\n* 3rd level (2 slots): <i>mass healing word, spirit guardians</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Frulam attacks twice with her halberd."
+    },
+    {
+      "name": "Halberd",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 7 (1d10 + 2) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

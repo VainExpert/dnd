@@ -1,0 +1,59 @@
+{
+  "name": "Elizar Dryflagon",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "elemental-evil",
+      "human"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 14,
+  "hp": {
+    "average": 71,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 15,
+    "con": 14,
+    "int": 11,
+    "wis": 18,
+    "cha": 10
+  },
+  "skills": {
+    "Arcana": 3,
+    "Deception": 3
+  },
+  "languages": [
+    "Common",
+    "Druidic"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "text": "Elizar is a 7th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). Elizar has the following druid spells prepared:\n\n* Cantrips (at will): <i>druidcraft, guidance, poison spray, produce flame</i>\n\n* 1st level (4 slots): <i>animal friendship, faerie fire, healing word, jump, thunderwave</i>\n\n* 2nd level (3 slots): <i>flame blade, spike growth</i>\n\n* 3rd level (3 slots): <i>dispel magic, stinking cloud</i>\n\n* 4th level (2 slots): <i>blight, wall of fire</i>"
+    },
+    {
+      "name": "Summon Mephits (Recharges after a Long Rest)",
+      "text": "By puffing on his pipe, Elizar can use an action to cast conjure minor elementals. If he does so, he summons four smoke mephits."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger +1",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

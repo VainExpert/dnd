@@ -1,0 +1,18 @@
+{
+  "id": "kaeltestrahl",
+  "name": "Kältestrahl",
+  "level": 0,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Ein eisiger Strahl blau-weißen Lichts fliegt auf eine Kreatur in Reichweite. Du machst einen Fernkampf-Zauberangriff gegen das Ziel.\nBei Treffer: 1W8 Kälteschaden und seine Bewegungsgeschwindigkeit ist bis Beginn deines nächsten Zuges um 3 m reduziert.\n\nAuf höheren Level: Schaden steigt um je 1W8 auf Level 5, 11 und 17."
+}

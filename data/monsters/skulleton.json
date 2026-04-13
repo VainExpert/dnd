@@ -1,0 +1,53 @@
+{
+  "name": "Skulleton",
+  "size": "Tiny",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "tiny",
+      "undead",
+      "cr1/4",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 12,
+  "hp": {
+    "average": 21,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 6,
+    "dex": 10,
+    "con": 13,
+    "int": 10,
+    "wis": 12,
+    "cha": 14
+  },
+  "skills": {
+    "Perception": 5
+  },
+  "languages": [
+    "understands the languages of its creator but can’t speak"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +2 to hit, reach 0 ft., one target.\nHit: 3 (1d6) piercing damage. If the target is a creature, it\nmust succeed on a DC 11 Constitution saving throw against\ndisease or be poisoned until the disease is cured. For every\n24 hours that elapse, the target must repeat the saving\nthrow, reducing its hit point maximum by 5 (1d10) on\na failure. The disease is cured on a success. The target\ndies if the disease reduces its hit point maximum to 0. This\nreduction to the target’s hit point maximum lasts until the\ndisease is cured."
+    },
+    {
+      "name": "Dust (2/day)",
+      "type": "special",
+      "text": "The skulleton can use its crumbled\nremains to attack any creature that comes within 10\nfeet of it. The skulleton billows forth a cloud of dust that surrounds it\nin a 10-foot radius. All creatures in this area must succeed on a DC 12\nConstitution saving throw or be poisoned for 1 minute. The target can\nrepeat the saving throw at the end of each of its turns, ending the effect on\nitself on a success."
+    }
+  ],
+  "source": "creature"
+}

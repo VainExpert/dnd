@@ -1,0 +1,61 @@
+{
+  "name": "Earth Elemental Myrmidon (A)",
+  "size": "Medium",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr7",
+      "elemental-evil"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 18,
+  "hp": {
+    "average": 127,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 17,
+    "int": 8,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "Terran",
+    "one language of its creator's choice"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Magic Weapons",
+      "text": "The myrmidon's weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The myrmidon makes two maul attacks."
+    },
+    {
+      "name": "Maul",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Thunderous Strike (Recharge 6)",
+      "type": "special",
+      "text": "The myrmidon makes one maul attack. If the attack hits, it deals an extra 16 (3d10) thunder damage, and the target must succeed on a DC 14 Strength saving throw or be knocked prone."
+    }
+  ],
+  "source": "creature"
+}

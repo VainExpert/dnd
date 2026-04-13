@@ -1,0 +1,87 @@
+{
+  "name": "Klingen-Tänzer",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 17,
+  "hp": {
+    "average": 81,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 18,
+    "con": 16,
+    "int": 14,
+    "wis": 10,
+    "cha": 16
+  },
+  "skills": {
+    "Acrobatics": 8,
+    "History": 6,
+    "Performance": 11,
+    "Sleight of Hand": 12
+  },
+  "languages": [
+    "Any three languages"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Kampfmagier",
+      "text": "Der Tänzer kann die somatischen\nBestandteile von Zaubersprüchen ausführen, selbst wenn er in einer oder beiden Händen Waffen oder einen\nSchild hält."
+    },
+    {
+      "name": "Kampfmanöver (3/kurze Erholung)",
+      "text": "Tänzer haben\nihr ganzes Leben lang trainiert, um im Kampf zu glänzen, und haben dadurch\nspezielle Kampfmanöver gemeistert, die sie\nim Kampf einsetzen können. Immer wenn der Tänzer einen Nahkampf-\nWaffenangriff ausführt, kann er sich entscheiden, eines dieser\nManöver auszuführen, um dem Angriff zusätzliche Effekte zu verleihen. Zusätzlich\nzu diesen anderen Effekten bewirken alle Manöver, dass die\nAngriffe zusätzlichen1d8Schaden verursachen. Jeder Tänzer\nverfügt über zwei zufällige Manöver aus der folgenden Liste,\ndie er einsetzen kann:\n\n* Entwaffnungsangriff – Das Ziel muss einenDC\n16  Stärke-Rettungswurf bestehen oder seine Waffe zu seinen\nFüßen fallen lassen.\n\n* Ablenkungsschlag – Der nächste Angriff, den ein Verbündeter\ngegen das Ziel ausführt, erfolgt mit Vorteil.\n\n* Täuschungsangriff – Der nächste Angriffswurf, den du\ngegen ein Ziel innerhalb von  5 feetausführst, erfolgt mit Vorteil.\n\n* Stolperangriff – Wenn das Ziel groß oder kleiner ist, muss es\neinenDC 16  Stärke-Rettungswurf bestehen oder wird\nzu Boden geworfen."
+    },
+    {
+      "name": "Inspirieren (3/Kurze Pause)",
+      "text": "Eine beliebige, uninspirierte Kreatur im\n60 feetWirkungsbereich des Tänzers, die ihn hören kann, erhält einen d8-\nInspirationswürfel. Einmal innerhalb der nächsten 10 Minuten kann diese\nKreatur diesen Würfel werfen und die gewürfelte Zahl zu\neinem ihrer Fähigkeitsproben, Angriffswürfe oder Rettungswürfe addieren.\nDieser Würfel muss geworfen werden, bevor entschieden wird, ob der Wurf\nerfolgreich ist oder nicht."
+    },
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Tänzer ist ein Zauberwirker der Stufe 3. Seine\nZauberfertigkeit ist Charisma (Zauber-RettungswurfDC 15, +7 auf\nTreffer bei Zauberangriffen). Der Tänzer hat die folgenden\nBardenzauber vorbereitet:\n\n* Cantrips (beliebig oft): Klingenabwehr, Magische Hand\n\n* 1. Stufe (4 Plätze): Heldentum, Schlaf, Unsichtbarer Diener\n\n* 2. Stufe (2 Plätze): Unsichtbarkeit, Suggestion"
+    },
+    {
+      "name": "Kampfstil mit zwei Waffen",
+      "text": "Der Tänzer addiert seinen Fähigkeitsmodifikator\nzum Schaden seiner Angriffe mit der Nebenhandwaffe hinzu."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Tänzer führt drei Angriffe mit seinem\nKrummsäbel oder drei Fernkampfangriffe mit seinem Dolch aus."
+    },
+    {
+      "name": "Krumsäbel",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf Treffer, Reichweite 1,5 m.,\nein Ziel. Treffer: 7 (1d6 + 4) Schnittschaden."
+    },
+    {
+      "name": "Dolch",
+      "type": "special",
+      "text": "Fernkampfangriff: +8 auf Treffer, Reichweite20/18 m., ein Ziel. Treffer: 6 (1d4 + 4\n) Durchdringungsschaden."
+    },
+    {
+      "name": "Aktionsschub (1/Kurze Erholung)",
+      "type": "special",
+      "text": "Der Tänzer führt fünf\nKrummschwertangriffe aus."
+    }
+  ],
+  "source": "creature"
+}

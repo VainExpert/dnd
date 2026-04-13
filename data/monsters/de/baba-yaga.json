@@ -1,0 +1,81 @@
+{
+  "name": "Pater Yaga",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr15",
+      "homebrew"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 20,
+  "hp": {
+    "average": 153,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 20,
+    "con": 18,
+    "int": 12,
+    "wis": 16,
+    "cha": 20
+  },
+  "skills": {
+    "Deception": 10,
+    "Nature": 6,
+    "Perception": 8,
+    "Stealth": 10,
+    "Survival": 8
+  },
+  "languages": [
+    "Common",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "15",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Perfekte Mimikry",
+      "text": "Baba Yaga kann Tier- und\nmenschliche Stimmen mit unfehlbarer Genauigkeit nachahmen. Ein Wesen,\ndas ihre Nachahmung hört, kann durch einen erfolgreichen\nDC 20Weisheit (Einsicht)-Probe erkennen, dass es sich um eine Imitation handelt."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Baba Yaga hat einen Vorteil bei Rettungswürfen\ngegen Zaubersprüche und andere magische Effekte."
+    },
+    {
+      "name": "Die beste Freundin einer Hexe",
+      "text": "Baba Yagas Hütte dient ihr sowohl als\nBegleiterin als auch als ihr ganz eigener Hexenzirkel. Neben der\nVerteidigung ihrer Herrin und der Befolgung all ihrer Befehle\nfungiert die Hütte als Baba Yagas Kraftquelle. Befindet sie sich\nin60 feetder Nähe der Hütte, erhält Baba Yaga Zugang zu\nder unten aufgeführten Eigenschaft „Gemeinsames Zaubern“. Sollte die Hütte\n0 Trefferpunkte erreichen, steht Baba Yagas „Gemeinsames Zaubern“\nihr nicht mehr zur Verfügung."
+    },
+    {
+      "name": "Gemeinsames Zaubern",
+      "text": "Solange Baba Yaga und ihre Hütte\nsich in60 feetunmittelbarer Nähe zueinander befinden, können beide die\nfolgenden Zauber wirken, müssen sich jedoch die Zauberslots\nuntereinander aufteilen. Für das Wirken dieser Zauber gilt Baba Yaga als\nZauberwirkerin der Stufe 18. Ihre Zauberfertigkeit ist\nCharisma (Zauberrettungswurf DC 18, +10 auf Treffer bei Zauberangriffen\n). Sie beherrscht die folgenden Zauber, für die keine\nmateriellen Komponenten erforderlich sind:\n\n* Cantrips (nach Belieben): Druidenkunst, Kleine Illusion, Widerstand, Shillelagh\n\n* 1. Stufe (4 Plätze): Verstricken, Mit Tieren sprechen, Strahl der Krankheit\n\n* 2. Stufe (3 Plätze): Flammende Kugel, Mondstrahl, Stachelwachstum\n\n* 3. Stufe (3 Plätze): Blitzruf, Magie bannen, Pflanzenwachstum\n\n* 4. Stufe (3 Plätze): Verwüstung, Halluzinatorisches Gelände, Steinhaut\n\n* 5. Stufe (3 Plätze): Antilebenshülle, Geas, Hellsehen\n\n* 6. Stufe (1 Platz): Dornwand\n\n* 7. Stufe (1 Platz): Finger des Todes\n\n* 8. Stufe (1 Platz): Monster beherrschen\n\n* 9. Stufe (1 Platz): Gestaltwandlung"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Baba Yaga führt zwei Angriffe mit ihren\nKrallen aus."
+    },
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 zum Treffen, Reichweite5 ft: , ein\nZiel. Bei Treffer: 1d6+1Schnitt- und4d8Säureschaden."
+    },
+    {
+      "name": "Hexengebräu (Aufladen 5-6)",
+      "type": "special",
+      "text": "Baba Yaga holt einen Zaubertrank\naus ihrem Mörser und wirft ihn auf einen Punkt\ninnerhalb eines Radius60 feet\nvon 30 Fuß um sie herum. Jedes Wesen innerhalb dieses Radius\nmuss einenDC 18\nKonstitutions-Rettungswurf durchführen und erleidet 56 (16d6\n) Giftschaden\noder bei einem erfolgreichen Rettungswurf nur die Hälfte dieses Schadens."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "alarm",
+  "name": "Alarm",
+  "level": 1,
+  "school": "Bannmagie",
+  "casting_time": "1 min",
+  "range": "9 m",
+  "components": "V, G, M (eine kleine Glocke und ein Stück feiner Silberdraht)",
+  "duration": "8 h",
+  "concentration": false,
+  "ritual": true,
+  "classes": [
+    "Artificer",
+    "Waldläufer",
+    "Magier"
+  ],
+  "text": "Du platzierst einen Alarm gegen unerwünschtes Eindringen.\nWähle eine Tür, ein Fenster oder einen Bereich innerhalb der Reichweite, der nicht größer als ein 6 m Würfel ist.\nBis zum Ende des Zaubers wird ein Alarm ausgelöst, sobald eine winzige oder größere Kreatur den geschützten Bereich berührt oder betritt. Wenn du den Zauber sprichst, kannst du Kreaturen bestimmen, die den Alarm nicht auslösen sollen. Du wählst auch, ob der Alarm mental oder akustisch ist.\n Ein mentaler Alarm alarmiert dich mit einem Klingeln in deinem Kopf, wenn du dich im Umkreis von 1,5 km um den Schutzbereich befindest. Dieses Klingeln weckt dich, wenn du schläfst.\nEin akustischer Alarm erzeugt den Klang einer Handglocke für 10 s im Umkreis von 18 m."
+}

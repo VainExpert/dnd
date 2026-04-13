@@ -1,0 +1,54 @@
+{
+  "name": "Fire Elemental Myrmidon (B)",
+  "size": "Medium",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr7",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 18,
+  "hp": {
+    "average": 123,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 18,
+    "con": 15,
+    "int": 9,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "Ignan",
+    "one language of its creator's choice"
+  ],
+  "challenge": {
+    "cr": "7",
+    "xp": 2900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Illumination",
+      "text": "The myrmidon sheds bright light in a 20-foot radius and dim light in a 40-foot radius."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The myrmidon's weapon attacks are magical."
+    },
+    {
+      "name": "Water Susceptibility",
+      "text": "For every 5 feet the myrmidon moves in 1 foot or more of water, it takes 2 (1d4) cold damage."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

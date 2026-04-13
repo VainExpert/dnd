@@ -1,0 +1,17 @@
+{
+  "id": "aganazzars-versenger",
+  "name": "Aganazzars Versenger",
+  "level": 2,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (9 m x 1,5 m Linie)",
+  "components": "V, G, M (eine rote Drachenschuppe)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Eine 9 m lange und 1,5 m breite Linie aus Flamme geht von dir in eine von dir gewählte Richtung.\nJede Kreatur in der Linie muss einen DEX-Rettungswurf machen.\nBei Fehlschlag: 3W8 Feuerschaden, sonst die Hälfte\n\nAuf höheren Level gewirkt: pro Level 1W8 mehr Schaden"
+}

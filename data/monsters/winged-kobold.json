@@ -1,0 +1,64 @@
+{
+  "name": "Winged Kobold",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr1/4",
+      "monster-manual",
+      "kobold"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 13,
+  "hp": {
+    "average": 7,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 7,
+    "dex": 16,
+    "con": 9,
+    "int": 8,
+    "wis": 7,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+    },
+    {
+      "name": "Dropped Rock",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +5 to hit, one target directly below the kobold. Hit: 6 (1d6 + 3) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

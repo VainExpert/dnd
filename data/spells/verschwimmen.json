@@ -1,0 +1,18 @@
+{
+  "id": "verschwimmen",
+  "name": "Verschwimmen",
+  "level": 2,
+  "school": "Illusionsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "V",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Alle, die dich sehen können, nehmen deinen Körper als unscharf und oszillierend wahr.\nWährend der Wirkungsdauer sind Wesen bei Angriffswürfen gegen dich im Nachteil.\nAngreifer, die nicht auf ihre Sicht angewiesen sind (Blindsicht) oder Illusionen durchschauen können (Wahrsicht) sind gegen diesen Effekt immun."
+}

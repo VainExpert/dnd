@@ -1,0 +1,88 @@
+{
+  "name": "Phoba",
+  "size": "Medium",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr7",
+      "out-of-the-box-5e"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 15,
+  "hp": {
+    "average": 127,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 15,
+    "con": 16,
+    "int": 12,
+    "wis": 13,
+    "cha": 15
+  },
+  "skills": {
+    "Deception": 5,
+    "Insight": 4,
+    "Intimidation": 5,
+    "Investigation": 7,
+    "Perception": 4,
+    "Persuasion": 5,
+    "Stealth": 8,
+    "Thieves’ Tools": 5
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Cunning Action",
+      "text": "On each of its turns, the thief can\nuse a bonus action to take the Dash, Disengage,\nHide, or Use an Object action, make a Dexterity\n(Sleight of Hand) check, or use thieves’ tools to\ndisarm a trap or open a lock."
+    },
+    {
+      "name": "Petrifying Gaze",
+      "text": "When a creature that can see Phoba’s\neyes starts its turn within 30 feet of her, she can\nforce it to make a DC 14 Constitution saving throw\nif she isn’t incapacitated and can see the creature. If\nthe saving throw fails by 5 or more, the creature is\ninstantly petrified. Otherwise, a creature that fails\nthe save begins to turn to stone and is restrained.\nThe restrained creature must repeat the saving\nthrow at the end of its next turn, becoming petrified\non a failure or ending the effect on a success. The\npetrification lasts until the creature is freed by the\ngreater restoration spell or other magic.\n\nUnless surprised, a creature can avert its eyes to avoid\nthe saving throw at the start of its turn. If the creature\ndoes so, it can’t see Phoba until the start of its next turn,\nwhen it can avert its eyes again. If the creature looks at\nPhoba in the meantime, it must immediately make the\nsave. If Phoba sees herself reflected on a polished surface\nwithin 30 feet of her and in an area of bright light,\nshe is, due to her curse, affected by her own gaze."
+    },
+    {
+      "name": "Sneak Attack (1/turn)",
+      "text": "Phoba deals an extra 7\n(2d6) damage when she hits a target with a weapon\nattack and has advantage on the attack roll, or\nwhen the target is within 5 feet of an ally of her\nthat isn’t incapacitated and she doesn’t have disadvantage\non the attack roll."
+    },
+    {
+      "name": "Special Equipment",
+      "text": "Phoba wears a <i>ring of invisibility</i>\nand carries a <i>portable hole</i>."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Phoba makes either three melee attacks\n— one with her snake hair and two with her shortsword\n— or two ranged attacks with her longbow."
+    },
+    {
+      "name": "Snake Hair",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach\n5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage\nplus 14 (4d6) poison damage."
+    },
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach\n5 ft., one target. Hit: 5 (1d6 +2) piercing damage."
+    },
+    {
+      "name": "Longbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +5 to hit, range\n150/600 ft., one target. Hit: 6 (1d8 +2) piercing\ndamage plus 7 (2d6) poison damage."
+    }
+  ],
+  "source": "creature"
+}

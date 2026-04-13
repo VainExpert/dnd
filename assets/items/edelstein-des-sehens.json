@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-edelstein-des-sehens",
+  "type": "item",
+  "name": "Edelstein des Sehens",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "erfordert Einstimmung",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Edelstein hat drei Ladungen. Du kannst als Aktion das Befehlswort des Edelsteins aussprechen und eine Ladung verbrauchen. Die nächsten zehn Minuten lang hast du Wahrer Blick mit einer Reichweite von 36 Metern, wenn du durch den Edelstein schaust. Der Edelstein erhält täglich im Morgengrauen 1W3 verbrauchte Ladungen zurück.",
+  "tags": []
+}

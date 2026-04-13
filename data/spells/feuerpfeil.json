@@ -1,0 +1,18 @@
+{
+  "id": "feuerpfeil",
+  "name": "Feuerpfeil",
+  "level": 0,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "36 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Ein Funkenwirbel fliegt auf eine Kreatur oder einen Gegenstand in Reichweite als Fernkampf-Zauberangriff gegen das Ziel.\nBei Treffer: 1W10 Feuerschaden.\nBrennbare nicht getragene oder gehaltene Gegenstände werden bei einem Treffer entzündet.\n\nAuf höheren Level: Schaden steigt um je 1W10 auf Level 5, 11 und 17."
+}

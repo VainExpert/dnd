@@ -1,0 +1,47 @@
+{
+  "id": "federmarke-faecher",
+  "type": "item",
+  "name": "Federmarke Fächer",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 400,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieses Objekt sieht aus wie eine Feder. Wenn du auf einem Schiff bist, kannst du mit einer Aktion die Feder bis zu 3 m in die Luft werfen. Anstelle der Feder erscheint ein riesiger Fächer in der Luft und erzeugt einen starken Wind. Der Fächer beschleunigt das Schiff auf 8 kmh für 8 h. Der Fächer kann mit einer weiteren Aktion aufgelöst werden.",
+  "tags": [
+    "magisch",
+    "aktion",
+    "bewegen",
+    "schiff",
+    "beschwören",
+    "fächer",
+    "wind"
+  ]
+}

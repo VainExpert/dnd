@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Gegenstand</title>
+  <link rel="stylesheet" href="../../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title" id="title">Gegenstand</div>
+      <div class="subtitle"><a href="./items.html">← Zurück zu allen Gegenständen</a> • <a href="../../index.html">Startseite</a></div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="content" style="max-width:900px;">
+      <div id="view"></div>
+    </div>
+  </main>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany, normalizeItem } from "../../lib.js";
+
+    const view = document.getElementById("view");
+    const titleEl = document.getElementById("title");
+
+    const id = new URLSearchParams(location.search).get("id");
+    if (!id) {
+      view.innerHTML = "<p>Fehlende Gegenstands-ID.</p>";
+      throw new Error("Fehlende Gegenstands-ID");
+    }
+
+    const files = await loadIndex("../../data/items/index.json");
+    const items = (await loadMany("../../data/items", files)).map(normalizeItem);
+
+    const item =
+      items.find(i => (i.id || "").toLowerCase() === id.toLowerCase()) ||
+      items.find(i => (i.name || "").toLowerCase() === id.toLowerCase());
+
+    if (!item) {
+      view.innerHTML = `<p>Gegenstand nicht gefunden: <code>${escapeHtml(id)}</code></p>`;
+      throw new Error("Gegenstand nicht gefunden");
+    }
+
+    titleEl.textContent = item.name || "Gegenstand";
+
+    const effectHtml = item.html
+      ? `<div class="mini-box-text">${item.html}</div>`
+      : (item.text ? `<div class="mini-box-text">${escapeHtml(item.text).replaceAll("\n","<br/>")}</div>` : "");
+
+    view.innerHTML = `
+      <h1>${escapeHtml(item.name)}</h1>
+      <p class="muted">${escapeHtml(item.type ?? "Item")}${item.rarity ? " • " + escapeHtml(item.rarity) : ""}</p>
+
+      <div class="mini-box">
+        <div class="mini-box-title">Werte</div>
+        <div class="mini-box-text">
+          ${item.attunement ? `<div><b>Bindung:</b> ${escapeHtml(item.attunement_text || "Ja")}</div>` : ""}
+          ${item.price ? `<div><b>Preis:</b> ${escapeHtml(item.price)}</div>` : ""}
+          ${item.weight ? `<div><b>Gewicht:</b> ${escapeHtml(item.weight)}</div>` : ""}
+        </div>
+      </div>
+
+      ${effectHtml ? `<div class="mini-box" style="margin-top:12px;">
+        <div class="mini-box-title">Beschreibung</div>
+        ${effectHtml}
+      </div>` : ""}
+
+      ${item.source ? `<p class="muted" style="margin-top:12px;"><b>Quelle:</b> ${escapeHtml(item.source)}</p>` : ""}
+    `;
+  </script>
+</body>
+</html>

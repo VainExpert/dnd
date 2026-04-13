@@ -1,0 +1,18 @@
+{
+  "id": "kalte-hand",
+  "name": "Kalte Hand",
+  "level": 0,
+  "school": "Nekromantie",
+  "casting_time": "1 Aktion",
+  "range": "36 m",
+  "components": "V, G",
+  "duration": "1 Runde (6 s)",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Eine geisterhafte Skeletthand erscheint im Bereich einer Kreatur in Reichweite.\nDu machst einen Fernkampf-Zauberangriff gegen das Ziel. Diese spürt eine Grabeskälte.\nBei Treffer: 1W8 nekrotischer Schaden und es bekommt keine Heilung bis zum Beginn deines nächsten Zuges. Die Hand klammert sich an das Ziel. Untote Ziele sind außerdem bis zum Ende deines nächsten Zuges bei Angriffen gegen dich mit Nachteil.\n\nAuf höheren Level: Schaden steigt um je 1W8 auf Level 5, 11 und 17."
+}

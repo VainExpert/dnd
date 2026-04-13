@@ -1,0 +1,74 @@
+{
+  "name": "Rictavio",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "curse-of-strahd",
+      "human"
+    ]
+  },
+  "alignment": "lawful good",
+  "ac": 12,
+  "hp": {
+    "average": 77,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 9,
+    "dex": 12,
+    "con": 13,
+    "int": 16,
+    "wis": 18,
+    "cha": 16
+  },
+  "skills": {
+    "Arcana": 9,
+    "Insight": 7,
+    "Medicine": 7,
+    "Perception": 7,
+    "Religion": 6,
+    "Sleight of Hand": 4
+  },
+  "languages": [
+    "Abyssal",
+    "Common",
+    "Elvish",
+    "Infernal"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Special Equipment",
+      "text": "In addition to his sword cane, Rictavio wears a hat of disguise and a ring of mind shielding, and he carries a spell scroll of raise dead."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "Rictavio is a 9th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). Rictavio has the following cleric spells prepared:\n\n* Cantrips (at will): <i>guidance, light, mending, thaumaturgy</i>\n\n* 1st level (4 slots): <i>cure wounds, detect evil and good, protection from evil and good, sanctuary</i>\n\n* 2nd level (3 slots): <i>augury, lesser restoration, protection from poison</i>\n\n* 3rd level (3 slots): <i>magic circle, remove curse, speak with dead</i>\n\n* 4th level (3 slots): <i>death ward, freedom of movement</i>\n\n* 5th level (1 slot): <i>dispel evil and good</i>"
+    },
+    {
+      "name": "Undead Slayer",
+      "text": "When Rictavio hits an undead with a weapon attack, the undead takes an extra 10 (3d6) damage of the weapon's type."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Rictavio makes two attacks with his sword cane."
+    },
+    {
+      "name": "Sword Cane",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) bludgeoning damage (wooden cane) or piercing damage (silvered sword)."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Rotting Wind",
+  "size": "Large",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "large",
+      "undead",
+      "cr6",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 15,
+  "hp": {
+    "average": 82,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 20,
+    "con": 15,
+    "int": 7,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "6",
+    "xp": 2300,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Air Form",
+      "text": "The rotting wind can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+    },
+    {
+      "name": "Befouling Presence",
+      "text": "All normal plant life and liquid in the same space as a rotting wind at the end of the wind's turn is blighted and cursed. Normal vegetation dies in 1d4 days, while plant creatures take double damage from the wind of decay action. Unattended liquids become noxious and undrinkable."
+    },
+    {
+      "name": "Invisibility",
+      "text": "The rotting wind is invisible as per a greater invisibility spell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Wind of Decay",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 0 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage plus 14 (4d6) necrotic damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw or be cursed with tomb rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies and its body turns to dust. The curse lasts until removed by the remove curse spell or comparable magic."
+    }
+  ],
+  "source": "creature"
+}

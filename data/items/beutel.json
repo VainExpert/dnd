@@ -1,0 +1,43 @@
+{
+  "id": "beutel",
+  "type": "item",
+  "name": "Beutel",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 5,
+    "currency": "sp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Beutel aus Stoff oder Leder. Bis zu 3 kg Traglast / 20 Schleuderkugeln / 50 Blasrohrnadeln / oder ähnliches in 5,5 l Volumen.",
+  "tags": [
+    "abenteuer",
+    "behälter",
+    "grundausstattung"
+  ]
+}

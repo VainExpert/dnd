@@ -1,0 +1,57 @@
+{
+  "name": "Haunted Tome",
+  "size": "Tiny",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "tiny",
+      "construct",
+      "cr1/4",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 11,
+  "hp": {
+    "average": 5,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 15
+  },
+  "abilities": {
+    "str": 3,
+    "dex": 12,
+    "con": 10,
+    "int": 14,
+    "wis": 7,
+    "cha": 4
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Cursed Contents",
+      "text": "Any creature that writes its name\nwithin this tome becomes affected by a streak of\nterrible luck. When any of those creatures are\nmaking a critical skill check (DM's discretion), that\ncreature makes the roll with disadvantage as some\nrandom misfortune befalls them. These misfortunes\nautomatically become documented within the\npages of the tome along with humorous and\ndegrading remarks regarding the outcome. When\nthe tome is destroyed or someone else writes their\nname in the book, the curse is lifted."
+    },
+    {
+      "name": "False Appearance",
+      "text": "While the tome remains\nmotionless, it is indistinguishable from a normal\nbook. It will always brandish a name such as <i>Power\nand Wealth</i> or <i>Rags to Riches</i> and will appear in\npristine condition. The contents of the book\nencourage a reader to write its name within the\npages with promises of power."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft.,\none target. Hit: 3 (1d4 + 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

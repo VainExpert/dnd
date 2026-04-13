@@ -1,0 +1,82 @@
+{
+  "name": "Akyishigal, der Dämonenfürst der Kakerlaken",
+  "size": "Groß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr12",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 18,
+  "hp": {
+    "average": 138,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 20,
+    "climb": 40,
+    "fly": 40
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 17,
+    "con": 22,
+    "int": 19,
+    "wis": 14,
+    "cha": 24
+  },
+  "skills": {
+    "Acrobatics": 11,
+    "Athletics": 9,
+    "Perception": 6,
+    "Stealth": 11
+  },
+  "languages": [
+    "Abyssal",
+    "Common",
+    "Draconic",
+    "Elvish",
+    "Infernal; telepathy 18 m."
+  ],
+  "challenge": {
+    "cr": "12",
+    "xp": 8400,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Akyishigals angeborene Zauberfähigkeit ist Charisma (ZauberrettungswurfDC 19, +11 auf Treffer bei Zauberangriffen). Es kann die folgenden Zauber von Natur aus wirken, ohne dass materielle Komponenten erforderlich sind:\n\nBeliebig oft: Böses und Gutes erkennen, Magischer Kreis, Teleportation\n\n3/Tag: Magie bannen, Insektenplage (6. Stufe), Gestaltwandlung (nur Ungeziefer)\n\n1/Tag: Ansteckung (immer Schmutzfieber)"
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Akyishigal hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Dämon beschwören (1/Tag)",
+      "text": "Akyishigal kann einen Chasme-Dämon beschwören. Der Chasme erscheint an einer freien Stelle in60 feetder Nähe von Akyishigal, handelt als Verbündeter von Akyishigal und kann keine weiteren Dämonen beschwören. Er bleibt 1 Minute lang bestehen, bis er oder sein Beschwörer stirbt oder bis sein Beschwörer ihn als Aktion entlässt."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Akyishigal führt vier Klauenangriffe aus."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffer, Reichweite10 ft: , ein Ziel. Treffer: 16 (2d10 + 5) Schnittschaden."
+    },
+    {
+      "name": "Mantel der Schwärme (Aufladezeit 5-6)",
+      "type": "special",
+      "text": "Akyishigal kann aus seinem Mund, seinen Augen und den Rissen in seiner Haut eine Wolke aus fliegenden, stechenden Insekten ausstoßen. Diese Wolke umgibt ihn in einem Umkreis von 1,5 m. Solange der Schutzschild aktiv ist, werden alle Angriffe gegen ihn mit Nachteil ausgeführt, und Akyishigal kann in alle Richtungen sehen (durch die Augen der Insekten). Jedes Lebewesen, das seinen Zug innerhalb5 feetvon  von Akyishigal beginnt, erleidet 11 (2d10) Durchbohrungsschaden plus 10 (3d6) Giftschaden oder die Hälfte des Giftschadens bei einem erfolgreichenDC 17  Konstitutionsrettungswurf. Bei einem misslungenen Rettungswurf ist der Charakter zudem 1 Stunde lang vergiftet. Der Schwarm hält 5 Runden lang an; er löst sich sofort auf, wenn Akyishigal 30 oder mehr Schaden durch einen Nicht-Waffenangriff erleidet, gegen den er keine Resistenz besitzt. Solange ein Charakter durch den Mantel der Schwärme vergiftet ist, verströmt er einen Gestank nach Verwesung. Alle unkontrollierten Schädlinge greifen diesen Charakter sofort an, sobald sie ihn sehen, und bevorzugen ihn gegenüber anderen Zielen."
+    }
+  ],
+  "source": "creature"
+}

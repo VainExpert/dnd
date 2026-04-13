@@ -1,0 +1,65 @@
+{
+  "name": "Sumpf",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr3",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 15,
+  "hp": {
+    "average": 75,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 40
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 18,
+    "con": 16,
+    "int": 9,
+    "wis": 16,
+    "cha": 11
+  },
+  "skills": {
+    "Perception": 5
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Bagiennik führt zwei Klauenangriffe aus."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 18 (4d6 + 4) Schnittschaden."
+    },
+    {
+      "name": "Säurespray",
+      "type": "special",
+      "text": "Fernkampfangriff: +6 auf den Treffer, Reichweite 4,5 m., ein Ziel. Treffer: 14 (2d10 + 3) Säureschaden. Das Ziel muss einen erfolgreichenDC 13Geschicklichkeits-Rettungswurf bestehen oder fällt in dem rutschigen Öl, das eine Fläche5 feetvon  Quadratmetern bedeckt, zu Boden. Eine Kreatur, die den öligen Bereich betritt oder ihren Zug dort beendet, muss ebenfalls den Geschicklichkeitsrettungswurf bestehen, um nicht zu Boden zu fallen. Eine Kreatur muss pro 5-Fuß-Quadrat pro Zug nur einen Rettungswurf ablegen, selbst wenn sie den Bereich betritt und ihren Zug dort beendet. Der Rutsch-Effekt hält 3 Runden lang an."
+    },
+    {
+      "name": "Heilöl",
+      "type": "special",
+      "text": "Ein Bagiennik kann eine sterbende Kreatur automatisch stabilisieren, indem er etwas von seinem öligen Sekret auf deren Haut aufträgt. Eine ähnliche Anwendung bei einer bereits stabilen Kreatur oder einer mit 1 oder mehr Trefferpunkten wirkt wie ein Heiltrank und stellt2d4 + 2  Trefferpunkte wieder her. Alternativ kann das Sekret des Bagienniks die Wirkung eines „Geringe Wiederherstellung“-Zaubers haben. Jede Kreatur, die das Heilöl eines Bagienniks erhält, muss jedoch einen erfolgreichenDC 13  Konstitutionsrettungswurf bestehen, sonst wird sie für 1 Minute verlangsamt."
+    }
+  ],
+  "source": "creature"
+}

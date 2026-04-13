@@ -1,0 +1,73 @@
+{
+  "name": "Dust Ghoul",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr7",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 16,
+  "hp": {
+    "average": 104,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40,
+    "burrow": 20
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 16,
+    "con": 15,
+    "int": 14,
+    "wis": 14,
+    "cha": 16
+  },
+  "skills": {},
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Improved Critical",
+      "text": "The ghoul’s attacks score a critical hit\non a roll of 19 or 20."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The dust ghoul makes three attacks: one with\nits bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 15 (3d6 + 5) slashing damage."
+    },
+    {
+      "name": "Blinding Dust (1/day)",
+      "type": "special",
+      "text": "Blinding dust and sand swirls magically around\nthe ghoul. Each creature within 5 feet of the ghoul must succeed on a DC\n15 Constitution saving throw or be blinded until the end of the creature’s\nnext turn."
+    },
+    {
+      "name": "Paralyzing Shriek (Recharge 5–6)",
+      "type": "special",
+      "text": "The dust ghoul unleashes a hellish\nshriek. Each creature that is within 60 feet of the ghoul and can hear it\nmust succeed on a DC 13 Constitution saving throw or be paralyzed for\n1 minute. The target can repeat the saving throw at the end of each of its\nturns, ending the effect on itself on a success."
+    }
+  ],
+  "source": "creature"
+}

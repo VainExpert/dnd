@@ -1,0 +1,64 @@
+{
+  "name": "Woods Ape",
+  "size": "Medium",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr5",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 11,
+  "hp": {
+    "average": 82,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 13,
+    "con": 16,
+    "int": 11,
+    "wis": 18,
+    "cha": 7
+  },
+  "skills": {
+    "\"Nature": 6,
+    "Perception": 7
+  },
+  "languages": [
+    "Druidic"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Land’s Stride",
+      "text": "The woods ape can move through nonmagical difficult\nterrain without using extra movement and can pass through nonmagical\nplants without being slowed by them and without taking damage if they\nhave thorns, spines, or a similar hazard. In addition, the woods ape has\nadvantage on saving throws against plants that are magically created or\nmanipulated to impede movement."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The woods ape’s innate spellcasting ability is\nWisdom (spell save DC 15, +7 to hit with spell attacks). It can cast the\nfollowing spells, requiring no material components:\n\nAt will: guidance, mending, create or destroy water, detect poison and\ndisease, entangle, speak with animals, speak with plants, tree stride\n\n3/day each: animal messenger, barkskin, call lightning, locate animals\nor plants, pass without trace\n\n1/day each: awaken, commune with nature, conjure animals, plant\ngrowth"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The woods ape makes two claw attacks."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10\n(2d6 + 3) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

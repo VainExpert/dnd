@@ -1,0 +1,65 @@
+{
+  "name": "Burg",
+  "size": "Winzig",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "tiny",
+      "fey",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 16,
+  "hp": {
+    "average": 7,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 50
+  },
+  "abilities": {
+    "str": 5,
+    "dex": 18,
+    "con": 13,
+    "int": 10,
+    "wis": 13,
+    "cha": 14
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 6
+  },
+  "languages": [
+    "Common",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Begrenzte Amphibienfähigkeit",
+      "text": "Der Asrai kann sowohl an der Luft als auch unter Wasser atmen, muss jedoch\nmindestens alle zwei Stunden untertauchen, um nicht zu ersticken."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die Zauberfähigkeit des Asrai ist Charisma (Zauber\nrettungswurfDC 12, +4 auf Treffer bei Zauberangriffen). Er kann von Natur aus die folgenden\nZauber wirken, ohne dass dafür materielle Komponenten benötigt werden:\n\n* 3/Tag: Nebelwolke\n\n* 1/Tag: Wasserbeherrschung"
+    },
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Asrai ist ein Zauberwirker der 5. Stufe. Seine Zauberfertigkeit\nist Charisma (ZauberrettungswurfDC 12, +4 auf Treffer bei Zauberangriffen). Der Asrai kann\ndie folgenden Zauber wirken:\n\n* Cantrips (beliebig oft): Tanzende Lichter, Froststrahl, Widerstand, Thaumaturgie\n\n* 1. Stufe (4 Plätze): Person bezaubern, Wasser erschaffen oder zerstören, Magie entdecken, Donnerwelle\n\n* 2. Stufe (3 Plätze): Grauenhaftes Gelächter, Nebelschritt\n\n* 3. Stufe (2 Plätze): Hypnotisches Muster"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Kalter Griff",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5 ft: , ein Ziel.\nTreffer: 7 (1d6 + 4) Kälteschaden."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,80 @@
+{
+  "name": "Fan Dancer",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 15,
+  "hp": {
+    "average": 91,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 19,
+    "con": 14,
+    "int": 13,
+    "wis": 12,
+    "cha": 17
+  },
+  "skills": {
+    "Acrobatics": 7,
+    "Perception": 7,
+    "Performance": 6,
+    "Persuasion": 9,
+    "Sleight of Hand": 7,
+    "Stealth": 10
+  },
+  "languages": [
+    "any three languages"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Swift Repositioning",
+      "text": "The fan dancer can disengage as a\nbonus action."
+    },
+    {
+      "name": "Dancing Leap",
+      "text": "The fan dancer uses wind from its fans\nto aid it in jumping. Its long jump is up to 20\nfeet and its high jump is up to 15 feet, with or\nwithout a running start."
+    },
+    {
+      "name": "Sneak Attack (1/turn)",
+      "text": "Whenever the dancer hits with an attack, it can deal an extra 17 (5d6) damage to one creature if it had advantage on the attack roll or if it has an ally within 5 feet of its target that isn’t incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The dancer makes two attacks with its\nbladed fans or with its wind strike."
+    },
+    {
+      "name": "Bladed Fan",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach\n5ft., one target. Hit: 8 (1d8 + 4) slashing damage."
+    },
+    {
+      "name": "Wind Strike",
+      "type": "special",
+      "text": "Ranged Weapon Attack +7 to hit, range\n20/60 ft., one target. Hit: 9 (2d4 + 4) slashing damage."
+    },
+    {
+      "name": "Dance of a Ninety-Nine Slashes (Recharge 5-6)",
+      "type": "special",
+      "text": "The\ndancer performs an elaborate display with its fans,\nthrowing violent winds at all creatures within a 15-\nfoot radius sphere centered on the dancer.\nCreatures in this area must make a DC 14 Dexterity\nsaving throw, taking 25 (10d4) slashing damage on\na failed save, or half as much damage on a\nsuccessful one. Creatures who failed this saving\nthrow are also pushed to the edge of the dance’s\nradius."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Barbegazi (Eisgnom)",
+  "size": "Klein",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr1/2",
+      "tome-of-horrors",
+      "gnome"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 12,
+  "hp": {
+    "average": 13,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 20
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 13,
+    "con": 13,
+    "int": 11,
+    "wis": 11,
+    "cha": 8
+  },
+  "skills": {
+    "Stealth": 3
+  },
+  "languages": [
+    "Common",
+    "Gnome"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Spaziergang im Schnee",
+      "text": "Der Barbegazi kann sich auf vereisten oder verschneiten\nOberflächen fortbewegen und diese erklimmen, ohne eine Fertigkeitsprobe ablegen zu müssen. Außerdem verursacht\nschwieriges Gelände aus Eis oder Schnee keinen zusätzlichen Bewegungsaufwand."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Barbegazi ist\nWeisheit (ZauberrettungswurfDC 10, +2 auf Treffer bei Zauberangriffen). Der Barbegazi\nkann die folgenden Zauber von Natur aus wirken, ohne dass materielle Komponenten erforderlich sind:\n\n* 3/Tag: E FroststrahlE \n\n* 1/Tag: E Person fesselnE"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Kurzschwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +3 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer:\n4 (1d6 + 1) Durchdringungsschaden plus 3 (1d6) Kälteschaden."
+    },
+    {
+      "name": "Dolch",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +3 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 3\n(1d4 + 1) Durchdringungsschaden plus 3 (1d6) Kälteschaden."
+    }
+  ],
+  "source": "creature"
+}

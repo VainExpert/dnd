@@ -1,0 +1,44 @@
+{
+  "id": "faltender-stab",
+  "type": "item",
+  "name": "Faltender Stab",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "staff",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 3.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Stab kann mit einer Aktion auf 30 cm geschrumpft werden,. um sie zu lagern. Mit einer weiteren Aktion geht sie wieder auf die normale Länge von 3 m zurück. Das Gewicht ändert sich nicht.",
+  "tags": [
+    "magisch",
+    "nützlich",
+    "stock",
+    "aktion"
+  ]
+}

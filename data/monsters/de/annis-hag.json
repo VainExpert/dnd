@@ -1,0 +1,94 @@
+{
+  "name": "Nervig",
+  "size": "Groß",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "large",
+      "fey",
+      "cr6",
+      "volos-guide"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 17,
+  "hp": {
+    "average": 75,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 21,
+    "dex": 12,
+    "con": 14,
+    "int": 13,
+    "wis": 14,
+    "cha": 15
+  },
+  "skills": {
+    "Deception": 5,
+    "Perception": 5
+  },
+  "languages": [
+    "Common",
+    "Giant",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit der Hexe ist Charisma (ZauberrettungswurfDC 13). Sie kann von Natur aus die folgenden Zauber wirken:\n\nJeweils 3 pro Tag: E sich tarnenE  (einschließlich der Gestalt eines mittelgroßen Humanoiden), E NebelwolkeE"
+    },
+    {
+      "name": "Hexenzirkel",
+      "text": "Wenn Hexen zusammenarbeiten müssen, bilden sie trotz ihrer egoistischen Natur Hexenzirkel. Ein Hexenzirkel setzt sich aus Hexen aller Art zusammen, die innerhalb der Gruppe alle gleichberechtigt sind. Dennoch strebt jede einzelne Hexe weiterhin nach mehr persönlicher Macht.\n\nEin Zirkel besteht aus drei Hexen, damit Streitigkeiten zwischen zwei Hexen von der dritten geschlichtet werden können. Wenn jemals mehr als drei Hexen zusammenkommen – was passieren kann, wenn zwei Zirkel in Konflikt geraten –, ist das Ergebnis meist Chaos."
+    },
+    {
+      "name": "Gemeinsames Zaubern (nur für Hexenzirkel)",
+      "text": "Solange sich alle drei Mitglieder eines Hexenzirkels in30 feetunmittelbarer Nähe zueinander befinden, können sie jeweils die folgenden Zauber aus der Zauberliste des Zauberers wirken, müssen sich jedoch die Zauberslots untereinander teilen. Für das Wirken dieser Zauber gilt jede Hexe als Zauberin der Stufe 12, die ihre Intelligenz als Zauberfertigkeit verwendet. Die Rettungswurf-SG beträgt 12 + den Intelligenz-Modifikator der Hexe, und der Angriffsbonus beträgt 4 + den Intelligenz-Modifikator der Hexe.\n\n* 1. Stufe (4 Plätze): Identifizieren, Strahl der Krankheit\n\n* 2. Stufe (3 Plätze): Person festhalten, Objekt orten\n\n* 3. Stufe (3 Plätze): Fluch auferlegen, Gegenzauber, Blitzschlag\n\n* 4. Stufe (3 Plätze): Phantasmatischer Mörder, Verwandlung\n\n* 5. Stufe (2 Plätze): Kontakt mit einer anderen Ebene, Hellsehen\n\n* 6. Stufe (1 Platz): Augenbiss"
+    },
+    {
+      "name": "Hexenauge (nur für Hexenzirkel)",
+      "text": "Ein Hexenzirkel kann einen magischen Gegenstand namens „Hexenauge“ herstellen, der aus einem echten, mit Lack überzogenen Auge besteht und oft an einem Anhänger oder einem anderen tragbaren Gegenstand befestigt wird. Das Hexenauge wird in der Regel einem Diener zur Aufbewahrung und zum Transport anvertraut. Eine Hexe des Zirkels kann eine Aktion ausführen, um zu sehen, was das Hexenauge sieht, sofern sich das Hexenauge auf derselben Existenzebene befindet. Ein Hexenauge hat eine RK von 10, 1 Trefferpunkt und Dunkelheitssicht mit einem Radius von 18 m. Wird es zerstört, erleidet jedes 3d10Zirkelmitglied  psychischen Schaden und ist für 24 Stunden geblendet.\n\nEin Hexenzirkel kann jeweils nur ein Hexenauge besitzen, und um ein neues zu erschaffen, müssen alle drei Mitglieder des Zirkels ein Ritual durchführen. Das Ritual dauert 1 Stunde, und die Hexen können es nicht durchführen, solange sie geblendet sind. Wenn die Hexen während des Rituals eine andere Aktion ausführen als das Ritual selbst, müssen sie von vorne beginnen."
+    },
+    {
+      "name": "Variante: Todeszirkel",
+      "text": "Bei einem Todeszirkel ersetzt du die Zauberliste der Eigenschaft „Gemeinsames Zaubern“ der Hexen durch die folgenden Zauber:\n\n* 1. Stufe (4 Plätze): Falsches Leben, Wunden zufügen\n\n* 2. Stufe (3 Plätze): Sanfte Ruhe, Strahl der Schwächung\n\n* 3. Stufe (3 Plätze): Tote beleben, Wiederbeleben, Mit Toten sprechen\n\n* 4. Stufe (3 Plätze): Verwüstung, Todesabwehr\n\n* 5. Stufe (2 Plätze): Ansteckung, Tote auferwecken\n\n* 6. Stufe (1 Platz): Kreis des Todes"
+    },
+    {
+      "name": "Variante: Naturzirkel",
+      "text": "Für einen Natur-Zirkel ersetzt ihr die Zauberliste der Eigenschaft „Gemeinsames Zaubern“ der Hexen durch die folgenden Zauber:\n\n* 1. Stufe (4 Plätze): Verwickeln, Mit Tieren sprechen\n\n* 2. Stufe (3 Plätze): Flammende Kugel, Mondstrahl, Stachelwachstum\n\n* 3. Stufe (3 Plätze): Blitzruf, Pflanzenwachstum\n\n* 4. Stufe (3 Plätze): Bestie beherrschen, Greifende Ranke\n\n* 5. Stufe (2 Plätze): Insektenplage, Baumschritt\n\n* 6. Stufe (1 Platz): Dornwand"
+    },
+    {
+      "name": "Variante: Prophecy Coven",
+      "text": "Für einen Prophezeiungszirkel ersetzt man die Zauberliste der Eigenschaft „Gemeinsames Zaubern“ der Hexen durch die folgenden Zauber:\n\n* 1. Stufe (4 Zauberplätze): bane, bless\n\n* 2. Stufe (3 Zauberplätze): augury, detect thoughts\n\n* 3. Stufe (3 Zauberplätze): Hellsichtigkeit, Magie bannen, Unauffindbarkeit\n\n* 4. Stufe (3 Plätze): Arkanes Auge, Kreatur orten\n\n* 5. Stufe (2 Plätze): Geas, Legendenwissen\n\n* 6. Stufe (1 Platz): Wahrsehen"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Die Annis führt drei Angriffe aus: einen mit ihrem Biss und zwei mit ihren Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 15 (3d6+5) Durchschlagschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 15 (3d6+5) Schnittschaden."
+    },
+    {
+      "name": "Eine umarmende Umarmung",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 36 (9d6+5) Bludgeoning-Schaden, und das Ziel wird festgehalten (Befreiung:DC 15 ), sofern es sich um eine Kreatur der Größe „Groß“ oder kleiner handelt. Bis das Festhalten endet, erleidet das Ziel zu Beginn jedes Zuges der Hexe 36 (9d6+5) Bludgeoning-Schaden. Die Hexe kann keine Angriffe ausführen, während sie eine Kreatur auf diese Weise festhält."
+    }
+  ],
+  "source": "creature"
+}

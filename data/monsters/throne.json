@@ -1,0 +1,60 @@
+{
+  "name": "Throne",
+  "size": "Large",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "large",
+      "celestial",
+      "cr9",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "any good alignment",
+  "ac": 15,
+  "hp": {
+    "average": 127,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 16,
+    "con": 16,
+    "int": 14,
+    "wis": 18,
+    "cha": 18
+  },
+  "skills": {},
+  "languages": [
+    "all",
+    "telepathy 60 ft."
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The Throne has advantage on\nsaving throws against spells and other magical\neffects from evil characters and sources."
+    },
+    {
+      "name": "Aura of Protection Against Evil",
+      "text": "Evil creatures\nhave disadvantage on attack rolls against all\nallies within 5 feet of the Throne. Allies in this\narea can’t be charmed, frightened, or possessed\nby evil creatures. If an ally is already charmed,\nfrightened, or possessed by evil magic, the ally\nhas advantage on any new saving throw against\nthe relevant effect."
+    }
+  ],
+  "actions": [
+    {
+      "name": "The Burning Wheel",
+      "type": "special",
+      "text": "Ranged Spell Attack: +8\nto hit, range 120 ft., one target. Hit: 10 (3d6) fire\ndamage plus 9 (2d8) radiant damage. If the\ntarget is Medium or smaller, it must succeed on\na DC 16 Dexterity saving throw or be teleported\ninto the Throne’s burning rings. The target is\ngrappled (escape DC 17). Until the grapple ends,\nthe target is restrained, and the Throne uses\nRadiant Burn as its first action on each of its subsequent turns. Only one creature can be imprisoned at a time."
+    },
+    {
+      "name": "Radiant Burn",
+      "type": "special",
+      "text": "The wheel spins around the creature grappled by it, dealing 13 (3d8) fire damage\nplus 9 (2d8) radiant damage."
+    }
+  ],
+  "source": "creature"
+}

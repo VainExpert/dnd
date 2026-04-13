@@ -1,0 +1,45 @@
+{
+  "id": "malutensilien",
+  "type": "item",
+  "name": "Malutensilien",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 2.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 10,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Pinsel, Farben, Leinwand etc. Nutzen: Male ein erkennbares Bild von jemandem, der gesehen wurde (SG 10). Fertigen: Druidischer Fokus, Heiliges Symbol",
+  "tags": [
+    "handwerk",
+    "werkzeug",
+    "nützlich",
+    "kunst",
+    "markieren"
+  ]
+}

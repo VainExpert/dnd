@@ -1,0 +1,46 @@
+{
+  "id": "magicitem-elementarer-edelstein",
+  "type": "item",
+  "name": "Elementarer Edelstein",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 500,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Edelstein enthält ein Partikel Elementarenergie. Wenn du deine Aktion verwendest, um den Edelstein zu zerschmettern, wird ein Elementar beschworen, als hättest du den Zauber Elementar beschwören gewirkt. Die Magie des Edelsteins geht dadurch verloren. Die Art des Edelsteins bestimmt, was für ein Elementar durch den Zauber beschworen wird. Edelstein Beschworener Elementar Gelber Diamant Erdelementar Roter Korund Feuerelementar Blauer Saphir Luftelementar Smaragd Wasserelementar",
+  "tags": [
+    "magisch",
+    "elementar",
+    "edelstein",
+    "zauber",
+    "beschwörung",
+    "aktion"
+  ]
+}

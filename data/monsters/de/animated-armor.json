@@ -1,0 +1,58 @@
+{
+  "name": "Bewegte Rüstung",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr1",
+      "monster-manual"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 18,
+  "hp": {
+    "average": 33,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 11,
+    "con": 13,
+    "int": 1,
+    "wis": 3,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Anfälligkeit für Magie",
+      "text": "Die Rüstung ist im Wirkungsbereich eines antimagischen Feldes handlungsunfähig. Wird sie von „Magie bannen“ getroffen, muss die Rüstung einen Konstitutions-Rettungswurf gegen die Zauber-Rettungs-DC des Zaubernden bestehen, andernfalls fällt sie für 1 Minute bewusstlos."
+    },
+    {
+      "name": "Schein",
+      "text": "Solange die Rüstung unbewegt bleibt, ist sie von einer gewöhnlichen Rüstung nicht zu unterscheiden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Die Rüstung führt zwei Nahkampfangriffe aus."
+    },
+    {
+      "name": "Friede sei mit euch",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 5 (1d6 + 2) Bludgeoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Huge Obsidian Elemental",
+  "size": "Huge",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "huge",
+      "elemental",
+      "cr11",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 17,
+  "hp": {
+    "average": 137,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 8,
+    "con": 22,
+    "int": 4,
+    "wis": 11,
+    "cha": 11
+  },
+  "skills": {},
+  "languages": [
+    "Terran"
+  ],
+  "challenge": {
+    "cr": "11",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Brute",
+      "text": "A melee weapon attack deals one extra die of its damage when\nthe obsidian elemental hits with it (included in the attack)."
+    },
+    {
+      "name": "Death Throes",
+      "text": "When the obsidian elemental dies, it explodes, and each\ncreature within 30 feet of it must make a DC 18 Dexterity saving throw,\ntaking 31 (9d6) slashing damage and 31 (9d6) fire damage on a failed\nsaving throw, or half as much damage on a successful one."
+    },
+    {
+      "name": "Molten Glass",
+      "text": "A creature that hits the obsidian elemental with a melee\nattack while within 5 feet of it takes 7 (2d6) fire damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The obsidian elemental makes two claw attacks."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 23\n(4d8 + 5) slashing damage plus 13 (3d8) fire damage."
+    }
+  ],
+  "source": "creature"
+}

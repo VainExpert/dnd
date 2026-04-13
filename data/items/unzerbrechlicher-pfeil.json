@@ -1,0 +1,43 @@
+{
+  "id": "unzerbrechlicher-pfeil",
+  "type": "item",
+  "name": "Unzerbrechlicher Pfeil",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "ammunition",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 25,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Pfeil kann nur in einem Anti-Magie Feld zerstört werden.",
+  "tags": [
+    "magisch",
+    "munition",
+    "pfeil"
+  ]
+}

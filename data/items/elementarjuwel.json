@@ -1,0 +1,46 @@
+{
+  "id": "elementarjuwel",
+  "type": "item",
+  "name": "Elementarjuwel",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 250,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Das Juwel enthält ein wenig elementare Energie. Mit einer Aktion kannst du das Juwel zerbrechen (danach ist es nicht mehr magisch) und einen Elementar beschwören, je nach Art des Juwels (siehe Tabelle). Das Elementar erscheint in einem freien Feld so nah an dir dran wie möglich und versteht deine Sprache und gehorcht dir. Es bewegt sich direkt nach deiner Initiative. Es besteht für 1 h, bis seine TP auf 0 fallen oder du es mit einer Bonus Aktion auflöst. Juwel Elementar Blauer Saphir Luft-Elementar Grüner Smaragd Wasser-Elementar Roter Korund Feuer-Elementar Gelber Diamant Erd-Elementar",
+  "tags": [
+    "magisch",
+    "juwel",
+    "beschwörung",
+    "elementar",
+    "aktion",
+    "konsumiert"
+  ]
+}

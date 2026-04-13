@@ -1,0 +1,50 @@
+{
+  "name": "Death Watch Beetle",
+  "size": "Medium",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "medium",
+      "beast",
+      "cr5",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 75,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 10,
+    "con": 16,
+    "int": 1,
+    "wis": 10,
+    "cha": 9
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12\n(2d6 + 5) piercing damage."
+    },
+    {
+      "name": "Death Rattle (Recharge 5–6)",
+      "type": "special",
+      "text": "The death watch beetle emits a clicking\nnoise with a resonance frequency that affects creatures within 30 feet of\nit. Creatures in this area must make a DC 13 Constitution saving throw,\ntaking 10 (3d6) thunder damage on a failed save, or half as much damage\non a successful one."
+    }
+  ],
+  "source": "creature"
+}

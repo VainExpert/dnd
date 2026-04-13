@@ -1,0 +1,92 @@
+{
+  "name": "Imix",
+  "size": "Huge",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "huge",
+      "elemental",
+      "cr19",
+      "elemental-evil"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 17,
+  "hp": {
+    "average": 325,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 24,
+    "con": 22,
+    "int": 15,
+    "wis": 16,
+    "cha": 23
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Ignan"
+  ],
+  "challenge": {
+    "cr": "19",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Empowered Attacks",
+      "text": "Imix's slam attacks are treated as magical for the purpose of bypassing resistance and immunity to nonmagical weapons."
+    },
+    {
+      "name": "Fire Aura",
+      "text": "At the start of each of Imix's turns, each creature within 10 feet of him takes 17 (5d6) fire damage, and flammable objects in the aura that aren't being worn or carried ignite. A creature also takes 17 (5d6) fire damage if it touches Imix or hits him with a melee attack while within 10 feet of him, and a creature takes that damage the first time on a turn that Imix moves into its space. Nonmagical weapons that hit Imix are destroyed by fire immediately after dealing damage to him"
+    },
+    {
+      "name": "Fire Form",
+      "text": "Imix can enter a hostile creature's space and stop there. He can move through a space as narrow as 1 inch without squeezing if fire could pass through that space."
+    },
+    {
+      "name": "Illumination",
+      "text": "Imix sheds bright light in a 60-foot radius and dim light for an additional 60 feet."
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "text": "If Imix fails a saving throw, he can choose to succeed instead."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "Imix's innate spellcasting ability is Charisma (spell save DC 20, +12 to hit with spell attacks). He can innately cast the following spells, requiring no material components:\n\n* At will: <i>fireball, wall of fire</i>\n\n* 3/day each: <i>fire storm, haste, teleport</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "Imix has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Imix makes two slam attacks or two flame blast attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) bludgeoning damage plus 18 (5d6) fire damage."
+    },
+    {
+      "name": "Flame Blast",
+      "type": "special",
+      "text": "Ranged Spell Attack: +12 to hit, range 250 ft., one target. Hit: 35 (10d6) fire damage."
+    },
+    {
+      "name": "Summon Elementals (1/Day)",
+      "type": "special",
+      "text": "Imix summons up to three fire elementals and loses 30 hit points for each elemental he summons. Summoned elementals have maximum hit points, appear within 100 feet of Imix, and disappear if Imix is reduced to 0 hit points."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "mit-tieren-sprechen",
+  "name": "Mit Tieren sprechen",
+  "level": 1,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "V, G",
+  "duration": "10 min",
+  "concentration": false,
+  "ritual": true,
+  "classes": [
+    "Barde",
+    "Druide",
+    "Waldläufer",
+    "Hexenmeister"
+  ],
+  "text": "Für die Wirkungsdauer kannst du alle Tiere verstehen und verbal mit ihnen kommunizieren.\nDas Wissen und die Wahrnehmung vieler wird durch ihren INT-Wert eingeschränkt.\nGrundlegende Informationen zu Orten und Monstern in der Nähe, sowie Ereignisse des letzten Tages können sie aber mitteilen.\nDu kannst ein Tier auch zu einem kleinen Gefallen überreden."
+}

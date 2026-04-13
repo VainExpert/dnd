@@ -1,0 +1,44 @@
+{
+  "id": "glocke",
+  "type": "item",
+  "name": "Glocke",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Eine Glocke produziert ein Geräusch, der bis zu 18 m weit hörbar ist.",
+  "tags": [
+    "abenteuer",
+    "markieren",
+    "kommunikation",
+    "nützlich"
+  ]
+}

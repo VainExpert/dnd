@@ -1,0 +1,66 @@
+{
+  "name": "Decapus",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 13,
+  "hp": {
+    "average": 32,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 13,
+    "con": 15,
+    "int": 10,
+    "wis": 10,
+    "cha": 8
+  },
+  "skills": {
+    "Stealth": 5
+  },
+  "languages": [
+    "Common",
+    "Deep Speech",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Brachiation",
+      "text": "A decapus can move through trees at its base climb speed\nby using its tentacles to swing from tree to tree. Trees used by the decapus\nin this manner can be no further than 10 feet apart."
+    },
+    {
+      "name": "Mimicry",
+      "text": "The decapus can mimic any sounds it has heard, including\nvoices. A creature that hears the sounds can tell they are imitations with a\nsuccessful DC 13 Wisdom (Insight) check."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The decapus makes up to four tentacle attacks."
+    },
+    {
+      "name": "Tentacle",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage. If the target is Medium or smaller, it\nis grappled (escape DC 12) and restrained until the grapple ends. The\ndecapus has ten tentacles but can only grapple two targets at any given\ntime."
+    }
+  ],
+  "source": "creature"
+}

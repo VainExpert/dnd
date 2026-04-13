@@ -1,0 +1,58 @@
+{
+  "name": "Archmage",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr12",
+      "monster-manual",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 12,
+  "hp": {
+    "average": 99,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 12,
+    "int": 20,
+    "wis": 15,
+    "cha": 16
+  },
+  "skills": {
+    "Arcana": 13,
+    "History": 13
+  },
+  "languages": [
+    "any six languages"
+  ],
+  "challenge": {
+    "cr": "12",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Magieresistenz",
+      "text": "Der Erzmagier hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Erzmagier ist ein Zauberwirker der Stufe 18. Seine Zauberfertigkeit ist Intelligenz (ZauberrettungswurfDC 17, +9 auf Treffer bei Zauberangriffen). Der Erzmagier kann „Selbsttäuschung“ und „Unsichtbarkeit“ nach Belieben wirken und hat die folgenden Zauber vorbereitet:\n\n* Cantrips (nach Belieben): Feuerblitz, Licht, Magische Hand, Taschenspielertrick, Schockgriff\n\n* 1. Stufe (4 Plätze): Magie entdecken, Identifizieren, Magierrüstung*, Magischer Geschoss\n\n* 2. Stufe (3 Plätze): Gedanken lesen, Spiegelbild, Nebelschritt\n\n* 3. Stufe (3 Plätze): Zauberabwehr, Fliegen, Blitzschlag\n\n* 4. Stufe (3 Plätze): Verbannung, Feuerschild, Steinhaut*\n\n* 5. Stufe (3 Plätze): Kältekegel, Hellsehen, Kraftwand\n\n* 6. Stufe (1 Platz): Kugel der Unverwundbarkeit\n\n* 7. Stufe (1 Platz): Teleportation\n\n* 8. Stufe (1 Platz): Geistige Leere*\n\n* 9. Stufe (1 Platz): Zeitstillstand\n\n*Der Erzmagier wirkt diese Zauber vor dem Kampf auf sich selbst."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dolch",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfwaffenangriff: +6 auf den Trefferwurf, Reichweite 1,5 m[ ]20/60Fuß, ein Ziel. Treffer: 4 (1d4 + 2) Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

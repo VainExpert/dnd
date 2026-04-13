@@ -1,0 +1,67 @@
+{
+  "name": "Gallows Tree Zombie",
+  "size": "Medium",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "medium",
+      "plant",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 11,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 16,
+    "int": 4,
+    "wis": 10,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "but cannot speak",
+    "telepathy 100 ft. with gallows tree"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Regeneration",
+      "text": "The gallows tree zombie regenerates 5 hit points at the\nstart of its turn if it has at least 1 hit point."
+    },
+    {
+      "name": "Tether-Vine",
+      "text": "A gallows tree zombie is connected to the gallows tree that\ncreated it by a long, sinewy vine. This vine can be lengthened to allow the\nzombie to move up to 100 feet away from the tree. The vine is AC 12 and\nhas 10 hit points. Harming the vine deals no damage to the gallows tree\nzombie or the gallows tree, but if severed, does prevent the zombie from\nregenerating any health at the start of its turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The gallows tree zombie makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11\n(2d6 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Spore Cloud (Recharge 6)",
+      "type": "special",
+      "text": "A gallows tree zombie can breathe a cloud\nof poisonous, greenish spores at the space directly in front of it in a 5-foot\ncube. A creature caught in the cloud must succeed on a DC 13 Constitution\nsaving throw or be poisoned for 1 minute. Until this poison ends, the target\nis slowed (as the slow spell). The target can repeat the saving throw at the\nend of each of its turns, ending the effect on itself on a success."
+    }
+  ],
+  "source": "creature"
+}

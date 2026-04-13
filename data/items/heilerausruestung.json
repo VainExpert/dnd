@@ -1,0 +1,43 @@
+{
+  "id": "heilerausruestung",
+  "type": "item",
+  "name": "Heilerausrüstung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 1.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 5,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Eine Heilerausrüstung hat 10 Ladungen. Als Aktion kann eine der Ladungen verwendet werden, um eine Kreatur (auf 0 TP) zu stabilisieren ohne Medizin-Wurf.",
+  "tags": [
+    "werkzeug",
+    "nützlich",
+    "heilung"
+  ]
+}

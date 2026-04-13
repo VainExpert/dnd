@@ -1,0 +1,63 @@
+{
+  "name": "Fortress Rhino",
+  "size": "Huge",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "huge",
+      "beast",
+      "cr12",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 16,
+  "hp": {
+    "average": 210,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 24,
+    "dex": 6,
+    "con": 19,
+    "int": 4,
+    "wis": 12,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "12",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Mobile Fortress",
+      "text": "The rhino can hold up to four\nmedium creatures within the outpost on its back."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "The rhino deals double damage to\nobjects and structures."
+    },
+    {
+      "name": "Stampeding Charge",
+      "text": "If the rhino moves at least 30\nfeet straight towards a target and hits it with a gore\nattack on the same turn, the target takes an\nadditional 18 (4d8) bludgeoning damage. If the\ntarget is a creature, it must succeed on a DC 18\nStrength saving throw or be knocked prone. In\naddition, any Medium or smaller creatures in the\nrhino's path while performing this charge must\nsucceed on a DC 15 Dexterity saving throw or take\n18 (4d8) bludgeoning damage and be knocked\nprone as it is trampled underfoot."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Gore",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 5 ft.,\none target. Hit: 34 (5d10 + 7) piercing damage and\nif the target is a Large creature or smaller it must\nsucceed on a DC 18 Dexterity saving throw or\nbecome impaled by the rhino's horn. A creature\nthat is impaled in this way is grappled and takes 18\n(4d8) piercing damage at the start of each of the\nrhino's turns. While a creature is impaled, the rhino\ncannot use its gore attack on another creature.\n\nAn impaled creature can use its action to pull itself\nfree from the horn, but continues to take 4 (1d8)\npiercing damage at the beginning of each of its\nturns until it is magically healed or a creature uses\nits action and succeeds on a DC 15 Wisdom\n(Medicine) check to patch up the wound."
+    },
+    {
+      "name": "Stomp",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 5\nft., one target. Hit: 46 (6d12 + 7) bludgeoning\ndamage and the target is a creature it must succeed\non a DC 18 Strength saving throw or be knocked\nprone."
+    }
+  ],
+  "source": "creature"
+}

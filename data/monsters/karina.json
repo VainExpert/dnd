@@ -1,0 +1,88 @@
+{
+  "name": "Karina",
+  "size": "Medium",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr4",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 17,
+  "hp": {
+    "average": 88,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 18,
+    "con": 13,
+    "int": 14,
+    "wis": 20,
+    "cha": 20
+  },
+  "skills": {
+    "Animal Handling": 7,
+    "Insight": 9,
+    "Perception": 9,
+    "Persuasion": 9,
+    "Stealth": 8,
+    "Survival": 9
+  },
+  "languages": [
+    "Common",
+    "Elvish",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Flyby",
+      "text": "When in owl form, the karina does not provoke opportunity\nattacks when it flies out of an enemy’s reach."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The karina’s spellcasting ability is Wisdom (spell\nsave DC 15, +7 to hit with spell attacks). The karina can innately cast the\nfollowing spells, requiring no material components:\n\n* At will: <i>chill touch, dancing lights</i>\n\n* 3/day each: <i>faerie fire, fog cloud</i>\n\n* 1/day: <i>moonbeam</i>"
+    },
+    {
+      "name": "Keen Hearing and Sight",
+      "text": "Karina have advantage on Wisdom\n(Perception) checks based on sight or hearing."
+    },
+    {
+      "name": "Owl Form",
+      "text": "As a bonus action when under moonlight, a Karina can\ntransform either into or from owl form. In owl form, the karina gains fly\n60 ft. and natural attacks (see below)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "A karina makes two dagger attacks or one bite and one\ntalon attack."
+    },
+    {
+      "name": "Bite (Owl Form Only)",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one\ntarget. Hit: 17 (3d8 + 4) piercing damage."
+    },
+    {
+      "name": "Dagger (Human Form Only)",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5\nft., one target. Hit: 6 (1d4 + 4) piercing or slashing damage."
+    },
+    {
+      "name": "Talons (Owl Form Only)",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft.,\none target. Hit: 13 (2d8 + 4) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

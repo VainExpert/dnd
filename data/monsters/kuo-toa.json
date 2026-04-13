@@ -1,0 +1,78 @@
+{
+  "name": "Kuo-Toa",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/4",
+      "monster-manual",
+      "kuo-toa"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 13,
+  "hp": {
+    "average": 18,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 30
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 10,
+    "con": 11,
+    "int": 11,
+    "wis": 10,
+    "cha": 8
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The kuo-toa can breathe air and water."
+    },
+    {
+      "name": "Otherwordly Perception",
+      "text": "The kuo-toa can sense the presence of any creature within 30 feet of it that is invisible or on the Ethereal Plane. It can pinpoint such a creature that is moving."
+    },
+    {
+      "name": "Slippery",
+      "text": "The kuo-toa has advantage on ability checks and saving throws made to escape a grapple."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage."
+    },
+    {
+      "name": "Spear",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack."
+    },
+    {
+      "name": "Net",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +3 to hit, range 5/15 ft., one Large or smaller creature. Hit: The target is restrained. A creature can use its action to make a DC 10 Strength check to free itself or another creature in a net, ending the effect on a success. Dealing 5 slashing damage to the net (AC 10) frees the target without harming it and destroys the net."
+    }
+  ],
+  "source": "creature"
+}

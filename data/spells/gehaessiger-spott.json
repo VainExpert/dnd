@@ -1,0 +1,16 @@
+{
+  "id": "gehaessiger-spott",
+  "name": "Gehässiger Spott",
+  "level": 0,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde"
+  ],
+  "text": "Du entfesselst eine Reihe von Beleidigungen, die mit Magie durchsetzt sind und an eine Kreatur in Reichweite gerichtet sind, die du sehen kannst.\nFalls dich das Ziel hören kann (es muss dich nicht verstehen), muss es einen WIS-Rettungswurf bestehen oder es erleidet 1W6 psychischen Schaden und ist beim nächsten Angriff vor Ende seines nächsten Zuges im Nachteil.\n\nAuf höheren Level: Schaden steigt um je 1W6 auf Level 5, 11 und 17."
+}

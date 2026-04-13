@@ -1,0 +1,53 @@
+{
+  "name": "Dimetrodon",
+  "size": "Medium",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "medium",
+      "beast",
+      "cr1/4",
+      "volos-guide"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 12,
+  "hp": {
+    "average": 19,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 20
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 15,
+    "int": 2,
+    "wis": 10,
+    "cha": 5
+  },
+  "skills": {
+    "Perception": 2
+  },
+  "languages": [],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "text": "Volo's Guide to Monsters, p. 139"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6+2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

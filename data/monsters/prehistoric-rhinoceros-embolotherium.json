@@ -1,0 +1,55 @@
+{
+  "name": "Prehistoric Rhinoceros (Embolotherium)",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 76,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 22,
+    "dex": 8,
+    "con": 16,
+    "int": 2,
+    "wis": 11,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "text": "If the embolotherium moves at least 20 feet straight toward a\ntarget and then hits it with a gore attack on the same turn, the target takes\nan extra 11 (2d10) bludgeoning damage. If the target is a creature, it must\nsucceed on a DC 16 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "The embolotherium deals double damage to objects and\nstructures."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Gore",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 28\n(4d10 + 6) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

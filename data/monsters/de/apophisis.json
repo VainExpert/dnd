@@ -1,0 +1,77 @@
+{
+  "name": "Apophisis",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr6",
+      "out-of-the-box-5e"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 13,
+  "hp": {
+    "average": 82,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 16,
+    "con": 16,
+    "int": 15,
+    "wis": 14,
+    "cha": 16
+  },
+  "skills": {
+    "Perception": 5,
+    "Stealth": 6
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Elven"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Zaubersprechen",
+      "text": "Apophisis ist eine Zauberin der 5. Stufe.\nIhre Zauberfertigkeit ist Charisma (ZauberrettungswurfDC\n14, +6 auf Treffer bei Zauberangriffen). Apophisis hat die\nfolgenden Zauber der Zauberin vorbereitet:\n\n* Cantrips (beliebig oft): E Froststrahl, Kühle Berührung, Magische Hand, TaschenspielertrickE \n\n* 1. Stufe (4 Plätze): Person bezaubern, Magie entdecken, Magierrüstung, Schild\n\n* 2. Stufe (3 Plätze): Dunkelheit, Suggestion\n\n* 3. Stufe (2 Plätze): Zauberabwehr, Fliegen"
+    },
+    {
+      "name": "Regeneration",
+      "text": "Apophisis erhält zu Beginn ihres Zuges 10 Trefferpunkte zurück,\nsofern sie mindestens 1 Trefferpunkt hat und\nsich weder im Sonnenlicht noch in fließendem Wasser befindet. Wenn Apophisis\nStrahlungsschaden oder Schaden durch Weihwasser erleidet,\nwirkt diese Eigenschaft zu Beginn von Apophisis’ nächstem Zug nicht."
+    },
+    {
+      "name": "Spinnenklettern",
+      "text": "Apophisis kann schwierige Oberflächen erklimmen,\nauch kopfüber an Decken, ohne\ndazu eine Fertigkeitsprobe ablegen zu müssen."
+    },
+    {
+      "name": "Schwächen von Vampiren",
+      "text": "Apophisis hat folgende\nSchwächen:\n* **Zutrittsverbot.** Apophisis kann eine Behausung nicht betreten,\nohne von einem der Bewohner dazu eingeladen worden zu sein.\n* **Verletzbar durch fließendes Wasser.** Apophisis erleidet 20 Säureschaden,\nwenn sie ihren Zug in fließendem Wasser beendet.\n* **Pfahl ins Herz.** Apophisis wird vernichtet, wenn eine\ndurchdringende Waffe aus Holz in ihr\nHerz getrieben wird, während sie an ihrem Ruheplatz handlungsunfähig ist.\n* **Überempfindlichkeit gegenüber Sonnenlicht.** Apophisis erleidet 20 Strahlungsschaden,\nwenn sie ihren Zug im Sonnenlicht beginnt.\nIm Sonnenlicht hat sie Nachteil bei Angriffswürfen\nund Fertigkeitsproben."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Apophisis führt zwei Angriffe aus, einen\nmit ihrem Biss und einen mit ihren Klauen."
+    },
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 zum Treffen, Reichweite 1,5 m.,\neine Kreatur. Treffer: 8 (2d4 + 3) Schnittschaden. Anstatt\nSchaden zu verursachen, kann Apophisis das\nZiel festhalten (Befreiung DC 13)."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 zum Treffen, Reichweite 1,5 m., eine\nwillige Kreatur oder eine Kreatur, die von\nApophisis im Schwitzkasten gehalten, handlungsunfähig oder gefesselt ist. Treffer: 6 (1d6 +\n3) Durchbohrungsschaden plus 7 (2d6) nekrotischer Schaden. Die\nmaximalen Trefferpunkte des Ziels werden um einen Wert\nverringert, der dem erlittenen nekrotischen Schaden entspricht, und Apophisis\nerhält Trefferpunkte in Höhe dieses Wertes zurück. Die Verringerung\ndauert an, bis das Ziel eine lange Ruhepause beendet hat. Das Ziel\nstirbt, wenn dieser Effekt seine maximalen Trefferpunkte auf 0 reduziert."
+    }
+  ],
+  "source": "creature"
+}

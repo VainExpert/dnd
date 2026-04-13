@@ -1,0 +1,59 @@
+{
+  "name": "Prehistoric Beaver",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 15,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 40
+  },
+  "abilities": {
+    "str": 20,
+    "dex": 12,
+    "con": 17,
+    "int": 3,
+    "wis": 11,
+    "cha": 5
+  },
+  "skills": {
+    "Survival": 2
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Hold Breath",
+      "text": "The armor-plated beaver can hold its breath for up to 20\nminutes."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "The prehistoric beaver deals double damage to objects\nand structures."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 27 (4d10\n+ 5) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

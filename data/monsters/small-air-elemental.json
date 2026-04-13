@@ -1,0 +1,58 @@
+{
+  "name": "Small Air Elemental",
+  "size": "Small",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "small",
+      "elemental",
+      "cr1/2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 19,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 14,
+    "int": 6,
+    "wis": 10,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "Auran"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Air Form",
+      "text": "The elemental can enter a hostile\ncreature's space and stop there. It can move\nthrough a space as narrow as 1 inch wide without\nsqueezing."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5ft.,\none target. Hit: 7 (1d8 + 3) bludgeoning damage."
+    },
+    {
+      "name": "Whirlwind. (Recharge 6)",
+      "type": "special",
+      "text": "Each creature in the\nelemental's space must make a DC 11 Strength\nsaving throw. On a failure, a target takes 5 (1d8 +\n1) bludgeoning damage and is flung up 10 feet\naway from the elemental in a random direction and\nknocked prone. If a thrown target strikes an object,\nsuch as a·wall or floor, the target takes 3 (1d6)\nbludgeoning damage. If the target is thrown at\nanother creature, that creature must succeed on a\nDC 11 Dexterity saving throw or take the same\ndamage and be knocked prone.\n\nIf the saving throw is successful, the target takes\nhalf the bludgeoning damage and isn't flung away\nor knocked prone."
+    }
+  ],
+  "source": "creature"
+}

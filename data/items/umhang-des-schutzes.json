@@ -1,0 +1,46 @@
+{
+  "id": "umhang-des-schutzes",
+  "type": "item",
+  "name": "Umhang des Schutzes",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "head",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 400,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diesen Umhang trägst, erhältst du einen Bonus von +1 auf deine RK und deine Rettungswürfe.",
+  "tags": [
+    "magisch",
+    "umhang",
+    "bonus",
+    "rüstungsklasse",
+    "rk",
+    "rettungswürfe"
+  ]
+}

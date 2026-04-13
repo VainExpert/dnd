@@ -1,0 +1,56 @@
+{
+  "name": "Crimson Basilisk",
+  "size": "Medium",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr4",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 67,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 16,
+    "int": 2,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 5
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Blood Frenzy",
+      "text": "The crimson basilisk has advantage on attack rolls\nagainst any creature that doesn’t have all its hit points."
+    },
+    {
+      "name": "Wounding Gaze",
+      "text": "If a target starts its turn within 30 feet of the basilisk\nand the two of them can see each other, the basilisk can force the target to\nmake a DC 12 Constitution saving throw if the basilisk isn’t incapacitated.\nOn a failed save, the target takes 7 (2d6) necrotic damage as blood weeps\nfrom the victim’s eyes, ears, nose, and mouth. It must repeat the saving\nthrow at the end of its next turn. On a success, the effect ends. On a failure,\nthe target takes an additional 7 (2d6) necrotic damage and will continue\nto take recurring damage at the end of each of its turns (without further\nchance to save) unless the basilisk is incapacitated or the effect is ended\nby the greater restoration spell or other magic.\n\nA creature that isn’t surprised can avert its eyes to avoid the saving\nthrow at the start of its turn. If it does so, it can’t see the creature until\nthe start of its next turn, when it can avert its eyes again. If it looks at the\nbasilisk in the meantime, it must immediately make the save."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6\n+ 3) piercing damage and 7 (2d6) acid damage. In addition, nonmagical\narmor or a shield being worn or carried is partly dissolved and takes a\npermanent and cumulative –1 penalty to the AC it offers. Armor reduced\nto an AC of 10 or a shield that drops to a +0 bonus is destroyed."
+    }
+  ],
+  "source": "creature"
+}

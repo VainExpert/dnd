@@ -1,0 +1,19 @@
+{
+  "id": "dauerhafte-flamme",
+  "name": "Dauerhafte Flamme",
+  "level": 2,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G, M (Rubinstaub im Wert von mind. 50 GM)",
+  "duration": "Bis Zauber gebannt wird",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Kleriker",
+    "Hexemeister",
+    "Magier"
+  ],
+  "text": "Eine Flamme, etwa so hell wie eine Fackel, entspringt einem Gegenstand, den du berührst.\nDer Effekt sieht aus wie eine gewöhnliche Flamme, erzeugt jedoch keine Hitze und verbraucht keinen Sauerstoff.\nEine Dauerhafte Flamme kann verdeckt oder verborgen, aber nicht erstickt oder gelöscht werden."
+}

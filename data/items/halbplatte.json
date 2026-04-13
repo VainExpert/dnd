@@ -1,0 +1,52 @@
+{
+  "id": "halbplatte",
+  "type": "item",
+  "name": "Halbplatte",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 20,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 750,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": {
+    "base": 15,
+    "dex_bonus": true,
+    "max": 2,
+    "stealth_disadvantage": true,
+    "type": "mittel"
+  },
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Die Halbplatte bietet einen hervorragenden Schutz für den Oberkörper, die Schultern und die Arme. Für die Beine bietet sie nur einfachen Lederschutz.",
+  "tags": [
+    "abenteuer",
+    "rüstung",
+    "abwehr",
+    "mittel",
+    "heimlichkeit_nachteil",
+    "schmied"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "Bowing Bird",
+  "size": "Medium",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr1/8",
+      "homebrew"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 12,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 14,
+    "con": 12,
+    "int": 5,
+    "wis": 15,
+    "cha": 9
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "understands simple words in Common",
+    "but can't speak"
+  ],
+  "challenge": {
+    "cr": "1/8",
+    "xp": 25,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Keen Sight",
+      "text": "The bird has advantage on Wisdom\n(Perception) checks that rely on sight."
+    },
+    {
+      "name": "Natural Decorum",
+      "text": "Creatures of Small size or larger\nthat the bird can see that move to within 5 feet of\nthe bird without first bowing to it (or performing\nsome analogous gesture, if unable to bow) provoke\nan attack of opportunity from the bird."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bill",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one\ntarget. Hit: 3 (1d4 + 1) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

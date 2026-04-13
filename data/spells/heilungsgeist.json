@@ -1,0 +1,17 @@
+{
+  "id": "heilungsgeist",
+  "name": "Heilungsgeist",
+  "level": 2,
+  "school": "Beschwörung",
+  "casting_time": "1 Bonus Aktion",
+  "range": "18 m",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Waldläufer"
+  ],
+  "text": "Du rufst einen Naturgeist, der in einem sichtbaren 1,5 m Würfel in Reichweite erscheint (als durchscheinendes Tier oder Feenwesen).\nBis der Zauber endet: Wenn du oder eine Kreatur, die du sehen kannst, den Geist-Raum zum ersten Mal in einem Zug betritt oder ihren Zug dort beginnt, kannst du sie ohne Aktion um 1W6 TP heilen (Konstrukte und Untote können nicht geheilt werden).\nAls Bonusaktion kannst du den Geist in deinem Zug bis zu 9 m bewegen.\nDer Geist kann insgesamt (1 + deinen Zauberwirken-Modifikator) Mal heilen (mindestens 2 Mal); danach verschwindet er.\n\nAuf höheren Level gewirkt: pro Level +1W6 Heilung."
+}

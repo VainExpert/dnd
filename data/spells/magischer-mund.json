@@ -1,0 +1,18 @@
+{
+  "id": "magischer-mund",
+  "name": "Magischer Mund",
+  "level": 2,
+  "school": "Illusionsmagie",
+  "casting_time": "1 min",
+  "range": "9 m",
+  "components": "V, G, M (Honigwabe und Jadestaub im Wert von 10 GM)",
+  "duration": "Bis Zauber gebannt wird",
+  "concentration": false,
+  "ritual": true,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Magier"
+  ],
+  "text": "Du implantierst eine Botschaft in einen Gegenstand in Reichweite. Diese Nachricht wird bei einer bestimmten Auslösebedingung ausgesprochen.\nWähle einen Gegenstand, den du sehen kannst und der nicht von einer anderen Kreatur getragen oder gehalten wird. Sprich deine Nachricht von maximal 25 Wörtern. Sie kann über einen Zeitraum von 10 min übermittelt werden. Bestimme dann den Umstand, der den Zauber auslöst und deine Nachricht übermittelt.\nTritt der Umstand ein, erscheint ein magischer Mund auf den Gegenstand und spricht die Botschaft in deiner Stimme und in derselben Lautstärke.\nDie Nachricht kann einmal oder wiederholend gesprochen werden."
+}

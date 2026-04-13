@@ -1,0 +1,67 @@
+{
+  "name": "Gug",
+  "size": "Huge",
+  "type": {
+    "type": "giant",
+    "tags": [
+      "huge",
+      "giant",
+      "cr12",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 17,
+  "hp": {
+    "average": 270,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 24,
+    "dex": 10,
+    "con": 25,
+    "int": 10,
+    "wis": 8,
+    "cha": 14
+  },
+  "skills": {
+    "Athletics": 11,
+    "Perception": 3,
+    "Stealth": 4
+  },
+  "languages": [
+    "Deep Speech",
+    "Giant",
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "12",
+    "xp": 8400,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Towering Strength",
+      "text": "A gug can lift items up to 4,000 pounds as a bonus action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The gug makes two slam attacks, two stomp attacks, or one of each."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 10 ft., one creature. Hit: 16 (2d8 + 7) bludgeoning damage. If a creature is hit by this attack twice in the same turn, the target must make a successful DC 19 Constitution saving throw or gain one level of exhaustion."
+    },
+    {
+      "name": "Stomp",
+      "type": "special",
+      "text": "Melee Weapon Attack. +11 to hit, reach 10 ft. Hit: 20 (2d12 + 7) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

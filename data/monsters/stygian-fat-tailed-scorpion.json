@@ -1,0 +1,58 @@
+{
+  "name": "Stygian Fat-Tailed Scorpion",
+  "size": "Tiny",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "tiny",
+      "beast",
+      "cr3",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 10,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 3,
+    "dex": 16,
+    "con": 10,
+    "int": 1,
+    "wis": 10,
+    "cha": 2
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The scorpion makes three attacks: two with its claws and one with its sting."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 bludgeoning damage."
+    },
+    {
+      "name": "Sting",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage, plus 21 (6d6) poison damage and the target is poisoned until it completes a short or long rest. A successful DC 10 Constitution saving throw reduces the poison damage to half and prevents the poisoned condition. If the target fails this saving throw while already poisoned, it gains one level of exhaustion in addition to the other effects."
+    }
+  ],
+  "source": "creature"
+}

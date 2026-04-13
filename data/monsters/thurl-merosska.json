@@ -1,0 +1,68 @@
+{
+  "name": "Thurl Merosska",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "tyranny-of-dragons",
+      "human"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 16,
+  "hp": {
+    "average": 71,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 14,
+    "int": 11,
+    "wis": 10,
+    "cha": 15
+  },
+  "skills": {
+    "Animal Handling": 2,
+    "Athletics": 5,
+    "Deception": 4,
+    "Persuasion": 4
+  },
+  "languages": [
+    "Auran",
+    "Common"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "text": "Thurl is a 5th-level spellcaster. His spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). Thurl knows the following sorcerer spells:\n\n* Cantrips (at will): <i>friends, gust, light, message, ray of frost</i>\n\n* 1st level (4 slots): <i>expeditious retreat, feather fall, jump</i>\n\n* 2nd level (3 slots): <i>levitate, misty step</i>\n\n* 3rd level (2 slots): <i>haste</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Thurl makes two melee attacks."
+    },
+    {
+      "name": "Greatsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
+    },
+    {
+      "name": "Lance",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 9 (1d12 + 3) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

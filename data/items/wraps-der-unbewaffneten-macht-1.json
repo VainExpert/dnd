@@ -1,0 +1,44 @@
+{
+  "id": "wraps-der-unbewaffneten-macht-1",
+  "type": "item",
+  "name": "Wraps der unbewaffneten Macht, +1",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 350,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn diese Wraps getragen werden, hast du einen +1 Bonus auf Angriffs- und Schadenswürfe mit dem unbewaffneten Angriff. Der Schaden ist entweder Kraftschaden oder der normale Schaden.",
+  "tags": [
+    "magisch",
+    "waffe",
+    "kampf",
+    "bonus"
+  ]
+}

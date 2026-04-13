@@ -1,0 +1,50 @@
+{
+  "id": "wurfspeer-des-blitzes",
+  "type": "item",
+  "name": "Wurfspeer des Blitzes",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "Wurfspeer",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 400,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": 1,
+    "recharge": "Morgen"
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Wurfspeer ist eine magische Waffe. Wenn du ihn wirfst und dabei sein Befehlswort aussprichst, verwandelt er sich in einen 1,5 m breiten Blitz in Form einer Linie, die sich von dir bis zu einem Ziel im Abstand von bis zu 36 m erstreckt. Jede Kreatur im Bereich der Linie außer dir und dem Ziel muss einen SG-13 DEX-Rettungswurf bestehen. Scheitert der Wurf, erleidet die Kreatur 4W6 Blitzschaden, anderenfalls die Hälfte. Der Blitz wird wieder zu einem Wurfspeer, wenn er das Ziel erreicht. Führe einen Fernkampfwaffenangriff gegen das Ziel aus. Bei einem Treffer erleidet das Ziel Schaden durch den Wurfspeer und 4W6 Blitzschaden. Die Eigenschaft des Wurfspeers kann erst im nächsten Morgengrauen wiederverwendet werden. In der Zwischenzeit kann der Wurfspeer jedoch weiter als magische Waffe verwendet werden.",
+  "tags": [
+    "magisch",
+    "waffe",
+    "wurfspeer",
+    "blitz",
+    "dex",
+    "aktion",
+    "kampf",
+    "geworfen",
+    "reichweite",
+    "befehlswort"
+  ]
+}

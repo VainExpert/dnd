@@ -1,0 +1,45 @@
+{
+  "id": "hut-der-schaedlinge",
+  "type": "item",
+  "name": "Hut der Schädlinge",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "head",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Der Hut hat 3 Ladungen. Wenn der Hut getragen wird, kann mit einer Aktion eine Ladung verwendet werden, um eine Fledermaus, einen Frosch oder eine Ratte zu beschwören. Das Tier erscheint magisch im Hut und möchte so schnell wie möglich so weit wie möglich von dir weg. Das Tier ist nicht unter deiner Kontrolle und verhält sich normal. Es hält für 1 h oder bis es auf 0 TP fällt. Der Hut bekommt alle Ladungen am Morgen zurück.",
+  "tags": [
+    "magisch",
+    "hut",
+    "beschwörung",
+    "ladungen",
+    "aktion"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "kinetische-bewegung",
+  "name": "Kinetische Bewegung",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Bonus Aktion",
+  "range": "Selbst",
+  "components": "G",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Bard",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du verstärkst deine Bewegung magisch mit einem der folgenden Effekte:\n\n * Deine Bewegungsgeschwindigkeit steigt um 3 m.\n\n * Du provozierst keine Gelegenheitsangriffe.\n\n * Du kannst normal durch den Bereich einer anderen Kreatur gehen. Wenn du deinen Zug im Bereich einer anderen Kreatur beendest, wirst du zur letzten freien Stelle gestoßen und nimmst 1W8 Energieschaden."
+}

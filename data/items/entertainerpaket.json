@@ -1,0 +1,43 @@
+{
+  "id": "entertainerpaket",
+  "type": "item",
+  "name": "Entertainerpaket",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 29.25,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 40,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Das Paket enthält: Rucksack Schlafsack Glocke Bullaugen-Laterne 3 Kostüme Spiegel 8 Flaschen Öl 9 Rationen Zunderkästchen Wasserschlauch Verkleidungsset",
+  "tags": [
+    "abenteuer",
+    "paket",
+    "start"
+  ]
+}

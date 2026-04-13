@@ -1,0 +1,45 @@
+{
+  "id": "gegengift",
+  "type": "item",
+  "name": "Gegengift",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "potion",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Kann als Bonus Aktion getrunken werden und gibt Vorteil gegen Vergiftet (bekommen oder beenden) für 1 h nach Einnahme.",
+  "tags": [
+    "abenteuer",
+    "heilung",
+    "nützlich",
+    "konsumiert",
+    "trank"
+  ]
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Spieler</title>
+  <link rel="stylesheet" href="../../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title" id="title">Spieler-Charakter</div>
+      <div class="subtitle"><a href="./pcs.html">← Zurück zu allen Spieler-Charakteren</a> • <a href="../../index.html">Startseite</a></div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="content" style="max-width:900px;">
+      <div id="view"></div>
+    </div>
+  </main>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany, fmtSigned, mod, linkifyRefs, normalizePc, entityLinkHtml } from "../../lib.js";
+
+    const view = document.getElementById("view");
+    const titleEl = document.getElementById("title");
+    const id = new URLSearchParams(location.search).get("id");
+
+    if (!id) {
+      view.innerHTML = "<p>Fehlende SC-ID.</p>";
+      throw new Error("Fehlende SC-ID");
+    }
+
+    const cacheMode = (location.hostname === "localhost" || location.hostname === "127.0.0.1") ? "no-cache" : "force-cache";
+
+    async function fetchJson(url){
+      const r = await fetch(url, { cache: cacheMode });
+      if (!r.ok) throw new Error(`HTTP ${r.status} for ${url}`);
+      return r.json();
+    }
+
+    async function loadPc(){
+      try {
+        return await fetchJson(`../../data/pcs/${encodeURIComponent(id)}.json`);
+      } catch {}
+
+      const files = await loadIndex("../../data/pcs/index.json").catch(() => []);
+      const pcs = await loadMany("../../data/pcs", files).catch(() => []);
+      const key = id.toLowerCase();
+      return pcs.find(p => String(p.id || "").toLowerCase() === key) ||
+             pcs.find(p => String(p.name || "").toLowerCase() === key) ||
+             null;
+    }
+
+    const p = normalizePc(await loadPc());
+    if (!p) {
+      view.innerHTML = `<p>SC nicht gefunden: <code>${escapeHtml(id)}</code></p>`;
+      throw new Error("SC nicht gefunden");
+    }
+
+    titleEl.textContent = p.name || "SC";
+
+    const subtitle = [p.race, p.class, p.subclass ? `(${p.subclass})` : null, p.level ? `Lv ${p.level}` : null]
+      .filter(Boolean).join(" • ");
+
+    const portrait = p.portrait
+      ? `<img src="${escapeHtml(p.portrait)}" alt="${escapeHtml(p.name || "SC")}" style="width:180px;height:220px;object-fit:cover;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.25);" />`
+      : "";
+
+    const ab = p.abilities || {};
+    const showAbilities = ["str","dex","con","int","wis","cha"].some(k => ab?.[k] != null);
+    const spellSections = Array.isArray(p.spell_sections) ? p.spell_sections.filter(section => Array.isArray(section?.refs) && section.refs.length) : [];
+    const itemSections = Array.isArray(p.item_sections) ? p.item_sections.filter(section => Array.isArray(section?.refs) && section.refs.length) : [];
+
+    function renderRefList(kind, refs, base){
+      return refs.map(ref => `<li>${entityLinkHtml(kind, ref, { base })}</li>`).join("");
+    }
+
+    function renderSectionList(kind, sections, base){
+      return sections.map(section => `
+        <div style="margin-bottom:10px;">
+          <div><b>${escapeHtml(section.label || kind)}</b></div>
+          <ul>
+            ${renderRefList(kind, section.refs || [], base)}
+          </ul>
+          ${(section.notes && section.notes.length) ? `<div class="muted">${escapeHtml(section.notes.join(" "))}</div>` : ""}
+        </div>
+      `).join("");
+    }
+
+    view.innerHTML = `
+      <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;">
+        ${portrait}
+        <div style="flex:1;min-width:260px;">
+          <h1 style="margin:0;">${escapeHtml(p.name)}</h1>
+          <p class="muted" style="margin:6px 0 0 0;">${escapeHtml(subtitle || (p.player ? `Spieler: ${p.player}` : ""))}</p>
+
+          <div class="mini-box" style="margin-top:12px;">
+            <div class="mini-box-title">Werte</div>
+            <div class="mini-box-text">
+              ${p.ac != null ? `<div><b>AC:</b> ${escapeHtml(p.ac)}</div>` : ""}
+              ${p.hp != null ? `<div><b>HP:</b> ${escapeHtml(p.hp)}</div>` : ""}
+              ${p.speed != null ? `<div><b>Bewegung:</b> ${escapeHtml(p.speed)}</div>` : ""}
+              ${p.player ? `<div><b>Spieler:</b> ${escapeHtml(p.player)}</div>` : ""}
+            </div>
+          </div>
+
+          ${showAbilities ? `
+            <div class="mini-box" style="margin-top:12px;">
+              <div class="mini-box-title">Attribute</div>
+              <div class="mini-box-text">
+                <div>
+                  <b>STR</b> ${ab.str ?? "—"} (${fmtSigned(mod(ab.str ?? 10))}) •
+                  <b>DEX</b> ${ab.dex ?? "—"} (${fmtSigned(mod(ab.dex ?? 10))}) •
+                  <b>CON</b> ${ab.con ?? "—"} (${fmtSigned(mod(ab.con ?? 10))}) •
+                  <b>INT</b> ${ab.int ?? "—"} (${fmtSigned(mod(ab.int ?? 10))}) •
+                  <b>WIS</b> ${ab.wis ?? "—"} (${fmtSigned(mod(ab.wis ?? 10))}) •
+                  <b>CHA</b> ${ab.cha ?? "—"} (${fmtSigned(mod(ab.cha ?? 10))})
+                </div>
+              </div>
+            </div>
+          ` : ""}
+
+          ${spellSections.length ? `
+            <div class="mini-box" style="margin-top:12px;">
+              <div class="mini-box-title">Zauber</div>
+              <div class="mini-box-text">
+                ${renderSectionList("spell", spellSections, "../zauber/")}
+              </div>
+            </div>
+          ` : ""}
+
+          ${itemSections.length ? `
+            <div class="mini-box" style="margin-top:12px;">
+              <div class="mini-box-title">Gegenstände</div>
+              <div class="mini-box-text">
+                ${renderSectionList("item", itemSections, "../items/")}
+              </div>
+            </div>
+          ` : ""}
+
+          ${p.notes ? `
+            <div class="mini-box" style="margin-top:12px;">
+              <div class="mini-box-title">Notizen</div>
+              <div class="mini-box-text">${linkifyRefs(p.notes, { base: "./" })}</div>
+            </div>
+          ` : ""}
+        </div>
+      </div>
+    `;
+  </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "name": "Warhorse Skeleton",
+  "size": "Large",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "large",
+      "undead",
+      "cr1/2",
+      "monster-manual"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 13,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 15,
+    "int": 2,
+    "wis": 8,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Hooves",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

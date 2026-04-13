@@ -1,0 +1,64 @@
+{
+  "name": "Cave Goblin",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr1/2",
+      "nerzugals-extended-bestiary",
+      "goblinoid"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 16,
+  "hp": {
+    "average": 14,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 11,
+    "int": 10,
+    "wis": 11,
+    "cha": 5
+  },
+  "skills": {
+    "Perception": 2
+  },
+  "languages": [
+    "Common",
+    "Goblin"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Moss Covered",
+      "text": "The goblin has advantage when on\nDexterity (Stealth) checks made to hide in rocky or\ncavernous terrain."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the goblin has\ndisadvantage on attack rolls as well as on Wisdom\n(Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Sharpened Stalagmite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to\nhit, reach 5ft., one target. Hit: 6 (1d8 + 2) piercing\ndamage."
+    },
+    {
+      "name": "Javelin",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, range\n80/320 ft., one target. Hit: 5 (1d6 + 2) piercing\ndamage."
+    }
+  ],
+  "source": "creature"
+}

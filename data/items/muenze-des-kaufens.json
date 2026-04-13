@@ -1,0 +1,43 @@
+{
+  "id": "muenze-des-kaufens",
+  "type": "item",
+  "name": "Münze des Kaufens",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1,
+    "currency": "cp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein Kupfermünze, die, wenn sie vor einem Händler geworfen wird, magisch bis zu 5W10 % Rabatt bei diesem Händler einbringt.",
+  "tags": [
+    "magisch",
+    "münze",
+    "kaufen"
+  ]
+}

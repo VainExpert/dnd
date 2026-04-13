@@ -1,0 +1,44 @@
+{
+  "id": "schiff-reparatur",
+  "type": "item",
+  "name": "Schiffreparatur",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 20,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Preis pro 1 TP Schaden und braucht 1 Tag um zu reparieren. In Großstädten wird Zeit und Preis halbiert, wenn genügend Handwerker zur Verfügung stehen.",
+  "tags": [
+    "abenteuer",
+    "reise",
+    "transport",
+    "reparatur"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "name": "Felidar",
+  "size": "Large",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "large",
+      "celestial",
+      "cr5",
+      "homebrew"
+    ]
+  },
+  "alignment": "lawful good",
+  "ac": 12,
+  "hp": {
+    "average": 67,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 15,
+    "int": 11,
+    "wis": 17,
+    "cha": 16
+  },
+  "skills": {},
+  "languages": [
+    "Celestial",
+    "telepathy 60 ft."
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Pounce",
+      "text": "If the felidar moves at least 20 feet straight toward a creature\nand then hits it with a claws attack on the same turn, the target must\nsucceed on a DC 15 Strength saving throw or be knocked prone. If\nthe target is prone, the felidar can make one bite attack against it as a\nbonus action."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The felidar’s innate spellcasting ability is Charisma\n(spell save DC 14). The felidar can innately cast the following spells,\nrequiring no components:\n\n* At will: <i>detect evil and good, light, thaumaturgy</i>\n\n* 1/day each: <i>calm emotions, daylight, dispel evil and good</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The felidar has advantage on saving throws against\nspells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The felidar’s weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The felidar makes two attacks with its claws."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11\n(2d6 + 4) slashing damage."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
+    },
+    {
+      "name": "Healing Touch (3/Day)",
+      "type": "special",
+      "text": "The felidar touches another creature with its\nhorns. The target magically regains 11 (2d8 + 2) hit points. In addition,\nthe touch removes all diseases and neutralizes all poisons afflicting\nthe target."
+    },
+    {
+      "name": "Teleport (1/Day)",
+      "type": "special",
+      "text": "The felidar magically teleports itself and up to three\nwilling creatures it can see within 5 feet of it, along with any equipment\nthey are wearing or carrying, to a location the felidar is familiar with, up\nto 1 mile away."
+    }
+  ],
+  "source": "creature"
+}

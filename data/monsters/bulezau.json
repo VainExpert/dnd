@@ -1,0 +1,55 @@
+{
+  "name": "Bulezau",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr3",
+      "mordenkainens-tome-of-foes",
+      "demon"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 14,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 14,
+    "con": 17,
+    "int": 8,
+    "wis": 9,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "Abyssal",
+    "telepathy 60 ft."
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Rotting Presence",
+      "text": "When any creature that isn't a demon starts its turn within 30 feet one or more bulezaus, that creature must succeed on a DC 13 Constitution saving throw or take 1d6 necrotic damage plus 1 necrotic damage for each bulezau within 30 feet of it."
+    },
+    {
+      "name": "Standing Leap",
+      "text": "The bulezau's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
+    },
+    {
+      "name": "Sure-Footed",
+      "text": "The bulezau has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

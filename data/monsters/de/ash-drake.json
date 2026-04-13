@@ -1,0 +1,71 @@
+{
+  "name": "Ash Drake",
+  "size": "Klein",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "small",
+      "dragon",
+      "cr4",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 16,
+  "hp": {
+    "average": 117,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 15,
+    "con": 16,
+    "int": 9,
+    "wis": 15,
+    "cha": 10
+  },
+  "skills": {
+    "Stealth": 4
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "4",
+    "xp": 1100,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Aschdrache führt einen Bissangriff und zwei Klauenangriffe aus."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 9 (2d6 + 2) Durchdringungsschaden + 3 (1d6) Feuerschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 9 (2d6 + 2) Schnittschaden."
+    },
+    {
+      "name": "Aschewolke",
+      "type": "special",
+      "text": "Ein Aschdrache kann mit den Flügeln schlagen und eine Aschewolke erzeugen, die sich von ihm ausgehend in alle Richtungen10 feet ausbreitet. Diese Wolke bietet halbe Deckung, wobei der Aschdrache durch seine eigene Wolke hindurch normal sehen kann. Jede Kreatur, die die Wolke betritt oder ihren Zug in der Wolke beginnt, muss einenDC 14Konstitutions-Rettungswurf bestehen, sonst ist sie für1d6  Runden geblendet."
+    },
+    {
+      "name": "Ascheatem (Aufladen 6)",
+      "type": "special",
+      "text": "Ein Asche-Drachenmann speit einen 20 Fuß breiten Kegel glühend heißer, erstickender Asche aus. Alle Ziele, die sich im Weg dieses Strahls befinden, erleiden 14 (4d6) Feuerschaden und werden für eine Minute vergiftet; ein erfolgreicherDC 13Geschicklichkeits-Rettungswurf halbiert den Schaden und hebt die Vergiftung auf. Eine vergiftete Kreatur wiederholt den Rettungswurf am Ende jedes ihrer Züge und beendet den Effekt auf sich selbst mit einem erfolgreichen Rettungswurf."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "zerbersten",
+  "name": "Zerbersten",
+  "level": 2,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, G, M (Mica-Splitter)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Von einem Punkt deiner Wahl in Reichwiete geht ein lautes klingelndes Geräusch aus.\nAlle Kreaturen in einem 3 m Radius des Punktes müssen einen CON-Rettungswurf ausführen.\nBei Fehlschlag erleiden die Wesen 3W8 Schallschaden, sonst die Hälfte.\nKreaturen aus anorganischem Material sind beim Rettungswurf im Nachteil.\nNichtmagische Objekte, die nicht getragen werden, erleiden innerhalb des Bereichs den gleichen Schaden.\n\nAuf höheren Level gewirkt: pro Level 1W8 mehr Schaden"
+}

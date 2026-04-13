@@ -1,0 +1,103 @@
+{
+  "name": "Orcus, Demon Prince of the Undead",
+  "size": "Huge",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "huge",
+      "fiend",
+      "cr35",
+      "tome-of-horrors",
+      "demon lord"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 25,
+  "hp": {
+    "average": 825,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 30,
+    "dex": 21,
+    "con": 30,
+    "int": 27,
+    "wis": 27,
+    "cha": 30
+  },
+  "skills": {
+    "History": 18,
+    "Perception": 18,
+    "Religion": 18
+  },
+  "languages": [
+    "all",
+    "telepathy 360 ft."
+  ],
+  "challenge": {
+    "cr": "35",
+    "proficiency_bonus": 10
+  },
+  "traits": [
+    {
+      "name": "Special equipment",
+      "text": "Orcus wields its iconic rod, the Wand of Orcus."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "Orcus’s spellcasting ability is Charisma\n(spell save DC 28, +20 to hit with spell attacks). Orcus can\ninnately cast the following spells, requiring no material\ncomponents:\n\n* At will: <i>animate dead, chill touch </i>(17th level)<i>, detect magic</i>\n\n* 7/day: <i>create undead</i>\n\n* 5/day: <i>eyebite</i>\n\n* 3/day each: <i>circle of death, finger of death</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "text": "If Orcus fails a saving throw, it\ncan choose to succeed instead."
+    },
+    {
+      "name": "Lord of the Grave",
+      "text": "Orcus always casts animate dead or create undead at maximum level and without any restrictions. Creatures created by these spells remain under its control\nindefinitely."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "Orcus has advantage on saving throws against spells\nand other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "Orcus’s attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Orcus makes two Wand of Orcus attacks."
+    },
+    {
+      "name": "Wand of Orcus",
+      "type": "special",
+      "text": "Melee Weapon Attack: +20 to hit, reach 5 ft., one\ntarget. Hit: 24 (4d6 + 10) bludgeoning damage and the target must make\na DC 17 Charisma saving throw, dropping to 0 hit points on failure, or, on\na success, the target takes 21 (6d6) necrotic damage."
+    },
+    {
+      "name": "Tail",
+      "type": "special",
+      "text": "Melee Weapon Attack: +20 to hit, reach 5 ft., one target. Hit: 24 (4d6 + 10) piercing damage plus 22 (4d10) poison damage."
+    },
+    {
+      "name": "Aura of Death",
+      "type": "special",
+      "text": "Each non-undead creature that starts its turn within 20\nfeet of Orcus takes 17 (5d6) necrotic damage."
+    },
+    {
+      "name": "Aura of Enfeeblement (Recharge 5–6)",
+      "type": "special",
+      "text": "Black beams of negative\nenergy surround Orcus in a 20-foot radius centered on it. Each creature in\nthis area must make a DC 24 Constitution saving throw. On a failure, the\ntarget deals only half damage with weapon attacks that use Strength for 1\nminute. A weakened target can repeat the saving throw at the end of each\nof its turns, ending the effect on itself on a success. If a target’s saving\nthrow is successful or the effect ends for it, the target is immune to Orcus’s Aura of Enfeeblement for the next 24 hours."
+    },
+    {
+      "name": "Teleport",
+      "type": "special",
+      "text": "Orcus magically teleports, along with any equipment it is\nwearing or carrying, up to 120 feet to an unoccupied space it can see."
+    }
+  ],
+  "source": "creature"
+}

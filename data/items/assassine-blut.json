@@ -1,0 +1,47 @@
+{
+  "id": "assassinen-blut",
+  "type": "item",
+  "name": "Assassinen Blut",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 150,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Eine Kreatur die das Gift eingenommen hat muss einen CON-Rettungswurf schaffen. Bei Fehlschlag nimmt sie 1W12 Giftschaden und wird für 24 h vergiftet. Bei Erfolg nimmt sie nur die Hälfte an Schaden und wird nicht vergiftet.",
+  "tags": [
+    "gift",
+    "schaden",
+    "schwarzmarkt",
+    "kampf",
+    "einnahme",
+    "konsumiert",
+    "nützlich"
+  ]
+}

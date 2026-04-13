@@ -1,0 +1,17 @@
+{
+  "id": "magierruestung",
+  "name": "Magierrüstung",
+  "level": 1,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G, M (Stück gegerbtes Leder)",
+  "duration": "8 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du berührst eine willige Kreatur, die keine Rüstung trägt.\nSie wird von schützender magischer Energie umgeben, bis der Zauber endet.\nSeine RK wird zu 13 + sein DEX-Modifikator.\nDer Zauber endet verfrüht, wenn das Ziel eine Rüstung anlegt oder du den Zauber als Aktion beendest."
+}

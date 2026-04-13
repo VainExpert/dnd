@@ -1,0 +1,139 @@
+{
+  "id": "ladrian-smoke",
+  "name": "Ladrian Smoke",
+  "aliases": [],
+  "source_file": "LadrianSmoke.monster",
+  "kind": "monster",
+  "npc": true,
+  "size": "Medium",
+  "creature_type": "humanoid",
+  "subtype": "Red Dragonborn",
+  "alignment": "lawful evil",
+  "armor_class": {
+    "value": 20,
+    "display": "20 (plate, shield)"
+  },
+  "hit_points": {
+    "average": 105,
+    "formula": "10d8 + 40"
+  },
+  "speed": {
+    "walk": "30 ft."
+  },
+  "abilities": {
+    "str": {
+      "score": 20,
+      "mod": 5
+    },
+    "dex": {
+      "score": 12,
+      "mod": 1
+    },
+    "con": {
+      "score": 18,
+      "mod": 4
+    },
+    "int": {
+      "score": 8,
+      "mod": -1
+    },
+    "wis": {
+      "score": 12,
+      "mod": 1
+    },
+    "cha": {
+      "score": 16,
+      "mod": 3
+    }
+  },
+  "saving_throws": {
+    "str": 9,
+    "con": 8
+  },
+  "skills": {
+    "athletics": 9,
+    "intimidation": 7
+  },
+  "damage_resistances": [],
+  "damage_immunities": [
+    {
+      "name": "fire",
+      "note": "(Immune)"
+    }
+  ],
+  "damage_vulnerabilities": [],
+  "special_damage_defenses": [],
+  "condition_immunities": [
+    "frightened"
+  ],
+  "senses": {
+    "passive_perception": 11
+  },
+  "languages": {
+    "speaks": [
+      "Common",
+      "Draconic",
+      "Infernal"
+    ],
+    "understands": []
+  },
+  "challenge_rating": "10",
+  "xp": 5900,
+  "proficiency_bonus": 4,
+  "traits": [
+    {
+      "name": "Legendary Resistance (1/day)",
+      "text": "If Ladrian fals a saving throw, he can chosse to succeed it instead."
+    },
+    {
+      "name": "Second Wind (1/day)",
+      "text": "Ladrian gathers his stamina and regains 1d10 + 4 hit points."
+    },
+    {
+      "name": "Action Surge (1/day)",
+      "text": "Ladrian pushes his body to the limits and can make 1 extra action this turn."
+    },
+    {
+      "name": "Leadership (1/day)",
+      "text": "For 1 min, Ladrian utters a special command or warning a nonhostile creature that he can see within 9 m of it makes an attack roll or a saving throw. The creature can add a d6 to its roll provided it can hear him. This effect ends if the knight is _incapacitated_."
+    }
+  ],
+  "spellcasting": [],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "text": "Ladrian makes two attacks."
+    },
+    {
+      "name": "Longsword, +1",
+      "text": "_Melee Weapon Attack:_ +10 to hit, reach 1,5 m, one target. _Hit:_ 1d8 + 7 slashing damage"
+    },
+    {
+      "name": "Fire Breath (Recharge 6)",
+      "text": "Ladrian exhales fire in a 9 m cone. Each creature in that area must make a DC 15 DEX saving throw. On a failed save, the creature takes 3d6 fire damage, on a successful save half."
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [
+    {
+      "name": "Retreat",
+      "text": "Ladrian can shout \"Retreat\" and all his allies that can hear him wihin 18 m immediatly take their reaction, if possbile, to Disengage the combat."
+    }
+  ],
+  "legendary_actions": [],
+  "legendary_actions_per_round": 0,
+  "legendary_description": null,
+  "mythic_actions": [],
+  "lair_actions": [],
+  "regional_effects": [],
+  "display": {
+    "double_columns": true,
+    "separation_point": 2
+  },
+  "import_notes": [
+    "AC inferred from armorName, Dexterity modifier, and shieldBonus.",
+    "Ignored inconsistent customCr value \"1 (200 XP)\" and used cr \"10\".",
+    "Ignored inconsistent customProf value \"2\" and used proficiency bonus +4 from CR."
+  ],
+  "source_format": "monster builder export"
+}

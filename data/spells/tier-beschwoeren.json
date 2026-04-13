@@ -1,0 +1,17 @@
+{
+  "id": "tier-beschwoeren",
+  "name": "Tier beschwören",
+  "level": 2,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "27 m",
+  "components": "V, G, M (eine Feder, ein Fellbüschel und ein Fischschwanz in einer vergoldeten Eichel, im Wert von mind. 200 GM)",
+  "duration": "Konzentration, bis zu 1 h",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Waldläufer"
+  ],
+  "text": "Es erscheint ein Tiergeist an einer freien Stelle in Reichweite. Es nutzt die Tiergeist-Werte. Seine Gestalt ist ähnlich einem Tier aus der von dir gewählten Umwelt (Wasser, Land, Luft). Dies hat einen Einfluss auf bestimmte Eigenschaften des Tiergeistes.\nDie Kreatur verschwindet wenn seine TP auf 0 fallen oder der Zauber endet.\nDer Tiergeist ist ein Verbündeter für dich und deine Begleiter. Im Kampf hat er diesselbe Initiative wie du, ist aber immer nach dir dran. Es folgt deinen verbalen Befehlen (ohne Aktion). Ohne einen Befehl macht er immer eine Ausweichen-Aktion und vermeidet Schaden.\n\nAuf höheren Level gewirkt: pro Level bessere Werte und Eigenschaften"
+}

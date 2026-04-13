@@ -1,0 +1,63 @@
+{
+  "name": "Gulper Eel",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 112,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 15,
+    "con": 14,
+    "int": 2,
+    "wis": 12,
+    "cha": 2
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 4
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "text": "The eel has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Water Breathing",
+      "text": "The eel can only breathe underwater."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 20\n(5d6 + 3) piercing damage, and the target is grappled (escape DC 13).\n\nUntil this grapple ends, the eel can bite only the grappled creature and has\nadvantage on attack rolls to do so."
+    },
+    {
+      "name": "Swallow",
+      "type": "special",
+      "text": "The eel makes one bite attack against a Medium or smaller\ntarget it is grappling. If the attack hits, the target is swallowed, and the\ngrapple ends. The swallowed target is blinded and restrained, it has total\ncover against attacks and other effects outside the eel, and it takes 10 (3d6)\nacid damage at the start of each of the eel’s turns. The eel can have only\none target swallowed at a time.\n\nIf the eel takes 25 damage or more on a single turn from the creature\ninside of it, the eel must succeed on a DC 12 Constitution saving throw\nat the end of that turn or regurgitate the swallowed creature, which falls\nprone in a space within 10 feet of the eel. If the eel dies, a swallowed\ncreature is no longer restrained by it and can escape from the corpse using\n15 feet of movement, exiting prone."
+    }
+  ],
+  "source": "creature"
+}

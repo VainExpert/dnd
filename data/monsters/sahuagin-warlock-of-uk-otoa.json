@@ -1,0 +1,85 @@
+{
+  "name": "Sahuagin Warlock of Uk'otoa",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "explorers-guide-to-wildemount",
+      "sahuagin"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 14,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 40
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 11,
+    "int": 8,
+    "wis": 8,
+    "cha": 16
+  },
+  "skills": {
+    "Arcana": 1,
+    "Persuasion": 5
+  },
+  "languages": [
+    "Common",
+    "Sahuagin"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Blood Frenzy",
+      "text": "The warlock has advantage on melee attack rolls against any creature that doesn’t have all its hit points."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The warlock’s innate spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\n* At will: <i>eldritch blast, minor illusion</i>\n\n* 1/day each: <i>armor of Agathys, arms of Hadar, counterspell, crown of madness, invisibility, hunger of Hadar.</i>"
+    },
+    {
+      "name": "Limited Amphibiousness",
+      "text": "The warlock can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating."
+    },
+    {
+      "name": "Shark Telepathy",
+      "text": "The warlock can magically command any shark within 120 feet of it, using a limited telepathy."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The warlock makes two attacks: one with its bite and one with its Sword of Fathoms."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Sword of Fathoms",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) slashing damage, and if the target is a creature, it must succeed on a DC 13 Constitution saving throw or begin choking. The choking creature is incapacitated until the end of its next turn, when the effect ends on it."
+    },
+    {
+      "name": "Eldritch Blast (Cantrip)",
+      "type": "special",
+      "text": "Ranged Spell Attack: +5 to hit, range 120 ft., one creature. Hit: 5 (1d10) force damage."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,58 @@
+{
+  "name": "Conjurer",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr6",
+      "volos-guide",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 12,
+  "hp": {
+    "average": 40,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 9,
+    "dex": 14,
+    "con": 11,
+    "int": 17,
+    "wis": 12,
+    "cha": 11
+  },
+  "skills": {
+    "Arcana": 6,
+    "History": 6
+  },
+  "languages": [
+    "any four languages"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "text": "The conjurer is a 9th-level spellcaster. Its spellcasting ability is intelligence (spell save DC 14, +6 to hit with spell attacks). The conjurer has the following wizard spells prepared:\n\n* Cantrips (at will): <i>acid splash, mage hand, poison spray, prestidigitation</i>\n\n* 1st level (4 slots): <i>mage armor, magic missile, unseen servant\\* </i>\n\n* 2nd level (3 slots): <i>cloud of daggers\\*, misty step\\*, web\\* </i>\n\n* 3rd level (3 slots): <i>fireball, stinking cloud\\* </i>\n\n* 4th level (3 slots): <i>Evard's black tentacles\\*, stoneskin</i>\n\n* 5th level (2 slots): <i>cloudkill\\*, conjure elemental\\* </i>\n\n*Conjuration spell of 1st level or higher"
+    },
+    {
+      "name": "Benign Transportation (Recharges after the Conjurer Casts a Conjuration Spell of 1st Level or Higher)",
+      "text": "As a bonus action, the conjurer teleports up to 30 feet to an unoccupied space that it can see. If it instead chooses a space within range that is occupied by a willing Small or Medium creature, they both teleport, swapping places."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4+2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "trank-des-wachstums",
+  "type": "item",
+  "name": "Trank des Wachstums",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "potion",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 200,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diesen Trank trinkst, erhältst du 1W4 Stunden lang den Vergrößern-Effekt des Zaubers Vergrößern / Verkleinern (keine Konzentration erforderlich). Das winzige rote Zentrum dieses Tranks expandiert ständig, sodass die gesamte sonst klare Flüssigkeit rot wird und zieht sich dann wieder zusammen. Das Pulsieren wird auch durch das Schütteln der Flasche nicht unterbrochen.",
+  "tags": [
+    "magisch",
+    "konsumiert",
+    "trank",
+    "flüssigkeit",
+    "zauber",
+    "vergößern / verkleinern"
+  ]
+}

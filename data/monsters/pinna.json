@@ -1,0 +1,53 @@
+{
+  "name": "Pinna",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "neutral good",
+  "ac": 12,
+  "hp": {
+    "average": 13,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 6,
+    "dex": 8,
+    "con": 11,
+    "int": 16,
+    "wis": 12,
+    "cha": 15
+  },
+  "skills": {
+    "Arcana": 6
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "text": "Pinna is a 3rd-level spellcaster. Her\nspellcasting ability is Intelligence (spell save DC\n13, +5 to hit with spell attacks). Pinna has the\nfollowing wizard spells prepared:\n\n* Cantrips (at will): <i>minor illusion, mage hand, dancing lights, fire bolt</i>\n\n* 1st level (4 slots): <i>color spray, silent image, identify, magic missile</i>\n\n* 2nd level (2 slots): <i>blur, web</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +2 to\nhit, reach 5 ft. or range 20/60 ft., one target. Hit:\n2 (1d4) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

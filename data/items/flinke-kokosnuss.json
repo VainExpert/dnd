@@ -1,0 +1,42 @@
+{
+  "id": "flinke-kokosnuss",
+  "type": "item",
+  "name": "Flinke Kokosnuss",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 200,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn diese Kokosnuss, in 2 Hälften, zusammengeschlagen wird, gibt dir und bis zu 10 Verbündeten, im Abstand von bis zu 9 m, Pferdegeschwindigkeit (18 m), wenn ihr lauft.",
+  "tags": [
+    "bewegung",
+    "magisch"
+  ]
+}

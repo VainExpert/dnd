@@ -1,0 +1,43 @@
+{
+  "id": "umhang-der-vielen-moden",
+  "type": "item",
+  "name": "Umhang der vielen Moden",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Mit einer Bonsu Aktion kann das Aussehen des Umhangs in Stil, Farbe, Qualität und ähnlichen verändern. Es kann nur ein Umhang bleiben und verändert sein Gewicht nicht.",
+  "tags": [
+    "magisch",
+    "kleidung",
+    "bonus aktion"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-apparat-der-krabbe",
+  "type": "item",
+  "name": "Apparat der Krabbe",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "legendär",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Gegenstand scheint zunächst ein großes, versiegeltes Eisenfass zu sein, das 250 Kilogramm wiegt. Das Fass hat einen versteckten Haken, der mit einem erfolgreichen SG-20-Intelligenzwurf (Nachforschungen) gefunden werden kann. Wird der Haken gelöst, öffnet sich eine Luke am Ende des Fasses, durch die zwei höchstens mittelgroße Kreaturen ins Innere kriechen können. Am anderen Ende des Fassinneren befindet sich eine Reihe mit zehn Hebeln in neutraler Stellung. Die Hebel können nach oben und nach unten bewegt werden. Wenn bestimmte Hebel bewegt werden, verwandelt sich der Apparat in einen Riesenhummer. Der Apparat der Krabbe  ist ein großer Gegenstand mit den folgenden Werten: Rüstungsklasse: 20 Trefferpunkte: 200 Bewegungsrate: 9 m, Schwimmen 9 m (oder 0 m für beides, wenn Beine und Schwanz nicht ausgefahren sind) Schadensimmunitäten: Gift, psychisch Um als Fahrzeug verwendet zu werden, benötigt der Apparat einen Piloten. Wenn die Luke des Apparats geschlossen ist, ist er lüft- und wasserdicht. Der Innenraum enthält genug Atemluft für zehn Stunden (geteilt durch die Anzahl atmender Kreaturen im Apparat). Der Apparat schwimmt auf dem Wasser. Er kann auch bis auf 270 Meter Tiefe tauchen. Bei größeren Tiefen erleidet das Fahrzeug durch den Druck 2W6 Wuchtschaden pro Minute. Eine Kreatur im Apparat kann als Aktion bis zu zwei Hebel nach oben oder unten bewegen. Nach jedem Gebrauch kehren die Hebel in ihre neutrale Position zurück. Jeder Hebel funktioniert, von links nach rechts gelesen, wie in der Tabelle 'Hebel des Apparats der Krabbe' angegeben.",
+  "tags": []
+}

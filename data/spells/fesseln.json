@@ -1,0 +1,17 @@
+{
+  "id": "fesseln",
+  "name": "Fesseln",
+  "level": 2,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Hexenmeister"
+  ],
+  "text": "Du sprichst eine ablenkende Folge von Worten.\nKreaturen deiner Wahl in Reichweite, die du sehen kannst und die dich hören können, müssen WIS-Rettungswürfe machen. Kreaturen, die nicht bezaubert werden können, bestehen den automatisch. Ziele, die gegen dich oder deine Gefährten kämpfen, haben bei dem Wurf einen Vorteil.\nBei Fehlschlag: Ziel ist bei Wahrnehmung-Würfen im Nachteil, um andere als dich wahrzunehmen.\nDer Effekt hält bis zum Ende des Zaubers oder bis das Ziel dich nicht hören kann. Der Zauber endet auch, wenn du kampfunfähig wirst oder nicht mehr sprechen kannst."
+}

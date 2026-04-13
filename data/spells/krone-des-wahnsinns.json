@@ -1,0 +1,19 @@
+{
+  "id": "krone-des-wahnsinns",
+  "name": "Krone des Wahnsinns",
+  "level": 2,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "36 m",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Ein Humanoid, deiner Wahl in Reichweite, muss einen WIS-Rettungswurf bestehen oder wird für die Wirkungsdauer von dir bezaubert. Das Ziel wird mit einer verdrehten Krone aus Eisen auf seinem Kopf markiert und die Augen leuchten wahnsinnig.\nDas Ziel muss am Anfang jeder Runde einen Nahkampfangriff gegen ein Ziel deiner Wahl ausführen.\nEs bewegt sich normal, wenn kein Ziel gewählt wurde oder keines in Reichweite ist.\nIn den folgenden Zügen musst du deine Aktion nutzen, um die Kontrolle über das Ziel zu behalten. Außerdem kann das Ziel in jeder Runde einen WIS-Rettungswurf machen, bei Erfolg endet der Zauber."
+}

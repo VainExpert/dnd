@@ -1,0 +1,69 @@
+{
+  "name": "White Tusk Shaman",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "strongholds-and-followers",
+      "orc, shapechanger"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 14,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 15,
+    "con": 14,
+    "int": 9,
+    "wis": 16,
+    "cha": 8
+  },
+  "skills": {
+    "Perception": 5,
+    "Survival": 5
+  },
+  "languages": [
+    "Orc",
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Aggressive",
+      "text": "As a bonus action, the orc can\nmove up to its speed toward a hostile creature it\ncan see."
+    },
+    {
+      "name": "Minion: Savage Horde",
+      "text": "After moving at least 20\nfeet in a straight line toward a creature, the next\nattack the orc makes against that creature scores\na critical hit on a roll of 18–20.\n\n***Spirit-Bonded Body (Recharges after a Short\nor Long Rest).*** As a bonus action, the orc can\ntransform into a dire wolf for up to 4 hours. The\norc can choose whether its equipment falls to\nthe ground, melds with its new form, or is worn\nby the new form. The orc reverts to its true form\nwhen its dire wolf form is reduced to 0 hit points.\nIf this damage would cause its dire wolf form to\ndrop below 0 hit points, the excess damage is\ndone to its true form.\n\nThe orc also reverts to its true form if it dies\nor falls unconscious. The orc can revert to its\ntrue form as a bonus action on its turn. When it\nreverts in this way, it returns to the number of hit\npoints it had before it transformed."
+    },
+    {
+      "name": "Spirit-Bonded Mind",
+      "text": "The orc can cast speak\nwith animals at will, but can only communicate\nwith wolves."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The White Tusk Shaman makes two\nblood-searing spear attacks."
+    },
+    {
+      "name": "Blood-Searing Spear",
+      "type": "special",
+      "text": "Melee or Ranged Weapon\nAttack: +5 to hit, reach 5 ft. or range 30/60 ft.,\none target. Hit: 6 (1d6 + 3) piercing damage plus\n7 (2d6) poison damage. This magical poison only\nfunctions when the spear is wielded by an orc\nshaman."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,99 @@
+{
+  "name": "Zmey",
+  "size": "Huge",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "huge",
+      "dragon",
+      "cr14",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 18,
+  "hp": {
+    "average": 189,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50,
+    "swim": 30
+  },
+  "abilities": {
+    "str": 22,
+    "dex": 13,
+    "con": 19,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+  },
+  "skills": {
+    "Perception": 8
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Elvish",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "14",
+    "xp": 11500,
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The zmey can breathe air and water."
+    },
+    {
+      "name": "Lake Leap",
+      "text": "A zmey spends much of its time lurking in lakes and ponds. When submerged in a natural pool of standing water, it can transport itself as a bonus action to a similar body of water within 5,000 feet. Rapidly flowing water doesn't serve for this ability, but the zmey can leap to or from a river or stream where the water is calm and slow-moving."
+    },
+    {
+      "name": "Legendary Resistance (1/Day)",
+      "text": "If the zmey fails a saving throw, it can count it as a success instead."
+    },
+    {
+      "name": "Multiheaded",
+      "text": "The zmey normally has three heads. While it has more than one head, the zmey has advantage on saving throws against being blinded, charmed, deafened, frightened, and stunned. If the zmey takes 40 or more damage in a single turn (and the damage isn't poison or psychic), one of its heads is severed. If all three of its heads are severed, the zmey dies."
+    },
+    {
+      "name": "Regeneration",
+      "text": "The zmey regains 15 hit points at the start of its turn. If the zmey takes acid or fire damage, this trait doesn't function at the start of the zmey's next turn. Regeneration stops functioning when all heads are severed. It takes 24 hours for a zmey to regrow a functional head."
+    },
+    {
+      "name": "Spawn Headling",
+      "text": "The severed head of a zmey grows into a zmey headling 2d6 rounds after being separated from the body. Smearing at least a pound of salt on the severed head's stump prevents this transformation."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The zmey makes one bite attack per head and one claws attack."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 19 (2d12 + 6) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 19 (2d12 + 6) slashing damage."
+    },
+    {
+      "name": "Tail",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 20 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage."
+    },
+    {
+      "name": "Fire Breath (Recharge 5-6)",
+      "type": "special",
+      "text": "The zmey breathes up to three 60-foot cones of fire, one from each of its heads. Creatures in a cone take 16 (3d10) fire damage, or half damage with a successful DC 16 Dexterity saving throw. If cones overlap, their damage adds together but each target makes only one saving throw. A zmey can choose whether this attack harms plants or plant creatures."
+    }
+  ],
+  "source": "creature"
+}

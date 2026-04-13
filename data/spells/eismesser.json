@@ -1,0 +1,18 @@
+{
+  "id": "eismesser",
+  "name": "Eismesser",
+  "level": 1,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "18 m (1,5 m Sphäre)",
+  "components": "G, M (Wassertropfen oder Stück Eis)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du schleuderst einen Eissplitter gegen eine Kreatur in Reichweite.\nDu machst einen Fernkampf-Zauberangriff gegen das Ziel.\nBei Treffer: 1W10 Stichschaden\nDer Splitter explodiert, egal ob du getroffen hast, und lässt das Ziel und jede Kreatur in 1,5 m Radius vom Ziel aus einen DEX-Rettungswurf machen.\nBei Fehlschlag: 2W6 Kälteschaden\n\nAuf höheren Level gewirkt: pro Level 1W6 mehr Kälteschaden"
+}

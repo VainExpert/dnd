@@ -1,0 +1,59 @@
+{
+  "name": "Hier",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "medium",
+      "beast",
+      "cr1/2",
+      "monster-manual"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 12,
+  "hp": {
+    "average": 19,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 14,
+    "int": 6,
+    "wis": 12,
+    "cha": 7
+  },
+  "skills": {
+    "Athletics": 5,
+    "Perception": 3
+  },
+  "languages": [],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Affe führt zwei Faustangriffe aus."
+    },
+    {
+      "name": "Fist",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 6 (1d6 + 3) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Rock",
+      "type": "special",
+      "text": "Fernkampfangriff: +5 auf den Trefferwurf, Reichweite25/50  Fuß, ein Ziel. Treffer: 6 (1d6 + 3) Bludgeoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

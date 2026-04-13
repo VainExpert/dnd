@@ -1,0 +1,43 @@
+{
+  "id": "wuerfel-des-scharlatans",
+  "type": "item",
+  "name": "Würfel des Scharlatans",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "gewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Du kannst das Ergebnis von jedem Wurf mit diesem W6-Würfel kontrollieren. Sehr hilfreich für Glücksspiel.",
+  "tags": [
+    "nützlich",
+    "abenteuer",
+    "werkzeug"
+  ]
+}

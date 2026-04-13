@@ -1,0 +1,80 @@
+{
+  "name": "Magma Mephit King",
+  "size": "Small",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "small",
+      "elemental",
+      "cr4",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 13,
+  "hp": {
+    "average": 65,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 16,
+    "con": 14,
+    "int": 9,
+    "wis": 13,
+    "cha": 14
+  },
+  "skills": {
+    "Stealth": 5,
+    "Deception": 4
+  },
+  "languages": [
+    "Ignan",
+    "Terran"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Death Burst",
+      "text": "When the mephit dies, it explodes in a\nburst of lava. Each creature within 5 feet of it must\nmake a DC 13 Dexterity saving throw, taking 22\n(4d10) fire damage on a failed save, or half as much\ndamage on a successful one."
+    },
+    {
+      "name": "False Appearance",
+      "text": "While the mephit remains\nmotionless, it is indistinguishable from an ordinary\nmound of magma."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The mephit makes two attacks with its\nclaws or with its bow."
+    },
+    {
+      "name": "Magma Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit,\nreach 5ft., one target. Hit: 6 (1d6 + 3) piercing\ndamage plus 5 (1d10) fire damage."
+    },
+    {
+      "name": "Magma Bow",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, range\n80/320 ft., one target. Hit: 6 (1d6 + 3) piercing\ndamage plus 5 (1d10) fire damage."
+    },
+    {
+      "name": "Molten Caltrops",
+      "type": "special",
+      "text": "The mephit scatters molten\ncaltrops in a 15-foot square around itself. This area\nis considered difficult terrain and creatures take 7\n(2d6) fire damage for every 5 feet they move\nthrough this terrain."
+    },
+    {
+      "name": "Lava Choke (Recharge 6)",
+      "type": "special",
+      "text": "The mephit causes a ball\nof lava to appear in the throat of a creature it can\nsee within 90 ft. That creature must make a DC 13\nConstitution saving throw, taking 27 (5d10) fire\ndamage on a failed save and the creature is silenced\nas their throat is charred, or half as much damage\nand not silenced on a successful save. The silence\nlasts until the creature takes a short rest or is\nhealed by lesser restoration or similar magic."
+    }
+  ],
+  "source": "creature"
+}

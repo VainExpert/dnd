@@ -1,0 +1,17 @@
+{
+  "id": "rime-s-bindendes-eis",
+  "name": "Rime's Bindendes Eis",
+  "level": 2,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (9 m Kegel)",
+  "components": "G, M (eine Viole Schmelzwasser)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Eine Explosion kalter Energie strömt von dir in einem 9 m Kegel aus.\nJede Kreatur in dem Bereich muss einen CON-Rettungswurf machen.\nBei Fehlschlag: 3W8 Kälteschaden und es wird, für 1 min oder bis eine andere Kreatur in Recihweite eine Aktionverwendet um das Eis zu brechen, durch eine Eisformation behindert. Eine gehinderte Kreatur kann sich nicht bewegen.\nBei Erfolg: Die Hälfte des Schadens und nicht durch das Eis behindert.\n\nAuf höheren Level gewirkt: pro Level 1W8 mehr Kälteschaden"
+}

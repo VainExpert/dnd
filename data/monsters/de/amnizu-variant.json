@@ -1,0 +1,60 @@
+{
+  "name": "Amnizu (Variante)",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr18",
+      "mordenkainens-tome-of-foes",
+      "devil"
+    ]
+  },
+  "alignment": "gesetztreu-böse",
+  "ac": 21,
+  "hp": {
+    "average": 202,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 11,
+    "dex": 13,
+    "con": 16,
+    "int": 20,
+    "wis": 12,
+    "cha": 18
+  },
+  "skills": {
+    "Perception": 7
+  },
+  "languages": [
+    "Common",
+    "Infernal",
+    "telepathy 1",
+    "0 m."
+  ],
+  "challenge": {
+    "cr": "18",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Teufelsblick",
+      "text": "Magische Dunkelheit beeinträchtigt die Dunkelheitssicht des Amnizu nicht."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Amnizu basiert auf seiner Intelligenz (ZauberrettungswurfDC 19, +11 auf Treffer bei Zauberangriffen). Der Amnizu kann die folgenden Zauber von Natur aus wirken, ohne dass dafür materielle Komponenten erforderlich sind:\n\n* Beliebig oft: Person bezaubern, Befehl\n\n* Je 3/Tag: Person beherrschen, Feuerball\n\n* Je 1/Tag: Monster beherrschen, Geist schwächen"
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Das Amnizu hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

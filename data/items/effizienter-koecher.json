@@ -1,0 +1,46 @@
+{
+  "id": "effizienter-koecher",
+  "type": "item",
+  "name": "Effizienter Köcher",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "ammunition",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
+  "weight": {
+    "value": 1,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 500,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Jedes der drei Fächer des Köchers ist mit einem extradimensionalen Raum verbunden. Dadurch kann der Köcher viele Gegenstände fassen, ohne jemals mehr als 1 kg zu wiegen. Das kürzeste Fach fasst bis zu 60 Pfeile, Bolzen oder ähnliche Gegenstände. Ins mittlere Fach passen bis zu 18 Wurfspeere oder ähnliche Gegenstände. Das längste Fach bietet genug Platz für 6 lange Gegenstände wie Bögen, Kampfstäbe oder Speere. Du kannst einen Gegenstand aus dem Köcher ziehen, als wäre es ein normaler Köcher oder eine normale Scheide.",
+  "tags": [
+    "magsch",
+    "köcher",
+    "extradimensional",
+    "nützlich",
+    "lagerung",
+    "pfeile"
+  ]
+}

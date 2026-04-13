@@ -1,0 +1,58 @@
+{
+  "name": "Ablegeln",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr9",
+      "volos-guide",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 12,
+  "hp": {
+    "average": 84,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 9,
+    "dex": 14,
+    "con": 14,
+    "int": 18,
+    "wis": 12,
+    "cha": 11
+  },
+  "skills": {
+    "Arcana": 8,
+    "History": 8
+  },
+  "languages": [
+    "any four languages"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Abjurer ist ein Zauberwirker der Stufe 13. Seine Zauberfertigkeit ist Intelligenz (ZauberrettungswurfDC 16, +8 auf Treffer bei Zauberangriffen). Der Abjurer hat die folgenden Zauber des Zauberers vorbereitet:\n\n* Cantrips (beliebig oft): Klingenabwehr, Tanzende Lichter, Ausbessern, Botschaft, Froststrahl\n\n* 1. Stufe (4 Plätze): Alarm*, Magierrüstung, Magischer Geschoss, Schild*\n\n* 2. Stufe (3 Plätze): Arkanes Schloss*, Unsichtbarkeit\n\n* 3. Stufe (3 Plätze): Gegenzauber*, Magie bannen*, Feuerball\n\n* 4. Stufe (3 Plätze): Verbannung*, Steinhaut*\n\n* 5. Stufe (2 Plätze): Kältekegel, Kraftwand\n\n* 6. Stufe (1 Platz): Fleisch zu Stein, Kugel der Unverwundbarkeit*\n\n* 7. Stufe (1 Platz): Symbol*, Teleportation\n\n*Abwehrzauber der 1. Stufe oder höher"
+    },
+    {
+      "name": "Arkaner Schutzschild",
+      "text": "Der Abjurer verfügt über einen magischen Schutzschild mit 30 Trefferpunkten. Immer wenn der Abjurer Schaden erleidet, nimmt der Schutzschild diesen Schaden an seiner Stelle auf. Wenn der Schutzschild auf 0 Trefferpunkte reduziert wird, erleidet der Abjurer den verbleibenden Schaden. Wenn der Abjurer einen Abjurationszauber der Stufe 1 oder höher wirkt, erhält der Schutzschild so viele Trefferpunkte zurück, wie dem doppelten Zauberstufenwert entsprechen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Langstock",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +3 auf den Trefferwurf, Reichweite:1,5 m ., ein Ziel. Treffer: 2 (1d6-1) Bludgeoning-Schaden oder 3 (1d8-1) Bludgeoning-Schaden bei Zweihandgebrauch."
+    }
+  ],
+  "source": "creature"
+}

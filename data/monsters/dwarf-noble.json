@@ -1,0 +1,50 @@
+{
+  "name": "Dwarf Noble",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/8",
+      "homebrew",
+      "dwarf"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 15,
+  "hp": {
+    "average": 9,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 12,
+    "con": 11,
+    "int": 12,
+    "wis": 14,
+    "cha": 16
+  },
+  "skills": {
+    "Deception": 5,
+    "Insight": 4,
+    "Persuasion": 5
+  },
+  "languages": [
+    "any two languages"
+  ],
+  "challenge": {
+    "cr": "1/8",
+    "xp": 25,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Dwarven Resilience",
+      "text": "The dwarf has advantage on saving throws against poison and has resistance to poison damage"
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

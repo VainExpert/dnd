@@ -1,0 +1,68 @@
+{
+  "name": "Wood Golem",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 15,
+    "int": 7,
+    "wis": 11,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages of its creator but can’t speak"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Alarm",
+      "text": "Whenever a creature other than its creator comes within 60\nfeet of the golem, it releases an audible alarm sound which can\nbe heard out to a range of 300 feet."
+    },
+    {
+      "name": "Immutable Form",
+      "text": "The golem is immune to any spell or effect that\nwould alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The golem has advantage on saving throws against\nspells and other magical effects."
+    },
+    {
+      "name": "Magic Weapon",
+      "text": "The golem’s weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The wood golem makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12\n(2d8 + 3) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

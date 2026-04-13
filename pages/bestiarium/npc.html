@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>NPC</title>
+  <link rel="stylesheet" href="../../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title" id="title">NPC</div>
+      <div class="subtitle"><a href="../../index.html">Startseite</a></div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="content" style="max-width:900px;">
+      <div id="view"></div>
+    </div>
+  </main>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany, fmtSigned, mod, linkifyRefs } from "../../lib.js";
+
+    const view = document.getElementById("view");
+    const titleEl = document.getElementById("title");
+    const id = new URLSearchParams(location.search).get("id");
+
+    if (!id) {
+      view.innerHTML = "<p>Fehlende NSC-ID.</p>";
+      throw new Error("Fehlende NSC-ID");
+    }
+
+    const cacheMode = (location.hostname === "localhost" || location.hostname === "127.0.0.1") ? "no-cache" : "force-cache";
+
+    async function fetchJson(url){
+      const r = await fetch(url, { cache: cacheMode });
+      if (!r.ok) throw new Error(`HTTP ${r.status} for ${url}`);
+      return r.json();
+    }
+
+    async function loadNpc(){
+      // Fast path: direct file
+      try {
+        return await fetchJson(`../../data/npcs/${encodeURIComponent(id)}.json`);
+      } catch {}
+
+      // Fallback: scan index (if you have it)
+      const files = await loadIndex("../../data/npcs/index.json").catch(() => []);
+      const npcs = await loadMany("../../data/npcs", files).catch(() => []);
+      const key = id.toLowerCase();
+      return npcs.find(n => String(n.id || "").toLowerCase() === key) ||
+             npcs.find(n => String(n.name || "").toLowerCase() === key) ||
+             null;
+    }
+
+    const n = await loadNpc();
+    if (!n) {
+      view.innerHTML = `<p>NSC nicht gefunden: <code>${escapeHtml(id)}</code></p>`;
+      throw new Error("NSC nicht gefunden");
+    }
+
+    titleEl.textContent = n.name || "NSC";
+
+    const subtitle = [n.race, n.role, n.faction].filter(Boolean).join(" • ");
+    const ab = n.abilities || {};
+    const showAbilities = ["str","dex","con","int","wis","cha"].some(k => ab?.[k] != null);
+
+    view.innerHTML = `
+      <h1>${escapeHtml(n.name)}</h1>
+      ${subtitle ? `<p class="muted">${escapeHtml(subtitle)}</p>` : ""}
+
+      <div class="mini-box">
+        <div class="mini-box-title">Werte</div>
+        <div class="mini-box-text">
+          ${n.ac != null ? `<div><b>AC:</b> ${escapeHtml(n.ac)}</div>` : ""}
+          ${n.hp != null ? `<div><b>HP:</b> ${escapeHtml(n.hp)}</div>` : ""}
+          ${n.speed != null ? `<div><b>Bewegung:</b> ${escapeHtml(n.speed)}</div>` : ""}
+        </div>
+      </div>
+
+      ${showAbilities ? `
+        <div class="mini-box" style="margin-top:12px;">
+          <div class="mini-box-title">Attribute</div>
+          <div class="mini-box-text">
+            <div>
+              <b>STR</b> ${ab.str ?? "—"} (${fmtSigned(mod(ab.str ?? 10))}) •
+              <b>DEX</b> ${ab.dex ?? "—"} (${fmtSigned(mod(ab.dex ?? 10))}) •
+              <b>CON</b> ${ab.con ?? "—"} (${fmtSigned(mod(ab.con ?? 10))}) •
+              <b>INT</b> ${ab.int ?? "—"} (${fmtSigned(mod(ab.int ?? 10))}) •
+              <b>WIS</b> ${ab.wis ?? "—"} (${fmtSigned(mod(ab.wis ?? 10))}) •
+              <b>CHA</b> ${ab.cha ?? "—"} (${fmtSigned(mod(ab.cha ?? 10))})
+            </div>
+          </div>
+        </div>
+      ` : ""}
+
+      ${n.notes ? `
+        <div class="mini-box" style="margin-top:12px;">
+          <div class="mini-box-title">Notizen</div>
+          <div class="mini-box-text">${linkifyRefs(n.notes, { base: "./" })}</div>
+        </div>
+      ` : ""}
+
+      ${(n.traits && n.traits.length) ? `
+        <div class="mini-box" style="margin-top:12px;">
+          <div class="mini-box-title">Eigenschaften</div>
+          <div class="mini-box-text">
+            ${n.traits.map(t => `<div class="mini"><b>${escapeHtml(t.name)}.</b> ${linkifyRefs(t.text, { base: "./" })}</div>`).join("")}
+          </div>
+        </div>
+      ` : ""}
+
+      ${(n.actions && n.actions.length) ? `
+        <div class="mini-box" style="margin-top:12px;">
+          <div class="mini-box-title">Aktionen</div>
+          <div class="mini-box-text">
+            ${n.actions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || a.type || "", { base: "./" })}</div>`).join("")}
+          </div>
+        </div>
+      ` : ""}
+    `;
+  </script>
+</body>
+</html>

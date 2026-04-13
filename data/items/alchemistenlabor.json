@@ -1,0 +1,44 @@
+{
+  "id": "alchemistenlabor",
+  "type": "item",
+  "name": "Alchemistenlabor",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 4,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Werkzeug zum Brauen und Identifizieren von alchemistischen Substanzen. Nutzen: Kann eine Substanz identifizieren (SG 15) oder ein Feuer entfachen (SG 15). Fertigen: Säure, Alchemisten Feuer, Komponentenbeutel, Öl, Papier, Parfüm",
+  "tags": [
+    "abenteuer",
+    "werkzeug",
+    "nützlich",
+    "alchemie"
+  ]
+}

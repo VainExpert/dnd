@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-brunnen-dervielen-welten",
+  "type": "item",
+  "name": "Brunnen der vielen Welten",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "legendär",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieses feine, schwarze Tuch ist seidenweich und auf die Größe eines Taschentuchs zusammengefaltet. Ausgebreitet ist es ein kreisrundes Tuch mit einem Durchmesser von 1,8 Metern. Du kannst den Brunnen der vielen Welten  als Aktion ausbreiten und auf einer festen Oberfläche platzieren, woraufhin er ein in beide Richtungen funktionierendes Portal zu einer anderen Welt oder Existenzebene erzeugt. Jedes Mal, wenn mit dem Gegenstand ein Portal geöffnet wird, entscheidet der SL, wohin es führt. Du kannst ein offenes Portal als Aktion schließen, indem du den Rand des Tuchs greifst und es zusammenfaltest. Nachdem ein Brunnen der vielen Welten  ein Portal geöffnet hat, kann er erst in 1W8 Stunden wieder auf diese Weise verwendet werden.",
+  "tags": []
+}

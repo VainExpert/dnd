@@ -1,0 +1,17 @@
+{
+  "id": "deryans-hilfreicher-homunculi",
+  "name": "Deryans hilfreicher Homunculi",
+  "level": 2,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "V, G, M (pulverisierte Edelsteine im Wert von mind. 100 GM, die der Zauber konsumiert, sowie ein Set Handwerkszeug, in dem du geübt bist)",
+  "duration": "8 h",
+  "concentration": false,
+  "ritual": true,
+  "classes": [
+    "Kleriker",
+    "Magier"
+  ],
+  "text": "Du beschwörst hilfreiche, körperlose Geister (als Homunculi oder anderes Konstrukt deiner Wahl). Sie sind ungreifbar und unverwundbar und gelten als geübt in Arkana sowie im verwendeten Handwerkszeug.\nBeim Herstellen eines Gegenstands zählen sie zusammen als ein Assistent und halbieren die Herstellungszeit."
+}

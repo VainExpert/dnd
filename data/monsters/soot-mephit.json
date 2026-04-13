@@ -1,0 +1,70 @@
+{
+  "name": "Soot Mephit",
+  "size": "Small",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "small",
+      "elemental",
+      "cr1/2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 12,
+  "hp": {
+    "average": 21,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 10,
+    "int": 6,
+    "wis": 11,
+    "cha": 15
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 4
+  },
+  "languages": [
+    "Ignan"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Death Burst",
+      "text": "When the mephit dies, it explodes in a cloud of smoke.\nEach creature within 5 feet of the mephit must make a successful DC 10\nConstitution saving throw or take 1d4 fire damage and be poisoned for 1\nminute. A poisoned creature can repeat the saving throw at the end of each\nof its turns, ending the effect on a success."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The mephit can innately cast <i>blur</i> 1/day, requiring\nno material components. Its innate spellcasting ability is Charisma (spell\nsave DC 12, +4 to hit with spell attacks)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4\n(1d4 + 2) slashing damage plus 2 (1d4) fire damage."
+    },
+    {
+      "name": "Sooty Breath (Recharge 5–6)",
+      "type": "special",
+      "text": "The mephit exhales black soot in a 15-\nfoot cone. All creatures within that area must make a DC 12 Dexterity\nsaving throw, taking 9 (2d8) fire damage on a failed save, or half as much\ndamage on a successful one."
+    },
+    {
+      "name": "Ember Storm (1/day)",
+      "type": "special",
+      "text": "A soot mephit can create a downpour of whitehot\nembers that affects a 20-foot radius sphere centered on itself. All\ncreatures caught in the storm must make a DC 12 Dexterity saving throw,\ntaking 10 (3d6) fire damage on a failed save, or half as much damage on\na successful one."
+    }
+  ],
+  "source": "creature"
+}

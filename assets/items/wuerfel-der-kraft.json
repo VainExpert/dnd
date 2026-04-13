@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-wuerfel-der-kraft",
+  "type": "item",
+  "name": "Würfel der Kraft",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "erfordert Einstimmung",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Würfel hat eine Kantenlänge von etwa 2,5 Zentimetern. Jede Seite hat ein deutliches Zeichen, das gedrückt werden kann. Der Würfel beginnt mit 36 Ladungen und erhält täglich im Morgengrauen 1W20 verbrauchte Ladungen zurück. Du kannst als Aktion eine der Würfelseiten drücken. Du verbrauchst so viele Ladungen, wie die gewählte Seite anzeigt. Die Zeichen auf jeder Seite sind in der Tabelle 'Seiten des Würfels der Kraft' angegeben. Jede Seite hat einen anderen Effekt Wenn der Würfel nicht mehr genügend Ladungen hat, passiert nichts. Anderenfalls wird eine würfelförmige Barriere aus unsichtbarer Energie mit 4,5 Metern Kantenlänge erzeugt. Du bildest den Mittelpunkt der Barriere. Sie bewegt sich mit dir und existiert eine Minute lang, bis du eine Aktion verwendest, um die sechste Seite des Würfels zu drücken, oder bis der Würfel keine Ladungen mehr hat. Du kannst den Effekt der Barriere ändern, indem du eine andere Seite des Würfels drückst und die entsprechende Anzahl an Ladungen verbrauchst. Dabei wird die Wirkungsdauer zurückgesetzt Wenn die Barriere durch deine Bewegung mit einem festen Gegenstand in Kontakt kommst, der den Würfel nicht durchdringen kann, kannst du nicht näher an den Gegenstand gelangen, bis die Barriere aufhört zu existieren. Der Würfel verliert Ladungen, wenn die Barriere das Ziel bestimmter Zauber ist oder mit bestimmten Effekten von Zaubern oder magischen Gegenständen in Kontakt kommt. Diese sind in der folgenden Tabelle angegeben.",
+  "tags": []
+}

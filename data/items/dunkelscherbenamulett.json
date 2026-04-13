@@ -1,0 +1,49 @@
+{
+  "id": "dunkelscherbenamulett",
+  "type": "item",
+  "name": "Dunkelscherbenamulett",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "gewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "durch einen Hexenmeister",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 75,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Der Träger aknn dieses Amulett als seinen arkanen Fokus verwenden und bekommt zusätzlich den folgenden Effekt: Unbekannter Zauber: Als Magie Aktion kannst du einen Hexenmeister-Zaubertrick wirken, den du nicht kennst und der die Zeit einer Aktion hat. Du musst einen SG-10 Arkane-Kunde-Wurf machen. Bei einem Erfolg wird der Zauebrtrick normal gewirkt, sonst schlägt es fehl un die Aktion ist aufgebraucht. Dieser Effekt kann nur einmal pro Langer Rast verwendet werden.",
+  "tags": [
+    "magisch",
+    "hexenmeister",
+    "amulett",
+    "schmuck",
+    "arkaner fokus",
+    "zauber",
+    "zauebrtrick",
+    "aktion",
+    "lange rast"
+  ]
+}

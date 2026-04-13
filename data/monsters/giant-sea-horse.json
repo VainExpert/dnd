@@ -1,0 +1,55 @@
+{
+  "name": "Giant Sea Horse",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr1/2",
+      "monster-manual"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 16,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 40
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 15,
+    "con": 11,
+    "int": 2,
+    "wis": 12,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "text": "If the sea horse moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) bludgeoning damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Water Breathing",
+      "text": "The sea horse can breathe only underwater."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Ram",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

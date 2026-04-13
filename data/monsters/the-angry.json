@@ -1,0 +1,50 @@
+{
+  "name": "The Angry",
+  "size": "Medium",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr13",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 18,
+  "hp": {
+    "average": 255,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 10,
+    "con": 19,
+    "int": 8,
+    "wis": 13,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 6
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "13",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Two Heads",
+      "text": "The Angry has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious."
+    },
+    {
+      "name": "Rising Anger",
+      "text": "If another creature deals damage to the Angry, the Angry's attack rolls have advantage until the end of its next turn, and the first time it hits with a hook attack on its next turn, the attack's target takes an extra 19 (3d12) psychic damage.\nOn its turn, the Angry has disadvantage on attack rolls if no other creature has dealt damage to it since the end of its last turn."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

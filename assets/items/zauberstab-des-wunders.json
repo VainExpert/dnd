@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-zauberstab-des-wunders",
+  "type": "item",
+  "name": "Zauberstab des Wunders",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wand",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "erfordert Einstimmung durch einen Zauberwirker",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Zauberstab hat sieben Ladungen. Wenn du ihn hältst, kannst du als Aktion eine Ladung verbrauchen und ein Ziel im Abstand von bis zu 36 Metern von dir bestimmen. Das Ziel kann eine Kreatur, ein Gegenstand oder ein Punkt im Raum sein. Würfle mit einem W100 und ziehe die folgende Tabelle zurate, um herauszufinden, was passiert. Wenn der Effekt dir erlaubt, einen Zauber mit dem Zauberstab zu wirken, ist der Rettungswurf-SG des Zaubers 15. Wenn der Zauber normalerweise eine in Metern ausgedrückte Reichweite hat, die nicht 36 Meter beträgt, wird seine Reichweite zu 36 Metern. Wenn ein Effekt einen Bereich betrifft, muss das Ziel sich im Mittelpunkt des Zaubers befinden und vom Zauber betroffen sein. Wenn ein Effekt mehrere mögliche Ziele hat, bestimmt der SL zufällig, welche betroffen sind. Der Zauberstab erhält täglich im Morgengrauen 1W6+1 verbrauchte Ladungen zurück. Wenn du die letzte Ladung des Zauberstabs verbrauchst, würfle mit einem W20. Bei einer 1 zerfällt der Zauberstab zu Staub und ist damit zerstört.",
+  "tags": []
+}

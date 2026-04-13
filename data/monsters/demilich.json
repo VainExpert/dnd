@@ -1,0 +1,63 @@
+{
+  "name": "Demilich",
+  "size": "Tiny",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "tiny",
+      "undead",
+      "cr18",
+      "monster-manual"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 20,
+  "hp": {
+    "average": 80,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 1,
+    "dex": 20,
+    "con": 10,
+    "int": 20,
+    "wis": 17,
+    "cha": 20
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "18",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Avoidance",
+      "text": "If the demilich is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "text": "If the demilich fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Turn Immunity",
+      "text": "The demilich is immune to effects that turn undead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Howl (Recharge 5-6)",
+      "type": "special",
+      "text": "The demilich emits a bloodcurdling howl. Each creature within 30 feet of the demilich that can hear the howl must succeed on a DC 15 Constitution saving throw or drop to 0 hit points. On a successful save, the creature is frightened until the end of its next turn."
+    },
+    {
+      "name": "Life Drain",
+      "type": "special",
+      "text": "The demilich targets up to three creatures that it can see within 10 feet of it. Each target must succeed on a DC 19 Constitution saving throw or take 21 (6d6) necrotic damage, and the demilich regains hit points equal to the total damage dealt to all targets."
+    }
+  ],
+  "source": "creature"
+}

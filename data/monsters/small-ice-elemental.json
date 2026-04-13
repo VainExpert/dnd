@@ -1,0 +1,56 @@
+{
+  "name": "Small Ice Elemental",
+  "size": "Small",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "small",
+      "elemental",
+      "cr1/2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 12,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 14,
+    "int": 5,
+    "wis": 10,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "Aquan"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Frozen Form",
+      "text": "The ground within 10 ft. of the\nelemental is considered difficult terrain as it\nbecomes lightly frozen. When a creature enters this\narea for the first time, they must succeed on a DC\n10 Dexterity saving throw or fall prone."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5ft.,\none target. Hit: 6 (1d8 + 2) bludgeoning damage."
+    },
+    {
+      "name": "Ice Shard",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +4 to hit, range\n30/120 ft., one target. Hit: 4 (1d4 + 2) piercing\ndamage plus 1 cold damage."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,78 @@
+{
+  "name": "Kapitän der Azer-Wache",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr4",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "gesetztreu-neutral",
+  "ac": 17,
+  "hp": {
+    "average": 85,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 16,
+    "int": 12,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Athletics": 6,
+    "Arcana": 3,
+    "Intimidation": 2
+  },
+  "languages": [
+    "Ignan",
+    "Common"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Beheizter Körper",
+      "text": "Ein Wesen, das den Azer berührt oder\nihn mit einem Nahkampfangriff trifft, während es sich5 feetin seiner Nähe befindet,\nerleidet 5 (1d10) Feuerschaden."
+    },
+    {
+      "name": "Überhitzte Anlagen",
+      "text": "Wenn der Azer-Kapitän\nmit einer metallenen Nahkampfwaffe zuschlägt, verursacht er zusätzlich 7\n(2d6) Feuerschaden (im Angriff enthalten)."
+    },
+    {
+      "name": "Beleuchtung",
+      "text": "Der Azer-Kapitän strahlt helles Licht in einem\nRadius von 4,5 Metern aus und schwaches Licht in einem weiteren Radius von 4,5 m."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Azer-Kapitän führt zwei Angriffe aus:\neinen mit seinem Kriegshammer und einen mit seinem Schildschlag."
+    },
+    {
+      "name": "Warhammer",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 zum Treffen, Reichweite\n1,5 m, ein Ziel. Treffer: 8 (1d8 + 4) Schlagschaden\nplus 7 (2d6) Feuerschaden."
+    },
+    {
+      "name": "Schildschlag",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf den Trefferwurf, Reichweite\n1,5 m\n: 1, ein Ziel. Treffer: 7 (1d6 + 4\n) Bludgeoning-Schaden\nund das Ziel muss einenDC 14\nKonstitutions-Rettungswurf bestehen, sonst ist es bis zum\nEnde seines nächsten Zuges betäubt."
+    },
+    {
+      "name": "Entzündung (1/Tag)",
+      "type": "special",
+      "text": "Der Anführer der Azer stößt einen kraftvollen\nKampfschrei aus, der die inneren Flammen aller\nVerbündeten,120 feetdie ihn sehen oder hören können, anfachen.\nFür die nächste Minute erhöht sich der Schaden ihrer\nFähigkeit „Erhitzter Körper“ um eine Würfelstufe\nauf maximal1d12  und sie erhalten 10 temporäre\nTrefferpunkte."
+    }
+  ],
+  "source": "creature"
+}

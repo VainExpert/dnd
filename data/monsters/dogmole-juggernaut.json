@@ -1,0 +1,76 @@
+{
+  "name": "Dogmole Juggernaut",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr5",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 15,
+  "hp": {
+    "average": 126,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 10,
+    "swim": 10
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 14,
+    "con": 20,
+    "int": 2,
+    "wis": 10,
+    "cha": 2
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "5",
+    "xp": 1800,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Burrow",
+      "text": "Dogmole juggernauts cannot burrow into solid rock, but they can move through softer material like soil or loose rubble, leaving a usable tunnel 10 ft. in diameter."
+    },
+    {
+      "name": "Ferocity (1/Day)",
+      "text": "When the dogmole juggernaut is reduced to 0 hit points, it doesn't die until the end of its next turn."
+    },
+    {
+      "name": "Powerful Build",
+      "text": "A dogmole juggernaut is treated as one size larger if doing so is advantageous to it (such as during grapple checks, pushing attempts, and tripping attempts, but not for the purposes of squeezing or AC). It gains advantage against magical pushing attempts such as gust of wind or Repelling Blast."
+    },
+    {
+      "name": "Wormkiller Rage",
+      "text": "Wild dogmole juggernaut packs are famed for their battles against the monsters of the dark caverns of the world. If a dogmole juggernaut draws blood against vermin, purple worms, or other underground invertebrate, it gains a +4 bonus to Strength and Constitution but suffers a -2 penalty to AC. The wormkiller rage lasts for a number of rounds equal to 1+ its Constitution modifier (minimum 1 round). It cannot end the rage voluntarily while the creatures that sent it into a rage still live."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The dogmole juggernaut makes one claw attack and one bite attack."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 11 (1d12 + 5) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 19 (4d6 + 5) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

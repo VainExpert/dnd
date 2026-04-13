@@ -1,0 +1,46 @@
+{
+  "id": "sylvanische-klaue",
+  "type": "item",
+  "name": "Sylvanische Klaue",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "gewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Kann eine einfache gesschmiedete Waffe sein, Während du die Waffe trägst, verstehst du jede nicht-geschriebene Kommunikatin aller Feen-Wesen und sie verstehen dich. Geheimnachricht: Einmal pro Tag kann eine Aktion verwendet werden um Botschaft zu wirken.",
+  "tags": [
+    "magisch",
+    "waffe",
+    "kommunikation",
+    "soziales",
+    "aktion",
+    "geheim"
+  ]
+}

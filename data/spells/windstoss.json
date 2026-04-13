@@ -1,0 +1,19 @@
+{
+  "id": "windstoss",
+  "name": "Windstoß",
+  "level": 2,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (18 m x 3 m Linie)",
+  "components": "V, G, M (Samen einer Hülsenfrucht)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Waldläufer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Für die Wirkungsdauer weht ein starker Wind in einer 18 m langen und 3 m breiten Linie von dir ausgehend in eine Richtung deiner Wahl.\nJede Kreatur, die ihren Zug innerhalb des Windes beginnt, muss einen STR-Rettungswurf bestehen oder sie wird 4,5 m entlang der Linie zurückgestoßen.\nInnerhalb der Linie ist schwieriges Terrain.\nDer Windstoß zerstreut Dampf oder Gas und löscht Kerzen, Fackeln und ähnliche ungeschützte Flammen. Geschützte Flammen, flackern wild und haben eine 50% Chance gelöscht zu werden.\nAls Bonus Aktion kannst du in jedem deiner Züge während der Wirkungsdauer die Windrichtung ändern."
+}

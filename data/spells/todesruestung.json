@@ -1,0 +1,17 @@
+{
+  "id": "todesruestung",
+  "name": "Todesrüstung",
+  "level": 2,
+  "school": "Nekromantie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G, M (Onyx im Wert von mind. 50 GM, den der Zauber konsumiert)",
+  "duration": "1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Für die Wirkungsdauer umgibt eine tintige Aura eine berührte Kreatur.\nDas Ziel hat Vorteil auf Todesrettungswürfe.\nAußerdem: 1x pro Runde, wenn eine Kreatur innerhalb von 1,5 m das Ziel mit einem Nahkampf-Angriffswurf trifft, erleidet der Angreifer 2W4 nekrotischen Schaden."
+}

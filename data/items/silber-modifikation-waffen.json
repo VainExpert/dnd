@@ -1,0 +1,47 @@
+{
+  "id": "silber-modifikation-waffen",
+  "type": "item",
+  "name": "Silber-Modifikation Waffen",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 200,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Überzieht eine geschmiedete Waffe mit Silber. Dadurch wird sie magisch und bestimmte Kreaturen haben eine Schwäche gegen Silber.",
+  "tags": [
+    "abenteuer",
+    "magisch",
+    "silber",
+    "waffe",
+    "modifikation",
+    "schmied",
+    "kampf"
+  ]
+}

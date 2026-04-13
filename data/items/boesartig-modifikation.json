@@ -1,0 +1,45 @@
+{
+  "id": "boesartig-modifikation",
+  "type": "item",
+  "name": "Bösartig-Modifikation",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Macht eine Waffe Bösartig, das heißt sie macht 7 Bonus Schaden des Waffentyps bei einem kritischen Treffer.",
+  "tags": [
+    "abenteuer",
+    "magisch",
+    "schmied",
+    "waffe",
+    "modifikation"
+  ]
+}

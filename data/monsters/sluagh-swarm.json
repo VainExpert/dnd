@@ -1,0 +1,60 @@
+{
+  "name": "Sluagh Swarm",
+  "size": "Medium",
+  "type": {
+    "type": "swarm",
+    "tags": [
+      "medium",
+      "swarm",
+      "cr3",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 13,
+  "hp": {
+    "average": 54,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 6,
+    "dex": 16,
+    "con": 11,
+    "int": 6,
+    "wis": 13,
+    "cha": 10
+  },
+  "skills": {
+    "Stealth": 5
+  },
+  "languages": [
+    "Common",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Swarm",
+      "text": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny fey. The swarm can't regain hit points or gain temporary hit points."
+    },
+    {
+      "name": "Sunlight Weakness",
+      "text": "While in sunlight, the sluagh swarm has disadvantage on attack rolls, ability checks, and saving throws."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Chilling Touch",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm's space. Hit: 28 (8d6) cold damage or 14 (4d6) cold damage if the swarm has half of its hit points or fewer. The target must make a successful DC 13 Constitution saving throw or be unable to regain hit points. An affected creature repeats the saving throw at the end of its turns, ending the effect on itself with a successful save. The effect can also be ended with a greater restoration spell or comparable magic."
+    }
+  ],
+  "source": "creature"
+}

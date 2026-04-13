@@ -1,0 +1,16 @@
+{
+  "id": "vertrauten-finden",
+  "name": "Vertrauten finden",
+  "level": 1,
+  "school": "Beschwörung",
+  "casting_time": "1 h",
+  "range": "3 m",
+  "components": "V, G, M (Holzkohle, Weihrauch und Kräuter im Wert von 10 GM, die in einer Feuerschale aus Messing von Flammen verzehrt werden)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": true,
+  "classes": [
+    "Magier"
+  ],
+  "text": "Es erscheint ein Vertrauter Tiergeist, in einer Gestalt deiner Wahl, an einer freien Stelle in Reichweite.\nEr erhält die Werte der gewählten Bestie, ist aber ein himmlisches, teuflisches oder Feen-Wesen.\nDer Vertraute ist unabhängig von dir, vor allem im Kampf, befolgt aber deine telepathischen Befehle mit bis zu 30 m Abstand. Im Kampf kann er aber nicht angreifen.\nDu kannst als Aktion durch seine Sinne die Welt wahrnehmen. Deine Eigenen sind dann blind und taub.\nDu kannst durch ihn Zauber mit Berührungsreichweite wirken. Der Vertraute nutzt dafür seine Reaktion und muss in bis zu 30 m Abstand zu dir sein. Für Zauberangriffswürfe wird dein Zauberangriffsbonus verwendet.\nDu kannst deinen Vertauten zurück rufen. Er verschwindet bis du ihn wieder rufst oder für immer. Bei Wiederruf erscheint er an einer freien Stelle in bis zu 9 m Entfernung.\nBei erneuten Wirken des Zaubers, wenn du einen Vertrauten hast, ändert dieser seine Gestalt. Der Vertraute verschwindet, wenn seine TP auf 0 sinken."
+}

@@ -1,0 +1,43 @@
+{
+  "id": "alchemiekrug",
+  "type": "item",
+  "name": "Alchemiekrug",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 6,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 75,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Keramikkrug hält bis zu 3,8 l Flüssigkeit und er macht immer schwabende Geräusche. Als Aktion kann eine Flüssigkeit bennant werden und der Krug füllt sich mit der genannten Flüssigkeit, wie in der Tabelle beschrieben. Danach kann der Krug entkorkt werden und mit einer Aktion die Flüssigkeit ausgegossen werden bis zu 7,6 l pro min. Wenn der Krug einmal Flüssigkeit produziert hat, kann es keine andere produzieren oder mehr als das Maximum für die Flüssigkeit bis zum nächsten Morgen. Flüssigkeit max. Menge Säure 250 ml Einfaches Gift 125 ml Bier 15 l Honig 3,8 l Mayonaisse 7,6 l Öl 1 l Essig 7,6 l Frischwasser 30 l Salzwasser 45 l Wein 3,8 l",
+  "tags": [
+    "alchemie",
+    "magisch",
+    "flüssigkeit"
+  ]
+}

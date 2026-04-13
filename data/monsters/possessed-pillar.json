@@ -1,0 +1,72 @@
+{
+  "name": "Possessed Pillar",
+  "size": "Large",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr7",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 95,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 8,
+    "con": 19,
+    "int": 3,
+    "wis": 11,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages of its creator but can't speak"
+  ],
+  "challenge": {
+    "cr": "7",
+    "xp": 2900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Immutable Form",
+      "text": "The pillar is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The pillar has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The pillar's weapon attacks are magical."
+    },
+    {
+      "name": "Steal Weapons",
+      "text": "The eldritch magic that powers the pillar produces a magnetic power that seizes metal objects that touch it, including metal weapons. When a creature successfully strikes the pillar with a metal melee weapon, the attacker must make a successful DC 15 Strength or Dexterity saving throw or the weapon becomes stuck to the pillar until the pillar releases it or is destroyed. The saving throw uses the same ability as the attack used. The pillar can release all metal weapons stuck to it whenever it wants. A pillar always drops all weapons stuck to it when it believes it's no longer threatened. This ability affects armor only during a grapple."
+    },
+    {
+      "name": "False Appearance",
+      "text": "While the pillar remains motionless, it is indistinguishable from a statue or a carved column."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The pillar makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

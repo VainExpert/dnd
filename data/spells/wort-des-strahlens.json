@@ -1,0 +1,16 @@
+{
+  "id": "wort-des-strahlens",
+  "name": "Wort des Strahlens",
+  "level": 0,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, M (Heiliges Symbol)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Kleriker"
+  ],
+  "text": "Du sprichst ein heiliges Wort und brennende Strahlen schießen aus dir heraus.\nJede Kreatur deiner Wahl, die du in Reichweite sehen kannst, muss einen CON-Rettungswurf schaffen oder erleidet 1W6 Strahlenschaden.\n\nAuf höheren Level: Schaden steigt um je 1W6 auf Level 5, 11 und 17."
+}

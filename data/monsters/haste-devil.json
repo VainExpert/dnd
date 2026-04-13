@@ -1,0 +1,76 @@
+{
+  "name": "Haste Devil",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr5",
+      "nerzugals-extended-bestiary",
+      "devil"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 16,
+  "hp": {
+    "average": 78,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 22,
+    "con": 14,
+    "int": 10,
+    "wis": 10,
+    "cha": 9
+  },
+  "skills": {
+    "Acrobatics": 9
+  },
+  "languages": [
+    "Common",
+    "Infernal"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Devil’s Sight",
+      "text": "Magical darkness doesn’t impede the\ndevil’s darkvision."
+    },
+    {
+      "name": "Impossible Speed",
+      "text": "The devil cannot have its speed\nreduced by any effect and can move triple its speed\nwhen it takes the dash action."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The devil has advantage on saving\nthrows against spells and other magical effects."
+    },
+    {
+      "name": "Numbing Strikes",
+      "text": "Whenever the devil makes a melee\nattack against a creature, it doesn’t provoke attacks\nof opportunity from that creature for the rest of the\nturn, whether it hits or not."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The devil uses its Whirlwind ability. It\nthen makes three attacks with its unarmed strike."
+    },
+    {
+      "name": "Unarmed Strike",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit,\nreach 5ft., one target. Hit: 8 (1d4 + 6) bludgeoning\ndamage."
+    },
+    {
+      "name": "Whirlwind",
+      "type": "special",
+      "text": "The devil performs a quick spin that\ngenerates a whirlwind in a 10 ft. radius sphere\ncentered on itself. All other creatures within this\nwhirlwind must succeed on a DC 13 Strength\nsaving throw or take 10 (3d6) bludgeoning damage\nand be flung up to 20 feet away from the whirlwind\nin a random direction and knocked prone. If a\nthrown target strikes an object, such as a·wall or\nfloor, the target takes 3 (1d6) bludgeoning damage\nfor every 10 feet it was thrown. If the target is\nthrown at another creature, that creature must\nsucceed on a DC 13 Dexterity saving throw or take\nthe same damage and be knocked prone."
+    }
+  ],
+  "source": "creature"
+}

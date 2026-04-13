@@ -1,0 +1,81 @@
+{
+  "name": "Deep Drake",
+  "size": "Large",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "large",
+      "dragon",
+      "cr9",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 17,
+  "hp": {
+    "average": 150,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30,
+    "fly": 100
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 19,
+    "con": 14,
+    "int": 11,
+    "wis": 14,
+    "cha": 12
+  },
+  "skills": {
+    "Athletics": 9,
+    "Insight": 6,
+    "Perception": 6
+  },
+  "languages": [
+    "Common",
+    "Darakhul",
+    "Draconic",
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "9",
+    "xp": 5000,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The drake has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The drake makes one bite attack, two claw attacks, and one stinger attack."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft, one target. Hit: 12 (2d6 + 5) slashing damage."
+    },
+    {
+      "name": "Stinger",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) piercing damage plus 7 (2d6) poison damage, and the target must succeed on a DC 16 Constitution saving throw or become poisoned for 4 rounds. While poisoned this way, the target must repeat the save at the start of its turn, ending the condition on a success. On a failure, it takes 10 (3d6) poison damage. When animate dead is cast on creatures killed by this poison, the caster requires no material components."
+    },
+    {
+      "name": "Breath Weapon (Recharge 5-6)",
+      "type": "special",
+      "text": "A deep drake blasts forth a crackling 80-foot line of purple-black energy that wracks its victims with pain. This attack deals 35 (10d6) necrotic damage, or half damage with a successful DC 16 Dexterity saving throw. Targets that fail this saving throw must also succeed on a DC 16 Constitution saving throw or become stunned for 1d4 rounds."
+    }
+  ],
+  "source": "creature"
+}

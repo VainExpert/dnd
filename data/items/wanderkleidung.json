@@ -1,0 +1,45 @@
+{
+  "id": "wanderkleidung",
+  "type": "item",
+  "name": "Wanderkleidung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 2,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 2,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Praktische, robuste Kleidung für längere Märsche in verschiedenen Umgebungen.",
+  "tags": [
+    "kleidung",
+    "wanderung",
+    "reise",
+    "praktisch",
+    "soziales"
+  ]
+}

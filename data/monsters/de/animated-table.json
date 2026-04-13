@@ -1,0 +1,65 @@
+{
+  "name": "Animierte Tabelle",
+  "size": "Groß",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr2",
+      "tales-from-the-yawning-portal"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 15,
+  "hp": {
+    "average": 39,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 8,
+    "con": 13,
+    "int": 1,
+    "wis": 3,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Quelle",
+      "text": "Geschichten aus dem gähnenden Portal, Seite 230"
+    },
+    {
+      "name": "Künstliche Natur",
+      "text": "Ein animierter Tisch braucht weder Luft noch Essen, Trinken oder Schlaf."
+    },
+    {
+      "name": "Anfälligkeit für Magie",
+      "text": "Der Tisch ist handlungsunfähig, solange er sich im Wirkungsbereich eines Antimagiefeldes befindet. Wird er von „Magie bannen“ getroffen, muss der Tisch einen Konstitutions-Rettungswurf gegen die Zauber-Rettungs-DC des Zaubernden bestehen, andernfalls fällt er für 1 Minute in Ohnmacht."
+    },
+    {
+      "name": "Schein",
+      "text": "Solange der Tisch stillsteht, ist er von einem normalen Tisch nicht zu unterscheiden."
+    },
+    {
+      "name": "Last",
+      "text": "Wenn sich der Tisch mindestens20 feet  geradlinig auf ein Ziel zubewegt und es dann im selben Zug mit einem Rammangriff trifft, erleidet das Ziel zusätzlich 9 (2d8) Bludgeoning-Schaden. Handelt es sich bei dem Ziel um eine Kreatur, muss sie einenDC 15  Stärke-Rettungswurf bestehen, sonst wird sie zu Boden geworfen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Widder",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 13 (2d8 + 4) Bludgeoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

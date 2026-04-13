@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-bohnenbeutel",
+  "type": "item",
+  "name": "Bohnenbeutel",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "In diesem schweren Stoffbeutel befinden sich 3W4 getrocknete Bohnen. Der Beutel wiegt 250 Gramm plus 125 Gramm für jede darin enthaltene Bohne. Wenn du den Inhalt des Beutels auf den Boden ausleerst, explodieren die Bohnen in einem Radius von drei Metern. Jede Kreatur im Wirkungsbereich -einschließlich dir - muss einen SG-15-Geschicklich-keitsrettungswurf ausführen. Scheitert der Wurf, erleidet sie 5W4 Feuerschaden, anderenfalls die Hälfte. Das Feuer entzündet brennbare Gegenstände in der Umgebung, die nicht getragen oder gehalten werden. Wenn du eine Bohne aus dem Beutel nimmst, sie in Erde oder Sand einpflanzt und bewässerst, produziert die Bohne eine Minute nach dem Pflanzen einen Effekt an der Stelle, wo sie gepflanzt wurde. Der SL kann einen Effekt aus der folgenden Tabelle auswählen, zufällig bestimmen oder einen Effekt erschaffen.",
+  "tags": []
+}

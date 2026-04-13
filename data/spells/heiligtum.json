@@ -1,0 +1,17 @@
+{
+  "id": "heiligtum",
+  "name": "Heiligtum",
+  "level": 1,
+  "school": "Bannmagie",
+  "casting_time": "1 Bonus Aktion",
+  "range": "9 m",
+  "components": "V, G, M (ein kleiner silberner Spiegel)",
+  "duration": "1 min",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Kleriker"
+  ],
+  "text": "Du schützt eine Kreatur in Reichweite vor Angriffen. Während der Wirkungsdauer muss jede Kreatur, die das geschützte Ziel angreifen will, zuerst einen WIS-Rettungswurf bestehen.\nBei Fehlschlag: Angreifer muss ein neues Ziel wählen oder verliert den Angriff oder Zauber.\nDer Zauber schützt nicht vor Flächeneffekten, wie Explosionen."
+}

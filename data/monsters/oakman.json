@@ -1,0 +1,69 @@
+{
+  "name": "Oakman",
+  "size": "Small",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "small",
+      "fey",
+      "cr1",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 12,
+  "hp": {
+    "average": 33,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 14,
+    "con": 14,
+    "int": 11,
+    "wis": 15,
+    "cha": 14
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 4
+  },
+  "languages": [
+    "Common",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The oakman’s spellcasting ability is Charisma\n(spell save DC 12, +4 to hit with spell attacks). He can innately cast the\nfollowing spells, requiring no material components:\n\n* At will: <i>druidcraft, shillelagh</i>\n\n* 3/day each: <i>entangle, goodberry</i>\n\n* 1/day each: <i>barkskin, pass without trace</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The oakman has advantage on saving throws against\nspells and other magical effects."
+    },
+    {
+      "name": "Moss Cakes",
+      "text": "Using his unique knowledge of plants and herbal mixtures, an\noakman can concoct unusual cakes from tree moss. A typical oakman has\n3 (1d6) moss cakes of random type on his person. These moss cakes have\na variety of effects and must be eaten by the target creature to take effect.\n\n1. ***Coloration.*** This moss cake is quite harmless when\neaten and does nothing more than cause the\ntarget’s skin to become spotted. The spots can be of\njust about any color, though most tend to be brown,\nred, or blue. The spots last for 1 hour before fading.\n\n2. ***Healing.*** This moss cake heals the target of 22 (5d8)\ndamage.\n\n3. ***Lethargy.*** The target falls into a state of apathy\nand becomes sluggish if it fails a DC 12 Constitution\nsaving throw. On a failed save, the target suffers\nfrom three levels of exhaustion, which can be\nremoved normally.\n\n4. ***Pain.*** Eating this moss cake wracks the target with\npain for 1 hour if it fails a DC 12 Constitution saving\nthrow. During this time, the target moves at half\nspeed, and has disadvantage on all attack rolls,\nability checks, and saving throws for 1 hour.\n\n5. ***Poison.*** Eating this moss cake poisons the target. The\ntarget must make a DC 12 Constitution saving throw.\nOn a failed saving throw, the target takes 7 (2d6)\npoison damage and is poisoned for 1 hour. While\npoisoned, the target must repeat the saving throw at\nthe beginning of each of its turns. On a failed saving\nthrow, the target spends its action retching and\nvomiting.\n\n6. ***Sleep.*** This moss cake puts the target to sleep for 1\nhour if it fails a DC 12 Constitution saving throw."
+    },
+    {
+      "name": "Tree Stride",
+      "text": "Once on his turn, the oakman can use 10 feet of his\nmovement to step magically into one living tree within his reach and\nemerge from a second living tree within 60 feet of the first tree, appearing\nin an unoccupied space within 5 feet of the second tree. Both trees must\nbe Large or bigger."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Club",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit (+4 with shillelagh), reach\n5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage, or 6 (1d8 + 2)\nbludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

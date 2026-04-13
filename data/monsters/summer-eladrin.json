@@ -1,0 +1,59 @@
+{
+  "name": "Summer Eladrin",
+  "size": "Medium",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr10",
+      "mordenkainens-tome-of-foes",
+      "elf"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 19,
+  "hp": {
+    "average": 127,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 21,
+    "con": 16,
+    "int": 14,
+    "wis": 12,
+    "cha": 18
+  },
+  "skills": {
+    "Athletics": 8,
+    "Intimidation": 8
+  },
+  "languages": [
+    "Common",
+    "Elvish",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "10",
+    "xp": 5900,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Fearsome Presence",
+      "text": "Any non-eladrin creature that starts its turn within 60 feet of the eladrin must make a DC 16 Wisdom saving throw. On a failed save, the creature becomes frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to any eladrin's Fearsome Presence for the next 24 hours."
+    },
+    {
+      "name": "Fey Step (Recharge 4-6)",
+      "text": "As a bonus action, the eladrin can teleport up to 30 feet to an unoccupied space it can see."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The eladrin has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

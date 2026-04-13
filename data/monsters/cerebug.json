@@ -1,0 +1,77 @@
+{
+  "name": "Cerebug",
+  "size": "Tiny",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "tiny",
+      "aberration",
+      "cr2",
+      "out-of-the-box-5e"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 14,
+  "hp": {
+    "average": 21,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 40,
+    "climb": 20
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 13,
+    "int": 12,
+    "wis": 10,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 2,
+    "Stealth": 4
+  },
+  "languages": [
+    "understands Common",
+    "Telepathy 60 ft."
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Hunger for the Warm Blooded",
+      "text": "A cerebug can smell the\npresence of warm blooded creatures even when buried\nbelow the surface to a range of 30 ft. even if those scents\nare covered by perfumes, rot or other strong odors."
+    },
+    {
+      "name": "Spider Climb",
+      "text": "A cerebug can climb difficult surfaces,\nincluding upside down on ceilings, without\nneeding to make an ability check."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The cerebug makes one attack with its\nburrowing claws and one with its sonic drill."
+    },
+    {
+      "name": "Burrowing Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +2 to hit,\nreach 5 ft., one target, Hit: 5 (2d4) slashing damage."
+    },
+    {
+      "name": "Parasitic Domination",
+      "type": "special",
+      "text": "The cerebug targets a stunned\ncreature within 5 ft. and attempts to burrow into its\nskull cavity. The cerebug makes an attack with its burrowing\nclaws, and any successful attack is a critical hit.\nIf this damage reduces the target to 0 hit points, the\ncerebug burrows into the skull and eats the brain, killing\nthe creature. It then occupies the skull cavity and\ntakes control of the host body. The host body begins to\nrot within 24 hours, and the cerebug attempts to use\nthe host body to lure new victims and consume more\nbrains. If the cerebug leaves the host body, the dead\ncreature can be restored to life with a resurrection spell\nor similar magic to restore the missing brain."
+    },
+    {
+      "name": "Sonic Drill",
+      "type": "special",
+      "text": "The cerebug targets one creature it can\nsense within 10 ft. It emits a focused droning beam\nof sonic energy intended to stun the target. The\ntarget must succeed on a DC 12 Intelligence saving\nthrow or take 11 (2d10) thunder damage and be\nstunned until the end of the cerebug’s next turn."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Giant Boar",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr2",
+      "monster-manual"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 12,
+  "hp": {
+    "average": 42,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 10,
+    "con": 16,
+    "int": 2,
+    "wis": 7,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "text": "If the boar moves at least 20 ft. straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Relentless (Recharges after a Short or Long Rest)",
+      "text": "If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Tusk",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

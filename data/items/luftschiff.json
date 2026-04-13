@@ -1,0 +1,44 @@
+{
+  "id": "luftschiff",
+  "type": "item",
+  "name": "Luftschiff",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 40000,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein großes Luftschiff für maximale 20 Passagiere und bis zu 1 t Cargo, benötigt auch eine Crew von 10 Leuten.",
+  "tags": [
+    "abenteuer",
+    "reise",
+    "transport",
+    "navigation"
+  ]
+}

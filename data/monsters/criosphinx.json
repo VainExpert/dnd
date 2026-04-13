@@ -1,0 +1,72 @@
+{
+  "name": "Criosphinx",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr13",
+      "homebrew"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 18,
+  "hp": {
+    "average": 228,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 15,
+    "con": 18,
+    "int": 16,
+    "wis": 16,
+    "cha": 16
+  },
+  "skills": {
+    "Arcana": 8,
+    "History": 8,
+    "Perception": 8,
+    "Religion": 8
+  },
+  "languages": [
+    "Common",
+    "Sphinx"
+  ],
+  "challenge": {
+    "cr": "13",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Inscrutable",
+      "text": "The sphinx is immune to any effect that would sense its\nemotions or read its thoughts, as well as any divination spell that\nit refuses. Wisdom (Insight) checks made to ascertain the sphinx’s\nintentions or sincerity have disadvantage."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The sphinx’s weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The sphinx makes a ram attack and two claw attacks."
+    },
+    {
+      "name": "Ram",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 17\n(3d8 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13\n(2d8 + 4) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

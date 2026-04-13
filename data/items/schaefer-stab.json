@@ -1,0 +1,43 @@
+{
+  "id": "schaefer-stab",
+  "type": "item",
+  "name": "Schäfer Stab",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 400,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn der Stab getragen wird, kann er einmal pro Tag verwendet werden um alle Nutztiere in einem 30 m Umkreis für 1 h zu kontrollieren. Tiere mit einem INt-Wert pber 3 können eine SG-13 WIS-Rettungswurf bestehen um der Kontrolle zu entgehen. Die Tiere sind vom Nutzer bezaubert und gehorchen allen Befehlen.",
+  "tags": [
+    "magisch",
+    "zauberstab",
+    "kontrolle"
+  ]
+}

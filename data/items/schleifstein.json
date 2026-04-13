@@ -1,0 +1,46 @@
+{
+  "id": "schleifstein",
+  "type": "item",
+  "name": "Schleifstein",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1,
+    "currency": "cp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein Schleifstein kann zum Schärfen von Klingen verwendet werden.",
+  "tags": [
+    "abenteuer",
+    "handwerk",
+    "schmied",
+    "schleifen",
+    "waffen",
+    "nützlich"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "perle-der-ernaehrung",
+  "type": "item",
+  "name": "Perle der Ernährung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 25,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese geschmacklose, gelatineartige Perle löst sich auf deiner Zunge auf und gibt Sättigung wie 1 Tag Rationen.",
+  "tags": [
+    "magisch",
+    "essen",
+    "ration",
+    "konsumiert",
+    "perle"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "windboe",
+  "name": "Windbö",
+  "level": 0,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du greifst die Luft und erzeugst einen der folgenden Effekte in Reichweite:\n\n * Kreaturen kleiner oder mittlerer Größe, die du wählst, müssen einen STR-Rettungswurf bestehen oder wird 1,5 m von dir weggestoßen\n\n * Der Windstoß bewegt einen kleinen, nicht gehaltenen Gegenstand (leichter als 2,5 kg) bis zu 3 m von dir weg. Diese Bewegung verursacht keinen Schaden.\n\n * Du erzeugst einen harmlosen, sensorischen Effekt."
+}

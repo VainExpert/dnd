@@ -1,0 +1,43 @@
+{
+  "id": "tueftlerwerkzeug",
+  "type": "item",
+  "name": "Tüftlerwerkzeug",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Werkzeug-Set für kleine Mechanik/Feinhandwerk. Nutzen: Kann einen winzigen Gegenstand aus Schrott fertigen, der für 1 min hält (SG 20). Fertigen: Pistole, Glocke, Haubenlaterne, Bullaugen-Laterne, Bärenfalle, Schloss, Handschellen, Spiegel, Schaufel, Signalpfeife, Zunderkästchen,",
+  "tags": [
+    "handwerk",
+    "werkzeug",
+    "nützlich"
+  ]
+}

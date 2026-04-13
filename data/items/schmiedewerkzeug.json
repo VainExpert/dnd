@@ -1,0 +1,44 @@
+{
+  "id": "schmiedewerkzeug",
+  "type": "item",
+  "name": "Schmiedewerkzeug",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 4,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 20,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Werkzeug-Set zum Schmieden und Reparieren von Metall. Nutzen: Kann eine Tür oder einen Behälter aufbrehcen (SG 20). Fertigen: Langschwert, Kurzschwert, Handaxt, Großaxt, Metallkügelchen, Eimer, Krähenfüße, Kette, Brechstange, Enterhaken, Eisentopf, Schleuderkugeln, Eisennägel",
+  "tags": [
+    "handwerk",
+    "werkzeug",
+    "nützlich",
+    "schmied"
+  ]
+}

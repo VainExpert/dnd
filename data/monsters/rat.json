@@ -1,0 +1,49 @@
+{
+  "name": "Rat",
+  "size": "Tiny",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "tiny",
+      "beast",
+      "cr0",
+      "monster-manual"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 10,
+  "hp": {
+    "average": 1,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 2,
+    "dex": 11,
+    "con": 9,
+    "int": 2,
+    "wis": 10,
+    "cha": 4
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "text": "The rat has advantage on Wisdom (Perception) checks that rely on smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
+    }
+  ],
+  "source": "creature"
+}

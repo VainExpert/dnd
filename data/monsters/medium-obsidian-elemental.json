@@ -1,0 +1,63 @@
+{
+  "name": "Medium Obsidian Elemental",
+  "size": "Medium",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr5",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 15,
+  "hp": {
+    "average": 66,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 8,
+    "con": 20,
+    "int": 4,
+    "wis": 11,
+    "cha": 11
+  },
+  "skills": {},
+  "languages": [
+    "Terran"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Brute",
+      "text": "A melee weapon attack deals one extra die of its damage when\nthe obsidian elemental hits with it (included in the attack)."
+    },
+    {
+      "name": "Death Throes",
+      "text": "When the obsidian elemental dies, it explodes, and each\ncreature within 30 feet of it must make a DC 16 Dexterity saving throw,\ntaking 17 (5d6) slashing damage and 17 (5d6) fire damage on a failed\nsaving throw, or half as much damage on a successful one."
+    },
+    {
+      "name": "Molten Glass",
+      "text": "A creature that hits the obsidian elemental with a melee\nattack while within 5 feet of it takes 7 (2d6) fire damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The obsidian elemental makes two claw attacks."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13\n(2d8 + 4) slashing damage plus 4 (1d8) fire damage."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "schuppenpanzer",
+  "type": "item",
+  "name": "Schuppenpanzer",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 22.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": {
+    "base": 14,
+    "dex_bonus": true,
+    "max": 2,
+    "stealth_disadvantage": true,
+    "type": "mittel"
+  },
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Rüstung aus überlappenden Metallplatten, die an Leder oder Stoff befestigt sind.",
+  "tags": [
+    "abenteuer",
+    "rüstung",
+    "abwehr",
+    "mittel",
+    "heimlichkeit_nachteil"
+  ]
+}

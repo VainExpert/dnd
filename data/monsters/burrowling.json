@@ -1,0 +1,74 @@
+{
+  "name": "Burrowling",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr1/2",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 13,
+  "hp": {
+    "average": 27,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 10
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 16,
+    "con": 12,
+    "int": 9,
+    "wis": 12,
+    "cha": 13
+  },
+  "skills": {
+    "Perception": 3
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Burrow Awareness",
+      "text": "A burrowling gets advantage on Perception checks if at least one other burrowling is awake within 10 feet."
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The burrowling has advantage on attack rolls when its target is adjacent to at least one other burrowling that's capable of attacking."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The burrowling makes one bite attack and one claw attack."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."
+    },
+    {
+      "name": "Sling",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +5 to hit, range 30/120 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

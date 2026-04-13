@@ -1,0 +1,55 @@
+{
+  "name": "Githzerai Anarch",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr16",
+      "mordenkainens-tome-of-foes",
+      "gith"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 20,
+  "hp": {
+    "average": 144,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 21,
+    "con": 18,
+    "int": 18,
+    "wis": 20,
+    "cha": 14
+  },
+  "skills": {
+    "Arcana": 9,
+    "Insight": 10,
+    "Perception": 10
+  },
+  "languages": [
+    "Gith"
+  ],
+  "challenge": {
+    "cr": "16",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "text": "The anarch's innate spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks). It can innately cast the following spells, requiring no components:\n\n* At will: <i>mage hand </i>(the hand is invisible)\n\n* 3/day each: <i>feather fall, jump, see invisibility, shield, telekinesis</i>\n\n* 1/day each: <i>globe of invulnerability, plane shift, teleportation circle, wall of force</i>"
+    },
+    {
+      "name": "Psychic Defense",
+      "text": "While the anarch is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

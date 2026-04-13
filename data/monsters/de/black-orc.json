@@ -1,0 +1,60 @@
+{
+  "name": "Schwarzer Ork",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "tome-of-horrors",
+      "orc"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 15,
+  "hp": {
+    "average": 16,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 12,
+    "con": 12,
+    "int": 9,
+    "wis": 10,
+    "cha": 9
+  },
+  "skills": {
+    "Intimidation": 3
+  },
+  "languages": [
+    "Common",
+    "Orc"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Der Segen des Orcus",
+      "text": "Schwarze Orks haben einen Vorteil bei Rettungswürfen gegen\ndie Zauber und Wirkungen von Untoten."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Speer",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfangriff: +4 auf den Trefferwurf, Reichweite 1,5 m[ ]\n20/60Fuß, ein Ziel. Treffer: 5 (1d6 + 2) Durchdringungsschaden oder 6 (1d8 + 2)\nDurchdringungsschaden, wenn die Waffe bei einem Nahkampfangriff mit beiden Händen geführt wird."
+    },
+    {
+      "name": "Leichte Armbrust",
+      "type": "special",
+      "text": "Fernkampfangriff: +3 auf Treffer, Reichweite80/320  Fuß,\nein Ziel. Treffer: 5 (1d8 + 1) Durchschlagschaden."
+    }
+  ],
+  "source": "creature"
+}

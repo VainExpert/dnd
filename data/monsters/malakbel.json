@@ -1,0 +1,77 @@
+{
+  "name": "Malakbel",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr9",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 14,
+  "hp": {
+    "average": 102,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 17,
+    "con": 19,
+    "int": 13,
+    "wis": 16,
+    "cha": 20
+  },
+  "skills": {
+    "Perception": 7
+  },
+  "languages": [
+    "Abyssal",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "9",
+    "xp": 5000,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Blistering Radiance",
+      "text": "The malakbel generates a 30-foot-radius aura of searing light and heat. A creature that starts its turn in the aura, or who enters it for the first time on a turn, takes 11 (2d10) radiant damage. The area in the aura is brightly lit, and it sheds dim light for another 30 feet. The aura dispels magical darkness of 3rd level or lower where the areas overlap."
+    },
+    {
+      "name": "Distortion",
+      "text": "Ranged attacks against the malakbel have disadvantage."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The malakbel has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The malakbel makes two scorching blast attacks."
+    },
+    {
+      "name": "Scorching Blast",
+      "type": "special",
+      "text": "Ranged Spell Attack: +9 to hit, range 120 ft., one target. Hit: 18 (3d8 + 5) fire damage."
+    },
+    {
+      "name": "Searing Flare (Recharge 5-6)",
+      "type": "special",
+      "text": "The malakbel intensifies its Blistering Radiance to withering levels. All creatures in the malakbel's aura take 31 (7d8) radiant damage and gain a level of exhaustion; a successful DC 16 Constitution saving throw reduces damage by half and negates exhaustion."
+    },
+    {
+      "name": "Teleport",
+      "type": "special",
+      "text": "The malakbel magically teleports to an unoccupied space it can see within 100 feet."
+    }
+  ],
+  "source": "creature"
+}

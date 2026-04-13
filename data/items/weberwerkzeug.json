@@ -1,0 +1,46 @@
+{
+  "id": "weberwerkzeug",
+  "type": "item",
+  "name": "Weberwerkzeug",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 2.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Werkzeugset zum Weben und zur Stoffbearbeitung. Nutzen: Kann einen Riss in Kleidung reparieren (SG 10) oder ein kleines Design nähen (SG 10). Fertigen: Gepolsterte Rüstung, Korb, Schlafsack, Decke, Netz, Feine Kleidung, Seil, Robe, Strick, 2-Personen-Zelt, Wanderkleidung, Kleidung",
+  "tags": [
+    "handwerk",
+    "kleidung",
+    "weben",
+    "reparieren",
+    "werkzeug",
+    "nützlich"
+  ]
+}

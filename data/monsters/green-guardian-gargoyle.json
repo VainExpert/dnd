@@ -1,0 +1,82 @@
+{
+  "name": "Green Guardian Gargoyle",
+  "size": "Medium",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr6",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 15,
+  "hp": {
+    "average": 85,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 14,
+    "con": 18,
+    "int": 6,
+    "wis": 11,
+    "cha": 7
+  },
+  "skills": {
+    "Perception": 6
+  },
+  "languages": [
+    "Common",
+    "Terran"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "False Appearance",
+      "text": "While the gargoyle remains motionless, it is\nindistinguishable from a weathered, inanimate statue that is covered in\nfungus, lichen, and moss."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The gargoyle’s attacks are magical."
+    },
+    {
+      "name": "Reanimation",
+      "text": "The eyes of a green guardian gargoyle are made of two\npieces of jet (500 gp each) that detect as both magic (faint conjuration)\nand evil. After being destroyed, a green guardian automatically reanimates\nin 1d8+2 days unless the eye gems are crushed and\ndisenchanted with both dispel magic and remove curse."
+    },
+    {
+      "name": "Swoop",
+      "text": "If the green guardian flies at least 20 feet\nstraight towards a target and then hits it with its gore\nattack on the same turn, the target takes an additional 9\n(2d8) piercing damage. If the target is a creature, it must\nmake a DC 13 Strength saving throw or be knocked prone."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The green guardian makes four attacks: one with\nits bite, two with its claws, and one with its gore."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11\n(2d8 + 2) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +45 to hit, reach 5 ft., one target. Hit: 9\n(2d6 + 2) slashing damage. If both claws attacks hit the same target, then\nit is grappled (escape DC 12) and restrained. At the start of the gargoyle’s\nnext turn, it will attempt to fly off with the target."
+    },
+    {
+      "name": "Gore",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 13\n(2d10 + 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

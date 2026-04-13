@@ -1,0 +1,72 @@
+{
+  "name": "Dorreq",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr4",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 15,
+  "hp": {
+    "average": 93,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 15
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 19,
+    "con": 13,
+    "int": 11,
+    "wis": 8,
+    "cha": 6
+  },
+  "skills": {
+    "Intimidate": 2,
+    "Perception": 3,
+    "Stealth": 8
+  },
+  "languages": [
+    "Void Speech"
+  ],
+  "challenge": {
+    "cr": "4",
+    "xp": 1100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The dorreq's innate spellcasting ability is Intelligence (spell save DC 10). It can innately cast the following spells, requiring no material components: 3/day each: blink, dimension door, haste, shatter Wasteland Stride. This ability works like tree stride, but the dorreq can use it to sink into and appear out of any sandy or rocky ground, and the range is only 30 ft. Using this ability replaces the dorreq's usual movement."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The dorreq makes two tentacle attacks and one bite attack. If both tentacle attacks hit, the target is grappled (escape DC 14)."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 22 (4d8 + 4) piercing damage."
+    },
+    {
+      "name": "Tentacle",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage. If both tentacles hit the same target in a single turn, the target is grappled (escape DC 14) and pulled within reach of the bite attack, if it was farther than 5 feet away. The target must be size Large or smaller to be pulled this way. The dorreq can maintain a grapple on one Large, two Medium, or two Small creatures at one time."
+    },
+    {
+      "name": "Entanglement",
+      "type": "special",
+      "text": "Any creature that starts its turn within 10 feet of a dorreq must make a successful DC 14 Dexterity saving throw each round or be restrained by the dorreq's tentacles until the start of its next turn. On its turn, the dorreq can ignore or freely release a creature in the affected area."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Clockwork Watchman",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr1/2",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 55,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 12,
+    "con": 12,
+    "int": 5,
+    "wis": 10,
+    "cha": 1
+  },
+  "skills": {
+    "Athletics": 4,
+    "Perception": 4
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Immutable Form",
+      "text": "The clockwork watchman is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The clockwork watchman has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Halberd",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 10 ft., onetarget. Hit: 7 (1d10 + 2) slashing damage."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage."
+    },
+    {
+      "name": "Net Cannon",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +3 to hit, range 5/15 ft., one target, size Large or smaller. Hit: the target is restrained. A mechanism within the clockwork huntsman's chest can fire a net with a 20-foot trailing cable anchored within the watchman's chest. A creature can free itself (or another creature) from the net by using its action to make a successful DC 10 Strength check or by dealing 5 slashing damage to the net at AC 10. The watchman can fire up to four nets before it must be reloaded."
+    }
+  ],
+  "source": "creature"
+}

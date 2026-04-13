@@ -1,0 +1,59 @@
+{
+  "name": "Sea Dragon Wyrmling",
+  "size": "Medium",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "medium",
+      "dragon",
+      "cr2",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 17,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60,
+    "swim": 40
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 10,
+    "con": 15,
+    "int": 13,
+    "wis": 11,
+    "cha": 15
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 2
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage plus 3 (1d6) cold damage."
+    },
+    {
+      "name": "Tidal Breath (Recharge 5-6)",
+      "type": "special",
+      "text": "The dragon exhales a crushing wave of frigid seawater in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw. On a failure, the target takes 11 (2d10) bludgeoning damage and 11 (2d10) cold damage, and is pushed 15 feet away from the dragon and knocked prone. On a successful save the creature takes half as much damage and isn't pushed or knocked prone."
+    }
+  ],
+  "source": "creature"
+}

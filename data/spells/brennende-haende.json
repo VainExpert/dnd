@@ -1,0 +1,17 @@
+{
+  "id": "brennende-haende",
+  "name": "Brennende Hände",
+  "level": 1,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (4,5 m Kegel)",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Eine Flammenwand erscheint vor dir.\nKreaturen innerhalb eines 4,5 m Kegel vor dir müssen einen DEX-Rettungswurf machen.\nBei Fehlschlag: 3W6 Feuerschaden, sonst die Hälfte\nDas Feuer entzündet nicht getragene oder gehaltene, brennbare Gegenstände.\n\nAuf höheren Level gewirkt: pro Level 1W6 mehr Feuerschaden"
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Beetlor",
+  "size": "Groß",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr5",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 60,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 15
+  },
+  "abilities": {
+    "str": 22,
+    "dex": 18,
+    "con": 17,
+    "int": 10,
+    "wis": 10,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Hypnotischer Blick",
+      "text": "Wenn eine Kreatur ihren Zug in30 feetReichweite des Beetlors beginnt und\ndessen facettenreiche Augen sehen kann, kann der Beetlor die Kreatur zwingen,\neinenDC 15Charisma-Rettungswurf durchzuführen, sofern der Beetlor nicht handlungsunfähig ist.\nBei einem Fehlschlag kann die Kreatur bis zum Beginn ihres nächsten\nZugs keine Reaktionen ausführen und würfelt mit einem W8, um zu bestimmen, was sie während ihres Zuges tut:\n\n* 1-4: Die Kreatur tut nichts.\n* 5-6: Die Kreatur führt keine Aktion oder Bonusaktion aus und nutzt ihre gesamte Bewegung, um sich in eine zufällig bestimmte Richtung zu bewegen.\n* 7-8: Die Kreatur führt einen Nahkampfangriff gegen eine zufällig bestimmte Kreatur in ihrer Reichweite aus oder tut nichts, wenn sie keinen solchen Angriff ausführen kann.\n\nEine Kreatur, die nicht überrascht ist, kann zu Beginn ihres Zuges den Blick abwenden,\num den Rettungswurf zu vermeiden. Wenn\ndie Kreatur dies tut, kann sie den Beetlor bis zum\nBeginn ihres nächsten Zuges nicht sehen; dann kann sie den Blick erneut abwenden.\nWenn die Kreatur den Beetlor in der Zwischenzeit ansieht,\nmuss sie sofort den Rettungswurf durchführen."
+    },
+    {
+      "name": "Höhle",
+      "text": "Der Beetlor kann sich durch festes Gestein graben\nund hinterlässt dabei einen 6 foot3 Meter breiten und 3 Meter hohen Tunnel."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Beetlor führt drei Angriffe aus: einen mit seinem\nBiss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite:1,5 m ., ein\nZiel. Treffer: 11 (1d10 + 6) Durchdringungsschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite:1,5 m ., ein\nZiel. Treffer: 13 (2d6 + 6) Schnittschaden."
+    }
+  ],
+  "source": "creature"
+}

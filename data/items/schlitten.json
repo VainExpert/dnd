@@ -1,0 +1,42 @@
+{
+  "id": "schlitten",
+  "type": "item",
+  "name": "Schlitten",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 150,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 20,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Schlitten zum Personen- und Lastentransport, der als Kapazität, die Summe der maximalen Kapazitäten aller vorgespannten Reittier mal 5 (inklusive Gewicht des Schlittens) hat.",
+  "tags": [
+    "abenteuer",
+    "reise"
+  ]
+}

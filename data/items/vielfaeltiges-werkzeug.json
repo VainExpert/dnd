@@ -1,0 +1,45 @@
+{
+  "id": "vielfaeltiges-werkzeug",
+  "type": "item",
+  "name": "Viefältiges Werkzeug",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "gewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 75,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieses Werkzeug sieht aus wie ein großes Schweizer Taschenmesser. Mit einer Aktion kann das Werkzeug sich in jede Form Werkzeug verwandeln. Du bist immer im Umgang geübt unabhängig von der Art des Werkzeugs in das es sich verwandelt.",
+  "tags": [
+    "nützlich",
+    "magisch",
+    "werkzeug",
+    "aktion",
+    "verwandeln"
+  ]
+}

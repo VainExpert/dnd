@@ -1,0 +1,16 @@
+{
+  "id": "waffe-des-glaubens",
+  "name": "Waffe des Glaubens",
+  "level": 2,
+  "school": "Hervorrufung",
+  "casting_time": "1 Bonus Aktion",
+  "range": "18 m",
+  "components": "V, G",
+  "duration": "1 min",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Kleriker"
+  ],
+  "text": "Du erzeugst eine schwebende Spektralwaffe in Reichweite, die während der Wirkungsdauer oder bis du den Zauber erneut wirkst, bestehen bleibt.\nBeim Wirken kannst du einen Nahkampf-Zauberangriff gegen eine Kreatur im Abstand von bis zu 1,5 m von der Waffe ausführen.\nBei Treffer: 1W8 + dein Zauberfähigkeit-Modifikator Energieschaden.\nAls Bonus Aktion kann die Waffe in einem Zug bis zu 6 m bewegt werden und einen weiteren Angriff gegen eine Kreatur im Abstand von bis zu 1,5 m von ihr ausführen.\nDie Waffe hat die Form deiner Wahl, bevorzugt in der Form der Waffe deines Gottes.\n\nAuf höheren Level gewirkt: pro Level 1W8 mehr Schaden"
+}

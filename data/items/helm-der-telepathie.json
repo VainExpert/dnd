@@ -1,0 +1,50 @@
+{
+  "id": "helm-der-telepathie",
+  "type": "item",
+  "name": "Helm der Telepathie",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "head",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 300,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [
+    "gedanken-wahrnehmen",
+    "einflusterung"
+  ],
+  "effects": [],
+  "text": "Wenn du diesen Helm trägst, kannst du als Aktion mit dem Helm den Zauber Gedanken wahrnehmen (Rettungswurf-SG 13) wirken. Solange du dich auf den Zauber konzentrierst, kannst du als Bonus Aktion eine telepathische Botschaft an eine Kreatur senden, auf die du dich konzentrierst. Sie kann antworten -dies erfordert eine Bonus Aktion -, solange du dich auf sie konzentrierst. Wenn du dich mit Gedanken wahrnehmen auf eine Kreatur konzentrierst, kannst du als Aktion mit dem Helm den Zauber Einflüsterung (Rettungswurf-SG 13) auf diese Kreatur wirken. Nachdem die Einflüsterung-Eigenschaft verwendet wurde, kann sie erst im nächsten Morgengrauen wiederverwendet werden.",
+  "tags": [
+    "helm",
+    "magisch",
+    "telepathie",
+    "zauber",
+    "gedankenwahrnehmen",
+    "einflüsterung",
+    "aktion"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "Greater Fire Crab",
+  "size": "Huge",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "huge",
+      "elemental",
+      "cr10",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 17,
+  "hp": {
+    "average": 173,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 40
+  },
+  "abilities": {
+    "str": 22,
+    "dex": 10,
+    "con": 20,
+    "int": 2,
+    "wis": 16,
+    "cha": 2
+  },
+  "skills": {
+    "Athletics": 10
+  },
+  "languages": [
+    "understands Ignan but can't speak"
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Heated Body",
+      "text": "A creature that touches the fire crab or hits it with a melee\nattack while within 5 feet of it takes 14 (4d6) fire damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The greater fire crab makes two claw attacks"
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 12 (1d12 + 6) bludgeoning damage plus 14 (4d6) fire damage. If both claw attacks hit in the same turn and the target is Huge size or smaller, the target is grappled (escape DC 16). While grappled, the target is restrained and takes 14 (4d6) fire damage at the start of its turn. The fire crab can only grapple one target at a time and cannot perform a claw attack while grappling a target."
+    },
+    {
+      "name": "Constrict",
+      "type": "special",
+      "text": "If a target is grappled, the greater fire crab squeezes it and the target\ntakes 12 (1d12 + 6) bludgeoning damage and 14 (4d6) fire damage."
+    }
+  ],
+  "source": "creature"
+}

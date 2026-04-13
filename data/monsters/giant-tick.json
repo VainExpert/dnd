@@ -1,0 +1,57 @@
+{
+  "name": "Giant Tick",
+  "size": "Small",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "small",
+      "beast",
+      "cr1/4",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 10,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 11,
+    "dex": 10,
+    "con": 11,
+    "int": 2,
+    "wis": 10,
+    "cha": 2
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "text": "The tick has advantage on Wisdom (Perception) checks\nthat rely on smell."
+    },
+    {
+      "name": "Red Ache",
+      "text": "Creatures bitten by a giant tick must make a DC\n15 Constitution saving throw or become infected with this\ndisease. Within 4 hours of infection, the infected creature\nwill develop red welts that are hot to the touch all over\ntheir skin. Their joints will swell and their bones\nwill ache painfully. While infected, the creature has\ndisadvantage on Strength checks, Strength saving\nthrows, and attack rolls that use Strength. The\nsaving throw can be repeated after every long rest\nand if successful in 2 consecutive tries (two long\nrests in a row), the creature is cured and the effects of\nthe disease end. A greater restoration spell will also\ncure the disease."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Blood Drain",
+      "type": "special",
+      "text": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target.\nHit: 2 (1d4) piercing damage and the tick attaches to the target. While\nattached, the tick doesn’t attack. Instead, at the start of each of the ticks’s\nturns, the target loses 2 (1d4) hit points due to blood loss.\n\nThe tick can detach itself by spending 5 feet of its movement. It does\nso after it drains 10 hit points of blood from the target or the target dies. A\ncreature, including the target, can use its action to detach the tick."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,57 @@
+{
+  "name": "Gelid Beetle",
+  "size": "Medium",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr1/2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 32,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 10,
+    "con": 14,
+    "int": 1,
+    "wis": 10,
+    "cha": 9
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Frigid Body",
+      "text": "A creature that touches the beetle or hits it with\na melee attack while within 5 feet of it takes 3 (1d6) cold\ndamage."
+    },
+    {
+      "name": "Frigid Weapons",
+      "text": "The beetle’s weapon attacks deal an extra\n3 (1d6) cold damage (included in the attack)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 3 (1d6) cold damage."
+    }
+  ],
+  "source": "creature"
+}

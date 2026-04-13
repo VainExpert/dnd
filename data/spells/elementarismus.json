@@ -1,0 +1,19 @@
+{
+  "id": "elementarismus",
+  "name": "Elementarismus",
+  "level": 0,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Druide",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du kontrollierst die Elemente und erzeugst einen Effekt in Reichweite:\nLuft: Eine Brise in einem 1,5 m Würfel (Stoff kräuseln, Staub aufwirbeln, Blätter rascheln, offene Türen/Läden schließen; Gehaltenes bleibt offen).\nErde: Dünner Staub-/Sandfilm auf Oberflächen in einem 1,5 m Quadrat, oder ein Wort erscheint in deiner Handschrift in Erde/Sand.\nFeuer: Harmlose Funken sowie gefärbter, duftender Rauch in einem 1,5 m Würfel. Funken können Kerzen, Fackeln oder Lampen darin entzünden; der Duft hält 1 min.\nWasser: Kühlen Nebel in einem 1,5 m Würfel, der Kreaturen/Objekte leicht befeuchtet; alternativ erschaffst du 1 Becher (ca. 250 ml) sauberes Wasser in einem offenen Behälter oder auf einer Oberfläche (verdunstet nach 1 min).\nElement formen: Erde, Sand, Feuer, Rauch, Nebel oder Wasser bis zu einem 30 cm Würfel nimmt für 1 h eine grobe Form an."
+}

@@ -1,0 +1,44 @@
+{
+  "id": "zauberstab-des-kriegsmagiers-3",
+  "type": "item",
+  "name": "Zauberstab des Kriegsmagiers, +3",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "sehr selten",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 450,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Während du diesen Zauberstab hältst, erhältst du einen +3 Bonus auf Zauberangriffswürfe. Außerdem ignorierst du Teildeckung, wenn du einen Zauberangriff ausführst.",
+  "tags": [
+    "magisch",
+    "zauberstab",
+    "bonus",
+    "kampf"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "Stone Cursed",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr1",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 17,
+  "hp": {
+    "average": 19,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 5,
+    "con": 14,
+    "int": 5,
+    "wis": 8,
+    "cha": 7
+  },
+  "skills": {},
+  "languages": [
+    "the languages it knew in life"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Cunning Opportunist",
+      "text": "The stone cursed has advantage on the attack rolls of opportunity attacks."
+    },
+    {
+      "name": "False Appearance",
+      "text": "While the stone cursed remains motionless, it is indistinguishable from a normal statue."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

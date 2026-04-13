@@ -1,0 +1,75 @@
+{
+  "name": "Elemental Locus",
+  "size": "Gargantuan",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "gargantuan",
+      "elemental",
+      "cr17",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 290,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 28,
+    "dex": 1,
+    "con": 18,
+    "int": 10,
+    "wis": 11,
+    "cha": 11
+  },
+  "skills": {
+    "Nature": 6,
+    "Perception": 6
+  },
+  "languages": [
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "17",
+    "xp": 18000,
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The elemental locus has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Immortal",
+      "text": "The elemental locus does not age and does not die when it drops to 0 hit points. If the elemental locus drops to 0 hit points, it falls into a quiescent state for 25 weeks before returning to activity with full hit points. Its spawned elementals continue fighting whatever enemies attacked the elemental locus; if no enemies are present, they defend the locus's area."
+    },
+    {
+      "name": "Massive",
+      "text": "The elemental locus is larger than most Gargantuan creatures, occupying a space of 60 by 60 feet. Its movement is not affected by difficult terrain or by Huge or smaller creatures. Other creatures can enter and move through the elemental locus's space, but they must make a successful DC 20 Strength (Athletics) check after each 10 feet of movement. Failure indicates they fall prone and can move no farther that turn."
+    },
+    {
+      "name": "Spawn Elementals",
+      "text": "As a bonus action, the elemental locus loses 82 hit points and spawns an air, earth, fire, or water elemental to serve it. Spawned elementals answer to their creator's will and are not fully independent. The types of elementals the locus can spawn depend on the terrain it embodies; for example, an elemental locus of the desert can spawn earth, fire, and air elementals, but not water."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "The elemental locus deals double damage to objects and structures."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The elemental locus makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 36 (6d8 + 9) bludgeoning damage. If the target is a creature, it must succeed on a DC 23 Strength saving throw or be knocked prone."
+    }
+  ],
+  "source": "creature"
+}

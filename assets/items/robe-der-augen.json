@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-robe-der-augen",
+  "type": "item",
+  "name": "Robe der Augen",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "erfordert Einstimmung",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese Robe ist mit augenartigen Mustern verziert. Wenn du diese Robe trägst, erhältst du die folgenden Vorteile: Die Augen auf der Robe können nicht geschlossen oder abgewendet werden. Du kannst zwar deine eigenen Augen schließen oder abwenden, doch wenn du diese Robe trägst, gelten deine Augen nie als geschlossen oder abgewendet. Wenn der Zauber Licht  auf die Robe oder der Zauber Tageslicht  im Abstand von bis zu 1,5 Metern von der Robe gewirkt wird, bist du eine Minute lang blind. Du kannst am Ende jedes deiner Züge einen Konstitutionsrettungswurf (SG 11 für Licht  oder SG 15 für Tageslicht ) ausführen und die Blindheit bei einem Erfolg beenden.",
+  "tags": []
+}

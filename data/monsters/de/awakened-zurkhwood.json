@@ -1,0 +1,55 @@
+{
+  "name": "Das erwachte Zurkhwood",
+  "size": "Riesig",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "huge",
+      "plant",
+      "cr2",
+      "out-of-the-abyss"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 13,
+  "hp": {
+    "average": 59,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 6,
+    "con": 15,
+    "int": 10,
+    "wis": 10,
+    "cha": 7
+  },
+  "skills": {},
+  "languages": [
+    "one language known by its creator"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Schein",
+      "text": "Solange der Baum sich nicht bewegt, ist er von einem gewöhnlichen Zorkholzpilz nicht zu unterscheiden."
+    },
+    {
+      "name": "Stumm",
+      "text": "Wenn das erweckte Zurkhholz von einem Mykoniden-Herrscher erschaffen wurde, kann es nicht sprechen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Friede sei mit euch",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 zum Treffer, Reichweite10 ft: , ein Ziel. Treffer: 14 (3d6 + 4) Bludgeoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

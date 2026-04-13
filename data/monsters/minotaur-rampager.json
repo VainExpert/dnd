@@ -1,0 +1,67 @@
+{
+  "name": "Minotaur Rampager",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr5",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 15,
+  "hp": {
+    "average": 114,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 21,
+    "dex": 10,
+    "con": 19,
+    "int": 9,
+    "wis": 17,
+    "cha": 12
+  },
+  "skills": {
+    "Athletics": 9,
+    "Perception": 9
+  },
+  "languages": [
+    "Abyssal"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Labyrinthine Recall",
+      "text": "The minotaur can perfectly recall\nany path it has traveled."
+    },
+    {
+      "name": "Endless Fury",
+      "text": "The minotaur's rage makes it blind to\nthe pain being inflicted upon it until it feels the\npossibility of death is a reality, at which point it\nuses a new surge of adrenaline to bring a new\ndeadly strength to every strike. As long as the\nminotaur is at or above half of its maximum hit\npoints, it has resistance to bludgeoning, piercing,\nand slashing damage from nonmagical weapons. As\nlong as the minotaur is below half of maximum hit\npoints, its strength bonus is doubled for all of its\nattacks (included in the attacks)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Greatmaul",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach\n10 ft., one target. Hit: 18 (2d12 + 5) bludgeoning\ndamage, or 23 (2d12 + 10) if the minotaur is\nbelow half of its maximum hit points."
+    },
+    {
+      "name": "Hoof Stomp",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach\n5 ft., one prone creature. Hit: 24 (3d12 + 5)\nbludgeoning damage or 29 (3d12 + 10) if the\nminotaur is below half of its maximum hit points.."
+    },
+    {
+      "name": "Rampaging Charge (Recharge 5-6)",
+      "type": "special",
+      "text": "The minotaur\nexpends all of its movement to charge up to 40\nfeet in a straight line. Each creature in the\nminotaur's path must succeed on a DC 16\nDexterity saving throw or be pushed up to 10 feet\nto either side of the minotaur's path, knocked\nprone, and take 32 (5d12) bludgeoning damage. A\ncreature that succeeds on the saving throw takes\nhalf as much damage and is pushed but not\nknocked prone. This movement by the minotaur\ndoes not provoke attacks of opportunity."
+    }
+  ],
+  "source": "creature"
+}

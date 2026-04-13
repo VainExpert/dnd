@@ -1,0 +1,56 @@
+{
+  "name": "Sundrop Squirrel",
+  "size": "Tiny",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "tiny",
+      "beast",
+      "cr1/8",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 11,
+  "hp": {
+    "average": 1,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 2,
+    "dex": 13,
+    "con": 8,
+    "int": 3,
+    "wis": 10,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/8",
+    "xp": 25,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Floral Camouflage",
+      "text": "While the squirrel remains\nmotionless, it is indistinguishable from an ordinary\ncluster of sunflowers."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft.,\none target. Hit: 1 piercing damage."
+    },
+    {
+      "name": "Disorienting Pollen (1/Day)",
+      "type": "special",
+      "text": "The squirrel unleashes a\nburst of pollen from the flowers that cover its body.\nEach non-floral creature within 10 feet of the\nsquirrel must make a DC 10 Constitution saving\nthrow.\n\nOn a failed saving throw, the creature takes 2 (1d4)\npoison damage and must roll a d8 at the start of its\nnext turn to determine what it does during that\nturn. On a 1 to 2, the creature sneezes\nuncontrollably and can move but can’t take an\naction or a bonus action. On a 3-4, the creature's\neyes water uncontrollably and it is considered\nblinded this turn. On a 5-8, the creature fights the\nadditional effects of the pollen and can act\nnormally."
+    }
+  ],
+  "source": "creature"
+}

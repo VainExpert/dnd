@@ -1,0 +1,46 @@
+{
+  "id": "geschirr_und_zaumzeug",
+  "type": "item",
+  "name": "Geschirr und Zaumzeug",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 2,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Standardgeschirr und Zaumzeug für Reittiere.",
+  "tags": [
+    "abenteuer",
+    "reise",
+    "reiten",
+    "reittier",
+    "transport",
+    "nützlich"
+  ]
+}

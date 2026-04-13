@@ -1,0 +1,78 @@
+{
+  "name": "Cunning Acrobat",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 15,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 16,
+    "con": 12,
+    "int": 15,
+    "wis": 12,
+    "cha": 12
+  },
+  "skills": {
+    "Acrobatics": 7,
+    "Deception": 3,
+    "Perception": 3,
+    "Sleight of Hand": 7,
+    "Stealth": 5
+  },
+  "languages": [
+    "Any two languages and Thieves' Cant"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Cunning Action",
+      "text": "As a bonus action, the acrobat can\ntake the Dash, Disengage, or Hide action."
+    },
+    {
+      "name": "Naturally Acrobatic",
+      "text": "The acrobat has a climb speed\nof 30 ft. In addition, whenever it makes a running\njump, the distance it can jump is increased by 3\nfeet."
+    },
+    {
+      "name": "Sneak Attack (1/Turn)",
+      "text": "The acrobat deals an extra 7\n(2d6) damage when it hits a target with a weapon\nattack and has advantage on the attack roll, or when\nthe target is within 5 feet of an ally of the acrobat\nthat isn't incapacitated and the acrobat doesn't\nhave disadvantage on the attack roll."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The acrobat makes two melee attacks:\none with its shortsword and one with its dagger."
+    },
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach\n5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +5 to hit,\nreach 5 ft. or range 20/60 ft., one target. Hit: 2\n(1d4) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

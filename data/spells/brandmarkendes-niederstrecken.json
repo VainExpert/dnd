@@ -1,0 +1,16 @@
+{
+  "id": "brandmarkendes-niederstrecken",
+  "name": "Brandmarkendes Niederstrecken",
+  "level": 2,
+  "school": "Hervorrufung",
+  "casting_time": "1 Bonus Aktion",
+  "range": "Selbst",
+  "components": "V",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Paladin"
+  ],
+  "text": "Der nächste Treffer mit einem Waffenangriff, bevor der Zauber endet, lässt deine Waffe astral leuchten: +2W6 Strahlenschaden.\nDas Ziel wird sichtbar, falls es unsichtbar ist, strahlt gedimmtes Licht in 1,5 m Radius aus und kann nicht unsichtbar werden, bis der Zauber endet.\n\nAuf höheren Level gewirkt: +1W6 Strahlenschaden pro Level."
+}

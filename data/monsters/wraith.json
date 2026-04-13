@@ -1,0 +1,61 @@
+{
+  "name": "Wraith",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr5",
+      "monster-manual"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 13,
+  "hp": {
+    "average": 67,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 6,
+    "dex": 16,
+    "con": 16,
+    "int": 12,
+    "wis": 14,
+    "cha": 15
+  },
+  "skills": {},
+  "languages": [
+    "the languages it knew in life"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Incorporeal Movement",
+      "text": "The wraith can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the wraith has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Life Drain",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 21 (4d8 + 3) necrotic damage. The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+    },
+    {
+      "name": "Create Specter",
+      "type": "special",
+      "text": "The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time."
+    }
+  ],
+  "source": "creature"
+}

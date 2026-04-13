@@ -1,0 +1,89 @@
+{
+  "name": "Haloed Reaper",
+  "size": "Large",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "large",
+      "celestial",
+      "cr13",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 18,
+  "hp": {
+    "average": 178,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 90
+  },
+  "abilities": {
+    "str": 24,
+    "dex": 18,
+    "con": 21,
+    "int": 19,
+    "wis": 20,
+    "cha": 19
+  },
+  "skills": {
+    "Acrobatics": 9,
+    "Perception": 10
+  },
+  "languages": [
+    "all",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "13",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Blinding Blades",
+      "text": "The reaper's weapon attacks are\nmagical. When the reaper hits with any weapon, the\nweapon deals an extra 3d8 necrotic damage and if the\ntarget is a creature it must succeed on a DC 15\nConstitution saving throw or become blinded until the\nreaper's next turn (included in the attack)."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The reaper's spellcasting ability is\nCharisma (spell save DC 16). The seraph can innately\ncast the following spells, requiring only verbal\ncomponents.\n\n* At will: <i>detect evil and good, hunter's mark </i>(at 5th level)<i>, invisibility </i>(self only)\n\n* 2/day each: <i>destructive wave </i>(necrotic only), <i>dimension door</i>\n\n* 1/day each: <i>disintegrate, flesh to stone</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The reaper has advantage on saving\nthrows against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The reaper makes two melee attacks, only\none of which can be a decaying touch."
+    },
+    {
+      "name": "Grand Scythe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +12 to hit, reach\n10 ft., one target. Hit: 19 (2d12 + 7) slashing damage\nplus 13 (3d8) necrotic damage and if the target is a\ncreature it must succeed on a DC 18 Constitution\nsaving throw or become blinded until the reaper's next\nturn"
+    },
+    {
+      "name": "Cleaving Swipe",
+      "type": "special",
+      "text": "The reaper spins its scythe in an arcing\nslash. Make an attack against each enemy within reach\nof the reaper's grand scythe, making a separate attack\nroll against each target."
+    },
+    {
+      "name": "Reap",
+      "type": "special",
+      "text": "Melee Weapon Attack: +12 to hit, reach 10 ft.,\none target. Hit: 40 necrotic damage. If the target is a\ncreature that has fewer than 20 hit points after this\nattack, it must succeed on a DC 15 Constitution saving\nthrow or immediately die. If the creature dies as a\nresult of this attack, the reaper regains 40 hit points."
+    },
+    {
+      "name": "Decaying Touch (3/Day)",
+      "type": "special",
+      "text": "Melee Spell Attack: +9 to hit,\nreach 5 ft., one target. Hit: 49 (10d8 + 4) necrotic\ndamage."
+    },
+    {
+      "name": "Binding Halo (Recharge 5-6)",
+      "type": "special",
+      "text": "The reaper extends its\nscythe and launches a black halo at two creatures it can\nsee within 120 feet. These creatures must succeed on\na DC 18 Dexterity saving throw or become restrained.\nA restrained creature takes 18 (4d8) necrotic damage\nat the start of its turn and can make a DC 18 Strength\nsaving throw at the end of each of its turns, ending the\neffect on itself on a success."
+    }
+  ],
+  "source": "creature"
+}

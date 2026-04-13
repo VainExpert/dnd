@@ -1,0 +1,42 @@
+{
+  "id": "trickschloss",
+  "type": "item",
+  "name": "Trickschloss",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 75,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Das Schloss sieht normal aus und kommt mit einem einzigen Schlüssel. Das Schloss passt sich magisch an um Diebe zu hindern. DEX-Würfe um das Schloss zu knacken haben Nachteil.",
+  "tags": [
+    "magisch",
+    "schloss"
+  ]
+}

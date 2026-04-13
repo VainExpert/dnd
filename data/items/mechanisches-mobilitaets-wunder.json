@@ -1,0 +1,45 @@
+{
+  "id": "mechanisches-mobolitaets-wunder",
+  "type": "item",
+  "name": "Mechanisches Mobilitäts-Wunder",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Das mechanische Wunder ist ein halb-autonomes Objekt mit magischer Energie. Sie sind schlafend bis sie aktiviert werden. Es muss mit einem einzigartigen, zugehörigen Aufziehschlüssel aufgezogen werden. Das dauert 1 min und braucht solange je 1 Aktion. Wenn es inaktiv ist, gleicht es einem metallenen Schildkrötenpanzer mit Riemen. Es muss auf dem Rücken oder an einer Flanke getragen werden (je nach Anatomie). Wenn es aufgezogen wird, verwandelt es sich in ein persönliches Bewegugnsgerät, das für 24 h aktiv ist. Wenn es aktiv ist, wird deine Bewegungsgeschwindigkeit auf 9 m erhöht, Andere Kreaturen können das Mobilitäts-Wunder nicht entfernen, außer du erlaubst es.",
+  "tags": [
+    "magisch",
+    "mechanisches wunder",
+    "mechanisch",
+    "bewegen",
+    "aktion"
+  ]
+}

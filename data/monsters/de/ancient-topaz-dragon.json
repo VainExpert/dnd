@@ -1,0 +1,78 @@
+{
+  "name": "Der uralte Topas-Drache",
+  "size": "Gigantisch",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "gargantuan",
+      "dragon",
+      "cr20",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "neutral gut",
+  "ac": 22,
+  "hp": {
+    "average": 231,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 20,
+    "dex": 24,
+    "con": 10,
+    "int": 22,
+    "wis": 16,
+    "cha": 20
+  },
+  "skills": {
+    "Arcana": 12,
+    "Insight": 9,
+    "Perception": 9,
+    "Religion": 12
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "20",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache\neinen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Aura der Erhebung",
+      "text": "Alle Verbündeten innerhalb des Bereichs30 feeterhalten einen Bonus von +6 auf\nIntelligenz-Proben und Rettungswürfe."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache führt drei Angriffe aus: einen\nmit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 zum Treffen, Reichweite:4,5 m .,\nein Ziel. Treffer: 16 (2d10 + 5) Durchdringungsschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite10 ft: .,\nein Ziel. Treffer: 12 (2d6 + 5) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer; Reichweite20 ft: .,\nein Ziel. Treffer: 14 (2d8 + 5) Bludgeoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

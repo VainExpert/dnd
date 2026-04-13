@@ -1,0 +1,80 @@
+{
+  "name": "Zweiauge",
+  "size": "Riesig",
+  "type": {
+    "type": "giant",
+    "tags": [
+      "huge",
+      "giant",
+      "cr14",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 283,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 26,
+    "dex": 10,
+    "con": 25,
+    "int": 10,
+    "wis": 14,
+    "cha": 10
+  },
+  "skills": {
+    "Athletics": 15,
+    "Perception": 7
+  },
+  "languages": [
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "14",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Verbessertes Kritisches",
+      "text": "Angriffe mit Langschwert und Speer erzielen einen kritischen Treffer,\nwenn die Augenzahl 19 oder 20 beträgt."
+    },
+    {
+      "name": "Meister im Umgang mit zwei Waffen",
+      "text": "Wenn ein Biclops mit zwei Waffen angreift,\nkann er jede 1 auf einem Schadenswürfel wiederholen und das zweite Ergebnis behalten."
+    },
+    {
+      "name": "Zwei Köpfe",
+      "text": "Der Biclops hat einen Vorteil bei Weisheits- (Wahrnehmungs-)\nProben und bei Rettungswürfen gegen Blenden, Verzaubern, Betäuben,\nEinschüchtern, Betäuben und Bewusstlosigkeit."
+    },
+    {
+      "name": "Wach",
+      "text": "Wenn einer der Köpfe des Biclops schläft, ist der andere\nwach."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Biclops führt drei Angriffe mit seinen beiden Langschwertern aus.\nEr kann stattdessen auch zwei Speere oder zwei Steine werfen."
+    },
+    {
+      "name": "Langschwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +13 auf Treffer, Reichweite15 ft: , ein Ziel.\nTreffer: 26 (4d8 + 8) Schnittschaden."
+    },
+    {
+      "name": "Speer",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +13 auf Treffer, Reichweite  15 ftFuß20/60,\nein Ziel. Treffer: 22 (4d6 + 8) Durchdringungsschaden."
+    },
+    {
+      "name": "Rock",
+      "type": "special",
+      "text": "Fernkampfangriff: +13 auf Treffer, Reichweite30/120  Fuß, ein Ziel.\nTreffer: 30 (4d10 + 8) Bludgeoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

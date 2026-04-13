@@ -1,0 +1,55 @@
+{
+  "name": "Giant Bat",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr1/4",
+      "monster-manual"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 16,
+    "con": 11,
+    "int": 2,
+    "wis": 12,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Echolocation",
+      "text": "The bat can't use its blindsight while deafened."
+    },
+    {
+      "name": "Keen Hearing",
+      "text": "The bat has advantage on Wisdom (Perception) checks that rely on hearing."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

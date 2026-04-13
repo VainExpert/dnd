@@ -1,0 +1,19 @@
+{
+  "id": "geliehenes-wissen",
+  "name": "Geliehenes Wissen",
+  "level": 2,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "V, G, M (1 Buch, im Wert von mind. 25 GM)",
+  "duration": "1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Kleriker",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du bekommst Wissen von den Geistern der Vergangenheit.\nWähle eine Fertigkeit in der du nicht geübt bist. Für die Wirkungsdauer hast du übung in der Fertigkeit.\nDer Zauber endet eher, wenn du ihn erneut wirkst."
+}

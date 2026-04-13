@@ -1,0 +1,59 @@
+{
+  "name": "Bog Beast",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 76,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 11,
+    "con": 18,
+    "int": 5,
+    "wis": 12,
+    "cha": 9
+  },
+  "skills": {
+    "Perception": 5,
+    "Survival": 5
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "text": "The bog beast has advantage on Wisdom (Perception)\nchecks based on smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The bog beast makes two attacks\nwith its claws."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit,\nreach 10 ft., one target. Hit: 12 (2d6 + 5)\nslashing damage. If the target is a creature, it\nmust succeed on a DC 14 Constitution saving\nthrow against disease or become poisoned until\nthe disease is cured. Every 24 hours that elapse, the\ntarget must repeat the saving throw, reducing its hit\npoint maximum by 5 (1d10) on a failure. The disease\nis cured on a success. The target dies if the disease\nreduces its hit point maximum to 0. This reduction of\nthe target’s hit point maximum lasts until\nthe disease is cured."
+    }
+  ],
+  "source": "creature"
+}

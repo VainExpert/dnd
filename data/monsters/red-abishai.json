@@ -1,0 +1,60 @@
+{
+  "name": "Red Abishai",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr19",
+      "mordenkainens-tome-of-foes",
+      "devil"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 22,
+  "hp": {
+    "average": 255,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 23,
+    "dex": 16,
+    "con": 19,
+    "int": 14,
+    "wis": 15,
+    "cha": 19
+  },
+  "skills": {
+    "Intimidation": 10,
+    "Perception": 8
+  },
+  "languages": [
+    "Draconic",
+    "Infernal",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "19",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "text": "Magical darkness doesn't impede the abishai's darkvision."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The abishai has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The abishai's weapon attacks are magical."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

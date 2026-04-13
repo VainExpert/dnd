@@ -1,0 +1,83 @@
+{
+  "name": "Glass Wyrm",
+  "size": "Large",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "large",
+      "dragon",
+      "cr11",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 17,
+  "hp": {
+    "average": 105,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 23,
+    "dex": 10,
+    "con": 21,
+    "int": 14,
+    "wis": 11,
+    "cha": 19
+  },
+  "skills": {
+    "Arcana": 6,
+    "Insight": 4,
+    "Perception": 8,
+    "Persuasion": 8,
+    "Stealth": 4
+  },
+  "languages": [
+    "Draconic",
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "11",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Legendary Resistance (3/day)",
+      "text": "If the dragon fails a saving throw, it can\nchoose to succeed instead."
+    },
+    {
+      "name": "Spell Reflection",
+      "text": "Any time the glass wyrm is targeted by a magic\nmissile spell, a line spell, or a spell that requires a ranged attack roll, roll a\nd6. On a 1 to 5, the dragon is unaffected. On a 6, the dragon is unaffected,\nand the effect is reflected back at the caster as though it originated from\nthe dragon, turning the caster into the target."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The glass wyrm uses its blinding reflection ability, and\nmakes one bite attack and two claw attacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) slashing damage."
+    },
+    {
+      "name": "Blinding Reflection",
+      "type": "special",
+      "text": "The glass wyrm reflects available light in a burst of radiance out to a\n30-foot radius. Creatures that can see the glass wyrm in the area must succeed on a DC 17 Dexterity saving throw or be blinded for 1 minute. A blinded creature can attempt a DC 17 Constitution saving throw at the end of each of its turns, ending the blinded condition on a success.\n\nThe glass wyrm can’t use this ability if it does not begin its turn within\nthe dim light or bright light radius of a light source."
+    },
+    {
+      "name": "Glass Shards (Recharge 5–6)",
+      "type": "special",
+      "text": "The glass wyrm breaths a 40-foot cone\nof glass razor-like glass shards. Creatures in the area must succeed on a\nDC 17 Dexterity saving throw, taking 54 (12d8) piercing damage on a\nfailed saving throw, or half as much damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

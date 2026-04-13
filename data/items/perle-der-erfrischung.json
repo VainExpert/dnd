@@ -1,0 +1,45 @@
+{
+  "id": "perle-der-erfrischung",
+  "type": "item",
+  "name": "Perle der Erfrischung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 25,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese geschmacklose, gelatineartige Perle löst sich in Flüssigkeit auf und verwandelt die Flüssigkeit in frisches, kaltes Trinkwasser. Die Perle hat keinen Effekt auf magische oder giftige Substanzen.",
+  "tags": [
+    "magisch",
+    "flüssigkeit",
+    "konsumiert",
+    "perle",
+    "verwandlung"
+  ]
+}

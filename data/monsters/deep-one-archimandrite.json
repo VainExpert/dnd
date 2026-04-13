@@ -1,0 +1,87 @@
+{
+  "name": "Deep One Archimandrite",
+  "size": "Large",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "large",
+      "humanoid",
+      "cr8",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 15,
+  "hp": {
+    "average": 153,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 40
+  },
+  "abilities": {
+    "str": 20,
+    "dex": 15,
+    "con": 17,
+    "int": 12,
+    "wis": 17,
+    "cha": 19
+  },
+  "skills": {
+    "Arcana": 4,
+    "Perception": 6
+  },
+  "languages": [
+    "Common",
+    "Void Speech"
+  ],
+  "challenge": {
+    "cr": "8",
+    "xp": 3900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "A deep one can breathe air or water with equal ease."
+    },
+    {
+      "name": "Frenzied Rage",
+      "text": "On its next turn after a deep one archimandrite takes 10 or more damage from a single attack, it has advantage on its attacks, it adds +4 to damage, and it can make one extra unholy trident attack."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The deep one archimandrite's innate spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\nAt will: bless, revivify, sacred flame, shocking grasp, suggestion\n\n3/day each: charm person, lightning bolt, sanctuary, shatter\n\n1/day each: chain lightning, cone of cold, ice storm"
+    },
+    {
+      "name": "Legendary Resistance (1/Day)",
+      "text": "If the deep one archimandrite fails a saving throw, it can count it as a success instead."
+    },
+    {
+      "name": "Lightless Depths",
+      "text": "A deep one hybrid priest is immune to the pressure effects of the deep ocean."
+    },
+    {
+      "name": "Voice of the Archimandrite",
+      "text": "With a ringing shout, the deep one archimandrite summons all deep ones within a mile to come to his aid. This is not a spell but a command that ocean creatures and deep ones heed willingly."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "A deep one archimandrite makes one claw attack and 1 unholy trident attack."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack. +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage."
+    },
+    {
+      "name": "Unholy Trident",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) piercing damage plus 13 (2d12) necrotic damage."
+    }
+  ],
+  "source": "creature"
+}

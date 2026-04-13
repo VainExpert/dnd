@@ -1,0 +1,43 @@
+{
+  "id": "sprechende-puppe",
+  "type": "item",
+  "name": "Sprechende Puppe",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "gewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 10,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Während einer Lagen Rast kannst du der Puppe, die in max. 1,5 m Abstand zu dir ist, bis zu 6 Sätze, die jeweils nicht lnger als 6 Wörter ein dürfen, beibringen. Du kannst auch alte Sätze mit neuen ersetzen. Für jeden Satz kannst du eine Bedingung defineiren unter der der Stz gesprochen wird. Die Vorraussetzuing dafür ist, dass die Bedingung in 1,5 m Abstand zur Puppe auftreten muss. Wenn die Einstimmung endet, verliert die Puppe alle beigebrachten Sätze.",
+  "tags": [
+    "magisch",
+    "kommunikation",
+    "kurze rast"
+  ]
+}

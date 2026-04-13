@@ -1,0 +1,52 @@
+{
+  "id": "ringpanzer",
+  "type": "item",
+  "name": "Ringpanzer",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 20,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 30,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": {
+    "base": 14,
+    "dex_bonus": false,
+    "stealth_disadvantage": true,
+    "type": "schwer"
+  },
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Der Ringpanzer besteth aus Leder mit eingearbeiteten Metallringen.",
+  "tags": [
+    "abenteuer",
+    "rüstung",
+    "abwehr",
+    "schwer",
+    "heimlichkeit_nachteil",
+    "schmied",
+    "lederer"
+  ]
+}

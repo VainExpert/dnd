@@ -1,0 +1,70 @@
+{
+  "name": "Sie sind",
+  "size": "Groß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr19",
+      "mordenkainens-tome-of-foes",
+      "devil"
+    ]
+  },
+  "alignment": "gesetztreu-böse",
+  "ac": 18,
+  "hp": {
+    "average": 189,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 24,
+    "dex": 17,
+    "con": 20,
+    "int": 21,
+    "wis": 24,
+    "cha": 24
+  },
+  "skills": {
+    "Intimidation": 13,
+    "Perception": 13,
+    "Persuasion": 13
+  },
+  "languages": [
+    "all",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "19",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Schrecklich",
+      "text": "Bael kann mit einer Bonusaktion bis zum Beginn seines nächsten Zuges ein furchterregendes Aussehen annehmen. Jede Kreatur – mit Ausnahme von Teufeln –, die ihren Zug in10 feetBaels Nähe beginnt, muss einenDC 22Weisheits-Rettungswurf bestehen oder ist bis zum Beginn ihres nächsten Zuges verängstigt."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Baels angeborene Zauberfähigkeit ist Charisma (ZauberrettungswurfDC 21, +13 auf Treffer bei Zauberangriffen). Er kann die folgenden Zauber von Natur aus wirken, ohne dass materielle Komponenten erforderlich sind:\n\n* Beliebig oft: Selbstverwandlung (kann bei einer Veränderung seines Aussehens die Größe „mittel“ annehmen), Tote beleben, Person bezaubern, Magie aufspüren, Wunden zufügen (als Zauber der Stufe 8), Unsichtbarkeit (nur für sich selbst), Großes Abbild\n\n* Jeweils 3/Tag: Gegenzauber, Magie bannen, Fliegen, Suggestion, Feuerwand\n\n* Jeweils 1/Tag: Monster beherrschen, Symbol (nur betäubend)"
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn Bael einen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Bael hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Baels Waffenangriffe sind magischer Natur."
+    },
+    {
+      "name": "Regeneration",
+      "text": "Bael erhält zu Beginn seines Zuges 20 Trefferpunkte zurück. Wenn er Kälte- oder Strahlungsschaden erleidet, wirkt diese Eigenschaft zu Beginn seines nächsten Zuges nicht. Bael stirbt nur, wenn er seinen Zug mit 0 Trefferpunkten beginnt und sich nicht regeneriert."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

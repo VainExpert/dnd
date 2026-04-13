@@ -1,0 +1,69 @@
+{
+  "name": "Broodiken",
+  "size": "Tiny",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "tiny",
+      "construct",
+      "cr1",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 55,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 16,
+    "int": 2,
+    "wis": 10,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 6
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Immutable Form",
+      "text": "The broodiken is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The broodiken has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Shared Rage",
+      "text": "A broodiken cannot speak with its creator telepathically, but it feels strong emotions and recognizes the objects of those emotions. A creator can telepathically order broodiken to hunt for and attack individuals by sending the broodiken an image of the creature and the appropriate emotion. As long as the broodiken is on such a hunt, it can be more than 100 feet away from its master without wailing."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage."
+    },
+    {
+      "name": "Attach",
+      "type": "special",
+      "text": "When a broodiken succeeds on a bite attack, its teeth latch on, grappling the target (escape DC 9). On each of its turns, its bite attack hits automatically as long as it can maintain its grapple."
+    }
+  ],
+  "source": "creature"
+}

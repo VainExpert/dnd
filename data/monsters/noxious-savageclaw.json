@@ -1,0 +1,66 @@
+{
+  "name": "Noxious Savageclaw",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 16,
+  "hp": {
+    "average": 39,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 14,
+    "int": 2,
+    "wis": 12,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Poison Trail",
+      "text": "The savageclaw’s body exudes poison\nin a 5 foot cube around it. Whenever the\nsavageclaw moves, this poison follows along and\nfills every space the savageclaw touched during its\nmovement. This poison dissipates after 1 round.\nAny creature that moves through one of these\npoison clouds must succeed on a DC 12\nConstitution saving throw or take 9 (2d8) poison\ndamage. A creature that holds their breath while\nmoving through one of these spaces has advantage\non the saving throw."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The savageclaw makes two attacks with\nits bite."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5ft.,\none target. Hit: 7 (1d8 + 3) piercing damage."
+    },
+    {
+      "name": "Poison Tail",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach\n5ft., one target. Hit: 6 (1d6 + 3) piercing damage\nplus 7 (2d6) poison damage and the target must\nsucceed on a DC 12 Constitution saving throw or\nbecome poisoned for 1 minute. Creatures poisoned\nin this way cannot use reactions. A creature can\nrepeat the saving throw at the end of each of its\nturns, ending the effect on itself on a success."
+    },
+    {
+      "name": "Noxious Discharge (1/Day)",
+      "type": "special",
+      "text": "The savageclaw lets out\na powerful blast of poison gas in a 15 foot cube\noriginating on itself. Any creature in this area must\nmake a DC 12 Constitution saving throw, taking 13\n(3d8) poison damage on a failed save, or half as\nmuch damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

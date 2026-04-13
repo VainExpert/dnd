@@ -1,0 +1,21 @@
+{
+  "id": "donnerschlag",
+  "name": "Donnerschlag",
+  "level": 0,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "1,5 m",
+  "components": "G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Druide",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du erzeugst einen donnernden Klang, der 9 m weit zu hören ist.\nJede Kreatur, außer dir, die sich im Umkreis von 1,5 m um dich befindet, muss einen CON-Rettungswurf machen.\nBei Fehlschlag: 1W6 Donnerschaden.\n\nAuf höheren Level: Schaden steigt um je 1W6 auf Level 5, 11 und 17."
+}

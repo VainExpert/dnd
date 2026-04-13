@@ -1,0 +1,61 @@
+{
+  "name": "Sky Raider Bat",
+  "size": "Medium",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "medium",
+      "beast",
+      "cr1/4",
+      "out-of-the-box-5e"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 18,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 16,
+    "con": 11,
+    "int": 2,
+    "wis": 12,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Echolocation",
+      "text": "The bat can’t use its blindsight while\ndeafened."
+    },
+    {
+      "name": "Flyby",
+      "text": "The bat doesn’t provoke opportunity attacks\nwhen it flies out of an enemies reach."
+    },
+    {
+      "name": "Keen Hearing",
+      "text": "The bat has advantage on Wisdom\n(Perception) checks that rely on hearing."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft.,\none creature. Hit: 5 (1d6 +2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

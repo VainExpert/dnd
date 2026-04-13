@@ -1,0 +1,408 @@
+{
+  "id": "ortsnamen-baukasten",
+  "titel": "W100 Ortsnamen-Baukastentabelle",
+  "description": "Zweiteilige W100-Baukastentabelle für Ortsnamen im Mittelalter-Fantasy-Setting. Ein Wurf für das Präfix, ein weiterer für das Suffix.",
+  "dice": 100,
+  "parts": true,
+  "header": ["Präfix", "Suffix"],
+  "1": [
+    "Aben",
+    "-au"
+  ],
+  "2": [
+    "Abern",
+    "-bach"
+  ],
+  "3": [
+    "Achen",
+    "-berg"
+  ],
+  "4": [
+    "Adler",
+    "-born"
+  ],
+  "5": [
+    "Ahorn",
+    "-bruch"
+  ],
+  "6": [
+    "Alten",
+    "-brück"
+  ],
+  "7": [
+    "Amber",
+    "-brunn"
+  ],
+  "8": [
+    "Anger",
+    "-burg"
+  ],
+  "9": [
+    "Arken",
+    "-busch"
+  ],
+  "10": [
+    "Aschen",
+    "-damm"
+  ],
+  "11": [
+    "Auen",
+    "-dorf"
+  ],
+  "12": [
+    "Bären",
+    "-eck"
+  ],
+  "13": [
+    "Berg",
+    "-fels"
+  ],
+  "14": [
+    "Bern",
+    "-feld"
+  ],
+  "15": [
+    "Birken",
+    "-furt"
+  ],
+  "16": [
+    "Blau",
+    "-garten"
+  ],
+  "17": [
+    "Blumen",
+    "-grund"
+  ],
+  "18": [
+    "Bracken",
+    "-grün"
+  ],
+  "19": [
+    "Brand",
+    "-hag"
+  ],
+  "20": [
+    "Braun",
+    "-hain"
+  ],
+  "21": [
+    "Brom",
+    "-halde"
+  ],
+  "22": [
+    "Brunn",
+    "-hall"
+  ],
+  "23": [
+    "Buchen",
+    "-heim"
+  ],
+  "24": [
+    "Dämmer",
+    "-hof"
+  ],
+  "25": [
+    "Dorn",
+    "-höhe"
+  ],
+  "26": [
+    "Drachen",
+    "-horn"
+  ],
+  "27": [
+    "Dunkel",
+    "-kamp"
+  ],
+  "28": [
+    "Eber",
+    "-kamm"
+  ],
+  "29": [
+    "Eiben",
+    "-klamm"
+  ],
+  "30": [
+    "Eichen",
+    "-klippe"
+  ],
+  "31": [
+    "Eisen",
+    "-mark"
+  ],
+  "32": [
+    "Elben",
+    "-meer"
+  ],
+  "33": [
+    "Erlen",
+    "-moor"
+  ],
+  "34": [
+    "Falken",
+    "-mühle"
+  ],
+  "35": [
+    "Farn",
+    "-rain"
+  ],
+  "36": [
+    "Felsen",
+    "-ried"
+  ],
+  "37": [
+    "Fichten",
+    "-ruh"
+  ],
+  "38": [
+    "Finster",
+    "-sand"
+  ],
+  "39": [
+    "Flammen",
+    "-schacht"
+  ],
+  "40": [
+    "Fluss",
+    "-scheid"
+  ],
+  "41": [
+    "Forst",
+    "-see"
+  ],
+  "42": [
+    "Frost",
+    "-senke"
+  ],
+  "43": [
+    "Gold",
+    "-spitz"
+  ],
+  "44": [
+    "Grau",
+    "-stadt"
+  ],
+  "45": [
+    "Grim",
+    "-steg"
+  ],
+  "46": [
+    "Grün",
+    "-stein"
+  ],
+  "47": [
+    "Hain",
+    "-tal"
+  ],
+  "48": [
+    "Hammer",
+    "-thal"
+  ],
+  "49": [
+    "Hasel",
+    "-tor"
+  ],
+  "50": [
+    "Hecken",
+    "-trift"
+  ],
+  "51": [
+    "Heide",
+    "-ufer"
+  ],
+  "52": [
+    "Herbst",
+    "-wald"
+  ],
+  "53": [
+    "Hirsch",
+    "-wang"
+  ],
+  "54": [
+    "Hoch",
+    "-wart"
+  ],
+  "55": [
+    "Holz",
+    "-wacht"
+  ],
+  "56": [
+    "Hohen",
+    "-weg"
+  ],
+  "57": [
+    "Jade",
+    "-weiler"
+  ],
+  "58": [
+    "Jäger",
+    "-wiese"
+  ],
+  "59": [
+    "Kalten",
+    "-wind"
+  ],
+  "60": [
+    "Kiefer",
+    "-winkel"
+  ],
+  "61": [
+    "Klingen",
+    "-zell"
+  ],
+  "62": [
+    "Königs",
+    "-zelln"
+  ],
+  "63": [
+    "Kupfer",
+    "-quell"
+  ],
+  "64": [
+    "Lärchen",
+    "-strom"
+  ],
+  "65": [
+    "Licht",
+    "-hafen"
+  ],
+  "66": [
+    "Lilien",
+    "-kron"
+  ],
+  "67": [
+    "Linden",
+    "-ring"
+  ],
+  "68": [
+    "Marder",
+    "-graben"
+  ],
+  "69": [
+    "Mistel",
+    "-quarz"
+  ],
+  "70": [
+    "Mond",
+    "-schlucht"
+  ],
+  "71": [
+    "Moor",
+    "-plateau"
+  ],
+  "72": [
+    "Mühlen",
+    "-forst"
+  ],
+  "73": [
+    "Nacht",
+    "-auwald"
+  ],
+  "74": [
+    "Nebel",
+    "-nest"
+  ],
+  "75": [
+    "Nord",
+    "-hainen"
+  ],
+  "76": [
+    "Ober",
+    "-bruchwald"
+  ],
+  "77": [
+    "Ochsen",
+    "-kuppe"
+  ],
+  "78": [
+    "Pilger",
+    "-zahn"
+  ],
+  "79": [
+    "Quarz",
+    "-sporn"
+  ],
+  "80": [
+    "Quell",
+    "-grat"
+  ],
+  "81": [
+    "Raben",
+    "-hügel"
+  ],
+  "82": [
+    "Regen",
+    "-klippe"
+  ],
+  "83": [
+    "Ried",
+    "-torf"
+  ],
+  "84": [
+    "Rosen",
+    "-horst"
+  ],
+  "85": [
+    "Rot",
+    "-pfad"
+  ],
+  "86": [
+    "Schatten",
+    "-ruhen"
+  ],
+  "87": [
+    "Schiefer",
+    "-hort"
+  ],
+  "88": [
+    "Silber",
+    "-blick"
+  ],
+  "89": [
+    "Sonnen",
+    "-felde"
+  ],
+  "90": [
+    "Stahl",
+    "-land"
+  ],
+  "91": [
+    "Stein",
+    "-reich"
+  ],
+  "92": [
+    "Sturm",
+    "-strom"
+  ],
+  "93": [
+    "Tannen",
+    "-wasser"
+  ],
+  "94": [
+    "Thorn",
+    "-pass"
+  ],
+  "95": [
+    "Ulmen",
+    "-bronn"
+  ],
+  "96": [
+    "Wald",
+    "-hainwald"
+  ],
+  "97": [
+    "Weiden",
+    "-felsen"
+  ],
+  "98": [
+    "Winter",
+    "-krone"
+  ],
+  "99": [
+    "Wolf",
+    "-acker"
+  ],
+  "100": [
+    "Zedern",
+    "-furten"
+  ]
+}

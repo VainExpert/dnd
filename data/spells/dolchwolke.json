@@ -1,0 +1,19 @@
+{
+  "id": "dolchwolke",
+  "name": "Dolchwolke",
+  "level": 2,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, G, M (Glassplitter)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zaubere",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du füllst die Luft in einem 1,5 m Würfel um einen Punkt in Reichweite zentriert mit wirbelnden Dolchen.\nKreaturen, die den Bereich des Zaubers betreten oder ihren Zug darin beginnen, erleiden 4W4 Hiebschaden.\n\nAuf höheren Level gewirkt: pro Level 2W4 mehr Schaden"
+}

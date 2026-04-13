@@ -1,0 +1,16 @@
+{
+  "id": "gunst-des-gluecks",
+  "name": "Gunst des Glücks",
+  "level": 2,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 min",
+  "range": "18 m",
+  "components": "V, G, M (weiße Perle im Wert von mind. 100 GM, die der Zauber konsumiert)",
+  "duration": "1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Magier"
+  ],
+  "text": "Du verleihst dir oder einer willigen Kreatur in Reichweite Glück.\nBevor der Zauber endet, kann das Ziel den Zauber auf sich beenden, um bei einem Angriffswurf, einem Attributswurf oder einem Rettungswurf einen zusätzlichen W20 zu würfeln und zu entscheiden, welchen W20 es nutzt.\nAlternativ kann das Ziel den Zauber auf sich beenden, wenn ein Angriffswurf gegen es gemacht wird: Es würfelt einen W20 und entscheidet, ob dieser Wurf oder der Wurf des Angreifers gilt.\nWenn Vorteil/Nachteil gilt, wird der zusätzliche W20 erst danach gewürfelt.\n\nAuf höheren Level gewirkt: Pro Level 1 zusätzliches Ziel."
+}

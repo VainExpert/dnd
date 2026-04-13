@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-wuerfel-der-ebenen",
+  "type": "item",
+  "name": "Würfel der Ebenen",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "legendär",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Würfel hat eine Kantenlänge von 7,5 Zentimetern und strahlt spürbare magische Energie aus. Die sechs Seiten des Würfels sind jeweils mit einer bestimmten Existenzebene verbunden. Eine davon ist die materielle Ebene. Die anderen Seiten sind mit Ebenen verbunden, die der SL bestimmt Du kannst als Aktion eine Seite des Würfels drücken und den Zauber Tor mit dem Würfel wirken. Dadurch öffnet sich ein Portal zu der zur jeweiligen Würfelseite gehörigen Ebene. Wenn du allerdings eine Aktion verwendest, um eine Seite des Würfels zweimal zu drücken, wirkst du den Zauber Ebenenwechsel  (Zauberrettungswurf-SG 17) mit dem Würfel und transportierst die Ziele zu der zur jeweiligen Würfelseite gehörigen Ebene. Der Würfel hat drei Ladungen. Jede Verwendung des Würfels verbraucht eine Ladung. Der Würfel erhält täglich im Morgengrauen 1W3 verbrauchte Ladungen zurück.",
+  "tags": []
+}

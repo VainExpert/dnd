@@ -1,0 +1,68 @@
+{
+  "name": "Mobat",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr1",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 14,
+  "hp": {
+    "average": 51,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 15,
+    "con": 16,
+    "int": 6,
+    "wis": 13,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 3
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Echolocation",
+      "text": "The mobat can’t use its blindsight while deafened."
+    },
+    {
+      "name": "Flyby",
+      "text": "The mobat doesn’t provoke an opportunity attack when it flies out\nof an enemy’s reach."
+    },
+    {
+      "name": "Keen Hearing",
+      "text": "The mobat has advantage on Wisdom (Perception)\nchecks that rely on hearing."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 13\n(3d6 + 3) piercing damage."
+    },
+    {
+      "name": "Stunning Screech (Recharge 5–6)",
+      "type": "special",
+      "text": "The mobat emits a piercing\nscreech. All creatures within 30 feet of it that can hear it must make a DC\n12 Constitution saving throw or be stunned for 1 minute. A stunned target\ncan repeat the saving throw at the end of each of its turns, ending the effect\non itself on a success."
+    }
+  ],
+  "source": "creature"
+}

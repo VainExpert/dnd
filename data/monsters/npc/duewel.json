@@ -1,0 +1,153 @@
+{
+  "id": "duewel",
+  "name": "Düwel",
+  "aliases": [],
+  "source_file": "Düwel.monster",
+  "kind": "monster",
+  "npc": true,
+  "size": "Medium",
+  "creature_type": "humanoid",
+  "subtype": "Tiefling",
+  "alignment": "chaotic evil",
+  "armor_class": {
+    "value": 15,
+    "display": "15 (studded leather)"
+  },
+  "hit_points": {
+    "average": 78,
+    "formula": "12d8 + 24"
+  },
+  "speed": {
+    "walk": "30 ft."
+  },
+  "abilities": {
+    "str": {
+      "score": 11,
+      "mod": 0
+    },
+    "dex": {
+      "score": 16,
+      "mod": 3
+    },
+    "con": {
+      "score": 14,
+      "mod": 2
+    },
+    "int": {
+      "score": 13,
+      "mod": 1
+    },
+    "wis": {
+      "score": 11,
+      "mod": 0
+    },
+    "cha": {
+      "score": 10,
+      "mod": 0
+    }
+  },
+  "saving_throws": {
+    "dex": 6,
+    "int": 4
+  },
+  "skills": {
+    "acrobatics": 6,
+    "deception": 3,
+    "perception": 3,
+    "stealth": 9
+  },
+  "damage_resistances": [
+    {
+      "name": "fire",
+      "note": "(Resistant)"
+    },
+    {
+      "name": "poison",
+      "note": "(Resistant)"
+    }
+  ],
+  "damage_immunities": [],
+  "damage_vulnerabilities": [],
+  "special_damage_defenses": [],
+  "condition_immunities": [],
+  "senses": {
+    "passive_perception": 13
+  },
+  "languages": {
+    "speaks": [
+      "Common",
+      "Infernal",
+      "Thieves' Cant"
+    ],
+    "understands": []
+  },
+  "challenge_rating": "8",
+  "xp": 3900,
+  "proficiency_bonus": 3,
+  "traits": [
+    {
+      "name": "Assassinate",
+      "text": "During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit."
+    },
+    {
+      "name": "Evasion",
+      "text": "If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+    },
+    {
+      "name": "Sneak Attack (1/Turn)",
+      "text": "The assassin deals an extra 13 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 ft. of an ally of the assassin that isn't incapacitated and the assassin doesn't have disadvantage on the attack roll."
+    }
+  ],
+  "spellcasting": [
+    {
+      "name": "Spellcasting",
+      "text": "Through his Tiefling Legacy Düwel can cast spells. His spellcasting ability is INT (spell save DC 12, +4 to hit). He can cast th efollowing spells:\n> * At will: _Fire Bolt, Thaumaturgy_\n> * 1/day: _Hellish Rebuke, Darkness_",
+      "spells": {
+        "cantrips_at_will": [
+          "Fire Bolt",
+          "Thaumaturgy"
+        ],
+        "level_1": [
+          "Hellish Rebuke"
+        ],
+        "level_2": [
+          "Darkness"
+        ]
+      },
+      "ability": "intelligence",
+      "save_dc": 12,
+      "attack_bonus": 4,
+      "usage": {
+        "daily": 1
+      }
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "text": "The assassin makes two shortsword attacks."
+    },
+    {
+      "name": "Shortsword",
+      "text": "_Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 6 (1d6 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "Light Crossbow",
+      "text": "_Ranged Weapon Attack:_ +6 to hit, range 80/320 ft., one target. _Hit:_ 7 (1d8 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one."
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [],
+  "legendary_actions": [],
+  "legendary_actions_per_round": 0,
+  "legendary_description": null,
+  "mythic_actions": [],
+  "lair_actions": [],
+  "regional_effects": [],
+  "display": {
+    "double_columns": false,
+    "separation_point": 2
+  },
+  "import_notes": [],
+  "source_format": "monster builder export"
+}

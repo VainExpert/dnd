@@ -1,0 +1,44 @@
+{
+  "id": "schuhe-des-spinnenkletterns",
+  "type": "item",
+  "name": "Schuhe des Spinnenkletterns",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "feet",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 250,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diese leichten Schuhe trägst, kannst du dich an vertikalen Oberflächen sowie kopfüber an Decken frei bewegen, wobei du die Hände frei hast. Deine Kletterbewegungsrate entspricht deiner Schrittbewegungsrate. Allerdings erlauben die Schuhe es dir nicht, dich normal auf rutschigen Oberflächen zu bewegen, die zum Beispiel mit Eis oder Öl bedeckt sind.",
+  "tags": [
+    "magisch",
+    "schuhe",
+    "bewegung",
+    "klettern"
+  ]
+}

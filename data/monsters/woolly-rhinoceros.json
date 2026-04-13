@@ -1,0 +1,65 @@
+{
+  "name": "Woolly Rhinoceros",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr6",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 172,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 21,
+    "dex": 10,
+    "con": 22,
+    "int": 3,
+    "wis": 13,
+    "cha": 2
+  },
+  "skills": {
+    "Perception": 7
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Improved Critical",
+      "text": "Gore attacks score a critical hit on a roll of 19 or 20."
+    },
+    {
+      "name": "Keen Smell",
+      "text": "The woolly rhinoceros has advantage on Wisdom\n(Perception) checks that rely on smell."
+    },
+    {
+      "name": "Charge",
+      "text": "If the woolly rhinoceros moves at least 20 feet straight toward\na creature and then hits it with a gore attack on the same turn, the target\ntakes an extra 9 (2d8) piercing damage. If the target is a creature, it must\nsucceed on a DC 15 Strength saving throw or be knocked prone. If the\ntarget is prone, the woolly rhinoceros can make one stomp attack against\nit as a bonus action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Gore",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft.,\none target. Hit: 14 (2d8 + 5) piercing damage."
+    },
+    {
+      "name": "Stomp",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5\nft., one target. Hit: 18 (2d12 + 5) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

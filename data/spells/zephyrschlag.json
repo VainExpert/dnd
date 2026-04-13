@@ -1,0 +1,16 @@
+{
+  "id": "zephyrschlag",
+  "name": "Zephyrschlag",
+  "level": 1,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Bonus Aktion",
+  "range": "Selbst",
+  "components": "V",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Waldläufer"
+  ],
+  "text": "Du bewegst dich wie der Wind.\nFür die Wirkungsdauer provoziert deine Bewegung keine Gelegenheitsangriffe.\nEinmal, bevor der Zauber endet, kannst du dir in deinem Zug Vorteil auf einen Waffenangriff geben. Bei Treffer: +1W8 Kraftschaden. Egal ob Treffer oder nicht, steigt deine Bewegungsgeschwindigkeit bis zum Ende dieses Zuges um 9 m."
+}

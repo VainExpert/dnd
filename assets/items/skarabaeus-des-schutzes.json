@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-skarabaeus-des-schutzes",
+  "type": "item",
+  "name": "Skarabäus des Schutzes",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "legendär",
+  "requires_attunement": true,
+  "attunement_text": "erfordert Einstimmung",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "head",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du dieses käferförmige Medaillon eine Runde lang in deiner Hand hältst, erscheint eine Inschrift auf seiner Oberfläche, die seine magische Natur enthüllt Solange du es bei dir trägst, verleiht es dir zwei Vorteile:",
+  "tags": []
+}

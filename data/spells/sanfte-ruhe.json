@@ -1,0 +1,18 @@
+{
+  "id": "sanfte-ruhe",
+  "name": "Sanfte Ruhe",
+  "level": 2,
+  "school": "Nekromantie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G, M (Prise Salz und 1 Kupferstück)",
+  "duration": "10 Tage",
+  "concentration": false,
+  "ritual": true,
+  "classes": [
+    "Kleriker",
+    "Paladin",
+    "Magier"
+  ],
+  "text": "Du berührst einen Leichnam oder andere sterbliche Überreste, die mit den Materialien präpariert wurden.\nFür die Wirkungsdauer wird das Ziel vor Verfall geschützt und kann nicht Untot werden.\nDer Zauber verlängert auch die Zeit, in der das Ziel wiederbelebt werden kann."
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Dungeon Dragon Wyrmling",
+  "size": "Medium",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "medium",
+      "dragon",
+      "cr4",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 17,
+  "hp": {
+    "average": 112,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 17,
+    "int": 14,
+    "wis": 15,
+    "cha": 15
+  },
+  "skills": {
+    "Investigation": 6,
+    "Perception": 6,
+    "Survival": 4
+  },
+  "languages": [
+    "all"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The dungeon dragon’s innate spellcasting ability\nis Charisma (spell save DC 12, +4 to hit with spell attacks). It can cast\nthe following spells, requiring no material components.\n\n* At will: <i>alarm, arcane lock, detect magic, identify, knock</i>\n\n* 1/day each: <i>find traps, scrying, stone shape, wall of stone</i>"
+    },
+    {
+      "name": "Labyrinthine Recall",
+      "text": "The dungeon dragon can perfectly recall any path\nit has traveled."
+    },
+    {
+      "name": "Trap Master",
+      "text": "The dungeon dragon has advantage on saving throws\nagainst the effects of traps."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9\n(1d10 + 4) piercing damage."
+    },
+    {
+      "name": "Confusion Breath (Recharge 5–6)",
+      "type": "special",
+      "text": "The dragon exhales gas in a\n15-foot cone that spreads around corners. Each creature in that area\nmust succeed on a DC 13 Constitution saving throw. On a failed save,\nthe creature is confused for 1 minute. While confused, the creature\nuses its action to Dash in a random direction, even if that movement\ntakes the creature into dangerous areas. A confused creature can\nrepeat the saving throw at the end of each of its turns, ending the\neffect on a success."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,64 @@
+{
+  "name": "Cloud Dragon Wyrmling",
+  "size": "Medium",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "medium",
+      "dragon",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 15,
+  "hp": {
+    "average": 44,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 12,
+    "con": 13,
+    "int": 14,
+    "wis": 11,
+    "cha": 13
+  },
+  "skills": {
+    "Insight": 4,
+    "Perception": 4
+  },
+  "languages": [
+    "Auran",
+    "Aquan",
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Windborn",
+      "text": "The dragon cannot be moved or knocked prone by\nmagical or nonmagical winds of any kind."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7\n(1d10 + 2) piercing damage plus 3 (1d6) cold damage."
+    },
+    {
+      "name": "Breath Weapons (Recharge 5–6)",
+      "type": "special",
+      "text": "The dragon uses one of the following\nbreath weapons.\n\n* <i>Cloud Breath.</i> The dragon exhales an icy blast in a\n15-foot cone that spreads around corners. Each creature in that area must\nmake a DC 11 Constitution saving throw, taking 22 (5d8) cold damage on\na failed saving throw, or half as much damage on a successful one.\n\n* <i>Wind Breath.</i> The dragon exhales gale-force winds in a 20-foot line that\nis 10-feet wide. Creatures in this area must make a DC 11 Strength saving\nthrow, taking 18 (4d8) bludgeoning damage on a failed saving throw and\nare pushed 20 feet directly away from the dragon. On a successful saving\nthrow, the creature takes half damage and is not pushed. A creature who\nis pushed and strikes a solid surface takes 1d6 bludgeoning damage per\n10 feet traveled. Nonmagical flames are completely extinguished, and\nmagical flames created by a spell of 2nd level or lower are immediately\ndispelled."
+    }
+  ],
+  "source": "creature"
+}

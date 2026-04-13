@@ -1,0 +1,47 @@
+{
+  "id": "anhaenger-der-wundheilung",
+  "type": "item",
+  "name": "Anhänger der Wundheilung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "neck",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 150,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diesen Anhänger trägst und sterben würdest, stabilisierst du dich zum Beginn deines Zugs. Wenn du einen Trefferwürfel verwendest, um Trefferpunkte zurückzuerhalten, verdoppelst du außerdem jedes Mal die zurückerhaltenen Trefferpunkte.",
+  "tags": [
+    "magisch",
+    "schutz",
+    "nützlich",
+    "abenteuer",
+    "einstimmung",
+    "anhänger",
+    "heilung"
+  ]
+}

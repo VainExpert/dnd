@@ -1,0 +1,44 @@
+{
+  "id": "handschellen",
+  "type": "item",
+  "name": "Handschellen",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 3,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 2,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Mit einer Aktion kann einen unwillentliche kleine bis mittlere Kreatur in 1,5 m Abstand zu dir, die gegriffen, kampfunfähig oder restrained ist, mit einem Fingerfertigkeit-Wurf (SG 13) gefesselt werden. Während die Kreatur gefesselt ist, hat sie Nachteil auf Angriffswürfe und sie ist restrained, falls die Handschellen an einem Haken oder einer Kette befestigt sind. Den Handschellen zu entkommen braucht, als Aktion, einen Fingerfertigkeit-Wurf (SG 20). Um die Handschellen zu brechen braucht es einen Athletik-Wurf (SG 25) als Aktion. Alle Handschellen kommen mit einem Schlüssel. Ohne den Schlüssel braucht es Diebeswerkzeug und einen Fingerfertigkeit-Wurf (SG 15).",
+  "tags": [
+    "abenteuer",
+    "schmied",
+    "fesseln",
+    "nützlich"
+  ]
+}

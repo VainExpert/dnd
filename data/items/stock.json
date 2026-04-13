@@ -1,0 +1,43 @@
+{
+  "id": "stock",
+  "type": "item",
+  "name": "Stock",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 3.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 5,
+    "currency": "cp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "3 m langer Stock aus Holz um entfernte Objekte zu berühren, Verschafft dir Vorteil auf Athletik-Würfe für Hoch oder Weitsprünge.",
+  "tags": [
+    "abenteuer",
+    "nützlich",
+    "holz"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "zorniges-niederstrecken",
+  "name": "Zorniges Niederstrecken",
+  "level": 1,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "V",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Paladin"
+  ],
+  "text": "Der nächste Treffer mit einer Nahkampfwaffe macht 1W6 psychischen Schaden zusätzlich.\nDie getroffene Kreatur muss einen WIS-Rettungswurf bestehen, um nicht verängstigt zu werden.\nDurch einen weiteren WIS-Rettungswurf kann die Kreatur den verängstigten Zustand wieder beenden."
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Azbara Jos",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr4",
+      "tyranny-of-dragons",
+      "human"
+    ]
+  },
+  "alignment": "gesetztreu-böse",
+  "ac": 13,
+  "hp": {
+    "average": 39,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 9,
+    "dex": 16,
+    "con": 14,
+    "int": 16,
+    "wis": 13,
+    "cha": 11
+  },
+  "skills": {
+    "Arcana": 5,
+    "Deception": 2,
+    "Insight": 3,
+    "Stealth": 5
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Infernal",
+    "Primordial",
+    "Thayan"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Sonderausstattung",
+      "text": "Azbara besitzt zwei Schriftrollen mit Magierrüstung."
+    },
+    {
+      "name": "Potente Cantrips",
+      "text": "Wenn Azbara einen Beschwörungszauber wirkt und verfehlt oder das Ziel seinen Rettungswurf besteht, erleidet das Ziel dennoch die Hälfte des Schadens des Zaubers, unterliegt jedoch keinen weiteren Effekten."
+    },
+    {
+      "name": "Zauber formen",
+      "text": "Wenn Azbara einen Beschwörungszauber wirkt, der andere Kreaturen betrifft, die er sehen kann, kann er eine Anzahl von ihnen wählen, die 1 plus der Stufe des Zaubers entspricht, damit diese ihren Rettungswurf gegen den Zauber bestehen. Diese Kreaturen erleiden keinen Schaden, wenn sie normalerweise nur die Hälfte des durch den Zauber verursachten Schadens erleiden würden."
+    },
+    {
+      "name": "Zaubersprechen",
+      "text": "Azbara ist ein Zauberwirker der Stufe 6, der Intelligenz als seine Zauberfertigkeit nutzt (ZauberrettungswurfDC 13, +5 auf Treffer bei Zauberangriffen). Azbara hat die folgenden Zauber aus der Zauberliste des Zauberers vorbereitet:\n\n* Cantrips (beliebig oft): Magische Hand, Kleiner Zauber, Froststrahl, Schockgriff\n\n* 1. Stufe (4 Plätze): Nebelwolke, Magischer Geschoss, Schild, Donnerwelle\n\n* 2. Stufe (3 Plätze): Unsichtbarkeit, Nebelschritt, Versengender Strahl\n\n* 3. Stufe (3 Plätze): Gegenzauber, Magie bannen, Feuerball"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dolch",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfangriff: +5 auf Treffer, Reichweite 1,5 m. oder Fernkampfreichweite 6 m18 m/., ein Ziel. Treffer: 5 (1d4 + 3) Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

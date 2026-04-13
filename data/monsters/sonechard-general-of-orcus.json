@@ -1,0 +1,119 @@
+{
+  "name": "Sonechard, General of Orcus",
+  "size": "Large",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr20",
+      "tome-of-horrors",
+      "demon lord"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 19,
+  "hp": {
+    "average": 336,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 22,
+    "dex": 18,
+    "con": 21,
+    "int": 19,
+    "wis": 16,
+    "cha": 20
+  },
+  "skills": {
+    "Arcana": 10,
+    "Athletics": 12,
+    "Nature": 10,
+    "Perception": 15,
+    "Religion": 10
+  },
+  "languages": [
+    "Abyssal",
+    "Celestial",
+    "Common",
+    "Draconic",
+    "Giant",
+    "Goblin",
+    "Ignan",
+    "Infernal",
+    "Terran; telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "20",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Special Equipment",
+      "text": "Sonechard carries the war pick Fool’s Errand."
+    },
+    {
+      "name": "Aggressive",
+      "text": "As a bonus action, Sonechard can move up to its speed\ntoward a hostile creature that it can see."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "Sonechard’s innate spellcasting ability is Charisma\n(spell save DC 19, +11 to hit with spell attacks). It can cast the following\nspells, requiring no material components.\n\n* At will: <i>animate dead, chill touch </i>(17th level)<i>, inflict wounds </i>(5th level)\n\n* 3/day each: <i>circle of death, create undead, fireball, finger of death, harm</i>\n\n* 1/day: <i>create undead </i>(9th level)"
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "text": "If Sonechard fails a saving throw, it can\nchoose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "Sonechard has advantage on saving throws against\nspells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "Sonechard’s weapon attacks are magical."
+    },
+    {
+      "name": "Stench",
+      "text": "Any creature that starts its turn within 10 feet of Sonechard\nmust succeed on a DC 19 Constitution saving throw or be poisoned until\nthe start of its next turn. On a successful saving throw, the creature is\nimmune to Sonechard’s Stench for 24 hours."
+    },
+    {
+      "name": "Unholy Aura",
+      "text": "An unholy aura surrounds Sonechard out to a radius of\n40 feet. A creature who enters or begins its turn in the area must make\na DC 19 Wisdom saving throw. On a failed saving throw, the target is\nfrightened for 1 minute. While frightened, it is paralyzed. A frightened\ntarget can repeat the saving throw at the end of each of its turns, ending\nthe effect on a success."
+    },
+    {
+      "name": "Undead Master",
+      "text": "When Sonechard casts animate dead or create undead,\nit creates twice the amount of undead with each casting."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Sonechard makes two attacks with Fool’s Errand, one\nclaw attack, and one head butt, or two claw attacks and one head butt."
+    },
+    {
+      "name": "Fool’s Errand",
+      "type": "special",
+      "text": "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 18 (2d8 + 9) piercing damage plus 10 (3d6) necrotic damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage."
+    },
+    {
+      "name": "Head Butt",
+      "type": "special",
+      "text": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) bludgeoning damage, and the target must succeed on a DC 20 Constitution saving throw or be stunned until the end of its\nnext turn."
+    },
+    {
+      "name": "Control Undead",
+      "type": "special",
+      "text": "Sonechard chooses one undead creature not already\nunder its control that it can see within 120 feet of it. That creature, or the\ncreature that controls it, must make a DC 19 Wisdom saving throw. On a\nfailed saving throw, the undead falls under Sonechard’s control and obeys\nits every command."
+    }
+  ],
+  "source": "creature"
+}

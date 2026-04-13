@@ -1,0 +1,72 @@
+{
+  "name": "Death",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr6",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 17,
+  "hp": {
+    "average": 112,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 15,
+    "con": 16,
+    "int": 13,
+    "wis": 14,
+    "cha": 15
+  },
+  "skills": {},
+  "languages": [
+    "all those of the creature who summoned it"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "The Law of Death",
+      "text": "At the start of each of\nDeath’s turns, undead within 10 feet of it take 10\nforce damage."
+    },
+    {
+      "name": "Chaos Vulnerability",
+      "text": "The Inexorables have disadvantage\non all saving throws against spells."
+    },
+    {
+      "name": "Inexorable",
+      "text": "The Inexorables are immune to any\neffects that would slow them or deny them\nactions or movement."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "Death’s innate spellcasting\nability is Charisma (spell save DC 13). It can\ninnately cast the following spells, requiring no\nmaterial components:\n\n* 3/day: <i>death ward</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Death makes three slam attacks\nor makes one slam attack and one Death to\nUndeath attack."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft.,\none target. Hit: 12 (2d8 + 3) bludgeoning damage."
+    },
+    {
+      "name": "Death to Undeath",
+      "type": "special",
+      "text": "Death points at an undead\ncreature within 60 feet. The target must make\na DC 13 Wisdom saving throw or take 33 (6d10)\nforce damage. On a successful save, the target\ntakes half that damage."
+    }
+  ],
+  "source": "creature"
+}

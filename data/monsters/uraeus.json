@@ -1,0 +1,60 @@
+{
+  "name": "Uraeus",
+  "size": "Tiny",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "tiny",
+      "celestial",
+      "cr2",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 14,
+  "hp": {
+    "average": 40,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 6,
+    "dex": 15,
+    "con": 14,
+    "int": 10,
+    "wis": 14,
+    "cha": 9
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "understands Celestial and Common but can't speak"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Flyby",
+      "text": "The uraeus doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 9 (2d8) poison damage, and the target must make a successful DC 12 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target takes 9 (2d8) fire damage at the start of its turn. A poisoned creature repeats the saving throw at the end of its turn, ending the effect on a success."
+    },
+    {
+      "name": "Searing Breath (Recharge 5-6)",
+      "type": "special",
+      "text": "The uraeus exhales a 15-foot cone of fire. Creatures in the area take 10 (3d6) fire damage, or half damage with a successful DC 12 Dexterity saving throw."
+    }
+  ],
+  "source": "creature"
+}

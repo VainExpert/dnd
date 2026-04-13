@@ -1,0 +1,45 @@
+{
+  "id": "magicitem-armschienen-des-bogenschuetzen",
+  "type": "item",
+  "name": "Armschienen des Bogenschützen ",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 150,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diese Armschienen trägst, bist du im Umgang mit Langbögen und Kurzbögen geübt und erhältst einen Bonus von +2 auf Schadenswürfe nach Fernkampfangriffen mit solchen Waffen.",
+  "tags": [
+    "kampf",
+    "magisch",
+    "bogen",
+    "bonus",
+    "arm"
+  ]
+}

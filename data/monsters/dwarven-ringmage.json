@@ -1,0 +1,72 @@
+{
+  "name": "Dwarven Ringmage",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "Humanoid",
+      "cr7",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "any",
+  "ac": 16,
+  "hp": {
+    "average": 82,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 13,
+    "int": 18,
+    "wis": 12,
+    "cha": 9
+  },
+  "skills": {
+    "Arcana": 7,
+    "History": 7
+  },
+  "languages": [
+    "Common",
+    "Dwarvish"
+  ],
+  "challenge": {
+    "cr": "7",
+    "xp": 2900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Dwarven Resistance",
+      "text": "The dwarven ringmage has advantage on saving throws against poison."
+    },
+    {
+      "name": "Ring Magic",
+      "text": "The dwarven ringmage can imbue a nonmagical ring with a spell that has a range of self or touch. Doing so expends components as if the dwarven ringmage had cast the spell normally and uses a spell slot one level higher than the spell normally requires. When the wearer of the ring activates the ring as an action, the spell is cast as if the dwarven ringmage had cast the spell. The dwarven ringmage does not regain the spell slot until the ring is discharged or the dwarven ringmage chooses to dismiss the spell."
+    },
+    {
+      "name": "Ring-Staff Focus",
+      "text": "The dwarven ringmage can use his ring-staff as a focus for spells that require rings as a focus or component, or for his Ring Magic ability. If used as a focus for Ring Magic, the spell does not require a spell slot one level higher than the spell normally requires. Once per day, the dwarven ringmage can imbue a spell of 4th level or lower into his ring-staff by expending a spell slot equal to the spell being imbued."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The mage has the following wizard spells prepared:\n\nCantrips (at will): fire bolt, mage hand, shocking grasp, true strike\n\n1st level (4 slots): expeditious retreat, magic missile, shield, thunderwave\n\n2nd level (3 slots): misty step, web\n\n3rd level (3 slots): counterspell, fireball, fly\n\n4th level (3 slots): greater invisibility, ice storm\n\n5th level (1 slot): cone of cold"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The dwarven ringmage makes two melee attacks."
+    },
+    {
+      "name": "Ring-Staff",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft, one target. Hit: 3 (1d6) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

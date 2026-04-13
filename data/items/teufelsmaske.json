@@ -1,0 +1,45 @@
+{
+  "id": "teufelsmaske",
+  "type": "item",
+  "name": "Teufelsmaske",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 25,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Während du diese Maske trägst, haben andere Kreaturen Nachteil auf Nachforschung- und Motiv erkennen-Würfe um deine wahre Identität oder Intentionen zu erkennen.",
+  "tags": [
+    "kleidung",
+    "maske",
+    "nachteil",
+    "nachforschung",
+    "motiv erkennen"
+  ]
+}

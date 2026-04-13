@@ -1,0 +1,77 @@
+{
+  "name": "Gem Dog",
+  "size": "Small",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "small",
+      "monstrosity",
+      "cr9",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 16,
+  "hp": {
+    "average": 112,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 22,
+    "dex": 16,
+    "con": 18,
+    "int": 12,
+    "wis": 18,
+    "cha": 13
+  },
+  "skills": {
+    "Perception": 8,
+    "Stealth": 7
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The gem dog’s spellcasting ability is Wisdom\n(spell save DC 16, +8 to hit with spell attacks). The gem dog can innately\ncast the following spells, requiring no material, verbal, or somatic components:\n\n* At will: <i>color spray, dancing lights, faerie fire</i>\n\n* 3/day each: <i>blur, heat metal, hypnotic pattern, mirror image, misty step, moonbeam</i>\n\n* 1/day: <i>hallucinatory terrain</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The gem dog has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The gem dog attacks once with its bite and twice with its\nclaws, or it can make two Gem Spine Spray attacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 28\n(4d10 + 6) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 15\n(2d8 + 6) slashing damage."
+    },
+    {
+      "name": "Gem Spine Spray",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +7 to hit, range 20/60 ft.,\none target. Hit: 30 (5d10 + 3) piercing."
+    },
+    {
+      "name": "Blinding Gleam",
+      "type": "special",
+      "text": "If the gem dog is in bright light, it can force one\ncreature that it can see within 60 feet of it to make a DC 16 Dexterity\nsaving throw if the gem dog isn’t incapacitated. On a failed save, the\ncreature is blinded for 1 minute as the gem dog reflects light into its eyes.\n\nA creature that isn’t surprised can avert its eyes to avoid the saving\nthrow at the start of its turn. If it does so, it can’t see the gem dog until the\nstart of its next turn, when it can avert its eyes again. If it looks at the gem\ndog in the meantime, it must immediately make the save."
+    }
+  ],
+  "source": "creature"
+}

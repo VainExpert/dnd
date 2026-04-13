@@ -1,0 +1,103 @@
+{
+  "name": "Arbeitnehmer",
+  "size": "Groß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr21",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "gesetztreu-böse",
+  "ac": 17,
+  "hp": {
+    "average": 275,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 20,
+    "climb": 40,
+    "fly": 80
+  },
+  "abilities": {
+    "str": 22,
+    "dex": 20,
+    "con": 25,
+    "int": 19,
+    "wis": 21,
+    "cha": 25
+  },
+  "skills": {
+    "Deception": 14,
+    "Insight": 12,
+    "Perception": 12,
+    "Stealth": 12
+  },
+  "languages": [
+    "Celestial",
+    "Common",
+    "Draconic",
+    "Infernal",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "21",
+    "xp": 33000,
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn Arbeyach einen Rettungswurf verfehlt, kann es sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Arbeyach hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Arbeyachs Waffenangriffe sind magischer Natur."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Arbeyachs Zauberfertigkeit ist Charisma (ZauberrettungswurfDC 22, +14 auf Treffer bei Zauberangriffen). Arbeyach kann die folgenden Zauber von Natur aus wirken, ohne dass materielle Komponenten erforderlich sind:\n\n* Beliebig oft: Giftsprüh\n\n* Je 3/Tag: Nebelwolke, Stinkwolke\n\n* Je 1/Tag: Wolkenmord, Ansteckung, Insektenplage"
+    },
+    {
+      "name": "Aura der Angst",
+      "text": "Jede Kreatur, die Arbeyach feindlich gesinnt ist und ihren Zug in20 feetseiner Nähe beginnt, muss einenDC 22Weisheits-Rettungswurf durchführen, es sei denn, Arbeyach ist handlungsunfähig. Bei einem misslungenen Rettungswurf ist die Kreatur bis zum Beginn ihres nächsten Zuges verängstigt. Ist der Rettungswurf erfolgreich, ist die Kreatur für die nächsten 24 Stunden immun gegen Arbeyachs Furcht-Aura."
+    },
+    {
+      "name": "Aura der Virulenz",
+      "text": "Wesen, die normalerweise gegen Giftschaden oder den Zustand „Vergiftet“ resistent oder immun sind, verlieren diese Resistenz oder Immunität, solange sie sich in120 feet  von Arbeyach befinden. Alle anderen Wesen in120 feet  von Arbeyach haben Nachteil bei Rettungswürfen gegen Effekte, die Giftschaden oder den Zustand „Vergiftet“ verursachen."
+    },
+    {
+      "name": "Schwarmprinz",
+      "text": "Arbeyach kann über120 feetPheromonübertragung mit den Nachkommen von Arbeyach sowie mit sämtlichem Ungeziefer und allen Insekten, einschließlich Schwärmen und riesigen Arten, kommunizieren. In einem Bienenstock erstreckt sich diese Reichweite über den gesamten Bienenstock. Es handelt sich um eine lautlose und augenblickliche Form der Kommunikation, die nur Arbeyach, die Nachkommen von Arbeyach, Insekten und Ungeziefer verstehen können. Alle diese Wesen befolgen Arbeyachs Befehle und würden dem Teufel niemals etwas zuleide tun."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Arbeyach führt einen Bissangriff und zwei Klauenangriffe aus."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +13 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 15 (2d8 + 6) Durchbohrungsschaden plus 9 (2d8) Giftschaden. Ist das Ziel eine Kreatur, muss sie einenDC 22  Konstitutionsrettungswurf bestehen oder wird mit der „Arbeyach-Fäulnis“ verflucht. Das verfluchte Ziel ist vergiftet, kann keine Trefferpunkte zurückgewinnen, seine maximalen Trefferpunkte verringern sich alle 24 Stunden um 13 (3d8) und Ungeziefer greift die Kreatur sofort an, sobald sie sie erblickt. Wenn der Fluch die maximalen Trefferpunkte des Ziels auf 0 reduziert, stirbt das Ziel und verwandelt sich sofort in einen zufällig ausgewählten Insektenschwarm. Der Fluch hält an, bis er durch den Zauber „Fluch beseitigen“ oder vergleichbare Magie aufgehoben wird."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +13 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 10 (1d8 + 6) Schnittschaden plus 9 (2d8) Giftschaden."
+    },
+    {
+      "name": "Ungezieferatem (Aufladen 5-6)",
+      "type": "special",
+      "text": "Arbeyach spuckt Ungeziefer in einer 120 Fuß langen10 feet Linie aus. Jede Kreatur in der Linie erleidet 54 (12d8) Giftschaden oder die Hälfte des Schadens bei einem erfolgreichenDC 22Geschicklichkeits-Rettungswurf. Jede Kreatur, die diesen Rettungswurf verfehlt, muss einenDC 22Konstitutions-Rettungswurf bestehen oder wird mit der „Arbeyach-Fäulnis“ verflucht (siehe den Angriff „Biss“). Zudem beschwört Arbeyach an einer beliebigen Stelle der Linie einen Insektenschwarm (beliebiger Art). Der Schwarm bleibt bestehen, bis er zerstört wird, bis Arbeyach ihn als Bonusaktion auflöst oder für 2 Minuten. Es können nicht mehr als fünf Insektenschwärme gleichzeitig beschworen werden."
+    }
+  ],
+  "source": "creature"
+}

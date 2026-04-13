@@ -1,0 +1,65 @@
+{
+  "name": "Zealoraptor Zombie",
+  "size": "Large",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "large",
+      "undead",
+      "cr2",
+      "homebrew"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 11,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 15,
+    "int": 3,
+    "wis": 8,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Pounce",
+      "text": "If the zombie moves at least 20 feet\nstraight toward a creature and then hits it with a\nclaw attack on the same turn, that target must\nsucceed on a DC 13 Strength saving throw or be\nknocked prone. If the target is prone, the zombie\ncan make one bite attack against it as a bonus\naction."
+    },
+    {
+      "name": "Undead Fortitude",
+      "text": "If damage reduces the zombie\nto 0 hit points, it must make a Constitution saving\nthrow with a DC of 5 + the damage taken, unless\nthe damage is radiant or from a critical hit. On a\nsuccess, the zombie drops to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The zombie makes two attacks: one\nwith its bite and one with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft.,\none target. Hit: 8 (1d10 + 3) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft.,\none target. Hit: 8 (1d10 + 3) slashing damage, and if\nthe target is a creature it must succeed on a DC 12\nConstitution saving throw or contract Sewer Plague\n(see \"Diseases\" in chapter 8 of the Dungeon\nMaster’s Guide)."
+    }
+  ],
+  "source": "creature"
+}

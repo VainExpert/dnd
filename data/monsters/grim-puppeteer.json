@@ -1,0 +1,75 @@
+{
+  "name": "Grim Puppeteer",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr6",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 16,
+  "hp": {
+    "average": 98,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 17,
+    "con": 14,
+    "int": 14,
+    "wis": 10,
+    "cha": 18
+  },
+  "skills": {
+    "Deception": 10,
+    "Performance": 10,
+    "Persuasion": 7,
+    "Sleight of Hand": 6
+  },
+  "languages": [
+    "Common",
+    "Infernal",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Legion of Puppets",
+      "text": "The puppeteer crafts and distributes\nGrinning Marionettes. The puppeteer may use its\naction to see through the eyes of any of its\nmarionettes. While seeing through the eyes of a\nmarionette, the puppeteer is blind to everything\nhappening around its body. The puppeteer is in\nconstant telepathic communication with all of its\npuppets and they follow its will."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The puppeteer’s innate spellcasting\nability is Charisma (spell save DC 15). It can innately\ncast the following spells, requiring no components:\n\n* At will: <i>alter self, charm person, crown of madness</i>\n\n* 3/Day: <i>dominate person, hold person</i>"
+    },
+    {
+      "name": "Master Ventriloquist",
+      "text": "The puppeteer can cast spells\nwithout any somatic or verbal components and can\nperfectly mimic any voice it has ever heard."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The puppeteer makes three attacks with its\nrazor strings."
+    },
+    {
+      "name": "Razor Strings",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach\n15ft., one target. Hit: 10 (2d6 + 3) slashing damage."
+    },
+    {
+      "name": "Strings Attached (Recharge 5-6)",
+      "type": "special",
+      "text": "The puppeteer\nteleports to an unoccupied space within 120 feet and\nmakes three attacks with its razor strings against a\nsingle target, then casts dominate person on them. If at\nleast two of puppeteer’s attacks hit, the target has\ndisadvantage on their saving throw against the spell."
+    }
+  ],
+  "source": "creature"
+}

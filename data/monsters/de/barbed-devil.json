@@ -1,0 +1,79 @@
+{
+  "name": "Stachelteufel",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr5",
+      "monster-manual",
+      "devil"
+    ]
+  },
+  "alignment": "gesetztreu-böse",
+  "ac": 15,
+  "hp": {
+    "average": 110,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 17,
+    "con": 18,
+    "int": 12,
+    "wis": 14,
+    "cha": 14
+  },
+  "skills": {
+    "Deception": 5,
+    "Insight": 5,
+    "Perception": 8
+  },
+  "languages": [
+    "Infernal",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Stachelhaut",
+      "text": "Zu Beginn jedes seiner Züge fügt der Stachelteufel jeder Kreatur, die ihn festhält, 5 (1d10) Durchdringungsschaden zu."
+    },
+    {
+      "name": "Teufelsblick",
+      "text": "Magische Dunkelheit beeinträchtigt die Dunkelheitssicht des Teufels nicht."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Teufel hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Teufel führt drei Nahkampfangriffe aus: einen mit seinem Schwanz und zwei mit seinen Klauen. Alternativ kann er zweimal „Flammenwurf“ einsetzen."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5 ft  ., ein Ziel. Treffer: 6 (1d6 + 3) Durchdringungsschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 10 (2d6 + 3) Durchdringungsschaden."
+    },
+    {
+      "name": "Feuerball werfen",
+      "type": "special",
+      "text": "Fernkampf-Zauberangriff: +5 auf den Trefferwurf, Reichweite 45 m., ein Ziel. Treffer: 10 (3d6) Feuerschaden. Handelt es sich bei dem Ziel um einen brennbaren Gegenstand, der nicht getragen oder bei sich geführt wird, fängt dieser zudem Feuer."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Elven Warden",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "out-of-the-box-5e",
+      "elf"
+    ]
+  },
+  "alignment": "chaotic good",
+  "ac": 16,
+  "hp": {
+    "average": 65,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 18,
+    "con": 14,
+    "int": 15,
+    "wis": 11,
+    "cha": 14
+  },
+  "skills": {
+    "Athletics": 4,
+    "Deception": 4
+  },
+  "languages": [
+    "Common",
+    "Elvish"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Fey Ancestry",
+      "text": "The elven warden has advantage on\nsaving throws against being charmed, and magic\ncan’t put them to sleep."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The elven warden makes three melee\nattacks: two with their longsword and one with\ntheir dagger. Or the warden makes two ranged attacks\nwith their daggers."
+    },
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach\n5 ft., one target. Hit: 6 (1d8 +2) slashing damage,\nor 7 (1d10 +2) slashing damage if used with both\nhands."
+    },
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +5 to hit,\nreach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 +3) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "staubteufel",
+  "name": "Staubteufel",
+  "level": 2,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "18 m (1,5 m Würfel)",
+  "components": "V, G, M (Prise Staub)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Wähle einen unbesetzten Ort mit einem 1,5 m Würfel Luft in Reichweite den du sehen kannst. Ein elementarer Staubteufel erscheint in dem Würfel und hält für die Wirkungsdauer des Zaubers an.\nJede Kreatur, die ihren Zug mit 1,5 m Abstand zu dem Staubteufel beendet muss einen STR-Rettungswurf machen.\nBei Fehlschlag: 1W8 Wuchtschaden und wird 3 m von Staubteufel weggeschleudert\nBei Erfolg: Halb so viel Schaden und nicht weggestoßen.\nAls Bonus Aktion kann sich der Staubteufel bis zu 9 m in eine beliebige Richtung bewegen. Staub, Kies, Sand und loser Schmutz wird dabei aufgesammelt und bildet eine Trümmerwolke mit 3 m Radius bis zum Beginn deines nächsten Zuges. Die Wolke verdunkelt das Gebiet stark.\n\nAuf höheren Level gewirkt: pro Level 1W8 mehr Schaden"
+}

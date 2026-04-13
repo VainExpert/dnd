@@ -1,0 +1,18 @@
+{
+  "id": "tashas-fuerchterlicher-lachanfall",
+  "name": "Tashas Fürchterlicher Lachanfall",
+  "level": 1,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V, G, M (kleines Törtchen und eine Feder)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Eine Kreatur deiner Wahl in Reichweite, das du sehen kannst, muss einen WIS-Rettungswurf machen.\nBei Fehlschlag: Das Ziel fällt hin und wird kampfunfähig. Es lacht unkontrolliert und kann nicht von selbst aufstehen.\nAm Ende jeder seiner Züge und immer, wenn sie Schaden nimmt, macht sie einen neuen WIS-Rettungswurf. Das Ziel hat einen Vorteil, wenn der neue Rettungswurf durch Schaden ausgelöst wurde. Bei Erfolg endet der Zauber.\n\nAuf höheren Level gewirkt: pro Level 1 weitere Kreatur wählbar"
+}

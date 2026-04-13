@@ -1,0 +1,69 @@
+{
+  "name": "Mimi",
+  "size": "Tiny",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "tiny",
+      "fey",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral good",
+  "ac": 14,
+  "hp": {
+    "average": 9,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 4,
+    "dex": 19,
+    "con": 14,
+    "int": 15,
+    "wis": 13,
+    "cha": 14
+  },
+  "skills": {
+    "Perception": 3
+  },
+  "languages": [
+    "Common",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Group Casting (1/day)",
+      "text": "A group of three or more mimis together can\nuse <i>freezing sphere</i>."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The mimi has advantage on saving throws against\nspells and other magic effects."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The mimi’s spellcasting ability is Charisma (spell\nsave DC 12, +4 to hit with spell attacks). It can innately cast the following\nspells, requiring no material components:\n\n* At will: <i>invisibility, ray of frost</i>\n\n* 2/day: <i>frost fingers</i> (as <i>burning hands</i>, but cold damage)\n\n* 1/day: <i>cone of cold</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target.\nHit: 7 (1d6 + 4) piercing damage."
+    },
+    {
+      "name": "Lower Temperature",
+      "type": "special",
+      "text": "The mimi lowers the temperature in an area within\n30 feet of it that is no larger than a 15-foot cube. Creatures who enter or\nbegin their turn within the area must succeed on a DC 12 Constitution\nsaving throw or take 11 (2d8 + 2) cold damage. If a creature takes cold\ndamage, it has disadvantage on all attack rolls and ability checks for 1\nminute."
+    }
+  ],
+  "source": "creature"
+}

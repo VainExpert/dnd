@@ -1,0 +1,51 @@
+{
+  "name": "Sword Wraith Commander",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr8",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 18,
+  "hp": {
+    "average": 127,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 18,
+    "int": 11,
+    "wis": 12,
+    "cha": 14
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "the languages it knew in life"
+  ],
+  "challenge": {
+    "cr": "8",
+    "xp": 3900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Martial Fury",
+      "text": "As a bonus action, the sword wraith can make one weapon attack, which deals an extra 9 (2d8) necrotic damage on a hit. If it does so, attack rolls against it have advantage until the start of its next turn."
+    },
+    {
+      "name": "Turning Defiance",
+      "text": "The sword wraith and any other sword wraiths within 30 feet of it have advantage on saving throws against effects that turn undead."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

@@ -1,0 +1,647 @@
+{
+  "character": {
+    "identity": {
+      "name": "Mila Silberspeer",
+      "player_name": "Lea",
+      "class": {
+        "name": "Klerikerin",
+        "level": 3,
+        "subclass": "Lebensdomäne"
+      },
+      "race": "Zwergin",
+      "background": "Tempeldienerin",
+      "alignment": "gesetztreu-gut",
+      "deity": "Hestia",
+      "gender": "weiblich",
+      "age": 56,
+      "size": "Mittel",
+      "height": 1.2,
+      "weight": 46,
+      "appearance": {
+        "skin": "rosig",
+        "eyes": "blau",
+        "hair": "erdbeerblond"
+      },
+      "organizations": [
+        "Tybalds Abenteuertruppe",
+        "Tempel der Hestia"
+      ]
+    },
+    "ability_scores": {
+      "STR": {
+        "score": 14,
+        "mod": 2,
+        "save": 2
+      },
+      "DEX": {
+        "score": 8,
+        "mod": -1,
+        "save": 1
+      },
+      "CON": {
+        "score": 13,
+        "mod": 1,
+        "save": 1
+      },
+      "INT": {
+        "score": 10,
+        "mod": 0,
+        "save": 0
+      },
+      "WIS": {
+        "score": 17,
+        "mod": 3,
+        "save": 5
+      },
+      "CHA": {
+        "score": 13,
+        "mod": 1,
+        "save": 3
+      }
+    },
+    "proficiency_bonus": 2,
+    "inspiration": false,
+    "skills": {
+      "Akrobatik": -1,
+      "Arkane Kunde": 3,
+      "Athletik": 2,
+      "Auftreten": 1,
+      "Einschüchtern": 1,
+      "Fingerfertigkeit": -1,
+      "Geschichte": 2,
+      "Heimlichkeit": -1,
+      "Medizin": 5,
+      "Mit Tieren umgehen": 3,
+      "Motiv erkennen": 5,
+      "Nachforschungen": 0,
+      "Naturkunde": 0,
+      "Religion": 5,
+      "Täuschen": 1,
+      "Überlebenskunst": 3,
+      "Überzeugen": 1,
+      "Wahrnehmung": 3
+    },
+    "passive_scores": {
+      "passive_wahrnehmung": 13,
+      "passiver_einblick": 15,
+      "passive_nachforschungen": 10
+    },
+    "combat": {
+      "armor_class": 14,
+      "initiative": -1,
+      "speeds": {
+        "walk": 9
+      },
+      "hp": {
+        "max": 24,
+        "hit_dice": "3d8"
+      },
+      "defenses": {
+        "resistances": [
+          "Gift"
+        ],
+        "advantages": [
+          "Zwergische Unverwüstlichkeit: Vorteil, Gift auszuweichen oder dich zu entgiften."
+        ],
+        "immunities": [],
+        "condition_immunities": []
+      },
+      "senses": {
+        "darkvision": 36,
+        "darkvision_note": "Graustufen"
+      },
+      "attacks_and_cantrips": [
+        {
+          "name": "Streitkolben des Zusammenbruchs*",
+          "attack_bonus": 5,
+          "damage": "1d6+3 Wucht",
+          "properties": [
+            "Einfach",
+            "*-Effekt"
+          ],
+          "notes": [
+            "Eingestimmtes magisches Item (siehe Merkmale/Talente)."
+          ],
+          "item_ref": {
+            "id": "streitkolben-des-zusammenbruchs",
+            "name": "Streitkolben des Zusammenbruchs"
+          }
+        },
+        {
+          "name": "Lanze",
+          "attack_bonus": 3,
+          "damage": "1d12+2 Hieb",
+          "properties": [
+            "Kriegswaffe",
+            "Lang (+1,5 m Nahkampf)",
+            "Spezial"
+          ],
+          "item_ref": {
+            "id": "lanze",
+            "name": "Lanze"
+          }
+        },
+        {
+          "name": "Unbewaffneter Schlag",
+          "attack_bonus": 4,
+          "damage": "3 Wucht"
+        },
+        {
+          "name": "Heilige Flamme",
+          "attack_bonus": null,
+          "damage": "1d8 Strahlen",
+          "properties": [
+            "Reichweite 18 m",
+            "V/G",
+            "DEX-Rettungswurf",
+            "weitere Effekte"
+          ]
+        }
+      ],
+      "actions": {
+        "standard": [
+          "Angriff",
+          "Ausweichen",
+          "Beeinflussen",
+          "Interagieren",
+          "Flucht",
+          "Helfen",
+          "Magie",
+          "Packen",
+          "Sprint",
+          "Stoßen",
+          "Studieren",
+          "Verstecken",
+          "Verwenden",
+          "Vorbereiten"
+        ],
+        "bonus_actions": [
+          "Steingespür (siehe Merkmale)"
+        ],
+        "reactions": [
+          "Gelegenheitsangriff"
+        ],
+        "special": [
+          "Göttliche Macht fokussieren (Magie-Aktion): Göttlicher Funke",
+          "Göttliche Macht fokussieren (Magie-Aktion): Untote vertreiben",
+          "Göttliche Macht fokussieren (Magie-Aktion): Leben erhalten"
+        ]
+      }
+    },
+    "proficiencies": {
+      "armor": [
+        "Leichte Rüstung",
+        "Mittlere Rüstung",
+        "Schilde"
+      ],
+      "weapons": [
+        "Einfache Waffen",
+        "Lanze (halb geübt)"
+      ],
+      "tools": [
+        "Kalligraphiewerkzeuge"
+      ],
+      "languages": [
+        "Gemeinsprache",
+        "Gnomisch",
+        "Zwergisch"
+      ]
+    },
+    "spellcasting": {
+      "spellcasting_class": "Klerikerin",
+      "spellcasting_ability": "WIS",
+      "spellcasting_ability_mod": 3,
+      "spell_save_dc": 13,
+      "spell_attack_bonus": 5,
+      "spell_slots": {
+        "level_1": {
+          "max": 4
+        },
+        "level_2": {
+          "max": 2
+        }
+      },
+      "cantrips": [
+        {
+          "id": "goettliche-fuehrung",
+          "name": "Göttliche Führung"
+        },
+        "Heilige Flamme",
+        {
+          "id": "licht",
+          "name": "Licht"
+        },
+        {
+          "id": "resistenz",
+          "name": "Resistenz"
+        },
+        {
+          "id": "thaumaturgie",
+          "name": "Thaumaturgie"
+        },
+        {
+          "id": "verschonung-der-toten",
+          "name": "Verschonung der Toten"
+        }
+      ],
+      "level_1_spells_listed": [
+        {
+          "id": "heiligtum",
+          "name": "Heiligtum"
+        },
+        {
+          "id": "lenkendes-geschoss",
+          "name": "Lenkendes Geschoss"
+        },
+        {
+          "id": "schild-des-glaubens",
+          "name": "Schild des Glaubens"
+        },
+        {
+          "id": "segnen",
+          "name": "Segnen"
+        },
+        {
+          "id": "wunden-heilen",
+          "name": "Wunden heilen"
+        }
+      ],
+      "level_2_spells_listed": [
+        {
+          "id": "beistand",
+          "name": "Beistand"
+        },
+        {
+          "id": "fallen-finden",
+          "name": "Fallen finden"
+        },
+        {
+          "id": "person-festhalten",
+          "name": "Person festhalten"
+        },
+        {
+          "id": "schwache-genesung",
+          "name": "Schwache Genesung"
+        },
+        {
+          "id": "zone-der-wahrheit",
+          "name": "Zone der Wahrheit"
+        }
+      ],
+      "prepared_spells_marked_on_sheet": [
+        "Heiligtum",
+        "Beistand",
+        "Schwache Genesung"
+      ],
+      "always_prepared": [
+        {
+          "source": "Lebensdomäne: Domänenzauber",
+          "spells": [
+            {
+              "id": "segnen",
+              "name": "Segnen"
+            },
+            {
+              "id": "wunden-heilen",
+              "name": "Wunden heilen"
+            },
+            {
+              "id": "beistand",
+              "name": "Beistand"
+            },
+            {
+              "id": "schwache-genesung",
+              "name": "Schwache Genesung"
+            }
+          ]
+        },
+        {
+          "source": "Tempeldienerin: Eingeweihter der Magie (Klerikerin)",
+          "spells": [
+            {
+              "id": "heiligtum",
+              "name": "Heiligtum"
+            }
+          ],
+          "notes": [
+            "Dieser Grad-1-Zauber ist immer vorbereitet; Zaubertricks: Licht, Verschonung der Toten."
+          ]
+        }
+      ],
+      "special_sources": [
+        {
+          "source": "Göttliche Ordnung: Thaumaturge",
+          "notes": [
+            "Zusätzlicher Kleriker-Zaubertrick: Göttliche Führung."
+          ],
+          "spells": []
+        }
+      ]
+    },
+    "features": {
+      "class": [
+        {
+          "name": "Zauberwirken",
+          "description": "Du bekommst alle Zauberplätze nach einer Langen Rast zurück. Nach jeder Langen Rast kannst du deine Zauber austauschen, außer deine immer vorbereiteten Zauber und Zaubertricks. Zaubertricks kannst du immer bei Levelaufstieg austauschen."
+        },
+        {
+          "name": "Göttliche Ordnung: Thaumaturge",
+          "effects": [
+            "Zusätzlicher Kleriker-Zaubertrick: Göttliche Führung.",
+            "Religion und Arkane Kunde nutzen zusätzlich zu deinem INT-Modifikator auch deinen WIS-Modifikator (INT + WIS)."
+          ]
+        },
+        {
+          "name": "Göttliche Macht fokussieren",
+          "resource": {
+            "name": "Aufladungen",
+            "max": 2,
+            "recovery": {
+              "long_rest": true,
+              "short_rest": 1
+            }
+          },
+          "options": [
+            {
+              "name": "Göttlicher Funke",
+              "activation": "Magie-Aktion",
+              "range": 9,
+              "effect": "Zeige dein Heiliges Symbol auf eine Kreatur in Reichweite. Würfle 1d8 + WIS-Modifikator. Das Ziel erhält das Ergebnis als TP-Heilung ODER es macht einen CON-Rettungswurf. Bei Fehlschlag: Das Ergebnis als Strahlen- oder nekrotischer Schaden, bei Erfolg: halber Schaden. (Schaden steigt um +1d8 auf Stufe 7/13/18.)"
+            },
+            {
+              "name": "Untote vertreiben",
+              "activation": "Magie-Aktion",
+              "range": 9,
+              "area": "9 m Radius",
+              "effect": "Alle Untoten im Radius machen einen WIS-Rettungswurf. Bei Fehlschlag: Verängstigt und kampfunfähig für 1 Minute; sie bewegen sich soweit wie möglich von dir weg. Endet vorzeitig, wenn die Betroffenen Schaden bekommen oder du kampfunfähig oder tot bist."
+            },
+            {
+              "name": "Leben erhalten",
+              "activation": "Magie-Aktion",
+              "area": "9 m Umkreis",
+              "effect": "Heile insgesamt 15 TP bei blutigen Kreaturen deiner Wahl im Umkreis (auch dich selbst). Du teilst die TP frei unter den Zielen auf."
+            }
+          ]
+        }
+      ],
+      "subclass": [
+        {
+          "name": "Domänenzauber",
+          "always_prepared_spells": [
+            {
+              "id": "segnen",
+              "name": "Segnen"
+            },
+            {
+              "id": "wunden-heilen",
+              "name": "Wunden heilen"
+            },
+            {
+              "id": "beistand",
+              "name": "Beistand"
+            },
+            {
+              "id": "schwache-genesung",
+              "name": "Schwache Genesung"
+            }
+          ]
+        },
+        {
+          "name": "Jünger des Lebens",
+          "description": "Zauber, die TP wiederherstellen, stellen zusätzliche 2 TP + das verwendete Zauberplatz-Level wieder her.",
+          "always_prepared_spells": []
+        }
+      ],
+      "racial": [
+        {
+          "name": "Dunkelsicht",
+          "description": "36 m (Graustufen)."
+        },
+        {
+          "name": "Zwergische Unverwüstlichkeit",
+          "effects": [
+            "Resistenz gegen Gift.",
+            "Vorteil, Gift auszuweichen oder dich zu entgiften."
+          ]
+        },
+        {
+          "name": "Steingespür",
+          "uses": "2",
+          "recovery": {
+            "long_rest": true
+          },
+          "activation": "Bonusaktion",
+          "duration": "10 Minuten",
+          "range": 18,
+          "effect": "Du erhältst Erschütterungssinn (Tremorsense) in 18 m: Du spürst Vibrationen im Boden und kennst die Position von allem, was in Kontakt mit dem Boden ist. Du musst auf natürlichem oder verarbeitetem Stein stehen."
+        }
+      ],
+      "background": [
+        {
+          "name": "Zufluchtsort der Gläubigen",
+          "description": "Du kannst religiöse Zeremonien deiner Gottheit abhalten. Du und deine Mitstreiter erhalten kostenlose Heilung und Ähnliches bei jedem Tempel, Schrein oder anderen Ort deines Glaubens."
+        },
+        {
+          "name": "Eingeweihter der Magie (Klerikerin)",
+          "description": "Du lernst 2 weitere Kleriker-Zaubertricks und einen weiteren Grad-1-Klerikerzauber, der immer vorbereitet ist. Diese kannst du bei Levelaufstieg austauschen.",
+          "granted_cantrips": [
+            {
+              "id": "licht",
+              "name": "Licht"
+            },
+            {
+              "id": "verschonung-der-toten",
+              "name": "Verschonung der Toten"
+            }
+          ],
+          "granted_level_1_spell_always_prepared": {
+            "id": "heiligtum",
+            "name": "Heiligtum"
+          }
+        }
+      ],
+      "talents_and_magic_items_text": [
+        {
+          "name": "Lanze",
+          "type": "Waffen-Spezialregel",
+          "effects": [
+            "Nachteil auf Angriffe in 1,5 m Abstand.",
+            "2-Hände, wenn du auf dem Boden bist.",
+            "Vielseitig, wenn du auf einem Pferd bist."
+          ],
+          "item_ref": {
+            "id": "lanze",
+            "name": "Lanze"
+          }
+        },
+        {
+          "name": "Streitkolben des Zusammenbruchs",
+          "type": "Magischer Gegenstand (eingestimmt)",
+          "effects": [
+            "Wenn du einen Teuflischen oder Untoten mit dieser Waffe triffst: zusätzlich 2d6 Strahlenschaden.",
+            "Wenn das Ziel weniger als 25 TP hat: WIS-Rettungswurf oder es wird direkt zerstört. Bei Erfolg: Verängstigt bis zum Ende des nächsten Zuges.",
+            "Die Waffe gibt helles Licht für 6 m und gedimmtes Licht für weitere 6 m ab."
+          ],
+          "item_ref": {
+            "id": "streitkolben-des-zusammenbruchs",
+            "name": "Streitkolben des Zusammenbruchs"
+          }
+        }
+      ]
+    },
+    "equipment": {
+      "currency": {
+        "cp": 0,
+        "sp": 0,
+        "gp": 23,
+        "pp": 0
+      },
+      "weights": {
+        "carried": 31.5,
+        "encumbered_at": 105,
+        "push_drag_lift": 210
+      },
+      "items": [
+        {
+          "name": "Lanze",
+          "quantity": 1,
+          "weight": 3,
+          "item_ref": {
+            "id": "lanze",
+            "name": "Lanze"
+          }
+        },
+        {
+          "name": "Kettenhemd (Mittel, RK = 13 + DEX-Modifikator)",
+          "quantity": 1,
+          "weight": 10,
+          "item_ref": {
+            "id": "kettenhemd",
+            "name": "Kettenhemd"
+          }
+        },
+        {
+          "name": "Schild (RK +2, wenn in der Hand)",
+          "quantity": 1,
+          "weight": 3,
+          "item_ref": {
+            "id": "schild",
+            "name": "Schild"
+          }
+        },
+        {
+          "name": "Robe",
+          "quantity": 1,
+          "weight": 2,
+          "item_ref": {
+            "id": "robe",
+            "name": "Robe"
+          }
+        },
+        {
+          "name": "Halskette mit Fackel-Anhänger (Heiliges Symbol)",
+          "quantity": 1,
+          "weight": null
+        },
+        {
+          "name": "Rucksack",
+          "quantity": 1,
+          "weight": 2.5,
+          "contents_listed": [
+            {
+              "name": "Kalligraphiewerkzeuge",
+              "quantity": 1,
+              "weight": 2.5,
+              "item_ref": {
+                "id": "kalligraphiewerkzeuge",
+                "name": "Kalligraphiewerkzeuge"
+              }
+            },
+            {
+              "name": "Pergament-Papier",
+              "quantity": 10,
+              "weight": null
+            },
+            {
+              "name": "Gebets-Buch",
+              "quantity": 1,
+              "weight": 2.5
+            },
+            {
+              "name": "Decke",
+              "quantity": 1,
+              "weight": 1.5,
+              "item_ref": {
+                "id": "decke",
+                "name": "Decke"
+              }
+            },
+            {
+              "name": "Zunderkästchen",
+              "quantity": 1,
+              "weight": 0.5,
+              "item_ref": {
+                "id": "zunderkaestchen",
+                "name": "Zunderkästchen"
+              }
+            },
+            {
+              "name": "Lampe",
+              "quantity": 1,
+              "weight": 0.5,
+              "item_ref": {
+                "id": "lampe",
+                "name": "Lampe"
+              }
+            },
+            {
+              "name": "Heiliges Wasser",
+              "quantity": 3,
+              "weight": 1.5,
+              "item_ref": {
+                "id": "heiliges_wasser",
+                "name": "Heiliges Wasser"
+              }
+            }
+          ],
+          "item_ref": {
+            "id": "rucksack",
+            "name": "Rucksack"
+          }
+        }
+      ],
+      "attuned_magic_items_listed": [
+        {
+          "name": "Streitkolben des Zusammenbruchs",
+          "quantity": 1,
+          "weight": 2,
+          "item_ref": {
+            "id": "streitkolben-des-zusammenbruchs",
+            "name": "Streitkolben des Zusammenbruchs"
+          }
+        }
+      ]
+    },
+    "personality": {
+      "traits": [
+        "Überall siehst du Zeichen der Götter und versuchst, diese zu deuten."
+      ],
+      "ideals": [
+        "Du hilfst immer denen, die Hilfe brauchen, egal was es dich kostet."
+      ],
+      "motivation": [
+        "Alles was du tust, ist stets zum Wohl des einfachen Volkes."
+      ],
+      "flaws": [
+        "Deine Göttin verlangt, dass du ab und zu etwas Wertvolles verbrennst, um sie zu ehren."
+      ]
+    },
+    "backstory": {
+      "summary": "Als du 16 warst, wurde dein Dorf von Banditen überfallen. Du hast dich im Wald versteckt und zu Hestia um Schutz gebetet. Die Banditen fanden dich nicht; aus Dankbarkeit bist du einem Kloster beigetreten und hast dich zur Klerikerin ausbilden lassen. Seitdem ist es deine Aufgabe, andere zu beschützen, so wie du einst beschützt wurdest.",
+      "allies": [
+        "Tybald hast du auf Pilgerreise kennengelernt; er lud dich in seine Abenteuertruppe ein. Du hast angenommen, weil Menschen helfen, deinen Glauben verbreiten und dabei Geld verdienen für dich gut zusammenpasst."
+      ]
+    }
+  },
+  "id": "milasilberspeer"
+}

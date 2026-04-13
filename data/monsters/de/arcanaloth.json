@@ -1,0 +1,81 @@
+{
+  "name": "Arcanaloth",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr12",
+      "monster-manual",
+      "yugoloth"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 17,
+  "hp": {
+    "average": 104,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 12,
+    "con": 14,
+    "int": 20,
+    "wis": 16,
+    "cha": 17
+  },
+  "skills": {
+    "Arcana": 13,
+    "Deception": 9,
+    "Insight": 9,
+    "Perception": 7
+  },
+  "languages": [
+    "all",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "12",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Arcanaloths ist Charisma (ZauberrettungswurfDC 15). Der Arcanaloth kann die folgenden Zauber von Natur aus wirken, ohne dass materielle Komponenten erforderlich sind:\n\n* Beliebig oft: Selbstveränderung, Dunkelheit, Metall erhitzen, Unsichtbarkeit (nur auf sich selbst) , Magischer Geschoss"
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Arcanaloth hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Waffenangriffe des Arcanaloths sind magischer Natur."
+    },
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Arcanaloth ist ein Zauberwirker der Stufe 16. Seine Zauberfertigkeit ist Intelligenz (ZauberrettungswurfDC 17, +9 auf Treffer bei Zauberangriffen). Der Arcanaloth hat die folgenden Zauber des Zauberers vorbereitet:\n\n* Cantrips (beliebig oft): Feuerblitz, Magische Hand, Kleine Illusion, Taschenspielertrick\n\n* Stufe 1 (4 Zauberplätze): Magie entdecken, Identifizieren, Schild, Tensers schwebende Scheibe\n\n* 2. Stufe (3 Plätze): Gedanken entdecken, Spiegelbild, Phantasmatische Kraft, Suggestion\n\n* 3. Stufe (3 Plätze): Gegenzauber, Furcht, Feuerball\n\n* 4. Stufe (3 Plätze): Verbannung, Dimensionspforte\n\n* 5. Stufe (2 Plätze): Kontakt mit anderer Ebene, Monster festhalten\n\n* 6. Stufe (1 Platz): Kettenblitz\n\n* 7. Stufe (1 Platz): Finger des Todes\n\n* 8. Stufe (1 Platz): Geistige Leere"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 auf den Treffer, Reichweite5 ft: , ein Ziel. Treffer: 8 (2d4 + 3) Schnittschaden. Das Ziel muss einenDC 14Konstitutions-Rettungswurf durchführen; bei einem misslungenen Rettungswurf erleidet es 10 (3d6) Giftschaden, bei einem erfolgreichen Rettungswurf nur die Hälfte dieses Schadens."
+    },
+    {
+      "name": "Teleport",
+      "type": "special",
+      "text": "Der Arcanaloth teleportiert sich auf magische Weise – zusammen mit jeglicher Ausrüstung, die er trägt oder bei sich hat –60 feetan einen freien Platz, den er sehen kann."
+    },
+    {
+      "name": "Variante: Yugoloth beschwören (1/Tag)",
+      "type": "special",
+      "text": "Der Yugoloth versucht, eine magische Beschwörung durchzuführen.\n\nEin Arcanaloth hat eine 40-prozentige Chance, einen weiteren Arcanaloth zu beschwören.\n\nEin beschworener Yugoloth erscheint auf einem freien Feld in60 feet  Entfernung zu seinem Beschwörer, handelt nach eigenem Gutdünken und kann keine weiteren Yugoloths beschwören. Der beschworene Yugoloth bleibt 1 Minute lang bestehen, bis er oder sein Beschwörer stirbt oder bis sein Beschwörer eine Bonusaktion nutzt, um ihn zu entlassen."
+    }
+  ],
+  "source": "creature"
+}

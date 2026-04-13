@@ -1,0 +1,45 @@
+{
+  "id": "horn-des-stummen-alarms",
+  "type": "item",
+  "name": "Horn des stummen Alarms",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Das Horn hat 4 Ladungen und bekommt 1W4 am Morgen zurück. Als Aktion kann mit einer Ladung das Horn geblasen werden und eine Kreatur deiner Wahl in 180 m Entfernung kann das Horn hören, aber keine andere.",
+  "tags": [
+    "magisch",
+    "horn",
+    "alarm",
+    "ladungen",
+    "aktion"
+  ]
+}

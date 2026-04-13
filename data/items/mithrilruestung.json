@@ -1,0 +1,47 @@
+{
+  "id": "mithrilruestung",
+  "type": "item",
+  "name": "Mithrilrüstung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Kann jede mittlere bis schwere Rüstungsart sein (außer Fell). Mithril ist ein leichtes, flexibles Metall. Mithrilkettenhemden oder -brustplatten können unter normalen Kleidungsstücken getragen werden. Rüstungen aus Mithril geben keinen Heimlichkeit-Nachteil und haben keine STR-Vorraussetzung.",
+  "tags": [
+    "abenteuer",
+    "magisch",
+    "abwehr",
+    "schmied",
+    "rüstung",
+    "ungewöhnlich",
+    "mithril"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "magierhand",
+  "name": "Magierhand",
+  "level": 0,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V, G",
+  "duration": "1 min",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Eine spektrale, schwebende Hand erscheint in einem Punkt deiner Wahl in Reichweite.\nDie Hand bleibt für die Wirkungsdauer bestehen oder bis er als Aktion beendet wird, bis die Hand den 9 m Radius verlässt oder bis der Zauber erneut gewirkt wird.\nHand wird über eine eigene Aktion kontrolliert. Sie kann mit Gegenständen interagieren, unverschlossenen Türen öffnen. Bei Kontrolle kann sie immer bis zu 9 m bewegt werden.\nHand kann nicht angreifen, magische Gegenstände aktivieren oder mehr als 5 kg Gewicht tragen."
+}

@@ -1,0 +1,100 @@
+{
+  "name": "Moonlit King",
+  "size": "Medium",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr17",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral good",
+  "ac": 17,
+  "hp": {
+    "average": 170,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 20,
+    "con": 18,
+    "int": 20,
+    "wis": 18,
+    "cha": 20
+  },
+  "skills": {
+    "Arcana": 11,
+    "Perception": 10
+  },
+  "languages": [
+    "Abyssal",
+    "Celestial",
+    "Common",
+    "Draconic",
+    "Elvish",
+    "Infernal",
+    "Umbral; telepathy 100 ft."
+  ],
+  "challenge": {
+    "cr": "17",
+    "xp": 18000,
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Control Moonlight",
+      "text": "As a bonus action, the Moonlit King can cause all areas of moonlight within 100 feet to move up to 10 feet."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The Moonlit King's innate spellcasting ability score is Charisma (save DC 19, +11 to hit with spell attacks). The Moonlit King can innately cast the following spells, requiring no material components.\n\nAt will: continual flame, detect evil and good, invisibility (self only), moonbeam, zone of truth\n\n3/day each: blight, dispel evil and good, dispel magic\n\n1/day each: demiplane, heal"
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "text": "If the Moonlit King fails a saving throw, he can choose to succeed instead."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The Moonlit King's weapon attacks are magical, and deal an extra 7 (2d6) radiant damage (included below)."
+    },
+    {
+      "name": "Moonlit King's Lair",
+      "text": "On initiative count 20 (losing initiative ties), the Moonlit King takes a lair action to cause one of the following effects; the Moonlit King can't use the same effect two rounds in a row:\n\n- The Moonlit King creates four beams of moonlight at four points he can see within 100 feet. The beams each illuminate a 10-foot radius with dim light. These moon beams last until the Moonlit King uses this action again, or until he dies.\n\n- The Moonlit King chooses a point he can see within 100 feet. Disembodied whispers speaking of despair and failure fill a 30-foot radius from that point. All creatures other than fiends in the area must succeed on a DC 15 Wisdom saving throw or become frightened until initiative count 20 on the following round.\n\n- The Moonlit King magically summons four shadow demons. The demons appear in unoccupied spaces the Moonlit King can see within 60 feet. The demons act immediately and remain until initiative count 20 on the following round."
+    },
+    {
+      "name": "Regional Effects",
+      "text": "The region containing the Moonlit King's lair is warped by the fey lord's magic, which creates one or more of the following effects:\n\n- Dreams and fears take on a life of their own. Minor visual and auditory hallucinations plague creatures within 6 miles of the lair.\n\n- The Moonlit King can communicate telepathically with and share the senses of any stryx within 10 miles of his lair.\n\n- Weather conditions don't inhibit moonlight shining within 10 miles of the lair; clouds part, rain seems to channel moonbeams, snow takes on a luminous silver glow.\n\nIf the Moonlit King dies, conditions in the area surrounding the lair return to normal over the course of 1d10 days."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The Moonlit King makes three attacks with either his crystal staff or his moon bolt."
+    },
+    {
+      "name": "Crystal Staff",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage plus 7 (2d6) radiant damage. A target that is struck by the staff two or more times in one turn must make a successful DC 17 Constitution saving throw or be stunned until the end of its next turn."
+    },
+    {
+      "name": "Moon Bolt",
+      "type": "special",
+      "text": "Ranged Spell Attack: +11 to hit, range 150/600 ft., one target. Hit: 22 (4d10) radiant damage. If the target is a creature in a form other than its natural form, it takes an additional 22 (4d10) radiant damage and must succeed on a DC 19 Charisma saving throw or revert to its natural form. When the moon bolt hits a target, moonlight glows in a 10-foot radius from that point, creating dim light. The light is stationary and lasts until the end of the Moonlit King's next turn."
+    },
+    {
+      "name": "Fearful Shadows (Recharge 5-6)",
+      "type": "special",
+      "text": "The Moonlit King magically animates the shadows of all foes within 60 feet of himself. The animated shadows attack the creatures who cast them. All affected creatures in the area take 35 (10d6) necrotic damage, or half damage with a successful DC 19 Dexterity saving throw. A creature that fails the saving throw also loses 1d4 points from its Strength score. A creature reduced to 0 Strength is unconscious until it regains at least 1 point of Strength. Strength lost to fearful shadows returns when the creature finishes a short or long rest."
+    },
+    {
+      "name": "Summon Devil (1/Day)",
+      "type": "special",
+      "text": "The Moonlit King magically summons a lunar devil. The summoned devil appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other devils. It remains for 10 minutes, until its summoner dies, or until its summoner dismisses it as an action."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-hufeisen-der-geschwindigkeit",
+  "type": "item",
+  "name": "Hufeisen der Geschwindigkeit",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese eisernen Hufeisen sind in Vierersätzen zu finden. Wenn alle vier Hufeisen an den Hufen eines Pferds oder einer ähnlichen Kreatur befestigt sind, erhöhen sie die Schrittbewegungsrate der Kreatur um neun Meter.",
+  "tags": []
+}

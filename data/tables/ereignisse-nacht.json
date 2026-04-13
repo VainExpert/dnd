@@ -1,0 +1,18 @@
+{
+  "id": "ereignisse-nacht",
+  "titel": "Nächtliche harmlose Ereignisse",
+  "description": "Harmlose nächtliche Ereignisse für Rast, Lager oder Herberge. Alle Ergebnisse bleiben weitgehend folgenarm und betreffen höchstens Kleinigkeiten, geringe Geldbeträge oder unwichtige Gegenstände.",
+  "dice": 100,
+  "parts": false,
+  "1-60": "Nichts passiert.",
+  "61-64": "Du hast einen harmlosen Traum, an den du dich nach dem Aufwachen nur noch bruchstückhaft erinnerst.",
+  "65-67": "Du hast einen leichten Albtraum und wachst kurz schweißgebadet auf, kannst aber wieder einschlafen.",
+  "68-72": "Ratten haben an deinem Gepäck geknabbert und 1W4 Proviant oder einen billigen Beutel (Munition) beschädigt.",
+  "73-77": "Ein neugieriges Tier hat ein paar Kupfermünzen oder Kleinkram aus deinem offenen Gepäck verschleppt. Verlust: 1W6 KM.",
+  "78-80": "Du findest am Morgen winzige Pfotenabdrücke um dein Lager oder Bett, aber nichts von Bedeutung ist passiert.",
+  "81-84": "Du träumst auffallend klar von einem Symbol, Tier oder Ort. Es wirkt bedeutungsvoll, hat aber keine sofort erkennbare Wirkung.",
+  "85-86": "Im Morgengrauen sitzt ein Vogel, Frosch oder anderes kleines Tier direkt auf deinem Gepäck und betrachtet dich, bevor es davonhuscht.",
+  "86-90": "Ein Bettlerkind, Straßenjunge oder nächtlicher Dieb hat sich an deinem Lager versucht und nur Kleinkram erwischt. Verlust: 1W10 KM oder ein billiger Alltagsgegenstand.",
+  "91-94": "Du findest am Morgen eine merkwürdige Kleinigkeit in deinem Gepäck oder neben deinem Lager: eine Feder, Murmel, Muschel, Nuss oder billige Münze.",
+  "95-100": "Die Nacht bringt ein bemerkenswert klares, aber harmloses Omen: ein Traum, eine Sternschnuppe, ein Tierlaut oder ein flüsternder Satz, den du als vage Prophezeiung deuten darfst."
+}

@@ -1,0 +1,50 @@
+{
+  "id": "oel-der-glaette",
+  "type": "item",
+  "name": "Öl der Glätte",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "potion",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [
+    "bewegungsfreiheit",
+    "schmieren"
+  ],
+  "effects": [],
+  "text": "Diese klebrige, schwarze Salbe wirkt im Gefäß sehr dickflüssig und zäh, verteilt sich aber schnell, wenn sie ausgegossen wird. Das Öl kann eine höchstens mittelgroße Kreatur mit all ihrer getragenen und mitgeführten Ausrüstung bedecken (für jede Größenkategorie über mittelgroß wird eine weitere Viole benötigt). Das Aufträgen des Öls dauert 10 min. Die vom Öl bedeckte Kreatur erhält dann für 8 h den Effekt des Zaubers Bewegungsfreiheit. Alternativ kann das Öl als Aktion auf den Boden gegossen werden, wo es einen quadratischen Bereich mit einer Kantenlänge von 3 m bedeckt. Es dupliziert in diesem Bereich 8 h lang den Effekt des Zaubers Schmieren.",
+  "tags": [
+    "magisch",
+    "öl",
+    "zauber",
+    "schmieren",
+    "bewegung",
+    "konusmiert",
+    "aktion"
+  ]
+}

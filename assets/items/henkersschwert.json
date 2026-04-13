@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-henkersschwert",
+  "type": "item",
+  "name": "Henkersschwert",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "weapon",
+  "rarity": "das Hiebschaden verursacht), legendär",
+  "requires_attunement": true,
+  "attunement_text": "beliebiges Schwert, das Hiebschaden verursacht",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Du erhältst einen Bonus von +3 auf Angriffs- und Schadenswürfe, die du mit dieser magischen Waffe ausführst. Außerdem ignoriert die Waffe Resistenz gegen Hiebschaden. Wenn du mit dieser Waffe eine Kreatur angreifst, die mindestens einen Kopf hat und beim Angriffswurf eine 20 würfelst, hackst du der Kreatur einen ihrer Köpfe ab. Die Kreatur stirbt, wenn sie ohne den verlorenen Kopf nicht überleben kann. Kreaturen sind gegen diesen Effekt immun, wenn sie gegen Hiebschaden immun sind, keinen Kopf haben oder brauchen, über legendäre Aktionen verfügen oder der SL beschließt, dass sie zu groß sind, als dass ihr Kopf mit dieser Waffe abgeschlagen werden könnte. In diesem Fall erleiden sie stattdessen zusätzlich 6W8 Hiebschaden durch den Treffer.",
+  "tags": []
+}

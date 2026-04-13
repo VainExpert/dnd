@@ -1,0 +1,60 @@
+{
+  "name": "Squad of Thugs",
+  "size": "Large",
+  "type": {
+    "type": "swarm",
+    "tags": [
+      "large",
+      "swarm",
+      "cr2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "any non-good alignment",
+  "ac": 11,
+  "hp": {
+    "average": 65,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 14,
+    "int": 10,
+    "wis": 10,
+    "cha": 11
+  },
+  "skills": {},
+  "languages": [
+    "Any one language (usually Common)"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Power in Numbers",
+      "text": "The swarm has advantage on an\nattack roll against a creature if the swarm has at\nleast half of its maximum hit points."
+    },
+    {
+      "name": "Swarm",
+      "text": "The swarm can occupy another creature's\nspace and vice versa, and the swarm can move\nthrough any opening large enough for a Medium\nbandit. The swarm can't regain hit points or gain\ntemporary hit points."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Maces",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft.,\none target. Hit: 15 (2d6 + 8) bludgeoning damage,\nor 7 (1d6 + 4) bludgeoning damage if the swarm\nhas half of its hit points or fewer."
+    },
+    {
+      "name": "Heavy Crossbow Barrage",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 11\n(2d10) piercing damage, or 5 (1d10) piercing\ndamage if the swarm has half of its hit points or\nfewer."
+    }
+  ],
+  "source": "creature"
+}

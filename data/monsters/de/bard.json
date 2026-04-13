@@ -1,0 +1,69 @@
+{
+  "name": "Bard",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "volos-guide",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 15,
+  "hp": {
+    "average": 44,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 14,
+    "con": 12,
+    "int": 10,
+    "wis": 13,
+    "cha": 14
+  },
+  "skills": {
+    "Acrobatics": 4,
+    "Perception": 5,
+    "Performance": 6
+  },
+  "languages": [
+    "any two languages"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Barde ist ein Zauberwirker der Stufe 4. Seine Zauberfertigkeit ist Charisma (ZauberrettungswurfDC 12, +4 auf Treffer bei Zauberangriffen). Er hat die folgenden Bardenzauber vorbereitet:\n\n* Cantrips (beliebig oft): Freunde, Magische Hand, Boshafte Verspottung\n\n* 1. Stufe (4 Plätze): Person bezaubern, Heilendes Wort, Heldentum, Schlaf, Donnerwelle\n\n* 2. Stufe (3 Plätze): Unsichtbarkeit, Zerschmettern"
+    },
+    {
+      "name": "Lied der Ruhe",
+      "text": "Der Barde kann während einer kurzen Rast ein Lied vortragen. Jeder Verbündete, der das Lied hört, erhält zusätzlich ld6 Trefferpunkte, wenn er am Ende dieser Rast Trefferwürfel einsetzt, um Trefferpunkte wiederherzustellen. Der Barde kann diesen Vorteil auch sich selbst gewähren."
+    },
+    {
+      "name": "Provokation (2/Tag)",
+      "text": "Der Barde kann in seinem Zug eine Bonusaktion einsetzen, um eine Kreatur in30 feetseiner Nähe als Ziel zu wählen. Wenn das Ziel den Barden hören kann, muss es einenDC 12Charisma-Rettungswurf bestehen; andernfalls erleidet es bis zum Beginn des nächsten Zuges des Barden Nachteil bei Fähigkeitsproben, Angriffswürfen und Rettungswürfen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Kurzschwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 5 (1d6+2) Durchdringungsschaden."
+    },
+    {
+      "name": "Kurzbogen",
+      "type": "special",
+      "text": "Fernkampfangriff: +4 auf Treffer, Reichweite80/320  Fuß, ein Ziel. Treffer: 5 (1d6+2) Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

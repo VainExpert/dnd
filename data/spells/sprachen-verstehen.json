@@ -1,0 +1,19 @@
+{
+  "id": "sprachen-verstehen",
+  "name": "Sprachen verstehen",
+  "level": 1,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "V, G, M (eine Prise Ruß oder Salz)",
+  "duration": "1 h",
+  "concentration": false,
+  "ritual": true,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Für die Wirkungsdauer verstehst du jede Sprache, die du hörst oder liest, sofern du die Oberfläche berührst, auf der die Sprache geschrieben wurde.\nPro Seite Text brauchst du etwa 1 min.\nDer Zauber entschlüsselt keine Geheimbotschaften oder arkane Glyphen, die nicht Teil der Sprache selbst sind."
+}

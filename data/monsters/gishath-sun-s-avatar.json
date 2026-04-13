@@ -1,0 +1,72 @@
+{
+  "name": "Gishath, Sun's Avatar",
+  "size": "Gargantuan",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "gargantuan",
+      "beast",
+      "cr10",
+      "homebrew"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 16,
+  "hp": {
+    "average": 203,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 24,
+    "dex": 12,
+    "con": 18,
+    "int": 12,
+    "wis": 16,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 7
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "text": "If Gishath fails a saving throw, it can\nchoose to succeed instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Gishath makes two attacks: one with its bite and\none with its stomp or tail. It can’t make both attacks against the\nsame target."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit:\n39 (5d12 + 7) piercing damage. If the target is a Large or smaller\ncreature, it must succeed on a DC 19 Dexterity saving throw or it\nis grappled (escape DC 19). Until this grapple ends, the target is\nrestrained, and Gishath can’t bite another target."
+    },
+    {
+      "name": "Swallow",
+      "type": "special",
+      "text": "Gishath makes one bite attack against a Large or smaller\ncreature it is grappling. If the attack hits, that creature takes the bite’s\ndamage and is swallowed, and the grapple ends. While swallowed,\nthe creature is blinded and restrained, it has total cover against\nattacks and other effects outside Gishath, and it takes 21 (6d6) acid\ndamage at the start of each of Gishath’s turns.\n\nIf Gishath takes 30 damage or more on a single turn from a\ncreature inside it, it must succeed on a DC 18 Constitution saving\nthrow at the end of that turn or regurgitate all swallowed creatures,\nwhich fall prone in a space within 10 feet of it. If Gishath dies, a\nswallowed creature is no longer restrained by it and can escape from\nthe corpse by using 20 feet of movement, exiting prone."
+    },
+    {
+      "name": "Stomp",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit:\n29 (5d8 + 7) bludgeoning damage, and the target must succeed on a\nDC 19 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Tail",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 25\n(4d8 + 7) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

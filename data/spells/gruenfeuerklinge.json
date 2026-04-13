@@ -1,0 +1,19 @@
+{
+  "id": "gruenfeuerklinge",
+  "name": "Grünfeuerklinge",
+  "level": 0,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (1,5 m Sphäre)",
+  "components": "G, M (eine Nahkampfwaffe im Wert von mindestens 1 SM)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Zusammen mit dem Wirken des Zaubers muss ein Nahkampfangriff mit der beteiligten Waffe gegen eine Kreatur in der Reichweite des Zaubers ausgeführt werden, sonst misslingt der Zauber.\nBei Treffer: normale Waffeneffekte und grünes Feuer springt vom Ziel auf eine andere Kreatur deiner Wahl, die du sehen kannst und die sich innerhalb von 1,5 m zum Ziel befindet über. Die zweite Kreatur erleidet Feuerschaden gleich deinem Zauberfähigkeit-Modifikator.\n\nAuf höheren Level: Schaden steigt:\nAuf Level 5 fügt der Nahkampfangriff zusätzlich 1W8 Punkte Feuerschaden zu, und der Schaden, den das zweite Ziel erleidet, steigt um 1W8 + deinem Zauberfähigkeit-Modifikator. Beide Schadensarten steigen auf Level 11 und 17 um je 1W8."
+}

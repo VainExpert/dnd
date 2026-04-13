@@ -1,0 +1,71 @@
+{
+  "name": "Wir sitzen alle im selben Boot",
+  "size": "Groß",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "large",
+      "aberration",
+      "cr5",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 14,
+  "hp": {
+    "average": 102,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 15
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 13,
+    "con": 17,
+    "int": 11,
+    "wis": 10,
+    "cha": 5
+  },
+  "skills": {
+    "Acrobatics": 4,
+    "Perception": 3,
+    "Stealth": 4
+  },
+  "languages": [
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "5",
+    "xp": 1800,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Spinnenklettern",
+      "text": "Der Asanbosam kann schwierige Oberflächen erklimmen, darunter auch kopfüber an Decken, ohne dass er dafür eine Fertigkeitsprobe ablegen muss."
+    },
+    {
+      "name": "baumlebend",
+      "text": "Befindet sich das Asanbosam auf einem Baum, kann es in jedem seiner Züge als Bonusaktion die Aktion „Zurückziehen“ oder „Verstecken“ ausführen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Asanbosam führt einen Bissangriff und einen Klauenangriff aus."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite 1,5 m., ein Ziel. Treffer: 15 (2d10 + 4) Durchdringungsschaden. Ist das Ziel eine Kreatur, muss sie einenDC 14  Konstitutions-Rettungswurf gegen Krankheit bestehen. Bei einem Fehlschlag erleidet das Ziel sofort 11 (2d10) Giftschaden und ist vergiftet, bis die Krankheit geheilt ist. Alle 24 Stunden muss die Kreatur den Rettungswurf wiederholen und bei einem Fehlschlag ihre maximalen Trefferpunkte um 5 (1d10) verringern. Diese Verringerung hält an, bis die Krankheit geheilt ist. Die Kreatur stirbt, wenn die Krankheit ihre maximalen Trefferpunkte auf 0 reduziert."
+    },
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 20 (3d10 + 4) Durchdringungsschaden, und das Ziel wird festgehalten (Befreiung:DC 14 ). Bis dieser Festhalteschlag endet, ist das Ziel bewegungsbeeinträchtigt, und der Asanbosam kann kein anderes Ziel angreifen. Handelt es sich bei dem Ziel um eine Kreatur, muss diese einenDC 14  Konstitutions-Rettungswurf gegen Krankheiten bestehen, sonst erkrankt sie an der im Bissangriff beschriebenen Krankheit."
+    }
+  ],
+  "source": "creature"
+}

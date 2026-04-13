@@ -1,0 +1,60 @@
+{
+  "name": "Red Guard Drake",
+  "size": "Medium",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "medium",
+      "dragon",
+      "cr2",
+      "volos-guide"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 16,
+    "int": 4,
+    "wis": 10,
+    "cha": 7
+  },
+  "skills": {
+    "Perception": 2
+  },
+  "languages": [
+    "understands Draconic but can't speak it"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The drake attacks twice, once with its bite and once with its tail."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8+3) piercing damage."
+    },
+    {
+      "name": "Tail",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6+3) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

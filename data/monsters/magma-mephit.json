@@ -1,0 +1,74 @@
+{
+  "name": "Magma Mephit",
+  "size": "Small",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "small",
+      "elemental",
+      "cr1/2",
+      "monster-manual"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 11,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 12,
+    "con": 12,
+    "int": 7,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {
+    "Stealth": 3
+  },
+  "languages": [
+    "Ignan",
+    "Terran"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Death Burst",
+      "text": "When the mephit dies, it explodes in a burst of lava. Each creature within 5 ft. of it must make a DC 11 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "False Appearance",
+      "text": "While the mephit remains motionless, it is indistinguishable from an ordinary mound of magma."
+    },
+    {
+      "name": "Innate Spellcasting (1/Day)",
+      "text": "The mephit can innately cast heat metal (spell save DC 10), requiring no material components. Its innate spellcasting ability is Charisma."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft ., one creature. Hit: 3 (1d4 + 1) slashing damage plus 2 (1d4) fire damage."
+    },
+    {
+      "name": "Fire Breath (Recharge 6)",
+      "type": "special",
+      "text": "The mephit exhales a 15-foot cone of fire. Each creature in that area must make a DC 11 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "Variant: Summon Mephits (1/Day)",
+      "type": "special",
+      "text": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Wunderschön",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr0",
+      "storm-kings-thunder",
+      "illuskan human"
+    ]
+  },
+  "alignment": "chaotisch gut",
+  "ac": 12,
+  "hp": {
+    "average": 18,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 10,
+    "int": 16,
+    "wis": 12,
+    "cha": 16
+  },
+  "skills": {
+    "Deception": 5,
+    "Insight": 3,
+    "Investigation": 5,
+    "Perception": 5,
+    "Persuasion": 5
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Dwarvish",
+    "Halfling"
+  ],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Kurzschwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 5 (1d6+2) Schnittschaden, ."
+    },
+    {
+      "name": "Handarmbrust",
+      "type": "special",
+      "text": "Fernkampfangriff: +4 auf den Treffer, Reichweite30/120  Fuß, ein Ziel. Treffer: 5 (1d6+2) Durchschlagschaden. Beldora hat zehn Armbrustbolzen dabei."
+    }
+  ],
+  "source": "creature"
+}

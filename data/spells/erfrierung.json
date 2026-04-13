@@ -1,0 +1,20 @@
+{
+  "id": "erfrierung",
+  "name": "Erfrierung",
+  "level": 0,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier",
+    "Artificer"
+  ],
+  "text": "Ein betäubender Frost entsteht auf einer Kreatur in Reichweite, die du sehen kannst.\nDas Ziel muss einen CON-Rettungswurf machen.\nBei Fehlschlag: 1W6 Kälteschaden und es hat Nachteil beim nächsten Waffenangriff vor Ende seines nächsten Zuges.\n\nAuf höheren Level: Schaden steigt um je 1W6 auf Level 5, 11 und 17."
+}

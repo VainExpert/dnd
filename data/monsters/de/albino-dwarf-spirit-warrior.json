@@ -1,0 +1,61 @@
+{
+  "name": "Albino-Zwerg-Geistkrieger",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "tomb-of-annihilation",
+      "dwarf"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 13,
+  "hp": {
+    "average": 30,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 13,
+    "con": 17,
+    "int": 12,
+    "wis": 14,
+    "cha": 11
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 3,
+    "Survival": 4
+  },
+  "languages": [
+    "Common",
+    "Dwarvish"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Die Widerstandsfähigkeit der Zwerge",
+      "text": "Der Zwerg hat einen Vorteil bei Rettungswürfen gegen Gift."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Zwergs ist Weisheit. Er kann die folgenden Zauber von Natur aus wirken, ohne dass dafür materielle Komponenten erforderlich sind:\n\n* Jeweils 1/Tag: Jägerzeichen, Springen, Spurlos verschwinden, Mit Tieren sprechen, Mit Pflanzen sprechen"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Handaxe",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfangriff: +3 auf den Trefferwurf, Reichweite 1,5 m[ ]20/60Fuß, ein Ziel. Treffer: 4 (1d6 +1) Schnittschaden."
+    }
+  ],
+  "source": "creature"
+}

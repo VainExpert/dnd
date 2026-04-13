@@ -1,0 +1,53 @@
+{
+  "name": "Cave Beetle",
+  "size": "Small",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "small",
+      "beast",
+      "cr1",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 15,
+  "hp": {
+    "average": 31,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 14,
+    "con": 13,
+    "int": 1,
+    "wis": 11,
+    "cha": 2
+  },
+  "skills": {
+    "Perception": 2
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Death Throes",
+      "text": "When a giant cave beetle reaches 0 hit points, it releases\na strong acidic cloud in a 5-foot radius. Creatures within this area must\nmake a DC 11 Constitution saving throw, taking 7 (2d6) acid damage on a\nfailed saving throw, or half as much damage on a successful saving throw.\nEvery giant cave beetle in 500 feet is capable of detecting the smell of\nthis acid."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2)\nslashing damage."
+    }
+  ],
+  "source": "creature"
+}

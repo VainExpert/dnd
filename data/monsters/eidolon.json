@@ -1,0 +1,57 @@
+{
+  "name": "Eidolon",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr12",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 9,
+  "hp": {
+    "average": 63,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 7,
+    "dex": 8,
+    "con": 9,
+    "int": 14,
+    "wis": 19,
+    "cha": 16
+  },
+  "skills": {
+    "Perception": 8
+  },
+  "languages": [
+    "the languages it knew in life"
+  ],
+  "challenge": {
+    "cr": "12",
+    "xp": 8400,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Incorporeal Movement",
+      "text": "The eidolon can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object other than a sacred statue."
+    },
+    {
+      "name": "Sacred Animation (Recharge 5-6)",
+      "text": "When the eidolon moves into a space occupied by a sacred statue, the eidolon can disappear, causing the statue to become a creature under the eidolon's control. The eidolon uses the sacred statue's statistics in place of its own."
+    },
+    {
+      "name": "Turn Resistance",
+      "text": "The eidolon has advantage on saving throws against any effect that turns undead."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

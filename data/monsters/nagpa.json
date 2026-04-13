@@ -1,0 +1,51 @@
+{
+  "name": "Nagpa",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr17",
+      "mordenkainens-tome-of-foes",
+      "nagpa"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 19,
+  "hp": {
+    "average": 187,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 9,
+    "dex": 15,
+    "con": 12,
+    "int": 23,
+    "wis": 18,
+    "cha": 21
+  },
+  "skills": {
+    "Arcana": 12,
+    "Deception": 11,
+    "History": 12,
+    "Insight": 10,
+    "Perception": 10
+  },
+  "languages": [
+    "Common plus up to five other languages"
+  ],
+  "challenge": {
+    "cr": "17",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "text": "The nagpa is a 15th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). A nagpa has the following wizard spells prepared:\n\n* Cantrips (at will): <i>chill touch, fire bolt, mage hand, message, minor illusion</i>\n\n* 1st level (4 slots): <i>charm person, detect magic, protection from evil and good, witch bolt</i>\n\n* 2nd level (3 slots): <i>hold person, ray of enfeeblement, suggestion</i>\n\n* 3rd level (3 slots): <i>counterspell, fireball, fly</i>\n\n* 4th level (3 slots): <i>confusion, hallucinatory terrain, wall of fire</i>\n\n* 5th level (2 slots): <i>dominate person, dream, geas</i>\n\n* 6th level (1 slot): <i>circle of death, disintegrate</i>\n\n* 7th level (1 slot): <i>etherealness, prismatic spray</i>\n\n* 8th level (1 slot): <i>feeblemind</i>"
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

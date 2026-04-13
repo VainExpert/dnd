@@ -1,0 +1,62 @@
+{
+  "name": "Hell Hound",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr3",
+      "monster-manual"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 15,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 12,
+    "con": 14,
+    "int": 6,
+    "wis": 13,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 5
+  },
+  "languages": [
+    "understands Infernal but can't speak it"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Keen Hearing and Smell",
+      "text": "The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) fire damage."
+    },
+    {
+      "name": "Fire Breath (Recharge 5-6)",
+      "type": "special",
+      "text": "The hound exhales fire in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

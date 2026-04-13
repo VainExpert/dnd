@@ -1,0 +1,70 @@
+{
+  "name": "Spectral Guardian",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr6",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 14,
+  "hp": {
+    "average": 110,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 6,
+    "dex": 18,
+    "con": 18,
+    "int": 11,
+    "wis": 16,
+    "cha": 18
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages it knew in life but can't speak"
+  ],
+  "challenge": {
+    "cr": "6",
+    "xp": 2300,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Incorporeal Movement",
+      "text": "The spectral guardian can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+    },
+    {
+      "name": "Tomb Bound",
+      "text": "The spectral guardian is bound to the area it defends. It can't move more than 100 feet from the place it is bound to protect."
+    },
+    {
+      "name": "Withering Miasma",
+      "text": "A creature that starts its turn in the spectral guardian's space must make a successful DC 15 Constitution saving throw or take 18 (4d8) necrotic damage and its hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the creature finishes a long rest."
+    },
+    {
+      "name": "Variant: Arcane Guardian",
+      "text": "Some spectral guardians were not warriors in life, but powerful magic users. An arcane guardian has a challenge rating of 8 (3,900 XP) and the following added trait: Spellcasting. The arcane guardian is a 9th level spellcaster. Its spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). The guardian knows the following sorcerer spells, which do not require material components:\n\nCantrips (at will): acid splash, chill touch, dancing lights,minor illusion, ray of frost\n\n1st level (4 slots): mage armor, ray of sickness\n\n2nd level (3 slots): darkness, scorching ray\n\n3rd level (3 slots): fear, slow, stinking cloud\n\n4th level (3 slots): blight, ice storm\n\n5th level (1 slot): cone of cold"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The spectral guardian makes two spectral rend attacks."
+    },
+    {
+      "name": "Spectral Rend",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) necrotic damage. If the target is a creature, it must succeed on a DC 14 Wisdom saving throw or be frightened and have its speed reduced to 0; both effects last until the end of its next turn."
+    }
+  ],
+  "source": "creature"
+}

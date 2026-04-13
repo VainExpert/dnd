@@ -1,0 +1,43 @@
+{
+  "id": "gelehrtenpaket",
+  "type": "item",
+  "name": "Gelehrtenpaket",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 11,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 40,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Das Paket enthält: Rucksack Buch Tinte Tintenfeder Lampe 10 Flaschen Öl Zunderkästchen 10 Seiten Pergament kleiner Beutel Sand kleines Messer",
+  "tags": [
+    "abenteuer",
+    "paket",
+    "start"
+  ]
+}

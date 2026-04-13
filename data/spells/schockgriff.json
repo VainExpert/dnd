@@ -1,0 +1,18 @@
+{
+  "id": "schockgriff",
+  "name": "Schockgriff",
+  "level": 0,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Blitze springen aus deinen Händen und verpassen einer Kreatur, die du zu berühren versuchst, einen Schock.\nFühre einen Nahkampf-Zauberangriff gegen das Ziel durch. Du hast einen Vorteil beim Angriffswurf, wenn das Ziel eine Metall-Rüstung trägt.\nBei Treffer: 1W8 Blitzschaden und kann bis zum Beginn deines nächsten Zuges keine Reaktion durchführen\n\nAuf höheren Level: Schaden steigt um je 1W8 auf Level 5, 11 und 17."
+}

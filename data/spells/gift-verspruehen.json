@@ -1,0 +1,20 @@
+{
+  "id": "gift-verspruehen",
+  "name": "Gift versprühen",
+  "level": 0,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "3 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Druide",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Eine Wolke giftiges Gas fliegt in Richtung einer Kreatur in Reichweite, die du siehst.\nDas Ziel muss einen CON-Rettungswurf machen.\nBei Fehlschlag: 1W12 Giftschaden\n\nAuf höheren Level: Schaden steigt um je 1W12 auf Level 5, 11 und 17."
+}

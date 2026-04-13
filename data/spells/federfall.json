@@ -1,0 +1,19 @@
+{
+  "id": "federfall",
+  "name": "Federfall",
+  "level": 1,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Reaktion",
+  "range": "18 m",
+  "components": "V, M (eine kleine Feder oder ein Stück Daune)",
+  "duration": "1 min",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Wähle bis zu 5 fallende Kreaturen in Reichweite.\nDeren Fallgeschwindigkeit verlangsamt sich für die Wirkungsdauer auf 18 m pro Runde.\nLandet eine Kreatur vor Ende des Zaubers, landet sie auf seinen Füßen und nimmt keinen Fallschaden, dann endet der Zauber für die Kreatur."
+}

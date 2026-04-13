@@ -1,0 +1,68 @@
+{
+  "name": "Fraughashar",
+  "size": "Small",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "small",
+      "fey",
+      "cr1/2",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 15,
+  "hp": {
+    "average": 18,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 12,
+    "int": 10,
+    "wis": 11,
+    "cha": 7
+  },
+  "skills": {
+    "Stealth": 4
+  },
+  "languages": [
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Frost Walker",
+      "text": "The fraughashar's speed is unimpeded by rocky, snowy, or icy terrain. It never needs to make Dexterity checks to move or avoid falling prone because of icy or snowy ground."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The fraughashar makes one bite attack and one dagger attack."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Sling",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

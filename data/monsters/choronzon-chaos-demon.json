@@ -1,0 +1,92 @@
+{
+  "name": "Choronzon (Chaos Demon)",
+  "size": "Large",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr17",
+      "tome-of-horrors",
+      "demon"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 16,
+  "hp": {
+    "average": 324,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 28,
+    "dex": 15,
+    "con": 27,
+    "int": 12,
+    "wis": 14,
+    "cha": 18
+  },
+  "skills": {
+    "Insight": 8,
+    "Intimidation": 10,
+    "Perception": 8
+  },
+  "languages": [
+    "Abyssal"
+  ],
+  "challenge": {
+    "cr": "17",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The demon has advantage on saving throws against\nspells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The demon’s weapon attacks are magical."
+    },
+    {
+      "name": "Aura of Confusion",
+      "text": "The demon can activate or deactivate this feature\nas bonus action. While active, any creature that ends its turn within 30 feet\nof the demon must make a DC 19 Wisdom saving throw or be stunned\nuntil the end of the demon’s next turn."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The demon’s spellcasting ability is Charisma\n(spell save DC 18, +10 to hit with spell attacks). The demon can innately\ncast the following spells, requiring no material components:\n\n* At will: <i>confusion, fear</i>\n\n* 3/day: <i>blight</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The demon makes three attacks: one with its bite and two\nwith its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 22 (3d8 + 9) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 23 (4d6 + 9) slashing damage. On a successful hit, the target must make a DC 20 Constitution saving throw or be stunned until the start of the demon’s next turn."
+    },
+    {
+      "name": "Chaos Breath (Recharge 5–6)",
+      "type": "special",
+      "text": "The demon breathes exhales a 40-foot\ncone of bluish gas. Each creature in the area must make a successful DC\n19 Constitution saving throw or take 42 (12d6) necrotic damage and\nbecome poisoned. While poisoned in this way, a target takes 7 (2d6)\npoison damage at the start of each of its turns. A target can repeat the\nsaving throw at the end of each of its turns, ending the effect on itself on\na success.\n\nA creature killed by the demon’s Chaos Breath instantly breaks apart\ninto its individual atomic components. The creature can only be restored\nto life by means of a true resurrection or wish spell."
+    },
+    {
+      "name": "Teleport",
+      "type": "special",
+      "text": "The demon magically teleports, along with any equipment it\nis wearing or carrying, up to 120 feet to an unoccupied space it can see."
+    },
+    {
+      "name": "Summon (1/day)",
+      "type": "special",
+      "text": "The demon chooses what to summon and attempts a\nmagical summoning.\nA choronzon has a 50% chance of summoning 1d8 vrocks, 1d6 hezrous,\n1d4 glabrezus, 1d3 nalfeshnees, 1d2 mariliths, or one goristro.\nA summoned demon appears in an unoccupied space within 60 feet of\nits summoner, acts as an ally of its summoner, and can’t summon other\ndemons. It remains for 1 minute, until it or its summoner dies, or until its\nsummoner dismisses it as an action."
+    }
+  ],
+  "source": "creature"
+}

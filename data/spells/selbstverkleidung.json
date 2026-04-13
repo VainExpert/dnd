@@ -1,0 +1,19 @@
+{
+  "id": "selbstverkleidung",
+  "name": "Selbstverkleidung",
+  "level": 1,
+  "school": "Illusionsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "V, G",
+  "duration": "1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Verändert dein Aussehen, Kleidung, Rüstung, Waffen und anderen Besitz für die Wirkungsdauer.\nLimitierungen: Maximale Größenveränderung 30 cm, Grundform deines Köpers bleibt erhalten, Kannst dünner oder dicker erscheinen\nGenaue körperliche Untersuchungen enttarnen die Illusion. Angezauberte Gegenstände oder Körperfülle-Veränderungen haben keine physische Interaktion außer mit deinem Körper.\nEine Kreatur kann deine Verkleidung mit einem erfolgreichen Nachforschungswurf gegen deinen Zauberrettung-SG als Illusion erkennen."
+}

@@ -1,0 +1,74 @@
+{
+  "name": "Hellenrae",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "elemental-evil",
+      "human"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 16,
+  "hp": {
+    "average": 78,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 18,
+    "con": 14,
+    "int": 10,
+    "wis": 15,
+    "cha": 13
+  },
+  "skills": {
+    "Acrobatics": 7,
+    "Athletics": 4,
+    "Insight": 5,
+    "Perception": 5
+  },
+  "languages": [
+    "Common",
+    "Terran"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Evasion",
+      "text": "If Hellenrae is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, she instead takes no damage if she succeeds on the saving throw, and only half damage if she fails."
+    },
+    {
+      "name": "Stunning Strike (Recharge 5-6)",
+      "text": "When Hellenrae hits a target with a melee weapon attack, the target must succeed on a DC 13 Constitution saving throw or be stunned until the end of Hellenrae's next turn."
+    },
+    {
+      "name": "Unarmored Defense",
+      "text": "While Hellenrae is wearing no armor and wielding no shield, her AC includes her Wisdom modifier."
+    },
+    {
+      "name": "Unarmored Movement",
+      "text": "While Hellenrae is wearing no armor and wielding no shield, her speed increases by 20 feet (included in her speed)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Hellenrae makes three melee attacks."
+    },
+    {
+      "name": "Unarmed Strike",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

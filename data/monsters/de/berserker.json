@@ -1,0 +1,52 @@
+{
+  "name": "Berserker",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "monster-manual",
+      "any race"
+    ]
+  },
+  "alignment": "any chaotic alignment",
+  "ac": 13,
+  "hp": {
+    "average": 67,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 17,
+    "int": 9,
+    "wis": 11,
+    "cha": 9
+  },
+  "skills": {},
+  "languages": [
+    "any one language (usually Common)"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Leichtsinnig",
+      "text": "Zu Beginn seines Zuges erhält der Berserker bei allen Angriffswürfen mit Nahkampfwaffen in diesem Zug einen Vorteil, doch Angriffswürfe gegen ihn haben bis zum Beginn seines nächsten Zuges einen Vorteil."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Greataxe",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 9 (1d12 + 3) Schnittschaden."
+    }
+  ],
+  "source": "creature"
+}

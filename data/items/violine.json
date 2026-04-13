@@ -1,0 +1,46 @@
+{
+  "id": "violine",
+  "type": "item",
+  "name": "Violine",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 30,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Eine einfache Violine. Nutzen: Eine Melodie spielen (SG 10) oder ein Lied improvisieren (SG 15).",
+  "tags": [
+    "abenteuer",
+    "instrument",
+    "nützlich",
+    "musik",
+    "soziales",
+    "ablenkung"
+  ]
+}

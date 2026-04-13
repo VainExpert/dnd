@@ -1,0 +1,71 @@
+{
+  "name": "Undead Ooze",
+  "size": "Huge",
+  "type": {
+    "type": "ooze",
+    "tags": [
+      "huge",
+      "ooze",
+      "cr5",
+      "tome-of-horrors",
+      "undead"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 5,
+  "hp": {
+    "average": 67,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 1,
+    "con": 13,
+    "int": 2,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Amorphous",
+      "text": "The ooze can move through a space as narrow as one inch\nwithout squeezing."
+    },
+    {
+      "name": "Ooze Mass",
+      "text": "The ooze takes up most of its space. Other creatures can\nenter the space, but a creature that does so is subjected to the ooze’s engulf\nand has disadvantage on the saving throw.\n\nCreatures inside the ooze can be seen but have total cover.\n\nA creature within 5 feet of the ooze can take an action to pull a creature\nor object out of the ooze. Doing so requires a successful DC 15 Strength\ncheck, and the creature making the attempt takes 9 (2d8) necrotic damage.\nIf a skeleton is pulled out, it animates as if the skeletons ability was used."
+    },
+    {
+      "name": "Undeath",
+      "text": "An undead ooze doesn’t need air, food, drink, or sleep."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Pseudopod",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 10 ft., one target.\nHit: 14 (3d8 + 1) bludgeoning damage and 9 (2d8) necrotic damage."
+    },
+    {
+      "name": "Engulf",
+      "type": "special",
+      "text": "The ooze moves up to its speed. While doing so, it can enter\nLarge or smaller creatures’ spaces. Whenever the ooze enters a creature’s\nspace, the creature must make a DC 15 Dexterity saving throw.\nOn a successful save, the creature can choose to be pushed 5 feet back\nor to the side of the ooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.\n\nOn a failed save, the ooze enters the creature’s space, and the creature\ntakes 18 (4d8) necrotic damage and is engulfed. The engulfed creature\ncan’t breathe, is restrained, and takes 27 (6d8) necrotic damage at the start\nof each of the ooze’s turns. When the ooze moves, the engulfed creature\nmoves with it.\n\nAn engulfed creature can try to escape by taking an action to make a\nDC 15 Strength check. On a success, the creature escapes and enters a\nspace of its choice within 5 feet of the ooze."
+    },
+    {
+      "name": "Skeletons",
+      "type": "special",
+      "text": "An undead ooze can expel 1d6 skeletons from its mass, each\nappearing within 5 feet of the ooze. Skeletons can act in the round they\nare expelled. Slain skeletons are engulfed by the undead ooze and can\nbe reanimated and expelled again in 1d2 hours. An undead ooze’s form\nholds up to 10 skeletons of Medium size. These skeletons are included in\nthe determination of the undead ooze’s CR and experience points. They\nremain active even if the ooze is killed. Some undead oozes have unusual\nor larger skeletons inside of them."
+    }
+  ],
+  "source": "creature"
+}

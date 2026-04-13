@@ -1,0 +1,16 @@
+{
+  "id": "mondstrahl",
+  "name": "Mondstrahl",
+  "level": 2,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "36 m (12 m x 1,5 m Zylinder)",
+  "components": "V, G, M (mehrere Mondsamen und 1 Stück Feldspat)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Druide"
+  ],
+  "text": "Ein silbriger Strahl gedimmtes Licht scheint in einem 12 m hohen Zylinder mit einem 1,5 m Radius auf einen Punkt in Reichweite herab.\nWenn eine Kreatur in dem Bereich ihren Zug beginnt oder diesen zum ersten Mal betritt, wird sie von geisterhaften Flammen eingehüllt.\nSie muss einen CON-Rettungswurf machen.\nBei Fehlschlag: 2W10 Strahlenschaden, sonst die Hälfte\nGestaltwandler sind beim Rettungswurf im Nachteil. Bei Fehlschlag nimmt er seine ursprüngliche Gestalt wieder an, bis er das Licht des Zaubers verlässt.\nDer Mondstrahl kann als Aktion 18 m in eine beliebige Richtung bewegt werden.\n\nAuf höheren Level gewirkt: pro Level 1W10 mehr Schaden"
+}

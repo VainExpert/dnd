@@ -1,0 +1,47 @@
+{
+  "id": "ishmars-handlicher-gewuerzbeutel",
+  "type": "item",
+  "name": "Ishmar's handlicher Gewürzbeutel",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Der Beutel enthält 10 Ladungen an Gewürzen. Als Aktion kann eine Ladung aus dem Beutel genommen werden und damit ein Essen mit einem Gewürz deiner Wahl gewürzt werden. Das verbessert den Geschmack und gibt dem Essen heilende Eigenschaften. Jede Portion des essens heilt um 2W4+2. Am Morgen bekommt der Beutel 1W5+4 Ladungen zurück..",
+  "tags": [
+    "magisch",
+    "essen",
+    "heilung",
+    "ladungen",
+    "beutel",
+    "behälter",
+    "aktion"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-eiserne-flasche",
+  "type": "item",
+  "name": "Eiserne Flasche",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "adventuring-gear",
+  "rarity": "legendär",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese Eisenflasche hat einen Messingstopfen. Du kannst als Aktion das Befehlswort der Flasche aussprechen und eine Kreatur im Abstand von bis zu 18 Metern von dir, die du sehen kannst, als Ziel bestimmen. Wenn das Ziel von einer anderen Existenzebene stammt als der, in der du dich befindest, muss es einen SG-17-Weisheitsrettungswurf bestehen, oder es wird in der Flasche gefangen. Wenn das Ziel bereits in der Flasche gefangen wurde, ist es bei dem Rettungswurf im Vorteil. Nachdem sie in der Flasche gefangen wurde, bleibt die Kreatur darin, bis sie wieder freigelassen wird. Die Flasche kann jeweils nur eine Kreatur gleichzeitig aufnehmen. Eine in der Flasche gefangene Kreatur muss nicht atmen, essen oder trinken und altert nicht. Du kannst als Aktion den Stopfen der Flasche entfernen und die Kreatur freilassen, die in der Flasche gefangen ist Die Kreatur ist dir und deinen Verbündeten gegenüber eine Stunde lang freundlich gesinnt und gehorcht während dieser Zeit deinen Befehlen. Wenn du ihr keine Befehle gibst oder ihr einen Befehl erteilst, der sie wahrscheinlich töten würde, verteidigt sie sich, führt aber anderenfalls keine Aktionen aus. Am Ende der Wirkungsdauer verhält sich die Kreatur so, wie es ihrer normalen Veranlagung und Gesinnung entspricht. Der Zauber Identifizieren  offenbart, dass eine Kreatur in der Flasche ist. Um welchen Kreaturentyp es sich handelt, ist nur durch Öffnen der Flasche zu erfahren. Eine gerade entdeckte Flasche kann bereits eine vom SL gewählte oder zufällig bestimmte Kreatur enthalten.",
+  "tags": []
+}

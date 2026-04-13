@@ -1,0 +1,104 @@
+{
+  "name": "Erwachsener Höhlendrache",
+  "size": "Riesig",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "huge",
+      "dragon",
+      "cr16",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 18,
+  "hp": {
+    "average": 243,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 40
+  },
+  "abilities": {
+    "str": 26,
+    "dex": 12,
+    "con": 24,
+    "int": 12,
+    "wis": 12,
+    "cha": 20
+  },
+  "skills": {
+    "Perception": 10
+  },
+  "languages": [
+    "Common",
+    "Darakhul",
+    "Draconic",
+    "Dwarvish",
+    "Goblin"
+  ],
+  "challenge": {
+    "cr": "16",
+    "xp": 15000,
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Aura der Dunkelheit",
+      "text": "Ein ausgewachsener oder älterer Höhlendrache kann eine Aura der Dunkelheit erzeugen, die seinen Raum20 feet und die Umgebung ausfüllt. Diese Dunkelheit verhindert, dass normales Sehen und Dunkelheitssehen funktionieren. Blindsicht und Wahrsicht funktionieren normal. Das Aktivieren oder Deaktivieren der Aura ist eine Bonusaktion."
+    },
+    {
+      "name": "Earth Glide",
+      "text": "Ein erwachsener Höhlendrache gleitet durch Stein, Erde oder jegliche Art von Boden – mit Ausnahme von Metall – so mühelos wie ein Fisch durch das Wasser. Sein Graben hinterlässt keine Wellen oder andere Anzeichen seiner Anwesenheit und hinterlässt keinen Tunnel oder kein Loch, es sei denn, der Drache entscheidet sich dafür; in diesem Fall schafft er einen Durchgang15 feetvon  Breite und10 feet  Höhe. Der Zauber „Erde bewegen“, der auf einen Bereich gewirkt wird, in dem sich ein erdgleitender Höhlendrache befindet, schleudert den Drachen zurück30 feet  und betäubt die Kreatur für eine Runde, sofern sie keinen Konstitutionsrettungswurf besteht."
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache einen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Drachen ist Charisma (ZauberrettungswurfDC 18). Er kann die folgenden Zauber von Natur aus wirken, ohne dass dafür materielle Komponenten erforderlich sind:\n\nBeliebig oft: Magie entdecken, Mit den Toten sprechen\n\nJe 3 Mal pro Tag: Verschleierung, Gegenzauber, Dunkelheit, Spinnennetz\n\nJe 1 Mal pro Tag: Magie bannen, Person festhalten"
+    },
+    {
+      "name": "Die Höhle des Drachen",
+      "text": "Bei einer Initiativzahl von 20 (bei Gleichstand verliert der Drache) führt der Drache eine Lair-Aktion mit einem der folgenden Effekte aus; der Drache kann denselben Effekt nicht in zwei aufeinanderfolgenden Runden einsetzen:\n\n- Die Decke stürzt über einer Kreatur ein, die der Drache in120 feet  Reichweite sehen kann. Die Kreatur erleidet 10 (3d6) Bludgeoning-Schaden, wird zu Boden geworfen und ist bewegungsunfähig (durch herabfallende Trümmer); der Schaden wird halbiert und die Kreatur ist nicht bewegungsunfähig, wenn sie einen erfolgreichenDC 15  Geschicklichkeits-Rettungswurf schafft. Die Kreatur wird befreit, wenn sie oder ein benachbarter Verbündeter eine Aktion nutzt, um einen erfolgreichenDC 15  Stärke- (Leichtathletik-)Check zu schaffen.\n\n- Ein zehn Fuß breiter und zehn Fuß langer Riss öffnet sich an einer vom Drachen gewählten Stelle im Höhlenboden. Jede Kreatur, die diesen Bereich einnimmt, muss einen erfolgreichenDC 15  Geschicklichkeits-Rettungswurf bestehen oder stürzt 20 feethinab und erleidet 7 (2d6) Bludgeoning-Schaden sowie 7 (3d4) Piercing-Schaden durch die scharfkantigen Steine am Boden.\n\n- Der Drache beschwört einen Insektenschwarm, als hätte er den Zauber „Insektenplage“ gewirkt, und füllt damit eine Kugel mit90 feeteinem Radius von 20 Fuß um den Drachen herum. Kreaturen, die sich in dem betroffenen Bereich befinden oder ihn betreten, erleiden 22 (4d10) Stichschaden oder die Hälfte des Schadens bei einem erfolgreichenDC 18  Konstitutions-Rettungswurf. Der Schwarm hält bis zur Initiativzahl 50 cm der nächsten Runde an."
+    },
+    {
+      "name": "Regionale Auswirkungen",
+      "text": "Die Region, in der sich die Höhle eines legendären Höhlendrachen befindet, wird durch die Magie des Drachen verzerrt, was einen oder mehrere der folgenden Effekte hervorruft:\n\n- Giftige und geruchlose Gase füllen plötzlich Gänge und Höhlen und verziehen sich ebenso schnell wieder, und zwar im Umkreis von sechs Meilen um die Höhle des Drachen.\n\n- Sturzfluten verwandeln Tunnel in Todesfallen, während Erdstöße im Umkreis von sechs Meilen um die Höhle Risse im Gestein verursachen. An der Oberfläche laufen Teiche aus, und längst ausgetrocknete Bachbetten treten über ihre Ufer und führen Hochwasser.\n\n- Schädlingsschwärme im Umkreis von einer Meile um die Höhle nehmen sowohl an Größe als auch an Zahl zu, während sie versuchen, dem endlosen und wahllosen Hunger des Drachen zu entkommen.\n\nStirbt der Drache, klingen diese Effekte im Laufe von1d10  Tagen ab."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache kann seine „Furchteinflößende Präsenz“ einsetzen. Anschließend führt er drei Angriffe aus: einen mit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +13 zum Treffen, Reichweite15 ft: , ein Ziel. Treffer: 18 (3d6 + 8) plus 3 (1d6) Giftschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +13 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 15 (2d6 + 8) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +13 zum Treffen, Reichweite15 ft: , ein Ziel. Treffer: 17 (2d8 + 8) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Furchterregende Präsenz",
+      "type": "special",
+      "text": "Jede Kreatur, die sich120 feetin der Nähe des Drachen befindet und ihn wahrnimmt, muss einenDC 18Weisheits-Rettungswurf bestehen oder wird für 1 Minute in Angst versetzt. Eine Kreatur kann den Rettungswurf am Ende jedes ihrer Züge wiederholen und den Effekt auf sich selbst bei einem Erfolg beenden. Wenn der Rettungswurf einer Kreatur erfolgreich ist oder der Effekt für sie endet, ist die Kreatur für die nächsten 24 Stunden immun gegen die „Furchteinflößende Präsenz“ des Drachen."
+    },
+    {
+      "name": "Giftatem (Aufladezeit 5-6)",
+      "type": "special",
+      "text": "Der Drache speit eine 18 Meter breite Wolke aus schwarzem Giftgas aus. Jedes Ziel in diesem Bereich erleidet 56 (16d6) Giftschaden und wird vergiftet, sofern es sich um eine Kreatur handelt; ein erfolgreicher DC 18Rettungswurf auf Konstitution halbiert den Schaden und hebt den Zustand „Vergiftet“ auf. Der Zustand „Vergiftet“ hält so lange an, bis das Ziel eine lange oder kurze Rast einlegt oder durch „Geringe Wiederherstellung“ oder vergleichbare Magie geheilt wird."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,70 @@
+{
+  "name": "Battleforce Angel",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "medium",
+      "celestial",
+      "cr5",
+      "guildmasters-guide-to-ravnica"
+    ]
+  },
+  "alignment": "gesetztreu-gut",
+  "ac": 18,
+  "hp": {
+    "average": 66,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 90
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 13,
+    "int": 11,
+    "wis": 17,
+    "cha": 18
+  },
+  "skills": {
+    "Medicine": 4,
+    "Religion": 2
+  },
+  "languages": [
+    "all"
+  ],
+  "challenge": {
+    "cr": "5",
+    "xp": 1800,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Vorbeiflug",
+      "text": "Der Engel löst keinen Gelegenheitsangriff aus, wenn er sich aus der Reichweite eines Gegners entfernt."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Engel hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Engel führt zwei Nahkampfangriffe aus. Außerdem setzt er „Inspiration auf dem Schlachtfeld“ ein."
+    },
+    {
+      "name": "Langschwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 7 (1d8 + 3) Schnittschaden oder 8 (1d10 + 3) Schnittschaden bei Zweihandgebrauch, plus 18 (4d8) Strahlungsschaden. Befindet sich das Ziel in einem Umkreis5 feetvon  um einen Verbündeten des Engels, erleidet es zusätzlich 2 (1d4) Strahlungsschaden."
+    },
+    {
+      "name": "Inspiration vom Schlachtfeld",
+      "type": "special",
+      "text": "Der Engel wählt bis zu drei Kreaturen aus, die er in30 feetseiner Nähe sehen kann. Bis zum Ende seines nächsten Zuges kann jedes Ziel einen W4 zu seinen Angriffswürfen und Rettungswürfen hinzufügen."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Vine Lord's Tendril Puppet",
+  "size": "Medium",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "medium",
+      "plant",
+      "cr2",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 13,
+  "hp": {
+    "average": 34,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 18,
+    "int": 6,
+    "wis": 6,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Poor Vision",
+      "text": "Tendril puppets see almost nothing beyond 30 feet away."
+    },
+    {
+      "name": "Regeneration",
+      "text": "The tendril puppet regains 5 hit points at the start of its turn if it has at least 1 hit point and is in jungle terrain."
+    },
+    {
+      "name": "Root Mind",
+      "text": "Within a vine lord's forest or jungle, the tendril puppet's blindsight extends to 60 feet, it succeeds on all Wisdom (Perception) checks, and it can't be surprised."
+    },
+    {
+      "name": "Green Strider",
+      "text": "The tendril puppet ignores movement restrictions and damage caused by natural undergrowth."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The tendril puppet has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Assegai",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d6 + 3) piercing damage, or 7 (1d8 + 3) piercing damage if used with two hands to make a melee attack."
+    },
+    {
+      "name": "Hurl Thorns",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 12 (2d8 + 3) piercing damage, and the thorn explodes in a 10-foot-radius sphere centered on the target. Every creature in the affected area other than the original target takes 4 (1d8) piercing damage, or half damage with a successful DC 13 Dexterity saving throw."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,78 @@
+{
+  "name": "Amethystdrache (Erwachsener)",
+  "size": "Riesig",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "huge",
+      "dragon",
+      "cr16",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 20,
+  "hp": {
+    "average": 135,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 20,
+    "dex": 20,
+    "con": 12,
+    "int": 20,
+    "wis": 16,
+    "cha": 20
+  },
+  "skills": {
+    "Arcana": 10,
+    "Insight": 8,
+    "Perception": 8,
+    "Religion": 10
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "16",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache\neinen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Feedback-Aura",
+      "text": "Jedes Mal, wenn der Drache\nSchaden erleidet, müssen alle 30 feetKreaturen in seinem Umkreis\neinenDC 18Intelligenz-Rettungswurf bestehen, sonst erleiden sie\n10 (3d6) psychischen Schaden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache führt drei Angriffe aus: einen\nmit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +10 auf Treffer, Reichweite10 ft: .,\nein Ziel. Treffer: 16 (2d10 + 5) Durchschlagschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +10 zum Treffen, Reichweite:1,5 m .,\nein Ziel. Treffer: 12 (2d6 + 5) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +10 auf Treffer; Reichweite15 ft: .,\nein Ziel. Treffer: 14 (2d8 + 5) Bludgeoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

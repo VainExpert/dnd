@@ -1,0 +1,18 @@
+{
+  "id": "arkane-vitalitaet",
+  "name": "Arkane Vitalität",
+  "level": 2,
+  "school": "Bannmagie",
+  "casting_time": "1 Bonus Aktion",
+  "range": "Selbst",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du zapfst deine Lebenskraft an und heilst dich selbst.\nWürfle 1 oder 2 deiner noch nicht ausgegebenen Trefferwürfel und erhalte TP in Höhe des Ergebnisses + deinem Zauberwirken-Modifikator. Die gewürfelten Trefferwürfel gelten danach als ausgegeben.\n\nAuf höheren Level gewirkt: 1 zusätzlicher nicht ausgegebenen Trefferwürfel pro Level."
+}

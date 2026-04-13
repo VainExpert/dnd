@@ -1,0 +1,67 @@
+{
+  "name": "Tomb Guardian",
+  "size": "Large",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr6",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 114,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 8,
+    "con": 19,
+    "int": 4,
+    "wis": 6,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages of its creator but can’t speak"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Immutable Form",
+      "text": "The guardian is immune to any\nspell or effect that would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The guardian has advantage on\nsaving throws against spell and other magical\neffects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The guardian's weapon attacks are\nmagical."
+    },
+    {
+      "name": "Bound Regeneration",
+      "text": "The guardian is bound to an\nitem or set of items within the tomb it guards. At\nthe beginning of the guardian's turn, it regains 10\nhit points as long as that item is not destroyed. This\nregeneration continues even after the guardian is\nreduced to 0 hit points and it can only be\npermanently killed when this item (or these items)\nhave been removed."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft.,\none target. Hit: 14 (2d8 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Debris Toss",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +8 to hit,\nrange 30/90 ft., one target. Hit: 12 (2d6 + 5)\nbludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

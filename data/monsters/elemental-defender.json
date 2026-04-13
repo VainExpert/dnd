@@ -1,0 +1,60 @@
+{
+  "name": "Elemental Defender",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr3",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 16,
+  "hp": {
+    "average": 65,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 8,
+    "con": 18,
+    "int": 1,
+    "wis": 10,
+    "cha": 4
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages of its creator but can’t speak"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Elemental Adaptation",
+      "text": "Each defender is given life\nfrom a crystal charged with elemental power. They\nstart off with resistance to either cold, fire, or\nlightning damage and deal additional damage of the\nsame type. Whenever the defender is damaged by\nanother of these elements, it may use its reaction\nto shift its elemental properties, changing its\nresistance and extra damage to the new type\ninstead as well as gaining 10 temporary hit points.\nThe crystal in its chest changes color to reflect this\nshift."
+    },
+    {
+      "name": "Panic Mode",
+      "text": "When the defender is reduced below\n15 hit points, it enters a panic mode. While in this\nmode, the defender makes an additional longsword\nattack on each of its turns. The defender must also\nmake a DC 10 Constitution saving throw at the end\nof each of its turns. On a failure, the crystal in its\nchest cannot handle the extra stress and explodes,\nshutting down the defender."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The defender makes two attacks with\nits longsword."
+    },
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach\n5ft., one target. Hit: 7 (1d8 + 3) slashing damage,\nor 8 (1d10 + 3) slashing damage if being wielded\nwith two hands, plus 3 (1d6) elemental damage."
+    }
+  ],
+  "source": "creature"
+}

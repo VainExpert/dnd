@@ -1,0 +1,20 @@
+{
+  "id": "lange-schritte",
+  "name": "Lange Schritte",
+  "level": 1,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G, M (eine Prise Dreck)",
+  "duration": "1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Druide",
+    "Waldläufer",
+    "Magier"
+  ],
+  "text": "Du berührst eine Kreatur.\nWährend der Wirkungsdauer steigt dessen Bewegungsgeschwindigkeit um 3 m.\n\nAuf höheren Level gewirkt: pro Level 1 zusätzliches Wesen als Ziel"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "alles-oder-nichts-muenze",
+  "type": "item",
+  "name": "Alles oder Nichts - Münze",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "common",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Einmal pro Tag kann diese Münze anstelle eines W20 geworfen werden. Du musst vorher das Ergebnis vorraussagen. Bei richtiger Vorhersage ist das Ergebnis eine 20, bei falscher eine 1.",
+  "tags": [
+    "magisch",
+    "glück"
+  ]
+}

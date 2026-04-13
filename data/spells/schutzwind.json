@@ -1,0 +1,19 @@
+{
+  "id": "schutzwind",
+  "name": "Schutzwind",
+  "level": 2,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (3 m Sphäre)",
+  "components": "V",
+  "duration": "Konzentration, bis zu 10 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Druide",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Ein starker Wind (32 km/h) weht in einem 3 m Radius um dich herum, bewegt sich, zentriert auf dich mit dir mit.\nDer Wind hält für die Dauer des Zaubers an.\nMacht dich und andere Kreaturen in seinem Bereich taub. Löscht ungeschützte Flammen der Größe einer Fackel und kleiner in seinem Bereich.\nSein Gebiet ist für andere Kreaturen schwieriges Terrain. Fernangriffe durch den Wind durch haben Nachteil.\nVertreibt Dampf, Gas und Nebel, die durch den starken Wind zerstreut werden."
+}

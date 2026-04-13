@@ -1,0 +1,84 @@
+{
+  "name": "Tsathar Sorcerer",
+  "size": "Medium",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 14,
+  "hp": {
+    "average": 27,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 30
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 13,
+    "int": 12,
+    "wis": 11,
+    "cha": 15
+  },
+  "skills": {
+    "Nature": 3,
+    "Perception": 4,
+    "Survival": 3
+  },
+  "languages": [
+    "Abyssal",
+    "Tsathar"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The tsathar can breathe air and water."
+    },
+    {
+      "name": "Keen Smell",
+      "text": "The tsathar has advantage on Wisdom (Perception) checks\nthat rely on smell."
+    },
+    {
+      "name": "Slimy",
+      "text": "Tsathar continuously cover themselves with muck and slime.\nCreatures attempting to grapple a tsathar do so with disadvantage."
+    },
+    {
+      "name": "Standing Leap",
+      "text": "The tsathar’s long jump is up to 20 feet and its high\njump is up to 10 feet, with or without a running start."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The tsathar sorcerer is a 5th level spellcaster. Its\nspellcasting ability is Charisma (spell save DC 12, +4 to hit with spell\nattacks). It knows the following sorcerer spells:\nCantrips (at will): dancing lights, light, prestidigitation, ray of frost,\nshocking grasp\n\n* 1st level (4 slots): <i>fog cloud, magic missile, shield</i>\n\n* 2nd level (3 slots): <i>scorching ray, spider climb</i>\n\n* 3rd level (2 slots): <i>lightning bolt</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2\n(1d4) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit:\n2 (1d4) slashing damage, and the target must succeed on a DC 13\nConstitution saving throw or become the living host to a tsathar egg,\nwhich over the course of the egg maturing, migrates to the chest cavity of\nthe host. The host creature must make another DC 13 Constitution saving\nthrow after 24 hours of the egg having been implanted. A failed saving\nthrow results in the host becoming violently ill, followed by a deep comalike state that lasts 2d6 + 2 days. At the end of each day, the host can\nattempt another saving throw with a success indicating that its body has\nmanaged to destroy the egg through normal immune response. At the end\nof the incubation period, the host awakes to excruciating pain as the young\ntsathar, freed from its egg, tears its way out of the host, who is reduced\nto 0 hit points in the process.\n\nA DC 16 Wisdom (Medicine) check can be\nattempted to surgically extract an egg from the host. A lesser restoration\nspell will also cure the condition and purge the host of the egg."
+    },
+    {
+      "name": "Spear",
+      "type": "special",
+      "text": "Melee Weapon Attack: +2 to hit, reach 5 ft. or 20/60 ft., one\ntarget. Hit: 3 (1d6) piercing damage, or 4 (1d8) piercing damage if used\nwith two hands to make the melee attack."
+    }
+  ],
+  "source": "creature"
+}

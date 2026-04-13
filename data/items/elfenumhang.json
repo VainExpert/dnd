@@ -1,0 +1,45 @@
+{
+  "id": "elfenumhang",
+  "type": "item",
+  "name": "Elfenumhang",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 350,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diesen Umhang mit aufgesetzter Kapuze trägst, sind Wahrnehmung-Würfe, die erfolgen, um dich zu entdecken, im Nachteil. Außerdem du bei Heimlichkeit-Würfen, um dich zu verstecken, im Vorteil, da der Umhang sich zur Tarnung and die Farbe der Umgebung anpasst. Das Auf- oder Absetzen der Kapuze erfordert eine Aktion.",
+  "tags": [
+    "umhang",
+    "kleidung",
+    "verstecken",
+    "erkennen",
+    "aktion"
+  ]
+}

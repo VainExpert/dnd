@@ -1,0 +1,45 @@
+{
+  "id": "kraehenfuesse",
+  "type": "item",
+  "name": "Krähenfüße",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 1,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein Beutel mit 20 Krähenfüßen. Mit einer Aktion können die Krähenfüße in einem 1,5 m Quadrat in 1,5 m Abstand ausgebreitet werden. Eine Kreatur, die in dem Bereich startet muss einen DEX-Rettungswurf (SG 15) machen oder nimmt 1 Stichschaden u nd kann sich bis zu seiner nächsten Runde nicht bewegen. ES braucht 10 min um die Krähenfüße wieder einzusammeln.",
+  "tags": [
+    "abenteuer",
+    "kampf",
+    "hindernis",
+    "schaden",
+    "schmied"
+  ]
+}

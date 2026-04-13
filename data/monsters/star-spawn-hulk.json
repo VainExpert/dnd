@@ -1,0 +1,47 @@
+{
+  "name": "Star Spawn Hulk",
+  "size": "Large",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "large",
+      "aberration",
+      "cr10",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 16,
+  "hp": {
+    "average": 136,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 8,
+    "con": 21,
+    "int": 7,
+    "wis": 12,
+    "cha": 9
+  },
+  "skills": {
+    "Perception": 5
+  },
+  "languages": [
+    "Deep Speech"
+  ],
+  "challenge": {
+    "cr": "10",
+    "xp": 5900,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Psychic Mirror",
+      "text": "If the hulk takes psychic damage, each creature within 10 feet of the hulk takes that damage instead; the hulk takes none of the damage. In addition, the hulk's thoughts and location can't be discerned by magic."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

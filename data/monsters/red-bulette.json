@@ -1,0 +1,80 @@
+{
+  "name": "Red Bulette",
+  "size": "Huge",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "huge",
+      "monstrosity",
+      "cr12",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 18,
+  "hp": {
+    "average": 135,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 80
+  },
+  "abilities": {
+    "str": 20,
+    "dex": 12,
+    "con": 24,
+    "int": 3,
+    "wis": 10,
+    "cha": 5
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "12",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Metalsense",
+      "text": "The red bulette is aware of all metals within 60 feet of it."
+    },
+    {
+      "name": "Mineral Rich",
+      "text": "If a red bulette is killed, its planar connection is\nimmediately severed. Over the course of 4 to 6 hours, its body will cool\nto the ambient temperature of the environment. While the vast majority of\nits body will cool into a basalt-like stone, its digestive track will solidify\ninto roughly 1,000 lbs. of an alloy admixture of every mineral substance\nit has consumed. Depending upon its recent feeding habits, this\nsubstance is the equivalent of metal-rich ore of many types in\ncombination, and can be smelted back down into standard and\nprecious metals by experts knowledgeable in such methods.\nAdditionally, a few diamonds will be found in what was the\nred bulette’s gizzard."
+    },
+    {
+      "name": "Planar Connection",
+      "text": "Because their arcane natures\nlink red bulettes to the Elemental Plane of Fire, they also\nsimultaneously exist there as insubstantial and barely visible\nshadows of themselves."
+    },
+    {
+      "name": "Tunneler",
+      "text": "The bulette can burrow through solid rock at its\nburrow speed leaving a 10-foot-diameter tunnel in its wake."
+    },
+    {
+      "name": "Vanishing Act",
+      "text": "Red bulettes avoid overland movement,\npreferring to swim through earth and bedrock. If confronted\nabove ground, they will reflexively increase their body temperatures\nenough to simply melt their way down into the ground and vanish. If\nthreatened by a much larger creature, they simply dive underground and\n“swim” away. However, if they are threatened by any creature that wears\nor is carrying refined metals, they will instinctively return and attempt to\nambush with a bite/swallow attack from underground."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 31\n(4d12 + 5) piercing damage plus 7 (2d6) fire damage, and the target is\ngrappled (escape DC 15). Until this grapple ends, the target is restrained,\nand the bulette can’t bite another target."
+    },
+    {
+      "name": "Swallow",
+      "type": "special",
+      "text": "The bulette makes one bite attack against a Medium or smaller\ntarget it is grappling. If the attack hits, the target is also swallowed, and the\ngrapple ends. While swallowed, the target is blinded and restrained, it has\ntotal cover against attacks and other effects outside the bulette, and it takes\n21 (6d6) fire damage at the start of each of the bulette’s turns. A bulette\ncan have three Medium or smaller creatures swallowed at the same time."
+    },
+    {
+      "name": "Death From Below (Recharge 5–6)",
+      "type": "special",
+      "text": "If the bulette burrows at least 20\nfeet as part of its movement, it can then use this action to surface from\nunderground in a space that contains one or more creatures. Each of\nthose creatures must succeed on a DC 16 Strength or Dexterity saving\nthrow (target’s choice) or be knocked prone and splashed with globules\nof molten rock, taking 18 (2d12 + 5) bludgeoning damage plus 14 (4d6)\nfire damage. On a successful save, the creature takes only half damage,\nisn’t knocked prone, and is pushed 5 feet out of the bulette’s space into\nan unoccupied space of the creature’s choice. If no unoccupied space is\nwithin range, the creature falls prone in the bulette’s space."
+    }
+  ],
+  "source": "creature"
+}

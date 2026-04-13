@@ -1,0 +1,77 @@
+{
+  "name": "Kommandant der Schwarzen Ritter",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "Humanoid",
+      "cr5",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "gesetztreu-böse",
+  "ac": 18,
+  "hp": {
+    "average": 78,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 14,
+    "int": 12,
+    "wis": 13,
+    "cha": 15
+  },
+  "skills": {
+    "Athletics": 7,
+    "Intimidation": 5
+  },
+  "languages": [
+    "any two languages"
+  ],
+  "challenge": {
+    "cr": "5",
+    "xp": 1800,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Last",
+      "text": "Wenn der Kommandant der schwarzen Ritter zu Pferd ist und sich mindestens30 feetin gerader Linie auf ein Ziel zubewegt und es dann im selben Zug mit einem Nahkampfangriff trifft, erleidet das Ziel zusätzlich 10 (3d6) Schaden."
+    },
+    {
+      "name": "Aura des Hasses",
+      "text": "Der Kommandant der Schwarzen Ritter und seine Verbündeten im10 feetUmkreis des Kommandanten addieren ihren Charisma-Modifikator zu den Würfen für Waffenschaden (im unten angegebenen Schaden enthalten)."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Angriffe des Kommandanten der Schwarzen Ritter erfolgen mit magischen Waffen (+1)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Kommandant der schwarzen Ritter führt zwei Nahkampfangriffe aus."
+    },
+    {
+      "name": "Frau",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 8 (1d6 + 5) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Lance",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 11 (1d12 + 5) Durchdringungsschaden."
+    },
+    {
+      "name": "Furchterregender Angriff (wird nach einer kurzen oder langen Ruhepause wieder aufgeladen)",
+      "type": "special",
+      "text": "Der Kommandant der Schwarzen Ritter stößt einen furchterregenden Schrei aus und führt am Ende eines Angriffs einen Nahkampfangriff aus. Unabhängig davon, ob der Angriff trifft oder verfehlt, müssen alle Gegner im15 feetUmkreis von  des Ziels, die die Anwesenheit des Kommandanten der Schwarzen Ritter bemerken, einenDC 13  Weisheits-Rettungswurf bestehen oder werden für 1 Minute verängstigt. Eine verängstigte Kreatur wiederholt den Rettungswurf am Ende jedes ihrer Züge; bei Erfolg endet der Effekt für sie."
+    }
+  ],
+  "source": "creature"
+}

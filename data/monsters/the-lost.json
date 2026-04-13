@@ -1,0 +1,42 @@
+{
+  "name": "The Lost",
+  "size": "Medium",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr7",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 15,
+  "hp": {
+    "average": 78,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 12,
+    "con": 15,
+    "int": 6,
+    "wis": 7,
+    "cha": 5
+  },
+  "skills": {
+    "Athletics": 6
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "7",
+    "xp": 2900,
+    "proficiency_bonus": 3
+  },
+  "traits": [],
+  "actions": [],
+  "source": "creature"
+}

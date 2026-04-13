@@ -1,0 +1,80 @@
+{
+  "name": "Schwarzer Ork-Champion",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr7",
+      "tome-of-horrors",
+      "orc"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 18,
+  "hp": {
+    "average": 97,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 14,
+    "con": 14,
+    "int": 9,
+    "wis": 12,
+    "cha": 18
+  },
+  "skills": {
+    "Intimidation": 7,
+    "Perception": 4,
+    "Religion": 2
+  },
+  "languages": [
+    "Abyssal",
+    "Common",
+    "Orc"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Der Segen des Orcus",
+      "text": "Schwarze Orks haben einen Vorteil bei Rettungswürfen gegen\ndie Zauber und Wirkungen von Untoten."
+    },
+    {
+      "name": "Zaubersprechen",
+      "text": "Der schwarze Ork-Champion ist ein Zauberwirker der Stufe 7. Seine\nZauberfertigkeit ist Charisma (ZauberrettungswurfDC 15, +7 auf Treffer bei Zauberangriffen\n). Er hat die folgenden Paladin-Zauber vorbereitet:\n\n* Stufe 1 (4 Plätze): Befehl, Böses und Gutes erkennen, Falsches Leben, Schutz\nvor Bösem und Gutem, Schild des Glaubens\n\n* 2. Stufe (3 Plätze): magische Waffe, Schweigen, Schutz vor Gift"
+    },
+    {
+      "name": "Unheilvoller Schlag",
+      "text": "Einmal pro Runde des schwarzen Ork-Champions, wenn dieser\neine Kreatur mit einem Nahkampfangriff trifft, kann der Champion bewirken, dass der Angriff\ndem Ziel zusätzlich 13 (3d8) nekrotischen Schaden zufügt."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der schwarze Ork-Champion führt zwei Nahkampfangriffe aus."
+    },
+    {
+      "name": "Großschwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf Treffer, Reichweite5 ft: , ein Ziel.\nTreffer: 12 (2d6 + 5) Schnittschaden."
+    },
+    {
+      "name": "Leichte Armbrust",
+      "type": "special",
+      "text": "Fernkampfangriff: +5 auf Treffer, Reichweite80/320  Fuß,\nein Ziel. Treffer: 6 (1d8 + 2) Durchdringungsschaden."
+    },
+    {
+      "name": "Schrecklicher Blick (Lädt sich bei einer kurzen oder langen Ruhepause wieder auf)",
+      "type": "special",
+      "text": "Jeder Gegner\nim30 feetUmkreis von  des Champions muss einenDC 15  Weisheits-Rettungswurf\nbestehen, sonst lässt er alles fallen, was er gerade in den Händen hält, und ist für 1 Minute verängstigt.\nEine verängstigte Kreatur kann den Rettungswurf am Ende jedes ihrer\nZüge wiederholen; bei Erfolg endet der Effekt."
+    }
+  ],
+  "source": "creature"
+}

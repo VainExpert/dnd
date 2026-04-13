@@ -1,0 +1,66 @@
+{
+  "name": "White Kobold",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr1",
+      "homebrew",
+      "kobold"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 14,
+  "hp": {
+    "average": 13,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 7,
+    "dex": 15,
+    "con": 12,
+    "int": 8,
+    "wis": 7,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the kobold has\ndisadvantage on attack rolls, as well as on Wisdom\n(Perception) checks that rely on sight."
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The kobold has advantage on an attack\nroll against a creature if at least one of the kobold's\nallies is within 5 feet of the creature and the ally\nisn't incapacitated."
+    },
+    {
+      "name": "Snow Tunneler",
+      "text": "The kobold can burrow through\nloose snow at half its walking speed and leaves a 3-\nfoot-diameter tunnel in its wake."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Flint Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +4 to\nhit, reach 5 ft. or range 20/60 ft., one target. Hit: 4\n(1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Ice Shard Spear",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +4\nto hit, reach 5 ft. or range 20/60 ft., one target. Hit:\n5 (1d6 + 2) piercing damage plus 3 (1d6) cold\ndamage."
+    }
+  ],
+  "source": "creature"
+}

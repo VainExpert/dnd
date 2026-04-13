@@ -1,0 +1,65 @@
+{
+  "name": "Eternal Flame Guardian",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "elemental-evil",
+      "human"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 17,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 13,
+    "con": 14,
+    "int": 8,
+    "wis": 11,
+    "cha": 13
+  },
+  "skills": {
+    "Intimidation": 3,
+    "Perception": 2
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Flaming Weapon (Recharges after a Short or Long Rest)",
+      "text": "As a bonus action, the guard can wreath one melee weapon it is wielding in flame. The guard is unharmed by this fire, which lasts until the end of the guard's next turn. While wreathed in flame, the weapon deals an extra 3 (1d6) fire damage on a hit."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The guard makes two melee attacks."
+    },
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage."
+    },
+    {
+      "name": "Heavy Crossbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +3 to hit, range 100/400 ft., one target. Hit: 6 (1d10 + 1) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

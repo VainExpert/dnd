@@ -1,0 +1,79 @@
+{
+  "name": "Aboleth",
+  "size": "Groß",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "large",
+      "aberration",
+      "cr10",
+      "monster-manual"
+    ]
+  },
+  "alignment": "gesetztreu-böse",
+  "ac": 17,
+  "hp": {
+    "average": 135,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 40
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 9,
+    "con": 15,
+    "int": 18,
+    "wis": 15,
+    "cha": 18
+  },
+  "skills": {
+    "History": 12,
+    "Perception": 10
+  },
+  "languages": [
+    "Deep Speech",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Amphibisch",
+      "text": "Der Aboleth kann sowohl an der Luft als auch unter Wasser atmen."
+    },
+    {
+      "name": "Schleimwolke",
+      "text": "Unter Wasser ist der Aboleth von einem sich verwandelnden Schleim umgeben. Eine Kreatur, die den Aboleth berührt oder ihn aus 5 fteiner Entfernung von  Metern mit einem Nahkampfangriff trifft, muss einenDC 14  Konstitutionsrettungswurf durchführen. Bei einem Fehlschlag ist die Kreatur für1d4  Stunden erkrankt. Die erkrankte Kreatur kann nur unter Wasser atmen."
+    },
+    {
+      "name": "Telepathie erforschen",
+      "text": "Wenn ein Wesen telepathisch mit dem Aboleth kommuniziert, erfährt der Aboleth die größten Wünsche des Wesens, sofern er das Wesen sehen kann."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Aboleth führt drei Tentakelangriffe aus."
+    },
+    {
+      "name": "Tentakel",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite10 ft: , ein Ziel. Treffer: 12 (2d6 + 5) Bludgeoning-Schaden. Ist das Ziel eine Kreatur, muss sie einenDC 14Konstitutions-Rettungswurf bestehen oder erkrankt. Die Krankheit hat 1 Minute lang keine Wirkung und kann durch jede Magie, die Krankheiten heilt, beseitigt werden. Nach 1 Minute wird die Haut der erkrankten Kreatur durchscheinend und schleimig, die Kreatur kann keine Trefferpunkte zurückgewinnen, es sei denn, sie befindet sich unter Wasser, und die Krankheit kann nur durch „Heilen“ oder einen anderen Zauber zur Heilung von Krankheiten der Stufe 6 oder höher geheilt werden. Befindet sich die Kreatur außerhalb eines Gewässers, erleidet sie alle 10 Minuten 6 (1d12) Säureschaden, es sei denn, ihre Haut wird vor Ablauf der 10 Minuten mit Feuchtigkeit versorgt."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite10 ft: ein Ziel. Treffer: 15 (3d6 + 5) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Versklaven (3 Mal pro Tag)",
+      "type": "special",
+      "text": "Der Aboleth wählt eine Kreatur als Ziel aus, die er innerhalb 30 ftvon  Metern sehen kann. Das Ziel muss einenDC 14  Weisheits-Rettungswurf bestehen, sonst wird es vom Aboleth magisch verzaubert, bis der Aboleth stirbt oder sich auf einer anderen Existenzebene als das Ziel befindet. Das verzauberte Ziel steht unter der Kontrolle des Aboleths und kann keine Reaktionen ausführen; außerdem können der Aboleth und das Ziel über jede Entfernung hinweg telepathisch miteinander kommunizieren.\n\nImmer wenn das verzauberte Ziel Schaden erleidet, kann es den Rettungswurf wiederholen. Bei Erfolg endet der Effekt. Nicht öfter als einmal alle 24 Stunden kann das Ziel den Rettungswurf auch wiederholen, wenn es mindestens  vom 1 mileAboleth entfernt ist."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "vorahnung",
+  "name": "Vorahnung",
+  "level": 2,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 min",
+  "range": "Selbst",
+  "components": "V, G, M (Besondere Stöcke, Knochen o.ä. für mind. 25 GM)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": true,
+  "classes": [
+    "Kleriker",
+    "Druide",
+    "Magier"
+  ],
+  "text": "Wirf die Stöcke oder Knochen, lege Karten oder nutze ein anderes Hilfsmittel und erhalte ein Omen von einer außerweltlichen Kreatur zu bestimmtem Vorgehen, die in den nächsten 30 min geplant sind.\nDer DM gibt Wohl, Wehe oder nichts je nach Ergebnis.\nDer Zauber berücksichtigt keine Umstände, die das Ergebnis ändern könnten (zusätzliche Zauber oder Begleiter Verlust / Gewinn)."
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Deadly Hunter",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 16,
+  "hp": {
+    "average": 91,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 18,
+    "con": 16,
+    "int": 11,
+    "wis": 17,
+    "cha": 7
+  },
+  "skills": {
+    "Animal Handling": 6,
+    "Perception": 6,
+    "Stealth": 7,
+    "Survival": 6
+  },
+  "languages": [
+    "any four languages"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Vital Strikes",
+      "text": "When the hunter hits a creature with a\nweapon attack, the creature takes an extra 4 (1d8)\ndamage if it is below its hit point maximum."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The hunter makes two attacks with its\nshortsword or two with its longbow."
+    },
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach\n5ft., one target. Hit: 7 (1d6 + 4) piercing damage."
+    },
+    {
+      "name": "Longbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +9 to hit, range\n150/600 ft., one target. Hit: 8 (1d8 + 4) piercing\ndamage."
+    },
+    {
+      "name": "Rain of Arrows (Recharge 5-6)",
+      "type": "special",
+      "text": "The hunter fires a\nmagical arrow at a point within 150 feet. When the\narrow reaches its destination, it explodes into\nhundreds of individual arrows that rain down and\ncoat the battlefield in a 30 foot cone directly\nbeneath the initial arrow’s location. Each creature in\nthis area must make a DC 14 Dexterity saving\nthrow, taking 27 (6d8) piercing damage on a failed\nsave, or half as much damage on a successful one."
+    },
+    {
+      "name": "Hunt Them Down (1/Day)",
+      "type": "special",
+      "text": "All creatures within 300\nfeet of the hunter come under the effects of the\n<i>hunter’s mark</i> spell for the next 24 hours. After the\nhunter uses this ability, it makes a longbow attack\nagainst each enemy it can see within 150 feet,\nmaking a separate attack roll for each attack."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,89 @@
+{
+  "name": "Royal Time Elemental",
+  "size": "Large",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "large",
+      "elemental",
+      "cr17",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 20,
+  "hp": {
+    "average": 380,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 20,
+    "con": 18,
+    "int": 21,
+    "wis": 21,
+    "cha": 20
+  },
+  "skills": {
+    "Insight": 11,
+    "Perception": 11,
+    "Stealth": 11
+  },
+  "languages": [
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "17",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Cell Death",
+      "text": "Damage dealt by the elemental can only be healed\nmagically. In addition, a creature that is slain by a time elemental can only\nbe restored to life by a <i>true resurrection</i> or <i>wish</i> spell."
+    },
+    {
+      "name": "Foresight",
+      "text": "A time elemental can see a few seconds into the future. This\nability prevents it from being surprised."
+    },
+    {
+      "name": "Immunity to Temporal Magic",
+      "text": "Time elementals are immune to all\ntime-related spells and effects that are not cast by other time elementals."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The time elemental makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 23\n(4d8 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Alter Age (1/day)",
+      "type": "special",
+      "text": "The elemental can attempt to age a target creature\nwithin 5 feet of it. The target must make a DC 17 Constitution saving\nthrow or be aged 1d4 x 10 years. The aging effect can be reversed with a\n<i>greater restoration spell</i>, but only within 24 hours of it occurring."
+    },
+    {
+      "name": "Multi-Manifestation (Recharge 5–6)",
+      "type": "special",
+      "text": "The time elemental summons 1d4\nduplicate manifestations of itself from alternate dimensions. Each of these\nmanifestations have the same statistics of the time elemental but can only\nuse melee attacks. Each manifestation can move and attack immediately\nafter it is summoned. Attacks that deal damage to one manifestation deal\nthe same damage to the elemental and the other manifestations.\nThe elemental can have no more than four manifestations under its control at\nany time. The manifestations disappear at the start of the elemental’s next turn."
+    },
+    {
+      "name": "Temporal Displacement (1/day)",
+      "type": "special",
+      "text": "The time elemental can remove a target\ncreature from the current timeline. The target must succeed on a DC 18\nConstitution saving throw, or disappear in a flash of white energy. For a number\nof minutes equal to the time elemental’s Wisdom modifier, it is as if the displaced\ncreature never existed. The creature is completely undetectable while in this state.\n\nA displaced creature can use its action to attempt to end the displacement.\nWhen it does so, it makes a DC 18 Intelligence check. If it succeeds, it\nescapes, and the effect ends.\n\nWhen the effect ends, the creature reappears in the same space it was in\nbefore being displaced. If the space is occupied when the creature returns,\nit appears in the nearest open space and takes no damage."
+    },
+    {
+      "name": "Time Jaunt",
+      "type": "special",
+      "text": "A time elemental can slip through the time stream and\nappear anywhere on the same plane of existence as if by <i>teleport</i>. This\nability transports the time elemental and up to four other creatures of the\nelemental’s choice that are within 30 feet of it. Unwilling creatures must\nsucceed on a DC 15 Wisdom saving throw to avoid being carried away."
+    }
+  ],
+  "source": "creature"
+}

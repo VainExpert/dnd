@@ -1,0 +1,68 @@
+{
+  "name": "Aquatic Strider",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 13,
+  "hp": {
+    "average": 51,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 30
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 8,
+    "con": 16,
+    "int": 6,
+    "wis": 10,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "understands Common and Aquan but can’t speak."
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Gestaltwandler",
+      "text": "Der Strider kann seine Bonusaktion nutzen, um\nseinen Körper in ein großes, flinkes, vierbeiniges\nKonstrukt zu verwandeln, das von Wasserströmen zusammengehalten wird, oder in\nein robustes, langsam bewegendes Kanonenkonstrukt. In der\nKanonenform erhöht sich die RK des Striders auf\n16 und seine Bewegungsgeschwindigkeit verringert sich auf 6 m. Der\nStrider zerfällt in seine Einzelteile, wenn er stirbt, unabhängig von seiner\naktuellen Form."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Strider führt zwei Angriffe mit seiner\n„Aufspießen“-Fähigkeit aus."
+    },
+    {
+      "name": "Aufspießen (nur in der Strider-Form)",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite5ft: , ein Ziel. Treffer: 7 (1d8 + 3)\nDurchdringender Schaden."
+    },
+    {
+      "name": "Wasserkugel (nur in Kanonenform)",
+      "type": "special",
+      "text": "Fernkampfwaffe\nAngriff: +5 auf Treffer, Reichweite30/90  Fuß, ein Ziel. Treffer:\n18 (4d8) Kälteschaden und die Bewegungsgeschwindigkeit des Ziels wird\nin seinem nächsten10 feet Zug um  verringert."
+    },
+    {
+      "name": "Wasserkanone (nur in Kanonenform) (Aufladezeit 6)",
+      "type": "special",
+      "text": "Der\nStrider entfesselt einen mächtigen Wasserstrahl aus\nseiner Kanone in einer 60-Fuß-Linie. Jede Kreatur in diesem\nBereich muss einenDC 12  Geschicklichkeits-Rettungswurf durchführen,\nerleidet 7 (2d6) Bludgeoning-Schaden und 7 (2d6)\nKälteschaden und wird bei einem misslungenen\n15 feetRettungswurf zurückgestoßen, oder die Hälfte des Schadens und wird bei einem\nerfolgreichen Rettungswurf nicht zurückgestoßen. Alle Kreaturen hinter dem ursprünglichen\nZiel, die von dieser Fähigkeit getroffen werden, haben einen Vorteil bei diesem\nRettungswurf."
+    }
+  ],
+  "source": "creature"
+}

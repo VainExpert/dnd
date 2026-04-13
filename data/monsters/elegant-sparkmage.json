@@ -1,0 +1,64 @@
+{
+  "name": "Elegant Sparkmage",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 11,
+  "hp": {
+    "average": 14,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 12,
+    "con": 10,
+    "int": 16,
+    "wis": 14,
+    "cha": 12
+  },
+  "skills": {
+    "Arcana": 5,
+    "Insight": 5,
+    "Investigation": 5
+  },
+  "languages": [
+    "Any two languages"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Arcane Recovery (1/Day)",
+      "text": "When the sparkmage\nfinishes a short rest, it can regain up to 2 total\nexpended spell slots."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The sparkmage is a 3rd-level\nspellcaster. Its spellcasting ability is Intelligence\n(spell save DC 13, +5 to hit with spell attacks). The\nsparkmage has the following wizard spells\nprepared:\n\n* Cantrips (at will): <i>dancing lights, mage hand, shocking grasp</i>\n\n* 1st level (4 slots): <i>color spray, feather fall, mage armor, witch bolt</i>\n\n* 2nd level (2 slots): <i>darkness, shatter, web</i>"
+    },
+    {
+      "name": "Spell Sculptor",
+      "text": "When the sparkmage casts a spell, it\ncan choose up to 3 targets to automatically\nsucceed on the saving throw, and they take no\ndamage if they would normally take half damage on\na successful save."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +3 to hit,\nreach 5 ft. or range 20/60 ft., one target. Hit: 3\n(1d4 + 1) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

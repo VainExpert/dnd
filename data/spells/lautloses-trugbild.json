@@ -1,0 +1,18 @@
+{
+  "id": "lautloses-trugbild",
+  "name": "Lautloses Trugbild",
+  "level": 1,
+  "school": "Illusionsmagie",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, G, M (ein bisschen Vlies)",
+  "duration": "Konzentration, bis zu 10 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du erschaffst ein Abbild eines Gegenstands, einer Kreatur oder eines anderen sichtbaren Phänomens, das nicht größer als ein 4,5 m Würfel ist. Das Abbild erscheint auf einem Punkt in Reichweite und bleibt während der Wirkungsdauer bestehen. Es ist ein rein visueller Eindruck ohne andere physische Interaktionen\nAls Aktion kann das Abbild an eine andere Position in Reichweite bewegt werden. Die Bewegung erscheint dabei natürlich.\nPhysische Interaktionen mit dem Abbild enttarnen die Illusion. Keraturen müssen zum Untersuchen einen Nachforschung-Wurf gegen deinen Zauberrettung-SG machen.\nBei Erfolg: Illusion wird erkannt und das Abbild wird durchscheinend."
+}

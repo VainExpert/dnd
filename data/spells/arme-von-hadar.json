@@ -1,0 +1,16 @@
+{
+  "id": "arme-von-hadar",
+  "name": "Arme von Hadar",
+  "level": 1,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (3 m Ausstrahlung)",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Hexenmeister"
+  ],
+  "text": "Du beschwörst magische Tentakel aus dir heraus.\nJede Kreatur in 3 m von dir muss einen STR-Rettungswurf machen.\nBei Fehlschlag: 2W6 nekrotischer Schaden und sie können keine Reaktion bis zum Beginn deines nächsten Zuges machen, sonst nehmen sie nur die Hälfte des Schadens.\n\nAuf höheren Level gewirkt: pro Level 1W6 mehr Schaden."
+}

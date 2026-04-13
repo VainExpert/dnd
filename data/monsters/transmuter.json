@@ -1,0 +1,58 @@
+{
+  "name": "Transmuter",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "volos-guide",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 12,
+  "hp": {
+    "average": 40,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 9,
+    "dex": 14,
+    "con": 11,
+    "int": 17,
+    "wis": 12,
+    "cha": 11
+  },
+  "skills": {
+    "Arcana": 6,
+    "History": 6
+  },
+  "languages": [
+    "any four languages"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "text": "The transmuter is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The transmuter has the following wizard spells prepared:\n\n* Cantrips (at will): <i>light, mending, prestidigitation, ray of frost</i>\n\n* 1st level (4 slots): <i>chromatic orb, expeditious retreat\\*, mage armor</i>\n\n* 2nd level (3 slots): <i>alter self\\*, hold person, knock\\* </i>\n\n* 3rd level (3 slots): <i>blink\\*, fireball, slow\\* </i>\n\n* 4th level (3 slots): <i>polymorph\\*, stoneskin</i>\n\n* 5th level (1 slot): <i>telekinesis\\* </i>\n\n*Transmutation spell of 1st level or higher"
+    },
+    {
+      "name": "Transmuter's Stone",
+      "text": "The transmuter carries a magic stone it crafted that grants its bearer one of the following effects:\n\n* Darkvision out to a range of 60 feet\n* An extra 10 feet of speed while the bearer is unencumbered\n* Proficiency with Constitution saving throws\n* Resistance to acid, cold, fire, lightning, or thunder damage (transmuter's choice whenever the transmuter chooses this benefit)\n\nIf the transmuter has the stone and casts a transmutation spell of 1st level or higher, it can change the effect of the stone."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Quarterstaff",
+      "type": "special",
+      "text": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6-1) bludgeoning damage, or 3 (1d8-1) bludgeoning damage if used with two hands."
+    }
+  ],
+  "source": "creature"
+}

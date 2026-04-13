@@ -1,0 +1,44 @@
+{
+  "id": "handschuhe-des-geschossfangens",
+  "type": "item",
+  "name": "Handschuhe des Geschossfangens ",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "ammunition",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "hands",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese Handschuhe scheinen fast mit deinen Händen zu verschmelzen, wenn du sie anziehst. Wenn dich ein Fernkampfwaffenangriff trifft, wenn du sie trägst, kannst du deine Reaktion verwenden, um den Schaden um 1W10 + dein DEX-Modifikator zu reduzieren, sofern du eine Hand frei hast Wenn du den Schaden auf 0 verringerst, fängst du das Geschoss, solange es klein genug ist, dass du es in einer Hand halten kannst.",
+  "tags": [
+    "handschuhe",
+    "magisch",
+    "munition",
+    "reaktion"
+  ]
+}

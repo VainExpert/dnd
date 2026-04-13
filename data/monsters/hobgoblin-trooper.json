@@ -1,0 +1,58 @@
+{
+  "name": "Hobgoblin Trooper",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/2",
+      "out-of-the-box-5e",
+      "goblinoid"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 16,
+  "hp": {
+    "average": 11,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 12,
+    "con": 12,
+    "int": 10,
+    "wis": 10,
+    "cha": 9
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Goblin"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Martial Advantage",
+      "text": "Once per turn, the hobgoblin\ncan deal an extra 7 (2d6) damage to a creature it hits\nwith a weapon attack if that creature is within 5 feet\nof an ally of the hobgoblin that isn’t incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Glaive",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 10 ft.,\none target. Hit: 6 (1d10 + 1) slashing damage."
+    },
+    {
+      "name": "Longbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +3 to hit, range\n150/600 ft., one target. Hit: 5 (1d8 + 1) piercing\ndamage."
+    }
+  ],
+  "source": "creature"
+}

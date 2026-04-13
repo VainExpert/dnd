@@ -1,0 +1,66 @@
+{
+  "name": "Ngobou",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr5",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 15,
+  "hp": {
+    "average": 85,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 9,
+    "con": 16,
+    "int": 2,
+    "wis": 9,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 5
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "5",
+    "xp": 1800,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Trampling Charge",
+      "text": "If the ngobou moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the ngobou can make one stomp attack against it as a bonus action."
+    },
+    {
+      "name": "Elephants' Bane",
+      "text": "The ngobou has advantage on attacks against elephants. It can detect by scent whether an elephant has been within 180 feet of its location anytime in the last 48 hours."
+    },
+    {
+      "name": "Spikes",
+      "text": "A creature that grapples an ngobou takes 9 (2d8) piercing damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Gore",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 38 (6d10 + 5) piercing damage."
+    },
+    {
+      "name": "Stomp",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one prone creature. Hit: 18 (3d8 + 5) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

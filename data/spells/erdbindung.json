@@ -1,0 +1,19 @@
+{
+  "id": "erdbindung",
+  "name": "Erdbindung",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "90 m",
+  "components": "V",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Wähle eine Kreatur in Reichweite, die du siehst.\nGelbe, magische Streifen umkreisen das Ziel.\nEs muss einen STR-Rettungswurf machen oder seine Fluggeschwindigkeit wird für die Wirkungsdauer des Zaubers auf 0 reduziert.\nEine Kreatur in der Luft sinkt mit 18 m pro Runde zu Boden, bis der Zauber endet oder der Boden erreicht ist."
+}

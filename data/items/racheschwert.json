@@ -1,0 +1,46 @@
+{
+  "id": "racheschwert",
+  "type": "item",
+  "name": "Racheschwert",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese beliebige magische Waffe mit einer geschmiedeten Klinge gibt einen +1 Bonus auf Angriffs- und Schadenswürfe. Fluch: Die Waffe ist verflucht von einem Rachegeist. Die Einstimmung gibt den Fluch auf dich weiter. Verflucht möchtest du dich nicht von der Waffe trennen und du hast NAchteil auf Angriffswürfe mit jeder anderen Waffe. Auch muss eine SG-15 WIS-Resttungswurf gemacht werden, wenn du Schaden nimmst. Bei Fehlschlag musst du die dich schadende Kreatur angreifen bis du oder sie auf 0 TP fällt oder du die Kreatur nicht mehr erreichen kannst. Der Fluch kann in normalen Art und Weisen gebrochen werden oder der Geist mit dem Zauebr Verbannung vertrieben, danach ist die Waffe eine normale +1-Waffe.",
+  "tags": [
+    "magisch",
+    "waffe",
+    "bonus",
+    "schmied",
+    "kampf",
+    "verflucht"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "boesartige-waffe",
+  "type": "item",
+  "name": "Bösartige Waffe",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Kann jede Art Waffe sein. Wenn du bei einem Angriffswurf mit dieser magischen Waffe einen kritischen Treffer erzielst, verursacht dieser zusätzlich 2W6 Schaden des Waffentyps.",
+  "tags": [
+    "abenteuer",
+    "magisch",
+    "schmied",
+    "waffe",
+    "modifikation"
+  ]
+}

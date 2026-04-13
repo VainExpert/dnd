@@ -1,0 +1,81 @@
+{
+  "name": "Bastet-Tempelkatze",
+  "size": "Klein",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "small",
+      "monstrosity",
+      "cr1",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 14,
+  "hp": {
+    "average": 40,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 19,
+    "con": 12,
+    "int": 12,
+    "wis": 16,
+    "cha": 18
+  },
+  "skills": {
+    "Perception": 5,
+    "Stealth": 6
+  },
+  "languages": [
+    "Common",
+    "Nurian",
+    "and Sylvan"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Feiner Geruchssinn",
+      "text": "Die Tempelkatze hat einen Vorteil bei Weisheitsproben (Wahrnehmung), die auf dem Geruchssinn beruhen."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit der Tempelkatze ist Charisma (ZauberrettungswurfDC 14, +6 auf Treffer bei Zauberangriffen). Die Tempelkatze kann die folgenden Zauber von Natur aus wirken, ohne dass materielle Komponenten erforderlich sind:\n\n* Beliebig oft: Führung\n\n* Je 3/Tag: Person bezaubern, Wunden heilen\n\n* 1/Tag: Fähigkeit verstärken (nur „Katzenanmut“)"
+    },
+    {
+      "name": "Priesterliches Schnurren",
+      "text": "Wenn ein Kleriker oder Paladin, der Bastet verehrt, eine Stunde lang Zauber vorbereitet, 5 feetwährend sich eine Bastet-Tempelkatze in seiner Nähe befindet, kann dieser Zauberwirker zwei Zauber der Stufe 1 und einen Zauber der Stufe 2 auswählen, die er wirken kann, und sie der Tempelkatze einprägen. Die Tempelkatze kann diese Zauber jeweils einmal pro Tag ohne verbale Komponente wirken. Diese Zauber werden so gewirkt, als wären sie Teil der Eigenschaft „Angeborene Zauberkraft“ der Tempelkatze."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Die Tempelkatze führt einen Bissangriff und einen Kratzangriff aus."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5 ft: , eine Kreatur. Treffer: 6 (1d4 + 4) Durchdringungsschaden."
+    },
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 9 (2d4 + 4) Schnittschaden."
+    },
+    {
+      "name": "Faszinierender Köder",
+      "type": "special",
+      "text": "Die Tempelkatze schnurrt laut und wählt als Ziel ein humanoides Wesen,30 feetdas sie sehen kann und das sie hören kann. Das Ziel muss einenDC 14Weisheits-Rettungswurf bestehen, sonst wird es verzaubert. Solange es von der Tempelkatze verzaubert ist, muss sich das Ziel mit normaler Geschwindigkeit auf die Katze zubewegen und versuchen, sie zu streicheln oder hochzuheben. Ein verzaubertes Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge und beendet den Effekt auf sich selbst bei Erfolg. Wenn der Rettungswurf einer Kreatur erfolgreich ist, ist die Kreatur für die nächsten 24 Stunden immun gegen den „Faszinierenden Lockruf“ der Tempelkatze. Die Tempelkatze hat Vorteil bei Angriffswürfen gegen jede Kreatur, die sie streichelt oder hält."
+    }
+  ],
+  "source": "creature"
+}

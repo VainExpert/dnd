@@ -1,0 +1,78 @@
+{
+  "name": "Abasheen",
+  "size": "Groß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "large",
+      "elemental",
+      "cr6",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 102,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 16,
+    "int": 20,
+    "wis": 18,
+    "cha": 17
+  },
+  "skills": {
+    "Perception": 10
+  },
+  "languages": [
+    "Auran",
+    "Common",
+    "Infernal"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Beherrschung der Luft",
+      "text": "Fliegende Kreaturen haben einen Nachteil, wenn sie Abasheen angreifen."
+    },
+    {
+      "name": "Der Untergang der Elemente",
+      "text": "Stirbt der Abasheen, löst sich sein Körper in\neine warme Brise auf und hinterlässt lediglich die Ausrüstung, die der Abasheen\ntrug oder bei sich hatte."
+    },
+    {
+      "name": "Wunsch erfüllen",
+      "text": "Der Geist kann einem Wesen, das sich in60\nfeetseiner Nähe befindet, einen Wunsch erfüllen."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Abasheen ist\nIntelligenz (ZauberrettungswurfDC 15, +7 auf Treffer bei Zauberangriffen). Er kann von Natur aus\ndie folgenden Zauber wirken, ohne dass materielle Komponenten erforderlich sind:\n\n* Beliebig oft: Befehl, Person bezaubern, Ebenenwechsel (willige Ziele nur auf Elementarebenen, die Astralebene oder die Materielle Ebene)\n\n* 1/Tag: Geas"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Abasheen führt zwei Angriffe mit seinem Falchion aus."
+    },
+    {
+      "name": "Falchion",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer:\n12 (2d8 + 3) Schnittschaden."
+    },
+    {
+      "name": "Donnerschlag (Aufladen 5–6)",
+      "type": "special",
+      "text": "Der Abasheen schlägt laut in die Hände,\nund eine Welle donnernder Kraft breitet sich in einem Radius von 9 Metern\naus. Jedes Wesen in diesem Bereich muss einenDC 15  Konstitutions-Rettungswurf\nausführen oder wird zurückgestoßen10 feet  und erleidet bei einem\nfehlgeschlagenen Rettungswurf 18 (4d8) Blitzschaden oder bei einem erfolgreichen Rettungswurf die Hälfte des Schadens ohne Zurückstoß."
+    }
+  ],
+  "source": "creature"
+}

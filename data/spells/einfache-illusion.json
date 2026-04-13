@@ -1,0 +1,19 @@
+{
+  "id": "einfache-illusion",
+  "name": "Einfache Illusion",
+  "level": 0,
+  "school": "Illusionsmagie",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "G, M (Vlies)",
+  "duration": "1 min",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du erschaffst ein langes oder mehrere kurze Geräusche oder ein Abbild eines Gegenstandes (ohne physische Interagierbarkeit und nicht größer als 1,5 m) in Reichweite für die Wirkungsdauer.\nEine Kreatur kann einen Nachforschung-Wurf gegen dein Zauberrettung-SG ausführen. Wird die Illusion erkannt verblasst diese ein wenig."
+}

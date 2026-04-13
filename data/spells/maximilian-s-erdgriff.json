@@ -1,0 +1,17 @@
+{
+  "id": "maximilian-s-erdgriff",
+  "name": "Maximilian's Erdgriff",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "9 m (1,5 m Würfel)",
+  "components": "V, G, M (Miniatur Hand aus Lehm)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Wähle einen freien Ort in Reichweite, den du sehen kannst. Eine Hand mittlerer Größe aus kompakter Erde erscheint dort und greift nach einem Wesen in 1,5 m Entfernung, das du sehen kannst.\nDas Ziel muss einen STR-Rettungswurf machen.\nBei Fehlschlag: 2W6 Hiebschaden und für die Wirkungsdauer gefesselt\nAls Aktion kann die Hand das Ziel quetschen. Das Ziel muss erneut einen STR-Rettungswurf machen.\nBei Fehlschlag: 2W6 Hiebschaden, sonst die Hälfte\nDie Kreatur kann sich mit einem STR-Wurf gegen deinen Zauberrettung-SG machen.\nBei Erfolg: Ziel entkommt und ist nicht mehr von der Hand gefesselt\nAls Aktion kann die Hand ein anderes Wesen greifen oder sich in Reichweite bewegen. Bei diesen Aktionen wird ein bereits gefesseltes Ziel losgelassen."
+}

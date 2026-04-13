@@ -1,0 +1,59 @@
+{
+  "name": "Bomb Automaton",
+  "size": "Small",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "small",
+      "construct",
+      "cr1",
+      "homebrew"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 15,
+  "hp": {
+    "average": 13,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 13,
+    "con": 16,
+    "int": 2,
+    "wis": 10,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "understands one language known by its creator but can't speak"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Animated Explosive",
+      "text": "When it takes fire damage, or as\nan action on its turn, the automaton's fuse lights. At\nthe start of each of the automaton's turns, roll a d4.\nOn a result of 1, the automaton explodes in a 15-\nfoot radius fireball at the start of its next turn,\nforcing each creature in the area to make a DC 12\nDexterity saving throw, taking 4 (1d8) fire damage\nplus 4 (1d8) bludgeoning damage on a failed save, or\nhalf as much on a successful one.\n\nIf the automaton is killed, the fuse remains lit,\npotentially setting off the explosion after its death. If\nanother creature hits the automaton with an\nunarmed strike attack, the creature can choose to\nsnuff out the fuse instead of dealing damage."
+    },
+    {
+      "name": "Immutable Form",
+      "text": "The automaton is immune to any spell or\neffect that would alter its form."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "The automaton deals double damage to\nobjects and structures."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one\ntarget. Hit: 4 (1d6 + 1) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

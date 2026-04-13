@@ -1,0 +1,88 @@
+{
+  "name": "Erwachsener Golddrache",
+  "size": "Riesig",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "huge",
+      "dragon",
+      "cr17",
+      "monster-manual"
+    ]
+  },
+  "alignment": "gesetztreu-gut",
+  "ac": 19,
+  "hp": {
+    "average": 256,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80,
+    "swim": 40
+  },
+  "abilities": {
+    "str": 27,
+    "dex": 14,
+    "con": 25,
+    "int": 16,
+    "wis": 15,
+    "cha": 24
+  },
+  "skills": {
+    "Insight": 8,
+    "Perception": 14,
+    "Persuasion": 13,
+    "Stealth": 8
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "17",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Amphibisch",
+      "text": "Der Drache kann Luft und Wasser ausatmen."
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache einen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache kann seine „Furchteinflößende Präsenz“ einsetzen. Anschließend führt er drei Angriffe aus: einen mit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +14 zum Treffen, Reichweite10 ft: , ein Ziel. Treffer: 19 (2d10 + 8) Durchdringungsschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +14 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 15 (2d6 + 8) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +14 zum Treffen, Reichweite15 ft: , ein Ziel. Treffer: 17 (2d8 + 8) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Furchterregende Präsenz",
+      "type": "special",
+      "text": "Jede Kreatur, die sich120 feetin der Nähe des Drachen befindet und ihn wahrnimmt, muss einenDC 21Weisheits-Rettungswurf bestehen oder wird für 1 Minute in Angst versetzt. Eine Kreatur kann den Rettungswurf am Ende jedes ihrer Züge wiederholen und den Effekt auf sich selbst bei Erfolg beenden. Wenn der Rettungswurf einer Kreatur erfolgreich ist oder der Effekt für sie endet, ist die Kreatur für die nächsten 24 Stunden immun gegen die „Furchteinflößende Präsenz“ des Drachen."
+    },
+    {
+      "name": "Atemwaffen (Aufladezeit 5-6)",
+      "type": "special",
+      "text": "Der Drache setzt eine der folgenden Atemwaffen ein.\n\nFeueratem. Der Drache speit Feuer in einem 60-Fuß-Kegel. Jede Kreatur in diesem Bereich muss einenDC 21Geschicklichkeits-Rettungswurf durchführen; bei einem misslungenen Rettungswurf erleidet sie 66 (12d10) Feuerschaden, bei einem erfolgreichen Rettungswurf nur die Hälfte dieses Schadens.\n\nSchwächungsatem. Der Drache speit Gas in einem 60-Fuß-Kegel aus. Jede Kreatur in diesem Bereich muss einenDC 21  Stärke-Rettungswurf bestehen oder erhält 1 Minute lang Nachteil bei Stärke-basierten Angriffswürfen, Stärke-Proben und Stärke-Rettungswürfen. Eine Kreatur kann den Rettungswurf am Ende jedes ihrer Züge wiederholen und den Effekt auf sich selbst bei Erfolg beenden."
+    }
+  ],
+  "source": "creature"
+}

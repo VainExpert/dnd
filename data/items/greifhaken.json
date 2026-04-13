@@ -1,0 +1,45 @@
+{
+  "id": "greifhaken",
+  "type": "item",
+  "name": "Greifhaken",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 2,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 5,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Als Aktion kann der Greifhaken an eine Kante oder ähnliches in bis zu 15 m Entfernung geworfen werden. Er greift zu, wenn ein SG-13 Akrobati-Wurf bestanden wird. Wenn du vorher ein Seil daran befestigt hast, kannst du daran hochklettern.",
+  "tags": [
+    "nützlich",
+    "aktion",
+    "klettern",
+    "bewegung",
+    "werkzeug"
+  ]
+}

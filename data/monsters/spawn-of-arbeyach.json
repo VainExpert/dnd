@@ -1,0 +1,70 @@
+{
+  "name": "Spawn Of Arbeyach",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr5",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 17,
+  "hp": {
+    "average": 78,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 15,
+    "con": 15,
+    "int": 10,
+    "wis": 13,
+    "cha": 12
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 5
+  },
+  "languages": [
+    "Infernal"
+  ],
+  "challenge": {
+    "cr": "5",
+    "xp": 1800,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Hive Mind",
+      "text": "Spawn of Arbeyach share a bond with other members of their hive that enhances their hive mates' perception. As long as a spawn is within 60 feet of at least one hive mate, it has advantage on initiative rolls and Wisdom (Perception) checks. If one spawn is aware of a particular danger, all others in the hive are, too. No spawn in a hive mind is surprised at the beginning of an encounter unless all of them are."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The spawn of Arbeyach's spellcasting ability is Charisma. The Spawn of Arbeyach can innately cast the following spells, requiring no material components: 1/day: conjure animals (only swarms of insects) Scent Communication. Spawn of Arbeyach can communicate with each other and all swarms of insects within 60 feet via pheromone transmission. In a hive, this range extends to cover the entire hive. This is a silent and instantaneous mode of communication that only Arbeyach, spawn of Arbeyach, and swarms of insects can understand. As a bonus action, the spawn of Arbeyach can use this trait to control and give orders to one swarm of insects within 60 feet."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "A Spawn of Arbeyach makes one bite attack and two stinger attacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 4 (1d8) poison damage."
+    },
+    {
+      "name": "Stinger",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 9 (2d8) poison damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. A poisoned creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,76 @@
+{
+  "name": "Maladar Dictum",
+  "size": "Huge",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "huge",
+      "aberration",
+      "cr10",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 20,
+  "hp": {
+    "average": 210,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 15,
+    "con": 19,
+    "int": 15,
+    "wis": 10,
+    "cha": 16
+  },
+  "skills": {
+    "Athletics": 9,
+    "Deception": 7,
+    "Insight": 4,
+    "Intimidation": 7
+  },
+  "languages": [
+    "Common",
+    "Deep Speech",
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Formless Shape",
+      "text": "Maladar is immune to any spell or\neffect that would alter his form."
+    },
+    {
+      "name": "Reform",
+      "text": "Each time Maladar takes damage in\ncombat, his arm grows another limb, increasing\nthe damage of his smash attack by 1d8. There is no\nlimit to the number of limbs, tentacles, and claws\nMaladar can grow this way."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Maladar makes two attacks with\nChanger plus one smash attack."
+    },
+    {
+      "name": "Changer (Greatsword)",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9\nto hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 7 (2d6) necrotic damage."
+    },
+    {
+      "name": "Smash",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 10 ft.,\none target. Hit: 14 (2d8 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Lord of Chaos",
+      "type": "special",
+      "text": "Maladar has a 50% chance of\nsummoning a member of his court in an adjacent unoccupied space. If successful, roll a d12\nand consult the below chart. Each member of his\ncourt may only be summoned once per day in this\nmanner. If the same member is summoned twice,\nnothing happens.\n* 1-4: Baron Malgas\n* 5–7: Korsoth Vastikan\n* 8–9: The Queen of Bones\n* 10–11: Lord Rall\n* 12: Uursovk"
+    }
+  ],
+  "source": "creature"
+}

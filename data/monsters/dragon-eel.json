@@ -1,0 +1,83 @@
+{
+  "name": "Dragon Eel",
+  "size": "Huge",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "huge",
+      "dragon",
+      "cr12",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 18,
+  "hp": {
+    "average": 230,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 60
+  },
+  "abilities": {
+    "str": 26,
+    "dex": 12,
+    "con": 20,
+    "int": 14,
+    "wis": 13,
+    "cha": 14
+  },
+  "skills": {
+    "Acrobatics": 5,
+    "Athletics": 12,
+    "Insight": 5,
+    "Perception": 6
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "12",
+    "xp": 8400,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Limited Amphibiousness",
+      "text": "The dragon eel can breathe air and water, but it needs to be submerged at least once every six hours to avoid suffocation."
+    },
+    {
+      "name": "Shocking Touch",
+      "text": "A dragon eel's body generates a potent charge of lightning. A creature that touches or makes a successful melee attack against a dragon eel takes 5 (1d10) lightning damage."
+    },
+    {
+      "name": "Storm Glide",
+      "text": "During storms, the dragon eel can travel through the air as if under the effects of a fly spell, except using its swim speed."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The dragon eel makes one bite attack and one tail slap attack."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 26 (4d8 + 8) piercing damage plus 5 (1d10) lightning damage, and the target must succeed on a DC 18 Constitution saving throw or become paralyzed for 1d4 rounds."
+    },
+    {
+      "name": "Tail Slap",
+      "type": "special",
+      "text": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 30 (5d8 + 8) bludgeoning damage plus 5 (1d10) lightning damage and push the target up to 10 feet away."
+    },
+    {
+      "name": "Lightning Breath (Recharge 6)",
+      "type": "special",
+      "text": "The dragon eel exhales lightning in a 60-foot line that is 5 feet wide. Each target in that line takes 55 (10d10) lightning damage, or half damage with a successful DC 18 Dexterity saving throw."
+    }
+  ],
+  "source": "creature"
+}

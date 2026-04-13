@@ -1,0 +1,17 @@
+{
+  "id": "dornenpeitsche",
+  "name": "Dornenpeitsche",
+  "level": 0,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V, G, M (der Stamm einer Pflanze mit Dornen)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Druide"
+  ],
+  "text": "Du erschaffst eine lange, rankenartige mit Dornen bedeckte Peitsche, die auf deinen Befehl hin nach einer Kreatur in Reichweite schlägt.\nFühre einen Nahkampf-Zauberangriff gegen das Ziel durch.\nBei Treffer: 1W6 Stichschaden und wenn es sich um eine große oder kleinere Kreatur handelt, wird sie 3 m auf dich zu gezogen.\n\nAuf höheren Level: Schaden steigt um je 1W6 auf Level 5, 11 und 17."
+}

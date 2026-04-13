@@ -1,0 +1,22 @@
+{
+  "id": "attribut-verbessern",
+  "name": "Attribut verbessern",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G, M (Fell oder Feder von einem Tier)",
+  "duration": "Konzentration, bis zu 1 h",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Kleriker",
+    "Druide",
+    "Waldläufer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du berührst eine Kreatur und verleihst einen der folgenden wählbaren Effekte:\n * Anmut der Katze: DEX-Würfe immer mit Vorteil und kein Fallschaden bis max 6 m\n * Ausdauer des Bären: CON-Würfe immer mit Vorteil und 2W6 temporäre TP für Wirkungsdauer\n * Gerissenheit des Fuchses: INT-Würfe immer mit Vorteil\n * Pracht des Adlers: CHA-Würfe immer mit Vorteil\n * Stärke des Stiers: STR-Würfe immer mit Vorteil und Traglast verdoppelt\n * Weisheit der Eule: WIS-Würfe immer mit Vorteil\n\nAuf höheren Level gewirkt: pro Level 1 zusätzliche Kreatur als Ziel wählbar."
+}

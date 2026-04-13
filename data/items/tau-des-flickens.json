@@ -1,0 +1,43 @@
+{
+  "id": "tau-des-flickens",
+  "type": "item",
+  "name": "Tau des Flickens",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieses 15 m Seil kann sich selbst von kleinen Rissen reparieren. Akls Aktion können sich alle sich berührenden Stücke wieder zusammenflicken. Das Seil ist für immer verkürzt wenn ein Teil verloren oder zerstört wurde.",
+  "tags": [
+    "magisch",
+    "seil",
+    "reparieren"
+  ]
+}

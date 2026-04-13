@@ -1,0 +1,73 @@
+{
+  "name": "Erinyes",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr12",
+      "monster-manual",
+      "devil"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 18,
+  "hp": {
+    "average": 153,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 16,
+    "con": 18,
+    "int": 14,
+    "wis": 14,
+    "cha": 18
+  },
+  "skills": {},
+  "languages": [
+    "Infernal",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "12",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Hellish Weapons",
+      "text": "The erinyes's weapon attacks are magical and deal an extra 13 (3d8) poison damage on a hit (included in the attacks)."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The erinyes has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The erinyes makes three attacks"
+    },
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands, plus 13 (3d8) poison damage."
+    },
+    {
+      "name": "Longbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 13 (3d8) poison damage, and the target must succeed on a DC 14 Constitution saving throw or be poisoned. The poison lasts until it is removed by the lesser restoration spell or similar magic."
+    },
+    {
+      "name": "Variant: Rope of Entanglement",
+      "type": "special",
+      "text": "Some erinyes carry a rope of entanglement (detailed in the Dungeon Master's Guide). When such an erinyes uses its Multiattack, the erinyes can use the rope in place of two of the attacks."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "abenteurerring",
+  "type": "item",
+  "name": "Abenteuerring",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "ring",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 20,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Während der Ring offen produzierrt er eine kleine nicht warme Flamme, die keinen Zunder braucht. Diese macht 6 m helles Licht und weitere 6 m gedimmtes Licht. Der Ring kann als Bonus Aktion geöffnet oder geschlossen werden.",
+  "tags": [
+    "magisch",
+    "ring",
+    "schmuck",
+    "nützlich",
+    "abenteuer",
+    "licht",
+    "bonus aktion"
+  ]
+}

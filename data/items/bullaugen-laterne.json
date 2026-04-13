@@ -1,0 +1,45 @@
+{
+  "id": "bullaugen-laterne",
+  "type": "item",
+  "name": "Bullaugen-Laterne",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 1,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 10,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Erzeugt 18 m helles Licht und weitere 18 m gedimmtes Licht für 6 h pro 0,5 l Öl in einem Kegel.",
+  "tags": [
+    "licht",
+    "abenteuer",
+    "feuer",
+    "öl",
+    "nützlich"
+  ]
+}

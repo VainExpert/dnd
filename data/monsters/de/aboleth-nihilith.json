@@ -1,0 +1,103 @@
+{
+  "name": "Aboleth, Nihilith",
+  "size": "Groß",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "large",
+      "undead",
+      "cr12",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 17,
+  "hp": {
+    "average": 135,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 40,
+    "fly": 40
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 9,
+    "con": 15,
+    "int": 18,
+    "wis": 15,
+    "cha": 18
+  },
+  "skills": {
+    "History": 12,
+    "Perception": 10
+  },
+  "languages": [
+    "Void Speech",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "12",
+    "xp": 8400,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Die Standhaftigkeit der Untoten",
+      "text": "Wenn der Schaden die Lebenspunkte des Nihileth auf 0 reduziert, muss es einen Konstitutionsrettungswurf mit einer Schwierigkeitsklasse von 5 + dem erlittenen Schaden ausführen, es sei denn, es handelt sich um Strahlenschaden oder um einen kritischen Treffer. Bei Erfolg sinken die Lebenspunkte des Nihileth stattdessen auf 1."
+    },
+    {
+      "name": "Zweistufig",
+      "text": "Ein Nihileth existiert auf der materiellen Ebene in einer von zwei Formen und kann nach Belieben zwischen diesen wechseln. In seiner materiellen Form verfügt es über eine Resistenz gegen Schaden durch nichtmagische Waffen. In seiner ätherischen Form ist es immun gegen Schaden durch nichtmagische Waffen. Die ätherische Form der Kreatur erscheint als dunkelvioletter Umriss ihrer materiellen Form, mit einem schwarz-violetten Schleier im Inneren. Ein Nihileth in ätherischer Form kann sich durch die Luft bewegen, als wäre sie Wasser, mit einer Fluggeschwindigkeit von 12 m."
+    },
+    {
+      "name": "Leere Aura",
+      "text": "Der untote Nihileth ist von einer eisigen Wolke umgeben. Ein Lebewesen, das seinen Zug innerhalb5 feetder Aura eines Nihileths beginnt, muss einen erfolgreichenDC 14Konstitutions-Rettungswurf bestehen oder wird bis zum Beginn seines nächsten Zuges verlangsamt. Außerdem erleidet jede Kreatur, die von einem Nihileth oder einem nihilethischen Zombie infiziert wurde, jedes Mal 7 (2d6) Kälteschaden, wenn sie ihren Zug innerhalb der Aura beginnt."
+    },
+    {
+      "name": "Ansteckende Telepathie",
+      "text": "Wenn ein Wesen telepathisch mit dem Nihileth kommuniziert oder einen psychischen Angriff gegen ihn einsetzt, kann der Nihileth seine Krankheit auf das Wesen übertragen. Das Wesen muss einenDC 14Weisheits-Rettungswurf bestehen, sonst infiziert es sich mit derselben Krankheit, die durch den Tentakelangriff des Nihileths verursacht wird."
+    },
+    {
+      "name": "Nihileths Versteck",
+      "text": "Bei einer Initiativwert von 20 (bei Gleichstand verliert der Nihileth) kann der Nihileth eine „Lair“-Aktion ausführen, um einen der magischen Effekte eines Aboleths oder die unten aufgeführte „Void Absorbance“-Aktion zu erzeugen. Der Nihileth kann denselben Effekt nicht in zwei aufeinanderfolgenden Runden anwenden.\n\n- Void-Absorption: Ein Nihileth kann die Lebenskraft derjenigen, die er in nihilethische Zombies verwandelt hat, an sich ziehen, um sein eigenes Leben wieder aufzufüllen. Dies entzieht den Zombies im Umkreis30 feetvon  des Nihileths 18 (6d6) Trefferpunkte, die gleichmäßig auf die Zombies verteilt werden, und heilt den Nihileth. Wenn ein Zombie durch diese Aktion 0 Trefferpunkte erreicht, stirbt er ohne einen Rettungswurf gegen Untoten-Willenskraft."
+    },
+    {
+      "name": "Regionale Auswirkungen",
+      "text": "Die regionalen Auswirkungen eines Nihileth-Lagers entsprechen denen eines Aboleth-Lagers, mit folgenden Ausnahmen:\n\n- Wasserquellen im Umkreis1 milevon  eines Nihileth-Lagers sind nicht nur auf übernatürliche Weise verseucht, sondern können auch die Krankheit des Nihileth verbreiten. Eine Kreatur, die von diesem Wasser trinkt, muss einen erfolgreichenDC 14  Konstitutionswurf bestehen, sonst infiziert sie sich."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Nihileth führt je nach seiner aktuellen Gestalt entweder drei Tentakelangriffe oder drei vernichtende Berührungen aus."
+    },
+    {
+      "name": "Tentakel (nur materielle Form)",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffer, Reichweite 3 m., ein Ziel. Treffer: 12 (2d6 + 5) Bludgeoning-Schaden. Wird die Zielkreatur getroffen, muss sie einen erfolgreichenDC 14Konstitutions-Rettungswurf bestehen oder erkrankt. Die Krankheit hat 1 Minute lang keine Wirkung; während dieser Zeit kann sie durch „Lesser Restoration“ oder vergleichbare Magie geheilt werden. Nach 1 Minute wird die Haut der erkrankten Kreatur durchscheinend und schleimig. Die Kreatur kann keine Trefferpunkte zurückgewinnen, es sei denn, sie befindet sich vollständig unter Wasser, und die Krankheit kann nur durch „Heilen“ oder vergleichbare Magie beseitigt werden. Sofern die Kreatur nicht vollständig untergetaucht ist oder häufig mit Wasser übergossen wird, erleidet sie alle 10 Minuten 6 (1d12) Säureschaden. Stirbt eine Kreatur, während sie erkrankt ist, erwacht sie nach1d6  Runden als nihilethischer Zombie wieder zum Leben. Dieser Zombie steht unter der permanenten Kontrolle des Nihileths."
+    },
+    {
+      "name": "Verwelkender Hauch (nur in ätherischer Gestalt)",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf Treffer, Reichweite10 ft: , eine Kreatur. Treffer: 14 (3d6+4) nekrotischer Schaden."
+    },
+    {
+      "name": "Formular austauschen",
+      "type": "special",
+      "text": "Als Bonusaktion kann der Nihileth nach Belieben zwischen seiner materiellen und seiner ätherischen Gestalt wechseln."
+    },
+    {
+      "name": "Schwanz (nur als Materialform)",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite10 ft: , ein Ziel. Treffer: 15 (3d6 + 5) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Versklaven (3 Mal pro Tag)",
+      "type": "special",
+      "text": "Der Nihileth wählt eine Kreatur als Ziel aus, die er innerhalb30 ft von  Metern von sich aus sehen kann. Das Ziel muss einenDC 14  Weisheits-Rettungswurf bestehen, sonst wird es vom Nihileth magisch verzaubert, bis der Nihileth stirbt oder sich auf einer anderen Existenzebene als das Ziel befindet. Das verzauberte Ziel steht unter der Kontrolle des Nihileth und kann keine Reaktionen ausführen; der Nihileth und das Ziel können über jede Entfernung hinweg telepathisch miteinander kommunizieren. Immer wenn das verzauberte Ziel Schaden erleidet, kann es den Rettungswurf wiederholen. Bei Erfolg endet der Effekt. Nicht öfter als einmal alle 24 Stunden kann das Ziel den Rettungswurf auch wiederholen, wenn es sich mindestens  vom 1 mileNihileth entfernt befindet."
+    }
+  ],
+  "source": "creature"
+}

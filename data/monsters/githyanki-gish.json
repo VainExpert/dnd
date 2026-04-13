@@ -1,0 +1,58 @@
+{
+  "name": "Githyanki Gish",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr10",
+      "mordenkainens-tome-of-foes",
+      "gith"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 17,
+  "hp": {
+    "average": 123,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 15,
+    "con": 14,
+    "int": 16,
+    "wis": 15,
+    "cha": 16
+  },
+  "skills": {
+    "Insight": 6,
+    "Perception": 6,
+    "Stealth": 6
+  },
+  "languages": [
+    "Gith"
+  ],
+  "challenge": {
+    "cr": "10",
+    "xp": 5900,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "text": "The githyanki's innate spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no components:\n\n* At will: <i>mage hand </i>(the hand is invisible)\n\n* 3/day each: <i>jump, misty step, nondetection </i>(self only)\n\n* 1/day each: <i>plane shift, telekinesis</i>"
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The githyanki is an 8th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The githyanki has the following wizard spells prepared:\n\n* Cantrips (at will): <i>blade ward, light, message, true strike</i>\n\n* 1st level (4 slots): <i>expeditious retreat, magic missile, sleep, thunderwave</i>\n\n* 2nd level (3 slots): <i>blur, invisibility, levitate</i>\n\n* 3rd level (3 slots): <i>counterspell, fireball, haste</i>\n\n* 4th level (2 slots): <i>dimension door</i>"
+    },
+    {
+      "name": "War Magic",
+      "text": "When the githyanki uses its action to cast a spell, it can make one weapon attack as a bonus action"
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

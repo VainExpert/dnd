@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-handbuch-der-golems",
+  "type": "item",
+  "name": "Handbuch der Golems",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "sehr selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Foliant enthält die notwendigen Informationen und Beschwörungsformeln, um einen Golem eines bestimmten Typs zu erschaffen. Der SL wählt die Schadensart aus oder bestimmt sie zufällig. Um das Handbuch entziffern und verwenden zu könnten, musst du ein Zauberwirker mit mindestens zwei Zauberplätzen des 5. Grades sein. Eine Kreatur, die das Handbuch der Golems nicht verwenden kann und es versucht, erleidet 6W6 psychischen Schaden. Um einen Golem zu erschaffen, musst du die in der Tabelle angegebene Zeit verbrauchen. Dabei arbeitest du ohne Unterbrechung genau nach der Anleitung im Handbuch und ruhst dich maximal acht Stunden pro Tag aus. Du musst außerdem die angegebenen Kosten für die Materialien ausgeben. Sobald der Golem fertiggestellt ist, wird das Buch von mystischen Flammen verschlungen. Der Golem erwacht zum Leben, wenn die Asche des Handbuchs auf ihn gestreut wird. Er steht unter deiner Kontrolle, versteht deine gesprochenen Befehle und gehorcht diesen.",
+  "tags": []
+}

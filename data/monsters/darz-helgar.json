@@ -1,0 +1,61 @@
+{
+  "name": "Darz Helgar",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr0",
+      "storm-kings-thunder",
+      "illuskan human"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 12,
+  "hp": {
+    "average": 27,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 15,
+    "con": 12,
+    "int": 10,
+    "wis": 11,
+    "cha": 11
+  },
+  "skills": {
+    "Intimidation": 2,
+    "Sleight of Hand": 4,
+    "Stealth": 4
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Sneak Attack (1/turn)",
+      "text": "Darz deals an extra 7 (2d6) damage when he hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Darz that isn't incapacitated and Darz doesn't have disadvantage on the attack roll."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) piercing damage."
+    },
+    {
+      "name": "Sling",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4+2) piercing damage. Darz carries twenty sling stones."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "topf-des-erwachens",
+  "type": "item",
+  "name": "Topf des Erwachens",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 75,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du eine Pflanze in den Topf pflanzt und für 30 Tage wachsen lässt, wird er automatisch ein Erwachter Busch. Nach dem Erwachen wird der Topf zerstört. Der Erwachte Busch ist dir gegenüber freundlich und gehorcht deinen Befehlen. Ohne Befehle macht er nichts.",
+  "tags": [
+    "magisch",
+    "topf",
+    "zauber",
+    "erwachen"
+  ]
+}

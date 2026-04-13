@@ -1,0 +1,47 @@
+{
+  "id": "trank-des-gifts",
+  "type": "item",
+  "name": "Trank des Gifts",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "potion",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 200,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieses Gebräu riecht, schmeckt und sieht aus wie ein Heiltrank oder ein anderer vorteilhafter Trank. Allerdings ist dieser Trank ein Gift, das durch Illusionsmagie maskiert wurde. Der Zauber Identifizieren enthüllt seine wahre Natur. Wenn du ihn trinkst, erleidest du 3W6 Giftschaden und musst einen SG-13 CON-Rettungswurf bestehen, oder du bist vergiftet. Solange du auf diese Weise vergiftet bist, erleidest du zu Beginn jedes deiner Züge 3W6 Giftschaden. Du kannst den Rettungswurf am Ende jedes deiner Züge wiederholen. Bei einem erfolgreichen Rettungswurf verringert sich der Giftschaden, den du in deinen weiteren Zügen erleidest, um 1W6. Das Gift verliert seine Wirkung, wenn der Schaden auf 0 reduziert wurde.",
+  "tags": [
+    "magisch",
+    "konsumiert",
+    "trank",
+    "flüssigkeit",
+    "illusion",
+    "gift",
+    "schaden"
+  ]
+}

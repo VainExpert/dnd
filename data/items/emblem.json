@@ -1,0 +1,47 @@
+{
+  "id": "emblem",
+  "type": "item",
+  "name": "Emblem",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "common",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 5,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Eine Emblem mit heiligen Symbolen, das als arkaner Fokus für Zauber dient. Das Emblem muss auf Stoff oder einem Schild getragen werden.",
+  "tags": [
+    "abenteuer",
+    "magie",
+    "fokus",
+    "zauber",
+    "kleriker",
+    "paladin",
+    "tempel"
+  ]
+}

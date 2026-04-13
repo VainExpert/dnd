@@ -1,0 +1,75 @@
+{
+  "name": "Bone Crawler",
+  "size": "Huge",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "huge",
+      "aberration",
+      "cr13",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 161,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 10
+  },
+  "abilities": {
+    "str": 23,
+    "dex": 16,
+    "con": 20,
+    "int": 9,
+    "wis": 15,
+    "cha": 9
+  },
+  "skills": {},
+  "languages": [
+    "Deep Speech"
+  ],
+  "challenge": {
+    "cr": "13",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Improved Critical",
+      "text": "The bone crawler’s bone blade attacks score a\ncritical hit on a roll of 19 or 20."
+    },
+    {
+      "name": "Spiked Bone Armor",
+      "text": "The bone crawler is encased in a shell of ironhard\nbones that can absorb 150 hit points worth of damage. Against area\nof effect attacks, the bone crawler’s bone armor will still take damage\nregardless of whether the bone crawler succeeded on the save. If the bone\ncrawler succeeds on the save, the armor takes half the total damage dealt\nby the attack. If the bone crawler fails its saving throw, the armor takes\ndouble damage from the area effect.\n\nFor every 10 hit points of damage the armor takes, the armor gains an\nadditional bone spike. A creature that starts its turn within 5 ft. of the bone\ncrawler takes damage due to the bone spikes. For every bone spike the\narmor has accumulated, the adjacent creatures take 1d4 piercing damage.\nThe bone crawler can repair its armor over a 24 hour period by absorbing\nadditional bones into its hulking mass. As the bone crawler absorbs bones,\nit secretes a substance that will harden, coating the bones, and create the\niron-hard shell. For every 3 hit points of bone absorbed by the crawler, 1\nhit point of damage is repaired on the armor. For example, if the crawler\nabsorbs the skeleton of a creature that had 75 hit points it would repair 25\nhit points of damage on its armor."
+    },
+    {
+      "name": "False Appearance",
+      "text": "While motionless, a bone crawler is indistinguishable\nfrom a mound of bones."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The crawler can make up to 6 attacks using its bone blades\nand bone whips."
+    },
+    {
+      "name": "Bone Blade",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target.\nHit: 17 (1d10 + 8) slashing damage."
+    },
+    {
+      "name": "Bone Whip",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target.\nHit: 11 (1d6 + 8) bludgeoning damage."
+    },
+    {
+      "name": "Whirling Frenzy (Recharge 5–6)",
+      "type": "special",
+      "text": "The bone crawler spins its bone\nblades in a swirling storm of sharpened edges. Creatures within 10 feet\nof the crawler must succeed on a DC 15 Dexterity saving throw, taking\n15 (2d8 + 6) slashing damage on a failure, or half as much damage on a\nsuccessful one."
+    }
+  ],
+  "source": "creature"
+}

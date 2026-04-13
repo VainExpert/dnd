@@ -1,0 +1,46 @@
+{
+  "id": "dornenschild",
+  "type": "item",
+  "name": "Dornenschild",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "off-hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 350,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein mit Dornen besetztes, magisches Schild, das die folgenden Eigenschaften hat: Schildschlag: Als Angriff kannst du das Schild auf einen Gegner in 1,5 m Abstand zu dir schlagen. Rechne deinen Übungsbonus und deinen STR-Modifikator zum Angriffswurf dazu. Bei einem Treffer macht das Schild 2W6 + STR-Modifikator Stichschaden. Dornensalve: Als Magie Aktion können Dornen in einem 9 m Kegel vom Schild aus herausbrechen. Jede Kreatur im Kegel muss einen SG-13 DEX-Rettugnswurf machen. Sie nhemen 3W6 Stichschaden oder die Hälfte bei einem Erfolg. Diese Eigenschaft kann nur einmal pro Tag verwendet werden.",
+  "tags": [
+    "schild",
+    "magisch",
+    "waffe",
+    "abwehr",
+    "angriffe",
+    "dornen"
+  ]
+}

@@ -155,24 +155,6 @@ const iconsIndexPath = path.join(iconsDataDir, "index.json");
 
 const ICON_EXTS = new Set([".webp", ".png", ".jpg", ".jpeg", ".svg"]);
 
-function walkFilesRecursive(rootDir, extsSet) {
-  const results = [];
-  function walk(absDir, relDir) {
-    const entries = fs.readdirSync(absDir, { withFileTypes: true });
-    for (const e of entries) {
-      const abs = path.join(absDir, e.name);
-      const rel = relDir ? path.posix.join(relDir, e.name) : e.name;
-      if (e.isDirectory()) walk(abs, rel);
-      else if (e.isFile()) {
-        const ext = path.extname(e.name).toLowerCase();
-        if (extsSet.has(ext)) results.push(rel);
-      }
-    }
-  }
-  walk(rootDir, "");
-  return results.sort((a, b) => a.localeCompare(b, "en"));
-}
-
 function titleFromRelIconPath(relPath) {
   const base = path.posix.basename(relPath).replace(path.extname(relPath), "");
   return base

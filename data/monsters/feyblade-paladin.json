@@ -1,0 +1,81 @@
+{
+  "name": "Feyblade Paladin",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 20,
+  "hp": {
+    "average": 86,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 8,
+    "con": 14,
+    "int": 15,
+    "wis": 10,
+    "cha": 18
+  },
+  "skills": {
+    "Arcana": 6,
+    "Nature": 6,
+    "Performance": 8,
+    "Persuasion": 8
+  },
+  "languages": [
+    "Any three languages"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Combat Caster",
+      "text": "The paladin can perform the somatic\ncomponents of spells even when it has weapons or a\nshield in one or both hands."
+    },
+    {
+      "name": "Divine Smite",
+      "text": "When the paladin hits with a melee\nweapon attack, it can expend a spell slot to deal an\naddition 9 (2d8) radiant damage, in addition to the\nweapon's damage. This damage increases by 1d8\nradiant damage per spell slot level above 1st."
+    },
+    {
+      "name": "Dueling Fighting Style",
+      "text": "The slayer gains a +2 bonus to\ndamage rolls while wielding a melee weapon in one\nhand and no other weapons (included in the attack)."
+    },
+    {
+      "name": "Fey-Infused Weapon",
+      "text": "The paladin's weapon is infused\nwith energies of fey. Whenever an enemy is struck by\nits blade, it must succeed on a DC 16 Wisdom saving\nthrow or be affected by the <i>faerie fire</i> spell for one\nminute or until the paladin strikes another target with\nits weapon."
+    },
+    {
+      "name": "Pact Magic",
+      "text": "The paladin is a 9th-level spellcaster. Its\nspellcasting ability is Charisma (spell save DC 16, +8 to\nhit with spell attacks). It regains these expended\nspellslots when it finishes a short or long rest. The\npaladin has the following warlock spells prepared:\n\n* Cantrips (at will): <i>blade ward, eldritch blast, true strike</i>\n\n* 1st-2nd level (2 2nd-level slots): <i>calm emotions, darkness, faerie fire, phantasmal force, sleep</i>"
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The paladin is a 9th-level spellcaster. Its\nspellcasting ability is charisma (spell save DC 16, +8 to\nhit with spell attacks). The paladin has the following\npaladin spells prepared:\n\n* 1st level (4 slots): <i>bless, detect good and evil, ensnaring strike, speak with animals</i>\n\n* 2nd level (2 slots): <i>find steed, lesser restoration, magic weapon, moonbeam, misty step</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The paladin makes two attacks with its\nlongsword."
+    },
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft.,\none target. Hit: 10 (1d8 + 6) slashing damage, or 9\n(1d10 + 4) slashing damage if used with two hands."
+    }
+  ],
+  "source": "creature"
+}

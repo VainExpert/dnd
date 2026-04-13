@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-zauberabwehrschild",
+  "type": "item",
+  "name": "Zauberabwehrschild",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "armor",
+  "rarity": "sehr selten",
+  "requires_attunement": true,
+  "attunement_text": "Schild",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "off-hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diesen Schild hältst, bist du bei Rettungswürfen gegen Zauber und andere magische Effekte im Vorteil und Zauberangriffe gegen dich sind im Nachteil.",
+  "tags": []
+}

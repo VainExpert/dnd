@@ -1,0 +1,47 @@
+{
+  "id": "rueckwurfschild",
+  "type": "item",
+  "name": "Rückwurfschild",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "off-hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 350,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Das Schild gibt einen +1 Bonus auf deine Rüstungsklasse, wenn es getragen wird. Das Schild hat 4 LAdungen. Wenn es getragen wird und eine Große oder kleinere Kreatur dich aus maximal 1,5 m trifft, kannst du als Reaktion eine Ladung des Schildes verwenden und den Angreifer 4,5 m gerade wegstoßen. Das Schild bekommt 1W4 Ladungen am Morgen zurück..",
+  "tags": [
+    "magisch",
+    "abwehr",
+    "schild",
+    "bonus",
+    "reaktion",
+    "ladungen",
+    "stoßen"
+  ]
+}

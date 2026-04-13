@@ -1,0 +1,57 @@
+{
+  "name": "Narzugon",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr13",
+      "mordenkainens-tome-of-foes",
+      "devil"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 20,
+  "hp": {
+    "average": 112,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 10,
+    "con": 17,
+    "int": 16,
+    "wis": 14,
+    "cha": 19
+  },
+  "skills": {
+    "Perception": 7
+  },
+  "languages": [
+    "Common",
+    "Infernal",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "13",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Diabolical Sense",
+      "text": "The narzugon has advantage on Wisdom (Perception) checks made to perceive good-aligned creatures."
+    },
+    {
+      "name": "Infernal Tack",
+      "text": "The narzugon wears spurs that are part of infernal tack, which allow it to summon its nightmare companion."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The narzugon has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

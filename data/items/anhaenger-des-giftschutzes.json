@@ -1,0 +1,47 @@
+{
+  "id": "anhaenger-des-giftschutzes",
+  "type": "item",
+  "name": "Anhänger des Giftschutzes",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "head",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 500,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "An dieser feinen Silberkette hängt ein schwarzer Edelsteinanhänger im Brillantschliff. Wenn du ihn trägst, haben Gifte keinen Effekt auf dich. Du bist gegen den Zustand Vergiftet und gegen Giftschaden immun.",
+  "tags": [
+    "magisch",
+    "schutz",
+    "nützlich",
+    "abenteuer",
+    "einstimmung",
+    "anhänger",
+    "gift"
+  ]
+}

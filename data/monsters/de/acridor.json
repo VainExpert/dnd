@@ -1,0 +1,75 @@
+{
+  "name": "Acridor",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "out-of-the-box-5e"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 14,
+  "hp": {
+    "average": 39,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 12,
+    "con": 14,
+    "int": 8,
+    "wis": 12,
+    "cha": 6
+  },
+  "skills": {
+    "Athletics": 3,
+    "Perception": 3,
+    "Survival": 3
+  },
+  "languages": [
+    "Pheromones (between acridor only)",
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Natürliche Springer",
+      "text": "Der Weitsprung des Acridors beträgt bis zu\n30 feetund sein Hochsprung bis zu 4,5 m, mit oder\nohne Anlauf."
+    },
+    {
+      "name": "Begrenzter Flug (Aufladen 4-6)",
+      "text": "Acridor sind keine\ngeschickten Flieger und können nur kurze Strecken zurücklegen.\nAls Bewegungsaktion kann ein Acridor fliegen60 ft."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Acridor führt zwei Angriffe aus, einen mit seinem\nBiss und einen mit seiner Klaue oder seinem Kpinga, oder zwei Kpinga-Angriffe."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 auf Treffer, Reichweite5 ft: , ein\nZiel. Treffer: 5 (1d6 +2) Durchdringungsschaden und 3 (1d6) Säureschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 zum Treffen, Reichweite:1,5 m .,\nein Ziel. Treffer: 4 (1d4 +2) Schnittschaden."
+    },
+    {
+      "name": "sich widersetzen",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfwaffenangriff: +4 auf den Trefferwurf,\nReichweite 1,5 m[ ]20/60Fuß, ein Ziel. Treffer: 5 (1d6 +2) Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

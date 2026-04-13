@@ -1,0 +1,45 @@
+{
+  "id": "robe",
+  "type": "item",
+  "name": "Robe",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 2,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Weite Roben, oft von Gelehrten oder Zauberwirkern getragen. Manche Orte lassen nur Personen in Roben eintreten.",
+  "tags": [
+    "robe",
+    "kleidung",
+    "magie",
+    "geheimnisvoll",
+    "religion"
+  ]
+}

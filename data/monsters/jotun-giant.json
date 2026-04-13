@@ -1,0 +1,88 @@
+{
+  "name": "Jotun Giant",
+  "size": "Gargantuan",
+  "type": {
+    "type": "giant",
+    "tags": [
+      "gargantuan",
+      "giant",
+      "cr22",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 20,
+  "hp": {
+    "average": 407,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 30,
+    "dex": 8,
+    "con": 26,
+    "int": 18,
+    "wis": 20,
+    "cha": 14
+  },
+  "skills": {
+    "Arcana": 10,
+    "History": 10,
+    "Nature": 10,
+    "Stealth": 5
+  },
+  "languages": [
+    "Common",
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "22",
+    "xp": 41000,
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Immortality",
+      "text": "Jotuns suffer no ill effects from age, and are immune to effects that reduce ability scores and hit point maximum."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The Jotun giant's innate spellcasting ability is Wisdom (spell save DC 19). It can innately cast the following spells, requiring no material components:\n\nAt will: earthquake, shapechange, speak with animals\n\n3/day: bestow curse, gust of wind\n\n1/day: divination"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The giant has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The giant's weapon attacks are magical."
+    },
+    {
+      "name": "Too Big to Notice",
+      "text": "The sheer size of the Jotun giant often causes those near it to confuse one at rest for part of the landscape. The jotun has advantage on Stealth checks when not moving."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The giant makes two greatclub attacks and a frightful presence attack, or one rock throwing attack."
+    },
+    {
+      "name": "Greatclub",
+      "type": "special",
+      "text": "Melee Weapon Attack: +16 to hit, reach 30 ft., one target. Hit: 55 (10d8 + 10) bludgeoning damage."
+    },
+    {
+      "name": "Rock",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +16 to hit, range 90/240 ft., one target. Hit: 49 (6d12 + 10) bludgeoning damage."
+    },
+    {
+      "name": "Frightful Presence",
+      "type": "special",
+      "text": "Each creature of the giant's choice that is within 120 feet of the giant and aware of it must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. Once a creature's saving throw is successful, it is immune to the giant's Frightful Presence for the next 24 hours."
+    }
+  ],
+  "source": "creature"
+}

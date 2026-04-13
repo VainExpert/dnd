@@ -1,0 +1,87 @@
+{
+  "name": "Solar",
+  "size": "Large",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "large",
+      "celestial",
+      "cr21",
+      "monster-manual"
+    ]
+  },
+  "alignment": "lawful good",
+  "ac": 21,
+  "hp": {
+    "average": 243,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 150
+  },
+  "abilities": {
+    "str": 26,
+    "dex": 22,
+    "con": 26,
+    "int": 25,
+    "wis": 25,
+    "cha": 30
+  },
+  "skills": {
+    "Perception": 14
+  },
+  "languages": [
+    "all",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "21",
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Angelic Weapons",
+      "text": "The solar's weapon attacks are magical. When the solar hits with any weapon, the weapon deals an extra 6d8 radiant damage (included in the attack)."
+    },
+    {
+      "name": "Divine Awareness",
+      "text": "The solar knows if it hears a lie."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The solar's spell casting ability is Charisma (spell save DC 25). It can innately cast the following spells, requiring no material components:\n\n* At will: <i>detect evil and good, invisibility </i>(self only)\n\n* 3/day each: <i>blade barrier, dispel evil and good, resurrection</i>\n\n* 1/day each: <i>commune, control weather</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The solar has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The solar makes two greatsword attacks."
+    },
+    {
+      "name": "Greatsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 22 (4d6 + 8) slashing damage plus 27 (6d8) radiant damage."
+    },
+    {
+      "name": "Slaying Longbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +13 to hit, range 150/600 ft., one target. Hit: 15 (2d8 + 6) piercing damage plus 27 (6d8) radiant damage. If the target is a creature that has 190 hit points or fewer, it must succeed on a DC 15 Constitution saving throw or die."
+    },
+    {
+      "name": "Flying Sword",
+      "type": "special",
+      "text": "The solar releases its greatsword to hover magically in an unoccupied space within 5 ft. of it. If the solar can see the sword, the solar can mentally command it as a bonus action to fly up to 50 ft. and either make one attack against a target or return to the solar's hands. If the hovering sword is targeted by any effect, the solar is considered to be holding it. The hovering sword falls if the solar dies."
+    },
+    {
+      "name": "Healing Touch (4/Day)",
+      "type": "special",
+      "text": "The solar touches another creature. The target magically regains 40 (8d8 + 4) hit points and is freed from any curse, disease, poison, blindness, or deafness."
+    }
+  ],
+  "source": "creature"
+}

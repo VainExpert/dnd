@@ -1,0 +1,88 @@
+{
+  "name": "Crystalline Devil",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr6",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 15,
+  "hp": {
+    "average": 102,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 18,
+    "int": 14,
+    "wis": 13,
+    "cha": 15
+  },
+  "skills": {
+    "Deception": 8,
+    "Insight": 4
+  },
+  "languages": [
+    "Celestial",
+    "Common",
+    "Infernal",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "6",
+    "xp": 2300,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "text": "Magical darkness doesn't impede the devil's darkvision."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The crystalline devil has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Sneak Attack (1/Turn)",
+      "text": "The crystalline devil deals an extra 7 (2d6) damage when it hits a target with an attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the devil that isn't incapacitated and the devil doesn't have disadvantage on the attack roll."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "While in the form of a gemstone, the devil is an innate spellcaster. Its spellcasting ability is Charisma (spell save DC 13). The devil can innately cast the following spells, requiring no material components:\n\n2/day: command\n\n1/day: suggestion"
+    },
+    {
+      "name": "Variant: Devil Summoning",
+      "text": "Some crystalline devils have an action option that allows them to summon other devils.\n\nSummon Devil (1/Day): The crystalline devil has a 25 percent chance of summoning one crystalline devil"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The devil makes two claw attacks."
+    },
+    {
+      "name": "Betraying Carbuncle",
+      "type": "special",
+      "text": "The crystalline devil takes the form of a gemstone worth 500 gp. It radiates magic in this form, but it can't be destroyed. It is fully aware and can see and hear its surroundings. Reverting to its usual form requires another action."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+    },
+    {
+      "name": "Crystalline Spray (Recharge 5-6)",
+      "type": "special",
+      "text": "The crystalline devil magically sprays shards of crystal in a 15-foot cone. Each target in that area takes 17 (7d4) piercing damage, or half damage with a successful DC 15 Dexterity saving throw."
+    }
+  ],
+  "source": "creature"
+}

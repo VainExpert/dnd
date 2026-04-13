@@ -1,0 +1,88 @@
+{
+  "name": "Yan-C-Bin",
+  "size": "Huge",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "huge",
+      "elemental",
+      "cr18",
+      "elemental-evil"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 22,
+  "hp": {
+    "average": 283,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 150
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 24,
+    "con": 24,
+    "int": 16,
+    "wis": 21,
+    "cha": 23
+  },
+  "skills": {},
+  "languages": [
+    "Auran"
+  ],
+  "challenge": {
+    "cr": "18",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Air Form",
+      "text": "Yan-C-Bin can enter a hostile creature's space and stop there. He can move through a space as narrow as 1 inch wide without squeezing if air could pass through that space."
+    },
+    {
+      "name": "Empowered Attacks",
+      "text": "Yan-C-Bin's slam attacks are treated as magical for the purpose of bypassing resistance and immunity to nonmagical weapons."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "Yan-C-Bin's innate spellcasting ability is Charisma (spell save DC 20, +12 to hit with spell attacks). He can innately cast the following spells, requiring no material components:\n\n* At will: gust of wind, invisibility, lightning bolt\n\n* 2/day each: chain lightning, cloudkill, haste"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "text": "If Yan-C-Bin fails a saving throw, he can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "Yan-C-Bin has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Yan-C-Bin makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 20 (3d8 + 7) force damage plus 10 (3d6) lightning damage."
+    },
+    {
+      "name": "Thundercrack (Recharges after a Short or Long Rest)",
+      "type": "special",
+      "text": "Yan-C-Bin unleashes a terrible thundercrack in a 100-foot- radius sphere centered on himself. All other creatures in the area must succeed on a DC 24 Constitution saving throw or take 31 (9d6) thunder damage and be deafened for 1 minute. On a successful save, a creature takes half as much damage and is deafened until the start of Yan-C-Bin's next turn."
+    },
+    {
+      "name": "Change Shape",
+      "type": "special",
+      "text": "Yan-C-Bin polymorphs into a Medium humanoid. While in polymorphed form, a swirling breeze surrounds him, his eyes are pale and cloudy, and he loses the Air Form trait. He can remain in polymorphed form for up to 1 hour. Reverting to his true form requires an action."
+    },
+    {
+      "name": "Summon Elementals (1/Day)",
+      "type": "special",
+      "text": "Yan-C-Bin summons up to three air elementals and loses 30 hit points for each elemental he summons. Summoned elementals have maximum hit points, appear within 100 feet of Yan-C-Bin, and disappear if Yan-C-Bin is reduced to 0 hit points."
+    }
+  ],
+  "source": "creature"
+}

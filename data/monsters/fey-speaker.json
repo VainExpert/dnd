@@ -1,0 +1,64 @@
+{
+  "name": "Fey Speaker",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 11,
+  "hp": {
+    "average": 26,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 13,
+    "con": 15,
+    "int": 14,
+    "wis": 10,
+    "cha": 16
+  },
+  "skills": {
+    "Deception": 5,
+    "Intimidation": 5,
+    "Religion": 4
+  },
+  "languages": [
+    "Any two languages"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Fey Presence (1/Short Rest)",
+      "text": "As an action, the\nspeaker can cause each creature in a 10-foot cube\norigination from it to make a DC 13 Wisdom saving\nthrow. The creatures that fail their save are all either\ncharmed or frightened by the speaker until the end\nof the speaker’s next turn."
+    },
+    {
+      "name": "Empowered Eldritch Blasts",
+      "text": "The speaker adds its\ncharisma modifier to its eldritch blast attacks. In\naddition, creatures hit by the speaker's eldritch\nblast are pushed up to 10 feet away from the\nspeaker in a straight line."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The speaker is a 3th-level spellcaster.\nIts spellcasting ability is Charisma (spell save DC\n13, +5 to hit with spell attacks). It regains its\nexpended spellslots when it finishes a short or long\nrest. The speaker has the following warlock spells\nprepared:\n\n* Cantrips (at will): <i>eldritch blast, friends, minor illusion</i>\n\n* 1st-2nd level (2 2nd-level slots): <i>calm emotions, faerie fire, hex, mirror image, phantasmal force, sleep, Tasha's hideous laughter</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +4 to hit,\nreach 5 ft. or range 20/60 ft., one target. Hit: 4\n(1d4 + 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "dunkelsicht",
+  "name": "Dunkelsicht",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G, M (Prise getrocknete Karotte oder Achat)",
+  "duration": "8 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Druide",
+    "Waldläufer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du berührst eine willige Kreatur.\nDu gibst ihr die Fähigkeit, im Dunkeln zu sehen. Für die Wirkungsdauer hat das Ziel Dunkelsicht mit 18 m Reichweite."
+}

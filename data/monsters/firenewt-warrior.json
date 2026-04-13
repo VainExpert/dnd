@@ -1,0 +1,63 @@
+{
+  "name": "Firenewt Warrior",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/2",
+      "volos-guide",
+      "firenewt"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 16,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 13,
+    "con": 12,
+    "int": 7,
+    "wis": 11,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "Draconic",
+    "Ignan"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The firenewt can breathe air and water."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The firenewt makes two attacks with its scimitar."
+    },
+    {
+      "name": "Scimitar",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft. one target. Hit: 4 (1d6+1) slashing damage."
+    },
+    {
+      "name": "Spit Fire (Recharges after a Short or Long Rest)",
+      "type": "special",
+      "text": "The firenewt spits fire at a creature within 10 feet of it. The creature must make a DC 11 Dexterity saving throw, taking 9 (2d8) fire damage on a failed save, or half as much damage on a successful one"
+    }
+  ],
+  "source": "creature"
+}

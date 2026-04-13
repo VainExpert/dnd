@@ -1,0 +1,67 @@
+{
+  "name": "Alseid Grovekeeper",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr3",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 15,
+  "hp": {
+    "average": 71,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 17,
+    "con": 12,
+    "int": 8,
+    "wis": 16,
+    "cha": 8
+  },
+  "skills": {
+    "Nature": 3,
+    "Perception": 5,
+    "Stealth": 5,
+    "Survival": 5
+  },
+  "languages": [
+    "Common",
+    "Elvish",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Hainswächter ist ein Zauberwirker der Stufe 5. Seine Zauberfertigkeit ist Weisheit (Zauber-RettungswurfDC 13, +5 auf Treffer bei Zauberangriffen). Er hat die folgenden Druidenzauber vorbereitet:\n\n* Cantrips (beliebig oft): Druidenkunst, Führung, Flamme erzeugen, Shillelagh\n\n* 1. Stufe (4 Plätze): Tierfreundschaft, Wunden heilen, Feenfeuer\n\n* 2. Stufe (3 Plätze): Tierbote, Metall erhitzen, Geringe Wiederherstellung\n\n* 3. Stufe (2 Plätze): Blitz herbeirufen, Magie bannen"
+    },
+    {
+      "name": "Woodfriend",
+      "text": "Wenn du dich im Wald befindest, hinterlasse keine Spuren und orientiere dich automatisch am geografischen Norden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Langstock",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +3 zum Treffen (+5 mit Shillelagh), Reichweite5 ft: 0, eine Kreatur. Treffer: 4 (1d6 + 1) Bludgeoning-Schaden oder 5 (1d8 + 1) Bludgeoning-Schaden bei Zweihandgebrauch oder 7 (1d8 + 3) Bludgeoning-Schaden mit Shillelagh."
+    },
+    {
+      "name": "Kurzbogen",
+      "type": "special",
+      "text": "Fernkampfangriff: +5 auf Treffer, Reichweite80/320  Fuß, ein Ziel. Treffer: 6 (1d6+3) Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

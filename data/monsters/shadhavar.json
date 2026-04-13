@@ -1,0 +1,71 @@
+{
+  "name": "Shadhavar",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr2",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 14,
+  "hp": {
+    "average": 97,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 15,
+    "con": 14,
+    "int": 8,
+    "wis": 10,
+    "cha": 16
+  },
+  "skills": {
+    "Stealth": 4
+  },
+  "languages": [
+    "understands Elvish and Umbral but can't speak"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "A shadhavar's innate spellcasting ability score is Charisma (spell save DC 13). It can cast the following spells, requiring no components:\n\n* At will: <i>disguise self </i>(as horse or unicorn only)\n\n* 2/day: <i>darkness </i>(centered on itself, moves with the shadhavar)"
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "A shadhavar's gore attacks are magical."
+    },
+    {
+      "name": "Shadesight",
+      "text": "A shadhavar's darkvision functions in magical darkness."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "A shadhavar makes one gore attack and one hooves attack."
+    },
+    {
+      "name": "Gore",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    },
+    {
+      "name": "Hooves",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 12 (3d6 + 2) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

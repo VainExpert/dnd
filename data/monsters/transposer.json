@@ -1,0 +1,64 @@
+{
+  "name": "Transposer",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 12,
+  "hp": {
+    "average": 49,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 13,
+    "con": 12,
+    "int": 8,
+    "wis": 12,
+    "cha": 12
+  },
+  "skills": {
+    "Deception": 3,
+    "Perception": 3
+  },
+  "languages": [
+    "Common",
+    "Deep Speech"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The transposer’s\ninnate spellcasting ability is Charisma\n(spell save DC 11, +3 to hit with spell\nattacks). It can innately cast <i>alter self</i> at\nwill requiring no material components."
+    },
+    {
+      "name": "Transposition",
+      "text": "An opponent hit by a transposer’s slam attack must make\na DC 13 Constitution saving throw or become linked to the transposer.\nA transposer can have no more than 4 linked creatures at a time. While\nlinked, the transposer knows the exact location of the target as long as\nit is on the same plane of existence.\n\nWhile the transposer remains linked to a target, any damage the\ntransposer takes is halved, and each linked target takes an equal\namount. If a transposer’s linked target regain hit points, the\namount received by the target is halved, and the transposer\nregains an equal amount of hit points.\n\nA <i>remove curse</i> or <i>dispel magic</i> cast on the linked target can\nend the link. If <i>dispel magic</i> is cast on the transposer, one random link\nis severed. Otherwise the link lasts until the targert dies or the transposer\nchooses to end the link."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The transposer makes two attacks with its slam."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9\n(2d6 + 2) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

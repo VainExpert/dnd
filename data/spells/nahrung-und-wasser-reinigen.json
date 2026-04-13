@@ -1,0 +1,19 @@
+{
+  "id": "nahrung-und-wasser-reinigen",
+  "name": "Nahrung und Wasser reinigen",
+  "level": 1,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "3 m (1,5 m Sphäre)",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": true,
+  "classes": [
+    "Artificer",
+    "Kleriker",
+    "Druide",
+    "Paladin"
+  ],
+  "text": "Alle nichtmagischen Nahrungsmittel und Getränke in einer 1,5 m Sphäre, auf einen Punkt deiner Wahl in Reichweite zentriert, werden von Giften und Krankheiten gereinigt."
+}

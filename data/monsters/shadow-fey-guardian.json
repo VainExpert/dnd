@@ -1,0 +1,82 @@
+{
+  "name": "Shadow Fey Guardian",
+  "size": "Large",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "large",
+      "humanoid",
+      "cr4",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 15,
+  "hp": {
+    "average": 110,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 16,
+    "int": 6,
+    "wis": 14,
+    "cha": 8
+  },
+  "skills": {
+    "Athletics": 6,
+    "Perception": 4
+  },
+  "languages": [
+    "Common",
+    "Elvish",
+    "Umbral"
+  ],
+  "challenge": {
+    "cr": "4",
+    "xp": 1100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Fey Ancestry",
+      "text": "The shadow fey guardian has advantage on saving throws against being charmed, and magic can't put it to sleep"
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The shadow fey's innate spellcasting ability is Charisma. It can cast the following spells innately, requiring no material components.\n\n1/day: misty step (when in shadows, dim light, or darkness only)"
+    },
+    {
+      "name": "Shadow's Vigil",
+      "text": "The shadow fey has advantage on Wisdom (Perception) checks, and magical darkness does not inhibit its darkvision."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the shadow fey has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Traveler in Darkness",
+      "text": "The shadow fey has advantage on Intelligence (Arcana) checks made to know about shadow roads and shadow magic spells or items."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The shadow fey makes two pike attacks."
+    },
+    {
+      "name": "Pike",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage."
+    },
+    {
+      "name": "Javelin",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +6 to hit, range 30/120 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

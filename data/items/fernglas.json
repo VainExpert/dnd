@@ -1,0 +1,44 @@
+{
+  "id": "fernglas",
+  "type": "item",
+  "name": "Fernglas",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1000,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein Fernglas gibt Vorteil bei Wahrnehmungs-Wurf auf entfernte Objekte.",
+  "tags": [
+    "abenteuer",
+    "werkzeug",
+    "soziales",
+    "nützlich"
+  ]
+}

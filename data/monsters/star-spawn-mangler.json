@@ -1,0 +1,53 @@
+{
+  "name": "Star Spawn Mangler",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr5",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 14,
+  "hp": {
+    "average": 71,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 40
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 18,
+    "con": 12,
+    "int": 11,
+    "wis": 12,
+    "cha": 7
+  },
+  "skills": {
+    "Stealth": 7
+  },
+  "languages": [
+    "Deep Speech"
+  ],
+  "challenge": {
+    "cr": "5",
+    "xp": 1800,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Ambush",
+      "text": "On the first round of each combat, the mangler has advantage on attack rolls against a creature that hasn't taken a turn yet."
+    },
+    {
+      "name": "Shadow Stealth",
+      "text": "While in dim light or darkness, the mangler can take the Hide action as a bonus action."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

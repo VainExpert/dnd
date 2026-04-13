@@ -1,0 +1,63 @@
+{
+  "name": "Luftelementar-Myrmidon (A)",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr7",
+      "elemental-evil"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 18,
+  "hp": {
+    "average": 117,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 14,
+    "int": 9,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "Auran",
+    "one language of its creator's choice"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Magische Waffen",
+      "text": "Die Waffenangriffe des Myrmidon sind magischer Natur."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Myrmidon führt drei Flegelangriffe aus."
+    },
+    {
+      "name": "Schlegel",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 8 (1d8 + 4) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Blitzschlag (Aufladen 6)",
+      "type": "special",
+      "text": "Der Myrmidon führt einen Schlag mit dem Flegel aus. Trifft der Angriff, verursacht er zusätzlich 18 (4d8) Blitzschaden, und das Ziel muss einenDC 14Konstitutions-Rettungswurf bestehen oder wird bis zum Ende des nächsten Zuges des Myrmidons betäubt."
+    }
+  ],
+  "source": "creature"
+}

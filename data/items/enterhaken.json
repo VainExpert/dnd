@@ -1,0 +1,43 @@
+{
+  "id": "enterhaken",
+  "type": "item",
+  "name": "Enterhaken",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 2,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 2,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein Enterhaken kann, mit einer Aktion, an eine Kante, einen Vorsprung oder eine andere geeignete Oberfläche in 15 m Entfernung geworfen werden. Der Haken bleibt hängen nach einem Akrobatik-Wurf (SG 13). Wenn du vorher ein Seil an den Haken gehängt hast, kannst du daran hochklettern.",
+  "tags": [
+    "abenteuer",
+    "klettern",
+    "bewegung"
+  ]
+}

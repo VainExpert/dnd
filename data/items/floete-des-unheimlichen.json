@@ -1,0 +1,45 @@
+{
+  "id": "floete-des-unheimlichen",
+  "type": "item",
+  "name": "Flöte des Unheimlichen",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 250,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": 3,
+    "recharge": "1W3 am Morgen"
+  },
+  "uses": {
+    "max": null,
+    "recharge": "1W3 am Morgen"
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Du musst im Umgang mit Blasinstrumenten geübt sein, um diese Flöte zu verwenden. Sie hat drei Ladungen. Du kannst sie als Aktion spielen und eine Ladung verbrauchen, um eine unheimliche, bezaubernde Melodie zu spielen. Jede Kreatur im Abstand von bis zu 9 m von dir, die dich spielen hört, muss einen SG-15 WIS-Rettungswurf bestehen, oder sie ist 1 min lang von dir verängstigt. Wenn du dies möchtest, bestehen alle Kreaturen in dem Bereich, die dir gegenüber nicht feindlich sind, automatisch den Rettungswurf. Wenn der Rettungswurf einer Kreatur scheitert, kann sie den Rettungswurf am Ende jedes ihrer Züge wiederholen und den Effekt bei einem Erfolg beenden. Wenn der eine Kreatur ihren Rettungswurf besteht, ist sie 24 h lang gegen den Effekt der Flöte immun. Die Flöte erhält täglich im Morgengrauen 1W3 verbrauchte Ladungen zurück",
+  "tags": [
+    "magisch",
+    "instrument",
+    "flöte",
+    "verängstigen",
+    "aktion"
+  ]
+}

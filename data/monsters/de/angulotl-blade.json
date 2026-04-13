@@ -1,0 +1,71 @@
+{
+  "name": "Angulotl-Klinge",
+  "size": "Klein",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr1/4",
+      "skirmisher",
+      "flee-mortals"
+    ]
+  },
+  "alignment": "any",
+  "ac": 12,
+  "hp": {
+    "average": 14,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20,
+    "swim": 30
+  },
+  "abilities": {
+    "str": 7,
+    "dex": 15,
+    "con": 11,
+    "int": 10,
+    "wis": 14,
+    "cha": 8
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 4
+  },
+  "languages": [
+    "Angulotl"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibisch",
+      "text": "Die Klinge kann Luft und Wasser aufnehmen."
+    },
+    {
+      "name": "Rutschig",
+      "text": "Angriffe aus der Hinterhaltposition gegen die Klinge werden mit Nachteil ausgeführt."
+    },
+    {
+      "name": "giftig",
+      "text": "Wenn eine Kreatur die Klinge mit einem Nahkampfangriff trifft, während sie sich5 feetin ihrer Nähe befindet, oder die Klinge berührt, erleidet diese Kreatur 2 (1d4) Giftschaden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Machete",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 5 (1d6 + 2) Schnittschaden."
+    },
+    {
+      "name": "Unentschieden",
+      "type": "special",
+      "text": "Fernkampfangriff: +4 auf den Treffer, Reichweite20/60  Fuß, ein Ziel. Treffer: 4 (1d4 + 2) Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

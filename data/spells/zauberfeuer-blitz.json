@@ -1,0 +1,17 @@
+{
+  "id": "zauberfeuer-blitz",
+  "name": "Zauberfeuer-Blitz",
+  "level": 1,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du entlädst einen gleißenden Feuerstoß.\nMache einen Fernkampf-Zauberangriff gegen ein Ziel in Reichweite; halbe oder Dreiviertel-Deckung gewährt dem Ziel keinen Vorteil gegen diesen Angriff.\nBei Treffer: 2W10 Strahlenschaden.\n\nAuf höheren Level gewirkt: +1 zusätzlicher Feuerstoß pro Level über 1. Du kannst die Stöße auf dasselbe oder verschiedene Ziele richten; für jeden eigener Angriffswurf."
+}

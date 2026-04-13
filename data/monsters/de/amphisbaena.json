@@ -1,0 +1,61 @@
+{
+  "name": "Amphisbaena",
+  "size": "Groß",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 15,
+  "hp": {
+    "average": 60,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20,
+    "swim": 30
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 15,
+    "con": 14,
+    "int": 2,
+    "wis": 12,
+    "cha": 2
+  },
+  "skills": {
+    "Stealth": 6
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Split",
+      "text": "Die Amphisbaena funktioniert auch dann normal, wenn sie\nin zwei Hälften geteilt wird. Erhält sie einen kritischen Treffer durch eine Hiebwaffe,\nwird die Kreatur in zwei Hälften geteilt und funktioniert fortan\nals zwei separate Kreaturen, von denen jede über die Hälfte der\naktuellen Trefferpunkte der ursprünglichen Amphisbaena verfügt. Die\ngeteilte Amphisbaena kann ihre beiden Hälften wieder vereinen, nachdem\nsie eine kurze oder lange Ruhepause absolviert hat. Wird eine der\ngeteilten Kreaturen getötet, kann die Amphisbaena\nden verlorenen Teil im Laufe von1d4 + 2Wochen\nnachwachsen lassen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Die Amphisbaena führt mit jedem ihrer beiden Köpfe\neinen Bissangriff aus."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffer,\nReichweite5 ft: , ein Ziel. Treffer: 12 (2d8 + 3)\nDurchdringungsschaden, und das Ziel muss\neinenDC 13Konstitutions-Rettungswurf bestehen, sonst\nwird es für 1 Stunde vergiftet."
+    }
+  ],
+  "source": "creature"
+}

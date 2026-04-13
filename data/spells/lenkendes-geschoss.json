@@ -1,0 +1,16 @@
+{
+  "id": "lenkendes-geschoss",
+  "name": "Lenkendes Geschoss",
+  "level": 1,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "36 m",
+  "components": "V, G",
+  "duration": "1 Runde (6 s)",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Kleriker"
+  ],
+  "text": "Ein Lichtblitz schießt auf ein Wesen deiner Wahl in Reichweite.\nFühre einen Fernkampf-Zauberangriff gegen das Ziel aus.\nBei Erfolg: 4W6 Strahlenschaden\nDer nächste Angriffswurf gegen das Ziel ist, bis vor Ende deines nächsten Zuges, im Vorteil, durch das mystische gedimmte Licht, das auf dem Ziel glitzert.\n\nAuf höheren Level gewirkt: pro Level 1W6 mehr Schaden"
+}

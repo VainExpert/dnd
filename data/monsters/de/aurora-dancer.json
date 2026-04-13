@@ -1,0 +1,67 @@
+{
+  "name": "Aurora-Tänzerin",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr5",
+      "homebrew"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 19,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 18,
+    "con": 17,
+    "int": 5,
+    "wis": 10,
+    "cha": 9
+  },
+  "skills": {
+    "Perception": 6,
+    "Stealth": 6
+  },
+  "languages": [
+    "the languages it knew in life"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Blizzard-Stalker",
+      "text": "Das Seh- und Hörvermögen des Tänzers wird\ndurch widrige Wetterbedingungen wie Wind, Schnee\nund Nebel nicht beeinträchtigt, und er erhält einen Vorteil bei allen Geschicklichkeits- (Verbergen-)\nProben, die er unter solchen Bedingungen ausführt."
+    },
+    {
+      "name": "Reaktiv",
+      "text": "Der Tänzer kann in jedem Zug eines Kampfes\neine Reaktion ausführen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Tänzer führt drei Angriffe mit seinem\nKrummsäbel aus."
+    },
+    {
+      "name": "Gefrorener Krummsäbel",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 auf Treffer, Reichweite\n1,5 m, ein Ziel. Treffer: 7 (1d6 + 4) Schnittschaden plus 4 (1d8) Kälteschaden."
+    },
+    {
+      "name": "Schneidender Wind",
+      "type": "special",
+      "text": "Der Tänzer schwingt seine Klinge in einem weiten\nhorizontalen Bogen und schlägt auf jede Kreatur in einem Umkreis von 15 Fuß\num5 feetden Tänzer herum ein. Jede Kreatur in diesem\nBereich muss einenDC 15Geschicklichkeits-Rettungswurf bestehen\noder erleidet 7 (2d6) Schnittschaden plus 10 (3d6) Kälteschaden\n."
+    }
+  ],
+  "source": "creature"
+}

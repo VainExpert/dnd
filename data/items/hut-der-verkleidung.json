@@ -1,0 +1,47 @@
+{
+  "id": "hut-der-verkleidung",
+  "type": "item",
+  "name": "Hut der Verkleidung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 150,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [
+    "selbstverkleidung"
+  ],
+  "effects": [],
+  "text": "Wenn du diesen Hut trägst, kannst du als Aktion den Zauber Selbstverkleidung beliebig oft mit dem Hut wirken. Der Zauber endet, wenn der Hut abgesetzt wird.",
+  "tags": [
+    "magisch",
+    "helm",
+    "hut",
+    "aktion",
+    "zauber"
+  ]
+}

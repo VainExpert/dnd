@@ -1,0 +1,45 @@
+{
+  "name": "Oaken Bolter",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr5",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 16,
+  "hp": {
+    "average": 58,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 18,
+    "con": 15,
+    "int": 3,
+    "wis": 10,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "understands one language of its creator but can't speak"
+  ],
+  "challenge": {
+    "cr": "5",
+    "xp": 1800,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The oaken bolter has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

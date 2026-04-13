@@ -1,0 +1,69 @@
+{
+  "name": "Dragonclaw",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "tyranny-of-dragons",
+      "human"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 14,
+  "hp": {
+    "average": 16,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 9,
+    "dex": 16,
+    "con": 13,
+    "int": 11,
+    "wis": 10,
+    "cha": 12
+  },
+  "skills": {
+    "Deception": 3,
+    "Stealth": 5
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Dragon Fanatic",
+      "text": "The dragonclaw has advantage on saving throws against being charmed or frightened. While the dragonclaw can see a dragon or higher-ranking Cult of the Dragon cultist friendly to it, the dragonclaw ignores the effects of being charmed or frightened."
+    },
+    {
+      "name": "Fanatic Advantage",
+      "text": "Once per turn, if the dragonclaw makes a weapon attack with advantage on the attack roll and hits, it deals an extra 7 (2d6) damage."
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The dragonclaw has advantage on an attack roll against a creature if at least one of the dragonclaw's allies is within 5 feet of the creature and the ally isn't incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The dragonclaw attacks twice with its scimitar."
+    },
+    {
+      "name": "Scimitar",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

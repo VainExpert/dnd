@@ -1,0 +1,81 @@
+{
+  "name": "Land",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr8",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 17,
+  "hp": {
+    "average": 127,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 20,
+    "dex": 16,
+    "con": 18,
+    "int": 10,
+    "wis": 16,
+    "cha": 8
+  },
+  "skills": {
+    "Athletics": 8,
+    "Perception": 9,
+    "Stealth": 6
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "8",
+    "xp": 3900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Vorbeiflug",
+      "text": "Der Ala löst keinen Gelegenheitsangriff aus, wenn er sich aus der Reichweite eines Gegners fliegt."
+    },
+    {
+      "name": "Giftiges Fleisch",
+      "text": "Das Gift des Ala durchdringt sein Fleisch. Eine Kreatur, die einen erfolgreichen Bissangriff gegen einen Ala ausführt, muss einenDC 16  Konstitutions-Rettungswurf durchführen; bei einem Fehlschlag erleidet die Kreatur 10 (3d6) Giftschaden."
+    },
+    {
+      "name": "Die Kraft des Sturms",
+      "text": "Wenn ein Gewitter über einem Ala und seinem Ziel tobt, erfolgt der Rettungswurf gegen „Blitzkuss“ mit Nachteil."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Die Ala führt zwei Klauenangriffe oder einen Klauen- und einen Bissangriff aus."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf den Trefferwurf, Reichweite5 ft: , ein Ziel. Treffer: 10 (1d10 + 5) Durchdringungsschaden; außerdem muss das Ziel einenDC 16Rettungswurf bestehen oder erleidet 10 (3d6) Giftschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 14 (2d8 + 5) Schnittschaden."
+    },
+    {
+      "name": "Der Kuss des Blitzes (Recharge 5-6)",
+      "type": "special",
+      "text": "Ein Ziel innerhalb des Bereichs50 feetmuss einenDC 16Geschicklichkeits-Rettungswurf durchführen. Bei einem misslungenen Rettungswurf erleidet es 28 (8d6) Blitzschaden, bei einem erfolgreichen Rettungswurf nur die Hälfte dieses Schadens."
+    }
+  ],
+  "source": "creature"
+}

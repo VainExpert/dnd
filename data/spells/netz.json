@@ -1,0 +1,18 @@
+{
+  "id": "netz",
+  "name": "Netz",
+  "level": 2,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "18 m (6 m Würfel)",
+  "components": "V, G, M (wenig Spinnennetz)",
+  "duration": "Konzentration, bis zu 1 h",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du beschwörst ein dichtes, klebriges Netz in einem 6 m Würfel an einem Ort deiner Wahl in Reichweite. Die Netze sind schwieriges Terrain und verschleiern den Bereich leicht.\nEs muss zwischen Mauern, Wänden, Bäumen oder über den Fußboden, eine Wand oder eine Ecke gespannt sein. Ansonsten fällt es am Beginn deines nächsten Zuges in sich zusammen.\nEin gespanntes Netz hat eine Dicke von 1,5 m.\nJede Kreatur, die den Zug in dem Netz beginnt oder das Netz betritt, muss einen DEX-Rettungswurf machen.\nBei Fehlschlag: festgesetzt, solange es in den Netzen ist oder bis es sich befreit.\nEine festgesetzte Kreatur kann als Aktion einen STR-Rettungswurf machen.\nBei Erfolg: nicht mehr festgesetzt.\nDie Netze sind brennbar und verbrennen innerhalb eines 1,5 m Würfels innerhalb von einer Runde. Alle Kreaturen, die ihren Zug innerhalb des verbrennenden Bereichs beginnen, erhalten 2W4 Feuerschaden."
+}

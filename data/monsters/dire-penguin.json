@@ -1,0 +1,77 @@
+{
+  "name": "Dire Penguin",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr2",
+      "homebrew"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 37,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 50
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 15,
+    "int": 2,
+    "wis": 11,
+    "cha": 5
+  },
+  "skills": {
+    "Athletics": 5
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Clumsy",
+      "text": "The penguin is not as graceful on land as it is in\nthe water. When on standing on solid ground, the\npenguin has disadvantage on Dexterity saving throws\nand any throws against an effect that would knock it\nprone."
+    },
+    {
+      "name": "Hold Breath",
+      "text": "The penguin can hold its breath for 30\nminutes."
+    },
+    {
+      "name": "Slide",
+      "text": "If the penguin moves up to 10 feet in a straight\nline, it can jump prone as a bonus action, sliding along\nicy or otherwise slick surfaces. When it does so, the\npenguin immediately, and at the start of each of its\nturns moves its entire speed in the same direction it\nran leading up to the slide. The speed of this slide may\nincrease or decrease based on the incline or surface, as\ndetermined by the GM.\nIf the penguin collides with a creature or object, the\ntarget takes 3 (1d6) piercing damage for every 10 feet\nthe penguin's slide would have moved it that turn. The\npenguin then takes half as much bludgeoning damage."
+    },
+    {
+      "name": "Swimming Leap",
+      "text": "If the penguin spends at least 20 feet\nof its movement swimming in a straight line, it may\nimmediately end this movement and perform a long\njump up to a distance of 25 feet in the same direction\nas its last 20 feet of swimming. This jump may be used\nto jump out of the water and onto a solid surface."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The penguin makes two attacks with its\nbeak."
+    },
+    {
+      "name": "Beak",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, range 5 ft., one\ntarget. Hit: 10 (2d6 + 3) bludgeoning damage, and the\ntarget is grappled (escape DC 13). Until this grapple\nends, the penguin can't use its beak on another\ncreature."
+    },
+    {
+      "name": "Fling",
+      "type": "special",
+      "text": "The penguin flings one Medium or smaller\ncreature it has grappled. The creature is thrown up to\n20 feet in a direction of the penguin's choice (up to 30\nfeet if the creature is Small or smaller) and knocked\nprone. If a thrown target strikes a solid surface, the\ntarget takes 3 (1d6) bludgeoning damage for every 10\nfeet it was thrown. If the target is thrown at another\ncreature, that creature must succeed on a DC 15\nDexterity saving throw or take the same damage and be\nknocked prone."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "feenfeuer",
+  "name": "Feenfeuer",
+  "level": 1,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "18 m (6 m Würfel)",
+  "components": "V",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Druide"
+  ],
+  "text": "Jeder Gegenstand in einem 6 m Würfel in Reichweite wird von einfarbigem Licht eingerahmt. Auch Kreaturen werden umrahmt, es sei denn sie bestehen einen DEX-Rettungswurf.\nWährend der Wirkungsdauer geben die betroffenen Ziele in einem 3 m Radius ein gedimmtes Licht ab.\nAngreifer sind bei Angriffen gegen die betroffene Ziele im Vorteil, wenn sie ihr Ziel sehen können. Betroffene profitieren nicht von Unsichtbarkeit."
+}

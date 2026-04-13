@@ -1,0 +1,17 @@
+{
+  "id": "tiersinn",
+  "name": "Tiersinn",
+  "level": 2,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "G",
+  "duration": "Konzentration, bis zu 1 h",
+  "concentration": true,
+  "ritual": true,
+  "classes": [
+    "Druide",
+    "Waldläufer"
+  ],
+  "text": "Du berührst eine willige Kreatur.\nFür die Wirkungsdauer kannst du mit deiner Aktion durch die Sinne des Tieres seine Umgebung wahrnehmen, bis du mit einer Aktion zu deinen eigenen Sinnen zurückkommst.\nWährend du über die Sinne des Tieres die Umgebung wahrnimmst, bist du für deine eigene Umgebung blind und taub."
+}

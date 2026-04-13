@@ -1,0 +1,59 @@
+{
+  "name": "Abyssal-Larve",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr1/2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 12,
+  "hp": {
+    "average": 39,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 13,
+    "con": 14,
+    "int": 3,
+    "wis": 10,
+    "cha": 7
+  },
+  "skills": {
+    "Perception": 2,
+    "Stealth": 2
+  },
+  "languages": [
+    "Abyssal"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Gequälter Geist",
+      "text": "Die Gedanken einer Abyssal-Larve lassen sich nicht lesen. Wenn eine\nKreatur versucht, die Gedanken einer Abyssal-Larve zu lesen, erleidet sie 7 (2d6) psychischen\nSchaden und muss einenDC 12  Weisheits-Rettungswurf bestehen. Bei einem misslungenen\nRettungswurf ist die Kreatur 1 Minute lang vergiftet. Während sie vergiftet ist,\nkann die Kreatur keine Reaktionen ausführen und nutzt ihre Aktion, um in eine zufällige\nRichtung zu sprinten, selbst wenn dies sie in gefährliche Gebiete führt."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +3 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 6 (2d4 + 1) Durchdringungsschaden plus 5 (2d4) Säureschaden."
+    },
+    {
+      "name": "Maden-Spray",
+      "type": "special",
+      "text": "Fernkampf-Zauberangriff: +3 auf den Treffer, Reichweite 3 m., ein Ziel.\nTreffer: 1 Giftschaden; das Ziel muss einenDC 12Geschicklichkeits-\nRettungswurf bestehen oder wird für 1 Minute vergiftet. Eine vergiftete Kreatur kann\nam Ende jedes ihrer Züge einenDC 12Konstitutions-Rettungswurf durchführen, wodurch\nder Vergiftungs-Effekt bei Erfolg beendet wird."
+    }
+  ],
+  "source": "creature"
+}

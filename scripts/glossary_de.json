@@ -28,11 +28,11 @@
     },
     {
       "pattern": "(?i)\\bBonusaktion(en)?\\b",
-      "replace": "Bonusaktion\\1"
+      "replace": "Bonus Aktion\\1"
     },
     {
       "pattern": "(?i)\\bZusatzaktion(en)?\\b",
-      "replace": "Bonusaktion\\1"
+      "replace": "Bonus Aktion\\1"
     },
     {
       "pattern": "(?i)\\bReaktion(en)?\\b",

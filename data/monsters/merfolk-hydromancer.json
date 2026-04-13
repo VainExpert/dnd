@@ -1,0 +1,81 @@
+{
+  "name": "Merfolk Hydromancer",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr9",
+      "nerzugals-extended-bestiary",
+      "merfolk"
+    ]
+  },
+  "alignment": "neutral good",
+  "ac": 15,
+  "hp": {
+    "average": 91,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 50
+  },
+  "abilities": {
+    "str": 11,
+    "dex": 14,
+    "con": 14,
+    "int": 19,
+    "wis": 17,
+    "cha": 14
+  },
+  "skills": {
+    "Arcana": 8,
+    "Nature": 8,
+    "Persuasion": 6
+  },
+  "languages": [
+    "Aquan",
+    "Common"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The merfolk can breathe air and water."
+    },
+    {
+      "name": "Aquatic Travel",
+      "text": "The merfolk uses surges of conjured\nwater to propel its body forward when on land, allowing\nit to move rapidly despite its lack of standard ground\ntravel."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The merfolk is a 12th-level spellcaster. Its\nspellcasting ability is Intelligence (spell save DC 16, +8\nto hit with spell attacks). It has the following Wizard\nspells prepared:\n\n* Cantrips (at will): <i>dancing lights, frostbite, shape water</i>\n\n* 1st level (4 slots): <i>comprehend languages, shield, silent image</i>\n\n* 2nd level (3 slots): <i>blur, hold person</i>\n\n* 3rd level (3 slots): <i>tidal wave, wall of water</i>\n\n* 4th level (3 slots): <i>control water, greater invisibility, watery sphere</i>\n\n* 5th level (2 slots): <i>cone of cold, dominate person</i>\n\n* 6th level (1 slots): <i>globe of invulnerability, otiluke’s freezing sphere</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The merfolk makes two attacks with its\nstaff."
+    },
+    {
+      "name": "Staff",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5ft., one\ntarget. Hit: 6 (1d8 + 2) bludgeoning damage plus 14\n(3d8) cold damage."
+    },
+    {
+      "name": "Torrent of Water",
+      "type": "special",
+      "text": "Target creature within 60 feet must\nsucceed on a DC 16 Dexterity saving throw or take 33\n(6d10) cold damage as a powerful torrent of freezing\nwater flows over them. If a creature fails this saving\nthrow by 10 or more, its movement speed is reduced\nto 10 ft. on its next turn."
+    },
+    {
+      "name": "Tether of the Tides (Recharge 5-6)",
+      "type": "special",
+      "text": "The merfolk binds\ntwo targets together with a stream of ice cold water. If\neither target tries to move more than 20 feet away\nfrom its bound partner, it must expend 2 feet of\nmovement for every 1 foot traveled and it takes 11\n(2d10) cold damage for every 5 feet traveled."
+    }
+  ],
+  "source": "creature"
+}

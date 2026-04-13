@@ -1,0 +1,46 @@
+{
+  "id": "pfeile",
+  "type": "item",
+  "name": "Pfeile",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "ammunition",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
+  "weight": {
+    "value": 0.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Als Sets von 20 Pfeilen kaufbar. Munition für Fernkampfwaffen mit der Munition Eigenschaft. Pro Angriff wird einer verwendet und als Teil des Angriffs aus einem Köcher gezogen (eine freie Hand benötigt für einhändige Waffen). Nach einem Kampf kann innerhalb von 1 min suchen auf dem Schlachtfeld die Hälfte der verwendeten Pfeile wiedergeholt werden.",
+  "tags": [
+    "abenteuer",
+    "munition",
+    "kampf",
+    "fernkampf",
+    "reichweite",
+    "bogen"
+  ]
+}

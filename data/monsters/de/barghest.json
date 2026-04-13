@@ -1,0 +1,81 @@
+{
+  "name": "Barghest",
+  "size": "Groß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr4",
+      "volos-guide",
+      "shapechanger"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 17,
+  "hp": {
+    "average": 90,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 15,
+    "con": 14,
+    "int": 13,
+    "wis": 12,
+    "cha": 14
+  },
+  "skills": {
+    "Deception": 4,
+    "Intimidation": 4,
+    "Perception": 5,
+    "Stealth": 4
+  },
+  "languages": [
+    "Abyssal",
+    "Common",
+    "Goblin",
+    "Infernal",
+    "telepathy 18 m."
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Gestaltwandler",
+      "text": "Der Barghest kann seine Aktion nutzen, um sich in einen kleinen Goblin zu verwandeln oder wieder seine wahre Gestalt anzunehmen. Abgesehen von seiner Größe und Geschwindigkeit sind seine Werte in beiden Formen identisch. Ausrüstung, die er trägt oder bei sich hat, wird nicht mitverwandelt. Der Barghest nimmt seine wahre Gestalt wieder an, wenn er stirbt."
+    },
+    {
+      "name": "Feuervertreibung",
+      "text": "Wenn der Barghest seinen Zug beginnt und dabei von Flammen umhüllt ist, die mindestens10 feetdie Höhe oder Breite eines  [Angaben einfügen] haben, muss er einenDC 15  Charisma-Rettungswurf bestehen, sonst wird er augenblicklich in die Gehenna verbannt. Plötzliche Flammenausbrüche (wie der Atem eines roten Drachen oder ein Feuerball-Zauber) haben diese Wirkung nicht auf den Barghest."
+    },
+    {
+      "name": "Feiner Geruchssinn",
+      "text": "Der Barghest hat einen Vorteil bei Weisheits- (Wahrnehmungs-)Proben, die auf dem Geruchssinn beruhen."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Barghests ist Charisma (ZauberrettungswurfDC 12). Er kann die folgenden Zauber von Natur aus wirken, ohne dass materielle Komponenten erforderlich sind:\n\n* Beliebig oft: Levitation, Kleine Illusion, Spurlos verschwinden\n\n* Je 1 Mal pro Tag: Person bezaubern, Dimensionspforte, Suggestion"
+    },
+    {
+      "name": "Nahrung für die Seele",
+      "text": "Ein Barghest kann sich von der Leiche eines von ihm getöteten Humanoiden ernähren, der seit weniger als 10 Minuten tot ist, und dabei sowohl Fleisch als auch Seele verschlingen. Diese Nahrungsaufnahme dauert mindestens 1 Minute und zerstört den Körper des Opfers. Die Seele des Opfers bleibt 24 Stunden lang im Barghest gefangen; danach wird sie verdaut. Stirbt der Barghest, bevor die Seele verdaut ist, wird diese freigesetzt.\n\nSolange die Seele eines Humanoiden im Barghest gefangen ist, hat jede Form der Wiederbelebung, die funktionieren könnte, nur eine 50-prozentige Chance auf Erfolg; im Erfolgsfall wird die Seele aus dem Barghest befreit. Sobald die Seele einer Kreatur jedoch verdaut ist, kann keine sterbliche Magie diesen Humanoiden wieder zum Leben erwecken."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 13 (2d8+4) Durchschlagschaden."
+    },
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 8 (1d8+4) Schnittschaden."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Noble",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/8",
+      "monster-manual",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 15,
+  "hp": {
+    "average": 9,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 12,
+    "con": 11,
+    "int": 12,
+    "wis": 14,
+    "cha": 16
+  },
+  "skills": {
+    "Deception": 5,
+    "Insight": 4,
+    "Persuasion": 5
+  },
+  "languages": [
+    "any two languages"
+  ],
+  "challenge": {
+    "cr": "1/8",
+    "xp": 25,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Rapier",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

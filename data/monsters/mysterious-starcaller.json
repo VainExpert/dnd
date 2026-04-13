@@ -1,0 +1,86 @@
+{
+  "name": "Mysterious Starcaller",
+  "size": "Medium",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "medium",
+      "celestial",
+      "cr9",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 17,
+  "hp": {
+    "average": 114,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 9,
+    "dex": 16,
+    "con": 16,
+    "int": 19,
+    "wis": 12,
+    "cha": 15
+  },
+  "skills": {
+    "Arcana": 8,
+    "Deception": 6,
+    "Insight": 5,
+    "Perception": 5,
+    "Persuasion": 6
+  },
+  "languages": [
+    "Common",
+    "Celestial",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Dancing Stars",
+      "text": "Brilliant lights dance around the\nstarcaller, exuding bright light in a 15-foot radius and\ndim light for an additional 15 feet."
+    },
+    {
+      "name": "Retaliating Energies",
+      "text": "Whenever an enemy within 200 ft.\nhits the starcaller with a ranged attack, one of the stars\ndancing around it launches at the attacker, dealing 7\n(2d4 + 2) radiant damage."
+    },
+    {
+      "name": "Radiant Armor",
+      "text": "While the starcaller is wearing no armor\nand wielding no shield, its AC incluces its Intelligence\nmodifier."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The starcaller makes three attacks with its\nradiant palm or two attacks with its shooting star."
+    },
+    {
+      "name": "Radiant Palm",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach\n5ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage\nplus 9 (2d8) radiant damage."
+    },
+    {
+      "name": "Shooting Star",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +8 to hit, range\n150/600 ft., one target. Hit: 22 (5d8) radiant damage."
+    },
+    {
+      "name": "Starfall (Recharge 5-6)",
+      "type": "special",
+      "text": "The starcaller summons a\nbrilliant orb of radiant energy at a point in the sky\nwithin 150-feet, then brings it crashing into the ground\nin a 20-foot radius area. Each creature in that area must\nmake a DC 16 Dexterity saving throw, taking 36 (8d8)\nradiant damage on a failed save, or half as much\ndamage on a successful one. Creatures that fail this\nsave by 5 or more are also blinded until the end of their\nnext turn."
+    },
+    {
+      "name": "Step Through The Stars (3/Day)",
+      "type": "special",
+      "text": "The starcaller vanishes\nin a brilliant flash of light and reappears with an equally\nbright flash in an unoccupied space within 200 ft. Each\ncreature within 10-feet of where the starcaller began or\nended must succeed on a DC 16 Constitution saving\nthrow or be blinded until the end of their next turn.\nAfter teleporting, the starcaller may make a single\nattack with radiant palm or shooting star."
+    }
+  ],
+  "source": "creature"
+}

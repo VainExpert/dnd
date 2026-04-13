@@ -1,0 +1,43 @@
+{
+  "id": "panzerhandschuhe-der-ogerkraft",
+  "type": "item",
+  "name": "Panzerhandschuhe der Ogerkraft ",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hands",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 400,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diese Panzerhandschuhe trägst, ist dein Stärkewert 19. Sie haben keinen Effekt, wenn er bereits 19 oder höher ist.",
+  "tags": [
+    "magisch",
+    "handschuhe",
+    "stärke"
+  ]
+}

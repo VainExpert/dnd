@@ -1,0 +1,21 @@
+{
+  "id": "gegenstand-aufspueren",
+  "name": "Gegenstand aufspüren",
+  "level": 2,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (300 m Sphäre)",
+  "components": "V, G, M (gespaltener Zweig)",
+  "duration": "Konzentration, bis zu 10 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Kleriker",
+    "Druide",
+    "Paladin",
+    "Waldläufer",
+    "Magier"
+  ],
+  "text": "Beschreibe oder nenne einen Gegenstand, mit dem du vertraut bist (mind. einmal aus max 9 m Entfernung gesehen).\nDu spürst dessen Aufenthaltsort in einem Radius von bis zu 300 m. Wenn er sich bewegt, kennst du seine Bewegungsrichtung. \nDer Zauber kann auch eine bestimmte Art Gegenstände, wie Möbel, Schmuck, Kleidung oder ähnliches, aufspüren.\nBlei auf direktem Weg zu dem Gegenstand blockiert den Zauber."
+}

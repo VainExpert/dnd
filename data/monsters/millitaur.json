@@ -1,0 +1,56 @@
+{
+  "name": "Millitaur",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr3",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 14,
+  "hp": {
+    "average": 85,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 20,
+    "climb": 30
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 16,
+    "int": 8,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Acrobatics": 4
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The millitaur makes two handaxe attacks."
+    },
+    {
+      "name": "Handaxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage plus 2 (1d4) poison damage."
+    }
+  ],
+  "source": "creature"
+}

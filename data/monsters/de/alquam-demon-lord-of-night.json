@@ -1,0 +1,101 @@
+{
+  "name": "Alquam, Herrscher der Nacht",
+  "size": "Riesig",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "huge",
+      "fiend",
+      "cr21",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 20,
+  "hp": {
+    "average": 350,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 100
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 19,
+    "con": 23,
+    "int": 16,
+    "wis": 20,
+    "cha": 16
+  },
+  "skills": {
+    "Deception": 10,
+    "Perception": 12,
+    "Stealth": 11
+  },
+  "languages": [
+    "all",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "21",
+    "xp": 33000,
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Aus der Dunkelheit geboren",
+      "text": "Alquam kann in jedem Zug, solange es sich in schwachem Licht oder Dunkelheit befindet, die Aktion „Verstecken“ als Bonusaktion ausführen, selbst wenn es beobachtet wird."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Alquams angeborene Zauberfähigkeit ist Charisma (Rettungswurf DC 18). Es kann die folgenden Zauber von Natur aus ohne materielle Komponenten wirken.\n\nBeliebig oft: Dunkelheit, Stille\n\nJe 3/Tag: Furcht, Unsichtbarkeit, Teleportation\n\n1/Tag: Kreis des Todes"
+    },
+    {
+      "name": "Scharfe Sinne",
+      "text": "Alquam hat einen Vorteil bei Weisheitsproben (Wahrnehmung), die auf dem Sehen beruhen."
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn Alquam einen Rettungswurf verfehlt, kann es sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Alquam hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Alquams Waffenangriffe sind magischer Natur."
+    },
+    {
+      "name": "Alquams Versteck",
+      "text": "Bei einer Initiativzahl von 20 (bei Gleichstand verliert Alquam) führt Alquam eine „Lair“-Aktion aus, um einen der folgenden Effekte zu bewirken; Alquam kann denselben Effekt nicht in zwei aufeinanderfolgenden Runden anwenden:\n\n- Alquam löscht alle Lichtquellen innerhalb der Höhle. Zauber, die Licht erzeugen, werden gebannt, gewöhnliche Lichtquellen erlöschen und magische Lichtquellen werden unterdrückt. Selbst von Artefakten erzeugtes Licht wird auf schwaches Licht mit der Hälfte seines normalen Leuchtbereichs reduziert. Dies hält bis zur Initiative 50 cm der folgenden Runde an.\n\n- Spukhafte, wahnsinnig machende Musik dringt von einem Punkt aus, den Alquam sehen kann. Kreaturen innerhalb50 feetvon  vom Ursprungsort, die die Musik hören können, müssen einenDC 15  Weisheits-Rettungswurf durchführen. Diejenigen, die scheitern, werden verzaubert, handlungsunfähig und ihre Geschwindigkeit wird auf 0 reduziert, bis sie Schaden erleiden oder bis zur Initiativzahl 50 cm der folgenden Runde.\n\n- Schwarze Ranken winden sich um bis zu drei Kreaturen, die 100 feetAlquam innerhalb von sehen kann. Die Kreaturen müssen einenDC 15  Stärke-Rettungswurf bestehen oder werden bis zur Initiativzahl 50 cm der folgenden Runde festgehalten."
+    },
+    {
+      "name": "Regionale Auswirkungen",
+      "text": "Die Region, in der sich Alquams Versteck befindet, ist durch die Magie des Dämonenlords verzerrt, was einen oder mehrere der folgenden Effekte hervorruft:\n\n- Im Umkreis1 milevon  des Verstecks leuchten alle Lichtquellen mit Ausnahme von Artefakten nur bis zur Hälfte ihres üblichen Radius.\n\n- Eulen und andere nachtaktive Tiere geraten im Umkreis5 milesvon  des Verstecks in Raserei und werden feindselig; sie greifen Eindringlinge einzeln und in Schwärmen an.\n\n- Innerhalb eines Umkreises1 milevon  um das Versteck kann Alquam seine Sinne in jeden Bereich mit schwachem Licht oder Dunkelheit ausdehnen, als würde er Hellsehen einsetzen.\n\nWenn Alquam stirbt, normalisieren sich die Bedingungen in der Umgebung des Verstecks im Laufe von1d10  Tagen wieder."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Alquam führt einen Bissangriff, einen Flügelangriff und einen Krallenangriff aus."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 26 (4d10 + 4) Durchdringungsschaden."
+    },
+    {
+      "name": "Flügel",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf den Trefferwurf, Reichweite15 ft: , ein Ziel. Treffer: 17 (3d8 + 4) Bludgeoning-Schaden; das Ziel muss einenDC 17Stärke-Rettungswurf bestehen oder wird zu Boden geworfen."
+    },
+    {
+      "name": "Absätze",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 14 (3d6 + 4) Schnittschaden; das Ziel wird festgehalten und bewegungsunfähig gemacht (Befreiung:DC 17 ). Alquam kann jeweils eine Kreatur festhalten, wenn diese am Boden ist, oder zwei, wenn sie fliegt. Krallen, die eine Kreatur festhalten, können keine andere Kreatur angreifen."
+    }
+  ],
+  "source": "creature"
+}

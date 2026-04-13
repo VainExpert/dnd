@@ -1,0 +1,70 @@
+{
+  "name": "Banditenfürst",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "Humanoid",
+      "cr4",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "any non-lawful",
+  "ac": 16,
+  "hp": {
+    "average": 91,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 15,
+    "con": 14,
+    "int": 14,
+    "wis": 11,
+    "cha": 14
+  },
+  "skills": {
+    "Athletics": 5,
+    "Deception": 4,
+    "Intimidation": 4
+  },
+  "languages": [
+    "any two languages"
+  ],
+  "challenge": {
+    "cr": "4",
+    "xp": 1100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Taktiken im Rudel",
+      "text": "Der Banditenfürst erhält einen Vorteil bei einem Angriffswurf gegen eine Kreatur, wenn sich mindestens einer seiner Verbündeten in5 feetder Nähe der Kreatur befindet und dieser Verbündete nicht handlungsunfähig ist."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Banditenfürst führt drei Nahkampf- oder Fernkampfangriffe aus."
+    },
+    {
+      "name": "Großschwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 10 (2d6 + 3) Schnittschaden."
+    },
+    {
+      "name": "Dolch",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfwaffenangriff: +5 auf den Trefferwurf, Reichweite 1,5 m[ ]20/60Fuß, ein Ziel. Treffer: 5 (1d4 + 3) Durchdringungsschaden."
+    },
+    {
+      "name": "Führungsfähigkeit (wird nach einer kurzen oder langen Ruhepause wiederhergestellt)",
+      "type": "special",
+      "text": "Eine Minute lang kann der Banditenfürst einen besonderen Befehl oder eine Warnung ausstoßen, sobald eine nicht feindliche Kreatur, die er in30 feetSichtweite hat, einen Angriffswurf oder einen Rettungswurf ausführt. Die Kreatur kann einen W4 zu ihrem Wurf hinzufügen, sofern sie den Banditenfürsten hören und verstehen kann. Eine Kreatur kann jeweils nur von einem Führungswürfel profitieren. Dieser Effekt endet, wenn der Banditenfürst handlungsunfähig wird."
+    }
+  ],
+  "source": "creature"
+}

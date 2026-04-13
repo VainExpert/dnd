@@ -1,0 +1,82 @@
+{
+  "name": "The Runespeaker",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr15",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 18,
+  "hp": {
+    "average": 209,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 23,
+    "dex": 14,
+    "con": 20,
+    "int": 21,
+    "wis": 15,
+    "cha": 18
+  },
+  "skills": {
+    "Arcana": 10,
+    "Athletics": 11,
+    "Deception": 9,
+    "Persuasion": 9
+  },
+  "languages": [
+    "Common",
+    "Celestial",
+    "telepathy 90 ft."
+  ],
+  "challenge": {
+    "cr": "15",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Bound Servitude",
+      "text": "Any creature killed by the runespeaker\nis reanimated under the control of the runespeaker\nafter 10 minutes. If the runespeaker is killed, all\ncreatures it is controlling perish immediately."
+    },
+    {
+      "name": "Legendary Resistance (2/Day)",
+      "text": "If the runespeaker fails a\nsaving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The runespeaker has advantage on\nsaving throws against spells and other magical effects."
+    },
+    {
+      "name": "Rune-Carved Blade",
+      "text": "The runespeaker's greatsword is\netched with 12 charged arcane runes that grant the\nweapon access to special abilities. When the\nrunespeaker makes a greatsword attack, it can choose\nto expend one or more of these charges to enhance\nthat strike. In addition, attacks with the runespeaker’s\ngreatsword deal an additional 14 (4d6) force damage\n(included in the attack)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The runespeaker makes two attacks with\nhis greatsword."
+    },
+    {
+      "name": "Rune-Carved Greatsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to\nhit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing\ndamage plus 14 (4d6) force damage and the\nrunespeaker may expend one or more charges of the\nblade to add one of the effects listed below.\n* ***Explosive Rune (1 charge).*** The blade applies a volatile\nrune to the target. At the end of that creature's next\nturn, this rune detonates, dealing 22 (4d10) fire\ndamage to that creature. Each creature within 10\nfeet of the detonation must make a DC 18 Dexterity\nsaving throw, taking 22 (4d10) fire damage on a\nfailed save, or half as much damage on a successful\none.\n* ***Sundering Rune (2 charges).*** The blade applies a rune\nto that target that causes runic weapons\nautomatically find weaknesses in the marked\ncreature's defense. The runespeaker and its allies\nhave advantage on attack rolls against the creature\nuntil the end of the runespeaker's next turn.\n* ***Impaling Strike (3 charges).*** The runespeaker's blade\nextends with vicious arcane energy, cutting deep\ninto the target and causing it to bleed. That creature\nimmediately takes 16 (3d10) slashing damage and\nloses an additional 16 (3d10) hit points at the start\nof each of each of its turns until it receives magical\nhealing."
+    },
+    {
+      "name": "Runic Burst",
+      "type": "special",
+      "text": "Ranged Spell Attack: +10 to hit, range 120\nft., one target. Hit: 32 (5d10 + 5) force damage. If the\ntarget is branded, it takes an additional 27 (5d10)\nforce damage and the brand is removed."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Ghost Knight",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr6",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 17,
+  "hp": {
+    "average": 97,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 15,
+    "con": 14,
+    "int": 8,
+    "wis": 10,
+    "cha": 7
+  },
+  "skills": {
+    "Athletics": 6,
+    "Animal Handling": 3,
+    "Perception": 3,
+    "Stealth": 5
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "6",
+    "xp": 2300,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "text": "If the ghost knight is mounted and moves at least 30 feet in a straight line toward a target and hits it with a melee attack on the same turn, the target takes an extra 7 (2d6) damage."
+    },
+    {
+      "name": "Mounted Warrior",
+      "text": "When mounted, the ghost knight has advantage on attacks against unmounted creatures smaller than its mount. If the ghost knight's mount is subjected to an effect that allows it to take half damage with a successful Dexterity saving throw, the mount instead takes no damage if it succeeds on the saving throw and half damage if it fails."
+    },
+    {
+      "name": "Turning Defiance",
+      "text": "The ghost knight and all darakhul or ghouls within 30 feet of it have advantage on saving throws against effects that turn undead."
+    },
+    {
+      "name": "Undead Nature",
+      "text": "A ghost knight doesn't require air, food, drink, or sleep"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The ghost knight makes three melee attacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. A paralyzed target repeats the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    },
+    {
+      "name": "Battleaxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage or 8 (1d10 + 3) slashing damage if used with two hands, plus 10 (3d6) necrotic damage."
+    },
+    {
+      "name": "Lance",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 9 (1d12 + 3) piercing damage plus 10 (3d6) necrotic damage."
+    }
+  ],
+  "source": "creature"
+}

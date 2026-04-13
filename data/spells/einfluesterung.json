@@ -1,0 +1,19 @@
+{
+  "id": "einfluesterung",
+  "name": "Einflüsterung",
+  "level": 2,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V, M (Schlangenzunge oder Stück Honigwabe oder Tropfen Süßöl)",
+  "duration": "Konzentration, bis zu 8 h",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Magier",
+    "Hexenmeister"
+  ],
+  "text": "Du unterbreitest einer Kreatur in Reichweite, das du sehen kannst und die dich hören und verstehen kann, einen Vorschlag (max 2 Sätze) und beeinflusst das Ziel auf magische Weise.\nKreaturen, die nicht bezaubert werden können, sind immun.\nDer Vorschlag muss angemessen umsetzbar formuliert sein. Ein Vorschlag sich selbst zu töten, beendet den Zauber.\nDas Ziel muss einen WIS-Rettungswurf ausführen.\nBei Fehlschlag: Dein Vorschlag wird ausgeführt und kann für die gesamte Wirkungsdauer fortgesetzt werden. Der Zauber endet, sobald der Vorschlag ausgeführt wurde.\nBedingungen für besondere Aktionen können mit formuliert werden, diese müssen nicht eintreffen und ausgeführt werden.\nWenn du oder deine Begleiter das Ziel verletzen, endet der Zauber."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fallen-finden",
+  "name": "Fallen finden",
+  "level": 2,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 Aktion",
+  "range": "36 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Kleriker",
+    "Druide",
+    "Waldläufer"
+  ],
+  "text": "Du spürst die Gegenwart von Fallen in Reichweite und Sichtlinie.\nOffenbart keine natürlichen Schwachstellen im Boden, instabile Decken oder ähnliches. Der Zauber zeigt nur das Vorhandensein einer Falle.\nDu erfährst nichts über die genauen Positionen der Fallen, aber die allgemeine Art der Gefahr."
+}

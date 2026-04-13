@@ -1,0 +1,19 @@
+{
+  "id": "droehnende-klinge",
+  "name": "Dröhnende Klinge",
+  "level": 0,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (1,5 m Sphäre)",
+  "components": "G, M (eine Nahkampfwaffe im Wert von mindestens 1 SM)",
+  "duration": "1 Runde (6 s)",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du schwingst die Waffe, mit der der Zauber gewirkt wurde, und führst mit ihr einen Nahkampfangriff gegen eine Kreatur im Umkreis von 1,5 m um dich herum aus.\nBei Treffer: normale Waffeneffekte und es wird dann bis zum Beginn deines nächsten Zuges von dröhnender Energie umhüllt. Wenn sich das Ziel bis dahin freiwillig 1,5 m oder mehr bewegt, erleidet das Ziel 1W8 Donnerschaden und der Zauber endet.\n\nAuf höheren Level: Auf Level 5 fügt der Nahkampfangriff zusätzlich 1W8 Donnerschaden zu, und der Schaden, den das Ziel bei einer Bewegung erleidet, erhöht sich auf 2W8. Beide Schadenswürfe erhöhen sich um je 1W8 auf Level 11 und 17."
+}

@@ -1,0 +1,87 @@
+{
+  "name": "Nycaloth",
+  "size": "Large",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr9",
+      "monster-manual",
+      "yugoloth"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 18,
+  "hp": {
+    "average": 123,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 20,
+    "dex": 11,
+    "con": 19,
+    "int": 12,
+    "wis": 10,
+    "cha": 15
+  },
+  "skills": {
+    "Intimidation": 6,
+    "Perception": 4,
+    "Stealth": 4
+  },
+  "languages": [
+    "Abyssal",
+    "Infernal",
+    "telepathy 60 ft."
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The nycaloth's innate spellcasting ability is Charisma. The nycaloth can innately cast the following spells, requiring no material components:\n\n* At will: <i>darkness, detect magic, dispel magic, invisibility </i>(self only)<i>, mirror image</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The nycaloth has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The nycaloth's weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The nycaloth makes two melee attacks, or it makes one melee attack and teleports before or after the attack."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage. If the target is a creature, it must succeed on a DC 16 Constitution saving throw or take 5 (2d4) slashing damage at the start of each of its turns due to a fiendish wound. Each time the nycaloth hits the wounded target with this attack, the damage dealt by the wound increases by 5 (2d4). Any creature can take an action to stanch the wound with a successful DC 13 Wisdom (Medicine) check. The wound also closes if the target receives magical healing."
+    },
+    {
+      "name": "Greataxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 18 (2d12 + 5) slashing damage."
+    },
+    {
+      "name": "Teleport",
+      "type": "special",
+      "text": "The nycaloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
+    },
+    {
+      "name": "Variant: Summon Yugoloth (1/Day)",
+      "type": "special",
+      "text": "The yugoloth chooses what to summon and attempts a magical summoning.\n\nA nycaloth has a 50 percent chance of summoning 1d4 mezzoloths or one nycaloth.\n\nA summoned yugoloth appears in an unoccupied space within 60 feet of its summoner, does as it pleases, and can't summon other yugoloths. The summoned yugoloth remains for 1 minute, until it or its summoner dies, or until its summoner takes a bonus action to dismiss it."
+    }
+  ],
+  "source": "creature"
+}

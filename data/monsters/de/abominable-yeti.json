@@ -1,0 +1,78 @@
+{
+  "name": "Der schreckliche Yeti",
+  "size": "Riesig",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "huge",
+      "monstrosity",
+      "cr9",
+      "monster-manual"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 15,
+  "hp": {
+    "average": 137,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 40
+  },
+  "abilities": {
+    "str": 24,
+    "dex": 10,
+    "con": 22,
+    "int": 9,
+    "wis": 13,
+    "cha": 9
+  },
+  "skills": {
+    "Perception": 5,
+    "Stealth": 4
+  },
+  "languages": [
+    "Yeti"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Angst vor dem Feuer",
+      "text": "Erleidet der Yeti Feuerschaden, hat er bis zum Ende seines nächsten Zuges Nachteil bei Angriffswürfen und Eigenschaftsproben."
+    },
+    {
+      "name": "Feiner Geruchssinn",
+      "text": "Der Yeti hat einen Vorteil bei Weisheits- (Wahrnehmungs-)Proben, die auf dem Geruchssinn beruhen."
+    },
+    {
+      "name": "Schneetarnung",
+      "text": "Der Yeti hat einen Vorteil bei Geschicklichkeitsproben (Verbergen), die er unternimmt, um sich in verschneitem Gelände zu verstecken."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Yeti kann seinen „Eisigen Blick“ einsetzen und führt zwei Klauenangriffe aus."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite:1,5 m ., ein Ziel. Treffer: 14 (2d6 + 7) Schnittschaden plus 7 (2d6) Kälteschaden."
+    },
+    {
+      "name": "Eisiger Blick",
+      "type": "special",
+      "text": "Der Yeti wählt eine Kreatur als Ziel, die er in30 feetseiner Sichtweite sieht. Wenn das Ziel den Yeti sehen kann, muss es einenDC 18Konstitutions-Rettungswurf gegen diesen Zauber bestehen oder 21 (6d6) Kälteschaden erleiden und anschließend für 1 Minute gelähmt sein, es sei denn, es ist immun gegen Kälteschaden. Das Ziel kann den Rettungswurf am Ende jedes seiner Züge wiederholen und beendet den Effekt auf sich selbst bei Erfolg. Wenn der Rettungswurf des Ziels erfolgreich ist oder der Effekt auf es endet, ist das Ziel 1 Stunde lang immun gegen den Blick dieses Yetis."
+    },
+    {
+      "name": "Kalter Atem (Aufladezeit 6)",
+      "type": "special",
+      "text": "Der Yeti stößt einen 9 Meter breiten Kegel eiskalter Luft aus. Jedes Wesen in diesem Bereich muss einenDC 18Konstitutions-Rettungswurf durchführen und erleidet bei einem misslungenen Rettungswurf 45 (10d8) Kälteschaden oder bei einem erfolgreichen Rettungswurf die Hälfte dieses Schadens."
+    }
+  ],
+  "source": "creature"
+}

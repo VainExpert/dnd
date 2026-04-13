@@ -1,0 +1,44 @@
+{
+  "id": "kletterausruestung",
+  "type": "item",
+  "name": "Kletterausrüstung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 6,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 25,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein Kletterset (z.B. Seil, Haken, Karabiner, Steigeisen), das hilfreich beim Klettern ist. Wenn du dich damit (mit einer Aktion) ankerst, kannst du nicht weiter als 7,5 m fallen und dich nicht weiter als das vom Anker entfernen. Du kannst den Anker mit einer Bonus Aktion lösen.",
+  "tags": [
+    "abenteuer",
+    "klettern",
+    "nützlich",
+    "soziales"
+  ]
+}

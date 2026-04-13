@@ -1,0 +1,16 @@
+{
+  "id": "jims-strahlende-muenze",
+  "name": "Jims Strahlende Münze",
+  "level": 2,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "G, M (eine Münze; 2 GM, die als Steuer konsumiert werden)",
+  "duration": "1 min",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Magier"
+  ],
+  "text": "Beim Wirken wirfst du die Münze (Materialkomponente) an einen Punkt in Reichweite.\nDie Münze leuchtet wie beim Zauber „Licht“. Jede Kreatur deiner Wahl, die du sehen kannst und die sich innerhalb von 9 m um die Münze befindet, muss einen WIS-Rettungswurf machen.\nBei Fehlschlag: abgelenkt bis der Zauber endet; abgelenkte Kreaturen haben Nachteil auf Wahrnehmungs- und Initiativewürfe."
+}

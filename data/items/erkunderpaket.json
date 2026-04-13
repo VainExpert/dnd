@@ -1,0 +1,43 @@
+{
+  "id": "erkunderpaket",
+  "type": "item",
+  "name": "Erkunderpaket",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 27.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 10,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Das Paket enthält: Rucksack Schlafsack Seil 2 Flaschen Öl 10 Rationen Zunderkästchen Wasserschlauch",
+  "tags": [
+    "abenteuer",
+    "paket",
+    "start"
+  ]
+}

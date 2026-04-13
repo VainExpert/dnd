@@ -1,0 +1,20 @@
+{
+  "id": "luftblase",
+  "name": "Luftblase",
+  "level": 2,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "G",
+  "duration": "24 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Druide",
+    "Waldläufer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du erschaffst eine spektrale Kugel um einen Kopf einer willigen Kreatur, die du in Reichweite sehen kannst. Die Kugel ist für die Wirkungsdauer mit frischer Luft gefüllt.\n\nAuf höheren Level gewirkt: pro Level 2 zusätzliche Kugeln"
+}

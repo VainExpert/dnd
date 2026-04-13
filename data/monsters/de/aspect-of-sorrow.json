@@ -1,0 +1,72 @@
+{
+  "name": "Aspekt der Trauer",
+  "size": "Groß",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr4",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 17,
+  "hp": {
+    "average": 66,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 18,
+    "int": 6,
+    "wis": 10,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages of its creator but can’t speak"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Aura der Stille",
+      "text": "Lebewesen im Umkreis30 feetvon\ndes Aspekts stehen unter dem Einfluss des Zaubers „Stille“.\nDieser Effekt endet, sobald der Aspekt auf 0\nTrefferpunkte reduziert wurde."
+    },
+    {
+      "name": "Unveränderliche Form",
+      "text": "Dieser Aspekt ist immun gegen alle Zauber\noder Effekte, die seine Gestalt verändern würden."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Dieser Aspekt bietet einen Vorteil bei\nRettungswürfen gegen Zauber und andere magische\nEffekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Waffenangriffe dieses Aspekts sind\nmagischer Natur."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Dieser Aspekt führt zwei Slam-Angriffe aus."
+    },
+    {
+      "name": "Friede sei mit euch",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite:1,5 m .,\nein Ziel. Treffer: 12 (2d8 + 3) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Welle des Schreckens (1/Tag)",
+      "type": "special",
+      "text": "Jede feindliche Kreatur im\n9 m\nWirkungsbereich muss einenDC 13\nWeisheits-Rettungswurf bestehen oder wird für\neine Minute verängstigt. Eine Kreatur kann den Rettungswurf\nam Ende jedes ihrer Züge wiederholen und den Effekt auf\nsich selbst bei Erfolg beenden."
+    }
+  ],
+  "source": "creature"
+}

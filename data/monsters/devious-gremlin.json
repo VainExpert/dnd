@@ -1,0 +1,73 @@
+{
+  "name": "Devious Gremlin",
+  "size": "Tiny",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "tiny",
+      "fiend",
+      "cr1/2",
+      "nerzugals-extended-bestiary",
+      "devil"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 13,
+  "hp": {
+    "average": 7,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 5,
+    "dex": 16,
+    "con": 12,
+    "int": 12,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {
+    "Animal Handling": 2,
+    "Deception": 2,
+    "Stealth": 5
+  },
+  "languages": [
+    "Infernal",
+    "Common"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "text": "Magical darkness doesn't impede the\ngremlin's vision."
+    },
+    {
+      "name": "Extradimensional Pouch",
+      "text": "The gremlin has a pouch\nthat acts as a personal extradimensional space. This\npouch can hold up to 8 cubic feet of items\nweighing a total of up to 300 pounds. When the\ngremlin dies, the contents of its pouch explode out\nof its body in a violent eruption."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The gremlin has advantage on\nsaving throws against spells and other magical\neffects."
+    },
+    {
+      "name": "Mutable Form",
+      "text": "The gremlin can move through a\nspace as narrow as one inch wide while squeezing."
+    },
+    {
+      "name": "Tamer of Beasts",
+      "text": "The gremlin has advantage on\nWisdom (Animal Handling) checks and Charisma\n(Persuasion) checks when interacting with Small or\nsmaller beasts. Through sounds and gestures, it can\nalso communicate with Small or smaller beasts."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft.,\none creature. Hit: 5 (1d4 + 3) slashing damage plus\n2 (1d4) poison damage."
+    }
+  ],
+  "source": "creature"
+}

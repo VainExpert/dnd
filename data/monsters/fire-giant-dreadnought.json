@@ -1,0 +1,69 @@
+{
+  "name": "Fire Giant Dreadnought",
+  "size": "Huge",
+  "type": {
+    "type": "giant",
+    "tags": [
+      "huge",
+      "giant",
+      "cr14",
+      "volos-guide",
+      "fire giant"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 21,
+  "hp": {
+    "average": 187,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 27,
+    "dex": 9,
+    "con": 23,
+    "int": 8,
+    "wis": 10,
+    "cha": 11
+  },
+  "skills": {
+    "Athletics": 13,
+    "Perception": 5
+  },
+  "languages": [
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "14",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Dual Shields",
+      "text": "The giant carries two shields, each of which is accounted for in the giant's AC. The giant must stow or drop one of its shields to hurl rocks."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The giant makes two fireshield attacks."
+    },
+    {
+      "name": "Fireshield",
+      "type": "special",
+      "text": "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 22 (4d6+8) bludgeoning damage plus 7 (2d6) fire damage plus 7 (2d6) piercing damage."
+    },
+    {
+      "name": "Rock",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +13 to hit, range 60/240 ft, one target. Hit: 30 (4d10+8) bludgeoning damage."
+    },
+    {
+      "name": "Shield Charge",
+      "type": "special",
+      "text": "The giant moves up to 30 feet in a straight line and can move through the space of any creature smaller than Huge. The first time it enters a creature's space during this move, it makes a fireshield attack against that creature. If the attack hits, the target must also succeed on a DC 21 Strength saving throw or be pushed ahead of the giant for the rest of this move. If a creature fails the save by 5 or more, it is also knocked prone and takes 18 (3d6+8) bludgeoning damage, or 29 (6d6+8) bludgeoning damage if it was already prone."
+    }
+  ],
+  "source": "creature"
+}

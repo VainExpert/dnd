@@ -1,0 +1,47 @@
+{
+  "id": "medaillon-der-gedanken",
+  "type": "item",
+  "name": "Medaillon der Gedanken",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "neck",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 200,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": 3,
+    "recharge": "1W3 am Morgen"
+  },
+  "uses": {
+    "max": null,
+    "recharge": "1W3 am Morgen"
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [
+    "gedanken-wahrnehmen"
+  ],
+  "effects": [],
+  "text": "Das Medaillon hat 3 Ladungen. Wenn du es trägst, kannst du als Aktion eine Ladung verbrauchen, um den Zauber Gedanken wahrnehmen (Rettungswurf-SG 13) damit zu wirken. Das Medaillon erhält täglich im Morgengrauen 1W3 verbrauchte Ladungen zurück.",
+  "tags": [
+    "magisch",
+    "medaillon",
+    "gedanken wahrnehmen",
+    "aktion",
+    "zauber"
+  ]
+}

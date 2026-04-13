@@ -1,0 +1,45 @@
+{
+  "name": "Duergar Screamer",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr3",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 15,
+  "hp": {
+    "average": 38,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 7,
+    "con": 12,
+    "int": 5,
+    "wis": 5,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "understands Dwarvish but can't speak"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Engine of Pain",
+      "text": "Once per turn, a creature that attacks the screamer can target the duergar trapped in it. The attacker has disadvantage on the attack roll. On a hit, the attack deals an extra 11 (2d10) damage to the screamer, and the screamer can respond by using its Multiattack with its reaction."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

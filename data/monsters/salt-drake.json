@@ -1,0 +1,76 @@
+{
+  "name": "Salt Drake",
+  "size": "Large",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "large",
+      "dragon",
+      "cr7",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 85,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 14,
+    "con": 18,
+    "int": 4,
+    "wis": 23,
+    "cha": 11
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 5,
+    "Survival": 4
+  },
+  "languages": [
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Nictitating Membranes",
+      "text": "Salt drakes have advantage on saving throws\nagainst being blinded."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The salt drake makes three attacks: one with its bite and\ntwo with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 12\n(2d8 + 3) piercing damage plus 7 (3d4) acid damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10\n(2d6 + 3) slashing damage."
+    },
+    {
+      "name": "Tail",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 16\n(3d8 + 3) bludgeoning damage, and the target must succeed on a DC 15\nStrength saving throw or be knocked prone."
+    },
+    {
+      "name": "Salt Spray (Recharge 5–6)",
+      "type": "special",
+      "text": "The salt drake releases a spray of razorsharp\nsalt crystals in a 30-foot cone. Each creature in the area must make\na DC 15 Dexterity saving throw. On a failed saving throw, the target\ntakes 22 (5d8) acid damage plus 22 (5d8) slashing damage, or half as\nmuch damage on a successful saving throw. In addition, if a creature\ntakes any damage from the salt spray, it is poisoned until it takes a short\nor long rest."
+    }
+  ],
+  "source": "creature"
+}

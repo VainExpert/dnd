@@ -1,0 +1,70 @@
+{
+  "name": "Light Cadejo",
+  "size": "Medium",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "Lawful good",
+  "ac": 18,
+  "hp": {
+    "average": 99,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 18,
+    "con": 12,
+    "int": 10,
+    "wis": 18,
+    "cha": 10
+  },
+  "skills": {
+    "Deception": 4,
+    "Perception": 8,
+    "Stealth": 8
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Nullification",
+      "text": "The light cadejo exists to undo the evil done by its wicked\ncousin. While a light cadejo is within 120 feet of a dark cadejo, the dark\ncadejo makes ability checks, attacks, and saving throws at disadvantage.\nAdditionally, the dark cadejo’s Paralysis and Stench features do not\nfunction. However, any attacks, ability checks, and saving throws resulting\nfrom direct combat with a light cadejo are made without disadvantage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The light cadejo makes three\nattacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon: +6 to hit, reach 5 ft., one\ntarget. Hit: 8 (1d8 + 4) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach\n5 ft., one target. Hit: 7 (1d6 + 4) damage."
+    },
+    {
+      "name": "Restorative Touch",
+      "type": "special",
+      "text": "A light cadejo touches\na willing creature. The touch acts as the spell\nlesser restoration."
+    }
+  ],
+  "source": "creature"
+}

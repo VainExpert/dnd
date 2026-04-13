@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Zauber-Liste</title>
+  <link rel="stylesheet" href="../../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Zauber-Liste</div>
+      <div class="subtitle">Liste aller Zauber</div>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Suche..."/>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="nav">
+        <div class="group">
+          <div class="group-title">Start</div>
+          <a href="../../index.html">Startseite</a>
+          <a href="../../index.html#content/house-rules/index.md">Hausregeln</a>
+          <a href="../../index.html#content/safety/index.md">Sicherheit</a>
+          <a href="../../index.html#content/character-options/index.md">Charakteroptionen</a>
+          <a href="../../index.html#content/recaps/index.md">Rückblicke</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Werkzeuge</div>
+          <a href="../werkzeuge/tools.html">Zufallstabellen & Generatoren</a>
+          <a href="../werkzeuge/dice.html">Würfel</a>
+          <a href="../werkzeuge/units.html">Umrechner</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Sammlungen</div>
+          <a href="../bestiarium/bestiary.html">Bestiarium</a>
+          <a href="./spells.html" class="active">Zauber</a>
+          <a href="../items/items.html">Gegenstände</a>
+          <a href="../maps.html">Karten</a>
+          <a href="../spieler/pcs.html">Spieler</a>
+          <a href="../icons.html">Symbole</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="content" style="max-width:1100px;">
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
+          <select id="level" class="select">
+            <option value="">Alle Level</option>
+            <option value="0">Zaubertrick</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
+            <option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option>
+          </select>
+          <select id="class" class="select">
+            <option value="">Alle Klassen</option>
+          </select>
+        </div>
+
+        <div id="grid" class="card-grid"></div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany, normalizeSpell } from "../../lib.js";
+
+    const grid = document.getElementById("grid");
+    const qEl = document.getElementById("q");
+    const levelEl = document.getElementById("level");
+    const classEl = document.getElementById("class");
+
+    const files = await loadIndex("../../data/spells/index.json");
+    const spells = (await loadMany("../../data/spells", files)).map(normalizeSpell);
+
+    const classes = Array.from(new Set(
+      spells.flatMap(s => Array.isArray(s.classes) ? s.classes : [])
+    )).sort((a,b)=>a.localeCompare(b));
+    for (const c of classes) {
+      const opt = document.createElement("option");
+      opt.value = c;
+      opt.textContent = c;
+      classEl.appendChild(opt);
+    }
+
+    function excerpt(s, n = 220){
+      const t = String(s ?? "").trim();
+      if (!t) return "";
+      return t.length > n ? t.slice(0, n - 1) + "…" : t;
+    }
+
+    function card(s){
+      const id = s.id || s.name || "";
+      const href = `./spell.html?id=${encodeURIComponent(id)}`;
+
+      const level = Number(s.level ?? 0);
+      const levelLabel = level === 0 ? "Zaubertrick" : `Level ${level}`;
+      const tags = [
+        s.school ? s.school : null,
+        s.ritual ? "Ritual" : null,
+        s.concentration ? "Konzentration" : null,
+      ].filter(Boolean).join(" • ");
+
+      return `
+        <div class="mini-card">
+          <div class="mini-head">
+            <div class="mini-title"><a href="${href}">${escapeHtml(s.name)}</a></div>
+            <div class="mini-sub">${escapeHtml(levelLabel)}${tags ? " • " + escapeHtml(tags) : ""}</div>
+            <div class="pillbar">
+              ${(s.casting_time || s.time) ? `<span class="pill"><b>Wirkzeit</b> ${escapeHtml(s.casting_time || s.time)}</span>` : ""}
+              ${s.range ? `<span class="pill"><b>Reichweite</b> ${escapeHtml(s.range)}</span>` : ""}
+              ${s.duration ? `<span class="pill"><b>Dauer</b> ${escapeHtml(s.duration)}</span>` : ""}
+            </div>
+          </div>
+          <div class="mini-body">
+            ${s.components ? `<div class="mini-box"><div class="mini-box-title">Komponenten</div><div class="mini-box-text">${escapeHtml(s.components)}</div></div>` : ""}
+            ${(s.text || s.html) ? `<div class="mini-box"><div class="mini-box-title">Effekt</div><div class="mini-box-text">${escapeHtml(excerpt(s.text || ""))}</div></div>` : ""}
+            ${(s.classes && s.classes.length) ? `<div class="mini-footer muted">Klassen: ${escapeHtml(s.classes.join(", "))}</div>` : ""}
+          </div>
+        </div>
+      `;
+    }
+
+    function matches(s, q, lvl, cls){
+      const hay = [
+        s.id,
+        s.name, s.school, s.casting_time, s.time, s.range, s.duration, s.components,
+        ...(s.classes || []),
+        s.text
+      ].join(" ").toLowerCase();
+
+      if (q && !hay.includes(q)) return false;
+      if (lvl !== "" && String(s.level ?? 0) !== String(lvl)) return false;
+      if (cls && !(s.classes || []).includes(cls)) return false;
+      return true;
+    }
+
+    function render(){
+      const q = (qEl.value || "").trim().toLowerCase();
+      const lvl = levelEl.value;
+      const cls = classEl.value;
+
+      const filtered = spells.filter(s => matches(s, q, lvl, cls));
+      grid.innerHTML = filtered.map(card).join("") || `<p>Keine Treffer.</p>`;
+    }
+
+    qEl.addEventListener("input", render);
+    levelEl.addEventListener("change", render);
+    classEl.addEventListener("change", render);
+    render();
+  </script>
+</body>
+</html>

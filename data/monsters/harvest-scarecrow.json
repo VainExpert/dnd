@@ -1,0 +1,65 @@
+{
+  "name": "Harvest Scarecrow",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr1",
+      "out-of-the-box-5e"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 12,
+  "hp": {
+    "average": 44,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 15,
+    "con": 13,
+    "int": 10,
+    "wis": 12,
+    "cha": 13
+  },
+  "skills": {},
+  "languages": [
+    "Understands the languages of its creator but can’t speak"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "False Appearance",
+      "text": "While the harvest scarecrow\nremains motionless, it is indistinguishable from an\nordinary, inanimate scarecrow."
+    },
+    {
+      "name": "Dust of the Field",
+      "text": "Whenever a creature successfully\nmakes a melee attack against the harvest scarecrow,\nthe creature must succeed on a DC 11 Dexterity saving\nthrow or be blinded until the end of their next turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The harvest scarecrow makes two\nattacks with its old tools."
+    },
+    {
+      "name": "Old Tools",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5\nft., one target. Hit: 5 (1d6 + 2) slashing damage. If\nthe target is a creature, it must succeed on a DC 11\nConstitution saving throw or be poisoned for one\nhour."
+    },
+    {
+      "name": "Hay Fever",
+      "type": "special",
+      "text": "The harvest scarecrow targets one\ncreature it can see within 10 feet of it. The target\nmust succeed on a DC 11 Constitution saving throw\nor spend its next action coughing and sneezing\nuncontrollably. Creatures that don’t need to breathe\nautomatically succeed on this saving throw."
+    }
+  ],
+  "source": "creature"
+}

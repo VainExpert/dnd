@@ -1,0 +1,44 @@
+{
+  "id": "adamant-waffen",
+  "type": "item",
+  "name": "Adamant-Waffen",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Eine geschmiedete Waffen aus Adamant. Die Angriffe gelten als magisch und Treffer mit ihr gelten immer als kritische Treffer.",
+  "tags": [
+    "abenteuer",
+    "magisch",
+    "adamant",
+    "ungewöhnlich"
+  ]
+}

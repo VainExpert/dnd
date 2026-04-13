@@ -1,0 +1,19 @@
+{
+  "id": "spinnenklettern",
+  "name": "Spinnenklettern",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G, M (ein Tropfen Bitumen und eine Spinne)",
+  "duration": "Konzentration, bis zu 1 h",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Eine willige Kreatur, die du berührst, erhält für die Wirkungsdauer die Fähigkeit sich in alle Richtungen und mit freien Händen über senkrechte Oberflächen, sowie Ecken zu bewegen. Die Klettergeschwindigkeit entspricht der Laufgeschwindigkeit."
+}

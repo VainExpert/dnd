@@ -1,0 +1,67 @@
+{
+  "name": "Adamantiner Wurm",
+  "size": "Riesig",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "huge",
+      "monstrosity",
+      "cr4",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 18,
+  "hp": {
+    "average": 80,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 30
+  },
+  "abilities": {
+    "str": 20,
+    "dex": 10,
+    "con": 20,
+    "int": 3,
+    "wis": 10,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Adamantiner Panzer",
+      "text": "Erhält der Diamantwurm einen kritischen Treffer, wird dieser stattdessen zu einem normalen Treffer."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Diamantwurm führt zwei Angriffe aus: einen\nmit seinem Biss und einen mit seinem Schwanz."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite 1,5 m.,\nein Ziel. Treffer: 9 (1d8 + 5) Durchbohrungsschaden. Wenn das\nZiel eine mittelgroße oder kleinere Kreatur ist, muss es\neinenDC 13Geschicklichkeits-Rettungswurf bestehen oder wird\nvom Wurm verschlungen. Eine verschlungene Kreatur ist\ngeblendet und gefesselt, sie hat vollständige Deckung gegen\nAngriffe und andere Effekte außerhalb des Wurms und\nerleidet zu Beginn\njedes Zuges des Wurms 10 (3d6) Schlagschaden.\n\nWenn der Wurm in einem einzigen\nZug mindestens 10 Schaden von einer Kreatur in seinem Inneren erleidet, muss der Wurm\nam Ende dieses Zuges einenDC 17  Konstitutions-Rettungswurf bestehen oder alle verschluckten\nKreaturen wieder ausspucken, die in einem Feld innerhalb von10 feet \ndes Wurms auf dem Boden liegen bleiben. Wenn der Wurm stirbt, ist eine verschluckte Kreatur\nnicht mehr von ihm gefesselt und kann aus\nder Leiche entkommen, indem sie20 feet  Bewegungspunkte einsetzt und\nauf dem Bauch liegend herauskommt."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 auf Treffer, Reichweite 3 m.,\nein Ziel. Treffer: 11 (2d6 + 4) Bludgeoning-Schaden.\nIst das Ziel eine Kreatur, muss sie einenDC\n14Stärke-Rettungswurf bestehen oder wird bis zu  vom 10\nfeetWurm weggestoßen und zu Boden geworfen."
+    },
+    {
+      "name": "Spuckstein",
+      "type": "special",
+      "text": "Fernkampfangriff: +7 auf Treffer, Reichweite30/27 m., ein Ziel. Treffer: 25 (6d6 + 4\n) Bludgeoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

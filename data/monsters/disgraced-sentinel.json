@@ -1,0 +1,80 @@
+{
+  "name": "Disgraced Sentinel",
+  "size": "Medium",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "medium",
+      "celestial",
+      "cr8",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 16,
+  "hp": {
+    "average": 111,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 90
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 19,
+    "con": 18,
+    "int": 17,
+    "wis": 18,
+    "cha": 16
+  },
+  "skills": {
+    "Insight": 6,
+    "Perception": 7
+  },
+  "languages": [
+    "all",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Corrupted Angelic Weapons",
+      "text": "The sentinel's weapons\nare magical. When the sentinel hits with any\nweapon, the weapon deals an extra 3d8 necrotic\ndamage (included in the attack)."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The sentinel has advantage on\nsaving throws against spells and other magical\neffects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The sentinel makes two longbow\nattacks."
+    },
+    {
+      "name": "Longbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +7 to hit, range\n150/600 ft., one target. Hit: 8 (1d8 + 4) piercing\ndamage plus 13 (3d8) necrotic damage."
+    },
+    {
+      "name": "Retreating Shot (Recharge 4-6)",
+      "type": "special",
+      "text": "The sentinel leaps\nback 50 feet without provoking attacks of\nopportunity, then makes two shots against a single\ntarget with its longbow. The first of these attacks is\nmade with advantage."
+    },
+    {
+      "name": "Decaying Touch (3/Day)",
+      "type": "special",
+      "text": "Melee Spell Attack: +7 to\nhit, reach 5 ft., one target. Hit: 30 (6d8 + 3)\nnecrotic damage."
+    },
+    {
+      "name": "Crash of Arrows (1/Day)",
+      "type": "special",
+      "text": "The sentinel creates a 30\nfoot diameter runic circle centered on a location it\ncan see within 120 feet. Whenever a creature\nenters this area for the first time on a turn or ends\nits turn in this area, conjured arrows rain down\nupon them. That creature must make a DC 15\nDexterity saving throw, taking 32 (7d8) piercing\ndamage on a failed save or half as much damage on\na successful one."
+    }
+  ],
+  "source": "creature"
+}

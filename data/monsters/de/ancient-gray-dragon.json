@@ -1,0 +1,89 @@
+{
+  "name": "Uralter Grauer Drache",
+  "size": "Gigantisch",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "gargantuan",
+      "dragon",
+      "cr21",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 21,
+  "hp": {
+    "average": 455,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80,
+    "swim": 40
+  },
+  "abilities": {
+    "str": 28,
+    "dex": 14,
+    "con": 25,
+    "int": 19,
+    "wis": 17,
+    "cha": 19
+  },
+  "skills": {
+    "Perception": 18,
+    "Stealth": 9
+  },
+  "languages": [
+    "Abyssal",
+    "Aquan",
+    "Common",
+    "Draconic",
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "21",
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Amphibisch",
+      "text": "Der Drache kann Luft und Wasser ausatmen."
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache einen Rettungswurf verfehlt,\nkann er sich stattdessen für einen Erfolg entscheiden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache setzt seine „Furchteinflößende Präsenz“ ein und führt drei\nAngriffe aus: einen mit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +16 auf Treffer, Reichweite15 ft: , ein Ziel. Treffer: 20\n(2d10 + 9) Durchschlagschaden plus 7 (2d6) Feuerschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +16 zum Treffen, Reichweite:3 m ., ein Ziel. Treffer: 16\n(2d6 + 9) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +16 zum Treffen, Reichweite:6 m ., ein Ziel. Treffer: 18\n(2d8 + 9) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Furchterregende Präsenz",
+      "type": "special",
+      "text": "Jede Kreatur nach Wahl des Drachen, die sich in\n120 feetseiner Nähe befindet und ihn wahrnimmt, muss einenDC 20  Weisheits-\nRettungswurf bestehen oder wird für 1 Minute verängstigt. Eine Kreatur kann den\nRettungswurf am Ende jedes ihrer Züge wiederholen und den Effekt auf sich selbst bei\nErfolg beenden. Wenn der Rettungswurf einer Kreatur erfolgreich ist und der Effekt für\nsie endet, ist die Kreatur für die nächsten\n24 Stunden immun gegen die Furchterregende Präsenz des Drachen."
+    },
+    {
+      "name": "Dampfatem (Aufladen 5–6)",
+      "type": "special",
+      "text": "Der Drache speit Dampf in einem 27 Meter\nbreiten Kegel aus. Kreaturen in diesem Bereich müssen einenDC 22  Konstitutions-Rettungswurf durchführen.\nBei einem misslungenen Rettungswurf erleidet die Kreatur 80 (23d6) Feuerschaden, bei einem erfolgreichen Rettungswurf nur die Hälfte\ndieses Schadens. Sich unter Wasser zu befinden, gewährt keine\nResistenz gegen diesen Schaden."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "bamherziger-streitkolben",
+  "type": "item",
+  "name": "Bamherziger Streitkolben",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 18,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein rostig-aussehender Streitkolben, der Kreaturen nie unter 1 TP bringen kann.",
+  "tags": [
+    "magisch",
+    "waffe",
+    "kampf"
+  ]
+}

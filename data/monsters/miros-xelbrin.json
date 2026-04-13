@@ -1,0 +1,60 @@
+{
+  "name": "Miros Xelbrin",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr0",
+      "storm-kings-thunder",
+      "damaran human"
+    ]
+  },
+  "alignment": "neutral good",
+  "ac": 10,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 15,
+    "int": 11,
+    "wis": 12,
+    "cha": 14
+  },
+  "skills": {
+    "Intimidation": 4,
+    "Perception": 3
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Bear Hug",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4+3) bludgeoning damage, and the target grappled (escape DC 13) and takes 5 (1d4 + 3) bludgeoning damage at the start of each of Miros's turns until the grapple ends. Miros cannot make attacks while grappling a creature."
+    },
+    {
+      "name": "Club",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4+1) bludgeoning damage"
+    },
+    {
+      "name": "Heavy Crossbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage. Miros carries ten crossbow bolts."
+    }
+  ],
+  "source": "creature"
+}

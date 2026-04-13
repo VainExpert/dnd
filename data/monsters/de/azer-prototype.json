@@ -1,0 +1,69 @@
+{
+  "name": "Azer-Prototyp",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr1",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "gesetztreu-neutral",
+  "ac": 15,
+  "hp": {
+    "average": 27,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 12,
+    "con": 14,
+    "int": 12,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "Ignan"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Beheizter Körper",
+      "text": "Ein Wesen, das den Azer berührt oder\nihn mit einem Nahkampfangriff trifft, während es sich5 feetin seiner Nähe befindet,\nerleidet 3 (1d6) Feuerschaden."
+    },
+    {
+      "name": "Beheizte Waffen",
+      "text": "Wenn der Azer mit einer metallenen\nNahkampfwaffe trifft, verursacht er zusätzlich 2 (1d4) Feuerschaden\n(im Angriff enthalten)."
+    },
+    {
+      "name": "Beleuchtung",
+      "text": "Der Azer strahlt helles Licht in einem Umkreis von 3 Metern\nund schwaches Licht in einem Umkreis von weiteren 3 m."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Azer führt einen Angriff mit seiner\nKeule und einen mit seiner Nebenhand aus."
+    },
+    {
+      "name": "Frau",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 zum Treffer, Reichweite5ft: ,\nein Ziel. Treffer: 5 (1d6 + 2) Bludgeoning-Schaden\nplus 2 (1d4) Feuerschaden."
+    },
+    {
+      "name": "Schlag mit der Nicht-Hauptwaffe",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 zum Treffen,\nReichweite5ft: 0, ein Ziel. Treffer: 3 (1d6) Bludgeoning-Schaden\nplus 2 (1d4) Feuerschaden."
+    }
+  ],
+  "source": "creature"
+}

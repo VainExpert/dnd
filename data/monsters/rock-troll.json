@@ -1,0 +1,80 @@
+{
+  "name": "Rock Troll",
+  "size": "Large",
+  "type": {
+    "type": "giant",
+    "tags": [
+      "large",
+      "giant",
+      "cr11",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 15,
+  "hp": {
+    "average": 150,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 20
+  },
+  "abilities": {
+    "str": 24,
+    "dex": 10,
+    "con": 24,
+    "int": 6,
+    "wis": 9,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 3
+  },
+  "languages": [
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "11",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "text": "The troll has advantage on Wisdom (Perception) checks\nthat rely on smell."
+    },
+    {
+      "name": "Regeneration",
+      "text": "The rock troll regains 10 hit points at the start of its turn\nif it has at least 1 hit point and is underground touching earth or rock. If\nthe rock troll takes acid or fire damage, this trait doesn’t function at the\nstart of the troll’s next turn."
+    },
+    {
+      "name": "Rend",
+      "text": "If the troll hits the target with both claws on the same turn, the\ntroll rends the target, dealing an additional 22 (4d10) slashing damage to\nthe target."
+    },
+    {
+      "name": "Sunlight Vulnerability",
+      "text": "The rock troll begins to turn to stone and its\nspeed is halved when it starts its turn in true sunlight (magical light does\nnot have the same effect). The rock troll must make a DC 17 Constitution\nsaving throw at the end of its next turn. If it fails this saving throw, it\ncompletely turns to stone and is petrified. The troll must repeat the saving\nthrow for each turn it remains in sunlight.\n\nThe petrified effect is permanent unless dispelled (but only if done out\nof direct sunlight)."
+    },
+    {
+      "name": "Tough Hide",
+      "text": "The rock troll has extremely thick, tough skin that protects\nit from nonmagical weapons."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The rock troll makes three melee attacks: one with bite and\ntwo claws. If both claw attacks hit the same target on the same turn, the\ntroll rends the creature with its claws, inflicting additional slashing damage."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 16\n(2d8 + 7) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 18\n(2d10 + 7) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "prothese",
+  "type": "item",
+  "name": "Prothese",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser magische Gegenstand ersetzt eine verlorene Gliedmaße und kann normal verwendet werden. Man kann es mit einer Aktion ran- und abmachen, aber nicht gegen den willen des Trägers, während er lebt.",
+  "tags": [
+    "magisch",
+    "aktion"
+  ]
+}

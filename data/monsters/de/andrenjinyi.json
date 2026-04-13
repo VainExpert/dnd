@@ -1,0 +1,99 @@
+{
+  "name": "Andrenjinyi",
+  "size": "Gigantisch",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "gargantuan",
+      "celestial",
+      "cr15",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 18,
+  "hp": {
+    "average": 228,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 20,
+    "climb": 20,
+    "swim": 60
+  },
+  "abilities": {
+    "str": 30,
+    "dex": 17,
+    "con": 25,
+    "int": 10,
+    "wis": 18,
+    "cha": 23
+  },
+  "skills": {
+    "Arcana": 5,
+    "Perception": 9,
+    "Religion": 5
+  },
+  "languages": [
+    "Common",
+    "Celestial",
+    "Giant",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "15",
+    "xp": 13000,
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Amphibisch",
+      "text": "Die Andrenjinyi können sowohl an der Luft als auch unter Wasser atmen."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die Zauberfähigkeit der Andrenjinyi ist Charisma (ZauberrettungswurfDC 19, +11 auf Treffer bei Zauberangriffen). Sie kann von Natur aus die folgenden Zauber wirken, wobei nur verbale Komponenten erforderlich sind:\n\nBeliebig oft: Wasser erschaffen, Mit Tieren sprechen, Steinformung\n\nJe 3/Tag: Wetter kontrollieren, Magie bannen, Reinkarnation\n\nJe 1/Tag: Verwüstung, Mit der Natur kommunizieren, Ansteckung, Fleisch zu Stein, Pflanzenwachstum"
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Andrenjinyi hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Waffenangriffe der Andrenjinyi sind magischer Natur."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Andrenjinyi führt zwei Angriffe aus, einen mit seinem Biss und einen durch Würgen. Treffen beide Angriffe dasselbe Ziel, wird dieses „ganz verschlungen“."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +15 auf Treffer, Reichweite20 ft: , ein Ziel. Treffer: 36 (4d12 + 10) Durchschlagschaden."
+    },
+    {
+      "name": "Einschnüren",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +15 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 36 (4d12 + 10) Bludgeoning-Schaden, und das Ziel wird festgehalten (Befreiung:DC 20 ). Bis dieser Festhalteschlag endet, ist das Ziel gefesselt, und der Andrenjinyi kann kein weiteres Ziel festhalten."
+    },
+    {
+      "name": "Regenbogenbogen",
+      "type": "special",
+      "text": "Der Andrenjinyi kann sich als1 mile Aktion augenblicklich zwischen Süßwasserquellen teleportieren. In dem Zug, in dem er diese Fähigkeit einsetzt, kann er sich nicht normal bewegen und keine anderen Aktionen ausführen. Wenn diese Fähigkeit aktiviert wird, entsteht zwischen Ausgangs- und Zielort ein Regenbogen, der 1 Minute lang bestehen bleibt."
+    },
+    {
+      "name": "Ganz schlucken",
+      "type": "special",
+      "text": "Wenn die Biss- und Würgeangriffe in einem Zug dasselbe Ziel treffen, wird die Kreatur im Ganzen verschluckt. Das Ziel ist geblendet und gefesselt und verfügt über vollständige Deckung gegen Angriffe und andere Effekte außerhalb des Andrenjinyi. Das Ziel erleidet im Inneren des Andrenjinyi keinen Schaden. Der Andrenjinyi kann jeweils drei mittelgroße oder vier kleine Kreaturen verschlucken. Wenn der Andrenjinyi in einem einzigen Zug 20 oder mehr Schaden durch eine verschluckte Kreatur erleidet, muss er am Ende dieses Zuges einenDC 18  Konstitutionsrettungswurf bestehen oder alle verschluckten Kreaturen wieder auswürgen, die dann in einem Bereich innerhalb5 feetvon  vom Andrenjinyi liegend zu Boden fallen. Wird der Andrenjinyi getötet, ist eine verschluckte Kreatur nicht länger von ihm gefesselt und kann dem Andrenjinyi entkommen, indem sie15 feet  Bewegungspunkte aufwendet und liegend aus dem Andrenjinyi austritt. Der Andrenjinyi kann verschluckte Kreaturen als freie Aktion wieder auswürgen."
+    },
+    {
+      "name": "Verwandlungskehle",
+      "type": "special",
+      "text": "Wird eine Kreatur von einem Andrenjinyi verschlungen, muss sie am Ende ihres Zuges in jeder Runde einen erfolgreichenDC 19Weisheits-Rettungswurf bestehen, andernfalls wird sie von „Wahre Verwandlung“ in eine neue, vom Andrenjinyi gewählte Gestalt verwandelt. Der Effekt ist dauerhaft, bis er durch einen Zauber gebannt oder mit einem Wunsch oder vergleichbarer Magie beendet wird."
+    }
+  ],
+  "source": "creature"
+}

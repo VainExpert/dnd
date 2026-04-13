@@ -1,0 +1,76 @@
+{
+  "name": "Allein",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr10",
+      "volos-guide"
+    ]
+  },
+  "alignment": "any evil alignment",
+  "ac": 15,
+  "hp": {
+    "average": 120,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 12,
+    "con": 16,
+    "int": 19,
+    "wis": 17,
+    "cha": 17
+  },
+  "skills": {
+    "Arcana": 8,
+    "Deception": 7,
+    "History": 8,
+    "Insight": 7,
+    "Perception": 7,
+    "Stealth": 5
+  },
+  "languages": [
+    "Deep Speech",
+    "Undercommon",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Magieresistenz",
+      "text": "Der Alhoon hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit (Psionik)",
+      "text": "Die angeborene Zauberfähigkeit des Alhoons ist Intelligenz (ZauberrettungswurfDC 16). Er kann die folgenden Zauber von Natur aus wirken, ohne dass dafür Komponenten benötigt werden:\n\n* Beliebig oft: Gedanken erkennen, Schweben\n\n* Je 1 Mal pro Tag: Monster beherrschen, Ebenenwechsel (nur für sich selbst)"
+    },
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Alhoon ist ein Zauberwirker der Stufe 12. Seine Zauberfertigkeit ist Intelligenz (ZauberrettungswurfDC 16, +8 auf Treffer bei Zauberangriffen). Der Alhoon hat die folgenden Zauber vorbereitet:\n\n* Cantrips (beliebig oft): Kühle Berührung, Tanzende Lichter, Magische Hand, Kleinstzauber, Schockierender Griff\n\n* 1. Stufe (4 Plätze): Magie entdecken, Selbsttarnung, Magischer Geschoss, Schild\n\n* 2. Stufe (3 Plätze): Unsichtbarkeit, Spiegelbild, Versengender Strahl\n\n* 3. Stufe (3 Plätze): Zauberabwehr, Fliegen, Blitzschlag\n\n* 4. Stufe (3 Plätze): Verwirrung, Evards schwarze Tentakel, Phantasmatischer Mörder\n\n* 5. Stufe (2 Plätze): Erinnerung verändern, Kraftwand\n\n* 6. Stufe (1 Platz): Zersetzen, Kugel der Unverwundbarkeit"
+    },
+    {
+      "name": "Drehwiderstand",
+      "text": "Der Alhoon hat einen Vorteil bei Rettungswürfen gegen jeden Effekt, der Untote vertreibt."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Eisiger Griff",
+      "type": "special",
+      "text": "Nahkampf-Zauberangriff: +8 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 10 (3d6) Kälteschaden."
+    },
+    {
+      "name": "Gedankenschlag (Aufladezeit 5-6)",
+      "type": "special",
+      "text": "Der Alhoon strahlt auf magische Weise psychische Energie in einem 18-Meter-Kegel aus. Jede Kreatur in diesem Bereich muss einenDC 16  Intelligenz-Rettungswurf bestehen oder erleidet 22 (4d8+4) psychischen Schaden und ist 1 Minute lang betäubt. Ein Ziel kann den Rettungswurf am Ende jedes seiner Züge wiederholen und den Effekt auf sich selbst bei Erfolg beenden."
+    }
+  ],
+  "source": "creature"
+}

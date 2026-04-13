@@ -1,0 +1,21 @@
+{
+  "id": "schwache-genesung",
+  "name": "Schwache Genesung",
+  "level": 2,
+  "school": "Bannmagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Kleriker",
+    "Druide",
+    "Paladin",
+    "Waldläufer"
+  ],
+  "text": "Du berührst eine Kreatur und beendest entweder Krankheit oder einen Zustand (blind, taub, gelähmt, vergiftet)."
+}

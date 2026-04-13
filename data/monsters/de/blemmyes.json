@@ -1,0 +1,68 @@
+{
+  "name": "Blemmyes",
+  "size": "Groß",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr8",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 15,
+  "hp": {
+    "average": 168,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 13,
+    "con": 20,
+    "int": 7,
+    "wis": 12,
+    "cha": 5
+  },
+  "skills": {
+    "Intimidation": 3
+  },
+  "languages": [
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "8",
+    "xp": 3900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Der Drang zum Fleischessen",
+      "text": "Wenn die Blemmyen eine handlungsunfähige Kreatur sehen, müssen sie einenDC 11Weisheits-Rettungswurf bestehen, sonst werden sie dazu getrieben, sich auf diese Kreatur zuzubewegen und sie anzugreifen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Blemmy führt zwei Schlagangriffe und einen Bissangriff aus."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 zum Treffer, Reichweite 1,5 m., ein Ziel. Treffer: 19 (4d6 + 5) Durchdringungsschaden. Ist das Ziel eine handlungsunfähige Kreatur mittlerer Größe oder kleiner, wird diese verschlungen. Während sie verschlungen ist, ist die Kreatur geblendet und gefesselt, sie hat vollständige Deckung gegen Angriffe und andere Effekte von außerhalb des Blemmyes und erleidet zu Beginn jedes Zuges des Blemmyes 14 (4d6) Säureschaden. Wenn der Blemmyes während eines einzigen Zuges 20 oder mehr Schaden von einer Kreatur in seinem Inneren erleidet, muss der Blemmyes am Ende dieses Zuges einenDC 16  Konstitutionsrettungswurf bestehen oder die verschluckte Kreatur wieder auswürgen, die dann in einem Feld innerhalb5 feetvon  vom Blemmyes liegend zu Boden fällt. Der Blemmyes kann jeweils nur ein Ziel verschluckt haben. Wenn der Blemmyes stirbt, wird eine verschluckte Kreatur nicht mehr von ihm festgehalten und kann mit5 feet  Bewegungspunkten aus der Leiche entkommen, wobei sie liegend herauskommt."
+    },
+    {
+      "name": "Friede sei mit euch",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 14 (2d8 + 5) Bludgeoning-Schaden. Ist das Ziel eine Kreatur, muss sie einenDC 16Weisheits-Rettungswurf bestehen oder ist bis zum Ende ihres nächsten Zuges betäubt."
+    },
+    {
+      "name": "Rock",
+      "type": "special",
+      "text": "Fernkampfangriff: +8 auf Treffer, Reichweite30/120  Fuß, ein Ziel. Treffer: 27 (4d10 + 5) Bludgeoning-Schaden. Ist das Ziel eine Kreatur, muss sie einenDC 16  Weisheits-Rettungswurf bestehen oder ist bis zum Ende ihres nächsten Zuges verängstigt."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,81 @@
+{
+  "name": "Balban (Brute-Dämon)",
+  "size": "Groß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr9",
+      "tome-of-horrors",
+      "demon"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 17,
+  "hp": {
+    "average": 126,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 25,
+    "dex": 14,
+    "con": 22,
+    "int": 6,
+    "wis": 14,
+    "cha": 14
+  },
+  "skills": {
+    "Intimidation": 6,
+    "Perception": 6
+  },
+  "languages": [
+    "Abyssal"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Magieresistenz",
+      "text": "Der Dämon hat einen Vorteil bei Rettungswürfen gegen\nZauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Waffenangriffe des Dämons sind magischer Natur."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die Zauberkompetenz des Dämons ist Weisheit (Zauber\nrettungswurfDC 14, +6 auf Treffer bei Zauberangriffen). Der Dämon kann von Natur aus die\nfolgenden Zauber wirken, ohne dass er dafür materielle Komponenten benötigt:\n\n* Beliebig oft: Angst, Dunkelheit, Magie bannen, Teleportation, Unsichtbares sehen"
+    },
+    {
+      "name": "Last",
+      "text": "Wenn sich der Dämon mindestens20 feetgeradeaus auf eine Kreatur zubewegt\nund sie dann im selben Zug mit einem Bissangriff trifft, muss dieses Ziel\neinenDC 17Stärke-Rettungswurf bestehen oder wird zu Boden geworfen. Befindet sich das\nZiel am Boden, kann der Dämon als\nBonusaktion einen Schlagangriff gegen es ausführen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Dämon kann seinen Schlag einsetzen, einen Bissangriff\nund zwei Klauenangriffe ausführen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer:\n16 (2d8 + 7) Durchdringungsschaden."
+    },
+    {
+      "name": "Friede sei mit euch",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer:\n17 (3d6 + 7) Bludgeoning-Schaden. Ist das Ziel eine mittelgroße oder kleinere\nKreatur, wird es festgehalten (Befreiung DC 17). Bis dieser Festhalteschlag endet, ist das Ziel\ngefesselt und der Dämon kann diesen Angriff nicht gegen ein anderes Ziel einsetzen."
+    },
+    {
+      "name": "Zerschlagen",
+      "type": "special",
+      "text": "Eine mittelgroße oder kleinere Kreatur, die vom Dämon festgehalten wird,\nwird gegen nahegelegene feste Gegenstände oder eine feste Oberfläche geschleudert. Das Ziel erleidet 25\n(4d8 + 7) Bludgeoning-Schaden und muss einenDC 16  Konstitutions-\nRettungswurf bestehen, sonst ist es bis zum Ende seines nächsten Zuges betäubt."
+    }
+  ],
+  "source": "creature"
+}

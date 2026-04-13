@@ -1,0 +1,86 @@
+{
+  "name": "Fusion",
+  "size": "Gigantisch",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "gargantuan",
+      "construct",
+      "cr14",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 435,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 23,
+    "dex": 10,
+    "con": 18,
+    "int": 2,
+    "wis": 15,
+    "cha": 1
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 3
+  },
+  "languages": [
+    "understands the languages of its creator but can’t speak"
+  ],
+  "challenge": {
+    "cr": "14",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Unveränderliche Form",
+      "text": "Das Amalgam ist immun gegen alle Zauber und Effekte,\ndie seine Gestalt verändern würden."
+    },
+    {
+      "name": "Verwendungszweck",
+      "text": "Die Fusion kann jeden beliebigen Gegenstand verwenden, der sich in\nihrem Bestand befindet. Gegenstände mit begrenzter Verwendungsanzahl, wie Tränke, Schriftrollen oder Zauberstäbe, werden\nwie gewohnt verbraucht."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Die Verschmelzung bietet einen Vorteil bei\nRettungswürfen gegen Zaubersprüche und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Waffenangriffe des Amalgams sind magischer Natur."
+    },
+    {
+      "name": "Schwarmangriff",
+      "text": "Das Amalgam kann den Platz einer anderen Kreatur einnehmen\nund umgekehrt; dabei fügt es der Kreatur mit den fliegenden Waffen und Gegenständen,\naus denen es besteht, Schaden zu. Jede Kreatur, die ihren Zug auf demselben Feld beginnt\nwie das Amalgam, muss einenDC 18Geschicklichkeits-Rettungswurf bestehen oder\n21 (6d6) Schnittschaden erleiden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Das Amalgam führt vier Nahkampfangriffe aus."
+    },
+    {
+      "name": "Schwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer:\n17 (2d10 + 6) Schnittschaden."
+    },
+    {
+      "name": "Frau",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 zum Treffen, Reichweite:3 m ., ein Ziel. Treffer: 15\n(2d8 + 6) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Friede sei mit euch",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 19\n(3d8 + 6) Bludgeoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

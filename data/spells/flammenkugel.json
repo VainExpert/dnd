@@ -1,0 +1,18 @@
+{
+  "id": "flammenkugel",
+  "name": "Flammenkugel",
+  "level": 2,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "18 m (1,5 m Sphäre)",
+  "components": "V, G, M (Talg, Schwefel und Eisenpulver)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Eine Flammende Sphäre mit 1,5 m Durchmesser erscheint an einer freien Stelle deiner Wahl in Reichweite und bleibt dort für die Wirkungsdauer bestehen. Jede Kreatur, die ihren Zug innerhalb von 1,5 m um die Sphäre beendet, muss einen DEX-Rettungswurf machen.\nBei Fehlschlag: 2W6 Feuerschaden, sonst die Hälfte\nAls Bonus Aktion kannst du die Sphäre um bis zu 9 m bewegen. Wenn die Sphäre eine Kreatur rammt, muss sie einen DEX-Rettungswurf gegen den Schaden der Sphäre durchführen und die Sphäre beendet ihre Bewegung. Sie kann über bis zu 1,5 m Hürden und bis zu 3 m breite Gruben bewegt werden. Sie entzündet brennbare Gegenstände, die nicht getragen oder gehalten werden. Sie strahlt in 6 m Radius helles Licht und gedimmtes Licht für weitere 6 m aus.\nAuf höheren Level gewirkt: pro Level 1W6 mehr Schaden"
+}

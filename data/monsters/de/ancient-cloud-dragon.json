@@ -1,0 +1,97 @@
+{
+  "name": "Uralter Wolkendrache",
+  "size": "Gigantisch",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "gargantuan",
+      "dragon",
+      "cr22",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 19,
+  "hp": {
+    "average": 367,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 27,
+    "dex": 13,
+    "con": 25,
+    "int": 21,
+    "wis": 18,
+    "cha": 19
+  },
+  "skills": {
+    "Arcana": 12,
+    "History": 12,
+    "Insight": 11,
+    "Nature": 12,
+    "Perception": 18
+  },
+  "languages": [
+    "Auran",
+    "Aquan",
+    "Common",
+    "Draconic",
+    "Giant",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "22",
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache einen Rettungswurf verfehlt,\nkann er sich stattdessen für einen Erfolg entscheiden."
+    },
+    {
+      "name": "Windborn",
+      "text": "Der Drache kann weder durch\nmagische noch durch nichtmagische Winde jeglicher Art bewegt oder zu Boden geworfen werden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache setzt seine „Furchteinflößende Präsenz“ ein und führt\ndrei Angriffe aus: einen mit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +15 auf Treffer, Reichweite20 ft: , ein Ziel.\nTreffer: 19 (2d10 + 8) Durchdringungsschaden plus 10 (3d6) Kälteschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +15 auf Treffer, Reichweite10 ft: , ein Ziel.\nTreffer: 22 (4d6 + 8) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +15 auf Treffer, Reichweite20 ft: , ein Ziel.\nTreffer: 17 (2d8 + 8) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Furchterregende Präsenz",
+      "type": "special",
+      "text": "Jede Kreatur nach Wahl des Drachen, die sich\nin120 feetReichweite des Drachen befindet und ihn wahrnimmt, muss einenDC\n19  Weisheits-Rettungswurf bestehen oder wird für 1 Minute verängstigt. Eine Kreatur\nkann den Rettungswurf am Ende jedes ihrer Züge wiederholen und beendet den\nEffekt auf sich selbst bei einem Erfolg. Wenn der Rettungswurf einer Kreatur erfolgreich ist\noder der Effekt für sie endet, ist die Kreatur für die nächsten 24 Stunden immun gegen die „Furchterregende\nPräsenz“ des Drachen."
+    },
+    {
+      "name": "Atemwaffen (Aufladezeit 5–6)",
+      "type": "special",
+      "text": "Der Drache setzt eine der folgenden\nAtemwaffen ein.\n\n* Wolkenatem. Der Drache stößt einen eisigen Luftstrom in Form eines 90-Fuß-Kegels aus, der\nsich um Ecken herum ausbreitet. Jede Kreatur in diesem Bereich muss einenDC 22\nKonstitutions-Rettungswurf durchführen und erleidet bei einem misslungenen\nRettungswurf 72 (16d8\n) Kälteschaden oder bei einem erfolgreichen Rettungswurf die Hälfte dieses Schadens.\n\n* Windatem. Der Drache haucht orkanartige Winde in einer 90 Fuß langen Linie aus, die\n10 Fuß breit ist. Kreaturen in diesem Bereich müssen einenDC 22\nStärke-Rettungswurf\nausführen und erleiden bei einem misslungenen Rettungswurf 36 (8d8\n) Bludgeoning-Schaden und\nwerden direkt vom Drachen90 feet\nweg gestoßen. Bei einem erfolgreichen Rettungswurf\nerleidet die Kreatur nur die Hälfte des Schadens und wird nicht weggeschleudert. Eine Kreatur, die\nweggeschleudert wird und auf eine feste Oberfläche trifft, erleidet1d6\nSchlagschaden pro10\nfeet\nzurückgelegter. Nichtmagische Flammen werden vollständig gelöscht, und magische\nFlammen, die durch einen Zauber der Stufe 5 oder niedriger erzeugt wurden, werden sofort gebannt."
+    },
+    {
+      "name": "Cloud-Formular",
+      "type": "special",
+      "text": "Der Wolkendrache verwandelt sich in eine riesige Nebelwolke\noder zurück in seine wahre Gestalt. In seiner Nebelgestalt kann der Drache keine\nAktionen ausführen, nicht sprechen und keine Gegenstände manipulieren. Er ist schwerelos, hat eine Fluggeschwindigkeit von\n6 m, kann schweben und den Raum einer feindlichen Kreatur betreten und\ndort verweilen. Außerdem kann der Nebel, sofern Luft durch einen Raum strömen kann, dies\ntun, ohne sich zusammenzudrücken, und er kann nicht durch Wasser dringen. Er hat Vorteil bei\nRettungswürfen auf Stärke, Geschicklichkeit und Konstitution, ist immun gegen jeglichen\nnichtmagischen Schaden und profitiert weiterhin von seiner Eigenschaft „Windgeboren“."
+    }
+  ],
+  "source": "creature"
+}

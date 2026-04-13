@@ -1,0 +1,48 @@
+{
+  "id": "windfaecher",
+  "type": "item",
+  "name": "Windfächer",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 250,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": 1,
+    "recharge": "Morgen"
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [
+    "windstoss"
+  ],
+  "effects": [],
+  "text": "Wenn du diesen Fächer hältst, kannst du als Aktion den Zauber Windstoß (Rettungswurf-SG 13) mit ihm wirken. Nachdem er verwendet wurde, kann der Fächer erst im nächsten Morgengrauen wiederverwendet werden. Jedes Mal, wenn er vor diesem Zeitpunkt wiederverwendet wird, besteht eine kumulative Chance von 20 Prozent, dass er nicht funktioniert und in nutzlose, nichtmagische Fetzen zerfällt.",
+  "tags": [
+    "magisch",
+    "fächer",
+    "wind",
+    "zauber",
+    "windstoß",
+    "aktion"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "spiegelbilder",
+  "name": "Spiegelbilder",
+  "level": 2,
+  "school": "Illusionsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "V, G",
+  "duration": "1 min",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "3 illusionäre Duplikate deiner selbst erscheinen in deinem Bereich. Bis der Zauber endet bewegen sich die Duplikate mit dir, ahmen deine Aktionen nach und verändern ihre Position, so dass es unmöglich ist zu erkennen, welche Gestalt real ist.\nJedes Mal, wenn dich ein Wesen während der Wirkungsdauer angreift, würfle einen W20, um zu bestimmen, ob der Angriff stattdessen eines deiner Duplikate als Ziel hat. Bei 3 Duplikaten: 6 oder höher. Bei 2 Duplikaten 8 oder höher. Bei 1 Duplikat: 11 oder höher. Die RK der Duplikate ist 10 + dein DEX-Modifikator.\nWenn ein Angriff ein Duplikat trifft, wird dieses zerstört. Es ignoriert alle anderen Schadensquellen und Effekte. Der Zauber endet, wenn alle 3 Duplikate zerstört wurden.\nEine Kreatur ist nicht betroffen, wenn sie blind ist, andere Sinne als Sicht verwendet (Blindsicht) oder Illusionen durchschaut (Wahrer Blick)."
+}

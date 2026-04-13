@@ -1,0 +1,78 @@
+{
+  "name": "Terror Beast",
+  "size": "Small",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "small",
+      "aberration",
+      "cr10",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 16,
+  "hp": {
+    "average": 88,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 6,
+    "dex": 16,
+    "con": 12,
+    "int": 10,
+    "wis": 14,
+    "cha": 19
+  },
+  "skills": {
+    "Deception": 8,
+    "Intimidation": 8,
+    "Performance": 8
+  },
+  "languages": [
+    "Telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Illusory Appearance",
+      "text": "The terror beast makes itself appear\nas creatures far more frightening than itself. Whenever\na creature attacks the terror beast, roll a d20. On a\nresult of 11 or higher, the attack hits part of its illusory\nappearance and does no damage. Each time the terror\nbeast is successfully hit, it changes form to a new\nhorror. Creatures with blindsight or truesight can see\nthe terror beast’s true form and are not affected by this\nfeature. Whenever the terror beast dies, it reverts to its\nactual form as a small, seemingly non-threatening\ncreature."
+    },
+    {
+      "name": "Unnatural Insight",
+      "text": "The terror beast learns a creature’s\ndeepest fears simply by looking at them."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The terror beast makes two attacks: one\nwith Terror Assault and one with Tear Asunder."
+    },
+    {
+      "name": "Terror Assault",
+      "type": "special",
+      "text": "Target creature within 90 feet must\nmake a DC 16 Wisdom saving throw, taking 22 (5d8)\npsychic damage on a failed save and becoming\nfrightened until the end of their next turn on a failed\nsave, or half as much damage and not frightened on a\nsuccessful one."
+    },
+    {
+      "name": "Tear Asunder",
+      "type": "special",
+      "text": "Target creature within 90 feet must make\na DC 16 Intelligence saving throw, taking 22 (5d8)\npsychic damage and becoming convinced one of their\nlimbs have been violently ripped from their body on a\nfailed save, or half as much damage and their limb\nremains intact on a successful one. If they fail the save\nby 10 or more, they become convinced their eyes are\ntorn out. Even though the effects aren’t real, the victim\nis convinced it is reality and suffer from the same\ndetriments as if they actually lost that body part. This\ndeception ends when the terror beast dies."
+    },
+    {
+      "name": "Worst Nightmares (Recharge 5-6)",
+      "type": "special",
+      "text": "The terror beast\nunleashes a torrent of nightmarish illusions against its\nenemies. Each creature within 30 feet of the terror\nbeast must make a DC 16 Wisdom saving throw, taking\n27 (6d8) psychic damage and becoming paralyzed\nwith fear until the end of their next turn on a failed\nsave, or half as much damage and not paralyzed on a\nsuccessful one. If a creature is reduced to 0 hit points\nfrom this attack, the terror beast regains 20 hit points."
+    },
+    {
+      "name": "Face Death (1/Day)",
+      "type": "special",
+      "text": "The terror beast infests the mind of\na creature within 90 feet with nightmare and forces it\nto live out its own death over and over, each death\nmore gruesome than the last. Have that player make\ndeath saving throws until they reach 3 successes, 3\nfailures, or rolls a natural 20. If they reached 3 failures,\nthe creature takes 55 (10d10) psychic damage and has\ndisadvantage on all attacks, saving throws, and ability\nchecks for the next 1d4 turns. On 3 successes, the\ncreature takes half as much psychic damage and does\nnot have disadvantage. If the player rolls a natural 20\non one of their saves, the effect ends immediately with\nno damage dealt as their mind conquers this attack."
+    }
+  ],
+  "source": "creature"
+}

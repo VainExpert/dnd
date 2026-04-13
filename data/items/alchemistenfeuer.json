@@ -1,0 +1,48 @@
+{
+  "id": "alchemistenfeuer",
+  "type": "item",
+  "name": "Alchemistenfeuer",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Mit einer Aktion kann eine Flasche Alchemistenfeuer auf eine Kreatur in 6 m Abstand geworfen werden. Das Ziel muss einen DEX-Rettungswurf machen oder wird davon getroffen und nimmt 1W4 Feuerschaden und brennt.",
+  "tags": [
+    "abenteuer",
+    "waffe",
+    "kampf",
+    "feuer",
+    "einfach",
+    "fernkampf",
+    "konsumiert",
+    "nützlich"
+  ]
+}

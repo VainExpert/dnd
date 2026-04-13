@@ -1,0 +1,75 @@
+{
+  "name": "Azizou (Schmerz-Dämon)",
+  "size": "Klein",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "small",
+      "fiend",
+      "cr3",
+      "tome-of-horrors",
+      "demon"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 15,
+  "hp": {
+    "average": 17,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 15,
+    "con": 11,
+    "int": 8,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {
+    "Deception": 4,
+    "Stealth": 4
+  },
+  "languages": [
+    "Abyssal"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Magieresistenz",
+      "text": "Der Dämon hat einen Vorteil bei Rettungswürfen gegen\nZauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Waffenangriffe des Dämons sind magischer Natur."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die Zauberfertigkeit des Dämons ist Charisma\n(ZauberrettungswurfDC 10, +2 auf Treffer bei Zauberangriffen). Der Dämon kann von Natur aus\ndie folgenden Zauber nach Belieben wirken, ohne dass dafür materielle Komponenten erforderlich sind: E Böses und Gutes erkennen, Gedanken erkennen, Unsichtbarkeit.E"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Dämon führt drei Angriffe aus: einen mit seinem Biss und zwei\nmit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 5 (1d6 + 2) Durchdringungsschaden."
+    },
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 zum Treffen, Reichweite:1,5 m ., ein Ziel. Treffer: 4\n(1d4 + 2) Schnittschaden."
+    }
+  ],
+  "source": "creature"
+}

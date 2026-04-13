@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Gegenstände</title>
+  <link rel="stylesheet" href="../../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Gegenstände</div>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Suchen..."/>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="nav">
+        <div class="group">
+          <div class="group-title">Start</div>
+          <a href="../../index.html">Startseite</a>
+          <a href="../../index.html#content/house-rules/index.md">Hausregeln</a>
+          <a href="../../index.html#content/safety/index.md">Sicherheit</a>
+          <a href="../../index.html#content/character-options/index.md">Charakteroptionen</a>
+          <a href="../../index.html#content/recaps/index.md">Rückblicke</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Werkzeuge</div>
+          <a href="../werkzeuge/tools.html">Zufallstabellen & Generatoren</a>
+          <a href="../werkzeuge/dice.html">Würfel</a>
+          <a href="../werkzeuge/units.html">Einheitenumrechner</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Sammlungen</div>
+          <a href="../bestiarium/bestiary.html">Bestiarium</a>
+          <a href="../zauber/spells.html">Zauber</a>
+          <a href="./items.html" class="active">Gegenstände</a>
+          <a href="../maps.html">Karten</a>
+          <a href="../spieler/pcs.html">Spieler</a>
+          <a href="../icons.html">Symbole</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="content" style="max-width:1100px;">
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
+          <select id="type" class="select"><option value="">Alle Typen</option></select>
+          <select id="rarity" class="select"><option value="">Alle Seltenheiten</option></select>
+        </div>
+        <div id="grid" class="card-grid"></div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany, normalizeItem } from "../../lib.js";
+
+    const grid = document.getElementById("grid");
+    const qEl = document.getElementById("q");
+    const typeEl = document.getElementById("type");
+    const rarityEl = document.getElementById("rarity");
+
+    const files = await loadIndex("../../data/items/index.json");
+    const items = (await loadMany("../../data/items", files)).map(normalizeItem);
+
+    const types = Array.from(new Set(items.map(i => i.type).filter(Boolean))).sort((a,b)=>a.localeCompare(b));
+    for (const t of types){
+      const opt = document.createElement("option");
+      opt.value = t;
+      opt.textContent = t;
+      typeEl.appendChild(opt);
+    }
+
+    const rarities = Array.from(new Set(items.map(i => i.rarity).filter(Boolean))).sort((a,b)=>a.localeCompare(b));
+    for (const r of rarities){
+      const opt = document.createElement("option");
+      opt.value = r;
+      opt.textContent = r;
+      rarityEl.appendChild(opt);
+    }
+
+    function excerpt(s, n = 220){
+      const t = String(s ?? "").trim();
+      if (!t) return "";
+      return t.length > n ? t.slice(0, n - 1) + "…" : t;
+    }
+
+    function card(i){
+      const id = i.id || i.name || "";
+      const href = `./item.html?id=${encodeURIComponent(id)}`;
+
+      return `
+        <div class="mini-card">
+          <div class="mini-head">
+            <div class="mini-title"><a href="${href}">${escapeHtml(i.name)}</a></div>
+            <div class="mini-sub">${escapeHtml(i.type ?? "Item")}${i.rarity ? " • " + escapeHtml(i.rarity) : ""}</div>
+            <div class="pillbar">
+              ${i.attunement ? `<span class="pill"><b>Bindung</b> ja</span>` : ""}
+              ${i.price ? `<span class="pill"><b>Preis</b> ${escapeHtml(i.price)}</span>` : ""}
+              ${i.weight ? `<span class="pill"><b>Gewicht</b> ${escapeHtml(i.weight)}</span>` : ""}
+            </div>
+          </div>
+          <div class="mini-body">
+            ${i.text ? `<div class="mini-box"><div class="mini-box-title">Effekt</div><div class="mini-box-text">${escapeHtml(excerpt(i.text))}</div></div>` : ""}
+            ${i.source ? `<div class="mini-footer muted">Quelle: ${escapeHtml(i.source)}</div>` : ""}
+          </div>
+        </div>
+      `;
+    }
+
+    function matches(i, q, type, rarity){
+      const hay = [i.id, i.name, i.type, i.rarity, i.text, i.source].join(" ").toLowerCase();
+      if (q && !hay.includes(q)) return false;
+      if (type && (i.type ?? "") !== type) return false;
+      if (rarity && (i.rarity ?? "") !== rarity) return false;
+      return true;
+    }
+
+    function render(){
+      const q = (qEl.value || "").trim().toLowerCase();
+      const t = typeEl.value;
+      const r = rarityEl.value;
+
+      const filtered = items.filter(i => matches(i, q, t, r));
+      grid.innerHTML = filtered.map(card).join("") || `<p>Keine Treffer.</p>`;
+    }
+
+    qEl.addEventListener("input", render);
+    typeEl.addEventListener("change", render);
+    rarityEl.addEventListener("change", render);
+    render();
+  </script>
+</body>
+</html>

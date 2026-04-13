@@ -1,0 +1,76 @@
+{
+  "name": "Mirror Hag",
+  "size": "Medium",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr6",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 16,
+  "hp": {
+    "average": 168,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 10
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 16,
+    "con": 22,
+    "int": 12,
+    "wis": 14,
+    "cha": 19
+  },
+  "skills": {},
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "6",
+    "xp": 2300,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The hag's innate spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). She can innately cast the following spells, requiring no material components:\n\nAt will: disguise self, inflict wounds (4d10), message, ray of enfeeblement\n\n1/day each: detect thoughts, dispel magic, lightning bolt, locate creature, shillelagh, stinking cloud, teleport"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The hag has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Confounding Ugliness",
+      "text": "When confronting a mirror hag at any range, a creature must make a choice at the start of each of its turns: either avert its eyes so that it has disadvantage on attack rolls against the hag until the start of its next turn, or look at the hag and make a DC 15 Constitution saving throw. Failure on the saving throw leaves the character stunned until the start of its next turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "A mirror hag can use its Reconfiguring Curse and make one melee attack."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 21 (4d8 + 3) piercing damage, or 39 (8d8 + 3) piercing damage against a stunned target."
+    },
+    {
+      "name": "Quarterstaff",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage."
+    },
+    {
+      "name": "Reconfiguring Curse",
+      "type": "special",
+      "text": "The mirror hag curses a living creature within 60 feet, giving it beastly or hideous features. The target of the reconfiguring curse must succeed on a DC 15 Constitution saving throw or take 1d6 Charisma damage. A successful save renders the target immune to further uses of that hag's curse for 24 hours."
+    }
+  ],
+  "source": "creature"
+}

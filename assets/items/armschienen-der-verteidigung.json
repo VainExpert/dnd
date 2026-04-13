@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-armschienen-der-verteidigung",
+  "type": "item",
+  "name": "Armschienen der Verteidigung",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "erfordert Einstimmung",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diese Armschienen trägst, erhältst du einen Bonus von +2 auf deine RK, falls du keine Rüstung trägst und keinen Schild verwendest.",
+  "tags": []
+}

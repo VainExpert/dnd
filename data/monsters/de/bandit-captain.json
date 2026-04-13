@@ -1,0 +1,60 @@
+{
+  "name": "Banditenhauptmann",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "monster-manual",
+      "any race"
+    ]
+  },
+  "alignment": "any non-lawful alignment",
+  "ac": 15,
+  "hp": {
+    "average": 65,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 16,
+    "con": 14,
+    "int": 14,
+    "wis": 11,
+    "cha": 14
+  },
+  "skills": {
+    "Athletics": 4,
+    "Deception": 4
+  },
+  "languages": [
+    "any two languages"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Kapitän führt drei Nahkampfangriffe aus: zwei mit seinem Krummsäbel und einen mit seinem Dolch. Oder der Kapitän führt zwei Fernkampfangriffe mit seinen Dolchen aus."
+    },
+    {
+      "name": "Krumsäbel",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 6 (1d6 + 3) Schnittschaden."
+    },
+    {
+      "name": "Dolch",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfwaffenangriff: +5 auf den Trefferwurf, Reichweite 1,5 m[ ]20/60Fuß, ein Ziel. Treffer: 5 (1d4 + 3) Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

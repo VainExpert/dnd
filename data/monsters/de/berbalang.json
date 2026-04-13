@@ -1,0 +1,58 @@
+{
+  "name": "Berbalang",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr2",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 14,
+  "hp": {
+    "average": 38,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 9,
+    "dex": 16,
+    "con": 9,
+    "int": 17,
+    "wis": 11,
+    "cha": 10
+  },
+  "skills": {
+    "Arcana": 5,
+    "History": 5,
+    "Insight": 2,
+    "Perception": 2,
+    "Religion": 5
+  },
+  "languages": [
+    "all",
+    "but rarely speaks"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Spektrales Duplikat (lädt sich nach einer kurzen oder langen Ruhepause wieder auf)",
+      "text": "Als Bonusaktion erschafft der Berbalang ein spektrales Duplikat von sich selbst an einem freien Ort, den er innerhalb60 feetvon  von sich aus sehen kann. Solange das Duplikat existiert, ist der Berbalang bewusstlos. Ein Berbalang kann jeweils nur ein Duplikat haben. Das Duplikat verschwindet, wenn es oder der Berbalang auf 0 Trefferpunkte sinkt oder wenn der Berbalang es auflöst (keine Aktion erforderlich).\n\nDas Duplikat verfügt über dieselben Werte und dasselbe Wissen wie der Berbalang, und alles, was das Duplikat erlebt, ist dem Berbalang bekannt. Der gesamte durch die Angriffe des Duplikats verursachte Schaden ist psychischer Schaden."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Berbalang ist Intelligenz (ZauberrettungswurfDC 13). Der Berbalang kann die folgenden Zauber von Natur aus wirken, ohne dass dafür materielle Komponenten erforderlich sind:\n\n* Beliebig oft: Mit den Toten sprechen\n\n* 1/Tag: Ebenenwechsel (nur für sich selbst)"
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

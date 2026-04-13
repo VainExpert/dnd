@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-streitkolben-des-niederstreckens",
+  "type": "item",
+  "name": "Streitkolben des Niederstreckens",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "weapon",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "Streitkolben",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Du erhältst einen Bonus von +1 auf Angriffs- und Schadenswürfe, die du mit dieser magischen Waffe ausführst. Der Bonus erhöht sich auf +3, wenn du ein Konstrukt mit dem Streitkolben angreifst. Wenn du bei einem Angriffswurf mit dieser Waffe eine 20 würfelst, erleidet das Ziel zusätzlich 2W6 Wuchtschaden. Wenn das Ziel ein Konstrukt ist, erleidet es 4W6 Wuchtschaden. Wenn ein Konstrukt nach Erleiden des Schadens nur noch höchstens 25 Trefferpunkte hat, wird es zerstört.",
+  "tags": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "federmarke-vogel",
+  "type": "item",
+  "name": "Federmarke Vogel",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 800,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieses Objekt sieht aus wie eine Feder. Mit einer Aktion kann die Feder 1,5 m in die Luft geworfen werden. Dann verschwindet die Feder und ein riesiger vielfarbiger Vogel erscheint an seiner Stelle. DEr Vogel ist ein Roc, der aber nicht angreifen kann. Es gehorcht deinen einfachen Befehlen und kann bis zu 250 kg tragen, wöhrend er seine Höchstgeschwindigkeit fliegt (26 kmh für gesamt 232 km pro Tag; mit 1 h Ruhe pro 3 h fliegen) oder 500 kg bei halber Geschwindigkeit. Der Vogel verschwindet nach seiner maximalen Flugdistanz oder wenn seine TP auf 0 fallen. Du kannst den Vogel auch mit einer Aktion auflösen.",
+  "tags": [
+    "magisch",
+    "aktion",
+    "beschwören",
+    "vogel",
+    "roc",
+    "transport",
+    "fliegen"
+  ]
+}

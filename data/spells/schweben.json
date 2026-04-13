@@ -1,0 +1,18 @@
+{
+  "id": "schweben",
+  "name": "Schweben",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, G, M (kleine Lederschlaufe oder ein Becher aus Golddraht)",
+  "duration": "Konzentration, bis zu 10 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Eine Kreatur oder ein Gegenstand deiner Wahl in Reichweite steigt 6 m empor und verbleibt für die Wirkungsdauer senkrecht schwebend in der Luft. Das Ziel kann maximal 250 kg wiegen.\nEin unwillige Kreatur aknn einen CON-Rettungswurf erfolgreichen ablegen um nicht betroffen zu werden.\nEin fliegendes Ziel kann sich nur über Abstoßen an festen Oberflächen oder Gegenständen bewegen oder sich selbst anheben oder absenken. Dabei gilt die Klettergeschwindigkeit.\nDu kannst das Ziel in deinem Zug auch weitere 6 m anheben oder absinken oder selbst innerhalb der Reichweite bewegen.\nWenn der Zauber endet und das Ziel noch schwebt, sinkt es langsam zu Boden."
+}

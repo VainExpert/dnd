@@ -1,0 +1,65 @@
+{
+  "name": "Fire Lizard",
+  "size": "Huge",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "huge",
+      "monstrosity",
+      "cr12",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 138,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 25,
+    "dex": 10,
+    "con": 20,
+    "int": 2,
+    "wis": 11,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "12",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Rampage",
+      "text": "When the fire lizard reduces a creature to 0 hit points with a\nmelee attack on its turn, the fire lizard can take a bonus action to move up\nto half its speed and make a bite attack."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The fire lizard makes three attacks: one with its bite and\ntwo with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 16\n(2d8 + 7) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 21\n(4d6 +7) slashing damage."
+    },
+    {
+      "name": "Fire Breath (Recharge 5–6)",
+      "type": "special",
+      "text": "The fire lizard exhales a blast of fire in\na 20-foot cone. Each creature in that area must make a DC 16 Dexterity\nsavings throw, taking 28 (8d6) fire damage on a failed save, or half as\nmuch on a successful one."
+    }
+  ],
+  "source": "creature"
+}

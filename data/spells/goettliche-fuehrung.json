@@ -1,0 +1,18 @@
+{
+  "id": "goettliche-fuehrung",
+  "name": "Göttliche Führung",
+  "level": 0,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Kleriker",
+    "Druide"
+  ],
+  "text": "Du berührst eine willige Kreatur.\nEinmal vor Ende des Zaubers kann das Ziel 1W4 würfeln und den Wurf auf das Ergebnis eines Fertigkeitenwurfs addieren.\nDer W4 kann vor oder nach dem Fertigkeitenwurf geworfen werden. Dann endet der Zauber."
+}

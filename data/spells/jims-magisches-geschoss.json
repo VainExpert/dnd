@@ -1,0 +1,16 @@
+{
+  "id": "jims-magisches-geschoss",
+  "name": "Jims Magisches Geschoss",
+  "level": 1,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "36 m",
+  "components": "V, G, M (1 GM, die als Steuer konsumiert wird)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Magier"
+  ],
+  "text": "Du erschaffst 3 verdrehte, pfeifende Geschosse aus magischer Kraft. Jedes Geschoss kann eine Kreatur deiner Wahl in Reichweite anvisieren, die du sehen kannst.\nMache für jedes Geschoss einen Fernkampf-Zauberangriff.\nBei Treffer: 2W4 Kraftschaden.\nBei Krit: 5W4 statt der üblichen 4W4.\nBei einer natürlichen 1 auf einem der Angriffswürfe drehen alle Geschosse um und treffen dich: 1 Kraftschaden pro Geschoss.\n\nAuf höheren Level gewirkt: +1 Geschoss pro Slot-Level über 1; zusätzlich steigt die Steuer um +1 GM pro Slot-Level über 1 (zusätzlich konsumiert)."
+}

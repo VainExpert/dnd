@@ -1,0 +1,60 @@
+{
+  "name": "Dragoon",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "lawful good",
+  "ac": 15,
+  "hp": {
+    "average": 60,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 14,
+    "int": 12,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {
+    "Athletics": 5,
+    "Acrobatics": 4,
+    "Performance": 2
+  },
+  "languages": [
+    "Common and the languages of the race of the dragoon"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The dragoon makes two attacks with its\nhalberd, or uses its skystrike and attacks once with\nits halberd."
+    },
+    {
+      "name": "Halberd",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 10\nft., one target. Hit: 8 (1d10 + 3) slashing damage."
+    },
+    {
+      "name": "Skystrike (3/Day)",
+      "type": "special",
+      "text": "As the dragoon returns to the\nground after using its Unnatural Athletics, it\nperforms a special weapon attack using the pointed\nend of its halberd against an enemy within 10 ft. of\nthe space it landed. On a hit, the target takes takes\n15 (1d10 + 2d6 + 3) piercing damage and must\nsucceed on a DC 13 Strength saving throw or be\nknocked prone."
+    }
+  ],
+  "source": "creature"
+}

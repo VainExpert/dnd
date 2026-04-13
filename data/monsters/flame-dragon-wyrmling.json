@@ -1,0 +1,62 @@
+{
+  "name": "Flame Dragon Wyrmling",
+  "size": "Medium",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "medium",
+      "dragon",
+      "cr3",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 17,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30,
+    "fly": 60
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 14,
+    "con": 15,
+    "int": 13,
+    "wis": 12,
+    "cha": 16
+  },
+  "skills": {
+    "Deception": 5,
+    "Insight": 3,
+    "Perception": 5,
+    "Persuasion": 5,
+    "Stealth": 4
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Ignan"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10+1) piercing damage plus 3 (1d6) fire damage."
+    },
+    {
+      "name": "Fire Breath (Recharge 5-6)",
+      "type": "special",
+      "text": "The dragon exhales fire in a 10-foot cone. Each creature in that area takes 24 (7d6) fire damage, or half damage with a successful DC 12 Dexterity saving throw."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Nightwalker",
+  "size": "Huge",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "huge",
+      "undead",
+      "cr20",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 14,
+  "hp": {
+    "average": 297,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 22,
+    "dex": 19,
+    "con": 24,
+    "int": 6,
+    "wis": 9,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "-"
+  ],
+  "challenge": {
+    "cr": "20",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Annihilating Aura",
+      "text": "Any creature that starts its turn within 30 feet of the nightwalker must succeed on a DC 21 Constitution saving throw or take 14 (4d6) necrotic damage and grant the nightwalker advantage on attack rolls against it until the start of the creature's next turn. Undead are immune to this aura."
+    },
+    {
+      "name": "Life Eater",
+      "text": "A creature reduced to 0 hit points from damage dealt by the nightwalker dies and can't be revived by any means short of a wish spell."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

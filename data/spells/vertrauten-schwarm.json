@@ -1,0 +1,17 @@
+{
+  "id": "vertrauten-schwarm",
+  "name": "Vertrauten-Schwarm",
+  "level": 2,
+  "school": "Beschwörung",
+  "casting_time": "1 min",
+  "range": "Berührung",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 1 h",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du beschwörst vorübergehend 3 Vertraute (Geistertiere deiner Wahl), wie beim Zauber „Vertrauten finden“. Alle Vertrauten müssen denselben Typ haben (Himmelswesen, Feenwesen oder Unholde; du wählst). Hast du bereits einen Vertrauten (z.B. durch „Vertrauten finden“), beschwörst du 1 weniger.\nDie Vertrauten können telepathisch mit dir kommunizieren und dir Sicht oder Gehör teilen, solange sie innerhalb von 1,6 km sind.\nBerührungszauber kannst du wie üblich durch einen Vertrauten wirken, aber nur durch 1 Vertrauten pro Runde.\n\nAuf höheren Level gewirkt: pro Level +1 zusätzlicher Vertrauter."
+}

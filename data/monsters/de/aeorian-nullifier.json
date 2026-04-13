@@ -1,0 +1,71 @@
+{
+  "name": "Aeorianischer Neutralisator",
+  "size": "Groß",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr12",
+      "explorers-guide-to-wildemount"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 17,
+  "hp": {
+    "average": 180,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 14,
+    "con": 18,
+    "int": 7,
+    "wis": 14,
+    "cha": 18
+  },
+  "skills": {
+    "Perception": 6,
+    "Survival": 6
+  },
+  "languages": [
+    "understands Draconic but can’t speak"
+  ],
+  "challenge": {
+    "cr": "12",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Schreckliches Zähneknirschen",
+      "text": "Die Mäuler des Nullifiers knirschen unkontrolliert, solange er Feinde sehen kann. Jede Kreatur, die ihren Zug in20 feetReichweite des Nullifiers beginnt und ihn hören kann, muss einenDC 16Weisheits-Rettungswurf durchführen. Sofern der Rettungswurf nicht gelingt, würfelt die Kreatur mit einem W8, um zu bestimmen, was sie in diesem Zug tut:\n\n* 1–4: Die Kreatur ist bis zum Ende des Zuges betäubt.\n\n* 5–6: Die Kreatur ist bis zum Ende des Zuges verängstigt und nutzt ihre Bewegung, um sich so weit wie möglich vom Nullifier zu entfernen.\n\n* 7–8: Die Kreatur bewegt sich nicht und nutzt ihre Aktion, um einen Nahkampfangriff gegen eine zufällige Kreatur (außer sich selbst) auszuführen, sofern sich eine in Reichweite befindet. Ansonsten tut sie nichts."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Nullifiers ist Charisma (ZauberrettungswurfDC 16). Er kann die folgenden Zauber von Natur aus wirken, ohne dass dafür materielle Komponenten erforderlich sind:\n\n* Beliebig oft: Counterspell (siehe „Reaktionen“ weiter unten), Magie erkennen, Magie bannen, Unsichtbarkeit sehen\n\n* 1/Tag: Antimagiefeld"
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Nullifier hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Nullifier führt drei Angriffe aus: einen mit seinen Bissen und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Bites",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf Treffer, Reichweite5 ft: , eine Kreatur. Treffer: 17 (2d12 + 4) Durchdringungsschaden plus 11 (2d10) Kraftschaden."
+    },
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 zum Treffen, Reichweite10 ft: , ein Ziel. Treffer: 11 (2d6 + 4) Schnittschaden plus 11 (2d10) Kraftschaden; das Ziel wird festgehalten (Befreiung:DC 16 ), sofern es sich um eine Kreatur handelt. Der Nullifier verfügt über zwei Klauen, von denen jede eine Kreatur festhalten kann."
+    }
+  ],
+  "source": "creature"
+}

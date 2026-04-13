@@ -1,0 +1,19 @@
+{
+  "id": "nebelwolke",
+  "name": "Nebelwolke",
+  "level": 1,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "36 m (6 m Sphäre)",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 1 h",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Waldläufer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du erschaffst eine Sphäre aus Nebel mit 6 m Radius zentriert auf einen Ort in Reichweite.\nDie Sphäre breitet sich auch um Ecken aus und ihr Bereich ist komplett verschleiert.\nSie bleibt für die Wirkungsdauer bestehen oder bis ein mäßiger oder stärkerer Wind (mind. 16 km/h) den Nebel auflöst.\n\nAuf höheren Level gewirkt: pro Level steigt der Radius um 6 m"
+}

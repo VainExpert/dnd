@@ -1,0 +1,45 @@
+{
+  "id": "schloss",
+  "type": "item",
+  "name": "Schloss",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 10,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein Schloss mitsamt Schlüssel. Ohne Schlüssel kann es über Diebeswerkzeug geöffnet werden mit einem erfolgreichen Fingerfertigkeit-Wurf (SG variabel).",
+  "tags": [
+    "abenteuer",
+    "schmied",
+    "abwehr",
+    "nützlich",
+    "fesseln"
+  ]
+}

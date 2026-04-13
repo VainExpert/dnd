@@ -1,0 +1,46 @@
+{
+  "id": "flasche-des-endlosen-kaffees",
+  "type": "item",
+  "name": "Flasche des endlosen Kaffees",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 1,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 80,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese gut isolierte Metallflasche beinhaltet immer leckeren, komfortabel warmen Kaffee. Die Kappe ist mit einer kleinen Keete an der Flasche befestigt. In die Flasche kann keine andere Flüssigkeit gefüllt werden. Jedes mal, wenn Kaffee daraus gegossen wird, muss ein W20 gewürfelt werden. Bei einer 1 kommt für 1 h keine Kaffee aus der Kanne. Nicht aufgefangener Kaffee verschwindet nach kurzer Zeit außerhalb der Flasche.",
+  "tags": [
+    "magisch",
+    "kaffee",
+    "befehlswort",
+    "nützlich",
+    "flüssigkeit",
+    "aktion"
+  ]
+}

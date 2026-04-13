@@ -1,0 +1,64 @@
+{
+  "name": "Gilded Sea Serpent",
+  "size": "Medium",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "medium",
+      "dragon",
+      "cr4",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 14,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 30
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 14,
+    "int": 5,
+    "wis": 11,
+    "cha": 7
+  },
+  "skills": {
+    "Athletics": 5,
+    "Perception": 2
+  },
+  "languages": [
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The gilded serpent can breathe air and water."
+    },
+    {
+      "name": "Extract Poison",
+      "text": "The poison of the gilded serpent can be milked or harvested as well,\nand then made into a powerful narcotic drug called golden bliss:\n* ***Golden Bliss (Inhaled).*** A creature subjected to this poison must\nsucceed on a DC 13 Constitution saving throw or be poisoned for 1\nminute. While poisoned, the target is stunned and has advantage on\nIntelligence, Wisdom, and Charisma saving throws against spells\nand magical effects. The poisoned target can repeat the saving\nthrow at the end of each of its turns, ending the effect on a success."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 14\n(2d10 + 3) piercing damage and if the target is a creature, it must succeed\nat a DC 14 Constitution saving throw. On a failed saving throw, the target\nis poisoned for 1 minute. While poisoned, the target is also stunned. A\npoisoned creature can repeat the saving throw at the end of each of its\nturns, ending the effect on a success."
+    },
+    {
+      "name": "Constrict",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit:\n12 (2d8 + 3) bludgeoning damage and the target is grappled if it is Mediumsized\nor smaller (escape DC 13). At the beginning of each of the serpent’s\nturn, the grappled creature takes 12 (2d8 + 3) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

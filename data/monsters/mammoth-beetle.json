@@ -1,0 +1,70 @@
+{
+  "name": "Mammoth Beetle",
+  "size": "Huge",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "huge",
+      "beast",
+      "cr5",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 20,
+  "hp": {
+    "average": 116,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 20
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 7,
+    "con": 19,
+    "int": 2,
+    "wis": 10,
+    "cha": 2
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Soft Underbelly",
+      "text": "The beetle’s has AC 12 against\nattacks made from directly beneath it."
+    },
+    {
+      "name": "Acidic Blood",
+      "text": "A creature that damages the beetle\nwith a melee attack while within 5 feet of it takes 5\n(1d10) acid damage."
+    },
+    {
+      "name": "Hulking Wings",
+      "text": "The beetle has a flight speed of 20\nft. via a set of massive wings. This benefit works\nonly in short bursts; the beetle falls at the end of its\nturn if it is in the air and nothing else is holding it\naloft. Any creature under the beetle when it lands\nmust make a DC 13 Dexterity saving throw or take\n7 (2d6) bludgeoning damage for every 10 feet the\nbeetle fell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The beetle makes three attacks: two\nwith its stomp and one with its mandibles."
+    },
+    {
+      "name": "Stomp",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5ft.,\none target. Hit: 9 (1d10 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Mandibles",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach\n5ft., one target not underneath the beetle. Hit: 13\n(2d8 + 4) piercing damage and the target is\ngrappled (escape DC 15) if it is a Large or smaller\ncreature and the beetle doesn’t already have a creature\ngrappled."
+    }
+  ],
+  "source": "creature"
+}

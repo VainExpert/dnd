@@ -1,0 +1,82 @@
+{
+  "name": "Primeval Strix",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr6",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 14,
+  "hp": {
+    "average": 105,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 90
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 18,
+    "con": 15,
+    "int": 18,
+    "wis": 14,
+    "cha": 20
+  },
+  "skills": {
+    "Perception": 5,
+    "History": 7
+  },
+  "languages": [
+    "Understands Common and Abyssal but can't speak"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Horrifying Visage",
+      "text": "When a creature that can see the\nstrix's eyes starts its turn within 30 feet of the strix, the\nstrix can force it to make a DC 15 Wisdom saving\nthrow if the strix isn’t incapacitated and can see the\ncreature. If the creature fails the saving throw, it\nbecomes frightened. The frightened creature can\nrepeat the saving throw at the end of its next turn,\nending the effect on a success and becoming immune\nto the strix's horrifying visage for 24 hours.\n\nUnless surprised, a creature can avert its eyes to avoid\nthe saving throw at the start of its turn. If the creature\ndoes so, it can't see the strix until the start of its next\nturn, when it can avert its eyes again. If a creature looks\nat the strix in the meantime, it must immediately make\nthe save."
+    },
+    {
+      "name": "Flyby",
+      "text": "The strix doesn't provoke attacks of opportunity\nwhen it flies out of an enemy's reach."
+    },
+    {
+      "name": "Keen Sight",
+      "text": "The strix has advantage on Wisdom\n(Perception) checks that rely on sight."
+    },
+    {
+      "name": "Omen of Ill Fortune",
+      "text": "Gazing upon a strix is considered\nto be a terrible omen that is sure to bring misfortune\nand suffering. A creature that sees the strix is plagued\nwith bad luck. For the next hour, when that creature\nmakes a skill check or an attack roll a d4 and subtract\nthe result from the total."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The strix makes two attacks: one with its\nbeak and one with its talons."
+    },
+    {
+      "name": "Beak",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one\ntarget. Hit: 8 (1d8 + 4) piercing damage plus 4 (1d8)\nnecrotic damage."
+    },
+    {
+      "name": "Talons",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one\ntarget. Hit: 13 (2d8 + 4) slashing damage plus 4 (1d8)\nnecrotic damage."
+    },
+    {
+      "name": "Thunderous Screech (Recharge 5-6)",
+      "type": "special",
+      "text": "The strix unleashes\na shrill screech in a 30 ft. cone. Each creature must\nmake a DC 15 Constitution saving throw, taking 28\n(8d6) thunder damage and becoming deafened for 1\nminute on a failed save, or half as much damage and\nnot deafened on a successful one."
+    }
+  ],
+  "source": "creature"
+}

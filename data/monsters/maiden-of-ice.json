@@ -1,0 +1,80 @@
+{
+  "name": "Maiden of Ice",
+  "size": "Huge",
+  "type": {
+    "type": "giant",
+    "tags": [
+      "huge",
+      "giant",
+      "cr9",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "neutral good",
+  "ac": 16,
+  "hp": {
+    "average": 175,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 21,
+    "dex": 16,
+    "con": 22,
+    "int": 15,
+    "wis": 11,
+    "cha": 10
+  },
+  "skills": {
+    "Athletics": 9,
+    "Insight +4 Intimidation": 4,
+    "Perception": 4
+  },
+  "languages": [
+    "Common",
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Aura of Frost",
+      "text": "The ground in a 15 foot radius circle\naround the maiden becomes coated in ice. A creature\nthat steps on this ice begins to slide. They travel until\nthey reach the end of the ice, collide with a solid\nobject, or have gone 30 feet. The creature loses\nmovement equal to the distance traveled while sliding.\nA creature may choose to move at half speed on the\nice to avoid sliding. The ice melts after being outside of\nthe aura for 1 minute."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The maiden makes two scythe attacks or\ntwo spear attacks."
+    },
+    {
+      "name": "Frozen Scythe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach\n10 ft., one target. Hit: 10 (1d10 + 5) slashing damage\nplus 11 (2d10) cold damage."
+    },
+    {
+      "name": "Frozen Spear",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +9 to\nhit, reach 10 ft. or range 30/90 ft., one target. Hit: 8\n(1d6 + 5) piercing damage plus 11 (2d10) cold\ndamage, or 9 (1d8 + 5) piercing damage plus 11\n(2d10) cold damage if used with two hands to make a\nmelee attack."
+    },
+    {
+      "name": "Harvest",
+      "type": "special",
+      "text": "The maiden swings her scythe in a powerful\nsweeping motion. All creatures within 15 feet of the\nmaiden must succeed on a DC 16 Dexterity saving\nthrow or take 16 (3d10) slashing damage and 16\n(3d10) cold damage and be knocked back 15 feet. If\nthe creature is knocked back onto ice, they slide for 30\nfeet, until they collide with a solid object, or until they\nreach the end of the ice."
+    },
+    {
+      "name": "Blades of Bitter Cold (Recharge 5-6)",
+      "type": "special",
+      "text": "The maiden makes\ntwo powerful vertical sweeps with her scythe,\nlaunching arcs of frozen energy in two 5 foot wide,\n120-foot long lines. A creature caught in one of these\nareas must make a DC 16 Dexterity saving throw,\ntaking 27 (5d10) cold damage and gaining one level of\nexhaustion on a failed save, or half damage and no\nexhaustion on a successful one."
+    },
+    {
+      "name": "Cold Snap (1/Day)",
+      "type": "special",
+      "text": "The maiden slams the head of her\nscythe into the ground and attempts to freeze\neverything within 60 feet. Creatures caught in this area\nmust make on a DC 16 Constitution saving throw or\ntake 33 (6d10) cold damage and be paralyzed for 1\nminute as they are frozen on a failed save, or half as\nmuch damage and not paralyzed on a successful one. A\nparalyzed creature can repeat the saving throw at the\nend of each of its turns, ending the paralyzed condition\non itself on a success. Any exposed liquids in the area\nare frozen and all fire is snuffed out as well."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,76 @@
+{
+  "name": "Korsoth Vastikan",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr6",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 16,
+  "hp": {
+    "average": 78,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 18,
+    "con": 14,
+    "int": 11,
+    "wis": 13,
+    "cha": 12
+  },
+  "skills": {
+    "Acrobatics": 7,
+    "Deception": 4,
+    "Investigation": 3,
+    "Perception": 4,
+    "Stealth": 7,
+    "Survival": 4
+  },
+  "languages": [
+    "Deep Speech",
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Everchanging Changers",
+      "text": "The Court of All Flesh are\nbeings of pure chaos. Because their minds are pure\ndisorder, they cannot be driven mad or charmed\nand any attempts to magically compel their behavior fails."
+    },
+    {
+      "name": "Formless Shape",
+      "text": "Vastikan is immune to any\nspell or effect that would alter his form."
+    },
+    {
+      "name": "Formkiller",
+      "text": "If Vastikan hits a target with three\nor more arrows in one round, the target must make\na DC 12 Constitution saving throw or lose its\nnative form. Roll on the Reincarnation table to\ndetermine the target’s new form. The target\nreverts to its original form after 1 hour.\nA target that succeeds on its saving throw becomes\nimmune to Formkiller for 24 hours."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Vastikan makes four\nlongbow attacks."
+    },
+    {
+      "name": "Longbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +7 to hit,\nrange 150/600 ft., one target. Hit: 8 (1d8 + 4)\npiercing damage."
+    },
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to\nhit, reach 5 ft., one target. Hit: 8 (1d8 + 4)\npiercing damage."
+    }
+  ],
+  "source": "creature"
+}

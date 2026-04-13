@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-pfeilfangender-schild",
+  "type": "item",
+  "name": "Pfeilfangender Schild",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "ammunition",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "Schild",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "off-hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diesen Schild trägst, erhältst du einen Bonus von +2 gegen Fernkampfangriffe auf deine RK Dieser Bonus des Schildes wirkt zusätzlich zu seinem normalen Bonus auf die RK Wenn ein Angreifer einen Fernkampfangriff gegen ein Ziel im Abstand von bis zu 1,5 Metern von dir ausführt, kannst du außerdem als Reaktion selbst das Ziel werden.",
+  "tags": []
+}

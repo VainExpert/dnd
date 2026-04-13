@@ -1,0 +1,59 @@
+{
+  "name": "Cinder Ghoul",
+  "size": "Large",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "large",
+      "undead",
+      "cr5",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 18,
+  "hp": {
+    "average": 90,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 20,
+    "con": 15,
+    "int": 4,
+    "wis": 12,
+    "cha": 19
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Gaseous Form",
+      "text": "While in this form, the cinder ghoul can’t take any\nactions, speak, or manipulate objects. It is weightless, has a flying speed\nof 40 feet, can hover, and can enter a hostile creature’s space and stop\nthere. In addition, if air can pass through a space, the mist can do so\nwithout squeezing. It cannot pass through water. It has advantage on\nStrength, Dexterity, and Constitution saving throws, and it is immune to\nall nonmagical damage."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The cinder ghoul has advantage on saving throws\nagainst spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14\n(2d8 + 5) bludgeoning damage plus 7 (2d6) fire damage."
+    },
+    {
+      "name": "Smoke Inhalation",
+      "type": "special",
+      "text": "One creature that isn’t a construct or undead and\nis in the cinder ghoul’s space must make a DC 15 Constitution saving\nthrow. On a failed save, the target takes 10 (3d6) fire damage and its hit\npoint maximum is reduced by an amount equal to the fire damage taken.\nThe target dies if this reduces its hit point maximum to 0. This reduction\nof the target’s hit point maximum lasts until the target finishes a long rest."
+    }
+  ],
+  "source": "creature"
+}

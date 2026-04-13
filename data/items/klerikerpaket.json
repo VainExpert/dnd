@@ -1,0 +1,43 @@
+{
+  "id": "klerikerpaket",
+  "type": "item",
+  "name": "Klerikerpaket",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 14.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 33,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Das Paket enthält: Rucksack Decke Heiliges Wasser Lampe 7 Rationen Robe Zunderkästchen Wasserschlauch 2 Blöche Weihrauch Almosenkiste",
+  "tags": [
+    "abenteuer",
+    "paket",
+    "start"
+  ]
+}

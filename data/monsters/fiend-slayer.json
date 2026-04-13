@@ -1,0 +1,69 @@
+{
+  "name": "Fiend Slayer",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 18,
+  "hp": {
+    "average": 26,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 8,
+    "con": 12,
+    "int": 9,
+    "wis": 12,
+    "cha": 14
+  },
+  "skills": {
+    "Athletics": 5,
+    "Insight": 3,
+    "Intimidation": 4
+  },
+  "languages": [
+    "Any two languages"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Divine Smite",
+      "text": "When the slayer hits with a melee\nweapon attack, it can expend a spell slot to deal an\naddition 9 (2d8) radiant damage, in addition to the\nweapon's damage."
+    },
+    {
+      "name": "Dueling Fighting Style",
+      "text": "The slayer gains a +2 bonus\nto damage rolls while wielding a melee weapon in\none hand and no other weapons (included in the\nattack)."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The slayer is a 3th-level spellcaster. Its\nspellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). The slayer has the\nfollowing paladin spells prepared:\n\n* 1st level (3 slots): <i>bane, cure wounds, searing smite</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Flail",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft.,\none target. Hit: 9 (1d8 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Lay on Hands (1/Day)",
+      "type": "special",
+      "text": "The slayer touches a creature\nand restores 20 hit points to it."
+    }
+  ],
+  "source": "creature"
+}

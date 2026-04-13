@@ -1,0 +1,63 @@
+{
+  "name": "Hive Queen",
+  "size": "Small",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "small",
+      "beast",
+      "cr3",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 49,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 18,
+    "con": 13,
+    "int": 6,
+    "wis": 13,
+    "cha": 13
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Hivemind",
+      "text": "All wasps within 10 miles of their queen\nare in constant communication via a telepathic\nbond."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Sting",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5ft.,\none target. Hit: 6 (1d4 + 4) piercing damage plus 2\npoison damage for each giant wasp within 120 feet\nthat isn’t incapacitated, and the target must\nsucceed on a DC 13 Constitution saving throw or\nbecome poisoned for 1 minute. The target can\nrepeat this saving throw at the end of their turn,\nending the effect on a success."
+    },
+    {
+      "name": "Command the Hive (Recharge 5-6)",
+      "type": "special",
+      "text": "The queen gives\nout a command to all wasps within 120 feet. They\nmay use their reaction to immediately move up to\nhalf of their movement speed and attack a target if\nable."
+    },
+    {
+      "name": "Summon the Swarm (1/Day)",
+      "type": "special",
+      "text": "The queen summons\nfour giant wasps in unoccupied spaces within 60\nfeet. These wasps last for 1 day, until the wasps die,\nor until the queen dismisses them."
+    }
+  ],
+  "source": "creature"
+}

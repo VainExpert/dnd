@@ -1,0 +1,46 @@
+{
+  "name": "Duergar Spore Servant",
+  "size": "Medium",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "medium",
+      "plant",
+      "cr1/2",
+      "out-of-the-abyss"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 16,
+  "hp": {
+    "average": 26,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 11,
+    "con": 14,
+    "int": 2,
+    "wis": 6,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "-"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "War Pick",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

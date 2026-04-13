@@ -1,0 +1,66 @@
+{
+  "name": "Storm Magistrate",
+  "size": "Large",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "large",
+      "elemental",
+      "cr9",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 157,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 21,
+    "int": 14,
+    "wis": 20,
+    "cha": 16
+  },
+  "skills": {},
+  "languages": [
+    "Auran",
+    "Common",
+    "Ignan"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The Magistrate is a 13th-level\nspellcaster. Its spellcasting ability is Wisdom\n(spell save DC 17, +9 to hit with spell attacks). It\ncan innately cast the following spells, requiring\nno components:\n\n* At will: <i>enhance ability</i>"
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The Magistrate has the following\ncleric spells prepared:\n\n* Cantrips (at will): <i>light, guidance, sacred flame, spare the dying</i>\n\n* 1st level (4 slots): <i>bane, bless, healing word, shield of faith</i>\n\n* 2nd level (3 slots): <i>aid, lesser restoration, magic weapon, prayer of healing, hold person</i>\n\n* 3rd level (3 slots): <i>beacon of hope, magic circle, dispel magic, revivify, spirit guardians, mass healing word</i>\n\n* 4th level (3 slots): <i>banishment, freedom of movement, guardian of faith, stoneskin</i>\n\n* 5th level (1 slot): <i>flame strike, mass cure wounds, hold monster</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The Magistrate makes two attacks\nwith its morningstar."
+    },
+    {
+      "name": "Morningstar",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach\n10 ft., one target. Hit: 12 (2d8 + 3) piercing damage."
+    },
+    {
+      "name": "Storm Strike (Recharge 6)",
+      "type": "special",
+      "text": "Lightning arcs from the\nMagistrate toward up to three targets it can see\nwithin 120 feet. Three bolts then leap from those\ntargets to as many as three other targets, each of\nwhich must be within 10 feet of the first target. A\ncreature can be targeted by only one bolt.\nA target must make a DC 17 Dexterity saving\nthrow. A creature takes 14 (4d6) lightning damage\nand 14 (4d6) radiant damage on a failed save, or\nhalf as much damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

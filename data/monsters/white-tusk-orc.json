@@ -1,0 +1,63 @@
+{
+  "name": "White Tusk Orc",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "strongholds-and-followers",
+      "orc"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 14,
+  "hp": {
+    "average": 30,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 16,
+    "int": 9,
+    "wis": 11,
+    "cha": 10
+  },
+  "skills": {
+    "Intimidation": 2
+  },
+  "languages": [
+    "Orc"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Aggressive",
+      "text": "As a bonus action, the orc can\nmove up to its speed toward a hostile creature it\ncan see."
+    },
+    {
+      "name": "Minion: Savage Horde",
+      "text": "After moving at least 20\nfeet in a straight line toward a creature, the next\nattack the orc makes against that creature scores\na critical hit on a roll of 18–20."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Battleaxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit,\nreach 5 ft., one target. Hit: 12 (2d8 + 3) slashing\ndamage, or 14 (2d10 + 3) slashing damage if used\nwith two hands."
+    },
+    {
+      "name": "Javelin",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +5 to\nhit, reach 5 ft. or range 30/120 ft., one target. Hit:\n10 (2d6 + 3) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

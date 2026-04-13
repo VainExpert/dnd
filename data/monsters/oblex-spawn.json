@@ -1,0 +1,49 @@
+{
+  "name": "Oblex Spawn",
+  "size": "Tiny",
+  "type": {
+    "type": "ooze",
+    "tags": [
+      "tiny",
+      "ooze",
+      "cr1/4",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 13,
+  "hp": {
+    "average": 18,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 16,
+    "con": 15,
+    "int": 14,
+    "wis": 11,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "-"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amorphous",
+      "text": "The oblex can move through a space as narrow as 1 inch wide without squeezing."
+    },
+    {
+      "name": "Aversion to Fire",
+      "text": "If the oblex takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

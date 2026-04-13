@@ -1,0 +1,51 @@
+{
+  "id": "leichte-armbrust",
+  "type": "item",
+  "name": "Leichte Armbrust",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "ammunition",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": "hand",
+  "stackable": true,
+  "weight": {
+    "value": 2.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 25,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "",
+  "tags": [
+    "abenteuer",
+    "waffe",
+    "kampf",
+    "stich",
+    "einfach",
+    "fernkampf",
+    "reichweite",
+    "laden",
+    "2hände",
+    "munition",
+    "langsam"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "name": "Aeshma (Wutdämon)",
+  "size": "Groß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr10",
+      "tome-of-horrors",
+      "demon"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 19,
+  "hp": {
+    "average": 216,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 22,
+    "dex": 18,
+    "con": 26,
+    "int": 14,
+    "wis": 17,
+    "cha": 17
+  },
+  "skills": {
+    "Intimidation": 7,
+    "Perception": 11,
+    "Survival": 7
+  },
+  "languages": [
+    "Abyssal",
+    "Celestial",
+    "Draconic",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die Zauberfertigkeit des Dämons ist Charisma\n(ZauberrettungswurfDC 15, +7 auf Treffer bei Zauberangriffen). Der Dämon kann von Natur aus\ndie folgenden Zauber wirken, ohne dass er dafür materielle Komponenten benötigt:\n\n* Beliebig oft: Verwüstung, Böses und Gutes erkennen, Magie bannen\n\n* Je 3/Tag: Fluch auferlegen, Spinnennetz"
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Aeshma-Dämon hat einen Vorteil bei Rettungswürfen\ngegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Waffenangriffe des Aeshma-Dämons sind magischer Natur."
+    },
+    {
+      "name": "Leichtsinnig",
+      "text": "Zu Beginn seines Zuges kann der Aeshma-Dämon\nbei allen Nahkampf-Angriffswürfen, die er in diesem Zug ausführt, einen Vorteil erhalten,\nwährend Angriffe gegen ihn bis zum Beginn seines nächsten Zuges einen Vorteil haben."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Aeshma-Dämon führt zwei Nahkampfangriffe aus."
+    },
+    {
+      "name": "Speer",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfwaffenangriff: +10 auf den Trefferwurf, Reichweite 3 m. oder\nReichweite20/60  Fuß, ein Ziel. Treffer: 19 (3d8 + 6) Durchdringungsschaden."
+    },
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +10 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 15 (2d8 + 6) Schnittschaden."
+    },
+    {
+      "name": "Dämon beschwören (1/Tag)",
+      "type": "special",
+      "text": "Der Dämon entscheidet, was er beschwören möchte,\nund unternimmt einen magischen Beschwörungsversuch. Ein Aeshma hat eine Chance von 30 %,\nVrocks,1d2Hezrous oder einen1d3 Glabrezu zu beschwören.\nEin beschworener Dämon erscheint auf einem freien Feld in60 feeteinem Umkreis von  um\nseinen Beschwörer, handelt als Verbündeter seines Beschwörers und kann keine anderen\nDämonen beschwören. Er bleibt 1 Minute lang bestehen, bis er oder sein Beschwörer stirbt oder bis sein\nBeschwörer ihn als Aktion entlässt."
+    }
+  ],
+  "source": "creature"
+}

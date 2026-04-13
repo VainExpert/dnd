@@ -1,0 +1,61 @@
+{
+  "name": "Schwarzbär",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "medium",
+      "beast",
+      "cr1/2",
+      "monster-manual"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 11,
+  "hp": {
+    "average": 19,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 10,
+    "con": 14,
+    "int": 2,
+    "wis": 12,
+    "cha": 7
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Feiner Geruchssinn",
+      "text": "Der Bär hat einen Vorteil bei Weisheitsproben (Wahrnehmung), die auf dem Geruchssinn beruhen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Bär greift zweimal an: einmal mit seinem Biss und einmal mit seinen Krallen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +3 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 5 (1d6 + 2) Durchdringungsschaden."
+    },
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +3 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 7 (2d4 + 2) Schnittschaden."
+    }
+  ],
+  "source": "creature"
+}

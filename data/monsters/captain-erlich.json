@@ -1,0 +1,71 @@
+{
+  "name": "Captain Erlich",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "homebrew",
+      "human"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 20,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 14,
+    "int": 11,
+    "wis": 11,
+    "cha": 15
+  },
+  "skills": {},
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Special Equipment",
+      "text": "Captain Erlich has two <i>potions of healing</i>."
+    },
+    {
+      "name": "Brave",
+      "text": "Captain Erlich has advantage on saving throws against being frightened."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Captain Erlich makes two melee attacks."
+    },
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage."
+    },
+    {
+      "name": "Poisoned Heavy Crossbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage and the target must succeed on a DC 15 saving throw or become poisoned for 1d4 hours."
+    },
+    {
+      "name": "Battle Cry (1/Day)",
+      "type": "special",
+      "text": "Each creature of Captain Erlich’s choice that is within 30 feet of it, can hear it, and not already affected by Battle Cry gain advantage on attack rolls until the start of Captain Erlich’s next turn. Captain Erlich can then make one attack as a bonus action."
+    }
+  ],
+  "source": "creature"
+}

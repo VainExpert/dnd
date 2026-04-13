@@ -1,0 +1,69 @@
+{
+  "name": "Heir of the Forest",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 14,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 16,
+    "con": 14,
+    "int": 12,
+    "wis": 16,
+    "cha": 12
+  },
+  "skills": {
+    "Animal Handling": 5,
+    "Nature": 4,
+    "Perception": 6,
+    "Survival": 6
+  },
+  "languages": [
+    "Any two languages and Druidic"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Land's Stride",
+      "text": "Moving through nonmagical difficult\nterrain does not cost the heir extra movement."
+    },
+    {
+      "name": "Natural Recovery (1/Day)",
+      "text": "When the heir finishes a\nshort rest, it can regain up to 3 total expended spell\nslots."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The heir is a 6th-level spellcaster. Its\nspellcasting ability is Wisdom (spell save DC 14, +6\nto hit with spell attacks). The heir has the following\ndruid spells prepared:\n\n* Cantrips (at will): <i>create bonfire, druidcraft, shillelagh, thorn whip</i>\n\n* 1st level (4 slots): <i>animal friendship, entangle, goodberry</i>\n\n* 2nd level (3 slots): <i>animal messenger, barkskin, beast sense, locate animals or plants, spider climb</i>\n\n* 3rd level (3 slots): <i>call lightning, plant growth, wind wall</i>"
+    },
+    {
+      "name": "Wild Shape - Dire Wolf (2/Day)",
+      "text": "As a bonus action,\nthe druid transforms into a dire wolf for up to three\nhours. When the wolf is reduced to 0 hit points, the\ndruid reverts to its normal form, with any excess\ndamage carrying over to the druid's hit points."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Quarterstaff",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach\n5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning\ndamage or 5 (1d8 +1) bludgeoning damage if used\nwith two hands."
+    }
+  ],
+  "source": "creature"
+}

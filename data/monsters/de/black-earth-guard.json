@@ -1,0 +1,55 @@
+{
+  "name": "Schwarzerde-Wächter",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "elemental-evil",
+      "human"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 18,
+  "hp": {
+    "average": 39,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 11,
+    "con": 14,
+    "int": 10,
+    "wis": 10,
+    "cha": 9
+  },
+  "skills": {
+    "Intimidation": 1,
+    "Perception": 2
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Wächter führt zwei Nahkampfangriffe aus."
+    },
+    {
+      "name": "Morningstar",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 7 (1d8 + 3) Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

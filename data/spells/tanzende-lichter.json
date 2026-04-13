@@ -1,0 +1,19 @@
+{
+  "id": "tanzende-lichter",
+  "name": "Tanzende Lichter",
+  "level": 0,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "36 m",
+  "components": "V, G, M (ein bisschen Phosphor oder Wychholz, oder ein Glühwürmchen)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du erschaffst bis zu 4 Lichter als Fackeln, Laternen oder Leuchtkugeln in Fackelgröße erscheinen in Reichweite und sie Schweben für die Wirkungsdauer in der Luft. Du kannst si auch zu einer humanoiden Gestalt mittlere Größe kombinieren.\nJedes Licht strahlt 3 m gedimmtes Licht aus.\nAls Bonus Aktion kannst du die Lichter bis zu 18 m an einen neuen Ort bewegen. Die Lichter müssen sich zueinander in einem Abstand von bis zu 6 m befinden.\nSie erlöschen außerhalb der Reichweite des Zaubers."
+}

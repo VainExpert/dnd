@@ -1,0 +1,75 @@
+{
+  "name": "Common Time Elemental",
+  "size": "Medium",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr7",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 17,
+  "hp": {
+    "average": 97,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 20,
+    "con": 16,
+    "int": 14,
+    "wis": 14,
+    "cha": 11
+  },
+  "skills": {},
+  "languages": [
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Cell Death",
+      "text": "Damage dealt by the elemental can only be healed\nmagically. In addition, a creature that is slain by a time elemental can only\nbe restored to life by a <i>true resurrection</i> or <i>wish</i> spell."
+    },
+    {
+      "name": "Foresight",
+      "text": "A time elemental can see a few seconds into the future. This\nability prevents it from being surprised."
+    },
+    {
+      "name": "Immunity to Temporal Magic",
+      "text": "Time elementals are immune to all\ntime-related spells and effects that are not cast by other time elementals."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The time elemental makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14\n(2d8 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Multi-Manifestation (Recharge 5–6)",
+      "type": "special",
+      "text": "The time elemental summons 1d4\nduplicate manifestations of itself from alternate dimensions. Each of these\nmanifestations have the same statistics of the time elemental but can only\nuse melee attacks. Each manifestation can move and attack immediately\nafter it is summoned. Attacks that deal damage to one manifestation deal\nthe same damage to the elemental and the other manifestations.\nThe elemental can have no more than four manifestations under\nits control at any time. The manifestations disappear at the start of the\nelemental’s next turn."
+    },
+    {
+      "name": "Time Jaunt",
+      "type": "special",
+      "text": "A time elemental can slip through the time stream and\nappear anywhere on the same plane of existence as if by teleport. This\nability transports the time elemental and up to four other creatures of the\nelemental’s choice that are within 30 feet of it. Unwilling creatures must\nsucceed on a DC 15 Wisdom saving throw to avoid being carried away."
+    }
+  ],
+  "source": "creature"
+}

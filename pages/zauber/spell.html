@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Zauber</title>
+  <link rel="stylesheet" href="../../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title" id="title">Zauber</div>
+      <div class="subtitle"><a href="./spells.html">← Zurück zu allen Zaubern</a> • <a href="../../index.html">Startseite</a></div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="content" style="max-width:900px;">
+      <div id="view"></div>
+    </div>
+  </main>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany, normalizeSpell } from "../../lib.js";
+
+    const view = document.getElementById("view");
+    const titleEl = document.getElementById("title");
+
+    const params = new URLSearchParams(location.search);
+    const id = params.get("id");
+
+    if (!id) {
+      view.innerHTML = "<p>Fehlende Zauber-ID.</p>";
+      throw new Error("Fehlende Zauber-ID");
+    }
+
+    const files = await loadIndex("../../data/spells/index.json");
+    const spells = (await loadMany("../../data/spells", files)).map(normalizeSpell);
+
+    const spell =
+      spells.find(s => (s.id || "").toLowerCase() === id.toLowerCase()) ||
+      spells.find(s => (s.name || "").toLowerCase() === id.toLowerCase());
+
+    if (!spell) {
+      view.innerHTML = `<p>Zauber nicht gefunden: <code>${escapeHtml(id)}</code></p>`;
+      throw new Error("Zauber nicht gefunden");
+    }
+
+    titleEl.textContent = spell.name || "Zauber";
+
+    const level = Number(spell.level ?? 0);
+    const levelLabel = level === 0 ? "Zaubertrick" : `Level ${level}`;
+    const tags = [
+      spell.school || null,
+      spell.ritual ? "Ritual" : null,
+      spell.concentration ? "Konzentration" : null,
+    ].filter(Boolean).join(" • ");
+
+    const effectHtml = spell.html
+      ? `<div class="mini-box-text">${spell.html}</div>`
+      : (spell.text ? `<div class="mini-box-text">${escapeHtml(spell.text).replaceAll("\n","<br/>")}</div>` : "");
+
+    view.innerHTML = `
+      <h1>${escapeHtml(spell.name)}</h1>
+      <p class="muted">${escapeHtml(levelLabel)}${tags ? " • " + escapeHtml(tags) : ""}</p>
+
+      <div class="mini-box">
+        <div class="mini-box-title">Werte</div>
+        <div class="mini-box-text">
+          ${(spell.casting_time || spell.time) ? `<div><b>Wirkzeit:</b> ${escapeHtml(spell.casting_time || spell.time)}</div>` : ""}
+          ${spell.range ? `<div><b>Reichweite:</b> ${escapeHtml(spell.range)}</div>` : ""}
+          ${spell.components ? `<div><b>Komponenten:</b> ${escapeHtml(spell.components)}</div>` : ""}
+          ${spell.duration ? `<div><b>Dauer:</b> ${escapeHtml(spell.duration)}</div>` : ""}
+        </div>
+      </div>
+
+      ${effectHtml ? `<div class="mini-box" style="margin-top:12px;">
+        <div class="mini-box-title">Effekt</div>
+        ${effectHtml}
+      </div>` : ""}
+
+      ${(spell.classes && spell.classes.length) ? `<p class="muted" style="margin-top:12px;">
+        <b>Klassen:</b> ${escapeHtml(spell.classes.join(", "))}
+      </p>` : ""}
+    `;
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "id": "lederruestung",
+  "type": "item",
+  "name": "Lederrüstung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 10,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": {
+    "base": 11,
+    "dex_bonus": true,
+    "stealth_disadvantage": false,
+    "type": "leicht"
+  },
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Rüstung aus gegerbtem Leder.",
+  "tags": [
+    "abenteuer",
+    "rüstung",
+    "abwehr",
+    "leicht"
+  ]
+}

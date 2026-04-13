@@ -1,0 +1,47 @@
+{
+  "id": "federmarke-peitsche",
+  "type": "item",
+  "name": "Federmarke Peitsche",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 800,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieses Objekt sieht aus wie eine Feder. Mit einer Aktion kannst die Feder bis zu 3 m weit werfen. Die Feder verschwindet und eine schwebende Peitsche erscheint an der Stelle. Mit einer Bonus Aktion kannst du durch die Peitsche einen Nahkampfangriff machen in einem Abstnad von bi s u 3 m von der Peitsche. Der Angriffsbonus ist +9 und der Schaden bei Treffer ist 1W6+5 Kraftschaden. Als Bonus Aktion kann die Peitsche auch bis zu 6 m bewegt werden und danach der Angirff ausgeführt werden. Die Peitsche verschwindet nach 1 h, wenn du sie mit einer Aktion verschwinden lässt oder wenn du stirst oder kampfunfähig wirst.",
+  "tags": [
+    "magisch",
+    "aktion",
+    "waffe",
+    "peitsche",
+    "beschwören",
+    "schwebend",
+    "bonus aktion"
+  ]
+}

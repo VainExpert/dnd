@@ -1,0 +1,19 @@
+{
+  "id": "klingenbann",
+  "name": "Klingenbann",
+  "level": 0,
+  "school": "Bannmagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "V, G",
+  "duration": "1 Runde (6 s)",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du zeichnest ein Schutzzeichen in die Luft.\nBis Ende deines nächsten Zuges hast du Resistenz gegen Wucht-, Hieb- und Stichschaden von Waffen."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "pfeilspalier",
+  "name": "Pfeilspalier",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G, M (Zierschnur)",
+  "duration": "8 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Waldläufer"
+  ],
+  "text": "Du berührst bis zu 4 nichtmagische Pfeile oder Bolzen und steckst sie in den Boden.\nBis der Zauber endet, können sie nicht herausgezogen werden. Betritt eine Kreatur außer dir zum ersten Mal in einem Zug einen Bereich innerhalb von 9 m um die Munition oder beendet dort ihren Zug, schießt 1 Geschoss hoch.\nDas Ziel macht einen DEX-Rettungswurf; bei Fehlschlag: 2W4 Stichschaden. Danach wird die Munition zerstört.\nDer Zauber endet, wenn keine Munition mehr steckt. Beim Wirken kannst du Kreaturen festlegen, die ignoriert werden.\n\nAuf höheren Level gewirkt: pro Level +2 Munition."
+}

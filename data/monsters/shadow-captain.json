@@ -1,0 +1,71 @@
+{
+  "name": "Shadow Captain",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr12",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 19,
+  "hp": {
+    "average": 156,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 14,
+    "int": 10,
+    "wis": 16,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 11,
+    "Stealth": 10
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "12",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Alter Self",
+      "text": "The shadow captain\ncan assume a different form at will.\nThe magic that provides the shadow\ncaptain with this ability is so powerful\nthat only a true seeing spell can discern\nwhat lies under the illusion."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The shadow captain’s spellcasting\nability is Wisdom (spell save DC 15, +7 to hit with spell\nattacks). The shadow captain can innately cast the\nfollowing spells, requiring no material components:\n\n* At will: <i>alter self, resistance, sacred flame</i>\n\n* 3/day each: <i>bane, inflict wounds, shield of faith</i>\n\n* 1/day each: <i>animate dead, contagion</i>"
+    },
+    {
+      "name": "Regeneration",
+      "text": "The shadow captain regains 10 hit points at the start of\nits turn. If the shadow captain takes acid or fire damage, this trait doesn’t\nfunction at the start of its next turn. The shadow captain dies only if it\nstarts its turn with 0 hit points and doesn’t regenerate."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The shadow captain makes two longsword attacks."
+    },
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit:\n15 (2d10 + 4) slashing damage plus 22 (4d10) cold damage."
+    },
+    {
+      "name": "Draining Touch",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one\ntarget. Hit: 15 (3d8 + 2) cold damage. The target must succeed on a DC\n14 Constitution saving throw or its hit point maximum is reduced by an\namount equal to the damage taken. This reduction lasts until the target\nfinishes a long rest. The target dies if this effect reduces its hit point\nmaximum to 0."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "taschenspielerei",
+  "name": "Taschenspielerei",
+  "level": 0,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst / 3 m",
+  "components": "V, G",
+  "duration": "bis zu 1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du erzeugst einen der folgenden magischen Effekte:\n * Unmittelbarer, harmloser, sensorischer Effekt (Funkenregen, Windstoß, leise Melodie, merkwürdiger Geruch, ...)\n * Du entzündest oder löschst eine Kerze, Fackel oder kleines Lagerfeuer.\n * Gegenstand mit nicht mehr als 30 cm Größe säubern oder verschmutzen.\n * Nichtlebendes Material nicht größer als 30 cm abkühlen, erhitzen oder würzen, hält für 1 h.\n * Farbfleck, Mal oder Symbol für 1 h auf Gegenstand oder deiner Haut erscheinen lassen.\n * Du erzeugst nichtmagischen Schmuck oder eine Illusion in Handgröße, bleibt für 1 h erhalten.\n * Du kannst dein Äußeres leicht verändern (säubern, hübsche Kleidung als Illusion, ...), hält mind .1 h.\n\nBis zu 3 langfristige Effekt gleichzeitig erhaltbar, diese auch durch Aktion aufhebbar"
+}

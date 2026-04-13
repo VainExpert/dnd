@@ -1,0 +1,74 @@
+{
+  "name": "Attentäter",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr8",
+      "monster-manual",
+      "any race"
+    ]
+  },
+  "alignment": "any non-good alignment",
+  "ac": 15,
+  "hp": {
+    "average": 78,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 16,
+    "con": 14,
+    "int": 13,
+    "wis": 11,
+    "cha": 10
+  },
+  "skills": {
+    "Acrobatics": 6,
+    "Deception": 3,
+    "Perception": 3,
+    "Stealth": 9
+  },
+  "languages": [
+    "Thieves' cant plus any two languages"
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "ermorden",
+      "text": "In seinem ersten Zug hat der Assassine einen Vorteil bei Angriffswürfen gegen jede Kreatur, die noch keinen Zug ausgeführt hat. Jeder Treffer, den der Assassine gegen eine überraschte Kreatur erzielt, ist ein kritischer Treffer."
+    },
+    {
+      "name": "Flucht",
+      "text": "Wenn der Assassine einem Effekt ausgesetzt ist, der ihm erlaubt, einen Geschicklichkeits-Rettungswurf durchzuführen, um nur den halben Schaden zu erleiden, erleidet er stattdessen keinen Schaden, wenn der Rettungswurf gelingt, und nur den halben Schaden, wenn er fehlschlägt."
+    },
+    {
+      "name": "Überraschungsangriff (1/Runde)",
+      "text": "Der Attentäter verursacht 13 (4d6) zusätzlichen Schaden, wenn er ein Ziel mit einem Waffenangriff trifft und beim Angriffswurf einen Vorteil hat, oder wenn sich das Ziel in einer Entfernung 5 ftvon . zu einem Verbündeten des Attentäters befindet, der nicht handlungsunfähig ist, und der Attentäter beim Angriffswurf keinen Nachteil hat."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Attentäter führt zwei Angriffe mit dem Kurzschwert aus."
+    },
+    {
+      "name": "Kurzschwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf den Treffer, Reichweite5 ft: , ein Ziel. Treffer: 6 (1d6 + 3) Durchdringungsschaden; das Ziel muss einenDC 15Konstitutions-Rettungswurf durchführen und erleidet bei einem misslungenen Rettungswurf 24 (7d6) Giftschaden oder bei einem erfolgreichen Rettungswurf die Hälfte dieses Schadens."
+    },
+    {
+      "name": "Leichte Armbrust",
+      "type": "special",
+      "text": "Fernkampfangriff: +6 auf den Treffer, Reichweite80/320  Fuß, ein Ziel. Treffer: 7 (1d8 + 3) Durchdringungsschaden; das Ziel muss einenDC 15  Konstitutions-Rettungswurf durchführen und erleidet bei einem misslungenen Rettungswurf 24 (7d6) Giftschaden oder bei einem erfolgreichen Rettungswurf die Hälfte dieses Schadens."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,70 @@
+{
+  "name": "Rugged Marksman",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 15,
+  "hp": {
+    "average": 26,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 16,
+    "con": 13,
+    "int": 12,
+    "wis": 15,
+    "cha": 8
+  },
+  "skills": {
+    "Animal Handling": 4,
+    "Investigation": 3,
+    "Nature": 3,
+    "Survival": 4
+  },
+  "languages": [
+    "Any two languages"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Archery Fighting Style",
+      "text": "The marksman gains a +2\nbonus to attack rolls it makes with ranged weapons."
+    },
+    {
+      "name": "Colossus Slayer",
+      "text": "Once per turn, when the marksman\nhits a creature with an attack, the creature takes an\nadditional 1d8 damage if it's below its hit points\nmaximum (included in the attack)."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The marksman is a 3th-level\nspellcaster. Its spellcasting ability is Wisdom (spell\nsave DC 12, +4 to hit with spell attacks). The\nmarksman has the following ranger spells prepared:\n\n* 1st level (3 slots): <i>alarm, hail of thorns, hunter's mark</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach\n5 ft., one target. Hit: 6 (1d6 + 3) piercing damage\nplus 4 (1d8) piercing damage if the target is a\ncreature below its hit points maximum."
+    },
+    {
+      "name": "Longbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +7 to hit, range\n150/600 ft., one target. Hit: 7 (1d8 + 3) piercing\ndamage plus 4 (1d8) piercing damage if the target\nis a creature below its hit points maximum."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Skull Lord",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr15",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 18,
+  "hp": {
+    "average": 105,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 16,
+    "con": 17,
+    "int": 16,
+    "wis": 15,
+    "cha": 21
+  },
+  "skills": {
+    "Athletics": 7,
+    "History": 8,
+    "Perception": 12,
+    "Stealth": 8
+  },
+  "languages": [
+    "all the languages it knew in life"
+  ],
+  "challenge": {
+    "cr": "15",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "text": "If the skull lord fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Master of the Grave",
+      "text": "While within 30 feet of the skull lord, any undead ally of the skull lord makes saving throws with advantage, and that ally regains 1d6 hit points whenever it starts its turn there."
+    },
+    {
+      "name": "Evasion",
+      "text": "If the skull lord is subjected to an effect that allows it to make a Dexterity saving throw to take only half the damage, the skull lord instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The skull lord is a 13th-level spellcaster. Its spellcasting ability is Charisma (spell save DC18, +10 to hit with spell attacks). The skull lord knows the following sorcerer spells:\n\n* Cantrips (at will): <i>chill touch, fire bolt, mage hand, poison spray, ray of frost, shocking grasp</i>\n\n* 1st level (4 slots): <i>magic missile, expeditious retreat, thunderwave</i>\n\n* 2nd level (3 slots): <i>mirror image, scorching ray</i>\n\n* 3rd level (3 slots): <i>fear, haste</i>\n\n* 4th level (3 slots): <i>dimension door, ice storm</i>\n\n* 5th level (2 slots): <i>cloudkill, cone of cold</i>\n\n* 6th level (1 slot): <i>eyebite</i>\n\n* 7th level (1 slot): <i>finger of death</i>"
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

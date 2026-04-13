@@ -1,0 +1,90 @@
+{
+  "name": "Thri-kreen (Psionic)",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "monster-manual",
+      "thri-kreen"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 15,
+  "hp": {
+    "average": 33,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 15,
+    "con": 13,
+    "int": 8,
+    "wis": 12,
+    "cha": 7
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 4,
+    "Survival": 3
+  },
+  "languages": [
+    "Thri-kreen",
+    "telepathy 60 ft."
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Chameleon Carapace",
+      "text": "The thri-kreen can change the color of its carapace to match the color and texture of its surroundings. As a result, it has advantage on Dexterity (Stealth) checks made to hide."
+    },
+    {
+      "name": "Standing Leap",
+      "text": "The thri-kreen's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start."
+    },
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "text": "The thri-kreen's innate spellcasting ability is Wisdom. The thri-kreen can innately cast the following spells, requiring no components:\n\n* At will: <i>mage hand </i>(the hand is invisible)\n\n* 2/day each: <i>blur, magic weapon</i>\n\n* 1/day: <i>invisibility </i>(self only)"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The thri-kreen makes two attacks: one with its bite and one with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the target is also paralyzed while poisoned in this way. The poisoned target can repeat the saving throw on each of its turns, ending the effect on itself on a success."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) slashing damage."
+    },
+    {
+      "name": "Variant: Weapons Multiattack",
+      "type": "special",
+      "text": "The thri-kreen makes two gythka attacks or two chatkcha attacks."
+    },
+    {
+      "name": "Variant: Gythka",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage."
+    },
+    {
+      "name": "Variant: Chatkcha",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

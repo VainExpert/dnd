@@ -1,0 +1,82 @@
+{
+  "name": "Luftangriff-Gnom",
+  "size": "Klein",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr8",
+      "tome-of-horrors",
+      "gnome"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 18,
+  "hp": {
+    "average": 44,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 16,
+    "con": 14,
+    "int": 16,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {
+    "History": 6,
+    "Perception": 6,
+    "Investigation": 6,
+    "Acrobatics": 8
+  },
+  "languages": [
+    "Common",
+    "Gnome"
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Agiler Flug",
+      "text": "Der Gnom kann mit seinen Mechaflügeln an Ort und Stelle schweben und Haarnadelkurven fliegen, was ihm während des Fluges einen RK-Bonus von +2 gewährt."
+    },
+    {
+      "name": "Gnomenlist",
+      "text": "Der Luftangriffsgnom hat einen Vorteil bei allen Zaubern und magischen Effekten, die einen Rettungswurf auf Intelligenz, Weisheit oder Charisma erfordern."
+    },
+    {
+      "name": "Gepanzerter Fluganzug",
+      "text": "Der Luftangriffsgnom trägt einen futuristischen Anzug aus leichter, aber extrem widerstandsfähiger mechanisierter Rüstung, der Komfort und Schutz bietet."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Luftangriffs-Gnom kann zwei Angriffe ausführen: einen mit seinem Zahnradwerfer und einen mit „Letzter Ausweg“."
+    },
+    {
+      "name": "Zahnradwerfer",
+      "type": "special",
+      "text": "Fernkampfangriff: +8 auf Treffer, Reichweite80/320  Fuß, ein Ziel. Treffer: 10 (3d6) Schnittschaden. Ein Strom messerscharfer Zahnräder schießt aus der hohlen Metallkeule des Gnoms."
+    },
+    {
+      "name": "Letzter Ausweg",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 zum Treffen, Reichweite 5 ft0, ein Ziel.\nTreffer: 3 (1d6) Bludgeoning-Schaden. Der Gnom peitscht seinen Gegner mit den noch glühenden Metallrohren seines Zahnradwerfers."
+    },
+    {
+      "name": "Bombardierungsflug (3/Tag)",
+      "type": "special",
+      "text": "Fernkampfangriff: +8 zum Treffer, Reichweite120/400  Fuß, ein Ziel. Treffer: ein Punkt, den der Gnom sehen kann. Von diesem Punkt geht eine Feuerstrahl aus. Alle Kreaturen im Umkreis von 20 Fuß um das Ziel müssen einenDC 16  Geschicklichkeits-Rettungswurf bestehen; bei einem misslungenen Rettungswurf erleiden sie 28 (8d6) Feuerschaden,\nbei einem erfolgreichen Rettungswurf nur die Hälfte des Schadens."
+    }
+  ],
+  "source": "creature"
+}

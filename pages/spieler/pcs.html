@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Spieler-Charakter</title>
+  <link rel="stylesheet" href="../../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Spieler-Charaktere-Übersicht</div>
+      <div class="subtitle">Spielercharaktere</div>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Suchen..."/>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="nav">
+        <div class="group">
+          <div class="group-title">Start</div>
+          <a href="../../index.html">Startseite</a>
+          <a href="../../index.html#content/house-rules/index.md">Hausregeln</a>
+          <a href="../../index.html#content/safety/index.md">Sicherheit</a>
+          <a href="../../index.html#content/character-options/index.md">Charakteroptionen</a>
+          <a href="../../index.html#content/recaps/index.md">Rückblicke</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Werkzeuge</div>
+          <a href="../werkzeuge/tools.html">Zufallstabellen & Generatoren</a>
+          <a href="../werkzeuge/dice.html">Würfel</a>
+          <a href="../werkzeuge/units.html">Einheitenumrechner</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Sammlungen</div>
+          <a href="../bestiarium/bestiary.html">Bestiarium</a>
+          <a href="../zauber/spells.html">Zauber</a>
+          <a href="../items/items.html">Gegenstände</a>
+          <a href="../maps.html">Karten</a>
+          <a href="./pcs.html" class="active">Spieler</a>
+          <a href="../icons.html">Symbole</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="content" style="max-width:1100px;">
+        <div id="grid" class="card-grid"></div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany, normalizePc } from "../../lib.js";
+
+    const grid = document.getElementById("grid");
+    const qEl = document.getElementById("q");
+
+    const files = await loadIndex("../../data/pcs/index.json");
+    const pcs = (await loadMany("../../data/pcs", files)).map(normalizePc);
+
+    function card(p){
+      const portrait = p.portrait ? `<img loading="lazy" decoding="async" src="${escapeHtml(p.portrait)}" alt="" style="width:100%; border-radius:12px; border:1px solid rgba(255,255,255,.08); margin-bottom:10px;" />` : "";
+      const subtitle = [p.race, p.class, p.subclass ? `(${p.subclass})` : null, p.level ? `Lv ${p.level}` : null].filter(Boolean).join(" • ");
+      return `
+        <div class="mini-card">
+          <div class="mini-head">
+            <div class="mini-title"><a href="./pc.html?id=${encodeURIComponent(p.id || p.name || "")}">${escapeHtml(p.name)}</a></div>
+            <div class="mini-sub">${escapeHtml(subtitle || (p.player ? `Spieler: ${p.player}` : ""))}</div>
+            <div class="pillbar">
+              ${p.ac != null ? `<span class="pill"><b>AC</b> ${escapeHtml(p.ac)}</span>` : ""}
+              ${p.hp != null ? `<span class="pill"><b>HP</b> ${escapeHtml(p.hp)}</span>` : ""}
+              ${p.speed != null ? `<span class="pill"><b>Bewegung</b> ${escapeHtml(p.speed)}</span>` : ""}
+            </div>
+          </div>
+          <div class="mini-body">
+            ${portrait}
+            ${p.notes ? `<div class="mini-box"><div class="mini-box-title">Notizen</div><div class="mini-box-text">${escapeHtml(p.notes)}</div></div>` : ""}
+            ${p.player ? `<div class="mini-footer muted">Spieler: ${escapeHtml(p.player)}</div>` : ""}
+          </div>
+        </div>
+      `;
+    }
+
+    function matches(p, q){
+      const hay = [p.name, p.player, p.race, p.class, p.subclass, p.notes].join(" ").toLowerCase();
+      return !q || hay.includes(q);
+    }
+
+    function render(){
+      const q = (qEl.value || "").trim().toLowerCase();
+      const filtered = pcs.filter(p => matches(p, q));
+      grid.innerHTML = filtered.map(card).join("") || `<p>Keine Treffer.</p>`;
+    }
+
+    qEl.addEventListener("input", render);
+    render();
+  </script>
+</body>
+</html>

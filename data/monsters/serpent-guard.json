@@ -1,0 +1,82 @@
+{
+  "name": "Serpent Guard",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "homebrew",
+      "human"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 18,
+  "hp": {
+    "average": 76,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 18,
+    "int": 9,
+    "wis": 14,
+    "cha": 12
+  },
+  "skills": {
+    "Athletics": 7,
+    "Perception": 5,
+    "Survival": 7
+  },
+  "languages": [
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Capitalize (1/Turn)",
+      "text": "If the Amazon hits a creature\nthat she can see with a melee weapon attack, she can\nuse her bonus action to immediately make another\nmelee weapon attack against the same creature. This\nextra attack has disadvantage."
+    },
+    {
+      "name": "Fear of Magic",
+      "text": "If a creature casts a spell or uses another\nmagical effect within 30 feet of the Amazon and the\nAmazon can see it, the Amazon must succeed on a\nWisdom saving throw with a DC equal to the\nspellcaster's spell save DC. On a failed saving throw,\nthe Amazon is frightened of the spellcaster for 1\nminute. The Amazon can repeat her saving throw at the\nend of each of her turns, ending the frightened effect\non a success. If the Amazon succeeds on her initial\nsaving throw or the effect ends for her, this trait does\nnot function for 1 hour."
+    },
+    {
+      "name": "Serpent Whisperer",
+      "text": "Through sounds and gestures, the\nAmazon can communicate simple ideas with snakes\nand other serpents."
+    },
+    {
+      "name": "Shield Guardian",
+      "text": "When the Amazon takes the Dodge\naction and she is wielding a shield, she gains a +3\nbonus to her AC."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The Amazon makes three attacks with her\ntepoztopilli."
+    },
+    {
+      "name": "Tepoztopilli",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 10\nft., one target. Hit: 8 (1d8 + 4) bludgeoning damage, or\n9 (1d10 + 4) bludgeoning when wielded with two\nhands."
+    },
+    {
+      "name": "Sling",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +5 to hit, range 30/120\nft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Shield Bash",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5\nft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.\nIf the target is a Medium or smaller creature, it must\nsucceed on a DC 15 Strength saving throw or be\nknocked prone."
+    }
+  ],
+  "source": "creature"
+}

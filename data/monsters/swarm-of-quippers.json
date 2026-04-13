@@ -1,0 +1,59 @@
+{
+  "name": "Swarm of Quippers",
+  "size": "Medium",
+  "type": {
+    "type": "swarm",
+    "tags": [
+      "medium",
+      "swarm",
+      "cr1",
+      "monster-manual"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 28,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 40
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 16,
+    "con": 9,
+    "int": 1,
+    "wis": 7,
+    "cha": 2
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Blood Frenzy",
+      "text": "The swarm has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+    },
+    {
+      "name": "Swarm",
+      "text": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny quipper. The swarm can't regain hit points or gain temporary hit points."
+    },
+    {
+      "name": "Water Breathing",
+      "text": "The swarm can breathe only underwater."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bites",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm's space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer."
+    }
+  ],
+  "source": "creature"
+}

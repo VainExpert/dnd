@@ -1,0 +1,51 @@
+{
+  "name": "Needle Blight",
+  "size": "Medium",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "medium",
+      "plant",
+      "cr1/4",
+      "monster-manual"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 12,
+  "hp": {
+    "average": 11,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 12,
+    "con": 13,
+    "int": 4,
+    "wis": 8,
+    "cha": 3
+  },
+  "skills": {},
+  "languages": [
+    "understands Common but can't speak"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) piercing damage."
+    },
+    {
+      "name": "Needles",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +3 to hit, range 30/60 ft., one target. Hit: 8 (2d6 + 1) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

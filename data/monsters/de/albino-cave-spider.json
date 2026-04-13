@@ -1,0 +1,64 @@
+{
+  "name": "Albino-Höhlenspinne",
+  "size": "Winzig",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "tiny",
+      "beast",
+      "cr1/2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 15,
+  "hp": {
+    "average": 2,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 10
+  },
+  "abilities": {
+    "str": 4,
+    "dex": 14,
+    "con": 10,
+    "int": 2,
+    "wis": 10,
+    "cha": 3
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 4
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Spinnenklettern",
+      "text": "Die Spinne kann schwierige Oberflächen erklimmen, auch kopfüber\nan Decken, ohne dafür eine Fertigkeitsprobe ablegen zu müssen."
+    },
+    {
+      "name": "Web Sense",
+      "text": "Solange sie mit einem Spinnennetz in Kontakt steht, weiß die Spinne genau,\nwo sich jedes andere Lebewesen befindet, das mit demselben Netz in Kontakt steht."
+    },
+    {
+      "name": "Web Walker",
+      "text": "Die Spinne ignoriert Bewegungsbeschränkungen, die durch\nSpinnweben verursacht werden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 auf den Trefferwurf, Reichweite5 ft: , ein Ziel. Treffer: 4 (1d4 + 2) Durchdringungsschaden; das Ziel muss einenDC 13  Konstitutions-\nRettungswurf versuchen und erleidet bei einem Fehlschlag 2 (1d4) Giftschaden. Wenn das Ziel\nseinen Rettungswurf um 5 oder mehr verfehlt, ist es 1 Stunde lang vergiftet."
+    }
+  ],
+  "source": "creature"
+}

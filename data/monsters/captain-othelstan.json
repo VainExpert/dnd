@@ -1,0 +1,72 @@
+{
+  "name": "Captain Othelstan",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "tyranny-of-dragons",
+      "human"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 19,
+  "hp": {
+    "average": 93,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 16,
+    "int": 13,
+    "wis": 14,
+    "cha": 12
+  },
+  "skills": {
+    "Athletics": 7,
+    "Intimidation": 7,
+    "Perception": 5,
+    "Religion": 4
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Action Surge (Recharges on a Short or Long Rest)",
+      "text": "On his turn, Othelstan can take one additional action."
+    },
+    {
+      "name": "Tiamat's Blessing of Retribution",
+      "text": "When Othelstan takes damage that reduces him to 0 hit points, he immediately regains 20 hit points. If he has 20 hit points or fewer at the end of his next turn, he dies."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Othelstan attacks twice with his flail or spear, or makes two ranged attacks with his spears."
+    },
+    {
+      "name": "Flail",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Spear",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or ranged 20 ft./60 ft., one target. Hit: 7 (1d6 + 4) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "geschenk-von-alacrity",
+  "name": "Geschenk von Alacrity",
+  "level": 1,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 min",
+  "range": "Berührung",
+  "components": "V, G",
+  "duration": "8 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Magier"
+  ],
+  "text": "Du berührst eine willige Kreatur.\nFür die Wirkungsdauer kann das Ziel 1W8 zu seinen Initiativewürfen addieren."
+}

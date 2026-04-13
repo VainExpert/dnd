@@ -1,0 +1,63 @@
+{
+  "name": "Dampf",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr6",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 17,
+  "hp": {
+    "average": 85,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 20,
+    "con": 18,
+    "int": 8,
+    "wis": 12,
+    "cha": 15
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 8
+  },
+  "languages": [
+    "all languages it knew in life"
+  ],
+  "challenge": {
+    "cr": "6",
+    "xp": 2300,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Qualvoller Blick",
+      "text": "Wenn eine Kreatur, die die Augen des Angatra sehen kann, ihren Zug in30 feetReichweite des Angatra beginnt, muss sie einenDC 13Charisma-Rettungswurf durchführen, sofern der Angatra nicht handlungsunfähig ist und die Kreatur sehen kann. Bei einem misslungenen Rettungswurf wird die Schmerzschwelle der Kreatur gesenkt, sodass sie bis zum Ende ihres nächsten Zuges für alle Schadensarten anfällig ist. Sofern sie nicht überrascht wird, kann eine Kreatur den Rettungswurf vermeiden, indem sie zu Beginn ihres Zuges den Blick abwendet. Eine Kreatur, die den Blick abwendet, kann den Angatra eine volle Runde lang nicht sehen, bevor sie erneut entscheiden muss, ob sie den Blick wieder abwendet. Wenn die Kreatur in der Zwischenzeit den Angatra ansieht, muss sie sofort den Rettungswurf durchführen."
+    },
+    {
+      "name": "Der Zorn der Ahnen",
+      "text": "Der Angatra erkennt jeden, der aus seinem Stamm stammt, sofort. Er hat einen Vorteil bei Angriffswürfen gegen solche Kreaturen, und diese Kreaturen haben einen Nachteil bei Rettungswürfen gegen die Eigenschaften und Angriffe des Angatra."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Angatra führt zwei Angriffe mit seinen Klauen aus."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf den Treffer, Reichweite5 ft: 0, eine Kreatur. Treffer: 10 (2d4 + 5) Durchbohrungsschaden; außerdem muss die Kreatur einenDC 15Konstitutions-Rettungswurf bestehen oder wird bis zum Ende ihres nächsten Zuges vor Schmerz gelähmt."
+    }
+  ],
+  "source": "creature"
+}

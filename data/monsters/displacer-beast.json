@@ -1,0 +1,58 @@
+{
+  "name": "Displacer Beast",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr3",
+      "monster-manual"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 13,
+  "hp": {
+    "average": 85,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 15,
+    "con": 16,
+    "int": 6,
+    "wis": 12,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Avoidance",
+      "text": "If the displacer beast is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails ."
+    },
+    {
+      "name": "Displacement",
+      "text": "The displacer beast projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the displacer beast is incapacitated or has a speed of 0."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The displacer beast makes two attacks with its tentacles."
+    },
+    {
+      "name": "Tentacle",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 3 (1d6) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

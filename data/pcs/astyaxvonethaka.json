@@ -1,0 +1,590 @@
+{
+  "character": {
+    "identity": {
+      "name": "Astyax von Ethaka",
+      "player_name": "Markus",
+      "class": {
+        "name": "Paladin",
+        "level": 3,
+        "subclass": "Schwur des Ruhmes"
+      },
+      "race": "Mensch",
+      "background": "Adeliger",
+      "alignment": "gesetztreu-gut",
+      "deity": "Athene",
+      "gender": "männlich",
+      "age": 23,
+      "size": "Mittel",
+      "height": 1.92,
+      "weight": 92,
+      "appearance": {
+        "img": "../../assets/icons/pcs/AstyaxVonEthaka-Avatar.png",
+        "skin": "gebräunt",
+        "eyes": "grün",
+        "hair": "blonde Locken"
+      },
+      "organizations": [
+        "Das Fürstentum von Ethaka auf den südlichen Inseln",
+        "Abenteuertruppe mit Ludwig und Abraxas"
+      ]
+    },
+    "ability_scores": {
+      "STR": {
+        "score": 15,
+        "mod": 2,
+        "save": 2
+      },
+      "DEX": {
+        "score": 10,
+        "mod": 0,
+        "save": 0
+      },
+      "CON": {
+        "score": 14,
+        "mod": 2,
+        "save": 2
+      },
+      "INT": {
+        "score": 8,
+        "mod": -1,
+        "save": -1
+      },
+      "WIS": {
+        "score": 12,
+        "mod": 1,
+        "save": 3
+      },
+      "CHA": {
+        "score": 13,
+        "mod": 1,
+        "save": 3
+      }
+    },
+    "proficiency_bonus": 2,
+    "inspiration": true,
+    "skills": {
+      "Akrobatik": 0,
+      "Arkane Kunde": -1,
+      "Athletik": 4,
+      "Auftreten": 1,
+      "Einschüchtern": 1,
+      "Fingerfertigkeit": 0,
+      "Geschichte": 1,
+      "Heimlichkeit": 0,
+      "Medizin": 3,
+      "Mit Tieren umgehen": 3,
+      "Motiv erkennen": 1,
+      "Nachforschungen": -1,
+      "Naturkunde": -1,
+      "Religion": -1,
+      "Täuschen": 1,
+      "Überlebenskunst": 1,
+      "Überzeugen": 3,
+      "Wahrnehmung": 1
+    },
+    "passive_scores": {
+      "passive_wahrnehmung": 11,
+      "passiver_einblick": 11,
+      "passive_nachforschungen": 9
+    },
+    "combat": {
+      "armor_class": 16,
+      "initiative": 0,
+      "speeds": {
+        "walk": 9
+      },
+      "hp": {
+        "max": 28,
+        "hit_dice": "3d10"
+      },
+      "heroic_inspiration": 1,
+      "attacks_and_cantrips": [
+        {
+          "name": "Langschwert",
+          "attack_bonus": 4,
+          "damage": "1d8+2 Hieb",
+          "properties": [
+            "Kriegswaffe",
+            "Vielseitig",
+            "Schwächen"
+          ],
+          "notes": [
+            "Waffenmeisterung: Schwächen (siehe Talente)"
+          ],
+          "item_ref": {
+            "id": "langschwert",
+            "name": "Langschwert"
+          }
+        },
+        {
+          "name": "Wurfspeer (3x)",
+          "attack_bonus": 4,
+          "damage": "1d6+2 Stich",
+          "properties": [
+            "Einfache Waffe",
+            "Geworfen",
+            "Reichweite 9 m / 36 m",
+            "Verlangsamen"
+          ],
+          "notes": [
+            "Waffenmeisterung: Verlangsamen (siehe Talente)"
+          ],
+          "item_ref": {
+            "id": "wurfspeer",
+            "name": "Wurfspeer"
+          }
+        },
+        {
+          "name": "Lanze",
+          "attack_bonus": 4,
+          "damage": "1d12+2 Stich",
+          "properties": [
+            "Kriegswaffe",
+            "Vielseitig",
+            "Lang (+1,5 m Nahkampf)",
+            "Spezial"
+          ],
+          "notes": [
+            "Spezial: 2 Hände nötig, wenn du nicht reitest; Nachteil auf Angriffe gegen Ziele in 1,5 m Abstand.",
+            "Reittier: Schlachtross „Trakan“ (siehe Talente/Notizen)."
+          ],
+          "item_ref": {
+            "id": "lanze",
+            "name": "Lanze"
+          }
+        },
+        {
+          "name": "Unbewaffneter Schlag",
+          "attack_bonus": 4,
+          "damage": "3 Wucht"
+        }
+      ],
+      "actions": {
+        "standard": [
+          "Angriff",
+          "Ausweichen",
+          "Beeinflussen",
+          "Interagieren",
+          "Flucht",
+          "Helfen",
+          "Magie",
+          "Packen",
+          "Sprint",
+          "Stoßen",
+          "Studieren",
+          "Verstecken",
+          "Verwenden",
+          "Vorbereiten"
+        ],
+        "bonus_actions": [
+          "Göttliche Macht fokussieren: Göttliches Gespür",
+          "Göttliche Macht fokussieren: Grenzenloser Athlet",
+          "Hand auflegen: Heilen",
+          "Hand auflegen: Entgiften"
+        ],
+        "reactions": [
+          "Gelegenheitsangriff",
+          "Göttliche Macht fokussieren: Inspirierendes Niederstrecken",
+          "Abfangen"
+        ]
+      }
+    },
+    "proficiencies": {
+      "armor": [
+        "Leichte Rüstung",
+        "Mittlere Rüstung",
+        "Schwere Rüstung",
+        "Schilde"
+      ],
+      "weapons": [
+        "Einfache Waffen",
+        "Kriegswaffen"
+      ],
+      "tools": [
+        "Würfel-Set (5W6)"
+      ],
+      "languages": [
+        "Gemeinsprache",
+        "Elfisch",
+        "Zwergisch"
+      ]
+    },
+    "spellcasting": {
+      "spellcasting_class": "Paladin",
+      "spellcasting_ability": "CHA",
+      "spellcasting_ability_mod": 1,
+      "spell_save_dc": 11,
+      "spell_attack_bonus": 3,
+      "spell_slots": {
+        "level_1": {
+          "max": 3
+        }
+      },
+      "cantrips": [],
+      "level_1_spells_listed": [
+        {
+          "id": "erzwungenes-duell",
+          "name": "Erzwungenes Duell"
+        },
+        {
+          "id": "heldenmut",
+          "name": "Heldenmut"
+        },
+        {
+          "id": "goettliche-gunst",
+          "name": "Göttliche Gunst"
+        },
+        {
+          "id": "goettliches-niederstrecken",
+          "name": "Göttliches Niederstrecken"
+        },
+        {
+          "id": "lenkendes-geschoss",
+          "name": "Lenkendes Geschoss"
+        },
+        {
+          "id": "segnen",
+          "name": "Segnen"
+        },
+        {
+          "id": "wunden-heilen",
+          "name": "Wunden heilen"
+        }
+      ],
+      "always_prepared": [
+        {
+          "source": "Schwur des Ruhmes: Schwurzauber",
+          "spells": [
+            {
+              "id": "lenkendes-geschoss",
+              "name": "Lenkendes Geschoss"
+            },
+            {
+              "id": "heldenmut",
+              "name": "Heldenmut"
+            }
+          ]
+        },
+        {
+          "source": "Paladins Niederstrecken",
+          "spells": [
+            {
+              "id": "goettliches-niederstrecken",
+              "name": "Göttliches Niederstrecken"
+            }
+          ],
+          "notes": [
+            "Immer vorbereitet; 1/Lange Rast ohne Zauberplatz wirkbar."
+          ]
+        }
+      ]
+    },
+    "features": {
+      "class": [
+        {
+          "name": "Zauberwirken",
+          "description": "Du bekommst alle Zauberplätze nach einer Langen Rast zurück. Nach jeder Langen Rast kannst du deine Zauber austauschen, außer deine immer vorbereiteten Zauber."
+        },
+        {
+          "name": "Paladins Niederstrecken",
+          "description": "Du hast immer „Göttliches Niederstrecken“ vorbereitet.",
+          "uses": 1,
+          "recovery": {
+            "long_rest": true
+          }
+        },
+        {
+          "name": "Hand auflegen",
+          "resource": {
+            "name": "Heilungspool",
+            "max_hp": 15,
+            "recovery": {
+              "long_rest": true
+            }
+          },
+          "options": [
+            {
+              "name": "Heilen",
+              "activation": "Bonusaktion",
+              "effect": "Berühre eine Kreatur (auch dich selbst), um TP bis maximal zum verbleibenden Heilungspool zu heilen."
+            },
+            {
+              "name": "Entgiften",
+              "activation": "Bonusaktion",
+              "cost": "5 TP aus Pool",
+              "effect": "Heilt eine Krankheit oder neutralisiert ein Gift (keine TP-Heilung)."
+            }
+          ]
+        },
+        {
+          "name": "Göttliche Macht fokussieren",
+          "resource": {
+            "name": "Aufladungen",
+            "max": 2,
+            "recovery": {
+              "long_rest": true,
+              "short_rest": 1
+            }
+          },
+          "options": [
+            {
+              "name": "Göttliches Gespür",
+              "activation": "Bonusaktion",
+              "duration": "10 Minuten (oder bis du kampfunfähig wirst)",
+              "effect": "Du spürst die Position von Himmlischen, Teuflischen und Untoten sowie geweihter/entweihter Orte/Gegenstände in 18 m, sofern sie nicht vollständig in Deckung sind."
+            },
+            {
+              "name": "Inspirierendes Niederstrecken",
+              "activation": "Reaktion",
+              "trigger": "Direkt nachdem du „Göttliches Niederstrecken“ verwendet hast",
+              "effect": "Gib an von dir gewählte Kreaturen in 9 m Umkreis temporäre TP in Höhe von 2d8 + dein Level; du teilst das Gesamtergebnis frei auf."
+            },
+            {
+              "name": "Grenzenloser Athlet",
+              "activation": "Bonusaktion",
+              "duration": "1 Stunde",
+              "effect": "Vorteil auf Athletik- und Akrobatik-Würfe; Sprungdistanz erhöht sich um 3 m."
+            }
+          ]
+        }
+      ],
+      "subclass": [
+        {
+          "name": "Schwurzauber",
+          "always_prepared_spells": [
+            {
+              "id": "lenkendes-geschoss",
+              "name": "Lenkendes Geschoss"
+            },
+            {
+              "id": "heldenmut",
+              "name": "Heldenmut"
+            }
+          ]
+        }
+      ],
+      "racial": [
+        {
+          "name": "Einfallsreich",
+          "description": "Nach jeder Langen Rast bekommst du 1 Heroische Inspiration."
+        }
+      ],
+      "background": [
+        {
+          "name": "Privilegierte Stellung",
+          "description": "Leute denken durch deine adlige Abstammung nur das Beste über dich; du bist überall willkommen, das normale Volk unterstützt dich, und du kannst eine Audienz mit lokalen Adligen garantiert bekommen (falls nötig)."
+        }
+      ],
+      "talents": [
+        {
+          "name": "Abfangen",
+          "activation": "Reaktion",
+          "effect": "Wenn eine Kreatur, die du sehen kannst, ein Ziel in 1,5 m Abstand zu dir mit einem Angriff trifft, reduzierst du den Schaden um 1d10 + Übungsbonus. Du musst ein Schild oder eine einfache/kriegswaffe halten."
+        },
+        {
+          "name": "Wilder Angreifer",
+          "effect": "Einmal pro Zug, wenn du ein Ziel mit einer Waffe triffst, kannst du den Schadenswürfel zweimal würfeln und einen der beiden Würfe verwenden."
+        },
+        {
+          "name": "Waffenmeisterungen",
+          "effect": "Du hast 2 Arten von Waffen deiner Wahl gemeistert. Du kannst eine der Meisterungen bei jeder Langen Rast tauschen.",
+          "masteries": [
+            {
+              "name": "Schwächen (Langschwert)",
+              "trigger": "Wenn du eine Kreatur mit deinem Langschwert triffst",
+              "effect": "Das Ziel hat Nachteil auf seinen nächsten Angriffswurf vor dem Beginn deines nächsten Zuges."
+            },
+            {
+              "name": "Verlangsamen (Wurfspeer)",
+              "trigger": "Wenn du eine Kreatur mit deinem Wurfspeer triffst",
+              "effect": "Bewegungsgeschwindigkeit des Ziels wird um 3 m bis zum Beginn deines nächsten Zuges reduziert (nicht stapelbar)."
+            }
+          ]
+        },
+        {
+          "name": "Lanze (Spezial)",
+          "description": "2 Hände nötig, wenn du nicht reitest; Nachteil auf Angriffe gegen Ziele in 1,5 m Abstand.",
+          "mount_notes": "Du hast ein Schlachtross namens „Trakan“. Es hat einen Kriegssattel (Vorteil darauf, auf dem Pferd zu bleiben) und eine einfache Lederrüstung (RK = 11 + DEX-Modifikator)."
+        }
+      ]
+    },
+    "equipment": {
+      "currency": {
+        "cp": 0,
+        "sp": 0,
+        "gp": 34,
+        "pp": 0
+      },
+      "weights": {
+        "carried": 46.5,
+        "encumbered_at": 90,
+        "push_drag_lift": 180
+      },
+      "items": [
+        {
+          "name": "Langschwert",
+          "quantity": 1,
+          "weight": 1.5,
+          "item_ref": {
+            "id": "langschwert",
+            "name": "Langschwert"
+          }
+        },
+        {
+          "name": "Kettenpanzer (Schwer, RK = 16, Heimlichkeit-Nachteil)",
+          "quantity": 1,
+          "weight": 25,
+          "item_ref": {
+            "id": "kettenpanzer",
+            "name": "Kettenpanzer"
+          }
+        },
+        {
+          "name": "Wurfspeer",
+          "quantity": 3,
+          "weight": 3,
+          "item_ref": {
+            "id": "wurfspeer",
+            "name": "Wurfspeer"
+          }
+        },
+        {
+          "name": "Lanze",
+          "quantity": 1,
+          "weight": 3,
+          "item_ref": {
+            "id": "lanze",
+            "name": "Lanze"
+          }
+        },
+        {
+          "name": "Feine Kleidung",
+          "quantity": 1,
+          "weight": 3,
+          "item_ref": {
+            "id": "feine-kleidung",
+            "name": "Feine Kleidung"
+          }
+        },
+        {
+          "name": "Insignien: Ring mit Olivenzweig-Emblem",
+          "quantity": 1,
+          "weight": null
+        },
+        {
+          "name": "Halskette mit Eule-Anhänger (Heiliges Symbol)",
+          "quantity": 1,
+          "weight": null
+        },
+        {
+          "name": "Rucksack",
+          "quantity": 1,
+          "weight": 2.5,
+          "contents_listed": [
+            {
+              "name": "Robe",
+              "quantity": 1,
+              "weight": 2,
+              "item_ref": {
+                "id": "robe",
+                "name": "Robe"
+              }
+            },
+            {
+              "name": "Decke",
+              "quantity": 1,
+              "weight": 1.5,
+              "item_ref": {
+                "id": "decke",
+                "name": "Decke"
+              }
+            },
+            {
+              "name": "Zunderkästchen",
+              "quantity": 1,
+              "weight": 0.5,
+              "item_ref": {
+                "id": "zunderkaestchen",
+                "name": "Zunderkästchen"
+              }
+            },
+            {
+              "name": "Lampe",
+              "quantity": 1,
+              "weight": 0.5,
+              "item_ref": {
+                "id": "lampe",
+                "name": "Lampe"
+              }
+            },
+            {
+              "name": "Heiliges Wasser",
+              "quantity": 2,
+              "weight": 1,
+              "item_ref": {
+                "id": "heiliges_wasser",
+                "name": "Heiliges Wasser"
+              }
+            },
+            {
+              "name": "Würfelset (5W6)",
+              "quantity": 1,
+              "weight": null
+            },
+            {
+              "name": "Gebetsschriftrollen",
+              "quantity": 3,
+              "weight": null
+            },
+            {
+              "name": "Ahnentafel-Schriftrolle",
+              "quantity": 1,
+              "weight": null
+            }
+          ],
+          "item_ref": {
+            "id": "rucksack",
+            "name": "Rucksack"
+          }
+        }
+      ],
+      "attuned_magic_items_listed": [
+        {
+          "name": "Schild, +1 mit Olivenzweig-Emblem (RK +3, wenn in deiner Hand)",
+          "quantity": 1,
+          "weight": 3
+        }
+      ]
+    },
+    "companions_and_mounts": [
+      {
+        "name": "Trakan",
+        "type": "Streitross",
+        "img": "../../assets/icons/pcs/Trakan.png",
+        "gear": [
+          "Kriegssattel (Vorteil darauf, auf dem Pferd zu bleiben)",
+          "Einfache Lederrüstung (RK = 11 + DEX-Modifikator)"
+        ],
+        "statblock_reference": "streitross"
+      }
+    ],
+    "personality": {
+      "traits": [
+        "Menschen, die Hilfe benötigen, werden sie von dir bekommen, solange du im Rahmen des Gesetzes helfen kannst."
+      ],
+      "ideals": [
+        "Das Gesetz muss von allen eingehalten werden."
+      ],
+      "motivation": [
+        "Du willst, wie dein Vater vor dir, ein berühmter Abenteuerer werden und ihn stolz machen."
+      ],
+      "flaws": [
+        "Du bist sehr naiv und vertraust jedem, der dich nicht aktiv bedroht."
+      ]
+    },
+    "backstory": {
+      "summary": "Dein Vater, der berühmte Odysseus von Ethaka (Held der letzten großen Schlacht des Königreichs), hat dich nach seinem Vorbild aufgezogen und dich zu einem Paladin der Athene gemacht. Als du erwachsen wurdest, schickte er dich in die Welt, damit du dir selbst einen Namen machst. Beim Abschied floßen keine Tränen; er meinte, irgendwann werdet ihr euch wiedersehen."
+    }
+  },
+  "id": "astyaxvonethaka"
+}

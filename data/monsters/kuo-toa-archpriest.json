@@ -1,0 +1,82 @@
+{
+  "name": "Kuo-Toa Archpriest",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr6",
+      "monster-manual",
+      "kuo-toa"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 13,
+  "hp": {
+    "average": 97,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 30
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 16,
+    "int": 13,
+    "wis": 16,
+    "cha": 14
+  },
+  "skills": {
+    "Perception": 9,
+    "Religion": 6
+  },
+  "languages": [
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The kuo-toa can breathe air and water."
+    },
+    {
+      "name": "Otherwordly Perception",
+      "text": "The kuo-toa can sense the presence of any creature within 30 feet of it that is invisible or on the Ethereal Plane. It can pinpoint such a creature that is moving."
+    },
+    {
+      "name": "Slippery",
+      "text": "The kuo-toa has advantage on ability checks and saving throws made to escape a grapple."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The kuo-toa is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). The kuo-toa has the following cleric spells prepared:\n\n* Cantrips (at will): <i>guidance, sacred flame, thaumaturgy</i>\n\n* 1st level (4 slots): <i>detect magic, sanctuary, shield of faith</i>\n\n* 2nd level (3 slots): <i>hold person, spiritual weapon</i>\n\n* 3rd level (3 slots): <i>spirit guardians, tongues</i>\n\n* 4th level (3 slots): <i>control water, divination</i>\n\n* 5th level (2 slots): <i>mass cure wounds, scrying</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The kuo-toa makes two melee attacks."
+    },
+    {
+      "name": "Scepter",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 14 (4d6) lightning damage."
+    },
+    {
+      "name": "Unarmed Strike",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

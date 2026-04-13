@@ -1,0 +1,72 @@
+{
+  "name": "Windwalker",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 13,
+  "hp": {
+    "average": 74,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 14,
+    "int": 16,
+    "wis": 16,
+    "cha": 10
+  },
+  "skills": {
+    "Arcana": 7,
+    "Nature": 7,
+    "Perception": 7,
+    "Survival": 7
+  },
+  "languages": [
+    "Any three languages"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Arcane Insights",
+      "text": "The windwalker has advantage on\nsaving throws against spells and magical effects."
+    },
+    {
+      "name": "Natural Recovery (2/Day)",
+      "text": "When the windwalker\nfinishes a short rest, it can regain up to 4 total\nexpended spell slots."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The windwalker is a 9th-level\nspellcaster. Its spellcasting ability is wisdom (spell\nsave DC 15, +7 to hit with spell attacks). The\nwindwalker has the following druid spells prepared:\n\n* Cantrips (at will): <i>druidcraft, gust, thunderclap</i>\n\n* 1st level (4 slots): <i>entangle, faerie fire, fog cloud</i>\n\n* 2nd level (3 slots): <i>barkskin, gust of wind, levitate, misty step</i>\n\n* 3rd level (3 slots): <i>call lightning, fly, sleet storm, wind wall</i>\n\n* 4th level (3 slots): no spells learned for this level\n\n* 5th level (1 slot): no spells learned for this level"
+    },
+    {
+      "name": "Wild Shape Giant Eagle (2/Day)",
+      "text": "As a bonus action,\nthe windwalker transforms into a giant eagle for up\nto four hours. When the eagle is reduced to 0 hit\npoints, the windwalker reverts to its normal form,\nwith any excess damage carrying over to the\nwindwalker's hit points."
+    },
+    {
+      "name": "Wind Shield",
+      "text": "The area around the windwalker is\nenveloped in chaotic winds. The area within 15 feet\nof the windwalker is considered difficult terrain for\nenemy creatures. Additionally, ranged attacks\nagainst the windwalker are made with disadvantage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Quarterstaff",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach\n5 ft., one target. Hit: 3 (1d8 - 1) bludgeoning\ndamage, or 4 (1d10 - 1) bludgeoning damage if\nused with two hands."
+    }
+  ],
+  "source": "creature"
+}

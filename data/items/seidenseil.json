@@ -1,0 +1,45 @@
+{
+  "id": "seidenseil",
+  "type": "item",
+  "name": "Seidenseil",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 2.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 10,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Das 15 m lange Seidenseil hat 2 TP und zum Bersten braucht man einen STR-Wurf (SG 17).",
+  "tags": [
+    "abenteuer",
+    "bewegung",
+    "fesseln",
+    "klettern",
+    "seil"
+  ]
+}

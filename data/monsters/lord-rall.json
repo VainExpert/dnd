@@ -1,0 +1,86 @@
+{
+  "name": "Lord Rall",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr8",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 12,
+  "hp": {
+    "average": 91,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 10
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 10,
+    "con": 14,
+    "int": 20,
+    "wis": 15,
+    "cha": 16
+  },
+  "skills": {
+    "Arcana": 8,
+    "Deception": 6,
+    "History": 8,
+    "Insight": 5
+  },
+  "languages": [
+    "Common",
+    "Deep Speech",
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Everchanging Changers",
+      "text": "The Court of All Flesh are\nbeings of pure chaos. Because their minds are pure\ndisorder, they cannot be driven mad or charmed\nand any attempts to magically compel their behavior fails."
+    },
+    {
+      "name": "Formless Shape",
+      "text": "Lord Rall is immune to any\nspell or effect that would alter his form."
+    },
+    {
+      "name": "Shapechanger",
+      "text": "As an action, Lord Rall can polymorph into a Small or Medium creature or back\ninto his true form. His statistics, other than his size,\nare the same in each form. Any worn or carried\nequipment isn’t transformed. He reverts to his true\nform if he dies."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "Lord Rall is a 10th-level spellcaster.\nHis spellcasting ability is Intelligence (spell save DC\n16, +8 to hit with spell attacks). He has the following wizard spells prepared:\n\n* Cantrips (at will): <i>mage hand, minor illusion, ray of frost</i>\n\n* 1st level (4 slots): <i>mage armor, magic missile, sleep</i>\n\n* 2nd level (3 slots): <i>ray of enfeeblement, mirror image</i>\n\n* 3rd level (3 slots): <i>lightning bolt, haste</i>\n\n* 4th level (3 slots): <i>black tentacles, blight</i>\n\n* 5th level (2 slots): <i>cloudkill</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Lord Rall makes two melee attacks\nwith the Staff of Changing."
+    },
+    {
+      "name": "The Staff of Changing (Recharge 5–6)",
+      "type": "special",
+      "text": "Lord Rall’s\nstaff remakes a target into any shape he desires.\nHe casts polymorph from it as an action. The range\nis 30 feet, and the Wisdom saving throw has a DC\nof 16. Lord Rall does not need to concentrate on\nthis spell to maintain it."
+    },
+    {
+      "name": "Greatstaff",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach\n5 ft., one target. Hit: 8 (2d6 + 1) bludgeoning\ndamage, or 10 (2d8 + 1) bludgeoning damage if\nwielded with two hands."
+    },
+    {
+      "name": "Any Pile of Organs Will Do (Recharge 6)",
+      "type": "special",
+      "text": "When he\ndrops to 0 hit points, Lord Rall can reform himself\nfrom any corpse within 120 feet instead of falling\nunconscious. Lord Rall does not need to see the\ncorpse in order to use it. The process happens in\nan instant, and the newly formed Lord Rall appears\nwith only half of his maximum hit points."
+    }
+  ],
+  "source": "creature"
+}

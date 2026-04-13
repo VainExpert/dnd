@@ -1,0 +1,44 @@
+{
+  "id": "klebende-grossaxt",
+  "type": "item",
+  "name": "Klebende Großaxt",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese Großaxt fühlt sich sehr klebrig an. Sie gibt einen +1 Bonus auf Angriffs- und Schadenswürfe. Manchmal scheint sie in getroffenen Kreaturen kleben zu bleiben und mehr Schaden zu verursachen.",
+  "tags": [
+    "waffe",
+    "kampf",
+    "magisch",
+    "bonus"
+  ]
+}

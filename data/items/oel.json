@@ -1,0 +1,46 @@
+{
+  "id": "oel",
+  "type": "item",
+  "name": "Öl",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1,
+    "currency": "sp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Kann als Brennstoff genutzt werden oder über jemanden gegossen werden. Brennstoff: für Lampen und Laternen, brennt für 6 h (muss nicht durchgängig sein). Auf Boden gießen: Kann ein 1,5 m Quadrat bedecken, angezündet brennt es für 2 Runden (12 s) und macht 5 Feuerschaden an jeder Kreatur, die reingeht oder seine Runde darin beendet. Über Kreatur gießen: Als Angriff kann eine bis 6 m entfernte Kreatur getroffen werden. Das Ziel muss einen DEX-Rettungswurf (SG 8 + DEX-Modifikator + Übungsbonus) machen oder wird übergossen. Wenn das Ziel innerhalb 1 min nach Übergießen Feuerschaden nimmt, bekommt sie zusätzlich 5 Feuerschaden vom brennenden Öl.",
+  "tags": [
+    "abenteuer",
+    "kampf",
+    "licht",
+    "nützlich",
+    "konsumiert",
+    "brennstoff"
+  ]
+}

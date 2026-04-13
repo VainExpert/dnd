@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-ewiger-leim",
+  "type": "item",
+  "name": "Ewiger Leim",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "legendär",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese zähflüssige, weiße Masse kann zwei Gegenstände dauerhaft miteinander verkleben. Der Tiegel oder die Flasche zur Aufbewahrung des Leims muss im Inneren mit Öl der Glätte  bestrichen sein. Wenn er gefunden wird, enthält der Behälter 1W6+1 mal 20 Milliliter Leim. 20 Milliliter Leim reichen aus, um ein Quadrat mit 0,3 Metern Kantenlänge zu bedecken. Der Leim braucht eine Minute, um auszuhärten. Nach dem Aushärten kann die Klebeverbindung nur mit Universellem Lösungsmittel, Öl der Körperlosigkeit oder mit dem Zauber Wunsch  gelöst werden.",
+  "tags": []
+}

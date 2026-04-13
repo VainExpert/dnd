@@ -1,0 +1,81 @@
+{
+  "name": "Mantis Knight",
+  "size": "Medium",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr5",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 16,
+  "hp": {
+    "average": 71,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 18,
+    "con": 14,
+    "int": 11,
+    "wis": 13,
+    "cha": 12
+  },
+  "skills": {
+    "Acrobatics": 7,
+    "Deception": 4,
+    "Nature": 3,
+    "Persuasion": 4,
+    "Perception": 6,
+    "Stealth": 7,
+    "Survival": 4
+  },
+  "languages": [
+    "Common",
+    "Elven",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Sunbeetle Armor",
+      "text": "The Knight’s armor is perpetually\nslick. Any attempts to grapple the Knight\nhave disadvantage."
+    },
+    {
+      "name": "Fey Ancestry",
+      "text": "Magic cannot put the Knight\nto sleep."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The Knight has advantage\non saving throws against spells and other\nmagical effects."
+    },
+    {
+      "name": "Command Fey",
+      "text": "As a member of the Court\nof Arcadia, the Knight can cast <i>dominate\nmonster</i> (DC 12) at will on any fey creature or elf."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The Knight’s innate spellcasting\nability is Charisma (spell save DC 12).\nThe Knight can innately cast the following spells,\nrequiring no material components:\n\n* At will: <i>heroism, shield of faith</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The Knight makes four attacks\nwith its rapiers, or makes two attacks and casts\nheroism or shield of faith on an ally."
+    },
+    {
+      "name": "Rapier",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5\nft., one target. Hit: 8 (1d8 + 4) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

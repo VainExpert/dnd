@@ -1,0 +1,18 @@
+{
+  "id": "nathairs-niedertracht",
+  "name": "Nathairs Niedertracht",
+  "level": 2,
+  "school": "Illusionsmagie",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "G, M (Krustenstück von einem Apfelkuchen)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du füllst einen 6 m Würfel mit Feen- und drakonischer Magie.\nWürfle 1W4 um den magischen Effekt zu bestimmen.\nWiederhole den Wurf am Anfang von jedem deiner Züge bis der Zauber endet. Pro Wurf kannst du den Würfel um 3 m verschieben."
+}

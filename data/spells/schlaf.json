@@ -1,0 +1,18 @@
+{
+  "id": "schlaf",
+  "name": "Schlaf",
+  "level": 1,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "27 m",
+  "components": "V, G, M (Prise feiner Sand oder Rosenblüttenblätter oder 1 Grille)",
+  "duration": "1 min",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du versetzt Kreaturen in magischen Schlaf.\nWirf 5W8, die Summe ergibt die maximale TP-Zahl an Kreaturen auf die der Zauber gewirkt werden kann.\nKreaturen in Abstand von 6 m zu Punkt deiner Wahl in Reichweite sind in aufsteigender aktueller TP-Anzahl betroffen (Bewusstlose werden ignoriert).\nSubtrahiere die aktuellen TP jeder Kreatur von der Summe. Die aktuellen TP der nächsten zu betreffende Kreatur muss kleiner oder gleich der verbleibenden Summe sein um betroffen zu werden.\nJede betroffene Kreatur verliert sein Bewusstsein. Der Zustand hält an für die Wirkungsdauer, der Schlafende Schaden erleidet oder jemand den Schlafenden mit einer Aktion aufweckt.\nDer Zauber wirkt nicht auf Untote oder Kreaturen mit Verteidigung gegen Bezauberung.\nAuf höheren Level gewirkt: pro Level 2W8 mehr für TP Summe"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "parfuem-des-verhexens",
+  "type": "item",
+  "name": "Parfüm des Verhexens",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 25,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Die Viole enthält eine Verwendung eines magischen Parfüms. Auftragen dauert eine Aktion und es hält für 1 h. Während es aufgetragen ist gibt es Vorteil auf Täuschen- und Überzeugen-Würfe um eine Kreatur in 1,5 m zum Träger zu beeinflussen.",
+  "tags": [
+    "parfüm",
+    "bezauebrn",
+    "cha",
+    "vorteil",
+    "täuschen",
+    "überzeugen",
+    "konsumiert"
+  ]
+}

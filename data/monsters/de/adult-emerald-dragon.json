@@ -1,0 +1,79 @@
+{
+  "name": "Erwachsener Smaragddrache",
+  "size": "Riesig",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "huge",
+      "dragon",
+      "cr15",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 20,
+  "hp": {
+    "average": 127,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80,
+    "swim": 40
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 20,
+    "con": 12,
+    "int": 20,
+    "wis": 16,
+    "cha": 18
+  },
+  "skills": {
+    "Arcana": 10,
+    "Insight": 8,
+    "Perception": 8,
+    "Religion": 10
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "15",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache\neinen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Störungsaura",
+      "text": "Feinde im Inneren30 feetmüssen\nin jeder Runde einenDC 18Intelligenz-Rettungswurf\nausführen, um Zauber aufrechtzuerhalten, die Konzentration erfordern."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache führt drei Angriffe aus: einen\nmit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite:3 m .,\nein Ziel. Treffer: 15 (2d10 + 4) Durchdringungsschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite:1,5 m .,\nein Ziel. Treffer: 11 (2d6 + 4) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen; Reichweite 4,5 m.,\nein Ziel. Treffer: 13 (2d8 + 4) Bludgeoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

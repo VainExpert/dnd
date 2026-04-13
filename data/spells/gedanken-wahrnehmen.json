@@ -1,0 +1,18 @@
+{
+  "id": "gedanken-wahrnehmen",
+  "name": "Gedanken wahrnehmen",
+  "level": 2,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (9 m Sphäre)",
+  "components": "V, G, M (Stück Kupfer)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Wenn du den Zauber wirkst und in jedem folgenden Zug auch, kannst du dich auf eine Kreatur im Abstand von bis zu 9 m, das du sehen kannst, konzentrieren. Kreaturen, die nicht sprechen können oder einen INT-Wert kleiner als 3 haben, sind nicht betroffen.\nDu erfährst zunächst oberflächliche Gedanken. Bei tieferem Eindringen muss das Ziel einen WIS-Rettungswurf machen. Bei Fehlschlag erhältst du Einsicht in Motive, Emotionen, sowie übergeordnete Gedanken (etwas, was das Ziel beschäftigt). Bei Erfolg endet der Zauber.\nIn jedem Fall weiß das Ziel, dass du in die Gedanken eindringst.\nDein aktuelles Ziel kann einen INT-Wurf gegen dich machen, bei Erfolg endet der Zauber.\nAntworten auf verbale Fragen formen natürlich als Gedanken.\nWenn du den Zauber wirkst, kannst du im Umkreis von 9 m nach Gedanken von anderen Kreaturen suchen. Blockiert von 60 cm Stein, 5 cm Metall oder dünnes Blei. Wenn Kreaturen aufgespürt werden, kannst du deren Gedanken, wie oben, lesen."
+}

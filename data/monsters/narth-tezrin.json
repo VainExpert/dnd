@@ -1,0 +1,63 @@
+{
+  "name": "Narth Tezrin",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr0",
+      "storm-kings-thunder",
+      "tethyrian human"
+    ]
+  },
+  "alignment": "chaotic good",
+  "ac": 12,
+  "hp": {
+    "average": 18,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 15,
+    "con": 10,
+    "int": 12,
+    "wis": 14,
+    "cha": 16
+  },
+  "skills": {
+    "Insight": 4,
+    "Investigation": 3,
+    "Perception": 6,
+    "Persuasion": 5
+  },
+  "languages": [
+    "Common",
+    "Dwarvish"
+  ],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Cunning Action",
+      "text": "On each of his turns, Narth can use a bonus action to take the Dash, Disengage, or Hide action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) piercing damage."
+    },
+    {
+      "name": "Hand Crossbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6+2) piercing damage. Narth carries twenty crossbow bolts."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "schattenklinge",
+  "name": "Schattenklinge",
+  "level": 2,
+  "school": "Illusionsmagie",
+  "casting_time": "1 Bonus Aktion",
+  "range": "Selbst",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du erschaffst für die Wirkungsdauer eine Klinge aus Schatten in deiner Hand.\nEs zählt als einfache Nahkampfwaffe, mit der du geübt bist, und das die Eigenschaften Leicht, Finesse und Geworfen mit einer Reichweite () hat. Es macht bei Treffer 2W8 psychischen Schaden. Gegen eine Kreatur in gedimmten Licht oder in Dunkelheit hast du Vorteil beim Angriffswurf.\nWenn du die Waffe loslässt oder wirfst, verschwindet sie am Ende deines Zuges. Für die restliche Wirkungsdauer kannst du das Schwert durch eine Bonus Aktion erneut hervorrufen.\n\nAuf höheren Level gewirkt: Level 3 / 4 Platz: 3W8 psychischer Schaden, Level 5 / 6 Platz: 4W8 psychischer Schaden, Level 7 oder höherer Platz: 5W8 psychischer Schaden"
+}

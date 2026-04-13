@@ -1,0 +1,64 @@
+{
+  "name": "Faldric the Archer",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 15,
+  "hp": {
+    "average": 44,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 16,
+    "con": 13,
+    "int": 11,
+    "wis": 14,
+    "cha": 13
+  },
+  "skills": {
+    "Acrobatics": 5,
+    "Perception": 3
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Acute Sight",
+      "text": "Faldric has advantage on Wisdom\n(Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Faldric makes two attacks with either his longbow or his shortsword."
+    },
+    {
+      "name": "Longbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +5 to hit,\nrange 150/600 ft., one target. Hit: 7 (1d8 + 3)\npiercing damage."
+    },
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to\nhit, reach 5 ft., one target. Hit: 6 (1d6 + 3)\npiercing damage."
+    }
+  ],
+  "source": "creature"
+}

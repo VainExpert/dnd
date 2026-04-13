@@ -1,0 +1,74 @@
+{
+  "name": "Mi-Go",
+  "size": "Medium",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "medium",
+      "plant",
+      "cr5",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 17,
+  "hp": {
+    "average": 76,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 19,
+    "con": 21,
+    "int": 25,
+    "wis": 15,
+    "cha": 13
+  },
+  "skills": {
+    "Arcana": 10,
+    "Deception": 7,
+    "Medicine": 5,
+    "Perception": 5,
+    "Stealth": 7
+  },
+  "languages": [
+    "Common",
+    "Mi-go",
+    "Void Speech"
+  ],
+  "challenge": {
+    "cr": "5",
+    "xp": 1800,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Astral Travelers",
+      "text": "Mi-go do not require air or heat to survive, only sunlight (and very little of that). They can enter a sporulated form capable of surviving travel through the void and returning to consciousness when conditions are right."
+    },
+    {
+      "name": "Sneak Attack (1/Turn)",
+      "text": "The mi-go does an extra 7 (2d6) damage when it hits a target with a claw attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the mi-go that isn't incapacitated and the mi-go doesn't have disadvantage on the attack roll."
+    },
+    {
+      "name": "Disquieting Technology",
+      "text": "The mi-go are a highly advanced race, and may carry items of powerful technology. Mi-go technology can be represented using the same rules as magic items, but their functions are very difficult to determine: identify is useless, but an hour of study and a successful DC 19 Arcana check can reveal the purpose and proper functioning of a mi.go item."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The mi-go makes two attacks with its claws."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (3d6 + 4) slashing damage, and the target is grappled (escape DC 13). If both claw attacks strike the same target in a single turn, the target takes an additional 13 (2d12) psychic damage."
+    }
+  ],
+  "source": "creature"
+}

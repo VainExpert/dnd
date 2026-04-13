@@ -1,0 +1,63 @@
+{
+  "name": "Fire Giant Howdah",
+  "size": "Huge",
+  "type": {
+    "type": "giant",
+    "tags": [
+      "huge",
+      "giant",
+      "cr9",
+      "out-of-the-box-5e"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 18,
+  "hp": {
+    "average": 162,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 25,
+    "dex": 9,
+    "con": 23,
+    "int": 10,
+    "wis": 14,
+    "cha": 13
+  },
+  "skills": {
+    "Athletics": 11,
+    "Perception": 6
+  },
+  "languages": [
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Howdah",
+      "text": "The fire giant carries a compact fort on\nits back. Up to four Medium creatures can ride in\nthe fort without squeezing. Creatures in the fort\nare 15 feet from the ground, out of range of melee\nweapons. Creatures in the fort have three-quarters\ncover against attacks and effects from outside it. If\nthe fire giant dies, creatures in the fort are placed\nin unoccupied spaces within 5 feet of the fire giant."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The giant makes two greatsword\nattacks."
+    },
+    {
+      "name": "Greatsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit,\nreach 10 ft., one target. Hit: 28 (6d6 + 7) slashing\ndamage."
+    },
+    {
+      "name": "Rock",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +11 to hit, range\n60/240 ft., one target. Hit: 29 (4d10 + 7) bludgeoning\ndamage."
+    }
+  ],
+  "source": "creature"
+}

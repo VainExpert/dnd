@@ -1,0 +1,63 @@
+{
+  "name": "Marut",
+  "size": "Large",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr25",
+      "mordenkainens-tome-of-foes",
+      "inevitable"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 22,
+  "hp": {
+    "average": 432,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 28,
+    "dex": 12,
+    "con": 26,
+    "int": 19,
+    "wis": 15,
+    "cha": 18
+  },
+  "skills": {
+    "Insight": 10,
+    "Intimidation": 12,
+    "Perception": 10
+  },
+  "languages": [
+    "all but rarely speaks"
+  ],
+  "challenge": {
+    "cr": "25",
+    "proficiency_bonus": 8
+  },
+  "traits": [
+    {
+      "name": "Immutable Form",
+      "text": "The marut is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The marut's innate spellcasting ability is Intelligence (spell save DC 20). The marut can innately cast the following spell, requiring no material components.\n\n* At will: <i>plane shift </i>(self only)"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "text": "If the marut fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The marut has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

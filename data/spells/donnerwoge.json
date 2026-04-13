@@ -1,0 +1,19 @@
+{
+  "id": "donnerwoge",
+  "name": "Donnerwoge",
+  "level": 1,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (4,5 m Würfel)",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Druide",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Eine Woge von Schallenergie bricht aus dir heraus.\nAlle Kreaturen in einem 4,5 m Würfel, von dir aus, müssen einen CON-Rettungswurf machen.\nBei Fehlschlag: 2W8 Schallschaden und 3 m von dir weggestoßen\nBei Erfolg: Hälfte des Schadens und nicht weggestoßen\nUngesicherte Objekte, die vollständig im Wirkungsbereich sind, werden 3 m weggestoßen.\nDer Zauber bewirkt einen 90 m weit hörbaren Knall.\n\nAuf höheren Level gewirkt: pro Level 1W8 mehr Schallschaden"
+}

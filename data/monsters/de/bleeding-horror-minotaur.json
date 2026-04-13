@@ -1,0 +1,80 @@
+{
+  "name": "Blutiger Horror: Minotaurus",
+  "size": "Groß",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "large",
+      "undead",
+      "cr6",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 14,
+  "hp": {
+    "average": 75,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 15,
+    "int": 7,
+    "wis": 10,
+    "cha": 16
+  },
+  "skills": {
+    "Perception": 6,
+    "Survival": 6
+  },
+  "languages": [
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Last",
+      "text": "Wenn sich der Minotaurus mindestens10 feet  geradlinig auf ein Ziel zubewegt\nund es dann im selben Zug mit einem Hornstoß trifft, erleidet das Ziel\nzusätzliche 9 (2d8) Durchdringungsschaden. Handelt es sich bei dem Ziel um eine Kreatur, muss sie\neinenDC 15  Stärke-Rettungswurf bestehen oder wird bis zu10 feet  Weit weggestoßen und\nzu Boden geworfen."
+    },
+    {
+      "name": "Schreckliches Aussehen",
+      "text": "Alle Wesen, die den Minotaurus direkt ansehen,\nmüssen einenDC 14Weisheits-Rettungswurf durchführen oder sind 1 Minute lang verängstigt. Ein\nWesen kann den Rettungswurf am Ende jedes seiner Züge wiederholen und\nden Effekt auf sich selbst bei Erfolg beenden. Wenn der Rettungswurf eines Wesens erfolgreich ist\noder der Effekt für es endet, ist das Wesen für die nächsten 24 Stunden immun gegen das schreckliche\nAussehen des Minotaurus."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Minotaurus hat einen Vorteil bei Rettungswürfen\ngegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Angriffe des Minotaurus sind magischer Natur."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der blutige Horror-Minotaurus setzt seinen „Gore“-Angriff ein und\nführt einen Angriff mit seiner Klaue und einen mit seiner Großaxt aus, oder zwei mit seinen\nKlauen."
+    },
+    {
+      "name": "Um",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite10 ft: , ein Ziel. Treffer: 13\n(2d8 + 4) Durchdringungsschaden."
+    },
+    {
+      "name": "Greataxe",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer:\n11 (2d6 + 4) Schnittschaden."
+    },
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite10 ft: , ein Ziel. Treffer: 13\n(2d8 + 4) Schnittschaden."
+    }
+  ],
+  "source": "creature"
+}

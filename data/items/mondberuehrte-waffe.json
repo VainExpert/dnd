@@ -1,0 +1,43 @@
+{
+  "id": "mondberuehrete-waffe",
+  "type": "item",
+  "name": "Mondberührte Waffe",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Kann jede geschmiedete Waffe sein. In der Dunkelheit leuchtet die Klinge mit Mondlicht und gibt 4,5 m helles Licht und weitere 4,5 m gedimmtes Licht ab.",
+  "tags": [
+    "magisch",
+    "waffe",
+    "licht"
+  ]
+}

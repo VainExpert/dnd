@@ -1,0 +1,46 @@
+{
+  "id": "giftdolch",
+  "type": "item",
+  "name": "Giftdolch",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1500,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": "Morgen"
+  },
+  "uses": {
+    "max": 1,
+    "recharge": "Morgen"
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Du erhältst einen Bonus von +1 auf Angriffs- und Schadenswürfe, die du mit dieser magischen Waffe ausführst. Du kannst als Aktion ein dickflüssiges, schwarzes Gift auf der Klinge erscheinen lassen. Das Gift bleibt 1 min lang wirksam, oder bis ein Angriff mit dieser Waffe eine Kreatur trifft. Diese Kreatur muss einen SG-15 CON-Rettungswurf bestehen, oder sie erleidet 2W10 Giftschaden und ist 1 min lang vergiftet. Der Dolch kann erst im nächsten Morgengrauen wieder auf diese Weise verwendet werden.",
+  "tags": [
+    "magisch",
+    "dolch",
+    "gift",
+    "angriff",
+    "waffe",
+    "schaden"
+  ]
+}

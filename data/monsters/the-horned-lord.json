@@ -1,0 +1,81 @@
+{
+  "name": "The Horned Lord",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr22",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 23,
+  "hp": {
+    "average": 285,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 20,
+    "wis": 22,
+    "cha": 20
+  },
+  "skills": {
+    "\"Arcana": 12,
+    "Deception": 12,
+    "History": 12,
+    "Insight": 13
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "22",
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Special Equipment",
+      "text": "The Horned Lord wears a cloak of protection,\nring of spell turning, and a black robe of the archmagi. He has +1 to\nall saving throws while wearing the cloak. He also wields the infamous\n<i>Harrowblade</i> (see sidebar for more details)."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The Horned Lord is an 18th level spellcaster. Its\nspellcasting ability is Intelligence (spell save DC 22, +14 to hit with spell\nattacks). The Horned Lord has the following wizard spells prepared:\n\n* Cantrips (at will): <i>acid splash, chill touch, ray of frost</i>\n\n* 1st level (4 slots): <i>detect magic, magic missile, shield, thunderwave</i>\n\n* 2nd level (3 slots): <i>acid arrow, blur, detect thoughts, levitate</i>\n\n* 3rd level (3 slots): <i>animate dead, dispel magic, fireball, lightning bolt</i>\n\n* 4th level (3 slots): <i>confusion, ice storm</i>\n\n* 5th level (3 slots): <i>cloudkill, scrying</i>\n\n* 6th level (1 slot): <i>disintegrate, wall of ice</i>\n\n* 7th level (1 slot): <i>finger of death, teleport</i>\n\n* 8th level (1 slot): <i>dominate monster, power word stun</i>\n\n* 9th level (1 slot): <i>power word kill</i>"
+    },
+    {
+      "name": "Turn Resistance",
+      "text": "The Horned Lord has advantage on saving throws\nagainst any effect that turns undead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The Horned Lord has advantage on saving throws\nagainst spells and other magical effects."
+    },
+    {
+      "name": "Regeneration",
+      "text": "The Horned Lord regains 1d6 hit points at the beginning\nof his turn if he has at least 1 hit point."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The Horned Lord makes three attacks with Harrowblade."
+    },
+    {
+      "name": "Harrowblade",
+      "type": "special",
+      "text": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target.\nHit: 12 (2d6+5) slashing damage plus 14 (4d6) cold damage. On a natural\n19 or 20 attack roll, living creatures must make a DC 20 Wisdom saving\nthrow, taking 14 (4d6) psychic damage on a failed save, or half as much\ndamage on a successful one."
+    },
+    {
+      "name": "Dominate (Recharge 5–6)",
+      "type": "special",
+      "text": "The Horned Lord speaks in a commanding\nvoice, calling on all to bow down to him. Each creature within 60 feet\nof the Horned Lord must succeed on a DC 20 Wisdom saving throw or\nbe incapacitated for 1 minute. A creature can repeat the saving throw at\nthe end of each of its turns, ending the effect on a success. If a creature’s\nsaving throw is successful or the effect ends for it, the creature is immune\nto the Horned Lord’s Dominate for the next 24 hours."
+    }
+  ],
+  "source": "creature"
+}

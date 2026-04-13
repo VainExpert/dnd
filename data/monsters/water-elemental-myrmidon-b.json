@@ -1,0 +1,48 @@
+{
+  "name": "Water Elemental Myrmidon (B)",
+  "size": "Medium",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr7",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 18,
+  "hp": {
+    "average": 127,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 40
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 15,
+    "int": 8,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "Aquan",
+    "one language of its creator's choice"
+  ],
+  "challenge": {
+    "cr": "7",
+    "xp": 2900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Magic Weapons",
+      "text": "The myrmidon's weapon attacks are magical."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

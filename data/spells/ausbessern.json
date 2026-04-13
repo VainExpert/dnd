@@ -1,0 +1,20 @@
+{
+  "id": "ausbessern",
+  "name": "Ausbessern",
+  "level": 0,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 min",
+  "range": "Berührung",
+  "components": "V, G, M (2 Magnetsteine)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Druide",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Repariert eine Bruchstelle oder einen Riss in einem Gegenstand, den du berührst.\nSolange der Riss oder die Bruchstelle in keiner Dimension größer als 9 cm ist, bleibt keine Spur des vorherigen Schadens übrig.\nStellt nur die physische Form wieder her, nicht die Magie, die im Gegenstand war."
+}

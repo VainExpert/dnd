@@ -1,0 +1,98 @@
+{
+  "name": "Maphistal, Second of Orcus",
+  "size": "Large",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr26",
+      "tome-of-horrors",
+      "demon lord"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 21,
+  "hp": {
+    "average": 400,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 28,
+    "dex": 16,
+    "con": 24,
+    "int": 18,
+    "wis": 20,
+    "cha": 23
+  },
+  "skills": {
+    "Deception": 14,
+    "Intimidation": 14,
+    "Perception": 13
+  },
+  "languages": [
+    "all",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "26",
+    "proficiency_bonus": 8
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "Maphistal’s spellcasting ability is Charisma\n(spell save DC 22, +14 to hit with spell attacks). It can innately cast the following spells requiring no material components:\n\n* At will: <i>circle of death, detect evil and good, detect magic, dispel magic</i>\n\n* 3/day: <i>animate dead, blight, hallow, suggestion, telekinesis</i>\n\n* 1/day: <i>conjure fiend, fire storm, power word stun</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "text": "If Maphistal fails a saving throw, he can\nchoose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "Maphistal has advantage on saving throws against\nspells and other magical effects."
+    },
+    {
+      "name": "Magic Weapon",
+      "text": "Maphistal’s melee attacks are magical."
+    },
+    {
+      "name": "Rampage",
+      "text": "When Maphistal reduces a creature to 0 hit points with a\nmelee attack on its turn, Maphistal can take a bonus action to move up to\nhalf its speed and make a bite attack."
+    },
+    {
+      "name": "Unholy Aura",
+      "text": "Malevolent shadows swirl around Maphistal and radiate\nout from it in a 30-foot radius. Non-evil creatures in this area have\ndisadvantage on attack rolls against Maphistal and its allies."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Maphistal makes three attacks: one with its bite and two\nwith its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +17 to hit, reach 5 ft., one target. Hit:\n23 (4d6 + 9) piercing damage. If the target is a creature, it must\nsucceed on a DC 20 Constitution saving throw against disease or\nbecome poisoned until the disease is cured. Every 24 hours that\nelapse, the target must repeat the saving throw, reducing its hit point\nmaximum by 5 (1d10) on a failure. The disease is cured on a success.\nThe target dies if the disease reduces its hit point maximum to 0. This\nreduction to the target’s hit point maximum lasts until the disease is\ncured. The disease can be magically cured by a greater restoration\nor heal spell."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit:\n27 (4d8 + 9) slashing damage. If the target is a creature, it must make\na DC 20 Constitution saving throw. On a failure, the target’s Dexterity\nscore is reduced by 1d4. The target dies if this reduces its Dexterity to 0.\nOtherwise, the reduction lasts until the target finishes a long rest."
+    },
+    {
+      "name": "Teleport",
+      "type": "special",
+      "text": "Maphistal magically teleports, along with any equipment it\nis wearing or carrying, up to 120 feet to an unoccupied space it can see."
+    },
+    {
+      "name": "Summon (1/day)",
+      "type": "special",
+      "text": "Maphistal summons 1d12 dretches, 1d6 glabrezus,\n1d6 hezrous, 1d4 nalfeshnees, 1d3 marilith, or 1 balor. The summoned\ndemon appears in an unoccupied space within 60 feet of Maphistal, but\ncan’t summon other demons. It remains for 1 minute, until it or Maphistal\nis slain, or until Maphistal takes an action to dismiss it."
+    }
+  ],
+  "source": "creature"
+}

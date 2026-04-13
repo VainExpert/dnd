@@ -1,0 +1,62 @@
+{
+  "name": "Medium Acid Elemental",
+  "size": "Medium",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr5",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 68,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 80
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 16,
+    "con": 19,
+    "int": 6,
+    "wis": 11,
+    "cha": 11
+  },
+  "skills": {
+    "Stealth": 6
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Acid",
+      "text": "A creature that touches the acid elemental or hits it with a melee\nattack while within 5 feet of it takes 5 (2d4) acid damage. Any nonmagical\nweapon made of metal or wood that hits the acid elemental corrodes.\nAfter dealing damage, the weapon takes a permanent and cumulative\n–1 penalty to damage rolls. If its penalty drops to –5, the weapon is\ndestroyed. Nonmagical ammunition made of metal or wood that hits the\nacid elemental is destroyed after dealing damage. The acid elemental can\neat through 2-inch-thick, nonmagical wood or metal in 1 round."
+    },
+    {
+      "name": "Fumes",
+      "text": "Creatures who begin their turn within 5 feet of the acid\nelemental must succeed on a DC 15 Constitution saving throw or be\npoisoned until the start of their next turn. On a successful saving throw,\nthe creature is immune to the elemental’s fumes for 24 hours."
+    },
+    {
+      "name": "Vulnerability to Water",
+      "text": "For every 5 feet that the elemental moves in\nwater, or for every gallon of water splashed on it, it takes 1 fire damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9\n(1d8 + 5) bludgeoning damage plus 14 (4d6) acid damage. In addition,\nnonmagical armor worn by the target is partly dissolved and takes a\npermanent and cumulative –1 penalty to the AC it offers. The armor is\ndestroyed if the penalty reduces its AC to 10."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "portal-sinn",
+  "name": "Portal-Sinn",
+  "level": 2,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (9 m Sphäre)",
+  "components": "V, G, M (ein Rasierklingenreben-Blatt)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Für die Wirkungsdauer spürst du die Anwesenheit von Portalen, auch inaktive, in einer 9 m Sphäre um dich herum.\nWenn du ein Portal findest, kannst du deine Aktion nutzen um das Portal zu studieren. Mache einen SG 15 Fähigkeitenwurf mit deinem Zauberfähigkeit-Modifikator.\nBei Erfolg: du kennst das Ziel des Portals und den Schlüssel, falls es einen braucht.\nBei Fehlschlag: du lernst nichts und kannst das Portal nicht studieren bis du den Zauber erneut wirkst.\nDer Zauber wird blockiert durch 30 cm Stein, 2,5 cm Metall, ein dünnes Bleiblech oder 1 m Holz oder Erde."
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Yuan-ti Pureblood",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "monster-manual",
+      "yuan-ti"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 11,
+  "hp": {
+    "average": 40,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 12,
+    "con": 11,
+    "int": 13,
+    "wis": 12,
+    "cha": 14
+  },
+  "skills": {
+    "Deception": 6,
+    "Perception": 3,
+    "Stealth": 3
+  },
+  "languages": [
+    "Abyssal",
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The yuan-ti's spellcasting ability is Charisma (spell save DC 12). The yuan-ti can innately cast the following spells, requiring no material components:\n\nAt will: animal friendship (snakes only)\n\n3/day each: poison spray, suggestion"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The yuan-ti has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The yuan-ti makes two melee attacks."
+    },
+    {
+      "name": "Scimitar",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage."
+    },
+    {
+      "name": "Shortbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 4 (1d6 + 1) piercing damage plus 7 (2d6) poison damage."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Treant",
+  "size": "Huge",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "huge",
+      "plant",
+      "cr9",
+      "monster-manual"
+    ]
+  },
+  "alignment": "chaotic good",
+  "ac": 16,
+  "hp": {
+    "average": 138,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 23,
+    "dex": 8,
+    "con": 21,
+    "int": 12,
+    "wis": 16,
+    "cha": 12
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Druidic",
+    "Elvish",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "False Appearance",
+      "text": "While the treant remains motionless, it is indistinguishable from a normal tree."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "The treant deals double damage to objects and structures."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The treant makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 16 (3d6 + 6) bludgeoning damage."
+    },
+    {
+      "name": "Rock",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +10 to hit, range 60/180 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage."
+    },
+    {
+      "name": "Animate Trees (1/Day)",
+      "type": "special",
+      "text": "The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a treant, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible."
+    }
+  ],
+  "source": "creature"
+}

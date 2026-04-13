@@ -1,0 +1,60 @@
+{
+  "name": "Blood Orc",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/4",
+      "tome-of-horrors",
+      "orc"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 14,
+  "hp": {
+    "average": 13,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 13,
+    "con": 14,
+    "int": 8,
+    "wis": 6,
+    "cha": 6
+  },
+  "skills": {
+    "Intimidation": 0
+  },
+  "languages": [
+    "Common",
+    "Orc"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Bloodfrenzy",
+      "text": "When the blood orc begins its turn with half or fewer of\nits hit points, it can make a bite attack as a bonus action when it takes\nthe Attack action, and it has advantage on Intelligence, Wisdom, and\nCharisma saving throws against spells and other effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Greataxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (1d12 + 2) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-schild-der-geschossanziehung",
+  "type": "item",
+  "name": "Schild der Geschossanziehung",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "armor",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "Schild",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "off-hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diesen Schild hältst, bist du gegen Schaden durch Fernkampfwaffenangriffe resistent. Fluch:  Dieser Schild ist verflucht. Durch Einstimmen wirkt der Fluch, bis der Zauber Fluch brechen  oder ähnliche Magie gewirkt wird. Das Ablegen des Schilds beendet den Fluch nicht. Wenn ein Fernkampfwaffenangriff gegen ein Ziel im Abstand von bis zu drei Metern von dir ausgeführt wird, macht der Fluch stattdessen dich zum Ziel.",
+  "tags": []
+}

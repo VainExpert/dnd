@@ -1,0 +1,86 @@
+{
+  "name": "Gibbering Orb",
+  "size": "Huge",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "huge",
+      "aberration",
+      "cr30",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 26,
+  "hp": {
+    "average": 420,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 20
+  },
+  "abilities": {
+    "str": 30,
+    "dex": 30,
+    "con": 26,
+    "int": 30,
+    "wis": 23,
+    "cha": 21
+  },
+  "skills": {
+    "Arcana": 19,
+    "Perception": 15
+  },
+  "languages": [
+    "all"
+  ],
+  "challenge": {
+    "cr": "30",
+    "proficiency_bonus": 9
+  },
+  "traits": [
+    {
+      "name": "Hyper-Awareness",
+      "text": "A lesser gibbering orb can see in all directions at\nonce and cannot be surprised."
+    },
+    {
+      "name": "Flyby",
+      "text": "The lesser gibbering orb doesn’t provoke an opportunity attack\nwhen it flies out of an enemy’s reach."
+    },
+    {
+      "name": "Gibbering",
+      "text": "The gibbering orb babbles incoherently while it can see any\ncreature and isn’t incapacitated. Each creature that starts its turn within\n20 feet of the orb that can hear the gibbering must succeed on a DC 16\nWisdom saving throw. On a failure, the creature can’t take reactions until\nthe start of its next turn and rolls a d8 to determine what it does during\nits turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature\ntakes no action or bonus action and uses all its movement to move in a\nrandomly determined direction. On a 7 or 8, the creature makes a melee\nattack against a randomly determined creature within its reach or does\nnothing if it can’t make such an attack."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The gibbering orb has advantage on saving throws\nagainst spells and other magical effects."
+    },
+    {
+      "name": "Esoteric Theft",
+      "text": "When a creature dies by being swallowed whole (or\nwhen a creature killed by the lesser gibbering orb in some other fashion is\neaten by it), the lesser gibbering orb absorbs the creature’s known spells,\nprepared spells, and innate magic abilities. The orb can use one of the\nabsorbed abilities per turn as a bonus action. Each originates from an eye\nthat is not producing an eye ray that round. Stolen spells and innate magic\nabilities are lost after 24 hours."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The gibbering orb makes six bite attacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +19 to hit, reach 10 ft., one target. Hit:\n37 (6d8 + 10) piercing damage. The target is grappled (escape DC 25)\nif the gibbering orb isn’t already grappling a creature, and the target is\nrestrained until the grapple ends."
+    },
+    {
+      "name": "Swallow",
+      "type": "special",
+      "text": "The gibbering orb makes one bite attack against a Large or\nsmaller target it is grappling. If the attack hits, the target is swallowed,\nand the grapple ends. The swallowed target is blinded and restrained, it\nhas total cover against attacks and other effects outside the gibbering orb,\nand it takes 21 (6d6) acid damage at the start of each of the gibbering orb’s\nturns. The gibbering orb can have only one target swallowed at a time.\n\nIf the gibbering orb dies, a swallowed creature is no longer restrained\nby it and can escape from the corpse using 5 feet of movement, exiting\nprone."
+    },
+    {
+      "name": "Eye Rays",
+      "type": "special",
+      "text": "The orb casts three of the following spells as eye rays at\nrandom (reroll duplicates), choosing one to three targets it can see within\n150 ft. of it. The spells have a save DC 22 and +14 to hit.  Roll a d20 to determine the effects:\n\n1. <i>acid arrow</i>\n2. <i>blindness/deafness</i>\n3. <i>chill touch</i>\n4. <i>prismatic spray</i>\n5. <i>forcecage</i>\n6. <i>dispel magic</i>\n7. <i>irresistible dance</i>\n8. <i>feblemind</i>\n9. <i>hypnotic pattern</i>\n10. <i>inflict wounds</i>\n11. <i>bestow curse</i>\n12. <i>magic missile</i>\n13. <i>ray of enfeeblement</i>\n14. <i>ray of frost</i>\n15. <i>finger of death</i>\n16. <i>disintegrate</i>\n17. <i>slow</i>\n18. <i>scorching ray</i>\n19. <i>lightning bolt</i>\n20. <i>power word stun</i>"
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Saw-Toothed Beetle",
+  "size": "Medium",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "medium",
+      "beast",
+      "cr1/2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 39,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 11,
+    "con": 14,
+    "int": 1,
+    "wis": 10,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage and the target is grappled (escape DC 12). Until the grapple ends, the target is restrained and the beetle cannot bite another target. A grappled target takes 6 (1d8 + 2) piercing damage at the start of each of the beetle’s turns."
+    }
+  ],
+  "source": "creature"
+}

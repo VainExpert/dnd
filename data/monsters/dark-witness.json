@@ -1,0 +1,57 @@
+{
+  "name": "Dark Witness",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr4",
+      "out-of-the-box-5e"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 15,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 7,
+    "wis": 14,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "understands Common",
+    "Deep Speech",
+    "and Undercommon",
+    "but cannot speak"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +2 to hit, reach 5 ft.,\nHit: 5 (1d8) piercing damage."
+    },
+    {
+      "name": "Aberrant Gaze",
+      "type": "special",
+      "text": "The dark witness targets up to\ntwo creatures it can see within 120 ft. Eyes from\ntwo of its faces use one of the following effects on\nthe target. The dark witness can use each effect\nonly once per turn.\n* **Paralyzing Gaze.** The target creature must\nsucceed on a DC 14 Constitution saving throw or\nbe paralyzed for 1 minute. The target can repeat\nthe saving throw at the end of each of its turns,\nending the effect on a success.\n* **Fear Gaze.** The target creature must succeed\non a DC 14 Wisdom saving throw or be frightened\nof the dark witness for 1 minute. The target can\nrepeat the saving throw at the end of each of its\nturns, ending the effect on a success.\n* **Shocking Gaze.** The target creature must succeed\non a DC 14 Dexterity saving throw or take 28\n(8d6) lightning damage on a failed save, or half as\nmuch on a successful one.\n* **Forceful Gaze.** The target creature must succeed\non a DC 14 Strength saving throw or be\nmoved up to 30 ft. in any direction. The target is\nrestrained by the gaze’s telekinetic grip until the\nstart of the dark witness’s next turn or until the\ndark witness is incapacitated."
+    }
+  ],
+  "source": "creature"
+}

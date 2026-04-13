@@ -1,0 +1,70 @@
+{
+  "name": "Fire Nymph",
+  "size": "Medium",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 13,
+  "hp": {
+    "average": 16,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 13,
+    "con": 12,
+    "int": 16,
+    "wis": 17,
+    "cha": 19
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Ignan"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Burn",
+      "text": "Any creature that touches the nymph or hits it with a melee\nattack while within 5 feet of it takes 10 (3d6) fire damage."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The fire nymph’s spellcasting ability is Charisma\n(spell save DC 14, +6 to hit with spell attacks). The fire nymph can innately\ncast each of the following spells, requiring no material components:\n\n* At will: <i>burning hands, flame blade, flaming sphere, produce flame</i>\n\n* 1/day: <i>fire shield</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The fire nymph has advantage on saving throws\nagainst spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The fire nymph makes two attacks: one with its dagger\nand one with its fist."
+    },
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range\n20/60 ft., one target. Hit: 3 (1d4 + 1) piercing damage plus 10 (3d6) fire\ndamage."
+    },
+    {
+      "name": "Fist",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage plus 10 (3d6) fire damage."
+    }
+  ],
+  "source": "creature"
+}

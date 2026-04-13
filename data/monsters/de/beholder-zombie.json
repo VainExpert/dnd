@@ -1,0 +1,57 @@
+{
+  "name": "Behälter Zombie",
+  "size": "Groß",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "large",
+      "undead",
+      "cr5",
+      "monster-manual"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 15,
+  "hp": {
+    "average": 93,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 20
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 8,
+    "con": 16,
+    "int": 3,
+    "wis": 8,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "understands Deep Speech and Undercommon but can't speak"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Die Standhaftigkeit der Untoten",
+      "text": "Wenn der Schaden die Trefferpunkte des Zombies auf 0 reduziert, muss er einen Konstitutionsrettungswurf mit einer Schwierigkeitsklasse von 5 + dem erlittenen Schaden ausführen, es sei denn, es handelt sich um Strahlenschaden oder um einen kritischen Treffer. Bei Erfolg sinken die Trefferpunkte des Zombies stattdessen auf 1."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +3 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 14 (4d6) Durchdringungsschaden."
+    },
+    {
+      "name": "Eye Ray",
+      "type": "special",
+      "text": "Der Zombie setzt einen zufälligen magischen Augenstrahl ein und wählt ein Ziel, das er in60 feetseiner Nähe sehen kann.\n\n1. Lähmungsstrahl. Die betroffene Kreatur muss einenDC 14Konstitutions-Rettungswurf bestehen oder wird für 1 Minute gelähmt. Das Ziel kann den Rettungswurf am Ende jedes seiner Züge wiederholen und beendet den Effekt auf sich selbst bei einem Erfolg.\n\n2. Angststrahl. Die betroffene Kreatur muss einenDC 14  Weisheits-Rettungswurf bestehen oder ist 1 Minute lang verängstigt. Das Ziel kann den Rettungswurf am Ende jedes seiner Züge wiederholen und beendet den Effekt auf sich selbst bei Erfolg.\n\n3. Entkräftungsstrahl. Die betroffene Kreatur muss einenDC 14  Konstitutions-Rettungswurf durchführen und erleidet bei einem misslungenen Rettungswurf 36 (8d8) nekrotischen Schaden oder bei einem erfolgreichen Rettungswurf die Hälfte dieses Schadens.\n\n4. Desintegrationsstrahl. Ist das Ziel eine Kreatur, muss sie einenDC 14Geschicklichkeits-Rettungswurf bestehen oder erleidet 45 (10d8) Kraftschaden. Reduziert dieser Schaden die Lebenspunkte der Kreatur auf 0, zerfällt ihr Körper zu einem Haufen feinen grauen Staubs.\n\nIst das Ziel ein nichtmagischer Gegenstand oder eine Schöpfung magischer Kraft der Größe „Groß“ oder kleiner, wird es ohne Rettungswurf aufgelöst. Ist das Ziel ein nichtmagischer Gegenstand oder eine Schöpfung magischer Kraft der Größe „Riesig“ oder größer, löst dieser Strahl einen 10-Fuß-Würfel davon auf."
+    }
+  ],
+  "source": "creature"
+}

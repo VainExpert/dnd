@@ -1,0 +1,55 @@
+{
+  "name": "Frost Dwarf",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/2",
+      "tome-of-horrors",
+      "dwarf"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 12,
+  "hp": {
+    "average": 13,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 12,
+    "con": 14,
+    "int": 10,
+    "wis": 11,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 2
+  },
+  "languages": [
+    "Common",
+    "Dwarven"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Battleaxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage."
+    },
+    {
+      "name": "Frost Breath",
+      "type": "special",
+      "text": "The frost dwarf exhales a 15-foot cone of freezing air.\nEach creature in the area must make a DC 12 Constitution saving throw,\ntaking 7 (2d6) cold damage on a failed saving throw, or half as much\ndamage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

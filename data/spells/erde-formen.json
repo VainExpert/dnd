@@ -1,0 +1,18 @@
+{
+  "id": "erde-formen",
+  "name": "Erde formen",
+  "level": 0,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "G",
+  "duration": "Unmittelbar / 1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Wähle ein Stück Erde oder Stein in Reichweite, das nicht größer als ein 1,5 m Würfel ist und manipuliere es wie folgt:\n\n * Lose Erde ausheben und bis zu 1,5 m bewegen. Sie verursacht keinen Schaden beim Ablegen.\n\n * Formen und / oder Farben erscheinen für 1 h auf Steinen oder Erde. Sie sind zu Wörtern, Mustern oder Bildern manipulierbar.\n\n * Boden ist aus Erde oder Stein: Normales Terrain verwandelt sich für 1 h zu Schwierigen oder Schwieriges Terrain zu Normalen.\n\nDu kannst nicht mehr als 2 der Effekte gleichzeitig aufrecht erhalten. Sie sind als Aktion aufhebbar."
+}

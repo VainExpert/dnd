@@ -1,0 +1,679 @@
+{
+  "character": {
+    "identity": {
+      "name": "Stella Starshine",
+      "player_name": "Senta",
+      "class": {
+        "name": "Zauberin",
+        "level": 3,
+        "subclass": "Irrwitzige Zauberei"
+      },
+      "race": "Hochelfin",
+      "background": "Weise",
+      "alignment": "chaotisch-gut",
+      "deity": null,
+      "gender": "weiblich",
+      "age_years": 21,
+      "size": "Mittel",
+      "height": 1.66,
+      "weight": 60,
+      "appearance": {
+        "skin": "hell",
+        "eyes": "blau",
+        "hair": "blond"
+      },
+      "organizations": [],
+      "allies": []
+    },
+    "ability_scores": {
+      "STR": {
+        "score": 9,
+        "mod": -1,
+        "save": -1
+      },
+      "DEX": {
+        "score": 15,
+        "mod": 2,
+        "save": 2
+      },
+      "CON": {
+        "score": 12,
+        "mod": 1,
+        "save": 3
+      },
+      "INT": {
+        "score": 11,
+        "mod": 0,
+        "save": 0
+      },
+      "WIS": {
+        "score": 13,
+        "mod": 1,
+        "save": 1
+      },
+      "CHA": {
+        "score": 15,
+        "mod": 2,
+        "save": 4
+      }
+    },
+    "proficiency_bonus": 2,
+    "inspiration": false,
+    "skills": {
+      "Akrobatik": 2,
+      "Arkane Kunde": 2,
+      "Athletik": -1,
+      "Auftreten": 2,
+      "Einschüchtern": 2,
+      "Fingerfertigkeit": 2,
+      "Geschichte": 2,
+      "Heimlichkeit": 2,
+      "Medizin": 1,
+      "Mit Tieren umgehen": 1,
+      "Motiv erkennen": 3,
+      "Nachforschungen": 0,
+      "Naturkunde": 0,
+      "Religion": 0,
+      "Täuschen": 2,
+      "Überlebenskunst": 1,
+      "Überzeugen": 4,
+      "Wahrnehmung": 3
+    },
+    "passive_scores": {
+      "passive_wahrnehmung": 13,
+      "passiver_einblick": 13,
+      "passive_nachforschungen": 10
+    },
+    "combat": {
+      "armor_class": 14,
+      "initiative": 2,
+      "speed_m": 9,
+      "hp": {
+        "max": 17,
+        "hit_dice": "3d6"
+      },
+      "defenses": {
+        "condition_immunities": [
+          "magischer Schlaf"
+        ],
+        "advantages": [
+          "Vorteil gegen bezaubert werden"
+        ],
+        "immunities": [],
+        "resistances": []
+      },
+      "senses": {
+        "darkvision": 18,
+        "darkvision_note": "Graustufen"
+      },
+      "attacks_and_cantrips": [
+        {
+          "name": "Dolch (2x)",
+          "attack_bonus": 4,
+          "damage": "1d4+2 Stich",
+          "properties": [
+            "Einfach",
+            "Finesse",
+            "Leicht",
+            "Geworfen",
+            "Reichweite 6 m / 18 m"
+          ],
+          "item_ref": {
+            "id": "dolch",
+            "name": "Dolch"
+          }
+        },
+        {
+          "name": "Unbewaffneter Schlag",
+          "attack_bonus": 1,
+          "damage": "0 Wucht"
+        },
+        {
+          "name": "Kältestrahl",
+          "attack_bonus": 4,
+          "damage": "1d8 Kälte",
+          "properties": [
+            "Reichweite 18 m",
+            "V/G",
+            "weitere Effekte"
+          ],
+          "notes": [
+            "Zauberangriff (CHA) nach Zauberangriffsbonus."
+          ],
+          "spell_ref": {
+            "id": "kaeltestrahl",
+            "name": "Kältestrahl"
+          }
+        },
+        {
+          "name": "Schockgriff",
+          "attack_bonus": 4,
+          "damage": "1d8 Blitz",
+          "properties": [
+            "Berührung",
+            "V/G",
+            "weitere Effekte"
+          ],
+          "notes": [
+            "Zauberangriff (CHA) nach Zauberangriffsbonus."
+          ],
+          "spell_ref": {
+            "id": "schockgriff",
+            "name": "Schockgriff"
+          }
+        }
+      ],
+      "actions": {
+        "standard": [
+          "Angriff",
+          "Ausweichen",
+          "Beeinflussen",
+          "Interagieren",
+          "Flucht",
+          "Helfen",
+          "Magie",
+          "Packen",
+          "Sprint",
+          "Stoßen",
+          "Studieren",
+          "Verstecken",
+          "Verwenden",
+          "Vorbereiten",
+          "2-Waffen Kampf"
+        ],
+        "bonus_actions": [
+          "Quelle der Magie: Zauberplatz erschaffen (siehe Merkmale)",
+          "Angeborenes Zauberwirken (siehe Merkmale)",
+          "Telepathische Sprache (siehe Merkmale)"
+        ],
+        "reactions": [
+          "Gelegenheitsangriff"
+        ],
+        "special": [
+          "Quelle der Magie: Metamagie (Suchender Zauber, Subtiler Zauber)"
+        ]
+      }
+    },
+    "proficiencies": {
+      "armor": [],
+      "weapons": [
+        "Einfache Waffen"
+      ],
+      "tools": [],
+      "languages": [
+        "Gemeinsprache",
+        "Elfisch",
+        "Tiefensprache",
+        "Gnomisch"
+      ]
+    },
+    "spellcasting": {
+      "spellcasting_class": "Zauberin",
+      "spellcasting_ability": "CHA",
+      "spellcasting_ability_mod": 2,
+      "spell_save_dc": 12,
+      "spell_attack_bonus": 4,
+      "spell_slots": {
+        "level_1": {
+          "max": 4
+        },
+        "level_2": {
+          "max": 2
+        }
+      },
+      "cantrips": [
+        {
+          "id": "einfache-illusion",
+          "name": "Einfache Illusion"
+        },
+        {
+          "id": "gedankensplitter",
+          "name": "Gedankensplitter"
+        },
+        {
+          "id": "kaeltestrahl",
+          "name": "Kältestrahl"
+        },
+        {
+          "id": "licht",
+          "name": "Licht"
+        },
+        {
+          "id": "schockgriff",
+          "name": "Schockgriff"
+        },
+        {
+          "id": "zielsicherer-schlag",
+          "name": "Zielsicherer Schlag"
+        }
+      ],
+      "level_1_spells_listed": [
+        {
+          "id": "arme-von-hadar",
+          "name": "Arme von Hadar"
+        },
+        {
+          "id": "befehl",
+          "name": "Befehl"
+        },
+        {
+          "id": "dissonantes-fluestern",
+          "name": "Dissonantes Flüstern"
+        },
+        {
+          "id": "magie-entdecken",
+          "name": "Magie entdecken"
+        },
+        {
+          "id": "magierruestung",
+          "name": "Magierrüstung"
+        },
+        {
+          "id": "person-bezaubern",
+          "name": "Person bezaubern"
+        },
+        {
+          "id": "schlaf",
+          "name": "Schlaf"
+        }
+      ],
+      "level_2_spells_listed": [
+        {
+          "id": "gefuehle-besaenftigen",
+          "name": "Gefühle besänftigen"
+        },
+        {
+          "id": "gedankendorn",
+          "name": "Gedankendorn"
+        },
+        {
+          "id": "gedanken-wahrnehmen",
+          "name": "Gedanken wahrnehmen"
+        },
+        {
+          "id": "unsichtbarkeit",
+          "name": "Unsichtbarkeit"
+        }
+      ],
+      "always_prepared": [
+        {
+          "source": "Irrwitzige Zauberei: Psionische Zauber",
+          "spells": [
+            {
+              "id": "gedankensplitter",
+              "name": "Gedankensplitter"
+            },
+            {
+              "id": "arme-von-hadar",
+              "name": "Arme von Hadar"
+            },
+            {
+              "id": "dissonantes-fluestern",
+              "name": "Dissonantes Flüstern"
+            },
+            {
+              "id": "gedanken-wahrnehmen",
+              "name": "Gedanken wahrnehmen"
+            },
+            {
+              "id": "gefuehle-besaenftigen",
+              "name": "Gefühle besänftigen"
+            }
+          ]
+        },
+        {
+          "source": "Hochelfen-Herkunft",
+          "spells": [
+            {
+              "id": "schockgriff",
+              "name": "Schockgriff"
+            },
+            {
+              "id": "magie-entdecken",
+              "name": "Magie entdecken"
+            }
+          ],
+          "notes": [
+            "Schockgriff: Zaubertrick der Magier, bei jeder Langen Rast tauschbar.",
+            "Magie entdecken: 1/Lange Rast ohne Zauberplatz."
+          ]
+        }
+      ],
+      "prepared_spells_marked_on_sheet": [
+        "Arme von Hadar",
+        "Dissonantes Flüstern",
+        "Magie entdecken",
+        "Gedanken wahrnehmen",
+        "Gefühle besänftigen"
+      ],
+      "special_sources": [
+        {
+          "source": "Ring des Tierumgangs",
+          "spell_save_dc": 13,
+          "spells": [
+            {
+              "id": "tierfreundschaft",
+              "name": "Tierfreundschaft"
+            },
+            {
+              "id": "furcht",
+              "name": "Furcht"
+            },
+            {
+              "id": "mit-tieren-sprechen",
+              "name": "Mit Tieren sprechen"
+            }
+          ],
+          "notes": [
+            "Wirken über Aufladungen (siehe Ausrüstung/Itemdetails)."
+          ]
+        }
+      ]
+    },
+    "features": {
+      "class": [
+        {
+          "name": "Zauberwirken",
+          "description": "Du bekommst alle Zauberplätze nach einer Langen Rast zurück. Bei jedem Levelaufstieg kannst du deine Zauber austauschen, außer deine immer vorbereiteten Zauber."
+        },
+        {
+          "name": "Angeborenes Zauberwirken",
+          "activation": "Bonusaktion",
+          "duration": "1 Minute",
+          "uses": "2",
+          "recovery": {
+            "long_rest": true
+          },
+          "effects": [
+            "Zauberrettung-SG +1",
+            "Vorteil auf alle Zauberangriffswürfe"
+          ]
+        },
+        {
+          "name": "Quelle der Magie",
+          "resource": {
+            "name": "Zaubereipunkte (ZP)",
+            "max": 3,
+            "recovery": {
+              "long_rest": true
+            }
+          },
+          "options": [
+            {
+              "name": "Zauberplatz zu ZP konvertieren",
+              "effect": "Du kannst einen Zauberplatz verwenden, um ZP in Höhe des Zauberplatz-Levels zu erhalten."
+            },
+            {
+              "name": "Zauberplatz erschaffen",
+              "activation": "Bonusaktion",
+              "effect": "Erschaffe bis zur nächsten Langen Rast einen Zauberplatz.",
+              "costs": [
+                "2 ZP -> Zauberplatz Level 1",
+                "3 ZP -> Zauberplatz Level 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Metamagie",
+          "description": "Du kannst deine Zauber für deine Bedürfnisse anpassen. Du kannst nur eine Option auf einen Zauber anwenden, außer wenn es in der Option anders beschrieben ist. Du kannst die Optionen bei einem Levelaufstieg austauschen.",
+          "options_known": [
+            {
+              "name": "Suchender Zauber",
+              "cost": "1 ZP",
+              "effect": "Wenn du einen Zauber-Angriffswurf machst und verfehlst, kannst du 1 ZP nutzen, um den W20 erneut zu werfen. Du musst den neuen Wurf nehmen.",
+              "notes": [
+                "Kann auch verwendet werden, wenn du schon eine andere Option auf den Zauber anwendest."
+              ]
+            },
+            {
+              "name": "Subtiler Zauber",
+              "cost": "1 ZP",
+              "effect": "Wenn du einen Zauber wirkst, kannst du 1 ZP nutzen, um den Zauber ohne Verbale, Gestische oder nicht verbrauchte oder teure Material-Komponenten zu wirken."
+            }
+          ]
+        }
+      ],
+      "subclass": [
+        {
+          "name": "Psionische Zauber",
+          "always_prepared_spells": {
+            "cantrip": [
+              "Gedankensplitter"
+            ],
+            "level_1": [
+              "Arme von Hadar",
+              "Dissonantes Flüstern"
+            ],
+            "level_2": [
+              "Gedanken wahrnehmen",
+              "Gefühle besänftigen"
+            ]
+          }
+        },
+        {
+          "name": "Telepathische Sprache",
+          "activation": "Bonusaktion",
+          "range": "3 km",
+          "duration": "3 Minuten",
+          "effect": "Du kannst eine telepathische Verbindung mit einer anderen Kreatur aufbauen und über eine Sprache kommunizieren, die ihr beide sprecht. Endet nach 3 Minuten oder wenn du eine neue Verbindung zu jemand anderem aufbaust.",
+          "always_prepared_spells": []
+        }
+      ],
+      "racial": [
+        {
+          "name": "Feenblut",
+          "effects": [
+            "Vorteil gegen bezaubert werden",
+            "Magie kann dich nicht einschläfern (Immun: Magischer Schlaf)"
+          ]
+        },
+        {
+          "name": "Dunkelsicht",
+          "description": "18 m (Graustufen)"
+        },
+        {
+          "name": "Geschärfte Sinne",
+          "effects": [
+            "Geübt in Wahrnehmung"
+          ]
+        },
+        {
+          "name": "Trance",
+          "description": "Statt zu schlafen, meditierst du bei halbem Bewusstsein für mind. 4 h pro Tag. Das zählt als deine Lange Rast."
+        },
+        {
+          "name": "Hochelfen-Herkunft",
+          "description": "Zaubertrick der Magier (bei jeder Langen Rast tauschbar): aktuell „Schockgriff“. Zusätzlich: „Magie entdecken“ 1/Lange Rast ohne Zauberplatz."
+        }
+      ],
+      "background": [
+        {
+          "name": "Spezialisierungen",
+          "description": "In deinen Studien hast du dich als Forscherin und Astronomin etabliert."
+        },
+        {
+          "name": "Forscher",
+          "description": "Du weißt, wo Informationen zu beschaffen sind, die du nicht direkt kennst (Bibliothek, Universität, anderer Weiser / Person / Kreatur, …). Die Beschaffung kann aber auch nahezu unmöglich sein (DM-Entscheidung)."
+        }
+      ],
+      "magic_items_text": [
+        {
+          "name": "Ring des Tierumgangs",
+          "type": "Magischer Gegenstand",
+          "charges": {
+            "max": 3,
+            "recharge": "Jeden Morgen erhält der Ring 1d4-1 verbrauchte Aufladungen zurück."
+          },
+          "activation": "Aktion",
+          "spell_save_dc": 13,
+          "spells": [
+            "Tierfreundschaft",
+            "Furcht (nur auf Tiere mit INT-Wert kleiner als 3)",
+            "Mit Tieren sprechen"
+          ]
+        }
+      ]
+    },
+    "equipment": {
+      "currency": {
+        "cp": 0,
+        "sp": 0,
+        "gp": 38,
+        "pp": 0
+      },
+      "weights": {
+        "carried": 24,
+        "encumbered_at": 60,
+        "push_drag_lift": 120
+      },
+      "items": [
+        {
+          "name": "Dolch",
+          "quantity": 2,
+          "weight": 1,
+          "item_ref": {
+            "id": "dolch",
+            "name": "Dolch"
+          }
+        },
+        {
+          "name": "Gewöhnliche Kleidung",
+          "quantity": 1,
+          "weight": 1.5,
+          "item_ref": {
+            "id": "kleidung",
+            "name": "Gewöhnliche Kleidung"
+          }
+        },
+        {
+          "name": "Robe",
+          "quantity": 1,
+          "weight": 1.5,
+          "item_ref": {
+            "id": "robe",
+            "name": "Robe"
+          }
+        },
+        {
+          "name": "Blauer magischer Kristall (Arkaner Fokus)",
+          "quantity": 1,
+          "weight": 0.5
+        },
+        {
+          "name": "Ring des Tierumgangs",
+          "quantity": 1,
+          "weight": null,
+          "item_ref": {
+            "id": "ring-des-tierumgangs",
+            "name": "Ring des Tierumgangs"
+          }
+        },
+        {
+          "name": "Rucksack",
+          "quantity": 1,
+          "weight": 2.5,
+          "contents_listed": [
+            {
+              "name": "Öl",
+              "quantity": 2,
+              "weight": 1,
+              "item_ref": {
+                "id": "oel",
+                "name": "Öl"
+              }
+            },
+            {
+              "name": "Hanf-Seil, 15 m",
+              "quantity": 1,
+              "weight": 2.5
+            },
+            {
+              "name": "Zunderkästchen",
+              "quantity": 1,
+              "weight": 0.5,
+              "item_ref": {
+                "id": "zunderkaestchen",
+                "name": "Zunderkästchen"
+              }
+            },
+            {
+              "name": "Fackel",
+              "quantity": 10,
+              "weight": 5,
+              "item_ref": {
+                "id": "fackel",
+                "name": "Fackel"
+              }
+            },
+            {
+              "name": "Wurfeisenstachel",
+              "quantity": 20,
+              "weight": 1
+            },
+            {
+              "name": "Brecheisen",
+              "quantity": 1,
+              "weight": 2.5
+            },
+            {
+              "name": "Tinte (30 ml)",
+              "quantity": 1,
+              "weight": null,
+              "item_ref": {
+                "id": "tinte",
+                "name": "Tinte (30 ml)"
+              }
+            },
+            {
+              "name": "Schreibfeder",
+              "quantity": 1,
+              "weight": null
+            },
+            {
+              "name": "Pergament-Papier",
+              "quantity": 10,
+              "weight": null
+            },
+            {
+              "name": "Kleines Messer",
+              "quantity": 1,
+              "weight": null
+            }
+          ],
+          "item_ref": {
+            "id": "rucksack",
+            "name": "Rucksack"
+          }
+        },
+        {
+          "name": "Schlafsack",
+          "quantity": 1,
+          "weight": 3.5,
+          "item_ref": {
+            "id": "schlafsack",
+            "name": "Schlafsack"
+          }
+        }
+      ],
+      "attuned_magic_items_listed": []
+    },
+    "personality": {
+      "traits": [
+        "Du bist es gewohnt, denjenigen zu helfen, die nicht so schlau sind wie du, und du erklärst anderen geduldig alles."
+      ],
+      "ideals": [
+        "Das Ziel des Lebens und Studierens ist es, sich selbst zu verbessern."
+      ],
+      "bonds_or_motivation": [],
+      "flaws": [
+        "Du übersiehst offensichtliche Lösungen zugunsten von komplizierten."
+      ]
+    },
+    "backstory": {
+      "summary": null,
+      "notes": "Hintergrundgeschichte- und Zusatznotizen-Felder sind leer."
+    }
+  },
+  "id": "stellastarshine"
+}

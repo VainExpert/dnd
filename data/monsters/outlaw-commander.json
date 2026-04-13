@@ -1,0 +1,70 @@
+{
+  "name": "Outlaw Commander",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr4",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "any non-lawful alignment",
+  "ac": 17,
+  "hp": {
+    "average": 98,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 12,
+    "con": 16,
+    "int": 14,
+    "wis": 10,
+    "cha": 15
+  },
+  "skills": {
+    "Athletics": 6,
+    "Intimidation": 6,
+    "Performance": 4,
+    "Persuasion": 6
+  },
+  "languages": [
+    "Common and any one other language"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Commander's Presence",
+      "text": "Whenever one of the\ncommander's allies is within 60 feet must make a\nsaving throw, that creature gains a +1 bonus to the\nsaving throw if the commander isn't incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The commander makes two melee\nattacks or two ranged attacks."
+    },
+    {
+      "name": "Greataxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5\nft., one target. Hit: 10 (1d12 + 4) slashing damage."
+    },
+    {
+      "name": "Handaxe",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +6 to\nhit, reach 5 ft. or range 20/60 ft., one target. Hit: 7\n(1d6 + 4) slashing damage."
+    },
+    {
+      "name": "Expose Weakness (Recharge 4-6)",
+      "type": "special",
+      "text": "Melee Weapon\nAttack: +6 to hit, reach 5 ft., one target. Hit: 17\n(2d12 + 4) slashing damage and the target has its\nAC reduced by 2 until the beginning of the\ncommander's next turn."
+    }
+  ],
+  "source": "creature"
+}

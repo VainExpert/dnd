@@ -1,0 +1,79 @@
+{
+  "name": "Amazonas-Kriegerin",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "homebrew",
+      "human"
+    ]
+  },
+  "alignment": "gesetztreu-neutral",
+  "ac": 18,
+  "hp": {
+    "average": 37,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 16,
+    "int": 9,
+    "wis": 12,
+    "cha": 11
+  },
+  "skills": {
+    "Athletics": 5,
+    "Perception": 3,
+    "Survival": 3
+  },
+  "languages": [
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Großschreiben (1 Mal pro Runde)",
+      "text": "Wenn die Amazonin eine Kreatur,\ndie sie sehen kann, mit einem Nahkampfangriff trifft, kann sie\nihre Bonusaktion nutzen, um sofort einen weiteren\nNahkampfangriff gegen dieselbe Kreatur auszuführen. Dieser\nzusätzliche Angriff erfolgt unter Nachteil."
+    },
+    {
+      "name": "Angst vor Magie",
+      "text": "Wenn eine Kreatur einen Zauber wirkt oder einen anderen\nmagischen Effekt in30 feetder Nähe der Amazone einsetzt und die\nAmazone dies sehen kann, muss die Amazone einen\nWeisheits-Rettungswurf bestehen, dessen Schwierigkeitsgrad dem\nZauberrettungs-DC des Zauberers entspricht. Bei einem misslungenen Rettungswurf\nhat die Amazone 1 Minute lang Angst vor dem Zauberwirker.\nDie Amazone kann ihren Rettungswurf am\nEnde jedes ihrer Züge wiederholen und beendet den Angst-Effekt\nbei einem Erfolg. Wenn die Amazone ihren ersten\nRettungswurf besteht oder der Effekt für sie endet, wirkt diese Eigenschaft\n1 Stunde lang nicht."
+    },
+    {
+      "name": "Schlangenflüsterer",
+      "text": "Mithilfe von Lauten und Gesten kann der\nAmazon einfache Gedanken mit Schlangen\nund anderen Reptilien austauschen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Die Amazone führt zwei Angriffe mit ihrem\nMacuahuitl aus."
+    },
+    {
+      "name": "Macuahuitl",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite 1,5 m.,\nein Ziel. Treffer: 7 (1d8 + 3) Schlag- oder Schnittschaden\n(nach Wahl der Amazone) oder 8 (1d10 + 3)\nSchlag- oder Schnittschaden (nach Wahl der Amazone),\nwenn die Waffe mit beiden Händen geführt wird."
+    },
+    {
+      "name": "Speer",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfwaffenangriff: +5 auf den Trefferwurf,\nReichweite5 ft: … Fuß30/120, ein Ziel. Treffer: 6 (1d6 + 3) Durchdringungsschaden."
+    },
+    {
+      "name": "Schildschlag",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffer, Reichweite5\nft: , ein Ziel. Treffer: 8 (2d4 + 3) Bludgeoning-Schaden. Wenn\ndas Ziel eine mittelgroße oder kleinere Kreatur ist, muss es\neinenDC 13Stärke-Rettungswurf bestehen oder wird\nzu Boden geworfen."
+    }
+  ],
+  "source": "creature"
+}

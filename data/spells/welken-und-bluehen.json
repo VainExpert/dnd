@@ -1,0 +1,18 @@
+{
+  "id": "welken-und-bluehen",
+  "name": "Welken und Blühen",
+  "level": 2,
+  "school": "Nekromantie",
+  "casting_time": "1 Aktion",
+  "range": "18 m (3 m Sphäre)",
+  "components": "V, G, M (eine verwelkte Ranke zu einer Schlaufe gedreht)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du erschaffst eine Sphäre mit 3 m Radius, zentriert auf einen Punkt in Reichweite.\nJede Kreatur deiner Wahl in der Sphäre muss einen CON-Rettungswurf machen.\nBei Fehlschlag: 2W6 nekrotischer Schaden, sonst die Hälfte\nZusätzlich kannst du eine Kreatur in der Sphäre wählen, die 2W6 an TP geheilt wird.\nNichtmagische Pflanzen in der Sphäre verwelken."
+}

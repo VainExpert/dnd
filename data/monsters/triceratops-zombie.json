@@ -1,0 +1,59 @@
+{
+  "name": "Triceratops Zombie",
+  "size": "Huge",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "huge",
+      "undead",
+      "cr5",
+      "homebrew"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 12,
+  "hp": {
+    "average": 95,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 22,
+    "dex": 6,
+    "con": 17,
+    "int": 1,
+    "wis": 6,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Trampling Charge",
+      "text": "If the zombie moves at least 20\nfeet straight toward a creature and then hits it with\na gore attack on the same turn, that target must\nsucceed on a DC 13 Strength saving throw or be\nknocked prone. If the target is prone, the zombie\ncan make one stomp attack against it as a bonus\naction."
+    },
+    {
+      "name": "Undead Fortitude",
+      "text": "If damage reduces the zombie\nto 0 hit points, it must make a Constitution saving\nthrow with a DC of 5 + the damage taken, unless\nthe damage is radiant or from a critical hit. On a\nsuccess, the zombie drops to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Gore",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft.,\none target. Hit: 24 (4d8 + 6) piercing damage."
+    },
+    {
+      "name": "Stomp",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft.,\none prone creature. Hit: 22 (3d10 + 6) bludgeoning\ndamage."
+    }
+  ],
+  "source": "creature"
+}

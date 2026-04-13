@@ -1,0 +1,52 @@
+{
+  "name": "Lehrling des Nekromanten",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "gesetztreu-böse",
+  "ac": 12,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 10,
+    "cha": 7
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Infernal"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Nekromant ist ein Zauberwirker der Stufe 5.\nSeine Zauberfertigkeit ist Intelligenz (ZauberrettungswurfDC 13, +5 auf Treffer bei Zauberangriffen).\nDer Nekromant hat die folgenden Zauber des Zauberers vorbereitet:\n\n* Cantrips (beliebig oft): E Kühle Berührung, Säurespritzer, Magische Hand, KleingestaltE \n\n* 1. Stufe (4 Plätze): Krankheitsstrahl, Hexenblitz, Tashas schreckliches Gelächter\n\n* 2. Stufe (3 Plätze): Schwächungsstrahl, Krone des Wahnsinns\n\n* 3. Stufe (2 Plätze): Tote beleben, Vampirische Berührung"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Langstock",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +1 auf Treffer, Reichweite5ft: , ein Ziel. Treffer: 2 (1d6 - 1) Bludgeoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

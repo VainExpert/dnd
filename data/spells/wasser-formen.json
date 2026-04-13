@@ -1,0 +1,18 @@
+{
+  "id": "wasser-formen",
+  "name": "Wasser formen",
+  "level": 0,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "G",
+  "duration": "Unmittelbar / 1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Wähle eine Wasserfläche in Reichweite, die nicht größer als ein 1,5 m Würfel ist und manipuliere sie wie folgt:\n\n * Du bewegst das Wasser um bis zu 1,5 m oder änderst anderweitig den Wasserstrom. Die Veränderung verursacht keinen Schaden.\n\n * Du formst Formen mit dem Wasser. Es bewegt sich auf deine Anweisungen und hält die Formen für 1 h.\n\n * Die Farbe oder Deckkraft verändert sich für 1 h, aber immer auf dieselbe Weise.\n\n * Du frierst das Wasser ohne Lebewesen darin ein. Es taut nach 1 h wieder auf.\n\nDu kannst nicht mehr als 2 der Effekte gleichzeitig aufrechterhalten. Sie sind als Aktion aufhebbar."
+}

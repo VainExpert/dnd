@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-drachentoeter",
+  "type": "item",
+  "name": "Drachentöter",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "weapon",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "beliebiges Schwert",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Du erhältst einen Bonus von +1 auf Angriffs- und Schadenswürfe, die du mit dieser magischen Waffe ausführst. Wenn du einen Drachen mit dieser Waffe triffst, erleidet der Drache zusätzlich 3W6 Schaden vom Typ der Waffe. Für diese Waffe zählen alle Kreaturen als Drache, die den Typ 'Drache' haben, auch Drachenschildkröten und Wyvern.",
+  "tags": []
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Living Unseen Servant",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr0",
+      "dungeon-of-the-mad-mage"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 10,
+  "hp": {
+    "average": 4,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 2,
+    "dex": 10,
+    "con": 11,
+    "int": 1,
+    "wis": 10,
+    "cha": 1
+  },
+  "skills": {
+    "Perception": 2,
+    "Stealth": 4
+  },
+  "languages": [
+    "understands one language (usually Common) but can’t speak"
+  ],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Invisibility",
+      "text": "The unseen servant is invisible."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

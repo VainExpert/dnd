@@ -1,0 +1,52 @@
+{
+  "name": "Zoblin Boss",
+  "size": "Small",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "small",
+      "undead",
+      "cr1",
+      "nerzugals-extended-bestiary",
+      "goblinoid"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 12,
+  "hp": {
+    "average": 33,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 8,
+    "con": 14,
+    "int": 5,
+    "wis": 8,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages it knew in life but can’t speak"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Undead Fortitude",
+      "text": "If damage reduces the zoblin to 0 hit\npoints, it must make a Constitution saving throw with a\nDC of 5 + the damage taken, unless the damage is\nradiant or from a critical hit. On a success, the zoblin\ndrops to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Scimitar",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5ft.,\none target. Hit: 5 (1d6 + 2) piercing damage plus 2\n(1d4) necrotic damage."
+    }
+  ],
+  "source": "creature"
+}

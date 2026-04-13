@@ -1,0 +1,68 @@
+{
+  "name": "Loxoda",
+  "size": "Huge",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "huge",
+      "monstrosity",
+      "cr6",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 13,
+  "hp": {
+    "average": 147,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 12,
+    "con": 19,
+    "int": 12,
+    "wis": 14,
+    "cha": 10
+  },
+  "skills": {
+    "Survival": 5
+  },
+  "languages": [
+    "Loxodan"
+  ],
+  "challenge": {
+    "cr": "6",
+    "xp": 2300,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Trampling Charge",
+      "text": "If the loxoda moves at least 20 feet straight toward a Large or smaller creature it then attacks with a stomp, the stomp attack is made with advantage. If the stomp attack hits, the target must also succeed on a DC 15 Strength saving throw or be knocked prone."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The loxoda makes two attacks, but no more than one of them can be a maul or javelin attack."
+    },
+    {
+      "name": "Maul",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 25 (6d6 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Stomp",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 20 (3d10 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Javelin",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 14 (3d6 + 4) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

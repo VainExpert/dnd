@@ -1,0 +1,85 @@
+{
+  "name": "Reigon",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 14,
+  "hp": {
+    "average": 59,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 15,
+    "con": 16,
+    "int": 17,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 4
+  },
+  "languages": [
+    "Reigon"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Chameleon",
+      "text": "Whenever the reigon takes the hide action, it has advantage\non Dexterity (Stealth) checks as it uses psionic illusions to assist its\nattempt. Creatures with truesight automatically notice the reigon while it\nattempts to hide."
+    },
+    {
+      "name": "Keen Smell",
+      "text": "The reigon has advantage on Wisdom (Perception) checks\nthat rely on smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The reigon makes one bite attack, and two greatclub\nattacks or two claw attacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 13\n(2d8 + 4) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11\n(2d6 + 4) slashing damage."
+    },
+    {
+      "name": "Greatclub",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit:\n13 (2d8 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Mindthrust (1/day)",
+      "type": "special",
+      "text": "One creature the reigon can see within 60 feet of it\nmust make a DC 13 Intelligence saving throw. On a failed saving throw,\nthe target takes 25 (4d10 + 3) psychic damage, or half as much damage on\na successful saving throw."
+    },
+    {
+      "name": "Concussion Blast (1/day)",
+      "type": "special",
+      "text": "The reigon releases a blast of psionic force\nin a 15-foot cone. Creatures in the area must make a DC 13 Constitution\nsaving throw. On a failed saving throw, the target takes 21 (4d8 + 3) force\ndamage and is stunned until the end of their next turn. On a successful\nsaving throw, the target takes half damage and is not stunned."
+    }
+  ],
+  "source": "creature"
+}

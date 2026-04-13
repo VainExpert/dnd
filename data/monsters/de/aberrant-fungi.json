@@ -1,0 +1,47 @@
+{
+  "name": "Verrückte Pilze",
+  "size": "Groß",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "large",
+      "plant",
+      "cr1/2",
+      "out-of-the-box-5e"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 6,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 5
+  },
+  "abilities": {
+    "str": 5,
+    "dex": 1,
+    "con": 3,
+    "int": 1,
+    "wis": 1,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Todesausbruch",
+      "text": "Wenn die abnormen Pilze auf 0\nTrefferpunkte sinken, explodieren sie. Jede Kreatur im Umkreis20 ft\nvon .\nmuss einenDC 13\nKonstitutions-Rettungswurf\nbestehen oder erleidet 10 (3d6\n) psychischen Schaden und wird\nmit einer Krankheit infiziert. Wenn ein Humanoid infolge dieses Schadens auf 0\nTrefferpunkte sinkt, stirbt er. Nach\n24 Stunden sprießen winzige abnorme Pilze1d4\naus dem\nKörper und wachsen innerhalb von 7 Tagen zu ihrer vollen Größe heran.\n\nDie Sporen werden zerstört, wenn die Kreatur\nvon den Toten auferweckt wird oder wenn die Leiche von einem\nFluchbeseitigungszauber oder ähnlicher Magie getroffen wird, bevor die abnormen\nPilze sprießen.\n\nDie Sporen dringen in den Geist der betroffenen Kreatur ein und befallen\nsie für1d10\n\nMinuten mit kurzzeitiger Verrücktheit. Nach Ablauf dieser Zeit muss die Kreatur\neinenDC 13\nKonstitutions-Rettungswurf bestehen oder\nfür1d10\nx\n10 Stunden von langfristigem Wahnsinn befallen werden. Die Kreatur muss dann einenDC 11\nKonstitutions-Rettungswurf bestehen oder wird von unbestimmter Dauer\nvom Wahnsinn befallen. Der Wahnsinn kann durch eine „Lesser\nRestoration“ oder ähnliche Magie geheilt werden."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

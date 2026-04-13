@@ -1,0 +1,16 @@
+{
+  "id": "urtuemliche-wildheit",
+  "name": "Urtümliche Wildheit",
+  "level": 0,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Druide"
+  ],
+  "text": "Du kanalisierst eine urtümliche Energie, die deine Zähne oder Fingernägel schärft um einen ätzenden Angriff zu machen.\nDu machst einen Nahkampf-Zauberangriff gegen ein Ziel in 1,5 m Abstand zu dir.\nBei Treffer: 1W10 Säureschaden\nNach dem Angriff werden die Zähne oder Fingernägel wieder normal.\n\nAuf höheren Level: Schaden steigt um je 1W10 auf Level 5, 11 und 17."
+}

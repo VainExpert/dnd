@@ -1,0 +1,71 @@
+{
+  "name": "Coh-Leop",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/2",
+      "out-of-the-box-5e"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 14,
+  "hp": {
+    "average": 26,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 20,
+    "climb": 25
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 9,
+    "con": 14,
+    "int": 10,
+    "wis": 10,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "Pheromones (between coh-leop only)",
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Multifaceted Perspective",
+      "text": "Because of their large\nand multifaceted eyes, coh-leop are hard to surprise.\nThe coh-leop has advantage on Wisdom (Perception)\nchecks that rely on sight and on all initiative rolls."
+    },
+    {
+      "name": "Spider Climb",
+      "text": "The coh-leop can climb difficult\nsurfaces, including upside down on ceilings, without\nneeding to make an ability check."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The coh-leop makes two claw attacks."
+    },
+    {
+      "name": "Macuahuitl",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach\n5 ft., one target. Hit: 11 (2d6 +2) slashing damage.\nWhen weapon damage is rolled for a savage weapon,\nany damage result of 1 is treated as though it was a 2."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit,\nreach 5 ft., one target, Hit: 5 (2d4) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

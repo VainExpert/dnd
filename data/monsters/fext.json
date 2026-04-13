@@ -1,0 +1,75 @@
+{
+  "name": "Fext",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr6",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 17,
+  "hp": {
+    "average": 60,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 16,
+    "con": 1,
+    "int": 14,
+    "wis": 12,
+    "cha": 18
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "the languages spoken by its patron"
+  ],
+  "challenge": {
+    "cr": "6",
+    "xp": 2300,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The fext's innate spellcasting ability is Charisma (spell save DC 15). It can innately cast the following spells, requiring no material components:\n\nAt will: hex\n\n3/day each: counterspell, fear, gaseous form\n\n1/day each: hold monster, true seeing"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The fext has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The fext's weapon attacks are magical."
+    },
+    {
+      "name": "Patron Blessing",
+      "text": "A fext is infused with a portion of their patron's power. They have an Armor Class equal to 10 + their Charisma modifier + their Dexterity modifier."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The fext makes two melee or ranged attacks."
+    },
+    {
+      "name": "Eldritch Blade",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (2d6+2) slashing damage plus 16 (3d10) force damage."
+    },
+    {
+      "name": "Eldritch Fury",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +6 to hit, range 60/200 ft., one creature. Hit: 25 (4d10 + 3) force damage."
+    }
+  ],
+  "source": "creature"
+}

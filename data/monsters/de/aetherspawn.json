@@ -1,0 +1,58 @@
+{
+  "name": "Ätherbrut",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr1",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 14,
+  "hp": {
+    "average": 26,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 15,
+    "con": 15,
+    "int": 14,
+    "wis": 15,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Elementare Einstimmung",
+      "text": "Der Wächter ist mit\nentweder arkaner, eisiger, feuriger oder blitzartiger Energie erfüllt. Die\nAngriffe des Wächters verursachen zusätzlichen Schaden basierend auf\ndiesem Element (im Angriff enthalten), er verfügt über\nWiderstände gegen das entsprechende Element und kann\neinmal pro Tag einen entsprechenden Elementarzauber wirken,\nder keine materiellen Komponenten erfordert. Die\nZauberfertigkeit des Wächters ist Intelligenz (ZauberrettungswurfDC 12, +4 Bonus auf Treffer).\n\n* Arkan – Bonus auf Kraftschaden und Widerstand gegen Kraftschaden; kann Magischer Pfeil wirken\n* Eis – Bonus auf Kälteschaden und Widerstand gegen Kälteschaden; kann Eismesser wirken\n* Feuer – Bonus auf Feuerschaden und Widerstand gegen Feuerschaden; kann Brennende Hände wirken\n* Blitz – Bonus auf Blitzschaden und Widerstand gegen Blitzschaden; kann Hexenblitz wirken"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Ätherklingen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 auf Treffer,\nReichweite5 ft: 0, ein Ziel. Treffer: 5 (1d6 + 2) Schnittschaden\nplus 3 (1d6) Schaden der Art,\ndie der Elementar-Einstimmung\ndes Wächters entspricht."
+    },
+    {
+      "name": "Elementarsplitter",
+      "type": "special",
+      "text": "Fernkampfangriff: +4 auf Treffer,\nReichweite30/90  Fuß, ein Ziel. Treffer: 4 (1d4 + 2)\nDurchdringungsschaden plus 3 (1d6) Schaden der Art,\ndie der Elementar-Einstimmung\ndes Wächters entspricht."
+    }
+  ],
+  "source": "creature"
+}

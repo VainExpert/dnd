@@ -1,0 +1,45 @@
+{
+  "id": "wagen",
+  "type": "item",
+  "name": "Wagen",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 200,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 35,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wagen (Zugfahrzeug), der als Kapazität, die Summe der maximalen Kapazitäten aller vorgespannten Reittiere mal 5 (inlusive Gewicht des Wagens) hat.",
+  "tags": [
+    "abenteuer",
+    "reise",
+    "transport",
+    "reittier",
+    "fahrzeug"
+  ]
+}

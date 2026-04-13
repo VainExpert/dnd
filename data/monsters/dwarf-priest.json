@@ -1,0 +1,58 @@
+{
+  "name": "Dwarf Priest",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "homebrew",
+      "dwarf"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 13,
+  "hp": {
+    "average": 27,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 10,
+    "con": 12,
+    "int": 13,
+    "wis": 16,
+    "cha": 13
+  },
+  "skills": {
+    "Medicine": 7,
+    "Persuasion": 3,
+    "Religion": 4
+  },
+  "languages": [
+    "any two languages"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Dwarven Resilience",
+      "text": "The dwarf has advantage on saving throws against poison and has resistance to poison damage"
+    },
+    {
+      "name": "Divine Eminence",
+      "text": "As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). The priest has the following cleric spells prepared:\n\n* Cantrips (at will): <i>light, sacred flame, thaumaturgy</i>\n\n* 1st level (4 slots): <i>cure wounds, guiding bolt, sanctuary</i>\n\n* 2nd level (3 slots): <i>lesser restoration, spiritual weapon</i>\n\n* 3rd level (2 slots): <i>dispel magic, spirit guardians</i>"
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

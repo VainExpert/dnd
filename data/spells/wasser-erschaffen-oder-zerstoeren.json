@@ -1,0 +1,17 @@
+{
+  "id": "wasser-erschaffen-oder-zerstoeren",
+  "name": "Wasser erschaffen oder zerstören",
+  "level": 1,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V, G, M (Prise Pulver oder mehrfarbiger Sand)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Kleriker",
+    "Druide"
+  ],
+  "text": "Wasser erschaffen: Du erschaffst bis zu 40 l sauberes Wasser in einem offenen Behälter in Reichweite. Alternativ fällt das Wasser als Regen in einem 9 m Würfel in Reichweite und löscht offene Flammen in dem Bereich.\n\nWasser zerstören: Du zerstörst bis zu 40 l Wasser in einem offenen Behälter in Reichweite. Alternativ zerstörst du Nebel in einem 9 m Würfel in Reichweite.\n\nAuf höheren Level gewirkt: 45 l Wasser oder Würfel pro Level um 1,5 m vergrößert"
+}

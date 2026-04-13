@@ -1,0 +1,64 @@
+{
+  "name": "Runebound Giant",
+  "size": "Huge",
+  "type": {
+    "type": "giant",
+    "tags": [
+      "huge",
+      "giant",
+      "cr8",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 13,
+  "hp": {
+    "average": 130,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 22,
+    "dex": 8,
+    "con": 18,
+    "int": 5,
+    "wis": 8,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Runebound",
+      "text": "The giant's body is coated in magical\nrunes granted by a runespeaker that provide it with\nadditional strength. The giant gains one of the\nfollowing runic bonuses:\n* Rune of Destruction – The giant's greatclub\nattacks deal double damage to objects and\nstructures. In addition, when the giant hits a\ncreature with its greatclub, that creature must\nsucceed on a DC 17 Strength saving throw or be\npushed up to 15 feet in a straight line and\nknocked prone.\n* Rune of Immortality – The giant's maximum hit\npoints is increased by 20. In addition, if damage\nreduces the giant to 0 hit points, it must make a\nConstitution saving throw with a DC of 5 + the\ndamage taken, unless the damage was from a\ncritical hit. On a success, the giant drops to 1 hit\npoint instead.\n* Rune of Warding – The giant has advantage on\nsaving throws against spells and other magical\neffects."
+    },
+    {
+      "name": "Runic Weapon",
+      "text": "The giant's greatclub is imbued with\npowerful arcane runes, causing attacks with that\nweapon to deal an additional 4 (1d8) force damage\n(included in the attack)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The giant makes two greatclub attacks."
+    },
+    {
+      "name": "Runic Greatclub",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit,\nreach 10 ft., one target. Hit: 19 (3d8 + 6)\nbludgeoning damage plus 4 (1d8) force damage."
+    },
+    {
+      "name": "Rock",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +9 to hit, range\n60/240 ft., one target. Hit: 22 (3d10) + 6)\nbludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

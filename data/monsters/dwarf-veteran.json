@@ -1,0 +1,49 @@
+{
+  "name": "Dwarf Veteran",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "homebrew",
+      "dwarf"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 17,
+  "hp": {
+    "average": 58,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 13,
+    "con": 14,
+    "int": 10,
+    "wis": 11,
+    "cha": 10
+  },
+  "skills": {
+    "Athletics": 5,
+    "Perception": 2
+  },
+  "languages": [
+    "any one language (usually Common)"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Dwarven Resilience",
+      "text": "The dwarf has advantage on saving throws against poison and has resistance to poison damage"
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

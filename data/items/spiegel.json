@@ -1,0 +1,44 @@
+{
+  "id": "spiegel",
+  "type": "item",
+  "name": "Spiegel",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0.25,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 5,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Der Handspiegel aus Stahl kann Licht reflektieren oder beim Beobachten um Ecken helfen.",
+  "tags": [
+    "nützlich",
+    "licht",
+    "beobachten",
+    "soziales"
+  ]
+}

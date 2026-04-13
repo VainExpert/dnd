@@ -1,0 +1,18 @@
+{
+  "id": "wirbelkruemmung",
+  "name": "Wirbelkrümmung",
+  "level": 2,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "27 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du krümmst den Raum um eine Kreatur in Reichweite, die du sehen kannst.\nDas Ziel muss einen CON-Rettungswurf machen.\nBei Fehlschlag: es wrid zu einer freien Stelle in Reichweite teleportiert, die du sehen kannst. Die Stelle muss so sein, dass das Ziel komfortabel dahin passt.\nEine Kreatur kann willentlich fehlschlagen.\n\nAuf höheren Level gewirkt: pro Level 9 m mehr Reichweite"
+}

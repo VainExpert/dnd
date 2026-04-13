@@ -1,0 +1,71 @@
+{
+  "name": "Anubian",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr2",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 13,
+  "hp": {
+    "average": 44,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 12,
+    "int": 10,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Stealth": 5
+  },
+  "languages": [
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Sand-Tarnung",
+      "text": "Der Anubian erhält in sandigem Gelände einen zusätzlichen Bonus von +2 (+17,5 cm insgesamt) auf Verstecken"
+    },
+    {
+      "name": "Sandstufe",
+      "text": "Anstatt sich zu bewegen, löst sich die humanoide Gestalt des Anubiers in losen Sand auf und formt sich sofort an einer anderen freien Stelle innerhalb des 10 feetGeländes neu. Diese Bewegung löst keine Gelegenheitsangriffe aus. Nachdem der Anubier diese Eigenschaft in Sandgelände genutzt hat, kann er sich im Rahmen dieser Bewegung verstecken, selbst wenn er direkt beobachtet wird. Anubier können unter Türen hindurch oder durch ähnliche Hindernisse hindurchschlüpfen, sofern die Lücke groß genug ist, dass Sand hindurchrieseln kann."
+    },
+    {
+      "name": "Anfälligkeit gegenüber Wasser",
+      "text": "Für jede5 feetBewegung, die ein Anubian ausführt, während er Wasser berührt, oder für jeden Liter Wasser, der auf ihn spritzt, erleidet er 2 (1d4) Kälteschaden. Ein Anubian, der vollständig im Wasser eingetaucht ist, erleidet zu Beginn seines Zuges 10 (4d4) Kälteschaden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Anubian führt zwei Klauenangriffe aus."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 6 (1d6 + 3) Schnittschaden."
+    },
+    {
+      "name": "Haboob (1/Tag)",
+      "type": "special",
+      "text": "Der Anubianer erzeugt einen Sandsturm in einem 30 Fuß hohen Zylinder, der sich bis auf eine Entfernung5 feetvon  von ihm erstreckt. Der Sturm bewegt sich mit dem Anubianer mit. Der Bereich ist stark verdeckt, und jede Kreatur außer einem Anubianer, die den Sandsturm betritt oder ihren Zug dort beendet, muss einen erfolgreichenDC 13  Stärke-Rettungswurf bestehen oder wird durch ihn bewegungsunfähig gemacht. Außerdem erleidet jede Kreatur außer einem Anubianer, die ihren Zug innerhalb des Sandsturms beendet, 3 (1d6) Schnittschaden. Der Anubianer kann den Haboob bis zu 10 Minuten lang aufrechterhalten, als würde er sich auf einen Zauber konzentrieren. Während er den Haboob aufrechterhält, verringert sich die Geschwindigkeit des Anubianers auf5 feet  und er kann keinen Sandschritt ausführen. Kreaturen, die durch den Sandsturm bewegungsbeeinträchtigt sind, bewegen sich mit dem Anubier mit. Eine Kreatur kann sich selbst oder eine benachbarte Kreatur aus dem Sandsturm befreien, indem sie ihre Aktion einsetzt und einenDC 13  Stärke-Check durchführt. Ein erfolgreicher Check beendet die Bewegungsbeeinträchtigung der Zielkreatur."
+    }
+  ],
+  "source": "creature"
+}

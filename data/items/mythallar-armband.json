@@ -1,0 +1,45 @@
+{
+  "id": "mythallar-armbard",
+  "type": "item",
+  "name": "Mythallar Armband",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 75,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "3 kleine Kristallkugeln an einem Lederband. Als Aktion kannst du eine Kugel vom Armband entfernen und erhältst Vorteil auf alle Athletik-Würfe für 1 min. Die Kristallkugel verschwindet sofort nach dem abmachen. Wenn alle 3 Kugeln abgemacht wurden, verliert das Armband seine Magie.",
+  "tags": [
+    "magisch",
+    "arm",
+    "aktion",
+    "vorteil",
+    "athletik"
+  ]
+}

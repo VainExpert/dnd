@@ -1,0 +1,49 @@
+{
+  "name": "Cadaver Collector",
+  "size": "Large",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr14",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 17,
+  "hp": {
+    "average": 189,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 21,
+    "dex": 14,
+    "con": 20,
+    "int": 5,
+    "wis": 11,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "understands all languages but can't speak"
+  ],
+  "challenge": {
+    "cr": "14",
+    "xp": 11500,
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The cadaver collector has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Summon Specters (Recharges after a Short or Long Rest)",
+      "text": "As a bonus action, the cadaver collector calls up the enslaved spirits of those it has slain; 1d6 specters (without Sunlight Sensitivity) arise in unoccupied spaces within 15 feet of the cadaver collector. The specters act right after the cadaver collector on the same initiative count and fight until they're destroyed. They disappear when the cadaver collector is destroyed."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

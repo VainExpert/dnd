@@ -1,0 +1,44 @@
+{
+  "name": "Ankylosaurus",
+  "size": "Riesig",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "huge",
+      "beast",
+      "cr3",
+      "monster-manual"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 15,
+  "hp": {
+    "average": 68,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 11,
+    "con": 15,
+    "int": 2,
+    "wis": 12,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite10 ft: , ein Ziel. Treffer: 18 (4d6 + 4) Bludgeoning-Schaden. Ist das Ziel eine Kreatur, muss sie einenDC 14Stärke-Rettungswurf bestehen, sonst wird sie zu Boden geworfen."
+    }
+  ],
+  "source": "creature"
+}

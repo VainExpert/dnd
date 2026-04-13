@@ -1,0 +1,62 @@
+{
+  "name": "Priester der Schwarzen Erde",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "elemental-evil",
+      "human"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 17,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 11,
+    "con": 14,
+    "int": 12,
+    "wis": 10,
+    "cha": 16
+  },
+  "skills": {
+    "Intimidation": 5,
+    "Religion": 3,
+    "Persuasion": 5
+  },
+  "languages": [
+    "Common",
+    "Terran"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Priester ist ein Zauberwirker der Stufe 5. Seine Zauberfertigkeit ist Charisma (ZauberrettungswurfDC 13, +5 auf Treffer bei Zauberangriffen). Er beherrscht die folgenden Zauber des Zauberers:\n\n* Cantrips (beliebig oft): Säurespritzer, Klingenabwehr, Licht, Ausbessern, Erde formen\n\n* 1. Stufe (4 Zauberplätze): Erdbeben, Schneller Rückzug, Schild\n\n* 2. Stufe (3 Zauberplätze): Zerschmettern, Spinnenklettern\n\n* 3. Stufe (2 Zauberplätze): Verlangsamen"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Priester führt zwei Nahkampfangriffe aus."
+    },
+    {
+      "name": "Lanze",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 zum Treffen, Reichweite10 ft: , ein Ziel. Treffer: 7 (1d10 + 2) Schnittschaden."
+    }
+  ],
+  "source": "creature"
+}

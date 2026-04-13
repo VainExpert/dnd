@@ -1,0 +1,68 @@
+{
+  "name": "Hurricane",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "elemental-evil",
+      "human"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 14,
+  "hp": {
+    "average": 33,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 13,
+    "int": 10,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Acrobatics": 5
+  },
+  "languages": [
+    "Auran",
+    "Common"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "text": "The hurricane is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). It knows the following sorcerer spells:\n\n* Cantrips (at will): <i>blade ward, gust, light, prestidigitation</i>\n\n* 1st level (4 slots): <i>feather fall, jump, thunderwave</i>\n\n* 2nd level (2 slots): <i>gust of wind</i>"
+    },
+    {
+      "name": "Unarmored Defense",
+      "text": "While the hurricane is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+    },
+    {
+      "name": "Unarmored Movement",
+      "text": "While the hurricane is wearing no armor and wielding no shield, its walking speed increases by 15 feet (included in its speed)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The hurricane makes two melee attacks."
+    },
+    {
+      "name": "Unarmed Strike",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

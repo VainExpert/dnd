@@ -1,0 +1,65 @@
+{
+  "name": "Oren Yogilvy",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr0",
+      "storm-kings-thunder",
+      "strongheart halfling"
+    ]
+  },
+  "alignment": "chaotic good",
+  "ac": 11,
+  "hp": {
+    "average": 9,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 13,
+    "con": 12,
+    "int": 11,
+    "wis": 10,
+    "cha": 16
+  },
+  "skills": {
+    "Perception": 2,
+    "Performance": 7,
+    "Persuasion": 5
+  },
+  "languages": [
+    "Common",
+    "Halfling"
+  ],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Halfling Nimbleness",
+      "text": "Oren can move through the space of any creature that is of a size large than his."
+    },
+    {
+      "name": "Lucky",
+      "text": "When Oren rolls a 1 on an attack roll, ability check, or saving throw, he can reroll the die and must use the new roll."
+    },
+    {
+      "name": "Stout Resilience",
+      "text": "Oren has advantage on saving throws against poison"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60ft., one target. Hit: 3 (1d4+1) piercing damage. Duvessa carries only one dagger."
+    }
+  ],
+  "source": "creature"
+}

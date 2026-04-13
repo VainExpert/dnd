@@ -1,0 +1,45 @@
+{
+  "id": "heller-pilzumhang",
+  "type": "item",
+  "name": "Heller Pilzumhang",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 25,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn der Pilzumhang getragen wird, kann er als Bonus Aktion ge- oder entfaltet werden. Ein entfalteter Pilzumhang spendet 1,5 m helles Licht und weitere 1,5 m gedimmtes Licht. 500 g Pilze sind in den Umhang genäht, diese können gegessen werden. Wenn alle Pilze gegessen wurden, wird der Pilzumhang zu einem normalen Umhang.",
+  "tags": [
+    "kleidung",
+    "bonus aktion",
+    "licht",
+    "essen",
+    "umhang"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "hanf-seil",
+  "type": "item",
+  "name": "Hanf-Seil",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Das 15 m lange Hanf-Seil hat 2 TP und zum Bersten braucht man einen Athletik-Wurf (SG 20). Ein Knoten kann mit einem Fingerfertigkeit-Wurf (SG 10) gebunden werden. Eine mit dem Seil gebundene Kreatur muss einen Akrobatik-Wurf (SG 15) machen, um sich zu befreien.",
+  "tags": [
+    "abenteuer",
+    "bewegung",
+    "fesseln",
+    "klettern",
+    "seil"
+  ]
+}

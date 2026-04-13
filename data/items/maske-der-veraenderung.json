@@ -1,0 +1,44 @@
+{
+  "id": "maske-der-veraenderung",
+  "type": "item",
+  "name": "Maske der Veränderung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Die Maske hat 3 Ladungen. Als Aktion kanne eine Ladung verwendet werden um das Aussehen deines Gesichts zu verändern. Du kannst nicht wie eine andre Person aussehen aber kleine kosmetische Veränderungen durchführen. Während der Veränderung ist die Maske unsichtbar. Die Veränderung hält für 1 h. Die Maske erhält 1W3 Ladungen am Morgen zurück. Nachdem die letzte Ladung verwendet wird muss ein W20 gewürfelt werden, bei einer 1 verpufft die Maske.",
+  "tags": [
+    "magisch",
+    "maske",
+    "verkleidung",
+    "ladungen"
+  ]
+}

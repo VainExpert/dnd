@@ -1,0 +1,67 @@
+{
+  "name": "Erina Scrounger",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr1/4",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 12,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 20
+  },
+  "abilities": {
+    "str": 9,
+    "dex": 12,
+    "con": 14,
+    "int": 13,
+    "wis": 10,
+    "cha": 11
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Erina"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "text": "The erina has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Hardy",
+      "text": "The erina has advantage on saving throws against poison."
+    },
+    {
+      "name": "Spines",
+      "text": "An enemy who hits the erina with a melee attack while within 5 feet of it takes 2 (1d4) piercing damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
+    },
+    {
+      "name": "Sling",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +3 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

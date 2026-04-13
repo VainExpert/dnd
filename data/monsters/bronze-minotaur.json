@@ -1,0 +1,72 @@
+{
+  "name": "Bronze Minotaur",
+  "size": "Large",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr10",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 17,
+  "hp": {
+    "average": 110,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 16,
+    "int": 3,
+    "wis": 11,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages of its creator but can’t speak"
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Fire Absorption",
+      "text": "Whenever the bronze minotaur is subjected to fire\ndamage, it takes no damage and instead regains a number of hit points\nequal to the fire damage dealt."
+    },
+    {
+      "name": "Immutable Form",
+      "text": "The bronze minotaur is immune to any spell or effect\nthat would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The bronze minotaur has advantage on saving\nthrows against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapon",
+      "text": "The bronze minotaur’s weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The bronze minotaur makes two greataxe attacks."
+    },
+    {
+      "name": "Greataxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit:\n23 (3d12 + 4) slashing damage."
+    },
+    {
+      "name": "Breathe Fire (Recharge 5–6)",
+      "type": "special",
+      "text": "The bronze minotaur releases a 30-foot\ncone of flame. Creatures in the area must make a DC 16 Dexterity saving\nthrow, taking 52 (15d6) fire damage on a failed saving throw, or half as\nmuch damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

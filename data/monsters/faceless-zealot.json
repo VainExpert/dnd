@@ -1,0 +1,56 @@
+{
+  "name": "Faceless Zealot",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr1/2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 12,
+  "hp": {
+    "average": 16,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 14,
+    "con": 13,
+    "int": 16,
+    "wis": 6,
+    "cha": 7
+  },
+  "skills": {},
+  "languages": [
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The zealot makes a dagger attack and\nthen attempts to grapple a target."
+    },
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft.,\none target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Mental Assault (1/Day)",
+      "type": "special",
+      "text": "The zealot attempts to\noverwhelm the mind of a creature that it has\ngrappled. That creature must succeed on a DC 13\nIntelligence saving throw or take 5 (1d10) psychic\ndamage and come under the effects of one of the\nfollowing madness effects for one hour:\n* Blinding Agony – The creature closes their eyes\nand is convinced they have been sealed shut\npermanently. The creature is blind until the effect\nfades.\n* Silence Eternal – The creature closes their mouth\nand is convinced it has been sealed shut\npermanently. The creature cannot speak until the\neffect fades.\n* Maddening Gibberish - All words the creature\nhears become twisted and garbled, shifting\npitches and order in unpredictable ways. The\ncreature cannot hear the voices of others until\nthe effect fades."
+    }
+  ],
+  "source": "creature"
+}

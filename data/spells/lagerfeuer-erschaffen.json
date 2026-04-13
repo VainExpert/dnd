@@ -1,0 +1,20 @@
+{
+  "id": "lagerfeuer-erschaffen",
+  "name": "Lagerfeuer erschaffen",
+  "level": 0,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "18 m (1,5 m Würfel)",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Druide",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du erschaffst ein Lagerfeuer in Reichweite auf dem Boden, den du sehen kannst.\nFür die Wirkungsdauer füllt das Lagerfeuer einen 1,5 m Würfel.\nAlle Kreaturen im Bereich des Feuers müssen einen DEX-Rettungswurf machen oder erleiden 1W8 Feuerschaden, auch wenn der Bereich des Lagerfeuers zum ersten Mal betreten oder der Zug dort beendet wird.\n\nAuf höheren Level: Schaden steigt um je 1W8 auf Level 5, 11 und 17."
+}

@@ -1,0 +1,58 @@
+{
+  "name": "Lava Child",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "dungeon-of-the-mad-mage",
+      "lava child"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 11,
+  "hp": {
+    "average": 60,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 13,
+    "con": 16,
+    "int": 11,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {
+    "Athletics": 6,
+    "Survival": 2
+  },
+  "languages": [
+    "Common",
+    "Ignan"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Metal Immunity",
+      "text": "The lava child can move through metal without hindrance, and it has advantage on attack rolls against any creature wearing metal armor or using a metal shield."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The lava child makes two attacks: one with its bite and one with its claws."
+    }
+  ],
+  "source": "creature"
+}

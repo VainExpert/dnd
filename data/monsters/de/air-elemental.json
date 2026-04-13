@@ -1,0 +1,60 @@
+{
+  "name": "Luftelementar",
+  "size": "Groß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "large",
+      "elemental",
+      "cr5",
+      "monster-manual"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 15,
+  "hp": {
+    "average": 90,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 20,
+    "con": 14,
+    "int": 6,
+    "wis": 10,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "Auran"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Luftform",
+      "text": "Das Elementar kann das Feld einer feindlichen Kreatur betreten und dort stehen bleiben. Es kann sich durch ein Feld bewegen, das nur so1 inchbreit ist wie  , ohne sich hindurchzwängen zu müssen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Das Elementarwesen führt zwei Schlagangriffe aus."
+    },
+    {
+      "name": "Friede sei mit euch",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 14 (2d8 + 5) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Wirbelwind (Aufladen 4-6)",
+      "type": "special",
+      "text": "Jedes Wesen im Bereich des Elementars muss einenDC 13  Stärke-Rettungswurf durchführen. Bei einem Fehlschlag erleidet das Ziel 15 (3d8 + 2) Bludgeoning-Schaden, wird in zufälliger Richtung vom Elementar 20 feetweggeschleudert und zu Boden geworfen. Wenn ein geschleudertes Ziel auf ein Objekt wie eine Wand oder den Boden trifft, erleidet es 3 (1d6) Bludgeoning-Schaden pro10 feet  , um das es geschleudert wurde. Wird das Ziel auf eine andere Kreatur geschleudert, muss diese einenDC 13  Geschicklichkeits-Rettungswurf bestehen oder denselben Schaden erleiden und zu Boden geworfen werden.\n\nIst der Rettungswurf erfolgreich, erleidet das Ziel nur die Hälfte des Bludgeoning-Schadens und wird weder weggeschleudert noch zu Boden geworfen."
+    }
+  ],
+  "source": "creature"
+}

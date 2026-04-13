@@ -1,0 +1,70 @@
+{
+  "name": "Lippen",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 39,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 15,
+    "con": 14,
+    "int": 7,
+    "wis": 12,
+    "cha": 11
+  },
+  "skills": {
+    "Stealth": 4
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Saurer Blut",
+      "text": "Jedes Mal, wenn das Belabra von einem Angriff getroffen wird,\nder durchdringenden oder schneidenden Schaden verursacht, müssen alle Kreaturen im Umkreis10\nfeetvon  des Belabra einenDC 12  Geschicklichkeits-Rettungswurf\nausführen oder werden mit dem Blut des Belabra bespritzt. Bei einem misslungenen Rettungswurf erleidet die\nKreatur 4 (1d6 + 1) Säureschaden und hat aufgrund von Niesen\nund teilweiser Blindheit bis zum Ende des nächsten\nZugs des Belabra\nNachteil bei Angriffen, Rettungswürfen oder Fähigkeitsproben."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Das Belabra führt drei Angriffe aus: einen\nmit seinem Schlag und zwei mit seinen Tentakeln. Wenn es ein Ziel festhält,\nbeißt es dieses anstelle eines Tentakelangriffs."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 6 (1d8 + 2) Durchschlagschaden."
+    },
+    {
+      "name": "Friede sei mit euch",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 auf Treffer, Reichweite5 ft: ., ein Ziel. Treffer: 5\n(1d6 + 2) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Tentakel",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 zum Treffer, Reichweite 1,5 m., ein Ziel. Treffer:\n9 (2d6 + 2) Durchbohrungsschaden, und das Ziel wird festgehalten (Befreiung DC 12). Bis\nder Festhalteschlag endet, ist das Ziel bewegungsunfähig und erleidet zu Beginn seines Zuges 4 (1d6 + 1) Durchbohrungsschaden\ndurch die Stacheln der Tentakel. Das Belabra kann\ndrei Ziele gleichzeitig festhalten."
+    }
+  ],
+  "source": "creature"
+}

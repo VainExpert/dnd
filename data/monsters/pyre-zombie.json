@@ -1,0 +1,59 @@
+{
+  "name": "Pyre Zombie",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 12,
+  "hp": {
+    "average": 19,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 6,
+    "con": 16,
+    "int": 3,
+    "wis": 6,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages it knew in life but can’t speak"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Undead Fortitude",
+      "text": "If damage reduces the zombie to 0 hit points, it\nmakes a Constitution saving throw with a DC of 5+ the damage taken,\nunless the damage is radiant or from a critical hit. On a success, the\nzombie drops to 1 hit point instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The zombie has advantage on saving throws against\nspells and other magical effects."
+    },
+    {
+      "name": "Violent Combustion",
+      "text": "Whenever the zombie is hit, it violently explodes.\nEvery creature with a 5-foot radius must make a DC 13 Dexterity saving\nthrow, taking 7 (2d6) fire damage on a failed save, or half as much on a\nsuccessful one."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 9\n(2d6 + 1) bludgeoning damage plus 7 (2d6) fire damage."
+    }
+  ],
+  "source": "creature"
+}

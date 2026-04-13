@@ -1,0 +1,62 @@
+{
+  "name": "Conshee",
+  "size": "Tiny",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "tiny",
+      "fey",
+      "cr1/8",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 12,
+  "hp": {
+    "average": 7,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 6,
+    "dex": 15,
+    "con": 11,
+    "int": 12,
+    "wis": 13,
+    "cha": 13
+  },
+  "skills": {
+    "Acrobatics": 4,
+    "Stealth": 4
+  },
+  "languages": [
+    "Common",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "1/8",
+    "xp": 25,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The conshee’s innate spellcasting ability is\nCharisma (spell save DC 11, +3 to hit with spell attacks). It can cast the\nfollowing spells, requiring no material components.\n\n* At will: <i>detect evil and good, light</i>\n\n* 1/day each: <i>faerie fire, silent image</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range\n20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Shortbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one\ntarget. Hit: 5 (1d6 + 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

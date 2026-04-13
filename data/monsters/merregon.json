@@ -1,0 +1,51 @@
+{
+  "name": "Merregon",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr4",
+      "mordenkainens-tome-of-foes",
+      "devil"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 16,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 17,
+    "int": 6,
+    "wis": 12,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "understands Infernal but can't speak",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "4",
+    "xp": 1100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "text": "Magical darkness doesn't impede the merregon's darkvision."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The merregon has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

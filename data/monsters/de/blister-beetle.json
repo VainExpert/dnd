@@ -1,0 +1,51 @@
+{
+  "name": "Blisterkäfer",
+  "size": "Klein",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "small",
+      "beast",
+      "cr1",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 12,
+  "hp": {
+    "average": 13,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 10,
+    "con": 12,
+    "int": 1,
+    "wis": 10,
+    "cha": 7
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +2 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 3 (1d6)\nDurchdringungsschaden plus 3 (1d6) Säureschaden."
+    },
+    {
+      "name": "Blister-Spray (Nachfüllpackung 5–6)",
+      "type": "special",
+      "text": "Der Käfer stößt einen 4,5 Meter breiten Kegel aus\nÄtzsäure aus, wodurch sich auf der Haut jedes Lebewesens, das\nin den Sprühnebel gerät, schmerzhafte Blasen bilden. Lebewesen in diesem Bereich müssen einenDC 12  Geschicklichkeits-\nRettungswurf durchführen und erleiden bei einem misslungenen Rettungswurf 10 (3d6) Säureschaden oder die Hälfte\ndieses Schadens bei einem erfolgreichen Rettungswurf."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Memory Moss",
+  "size": "Medium",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "medium",
+      "plant",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 5,
+  "hp": {
+    "average": 5,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 1,
+    "dex": 1,
+    "con": 15,
+    "int": 1,
+    "wis": 10,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Steal Memories",
+      "text": "When a living creature moves within 60 feet of a patch of memory\nmoss, the moss attacks by attempting to steal that creature’s memories.\nIt can target a single creature each round. A targeted creature must\nsucceed on a DC 14 Wisdom saving throw or lose all memories from\nthe last 24 hours. This is particularly nasty to spellcasters, who lose\nall spells prepared within the last 24 hours. (Only those spells actually\nprepared in the last 24 hours are lost; spells prepared longer than 24\nhours ago are not lost.)\n\nOnce a memory moss steals a creature’s memories, it sinks back down\nand does not attack again for one day. If a creature loses its memories\nto the memory moss, it acts as if affected by a <i>confusion</i> spell for the\nnext 1d4 hours. Lost memories can be regained by eating the memory\nmoss that absorbed them. Doing so requires a DC 11 Constitution saving\nthrow, with failure resulting in the creature being nauseated for 1d6\nminutes and poisoned until it takes a long or short rest.\n\nA creature that eats the memory moss temporarily gains the\nmemories currently stored therein (even if they are not the creature’s\nown memories). Such creatures can even cast spells if the memory\nmoss has stolen these from a spellcasting creature. Any non-spellcaster\nthat attempts to cast a spell gained in this way must succeed on an\nIntelligence check (DC 10 + spell level) or the spell fizzles away.\nAfter 24 hours, the memories fade (including any spells not yet cast).\nCreatures eating the memory moss to regain their own lost memories\ndo not lose them after 24 hours. Cold or fire damage kills a patch of\nmemory moss.\n\nWhen first encountered there is a 25% chance that the memory moss\nhas eaten within the last day and does not attack by stealing memories.\nIn such a case, the moss contains 2d4 spells determined randomly from\nany spell caster’s list with no spell over 4th level. When a living creature\nmoves within 60 feet of a sated memory moss, it assumes a vaguely\nhumanoid form and casts the stolen spells at its targets. The moss casts\nthese spells as a sorcerer of the minimum level necessary to cast the stolen\nspell (save DC 10 + spell level, + spell level +2 to hit with spell attack)."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "erwecken",
+  "name": "Erwecken",
+  "level": 5,
+  "school": "Verwandlungsmagie",
+  "casting_time": "8 h",
+  "range": "Berührung",
+  "components": "V, G, M (Achat im Wert von mind. 1.000 GM)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Druide"
+  ],
+  "text": "Du zeichnest während der Wirkungszeit magische Pfade in den Achat und berührst anschließend ein höchstens riesiges Tier oder eine Pflanze.\nDas Ziel darf höchstens einen INT-Wert von 3 haben, es erhält einen INT-Wert von 10 und kann eine dir bekannte Sprache sprechen.\nEine Pflanze kann Wurzeln, Ranken und ähnliches bewegen und erhält Sinne wie ein Mensch.\nDas erweckte Ziel ist 30 Tage lang von dir bezaubert. Der Zauber endet, wenn du oder ein Begleiter ihm Schaden zufügen.\nDie Gesinnung nach Ende der Bezauberung ergibt sich aus der Behandlung, während das Ziel bezaubert war."
+}

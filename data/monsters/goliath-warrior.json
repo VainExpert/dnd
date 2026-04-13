@@ -1,0 +1,61 @@
+{
+  "name": "Goliath Warrior",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "homebrew",
+      "goliath"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 13,
+  "hp": {
+    "average": 105,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 13,
+    "con": 17,
+    "int": 10,
+    "wis": 11,
+    "cha": 10
+  },
+  "skills": {
+    "Athletics": 5,
+    "Survival": 2
+  },
+  "languages": [
+    "Common",
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The goliath makes two attacks with\neither its battleaxe or javelin."
+    },
+    {
+      "name": "Battleaxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5\nft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8\n(1d10 + 3) slashing damage if used with two hands."
+    },
+    {
+      "name": "Javelin",
+      "type": "special",
+      "text": "Melee or Ranged Weap on Attack: +5 to hit,\nreach 5 ft. or range 30/120 feet, one target. Hit: 6\n(1d6 + 3) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

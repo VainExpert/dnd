@@ -1,0 +1,16 @@
+{
+  "id": "melfs-saeurepfeil",
+  "name": "Melfs Säurepfeil",
+  "level": 2,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "27 m",
+  "components": "V, G, M (pulverisiertes Rhabarberblatt)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Magier"
+  ],
+  "text": "Ein schimmernder grüner Pfeil fliegt auf ein Ziel in Reichweite und platzt in Säure.\nMache einen Fernkampf-Zauberangriff.\nBei Treffer: 4W4 Säureschaden und 2W4 Säureschaden am Ende des nächsten Zuges des Ziels.\nBei Fehlschlag: halber initialer Schaden (kein Folgeschaden).\n\nAuf höheren Level gewirkt: pro Level je +1W4."
+}

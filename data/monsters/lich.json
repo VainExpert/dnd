@@ -1,0 +1,67 @@
+{
+  "name": "Lich",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr21",
+      "monster-manual"
+    ]
+  },
+  "alignment": "any evil alignment",
+  "ac": 17,
+  "hp": {
+    "average": 135,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 16,
+    "con": 16,
+    "int": 20,
+    "wis": 14,
+    "cha": 16
+  },
+  "skills": {
+    "Arcana": 18,
+    "History": 12,
+    "Insight": 9,
+    "Perception": 9
+  },
+  "languages": [
+    "Common plus up to five other languages"
+  ],
+  "challenge": {
+    "cr": "21",
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "text": "If the lich fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Rejuvenation",
+      "text": "If it has a phylactery, a destroyed lich gains a new body in 1d10 days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the phylactery."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The lich is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). The lich has the following wizard spells prepared:\n\n* Cantrips (at will): <i>mage hand, prestidigitation, ray of frost</i>\n\n* 1st level (4 slots): <i>detect magic, magic missile, shield, thunderwave</i>\n\n* 2nd level (3 slots): <i>detect thoughts, invisibility, Melf's acid arrow, mirror image</i>\n\n* 3rd level (3 slots): <i>animate dead, counterspell, dispel magic, fireball</i>\n\n* 4th level (3 slots): <i>blight, dimension door</i>\n\n* 5th level (3 slots): <i>cloudkill, scrying</i>\n\n* 6th level (1 slot): <i>disintegrate, globe of invulnerability</i>\n\n* 7th level (1 slot): <i>finger of death, plane shift</i>\n\n* 8th level (1 slot): <i>dominate monster, power word stun</i>\n\n* 9th level (1 slot): <i>power word kill</i>"
+    },
+    {
+      "name": "Turn Resistance",
+      "text": "The lich has advantage on saving throws against any effect that turns undead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Paralyzing Touch",
+      "type": "special",
+      "text": "Melee Spell Attack: +12 to hit, reach 5 ft., one creature. Hit: 10 (3d6) cold damage. The target must succeed on a DC 18 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ],
+  "source": "creature"
+}

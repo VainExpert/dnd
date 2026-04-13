@@ -1,0 +1,88 @@
+{
+  "name": "Gypsosphinx",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr14",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 17,
+  "hp": {
+    "average": 171,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 70
+  },
+  "abilities": {
+    "str": 20,
+    "dex": 14,
+    "con": 18,
+    "int": 18,
+    "wis": 18,
+    "cha": 18
+  },
+  "skills": {
+    "Arcana": 9,
+    "History": 9,
+    "Perception": 9,
+    "Religion": 9
+  },
+  "languages": [
+    "Abyssal",
+    "Common",
+    "Darakhul",
+    "Sphinx"
+  ],
+  "challenge": {
+    "cr": "14",
+    "xp": 11500,
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Inscrutable",
+      "text": "The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The sphinx's weapon attacks are magical."
+    },
+    {
+      "name": "Mystic Sight",
+      "text": "A gypsosphinx sees death coming and can foretell the manner of a person's death. This ability does not come with any urge to share that information. Gypsosphinxes are notorious for hinting, teasing, and even lying about a creature's death (\"If we fight, I will kill you and eat your heart. I have seen it,\" is a favorite bluff)."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The sphinx is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following wizard spells prepared:\n\nCantrips: (at will): mage hand, mending, minor illusion, poison spray\n\n1st level (4 slots): comprehend languages, detect magic, identify\n\n2nd level (3 slots): blur, darkness, locate object\n\n3rd level (3 slots): dispel magic, glyph of warding, major image\n\n4th level (3 slots): blight, greater invisibility\n\n5th level (1 slot): cloudkill"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The sphinx makes one bite attack and two claw attacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 21 (3d10 + 5) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 32 (6d8 + 5) slashing damage."
+    },
+    {
+      "name": "Rake",
+      "type": "special",
+      "text": "If the sphinx succeeds with both claw attacks, it automatically follows up with a rake attack. If the target fails a DC 17 Dexterity check, it is knocked prone and takes 14 (2d8 + 5) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

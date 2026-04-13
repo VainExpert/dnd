@@ -1,0 +1,45 @@
+{
+  "id": "diadem-des-versengens",
+  "type": "item",
+  "name": "Diadem des Versengens",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "head",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 250,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du dieses Diadem trägst, kannst du damit als Aktion den Zauber Sengender Strahl wirken. Wenn du die Angriffswürfe für den Zauber ausführst, ist dein Angriffsbonus +5. Das Diadem kann erst im nächsten Morgengrauen wieder auf diese Weise verwendet werden.",
+  "tags": [
+    "magisch",
+    "diadem",
+    "zauber",
+    "angriff",
+    "feuer"
+  ]
+}

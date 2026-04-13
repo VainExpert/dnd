@@ -1,0 +1,44 @@
+{
+  "id": "zauberstab-des-unmuts",
+  "type": "item",
+  "name": "Zauberstab des Unmuts",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Der Zauberstab hat 3 Ladungen. Wenn er gehalten wird, kann mit einer Aktion eine Ladung verwendet werden um einen Humanoiden in 9 m Abstand, den du sehen kannst, als Ziel zu wählen. Das Ziel muss einen SG-10 CHA-Rettungswurf machen oder ist gezwungen für 1 min zu fisnter zu blicken. Der Zauberstab bekommt alle Ladungen am Morgen wieder. Wenn die letzte Ladung verwendet wurde, muss ein W20 gewürfelt werden. Bei einer 1 wird er zu einem Zauberstab des Lächelns.",
+  "tags": [
+    "magisch",
+    "zauberstab",
+    "ladungen",
+    "aktion"
+  ]
+}

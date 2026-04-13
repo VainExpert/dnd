@@ -1,0 +1,75 @@
+{
+  "name": "Flind",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr9",
+      "volos-guide",
+      "gnoll"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 16,
+  "hp": {
+    "average": 127,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 10,
+    "con": 19,
+    "int": 11,
+    "wis": 13,
+    "cha": 12
+  },
+  "skills": {
+    "Intimidation": 5,
+    "Perception": 5
+  },
+  "languages": [
+    "Abyssal",
+    "Gnoll"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Aura of Blood Thirst",
+      "text": "If the flind isn't incapacitated, any creature with the Rampage trait can make a bite attack as a bonus action while within 10 feet of the flind."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The flind makes three attacks: one with each of its different flail attacks or three with its longbow."
+    },
+    {
+      "name": "Flail of Madness",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft, one target. Hit: 10 (1d10+5) bludgeoning damage, and the target must make a DC 16 Wisdom saving throw. On a failed save, the target must make a melee attack against a random target within its reach on its next turn. If it has no targets within its reach even after moving, it loses its action on that turn."
+    },
+    {
+      "name": "Flail of Pain",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 it, one target. Hit: 10 (1d10+5) bludgeoning damage plus 22 (4d10) psychic damage."
+    },
+    {
+      "name": "Flail of Paralysis",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 10 (1d10+5) bludgeoning damage, and the target must succeed on a DC 16 Constitution saving throw or be paralyzed until the end of its next turn."
+    },
+    {
+      "name": "Longbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 4 (1d8) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

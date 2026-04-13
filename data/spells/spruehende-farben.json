@@ -1,0 +1,18 @@
+{
+  "id": "spruehende-farben",
+  "name": "Sprühende Farben",
+  "level": 1,
+  "school": "Illusionsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (4,5 m Kegel)",
+  "components": "V, G, M (Prise Pulver oder mehrfarbiger Sand)",
+  "duration": "1 Runde (6 s)",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Schillernde, bunte Lichter entspringen dir.\nWirf 6W10, die Summe ergibt die maximale TP-Zahl an Kreaturen auf die der Zauber gewirkt werden kann. Kreaturen im Abstand von einem 4,5 m Kegel zu dir sind in aufsteigender aktueller TP-Anzahl betroffen (Bewusstlose und Blinde werden ignoriert).\nSubtrahiere die aktuellen TP jeder Kreatur von der Summe. Die aktuellen TP der nächsten zu betreffenden Kreatur muss kleiner oder gleich der verbleibenden Summe sein. Jede betroffene Kreatur wird blind. Der Zustand hält an für die Wirkungsdauer.\n\nAuf höheren Level gewirkt: pro Level 2W10 mehr"
+}

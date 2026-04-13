@@ -1,0 +1,60 @@
+{
+  "name": "Husk Zombie",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr1",
+      "explorers-guide-to-wildemount"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 10,
+  "hp": {
+    "average": 37,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 16,
+    "int": 3,
+    "wis": 6,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages it knew in life but can’t speak"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Curse of the Husk",
+      "text": "A humanoid slain by a melee attack from the zombie revives as a husk zombie on its next turn."
+    },
+    {
+      "name": "Undead Fortitude",
+      "text": "If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The zombie makes two claw attacks. For each of these attacks that reduces a creature to 0 hit points, the zombie can make an additional claw attack."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

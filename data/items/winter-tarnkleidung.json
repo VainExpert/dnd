@@ -1,0 +1,45 @@
+{
+  "id": "winter-tarnkleidung",
+  "type": "item",
+  "name": "Winter Tarnkleidung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diese Tarnkleidung trägst, hast du Vorteil auf Heimlichkeit-Würfe in passendem Wetter oder einer passenden Umgebung.",
+  "tags": [
+    "kleidung",
+    "wetter",
+    "heimlichkeit",
+    "vorteil",
+    "schnee"
+  ]
+}

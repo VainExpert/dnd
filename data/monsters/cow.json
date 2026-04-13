@@ -1,0 +1,49 @@
+{
+  "name": "Cow",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr1/4",
+      "volos-guide"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 10,
+  "hp": {
+    "average": 15,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 14,
+    "int": 2,
+    "wis": 10,
+    "cha": 4
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "text": "If the cow moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 7 (2d6) piercing damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Gore",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6+4) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

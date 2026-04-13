@@ -1,0 +1,66 @@
+{
+  "name": "Kobold Dragon Shaman",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr1",
+      "nerzugals-extended-bestiary",
+      "kobold"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 11,
+  "hp": {
+    "average": 17,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 12,
+    "con": 10,
+    "int": 8,
+    "wis": 7,
+    "cha": 12
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the kobold\nhas disadvantage on attack rolls, as well as on\nWisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The kobold has advantage on an attack\nroll against a creature if at least one of the kobold’s\nallies is within 5 feet of the creature and the ally\nisn’t incapacitated."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The kobold’s innate spellcasting\nability is Charisma (spell save DC 11, +3 to hit with\nspell attacks). It can innately cast a number of\nspells, requiring no material components. The type\nof dragon the kobold worships determines the\nspells it has available, as shown below.\n* ***Black,*** 1/day each: <i>acid splash, fog cloud</i>\n* ***Blue,*** 1/day each: <i>shocking grasp, witch bolt</i>\n* ***Green,*** 1/day each: <i>poison spray, ray of sickness</i>\n* ***Red,*** 1/day each: <i>firebolt, burning hands</i>\n* ***White,*** 1/day each: <i>ray of frost, ice knife</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5ft.,\none target. Hit: 3 (1d4 + 1) slashing damage."
+    },
+    {
+      "name": "Sling",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +3 to hit, range\n30/120 ft., one target. Hit: 3 (1d4 + 1)\nbludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

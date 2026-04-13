@@ -1,0 +1,46 @@
+{
+  "id": "augen-des-praezisen-sehens",
+  "type": "item",
+  "name": "Augen des präzisen Sehens",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 175,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese kristallenen Gläser können als Brille getragen werden. Wenn du sie trägst, bist du bei Nachforschungen-Würfen im Vorteil, wenn du einen Bereich oder einen Gegenstand innerhalb von 30 cm untersuchst.",
+  "tags": [
+    "magisch",
+    "brille",
+    "nachforschung",
+    "präzision",
+    "int",
+    "auge"
+  ]
+}

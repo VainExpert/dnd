@@ -1,0 +1,62 @@
+{
+  "name": "Hill Giant",
+  "size": "Huge",
+  "type": {
+    "type": "giant",
+    "tags": [
+      "huge",
+      "giant",
+      "cr5",
+      "monster-manual"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 13,
+  "hp": {
+    "average": 105,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 21,
+    "dex": 8,
+    "con": 19,
+    "int": 5,
+    "wis": 9,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 2
+  },
+  "languages": [
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Squash",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creature. Hit: 26 (6d6 + 5) bludgeoning damage, the giant lands prone in the target's space, and the target is grappled (escape DC 15). Until this grapple ends, the target is prone. The grapple ends early if the giant stands up."
+    },
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The giant makes two greatclub attacks."
+    },
+    {
+      "name": "Greatclub",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 18 (3d8 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Rock",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +8 to hit, range 60/240 ft., one target. Hit: 21 (3d10 + 5) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

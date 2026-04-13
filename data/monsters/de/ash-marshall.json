@@ -1,0 +1,80 @@
+{
+  "name": "Ash Marshall",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr9",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 20,
+  "hp": {
+    "average": 157,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 12,
+    "con": 21,
+    "int": 14,
+    "wis": 17,
+    "cha": 16
+  },
+  "skills": {
+    "Athletics": 9,
+    "Insight": 7,
+    "Intimidation": 7,
+    "Nature": 6,
+    "Perception": 8,
+    "Religion": 6
+  },
+  "languages": [
+    "Common",
+    "Elven",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Die Abstammung der Fey",
+      "text": "Magie kann den Marshall\nnicht einschläfern."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Marschall hat einen Vorteil\nbei Rettungswürfen gegen Zauber und andere\nmagische Effekte."
+    },
+    {
+      "name": "Befehl Fey",
+      "text": "Als Mitglied des Hofes\nvon Arkadien kann der Marschall den Zauber dominate\nmonster (DC 15) nach Belieben auf jede Feenwesen oder jeden Elfen wirken."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Marshalls\nist Charisma (ZauberrettungswurfDC 15). Der\nMarshall kann die folgenden Zauber von Natur aus wirken,\nohne dass dafür materielle Komponenten erforderlich sind:\n\n* Beliebig oft: Jägerzeichen, Brandmal-Schlag\n\n* 1/Tag: Tote erwecken"
+    },
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Marschall ist ein Zauberwirker der 9. Stufe.\nSeine Zauberfertigkeit ist Charisma (Zauber\nrettungswurfDC 15, +7 auf Treffer bei Zauberangriffen). Der Marschall\nhat folgende Zauber vorbereitet:\n\n* Cantrips (beliebig oft): Feuerblitz, Magische Hand, Kleine Illusion, Taschenspielertrick\n\n* 1. Stufe (4 Plätze): Magie entdecken, Identifizieren, Magischer Pfeil\n\n* 2. Stufe (3 Plätze): Gedanken lesen, Spiegelbild, Windstoß, Nebelschritt\n\n* 3. Stufe (3 Plätze): Zauberabwehr, Fliegen, Feuerball\n\n* 4. Stufe (3 Plätze): Verbannung, Dimensionspforte\n\n* 5. Stufe (1 Platz): Kältekegel, Monster fesseln"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Marschall führt drei Ashsword-Angriffe\naus. Treffen zwei Angriffe dasselbe Ziel, hat dieses\nZiel in der nächsten Runde Nachteil bei allen Nahkampfangriffen,\nan denen der Marschall nicht beteiligt ist."
+    },
+    {
+      "name": "Asche-Schwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite\n1,5 m, ein Ziel. Treffer: 9 (1d8 + 5) Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,77 @@
+{
+  "name": "Furious Zealot",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 15,
+  "hp": {
+    "average": 81,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 16,
+    "int": 10,
+    "wis": 16,
+    "cha": 14
+  },
+  "skills": {
+    "Athletics": 8,
+    "Insight": 7,
+    "Persuasion": 6,
+    "Religion": 4
+  },
+  "languages": [
+    "Any two languages"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Combat Caster",
+      "text": "The zealot can perform the somatic\ncomponents of spells even when it has weapons or a\nshield in one or both hands."
+    },
+    {
+      "name": "Danger Sense",
+      "text": "The zealot has advantage on Dexterity\nsaving throws."
+    },
+    {
+      "name": "Rage (2/Day)",
+      "text": "As a bonus action, the zealot can enter a\nrage for 1 minute. While raging, the zealot gains the\nfollowing benefits:\n* Advantage on Strength checks and Strength saving\nthrows\n* Melee weapon attacks deal an addition 2 damage.\n* The zealot gains resistance to bludgeoning, piercing,\nand slashing damage."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The zealot is a 6th-level spellcaster. Its\nspellcasting ability is wisdom (spell save DC 15, +7 to\nhit with spell attacks). The zealot has the following\ncleric spells prepared:\nCantrips (at will): guidance, sacred flame\n\n* 1st level (4 slots): <i>fog cloud, thunderwave</i>\n\n* 2nd level (3 slots): <i>gust of wind, shatter</i>\n\n* 3rd level (3 slots): <i>call lightning, sleet storm</i>"
+    },
+    {
+      "name": "Thunderbolt Strike",
+      "text": "When the zealot deals damage to a\nLarge or smaller creature, it can also push it up to 10\nfeet away from it."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The zealot makes three attacks with its\nwarhammer."
+    },
+    {
+      "name": "Warhammer",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5\nft., one target. Hit: 8 (1d8 + 4) bludgeoning damage, or\n10 (1d8 + 6) bludgeoning damage while raging."
+    }
+  ],
+  "source": "creature"
+}

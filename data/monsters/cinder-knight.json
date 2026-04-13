@@ -1,0 +1,69 @@
+{
+  "name": "Cinder Knight",
+  "size": "Medium",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr10",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 18,
+  "hp": {
+    "average": 105,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 17,
+    "con": 16,
+    "int": 6,
+    "wis": 10,
+    "cha": 7
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Ignan"
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Heat Aura",
+      "text": "At the start of each of the cinder knight’s\nturns, each creature within 5 feet of it takes 7 (2d6) fire\ndamage. A creature that touches the cinder knight or\nhits it with a melee attack while within 5 feet of it\ntakes 7 (2d6) fire damage."
+    },
+    {
+      "name": "Illumination",
+      "text": "The cinder knight sheds dim light\nin a 15-foot radius."
+    },
+    {
+      "name": "Water Susceptibility",
+      "text": "For every 5 feet the cinder\nknight moves in water, or for every gallon of\nwater splashed on it, it takes 1 cold damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The cinder knight makes two\nmelee attacks."
+    },
+    {
+      "name": "Greatsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit,\nreach 5 ft., one target. Hit: 11 (2d6 + 4) slashing\ndamage plus 14 (4d6) fire damage. If the target is\na creature or a flammable object, it ignites. Until a\ncreature takes an action to douse the fire, the target\ntakes 5 (1d10) fire damage at the start of each\nof its turns."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach\n5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning\ndamage plus 14 (4d6) fire damage. If the\ntarget is a creature or a flammable object,\nit ignites. Until a creature takes an action\nto douse the fire, the target takes 5 (1d10)\nfire damage at the start of each of its turns."
+    }
+  ],
+  "source": "creature"
+}

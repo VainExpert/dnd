@@ -1,0 +1,16 @@
+{
+  "id": "gravitation-verstaerken",
+  "name": "Gravitation verstärken",
+  "level": 1,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, G",
+  "duration": "1 Runde (6 s)",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Magier"
+  ],
+  "text": "Die Schwerkraft in einer 3 m Radius-Sphäre um einen Punkt in Reichweite nimmt kurzzeitig zu.\nJede Kreatur in der Sphäre (beim Wirken) macht einen CON-Rettungswurf.\nBei Fehlschlag: 2W8 Kraftschaden und Bewegungsrate halbiert bis Ende ihres nächsten Zuges; bei Erfolg: halber Schaden, keine Verlangsamung.\nBis zum Beginn deines nächsten Zuges erfordern nicht getragene oder gehaltene Gegenstände in der Sphäre einen STR-Check gegen deinen Zauberrettungswurf-SG, um sie aufzuheben oder zu bewegen.\n\nAuf höheren Level gewirkt: +1W8 Kraftschaden pro Level."
+}

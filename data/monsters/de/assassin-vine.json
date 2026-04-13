@@ -1,0 +1,56 @@
+{
+  "name": "Mörderrebe",
+  "size": "Groß",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "large",
+      "plant",
+      "cr3",
+      "tomb-of-annihilation"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 13,
+  "hp": {
+    "average": 85,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 5
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 16,
+    "int": 1,
+    "wis": 10,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Schein",
+      "text": "Solange die Mörderrebe regungslos bleibt, ist sie von einer normalen Pflanze nicht zu unterscheiden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Einschnüren",
+      "type": "special",
+      "text": "Angriff mit Nahkampfwaffe: +6 auf Treffer, Reichweite20 ft: , ein Ziel. Treffer: Das Ziel erleidet 11 (2d6 +4) Bludgeoning-Schaden und wird festgehalten (Befreiung:DC 14 ). Bis dieser Festhaltende-Zustand endet, ist das Ziel bewegungsunfähig und erleidet zu Beginn jedes seiner Züge 21 (6d6) Giftschaden. Die Ranke kann jeweils nur ein Ziel festhalten."
+    },
+    {
+      "name": "Kletterpflanzen",
+      "type": "special",
+      "text": "Die Attentäterranke kann normale Ranken und Wurzeln auf dem Boden in einem Umkreis von 15 Fuß um30 feetsich herum zum Leben erwecken. Diese Pflanzen verwandeln den Boden in diesem Bereich in schwieriges Gelände. Eine Kreatur, die sich zu Beginn des Effekts in diesem Bereich befindet, muss einenDC 13  Stärke-Rettungswurf bestehen oder wird durch verwickelnde Ranken und Wurzeln festgehalten. Eine von den Pflanzen festgehaltene Kreatur kann ihre Aktion nutzen, um einenDC 13  Stärke-Probe (Leichtathletik) durchzuführen, und sich bei Erfolg befreien. Der Effekt endet nach 1 Minute oder wenn die Assassinenrebe stirbt oder erneut „Verwickelnde Ranken“ einsetzt."
+    }
+  ],
+  "source": "creature"
+}

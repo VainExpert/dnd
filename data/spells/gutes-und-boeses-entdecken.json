@@ -1,0 +1,17 @@
+{
+  "id": "gutes-und-boeses-entdecken",
+  "name": "Gutes und Böses entdecken",
+  "level": 1,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (9 m Sphäre)",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 10 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Kleriker",
+    "Paladin"
+  ],
+  "text": "Während der Wirkungsdauer findest du Feen, Aberrationen, himmlische oder teuflische Wesen, Elementare oder Untote, in einem Abstand von 9 m.\nGe- oder entweihte Gegenstände oder Orte in dem Abstand zeigt der Zauber ebenfalls an.\nDer Zauber durchdringt die meisten Barrieren, wird aufgehalten von 30 cm Stein, 2,5 cm Metall, dünnem Blei und 1 m Holz oder Erde."
+}

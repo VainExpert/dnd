@@ -3,46 +3,46 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Icons</title>
+  <title>Symbole</title>
   <link rel="stylesheet" href="../styles.css"/>
 </head>
 <body>
   <header class="topbar">
     <div class="brand">
-      <div class="title">Icons</div>
-      <div class="subtitle">PC • NPC • Monster icons</div>
+      <div class="title">Symbole</div>
+      <div class="subtitle">Spieler-, NPC- und Monstersymbole</div>
     </div>
     <div class="top-actions">
-      <a class="home-btn" href="../index.html">← Home</a>
+      <a class="home-btn" href="../index.html">← Startseite</a>
     </div>
   </header>
   <div class="layout">
     <aside class="sidebar">
       <nav class="nav">
         <div class="group">
-          <div class="group-title">Home</div>
-          <a href="../index.html">Homepage</a>
-          <a href="../index.html#content/house-rules/index.md">House Rules</a>
-          <a href="../index.html#content/safety/index.md">Safety</a>
-          <a href="../index.html#content/character-options/index.md">Character Options</a>
-          <a href="../index.html#content/recaps/index.md">Recaps</a>
+          <div class="group-title">Start</div>
+          <a href="../index.html">Startseite</a>
+          <a href="../index.html#content/house-rules/index.md">Hausregeln</a>
+          <a href="../index.html#content/safety/index.md">Sicherheit</a>
+          <a href="../index.html#content/character-options/index.md">Charakteroptionen</a>
+          <a href="../index.html#content/recaps/index.md">Rückblicke</a>
         </div>
 
         <div class="group">
-          <div class="group-title">Tools</div>
-          <a href="./pages/tools.html">Random Tables & Generators</a>
-          <a href="./pages/dice.html">Dice Roller</a>
-          <a href="./pages/units.html">Unit Converter</a>
+          <div class="group-title">Werkzeuge</div>
+          <a href="./werkzeuge/tools.html">Zufallstabellen & Generatoren</a>
+          <a href="./werkzeuge/dice.html">Würfel</a>
+          <a href="./werkzeuge/units.html">Einheitenumrechner</a>
         </div>
 
         <div class="group">
-          <div class="group-title">Libraries</div>
-          <a href="./bestiary.html">Bestiary</a>
-          <a href="./spells.html">Spells</a>
-          <a href="./items.html">Items</a>
-          <a href="./maps.html">Maps</a>
-          <a href="./pcs.html">PCs</a>
-          <a href="./icons.html" class="active">Icons</a>
+          <div class="group-title">Sammlungen</div>
+          <a href="./bestiarium/bestiary.html">Bestiarium</a>
+          <a href="./zauber/spells.html">Zauber</a>
+          <a href="./items/items.html">Gegenstände</a>
+          <a href="./maps.html">Karten</a>
+          <a href="./spieler/pcs.html">Spieler</a>
+          <a href="./icons.html" class="active">Symbole</a>
         </div>
       </nav>
     </aside>
@@ -50,16 +50,16 @@
     <main class="main">
       <div class="content" style="max-width:1100px;">
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px; align-items:center;">
-          <input id="q" class="select" type="search" placeholder="Search title/tags..." style="width:min(420px, 80vw);" />
+          <input id="q" class="select" type="search" placeholder="Titel/Tags durchsuchen..." style="width:min(420px, 80vw);" />
           <select id="kind" class="select">
-            <option value="">All kinds</option>
+            <option value="">Alle Arten</option>
             <option value="pc">PC</option>
             <option value="npc">NPC</option>
             <option value="monster">Monster</option>
-            <option value="other">Other</option>
+            <option value="other">Sonstige</option>
           </select>
           <select id="tag" class="select">
-            <option value="">All tags</option>
+            <option value="">Alle Tags</option>
           </select>
         </div>
 
@@ -70,7 +70,7 @@
 
   <div id="modal" class="map-modal" style="display:none;">
     <div class="map-modal-inner">
-      <button id="close" class="map-close">Close</button>
+      <button id="close" class="map-close">Schließen</button>
       <div id="modalTitle" class="map-modal-title"></div>
       <img loading="lazy" decoding="async" id="modalImg" class="map-modal-img" alt="" />
       <div id="modalMeta" class="map-modal-meta"></div>
@@ -94,32 +94,37 @@
     const idx = await fetch("../data/icons/index.json", { cache: "no-cache" }).then(r => r.json());
     const icons = idx.icons || [];
 
-    // populate tags dropdown
     const allTags = Array.from(new Set(icons.flatMap(i => Array.isArray(i.tags) ? i.tags : [])))
       .sort((a,b)=>a.localeCompare(b));
     for (const t of allTags){
       const opt = document.createElement("option");
-      opt.value = t; opt.textContent = t;
+      opt.value = t;
+      opt.textContent = t;
       tagEl.appendChild(opt);
     }
 
     function openIcon(i){
-      modalTitle.textContent = i.title || "Icon";
+      modalTitle.textContent = i.title || "Symbol";
       modalImg.src = `../assets/icons/${i.file}`;
       const metaParts = [];
       if (i.kind) metaParts.push(i.kind.toUpperCase());
       if (i.tags && i.tags.length) metaParts.push(i.tags.join(", "));
       if (i.blurb) metaParts.push(i.blurb);
-      if (i.credit) metaParts.push(`Credit: ${i.credit}`);
+      if (i.credit) metaParts.push(`Quelle: ${i.credit}`);
       modalMeta.textContent = metaParts.join(" • ");
       modal.style.display = "block";
     }
-    function close(){ modal.style.display = "none"; modalImg.src = ""; }
+
+    function close(){
+      modal.style.display = "none";
+      modalImg.src = "";
+    }
+
     closeBtn.addEventListener("click", close);
-    modal.addEventListener("click", (e)=>{ if (e.target === modal) close(); });
+    modal.addEventListener("click", (e) => { if (e.target === modal) close(); });
 
     function matches(i, q, kind, tag){
-      const hay = [i.title, i.kind, i.blurb, i.credit, ...(i.tags||[]), i.file].join(" ").toLowerCase();
+      const hay = [i.title, i.kind, i.blurb, i.credit, ...(i.tags || []), i.file].join(" ").toLowerCase();
       if (q && !hay.includes(q)) return false;
       if (kind && (i.kind || "") !== kind) return false;
       if (tag && !(i.tags || []).includes(tag)) return false;
@@ -133,7 +138,7 @@
       const filtered = icons.filter(i => matches(i, q, kind, tag));
 
       if (!filtered.length){
-        grid.innerHTML = `<p>No icons.</p>`;
+        grid.innerHTML = `<p>Keine Symbole gefunden.</p>`;
         return;
       }
 

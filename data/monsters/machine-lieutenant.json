@@ -1,0 +1,61 @@
+{
+  "name": "Machine Lieutenant",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr4",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 20,
+  "hp": {
+    "average": 60,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 13,
+    "con": 16,
+    "int": 10,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "understands the languages of its creator but can’t speak"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The machine lieutenant has\nadvantage on saving throws against spells and\nother magical effects."
+    },
+    {
+      "name": "Both Guard and Ward",
+      "text": "While the lieutenant is\nwithin 5 feet of the attuned owner of the codex\nautomata, any attack targeting the codex’s\nowner has a 50% chance to instead target the\nmachine lieutenant."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The lieutenant makes two\nlongsword attacks."
+    },
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit,\nreach 5 ft., one target. Hit: 8 (1d8 + 4) slashing\ndamage or 9 (1d10 + 4) slashing damage if used\nwith two hands."
+    }
+  ],
+  "source": "creature"
+}

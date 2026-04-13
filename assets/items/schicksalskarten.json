@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-schicksalskarten",
+  "type": "item",
+  "name": "Schicksalskarten",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "legendär",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Satz Karten ist meist in einer Schatulle oder einem Beutel zu finden. Die Karten sind aus Elfenbein oder Pergament gefertigt. Meistens -in 75 Prozent der Fälle - enthalten diese Sätze nur 13 Karten. In allen anderen Fällen sind es 22 Karten. Bevor du eine Karte ziehst, musst du ansagen, wie viele Karten du ziehen möchtest und sie dann zufällig ziehen (du kannst angepasste Spielkarten verwenden). Karten, die über die angesagte Anzahl hinaus gezogen werden, haben keinen Effekt. Anderenfalls wirkt ihre Magie, sobald eine Karte gezogen wurde. Zwischen dem Ziehen jeder Karte darf nicht mehr als eine Stunde Zeit vergehen. Wenn du nicht die angesagte Anzahl an Karten ziehst, fliegen die übrigen Karten von selbst aus dem Stapel und entfalten ihre Effekte auf einmal. Sobald eine Karte gezogen wurde, hört sie auf zu existieren. Sofern es sich nicht um den Narren oder den Hofnarren handelt, erscheint die Karte wieder im Ziehstapel, sodass dieselbe Karte zweimal gezogen werden kann. *Nur in Versionen mit 22 Karten Balance:  Dein Geist erfährt einen qualvollen Wandel, der deine Gesinnung ändert. Gesetztreu wird chaotisch, gut wird böse und umgekehrt. Wenn du vollständig neutral oder gesinnungslos bist, hat diese Karte keinen Effekt. Die Leere:  Diese schwarze Karte bedeutet ein furchtbares Unheil. Deine Seele wird deinem Körper entrissen, in einen Gegenstand gesperrt und an einem Ort verborgen, den der SL bestimmt. Mindestens ein mächtiges Wesen bewacht den Ort. Während deine Seele auf diese Weise gefangen ist, ist dein Körper kampfunfähig. Der Zauber Wunsch  kann deine Seele zwar nicht zurückholen, enthüllt aber den Ort, an dem der Gegenstand mit deiner Seele sich befindet. Du ziehst keine Karten mehr. Die Schicksale:  Die Realität gerät aus den Fugen und wird neu zusammengesetzt. Du kannst ein Ereignis vermeiden oder löschen, als wäre es niemals passiert Du kannst die Magie der Karte sofort nach dem Ziehen nutzen oder zu jedem anderen Zeitpunkt, bevor du stirbst. Edelstein:  25 Schmuckstücke im Wert von jeweils 2.000 GM oder 50 Edelsteine im Wert von jeweils 1.000 GM erscheinen zu deinen Füßen. Euryale:  Das medusenähnliche Antlitz auf dieser Karte verflucht dich. Du erhältst einen Malus von -2 auf Rettungswürfe, während du auf diese Weise verflucht bist. Nur ein Gott oder die Magie der Karte 'Die Schicksale' kann diesen Fluch aufheben. Flammen:  Ein mächtiger Teufel wird dein Feind. Der Teufel trachtet nach deinem Untergang und sucht dich heim. Er genießt dein Leiden, bevor er schließlich versucht, dich zu töten. Diese Feindschaft dauert an, bis du stirbst oder der Teufel tot ist. Hofnarr:  Du erhältst 10.000 EP dazu, oder du kannst über deine angesagten Züge hinaus zwei weitere Karte ziehen. Idiot:  Dein Intelligenzwert wird permanent um 1W4+1 (auf einen Mindestwert von 1) reduziert. Du kannst über deine angesagten Züge hinaus eine weitere Karte ziehen. Komet:  Wenn du das nächste feindlich gesinnte Monster oder die nächste feindlich gesinnte Monstergruppe allein besiegst, erhältst du genug Erfahrungspunkte, um eine Stufe aufzusteigen. Anderenfalls hat diese Karte keinen Effekt. Krallen:  Jeder magische Gegenstand, den du trägst oder mitführst, zerfällt. Artefakte in deinem Besitz werden nicht zerstört, aber verschwinden. Mond:  Du kannst lW3-mal den Zauber Wunsch  wirken. Narr:  Du verlierst 10.000 EP, wirfst diese Karte ab und ziehst erneut vom Stapel. Beide Ziehereignisse zählen zusammen als einer deiner angesagten Züge. Wenn der Verlust von so vielen EP dazu führen würde, dass du eine Stufe absteigst, verlierst du stattdessen so viele EP, dass du gerade so deine Stufe behältst. Ritter:  Ein Kämpfer der 4. Stufe erscheint in einem von dir bestimmten Bereich im Abstand von bis zu neun Metern von dir und steht dir zu Diensten. Der Kämpfer gehört demselben Volk an wie du und dient dir treu bis zu seinem Tod, da er oder sie glaubt, dass das Schicksal euch zusammengeführt hat. Du kontrollierst diesen Charakter. Ruin:  Mit Ausnahme von magischen Gegenständen verlierst du alle Reichtümer, die du bei dir trägst oder besitzt. Bewegliches Eigentum verschwindet. Geschäfte, Gebäude und Grundstücke, die du besitzt, gehen auf eine Weise verloren, die die Realität am wenigsten verändert. Dokumente, die beweisen, dass du etwas besitzen solltest, das du durch diese Karte verloren hast, verschwinden ebenfalls. Schlüssel:  Eine seltene oder seltenere magische Waffe, im Umgang mit welcher du geübt bist, erscheint in deinen Händen. Der SL wählt die Waffe aus. Schurke:  Ein Nichtspielercharakter, den der SL bestimmt, ist dir gegenüber ab sofort feindlich gesinnt Du weißt nicht, wer dein neuer Gegner ist, bis der NSC oder jemand anderes es enthüllt. Abgesehen vom Zauber Wunsch  oder einer Göttlichen Intervention kann nichts die Feindseligkeit des NSCs gegen dich aufheben. Sonne:  Du erhältst 50.000 EP und ein wundersamer Gegenstand, den der SL zufällig bestimmt, erscheint in deinen Händen. Stern:  Erhöhe einen deiner Attributswerte um 2. Der Wert kann größer als 20, aber nicht größer als 24 sein. Thron:  Du bist in der Fertigkeit Überzeugen geübt und verdoppelst deinen Übungsbonus bei Würfen, die diese Fertigkeit verwenden. Außerdem erhältst du die Besitzrechte an einem kleinen Bergfried irgendwo auf der Welt Allerdings ist der Bergfried momentan in Monsterhand. Du musst ihn von den Monstern befreien, bevor du deinen Anspruch geltend machen kannst Totenschädel:  Du beschwörst einen Avatar des Todes - ein gespenstisches humanoides Skelett in einem zerfetzten schwarzen Gewand, das eine geisterhafte Sense schwingt. Er erscheint im Abstand von bis zu drei Metern von dir an einer Stelle, die der SL bestimmt und greift dich an. Dabei warnt er dich und alle anderen, dass du diesen Kampf allein gewinnen musst Der Avatar kämpft, bis du stirbst oder seine Trefferpunkte auf 0 sinken, woraufhin er verschwindet Wenn jemand versucht, dir zu helfen, beschwört der Helfer seinen eigenen Avatar des Todes. Eine Kreatur, die von einem Avatar des Todes getötet wurde, kann nicht wiederbelebt werden.",
+  "tags": []
+}

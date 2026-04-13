@@ -1,0 +1,71 @@
+{
+  "name": "Heir of Kong",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr3",
+      "homebrew"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 12,
+  "hp": {
+    "average": 47,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 40
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 18,
+    "int": 9,
+    "wis": 14,
+    "cha": 12
+  },
+  "skills": {
+    "Athletics": 7,
+    "Perception": 4
+  },
+  "languages": [
+    "understands Draconic but can't speak"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Cunning of Kong",
+      "text": "The heir has advantage on saving\nthrows against illusions and enchantments."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The heir makes two fist attacks."
+    },
+    {
+      "name": "Fist",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft.,\none target. Hit: 12 (2d6 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Rock",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +7 to hit, range\n30/60 ft., one target. Hit: 12 (2d6 + 5) bludgeoning\ndamage."
+    },
+    {
+      "name": "Psychic Blast (Recharge 6)",
+      "type": "special",
+      "text": "The heir emits a violent\nwave of psychic energy in a 30-foot cone. Each\ncreature in the area must succeed on a DC 12\nIntelligence saving throw or take 7 (2d6) psychic\ndamage and become stunned until the end of the\nheir's next turn."
+    }
+  ],
+  "source": "creature"
+}

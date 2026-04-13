@@ -1,0 +1,68 @@
+{
+  "name": "Demonic Mist",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr4",
+      "tome-of-horrors",
+      "demon"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 16,
+  "hp": {
+    "average": 85,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 6,
+    "dex": 18,
+    "con": 18,
+    "int": 8,
+    "wis": 13,
+    "cha": 16
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 6
+  },
+  "languages": [
+    "Abyssal",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Incorporeal Movement",
+      "text": "The demonic mist can move through other\ncreatures and objects as if they were difficult terrain. It takes 5 (1d10)\nforce damage if it ends its turn inside an object."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "A demonic mist’s spellcasting ability is Charisma\n(spell save DC 13, +5 to hit with spell attacks), and requires no material\ncomponents for the following spells:\n\n* At will: <i>detect magic</i>\n\n* 3/day each: <i>ray of enfeeblement, vampiric touch</i>\n\n* 1/day each: <i>confusion, fear</i>"
+    },
+    {
+      "name": "Vulnerability to Wind",
+      "text": "The demonic mist has\ndisadvantage on saving throws against wind and wind-like\neffects (gust of wind, etc.)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Demonic Touch",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach\n5 ft., one target. Hit: 25 (6d6 + 4) necrotic damage."
+    },
+    {
+      "name": "Psychic Crush (Recharge 5–6)",
+      "type": "special",
+      "text": "The demonic mist\nattempts to crush the mind of a single creature it can see\nwithin 30 feet. The target must make a successful DC 15\nWisdom saving throw or take 14 (4d6) psychic damage and\nbe frightened for 1 minute."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,477 @@
+{
+  "schema_version": "dnd5e_character_sheet_full_extract_v1",
+  "character": {
+    "identity": {
+      "name": "Brutus Haudrauf",
+      "player_name": "Martin",
+      "class": {
+        "name": "Barbar",
+        "level": 3,
+        "subclass": "Pfad des Berserkers"
+      },
+      "race": "Halbork",
+      "background": "Pirat",
+      "alignment": "chaotisch-neutral",
+      "deity": null,
+      "gender": "männlich",
+      "age": 27,
+      "size": "Mittel",
+      "height": 2.1,
+      "weight": 130,
+      "appearance": {
+        "skin": "grün",
+        "eyes": "grau",
+        "hair": "braun"
+      },
+      "organizations": [
+        "Tybalds Abenteuertruppe"
+      ]
+    },
+    "ability_scores": {
+      "STR": {
+        "score": 17,
+        "mod": 3,
+        "save": 5
+      },
+      "DEX": {
+        "score": 13,
+        "mod": 1,
+        "save": 1
+      },
+      "CON": {
+        "score": 15,
+        "mod": 2,
+        "save": 4
+      },
+      "INT": {
+        "score": 10,
+        "mod": 0,
+        "save": 0
+      },
+      "WIS": {
+        "score": 12,
+        "mod": 1,
+        "save": 1
+      },
+      "CHA": {
+        "score": 8,
+        "mod": -1,
+        "save": -1
+      }
+    },
+    "proficiency_bonus": 2,
+    "inspiration": false,
+    "skills": {
+      "Akrobatik": 1,
+      "Arkane Kunde": 0,
+      "Athletik": 5,
+      "Auftreten": -1,
+      "Einschüchtern": 1,
+      "Fingerfertigkeit": 1,
+      "Geschichte": 0,
+      "Heimlichkeit": 1,
+      "Medizin": 1,
+      "Mit Tieren umgehen": 1,
+      "Motiv erkennen": 1,
+      "Nachforschungen": 0,
+      "Naturkunde": 2,
+      "Religion": 0,
+      "Täuschen": -1,
+      "Überlebenskunst": 3,
+      "Überzeugen": 1,
+      "Wahrnehmung": 3
+    },
+    "passive_scores": {
+      "passive_wahrnehmung": 13,
+      "passiver_einblick": 11,
+      "passive_nachforschungen": 10
+    },
+    "combat": {
+      "armor_class": 13,
+      "initiative": 1,
+      "speeds": {
+        "walk": 9
+      },
+      "hp": {
+        "max": 33,
+        "hit_dice": "3d12"
+      },
+      "defenses": {
+        "resistances": [],
+        "immunities": [],
+        "advantages": [],
+        "condition_immunities": []
+      },
+      "senses": {
+        "darkvision": 18,
+        "darkvision_note": "Graustufen"
+      },
+      "attacks_and_cantrips": [
+        {
+          "name": "Bösartige Großaxt*",
+          "attack_bonus": 5,
+          "damage": "1d12+3 Hieb",
+          "properties": [
+            "Kriegswaffe",
+            "Schwer",
+            "2-Hände",
+            "Spalten",
+            "*-Effekt"
+          ],
+          "notes": [
+            "Eingestimmtes magisches Item.",
+            "*-Effekt: Bei kritischem Treffer mit dieser Waffe machst du +7 Extraschaden des Waffentyps."
+          ]
+        },
+        {
+          "name": "Handaxt (4x)",
+          "attack_bonus": 5,
+          "damage": "1d6+3 Hieb",
+          "properties": [
+            "Einfache Waffe",
+            "Leicht",
+            "Geworfen",
+            "Reichweite 6 m / 18 m",
+            "Peinigen"
+          ],
+          "notes": [
+            "Waffenmeisterung: Peinigen (siehe Talente)."
+          ],
+          "item_ref": {
+            "id": "handaxt",
+            "name": "Handaxt"
+          }
+        },
+        {
+          "name": "Knüppel",
+          "attack_bonus": 5,
+          "damage": "1d4+3 Wucht",
+          "properties": [
+            "Leicht"
+          ],
+          "item_ref": {
+            "id": "knueppel",
+            "name": "Knüppel"
+          }
+        },
+        {
+          "name": "Unbewaffneter Schlag",
+          "attack_bonus": 5,
+          "damage": "4 Wucht"
+        }
+      ],
+      "actions": {
+        "standard": [
+          "Angriff",
+          "Ausweichen",
+          "Beeinflussen",
+          "Interagieren",
+          "Flucht",
+          "Helfen",
+          "Magie",
+          "Packen",
+          "Sprint",
+          "Stoßen",
+          "Studieren",
+          "Verstecken",
+          "Verwenden",
+          "Vorbereiten",
+          "2-Waffen Kampf"
+        ],
+        "bonus_actions": [
+          "Wut (siehe Merkmale)",
+          "Wut verlängern (siehe Merkmale)"
+        ],
+        "reactions": [
+          "Gelegenheitsangriff"
+        ],
+        "special": [
+          "Durchhaltevermögen (siehe Merkmale)"
+        ]
+      }
+    },
+    "proficiencies": {
+      "armor": [
+        "Leichte Rüstung",
+        "Mittlere Rüstung",
+        "Schilde"
+      ],
+      "weapons": [
+        "Einfache Waffen",
+        "Kriegswaffen"
+      ],
+      "tools": [
+        "Navigationswerkzeuge",
+        "Wasserfahrzeuge"
+      ],
+      "languages": [
+        "Gemeinsprache",
+        "Orkisch"
+      ]
+    },
+    "spellcasting": null,
+    "features": {
+      "class": [
+        {
+          "name": "Ungeschützte Verteidigung",
+          "description": "Ohne Rüstung ist deine RK = 10 + dein DEX-Modifikator + dein CON-Modifikator + ein Schild-Bonus (falls getragen)."
+        },
+        {
+          "name": "Wut",
+          "activation": "Bonusaktion",
+          "uses": "2",
+          "recovery": {
+            "long_rest": true,
+            "short_rest": 1
+          },
+          "requirements": [
+            "Du darfst keine schwere Rüstung tragen."
+          ],
+          "duration": "Bis zum Ende deines nächsten Zuges; verlängerbar pro Zug bis max. 10 Minuten",
+          "effects": [
+            "Schadensresistenz gegen Hieb-, Stich- und Wuchtschaden",
+            "Bei STR-Angriffen: +2 Extraschaden des Waffentyps",
+            "Vorteil bei allen STR-Würfen",
+            "Keine Konzentration für Zauber oder Zauber wirken"
+          ],
+          "rage_ends_if": [
+            "Du beendest deinen Zug, ohne seit deinem letzten Zug einen Angriff gegen einen Gegner gemacht zu haben, oder ohne einen Gegner zu einem Rettungswurf gezwungen zu haben",
+            "Du wirst kampfunfähig",
+            "Du ziehst eine schwere Rüstung an"
+          ],
+          "rage_extend_methods": [
+            "Einen Angriff gegen einen Gegner machen",
+            "Einen Gegner zu einem Rettungswurf zwingen",
+            "Bonusaktion zum Verlängern der Wut verwenden"
+          ]
+        },
+        {
+          "name": "Rücksichtslose Angriffe",
+          "description": "Bei deinem ersten Angriff in deinem Zug kannst du dich rücksichtlos entscheiden. Du bekommst Vorteil auf alle Angriffswürfe mit STR bis zum Beginn deines nächsten Zuges. Angriffe gegen dich haben solange auch Vorteil."
+        },
+        {
+          "name": "Gefahrengespür",
+          "description": "Vorteil auf DEX-Rettungswürfe, wenn du nicht kampfunfähig bist."
+        },
+        {
+          "name": "Waffenmeisterungen",
+          "description": "Siehe Talente."
+        }
+      ],
+      "subclass": [
+        {
+          "name": "Urwissen",
+          "description": "Während deine Wut aktiv ist, kannst du folgende Fertigkeitswürfe mit deinem STR-Modifikator machen, anstelle des eigentlichen Modifikators: Akrobatik, Einschüchtern, Heimlichkeit, Überlebenskunst, Wahrnehmung.",
+          "always_prepared_spells": []
+        },
+        {
+          "name": "Raserei",
+          "trigger": "Wenn du „Rücksichtslose Angriffe“ verwendest, während deine „Wut“ aktiv ist",
+          "effect": "Du machst 2d6 Extraschaden des Waffentyps zu deinem ersten Ziel, das du mit einem STR-Angriff triffst.",
+          "always_prepared_spells": []
+        }
+      ],
+      "racial": [
+        {
+          "name": "Dunkelsicht",
+          "description": "18 m (Graustufen)."
+        },
+        {
+          "name": "Einschüchternd",
+          "description": "Kompetenz in „Einschüchtern“."
+        },
+        {
+          "name": "Durchhaltevermögen",
+          "uses": "1",
+          "recovery": {
+            "long_rest": true
+          },
+          "description": "Wenn deine TP auf 0 sinken, du aber nicht direkt getötet wirst, fallen deine TP stattdessen nur auf 1."
+        },
+        {
+          "name": "Wilde Angriffe",
+          "description": "Wenn du einen kritischen Treffer bei einem Waffenangriff wirfst, kannst du einen der Würfel nochmal werfen und das Ergebnis zum Schaden addieren."
+        }
+      ],
+      "background": [
+        {
+          "name": "Schiffspassage",
+          "description": "Falls benötigt, kannst du für dich und deine Mitreisenden eine kostenlose Passage auf einem Schiff sichern. Eure Mithilfe auf dem Schiff wird aber erwartet. Die Route und den Zeitplan kannst du aber nicht bestimmen."
+        }
+      ],
+      "talents": [
+        {
+          "name": "Waffenmeisterungen",
+          "description": "Du hast 2 Arten von Einfachen oder Kriegs-Nahkampfwaffen deiner Wahl gemeistert. Du kannst eine der Meisterungen bei jeder Langen Rast tauschen.",
+          "masteries": [
+            {
+              "name": "Spalten (Großaxt)",
+              "cost": "1 Aktion",
+              "trigger": "Einmal pro Zug, wenn du eine Kreatur mit einer Großaxt im Nahkampf triffst",
+              "effect": "Du kannst einen weiteren Nahkampfangriff mit der Großaxt gegen eine weitere Kreatur in 1,5 m Abstand zum ersten Ziel machen. Bei einem Treffer nimmt die zweite Kreatur den Großaxt-Schaden ohne deinen STR-Modifikator."
+            },
+            {
+              "name": "Peinigen (Handaxt)",
+              "cost": "1 Aktion",
+              "trigger": "Wenn du eine Kreatur mit der Handaxt triffst und Schaden verursachst",
+              "effect": "Du hast Vorteil auf deinen nächsten Angriffswurf gegen die Kreatur bis zum Ende deines nächsten Zuges."
+            }
+          ]
+        }
+      ],
+      "attuned_magic_items_text": [
+        {
+          "name": "Bösartige Großaxt",
+          "type": "Magischer Gegenstand (eingestimmt)",
+          "effects": [
+            "Bei kritischem Treffer mit dieser Waffe machst du +7 Extraschaden des Waffentyps."
+          ]
+        }
+      ]
+    },
+    "equipment": {
+      "currency": {
+        "cp": 0,
+        "sp": 0,
+        "gp": 36,
+        "pp": 0
+      },
+      "weights": {
+        "carried": 43.5,
+        "encumbered_at": 115,
+        "push_drag_lift": 230
+      },
+      "items": [
+        {
+          "name": "Bösartige Großaxt",
+          "quantity": 1,
+          "weight": 3.5
+        },
+        {
+          "name": "Handaxt",
+          "quantity": 4,
+          "weight": 4,
+          "item_ref": {
+            "id": "handaxt",
+            "name": "Handaxt"
+          }
+        },
+        {
+          "name": "Knüppel",
+          "quantity": 1,
+          "weight": 1,
+          "item_ref": {
+            "id": "knueppel",
+            "name": "Knüppel"
+          }
+        },
+        {
+          "name": "Einfache Kleidung",
+          "quantity": 1,
+          "weight": 1.5
+        },
+        {
+          "name": "Haifischzahn (Glücksbringer)",
+          "quantity": 1,
+          "weight": null
+        },
+        {
+          "name": "Mobile Ramme",
+          "quantity": 1,
+          "weight": 17.5,
+          "notes": [
+            "Bei Nutzung: +4 auf STR-Würfe"
+          ],
+          "item_ref": {
+            "id": "mobile-ramme",
+            "name": "Mobile Ramme"
+          }
+        },
+        {
+          "name": "Rucksack",
+          "quantity": 1,
+          "weight": 2.5,
+          "contents_listed": [
+            {
+              "name": "Seidenseil, 15 m",
+              "quantity": 1,
+              "weight": 2.5
+            },
+            {
+              "name": "Öl",
+              "quantity": 2,
+              "weight": 1,
+              "item_ref": {
+                "id": "oel",
+                "name": "Öl"
+              }
+            },
+            {
+              "name": "Zunderkästchen",
+              "quantity": 1,
+              "weight": 0.5,
+              "item_ref": {
+                "id": "zunderkaestchen",
+                "name": "Zunderkästchen"
+              }
+            },
+            {
+              "name": "Fackel",
+              "quantity": 10,
+              "weight": 5,
+              "item_ref": {
+                "id": "fackel",
+                "name": "Fackel"
+              }
+            },
+            {
+              "name": "Belegnagel",
+              "quantity": 1,
+              "weight": 1
+            },
+            {
+              "name": "Schlafsack",
+              "quantity": 1,
+              "weight": 3.5,
+              "item_ref": {
+                "id": "schlafsack",
+                "name": "Schlafsack"
+              }
+            }
+          ],
+          "item_ref": {
+            "id": "rucksack",
+            "name": "Rucksack"
+          }
+        }
+      ],
+      "attuned_magic_items_listed": [
+        {
+          "name": "Bösartige Großaxt",
+          "quantity": 1
+        }
+      ]
+    },
+    "personality": {
+      "traits": [
+        "Du prahlst gerne mit (leicht ausgeschmückten) Geschichten von deinen Abenteurn zu See."
+      ],
+      "ideals": [
+        "Mut ist dir sehr wichtig. Du willst nicht als Feigling gesehen werden."
+      ],
+      "motivation": [
+        "Deiner Crew gegenüber bist du immer loyal."
+      ],
+      "flaws": [
+        "Du gehst lieber ein zu hohes Risiko ein, als als Feigling da zu stehen."
+      ]
+    },
+    "backstory": {
+      "summary": "Deine Eltern waren schon Piraten, wie ihre Eltern vor ihnen. Du bist natürlich ins Familiengeschäft mit eingestiegen. Irgendwann musstest du dir aber leider eingestehen, dass du beim kleinsten Wellengang seekrank wirst. Deswegen bist du auf Jobs auf dem Festland umgestiegen. Es ist dir unendlich peinlich, warum du die Piraterie an den Nagel gehängt hast. Um etwas zu kompensieren, erzählst du gern und oft leicht ausgeschmückte Geschichten von deiner Zeit zur See.",
+      "allies": [
+        "Sam hat dir damals, als du noch zur See gefahren bist, geholfen Schmuggelware an Land zu bringen. Dabei habt ihr euch schnell angefreundet. Er hat dir auch Tybald und seine Truppe vorgestellt."
+      ]
+    }
+  },
+  "id": "brutushaudrauf"
+}

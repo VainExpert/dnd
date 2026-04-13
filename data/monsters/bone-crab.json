@@ -1,0 +1,78 @@
+{
+  "name": "Bone Crab",
+  "size": "Small",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "small",
+      "beast",
+      "cr1/2",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 33,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 10
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 14,
+    "int": 1,
+    "wis": 12,
+    "cha": 4
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 4
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The bone crab can breathe air and water."
+    },
+    {
+      "name": "Bone Camouflage",
+      "text": "A bone crab has advantage on Dexterity (Stealth) checks while it's among bones."
+    },
+    {
+      "name": "Hive Mind",
+      "text": "A bone crab can communicate perfectly with all other bone crabs within 100 feet of it. If one is aware of danger, they all are."
+    },
+    {
+      "name": "Leap",
+      "text": "Bone crabs have incredibly powerful legs and can leap up to 10 feet straight ahead or backward as part of its movement; this counts as withdraw action when moving away from a foe."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The bone crab makes two claw attacks."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage."
+    },
+    {
+      "name": "White Ghost Shivers",
+      "type": "special",
+      "text": "A living creature that is injured by or makes physical contact with a creature carrying the white ghost shivers must succeed on a DC 11 Constitution saving throw at the end of the encounter to avoid becoming infected. This disease manifests after 24 hours, beginning as a mild chill, but increasingly severe after a day, accompanied by a fever. Hallucinations are common, and the fright they induce lends the disease its name. At onset, the infected creature gains two levels of exhaustion that cannot be removed until the disease is cured by lesser restoration, comparable magic, or rest. The infected creature makes another DC 11 Constitution saving throw at the end of each long rest; a successful save removes one level of exhaustion. If the saving throw fails, the disease persists. If both levels of exhaustion are removed by successful saving throws, the victim has recovered naturally."
+    }
+  ],
+  "source": "creature"
+}

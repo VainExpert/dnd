@@ -1,0 +1,44 @@
+{
+  "id": "zauberstab-des-netzes",
+  "type": "item",
+  "name": "Zauberstab des Netzes",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "durch einen Zauberwirker",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 250,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": 7,
+    "recharge": "1W6+1 am Morgen"
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Zauberstab hat sieben Ladungen. Wenn du ihn hältst, kannst du als Aktion eine seiner Ladungen verbrauchen, um den Zauber Netz (Rettungswurf-SG 15) mit ihm zu wirken. Der Zauberstab erhält täglich im Morgengrauen 1W6+1 verbrauchte Ladungen zurück. Wenn du die letzte Ladung des Zauberstabs verbrauchst, würfle mit einem W20. Bei einer 1 zerfällt der Zauberstab zu Asche und ist damit zerstört.",
+  "tags": [
+    "magisch",
+    "zauberstab",
+    "netz",
+    "zauber"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "name": "Shroud",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr1/8",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 13,
+  "hp": {
+    "average": 9,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 4,
+    "dex": 13,
+    "con": 10,
+    "int": 2,
+    "wis": 10,
+    "cha": 8
+  },
+  "skills": {
+    "Stealth": 3
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "1/8",
+    "xp": 25,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amorphous",
+      "text": "The shroud can move through a space as narrow as 1 inch wide without squeezing."
+    },
+    {
+      "name": "Shadow Evolution",
+      "text": "Shrouds instantly become shadows once they cause a total of 12 damage. Any damage they've suffered is subtracted from the shadow's total hit points or abilities."
+    },
+    {
+      "name": "Shroud Stealth",
+      "text": "When in dim light or darkness, the shroud can take the Hide action as a bonus action."
+    },
+    {
+      "name": "Sunlight Weakness",
+      "text": "While in sunlight, the shroud has disadvantage on attack rolls, ability checks, and saving throws."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Strength Drain",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) necrotic damage, and the target's Strength score is reduced by one-half that amount. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new shadow rises from the corpse 1d4 hours later."
+    }
+  ],
+  "source": "creature"
+}

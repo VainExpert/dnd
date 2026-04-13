@@ -1,0 +1,42 @@
+{
+  "id": "zauberstab-der-zierde",
+  "type": "item",
+  "name": "Zauberstab der Zierde",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Du kannst ein winziges Objekt, das nicht mehr als 0.5 g wiegt über der Spitze des Stabes platzieren.. Das Objekt schwebt dann immer pber der Spitze des Stabes und kann sich langsam drehen. Der Stab kann bis zu 3 solcher Objekte halten.",
+  "tags": [
+    "magisch",
+    "zauberstab"
+  ]
+}

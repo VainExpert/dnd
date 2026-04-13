@@ -1,0 +1,65 @@
+{
+  "name": "Fireheart Devotee",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 18,
+  "hp": {
+    "average": 55,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 15,
+    "int": 12,
+    "wis": 18,
+    "cha": 10
+  },
+  "skills": {
+    "History": 4,
+    "Insight": 7,
+    "Religion": 4,
+    "Persuasion": 3
+  },
+  "languages": [
+    "Any two languages"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "text": "The devotee is a 6th-level spellcaster.\nIts spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). The devotee has the\nfollowing cleric spells prepared:\nCantrips (at will): guidance, light, spare the dying\n\n* 1st level (4 slots): <i>burning hands, faerie fire, guiding bolt, sanctuary</i>\n\n* 2nd level (3 slots): <i>aid, flaming sphere, scorching ray, spiritual weapon</i>\n\n* 3rd level (3 slots): <i>clairvoyance, daylight, fireball, mass healing word</i>"
+    },
+    {
+      "name": "Radiance of the Dawn (2/Short Rest)",
+      "text": "The devotee\nraises its holy symbol and dispels any magical\ndarkness within 30 feet. Additionally, each creature\nhostile to the devotee must make a DC 15\nConstitution saving throw, taking 17 (2d10 + 6)\nradiant damage on a failed saving throw, or half as\nmuch damage on a successful one."
+    },
+    {
+      "name": "Warding Flame (4/Day)",
+      "text": "When the devotee or one of\nits allies is attacked by a creature it can see within\n30 feet, the devotee can use its reaction to give\nthat creature disadvantage on the attack. Creatures\nimmune to the blinded condition are not affected\nby this ability."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Warhammer",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach\n5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning\ndamage."
+    }
+  ],
+  "source": "creature"
+}

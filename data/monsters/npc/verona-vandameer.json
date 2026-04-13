@@ -1,0 +1,225 @@
+{
+  "id": "verona-vandameer",
+  "name": "Maria Magdalena",
+  "aliases": [
+    "Verona Vandameer"
+  ],
+  "source_file": "VeronaVandameer.monster",
+  "kind": "monster",
+  "npc": true,
+  "size": "Medium",
+  "creature_type": "humanoid",
+  "subtype": null,
+  "alignment": "neutral evil",
+  "armor_class": {
+    "value": 16,
+    "display": "16 (hide armor, shield)"
+  },
+  "hit_points": {
+    "average": 132,
+    "formula": "24d8 + 24"
+  },
+  "speed": {
+    "walk": "30 ft."
+  },
+  "abilities": {
+    "str": {
+      "score": 10,
+      "mod": 0
+    },
+    "dex": {
+      "score": 14,
+      "mod": 2
+    },
+    "con": {
+      "score": 12,
+      "mod": 1
+    },
+    "int": {
+      "score": 12,
+      "mod": 1
+    },
+    "wis": {
+      "score": 20,
+      "mod": 5
+    },
+    "cha": {
+      "score": 12,
+      "mod": 1
+    }
+  },
+  "saving_throws": {
+    "int": 5,
+    "wis": 9
+  },
+  "skills": {
+    "medicine": 9,
+    "nature": 5,
+    "perception": 9,
+    "religion": 5
+  },
+  "damage_resistances": [],
+  "damage_immunities": [],
+  "damage_vulnerabilities": [],
+  "special_damage_defenses": [
+    {
+      "name": "Critical Hits",
+      "note": " (Resistant)",
+      "type": "r"
+    }
+  ],
+  "condition_immunities": [],
+  "senses": {
+    "passive_perception": 19
+  },
+  "languages": {
+    "speaks": [
+      "Common",
+      "Druidic",
+      "Infernal"
+    ],
+    "understands": []
+  },
+  "challenge_rating": "12",
+  "xp": 8400,
+  "proficiency_bonus": 4,
+  "traits": [],
+  "spellcasting": [
+    {
+      "name": "Spellcasting",
+      "text": "Maria is an 18th-level Spellcaster. Her spellcasting ability is WIS (spell save DC 17, +9 to hit). She has the following spells prepared:\n- Cantrips (at will): _Druidcraft, Poison Spray, Infestation, Shillelagh_\n- 1st Level (4 slots): _Speak with Animals, Faerie Fire, Entangle, Thunderwave_\n- 2nd Level (3 slots): _Heat Metal, Wither and Bloom, Darkvision, Hold Person, Blindness/Deafness_\n- 3rd Level (3 slots): _Feign Death, Aura of Vitality, Plant Growth, Water Breathing, Conjure Animals_\n- 4th Level (3 slots): _Polymorph, Stoneskin, Blight, Confusion_\n- 5th Level (3 slots): _Insect Plague, Tree Stride, Wrath of Nature, Scrying, Awaken_\n- 6th Level (1 slot): _Heal, Wall of Thorns, Flesh to Stone_\n- 7th Level (1 slot): _Symbol_\n- 8th Level (1 slot): _Feeblemind_\n- 9th Level (1 slot): _Foresight_",
+      "spells": {
+        "cantrips_at_will": [
+          "Druidcraft",
+          "Poison Spray",
+          "Infestation",
+          {
+            "id": "shillelagh",
+            "name": "Shillelagh"
+          }
+        ],
+        "level_1": [
+          "Speak with Animals",
+          "Faerie Fire",
+          "Entangle",
+          "Thunderwave"
+        ],
+        "level_2": [
+          "Heat Metal",
+          "Wither and Bloom",
+          "Darkvision",
+          "Hold Person",
+          "Blindness/Deafness"
+        ],
+        "level_3": [
+          "Feign Death",
+          "Aura of Vitality",
+          "Plant Growth",
+          "Water Breathing",
+          "Conjure Animals"
+        ],
+        "level_4": [
+          "Polymorph",
+          "Stoneskin",
+          "Blight",
+          "Confusion"
+        ],
+        "level_5": [
+          "Insect Plague",
+          "Tree Stride",
+          "Wrath of Nature",
+          "Scrying",
+          "Awaken"
+        ],
+        "level_6": [
+          "Heal",
+          "Wall of Thorns",
+          "Flesh to Stone"
+        ],
+        "level_7": [
+          "Symbol"
+        ],
+        "level_8": [
+          "Feeblemind"
+        ],
+        "level_9": [
+          "Foresight"
+        ]
+      },
+      "ability": "wisdom",
+      "save_dc": 17,
+      "attack_bonus": 9,
+      "caster_level": 18,
+      "slots": {
+        "level_1": 4,
+        "level_2": 3,
+        "level_3": 3,
+        "level_4": 3,
+        "level_5": 3,
+        "level_6": 1,
+        "level_7": 1,
+        "level_8": 1,
+        "level_9": 1
+      }
+    }
+  ],
+  "actions": [
+    {
+      "name": "Shillelagh (Staff)",
+      "text": "_Melee Weapon Attack_: +9 to hit, reach 1,5 m, one target. _Hit_: 1d8 + 5 slashing damage."
+    },
+    {
+      "name": "Wildfire",
+      "text": "_Ranged Spell Attack_: +9 to hit, range 120 ft., one target. _Hit_: 6d6 + 5 fire damage, and the target is blinded until the start of the druid’s next turn."
+    },
+    {
+      "name": "Change Shape (2/Day)",
+      "text": "Maria magically polymorphs into a beast or elemental with a CR of 6 or less, and can remain in this form for up to 9 hours. Her equipment melds with her new form. Maria reverts to her true form if she dies or falls unconscious. Maria can revert to her true form using a Bonus Action on her turn.\nWhile in the new form, Maria retains its game statistics and ability to speak, only her AC, movement modes, STR, and DEX are replaced by those of the new form, and it gains any special senses, proficiencies, traits, actions, and reactions (except class features, legendary actions, and lair actions) that the new form has but that it lacks. It can cast its spells with verbal or somatic components in its new form.\nThe new form’s attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks."
+    },
+    {
+      "name": "Symbiotic Entity",
+      "text": "As an Action, Maria can expend a use of her \"Change Shape\" feature to awaken her spores and she gains 72 temporary HP. While this feature is active, Maria gains the following benefits:\n- When Maria deals damage with its \"Halo of Spores\", she rolls the damage die a second time and adds it to the total.\n- Maria' melee weapon attacks deal an extra 1d6 poison damage to any target they hit."
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [
+    {
+      "name": "Halo of Spores",
+      "text": "A creature you can see in 3 m from you or starts its turn there must make a CON saving throw or take 1d10 necrotic damage."
+    },
+    {
+      "name": "Fungal Infestation (5/day)",
+      "text": "Her Spores animate a Small or Medium dead Beast or Humanoid within 3 m of her to a zombie. It gains 1 HP and after 1 h it dies. It moves directly after Maria and is mentally commanded by her."
+    }
+  ],
+  "legendary_actions": [
+    {
+      "name": "Attacks and Spells",
+      "text": "She attacks with her Staff, Wildfire or casts any one spell from her list."
+    },
+    {
+      "name": "Misty Escape",
+      "text": "After she takes damage, Maria can cast \"Misty Step\" to escape more damage."
+    },
+    {
+      "name": "Spreading Spores",
+      "text": "While the \"Symbiotic Entity\" feature is active, Maria can hurl spores up to 9 m away, where they swirl in a 3 m cube for 1 min. Whenever a creature moves into the cube or starts its turn there, that creature takes \"Halo of Spores\" damage, unless the creature succeeds on a CON saving throw (DC 17). A creature can take this damage no more than once per turn."
+    }
+  ],
+  "legendary_actions_per_round": 3,
+  "legendary_description": "The monster can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The monster regains spent legendary actions at the start of its turn.",
+  "mythic_actions": [],
+  "lair_actions": [],
+  "regional_effects": [],
+  "display": {
+    "double_columns": true,
+    "separation_point": 3
+  },
+  "import_notes": [
+    "AC inferred from armorName, Dexterity modifier, and shieldBonus.",
+    "Filename suggests alias/name: Verona Vandameer.",
+    "Ignored inconsistent customCr value \"1 (200 XP)\" and used cr \"12\".",
+    "Ignored inconsistent customProf value \"2\" and used proficiency bonus +4 from CR."
+  ],
+  "source_format": "monster builder export"
+}

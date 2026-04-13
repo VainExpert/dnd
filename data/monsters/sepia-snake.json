@@ -1,0 +1,74 @@
+{
+  "name": "Sepia Snake",
+  "size": "Huge",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "huge",
+      "monstrosity",
+      "cr9",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 147,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 23,
+    "dex": 16,
+    "con": 19,
+    "int": 4,
+    "wis": 13,
+    "cha": 19
+  },
+  "skills": {
+    "Perception": 9,
+    "Stealth": 7
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Flyby",
+      "text": "The sepia snake doesn’t provoke an opportunity attack when it\nflies out of an enemy’s reach."
+    },
+    {
+      "name": "Gaze",
+      "text": "When a creature that can see the sepia snake’s eyes starts its turn\nwithin 30 feet of the sepia snake, the snake can force it to make a DC 16\nConstitution saving throw if the sepia snake isn’t incapacitated and can\nsee the creature. On failure, the creature is frightened for 1 minute.\nUnless surprised, a creature can avert its eyes to avoid the saving throw\nat the start of its turn. If the creature does so, it can’t see the sepia snake\nuntil the start of its next turn, when it can avert its eyes again. If the\ncreature looks at the sepia snake in the meantime, it must immediately\nattempt the save. While averting its eyes, any attacks on the sepia snake\nare done at disadvantage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The sepia snake makes two melee attacks: one with its bite\nand one with its tail sting."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 15\n(2d8 + 6) piercing damage. The target is grappled (escape DC 16) if the\nsepia snake isn’t already grappling a creature, and the target is restrained\nuntil the grapple ends. While the snake has a creature grappled with its\nbite, it can’t bite a different creature."
+    },
+    {
+      "name": "Tail Sting",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target.\nHit: 19 (2d12 + 6) piercing damage and 27 (6d8) poison damage, and\nthe target must make a successful DC 16 Constitution saving throw or is\nparalyzed for 1 minute. The creature can repeat the saving throw at the end\nof each of its turns, ending the effect on itself with a success."
+    },
+    {
+      "name": "Cocoon (Recharge 5–6)",
+      "type": "special",
+      "text": "A sepia snake can fire a line of webbing to\na range of 20 feet. Creatures in this area must make a DC 16 Dexterity\nsaving throw. On a failure, the creature is restrained by webbing. If a\ncreature is completely covered in webbing, it must make a successful DC\n16 Constitution saving throw or be placed in a state of magical suspended\nanimation for 1d4 + 12 days. During this time, the creature does not need\nfood or water.\n\nIn one round, the sepia snake can spit enough webbing to cover one\nMedium or smaller creature. For each size category larger than Medium,\nthe snake must fire another line of webbing to completely encase an\nopponent.\n\nAs an action, creatures hit by the webbing but not completely covered\ncan make a DC 16 Strength check, bursting the webbing on a success. A\ncreature that is completely wrapped in the webbing cannot break free and\nmust rely on others to remove the webs. The webbing can be attacked\nand destroyed (AC 10; hp 10; vulnerability to fire damage; immunity to\nbludgeoning, poison, and psychic damage)."
+    }
+  ],
+  "source": "creature"
+}

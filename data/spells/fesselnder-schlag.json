@@ -1,0 +1,16 @@
+{
+  "id": "fesselnder-schlag",
+  "name": "Fesselnder Schlag",
+  "level": 1,
+  "school": "Beschwörungsmagie",
+  "casting_time": "1 Bonus Aktion, direkt nach Waffen-Treffer",
+  "range": "Selbst",
+  "components": "V",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Waldläufer"
+  ],
+  "text": "Wenn du ein Ziel triffst, erscheinen Ranken und das Ziel macht einen STR-Rettungswurf (Groß oder größer mit Vorteil).\nBei Fehlschlag: Ziel ist festgesetzt, bis der Zauber endet. Bei Erfolg: Zauber endet.\nSolange festgesetzt: Zu Beginn jedes seiner Züge 1W6 Stichschaden. Das Ziel oder eine Kreatur in Reichweite kann als Aktion einen Athletik-Check gegen deinen Zauberrettungswurf-SG machen; bei Erfolg endet der Zauber.\n\nAuf höheren Level gewirkt: +1W6 Stichschaden pro Level."
+}

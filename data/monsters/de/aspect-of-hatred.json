@@ -1,0 +1,72 @@
+{
+  "name": "Der Aspekt des Hasses",
+  "size": "Groß",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr4",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 17,
+  "hp": {
+    "average": 85,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 18,
+    "int": 6,
+    "wis": 10,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages of its creator but can’t speak"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Aura der Wut",
+      "text": "Lebewesen im30 feetWirkungsbereich\ndes Aspekts werden von blinder Wut erfüllt. Der erste\nWaffenangriff pro Runde, den ein Lebewesen innerhalb\ndieser Aura ausführt, erfolgt mit Nachteil. Dieser Effekt\nendet, sobald der Aspekt auf 0 Trefferpunkte reduziert wurde."
+    },
+    {
+      "name": "Unveränderliche Form",
+      "text": "Dieser Aspekt ist immun gegen alle Zauber\noder Effekte, die seine Gestalt verändern würden."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Dieser Aspekt bietet einen Vorteil bei\nRettungswürfen gegen Zauber und andere magische\nEffekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Waffenangriffe dieses Aspekts sind\nmagischer Natur."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Dieser Aspekt führt zwei Slam-Angriffe aus."
+    },
+    {
+      "name": "Friede sei mit euch",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 zum Treffen, Reichweite:1,5 m .,\nein Ziel. Treffer: 13 (2d8 + 4) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Welle der Wut (1/Tag)",
+      "type": "special",
+      "text": "Jede feindliche Kreatur innerhalb\n9 m\ndes Wirkungsbereichs muss einenDC 13\nWeisheits-Rettungswurf bestehen oder wird für eine Minute von einer\nunstillbaren Blutgier erfasst. Jede Kreatur,\ndie den Rettungswurf nicht bestanden hat, muss in\njedem ihrer Züge eine Angriffsaktion ausführen und kann ihre Bonusaktion nicht nutzen. Eine\nKreatur kann den Rettungswurf am Ende\njedes ihrer Züge wiederholen und den Effekt auf sich selbst bei\nErfolg beenden."
+    }
+  ],
+  "source": "creature"
+}

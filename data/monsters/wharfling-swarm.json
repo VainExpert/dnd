@@ -1,0 +1,67 @@
+{
+  "name": "Wharfling Swarm",
+  "size": "Large",
+  "type": {
+    "type": "swarm",
+    "tags": [
+      "large",
+      "swarm",
+      "cr4",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 63,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30,
+    "swim": 20
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 16,
+    "con": 8,
+    "int": 2,
+    "wis": 12,
+    "cha": 7
+  },
+  "skills": {
+    "Perception": 3,
+    "Sleight of Hand": 5
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "4",
+    "xp": 1100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Swarm",
+      "text": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a tiny wharfling. The swarm can't regain hit points or gain temporary hit points."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bites",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm's space. Hit: 21 (6d6) piercing damage, or 10 (3d6) piercing damage if the swarm has half of its hit points or fewer."
+    },
+    {
+      "name": "Locking Bite",
+      "type": "special",
+      "text": "When a creature leaves a wharfling swarm's space, 1d3 wharflings remain grappled to them (escape DC 10). Each wharfling inflicts 5 (1d4 + 3) piercing damage at the start of the creature's turns until it escapes from the grapples."
+    },
+    {
+      "name": "Pilfer",
+      "type": "special",
+      "text": "A wharfling swarm makes 1d6 Dexterity (Sleight of Hand) checks each round against every creature in the swarm's space. The DC for each check equals 10 plus the target creature's Dexterity modifier. For each successful check, the wharflings steal some small metallic object from the target, and the theft is unnoticed if the same result equals or exceeds the target's passive Perception."
+    }
+  ],
+  "source": "creature"
+}

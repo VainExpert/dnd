@@ -1,0 +1,16 @@
+{
+  "id": "tensers-schwebende-scheibe",
+  "name": "Tensers Schwebende Scheibe",
+  "level": 1,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V, G, M (Tropfen Quecksilber)",
+  "duration": "1 h",
+  "concentration": false,
+  "ritual": true,
+  "classes": [
+    "Magier"
+  ],
+  "text": "Du erschaffst eine kreisförmige Scheibe aus Energie (Durchmesser ca. 0,9 m), die in einem freien Feld in Reichweite erscheint und ca. 0,9 m über dem Boden schwebt.\nSie trägt bis zu 225 kg; bei mehr Gewicht endet der Zauber und alles fällt zu Boden.\nSolange du innerhalb von 6 m bist, bleibt die Scheibe stehen. Entfernst du dich weiter, folgt sie dir so, dass sie innerhalb von 6 m bleibt (Treppen/Hänge sind ok), kann aber keinen Höhenunterschied von 3 m oder mehr überwinden.\nWenn du dich mehr als 30 m von ihr entfernst, endet der Zauber."
+}

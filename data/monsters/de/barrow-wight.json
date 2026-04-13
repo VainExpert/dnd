@@ -1,0 +1,58 @@
+{
+  "name": "Barrow Wight",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 14,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 16,
+    "int": 10,
+    "wis": 13,
+    "cha": 15
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 4
+  },
+  "languages": [
+    "the languages it knew in life"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Blick des Wahnsinns",
+      "text": "Wenn eine Kreatur ihren Zug in30 feetReichweite des\nHügelgeistes beginnt und beide sich sehen können, kann der Hügelgeist\ndie Kreatur zu einemDC 13Weisheits-Rettungswurf zwingen, sofern der Hügelgeist\nnicht handlungsunfähig ist. Bei einem misslungenen Rettungswurf ist die Kreatur 1 Minute lang von einem kurzzeitigen\nWahnsinnseffekt betroffen. Wirf einen Prozentwürfel und bestimme den Effekt anhand der folgenden Tabelle.\n* E 1E  Das Ziel zieht-20 sich in seine Gedanken zurück und wird\ngelähmt. Der Effekt endet, sobald die Kreatur\nSchaden erleidet.\n* E -3021E  Die Kreatur ist handlungsunfähig und kann nur\nhysterisch schreien, lachen oder weinen.\n* E 31E  Die Kreatur ist verängstigt und muss ihre -40Aktionen nutzen,\num vor der Quelle der Angst zu fliehen.\n* 41 -50Die Kreatur plappert unzusammenhängend und kann nicht\nnormal sprechen oder Zauber wirken.\n* 51-60 Die Kreatur muss ihre Aktion nutzen, um die\nnächstgelegene Kreatur anzugreifen.\n* 61 Die Kreatur hat lebhafte Halluzinationen, was ihr\nbei-70 allen Fähigkeitsproben einen Nachteil einbringt.\n* 71 Die -75Kreatur tut alles, was man ihr sagt,\nsolange es nicht offensichtlich selbstzerstörerisch ist.\n* 76 Die Kreatur verspürt einen überwältigenden Drang,\n-80etwas Seltsames zu essen, wie zum Beispiel Erde, Innereien oder\nSchleim.\n* 81 Die -90Kreatur ist betäubt.\n* -10091 Die Kreatur wird bewusstlos.\n\nDas Ziel kann den Rettungswurf am Ende jedes seiner Züge wiederholen. Ein\nerfolgreicher Rettungswurf beendet den Effekt und macht das Ziel für 24 Stunden immun gegen denselben\nWahnsinnsblick des Barrow-Wights.\nEine Kreatur, die nicht überrascht ist, kann zu Beginn ihres Zuges den Blick abwenden, um den\nRettungswurf zu vermeiden. Tut sie dies, kann sie das Barrow-Wight\nbis zum Beginn ihres nächsten Zuges nicht sehen, dann kann sie den Blick erneut abwenden. Wenn die\nKreatur das Barrow-Wight in der Zwischenzeit ansieht, muss sie sofort\nden Rettungswurf durchführen."
+    },
+    {
+      "name": "Sonnenlichtempfindlichkeit",
+      "text": "Im Sonnenlicht hat das Wesen einen Nachteil bei\nAngriffswürfen sowie bei Weisheits- (Wahrnehmungs-)Proben, die auf dem Sehsinn beruhen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Friede sei mit euch",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffer, Reichweite5 ft: , eine Kreatur. Treffer:\n6 (1d6+3) Bludgeoning-Schaden plus 6 (1d6 + 3) nekrotischer Schaden. Das\nZiel muss einenDC 13  Konstitutions-Rettungswurf bestehen, sonst verringert sich seine maximale Trefferpunktzahl\num einen Wert, der dem erlittenen nekrotischen Schaden entspricht.\n\nDiese Verringerung hält an, bis das Ziel eine lange Ruhepause einlegt. Das Ziel stirbt, wenn dieser\nEffekt seine maximale Trefferpunktzahl auf null reduziert.\n\nEin durch diesen Angriff getöteter Humanoid erwacht1d4  Runden später als Grabgeister\nunter der Kontrolle des Geistes, der ihn getötet hat, es sei denn, der Humanoid wird\nwiederbelebt oder sein Körper wird zerstört. Der Geist kann nicht mehr als drei\nGrabgeister gleichzeitig unter seiner Kontrolle haben."
+    }
+  ],
+  "source": "creature"
+}

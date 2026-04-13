@@ -1,0 +1,58 @@
+{
+  "name": "Gnasher Lizard",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr7",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 152,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 22,
+    "dex": 14,
+    "con": 18,
+    "int": 2,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 5
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Surprise Attack",
+      "text": "If the cavern lizard surprises a creature and hits it with\nan attack during the first round of combat, the target takes an extra 14\n(4d6) damage from the attack."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 22\n(3d10 + 6) piercing damage and the target is grappled (escape DC 16), and\nthe gnasher lizard can only grapple one creature at a time."
+    },
+    {
+      "name": "Thrash",
+      "type": "special",
+      "text": "The gnasher lizard rapidly shakes its head, and any grappled\ntarget takes 39 (6d10 + 6) slashing damage. If this damage is enough to\ndrop the target to 0 hit points, the target is dismembered and portions of it\nare swallowed. A creature who suffers this cannot be brought back to life\nwith anything less than true resurrection."
+    }
+  ],
+  "source": "creature"
+}

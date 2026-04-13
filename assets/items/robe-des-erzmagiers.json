@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-robe-des-erzmagiers",
+  "type": "item",
+  "name": "Robe des Erzmagiers",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "legendär",
+  "requires_attunement": true,
+  "attunement_text": "erfordert Einstimmung durch einen Hexenmeister, Magier oder Zauberer",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese elegante Robe ist aus exquisitem weißen, grauen oder schwarzen Stoff gefertigt und mit silberfarbenen Runen verziert. Die Farbe der Robe entspricht der Gesinnung, für die der Gegenstand erschaffen wurde. Eine weiße Robe ist für gute, eine graue Robe für neutrale und eine schwarze Robe für böse Charaktere. Du kannst dich nicht auf eine Robe des Erzmagiers  einstimmen, die nicht deiner Gesinnung entspricht. Wenn du die Robe trägst, erhältst du die folgenden Vorteile:",
+  "tags": []
+}

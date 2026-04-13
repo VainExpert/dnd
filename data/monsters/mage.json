@@ -1,0 +1,54 @@
+{
+  "name": "Mage",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr6",
+      "monster-manual",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 12,
+  "hp": {
+    "average": 40,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 9,
+    "dex": 14,
+    "con": 11,
+    "int": 17,
+    "wis": 12,
+    "cha": 11
+  },
+  "skills": {
+    "Arcana": 6,
+    "History": 6
+  },
+  "languages": [
+    "any four languages"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "text": "The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage has the following wizard spells prepared:\n\n* Cantrips (at will): <i>fire bolt, light, mage hand, prestidigitation</i>\n\n* 1st level (4 slots): <i>detect magic, mage armor, magic missile, shield</i>\n\n* 2nd level (3 slots): <i>misty step, suggestion</i>\n\n* 3rd level (3 slots): <i>counterspell, fireball, fly</i>\n\n* 4th level (3 slots): <i>greater invisibility, ice storm</i>\n\n* 5th level (1 slot): <i>cone of cold</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

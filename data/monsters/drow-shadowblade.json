@@ -1,0 +1,62 @@
+{
+  "name": "Drow Shadowblade",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr11",
+      "mordenkainens-tome-of-foes",
+      "elf"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 17,
+  "hp": {
+    "average": 150,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 21,
+    "con": 16,
+    "int": 12,
+    "wis": 14,
+    "cha": 13
+  },
+  "skills": {
+    "Perception": 6,
+    "Stealth": 9
+  },
+  "languages": [
+    "Elvish",
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "11",
+    "xp": 7200,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Fey Ancestry",
+      "text": "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The drow's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components:\n\n* At will: <i>dancing lights</i>\n\n* 1/day each: <i>darkness, faerie fire , levitate </i>(self only)"
+    },
+    {
+      "name": "Shadow Step",
+      "text": "While in dim light or darkness, the drow can teleport as a bonus action up to 60 feet to an unoccupied space it can see that is also in dim light or darkness. It then has advantage on the first melee attack it makes before the end of the turn."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "nimmervoller-beutel",
+  "type": "item",
+  "name": "Nimmervoller Beutel",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 7.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 250,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Das Innere dieses Beutels ist wesentlich größer als seine Außenmaße: Seine Öffnung hat einen Durchmesser von etwa 0,6 m und er ist 1,2 m tief. Der Beutel kann bis zu 250 kg und maximal 1.792 l fassen. Der Beutel wiegt unabhängig von seinem Inhalt 7,5 kg. Das Herausholen eines Gegenstands aus dem Beutel erfordert eine Aktion. Wenn er überfüllt, durchbohrt oder zerrissen wird, zerreißt und zerstört dies den Beutel, und sein Inhalt wird in der Astralebene zerstreut. Wenn der Beutel umgestülpt wird, fällt sein gesamter Inhalt unbeschädigt heraus. Bevor er wieder genutzt werden kann, muss er jedoch wieder auf rechts gedreht werden. Atmende Kreaturen können bis zu 10 min darin überleben (geteilt durch die Anzahl an Kreaturen im Beutel, mindestens 1 min), bevor sie beginnen zu ersticken. Wenn ein Nimmervoller Beutel in den extradimensionalen Raum eines Praktischen Rucksacks, eines Tragbaren Lochs oder eines ähnlichen Gegenstands gelangt, zerstört dies sofort beide Gegenstände, und ein Tor in die Astralebene öffnet sich. Das Tor erscheint dort, wo der eine Gegenstand in den anderen gelangt ist. Kreaturen im Abstand von bis zu 3 m vom Tor werden hineingezogen und an einen zufälligen Ort auf der Astralebene transportiert. Dann schließt sich das Tor. Das Tor funktioniert nur in eine Richtung und kann nicht wieder geöffnet werden.",
+  "tags": [
+    "magisch",
+    "behälter",
+    "beutel",
+    "astralebene"
+  ]
+}

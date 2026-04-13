@@ -1,0 +1,77 @@
+{
+  "name": "Vrock Zombie",
+  "size": "Large",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr6",
+      "tome-of-horrors",
+      "undead"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 15,
+  "hp": {
+    "average": 104,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 15,
+    "con": 18,
+    "int": 8,
+    "wis": 13,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "understands Abyssal but can’t speak"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Undead Fortitude",
+      "text": "If damage reduces the zombie to 0 hit points, it\nmakes a Constitution saving throw with a DC of 5+ the damage taken,\nunless the damage is radiant or from a critical hit. On a success, the\nzombie drops to 1 hit point instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The vrock has advantage on saving throws against\nspells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The vrock makes two attacks: one with its beak and one\nwith its talons."
+    },
+    {
+      "name": "Beak",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10\n(2d6 + 3) piercing damage."
+    },
+    {
+      "name": "Talons",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14\n(2d10 + 3) slashing damage."
+    },
+    {
+      "name": "Spores (Recharge 6)",
+      "type": "special",
+      "text": "A 15-foot radius cloud of toxic spores extends\nout from the vrock. The spores spread around corners. Each creature in\nthat area must succeed on a DC 14 Constitution saving throw or become\npoisoned. While poisoned in this way, a target takes 5 (1d10) poison\ndamage at the start of each of its turns. A target can repeat the saving throw\nat the end of each of its turns, ending the effect on itself on a success.\nEmptying a vial of holy water on the target also ends the effect on it."
+    },
+    {
+      "name": "Stunning Screech (1/day)",
+      "type": "special",
+      "text": "The vrock emits a horrific screech. Each\ncreature within 20 feet of it that can hear it and that isn’t a demon must\nsucceed on a DC 14 Constitution saving throw or be stunned until the end\nof the vrock’s next turn."
+    }
+  ],
+  "source": "creature"
+}

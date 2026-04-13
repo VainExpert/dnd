@@ -1,0 +1,77 @@
+{
+  "name": "Berstuc",
+  "size": "Groß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr11",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 18,
+  "hp": {
+    "average": 157,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 20
+  },
+  "abilities": {
+    "str": 22,
+    "dex": 10,
+    "con": 20,
+    "int": 12,
+    "wis": 14,
+    "cha": 19
+  },
+  "skills": {
+    "Deception": 8,
+    "Nature": 10,
+    "Survival": 6
+  },
+  "languages": [
+    "Abyssal",
+    "Common",
+    "Sylvan; telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "11",
+    "xp": 7200,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Scheingestalt",
+      "text": "Im Hinblick auf Zauber und magische Effekte, die übernatürliche Wesen aufspüren, gilt der Berstuc als Feenwesen. Tiere und Pflanzen fühlen sich in der Nähe des Berstucs wohl und greifen ihn nicht an, es sei denn, sie werden dazu aufgefordert oder provoziert."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Berstuc hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Gewundener Pfad",
+      "text": "Der Berstuc hinterlässt keine Spuren in der Natur und lässt sich weder durch Fertigkeitsproben noch auf andere natürliche Weise aufspüren. Wesen, die ihm folgen, können ihre eigenen Spuren nicht mehr zurückverfolgen und verirren sich nach einer Stunde Reise hoffnungslos. Wesen, die von einem Berstuc in die Irre geführt wurden, haben 24 Stunden lang Nachteil bei Versuchen, ihren Standort zu bestimmen oder sich zu orientieren."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Berstuc führt drei Slam-Angriffe aus und absorbiert einmal."
+    },
+    {
+      "name": "Friede sei mit euch",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +10 auf den Trefferwurf, Reichweite5 ft: , ein Ziel. Treffer: 14 (2d8 + 5) Bludgeoning-Schaden und das Ziel wird festgehalten (Befreiungswurf DC 16)."
+    },
+    {
+      "name": "Aufnehmen",
+      "type": "special",
+      "text": "Der Berstuc zieht eine mittelgroße oder kleinere Kreatur, die er im Griff hat, in seinen Körper hinein. Eine absorbierte Kreatur befindet sich nicht mehr im Griff, ist jedoch geblendet und bewegungsunfähig, hat vollständige Deckung vor Angriffen und anderen Effekten von außerhalb des Berstucs und erleidet zu Beginn jedes Zuges des Berstucs 14 (2d8 + 5) Durchbohrungsschaden plus 27 (5d10) Giftschaden. Der Berstuc kann jeweils nur eine absorbierte Kreatur in sich aufnehmen. Wenn der Berstuc in einem einzigen Zug 20 oder mehr Schaden von einer Kreatur in seinem Inneren erleidet, muss er einenDC 17  Konstitutionsrettungswurf bestehen oder die absorbierte Kreatur ausstoßen, die innerhalb5 feetvon  vom Berstuc liegend zu Boden fällt. Wenn der Berstuc stirbt, ist eine absorbierte Kreatur nicht mehr gefesselt und kann mit5 feet  Bewegungspunkten aus der Leiche entkommen, wobei sie liegend herauskommt."
+    }
+  ],
+  "source": "creature"
+}

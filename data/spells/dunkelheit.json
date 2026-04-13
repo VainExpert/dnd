@@ -1,0 +1,18 @@
+{
+  "id": "dunkelheit",
+  "name": "Dunkelheit",
+  "level": 2,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "18 m (4,5 m Sphäre)",
+  "components": "V, M (Fledermaus-Fell und ein Kohlestück oder ein Pechtropfen)",
+  "duration": "Konzentration, bis zu 10 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Beginnend an einem Punkt in Reichweite breitet sich eine 4,5 m Sphäre aus Dunkelheit aus, die auch um Ecken herum geht.\nDunkelsicht und nichtmagische Lichtquellen funktionieren nicht. Der Wirker kann dennoch normal sehen.\nDer ausgehende Punkt kann auch ein Objekt sein. Dann bewegt sich die Dunkelheit mit dem Objekt mit.\nDie Dunkelheit wird blockiert, wenn die Quelle mit einem undurchsichtigem Objekt überdeckt wird.\nLichterzeugende Zauber von Level 2 oder niedriger werden im Bereich der Dunkelheit gebannt."
+}

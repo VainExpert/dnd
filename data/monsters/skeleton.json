@@ -1,0 +1,51 @@
+{
+  "name": "Skeleton",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr1/4",
+      "monster-manual"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 13,
+  "hp": {
+    "average": 13,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 15,
+    "int": 6,
+    "wis": 8,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "understands all languages it spoke in life but can't speak"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    },
+    {
+      "name": "Shortbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

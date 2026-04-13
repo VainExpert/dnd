@@ -1,0 +1,88 @@
+{
+  "name": "Fly Dragon",
+  "size": "Tiny",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "tiny",
+      "dragon",
+      "cr18",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 20,
+  "hp": {
+    "average": 275,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 30,
+    "con": 24,
+    "int": 19,
+    "wis": 17,
+    "cha": 19
+  },
+  "skills": {
+    "Arcana": 10,
+    "Deception": 10,
+    "History": 10,
+    "Intimidation": 10,
+    "Perception": 9,
+    "Stealth": 16
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "18",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Legendary Resistance (3/day)",
+      "text": "If the fly dragon fails a saving throw, it\ncan choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The fly dragon has advantage on saving throws\nagainst spells and other magical effects."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The fly dragon is a 20th level spellcaster. Its spellcasting\nability is Charisma (spell save DC 18, +10 to hit with spell attacks). The\nfly dragon’s spells require no material components, and individual fly\ndragons know different sets of spells. A typical list is provided below:\n\n* Cantrips (at will): <i>fire bolt, mage hand, message, minor illusion, prestidigitation, shocking grasp</i>\n\n* 1st level (4/day): <i>detect magic</i>\n\n* 2nd level (3/day): <i>darkness, suggestion</i>\n\n* 3rd level (3/day): <i>haste</i>\n\n* 4th level (3/day): <i>confusion, greater invisibility, wall of fire</i>\n\n* 5th level (3/day): <i>hold monster, telekinesis</i>\n\n* 6th level (2/day): <i>chain lightning, globe of invulnerability</i>\n\n* 7th level (2/day): <i>plane shift, teleport</i>\n\n* 8th level (1/day): <i>dominate monster</i>\n\n* 9th level (1/day): <i>time stop</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The dragon uses its Frightful Presence and makes three\nattacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +16 to hit, reach 5 ft., one target. Hit: 12\n(1d4 + 10) piercing damage plus 7 (2d6) fire damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +16 to hit, reach 5 ft., one target. Hit: 13\n(1d6 + 10) slashing damage."
+    },
+    {
+      "name": "Frightful Presence",
+      "type": "special",
+      "text": "Each creature of the dragon’s choice that is within\n60 feet of the fly dragon and aware of it must succeed on a DC 19 Wisdom\nsaving throw or become Frightened for 1 minute. A creature can repeat\nthe saving throw at the end of each of its turns, ending the effect on itself\non a success. If a creature’s saving throw is successful or the effect ends\nfor it, the creature is immune to the fly dragon’s Frightful Presence for the\nnext 24 hours."
+    },
+    {
+      "name": "Fire Breath (Recharge 5–6)",
+      "type": "special",
+      "text": "The dragon exhales fire in a 40-foot cone.\nCreatures in the area must make a DC 19 Dexterity saving throw, taking\n63 (18d6) fire damage, or half as much damage on a successful one. Being\nunderwater doesn’t grant resistance to this damage."
+    }
+  ],
+  "source": "creature"
+}

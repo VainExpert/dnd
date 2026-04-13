@@ -1,0 +1,63 @@
+{
+  "name": "Mudbog",
+  "size": "Large",
+  "type": {
+    "type": "ooze",
+    "tags": [
+      "large",
+      "ooze",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 9,
+  "hp": {
+    "average": 51,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 10
+  },
+  "abilities": {
+    "str": 20,
+    "dex": 8,
+    "con": 17,
+    "int": 1,
+    "wis": 10,
+    "cha": 3
+  },
+  "skills": {
+    "Stealth": 1
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Acid",
+      "text": "A mudbog secretes a digestive acid that quickly dissolves organic\nmaterial, but not metal or stone. A creature that attacks the mudbog takes\n3 (1d6) acid damage. Any wood or other organic material that touches\nthe mudbog is pitted. Wooden weapons suffer a cumulative –1 penalty to\ndamage rolls made with it unless it is magical. When this penalty reaches –5, the weapon is destroyed."
+    },
+    {
+      "name": "Amorphous",
+      "text": "The ooze can move through a space as narrow as 1 inch\nwide without squeezing."
+    },
+    {
+      "name": "False Appearance",
+      "text": "The mudbog, while not moving, is indistinguishable\nfrom a muddy puddle."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Engulf",
+      "type": "special",
+      "text": "The mudbog moves up to its speed. While doing so, it can\nenter Medium or smaller creatures’ spaces. Whenever the mudbog enters\na creature’s space, the creature must make a DC 13 Dexterity saving throw.\nOn a successful save, the creature can choose to be pushed 5 feet back or\nto the side of the mudbog. A creature that chooses not to be pushed suffers\nthe consequences of a failed saving throw. On a failed save, the creature\nis engulfed and the mudbog enters the creature’s space. The creature takes\n10 (3d6) acid damage. The engulfed creature can’t breathe, is restrained,\nand takes 21 (6d6) acid damage at the start of each of the ooze’s turns.\nWhen the mudbog moves, the engulfed creature moves with it.\n\nAn engulfed creature can try to escape by taking an action to make a\nDC 13 Strength check. On a success, the creature escapes and enters a\nspace of its choice within 5 feet of the ooze."
+    }
+  ],
+  "source": "creature"
+}

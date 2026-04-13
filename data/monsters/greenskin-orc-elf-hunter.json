@@ -1,0 +1,86 @@
+{
+  "name": "Greenskin Orc Elf Hunter",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "tome-of-horrors",
+      "orc"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 17,
+  "hp": {
+    "average": 105,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 20,
+    "con": 15,
+    "int": 9,
+    "wis": 14,
+    "cha": 8
+  },
+  "skills": {
+    "Acrobatics": 8,
+    "Intimidation": 2,
+    "Nature": 2,
+    "Perception": 5,
+    "Survival": 5
+  },
+  "languages": [
+    "Common",
+    "Elvish",
+    "Orc",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Arboreal Hunter",
+      "text": "The greenskin orc has advantage on Dexterity\n(Stealth) checks when in temperate or warm forests."
+    },
+    {
+      "name": "Favored Enemy",
+      "text": "The elfhunter has advantage on Wisdom (Perception)\nand Wisdom (Survival) checks to track or notice any variety of elf or fey\ncreature."
+    },
+    {
+      "name": "Forest Hunter",
+      "text": "When the elfhunter hits a creature with a weapon attack,\nthe creature takes an extra 3 (1d6) damage (included in the weapon damage)."
+    },
+    {
+      "name": "Land Stride",
+      "text": "The elfhunter can move through nonmagical difficult\nterrain without using extra movement and can pass through nonmagical\nplants without being slowed by them and without taking damage from\nthem even if they have thorns, spines, or a similar hazard."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The elfhunter is an 8th level spellcaster. Its spellcasting\nability is Wisdom (spell save DC 13, +5 to hit with spell attacks). It has\nthe following ranger spells prepared:\n\n* 1st level (4 slots): <i>cure wounds, detect magic, jump, longstrider</i>\n\n* 2nd level (3 slots): <i>find traps, pass without trace, silence</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The green orc elfhunter makes two attacks with its\nlongsword or two with its longbow."
+    },
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit:\n11 (1d8 + 1d6 + 3) slashing damage or 12 (1d10 + 1d6 + 3) slashing damage when used\nwith two hands."
+    },
+    {
+      "name": "Longbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +8 to hit, range 150/600 ft., one\ntarget. Hit: 13 (1d8 +1d6 + 5) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

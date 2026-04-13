@@ -1,0 +1,77 @@
+{
+  "name": "Obsidian Minotaur",
+  "size": "Large",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr8",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 76,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 21,
+    "dex": 10,
+    "con": 18,
+    "int": 3,
+    "wis": 11,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages of its creator but can’t speak"
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "text": "If the obsidian minotaur moves at least 10 feet straight toward\na target and then hits it with a gore attack on the same turn, the target\ntakes an extra 9 (2d8) piercing damage. If the target is a creature, it must\nsucceed on a DC 16 Strength saving throw or be pushed up to 10 feet away\nand knocked prone."
+    },
+    {
+      "name": "Immutable Form",
+      "text": "The minotaur is immune to any spell or effect that\nwould alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The minotaur has advantage on saving throws\nagainst spells and other magic effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The minotaur’s weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The obsidian minotaur makes one gore attack and two\nclaw attacks."
+    },
+    {
+      "name": "Gore",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14\n(2d8 + 5) piercing damage plus 7 (2d6) fire damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 12\n(2d6 + 5) slashing damage plus 7 (2d6) fire damage."
+    },
+    {
+      "name": "Burning Breath (Recharge 5–6)",
+      "type": "special",
+      "text": "The obsidian minotaur expels a cloud\nof superheated gas that fills a 10-foot cube adjacent to it.. The gas fades\nafter the end of the minotaur’s next turn. Creatures who enter the area\nor start their turn there must make a DC 16 Constitution saving throw.\nOn a failed saving throw, the target takes 31 (9d6) fire damage and it is\npoisoned for 1 minute. On a successful saving throw, the target takes half\nthe damage and is not poisoned."
+    }
+  ],
+  "source": "creature"
+}

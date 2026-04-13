@@ -1,0 +1,19 @@
+{
+  "id": "rascher-rueckzug",
+  "name": "Rascher Rückzug",
+  "level": 1,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Bonus Aktion",
+  "range": "Selbst",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 10 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Bis der Zauber endet, kannst du in jedem deiner Züge eine Bonusaktion nutzen, um die Sprint-Aktion auszuführen."
+}

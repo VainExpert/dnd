@@ -1,0 +1,19 @@
+{
+  "id": "blindheit-taubheit",
+  "name": "Blindheit / Taubheit",
+  "level": 2,
+  "school": "Nekromantie",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V",
+  "duration": "1 min",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Kleriker",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Ein Feind wird blind oder taub.\nWähle eine Kreatur in Reichweite, die du sehen kannst.\nDas Ziel muss einen CON-Rettungswurf machen.\nBei Fehlschlag: Ziel ist für die Wirkungsdauer blind oder taub.\nAm Ende jeder seiner Züge kann die betroffene Kreatur einen CON-Rettungswurf machen, bei Erfolg endet der Zauber.\n\nAuf höheren Level gewirkt: pro Level ein zusätzliche Kreatur als Ziel wählbar"
+}

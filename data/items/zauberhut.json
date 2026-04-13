@@ -1,0 +1,46 @@
+{
+  "id": "zauberhut",
+  "type": "item",
+  "name": "Zauberhut",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "gewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "durch einen Zauberer",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 75,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Hut kann auch als arkaner Fokus verwendet werden. Der Hut hat die folgende Eigenschaft: Unbekannter Zauber: Als Aktion kannst du einen dir unbekannten Zaubertrick (aus der Zauberer-Zauberliste) wirken, der die Zauberzeit einer Aktion hat. Du musst einen SG-10 Arkane-Kunde-Wurf machen. Bei Erfolg wird der Zaubertrick normal gewirkt. Bei Fehlschlag passiert nichts und die Aktion ist verschwendet. Diese Eigenschaft kann nur einmal pro Langer Rast verwendet werden.",
+  "tags": [
+    "magisch",
+    "hut",
+    "arkaner fokus",
+    "zauberer",
+    "zaubertrick",
+    "aktion"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "name": "Erwachsener Blauer Dracolich",
+  "size": "Riesig",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "huge",
+      "undead",
+      "cr17",
+      "monster-manual"
+    ]
+  },
+  "alignment": "gesetztreu-böse",
+  "ac": 19,
+  "hp": {
+    "average": 225,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 30,
+    "fly": 80
+  },
+  "abilities": {
+    "str": 25,
+    "dex": 10,
+    "con": 23,
+    "int": 16,
+    "wis": 15,
+    "cha": 19
+  },
+  "skills": {
+    "Perception": 12,
+    "Stealth": 5
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "17",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drakolich einen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Drakolich hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Dracolich kann seine „Furchterregende Präsenz“ einsetzen. Anschließend führt er drei Angriffe aus: einen mit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +12 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 18 (2d10 + 7) Durchdringungsschaden plus 5 (1d10) Blitzschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +12 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 14 (2d6 + 7) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +12 auf Treffer, Reichweite15 ft: , ein Ziel. Treffer: 16 (2d8 + 7) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Furchterregende Präsenz",
+      "type": "special",
+      "text": "Jede Kreatur nach Wahl des Dracolichs, die sich in120 feetReichweite des Dracolichs befindet und ihn wahrnimmt, muss einenDC 18Weisheits-Rettungswurf bestehen oder wird für 1 Minute verängstigt. Eine Kreatur kann den Rettungswurf am Ende jedes ihrer Züge wiederholen und beendet den Effekt auf sich selbst bei einem Erfolg. Wenn der Rettungswurf einer Kreatur erfolgreich ist oder der Effekt für sie endet, ist die Kreatur für die nächsten 24 Stunden immun gegen die Furchterregende Präsenz des Dracolichs."
+    },
+    {
+      "name": "Blitzatem (Aufladen 5-6)",
+      "type": "special",
+      "text": "Der Drakolich speit Blitze in einer 90 Fuß langen Linie5 feet aus. Jede Kreatur in dieser Linie muss einenDC 20Geschicklichkeits-Rettungswurf durchführen und erleidet bei einem misslungenen Rettungswurf 66 (12d10) Blitzschaden oder bei einem erfolgreichen Rettungswurf die Hälfte dieses Schadens."
+    }
+  ],
+  "source": "creature"
+}

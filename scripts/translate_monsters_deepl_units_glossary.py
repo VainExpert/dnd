@@ -50,13 +50,13 @@ SIZE_DE = {
     "Large": "Groß", "Huge": "Riesig", "Gargantuan": "Gigantisch"
 }
 ALIGNMENT_DE = {
-    "lawful good": "rechtschaffen gut",
+    "lawful good": "gesetztreu-gut",
     "neutral good": "neutral gut",
     "chaotic good": "chaotisch gut",
-    "lawful neutral": "rechtschaffen neutral",
+    "lawful neutral": "gesetztreu-neutral",
     "neutral": "neutral",
     "chaotic neutral": "chaotisch neutral",
-    "lawful evil": "rechtschaffen böse",
+    "lawful evil": "gesetztreu-böse",
     "neutral evil": "neutral böse",
     "chaotic evil": "chaotisch böse",
     "unaligned": "ohne Gesinnung"
@@ -348,7 +348,7 @@ def main():
     ap.add_argument("--in", dest="in_dir", required=True, help="Input folder, e.g. data/monsters")
     ap.add_argument("--out", dest="out_dir", required=True, help="Output folder, e.g. data/monsters_de")
     ap.add_argument("--target", default="DE", help="DeepL target language code, default DE")
-    ap.add_argument("--margin", type=int, default=15000, help="Safety margin (chars). Stop before limit by this much.")
+    ap.add_argument("--margin", type=int, default=1000, help="Safety margin (chars). Stop before limit by this much.")
     ap.add_argument("--cache", default="translation_cache_deepl.json", help="Cache file for translated strings")
     ap.add_argument("--state", default="translation_state_deepl.json", help="State/checkpoint file")
     ap.add_argument("--save-every", type=int, default=50, help="Persist cache/state every N translated strings")

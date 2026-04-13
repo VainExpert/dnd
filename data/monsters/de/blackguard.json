@@ -1,0 +1,70 @@
+{
+  "name": "Schurke",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr8",
+      "volos-guide",
+      "any race"
+    ]
+  },
+  "alignment": "any non-good alignment",
+  "ac": 18,
+  "hp": {
+    "average": 153,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 11,
+    "con": 18,
+    "int": 11,
+    "wis": 14,
+    "cha": 15
+  },
+  "skills": {
+    "Athletics": 7,
+    "Deception": 5,
+    "Intimidation": 5
+  },
+  "languages": [
+    "any one language (usually Common)"
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Schwarzgardist ist ein Zauberwirker der Stufe 10. Seine Zauberfertigkeit ist Charisma (ZauberrettungswurfDC 13, +5 auf Treffer bei Zauberangriffen). Er hat die folgenden Paladin-Zauber vorbereitet:\n\n* Stufe 1 (4 Zauberplätze): Befehl, Schutz vor dem Bösen und dem Guten, Donnerschlag\n\n* 2. Stufe (3 Plätze): Brandmal, Reittier finden\n\n* 3. Stufe (2 Plätze): Blendschlag, Magie bannen"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Schurke führt drei Angriffe mit seiner Gleve oder seinem Kurzbogen aus."
+    },
+    {
+      "name": "Lanze",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 9 (1d10+4) Schnittschaden."
+    },
+    {
+      "name": "Kurzbogen",
+      "type": "special",
+      "text": "Fernkampfangriff: +3 auf Treffer, Reichweite80/320  Fuß, ein Ziel. Treffer: 5 (1d6+2) Durchdringungsschaden."
+    },
+    {
+      "name": "Schrecklicher Aspekt (Lädt sich nach einer kurzen oder langen Ruhepause wieder auf)",
+      "type": "special",
+      "text": "Der Schurke strahlt eine magische Bedrohung aus. Jeder Gegner im30 feetUmkreis von  des Schurken muss einenDC 13  Weisheits-Rettungswurf bestehen oder wird für 1 Minute in Angst versetzt. Beendet ein verängstigtes Ziel seinen Zug mehr als  vom 30 feetSchurken entfernt, kann es den Rettungswurf wiederholen und den Effekt bei Erfolg aufheben."
+    }
+  ],
+  "source": "creature"
+}

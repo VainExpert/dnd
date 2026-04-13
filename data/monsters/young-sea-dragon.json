@@ -1,0 +1,77 @@
+{
+  "name": "Young Sea Dragon",
+  "size": "Large",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "large",
+      "dragon",
+      "cr9",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 18,
+  "hp": {
+    "average": 152,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80,
+    "swim": 50
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 10,
+    "con": 19,
+    "int": 15,
+    "wis": 13,
+    "cha": 17
+  },
+  "skills": {
+    "Perception": 9,
+    "Stealth": 4
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "9",
+    "xp": 5000,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The dragon can breathe air and water."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "The dragon deals double damage to objects"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The dragon makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) piercing damage plus 5 (1d10) cold damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage."
+    },
+    {
+      "name": "Tidal Breath (Recharge 5-6)",
+      "type": "special",
+      "text": "The dragon exhales a crushing wave of frigid seawater in a 30-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw. On a failure, the target takes 27 (5d10) bludgeoning damage and 27 (5d10) cold damage, and is pushed 30 feet away from the dragon and knocked prone. On a successful save the creature takes half as much damage and isn't pushed or knocked prone."
+    }
+  ],
+  "source": "creature"
+}

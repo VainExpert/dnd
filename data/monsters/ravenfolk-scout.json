@@ -1,0 +1,77 @@
+{
+  "name": "Ravenfolk Scout",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/2",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 14,
+  "hp": {
+    "average": 21,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 8,
+    "int": 10,
+    "wis": 15,
+    "cha": 12
+  },
+  "skills": {
+    "Deception": 3,
+    "Perception": 6,
+    "Stealth": 6
+  },
+  "languages": [
+    "Common",
+    "Feather Speech",
+    "Huginn"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Mimicry",
+      "text": "Ravenfolk scouts can mimic the voices of others with uncanny accuracy. They have advantage on Charisma (Deception) checks involving audible mimicry."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The ravenfolk scout makes one peck attack and one other melee or ranged attack."
+    },
+    {
+      "name": "Ghost Wings",
+      "type": "special",
+      "text": "The ravenfolk scout furiously \"beats\" a set of phantasmal wings. Every creature within 5 feet of the ravenfolk must make a successful DC 12 Dexterity saving throw or be blinded until the start of the ravenfolk's next turn."
+    },
+    {
+      "name": "Longbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack. +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 +2) piercing damage."
+    },
+    {
+      "name": "Peck",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Rapier",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8+ 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

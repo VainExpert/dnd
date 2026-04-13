@@ -1,0 +1,16 @@
+{
+  "id": "wunden-verursachen",
+  "name": "Wunden verursachen",
+  "level": 1,
+  "school": "Nekromantie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Kleriker"
+  ],
+  "text": "Mache einen Nahkampf-Zauberangriff gegen eine Kreatur, die du erreichen kannst.\nBei Treffer: 3W10 nekrotischer Schaden\n\nAuf höheren Level wirken: pro Level 1W10 mehr Schaden"
+}

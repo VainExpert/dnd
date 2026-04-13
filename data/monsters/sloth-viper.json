@@ -1,0 +1,52 @@
+{
+  "name": "Sloth Viper",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 38,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30,
+    "swim": 30
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 16,
+    "con": 11,
+    "int": 2,
+    "wis": 12,
+    "cha": 2
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 5
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage, and the target must succeed on a DC 13 Constitution\nsaving throw. On a failed saving throw, the target takes 14 (4d6) poison\ndamage and the target is poisoned for 1 minute. On a successful saving\nthrow, the target takes half damage and isn’t poisoned.\n\nWhile the target is poisoned, its speed is halved, it can’t use reactions,\nand it can take only one action or one bonus action on each of its turns, and\nregardless of abilities or magic items, it can’t make more than one melee\nor ranged attack during its turn. If the creature attempts to cast a spell with\na casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn’t\ntake effect until the creature’s next turn, and the creature must use its\naction on that turn to complete the spell. If it can’t, the spell is wasted."
+    }
+  ],
+  "source": "creature"
+}

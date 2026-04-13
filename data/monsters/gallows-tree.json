@@ -1,0 +1,64 @@
+{
+  "name": "Gallows Tree",
+  "size": "Huge",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "huge",
+      "plant",
+      "cr14",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 16,
+  "hp": {
+    "average": 287,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 25,
+    "dex": 10,
+    "con": 22,
+    "int": 10,
+    "wis": 14,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 7,
+    "Stealth": 5
+  },
+  "languages": [
+    "Common",
+    "but cannot speak",
+    "telepathy 100 ft. with gallows tree zombies"
+  ],
+  "challenge": {
+    "cr": "14",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Create Gallows Tree Zombie",
+      "text": "When a creature dies within 15 feet of a\ngallows tree, The Gallow’s Tree uses a sharpened tendril to slice open the\ncreature’s abdomen, thereby spilling the corpse’s innards on the ground. The\norgans and fluids are then absorbed by the tree’s roots. Corpses of a size other\nthan Medium or Large are simply left to rot. Medium or Large corpses are filled\nwith a greenish pollen fired from one of the tree’s branches. The abdominal\nwound heals over the next 1d4 days, at which time the slain creature rises as a\ngallows tree zombie connected by a tether-vine to the gallows tree that created\nit. Gallows tree zombies possess none of their former abilities."
+    },
+    {
+      "name": "Gallows Tree Zombies",
+      "text": "Each gallows tree has several gallows tree\nzombies connected to it. A Huge gallows tree may have no more than\nseven gallows tree zombies connected to it at one time. See the gallows\ntree zombie entry for details on that monster."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The gallows tree makes three slam attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +12 to hit, reach 15 ft., one target. Hit: 28\n(6d6 + 7) bludgeoning damage and the target is grappled (escape DC 22)\nand restrained."
+    }
+  ],
+  "source": "creature"
+}

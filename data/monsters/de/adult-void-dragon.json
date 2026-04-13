@@ -1,0 +1,109 @@
+{
+  "name": "Erwachsener Leerdrache",
+  "size": "Riesig",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "huge",
+      "dragon",
+      "cr14",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 19,
+  "hp": {
+    "average": 229,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 24,
+    "dex": 10,
+    "con": 25,
+    "int": 16,
+    "wis": 13,
+    "cha": 21
+  },
+  "skills": {
+    "Arcana": 13,
+    "History": 13,
+    "Perception": 11,
+    "Persuasion": 10,
+    "Stealth": 5
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Void Speech"
+  ],
+  "challenge": {
+    "cr": "14",
+    "xp": 11500,
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Die Kälte der Leere",
+      "text": "Kälteschaden, den der Leeren-Drache verursacht, ignoriert die Kälteschadensresistenz, nicht jedoch die Kälteimmunität."
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache einen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Bewohner der Leere",
+      "text": "Als uralter Leere-Drache."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache kann seine „Aura des Wahnsinns“ einsetzen. Anschließend führt er drei Angriffe aus: einen mit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +12 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 18 (2d10 + 7) Durchdringungsschaden plus 7 (2d6) Kälteschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +12 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 14 (2d6 + 7) Schnittschaden plus 3 (1d6) Kälteschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +12 auf Treffer, Reichweite15 ft: , ein Ziel. Treffer: 16 (2d8 + 7) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Aura des Wahnsinns",
+      "type": "special",
+      "text": "Als uralter Leere-Drache, mit einem DC 18Rettungswurf auf Weisheit."
+    },
+    {
+      "name": "Atemwaffen (Aufladezeit 5-6)",
+      "type": "special",
+      "text": "Der Drache setzt eine der folgenden Atemwaffen ein:"
+    },
+    {
+      "name": "Gravitischer Atem",
+      "type": "special",
+      "text": "Der Drache haucht einen 60-Fuß-Würfel mit starker lokaler Schwerkraft aus, deren Ursprung der Drache selbst ist. Der Fallschaden in diesem Bereich erhöht sich auf1d10  pro10 feet  Fall. Wenn eine Kreatur ihren Zug innerhalb dieses Bereichs beginnt oder ihn zum ersten Mal in diesem Zug betritt – einschließlich des Zeitpunkts, an dem der Drache das Feld erzeugt –, muss sie einenDC 20  Geschicklichkeits-Rettungswurf durchführen. Bei einem Fehlschlag ist die Kreatur gefesselt. Bei Erfolg wird die Bewegungsgeschwindigkeit der Kreatur halbiert, solange sie sich im Feld befindet. Eine gefesselte Kreatur wiederholt den Rettungswurf am Ende ihres Zuges. Das Feld bleibt bestehen, bis sich der Atem des Drachen wieder aufgeladen hat, und er kann den Gravitationsatem nicht zweimal hintereinander einsetzen."
+    },
+    {
+      "name": "Sternenblitz-Atem",
+      "type": "special",
+      "text": "Der Drache speit Sternenfeuer in einem 18 Meter breiten Kegel. Jede Kreatur in diesem Bereich muss einenDC 20Geschicklichkeits-Rettungswurf durchführen; bei einem misslungenen Rettungswurf erleidet sie 31 (9d6) Feuerschaden und 31 (9d6) Strahlungsschaden, bei einem erfolgreichen Rettungswurf nur die Hälfte dieses Schadens."
+    },
+    {
+      "name": "Teleport",
+      "type": "special",
+      "text": "Der Drache teleportiert sich auf magische Weise an einen beliebigen freien Ort innerhalb von 30 m."
+    }
+  ],
+  "source": "creature"
+}

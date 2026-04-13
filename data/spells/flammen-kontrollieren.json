@@ -1,0 +1,18 @@
+{
+  "id": "flammen-kontrollieren",
+  "name": "Flammen kontrollieren",
+  "level": 0,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "18 m (1,5 m Würfel)",
+  "components": "G",
+  "duration": "Unmittelbar / 1h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Eine nichtmagische Flamme, die du in Reichweite sehen kannst und innerhalb eines 1,5 m Würfels ist, ist wie folgt beeinflussbar:\n\n* Ausdehnen um 1,5 m in Richtung von Brennstoff.\n\n * Die Flamme löschen.\n\n * Du verdoppelst oder halbierst den Lichtbereich der Flamme oder / und veränderst ihre Farbe für 1 h.\n\n * Einfache Formen erscheinen bis zu 1 h lang in den Flammen.\n\nDu kannst bis zu 3 der anhaltenden Effekte gleichzeitig aufrechterhalten. Sie sind als Aktion aufhebbar."
+}

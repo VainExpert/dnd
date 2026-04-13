@@ -1,0 +1,78 @@
+{
+  "name": "Uralter Titan",
+  "size": "Gigantisch",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "gargantuan",
+      "celestial",
+      "cr12",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral gut",
+  "ac": 15,
+  "hp": {
+    "average": 198,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 27,
+    "dex": 13,
+    "con": 22,
+    "int": 16,
+    "wis": 16,
+    "cha": 20
+  },
+  "skills": {
+    "Athletics": 14,
+    "Intimidation": 9,
+    "Perception": 7
+  },
+  "languages": [
+    "Common",
+    "Giant",
+    "Primordial",
+    "Titan",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "12",
+    "xp": 8400,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Magieresistenz",
+      "text": "Der uralte Titan hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die Zauberfertigkeit des uralten Titanen ist Charisma (ZauberrettungswurfDC 17). Der uralte Titan kann die folgenden Zauber von Natur aus wirken, ohne dass dafür materielle Komponenten erforderlich sind:\n\n3/Tag: Machtwort: Betäuben\n\n1/Tag: Machtwort: Töten"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der uralte Titan führt zwei Großschwertangriffe oder zwei Langbogenangriffe aus"
+    },
+    {
+      "name": "Großschwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +12 zum Treffen, Reichweite10 ft: , ein Ziel. Treffer: 38 (8d6 + 8) Schnittschaden."
+    },
+    {
+      "name": "Langbogen",
+      "type": "special",
+      "text": "Fernkampfangriff: +5 auf Treffer, Reichweite150/640  Fuß, ein Ziel. Treffer: 19 (4d8 + 1) Durchdringungsschaden."
+    },
+    {
+      "name": "Unheimliche Singularität (Aufladezeit 5-6)",
+      "type": "special",
+      "text": "Der uralte Titan öffnet einen kurzzeitigen Riss in der unheimlichen Quelle, die seine Machtworte nährt. Dieser Riss entsteht an einer vom Titanen bestimmten Stelle innerhalb von 30 m. Jede Kreatur, die sich innerhalb60 feetvon  dieser Stelle befindet, muss einenDC 17  Konstitutionsrettungswurf durchführen. Bei einem Fehlschlag erleidet die Kreatur 28 (8d6) Kraftschaden, fällt zu Boden und wird  x10 feet  in Richtung der 1d6unheimlichen Singularität gezogen, wobei sie pro10 feet  Entfernung, die sie zurückgelegt hat, zusätzlich 3 (1d6) Schlagschaden erleidet. Bei einem erfolgreichen Rettungswurf erleidet das Ziel nur die Hälfte des Kraftschadens und wird weder zu Boden geworfen noch gezogen. Die Stelle, an der der Riss entsteht, wird bis zum Ende des nächsten Zuges des uralten Titanen zum Zentrum eines antimagischen Feldes mit einem Radius von 60 Fuß. Die Zauber des Titanen werden von diesem antimagischen Feld nicht beeinträchtigt."
+    }
+  ],
+  "source": "creature"
+}

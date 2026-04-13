@@ -1,0 +1,17 @@
+{
+  "id": "verstricken",
+  "name": "Verstricken",
+  "level": 1,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "27 m (6 m Quadrat)",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Waldläufer"
+  ],
+  "text": "Unkraut und Ranken wachsen in einem 6 m Quadrat in Reichweite aus dem Boden.\nWährend der Wirkungsdauer ist dieser Bereich schwieriges Terrain.\nJede Kreatur, die in dem Bereich ist, wenn der Zauber gewirkt wird, muss einen STR-Rettungswurf bestehen, andernfalls werden sie von den Pflanzen umschlungen und festgesetzt.\nDiese Kreaturen können als Aktion einen STR-Rettungswurf machen.\nBei Erfolg befreien sie sich.\nWenn der Zauber endet, verwelken die beschworenen Pflanzen."
+}

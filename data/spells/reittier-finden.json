@@ -1,0 +1,16 @@
+{
+  "id": "reittier-finden",
+  "name": "Reittier finden",
+  "level": 2,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Paladin"
+  ],
+  "text": "Du beschwörst ein anderesweltliches Reittier in eine freie Fläche in Reichweite. Das Reittier nutzt den Statblock „Otherworldly Steed“ und ersetzt ein Reittier, das du bereits durch diesen Zauber hast.\nEs ähnelt einem großen Reittier (z.B. Pferd, Kamel, Schattenwolf, Elch). Beim Wirken bestimmst du seinen Typ (Himmelswesen, Feenwesen oder Unhold), was bestimmte Eigenschaften im Statblock beeinflusst.\nIm Kampf ist es dein Verbündeter, teilt deine Initiative und zählt beim Reiten als kontrolliertes Reittier; bist du handlungsunfähig, handelt es nach dir selbstständig, um dich zu schützen.\nEs verschwindet bei 0 TP oder wenn du stirbst und lässt alles Getragene zurück.\n\nAuf höheren Level gewirkt: Verwende Level im Statblock."
+}

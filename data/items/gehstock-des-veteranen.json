@@ -1,0 +1,44 @@
+{
+  "id": "gehstock-des-veteranen",
+  "type": "item",
+  "name": "Gehstock des Veteranen",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Mit einer Bonus Aktion kann dieser Gehtsock zu einem Schwert gemacht werden oder von einem Schwert zu einem Gehtsock. Dafür muss der Gehstock gehalten werden. Es kann ein beliebiges Schwert darin sein (bei Kauf festgelegt).",
+  "tags": [
+    "waffe",
+    "schwert",
+    "versteckt",
+    "bonus aktion"
+  ]
+}

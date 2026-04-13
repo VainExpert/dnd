@@ -1,0 +1,65 @@
+{
+  "name": "Oreioth",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "elemental-evil",
+      "human"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 11,
+  "hp": {
+    "average": 39,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 13,
+    "con": 14,
+    "int": 16,
+    "wis": 9,
+    "cha": 11
+  },
+  "skills": {
+    "Arcana": 5,
+    "Investigation": 5,
+    "Medicine": 1
+  },
+  "languages": [
+    "Abyssal",
+    "Common"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Grim Harvest",
+      "text": "Once per turn when Oreioth kills one or more creatures with a spell of 1st level or higher, he regains hit points equal to twice the spell's level."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "Oreioth is a 6th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). He has the following wizard spells prepared:\n\n* Cantrips (at will): <i>chill touch, minor illusion, prestidigitation, shocking grasp</i>\n\n* 1st level (4 slots): <i>false life, mage armor, magic missile, ray of sickness</i>\n\n* 2nd level (3 slots): <i>crown of madness, misty step</i>\n\n* 3rd level (3 slots): <i>animate dead, vampiric touch</i>"
+    },
+    {
+      "name": "Swift Animation (Recharges after a Long Rest)",
+      "text": "When a living Medium or Small humanoid within 30 feet of Oreioth dies, he can use an action on his next turn to cast animate dead on that humanoid's corpse, instead of using the spell's normal casting time."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

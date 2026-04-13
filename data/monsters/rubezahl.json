@@ -1,0 +1,84 @@
+{
+  "name": "Rubezahl",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr10",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 15,
+  "hp": {
+    "average": 110,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 15,
+    "con": 14,
+    "int": 11,
+    "wis": 12,
+    "cha": 18
+  },
+  "skills": {
+    "Deception": 8,
+    "Perception": 5,
+    "Survival": 5
+  },
+  "languages": [
+    "Abyssal",
+    "Common",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "10",
+    "xp": 5900,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Counting Compulsion",
+      "text": "If a creature uses an action to point out an ordered group of objects to the rubezahl, the demon is compelled to count the entire group. Until the end of its next turn, the rubezahl has disadvantage on attack rolls and ability checks and it can't take reactions. Once it has counted a given group of objects, it can't be compelled to count those objects ever again."
+    },
+    {
+      "name": "False Tongue",
+      "text": "The rubezahl has advantage on Charisma (Deception) checks, and magical attempts to discern lies always report that the rubezahl's words are true."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The rubezahl's innate spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\nAt will: disguise self (humanoid forms only), fog cloud\n\n3/day each: call lightning, gust of wind, lightning bolt\n\n1/day: control weather"
+    },
+    {
+      "name": "Sneak Attack (1/turn)",
+      "text": "The rubezahl does an extra 10 (3d6) damage if it hits a target with a weapon attack when it had advantage on the attack roll, or if the target is within 5 feet of an ally of the rubezahl that isn't incapacitated and the rubezahl doesn't have disadvantage on the attack roll."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The rubezahl makes one gore attack and two claw attacks."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 15 (3d6 + 5) slashing damage."
+    },
+    {
+      "name": "Gore",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) piercing damage and a target creature must succeed on a DC 15 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Thunderstrike (Recharge 5-6)",
+      "type": "special",
+      "text": "The rubezahl calls a sizzling bolt of lightning out of the sky, or from the air if underground or indoors, to strike a point the rubezahl can see within 150 feet. All creatures within 20 feet of the target point take 36 (8d8) lightning damage, or half damage with a successful DC 16 Dexterity saving throw. A creature that fails its saving throw is stunned until the start of the rubezahl's next turn."
+    }
+  ],
+  "source": "creature"
+}

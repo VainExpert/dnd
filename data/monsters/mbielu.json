@@ -1,0 +1,55 @@
+{
+  "name": "Mbielu",
+  "size": "Huge",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "huge",
+      "beast",
+      "cr3",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 15,
+  "hp": {
+    "average": 95,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 20
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 14,
+    "con": 16,
+    "int": 2,
+    "wis": 12,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 3
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Toxic Skin",
+      "text": "A creature that touches the mbielu or hits it with a melee attack exposes itself to the mbielu's poisonous skin. The creature must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, a creature also suffers disadvantage on Intelligence, Wisdom, and Charisma saving throws."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Tail",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 20 (3d10 + 4) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone."
+    }
+  ],
+  "source": "creature"
+}

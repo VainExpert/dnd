@@ -1,0 +1,56 @@
+{
+  "name": "Steel Predator",
+  "size": "Large",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr16",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 20,
+  "hp": {
+    "average": 207,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 24,
+    "dex": 17,
+    "con": 22,
+    "int": 4,
+    "wis": 14,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 7,
+    "Stealth": 8,
+    "Survival": 7
+  },
+  "languages": [
+    "understands Modron and the language of its owner but can't speak"
+  ],
+  "challenge": {
+    "cr": "16",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The steel predator's innate spellcasting ability is Wisdom. The steel predator can innately cast the following spells, requiring no components:\n\n* 3/day each: <i>dimension door </i>(self only)<i>, plane shift </i>(self only)"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The steel predator has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The steel predator's weapon attacks are magical."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

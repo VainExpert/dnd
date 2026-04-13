@@ -1,0 +1,81 @@
+{
+  "name": "Dragon Crab",
+  "size": "Gargantuan",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "gargantuan",
+      "monstrosity",
+      "cr16",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 18,
+  "hp": {
+    "average": 210,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 50
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 13,
+    "con": 25,
+    "int": 17,
+    "wis": 16,
+    "cha": 11
+  },
+  "skills": {
+    "Deception": 5,
+    "Nature": 8,
+    "Perception": 8,
+    "Stealth": 6,
+    "Survival": 8
+  },
+  "languages": [
+    "Common and any four others"
+  ],
+  "challenge": {
+    "cr": "16",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Legendary Resistance (3/day)",
+      "text": "If the dragon crab fails a saving throw,\nit can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The dragon crab has advantage on saving throws\nagainst spells and other magical effects."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The dragon crab is a 12th level spellcaster. Its casting\nability is Wisdom (spell save DC 16, +8 to hit with spell attacks). The\ndragon crab can cast the following spells:\n\n* Cantrips (at will): <i>druidcraft, guidance, poison spray, resistance</i>\n\n* 1st level (4 slots): <i>detect magic, entangle, speak with animals, thunderwave</i>\n\n* 2nd level (3 slots): <i>heat metal, hold person, spike growth</i>\n\n* 3rd level (3 slots): <i>cure wounds, dispel magic, protection from energy</i>\n\n* 4th level (3 slots): <i>blight, confusion, hallucinatory terrain</i>\n\n* 5th level (2 slots): <i>conjure elemental, contagion</i>\n\n* 6th level (1 slot): <i>wall of thorns</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The dragon crab makes six attacks: two with its pincers\nand four with its legs. It can use Crush instead of a pincer attack."
+    },
+    {
+      "name": "Pincer",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 15 ft., one target. Hit:\n16 (2d10 + 5) bludgeoning damage. If the target is a Large or smaller\ncreature, it is grappled (escape DC 15). The dragon crab has two pincers,\neach of which can grapple only one target."
+    },
+    {
+      "name": "Kick",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 12\n(2d6 + 5) piercing damage."
+    },
+    {
+      "name": "Crush",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target grappled\nby the dragon crab. Hit: 16 (2d10 + 5) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

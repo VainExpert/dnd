@@ -1,0 +1,78 @@
+{
+  "name": "Storm Raven",
+  "size": "Tiny",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "tiny",
+      "beast",
+      "cr2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 31,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 7,
+    "dex": 17,
+    "con": 12,
+    "int": 8,
+    "wis": 14,
+    "cha": 9
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Flyby",
+      "text": "The raven doesn't provoke an opportunity\nattack when it flies out of an enemy's reach."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The raven has advantage on\nsaving throws against spells and other magical\neffects."
+    },
+    {
+      "name": "Lightning Charged",
+      "text": "When the raven hits with a\nmelee attack, it deals an extra 2 (1d4) lightning\ndamage (included in the attack)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The raven makes two attacks: one with\nits beak and one with its talons. It then summons a\nlightning orb."
+    },
+    {
+      "name": "Beak",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5ft.,\none target. Hit: 5 (1d4 + 3) piercing damage plus 2\n(1d4) lightning damage."
+    },
+    {
+      "name": "Talons",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5ft.,\none target. Hit: 6 (1d6 + 3) piercing damage plus 2\n(1d4) lightning damage."
+    },
+    {
+      "name": "Summon Lightning Orb",
+      "type": "special",
+      "text": "The raven creates a 3 inch\ndiameter sphere of electricity in an unoccupied\nspace within 60 feet. This sphere persists for 1\nminute or until the raven is killed. A creature that\nends its turn in the same space as a lightning orb\ntakes 3 (1d6) lightning damage. On initiative count\n20, the orbs spark a 5-foot wide line of lighting\nbetween all other orbs within 20 feet. Creatures\ncaught within one of these streaks of lightning\nmust succeed on a DC 12 Dexterity saving throw or\ntake 10 (3d6) lightning damage."
+    }
+  ],
+  "source": "creature"
+}

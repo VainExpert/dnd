@@ -1,0 +1,77 @@
+{
+  "name": "Bullywug Brute",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 12,
+  "hp": {
+    "average": 30,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 40
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 16,
+    "int": 7,
+    "wis": 10,
+    "cha": 6
+  },
+  "skills": {
+    "Athletics": 5
+  },
+  "languages": [
+    "Bullywug"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The bullywug can breathe air and\nwater."
+    },
+    {
+      "name": "Speak with Frogs and Toads",
+      "text": "The bullywug can\ncommunicate simple concepts to frogs and toads\nwhen it speaks in Bullywug."
+    },
+    {
+      "name": "Swamp Camouflage",
+      "text": "The bullywug has advantage on\nDexterity (Stealth) checks made to hide in swampy\nterrain."
+    },
+    {
+      "name": "Standing Leap",
+      "text": "The bullywug's long jump is up to 20\nfeet and its high jump is up to 10 feet, with or\nwithout a running start."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The bullywug makes three attacks: one\nwith its tongue and two with its punch."
+    },
+    {
+      "name": "Tongue",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach\n15ft., one target. Hit: 4 (1d4 + 2) bludgeoning\ndamage and the target is grappled (escape DC 13)\nif it is a medium or smaller creature and the\nbullywug doesn’t have a creature grappled. The\ntarget must then succeed on a DC 13 Strength\nsaving throw or be pulled to a space within 5 feet\nof the bullywug."
+    },
+    {
+      "name": "Punch",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5ft.,\none target. Hit: 4 bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

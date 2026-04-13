@@ -1,0 +1,18 @@
+{
+  "id": "identifizieren",
+  "name": "Identifizieren",
+  "level": 1,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 min",
+  "range": "Berührung",
+  "components": "V, G, M (eine Perle im Wert von mind. 100 GM und eine Eulenfeder)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": true,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Magier"
+  ],
+  "text": "Du wählst einen Gegenstand, den du während der gesamten Wirkungsdauer berühren musst.\nFalls es ein magischer oder Magie durchdrungener Gegenstand ist, erkennst du Eigenschaften, Anwendungen, ob die Nutzung an Einstimmung gebunden ist und die Anzahl an Ladungen, falls vorhanden. Du erfährst ob und welche Zauber auf das Objekt wirken und ob es durch einen Zauber geschaffen wurde.\nWenn du eine Kreatur berührst, erfährst du von welchen Zaubern sie derzeit betroffen ist."
+}

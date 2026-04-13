@@ -1,0 +1,66 @@
+{
+  "name": "Aeorian Reverser",
+  "size": "Groß",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr8",
+      "explorers-guide-to-wildemount"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 15,
+  "hp": {
+    "average": 133,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 40
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 16,
+    "con": 18,
+    "int": 6,
+    "wis": 14,
+    "cha": 8
+  },
+  "skills": {
+    "Perception": 5,
+    "Stealth": 6,
+    "Survival": 5
+  },
+  "languages": [
+    "understands Draconic but can’t speak"
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Magieresistenz",
+      "text": "Der Umkehrer hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Reverser führt drei Angriffe aus: einen mit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf Treffer, Reichweite 5 ft0, eine Kreatur. Treffer: 11 (1d12 + 5) Durchdringungsschaden plus 6 (1d12) Kraftschaden."
+    },
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 8 (1d6 + 5) Schnittschaden plus 7 (2d6) Kraftschaden."
+    }
+  ],
+  "source": "creature"
+}

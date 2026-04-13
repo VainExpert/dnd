@@ -1,0 +1,65 @@
+{
+  "name": "Ice Elemental",
+  "size": "Large",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "large",
+      "elemental",
+      "cr5",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 15,
+  "hp": {
+    "average": 114,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 10,
+    "con": 18,
+    "int": 5,
+    "wis": 10,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "Aquan"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Frozen Form",
+      "text": "The ground within a 15ft. radius\nsphere centered on the elemental is considered\ndifficult terrain as it becomes lightly frozen.\nWhenever a creature enters or moves within this\narea for the first time on a turn, they must succeed\non a DC 14 Dexterity saving throw or fall prone."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The elemental makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5ft.,\none target. Hit: 12 (2d8 + 3) bludgeoning damage."
+    },
+    {
+      "name": "Ice Shard",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +6 to hit, range\n30/120 ft., one target. Hit: 12 (2d8 + 3) piercing\ndamage and 9 (2d8) cold damage."
+    },
+    {
+      "name": "Frost Explosion (Recharge 4-6)",
+      "type": "special",
+      "text": "The elemental sends\nout a flurry of frozen shards and snow. Each\ncreature within the area of the elemental’s Frozen\nForm feature must make a DC 14 Constitution\nsaving throw. On a failure, a target takes 22 (5d8)\ncold damage and its movement speed is reduced to\n0 until the end of its next turn. If the saving throw\nis a success, the target takes no damage and has its\nspeed halved until the end of its next turn."
+    }
+  ],
+  "source": "creature"
+}

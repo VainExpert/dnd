@@ -1,0 +1,65 @@
+{
+  "name": "Giant Feymoth",
+  "size": "Large",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "large",
+      "fey",
+      "cr6",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 16,
+  "hp": {
+    "average": 112,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 14,
+    "con": 16,
+    "int": 12,
+    "wis": 16,
+    "cha": 8
+  },
+  "skills": {
+    "Nature": 4,
+    "Perception": 6,
+    "Survival": 6
+  },
+  "languages": [
+    "Sylvan",
+    "Celestial"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The feymoth has advantage on\nsaving throws against spells and other magical\neffects."
+    },
+    {
+      "name": "Enchanting Pattern",
+      "text": "When a creature starts its turn\nwithin 30 feet of the feymoth and is able to see the\nfeymoth’s wings, the feymoth can magically force it\nto make a DC 14 Charisma saving throw, unless the\nfeymoth is incapacitated.\n\nOn a failed saving throw, the creature makes all\nattacks rolls this turn with disadvantage as they are\ndazzled and confused by the vibrant display of the\nfeymoth’s wings.\n\nUnless surprised, a creature can avert its eyes to\navoid the saving throw at the start of its turn. If the\ncreature does so, it can’t see the feymoth until the\nstart of its next turn, when it can avert its eyes\nagain. If the creature looks at the feymoth in the\nmeantime, it must immediately make the save."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The feymoth’s innate\nspellcasting ability is Wisdom (spell save DC 14).\nThe feymoth can innately cast the following spells,\nrequiring no material components:\n\n* At will: <i>dancing lights, druidcraft</i>\n\n* 3/day each: <i>confusion, gust of wind, plant growth, sleep</i>\n\n* 1/day each: <i>awaken, conjure woodland beings, hypnotic pattern, insect plague, mass cure wounds</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5ft.,\none target. Hit: 6 (1d8 + 2) piercing damage, and\nthe target must make a DC 14 Intelligence saving\nthrow or take 27 (5d10) psychic damage on a\nfailed save, or half as much on a successful one."
+    }
+  ],
+  "source": "creature"
+}

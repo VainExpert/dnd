@@ -1,0 +1,85 @@
+{
+  "name": "Platinum Mouse Dragon",
+  "size": "Tiny",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "tiny",
+      "dragon",
+      "cr5",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic good",
+  "ac": 15,
+  "hp": {
+    "average": 44,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 10
+  },
+  "abilities": {
+    "str": 7,
+    "dex": 16,
+    "con": 16,
+    "int": 12,
+    "wis": 15,
+    "cha": 15
+  },
+  "skills": {
+    "Arcana": 4,
+    "Nature": 4,
+    "Perception": 8,
+    "Stealth": 9
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The platinum mouse dragon’s innate spellcasting\nability is Charisma (spell save DC 13, +5 to hit with spell attacks). It can\ncast the following spells, requiring no material components.\n\n* At will: <i>mage hand, minor illusion, silent image</i>\n\n* 1/day each: <i>enlarge/reduce, invisibility, major image, see invisibility</i>"
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The mouse dragon has advantage on an attack roll against\na creature if at least one of the dragon’s allies is within 5 feet of the creature\nand the ally isn’t incapacitated."
+    },
+    {
+      "name": "Treasure Sense",
+      "text": "The mouse dragon can pinpoint, by scent, the location\nof precious metals and stones, such as coins and gems, within 60 feet of it."
+    },
+    {
+      "name": "Underfoot",
+      "text": "The mouse dragon can attempt to hide even when it is\nobscured only by a creature that is at least one size larger than it."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The platinum mouse dragon makes one bite attack and\ntwo claw attacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7\n(1d8 + 3) slashing damage."
+    },
+    {
+      "name": "Radiant Breath (Recharge 5–6)",
+      "type": "special",
+      "text": "The dragon exhales radiant light in a\n20-foot line that is 1 foot wide. Each creature in that line must make a DC\n13 Dexterity saving throw, taking 38 (7d10) radiant damage on a failed\nsaving throw, or half as much damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

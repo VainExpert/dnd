@@ -1,0 +1,680 @@
+{
+  "character": {
+    "identity": {
+      "name": "Abraxas",
+      "player_name": "Justin",
+      "class": {
+        "name": "Zauberer",
+        "level": 3,
+        "subclass": "Drakonische Zauberei"
+      },
+      "race": "Tiefling",
+      "background": "Weiser",
+      "alignment": "chaotisch-neutral",
+      "deity": "agnostisch",
+      "gender": "männlich",
+      "age": 37,
+      "size": "Mittel",
+      "height": 1.9,
+      "weight": 90,
+      "appearance": {
+        "img": "../../assets/icons/pcs/Abraxas-Avatar.png",
+        "skin": "lila",
+        "eyes": "gelb",
+        "hair": "weiß"
+      },
+      "organizations": [
+        "Magier Universität in Deltarion",
+        "Abentertruppe mit Astyax und Ludwig"
+      ]
+    },
+    "ability_scores": {
+      "STR": {
+        "score": 8,
+        "mod": -1,
+        "save": -1
+      },
+      "DEX": {
+        "score": 10,
+        "mod": 0,
+        "save": 0
+      },
+      "CON": {
+        "score": 12,
+        "mod": 1,
+        "save": 3
+      },
+      "INT": {
+        "score": 15,
+        "mod": 2,
+        "save": 2
+      },
+      "WIS": {
+        "score": 13,
+        "mod": 1,
+        "save": 1
+      },
+      "CHA": {
+        "score": 17,
+        "mod": 3,
+        "save": 5
+      }
+    },
+    "proficiency_bonus": 2,
+    "inspiration": false,
+    "skills": {
+      "Akrobatik": 0,
+      "Arkane Kunde": 4,
+      "Athletik": -1,
+      "Auftreten": 3,
+      "Einschüchtern": 3,
+      "Fingerfertigkeit": 0,
+      "Geschichte": 4,
+      "Heimlichkeit": 0,
+      "Medizin": 1,
+      "Mit Tieren umgehen": 1,
+      "Motiv erkennen": 1,
+      "Nachforschung": 2,
+      "Naturkunde": 2,
+      "Religion": 4,
+      "Täuschen": 3,
+      "Überlebenskunst": 1,
+      "Überzeugen": 5,
+      "Wahrnehmung": 1
+    },
+    "passive_scores": {
+      "passive_wahrnehmung": 11,
+      "passiver_einblick": 11,
+      "passive_nachforschung": 12
+    },
+    "combat": {
+      "armor_class": 13,
+      "initiative": 0,
+      "speeds": {
+        "walk": 9
+      },
+      "hp": {
+        "max": 19,
+        "hit_dice": "3d6"
+      },
+      "defenses": {
+        "resistances": [
+          "Feuer"
+        ]
+      },
+      "senses": {
+        "darkvision": 18,
+        "darkvision_note": "Graustufen"
+      },
+      "attacks_and_cantrips": [
+        {
+          "name": "Dolch (2x)",
+          "attack_bonus": 2,
+          "damage": "1d4 Stich",
+          "properties": [
+            "Einfach",
+            "Finesse",
+            "Leicht",
+            "Geworfen",
+            "Reichweite 6 m / 18 m"
+          ],
+          "item_ref": {
+            "id": "dolch",
+            "name": "Dolch"
+          }
+        },
+        {
+          "name": "Unbewaffneter Schlag",
+          "attack_bonus": 1,
+          "damage": "0 Wucht"
+        },
+        {
+          "name": "Flammenzungenspeer*",
+          "attack_bonus": 1,
+          "damage": "1d6-1 Stich",
+          "properties": [
+            "Einfach",
+            "Vielseitig",
+            "Leicht",
+            "Geworfen",
+            "Reichweite 6 m / 18 m",
+            "Lang (Reichweite +1,5 m im Nahkampf)"
+          ],
+          "notes": [
+            "*-Effekt: siehe Merkmale/Talente (Flammenzungenspeer)"
+          ]
+        },
+        {
+          "name": "Kurzschwert",
+          "attack_bonus": 2,
+          "damage": "1d6 Stich",
+          "properties": [
+            "Kriegswaffe",
+            "Leicht",
+            "Finesse"
+          ],
+          "item_ref": {
+            "id": "kurzschwert",
+            "name": "Kurzschwert"
+          }
+        },
+        {
+          "name": "Schockgriff",
+          "attack_bonus": 5,
+          "damage": "1d8 Blitz",
+          "properties": [
+            "Berührung"
+          ],
+          "notes": [
+            "Zauberangriff (CHA), V/G, weitere Effekte"
+          ],
+          "spell_ref": {
+            "id": "schockgriff",
+            "name": "Schockgriff"
+          }
+        },
+        {
+          "name": "Zauberhafte Explosion",
+          "attack_bonus": 5,
+          "damage": "1d8 (wählbarer Schadenstyp)",
+          "properties": [
+            "Reichweite 36 m"
+          ],
+          "notes": [
+            "Zauberangriff (CHA), V/G, weitere Effekte"
+          ],
+          "spell_ref": {
+            "id": "zauberhafte-explosion",
+            "name": "Zauberhafte Explosion"
+          }
+        }
+      ],
+      "actions": {
+        "standard": [
+          "Angriff",
+          "Ausweichen",
+          "Beeinflussen",
+          "Interagieren",
+          "Flucht",
+          "Helfen",
+          "Magie",
+          "Packen",
+          "Sprint",
+          "Stoßen",
+          "Studieren",
+          "Verstecken",
+          "Verwenden",
+          "Vorbereiten",
+          "2-Waffen Kampf"
+        ],
+        "bonus_actions": [
+          "Quelle der Magie (3 ZP) - Zauberplatz erschaffen (siehe Merkmale)",
+          "Angeborenes Zauberwirken (siehe Merkmale)"
+        ],
+        "reactions": [
+          "Gelegenheitsangriff"
+        ],
+        "special": [
+          "Quelle der Magie (3 ZP) - Metamagie (Mächtiger Zauber, Suchender Zauber)"
+        ]
+      }
+    },
+    "proficiencies": {
+      "armor": [],
+      "weapons": [
+        "Einfache Waffen"
+      ],
+      "tools": [],
+      "languages": [
+        "Gemeinsprache",
+        "Drakonisch",
+        "Infernalisch",
+        "Orkisch"
+      ]
+    },
+    "spellcasting": {
+      "spellcasting_class": "Zauberer",
+      "spellcasting_ability": "CHA",
+      "spellcasting_ability_mod": 3,
+      "spell_save_dc": 13,
+      "spell_attack_bonus": 5,
+      "spell_slots": {
+        "level_1": {
+          "max": 4
+        },
+        "level_2": {
+          "max": 2
+        }
+      },
+      "cantrips": [
+        {
+          "id": "botschaft",
+          "name": "Botschaft"
+        },
+        {
+          "id": "schockgriff",
+          "name": "Schockgriff"
+        },
+        {
+          "id": "taschenspielerei",
+          "name": "Taschenspielerei"
+        },
+        {
+          "id": "thaumaturgie",
+          "name": "Thaumaturgie"
+        },
+        {
+          "id": "zauberhafte-explosion",
+          "name": "Zauberhafte Explosion"
+        }
+      ],
+      "level_1_spells_listed": [
+        {
+          "id": "befehl",
+          "name": "Befehl"
+        },
+        {
+          "id": "brennende-haende",
+          "name": "Brennende Hände"
+        },
+        {
+          "id": "chromatische-kugel",
+          "name": "Chromatische Kugel"
+        },
+        {
+          "id": "magie-entdecken",
+          "name": "Magie entdecken"
+        },
+        {
+          "id": "magisches-geschoss",
+          "name": "Magisches Geschoss"
+        },
+        {
+          "id": "schlaf",
+          "name": "Schlaf"
+        }
+      ],
+      "level_2_spells_listed": [
+        {
+          "id": "aganazzars-versenger",
+          "name": "Aganazzars Versenger"
+        },
+        {
+          "id": "drachenodem",
+          "name": "Drachenodem"
+        },
+        {
+          "id": "gestalt-veraendern",
+          "name": "Gestalt verändern"
+        },
+        {
+          "id": "hoellischer-tadel",
+          "name": "Höllischer Tadel"
+        },
+        {
+          "id": "spiegelbilder",
+          "name": "Spiegelbilder"
+        }
+      ],
+      "always_prepared": [
+        {
+          "source": "Drakonische Zauberei: Drakonische Zauber",
+          "spells": [
+            {
+              "id": "befehl",
+              "name": "Befehl"
+            },
+            {
+              "id": "chromatische-kugel",
+              "name": "Chromatische Kugel"
+            },
+            {
+              "id": "drachenodem",
+              "name": "Drachenodem"
+            },
+            {
+              "id": "gestalt-veraendern",
+              "name": "Gestalt verändern"
+            }
+          ]
+        }
+      ],
+      "special_sources": [
+        {
+          "source": "Tiefling: Infernalisches Erbe",
+          "spells": [
+            {
+              "name": "Thaumaturgie",
+              "type": "Zaubertrick",
+              "slotless": true,
+              "id": "thaumaturgie"
+            },
+            {
+              "name": "Höllischer Tadel",
+              "uses": "1",
+              "recovery": {
+                "long_rest": true
+              },
+              "slotless": true,
+              "spell_level_when_cast": 2,
+              "id": "hoellischer-tadel"
+            }
+          ]
+        }
+      ]
+    },
+    "features": {
+      "class": [
+        {
+          "name": "Zauberwirken",
+          "description": "Du bekommst alle Zauberplätze nach einer Langen Rast zurück. Bei jedem Levelaufstieg kannst du deine Zauber austauschen, außer deine immer vorbereiteten Zauber."
+        },
+        {
+          "name": "Angeborenes Zauberwirken",
+          "activation": "Bonusaktion",
+          "duration": "1 Minute",
+          "uses": "2",
+          "recovery": {
+            "long_rest": true
+          },
+          "effects": [
+            "Zauberrettung-SG +1",
+            "Vorteil auf alle Zauberangriffswürfe"
+          ]
+        },
+        {
+          "name": "Quelle der Magie",
+          "resource": {
+            "name": "Zaubereipunkte (ZP)",
+            "max": 3,
+            "recovery": {
+              "long_rest": true
+            }
+          },
+          "options": [
+            {
+              "name": "Zauberplatz zu ZP konvertieren",
+              "effect": "Du kannst einen Zauberplatz verwenden, um ZP in Höhe des Zauberplatz-Levels zu erhalten."
+            },
+            {
+              "name": "Zauberplatz erschaffen",
+              "activation": "Bonusaktion",
+              "effect": "Erschaffe bis zur nächsten Langen Rast einen Zauberplatz (Level 1 oder 2) durch Ausgeben von ZP.",
+              "costs": [
+                "2 ZP -> Zauberplatz Level 1",
+                "3 ZP -> Zauberplatz Level 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Metamagie",
+          "description": "Du kannst deine Zauber anpassen. Normalerweise nur eine Option pro Zauber (außer anders angegeben). Optionen können bei Levelaufstieg getauscht werden.",
+          "options_known": [
+            {
+              "name": "Mächtiger Zauber",
+              "cost": "1 ZP",
+              "effect": "Wenn du Schaden für einen Zauber würfelst, kannst du bis zu 3 Schadenswürfel erneut würfeln; du musst die neuen Würfe nehmen.",
+              "notes": [
+                "Kann auch verwendet werden, wenn bereits eine andere Option auf den Zauber angewendet wurde."
+              ]
+            },
+            {
+              "name": "Suchender Zauber",
+              "cost": "1 ZP",
+              "effect": "Wenn du einen Zauber-Angriffswurf machst und verfehlst, kannst du den W20 erneut werfen; du musst den neuen Wurf nehmen.",
+              "notes": [
+                "Kann auch verwendet werden, wenn bereits eine andere Option auf den Zauber angewendet wurde."
+              ]
+            }
+          ]
+        }
+      ],
+      "subclass": [
+        {
+          "name": "Drakonische Zauber",
+          "always_prepared_spells": [
+            {
+              "id": "befehl",
+              "name": "Befehl"
+            },
+            {
+              "id": "chromatische-kugel",
+              "name": "Chromatische Kugel"
+            },
+            {
+              "id": "drachenodem",
+              "name": "Drachenodem"
+            },
+            {
+              "id": "gestalt-veraendern",
+              "name": "Gestalt verändern"
+            }
+          ]
+        },
+        {
+          "name": "Drakonische Widerstandskraft",
+          "description": "Wenn du keine Rüstung trägst, ist deine RK = 10 + dein DEX-Modifikator + dein CHA-Modifikator.",
+          "always_prepared_spells": []
+        }
+      ],
+      "racial": [
+        {
+          "name": "Dunkelsicht",
+          "description": "18 m (Graustufen)"
+        },
+        {
+          "name": "Höllische Resistenz",
+          "effects": [
+            "Resistenz gegen Feuerschaden"
+          ]
+        },
+        {
+          "name": "Infernalisches Erbe",
+          "effects": [
+            "Du kennst den Zaubertrick „Thaumaturgie“.",
+            "Du kannst den Zauber „Höllischer Tadel“ (Level 2) 1/Lange Rast wirken."
+          ]
+        }
+      ],
+      "background": [
+        {
+          "name": "Spezialisierungen",
+          "description": "In deinen Studien hast du dich als Forscher und Professor etabliert."
+        },
+        {
+          "name": "Forscher",
+          "description": "Du weißt, wo Informationen zu beschaffen sind, die du nicht direkt kennst (Bibliothek, Universität, anderer Weiser / Person / Kreatur, …). Die Beschaffung kann aber auch nahezu unmöglich sein (DM-Entscheidung)."
+        }
+      ],
+      "talents_and_magic_items_text": [
+        {
+          "name": "Flammenzungenspeer",
+          "type": "Magischer Gegenstand",
+          "activation": "Bonusaktion",
+          "effects": [
+            "Befehlswort sprechen, um die Klinge in Flammen zu hüllen.",
+            "Während die Flammen bestehen: +2d6 Feuerschaden zusätzlich.",
+            "Licht: 12 m helles Licht, weitere 12 m gedimmtes Licht.",
+            "Löschen als Bonusaktion (Befehlswort) oder durch Wegstecken/Fallenlassen."
+          ]
+        }
+      ]
+    },
+    "equipment": {
+      "currency": {
+        "cp": 0,
+        "sp": 0,
+        "gp": 22,
+        "pp": 0
+      },
+      "weights": {
+        "carried": 26,
+        "encumbered_at": 55,
+        "push_drag_lift": 110
+      },
+      "items": [
+        {
+          "name": "Kurzschwert",
+          "quantity": 1,
+          "weight": 1.5,
+          "item_ref": {
+            "id": "kurzschwert",
+            "name": "Kurzschwert"
+          }
+        },
+        {
+          "name": "Dolch",
+          "quantity": 2,
+          "weight": 1,
+          "item_ref": {
+            "id": "dolch",
+            "name": "Dolch"
+          }
+        },
+        {
+          "name": "Gewöhnliche Kleidung",
+          "quantity": 1,
+          "weight": 1.5,
+          "item_ref": {
+            "id": "kleidung",
+            "name": "Gewöhnliche Kleidung"
+          }
+        },
+        {
+          "name": "Robe",
+          "quantity": 1,
+          "weight": 1.5,
+          "item_ref": {
+            "id": "robe",
+            "name": "Robe"
+          }
+        },
+        {
+          "name": "Roter magischer Orb (Arkaner Fokus)",
+          "quantity": 1,
+          "weight": 0.5
+        },
+        {
+          "name": "Rucksack",
+          "quantity": 1,
+          "weight": 2.5,
+          "contents_listed": [
+            {
+              "name": "Öl",
+              "quantity": 2,
+              "weight": 1,
+              "item_ref": {
+                "id": "oel",
+                "name": "Öl"
+              }
+            },
+            {
+              "name": "Hanf-Seil, 15 m",
+              "quantity": 1,
+              "weight": 2.5
+            },
+            {
+              "name": "Zunderkästchen",
+              "quantity": 1,
+              "weight": 0.5,
+              "item_ref": {
+                "id": "zunderkaestchen",
+                "name": "Zunderkästchen"
+              }
+            },
+            {
+              "name": "Fackel",
+              "quantity": 10,
+              "weight": 5,
+              "item_ref": {
+                "id": "fackel",
+                "name": "Fackel"
+              }
+            },
+            {
+              "name": "Wurfeisenstachel",
+              "quantity": 20,
+              "weight": 1
+            },
+            {
+              "name": "Brecheisen",
+              "quantity": 1,
+              "weight": 2.5
+            },
+            {
+              "name": "Tinte (30 ml)",
+              "quantity": 1,
+              "weight": null,
+              "item_ref": {
+                "id": "tinte",
+                "name": "Tinte (30 ml)"
+              }
+            },
+            {
+              "name": "Schreibfeder",
+              "quantity": 1,
+              "weight": null
+            },
+            {
+              "name": "Pergament-Papier",
+              "quantity": 10,
+              "weight": null
+            },
+            {
+              "name": "Brief, eines Kollegen, mit ungelöster Frage",
+              "quantity": 1,
+              "weight": null
+            },
+            {
+              "name": "Kleines Messer",
+              "quantity": 1,
+              "weight": null
+            }
+          ],
+          "item_ref": {
+            "id": "rucksack",
+            "name": "Rucksack"
+          }
+        },
+        {
+          "name": "Schlafsack",
+          "quantity": 1,
+          "weight": 3.5,
+          "item_ref": {
+            "id": "schlafsack",
+            "name": "Schlafsack"
+          }
+        }
+      ],
+      "attuned_magic_items_listed": [
+        {
+          "name": "Flammenzungenspeer",
+          "quantity": 1,
+          "weight": 1.5
+        }
+      ]
+    },
+    "personality": {
+      "traits": [
+        "Du … redest … sehr langsam … wenn du es … mit Idioten zu tun hast, … was ... eigentlich … fast … jeder ... außer dir … ist."
+      ],
+      "ideals": [
+        "Macht und Besserung ist nur durch Wissen zu erlangen."
+      ],
+      "motivation": [
+        "Irgendwann zeigst du allen, was du kannst und weißt."
+      ],
+      "flaws": [
+        "Auf der Suche nach komplizierten Lösungen übersiehst du oft einfachere."
+      ]
+    },
+    "backstory": {
+      "summary": "Du bist ein Student an der magischen Universität in Deltarion. Du schreibst derzeit an deiner Doktorarbeit über die Verbindung von Magie und Drachen. Von deinem betreuenden Professor Caidan wirst du auch manchmal für andere Anufgaben eingesetzt.",
+      "allies": [
+        "Ludwig Mooshart und Astyax von Ethaka hast auf einem der Aufträge von deinem Professor kennengelernt. Sie sind beide Abenteurer, die dir dabei halfen Inforamtionen über einen verschwundeenn Professor herauszufinden, auf dessen Anwesen mysteriöse Dinge vor sich gingen."
+      ]
+    }
+  },
+  "id": "abraxas-pre"
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Goblin Brute",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr2",
+      "nerzugals-extended-bestiary",
+      "goblinoid"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 11,
+  "hp": {
+    "average": 55,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 14,
+    "int": 10,
+    "wis": 8,
+    "cha": 8
+  },
+  "skills": {
+    "Athletics": 5
+  },
+  "languages": [
+    "Common",
+    "Goblin"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Slamming Charge",
+      "text": "If the goblin moves at least 15\nfeet straight toward a creature and then hits it with\na battleaxe attack on the same turn, that target\nmust succeed on a DC 13 Strength saving throw or\nbe knocked prone."
+    },
+    {
+      "name": "Relentless Bloodlust",
+      "text": "As long as the goblin has 20\nhit points or fewer, it makes its first attack on each\nturn with advantage and has resistance to\nbludgeoning, piercing, and slashing damage from\nnonmagical weapons."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The goblin makes two attacks with its\nbattleaxe."
+    },
+    {
+      "name": "Battleaxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5\nft., one target. Hit: 7 (1d8 + 3) slashing damage, or\n8 (1d10 +3) slashing damage if used with two\nhands."
+    },
+    {
+      "name": "Handaxe",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +5 to\nhit, range 20/60 ft., one target. Hit: 7 (1d6 + 3)\nslashing damage."
+    }
+  ],
+  "source": "creature"
+}

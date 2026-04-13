@@ -1,0 +1,24 @@
+{
+  "id": "magie-entdecken",
+  "name": "Magie entdecken",
+  "level": 1,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (9 m Sphäre)",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 3 min",
+  "concentration": true,
+  "ritual": true,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Kleriker",
+    "Zauberer",
+    "Magier",
+    "Druide",
+    "Waldläufer",
+    "Hexenmeister",
+    "Paladin"
+  ],
+  "text": "Während der Wirkungsdauer nimmst du Magie im Abstand von bis zu 9 m von dir wahr.\nMagie erscheint als Aura um magische Kreaturen oder Objekte und du erkennst deren magische Schule, falls vorhanden.\nDer Zauber durchdringt Barrieren bis zu 30 cm Stein, 2,5 cm Metall, dünnes Blei oder 1 m Holz."
+}

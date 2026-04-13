@@ -1,0 +1,74 @@
+{
+  "name": "Baron Malgas",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr5",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 20,
+  "hp": {
+    "average": 71,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 13,
+    "con": 14,
+    "int": 10,
+    "wis": 14,
+    "cha": 10
+  },
+  "skills": {
+    "Athletics": 6,
+    "Deception": 3,
+    "Perception": 5
+  },
+  "languages": [
+    "Deep Speech",
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Ständig im Wandel",
+      "text": "Die „Court of All Flesh“ sind\nWesen des reinen Chaos. Da ihr Geist aus purer\nUnordnung besteht, können sie weder in den Wahnsinn getrieben noch verzaubert werden,\nund jeder Versuch, ihr Verhalten magisch zu beeinflussen, schlägt fehl."
+    },
+    {
+      "name": "Formlose Gestalt",
+      "text": "Baron Malgas ist immun gegen jeden\nZauber oder jeden Effekt, der seine Gestalt verändern würde."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Baron Malgas führt drei Angriffe\nmit seinem Flegel aus. Er kann anstelle eines\nFlegelangriffs „Fleisch schmelzen“ einsetzen."
+    },
+    {
+      "name": "Schlegel",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 zum Treffer, Reichweite 5 ft0,\nein Ziel. Treffer: 7 (1d8 + 3) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Speer",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfangriff: +6 auf den Trefferwurf,\nReichweite5 ft:  Fuß, 30/120ein Ziel. Treffer: 12\n(2d8 + 3) Durchdringungsschaden."
+    },
+    {
+      "name": "Schmelzendes Fleisch",
+      "type": "special",
+      "text": "Baron Malgas wählt ein Ziel, das er\ninnerhalb 30 feetvon sehen kann. Das Ziel muss einen\nDC 13Weisheits-Rettungswurf bestehen oder mit ansehen, wie seine dominante Hand zu einem flüssigen, fleischigen Klumpen zerfließt. Es lässt\njede Waffe fallen, die es trug, kann keine\nWaffe in dieser Hand halten und keine Zauber wirken, die\nsomatische Komponenten erfordern. Am Ende jedes\nseiner Züge wiederholt das Ziel diesen Rettungswurf,\nwodurch der Effekt bei Erfolg beendet wird. Das Wirken von\n„Heilen“ auf die betroffene Hand beendet den Effekt ebenfalls.\nWenn das Ziel einen Rettungswurf besteht, ist die Kreatur für die nächsten 24 Stunden immun gegen Baron Malgas’ „Fleisch schmelzen“\n."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,74 @@
+{
+  "name": "Drow Mage",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr7",
+      "monster-manual",
+      "elf"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 12,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 9,
+    "dex": 14,
+    "con": 10,
+    "int": 17,
+    "wis": 13,
+    "cha": 12
+  },
+  "skills": {
+    "Arcana": 6,
+    "Deception": 5,
+    "Perception": 4,
+    "Stealth": 5
+  },
+  "languages": [
+    "Elvish",
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Fey Ancestry",
+      "text": "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The drow's spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring no material components:\n\n* At will: <i>dancing lights</i>\n\n* 1/day each: <i>darkness, faerie fire, levitate </i>(self only)"
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The drow is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The drow has the following wizard spells prepared:\n\n* Cantrips (at will): <i>mage hand, minor illusion, poison spray, ray of frost</i>\n\n* 1st level (4 slots): <i>mage armor, magic missile, shield, witch bolt</i>\n\n* 2nd level (3 slots): <i>alter self, misty step, web</i>\n\n* 3rd level (3 slots): <i>fly, lightning bolt</i>\n\n* 4th level (3 slots): <i>Evard's black tentacles, greater invisibility</i>\n\n* 5th level (2 slots): <i>cloudkill</i>"
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Staff",
+      "type": "special",
+      "text": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6-1) bludgeoning damage, or 3 (1d8-1) bludgeoning damage if used with two hands, plus 3 (1d6) poison damage."
+    },
+    {
+      "name": "Summon Demon (1/Day)",
+      "type": "special",
+      "text": "The drow magically summons a quasit, or attempts to summon a shadow demon with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action."
+    }
+  ],
+  "source": "creature"
+}

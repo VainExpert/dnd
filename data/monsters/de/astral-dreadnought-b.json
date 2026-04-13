@@ -1,0 +1,69 @@
+{
+  "name": "Astral-Dreadnought (B)",
+  "size": "Gigantisch",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "gargantuan",
+      "monstrosity",
+      "cr21",
+      "mordenkainens-tome-of-foes",
+      "titan"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 20,
+  "hp": {
+    "average": 297,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 28,
+    "dex": 7,
+    "con": 25,
+    "int": 5,
+    "wis": 14,
+    "cha": 18
+  },
+  "skills": {
+    "Perception": 9
+  },
+  "languages": [
+    "-"
+  ],
+  "challenge": {
+    "cr": "21",
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Anti-Magie-Kegel",
+      "text": "Das geöffnete Auge des Astral-Dreadnoughts erzeugt einen Bereich mit Antimagie, ähnlich wie der Zauber „Antimagiefeld“, in Form150footeines Kegels. Zu Beginn jedes seiner Züge entscheidet der Dreadnought, in welche Richtung der Kegel zeigt. Der Kegel wirkt nicht, solange das Auge des Dreadnoughts geschlossen ist oder der Dreadnought geblendet ist."
+    },
+    {
+      "name": "Astralwesen",
+      "text": "Der Astral-Dreadnought kann die Astralebene nicht verlassen und auch nicht verbannt oder auf andere Weise aus der Astralebene entfernt werden."
+    },
+    {
+      "name": "Dungeon auf der Halbebene",
+      "text": "Jedes Wesen oder Objekt, das der Astral-Dreadnought verschlingt, wird auf eine Halbebene transportiert, die nur durch einen Wunschzauber oder die Fähigkeit „Donjon-Besuch“ dieses Wesens betreten werden kann. Ein Wesen kann die Halbebene nur verlassen, indem es Magie einsetzt, die Ebenenreisen ermöglicht, wie beispielsweise den Zauber „Ebenenwechsel“. Die Halbebene gleicht einer Steinhöhle mit000 feet einem Durchmesser von etwa 1 und einer Deckenhöhe100 feetvon . Wie ein Magen enthält sie die Überreste der vergangenen Mahlzeiten des Dreadnoughts.\nInnerhalb der Halbebene kann dem Dreadnought kein Schaden zugefügt werden. Stirbt der Dreadnought, verschwindet die Halbebene, und alles, was sich darin befand, erscheint um die Leiche herum. Ansonsten ist die Halbebene unzerstörbar."
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Astral-Dreadnought einen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Waffenangriffe eines Astral-Dreadnoughts sind magischer Natur."
+    },
+    {
+      "name": "Silberne Schnur durchtrennen",
+      "text": "Wenn der Astral-Dreadnought einen kritischen Treffer gegen eine Kreatur erzielt, die sich mittels des Zaubers „Astralprojektion“ durch die Astralebene bewegt, kann der Dreadnought die silberne Schnur des Ziels durchtrennen, anstatt Schaden zu verursachen."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

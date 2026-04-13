@@ -1,0 +1,44 @@
+{
+  "id": "giftmischerausruestung",
+  "type": "item",
+  "name": "Giftmischerausrüstung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 1,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Werkzeug-Set zum Herstellen/Identifizieren von Giften. Nutzen: Aknn ein vergiftetes Objekt erkennen (SG 10). Fertigen: Einfaches Gift",
+  "tags": [
+    "abenteuer",
+    "werkzeug",
+    "nützlich",
+    "gift"
+  ]
+}

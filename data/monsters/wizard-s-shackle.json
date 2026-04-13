@@ -1,0 +1,55 @@
+{
+  "name": "Wizard's Shackle",
+  "size": "Tiny",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "tiny",
+      "monstrosity",
+      "cr1/2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 11,
+  "hp": {
+    "average": 16,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 1,
+    "dex": 12,
+    "con": 16,
+    "int": 1,
+    "wis": 11,
+    "cha": 2
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Arcane Sense",
+      "text": "A wizard’s shackle can automatically\ndetect the location of any active spell or magical item\nwithin 30 feet not hidden behind 10 feet of dirt, 5 feet of\nstone, 1 foot of common metal, or 5 inches of lead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The wizard’s shackle has advantage\non saving throws against spells and magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature.\nHit: 3 (1d4 + 1) piercing damage and the wizard’s shackle attaches\nto the target. While it is attached, any time the target attempts to cast a\ncantrip or spell, it takes 10 (3d6) psychic damage and must make a DC 10\nConstitution saving throw. On a failed saving throw, the target fails to cast\nthe spell and if a spell slot was used, it is wasted.\n\nThe wizard’s shackle can be removed as an action by the target or\nanother creature. If a creature or creature to which the wizard’s shackle is\nattached attempts to remove the wizard’s shackle, the attached target must\nsucceed on a DC 13 Constitution saving throw. On a failed saving throw,\nthe target is unconscious for 1 minute."
+    }
+  ],
+  "source": "creature"
+}

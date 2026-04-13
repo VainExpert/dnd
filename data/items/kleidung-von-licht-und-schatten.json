@@ -1,0 +1,44 @@
+{
+  "id": "kleidung-von-licht-und-schatten",
+  "type": "item",
+  "name": "Kleidung von Licht und Schatten",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese Kleidung spricht besonders Feenwesen des Reiches der Freude an. Der Täger hat Vorteil bei Würfen um Feenwesen dieses Reiches zu beeinflussen.",
+  "tags": [
+    "kleidung",
+    "feenwesen",
+    "vorteil",
+    "einfluss"
+  ]
+}

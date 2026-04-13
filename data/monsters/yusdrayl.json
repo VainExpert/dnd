@@ -1,0 +1,69 @@
+{
+  "name": "Yusdrayl",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr1",
+      "tales-from-the-yawning-portal",
+      "kobold"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 12,
+  "hp": {
+    "average": 16,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 15,
+    "con": 14,
+    "int": 10,
+    "wis": 10,
+    "cha": 16
+  },
+  "skills": {
+    "Arcana": 2,
+    "Insight": 2,
+    "Stealth": 4
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "text": "tales from the yawning portal,  page 248"
+    },
+    {
+      "name": "Spellcasting",
+      "text": "Yusdrayl is a 2nd-level spellcaster. Her spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). She knows the following sorcerer spells:\n\nCantrips (at will): mage hand, prestidigitation, ray of frost, shocking grasp\n\n1st level (4 slots): burning hands, chromatic orb, mage armor"
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, Yusdrayl has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "Yusdrayl has advantage on an attack roll against a creature if at least one of her allies is within 5 feet of the creature and the ally isn't incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

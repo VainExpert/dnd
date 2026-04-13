@@ -1,0 +1,87 @@
+{
+  "name": "Erwachsener Roter Drache",
+  "size": "Riesig",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "huge",
+      "dragon",
+      "cr17",
+      "monster-manual"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 19,
+  "hp": {
+    "average": 256,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 40,
+    "fly": 80
+  },
+  "abilities": {
+    "str": 27,
+    "dex": 10,
+    "con": 25,
+    "int": 16,
+    "wis": 13,
+    "cha": 21
+  },
+  "skills": {
+    "Perception": 13,
+    "Stealth": 6
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "17",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache einen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache kann seine „Furchteinflößende Präsenz“ einsetzen. Anschließend führt er drei Angriffe aus: einen mit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +14 zum Treffen, Reichweite10 ft: , ein Ziel. Treffer: 19 (2d10 + 8) Durchschlagschaden plus 7 (2d6) Feuerschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +14 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 15 (2d6 + 8) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +14 zum Treffen, Reichweite15 ft: , ein Ziel. Treffer: 17 (2d8 + 8) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Furchterregende Präsenz",
+      "type": "special",
+      "text": "Jede Kreatur, die sich 120 ftim Umkreis von  des Drachen befindet und dessen Anwesenheit wahrnimmt, muss einenDC 19  Weisheits-Rettungswurf bestehen oder wird für 1 Minute in Angst versetzt. Eine Kreatur kann den Rettungswurf am Ende jedes ihrer Züge wiederholen und den Effekt auf sich selbst bei Erfolg beenden. Wenn der Rettungswurf einer Kreatur erfolgreich ist oder der Effekt für sie endet, ist die Kreatur für die nächsten 24 Stunden immun gegen die „Furchteinflößende Präsenz“ des Drachen."
+    },
+    {
+      "name": "Feueratem (Aufladezeit 5-6)",
+      "type": "special",
+      "text": "Der Drache speit Feuer in einem 18 Meter breiten Kegel. Jedes Wesen in diesem Bereich muss einenDC 21Geschicklichkeits-Rettungswurf durchführen und erleidet bei einem misslungenen Rettungswurf 63 (18d6) Feuerschaden oder bei einem erfolgreichen Rettungswurf die Hälfte dieses Schadens."
+    },
+    {
+      "name": "Lair-Aktien",
+      "type": "special",
+      "text": "Bei einer Initiativwert von 20 (bei Gleichstand verliert der Drache) führt der Drache eine Lair-Aktion aus, um einen der folgenden Effekte auszulösen: Der Drache kann denselben Effekt nicht in zwei aufeinanderfolgenden Runden anwenden:\n\n>* Magma bricht an einer Stelle auf dem Boden aus, die der Drache innerhalb120 feeteiner Reichweite von  sehen kann, und erzeugt einen 20 Fuß hohen Geysir mit einem Radius von 5 Fuß. Jede Kreatur im Bereich des Geysirs muss einenDC 15  Geschicklichkeits-Rettungswurf durchführen und erleidet bei einem misslungenen Rettungswurf 21 (6d6) Feuerschaden oder bei einem erfolgreichen Rettungswurf die Hälfte dieses Schadens.\n\n>* Ein Beben erschüttert die Höhle in einem Umkreis von 60 Fuß um den Drachen. Jede Kreatur außer dem Drachen, die sich in diesem Bereich auf dem Boden befindet, muss einenDC 15  Geschicklichkeits-Rettungswurf bestehen oder wird zu Boden geworfen.\n\n>* Vulkanische Gase bilden eine Wolke in einer Kugel mit einem Radius von 20 Fuß, deren Mittelpunkt an einer Stelle liegt, die der Drache innerhalb120 feeteiner Entfernung von  sehen kann. Die Kugel breitet sich um Ecken herum aus, und ihr Bereich ist leicht verdeckt. Sie hält bis zur Initiativzahl 50 cm der nächsten Runde an. Jede Kreatur, die ihren Zug in der Wolke beginnt, muss einenDC 13  Konstitutions-Rettungswurf bestehen oder ist bis zum Ende ihres Zuges vergiftet. Solange sie auf diese Weise vergiftet ist, ist eine Kreatur handlungsunfähig."
+    }
+  ],
+  "source": "creature"
+}

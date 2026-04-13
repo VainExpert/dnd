@@ -1,0 +1,58 @@
+{
+  "name": "Auberginen",
+  "size": "Winzig",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "tiny",
+      "fey",
+      "cr4",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 15,
+  "hp": {
+    "average": 70,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 20,
+    "con": 12,
+    "int": 13,
+    "wis": 12,
+    "cha": 11
+  },
+  "skills": {
+    "Perception": 5,
+    "Stealth": 9
+  },
+  "languages": [
+    "Common",
+    "Elvish",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "4",
+    "xp": 1100,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Die Bereginyas führt zwei Klauenangriffe aus. Treffen beide Angriffe dasselbe Ziel, wird dieses festgehalten (BefreiungDC 12) und die Bereginyas wendet als Bonusaktion sofort „Erstickung“ gegen es an."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 9 (1d8 + 5) Schnittschaden."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,78 @@
+{
+  "name": "Kelpie",
+  "size": "Medium",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "medium",
+      "plant",
+      "cr4",
+      "tales-from-the-yawning-portal"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 14,
+  "hp": {
+    "average": 67,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 30
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 14,
+    "con": 16,
+    "int": 7,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 4
+  },
+  "languages": [
+    "Common",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "text": "tales from the yawning portal,  page 238"
+    },
+    {
+      "name": "Amphibious",
+      "text": "The kelpie can breathe air and water."
+    },
+    {
+      "name": "Seaweed Shape",
+      "text": "The kelpie can use its action to reshape its body into the form of a humanoid or beast that is Small, Medium, or Large. Its statistics are otherwise unchanged. The disguise is convincing, unless the kelpie is in bright light or the viewer is within 30 feet of it, in which case the seams between the seaweed strands are visible. The kelpie returns to its true form if takes a bonus action to do so or if it dies."
+    },
+    {
+      "name": "False Appearance",
+      "text": "While the kelpie remains motionless in its true form, it is indistinguishable from normal seaweed."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The kelpie makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 11 (2d8 + 2) piercing damage. If the target is a Medium or smaller creature, it is grappled (escape DC 12)."
+    },
+    {
+      "name": "Drowning Hypnosis",
+      "type": "special",
+      "text": "The kelpie chooses one humanoid it can see within 150 feet of it. If the target can see the kelpie, the target must succeed on a DC 11 Wisdom saving throw or be magically charmed while the kelpie maintains concentration, up to 10 minutes (as if concentrating on a spell).\n\n>The charmed target is incapacitated, and instead of holding its breath underwater, it tries to breathe normally and immediately runs out of breath, unless it can breathe water.\n\n>If the charmed target is more than 5 feet away from the kelpie, the target must move on its turn toward the kelpie by the most direct route, trying to get within 5 feet. It doesn't avoid opportunity attacks.\n\n>Before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the kelpie or drowning, the target can repeat the saving throw. A charmed target can also repeat the saving throw at the end of each of its turns. If the saving throw is successful, the effect ends on it.\n\n>A target that successfully saves is immune to this kelpie's hypnosis for the next 24 hours."
+    }
+  ],
+  "source": "creature"
+}

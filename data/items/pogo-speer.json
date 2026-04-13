@@ -1,0 +1,43 @@
+{
+  "id": "pogo-speer",
+  "type": "item",
+  "name": "Pogo-Speer",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Speer ist mit einer robusten Federmechanik und Trittbügeln versehen. Eine Kreatur kann den Pogo-Speer als Waffe führen oder ihn „reiten“, um sprungartige Bewegungen auszuführen. Der Pogo-Speer gilt als Speer. Wenn du den Pogo-Speer in aufrechter Position betrittst (du hältst ihn mit mindestens einer Hand) und mindestens 3 m Anlauf hast, kannst du als Bonus Aktion einen Feder-Sprung ausführen. Du springst bis zu 6 m weit oder bis zu 3 m hoch. Bei jedem Feder-Sprung ist ein Akrobatik-Wurf nötig. Typische SG: SG 10: fester Boden, sichere Landung SG 13: uneben/vereist/nass, wenig Platz SG 15: über Kante, schmaler Vorsprung, unter Beschuss SG 18: starker Wind, instabile Fläche, sehr schmale Landung Bei misslungener Probe landest du unsauber und wählst: A) nächstes freies Feld, am Ende der Bewegung liegend B) gewünschter Ort, aber 1W4 Wuchtschaden und keine Reaktionen bis Zugende Bei einer natürlichen 1 kann die SL zusätzlich festlegen, dass du abgelenkt wirst oder den Speer fallen lässt. Wenn du dich im selben Zug durch den Feder-Sprung bewegt hast, verursacht dein nächster Angriff mit dem Pogo-Speer in diesem Zug zusätzlich 1W6 Stichschaden . In engen Räumen kann die SL Feder-Sprünge untersagen oder den SG um 2 erhöhen.",
+  "tags": [
+    "magisch",
+    "waffe",
+    "speer"
+  ]
+}

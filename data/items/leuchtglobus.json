@@ -1,0 +1,46 @@
+{
+  "id": "leuchtglobus",
+  "type": "item",
+  "name": "Leuchtglobus",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 250,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese kleine Glaskugel kannst du in einem Abstand von 18 m befehligen entweder den Zauber Licht oder Tageslicht auszulösen (Tageslicht nur einmal pro Tag). Du kannst die Kugel mit einer Aktion zum 1,5 m über dem Boden schweben zu befehligen. Wenn dud dich weiter als 18 m von der schwebenden Kugel entfernst kommt sie zu dir bis sie wieder in 18 m von dir entfernt ist. Wenn sie nicht zu dir kommen kann sinkt sie zu Boden und wird inaktiv.",
+  "tags": [
+    "magisch",
+    "licht",
+    "schweben",
+    "zauber",
+    "tageslicht",
+    "aktion"
+  ]
+}

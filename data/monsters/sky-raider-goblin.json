@@ -1,0 +1,65 @@
+{
+  "name": "Sky Raider Goblin",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr1/4",
+      "out-of-the-box-5e",
+      "goblinoid"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 14,
+  "hp": {
+    "average": 7,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 10,
+    "int": 10,
+    "wis": 8,
+    "cha": 8
+  },
+  "skills": {
+    "Animal Handling": 3
+  },
+  "languages": [
+    "Common",
+    "Goblin"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Nimble Escape",
+      "text": "The goblin can take the Disengage\nor Hide action as a bonus action on each of its turns."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach\n5 ft., one target. Hit: 5 (1d6 +2) piercing damage."
+    },
+    {
+      "name": "Light Crossbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +4 to hit, range\n80/320 ft., one target. Hit: 6 (1d8 +2) piercing damage."
+    },
+    {
+      "name": "Grenado (3/Day)",
+      "type": "special",
+      "text": "As an action the goblin can\nthrow a grenado to a point it can see within 30 feet.\nWhen a grenado is thrown, roll initiative for it. The\ngrenado explodes on its next turn. When a grenado\nexplodes, all creatures within 10 feet must succeed\non a DC 12 Dexterity saving throw, taking 3 (1d6)\npiercing and 3 (1d6) fire damage on a failed save, or\nhalf as much on a successful one. The grenado also\nignites flammable materials in the area."
+    }
+  ],
+  "source": "creature"
+}

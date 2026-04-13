@@ -1,0 +1,46 @@
+{
+  "id": "nachrichtstein",
+  "type": "item",
+  "name": "Nachrichtstein",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 200,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Nachrichtsteine kommen immer als Paar mit gleichen Mustern. Wenn der Stein berührt wird kann der Zauber Nachricht gewirkt werden. Das Ziel ist der zugehörige zweite Stein. Wenn dieser keinen Besitzer hat funktioniert der Zauber nicht. Der Stein kann nur einmal pro Tag verwendet werden.",
+  "tags": [
+    "magisch",
+    "kommunikation",
+    "soziales",
+    "paar",
+    "zauber",
+    "nachricht"
+  ]
+}

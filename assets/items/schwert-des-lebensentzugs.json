@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-schwert-des-lebensentzugs",
+  "type": "item",
+  "name": "Schwert des Lebensentzugs",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "weapon",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "beliebiges Schwert",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du eine Kreatur mit dieser magischen Waffe angreifst und beim Angriffswurf eine 20 würfelst, erleidet dieses Ziel zusätzlich 3W6 nekrotischen Schaden, sofern das Ziel kein Konstrukt oder Untoter ist. Du erhältst temporäre Trefferpunkte in Höhe des zusätzlich verursachten Schadens.",
+  "tags": []
+}

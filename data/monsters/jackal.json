@@ -1,0 +1,55 @@
+{
+  "name": "Jackal",
+  "size": "Small",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "small",
+      "beast",
+      "cr0",
+      "monster-manual"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 12,
+  "hp": {
+    "average": 3,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 15,
+    "con": 11,
+    "int": 3,
+    "wis": 12,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 3
+  },
+  "languages": [],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Keen Hearing and Smell",
+      "text": "The jackal has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The jackal has advantage on an attack roll against a creature if at least one of the jackal's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

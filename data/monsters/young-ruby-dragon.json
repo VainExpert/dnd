@@ -1,0 +1,67 @@
+{
+  "name": "Young Ruby Dragon",
+  "size": "Large",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "large",
+      "dragon",
+      "cr9",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 18,
+  "hp": {
+    "average": 104,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 17,
+    "con": 13,
+    "int": 17,
+    "wis": 15,
+    "cha": 17
+  },
+  "skills": {
+    "Insight": 6,
+    "Perception": 6
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Amplification Aura",
+      "text": "Allies’ spells cast within 30\nfeet have their saving throw DC increased by 2."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The dragon makes three attacks: one\nwith its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 10 ft.,\none target. Hit: 14 (2d10 + 3) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft.,\none target. Hit: 10 (2d6 + 3) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,105 @@
+{
+  "name": "Erwachsener Winddrache",
+  "size": "Riesig",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "huge",
+      "dragon",
+      "cr17",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 19,
+  "hp": {
+    "average": 237,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 90
+  },
+  "abilities": {
+    "str": 24,
+    "dex": 19,
+    "con": 22,
+    "int": 16,
+    "wis": 15,
+    "cha": 18
+  },
+  "skills": {
+    "Acrobatics": 10,
+    "Intimidation": 10,
+    "Perception": 14,
+    "Stealth": 10
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "17",
+    "xp": 18000,
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Drachen ist Charisma (ZauberrettungswurfDC 18). Er kann die folgenden Zauber von Natur aus wirken, ohne dass dafür materielle Komponenten erforderlich sind:\n\nBeliebig oft: Federfall\n\n3/Tag: Blitzschlag"
+    },
+    {
+      "name": "Fog Vision",
+      "text": "Der Drache sieht normal, auch wenn die Sicht durch Nebel, Dunst, Wolken oder starken Wind eingeschränkt ist."
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache einen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Drache hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Unkontrollierbar",
+      "text": "Die Bewegung des Drachen wird niemals durch schwieriges Gelände behindert, und seine Geschwindigkeit kann nicht durch Zauber oder magische Effekte verringert werden. Er kann nicht gefesselt werden (gemäß dem Zustand), und er befreit sich automatisch aus allen nichtmagischen Fesseln (wie Ketten, Verstrickung oder Festhalten), indem er5 feet  Bewegungspunkte aufwendet. Der Aufenthalt unter Wasser führt zu keinen Abzügen bei seiner Bewegung oder seinen Angriffen."
+    },
+    {
+      "name": "Wirbelnde Winde",
+      "text": "Sturmwinde toben um den Drachen herum. Fernkampfangriffe gegen ihn werden mit Nachteil ausgeführt."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Winddrache kann seine „Furchteinflößende Präsenz“ einsetzen und führt anschließend drei Angriffe aus: einen mit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +13 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 18 (2d10 + 7) Durchdringungsschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +13 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 14 (2d6 + 7) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +13 zum Treffen, Reichweite15 ft: , ein Ziel. Treffer: 16 (2d8 + 7) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Sturmhauch (Aufladezeit 5-6)",
+      "type": "special",
+      "text": "Der Drache stößt einen Windstoß in Form eines 18 Meter breiten Kegels aus. Jede Kreatur in diesem Kegel erleidet 27 (5d10) Bludgeoning-Schaden, wird vom Drachen 25 feetweggestoßen und zu Boden geworfen; ein erfolgreicherDC 20Stärke-Rettungswurf halbiert den Schaden und verhindert das Wegstoßen (nicht jedoch das Zu-Boden-Werfen). Alle Flammen im Kegel werden gelöscht."
+    },
+    {
+      "name": "Furchterregende Präsenz",
+      "type": "special",
+      "text": "Jede Kreatur, die sich in120 feetder Nähe des Drachen befindet und ihn wahrnimmt, muss einenDC 18Weisheits-Rettungswurf bestehen oder wird für 1 Minute in Angst versetzt. Eine Kreatur wiederholt den Rettungswurf am Ende ihres Zuges; bei Erfolg endet der Effekt für sie. Wenn der Rettungswurf einer Kreatur erfolgreich ist oder der Effekt für sie endet, ist die Kreatur für die nächsten 24 Stunden immun gegen die furchteinflößende Präsenz des Drachen."
+    }
+  ],
+  "source": "creature"
+}

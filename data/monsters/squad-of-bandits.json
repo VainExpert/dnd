@@ -1,0 +1,51 @@
+{
+  "name": "Squad of Bandits",
+  "size": "Large",
+  "type": {
+    "type": "swarm",
+    "tags": [
+      "large",
+      "swarm",
+      "cr1",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "any non-lawful alignment",
+  "ac": 11,
+  "hp": {
+    "average": 33,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 10,
+    "con": 12,
+    "int": 10,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "Any one language (usually Common)"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Swarm",
+      "text": "The swarm can occupy another creature's\nspace and vice versa, and the swarm can move\nthrough any opening large enough for a Medium\nbandit. The swarm can't regain hit points or gain\ntemporary hit points."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Scimitars",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5\nft., one target. Hit: 13 (2d6 + 6) slashing damage,\nor 6 (1d6 + 3) slashing damage if the swarm has\nhalf of its hit points or fewer."
+    }
+  ],
+  "source": "creature"
+}

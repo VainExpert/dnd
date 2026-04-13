@@ -1,0 +1,48 @@
+{
+  "name": "Star Spawn Seer",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr13",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 17,
+  "hp": {
+    "average": 153,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 12,
+    "con": 18,
+    "int": 22,
+    "wis": 19,
+    "cha": 16
+  },
+  "skills": {
+    "Perception": 9
+  },
+  "languages": [
+    "Common",
+    "Deep Speech",
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "13",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Out-of-Phase Movement",
+      "text": "The seer can move through other creatures and objects as if they were difficult terrain. Each creature it moves through takes 5 (1d10) psychic damage; no creature can take this damage more than once per turn. The seer takes 5 (1d10) force damage if it ends its turn inside an object."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

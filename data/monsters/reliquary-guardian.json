@@ -1,0 +1,85 @@
+{
+  "name": "Reliquary Guardian",
+  "size": "Large",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr12",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 19,
+  "hp": {
+    "average": 170,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 12,
+    "con": 17,
+    "int": 10,
+    "wis": 17,
+    "cha": 21
+  },
+  "skills": {
+    "Perception": 7
+  },
+  "languages": [
+    "speaks and understands the languages of its creator"
+  ],
+  "challenge": {
+    "cr": "12",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Divine Blessing",
+      "text": "The reliquary guardian deals an additional 14 (4d6)\ndamage with its weapon attacks, included below. This damage is either\nradiant, if lawfully aligned, or necrotic, if chaotically aligned."
+    },
+    {
+      "name": "Immutable Form",
+      "text": "The reliquary guardian is immune to any spell or\neffect that would alter its form."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The reliquary guardian’s innate spellcasting ability\nis Charisma (spell save DC 17, +9 to hit with spell attacks). It can innately\ncast the following spells, requiring no material components:\n\n* At will: <i>chill touch </i>(17th level, if chaotically aligned)<i>, protection from\nevil and good, sacred flame </i>(17th level, if lawfully aligned)\n\n* 3/day each: <i>lightning bolt, flame strike </i>(deals necrotic instead of radiant\nif chaotically aligned)<i>, spirit guardians, spiritual weapon</i>\n\n* 1/day each: <i>commune, dispel evil and good, dispel magic</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The reliquary guardian has advantage on saving\nthrows against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The reliquary guardian’s weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The reliquary guardian makes two attacks with either its\ngreatsword or its slam attack."
+    },
+    {
+      "name": "Greatsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target.\nHit: 18 (4d6 + 4) slashing damage and 14 (4d6) necrotic or radiant damage."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 22\n(4d8 + 4) bludgeoning damage and 14 (4d6) necrotic or radiant damage."
+    },
+    {
+      "name": "Pronouncement (1/day)",
+      "type": "special",
+      "text": "All creatures within 120 feet of the reliquary\nguardian that can hear it must succeed on a DC 17 Wisdom saving throw.\nOn a failed saving throw, the target takes 66 (12d10) thunder damage and\nis stunned for 1 minute. On a successful saving throw, the target takes half\ndamage and is not stunned. A stunned creature can repeat the saving throw\nat the end of each of its turns, ending the effect on a success."
+    }
+  ],
+  "source": "creature"
+}

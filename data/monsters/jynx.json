@@ -1,0 +1,69 @@
+{
+  "name": "Jynx",
+  "size": "Small",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "small",
+      "fey",
+      "cr1",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 13,
+  "hp": {
+    "average": 27,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 7,
+    "dex": 16,
+    "con": 13,
+    "int": 15,
+    "wis": 14,
+    "cha": 16
+  },
+  "skills": {
+    "Acrobatics": 5,
+    "Nature": 4,
+    "Perception": 4,
+    "Stealth": 5
+  },
+  "languages": [
+    "Common",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The jynx’s innate spellcasting ability is Charisma\n(spell save DC 13, +5 to hit with spell attacks). The jynx can cast the\nfollowing spells without requiring material components:\n\n* At will: <i>detect evil and good, detect magic</i>\n\n* 1/day each: <i>color spray, detect thoughts, dispel magic, entangle</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Shortbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one\ntarget. Hit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target.\nHit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Jinx (1/Short or Long Rest)",
+      "type": "special",
+      "text": "The jynx chooses one target that it can\nsee within 60 feet of it to make a DC 13 Wisdom saving throw. On a\nfailed saving throw, the creature is jinxed for 1 minute. While jinxed,\nthe creature has disadvantage on all attack rolls, saving throws, and skill\nchecks until the jinx ends. The jinx can be ended early with remove curse."
+    }
+  ],
+  "source": "creature"
+}

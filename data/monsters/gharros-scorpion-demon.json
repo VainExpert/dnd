@@ -1,0 +1,87 @@
+{
+  "name": "Gharros (Scorpion Demon)",
+  "size": "Large",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr16",
+      "tome-of-horrors",
+      "demon"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 20,
+  "hp": {
+    "average": 270,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 26,
+    "dex": 18,
+    "con": 26,
+    "int": 18,
+    "wis": 18,
+    "cha": 20
+  },
+  "skills": {
+    "Athletics": 13,
+    "Perception": 9,
+    "Survival": 9
+  },
+  "languages": [
+    "Abyssal",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "16",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Improved Critical",
+      "text": "The demon’s attacks score a critical hit on a roll of\n19 or 20."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The demon’s spellcasting ability is Wisdom (spell\nsave DC 17, +9 to hit with spell attacks). It can innately cast the following\nspells requiring no material components:\n\n* At will: <i>darkness, detect evil and good, detect magic, mirror image</i>\n\n* 3/day each: <i>hallow, telekinesis, teleport</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The demon has advantage on saving throws against\nspells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The demon’s weapon attacks are magical."
+    },
+    {
+      "name": "Rampage",
+      "text": "When the demon reduces a creature to 0 hit points with a\nmelee attack on its turn, the demon can take a bonus action to move up to\nhalf its speed and make a halberd attack."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The demon makes three attacks: one halberd attack and\ntwo sting attacks."
+    },
+    {
+      "name": "Halberd",
+      "type": "special",
+      "text": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) slashing damage."
+    },
+    {
+      "name": "Sting",
+      "type": "special",
+      "text": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 17 (2d8 + 8) piercing damage, and the target must make a DC 18 Constitution saving throw, taking 17 (5d6) poison damage on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "Summon (1/day)",
+      "type": "special",
+      "text": "The demon chooses what to summon and attempts a\nmagical summoning.\nA gharros has a 50% chance of summoning 1d6 vrocks, 1d4 hezrous,\n1d3 glabrezus, 1d2 nalfeshnees, or one marilith.\nA summoned demon appears in an unoccupied space within 60 feet of\nits summoner, acts as an ally of its summoner, and can’t summon other\ndemons. It remains for 1 minute, until it or its summoner dies, or until its\nsummoner dismisses it as an action."
+    }
+  ],
+  "source": "creature"
+}

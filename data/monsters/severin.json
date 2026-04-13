@@ -1,0 +1,78 @@
+{
+  "name": "Severin",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr11",
+      "tyranny-of-dragons",
+      "human"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 16,
+  "hp": {
+    "average": 150,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 13,
+    "con": 16,
+    "int": 17,
+    "wis": 12,
+    "cha": 20
+  },
+  "skills": {
+    "Arcana": 7,
+    "Religion": 7
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Infernal"
+  ],
+  "challenge": {
+    "cr": "11",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Special Equipment",
+      "text": "Severin has the Mask of the Dragon Queen."
+    },
+    {
+      "name": "Draconic Majesty",
+      "text": "Severin adds his Charisma bonus to his AC (included)."
+    },
+    {
+      "name": "Ignite Enemy",
+      "text": "If Severin deals fire damage to a creature while wearing the Mask of the Dragon Queen, the target catches fire. At the start of each of its turns, the burning target takes 5 (1d10) fire damage. A creature within reach of the fire can use an action to extinguish it."
+    },
+    {
+      "name": "Legendary Resistance (5/Day)",
+      "text": "While wearing the Mask of the Dragon Queen, if Severin fails a saving throw, he can choose to succeed instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Burning Touch",
+      "type": "special",
+      "text": "Melee Spell Attack: +5 to hit, reach 5 ft., one target. Hit: 18 (4d8) fire damage."
+    },
+    {
+      "name": "Flaming Orb",
+      "type": "special",
+      "text": "Ranged Spell Attack: +5 to hit, range 90 ft., one target. Hit: 40 (9d8) fire damage."
+    },
+    {
+      "name": "Scorching Burst",
+      "type": "special",
+      "text": "Severin chooses a point he can see within 60 feet of him. Each creature within 5 feet of that point must make a DC 17 Dexterity saving throw, taking 18 (4d8) fire damage on a failed save, or half as much damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

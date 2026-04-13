@@ -1,0 +1,79 @@
+{
+  "name": "Subek",
+  "size": "Large",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "large",
+      "humanoid",
+      "cr5",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 17,
+  "hp": {
+    "average": 76,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 20
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 18,
+    "int": 14,
+    "wis": 13,
+    "cha": 13
+  },
+  "skills": {
+    "History": 5,
+    "Investigation": 5
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "5",
+    "xp": 1800,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Hold Breath",
+      "text": "The subek can hold its breath for 15 minutes."
+    },
+    {
+      "name": "Flood Fever",
+      "text": "During flood season, the subek is overcome with bloodthirsty malice. Its alignment shifts to chaotic evil, it gains the Blood Frenzy trait, and it loses the capacity to speak Common and its bonuses to History and Investigation."
+    },
+    {
+      "name": "Blood Frenzy",
+      "text": "The subek has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The subek makes one bite attack and one claws attack. If both attacks hit the same target, the subek can make a thrash attack as a bonus action against that target."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 11 (2d6 + 4) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 22 (4d8 + 4) slashing damage."
+    },
+    {
+      "name": "Thrash",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d10) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

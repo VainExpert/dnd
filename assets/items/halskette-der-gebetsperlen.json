@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-halskette-der-gebetsperlen",
+  "type": "item",
+  "name": "Halskette der Gebetsperlen",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "erfordert Einstimmung durch einen Druiden, Kleriker oder Paladin",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "neck",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese Halskette hat 1W4+2 magische Perlen aus Aquamarin, schwarzen Perlen oder Topas. Außerdem befinden sich auch nichtmagische Perlen aus Bernstein, Blutstein, Citrin, Jade, Koralle, Perle oder Quarz an der Kette. Wenn eine magische Perle von der Halskette entfernt wird, verliert die Perle ihre Magie. Es gibt sechs verschiedene magische Perlentypen. Der SL wählt die Perlentypen an der Halskette aus oder bestimmt sie zufällig. Eine Halskette kann mehr als eine Perle desselben Typs haben. Um eine der Perlen zu verwenden, musst du die Halskette tragen. Jede Perle enthält einen Zauber, den du als Bonusaktion mit ihr wirken kannst (etwa mit deinem Zauberret-tungswurf-SG, wenn ein Rettungswurf nötig ist). Nachdem der Zauber einer magischen Perle gewirkt wurde, kann diese Perle erst im nächsten Morgengrauen wiederverwendet werden.",
+  "tags": []
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Boarfolk",
+  "size": "Large",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "large",
+      "humanoid",
+      "cr1/4",
+      "tome-of-horrors",
+      "boarfolk"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 10,
+  "hp": {
+    "average": 16,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 10,
+    "con": 10,
+    "int": 10,
+    "wis": 10,
+    "cha": 11
+  },
+  "skills": {},
+  "languages": [
+    "Boarfolk",
+    "Common"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Created Race",
+      "text": "The boarfolk has advantage on saving throws against\nspells and effects which would alter its form."
+    },
+    {
+      "name": "Keen Scent",
+      "text": "A boarfolk has advantage on Wisdom (Perception)\nchecks based on scent."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Gore",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4\n(1d6 + 1) piercing damage."
+    },
+    {
+      "name": "Greatclub",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit:\n5 (1d8 + 1) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

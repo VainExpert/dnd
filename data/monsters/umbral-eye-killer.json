@@ -1,0 +1,66 @@
+{
+  "name": "Umbral Eye Killer",
+  "size": "Medium",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr5",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 13,
+  "hp": {
+    "average": 65,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 16,
+    "con": 14,
+    "int": 2,
+    "wis": 13,
+    "cha": 12
+  },
+  "skills": {
+    "Perception": 6,
+    "Stealth": 6
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Sunlight Vulnerability",
+      "text": "If a source of sunlight is brought within 5 feet\nof the eye killer, the eye killer becomes frightened for 1 minute. While\nfrightened, the eye killer must end any grapple it is maintaining and use\nits action to Dash away from the source of sunlight."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The umbral eye killer’s innate spellcasting ability\nis Charisma (spell save DC 12, +4 to hit with spell attacks). It can cast\nthe following without material components.\n\n* 3/day: <i>darkness</i>"
+    },
+    {
+      "name": "See in Darkness",
+      "text": "The umbral eye killer can see in magical and\nnonmagical darkness."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Tail Slap",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit:\n14 (2d10 + 3) bludgeoning damage and the target is grappled (escape DC\n13). At the beginning of each of the eye killer’s turns, a grappled creature\ntakes 14 (2d10 + 3) bludgeoning damage."
+    },
+    {
+      "name": "Death Ray (1/day)",
+      "type": "special",
+      "text": "If the eye killer begins its turn within an area of\nbright light or dim light, it can immediately douse that source of light if it\nis created by a spell of 3rd level or lower. When it does so, it absorbs and\nredirects the light in a 60-foot line that is 5 feet across. Creatures in the\narea must make a DC 13 Dexterity saving throw. On a failed saving throw,\nthe target drops to 0 hit points and begins dying. On a successful saving\nthrow, the target takes 10 (3d6) radiant damage."
+    }
+  ],
+  "source": "creature"
+}

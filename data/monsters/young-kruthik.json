@@ -1,0 +1,56 @@
+{
+  "name": "Young Kruthik",
+  "size": "Small",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "small",
+      "monstrosity",
+      "cr1/8",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 16,
+  "hp": {
+    "average": 9,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 10,
+    "climb": 30
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 16,
+    "con": 13,
+    "int": 4,
+    "wis": 10,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "Kruthik"
+  ],
+  "challenge": {
+    "cr": "1/8",
+    "xp": 25,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "text": "The kruthik has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The kruthik has advantage on an attack roll against a creature if at least one of the kruthik's allies is within 5 feet of the creature and the ally isn't incapacitated."
+    },
+    {
+      "name": "Tunneler",
+      "text": "The kruthik can burrow through solid rock at half its burrowing speed and leaves a 2 1/2-foot-diameter tunnel in its wake."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

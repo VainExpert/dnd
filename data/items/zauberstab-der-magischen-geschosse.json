@@ -1,0 +1,47 @@
+{
+  "id": "zauberstab-der-magischen-geschosse",
+  "type": "item",
+  "name": "Zauberstab der magischen Geschosse",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 400,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": 7,
+    "recharge": "1W6+1 am Morgen"
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [
+    "magisches-geschoss"
+  ],
+  "effects": [],
+  "text": "Dieser Zauberstab hat sieben Ladungen. Wenn du ihn hältst, kannst du als Aktion eine oder mehrere seiner Ladungen verbrauchen, um den Zauber Magisches Geschoss mit ihm zu wirken. Für eine Ladung wirkst du den Zauber des 1. Grades. Du kannst den Zauberplatz-Grad für jede weitere Ladung, die du verbrauchst, um einen Grad erhöhen. Der Zauberstab erhält täglich im Morgengrauen 1W6+1 verbrauchte Ladungen zurück. Wenn du die letzte Ladung des Zauberstabs verbrauchst, würfle mit einem W20. Bei einer 1 zerfällt der Zauberstab zu Asche und ist damit zerstört.",
+  "tags": [
+    "magisch",
+    "zauberstab",
+    "zauber",
+    "aktion",
+    "magisches geschoss"
+  ]
+}

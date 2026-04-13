@@ -1,0 +1,75 @@
+{
+  "name": "Fortgeschrittene Demilich",
+  "size": "Winzig",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "tiny",
+      "undead",
+      "cr24",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 21,
+  "hp": {
+    "average": 172,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 10,
+    "con": 20,
+    "int": 23,
+    "wis": 20,
+    "cha": 23
+  },
+  "skills": {
+    "Arcana": 13,
+    "History": 13,
+    "Perception": 12,
+    "Religion": 13
+  },
+  "languages": [
+    "All",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "24",
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Nichtigerklärung",
+      "text": "Wenn der Demi-Lich einem Effekt ausgesetzt ist, der es ihm ermöglicht,\neinen Rettungswurf durchzuführen, um nur den halben Schaden zu erleiden, erleidet er stattdessen keinen Schaden,\nwenn der Rettungswurf gelingt, und nur den halben Schaden, wenn er misslingt."
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Demi-Lich einen Rettungswurf verfehlt,\nkann er stattdessen beschließen, ihn zu bestehen."
+    },
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Demi-Lich ist ein Zauberwirker der Stufe 18. Seine\nZauberfertigkeit ist Intelligenz (ZauberrettungswurfDC 21, +13\nauf Treffer bei Zauberangriffen). Er hat die folgenden Zauber\nvorbereitet:\n\nCantrips (beliebig oft): Magische Hand, Kleiner Zauber, Froststrahl\n\n* 1. Stufe (4 Plätze): Magie entdecken, Magischer Geschoss, Schild, Donnerwelle\n\n* 2. Stufe (3 Plätze): Säurepfeil, Gedanken lesen, Unsichtbarkeit, Spiegelbild\n\n* 3. Stufe (3 Plätze): Tote beleben, Gegenzauber, Magie bannen, Feuerball\n\n* 4. Stufe (3 Plätze): Verwüstung, Dimensionspforte\n\n* 5. Stufe (3 Plätze): Wolkenkill, Hellsehen\n\n* 6. Stufe (1 Platz): Zersetzen, Kugel der Unverwundbarkeit\n\n* 7. Stufe (1 Platz): Finger des Todes, Ebenenwechsel\n\n* 8. Stufe (1 Platz): Monster beherrschen, Machtwort: Betäuben\n\n* 9. Stufe (1 Platz): Machtwort: Töten"
+    },
+    {
+      "name": "Immunität aktivieren",
+      "text": "Der Demi-Lich ist immun gegen Effekte, die Untote vertreiben."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Das Leben auslaugen",
+      "type": "special",
+      "text": "Jede nicht untote Kreatur im Umkreis10 feetvon  des Demi-Lichs\nmuss einenDC 17  Konstitutions-Rettungswurf gegen diesen Zauber durchführen und erleidet\n21 (6d6) nekrotischen Schaden; der Demi-Lich erhält Lebenspunkte in Höhe der\nGesamtsumme des allen Zielen zugefügten Schadens zurück."
+    },
+    {
+      "name": "Seelenzerstörer (Aufladen 6)",
+      "type": "special",
+      "text": "Der Halb-Lich spricht eine Reihe abscheulicher Zauberworte.\nAlle Kreaturen im30 feetWirkungsbereich des Halb-Lichs, die er sehen kann, müssen\neinenDC 17Konstitutions-Rettungswurf bestehen oder auf 0 Trefferpunkte sinken.\nBei einem erfolgreichen Rettungswurf erleidet die Kreatur 22 (4d10) psychischen Schaden und ist\nbis zum Ende ihres nächsten Zuges verängstigt."
+    }
+  ],
+  "source": "creature"
+}

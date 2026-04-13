@@ -1,0 +1,58 @@
+{
+  "name": "Leviathan",
+  "size": "Gargantuan",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "gargantuan",
+      "elemental",
+      "cr20",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 17,
+  "hp": {
+    "average": 328,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 120
+  },
+  "abilities": {
+    "str": 30,
+    "dex": 24,
+    "con": 30,
+    "int": 2,
+    "wis": 18,
+    "cha": 17
+  },
+  "skills": {},
+  "languages": [
+    "-"
+  ],
+  "challenge": {
+    "cr": "20",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "text": "If the leviathan fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Partial Freeze",
+      "text": "If the leviathan takes 50 cold damage or more during a single turn, the leviathan partially freezes; until the end of its next turn, its speeds are reduced to 20 feet, and it makes attack rolls with disadvantage."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "The leviathan deals double damage to objects and structures (included in Tidal Wave)."
+    },
+    {
+      "name": "Water Form",
+      "text": "The leviathan can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

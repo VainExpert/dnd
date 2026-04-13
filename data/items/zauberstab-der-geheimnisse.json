@@ -1,0 +1,45 @@
+{
+  "id": "zauberstab-der-geheimnisse",
+  "type": "item",
+  "name": "Zauberstab der Geheimnisse",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 200,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": 3,
+    "recharge": "1W3 am Morgen"
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Zauberstab hat drei Ladungen. Während du ihn hältst, kannst du eine Aktion verwenden, um eine seiner Ladungen zu verbrauchen. Falls sich eine Geheimtür oder Falle im Abstand von bis zu neun Metern von dir befindet, pulsiert der Zauberstab und zeigt auf die, die dir am nächsten ist. Der Zauberstab erhält täglich im Morgengrauen 1W3 verbrauchte Ladungen zurück.",
+  "tags": [
+    "magisch",
+    "zauberstab",
+    "ladungen",
+    "aktion",
+    "geheimnisse"
+  ]
+}

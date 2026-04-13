@@ -1,0 +1,71 @@
+{
+  "name": "Mummy Lord",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr15",
+      "monster-manual"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 17,
+  "hp": {
+    "average": 97,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 17,
+    "int": 11,
+    "wis": 18,
+    "cha": 16
+  },
+  "skills": {
+    "History": 5,
+    "Religion": 5
+  },
+  "languages": [
+    "the languages it knew in life"
+  ],
+  "challenge": {
+    "cr": "15",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The mummy lord has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Rejuvenation",
+      "text": "A destroyed mummy lord gains a new body in 24 hours if its heart is intact, regaining all its hit points and becoming active again. The new body appears within 5 feet of the mummy lord's heart."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The mummy lord is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). The mummy lord has the following cleric spells prepared:\n\n* Cantrips (at will): <i>sacred flame, thaumaturgy</i>\n\n* 1st level (4 slots): <i>command, guiding bolt, shield of faith</i>\n\n* 2nd level (3 slots): <i>hold person, silence, spiritual weapon</i>\n\n* 3rd level (3 slots): <i>animate dead, dispel magic</i>\n\n* 4th level (3 slots): <i>divination, guardian of faith</i>\n\n* 5th level (2 slots): <i>contagion, insect plague</i>\n\n* 6th level (1 slot): <i>harm</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The mummy can use its Dreadful Glare and makes one attack with its rotting fist."
+    },
+    {
+      "name": "Rotting Fist",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (3d6 + 4) bludgeoning damage plus 21 (6d6) necrotic damage. If the target is a creature, it must succeed on a DC 16 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic."
+    },
+    {
+      "name": "Dreadful Glare",
+      "type": "special",
+      "text": "The mummy lord targets one creature it can see within 60 feet of it. If the target can see the mummy lord, it must succeed on a DC 16 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies and mummy lords for the next 24 hours."
+    }
+  ],
+  "source": "creature"
+}

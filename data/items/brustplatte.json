@@ -1,0 +1,51 @@
+{
+  "id": "brustplatte",
+  "type": "item",
+  "name": "Brustplatte",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 10,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 400,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": {
+    "base": 14,
+    "dex_bonus": true,
+    "max": 2,
+    "stealth_disadvantage": false,
+    "type": "mittel"
+  },
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese Brustplatte besteht aus einem einzigen Stück gehärteten Stahls, das den Oberkörper des Trägers schützt. Sie bietet einen soliden Schutz gegen Angriffe.",
+  "tags": [
+    "abenteuer",
+    "rüstung",
+    "abwehr",
+    "mittel",
+    "schmied"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Azer",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr2",
+      "monster-manual"
+    ]
+  },
+  "alignment": "gesetztreu-neutral",
+  "ac": 17,
+  "hp": {
+    "average": 39,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 12,
+    "con": 15,
+    "int": 12,
+    "wis": 13,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "Ignan"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Beheizter Körper",
+      "text": "Ein Wesen, das den Azer berührt oder ihn mit einem Nahkampfangriff trifft, während es sich in einem Umkreis von 1,5 m[…] von ihm befindet, erleidet 5 (1d10) Feuerschaden."
+    },
+    {
+      "name": "Beheizte Waffen",
+      "text": "Wenn der Azer mit einer metallenen Nahkampfwaffe trifft, verursacht er zusätzlich 3 (1d6) Feuerschaden (im Angriff enthalten)."
+    },
+    {
+      "name": "Beleuchtung",
+      "text": "Der Azer strahlt in einem Umkreis von 3 Metern helles Licht aus und in einem weiteren Umkreis10 ft …"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Warhammer",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 7 (1d8 + 3) Bludgeoning-Schaden oder 8 (1d10 + 3) Bludgeoning-Schaden, wenn die Waffe für einen Nahkampfangriff mit beiden Händen geführt wird, plus 3 (1d6) Feuerschaden."
+    }
+  ],
+  "source": "creature"
+}

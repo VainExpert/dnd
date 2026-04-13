@@ -1,0 +1,59 @@
+{
+  "name": "Bastian Thermandar",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr8",
+      "elemental-evil",
+      "fire genasi"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 12,
+  "hp": {
+    "average": 78,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 14,
+    "con": 15,
+    "int": 11,
+    "wis": 9,
+    "cha": 18
+  },
+  "skills": {
+    "Arcana": 3,
+    "Deception": 7
+  },
+  "languages": [
+    "Common",
+    "Ignan"
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Bastians angeborene Zauberfähigkeit ist Konstitution (ZauberrettungswurfDC 13, +5 auf Treffer bei Zauberangriffen). Er kann von Natur aus die folgenden Zauber wirken:\n\n* Beliebig oft: Feuer erzeugen\n\n* 1/Tag: Brennende Hände"
+    },
+    {
+      "name": "Zaubersprechen",
+      "text": "Bastian ist ein Zauberwirker der Stufe 9. Seine Zauberfertigkeit ist Charisma (ZauberrettungswurfDC 15, +7 auf Treffer bei Zauberangriffen). Bastian beherrscht die folgenden Zauberer-Zauber:\n\n* Cantrips (beliebig oft): Feuerblitz, Magische Hand, Botschaft, Kleiner Zauber, Schockgriff\n\n* 1. Stufe (4 Zauberplätze): Magierrüstung, Magischer Pfeil, Schild\n\n* 2. Stufe (3 Zauberplätze): Nebelschritt, Versengender Strahl\n\n* 3. Stufe (3 Zauberplätze): Gegenzauber, Feuerball\n\n* 4. Stufe (3 Plätze): Dimensionspforte, Feuerwand\n\n* 5. Stufe (1 Platz): Monster fesseln"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dolch",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfangriff: +5 auf den Trefferwurf, Reichweite 1,5 m[ ]20/60Fuß, ein Ziel. Treffer: 4 (1d4 + 2) Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

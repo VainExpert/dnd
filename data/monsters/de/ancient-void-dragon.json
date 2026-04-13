@@ -1,0 +1,124 @@
+{
+  "name": "Uralter Leere-Drache",
+  "size": "Gigantisch",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "gargantuan",
+      "dragon",
+      "cr24",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 22,
+  "hp": {
+    "average": 448,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 28,
+    "dex": 10,
+    "con": 29,
+    "int": 18,
+    "wis": 15,
+    "cha": 23
+  },
+  "skills": {
+    "Arcana": 18,
+    "History": 18,
+    "Perception": 16,
+    "Persuasion": 13,
+    "Stealth": 7
+  },
+  "languages": [
+    "Celestial",
+    "Common",
+    "Draconic",
+    "Infernal",
+    "Primordial",
+    "Void Speech"
+  ],
+  "challenge": {
+    "cr": "24",
+    "xp": 62000,
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Die Kälte der Leere",
+      "text": "Kälteschaden, den der Leeren-Drache verursacht, ignoriert die Kälteschadensresistenz, nicht jedoch die Kälteimmunität."
+    },
+    {
+      "name": "Kollabierender Stern",
+      "text": "Wenn der Leeren-Drache getötet wird, explodiert er in einem Wirbel himmlischer Zerstörung. Jede Kreatur und jeder Gegenstand im1 mileUmkreis von  des Drachen erleidet 55 (10d10) Schlagschaden, 55 (10d10) Kälteschaden und 55 (10d10) psychischen Schaden. Jeder Schadensart kann durch einen erfolgreichenDC 21  Rettungswurf um die Hälfte gemindert werden: Geschicklichkeit gegen Schlagschaden, Konstitution gegen Kälteschaden und Weisheit gegen psychischen Schaden. Zudem wird eine Kreatur, die zwei oder drei der Rettungswürfe verfehlt, von einem „Ebenenwechsel“-Zauber getroffen und auf eine zufällige Ebene versetzt. Wird sie auf die Ebene versetzt, auf der sie sich gerade befindet, erscheint 5d100sie  Meilen entfernt in einer zufälligen Richtung."
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache einen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Bewohner der Leere",
+      "text": "Leere Drachen leben in der leeren Weite zwischen den Sternen und benötigen weder Luft noch Nahrung, Trinken oder Schlaf. Beim Flug zwischen den Sternen gleitet der Leere Drache auf magische Weise auf Sonnenwinden dahin und legt die unermessliche Reise durch die Leere in unglaublich kurzer Zeit zurück."
+    },
+    {
+      "name": "Die Höhle des Leeren Drachen",
+      "text": "Bei einer Initiativzahl von 20 (bei Gleichstand verliert der Drache) führt der Drache eine Lair-Aktion durch, um einen der folgenden Effekte zu erzeugen; der Drache kann denselben Effekt nicht in zwei aufeinanderfolgenden Runden anwenden:\n\n- Der Drache hebt die natürliche Schwerkraft in seiner Höhle auf (ein Bereich, der von seinem Gravitationsatem betroffen ist, bleibt davon unberührt). Kreaturen treiben im Laufe einer Runde10 feet vom Boden weg und sind gefesselt. Fliegende Kreaturen können sich mit halber Geschwindigkeit bewegen, es sei denn, sie besitzen die Eigenschaft (Schweben) oder nutzen magischen Flug; in diesem Fall bewegen sie sich normal. Dieser Effekt hält bis zur Initiativzahl 50 cm der folgenden Runde an.\n\n- Die Leere überlagert kurzzeitig den Hort des Drachen in einer Kugel aus Dunkelheit mit einem Radius von 20 Fuß, durchzogen von tiefblauen Streifen und Lichtpunkten. Der Mittelpunkt der Kugel liegt an einem Punkt, den der Drache innerhalb120 feetvon  vom Drachen sehen kann. Der Bereich erstreckt sich um Ecken herum, ist stark verdeckt und enthält keine Luft (Kreaturen müssen den Atem anhalten). Jede Kreatur, die sich bei Erscheinen der Kugel darin befindet, muss einenDC 15  Konstitutionsrettungswurf durchführen und erleidet bei einem misslungenen Rettungswurf 10 (3d6) Kälteschaden oder die Hälfte davon bei einem erfolgreichen. Jede Kreatur, die ihren Zug in der Kugel beendet, erleidet 10 (3d6) Kälteschaden. Die Sphäre hält an, bis der Drache diese Lair-Aktion erneut einsetzt oder bis der Drache stirbt.\n\n- Der Drache zerreißt das Raumgefüge und zwingt zwei Kreaturen, die er innerhalb120 feetvon  sehen kann, plötzlich am selben Ort zu existieren. Der Raum selbst stößt die Kreaturen an ihre ursprünglichen Positionen zurück. Jede Kreatur erleidet 16 (3d10) Kraftschaden und wird zu Boden geworfen, oder erleidet bei einem erfolgreichenDC 15  Stärke-Rettungswurf nur die Hälfte des Schadens und wird nicht zu Boden geworfen."
+    },
+    {
+      "name": "Regionale Auswirkungen",
+      "text": "Die Region, in der sich die Höhle eines legendären Leeren-Drachen befindet, wird durch die Magie des Drachen verzerrt, was einen oder mehrere der folgenden Effekte hervorruft:\n\n- Geheimnisse kommen im6 milesUmkreis der Höhle ans Licht. Hinweise werden unbeabsichtigt entdeckt, Versprecher deuten auf eine verborgene Wahrheit hin, und Kreaturen entwickeln eine morbide Neugier auf verbotenes Wissen.\n\n- Das Licht ist im6 milesUmkreis der Höhle gedämpft. Nichtmagische Lichtquellen, einschließlich Sonnenlicht, können in diesem Bereich kein helles Licht erzeugen.\n\n- Es kommt zu Erscheinungen jenseitiger Wesen, und körperlose Stimmen flüstern in der Nacht im Umkreis6 milesvon  des Drachennests. Himmlische Wesen, Feen und Dämonen der Stufe 2 oder niedriger können in diesem Bereich in die Welt eindringen.\n\nWenn der Drache stirbt, klingen diese Effekte im Laufe von1d10  Tagen ab."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache kann seine „Aura des Wahnsinns“ einsetzen. Anschließend führt er drei Angriffe aus: einen mit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +16 auf Treffer, Reichweite15 ft: , ein Ziel. Treffer: 20 (2d10 + 9) Durchdringungsschaden plus 14 (4d6) Kälteschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +16 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 16 (2d6 + 9) Schnittschaden plus 7 (2d6) Kälteschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +16 zum Treffen, Reichweite20 ft: , ein Ziel. Treffer: 18 (2d8 + 9) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Aura des Wahnsinns",
+      "type": "special",
+      "text": "Jede Kreatur nach Wahl des Drachen, die sich in120 feetReichweite des Drachen befindet und ihn wahrnimmt, muss einenDC 22Weisheits-Rettungswurf bestehen oder wird für 1 Minute in Angst versetzt. Eine Kreatur wiederholt den Rettungswurf am Ende jedes ihrer Züge; bei Erfolg endet der Effekt für sie. Wenn eine Kreatur den Rettungswurf um 5 oder mehr verfehlt, wird sie wahnsinnig. Eine wahnsinnig gewordene Kreatur ist dauerhaft verängstigt und verhält sich, als ob sie unter Verwirrung stünde, solange sie auf diese Weise verängstigt ist. Wenn der Rettungswurf einer Kreatur erfolgreich ist oder der Effekt für sie endet, ist die Kreatur für die nächsten 24 Stunden immun gegen die Aura des Wahnsinns des Drachen."
+    },
+    {
+      "name": "Atemwaffen (Aufladezeit 5-6)",
+      "type": "special",
+      "text": "Der Drache setzt eine der folgenden Atemwaffen ein:"
+    },
+    {
+      "name": "Gravitischer Atem",
+      "type": "special",
+      "text": "Der Drache haucht einen 90-Fuß-Würfel mit starker lokaler Schwerkraft aus, deren Ursprung der Drache selbst ist. Der Fallschaden in diesem Bereich erhöht sich auf1d10  pro10 feet  Fall. Wenn eine Kreatur ihren Zug innerhalb dieses Bereichs beginnt oder ihn zum ersten Mal in einem Zug betritt – einschließlich des Zeitpunkts, an dem der Drache das Feld erzeugt –, muss sie einenDC 24  Geschicklichkeits-Rettungswurf durchführen. Bei einem Fehlschlag ist die Kreatur gefesselt. Bei Erfolg wird die Bewegungsgeschwindigkeit der Kreatur halbiert, solange sie sich im Feld befindet. Eine gefesselte Kreatur wiederholt den Rettungswurf am Ende ihres Zuges. Das Feld bleibt bestehen, bis sich der Atem des Drachen wieder aufgeladen hat, und er kann den Gravitationsatem nicht zweimal hintereinander einsetzen."
+    },
+    {
+      "name": "Sternenblitz-Atem",
+      "type": "special",
+      "text": "Der Drache speit Sternenfeuer in einem 27 Meter breiten Kegel. Jede Kreatur in diesem Bereich muss einenDC 24Geschicklichkeits-Rettungswurf durchführen; bei einem misslungenen Rettungswurf erleidet sie 45 (13d6) Feuerschaden und 45 (13d6) Strahlungsschaden, bei einem erfolgreichen Rettungswurf nur die Hälfte dieses Schadens."
+    },
+    {
+      "name": "Teleport",
+      "type": "special",
+      "text": "Der Drache teleportiert sich auf magische Weise an einen beliebigen freien Ort innerhalb von 30 m."
+    }
+  ],
+  "source": "creature"
+}

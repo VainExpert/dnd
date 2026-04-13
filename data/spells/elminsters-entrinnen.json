@@ -1,0 +1,16 @@
+{
+  "id": "elminsters-entrinnen",
+  "name": "Elminsters Entrinnen",
+  "level": 2,
+  "school": "Bannmagie",
+  "casting_time": "1 Bonus Aktion",
+  "range": "Selbst",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 10 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Magier"
+  ],
+  "text": "Arkane Schutzrunen wappnen dich gegen Magie.\nFür die Wirkungsdauer hast du Vorteil auf Rettungswürfe gegen Zauber und magische Effekte.\nZusätzlich gilt: Bestehst du einen Rettungswurf gegen einen Zauber/magischen Effekt und würdest normalerweise halben Schaden nehmen, nimmst du stattdessen keinen Schaden."
+}

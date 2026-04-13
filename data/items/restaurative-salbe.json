@@ -1,0 +1,45 @@
+{
+  "id": "restaurative-salbe",
+  "type": "item",
+  "name": "Restaurative Salbe",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0.2,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 300,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieses Glasgefäß hat einen Durchmesser von 7,5 cm und enthält 1W4+1 Dosen einer zähen Salbe, die leicht nach Aloe riecht. Das Glas und die Salbe wiegen zusammen 250 g. Eine Dosis der Salbe kann als Aktion geschluckt oder auf die Haut aufgetragen werden. Die so behandelte Kreatur erhält 2W8+2 Trefferpunkte zurück, ist nicht mehr vergiftet und von allen Krankheiten geheilt.",
+  "tags": [
+    "heilung",
+    "magisch",
+    "aktion",
+    "krankheit",
+    "gift"
+  ]
+}

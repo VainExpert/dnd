@@ -1,0 +1,81 @@
+{
+  "name": "Jötunn Dragon Hunter",
+  "size": "Gargantuan",
+  "type": {
+    "type": "giant",
+    "tags": [
+      "gargantuan",
+      "giant",
+      "cr12",
+      "homebrew"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 15,
+  "hp": {
+    "average": 214,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 25,
+    "dex": 14,
+    "con": 23,
+    "int": 9,
+    "wis": 15,
+    "cha": 16
+  },
+  "skills": {
+    "Athletics": 11,
+    "Perception": 6,
+    "Survival": 10
+  },
+  "languages": [
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "12",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Blizzard Stalker",
+      "text": "The jötunn's vision and hearing are\nunimpeded by inclement weather such as wind,\nsnow, and fog, and it has advantage on all Dexterity\n(Stealth) checks it makes in such conditions."
+    },
+    {
+      "name": "Ice Walk",
+      "text": "The jötunn can move across and climb icy\nsurfaces without needing to make an ability check.\nAdditionally, difficult terrain composed of ice or\nsnow doesn't cost it extra movement."
+    },
+    {
+      "name": "Ice Weapons",
+      "text": "Once on each of its turns, the jötunn\ncan form a weapon of solid ice in its empty hand (no\naction required). This weapon can be either a javelin\nor a lance, either of which counts as magical for the\npurpose of overcoming resistances and immunity to\nnonmagical attacks. The weapon lasts indefinitely, as\nlong as it remains in sub-freezing temperatures."
+    },
+    {
+      "name": "Innate Spellcasting (1/Day)",
+      "text": "The jötunn can innately\ncast <i>ice storm</i>, requiring no material components.\nIts innate spellcasting ability is Charisma (spell save\nDC 15)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The jötunn makes two attacks with its\nbattleaxe."
+    },
+    {
+      "name": "Battleaxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach\n15 ft., one target. Hit: 26 (3d12 + 7) slashing\ndamage, or 33 (4d12 + 7) slashing damage if\nwielded with two hands."
+    },
+    {
+      "name": "Ice Lance",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach\n15 ft., one target. Hit: 52 (10d8 + 7) piercing\ndamage plus 22 (5d8) cold damage."
+    },
+    {
+      "name": "Ice Javelin",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +11 to hit, range\n80/320 ft., one target. Hit: 34 (6d8 + 7) piercing\ndamage plus 22 (5d8) cold damage."
+    }
+  ],
+  "source": "creature"
+}

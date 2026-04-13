@@ -1,0 +1,16 @@
+{
+  "id": "sengendes-niederstrecken",
+  "name": "Sengendes Niederstrecken",
+  "level": 1,
+  "school": "Hervorrufung",
+  "casting_time": "1 Bonus Aktion",
+  "range": "Selbst",
+  "components": "V",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Paladin"
+  ],
+  "text": "Wenn du das nächste Mal mit einer Nahkampfwaffe triffst, macht sie 1W6 Feuerschaden zusätzlich.\nDie getroffene Kreatur brennt danach und muss bis zum Abklingen des Zaubers einen CON-Rettungswurf machen. Bei Misslingen nimmt es weitere 1W6 Feuerschaden.\nDer Zauber endet 1 min nach Aussprechen oder wenn das Feuer gelöscht wird (z.B, indem das Wesen 1 Aktion benutzt, um das Feuer zu löschen oder mit Wasser in Berührung kommt). \n\nAuf höheren Level gewirkt: pro Level 1W6 mehr Feuerschaden"
+}

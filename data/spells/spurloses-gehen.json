@@ -1,0 +1,17 @@
+{
+  "id": "spurloses-gehen",
+  "name": "Spurloses Gehen",
+  "level": 2,
+  "school": "Bannmagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "V, G, M (Asche von verbrannten Mistel- oder Fichtenzweigen)",
+  "duration": "Konzentration, bis zu 1 h",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Waldläufer"
+  ],
+  "text": "Ein Schleier aus Schatten und Stille umgibt dich und deine Begleiter.\nFür die Wirkungsdauer hat jede Kreatur deiner Wahl mit bis zu 9 m Abstand von dir +10 auf Heimlichkeit-Würfe und kann nur mit Magie aufgespürt werden.\nIhr hinterlasst keine Fährten oder andere Spuren."
+}

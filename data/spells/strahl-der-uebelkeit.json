@@ -1,0 +1,17 @@
+{
+  "id": "strahl-der-uebelkeit",
+  "name": "Strahl der Übelkeit",
+  "level": 1,
+  "school": "Nekromantie",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Ein Strahl aus kränklich grüner Magie fliegt auf eine Kreatur in Reichweite.\nDu machst einen Fernkampf-Zauberangriff gegen das Ziel.\nBei Treffer: 2W6 Giftschaden und es muss einen CON-Rettungswurf machen.\n-> Bei Fehlschlag: bis Ende seines nächsten Zuges ist es Vergiftet\n\nAuf höheren Level gewirkt: pro Level 1W8 mehr Giftschaden"
+}

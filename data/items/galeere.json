@@ -1,0 +1,47 @@
+{
+  "id": "galeere",
+  "type": "item",
+  "name": "Galeere",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 30000,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Eine große Galeere, nicht für Zivilisten geeignet, kann bis zu 150 t Cargo transportieren, benötigt auch eine Crew von 80 Leuten.",
+  "tags": [
+    "abenteuer",
+    "reise",
+    "wassser",
+    "transport",
+    "navigation",
+    "militaer",
+    "kampf"
+  ]
+}

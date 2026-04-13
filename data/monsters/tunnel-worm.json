@@ -1,0 +1,52 @@
+{
+  "name": "Tunnel Worm",
+  "size": "Huge",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "huge",
+      "monstrosity",
+      "cr5",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 149,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 20
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 13,
+    "con": 21,
+    "int": 1,
+    "wis": 10,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Rend Armor",
+      "text": "When the tunnel worm hits a creature wearing nonmagical\narmor or carrying a shield with its bite attack, the armor or shield takes a\npermanent –1 penalty to the AC it offers. Armor reduced to an AC of 10 or\na shield that drops to +0 bonus is destroyed."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 26\n(6d6 + 5) piercing damage, and the target is grappled (escape DC 16).\nUntil this grapple ends, the target is restrained. The tunnel worm can bite\nonly the grappled creature and has advantage on attack rolls to do so."
+    }
+  ],
+  "source": "creature"
+}

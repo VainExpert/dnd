@@ -1,0 +1,54 @@
+{
+  "id": "ring-des-tierumgangs",
+  "type": "item",
+  "name": "Ring des Tierumgangs",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "ring",
+  "rarity": "selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 450,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": 3,
+    "recharge": "1W3 am Morgen"
+  },
+  "uses": {
+    "max": null,
+    "recharge": "1W3 am Morgen"
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [
+    "furcht",
+    "mit-tieren-sprechen",
+    "tierfreundschaft"
+  ],
+  "effects": [],
+  "text": "Dieser Ring hat drei Ladungen und erhält täglich im Morgengrauen 1W3 verbrauchte Ladungen zurück. Wenn du diesen Ring trägst, kannst du als Aktion eine seiner Ladungen verbrauchen, um einen der folgenden Zauber zu wirken: Furcht (Rettungswurf-SG 13), nur Tiere mit einem INT-Wert von maximal 3 können als Ziel bestimmt werden Mit Tieren sprechen Tierfreundschaft (Rettungswurf-SG 13)",
+  "tags": [
+    "magisch",
+    "ring",
+    "schmuck",
+    "zauber",
+    "tiere",
+    "ladungen",
+    "aktion",
+    "furcht",
+    "tierfreundschaft",
+    "mit tieren sprechen"
+  ]
+}

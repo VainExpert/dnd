@@ -1,0 +1,76 @@
+{
+  "name": "Silver Mouse Dragon",
+  "size": "Tiny",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "tiny",
+      "dragon",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic good",
+  "ac": 13,
+  "hp": {
+    "average": 27,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 10
+  },
+  "abilities": {
+    "str": 5,
+    "dex": 14,
+    "con": 14,
+    "int": 10,
+    "wis": 11,
+    "cha": 11
+  },
+  "skills": {
+    "Arcana": 2,
+    "Nature": 2,
+    "Perception": 4,
+    "Stealth": 6
+  },
+  "languages": [
+    "understands Common and Draconic but can’t speak"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Pack Tactics",
+      "text": "The mouse dragon has advantage on an attack roll against\na creature if at least one of the dragon’s allies is within 5 feet of the creature\nand the ally isn’t incapacitated."
+    },
+    {
+      "name": "Treasure Sense",
+      "text": "The mouse dragon can pinpoint, by scent, the location\nof precious metals and stones, such as coins and gems, within 60 feet of it."
+    },
+    {
+      "name": "Underfoot",
+      "text": "The mouse dragon can attempt to hide even when it is\nobscured only by a creature that is at least one size larger than it."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6\n(1d6 + 2) slashing damage."
+    },
+    {
+      "name": "Cold Breath (Recharge 5–6)",
+      "type": "special",
+      "text": "The dragon exhales an icy blast in a 10-\nfoot cone. Each creature in that area must make a DC 12 Constitution\nsaving throw, taking 22 (5d8) cold damage on a failed saving throw, or\nhalf as much damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

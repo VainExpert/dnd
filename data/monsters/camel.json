@@ -1,0 +1,44 @@
+{
+  "name": "Camel",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr1/8",
+      "monster-manual"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 9,
+  "hp": {
+    "average": 15,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 8,
+    "con": 14,
+    "int": 2,
+    "wis": 8,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "1/8",
+    "xp": 25,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-ring-der-elementar-herrschaft",
+  "type": "item",
+  "name": "Ring der Elementar-Herrschaft",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "ring",
+  "rarity": "legendär",
+  "requires_attunement": true,
+  "attunement_text": "erfordert Einstimmung",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Ring ist mit einer der vier Elementarebenen verbunden. Der SL wählt die verbundene Ebene aus oder bestimmt sie zufällig. Während du diesen Ring trägst, bist du bei Angriffswürfen gegen Elementare von der verbundenen Ebene im Vorteil, und die Elementare sind bei Angriffswürfen gegen dich im Nachteil. Außerdem kannst du je nach verbundener Ebene bestimmte Eigenschaften nutzen. Der Ring hat fünf Ladungen. Er erhält täglich im Morgengrauen 1W4+1 verbrauchte Ladungen zurück Mit dem Ring gewirkte Zauber haben einen Rettungswurf-SG von 17. Ring der Erdelementar-Herrschaft:  Du kannst zwei Ladungen des Rings verbrauchen, um Monster beherrschen  auf einen Erdelementar zu wirken. Außerdem kannst du dich über schwieriges Gelände aus Geröll, Steinen oder Erde bewegen, als wäre es normales Gelände. Weiterhin sprichst und verstehst du Terral. Wenn du hilfst, einen Erdelementar zu töten, während du auf den Ring eingestimmt bist, erhältst du außerdem die folgenden zusätzlichen Eigenschaften: Ring der Feuereiementar-Herrschaft:  Du kannst zwei Ladungen des Rings verbrauchen, um Monster beherrschen  auf einen Feuerelementar zu wirken. Außerdem bist du gegen Feuerschaden resistent. Weiterhin sprichst und verstehst du Ignal. Wenn du hilfst, einen Feuerelementar zu töten, während du auf den Ring eingestimmt bist, erhältst du außerdem die folgenden zusätzlichen Eigenschaften: Ring der Luftelementar-Herrschaft:  Du kannst zwei Ladungen des Rings verbrauchen, um Monster beherrschen  auf einen Luftelementar zu wirken. Wenn du fällst, sinkst du außerdem mit einer Geschwindigkeit von 18 Metern pro Runde und erleidest keinen Fallschaden. Weiterhin sprichst und verstehst du Aural. Wenn du hilfst, einen Luftelementar zu töten, während du auf den Ring eingestimmt bist, erhältst du außerdem die folgenden zusätzlichen Eigenschaften: Ring der Wassereiementar-Herrschaft: Du kannst zwei Ladungen des Rings verbrauchen, um Monster beherrschen  auf einen Wasserelementar zu wirken. Außerdem kannst du auf flüssigen Oberflächen stehen und gehen, als wären sie fester Boden. Weiterhin sprichst und verstehst du Aqual. Wenn du hilfst, einen Wasserelementar zu töten, während du auf den Ring eingestimmt bist, erhältst du außerdem die folgenden zusätzlichen Eigenschaften:",
+  "tags": []
+}

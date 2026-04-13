@@ -1,0 +1,85 @@
+{
+  "name": "Baba Yagas Reiter, Strahlender Tag",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr11",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "gesetztreu-neutral",
+  "ac": 20,
+  "hp": {
+    "average": 171,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 22,
+    "dex": 11,
+    "con": 21,
+    "int": 16,
+    "wis": 18,
+    "cha": 18
+  },
+  "skills": {
+    "Arcana": 7,
+    "Athletics": 10,
+    "History": 7,
+    "Perception": 8
+  },
+  "languages": [
+    "Celestial",
+    "Common",
+    "Infernal; telepathy 30 m."
+  ],
+  "challenge": {
+    "cr": "11",
+    "xp": 7200,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Der Reiter ist ein Zauberwirker der Stufe 12. Seine Zauberfertigkeit ist Charisma (RettungswurfDC 16, +8 auf Treffer bei Zauberangriffen). Er kann die folgenden Zauber von Natur aus wirken, ohne dass materielle Komponenten erforderlich sind:\n\nBeliebig oft: Heilige Flamme\n\nJe 1/Tag: Dimensionspforte, Feuerschild, Eile, Verlangsamung\n\n2/Tag: Tageslicht\n\nJe 3/Tag: Ätherische Reise, Phantomross (erscheint als Pferd in der Farbe des Reiters), Ebenenwechsel (nur für sich selbst und das Ross)"
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Reiter hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Der unvergleichliche Reiter",
+      "text": "Jeder Angriff, der auf das Reittier des Reiters gerichtet ist, trifft stattdessen den Reiter. Das Reittier profitiert von den Immunitäten des Reiters gegen Schaden und Zustände, und wenn der Reiter einen Rettungswurf gegen einen Flächenangriff besteht, erleidet das Reittier keinen Schaden."
+    },
+    {
+      "name": "Schnellzugriff",
+      "text": "Der Reiter kann als Bonusaktion zwischen dem Einsatz seiner Lanze und seines Langschwerts wechseln."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Reiter führt drei Angriffe mit seiner Lanze oder seinem Langschwert aus. Er kann bei einem dieser Angriffe den „Zeitangriff“ einsetzen, sofern dieser verfügbar ist."
+    },
+    {
+      "name": "Lance",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +10 auf Treffer, Reichweite 3 m. (Nachteil innerhalb von 1,5 m.), ein Ziel. Treffer: 12 (1d12 + 6) Durchdringungsschaden."
+    },
+    {
+      "name": "Langschwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +10 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 10 (1d8 + 6) Schnittschaden."
+    },
+    {
+      "name": "Zeitangriff (Abklingzeit 5-6)",
+      "type": "special",
+      "text": "Wenn der Reiter ein Ziel mit einem Nahkampfangriff trifft, erleidet das Ziel nicht nur den normalen Schaden, sondern muss zudem einenDC 17  Konstitutions-Rettungswurf bestehen, andernfalls altert es augenblicklich um3d10  Jahre. Eine Kreatur, die auf diese Weise altert, hat Nachteil bei Angriffswürfen, Eigenschaftsproben und Rettungswürfen, die auf Stärke, Geschicklichkeit und Konstitution basieren, bis der Alterungsprozess rückgängig gemacht wird. Eine Kreatur, die über ihre Lebensdauer hinaus altert, stirbt sofort. Die Alterung wird nach 24 Stunden automatisch rückgängig gemacht oder kann durch „Große Wiederherstellung“ oder vergleichbare Magie magisch rückgängig gemacht werden. Eine Kreatur, die den Rettungswurf besteht, ist 24 Stunden lang immun gegen den Effekt des Zeitangriffs."
+    }
+  ],
+  "source": "creature"
+}

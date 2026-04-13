@@ -1,0 +1,67 @@
+{
+  "name": "Angulotl-Kaulquappe",
+  "size": "Klein",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr1/4",
+      "minion",
+      "flee-mortals"
+    ]
+  },
+  "alignment": "any",
+  "ac": 11,
+  "hp": {
+    "average": 6,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30,
+    "swim": 30
+  },
+  "abilities": {
+    "str": 5,
+    "dex": 12,
+    "con": 9,
+    "int": 8,
+    "wis": 8,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Säureausbruch",
+      "text": "Wenn die Lebenspunkte des Kaulquappchens auf 0 sinken,\nplatzt sein Körper und verspritzt Säure in die Umgebung. Jede Kreatur\nim Umkreis5 feetvon  um das Kaulquappchen erleidet 1 Säureschaden."
+    },
+    {
+      "name": "Amphibisch",
+      "text": "Das Kaulquappe kann sowohl an der Luft als auch im Wasser atmen."
+    },
+    {
+      "name": "Handlanger",
+      "text": "Erleidet das Kaulquappe Schaden durch einen Angriff oder als\nFolge eines misslungenen Rettungswurfs, sinken seine Trefferpunkte auf\n0. Erleidet das Kaulquappe Schaden durch einen anderen Effekt, stirbt es,\nwenn der Schaden seinem maximalen Trefferpunktwert entspricht oder diesen übersteigt;\nansonsten erleidet es keinen Schaden."
+    },
+    {
+      "name": "Giftige Haut",
+      "text": "Wenn eine Kreatur ihren Zug in der Nähe5 feet \nvon drei oder mehr Kaulquappen beginnt, muss sie einen\nKonstitutions-Rettungswurf bestehen, sonst ist sie bis zum Beginn\nihres nächsten Zuges vergiftet. Die Schwierigkeitsklasse für diesen Rettungswurf beträgt 10 plus\ndie Anzahl der Kaulquappen in5 feetder Nähe der Kreatur."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Biss (Gruppenangriff)",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +3 zum Treffen, Reichweite\n1,5 m, ein Ziel. Treffer: 1 Durchschlagschaden."
+    }
+  ],
+  "source": "creature"
+}

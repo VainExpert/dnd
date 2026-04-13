@@ -1,0 +1,47 @@
+{
+  "id": "bleiche-tinktur",
+  "type": "item",
+  "name": "Bleiche Tinktur",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 250,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Eine Kreatur die das Gift eingenommen hat muss einen CON-Rettungswurf schaffen. Bei Fehlschlag nimmt sie 1W6 Giftschaden und wird für vergiftet. Der Rettungswurf wird alle 24 h wiederholt und bei Fehlschlag wird immer SChaden genommen. Nach 7 Erfolgen endet der Vergiftet Zustand.",
+  "tags": [
+    "gift",
+    "schaden",
+    "schwarzmarkt",
+    "kampf",
+    "einnahme",
+    "konsumiert",
+    "nützlich"
+  ]
+}

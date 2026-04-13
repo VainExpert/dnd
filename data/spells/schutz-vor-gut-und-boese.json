@@ -1,0 +1,20 @@
+{
+  "id": "schutz-vor-gut-und-boese",
+  "name": "Schutz vor Gut und Böse",
+  "level": 1,
+  "school": "Bannmagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G, M (Weihwasser oder Silber- / Eisenpulver)",
+  "duration": "Konzentration, bis zu 10 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Kleriker",
+    "Druide",
+    "Paladin",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Eine willige Kreatur, die du berührst, wird für die Wirkungsdauer vor bestimmten Kreaturtypen beschützt:\nAberrationen, himmlischen und teuflischen Wesen, Feen und Untoten.\nKreaturen dieser Typen sind bei Angriffen auf das Ziel im Nachteil.\nEs ist bei Rettungswürfen gegen Bezaubern, Verängstigen oder Besessen sein im Vorteil."
+}

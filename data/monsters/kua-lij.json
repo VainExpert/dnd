@@ -1,0 +1,66 @@
+{
+  "name": "Kua-Lij",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/8",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 11,
+  "hp": {
+    "average": 6,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 13,
+    "con": 14,
+    "int": 16,
+    "wis": 13,
+    "cha": 8
+  },
+  "skills": {
+    "Arcana": 5
+  },
+  "languages": [
+    "Aquan",
+    "Common",
+    "Elven",
+    "Gnome",
+    "Kuah-Lij"
+  ],
+  "challenge": {
+    "cr": "1/8",
+    "xp": 25,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Gifted Craftsmen",
+      "text": "A kuah-lij has proficiency in alchemist’s supplies,\njeweler’s tools, and smith’s tools."
+    },
+    {
+      "name": "Magical Sight",
+      "text": "A kuah-lij can sense the presence of magic within 30\nfeet of it. It can use an action to see a faint aura around any visible creature\nor object in the area that bears magic, and it learns its school of magic,\nif any."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range\n20/60 ft., one target. Hit: 3 (1d4 + 1) piercing damage."
+    },
+    {
+      "name": "Light Crossbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +3 to hit, range 80/320 ft.,\none target. Hit: 5 (1d8 + 1) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

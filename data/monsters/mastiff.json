@@ -1,0 +1,51 @@
+{
+  "name": "Mastiff",
+  "size": "Medium",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "medium",
+      "beast",
+      "cr1/8",
+      "monster-manual"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 12,
+  "hp": {
+    "average": 5,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 14,
+    "con": 12,
+    "int": 3,
+    "wis": 12,
+    "cha": 7
+  },
+  "skills": {
+    "Perception": 3
+  },
+  "languages": [],
+  "challenge": {
+    "cr": "1/8",
+    "xp": 25,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Keen Hearing and Smell",
+      "text": "The mastiff has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,57 @@
+{
+  "name": "Bernsteinfarbenes Schlamm",
+  "size": "Winzig",
+  "type": {
+    "type": "ooze",
+    "tags": [
+      "tiny",
+      "ooze",
+      "cr1/2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 8,
+  "hp": {
+    "average": 13,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 10
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 8,
+    "con": 14,
+    "int": 1,
+    "wis": 1,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Schein",
+      "text": "Der bernsteinfarbene Schlamm ist von einem Pint\nBier oder Met nicht zu unterscheiden, solange er sich nicht bewegt."
+    },
+    {
+      "name": "Aufgießen",
+      "text": "Ein Opfer, das bernsteinfarbenen Schleim verschluckt hat, muss einenDC\n12  Konstitutions-Rettungswurf durchführen. Bei einem erfolgreichen Rettungswurf wird der bernsteinfarbene\nSchleim aus dem Körper des Wirts in einen unbesetzten Bereich innerhalb\n5 feetdes Wirts ausgestoßen. Bei einem misslungenen Rettungswurf dringt der bernsteinfarbene Schleim\nin den Körper des Wirts ein. Der bernsteinfarbene Schleim ist vollständig vor Effekten\naußerhalb des Körpers des Wirts geschützt und ist blind und taub.\n\nSolange der bernsteinfarbene Schleim im Körper des Wirts ist, muss die Wirtskreatur zu Beginn jedes ihrer Züge einenDC 12\n Rettungswurf auf Konstitution zu Beginn jedes seiner Züge bestehen. Bei\neinem misslungenen Rettungswurf erleidet der Wirt 7 (2d6) Säureschaden oder die Hälfte davon\nbei einem erfolgreichen Rettungswurf. Wenn dieser Schaden den Wirt auf 0 Trefferpunkte\nreduziert, werden seine Innereien verflüssigt und ein weiterer bernsteinfarbener Schleim entsteht.\nEin bernsteinfarbener Schleim kann mit Magie wie E lesser\nrestorationE  gewaltsam entfernt werden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Anhängen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +3 zum Treffen, Reichweite:1,5 m 0, eine Kreatur. Treffer: Der\nbernsteinfarbene Schleim haftet am Ziel. Solange er daran haftet, wandert der bernsteinfarbene Schleim\nmithilfe seiner Bewegung den Körper hinauf und versucht, in einen neuen\nWirt einzudringen. Eine Kreatur kann ihre Aktion nutzen, um einenDC 11  Stärke (Sportlichkeit)-\nProbe durchzuführen, um den Schleim von der Kreatur abzuziehen, an der er haftet."
+    }
+  ],
+  "source": "creature"
+}

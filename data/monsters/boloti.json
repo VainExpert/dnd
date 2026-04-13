@@ -1,0 +1,71 @@
+{
+  "name": "Boloti",
+  "size": "Tiny",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "tiny",
+      "fey",
+      "cr1",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 15,
+  "hp": {
+    "average": 63,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 60
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 20,
+    "con": 14,
+    "int": 13,
+    "wis": 12,
+    "cha": 11
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 7
+  },
+  "languages": [
+    "Common",
+    "Primordial",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The boloti can breathe air and water."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The boloti's innate spellcasting ability is Intelligence (spell save DC 11). It can innately cast the following spells, requiring no material components:\n\n* At will: <i>detect magic, water walk</i>\n\n* 3/day: <i>control water, create or destroy water, fog cloud, invisibility, see invisibility, water breathing</i>\n\n* 1/day: <i>wall of ice</i>"
+    },
+    {
+      "name": "Water Mastery",
+      "text": "A boloti has advantage on attack rolls if both it and its opponent are in water. If the opponent and the boloti are both on dry ground, the boloti has disadvantage on attack rolls."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d4 + 5) piercing damage."
+    },
+    {
+      "name": "Vortex (1/Day)",
+      "type": "special",
+      "text": "A boloti can transform into a vortex of swirling, churning water for up to 4 minutes. This ability can be used only while the boloti is underwater, and the boloti can't leave the water while in vortex form. While in vortex form, the boloti can enter another creature's space and stop there in vortex form. In this liquid form, the boloti still takes normal damage from weapons and magic. A creature in the same space as the boloti at the start of the creature's turn takes 9 (2d8) bludgeoning damage unless it makes a successful DC 15 Dexterity saving throw. If the creature is Medium or smaller, a failed saving throw also means it is grappled (escape DC 11). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw succeeds, the target is pushed 5 feet so it is out of the boloti's space."
+    }
+  ],
+  "source": "creature"
+}

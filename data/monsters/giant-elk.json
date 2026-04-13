@@ -1,0 +1,61 @@
+{
+  "name": "Giant Elk",
+  "size": "Huge",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "huge",
+      "beast",
+      "cr2",
+      "monster-manual"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 42,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 16,
+    "con": 14,
+    "int": 7,
+    "wis": 14,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "Giant Elk",
+    "understands Common",
+    "Elvish",
+    "and Sylvan but can't speak"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "text": "If the elk moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Ram",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Hooves",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one prone creature. Hit: 22 (4d8 + 4) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

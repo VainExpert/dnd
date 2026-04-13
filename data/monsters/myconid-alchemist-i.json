@@ -1,0 +1,58 @@
+{
+  "name": "Myconid Alchemist I",
+  "size": "Medium",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "medium",
+      "plant",
+      "cr1",
+      "homebrew"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 14,
+  "hp": {
+    "average": 6,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 14,
+    "int": 12,
+    "wis": 10,
+    "cha": 8
+  },
+  "skills": {
+    "Stealth": 5
+  },
+  "languages": [
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Stalk-still",
+      "text": "A myconid that remains perfectly still has advantage on\nDexterity (Stealth) checks made to hide."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Stone Knuckles",
+      "type": "special",
+      "text": "Melee weapon attack: +5 to hit. Hit: 6 (1d6+3)\nslashing damage."
+    },
+    {
+      "name": "Spore Bomb",
+      "type": "special",
+      "text": "Ranged weapon attack: +3 to hit, range 30/60 ft. Hit: 2\n(1d4) poison damage and the target must succeed on a DC 12 Constitution\nsaving throw or see 4 versions of the myconid for 1 minute. An affected\ncreature making an attack against one of the visions has a 25% chance to\nhit the real myconid. The affected creature can attempt the saving throw\nat the end of each of its turns, ending the effect on a success."
+    }
+  ],
+  "source": "creature"
+}

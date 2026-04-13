@@ -1,0 +1,60 @@
+{
+  "name": "Avatar des Todes",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr--",
+      "monster-manual"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 20,
+  "hp": {
+    "average": 0,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 16,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 16
+  },
+  "skills": {},
+  "languages": [
+    "all languages known to its summoner"
+  ],
+  "challenge": {
+    "cr": "--",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Körperlose Bewegung",
+      "text": "Der Avatar kann sich durch andere Wesen und Objekte bewegen, als wären diese schwieriges Gelände. Er erleidet 5 (1d10) Kraftschaden, wenn er seinen Zug innerhalb eines Objekts beendet."
+    },
+    {
+      "name": "Immunität umkehren",
+      "text": "Der Avatar ist immun gegen Wirkungen, die Untote vertreiben."
+    },
+    {
+      "name": "Trefferpunkte",
+      "text": "Der Avatar des Todes erscheint mit einer Lebenspunktzahl, die der Hälfte der maximalen Lebenspunkte seines Beschwörers entspricht."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Erntesense",
+      "type": "special",
+      "text": "Der Avatar führt seine geisterhafte Sense durch eine Kreatur in5 feetseiner Nähe und verursacht 7 (1d8 + 3) Schnittschaden sowie 4 (1d8) nekrotischen Schaden."
+    }
+  ],
+  "source": "creature"
+}

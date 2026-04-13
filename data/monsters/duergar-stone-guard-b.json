@@ -1,0 +1,55 @@
+{
+  "name": "Duergar Stone Guard (B)",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "mordenkainens-tome-of-foes",
+      "dwarf"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 18,
+  "hp": {
+    "average": 39,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 11,
+    "con": 14,
+    "int": 11,
+    "wis": 10,
+    "cha": 9
+  },
+  "skills": {},
+  "languages": [
+    "Dwarvish",
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "text": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Phalanx Formation",
+      "text": "The duergar has advantage on attack rolls and Dexterity saving throws while standing within 5 feet of a duergar ally wielding a shield."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

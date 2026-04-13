@@ -1,0 +1,45 @@
+{
+  "id": "adamant-modifikation-ruestung",
+  "type": "item",
+  "name": "Adamant-Modifikation Rüstung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 750,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Überzieht eine mittlere bis schwere Rüstung (außer Fell) mit Adamant. Dadurch können keine kritischen Treffer gegen dich erzielt werden.",
+  "tags": [
+    "abenteuer",
+    "magisch",
+    "abwehr",
+    "schmied",
+    "modifikation"
+  ]
+}

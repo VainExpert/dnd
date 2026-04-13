@@ -1,0 +1,18 @@
+{
+  "id": "magiestein",
+  "name": "Magiestein",
+  "level": 0,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Bonus Aktion",
+  "range": "Berührung",
+  "components": "V, G",
+  "duration": "1 min",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Hexenmeister",
+    "Artificer"
+  ],
+  "text": "Du berührst 1 bis 3 Kieselsteine. Du oder eine andere Kreatur kann mit einem der Steine einen Fernkampf-Zauberangriff durchführen, in dem der Stein geworfen oder geschleudert wird. Bei Wurf hat er eine Reichweite von 18 m. Wenn jemand anderes mit dem Stein angreift, wird dein Zauberfähigkeits-Modifikator für den Angriff verwendet.\nBei Treffer: 1W6 + dein Zauberfähigkeits-Modifikator Wuchtschaden\nEgal ob Treffer oder Fehlschuss, der Zauber endet auf dem geworfenen Stein.\nWenn du den Zauber erneut wirkst, endet der Zauber auf allen Steinen, die noch davon betroffen sind."
+}

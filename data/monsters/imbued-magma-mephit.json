@@ -1,0 +1,70 @@
+{
+  "name": "Imbued Magma Mephit",
+  "size": "Small",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "small",
+      "elemental",
+      "cr2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 12,
+  "hp": {
+    "average": 34,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 12,
+    "int": 8,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Stealth": 4
+  },
+  "languages": [
+    "Ignan",
+    "Terran"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Death Burst",
+      "text": "When the mephit dies, it explodes in a\nburst of lava. Each creature within 5 feet of it must\nmake a DC 12 Dexterity saving throw, taking 14\n(4d6) fire damage on a failed save, or half as much\ndamage on a successful one."
+    },
+    {
+      "name": "False Appearance",
+      "text": "While the mephit remains\nmotionless, it is indistinguishable from an ordinary\nmound of magma."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The mephit makes two claw attacks."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5ft.,\none target. Hit: 5 (1d6 + 2) piercing damage plus 5\n(2d4) fire damage."
+    },
+    {
+      "name": "Magma Spout (Recharge 6)",
+      "type": "special",
+      "text": "The mephit causes\nmagma to burst forward from a point on a solid\nsurface within 50 ft. All creatures a 15-foot line in\nfront of that point must make a DC 12 dexterity\nsaving throw, taking 13 (3d8) fire damage on a\nfailed save, or half as much damage on a successful\none."
+    }
+  ],
+  "source": "creature"
+}

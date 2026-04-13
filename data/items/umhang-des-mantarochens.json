@@ -1,0 +1,46 @@
+{
+  "id": "umhang-des-mantarochens",
+  "type": "item",
+  "name": "Umhang des Mantarochens",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 350,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diesen Umhang mit aufgesetzter Kapuze trägst, kannst du unter Wasser atmen und du hast eine Schwimmbewegungsrate von 18 Metern. Das Aufoder Absetzen der Kapuze erfordert eine Aktion.",
+  "tags": [
+    "magisch",
+    "umhang",
+    "wasser",
+    "schwimmen",
+    "bewegung",
+    "aktion"
+  ]
+}

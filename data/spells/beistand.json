@@ -1,0 +1,22 @@
+{
+  "id": "beistand",
+  "name": "Beistand",
+  "level": 2,
+  "school": "Bannmagie",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V, G, M (weißer Stoff)",
+  "duration": "8 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Kleriker",
+    "Druide",
+    "Waldläufer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Wähle bis zu 3 Kreaturen in Reichweite.\nDas TP-Maximum und die aktuellen TP erhöhen sich um 5 für die Wirkungsdauer bei allen Zielen.\n\nAuf höheren Level gewirkt: pro Level 1 weitere Kreatur als Ziel wählbar."
+}

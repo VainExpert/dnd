@@ -1,0 +1,83 @@
+{
+  "name": "Tigerpede",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr2",
+      "homebrew"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 12,
+  "hp": {
+    "average": 75,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 15,
+    "int": 3,
+    "wis": 12,
+    "cha": 6
+  },
+  "skills": {
+    "Intimidation": 0,
+    "Perception": 3
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Aggressive Charge",
+      "text": "On its first turn in combat, before\nmoving or taking any actions, the tigerpede can\nspend its entire movement to move up to twice its\nspeed toward a hostile creature it can see."
+    },
+    {
+      "name": "Keen Sight and Smell",
+      "text": "The tigerpede has advantage on\nWisdom (Perception) checks that rely on sight or\nsmell."
+    },
+    {
+      "name": "Sure-Footed",
+      "text": "The tigerpede has advantage on\nStrength and Dexterity saving throws made against\neffects that would knock it prone."
+    },
+    {
+      "name": "Tackle",
+      "text": "If the tigerpede tiger moves at least 20 feet\nstraight toward a target and then hits it with a gore\nattack on the same turn, the target takes an extra 5\n(2d4) slashing damage. If the target is prone, the\ntigerpede can make a bite attack against it as a bonus\naction."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The tigerpede makes two attacks: one\nwith its bite and one with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one\ntarget. Hit: 11 (2d6 + 4) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft.,\none target. Hit: 9 (2d4 + 4) slashing damage."
+    },
+    {
+      "name": "Gore",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft.,\none target. Hit: 9 (2d4 + 4) slashing damage, and if\nthe target is a creature, it must succeed on a DC 14\nStrength saving throw or be knocked prone."
+    }
+  ],
+  "source": "creature"
+}

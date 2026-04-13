@@ -1,0 +1,78 @@
+{
+  "name": "Aridni",
+  "size": "Klein",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "small",
+      "fey",
+      "cr5",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 15,
+  "hp": {
+    "average": 82,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 9,
+    "dex": 21,
+    "con": 14,
+    "int": 12,
+    "wis": 11,
+    "cha": 16
+  },
+  "skills": {
+    "Acrobatics": 11,
+    "Perception": 3,
+    "Stealth": 11
+  },
+  "languages": [
+    "Common",
+    "Gnoll",
+    "Sylvan",
+    "Void Speech"
+  ],
+  "challenge": {
+    "cr": "5",
+    "xp": 1800,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Vorbeiflug",
+      "text": "Der Aridni löst keinen Gelegenheitsangriff aus, wenn er sich aus der Reichweite eines Gegners fliegt."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Aridni hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Aridni ist Charisma (ZauberrettungswurfDC 14). Er kann von Natur aus die folgenden Zauber wirken:\n\n* Beliebig oft: Tanzende Lichter, Magie entdecken, Unsichtbarkeit\n\n* 3/Tag: Person bezaubern, Feenfeuer, Magierrüstung\n\n* 1/Tag: Stachelwachstum"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Kurzschwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 8 (1d6 + 5) Durchschlagschaden."
+    },
+    {
+      "name": "Elfen-Schleife",
+      "type": "special",
+      "text": "Fernkampfangriff: +8 auf Treffer, Reichweite40/160  Fuß, ein Ziel. Treffer: 7 (1d4 + 5) Durchschlagschaden."
+    },
+    {
+      "name": "Slaver Arrows",
+      "type": "special",
+      "text": "Ein Aridni kann zusätzlich zu dem normalen Schaden, den seine Pfeile verursachen, einen magischen Effekt hinzufügen. In diesem Fall wählt der Aridni einen der folgenden Effekte aus:\n\n* **Verwirrung.** Das Ziel muss einenDC 14  Weisheits-Rettungswurf bestehen oder wird für2d4-1  Runden verwirrt (wie beim Zauber).\n\n* **Angst.** Das Ziel muss einenDC 14  Weisheits-Rettungswurf bestehen oder wird für2d4  Runden verängstigt.\n\n* **Grauenhaftes Gelächter.** Das Ziel muss einenDC 14  Weisheits-Rettungswurf bestehen oder wird für2d4  Runden handlungsunfähig. Während es handlungsunfähig ist, liegt das Ziel am Boden und lacht unkontrolliert.\n\n* **Schlaf.** Das Ziel muss einenDC 14  Weisheits-Rettungswurf bestehen oder schläft für2d4  Minuten ein. Die Kreatur wacht auf, wenn sie Schaden erleidet oder wenn eine andere Kreatur eine Aktion ausführt, um sie wachzurütteln."
+    }
+  ],
+  "source": "creature"
+}

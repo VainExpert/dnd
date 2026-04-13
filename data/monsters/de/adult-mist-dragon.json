@@ -1,0 +1,97 @@
+{
+  "name": "Erwachsener Nebeldrache",
+  "size": "Riesig",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "huge",
+      "dragon",
+      "cr15",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 18,
+  "hp": {
+    "average": 189,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80,
+    "swim": 40
+  },
+  "abilities": {
+    "str": 25,
+    "dex": 14,
+    "con": 25,
+    "int": 16,
+    "wis": 14,
+    "cha": 21
+  },
+  "skills": {
+    "Perception": 12,
+    "Stealth": 7,
+    "Survival": 7
+  },
+  "languages": [
+    "Auran",
+    "Aquan",
+    "Celestial",
+    "Common",
+    "Draconic",
+    "Ignan",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "15",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Amphibisch",
+      "text": "Der Nebeldrache kann sowohl Wasser als auch Luft ausstoßen."
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache einen Rettungswurf verfehlt, kann er\nsich stattdessen für einen Erfolg entscheiden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache setzt seine „Furchteinflößende Präsenz“ ein und führt drei\nAngriffe aus: einen mit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +12 auf Treffer, Reichweite20 ft: , ein Ziel. Treffer:\n18 (2d10 + 7) Durchdringungsschaden plus 10 (3d6) Feuerschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +12 auf Treffer, Reichweite10 ft: , ein Ziel.\nTreffer: 17 (3d6 + 7) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +12 auf Treffer, Reichweite20 ft: , ein Ziel.\nTreffer: 16 (2d8 + 7) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Furchterregende Präsenz",
+      "type": "special",
+      "text": "Jedes Wesen nach Wahl des Drachen, das\nsich in120 feetReichweite des Drachen befindet und ihn wahrnimmt, muss\neinenDC 18Weisheits-Rettungswurf bestehen oder wird für 1\nMinute verängstigt. Eine Kreatur kann den Rettungswurf am Ende\njedes ihrer Züge wiederholen und beendet den Effekt auf sich selbst bei Erfolg. Wenn der\nRettungswurf einer Kreatur erfolgreich ist oder der Effekt für sie endet,\nist die Kreatur für die\nnächsten 24 Stunden immun gegen die Furchterregende Präsenz des Drachen."
+    },
+    {
+      "name": "Atemwaffe (Aufladezeit 5–6)",
+      "type": "special",
+      "text": "Der Nebeldrache setzt eine der\nfolgenden Atemwaffen ein.\n\n1. Verhüllender Nebel. Der Drache speit einen trüben, undurchsichtigen Nebel in einem 60-Fuß-\nWürfel aus, der sich um Ecken herum ausbreitet. Dieser Nebel verdeckt den Bereich stark und\nbleibt 1 Minute lang bestehen oder bis er durch mäßigen oder stärkeren Wind\n(mindestens10 miles  pro Stunde) zerstreut wird.\n\n2. Heißer Nebel. Der Drache haucht einen feurigen Stoß aus anhaltendem Nebel in\neinem 60-Fuß-Kegel aus, der sich um Ecken herum ausbreitet. Der Nebel verdeckt den Bereich leicht\nund bleibt 1 Minute lang bestehen oder bis er durch mäßigen oder\nstärkeren Wind (mindestens10 miles  pro Stunde) zerstreut wird. Jede Kreatur, die den\nBereich betritt oder dort ihren Zug beginnt, muss einenDC 20  Konstitutions-Rettungswurf durchführen und\nerleidet bei einem misslungenen Rettungswurf 63 (18d6) Feuerschaden oder die Hälfte davon\nbei einem erfolgreichen. Unter Wasser zu sein gewährt keine Resistenz\ngegen diesen Schaden."
+    },
+    {
+      "name": "Nebelform",
+      "type": "special",
+      "text": "Der Nebeldrache verwandelt sich in eine riesige Nebelwolke\noder zurück in seine wahre Gestalt. In seiner Nebelgestalt kann der Drache keine\nAktionen ausführen, nicht sprechen und keine Gegenstände manipulieren. Er ist schwerelos, hat eine Fluggeschwindigkeit von\n6 m, kann schweben und den Raum einer feindlichen Kreatur betreten und\ndort verweilen. Außerdem kann der Nebel, sofern Luft durch einen Raum strömen kann, dies\ntun, ohne sich zusammenzudrücken, und er kann nicht durch Wasser dringen. Er hat Vorteil bei\nRettungswürfen auf Stärke, Geschicklichkeit und Konstitution und ist immun gegen jeglichen\nnichtmagischen Schaden."
+    }
+  ],
+  "source": "creature"
+}

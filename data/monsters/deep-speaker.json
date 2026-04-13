@@ -1,0 +1,62 @@
+{
+  "name": "Deep Speaker",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 12,
+  "hp": {
+    "average": 58,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 15,
+    "int": 12,
+    "wis": 14,
+    "cha": 16
+  },
+  "skills": {
+    "Arcana": 4,
+    "History": 4,
+    "Perception": 5,
+    "Religion": 4
+  },
+  "languages": [
+    "Any two languages",
+    "telepathy 30 ft."
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Deep Knowledge",
+      "text": "The speaker can read all writing."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The speaker is a 6th-level spellcaster.\nIts spellcasting ability is Charisma (spell save DC\n14, +6 to hit with spell attacks). It regains its\nexpended spellslots when it finishes a short or long\nrest. The speaker has the following warlock spells\nprepared:\n\n* Cantrips (at will): <i>chill touch, eldritch blast, mage hand</i>\n\n* 1st-3rd level (2 3rd-level slots): <i>clairvoyance, detect thoughts, dissonant whispers, mage armor, phantasmal force, sending, Tasha's hideous laughter</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +4 to hit,\nreach 5 ft. or range 20/60 ft., one target. Hit: 4\n(1d4 + 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

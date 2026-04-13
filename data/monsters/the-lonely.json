@@ -1,0 +1,48 @@
+{
+  "name": "The Lonely",
+  "size": "Medium",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr9",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 16,
+  "hp": {
+    "average": 112,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 17,
+    "int": 6,
+    "wis": 11,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Psychic Leech",
+      "text": "At the start of each of the Lonely's turns, each creature within 5 feet of it must succeed on a DC 15 Wisdom saving throw or take 10 (3d6) psychic damage."
+    },
+    {
+      "name": "Thrives on Company",
+      "text": "The Lonely has advantage on attack rolls while it is within 30 feet of at least two other creatures. It otherwise has disadvantage on attack rolls."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

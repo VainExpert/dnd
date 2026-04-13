@@ -1,0 +1,87 @@
+{
+  "name": "Erwachsener Weißer Drache",
+  "size": "Riesig",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "huge",
+      "dragon",
+      "cr13",
+      "monster-manual"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 18,
+  "hp": {
+    "average": 200,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 30,
+    "fly": 80,
+    "swim": 40
+  },
+  "abilities": {
+    "str": 22,
+    "dex": 10,
+    "con": 22,
+    "int": 8,
+    "wis": 12,
+    "cha": 12
+  },
+  "skills": {
+    "Perception": 11,
+    "Stealth": 5
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "13",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Eiswanderung",
+      "text": "Der Drache kann sich auf vereisten Oberflächen fortbewegen und diese erklimmen, ohne eine Fertigkeitsprobe ablegen zu müssen. Außerdem kostet ihn schwieriges Gelände aus Eis oder Schnee keine zusätzlichen Schritte."
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache einen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache kann seine „Furchteinflößende Präsenz“ einsetzen. Anschließend führt er drei Angriffe aus: einen mit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 17 (2d10 + 6) Durchschlagschaden plus 4 (1d8) Kälteschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 13 (2d6 + 6) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite15 ft: , ein Ziel. Treffer: 15 (2d8 + 6) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Furchterregende Präsenz",
+      "type": "special",
+      "text": "Jede Kreatur, die sich 120 ftim Umkreis von  des Drachen befindet und dessen Anwesenheit wahrnimmt, muss einenDC 14  Weisheits-Rettungswurf bestehen oder wird für 1 Minute in Angst versetzt. Eine Kreatur kann den Rettungswurf am Ende jedes ihrer Züge wiederholen und den Effekt auf sich selbst bei Erfolg beenden. Wenn der Rettungswurf einer Kreatur erfolgreich ist oder der Effekt für sie endet, ist die Kreatur für die nächsten 24 Stunden immun gegen die „Furchterregende Präsenz“ des Drachen."
+    },
+    {
+      "name": "Kalter Atem (Wiederherstellung 5-6)",
+      "type": "special",
+      "text": "Der Drache speit einen eisigen Atemstoß in Form eines 18 Meter breiten Kegels aus. Jede Kreatur in diesem Bereich muss einenDC 19  Konstitutions-Rettungswurf durchführen und erleidet bei einem misslungenen Rettungswurf 54 (12d8) Kälteschaden oder bei einem erfolgreichen Rettungswurf die Hälfte dieses Schadens."
+    }
+  ],
+  "source": "creature"
+}

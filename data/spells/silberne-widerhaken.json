@@ -1,0 +1,18 @@
+{
+  "id": "silberne-widerhaken",
+  "name": "Silberne Widerhaken",
+  "level": 1,
+  "school": "Verzauberung",
+  "casting_time": "1 Reaktion, die du nimmst, wenn eine Kreatur in 18 m von dir einen Angriffs-, Rettungs- oder sonstigen Wurf schafft",
+  "range": "18 m",
+  "components": "V",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du lenkst die auslösende Kreatur ab. Die muss den Wurf wiederholen und den niedrigeren Wert verwenden.\nDu kannst eine andere Kreatur, die du in Reichweite sehen kannst, wählen. Diese hat Vorteil auf einen Angriffs-, Fertigkeit- oder Rettungswurf in der nächsten Minute. Eine Kreatur kann zeitgleich durch den Zauber nur einmal verstärkt werden."
+}

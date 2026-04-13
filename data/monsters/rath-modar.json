@@ -1,0 +1,64 @@
+{
+  "name": "Rath Modar",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr6",
+      "tyranny-of-dragons",
+      "human"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 13,
+  "hp": {
+    "average": 71,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 16,
+    "con": 14,
+    "int": 18,
+    "wis": 14,
+    "cha": 10
+  },
+  "skills": {
+    "Arcana": 7,
+    "Deception": 3,
+    "Insight": 5,
+    "Stealth": 6
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Infernal",
+    "Primordial",
+    "Thayan"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Special Equipment",
+      "text": "Rath has a staff of fire, and scrolls of dimension door, feather fall, and fireball."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "Rath is an 11th-level spellcaster who uses Intelligence as his spellcasting ability (spell save DC 15, +7 to hit with spell attacks). Rath has the following spells prepared from the wizard spell list:\n\n* Cantrips (at will): <i>fire bolt, minor illusion, prestidigitation, shocking grasp</i>\n\n* 1st level (4 slots): <i>chromatic orb, color spray, mage armor, magic missile</i>\n\n* 2nd level (3 slots): <i>detect thoughts, mirror image, phantasmal force</i>\n\n* 3rd level (3 slots): <i>counterspell, fireball, major image</i>\n\n* 4th level (3 slots): <i>confusion, greater invisibility</i>\n\n* 5th level (2 slots): <i>mislead, seeming</i>\n\n* 6th level (1 slot): <i>globe of invulnerability</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Quarterstaff",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d8) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

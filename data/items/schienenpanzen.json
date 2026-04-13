@@ -1,0 +1,52 @@
+{
+  "id": "schienenpanzer",
+  "type": "item",
+  "name": "Schienenpanzer",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 30,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 200,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": {
+    "base": 17,
+    "dex_bonus": false,
+    "stealth_disadvantage": true,
+    "type": "schwer",
+    "str_requirement": 15
+  },
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Der Schienenpanzer besteht aus engen vertiklen Metallstreifen auif Leder über Stoff. Ein flexibles Kettenhemd schützt die Gelenke.",
+  "tags": [
+    "abenteuer",
+    "rüstung",
+    "abwehr",
+    "schwer",
+    "heimlichkeit_nachteil",
+    "schmied"
+  ]
+}

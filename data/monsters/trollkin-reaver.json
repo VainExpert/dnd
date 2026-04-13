@@ -1,0 +1,84 @@
+{
+  "name": "Trollkin Reaver",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr4",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 14,
+  "hp": {
+    "average": 82,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 13,
+    "con": 16,
+    "int": 11,
+    "wis": 12,
+    "cha": 13
+  },
+  "skills": {
+    "Intimidation": 5,
+    "Survival": 3
+  },
+  "languages": [
+    "Common",
+    "Trollkin"
+  ],
+  "challenge": {
+    "cr": "4",
+    "xp": 1100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Regeneration",
+      "text": "The trollkin reaver regains 10 hit points at the start of its turn. This trait doesn't function if the trollkin took acid or fire damage since the end of its previous turn. The trollkin dies if it starts its turn with 0 hit points and doesn't regenerate."
+    },
+    {
+      "name": "Thick Hide",
+      "text": "The trollkin reaver's skin is thick and tough, granting it a +1 bonus to AC. This bonus is already factored into the trollkin's AC."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The trollkin raider makes three melee attacks: two with its claws and one with its bite, or two with its battleaxe and one with its handaxe, or it makes two ranged attacks with its handaxes."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) slashing damage."
+    },
+    {
+      "name": "Battleaxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage or 9 (1d10 + 4) slashing damage if used with two hands. Using the battleaxe two-handed prevents using the handaxe."
+    },
+    {
+      "name": "Handaxe",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) slashing damage."
+    },
+    {
+      "name": "Howl of Battle (Recharge 6)",
+      "type": "special",
+      "text": "Up to three allies who can hear the trollkin reaver and are within 30 feet of it can each make one melee attack as a reaction."
+    }
+  ],
+  "source": "creature"
+}

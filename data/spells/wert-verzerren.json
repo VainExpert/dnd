@@ -1,0 +1,19 @@
+{
+  "id": "wert-verzerren",
+  "name": "Wert verzerren",
+  "level": 1,
+  "school": "Illusionsmagie",
+  "casting_time": "1 min",
+  "range": "Berührung",
+  "components": "V",
+  "duration": "8 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du wirkst diesen Zauber auf einen Gegenstand, der nicht größer als 30 cm pro Seite ist.\nDu kannst den äußerlichen Wert verdoppeln oder halbieren.\nJeder, der den Gegenstand untersuchst, muss einen Nachforschung-Wurf machen.\n\nAuf höheren Level gewirkt: pro Level 30 cm mehr pro Seite des Gegenstands"
+}

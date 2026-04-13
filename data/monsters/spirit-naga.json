@@ -1,0 +1,55 @@
+{
+  "name": "Spirit Naga",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr8",
+      "monster-manual"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 15,
+  "hp": {
+    "average": 75,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 17,
+    "con": 14,
+    "int": 16,
+    "wis": 15,
+    "cha": 16
+  },
+  "skills": {},
+  "languages": [
+    "Abyssal",
+    "Common"
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Rejuvenation",
+      "text": "If it dies, the naga returns to life in 1d6 days and regains all its hit points. Only a wish spell can prevent this trait from functioning."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The naga is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following wizard spells prepared:\n\n* Cantrips (at will): <i>mage hand, minor illusion, ray of frost</i>\n\n* 1st level (4 slots): <i>charm person, detect magic, sleep</i>\n\n* 2nd level (3 slots): <i>detect thoughts, hold person</i>\n\n* 3rd level (3 slots): <i>lightning bolt, water breathing</i>\n\n* 4th level (3 slots): <i>blight, dimension door</i>\n\n* 5th level (2 slots): <i>dominate person</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 10 ft., one creature. Hit: 7 (1d6 + 4) piercing damage, and the target must make a DC 13 Constitution saving throw, taking 31 (7d8) poison damage on a failed save, or half as much damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

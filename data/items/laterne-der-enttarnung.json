@@ -1,0 +1,47 @@
+{
+  "id": "laterne-der-enttarnung",
+  "type": "item",
+  "name": "Laterne der Enttarnung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 200,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn sie verwendet wird, brennt diese Blendlaterne mit 0,5 l Öl 6 h lang und spendet im Radius von 9 m helles Licht und im Radius von weiteren 9 m gedimmtes Licht. Unsichtbare Kreaturen und Gegenstände sind sichtbar, solange sie sich im hellen Licht der Laterne befinden. Du kannst als Aktion die Haube absenken und so das Licht auf gedimmtes Licht in einem Radius von 1,5 m reduzieren.",
+  "tags": [
+    "erkennen",
+    "magisch",
+    "licht",
+    "unsichtbar",
+    "öl",
+    "laterne",
+    "aktion"
+  ]
+}

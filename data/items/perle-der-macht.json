@@ -1,0 +1,49 @@
+{
+  "id": "perle-der-macht",
+  "type": "item",
+  "name": "Perle der Macht",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "durch Zauberwirker",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": "Morgen"
+  },
+  "uses": {
+    "max": 1,
+    "recharge": "Morgen"
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Solange du diese Perle bei dir trägst, kannst du als Aktion ihr Befehlswort aussprechen und einen verbrauchten Zauberplatz zurückerhalten. Wenn der verbrauchte Platz ein Platz des 4. oder höheren Grades war, ist der neue Platz ein Zauberplatz des 3. Grades. Nachdem du die Perle verwendet hast, kannst du sie erst im nächsten Morgengrauen erneut verwenden.",
+  "tags": [
+    "magisch",
+    "zauberer",
+    "magier",
+    "hexenmeister",
+    "druide",
+    "kleriker",
+    "paladin",
+    "aktion",
+    "befehlswort"
+  ]
+}

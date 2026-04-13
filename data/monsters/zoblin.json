@@ -1,0 +1,52 @@
+{
+  "name": "Zoblin",
+  "size": "Small",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "small",
+      "undead",
+      "cr1/4",
+      "nerzugals-extended-bestiary",
+      "goblinoid"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 10,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 8,
+    "con": 15,
+    "int": 5,
+    "wis": 7,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages it knew in life but can’t speak"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Undead Fortitude",
+      "text": "If damage reduces the zoblin to 0 hit\npoints, it must make a Constitution saving throw with a\nDC of 5 + the damage taken, unless the damage is\nradiant or from a critical hit. On a success, the zoblin\ndrops to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Vicious Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach\n5ft., one target. Hit: 3 (1d4 + 1) piercing damage, and\nthe zoblin attaches to the target. While attached, the\nzoblin doesn’t attack. Instead, at the start of each of\nthe zoblin’s turns, that creature takes 5 (2d4) necrotic\ndamage. While the zoblin is attached, that creature’s\nmovement speed is also reduced by 10 ft. A creature\nmay use its action to make a DC 11 Athletics check,\nprying the zoblin loose on a success."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,73 @@
+{
+  "name": "Seraph",
+  "size": "Large",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "large",
+      "elemental",
+      "cr8",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral good",
+  "ac": 15,
+  "hp": {
+    "average": 119,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 16,
+    "con": 17,
+    "int": 15,
+    "wis": 15,
+    "cha": 19
+  },
+  "skills": {
+    "Arcana": 5,
+    "Deception": 7,
+    "Insight": 5,
+    "Perception": 5
+  },
+  "languages": [
+    "Celestial",
+    "Common",
+    "Ignan; telepathy 100 ft."
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Heat",
+      "text": "A seraph’s body generates heat. Creatures who touch the genie\ntake 7 (2d6) fire damage. If the seraph genie uses a metal weapon adds this\nadditional damage to the weapon’s attacks. A seraph genie can suppress\nthis effect for 1 hour as a bonus action."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "A seraph genie’s innate spellcasting ability is\ncharisma (spell save DC 15, +7 to hit with spell attacks). It can cast the\nfollowing spells without requiring material components.\n\n* At will: <i>detect evil and good, detect magic, flame blade, plane shift </i>(self only)<i>, produce flame</i>\n\n* 3/day each: <i>fireball, flame strike, invisibility, see invisibility, wall of fire</i>\n\n* 1/day each: <i>fire storm, greater invisibility</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "A seraph genie makes three scimitar attacks."
+    },
+    {
+      "name": "Scimitar",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7\n(1d6 + 4) slashing damage plus 7 (2d6) fire damage."
+    },
+    {
+      "name": "Fire Burst (Recharge 5–6)",
+      "type": "special",
+      "text": "The seraph genie emits a blast of elemental\nfire in a 30-foot radius. All creatures in the area must make a DC 15\nDexterity saving throw, taking 28 (8d6) fire damage on a failed saving\nthrow, or half as much on a successful one."
+    }
+  ],
+  "source": "creature"
+}

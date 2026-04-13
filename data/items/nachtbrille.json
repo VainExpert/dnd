@@ -1,0 +1,44 @@
+{
+  "id": "nachtbrille",
+  "type": "item",
+  "name": "Nachtbrille",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 250,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese dunkle Brille gibt dir Dunkelsicht auf eine Entfernung von bis zu 18 m. Hast du bereits Dunkelsicht, so erhöht diese Brille deine Sichtweite um 18 m.",
+  "tags": [
+    "magisch",
+    "brille",
+    "dunkelsicht",
+    "sinne"
+  ]
+}

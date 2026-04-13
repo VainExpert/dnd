@@ -1,0 +1,85 @@
+{
+  "name": "Cerberus",
+  "size": "Huge",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "huge",
+      "fiend",
+      "cr24",
+      "tome-of-horrors",
+      "devil"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 18,
+  "hp": {
+    "average": 294,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 25,
+    "dex": 13,
+    "con": 18,
+    "int": 6,
+    "wis": 13,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 8
+  },
+  "languages": [
+    "Infernal",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "24",
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Devil’s Sight",
+      "text": "Magical darkness doesn’t impede Cerberus' darkvision."
+    },
+    {
+      "name": "Keen Hearing and Smell",
+      "text": "Cerberus has advantage on Wisdom\n(Perception) checks that rely on hearing or smell."
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "text": "If Cerberus fails a saving throw, it can\nchoose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "Cerberus has advantage on saving throws against\nspells and other magical effects."
+    },
+    {
+      "name": "Multiple Heads",
+      "text": "Cerberus has three heads. While it has more than one\nhead, Cerberus has advantage on saving throws against being blinded,\ncharmed, deafened, frightened, stunned, or knocked unconscious.\nWhenever Cerberus takes 40 or more damage in a single turn, one of its\nheads dies. If all its heads die, Cerberus dies."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Cerberus makes three bite attacks and one claw attack."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 23\n(3d10 + 7) piercing damage plus 14 (4d6) fire damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +14 to hit, reach 10ft., one target. Hit: 20\n(3d8 + 7) slashing damage."
+    },
+    {
+      "name": "Fire Breath (Recharge 5–6)",
+      "type": "special",
+      "text": "One of Cerberus’ heads releases a 60-foot\ncone of flames. Each creature in the area must make a DC 18 Dexterity saving\nthrow, taking 42 (12d6) fire damage on a failed save, or half as much damage\non a successful saving throw. Each head has its own recharge counter."
+    }
+  ],
+  "source": "creature"
+}

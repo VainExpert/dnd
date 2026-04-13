@@ -1,0 +1,76 @@
+{
+  "name": "Angler Worm",
+  "size": "Riesig",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "huge",
+      "monstrosity",
+      "cr4",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 14,
+  "hp": {
+    "average": 133,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 5,
+    "con": 16,
+    "int": 3,
+    "wis": 14,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "4",
+    "xp": 1100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Spinnenklettern",
+      "text": "Der Wurm kann schwierige Oberflächen erklimmen, darunter auch kopfüber an Decken und entlang seiner Fangleinen, ohne dass eine Fertigkeitsprobe erforderlich ist. Der Anglerwurm wird niemals durch seine eigenen Fangleinen oder die anderer Anglerwürmer behindert."
+    },
+    {
+      "name": "Keen Touch",
+      "text": "Der Anglerwurm hat einen Vorteil bei Weisheits- (Wahrnehmungs-)Proben, die auf Vibrationen beruhen."
+    },
+    {
+      "name": "Transparente Falle",
+      "text": "Um die Schlingen der Anglerwürmer zu entdecken, muss ein erfolgreicherDC 12Weisheits- (Wahrnehmungs-)Wurf durchgeführt werden; dieser Wurf erfolgt immer mit Nachteil, es sei denn, der Suchende verfügt über Mittel, um die Unsichtbarkeit der Schlingen zu durchbrechen. Eine Kreatur, die ein Feld betritt, in dem sich die Schlingen der Anglerwürmer befinden, muss einen erfolgreichenDC 12Geschicklichkeits-Rettungswurf bestehen oder wird von den klebrigen Schlingen festgehalten (BefreiungDC 14). Dieser Rettungswurf erfolgt mit Nachteil, wenn die Kreatur die Anwesenheit der Schlingen nicht bemerkt hat."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Ein Anglerwurm führt einen Bissangriff aus. Außerdem führt er gegen jede gegnerische Kreatur, die durch seine Fäden gefesselt ist und sich in Reichweite seiner Windungen befindet, einen Windungsangriff aus. Sobald er sich um eine Kreatur gewunden hat, unterlässt er weitere Windungsangriffe gegen andere."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 auf Treffer, Reichweite5 ft: 0, eine Kreatur. Treffer: 9 (2d6 + 2) Durchdringungsschaden plus 3 (1d6) Säureschaden."
+    },
+    {
+      "name": "Spulen",
+      "type": "special",
+      "text": "Nahkampf-Waffenangriff: +4 zum Treffen, Reichweite:3 m 0 m, eine Kreatur. Treffer: 13 (3d8) Säureschaden; außerdem muss die Zielkreatur einen erfolgreichenDC 12Geschicklichkeits-Rettungswurf bestehen oder wird neben den Anglerwurm gezogen (sofern sie sich nicht bereits dort befindet) und in dessen Windungen festgehalten (Befreiung:DC 12 ). Solange die Kreatur auf diese Weise festgehalten wird, ist sie durch den Anglerwurm (aber nicht durch dessen Schlingen) bewegungsunfähig, kann nicht atmen und erleidet zu Beginn jedes Zuges des Anglerwurms 22 (5d8) Säureschaden. Eine Kreatur, die aus den Windungen des Anglerwurms entkommt, muss möglicherweise sofort einenDC 12 Geschicklichkeits-Rettungswurf durchführen, um zu vermeiden, erneut festgehalten zu werden, wenn sie in einen Bereich entkommt, der von weiteren Fangleinen besetzt ist."
+    },
+    {
+      "name": "Ätherischer Köder (Aufladen 4-6)",
+      "type": "special",
+      "text": "Der Anglerwurm wählt einen Punkt in20 feeteinem Umkreis von  um sich selbst; dieser Punkt leuchtet mit einem schwachen, blauen Licht, bis der Wurm seinen nächsten Zug beginnt. Alle anderen Kreaturen, die das Licht zu Beginn ihres Zuges sehen können, müssen einen erfolgreichenDC 12  Weisheits-Rettungswurf bestehen oder sind bis zum Beginn ihres nächsten Zuges verzaubert. Eine auf diese Weise verzauberte Kreatur muss auf dem direktesten Weg auf das Licht zusprinten, scheitert automatisch bei Rettungswürfen gegen das Festhalten durch Fangleinen und behandelt den Anglerwurm als unsichtbar."
+    }
+  ],
+  "source": "creature"
+}

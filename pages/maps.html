@@ -3,17 +3,14 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Maps</title>
+  <title>Karten</title>
   <link rel="stylesheet" href="../styles.css"/>
 </head>
 <body>
   <header class="topbar">
     <div class="brand">
-      <div class="title">Maps</div>
-      <div class="subtitle">Map library</div>
-    </div>
-    <div class="search">
-      <input id="q" type="search" placeholder="Search..."/>
+      <div class="title">Karten</div>
+      <div class="subtitle">Kartensammlung</div>
     </div>
   </header>
 
@@ -21,29 +18,29 @@
     <aside class="sidebar">
       <nav class="nav">
         <div class="group">
-          <div class="group-title">Home</div>
-          <a href="../index.html">Homepage</a>
-          <a href="../index.html#content/house-rules/index.md">House Rules</a>
-          <a href="../index.html#content/safety/index.md">Safety</a>
-          <a href="../index.html#content/character-options/index.md">Character Options</a>
-          <a href="../index.html#content/recaps/index.md">Recaps</a>
+          <div class="group-title">Start</div>
+          <a href="../index.html">Startseite</a>
+          <a href="../index.html#content/house-rules/index.md">Hausregeln</a>
+          <a href="../index.html#content/safety/index.md">Sicherheit</a>
+          <a href="../index.html#content/character-options/index.md">Charakteroptionen</a>
+          <a href="../index.html#content/recaps/index.md">Rückblicke</a>
         </div>
 
         <div class="group">
-          <div class="group-title">Tools</div>
-          <a href="./pages/tools.html">Random Tables & Generators</a>
-          <a href="./pages/dice.html">Dice Roller</a>
-          <a href="./pages/units.html">Unit Converter</a>
+          <div class="group-title">Werkzeuge</div>
+          <a href="./werkzeuge/tools.html">Zufallstabellen & Generatoren</a>
+          <a href="./werkzeuge/dice.html">Würfel</a>
+          <a href="./werkzeuge/units.html">Einheitenumrechner</a>
         </div>
 
         <div class="group">
-          <div class="group-title">Libraries</div>
-          <a href="./bestiary.html">Bestiary</a>
-          <a href="./spells.html">Spells</a>
-          <a href="./items.html">Items</a>
-          <a href="./maps.html" class="active">Maps</a>
-          <a href="./pcs.html">PCs</a>
-          <a href="./icons.html">Icons</a>
+          <div class="group-title">Sammlungen</div>
+          <a href="./bestiarium/bestiary.html">Bestiarium</a>
+          <a href="./zauber/spells.html">Zauber</a>
+          <a href="./items/items.html">Gegenstände</a>
+          <a href="./maps.html" class="active">Karten</a>
+          <a href="./spieler/pcs.html">Spieler</a>
+          <a href="./icons.html">Symbole</a>
         </div>
       </nav>
     </aside>
@@ -51,12 +48,12 @@
     <main class="main">
       <div class="content" style="max-width:1100px;">
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
-          <input id="q" class="select" type="search" placeholder="Search title/tags/blurb..." style="width:min(420px, 80vw);" />
+          <input id="q" class="select" type="search" placeholder="Titel/Tags/Beschreibung durchsuchen..." style="width:min(420px, 80vw);" />
           <select id="tag" class="select">
-            <option value="">All tags</option>
+            <option value="">Alle Tags</option>
           </select>
           <select id="size" class="select">
-            <option value="">All sizes</option>
+            <option value="">Alle Größen</option>
           </select>
         </div>
         <div id="gallery" class="map-grid"></div>
@@ -66,7 +63,7 @@
 
   <div id="modal" class="map-modal" style="display:none;">
     <div class="map-modal-inner">
-      <button id="close" class="map-close">Close</button>
+      <button id="close" class="map-close">Schließen</button>
       <div id="modalTitle" class="map-modal-title"></div>
       <img id="modalImg" class="map-modal-img" alt="" loading="lazy" decoding="async"/>
       <div id="modalMeta" class="map-modal-meta"></div>
@@ -112,8 +109,8 @@
     }
 
     function openMap(m){
-      modalTitle.textContent = m.title || "Map";
-      modalImg.src = `../assets/maps/${m.file}`; // NOTE: file includes subfolders now
+      modalTitle.textContent = m.title || "Karte";
+      modalImg.src = `../assets/maps/${m.file}`;
       const metaParts = [];
       if (m.blurb) metaParts.push(m.blurb);
       if (m.tags && m.tags.length) metaParts.push(m.tags.join(", "));
@@ -122,16 +119,21 @@
       modalMeta.textContent = metaParts.join(" • ");
       modal.style.display = "block";
     }
-    function close(){ modal.style.display = "none"; modalImg.src = ""; }
-    closeBtn.addEventListener("click", close);
-    modal.addEventListener("click", (e)=>{ if (e.target === modal) close(); });
 
-    // populate tag + size dropdowns
+    function close(){
+      modal.style.display = "none";
+      modalImg.src = "";
+    }
+
+    closeBtn.addEventListener("click", close);
+    modal.addEventListener("click", (e) => { if (e.target === modal) close(); });
+
     const allTags = Array.from(new Set(maps.flatMap(m => Array.isArray(m.tags) ? m.tags : [])))
       .sort((a,b)=>a.localeCompare(b));
     for (const t of allTags){
       const opt = document.createElement("option");
-      opt.value = t; opt.textContent = t;
+      opt.value = t;
+      opt.textContent = t;
       tagEl.appendChild(opt);
     }
 
@@ -139,12 +141,13 @@
       .sort((a,b)=>a.localeCompare(b));
     for (const s of allSizes){
       const opt = document.createElement("option");
-      opt.value = s; opt.textContent = s;
+      opt.value = s;
+      opt.textContent = s;
       sizeEl.appendChild(opt);
     }
 
     function matches(m, q, tag, size){
-      const hay = [m.title, m.blurb, ...(m.tags||[]), m.folder, m.folder_title].join(" ").toLowerCase();
+      const hay = [m.title, m.blurb, ...(m.tags || []), m.folder, m.folder_title].join(" ").toLowerCase();
       if (q && !hay.includes(q)) return false;
       if (tag && !(m.tags || []).includes(tag)) return false;
       if (size && getSizeCategory(m) !== size) return false;
@@ -154,11 +157,10 @@
     function groupByFolder(list){
       const map = new Map();
       for (const m of list){
-        const key = m.folder_title || "Unsorted";
+        const key = m.folder_title || "Unsortiert";
         if (!map.has(key)) map.set(key, []);
         map.get(key).push(m);
       }
-      // stable ordering by group title
       return Array.from(map.entries()).sort((a,b)=>a[0].localeCompare(b[0]));
     }
 
@@ -171,7 +173,7 @@
       const grouped = groupByFolder(filtered);
 
       if (!filtered.length){
-        gallery.innerHTML = `<p>No maps.</p>`;
+        gallery.innerHTML = `<p>Keine Karten gefunden.</p>`;
         return;
       }
 
@@ -185,7 +187,7 @@
                 <div class="map-cap">
                   <div class="map-cap-title">${escapeHtml(m.title)}</div>
                   <div class="map-cap-sub">
-                    ${escapeHtml((m.tags||[]).slice(0,3).join(", "))}
+                    ${escapeHtml((m.tags || []).slice(0, 3).join(", "))}
                     ${getSizeLabel(m) ? ` • ${escapeHtml(getSizeLabel(m))}` : ""}
                   </div>
                 </div>
@@ -195,7 +197,6 @@
         </div>
       `).join("");
 
-      // wire clicks
       const byFile = new Map(filtered.map(m => [m.file, m]));
       gallery.querySelectorAll(".map-thumb").forEach(btn => {
         btn.addEventListener("click", () => {

@@ -1,0 +1,81 @@
+{
+  "name": "Death Cow",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr5",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 14,
+  "hp": {
+    "average": 90,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 11,
+    "con": 14,
+    "int": 8,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Animal Handling": 4,
+    "Athletics": 6,
+    "Perception": 4
+  },
+  "languages": [
+    "Bovine"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Bovine Master",
+      "text": "A death cow can take control of 1d6 cows located\nwithin 30 feet of it as per the dominate monster spell. Cows controlled\nin this fashion do not receive a Wisdom save, but are controlled\nautomatically."
+    },
+    {
+      "name": "Cattle Guise",
+      "text": "A death cow can voluntarily appear as a normal\nquadrupedal cow, indistinguishable from a normal cow. It can transform\nbetween cow and death cow form instantly. Its weapons only manifest in\nbipedal form. The true seeing spell will reveal the death cow’s true form."
+    },
+    {
+      "name": "Death Throes",
+      "text": "When the death cow dies, it explodes, showering all\ncreatures within a 30-foot radius with scalding blood and chunks of\nburning meat. Each creature in this area must make a DC 15 Dexterity\nsaving throw, taking 14 (4d6) fire damage on a failed save, or half as much\non a successful one."
+    },
+    {
+      "name": "Secret Speech",
+      "text": "Death cows speak in a strange mooing tongue called\nBovine that normally cannot be learned by non-cows. Those who wish to\nlearn the language must succeed on a DC 20 Intelligence check and have\na willing death cow as an instructor."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The death cow makes one bite and one greatsword attack."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 3) piercing damage."
+    },
+    {
+      "name": "Greatsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target.\nHit: 10 (2d6 + 3) slashing damage."
+    },
+    {
+      "name": "War Moo (Recharge 5–6)",
+      "type": "special",
+      "text": "The death cow unleashes a deafening moo.\nAll non-bovine creatures within 30 feet of the death cow that can hear the\nmoo, must attempt a DC 13 Constitution saving throw and be deafened\nfor 1 minute and take 28 (8d6) thunder damage on a failed save, or half as\nmuch damage without being deafened on a successful one."
+    }
+  ],
+  "source": "creature"
+}

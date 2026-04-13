@@ -1,0 +1,86 @@
+{
+  "name": "Wert",
+  "size": "Riesig",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "huge",
+      "fiend",
+      "cr19",
+      "monster-manual",
+      "demon"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 19,
+  "hp": {
+    "average": 262,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 26,
+    "dex": 15,
+    "con": 22,
+    "int": 20,
+    "wis": 16,
+    "cha": 22
+  },
+  "skills": {},
+  "languages": [
+    "Abyssal",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "19",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Sterbenskampf",
+      "text": "Wenn der Balor stirbt, explodiert er, und jede Kreatur in30 feetseinem Umkreis muss einenDC 20Geschicklichkeits-Rettungswurf durchführen; bei einem misslungenen Rettungswurf erleidet sie 70 (20d6) Feuerschaden, bei einem erfolgreichen Rettungswurf nur die Hälfte dieses Schadens. Die Explosion entzündet brennbare Gegenstände in diesem Bereich, die nicht getragen oder mitgeführt werden, und zerstört die Waffen des Balors."
+    },
+    {
+      "name": "Fire Aura",
+      "text": "Zu Beginn jedes Zuges des Balors erleidet jede Kreatur in5 feeteinem Umkreis von  um ihn herum 10 (3d6) Feuerschaden, und brennbare Gegenstände in dieser Aura, die nicht getragen oder bei sich geführt werden, entzünden sich. Eine Kreatur, die den Balor berührt oder ihn mit einem Nahkampfangriff trifft, während sie sich in5 feeteinem Umkreis von  um ihn herum befindet, erleidet 10 (3d6) Feuerschaden."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Balor hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Waffenangriffe des Balors sind magischer Natur."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Balor führt zwei Angriffe aus: einen mit seinem Langschwert und einen mit seiner Peitsche."
+    },
+    {
+      "name": "Langschwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +14 zum Treffen, Reichweite10 ft: , ein Ziel. Treffer: 21 (3d8 + 8) Schnittschaden plus 13 (3d8) Blitzschaden. Wenn der Balor einen kritischen Treffer landet, würfelt er dreimal statt zweimal."
+    },
+    {
+      "name": "Peitsche",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +14 zum Treffen, Reichweite30 ft: , ein Ziel. Treffer: 15 (2d6 + 8) Schnittschaden plus 10 (3d6) Feuerschaden; außerdem muss das Ziel einenDC 20Stärke-Rettungswurf bestehen, sonst wird es bis zu25 feet  in Richtung des Balors gezogen."
+    },
+    {
+      "name": "Teleport",
+      "type": "special",
+      "text": "Der Balor teleportiert sich auf magische Weise – zusammen mit jeglicher Ausrüstung, die er trägt oder bei sich hat –120 feetzu einem freien Feld, das er sehen kann."
+    },
+    {
+      "name": "Variante: Dämon beschwören (1/Tag)",
+      "type": "special",
+      "text": "Der Dämon wählt aus, was er beschwören möchte, und unternimmt einen magischen Beschwörungsversuch.\n\nEin Balor hat eine 50-prozentige Chance, Vrocks,1d6Hezrous,1d4Glabrezus,1d3Nalfeshnees,1d21d8Mariliths oder einen Goristro zu beschwören.\n\nEin beschworener Dämon erscheint auf einem unbesetzten Feld in60 feet  Entfernung zu seinem Beschwörer, handelt als Verbündeter seines Beschwörers und kann keine anderen Dämonen beschwören. Er bleibt 1 Minute lang bestehen, bis er oder sein Beschwörer stirbt oder bis sein Beschwörer ihn als Aktion entlässt."
+    }
+  ],
+  "source": "creature"
+}

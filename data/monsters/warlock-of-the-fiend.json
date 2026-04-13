@@ -1,0 +1,64 @@
+{
+  "name": "Warlock of the Fiend",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr7",
+      "volos-guide",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 12,
+  "hp": {
+    "average": 78,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 15,
+    "int": 12,
+    "wis": 12,
+    "cha": 18
+  },
+  "skills": {
+    "Arcana": 4,
+    "Deception": 7,
+    "Persuasion": 7,
+    "Religion": 4
+  },
+  "languages": [
+    "any two languages (usually Abyssal or Infernal)"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The warlock's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save DC 15), requiring no material components:\n\n* At will: <i>alter self, false life, levitate </i>(self only)<i>, mage armor </i>(self only)<i>, silent image</i>\n\n* 1/day each: <i>feeblemind, finger of death, plane shift</i>"
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The warlock is a l7th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:\n\n* Cantrips (at will): <i>eldritch blast, fire bolt, friends, mage hand, minor illusion, prestidigitation, shocking grasp</i>\n\n* 1st-5th level (4 5th-level slots): <i>banishment, burning hands, flame strike, hellish rebuke, magic circle, scorching ray, scrying, stinking cloud, suggestion, wall of fire</i>"
+    },
+    {
+      "name": "Dark One's Own Luck (Recharges after a Short or Long Rest)",
+      "text": "When the warlock makes an ability check or saving throw, it can add a d10 to the roll. It can do this after the roll is made but before any of the roll's effects occur."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mace",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage plus 10 (3d6) fire damage."
+    }
+  ],
+  "source": "creature"
+}

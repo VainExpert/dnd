@@ -1,0 +1,88 @@
+{
+  "name": "Automata Devil",
+  "size": "Groß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr10",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "gesetztreu-böse",
+  "ac": 17,
+  "hp": {
+    "average": 168,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 24,
+    "dex": 17,
+    "con": 20,
+    "int": 11,
+    "wis": 14,
+    "cha": 19
+  },
+  "skills": {
+    "Athletics": 11,
+    "Intimidation": 8
+  },
+  "languages": [
+    "Common",
+    "Infernal; telepathy 30 m."
+  ],
+  "challenge": {
+    "cr": "10",
+    "xp": 5900,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Teufelsblick",
+      "text": "Magische Dunkelheit beeinträchtigt die Dunkelheitssicht des Teufels nicht."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Automaten-Dämon hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die Zauberfähigkeit der Automaten-Dämonen ist Charisma (ZauberrettungswurfDC 16). Sie können von Natur aus die folgenden Zauber wirken, ohne dass dafür materielle Komponenten benötigt werden:\n\nBeliebig oft: Person bezaubern, Suggestion, Teleportation\n\nJe einmal pro Tag: Bannschlag, Wolken-Tod"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Automaten-Teufel führt zwei Nahkampfangriffe aus, wobei er beliebige Kombinationen aus Biss-, Klauen- und Peitschenangriffen einsetzt. Der Bissangriff kann nur einmal pro Runde ausgeführt werden."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite:1,5 m ., ein Ziel. Treffer: 18 (2d10 + 7) Schnittschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 14 (2d6 + 7) Schnittschaden."
+    },
+    {
+      "name": "Peitsche",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 zum Treffen, Reichweite 4,5 m., ein Ziel. Treffer: 11 (1d8 + 7) Schnittschaden und das Ziel wird festgehalten (Befreiung DC 17) und bewegungsunfähig gemacht. Der Automaten-Teufel kann jeweils nur zwei Ziele gleichzeitig festhalten, und jedes festgehaltene Ziel verhindert, dass eine Peitsche zum Angriff eingesetzt werden kann. Ein einzelnes Ziel kann jeweils nur von einer Peitsche festgehalten werden. Ein festgehaltenes Ziel erleidet zu Beginn seines Zuges 9 (2d8) Durchbohrschaden."
+    },
+    {
+      "name": "Bestrafender Rachen",
+      "type": "special",
+      "text": "Wenn ein Ziel zu Beginn des Zuges des Automaten-Teufels bereits von einer Peitsche festgehalten wird, führen beide Kreaturen gegensätzliche Stärke-Proben (Sport) durch. Gewinnt die festgehaltene Kreatur, erleidet sie 9 (2d8) Stichschaden und bleibt festgehalten. Gewinnt der Teufel, wird die festgehaltene Kreatur in den Magen des Teufels gezogen, eine Masse aus wirbelnden Zahnrädern, rasiermesserscharfen Zähnen und kreisenden Klingen. Die Kreatur erleidet 49 (4d20 + 7) Schnittschaden und bleibt gefesselt, und die Peitsche kann im nächsten Zug des Teufels erneut angreifen. Die Kreatur erleidet zu Beginn jedes Zuges des Automaten-Teufels automatisch weitere 49 (4d20 +7) Schnittschaden, solange sie in der Schlundfalle gefangen bleibt. Es kann jeweils nur eine Kreatur in der strafenden Schlundfalle gefangen sein. Der Automaten-Teufel kann während seines Zuges eine Kreatur oder Leiche frei „ausspucken“, um den Schlund für ein weiteres Opfer freizumachen."
+    },
+    {
+      "name": "Aura der Angst",
+      "type": "special",
+      "text": "Automaten-Teufel strahlen in einem Umkreis von 3 Metern Angst aus. Eine Kreatur, die ihren Zug in diesem Bereich beginnt, muss einen erfolgreichenDC 16Weisheits-Rettungswurf bestehen oder wird verängstigt. Eine Kreatur, die den Rettungswurf erfolgreich besteht, kann nicht erneut von der Angst-Aura desselben Automaten-Teufels beeinflusst werden."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,70 @@
+{
+  "name": "Baumkletterer",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr3",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 14,
+  "hp": {
+    "average": 90,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 40
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 16,
+    "con": 16,
+    "int": 6,
+    "wis": 10,
+    "cha": 6
+  },
+  "skills": {
+    "Acrobatics": 5,
+    "Stealth": 5
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Spinnenklettern",
+      "text": "Der Baumkletterer kann schwierige Oberflächen erklimmen, darunter auch kopfüber an Decken, ohne eine Fertigkeitsprobe ablegen zu müssen."
+    },
+    {
+      "name": "Buschland-Brachiation",
+      "text": "Der Baumkletterer löst keine Gelegenheitsangriffe aus, wenn er sich durch Klettern aus der Reichweite eines Gegners entfernt."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Baumkletterer führt einen Bissangriff und zwei Tentakelangriffe aus."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite5 ft: , eine Kreatur. Treffer: 6 (1d6 + 3) Durchbohrungsschaden."
+    },
+    {
+      "name": "Tentakel",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffer, Reichweite 3 m., ein Ziel. Treffer: 10 (2d6 + 3) Bludgeoning-Schaden, und das Ziel wird festgehalten (Befreiung DC 13). Bis dieser Griff endet, ist das Ziel gefesselt und der Tentakel kann nicht verwendet werden, um ein anderes Ziel anzugreifen. Der Baumkletterer hat zwei Tentakel, von denen jeder ein Ziel festhalten kann. Wenn sich der Baumkletterer bewegt, kann er ein mittelgroßes oder kleineres Ziel, das er festhält, mit voller Geschwindigkeit ziehen."
+    }
+  ],
+  "source": "creature"
+}

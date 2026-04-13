@@ -1,0 +1,17 @@
+{
+  "id": "gefuehle-besaenftigen",
+  "name": "Gefühle besänftigen",
+  "level": 2,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "18 m (6 m Sphäre)",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Kleriker"
+  ],
+  "text": "Du versuchst, starke Gefühle in einer Gruppe zu unterdrücken. Alle Humanoide innerhalb einer 6 m Sphäre, auf einen Punkt in Reichweite zentriert, müssen einen CHA-Rettungswurf ausführen. Bei Fehlschlag wähle einen der folgenden Effekte aus. Eine Kreatur kann freiwillig scheitern.\n1 .Du kannst jeden Effekt unterdrücken, der ein Ziel bezaubert oder verängstigt. Bei Ende des Zaubers wird der unterdrücke Effekt fortgesetzt, wenn dessen Wirkungsdauer nicht abgelaufen ist.\n2. Du kannst ein Ziel feindseligen Kreaturen gegenüber gleichgültig machen. Die Gleichgültigkeit endet, wenn das Ziel angegriffen, verletzt oder einem seiner Verbündeten Schaden zugefügt wird. Bei Ende des Zaubers werden die Kreaturen wieder feindlich gesinnt."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ruestung-von-agathys",
+  "name": "Rüstung von Agathys",
+  "level": 1,
+  "school": "Bannzauber",
+  "casting_time": "1 Bonus Aktion",
+  "range": "Selbst",
+  "components": "V, G, M (Splitter aus blauem Glas)",
+  "duration": "1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Hexenmeister"
+  ],
+  "text": "Magischer Frost umhüllt dich: Du erhältst 5 temporäre TP.\nSolange du noch temporäre TP durch diesen Zauber hast, erleidet jede Kreatur, die dich mit einem Nahkampf-Angriffswurf trifft, 5 Kälteschaden.\nDer Zauber endet vorzeitig, wenn du keine temporären TP mehr hast.\n\nAuf höheren Level gewirkt: Temporäre TP und Kälteschaden steigen je um 5 pro Level."
+}

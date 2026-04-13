@@ -1,0 +1,53 @@
+{
+  "name": "Hawk",
+  "size": "Tiny",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "tiny",
+      "beast",
+      "cr0",
+      "monster-manual"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 1,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 5,
+    "dex": 16,
+    "con": 8,
+    "int": 2,
+    "wis": 14,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Keen Sight",
+      "text": "The hawk has advantage on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Talons",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 slashing damage."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,91 @@
+{
+  "name": "Flameblade Crusader",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 17,
+  "hp": {
+    "average": 62,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 10,
+    "con": 12,
+    "int": 19,
+    "wis": 12,
+    "cha": 14
+  },
+  "skills": {
+    "Arcana": 8,
+    "Athletics": 7,
+    "Deception": 6,
+    "Religion": 8
+  },
+  "languages": [
+    "Any four languages"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Arcane Recovery (1/Day)",
+      "text": "When the crusader finishes a\nshort rest, it can regain up to 4 total expended spell\nslots."
+    },
+    {
+      "name": "Burning Strike",
+      "text": "When the crusader hits with a melee\nweapon attack, it can expend a spell slot to deal an\naddition 9 (2d8) fire damage, in addition to the\nweapon's damage. This damage increases by 1d8 fire\ndamage per spell slot level above 1st."
+    },
+    {
+      "name": "Combat Caster",
+      "text": "The crusader can perform the somatic\ncomponents of spells even when it has weapons or a\nshield in one or both hands."
+    },
+    {
+      "name": "Endless Assault",
+      "text": "When the crusader takes the attack\naction, it can expend a spell slot up to level 2 to gain\nadditional attacks this turn. If a level 1 slot is expended,\nthe crusader gains one additional attack. If the level 2\nspell slot is expended, the crusader gains 2 additional\nattacks."
+    },
+    {
+      "name": "Transmutation Mastery",
+      "text": "The crusader has a deep\nknowledge of transmutation magics and can use that\nto adapt its fighting style to the needs at hand. As a\nbonus action, the crusader can transform its weapon\ninto a pike, a greatsword, or back to a maul."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The crusader is a 9th-level spellcaster. Its\nspellcasting ability is intelligence (spell save DC 16, +8\nto hit with spell attacks). The crusader has the\nfollowing wizard and paladin spells prepared:\n* Cantrips (at will): <i>dancing lights, fire bolt</i>\n\n* 1st level (4 slots): <i>burning hands, searing smite, thunderous smite</i>\n\n* 2nd level (3 slots): <i>flaming sphere, magic weapon</i>\n\n* 3rd level (3 slots): <i>fireball, phantom steed</i>\n\n* 4th level (2 slots): <i>fire shield, wall of fire</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The crusader makes two melee attacks."
+    },
+    {
+      "name": "Maul",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one\ntarget. Hit: 10 (2d6 + 3) bludgeoning damage."
+    },
+    {
+      "name": "Pike",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 10 ft., one\ntarget. Hit: 8 (1d10 + 3) piercing damage."
+    },
+    {
+      "name": "Greatsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft.,\none target. Hit: 10 (2d6 + 3) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

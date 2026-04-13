@@ -1,0 +1,44 @@
+{
+  "id": "ruestung-der-makellosigkeit",
+  "type": "item",
+  "name": "Rüstung der Makellosigkeit",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Kann jede Art Rüstung sein. Die Rüstung wird nie dreckig.",
+  "tags": [
+    "magisch",
+    "abwehr",
+    "rüstung",
+    "fein"
+  ]
+}

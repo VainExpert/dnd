@@ -1,0 +1,56 @@
+{
+  "name": "Sapphire Dragon Wyrmling",
+  "size": "Medium",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "medium",
+      "dragon",
+      "cr4",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 18,
+  "hp": {
+    "average": 55,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 15,
+    "con": 12,
+    "int": 16,
+    "wis": 14,
+    "cha": 15
+  },
+  "skills": {
+    "Insight": 4,
+    "Perception": 4
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Awe Aura",
+      "text": "All creatures within 30 feet must\nmake a DC 13 Charisma saving throw in order to\nattack this dragon. On a failed save, the attacking\ncreature’s turn ends immediately. On a success,\nthat creature is immune to the Awe Aura of all\ngemstone dragons for 1 week."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft.,\none target. Hit: 7 (1d10 + 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

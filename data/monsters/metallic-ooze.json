@@ -1,0 +1,62 @@
+{
+  "name": "Metallic Ooze",
+  "size": "Large",
+  "type": {
+    "type": "ooze",
+    "tags": [
+      "large",
+      "ooze",
+      "cr5",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 9,
+  "hp": {
+    "average": 95,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 10
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 5,
+    "con": 19,
+    "int": 2,
+    "wis": 6,
+    "cha": 1
+  },
+  "skills": {
+    "Stealth": 3
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "False Appearance",
+      "text": "The metallic ooze is indistinguishable from a pile of\ncoins as long as it remains motionless."
+    },
+    {
+      "name": "Irritating Fumes",
+      "text": "If a metallic ooze takes fire damage, it emanates a\ncloud of semi-transparent vapor that irritates the eyes and respiratory\nsystem of living creatures within 10 feet of it. All creatures other\nthan undead or constructs within the area must succeed on a DC\n15 Constitution saving throw or take 10 (3d6) acid damage and be\npoisoned for 1 minute. A poisoned creature can repeat the saving\nthrow at the end of each of its turns, ending the effect on a success.\nThe cloud disperses in 1 minute, or can be dispersed by a moderate\nor greater wind."
+    },
+    {
+      "name": "Spider Climb",
+      "text": "The metallic ooze can climb difficult surfaces, including\nupside down on ceilings, without needing to make an ability check."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12\n(2d8 + 3) bludgeoning damage plus 18 (4d8) acid damage, and the target\nmust succeed on a DC 15 Constitution saving throw or be poisoned for\n1 hour."
+    }
+  ],
+  "source": "creature"
+}

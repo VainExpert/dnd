@@ -1,0 +1,19 @@
+{
+  "id": "furcht",
+  "name": "Furcht",
+  "level": 3,
+  "school": "Illusionsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (9 m Kegel)",
+  "components": "V, G, M (weiße Feder)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Jede Kreatur in einem 9 m Kegel von dir aus muss einen WIS-Rettungswurf schaffen oder lässt alles los was sie hält und ist während der Wirkungsdauer verängstigt.\nEine verängstigte Kreatur muss die Sprint-Aktion machen um, auf einem sicheren Weg, so weit von dir weg zu kommen wie möglich. Wenn die Kreatur keine Sichtlinie mehr auf dich hat, mahct sie einen neuen WIS-Rettungswurf. Bei Erfolg endet der Zauber auf der Kreatur."
+}

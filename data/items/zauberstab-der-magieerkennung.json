@@ -1,0 +1,47 @@
+{
+  "id": "zauberstab-der-magieerkennung",
+  "type": "item",
+  "name": "Zauberstab der Magieerkennung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 200,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": 3,
+    "recharge": "1W3 am Morgen"
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [
+    "magie-entdecken"
+  ],
+  "effects": [],
+  "text": "Dieser Zauberstab hat drei Ladungen. Wenn du ihn hältst, kannst du als Aktion eine Ladung verbrauchen, um den Zauber Magie entdecken mit ihm zu wirken. Der Zauberstab erhält täglich im Morgengrauen 1W3 verbrauchte Ladungen zurück.",
+  "tags": [
+    "magisch",
+    "zauberstab",
+    "zauber",
+    "magie entdecken",
+    "ladungen"
+  ]
+}

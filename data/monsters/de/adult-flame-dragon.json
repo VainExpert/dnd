@@ -1,0 +1,99 @@
+{
+  "name": "Erwachsener Flammendrache",
+  "size": "Riesig",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "huge",
+      "dragon",
+      "cr16",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 19,
+  "hp": {
+    "average": 212,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 40,
+    "fly": 80
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 14,
+    "con": 23,
+    "int": 17,
+    "wis": 14,
+    "cha": 20
+  },
+  "skills": {
+    "Deception": 10,
+    "Insight": 7,
+    "Perception": 12,
+    "Persuasion": 10,
+    "Stealth": 7
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Giant",
+    "Ignan",
+    "Infernal",
+    "Orc"
+  ],
+  "challenge": {
+    "cr": "16",
+    "xp": 15000,
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache einen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Das Feuer in Person",
+      "text": "Jeglicher vom Drachen verursachte Feuerschaden ignoriert Feuerresistenz, jedoch nicht Feuerimmunität."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache kann seine „Furchteinflößende Präsenz“ einsetzen. Anschließend führt er einen Bissangriff und zwei Klauenangriffe aus."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 15 (2d10 + 4) Durchdringungsschaden plus 7 (2d6) Feuerschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 11 (2d6 + 4) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite15 ft: , ein Ziel. Treffer: 13 (2d8 + 4) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Furchterregende Präsenz",
+      "type": "special",
+      "text": "Jede Kreatur, die sich in120 feetder Nähe des Drachen befindet und ihn wahrnimmt, muss einenDC 18Weisheits-Rettungswurf bestehen, sonst wird sie für 1 Minute in Angst versetzt. Eine verängstigte Kreatur wiederholt den Rettungswurf am Ende jedes ihrer Züge; bei Erfolg endet der Effekt für sie. Wenn der Rettungswurf einer Kreatur erfolgreich ist oder der Effekt für sie endet, ist die Kreatur für die nächsten 24 Stunden immun gegen die „Furchterregende Präsenz“ des Drachen."
+    },
+    {
+      "name": "Feueratem (Aufladezeit 5-6)",
+      "type": "special",
+      "text": "Der Drache speit Feuer in einem 60-Fuß-Kegel. Jede Kreatur in diesem Bereich erleidet 63 (18d6) Feuerschaden oder nur die Hälfte des Schadens bei einem erfolgreichenDC 19Geschicklichkeits-Rettungswurf. Jede Kreatur in diesem Bereich muss zudem einenDC 18Weisheits-Rettungswurf bestehen, sonst gerät sie für 1 Minute in Raserei. Eine tobende Kreatur muss die nächstgelegene lebende Kreatur angreifen oder einen Gegenstand zerschlagen, der kleiner ist als sie selbst, wenn sie mit einer einzigen Bewegung keine Kreatur erreichen kann. Eine tobende Kreatur wiederholt den Rettungswurf am Ende jedes ihrer Züge und beendet den Effekt auf sich selbst bei Erfolg."
+    },
+    {
+      "name": "Wandelnde Flammen",
+      "type": "special",
+      "text": "Der Drache verwandelt sich auf magische Weise in eine Kreatur, die immun gegen Feuerschaden ist und deren Größe und Herausforderungsgrad nicht höher sind als seine eigenen, oder zurück in seine wahre Gestalt. Er kehrt zu seiner wahren Gestalt zurück, wenn er stirbt. Jegliche Ausrüstung, die er trägt oder bei sich hat, wird von der neuen Gestalt absorbiert oder von ihr getragen (nach Wahl des Drachen). In seiner neuen Gestalt behält der Drache seine Gesinnung, seine Trefferpunkte, seine Trefferwürfel, seine Sprachfähigkeit, seine Fertigkeiten, seine legendäre Resistenz, seine Höhlenaktionen sowie seine Intelligenz-, Weisheits- und Charismawerte sowie diese Aktion bei. Seine Werte und Fähigkeiten werden ansonsten durch die der neuen Gestalt ersetzt, mit Ausnahme etwaiger Klassenmerkmale oder legendärer Aktionen dieser Gestalt."
+    }
+  ],
+  "source": "creature"
+}

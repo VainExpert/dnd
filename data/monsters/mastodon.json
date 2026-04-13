@@ -1,0 +1,59 @@
+{
+  "name": "Mastodon",
+  "size": "Huge",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "huge",
+      "beast",
+      "cr9",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 15,
+  "hp": {
+    "average": 270,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 28,
+    "dex": 10,
+    "con": 24,
+    "int": 2,
+    "wis": 13,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "text": "The mastodon has advantage on Wisdom (Perception)\nchecks that rely on smell."
+    },
+    {
+      "name": "Trampling Charge",
+      "text": "If the mastodon moves at least 20 feet straight\ntowards a creature and then hits with a gore attack on the same turn, that\ncreature must succeed on a DC 19 Strength check or be knocked prone.\nIf the target is prone, the mastodon can make one stomp attack against it\nas a bonus action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Gore",
+      "type": "special",
+      "text": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 27\n(4d8 + 9) piercing damage."
+    },
+    {
+      "name": "Stomp",
+      "type": "special",
+      "text": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 48\n(6d12 + 9) bludgeoning damage and the target must succeed on a DC 17\nConstitution saving throw or be stunned until the end of the mammoth’s\nnext turn."
+    }
+  ],
+  "source": "creature"
+}

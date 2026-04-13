@@ -1,0 +1,18 @@
+{
+  "id": "falsches-leben",
+  "name": "Falsches Leben",
+  "level": 1,
+  "school": "Nekromantie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "V, G, M (eine kleine Menge Alkohol oder Branntwein)",
+  "duration": "1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du erhältst für die Wirkungsdauer 1W4 + 4 temporäre TP.\n\nAuf höheren Level gewirkt: pro Level 5 mehr temporäre TP"
+}

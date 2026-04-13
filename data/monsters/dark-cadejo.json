@@ -1,0 +1,73 @@
+{
+  "name": "Dark Cadejo",
+  "size": "Medium",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 18,
+  "hp": {
+    "average": 99,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 18,
+    "con": 12,
+    "int": 10,
+    "wis": 18,
+    "cha": 10
+  },
+  "skills": {
+    "Deception": 4,
+    "Perception": 8,
+    "Stealth": 8
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Nullification",
+      "text": "While it is within 120 feet of a light\ncadejo, a dark cadejo makes ability checks, attacks,\nand saving throws at disadvantage. Additionally, the\ndark cadejo’s Paralysis and Stench features do not function.\nHowever, any attacks, ability checks, and saving throws resulting from\ndirect combat with a light cadejo are made without disadvantage."
+    },
+    {
+      "name": "Paralysis",
+      "text": "When a creature that can see the dark cadejo’s eyes starts its\nturn within 30 feet of the dark cadejo, the dark cadejo can force it to make\na DC 14 Constitution saving throw if the dark cadejo isn’t incapacitated\nand can see the creature. On a failure, the creature is paralyzed for as long\nas the dark cadejo maintains eye contact. A paralysed creature can repeat\nthe saving at the end of each of its turns, ending the effect on a success.\nThis ability does not function for the dark cadejo while it is within 120\nfeet of a light cadejo.\n\nUnless surprised, a creature can avert its eyes to avoid the saving\nthrow at the start of its turn. If the creature does so, it can’t see the dark\ncadejo until the start of its next turn when it can avert its eyes again. If\nthe creature looks at the dark cadejo in the meantime, it must immediately\nmake the save."
+    },
+    {
+      "name": "Stench",
+      "text": "The dark cadejo emits a sickening stench, affecting all creatures\nnear it. Any creature that begins its turn within 10 feet of the dark cadejo\nmust make a DC 14 Constitution save or be poisoned until the start of its\nnext turn.\n\nThis ability does not function for the dark cadejo while it is within 120\nfeet of a light cadejo."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The dark cadejo makes three attacks: one with its bite and\ntwo with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

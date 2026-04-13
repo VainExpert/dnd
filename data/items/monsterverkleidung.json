@@ -1,0 +1,42 @@
+{
+  "id": "monsterverkleidung",
+  "type": "item",
+  "name": "Monsterverkleidung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein Monsteranzug, der wie ein Tier oder eine Monstrosität aussieht (z.B. Eulenbär). Um die Verkleidung zu erkennen wird eine Aktion und ein erfolgriecher SG-10 Natur- oder Nachforschung-Wurf gebraucht. Ein Untersuchender hat Vorteil, wenn er in 9 m Abstand ist und erkennt die Verkleidung automatisch, wenn der Verkleidete etwas tut was das Monster nicht kann.",
+  "tags": [
+    "kleidung",
+    "verkleidung"
+  ]
+}

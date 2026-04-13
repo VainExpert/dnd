@@ -1,0 +1,75 @@
+{
+  "name": "Tactical Spellblade",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 19,
+  "hp": {
+    "average": 60,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 14,
+    "int": 15,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Arcana": 5,
+    "Athletics": 5,
+    "History": 5,
+    "Perception": 4
+  },
+  "languages": [
+    "Any two languages"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Bonded Weapon",
+      "text": "The spellblade has a magical bond\nwith its weapon. Unless incapacitated, the\nspellblade cannot be disarmed and can summon its\nweapon as a bonus action as long as it is on the\nsame plane of existence."
+    },
+    {
+      "name": "Second Wind (1/Short Rest)",
+      "text": "As a bonus action, the\nspellblade can regain 1d10 + 6 hit points."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The spellblade is a 6th-level spellcaster.\nIts spellcasting ability is Intelligence (spell save DC\n13, +5 to hit with spell attacks). The spellblade has\nthe following wizard spells prepared:\n\n* Cantrips (at will): <i>fire bolt, shocking grasp</i>\n\n* 1st level (3 slots): <i>detect magic, feather fall, jump, shield</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The spellblade makes two attacks with\nits longsword, or casts a cantrip and makes a\nlongsword attack."
+    },
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach\n5 ft., one target. Hit: 7 (1d8 + 3) slashing damage,\nor 8 (1d10 + 3) slashing damage if used with two\nhands."
+    },
+    {
+      "name": "Action Surge (1/Short Rest)",
+      "type": "special",
+      "text": "The spellblade makes\nfour longsword attacks."
+    }
+  ],
+  "source": "creature"
+}

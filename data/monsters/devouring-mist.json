@@ -1,0 +1,63 @@
+{
+  "name": "Devouring Mist",
+  "size": "Large",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "large",
+      "undead",
+      "cr10",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 15,
+  "hp": {
+    "average": 123,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 7,
+    "dex": 19,
+    "con": 13,
+    "int": 8,
+    "wis": 16,
+    "cha": 16
+  },
+  "skills": {
+    "Perception": 7,
+    "Stealth": 8
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Mist Form",
+      "text": "The devouring mist can occupy another\ncreature’s space and vice versa. In addition, if air can pass\nthrough a space, the mist can pass through it without squeezing.\nThe mist moves through water as if it were difficult terrain. The\nmist can’t use objects in any way that requires hands; it can apply\nsimple force only."
+    },
+    {
+      "name": "Blood Sense",
+      "text": "The devouring mist can sense living creatures that have\nblood or similar vital fluids in a radius of 60 feet."
+    },
+    {
+      "name": "Sunlight Hypersensitivity",
+      "text": "The devouring mist takes 20 radiant\ndamage when it starts its turn in sunlight. While in sunlight, the\nmist has disadvantage on attack rolls and ability checks"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Blood Drain",
+      "type": "special",
+      "text": "One creature other than a construct or undead that is in\nthe devouring mist’s space must make a DC 16 Constitution saving throw.\nOn a failed save, the target takes 28 (8d6) necrotic damage and its hit point\nmaximum is reduced by an amount equal to the necrotic damage taken. In\naddition, the mist regains hit points equal to that amount. This reduction\nto the target’s hit point maximum lasts until the target finishes a long rest.\nIt dies if this effect reduces its hit point maximum to 0.\n\nA humanoid slain by this attack rises 24 hours later as a zombie under\nthe mist’s control, unless the humanoid is restored to life or its body is\ndestroyed. The mist can have no more than twelve zombies under its\ncontrol at one time."
+    }
+  ],
+  "source": "creature"
+}

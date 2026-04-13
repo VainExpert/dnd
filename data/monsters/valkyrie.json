@@ -1,0 +1,75 @@
+{
+  "name": "Valkyrie",
+  "size": "Medium",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "medium",
+      "celestial",
+      "cr11",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 112,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 18,
+    "con": 16,
+    "int": 12,
+    "wis": 19,
+    "cha": 18
+  },
+  "skills": {
+    "Perception": 8
+  },
+  "languages": [
+    "Common",
+    "Dwarvish",
+    "Giant",
+    "and see Gift of Tongues"
+  ],
+  "challenge": {
+    "cr": "11",
+    "xp": 7200,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Asgardian Weapons",
+      "text": "The valkyrie's weapon attacks are magical. When she hits with any weapon, it does an extra 11 (2d10) radiant damage (included in attacks listed below)."
+    },
+    {
+      "name": "Cloak of Doom",
+      "text": "Any living creature that starts its turn within 60 feet of a valkyrie senses her unsettling presence and must succeed on a DC 16 Charisma saving throw or be frightened for 1d4 rounds. Those who succeed are immune to the effect for 24 hours. The valkyrie can suppress this aura at will."
+    },
+    {
+      "name": "Gift of Tongues",
+      "text": "Valkyries become fluent in any language they hear spoken for at least 1 minute, and they retain this knowledge forever."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The valkyrie's innate spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). She can innately cast the following spells, requiring no material components:\n\nAt will: bane, bless, invisibility, sacred flame, spare the dying, speak with animals, thaumaturgy\n\n5/day each: gentle repose, healing word, warding bond\n\n3/day each: beacon of hope, mass healing word, revivify\n\n1/day each: commune, death ward, freedom of movement, geas"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage or 9 (1d10 + 4) slashing damage if used with two hands, plus 11 (2d10) radiant damage."
+    },
+    {
+      "name": "Spear",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +8 to hit, reach 10 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage or 8 (1d8 + 4) piercing damage if used with two hands to make a melee attack, plus 11 (2d10) radiant damage."
+    }
+  ],
+  "source": "creature"
+}

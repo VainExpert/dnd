@@ -1,0 +1,73 @@
+{
+  "name": "High Templar of Dust",
+  "size": "Large",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "large",
+      "elemental",
+      "cr10",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 17,
+  "hp": {
+    "average": 189,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 22,
+    "con": 20,
+    "int": 17,
+    "wis": 16,
+    "cha": 13
+  },
+  "skills": {},
+  "languages": [
+    "Aquan",
+    "Auran",
+    "Common",
+    "Ignan",
+    "Terran"
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Sandstorm",
+      "text": "At the start of each of the Templar’s\nturns, each creature within 5 feet of it takes 5\n(1d10) piercing damage."
+    },
+    {
+      "name": "Scour (Recharge 5–6)",
+      "text": "The Templar moves up to\nits speed without provoking opportunity attacks.\nIt can move through creatures, and each creature\nit passes through must make a DC 15 Constitution\nsaving throw or take 10 (3d6) force damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The Templar makes four attacks with\nits halberd, Lightning, or Fire. Lightning and Fire\ncan only be used twice each."
+    },
+    {
+      "name": "Halberd",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit,\nreach 10 ft., one target. Hit: 10 (1d10 + 5) slashing\ndamage."
+    },
+    {
+      "name": "Lightning",
+      "type": "special",
+      "text": "Ranged Spell Attack: +7 to hit, range\n60 ft., one target. Hit: 10 (3d6) lightning damage."
+    },
+    {
+      "name": "Fire",
+      "type": "special",
+      "text": "The Templar hurls a ball of fire that\nexplodes at a point it can see within 60 feet.\nEach creature within a sphere of 10-foot radius\ncentered on that point must make a DC 15 Dexterity\nsaving throw. The sphere spreads around\ncorners. On a failed save, a creature takes 10\n(3d6) fire damage, or half as much damage on a\nsuccessful one."
+    }
+  ],
+  "source": "creature"
+}

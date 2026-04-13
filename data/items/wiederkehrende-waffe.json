@@ -1,0 +1,44 @@
+{
+  "id": "wiederkehrende-waffe",
+  "type": "item",
+  "name": "Wiederkehrende Waffe",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 400,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese magische Waffe (kann jede sein, die die Geworfen-Eigenschaft hat) gibt einen +1 Bonus auf Angriffs- und Schadenwürfe. Wenn du die Waffe wirfst, erscheint sie direkt danach wieder in deiner Hand.",
+  "tags": [
+    "magisch",
+    "kampf",
+    "waffe",
+    "bonus"
+  ]
+}

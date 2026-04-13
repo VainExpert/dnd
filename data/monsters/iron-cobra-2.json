@@ -1,0 +1,47 @@
+{
+  "name": "Iron Cobra",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr4",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 14,
+    "int": 3,
+    "wis": 10,
+    "cha": 1
+  },
+  "skills": {
+    "Stealth": 7
+  },
+  "languages": [
+    "understands one language of its creator but can't speak"
+  ],
+  "challenge": {
+    "cr": "4",
+    "xp": 1100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The iron cobra has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

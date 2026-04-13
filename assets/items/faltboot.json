@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-faltboot",
+  "type": "item",
+  "name": "Faltboot",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Gegenstand sieht zunächst aus wie eine 30 Zentimeter lange, 15 Zentimeter breite und 15 Zentimeter hohe Holzkiste. Sie wiegt zwei Kilogramm und schwimmt auf Wasser. Sie kann geöffnet werden, um Gegenstände darin zu verstauen. Dieser Gegenstand hat außerdem drei Befehlswörter. Du kannst als Aktion jeweils eins davon aussprechen. Auf ein Befehlswort hin entfaltet sich die Kiste zu einem drei Meter langen, 1,2 Meter breiten und 0,6 Meter tiefen Boot Das Boot hat ein Paar Ruder, einen Anker, einen Mast und ein Lateinersegel. Bis zu vier mittelgroße Kreaturen haben bequem darin Platz. Auf das zweite Befehlswort hin entfaltet sich die Kiste zu einem 7,2 Meter langen, 2,4 Meter breiten und 1,8 Meter hohen Schiff. Das Schiff hat ein Deck, Rudersitze, fünf Paar Ruder, ein Steuerruder, einen Anker, eine Kabine an Deck und einen Mast mit einem quadratischen Segel. Fünfzehn mittelgroße Kreaturen haben bequem Platz darin. Wenn die Kiste zu einem Gefährt wird, wiegt sie so viel wie ein normales Gefährt dieser Größe, und alles, was in der Kiste verstaut wurde, bleibt im Boot. Du kannst die Peitsche als Bonusaktion in deinem Zug bis zu sechs Meter fliegen lassen und einen weiteren Angriff gegen eine Kreatur im Abstand von bis zu drei Metern von ihr ausführen. Die Peitsche verschwindet nach einer Stunde, wenn du eine Aktion verwendest, um sie verschwinden zu lassen oder wenn du kampfunfähig bist oder stirbst. Wenn das dritte Befehlswort ausgesprochen wird, faltet sich das Faltboot  wieder zu einer Kiste, sofern keine Kreaturen an Bord sind. Alle Gegenstände in dem Gefährt, die nicht in die Kiste passen, bleiben außerhalb der Kiste zurück. Alle Gegenstände in dem Gefährt, die in die Kiste passen, bleiben in der Kiste.",
+  "tags": []
+}

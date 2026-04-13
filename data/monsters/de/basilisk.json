@@ -1,0 +1,49 @@
+{
+  "name": "Basilisk",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr3",
+      "monster-manual"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 12,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 8,
+    "con": 15,
+    "int": 2,
+    "wis": 8,
+    "cha": 7
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Der erstarrende Blick",
+      "text": "Wenn eine Kreatur ihren Zug in30 ft einer Entfernung von  vom Basilisken beginnt und sich beide sehen können, kann der Basilisken die Kreatur zu einemDC 12  Konstitutions-Rettungswurf zwingen, sofern der Basilisken nicht handlungsunfähig ist. Bei einem misslungenen Rettungswurf beginnt die Kreatur auf magische Weise zu versteinern und ist gefesselt. Sie muss den Rettungswurf am Ende ihres nächsten Zuges wiederholen. Bei Erfolg endet der Effekt. Bei einem Fehlschlag bleibt die Kreatur versteinert, bis sie durch den Zauber „Große Wiederherstellung“ oder andere Magie befreit wird.\n\nEine Kreatur, die nicht überrascht ist, kann zu Beginn ihres Zuges den Blick abwenden, um den Rettungswurf zu vermeiden. Tut sie dies, kann sie den Basilisken bis zum Beginn ihres nächsten Zuges nicht sehen; dann kann sie den Blick erneut abwenden. Wenn sie den Basilisken in der Zwischenzeit ansieht, muss sie sofort den Rettungswurf durchführen.\n\nWenn der Basilisken sein Spiegelbild in 30 fteinem Umkreis von . bei hellem Licht sieht, hält er sich für einen Rivalen und richtet seinen Blick auf sich selbst."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 10 (2d6 + 3) Durchdringungsschaden plus 7 (2d6) Giftschaden."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "kettenpanzer",
+  "type": "item",
+  "name": "Kettenpanzer",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 27.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 75,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": {
+    "base": 16,
+    "dex_bonus": false,
+    "stealth_disadvantage": true,
+    "type": "schwer",
+    "str_requirement": 13
+  },
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Der Kettenpanzer besteht aus miteinander verbundenen Metallringen.",
+  "tags": [
+    "abenteuer",
+    "rüstung",
+    "abwehr",
+    "schwer",
+    "heimlichkeit_nachteil",
+    "schmied"
+  ]
+}

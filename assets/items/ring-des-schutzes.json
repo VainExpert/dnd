@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-ring-des-schutzes",
+  "type": "item",
+  "name": "Ring des Schutzes",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "ring",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "erfordert Einstimmung",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diesen Ring trägst, erhältst du einen Bonus von +1 auf deine RK und Rettungswürfe.",
+  "tags": []
+}

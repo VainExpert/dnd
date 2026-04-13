@@ -1,0 +1,64 @@
+{
+  "name": "Orc Eye of Gruumsh",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "monster-manual",
+      "orc"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 16,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 17,
+    "int": 9,
+    "wis": 13,
+    "cha": 12
+  },
+  "skills": {
+    "Intimidation": 3,
+    "Religion": 1
+  },
+  "languages": [
+    "Common",
+    "Orc"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Aggressive",
+      "text": "As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
+    },
+    {
+      "name": "Gruumsh's Fury",
+      "text": "The orc deals an extra 4 (1d8) damage when it hits with a weapon attack (included in the attacks)."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The orc is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The orc has the following cleric spells prepared:\n\n* Cantrips (at will): <i>guidance, resistance, thaumaturgy</i>\n\n* 1st level (4 slots): <i>bless, command</i>\n\n* 2nd level (2 slots): <i>augury, spiritual weapon </i>(spear)"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Spear",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (1d6 + 3 plus 1d8) piercing damage, or 12 (2d8 + 3) piercing damage if used with two hands to make a melee attack."
+    }
+  ],
+  "source": "creature"
+}

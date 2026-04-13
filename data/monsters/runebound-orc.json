@@ -1,0 +1,61 @@
+{
+  "name": "Runebound Orc",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "nerzugals-extended-bestiary",
+      "orc"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 14,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 14,
+    "con": 16,
+    "int": 8,
+    "wis": 8,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Orc"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Aggressive",
+      "text": "As a bonus action, the orc can move up\nto its speed toward a hostile creature that it can\nsee."
+    },
+    {
+      "name": "Runebound",
+      "text": "The orc's body is coated in magical\nrunes granted by a runespeaker that provide it with\nadditional strength. The orc gains one of the\nfollowing runic bonuses:\n* Rune of Brutality – When the orc hits a creature\nwith less than its maximum hit points, the attack\ndeals an additional 5 (1d10) slashing damage.\n* Rune of Fortitude – The orc's AC is increased to\n16. In addition, as long as the orc has at least 1\nhit point, it regenerates 5 hit points at the start\nof its turn.\n* Rune of Strength – The orc's greataxe attacks\ndeal an additional 3 slashing damage and it has\nadvantage on Strength-based checks and saving\nthrows."
+    },
+    {
+      "name": "Runic Weapon",
+      "text": "The orc's greataxe is imbued with\npowerful arcane runes, causing attacks with that\nweapon to deal an additional 4 (1d8) force damage\n(included in the attack)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Runic Greataxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit,\nreach 5 ft., one target. Hit: 9 (1d12 + 3) slashing\ndamage plus 4 (1d8) force damage."
+    }
+  ],
+  "source": "creature"
+}

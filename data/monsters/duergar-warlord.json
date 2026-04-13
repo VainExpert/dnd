@@ -1,0 +1,51 @@
+{
+  "name": "Duergar Warlord",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr6",
+      "mordenkainens-tome-of-foes",
+      "dwarf"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 20,
+  "hp": {
+    "average": 75,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 11,
+    "con": 17,
+    "int": 12,
+    "wis": 12,
+    "cha": 14
+  },
+  "skills": {},
+  "languages": [
+    "Dwarvish",
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "6",
+    "xp": 2300,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "text": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

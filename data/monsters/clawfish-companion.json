@@ -1,0 +1,69 @@
+{
+  "name": "Clawfish Companion",
+  "size": "Small",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "small",
+      "beast",
+      "companion",
+      "cr0",
+      "flee-mortals"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 7,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30,
+    "swim": 40
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 13,
+    "con": 12,
+    "int": 4,
+    "wis": 10,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "—",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Hold Breath",
+      "text": "The clawfish can hold their breath for\n15 minutes."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Signature Attack (Bite)",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 plus PB to\nhit, reach 5 ft., one target. Hit: 1d6 plus PB piercing damage."
+    },
+    {
+      "name": "1st Level: Overwhelming Attack (2 Ferocity)",
+      "type": "special",
+      "text": "The clawfish\nmakes a signature attack. On a hit, the attack deals an extra\nPB lightning damage, and the target can’t take reactions until\nthe start of the clawfish’s next turn."
+    },
+    {
+      "name": "3rd Level: Coiling Claws (5 Ferocity)",
+      "type": "special",
+      "text": "The clawfish makes a\nsignature attack against a Medium or smaller creature. On a hit,\nthe target is grappled (escape DC 10 plus PB). Until this grapple\nends, the target is restrained and the clawfish can’t make a\nsignature attack against another target."
+    },
+    {
+      "name": "5th Level: Lightning Bomb (8 Ferocity)",
+      "type": "special",
+      "text": "Each creature within\n10 feet of the clawfish must make a DC 10 plus PB Dexterity\nsaving throw, taking PBd8 lightning damage on a failed save,\nor half as much damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

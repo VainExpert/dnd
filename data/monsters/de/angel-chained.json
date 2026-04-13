@@ -1,0 +1,67 @@
+{
+  "name": "Engel, gefesselt",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "medium",
+      "celestial",
+      "cr8",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 16,
+  "hp": {
+    "average": 88,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 16,
+    "con": 12,
+    "int": 12,
+    "wis": 18,
+    "cha": 20
+  },
+  "skills": {
+    "Perception": 7
+  },
+  "languages": [
+    "Common",
+    "Celestial",
+    "Infernal"
+  ],
+  "challenge": {
+    "cr": "8",
+    "xp": 3900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Erlösung",
+      "text": "Jeder Zauberwirker, der mutig genug ist, einen „Knock“-Zauber auf einen gefesselten Engel anzuwenden, kann die Fesseln der Kreatur lösen, wird dabei jedoch stets als Reaktion einem Stoß unheiliger Flammen ausgesetzt. Der Zauberwirker erleidet 16 (3d10) Feuerschaden und 16 (3d10) Strahlungsschaden oder nur die Hälfte davon bei einem erfolgreichenDC 16  Geschicklichkeits-Rettungswurf. Überlebt der Zaubernde, führt der Engel sofort einenDC 20 Weisheits-Rettungswurf durch; bei Erfolg fallen die Ketten des Engels ab und er kommt wieder zu Sinnen und erhält seine gute Gesinnung zurück. Bei einem misslungenen Rettungswurf scheitern alle weiteren Versuche, „Knock“ auf die Ketten des Engels zu wirken, eine Woche lang automatisch."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der gefesselte Engel führt zwei feurige Großschwertangriffe aus."
+    },
+    {
+      "name": "Feuriges Großschwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff. +7 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 11 (2d6 + 4) Schnittschaden plus 16 (3d10) Feuerschaden."
+    },
+    {
+      "name": "Verlorener Ruhm (Aufladen 5-6)",
+      "type": "special",
+      "text": "Alle Wesen im50 feetUmkreis des gefesselten Engels und in dessen Sichtlinie erleiden 19 (3d12) Strahlungsschaden und werden zu Boden geworfen; bei einem erfolgreichenDC 15Stärke-Rettungswurf erleiden sie nur die Hälfte des Schadens und werden nicht zu Boden geworfen."
+    }
+  ],
+  "source": "creature"
+}

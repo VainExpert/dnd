@@ -1,0 +1,76 @@
+{
+  "name": "Ätherbrut-Risswanderer",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr3",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 15,
+  "hp": {
+    "average": 65,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 17,
+    "con": 15,
+    "int": 17,
+    "wis": 15,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Ätherausbruch",
+      "text": "Wenn der Risswanderer stirbt, explodiert er\nin einem Ausbruch elementarer Energie. Jede Kreatur in5\nfeetseiner Nähe muss einenDC 13Geschicklichkeits-Rettungswurf durchführen\nund erleidet bei einem misslungenen Rettungswurf 14 (4d6) Schaden der Art, die\nder Elementar-Einstimmung des Risswanderers entspricht,\noder bei einem erfolgreichen Rettungswurf die Hälfte dieses Schadens."
+    },
+    {
+      "name": "Elementare Einstimmung",
+      "text": "Der Risswanderer ist mit\nentweder arkaner, eisiger, feuriger oder blitzartiger Energie erfüllt. Die Angriffe des Risswanderers\nverursachen zusätzlichen Schaden basierend auf diesem\nElement (im Angriff enthalten) und er verfügt über Resistenzen\ngegen das entsprechende Element. Darüber hinaus löst jeder Angriff\nmit einem bestimmten Element einen zusätzlichen Effekt aus.\n\n* Arkan – zusätzlicher Kraftschaden und das Ziel muss einenDC 13  Weisheits-Rettungswurf bestehen oder wird bis zum nächsten Zug des Riftwalkers zum Schweigen gebracht; Widerstand gegen Kraftschaden\n* Eis – zusätzlicher Kälteschaden und die Geschwindigkeit des Ziels wird bis zum nächsten Zug des Riftwalkers halbiert; Widerstand gegen Kälteschaden\n* Feuer – zusätzlicher Feuerschaden und wenn das Ziel eine Kreatur oder ein brennbares Objekt ist, entzündet es sich. Bis eine Kreatur eine Aktion ausführt, um das Feuer zu löschen, erleidet das Ziel zu Beginn jedes seiner Züge 3 (1d6) Feuerschaden; Widerstand gegen Feuerschaden\n* Blitz – zusätzlicher Blitzschaden und das Ziel kann bis zum nächsten Zug des Riftwalkers keine Reaktionen ausführen; Widerstand gegen Blitzschaden"
+    },
+    {
+      "name": "Es kommt zu überhöhten Preisen",
+      "text": "Wenn die Zauberklinge dasselbe\nZiel in einem einzigen\nZug mit beiden Ätherklingen-Angriffen trifft, explodiert das Ziel unter Freisetzung elementarer Energie. Diese\nKreatur erleidet zusätzlich 7 (2d6) Schaden einer Art,\ndie der Elementar-Einstimmung des Wächters entspricht."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Rift-Walker führt zwei Nahkampfangriffe aus."
+    },
+    {
+      "name": "Ätherangriff",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite5\nft: , ein Ziel. Treffer: 6 (1d6 + 3) Bludgeoning-Schaden\nplus 7 (2d6) Schaden der Art, die der\nElementar-Einstimmung des Riftwalkers entspricht."
+    },
+    {
+      "name": "Elementarsplitter",
+      "type": "special",
+      "text": "Fernkampfangriff: +5 auf den Trefferwurf,\nReichweite30/90  Fuß, ein Ziel. Treffer: 5 (1d4 + 3) Durchdringungsschaden\nplus 7 (2d6) Schaden der Art,\ndie der Elementar-Einstimmung\ndes Risswanderers entspricht."
+    },
+    {
+      "name": "Äther-Schritt (Aufladen 4-6)",
+      "type": "special",
+      "text": "Der Risswanderer teleportiert sich\nzu60 feeteinem freien Feld, das er sehen kann. Anschließend\nführt er zwei Ätherangriffe aus, wobei der erste\nmit Vorteil ausgeführt wird."
+    }
+  ],
+  "source": "creature"
+}

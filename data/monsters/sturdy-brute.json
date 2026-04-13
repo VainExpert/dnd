@@ -1,0 +1,77 @@
+{
+  "name": "Sturdy Brute",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 15,
+  "hp": {
+    "average": 66,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 16,
+    "int": 8,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Animal Handling": 4,
+    "Athletics": 7,
+    "Survival": 4
+  },
+  "languages": [
+    "Any two languages"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Danger Sense",
+      "text": "The brute has advantage on\nDexterity saving throws."
+    },
+    {
+      "name": "Legendary Resistance (1/Day)",
+      "text": "If the brute fails a\nsaving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Rage (4/Day)",
+      "text": "As a bonus action, the brute can\nenter a rage for 1 minute. While raging, the\nbrute gains the following benefits:\n* Advantage on Strength checks and Strength\nsaving throws\n* Melee weapon attacks deal an additional 2\ndamage.\n* The brute gains resistance to bludgeoning,\npiercing, and slashing damage."
+    },
+    {
+      "name": "Totem of the Bear",
+      "text": "While raging, the brute has\nresistance to all damage psychic damage.\nAdditionally, the brute's carrying capacity is\ndoubled and it has advantage on Strength checks\nmade to push, pull, lift, or break objects."
+    },
+    {
+      "name": "Unarmored Defense",
+      "text": "While not wearing armor, the\nbrute's AC includes its Constitution modifier."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The brute makes two attacks with its\ngreataxe."
+    },
+    {
+      "name": "Greataxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5\nft., one target. Hit: 10 (1d12 + 4) slashing damage,\nor 12 (1d12 + 6) slashing damage if raging."
+    }
+  ],
+  "source": "creature"
+}

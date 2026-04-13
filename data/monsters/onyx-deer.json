@@ -1,0 +1,76 @@
+{
+  "name": "Onyx Deer",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr4",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 76,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 15,
+    "con": 17,
+    "int": 5,
+    "wis": 12,
+    "cha": 13
+  },
+  "skills": {
+    "Perception": 3
+  },
+  "languages": [
+    "understands Sylvan but can't speak"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "text": "The onyx deer has advantage on Wisdom (Perception)\nchecks that rely on smell."
+    },
+    {
+      "name": "Onyx Bite",
+      "text": "Creatures bitten by an onyx deer must succeed on a\nConstitution saving throw or slowly begin to turn into onyx (included in\nthe attack)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The onyx deer makes four attacks: one bite, one gore,\nand two with its hooves."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage and the creature must make a DC 14\nConstitution saving throw. On a failed save, the creature magically begins\nto turn to onyx and is restrained. It must repeat the saving throw at the end\nof its next turn. On a success, the effect ends. On a failure, the creature is\npetrified in onyx until freed by a greater restoration spell or other magic."
+    },
+    {
+      "name": "Gore",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage."
+    },
+    {
+      "name": "Hooves",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage."
+    },
+    {
+      "name": "Bellow (Recharge 5–6)",
+      "type": "special",
+      "text": "The onyx deer unleashes a rumbling bellow.\nEach creature that is within 60 feet of the onyx deer and able to hear it\nmust succeed on a DC 14 Wisdom saving throw or be frightened for 1\nminute. The frightened creature can repeat the saving throw at the end of\neach of its turns, ending the effect on itself on a success."
+    }
+  ],
+  "source": "creature"
+}

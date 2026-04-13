@@ -1,0 +1,65 @@
+{
+  "name": "Dickhornbison",
+  "size": "Groß",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr4",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 14,
+  "hp": {
+    "average": 57,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 22,
+    "dex": 12,
+    "con": 19,
+    "int": 2,
+    "wis": 12,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Zertrampeln",
+      "text": "Wenn sich der Bison mindestens20 feetgeradeaus auf eine Kreatur zubewegt\nund sie dann im selben Zug mit einem Hornstoß-Angriff trifft, muss dieses Ziel\neinenDC 16Stärke-Rettungswurf bestehen oder wird zu Boden geworfen. Befindet sich das Ziel\nam Boden, kann der Bison als Bonusaktion einen Tritt-Angriff gegen es ausführen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Dickhornbison kann einen Hornstoß und einen Tritt ausführen."
+    },
+    {
+      "name": "Um",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 19\n(3d8 + 6) Durchdringungsschaden."
+    },
+    {
+      "name": "Stumpf",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 22\n(3d10 + 6) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Kick",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 zum Treffen, Reichweite5 ft: ein Ziel direkt\nhinter dem Angreifer. Treffer: 15 (2d8 + 6) Bludgeoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

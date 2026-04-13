@@ -1,0 +1,46 @@
+{
+  "id": "dreizack-der-fischherrschaft",
+  "type": "item",
+  "name": "Dreizack der Fischherrschaft",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 250,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": 3,
+    "recharge": "1W3 am Morgen"
+  },
+  "uses": {
+    "max": null,
+    "recharge": "1W3 am Morgen"
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Dreizack ist eine magische Waffe. Er hat drei Ladungen. Wenn du ihn trägst, kannst du als Aktion eine Ladung verbrauchen, um den Zauber Tier beherrschen (SG 15) damit auf ein Tier zu wirken, das eine angeborene Schwimmbewegungsrate hat. Der Dreizack erhält täglich im Morgengrauen 1W3 verbrauchte Ladungen zurück.",
+  "tags": [
+    "waffe",
+    "magisch",
+    "wasser",
+    "zauber",
+    "tiere",
+    "dreizack"
+  ]
+}

@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Monster</title>
+  <link rel="stylesheet" href="../../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title" id="title">Monster</div>
+      <div class="subtitle"><a href="./bestiary.html">← Zurück zum Bestiarium</a> • <a href="../../index.html">Startseite</a></div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="content" style="max-width:900px;">
+      <div id="view"></div>
+    </div>
+  </main>
+
+  <script type="module">
+    import {
+      escapeHtml,
+      loadIndex,
+      loadMany,
+      fmtSigned,
+      mod,
+      normalizeMonster,
+      linkifyRefs,
+      entityLinkHtml,
+      normalizeEntityRef,
+      slugify
+    } from "../../lib.js";
+
+    const view = document.getElementById("view");
+    const titleEl = document.getElementById("title");
+    const id = new URLSearchParams(location.search).get("id");
+
+    if (!id) {
+      view.innerHTML = "<p>Fehlende Monster-ID.</p>";
+      throw new Error("Fehlende Monster-ID");
+    }
+
+    async function fetchJson(url) {
+      const res = await fetch(url, { cache: "no-cache" });
+      if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
+      return res.json();
+    }
+
+    async function loadMonster(idParam) {
+      const rawId = String(idParam || "").trim();
+      const candidates = Array.from(new Set([
+        rawId,
+        slugify(rawId),
+        rawId.toLowerCase()
+      ].filter(Boolean)));
+
+      for (const candidate of candidates) {
+        try {
+          const raw = await fetchJson(`../../data/monsters/${encodeURIComponent(candidate)}.json`);
+          return normalizeMonster(raw);
+        } catch {}
+      }
+
+      const files = await loadIndex("../../data/monsters/index.json");
+      const monsters = (await loadMany("../../data/monsters", files)).map(normalizeMonster);
+      const lowered = rawId.toLowerCase();
+      const slug = slugify(rawId);
+
+      return (
+        monsters.find(x => String(x.id || "").toLowerCase() === lowered) ||
+        monsters.find(x => String(x.name || "").toLowerCase() === lowered) ||
+        monsters.find(x => slugify(x.id || x.name || "") === slug) ||
+        null
+      );
+    }
+
+    function formatSpeed(speed) {
+      if (!speed || typeof speed !== "object") return "—";
+      const order = ["walk", "fly", "swim", "climb", "burrow"];
+      const labels = {
+        walk: "Laufen",
+        fly: "Fliegen",
+        swim: "Schwimmen",
+        climb: "Klettern",
+        burrow: "Graben"
+      };
+      const parts = [];
+      for (const key of order) {
+        const value = speed[key];
+        if (value == null || value === "") continue;
+        parts.push(typeof value === "number" ? `${labels[key]} ${value} ft.` : `${labels[key]} ${value}`);
+      }
+      return parts.length ? parts.join(", ") : "—";
+    }
+
+    function formatList(value) {
+      if (!value) return "";
+      if (Array.isArray(value)) {
+        return value.map(entry => typeof entry === "object" ? `${entry.name || ""}${entry.note || ""}`.trim() : String(entry)).join(", ");
+      }
+      if (typeof value === "object") {
+        return Object.entries(value).map(([key, entry]) => `${key} ${entry}`).join(", ");
+      }
+      return String(value);
+    }
+
+    function renderSpellRefs(refs) {
+      return (Array.isArray(refs) ? refs : [])
+        .map(ref => {
+          if (ref && typeof ref === "object" && ref.id) {
+            return entityLinkHtml("spell", normalizeEntityRef(ref), { base: "../zauber/" });
+          }
+          return escapeHtml(String(ref ?? ""));
+        })
+        .join(", ");
+    }
+
+    function renderSpellcastingSection(entries) {
+      return (Array.isArray(entries) ? entries : []).map(entry => {
+        const groups = Object.entries(entry?.spells || {})
+          .map(([key, refs]) => {
+            const label = key === "cantrips_at_will"
+              ? "Zaubertricks (beliebig)"
+              : key.startsWith("level_")
+                ? `Grad ${key.replace("level_", "")}`
+                : key.replaceAll("_", " ");
+            const html = renderSpellRefs(refs);
+            return html ? `<div class="mini"><b>${escapeHtml(label)}:</b> ${html}</div>` : "";
+          })
+          .filter(Boolean)
+          .join("");
+
+        return `
+          <div class="mini" style="margin-bottom:10px;">
+            ${entry?.name ? `<div><b>${escapeHtml(entry.name)}</b></div>` : ""}
+            ${entry?.text ? `<div style="margin:4px 0 6px 0;">${linkifyRefs(entry.text, { base: "./" })}</div>` : ""}
+            ${groups}
+          </div>
+        `;
+      }).join("");
+    }
+
+    try {
+      const m = await loadMonster(id);
+
+      if (!m) {
+        view.innerHTML = `<p>Monster nicht gefunden: <code>${escapeHtml(id)}</code></p>`;
+        throw new Error("Monster nicht gefunden");
+      }
+
+      titleEl.textContent = m.name || "Monster";
+
+      const ab = m.abilities || {};
+      const typeLine = `${m.size || "—"} ${m.type?.type || "—"}, ${m.alignment || "—"}`;
+
+      const defenses = [];
+      const vul = formatList(m.damage_vulnerabilities);
+      const res = formatList(m.damage_resistances);
+      const imm = formatList(m.damage_immunities);
+      const cimm = formatList(m.condition_immunities);
+      if (vul) defenses.push(`<div class="mini"><b>Verwundbar:</b> ${escapeHtml(vul)}</div>`);
+      if (res) defenses.push(`<div class="mini"><b>Resistenz:</b> ${escapeHtml(res)}</div>`);
+      if (imm) defenses.push(`<div class="mini"><b>Immun:</b> ${escapeHtml(imm)}</div>`);
+      if (cimm) defenses.push(`<div class="mini"><b>Statusimmunität:</b> ${escapeHtml(cimm)}</div>`);
+
+      const savesLine = formatList(m.saving_throws);
+      const skillsLine = formatList(m.skills);
+      const sensesLine = formatList(m.senses);
+      const languagesLine = Array.isArray(m.languages) ? m.languages.join(", ") : formatList(m.languages);
+
+      const legIntro = m.legendary_actions_intro ? `<div class="mini">${escapeHtml(m.legendary_actions_intro)}</div>` : "";
+      const legActions = (m.legendary_actions || []).map(action => {
+        const cost = action.cost != null ? ` (Kosten ${action.cost})` : "";
+        return `<div class="mini"><b>${escapeHtml(action.name)}${escapeHtml(cost)}.</b> ${linkifyRefs(action.text || "", { base: "./" })}</div>`;
+      }).join("");
+
+      view.innerHTML = `
+        <h1>${escapeHtml(m.name)}</h1>
+        <p class="muted">${escapeHtml(typeLine)}</p>
+
+        <div class="mini-box">
+          <div class="mini-box-title">Werte</div>
+          <div class="mini-box-text">
+            <div><b>RK:</b> ${escapeHtml(m.ac)}${m.ac_note ? ` <span class="muted">(${escapeHtml(m.ac_note)})</span>` : ""}</div>
+            <div><b>TP:</b> ${escapeHtml(m.hp?.average)}${m.hp?.formula ? ` <span class="muted">(${escapeHtml(m.hp.formula)})</span>` : ""}</div>
+            <div><b>Bewegung:</b> ${escapeHtml(formatSpeed(m.speed))}</div>
+            <div style="margin-top:8px;">
+              <b>STR</b> ${ab.str ?? "—"} (${fmtSigned(mod(ab.str ?? 10))}) •
+              <b>DEX</b> ${ab.dex ?? "—"} (${fmtSigned(mod(ab.dex ?? 10))}) •
+              <b>CON</b> ${ab.con ?? "—"} (${fmtSigned(mod(ab.con ?? 10))}) •
+              <b>INT</b> ${ab.int ?? "—"} (${fmtSigned(mod(ab.int ?? 10))}) •
+              <b>WIS</b> ${ab.wis ?? "—"} (${fmtSigned(mod(ab.wis ?? 10))}) •
+              <b>CHA</b> ${ab.cha ?? "—"} (${fmtSigned(mod(ab.cha ?? 10))})
+            </div>
+          </div>
+        </div>
+
+        ${(savesLine || skillsLine || sensesLine || languagesLine) ? `
+          <div class="mini-box" style="margin-top:12px;">
+            <div class="mini-box-title">Fertigkeiten</div>
+            <div class="mini-box-text">
+              ${savesLine ? `<div class="mini"><b>Rettungswürfe:</b> ${escapeHtml(savesLine)}</div>` : ""}
+              ${skillsLine ? `<div class="mini"><b>Fertigkeiten:</b> ${escapeHtml(skillsLine)}</div>` : ""}
+              ${sensesLine ? `<div class="mini"><b>Sinne:</b> ${escapeHtml(sensesLine)}</div>` : ""}
+              ${languagesLine ? `<div class="mini"><b>Sprachen:</b> ${escapeHtml(languagesLine)}</div>` : ""}
+            </div>
+          </div>` : ""}
+
+        ${defenses.length ? `<div class="mini-box" style="margin-top:12px;"><div class="mini-box-title">Verteidigungen</div><div class="mini-box-text">${defenses.join("")}</div></div>` : ""}
+
+        ${(m.spellcasting && m.spellcasting.length) ? `
+          <div class="mini-box" style="margin-top:12px;">
+            <div class="mini-box-title">Zauber</div>
+            <div class="mini-box-text">${renderSpellcastingSection(m.spellcasting)}</div>
+          </div>
+        ` : ""}
+
+        ${(m.traits && m.traits.length) ? `
+          <div class="mini-box" style="margin-top:12px;">
+            <div class="mini-box-title">Eigenschaften</div>
+            <div class="mini-box-text">
+              ${m.traits.map(trait => `<div class="mini"><b>${escapeHtml(trait.name)}.</b> ${linkifyRefs(trait.text || "", { base: "./" })}</div>`).join("")}
+            </div>
+          </div>` : ""}
+
+        ${(m.actions && m.actions.length) ? `
+          <div class="mini-box" style="margin-top:12px;">
+            <div class="mini-box-title">Aktionen</div>
+            <div class="mini-box-text">
+              ${m.actions.map(action => `<div class="mini"><b>${escapeHtml(action.name)}.</b> ${linkifyRefs(action.text || action.type || "", { base: "./" })}</div>`).join("")}
+            </div>
+          </div>` : ""}
+
+        ${(m.legendary_actions && m.legendary_actions.length) ? `
+          <div class="mini-box" style="margin-top:12px;">
+            <div class="mini-box-title">Legendäre Aktionen</div>
+            <div class="mini-box-text">${legIntro}${legActions}</div>
+          </div>` : ""}
+
+        <p class="muted" style="margin-top:12px;">
+          ${m.challenge?.cr ? `<b>HG:</b> ${escapeHtml(m.challenge.cr)}` : ""}
+          ${m.challenge?.proficiency_bonus != null ? ` • <b>ÜB:</b> ${escapeHtml(fmtSigned(m.challenge.proficiency_bonus))}` : ""}
+          ${m.xp ? ` • <b>EP:</b> ${escapeHtml(m.xp)}` : ""}
+          ${m.source ? ` • <b>Quelle:</b> ${escapeHtml(typeof m.source === "string" ? m.source : "homebrew")}` : ""}
+        </p>
+      `;
+    } catch (error) {
+      if (!view.innerHTML.trim()) {
+        view.innerHTML = `<p>Fehler beim Laden des Monsters: <code>${escapeHtml(id)}</code></p>`;
+      }
+      console.error(error);
+    }
+  </script>
+</body>
+</html>

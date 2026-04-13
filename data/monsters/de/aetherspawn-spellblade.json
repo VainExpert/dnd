@@ -1,0 +1,67 @@
+{
+  "name": "Äthergeborene Zauberklinge",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 14,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 17,
+    "con": 15,
+    "int": 16,
+    "wis": 15,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Elementare Einstimmung",
+      "text": "Die Zauberklinge ist mit\nentweder arkaner, Eis-, Feuer- oder Blitzenergie erfüllt. Die\nAngriffe der Zauberklinge verursachen zusätzlichen Schaden, der von\ndiesem Element abhängt (im Angriff enthalten), sie verfügt über\nWiderstände gegen das entsprechende Element und kann\nzweimal pro Tag einen entsprechenden Elementarzauber wirken,\nohne dass dafür materielle Komponenten benötigt werden. Die\nZauberfähigkeit des Zauberklingenträgers ist Intelligenz (ZauberrettungswurfDC 13, +5 Bonus auf Treffer).\n\n* Arkan – Bonus auf Kraftschaden und Widerstand gegen Kraftschaden; kann Magischer Pfeil wirken\n* Eis – Bonus auf Kälteschaden und Widerstand gegen Kälteschaden; kann Eismesser wirken\n* Feuer – Bonus auf Feuerschaden und Widerstand gegen Feuerschaden; kann Brennende Hände wirken\n* Blitz – Bonus auf Blitzschaden und Widerstand gegen Blitzschaden; kann Hexenblitz wirken"
+    },
+    {
+      "name": "Es kommt zu überhöhten Preisen",
+      "text": "Wenn die Zauberklinge dasselbe\nZiel in einem einzigen\nZug mit beiden Ätherklingen-Angriffen trifft, explodiert das Ziel unter Freisetzung elementarer Energie. Diese\nKreatur erleidet zusätzlich 7 (2d6) Schaden einer Art,\ndie der Elementar-Einstimmung des Wächters entspricht."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Die Zauberklinge führt zwei Nahkampfangriffe aus."
+    },
+    {
+      "name": "Ätherklingen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite5\nft: , ein Ziel. Treffer: 6 (1d6 + 3) Schnittschaden plus 3\n(1d6) Schaden der Art, die der\nElementar-Einstimmung der Zauberklinge entspricht."
+    },
+    {
+      "name": "Elementarsplitter",
+      "type": "special",
+      "text": "Fernkampfangriff: +5 auf den Trefferwurf,\nReichweite30/90  Fuß, ein Ziel. Treffer: 5 (1d4 + 3) Durchdringungsschaden\nplus 3 (1d6) Schaden der Art,\ndie der Elementar-Einstimmung\ndes Zauberklingenträgers entspricht."
+    }
+  ],
+  "source": "creature"
+}

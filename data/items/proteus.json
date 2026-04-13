@@ -1,0 +1,47 @@
+{
+  "id": "proteus",
+  "type": "item",
+  "name": "Proteus",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 600,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Gegenstand kann sich in jedes Werkzeug und jede Waffe verwandeln. Er braucht dafür eine Aktion. Um die Verwandlung durchzuführen muss das innenliegende Bewusstsein names Proteus erfolgreich überzeugt werden. Proteus macht sehr ungern Schaden und hat eine pazifistische neutrale Persönlichkeit. Alle Würfe, die im Zusammenhang mit diesem Gegenstand gemacht werden, haben einen +1 Bonus.",
+  "tags": [
+    "magisch",
+    "waffe",
+    "verwandeln",
+    "werkzeug",
+    "überzeugen",
+    "bonus",
+    "aktion"
+  ]
+}

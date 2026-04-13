@@ -1,0 +1,53 @@
+{
+  "name": "Angulotl Yegg",
+  "size": "Klein",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "retainer",
+      "cr0",
+      "flee-mortals"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 13,
+  "hp": {
+    "average": 0,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20,
+    "swim": 30
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 16,
+    "con": 10,
+    "int": 10,
+    "wis": 14,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "Angulotl",
+    "Common"
+  ],
+  "challenge": {
+    "cr": "—",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibisch",
+      "text": "Der Angulotl-Yegg kann sowohl an der Luft als auch unter Wasser atmen."
+    },
+    {
+      "name": "Signaturangriff (Giftmesser)",
+      "text": "Nahkampf- oder Fernkampfwaffe\nAngriff: +3 plus PB zum Treffen, Reichweite 1,5 m. oder Reichweite20/60  Fuß,\nein Ziel. Treffer:1d4  plus PB durchdringender Schaden plus 7 (2d6)\nGiftschaden. Ab Stufe 7 kann der Yegg\ndiesen Angriff zweimal statt einmal ausführen, wenn er in seinem Zug die Aktion „Angriff“\nwählt."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

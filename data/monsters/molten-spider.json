@@ -1,0 +1,64 @@
+{
+  "name": "Molten Spider",
+  "size": "Medium",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "medium",
+      "beast",
+      "cr2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 12,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 14,
+    "int": 6,
+    "wis": 12,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 5
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Spider Climb",
+      "text": "The spider can climb difficult\nsurfaces, including upside down on ceilings,\nwithout needing to make an ability check."
+    },
+    {
+      "name": "Web Walker",
+      "text": "The spider ignores movement\nrestrictions caused by webbing."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5ft.,\none target. Hit: 7 (1d8 + 3) piercing damage, and\nthe target must make a DC 11 Constitution saving\nthrow, taking 10 (3d6) fire damage on a failed save,\nor half as much damage on a successful one."
+    },
+    {
+      "name": "Molten Web (Recharge 6)",
+      "type": "special",
+      "text": "The spider produces a\nmass of molten, sticky webbing at a point within 20\nfeet. The web fills a 10-foot cube from that point\nfor the next minute. The web is difficult terrain and\nlightly obscures the area. Each creature that starts\nits turn in the webs or that enters them during its\nturn takes 5 (2d4) fire damage and must make a DC\n11 Dexterity saving throw. On a failed saving throw\nthe creature is restrained as long as it remains in\nthe webs or until it breaks free. A creature\nrestrained by the webs can use its action to make a\nDC 11 Strength check, freeing itself on a success.\nThe webs are vulnerable to water. Any 5-foot cube\nof webs exposed to water dissolve in 1 round."
+    }
+  ],
+  "source": "creature"
+}

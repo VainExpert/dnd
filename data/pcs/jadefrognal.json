@@ -1,0 +1,803 @@
+{
+  "character": {
+    "identity": {
+      "name": "Jade Frognal",
+      "player_name": "Sarah",
+      "class": {
+        "name": "Druidin",
+        "level": 3,
+        "subclass": "Zirkel des Landes"
+      },
+      "race": "Tiefen-Gnom",
+      "background": "Volksheld",
+      "alignment": "chaotisch-gut",
+      "deity": null,
+      "gender": "weiblich",
+      "age": 79,
+      "size": "Klein",
+      "height": 1.05,
+      "weight": 19,
+      "appearance": {
+        "skin": "gebräunt",
+        "eyes": "grün",
+        "hair": "rot"
+      },
+      "organizations": [
+        "Tybalds Abenteuertruppe"
+      ],
+      "allies": []
+    },
+    "ability_scores": {
+      "STR": {
+        "score": 8,
+        "mod": -1,
+        "save": -1
+      },
+      "DEX": {
+        "score": 13,
+        "mod": 1,
+        "save": 1
+      },
+      "CON": {
+        "score": 10,
+        "mod": 0,
+        "save": 0
+      },
+      "INT": {
+        "score": 15,
+        "mod": 2,
+        "save": 4
+      },
+      "WIS": {
+        "score": 15,
+        "mod": 2,
+        "save": 4
+      },
+      "CHA": {
+        "score": 14,
+        "mod": 2,
+        "save": 2
+      }
+    },
+    "proficiency_bonus": 2,
+    "inspiration": false,
+    "skills": {
+      "Akrobatik": 1,
+      "Arkane Kunde": 4,
+      "Athletik": -1,
+      "Auftreten": 2,
+      "Einschüchtern": 2,
+      "Fingerfertigkeit": 1,
+      "Geschichte": 2,
+      "Heimlichkeit": 1,
+      "Medizin": 4,
+      "Mit Tieren umgehen": 4,
+      "Motiv erkennen": 2,
+      "Nachforschungen": 2,
+      "Naturkunde": 4,
+      "Religion": 2,
+      "Täuschen": 2,
+      "Überlebenskunst": 4,
+      "Überzeugen": 2,
+      "Wahrnehmung": 4
+    },
+    "passive_scores": {
+      "passive_wahrnehmung": 14,
+      "passiver_einblick": 12,
+      "passive_nachforschungen": 12
+    },
+    "combat": {
+      "armor_class": 14,
+      "initiative": 1,
+      "speeds": {
+        "walk": 7.5
+      },
+      "hp": {
+        "max": 20,
+        "hit_dice": "3d8"
+      },
+      "defenses": {
+        "resistances": [],
+        "immunities": [],
+        "advantages": [
+          "Vorteil auf INT-, WIS- und CHA-Rettungswürfe gegen Magie (Gnomische Gerissenheit)"
+        ],
+        "condition_immunities": []
+      },
+      "senses": {
+        "darkvision": 36,
+        "darkvision_note": "Graustufen (Bessere Dunkelsicht)"
+      },
+      "attacks_and_cantrips": [
+        {
+          "name": "Zauberstab der Wälder*",
+          "attack_bonus": 3,
+          "damage": "1d6+1 Wucht",
+          "properties": [
+            "Einfach",
+            "Vielseitig",
+            "10 Aufladungen",
+            "*-Effekt"
+          ],
+          "notes": [
+            "Magische Waffe: +2 auf Angriffs- und Schadenswürfe (bereits verrechnet).",
+            "Zauberangriff: +2 (wenn gehalten; separat als Item-Effekt geführt)."
+          ]
+        },
+        {
+          "name": "Sichel",
+          "attack_bonus": 1,
+          "damage": "1d4-1 Hieb",
+          "properties": [
+            "Einfach",
+            "Leicht"
+          ],
+          "item_ref": {
+            "id": "sichel",
+            "name": "Sichel"
+          }
+        },
+        {
+          "name": "Kurzbogen",
+          "attack_bonus": 3,
+          "damage": "1d6+1 Stich",
+          "properties": [
+            "Einfach",
+            "Munition",
+            "Reichweite 24 m / 100 m",
+            "Peinigen"
+          ],
+          "item_ref": {
+            "id": "kurzbogen",
+            "name": "Kurzbogen"
+          }
+        },
+        {
+          "name": "Unbewaffneter Schlag",
+          "attack_bonus": 1,
+          "damage": "0 Wucht"
+        },
+        {
+          "name": "Gift versprühen",
+          "attack_bonus": 4,
+          "damage": "1d12 Gift",
+          "properties": [
+            "Reichweite 3 m",
+            "V/G",
+            "weitere Effekte"
+          ],
+          "spell_ref": {
+            "id": "gift-verspruehen",
+            "name": "Gift versprühen"
+          }
+        },
+        {
+          "name": "Schockgriff",
+          "attack_bonus": 4,
+          "damage": "1d8 Blitz",
+          "properties": [
+            "Berührung",
+            "V/G",
+            "weitere Effekte"
+          ],
+          "spell_ref": {
+            "id": "schockgriff",
+            "name": "Schockgriff"
+          }
+        }
+      ],
+      "actions": {
+        "standard": [
+          "Angriff",
+          "Ausweichen",
+          "Beeinflussen",
+          "Interagieren",
+          "Flucht",
+          "Helfen",
+          "Magie",
+          "Packen",
+          "Sprint",
+          "Stoßen",
+          "Studieren",
+          "Verstecken",
+          "Verwenden",
+          "Vorbereiten",
+          "Wilder Vertrauter (Magie-Aktion; siehe Merkmale)",
+          "Hilfe des Landes (Magie-Aktion; siehe Merkmale)"
+        ],
+        "bonus_actions": [
+          "Tiergestalt (siehe Merkmale)"
+        ],
+        "reactions": [
+          "Gelegenheitsangriff"
+        ]
+      }
+    },
+    "proficiencies": {
+      "armor": [
+        "Leichte Rüstung und Schilde"
+      ],
+      "weapons": [
+        "Einfache Waffen"
+      ],
+      "tools": [
+        "Kochutensilien",
+        "Kräuterkundeausrüstung",
+        "Landfahrzeuge"
+      ],
+      "languages": [
+        "Gemeinsprache",
+        "Eichhörnchen",
+        "Druidisch",
+        "Gnomisch",
+        "Zwergisch"
+      ]
+    },
+    "spellcasting": {
+      "spellcasting_class": "Druidin",
+      "spellcasting_ability": "WIS",
+      "spellcasting_ability_mod": 2,
+      "spell_save_dc": 12,
+      "spell_attack_bonus": 4,
+      "spell_slots": {
+        "level_1": {
+          "max": 4
+        },
+        "level_2": {
+          "max": 2
+        }
+      },
+      "cantrips": [
+        {
+          "id": "druidenkunst",
+          "name": "Druidenkunst"
+        },
+        {
+          "id": "flammen-kontrollieren",
+          "name": "Flammen kontrollieren"
+        },
+        {
+          "id": "gift-verspruehen",
+          "name": "Gift versprühen"
+        },
+        {
+          "id": "schockgriff",
+          "name": "Schockgriff"
+        }
+      ],
+      "level_1_spells_listed": [
+        {
+          "id": "eismesser",
+          "name": "Eismesser"
+        },
+        {
+          "id": "gift-und-krankheit-entdecken",
+          "name": "Gift und Krankheit entdecken"
+        },
+        {
+          "id": "mit-tieren-sprechen",
+          "name": "Mit Tieren sprechen"
+        },
+        {
+          "id": "schlaf",
+          "name": "Schlaf"
+        },
+        {
+          "id": "tierfreundschaft",
+          "name": "Tierfreundschaft"
+        },
+        {
+          "id": "vertrauten-finden",
+          "name": "Vertrauten finden"
+        },
+        {
+          "id": "wunden-heilen",
+          "name": "Wunden heilen"
+        }
+      ],
+      "level_2_spells_listed": [
+        {
+          "id": "dornenwuchs",
+          "name": "Dornenwuchs"
+        },
+        {
+          "id": "nebelschritt",
+          "name": "Nebelschritt"
+        },
+        {
+          "id": "staubteufel",
+          "name": "Staubteufel"
+        }
+      ],
+      "prepared_spells_marked_on_sheet": [
+        "Mit Tieren sprechen",
+        "Schlaf",
+        "Nebelschritt"
+      ],
+      "always_prepared": [
+        {
+          "source": "Druidisch",
+          "spells": [
+            {
+              "id": "mit-tieren-sprechen",
+              "name": "Mit Tieren sprechen"
+            }
+          ]
+        },
+        {
+          "source": "Zirkel des Landes - Zaubersatz (Gemäßigtes Land)",
+          "spells": [
+            {
+              "id": "schlaf",
+              "name": "Schlaf"
+            },
+            {
+              "id": "nebelschritt",
+              "name": "Nebelschritt"
+            }
+          ]
+        }
+      ],
+      "special_sources": [
+        {
+          "source": "Zauberstab der Wälder",
+          "spells": [
+            {
+              "id": "spurloses-gehen",
+              "name": "Spurloses Gehen"
+            },
+            {
+              "id": "mit-tieren-sprechen",
+              "name": "Mit Tieren sprechen"
+            },
+            {
+              "id": "tierfreundschaft",
+              "name": "Tierfreundschaft"
+            },
+            "Baumhaut",
+            {
+              "id": "tiere-oder-pflanzen-aufspueren",
+              "name": "Tiere oder Pflanzen aufspüren"
+            },
+            {
+              "id": "mit-pflanzen-sprechen",
+              "name": "Mit Pflanzen sprechen"
+            },
+            {
+              "id": "erwecken",
+              "name": "Erwecken"
+            },
+            {
+              "id": "dornenwand",
+              "name": "Dornenwand"
+            }
+          ],
+          "notes": [
+            "Wirken über Aufladungen (siehe Item-Details)."
+          ]
+        },
+        {
+          "source": "Wilder Vertrauter",
+          "spells": [
+            {
+              "id": "vertrauten-finden",
+              "name": "Vertrauten finden"
+            }
+          ],
+          "notes": [
+            "Kann ohne Materialkomponente als Magie-Aktion gewirkt werden, indem ein Zauberplatz oder eine Verwendung von Tiergestalt ausgegeben wird."
+          ]
+        }
+      ]
+    },
+    "features": {
+      "racial": [
+        {
+          "name": "Gnomische Gerissenheit",
+          "effects": [
+            "Vorteil auf INT-, WIS- und CHA-Rettungswürfe gegen Magie"
+          ]
+        },
+        {
+          "name": "Bessere Dunkelsicht",
+          "description": "36 m (Graustufen)"
+        },
+        {
+          "name": "Stein Tarnung",
+          "effects": [
+            "Vorteil auf Heimlichkeit in felsigem Terrain"
+          ]
+        }
+      ],
+      "class": [
+        {
+          "name": "Zauberwirken",
+          "description": "Du bekommst alle Zauberplätze nach einer Langen Rast zurück. Nach jeder Langen Rast kannst du deine Zauber austauschen, außer deine immer vorbereiteten Zauber und Zaubertricks."
+        },
+        {
+          "name": "Druidisch",
+          "description": "Du kannst Druidisch. Du hast „Mit Tieren sprechen“ immer vorbereitet. Mit Druidisch kannst du versteckte Nachrichten hinterlassen; andere Druiden können sie finden/lesen. Andere können eine Nachricht mit SG 15 Nachforschungen finden, aber ohne Magie nicht lesen."
+        },
+        {
+          "name": "Ursprüngliche Ordnung: Magier",
+          "effects": [
+            "Zusätzlicher Druiden-Zaubertrick: „Gift versprühen“",
+            "+2 Bonus auf Arkane Kunde",
+            "+2 Bonus auf Naturkunde"
+          ]
+        },
+        {
+          "name": "Tiergestalt",
+          "activation": "Bonusaktion",
+          "uses": "2",
+          "recovery": {
+            "long_rest": true,
+            "short_rest": 1
+          },
+          "duration": "1 Stunde (oder bis erneute Nutzung / Auflösen als Bonusaktion / kampfunfähig / Tod)",
+          "limitations": [
+            "Du kannst 4 Bestienformen kennen.",
+            "Bestienformen: keine Fluggeschwindigkeit, maximal HG 1/4.",
+            "Formen können bei Langer Rast ausgetauscht werden."
+          ],
+          "effects": [
+            "Du behältst Persönlichkeit, Erinnerungen und Sprachen.",
+            "Du erhältst 3 temporäre TP.",
+            "Du behältst TP, Trefferwürfel, INT/WIS/CHA, Klassenmerkmale, Übungen (Fertigkeiten/Rettungswürfe) und Übungsbonus; ansonsten nutzt du Werte/Übungen der Bestienform.",
+            "Getragene Gegenstände verschmelzen; gehaltene Gegenstände kannst du weiter verwenden, wenn die Bestie es kann.",
+            "Du kannst keine Zauber wirken, behältst aber Konzentration für bereits gewirkte Zauber."
+          ]
+        },
+        {
+          "name": "Wilder Vertrauter",
+          "activation": "Magie-Aktion",
+          "cost": "1 Zauberplatz ODER 1 Verwendung von Tiergestalt",
+          "effect": "Wirke „Vertrauten finden“ ohne Materialkomponente. Der Vertraute ist ein Feenwesen und besteht bis zur nächsten Langen Rast."
+        }
+      ],
+      "subclass": [
+        {
+          "name": "Zirkel des Landes - Zauber (Sätze)",
+          "description": "Du erhältst einen Satz der folgenden Zauber vorbereitet. Du kannst den Satz bei jeder Langen Rast wechseln.",
+          "spell_sets": [
+            {
+              "name": "Gemäßigtes Land",
+              "spells": {
+                "cantrip": "Schockgriff",
+                "level_1": "Schlaf",
+                "level_2": "Nebelschritt"
+              }
+            },
+            {
+              "name": "Trockenes Land",
+              "spells": {
+                "cantrip": "Feuerpfeil",
+                "level_1": "Brennende Hände",
+                "level_2": "Verschwimmen"
+              }
+            },
+            {
+              "name": "Eisiges Land",
+              "spells": {
+                "cantrip": "Kältestrahl",
+                "level_1": "Nebelwolke",
+                "level_2": "Person festhalten"
+              }
+            },
+            {
+              "name": "Tropisches Land",
+              "spells": {
+                "cantrip": "Säurespritzer",
+                "level_1": "Strahl der Übelkeit",
+                "level_2": "Netz"
+              }
+            }
+          ],
+          "always_prepared_spells": []
+        },
+        {
+          "name": "Hilfe des Landes",
+          "activation": "Magie-Aktion",
+          "cost": "1 Verwendung von Tiergestalt",
+          "range": 18,
+          "area": "3 m Sphäre",
+          "effects": [
+            "Schaden: Jede Kreatur deiner Wahl in der Sphäre erhält 2d6 nekrotischen Schaden (halber Schaden bei erfolgreichem CON-Rettungswurf).",
+            "Heilung: Eine Kreatur deiner Wahl in der Sphäre wird um 2d6 TP geheilt."
+          ],
+          "always_prepared_spells": []
+        }
+      ],
+      "background": [
+        {
+          "name": "Rustikale Gastfreundschaft",
+          "description": "Du findest im einfachen Volk immer einen Platz zum Verstecken, Rasten oder Erholen (außer du hast dich als Gefahr präsentiert). Das einfache Volk beschützt dich vor Suchenden, sofern es nicht das eigene Leben riskieren muss."
+        }
+      ],
+      "talents_and_magic_items_text": [
+        {
+          "name": "Zauberstab der Wälder",
+          "type": "Magischer Gegenstand (eingestimmt), Druidischer Fokus",
+          "effects": [
+            "Magische Waffe: +2 auf Angriffs- und Schadenswürfe (in der Waffenzeile bereits verrechnet).",
+            "+2 auf Zauberangriffswürfe, wenn du den Stab hältst."
+          ],
+          "charges": {
+            "max": 10,
+            "recharge": "Jeden Morgen erhält der Stab 1d6+4 der verbrauchten Aufladungen zurück.",
+            "spells_by_charge_cost": [
+              {
+                "spell": "Spurloses Gehen",
+                "charge_cost": 0
+              },
+              {
+                "spell": "Mit Tieren sprechen",
+                "charge_cost": 1
+              },
+              {
+                "spell": "Tierfreundschaft",
+                "charge_cost": 1
+              },
+              {
+                "spell": "Baumhaut",
+                "charge_cost": 2
+              },
+              {
+                "spell": "Tiere oder Pflanzen aufspüren",
+                "charge_cost": 2
+              },
+              {
+                "spell": "Mit Pflanzen sprechen",
+                "charge_cost": 3
+              },
+              {
+                "spell": "Erwecken",
+                "charge_cost": 5
+              },
+              {
+                "spell": "Dornenwand",
+                "charge_cost": 6
+              }
+            ],
+            "tree_form": {
+              "name": "Baumform",
+              "activation": "Aktion",
+              "charge_cost": 1,
+              "effect": "Pflanze den Stab in den Boden: Er wird zu einem Baum (18 m hoch; Stamm 1,5 m; Krone bis 6 m). Umkehrbar per Berührung + Aktion + Befehlswort. Kreaturen im Baum fallen beim Zurückverwandeln zu Boden."
+            }
+          }
+        }
+      ]
+    },
+    "equipment": {
+      "currency": {
+        "cp": 96,
+        "sp": 9,
+        "gp": 18,
+        "pp": 0
+      },
+      "weights": {
+        "carried": 35.5,
+        "encumbered_at": 60,
+        "push_drag_lift": 120
+      },
+      "items": [
+        {
+          "name": "Kurzbogen",
+          "quantity": 1,
+          "weight": 1,
+          "item_ref": {
+            "id": "kurzbogen",
+            "name": "Kurzbogen"
+          }
+        },
+        {
+          "name": "Sichel",
+          "quantity": 1,
+          "weight": 1,
+          "item_ref": {
+            "id": "sichel",
+            "name": "Sichel"
+          }
+        },
+        {
+          "name": "Schild (RK +2, wenn gehalten)",
+          "quantity": 1,
+          "weight": 3,
+          "item_ref": {
+            "id": "schild",
+            "name": "Schild"
+          }
+        },
+        {
+          "name": "Lederrüstung (Leicht, RK = 11 + DEX-Modifikator)",
+          "quantity": 1,
+          "weight": 5,
+          "item_ref": {
+            "id": "lederruestung",
+            "name": "Lederrüstung"
+          }
+        },
+        {
+          "name": "Gewöhnliche Kleidung",
+          "quantity": 1,
+          "weight": 1.5,
+          "item_ref": {
+            "id": "kleidung",
+            "name": "Gewöhnliche Kleidung"
+          }
+        },
+        {
+          "name": "Gewöhnlicher Heiltrank (2d4+2 TP)",
+          "quantity": 5,
+          "weight": 2,
+          "item_ref": {
+            "id": "gewoehnlicher-heiltrank",
+            "name": "Gewöhnlicher Heiltrank"
+          }
+        },
+        {
+          "name": "Halskette mit einem Smaragd",
+          "quantity": 1,
+          "weight": 0.5
+        },
+        {
+          "name": "Kräuterkundeausrüstung",
+          "quantity": 1,
+          "weight": 1.5,
+          "item_ref": {
+            "id": "kraeuterkundeausruestung",
+            "name": "Kräuterkundeausrüstung"
+          }
+        },
+        {
+          "name": "Rucksack",
+          "quantity": 1,
+          "weight": 2.5,
+          "contents_listed": [
+            {
+              "name": "Eisentopf",
+              "quantity": 1,
+              "weight": 5,
+              "item_ref": {
+                "id": "eisentopf",
+                "name": "Eisentopf"
+              }
+            },
+            {
+              "name": "Kochutensilien",
+              "quantity": 1,
+              "weight": 4
+            },
+            {
+              "name": "Öl",
+              "quantity": 2,
+              "weight": 1,
+              "item_ref": {
+                "id": "oel",
+                "name": "Öl"
+              }
+            },
+            {
+              "name": "Hanf-Seil, 15 m",
+              "quantity": 1,
+              "weight": 2.5
+            },
+            {
+              "name": "Zunderkästchen",
+              "quantity": 1,
+              "weight": 0.5,
+              "item_ref": {
+                "id": "zunderkaestchen",
+                "name": "Zunderkästchen"
+              }
+            },
+            {
+              "name": "Fackel",
+              "quantity": 4,
+              "weight": 2,
+              "item_ref": {
+                "id": "fackel",
+                "name": "Fackel"
+              }
+            },
+            {
+              "name": "Schlafsack",
+              "quantity": 1,
+              "weight": 3.5,
+              "item_ref": {
+                "id": "schlafsack",
+                "name": "Schlafsack"
+              }
+            }
+          ],
+          "item_ref": {
+            "id": "rucksack",
+            "name": "Rucksack"
+          }
+        }
+      ],
+      "attunedagic_items_listed": [
+        {
+          "name": "Zauberstab der Wälder (Druidischer Fokus)",
+          "quantity": 1
+        }
+      ]
+    },
+    "wild_shape_forms_listed": [
+      {
+        "name": "Oktopus"
+      },
+      {
+        "name": "Elch"
+      },
+      {
+        "name": "Katze"
+      },
+      {
+        "name": "Sumpfadder",
+        "size": "Klein",
+        "type": "beast",
+        "alignment": "gessinnungslos",
+        "armor_class": 13,
+        "hit_points": 8,
+        "hit_dice": "4d4+4",
+        "speeds": {
+          "walk": 9
+        },
+        "ability_scores": {
+          "STR": {
+            "score": 4,
+            "mod": -3
+          },
+          "DEX": {
+            "score": 16,
+            "mod": 3
+          },
+          "CON": {
+            "score": 12,
+            "mod": 1
+          },
+          "INT": {
+            "score": 1,
+            "mod": -5
+          },
+          "WIS": {
+            "score": 10,
+            "mod": 0
+          },
+          "CHA": {
+            "score": 4,
+            "mod": -3
+          }
+        },
+        "senses": {
+          "blindsight": 3,
+          "passive_perception": 10
+        },
+        "challenge_rating": "1/4 (50 XP)",
+        "traits": [
+          "Sumpf-Tarnung: Die Sumpfadder hat Vorteil auf Geschicklichkeits (Heimlichkeit) Würfe, solange sie sich im Sumpf befindet."
+        ],
+        "actions": [
+          "Biss: Nahkampfwaffenangriff +5, Reichweite 1,5 m, ein Ziel. Treffer: 1 Stichschaden, und das Ziel muss einen Konstitutions-Rettungswurf DC 11 bestehen oder vergiftet werden. Solange vergiftet, ist das Ziel gelähmt und erleidet zu Beginn jedes seiner Züge 3 (1d6) Giftschaden. Das Ziel kann den Rettungswurf am Ende jedes seiner Züge wiederholen, um den Effekt bei einem Erfolg zu beenden."
+        ]
+      }
+    ],
+    "personality": {
+      "traits": [
+        "Als Veganerin beschützt du alle Tiere."
+      ],
+      "ideals": [
+        "Du beschützt alle Tiere, die es nicht selbst können."
+      ],
+      "motivation": [],
+      "flaws": []
+    },
+    "backstory": {
+      "summary": null,
+      "notes": ""
+    }
+  },
+  "id": "jadefrognal"
+}

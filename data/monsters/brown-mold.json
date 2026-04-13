@@ -1,0 +1,59 @@
+{
+  "name": "Brown Mold",
+  "size": "Large",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "large",
+      "plant",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 5,
+  "hp": {
+    "average": 5,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 1,
+    "dex": 1,
+    "con": 15,
+    "int": 1,
+    "wis": 10,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Fire Friend",
+      "text": "A brown mold does not take damage from fire. Instead,\nit heals that amount. If the available healing is greater than the brown\nmold’s maximum number of hit points, its maximum hit points increases\nby that amount.  Any source of fire brought within 5 feet of a patch causes it to instantly expand outward in the direction of the fire, covering up to a 10-foot-squre area."
+    },
+    {
+      "name": "Cold Sensitive",
+      "text": "Magical cold damage instantly and automatically kills\na brown mold."
+    },
+    {
+      "name": "Cold Spores",
+      "text": "When a creature moves to within 5 feet of the mold for the first time or starts its turn there, it must make a DC 12 Constitution saving throw, taking 22 (4d10) cold damage on a failed save, or half as much on a successful one."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Spore Burst",
+      "type": "special",
+      "text": "The brown mold releases spores that burst out in a\ncloud that fills a 15-foot cube centered on it, and the cloud lingers for 1\nminute. Any creature that ends its turn in the cloud must make a DC 13\nConstitution saving throw, taking 36 (8d8) necrotic damage on a failed\nsave, or half as much damage on a successful one. Additionally, the\ntarget’s hit point maximum is reduced by an amount equal to the damage\ntaken. This reduction lasts until the target finishes a long rest. The target\ndies if this effect reduces its hit point maximum to 0."
+    }
+  ],
+  "source": "creature"
+}

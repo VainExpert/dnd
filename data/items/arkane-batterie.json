@@ -1,0 +1,46 @@
+{
+  "id": "arkane-batterie",
+  "type": "item",
+  "name": "Arkane Batterie",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 150,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser glatte ovale Stein kann als Aktion an einen magischen Gegenstand gehalten werden, der Ladungen braucht und stellt sofort 1W4+1 dieser Ladungen wieder auf. Dies kann nur einmal verwendet werden.",
+  "tags": [
+    "nützlich",
+    "aktion",
+    "magisch",
+    "stein",
+    "ladungen",
+    "konsumiert"
+  ]
+}

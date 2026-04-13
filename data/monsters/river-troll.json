@@ -1,0 +1,77 @@
+{
+  "name": "River Troll",
+  "size": "Large",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "large",
+      "humanoid",
+      "cr4",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 15,
+  "hp": {
+    "average": 57,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 40
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 14,
+    "con": 19,
+    "int": 6,
+    "wis": 9,
+    "cha": 7
+  },
+  "skills": {
+    "Athletics": 5,
+    "Perception": 3
+  },
+  "languages": [
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The river troll can breathe both air and water."
+    },
+    {
+      "name": "Keen Smell",
+      "text": "The river troll has advantage on Wisdom (Perception)\nchecks that rely on smell."
+    },
+    {
+      "name": "Poison Skin",
+      "text": "The river troll’s skin contains a powerful poison. Any\ntime the troll touches another creature, the creature takes 7 (2d6) poison\ndamage (included in attacks)."
+    },
+    {
+      "name": "Regeneration",
+      "text": "The river troll regains 10 hit points at the start of its\nturn as long as it is at least partially submerged in water; strong rainfall\nalso allows the troll’s regeneration to function. If the troll takes acid or\nlightning damage, this trait doesn’t function at the start of the troll’s next\nturn. The troll only dies if it starts its turn with 0 hit points and doesn’t\nregenerate."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The river troll makes three attacks: one with its bite and\ntwo with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) poison damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10\n(2d6 + 3) slashing damage plus 7 (2d6) poison damage."
+    }
+  ],
+  "source": "creature"
+}

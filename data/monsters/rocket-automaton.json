@@ -1,0 +1,71 @@
+{
+  "name": "Rocket Automaton",
+  "size": "Small",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "small",
+      "construct",
+      "cr1",
+      "homebrew"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 15,
+  "hp": {
+    "average": 9,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 16,
+    "con": 13,
+    "int": 3,
+    "wis": 14,
+    "cha": 1
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "understands one language known by its creator but can't speak"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Animated Explosive",
+      "text": "When it takes fire damage, or as\nan action on its turn, the automaton's fuse lights. At\nthe start of each of the automaton's turns, roll a d4.\nOn a result of 1, the automaton explodes in a 15-\nfoot radius fireball at the start of its next turn,\nforcing each creature in the area to make a DC 12\nDexterity saving throw, taking 4 (1d8) fire damage\nplus 4 (1d8) bludgeoning damage on a failed save, or\nhalf as much on a successful one.\n\nIf the automaton is killed, the fuse remains lit,\npotentially setting off the explosion after its death. If\nanother creature hits the automaton with an\nunarmed strike attack, the creature can choose to\nsnuff out the fuse instead of dealing damage."
+    },
+    {
+      "name": "Flyby",
+      "text": "The automaton doesn't provoke opportunity\nattacks when it flies out of an enemy's reach."
+    },
+    {
+      "name": "Immutable Form",
+      "text": "The automaton is immune to any spell or\neffect that would alter its form."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "The automaton deals double damage to\nobjects and structures."
+    },
+    {
+      "name": "Rocket Flight",
+      "text": "The automaton can only use its fly\nspeed once the rocket on its back is ignited. Once it\nlifts off, the automaton must use at least half of its\nflying speed on each of its turns, unless something\nprevents it from doing so.\n\n1 minute after its rocket has been ignited, roll a\nd10 at the end of each of the automaton's turns. On\na result of 1, the rocket's fuel is spent, and the\nautomaton immediately begins to fall."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft.,\none target. Hit: 5 (1d4 + 3) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

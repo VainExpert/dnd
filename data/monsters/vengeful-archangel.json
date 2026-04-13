@@ -1,0 +1,79 @@
+{
+  "name": "Vengeful Archangel",
+  "size": "Large",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "large",
+      "celestial",
+      "cr18",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 20,
+  "hp": {
+    "average": 250,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 120
+  },
+  "abilities": {
+    "str": 25,
+    "dex": 20,
+    "con": 24,
+    "int": 18,
+    "wis": 24,
+    "cha": 22
+  },
+  "skills": {
+    "Athletics": 13,
+    "Perception": 13
+  },
+  "languages": [
+    "all",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "18",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Corrupted Blades",
+      "text": "The archangel's weapon attacks are\nmagical. When the archangel hits with any weapon, the\nweapon deals an extra 2d8 necrotic damage and any\ncreature hit can't regain hit points until the start of the\narchangel’s next turn (included in the attack)."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The archangel's spellcasting ability\nis Charisma (spell save DC 20). The seraph can innately\ncast the following spells, requiring only verbal\ncomponents.\n\n* At will: <i>detect evil and good, invisibility </i>(self only)\n\n* 2/day each: <i>circle of death, harm</i>\n\n* 1/day each: <i>finger of death, forcecage, power word stun</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The archangel has advantage on\nsaving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The bringer makes four longsword attacks."
+    },
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +13 to hit, reach 5\nft., one target. Hit: 16 (2d8 + 7) slashing damage plus\n9 (2d8) necrotic damage and that creature can't regain\nhit points until the start of the archangel’s next turn."
+    },
+    {
+      "name": "Storm of Swords (Recharge 5-6)",
+      "type": "special",
+      "text": "The archangel clashes\nits blades together and instantly creates hundreds of\nethereal weapons that rapidly spiral into the air around\nit. Each creature within 20 feet of the archangel must\nmake a DC 20 Dexterity saving throw, taking 28\n(5d10) slashing damage and 28 (5d10) force damage\non a failed saving throw, or half as much damage on a\nsuccessful one."
+    },
+    {
+      "name": "Falling Star (1/Day)",
+      "type": "special",
+      "text": "The angel teleports high into the air,\nthen comes crashing down with tremendous force at a\npoint within 120 feet of its starting location. Each\ncreature within 30 feet of that point must make a DC\n20 Constitution saving throw. On a failed save, the\ncreature takes 55 (10d10) thunder damage and is\npushed 15 feet away from the archangel and knocked\nprone. On a successful save, the creature takes half as\nmuch damage and not pushed or knocked prone. This\narea becomes difficult terrain until repaired of the\ndamage caused by this attack. In addition, unsecured\nobjects that are completely within the area of effect of\nthis attack are automatically pushed 15 feet away and a\nthunderous boom rings out that is audible up to 1000\nfeet."
+    }
+  ],
+  "source": "creature"
+}

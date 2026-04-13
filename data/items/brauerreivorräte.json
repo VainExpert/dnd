@@ -1,0 +1,44 @@
+{
+  "id": "brauerreivorräte",
+  "type": "item",
+  "name": "Brauerreivorräte",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 4.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 20,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Vorräte für das Brauen von Tränken. Nutzen: Zum Erkennen von vergifteten Getränken (SG 15) oder Alkohol zu identifizieren (SG 10). Fertigen: Gegengift",
+  "tags": [
+    "abenteuer",
+    "handwerk",
+    "brauen",
+    "nützlich"
+  ]
+}

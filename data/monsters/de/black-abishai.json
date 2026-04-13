@@ -1,0 +1,65 @@
+{
+  "name": "Schwarzer Abischai",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr7",
+      "mordenkainens-tome-of-foes",
+      "devil"
+    ]
+  },
+  "alignment": "gesetztreu-böse",
+  "ac": 15,
+  "hp": {
+    "average": 58,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 17,
+    "con": 14,
+    "int": 13,
+    "wis": 16,
+    "cha": 11
+  },
+  "skills": {
+    "Perception": 6,
+    "Stealth": 6
+  },
+  "languages": [
+    "Draconic",
+    "Infernal",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "7",
+    "xp": 2900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Teufelsblick",
+      "text": "Magische Dunkelheit beeinträchtigt die Dunkelheitssicht des Abishai nicht."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Abishai hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Angriffe des Abishai sind magischer Natur."
+    },
+    {
+      "name": "Schatten-Tarnung",
+      "text": "Bei schwachem Licht oder Dunkelheit kann der Abishai die Aktion „Verstecken“ als Bonusaktion ausführen."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

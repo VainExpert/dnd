@@ -1,0 +1,67 @@
+{
+  "name": "Banshee",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr4",
+      "monster-manual"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 12,
+  "hp": {
+    "average": 58,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 1,
+    "dex": 14,
+    "con": 10,
+    "int": 12,
+    "wis": 11,
+    "cha": 17
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Elvish"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Leben erkennen",
+      "text": "Die Banshee kann auf magische Weise die Anwesenheit von Lebewesen in einer Entfernung von bis5 miles zu  Wahrnehmen, die keine Untoten oder Konstrukte sind. Sie weiß, in welcher Richtung sie sich befinden, kennt jedoch nicht ihren genauen Standort."
+    },
+    {
+      "name": "Körperlose Bewegung",
+      "text": "Die Banshee kann sich durch andere Wesen und Objekte hindurchbewegen, als wären diese schwieriges Gelände. Sie erleidet 5 (1d10) Kraftschaden, wenn sie ihren Zug innerhalb eines Objekts beendet."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Verführerische Berührung",
+      "type": "special",
+      "text": "Nahkampf-Zauberangriff: +4 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 12 (3d6 + 2) nekrotischer Schaden."
+    },
+    {
+      "name": "Schreckliches Gesicht",
+      "type": "special",
+      "text": "Jede nicht untote Kreatur im Umkreis 60 ftvon [Entfernung] um die Banshee, die sie sehen kann, muss einenDC 13Weisheits-Rettungswurf bestehen oder ist 1 Minute lang verängstigt. Ein verängstigtes Ziel kann den Rettungswurf am Ende jedes seiner Züge wiederholen, mit Nachteil, wenn sich die Banshee in Sichtweite befindet, und beendet den Effekt auf sich selbst bei Erfolg. Wenn der Rettungswurf eines Ziels erfolgreich ist oder der Effekt für es endet, ist das Ziel für die nächsten 24 Stunden immun gegen das „Schreckliche Antlitz“ der Banshee."
+    },
+    {
+      "name": "Heulen (1/Tag)",
+      "type": "special",
+      "text": "Die Banshee stößt einen klagenden Schrei aus, sofern sie sich nicht im Sonnenlicht befindet. Dieser Schrei hat keine Wirkung auf Konstrukte und Untote. Alle anderen Kreaturen im Umkreis 30 ftvon [Entfernung] um sie, die sie hören können, müssen einenDC 13Konstitutions-Rettungswurf durchführen. Bei einem Fehlschlag sinken die Trefferpunkte der Kreatur auf 0. Bei Erfolg erleidet die Kreatur 10 (3d6) psychischen Schaden. Die klagende Banshee ist eine boshafte Kreatur, die aus dem Geist einer Elfin entstanden ist. Ihr Gesicht ist von einem wilden Haarstrudel umrahmt, ihr Körper ist in dünne Lumpen gehüllt, die um sie herum flattern und wehen."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,111 @@
+{
+  "name": "Drachen aus dem alten Verlies",
+  "size": "Gigantisch",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "gargantuan",
+      "dragon",
+      "cr21",
+      "tome-of-horrors",
+      "shapechanger"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 19,
+  "hp": {
+    "average": 490,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 27,
+    "dex": 12,
+    "con": 25,
+    "int": 20,
+    "wis": 17,
+    "cha": 19
+  },
+  "skills": {
+    "Arcana": 12,
+    "History": 12,
+    "Insight": 10,
+    "Investigation": 19,
+    "Perception": 17,
+    "Survival": 10
+  },
+  "languages": [
+    "all"
+  ],
+  "challenge": {
+    "cr": "21",
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Sonderausstattung",
+      "text": "Der Drache ist mit einer Kristallkugel verbunden, die\nirgendwo in seiner labyrinthartigen Höhle versteckt ist. Verliert ein Dungeon-Drache\nseine Kristallkugel, kann er innerhalb von 10 Tagen eine neue erschaffen."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Dungeon-Drachen\nist Charisma (Zauber-RettungswurfDC 19, +11 auf Treffer bei Zauberangriffen). Er kann\ndie folgenden Zauber wirken, für die keine materiellen Komponenten erforderlich sind.\n\n* Beliebig oft: Alarm, Arkanes Schloss, Magie entdecken, Gedanken entdecken, Fallen finden, Schutzglyphe, Identifizieren, Klopfen, Hellsehen, Stein formen, Steinwand\n\n* Jeweils 3/Tag: Magie bannen, halluzinatorisches Gelände, Kreatur orten, Objekt orten, Bild projizieren\n\n* 1/Tag: Den Weg finden, Labyrinth, arkane Fata Morgana, Durch die Wand gehen"
+    },
+    {
+      "name": "Labyrinthische Erinnerung",
+      "text": "Der Dungeon-Drache kann sich jeden Weg,\nden er zurückgelegt hat, genau ins Gedächtnis rufen."
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache einen Rettungswurf verfehlt, kann er\nsich stattdessen für einen Erfolg entscheiden."
+    },
+    {
+      "name": "Trap-Meister",
+      "text": "Der Dungeon-Drache hat einen Vorteil bei Rettungswürfen\ngegen die Auswirkungen von Fallen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache setzt seine „Furchteinflößende Präsenz“ ein und führt drei\nAngriffe aus: einen mit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +15 auf Treffer, Reichweite15 ft: , ein Ziel. Treffer: 19\n(2d10 + 8) Durchdringungsschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +15 auf Treffer, Reichweite10 ft: ., ein Ziel. Treffer: 15\n(2d6 + 8) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +15 auf Treffer, Reichweite20 ft: ., ein Ziel. Treffer: 17\n(2d8 + 8) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Furchterregende Präsenz",
+      "type": "special",
+      "text": "Jede Kreatur nach Wahl des Drachen, die sich in\n120 feetseiner Nähe befindet und ihn wahrnimmt, muss einenDC 19  Weisheits-\nRettungswurf bestehen oder wird für 1 Minute verängstigt. Eine Kreatur kann den\nRettungswurf am Ende jedes ihrer Züge wiederholen und den Effekt auf sich selbst bei\nErfolg beenden. Wenn der Rettungswurf einer Kreatur erfolgreich ist oder der Effekt für\nsie endet, ist die Kreatur für die nächsten\n24 Stunden immun gegen die Furchterregende Präsenz des Drachen."
+    },
+    {
+      "name": "Form ändern",
+      "type": "special",
+      "text": "Der Drache verwandelt sich auf magische Weise in ein humanoides Wesen\noder eine Bestie, deren Herausforderungsgrad nicht höher ist als sein eigener, oder zurück\nin seine wahre Gestalt. Er kehrt zu seiner wahren Gestalt zurück, wenn er stirbt. Jegliche Ausrüstung,\ndie er trägt oder bei sich hat, wird von der neuen Gestalt absorbiert oder von ihr getragen (nach\nWahl des Drachen).\n\nIn seiner neuen Gestalt behält der Drache seine Gesinnung, Trefferpunkte, Trefferwürfel,\ndie Fähigkeit zu sprechen, Fertigkeiten, legendäre Resistenz, Höhlenaktionen sowie\nseine Intelligenz-, Weisheits- und Charismawerte und diese Aktion. Seine\nWerte und Fähigkeiten werden ansonsten durch die der neuen Gestalt ersetzt,\nmit Ausnahme der Klassenmerkmale oder legendären Aktionen dieser Gestalt."
+    },
+    {
+      "name": "Verwirrungsatem (Aufladen 5–6)",
+      "type": "special",
+      "text": "Der Drache speit Gas in einem 90-Fuß-\nKegel, der sich um Ecken herum ausbreitet. Jede Kreatur in diesem Bereich muss einen\nDC 22Konstitutions-Rettungswurf bestehen. Bei einem misslungenen Rettungswurf ist die Kreatur\n1 Minute lang verwirrt. Während sie verwirrt ist, nutzt die Kreatur ihre Aktion, um\nin eine zufällige Richtung zu sprinten, selbst wenn diese Bewegung die Kreatur in\ngefährliche Bereiche führt. Eine verwirrte Kreatur kann den Rettungswurf am\nEnde jedes ihrer Züge wiederholen und beendet den Effekt bei einem Erfolg."
+    },
+    {
+      "name": "Dominieren",
+      "type": "special",
+      "text": "Eine Kreatur, die der Drache in60 feetseiner Nähe sieht, muss\neinenDC 19Weisheits-Rettungswurf bestehen oder wird für 1 Stunde verzaubert.\nDie Kreatur hat Vorteil, wenn der Drache gegen sie kämpft. Solange die Kreatur\nverzaubert ist, besteht eine telepathische Verbindung zwischen ihr und dem\nDrachen, solange sich beide auf derselben Existenzebene befinden, und der Drache kann\nder Kreatur Befehle erteilen, solange sie bei Bewusstsein ist (keine Aktion\nerforderlich), denen sie nach besten Kräften zu folgen versucht.\n\nDer Drache kann eine Aktion aufwenden, um die vollständige und präzise Kontrolle\nüber das Ziel zu erlangen. Bis zum Ende des nächsten Zuges des Drachen führt die Kreatur\nnur die Aktionen aus, die der Drache ihr vorschreibt, und tut nichts,\nwas der Drache ihr nicht erlaubt. Darüber hinaus kann der Drache die Kreatur auch\ndazu veranlassen, eine Reaktion einzusetzen, doch dazu muss der Drache ebenfalls\neine Reaktion aufwenden.\n\nDie verzauberte Kreatur kann den Rettungswurf wiederholen, wann immer sie\nSchaden erleidet. Bei einem erfolgreichen Rettungswurf endet der Zauber."
+    }
+  ],
+  "source": "creature"
+}

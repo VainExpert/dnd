@@ -1,0 +1,72 @@
+{
+  "name": "Cadaver Lord",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr4",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 14,
+  "hp": {
+    "average": 32,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 18,
+    "con": 14,
+    "int": 13,
+    "wis": 10,
+    "cha": 16
+  },
+  "skills": {},
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The cadaver lord’s spellcasting ability is\nCharisma (spell save DC 13, +5 to hit with spell attacks). The\ncadaver lord can innately cast the following spells,\nrequiring no material components:\n\n* 1/day each: <i>darkness, fear, create undead</i>"
+    },
+    {
+      "name": "Create Cadaver",
+      "text": "A humanoid slain by a cadaver lord rises 24\nhours later as a cadaver under the cadaver lord’s control. The\ncadaver lord can have no more than three cadavers under its\ncontrol at one time."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The cadaver lord has advantage on saving\nthrows against spells and other magical effects."
+    },
+    {
+      "name": "Reanimation",
+      "text": "When reduced to 0 hit points, the cadaver falls\ninert and begins the process of reanimating. While in this state, the\ncadaver regenerates 1 hit point at the start of its turn. Hit points lost\nto magical weapons or radiant damage are not regained. When the\ncreature reaches its full hit point total, less any magical weapon or\nradiant damage suffered, it rises, ready to fight again.\n\nA fallen cadaver can be prevented from reanimating by salting and\nburning the bones, casting gentle repose on it, or bathing the bones\nin cleansing sacred flame."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The cadaver lord makes one bite attack and two claw\nattacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11\n(2d6 + 4) piercing damage. If the target is a creature, it must succeed\non a DC 13 Constitution saving throw against disease or become\npoisoned until the disease is cured. Every 24 hours that elapse, the\ntarget must repeat the saving throw, reducing its hit point maximum by 5\n(1d10) on a failure. The disease is cured on a success. The target dies if the\ndisease reduces its hit point maximum to 0. This reduction to the target’s\nhit point maximum lasts until the disease is cured."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13\n(2d8 + 4) slashing damage. If the target is a creature, it must succeed on\na DC 13 Constitution saving throw against disease or become poisoned\nuntil the disease is cured. Every 24 hours that elapse, the target must\nrepeat the saving throw, reducing its hit point maximum by 5 (1d10) on\na failure. The disease is cured on a success. The target dies if the disease\nreduces its hit point maximum to 0. This reduction to the target’s hit point\nmaximum lasts until the disease is cured."
+    }
+  ],
+  "source": "creature"
+}

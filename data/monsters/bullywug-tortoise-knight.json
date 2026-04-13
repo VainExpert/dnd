@@ -1,0 +1,71 @@
+{
+  "name": "Bullywug Tortoise Knight",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 13,
+  "hp": {
+    "average": 19,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 40
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 12,
+    "con": 14,
+    "int": 7,
+    "wis": 10,
+    "cha": 6
+  },
+  "skills": {
+    "Athletics": 4
+  },
+  "languages": [
+    "Bullywug"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The bullywug can breathe air and\nwater."
+    },
+    {
+      "name": "Mounted Combatant",
+      "text": "The bullywug typically fights\nfrom the back of a tortoise. The tortoise and the\nbullywug share an initiative in combat. If the\nbullywug is hit for 10 points of damage or more\nfrom a single attack, it must succeed on an athletics\ncheck with DC equal to the damage of the attack or\nfall from its mount."
+    },
+    {
+      "name": "Speak with Frogs and Toads",
+      "text": "The bullywug can\ncommunicate simple concepts to frogs and toads\nwhen it speaks in Bullywug."
+    },
+    {
+      "name": "Swamp Camouflage",
+      "text": "The bullywug has advantage on\nDexterity (Stealth) checks made to hide in swampy\nterrain."
+    },
+    {
+      "name": "Standing Leap",
+      "text": "The bullywug's long jump is up to 20\nfeet and its high jump is up to 10 feet, with or\nwithout a running start."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Lance",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 10 ft.,\none target. Hit: 8 (1d12 + 2) piercing damage. If\nthe bullywug is not riding a tortoise, this attack is\nmade with disadvantage."
+    }
+  ],
+  "source": "creature"
+}

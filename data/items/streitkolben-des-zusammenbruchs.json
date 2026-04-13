@@ -1,0 +1,47 @@
+{
+  "id": "streitkolben-des-zusammenbruchs",
+  "type": "item",
+  "name": "Streitkolben des Zusammenbruchs",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 700,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du einen Unhold oder Untoten mit dieser magischen Waffe triffst, erleidet diese Kreatur zusätzlich 2W6 gleißenden Schaden. Wenn das Ziel nach Erleiden des Schadens noch höchstens 25 TP hat, muss es einen SG-15 WIS-Rettungswurf bestehen, oder es wird zerstört. Bei einem erfolgreichen Rettungswurf ist die Kreatur bis zum Ende deines nächsten Zugs von dir verängstigt. Wenn du diese Waffe hältst, spendet sie im Radius von 6 m helles Licht und im Radius von weiteren 6 m gedimmtes Licht.",
+  "tags": [
+    "magisch",
+    "waffe",
+    "streitkolben",
+    "religion",
+    "verängstigt",
+    "unholde",
+    "untote"
+  ]
+}

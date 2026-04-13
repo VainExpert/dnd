@@ -1,0 +1,18 @@
+{
+  "id": "tashas-aetzendes-gebraeu",
+  "name": "Tashas Ätzendes Gebräu",
+  "level": 1,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (9 m x 1,5 m Linie)",
+  "components": "V, G, M (ein Stück verdorbenes Essen)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Ein Strahl aus Säure schießt von dir in einer 9 m langen und 1,5 m breiten Linie in eine von dir gewählte Richtung.\nJede Kreatur in der Linie muss einen DEX-Rettungswurf schaffen, um nicht für die Dauer des Zaubers mit Säure bedeckt zu sein oder bis eine Kreatur ihre Aktion nutzt, um die Säure von sich oder einer anderen Kreatur abzukratzen oder abzuwaschen. \nEine Kreatur, die mit der Säure bedeckt ist, erleidet zu Beginn jeder ihrer Züge 2W4 Säureschaden.\n\nAuf höheren Level wirken: pro Level 2W4 mehr Schaden"
+}

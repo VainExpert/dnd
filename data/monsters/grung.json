@@ -1,0 +1,71 @@
+{
+  "name": "Grung",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr1/4",
+      "volos-guide",
+      "grung"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 12,
+  "hp": {
+    "average": 11,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 25
+  },
+  "abilities": {
+    "str": 7,
+    "dex": 14,
+    "con": 15,
+    "int": 10,
+    "wis": 11,
+    "cha": 10
+  },
+  "skills": {
+    "Athletics": 2,
+    "Perception": 2,
+    "Stealth": 4,
+    "Survival": 2
+  },
+  "languages": [
+    "Grung"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The grung can breathe air and water."
+    },
+    {
+      "name": "Poisonous Skin",
+      "text": "Any creature that grapples the grung or otherwise comes into direct contact with the grung's skin must succeed on a DC 12 Constitution saving throw or become poisoned for 1 minute. A poisoned creature no longer in direct contact with the grung can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    },
+    {
+      "name": "Standing Leap",
+      "text": "The grung's long jump is up to 25 feet and its high jump is up to 15 feet, with or without a running start."
+    },
+    {
+      "name": "Variant: Grung Poison",
+      "text": "Grung poison loses its potency 1 minute after being removed from a grung. A similar breakdown occurs if the grung dies.\n\n>A creature poisoned by a grung can suffer an additional effect that varies depending on the grung's skin color. This effect lasts until the creature is no longer poisoned by the grung.\n\nGreen. The poisoned creature can't move except to climb or make standing jumps. If the creature is flying, it can't take any actions or reactions unless it lands.\n\nBlue. The poisoned creature must shout loudly or otherwise make a loud noise at the start and end of its turn.\n\nPurple. The poisoned creature feels a desperate need to soak itself in liquid or mud. It can't take actions or move except to do so or to reach a body of liquid or mud."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft, one target. Hit: 4 (1d4+2) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or take 5 (2d4) poison damage."
+    }
+  ],
+  "source": "creature"
+}

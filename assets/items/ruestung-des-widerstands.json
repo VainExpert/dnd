@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-ruestung-des-widerstands",
+  "type": "item",
+  "name": "Rüstung des Widerstands",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "armor",
+  "rarity": "mittelschwer oder schwer), selten",
+  "requires_attunement": true,
+  "attunement_text": "leicht, mittelschwer oder schwer",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diese Rüstung trägst, bist du gegen eine Schadensart resistent. Der SL wählt anhand der Optionen unten die Schadensart aus oder bestimmt sie zufällig.",
+  "tags": []
+}

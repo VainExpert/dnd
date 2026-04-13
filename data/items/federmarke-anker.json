@@ -1,0 +1,44 @@
+{
+  "id": "federmarke-anker",
+  "type": "item",
+  "name": "Federmarke Anker",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 400,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieses Objekt sieht aus wie eine Feder. Als Aktion kann die Feder an ein Schiff gehalten. Für die nächasten 24 h kann das Schiff nicht bewegt werden. Der Effekt endet auch wenn die Feder erneut gegen das Schiff gehalten wird. Wenn der Effekt endet, verschwindet die Feder.",
+  "tags": [
+    "magisch",
+    "aktion",
+    "bewegen",
+    "schiff"
+  ]
+}

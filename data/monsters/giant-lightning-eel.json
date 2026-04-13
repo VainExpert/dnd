@@ -1,0 +1,65 @@
+{
+  "name": "Giant Lightning Eel",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr3",
+      "tales-from-the-yawning-portal"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 42,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 30
+  },
+  "abilities": {
+    "str": 11,
+    "dex": 17,
+    "con": 16,
+    "int": 2,
+    "wis": 12,
+    "cha": 3
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "text": "tales from the yawning portal,  page 236"
+    },
+    {
+      "name": "Water Breathing",
+      "text": "The eel can breathe only underwater."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The eel makes two bite attacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage plus 4 (1d8) lightning damage."
+    },
+    {
+      "name": "Lightning jolt (Recharge 5-6)",
+      "type": "special",
+      "text": "One creature the eel touches within 5 feet of it outside water, or each creature within l5 feet of it in a body of water, must make a DC 12 Constitution saving throw. On failed save, a target takes 13 (3d8) lightning damage. If the target takes any of this damage, the target is stunned until the end of the eel's next turn. On a successful save, a target takes half as much damage and isn't stunned."
+    }
+  ],
+  "source": "creature"
+}

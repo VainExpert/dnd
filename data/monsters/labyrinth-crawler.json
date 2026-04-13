@@ -1,0 +1,60 @@
+{
+  "name": "Labyrinth Crawler",
+  "size": "Medium",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr1",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 13,
+  "hp": {
+    "average": 37,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 16,
+    "int": 5,
+    "wis": 12,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Labyrinthine Recall",
+      "text": "The crawler can perfectly recall\nany path it has traveled."
+    },
+    {
+      "name": "Flawless Tracker",
+      "text": "The crawler can track down any\ncreature it has smelled in the last 24 hours unless\nthat creature's location is concealed through\nmagical means."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Gore",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft.,\none target. Hit: 8 (1d8 + 4) piercing damage."
+    },
+    {
+      "name": "Befuddling Screech (1/Day)",
+      "type": "special",
+      "text": "The crawler lets out an\near piercing screech in a 30-foot cone that\nreverberates in frequencies that cause the minds of\nmost creatures to become scrambled. Each\ncreature in this cone must succeed on a DC 11\nWisdom saving throw or take 5 (1d10) psychic\ndamage and lose its sense of time and direction for\n1 hour."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "violetter-wurm-gift",
+  "type": "item",
+  "name": "Violetter Wurm Gift",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 2000,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Eine Kreatur die mit dem Gift in Kontakt kommt, muss einen CON-Rettungswurf schaffen. Bei Fehlschlag nimmt sie 10W6 Schaden. Bei Erfolg nimmt sie nur die Hälfte an Schaden.",
+  "tags": [
+    "gift",
+    "schwarzmarkt",
+    "kampf",
+    "schaden",
+    "verletzung",
+    "konsumiert",
+    "nützlich"
+  ]
+}

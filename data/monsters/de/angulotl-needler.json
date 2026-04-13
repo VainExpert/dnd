@@ -1,0 +1,72 @@
+{
+  "name": "Angulotl-Nadelvogel",
+  "size": "Klein",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr4",
+      "artillery",
+      "flee-mortals"
+    ]
+  },
+  "alignment": "any",
+  "ac": 14,
+  "hp": {
+    "average": 54,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20,
+    "swim": 30
+  },
+  "abilities": {
+    "str": 7,
+    "dex": 18,
+    "con": 12,
+    "int": 11,
+    "wis": 16,
+    "cha": 8
+  },
+  "skills": {
+    "Acrobatics": 6,
+    "Perception": 5,
+    "Stealth": 8,
+    "Survival": 5
+  },
+  "languages": [
+    "Angulotl"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibisch",
+      "text": "Der Needler kann sowohl an der Luft als auch unter Wasser atmen."
+    },
+    {
+      "name": "Scharfschütze",
+      "text": "Wenn der Needler mit einem Fernkampfangriff\nverfehlt, während er versteckt ist, bleibt er versteckt. Wenn der\nNeedler zudem einen Fernkampfangriff mit Vorteil ausführt und\ntrifft, verursacht der Angriff zusätzlich 3 (1d6) Schaden."
+    },
+    {
+      "name": "giftig",
+      "text": "Wenn eine Kreatur den Needler mit einem Nahkampfangriff trifft,\nwährend sie sich5 feetin seiner Nähe befindet, oder den Needler berührt,\nerleidet diese Kreatur 2 (1d4) Giftschaden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Giftiges Kurzschwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite\n1,5 m, ein Ziel. Treffer: 7 (1d6 + 4) Durchdringungsschaden plus 7 (2d6)\nGiftschaden."
+    },
+    {
+      "name": "Blasrohr",
+      "type": "special",
+      "text": "Fernkampfangriff: +6 auf den Treffer, Reichweite25/100  Fuß,\nein Ziel. Treffer: 1 Durchdringungsschaden, und das Ziel muss\neinenDC 15  Konstitutions-Rettungswurf bestehen oder wird\nfür 1 Minute vergiftet (der Rettungswurf endet am Ende des Zuges). Solange das Ziel auf diese Weise\nvergiftet ist, erleidet es zu Beginn\njedes seiner Züge 14 (4d6) Giftschaden."
+    }
+  ],
+  "source": "creature"
+}

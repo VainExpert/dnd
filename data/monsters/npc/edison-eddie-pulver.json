@@ -1,0 +1,138 @@
+{
+  "id": "edison-eddie-pulver",
+  "name": "Edison \"Eddie\" Pulver",
+  "aliases": [],
+  "source_file": "Edison_Eddie_Pulver.monster",
+  "kind": "monster",
+  "npc": true,
+  "size": "Medium",
+  "creature_type": "humanoid",
+  "subtype": "Gnome",
+  "alignment": "chaotic evil",
+  "armor_class": {
+    "value": 17,
+    "display": "17 (Enhanced Artificer Armor)"
+  },
+  "hit_points": {
+    "average": 64,
+    "formula": "8d8 + 16"
+  },
+  "speed": {
+    "walk": "30 ft."
+  },
+  "abilities": {
+    "str": {
+      "score": 8,
+      "mod": -1
+    },
+    "dex": {
+      "score": 16,
+      "mod": 3
+    },
+    "con": {
+      "score": 14,
+      "mod": 2
+    },
+    "int": {
+      "score": 18,
+      "mod": 4
+    },
+    "wis": {
+      "score": 10,
+      "mod": 0
+    },
+    "cha": {
+      "score": 13,
+      "mod": 1
+    }
+  },
+  "saving_throws": {
+    "con": 5,
+    "int": 7
+  },
+  "skills": {
+    "history": 7,
+    "investigation": 7,
+    "sleight of hand": 6,
+    "stealth": 6
+  },
+  "damage_resistances": [
+    {
+      "name": "lightning",
+      "note": "(Resistant)"
+    }
+  ],
+  "damage_immunities": [],
+  "damage_vulnerabilities": [],
+  "special_damage_defenses": [],
+  "condition_immunities": [
+    "stunned"
+  ],
+  "senses": {
+    "darkvision": "60 ft.",
+    "passive_perception": 10
+  },
+  "languages": {
+    "speaks": [
+      "Common",
+      "Gnomish",
+      "Thieves Cant'"
+    ],
+    "understands": []
+  },
+  "challenge_rating": "7",
+  "xp": 2900,
+  "proficiency_bonus": 3,
+  "traits": [
+    {
+      "name": "Gnome Cunning",
+      "text": "Eddie has advantage on all Intelligence, Wisdom, and Charisma saves against magic."
+    }
+  ],
+  "spellcasting": [],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "text": "Eddie can make up to 2 attacks."
+    },
+    {
+      "name": "Dagger",
+      "text": "_Melee Weapon Attack:_ +6 to hit, one target, range 1,5 m, thrown (6 m/ 18 m), _Hit:_ 1d4 + 3 piercing damage."
+    },
+    {
+      "name": "Self-Made Crossbow",
+      "text": "_Ranged Weapon Attack:_ +6 to hit, one targe, range (9 m/96 m), _Hit:_ 1d8 + 3 piercing damage, ignores _loading_ property."
+    },
+    {
+      "name": "Weapon Invention",
+      "text": "Eddie uses 1 of the following option (1d6 to choose). Every choice once per day.\n> 1. Smoke Grenade: Eddie throws a smoke grenade up to 18 m. The hit area gets heavily obscured within 6 m radius of the target. Moderate wind disperses in 4 rounds, strong wind in 1 round.\n> 2. Gnomengrenade: Eddie throws the Gnomengrenade up to 18 m. The grenade explodes on impact and unleashes the following effects:\n> a. Every creature in the blast radius of 6 m must make a DC 13 CON saving throw or take 4d6 thunder damage and be _deafend_ for 1 min. On a success only half the damage and not _deafend_.\n> b. 2 random effects from the Wild Magic Table effect the impact suroundings. (reroll splicates)\n> 3. Alchemist Fire: Eddie throws a flask of Alchemist Fire. _Ranged Weapon Attack:_ +6 to hit, range (1,5 m/9 m), one target, _Hit:_ 1d4 fire damage and 1d4 fire damage at the start of each of the targets turns until extinguished with a DC 13 DEX saving throw.\n> 4. Shatter Grenade: Eddie throws a shatter grenade up to 18 m. The grenade explodes on impact and every creature within the blast radius of 6 m must make a DC 13 CON saving throw or be knocked _prone_ and pushed away from the grenade by 3 m.\n> 5. Glue Bomb: Eddie throws a glue bomb up to 18 m. The hit area within a 6 m radius becomes difficult terrain and every creature within the area makes a DC 13 Dex saving throw or gets _restrained_ for 10 min. The glue dissolves after 10 min or after some alcohol was applied to the glue. A DC 13 STR saving throw can be done by hit creatures as an action each turn to escape the glue.\n> 6. Healing Bomb: Eddie throws a healing bomb up to 18 m. The bomb explodes on impact. Every ally of Eddie in 6 m of the impact regains 4d4 + 4 hit points."
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [
+    {
+      "name": "Emergency Exit (2/day)",
+      "text": "Eddie can safely teleport to an unoccupied space in 9 m he knows of."
+    },
+    {
+      "name": "Flash of Genius",
+      "text": "If he or another creature he can see within 30 feet of Eddie makes an ability check or a saving throw, he can use his reaction to add +4 to the roll."
+    }
+  ],
+  "legendary_actions": [],
+  "legendary_actions_per_round": 0,
+  "legendary_description": null,
+  "mythic_actions": [],
+  "lair_actions": [],
+  "regional_effects": [],
+  "display": {
+    "double_columns": true,
+    "separation_point": 4
+  },
+  "import_notes": [
+    "AC taken from custom armor description.",
+    "Ignored inconsistent customCr value \"1 (200 XP)\" and used cr \"7\".",
+    "Ignored inconsistent customProf value \"2\" and used proficiency bonus +3 from CR."
+  ],
+  "source_format": "monster builder export"
+}

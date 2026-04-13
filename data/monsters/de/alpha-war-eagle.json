@@ -1,0 +1,83 @@
+{
+  "name": "Alpha War Eagle",
+  "size": "Groß",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr9",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "neutral gut",
+  "ac": 15,
+  "hp": {
+    "average": 120,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 21,
+    "con": 15,
+    "int": 8,
+    "wis": 17,
+    "cha": 12
+  },
+  "skills": {
+    "Athletics": 8,
+    "Perception": 11
+  },
+  "languages": [
+    "understands Common and Auran but can’t speak them"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Scharfer Blick",
+      "text": "Der Adler hat einen Vorteil bei Weisheits-\n(Wahrnehmungs-)Proben, die auf das Sehen beruhen."
+    },
+    {
+      "name": "Vorbeiflug",
+      "text": "Der Adler löst keinen Gelegenheitsangriff aus,\nwenn er sich aus der Reichweite eines Gegners entfernt."
+    },
+    {
+      "name": "Meister der Winde",
+      "text": "Der Adler hat die Luft\num seinen Körper herum vollkommen unter Kontrolle. Zu Beginn jedes seiner Züge\nkann der Adler einen der folgenden\nVorteile wählen, der bis zu seinem nächsten Zug anhält:\n* Fernkampfangriffe gegen den Adler erfolgen mit\nNachteil.\n* Der Bereich in einem20 foot  Radius um den\nAdler gilt für andere\nKreaturen als schwieriges Gelände.\n* Alle Kreaturen, die ihren Zug innerhalb20 feetvon  des\nAdlers beginnen oder diesen Bereich zum ersten Mal in einem\nZug betreten, müssen einenDC 15  Stärke-Rettungswurf\nbestehen oder werden direkt vom\nAdler 15 feetweggeschleudert und zu Boden geworfen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Adler führt drei Angriffe aus: einen mit seinem\nSchnabel und zwei mit seinen Krallen."
+    },
+    {
+      "name": "Schnäbel",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite:1,5 m ., ein\nZiel. Treffer: 12 (2d6 + 5) Durchdringungsschaden."
+    },
+    {
+      "name": "Haus",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite:1,5 m ., ein\nZiel. Treffer: 16 (2d10 + 5) Schnittschaden."
+    },
+    {
+      "name": "Verzauberte Feder (Aufladen 5-6)",
+      "type": "special",
+      "text": "Der Adler schlägt mit den\nFlügeln und schleudert eine Federwolke, die bis zu\n90 feetdrei Ziele in einem Umkreis von  aufspürt. Die Ziele müssen\neinenDC 16Weisheits-Rettungswurf durchführen; bei einem misslungenen\nRettungswurf erleiden sie 27 (5d10) psychischen\nSchaden und sind bis zum Ende ihres\nnächsten Zuges gefesselt, bei einem erfolgreichen Rettungswurf erleiden sie nur die Hälfte des Schadens und\nsind nicht gefesselt."
+    },
+    {
+      "name": "Tornado erschaffen (1/Tag)",
+      "type": "special",
+      "text": "Der Adler schlägt kraftvoll mit den Flügeln\nund beschwört an einem Punkt innerhalb eines Radius von 3 Metern 120 feeteinen 30 Meter\nhohen Tornado herauf. Dieser\nTornado bewegt sich 1 Minute lang auf einer geraden Linie, wobei30 feeter\neine Drehung vollführt. Der Bereich innerhalb des Tornados ist\nstark verdeckt. Der Tornado saugt alle mittelgroßen oder\nkleineren Gegenstände auf, die nicht an etwas befestigt sind und die\nvon niemandem getragen werden.\n\nEine Kreatur muss einenDC 16  Geschicklichkeits-Rettungswurf\ndurchführen, sobald sie in diesem Zug den Tornado betritt oder der\nTornado ihren Platz betritt, einschließlich des Zeitpunkts, an dem der\nTornado zum ersten Mal erscheint. Eine Kreatur erleidet 21 (6d6)\nSchlagschaden bei einem misslungenen Rettungswurf oder die Hälfte des\nSchadens bei einem erfolgreichen. Zusätzlich muss eine große oder\nkleinere Kreatur, die den Rettungswurf verfehlt, einen\nDC 16Stärke-Rettungswurf bestehen oder wird im\nTornado festgehalten, bis dieser sich auflöst. Wenn eine Kreatur ihren\nZug innerhalb des Tornados festgehalten beginnend, wird sie\nhöher in 10 feetdessen Inneres gezogen, es sei denn, eine Kreatur befindet sich\nan der Spitze.\n\nEine festgehaltene Kreatur bewegt sich mit dem Wirbelwind und\nfällt, wenn der Zauber endet, es sei denn, die Kreatur verfügt über\nMöglichkeiten, sich in der Luft zu halten. Eine festgehaltene Kreatur kann eine\nAktion verwenden, um einenDC 16  Stärke- oder Geschicklichkeits-Check durchzuführen. Bei\nErfolg ist die Kreatur nicht mehr vom\nTornado festgehalten und wird  x10 feet  weit in einer\nzufälligen Richtung3d6 von ihm weggeschleudert."
+    }
+  ],
+  "source": "creature"
+}

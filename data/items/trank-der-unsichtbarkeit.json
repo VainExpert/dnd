@@ -1,0 +1,46 @@
+{
+  "id": "trank-der-unsichtbarkeit",
+  "type": "item",
+  "name": "Trank der Unsichtbarkeit",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "potion",
+  "rarity": "sehr selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1200,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Der Behälter für diesen Trank sieht leer aus, fühlt sich aber an, als wäre Flüssigkeit darin. Wenn du ihn trinkst, wirst du 1 h lang unsichtbar. Alles, was du trägst oder mit dir führst, wird mit dir unsichtbar. Der Effekt endet vorzeitig, wenn du angreifst oder einen Zauber wirkst.",
+  "tags": [
+    "magisch",
+    "konsumiert",
+    "trank",
+    "flüssigkeit",
+    "zauber",
+    "unsichtbarkeit"
+  ]
+}

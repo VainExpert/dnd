@@ -1,0 +1,17 @@
+{
+  "id": "sengender-strahl",
+  "name": "Sengender Strahl",
+  "level": 2,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "36 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du erschaffst 3 Feuerstrahlen und schleuderst sie auf 1 oder mehrere Ziele in Reichweite.\nFühre für jeden Strahl einen Fernkampf-Zauberangriff aus.\nBei Treffer: 2W6 Feuerschaden\n\nAuf höheren Level gewirkt: pro Level 1 zusätzlicher Strahl"
+}

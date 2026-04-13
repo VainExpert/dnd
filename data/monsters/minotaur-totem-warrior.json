@@ -1,0 +1,62 @@
+{
+  "name": "Minotaur Totem Warrior",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr4",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 15,
+  "hp": {
+    "average": 85,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 17,
+    "int": 6,
+    "wis": 16,
+    "cha": 8
+  },
+  "skills": {
+    "Athletics": 6,
+    "Perception": 7
+  },
+  "languages": [
+    "Abyssal"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Labyrinthine Recall",
+      "text": "The minotaur can perfectly recall\nany path it has traveled."
+    },
+    {
+      "name": "Battering Ram",
+      "text": "If the minotaur moves at least 10\nfeet straight towards a target and then hits it with a\ntotem attack on the same turn, the target takes an\nextra 9 (2d8) bludgeoning damage. If the target is a\ncreature, it must succeed on a DC 14 Strength\nsaving throw or be pushed up to 20 feet and\nknocked prone. If the target is a structure, this\nattack deals double damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Totem",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 10\nft., one target. Hit: 17 (2d12 + 4) bludgeoning\ndamage."
+    },
+    {
+      "name": "Totemic Smash (Recharge 5-6)",
+      "type": "special",
+      "text": "The minotaur\nsmashes its totem on the ground, causing a\nshockwave to ripple forth in a 15-foot cone. Each\ncreature in this area must make a DC 14 Dexterity\nsaving throw, taking 11 (2d10) bludgeoning\ndamage and 11 (2d10) thunder damage on a failed\nsaving throw, or half as much damage on a\nsuccessful one. Creatures that fail this saving throw\nby 5 or more also fall prone."
+    }
+  ],
+  "source": "creature"
+}

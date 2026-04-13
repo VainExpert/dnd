@@ -1,0 +1,50 @@
+{
+  "name": "Balhannoth",
+  "size": "Groß",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "large",
+      "aberration",
+      "cr11",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 17,
+  "hp": {
+    "average": 114,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 25
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 8,
+    "con": 18,
+    "int": 6,
+    "wis": 15,
+    "cha": 8
+  },
+  "skills": {
+    "Perception": 6
+  },
+  "languages": [
+    "understands Deep Speech",
+    "telepathy 1,584 km"
+  ],
+  "challenge": {
+    "cr": "11",
+    "xp": 7200,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Legendärer Widerstand (2/Tag)",
+      "text": "Wenn der Balhannoth einen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

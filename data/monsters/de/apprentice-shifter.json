@@ -1,0 +1,60 @@
+{
+  "name": "Shifter-Lehrling",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 13,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 15,
+    "con": 13,
+    "int": 10,
+    "wis": 16,
+    "cha": 12
+  },
+  "skills": {
+    "Animal Handling": 5,
+    "Medicine": 5,
+    "Survival": 5
+  },
+  "languages": [
+    "Any two languages and Druidic"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Shifter ist ein Zauberwirker der Stufe 3. Seine\nZauberfertigkeit ist Weisheit (ZauberrettungswurfDC 13, +5\nauf Treffer bei Zauberangriffen). Der Shifter hat die\nfolgenden Druidenzauber vorbereitet:\n\n* Cantrips (beliebig oft): Druidkunst, Dornenpeitsche\n\n* 1. Stufe (4 Plätze): Verwickeln, Feenfeuer, Nebelwolke, Mit Tieren sprechen\n\n* 2. Stufe (2 Plätze): Geringe Wiederherstellung, Mondstrahl"
+    },
+    {
+      "name": "Wilde Gestalt – Schwarzbär (2/Kurze Erholung)",
+      "text": "Als Bonusaktion\nverwandelt sich der Druide für bis zu\nzwei Stunden in einen Schwarzbären. Wenn der Bär auf 0 Trefferpunkte\nreduziert wird, nimmt der Druide wieder seine normale Gestalt an, wobei\nder überschüssige Schaden auf die Trefferpunkte\ndes Druiden übertragen wird."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Langstock",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +3 zum Treffen, Reichweite\n1,5 m, ein Ziel. Treffer: 4 (1d6 + 1) Bludgeoning-Schaden\noder 5 (1d8 +1) Bludgeoning-Schaden bei\nZweihandgebrauch."
+    }
+  ],
+  "source": "creature"
+}

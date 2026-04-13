@@ -1,0 +1,408 @@
+{
+  "id": "taverne-baukasten",
+  "titel": "W100 Taverne-Baukastentabelle",
+  "description": "Zweiteilige W100-Baukastentabelle für Tavernen- und Gasthausnamen. Ein Wurf für das beschreibende Wort, ein weiterer für das Substantiv.",
+  "dice": 100,
+  "parts": true,
+  "header": ["Adjektiv", "Substantiv"], 
+  "1": [
+    "Goldenen",
+    "Krug"
+  ],
+  "2": [
+    "Schlafenden",
+    "Drachen"
+  ],
+  "3": [
+    "Roten",
+    "Eber"
+  ],
+  "4": [
+    "Schwarzen",
+    "Wolf"
+  ],
+  "5": [
+    "Silbernen",
+    "Hirsch"
+  ],
+  "6": [
+    "Grünen",
+    "Greif"
+  ],
+  "7": [
+    "Durstigen",
+    "Bären"
+  ],
+  "8": [
+    "Alten",
+    "Anker"
+  ],
+  "9": [
+    "Rostigen",
+    "Helm"
+  ],
+  "10": [
+    "Trunkenen",
+    "Speer"
+  ],
+  "11": [
+    "Lachenden",
+    "Kessel"
+  ],
+  "12": [
+    "Brennenden",
+    "Turm"
+  ],
+  "13": [
+    "Hinkenden",
+    "Ochsen"
+  ],
+  "14": [
+    "Singenden",
+    "Falken"
+  ],
+  "15": [
+    "Bellenden",
+    "Hund"
+  ],
+  "16": [
+    "Heulenden",
+    "Raben"
+  ],
+  "17": [
+    "Kupfernen",
+    "Kelch"
+  ],
+  "18": [
+    "Eisernen",
+    "Schild"
+  ],
+  "19": [
+    "Gläsernen",
+    "Becher"
+  ],
+  "20": [
+    "Steingrauen",
+    "Widder"
+  ],
+  "21": [
+    "Blauen",
+    "Mond"
+  ],
+  "22": [
+    "Weißen",
+    "Stern"
+  ],
+  "23": [
+    "Grauen",
+    "Esel"
+  ],
+  "24": [
+    "Braunen",
+    "Hengst"
+  ],
+  "25": [
+    "Müden",
+    "Pilger"
+  ],
+  "26": [
+    "Wachsamen",
+    "Wächter"
+  ],
+  "27": [
+    "Flinken",
+    "Fuchs"
+  ],
+  "28": [
+    "Wilden",
+    "Keiler"
+  ],
+  "29": [
+    "Listigen",
+    "Kobold"
+  ],
+  "30": [
+    "Pfeifenden",
+    "Kater"
+  ],
+  "31": [
+    "Flüsternden",
+    "Wald"
+  ],
+  "32": [
+    "Donnernden",
+    "Amboss"
+  ],
+  "33": [
+    "Leuchtenden",
+    "Funken"
+  ],
+  "34": [
+    "Zersprungenen",
+    "Humpen"
+  ],
+  "35": [
+    "Schiefen",
+    "Löffel"
+  ],
+  "36": [
+    "Krummen",
+    "Nagel"
+  ],
+  "37": [
+    "Runenverzierten",
+    "Stein"
+  ],
+  "38": [
+    "Fahlen",
+    "Löwen"
+  ],
+  "39": [
+    "Honiggelben",
+    "Met"
+  ],
+  "40": [
+    "Nebligen",
+    "Morgenstern"
+  ],
+  "41": [
+    "Rußigen",
+    "Schornstein"
+  ],
+  "42": [
+    "Süßen",
+    "Apfel"
+  ],
+  "43": [
+    "Salzigen",
+    "Hafen"
+  ],
+  "44": [
+    "Fernen",
+    "Wanderer"
+  ],
+  "45": [
+    "Letzten",
+    "Weg"
+  ],
+  "46": [
+    "Ersten",
+    "Becher"
+  ],
+  "47": [
+    "Stolzen",
+    "Ritter"
+  ],
+  "48": [
+    "Verlorenen",
+    "Stiefel"
+  ],
+  "49": [
+    "Gespaltenen",
+    "Schädel"
+  ],
+  "50": [
+    "Glühenden",
+    "Huf"
+  ],
+  "51": [
+    "Kalten",
+    "Brunnen"
+  ],
+  "52": [
+    "Warmen",
+    "Herd"
+  ],
+  "53": [
+    "Gesegneten",
+    "Hammer"
+  ],
+  "54": [
+    "Vergessenen",
+    "König"
+  ],
+  "55": [
+    "Verborgenen",
+    "Pfad"
+  ],
+  "56": [
+    "Stummen",
+    "Boten"
+  ],
+  "57": [
+    "Tanzenden",
+    "Troll"
+  ],
+  "58": [
+    "Scharlachroten",
+    "Hahn"
+  ],
+  "59": [
+    "Goldbraunen",
+    "Widderkopf"
+  ],
+  "60": [
+    "Bernsteinfarbenen",
+    "Fisch"
+  ],
+  "61": [
+    "Dämmerigen",
+    "Keller"
+  ],
+  "62": [
+    "Heiteren",
+    "Zecher"
+  ],
+  "63": [
+    "Finstern",
+    "Riesen"
+  ],
+  "64": [
+    "Sturmumtosten",
+    "Mast"
+  ],
+  "65": [
+    "Mondlosen",
+    "Himmel"
+  ],
+  "66": [
+    "Sonnenhellen",
+    "Saal"
+  ],
+  "67": [
+    "Reisenden",
+    "Wagen"
+  ],
+  "68": [
+    "Einsamen",
+    "Reiter"
+  ],
+  "69": [
+    "Klirrenden",
+    "Beutel"
+  ],
+  "70": [
+    "Klugen",
+    "Rabenkopf"
+  ],
+  "71": [
+    "Rotbärtigen",
+    "Zwerg"
+  ],
+  "72": [
+    "Glänzenden",
+    "Pfennig"
+  ],
+  "73": [
+    "Feisten",
+    "Greifen"
+  ],
+  "74": [
+    "Knarrenden",
+    "Wagenrad"
+  ],
+  "75": [
+    "Torkelnden",
+    "Bock"
+  ],
+  "76": [
+    "Schimmernden",
+    "Aal"
+  ],
+  "77": [
+    "Zwielichtigen",
+    "Gaukler"
+  ],
+  "78": [
+    "Funkelnden",
+    "Rubin"
+  ],
+  "79": [
+    "Gestrandeten",
+    "Matrosen"
+  ],
+  "80": [
+    "Verwunschenen",
+    "Spiegel"
+  ],
+  "81": [
+    "Stillen",
+    "Quell"
+  ],
+  "82": [
+    "Pfeilschnellen",
+    "Hasen"
+  ],
+  "83": [
+    "Dunklen",
+    "Kellerfass"
+  ],
+  "84": [
+    "Rauchenden",
+    "Fass"
+  ],
+  "85": [
+    "Würzigen",
+    "Metkrug"
+  ],
+  "86": [
+    "Gebrochenen",
+    "Pfeil"
+  ],
+  "87": [
+    "Schweren",
+    "Hammerkopf"
+  ],
+  "88": [
+    "Tiefen",
+    "Schacht"
+  ],
+  "89": [
+    "Wogenden",
+    "Seehund"
+  ],
+  "90": [
+    "Schäumenden",
+    "Kelterfass"
+  ],
+  "91": [
+    "Dreiäugigen",
+    "Ziegenbock"
+  ],
+  "92": [
+    "Einäugigen",
+    "Riesen"
+  ],
+  "93": [
+    "Gescheckten",
+    "Hengstkopf"
+  ],
+  "94": [
+    "Purpurnen",
+    "Phönix"
+  ],
+  "95": [
+    "Winterkalten",
+    "Kamin"
+  ],
+  "96": [
+    "Sommerwarmen",
+    "Garten"
+  ],
+  "97": [
+    "Blutroten",
+    "Dolch"
+  ],
+  "98": [
+    "Sanften",
+    "Wind"
+  ],
+  "99": [
+    "Fröhlichen",
+    "Spielmann"
+  ],
+  "100": [
+    "Königlichen",
+    "Greifenkopf"
+  ]
+}

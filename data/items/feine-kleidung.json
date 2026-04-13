@@ -1,0 +1,44 @@
+{
+  "id": "feine-kleidung",
+  "type": "item",
+  "name": "Feine Kleidung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 3,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 15,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Hochwertige Kleidung für gesellschaftliche Anlässe. Manche Orte lassen nur Personen in feiner Kleidung eintreten.",
+  "tags": [
+    "kleidung",
+    "fein",
+    "gesellschaft",
+    "soziales"
+  ]
+}

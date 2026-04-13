@@ -1,0 +1,80 @@
+{
+  "name": "Bebilith",
+  "size": "Groß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr11",
+      "homebrew",
+      "demon"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 18,
+  "hp": {
+    "average": 150,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 24,
+    "dex": 12,
+    "con": 23,
+    "int": 11,
+    "wis": 13,
+    "cha": 13
+  },
+  "skills": {},
+  "languages": [
+    "understands Abyssal but can't speak; telepathy 30 m."
+  ],
+  "challenge": {
+    "cr": "11",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Feiner Geruchssinn",
+      "text": "Der Bebilith hat einen Vorteil bei Weisheitsproben (Wahrnehmung), die auf dem Geruchssinn beruhen."
+    },
+    {
+      "name": "Spinnenklettern",
+      "text": "Der Bebilith kann schwierige Oberflächen erklimmen, auch kopfüber an Decken, ohne dafür eine Fertigkeitsprobe ablegen zu müssen."
+    },
+    {
+      "name": "Web Sense",
+      "text": "Solange es mit einem Netz in Verbindung steht, kennt das Bebilith den genauen Aufenthaltsort jedes anderen Wesens, das mit demselben Netz in Verbindung steht."
+    },
+    {
+      "name": "Web Walker",
+      "text": "Der Bebilith ignoriert Bewegungsbeschränkungen, die durch Spinnweben verursacht werden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Bebilith führt drei Angriffe aus: zwei mit seinen Klauen und einen mit seinem Biss. Treffen beide Klauenangriffe dasselbe Ziel, erhält dessen Rüstung oder natürliche Rüstung (falls vorhanden) einen dauerhaften und kumulativen Malus von −1 auf die Rüstungsklasse (bis zu einem Mindestwert von 10 vor anderen Modifikatoren). Eine Rüstung, deren Rüstungsklasse auf 10 gesenkt wurde, wird zerstört."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 14 (2d6 + 7) Durchdringungsschaden, und das Ziel muss einenDC 18Konstitutions-Rettungswurf bestehen oder erleidet 17 (5d6) Strahlungsschaden. Am Ende jedes seiner Züge muss die Kreatur einen weiteren Rettungswurf durchführen; bei Erfolg endet der Effekt, bei Misserfolg erleidet sie 17 (5d6) Strahlungsschaden. Stirbt eine Kreatur, während sie unter diesem Effekt steht, entzündet sich der Körper und brennt, bis er zerstört oder mit „Segnen“, „Böses und Gutes vertreiben“ oder ähnlicher Magie behandelt wird."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 12 (2d4 + 7) Schnittschaden."
+    },
+    {
+      "name": "Web (Aufladen 5–6)",
+      "type": "special",
+      "text": "Fernkampfangriff: +11 auf Treffer, Reichweite30/60  Fuß, eine Kreatur. Treffer: Das Ziel wird durch Spinnweben gefesselt. Als Aktion kann das gefesselte Ziel einenDC 18  Stärke-Wurf durchführen und die Spinnweben bei Erfolg zerreißen. Die Spinnweben können auch angegriffen und zerstört werden (RK 10; TP 5; Widerstand gegen Feuerschaden; Immunität gegen Schlag-, Gift- und psychischen Schaden)."
+    }
+  ],
+  "source": "creature"
+}

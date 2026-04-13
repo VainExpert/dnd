@@ -1,0 +1,51 @@
+{
+  "name": "Ankheg",
+  "size": "Groß",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr2",
+      "monster-manual"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 14,
+  "hp": {
+    "average": 39,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 10
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 11,
+    "con": 13,
+    "int": 1,
+    "wis": 13,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffer, Reichweite5 ft: , ein Ziel. Treffer: 10 (2d6 + 3) Schnittschaden plus 3 (1d6) Säureschaden. Ist das Ziel eine Kreatur der Größe „Groß“ oder kleiner, wird es festgehalten (Befreiungswurf DC 13). Solange dieser Festhaltedurchgriff andauert, kann der Ankheg nur die festgehaltene Kreatur beißen und erhält dabei einen Vorteil bei Angriffswürfen."
+    },
+    {
+      "name": "Säurespray (Nachfüllpackung 6)",
+      "type": "special",
+      "text": "Der Ankheg spuckt Säure in einer Linie von 9 m. Länge und 1,5 m. Breite, sofern er kein Wesen im Griff hat. Jedes Wesen in dieser Linie muss einenDC 13Geschicklichkeits-Rettungswurf durchführen und erleidet bei einem misslungenen Rettungswurf 10 (3d6) Säureschaden oder bei einem erfolgreichen Rettungswurf die Hälfte dieses Schadens."
+    }
+  ],
+  "source": "creature"
+}

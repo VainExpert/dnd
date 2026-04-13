@@ -1,0 +1,79 @@
+{
+  "name": "Mantidrake",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr11",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 15,
+  "hp": {
+    "average": 147,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 23,
+    "dex": 15,
+    "con": 20,
+    "int": 9,
+    "wis": 14,
+    "cha": 13
+  },
+  "skills": {
+    "Perception": 6
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "11",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Flyby",
+      "text": "The mantidrake doesn’t provoke an opportunity attack when it\nflies out of an enemy’s reach."
+    },
+    {
+      "name": "Keen Smell",
+      "text": "The mantidrake has advantage on Wisdom (Perception)\nchecks that rely on smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The mantidrake makes three attacks: one with its bite and\ntwo with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 15\n(2d8 + 6) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 15\n(2d8 + 6) slashing damage."
+    },
+    {
+      "name": "Spikes",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +6 to hit, range 5 ft., one target. Hit: 16\n(4d6 + 2) piercing damage."
+    },
+    {
+      "name": "Dragon Breath (Recharge 5–6)",
+      "type": "special",
+      "text": "The mantidrake exhales its breath\nbased on its dragon head color. Each creature in the area affected\nmust make a DC 18 Dexterity saving throw, taking 36 (8d8) damage on a\nfailed save, of half as much on a successful one."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "ritterruestung",
+  "type": "item",
+  "name": "Ritterrüstung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 32.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1500,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": {
+    "base": 18,
+    "dex_bonus": false,
+    "stealth_disadvantage": true,
+    "type": "schwer",
+    "str_requirement": 15
+  },
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese schwere Rüstung besteht aus mehreren miteinander verbundenen Metallplatten, die den Körper des Trägers vollständig bedecken. Sie bietet einen hervorragenden Schutz gegen Angriffe, ist jedoch schwer und unhandlich. Das Tragen dieser Rüstung erfordert eine beträchtliche Stärke, um sich effektiv bewegen zu können.",
+  "tags": [
+    "abenteuer",
+    "rüstung",
+    "abwehr",
+    "schwer",
+    "heimlichkeit_nachteil",
+    "teuer",
+    "selten",
+    "schmied"
+  ]
+}

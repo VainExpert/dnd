@@ -1,0 +1,51 @@
+{
+  "id": "schild",
+  "type": "item",
+  "name": "Schild",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "off-hand",
+  "stackable": false,
+  "weight": {
+    "value": 3,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 10,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": {
+    "base": 2,
+    "dex_bonus": false,
+    "stealth_disadvantage": false,
+    "type": "schild"
+  },
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein Schild muss mit einer Bonus Aktion gehalten oder weggesteckt werden. Du brauchst Übung mit einem Schild um vom Schutz zu profitieren.",
+  "tags": [
+    "abenteuer",
+    "rüstung",
+    "abwehr",
+    "schild",
+    "schmied",
+    "schreiner"
+  ]
+}

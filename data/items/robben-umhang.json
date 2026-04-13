@@ -1,0 +1,53 @@
+{
+  "id": "robben-umhang",
+  "type": "item",
+  "name": "Robben-Umhang",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 5,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Während du diesen Umhang trägst, bekommst du eine Schwimmbewegungsrate von 9 m. Du hast Vorteil auf alle Überzeugen-Würfe gegen Humanoide, die dein Geschlecht attraktiv finden. Auch kannst du dich als Aktion in eine Robbe verwandeln. Dafür gelten die Regeln, wie für die druidische Tiergestalt. Du kannst aber unbegrenzt in dieser Form blieben und kannst zusätzlich die Sprachen Sylvan und Aquan in der Robben-Form.",
+  "tags": [
+    "magisch",
+    "kleidung",
+    "umhang",
+    "schwimmen",
+    "bewegung",
+    "vorteil",
+    "überzeugen",
+    "sylvan",
+    "aquan",
+    "tier",
+    "robbe",
+    "tiergestalt",
+    "aktion"
+  ]
+}

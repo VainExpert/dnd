@@ -1,0 +1,18 @@
+{
+  "id": "gedankensplitter",
+  "name": "Gedankensplitter",
+  "level": 0,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V",
+  "duration": "1 Runde (6 s)",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du bohrst einen desorientierenden Dorn psychischer Energie in die Gedanken einer Kreatur in Reichweite, die du sehen kannst.\nDas Ziel muss einen INT-Rettungswurf machen.\nBei Fehlschlag: 1W6 psychischer Schaden und es subtrahiert 1W4 von seinem nächsten Rettungswurf vor dem Ende deines nächsten Zuges.\n\nAuf höheren Level: Schaden steigt um je 1W6 auf Level 5, 11 und 17."
+}

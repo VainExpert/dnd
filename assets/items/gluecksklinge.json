@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-gluecksklinge",
+  "type": "item",
+  "name": "Glücksklinge",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "weapon",
+  "rarity": "legendär",
+  "requires_attunement": true,
+  "attunement_text": "beliebiges Schwert",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Du erhältst einen Bonus von +1 auf Angriffs- und Schadenswürfe, die du mit dieser magischen Waffe ausführst. Solange du das Schwert bei dir trägst, erhältst du einen Bonus von +1 auf Rettungswürfe. Glück:  Wenn du das Schwert bei dir trägst, kannst du sein innewohnendes Glück nutzen (keine Aktion notwendig), um einen unliebsamen Angriffswurf, Attributswurf oder Rettungswurf zu wiederholen. Du musst den zweiten Wurf verwenden. Diese Eigenschaft kann erst im nächsten Morgengrauen wiederverwendet werden. Wunsch:  Das Schwert hat 1W4-1 Ladungen. Wenn du es hältst, kannst du als Aktion eine Ladung verbrauchen und den Zauber Wunsch  mit ihm wirken. Diese Eigenschaft kann erst im nächsten Morgengrauen wiederverwendet werden. Das Schwert verliert diese Eigenschaft, wenn es keine Ladungen mehr hat.",
+  "tags": []
+}

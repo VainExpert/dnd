@@ -1,0 +1,75 @@
+{
+  "name": "Mummy of the Deep",
+  "size": "Medium",
+  "type": {
+    "type": "endead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr5",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 14,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 20
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 10,
+    "con": 14,
+    "int": 6,
+    "wis": 14,
+    "cha": 15
+  },
+  "skills": {
+    "Athletics": 6,
+    "Perception": 5,
+    "Stealth": 3
+  },
+  "languages": [
+    "the languages it knew in life"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "Mummies of the deep can breathe air and water."
+    },
+    {
+      "name": "Innate Spellcasting (1/day)",
+      "text": "The mummy can innately cast <i>control\nwater</i>, requiring no material components. Its innate spellcasting ability\nis Wisdom"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The mummy can use its Dreadful Glare and makes one\nattack with its necrotizing strike."
+    },
+    {
+      "name": "Necrotizing Strike",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5ft., one\ntarget. Hit: 10 (2d6 + 3) bludgeoning damage plus 10 (3d6) necrotic\ndamage. If the target is a creature, it must succeed on a DC 12 Constitution\nsaving throw or be cursed with necrotic fever. The cursed target can’t\nregain hit points, and its hit point maximum decreases by 10 (3d6) for\nevery 24 hours that elapse. If the curse reduces the target’s hit point\nmaximum to 0, the target dies, and its body turns to pluff mud. The curse\nlasts until removed by the remove curse spell or other magic."
+    },
+    {
+      "name": "Dreadful Glare",
+      "type": "special",
+      "text": "The mummy targets one creature it can see within 60\nfeet of it. If the target can see the mummy, it must succeed on a DC 12\nWisdom saving throw against this magic or become frightened until the\nend of the mummy’s next turn. If the target fails the saving throw by 5 or\nmore, it is also paralyzed for the same duration. A target that succeeds on\nthe saving throw is immune to the Dreadful Glare for all mummies (but no\nmummy lords) for the next 24 hours."
+    },
+    {
+      "name": "Drowning Breath",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one\ntarget. Hit: The creature is grappled (escape DC 13). If the creature has\nnot broken the mummy’s grapple by the start of the mummy’s next turn,\nthe mummy uses its next action to press its lips against the creature’s and\nregurgitates seawater into the creature’s lungs. The creature immediately\nbegins suffocating (see the fifth edition SRD for more information on\nsuffocation). While suffocating, the creature can only use its actions to\ntry and cough the seawater up, requiring a successful DC 12 Constitution\nsaving throw to do so."
+    }
+  ],
+  "source": "creature"
+}

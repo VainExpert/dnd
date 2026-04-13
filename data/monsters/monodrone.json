@@ -1,0 +1,62 @@
+{
+  "name": "Monodrone",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr1/8",
+      "monster-manual"
+    ]
+  },
+  "alignment": "construct",
+  "ac": 15,
+  "hp": {
+    "average": 5,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 13,
+    "con": 12,
+    "int": 4,
+    "wis": 10,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "Modron"
+  ],
+  "challenge": {
+    "cr": "1/8",
+    "xp": 25,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Axiomatic Mind",
+      "text": "The monodrone can't be compelled to act in a manner contrary to its nature or its instructions."
+    },
+    {
+      "name": "Disintegration",
+      "text": "If the monodrone dies, its body disintegrates into dust, leaving behind its weapons and anything else it was carrying."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage."
+    },
+    {
+      "name": "Javelin",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 4 (1d6) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

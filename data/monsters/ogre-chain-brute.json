@@ -1,0 +1,41 @@
+{
+  "name": "Ogre Chain Brute",
+  "size": "Large",
+  "type": {
+    "type": "giant",
+    "tags": [
+      "large",
+      "giant",
+      "cr3",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 11,
+  "hp": {
+    "average": 59,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 8,
+    "con": 16,
+    "int": 5,
+    "wis": 7,
+    "cha": 7
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [],
+  "source": "creature"
+}

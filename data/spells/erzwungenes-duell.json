@@ -1,0 +1,16 @@
+{
+  "id": "erzwungenes-duell",
+  "name": "Erzwungenes Duell",
+  "level": 1,
+  "school": "Verzauberung",
+  "casting_time": "1 Bonus Aktion",
+  "range": "9 m",
+  "components": "V",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Paladin"
+  ],
+  "text": "Du versuchst eine Kreatur in Reichweite, die du sehen kannst, zu einem Duell zu zwingen. Dein Ziel muss einen WIS-Rettungswurf bestehen.\nBei Fehlschlag: Das Ziel wird von deiner göttlichen Herausforderung zu dir gezogen.\nFür die Wirkungsdauer hat es einen Nachteil auf Angriffswürfe gegen Kreaturen, außer dir selbst und muss immer einen WIS-Rettungswurf machen, wenn sie sich mehr als 9 m von dir wegbewegen will.\nBei Erfolg: für diesen Zug ist die Bewegung nicht eingeschränkt.\nDer Zauber endet, wenn du ein anderes Wesen angreifst, wenn du einen Zauber auf ein anderes feindliches Wesen wirkst, wenn ein Verbündeter das Ziel verletzt oder wenn du deinen Zug weiter als 9 m entfernt vom Ziel beendest."
+}

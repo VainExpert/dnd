@@ -1,0 +1,69 @@
+{
+  "name": "Babau",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr4",
+      "volos-guide",
+      "demon"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 16,
+  "hp": {
+    "average": 82,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 16,
+    "con": 16,
+    "int": 11,
+    "wis": 12,
+    "cha": 13
+  },
+  "skills": {
+    "Perception": 5,
+    "Stealth": 5
+  },
+  "languages": [
+    "Abyssal"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Babaus ist Weisheit (ZauberrettungswurfDC 11). Der Babau kann die folgenden Zauber von Natur aus wirken, ohne dass dafür materielle Komponenten erforderlich sind:\n\n* Beliebig oft: Dunkelheit, Magie bannen, Furcht, Metall erhitzen, Schweben"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Babau führt zwei Nahkampfangriffe aus. Außerdem kann er vor oder nach diesen Angriffen den „Schwächenden Blick“ einsetzen."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 8 (1d8+4) Schnittschaden."
+    },
+    {
+      "name": "Speer",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfangriff: +6 auf den Trefferwurf, Reichweite 1,5 m[20/60...]. Ein Ziel. Treffer: 7 (1d6+4) Durchschlagschaden oder 8 (1d8+4) Durchschlagschaden, wenn die Waffe bei einem Nahkampfangriff mit beiden Händen geführt wird."
+    },
+    {
+      "name": "Der schwächer werdende Blick",
+      "type": "special",
+      "text": "Der Babau wählt eine Kreatur als Ziel aus, die er in20 feetseiner Sichtweite sieht. Das Ziel muss einenDC 13Konstitutions-Rettungswurf durchführen. Bei einem misslungenen Rettungswurf verursacht das Ziel 1 Minute lang mit Waffenangriffen, die auf Stärke basieren, nur die Hälfte des Schadens. Das Ziel kann den Rettungswurf am Ende jedes seiner Züge wiederholen und den Effekt auf sich selbst bei Erfolg beenden."
+    }
+  ],
+  "source": "creature"
+}

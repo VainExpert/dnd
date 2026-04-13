@@ -1,0 +1,49 @@
+{
+  "name": "Zanskaran Viper",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr1",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 38,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 10,
+    "swim": 30
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 11,
+    "con": 18,
+    "int": 2,
+    "wis": 13,
+    "cha": 2
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 10 (2d8 + 1) piercing damage, and the target must make a successful DC 14 Constitution saving throw or become poisoned. While poisoned this way, the target is blind and takes 7 (2d6) poison damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself with a success."
+    }
+  ],
+  "source": "creature"
+}

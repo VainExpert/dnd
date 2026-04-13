@@ -1,0 +1,81 @@
+{
+  "name": "Monarchon",
+  "size": "Medium",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr7",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 17,
+  "hp": {
+    "average": 110,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 11,
+    "dex": 15,
+    "con": 16,
+    "int": 12,
+    "wis": 19,
+    "cha": 14
+  },
+  "skills": {
+    "History": 4,
+    "Insight": 7,
+    "Medicine": 7,
+    "Nature": 4,
+    "Religion": 4
+  },
+  "languages": [
+    "Common",
+    "Elven",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Fey Ancestry",
+      "text": "Magic cannot put the Monarchon\nto sleep."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The Monarchon has advantage\non saving throws against spells and other\nmagical effects."
+    },
+    {
+      "name": "Command Fey",
+      "text": "As a member of the Court of\nArcadia, the Monarchon can cast <i>dominate\nmonster</i> (DC 15) at will on any fey creature or elf."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The Monarchon’s innate\nspellcasting ability is Wisdom (spell save DC 15).\nThe Monarchon can innately cast the following\nspells, requiring no material components:\n\n* At will: <i>enthrall, sleep</i>"
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The Monarchon is a 7th-level spellcaster.\nHer spellcasting ability is Wisdom (spell\nsave DC 15, +7 to hit with spell attacks). The\nMonarchon has the following cleric spells prepared:\n\n* Cantrips (at will): <i>guidance, sacred flame</i>\n\n* 1st level (4 slots): <i>bane, bless, command</i>\n\n* 2nd level (3 slots): <i>hold person, zone of truth</i>\n\n* 3rd level (3 slots): <i>dispel magic, revivify</i>\n\n* 4th level (1 slot): <i>banishment, death ward</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Withering Touch",
+      "type": "special",
+      "text": "Melee Spell Attack: +7 to\nhit, reach 5 ft., one creature. Hit: 15 (2d10 + 4)\nnecrotic damage."
+    },
+    {
+      "name": "Hypnotic Display",
+      "type": "special",
+      "text": "The Monarchon spreads\nher wings and their false eyes pulsate with a\nrainbow of colors, targeting one creature she\ncan see within 30 feet. If the target can see the\nMonarchon, the target must succeed on a DC\n15 Wisdom saving throw against this magic or\nbe charmed until the end of the Monarchon’s\nnext turn. The charmed target is stunned. If the\ntarget’s saving throw is successful, the target is\nimmune to the Monarchon’s gaze for 24 hours."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,123 @@
+{
+  "name": "Pazuzu, Demon Prince of Air",
+  "size": "Large",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr27",
+      "tome-of-horrors",
+      "demon lord"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 19,
+  "hp": {
+    "average": 364,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 25,
+    "dex": 20,
+    "con": 27,
+    "int": 18,
+    "wis": 19,
+    "cha": 23
+  },
+  "skills": {
+    "Acrobatics": 13,
+    "Arcana": 12,
+    "Athletics": 15,
+    "Deception": 14,
+    "Insight": 12,
+    "Perception": 12,
+    "Stealth": 13,
+    "Survival": 12
+  },
+  "languages": [
+    "Auran",
+    "Aquan",
+    "Abyssal",
+    "Celestial",
+    "Common",
+    "Draconic",
+    "Giant",
+    "Infernal",
+    "Terran; telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "27",
+    "proficiency_bonus": 8
+  },
+  "traits": [
+    {
+      "name": "Special Equipment",
+      "text": "Pazuzu wields the greatsword Carriontooth."
+    },
+    {
+      "name": "Evasion",
+      "text": "If Pazuzu is subjected to an effect that allows it to make a\nDexterity saving throw to take only half damage, Pazuzu instead takes no\ndamage if it succeeds on the saving throw, and only half damage if it fails."
+    },
+    {
+      "name": "Flyby",
+      "text": "Pazuzu doesn’t provoke opportunity attacks when it flies out of\nan enemy’s reach."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "Pazuzu’s innate spellcasting ability is Charisma\n(spell save DC 22, +14 to hit with spell attacks). It can cast the following\nspells, requiring no material components.\n\n* At will: <i>animal messenger, arcane eye, call lightning, detect magic, featherfall, giant insect, gust of wind, insect plague, lightning bolt, sending, wind wall </i>(no concentration necessary)\n\n* 3/day each: <i>control weather, darkness, dispel magic, dominate person, freedom of movement, suggestion</i>\n\n* 1/day: <i>storm of vengeance</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "text": "If Pazuzu fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "Pazuzu has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "Pazuzu’s weapon attacks are magical."
+    },
+    {
+      "name": "Unholy Aura",
+      "text": "An unholy aura surrounds Pazuzu out to a radius of 40 feet. A creature who enters or begins their turn in the area must make a DC 22 Wisdom saving throw. On a failed saving throw, the target is frightened for 1 minute. While frightened, they are paralyzed. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Pazuzu makes two attacks with Carriontooth and two\nattacks with its claws."
+    },
+    {
+      "name": "Carriontooth",
+      "type": "special",
+      "text": "Melee Weapon Attack: +18 to hit, reach 10 ft., one target.\nHit: 38 (8d6 + 10) slashing damage plus 21 (6d6) necrotic damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 25 (4d8 + 7) slashing damage."
+    },
+    {
+      "name": "Corrosive Gas (Recharge 5–6)",
+      "type": "special",
+      "text": "Pazuzu exhales a cloud of acidic gas\nin a 100-foot cone that spreads around corners. Creatures in the area must\nmake a DC 24 Constitution saving throw, taking 18d8 acid damage on a\nfailed saving throw, or half as much damage on a successful one."
+    },
+    {
+      "name": "Dominate Aerial Creature",
+      "type": "special",
+      "text": "Pazuzu can target up to six beasts or\nmonstrosities with a fly speed and an Intelligence lower than 8 and cause\nthem to make a DC 22 Wisdom saving throw. On a failed saving throw,\nthe target is charmed by Pazuzu for 24 hours. The charmed target obeys\nPazuzu’s verbal or telepathic commands. If the target suffers any harm or\nreceives a suicidal command, it can repeat the saving throw, ending the\neffect on a success. If the target successfully saves against the effect, or\nif the effect ends on it, the target is immune to this ability for the next 24\nhours. Pazuzu can have up to six targets charmed at a time. If it charms\nanother, it can end the charmed condition on one target of its choice."
+    },
+    {
+      "name": "Summon (1/day)",
+      "type": "special",
+      "text": "Pazuzu summons 2d4 succubi, 1d4 nalfeshnees, 1d4\nvrocks, or 1 balor. The summoned demon appears in an unoccupied space\nwithin 60 feet of Pazuzu, but can’t summon other demons. It remains for 1\nminute, until it or Pazuzu is slain, or until Pazuzu takes an action to dismiss it."
+    }
+  ],
+  "source": "creature"
+}

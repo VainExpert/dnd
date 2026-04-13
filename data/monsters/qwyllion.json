@@ -1,0 +1,77 @@
+{
+  "name": "Qwyllion",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr8",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 16,
+  "hp": {
+    "average": 110,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 20,
+    "con": 19,
+    "int": 12,
+    "wis": 13,
+    "cha": 16
+  },
+  "skills": {
+    "Acrobatics": 11,
+    "Perception": 4
+  },
+  "languages": [
+    "Common",
+    "Goblin",
+    "Infernal",
+    "Sylvan",
+    "Void Speech"
+  ],
+  "challenge": {
+    "cr": "8",
+    "xp": 3900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Disruptive",
+      "text": "Because of the qwyllion's nauseating nature, spellcasters have disadvantage on concentration checks while within 40 feet of the qwyllion."
+    },
+    {
+      "name": "Nauseating Aura",
+      "text": "The qwyllion is nauseatingly corrupt. Any creature that starts its turn within 20 feet of the qwyllion must succeed on a DC 14 Constitution saving throw or be poisoned for 1d8 rounds. If a creature that's already poisoned by this effect fails the saving throw again, it becomes incapacitated instead, and a creature already incapacitated by the qwyllion drops to 0 hit points if it fails the saving throw. A successful saving throw renders a creature immune to the effect for 24 hours. Creatures dominated by the qwyllion are immune to this effect."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The qwyllion uses its deadly gaze if it can, and makes two claw attacks."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 24 (3d12 + 5) slashing damage."
+    },
+    {
+      "name": "Deadly Gaze (recharge 5-6)",
+      "type": "special",
+      "text": "The qwyllion turns its gaze against a single creature within 20 feet of the qwyllion. The target must succeed on a DC 14 Constitution saving throw or take 16 (3d8 + 3) necrotic damage and be incapacitated until the start of the qwyllion's next turn. A humanoid slain by a qwyllion's death gaze rises 2d4 hours later as a specter under the qwyllion's control."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "type": "special",
+      "text": "The qwyllion's innate casting ability is Charisma (spell save DC 14). She can innately cast the following spells, requiring no material components:\n\n3/day each: dominate person (range 20 feet), shatter"
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,60 @@
+{
+  "name": "Stone Juggernaut",
+  "size": "Large",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "Large",
+      "construct",
+      "cr12",
+      "tomb-of-annihilation"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 15,
+  "hp": {
+    "average": 157,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 22,
+    "dex": 1,
+    "con": 21,
+    "int": 2,
+    "wis": 11,
+    "cha": 3
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "12",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Devastating Roll",
+      "text": "The juggernaut can move through the space of a prone creature. A creature whoses pace the juggernaut enters for the first time on a turn must make a DC 17 Dexterity saving throw, taking 55 (lOdlO) bludgeoning damage on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "Immutable Form",
+      "text": "The juggernaut is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Regeneration",
+      "text": "As long as it has 1 hit point left, the juggernaut magically regains all its hit points daily at dawn. The juggernaut is destroyed and does not regenerate if it drops to 0 hit points."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "The juggernaut deals double damage to objects and structures."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 25 (3dl2 +6) bludgeoning damage. If the target is a Large or smaller creature, it must succeed on a DC 17 Strength saving throw or be knocked prone."
+    }
+  ],
+  "source": "creature"
+}

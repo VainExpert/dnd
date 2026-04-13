@@ -1,0 +1,17 @@
+{
+  "id": "geschenk-von-gab",
+  "name": "Geschenk von Gab",
+  "level": 2,
+  "school": "Verzauberung",
+  "casting_time": "1 Reaktion, wenn du mit jemand anderen sprichst",
+  "range": "Selbst",
+  "components": "V, G, M (2 Goldmünzen, die konsumiert werden)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Magier"
+  ],
+  "text": "Du veränderst die Erinnerungen von Zuhörern in einem 1,5 m Radius.\nSie vergessen alles Gesagte der letzten 6 s. Sie erinnern sich nur an das, was du als verbale Komponente des Zaubers gesprochen hast."
+}

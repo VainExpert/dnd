@@ -1,0 +1,48 @@
+{
+  "name": "Dwarf Guard",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/8",
+      "homebrew",
+      "dwarf"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 16,
+  "hp": {
+    "average": 11,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 12,
+    "con": 12,
+    "int": 10,
+    "wis": 11,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 2
+  },
+  "languages": [
+    "dwarf"
+  ],
+  "challenge": {
+    "cr": "1/8",
+    "xp": 25,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Dwarven Resilience",
+      "text": "The dwarf has advantage on saving throws against poison and has resistance to poison damage"
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

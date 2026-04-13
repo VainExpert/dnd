@@ -1,0 +1,185 @@
+{
+  "id": "marlowe-avon",
+  "name": "Marlowe Avon",
+  "aliases": [],
+  "source_file": "MarloweAvon.monster",
+  "kind": "monster",
+  "npc": true,
+  "size": "Small",
+  "creature_type": "humanoid",
+  "subtype": "Halfling",
+  "alignment": "chaotic evil",
+  "armor_class": {
+    "value": 14,
+    "display": "14 (studded leather)"
+  },
+  "hit_points": {
+    "average": 48,
+    "formula": "8d8 + 16"
+  },
+  "speed": {
+    "walk": "30 ft."
+  },
+  "abilities": {
+    "str": {
+      "score": 8,
+      "mod": -1
+    },
+    "dex": {
+      "score": 15,
+      "mod": 2
+    },
+    "con": {
+      "score": 14,
+      "mod": 2
+    },
+    "int": {
+      "score": 10,
+      "mod": 0
+    },
+    "wis": {
+      "score": 12,
+      "mod": 1
+    },
+    "cha": {
+      "score": 16,
+      "mod": 3
+    }
+  },
+  "saving_throws": {
+    "dex": 5,
+    "cha": 6
+  },
+  "skills": {
+    "acrobatics": 5,
+    "deception": 9,
+    "performance": 9,
+    "persuasion": 6
+  },
+  "damage_resistances": [],
+  "damage_immunities": [],
+  "damage_vulnerabilities": [],
+  "special_damage_defenses": [],
+  "condition_immunities": [],
+  "senses": {
+    "passive_perception": 11
+  },
+  "languages": {
+    "speaks": [
+      "Common",
+      "Draconic",
+      "Halfling",
+      "Thieves Cant'"
+    ],
+    "understands": []
+  },
+  "challenge_rating": "7",
+  "xp": 2900,
+  "proficiency_bonus": 3,
+  "traits": [
+    {
+      "name": "Jack of All Trades",
+      "text": "Marlowe adds +1 to any skill check he is not proficient in."
+    },
+    {
+      "name": "Words of Terror (1/day)",
+      "text": "Marlowe instills fear of a specific creature in a humanoid target he can talk to for at least 1 min. The target must make a WIS saving throw or is _frightened_ for 1 h or until it or an ally gets attacked. On a successful save the target doesn't know of the attempt."
+    },
+    {
+      "name": "Bardic Inspiration (3/day)",
+      "text": "Marlowe can give a Bardic Inspiration die (1d8) to an ally in 18 m, that can hear him. The target can use the die as a bonus for one d20 roll in the next 10 min."
+    },
+    {
+      "name": "Magical Inspiration",
+      "text": "A creature that has Marlowe's Bardic Inspiration can roll it add the roll to healed hit points or damage dealt."
+    },
+    {
+      "name": "Psychic Blades",
+      "text": "Marlowe can spend 1 use of his \"Bardic Inspiration\" and add 3d6 psychic damage to a weapon attack that hits."
+    }
+  ],
+  "spellcasting": [
+    {
+      "name": "Spellcasting",
+      "text": "Marlowe is a 8th-level spellcaster. His spellcasting ability is CHA (spell save DC 14, +5 to hit). He knows the following spells:\n> * Cantrips (at will): _Mage Hand_, _Message_, _Vicious Mockery_\n> * 1st Level (4/day): _Dissonant Whispers_, _Faerie Fire_, _Sleep_, _Tashas Hideous Laughter_\n> * 2nd Level (3/day): _Crown of Madness_, _Mirror Image_, _Shatter_\n> * 3rd Level (3/day): _Antagonize_, _Fear_, _Motivational Speech_\n> * 4th Level (2/day): _Confusion_, _Greater Invisibility_",
+      "spells": {
+        "cantrips_at_will": [
+          "Mage Hand",
+          "Message",
+          "Vicious Mockery"
+        ],
+        "level_1": [
+          "Dissonant Whispers",
+          "Faerie Fire",
+          "Sleep",
+          "Tashas Hideous Laughter"
+        ],
+        "level_2": [
+          "Crown of Madness",
+          "Mirror Image",
+          "Shatter"
+        ],
+        "level_3": [
+          "Antagonize",
+          "Fear",
+          "Motivational Speech"
+        ],
+        "level_4": [
+          "Confusion",
+          "Greater Invisibility"
+        ]
+      },
+      "ability": "charisma",
+      "save_dc": 14,
+      "attack_bonus": 5,
+      "caster_level": 8,
+      "usage_by_level": {
+        "level_1": "4/day",
+        "level_2": "3/day",
+        "level_3": "3/day",
+        "level_4": "2/day"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "name": "Rapier",
+      "text": "_Melee Weapon Attack:_ + 5 to hit, reach 5 ft., 1 target. _Hit:_ 1d8 + 2 piercing damage"
+    },
+    {
+      "name": "Hand Crossbow",
+      "text": "_Ranged Weapon Attack:_ +5 to hit, reach (9 m/ 36 m), 1 target. _Hit:_ 1d6 + 2 piercing damage"
+    },
+    {
+      "name": "Countercharm",
+      "text": "Marlowe and any allies, that can hear him, within 9 m have advantage on saving throws against _frightened_ or _charmed_. This effect lasts for one round or until _incapacitated_, _silenced_ or ended voluntarily."
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [
+    {
+      "name": "Mantle of Whispers (1/day)",
+      "text": "A humanoid that dies within 9 m of Marlowe, he can take the shadow and persona of the dead humanoid for 1 h or until ended as a bonus action. He gets all information the dead would share with a random acquaintance (no secrets).\nHe gets a +5 to a counter Deception check against an Insight Check."
+    },
+    {
+      "name": "Parry",
+      "text": "Marlowe adds 2 to his AC against one melee attack that would hit. He must ne wielding his rapier to do this."
+    }
+  ],
+  "legendary_actions": [],
+  "legendary_actions_per_round": 0,
+  "legendary_description": null,
+  "mythic_actions": [],
+  "lair_actions": [],
+  "regional_effects": [],
+  "display": {
+    "double_columns": true,
+    "separation_point": 4
+  },
+  "import_notes": [
+    "AC inferred from armorName, Dexterity modifier, and shieldBonus.",
+    "Ignored inconsistent customCr value \"1 (200 XP)\" and used cr \"7\".",
+    "Ignored inconsistent customProf value \"2\" and used proficiency bonus +3 from CR."
+  ],
+  "source_format": "monster builder export"
+}

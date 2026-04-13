@@ -1,0 +1,61 @@
+{
+  "name": "Drow House Captain",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr9",
+      "mordenkainens-tome-of-foes",
+      "elf"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 16,
+  "hp": {
+    "average": 162,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 19,
+    "con": 15,
+    "int": 12,
+    "wis": 14,
+    "cha": 13
+  },
+  "skills": {
+    "Perception": 6,
+    "Stealth": 8
+  },
+  "languages": [
+    "Elvish",
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Battle Command",
+      "text": "As a bonus action, the drow targets one ally he can see within 30 feet of him. If the target can see or hear the drow, the target can use its reaction to make one melee attack or to take the Dodge or Hide action."
+    },
+    {
+      "name": "Fey Ancestry",
+      "text": "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The drow's innate spellcasting ability is Charisma (spell save DC 13). He can innately cast the following spells, requiring no material components:\n\n* At will: <i>dancing lights</i>\n\n* 1/day each: <i>darkness, faerie fire , levitate </i>(self only)"
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

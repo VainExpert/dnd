@@ -1,0 +1,47 @@
+{
+  "id": "adamant-modifikation-waffen",
+  "type": "item",
+  "name": "Adamant-Modifikation Waffen",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 250,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Überzieht eine geschmiedete Waffe mit Adamant. Dies macht die Waffe magisch und Treffer mit der Waffe gelten immer als kritische Treffer.",
+  "tags": [
+    "abenteuer",
+    "magisch",
+    "adamant",
+    "modifikation",
+    "waffe",
+    "kampf",
+    "schmied"
+  ]
+}

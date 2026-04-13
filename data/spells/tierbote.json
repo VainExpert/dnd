@@ -1,0 +1,18 @@
+{
+  "id": "tierbote",
+  "name": "Tierbote",
+  "level": 2,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V, G, M (etwas zu Essen)",
+  "duration": "24 h",
+  "concentration": false,
+  "ritual": true,
+  "classes": [
+    "Barde",
+    "Druide",
+    "Waldläufer"
+  ],
+  "text": "Ein Tier überbringt für dich eine Nachricht.\nWähle ein winziges Tier in Reichweite, das du sehen kannst. Bestimme einen Ort, an dem du schonmal warst, sowie einen Empfänger, der einer allgemeinen Beschreibung entspricht. Dann sprichst du eine Botschaft mit bis zu 25 Wörtern. Das Tier reist für die Wirkungsdauer in Richtung des Zielortes. Ein fliegender Bote legt etwa 80 km zurück, andere etwa 40 km.\nAm Zielort übermittelt der Bote die Botschaft an den von dir beschriebenen Empfänger, spricht nur mit einer Kreatur, die deiner Beschreibung entspricht.\nErreicht das Tier nicht sein Ziel vor Ende der Wirkungsdauer geht die Botschaft verloren und das Tier kehrt an den Ort der Zauberwirkung zurück.\nAuf höheren Level gewirkt: pro Level erhöht sich die Wirkungsdauer um 8 h"
+}

@@ -1,0 +1,73 @@
+{
+  "name": "Thayan Warrior",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "tales-from-the-yawning-portal",
+      "human"
+    ]
+  },
+  "alignment": "any non-good alignment",
+  "ac": 16,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 13,
+    "con": 14,
+    "int": 10,
+    "wis": 11,
+    "cha": 11
+  },
+  "skills": {
+    "Perception": 2
+  },
+  "languages": [
+    "Common",
+    "Thayan"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "text": "tales from the yawning portal,  page 246"
+    },
+    {
+      "name": "Doomvault Devotion",
+      "text": "Within the Doomvault, the warrior has advantage on saving throws against being charmed or frightened ."
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The warrior has advantage on an attack roll against a creature if at least one of the warrior's allies is within 5 feet of the creature and the ally isn't incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The warrior makes two melee attacks."
+    },
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1dlO + 3) slashing damage if used with two hands."
+    },
+    {
+      "name": "Javelin",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

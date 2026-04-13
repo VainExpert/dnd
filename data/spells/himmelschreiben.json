@@ -1,0 +1,19 @@
+{
+  "id": "himmelschreiben",
+  "name": "Himmelschreiben",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Sicht",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 1 h",
+  "concentration": true,
+  "ritual": true,
+  "classes": [
+    "Barde",
+    "Druide",
+    "Magier",
+    "Artificer"
+  ],
+  "text": "Bis zu 10 Worte erscheinen an einem Teil des Himmels, den du sehen kannst.\nDie Worte scheinen aus Wolken zu bestehen und bleiben für die Wirkungsdauer dort.\nEin starker Wind kann die Wolken zerstreuen und den Zauber vorzeitig beenden, ansonsten bleiben die Worte bis um Ende des Zaubers bestehen."
+}

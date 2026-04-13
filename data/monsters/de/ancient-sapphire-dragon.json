@@ -1,0 +1,78 @@
+{
+  "name": "Der uralte Saphirdrache",
+  "size": "Gigantisch",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "gargantuan",
+      "dragon",
+      "cr24",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 23,
+  "hp": {
+    "average": 350,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 24,
+    "dex": 27,
+    "con": 14,
+    "int": 26,
+    "wis": 19,
+    "cha": 24
+  },
+  "skills": {
+    "Arcana": 15,
+    "Insight": 11,
+    "Perception": 11,
+    "Religion": 15
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "24",
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache\neinen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Aura der Ehrfurcht",
+      "text": "Alle Kreaturen im Wirkungsbereich30 feetmüssen\neinenDC 22Charisma-Rettungswurf durchführen, um\ndiesen Drachen angreifen zu können. Bei einem misslungenen Rettungswurf endet der Zug der angreifenden\nKreatur sofort. Bei einem erfolgreichen Rettungswurf ist\ndiese Kreatur 1 Woche lang immun gegen die Ehrfurcht-Aura aller\nEdelsteindrachen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache führt drei Angriffe aus: einen\nmit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +14 zum Treffen, Reichweite:4,5 m .,\nein Ziel. Treffer: 18 (2d10 + 7) Durchschlagschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +14 zum Treffen, Reichweite:3 m .,\nein Ziel. Treffer: 14 (2d6 + 7) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +14 zum Treffen; Reichweite20 ft: .,\nein Ziel. Treffer: 16 (2d8 + 7) Bludgeoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "unsichtbares-sehen",
+  "name": "Unsichtbares Sehen",
+  "level": 2,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "V, G, M (Prise Tale und kleine Prise Silberpulver)",
+  "duration": "1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Für die Wirkungsdauer siehst du unsichtbare Kreaturen und Gegenstände.\nAußerdem kannst du in die Ätherebene blicken. Ätherische Wesen und Gegenstände erscheinen geisterhaft und durchscheinend."
+}

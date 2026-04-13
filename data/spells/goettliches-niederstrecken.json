@@ -1,0 +1,16 @@
+{
+  "id": "goettliches-niederstrecken",
+  "name": "Göttliches Niederstrecken",
+  "level": 1,
+  "school": "Hervorrufung",
+  "casting_time": "1 Bonus Aktion, direkt nach einem Treffer mit oder ohne Waffe",
+  "range": "Selbst",
+  "components": "V",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Paladin"
+  ],
+  "text": "Dein Ziel nimmt zusätzlich 2W8 Strahlenschaden.\n1W8 mehr, wenn dein Ziel ein Teuflischer oder ein Untoter ist.\n\nAuf höheren Level gewirkt: pro Level 1W8 mehr Schaden"
+}

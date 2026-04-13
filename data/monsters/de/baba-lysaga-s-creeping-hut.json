@@ -1,0 +1,68 @@
+{
+  "name": "Baba Lysagas kriechende Hütte",
+  "size": "Gigantisch",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "gargantuan",
+      "construct",
+      "cr11",
+      "curse-of-strahd"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 16,
+  "hp": {
+    "average": 263,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 26,
+    "dex": 7,
+    "con": 20,
+    "int": 1,
+    "wis": 3,
+    "cha": 3
+  },
+  "skills": {},
+  "languages": [
+    "-"
+  ],
+  "challenge": {
+    "cr": "11",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Künstliche Natur",
+      "text": "Ein belebtes Objekt benötigt weder Luft noch Nahrung, Getränke oder Schlaf.\n\nDie Magie, die ein Objekt belebt, wird gebannt, sobald die Trefferpunkte des Konstrukts auf 0 sinken. Ein belebtes Objekt, dessen Trefferpunkte auf 0 gesunken sind, wird leblos und ist zu stark beschädigt, um für irgendjemanden noch von Nutzen oder Wert zu sein."
+    },
+    {
+      "name": "Anfälligkeit für Magie",
+      "text": "Die Hütte ist handlungsunfähig, solange sich der magische Edelstein, der sie belebt, im Wirkungsbereich eines Antimagiefeldes befindet. Wird sie von „Magie bannen“ getroffen, muss die Hütte einen Konstitutions-Rettungswurf gegen die Zauberrettungs-Schwierigkeitsklasse des Zauberers bestehen, andernfalls fällt sie für 1 Minute bewusstlos."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "Die Hütte fügt Objekten und Gebäuden doppelten Schaden zu."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Die Hütte führt drei Angriffe mit ihren Wurzeln aus. Sie kann einen dieser Angriffe durch einen Steinangriff ersetzen."
+    },
+    {
+      "name": "Root",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +12 zum Treffen, Reichweite60 ft: , ein Ziel. Treffer: 30 (4d10+8) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Rock",
+      "type": "special",
+      "text": "Fernkampfangriff: +12 auf Treffer, Reichweite 36 m., ein Ziel. Treffer: 21 (3d8+8) Bludegoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

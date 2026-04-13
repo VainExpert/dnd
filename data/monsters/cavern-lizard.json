@@ -1,0 +1,55 @@
+{
+  "name": "Cavern Lizard",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 93,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 17,
+    "int": 3,
+    "wis": 12,
+    "cha": 2
+  },
+  "skills": {
+    "Athletics": 5
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Surprise Attack",
+      "text": "If the cavern lizard surprises a creature and hits it with\nan attack during the first round of combat, the target takes an extra 14\n(4d6) damage from the attack."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 14\n(2d10 + 3) piercing damage plus the target is grappled (escape DC 13),\nand the cavern lizard can’t grapple another target."
+    }
+  ],
+  "source": "creature"
+}

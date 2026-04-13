@@ -1,0 +1,61 @@
+{
+  "name": "Augrek Brighthelm",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr0",
+      "storm-kings-thunder",
+      "shield dwarf"
+    ]
+  },
+  "alignment": "gesetztreu-gut",
+  "ac": 15,
+  "hp": {
+    "average": 13,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 11,
+    "con": 15,
+    "int": 10,
+    "wis": 11,
+    "cha": 11
+  },
+  "skills": {
+    "Athletics": 4,
+    "Perception": 2
+  },
+  "languages": [
+    "Common",
+    "Dwarvish"
+  ],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Die Widerstandsfähigkeit der Zwerge",
+      "text": "Augrek hat einen Vorteil bei Rettungswürfen gegen Gift."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Warhammer",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 auf den Trefferwurf, Reichweite5 ft: , ein Ziel. Treffer: 6 (1d8+2) Bludgeoning-Schaden oder 7 (1d10+2) Bludgeoning-Schaden bei beidhändiger Anwendung."
+    },
+    {
+      "name": "Schwere Armbrust",
+      "type": "special",
+      "text": "Fernkampfangriff: +2 auf den Trefferwurf, Reichweite100/400  Fuß, ein Ziel. Treffer: 5 (1d10) Durchschlagschaden. Augrek hat zehn Armbrustbolzen dabei."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "freundschaft",
+  "name": "Freundschaft",
+  "level": 0,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "G, M (Gesichts Make-Up)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Für die Wirkungsdauer hast du Vorteil auf CHA-Würfe gegen eine Kreatur deiner Wahl, die dir nicht feindselig gesinnt ist.\nWenn der Zauber endet, begreift das Ziel, das Magie verwendet wurde, um ihre Stimmung zu beeinflussen und wird feindselig. Eine gewalttätige Kreatur könnte angreifen. Andere Kreaturen können andere Wege suchen um sich zu rächen."
+}

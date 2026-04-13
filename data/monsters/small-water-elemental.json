@@ -1,0 +1,62 @@
+{
+  "name": "Small Water Elemental",
+  "size": "Small",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "small",
+      "elemental",
+      "cr1/2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 50
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 14,
+    "int": 4,
+    "wis": 10,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "Aquan"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Water Form",
+      "text": "The elemental can enter a hostile\ncreature's space and stop there. It can move\nthrough a space as narrow as 1 inch wide without\nsqueezing."
+    },
+    {
+      "name": "Freeze",
+      "text": "If the elemental takes cold damage, it\npartially freezes; its speed is reduced by 20 feet\nuntil the end of its next turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5ft.,\none target. Hit: 7 (1d8 + 3) bludgeoning damage."
+    },
+    {
+      "name": "Water Blast",
+      "type": "special",
+      "text": "Ranged Spell Attack: +2 to hit, range\n30/120 ft., one target. Hit: 4 (1d8) bludgeoning\ndamage plus 2 (1d4) cold damage."
+    }
+  ],
+  "source": "creature"
+}

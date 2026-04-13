@@ -1,0 +1,68 @@
+{
+  "name": "Eel Hound",
+  "size": "Medium",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr2",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 14,
+  "hp": {
+    "average": 77,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 40
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 16,
+    "con": 13,
+    "int": 6,
+    "wis": 13,
+    "cha": 16
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 5
+  },
+  "languages": [
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The eel hound can breathe air and water."
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The eel hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't incapacitated."
+    },
+    {
+      "name": "Slick Spittle",
+      "text": "By spending 2 rounds dribbling spittle on an area, an eel hound can cover a 5-foot square with its slippery saliva. This area is treated as if under the effects of a grease spell, but it lasts for 1 hour."
+    },
+    {
+      "name": "Slithering Bite",
+      "text": "A creature an eel hound attacks can't make opportunity attacks against it until the start of the creature's next turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage, and the target is grappled (escape DC 14)."
+    }
+  ],
+  "source": "creature"
+}

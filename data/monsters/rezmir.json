@@ -1,0 +1,88 @@
+{
+  "name": "Rezmir",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr7",
+      "tyranny-of-dragons",
+      "half-black dragon"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 13,
+  "hp": {
+    "average": 90,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 16,
+    "con": 16,
+    "int": 15,
+    "wis": 12,
+    "cha": 14
+  },
+  "skills": {
+    "Arcana": 5,
+    "Stealth": 9
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Infernal",
+    "Giant",
+    "Netherese"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Special Equipment",
+      "text": "Rezmir has the Black Dragon Mask, Hazirawn, and an insignia of claws."
+    },
+    {
+      "name": "Amphibious",
+      "text": "Rezmir can breathe air and water."
+    },
+    {
+      "name": "Dark Advantage",
+      "text": "Once per turn, Rezmir can deal an extra 10 (3d6) damage when she hits with a weapon attack, provided Rezmir has advantage on the attack roll."
+    },
+    {
+      "name": "Draconic Majesty",
+      "text": "While wearing no armor and wearing the Black Dragon Mask, Rezmir adds her Charisma bonus to her AC (included)."
+    },
+    {
+      "name": "Immolation",
+      "text": "When Rezmir is reduced to 0 hit points, her body disintegrates into a pile of ash."
+    },
+    {
+      "name": "Legendary Resistance (1/Day)",
+      "text": "If Rezmir fails a saving throw while wearing the Black Dragon Mask, she can choose to succeed instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Greatsword (Hazirawn)",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage plus 7 (2d6) necrotic damage. If the target is a creature, it can't regain hit points for 1 minute. The target can make a DC 15 Constitution saving throw at the end of each of its turns, ending this effect early on a success."
+    },
+    {
+      "name": "Caustic Bolt",
+      "type": "special",
+      "text": "Ranged Spell Attack: +8 to hit, range 90 ft., one target. Hit: 18 (4d8) acid damage."
+    },
+    {
+      "name": "Acid Breath (Recharge 5-6)",
+      "type": "special",
+      "text": "Rezmir breathes acid in a 30-foot line that is 5 feet wide. Each creature in the line must make a DC 14 Dexterity saving throw, taking 22 (5d8) acid damage on a failed save, or half as much damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

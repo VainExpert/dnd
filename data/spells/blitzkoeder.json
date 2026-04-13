@@ -1,0 +1,19 @@
+{
+  "id": "blitzkoeder",
+  "name": "Blitzköder",
+  "level": 0,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "4,5 m",
+  "components": "V",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du erschaffst einen Blitz aus Energie, der eine Kreatur deiner Wahl trifft, die du innerhalb der Reichweite sehen kannst.\nDem Ziel muss ein STR-Rettungswurf gelingen oder es wird bis zu 3 m in einer geraden Linie auf dich zugezogen und erleidet dann 1W8 Blitzschaden, wenn es sich innerhalb von 1,5 m von dir befindet.\n\nAuf höheren Level: Schaden steigt um je 1W8 auf Level 5, 11 und 17."
+}

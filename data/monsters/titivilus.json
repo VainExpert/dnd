@@ -1,0 +1,69 @@
+{
+  "name": "Titivilus",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr16",
+      "mordenkainens-tome-of-foes",
+      "devil"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 20,
+  "hp": {
+    "average": 127,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 22,
+    "con": 17,
+    "int": 24,
+    "wis": 22,
+    "cha": 26
+  },
+  "skills": {
+    "Deception": 13,
+    "Insight": 11,
+    "Intimidation": 13,
+    "Persuasion": 13
+  },
+  "languages": [
+    "all",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "16",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "Titivilus's innate spellcasting ability is Charisma (spell save DC 21). He can innately cast the following spells, requiring no material components:\n\n* At will: <i>alter self, animate dead, bestow curse, confusion, major image, modify memory, nondetection, sending, suggestion</i>\n\n* 3/day each: <i>greater invisibility </i>(self only)<i>, mislead</i>\n\n* 1/day each: <i>feeblemind, symbol </i>(discord or sleep only)"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "text": "If Titivilus fails a saving throw, he can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "Titivilus has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "Titivilus's weapon attacks are magical."
+    },
+    {
+      "name": "Regeneration",
+      "text": "Titivilus regains 10 hit points at the start of his turn. If he takes cold or radiant damage, this trait doesn't function at the start of his next turn. Titivilus dies only if he starts his turn with 0 hit points and doesn't regenerate. Ventriloquism. Whenever Titivilus speaks, he can choose a point within 60 feet; his voice emanates from that point."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

@@ -1,0 +1,90 @@
+{
+  "name": "Wrath Dragon",
+  "size": "Huge",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "huge",
+      "dragon",
+      "cr19",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "any good alignment",
+  "ac": 19,
+  "hp": {
+    "average": 356,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 23,
+    "dex": 12,
+    "con": 21,
+    "int": 18,
+    "wis": 21,
+    "cha": 17
+  },
+  "skills": {
+    "Insight": 11,
+    "Persuasion": 9,
+    "Perception": 17,
+    "Religion": 10,
+    "Stealth": 7
+  },
+  "languages": [
+    "Celestial",
+    "Common",
+    "Draconic",
+    "Giant",
+    "Terran"
+  ],
+  "challenge": {
+    "cr": "19",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Divine Aura",
+      "text": "Each time an aberration, fiend, or undead attempts\nto make a melee or ranged attack against the wrath dragon from\nwithin 10 feet of the dragon, the creature must succeed on a\nDC 19 Wisdom saving throw or be forced to target another\ncreature within range or lose the action. Once a creature\nsucceeds on this saving throw, it is immune to it for 24\nhours."
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "text": "If the dragon fails a\nsaving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The wrath dragon is a 15th level spellcaster. Its spellcasting ability is Wisdom (spell save DC 19, +11 to hit with spell attacks). It has the following cleric spells prepared:\n\n* Cantrips (at will): <i>guidance, mending, resistance, sacred flame, thaumaturgy</i>\n\n* 1st level (4 slots): <i>bane, bless, cure wounds, detect magic, guiding bolt</i>\n\n* 2nd level (3 slots): <i>aid, find traps, hold person, lesser restoration, silence, spiritual weapon</i>\n\n* 3rd level (3 slots): <i>beacon of hope, dispel magic, revivify</i>\n\n* 4th level (3 slots): <i>banishment, death ward, freedom of movement, guardian of faith</i>\n\n* 5th level (2 slots): <i>commune, dispel evil and good, greater restoration, mass cure wound, raise dead</i>\n\n* 6th level (1 slot): <i>heal</i>\n\n* 7th level (1 slot): <i>divine word</i>\n\n* 8th level (1 slot): <i>holy aura</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The wrath dragon makes three attacks: one\nwith its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +12 to hit, reach 10 ft., one\ntarget. Hit: 17 (2d10 + 6) piercing damage plus 9 (2d8) radiant damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +12 to hit, reach 5 ft., one\ntarget. Hit: 13 (2d6 + 6) slashing damage plus 9 (2d8) radiant damage."
+    },
+    {
+      "name": "Tail",
+      "type": "special",
+      "text": "Melee Weapon Attack: +12 to hit, reach 15 ft., one target. Hit:\n15 (2d8 + 6) bludgeoning damage plus 9 (2d8) radiant damage.\nDivine Breath (Recharge 5–6). The wrath dragon releases a blast of\ndivine fire in a 60-foot cone. Creatures within the area must make a DC 19\nDexterity saving throw, taking 28 (8d6) fire damage and 28 (8d6) radiant\ndamage on a failed saving throw, or half as much damage on a successful\nsaving throw."
+    },
+    {
+      "name": "Beckon Deva (1/day)",
+      "type": "special",
+      "text": "The wrath dragon summons a deva from the deity\nthat it serve. The summoned deva appears in an unoccupied space within 60\nfeet of the wrath dragon. It remains for 1 minute, until it or the wrath dragon\nis slain, or until the wrath dragon takes an action to dismiss it."
+    }
+  ],
+  "source": "creature"
+}

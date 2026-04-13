@@ -1,0 +1,59 @@
+{
+  "name": "Huecuva",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 14,
+  "hp": {
+    "average": 39,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 16,
+    "con": 14,
+    "int": 4,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 5
+  },
+  "languages": [
+    "the languages it knew in life"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Shroud of Deception",
+      "text": "During daylight hours only, a huecuva is\ntransformed and looks, feels, and sounds like the living creature it once\nwas. A creature that interacts with the huecuva must succeed on a DC 14\nIntelligence (Investigation) check to realize the appearance of the huecuva\nis an illusion. Creatures with the Keen Smell trait automatically pass the\ncheck versus the illusion as the scent of the huecuva remains that of the\ngrave."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The huecuva makes two attacks with its claws."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10\n(2d6 + 3) slashing damage. If the target is a creature, it must succeed on a\nDC 12 Constitution saving throw against disease or become poisoned until\nthe disease is cured. Every 24 hours that elapse, the poisoned target must\nrepeat the saving throw, reducing its hit point maximum by 5 (1d10) on\na failure. The disease is cured on a success. The target dies if the disease\nreduces its hit point maximum to 0. This reduction to the target’s hit point\nmaximum lasts until the disease is cured."
+    }
+  ],
+  "source": "creature"
+}

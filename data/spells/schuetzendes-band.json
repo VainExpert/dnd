@@ -1,0 +1,17 @@
+{
+  "id": "schuetzendes-band",
+  "name": "Schützendes Band",
+  "level": 2,
+  "school": "Bannmagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G, M (ein Paar Platinringe, im Wert von je 50 GM)",
+  "duration": "1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Kleriker",
+    "Paladin"
+  ],
+  "text": "Der Zauber schützt eine willige Kreatur, die du berührst und einen der Platinringe trägt, und erschafft eine magische Bindung zwischen dir und dem Ziel, solange sich das Ziel in max. 18 m Abstand zu dir befindet.\nDas Ziel bekommt +1 auf RK und Rettungswürfe und ist resistent gegen alle Schadenstypen. Allerdings erleidest du immer die gleiche Menge Schaden, wie dem Ziel zugefügt wird.\nDer Zauber endet, falls deine TP auf 0 sinken oder du und das Ziel mehr als 18 m voneinander entfernt seid. Der Zauber endet auch wenn er erneut auf einen der Beteiligten gewirkt wird oder als Aktion aufgehoben wurde."
+}

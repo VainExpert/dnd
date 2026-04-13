@@ -1,0 +1,55 @@
+{
+  "name": "eins",
+  "size": "Winzig",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "tiny",
+      "beast",
+      "cr0",
+      "monster-manual"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 12,
+  "hp": {
+    "average": 1,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 2,
+    "dex": 15,
+    "con": 8,
+    "int": 2,
+    "wis": 12,
+    "cha": 4
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Echolokation",
+      "text": "Die Fledermaus kann ihr Blindsicht nicht nutzen, solange sie betäubt ist."
+    },
+    {
+      "name": "Scharfes Gehör",
+      "text": "Die Fledermaus hat einen Vorteil bei Weisheitsproben (Wahrnehmung), die auf das Gehör beruhen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +0 zum Treffer, Reichweite5 ft: , eine Kreatur. Treffer: 1 Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

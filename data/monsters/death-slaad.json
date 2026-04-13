@@ -1,0 +1,90 @@
+{
+  "name": "Death Slaad",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr10",
+      "monster-manual",
+      "shapechanger"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 18,
+  "hp": {
+    "average": 170,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 15,
+    "con": 19,
+    "int": 15,
+    "wis": 10,
+    "cha": 16
+  },
+  "skills": {
+    "Arcana": 6,
+    "Perception": 8
+  },
+  "languages": [
+    "Slaad",
+    "telepathy 60 ft."
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Shapechanger",
+      "text": "The slaad can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The slaad's innate spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). The slaad can innately cast the following spells, requiring no material components:\n\n* At will: <i>detect magic, detect thoughts, invisibility </i>(self only)<i>, mage hand, major image</i>\n\n* 2/day each: <i>fear, fireball, fly, tongues</i>\n\n* 1/day each: <i>cloudkill, plane shift</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The slaad has advantage on saving throws against spells and other magical effects"
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The slaad's weapon attacks are magical."
+    },
+    {
+      "name": "Regeneration",
+      "text": "The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
+    },
+    {
+      "name": "Variant: Control Gem",
+      "text": "Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being charmed while so controlled.\n\nCertain spells can be used to acquire the gem. If the slaad fails its saving throw against imprisonment, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A wish spell, if cast in the slaad's presence, can be worded to acquire the gem.\n\nA greater restoration spell cast on the slaad destroys the gem without harming the slaad.\n\nSomeone who is proficient in Wisdom (Medicine) can remove the gem from an incapacitated slaad. Each try requires 1 minute of uninterrupted work and a successful DC 20 Wisdom (Medicine) check. Each failed attempt deals 22 (4d10) psychic damage to the slaad."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The slaad makes three attacks: one with its bite and two with its claws or greatsword."
+    },
+    {
+      "name": "Bite (Slaad Form Only)",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage plus 7 (2d6) necrotic damage."
+    },
+    {
+      "name": "Claws (Slaad Form Only)",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) slashing damage plus 7 (2d6) necrotic damage."
+    },
+    {
+      "name": "Greatsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 7 (2d6) necrotic damage."
+    }
+  ],
+  "source": "creature"
+}

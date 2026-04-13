@@ -1,0 +1,80 @@
+{
+  "name": "Warrior Prince/Princess",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr7",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 18,
+  "hp": {
+    "average": 104,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 18,
+    "con": 14,
+    "int": 15,
+    "wis": 14,
+    "cha": 14
+  },
+  "skills": {
+    "Athletics": 10,
+    "Acrobatics": 7,
+    "Perception": 5,
+    "Persuasion": 5
+  },
+  "languages": [
+    "any two languages"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Enchanted Armaments",
+      "text": "The princess's weapons and\nshield are magical."
+    },
+    {
+      "name": "Supernatural Athletics",
+      "text": "The princess's long jump is 30\nfeet and her jump height is 15 feet, with or without a\nrunning start. If the princess leaps at least 20 feet in a\nstraight line towards a target and hits it with a shield\nbash attack on the same turn, that target must succeed\non a DC 15 Constitution saving throw or become\nstunned until the start of its next turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The princess makes three attacks: two with\nher longsword and one with her shield bash or three\nwith her javelins."
+    },
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft.,\none target. Hit: 8 (1d8 + 4) slashing damage plus 7\n(2d6) poison damage, or 9 (1d10 +4) slashing damage\nplus 7 (2d6) poison damage if used with two hands."
+    },
+    {
+      "name": "Shield Bash",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5\nft., one target. Hit: 6 (1d4 + 4) bludgeoning damage\nand the target must succeed on a DC 15 Strength\nsaving throw or be pushed 10 feet away from the\nprincess and knocked prone."
+    },
+    {
+      "name": "Javelin",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +7 to hit,\nreach 5 ft. or range 30/120 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 7 (2d6) poison damage."
+    },
+    {
+      "name": "Shield Toss (Recharge 5-6)",
+      "type": "special",
+      "text": "The princess launches her\nshield with expert precision and force towards a target\nshe can see within 30 feet. The shield then leaps to up\nto three other targets, each of which must be within\n30 feet of the first target. A target can be a creature or\nan object and can only be struck by the shield one\ntime. Each creature targeted by this ability must\nsucceed on a DC 15 Dexterity saving throw or take 22\n(4d10) bludgeoning damage. At the end of the toss,\nthe shield returns to the princess and she immediately\nreadies it for combat."
+    }
+  ],
+  "source": "creature"
+}

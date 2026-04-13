@@ -1,0 +1,544 @@
+{
+  "character": {
+    "identity": {
+      "name": "Ludwig Mooshart",
+      "player_name": "Moritz",
+      "class": {
+        "name": "Barde",
+        "level": 3,
+        "subclass": "Schule des Wissens"
+      },
+      "race": "Halbling",
+      "background": "Entertainer",
+      "alignment": "neutral",
+      "deity": null,
+      "gender": "männlich",
+      "age_years": 27,
+      "size": "Klein",
+      "height": 0.95,
+      "weight": 21,
+      "appearance": {
+        "img": "../../assets/icons/pcs/LudwigMooshart-Avatar.png",
+        "skin": "gebräunt",
+        "eyes": "grün",
+        "hair": "braune Locken"
+      },
+      "organizations": [
+        "Abenteuertruppe mit Astyax und Abraxas"
+      ]
+    },
+    "ability_scores": {
+      "STR": {
+        "score": 10,
+        "mod": 0,
+        "save": 0
+      },
+      "DEX": {
+        "score": 13,
+        "mod": 1,
+        "save": 3
+      },
+      "CON": {
+        "score": 14,
+        "mod": 2,
+        "save": 2
+      },
+      "INT": {
+        "score": 9,
+        "mod": -1,
+        "save": -1
+      },
+      "WIS": {
+        "score": 14,
+        "mod": 2,
+        "save": 2
+      },
+      "CHA": {
+        "score": 15,
+        "mod": 2,
+        "save": 4
+      }
+    },
+    "proficiency_bonus": 2,
+    "inspiration": false,
+    "skills": {
+      "Akrobatik": 3,
+      "Arkane Kunde": 0,
+      "Athletik": 1,
+      "Auftreten": 6,
+      "Einschüchtern": 3,
+      "Fingerfertigkeit": 3,
+      "Geschichte": 1,
+      "Heimlichkeit": 2,
+      "Medizin": 3,
+      "Mit Tieren umgehen": 3,
+      "Motiv erkennen": 6,
+      "Nachforschungen": 1,
+      "Naturkunde": 0,
+      "Religion": 0,
+      "Täuschen": 3,
+      "Überlebenskunst": 3,
+      "Überzeugen": 4,
+      "Wahrnehmung": 4
+    },
+    "passive_scores": {
+      "passive_nachforschungen": 10,
+      "passiver_einblick": 16,
+      "passive_wahrnehmung": 14
+    },
+    "combat": {
+      "armor_class": 12,
+      "initiative": 1,
+      "speeds": {
+        "walk": 9
+      },
+      "hp": {
+        "max": 23,
+        "hit_dice": "3d8"
+      },
+      "defenses": {
+        "condition_immunities": [],
+        "advantages": [
+          "Vorteil gegen Verängstigt werden oder sein (Tapfer)"
+        ],
+        "immunities": [],
+        "resistances": []
+      },
+      "senses": {},
+      "attacks_and_cantrips": [
+        {
+          "name": "Dolch (2x)",
+          "attack_bonus": 3,
+          "damage": "1d4+1 Stich",
+          "properties": [
+            "Einfach",
+            "Finesse",
+            "Leicht",
+            "Geworfen",
+            "Reichweite 6 m / 18 m"
+          ],
+          "item_ref": {
+            "id": "dolch",
+            "name": "Dolch"
+          }
+        },
+        {
+          "name": "Kurzbogen",
+          "attack_bonus": 3,
+          "damage": "1d6+1 Stich",
+          "properties": [
+            "Einfach",
+            "2-Hände",
+            "Munition",
+            "Reichweite 24 m / 100 m"
+          ],
+          "item_ref": {
+            "id": "kurzbogen",
+            "name": "Kurzbogen"
+          }
+        },
+        {
+          "name": "Bombe (4x)",
+          "attack_bonus": null,
+          "damage": "3d6 Feuer",
+          "properties": [
+            "Geworfen",
+            "Reichweite 6 m / 18 m",
+            "1,5 m Radius",
+            "DEX-Rettungswurf SG 12"
+          ],
+          "item_ref": {
+            "id": "bombe",
+            "name": "Bombe"
+          }
+        },
+        {
+          "name": "Unbewaffneter Schlag",
+          "attack_bonus": 2,
+          "damage": "1 Wucht"
+        },
+        {
+          "name": "Gehässiger Spott",
+          "attack_bonus": null,
+          "damage": "1d6 Psychisch",
+          "properties": [
+            "18 m",
+            "V/G",
+            "WIS-Rettungswurf",
+            "weitere Effekte"
+          ],
+          "spell_ref": {
+            "id": "gehaessiger-spott",
+            "name": "Gehässiger Spott"
+          }
+        }
+      ],
+      "actions": {
+        "standard": [
+          "Angriff",
+          "Ausweichen",
+          "Beeinflussen",
+          "Interagieren",
+          "Flucht",
+          "Helfen",
+          "Magie",
+          "Packen",
+          "Sprint",
+          "Stoßen",
+          "Studieren",
+          "Verstecken",
+          "Verwenden",
+          "Vorbereiten",
+          "2-Waffen Kampf"
+        ],
+        "bonus_actions": [
+          "Bardische Inspiration (2 pro Lange Rast)"
+        ],
+        "reactions": [
+          "Gelegenheitsangriff",
+          "Schneidende Worte (verbraucht Bardische Inspiration)"
+        ]
+      }
+    },
+    "proficiencies": {
+      "armor": [
+        "Leichte Rüstung"
+      ],
+      "weapons": [
+        "Einfache Waffen"
+      ],
+      "tools": [
+        "Verkleidungsausrüstung",
+        "Geige",
+        "Handtrommel",
+        "Trompete"
+      ],
+      "languages": [
+        "Gemeinsprache",
+        "Gemeinzeichensprache",
+        "Halblingssprache"
+      ]
+    },
+    "spellcasting": {
+      "spellcasting_class": "Barde",
+      "spellcasting_ability": "CHA",
+      "spellcasting_ability_mod": 2,
+      "spell_save_dc": 12,
+      "spell_attack_bonus": 4,
+      "spell_slots": {
+        "level_1": {
+          "max": 4
+        },
+        "level_2": {
+          "max": 2
+        }
+      },
+      "cantrips": [
+        {
+          "id": "gehaessiger-spott",
+          "name": "Gehässiger Spott"
+        },
+        {
+          "id": "zielsicherer-schlag",
+          "name": "Zielsicherer Schlag"
+        }
+      ],
+      "level_1_spells_listed": [
+        {
+          "id": "donnerwoge",
+          "name": "Donnerwoge"
+        },
+        {
+          "id": "person-bezaubern",
+          "name": "Person bezaubern"
+        },
+        {
+          "id": "tashas-fuerchterlicher-lachanfall",
+          "name": "Tashas Fürchterlicher Lachanfall"
+        }
+      ],
+      "level_2_spells_listed": [
+        {
+          "id": "einfluesterung",
+          "name": "Einflüsterung"
+        },
+        {
+          "id": "feuerwerk",
+          "name": "Feuerwerk"
+        },
+        {
+          "id": "gedanken-wahrnehmen",
+          "name": "Gedanken wahrnehmen"
+        }
+      ],
+      "always_prepared": [],
+      "special_sources": []
+    },
+    "features": {
+      "class": [
+        {
+          "name": "Zauberwirken",
+          "description": "Du bekommst alle Zauberplätze nach einer Langen Rast zurück. Nach jeder Langen Rast kannst du deine Zauber austauschen, außer deine Zaubertricks. Zaubertricks kannst du immer bei Levelaufstieg austauschen."
+        },
+        {
+          "name": "Bardische Inspiration",
+          "uses": "2",
+          "recovery": {
+            "long_rest": true
+          },
+          "activation": "Bonusaktion",
+          "range": 18,
+          "duration": "1 Stunde",
+          "die": "1d6",
+          "description": "Eine Kreatur deiner Wahl in Reichweite, die du sehen kannst, erhält einen Bardische-Inspiration-Würfel. Einmalig kann sie bei einem W20-Wurf den Würfel hinzufügen."
+        },
+        {
+          "name": "Expertise",
+          "description": "Du bist Experte in Auftreten und Motiv erkennen. Dein Übungsbonus wird für diese Fertigkeiten verdoppelt."
+        },
+        {
+          "name": "Alleskönner",
+          "description": "Du bekommst die Hälfte deines Übungsbonus auf alle Fertigkeitswürfe, bei denen du sonst nicht geübt bist."
+        }
+      ],
+      "subclass": [
+        {
+          "name": "Schneidende Worte",
+          "activation": "Reaktion",
+          "range": 18,
+          "cost": "1 Bardische Inspiration",
+          "description": "Wenn eine Kreatur in Reichweite, die du sehen kannst, einen Schadenswurf macht oder bei einem Angriffs- oder Fähigkeitenwurf erfolgreich ist, wirfst du 1d6 und ziehst das Ergebnis vom Wurf der Kreatur ab.",
+          "always_prepared_spells": []
+        }
+      ],
+      "racial": [
+        {
+          "name": "Tapfer",
+          "description": "Vorteil gegen Verängstigt werden oder sein."
+        },
+        {
+          "name": "Halblingsgewandheit",
+          "description": "Du kannst dich durch den Bereich jeder anderen Kreatur bewegen, die mindestens eine Größenklasse größer ist als du (du kannst dort aber nicht anhalten)."
+        },
+        {
+          "name": "Glück",
+          "description": "Wenn du mit einem W20 eine 1 würfelst, kannst du den Würfel erneut werfen und musst das neue Ergebnis nehmen."
+        },
+        {
+          "name": "Angeborene Verstohlenheit",
+          "description": "Du kannst die Verstecken-Aktion auch verwenden, wenn du nur hinter einer Kreatur bist, die mindestens eine Größenklasse größer ist als du."
+        }
+      ],
+      "background": [
+        {
+          "name": "Routinen",
+          "description": "Du kannst mit folgenden Routinen besonders gut auftreten: Instrumentalist, Geschichtenerzähler, Narr."
+        },
+        {
+          "name": "Auf vielfachen Wunsch",
+          "description": "Du findest immer einen Platz für einen Auftritt (Taverne, Herberge, Zirkus, ...). Dort bekommst du freie Übernachtungen und Essen, solange du jeden Abend dort auftrittst. Die Auftritte machen dich in der Umgebung bekannt, sodass du auf der Straße erkannt werden kannst."
+        }
+      ]
+    },
+    "equipment": {
+      "currency": {
+        "cp": 0,
+        "sp": 0,
+        "gp": 49,
+        "pp": 0
+      },
+      "weights": {
+        "carried": 41.75,
+        "encumbered_at": 75,
+        "push_drag_lift": 150
+      },
+      "items": [
+        {
+          "name": "Kurzbogen",
+          "quantity": 1,
+          "weight": 1,
+          "item_ref": {
+            "id": "kurzbogen",
+            "name": "Kurzbogen"
+          }
+        },
+        {
+          "name": "Köcher",
+          "quantity": 1,
+          "weight": 0.5,
+          "item_ref": {
+            "id": "koecher",
+            "name": "Köcher"
+          }
+        },
+        {
+          "name": "Pfeile",
+          "quantity": 15,
+          "weight": 0.5,
+          "item_ref": {
+            "id": "pfeile",
+            "name": "Pfeile"
+          }
+        },
+        {
+          "name": "Lederrüstung (Leicht, RK = 11 + DEX-Modifikator)",
+          "quantity": 1,
+          "weight": 5,
+          "item_ref": {
+            "id": "lederruestung",
+            "name": "Lederrüstung"
+          }
+        },
+        {
+          "name": "Dolch",
+          "quantity": 2,
+          "weight": 1,
+          "item_ref": {
+            "id": "dolch",
+            "name": "Dolch"
+          }
+        },
+        {
+          "name": "Bombe",
+          "quantity": 4,
+          "weight": 2.5,
+          "item_ref": {
+            "id": "bombe",
+            "name": "Bombe"
+          }
+        },
+        {
+          "name": "Einfache Kleidung",
+          "quantity": 1,
+          "weight": 1.5
+        },
+        {
+          "name": "Geige (Bardischer Fokus)",
+          "quantity": 1,
+          "weight": 2.5
+        },
+        {
+          "name": "Diebeswerkzeug",
+          "quantity": 1,
+          "weight": 0.5,
+          "item_ref": {
+            "id": "diebeswerkzeug",
+            "name": "Diebeswerkzeug"
+          }
+        },
+        {
+          "name": "Zunderkästchen",
+          "quantity": 2,
+          "weight": 0.5,
+          "item_ref": {
+            "id": "zunderkaestchen",
+            "name": "Zunderkästchen"
+          }
+        },
+        {
+          "name": "Rucksack",
+          "quantity": 1,
+          "weight": 2.5,
+          "contents_listed": [
+            {
+              "name": "Öl",
+              "quantity": 8,
+              "weight": 4,
+              "item_ref": {
+                "id": "oel",
+                "name": "Öl"
+              }
+            },
+            {
+              "name": "Glocke",
+              "quantity": 1,
+              "weight": null,
+              "item_ref": {
+                "id": "glocke",
+                "name": "Glocke"
+              }
+            },
+            {
+              "name": "Spiegel",
+              "quantity": 1,
+              "weight": 0.25,
+              "item_ref": {
+                "id": "spiegel",
+                "name": "Spiegel"
+              }
+            },
+            {
+              "name": "Kostüm",
+              "quantity": 3,
+              "weight": 6,
+              "item_ref": {
+                "id": "kostuem",
+                "name": "Kostüm"
+              }
+            },
+            {
+              "name": "Bullaugen-Laterne",
+              "quantity": 1,
+              "weight": 1,
+              "item_ref": {
+                "id": "bullaugen-laterne",
+                "name": "Bullaugen-Laterne"
+              }
+            },
+            {
+              "name": "Schlafsack",
+              "quantity": 1,
+              "weight": 3.5,
+              "item_ref": {
+                "id": "schlafsack",
+                "name": "Schlafsack"
+              }
+            },
+            {
+              "name": "Nachtblauer Umhang",
+              "quantity": 1,
+              "weight": 1.5
+            },
+            {
+              "name": "Juwelen",
+              "quantity": 10,
+              "weight": 1
+            },
+            {
+              "name": "Ohrring aus Kupferdrähten",
+              "quantity": 1,
+              "weight": null
+            },
+            {
+              "name": "Perlen-Ohrring",
+              "quantity": 1,
+              "weight": null
+            }
+          ],
+          "item_ref": {
+            "id": "rucksack",
+            "name": "Rucksack"
+          }
+        }
+      ],
+      "attuned_magic_items_listed": []
+    },
+    "personality": {
+      "traits": [
+        "Du klingst eigentlich immer gut gelaunt.",
+        "Es ist dir wichtig, dass um dich herum gute Laune herrscht."
+      ],
+      "ideals": [],
+      "motivation": [
+        "Alles Geld, was du mit Auftritten oder Aufträgen als Söldner verdienst, schickst du deiner Tochter."
+      ],
+      "flaws": [
+        "Du kannst deine Meinung nicht für dich behalten, auch wenn dich das in Schwierigkeiten bringt."
+      ]
+    },
+    "backstory": {
+      "summary": "Du ziehst als Sänger durch die Welt. Dein Kind lebt mit ihrer Mutter in der Hauptstadt, weil sie zu klein ist, um dich auf deinen Reisen zu begleiten."
+    }
+  },
+  "id": "ludwigmooshart"
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Jaculus",
+  "size": "Small",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "small",
+      "dragon",
+      "cr3",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 18,
+  "hp": {
+    "average": 65,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20,
+    "fly": 10
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 18,
+    "con": 17,
+    "int": 13,
+    "wis": 13,
+    "cha": 13
+  },
+  "skills": {
+    "Acrobatics": 6,
+    "Perception": 3,
+    "Stealth": 6
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Spearhead",
+      "text": "If the jaculus moves at least 10 feet straight toward a target and hits that target with a jaws attack on the same turn, the jaws attack does an extra 4 (1d8) piercing damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The jaculus makes one jaws attack and one claws attack."
+    },
+    {
+      "name": "Jaws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 2) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 2) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

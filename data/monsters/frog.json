@@ -1,0 +1,52 @@
+{
+  "name": "Frog",
+  "size": "Tiny",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "tiny",
+      "beast",
+      "cr0",
+      "monster-manual"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 11,
+  "hp": {
+    "average": 1,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 20
+  },
+  "abilities": {
+    "str": 1,
+    "dex": 13,
+    "con": 8,
+    "int": 1,
+    "wis": 8,
+    "cha": 3
+  },
+  "skills": {
+    "Perception": 1,
+    "Stealth": 3
+  },
+  "languages": [],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The frog can breathe air and water"
+    },
+    {
+      "name": "Standing Leap",
+      "text": "The frog's long jump is up to 10 ft. and its high jump is up to 5 ft., with or without a running start."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

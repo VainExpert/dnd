@@ -1,0 +1,60 @@
+{
+  "name": "Brownie",
+  "size": "Tiny",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "tiny",
+      "fey",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "lawful good",
+  "ac": 15,
+  "hp": {
+    "average": 7,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 7,
+    "dex": 18,
+    "con": 12,
+    "int": 14,
+    "wis": 14,
+    "cha": 16
+  },
+  "skills": {
+    "Deception": 5,
+    "Stealth": 6
+  },
+  "languages": [
+    "Common",
+    "Halfling",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The brownie has advantage on saving throws against\nspells and other magical effects."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The brownie’s innate spellcasting ability is\nCharisma (spell save DC 13, +5 to hit with spell attacks). It can\ninnately cast the following spells, without using any spell\ncomponents:\n\n* At will: <i>druidcraft, minor illusion, prestidigitation, thaumaturgy</i>\n\n* 3/day each: <i>color spray, dancing lights, hideous laughter, silent image</i>\n\n* 1/day each: <i>dimension door</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit,\nreach 5 ft., one target. Hit: 7 (1d6 + 4) piercing\ndamage."
+    }
+  ],
+  "source": "creature"
+}

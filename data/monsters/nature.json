@@ -1,0 +1,67 @@
+{
+  "name": "Nature",
+  "size": "Large",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr10",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 20,
+  "hp": {
+    "average": 190,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 11,
+    "con": 18,
+    "int": 15,
+    "wis": 18,
+    "cha": 20
+  },
+  "skills": {},
+  "languages": [
+    "all those of the creature who summoned it"
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "The Law of Nature",
+      "text": "Allies within 20 feet have\nadvantage on all saving throws."
+    },
+    {
+      "name": "Inexorable",
+      "text": "The Inexorables are immune to any\neffects that would slow them or deny them\nactions or movement."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "Nature’s innate spellcasting\nability is Charisma (spell save DC 17). It can\ninnately cast the following spells, requiring no\nmaterial components:\n\n* 3/day: <i>banishment, counterspell</i>"
+    },
+    {
+      "name": "By Will Alone",
+      "text": "As a reaction to missing an attack,\nNature makes a DC 15 Wisdom saving throw. On\na successful save, the original attack is successful."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Nature makes two slam attacks or\nmakes one slam attack and casts banishment."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 10 ft.,\none target. Hit: 12 (2d6 + 5) bludgeoning damage\nplus 18 (4d8) force damage."
+    }
+  ],
+  "source": "creature"
+}

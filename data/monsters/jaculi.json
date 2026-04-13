@@ -1,0 +1,64 @@
+{
+  "name": "Jaculi",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "Large",
+      "beast",
+      "cr1/2",
+      "tomb-of-annihilation"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 16,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 14,
+    "con": 11,
+    "int": 2,
+    "wis": 8,
+    "cha": 3
+  },
+  "skills": {
+    "Athleitcs": 4,
+    "Perception": 1,
+    "Stealth": 4
+  },
+  "languages": [],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Camouflage",
+      "text": "The jaculi has advantage on Dexterity (Stealth) checks made to hide."
+    },
+    {
+      "name": "Keen Smell",
+      "text": "The jaculi has advantage on Wisdom (Perception) checks that rely on smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 +2) piercing damage."
+    },
+    {
+      "name": "Spring",
+      "type": "special",
+      "text": "The jaculi springs up to 30 feet in a straight line and makes a bite attack against a target within its reach. This attack has advantage if the jaculi springs at least 10 feet. If the attack hits, the bite deals an extra 7 (2d6) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

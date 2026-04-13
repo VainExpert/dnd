@@ -1,0 +1,45 @@
+{
+  "name": "Urgala Meltimer",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr0",
+      "storm-kings-thunder",
+      "turami human"
+    ]
+  },
+  "alignment": "lawful good",
+  "ac": 12,
+  "hp": {
+    "average": 58,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 13,
+    "con": 14,
+    "int": 12,
+    "wis": 14,
+    "cha": 13
+  },
+  "skills": {
+    "Athletics": 5,
+    "Intimidation": 3
+  },
+  "languages": [
+    "Common",
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [],
+  "source": "creature"
+}

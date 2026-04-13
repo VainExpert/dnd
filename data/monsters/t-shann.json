@@ -1,0 +1,62 @@
+{
+  "name": "T'shann",
+  "size": "Small",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "small",
+      "aberration",
+      "cr1",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 8,
+  "hp": {
+    "average": 32,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 10
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 4,
+    "con": 16,
+    "int": 2,
+    "wis": 10,
+    "cha": 12
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Acidic Secretions",
+      "text": "A creature who touches the t’shann takes 5 (2d4)\nacid damage. Any nonmagical weapon made of metal or wood that hits\nthe t’shann corrodes. After dealing damage, the weapon takes a permanent\nand cumulative –1 penalty to damage rolls. If its penalty drops to –5, the\nweapon is destroyed. Nonmagical ammunition made of metal or wood\nthat hits the t’shann is destroyed after dealing damage.\nIn addition, nonmagical armor worn by the target of any of the t’shann’s\nattacks is partly dissolved and takes a permanent and cumulative –1\npenalty to the AC it offers. The armor is destroyed if the penalty reduces\nits AC to 10."
+    },
+    {
+      "name": "Alien Thoughts",
+      "text": "When a creature enters or starts its turn within 30 feet\nof the t’shann, the creature must make a DC 13 Wisdom saving throw,\nunless the t’shann is incapacitated. On a failed saving throw, the creature\ncan’t take reactions until the start of its next turn and rolls a d8 to determine\nwhat it does during that turn. On a 1–4, the creature does nothing. On a 5\nor 6, the creature takes no action but uses all its movement to move in a\nrandom direction. On a 7 or 8, the creature makes one melee attack against\na random creature, or it does nothing if no creature is within reach."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2\n(1d4) bludgeoning damage plus 5 (2d4) acid damage."
+    },
+    {
+      "name": "Spew Acid",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +2 to hit, range 10 ft., one target.\nHit: 5 (2d4) acid damage."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,82 @@
+{
+  "name": "Archon der Erlösung",
+  "size": "Groß",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "large",
+      "celestial",
+      "cr10",
+      "homebrew"
+    ]
+  },
+  "alignment": "gesetztreu-neutral",
+  "ac": 17,
+  "hp": {
+    "average": 136,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 90
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 18,
+    "con": 18,
+    "int": 17,
+    "wis": 20,
+    "cha": 20
+  },
+  "skills": {
+    "Insight": 9,
+    "Perception": 9
+  },
+  "languages": [
+    "all",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Engelswaffen",
+      "text": "Die Waffenangriffe des Archons sind magischer Natur. Wenn der\nArchon mit einer beliebigen Waffe trifft, verursacht die Waffe zusätzlichen\n3d8Strahlungsschaden (im Angriff enthalten)."
+    },
+    {
+      "name": "Axiomatischer Verstand",
+      "text": "Der Archon kann nicht dazu gezwungen werden, in einer Weise zu handeln,\ndie seiner Natur oder seinem Gerechtigkeitssinn widerspricht."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Archons ist Charisma\n(ZauberrettungswurfDC 17). Der Archon kann die folgenden Zauber von Natur aus wirken,\nwobei lediglich verbale Komponenten erforderlich sind:\n\n* Beliebig oft: E Böses und Gutes erkennenE \n\n* Je 1/Tag: E Zerstörerische Welle, GeasE"
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Archon hat einen Vorteil bei Rettungswürfen gegen\nZauber und andere magische Effekte."
+    },
+    {
+      "name": "Ein Wesen",
+      "text": "Obwohl er wie ein humanoides Wesen auf einem Reittier erscheint,\nist ein Archon ein einziges Wesen. Der „Reiter“ kann nicht abgesetzt werden, und es gibt keine\nandere Möglichkeit, die beiden Teile des Archons voneinander zu trennen,\naußer durch seinen Tod."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Archon führt zwei Angriffe aus: einen mit seinem Schwert und\neinen mit seinen Klauen."
+    },
+    {
+      "name": "Schwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 8\n(1d8 + 4) Schnittschaden plus 13 (3d8) Strahlungsschaden."
+    },
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 11\n(2d6 + 4) Durchdringungsschaden plus 13 (3d8) Strahlungsschaden."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,80 @@
+{
+  "name": "Lizardfolk Voice of the Depths",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "out-of-the-box-5e",
+      "lizardfolk"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 13,
+  "hp": {
+    "average": 27,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 40
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 10,
+    "con": 13,
+    "int": 10,
+    "wis": 15,
+    "cha": 8
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 4,
+    "Survival": 6
+  },
+  "languages": [
+    "Abyssal",
+    "Draconic",
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Hold Breath",
+      "text": "The lizardfolk can hold its breath for\n15 minutes."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The lizardfolk makes two attacks: one\nwith its bite and one with its claws."
+    },
+    {
+      "name": "Blackjaw Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit,\nreach 5 ft., one target. Hit: 5 (1d6 +2) piercing\ndamage and 2 (1d4) fire damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft.,\none target. Hit: 4 (1d4 + 2) slashing damage."
+    },
+    {
+      "name": "Drowned One’s Curse (1/Day)",
+      "type": "special",
+      "text": "The lizardfolk targets\none creature it can see within 30 ft. and calls\nupon the Drowned One to reach out from its watery\ndomain. The target must make a DC 13 Constitution\nsaving throw or begin suffocating as their lungs fill\nwith water. It must repeat the saving throw at the\nend of its next turn. On a success, the effect ends.\nOn a failure, the creature drops to 0 hit points and\nis dying, and it can’t regain hit points or be stabilized\nuntil it can breathe again. The curse has no\neffect on undead, constructs, or creatures that can\nbreathe underwater.with its bite and one with its claws or trident or\ntwo melee attacks with its trident."
+    },
+    {
+      "name": "Song of the Depths",
+      "type": "special",
+      "text": "When two or more lizardfolk voices of the depths\nare within 30 feet of one another they can work\ntogether and sing a hymn to the Drowned One,\ncalling on its power to cast <i>entangle</i>. The DC is\n12 + the number of lizardfolk voices of the depths\ncasting the spell, and concentration is shared by all\nlizardfolk who contribute to the casting."
+    }
+  ],
+  "source": "creature"
+}

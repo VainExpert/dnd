@@ -1,0 +1,78 @@
+{
+  "name": "Giant Hamster",
+  "size": "Huge",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "huge",
+      "monstrosity",
+      "cr15",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 16,
+  "hp": {
+    "average": 189,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 20
+  },
+  "abilities": {
+    "str": 22,
+    "dex": 12,
+    "con": 19,
+    "int": 11,
+    "wis": 14,
+    "cha": 8
+  },
+  "skills": {
+    "Survival": 7
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "15",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The giant hamster has advantage on saving\nthrows against spells and other magical effects."
+    },
+    {
+      "name": "Radioactive Aura",
+      "text": "Creatures who enter or begin their turn within 10\nfeet of the giant hamster take 7 (2d6) necrotic damage and must make a\nsuccessful DC 15 Constitution saving throw or be poisoned for 1 minute.\nA poisoned creature can repeat the saving throw at the end of each of its\nturns, ending the effect on a success. If the saving throw is successful, or\nthe effect ends for it, the creature is immune to being poisoned by the giant\nhamster’s aura for 24 hours, but not to further necrotic damage.\nSiege Monster. The giant hamster deals double damage to objects and\nstructures."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The giant hamster makes one bite attack and two claw\nattacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 15\n(2d8 + 6) piercing damage and the target is grappled (escape DC 17).\n\nUntil this grapple ends, the target is restrained and the hamster can’t bite\nanother target."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 16\n(3d6 + 6) slashing damage."
+    },
+    {
+      "name": "Energy Ray (Recharge 5–6)",
+      "type": "special",
+      "text": "The giant hamster fires a ray of energy\nfrom its eyes in a 60-foot line that is 5 feet wide. Creatures in the area must\nsucceed on a DC 15 Constitution saving throw or take 54 (12d8) necrotic\ndamage and be sickened for 1 minute. While sickened, a creature reduces\nits maximum hit points by 5 at the start of each of its turns. Magic such as\nlesser restoration can cure the sickened effect early."
+    },
+    {
+      "name": "Swallow",
+      "type": "special",
+      "text": "One grappled creature must make a DC 17 Strength saving\nthrow or it is swallowed and the grapple ends. While swallowed, the\ncreature is blinded and restrained, it has total cover against attacks and\nother effects outside the hamster, and it takes 14 (4d6) acid damage and\n14 (4d6) necrotic damage at the start of each of the hamster’s turns. If the\nhamster takes 25 damage or more on a single turn from a creature inside\nit, the hamster must succeed on a DC 25 Constitution saving throw at the\nend of that turn or regurgitate all swallowed creatures, which fall prone\nin a space within 10 feet of it. If the hamster dies, a swallowed creature is\nno longer restrained by it and can escape from the corpse using 15 feet of\nmovement, exiting prone."
+    }
+  ],
+  "source": "creature"
+}

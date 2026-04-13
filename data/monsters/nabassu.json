@@ -1,0 +1,62 @@
+{
+  "name": "Nabassu",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr15",
+      "mordenkainens-tome-of-foes",
+      "demon"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 18,
+  "hp": {
+    "average": 190,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 22,
+    "dex": 14,
+    "con": 21,
+    "int": 14,
+    "wis": 15,
+    "cha": 17
+  },
+  "skills": {
+    "Perception": 7
+  },
+  "languages": [
+    "Abyssal",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "15",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Demonic Shadows",
+      "text": "The nabassu darkens the area around its body in a 10-foot radius. Nonmagical light can't illuminate this area of dim light."
+    },
+    {
+      "name": "Devour Soul",
+      "text": "A nabassu can eat the soul of a creature it has killed within the last hour, provided that creature is neither a construct nor an undead. The devouring requires the nabassu to be within 5 feet of the corpse for at least 10 minutes, after which it gains a number of Hit Dice (d8s) equal to half the creature's number of Hit Dice. Roll those dice, and increase the nabassu's hit points by the numbers rolled. For every 4 Hit Dice the nabassu gains in this way, its attacks deal an extra 3 (1d6) damage on a hit. The nabassu retains these benefits for 6 days. A creature devoured by a nabassu can be restored to life only by a wish spell."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The nabassu has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The nabassu's weapon attacks are magical."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

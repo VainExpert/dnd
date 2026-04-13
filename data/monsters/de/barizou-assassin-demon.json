@@ -1,0 +1,83 @@
+{
+  "name": "Barizou (Dämonenmörder)",
+  "size": "Klein",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "small",
+      "fiend",
+      "cr1",
+      "tome-of-horrors",
+      "demon"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 12,
+  "hp": {
+    "average": 14,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 15,
+    "con": 10,
+    "int": 6,
+    "wis": 6,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 2,
+    "Stealth": 4
+  },
+  "languages": [
+    "Abyssal"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Chamäleon",
+      "text": "Als Bonusaktion kann ein Dämon seine Färbung anpassen, um sich\nseiner Umgebung anzupassen. Dadurch erhält der Dämon einen Vorteil bei Versteck-Proben."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Dämon hat einen Vorteil bei Rettungswürfen gegen\nZauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Waffenangriffe des Dämons sind magischer Natur."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die Zauberfertigkeit des Dämons ist Charisma (ZauberrettungswurfDC 10, +2 auf Treffer bei Zauberangriffen). Er kann die folgenden Zauber von Natur aus wirken, ohne dass materielle Komponenten erforderlich sind:\n\n* Beliebig oft: Angst, Dunkelheit, Böses und Gutes erkennen, Unsichtbares sehen"
+    },
+    {
+      "name": "Überraschungsangriff (1/Runde)",
+      "text": "Der Dämon verursacht 3 (1d6) zusätzlichen Schaden,\nwenn er ein Ziel mit einem Waffenangriff trifft und beim Angriffswurf einen Vorteil hat\noder wenn sich das Ziel in5 feetReichweite eines Verbündeten des Dämons befindet, der nicht\nhandlungsunfähig ist, und der Dämon beim Angriffswurf keinen Nachteil hat."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Dämon führt drei Angriffe aus: einen mit seinem Biss und zwei\nmit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 5 (1d6 + 2) Durchdringungsschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 4 (1d4 + 2) Schnittschaden."
+    }
+  ],
+  "source": "creature"
+}

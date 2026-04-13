@@ -1,0 +1,53 @@
+{
+  "name": "Pegasus",
+  "size": "Large",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "large",
+      "celestial",
+      "cr2",
+      "monster-manual"
+    ]
+  },
+  "alignment": "chaotic good",
+  "ac": 12,
+  "hp": {
+    "average": 59,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 90
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 15,
+    "con": 16,
+    "int": 10,
+    "wis": 15,
+    "cha": 13
+  },
+  "skills": {
+    "Perception": 6
+  },
+  "languages": [
+    "understands Celestial",
+    "Common",
+    "Elvish",
+    "and Sylvan but can't speak"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Hooves",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

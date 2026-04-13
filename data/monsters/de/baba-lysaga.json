@@ -1,0 +1,75 @@
+{
+  "name": "Vater Lysaga",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr11",
+      "curse-of-strahd"
+    ]
+  },
+  "alignment": "shapechanger)",
+  "ac": 15,
+  "hp": {
+    "average": 120,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 16,
+    "int": 20,
+    "wis": 17,
+    "cha": 13
+  },
+  "skills": {
+    "Arcana": 13,
+    "Religion": 13
+  },
+  "languages": [
+    "Abyssal",
+    "Common",
+    "Draconic",
+    "Dwarvish",
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "11",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Gestaltwandler",
+      "text": "Baba Lysaga kann eine Aktion einsetzen, um sich in einen Insektenschwarm (Fliegen) zu verwandeln oder wieder ihre wahre Gestalt anzunehmen. In ihrer Schwarmgestalt hat sie eine Bewegungsgeschwindigkeit von5 feet  und eine Fluggeschwindigkeit von 9 m. Alles, was sie trägt, verwandelt sich mit ihr, nicht jedoch Gegenstände, die sie bei sich trägt."
+    },
+    {
+      "name": "Segen der Mutter Nacht",
+      "text": "Baba Lysaga ist gegen Wahrsagungsmagie abgeschirmt, als ob er durch einen Unauffindbarkeitszauber geschützt wäre."
+    },
+    {
+      "name": "Zaubersprechen",
+      "text": "Baba Lysaga ist eine Zauberin der Stufe 16. Ihre Zauberfertigkeit ist Intelligenz (ZauberrettungswurfDC 17, +9 auf Treffer bei Zauberangriffen). Baba Lysaga hat die folgenden Zauber vorbereitet:\n\n* Cantrips (beliebig oft): Säurespritzer, Feuerblitz, Licht, Magische Hand, Taschenspielertrick\n\n* 1. Stufe (4 Plätze): Magie entdecken, Magischer Pfeil, Schlaf, Hexenpfeil\n\n* 2. Stufe (3 Plätze): Krone des Wahnsinns, Vergrößern/Verkleinern, Nebelschritt\n\n* 3. Stufe (3 Plätze): Magie bannen, Feuerball, Blitzschlag\n\n* 4. Stufe (3 Plätze): Verwüstung, Everards schwarze Tentakel, Verwandlung\n\n* 5. Stufe (2 Plätze): Wolkenkill, Geas, Hellsehen\n\n* 6. Stufe (1 Platz): Programmierte Illusion, Wahres Sehen\n\n* 7. Stufe (1 Platz): Finger des Todes, Arkane Fata Morgana\n\n* 8. Stufe (1 Platz): Machtwort: Betäuben"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Baba Lysaga führt drei Angriffe mit ihrem Langstock aus"
+    },
+    {
+      "name": "Langstock",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 7 (1d6+4) Bludgeoning-Schaden oder 8 (1d8+4) Bludgeoning-Schaden, wenn mit beiden Händen geführt."
+    },
+    {
+      "name": "Insektenschwärme herbeirufen (Erholt sich nach einer kurzen oder langen Ruhepause)",
+      "type": "special",
+      "text": "Baba Lysaga beschwört1d4Insektenschwärme. Ein beschworener Schwarm erscheint auf einem freien Feld in60 feetder Nähe von Baba Lysaga und wirkt als ihr Verbündeter. Er bleibt dort, bis er stirbt oder bis Baba Lysaga ihn als Aktion entlässt."
+    }
+  ],
+  "source": "creature"
+}

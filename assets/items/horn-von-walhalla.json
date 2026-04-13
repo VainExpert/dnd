@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-horn-von-walhalla",
+  "type": "item",
+  "name": "Horn von Walhalla",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "selten (Silber oder Messing), sehr selten (Bronze) oder legendär (Eisen)",
+  "requires_attunement": true,
+  "attunement_text": "Silber oder Messing",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Du kannst als Aktion in das Horn blasen. Daraufhin erscheinen Kriegergeister aus Walhalla im Abstand von bis zu 18 Metern von dir. Sie haben die Werte eines Berserkers. Nach einer Stunde oder wenn sie auf 0 Trefferpunkte sinken, kehren sie nach Walhalla zurück. Nachdem es verwendet wurde, kann das Horn erst nach sieben Tagen wiederverwendet werden. Es sind vier Arten des Horns von Walhalla  bekannt, die jeweils aus einem anderen Metall gefertigt sind. Die Hornart bestimmt, wie viele Berserker seinen Ruf beantworten und welche Voraussetzung zu seiner Verwendung erfüllt sein muss. Der SL wählt die Hornart aus oder bestimmt sie zufällig. Wenn du in das Horn bläst ohne die Voraussetzung zu erfüllen, greifen die beschworenen Berserker dich an. Wenn du die Voraussetzung erfüllst, sind sie dir und deinen Verbündeten gegenüber freundlich und folgen deinen Befehlen.",
+  "tags": []
+}

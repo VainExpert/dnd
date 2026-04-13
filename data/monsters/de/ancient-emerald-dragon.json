@@ -1,0 +1,79 @@
+{
+  "name": "Der uralte Smaragddrache",
+  "size": "Gigantisch",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "gargantuan",
+      "dragon",
+      "cr21",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 22,
+  "hp": {
+    "average": 252,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80,
+    "swim": 40
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 24,
+    "con": 10,
+    "int": 24,
+    "wis": 16,
+    "cha": 22
+  },
+  "skills": {
+    "Arcana": 14,
+    "Insight": 10,
+    "Perception": 10,
+    "Religion": 14
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "21",
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache\neinen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Störungsaura",
+      "text": "Feinde im Inneren30 feetmüssen\nin jeder Runde einenDC 22Intelligenz-Rettungswurf\nausführen, um Zauber aufrechtzuerhalten, die Konzentration erfordern."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache führt drei Angriffe aus: einen\nmit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +12 zum Treffen, Reichweite:4,5 m .,\nein Ziel. Treffer: 16 (2d10 + 5) Durchdringungsschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +12 zum Treffen, Reichweite:3 m .,\nein Ziel. Treffer: 12 (2d6 + 5) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +12 zum Treffen; Reichweite20 ft: .,\nein Ziel. Treffer: 14 (2d8 + 5) Bludgeoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

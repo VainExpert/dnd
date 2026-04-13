@@ -1,0 +1,87 @@
+{
+  "name": "Abyssal Harvester",
+  "size": "Gigantisch",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "gargantuan",
+      "aberration",
+      "cr20",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 17,
+  "hp": {
+    "average": 370,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 27,
+    "dex": 10,
+    "con": 16,
+    "int": 10,
+    "wis": 16,
+    "cha": 13
+  },
+  "skills": {
+    "Perception": 9
+  },
+  "languages": [
+    "Abyssal"
+  ],
+  "challenge": {
+    "cr": "20",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Weitreichend (3/Tag)",
+      "text": "Ein Abyssal-Erntearbeiter kann auf seiner Abyssal-Ebene verbleiben\nund bis zu vier seiner Tentakel durch die Dimensionen hindurch in die\nÄtherische Ebene, die Astralebene, die materiellen Ebenen oder die Neun Höllen ausstrecken.\nAlle seine Tentakel müssen in dieselbe Ebene ausgestreckt werden und erscheinen\ninnerhalb desselben 20-Fuß-Quadrats. Während er diese Fähigkeit nutzt, setzt er seine Sinnesorgane\nan seinen Tentakeln ein, um seine Umgebung zu sehen, zu hören, zu riechen und zu fühlen. Er\nkann während der Nutzung dieser Fähigkeit normal angreifen, sich jedoch nicht von seiner\naktuellen Position wegbewegen. Er kann seine Tentakel als Aktion zurückziehen und sie\nin seinem nächsten Zug wieder in dieselbe Ebene (oder eine andere Ebene) ausstrecken.\nDer Verdrängungseffekt eines Zaubers „Böses oder Gutes bannen“ bewirkt, dass ein Abyssal\nHarvester einen einzelnen Tentakel zurückzieht, wenn er seinen Charisma-Rettungswurf\nverfehlt. Es kann denselben Tentakel einen Tag lang nicht wieder in dieselbe Ebene einführen.\nEin „Verbannung“-Zauber zwingt einen Abyssal Harvester dazu, alle seine\nTentakel zurückzuziehen, wenn er seinen Weisheits-Rettungswurf verfehlt. Er kann keine Tentakel,\ndie verbannt wurden, einen Tag lang wieder in dieselbe Ebene einführen."
+    },
+    {
+      "name": "Ernte",
+      "text": "Ein Ziel, das 4 Runden hintereinander festgehalten wurde,\nmuss einenDC 18Weisheits-Rettungswurf bestehen oder wird durch ein\nunsichtbares Ebenenportal (das sich um die Tentakel des Abyssal Harvester bildet)\nin dieselbe Ebene gezogen, in der sich der Abyssal Harvester gerade befindet. Ein\nGegner, der in dieselbe Ebene wie der Harvester gezogen wird, ist bei seiner Ankunft weiterhin festgehalten. Diese Fähigkeit kann nur eingesetzt werden, wenn sich der Abyssal Harvester\nauf seiner Abyssalebene befindet und seine Tentakel in die Ätherische Ebene, die Astralebene,\neine materielle Ebene oder die Neun Höllen ausstreckt."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die Zauberfähigkeit des Abyssal-Erntearbeiters ist\nWeisheit (ZauberrettungswurfDC 17).\nEr kann die folgenden Zauber von Natur aus wirken, ohne dass dafür\nmaterielle Komponenten erforderlich sind:\nBeliebig oft: Ebenenwechsel (wirkt nur in der Astralebene, dem Abyss, den Neun Höllen\noder der Materiellen Ebene)"
+    },
+    {
+      "name": "Scharfes Gehör und Geruchssinn",
+      "text": "Der Abyssal-Erntearbeiter hat einen Vorteil bei\nWeisheits- (Wahrnehmungs-)Proben, die auf Gehör oder Geruch beruhen."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Angriffe des Abyssal-Erntearbeiters sind magischer Natur."
+    },
+    {
+      "name": "Tentakel",
+      "text": "Ein Abyssal-Erntearbeiter hat 4 Tentakel, von denen jeder  lang 20\nfeetist, eine RK von 20, 30 Trefferpunkte, Widerstand gegen Säure-, Kälte- und Feuerschaden\n, Immunität gegen Gift- und psychischen Schaden sowie dieselben Sinne wie\nder Abyssal-Erntearbeiter. Ein abgetrennter Tentakel fügt dem Abyssal-Erntearbeiter\nkeinen Schaden zu. Ein Tentakel kann nicht durch bloße Kraftanstrengung abgebrochen werden. Ein\nTentakel wächst innerhalb einer Woche nach."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Abyssal Harvester führt vier Tentakelangriffe aus."
+    },
+    {
+      "name": "Tentakel",
+      "type": "special",
+      "text": "Der Abyssal-Erntearbeiter führt mit seinen Tentakeln einen Angriff durch\nund wählt dabei eine der folgenden Optionen:\nSchwächender Schlag. Nahkampf-Waffenangriff: +14 zum Treffen, Reichweite 6 m., ein\nZiel. Treffer: 29 (6d6 + 8)\nSchlagschaden, und die maximalen Trefferpunkte des Ziels werden\num denselben Wert verringert. Das Ziel stirbt, wenn dadurch seine maximalen Trefferpunkte\nauf 0 sinken. Andernfalls hält die Verringerung so lange an, bis das Ziel eine lange Rast beendet hat."
+    },
+    {
+      "name": "Greifer",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +14 zum Treffen, Reichweite20 ft: , ein Ziel. Treffer:\n29 (6d6 + 8) Bludgeoning-Schaden und das Ziel wird festgehalten (Befreiung:DC\n22 ). Eine festgehaltene Kreatur ist gefesselt. Ein Abyssal Harvester kann\npro verbleibendem Tentakel eine Kreatur der Größe „Riesig“ oder kleiner festhalten."
+    },
+    {
+      "name": "Einschnüren",
+      "type": "special",
+      "text": "Jedes Wesen, das der Abyssal-Erntearbeiter gepackt hat, erleidet zu Beginn seines Zuges 22\n(4d6 + 8) Schlagschaden."
+    }
+  ],
+  "source": "creature"
+}

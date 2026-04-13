@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-schale-der-wasserelementar-herrschaft",
+  "type": "item",
+  "name": "Schale der Wasserelementar-Herrschaft",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn diese Schale mit Wasser gefüllt ist, kannst du als Aktion das Befehlswort für die Schale aussprechen und einen Wasserelementar beschwören, als hättest du den Zauber Elementar beschwören  gewirkt. Die Schale kann erst im nächsten Morgengrauen wieder auf diese Weise verwendet werden. Die Schale misst ungefähr 30 Zentimeter im Durchmesser und ist halb so tief. Sie wiegt 1,5 Kilogramm und fasst etwa 12 Liter.",
+  "tags": []
+}

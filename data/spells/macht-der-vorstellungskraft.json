@@ -1,0 +1,18 @@
+{
+  "id": "macht-der-vorstellungskraft",
+  "name": "Macht der Vorstellungskraft",
+  "level": 2,
+  "school": "Illusionsmagie",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, G, M (Vlies)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du erschaffst eine Illusion, die sich im Geist einer Kreatur in Reichweite festsetzt, das du sehen kannst.\nDas Ziel muss einen INT-Rettungswurf machen.\nBei Fehlschlag: Ein Fantasieobjekt, das nicht größer als ein 3 m Würfel ist wird für die Wirkungsdauer für dein Ziel wahrnehmbar.\nDie Fantasie umfasst Geräusche, Temperatur und andere Reize, die nur das Ziel wahrnimmt.\nDas Ziel kann die Fantasie mit einem Nachforschung-Wurf untersuchen.\nBei Erfolg: Illusion erkannt und der Zauber endet.\nWährend die Illusion wirkt, behandelt das Ziel die Fantasie, als wäre sie real und rationalisiert alle unlogischen Interaktionen. Es kann auch Schaden durch die Illusion nehmen (imaginäre Kreatur kann das Ziel angreifen, Säure, Lava oder Feuer können schaden). In jeder deiner Runden kann die Fantasie dem Ziel 1W6 physischen Schaden zufügen, wenn es im Bereich oder einem 1,5 m Umkreis ist, vorausgesetzt die Illusion stellt eine Kreatur oder Gefahr dar.\nDer Zauber hat keine Wirkung auf Untote oder Konstrukte."
+}

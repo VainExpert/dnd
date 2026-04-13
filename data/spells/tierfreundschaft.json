@@ -1,0 +1,18 @@
+{
+  "id": "tierfreundschaft",
+  "name": "Tierfreundschaft",
+  "level": 1,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V, G, M (etwas zu Essen)",
+  "duration": "24 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Druide",
+    "Waldläufer"
+  ],
+  "text": "Du überzeugst ein Tier, dass du freundlich ihm gegenüber bist.\nWähle ein Tier in Reichweite, das du sehen kannst und das dich sehen und hören kann.\nEs schlägt fehl, wenn der INT-Wert des Tieres größer als 3 ist.\nDas Tier muss einen WIS-Rettungswurf machen oder es wird für die Wirkungsdauer von dir bezaubert.\nWenn du oder einer deiner Begleiter das Ziel verletzt, endet der Zauber.\n\nAuf höheren Level gewirkt: pro Level 1 zusätzliches Tier"
+}

@@ -1,0 +1,89 @@
+{
+  "name": "Rasa Mastermind",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr4",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "any evil alignment",
+  "ac": 16,
+  "hp": {
+    "average": 91,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 18,
+    "con": 15,
+    "int": 16,
+    "wis": 13,
+    "cha": 14
+  },
+  "skills": {
+    "Deception": 5,
+    "Perception": 5,
+    "Stealth": 8
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The rasa's innate spellcasting\nability is Intelligence (spell save DC 13). It can\ninnately cast the following spells, requiring no\ncomponents:\n\n* At will: <i>mage hand, message</i>\n\n* 1/day each: <i>arcane eye, greater invisibility, silent image</i>\n\n* 2/day each: <i>disguise self, misty step</i>"
+    },
+    {
+      "name": "Inscrutable Intentions",
+      "text": "The rasa is immune to any\nmagical effects to determine if it is lying."
+    },
+    {
+      "name": "Sneak Attack (1/Turn)",
+      "text": "The mastermind deals an extra\n10 (3d6) damage when it hits a target with a weapon\nattack and has advantage on the attack roll, or when the\ntarget is within 5 feet of an ally of the mastermind that\nisn't incapacitated and the mastermind doesn't have\ndisadvantage on the attack roll."
+    },
+    {
+      "name": "Mask of Deceit",
+      "text": "While wearing this mask, the\nmastermind has advantage on Charisma (Deception)\nand Charisma (Performance) checks when trying to\npass itself off as a different person. It also allows the\nwearer to mimic the speech of a creature it has heard\nspeak for at least 1 minute. A successful Wisdom\n(Insight) check contested by the mastermind's\nCharisma (Deception) check allows a listener to\ndetermine that the voice is faked."
+    },
+    {
+      "name": "Mask of Slaying",
+      "text": "While wearing this mask, when the\nmastermind takes the multiattack action, it makes two\nadditional melee attacks."
+    },
+    {
+      "name": "Sight of the Rasa",
+      "text": "The rasa share a special sight that\nis invisible to all non-rasa creatures. As an action, a\nrasa can touch a creature and place a secret mark\non that creature's chest. This mark lets other rasa\nknow whether or not this creature should be\nregarded as a friend or a foe."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The mastermind makes two melee attacks,\nor makes a melee attack and uses its mask of\ndominance."
+    },
+    {
+      "name": "Poisoned Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +6\nto hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6\n(1d4 + 4) piercing damage plus 3 (1d6) poison\ndamage."
+    },
+    {
+      "name": "Phantom Strikes (Recharge 5-6)",
+      "type": "special",
+      "text": "The mastermind\nsummons three ethereal clones in unoccupied spaces\nwithin 60 feet. These clones immediately make two\ndagger attacks against a creature within 5 feet. These\nattacks are made with a +6 bonus to hit and deal 10\n(3d6) force damage. Once these attacks are\ncompleted, the mastermind can teleport to the\nlocation of any of these clones and the clones\ndisappear."
+    },
+    {
+      "name": "Mask of Dominance (1/Day)",
+      "type": "special",
+      "text": "The mastermind places a\nmask of dominance on the face of a creature it is\ncurrently grappling. That creature must succeed on a\nDC 14 Wisdom saving throw or become charmed by\nthe mastermind. While charmed, the creature obeys all\ncommands of the mastermind that do not inflict self-harm.\nThis effect ends after 24 hours or when another\ncreature uses its action to pry the mask from the\ncharmed creature's face."
+    }
+  ],
+  "source": "creature"
+}

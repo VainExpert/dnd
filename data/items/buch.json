@@ -1,0 +1,39 @@
+{
+  "id": "buch",
+  "type": "item",
+  "name": "Buch",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "variabel",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 2.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Je nach Seltenheit Geld und Gewicht variabel. Ein korrektes Buch über ein Thema gibt einen +5 Bonus auf Arkane-Kunde, Geschichte, Naturkunde oder Religion für Würfe zu dem entsprechenden Thema und der zugehörigen Fertigkeit.",
+  "tags": []
+}

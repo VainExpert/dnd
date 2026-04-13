@@ -1,0 +1,51 @@
+{
+  "id": "dornenruestung",
+  "type": "item",
+  "name": "Dornenrüstung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 22.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 75,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": {
+    "base": 14,
+    "dex_bonus": false,
+    "stealth_disadvantage": false,
+    "type": "schwer"
+  },
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Die Rüstung besteht aus Leder, das mit scharfen Dornen besetzt ist. Bei einem Nahkampf-Treffer gegen den Träger kann der Angreifer 1W4 Stichschaden erleiden.",
+  "tags": [
+    "abenteuer",
+    "rüstung",
+    "abwehr",
+    "schwer",
+    "schmied",
+    "selten"
+  ]
+}

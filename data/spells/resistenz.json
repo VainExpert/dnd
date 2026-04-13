@@ -1,0 +1,18 @@
+{
+  "id": "resistenz",
+  "name": "Resistenz",
+  "level": 0,
+  "school": "Bannmagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G, M (ein Miniatur Mantel)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Kleriker",
+    "Druide"
+  ],
+  "text": "Du berührst eine willige Kreatur.\nEinmal bevor der Zauber endet kann das Ziel 1W4 werfen und das Ergebnis zu einem Rettungswurf seiner Wahl addieren.\nEs kann den Würfel vor oder nach dem Rettungswurf werfen.\nNach dem Wurf endet der Zauber."
+}

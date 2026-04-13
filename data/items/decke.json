@@ -1,0 +1,45 @@
+{
+  "id": "decke",
+  "type": "item",
+  "name": "Decke",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 1.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 5,
+    "currency": "sp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Warme Decke; nützlich zum Schlafen, als Unterlage oder als improvisierte Abdeckung. In Decke gehüllt automatischer Erfolg bei Rettungswürfen gegen Kälte.",
+  "tags": [
+    "rast",
+    "schlaf",
+    "abenteuer",
+    "grundausstattung",
+    "nützlich"
+  ]
+}

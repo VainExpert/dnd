@@ -1,0 +1,70 @@
+{
+  "name": "Tribal Tactician",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 14,
+  "hp": {
+    "average": 60,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 16,
+    "int": 14,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Athletics": 5,
+    "Survival": 3
+  },
+  "languages": [
+    "any two languages"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Combat Maneuvers (3/Short Rest)",
+      "text": "Tacticians have\ntrained all their life to excel in combat and as a\nresult have mastered special combat maneuvers\nthat they can use in combat. Whenever the\ntactician makes a melee weapon attack, it can\nchoose to execute one of these maneuvers to add\nadditional effects to the attack. In addition to these\nother effects, all maneuvers cause the attacks to\ndeal an additional 1d8 damage. Each tactician has\ntwo random maneuvers from the list below\navailable for use:\n\n* Crippling Strike – The target's speed is 0 on its next turn.\n* Dizzying Strike – Concentration saving throws made as a result of this attack's damage are made at disadvantage.\n* Precise Strike – This attack is made with advantage.\n* Weakening Strike – The next weapon attack made by the target deals half damage (rounded down)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The tactician makes two attacks with its\nbattleaxe and one with its unarmed strike.."
+    },
+    {
+      "name": "Battleaxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5\nft., one target. Hit: 7 (1d8 + 3) slashing damage, or\n8 (1d10 + 3) slashing damage if used with two\nhands."
+    },
+    {
+      "name": "Unarmed Strike",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit,\nreach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning\ndamage."
+    },
+    {
+      "name": "Handaxe",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +5 to hit, range\n20/60 ft., one target. Hit: 5 (1d6 + 3) slashing\ndamage."
+    }
+  ],
+  "source": "creature"
+}

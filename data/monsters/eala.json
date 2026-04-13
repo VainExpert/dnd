@@ -1,0 +1,58 @@
+{
+  "name": "Eala",
+  "size": "Small",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "small",
+      "monstrosity",
+      "cr2",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 15,
+  "hp": {
+    "average": 40,
+    "formula": ""
+  },
+  "speed": {
+    "walk": 60
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 16,
+    "con": 12,
+    "int": 2,
+    "wis": 12,
+    "cha": 16
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The eala makes two attacks with its wing blades."
+    },
+    {
+      "name": "Wing Blades",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage."
+    },
+    {
+      "name": "Fire Breath (recharge 5-6)",
+      "type": "special",
+      "text": "The eala breathes fire in a 20-foot cone. Every creature in the area must make a DC 11 Dexterity saving throw, taking 10 (3d6) fire damage on a failed save or half as much on a successful one. The eala's fire breath ignites flammable objects and melts soft metals in the area that aren't being worn or carried."
+    }
+  ],
+  "source": "creature"
+}

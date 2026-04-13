@@ -1,0 +1,46 @@
+{
+  "name": "Hadrosaurus",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr1/4",
+      "volos-guide"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 11,
+  "hp": {
+    "average": 19,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 10,
+    "con": 13,
+    "int": 2,
+    "wis": 10,
+    "cha": 5
+  },
+  "skills": {
+    "Perception": 2
+  },
+  "languages": [],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Tail",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10+2) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

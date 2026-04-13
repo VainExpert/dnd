@@ -1,0 +1,43 @@
+{
+  "name": "Sea Horse",
+  "size": "Tiny",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "tiny",
+      "beast",
+      "cr0",
+      "monster-manual"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 11,
+  "hp": {
+    "average": 1,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 1,
+    "dex": 12,
+    "con": 8,
+    "int": 1,
+    "wis": 10,
+    "cha": 2
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Water Breathing",
+      "text": "The sea horse can breathe only underwater."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

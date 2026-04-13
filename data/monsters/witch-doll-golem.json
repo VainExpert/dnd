@@ -1,0 +1,81 @@
+{
+  "name": "Witch-Doll Golem",
+  "size": "Large",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr10",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 17,
+  "hp": {
+    "average": 94,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 14,
+    "con": 21,
+    "int": 7,
+    "wis": 15,
+    "cha": 11
+  },
+  "skills": {
+    "Investigation": 2,
+    "Perception": 10,
+    "Survival": 10
+  },
+  "languages": [
+    "understands the languages of its creator but can’t speak"
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Find Target",
+      "text": "The witch-doll golem knows the location of a specific\ntarget creature, or one creature cursed by its witch-doll curse ability, as\nlong as that creature is within 1,000 feet of it. If the creature is moving, it\nknows the direction of that creature’s movement. If the creature is beyond\nthis distance, the witch-doll golem knows the direction that creature is in."
+    },
+    {
+      "name": "Immutable Form",
+      "text": "The golem is immune to any spell or effect that\nwould alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The golem has advantage on saving throws against\nspells and other magical effects."
+    },
+    {
+      "name": "Magic Weapon",
+      "text": "The golem’s weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The witch-doll golem makes up to two attacks with its\nslam or its needle attack."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 20\n(3d10 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Needle",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +8 to hit, reach 5 ft. or range\n20/60 ft., one target. Hit: 14 (3d6 + 4) piercing damage."
+    },
+    {
+      "name": "Witch-Doll Curse",
+      "type": "special",
+      "text": "The witch-doll golem chooses one creature it can\nsee within 60 feet of it. The target must make a DC 17 Wisdom saving\nthrow or be cursed. While cursed, the witch-doll golem deals an additional\n13 (3d8) necrotic damage to the target when it hits with a weapon attack,\nand any damage the witch-doll golem takes from targets other than the\ncursed target is halved, and the cursed target takes the other half. The\nwitch-doll golem can only have one active curse at a time.\n\nThe target remains cursed until the golem is destroyed or the target dies;\nmagic such as remove curse can end the curse early."
+    }
+  ],
+  "source": "creature"
+}

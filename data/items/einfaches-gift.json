@@ -1,0 +1,47 @@
+{
+  "id": "einfaches-gift",
+  "type": "item",
+  "name": "Einfaches Gift",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Mit einer Bonus Aktion kann das Gift auf bis zu 3 Munitionsstücke oder eine Hieb oder Stich Waffe aufgetragen werden. Eine getroffene Kreatur muss einen CON-Rettungswurf schaffen oder erhält 1W4 Giftschaden. Das Gift hält aufgetragen 1 min oder bis damit Schaden gemacht wurde.",
+  "tags": [
+    "gift",
+    "schaden",
+    "schwarzmarkt",
+    "kampf",
+    "verletzung",
+    "konsumiert",
+    "nützlich"
+  ]
+}

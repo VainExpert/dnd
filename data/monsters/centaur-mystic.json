@@ -1,0 +1,70 @@
+{
+  "name": "Centaur Mystic",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "neutral good",
+  "ac": 12,
+  "hp": {
+    "average": 39,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 14,
+    "con": 12,
+    "int": 10,
+    "wis": 16,
+    "cha": 10
+  },
+  "skills": {
+    "Nature": 2,
+    "Survival": 5
+  },
+  "languages": [
+    "Elvish",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "text": "The centaur is a 3rd-level spellcaster.\nIts spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). It has the following\nDruid spells prepared:\n\n* Cantrips (at will): <i>druidcraft, thornwhip</i>\n\n* 1st level (4 slots): <i>animal friendship, faerie fire, healing word</i>\n\n* 2nd level (2 slots): <i>barkskin, moonbeam</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The centaur makes two attacks: one\nwith its quarterstaff and one with its hooves or two\nwith its longbow."
+    },
+    {
+      "name": "Quarterstaff",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach\n5ft., one target. Hit: 5 (1d6 + 2) bludgeoning\ndamage."
+    },
+    {
+      "name": "Hooves",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5ft.,\none target. Hit: 7 (2d4 + 2) bludgeoning damage."
+    },
+    {
+      "name": "Longbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +4 to hit, range\n150/600 ft., one target. Hit: 6 (1d8 + 2) piercing\ndamage."
+    }
+  ],
+  "source": "creature"
+}

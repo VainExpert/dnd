@@ -1,0 +1,56 @@
+{
+  "name": "Allosaurus",
+  "size": "Groß",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr2",
+      "monster-manual"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 15,
+  "hp": {
+    "average": 51,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 13,
+    "con": 17,
+    "int": 2,
+    "wis": 12,
+    "cha": 5
+  },
+  "skills": {
+    "Perception": 5
+  },
+  "languages": [],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Heranstürzen",
+      "text": "Wenn sich der Allosaurus mindestens 30 ft10 Meter geradlinig auf eine Kreatur zubewegt und sie dann im selben Zug mit einem Klauenangriff trifft, muss das Ziel einenDC 13Stärke-Rettungswurf bestehen oder wird zu Boden geworfen. Befindet sich das Ziel am Boden, kann der Allosaurus als Bonusaktion einen Bissangriff gegen es ausführen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 15 (2d10 + 4) Durchdringungsschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 8 (1d8 + 4) Schnittschaden."
+    }
+  ],
+  "source": "creature"
+}

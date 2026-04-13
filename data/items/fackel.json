@@ -1,0 +1,46 @@
+{
+  "id": "fackel",
+  "type": "item",
+  "name": "Fackel",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1,
+    "currency": "cp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Für 1 h: 6 m helles Licht und 6 m gedimmtes Licht. Bei Angriff als einfache Nahkampfwaffe: 1 Feuer Schaden",
+  "tags": [
+    "abenteuer",
+    "licht",
+    "feuer",
+    "kampf",
+    "schaden",
+    "nützlich"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "name": "Elder Conflux Elemental",
+  "size": "Gargantuan",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "gargantuan",
+      "elemental",
+      "cr20",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 19,
+  "hp": {
+    "average": 313,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 24,
+    "dex": 16,
+    "con": 23,
+    "int": 10,
+    "wis": 16,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "Primordial",
+    "Aquan",
+    "Auran",
+    "Ignan",
+    "Terran"
+  ],
+  "challenge": {
+    "cr": "20",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Illumination",
+      "text": "The elemental sheds bright light in a 50-\nfoot radius and dim light for an additional 50 feet."
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "text": "If the elemental fails a\nsaving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Mutable Form",
+      "text": "The elemental can move through a space\nas narrow as 1 inch wide without squeezing."
+    },
+    {
+      "name": "Tempest Barrier",
+      "text": "A creature that touches the elemental\nor hits it with a melee or ranged attack while within 15\nfeet of it takes 11 (2d10) lightning damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The elemental makes two touch attacks."
+    },
+    {
+      "name": "Touch",
+      "type": "special",
+      "text": "Melee Weapon Attack: +13 to hit, reach 10 ft.,\none target. Hit: 14 (2d6 + 7) bludgeoning damage plus\n3 (1d6) cold damage, 3 (1d6) fire damage, and 3 (1d6)\nlightning damage."
+    },
+    {
+      "name": "Boulder Barrage (Recharge 5-6)",
+      "type": "special",
+      "text": "The elemental launches\na barrage of boulders at a point it can see within 60\nfeet. Each creature within 15 feet of that point must\nmake a DC 19 Dexterity saving throw, taking 38\n(7d10) bludgeoning damage on a failed save, or half as\nmuch damage on a successful one. A creature that fails\nthis save by 10 or more is also knocked prone."
+    },
+    {
+      "name": "Icy Pulse (Recharge 5-6)",
+      "type": "special",
+      "text": "The elemental sends out a\npulse of ice around its body. Each creature within 30\nfeet of the elemental must make a DC 19 Constitution\nsaving throw, taking 40 (9d8) cold damage and having\nits speed halved on its next turn on a failed save, or half\nas much damage and not slowed on a successful one.\nA creature that fails this save by 10 or more has a\nspeed of 0 on its next turn instead."
+    },
+    {
+      "name": "Flame Blades (Recharge 5-6)",
+      "type": "special",
+      "text": "The elemental unleashes 3\nblades of fire in separate 5-foot wide, 90-foot long\nlines. Each creature within one of these lines must\nmake a DC 19 Dexterity saving throw, taking 28 (8d6)\nfire damage on a failed save, or half as much damage\non a successful one."
+    },
+    {
+      "name": "Summon Elemental Obelisks (1/Day)",
+      "type": "special",
+      "text": "The elemental\nsummons 3 immobile obelisks in unoccupied spaces\nwithin 60 feet. These obelisks are medium objects\nwith AC 17 and 40 hit points. Each of these have a\nsmall orb floating above them charged with elemental\npower – one cold, one fire, and one lightning. Until\nthey are destroyed or the elemental killed, on initiative\ncount 20 (losing initiative ties), these orbs perform a\nranged spell attack against a creature within 60 feet\nwith a +10 bonus to hit. On a hit, that creature takes\n17 (5d6) damage of the corresponding element type."
+    }
+  ],
+  "source": "creature"
+}

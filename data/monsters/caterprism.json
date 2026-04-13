@@ -1,0 +1,71 @@
+{
+  "name": "Caterprism",
+  "size": "Large",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "large",
+      "elemental",
+      "cr7",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 15,
+  "hp": {
+    "average": 76,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 20
+  },
+  "abilities": {
+    "str": 20,
+    "dex": 12,
+    "con": 18,
+    "int": 4,
+    "wis": 13,
+    "cha": 11
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Crystalline Mandibles",
+      "text": "The caterprism’s mandibles ignore resistance to\nslashing damage. In addition, when the caterprism attacks a creature with\nat least one head with its bite attack and rolls a natural 20 on the attack\nroll, it cuts off one of the creature’s heads. The creature dies if it cannot\nsurvive without the lost head. A creature is immune to this ability if it is\nimmune to slashing damage, doesn’t have or need a head, has legendary\nactions, or the GM decides that the creature is too big for the head to be\ncut off with this attack. Such a creature instead takes an extra 27 (6d8)\nslashing damage from the hit."
+    },
+    {
+      "name": "Tunneler",
+      "text": "Caterprism can burrow through solid rock at 5 feet per round\nleaving a 5 foot-wide, 8-foot-high tunnel in its wake."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The caterprism makes one bite and two claw attacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 +5) slashing damage. If the caterprism scores a critical hit, it rolls\ndamage dice four times, instead of twice."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target Hit: 16 (2d10 + 5) slashing damage."
+    },
+    {
+      "name": "Crystal Breath Recharge (5–6)",
+      "type": "special",
+      "text": "The caterprism spews forth a\ncrystalline silk-like substance in a 30-foot cone that instantly hardens into\nrazor-sharp crystalline spears. Each creature in that area must make a DC\n15 Dexterity saving throw, taking 28 (8d6) piercing damage on a failed\nsave, or half as much damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

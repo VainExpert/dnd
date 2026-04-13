@@ -1,0 +1,55 @@
+{
+  "name": "Zauberlehrling",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/4",
+      "volos-guide",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 10,
+  "hp": {
+    "average": 9,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 10,
+    "con": 10,
+    "int": 14,
+    "wis": 10,
+    "cha": 11
+  },
+  "skills": {
+    "Arcana": 4,
+    "History": 4
+  },
+  "languages": [
+    "any one language (usually Common)"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Lehrling ist ein Zauberwirker der Stufe 1. Seine Zauberfertigkeit ist Intelligenz (ZauberrettungswurfDC 12, +4 auf Treffer bei Zauberangriffen). Er hat die folgenden Zauber vorbereitet:\n\n* Cantrips (beliebig oft): Feuerblitz, Ausbessern, Taschenspielertrick\n\n* Stufe 1 (2 Zauberplätze): Brennende Hände, Selbstverkleidung, Schild"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dolch",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfangriff: +2 auf den Trefferwurf, Reichweite 1,5 m[ ]20/60Fuß, ein Ziel. Treffer: 2 (1d4) Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

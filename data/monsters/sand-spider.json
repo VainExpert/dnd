@@ -1,0 +1,74 @@
+{
+  "name": "Sand Spider",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr7",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 15,
+  "hp": {
+    "average": 105,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 20
+  },
+  "abilities": {
+    "str": 20,
+    "dex": 17,
+    "con": 14,
+    "int": 4,
+    "wis": 12,
+    "cha": 4
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 6
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "7",
+    "xp": 2900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Sand Stealth",
+      "text": "The sand spider gains an additional +3 to Stealth (+9 in total) in sand terrain."
+    },
+    {
+      "name": "Spider Climb",
+      "text": "The sand spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Ambusher",
+      "text": "The sand spider has advantage on attack rolls against surprised targets."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The sand spider makes two attacks with its impaling legs and one bite attack."
+    },
+    {
+      "name": "Impaling Leg",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 11 (1d12 + 5) piercing damage. If the sand spider scores a critical hit with this attack, it rolls damage dice three times instead of twice. If both impaling leg attacks hit the same target, the second hit does an extra 11 (1d12 + 5) piercing damage."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 16 (2d10 + 5) piercing damage plus 13 (3d8) poison damage, or half as much poison damage with a successful DC 13 Constitution saving throw."
+    }
+  ],
+  "source": "creature"
+}

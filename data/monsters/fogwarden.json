@@ -1,0 +1,69 @@
+{
+  "name": "Fogwarden",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr4",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 14,
+  "hp": {
+    "average": 27,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 16,
+    "con": 12,
+    "int": 12,
+    "wis": 11,
+    "cha": 14
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "Auran",
+    "Common"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Animate Dead",
+      "text": "The electrical aura of the fogwarden can animate\nup to four dead creatures within 20 feet. The animated creatures\nresemble zombies and are under the control of the fogwarden. If\nthe fogwarden is slain or moves more than 20 feet from a zombie,\nthe animated creature collapses and cannot be animated again.\nThe animated creatures use zombie statistics."
+    },
+    {
+      "name": "Electricity Discharge",
+      "text": "A creature that touches the\nfogwarden or hits it with a melee attack while within 5\nfeet of it takes 14 (4d6) lightning damage. If the creature\nis wielding a metal weapon or wearing metal armor, it must\nsucceed on a DC 14 Constitution saving throw or be stunned until the end\nof the fogwarden’s next turn."
+    },
+    {
+      "name": "Gaseous Form",
+      "text": "While in this form, the fogwarden’s only method of\nmovement is a flying speed of 10 feet. The Fogwarden can enter and\noccupy the space of another creature. The Fogwarden has resistance\nto nonmagical damage, is still hypersensitive to sunlight, and it has\nadvantage on Strength, Dexterity, and Constitution saving throws. The\nFogwarden can pass through small holes, narrow openings, and even mere\ncracks, though it treats liquids as though they were solid. The Fogwarden\ncan’t fall and remains hovering in the air even when stunned or otherwise\nincapacitated."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The fogwarden’s spellcasting ability is Charisma\n(spell save DC 12, +4 to hit with spell attacks). The fogwarden can\ninnately cast the following, requiring no material components.\n\n* At will: <i>animate dead</i>"
+    },
+    {
+      "name": "Sunlight Hypersensitivity",
+      "text": "The fogwarden takes 20 radiant damage\nwhen it starts its turn in sunlight. While in sunlight, it has disadvantage on\nattack rolls and ability checks."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Shock",
+      "type": "special",
+      "text": "Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d8) lightning damage."
+    }
+  ],
+  "source": "creature"
+}

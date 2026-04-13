@@ -1,0 +1,58 @@
+{
+  "name": "Mormesk the Wraith",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr3",
+      "lost-mine-of-phandelver"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 13,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 6,
+    "dex": 16,
+    "con": 16,
+    "int": 12,
+    "wis": 14,
+    "cha": 15
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Infernal"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Incorporeal Movement",
+      "text": "The wraith can move through an object or another creature, but can't stop there."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the wraith has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Life Drain",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 16 (3d8 + 3) necrotic damage, and the target must succeed on a DC 13 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. If this attack reduces the target's hit point maximum to 0, the target dies. This reduction to the target's hit point maximum lasts until the target finishes a long rest."
+    }
+  ],
+  "source": "creature"
+}

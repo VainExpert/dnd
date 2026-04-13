@@ -1,0 +1,77 @@
+{
+  "name": "Aetherspawn-Paragon",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr5",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 15,
+  "hp": {
+    "average": 91,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 19,
+    "con": 15,
+    "int": 18,
+    "wis": 15,
+    "cha": 12
+  },
+  "skills": {
+    "Arcana": 7
+  },
+  "languages": [
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Elementare Einstimmung",
+      "text": "Der Paragon ist mit\nentweder arkaner, eisiger, feuriger oder blitzartiger Energie erfüllt. Die\nAngriffe des Paragons verursachen zusätzlichen Schaden basierend auf diesem\nElement (im Angriff enthalten), er ist immun gegen das\nentsprechende Element und kann zweimal pro Tag einen entsprechenden\nElementarzauber wirken, der keine materiellen\nKomponenten erfordert. Die Zauberfertigkeit des Paragons ist\nIntelligenz (ZauberrettungswurfDC 15, +7 Bonus auf Treffer).\n\n* Arkan – Bonus auf Kraftschaden und Immunität gegen Kraftschaden; kann Slow wirken\n* Eis – Bonus auf Kälteschaden und Immunität gegen Kälteschaden; kann Sleet Storm wirken\n* Feuer – Bonus auf Feuerschaden und Immunität gegen Feuerschaden; kann Fireball wirken\n* Blitz – Bonus auf Blitzschaden und Immunität gegen Blitzschaden; kann Lightning Bolt wirken"
+    },
+    {
+      "name": "Beherrschung der Elemente",
+      "text": "Als Bonusaktion kann der Paragon\nseine Elementarverbundenheit auf ein anderes Element umstellen.\nSobald der Paragon auf dieses Element umgestellt hat, kann er\ndies erst bei der nächsten Morgendämmerung erneut tun. Dies setzt\ndas Limit von zwei Zaubern pro Tag für den Paragon nicht zurück, verändert jedoch\ndie Auswahl der verfügbaren Zauber."
+    },
+    {
+      "name": "Tod durch Fracking",
+      "text": "Wenn der Paragon stirbt, explodiert er in\neiner Welle chromatischer Energien, die versuchen, sich in\nvier unbesetzten Feldern innerhalb des Raums 50 feetneu zu formieren. An jedem dieser\nFelder leuchtet und wandelt sich eine glühende Kugel aus reiner Elementarenergie\nund Runenstein – eine Kugel für jedes der\nvier möglichen Elemente eines Ätherbrutwesens. Diese\nKugeln haben 15 Trefferpunkte und eine RK von 13. Würfle um die Initiative\nohne Bonus für jede dieser Kugeln und füge sie der\nInitiativreihenfolge hinzu. Immer wenn die Kugel an der Reihe ist,\nverwandelt sie sich in einen Ätherbrut-Wächter des\nentsprechenden Elements."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Paragon führt zwei Nahkampfangriffe aus."
+    },
+    {
+      "name": "Ätherklauen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite5\nft: , ein Ziel. Treffer: 7 (1d6 + 4) Bludgeoning-Schaden\nplus 7 (2d6) Schaden der Art, die der\nElementar-Einstimmung des Paragons entspricht."
+    },
+    {
+      "name": "Elementarsplitter",
+      "type": "special",
+      "text": "Fernkampfangriff: +7 auf den Trefferwurf,\nReichweite30/90  Fuß, ein Ziel. Treffer: 9 (2d4 + 4) Durchdringungsschaden\nplus 7 (2d6) Schaden der Art,\ndie der Elementar-Einstimmung des Paragons entspricht."
+    },
+    {
+      "name": "Lebender Meteor (Aufladen 5-6)",
+      "type": "special",
+      "text": "Der Paragon verwandelt sich\nin eine Kugel aus reiner Elementarenergie und schießt\nsich in gerader Linie auf einen unbesetzten Ort in90\nfeet\neiner Entfernung von bis zu  Metern. Jede Kreatur in dieser Linie muss einenDC 15\nGeschicklichkeits-Rettungswurf durchführen und erleidet bei einem misslungenen Rettungswurf 22 (5d8\n) Schaden der\nArt, die der Elementar-Einstimmung des Paragons\nentspricht, oder die Hälfte dieses Schadens\nbei einem erfolgreichen Rettungswurf. Kreaturen innerhalb5 feet\nvon  vom\nendgültigen Standort des Paragons führen den Rettungswurf mit\nNachteil durch, da der Meteor einschlägt, bevor der Paragon\nzu seiner gewöhnlichen Gestalt zurückkehrt."
+    }
+  ],
+  "source": "creature"
+}

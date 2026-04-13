@@ -1,0 +1,48 @@
+{
+  "id": "ring-des-springens",
+  "type": "item",
+  "name": "Ring des Springens",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "ring",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 225,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [
+    "springen"
+  ],
+  "effects": [],
+  "text": "Wenn du diesen Ring trägst, kannst du mit ihm den Zauber Springen beliebig oft als Bonus Aktion wirken. Allerdings kannst du nur dich als Ziel bestimmen, wenn du das tust.",
+  "tags": [
+    "magisch",
+    "ring",
+    "schmuck",
+    "springen",
+    "zauber",
+    "bonus aktion"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Githzerai Enlightened",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr10",
+      "mordenkainens-tome-of-foes",
+      "gith"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 18,
+  "hp": {
+    "average": 112,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 19,
+    "con": 16,
+    "int": 17,
+    "wis": 19,
+    "cha": 13
+  },
+  "skills": {
+    "Arcana": 7,
+    "Insight": 8,
+    "Perception": 8
+  },
+  "languages": [
+    "Gith"
+  ],
+  "challenge": {
+    "cr": "10",
+    "xp": 5900,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "text": "The githzerai's innate spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no components:\n\n* At will: <i>mage hand </i>(the hand is invisible)\n\n* 3/day each: <i>blur, expeditious retreat, feather fall, jump, see invisibility, shield</i>\n\n* 1/day each: <i>haste, plane shift, teleport</i>"
+    },
+    {
+      "name": "Psychic Defense",
+      "text": "While the githzerai is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

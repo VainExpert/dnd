@@ -1,0 +1,67 @@
+{
+  "name": "Lemurfolk",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr1/4",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 14,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 10,
+    "fly": 40
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 15,
+    "con": 11,
+    "int": 12,
+    "wis": 10,
+    "cha": 8
+  },
+  "skills": {
+    "Acrobatics": 4,
+    "Stealth": 4
+  },
+  "languages": [
+    "Common",
+    "Lemurfolk"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Silent Glide",
+      "text": "The lemurfolk can glide for 1 minute, making almost no sound. It gains a fly speed of 40 feet, and it must move at least 20 feet on its turn to keep flying. A gliding lemurfolk has advantage on Dexterity (Stealth) checks."
+    },
+    {
+      "name": "Sneak Attack (1/Turn)",
+      "text": "The lemurfolk deals an extra 3 (1d6) damage when it hits with a weapon attack and it has advantage, or when the target is within 5 feet of an ally of the lemurfolk that isn't incapacitated and the lemurfolk doesn't have disadvantage on the attack roll."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Kukri Dagger",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., 20/60 range, one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Blowgun",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +4 to hit, range 25/100 ft., one creature. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned and unconscious for 1d4 hours. Another creature can use an action to shake the target awake and end its unconsciousness but not the poisoning."
+    }
+  ],
+  "source": "creature"
+}

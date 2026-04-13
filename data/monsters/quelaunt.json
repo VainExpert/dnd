@@ -1,0 +1,82 @@
+{
+  "name": "Quelaunt",
+  "size": "Large",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "large",
+      "aberration",
+      "cr15",
+      "homebrew"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 17,
+  "hp": {
+    "average": 225,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 18,
+    "con": 24,
+    "int": 10,
+    "wis": 18,
+    "cha": 23
+  },
+  "skills": {
+    "Arcana": 5,
+    "Perception": 9,
+    "Stealth": 9
+  },
+  "languages": [
+    "Deep Speech",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "15",
+    "xp": 13000,
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Interdimensional Movement",
+      "text": "A quelaunt can innately cast <i>misty step</i> as a bonus action once per round."
+    },
+    {
+      "name": "Alien Mind",
+      "text": "The quelaunt’s thoughts are unreadable, and any creature attempting\nto mentally interact with it must make a DC 17 Intelligence saving throw or take 10 (2d6 + 3) psychic damage."
+    },
+    {
+      "name": "Aura of Fear",
+      "text": "The quelaunt mentally assaults the mind of all hostile creatures it can see, filling their heads with insane mutterings and preying upon their fears and negative emotions.  If a creature starts its turn within 20 ft. of the quelaunt, it must make a DC 17 Wisdom saving throw or be frightened for 1 minute.  The target may repeat the saving throw at the end of each of its turns, ending the effect on a success.  Creatures who succeed on the saving throw are immune to this effect for 24 hours."
+    },
+    {
+      "name": "Legendary Resistance (2/day)",
+      "text": "If the quelaunt fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The quelaunt's innate spellcasting ability is\nCharisma (spell save DC 19, +11 to hit with spell attacks).  It can innately cast the following spells,\nrequiring no components:\n\n* At will: <i>misty step</i>\n\n* 1/day each: <i>fear, fly, sleep</i> (cast at 5th level)"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The quelaunt makes three claw attacks."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack. +10 to hit, reach 10 ft., one target. Hit: 18 (2d12 + 5)\nslashing damage plus 13 (3d8) necrotic damage."
+    },
+    {
+      "name": "Maddening Whispers",
+      "type": "special",
+      "text": "The quelaunt telepathically assaults a target it can see within 60 ft.\nThe target must succeed on a DC 17 Wisdom saving throw or suffer 33 (6d10) psychic damage and\nbe stunned until the end of the target's next turn."
+    }
+  ],
+  "source": "creature"
+}

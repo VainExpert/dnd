@@ -1,0 +1,43 @@
+{
+  "id": "leiter",
+  "type": "item",
+  "name": "Leiter",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 12.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1,
+    "currency": "sp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Die Leiter ist 3 m groß und muss beklettert werden.",
+  "tags": [
+    "nützlich",
+    "holz",
+    "abenteuer"
+  ]
+}

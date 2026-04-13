@@ -1,0 +1,19 @@
+{
+  "id": "schwertexplosion",
+  "name": "Schwertexplosion",
+  "level": 0,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "1,5 m",
+  "components": "V",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du erschaffst für einen Augenblick einen Kreis gespenstischer Klingen, die um dich herumfliegen.\nJede Kreatur in Reichweite, außer dir, muss einen DEX-Rettungswurf schaffen, um nicht 1W6 Energieschaden zu erleiden.\n\nAuf höheren Level: Schaden steigt um je 1W6 auf Level 5, 11 und 17."
+}

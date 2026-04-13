@@ -1,0 +1,66 @@
+{
+  "name": "Wind Goblin",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr4",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 14,
+  "hp": {
+    "average": 36,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 19,
+    "con": 13,
+    "int": 20,
+    "wis": 13,
+    "cha": 11
+  },
+  "skills": {
+    "Arcana": 7,
+    "Investigation": 7
+  },
+  "languages": [
+    "Common",
+    "Goblin",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The wind goblin’s spellcasting ability is\nIntelligence (spell save DC 15, +7 to hit with spell attacks). The wind\ngoblin can innately cast the following spells, requiring no material\ncomponents:\n\n* At will: <i>dancing lights, mage hand, prestidigitation, shocking grasp</i>\n\n* 3/day each: <i>detect magic, eldritch blast, faerie fire, gust of wind, identify</i>\n\n* 1/day: <i>wind wall, call lightning</i>"
+    },
+    {
+      "name": "Scientific Spellcasting",
+      "text": "Wind goblins have a strange relationship\nwith science and are able to use what they sincerely believe is scientific\ninvention to mimic the abilities of spellcasters. They also describe arcane\nconcepts in science-like jargon.\n\nThe following is a typical allocation of “scientific”, gadget-based spells\nthat a wind goblin might be able to cast, but specific spells vary from\ngoblin to goblin. Wind goblin “science” magic never requires a verbal\nor material component. Instead, all spells require a gadget focus and the\nsomatic component of turning the cranks and working the levers (etc.) on\nsaid focus. The process is usually loud and often smelly or smoky, with\nsuperfluous electrical arcing.\n\nThe wind goblin is a 4th level spellcaster. Its spellcasting ability is\nIntelligence (spell save DC 15, +7 to hit with spell attacks). It can cast the\nfollowing spells, requiring only somatic components:\n\n* Cantrips (at will): <i>fire bolt, light, mending, message, minor illusion</i>\n\n* 1st level (4/day\\*): <i>expeditious retreat, fog cloud, thunderwave</i>\n\n* 2nd level (3/day\\*): <i>hold person, knock</i>\n\n\\* The uses per day represent fuel-related limitations."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or 20/60\nft., one target. Hit: 6 (1d4 + 4) piercing damage."
+    },
+    {
+      "name": "Hand Crossbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +6 to\nhit, range 30/120 ft., one target. Hit: 7 (1d6 + 4)\npiercing damage."
+    }
+  ],
+  "source": "creature"
+}

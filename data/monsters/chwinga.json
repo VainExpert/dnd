@@ -1,0 +1,65 @@
+{
+  "name": "Chwinga",
+  "size": "Tiny",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "tiny",
+      "elemental",
+      "cr0",
+      "tomb-of-annihilation"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 15,
+  "hp": {
+    "average": 5,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20,
+    "swim": 20
+  },
+  "abilities": {
+    "str": 1,
+    "dex": 20,
+    "con": 10,
+    "int": 14,
+    "wis": 16,
+    "cha": 16
+  },
+  "skills": {
+    "Acrobatics": 7,
+    "Perception": 7,
+    "Stealth": 7
+  },
+  "languages": [],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Evasion",
+      "text": "When the chwinga is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The chwinga's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no material or verbal components:\n\n* At will: <i>druidcraft, guidance, pass without trace, resistance</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Magical Gift (1/Day)",
+      "type": "special",
+      "text": "The chwinga targets a humanoid it can see within S feet of it. The target gains a supernatural charm of the DM's choice. See chapter 7 of the Dungeon Master's Guide for more information on supernatural charms."
+    },
+    {
+      "name": "Natural Shelter",
+      "type": "special",
+      "text": "The chwinga magically takes shelter inside a rock, a living plant, or a natural source of fresh water in its space. The chwinga can't be targeted by any attack, spell, or other effect while inside this shelter, and the shelter doesn't impair the chwinga's blindsight. The chwinga can use its action to emerge from a shelter. If its shelter is destroyed, the chwinga is forced out and appears in the shelter's space, but is otherwise unharmed."
+    }
+  ],
+  "source": "creature"
+}

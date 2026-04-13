@@ -1,0 +1,65 @@
+{
+  "name": "Fire Dancer Swarm",
+  "size": "Medium",
+  "type": {
+    "type": "swarm",
+    "tags": [
+      "medium",
+      "swarm",
+      "cr7",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 15,
+  "hp": {
+    "average": 90,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 20,
+    "con": 16,
+    "int": 6,
+    "wis": 10,
+    "cha": 7
+  },
+  "skills": {},
+  "languages": [
+    "Ignan"
+  ],
+  "challenge": {
+    "cr": "7",
+    "xp": 2900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Fire Form",
+      "text": "A creature that touches the swarm or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage. In addition, the first time the swarm enters a creature's space on a turn, that creature takes 5 (1d10) fire damage and catches fire; until someone uses an action to douse the fire, the creature takes 5 (1d10) fire damage at the start of each of its turns."
+    },
+    {
+      "name": "Illumination",
+      "text": "The swarm sheds bright light in a 30-foot radius and dim light to an additional 30 feet."
+    },
+    {
+      "name": "Swarm",
+      "text": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature. The swarm can't regain hit points or gain temporary hit points."
+    },
+    {
+      "name": "Water Susceptibility",
+      "text": "For every 5 feet the swarm moves in water, or for every gallon of water splashed on it, it takes 1 cold damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Swarm",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 0 ft., one target in the swarm's space. Hit: 21 (6d6) fire damage, or 10 (3d6) fire damage if the swarm has half or fewer hit points."
+    }
+  ],
+  "source": "creature"
+}

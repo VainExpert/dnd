@@ -1,0 +1,101 @@
+{
+  "name": "Uralter Meeresdrache",
+  "size": "Gigantisch",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "gargantuan",
+      "dragon",
+      "cr22",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 22,
+  "hp": {
+    "average": 481,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80,
+    "swim": 80
+  },
+  "abilities": {
+    "str": 29,
+    "dex": 10,
+    "con": 27,
+    "int": 19,
+    "wis": 17,
+    "cha": 21
+  },
+  "skills": {
+    "Perception": 17,
+    "Stealth": 7
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Infernal",
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "22",
+    "xp": 41000,
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Amphibisch",
+      "text": "Der Drache kann Luft und Wasser ausatmen."
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache einen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "Der Drache fügt Objekten und Gebäuden doppelten Schaden zu."
+    },
+    {
+      "name": "Die Höhle des Seedrachen",
+      "text": "Bei einer Initiativzahl von 20 (bei Gleichstand verliert der Drache) führt der Drache eine Höhlenaktion aus und erzeugt einen der folgenden Effekte. Der Drache kann denselben Effekt nicht in zwei aufeinanderfolgenden Runden einsetzen:\n\n- Vier Wirbel mit5 feeteinem Durchmesser von jeweils  und einer Höhe von bis30 feet zu  erscheinen an einer Stelle in der Höhle, die der Drache bestimmt. Kreaturen, die den Bereich besetzen, in dem ein Wirbel entsteht, oder die den Wirbel in einem Zug zum ersten Mal betreten, müssen einenDC 15Geschicklichkeitsrettungswurf bestehen oder werden gefesselt. Als Aktion kann sich eine Kreatur selbst oder eine andere Kreatur aus einem Wirbel befreien, indem sie einenDC 15Stärke-Check besteht. Die Wirbel bestehen so lange, bis der Drache diese Höhlenaktion erneut nutzt oder bis der Drache stirbt.\n\n- Der Drache erschafft eine Wand aus lebendem Korallenriff auf einer festen Oberfläche, die er innerhalb120 feetvon  von sich sehen kann. Die Wand kann bis zu30 feet  lang,9 m  hoch und1 foot  dick sein. Wenn die Wand erscheint, erleidet jede Kreatur in ihrem Bereich Schaden, als würde sie die Wand berühren, und wird  aus dem Raum der 5 feetWand hinausgeschleudert, auf welche Seite der Wand sie auch immer möchte. Das Berühren der Wand löst schmerzhafte Stiche aus, die 18 (4d8) Giftschaden verursachen, oder die Hälfte davon bei einem erfolgreichenDC 15  Konstitutions-Rettungswurf. Jeder 10-Fuß-Abschnitt der Wand hat eine RK von 5, 30 Trefferpunkte, Widerstand gegen Feuerschaden und Immunität gegen psychischen Schaden. Die Wand hält so lange an, bis der Drache diese Höhlenaktion erneut einsetzt oder bis der Drache stirbt.\n\n- Der Drache verzerrt die Zeit um seine Feinde herum. Vier Kreaturen, die der Drache in120 feeteinem Umkreis von  um sich herum sehen kann, müssen einenDC 15  Weisheits-Rettungswurf bestehen oder werden von einem „Verlangsamen“-Zauber betroffen. Dieser Effekt hält bis zur Initiativzahl 50 cm der folgenden Runde an."
+    },
+    {
+      "name": "Regionale Auswirkungen",
+      "text": "Die Region, in der sich die Höhle eines legendären Seedrachen befindet, wird durch die Magie des Drachen verzerrt, was einen oder mehrere der folgenden Effekte hervorruft:\n\n- Das Meeresleben wird im Umkreis6 milesvon  der Höhle vielfältiger. Fischschwärme wandern in neue Gewässer, Haie kommen häufiger vor, und die Wanderrouten der Wale verlagern sich so, dass sie in der Nähe des Gebiets verlaufen.\n\n- Die Wassertemperaturen sinken innerhalb6 mileseines Umkreises von  um die Höhle stark ab. Lebewesen, die nicht an Kälte gewöhnt sind, sind beim Schwimmen in diesem Wasser extremer Kälte ausgesetzt.\n\n- Stürme und rauer Seegang treten innerhalb eines6 milesUmkreises von  um die Höhle häufiger auf.\n\nStirbt der Drache, normalisieren sich die Bedingungen im Meer rund um die Höhle im Laufe von1d10  Tagen wieder."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache kann seine „Furchteinflößende Präsenz“ einsetzen. Anschließend führt er drei Angriffe aus: einen mit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +16 auf Treffer, Reichweite15 ft: , ein Ziel. Treffer: 20 (2d10 + 9) Durchdringungsschaden plus 11 (2d10) Kälteschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +16 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 16 (2d6 + 9) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +16 zum Treffen, Reichweite20 ft: , ein Ziel. Treffer: 18 (2d8 + 9) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Furchterregende Präsenz",
+      "type": "special",
+      "text": "Jede Kreatur, die sich in120 feetder Nähe des Drachen befindet und ihn wahrnimmt, muss einenDC 20Weisheits-Rettungswurf bestehen, sonst wird sie für 1 Minute in Angst versetzt. Eine Kreatur wiederholt den Rettungswurf am Ende jedes ihrer Züge; bei Erfolg endet der Effekt für sie. Wenn der Rettungswurf einer Kreatur erfolgreich ist oder der Effekt für sie endet, ist die Kreatur für die nächsten 24 Stunden immun gegen die „Furchteinflößende Präsenz“ des Drachen."
+    },
+    {
+      "name": "Gezeitenatem (Aufladen 5-6)",
+      "type": "special",
+      "text": "Der Drache speit eine vernichtende Welle eiskalten Meerwassers in einem 27 Meter breiten Kegel aus. Jede Kreatur in diesem Bereich muss einenDC 23Geschicklichkeits-Rettungswurf durchführen. Bei einem Fehlschlag erleidet das Ziel 44 (8d10) Schlagschaden und 44 (8d10) Kälteschaden, wird vom Drachen weggestoßen30 feetund zu Boden geworfen. Bei einem erfolgreichen Rettungswurf erleidet die Kreatur nur die Hälfte des Schadens und wird weder weggestoßen noch zu Boden geworfen."
+    }
+  ],
+  "source": "creature"
+}

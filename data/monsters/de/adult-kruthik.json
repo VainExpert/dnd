@@ -1,0 +1,56 @@
+{
+  "name": "Erwachsener Kruthik",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr2",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 18,
+  "hp": {
+    "average": 39,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 20,
+    "climb": 40
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 16,
+    "con": 15,
+    "int": 7,
+    "wis": 12,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "Kruthik"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Feiner Geruchssinn",
+      "text": "Der Kruthik hat einen Vorteil bei Weisheits- (Wahrnehmungs-)Proben, die auf dem Geruchssinn beruhen."
+    },
+    {
+      "name": "Taktiken im Rudel",
+      "text": "Der Kruthik erhält einen Vorteil bei einem Angriffswurf gegen eine Kreatur, wenn sich mindestens einer seiner Verbündeten in5 feetReichweite der Kreatur befindet und dieser Verbündete nicht handlungsunfähig ist."
+    },
+    {
+      "name": "Tunnel",
+      "text": "Der Kruthik kann sich mit der Hälfte seiner Grabgeschwindigkeit durch festes Gestein graben und hinterlässt dabei einen Tunnel mit einem Durchmesser von 1,5 Metern."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

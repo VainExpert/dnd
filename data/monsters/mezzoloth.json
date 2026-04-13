@@ -1,0 +1,83 @@
+{
+  "name": "Mezzoloth",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr5",
+      "monster-manual",
+      "yugoloth"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 18,
+  "hp": {
+    "average": 75,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 11,
+    "con": 16,
+    "int": 7,
+    "wis": 10,
+    "cha": 11
+  },
+  "skills": {
+    "Perception": 3
+  },
+  "languages": [
+    "Abyssal",
+    "Infernal",
+    "telepathy 60 ft."
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The mezzoloth's innate spellcasting ability is Charisma (spell save DC 11). The mezzoloth can innately cast the following spells, requiring no material components:\n\n* 2/day each: <i>darkness, dispel magic</i>\n\n* 1/day: <i>cloudkill</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The mezzoloth has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The mezzoloth's weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The mezzoloth makes two attacks: one with its claws and one with its trident."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage."
+    },
+    {
+      "name": "Trident",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 8 (1d8 + 4) piercing damage when held with two claws and used to make a melee attack."
+    },
+    {
+      "name": "Teleport",
+      "type": "special",
+      "text": "The mezzoloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
+    },
+    {
+      "name": "Variant: Summon Yugoloth (1/Day)",
+      "type": "special",
+      "text": "The yugoloth attempts a magical summoning.\n\nA mezzoloth has a 30 percent chance of summoning one mezzoloth.\n\nA summoned yugoloth appears in an unoccupied space within 60 feet of its summoner, does as it pleases, and can't summon other yugoloths. The summoned yugoloth remains for 1 minute, until it or its summoner dies, or until its summoner takes a bonus action to dismiss it."
+    }
+  ],
+  "source": "creature"
+}

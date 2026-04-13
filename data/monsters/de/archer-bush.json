@@ -1,0 +1,58 @@
+{
+  "name": "Archer Bush",
+  "size": "Klein",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "small",
+      "plant",
+      "cr1",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 13,
+  "hp": {
+    "average": 78,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 15,
+    "con": 16,
+    "int": 2,
+    "wis": 11,
+    "cha": 9
+  },
+  "skills": {
+    "Stealth": 4
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Stachelbusch führt zwei Angriffe mit seinen Dornen aus."
+    },
+    {
+      "name": "Dornen",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfangriff: +4 auf den Trefferwurf, Reichweite [1,5 m…]. oder Reichweite\n20/60[…], ein Ziel. Treffer: 6 (1d8 + 2) Durchschlagschaden."
+    },
+    {
+      "name": "Blutsauger",
+      "type": "special",
+      "text": "Ein Wesen im 5 ftWirkungsbereich des Bogenschützenbuschs, das 0 Trefferpunkte hat,\nwird ausgeblutet. Das Wesen scheitert automatisch bei einem Rettungswurf gegen den Tod."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-ring-des-ausweichens",
+  "type": "item",
+  "name": "Ring des Ausweichens",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "ring",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "erfordert Einstimmung",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Ring hat drei Ladungen und erhält täglich im Morgengrauen 1W3 verbrauchte Ladungen zurück Wenn du bei einem Geschicklichkeitsrettungswurf scheiterst, während du diesen Ring trägst, kannst du deine Reaktion verwenden, um eine seiner Ladungen zu verbrauchen und den Rettungswurf stattdessen zu bestehen.",
+  "tags": []
+}

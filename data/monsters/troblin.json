@@ -1,0 +1,70 @@
+{
+  "name": "Troblin",
+  "size": "Medium",
+  "type": {
+    "type": "giant",
+    "tags": [
+      "medium",
+      "giant",
+      "cr1",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 13,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 12,
+    "con": 15,
+    "int": 8,
+    "wis": 9,
+    "cha": 7
+  },
+  "skills": {},
+  "languages": [
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Mutations",
+      "text": "Each troblin has 1d4 random mutations brought about by its bizarre\nregeneration (duplicate mutations stack, as detailed in the mutation).\nIncrease the troblin’s Challenge Rating to 2 (450 XP) unless otherwise\nnoted, and roll on the table below for each mutation.\nShould a troblin be slain but not prevented from regenerating back\nto life, it always gains 1 mutation, and has a 35% chance of gaining an\nadditional 1d4 more mutations.\n\n* <i>1-2</i> ***Dual Forearm.*** The troblin’s claw attack deals\n1d8 damage instead of 1d6. If the troblin\nalready possesses this mutation, increase\nthe damage die size an additional time. In\naddition, it can wield two-handed weapons\nwith that arm alone.\n* <i>3-4</i> ***Oversized Jaw.*** The troblin’s bite attack deals\n2d4 damage instead of 1d4. If the troblin already\npossesses this mutation, add an additional 1d4\nto the damage for each stacking mutation.\n* <i>5-6</i> ***Massive Scarring.*** Increase the troblin’s Armor\nClass by 1. This mutation can stack.\n* <i>7</i> ***Increased Muscle Mass.*** Each of the troblin’s\nmelee weapon attacks deals 1d4 additional\ndamage of the same type. Each time this\nmutation is rolled, increase the bonus by one die\nstep (1d4 to 1d6, 1d6 to 1d8, etc.).\n* <i>8</i> ***Redundant Vital Organs.*** Once per short or long\nrest, if the troblin takes 14 damage or less that\nwould reduce it to 0 hit points, it is reduced to 1\nhit point instead. Each time this mutation is rolled,\nincrease the number of times the troblin can use\nthis ability by 1.\n* <i>9</i> ***Shortened Tendons.*** The troblins has proficiency\nin the Acrobatics skill, and has advantage\non checks and saving throws against being\ngrappled.\n* <i>10</i> ***Extra Arm.*** The troblin grows an additional arm. It\ncan make one additional claw when it takes the\nattack action. Each time this mutation is rolled,\nthe number of claw attacks increases.\n* <i>11</i> ***Hollow Bones.*** The troblin has vulnerability to\nbludgeoning damage, but gains proficiency in\nthe Stealth skill and has a movement speed of 35\nfeet. If this mutation is rolled a second time, the\ntroblin doubles its proficiency bonus when rolling\nDexterity (Stealth) checks. If this mutation is rolled\na third time, reroll.\n* <i>12</i> ***Large Eyes.*** The troblin doubles the range of its\ndarkvision, to a maximum of 120 feet.\n* <i>13</i> ***Two Heads.*** The troblin has proficiency in the\nPerception skill, and advantage on saving\nthrows against being blinded. If the troblin\nalready possesses this mutation, add a vestigial\nface to the troblin’s body. This grants the troblin\nadvantage on Wisdom (Perception) checks that\nrely on sight or smell, in addition to the other\nbenefits. Reroll if this mutation is rolled a third\ntime.\n* <i>14-19</i> ***No Mutation.***\n* <i>20</i> ***Greater Regeneration.*** The troblin’s regeneration\ntrait regains 10 hit points instead of 5 hit points.\nFor each 10 hit points above the original 5 this\ntrait regains for the troblin, increase the troblin’s\nChallenge Rating by 1."
+    },
+    {
+      "name": "Regeneration",
+      "text": "The troblin regains 5 hit points at the start of its turn. If\nthe troblin takes acid or fire damage, this trait doesn’t function at the start\nof the troblin’s next turn. The troblin dies only if it starts its turn with 0 hit\npoints and doesn’t regenerate."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The troblin makes one greatclub attack and one bite attack,\nor one claws attack and one bite attack."
+    },
+    {
+      "name": "Greatclub",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit:\n6 (1d8 + 2) bludgeoning damage."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5\n(1d6 + 2) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

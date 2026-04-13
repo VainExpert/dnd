@@ -1,0 +1,20 @@
+{
+  "id": "magische-waffe",
+  "name": "Magische Waffe",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Bonus Aktion",
+  "range": "Berührung",
+  "components": "V, G",
+  "duration": "1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Paladin",
+    "Waldläufer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du berührst eine nichtmagische Waffe.\nBis der Zauber endet wird die Waffe magisch und hat einen +1 Bonus auf Angriffs- und Schadenswürfe.\nDer Zauber endet früher, wenn du den Zauber erneut wirkst.\n\nAuf höheren Level gewirkt: Bonus auf +2 bei Level 3-5 Platz und +3 bei Level 6 oder höheren Platz"
+}

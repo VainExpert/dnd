@@ -1,0 +1,17 @@
+{
+  "id": "tierbindung",
+  "name": "Tierbindung",
+  "level": 1,
+  "school": "Erkenntnismagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G, M (Stück in Tuch gewickeltes Fell)",
+  "duration": "Konzentration, bis zu 10 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Waldläufer"
+  ],
+  "text": "Du stellst eine telepathische Verbindung zu einem Tier her, das du berührst und dir freundlich gesinnt oder von dir bezaubert ist.\nEs schlägt fehl, wenn der INT-Wert des Tieres größer als 3 ist.\nDie Verbindung ist für die Wirkungsdauer aktiv, solange du und das Tier in Sichtweite zueinander seid.\nDas Tier versteht deine telepathischen Botschaften und sendet dir Emotionen und Konzepte.\nDas Tier bekommt, für die Wirkungsdauer, Vorteil auf Angriffe gegen jede Kreatur in 1,5 m Entfernung von dir, die du sehen kannst."
+}

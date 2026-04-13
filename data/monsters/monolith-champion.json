@@ -1,0 +1,66 @@
+{
+  "name": "Monolith Champion",
+  "size": "Large",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr8",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 17,
+  "hp": {
+    "average": 102,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 12,
+    "con": 16,
+    "int": 10,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "Elvish",
+    "Umbral"
+  ],
+  "challenge": {
+    "cr": "8",
+    "xp": 3900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Blatant Dismissal",
+      "text": "While in a fey court or castle, a monolith champion that scores a successful hit with its greatsword can try to force the substitution of the target with a shadow double. The target must succeed at a DC 14 Charisma saving throw or become invisible, silent, and paralyzed, while an illusory version of itself remains visible and audible.and under the monolith champion's control, shouting for a retreat or the like. Outside fey locales, this ability does not function."
+    },
+    {
+      "name": "Fey Flame",
+      "text": "The ritual powering a monolith champion grants it an inner flame that it can use to enhance its weapon or its fists with additional fire or cold damage, depending on the construct's needs."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The champion makes two greatsword attacks or two slam attacks."
+    },
+    {
+      "name": "Greatsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (3d6 + 4) slashing damage plus 11 (2d10) cold or fire damage."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage plus 11 (2d10) cold or fire damage."
+    }
+  ],
+  "source": "creature"
+}

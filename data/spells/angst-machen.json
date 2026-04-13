@@ -1,0 +1,17 @@
+{
+  "id": "angst-machen",
+  "name": "Angst machen",
+  "level": 1,
+  "school": "Nekromantie",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du weckst Todesangst in einer Kreatur, die du in Reichweite siehst (Konstrukte und Untote sind immun).\nDas Ziel muss einen WIS-Rettungswurf machen.\nBei Fehlschlag: verängstigt vor dir, bis der Zauber endet. Am Ende jedes seiner Züge kann es den Rettungswurf wiederholen und den Effekt bei Erfolg beenden.\n\nAuf höheren Level gewirkt: Pro -Level über 1 ein zusätzliches Ziel (die Ziele müssen beim Wirken höchstens 9 m voneinander entfernt sein)."
+}

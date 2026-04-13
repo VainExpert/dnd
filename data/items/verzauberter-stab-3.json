@@ -1,0 +1,45 @@
+{
+  "id": "verzauberter-stab-3",
+  "type": "item",
+  "name": "Verzauberter Stab, Level 3",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "In diesen Stab ist ein Level 3 Zauber eingebunden. Der Stab hat 6 Ladungen und bekommt 1W6 täglich am Morgen zurück. Wenn die letzte Ladung verbraucht wurde, muss ein W20 gewürfelt werden, bei einer 1 verliert der Stab jegliche magische Eigenschaften. Wenn der Stab getragen wird, kann eine Ladung verwendet werden um den eingebundenen Zauber zu wirken. Der Zauberangriffsbonus ist +7 und der Zauberrettung-SG ist 15.",
+  "tags": [
+    "magisch",
+    "kampf",
+    "stab",
+    "zauber",
+    "ladungen"
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "satan-snake",
+  "name": "Satan Snake",
+  "aliases": [],
+  "source_file": "SatanSnake.monster",
+  "kind": "monster",
+  "npc": false,
+  "size": "Large",
+  "creature_type": "beast",
+  "subtype": null,
+  "alignment": "neutral evil",
+  "armor_class": {
+    "value": 14,
+    "display": "14 (natural armor)"
+  },
+  "hit_points": {
+    "average": 95,
+    "formula": "18d10"
+  },
+  "speed": {
+    "walk": "30 ft.",
+    "fly": "60 ft.",
+    "swim": "30 ft."
+  },
+  "abilities": {
+    "str": {
+      "score": 15,
+      "mod": 2
+    },
+    "dex": {
+      "score": 15,
+      "mod": 2
+    },
+    "con": {
+      "score": 17,
+      "mod": 3
+    },
+    "int": {
+      "score": 6,
+      "mod": -2
+    },
+    "wis": {
+      "score": 12,
+      "mod": 1
+    },
+    "cha": {
+      "score": 8,
+      "mod": -1
+    }
+  },
+  "saving_throws": {
+    "dex": 6,
+    "con": 7
+  },
+  "skills": {},
+  "damage_resistances": [],
+  "damage_immunities": [],
+  "damage_vulnerabilities": [],
+  "special_damage_defenses": [],
+  "condition_immunities": [],
+  "senses": {
+    "blindsight": "10 ft.",
+    "darkvision": "60 ft.",
+    "passive_perception": 11
+  },
+  "languages": {
+    "speaks": [],
+    "understands": [
+      "Common",
+      "Druidic",
+      "Infernal"
+    ]
+  },
+  "challenge_rating": "9",
+  "xp": 5000,
+  "proficiency_bonus": 4,
+  "traits": [
+    {
+      "name": "Primal Surge",
+      "text": "Magic flows through the Snake and gives it the following benefits for 10 min:\n- **Hulking Behemoth**: The Snake grows to Huge size and gains 20 temporary HP. If there is not enough room for huge it takes up the maximum possible space.\n- **Mauler**: All attacks deal one corresponding hit die damage more.\n- **Titanic Stride**: The walking speed increases by 10 ft."
+    }
+  ],
+  "spellcasting": [],
+  "actions": [
+    {
+      "name": "Mutliattack",
+      "text": "The Satan Snake can make 2 attacks per turn: One with its bite and one with its tail or constrict attack."
+    },
+    {
+      "name": "Bite",
+      "text": "_Melee Weapon Attack:_ +6 to hit, reach 1,5 m, one target. _Hit:_ 1d8+2 piercing damage."
+    },
+    {
+      "name": "Tail",
+      "text": "_Melee Weapon attack_: +6 to hit, reach 3 m, one target. _Hit_: 1d6+2 bludgeoning damage."
+    },
+    {
+      "name": "Constrict",
+      "text": "_Melee Weapon Attack_: +6 to hit, reach 1,5 m, one creature. _Hit_: 2d8 + 2 bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can’t constrict another target."
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [
+    {
+      "name": "Intercept Attack",
+      "text": "When a creature the Snake can see hits a target with an attack, and the target is within 5 feet of the Snake, the target instead takes half the damage. The Snake takes the remainder of the damage."
+    }
+  ],
+  "legendary_actions": [],
+  "legendary_actions_per_round": 0,
+  "legendary_description": null,
+  "mythic_actions": [],
+  "lair_actions": [],
+  "regional_effects": [],
+  "display": {
+    "double_columns": false,
+    "separation_point": 0
+  },
+  "import_notes": [
+    "Ignored inconsistent customCr value \"1/8 (25 XP)\" and used cr \"9\".",
+    "Ignored inconsistent customProf value \"2\" and used proficiency bonus +4 from CR."
+  ],
+  "source_format": "monster builder export"
+}

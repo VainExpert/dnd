@@ -1,0 +1,74 @@
+{
+  "name": "Phasma",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr15",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 15,
+  "hp": {
+    "average": 117,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 6,
+    "dex": 20,
+    "con": 15,
+    "int": 15,
+    "wis": 17,
+    "cha": 20
+  },
+  "skills": {},
+  "languages": [
+    "the languages it knew in life"
+  ],
+  "challenge": {
+    "cr": "15",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The phasma’s spellcasting ability is Charisma\n(spell save DC 18, +10 to hit with spell attacks). It can innately cast the\nfollowing spells, requiring no material components:\n\n* At will: <i>detect evil and good</i>\n\n* 3/day each: <i>dispel magic, protection from evil and good</i>\n\n* 1/day each: <i>banishment, (un)holy aura</i>"
+    },
+    {
+      "name": "Flyby",
+      "text": "The phasma doesn’t provoke\nopportunity attacks when it flies out of an\nenemy’s reach."
+    },
+    {
+      "name": "Incorporeal Movement",
+      "text": "The phasma can\nmove through other creatures and objects as\nif they were difficult terrain. It takes 5 (1d10)\nforce damage if it ends its turn inside an object."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the\nphasma has disadvantage on attack rolls, as well\nas on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The phasma makes two phantom\ntouch attacks."
+    },
+    {
+      "name": "Phantom Touch",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to\nhit, reach 5 ft., one target. Hit: 41 (8d8 + 5) necrotic\ndamage, and the target’s Wisdom score is\nlowered by 1d6 and the phasma gains\n5 temporary hit points. The target\ndies if this reduces its Wisdom to\n0. Otherwise, the reduction lasts\nuntil the target finishes a long rest.\n\nIn addition, the target must make a DC\n18 Wisdom saving throw. On a failure, the target can’t take reactions and\nmust roll a d10 at the start of each of its turns to determine its behavior\nfor that turn.\n* ***1.*** The creature uses all its movement to move in a\nrandom direction. To determine the direction, roll\na d8 and assign a direction to each die face. The\ncreature doesn’t take an action this turn.\n* ***2-6.*** The creature doesn’t move or take actions this\nturn.\n* ***7-8.*** The creature uses its action to make a melee\nattack against a randomly determined creature\nwithin its reach. If there is no creature within its\nreach, the creature does nothing this turn.\n* ***9-10.*** The creature can act and move normally.\n\nAt the end of each of its turns, the creature can repeat the saving throw,\nending the effect on itself on a success."
+    },
+    {
+      "name": "Phantasmagoria (Recharge 6)",
+      "type": "special",
+      "text": "The phasma taps into the nightmares\nof each creature it can see that is within 30 feet of it, creating an illusory\nmanifestation of each target’s deepest fears, visible only to that creature.\nEach creature must make a DC 18 Wisdom saving throw, taking 33 (6d10)\npsychic damage on a failed save, or half as much damage on a successful\none. A creature that succeeds on the saving throw is immune to the\nphasma’s Phantasmagoria for the next 24 hours."
+    }
+  ],
+  "source": "creature"
+}

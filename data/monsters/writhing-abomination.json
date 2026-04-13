@@ -1,0 +1,75 @@
+{
+  "name": "Writhing Abomination",
+  "size": "Large",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "large",
+      "aberration",
+      "cr3",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 12,
+  "hp": {
+    "average": 60,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 15,
+    "int": 4,
+    "wis": 6,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The abomination has advantage on\nsaving throws against spells and other magical effects."
+    },
+    {
+      "name": "Regenerative Form",
+      "text": "Whenever the abomination is\nreduced to 0 hit points, it explodes into a mass of\ngore. Dozens of individual tentacles from the\nabomination attempt to crawl away and hide,\nburrowing into the ground or finding nearby nooks and\ncrannies in which they can hide. Over the next week,\nthe escaped tentacles find their way back together and\nreform a new writhing abomination. Once an\nabomination has reformed in this way, it cannot do so\nagain for one month and dying before this time has\npassed results in permanent death."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The abomination makes two attacks with\nits claws and two with its tentacles."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one\ntarget. Hit: 7 (1d6 + 4) slashing damage."
+    },
+    {
+      "name": "Tentacle",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 10 ft.,\none target. Hit: 7 (1d6 + 4) bludgeoning damage and\nthe creature is grappled if it is of size large or smaller.\n\nA creature can break free of this grapple by using its\naction and succeeding on a DC 14 Strength saving\nthrow. A creature can also attack and destroy the\ntentacle to free the grappled creature. Each tentacle\nhas 5 hit points and an AC of 10."
+    },
+    {
+      "name": "Consuming Grasp",
+      "type": "special",
+      "text": "The abomination picks up a single\ncreature that it has grappled and slams that creature\ndown upon its own tentacled back. That creature takes\n11 (2d10) bludgeoning damage and must succeed on\na DC 14 Strength saving throw or become restrained,\notherwise it remains grappled. The abomination can\nonly have one creature restrained at a time."
+    },
+    {
+      "name": "Tentacle Smash",
+      "type": "special",
+      "text": "The abomination picks up two\ncreatures that it has grappled in its tentacles and\nsmashes them together with tremendous force. Each\nof those creatures takes 16 (3d10) bludgeoning\ndamage and are then tossed to an empty space up to\n20 feet away. Those creatures must succeed on a DC\n14 Dexterity saving throw as they hit the ground or fall\nprone."
+    }
+  ],
+  "source": "creature"
+}

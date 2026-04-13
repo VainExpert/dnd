@@ -1,0 +1,87 @@
+{
+  "name": "Ultroloth",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr13",
+      "monster-manual",
+      "yugoloth"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 19,
+  "hp": {
+    "average": 153,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 16,
+    "con": 18,
+    "int": 18,
+    "wis": 15,
+    "cha": 19
+  },
+  "skills": {
+    "Intimidation": 9,
+    "Perception": 7,
+    "Stealth": 8
+  },
+  "languages": [
+    "Abyssal",
+    "Infernal",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "13",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The ultroloth's innate spellcasting ability is Charisma (spell save DC 17). The ultroloth can innately cast the following spells, requiring no material components:\n\n* At will: <i>alter self, clairvoyance, darkness, detect magic, detect thoughts, dispel magic, invisibility </i>(self only)<i>, suggestion</i>\n\n* 3/day each: <i>dimension door, fear, wall of fire</i>\n\n* 1/day each: <i>fire storm, mass suggestion</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The ultroloth has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The ultroloth's weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The ultroloth can use its Hypnotic Gaze and makes three melee attacks."
+    },
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands."
+    },
+    {
+      "name": "Hypnotic Gaze",
+      "type": "special",
+      "text": "The ultroloth's eyes sparkle with opalescent light as it targets one creature it can see within 30 feet of it. If the target can see the ultroloth, the target must succeed on a DC 17 Wisdom saving throw against this magic or be charmed until the end of the ultroloth's next turn. The charmed target is stunned. If the target's saving throw is successful, the target is immune to the ultroloth's gaze for the next 24 hours."
+    },
+    {
+      "name": "Teleport",
+      "type": "special",
+      "text": "The ultroloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
+    },
+    {
+      "name": "Variant: Summon Yugoloth (1/Day)",
+      "type": "special",
+      "text": "The yugoloth chooses what to summon and attempts a magical summoning.\n\nAn ultroloth has a 50 percent chance of summoning 1d6 mezzoloths, 1d4 nycaloths, or one ultroloth.\n\nA summoned yugoloth appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other yugoloths. The summoned yugoloth remains for 1 minute, until it or its summoner dies, or until its summoner takes a bonus action to dismiss it."
+    }
+  ],
+  "source": "creature"
+}

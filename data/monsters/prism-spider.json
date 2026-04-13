@@ -1,0 +1,78 @@
+{
+  "name": "Prism Spider",
+  "size": "Small",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "small",
+      "monstrosity",
+      "cr9",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 71,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 16,
+    "con": 16,
+    "int": 2,
+    "wis": 13,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 9,
+    "Stealth": 11,
+    "Survival": 9
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Shifting Power",
+      "text": "As the prism spider shifts color, its immunities and\nattacks change. Roll a d6 at the start of the spider’s turn and consult the\ntable below. Use the result in place of one of the spider’s attacks.\n\n1. <i>Green/Acid</i> ***Spit Acid.*** The spider spits a 30-foot\nline of acid that is 5 feet wide. Each\ncreature in the line must make a DC 16\nDexterity saving throw, taking 31 (9d6)\nacid damage on a failed save, or half\nas much damage on a successful one.\n\n2. <i>Orange/Fire</i> ***Inferno Shield.*** The spider is wreathed in\nintense, thick flames, shedding bright\nlight in a 20-foot radius and dim light\nfor an additional 20 feet. Whenever a\ncreature within 5 feet of the spider hits\nit with a melee attack before the end\nof the prism spider’s next turn, the shield\nerupts, dealing 27 (6d8) fire damage to\nthe creature.\n\n3. <i>Grey/Disease</i> ***Fetid Bite.*** When the prism spider makes\na bite attack, the target must succeed\non a DC 17 Constitution saving throw\nagainst disease or become poisoned\nuntil the disease is cured. Every 24 hours\nthat elapse, the target must repeat\nthe saving throw, reducing its hit point\nmaximum by 16 (3d10) on a failure.\nThe disease is cured on a success. The\ntarget dies if the disease reduces its hit\npoint maximum to 0. This reduction to\nthe target’s hit point maximum lasts until\nthe disease is cured.\n\n4. <i>Blue/Lightning</i> ***Shocking Aura.*** Until the end of the\nspider’s next turn, creatures who enter\nor begin their turns within 15 feet of\nthe prism spider must make a DC 16\nDexterity saving throw, taking 27 (6d8)\nlightning damage on a failed saving\nthrow, or half as much damage on\na successful one. Creatures wearing\nmetal armor have disadvantage on this\nsaving throw.\n\n5. <i>White/Cold</i> ***Hoarfrost.*** Until the beginning of the\nspider’s next turn, creatures who enter\nor begin their turns within 15 feet of\nthe prism spider must make a DC 16\nConstitution saving throw. On a failed\nsaving throw, the target takes 28 (8d6)\ncold damage. A creature who takes\ncold damage from this effect has their\nmovement speed halved, cannot take\nreactions, and can only take one action\nor one bonus action on their turn. They\ncan only make one melee or ranged\nattack on their turn, regardless of other\nclass features or magic items.\n\n6. <i>Purple/--</i> ***Heal.*** The spider magically heals\nitself for 36 (8d8) damage, and it has\nadvantage on saving throws against\nspells and other magical effects until the\nend of its next turn."
+    },
+    {
+      "name": "Spider Climb",
+      "text": "The prism spider can climb difficult surfaces, including\nupside down on ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Web Sense",
+      "text": "While in contact with a web, the spider knows the exact\nlocation of any other creature in contact with the same web."
+    },
+    {
+      "name": "Web Walker",
+      "text": "The spider ignores movement restrictions caused by\nwebbing."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The spider uses one of its shifting power abilities and\nmakes a bite attack."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 13\n(2d8 + 4) piercing damage."
+    },
+    {
+      "name": "Web (Recharge 5–6)",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +7 to hit, range 30/60\nft., one creature. Hit: The target is restrained by webbing. As an\naction, the restrained target can make a DC 14 Strength\ncheck, bursting the webbing on a success. The\nwebbing can also be attacked and destroyed (AC\n10; hp 10; the same resistances that the prism\nspider is benefiting from at that time; immunity\nto bludgeoning, poison, and psychic damage)."
+    }
+  ],
+  "source": "creature"
+}

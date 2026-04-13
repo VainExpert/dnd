@@ -1,0 +1,16 @@
+{
+  "id": "schauriger-strahl",
+  "name": "Schauriger Strahl",
+  "level": 0,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "36 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Hexenmeister"
+  ],
+  "text": "Du schleuderst einen Strahl knisternder Energie.\nMache einen Fernkampf-Zauberangriff gegen eine Kreatur oder einen Gegenstand in Reichweite.\nBei Treffer: 1W10 Kraftschaden.\n\nAuf höheren Level: 2 Strahlen auf Level 5, 3 auf Level 11, 4 auf Level 17. Du kannst sie auf dasselbe oder verschiedene Ziele richten; für jeden Strahl eigener Angriffswurf."
+}

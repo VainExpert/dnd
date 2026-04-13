@@ -1,0 +1,70 @@
+{
+  "name": "Swwarm of Zoblins",
+  "size": "Large",
+  "type": {
+    "type": "swarm",
+    "tags": [
+      "large",
+      "swarm",
+      "cr3",
+      "nerzugals-extended-bestiary",
+      "goblinoids"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 9,
+  "hp": {
+    "average": 66,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 6,
+    "con": 14,
+    "int": 5,
+    "wis": 8,
+    "cha": 4
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages it knew in life but can’t speak"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Undead Swarm Fortitude",
+      "text": "The swarm fights at full\nstrength until it is completely destroyed."
+    },
+    {
+      "name": "Swarm",
+      "text": "The swarm can occupy another creature's\nspace and vice versa, and the swarm can move\nthrough any opening large enough for a Small\ngoblin. The swarm can't regain hit points or gain\ntemporary hit points."
+    },
+    {
+      "name": "Plagued",
+      "text": "When the swarm hits with an attack, it\ndeals an extra 10 (3d6) necrotic damage (included\nin the attack)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The swarm uses its pull under ability if\nable, then uses its gnaw and claw attack."
+    },
+    {
+      "name": "Gnaw and Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit,\nreach 0 ft., one target in the swarm’s space. Hit: 11\n(2d6 + 4) piercing damage plus 10 (3d6) necrotic\ndamage, and the target must succeed a DC 12\nConstitution saving throw or become poisoned\nuntil the end of their next turn."
+    },
+    {
+      "name": "Pull Under",
+      "type": "special",
+      "text": "The swarm attempts to envelope a\ncreature within its space. The target must succeed\non a DC 12 Strength saving throw or be knocked\nprone and considered grappled (escape DC 12) as\nthey are pinned to the ground under a sea of\nzombies. This ability can only be used if the swarm\nis above half of its maximum hit points."
+    }
+  ],
+  "source": "creature"
+}

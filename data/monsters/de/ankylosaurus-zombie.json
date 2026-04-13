@@ -1,0 +1,49 @@
+{
+  "name": "Zombie-Ankylosaurus",
+  "size": "Riesig",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "Huge",
+      "undead",
+      "cr3",
+      "tomb-of-annihilation"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 14,
+  "hp": {
+    "average": 68,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 9,
+    "con": 15,
+    "int": 2,
+    "wis": 6,
+    "cha": 3
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Die Standhaftigkeit der Untoten",
+      "text": "Wenn der Schaden die Trefferpunkte des Zombies auf 0 reduziert, muss er einen Konstitutionsrettungswurf mit einer Schwierigkeitsklasse von 5 + dem erlittenen Schaden ausführen, es sei denn, es handelt sich um Strahlenschaden oder um einen kritischen Treffer. Bei Erfolg sinken die Trefferpunkte des Zombies stattdessen auf 1."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf den Treffer, Reichweite10 ft: , ein Ziel. Treffer: 18 (4d6 +4) Bludgeoning-Schaden. Ist das Ziel eine Kreatur, muss sie einenDC 14Stärke-Rettungswurf bestehen oder wird zu Boden geworfen."
+    }
+  ],
+  "source": "creature"
+}

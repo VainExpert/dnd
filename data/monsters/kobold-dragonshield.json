@@ -1,0 +1,72 @@
+{
+  "name": "Kobold Dragonshield",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr1",
+      "volos-guide",
+      "kobold"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 15,
+  "hp": {
+    "average": 44,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 15,
+    "con": 14,
+    "int": 8,
+    "wis": 9,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 1
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Dragon's Resistance",
+      "text": "The kobold has resistance to a type of damage based on the color of dragon that invested it with power (choose or roll a d10): 1-2, acid (black); 3-4, cold (white); 5-6, fire (red); 7-8, lightning (blue); 9-10, poison (green)."
+    },
+    {
+      "name": "Heart of the Dragon",
+      "text": "If the kobold is frightened or paralyzed by an effect that allows a saving throw, it can repeat the save at the start of its turn to end the effect on itself and all kobolds within 30 feet of it. Any kobold that benefits from this trait (including the dragonshield) has advantage on its next attack roll."
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't incapacitated."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The kobold makes two melee attacks."
+    },
+    {
+      "name": "Spear",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 it, one target. Hit: 4 (ld6+l) piercing damage, or 5 (ld8+l) piercing damage if used with two hands to make a melee attack."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "elemente-absorbieren",
+  "name": "Elemente absorbieren",
+  "level": 1,
+  "school": "Bannmagie",
+  "casting_time": "1 Reaktion, die du nimmst, wenn du Säure-, Kälte-, Feuer-, Blitz- oder Donnerschaden erleidest",
+  "range": "Selbst",
+  "components": "G",
+  "duration": "1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Druide",
+    "Waldläufer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Fängt ein wenig der Energie ab, schwächt den Effekt auf dich und speichert sie für deinen nächsten Nahkampfangriff.\nDu erhältst bis zum Beginn deines nächsten Zuges Resistenz gegen den auslösenden Schadenstyp.\nBei deinem ersten Nahkampfangriff in deinem nächsten Zug nimmt dein Ziel 1W6 Extraschaden des auslösenden Schadenstyps.\n\nAuf höheren Level gewirkt: pro Level 1W6 mehr Extraschaden"
+}

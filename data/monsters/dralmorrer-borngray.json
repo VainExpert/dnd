@@ -1,0 +1,85 @@
+{
+  "name": "Dralmorrer Borngray",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "tyranny-of-dragons",
+      "high elf"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 16,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 14,
+    "int": 16,
+    "wis": 10,
+    "cha": 8
+  },
+  "skills": {
+    "Arcana": 5,
+    "Deception": 1,
+    "Insight": 2,
+    "Perception": 2,
+    "Religion": 5
+  },
+  "languages": [
+    "Common",
+    "Bullywug",
+    "Draconic",
+    "Elvish",
+    "Goblin",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Fey Ancestry",
+      "text": "Dralmorrer has advantage on saving throws against being charmed, and magic can't put him to sleep."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "Dralmorrer is a 7th-level spellcaster that uses Intelligence as his spellcasting ability (spell save DC 13, +5 to hit with spell attacks). Dralmorrer has the following spells prepared from the wizard spell list:\n\n* Cantrips (at will): <i>fire bolt, prestidigitation, shocking grasp</i>\n\n* 1st level (4 slots): <i>longstrider, magic missile, shield, thunderwave</i>\n\n* 2nd level (2 slots): <i>magic weapon, misty step</i>"
+    },
+    {
+      "name": "War Magic",
+      "text": "When Dralmorrer uses his action to cast a cantrip, he can also take a bonus action to make one weapon attack."
+    },
+    {
+      "name": "Weapon Bond",
+      "text": "Provided his longsword is on the same plane Dralmorrer can take a bonus action to teleport it to his hand."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Dralmorrer attacks twice, either with his longsword or dagger."
+    },
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage."
+    },
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or ranged 20 ft./60 ft., one target. Hit: 6 (1d4 + 4) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

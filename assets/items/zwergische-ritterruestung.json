@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-zwergische-ritterruestung",
+  "type": "item",
+  "name": "Zwergische Ritterrüstung",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "armor",
+  "rarity": "sehr selten",
+  "requires_attunement": true,
+  "attunement_text": "Ritterrüstung",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diese Rüstung trägst, erhältst du einen Bonus von +2 auf deine RK. Wenn ein Effekt dich gegen deinen Willen über den Boden bewegt, kannst du außerdem die Entfernung dieser Bewegung als Reaktion um bis zu drei Meter reduzieren.",
+  "tags": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "hexenauge",
+  "type": "item",
+  "name": "Hexenauge",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 500,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein Hexenauge hat 3 Ladungen. Wenn das Auge gehalten oder getragen wird kann eine Ladng verwendet werden um Dunkelsicht (nur auf dich selbst) oder Unsichtbares sehen gewirkt werden. Das Hexenauge bekommt alle Ladungen am Morgen zurück. Zirkelsensor: Das Hexenauge eines Hexenzirkels kann von einer zugehörigen Hexe als Aktion verwendet werden um all das zu sehen was das Auge sieht, solange sich die Hexe darauf konzentriert. Diesen Effekt können mehere Hexen nutzen.",
+  "tags": [
+    "magisch",
+    "auge",
+    "hexen",
+    "zauber",
+    "ladungen",
+    "hexenzirkel",
+    "aktion"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "fliegende-karten",
+  "name": "Fliegende Karten",
+  "level": 2,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (4,5 m Kegel)",
+  "components": "V, G, M (Karten-Blatt)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du wirfst einen 4,5 m Kegel an spektralen Karten.\nJede Kreatur in dem Bereich muss einen DEX-Rettungswurf machen.\nBei Fehlschlag: 2W10 Energieschaden und es wird blind bis zum Ende seines nächsten Zuges.\nBei Erfolg: nur die Hälfte des Schadens und nicht blind.\n\nAuf höheren Level gewirkt: pro Level 1W10 mehr Energieschaden"
+}

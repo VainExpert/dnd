@@ -1,0 +1,75 @@
+{
+  "name": "Androsphinx",
+  "size": "Groß",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr17",
+      "monster-manual"
+    ]
+  },
+  "alignment": "gesetztreu-neutral",
+  "ac": 17,
+  "hp": {
+    "average": 199,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 22,
+    "dex": 10,
+    "con": 20,
+    "int": 16,
+    "wis": 18,
+    "cha": 23
+  },
+  "skills": {
+    "Arcana": 9,
+    "Perception": 10,
+    "Religion": 15
+  },
+  "languages": [
+    "Common",
+    "Sphinx"
+  ],
+  "challenge": {
+    "cr": "17",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Unergründlich",
+      "text": "Die Sphinx ist immun gegen alle Effekte, die ihre Gefühle wahrnehmen oder ihre Gedanken lesen würden, sowie gegen alle Wahrsagezauber, denen sie sich widersetzt. Weisheitswürfe (Einsicht), mit denen die Absichten oder die Aufrichtigkeit der Sphinx ermittelt werden sollen, erfolgen mit Nachteil."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Angriffe der Sphinx sind magischer Natur."
+    },
+    {
+      "name": "Zaubersprechen",
+      "text": "Die Sphinx ist eine Zauberwirkerin der Stufe 12. Ihre Zauberfertigkeit ist Weisheit (ZauberrettungswurfDC 18, +10 auf Treffer bei Zauberangriffen). Sie benötigt keine materiellen Komponenten, um ihre Zauber zu wirken. Die Sphinx hat die folgenden Klerikerzauber vorbereitet:\n\n* Cantrips (beliebig oft): Heilige Flamme, Erbarmen für Sterbende, Thaumaturgie\n\n* 1. Stufe (4 Plätze): Befehl, Böses und Gutes erkennen, Magie erkennen\n\n* 2. Stufe (3 Plätze): Geringe Wiederherstellung, Zone der Wahrheit\n\n* 3. Stufe (3 Plätze): Magie bannen, Sprachen\n\n* 4. Stufe (3 Plätze): Verbannung, Bewegungsfreiheit\n\n* 5. Stufe (2 Plätze): Flammenschlag, Große Wiederherstellung\n\n* 6. Stufe (1 Platz): Heldenfest"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Die Sphinx führt zwei Klauenangriffe aus."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +12 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 17 (2d10 + 6) Schnittschaden."
+    },
+    {
+      "name": "Brüllen (3 Mal pro Tag)",
+      "type": "special",
+      "text": "Die Sphinx stößt ein magisches Brüllen aus. Jedes Mal, wenn sie vor dem Ende einer langen Ruhepause brüllt, wird das Brüllen lauter und die Wirkung ist anders, wie unten beschrieben. Jede Kreatur im Umkreis500 feetvon  der Sphinx, die das Brüllen hören kann, muss einen Rettungswurf durchführen.\n\nErstes Brüllen. Jede Kreatur, die einenDC 18  Weisheits-Rettungswurf verfehlt, ist 1 Minute lang verängstigt. Eine verängstigte Kreatur kann den Rettungswurf am Ende jedes ihrer Züge wiederholen und beendet den Effekt auf sich selbst bei Erfolg.\n\nZweites Brüllen. Jede Kreatur, die einenDC 18  Weisheits-Rettungswurf verfehlt, ist 1 Minute lang betäubt und verängstigt. Eine verängstigte Kreatur ist gelähmt und kann den Rettungswurf am Ende jedes ihrer Züge wiederholen; bei Erfolg endet der Effekt auf sie.\n\nDrittes Brüllen. Jede Kreatur führt einenDC 18  Konstitutions-Rettungswurf durch. Bei einem misslungenen Rettungswurf erleidet die Kreatur 44 (8d10) Blitzschaden und wird zu Boden geworfen. Bei einem erfolgreichen Rettungswurf erleidet die Kreatur nur die Hälfte des Schadens und wird nicht zu Boden geworfen."
+    }
+  ],
+  "source": "creature"
+}

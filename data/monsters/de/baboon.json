@@ -1,0 +1,51 @@
+{
+  "name": "Pavian",
+  "size": "Klein",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "small",
+      "beast",
+      "cr0",
+      "monster-manual"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 12,
+  "hp": {
+    "average": 3,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 11,
+    "int": 4,
+    "wis": 12,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Taktiken im Rudel",
+      "text": "Der Pavian hat einen Vorteil bei einem Angriffswurf gegen eine Kreatur, wenn sich mindestens einer seiner Verbündeten in einer Entfernung von 1,5 m[Entfernung] von der Kreatur befindet und dieser Verbündete nicht handlungsunfähig ist."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +1 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 1 (1d4 - 1) Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

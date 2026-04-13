@@ -1,0 +1,53 @@
+{
+  "name": "Crawling Claw",
+  "size": "Tiny",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "tiny",
+      "undead",
+      "cr0",
+      "monster-manual"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 12,
+  "hp": {
+    "average": 2,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 14,
+    "con": 11,
+    "int": 5,
+    "wis": 10,
+    "cha": 4
+  },
+  "skills": {},
+  "languages": [
+    "understands Common but can't speak"
+  ],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Turn Immunity",
+      "text": "The claw is immune to effects that turn undead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning or slashing damage (claw's choice) ."
+    }
+  ],
+  "source": "creature"
+}

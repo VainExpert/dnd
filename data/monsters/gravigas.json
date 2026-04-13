@@ -1,0 +1,79 @@
+{
+  "name": "Gravigas",
+  "size": "Large",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr9",
+      "nerzugals-extended-bestiary",
+      "demon"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 17,
+  "hp": {
+    "average": 119,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 17,
+    "con": 16,
+    "int": 12,
+    "wis": 14,
+    "cha": 7
+  },
+  "skills": {
+    "Arcana": 5,
+    "Athletics": 8,
+    "Intimidation": 2
+  },
+  "languages": [
+    "Common",
+    "Infernal",
+    "Abyssal"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Gravity Well",
+      "text": "The demon exudes a powerful gravity\nfield in a 30-foot radius around itself. This area is\nconsidered difficult terrain for all non-evil creatures.\nOther creatures within this field cannot jump or fly\nand have disadvantage on Strength and Dexterity\nchecks. Additionally, all ranged weapon attacks\nagainst the demon are made with disadvantage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The demon makes three attacks: two\nwith is claws and one with its tail."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5ft.,\none target. Hit: 8 (1d8 + 4) slashing damage plus 9\n(2d8) force damage."
+    },
+    {
+      "name": "Tail",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 10 ft.,\none target. Hit: 15 (2d10 + 4) slashing damage\nplus 9 (2d8) force damage."
+    },
+    {
+      "name": "Crushing Forces (Recharge 6)",
+      "type": "special",
+      "text": "The demon causes the\npower of the gravitational field to increase tenfold\nfor a moment. Each creature in the area of the\ngravity well must make a DC 15 Strength saving\nthrow, taking 44 (8d10) bludgeoning damage and\nbeing knocked prone on a failed save, or half as\nmuch damage and not knocked prone on a\nsuccessful one."
+    },
+    {
+      "name": "Gravity Surge (3/Day)",
+      "type": "special",
+      "text": "The demon causes the\ngravitational forces around it to surge with power.\nEach creature in the area of the gravity well must\nsucceed on a DC 15 Strength saving throw or be\npulled to an unoccupied space adjacent to the\ndemon. Afterwards, the demon makes a claw attack\nagainst each enemy pulled, making a separate\nattack roll for each attack."
+    }
+  ],
+  "source": "creature"
+}

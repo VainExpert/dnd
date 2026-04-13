@@ -1,0 +1,72 @@
+{
+  "name": "Lava Child",
+  "size": "Medium",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 27,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 11,
+    "con": 13,
+    "int": 10,
+    "wis": 11,
+    "cha": 11
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "Ignan",
+    "Lava Child"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Heated Body",
+      "text": "A creature that touches the lava child or hits it with a\nmelee attack while within 5 ft. of it takes 7 (2d6) fire damage."
+    },
+    {
+      "name": "Metal Immunity",
+      "text": "Lava children are unaffected by metal. They can walk\nthrough solid metal doors as if the door wasn’t there. Metal weapons, even\nmagical, have no effect on lava children. Lava children make all attacks\nwith advantage against foes wearing metal armor."
+    },
+    {
+      "name": "Water Vulnerability",
+      "text": "For every 1 gallon of water splashed on the lava\nchild, it takes 3 cold damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The lava child makes one bite attack and one attack with\nits claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5\n(1d8 + 1) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

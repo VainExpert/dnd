@@ -1,0 +1,66 @@
+{
+  "name": "Behörde",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "medium",
+      "celestial",
+      "cr6",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "any good alignment",
+  "ac": 19,
+  "hp": {
+    "average": 97,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 17,
+    "int": 14,
+    "wis": 16,
+    "cha": 16
+  },
+  "skills": {},
+  "languages": [
+    "all",
+    "telepathy 18 m."
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Engelswaffen",
+      "text": "Die Angriffe der Autorität\nsind magischer Natur. Wenn die Autorität mit\neiner beliebigen Waffe trifft, verursacht die Waffe zusätzlich 9 (2d8)\nStrahlungsschaden (im Angriff enthalten)."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Die Autorität hat einen Vorteil\nbei Rettungswürfen gegen Zauber und andere magische\nEffekte, die von bösen Charakteren und Quellen ausgehen."
+    },
+    {
+      "name": "Schutzaura gegen das Böse",
+      "text": "Böse Kreaturen\nerhalten einen Nachteil bei Angriffswürfen gegen alle\nVerbündeten innerhalb5 feetdes Wirkungsbereichs der Autorität. Verbündete in diesem\nBereich können nicht von bösen Kreaturen verzaubert,\nverängstigt oder besessen werden. Ist ein Verbündeter bereits durch böse Magie verzaubert,\nverängstigt oder besessen, erhält er\neinen Vorteil bei jedem neuen Rettungswurf gegen\nden entsprechenden Effekt."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Die Autorität führt drei Angriffe\nmit dem Leuchtenden Schwert aus."
+    },
+    {
+      "name": "Leuchtendes Schwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 auf Treffer,\nReichweite10 ft: , ein Ziel. Treffer: 14 (3d6 + 4) Schnittschaden\nund 9 (2d8) Strahlungsschaden. Böse Kreaturen erleiden zusätzlich 9 (2d8) Strahlungsschaden."
+    }
+  ],
+  "source": "creature"
+}

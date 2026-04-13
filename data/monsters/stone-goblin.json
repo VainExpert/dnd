@@ -1,0 +1,65 @@
+{
+  "name": "Stone Goblin",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 14,
+  "hp": {
+    "average": 42,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 18,
+    "int": 13,
+    "wis": 16,
+    "cha": 12
+  },
+  "skills": {
+    "Athletics": 5,
+    "Perception": 5
+  },
+  "languages": [
+    "Common",
+    "Goblin",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The stone goblin’s spellcasting\nability is Wisdom (spell save DC 13, +5 to hit with\nspell attacks). The stone goblin can innately cast the\nfollowing spells, requiring no material components:\n\n* At will: <i>acid splash, mending, resistance, true strike</i>\n\n* 3/day each: <i>bane, bless, command, heroism, sanctuary, shield</i>\n\n* 1/day: <i>meld into stone</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The stone goblin has advantage on\nsaving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Warhammer",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage, or 8 (1d10 + 3) bludgeoning damage if used with two hands."
+    },
+    {
+      "name": "Light Crossbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +2 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

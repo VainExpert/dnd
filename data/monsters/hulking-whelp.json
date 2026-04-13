@@ -1,0 +1,64 @@
+{
+  "name": "Hulking Whelp",
+  "size": "Small",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "small",
+      "fey",
+      "cr5",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 15,
+  "hp": {
+    "average": 94,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 21,
+    "dex": 10,
+    "con": 18,
+    "int": 7,
+    "wis": 14,
+    "cha": 9
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "5",
+    "xp": 1800,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Calm State",
+      "text": "When a hulking whelp is calm and unafraid, it uses the following statistics instead of those listed above: Size Small; HP 9 (6d6 . 12); Speed 20 ft.; STR 8 (-1); CON 6 (-2); Languages Common, Sylvan"
+    },
+    {
+      "name": "Poor Senses",
+      "text": "A hulking whelp has poor hearing and is nearsighted. It can see in normal or dim light up to 30 feet and hear sounds from up to 60 feet away."
+    },
+    {
+      "name": "Unleashed Emotion",
+      "text": "When a hulking whelp feels threatened - it's touched, intimidated, cornered, attacked, or even just if a stranger moves adjacent to the whelp - it immediately grows from size Small to Huge as a reaction. If the whelp was attacked, this reaction occurs after the attack is made but before damage is done. Nearby creatures and objects are pushed to the nearest available space and must make a successful DC 15 Strength saving throw or fall prone. Weapons, armor, and other objects worn or carried by the hulking whelp grow (and shrink again) proportionally when it changes size. Overcome by raw emotion, it sets about destroying anything and everything it can see (which isn't much) and reach (which is quite a lot). The transformation lasts until the hulking whelp is unaware of any nearby creatures for 1 round, it drops to 0 hit points, it has 5 levels of exhaustion, or it's affected by a calm emotions spell or comparable magic. The transformation isn't entirely uncontrollable; people or creatures the whelp knows and trusts can be near it without triggering the reaction. Under the wrong conditions, such as in a populated area, a hulking whelp's Unleashed Emotion can last for days."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The hulking whelp makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 15 ft., one target. Hit: 18 (3d8 + 5) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

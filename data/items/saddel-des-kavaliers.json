@@ -1,0 +1,46 @@
+{
+  "id": "saddel-des-kavaliers",
+  "type": "item",
+  "name": "Saddel des Kavaliers",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 300,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Saddel hat die folgenden Eigenschaften: Beschütztes Reittier: Angriffe gegen das Reittier haben Nachteil. Sicherer Reiter: Du kannst nicht gegen deinen Willen aus dem Saddel gerissen werden. Das funktioniert nicht wenn du kampfunfähig bist.",
+  "tags": [
+    "magisch",
+    "saddel",
+    "reittier",
+    "bewegung",
+    "transport",
+    "kampf"
+  ]
+}

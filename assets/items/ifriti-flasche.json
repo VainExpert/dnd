@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-ifriti-flasche",
+  "type": "item",
+  "name": "Ifriti-Flasche",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "adventuring-gear",
+  "rarity": "sehr selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese bemalte Glasflasche wiegt 0,5 Kilogramm. Du kannst als Aktion den Stopfen ziehen. Daraufhin wabert ein dicker Rauch aus der Flasche. Am Ende deines Zugs verschwindet der Rauch mit einer harmlosen Stichflamme und ein Ifriti erscheint an einer freien Stelle im Abstand von bis zu neun Metern von dir. Wenn die Flasche zum ersten Mal geöffnet wird, würfelt der SL, um zu bestimmen, was passiert.",
+  "tags": []
+}

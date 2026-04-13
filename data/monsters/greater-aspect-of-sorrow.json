@@ -1,0 +1,72 @@
+{
+  "name": "Greater Aspect of Sorrow",
+  "size": "Large",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr6",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 17,
+  "hp": {
+    "average": 95,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 18,
+    "int": 6,
+    "wis": 10,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages of its creator but can’t speak"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Aura of Silence",
+      "text": "Living creatures within 30 feet of\nthe aspect are under the effects of the silence spell.\nThis effect ends when the aspect is reduced to 0\nhit points."
+    },
+    {
+      "name": "Immutable Form",
+      "text": "The aspect is immune to any spell\nor effect that would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The aspect has advantage on\nsaving throws against spell and other magical\neffects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The aspect's weapon attacks are\nmagical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The aspect makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5ft.,\none target. Hit: 10 (2d6 + 3) bludgeoning damage.\nIf the target is a creature, it must succeed on a DC\n14 Wisdom saving throw or become frightened\nuntil the end of its next turn."
+    },
+    {
+      "name": "Wave of Dread (1/Day)",
+      "type": "special",
+      "text": "Each hostile creature within\n30 feet of the aspect must succeed on a DC 14\nWisdom saving throw or become frightened for\none minute. A creature can repeat the saving throw\nat the end of each of its turns, ending the effect on\nitself on a success."
+    }
+  ],
+  "source": "creature"
+}

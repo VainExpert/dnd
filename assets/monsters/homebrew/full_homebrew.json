@@ -1,0 +1,608 @@
+{
+  "WORK-IN-PROGRESS-WARNING": "THIS IS A DEVELOPMENT VERSION. USE AT OWN RISK",
+  "id": "sammlung-bisherige-statblocks-de",
+  "src": "homebrew/collection",
+  "name": "Sammlung: Bisherige Monster- & NPC-Statblocks (DE)",
+  "statblocks": [
+    {
+      "id": "begleiter-glimmerwing-flugeichhoernchen",
+      "src": "homebrew",
+      "name": "Glimmerwing-Flugeichhörnchen (Feenbegleiter)",
+      "size": "Winzig",
+      "type": "Fee (Begleiter)",
+      "alignment": "ungebunden",
+      "armor-class": { "value": "12", "info": "" },
+      "hit-points": { "value": "1", "formula": "1W4-1" },
+      "speeds": { "walk": "6 m", "climb": "6 m" },
+      "attributes": [
+        { "class": "str", "value": "2", "modifier": "-4" },
+        { "class": "dex", "value": "15", "modifier": "+2" },
+        { "class": "con", "value": "8", "modifier": "-1" },
+        { "class": "int", "value": "2", "modifier": "-4" },
+        { "class": "wis", "value": "12", "modifier": "+1" },
+        { "class": "cha", "value": "6", "modifier": "-2" }
+      ],
+      "saving-throws": [],
+      "skills": [],
+      "senses": ["Passive Wahrnehmung 11"],
+      "languages": [],
+      "challenge": "0",
+      "xp": "10",
+      "traits": [
+        {
+          "name": "Gleiten",
+          "value": "Solange das Eichhörnchen nicht handlungsunfähig ist, kann es Stürze abfangen und gleiten. Bei einem Fall von mindestens 3 m kann es sich für jede 3 m Fallstrecke bis zu 6 m horizontal bewegen und erleidet keinen Fallschaden."
+        },
+        {
+          "name": "Feensinn (hörbasiert)",
+          "value": "Das Eichhörnchen hat Vorteil bei Weisheitswürfen (Wahrnehmung), die auf Hören beruhen."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Knabbern",
+          "value": "Nahkampfwaffenangriff: +0 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 1 Stichschaden."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    {
+      "id": "begleiter-mosscap-igel",
+      "src": "homebrew",
+      "name": "Mosscap-Igel (Feenbegleiter)",
+      "size": "Winzig",
+      "type": "Fee (Begleiter)",
+      "alignment": "ungebunden",
+      "armor-class": { "value": "13", "info": "" },
+      "hit-points": { "value": "1", "formula": "1W4-1" },
+      "speeds": { "walk": "6 m" },
+      "attributes": [
+        { "class": "str", "value": "3", "modifier": "-4" },
+        { "class": "dex", "value": "16", "modifier": "+3" },
+        { "class": "con", "value": "8", "modifier": "-1" },
+        { "class": "int", "value": "2", "modifier": "-4" },
+        { "class": "wis", "value": "12", "modifier": "+1" },
+        { "class": "cha", "value": "3", "modifier": "-4" }
+      ],
+      "saving-throws": [],
+      "skills": ["Wahrnehmung +3", "Heimlichkeit +5"],
+      "senses": ["Passive Wahrnehmung 13"],
+      "languages": [],
+      "challenge": "0",
+      "xp": "10",
+      "traits": [
+        { "name": "Gutes Gehör und Geruch", "value": "Der Igel hat Vorteil bei Weisheitswürfen (Wahrnehmung), die auf Hören oder Riechen beruhen." },
+        {
+          "name": "Zusammenrollen",
+          "value": "Als Bonusaktion rollt sich der Igel zusammen. Bis er sich wieder entrollt (keine Aktion), hat er Resistenz gegen Hieb-, Stich- und Wuchtschaden durch nichtmagische Angriffe, aber seine Bewegungsrate wird zu 0."
+        }
+      ],
+      "actions": [
+        { "name": "Winziger Biss", "value": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 1 Stichschaden." }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    {
+      "id": "begleiter-lantern-eyed-eule-sprechend",
+      "src": "homebrew",
+      "name": "Laternenaugen-Eule (Feenbegleiter, sprechend)",
+      "size": "Winzig",
+      "type": "Fee (Begleiter)",
+      "alignment": "ungebunden",
+      "armor-class": { "value": "11", "info": "" },
+      "hit-points": { "value": "1", "formula": "1W4-1" },
+      "speeds": { "walk": "1,5 m", "fly": "18 m" },
+      "attributes": [
+        { "class": "str", "value": "3", "modifier": "-4" },
+        { "class": "dex", "value": "13", "modifier": "+1" },
+        { "class": "con", "value": "8", "modifier": "-1" },
+        { "class": "int", "value": "8", "modifier": "-1" },
+        { "class": "wis", "value": "12", "modifier": "+1" },
+        { "class": "cha", "value": "10", "modifier": "+0" }
+      ],
+      "saving-throws": [],
+      "skills": ["Wahrnehmung +3", "Heimlichkeit +3"],
+      "senses": ["Dunkelsicht 36 m", "Passive Wahrnehmung 13"],
+      "languages": ["Gemeinsprache", "Sylvan"],
+      "challenge": "0",
+      "xp": "10",
+      "traits": [
+        { "name": "Vorbeiflug", "value": "Die Eule provoziert keine Gelegenheitsangriffe, wenn sie aus der Reichweite eines Feindes herausfliegt." },
+        { "name": "Gutes Gehör und Sicht", "value": "Die Eule hat Vorteil bei Weisheitswürfen (Wahrnehmung), die auf Hören oder Sehen beruhen." },
+        { "name": "Leise Ratgeberin", "value": "Die Eule kann in kurzen, ruhigen Sätzen sprechen und bevorzugt Warnungen, Richtungen und einfache Ratschläge." }
+      ],
+      "actions": [
+        { "name": "Krallen", "value": "Nahkampfwaffenangriff: +3 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 1 Hiebschaden." }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    {
+      "id": "begleiter-river-silk-otter",
+      "src": "homebrew",
+      "name": "Flussseiden-Otter (Feenbegleiter)",
+      "size": "Winzig",
+      "type": "Fee (Begleiter)",
+      "alignment": "ungebunden",
+      "armor-class": { "value": "13", "info": "" },
+      "hit-points": { "value": "1", "formula": "1W4-1" },
+      "speeds": { "walk": "6 m", "swim": "9 m" },
+      "attributes": [
+        { "class": "str", "value": "3", "modifier": "-4" },
+        { "class": "dex", "value": "16", "modifier": "+3" },
+        { "class": "con", "value": "8", "modifier": "-1" },
+        { "class": "int", "value": "2", "modifier": "-4" },
+        { "class": "wis", "value": "12", "modifier": "+1" },
+        { "class": "cha", "value": "6", "modifier": "-2" }
+      ],
+      "saving-throws": [],
+      "skills": ["Wahrnehmung +3", "Heimlichkeit +5"],
+      "senses": ["Passive Wahrnehmung 13"],
+      "languages": [],
+      "challenge": "0",
+      "xp": "10",
+      "traits": [
+        { "name": "Gutes Gehör und Geruch", "value": "Die Otter hat Vorteil bei Weisheitswürfen (Wahrnehmung), die auf Hören oder Riechen beruhen." },
+        { "name": "Wasserklug", "value": "Die Otter kann 10 Minuten die Luft anhalten." }
+      ],
+      "actions": [
+        { "name": "Biss", "value": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 1 Stichschaden." }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    {
+      "id": "begleiter-thistle-crowned-fuchs-sprechend",
+      "src": "homebrew",
+      "name": "Distelkronen-Fuchs (Feenbegleiter, sprechend)",
+      "size": "Klein",
+      "type": "Fee (Begleiter)",
+      "alignment": "ungebunden",
+      "armor-class": { "value": "12", "info": "" },
+      "hit-points": { "value": "3", "formula": "1W6" },
+      "speeds": { "walk": "12 m" },
+      "attributes": [
+        { "class": "str", "value": "8", "modifier": "-1" },
+        { "class": "dex", "value": "15", "modifier": "+2" },
+        { "class": "con", "value": "11", "modifier": "+0" },
+        { "class": "int", "value": "8", "modifier": "-1" },
+        { "class": "wis", "value": "12", "modifier": "+1" },
+        { "class": "cha", "value": "10", "modifier": "+0" }
+      ],
+      "saving-throws": [],
+      "skills": ["Wahrnehmung +3"],
+      "senses": ["Passive Wahrnehmung 13"],
+      "languages": ["Sylvan"],
+      "challenge": "0",
+      "xp": "10",
+      "traits": [
+        { "name": "Gutes Gehör und Geruch", "value": "Der Fuchs hat Vorteil bei Weisheitswürfen (Wahrnehmung), die auf Hören oder Riechen beruhen." },
+        {
+          "name": "Rudeltaktik (sozial)",
+          "value": "Wenn sich der Fuchs innerhalb von 1,5 m um eine befreundete Kreatur befindet, hat er Vorteil bei Charisma-Proben, um kleine Gefälligkeiten zu erbetteln oder auszuhandeln."
+        }
+      ],
+      "actions": [
+        { "name": "Biss", "value": "Nahkampfwaffenangriff: +1 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 1 (1W4-1) Stichschaden." }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    {
+      "id": "begleiter-bell-tuft-hase",
+      "src": "homebrew",
+      "name": "Glockenbüschel-Hase (Feenbegleiter)",
+      "size": "Winzig",
+      "type": "Fee (Begleiter)",
+      "alignment": "ungebunden",
+      "armor-class": { "value": "13", "info": "" },
+      "hit-points": { "value": "1", "formula": "1W4-1" },
+      "speeds": { "walk": "9 m" },
+      "attributes": [
+        { "class": "str", "value": "3", "modifier": "-4" },
+        { "class": "dex", "value": "16", "modifier": "+3" },
+        { "class": "con", "value": "8", "modifier": "-1" },
+        { "class": "int", "value": "2", "modifier": "-4" },
+        { "class": "wis", "value": "12", "modifier": "+1" },
+        { "class": "cha", "value": "6", "modifier": "-2" }
+      ],
+      "saving-throws": [],
+      "skills": ["Wahrnehmung +3", "Heimlichkeit +5"],
+      "senses": ["Passive Wahrnehmung 13"],
+      "languages": [],
+      "challenge": "0",
+      "xp": "10",
+      "traits": [
+        { "name": "Gutes Gehör und Geruch", "value": "Der Hase hat Vorteil bei Weisheitswürfen (Wahrnehmung), die auf Hören oder Riechen beruhen." },
+        {
+          "name": "Glockenwarnung",
+          "value": "Wenn der Hase eine feindselige Kreatur innerhalb von 9 m sieht, klingeln die Ohrbüschel leise. Eine Kreatur, die ihn hören kann, hat Vorteil bei der nächsten Weisheitsprobe (Wahrnehmung), die sie vor Ende ihres nächsten Zuges ausführt."
+        }
+      ],
+      "actions": [
+        { "name": "Knipsen", "value": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 1 Stichschaden." }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    {
+      "id": "begleiter-sparkwhisker-elektrorodent",
+      "src": "homebrew",
+      "name": "Funkenbart-Nagetier (Feenbegleiter)",
+      "size": "Winzig",
+      "type": "Fee (Begleiter)",
+      "alignment": "ungebunden",
+      "armor-class": { "value": "13", "info": "" },
+      "hit-points": { "value": "3", "formula": "1W4+1" },
+      "speeds": { "walk": "9 m", "climb": "6 m" },
+      "attributes": [
+        { "class": "str", "value": "3", "modifier": "-4" },
+        { "class": "dex", "value": "16", "modifier": "+3" },
+        { "class": "con", "value": "12", "modifier": "+1" },
+        { "class": "int", "value": "3", "modifier": "-4" },
+        { "class": "wis", "value": "12", "modifier": "+1" },
+        { "class": "cha", "value": "8", "modifier": "-1" }
+      ],
+      "saving-throws": [],
+      "skills": ["Wahrnehmung +3", "Heimlichkeit +5"],
+      "damage-resistances": ["Blitz"],
+      "senses": ["Dunkelsicht 18 m", "Passive Wahrnehmung 13"],
+      "languages": [],
+      "challenge": "0",
+      "xp": "10",
+      "traits": [
+        { "name": "Guter Geruchssinn", "value": "Das Nagetier hat Vorteil bei Weisheitswürfen (Wahrnehmung), die auf Riechen beruhen." },
+        {
+          "name": "Statisches Fell",
+          "value": "Wenn eine Kreatur das Nagetier mit einem Nahkampfangriff trifft und sich innerhalb von 1,5 m befindet, erleidet der Angreifer 1 Blitzschaden."
+        },
+        { "name": "Feenleuchten", "value": "Das Nagetier kann in einem Umkreis von 3 m gedimmtes Licht verbreiten (ein-/ausschalten ohne Aktion)." }
+      ],
+      "actions": [
+        { "name": "Biss", "value": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 1 Stichschaden." },
+        {
+          "name": "Funkenstupser",
+          "value": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 2 (1W4) Blitzschaden."
+        },
+        {
+          "name": "Kleiner Lichtbogen (Aufladung 6)",
+          "value": "Fernkampf-Zauberangriff: +5 auf Treffer, Distanz 9/18 m, ein Ziel. Treffer: 2 (1W4) Blitzschaden."
+        }
+      ],
+      "bonus_actions": [
+        { "name": "Flinkes Huschen", "value": "Das Nagetier führt Sprint oder Rückzug aus." }
+      ],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    {
+      "id": "begleiter-guardian-honeybutton-cub",
+      "src": "homebrew",
+      "name": "Honigknopf-Junges (Feen-Wächtertier, Kuschelform)",
+      "size": "Mittelgroß",
+      "type": "Fee (Begleiter, zähmbar)",
+      "alignment": "ungebunden",
+      "armor-class": { "value": "10", "info": "" },
+      "hit-points": { "value": "11", "formula": "2W8+2" },
+      "speeds": { "walk": "12 m" },
+      "attributes": [
+        { "class": "str", "value": "15", "modifier": "+2" },
+        { "class": "dex", "value": "10", "modifier": "+0" },
+        { "class": "con", "value": "13", "modifier": "+1" },
+        { "class": "int", "value": "2", "modifier": "-4" },
+        { "class": "wis", "value": "11", "modifier": "+0" },
+        { "class": "cha", "value": "7", "modifier": "-2" }
+      ],
+      "saving-throws": [],
+      "skills": [],
+      "senses": ["Passive Wahrnehmung 10"],
+      "languages": [],
+      "challenge": "1/8",
+      "xp": "25",
+      "traits": [
+        {
+          "name": "Kuscheliges Wesen",
+          "value": "Das Junge meidet Kämpfe. Wenn ein Kampf ausbricht, bleibt es nach Möglichkeit innerhalb von 1,5 m um seine gebundene Kreatur."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Hufe (Spielstupser)",
+          "value": "Nahkampfwaffenangriff: +4 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 7 (2W4+2) Wuchtschaden (in der Regel nichttödlich)."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Wächterblüte (Verwandlung)",
+          "value": "Wenn das Junge oder ein gebundener Verbündeter innerhalb von 9 m seit Ende des letzten Zuges Schaden erlitten hat, verwandelt es sich magisch für 1 Minute in seine Wächterform (Braunbär)."
+        }
+      ],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    {
+      "id": "begleiter-guardian-honeybutton-braunbaer-form",
+      "src": "homebrew",
+      "name": "Honigknopf-Wächter (Braunbär-Form)",
+      "size": "Groß",
+      "type": "Fee (Begleiter, Wächter)",
+      "alignment": "ungebunden",
+      "armor-class": { "value": "11", "info": "" },
+      "hit-points": { "value": "34", "formula": "4W10+12" },
+      "speeds": { "walk": "12 m", "climb": "9 m" },
+      "attributes": [
+        { "class": "str", "value": "19", "modifier": "+4" },
+        { "class": "dex", "value": "10", "modifier": "+0" },
+        { "class": "con", "value": "16", "modifier": "+3" },
+        { "class": "int", "value": "2", "modifier": "-4" },
+        { "class": "wis", "value": "13", "modifier": "+1" },
+        { "class": "cha", "value": "7", "modifier": "-2" }
+      ],
+      "saving-throws": [],
+      "skills": ["Wahrnehmung +3"],
+      "senses": ["Passive Wahrnehmung 13"],
+      "languages": [],
+      "challenge": "1",
+      "xp": "200",
+      "traits": [
+        { "name": "Guter Geruchssinn", "value": "Der Bär hat Vorteil bei Weisheitswürfen (Wahrnehmung), die auf Riechen beruhen." }
+      ],
+      "actions": [
+        { "name": "Mehrfachangriff", "value": "Der Bär führt zwei Angriffe aus: einen Biss und einen Klauenangriff." },
+        { "name": "Biss", "value": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 8 (1W8+4) Stichschaden." },
+        { "name": "Klauen", "value": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 11 (2W6+4) Hiebschaden." }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    {
+      "id": "begleiter-guardian-thimbletail-pup",
+      "src": "homebrew",
+      "name": "Fingerhut-Schwänzchen-Welpe (Feen-Wächtertier, Kuschelform)",
+      "size": "Mittelgroß",
+      "type": "Fee (Begleiter, zähmbar)",
+      "alignment": "ungebunden",
+      "armor-class": { "value": "12", "info": "" },
+      "hit-points": { "value": "5", "formula": "1W8+1" },
+      "speeds": { "walk": "12 m" },
+      "attributes": [
+        { "class": "str", "value": "13", "modifier": "+1" },
+        { "class": "dex", "value": "14", "modifier": "+2" },
+        { "class": "con", "value": "12", "modifier": "+1" },
+        { "class": "int", "value": "3", "modifier": "-4" },
+        { "class": "wis", "value": "12", "modifier": "+1" },
+        { "class": "cha", "value": "7", "modifier": "-2" }
+      ],
+      "saving-throws": [],
+      "skills": ["Wahrnehmung +3"],
+      "senses": ["Passive Wahrnehmung 13"],
+      "languages": [],
+      "challenge": "1/8",
+      "xp": "25",
+      "traits": [
+        { "name": "Gutes Gehör und Geruch", "value": "Der Welpe hat Vorteil bei Weisheitswürfen (Wahrnehmung), die auf Hören oder Riechen beruhen." }
+      ],
+      "actions": [
+        { "name": "Biss", "value": "Nahkampfwaffenangriff: +3 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 4 (1W6+1) Stichschaden." }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Wächterblüte (Verwandlung)",
+          "value": "Wenn der Welpe oder ein gebundener Verbündeter innerhalb von 9 m seit Ende des letzten Zuges Schaden erlitten hat, verwandelt er sich magisch für 1 Minute in seine Wächterform (Schattenwolf / Dire Wolf)."
+        }
+      ],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    {
+      "id": "begleiter-guardian-thimbletail-direwolf-form",
+      "src": "homebrew",
+      "name": "Fingerhut-Schwänzchen-Wächter (Schattenwolf-Form)",
+      "size": "Groß",
+      "type": "Fee (Begleiter, Wächter)",
+      "alignment": "ungebunden",
+      "armor-class": { "value": "14", "info": "" },
+      "hit-points": { "value": "37", "formula": "5W10+10" },
+      "speeds": { "walk": "15 m" },
+      "attributes": [
+        { "class": "str", "value": "17", "modifier": "+3" },
+        { "class": "dex", "value": "15", "modifier": "+2" },
+        { "class": "con", "value": "15", "modifier": "+2" },
+        { "class": "int", "value": "3", "modifier": "-4" },
+        { "class": "wis", "value": "12", "modifier": "+1" },
+        { "class": "cha", "value": "7", "modifier": "-2" }
+      ],
+      "saving-throws": [],
+      "skills": ["Wahrnehmung +3", "Heimlichkeit +4"],
+      "senses": ["Passive Wahrnehmung 13"],
+      "languages": [],
+      "challenge": "1",
+      "xp": "200",
+      "traits": [
+        { "name": "Gutes Gehör und Geruch", "value": "Der Wolf hat Vorteil bei Weisheitswürfen (Wahrnehmung), die auf Hören oder Riechen beruhen." },
+        { "name": "Rudeltaktik", "value": "Der Wolf hat Vorteil bei einem Angriffswurf gegen eine Kreatur, wenn sich mindestens ein Verbündeter des Wolfs innerhalb von 1,5 m um das Ziel befindet und der Verbündete nicht handlungsunfähig ist." }
+      ],
+      "actions": [
+        {
+          "name": "Biss",
+          "value": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 10 (2W6+3) Stichschaden. Ist das Ziel eine Kreatur, muss es einen SG-13-Stärkerettungswurf bestehen oder es liegt am Boden."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    {
+      "id": "begleiter-guardian-clovertruffle-piglet",
+      "src": "homebrew",
+      "name": "Kleetrüffel-Ferkel (Feen-Wächtertier, Kuschelform)",
+      "size": "Mittelgroß",
+      "type": "Fee (Begleiter, zähmbar)",
+      "alignment": "ungebunden",
+      "armor-class": { "value": "12", "info": "" },
+      "hit-points": { "value": "9", "formula": "2W8" },
+      "speeds": { "walk": "12 m" },
+      "attributes": [
+        { "class": "str", "value": "11", "modifier": "+0" },
+        { "class": "dex", "value": "16", "modifier": "+3" },
+        { "class": "con", "value": "10", "modifier": "+0" },
+        { "class": "int", "value": "4", "modifier": "-3" },
+        { "class": "wis", "value": "12", "modifier": "+1" },
+        { "class": "cha", "value": "5", "modifier": "-3" }
+      ],
+      "saving-throws": [],
+      "skills": ["Wahrnehmung +3", "Heimlichkeit +5"],
+      "senses": ["Dunkelsicht 18 m", "Passive Wahrnehmung 13"],
+      "languages": [],
+      "challenge": "1/8",
+      "xp": "25",
+      "traits": [
+        { "name": "Gutes Gehör und Geruch", "value": "Das Ferkel hat Vorteil bei Weisheitswürfen (Wahrnehmung), die auf Hören oder Riechen beruhen." }
+      ],
+      "actions": [
+        { "name": "Biss", "value": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 5 (1W4+3) Stichschaden." }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Wächterblüte (Verwandlung)",
+          "value": "Wenn das Ferkel oder ein gebundener Verbündeter innerhalb von 9 m seit Ende des letzten Zuges Schaden erlitten hat, verwandelt es sich magisch für 1 Minute in seine Wächterform (Riesenkeiler)."
+        }
+      ],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    {
+      "id": "begleiter-guardian-clovertruffle-giantboar-form",
+      "src": "homebrew",
+      "name": "Kleetrüffel-Wächter (Riesenkeiler-Form)",
+      "size": "Groß",
+      "type": "Fee (Begleiter, Wächter)",
+      "alignment": "ungebunden",
+      "armor-class": { "value": "12", "info": "" },
+      "hit-points": { "value": "42", "formula": "5W10+15" },
+      "speeds": { "walk": "12 m" },
+      "attributes": [
+        { "class": "str", "value": "17", "modifier": "+3" },
+        { "class": "dex", "value": "10", "modifier": "+0" },
+        { "class": "con", "value": "16", "modifier": "+3" },
+        { "class": "int", "value": "2", "modifier": "-4" },
+        { "class": "wis", "value": "7", "modifier": "-2" },
+        { "class": "cha", "value": "5", "modifier": "-3" }
+      ],
+      "saving-throws": [],
+      "skills": [],
+      "senses": ["Passive Wahrnehmung 8"],
+      "languages": [],
+      "challenge": "2",
+      "xp": "450",
+      "traits": [
+        {
+          "name": "Ansturm",
+          "value": "Bewegt sich der Keiler mindestens 6 m geradewegs auf ein Ziel zu und trifft es im selben Zug mit Stoßzahn, verursacht der Angriff zusätzlich 7 (2W6) Hiebschaden. Ist das Ziel eine Kreatur, muss sie einen SG-13-Stärkerettungswurf bestehen oder sie liegt am Boden."
+        },
+        {
+          "name": "Unerbittlich (aufladbar nach kurzer oder langer Rast)",
+          "value": "Erleidet der Keiler 10 Schaden oder weniger, die ihn auf 0 TP bringen würden, fällt er stattdessen auf 1 TP."
+        }
+      ],
+      "actions": [
+        { "name": "Stoßzahn", "value": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 10 (2W6+3) Hiebschaden." }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    {
+      "id": "begleiter-guardian-snowpearl-kit",
+      "src": "homebrew",
+      "name": "Schneeperlen-Jungtier (Feen-Wächtertier, Kuschelform)",
+      "size": "Mittelgroß",
+      "type": "Fee (Begleiter, zähmbar)",
+      "alignment": "ungebunden",
+      "armor-class": { "value": "13", "info": "" },
+      "hit-points": { "value": "9", "formula": "2W8" },
+      "speeds": { "walk": "12 m" },
+      "attributes": [
+        { "class": "str", "value": "11", "modifier": "+0" },
+        { "class": "dex", "value": "16", "modifier": "+3" },
+        { "class": "con", "value": "10", "modifier": "+0" },
+        { "class": "int", "value": "4", "modifier": "-3" },
+        { "class": "wis", "value": "12", "modifier": "+1" },
+        { "class": "cha", "value": "5", "modifier": "-3" }
+      ],
+      "saving-throws": [],
+      "skills": ["Wahrnehmung +3", "Heimlichkeit +5"],
+      "senses": ["Dunkelsicht 18 m", "Passive Wahrnehmung 13"],
+      "languages": [],
+      "challenge": "1/8",
+      "xp": "25",
+      "traits": [
+        { "name": "Gutes Gehör und Geruch", "value": "Das Jungtier hat Vorteil bei Weisheitswürfen (Wahrnehmung), die auf Hören oder Riechen beruhen." }
+      ],
+      "actions": [
+        { "name": "Biss", "value": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 5 (1W4+3) Stichschaden." }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Wächterblüte (Verwandlung)",
+          "value": "Wenn das Jungtier oder ein gebundener Verbündeter innerhalb von 9 m seit Ende des letzten Zuges Schaden erlitten hat, verwandelt es sich magisch für 1 Minute in seine Wächterform (Winterwolf)."
+        }
+      ],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    {
+      "id": "begleiter-guardian-snowpearl-winterwolf-form",
+      "src": "homebrew",
+      "name": "Schneeperlen-Wächter (Winterwolf-Form)",
+      "size": "Groß",
+      "type": "Fee (Begleiter, Wächter)",
+      "alignment": "ungebunden",
+      "armor-class": { "value": "13", "info": "" },
+      "hit-points": { "value": "75", "formula": "10W10+20" },
+      "speeds": { "walk": "15 m" },
+      "attributes": [
+        { "class": "str", "value": "18", "modifier": "+4" },
+        { "class": "dex", "value": "13", "modifier": "+1" },
+        { "class": "con", "value": "14", "modifier": "+2" },
+        { "class": "int", "value": "7", "modifier": "-2" },
+        { "class": "wis", "value": "12", "modifier": "+1" },
+        { "class": "cha", "value": "8", "modifier": "-1" }
+      ],
+      "saving-throws": [],
+      "skills": ["Wahrnehmung +5", "Heimlichkeit +3"],
+      "damage-immunities": ["Kälte"],
+      "senses": ["Passive Wahrnehmung 15"],
+      "languages": ["Gemeinsprache", "Riesisch", "Winterwolf"],
+      "challenge": "3",
+      "xp": "700",
+      "traits": [
+        { "name": "Gutes Gehör und Geruch", "value": "Der Wolf hat Vorteil bei Weisheitswürfen (Wahrnehmung), die auf Hören oder Riechen beruhen." },
+        { "name": "Rudeltaktik", "value": "Der Wolf hat Vorteil bei einem Angriffswurf gegen eine Kreatur, wenn sich mindestens ein Verbündeter des Wolfs innerhalb von 1,5 m um das Ziel befindet und der Verbündete nicht handlungsunfähig ist." },
+        { "name": "Schneetarnung", "value": "Der Wolf hat Vorteil bei Geschicklichkeitswürfen (Heimlichkeit) in verschneitem Gelände." }
+      ],
+      "actions": [
+        {
+          "name": "Biss",
+          "value": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 11 (2W6+4) Stichschaden. Ist das Ziel eine Kreatur, muss es einen SG-14-Stärkerettungswurf bestehen oder es liegt am Boden."
+        },
+        {
+          "name": "Frostatem (Aufladung 5–6)",
+          "value": "Der Wolf atmet eisigen Wind in einem 4,5 m-Kegel aus. Jede Kreatur in diesem Bereich muss einen SG-12-Geschicklichkeitsrettungswurf ausführen. Bei Misslingen: 18 (4W8) Kälteschaden, sonst die Hälfte."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary-actions": []
+    }
+  ]
+}

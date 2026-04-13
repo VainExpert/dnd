@@ -1,0 +1,17 @@
+{
+  "id": "schild",
+  "name": "Schild",
+  "level": 1,
+  "school": "Bannmagie",
+  "casting_time": "1 Reaktion, wenn von Angriff getroffen oder von â€žMagisches Geschossâ€œ anvisiert",
+  "range": "Selbst",
+  "components": "V, G",
+  "duration": "1 Runde (6 s)",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Eine unsichtbare Barriere aus magischer Energie schützt dich bis zum Beginn deines nächsten Zuges.\nRK + 5, auch gegen den auslösenden Angriff und kein Schaden von „Magisches Geschoss“."
+}

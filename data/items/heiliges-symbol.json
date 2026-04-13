@@ -1,0 +1,47 @@
+{
+  "id": "heiliges-symbol",
+  "type": "item",
+  "name": "Heiliges Symbol",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 5,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein magisches Objekt, das als Fokus für Zauber dient und anstelle von Zaubermaterialien ohne Kosten fokussiert werden. Wird von Klerikern und Paladinen verwendet. Ein Heiliges Symbol kann eines der folgenden sein: Emblem Amulett Reliquie",
+  "tags": [
+    "abenteuer",
+    "magie",
+    "fokus",
+    "zauber",
+    "kleriker",
+    "paladin",
+    "tempel"
+  ]
+}

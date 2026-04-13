@@ -1,0 +1,56 @@
+{
+  "name": "Kruthik Hive Lord",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr5",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 20,
+  "hp": {
+    "average": 102,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 20,
+    "climb": 40
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 16,
+    "con": 17,
+    "int": 10,
+    "wis": 14,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "Kruthik"
+  ],
+  "challenge": {
+    "cr": "5",
+    "xp": 1800,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "text": "The kruthik has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The kruthik has advantage on an attack roll against a creature if at least one of the kruthik's allies is within 5 feet of the creature and the ally isn't incapacitated."
+    },
+    {
+      "name": "Tunneler",
+      "text": "The kruthik can burrow through solid rock at half its burrowing speed and leaves a 10-foot-diameter tunnel in its wake."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

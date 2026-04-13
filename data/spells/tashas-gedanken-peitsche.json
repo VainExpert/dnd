@@ -1,0 +1,17 @@
+{
+  "id": "tashas-gedanken-peitsche",
+  "name": "Tashas Gedanken Peitsche",
+  "level": 2,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "27 m",
+  "components": "V",
+  "duration": "1 Runde (6 s)",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du schlägst psychisch auf eine Kreatur, die du, in Reichweite, sehen kannst, ein.\nDas Ziel muss einen INT-Rettungswurf machen.\nBei Fehlschlag: 3W6 psychischer Schaden und es kann bis zum Ende seines nächsten Zuges keine Reaktion machen. Außerdem muss es sich in seinem nächsten Zug entscheiden ob es sich bewegt, eine Aktion macht oder eine Bonus Aktion macht (1 der 3).\nBei Erfolg: die Hälfte des Schadens und keine weiteren Effekte.\n\nAuf höheren Level gewirkt: pro Level 1 weitere Kreatur. Die Ziele müssen in 9 m zueinander sein."
+}

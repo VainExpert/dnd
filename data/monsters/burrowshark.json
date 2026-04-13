@@ -1,0 +1,61 @@
+{
+  "name": "Burrowshark",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr4",
+      "elemental-evil",
+      "human"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 18,
+  "hp": {
+    "average": 82,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 16,
+    "int": 10,
+    "wis": 11,
+    "cha": 13
+  },
+  "skills": {
+    "Animal Handling": 2,
+    "Athletics": 6,
+    "Intimidation": 3,
+    "Perception": 2
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Bond of the Black Earth",
+      "text": "The burrowshark is magically bound to a bulette trained to serve as its mount. While mounted on its bulette, the burrowshark shares the bulette's senses and can ride the bulette while it burrows. The bonded bulette obeys the burrowshark's commands. If its mount dies, the burrowshark can train a new bulette to serve as its bonded mount, a process requiring a month."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The burrowshark makes three melee attacks."
+    },
+    {
+      "name": "Spear",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 8 (1d8 + 4) piercing damage if used with two hands to make a melee attack."
+    }
+  ],
+  "source": "creature"
+}

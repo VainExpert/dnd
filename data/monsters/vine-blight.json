@@ -1,0 +1,58 @@
+{
+  "name": "Vine Blight",
+  "size": "Medium",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "medium",
+      "plant",
+      "cr1/2",
+      "monster-manual"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 12,
+  "hp": {
+    "average": 26,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 8,
+    "con": 14,
+    "int": 5,
+    "wis": 10,
+    "cha": 3
+  },
+  "skills": {
+    "Stealth": 1
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "False Appearance",
+      "text": "While the blight remains motionless, it is indistinguishable from a tangle of vines."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Constrict",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage, and a Large or smaller target is grappled (escape DC 12) . Until this grapple ends, the target is restrained, and the blight can't constrict another target."
+    },
+    {
+      "name": "Entangling Plants (Recharge 5-6)",
+      "type": "special",
+      "text": "Grasping roots and vines sprout in a 15-foot radius centered on the blight, withering away after 1 minute. For the duration, that area is difficult terrain for nonplant creatures. In addition, each creature of the blight's choice in that area when the plants appear must succeed on a DC 12 Strength saving throw or become restrained. A creature can use its action to make a DC 12 Strength check, freeing it self or another entangled creature within reach on a success."
+    }
+  ],
+  "source": "creature"
+}

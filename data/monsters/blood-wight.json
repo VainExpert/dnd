@@ -1,0 +1,72 @@
+{
+  "name": "Blood Wight",
+  "size": "Large",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "large",
+      "undead",
+      "cr8",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 95,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 15,
+    "con": 18,
+    "int": 13,
+    "wis": 13,
+    "cha": 16
+  },
+  "skills": {
+    "Perception": 7,
+    "Stealth": 5
+  },
+  "languages": [
+    "the languages it knew in life"
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Magic Weapons",
+      "text": "The wight’s weapon attacks are magical."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the wight has disadvantage on\nattack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The blood wight makes one claw attack and one life\ndrain attack."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 14\n(2d8 + 5) slashing damage. If the target is a Medium or smaller creature, it\nis grappled (escape DC 15). The wight can grapple only one target."
+    },
+    {
+      "name": "Engulf",
+      "type": "special",
+      "text": "The wight engulfs one creature it has grappled, and the grapple\nends. While engulfed, the creature is blinded and restrained, it has total\ncover against attacks and other effects outside the wight, and it takes 27\n(6d8) necrotic damage at the start of each of the wight’s turns. If the wight\ntakes 30 damage or more on a single turn from a creature inside it, the\nwight must succeed on a DC 15 Constitution saving throw at the end of\nthat turn or regurgitate all engulfed creatures, which fall prone in a space\nwithin 5 feet of the wight. If the wight dies, all engulfed creatures explode\nout from the corpse, falling prone 15 feet away."
+    },
+    {
+      "name": "Life Drain",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one creature.\nHit: 11 (2d6 + 4) necrotic damage. The target must succeed on a DC 15\nConstitution saving throw or its hit point maximum is reduced by an\namount equal to the damage taken. This reduction lasts until the target\nfinishes a long rest. The target dies if this effect reduces its hit point\nmaximum to 0. A humanoid slain by this attack rises 24 hours later as a\nzombie under the wight’s control, unless the humanoid is restored to life\nor its body is destroyed. The wight can have no more than twelve zombies\nunder its control at one time."
+    }
+  ],
+  "source": "creature"
+}

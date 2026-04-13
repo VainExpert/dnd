@@ -1,0 +1,17 @@
+{
+  "id": "gute-beeren",
+  "name": "Gute Beeren",
+  "level": 1,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G, M",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Waldläufer"
+  ],
+  "text": "(Mistelzweig) Bis zu 10 magiegefüllte Beeren erscheinen in deiner Hand.\nKreaturen können als Aktion eine Beere essen, dadurch wird 1 TP wiederhergestellt und sie werden 1 Tag lang gesättigt.\nDie Beeren verlieren nach 24 h ihre Wirksamkeit."
+}

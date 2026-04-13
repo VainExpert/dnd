@@ -1,0 +1,75 @@
+{
+  "name": "Arkanes Wesen",
+  "size": "Groß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "large",
+      "elemental",
+      "cr7",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 15,
+  "hp": {
+    "average": 135,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 7,
+    "dex": 16,
+    "con": 14,
+    "int": 18,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Magieresistenz",
+      "text": "Die Kreatur hat einen Vorteil bei Rettungswürfen\ngegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Waffen dieses Wesens sind magischer Natur."
+    },
+    {
+      "name": "Arkane Aura",
+      "text": "Das Wesen strahlt helles Licht in einem Radius von 4,5 Metern\naus und zusätzlich schwaches Licht. Alle\nmagischen Gegenstände, die sich in diesem15 feet Bereich befinden, werden\nzu gewöhnlichen Gegenständen. Dieser Effekt endet, wenn das Wesen stirbt oder\nwenn der Gegenstand aus der Aura entfernt wird. Gegner, die\nihren Zug im hellen Licht beenden, erleiden 5 (1d10) Kraftschaden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Das Wesen führt zwei Angriffe mit seinen Klauen\noder zwei Angriffe mit seiner Peitsche aus."
+    },
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5ft: , ein\nZiel. Treffer: 12 (2d8 + 3) Schnittschaden plus 9 (2d8)\nKraftschaden."
+    },
+    {
+      "name": "Arkanpeitsche",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite\n4,5 m, ein Ziel. Treffer: 7 (2d4 + 3) Schnittschaden plus\n13 (3d8) Kraftschaden."
+    },
+    {
+      "name": "Arkaner Sperrschuss (Aufladezeit 5-6)",
+      "type": "special",
+      "text": "Das Wesen feuert 10\n(4d4) Raketen arkaner Kraft auf zufällig ausgewählte\nGegner in einem Umkreis von 36 m. Die Raketen treffen automatisch\nund verursachen jeweils 6 (1d4 + 4) Schaden."
+    }
+  ],
+  "source": "creature"
+}

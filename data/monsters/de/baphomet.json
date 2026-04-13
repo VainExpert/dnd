@@ -1,0 +1,73 @@
+{
+  "name": "Baphomet",
+  "size": "Riesig",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "huge",
+      "fiend",
+      "cr23",
+      "mordenkainens-tome-of-foes",
+      "demon"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 22,
+  "hp": {
+    "average": 275,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 30,
+    "dex": 14,
+    "con": 26,
+    "int": 18,
+    "wis": 24,
+    "cha": 16
+  },
+  "skills": {
+    "Intimidation": 17,
+    "Perception": 14
+  },
+  "languages": [
+    "all",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "23",
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Last",
+      "text": "Wenn sich Baphomet mindestens10 feet  geradeaus auf ein Ziel zubewegt und es dann im selben Zug mit einem Hornstoß-Angriff trifft, erleidet das Ziel zusätzlich 16 (3d10) Durchschlagschaden. Handelt es sich bei dem Ziel um eine Kreatur, muss sie einenDC 25  Stärke-Rettungswurf bestehen oder wird bis zu10 feet  Weit weg gestoßen und zu Boden geworfen."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Baphomets Zauberfertigkeit ist Charisma (ZauberrettungswurfDC 18). Er kann die folgenden Zauber von Natur aus wirken, ohne dass dafür materielle Komponenten erforderlich sind:\n\n* Beliebig oft: E Magie erkennenE \n\n* Jeweils 3/Tag: E Magie bannen, Bestie beherrschen, Jägerzeichen, Labyrinth, SteinwandE \n\n* 1/Tag: E TeleportierenE"
+    },
+    {
+      "name": "Labyrinthische Erinnerung",
+      "text": "Baphomet kann sich jeden Weg, den er zurückgelegt hat, genau ins Gedächtnis rufen, und er ist immun gegen den Labyrinthzauber."
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn Baphomet einen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Baphomet hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Baphomets Waffenangriffe sind magischer Natur."
+    },
+    {
+      "name": "Leichtsinnig",
+      "text": "Zu Beginn seines Zuges erhält Baphomet bei allen Angriffswürfen mit Nahkampfwaffen in diesem Zug einen Vorteil, doch Angriffswürfe gegen ihn haben bis zum Beginn seines nächsten Zuges einen Vorteil."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

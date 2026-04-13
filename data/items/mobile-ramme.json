@@ -1,0 +1,46 @@
+{
+  "id": "mobile-ramme",
+  "type": "item",
+  "name": "Mobile Ramme",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 17.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 4,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wird verwendet um Türen oder ähnliches zu zerstören. Die Verwendung gibt einen +4 Bonus auf den zugehörigen Stärke-Wurf. 1 anderer Charakter kann helfen und zusätzlich Vorteil geben.",
+  "tags": [
+    "abenteuer",
+    "waffe",
+    "nützlich",
+    "schwer",
+    "zerstörung",
+    "stärke"
+  ]
+}

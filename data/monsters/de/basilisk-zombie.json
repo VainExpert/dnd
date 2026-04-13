@@ -1,0 +1,51 @@
+{
+  "name": "Basilisk-Zombie",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 12,
+  "hp": {
+    "average": 60,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 8,
+    "con": 15,
+    "int": 2,
+    "wis": 8,
+    "cha": 7
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Die Standhaftigkeit der Untoten",
+      "text": "Wenn der Schaden die Lebenspunkte des Zombies auf 0 reduziert,\nmuss er einen Konstitutions-Rettungswurf mit einer Schwierigkeitsklasse von 5 + dem erlittenen Schaden\nausführen, es sei denn, es handelt sich um Strahlenschaden oder um einen kritischen Treffer. Bei Erfolg\nsinkt die Lebenspunktzahl des Zombies stattdessen auf 1."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 10\n(2d6 + 3) Durchdringungsschaden plus 7 (2d6) nekrotischer Schaden."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "liebestrank",
+  "type": "item",
+  "name": "Liebestrank",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "potion",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 200,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Du wirst von der nächsten Kreatur eine Stunde lang bezaubert, die du innerhalb von zehn Minuten nach dem Trinken dieses Tranks siehst. Wenn du Spezies und Geschlecht der Kreatur normalerweise attraktiv findest, siehst du sie als deine wahre Liebe an, solange du bezaubert bist. Die rosafarbene, sprudelnde Flüssigkeit des Tranks enthält eine leicht übersehbare Blase in Herzform.",
+  "tags": [
+    "magisch",
+    "trank",
+    "bezaubert",
+    "konsumiert"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Carrion Claw",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr9",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "Neutral evil",
+  "ac": 14,
+  "hp": {
+    "average": 135,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 40
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 14,
+    "int": 4,
+    "wis": 12,
+    "cha": 11
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 5
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Spider Climb",
+      "text": "The carrion claw can climb difficult surfaces, including\nupside down on ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Magical Light Sensitivity",
+      "text": "While in magical light, the carrion claw has\ndisadvantage on attack rolls, and opponents have advantage on attack rolls\nagainst it."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The carrion claw makes one bite attack and three claw\nattacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11\n(2d6 + 4) piercing damage. If the target is a creature other than undead, it\nmust succeed on a DC 14 Constitution saving throw or be paralyzed for\n1 minute. The target can repeat the saving throw at the end of each of its\nturns, ending the effect on itself on a success."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 17\n(3d8 +4) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

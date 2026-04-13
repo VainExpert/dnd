@@ -1,0 +1,49 @@
+{
+  "name": "Frost Salamander",
+  "size": "Huge",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "huge",
+      "elemental",
+      "cr9",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 17,
+  "hp": {
+    "average": 168,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 40,
+    "climb": 40
+  },
+  "abilities": {
+    "str": 20,
+    "dex": 12,
+    "con": 18,
+    "int": 7,
+    "wis": 11,
+    "cha": 7
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Burning Fury",
+      "text": "When the salamander takes fire damage, its Freezing Breath automatically recharges."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

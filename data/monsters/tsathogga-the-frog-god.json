@@ -1,0 +1,113 @@
+{
+  "name": "Tsathogga, the Frog God",
+  "size": "Gargantuan",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "gargantuan",
+      "fiend",
+      "cr35",
+      "tome-of-horrors",
+      "demon lord"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 20,
+  "hp": {
+    "average": 546,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 20
+  },
+  "abilities": {
+    "str": 29,
+    "dex": 15,
+    "con": 28,
+    "int": 19,
+    "wis": 18,
+    "cha": 23
+  },
+  "skills": {
+    "Arcana": 14,
+    "Insight": 14,
+    "Perception": 24,
+    "Survival": 14
+  },
+  "languages": [
+    "Aquan",
+    "Abyssal",
+    "Common",
+    "Giant",
+    "Infernal",
+    "Terran",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "35",
+    "proficiency_bonus": 10
+  },
+  "traits": [
+    {
+      "name": "Acidic Hide",
+      "text": "A creature that touches Tsathogga or hits it with a melee\nattack while within 10 feet of it takes 35 (10d6) acid damage. Any\nnonmagical weapon made of metal or wood that hits Tsathogga instantly\ndissolves before dealing damage."
+    },
+    {
+      "name": "Amphibious",
+      "text": "Tsathogga can breathe both water and air."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "Tsathogga’s innate spellcasting ability is Charisma\n(spell save DC 24, +16 to hit with spell attacks).\n\n* At will: <i>acid arrow </i>(5th level)<i>, bane, blindness/deafness, blight,\ncommand, detect magic, fog cloud, grease, inflict wounds </i>(5th level)\n\n* 7/day each: <i>antilife shell, circle of death, cloudkill, contagion,\ncounterspell, dispel magic, dominate beast, dominate person, earthquake</i>\n\n* 3/day each: <i>geas, harm</i>\n\n* 1/day each: <i>control weather, power word kill, storm of vengeance, wish</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "text": "If Tsathogga fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "Tsathogga has advantage on saving throws against\nspells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "Tsathogga’s weapon attacks are magical."
+    },
+    {
+      "name": "Unholy Aura",
+      "text": "An unholy aura surrounds Tsathogga out to a radius of 40\nfeet. A creature who enters or begins their turn in the area must make a DC\n20 Wisdom saving throw. On a failed saving throw, the target is frightened\nfor 1 minute. While frightened, they are paralyzed. A frightened target can\nrepeat the saving throw at the end of each of its turns, ending the effect\non a success."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Tsathogga uses its Blasphemous Croak ability, then uses\nits tongue attack. If there is a creature within range, it can then use its bite\nattack and two claw attacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Up to three targets of Huge size or smaller within 10 feet of\nTsathogga must make a DC 27 Dexterity saving throw. On a successful\nsaving throw, it takes 44 (10d6 + 9) piercing damage, plus 35 (10d6)\nacid damage, and is grappled. On a failed saving throw, the target is\nswallowed. While swallowed, the creature is blinded and restrained, it has\ntotal cover against attacks and other effects outside of Tsathogga, and it\ntakes 56 (16d6) acid damage at the start of each of Tsathogga’s turns. If\nTsathogga takes 50 damage or more on a single turn from a creature inside\nit, Tsathogga must succeed on a DC 25 Constitution saving throw at the\nend of that turn or regurgitate all swallowed creatures, which fall prone in\na space with 10 feet of Tsathogga. If Tsathogga dies, a swallowed creature\nis no longer restrained by it and can escape from the corpse using all of its\nmovement, exiting prone."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +19 to hit, reach 10 ft., one target. Hit: 40\n(9d6 + 9) slashing damage plus 35 (10d6) acid damage."
+    },
+    {
+      "name": "Tongue",
+      "type": "special",
+      "text": "Tsathogga chooses one creature that it can see within 40 feet\nof it. That target must make a DC 28 Dexterity saving throw. On a failed\nsaving throw, the target takes 37 (8d6 + 9) bludgeoning damage plus 35\n(10d6) acid damage and is grappled. Tsathogga can use a bonus action to\npull a creature grappled by it up to 40 feet towards it."
+    },
+    {
+      "name": "Blasphemous Croak",
+      "type": "special",
+      "text": "Tsathogga utters a blasphemous croak audible to\nall creatures within 300 feet of it. Those that can hear it must make a DC\n24 Wisdom saving throw. On a failed saving throw, the target takes 28\n(8d6) necrotic damage and 28 (8d6) thunder damage and is stunned for 1\nminute. On a successful saving throw, the target takes half damage and is\nnot stunned. A stunned creature can repeat the saving throw at the end of\neach of its turns, ending the effect on a success."
+    },
+    {
+      "name": "Summon (1/day)",
+      "type": "special",
+      "text": "Tsathogga summons 2d6 hezrous, 2d4 greruors, 1\nnalfeshnee, or 1 balor. The summoned demon appears in an unoccupied\nspace within 60 feet of Tsathogga, and can’t summon other demons. It\nremains for 1 minute, until it or Tsathogga is slain, or until Tsathogga\ntakes an action to dismiss it."
+    }
+  ],
+  "source": "creature"
+}

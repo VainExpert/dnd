@@ -1,0 +1,65 @@
+{
+  "name": "Orc Hand of Yurtrus",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "volos-guide",
+      "orc"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 12,
+  "hp": {
+    "average": 30,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 11,
+    "con": 16,
+    "int": 11,
+    "wis": 14,
+    "cha": 9
+  },
+  "skills": {
+    "Arcana": 2,
+    "Intimidation": 1,
+    "Medicine": 4,
+    "Religion": 2
+  },
+  "languages": [
+    "understands Common and Orc but can't speak"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "text": "Volo's Guide to Monsters, p. 184"
+    },
+    {
+      "name": "Aggressive",
+      "text": "As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The orc is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It requires no verbal components to cast its spells. The orc has the following cleric spells prepared:\n\n* Cantrips (at-will): <i>guidance, mending, resistance, thaumaturgy</i>\n\n* 1st level (4 slots): <i>bane, detect magic, inflict wounds, protection from evil and good</i>\n\n* 2nd level (3 slots): <i>blindness/deafness, silence</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Touch of the White Hand",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 9 (2d8) necrotic damage."
+    }
+  ],
+  "source": "creature"
+}

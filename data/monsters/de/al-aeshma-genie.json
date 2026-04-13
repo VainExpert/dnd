@@ -1,0 +1,85 @@
+{
+  "name": "Al-Aeshma Genie",
+  "size": "Groß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "large",
+      "elemental",
+      "cr9",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 17,
+  "hp": {
+    "average": 172,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 90
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 15,
+    "con": 22,
+    "int": 15,
+    "wis": 16,
+    "cha": 20
+  },
+  "skills": {},
+  "languages": [
+    "Auran",
+    "Common",
+    "Ignan"
+  ],
+  "challenge": {
+    "cr": "9",
+    "xp": 5000,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Luft-Hass",
+      "text": "Der al-Aeshma hat einen Vorteil bei Angriffswürfen gegen Gegner in der Luft."
+    },
+    {
+      "name": "Gebunden",
+      "text": "Der al-Aeshma muss stets mit dem Boden verbunden sein. Selbst in gasförmiger Gestalt oder als Sandsturm muss ein Teil von ihm immer den Boden berühren. Die maximale Flughöhe des al-Aeshma beträgt 15 m. Berührt er den Boden nicht, verliert er seine Immunitäten und ist fortan anfällig für Blitz und Donner."
+    },
+    {
+      "name": "Der Untergang der Elemente",
+      "text": "Wenn ein al-Aeshma stirbt, löst sich sein Körper in einen wirbelnden Sprühnebel aus grobem Sand auf und hinterlässt die Ausrüstung, die er trug oder bei sich hatte."
+    },
+    {
+      "name": "Ungünstiger Wind",
+      "text": "Als Bonusaktion kann der al-Aeshma, solange er sich in gasförmiger Gestalt befindet, seinen Platz mit einem erstickenden Geruch verpesten. Wenn sich der al-Aeshma in gasförmiger Gestalt durch den Platz einer anderen Kreatur bewegt, muss diese einenDC 18Konstitutions-Rettungswurf bestehen oder ist bis zum Ende ihres nächsten Zuges handlungsunfähig. „Ill Wind“ hält so lange an, bis der al-Aeshma seine gasförmige Gestalt verlässt oder sich entscheidet, die Fähigkeit als Bonusaktion zu beenden."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des al-Aeshma ist Charisma (ZauberrettungswurfDC 17). Er kann die folgenden Zauber von Natur aus wirken, ohne dass materielle Komponenten erforderlich sind:\n\nBeliebig oft: Böses und Gutes erkennen, Magie erkennen, Donnerwelle\n\nJe 3/Tag: Nahrung und Wasser zerstören (wie „Nahrung und Wasser erschaffen“, macht jedoch Essen und Trinken ungenießbar), Sprachen, Windgang\n\nJe 1/Tag: Schöpfung, Gasform, Insektenplage, Unsichtbarkeit, Großes Abbild"
+    },
+    {
+      "name": "Regeneration",
+      "text": "Der Al-Aeshma erhält zu Beginn seines Zuges 10 Trefferpunkte zurück. Erleidet er Feuer- oder Strahlungsschaden, wirkt diese Eigenschaft zu Beginn seines nächsten Zuges nicht. Der Al-Aeshma stirbt nur, wenn er seinen Zug mit 0 Trefferpunkten beginnt und sich nicht regeneriert."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der al-Aeshma führt drei Krummschwertangriffe aus."
+    },
+    {
+      "name": "Krumsäbel",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 12 (2d6 + 5) Schnittschaden plus 3 (1d6) nekrotischer Schaden."
+    },
+    {
+      "name": "Staubteufel",
+      "type": "special",
+      "text": "Ein Zylinder aus Sand mit einem Radius von 1,5 Metern und einer Höhe von 9 Metern entsteht auf magische Weise an einer Stelle, die der Al-Aeshma innerhalb120 feeteiner Reichweite von 9 Metern sehen kann. Der Staubteufel hält so lange an, wie der Al-Aeshma seine Konzentration aufrechterhält (wie bei einem Zauber). Jede Kreatur außer dem al-Aeshma, die den Staubteufel betritt, muss einenDC 18  Stärke-Rettungswurf bestehen oder wird von ihm festgehalten; beliebig viele Kreaturen können auf diese Weise festgehalten werden. Zu Beginn des Zuges einer festgehaltenen Kreatur erleidet diese 7 (2d6) Schnittschaden plus 7 (2d6) nekrotischen Schaden. Der al-Aeshma kann den Staubteufel als Aktion um bis60 feet zu  bewegen; festgehaltene Kreaturen bewegen sich mit ihm. Der Staubteufel endet, wenn der Al-Aeshma ihn aus den Augen verliert. Eine Kreatur kann ihre Aktion nutzen, um eine vom Staubteufel festgehaltene Kreatur, einschließlich sich selbst, durch einenDC 18  Stärke-Check zu befreien. Bei einem erfolgreichen Check bewegt sie sich auf das nächstgelegene Feld außerhalb des Staubteufels."
+    }
+  ],
+  "source": "creature"
+}

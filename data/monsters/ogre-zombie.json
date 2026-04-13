@@ -1,0 +1,51 @@
+{
+  "name": "Ogre Zombie",
+  "size": "Large",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "large",
+      "undead",
+      "cr2",
+      "monster-manual"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 8,
+  "hp": {
+    "average": 85,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 6,
+    "con": 18,
+    "int": 3,
+    "wis": 6,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "understands Common and Giant but can't speak"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Undead Fortitude",
+      "text": "If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Morningstar",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

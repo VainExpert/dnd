@@ -1,0 +1,14 @@
+{
+  "id": "muenze-des-kaufens",
+  "name": "Münze des Kaufens",
+  "type": "Wundersamer Gegenstand",
+  "vendors": ["Ishmar", "Beute"],
+  "tags": ["magisch", "münze", "kaufen", "fluch"],
+  "price": {
+    "amount": 1,
+    "currency": "KM"
+  },
+  "attunement": false,
+  "description": "<p>Ein Kupfermünze, die, wenn sie vor einem Händler geworfen wird, magisch bis zu 5W10 % Rabatt bei diesem Händler einbringt.<br><b>Fluch:</b> Wenn du die Münze verwendest, musst du einen SG-13 WIS-Rettungswurf schaffen oder nach dem Kauf eines Gegenstands von dem beeinflussten Händler, direkt einen weiteren Gegenstand kaufen. Nach jedem Kauf muss der WIS-Rettungswurf wiederholt werden, aber der SG erhöht sich immer um 2. Bei Fehlschlag wiederholt sich der Effekt, sodass ein weiterer Gegenstand gekauft werden muss. Wenn dieser Fluch gebrochen wird, verliert die Münze ihre magischn Eigenschaften.</p>",
+  "rarity": "gewöhnlich"
+}

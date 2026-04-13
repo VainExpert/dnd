@@ -1,0 +1,102 @@
+{
+  "name": "Ice Maiden",
+  "size": "Medium",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr6",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 16,
+  "hp": {
+    "average": 84,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 17,
+    "con": 15,
+    "int": 19,
+    "wis": 13,
+    "cha": 23
+  },
+  "skills": {
+    "Deception": 9,
+    "Persuasion": 9,
+    "Stealth": 6
+  },
+  "languages": [
+    "Common",
+    "Giant",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "6",
+    "xp": 2300,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Chilling Presence",
+      "text": "Cold air surrounds the ice maiden. Small non-magical flames are extinguished in her presence and water begins to freeze. Unprotected characters spending more than 10 minutes within 15 feet of her must succeed on a DC 15 Constitution saving throw or suffer as if exposed to severe cold. Spells that grant protection from cold damage are targeted by an automatic dispel magic effect."
+    },
+    {
+      "name": "Cold Eyes",
+      "text": "Ice maidens see perfectly in snowy conditions, including driving blizzards, and are immune to snow blindness."
+    },
+    {
+      "name": "Ice Walk",
+      "text": "Ice maidens move across icy and snowy surfaces without penalty."
+    },
+    {
+      "name": "Snow Invisibility",
+      "text": "In snowy environments, the ice maiden can turn invisible as a bonus action."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The ice maiden has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The ice maiden's innate spellcasting ability is Charisma (spell save DC 17). She can innately cast the following spells:\n\nAt will: chill touch, detect magic, light, mage hand, prestidigitation, resistance\n\n5/day each: endure elements (cold only), fear, fog cloud, misty step\n\n3/day each: alter self, protection from energy, sleet storm\n\n1/day: ice storm"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The frost maiden makes two ice dagger attacks."
+    },
+    {
+      "name": "Ice Dagger",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 3) piercing damage plus 3 (1d6) cold damage."
+    },
+    {
+      "name": "Flurry-Form",
+      "type": "special",
+      "text": "The ice maiden adopts the form of a swirling snow cloud. Her stats are identical to an air elemental that deals cold damage instead of bludgeoning."
+    },
+    {
+      "name": "Icy Entangle",
+      "type": "special",
+      "text": "Ice and snow hinder her opponent's movement, as the entangle spell (DC 17)."
+    },
+    {
+      "name": "Kiss of the Frozen Heart",
+      "type": "special",
+      "text": "An ice maiden may kiss a willing individual, freezing the target's heart. The target falls under the sway of a dominate spell, his or her alignment shifts to LE, and he or she gains immunity to cold. The ice maiden can have up to three such servants at once. The effect can be broken by dispel magic (DC 17), greater restoration, or the kiss of someone who loves the target."
+    },
+    {
+      "name": "Snowblind Burst",
+      "type": "special",
+      "text": "In a snowy environment, the ice maiden attempts to blind all creatures within 30 feet of herself. Those who fail a DC 17 Charisma saving throw are blinded for 1 hour. Targets that are immune to cold damage are also immune to this effect."
+    }
+  ],
+  "source": "creature"
+}

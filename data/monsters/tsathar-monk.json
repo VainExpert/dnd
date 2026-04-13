@@ -1,0 +1,90 @@
+{
+  "name": "Tsathar Monk",
+  "size": "Medium",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 14,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 30
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 18,
+    "con": 14,
+    "int": 12,
+    "wis": 16,
+    "cha": 11
+  },
+  "skills": {
+    "Nature": 5,
+    "Perception": 5,
+    "Religion": 5
+  },
+  "languages": [
+    "Abyssal",
+    "Tsathar"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The tsathar can breathe air and water."
+    },
+    {
+      "name": "Keen Smell",
+      "text": "The tsathar has advantage on Wisdom (Perception) checks\nthat rely on smell."
+    },
+    {
+      "name": "Slimy",
+      "text": "Tsathar continuously cover themselves with muck and slime.\nCreatures attempting to grapple a tsathar do so with disadvantage."
+    },
+    {
+      "name": "Standing Leap",
+      "text": "The tsathar’s long jump is up to 20 feet and its high\njump is up to 10 feet, with or without a running start."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The tsathar can make three melee attacks: two with its\nclaws and one bite. It can use its flurry of blows or stunning strike ability\nin place of one of the claw attacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit:\n8 (1d8 + 4) slashing damage, and the target must succeed on a DC 13\nConstitution saving throw or become the living host to a tsathar egg,\nwhich over the course of the egg maturing, migrates to the chest cavity of\nthe host. The host creature must make another DC 13 Constitution saving\nthrow after 24 hours of the egg having been implanted. A failed saving\nthrow results in the host becoming violently ill, followed by a deep comalike state that lasts 2d6 + 2 days. At the end of each day, the host can\nattempt another saving throw with a success indicating that its body has\nTsathar managed to destroy the egg through normal immune response. At the end\nof the incubation period, the host awakes to excruciating pain as the young\ntsathar, freed from its egg, tears its way out of the host, who is reduced to\n0 hit points in the process.\n\nA DC 16 Wisdom (Medicine) check can be attempted to surgically\nextract an egg from the host. A lesser restoration spell will also cure the\ncondition and purge the host of the egg."
+    },
+    {
+      "name": "Flurry of Blows (3/day)",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach\n5 ft., one target. Hit: 14 (3d6 + 4) bludgeoning damage, and the\ntarget suffers one of the following effects of its choice:\n* <i>Prone.</i> The target must succeed on a Dexterity saving throw\n(DC 14) or be knocked prone.\n* <i>Pushed.</i> The target must make a Strength saving throw or\nbe pushed up to 15 feet away from the tsathar.\n* <i>Agog.</i> The target can’t take reactions until the end of the\ntsathar’s next turn."
+    },
+    {
+      "name": "Stunning Strike (3/day)",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit,\nreach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage,\nand the target must succeed on a DC 14 Constitution saving\nthrow or be stunned until the end of the tsathar’s next turn."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "naturmantel",
+  "type": "item",
+  "name": "Naturmantel",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "durch einen Druide oder Waldläufer",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 250,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Der Umhang ändert seine Farbe und Textur zugehörig zum umliegenden Terrain. Der getragene Umhang kann als druidischer Fokus für Druiden oder Waldläufer verwendet werden. In einer leicht obskurten Umgebung kann man sich mit dem Mantel als Bonus Aktion verstecken.",
+  "tags": [
+    "kleidung",
+    "natur",
+    "verstecken",
+    "bonus aktion"
+  ]
+}

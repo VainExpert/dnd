@@ -1,0 +1,50 @@
+{
+  "id": "blasrohr",
+  "type": "item",
+  "name": "Blasrohr",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "ammunition",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": "hand",
+  "stackable": true,
+  "weight": {
+    "value": 0.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 10,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "",
+  "tags": [
+    "abenteuer",
+    "waffe",
+    "kampf",
+    "stich",
+    "krieg",
+    "fernkampf",
+    "reichweite",
+    "laden",
+    "ärgern",
+    "munition"
+  ]
+}

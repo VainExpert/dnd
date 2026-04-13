@@ -1,0 +1,67 @@
+{
+  "name": "Drow Favored Consort",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr18",
+      "mordenkainens-tome-of-foes",
+      "elf"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 15,
+  "hp": {
+    "average": 225,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 20,
+    "con": 16,
+    "int": 18,
+    "wis": 15,
+    "cha": 18
+  },
+  "skills": {
+    "Acrobatics": 11,
+    "Athletics": 8,
+    "Perception": 8,
+    "Stealth": 11
+  },
+  "languages": [
+    "Elvish",
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "18",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Fey Ancestry",
+      "text": "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The drow's innate spellcasting ability is Charisma (spell save DC 18). It can innately cast the following spells, requiring no material components:\n\n* At will: <i>dancing lights</i>\n\n* 1/day each: <i>darkness, faerie fire, levitate </i>(self only)"
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The drow is a 11th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 18, +10 to hit with spell attacks). It has the following wizard spells prepared:\n\n* Cantrips (at will): <i>mage hand, message, poison spray, shocking grasp, ray of frost</i>\n\n* 1st level (4 slots): <i>burning hands, mage armor, magic missile, shield</i>\n\n* 2nd level (3 slots): <i>gust of wind, invisibility, misty step, shatter</i>\n\n* 3rd level (3 slots): <i>counterspell, fireball, haste</i>\n\n* 4th level (3 slots): <i>dimension door, Otiluke's resilient sphere</i>\n\n* 5th level (2 slots): <i>cone of cold</i>\n\n* 6th level (1 slot): <i>chain lightning</i>"
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "War Magic",
+      "text": "When the drow uses its action to cast a spell, it can make one weapon attack as a bonus action."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "instrument-der-illusionen",
+  "type": "item",
+  "name": "Instrument der Illusionen",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Während dieses Instrument gespielt wird, kann eine Aktion verwendet werden um einen harmlosen, visuellen Illusionseffekt in einem Umkreis von 1,5 m (4,5 m bei BArden) zu erzeugen. Der Effekt sind beispielsweisde leuchtende Noten, kleine Tänzer, Schmeeterlinge oder leicht fallender Schnee. Der Effekt hat keine Substanz oder macht keine Geräusche und ist offensichtlich illusorisch. Der Effekt endet wenn das Spielen aufhört.",
+  "tags": [
+    "magisch",
+    "instrument",
+    "illusion",
+    "aktion"
+  ]
+}

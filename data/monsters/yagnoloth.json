@@ -1,0 +1,61 @@
+{
+  "name": "Yagnoloth",
+  "size": "Large",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr11",
+      "mordenkainens-tome-of-foes",
+      "yugoloth"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 17,
+  "hp": {
+    "average": 147,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 14,
+    "con": 21,
+    "int": 16,
+    "wis": 15,
+    "cha": 18
+  },
+  "skills": {
+    "Deception": 8,
+    "Insight": 6,
+    "Perception": 6,
+    "Persuasion": 8
+  },
+  "languages": [
+    "Abyssal",
+    "Infernal",
+    "telepathy 60 ft."
+  ],
+  "challenge": {
+    "cr": "11",
+    "xp": 7200,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The yagnoloth's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components:\n\n* At will: <i>darkness, detect magic, dispel magic, invisibility </i>(self only)<i>, suggestion</i>\n\n* 3/day: <i>lightning bolt</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The yagnoloth has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The yagnoloth's weapon attacks are magical."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

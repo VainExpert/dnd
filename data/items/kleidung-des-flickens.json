@@ -1,0 +1,44 @@
+{
+  "id": "kleidung-des-flickens",
+  "type": "item",
+  "name": "Kleidung des Flickens",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese Kleidung repariert sich selbst auf magische Art und Weise wie beim Zauber Ausbessern.",
+  "tags": [
+    "magisch",
+    "kleidung",
+    "reparieren",
+    "ausbessern"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "schild-des-ausdrucks",
+  "type": "item",
+  "name": "Schild des Ausdrucks",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "off-hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Das Schild hat ein Gesicht auf der Vorderseite. Wenn das Schild getragen wird, kann mit einer Bonus Aktion der Gesichtsausdruck verändert werden.",
+  "tags": [
+    "abwehr",
+    "schild",
+    "bonus aktion"
+  ]
+}

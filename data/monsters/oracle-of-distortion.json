@@ -1,0 +1,68 @@
+{
+  "name": "Oracle of Distortion",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr5",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 13,
+  "hp": {
+    "average": 66,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 16,
+    "con": 12,
+    "int": 18,
+    "wis": 6,
+    "cha": 12
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Illusory Defenses",
+      "text": "When a creature rolls a successful\nattack against the oracle, roll a d20. On a result of 1-9,\nthe attack hits an illusory version of the oracle and\ndeals no damage. On a result of 10-20, the attack\nfunctions as normal."
+    },
+    {
+      "name": "Imperceivable Thoughts",
+      "text": "Creatures can’t read the mind\nof the oracle or attempt to sway its actions via magic.\nAny creature that attempts to do so immediately takes\n11 (2d10) psychic damage."
+    },
+    {
+      "name": "Aura of Distortion",
+      "text": "Words spoken within 20 feet of the\noracle and transformed into a jumbled, garbled mess.\nVerbal communication is impossible and creatures are\nunable to perform the verbal components of spells."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mind Twist",
+      "type": "special",
+      "text": "Target creature within 90 feet of the oracle\nmust succeed on a DC 15 Intelligence saving throw or\ntake 22 (4d10) psychic damage. If a creature fails this\nsaving throw by 10 or more, its mind is left jumbled\nand it is unable to cast spells on its next turn."
+    },
+    {
+      "name": "Locational Reconfiguration (Recharge 5-6)",
+      "type": "special",
+      "text": "Target\ncreature must succeed on a DC 15 Wisdom saving\nthrow or take 11 (2d10) psychic damage and be\nteleported 50 feet straight up and begin to fall. At the\nend of that creature's next turn, it slams into the\nground and takes 17 (5d6) bludgeoning damage unless\nit has a way to mitigate this effect."
+    },
+    {
+      "name": "Conjure Replicant Fighters (1/Day)",
+      "type": "special",
+      "text": "The oracle chooses\ntwo creatures in can see within 60 feet. In an empty\nspace adjacent to each of those creatures, a perfect\nreplica of that creature is conjured into existence with\na burst of bright light. These replicants persist for 1\nminute or until the oracle dies. Roll a d20 for each of\nthese creatures and add them to the initiative order.\n\nThese entities have 25 hit points, AC 13, and have a\nsingle attack:\n* ***Illusory Strike.*** Melee Weapon Attack: +5 to hit, reach\n5 ft., one target. Hit: 7 (1d8 + 3) force damage.\n\nThese replicants are perfect copies and cannot be\ndistinguished from the creature it is copying and will\nalways attempt to stay adjacent to that creature. The\nreplicant can mimic physical movements perfectly but\ncannot speak. If the real creature attempts to convince\nits allies they are the real version, have each creature\nwithin 60 feet that can see and hear both creatures\nmake a DC 13 Wisdom (Perception) check,\ndetermining the true creature on a success. On a total\nresult of 5 or lower on this check, the creature\nbecomes convinced the replicant is the real version."
+    }
+  ],
+  "source": "creature"
+}

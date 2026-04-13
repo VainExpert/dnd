@@ -1,0 +1,92 @@
+{
+  "name": "Avatar von Boreas",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr17",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 20,
+  "hp": {
+    "average": 168,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 120
+  },
+  "abilities": {
+    "str": 25,
+    "dex": 22,
+    "con": 22,
+    "int": 18,
+    "wis": 19,
+    "cha": 21
+  },
+  "skills": {
+    "Deception": 11,
+    "Nature": 10,
+    "Perception": 10,
+    "Stealth": 12
+  },
+  "languages": [
+    "Common",
+    "Dwarvish",
+    "Giant",
+    "Infernal"
+  ],
+  "challenge": {
+    "cr": "17",
+    "xp": 18000,
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Eiskalte Präsenz",
+      "text": "Boreas lässt alles in150 feetseiner Nähe gefrieren. Nach 5 Runden erlöschen nichtmagische Feuer bis zur Größe eines Lagerfeuers. Wasser gefriert innerhalb von 1 Minute. Zauber, die vor Kälte schützen, werden in der Nähe150 feetvon Boreas sofort einem „Magie bannen“-Zauber (mit +10 auf die Zauberfertigkeit) unterzogen."
+    },
+    {
+      "name": "Windform",
+      "text": "Boreas kann als Aktion zwischen seinem humanoiden Körper und einem Körper aus Wind und Nebel wechseln; er kann niemals dazu gezwungen werden, seine Gestalt zu wechseln. In seiner Windgestalt kann er einen Wirbelwind-Stoßangriff ausführen und seine Zauber wirken, jedoch keine Waffenangriffe. „Wahrsicht“ enthüllt beide Gestalten gleichzeitig."
+    },
+    {
+      "name": "Die Freiheit des Windes",
+      "text": "Schlösser, Fesseln, Seile und andere Fesselungen können Boreas nicht bändigen."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Boreas’ angeborene Zauberfähigkeit ist Charisma (ZauberrettungswurfDC 19). Er kann die folgenden Zauber von Natur aus wirken, ohne dass dafür materielle Komponenten erforderlich sind:\n\nBeliebig oft: Wasser erschaffen, Magie aufspüren, Führung, Unsichtbarkeit, Verwandlung, Mit Tieren sprechen, Wahres Sehen, Windwand\n\nJe 3/Tag: Blitzruf, Wetterbeherrschung, Wunden heilen, Magie bannen, Eissturm, Geringe Wiederherstellung\n\nJe 1/Tag: Kettenblitz, Erdbeben, Finger des Todes, Heilen, Gestaltwandlung, Eiswand, Wort der Rückrufung"
+    },
+    {
+      "name": "Regeneration",
+      "text": "Der Avatar von Boreas erhält zu Beginn seines Zuges 10 Trefferpunkte zurück. Erleidet der Avatar von Boreas Feuerschaden, wirkt diese Eigenschaft zu Beginn seines nächsten Zuges nicht. Der Avatar von Boreas stirbt nur, wenn er seinen Zug mit 0 Trefferpunkten beginnt und keine Trefferpunkte regeneriert."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Boreas führt 4 Speerangriffe oder 4 Langbogenangriffe oder 2 Wirbelsturm-Angriffe aus."
+    },
+    {
+      "name": "Eisspeer (humanoide Gestalt)",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff. +13 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 11 (1d8 + 7) Durchdringungsschaden plus 17 (5d6) Kälteschaden."
+    },
+    {
+      "name": "North Wind Langbogen",
+      "type": "special",
+      "text": "Fernkampfangriff: +12 auf Treffer, Reichweite150/600  Fuß, ein Ziel. Treffer: 10 (1d8+6) Durchdringungsschaden plus 9 (2d8) Kälteschaden."
+    },
+    {
+      "name": "Wirbelsturm (nur in Windform)",
+      "type": "special",
+      "text": "Fernkampf-Zauberangriff: +11 auf Treffer, Reichweite 15 m., ein Ziel. Treffer: 37 (5d12 + 5) Schnittschaden."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,91 @@
+{
+  "name": "Elemental Water Dragon",
+  "size": "Huge",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "huge",
+      "elemental",
+      "cr17",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 17,
+  "hp": {
+    "average": 310,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60,
+    "swim": 80
+  },
+  "abilities": {
+    "str": 25,
+    "dex": 24,
+    "con": 21,
+    "int": 16,
+    "wis": 14,
+    "cha": 19
+  },
+  "skills": {
+    "Arcana": 9,
+    "Nature": 9,
+    "Perception": 14,
+    "Stealth": 13
+  },
+  "languages": [
+    "Aquan",
+    "Common"
+  ],
+  "challenge": {
+    "cr": "17",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Freeze",
+      "text": "If the elemental water dragon takes cold damage, it partially\nfreezes; its speed is reduced by 20 feet until the end of its next turn."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The dragon’s innate spellcasting ability is\nCharisma (spell save DC 18, +10 to hit with spell attacks). It can cast the\nfollowing spells, requiring no material components:\n\n* At will: <i>create or destroy water</i>\n\n* 3/day: <i>control water</i>\n\n* 1/day each: <i>control weather, plane shift</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "text": "If the dragon fails a saving throw, it can\nchoose to succeed instead."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "The dragon deals double damage to objects and\nstructures."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The dragon can make three attacks: one with its bite and\ntwo with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 18\n(2d10 + 7) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 14\n(2d6 + 7) slashing damage."
+    },
+    {
+      "name": "Tail",
+      "type": "special",
+      "text": "Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 16\n(2d8 + 7) bludgeoning damage."
+    },
+    {
+      "name": "Steam Breath (Recharge 5–6)",
+      "type": "special",
+      "text": "The dragon exhales a 60-foot cone of\nsuperheated steam that spreads around corners. Creatures within the area\nmust make DC 19 Dexterity saving throws, taking 63 (18d6) fire damage\non a failed saving throw, or half as much on a successful one. Being\nunderwater does not provide resistance to this effect."
+    }
+  ],
+  "source": "creature"
+}

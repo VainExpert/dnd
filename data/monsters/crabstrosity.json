@@ -1,0 +1,77 @@
+{
+  "name": "Crabstrosity",
+  "size": "Gargantuan",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "gargantuan",
+      "monstrosity",
+      "cr10",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 15,
+  "hp": {
+    "average": 186,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 23,
+    "dex": 10,
+    "con": 20,
+    "int": 3,
+    "wis": 10,
+    "cha": 2
+  },
+  "skills": {
+    "Athletics": 10,
+    "Perception": 4
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Vicegrip",
+      "text": "The crabstrosity can have the same target\ngrappled by both claws. When a creature makes a\ncheck to break free of the crabstrosity's grapple, it is\nfreed from both claws on a success. A target grappled\nby both claws is considered restrained."
+    },
+    {
+      "name": "Powerful Claws",
+      "text": "Creatures may target the crabstrosities\nclaws individually. The large claw has 75 hit points and\nAC 15 while the small claw has 50 hit points and AC\n13. If either claw takes more than 25 points of damage\nin a single round, it will release any creature it is\ncurrently grappling. When the claw is reduced to 0 hit\npoints, it falls limply to the ground and can no longer\nattack."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The crabstrosity makes three attacks: one\nwith its big claw, one with its small claw, and one with\nits stomp."
+    },
+    {
+      "name": "Big Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 10\nft., one target. Hit: 25 (3d12 + 6) piercing damage and\nthe target is grappled (escape DC 18) if it is Huge or\nsmaller and the crabstrosity doesn’t have another\ncreature grappled in its big claw."
+    },
+    {
+      "name": "Small Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 10\nft., one target. Hit: 16 (3d6 + 6) piercing damage and\nthe target is grappled (escape DC 18) if it is Huge or\nsmaller and the crabstrosity doesn’t have another\ncreature grappled in its small claw."
+    },
+    {
+      "name": "Stomp",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 10 ft.,\none target. Hit: 17 (2d10 + 6) bludgeoning and the\ntarget must succeed on a DC 18 Strength saving throw\nor be knocked prone."
+    },
+    {
+      "name": "Eviscerate",
+      "type": "special",
+      "text": "The crabstrosity attempts to eviscerate a\ntarget grappled by both of its claws. The grappled\ncreature takes 52 (8d12) piercing damage. If a creature\nis reduced to 0 hit points from this attack, their body is\nbrutally torn to pieces."
+    }
+  ],
+  "source": "creature"
+}

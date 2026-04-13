@@ -1,0 +1,44 @@
+{
+  "id": "trankarmbrust-des-alchemisten",
+  "type": "item",
+  "name": "Trankarmbrust des Alchemisten",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "potion",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": "hand",
+  "stackable": true,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese feinmechanische Armbrust verschießt keine Bolzen, sondern nachfüllbare Trankkapseln. Das Set enthält einen Ledergürtel mit 6 Halterungen sowie 6 wiederverwendbare Kapseln aus verstärktem Glas/Metall. Die Trankarmbrust gilt als Handarmbrust. Sie verursacht keinen Waffenschaden; ihr Zweck ist die Abgabe von Flüssigkeiten. Jede Kapsel kann 1 Dosis eines Tranks oder einer ähnlichen Flüssigkeit aufnehmen. Das Befüllen einer leeren Kapsel erfordert eine Aktion. Wenn du die Trankarmbrust verwendest, wählst du eine gefüllte Trankkapsel und lädst sie als Teil des Angriffs (oder als Interaktion mit einem Gegenstand) ein. Du führst dann einen Fernkampfangriff gegen eine Kreatur oder ein Objekt in Reichweite aus. Treffer: Der Inhalt wird beim Ziel freigesetzt. Ist der Inhalt ein Trank, gilt er als dem Ziel verabreicht (als ob es ihn getrunken hätte), sofern der Trank grundsätzlich auf diese Weise verabreicht werden kann. Fehlschlag: Der Inhalt wird an einem Punkt in der Nähe verschüttet. Eine Kapsel, die in gefährlichem Gelände landet oder unerreichbar wird, kann verloren gehen.",
+  "tags": [
+    "magisch",
+    "waffe",
+    "fernkampf",
+    "trank"
+  ]
+}

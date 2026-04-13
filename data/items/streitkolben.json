@@ -1,0 +1,47 @@
+{
+  "id": "streitkolben",
+  "type": "item",
+  "name": "Streitkolben",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 2,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 5,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "",
+  "tags": [
+    "abenteuer",
+    "waffe",
+    "kampf",
+    "wucht",
+    "einfach",
+    "nahkampf",
+    "schwächen"
+  ]
+}

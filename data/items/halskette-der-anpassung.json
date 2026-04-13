@@ -1,0 +1,43 @@
+{
+  "id": "halskette-der-anpassung",
+  "type": "item",
+  "name": "Halskette der Anpassung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "neck",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 250,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diese Halskette trägst, kannst du in jeder Umgebung normal atmen und du bist bei Rettungswürfen gegen schädliche Gase und Dämpfe (wie Stinkende Wolke und Todeswolke, inhalierte Gifte und die Odemwaffen mancher Drachen) im Vorteil.",
+  "tags": [
+    "magisch",
+    "hals",
+    "schmuck"
+  ]
+}

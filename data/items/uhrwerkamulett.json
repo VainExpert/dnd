@@ -1,0 +1,41 @@
+{
+  "id": "uhrwerkamulett",
+  "type": "item",
+  "name": "Uhrwerkamulett",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "neck",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wen du einen Angriffswurf machst, während du das Amulett trägst, kannst du den Wurf umgehen und direkt eine 10 (vor Bonussen) als Wurf nehmen. Diese Eigenschaft kann einmal pro Tag verwendet werden.",
+  "tags": [
+    "magisch"
+  ]
+}

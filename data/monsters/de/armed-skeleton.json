@@ -1,0 +1,58 @@
+{
+  "name": "Bewaffnetes Skelett",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr1",
+      "homebrew"
+    ]
+  },
+  "alignment": "gesetztreu-böse",
+  "ac": 13,
+  "hp": {
+    "average": 26,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 14,
+    "con": 15,
+    "int": 6,
+    "wis": 8,
+    "cha": 6
+  },
+  "skills": {
+    "Athletics": 3
+  },
+  "languages": [
+    "understands all languages it knew in life but can't speak"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Bewaffneter Vorteil",
+      "text": "Das Skelett hat einen Vorteil bei Stärke-Proben (Leichtathletik), die zum Ringen durchgeführt werden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Das Skelett führt vier Klauenangriffe aus."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +3 zum Treffen, Reichweite5ft: , ein Ziel.  Treffer: 3 (1d4 + 1) Schnittschaden."
+    }
+  ],
+  "source": "creature"
+}

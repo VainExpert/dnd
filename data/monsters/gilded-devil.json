@@ -1,0 +1,101 @@
+{
+  "name": "Gilded Devil",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr7",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 16,
+  "hp": {
+    "average": 112,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 15,
+    "con": 17,
+    "int": 15,
+    "wis": 18,
+    "cha": 17
+  },
+  "skills": {
+    "Deception": 9,
+    "History": 5,
+    "Insight": 10,
+    "Persuasion": 9,
+    "Sleight of Hand": 8
+  },
+  "languages": [
+    "Celestial",
+    "Common",
+    "Draconic",
+    "Infernal; telepathy (120 ft.)"
+  ],
+  "challenge": {
+    "cr": "7",
+    "xp": 2900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "text": "Magical darkness doesn't impede the devil's darkvision."
+    },
+    {
+      "name": "Liar's Largesse",
+      "text": "A gilded devil has influence over the recipient of a gift for as long as that creature retains the gift. The recipient receives a -2 penalty on saving throws against the gilded devil's abilities and a further -10 penalty against scrying attempts made by the gilded devil. A remove curse spell removes this effect."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The devil has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The gilded devil's weapon attacks are magical."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The gilded devil's spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). The gilded devil can innately cast the following spells, requiring no material components:\n\nAt will: detect thoughts, major image, suggestion\n\n3/day each: dominate person, polymorph, scorching ray (4 rays), scrying\n\n1/day: teleport (self plus 50 lb of objects only)"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The gilded devil makes two heavy flail attacks."
+    },
+    {
+      "name": "Heavy Flail (Scourge of Avarice)",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Betrayal of Riches (Recharge 5-6)",
+      "type": "special",
+      "text": "As a bonus action, a gilded devil can turn rings, necklaces, and other jewelry momentarily against their wearer. The devil can affect any visible item of jewelry on up to two creatures within 60 feet, twisting them into cruel barbs and spikes. Each target must succeed on a DC 15 Wisdom saving throw to halve the damage from this effect. If the saving throw fails, the victim takes 13 (3d8) piercing damage and an additional effect based on the item location targeted.\n\nAn item is treated as jewelry if it is made of a precious material (such as silver, gold, ivory, or adamantine), adorned with gems, or both, and is worth at least 100 gp.\n\nArms: STR Save or Melee Damage halved until a short rest\n\nHand: STR Save or Drop any held item\n\nEyes: DEX Save or Permanetly blinded\n\nHead: DEX Save Disadvantage on INT checks until long rest\n\nFeet: DEX Save or Speed halved for 24 hours\n\nNeck: CON Save or Stunned, unable to breathe for 1 round\n\nOther: No additional effects"
+    },
+    {
+      "name": "Scorn Base Metals",
+      "type": "special",
+      "text": "A gilded devil's attacks ignore any protection provided by nonmagical armor made of bronze, iron, steel, or similar metals. Protection provided by valuable metals such as adamantine, mithral, and gold apply, as do bonuses provided by non-metallic objects."
+    },
+    {
+      "name": "Scourge of Avarice",
+      "type": "special",
+      "text": "As a bonus action, a gilded devil wearing jewelry worth at least 1,000 gp can reshape it into a +2 heavy flail. A creature struck by this jeweled flail suffers disadvantage on all Wisdom saving throws until his or her next short rest, in addition to normal weapon damage. The flail reverts to its base components 1 minute after it leaves the devil's grasp, or upon the gilded devil's death."
+    },
+    {
+      "name": "Voracious Greed",
+      "type": "special",
+      "text": "As an action, a gilded devil can consume nonmagical jewelry or coinage worth up to 1,000 gp. For each 200 gp consumed, it heals 5 hp of damage. A gilded devil can use this ability against the worn items of a grappled foe. The target must succeed on a DC 13 Dexterity saving throw to keep an item from being consumed."
+    }
+  ],
+  "source": "creature"
+}

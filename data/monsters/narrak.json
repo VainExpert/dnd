@@ -1,0 +1,73 @@
+{
+  "name": "Narrak",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr2",
+      "out-of-the-abyss",
+      "derro"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 12,
+  "hp": {
+    "average": 40,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 9,
+    "dex": 14,
+    "con": 13,
+    "int": 14,
+    "wis": 5,
+    "cha": 16
+  },
+  "skills": {
+    "Arcana": 4,
+    "Stealth": 4
+  },
+  "languages": [
+    "Dwarvish",
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Insanity",
+      "text": "Droki has advantage on saving throws against being charmed or frightened."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The derro has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "Narrak is a 5th-level spellcaster. His spellcasting ability is Charisma (Save DC 13, +5 to hit with spell attacks) Narrak has two 2nd-level spell slots, which he regains after finishing a short or long rest, and knows the following Warlock spells:\n\n* Cantrips (at will): <i>eldritch blast, friends, poison spray</i>\n\n* 1st level: <i>armor of Agathys, charm person, hex</i>\n\n* 2nd level: <i>hold person, ray of enfeeblement, spider climb</i>"
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the derro has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Armor of Shadows (Recharges after a Short or Long Rest)",
+      "type": "special",
+      "text": "Narrak casts <i>mage armor</i> on himself"
+    },
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit:5 (1d6 + 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

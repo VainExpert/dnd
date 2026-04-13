@@ -1,0 +1,53 @@
+{
+  "name": "Githyanki Kith'rak",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr12",
+      "mordenkainens-tome-of-foes",
+      "gith"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 18,
+  "hp": {
+    "average": 180,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 16,
+    "con": 17,
+    "int": 16,
+    "wis": 15,
+    "cha": 17
+  },
+  "skills": {
+    "Intimidation": 7,
+    "Perception": 6
+  },
+  "languages": [
+    "Gith"
+  ],
+  "challenge": {
+    "cr": "12",
+    "xp": 8400,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "text": "The githyanki's innate spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no components:\n\n* At will: <i>mage hand </i>(the hand is invisible)\n\n* 3/day each: <i>blur, jump, misty step, nondetection </i>(self only)\n\n* 1/day each: <i>plane shift, telekinesis</i>"
+    },
+    {
+      "name": "Rally the Troops",
+      "text": "As a bonus action, the githyanki can magically end the charmed and frightened conditions on itself and each creature of its choice that it can see within 30 feet of it."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

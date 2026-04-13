@@ -1,0 +1,75 @@
+{
+  "name": "Kaufen",
+  "size": "Klein",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "small",
+      "fey",
+      "cr2",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 15,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 11,
+    "dex": 16,
+    "con": 12,
+    "int": 8,
+    "wis": 11,
+    "cha": 14
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 5
+  },
+  "languages": [
+    "Common",
+    "Dwarvish",
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Arktischer Jäger",
+      "text": "Beli haben einen Vorteil bei Geschicklichkeits- (Verbergen) und Weisheits- (Wahrnehmung) Proben, die in eisiger, natürlicher Umgebung durchgeführt werden."
+    },
+    {
+      "name": "Kaltregeneration",
+      "text": "Solange die Temperatur unter dem Gefrierpunkt liegt, erhält der Beli zu Beginn seines Zuges 3 Trefferpunkte zurück. Erleidet der Beli Feuerschaden, wirkt diese Eigenschaft zu Beginn seines nächsten Zuges nicht. Der Beli stirbt nur, wenn er seinen Zug mit 0 Trefferpunkten beginnt und sich nicht regeneriert."
+    },
+    {
+      "name": "Vorbeiflug",
+      "text": "Der Beli löst keinen Gelegenheitsangriff aus, wenn er sich aus der Reichweite eines Gegners fliegt."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Beli ist Charisma (ZauberrettungswurfDC 12, +4 auf Treffer bei Zauberangriffen). Es kann die folgenden Zauber von Natur aus wirken, ohne dass materielle Komponenten erforderlich sind:\n\n* Beliebig oft: Unsichtbarkeit\n\n* 3/Tag: Kühle Berührung"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Eisdolch",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 5 (1d4 + 3) Durchdringungsschaden plus 2 (1d4) Kälteschaden."
+    },
+    {
+      "name": "Eisiger Kurzbogen",
+      "type": "special",
+      "text": "Fernkampfangriff: +5 auf den Treffer, Reichweite80/320  Fuß, ein Ziel. Treffer: 5 (1d4 + 3) Durchdringungsschaden plus 2 (1d4) Kälteschaden; außerdem muss das Ziel einen erfolgreichenDC 13  Konstitutions-Rettungswurf bestehen oder erhält durch die eisige Kälte des Pfeils 2 Stufen Erschöpfung. Bei einem erfolgreichen Rettungswurf wird das Ziel außerdem für 24 Stunden immun gegen weitere Erschöpfungsstufen durch Beli-Pfeile (bereits erlittene Erschöpfungsstufen bleiben jedoch bestehen). Ein Charakter, der eine sechste Erschöpfungsstufe erleidet, stirbt nicht automatisch, sondern fällt auf 0 Trefferpunkte und muss wie üblich Todesrettungswürfe durchführen. Die Erschöpfung hält an, bis sich das Ziel vollständig vom Kälteschaden erholt hat."
+    }
+  ],
+  "source": "creature"
+}

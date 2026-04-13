@@ -1,0 +1,71 @@
+{
+  "name": "Amphipteren",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "medium",
+      "beast",
+      "cr3",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 15,
+  "hp": {
+    "average": 60,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20,
+    "fly": 60,
+    "swim": 20
+  },
+  "abilities": {
+    "str": 11,
+    "dex": 18,
+    "con": 17,
+    "int": 2,
+    "wis": 16,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 5
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Vorbeiflug",
+      "text": "Der Amphipter löst keinen Gelegenheitsangriff aus, wenn er sich aus der Reichweite eines Gegners fliegt."
+    },
+    {
+      "name": "Schwarmverhalten",
+      "text": "Bis zu zwei Amphipteren können sich gleichzeitig denselben Platz teilen. Ein Amphipter erhält einen Vorteil bei Nahkampfangriffswürfen, wenn er sich seinen Platz mit einem anderen Amphipter teilt, der nicht handlungsunfähig ist."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Amphiptere führt einen Bissangriff und einen Stachelangriff aus."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5 ft: , eine Kreatur. Treffer: 7 (1d6 + 4) Durchdringungsschaden."
+    },
+    {
+      "name": "Stinger",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf den Treffer, Reichweite5 ft: 0 m, eine Kreatur. Treffer: 7 (1d6 + 4) Durchbohrungsschaden plus 10 (3d6) Giftschaden; das Ziel muss einen erfolgreichenDC 13Konstitutions-Rettungswurf bestehen oder wird für 1 Stunde vergiftet."
+    }
+  ],
+  "source": "creature"
+}

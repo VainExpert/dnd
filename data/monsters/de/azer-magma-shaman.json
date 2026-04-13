@@ -1,0 +1,64 @@
+{
+  "name": "Azer, der Magma-Schamane",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr3",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "gesetztreu-neutral",
+  "ac": 13,
+  "hp": {
+    "average": 55,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 12,
+    "int": 12,
+    "wis": 10,
+    "cha": 16
+  },
+  "skills": {},
+  "languages": [
+    "Ignan"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Azers\nist Charisma (ZauberrettungswurfDC 13). Er kann\nvon Natur aus die folgenden Zauber wirken, ohne dass\nKomponenten erforderlich sind:\n\n* Beliebig oft: Heilen, Flamme erzeugen, Sprachen verstehen, Erde formen\n\n* Je 2/Tag: Wunden heilen (nur Elementare), Schild, Aganazzars Brandbrand\n\n* Je 1/Tag: Feuerball, Fähigkeit verstärken, Unsichtbarkeit"
+    },
+    {
+      "name": "Beheizte Waffen",
+      "text": "Wenn der Azer mit einer metallenen\nNahkampfwaffe trifft, verursacht er zusätzlich 3 (1d6) Feuerschaden\n(im Angriff enthalten)."
+    },
+    {
+      "name": "Beleuchtung",
+      "text": "Der Azer strahlt helles Licht in einem Umkreis von 3 Metern\naus und zusätzlich schwaches Licht. Diese\nFunktion ist 10 feetnicht aktiv, solange der Azer unsichtbar ist."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Azer führt zwei Angriffe mit seinem\nKriegshammer aus."
+    },
+    {
+      "name": "Warhammer",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite\n1,5 m: 1, ein Ziel. Treffer: 6 (1d8 + 2) Bludgeoning-Schaden\noder 7 (1d10 + 2) Bludgeoning-Schaden, wenn\ndie Waffe für einen Nahkampfangriff mit beiden Händen eingesetzt wird, plus 3\n(1d6) Feuerschaden."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,57 @@
+{
+  "name": "Amethyst-Drachenjunges",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "medium",
+      "dragon",
+      "cr3",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 17,
+  "hp": {
+    "average": 36,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 14,
+    "con": 11,
+    "int": 14,
+    "wis": 13,
+    "cha": 13
+  },
+  "skills": {
+    "Insight": 3,
+    "Perception": 3
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Feedback-Aura",
+      "text": "Jedes Mal, wenn der Drache\nSchaden erleidet, müssen alle 30 feetKreaturen in seinem Umkreis\neinenDC 12Intelligenz-Rettungswurf bestehen, sonst erleiden sie\n3 (1d6) psychischen Schaden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 zum Treffer, Reichweite:1,5 m .,\nein Ziel. Treffer: 7 (1d10 + 2) Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

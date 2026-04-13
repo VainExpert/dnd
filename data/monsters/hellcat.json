@@ -1,0 +1,79 @@
+{
+  "name": "Hellcat",
+  "size": "Tiny",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "tiny",
+      "aberration",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 13,
+  "hp": {
+    "average": 44,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 3,
+    "dex": 15,
+    "con": 16,
+    "int": 11,
+    "wis": 15,
+    "cha": 18
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 4
+  },
+  "languages": [
+    "understands Common but can’t speak; telepathy 60 ft."
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Death Sense",
+      "text": "The hellcat can sense the exact\nlocation of any humanoid within 120 feet with less\nthan half its hit points."
+    },
+    {
+      "name": "False Appearance",
+      "text": "Unless it is using\nits Death Gaze ability, the hellcat is\nindistinguishable from a normal housecat."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The hellcat has\nadvantage on saving throws against\nspells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The hellcat makes one bite attack and one claw attack."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9\n(2d6 + 2) slashing damage."
+    },
+    {
+      "name": "Death Gaze (Recharge 5–6)",
+      "type": "special",
+      "text": "One target within 30 feet of the hellcat\nthat it can see must make a DC 14 Constitution saving throw. On a failed\nsaving throw, the target takes 27 (6d8) necrotic damage. If the creature\ndrops to 0 hit points from this damage, it dies, and can only be restored to\nlife by means of a true resurrection or wish spell."
+    }
+  ],
+  "source": "creature"
+}

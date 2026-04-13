@@ -1,0 +1,58 @@
+{
+  "name": "Blutwurst",
+  "size": "Groß",
+  "type": {
+    "type": "ooze",
+    "tags": [
+      "large",
+      "ooze",
+      "cr4",
+      "monster-manual"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 7,
+  "hp": {
+    "average": 85,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 5,
+    "con": 16,
+    "int": 1,
+    "wis": 6,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amorph",
+      "text": "Der Pudding kann sich durch einen Raum bewegen, der genauso schmal wie1 inchbreit ist, ohne sich dabei zusammenzudrücken."
+    },
+    {
+      "name": "Ätzende Form",
+      "text": "Ein Wesen, das den Pudding berührt oder ihn mit einem Nahkampfangriff trifft, während es sich5 feetin seiner Nähe befindet, erleidet 4 (1d8) Säureschaden. Jede nichtmagische Waffe aus Metall oder Holz, die den Pudding trifft, wird angegriffen. Nach dem Verursachen von Schaden erhält die Waffe einen permanenten und kumulativen Malus von -1 auf Schadenswürfe. Wenn der Malus auf -5 sinkt, wird die Waffe zerstört. Nichtmagische Munition aus Metall oder Holz, die den Pudding trifft, wird nach dem Verursachen von Schaden zerstört. Der Pudding kann sich in 1 Runde durch 2 Zoll dickes, nichtmagisches Holz oder Metall fressen."
+    },
+    {
+      "name": "Spinnenklettern",
+      "text": "Der Pudding kann schwierige Oberflächen erklimmen, sogar kopfüber an Decken, ohne eine Fertigkeitsprobe ablegen zu müssen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Pseudopod",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffer, Reichweite5 ft: 0, ein Ziel. Treffer: 6 (1d6 + 3) Bludgeoning-Schaden plus 18 (4d8) Säureschaden. Außerdem wird die vom Ziel getragene nichtmagische Rüstung teilweise aufgelöst und erhält einen dauerhaften und kumulativen Malus von -1 auf ihren RK-Wert. Die Rüstung wird zerstört, wenn der Malus ihren RK-Wert auf 10 senkt."
+    }
+  ],
+  "source": "creature"
+}

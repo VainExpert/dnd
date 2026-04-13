@@ -1,0 +1,57 @@
+{
+  "name": "Virtue",
+  "size": "Medium",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "medium",
+      "celestial",
+      "cr7",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "any good alignment",
+  "ac": 15,
+  "hp": {
+    "average": 97,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 13,
+    "con": 16,
+    "int": 16,
+    "wis": 17,
+    "cha": 20
+  },
+  "skills": {},
+  "languages": [
+    "all",
+    "telepathy 60 ft."
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The Virtue has advantage on\nsaving throws against spells and other magical\neffects from evil characters and sources."
+    },
+    {
+      "name": "Aura of Protection Against Evil",
+      "text": "Evil creatures\nhave disadvantage on attack rolls against all allies\nwithin 5 feet of the Virtue. Allies in this area can’t\nbe charmed, frightened, or possessed by evil creatures. If an ally is already charmed, frightened, or\npossessed by evil magic, the ally has advantage on\nany new saving throw against the relevant effect."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Sing",
+      "type": "special",
+      "text": "At the start of each of its turns, the Virtue\nchooses a chorus below and sings it. Only creatures who can hear the Virtue are affected by\nits chorus. It can only sing one chorus at a time.\nAny damage it takes forces it to make a Constitution saving throw to maintain the chorus. The\nDC equals 10 or half the damage taken, whichever\nnumber is higher.\n\n* ***Chorus of Succor.*** While the Virtue sings, each ally\nmay choose one condition they’re suffering from at\nthe start of their turn and end it.\n\n* ***Chorus of Inspiration.*** While the Virtue sings, each\nally may add a d6 to the result of any attack roll\nor saving throw, once per round. The ally can wait\nuntil after they roll the d20 before deciding to use\nthe inspiration die, but must decide before the GM\nsays whether the roll succeeds or fails.\n\n* ***Chorus of Retribution.*** While the Virtue sings, any\nenemy who deals damage to one of the Virtue’s\nallies immediately takes 5 thunder damage.\n\n* ***Chorus of Damnation.*** While the Virtue sings, any\nextraplanar evil creatures have disadvantage on\nsaving throws against spells that would send them\nto another plane."
+    }
+  ],
+  "source": "creature"
+}

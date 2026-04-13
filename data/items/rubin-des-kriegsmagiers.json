@@ -1,0 +1,47 @@
+{
+  "id": "rubin-des-kriegsmagiers",
+  "type": "item",
+  "name": "Rubin des Kriegsmagiers",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "gewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "druch einen Zauberwirker",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser Rubin erlaubt des Verwenden einer Einfachen oder Kriegswaffe als arkaner Fokus. Dafür muss der Rubin für mind. 10 min an die Waffe gehalten werden. Danach kann der Rubin nur dann entfernt werden, wenn du ihn selbst mit einer Aktion entfernst, die Waffe zerstört wird, oder die Einstimmung zum Rubin endet.",
+  "tags": [
+    "magisch",
+    "juwel",
+    "aktion",
+    "waffe",
+    "arkaner fokus",
+    "druidischer fokus",
+    "heiliges symbol"
+  ]
+}

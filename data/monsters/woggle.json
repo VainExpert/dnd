@@ -1,0 +1,57 @@
+{
+  "name": "Woggle",
+  "size": "Medium",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr1/8",
+      "homebrew"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 11,
+  "hp": {
+    "average": 18,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 12,
+    "con": 10,
+    "int": 2,
+    "wis": 9,
+    "cha": 13
+  },
+  "skills": {
+    "Perception": 3
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/8",
+    "xp": 25,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Woggle Woggle",
+      "text": "The woggle babbles in its bizarre\nwoggle-speak while it can see any creature and isn’t\nincapacitated. Each creature that starts its turn within\n20 feet of the woggle and can hear it must succeed\non a DC 11 Intelligence saving throw or be cursed\nwith woggle-speak. The cursed target loses all of its\nlanguages and can only speak and write the word\n\"woggle.\" While cursed, casting a spell that includes\na verbal component is impossible. Woggle-speak is\ngibberish and can’t be understood with a\ncomprehend languages spell or similar magic, nor\nunderstood by others with the same curse.\nTelepathy, mind-reading, and other spells used for\nnon-verbal communication similarly don’t work as\nthe cursed creature can only create images of the\nword “woggle” or a physical woggle in its mind. The\ncurse lasts until removed by the remove curse spell\nor other magic. Creatures immune to being charmed\nautomatically succeed on the saving throw. A\ncreature that succeeds on its saving throw is\nimmune to this effect for 24 hours."
+    },
+    {
+      "name": "Two Heads",
+      "text": "The woggle has advantage on Wisdom\n(Perception) checks and on saving throws against\nbeing blinded, charmed, deafened, frightened,\nstunned, and knocked unconscious."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft.,\none target. Hit: 4 (1d6 + 1) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

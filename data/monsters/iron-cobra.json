@@ -1,0 +1,70 @@
+{
+  "name": "Iron Cobra",
+  "size": "Small",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "small",
+      "construct",
+      "cr1",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 27,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 15,
+    "con": 13,
+    "int": 5,
+    "wis": 12,
+    "cha": 1
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 4
+  },
+  "languages": [
+    "understands the languages of its creator but can’t speak"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Find Target",
+      "text": "The iron cobra knows the location\nof a specific target creature as long as that creature\nis within 1 mile of it. If the creature is moving, it\nknows the direction if that creature’s movement.\nIf the target is beyond this distance, the iron cobra\ncan’t locate the target creature."
+    },
+    {
+      "name": "Immutable Form",
+      "text": "The iron cobra is immune to any\nspell or effect that would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The iron cobra has advantage on\nsaving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapon",
+      "text": "The iron cobra’s weapon attacks\nare magical."
+    },
+    {
+      "name": "Poison",
+      "text": "The iron cobra contains enough venom\nfor three attacks. After that, it does not deal the poison\ndamage listed in its bite attack."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage, and the target must make a DC 11 Constitution\nsaving throw, taking 10 (3d6) poison damage on a failed saving throw, or\nhalf as much damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Clamor",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 37,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 1,
+    "dex": 16,
+    "con": 16,
+    "int": 5,
+    "wis": 12,
+    "cha": 17
+  },
+  "skills": {
+    "Deception": 7,
+    "Performance": 7
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Incorporeal Movement",
+      "text": "The clamor can move through other creatures\nand objects as if they were difficult terrain. It takes 5 (1d10) force damage\nif it ends its turn inside an object."
+    },
+    {
+      "name": "Mimicry",
+      "text": "The clamor can mimic any sound it has ever heard, including\nhumanoid voices. A creature that hears the sounds can tell they are\nimitations with a successful DC 17 Wisdom (Insight) check."
+    },
+    {
+      "name": "Natural Invisibility",
+      "text": "The clamor is invisible."
+    },
+    {
+      "name": "Silence Vulnerability",
+      "text": "If the clamor starts its turn in an area under\nthe effect of silence, it takes 13 (3d8) force damage, and it must make a\nDC 15 Wisdom saving throw or become frightened for 1 minute. While\nfrightened, it must use its action to Dash away from the area of silence. If\nit begins its turn further than 60 feet away from the area of silence, it can\nrepeat the saving throw at the end of each of its turns, ending the effect\non a success."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Thunder Touch",
+      "type": "special",
+      "text": "Melee Spell Attack: +5 to hit, reach 5 ft., one target.\nHit: 12 (2d8 + 3) thunder damage, and the target is pushed 5 feet directly\naway from the clamor."
+    }
+  ],
+  "source": "creature"
+}

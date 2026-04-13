@@ -1,0 +1,18 @@
+{
+  "id": "schmieren",
+  "name": "Schmieren",
+  "level": 1,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "18 m (3 m Quadrat)",
+  "components": "V, G, M (ein bisschen Schweineschwarte oder Butter)",
+  "duration": "1 min",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Schmieriges Fett bedeckt den Boden in einem 3 m Quadrat um einen Punkt in Reichweite.\nFür die Wirkungsdauer ist dort schwieriges Terrain.\nJede Kreatur in dem Bereich muss einen DEX-Rettungswurf schaffen, um nicht umzufallen. Kreaturen, die den Bereich betreten oder ihren Zug darin beginnen müssen auch einen DEX-Rettungswurf bestehen oder rutschen auch aus."
+}

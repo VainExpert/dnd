@@ -1,0 +1,74 @@
+{
+  "name": "Smoke Dragon",
+  "size": "Small",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "small",
+      "dragon",
+      "cr1",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 14,
+  "hp": {
+    "average": 27,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 12,
+    "con": 13,
+    "int": 10,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Nature": 2,
+    "Perception": 5,
+    "Stealth": 5,
+    "Survival": 3
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Blending",
+      "text": "The smoke dragon has advantage on Dexterity (Stealth)\nchecks made to hide within areas of smoke or fog."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4\n(1d6 + 1) slashing damage."
+    },
+    {
+      "name": "Smoke Breath (Recharge 5–6)",
+      "type": "special",
+      "text": "The smoke dragon exhales a 20-foot\ncone of thick, black smoke that spreads around corners. The area is heavily\nobscured and the cloud of smoke remains for 1 minute or until dispersed\nby a moderate or stronger wind (at least 10 miles per hour). Creatures that\nenter or begin their turn in the area must succeed on a DC 11 Constitution\nsaving throw or be poisoned. While poisoned, the creature must succeed\non a DC 11 Constitution saving throw at the beginning of its turn, or\nspend its turn coughing and retching, preventing the creature from\ntaking actions or moving. Once a poisoned creature succeeds on three\nconsecutive saving throws, it is no longer poisoned."
+    },
+    {
+      "name": "Smoke Form (1/day)",
+      "type": "special",
+      "text": "The smoke dragon polymorphs into a Medium\ncloud of smoke. While in smoke form, the dragon can’t take any actions,\nspeak, or manipulate objects. It is weightless, has a flying speed of\n30 feet, can hover, and can enter a hostile creature’s space and\nstop there. In addition, if air can pass through a space, the mist\ncan do so without squeezing, and it can’t pass through water.\nIt has advantage on Strength, Dexterity, and Constitution\nsaving throws, it is immune to all nonmagical damage. The\ntransformation last for 1 hour unless the smoke dragon chooses\nto end it earlier with a bonus action."
+    }
+  ],
+  "source": "creature"
+}

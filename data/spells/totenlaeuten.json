@@ -1,0 +1,18 @@
+{
+  "id": "totenlaeuten",
+  "name": "Totenläuten",
+  "level": 0,
+  "school": "Nekromantie",
+  "casting_time": "1 Aktion",
+  "range": "1,5 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Kleriker",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du zeigst auf eine Kreatur, die du in Reichweite siehst. Es hört laute Glocken um sich herum.\nDas Ziel muss einen WIS-Rettungswurf machen.\nBei Fehlschlag: 1W8 nekrotischer Schaden, falls es schon TP verloren hat 1W12.\n\nAuf höheren Level: Schaden steigt um je 1W8 oder 1W12 auf Level 5, 11 und 17."
+}

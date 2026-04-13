@@ -1,0 +1,84 @@
+{
+  "name": "Living Temple",
+  "size": "Gargantuan",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "gargantuan",
+      "construct",
+      "cr20",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 19,
+  "hp": {
+    "average": 333,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 27,
+    "dex": 6,
+    "con": 26,
+    "int": 4,
+    "wis": 14,
+    "cha": 3
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "20",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Enchanted Structure",
+      "text": "While unmoving, the temple is\nindistinguishable from an ordinary worn stone temple.\nIt does not activate until a specific set of conditions,\nspecified by its creator, are met.\n\n**Hollow Body.*** The temple’s body is filled with stone corridors and chambers. Creatures can\nascend the inner portions of the temple by using their\nclimb speed and moving along the thick overgrowth\nand worn stone within. The temple has vulnerability to\nbludgeoning and thunder damage from within its body."
+    },
+    {
+      "name": "Guardian Orb",
+      "text": "The temple holds a large green orb that\ngives it life and power. If the temple would be reduced\nto 0 hit points, but the orb is not destroyed, the temple\nis instead reduced to 1 hit point. The orb has 15 AC\nand must be dealt 30 points of damage in a single\nround of combat to be destroyed. This orb is housed\nwithin a stone chamber 100 feet up that forms the\ntemple’s head. This orb exudes bright green light in a\n20-foot radius and dim light for an additional 20 feet.\nThe room containing the orb has a single 3 ft. by 3 ft.\nsquare entrance on the back of the temple’s head."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The temple makes two attacks: one with its\nslam and one with its crush."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +14 to hit, reach 15ft.,\none target. Hit: 34 (4d12 + 8) bludgeoning damage.\nCreatures within the temple’s arms take 17 (2d12 + 4)\nbludgeoning damage from the impact."
+    },
+    {
+      "name": "Crush",
+      "type": "special",
+      "text": "Melee Weapon Attack: +14 to hit, reach 15ft.,\none target. Hit: 30 (4d10 + 8) bludgeoning damage.\nCreatures within the temple’s legs take 15 (2d10 + 4)\nbludgeoning damage from the impact."
+    },
+    {
+      "name": "Hurl Debris",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +14 to hit, range\n60/240 ft., one target. Hit: 47 (6d12) + 8 bludgeoning\ndamage."
+    },
+    {
+      "name": "Leaping Smash (Recharge 5-6)",
+      "type": "special",
+      "text": "The temple leaps into\nthe air and slams down, creating a powerful shockwave\nin a 30-foot radius. Each creature in that area that is\nnot within the temple, must make a DC 22 Dexterity\nsaving throw, taking 55 (10d10) bludgeoning damage\nand being knocked prone on a failed save, or half as\nmuch damage and not knocked prone on a successful\none. Creatures within the temple when it makes this\nattack must succeed on a DC 18 Strength saving throw\nor slide 20 ft. down the temple. Succeed or fail, all\ncreatures within the temple take 22 (4d10)\nbludgeoning damage."
+    },
+    {
+      "name": "Guardian Beam (3/Day)",
+      "type": "special",
+      "text": "The temple temporarily exposes\nthe guardian orb in its head to unleash a deadly attack.\nA streak of brilliant green light flashes out from the orb\nin a 10-foot-wide, 150-foot-long line. The temple\nmoves this beam up to 30 feet in a straight line before\nit runs out of energy. Each creature touched by the\nbeam must make a DC 22 Constitution saving throw.\nOn a failed save, the creature takes 54 (12d8) radiant\ndamage and is blinded until the end of its next turn. On\na successful save, it takes half as much damage and\nisn’t blinded by the beam. The temple can’t use this\nability if the guardian orb has been destroyed."
+    },
+    {
+      "name": "Change Shape",
+      "type": "special",
+      "text": "The temple magically transforms into a\n100 foot tall humanoid structure, or back into its\ntemple form. It reverts to temple form if it dies. Any\ncreatures within the temple when it transforms into its\nhumanoid form must succeed on a DC 16 Strength\nsaving throw or fall down to the bottom of the temple,\ntaking 3 (1d6) bludgeoning damage for every 10 feet\nthey fall when doing so. On a success, they find\nsomething to grab hold of and do not fall."
+    }
+  ],
+  "source": "creature"
+}

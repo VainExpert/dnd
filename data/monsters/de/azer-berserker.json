@@ -1,0 +1,72 @@
+{
+  "name": "Azer Berserker",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr3",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "gesetztreu-neutral",
+  "ac": 15,
+  "hp": {
+    "average": 68,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 16,
+    "int": 10,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 3,
+    "Athletics": 5
+  },
+  "languages": [
+    "Ignan"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Beheizter Körper",
+      "text": "Ein Wesen, das den Azer berührt oder\nihn mit einem Nahkampfangriff trifft, während es sich5 feetin seiner Nähe befindet,\nerleidet 5 (1d10) Feuerschaden."
+    },
+    {
+      "name": "Beheizte Waffen",
+      "text": "Wenn der Azer mit einer metallenen\nNahkampfwaffe trifft, verursacht er zusätzlich 4 (1d8) Feuerschaden\n(im Angriff enthalten)."
+    },
+    {
+      "name": "Beleuchtung",
+      "text": "Der Azer strahlt helles Licht in einem Umkreis von 3 Metern\nund schwaches Licht in einem Umkreis von weiteren 3 m."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Azer führt zwei Angriffe mit seinem\nKeulenhieb aus."
+    },
+    {
+      "name": "Maul",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite 1,5 m.,\nein Ziel. Treffer: 10 (2d6 + 3) Bludgeoning-Schaden\nplus 4 (1d8) Feuerschaden."
+    },
+    {
+      "name": "Amoklauf (1/Tag)",
+      "type": "special",
+      "text": "Der Schaden durch erhitzte\nWaffen steigt in dieser Runde auf 9 (2d8) und der\nAzer greift sofort jede\nfeindliche Kreatur innerhalb 5 feetvon an, wobei er für jedes Ziel einen separaten\nAngriffswurf durchführt."
+    }
+  ],
+  "source": "creature"
+}

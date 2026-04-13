@@ -1,0 +1,20 @@
+{
+  "id": "licht",
+  "name": "Licht",
+  "level": 0,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, M (ein Glühwürmchen oder phosphoreszierendes Moos)",
+  "duration": "1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Kleriker",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du berührst einen Gegenstand (nicht größer als 3 m).\nFür die Wirkungsdauer gibt der Gegenstand helles Licht in einem 6 m Radius und gedimmtes Licht in einem weiteren 6 m Radius aus. Die Lichtfarbe ist frei wählbar. Licht wird durch blickdichte Stoffe blockiert.\nVorzeitig beendbar durch erneutes Wirken oder mit einer Aktion aufheben.\nWenn der Gegenstand von einer feindlichen Kreatur getragen wird, muss diese einen DEX-Rettungswurf machen, um den Zauber zu verhindern."
+}

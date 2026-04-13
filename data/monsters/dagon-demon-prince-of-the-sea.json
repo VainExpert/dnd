@@ -1,0 +1,103 @@
+{
+  "name": "Dagon, Demon Prince of the Sea",
+  "size": "Large",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr26",
+      "tome-of-horrors",
+      "demon lord"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 19,
+  "hp": {
+    "average": 472,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 60
+  },
+  "abilities": {
+    "str": 25,
+    "dex": 18,
+    "con": 27,
+    "int": 18,
+    "wis": 20,
+    "cha": 19
+  },
+  "skills": {
+    "Athletics": 15,
+    "History": 12,
+    "Insight": 13,
+    "Intimidation": 12,
+    "Perception": 13
+  },
+  "languages": [
+    "Abyssal",
+    "Celestial",
+    "Common",
+    "Draconic",
+    "Giant",
+    "Infernal; telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "26",
+    "proficiency_bonus": 8
+  },
+  "traits": [
+    {
+      "name": "Special Equipment",
+      "text": "Dagon carries Embrace of the Uncaring Sea, a\npowerful magic trident."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "Dagon’s innate spellcasting ability is Charisma\n(spell save DC 20, +12 to hit with spell attacks). It can cast the following\nspells, requiring no material components.\n\n* At will: <i>cloudkill (works underwater only), control water, create\nand destroy water, darkness, detect evil and good, detect magic, detect\nthoughts, magic missile (as the 4th level spell), teleport, telekinesis,\ntongues, water breathing</i>\n\n* 3/day each: <i>conjure animals (aquatic creatures only), conjure elemental\n(water elemental only), dispel magic, dominate beast (aquatic creatures\nonly), fear</i>\n\n* 1/day each: <i>confusion, feeblemind, finger of death, hold person, hold\nmonster, lightning bolt, stoneskin, time stop, web, wish</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "text": "If Dagon fails a saving throw, it can\nchoose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The demon has advantage on saving throws against\nspells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The demon’s weapon attacks are magical."
+    },
+    {
+      "name": "Unholy Aura",
+      "text": "An unholy aura surrounds Dagon out to a radius of 40\nfeet. A creature who enters or begins their turn in the area must make a DC\n21 Wisdom saving throw. On a failed saving throw, the target is frightened\nfor 1 minute. While frightened, they are paralyzed. A frightened target can\nrepeat the saving throw at the end of each of its turns, ending the effect\non a success."
+    },
+    {
+      "name": "Water Mastery",
+      "text": "Dagon has advantage on attack rolls, ability checks,\nand saving throws when even partly immersed in sea water."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Dagon makes three melee weapon attacks."
+    },
+    {
+      "name": "Embrace of the Uncaring Sea",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +18\nto hit, reach 10 ft. or range 20/60 ft., one creature. Hit: 24 (4d6 + 10)\npiercing damage, or 28 (4d8 + 10) piercing damage if used with two hands\nto make a melee attack, plus 17 (5d6) poison damage. If Dagon rolls a\nnatural 19 or 20, the target must make a DC 21 Constitution saving throw\nor be afflicted by the crushing pressure of the sea. A creature afflicted by\nthis cannot breathe, use verbal components, or take actions or reactions.\nAt the end of each of the target’s turns, it can repeat the saving throw,\nending the effect on a success. Magic such as heal can end this affliction\nearly."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 25\n(4d8 + 7) slashing damage and target is poisoned until the beginning of\nDagon’s next turn."
+    },
+    {
+      "name": "Command Aquatic Creature (Recharge 5–6)",
+      "type": "special",
+      "text": "One creature with a\nswim speed that Dagon can see within 120 feet of it hears the telepathic\ncommands of Dagon and must make a DC 21 Wisdom saving throw. On\na failed save, the creature is charmed for 24 hours. While charmed, it\nmust follow the orders of Dagon to the best of the target’s ability and it is\nimmune to being charmed or frightened by another effect or spell. A target\ncan repeat the saving throw when it takes damage, ending the effect on a\nsuccess."
+    }
+  ],
+  "source": "creature"
+}

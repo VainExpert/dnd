@@ -1,0 +1,20 @@
+{
+  "id": "schutz-vor-gift",
+  "name": "Schutz vor Gift",
+  "level": 2,
+  "school": "Bannmagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G",
+  "duration": "1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Kleriker",
+    "Druide",
+    "Paladin",
+    "Waldläufer"
+  ],
+  "text": "Du berührst eine Kreatur.\nIst es vergiftet, neutralisierst du das Gift, bei mehreren ein bekanntes oder ein zufälliges.\nFür die Wirkungsdauer ist das Ziel bei Rettungswürfen gegen Gift im Vorteil und gegen Giftschaden resistent."
+}

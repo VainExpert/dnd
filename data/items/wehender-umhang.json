@@ -1,0 +1,43 @@
+{
+  "id": "wehender-umhang",
+  "type": "item",
+  "name": "Wehender Umhang",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Während du den Umhang trägst, kannst du ihn mit einer Bonus Aktion für 1 min dramatisch wehen lassen.",
+  "tags": [
+    "magisch",
+    "kleidung",
+    "bonus aktion"
+  ]
+}

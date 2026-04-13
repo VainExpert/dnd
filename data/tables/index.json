@@ -1,3 +1,13 @@
 {
-  "files": []
+  "files": [
+    "ereignisse-nacht.json",
+    "ereignisse-tempelbrand.json",
+    "ortsnamen-baukasten.json",
+    "ortsnamen.json",
+    "taverne-bauskasten.json",
+    "traeume-athene+poseidon.json",
+    "traeume-druidin.json",
+    "traeume-hera.json",
+    "traeume-hestia.json"
+  ]
 }

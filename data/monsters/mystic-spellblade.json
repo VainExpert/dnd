@@ -1,0 +1,74 @@
+{
+  "name": "Mystic Spellblade",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "lawful evil (50%) or lawful good (50%)",
+  "ac": 16,
+  "hp": {
+    "average": 105,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 10,
+    "con": 16,
+    "int": 18,
+    "wis": 12,
+    "cha": 10
+  },
+  "skills": {
+    "Arcana": 7,
+    "Insight": 4,
+    "Religion": 7
+  },
+  "languages": [
+    "Celestial and any three other languages"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Spiritual Alignment",
+      "text": "The spellblade is unarmed, but has\ntwo spectral weapons that follow it constantly, one a\nlongsword and the other a flail. These weapons act\naccording to the spellblade’s will. On the spellblade’s\nturn, it may give mental commands to these\nweapons to have them move up to 30 feet."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The spellblade uses its Spiritual\nSuppression if able. It then makes one attack with\nits spectral longsword and one attack with its spectral\nflail."
+    },
+    {
+      "name": "Spectral Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit,\nreach 5ft., one target. Hit: 8 (1d8 + 4) force damage."
+    },
+    {
+      "name": "Spectral Flail",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach\n5ft., one target. Hit: 8 (1d8 + 4) force damage."
+    },
+    {
+      "name": "Spiritual Suppression (Recharge 5-6)",
+      "type": "special",
+      "text": "The spellblade\nsummons a set of ethereal bindings to subdue a target\nwithin 90 feet. The target must succeed on a DC 14\nStrength saving throw or become restrained for 1\nminute. The target can repeat this saving throw at the\nend of their turn, ending the effect on a success."
+    },
+    {
+      "name": "Relentless Assault (1/Day)",
+      "type": "special",
+      "text": "The spellblade summons 5\nnew spectral longswords at its side. One at a time it\ngrabs hold of these blades. When the spellblade grabs a\nnew longsword, it may teleport up to 120 feet into\nan unoccupied space and attack a creature within 5\nfeet. It makes a separate attack roll for each\nlongsword attack. Hit or miss, after each attack the\nspectral weapon fades away. When all of the swords\nhave been expended, the spellblade teleports back to its original\nlocation."
+    }
+  ],
+  "source": "creature"
+}

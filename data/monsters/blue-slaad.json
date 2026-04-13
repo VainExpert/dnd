@@ -1,0 +1,71 @@
+{
+  "name": "Blue Slaad",
+  "size": "Large",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "large",
+      "aberration",
+      "cr7",
+      "monster-manual"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 15,
+  "hp": {
+    "average": 123,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 15,
+    "con": 18,
+    "int": 7,
+    "wis": 7,
+    "cha": 9
+  },
+  "skills": {
+    "Perception": 1
+  },
+  "languages": [
+    "Slaad",
+    "telepathy 60 ft."
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The slaad has advantage on saving throws against spells and other magical effects"
+    },
+    {
+      "name": "Regeneration",
+      "text": "The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
+    },
+    {
+      "name": "Variant: Control Gem",
+      "text": "Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being charmed while so controlled.\n\nCertain spells can be used to acquire the gem. If the slaad fails its saving throw against imprisonment, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A wish spell, if cast in the slaad's presence, can be worded to acquire the gem.\n\nA greater restoration spell cast on the slaad destroys the gem without harming the slaad.\n\nSomeone who is proficient in Wisdom (Medicine) can remove the gem from an incapacitated slaad. Each try requires 1 minute of uninterrupted work and a successful DC 20 Wisdom (Medicine) check. Each failed attempt deals 22 (4d10) psychic damage to the slaad."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The slaad makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage. If the target is a humanoid, it must succeed on a DC 15 Constitution saving throw or be infected with a disease called chaos phage. While infected, the target can't regain hit points, and its hit point maximum is reduced by 10 (3d6) every 24 hours. If the disease reduces the target's hit point maximum to 0, the target instantly transforms into a red slaad or, if it has the ability to cast spells of 3rd level or higher, a green slaad. Only a wish spell can reverse the transformation."
+    }
+  ],
+  "source": "creature"
+}

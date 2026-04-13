@@ -1,0 +1,466 @@
+{
+  "character": {
+    "identity": {
+      "name": "Paxana",
+      "player_name": "DM",
+      "class": {
+        "name": "Barbarin",
+        "level": 3,
+        "subclass": "Pfad des Wilden Herzens"
+      },
+      "race": "Halbelfin",
+      "background": "Sonderling",
+      "alignment": "chaotisch-gut",
+      "deity": "Artemis / Demeter",
+      "gender": "weiblich",
+      "age_years": 24,
+      "size": "Mittel",
+      "height": 1.8,
+      "weight": 75,
+      "appearance": {
+        "skin": "gebräunt",
+        "eyes": "grün",
+        "hair": "braun"
+      },
+      "organizations": [
+        "Stamm der Adler"
+      ],
+      "allies": []
+    },
+    "ability_scores": {
+      "STR": {
+        "score": 16,
+        "mod": 3,
+        "save": 5
+      },
+      "DEX": {
+        "score": 8,
+        "mod": -1,
+        "save": -1
+      },
+      "CON": {
+        "score": 14,
+        "mod": 2,
+        "save": 4
+      },
+      "INT": {
+        "score": 10,
+        "mod": 0,
+        "save": 0
+      },
+      "WIS": {
+        "score": 12,
+        "mod": 1,
+        "save": 1
+      },
+      "CHA": {
+        "score": 15,
+        "mod": 2,
+        "save": 2
+      }
+    },
+    "proficiency_bonus": 2,
+    "inspiration": false,
+    "skills": {
+      "Akrobatik": -1,
+      "Arkane Kunde": 0,
+      "Athletik": 5,
+      "Auftreten": 2,
+      "Einschüchtern": 2,
+      "Fingerfertigkeit": -1,
+      "Geschichte": 0,
+      "Heimlichkeit": -1,
+      "Medizin": 1,
+      "Mit Tieren umgehen": 3,
+      "Motiv erkennen": 1,
+      "Nachforschungen": 0,
+      "Naturkunde": 2,
+      "Religion": 0,
+      "Täuschen": 2,
+      "Überlebenskunst": 3,
+      "Überzeugen": 2,
+      "Wahrnehmung": 1
+    },
+    "passive_scores": {
+      "passive_wahrnehmung": 11,
+      "passiver_einblick": 11,
+      "passive_nachforschungen": 10
+    },
+    "combat": {
+      "armor_class": 11,
+      "initiative": -1,
+      "speeds": {
+        "walk": 10.5
+      },
+      "hp": {
+        "max": 34,
+        "hit_dice": "3d12"
+      },
+      "defenses": {
+        "condition_immunities": [
+          "magischer Schlaf"
+        ],
+        "advantages": [
+          "Vorteil gegen bezaubert werden"
+        ],
+        "resistances": [],
+        "immunities": []
+      },
+      "senses": {
+        "darkvision": 18,
+        "darkvision_note": "Graustufen"
+      },
+      "attacks_and_cantrips": [
+        {
+          "name": "Großer Knüppel",
+          "attack_bonus": 5,
+          "damage": "1d8+3 Wucht",
+          "properties": [
+            "Einfach",
+            "2-Hände",
+            "Stoßen"
+          ],
+          "item_ref": {
+            "id": "grosser-knueppel",
+            "name": "Großer Knüppel"
+          }
+        },
+        {
+          "name": "Handaxt (2x)",
+          "attack_bonus": 5,
+          "damage": "1d6+3 Hieb",
+          "properties": [
+            "Einfach",
+            "Leicht",
+            "Geworfen",
+            "Reichweite 6 m / 18 m",
+            "Peinigen"
+          ],
+          "item_ref": {
+            "id": "handaxt",
+            "name": "Handaxt"
+          }
+        },
+        {
+          "name": "Unbewaffneter Schlag",
+          "attack_bonus": 5,
+          "damage": "4 Wucht"
+        }
+      ],
+      "actions": {
+        "standard": [
+          "Angriff",
+          "Ausweichen",
+          "Beeinflussen",
+          "Interagieren",
+          "Flucht",
+          "Helfen",
+          "Magie",
+          "Packen",
+          "Sprint",
+          "Stoßen",
+          "Studieren",
+          "Verstecken",
+          "Verwenden",
+          "Vorbereiten",
+          "2-Waffen Kampf"
+        ],
+        "bonus_actions": [
+          "Wut (2/Lange Rast; 1 verbrauchte Wut nach Kurzer Rast zurück)",
+          "Wut verlängern (Bonusaktion)"
+        ],
+        "reactions": [
+          "Gelegenheitsangriff"
+        ]
+      }
+    },
+    "proficiencies": {
+      "armor": [
+        "Leichte Rüstung",
+        "Mittlere Rüstung",
+        "Schilde"
+      ],
+      "weapons": [
+        "Einfache Waffen",
+        "Kriegswaffen"
+      ],
+      "tools": [
+        "Flöte"
+      ],
+      "languages": [
+        "Gemeinsprache",
+        "Elfisch"
+      ]
+    },
+    "spellcasting": {
+      "spellcasting_class": "Barbar",
+      "spellcasting_ability": "WIS",
+      "derived_spell_save_dc": 11,
+      "derived_spell_attack_bonus": 3,
+      "ritual_spells": [
+        "Tiersinn",
+        "Mit Tieren sprechen"
+      ],
+      "notes": [
+        "Tierflüsterer (Pfad des Wilden Herzens): Diese Zauber können als Ritual gewirkt werden; WIS ist die Zauberfähigkeit."
+      ]
+    },
+    "features": {
+      "class": [
+        {
+          "name": "Gefahrengespür",
+          "description": "Vorteil auf DEX-Rettungswürfe, wenn du nicht kampfunfähig bist."
+        },
+        {
+          "name": "Waffenmeisterungen",
+          "description": "Siehe Talente."
+        },
+        {
+          "name": "Ungeschützte Verteidigung",
+          "description": "Ohne Rüstung ist deine RK = 10 + dein DEX-Modifikator + dein CON-Modifikator + ein Schild-Bonus."
+        },
+        {
+          "name": "Wut",
+          "activation": "Bonusaktion",
+          "uses": "2",
+          "recovery": {
+            "long_rest": true,
+            "short_rest": 1
+          },
+          "requirements": [
+            "Keine schwere Rüstung"
+          ],
+          "duration": "Hält an bis zum Ende deines nächsten Zuges; pro Zug verlängerbar für maximal 10 Minuten",
+          "effects": [
+            "Schadensresistenz gegen Hieb-, Stich- und Wuchtschaden",
+            "Bei STR-Angriffen: +2 Extraschaden des Waffentyps",
+            "Vorteil bei allen STR-Würfen",
+            "Keine Konzentration für Zauber oder Zauber wirken"
+          ],
+          "rage_extend_methods": [
+            "Einen Angriff gegen einen Gegner machen",
+            "Einen Gegner zu einem Rettungswurf zwingen",
+            "Bonusaktion zum Verlängern der Wut verwenden"
+          ],
+          "rage_ends_if": [
+            "Du wirst kampfunfähig",
+            "Du ziehst eine schwere Rüstung an"
+          ]
+        },
+        {
+          "name": "Rücksichtslose Angriffe",
+          "description": "Bei deinem ersten Angriff in deinem Zug kannst du dich rücksichtlos entscheiden. Du bekommst Vorteil auf alle Angriffswürfe mit STR bis zum Beginn deines nächsten Zuges. Angriffe gegen dich haben solange auch Vorteil."
+        }
+      ],
+      "subclass": [
+        {
+          "name": "Wut der Wildnis",
+          "description": "Während deiner Wut hast du einen der folgenden Bonuseffekte:",
+          "options": [
+            {
+              "name": "Wolf",
+              "effect": "Verbündete haben Vorteil auf Angriffe auf Kreaturen in 1,5 m von dir."
+            },
+            {
+              "name": "Bär",
+              "effect": "Resistenz gegen alles außer Energie, Nekrotisch, Psychisch, Strahlen."
+            },
+            {
+              "name": "Adler",
+              "effect": "Flucht und Sprint als Bonusaktion; während Wut können Wut + eine dieser Bonusaktionen zusammen genutzt werden."
+            }
+          ],
+          "always_prepared_spells": []
+        },
+        {
+          "name": "Tierflüsterer",
+          "description": "Du kannst die folgenden Zauber als Ritual wirken: „Tiersinn“, „Mit Tieren sprechen“. WIS ist deine Zauberfähigkeit.",
+          "always_prepared_spells": []
+        }
+      ],
+      "racial": [
+        {
+          "name": "Dunkelsicht",
+          "description": "18 m (Graustufen)."
+        },
+        {
+          "name": "Feenblut",
+          "effects": [
+            "Vorteil gegen bezaubert werden.",
+            "Magie kann dich nicht einschläfern (Immun: Magischer Schlaf)."
+          ]
+        },
+        {
+          "name": "Halbelf-Vielseitigkeit",
+          "subfeature": "Waldelf-Herkunft",
+          "effects": [
+            "Laufgeschwindigkeit + 1,5 m"
+          ]
+        }
+      ],
+      "background": [
+        {
+          "name": "Herkunft",
+          "description": "Du bist als Fallenstellerin und Jäger-und-Sammlerin aufgewachsen."
+        },
+        {
+          "name": "Wanderer",
+          "description": "Du hast ein exzellentes Gedächtnis für Karten und Geographie und kennst immer das generelle Layout von Terrain, Siedlungen und Ähnlichem. Du kannst Essen und frisches Wasser für dich und bis zu 5 weitere Personen pro Tag finden, solange deine Umgebung etwas Essbares zur Verfügung stellt."
+        }
+      ],
+      "talents": [
+        {
+          "name": "Waffenmeisterungen",
+          "description": "Du hast 2 Arten von Einfachen oder Kriegs-Nahkampfwaffen deiner Wahl gemeistert. Du kannst eine der Meisterungen bei jeder Langen Rast tauschen.",
+          "masteries": [
+            {
+              "name": "Stoßen",
+              "weapon": "Großer Knüppel",
+              "cost": "1 Aktion",
+              "trigger": "Wenn du eine große (oder kleinere) Kreatur triffst",
+              "effect": "Du kannst sie um bis zu 3 m gerade von dir wegstoßen."
+            },
+            {
+              "name": "Peinigen",
+              "weapon": "Handaxt",
+              "cost": "1 Aktion",
+              "trigger": "Wenn du eine Kreatur mit der Handaxt triffst und Schaden verursachst",
+              "effect": "Du hast Vorteil auf deinen nächsten Angriffswurf gegen die Kreatur bis zum Ende deines nächsten Zuges."
+            }
+          ]
+        }
+      ]
+    },
+    "equipment": {
+      "currency": {
+        "cp": 0,
+        "sp": 0,
+        "gp": 3,
+        "pp": 0
+      },
+      "weights": {
+        "carried": 38,
+        "encumbered_at": 108,
+        "push_drag_lift": 216
+      },
+      "items": [
+        {
+          "name": "Handaxt",
+          "quantity": 2,
+          "weight": 2,
+          "item_ref": {
+            "id": "handaxt",
+            "name": "Handaxt"
+          }
+        },
+        {
+          "name": "Großer Knüppel",
+          "quantity": 1,
+          "weight": 5,
+          "item_ref": {
+            "id": "grosser-knueppel",
+            "name": "Großer Knüppel"
+          }
+        },
+        {
+          "name": "Wanderkleidung",
+          "quantity": 1,
+          "weight": 1.5,
+          "item_ref": {
+            "id": "wanderkleidung",
+            "name": "Wanderkleidung"
+          }
+        },
+        {
+          "name": "Flöte",
+          "quantity": 1,
+          "weight": null,
+          "item_ref": {
+            "id": "floete",
+            "name": "Flöte"
+          }
+        },
+        {
+          "name": "Rucksack",
+          "quantity": 1,
+          "weight": 2.5,
+          "contents_listed": [
+            {
+              "name": "Hanf-Seil, 15 m",
+              "quantity": 1,
+              "weight": 2.5
+            },
+            {
+              "name": "Öl",
+              "quantity": 2,
+              "weight": 1,
+              "item_ref": {
+                "id": "oel",
+                "name": "Öl"
+              }
+            },
+            {
+              "name": "Zunderkästchen",
+              "quantity": 1,
+              "weight": 0.5,
+              "item_ref": {
+                "id": "zunderkaestchen",
+                "name": "Zunderkästchen"
+              }
+            },
+            {
+              "name": "Fackel",
+              "quantity": 10,
+              "weight": 5,
+              "item_ref": {
+                "id": "fackel",
+                "name": "Fackel"
+              }
+            },
+            {
+              "name": "Schlafsack",
+              "quantity": 1,
+              "weight": 3.5,
+              "item_ref": {
+                "id": "schlafsack",
+                "name": "Schlafsack"
+              }
+            },
+            {
+              "name": "Bärenfalle",
+              "quantity": 1,
+              "weight": 12.5,
+              "item_ref": {
+                "id": "baerenfalle",
+                "name": "Bärenfalle"
+              }
+            }
+          ],
+          "item_ref": {
+            "id": "rucksack",
+            "name": "Rucksack"
+          }
+        }
+      ],
+      "attuned_magic_items_listed": []
+    },
+    "personality": {
+      "traits": [
+        "Du beschützt deinen Stamm wie neugeborene Babys und fühlst dich bei dir sicherer als bei fremden/neuen Menschen."
+      ],
+      "ideals": [
+        "Jedes Mitglied des Stamms sorgt für das Wohlergehen des gesamten Stamms."
+      ],
+      "motivation": [
+        "Du bringst den Übeltätern schrecklichen Zorn, die dein Dorf zerstört haben."
+      ],
+      "flaws": [
+        "Du erinnerst dich an jede Beleidigung gegen dich und deinen Stamm und hegst einen stillen Groll gegen alle, die dir Unrecht getan haben."
+      ]
+    },
+    "backstory": {
+      "summary": "Du bist die Tochter des Häuptlings eures Stamms der Adler und die beste Kämpferin und Fallenstellerin. Du bist für die Sicherheit des Stamms verantwortlich. Als du eines Morgens auf deiner Routinerunde deine Fallen geprüft hast, wurde dein Stamm von der Wolfs-Banditenbande angegriffen: Viele wurden entführt, Essen und Wertsachen geplündert und das Dorf in Brand gesetzt. Du kamst zu spät, um deinen Stamm zu retten. Jetzt suchst du Hilfe im nahe gelegenen Dorf „Mausberg“, um deinen Stamm zu befreien. Du kennst das Lager der Wolfsbanditen, willst sie aber nicht alleine konfrontieren, da sie stark in der Überzahl sind. Die Wölfe waren euch bekannt und wurden bisher abgewehrt, diesmal wirkten sie rücksichtsloser – als hätten sie eine neue, stärkere Motivation."
+    }
+  },
+  "id": "paxana"
+}

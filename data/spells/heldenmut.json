@@ -1,0 +1,17 @@
+{
+  "id": "heldenmut",
+  "name": "Heldenmut",
+  "level": 1,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Paladin"
+  ],
+  "text": "Du berührst eine willige Kreatur.\nFür die Wirkungsdauer kann das Ziel nicht verängstigt werden und erhält zu Beginn jedes seiner Züge temporäre TP in Höhe deines Zauberfähigkeit-Modifikators.\nBei Ende des Zaubers verliert das Ziel alle übrigen temporären TP.\n\nAuf höheren Level gewirkt: pro Level 1 zusätzliche Kreatur"
+}

@@ -1,0 +1,78 @@
+{
+  "name": "Urochar (Strangling Watcher)",
+  "size": "Huge",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "huge",
+      "aberration",
+      "cr17",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 19,
+  "hp": {
+    "average": 256,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 24,
+    "dex": 15,
+    "con": 24,
+    "int": 14,
+    "wis": 14,
+    "cha": 20
+  },
+  "skills": {
+    "Perception": 8,
+    "Stealth": 8
+  },
+  "languages": [
+    "understands Darakhul and Void Speech"
+  ],
+  "challenge": {
+    "cr": "17",
+    "xp": 18000,
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Death Throes",
+      "text": "When a strangling watcher dies, it releases all the fear it consumed in its lifetime in a single, soul-rending wave. All creatures within 60 feet of it must succeed on a DC 19 Charisma saving throw or become frightened. A frightened creature takes 13 (2d12) psychic damage at the start of each of its turns from the centuries of accumulated dread. It can repeat the Charisma saving throw at the end of each of its turns, ending the effect on a success."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The watcher's innate spellcasting ability is Charisma (spell save DC 19). It can cast the following spells, requiring no material components:\n\nAt will: feather fall\n\n3/day each: blur, meld into stone, phantasmal killer\n\n1/day each: black tentacles, eyebite, greater invisibility"
+    },
+    {
+      "name": "Spider Climb",
+      "text": "The watcher can climb any surface, including upside down on ceilings, without making an ability check."
+    },
+    {
+      "name": "Squeeze",
+      "text": "Despite their size, strangling watchers have slender, boneless bodies, enabling them to squeeze through passages only a Small-sized creature could fit through, without affecting their movement or combat capabilities."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The watcher makes four attacks with its tentacles."
+    },
+    {
+      "name": "Tentacle",
+      "type": "special",
+      "text": "Melee Weapon Attack: +13 to hit, reach 20 ft., one target. Hit: 20 (3d8 + 7) bludgeoning damage, and the target is grappled (escape DC 17). Until this grapple ends, the target is restrained. Each of its four tentacles can grapple one target."
+    },
+    {
+      "name": "Paralyzing Gaze (Recharge 5-6)",
+      "type": "special",
+      "text": "The watcher can target one creature within 60 feet with its eerie gaze. The target must succeed on a DC 19 Wisdom saving throw or become paralyzed for 1 minute. The paralyzed target can repeat the saving throw at the end of each of its turns, ending the effect on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the watcher's gaze for the next 24 hours."
+    }
+  ],
+  "source": "creature"
+}

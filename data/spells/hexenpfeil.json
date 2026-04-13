@@ -1,0 +1,18 @@
+{
+  "id": "hexenpfeil",
+  "name": "Hexenpfeil",
+  "level": 1,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V, G, M (ein Ast eines, vom Blitz getroffenen, Baumes)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Ein Strahl knisternder, blauer Energie schießt auf eine Kreatur in Reichweite und erschafft einen anhaltenden Blitzbogen zwischen dir und dem Ziel.\nDu machst einen Fernkampf-Zauberangriff gegen Ziel.\nBei Treffer: 1W12 Blitzschaden und für die Wirkungsdauer kannst du eine Aktion ausführen, um weitere 1W12 Blitzschaden zuzufügen.\nDer Zauber endet, wenn du mit deiner Aktion etwas anderes machst oder das Ziel außerhalb der Reichweite oder vollständig in Deckung von dir ist.\n\nAuf höheren Level gewirkt: pro Level 1W12 mehr Blitzschaden"
+}

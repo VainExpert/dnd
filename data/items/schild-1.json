@@ -1,0 +1,44 @@
+{
+  "id": "schild-1",
+  "type": "item",
+  "name": "Schild, +1",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "off-hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diesen Schild hältst, erhältst du einen +1 Bonus auf deine RK. Dieser Bonus des Schildes wirkt zusätzlich zu seinem normalen Bonus auf die RK.",
+  "tags": [
+    "abwehr",
+    "schild",
+    "magisch",
+    "bonus"
+  ]
+}

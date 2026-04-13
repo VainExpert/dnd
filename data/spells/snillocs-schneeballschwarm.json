@@ -1,0 +1,17 @@
+{
+  "id": "snillocs-schneeballschwarm",
+  "name": "Snillocs Schneeballschwarm",
+  "level": 2,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "27 m (1,5 m Sphäre)",
+  "components": "V, G, M (Stück Eis oder ein kleiner weißer Steinsplitter)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Ein Wirbel magischer Schneebälle bricht von einem Punkt deiner Wahl in Reichweite aus los.\nJede Kreatur in einem 1,5 m Umkreis von dort muss einen DEX-Rettungswurf machen.\nBei Fehlschlag: 3W6 Kälteschaden, sonst die Hälfte\n\nAuf höheren Level gewirkt: pro Level 1W6 mehr Schaden"
+}

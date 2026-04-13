@@ -1,0 +1,69 @@
+{
+  "name": "Remote Traveler",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr2",
+      "homebrew"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 18,
+  "hp": {
+    "average": 37,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 11,
+    "con": 13,
+    "int": 16,
+    "wis": 14,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Antimagic Susceptibility",
+      "text": "The traveler is incapacitated\nwhile in the area of an antimagic field. If targeted by\ndispel magic, the armor must succeed on a Constitution\nsaving throw against the caster's spell save DC or fall\nunconscious for 1 minute."
+    },
+    {
+      "name": "Homunculus Cage",
+      "text": "The flail on the traveler's polearm flail\nis actually a small metal cage containing an angry\nhomunculus. While the traveler is grappled, restrained,\nor incapacitated, a creature can use its action to make a\nDC 14 Dexterity (Sleight of Hand) check to open the\ncage, releasing the homunculus. Once freed, the\nhomunculus doesn't attack when the traveler attacks\nwith the cage, and the homunculus becomes hostile to\nthe traveler."
+    },
+    {
+      "name": "Remote Bond",
+      "text": "The traveler follows its pilot's telepathic\ncommands as long as they are both on the same plane\nof existence. In the absence of any such commands, the\ntraveler defends itself (and its pilot, if present). The\ntraveler does not need a command to use its reaction,\nfor example to make an attack of opportunity.\nThe traveler adds its pilot's proficiency bonus to its\ndamage rolls, and its proficiency bonus times its level to\nits hit point maximum (included in its statistics)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one\ntarget. Hit: 5 (1d6 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Homunculus Cage",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit,\nreach 10 ft., one target. Hit: 7 (1d6 + 4) bludgeoning\ndamage, and if the target is a creature, the homunculus\nmakes a bite attack against it.\n\nThe homunculus' bite attack has a +4 to hit. On hit,\nthe attack deals 1 piercing damage, and the target must\nsucceed on a DC 10 Constitution saving throw or be\npoisoned for 1 minute. If the saving throw fails by 5 or\nmore, the target is instead poisoned for 5 (1d10)\nminutes and unconscious while poisoned in this way."
+    },
+    {
+      "name": "Mend (3/Day)",
+      "type": "special",
+      "text": "The traveler's pilot remotely casts\nmending on the traveler, causing it to regain 6 (1d6 + 3)\nhit points."
+    }
+  ],
+  "source": "creature"
+}

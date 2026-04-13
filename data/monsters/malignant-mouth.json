@@ -1,0 +1,63 @@
+{
+  "name": "Malignant Mouth",
+  "size": "Medium",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 16,
+  "hp": {
+    "average": 20,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 6,
+    "con": 9,
+    "int": 16,
+    "wis": 14,
+    "cha": 14
+  },
+  "skills": {
+    "Performance": 8
+  },
+  "languages": [
+    "all"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The malignant mouth\nhas advantage on saving throws against spells\nand other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee weapon attack: +3 to hit,\nrange 5 ft., one target. Hit: 9 (2d8) slashing damage."
+    },
+    {
+      "name": "Focused Shout",
+      "type": "special",
+      "text": "Ranged weapon attack: +6 to hit, range 60/120 ft., one target. Hit: 7 (2d6) force damage."
+    },
+    {
+      "name": "Cackle (Recharge 5–6)",
+      "type": "special",
+      "text": "All creatures\nwithin a 30 ft. radius from mouth have\none of the following effects. Roll 1d6\nseparately for each target:\n\n1. ***Confusion.*** Target must succeed on a DC 14 Wisdom\nsaving throw or move in a random direction each\nturn, making a melee attack against the first target it\nencounters for 1d6 rounds.\n\n2. ***Fear.*** Target must succeed on a DC 14 Wisdom\nsaving throw or drop what it is holding and use its\naction and move to dash away from the mouth. The\ntarget can attempt a new saving throw at the end\nof each of its turns, ending the effect on a success.\n\n3. ***Sleep.*** If the target has less than 5d8 hit points, it falls\nasleep as per the sleep spell.\n\n4. ***Cure Wounds.*** The target is healed for 1d8+2 hit\npoints.\n\n5. ***Vomit.*** The target must succeed on a DC 14\nDexterity saving throw or be immobilized for 2d4\nrounds. On a successful saving throw, the target\nmoves at half speed for 1d4 rounds.\n\n6. ***Tongue Lash.*** Ranged Weapon Attack: +8 to hit,\nrange 10/20 ft., one creature. Hit: the target is pulled\nnext to the malignant mouth, which can then make\na bite attack against it with advantage."
+    }
+  ],
+  "source": "creature"
+}

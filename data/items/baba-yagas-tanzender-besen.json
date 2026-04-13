@@ -1,0 +1,46 @@
+{
+  "id": "baba-yagas-tanzender-besen",
+  "type": "item",
+  "name": "Baba Yaga's tanzender Besen",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 400,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Als Aktion kann dieser Besen mit einem Befehlswort zu einem animierten Besen unter der Kontrolle des Besitzers transformiert werden. Der Besen agiert direkt nach der Initiative des Besitzers und muss befehligt werden. Der Besen kann befehligt werden, solange er in bis zu 9 m Abstand zum Besitzer ist und dieser nicht kampfunfähig ist. Wenn der Besen auf 0 TP reduziert wird, zersplittert dieser direkt. Mit einer Bonus AKtion während der Besen noch TP hat, kann er wieder in einen normalen Besen verwandelt werden.",
+  "tags": [
+    "magisch",
+    "einzigartig",
+    "aktion",
+    "beschwörung",
+    "hilfe",
+    "befehlswort"
+  ]
+}

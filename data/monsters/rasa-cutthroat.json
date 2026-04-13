@@ -1,0 +1,80 @@
+{
+  "name": "Rasa Cutthroat",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "any evil alignment",
+  "ac": 15,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 17,
+    "con": 14,
+    "int": 14,
+    "wis": 10,
+    "cha": 13
+  },
+  "skills": {
+    "Deception": 5,
+    "Stealth": 7
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The rasa's innate spellcasting\nability is Intelligence (spell save DC 12). It can\ninnately cast the following spells, requiring no\ncomponents:\n\n* At will: <i>mage hand, message</i>\n\n* 1/day each: <i>disguise self, silent image</i>\n\n* 2/day each: <i>misty step</i>"
+    },
+    {
+      "name": "Inscrutable Intentions",
+      "text": "The rasa is immune to any\nmagical effects to determine if it is lying."
+    },
+    {
+      "name": "Mask of Debilitation",
+      "text": "While wearing this mask, the\ncutthroat's weapon attacks inflict a delayed paralysis on\nthe target. On hit, the target must succeed on a DC 12\nConstitution saving throw against paralysis. On a failed\nsave, the target's body begins to stiffen and is\nrestrained. A restrained creature must repeat this\nsaving throw at the end of its next turn, becoming\nparalyzed for 1 minute on a failed save. On a success,\nthis effect ends and the creature is immune to the\nMask of Debilitation effect for 24 hours."
+    },
+    {
+      "name": "Mask of Subtlety",
+      "text": "While wearing this mask, a target hit\nby the cutthroat's dagger cannot speak until the start\nof the cutthroat's next turn. In addition, the cutthroat\ncan Hide or Disengage as a bonus action on each of its\nturns."
+    },
+    {
+      "name": "Sight of the Rasa",
+      "text": "The rasa share a special sight that\nis invisible to all non-rasa creatures. As an action, a\nrasa can touch a creature and place a secret mark\non that creature's chest. This mark lets other rasa\nknow whether or not this creature should be\nregarded as a friend or a foe."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The rasa makes two melee attacks."
+    },
+    {
+      "name": "Poisoned Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +5\nto hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5\n(1d4 + 3) piercing damage plus 2 (1d4) poison\ndamage."
+    },
+    {
+      "name": "Explosive Coin (1/Day)",
+      "type": "special",
+      "text": "The cutthroat throws a gold\ncoin on the ground and sets it to either immediately\ndetonate or to detonate when another creature\nattempts to pick it up. When the coin is triggered, each\ncreature within 5 feet of the coin must make a DC 12\nDexterity saving throw, taking 14 (4d6) fire damage on\na failed save, or half as much damage on a successful\none. If the coin is not triggered within 24 hours, it\nbecomes a mundane gold coin."
+    }
+  ],
+  "source": "creature"
+}

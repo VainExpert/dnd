@@ -1,0 +1,64 @@
+{
+  "name": "Elder Gravity Elemental",
+  "size": "Huge",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "huge",
+      "elemental",
+      "cr11",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 15,
+  "hp": {
+    "average": 172,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 10,
+    "con": 20,
+    "int": 4,
+    "wis": 11,
+    "cha": 11
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 6
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "13",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Distortion",
+      "text": "The gravity elemental’s Armor Class includes its\nConstitution modifier. In addition, the gravity elemental can hide when\nonly lightly obscured by bending light around it."
+    },
+    {
+      "name": "Singularity",
+      "text": "The gravity elemental is immune to spells and effects that\nwould push, pull, or move it."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Gravity Field",
+      "type": "special",
+      "text": "The gravity elemental manipulates the very forces of\nnature and chooses one of the effects below.\n\n1. ***Lift.*** The gravity elemental uses an action to manipulate the surrounding\ngravity to lift up to three objects weighing no more than 300 pounds that\nare within 40 feet of it. It can then use a bonus action to hurl both objects\nat a creature it can detect within 20 feet. The targets must make a DC\n18 Dexterity saving throw, taking 27 (5d8 + 5) bludgeoning damage on\na failed saving throw, or half as much damage on a success. A gravity\nelemental can drop an object it is lifting without taking an action.\n\n2. ***Hold.*** The gravity elemental increases local gravity. Creatures within 40\nfeet of the elemental must succeed on a DC 18 Strength saving throw or be\nrestrained until the beginning of the elemental’s next turn.\n\n3. ***Crush (Recharge 5-6).*** The gravity elemental greatly increases local gravity\nwithin a 40-foot radius of itself. All creatures, other than the elemental,\nwithin that area make a DC 18 Constitution saving throw, taking 87 (15d10 + 5) force damage on a failed saving throw, or half as much damage on a success."
+    },
+    {
+      "name": "Engulf",
+      "type": "special",
+      "text": "The gravity elemental attempts to engulf one target it can see\nwithin 5 feet of it that is at least one size smaller than it. That target makes\na DC 18 Dexterity saving throw. On a successful saving throw, the target is\npushed 5 feet in a random direction. On a failed save, the gravity elemental\nenters that target’s space, and the target is grappled and restrained. While\nrestrained, a target has total cover from attacks coming from outside the\nelemental, and at the beginning of each of the elemental’s turns, a target\ntakes 43 (7d10 + 5) force damage. If this damage drops a target to 0 hit\npoints, it is rendered down to its constituent atoms and cannot be brought\nback to life by any magic short of true resurrection or wish.\nA grappled target can attempt to break free with a DC 18 Strength\nsaving throw at the end of each of its turns, ending the effect on a success\nand moving 5 feet in a random direction."
+    }
+  ],
+  "source": "creature"
+}

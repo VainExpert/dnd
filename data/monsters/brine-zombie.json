@@ -1,0 +1,58 @@
+{
+  "name": "Brine Zombie",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr1",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 11,
+  "hp": {
+    "average": 27,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 30
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 8,
+    "con": 13,
+    "int": 2,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "understands all languages it spoke in life but can't speak"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Undead Fortitude",
+      "text": "If damage reduces the zombie to 0 hit points, it\nmust make a Constitution saving throw with a DC of 5 + the damage\ntaken, unless the damage is radiant or from a critical hit. On a success, the\nzombie drops to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Scimitar",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5\n(1d6 + 2) slashing damage."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft. one target. Hit: 9 (2d6 + 2) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

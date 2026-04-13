@@ -1,0 +1,20 @@
+{
+  "id": "saeurespritzer",
+  "name": "Säurespritzer",
+  "level": 0,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Druide",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du schleuderst eine Blase aus Säure.\nWähle 1 oder 2 Kreaturen, die sich innerhalb von 1,5 m voneinander befinden, in Reichweite.\nDas Ziel muss einen DEX-Rettungswurf bestehen oder erleidet 1W6 Säureschaden.\n\nAuf höheren Level: Schaden steigt um je 1W6 auf Level 5, 11 und 17."
+}

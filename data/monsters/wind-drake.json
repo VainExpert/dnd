@@ -1,0 +1,68 @@
+{
+  "name": "Wind Drake",
+  "size": "Medium",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "medium",
+      "dragon",
+      "cr2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 15,
+    "int": 11,
+    "wis": 12,
+    "cha": 7
+  },
+  "skills": {},
+  "languages": [
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Wind Barrier",
+      "text": "The drake has half-cover against all\nranged attacks due to the powerful winds that\nconstantly flow around it."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The drake makes two attacks: one with\nits bite and one with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5ft.,\none target. Hit: 11 (2d6 + 4) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5ft.,\none target. Hit: 7 (1d6 + 4) piercing damage."
+    },
+    {
+      "name": "Imprisoning Winds (Recharge 6)",
+      "type": "special",
+      "text": "The drake conjures\nup a storm of powerful winds around a creature\nwithin 60 ft. The target must succeed on a DC 11\nStrength saving throw or takes 10 (3d6)\nbludgeoning damage become grappled (escape DC\n11) for 1 minute by these winds. Pass or fail, any\nopen flames being held by the target are\nimmediately extinguished."
+    }
+  ],
+  "source": "creature"
+}

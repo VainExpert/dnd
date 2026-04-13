@@ -1,0 +1,48 @@
+{
+  "id": "silber-modifikation-munition",
+  "type": "item",
+  "name": "Silber-Modifikation Munition",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "ammunition",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Preis gilt für das Überziehen von 10 Munitionsstücken mit Silber. Dadurch werden sie magisch und bestimmte Kreaturen haben eine Schwäche gegen Silber.",
+  "tags": [
+    "abenteuer",
+    "magisch",
+    "silber",
+    "munition",
+    "modifikation",
+    "schmied",
+    "kampf",
+    "fernkampf"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Verfluchter Schänder",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr4",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 12,
+  "hp": {
+    "average": 75,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 14,
+    "con": 17,
+    "int": 6,
+    "wis": 15,
+    "cha": 14
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 4
+  },
+  "languages": [
+    "understands an ancient language",
+    "but can't speak"
+  ],
+  "challenge": {
+    "cr": "4",
+    "xp": 1100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Verfluchtes Dasein",
+      "text": "Wenn seine Trefferpunkte in Wüstengebiet auf 0 sinken, löst sich der Körper des verfluchten Schänders in Sand und einen plötzlichen, trockenen Windhauch auf. Sofern er jedoch nicht an einem geheiligten Ort, durch Strahlungsschaden oder durch eine gesegnete Kreatur getötet wurde, bildet sich der verfluchte Schänder bei Sonnenuntergang1d100  Meilen entfernt in einer zufälligen Richtung wieder."
+    },
+    {
+      "name": "Sandhülle",
+      "text": "In einem Umkreis von 3 Metern um den verfluchten Schänder wirbelt ständig ein kleiner Sandsturm. Dieser Bereich ist für alle Wesen außer dem verfluchten Schänder leicht verdeckt. Proben auf Weisheit (Überleben), die durchgeführt werden, um Spuren eines verfluchten Schänders oder anderer Wesen zu verfolgen, die sich in seinem Sandschleier bewegten, werden mit Nachteil durchgeführt."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der verfluchte Schänder führt zwei Schlagangriffe aus."
+    },
+    {
+      "name": "Friede sei mit euch",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf den Treffer, Reichweite5 ft: 0, eine Kreatur. Treffer: 11 (2d6 + 4) Bludgeoning-Schaden. Wird eine Kreatur in derselben Runde zweimal von diesem Angriff getroffen (durch denselben oder verschiedene verfluchte Schänder), muss das Ziel einenDC 13Konstitutions-Rettungswurf bestehen oder erhält eine Stufe Erschöpfung."
+    },
+    {
+      "name": "Sandstreifen (Energie: 5-6)",
+      "type": "special",
+      "text": "Als Aktion verstärkt der verfluchte Schänder den Sandwirbel, der ihn umgibt. Alle Kreaturen im10 feetUmkreis des verfluchten Schänders erleiden 21 (6d6) Schnittschaden oder die Hälfte des Schadens bei einem erfolgreichenDC 14Geschicklichkeits-Rettungswurf."
+    }
+  ],
+  "source": "creature"
+}

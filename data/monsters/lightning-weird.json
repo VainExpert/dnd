@@ -1,0 +1,69 @@
+{
+  "name": "Lightning Weird",
+  "size": "Large",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "large",
+      "elemental",
+      "cr7",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 18,
+  "hp": {
+    "average": 90,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 20,
+    "con": 15,
+    "int": 10,
+    "wis": 12,
+    "cha": 14
+  },
+  "skills": {},
+  "languages": [
+    "Auran",
+    "Common",
+    "Weirdling"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Electricity",
+      "text": "If a creature attacks the lighting\nweird with a melee weapon, that creature takes 9\n(2d8) lightning damage."
+    },
+    {
+      "name": "Lightning Mote",
+      "text": "A lightning weird’s mote is a\ncrackling, dancing, arcing, ball of electricity that\noccupies a 5-foot space. Creatures that start their\nturn within 5 feet of the lightning mote take 13\n(3d8) lightning damage; creatures wearing metal\narmor must make a successful DC 15 Constitution\nsaving throw if they take lightning damage from being\nnear the mote. On a failed saving throw, the target is\nstunned until the end of its next turn. The lightning can\nmove its mote up to 30 ft. as a bonus action. The mote\nmust remain within 90 ft."
+    },
+    {
+      "name": "Reform",
+      "text": "When reduced to 0 hit points, a lightning weird collapses\nback into its pool. Four rounds later, it reforms at full strength minus any\ndamage taken from fire-based attacks and effects (including attacks by\nearth or fire elemental creatures)."
+    },
+    {
+      "name": "Transparent",
+      "text": "Even when the lightning weird is in plain sight, it takes\na successful DC 15 Wisdom (Perception) check to spot a lightning weird\nthat has neither moved nor attacked. A creature that tries to enter the\nlightning weird’s space while unaware of the lightning weird is surprised\nby the lightning weird."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14\n(2d8 + 5) piercing damage plus 9 (2d8) lightning damage."
+    },
+    {
+      "name": "Command Elemental",
+      "type": "special",
+      "text": "One air elemental that the lightning weird can\nsee within 60 feet of it must make a DC 13 Wisdom saving throw. On\na failed saving throw, the air elemental is charmed for 1 minute. While\ncharmed, the air elemental follows the lightning weird’s commands."
+    }
+  ],
+  "source": "creature"
+}

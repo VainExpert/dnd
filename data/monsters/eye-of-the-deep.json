@@ -1,0 +1,83 @@
+{
+  "name": "Eye of the Deep",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr5",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 14,
+  "hp": {
+    "average": 117,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 20
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 14,
+    "int": 12,
+    "wis": 13,
+    "cha": 13
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "Aquan",
+    "Common",
+    "Deep Speech"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The eye of the deep can breathe in both air and water."
+    },
+    {
+      "name": "Flyby",
+      "text": "The eye of the deep doesn’t provoke an opportunity attack when\nit flies out of an enemy’s reach."
+    },
+    {
+      "name": "Hyper-Awareness",
+      "text": "An eye of the deep’s eye stalks allow it to see in all\ndirections at once. It cannot be surprised."
+    },
+    {
+      "name": "Stun Cone",
+      "text": "An eye of the deep’s central eye produces a cone extending\nstraight ahead from its front to a range of 30 feet. At the start of each\nof its turns, the eye of the deep decides which way the cone faces and\nwhether the cone is active. All creatures in this area must succeed on a DC\n15 Constitution saving throw or be stunned for 1 minute. A creature can\nrepeat the saving throw at the end of each of its turns, ending the effect on\nitself on a success."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The eye of the deep makes three attacks: one with its bite\nand two with its pincers."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12\n(3d6 + 2) piercing damage."
+    },
+    {
+      "name": "Pincers",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit:\n15 (3d8 + 2) bludgeoning damage. The target is grappled (escape DC 12)\nif the eye of the deep isn’t already grappling a creature, and the target is\nrestrained until the grapple ends."
+    },
+    {
+      "name": "Eye Rays",
+      "type": "special",
+      "text": "Each of the creature’s eyes stalks can produce a magical ray\nonce per round. The creature can aim both of its eye rays in any direction\nand they have a range of 150 feet.\n\n1. ***Paralytic Ray.*** Using its left eye, the eye of the deep unleashes a\npowerful paralytic beam. The target must make a DC 15 Wisdom saving\nthrow or be paralyzed for 1 minute. A creature can repeat the saving throw\nat the end of each of its turns, ending the effect on itself on a success.\n\n2. ***Enfeeblement Ray.*** Using its right eye, the eye of the deep unleashes\na powerful ray of enfeeblement. The target must make a DC 15 Wisdom\nsaving throw or deal half damage with all attacks that use Strength for 1\nminute. A creature can repeat the saving throw at the end of each of its\nturns, ending the effect on itself on a success.\n\n3. ***Major Image.*** The eye of the deep concentrates its eye rays together\nto project a major image illusion. The illusion is generated at any point\nwithin range and in the eye of the deep’s line of sight. Seeing through the\nillusion requires a successful DC 15 Intelligence (Investigation) check."
+    }
+  ],
+  "source": "creature"
+}

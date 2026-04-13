@@ -1,0 +1,46 @@
+{
+  "id": "pergament",
+  "type": "item",
+  "name": "Pergament (pro Blatt)",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1,
+    "currency": "sp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein einzelnes Blatt Pergament für 250 Wörter, weniger langlebig als Papier.",
+  "tags": [
+    "schreiben",
+    "zeichnen",
+    "nützlich",
+    "kommunikation",
+    "soziales",
+    "konsumiert"
+  ]
+}

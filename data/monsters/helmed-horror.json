@@ -1,0 +1,63 @@
+{
+  "name": "Helmed Horror",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr4",
+      "monster-manual"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 20,
+  "hp": {
+    "average": 60,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 13,
+    "con": 16,
+    "int": 10,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 4
+  },
+  "languages": [
+    "understands the languages of its creator but can't speak"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The helmed horror has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Spell Immunity",
+      "text": "The helmed horror is immune to three spells chosen by its creator. Typical immunities include fireball, heat metal, and lightning bolt."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The helmed horror makes two longsword attacks."
+    },
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands."
+    }
+  ],
+  "source": "creature"
+}

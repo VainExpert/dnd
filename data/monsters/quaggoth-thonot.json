@@ -1,0 +1,65 @@
+{
+  "name": "Quaggoth Thonot",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "monster-manual",
+      "quaggoth"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 13,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 12,
+    "con": 16,
+    "int": 6,
+    "wis": 12,
+    "cha": 7
+  },
+  "skills": {
+    "Athletics": 5
+  },
+  "languages": [
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Wounded Fury",
+      "text": "While it has 10 hit points or fewer, the quaggoth has advantage on attack rolls. In addition, it deals an extra 7 (2d6) damage to any target it hits with a melee attack."
+    },
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "text": "The quaggoth's innate spellcasting ability is Wisdom (spell save DC 11 ). The quaggoth can innately cast the following spells, requiring no components:\n\n* At will: <i>feather fall, mage hand </i>(the hand is invisible)\n\n* 1/day each: <i>cure wounds, enlarge/reduce, heat metal, mirror image</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The quaggoth makes two claw attacks."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

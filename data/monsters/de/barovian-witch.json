@@ -1,0 +1,60 @@
+{
+  "name": "Barovianische Hexe",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/2",
+      "curse-of-strahd",
+      "human"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 10,
+  "hp": {
+    "average": 16,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 7,
+    "dex": 11,
+    "con": 13,
+    "int": 14,
+    "wis": 11,
+    "cha": 12
+  },
+  "skills": {
+    "Arcana": 4,
+    "Perception": 2
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Zaubersprechen",
+      "text": "Die Hexe ist eine Zauberin der 3. Stufe. Ihre Zauberfertigkeit ist Intelligenz (ZauberrettungswurfDC 12, +4 auf Treffer bei Zauberangriffen). Die Hexe hat folgende Zauber vorbereitet:\n\n* Cantrips (beliebig oft): Magische Hand, Taschenspielertrick, Froststrahl\n\n* 1. Stufe (4 Plätze): Krankheitsstrahl, Schlaf, Tashas schreckliches Gelächter\n\n* 2. Stufe (2 Plätze): Selbstverwandlung, Unsichtbarkeit"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Klauen (setzt „Selbstverwandlung“ voraus)",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +3 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 4 (1d6+1) Schnittschaden. Dieser Angriff ist magisch."
+    },
+    {
+      "name": "Dolch",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfangriff: +2 auf den Trefferwurf, Reichweite 1,5 m[ ]20/60Fuß, ein Ziel. Treffer: 2 (1d4) Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

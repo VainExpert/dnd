@@ -1,0 +1,19 @@
+{
+  "id": "feuerwerk",
+  "name": "Feuerwerk",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Magier",
+    "Artificer"
+  ],
+  "text": "Wähle einen Bereich mit einer nichtmagischen Flamme in Reichweite, die du sehen kannst und in einen 1,5 m Würfel passt. Du kannst das Feuer löschen und erzeugst dabei Rauch oder Feuerwerk:\n\nFeuerwerk: Das Ziel explodiert mit schillerndem Farbenspiel. Jede Kreatur in 3m Entfernung muss einen CON-Rettungswurf bestehen oder ist bis Ende deines nächsten Zuges geblendet.\n\nRauch: Dichter schwarzer Rauch breitet sich vom Ziel aus in einem 6 m Radius aus, auch um Ecken. Das Rauchgebiet ist stark vernebelt. Der Rauch bleibt für 1 min oder bis starker Wind ihn vertreibt."
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Young Cloud Dragon",
+  "size": "Large",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "large",
+      "dragon",
+      "cr8",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 136,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 12,
+    "con": 17,
+    "int": 16,
+    "wis": 13,
+    "cha": 15
+  },
+  "skills": {
+    "History": 6,
+    "Insight": 4,
+    "Perception": 7
+  },
+  "languages": [
+    "Auran",
+    "Aquan",
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Windborn",
+      "text": "The dragon cannot be moved or knocked prone by\nmagical or nonmagical winds of any kind."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The dragon makes three attacks: one with its bite and two\nwith its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 15\n(2d10 + 4) piercing damage plus 7 (2d6) cold damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11\n(2d6 + 4) slashing damage."
+    },
+    {
+      "name": "Breath Weapons (Recharge 5–6)",
+      "type": "special",
+      "text": "The dragon uses one of the following\nbreath weapons.\n\n* <i>Cloud Breath.</i> The dragon exhales an icy blast in a 90-foot cone that\nspreads around corners. Each creature in that area must make a DC 14\nConstitution saving throw, taking 45 (10d8) cold damage on a failed\nsaving throw, or half as much damage on a successful one.\n\n* <i>Wind Breath.</i> The dragon exhales gale-force winds in a 30-foot line that\nis 10-feet wide. Creatures in this area must make a DC 14 Strength saving\nthrow, taking 36 (8d8) bludgeoning damage on a failed saving throw and\nare pushed 30 feet directly away from the dragon. On a successful saving\nthrow, the creature takes half damage and is not pushed. A creature who\nis pushed and strikes a solid surface takes 1d6 bludgeoning damage per\n10 feet traveled. Nonmagical flames are completely extinguished, and\nmagical flames created by a spell of 3rd level or lower are immediately\ndispelled."
+    },
+    {
+      "name": "Cloud Form",
+      "type": "special",
+      "text": "The cloud dragon polymorphs into a Large cloud of mist,\nor back into its true form. While in mist form, the dragon can’t take any\nactions, speak, or manipulate objects. It is weightless, has a flying speed of\n20 feet, can hover, and can enter a hostile creature’s space and stop there.\nIn addition, if air can pass through a space, the mist can do so without\nsqueezing, and it can’t pass through water. It has advantage on Strength,\nDexterity, and Constitution saving throws, it is immune to all nonmagical\ndamage, and still benefits from its Windborn feature."
+    }
+  ],
+  "source": "creature"
+}

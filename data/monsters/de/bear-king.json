@@ -1,0 +1,98 @@
+{
+  "name": "Bärenkönig",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr12",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "gesetztreu-neutral",
+  "ac": 18,
+  "hp": {
+    "average": 133,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 21,
+    "dex": 10,
+    "con": 20,
+    "int": 12,
+    "wis": 17,
+    "cha": 16
+  },
+  "skills": {
+    "Athletics": 9,
+    "Intimidate": 7,
+    "Perception": 7
+  },
+  "languages": [
+    "Common",
+    "Elvish",
+    "Giant",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "12",
+    "xp": 8400,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Alternative Form",
+      "text": "Als Bonusaktion kann der Bärenkönig die Gestalt eines zotteligen Grizzlybären oder einer Mischform aus seiner humanoiden Gestalt und seiner Bärengestalt annehmen. In dieser alternativen Gestalt vergrößert sich der Bärenkönig auf die Größe „Groß“ und kann Biss- und Klauenangriffe ausführen. Er bleibt in dieser Gestalt, bis er als Bonusaktion wieder seine menschliche Gestalt annimmt oder bewusstlos wird oder stirbt."
+    },
+    {
+      "name": "Feiner Geruchssinn",
+      "text": "Der Bärenkönig hat einen Vorteil bei Wahrnehmungsproben (Weisheit), die auf dem Geruchssinn beruhen."
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Bärenkönig einen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Regeneration (nur in der alternativen Form)",
+      "text": "Der Bärenkönig erhält zu Beginn seines Zuges 10 Trefferpunkte zurück, sofern er mindestens 1 Trefferpunkt hat."
+    },
+    {
+      "name": "Die Höhle des Bärenkönigs",
+      "text": "Bei einer Initiativwert von 20 (bei Gleichstand verliert er) führt der Bärenkönig eine „Höhlenaktion“ durch, um einen der folgenden Effekte auszulösen; der Bärenkönig kann denselben Effekt nicht in zwei aufeinanderfolgenden Runden anwenden:\n\n- Der Bärenkönig beschwört auf magische Weise einen Schwarm von acht Riesenbienen (Werte wie bei Riesenwespen verwenden), um seine Höhle zu verteidigen. Die Bienen handeln sofort und in den20 infolgenden Runden entsprechend ihrer Initiativwert. Die Bienen bleiben so lange bestehen, bis sie getötet werden oder bis der Bärenkönig sie als Aktion entlässt. Der Bärenkönig kann diese Aktion erneut nutzen, es können jedoch nicht mehr als acht Riesenbienen gleichzeitig anwesend sein.\n\n- Der Bärenkönig wählt eine Kreatur innerhalb der Höhle als Ziel, die er sehen kann. Die Kreatur muss einenDC 15  Konstitutionsrettungswurf bestehen oder wird magisch in einen Braunbären verwandelt, als ob durch einen Polymorph-Zauber. Zu Beginn seines Zuges wiederholt eine verwandelte Kreatur den Rettungswurf. Bei einem Fehlschlag muss die Kreatur ihre Aktion nutzen, um einen der Gegner des Bärenkönigs anzugreifen. Bei Erfolg endet der Effekt und die Kreatur kehrt zu ihrer normalen Gestalt zurück. Der Effekt hält an, bis die Kreatur den Rettungswurf besteht oder bis der Bärenkönig diese Höhlenaktion erneut einsetzt.\n\n- Der Bärenkönig lässt den Boden in einem Umkreis von 20 Fuß beben und zittern. Alle Kreaturen im betroffenen Bereich müssen einenDC 15  Stärke-Rettungswurf bestehen oder erleiden 7 (2d6) Bludgeoning-Schaden und fallen zu Boden. Der Boden bebt weiter bis zur Initiativzahl 50 cm der folgenden Runde; während dieser Zeit gilt der Bereich als schwieriges Gelände."
+    },
+    {
+      "name": "Regionale Auswirkungen",
+      "text": "Die Region um den Gloaming Crag ist durch die Magie des Bärenkönigs verzerrt, was einen oder mehrere der folgenden Effekte hervorruft:\n\n- Im Umkreis10 milesvon  um die Höhle des Bärenkönigs haben Kreaturen einen Nachteil bei Rettungswürfen, mit denen sie versuchen, sich nicht bei einem Bärenmenschen mit Lykanthropie anzustecken.\n\n- Bienen im Umkreis10 milesvon  um die Höhle des Bärenkönigs sind leicht reizbar und greifen schnell an. Insektenschwärme (Bienen oder Hornissen) sind in der Gegend weit verbreitet, neigen jedoch dazu, Einheimische zu ignorieren.\n\n- Innerhalb5 milesvon  um die Höhle des Bärenkönigs herrschen starke Emotionen. Streitigkeiten eskalieren schnell zu Handgreiflichkeiten, und gesellige Zusammenkünfte werden leicht zu ausgelassenen Zechgelagen oder sogar Schlägereien.\n\nWenn der Bärenkönig stirbt, normalisieren sich die Verhältnisse in der Umgebung der Höhle im Laufe von1d6  Tagen wieder."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Bärenkönig führt zwei Fernkampfangriffe oder zwei Nahkampfangriffe aus. In seiner Hybrid- oder Grizzlybärenform kann er zudem einen zusätzlichen Bissangriff ausführen."
+    },
+    {
+      "name": "Biss (nur Grizzly oder Hybridform)",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 10 (1d10 + 5) Durchbohrungsschaden. Eine Zielkreatur, die kein Konstrukt oder Untoter ist, muss zu Beginn jedes ihrer Züge einen erfolgreichenDC 17  Konstitutionsrettungswurf bestehen oder verliert 10 (3d6) Trefferpunkte durch Blutverlust. Jedes Mal, wenn der Bärenkönig die verwundete Kreatur mit diesem Angriff trifft, erhöht sich der Trefferpunktverlust um 10 (3d6). Eine Kreatur kann eine Aktion aufwenden, um die Blutung bei sich selbst oder einem benachbarten Verbündeten durch einen erfolgreichenDC 12  Weisheits- (Medizin-)Wurf zu stillen. Die Blutung hört auch auf, wenn die Kreatur magische Heilung erhält."
+    },
+    {
+      "name": "Klauen (nur bei Grizzly- oder Hybridform)",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 12 (2d6 + 5) Schnittschaden."
+    },
+    {
+      "name": "Maul (nur in menschlicher oder hybrider Gestalt)",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 12 (2d6 + 5) Bludgeoning-Schaden. Eine Kreatur, die im selben Zug von zwei Angriffen mit dem Streitkolben getroffen wird, muss einenDC 17Stärke-Rettungswurf bestehen oder fällt zu Boden."
+    },
+    {
+      "name": "Speer (nur in menschlicher Gestalt)",
+      "type": "special",
+      "text": "Fernkampfangriff: +9 zum Treffen, Reichweite30/60  Fuß, ein Ziel. Treffer: 8 (1d6 + 5) Durchschlagschaden."
+    }
+  ],
+  "source": "creature"
+}

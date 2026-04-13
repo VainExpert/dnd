@@ -1,0 +1,87 @@
+{
+  "name": "Orchid Count",
+  "size": "Medium",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr6",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 16,
+  "hp": {
+    "average": 97,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 18,
+    "con": 16,
+    "int": 14,
+    "wis": 11,
+    "cha": 15
+  },
+  "skills": {
+    "Acrobatics": 7,
+    "Athletics": 4,
+    "Intimidation": 5,
+    "Perception": 6,
+    "Survival": 3
+  },
+  "languages": [
+    "Common",
+    "Elven",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Fey Step",
+      "text": "The Count is unaffected by difficult\nterrain."
+    },
+    {
+      "name": "Fey Ancestry",
+      "text": "Magic cannot put the Count\nto sleep."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The Count has advantage\non saving throws against spells and other\nmagical effects."
+    },
+    {
+      "name": "Command Fey",
+      "text": "As a member of the Court of\nArcadia, the Count can cast <i>dominate monster</i> (DC 13) at\nwill on any fey creature or elf."
+    },
+    {
+      "name": "Now You See Me…",
+      "text": "If the Count teleports next\nto an enemy, he immediately makes two rapier\nattacks with advantage against that enemy."
+    },
+    {
+      "name": "Tactical Advantage",
+      "text": "If the Count has advantage\non an attack roll, he deals an extra 7\n(2d6) damage."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The Count’s innate spellcasting\nability is Charisma (spell save DC 13). He can\ninnately cast the following spells, requiring no\nmaterial components:\n\n* At will: <i>misty step, hunter’s mark</i>\n\n* 3/day: <i>blur, mirror image</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Rapier",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5\nft., one target. Hit: 8 (1d8 + 4) piercing damage."
+    },
+    {
+      "name": "Longbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +7 to hit,\nrange 150/600 ft., one target. Hit: 11 (2d6 + 4)\npiercing damage."
+    }
+  ],
+  "source": "creature"
+}

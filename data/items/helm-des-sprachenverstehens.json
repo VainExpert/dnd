@@ -1,0 +1,49 @@
+{
+  "id": "helm-des-sprachenverstehens",
+  "type": "item",
+  "name": "Helm des Sprachenverstehens",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "head",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 250,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [
+    "sprachen-verstehen"
+  ],
+  "effects": [],
+  "text": "Wenn du diesen Helm trägst, kannst du als Aktion mit dem Helm beliebig oft den Zauber Sprachen verstehen wirken.",
+  "tags": [
+    "magisch",
+    "helm",
+    "sprachen",
+    "soziales",
+    "kommunikation",
+    "aktion",
+    "zauber"
+  ]
+}

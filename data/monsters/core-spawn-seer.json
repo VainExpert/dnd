@@ -1,0 +1,69 @@
+{
+  "name": "Core Spawn Seer",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr13",
+      "explorers-guide-to-wildemount"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 17,
+  "hp": {
+    "average": 153,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 12,
+    "con": 18,
+    "int": 22,
+    "wis": 19,
+    "cha": 16
+  },
+  "skills": {
+    "Perception": 9
+  },
+  "languages": [
+    "Common",
+    "Deep Speech",
+    "Undercommon",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "13",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Earth Glide",
+      "text": "The seer can traverse through nonmagical, unworked earth and stone. While doing so, the seer doesn’t disturb the material it moves through."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The seer has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The seer uses Fission Staff twice, Psychedelic Orb twice, or each one once."
+    },
+    {
+      "name": "Fission Staff",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 9 (1d6 + 6) bludgeoning damage plus 18 (4d8) radiant damage, and the target is knocked prone."
+    },
+    {
+      "name": "Psychedelic Orb",
+      "type": "special",
+      "text": "The seer hurls a glimmering orb at one creature it can see within 120 of it. The target must succeed on a DC 19 Wisdom saving throw or take 27 (5d10) psychic damage and suffer a random condition until the start of the seer’s next turn. Roll a d6 for the condition:\n* (1–2) blinded\n* (3–4) frightened\n* (5–6) stunned."
+    }
+  ],
+  "source": "creature"
+}

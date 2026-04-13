@@ -1,0 +1,74 @@
+{
+  "name": "Witch Doctor",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 13,
+  "hp": {
+    "average": 91,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 15,
+    "con": 14,
+    "int": 10,
+    "wis": 17,
+    "cha": 12
+  },
+  "skills": {
+    "Animal Handling": 6,
+    "Insight": 6,
+    "Sleight of Hand": 5
+  },
+  "languages": [
+    "Common",
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The witch doctor’s innate\nspellcasting ability is Wisdom (spell save DC 14).\nThe witch doctor can innately cast the following\nspells, requiring no material components:\n\n* 3/day each: <i>darkness, hex, hellish rebuke</i>\n\n* 1/day each: <i>counterspell, fear, magic circle</i>"
+    },
+    {
+      "name": "Totemic Ritualist",
+      "text": "Whenever the witch doctor uses\nits action to cast a spell, it may use its bonus action\nto conjure a totem if able."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The witch doctor conjures a totem is\nable. It then makes two attacks with its claws or\ntwo with its blowgun."
+    },
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5ft.,\none target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Blowgun",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +5 to hit, range\n20/60 ft., one target. Hit: 5 (1d6 + 2) piercing\ndamage plus 14 (4d6) poison damage."
+    },
+    {
+      "name": "Conjure Totem (Recharge 4-6)",
+      "type": "special",
+      "text": "The Witch Doctor\ncreates a powerful, magical totem in an unoccupied\nspace within 30 feet. This totem is a tiny object\nwith 15 hit points and AC 12. The totem provides\nbonuses to the witch doctor and its allies until\ndestroyed. The witch doctor may only have one\ntotem of each type active at a time. When the witch\ndoctor summons a totem it chooses from the\nfollowing options:\n* ***Invigorating Totem.*** On initiative count 20\n(losing ties), evil creatures within 30 feet of the\ntotem regain 5 (1d10) hit points.\n* ***Empowering Totem.*** Evil creatures within 30\nfeet of the totem deal an additional 5 (1d10)\nforce damage on all weapon attacks.\n* ***Impeding Totem.*** The area within 30 feet of the\ntotem is considered difficult terrain for non-evil\ncreatures."
+    }
+  ],
+  "source": "creature"
+}

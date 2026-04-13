@@ -1,0 +1,69 @@
+{
+  "name": "Quadrone",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr1",
+      "monster-manual"
+    ]
+  },
+  "alignment": "construct",
+  "ac": 16,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 30
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 14,
+    "con": 12,
+    "int": 10,
+    "wis": 10,
+    "cha": 11
+  },
+  "skills": {
+    "Perception": 2
+  },
+  "languages": [
+    "Modron"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Axiomatic Mind",
+      "text": "The quadrone can't be compelled to act in a manner contrary to its nature or its instructions."
+    },
+    {
+      "name": "Disintegration",
+      "text": "If the quadrone dies, its body disintegrates into dust, leaving behind its weapons and anything else it was carrying."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The quadrone makes two fist attacks or four shortbow attacks."
+    },
+    {
+      "name": "Fist",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage."
+    },
+    {
+      "name": "Shortbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

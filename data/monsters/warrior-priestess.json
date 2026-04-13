@@ -1,0 +1,59 @@
+{
+  "name": "Warrior Priestess",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 18,
+  "hp": {
+    "average": 26,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 8,
+    "con": 15,
+    "int": 12,
+    "wis": 16,
+    "cha": 12
+  },
+  "skills": {
+    "Insight": 5,
+    "Religion": 3
+  },
+  "languages": [
+    "Any two languages"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "text": "The priestess is a 3th-level spellcaster.\nIts spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The priestess has the\nfollowing cleric spells prepared:\n\n* Cantrips (at will): <i>guidance, sacred flame</i>\n\n* 1st level (4 slots): <i>bless, cure wounds, divine favor, shield of faith</i>\n\n* 2nd level (2 slots): <i>magic weapon, spiritual weapon</i>"
+    },
+    {
+      "name": "Guided Strike (1/Short Rest)",
+      "text": "When the priestess\nmakes an attack roll, it can gain a +10 bonus to the\nroll."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Flail",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft.,\none target. Hit: 6 (1d8 + 2) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

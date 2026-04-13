@@ -1,0 +1,72 @@
+{
+  "name": "Clockwork Hound",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr2",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 12,
+  "hp": {
+    "average": 71,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 15,
+    "con": 14,
+    "int": 1,
+    "wis": 10,
+    "cha": 1
+  },
+  "skills": {
+    "Athletics": 7,
+    "Perception": 4
+  },
+  "languages": [
+    "understands Common"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Immutable Form",
+      "text": "The clockwork hound is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The clockwork hound has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Diligent Tracker",
+      "text": "Clockwork hounds are designed to guard areas and track prey. They have advantage on all Wisdom (Perception) and Wisdom (Survival) checks when tracking."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) piercing damage."
+    },
+    {
+      "name": "Tripping Tongue",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 15 ft., one target. Hit: 9 (1d8 + 5) slashing damage, and the target must succeed on a DC 13 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Explosive Core",
+      "type": "special",
+      "text": "The mechanism that powers the hound explodes when the construct is destroyed. All creatures within 5 feet of the hound take 7 (2d6) fire damage, or half damage with a successful DC 12 Dexterity saving throw."
+    }
+  ],
+  "source": "creature"
+}

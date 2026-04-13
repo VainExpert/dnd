@@ -1,0 +1,73 @@
+{
+  "name": "Banderhobb",
+  "size": "Groß",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr5",
+      "volos-guide"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 15,
+  "hp": {
+    "average": 84,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 12,
+    "con": 20,
+    "int": 11,
+    "wis": 14,
+    "cha": 8
+  },
+  "skills": {
+    "Athletics": 8,
+    "Stealth": 7
+  },
+  "languages": [
+    "understands Common and the languages of its creator",
+    "but can't speak"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Resonanzverbindung",
+      "text": "Wenn der Banderhobb auch nur das kleinste Stückchen eines Lebewesens oder eines Gegenstands bei sich trägt, etwa eine Haarsträhne oder einen Holzsplitter, kennt er den direktesten Weg zu diesem Lebewesen oder Gegenstand, sofern es sich in einem Umkreis von 1 Meile um den Banderhobb befindet."
+    },
+    {
+      "name": "Schatten-Tarnung",
+      "text": "Bei schwachem Licht oder Dunkelheit kann der Banderhobb die Aktion „Verstecken“ als Bonusaktion ausführen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 22 (5d6+5) Durchdringungsschaden, und das Ziel wird festgehalten (Befreiung DC 15), sofern es sich um eine Kreatur der Größe „Groß“ oder kleiner handelt. Bis dieser Festhalteschlag endet, ist das Ziel bewegungsunfähig, und der Banderhobb kann seinen Biss- oder Zungenangriff nicht gegen ein anderes Ziel einsetzen."
+    },
+    {
+      "name": "Zunge",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 zum Treffer, Reichweite15 ft: , ein Ziel. Treffer: 10 (3d6) nekrotischer Schaden, und das Ziel muss einenDC 15  Stärke-Rettungswurf durchführen. Bei einem misslungenen Rettungswurf wird das Ziel auf ein Feld innerhalb5 feetvon  des Banderhobbs gezogen, der eine Bonusaktion nutzen kann, um einen Bissangriff gegen das Ziel auszuführen."
+    },
+    {
+      "name": "Schwalbe",
+      "type": "special",
+      "text": "Der Banderhobb führt einen Bissangriff gegen eine mittelgroße oder kleinere Kreatur aus, die er im Griff hat. Trifft der Angriff, wird das Ziel verschlungen, und der Griff endet. Die verschlungene Kreatur ist geblendet und gefesselt, sie hat vollständige Deckung gegen Angriffe und andere Effekte außerhalb des Banderhobbs und erleidet zu Beginn jedes Zuges des Banderhobbs 10 (3d6) nekrotischen Schaden. Eine Kreatur, deren Trefferpunkte auf diese Weise auf 0 reduziert wurden, erleidet keinen nekrotischen Schaden mehr und ist stabil.\n\nDer Banderhobb kann jeweils nur ein Ziel verschlucken. Solange der Banderhobb nicht handlungsunfähig ist, kann er die Kreatur jederzeit (ohne Aktion) in einen Raum innerhalb5 feetvon  von sich auswürgen. Die Kreatur landet in liegender Position. Wenn der Banderhobb stirbt, würgt er ebenfalls eine verschluckte Kreatur aus."
+    },
+    {
+      "name": "Schattenschritt",
+      "type": "special",
+      "text": "Der Banderhobb teleportiert sich auf magische Weise30 feetzu einem freien Platz in schwachem Licht oder Dunkelheit, den er sehen kann. Vor oder nach dem Teleportieren kann er einen Biss- oder Zungenangriff ausführen."
+    }
+  ],
+  "source": "creature"
+}

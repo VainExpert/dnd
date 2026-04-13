@@ -1,0 +1,67 @@
+{
+  "name": "Behir Zombie",
+  "size": "Riesig",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "huge",
+      "undead",
+      "cr11",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 17,
+  "hp": {
+    "average": 168,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 40
+  },
+  "abilities": {
+    "str": 23,
+    "dex": 10,
+    "con": 18,
+    "int": 3,
+    "wis": 7,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "11",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Die Standhaftigkeit der Untoten",
+      "text": "Wenn der Schaden die Lebenspunkte des Zombies auf 0 reduziert,\nmuss er einen Konstitutions-Rettungswurf mit einer Schwierigkeitsklasse von 5 + dem erlittenen Schaden\nausführen, es sei denn, es handelt sich um Strahlenschaden oder um einen kritischen Treffer. Bei Erfolg\nsinkt die Lebenspunktzahl des Zombies stattdessen auf 1."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Zombie führt zwei Angriffe aus: einen durch seinen Biss und einen\ndurch sein Würgegriff."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +10 auf Treffer, Reichweite5 ft: ., ein Ziel. Treffer: 17\n(2d10 + 6) Durchdringungsschaden."
+    },
+    {
+      "name": "Einschnüren",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +10 zum Treffen, Reichweite:1,5 m 0 m, eine große oder\nkleinere Kreatur. Treffer: 17 (2d10 + 6) Schlagschaden plus 17 (2d10 +\n6) Schnittschaden. Das Ziel wird festgehalten (Befreiung:DC 16 ), sofern der Zombie\nnicht bereits eine andere Kreatur festhält, und das Ziel ist bewegungsunfähig, bis dieser\nFesthaltgriff endet."
+    },
+    {
+      "name": "Schwalbe",
+      "type": "special",
+      "text": "Der Zombie führt einen Bissangriff gegen ein mittelgroßes oder kleineres\nZiel aus, das er im Schwitzkasten hält. Trifft der Angriff, wird das Ziel zusätzlich verschlungen, und\nder Schwitzkasten endet. Während es verschlungen ist, ist das Ziel geblendet und gefesselt, es\nhat vollständige Deckung gegen Angriffe und andere Effekte außerhalb des Zombies und\nerleidet zu Beginn jedes Zuges des Zombies 21 (6d6) nekrotischen Schaden.\nEin Behir-Zombie kann jeweils nur eine Kreatur verschluckt haben.\n\nStirbt der Zombie, ist die verschluckte Kreatur nicht mehr durch ihn bewegungsunfähig und\nkann aus der Leiche entkommen, indem sie15 ft 10 Fuß Bewegungsreichweite nutzt und sich dabei in Bauchlage befindet."
+    }
+  ],
+  "source": "creature"
+}

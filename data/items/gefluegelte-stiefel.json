@@ -1,0 +1,44 @@
+{
+  "id": "gefluegelte-stiefel",
+  "type": "item",
+  "name": "Geflügelte Stiefel",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "feet",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 350,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diese Stiefel trägst, hast du eine Flugbewegungsrate, die deiner Schrittbewegungsrate entspricht. Du kannst die Stiefel verwenden, um bis zu 4 h lang zu fliegen. Die Wirkungsdauer kann auf einmal oder in kürzeren Flügen von jeweils mindestens 1 min verbraucht werden. Wenn du fliegst, wenn die Wirkungsdauer abläuft, sinkst du um 9 m pro Runde, bis du landest. Die Stiefel erhalten alle 12 h, in denen sie nicht verwendet werden, 2 h Flugzeit zurück.",
+  "tags": [
+    "magisch",
+    "schuhe",
+    "bewegung",
+    "transport"
+  ]
+}

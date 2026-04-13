@@ -1,0 +1,57 @@
+{
+  "name": "Defender Globe",
+  "size": "Small",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "small",
+      "elemental",
+      "cr1",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 14,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 4,
+    "dex": 16,
+    "con": 12,
+    "int": 4,
+    "wis": 12,
+    "cha": 14
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Hyper-Awareness",
+      "text": "The defender globe cannot be\nsurprised."
+    },
+    {
+      "name": "Flight",
+      "text": "The defender globe’s ability to fly is\nmagical in nature and does not work in areas\nwhere an antimagic effect is active."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Electrical Bolt",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +5 to hit, range 30/60 ft., one target. Hit: 10 (2d6 + 3) lightning damage."
+    }
+  ],
+  "source": "creature"
+}

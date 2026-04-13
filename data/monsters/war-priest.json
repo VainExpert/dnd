@@ -1,0 +1,59 @@
+{
+  "name": "War Priest",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr9",
+      "volos-guide",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 18,
+  "hp": {
+    "average": 117,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 14,
+    "int": 11,
+    "wis": 17,
+    "cha": 13
+  },
+  "skills": {
+    "Intimidation": 5,
+    "Religion": 4
+  },
+  "languages": [
+    "any two languages"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "text": "The priest is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). It has the following cleric spells prepared:\n\n* Cantrips (at will): <i>light, mending, sacred flame, spare the dying</i>\n\n* 1st level (4 slots): <i>divine favor, guiding bolt, healing word, shield of faith</i>\n\n* 2nd level (3 slots): <i>lesser restoration, magic weapon, prayer of healing, silence, spiritual weapon</i>\n\n* 3rd level (3 slots): <i>beacon of hope, crusader's mantle, dispel magic, revivify, spirit guardians, water wall</i>\n\n* 4th level (3 slots): <i>banishment, freedom of movement, guardian of faith, stoneskin</i>\n\n* 5th level (1 slot): <i>flame strike, mass cure wounds, hold monster</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The priest makes two melee attacks."
+    },
+    {
+      "name": "Maul",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (2d6 +3) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

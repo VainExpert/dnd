@@ -1,0 +1,19 @@
+{
+  "id": "bannstoss",
+  "name": "Bannstoß",
+  "level": 1,
+  "school": "Bannmagie",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, G, M (Miniatur-Hand aus Lehm)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Kleriker",
+    "Paladin",
+    "Magier"
+  ],
+  "text": "Du schleuderst eine ablenkende magische Kraft auf eine Kreatur in Reichweite.\nDas Ziel macht einen CON-Rettungswurf (Konstrukte und Untote bestehen automatisch).\nBei Fehlschlag: 2W4 Kraftschaden, Bewegungsrate halbiert bis Beginn deines nächsten Zuges, und in seinem nächsten Zug kann es nur eine Aktion ODER eine Bonusaktion ausführen (nicht beides).\nBei Erfolg: halber Schaden, keine weiteren Effekte.\n\nAuf höheren Level gewirkt: +2W4 Kraftschaden pro Slot-Level über 1."
+}

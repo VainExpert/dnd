@@ -1,0 +1,48 @@
+{
+  "id": "instrument-des-schreibens",
+  "type": "item",
+  "name": "Instrument des Schreibens",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Das Instrument hat 3 Ladungen und bekommt alle am Morgen wieder. Während das Instrument gepsilet wird kann ala Aktion eine Ladung verwendet werden um eine magische Nachricht auf einer nicht-magischen Oberfläche oder Objekt in bis zu 9 m Abstand geschrieben werden. Die Nachricht kann bios zu 6 Wörter lang sein (als Barde bis zu 15 Wörter und leuchtend). Die Nachricht hält für 24 h oder kann mit Magie auflösen gelöscht werden.",
+  "tags": [
+    "magisch",
+    "instrument",
+    "kommunikation",
+    "soziales",
+    "ladungen",
+    "schreiben",
+    "zauber",
+    "aktion"
+  ]
+}

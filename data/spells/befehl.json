@@ -1,0 +1,18 @@
+{
+  "id": "befehl",
+  "name": "Befehl",
+  "level": 1,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Kleriker",
+    "Paladin"
+  ],
+  "text": "Du sprichst ein Machtwort zu einer Kreatur in Reichweite, die du sehen kannst. Das Ziel muss einen WIS-Rettungswurf bestehen oder den Befehl in seinem nächsten Zug ausführen. Folgende Befehle sind möglich:\n * Komm: Das Ziel bewegt sich schnellstmöglich zu dir. Sein Zug endet, wenn es 1,5 m von dir entfernt ist.\n * Loslassen: Das Ziel lässt fallen, was es hält, und beendet seinen Zug.\n * Flieh: Das Ziel bewegt sich schnellstmöglich von dir weg. \n * Hinlegen: Das Ziel legt sich hin und beendet seinen Zug.\n * Stopp: Das Ziel stoppt jegliche Aktion, die es tut. Fliegende bleiben in der Luft, bewegen sich aber nicht von der Stelle.\nAndere Wörter sind möglich. Deren ist SG von der Einschätzung des DM abhängig.\n\nAuf höheren Level gewirkt: pro Level 1 weitere Kreatur beeinflussen"
+}

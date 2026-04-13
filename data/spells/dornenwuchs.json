@@ -1,0 +1,17 @@
+{
+  "id": "dornenwuchs",
+  "name": "Dornenwuchs",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "45 m (6 m Radius)",
+  "components": "V, G, M (7 scharfe Dornen oder geschärfte Zweige)",
+  "duration": "Konzentration, bis zu 10 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Waldläufer"
+  ],
+  "text": "Der Boden in einem 6 m Radius, auf einen Punkt in Reichweite zentriert, wird von Stacheln und Dornen bewachsen.\nDer Bereich wird für die Wirkungsdauer zu schwierigem Terrain.\nBewegt sich eine Kreatur in oder innerhalb des Bereiches erleidet sie pro 1,5 m 2W4 Stichschaden.\nDer Boden ist getarnt und sieht natürlich aus. Jede Kreatur, die den Bereich nicht sehen kann wenn der Zauber gewirkt wird, muss einen WIS-Rettungswurf bestehen um das Gelände vor dem Betreten als gefährlich wahrzunehmen."
+}

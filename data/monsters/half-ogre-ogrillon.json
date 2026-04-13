@@ -1,0 +1,52 @@
+{
+  "name": "Half-Ogre (Ogrillon)",
+  "size": "Large",
+  "type": {
+    "type": "giant",
+    "tags": [
+      "large",
+      "giant",
+      "cr1",
+      "monster-manual"
+    ]
+  },
+  "alignment": "any chaotic alignment",
+  "ac": 12,
+  "hp": {
+    "average": 30,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 10,
+    "con": 14,
+    "int": 7,
+    "wis": 9,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Battleaxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) slashing damage, or 14 (2d10 + 3) slashing damage if used with two hands."
+    },
+    {
+      "name": "Javelin",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 10 (2d6 + 3) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

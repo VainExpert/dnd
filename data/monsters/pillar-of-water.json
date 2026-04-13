@@ -1,0 +1,54 @@
+{
+  "name": "Pillar of Water",
+  "size": "Large",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "large",
+      "elemental",
+      "cr7",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 149,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 5,
+    "con": 22,
+    "int": 11,
+    "wis": 15,
+    "cha": 11
+  },
+  "skills": {},
+  "languages": [
+    "Aquan"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Constant Flood",
+      "text": "Enemies beginning their turn\nwithin 15 feet of the Pillar must make a DC 15\nStrength check or be pushed 10 feet away from\nthe Pillar. The ground within 15 feet of the Pillar\nis difficult terrain for all enemies attempting to\nmove toward the Pillar."
+    },
+    {
+      "name": "Geyser",
+      "text": "When summoned, the Pillar of Water\nappears in a 10-by-10-foot space. All creatures in\nthat area must make Dexterity saving throws. On\na failure, a creature is suspended in the column\nof water. On a success, a creature is pushed to an\nempty space adjacent to the Pillar.\n\nUp to four Medium creatures, or one Large\ncreature, can be contained in the Pillar. Creatures\nsuspended in the Pillar can’t breathe unless they\ncan breathe water, are restrained, and take 21\n(6d6) bludgeoning damage at the start of each\nof the Pillar’s turns.\n\nAs an action, a restrained creature can make a\nDC 15 Strength (Athletics) check. On a success, it\nescapes from the column of water."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Reform",
+      "type": "special",
+      "text": "As a bonus action, the Pillar disappears,\ndepositing any suspended creatures on the\nground, prone. On its summoner’s next turn, it\nappears again anywhere within 60 feet of the\nsummoner."
+    }
+  ],
+  "source": "creature"
+}

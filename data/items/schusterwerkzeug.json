@@ -1,0 +1,44 @@
+{
+  "id": "schusterwerkzeuge",
+  "type": "item",
+  "name": "Schusterwerkzeuge",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 2.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 5,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Werkzeugset zum Herstellen/Reparieren von Schuhwerk. Nutzen: Modifziert Schuhwerk um Vorteil auf den nächsten Akrobatik-Wurf zu geben (SG 10). Fertigen: Kletterausrüstung",
+  "tags": [
+    "werkzeug",
+    "schuhwerk",
+    "reparieren",
+    "nützlich"
+  ]
+}

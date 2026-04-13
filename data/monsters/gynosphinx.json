@@ -1,0 +1,71 @@
+{
+  "name": "Gynosphinx",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr11",
+      "monster-manual"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 17,
+  "hp": {
+    "average": 136,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 15,
+    "con": 16,
+    "int": 18,
+    "wis": 18,
+    "cha": 18
+  },
+  "skills": {
+    "Arcana": 12,
+    "History": 12,
+    "Perception": 8,
+    "Religion": 8
+  },
+  "languages": [
+    "Common",
+    "Sphinx"
+  ],
+  "challenge": {
+    "cr": "11",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Inscrutable",
+      "text": "The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The sphinx's weapon attacks are magical."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The sphinx is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following wizard spells prepared:\n\n* Cantrips (at will): <i>mage hand, minor illusion, prestidigitation</i>\n\n* 1st level (4 slots): <i>detect magic, identify, shield</i>\n\n* 2nd level (3 slots): <i>darkness, locate object, suggestion</i>\n\n* 3rd level (3 slots): <i>dispel magic, remove curse, tongues</i>\n\n* 4th level (3 slots): <i>banishment, greater invisibility</i>\n\n* 5th level (1 slot): <i>legend lore</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The sphinx makes two claw attacks."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

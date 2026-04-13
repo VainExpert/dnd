@@ -1,0 +1,74 @@
+{
+  "name": "Stonefist Protector",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 15,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 16,
+    "con": 12,
+    "int": 14,
+    "wis": 14,
+    "cha": 8
+  },
+  "skills": {
+    "Acrobatics": 5,
+    "Insight": 4,
+    "Religion": 4
+  },
+  "languages": [
+    "Any two languages"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Flurry of Blows (2/Short Rest)",
+      "text": "If the protector has\nattacked this turn, it can make an additional\nunarmed strike as a bonus action. On a hit, the\ntarget must succeed on a DC 13 Dexterity saving\nthrow or be knocked prone."
+    },
+    {
+      "name": "Patient Defense (2/Short Rest)",
+      "text": "The protector can\ntake the Dodge action as a bonus action."
+    },
+    {
+      "name": "Unarmored Defense",
+      "text": "While not wearing armor, the\nprotector's AC includes its Wisdom modifier."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The protector makes two attacks, one\nwith its quarterstaff and one with its unarmed\nstrike."
+    },
+    {
+      "name": "Quarterstaff",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach\n5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning\ndamage."
+    },
+    {
+      "name": "Unarmed Strike",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit,\nreach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning\ndamage."
+    }
+  ],
+  "source": "creature"
+}

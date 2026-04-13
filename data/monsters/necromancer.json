@@ -1,0 +1,58 @@
+{
+  "name": "Necromancer",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr9",
+      "volos-guide",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 12,
+  "hp": {
+    "average": 66,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 9,
+    "dex": 14,
+    "con": 12,
+    "int": 17,
+    "wis": 12,
+    "cha": 11
+  },
+  "skills": {
+    "Arcana": 7,
+    "History": 7
+  },
+  "languages": [
+    "any four languages"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "text": "The necromancer is a 12th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The necromancer has the following wizard spells prepared:\n\n* Cantrips (at will): <i>chill touch, dancing lights, mage hand, mending</i>\n\n* 1st level (4 slots): <i>false life\\*, mage armor, ray of sickness* </i>\n\n* 2nd level (3 slots): <i>blindness/deafness\\*, ray of enfeeblement\\*, web</i>\n\n* 3rd level (3 slots): <i>animate dead\\*, bestow curse\\*, vampiric touch* </i>\n\n* 4th level (3 slots): <i>blight\\*, dimension door, stoneskin</i>\n\n* 5th level (2 slots): <i>Bigby's hand, cloudkill</i>\n\n* 6th level (1 slot): <i>circle of death* </i>\n\n*Necromancy spell of 1st level or higher"
+    },
+    {
+      "name": "Grim Harvest (1/Turn)",
+      "text": "When necromancer kills a creature that is neither a construct nor undead with a spell of 1st level or higher, the necromancer regains hit points equal to twice the spell's level, or three times if it is a necromancy spell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Withering Touch",
+      "type": "special",
+      "text": "Melee Spell Attack: +7 to hit, reach 5 ft., one creature. Hit: 5 (2d4) necrotic damage."
+    }
+  ],
+  "source": "creature"
+}

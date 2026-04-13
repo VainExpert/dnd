@@ -1,0 +1,72 @@
+{
+  "name": "Lesser Lightning Elemental",
+  "size": "Medium",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 14,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 18,
+    "con": 16,
+    "int": 4,
+    "wis": 11,
+    "cha": 11
+  },
+  "skills": {},
+  "languages": [
+    "Auran"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Lightning",
+      "text": "A creature that touches the lightning elemental or hits it with\na melee attack while within 5 feet of it takes 7 (2d6) lightning damage."
+    },
+    {
+      "name": "Water Susceptibility",
+      "text": "For every 5 feet that the lightning elemental\nmoves in water, or for every gallon of water splashed on it, it takes 1 cold\ndamage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The lightning elemental makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) lightning damage."
+    },
+    {
+      "name": "Lightning Bolt",
+      "type": "special",
+      "text": "Ranged Spell Attack: +6 to hit, range 20/60 ft., one target. Hit: 22 (4d8 + 4) lightning damage."
+    },
+    {
+      "name": "Globe Lightning (1/Long Rest)",
+      "type": "special",
+      "text": "The lightning elemental\ndischarges 3 globes of electricity that hover in its space for 1 minute.\nWhenever a creature enters or starts its turn within 5 feet of the\nelemental, one of the globes discharges. The target must make a DC 14\nDexterity saving throw, taking 7 (1d6 + 4) lightning damage on a failed\nsaving throw, or half as much damage on a successful one. As each globe\ndischarges, it disappears."
+    }
+  ],
+  "source": "creature"
+}

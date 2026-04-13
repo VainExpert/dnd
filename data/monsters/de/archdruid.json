@@ -1,0 +1,60 @@
+{
+  "name": "Erzdruide",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr12",
+      "volos-guide",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 16,
+  "hp": {
+    "average": 132,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 12,
+    "int": 12,
+    "wis": 20,
+    "cha": 11
+  },
+  "skills": {
+    "Medicine": 9,
+    "Nature": 5,
+    "Perception": 9
+  },
+  "languages": [
+    "Druidic plus any two languages"
+  ],
+  "challenge": {
+    "cr": "12",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Erzdruide ist ein Zauberwirker der Stufe 18. Seine Zauberfertigkeit ist Weisheit (ZauberrettungswurfDC 17, +9 auf Treffer bei Zauberangriffen). Er hat die folgenden Druidenzauber vorbereitet:\n\n* Cantrips (beliebig oft): Druidenkunst, Ausbessern, Giftsprüh, Flamme erzeugen\n\n* 1. Stufe (4 Plätze): Wunden heilen, Verstricken, Feenfeuer, Mit Tieren sprechen\n\n* 2. Stufe (3 Plätze): Tierbote, Tierwahrnehmung, Person festhalten\n\n* 3. Stufe (3 Plätze): Tiere beschwören, In Stein verwandeln, Unter Wasser atmen\n\n* 4. Stufe (3 Plätze): Tier beherrschen, Kreatur orten, Steinhaut, Feuerwand\n\n* 5. Stufe (3 Plätze): Mit der Natur kommunizieren, Massenheilung, Baumschritt\n\n* 6. Stufe (1 Platz): Heilen, Heldenfestmahl, Sonnenstrahl\n\n* 7. Stufe (1 Platz): Feuersturm\n\n* 8. Stufe (1 Platz): Tiergestalt\n\n* 9. Stufe (1 Platz): Vorhersehung"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Krumsäbel",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 5 (1d6+2) Schnittschaden."
+    },
+    {
+      "name": "Gestaltwandlung (2/Tag)",
+      "type": "special",
+      "text": "Der Erzdruide verwandelt sich auf magische Weise in ein Tier oder ein Elementarwesen mit einem Schwierigkeitsgrad von 6 oder weniger und kann bis zu 9 Stunden in dieser Gestalt verbleiben. Der Erzdruide kann wählen, ob seine Ausrüstung zu Boden fällt, mit seiner neuen Gestalt verschmilzt oder von der neuen Gestalt getragen wird. Der Erzdruide kehrt zu seiner wahren Gestalt zurück, wenn er stirbt oder bewusstlos wird. Der Erzdruide kann in seinem Zug mit einer Bonusaktion zu seiner wahren Gestalt zurückkehren.\n\nIn seiner neuen Gestalt behält der Erzdruide seine Spielwerte und seine Sprachfähigkeit bei, doch seine RK, Bewegungsarten, Stärke und Geschicklichkeit werden durch die der neuen Gestalt ersetzt, und er erhält alle besonderen Sinne, Fertigkeiten, Eigenschaften, Aktionen und Reaktionen (mit Ausnahme von Klassenmerkmalen, legendären Aktionen und Höhlenaktionen), über die die neue Gestalt verfügt, die ihm jedoch fehlen. Er kann seine Zauber mit verbalen oder somatischen Komponenten in seiner neuen Gestalt wirken.\n\nDie Angriffe der neuen Gestalt gelten als magisch, um Widerstände und Immunitäten gegen nichtmagische Angriffe zu überwinden."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,598 @@
+{
+  "character": {
+    "identity": {
+      "name": "Tybald von Hohenberg",
+      "player_name": "Henry",
+      "class": {
+        "name": "Paladin",
+        "level": 3,
+        "subclass": "Schwur der Hingabe"
+      },
+      "race": "Halbelf",
+      "background": "Adeliger",
+      "alignment": "gesetztreu-neutral",
+      "deity": "Hera",
+      "gender": "männlich",
+      "age": 31,
+      "size": "Mittel",
+      "height": 1.85,
+      "weight": 86,
+      "appearance": {
+        "skin": "hell",
+        "eyes": "dunkelblau",
+        "hair": "blond"
+      },
+      "organizations": [
+        "Das Fürstentum von Hohenberg im Norden des Landes",
+        "Deine Abenteuertruppe"
+      ]
+    },
+    "ability_scores": {
+      "STR": {
+        "score": 15,
+        "mod": 2,
+        "save": 2
+      },
+      "DEX": {
+        "score": 13,
+        "mod": 1,
+        "save": 1
+      },
+      "CON": {
+        "score": 11,
+        "mod": 0,
+        "save": 0
+      },
+      "INT": {
+        "score": 8,
+        "mod": -1,
+        "save": -1
+      },
+      "WIS": {
+        "score": 12,
+        "mod": 1,
+        "save": 3
+      },
+      "CHA": {
+        "score": 17,
+        "mod": 3,
+        "save": 5
+      }
+    },
+    "proficiency_bonus": 2,
+    "inspiration": false,
+    "skills": {
+      "Akrobatik": 1,
+      "Arkane Kunde": -1,
+      "Athletik": 2,
+      "Auftreten": 3,
+      "Einschüchtern": 5,
+      "Fingerfertigkeit": 1,
+      "Geschichte": 1,
+      "Heimlichkeit": 1,
+      "Medizin": 3,
+      "Mit Tieren umgehen": 1,
+      "Motiv erkennen": 3,
+      "Nachforschungen": -1,
+      "Naturkunde": -1,
+      "Religion": 1,
+      "Täuschen": 3,
+      "Überlebenskunst": 1,
+      "Überzeugen": 5,
+      "Wahrnehmung": 1
+    },
+    "passive_scores": {
+      "passive_wahrnehmung": 11,
+      "passiver_einblick": 13,
+      "passive_nachforschungen": 9
+    },
+    "combat": {
+      "armor_class": 16,
+      "initiative": 1,
+      "speeds": {
+        "walk": 9
+      },
+      "hp": {
+        "max": 22,
+        "hit_dice": "3d10"
+      },
+      "defenses": {
+        "condition_immunities": [
+          "magischer Schlaf"
+        ],
+        "advantages": [
+          "Vorteil gegen bezaubert werden"
+        ],
+        "immunities": [],
+        "resistances": []
+      },
+      "senses": {
+        "darkvision": 18,
+        "darkvision_note": "Graustufen"
+      },
+      "attacks_and_cantrips": [
+        {
+          "name": "Langschwert, +1",
+          "attack_bonus": 5,
+          "damage": "1d8+3 Hieb",
+          "properties": [
+            "Kriegswaffe",
+            "Vielseitig",
+            "Schwächen"
+          ],
+          "notes": [
+            "Eingestimmtes magisches Item: +1 auf Angriffs- und Schadenswürfe (bereits verrechnet).",
+            "Waffenmeisterung: Schwächen (siehe Talente)."
+          ]
+        },
+        {
+          "name": "Wurfspeer (6x)",
+          "attack_bonus": 4,
+          "damage": "1d6+2 Stich",
+          "properties": [
+            "Einfache Waffe",
+            "Geworfen",
+            "Reichweite 9 m / 36 m",
+            "Verlangsamen"
+          ],
+          "notes": [
+            "Waffenmeisterung: Verlangsamen (siehe Talente)."
+          ],
+          "item_ref": {
+            "id": "wurfspeer",
+            "name": "Wurfspeer"
+          }
+        },
+        {
+          "name": "Unbewaffneter Schlag",
+          "attack_bonus": 4,
+          "damage": "3 Wucht"
+        }
+      ],
+      "actions": {
+        "standard": [
+          "Angriff",
+          "Ausweichen",
+          "Beeinflussen",
+          "Interagieren",
+          "Flucht",
+          "Helfen",
+          "Magie",
+          "Packen",
+          "Sprint",
+          "Stoßen",
+          "Studieren",
+          "Verstecken",
+          "Verwenden",
+          "Vorbereiten"
+        ],
+        "bonus_actions": [
+          "Göttliche Macht fokussieren: Göttliches Gespür",
+          "Hand auflegen: Heilen",
+          "Hand auflegen: Entgiften"
+        ],
+        "reactions": [
+          "Gelegenheitsangriff"
+        ],
+        "special": [
+          "Göttliche Macht fokussieren: Heilige Waffe (Aktion; siehe Merkmale)"
+        ]
+      }
+    },
+    "proficiencies": {
+      "armor": [
+        "Leichte Rüstung",
+        "Mittlere Rüstung",
+        "Schwere Rüstung",
+        "Schilde"
+      ],
+      "weapons": [
+        "Einfache Waffen",
+        "Kriegswaffen"
+      ],
+      "tools": [
+        "Spielkarten (Romme-Blatt)"
+      ],
+      "languages": [
+        "Gemeinsprache",
+        "Drakonisch",
+        "Elfisch",
+        "Gnomisch"
+      ],
+      "skill_proficiencies_inferred": [
+        "Einschüchtern",
+        "Geschichte",
+        "Medizin",
+        "Motiv erkennen",
+        "Überzeugen"
+      ]
+    },
+    "spellcasting": {
+      "spellcasting_class": "Paladin",
+      "spellcasting_ability": "CHA",
+      "spellcasting_ability_mod": 3,
+      "spell_save_dc": 13,
+      "spell_attack_bonus": 5,
+      "spell_slots": {
+        "level_1": {
+          "max": 3
+        }
+      },
+      "cantrips": [],
+      "level_1_spells_listed": [
+        {
+          "id": "heldenmut",
+          "name": "Heldenmut"
+        },
+        {
+          "id": "goettliche-gunst",
+          "name": "Göttliche Gunst"
+        },
+        {
+          "id": "goettliches-niederstrecken",
+          "name": "Göttliches Niederstrecken"
+        },
+        {
+          "id": "heiligtum",
+          "name": "Heiligtum"
+        },
+        {
+          "id": "schutz-vor-gut-und-boese",
+          "name": "Schutz vor Gut und Böse"
+        },
+        {
+          "id": "schild-des-glaubens",
+          "name": "Schild des Glaubens"
+        },
+        {
+          "id": "segnen",
+          "name": "Segnen"
+        }
+      ],
+      "prepared_spells_marked_on_sheet": [
+        "Göttliches Niederstrecken",
+        "Schild des Glaubens",
+        "Segnen"
+      ],
+      "always_prepared": [
+        {
+          "source": "Schwur der Hingabe: Schwurzauber",
+          "spells": [
+            {
+              "id": "schutz-vor-gut-und-boese",
+              "name": "Schutz vor Gut und Böse"
+            },
+            {
+              "id": "schild-des-glaubens",
+              "name": "Schild des Glaubens"
+            }
+          ]
+        },
+        {
+          "source": "Paladins Niederstrecken",
+          "spells": [
+            {
+              "id": "goettliches-niederstrecken",
+              "name": "Göttliches Niederstrecken"
+            }
+          ],
+          "notes": [
+            "Immer vorbereitet; 1/Lange Rast ohne Zauberplatz wirkbar."
+          ]
+        }
+      ],
+      "special_sources": []
+    },
+    "features": {
+      "racial": [
+        {
+          "name": "Dunkelsicht",
+          "description": "18 m (Graustufen)."
+        },
+        {
+          "name": "Feenblut",
+          "effects": [
+            "Vorteil gegen bezaubert werden.",
+            "Magie kann dich nicht einschläfern (Immun: Magischer Schlaf)."
+          ]
+        }
+      ],
+      "class": [
+        {
+          "name": "Zauberwirken",
+          "description": "Du bekommst alle Zauberplätze nach einer Langen Rast zurück. Nach jeder Langen Rast kannst du deine Zauber austauschen, außer deine immer vorbereiteten Zauber."
+        },
+        {
+          "name": "Waffenmeisterungen",
+          "description": "Siehe Talente."
+        },
+        {
+          "name": "Kampfstil: Großwaffenkampf",
+          "description": "Siehe Talente."
+        },
+        {
+          "name": "Paladins Niederstrecken",
+          "description": "Du hast immer „Göttliches Niederstrecken“ vorbereitet.",
+          "uses": 1,
+          "recovery": {
+            "long_rest": true
+          }
+        },
+        {
+          "name": "Hand auflegen",
+          "resource": {
+            "name": "Heilungspool",
+            "max_hp": 15,
+            "recovery": "Lange Rast"
+          },
+          "options": [
+            {
+              "name": "Heilen",
+              "activation": "Bonusaktion",
+              "effect": "Berühre eine Kreatur (auch dich selbst), um TP in Höhe von maximal deinem vorhandenen Heilungspool zu heilen."
+            },
+            {
+              "name": "Entgiften",
+              "activation": "Bonusaktion",
+              "cost": "5 TP aus Pool",
+              "effect": "Heile eine Kreatur von einer Krankheit oder neutralisiere ein Gift. Dies macht keine TP-Heilung."
+            }
+          ]
+        },
+        {
+          "name": "Göttliche Macht fokussieren",
+          "resource": {
+            "name": "Aufladungen",
+            "max": 2,
+            "recovery": {
+              "long_rest": true,
+              "short_rest": 1
+            }
+          },
+          "options": [
+            {
+              "name": "Göttliches Gespür",
+              "activation": "Bonusaktion",
+              "duration": "10 Minuten oder bis du kampfunfähig wirst",
+              "effect": "Spüre die Position von Himmlischen, Teuflischen und Untoten sowie geweihter/entweihter Orte und Gegenstände in 18 m, sofern sie nicht vollständig in Deckung sind."
+            }
+          ]
+        }
+      ],
+      "subclass": [
+        {
+          "name": "Schwurzauber",
+          "always_prepared_spells": [
+            {
+              "id": "schutz-vor-gut-und-boese",
+              "name": "Schutz vor Gut und Böse"
+            },
+            {
+              "id": "schild-des-glaubens",
+              "name": "Schild des Glaubens"
+            }
+          ]
+        },
+        {
+          "name": "Heilige Waffe",
+          "activation": "Aktion",
+          "cost": "1 Aufladung von „Göttliche Macht fokussieren“",
+          "duration": "10 Minuten oder bis du den Effekt erneut aktivierst / die Waffe fallen lässt",
+          "effects": [
+            "+3 auf alle Angriffswürfe mit der betroffenen Nahkampfwaffe.",
+            "Du kannst den Schadenstyp zu Strahlenschaden ändern.",
+            "Die Waffe strahlt 6 m helles Licht und weitere 6 m gedimmtes Licht ab."
+          ],
+          "end_early": [
+            "Du kannst den Effekt als Teil einer anderen Aktion vorzeitig beenden.",
+            "Der Effekt endet, wenn du die Waffe fallen lässt."
+          ],
+          "always_prepared_spells": []
+        }
+      ],
+      "background": [
+        {
+          "name": "Privilegierte Stellung",
+          "description": "Leute denken durch deine adlige Abstammung nur das Beste über dich. Du bist überall willkommen, das normale Volk unterstützt dich und würde dich auch bei sich aufnehmen, ohne etwas zu verlangen. Andere Adlige sehen dich als Mitglied ihrer Kreise, und du kannst eine Audienz mit lokalen Adligen garantiert bekommen, falls nötig."
+        }
+      ],
+      "talents": [
+        {
+          "name": "Großwaffenkampf",
+          "effect": "Du kannst eine 1 oder 2 bei Schadenswürfen einer 2-Hand Nahkampfwaffe als 3 werten."
+        },
+        {
+          "name": "Waffenmeisterungen",
+          "description": "Du hast 2 Arten von Waffen deiner Wahl gemeistert. Du kannst eine der Meisterungen bei jeder Langen Rast tauschen.",
+          "masteries": [
+            {
+              "name": "Schwächen (Langschwert)",
+              "activation": "1 Aktion",
+              "trigger": "Wenn du eine Kreatur mit deinem Langschwert triffst",
+              "effect": "Das Ziel hat Nachteil auf seinen nächsten Angriffswurf vor dem Start deines nächsten Zuges."
+            },
+            {
+              "name": "Verlangsamen (Wurfspeer)",
+              "activation": "1 Aktion",
+              "trigger": "Wenn du eine Kreatur mit deinem Wurfspeer triffst",
+              "effect": "Bewegungsgeschwindigkeit des Ziels wird um 3 m bis zum Beginn deines nächsten Zuges reduziert. Der Effekt kann nicht gestapelt werden."
+            }
+          ]
+        }
+      ],
+      "attuned_magic_items_text": [
+        {
+          "name": "Langschwert, +1",
+          "type": "Magischer Gegenstand (eingestimmt)",
+          "effects": [
+            "+1 auf alle Angriffs- und Schadenswürfe mit dieser Waffe (bereits verrechnet)."
+          ]
+        }
+      ]
+    },
+    "equipment": {
+      "currency": {
+        "cp": 0,
+        "sp": 0,
+        "gp": 34,
+        "pp": 0
+      },
+      "weights": {
+        "carried": 46.5,
+        "encumbered_at": 102,
+        "push_drag_lift": 204
+      },
+      "items": [
+        {
+          "name": "Langschwert, +1",
+          "quantity": 1,
+          "weight": 1.5
+        },
+        {
+          "name": "Kettenpanzer (Schwer, RK = 16, Heimlichkeit-Nachteil)",
+          "quantity": 1,
+          "weight": 25,
+          "item_ref": {
+            "id": "kettenpanzer",
+            "name": "Kettenpanzer"
+          }
+        },
+        {
+          "name": "Schild mit Adels-Emblem (RK +2, wenn in deiner Hand)",
+          "quantity": 1,
+          "weight": 3
+        },
+        {
+          "name": "Wurfspeer",
+          "quantity": 6,
+          "weight": 6,
+          "item_ref": {
+            "id": "wurfspeer",
+            "name": "Wurfspeer"
+          }
+        },
+        {
+          "name": "Feine Kleidung",
+          "quantity": 1,
+          "weight": 3,
+          "item_ref": {
+            "id": "feine-kleidung",
+            "name": "Feine Kleidung"
+          }
+        },
+        {
+          "name": "Insignien: Ring mit Adels-Emblem",
+          "quantity": 1,
+          "weight": null
+        },
+        {
+          "name": "Halskette mit Pfau-Anhänger (Heiliges Symbol)",
+          "quantity": 1,
+          "weight": null
+        },
+        {
+          "name": "Rucksack",
+          "quantity": 1,
+          "weight": 2.5,
+          "contents_listed": [
+            {
+              "name": "Robe",
+              "quantity": 1,
+              "weight": 2,
+              "item_ref": {
+                "id": "robe",
+                "name": "Robe"
+              }
+            },
+            {
+              "name": "Decke",
+              "quantity": 1,
+              "weight": 1.5,
+              "item_ref": {
+                "id": "decke",
+                "name": "Decke"
+              }
+            },
+            {
+              "name": "Zunderkästchen",
+              "quantity": 1,
+              "weight": 0.5,
+              "item_ref": {
+                "id": "zunderkaestchen",
+                "name": "Zunderkästchen"
+              }
+            },
+            {
+              "name": "Lampe",
+              "quantity": 1,
+              "weight": 0.5,
+              "item_ref": {
+                "id": "lampe",
+                "name": "Lampe"
+              }
+            },
+            {
+              "name": "Heiliges Wasser",
+              "quantity": 2,
+              "weight": 1,
+              "item_ref": {
+                "id": "heiliges_wasser",
+                "name": "Heiliges Wasser"
+              }
+            },
+            {
+              "name": "Gebetsschriftrollen",
+              "quantity": 3,
+              "weight": null
+            },
+            {
+              "name": "Ahnentafel-Schriftrolle",
+              "quantity": 1,
+              "weight": null
+            },
+            {
+              "name": "Romme-Blatt",
+              "quantity": 1,
+              "weight": null
+            }
+          ],
+          "item_ref": {
+            "id": "rucksack",
+            "name": "Rucksack"
+          }
+        }
+      ],
+      "attuned_magic_items_listed": [
+        {
+          "name": "Langschwert, +1",
+          "quantity": 1,
+          "weight": 1.5
+        }
+      ]
+    },
+    "personality": {
+      "traits": [
+        "Du benutzt ab und zu „große“ Worte, ohne genau zu wissen, was sie eigentlich bedeuten."
+      ],
+      "ideals": [
+        "Du willst deinem Namen alle Ehre machen, indem du dem einfachen Volk hilfst."
+      ],
+      "motivation": [
+        "Das gemeine Volk soll dich als gütig und heldenhaft ansehen."
+      ],
+      "flaws": [
+        "Insgeheim bist du der Meinung etwas besser als deine Kameraden zu sein, die du aus misslichen Lagen befreit hast."
+      ]
+    },
+    "backstory": {
+      "summary": "Deine Mutter ist die Fürstin von Hohenberg. Sie wollte immer nur das Beste für dich. Du möchtest sie stolz machen. Sie hat dafür gesorgt, dass du an die Uni gehen konntest. Das lag dir aber nicht. Nachdem du die Uni abgebrochen hast, hast du dich zum Paladin ausbilden lassen. Das kam dir wie ein nobler und ehrwürdiger Beruf vor. Die Religionsstunden fielen dir schwer. Du hattest aber viel Spaß beim Kampf- und Magietraining. Nun reist du mit deiner Abenteuertruppe durch das Land auf der Suche nach einfachen Leuten, die deine Hilfe brauchen.",
+      "allies": [
+        "Abraxas war dein Lieblingsprofessor an der Uni. Du hast ihn Jahre später vor dem Alkoholismus gerettet, indem du ihm einen Job angeboten hast.",
+        "Jade solltest du eigentlich für schweren Raub festnehmen. Du fandest sie aber sympathisch und hast sie stattdessen in deine Truppe aufgenommen.",
+        "Sam hast du auf einer Spendengala kennengelernt; seit du eine großzügige Spende da gelassen hast, seid ihr Freunde und spielt oft Karten.",
+        "Mila hast du auf Pilgerreise kennengelernt."
+      ]
+    }
+  },
+  "id": "tybladvonhohenberg"
+}

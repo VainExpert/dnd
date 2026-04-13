@@ -1,0 +1,47 @@
+{
+  "id": "munition",
+  "type": "item",
+  "name": "Munition",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "ammunition",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
+  "weight": {
+    "value": 1,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 3,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Als Sets von 10 Kugeln kaufbar. Munition für Fernkampfwaffen mit der Munition Eigenschaft. Pro Angriff wird eine verwendet und als Teil des Angriffs aus einem Beutel gezogen (eine freie Hand benötigt für einhändige Waffen). Kugeln werden nach Verwendung zerstört.",
+  "tags": [
+    "abenteuer",
+    "munition",
+    "kampf",
+    "fernkampf",
+    "reichweite",
+    "pistole",
+    "konsumiert"
+  ]
+}

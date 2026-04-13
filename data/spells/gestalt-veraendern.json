@@ -1,0 +1,18 @@
+{
+  "id": "gestalt-veraendern",
+  "name": "Gestalt verändern",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 1 h",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du nimmst eine andere Gestalt an. Einer der folgende Effekte hält für die Wirkungsdauer. Du kannst einen Effekt beenden und mit einem anderen ersetzen.\nAquatische Anpassung: Kiemen und Schwimmhäute wachsen an dir und du kannst unter Wasser atmen und deine Schwimmgeschwindigkeit entspricht deiner Laufgeschwindigkeit.\nAussehen ändern: Größe, Gewicht, Gesichtszüge, Stimmklang, Haarlänge / -farbe oder andere Merkmale bis zur Spezies veränderbar, aber nicht deine Größen-Klasse oder Grundform.\nNatürliche Waffen: Klauen, Fangzähne, Stacheln, Hörner oder andere natürliche Waffen deiner Wahl wachsen dir. Deine waffenlosen Angriffe verursachen 1W6 Schaden, Typ je nach Waffe die du gewählt hast. Du bist geübt in waffenlosen Angriffen und die Waffe ist magisch und hat +1 Bonus auf alle Angriffs- und Schadenswürfe mit ihr."
+}

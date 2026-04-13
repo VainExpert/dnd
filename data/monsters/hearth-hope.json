@@ -1,0 +1,72 @@
+{
+  "name": "Hearth Hope",
+  "size": "Small",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "small",
+      "undead",
+      "cr2",
+      "out-of-the-box-5e"
+    ]
+  },
+  "alignment": "lawful good",
+  "ac": 15,
+  "hp": {
+    "average": 21,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 5,
+    "dex": 15,
+    "con": 10,
+    "int": 10,
+    "wis": 12,
+    "cha": 16
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Halfling"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Ethereal Sight",
+      "text": "The hope can see 60 feet into the\nEthereal Plane when it is on the Material Plane, and\nvice versa."
+    },
+    {
+      "name": "Incorporeal Movement",
+      "text": "The hope can move\nthrough other creatures and objects as if they were\ndifficult terrain. It takes 5 (1d10) force damage if it\nends its turn inside an object."
+    },
+    {
+      "name": "Final Task",
+      "text": "Hope is a creature with one goal. This\ngoal is typically simple — delivery of a message, ensuring\nproper burial, or one last glimpse of a loved\none. Whatever the task, once completed, hope is no\nlonger fettered to the mortal realm and fades away\nto whatever afterlife awaits."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Beatific Visage",
+      "type": "special",
+      "text": "Each non-undead or construct\nwithin 60 feet of the hope that can see it must\nsucceed on a DC 13 Wisdom saving throw or be\nfrightened for 1 minute. While frightened this way\nthe creature is paralyzed. If the save fails by 5 or\nmore, the target is awestruck and suffers the effect\nof a confusion spell for 1 minute, once the frightened\ncondition ends. A target can repeat the saving\nthrow at the end of each of its turns, ending the\nfrightened condition or confusion on itself on a\nsuccess. If the target’s saving throw is successful or\nthe effect ends for it, the target is immune to this\nhope’s Beatific Visage for the next 24 hours."
+    },
+    {
+      "name": "Possession (Recharge 6)",
+      "type": "special",
+      "text": "One humanoid that the\nhope can see within 5 feet of it must succeed on a\nDC 13 Charisma saving throw or be possessed by\nthe hope; the hope then disappears, and the target\nis incapacitated and loses control of its body. The\nhope now controls the body but doesn’t deprive the\ntarget of awareness. The hope can’t be targeted by\nany attack, spell, or other effect, except ones that\nturn undead, and it retains its alignment, Intelligence,\nWisdom, Charisma, and immunity to being\ncharmed and frightened. It otherwise uses the\npossessed target’s statistics, but doesn’t gain access\nto the target’s knowledge, class features, or proficiencies.\nThe possession lasts until the body drops\nto 0 hit points, the hope ends it as a bonus action,\nor the hope is turned or forced out by an effect like\nthe <i>dispel evil and good</i> spell. When the possession\nends, the hope reappears in an unoccupied space\nwithin 5 feet of the body. The target is immune to\nthis hope’s Possession for 24 hours after succeeding\non the saving throw or after the possession ends."
+    },
+    {
+      "name": "Psychic Feedback",
+      "type": "special",
+      "text": "Ranged spell attack: +4 to hit,\nrange 30 feet, one target. Hit: 5 (1d10) psychic damage\nas the target is assaulted with images of their\nown past failures."
+    }
+  ],
+  "source": "creature"
+}

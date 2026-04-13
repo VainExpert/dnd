@@ -1,0 +1,45 @@
+{
+  "id": "federmarke-schwanenboot",
+  "type": "item",
+  "name": "Federmarke Schwanenboot",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 800,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieses Objekt sieht aus wie eine Feder. Du kannst die Feder auf eine Wasserfläche mit mind. 18 m Diameter legen. Die Feder verschwindet und ein 15 m langes und 6 m breites Boot in der Form eines Schwans erscheint. Das Boot bewegt sich von selbst mit bis zu 9 kmh. Mit einer Aktion kannst du das Boot befehligen sich zu bewegen oder sich um bis zu 90° zu drehen. Das Boot besteht für bis zu 24 h oder bis du es mit einer Aktion verschwinden lässt.",
+  "tags": [
+    "magisch",
+    "aktion",
+    "bewegen",
+    "schiff",
+    "beschwören"
+  ]
+}

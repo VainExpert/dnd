@@ -1,0 +1,66 @@
+{
+  "name": "Light Devourer",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr4",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 16,
+  "hp": {
+    "average": 60,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 16,
+    "con": 12,
+    "int": 14,
+    "wis": 10,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "Infernal",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Shrouded in Darkness",
+      "text": "The area in a 30 foot area\naround the devourer is shrouded in magical\ndarkness and cannot be pierced by any light,\nmagical or mundane."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The devourer makes three attacks, one\nwith its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5ft.,\none target. Hit: 7 (1d8 + 3) piercing damage and\nthe target must succeed on a DC 13 Constitution\nsaving throw or be blinded until the end of their\nnext turn."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5ft.,\none target. Hit: 6 (1d6 + 3) slashing damage."
+    },
+    {
+      "name": "Consume Sight (Recharge 5-6)",
+      "type": "special",
+      "text": "The light devourer\ndrains any and all light from within its shroud of\ndarkness. All other creatures in that area must\nsucceed on a DC 13 Constitution saving throw or\nbe blinded. A blinded creature can repeat the saving\nthrow at the end of each of its turns, ending the\nblinded condition on itself on a success."
+    }
+  ],
+  "source": "creature"
+}

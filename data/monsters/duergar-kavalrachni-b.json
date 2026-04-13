@@ -1,0 +1,55 @@
+{
+  "name": "Duergar Kavalrachni (B)",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "mordenkainens-tome-of-foes",
+      "dwarf"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 16,
+  "hp": {
+    "average": 26,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 11,
+    "con": 14,
+    "int": 11,
+    "wis": 10,
+    "cha": 9
+  },
+  "skills": {},
+  "languages": [
+    "Dwarvish",
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Cavalry Training",
+      "text": "When the duergar hits a target with a melee attack while mounted on a female steeder, the steeder can make one melee attack against the same target as a reaction."
+    },
+    {
+      "name": "Duergar Resilience",
+      "text": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

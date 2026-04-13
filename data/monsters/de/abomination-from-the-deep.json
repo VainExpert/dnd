@@ -1,0 +1,76 @@
+{
+  "name": "Das Ungeheuer aus der Tiefe",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr6",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 15,
+  "hp": {
+    "average": 120,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 60
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 15,
+    "int": 13,
+    "wis": 12,
+    "cha": 7
+  },
+  "skills": {
+    "Athletics": 7,
+    "Perception": 4,
+    "Stealth": 5,
+    "Survival": 4
+  },
+  "languages": [
+    "Abyssal"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Amphibisch",
+      "text": "Das Ungeheuer kann sowohl an Land als auch im Wasser atmen."
+    },
+    {
+      "name": "Natürliche Tarnung",
+      "text": "Das Ungeheuer hat einen Vorteil\nbei Versteck-Proben in aquatischen Umgebungen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Das Ungeheuer führt drei Angriffe aus:\nzwei mit seinen Klauen und einen mit seinem Biss."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite:1,5 m .,\nein Ziel. Treffer: 8 (1d8 + 4) Schnittschaden."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite 1,5 m.,\nein Ziel. Treffer: 13 (2d8 + 4) Durchdringungsschaden, und\ndas Ziel muss einenDC 14  Konstitutions-\nRettungswurf bestehen, um nicht gelähmt zu werden. Bei einem misslungenen\nRettungswurf beginnt der Körper der Kreatur zu tauben und sie ist\ngefesselt. Sie muss den Rettungswurf am\nEnde ihres nächsten Zuges wiederholen. Bei Erfolg endet der Effekt.\nBei einem Fehlschlag ist die Kreatur für 1 Stunde gelähmt."
+    },
+    {
+      "name": "Verfaulter Wasserstrahl (Aufladen 5-6)",
+      "type": "special",
+      "text": "Das Monstrum\nspritzt in einem 9 Meter langen Bogen fauliges Wasser.\nJede Kreatur in diesem Bereich muss einenDC 14\nGeschicklichkeits-Rettungswurf durchführen und erleidet bei einem misslungenen\nRettungswurf 16 (3d10\n) nekrotischen\nSchaden und 16 (3d10\n) Giftschaden oder bei einem erfolgreichen\nRettungswurf die Hälfte dieses Schadens.\nDas Monstrum kann jede von\ndieser Fähigkeit betroffene Kreatur in5 miles\neinem Umkreis von  Meter für die nächsten 24\nStunden aufspüren."
+    }
+  ],
+  "source": "creature"
+}

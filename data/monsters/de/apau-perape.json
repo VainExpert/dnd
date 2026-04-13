@@ -1,0 +1,82 @@
+{
+  "name": "Der Weg des Ohrs",
+  "size": "Groß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr6",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 16,
+  "hp": {
+    "average": 95,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 18,
+    "con": 19,
+    "int": 10,
+    "wis": 12,
+    "cha": 15
+  },
+  "skills": {
+    "Intimidation": 5,
+    "Perception": 4,
+    "Stealth": 7
+  },
+  "languages": [
+    "Ape",
+    "Infernal",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "6",
+    "xp": 2300,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Krankheitserregender Ichor",
+      "text": "Jedes Mal, wenn der Apau Perape Stich- oder Hiebschaden erleidet, spritzt ätzendes Blut aus der Wunde in Richtung des Angreifers. Dieser Spritzer bildet eine Linie10 feetvon  Länge und5 feet  Breite. Die erste Kreatur in dieser Linie muss einen erfolgreichenDC 15  Konstitutions-Rettungswurf gegen Krankheit bestehen oder wird mit Mechuitis Ichor-Krankheit infiziert. Die Kreatur ist vergiftet, bis die Krankheit geheilt ist. Alle 24 Stunden muss das Ziel den Konstitutions-Rettungswurf wiederholen oder seine maximalen Trefferpunkte um 5 verringern (2d4). Bei einem Erfolg ist die Krankheit geheilt. Das Ziel stirbt, wenn die Krankheit seine maximalen Trefferpunkte auf 0 reduziert. Diese Verringerung der maximalen Trefferpunkte des Ziels hält an, bis die Krankheit geheilt ist."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Der Apau Perape ist ein geborener Zauberwirker. Seine Zauberwirksamkeit basiert auf Charisma (ZauberrettungswurfDC 13). Der Apau Perape kann von Natur aus die folgenden Zauber wirken, ohne dass dafür materielle Komponenten erforderlich sind:\n\n* Je 1/Tag: Angst, Feuerwand"
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Apau Perape hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Apau Perape führt einen Bissangriff und zwei Klauenangriffe aus."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf Treffer, Reichweite5 ft: ., eine Kreatur. Treffer: 12 (2d6 + 5) Durchdringungsschaden."
+    },
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 14 (2d8 + 5) Schnittschaden."
+    },
+    {
+      "name": "Variante: Dämonenbeschwörung",
+      "type": "special",
+      "text": "Einige Apau Perapes verfügen über eine Aktionsoption, mit der sie andere Dämonen beschwören können.\n\nDämon beschwören (1/Tag): Der Apau Perape wählt aus, was er beschwören möchte, und unternimmt einen magischen Beschwörungsversuch.\n\nDer Apau Perape hat eine Chance von 50 Prozent, einen Apau Perape oder einen Riesenaffen zu beschwören."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,60 @@
+{
+  "name": "Demonblood Orc Bloodcaster",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr4",
+      "nerzugals-extended-bestiary",
+      "orc"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 11,
+  "hp": {
+    "average": 67,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 12,
+    "con": 14,
+    "int": 10,
+    "wis": 9,
+    "cha": 18
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Orc"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Blood Magic",
+      "text": "Whenever the orc deals damage to an\nenemy with a spell, it gains 5 temporary hit points.\nAdditionally, the orc can use its bonus action to pay\n1d10 hit points to make the next spell it casts act\nas if it were cast at one spellslot higher."
+    },
+    {
+      "name": "Uncontainable Power",
+      "text": "When the orc dies, it\nexplodes violently. Each creature within 5 feet of it\nmust make a DC 13 Dexterity saving throw, taking\n18 (4d8) necrotic damage on a failed save, or half\nas much damage on a successful one."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The orc is an 7th-level spellcaster. Its\nspellcasting ability is Charisma (spell save DC 14,\n+6 to hit with spell attacks). The orc has the\nfollowing Sorcerer spells prepared:\n\n* Cantrips (at will): <i>acid splash, blade ward, ray of frost, prestidigitation</i>\n\n* 1st level (4 slots): <i>burning hands, mage armor, shield</i>\n\n* 2nd level (3 slots): <i>hold person, spider climb</i>\n\n* 3rd level (3 slots): <i>counterspell, fireball</i>\n\n* 4th level (2 slots): <i>wall of fire</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Quarterstaff",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach\n5ft., one target. Hit: 4 (1d6 + 1) bludgeoning\ndamage."
+    }
+  ],
+  "source": "creature"
+}

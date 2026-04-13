@@ -1,0 +1,58 @@
+{
+  "name": "Owl",
+  "size": "Tiny",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "tiny",
+      "beast",
+      "cr0",
+      "monster-manual"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 11,
+  "hp": {
+    "average": 1,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 3,
+    "dex": 13,
+    "con": 8,
+    "int": 2,
+    "wis": 12,
+    "cha": 7
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 3
+  },
+  "languages": [],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Flyby",
+      "text": "The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+    },
+    {
+      "name": "Keen Hearing and Sight",
+      "text": "The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Talons",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 slashing damage."
+    }
+  ],
+  "source": "creature"
+}

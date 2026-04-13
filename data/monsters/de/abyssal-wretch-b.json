@@ -1,0 +1,41 @@
+{
+  "name": "Abgrundgestalt (B)",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr1/4",
+      "mordenkainens-tome-of-foes",
+      "demon"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 11,
+  "hp": {
+    "average": 18,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 9,
+    "dex": 12,
+    "con": 11,
+    "int": 5,
+    "wis": 8,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "understands Abyssal but can't speak"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [],
+  "source": "creature"
+}

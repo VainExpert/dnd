@@ -1,0 +1,62 @@
+{
+  "name": "Young Hellhound",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr1",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 13,
+  "hp": {
+    "average": 26,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 12,
+    "con": 14,
+    "int": 6,
+    "wis": 12,
+    "cha": 5
+  },
+  "skills": {
+    "Perception": 3
+  },
+  "languages": [
+    "Understands Infernal and Ignan",
+    "but cannot speak"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Keen Hearing and Smell",
+      "text": "The hound has advantage\non Wisdom (Perception) checks that rely on\nhearing or smell."
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The hound has advantage on an attack\nroll against a creature if at least one of the hound’s\nallies is within 5 feet of the creature and the ally\nisn’t incapacitated."
+    },
+    {
+      "name": "Pounce",
+      "text": "If the hound moves at least 10 feet straight\ntoward a target and then hits it with a bite attack on\nthe same turn, the target takes an extra 2 (1d4)\npiercing damage and must succeed on a DC 11\nStrength saving throw or be knocked prone."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5ft.,\none target. Hit: 5 (1d6 + 2) piercing damage plus 3\n(1d6) fire damage."
+    }
+  ],
+  "source": "creature"
+}

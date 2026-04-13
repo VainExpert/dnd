@@ -1,0 +1,63 @@
+{
+  "name": "Herbst-Eladrin",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr10",
+      "mordenkainens-tome-of-foes",
+      "elf"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 19,
+  "hp": {
+    "average": 127,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 16,
+    "int": 14,
+    "wis": 17,
+    "cha": 18
+  },
+  "skills": {
+    "Insight": 7,
+    "Medicine": 7
+  },
+  "languages": [
+    "Common",
+    "Elvish",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "10",
+    "xp": 5900,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Bezaubernde Ausstrahlung",
+      "text": "Jedes Wesen, das kein Eladrin ist und seinen Zug in60 feetder Nähe des Eladrins beginnt, muss einenDC 16Weisheits-Rettungswurf durchführen. Bei einem misslungenen Rettungswurf wird das Wesen für 1 Minute vom Eladrin verzaubert. Bei einem erfolgreichen Rettungswurf ist das Wesen für 24 Stunden immun gegen die „Verzaubernde Präsenz“ jedes Eladrins.\nWann immer der Eladrin der verzauberten Kreatur Schaden zufügt, kann diese den Rettungswurf wiederholen und den Effekt bei Erfolg auf sich selbst beenden."
+    },
+    {
+      "name": "Feen-Schritt (Aufladen 4-6)",
+      "text": "Als Bonusaktion kann sich der Eladrin bis zu30 feet  zu einem freien Feld teleportieren, das er sehen kann."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit der Eladrin ist Charisma (ZauberwirksamkeitDC 16). Sie können die folgenden Zauber von Natur aus wirken, ohne dass materielle Komponenten erforderlich sind:\n\n* Beliebig oft: E Emotionen beruhigen, SchlafE \n\n* Je 3/Tag: E Wunden heilenE  (als Zauber der Stufe 5)E , Geringe WiederherstellungE \n\n* Je 1/Tag: große Wiederherstellung, heilen, Tote erwecken"
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Eladrin hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

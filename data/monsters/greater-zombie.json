@@ -1,0 +1,67 @@
+{
+  "name": "Greater Zombie",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr5",
+      "tales-from-the-yawning-portal"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 15,
+  "hp": {
+    "average": 97,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 17,
+    "int": 4,
+    "wis": 6,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages it knew in life but can't speak"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "text": "tales from the yawning portal,  page 237"
+    },
+    {
+      "name": "Undead Nature",
+      "text": "A zombie doesn't require air, food, drink, or sleep."
+    },
+    {
+      "name": "Turn Resistance",
+      "text": "The zombie has advantage on saving throws against any effect that turns undead."
+    },
+    {
+      "name": "Undead Fortitude",
+      "text": "If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The zombie makes two melee attacks."
+    },
+    {
+      "name": "Empowered Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage and 7 (2d6) necrotic damage."
+    }
+  ],
+  "source": "creature"
+}

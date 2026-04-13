@@ -1,0 +1,65 @@
+{
+  "name": "Schwarzer Wächter-Drake",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "medium",
+      "dragon",
+      "cr2",
+      "volos-guide"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 14,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 30
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 16,
+    "int": 4,
+    "wis": 10,
+    "cha": 7
+  },
+  "skills": {
+    "Perception": 2
+  },
+  "languages": [
+    "understands Draconic but can't speak it"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibisch",
+      "text": "Der Wachdrachen kann sowohl an Land als auch unter Wasser atmen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Erpel greift zweimal an, einmal mit seinem Schnabel und einmal mit seinem Schwanz."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 7 (1d8+3) Durchdringungsschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 6 (1d6+3) Bludgeoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

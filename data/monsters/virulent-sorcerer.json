@@ -1,0 +1,68 @@
+{
+  "name": "Virulent Sorcerer",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 15,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 12,
+    "wis": 12,
+    "cha": 16
+  },
+  "skills": {
+    "Arcana": 4,
+    "Deception": 6,
+    "Sleight of Hand": 5
+  },
+  "languages": [
+    "Any two languages"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Draconic Resilience",
+      "text": "The sorcerer's hit points are\nincreased by 1 per level and its AC is 13 + Dexterity\nmodifier."
+    },
+    {
+      "name": "Poison Affinity",
+      "text": "The sorcerer has green dragon\nancestry. When the sorcerer casts a spell that deals\npoison damage, it deals 3 additional damage. In\naddition, the sorcerer can spend one sorcery point\nto gain resistance to poison for 1 hour."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The sorcerer is a 6th-level spellcaster.\nIts spellcasting ability is Charisma (spell save DC\n14, +6 to hit with spell attacks). The sorcerer has\nthe following sorcerer spells prepared:\n\n* Cantrips (at will): <i>acid splash, dancing lights, poison spray</i>\n\n* 1st level (4 slots): <i>false life, ray of sickness</i>\n\n* 2nd level (3 slots): <i>crown of madness, mirror image, spider climb</i>\n\n* 3rd level (3 slots): <i>fly, slow, stinking cloud</i>"
+    },
+    {
+      "name": "Sorcery Points",
+      "text": "The sorcerer has 6 sorcery points. It\ncan spend 1 or more sorcery points as a bonus\naction to gain one of the following benefits:\n* Distant Spell. When the sorcerer casts a spell that\nhas a range of 5 feet or greater, it can spend 1\nsorcery point to double the range of the spell.\nWhen the sorcerer casts a spell that has a range\nof touch, you can spend 1 sorcery point to make\nthe range of the spell 30 feet.\n* Extended Spell. When the sorcerer casts a spell\nthat has a duration of 1 minute or longer, it can\nspend 1 sorcery point to double its duration, to a\nmaximum of 24 hours."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +5 to hit,\nreach 5 ft. or range 20/60 ft., one target. Hit: 4\n(1d4 + 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

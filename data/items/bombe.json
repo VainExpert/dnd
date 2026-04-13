@@ -1,0 +1,44 @@
+{
+  "id": "bombe",
+  "type": "item",
+  "name": "Bombe",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 150,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Als Aktion kann ein Charakter die Bombe anzünden und bis zu 18 m werfen. Jede Kreatur in 1,5 m von dem Punkt muss einen DEX-Rettungswurf (SG 12) machen oder nimmt 3W6 Feuerschaden.",
+  "tags": [
+    "abenteuer",
+    "sprengstoff",
+    "kampf",
+    "schaden"
+  ]
+}

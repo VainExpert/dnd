@@ -1,0 +1,80 @@
+{
+  "name": "Algorithmus",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr10",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "gesetztreu-neutral",
+  "ac": 18,
+  "hp": {
+    "average": 136,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 14,
+    "con": 19,
+    "int": 13,
+    "wis": 16,
+    "cha": 18
+  },
+  "skills": {
+    "Athletics": 9,
+    "Insight": 7,
+    "Investigation": 5,
+    "Perception": 7
+  },
+  "languages": [
+    "Common",
+    "Celestial",
+    "Draconic",
+    "Infernal"
+  ],
+  "challenge": {
+    "cr": "10",
+    "xp": 5900,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Unveränderliche Form",
+      "text": "Der Algorithmus ist immun gegen alle Zauber und Effekte, die seine Form verändern würden."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Algorithmus ist Charisma (ZauberrettungswurfDC 16). Er kann die folgenden Zauber von Natur aus wirken, ohne dass materielle Komponenten erforderlich sind:\n\n* Beliebig oft: Hilfe, Verschleierung, Magie erkennen, Dimensionstür\n\n* Je 5/Tag: Magie bannen\n\n* 1/Tag: Kommunikation (5 Fragen), Kraftwand"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Algorithmus führt zwei „Logic Razor“-Angriffe durch."
+    },
+    {
+      "name": "Logik-Rasierer",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 31 (4d12 + 5) Kraftschaden."
+    },
+    {
+      "name": "Kegel der Negation (Aufladezeit 5-6)",
+      "type": "special",
+      "text": "Ein Algorithmus kann einen Kegel aus Nullenergie projizieren. Ziele innerhalb des30 footKegels erleiden 42 (12d6) Kraftschaden und unterliegen dem Effekt eines Zauberbann-Zaubers. Ein erfolgreicherDC 16Geschicklichkeits-Rettungswurf halbiert den Schaden und hebt den Zauberbann-Effekt für dieses Ziel auf."
+    },
+    {
+      "name": "Realitätsbombe (5/Tag)",
+      "type": "special",
+      "text": "Der Algorithmus kann eine winzige Runen der Ordnung heraufbeschwören und sie als Waffe werfen. Jedes Wesen im30 feetUmkreis von  des Feldes, auf dem die Realitätsbombe landet, erleidet 21 (6d6) Kraftschaden und ist bis zum Beginn des nächsten Zuges des Algorithmus betäubt. Ein Ziel, das einen erfolgreichenDC 16  Geschicklichkeits-Rettungswurf besteht, erleidet nur den halben Schaden und wird nicht betäubt."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "homunculus-diener",
+  "name": "Homunculus Diener",
+  "level": 2,
+  "school": "Beschwörung",
+  "casting_time": "1 h",
+  "range": "3 m",
+  "components": "V, G, M (Edelstein im Wert von mind. 100 GM)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": true,
+  "classes": [
+    "Artificer"
+  ],
+  "text": "Du beschwörst einen besonderen Homunculus in eine freie Fläche in Reichweite. Er nutzt den Statblock „Homunculus Servant“ und ersetzt einen Homunculus, den du bereits durch diesen Zauber hast. Du bestimmst sein Aussehen.\nIm Kampf ist er dein Verbündeter, teilt deine Initiative und handelt direkt nach dir. Er gehorcht deinen Befehlen (keine Aktion nötig). Ohne Befehle weicht er aus und bewegt sich, um Gefahr zu vermeiden.\n\nAuf höheren Level gewirkt: Verwende das Level im Statblock."
+}

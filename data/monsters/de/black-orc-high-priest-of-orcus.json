@@ -1,0 +1,85 @@
+{
+  "name": "Hohepriester der Orkus der Schwarzen Orks",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr9",
+      "tome-of-horrors",
+      "orc"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 16,
+  "hp": {
+    "average": 127,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 18,
+    "int": 12,
+    "wis": 20,
+    "cha": 14
+  },
+  "skills": {
+    "Arcana": 5,
+    "Deception": 6,
+    "Insight": 9,
+    "Intimidation": 6,
+    "Perception": 9
+  },
+  "languages": [
+    "Abyssal",
+    "Common",
+    "Orc"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Segen der Tiefen",
+      "text": "Der Priester von Orcus erhält 10 temporäre Trefferpunkte,\nwenn er eine feindliche Kreatur, die kein Untoter ist, auf 0 Trefferpunkte reduziert."
+    },
+    {
+      "name": "Der Segen des Orcus",
+      "text": "Schwarze Orks haben einen Vorteil bei Rettungswürfen gegen\ndie Zauber und Wirkungen von Untoten."
+    },
+    {
+      "name": "Todesblick",
+      "text": "Der Hohepriester von Orcus verfügt über „Wahrsicht“ bis zu einer Reichweite von 36 m."
+    },
+    {
+      "name": "Zaubersprechen",
+      "text": "Der Hohepriester von Orcus ist ein Zauberwirker der Stufe 10. Seine\nZauberfertigkeit ist Weisheit (ZauberrettungswurfDC 17, +9 auf Treffer bei Zauberangriffen\n). Er hat die folgenden Klerikerzauber vorbereitet:\n\n* Cantrips (beliebig oft): E Kühle Berührung, Führung, Heilung, WiderstandE \n\n* 1. Stufe (4 Plätze): Verfluchung, Wunden heilen, Scheins Leben, Wunden zufügen\n\n* 2. Stufe (3 Plätze): Hilfe, Blindheit/Taubheit, Person fesseln, Schweigen\n\n* 3. Stufe (3 Plätze): Tote beleben, Fluch auferlegen, Magie bannen, Geistwächter\n\n* 4. Stufe (3 Plätze): Verbannung, Todesabwehr, Wächter des Glaubens\n\n* 5. Stufe (2 Plätze): Böses und Gutes bannen, Insektenplage"
+    },
+    {
+      "name": "Unheilvoller Schlag",
+      "text": "Einmal pro Runde des Hohepriesters, wenn er eine\nKreatur mit einem Nahkampfangriff trifft, kann der Hohepriester bewirken, dass der Angriff\ndem Ziel zusätzlich 18 (4d8) nekrotischen Schaden zufügt."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Hohepriester führt zwei Nahkampfangriffe aus."
+    },
+    {
+      "name": "Frau",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite:1,5 m ., ein Ziel. Treffer: 12\n(2d8 + 3) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Orcus' Liebkosung (Aufladezeit 5–6)",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 auf\nTreffer, Reichweite 1,5 m., ein Ziel. Treffer: 12 (2d8 + 3) nekrotischer Schaden, und die\nStärke des Ziels wird um 1d4. verringert. Das Ziel stirbt, wenn dadurch\nseine Stärke auf 0 sinkt. Andernfalls hält die Verringerung so lange an, bis das Ziel eine\nkurze oder lange Rast beendet hat.\n\nWenn ein nicht-böser Humanoid durch diesen Angriff stirbt, erhebt sich innerhalb von\n24 Stunden ein Schatten aus der Leiche unter der Kontrolle des Priesters, es sei denn, der Humanoid wird\nwiederbelebt oder sein Körper wird zerstört. Der Priester kann nicht mehr als\ndrei Schatten gleichzeitig unter seiner Kontrolle haben."
+    }
+  ],
+  "source": "creature"
+}

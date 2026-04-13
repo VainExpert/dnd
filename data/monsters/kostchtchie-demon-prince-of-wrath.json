@@ -1,0 +1,94 @@
+{
+  "name": "Kostchtchie, Demon Prince of Wrath",
+  "size": "Large",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr22",
+      "tome-of-horrors",
+      "demon lord"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 19,
+  "hp": {
+    "average": 312,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 26,
+    "dex": 18,
+    "con": 25,
+    "int": 17,
+    "wis": 16,
+    "cha": 20
+  },
+  "skills": {
+    "Acrobatics": 11,
+    "Athletics": 15,
+    "Nature": 10,
+    "Perception": 10,
+    "Survival": 10
+  },
+  "languages": [
+    "Abyssal",
+    "Celestial",
+    "Common",
+    "Draconic",
+    "Giant",
+    "Ignan",
+    "Infernal",
+    "Terran; telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "22",
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Special Equipment",
+      "text": "Kostchtchie carries Gorynya, a powerful magic warhammer."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "Kostchtchie’s innate spellcasting ability is\nCharisma (spell save DC 20, +12 to hit with spell attacks). It can cast the\nfollowing spells, requiring no material components.\n\n* At will: <i>command, darkness, detect magic, ice storm, sleet storm</i>\n\n* 3/day each: <i>cone of cold, disintegrate, fire shield </i>(cold damage only)<i>, wall of ice</i>\n\n* 1/day: <i>control weather</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "text": "If Kostchtchie fails a saving throw, it\ncan choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "Kostchtchie has advantage on saving throws against\nspells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "Kostchtchie’s weapon attacks are magical."
+    },
+    {
+      "name": "Unholy Aura",
+      "text": "An unholy aura surrounds Kostchtchie out to a radius of\n40 feet. A creature who enters or begins their turn in the area must make\na DC 20 Wisdom saving throw. On a failed saving throw, the target is\nfrightened for 1 minute. While frightened, it is paralyzed. A frightened\ntarget can repeat the saving throw at the end of each of its turns, ending\nthe effect on a success."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Kostchtchie makes two attacks with Gorynya."
+    },
+    {
+      "name": "Gorynya",
+      "type": "special",
+      "text": "Melee Weapon Attack: +18 to hit, reach 15 ft., one target. Hit: 29 (4d8 + 11) bludgeoning damage, or 33 (4d10 + 11) bludgeoning damage if used with two hands, plus 22 (4d10) force damage. If the target is a creature, it must make a DC 23 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Summon (1/day)",
+      "type": "special",
+      "text": "Kostchtchie summons 1d12 dretches, 1d6 glabrezus,\n1d6 hezrous, 1 marilith, or 1 balor. The summoned demon appears in an\nunoccupied space within 60 feet of Kostchtchie, but can’t summon other\ndemons. It remains for 1 minute, until it or Kostchtchie is slain, or until\nKostchtchie takes an action to dismiss it."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,73 @@
+{
+  "name": "Hobgoblin Marshal",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "out-of-the-box-5e",
+      "goblinoid"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 17,
+  "hp": {
+    "average": 39,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 14,
+    "con": 14,
+    "int": 12,
+    "wis": 10,
+    "cha": 13
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Goblin"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Martial Advantage",
+      "text": "Once per turn, the hobgoblin\ncan deal an extra 10 (3d6) damage to a creature it hits\nwith a weapon attack if that creature is within 5 feet\nof an ally of the hobgoblin that isn’t incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The hobgoblin makes two melee\nweapon attacks."
+    },
+    {
+      "name": "Spear",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +4 to hit,\nreach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 +2) piercing damage\nis used with two hands to make a melee attack."
+    },
+    {
+      "name": "Fiery Longbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +4 to hit,\nrange 50/600 ft., one target. Hit: 6 (1d8 + 2) piercing\ndamage and 2 (1d4) fire damage. If the target is a creature\nor a flammable object, it ignites and takes 2 (1d4)\nfire damage at the start of each of its turns. A creature\ncan end this damage by using its action to make a DC\n10 Dexterity check to extinguish the flames."
+    },
+    {
+      "name": "Alchemist’s Fire",
+      "type": "special",
+      "text": "Improvised Weapon Attack: +2\nto hit, range 20 ft., one target. Hit: 2 (1d4) fire\ndamage. The target takes 2 (1d4) fire damage at the\nstart of each of its turns. A creature can end this\ndamage by using its action to make a DC 10 Dexterity\ncheck to extinguish the flames."
+    },
+    {
+      "name": "Leadership (Recharges after a Short or Long Rest)",
+      "type": "special",
+      "text": "For 1 minute, the hobgoblin can utter a special\ncommand or warning whenever a nonhostile\ncreature that it can see within 30 feet of it makes an\nattack roll or a saving throw. The creature can add\na d4 to its roll provided it can hear and understand\nthe hobgoblin. A creature can benefit from only\none Leadership die at a time. This effect ends if the\nhobgoblin is incapacitated."
+    }
+  ],
+  "source": "creature"
+}

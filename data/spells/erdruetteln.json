@@ -1,0 +1,19 @@
+{
+  "id": "erdruetteln",
+  "name": "Erdrütteln",
+  "level": 1,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (3 m Kreis)",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Druide",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du verursachst ein Beben im Boden in einem 3 m Radius um dich herum.\nJede Kreatur, außer dir, in dem Bereich muss einen DEX-Rettungswurf machen.\nBei Fehlschlag: 1W6 Wuchtschaden und sie wird auf den Boden geworfen.\nEin Boden aus loser Erde oder Stein wird zu schwierigen Terrain, bis er durch eine Aktion geräumt wird.\n\nAuf höheren Level gewirkt: pro Level 1W6 mehr Wuchtschaden"
+}

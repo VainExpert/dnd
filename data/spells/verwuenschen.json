@@ -1,0 +1,16 @@
+{
+  "id": "verwuenschen",
+  "name": "Verwünschen",
+  "level": 1,
+  "school": "Verzauberung",
+  "casting_time": "1 Bonus Aktion",
+  "range": "27 m",
+  "components": "V, G, M (versteinertes Molchaugen)",
+  "duration": "Konzentration, bis zu 1 h",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Hexenmeister"
+  ],
+  "text": "Du belegst eine Kreatur in Reichweite, die du sehen kannst, mit einem Fluch.\nBis der Zauber endet, fügst du dem Ziel bei jedem Treffer mit einem Angriffswurf zusätzlich 1W6 nekrotischen Schaden zu.\nWähle beim Wirken ein Attribut: Das Ziel hat Nachteil auf Würfe für dieses Attribut.\nSinkt das Ziel auf 0 TP, kannst du den Fluch später als Bonusaktion auf ein neues Ziel in Reichweite übertragen.\n\nAuf höheren Level gewirkt: Level 2: Konzentration bis zu 4 h; Level 3–4: bis zu 8 h; Lvel 5+: bis zu 24 h."
+}

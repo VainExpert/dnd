@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-stiefel-der-geschwindigkeit",
+  "type": "item",
+  "name": "Stiefel der Geschwindigkeit",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "erfordert Einstimmung",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "feet",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diese Stiefel trägst, kannst du deren Absätze als Bonusaktion zusammenschlagen. Wenn du das tust, verdoppeln die Stiefel deine Schrittbewegungsrate, und jede Kreatur, die einen Gelegenheitsangriff gegen dich ausführt, ist beim Angriffswurf im Nachteil. Wenn du deine Fersen wieder zusammenschlägst, beendest du den Effekt. Wenn die Eigenschaft der Stiefel für insgesamt zehn Minuten verwendet wurde, steht dir die Magie erst nach einer langen Rast wieder zur Verfügung.",
+  "tags": []
+}

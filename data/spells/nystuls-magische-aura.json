@@ -1,0 +1,16 @@
+{
+  "id": "nystuls-magische-aura",
+  "name": "Nystuls magische Aura",
+  "level": 2,
+  "school": "Illusionsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G, M (kleines Seidentuch)",
+  "duration": "24 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Magier"
+  ],
+  "text": "Du berührst eine willige Kreatur oder einen nicht getragenen / gehaltenen Gegenstand und legst eine Illusion darauf (für die Wirkungsdauer).\nMaske (Kreatur): Du wählst einen Kreaturentyp; Zauber und magische Effekte behandeln das Ziel, als wäre es von diesem Typ.\nFalsche Aura (Gegenstand): Du veränderst, wie das Ziel für magische Aura-Detektion wirkt (z.B. „Magie entdecken“): nichtmagisch erscheint magisch, magisch erscheint nichtmagisch oder die Aura wirkt wie eine von dir gewählte Schule.\nWirkst du den Zauber 30 Tage in Folge auf dasselbe Ziel, hält die Illusion an, bis sie gebannt wird."
+}

@@ -1,0 +1,86 @@
+{
+  "name": "Erwachsener Schwarzer Drache",
+  "size": "Riesig",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "huge",
+      "dragon",
+      "cr14",
+      "monster-manual"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 19,
+  "hp": {
+    "average": 195,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80,
+    "swim": 40
+  },
+  "abilities": {
+    "str": 23,
+    "dex": 14,
+    "con": 21,
+    "int": 14,
+    "wis": 13,
+    "cha": 17
+  },
+  "skills": {
+    "Perception": 11,
+    "Stealth": 7
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "14",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Amphibisch",
+      "text": "Der Drache kann Luft und Wasser ausatmen."
+    },
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache einen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache kann seine „Furchteinflößende Präsenz“ einsetzen. Anschließend führt er drei Angriffe aus: einen mit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 17 (2d10 + 6) Durchdringungsschaden plus 4 (1d8) Säureschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 13 (2d6 + 6) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 auf Treffer, Reichweite15 ft: , ein Ziel. Treffer: 15 (2d8 + 6) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Furchterregende Präsenz",
+      "type": "special",
+      "text": "Jede Kreatur, die sich120 feetin der Nähe des Drachen befindet und ihn wahrnimmt, muss einenDC 16Weisheits-Rettungswurf bestehen oder wird für 1 Minute in Angst versetzt. Eine Kreatur kann den Rettungswurf am Ende jedes ihrer Züge wiederholen und den Effekt auf sich selbst bei Erfolg beenden. Wenn der Rettungswurf einer Kreatur erfolgreich ist oder der Effekt für sie endet, ist die Kreatur für die nächsten 24 Stunden immun gegen die „Furchterregende Präsenz“ des Drachen."
+    },
+    {
+      "name": "Säureatem (Aufladen 5-6)",
+      "type": "special",
+      "text": "Der Drache speit Säure in einem 18 Meter breiten Strahl5 feet aus. Jedes Wesen in diesem Strahl muss einenDC 18Geschicklichkeits-Rettungswurf durchführen und erleidet bei einem misslungenen Rettungswurf 54 (12d8) Säureschaden oder bei einem erfolgreichen Rettungswurf die Hälfte dieses Schadens."
+    }
+  ],
+  "source": "creature"
+}

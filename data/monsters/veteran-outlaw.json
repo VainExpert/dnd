@@ -1,0 +1,74 @@
+{
+  "name": "Veteran Outlaw",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "any non-lawful alignment",
+  "ac": 15,
+  "hp": {
+    "average": 78,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 16,
+    "con": 14,
+    "int": 10,
+    "wis": 14,
+    "cha": 13
+  },
+  "skills": {
+    "Deception": 5,
+    "Insight": 6,
+    "Sleight of Hand": 7
+  },
+  "languages": [
+    "Any one language (usually Common)"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Experienced Insight",
+      "text": "The outlaw has advantage on\ninitiative rolls."
+    },
+    {
+      "name": "Throwing Specialty",
+      "text": "A thrown weapon deals one\nextra die of its damage when the outlaw hits with it\n(included in the attack)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The outlaw makes two melee attacks or\nthree ranged attacks with its daggers. No more than\none of these attacks can be a poisoned dagger."
+    },
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach\n5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +5 to hit,\nreach 5 ft. or range 20/60 ft., one target. Hit: 5\n(1d4 + 3) piercing damage or 8 (2d4 + 3) piercing\ndamage if thrown."
+    },
+    {
+      "name": "Poisoned Dagger (3/Day)",
+      "type": "special",
+      "text": "Melee or Ranged Weapon\nAttack: +5 to hit, reach 5 ft. or range 20/60 ft., one\ntarget. Hit: 5 (1d4 + 3) piercing damage or 8 (2d4 + 3) piercing damage if thrown, and the target must\nsucceed on a DC 13 Constitution saving throw or\ntake 7 (2d6) poison damage"
+    }
+  ],
+  "source": "creature"
+}

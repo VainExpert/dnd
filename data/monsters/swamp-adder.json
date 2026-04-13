@@ -1,0 +1,51 @@
+{
+  "name": "Swamp Adder",
+  "size": "Small",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "small",
+      "beast",
+      "cr1/4",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 18,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 4,
+    "dex": 16,
+    "con": 12,
+    "int": 1,
+    "wis": 10,
+    "cha": 4
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Swamp Camouflage",
+      "text": "The swamp adder has advantage on Dexterity (Stealth) checks while in swamp terrain."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a successful DC 11 saving throw or become poisoned. While poisoned this way, the target is paralyzed and takes 3(1d6) poison damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself with a success."
+    }
+  ],
+  "source": "creature"
+}

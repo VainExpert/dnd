@@ -1,0 +1,57 @@
+{
+  "name": "Overgrowth Ghoul",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr1/4",
+      "nerzugals-extended-bestiary",
+      "plant"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 9,
+  "hp": {
+    "average": 17,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 9,
+    "con": 13,
+    "int": 5,
+    "wis": 9,
+    "cha": 3
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages it knew in life but can’t speak"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Floral Fortification",
+      "type": "special",
+      "text": "The ghoul can use its action to\nplant its body into the ground and become fortified\nor it can uproot and return to its mobile ghoul\nform. While fortified, the ghoul has its AC increased\nto 14, its movement speed is reduced to 0 ft., and\nas long as it has at least 1 hit point it regains 1d4\nhit points at the beginning of its turn."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5ft.,\none target. Hit: 5 (1d6 + 2) slashing damage."
+    },
+    {
+      "name": "Root Slash (Fortified Form Only)",
+      "type": "special",
+      "text": "Melee Weapon\nAttack: +4 to hit, reach 10 ft., one target. Hit: 6\n(1d8 + 2) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

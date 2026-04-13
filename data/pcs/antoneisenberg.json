@@ -1,0 +1,675 @@
+{
+  "character": {
+    "identity": {
+      "name": "Anton Eisenberg",
+      "player_name": "Tom",
+      "class": {
+        "name": "Artificer",
+        "level": 3,
+        "subclass": "Artillerist"
+      },
+      "race": "Hochelf",
+      "background": "Runenschnitzer",
+      "alignment": "chaotisch-gut",
+      "deity": "Hephaistos",
+      "gender": "männlich",
+      "age": 32,
+      "size": "Mittel",
+      "height": 1.78,
+      "weight": 82,
+      "appearance": {
+        "img": "../../assets/icons/pcs/AntonEisenberg-Avatar.png",
+        "skin": "hell",
+        "eyes": "zweifarbige Augen (blau/grün)",
+        "hair": "weiß",
+        "distinguishing_marks": [
+          "immer Ruß- und Ölflecke auf der Kleidung und Haut",
+          "Hände immer leicht schmierig",
+          "Bewegung und Verhalten nicht so elegant, wie von Elfen gewöhnt"
+        ]
+      },
+      "organizations": [
+        "Tybalds Abenteuertruppe"
+      ]
+    },
+    "ability_scores": {
+      "STR": {
+        "score": 13,
+        "mod": 1,
+        "save": 1
+      },
+      "DEX": {
+        "score": 16,
+        "mod": 3,
+        "save": 3
+      },
+      "CON": {
+        "score": 12,
+        "mod": 1,
+        "save": 3
+      },
+      "INT": {
+        "score": 16,
+        "mod": 3,
+        "save": 5
+      },
+      "WIS": {
+        "score": 10,
+        "mod": 0,
+        "save": 0
+      },
+      "CHA": {
+        "score": 8,
+        "mod": -1,
+        "save": -1
+      }
+    },
+    "proficiency_bonus": 2,
+    "inspiration": false,
+    "skills": {
+      "Akrobatik": 3,
+      "Arkane Kunde": 3,
+      "Athletik": 1,
+      "Auftreten": -1,
+      "Einschüchtern": -1,
+      "Fingerfertigkeit": 5,
+      "Geschichte": 5,
+      "Heimlichkeit": 3,
+      "Medizin": 0,
+      "Mit Tieren umgehen": 0,
+      "Motiv erkennen": 0,
+      "Nachforschungen": 5,
+      "Naturkunde": 3,
+      "Religion": 5,
+      "Täuschen": -1,
+      "Überlebenskunst": 0,
+      "Überzeugen": -1,
+      "Wahrnehmung": 2
+    },
+    "passive_scores": {
+      "passive_wahrnehmung": 12,
+      "passiver_einblick": 10,
+      "passive_nachforschungen": 15
+    },
+    "combat": {
+      "armor_class": 15,
+      "initiative": 3,
+      "speeds": {
+        "walk": 9
+      },
+      "hp": {
+        "max": 21,
+        "hit_dice": "3d8"
+      },
+      "defenses": {
+        "condition_immunities": [
+          "magischer Schlaf"
+        ],
+        "advantages": [
+          "Vorteil gegen bezaubert werden"
+        ]
+      },
+      "senses": {
+        "darkvision_m": 18,
+        "darkvision_note": "Graustufen"
+      },
+      "attacks_and_cantrips": [
+        {
+          "name": "Leichte Armbrust, +1 (Inf)",
+          "attack_bonus": 6,
+          "damage": "1d8+4 Stich",
+          "properties": [
+            "Einfach",
+            "Reichweite 24 m / 96 m",
+            "2-Hände",
+            "Laden",
+            "Munition"
+          ],
+          "notes": [
+            "Infusion: Wiederholender Schuss (+1 auf Angriff/Schaden; ignoriert Laden; erzeugt temporäre Munition)"
+          ]
+        },
+        {
+          "name": "Handaxt (2x)",
+          "attack_bonus": 3,
+          "damage": "1d6+1 Hieb",
+          "properties": [
+            "Einfach",
+            "Leicht",
+            "Geworfen",
+            "Reichweite 6 m / 18 m"
+          ],
+          "item_ref": {
+            "id": "handaxt",
+            "name": "Handaxt"
+          }
+        },
+        {
+          "name": "Unbewaffneter Schlag",
+          "attack_bonus": 3,
+          "damage": "1 Wucht"
+        },
+        {
+          "name": "Kältestrahl",
+          "attack_bonus": 5,
+          "damage": "1d8 Kälte",
+          "properties": [
+            "Reichweite 18 m"
+          ],
+          "notes": [
+            "Zauberangriff (INT)"
+          ],
+          "spell_ref": {
+            "id": "kaeltestrahl",
+            "name": "Kältestrahl"
+          }
+        }
+      ],
+      "actions": {
+        "standard": [
+          "Angriff",
+          "Ausweichen",
+          "Beeinflussen",
+          "Interagieren",
+          "Flucht",
+          "Helfen",
+          "Magie",
+          "Packen",
+          "Sprint",
+          "Stoßen",
+          "Studieren",
+          "Verstecken",
+          "Verwenden",
+          "Vorbereiten",
+          "2-Waffen Kampf",
+          "Mystische Kanone (siehe Merkmale)"
+        ],
+        "bonus_actions": [
+          "Mystische Kanone aktivieren (siehe Merkmale)"
+        ],
+        "reactions": [
+          "Gelegenheitsangriff"
+        ]
+      }
+    },
+    "proficiencies": {
+      "armor": [
+        "Leichte Rüstung",
+        "Mittlere Rüstung",
+        "Schilde"
+      ],
+      "weapons": [
+        "Einfache Waffen",
+        "Kurzschwert",
+        "Langschwert",
+        "Pistolen"
+      ],
+      "tools": [
+        "Diebeswerkzeuge",
+        "Holzschnitzwerkzeuge",
+        "Schmiedewerkzeuge",
+        "Tüftlerwerkzeuge",
+        "Weberwerkzeuge"
+      ],
+      "languages": [
+        "Gemeinsprache",
+        "Elfisch",
+        "Riesisch",
+        "Zwergisch"
+      ]
+    },
+    "spellcasting": {
+      "spellcasting_class": "Artificer",
+      "spellcasting_ability": "INT",
+      "spellcasting_ability_mod": 3,
+      "spell_save_dc": 13,
+      "spell_attack_bonus": 5,
+      "spell_slots": {
+        "level_1": {
+          "max": 3
+        }
+      },
+      "cantrips": [
+        {
+          "id": "ausbessern",
+          "name": "Ausbessern"
+        },
+        {
+          "id": "kaeltestrahl",
+          "name": "Kältestrahl"
+        },
+        {
+          "id": "magierhand",
+          "name": "Magierhand"
+        }
+      ],
+      "level_1_spells_listed": [
+        {
+          "id": "chromatische-kugel",
+          "name": "Chromatische Kugel"
+        },
+        {
+          "id": "donnerwoge",
+          "name": "Donnerwoge"
+        },
+        {
+          "id": "feenfeuer",
+          "name": "Feenfeuer"
+        },
+        {
+          "id": "heiligtum",
+          "name": "Heiligtum"
+        },
+        {
+          "id": "identifizieren",
+          "name": "Identifizieren"
+        },
+        {
+          "id": "magie-entdecken",
+          "name": "Magie entdecken"
+        },
+        {
+          "id": "schild",
+          "name": "Schild"
+        },
+        {
+          "id": "schmieren",
+          "name": "Schmieren"
+        },
+        {
+          "id": "sprachen-verstehen",
+          "name": "Sprachen verstehen"
+        },
+        {
+          "id": "tashas-aetzendes-gebraeu",
+          "name": "Tashas Ätzendes Gebräu"
+        },
+        {
+          "id": "verstricken",
+          "name": "Verstricken"
+        }
+      ],
+      "always_prepared": [
+        {
+          "source": "Artillerist",
+          "spells": [
+            {
+              "id": "donnerwoge",
+              "name": "Donnerwoge"
+            },
+            {
+              "id": "schild",
+              "name": "Schild"
+            }
+          ]
+        }
+      ],
+      "special_sources": [
+        {
+          "source": "Hochelf-Herkunft",
+          "cantrip_note": "Du kannst den Hochelfen-Zaubertrick (Magier) bei jeder Langen Rast tauschen; aktuell: Magierhand.",
+          "spells": [
+            {
+              "name": "Magie entdecken",
+              "uses": "1",
+              "recovery": {
+                "long_rest": true
+              },
+              "slotless": true,
+              "id": "magie-entdecken"
+            }
+          ]
+        },
+        {
+          "source": "Runenschnitzer: Runenschärfer",
+          "spells": [
+            {
+              "name": "Sprachen verstehen",
+              "uses": "1",
+              "recovery": {
+                "long_rest": true
+              },
+              "slotless": true,
+              "id": "sprachen-verstehen"
+            }
+          ]
+        },
+        {
+          "source": "Runenschnitzer: Runenmagie (Runenliste)",
+          "note": "Mit der Rune auf einem nicht-magischen Gegenstand lernst du den zugehörigen Zauber bis zur nächsten Langen Rast; mit dem Gegenstand in der Hand kannst du ihn auch ohne Zauberplatz und Materialkosten wirken.",
+          "runes": [
+            {
+              "rune": "Drache",
+              "spell": "Chromatische Kugel"
+            },
+            {
+              "rune": "Berg",
+              "spell": "Verstricken"
+            },
+            {
+              "rune": "Stein",
+              "spell": "Heiligtum"
+            }
+          ],
+          "spells": []
+        }
+      ]
+    },
+    "features": {
+      "racial": [
+        {
+          "name": "Feenblut",
+          "effects": [
+            "Vorteil gegen bezaubert werden",
+            "Magie kann dich nicht einschläfern (Immun: Magischer Schlaf)"
+          ]
+        },
+        {
+          "name": "Dunkelsicht",
+          "description": "18 m (Graustufen)"
+        },
+        {
+          "name": "Geschärfte Sinne",
+          "effects": [
+            "Übung in Wahrnehmung"
+          ]
+        },
+        {
+          "name": "Trance",
+          "description": "Statt zu schlafen meditierst du bei halbem Bewusstsein für mind. 4 h pro Tag; das zählt als deine Lange Rast."
+        },
+        {
+          "name": "Hochelfen-Herkunft",
+          "description": "Zaubertrick der Magier (bei jeder Langen Rast tauschbar): aktuell „Magierhand“. Zusätzlich: „Magie entdecken“ 1/Lange Rast ohne Zauberplatz."
+        }
+      ],
+      "class": [
+        {
+          "name": "Zauberwirken",
+          "description": "Du bekommst alle Zauberplätze nach einer Langen Rast zurück. Nach jeder Langen Rast kannst du deine Zauber austauschen, außer deine immer vorbereiteten Zauber und Zaubertricks."
+        },
+        {
+          "name": "Magisches Tüfteln",
+          "description": "Über deinen Arkanen Fokus kannst du nicht-magischen Gegenständen einen von mehreren Effekten geben (Licht, Nachricht, Geruch/Geräusch, statisches Bild). Hält bis zur Aufhebung; bis zu 3 Gegenstände gleichzeitig."
+        },
+        {
+          "name": "Das richtige Werkzeug für die Aufgabe",
+          "description": "Mit Diebes- oder Handwerkswerkzeug kannst du magisch ein anderes Set Handwerkswerkzeug erschaffen (1 h); nicht-magisch; verschwindet bei erneuter Benutzung."
+        },
+        {
+          "name": "Gegenstand durchdringen (Infusionen)",
+          "description": "Nach jeder Langen Rast kannst du bis zu 2 nicht-magische Gegenstände mit Infusionen durchdringen; jede Zeit max. 1 Infusion pro Gegenstand; bei 3. Gegenstand endet die älteste; halten bis zu 3 Tage nach deinem Tod.",
+          "infusions_known": [
+            {
+              "name": "Repliziere ein magisches Item",
+              "details": "Du kannst einen „Nimmervollen Beutel“ erschaffen; kann erneut gewählt werden für ein anderes gewöhnliches magisches Item.",
+              "notes": [
+                "Einmal erstellt und an Tybald übergeben"
+              ]
+            },
+            {
+              "name": "Wiederholender Schuss",
+              "details": "Berühre eine Waffe mit Munition-Eigenschaft: +1 auf Angriff/Schaden; ignoriert Laden; bei fehlender Munition erzeugt die Waffe temporäre magische Munition für einen Angriff.",
+              "applied_to": "eigene Leichte Armbrust"
+            },
+            {
+              "name": "Verstärkte Waffe",
+              "details": "Berühre eine einfache oder Krieg-Waffe: +1 auf alle Angriffs- und Schadenswürfe."
+            },
+            {
+              "name": "Verstärkte Verteidigung",
+              "details": "Berühre ein Schild oder eine Rüstung: Träger erhält +1 RK."
+            }
+          ],
+          "infused_items_listed": [
+            "Leichte Armbrust, +1 (Inf)"
+          ]
+        }
+      ],
+      "subclass": [
+        {
+          "name": "Werkzeugsübung",
+          "description": "Übung mit einer Art Werkzeuge: „Holzschnitzwerkzeuge“",
+          "always_prepared_spells": []
+        },
+        {
+          "name": "Mystische Kanone",
+          "description": "Als Aktion (1/Lange Rast oder mit Zauberplatz) erschaffst du eine winzige oder kleine Kanone. Sie ist ein magisches Objekt (RK 18, 15 TP, 10 (+0) in allen Fähigkeiten), immun gegen Gift und psychischen Schaden; „Ausbessern“ stellt 2d6 TP her. Verschwindet bei 0 TP, nach 1 h oder wenn du sie abbaust. Aktivierung als Bonusaktion in 18 m; optional 4 oder 6 Beine (Bewegung/Klettern 4,5 m als Teil der Bonusaktion).",
+          "modes": [
+            {
+              "name": "Flammenwerfer",
+              "effect": "4,5 m Flammenkegel; DEX-Rettungswurf; 2d8 Feuerschaden (halber bei Erfolg); entzündet nicht getragene brennbare Gegenstände."
+            },
+            {
+              "name": "Energieballiste",
+              "effect": "Fernkampf-Zauberangriff auf 36 m; 2d8 Energieschaden; Ziel 1,5 m weggestoßen."
+            },
+            {
+              "name": "Beschützer",
+              "effect": "3 m Umkreis: Kreaturen deiner Wahl + Kanone erhalten 1d8 + INT-Mod temporäre TP."
+            }
+          ],
+          "always_prepared_spells": []
+        },
+        {
+          "name": "Artillerist-Zauber (immer vorbereitet)",
+          "spells": [
+            "Donnerwoge",
+            "Schild"
+          ],
+          "always_prepared_spells": []
+        }
+      ],
+      "background": [
+        {
+          "name": "Runenstil",
+          "description": "Du schmiedest deine Runen aus Metall und bringst diese an Kleidung, Waffen und anderen Gegenständen an."
+        },
+        {
+          "name": "Runenschärfer",
+          "description": "Sprachen verstehen: Du kennst den Zauber „Sprachen verstehen“ und kannst ihn 1/Lange Rast ohne Zauberplatz (oder mit Zauberplatz) wirken."
+        },
+        {
+          "name": "Runenmagie",
+          "description": "Du kennst Runen gleich deinem Übungsbonus. Du kannst in jeder Langen Rast eine Rune auf einen nicht-magischen Gegenstand schreiben und so den zugehörigen Zauber lernen. Bis zur nächsten Langen Rast kennst du den Zauber und kannst ihn wirken. Mit dem Gegenstand in deiner Hand kannst du den Zauber auch ohne Zauberplatz und Materialkosten wirken. Runen können bei Levelaufstieg getauscht werden.",
+          "runes": [
+            {
+              "rune": "Drache",
+              "spell": "Chromatische Kugel"
+            },
+            {
+              "rune": "Berg",
+              "spell": "Verstricken"
+            },
+            {
+              "rune": "Stein",
+              "spell": "Heiligtum"
+            }
+          ]
+        }
+      ]
+    },
+    "equipment": {
+      "currency": {
+        "cp": 0,
+        "sp": 0,
+        "gp": 19,
+        "pp": 0
+      },
+      "weights": {
+        "carried": 25.75,
+        "encumbered_at": 97.5,
+        "push_drag_lift": 195
+      },
+      "items": [
+        {
+          "name": "Schmiedewerkzeug (Arkaner Fokus)",
+          "quantity": 1,
+          "weight": 4,
+          "item_ref": {
+            "id": "schmiedewerkzeug",
+            "name": "Schmiedewerkzeug"
+          }
+        },
+        {
+          "name": "Handaxt",
+          "quantity": 2,
+          "weight": 2,
+          "item_ref": {
+            "id": "handaxt",
+            "name": "Handaxt"
+          }
+        },
+        {
+          "name": "Armbrustbolzen-Schachtel",
+          "quantity": 1,
+          "weight": 0.5,
+          "item_ref": {
+            "id": "armbrustbolzen-schachtel",
+            "name": "Armbrustbolzen-Schachtel"
+          }
+        },
+        {
+          "name": "Bolzen",
+          "quantity": 18,
+          "weight": 0.75
+        },
+        {
+          "name": "Beschlagene Lederrüstung (Leicht, RK = 12 + DEX-Modifikator)",
+          "quantity": 1,
+          "weight": 6.5,
+          "item_ref": {
+            "id": "beschlagene-lederruestung",
+            "name": "Beschlagene Lederrüstung"
+          }
+        },
+        {
+          "name": "Einfache Kleidung",
+          "quantity": 1,
+          "weight": 1.5
+        },
+        {
+          "name": "Diebeswerkzeug",
+          "quantity": 1,
+          "weight": 0.5,
+          "item_ref": {
+            "id": "diebeswerkzeug",
+            "name": "Diebeswerkzeug"
+          }
+        },
+        {
+          "name": "Taschenuhrwerk",
+          "quantity": 1,
+          "weight": null
+        },
+        {
+          "name": "Nimmervoller Beutel",
+          "quantity": 1,
+          "weight": 7.5,
+          "contents_listed": [
+            {
+              "name": "Kleines Messer",
+              "quantity": 1,
+              "weight": null
+            },
+            {
+              "name": "Schleifstein",
+              "quantity": 1,
+              "weight": 0.5,
+              "item_ref": {
+                "id": "schleifstein",
+                "name": "Schleifstein"
+              }
+            },
+            {
+              "name": "Brecheisen",
+              "quantity": 1,
+              "weight": 2.5
+            },
+            {
+              "name": "Kletterhaken",
+              "quantity": 10,
+              "weight": 1.25
+            },
+            {
+              "name": "Fackeln",
+              "quantity": 10,
+              "weight": 5
+            },
+            {
+              "name": "Zunderkästchen",
+              "quantity": 1,
+              "weight": 0.5,
+              "item_ref": {
+                "id": "zunderkaestchen",
+                "name": "Zunderkästchen"
+              }
+            },
+            {
+              "name": "Hanf-Seil, 15 m",
+              "quantity": 1,
+              "weight": 5
+            },
+            {
+              "name": "Öl",
+              "quantity": 2,
+              "weight": 1,
+              "item_ref": {
+                "id": "oel",
+                "name": "Öl"
+              }
+            },
+            {
+              "name": "Flaschenzug",
+              "quantity": 1,
+              "weight": 2.5,
+              "item_ref": {
+                "id": "flaschenzug",
+                "name": "Flaschenzug"
+              }
+            },
+            {
+              "name": "Altmetall",
+              "quantity": 20,
+              "weight": 20
+            }
+          ],
+          "item_ref": {
+            "id": "nimmervoller-beutel",
+            "name": "Nimmervoller Beutel"
+          }
+        }
+      ],
+      "attuned_magic_items_listed": [
+        {
+          "name": "Ersatz-Auge",
+          "quantity": 1
+        },
+        {
+          "name": "Leichte Armbrust, +1 (Inf)",
+          "quantity": 1
+        }
+      ]
+    },
+    "personality": {
+      "traits": [
+        "Du bist lieber in deiner Werkstatt zum Tüfteln als unter Leuten.",
+        "Bei neuen Bekanntschaften weißt du nicht so richtig, wie du dich verhalten sollst."
+      ],
+      "ideals": [
+        "Kreativität. Die Welt braucht deine neuen Ideen und Ideale."
+      ],
+      "motivation": [
+        "Du möchtest die Handwerkskunst aller Meister im Land erlernen."
+      ],
+      "flaws": [
+        "Du bist leicht ablenkbar und kannst sehr gut auf etwas hyper-fokussieren (leichtes ADHS).",
+        "Dadurch bist du auch leicht impulsiv in deinen Handlungen."
+      ]
+    },
+    "backstory": {
+      "summary": "Als Baby von einem Zwerg gefunden und aufgezogen; von klein an Schmiedehandwerk gelernt. Später magische Veranlagung entdeckt; an der Universität Artificer-Handwerk gelernt und Runenkunde belegt. Nach dem Abschluss auf magische Sicherheitssysteme spezialisiert; beim König angestellt, dann gefeuert. Suchte neue Arbeit; als Abenteurer bei der Abenteurer-Gilde angemeldet. Nach Aufklärung des Mordes bei Familie Hagelkorn: temporäre Stelle als Handwerker und Sicherheitsexperte erhalten."
+    }
+  },
+  "id": "antoneisenberg"
+}

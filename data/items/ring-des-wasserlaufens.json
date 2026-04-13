@@ -1,0 +1,44 @@
+{
+  "id": "ring-des-wasserlaufens",
+  "type": "item",
+  "name": "Ring des Wasserlaufens",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "ring",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 200,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Während du diesen Ring trägst, kannst du auf flüssigen Oberflächen stehen und gehen, als wären sie fester Boden.",
+  "tags": [
+    "ring",
+    "schmuck",
+    "wasser",
+    "bewegung"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "schild-des-glaubens",
+  "name": "Schild des Glaubens",
+  "level": 1,
+  "school": "Bannmagie",
+  "casting_time": "1 Bonus Aktion",
+  "range": "18 m",
+  "components": "V, G, M (kleines Pergament mit heiligem Text)",
+  "duration": "Konzentration, bis zu 10 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Kleriker",
+    "Paladin"
+  ],
+  "text": "Ein schimmerndes Feld erscheint um eine Kreatur deiner Wahl in Reichweite und gewährt für die Wirkungsdauer +2 auf dessen RK."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "illusionsschrift",
+  "name": "Illusionsschrift",
+  "level": 1,
+  "school": "Illusionsmagie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "G, M (blei-basierte Tinte im Wert von 10 GM)",
+  "duration": "10 Tage",
+  "concentration": false,
+  "ritual": true,
+  "classes": [
+    "Barde",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du schreibst auf Pergament, Papier oder ähnliches und erfüllst die Schrift mit einer Illusion, die für die Wirkungsdauer anhält.\nFür dich und alle Kreaturen, die du beim Wirken bestimmst, ist die Schrift normal.\nFür alle anderen erscheint eine unbekannte, magische, unverständliche Schrift. Nur eine Kreatur mit wahrem Blick kann die versteckte Nachricht lesen.\nSollte der Zauber gebannt werden, verschwinden sowohl die echte Schrift als auch die Illusion."
+}

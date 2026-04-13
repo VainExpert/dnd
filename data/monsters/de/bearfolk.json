@@ -1,0 +1,67 @@
+{
+  "name": "Bärenmenschen",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch gut",
+  "ac": 14,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 14,
+    "con": 16,
+    "int": 8,
+    "wis": 12,
+    "cha": 9
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Feiner Geruchssinn",
+      "text": "Das Bärenvolk hat einen Vorteil bei Weisheitsproben (Wahrnehmung), die auf dem Geruchssinn beruhen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Das Bärenvolk führt drei Angriffe aus: einen mit seiner Streitaxt, einen mit seinem Kriegshammer und einen mit seinem Biss."
+    },
+    {
+      "name": "Streitaxt",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 8 (1d8 + 4) Schnittschaden oder 9 (1d10 + 4) Schnittschaden bei Zweihandgebrauch."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 11 (2d6 + 4) Durchdringungsschaden."
+    },
+    {
+      "name": "Warhammer",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf den Trefferwurf, Reichweite5 ft: , ein Ziel. Treffer: 8 (1d8 + 4) Bludgeoning-Schaden oder 9 (1d10 + 4) Bludgeoning-Schaden bei Zweihandgebrauch."
+    }
+  ],
+  "source": "creature"
+}

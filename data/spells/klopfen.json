@@ -1,0 +1,18 @@
+{
+  "id": "klopfen",
+  "name": "Klopfen",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Wähle einen Gegenstand, der magisch oder gewöhnlich verschlossen ist.\nEin gewöhnlich verschlossenes Ziel wird geöffnet, bei mehreren Schlössern aber nur 1 dieser.\nBei einem mit „Arkanes Schloss“ verriegelten Gegenstand wird der Zauber für 10 min unterdrückt. In dieser Zeit kann das Ziel normal geöffnet und geschlossen werden.\nDer Zauber verursacht ein 90 m weit hörbares Klopfgeräusch."
+}

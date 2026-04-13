@@ -1,0 +1,46 @@
+{
+  "id": "amulett-des-schutzes-gegen-ortung-und-ausspaehung",
+  "type": "item",
+  "name": "Amulett des Schutzes gegen Ortung und Ausspähung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "head",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du dieses Amulett trägst, bist du vor Erkenntnismagie versteckt. Du kannst nicht das Ziel solcher Magie sein oder durch magische Ausspähungssensoren wahrgenommen werden.",
+  "tags": [
+    "magisch",
+    "schutz",
+    "nützlich",
+    "abenteuer",
+    "einstimmung",
+    "amulett"
+  ]
+}

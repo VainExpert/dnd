@@ -1,0 +1,76 @@
+{
+  "name": "Atropal",
+  "size": "Riesig",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "huge",
+      "undead",
+      "cr13",
+      "tomb-of-annihilation",
+      "titan"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 7,
+  "hp": {
+    "average": 225,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 5,
+    "con": 22,
+    "int": 25,
+    "wis": 19,
+    "cha": 24
+  },
+  "skills": {},
+  "languages": [
+    "Understands Celestial but utters only obscene nonsense"
+  ],
+  "challenge": {
+    "cr": "13",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Magieresistenz",
+      "text": "Der Atropal hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Aura negativer Energie",
+      "text": "Kreaturen, die sich30 feetin Reichweite des Atropals befinden, können keine Trefferpunkte zurückgewinnen, und jede Kreatur, die ihren Zug in30 feetReichweite des Atropals beginnt, erleidet 10 (3d6) nekrotischen Schaden. Wird der Atropal von einem Vorpalschwert getroffen, kann der Träger die Nabelschnur des Atropals durchtrennen, anstatt Schaden zu verursachen. Wird seine Nabelschnur durchtrennt, verliert der Atropal diese Eigenschaft."
+    },
+    {
+      "name": "Aura der Wendewiderstand",
+      "text": "Der Atropal und alle anderen Untoten in30 feetseiner Nähe erhalten einen Vorteil bei Rettungswürfen gegen alle Effekte, die Untote verwandeln."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Berühren",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 10 (3d6) nekrotischer Schaden."
+    },
+    {
+      "name": "Kälteray",
+      "type": "special",
+      "text": "Fernkampf-Zauberangriff: +12 auf Treffer, Reichweite120 ft: , ein Ziel. Treffer: 21 (6d6) Kälteschaden."
+    },
+    {
+      "name": "Lebensentzug",
+      "type": "special",
+      "text": "Der Atropal wählt eine Kreatur als Ziel, die er in120 feetseiner Nähe sehen kann. Das Ziel muss einenDC 19Konstitutions-Rettungswurf bestehen; bei einem misslungenen Rettungswurf erleidet es 36 (8d8) nekrotischen Schaden, bei einem erfolgreichen Rettungswurf nur die Hälfte dieses Schadens. Der Atropal erhält so viele Trefferpunkte zurück, wie die Hälfte des verursachten Schadens beträgt."
+    },
+    {
+      "name": "Geist beschwören (Aufladezeit 6)",
+      "type": "special",
+      "text": "Der Atropal beschwört einen Geist, der sich in einem unbesetzten Bereich innerhalb30 feetvon  um ihn herum materialisiert, den er sehen kann. Der Geist gehorcht den Befehlen seines Beschwörers und kann von keinem anderen Wesen kontrolliert werden. Der Geist verschwindet, sobald seine Trefferpunkte auf 0 sinken oder sein Beschwörer stirbt."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,24 +1,23 @@
 const PAGES = [
-  // group, title, path
-  ["Core", "House rules & table conventions", "content/house-rules/index.md"],
-  ["Core", "Safety tools & expectations", "content/safety/index.md"],
-  ["Core", "Character options (allowed/bans/nerfs)", "content/character-options/index.md"],
+  ["Kern", "Hausregeln & Tischkonventionen", "content/house-rules/index.md"],
+  ["Kern", "Sicherheitswerkzeuge & Erwartungen", "content/safety/index.md"],
+  ["Kern", "Charakteroptionen (erlaubt/verbote/abschwaechungen)", "content/character-options/index.md"],
 
-  ["World", "Player-facing lore (overview)", "content/lore/index.md"],
-  ["World", "Gazetteer", "content/lore/gazetteer.md"],
-  ["World", "Factions", "content/lore/factions.md"],
-  ["World", "Religions", "content/lore/religions.md"],
+  ["Welt", "Spielerwissen (Ueberblick)", "content/lore/index.md"],
+  ["Welt", "Ortsverzeichnis", "content/lore/gazetteer.md"],
+  ["Welt", "Fraktionen", "content/lore/factions.md"],
+  ["Welt", "Religionen", "content/lore/religions.md"],
 
-  ["Play", "Travel & downtime rules", "content/travel-downtime/index.md"],
-  ["Play", "Treasure & crafting rules", "content/treasure-crafting/index.md"],
+  ["Spiel", "Reise- & Auszeitregeln", "content/travel-downtime/index.md"],
+  ["Spiel", "Schatz- & Herstellungsregeln", "content/treasure-crafting/index.md"],
 
-  ["Handouts", "Handouts index", "content/handouts/index.md"],
-  ["Handouts", "Letters / prop text", "content/handouts/letters.md"],
-  ["Handouts", "Puzzles", "content/handouts/puzzles.md"],
+  ["Handouts", "Handout-Uebersicht", "content/handouts/index.md"],
+  ["Handouts", "Briefe / Requisitentexte", "content/handouts/letters.md"],
+  ["Handouts", "Raetsel", "content/handouts/puzzles.md"],
 
-  ["Recaps", "Session recap archive", "content/recaps/index.md"],
-  ["Recaps", "Session 01 (2026-02-10)", "content/recaps/2026-02-10-session-01.md"],
-  ["Recaps", "Session 02 (2026-02-17)", "content/recaps/2026-02-17-session-02.md"],
+  ["Rueckblicke", "Archiv der Sitzungsrueckblicke", "content/recaps/index.md"],
+  ["Rueckblicke", "Sitzung 01 (2026-02-10)", "content/recaps/2026-02-10-session-01.md"],
+  ["Rueckblicke", "Sitzung 02 (2026-02-17)", "content/recaps/2026-02-17-session-02.md"],
 ];
 
 const navEl = document.getElementById("nav");
@@ -59,41 +58,32 @@ function renderNav(activePath) {
 }
 
 function escapeHtml(s) {
-  return s.replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;");
+  return String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;");
 }
 
 function simpleMarkdown(md) {
-  // code blocks ``` ```
   const codeBlocks = [];
   md = md.replace(/```([\s\S]*?)```/g, (_, code) => {
     codeBlocks.push(code);
     return `@@CODEBLOCK_${codeBlocks.length - 1}@@`;
   });
 
-  // headings
   md = md.replace(/^### (.*)$/gm, "<h3>$1</h3>");
   md = md.replace(/^## (.*)$/gm, "<h2>$1</h2>");
   md = md.replace(/^# (.*)$/gm, "<h1>$1</h1>");
 
-  // blockquotes
   md = md.replace(/^> (.*)$/gm, "<blockquote>$1</blockquote>");
 
-  // lists
   md = md.replace(/^\s*-\s+(.*)$/gm, "<li>$1</li>");
   md = md.replace(/(<li>[\s\S]*?<\/li>\n?)+/g, (m) => `<ul>${m}</ul>`);
 
-  // inline code
   md = md.replace(/`([^`]+)`/g, "<code>$1</code>");
 
-  // links [text](url)
   md = md.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, text, url) => {
-    const safeText = text;
-    const safeUrl = url;
-    if (safeUrl.startsWith("#")) return `<a href="${safeUrl}">${safeText}</a>`;
-    return `<a href="${safeUrl}" target="_blank" rel="noopener noreferrer">${safeText}</a>`;
+    if (url.startsWith("#")) return `<a href="${url}">${text}</a>`;
+    return `<a href="${url}" target="_blank" rel="noopener noreferrer">${text}</a>`;
   });
 
-  // paragraphs (very basic)
   md = md
     .split(/\n{2,}/)
     .map(block => {
@@ -104,19 +94,20 @@ function simpleMarkdown(md) {
     })
     .join("\n");
 
-  // restore code blocks
   md = md.replace(/@@CODEBLOCK_(\d+)@@/g, (_, i) => {
     const code = escapeHtml(codeBlocks[Number(i)].replace(/^\n+|\n+$/g, ""));
     return `<pre><code>${code}</code></pre>`;
   });
 
-  md = md.replace(/\[\[(spell|monster|pc):([^\]]+)\]\]/gi, (_, kind, id) => {
-    const k = kind.toLowerCase();
+  md = md.replace(/\[\[(spell|monster|pc|npc|item):([^\]]+)\]\]/gi, (_, kind, id) => {
+    const k = String(kind).toLowerCase();
     const slug = String(id).trim();
     const label = slug.replaceAll("-", " ");
-    if (k === "spell") return `<a href="./pages/spell.html?id=${encodeURIComponent(slug)}">${label}</a>`;
-    if (k === "monster") return `<a href="./pages/monster.html?id=${encodeURIComponent(slug)}">${label}</a>`;
-    if (k === "pc") return `<a href="./pages/pc.html?id=${encodeURIComponent(slug)}">${label}</a>`;
+    if (k === "spell") return `<a href="./pages/zauber/spell.html?id=${encodeURIComponent(slug)}">${label}</a>`;
+    if (k === "monster") return `<a href="./pages/bestiarium/monster.html?id=${encodeURIComponent(slug)}">${label}</a>`;
+    if (k === "pc") return `<a href="./pages/spieler/pc.html?id=${encodeURIComponent(slug)}">${label}</a>`;
+    if (k === "npc") return `<a href="./pages/bestiarium/npc.html?id=${encodeURIComponent(slug)}">${label}</a>`;
+    if (k === "item") return `<a href="./pages/items/item.html?id=${encodeURIComponent(slug)}">${label}</a>`;
     return label;
   });
 
@@ -126,7 +117,7 @@ function simpleMarkdown(md) {
 async function loadPage(path) {
   const res = await fetch(path, { cache: "no-cache" });
   if (!res.ok) {
-    contentEl.innerHTML = `<h1>Not found</h1><p>Could not load <code>${escapeHtml(path)}</code>.</p>`;
+    contentEl.innerHTML = `<h1>Nicht gefunden</h1><p><code>${escapeHtml(path)}</code> konnte nicht geladen werden.</p>`;
     return;
   }
   const md = await res.text();
@@ -135,7 +126,6 @@ async function loadPage(path) {
 
 function getActivePathFromHash() {
   const h = location.hash.replace(/^#/, "");
-  // If no hash, show homepage content instead of first markdown page
   if (!h) return "content/home.md";
   try { return decodeURIComponent(h); } catch { return "content/home.md"; }
 }
@@ -151,7 +141,6 @@ function wireRouting() {
 }
 
 async function buildSearchIndex() {
-  // fetch all pages once to allow search
   const docs = [];
   for (const [, title, path] of PAGES) {
     try {
@@ -166,12 +155,12 @@ async function buildSearchIndex() {
 
 function renderSearchResults(matches) {
   if (!matches.length) {
-    contentEl.innerHTML = `<h1>Search</h1><p>No results.</p>`;
+    contentEl.innerHTML = `<h1>Suche</h1><p>Keine Treffer.</p>`;
     return;
   }
   contentEl.innerHTML = `
-    <h1>Search</h1>
-    <p>${matches.length} result(s)</p>
+    <h1>Suche</h1>
+    <p>${matches.length} Treffer</p>
     <ul>
       ${matches.map(m => `<li><a href="#${encodeURIComponent(m.path)}">${escapeHtml(m.title)}</a></li>`).join("")}
     </ul>
@@ -184,7 +173,7 @@ function renderSearchResults(matches) {
   const index = await buildSearchIndex();
   searchEl.addEventListener("input", (e) => {
     const q = (e.target.value || "").trim().toLowerCase();
-    if (!q) return; // keep current page
+    if (!q) return;
     const matches = index
       .filter(d => d.title.toLowerCase().includes(q) || d.text.includes(q))
       .slice(0, 30);

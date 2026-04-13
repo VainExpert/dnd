@@ -1,0 +1,79 @@
+{
+  "name": "Timeless Chronomancer",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr17",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 14,
+  "hp": {
+    "average": 169,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 18,
+    "con": 14,
+    "int": 25,
+    "wis": 19,
+    "cha": 14
+  },
+  "skills": {
+    "Arcana": 13,
+    "History": 19,
+    "Insight": 10,
+    "Perception": 10
+  },
+  "languages": [
+    "any eight languages"
+  ],
+  "challenge": {
+    "cr": "17",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The devil has advantage on saving\nthrows against spells and other magical effects."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The chronomancer’s innate\nspellcasting ability is Intelligence (spell save DC 21).\nHe can innately cast the following spells, requiring no\ncomponents:\n\n* At will: <i>haste, mage armor, slow, shield</i>\n\n* 3/Day: <i>foresight, legend lore, time stop</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The chronomancer uses its Domes of\nDistortion ability if able. It then makes one attack with\neach of its daggers."
+    },
+    {
+      "name": "Dagger of Ages",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit,\nreach 5ft., one target. Hit: 6 (1d4 + 4) piercing damage\nand the target must succeed on a DC 21 Constitution\nsaving throw or immediately age 1d20 years and take\n27 (6d8) force damage. A creature within a Dome of\nVigor has disadvantage on this saving throw. A greater\nrestoration spell can restore a creature’s age to normal."
+    },
+    {
+      "name": "Dagger of Sands",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit,\nreach 5ft., one target. Hit: 6 (1d4 + 4) piercing\ndamage, and must succeed on a DC 21 Constitution\nsaving throw against being magically petrified. A\ncreature within a Dome of Lethargy has disadvantage\non this saving throw. On a failed save, the creature\nbecomes restrained. It must repeat the saving throw at\nthe end of its next turn. On a success, the effect ends.\nOn a failure, the creature is petrified. Only a greater\nrestoration or wish spell can restore the creature to\nnormal."
+    },
+    {
+      "name": "Domes of Distortion (Recharge 5-6)",
+      "type": "special",
+      "text": "The chronomancer\ncreates two 15-foot radius domes at two locations\nwithin 120 feet. These domes last for one next minute\nor until the chronomancer uses this ability again. One\ndome, the Dome of Vigor, gives the creatures within\nthe benefits of the Haste spell while the other, the\nDome of Lethargy, gives the detriments of the Slow\nspell. The Dome of Haste is a green in color while the\nDome of Lethargy is blue in color. These domes cannot\noverlap"
+    },
+    {
+      "name": "Entombed By Time",
+      "type": "special",
+      "text": "The chronomancer conjures an\nhourglass shaped prison in an attempt to trap a\ncreature within 120 feet. That creature must succeed\non a DC 21 Dexterity saving throw or be imprisoned.\nSand immediately begins to pour from the top of the\nhourglass to the bottom, causing the trapped creature\nto age rapidly. A creature that starts its turn within the\nhourglass ages 1d20 years. If 30 points of damage are\ndealt to the glass walls of the hourglass in a single turn,\nthe glass shatters and the hourglass disappears."
+    }
+  ],
+  "source": "creature"
+}

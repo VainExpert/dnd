@@ -1,0 +1,63 @@
+{
+  "name": "Caryatid Column",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "Unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 16,
+    "int": 2,
+    "wis": 11,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "\"understands the languages of its creator but"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Immutable Form",
+      "text": "The caryatid column is immune to any spell or effect\nthat would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The caryatid column has advantage on saving\nthrows against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "The caryatid column’s weapon attacks are magical."
+    },
+    {
+      "name": "Shatter Weapons",
+      "text": "Whenever a character strikes a caryatid column with\na non-adamantine, nonmagical weapon, the character must succeed on a\nDC 14 Strength saving throw or the weapon shatters into pieces."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit:\n8 (1d10 + 3) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "frost-finger",
+  "name": "Frost-Finger",
+  "level": 1,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (4,5 m Kegel)",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Magier"
+  ],
+  "text": "Kälte schießt aus deinen Fingerspitzen in einem 4,5 m Kegel.\nJede Kreatur im Bereich muss einen CON-Rettungswurf machen.\nBei Fehlschlag: 2W8 Kälteschaden, sonst die Hälfte. Die Kälte friert nichtmagische Flüssigkeiten im Bereich, die nicht getragen oder gehalten werden.\n\nAuf höheren Level gewirkt: +1W8 Kälteschaden pro Level."
+}

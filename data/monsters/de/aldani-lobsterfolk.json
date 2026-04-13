@@ -1,0 +1,61 @@
+{
+  "name": "Aldani (Hummervolk)",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr1",
+      "tomb-of-annihilation"
+    ]
+  },
+  "alignment": "gesetztreu-neutral",
+  "ac": 14,
+  "hp": {
+    "average": 49,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 30
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 8,
+    "con": 12,
+    "int": 10,
+    "wis": 14,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 4,
+    "Survival": 4
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibisch",
+      "text": "Der Aldani kann sowohl an der Luft als auch unter Wasser atmen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Aldani führt zwei Angriffe mit seinen Klauen aus."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampf-Angriff mit Waffe: +3 auf den Trefferwurf, Reichweite5 ft: , ein Ziel. Treffer: 5 (1d8 +1) Schnittschaden, und das Ziel wird festgehalten (Befreiung:DC 11 ). Der Aldani hat zwei Klauen, von denen jede nur ein Ziel festhalten kann."
+    }
+  ],
+  "source": "creature"
+}

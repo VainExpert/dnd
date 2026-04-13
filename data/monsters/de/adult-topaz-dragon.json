@@ -1,0 +1,78 @@
+{
+  "name": "Erwachsener Topasdrache",
+  "size": "Riesig",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "huge",
+      "dragon",
+      "cr14",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "neutral gut",
+  "ac": 19,
+  "hp": {
+    "average": 104,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 21,
+    "con": 10,
+    "int": 18,
+    "wis": 15,
+    "cha": 18
+  },
+  "skills": {
+    "Arcana": 9,
+    "Insight": 7,
+    "Perception": 7,
+    "Religion": 9
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "14",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Legendärer Widerstand (3/Tag)",
+      "text": "Wenn der Drache\neinen Rettungswurf verfehlt, kann er sich entscheiden, ihn stattdessen zu bestehen."
+    },
+    {
+      "name": "Aura der Erhebung",
+      "text": "Alle Verbündeten innerhalb des Bereichs30 feeterhalten einen Bonus von +4 auf\nIntelligenz-Proben und Rettungswürfe."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Drache führt drei Angriffe aus: einen\nmit seinem Biss und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite:3 m .,\nein Ziel. Treffer: 15 (2d10 + 4) Durchdringungsschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite:1,5 m .,\nein Ziel. Treffer: 11 (2d6 + 4) Schnittschaden."
+    },
+    {
+      "name": "Schwanz",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen; Reichweite 4,5 m.,\nein Ziel. Treffer: 13 (2d8 + 4) Bludgeoning-Schaden."
+    }
+  ],
+  "source": "creature"
+}

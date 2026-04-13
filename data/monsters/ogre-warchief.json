@@ -1,0 +1,69 @@
+{
+  "name": "Ogre Warchief",
+  "size": "Large",
+  "type": {
+    "type": "giant",
+    "tags": [
+      "large",
+      "giant",
+      "cr4",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 16,
+  "hp": {
+    "average": 76,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 8,
+    "con": 17,
+    "int": 9,
+    "wis": 10,
+    "cha": 8
+  },
+  "skills": {
+    "Athletics": 7,
+    "Intimidation": 3
+  },
+  "languages": [
+    "Common",
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The ogre makes two attacks with its\ngreatmaul or with its javelin."
+    },
+    {
+      "name": "Greatmaul",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach\n5ft., one target. Hit: 14 (2d8 + 5) bludgeoning\ndamage."
+    },
+    {
+      "name": "Javelin",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +7 to hit,\nreach 5 ft. or range 30/120 ft., one target., one\ntarget. Hit: 12 (2d6 + 5) piercing damage."
+    },
+    {
+      "name": "Punt",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5ft.,\none target. Hit: 23 (4d8 + 5) bludgeoning damage\nand the target must make a DC 15 Strength saving\nthrow, being thrown 20 ft. and knocked prone on a\nfailed save or pushed 10 ft. and not knocked prone\non a success."
+    },
+    {
+      "name": "War Drums (Recharge 5-6)",
+      "type": "special",
+      "text": "The warchief play the\ndrums of war. All other ogres within 120 ft. that\ncan hear the drums may use their reaction to make\na melee attack against an enemy in range."
+    }
+  ],
+  "source": "creature"
+}

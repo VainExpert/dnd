@@ -1,0 +1,73 @@
+{
+  "name": "Aeorian Absorber",
+  "size": "Groß",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr10",
+      "explorers-guide-to-wildemount"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 15,
+  "hp": {
+    "average": 171,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 21,
+    "dex": 18,
+    "con": 18,
+    "int": 6,
+    "wis": 14,
+    "cha": 8
+  },
+  "skills": {
+    "Perception": 6,
+    "Stealth": 8,
+    "Survival": 6
+  },
+  "languages": [
+    "understands Draconic but can’t speak"
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Magieresistenz",
+      "text": "Der Absorber gewährt einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Heranstürzen",
+      "text": "Bewegt sich der Absorber mindestens20 feetgerade auf eine Kreatur zu und trifft diese im selben Zug mit einem Klauenangriff, muss das Ziel einenDC 17Stärke-Rettungswurf bestehen oder wird zu Boden geworfen. Befindet sich das Ziel am Boden, kann der Absorber als Bonusaktion einen Bissangriff gegen es ausführen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Absorber führt drei Angriffe aus: einen mit seinem Biss oder seinem „Mind Bolt“ und zwei mit seinen Klauen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite:1,5 m ., eine Kreatur. Treffer: 10 (1d10 + 5) Durchdringungsschaden plus 5 (1d10) Kraftschaden."
+    },
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 8 (1d6 + 5) Schnittschaden plus 3 (1d6) Kraftschaden."
+    },
+    {
+      "name": "Alles im Shop",
+      "type": "special",
+      "text": "Fernkampf-Zauberangriff: +8 auf Treffer, Reichweite 36 m., eine Kreatur. Treffer: 22 (4d10) psychischer Schaden."
+    }
+  ],
+  "source": "creature"
+}

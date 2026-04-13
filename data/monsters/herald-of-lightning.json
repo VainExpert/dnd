@@ -1,0 +1,91 @@
+{
+  "name": "Herald of Lightning",
+  "size": "Large",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "large",
+      "celestial",
+      "cr9",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic good",
+  "ac": 18,
+  "hp": {
+    "average": 152,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 18,
+    "con": 19,
+    "int": 11,
+    "wis": 17,
+    "cha": 14
+  },
+  "skills": {
+    "Perception": 7,
+    "Persuasion": 6,
+    "Sleight of Hand": 8
+  },
+  "languages": [
+    "Common",
+    "Celestial"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The herald has advantage on saving\nthrows against spells and other magical effects."
+    },
+    {
+      "name": "One With Lightning",
+      "text": "The herald may choose to expend\n50 feet of movement to teleport to an unoccupied\nspace within 50 feet. When it does so, lightning streaks\nin a line between the herald’s starting position and its\nnew position. Any creature in that area must succeed\non a DC 16 Dexterity saving throw or take 16 (3d10)\nlightning damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The herald makes two attacks: one with its\nscimitar and one with its shield slam."
+    },
+    {
+      "name": "Sparking Scimitar",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit,\nreach 5ft., one target. Hit: 7 (1d6 + 4) slashing damage\nplus 16 (3d10) lightning damage."
+    },
+    {
+      "name": "Shield Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5ft.,\none target. Hit: 14 (2d10 + 3) bludgeoning damage\nand the target must succeed on a DC 15 Strength\nsaving throw or be stunned until the end of its next\nturn."
+    },
+    {
+      "name": "Jolting Blast",
+      "type": "special",
+      "text": "Ranged Spell Attack: +7 to hit, range 120\nft., one target. Hit: 28 (8d6) lightning damage and the\ntarget must succeed on a DC 16 Constitution saving\nthrow or be paralyzed until the end of its next turn."
+    },
+    {
+      "name": "Lightning Shackles",
+      "type": "special",
+      "text": "Target creature within 120 feet has\ntheir feet bound to the ground with chains of sparking\nmetal. That creature may move freely, but takes 5\n(1d10) lightning damage for every 5 feet they move. A\ncreature may use their action to attempt to break the\nbindings. That creature makes a DC 16 Athletics check,\nsmashing the bindings and freeing the bound creature\non a success. On a fail, the creature attempting to\nbreak the bindings takes 11 (2d10) lightning damage."
+    },
+    {
+      "name": "Cone of Lightning (Recharge 5-6)",
+      "type": "special",
+      "text": "The herald unleashes\na blast of sparking energy in a 30-foot cone. All\ncreatures in that area must make on a DC 16 Dexterity\nsaving throw, taking 38 (7d10) lightning damage on a\nfailed save, or half as much damage on a successful\none."
+    },
+    {
+      "name": "Create Conduits (1/Day)",
+      "type": "special",
+      "text": "The herald turns three\ncreatures within 120 feet into conduits of lightning for\n1 minute. If any of those creatures end their turn within\n20 feet of another conduit, lightning arcs between\nthem, dealing 16 (3d10) lightning damage to each of\nthem. A creature between two conduits when this\neffect occurs must succeed on a DC 16 Dexterity\nsaving throw or take 16 (3d10) lightning damage.\nCreatures are immediately aware of the fact they are a\nconduit when they become one, but are not aware of\nits effects."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Behtu",
+  "size": "Klein",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr2",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 14,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 16,
+    "con": 16,
+    "int": 12,
+    "wis": 11,
+    "cha": 7
+  },
+  "skills": {
+    "Athletics": 5,
+    "Stealth": 5
+  },
+  "languages": [
+    "Behtu",
+    "Common",
+    "Infernal"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 6 (1d6 + 3) Durchschlagschaden."
+    },
+    {
+      "name": "Kurzspeer",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfwaffenangriff: +5 auf den Trefferwurf, Reichweite 1,5 m[ ]20/60Fuß, ein Ziel. Treffer: 5 (1d4 + 3) Durchdringungsschaden."
+    },
+    {
+      "name": "Feueratem (Aufladezeit 6)",
+      "type": "special",
+      "text": "Der Behtu speit Feuer in einem 4,5 Meter breiten Kegel. Jede Kreatur in diesem Bereich erleidet 21 (5d8) Feuerschaden oder nur die Hälfte des Schadens bei einem erfolgreichenDC 13Geschicklichkeits-Rettungswurf."
+    },
+    {
+      "name": "Ichor-Infusionen",
+      "type": "special",
+      "text": "Behtu-Kriegstruppen führen1d6Fläschchen mit Ichor-Aufgüssen mit sich. Oft nehmen sie vor einem Hinterhalt einen Aufguss zu sich. In den folgenden2d6Runden erhalten die Behtus einen Bonus von +4 auf ihre Stärke- und Konstitutionswerte und vervierfachen ihre Grundgeschwindigkeit (einschließlich ihrer Klettergeschwindigkeit). Außerdem erhalten Behtus für die Dauer des Aufgusses einen Malus von -4 auf ihre Intelligenz- und Weisheitswerte. Ein Nicht-Behtu-Charakter, der einen Behtu-Trank zu sich nimmt, wird vergiftet und erleidet 10 (3d6) Giftschaden; ein erfolgreicherDC 14  Konstitutions-Rettungswurf gegen Gift halbiert den Schaden und hebt den Zustand „vergiftet“ auf."
+    }
+  ],
+  "source": "creature"
+}

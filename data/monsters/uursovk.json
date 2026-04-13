@@ -1,0 +1,78 @@
+{
+  "name": "Uursovk",
+  "size": "Large",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "large",
+      "aberration",
+      "cr9",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 17,
+  "hp": {
+    "average": 157,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 20,
+    "dex": 15,
+    "con": 21,
+    "int": 15,
+    "wis": 14,
+    "cha": 15
+  },
+  "skills": {},
+  "languages": [
+    "Deep Speech",
+    "Primordial"
+  ],
+  "challenge": {
+    "cr": "9",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Everchanging Changers",
+      "text": "The Court of All Flesh are\nbeings of pure chaos. Because their minds are pure\ndisorder, they cannot be driven mad or charmed\nand any attempts to magically compel their behavior fails."
+    },
+    {
+      "name": "Insanity Field",
+      "text": "Any creature that starts its turn\nwithin 10 feet of Uursovk must make a DC 16\nIntelligence saving throw. On a failure, the creature\nis poisoned until the start of its next turn. On a\nsuccess, the creature becomes immune to Insanity\nField for 24 hours."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "Uursovk has advantage\non saving throws against spells and other\nmagical effects."
+    },
+    {
+      "name": "Madness Aura",
+      "text": "Enemies within 60 feet who can\nsee Uursovk make a successful DC 16 Intelligence\nsaving throw in order to cast a spell. Once a creature succeeds on this saving throw, it becomes\nimmune to Uursovk’s Madness Aura for 24 hours"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Uursovk makes three attacks with bite\nor three attacks with bone spine."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft.,\none creature. Hit: 10 (1d10 + 5) piercing damage."
+    },
+    {
+      "name": "Bone Spine",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +6 to hit,\nrange 60/180 ft., one target. Hit: 11 (2d8 + 2) piercing damage."
+    },
+    {
+      "name": "Meld Flesh",
+      "type": "special",
+      "text": "Uursovk targets two adjacent creatures, who must each make a DC 16 Constitution\nsaving throw. If both fail, they meld into one gestalt\nentity, shedding any armor they were wearing. The\ngestalt entity is Medium and has hit points equal to\nthe sum of their hit points, has ability scores equal\nto the higher of each score, and inherits any conditions of the targets. The new entity is treated as an\nindividual in combat, but can take any action that\neither original target could take. At the end of each\nround, the two targets can make DC 16 Constitution saving throws to revert to their original forms\n(still sans armor), but both targets must succeed in\norder to end the effect. Otherwise, the effect ends\nafter 1 hour."
+    }
+  ],
+  "source": "creature"
+}

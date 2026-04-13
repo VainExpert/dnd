@@ -1,0 +1,44 @@
+{
+  "id": "kochausruestung",
+  "type": "item",
+  "name": "Kochausrüstung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 4,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Komplette Ausrüstung zum Kochen. Nutzen: Kann zum Verbessern vom Geschmack von Speisen und Getränken (SG 10) oder zum Erkennen von vergiftetem oder verdorbenem Essen genutzt werden (SG 10). Fertigen: Rationen",
+  "tags": [
+    "nützlich",
+    "essen",
+    "trinken",
+    "rast"
+  ]
+}

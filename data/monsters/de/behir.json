@@ -1,0 +1,70 @@
+{
+  "name": "Behir",
+  "size": "Riesig",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "huge",
+      "monstrosity",
+      "cr11",
+      "monster-manual"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 17,
+  "hp": {
+    "average": 168,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 40
+  },
+  "abilities": {
+    "str": 23,
+    "dex": 16,
+    "con": 18,
+    "int": 7,
+    "wis": 14,
+    "cha": 12
+  },
+  "skills": {
+    "Perception": 6,
+    "Stealth": 7
+  },
+  "languages": [
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "11",
+    "proficiency_bonus": 4
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Behir führt zwei Angriffe aus: einen mit seinem Biss und einen, bei dem er sein Opfer erwürgt."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +10 auf Treffer, Reichweite10 ft: , ein Ziel. Treffer: 22 (3d10 + 6) Durchdringungsschaden."
+    },
+    {
+      "name": "Einschnüren",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +10 zum Treffen, Reichweite5 ft: 1, eine große oder kleinere Kreatur. Treffer: 17 (2d10 + 6) Bludgeoning-Schaden plus 17 (2d10 + 6) Slashing-Schaden. Das Ziel wird festgehalten (Befreiung:DC 16 ), sofern der Behir nicht bereits eine Kreatur umklammert, und das Ziel ist bewegungsunfähig, bis dieser Festhalteschlag endet."
+    },
+    {
+      "name": "Blitzatem (Aufladen 5-6)",
+      "type": "special",
+      "text": "Der Behir speit eine Blitzlinie aus, die . lang und 5 ft20 ft. breit ist. Jede Kreatur in dieser Linie muss einenDC 16Geschicklichkeits-Rettungswurf durchführen; bei einem misslungenen Rettungswurf erleidet sie 66 (12d10) Blitzschaden, bei einem erfolgreichen Rettungswurf nur die Hälfte dieses Schadens."
+    },
+    {
+      "name": "Schwalbe",
+      "type": "special",
+      "text": "Der Behir führt einen Bissangriff gegen ein mittelgroßes oder kleineres Ziel aus, das er im Griff hat. Trifft der Angriff, wird das Ziel zusätzlich verschlungen, und der Griff endet. Während es verschlungen ist, ist das Ziel geblendet und gefesselt, es hat vollständige Deckung gegen Angriffe und andere Effekte außerhalb des Behir und erleidet zu Beginn jedes Zuges des Behir 21 (6d6) Säureschaden. Ein Behir kann jeweils nur eine Kreatur verschlungen haben.\n\nWenn der Behir in einem einzigen Zug 30 oder mehr Schaden durch die verschluckte Kreatur erleidet, muss er am Ende dieses Zuges einenDC 14  Konstitutionsrettungswurf bestehen oder die Kreatur wieder auswürgen, die dann in einem Feld innerhalb 10 ftvon  vom Behir liegend zu Boden fällt. Wenn der Behir stirbt, ist eine verschluckte Kreatur nicht mehr durch ihn bewegungsbeeinträchtigt und kann mit  15 ftBewegungspunkten aus dem Leichnam entkommen, wobei sie liegend aus dem Feld tritt."
+    }
+  ],
+  "source": "creature"
+}

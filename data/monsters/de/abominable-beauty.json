@@ -1,0 +1,74 @@
+{
+  "name": "Abscheuliche Schönheit",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr11",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral böse",
+  "ac": 18,
+  "hp": {
+    "average": 187,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 18,
+    "con": 18,
+    "int": 17,
+    "wis": 16,
+    "cha": 26
+  },
+  "skills": {
+    "Deception": 12,
+    "Perception": 7,
+    "Performance": 12,
+    "Persuasion": 12
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Elven",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "11",
+    "xp": 7200,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Brennende Berührung",
+      "text": "Die Slam-Angriffe der abscheulichen Schönheit verursachen 28 (8d6) Feuerschaden. Eine Kreatur, die sie berührt, erleidet ebenfalls 28 (8d6) Feuerschaden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Die abscheuliche Schönheit führt zwei Slam-Angriffe aus."
+    },
+    {
+      "name": "Friede sei mit euch",
+      "type": "special",
+      "text": "+8 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 7 (1d8 + 3) Schaden plus 28 (8d6) Feuerschaden."
+    },
+    {
+      "name": "Blendender Blick (Aufladen 5-6)",
+      "type": "special",
+      "text": "Ein Wesen im30 feetWirkungsbereich dieser abscheulichen Schönheit, das von diesem Angriff getroffen wird und deren Blick begegnet, muss einenDC 17Charisma-Rettungswurf bestehen, sonst wird es geblendet. Bei einem erfolgreichen Rettungswurf ist das Zielwesen dauerhaft immun gegen den blendenden Blick dieser abscheulichen Schönheit."
+    },
+    {
+      "name": "Ohrenbetäubende Stimme (Aufladen 5-6)",
+      "type": "special",
+      "text": "Die Stimme einer abscheulichen Schönheit ist bezaubernd, doch jedes Wesen, das sich in ihrer Nähe befindet90 feetund sie hören kann, wenn sie ihren Angriff mit „Ohrenbetäubende Stimme“ ausführt, muss einenDC 16Konstitutions-Rettungswurf bestehen, sonst wird es dauerhaft taub."
+    }
+  ],
+  "source": "creature"
+}

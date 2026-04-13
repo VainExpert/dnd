@@ -1,0 +1,74 @@
+{
+  "name": "Arktische Chimäre",
+  "size": "Groß",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr6",
+      "out-of-the-box-5e"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 14,
+  "hp": {
+    "average": 114,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 11,
+    "con": 19,
+    "int": 3,
+    "wis": 14,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 8
+  },
+  "languages": [
+    "Understands Draconic but can’t speak it"
+  ],
+  "challenge": {
+    "cr": "6",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Arktische Tarnung",
+      "text": "Die Arktische Chimäre hat einen Vorteil bei\nGeschicklichkeitsproben (Verstecken), die sie durchführt, um sich in arktischem Gelände zu verstecken."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Die Chimäre führt drei Angriffe aus: einen\nmit ihrem Biss, einen mit ihren Hörnern und einen mit ihren\nKlauen. Wenn ihr „Kalter Atem“ verfügbar ist, kann sie diesen\nanstelle ihres Bisses oder ihrer Hörner einsetzen."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite:1,5 m ., ein\nZiel. Treffer: 11 (2d6 + 4) Durchdringungsschaden."
+    },
+    {
+      "name": "Hörner",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite:1,5 m .,\nein Ziel. Treffer: 10 (1d12 + 4) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Krallen",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite:1,5 m .,\nein Ziel. Treffer: 11 (2d6 + 4) Schnittschaden."
+    },
+    {
+      "name": "Kalter Atem (Aufladezeit 5–6)",
+      "type": "special",
+      "text": "Der Drachenkopf stößt\neinen eisigen Luftstrom in Form eines 4,5 Meter breiten\nKegels aus. Jedes Wesen in diesem Bereich muss einenDC 15  Konstitutions-\nRettungswurf durchführen und erleidet bei einem misslungenen\nRettungswurf 31 (7d8) Kälteschaden oder bei einem erfolgreichen Rettungswurf die Hälfte dieses Schadens."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,83 @@
+{
+  "name": "Etali, Primal Storm",
+  "size": "Gargantuan",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "gargantuan",
+      "monstrosity",
+      "cr30",
+      "homebrew",
+      "titan"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 25,
+  "hp": {
+    "average": 676,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 30,
+    "dex": 11,
+    "con": 30,
+    "int": 3,
+    "wis": 11,
+    "cha": 11
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "30",
+    "proficiency_bonus": 9
+  },
+  "traits": [
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "text": "If the elder dinosaur fails a saving\nthrow, it can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The elder dinosaur has advantage on saving\nthrows against spells and other magical effects."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "The elder dinosaur deals double damage to objects\nand structures."
+    },
+    {
+      "name": "Lightning Storm",
+      "text": "The elder dinosaur is always accompanied by a\nraging thunderstorm similar to the effect of a <i>call lightning</i> spell. A\nstorm cloud in the shape of a cylinder that is 10 feet tall with a 60-\nfoot radius instantly forms 100 feet in the air over the elder dinosaur\nwhen it is angered or becomes violent, as long as it is outdoors.\nOn each of its turns, as an action, the elder dinosaur can choose a\npoint it can see within 120 feet of it. A bolt of lightning flashes down\nfrom the cloud to that point. Each creature within 10 feet of that\npoint must make a DC 20 Dexterity saving throw, taking 21 (6d6)\nlightning damage on a failed save, or half as much damage on a\nsuccessful one."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The elder dinosaur can use its Frightful Presence and\ncall down two lightning strikes from its Lightning Storm. It then\nmakes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +19 to hit, reach 10 ft., one target. Hit: 36\n(4d12 + 10) piercing damage. If the target is a creature, it is grappled\n(escape DC 20). Until this grapple ends, the target is restrained, and\nthe elder dinosaur can’t bite another target."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +19 to hit, reach 15 ft., one target. Hit:\n28 (4d8 + 10) slashing damage."
+    },
+    {
+      "name": "Frightful Presence",
+      "type": "special",
+      "text": "Each creature of the elder dinosaur’s choice\nwithin 120 feet of it and aware of it must succeed on a DC 17\nWisdom saving throw or become frightened for 1 minute. A creature\ncan repeat the saving throw at the end of each of its turns, with\ndisadvantage if the elder dinosaur is within line of sight, ending the effect on itself on a success. If a creature’s saving throw is successful\nor the effect ends for it, the creature is immune to the elder\ndinosaur’s Frightful Presence for the next 24 hours."
+    },
+    {
+      "name": "Swallow",
+      "type": "special",
+      "text": "The elder dinosaur makes one bite attack against a Large or\nsmaller creature it is grappling. If the attack hits, that creature takes\nthe bite’s damage, the target is swallowed, and the grapple ends.\nWhile swallowed, the creature is blinded and restrained, it has total\ncover against attacks and other effects outside the elder dinosaur,\nand it takes 56 (16d6) acid damage at the start of each of the elder\ndinosaur’s turns.\n\nIf the elder dinosaur takes 60 damage or more on a single turn\nfrom a creature inside it, it must succeed on a DC 20 Constitution\nsaving throw at the end of that turn or regurgitate all swallowed\ncreatures, which fall prone in a space within 10 feet of it. If the elder\ndinosaur dies, a swallowed creature is no longer restrained by it\nand can escape from the corpse by using 20 feet of movement,\nexiting prone."
+    }
+  ],
+  "source": "creature"
+}

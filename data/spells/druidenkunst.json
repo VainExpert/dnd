@@ -1,0 +1,16 @@
+{
+  "id": "druidenkunst",
+  "name": "Druidenkunst",
+  "level": 0,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Druide"
+  ],
+  "text": "Mit den Geistern der Natur erzeugst du einen der folgenden magischen Effekte in Reichweite:\n\n* Du erschaffst einen winzigen, harmlosen sensorischen Effekt, der für die nächsten 24 h das Wetter für deinen Ort vorhersagt (Gold = wolkenlos, Wolke = Regen, Schneeflocke = Schnee, oder ähnlich), erscheint für 1 Runde.\n\n* Eine Blume erblüht, eine Samenkapsel öffnet sich oder eine Blattknospe blüht auf.\n\n* Du entzündest oder löschst unmittelbar eine Kerze, Fackel oder ein kleines Lagerfeuer.\n\n* Du erzeugst einen unmittelbaren, harmlosen sensorischen Effekt (fallende Blätter, Windhauch, …), dieser muss in einen 1,5 m Würfel passen."
+}

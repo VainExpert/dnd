@@ -1,0 +1,46 @@
+{
+  "id": "strudelhut",
+  "type": "item",
+  "name": "Strufelhut",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "head",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 400,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Der Hut hat 3 Ladungen und bekommt alle täglich am Morgen zurück. Du kannst mit einer Aktion eine Ladung verwenden um einen magischen Strudel aus dem Hut herausbrechen zu lassen. Der Strudel füllt einen 3 m Würfel ausgehend vom Hut und hält für 1 h. Während der Strudel existiert ist dort schwieriges Terrain. Das Aussehen des Strudels ist komplett dir überlassen.",
+  "tags": [
+    "magisch",
+    "hut",
+    "kopf",
+    "ladungen",
+    "aktion",
+    "schwieriges terrain"
+  ]
+}

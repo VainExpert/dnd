@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-helm-der-pracht",
+  "type": "item",
+  "name": "Helm der Pracht",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "sehr selten",
+  "requires_attunement": true,
+  "attunement_text": "erfordert Einstimmung",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "head",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser umwerfende Helm ist mit 1W10 Diamanten, 2W10 Rubinen, 3W10 Feueropalen und 4W10 Opalen besetzt. Wenn ein Edelstein vom Helm gebrochen wird, zerfällt der Edelstein zu Staub. Wenn alle Edelsteine entfernt oder zerstört wurden, verliert der Helm seine Magie. Wenn du ihn trägst, erhältst du die folgenden Vorteile: Würfle mit einem W20, wenn du den Helm trägst und Feuerschaden erleidest, weil dir ein Rettungswurf gegen einen Zauber misslungen ist. Wenn du eine 1 würfelst, verströmt der Helm Lichtstrahlen von seinen übrigen Edelsteinen. Jede Kreatur im Abstand von bis zu 18 Metern vom Helm außer dir muss einen SG-17-Geschick-lichkeitsrettungswurf bestehen, oder sie wird von einem Strahl getroffen und erleidet so viel gleißenden Schaden, wie Edelsteine auf dem Helm übrig sind. Der Helm und seine Edelsteine werden dann zerstört.",
+  "tags": []
+}

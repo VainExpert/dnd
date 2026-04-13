@@ -1,0 +1,16 @@
+{
+  "id": "shillelagh",
+  "name": "Shillelagh",
+  "level": 0,
+  "school": "Beschwörung",
+  "casting_time": "1 Bonus Aktion",
+  "range": "Berührung",
+  "components": "V, G, M (Mistelzweig, Kleeblatt und Keule oder Stab)",
+  "duration": "1 min",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Druide"
+  ],
+  "text": "Das Holz der Keule oder des Stabs, den du hältst, wird von der Macht der Natur erfüllt.\nFür die Wirkungsdauer kannst du für Angriffs- und Schadenswürfe von Angriffen mit der Waffe deinen Zauberfähigkeit-Modifikator anstelle von deinem STR-Modifikator nutzen.\nDer Schadenswürfel der Waffe wird zu einem W8 und die Waffe wird magisch.\nDer Zauber endet, wenn er erneut gewirkt oder die Waffe losgelassen wird."
+}

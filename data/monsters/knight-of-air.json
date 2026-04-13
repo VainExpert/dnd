@@ -1,0 +1,62 @@
+{
+  "name": "Knight of Air",
+  "size": "Medium",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr8",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 20,
+  "hp": {
+    "average": 77,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 22,
+    "con": 13,
+    "int": 14,
+    "wis": 14,
+    "cha": 16
+  },
+  "skills": {
+    "Acrobatics": 9,
+    "Stealth": 9,
+    "Perception": 5
+  },
+  "languages": [
+    "Auran",
+    "Common"
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The Knight’s innate spellcasting\nability is Wisdom (spell save DC 13, +5\nto hit with spell attacks). It can innately cast the\nfollowing spells, requiring no components:\n\n* Cantrips (at will): <i>mage hand </i>(the hand is invisible)\n\n* 3/day each: <i>invisibility, misty step, gust of wind</i>\n\n* 1/day each: <i>wind wall, gaseous form</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The Knight makes three attacks with\nthe Sword of Clouds."
+    },
+    {
+      "name": "The Sword of Clouds",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9\nto hit, reach 5 ft., one target. Hit: 15 (2d8 + 6)\npiercing damage."
+    }
+  ],
+  "source": "creature"
+}

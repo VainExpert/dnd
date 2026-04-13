@@ -1,0 +1,16 @@
+{
+  "id": "dissonantes-fluestern",
+  "name": "Dissonantes Flüstern",
+  "level": 1,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde"
+  ],
+  "text": "Du flüsterst eine missklingende Melodie, die nur eine Kreatur deiner Wahl in Reichweite hören kann.\nDas Ziel muss einen WIS-Rettungswurf machen.\nBei Fehlschlag: 3W6 psychischen Schaden und es muss sich mit einer Reaktion, sofern verfügbar, so weit von dir weg bewegen wie es seine Bewegungsgeschwindigkeit erlaubt. Die Kreatur bewegt sich nicht in offensichtlich gefährliches Gelände.\nBei Erfolg: Die Hälfte des Schadens und es entfernt sich nicht von dir. Taube Kreaturen sind automatisch erfolgreich.\n\nAuf höheren Level gewirkt: pro Level 1W6 mehr Schaden"
+}

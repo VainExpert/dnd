@@ -1,0 +1,78 @@
+{
+  "name": "Oleander Dragon",
+  "size": "Large",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "large",
+      "dragon",
+      "cr8",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 16,
+  "hp": {
+    "average": 119,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 16,
+    "int": 16,
+    "wis": 20,
+    "cha": 16
+  },
+  "skills": {
+    "Arcana": 6,
+    "Insight": 8,
+    "Nature": 6,
+    "Perception": 8,
+    "Stealth": 6
+  },
+  "languages": [
+    "Draconic",
+    "Elven",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Shapechanger",
+      "text": "As an action, the dragon can polymorph\ninto a Small or Medium humanoid or back\ninto its true form. Its statistics, other than its size,\nare the same in each form. Any worn or carried\nequipment isn’t transformed. It reverts to its true\nform if it dies."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The dragon has advantage\non saving throws against spells and other\nmagical effects."
+    },
+    {
+      "name": "False Appearance",
+      "text": "While the dragon remains\nmotionless, it is indistinguishable from a shrub or\nsmall tree of blooming oleander."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Implant Nightmare",
+      "type": "special",
+      "text": "The dragon reaches into the\nmind of a target it can see within 60 feet and manifests\nthe target’s deepest fear. The target must\nmake a DC 16 Wisdom saving throw. On a failed\nsave, the target becomes frightened for 1 minute.\nAt the start of each of the target’s turns, the target\nmust repeat the saving throw or take 22 (4d10)\npsychic damage. On a successful save, the nightmare\nends."
+    },
+    {
+      "name": "Pollen Breath (Recharge 5–6)",
+      "type": "special",
+      "text": "The dragon exhales\na swirling cloud of pollen and red and purple petals\nin a 60-foot cone. Each creature in the area must\nmake a DC 16 Wisdom saving throw. On a failed\nsave, the creature becomes charmed until the\nend of their next round. Creatures who successfully\nsave cannot be affected by Pollen Breath for\n24 hours."
+    },
+    {
+      "name": "Song of Cestilani (1/Day)",
+      "type": "special",
+      "text": "The oleander dragon\nsings a magical song. Each enemy that can hear\nit must succeed on a DC 16 Intelligence saving\nthrow or take 22 (4d8 + 4) psychic damage and\nbe stunned for 1 minute. A creature can repeat this\nsaving throw at the end of each of its turns, ending\nthe effect on itself on a success."
+    }
+  ],
+  "source": "creature"
+}

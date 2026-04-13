@@ -1,0 +1,18 @@
+{
+  "id": "zone-der-wahrheit",
+  "name": "Zone der Wahrheit",
+  "level": 2,
+  "school": "Verzauberung",
+  "casting_time": "1 Aktion",
+  "range": "18 m (4,5 m Sphäre)",
+  "components": "V, G",
+  "duration": "10 min",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Kleriker",
+    "Paladin"
+  ],
+  "text": "Du erschaffst eine magische Zone in einer 4,5 m Sphäre, zentriert auf einen Punkt deiner Wahl in Reichweite.\nDie Zone schützt vor Täuschungen. Bis der Zauber endet, muss jede Kreatur, die den Bereich des Zaubers erstmals betritt oder ihren Zug darin startet, einen CHA-Rettungswurf ausführen.\nBei Fehlschlag: Kreatur kann nicht absichtlich lügen. Du kennst das Ergebnis der Rettungswürfe jeder Kreatur.\nEine betroffene Kreatur ist sich des Zaubers bewusst und kann Fragen vermeiden, bei denen die Antwort eine Lüge wäre. Eine ausweichende Formulierung, in den Grenzen der Wahrheit, ist hier möglich."
+}

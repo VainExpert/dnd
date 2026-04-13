@@ -1,0 +1,61 @@
+{
+  "name": "Forgotten One",
+  "size": "Tiny",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "tiny",
+      "fey",
+      "cr1",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 7,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 3,
+    "dex": 19,
+    "con": 11,
+    "int": 14,
+    "wis": 17,
+    "cha": 20
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Elvish",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The forgotten one’s spellcasting ability is\nCharisma (spell save DC 15, +7 to hit with spell attacks). The forgotten\none can innately cast the following, requiring no material components.\n\n* At will: <i>blur</i>"
+    },
+    {
+      "name": "Environmental Awareness",
+      "text": "The very earth speaks to a forgotten one. It\ncannot be surprised."
+    },
+    {
+      "name": "Poison Use",
+      "text": "Forgotten Ones are skilled in the use of poison."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Spear",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range\n20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 7 (2d6) poison damage."
+    }
+  ],
+  "source": "creature"
+}

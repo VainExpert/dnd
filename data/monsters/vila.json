@@ -1,0 +1,91 @@
+{
+  "name": "Vila",
+  "size": "Medium",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr5",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 15,
+  "hp": {
+    "average": 77,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 20,
+    "con": 13,
+    "int": 11,
+    "wis": 14,
+    "cha": 16
+  },
+  "skills": {
+    "Animal Handling": 8,
+    "Insight": 5,
+    "Intimidation": 6,
+    "Perception": 8,
+    "Stealth": 8
+  },
+  "languages": [
+    "Common",
+    "Sylvan",
+    "telepathy 60 ft. (beasts only)"
+  ],
+  "challenge": {
+    "cr": "5",
+    "xp": 1800,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Dance of the Luckless (1/Day)",
+      "text": "Vila who dance for one hour create a fairy ring of small gray mushrooms. The ring lasts seven days and has a 50-foot diameter per dancing vila. Non.vila who fall asleep (including magical sleep) inside the ring have disadvantage on skill checks for 24 hours from the time they awaken."
+    },
+    {
+      "name": "Forest Quickness",
+      "text": "While in forest surroundings, a vila receives a +4 bonus on initiative checks."
+    },
+    {
+      "name": "Forest Meld",
+      "text": "A vila can meld into any tree in her forest for as long as she wishes, similar to the meld into stone spell."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The vila's innate spellcasting ability is Charisma (spell save DC 14). She can innately cast the following spells, requiring no material components:\n\n3/day: sleep\n\n1/week: control weather"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "A vila makes two shortsword attacks or two shortbow attacks."
+    },
+    {
+      "name": "+1 Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d6 + 6) piercing damage."
+    },
+    {
+      "name": "+1 Shortbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +9 to hit, range 80/320 ft., one target. Hit: 9 (1d6 + 6) piercing damage."
+    },
+    {
+      "name": "Fascinate (1/Day)",
+      "type": "special",
+      "text": "When the vila sings, all those within 60 feet of her and who can hear her must make a successful DC 14 Charisma saving throw or be stunned for 1d4 rounds. Those who succeed on the saving throw are immune to that vila's singing for 24 hours."
+    },
+    {
+      "name": "Forest Song (1/Day)",
+      "type": "special",
+      "text": "The vila magically calls 2d6 wolves or 2 wampus cats. The called creatures arrive in 1d4 rounds, acting as allies of the vila and obeying its spoken commands. The beasts remain for 1 hour, until the vila dies, or until the vila dismisses them as a bonus action."
+    }
+  ],
+  "source": "creature"
+}

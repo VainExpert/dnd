@@ -1,0 +1,52 @@
+{
+  "name": "Nupperibo",
+  "size": "Medium",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr1/2",
+      "mordenkainens-tome-of-foes",
+      "devil"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 13,
+  "hp": {
+    "average": 11,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 13,
+    "int": 3,
+    "wis": 8,
+    "cha": 1
+  },
+  "skills": {
+    "Perception": 1
+  },
+  "languages": [
+    "understands Infernal but can't speak"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Cloud of Vermin",
+      "text": "Any creature, other than a devil, that starts its turn within 20 feet of the nupperibo must make a DC 11 Constitution saving throw. A creature within the areas of two or more nupperibos makes the saving throw with disadvantage. On a failure, the creature takes 2 (1d4) piercing damage."
+    },
+    {
+      "name": "Hunger-Driven",
+      "text": "In the Nine Hells, the nupperibos can flawlessly track any creature that has taken damage from any nupperibo's Cloud of Vermin within the previous 24 hours."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

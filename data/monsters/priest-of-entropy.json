@@ -1,0 +1,58 @@
+{
+  "name": "Priest of Entropy",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr12",
+      "homebrew"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 14,
+  "hp": {
+    "average": 136,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 14,
+    "int": 11,
+    "wis": 17,
+    "cha": 15
+  },
+  "skills": {
+    "Intimidation": 6,
+    "Religion": 4
+  },
+  "languages": [
+    "any two languages"
+  ],
+  "challenge": {
+    "cr": "12",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "text": "The priest is a 12th level spellcaster. Its\nspellcasting ability is Wisdom (spell save DC 15, +7 to\nhit with spell attacks). It has the following cleric spells\nprepared:\n\n* Cantrips (at will): <i>guidance, light, resistance, sacred flame, thaumaturgy</i>\n\n* 1st level (4 slots): <i>bane, detect magic, guiding bolt, healing word, inflict wounds</i>\n\n* 2nd level (3 slots): <i>gentle repose, hold person, spiritual weapon, silence</i>\n\n* 3rd level (3 slots): <i>animate dead, dispel magic, mass healing word, meld into stone, protection from energy, sending</i>\n\n* 4th level (3 slots): <i>banishment, blight, death ward</i>\n\n* 5th level (2 slots): <i>contagion, circle of power, hallow, insect plague</i>\n\n* 6th level (1 slot): <i>forbiddance, true seeing</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Spear",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft. or\nranged 20/60 ft., one creature. Hit: 5 (1d6 + 2) piercing\ndamage, or 6 (1d8+2) piercing damage if used with two\nhands to make a melee attack."
+    },
+    {
+      "name": "Arcane Disruption",
+      "type": "special",
+      "text": "The priest conjures an aura of\ndisruptive energy that radiates from it in a 15 foot\nradius and moves with the priest, centered on it. The\naura lasts until the priest dismisses it as action, or dies.\nWhile inside the aura, any creature that attempts to\ncast a spell must first succeed on a DC 15 Constitution\nsaving throw. If they fail the save, their spell fails to cast\nand the spell slot is wasted."
+    }
+  ],
+  "source": "creature"
+}

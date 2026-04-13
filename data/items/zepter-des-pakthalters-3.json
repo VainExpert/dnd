@@ -1,0 +1,46 @@
+{
+  "id": "zepter-des-pakthalters-3",
+  "type": "item",
+  "name": "Zepter des Pakthalters, +3",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "sehr selten",
+  "requires_attunement": true,
+  "attunement_text": "durch einen Hexenmeister",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1200,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn dieses Zepter getragen wird, bekommst du einen +3 Bonus auf Zauberangriffswürfe und der Zauberrettung-SG für deine Hexenmeister-Zauber. Auch kannst du einmal pro Langer Rast mit einer Aktion einen Zauberplatz wiederherstellen.",
+  "tags": [
+    "magisch",
+    "zepter",
+    "bonus",
+    "hexenmeister",
+    "aktion",
+    "zauberplatz"
+  ]
+}

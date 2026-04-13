@@ -1,0 +1,59 @@
+{
+  "name": "Suturefly",
+  "size": "Tiny",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "tiny",
+      "beast",
+      "cr1/4",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 7,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 1,
+    "dex": 19,
+    "con": 10,
+    "int": 1,
+    "wis": 12,
+    "cha": 4
+  },
+  "skills": {
+    "Stealth": 6
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Camouflage",
+      "text": "A suturefly in forest surroundings has advantage on Dexterity (Stealth) checks."
+    },
+    {
+      "name": "Detect Blasphemy",
+      "text": "The most common variety of suturefly attacks any creature that blasphemes aloud, which it can detect at a range of 100 feet unless the blasphemer makes a successful DC 13 Charisma saving throw."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Sew",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the suturefly sews the target's mouth, nose, or eye closed. With supernatural speed, the suturefly repeatedly pierces the target's face, each time threading a loop of the target's own skin through the previous hole. These skin loops rapidly blacken, shrink, and draw the orifice tightly closed. It takes two actions and a sharp blade to sever the loops and reopen the orifice, and the process causes intense pain and 2 slashing damage. A victim whose mouth and nose have been sewn shut begins suffocating at the start of his or her next turn."
+    }
+  ],
+  "source": "creature"
+}

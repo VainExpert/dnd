@@ -1,0 +1,65 @@
+{
+  "name": "Living Trap",
+  "size": "Large",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr12",
+      "homebrew"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 17,
+  "hp": {
+    "average": 210,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 22,
+    "dex": 10,
+    "con": 20,
+    "int": 5,
+    "wis": 11,
+    "cha": 1
+  },
+  "skills": {
+    "Stealth": 4
+  },
+  "languages": [
+    "Understands Common but speaks only through the use of its Mimicry trait"
+  ],
+  "challenge": {
+    "cr": "12",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Shapechanger",
+      "text": "The living trap can use its action to\npolymorph into a section of ruined terrain no larger than\n10 foot radius sphere. This form can include objects and\nstructural features such as doors and pillars. Its statistics\nare the same in each form. It reverts to its true form if it\ndies."
+    },
+    {
+      "name": "False Appearance (terrain form only)",
+      "text": "The living trap is indistinguishable from an ordinary section of ruined terrain."
+    },
+    {
+      "name": "Mimicry",
+      "text": "The living trap can mimic any sounds it has\nheard, including voices. A creature that hears the\nsounds can tell they are imitations with a successful DC\n17 Wisdom (Insight) check."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The living trap makes two melee attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +10 to hit, reach 5 ft., one\ntarget. Hit: 19 (3d8 + 6) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

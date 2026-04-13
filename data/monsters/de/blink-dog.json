@@ -1,0 +1,60 @@
+{
+  "name": "Blink Dog",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr1/4",
+      "monster-manual"
+    ]
+  },
+  "alignment": "gesetztreu-gut",
+  "ac": 13,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 17,
+    "con": 12,
+    "int": 10,
+    "wis": 13,
+    "cha": 11
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 5
+  },
+  "languages": [
+    "Blink Dog",
+    "understands Sylvan but can't speak it"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Scharfes Gehör und Geruchssinn",
+      "text": "Der Hund hat einen Vorteil bei Weisheits- (Wahrnehmungs-)Proben, die auf Gehör oder Geruch beruhen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +3 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 4 (1d6 + 1) Durchdringungsschaden."
+    },
+    {
+      "name": "Teleport (Aufladen 4-6)",
+      "type": "special",
+      "text": "Der Hund teleportiert sich auf magische Weise – zusammen mit jeglicher Ausrüstung, die er trägt oder bei sich hat – bis zu 40 ft10 Meter weit zu einem freien Platz, den er sehen kann. Vor oder nach der Teleportation kann der Hund einen Bissangriff ausführen."
+    }
+  ],
+  "source": "creature"
+}

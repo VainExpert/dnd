@@ -1,0 +1,72 @@
+{
+  "name": "Derro Savant (A)",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr3",
+      "out-of-the-abyss",
+      "derro"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 13,
+  "hp": {
+    "average": 49,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 9,
+    "dex": 14,
+    "con": 12,
+    "int": 11,
+    "wis": 5,
+    "cha": 14
+  },
+  "skills": {
+    "Stealth": 4
+  },
+  "languages": [
+    "Dwarvish",
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Insanity",
+      "text": "The derro has advantage on saving throws against being charmed or frightened."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The derro has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the derro has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The derro is a 5th-level spellcaster. It's spellcasting ability is Charisma (save DC 12, +4 to hit with spell attacks). The derro knows the following sorcerer spells:\n\n* Cantrips (at will): <i>acid splash, light, mage hand, message, ray of frost</i>\n\n* 1st level (4 slots): <i>burning hands, chromatic orb, sleep</i>\n\n* 2nd level (3 slots): <i>invisibility, spider climb</i>\n\n* 3rd level (2 slots): <i>blink, lightning bolt</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Hooked Shortspear",
+      "type": "special",
+      "text": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 (1d4-1) piercing damage. If the target is a creature, the derro can choose to deal no damage and try to trip the target instead, in which case the target must succeed on a DC 9 Strength saving throw or fall prone."
+    },
+    {
+      "name": "Light Repeating Crossbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +4 to hit, range 40/160 ft., one target. Hit: 6 (1d8+2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

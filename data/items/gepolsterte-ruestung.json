@@ -1,0 +1,48 @@
+{
+  "id": "gepolsterte-ruestung",
+  "type": "item",
+  "name": "Gepolsterte Rüstung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 4,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 5,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": {
+    "base": 11,
+    "dex_bonus": true,
+    "stealth_disadvantage": true,
+    "type": "leicht"
+  },
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Besteht aus Schichten von Stofflagen und Wattierung.",
+  "tags": [
+    "rüstung",
+    "leicht",
+    "abwehr"
+  ]
+}

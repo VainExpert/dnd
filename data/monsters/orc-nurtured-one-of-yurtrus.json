@@ -1,0 +1,66 @@
+{
+  "name": "Orc Nurtured One of Yurtrus",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/2",
+      "volos-guide",
+      "orc"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 9,
+  "hp": {
+    "average": 30,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 8,
+    "con": 16,
+    "int": 7,
+    "wis": 11,
+    "cha": 7
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Orc"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Aggressive",
+      "text": "As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
+    },
+    {
+      "name": "Corrupted Carrier",
+      "text": "When the orc is reduced to 0 hit points, it explodes, and any creature within 10 feet of it must make a DC 13 Constitution saving throw. On a failed save, the creature takes 14 (4d6) poison damage and becomes poisoned. On a success, the creature takes half as much damage and isn't poisoned. A creature poisoned by this effect can repeat the save at the end of each of its turn, ending the effect on itself on a success. While poisoned by this effect, a creature can't regain hit points."
+    },
+    {
+      "name": "Nurtured One of Yurtrus",
+      "text": "The orc has advantage on saving throws against poison and disease."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) slashing damage plus 2 (1d4) necrotic damage."
+    },
+    {
+      "name": "Corrupted Vengeance",
+      "type": "special",
+      "text": "The orc reduces itself to 0 hit points, triggering its Corrupted Carrier trait."
+    }
+  ],
+  "source": "creature"
+}

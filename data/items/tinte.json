@@ -1,0 +1,46 @@
+{
+  "id": "tinte",
+  "type": "item",
+  "name": "Tinte (30 ml)",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 10,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Tinte zum Schreiben und Zeichnen von bis zu 500 Seiten Papier oder Pergament.",
+  "tags": [
+    "schreiben",
+    "markieren",
+    "nützlich",
+    "kommunikation",
+    "soziales",
+    "konsumiert"
+  ]
+}

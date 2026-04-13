@@ -1,0 +1,16 @@
+{
+  "id": "hoellischer-tadel",
+  "name": "Höllischer Tadel",
+  "level": 2,
+  "school": "Hervorrufung",
+  "casting_time": "1 Reaktion, wenn Kreatur in 18 m Radius, die du sehen kannst, dir Schaden macht",
+  "range": "18 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Hexenmeister"
+  ],
+  "text": "Du deutest mit deinem Finger und die Kreatur, die dich verletzt hat, wird für einen kurzen Moment in höllische Flammen gehüllt.\nSie muss einen DEX-Rettungswurf machen.\nBei Fehlschlag: 2W10 Feuerschaden, sonst die Hälfte\n\nAuf höheren Level gewirkt: pro Level 1W10 mehr Schaden"
+}

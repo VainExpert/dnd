@@ -1,0 +1,18 @@
+{
+  "id": "drachenodem",
+  "name": "Drachenodem",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Bonus Aktion",
+  "range": "Berührung (4,5 m Kegel)",
+  "components": "V, G, M (eine scharfe Chili)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du berührst eine willige Kreatur und wählst Säure, Kälte, Feuer, Blitz oder Gift.\nBis der Zauber endet kann das Ziel eine Magie Aktion machen um einen 4,5 m Kegel des gewählten Elements zu speien.\nJede Kreatur in dem Bereich muss einen DEX-Rettungswurf machen.\nBei Fehlschlag: 3W8 Schaden des gewählten Typs, sonst die Hälfte\n\nAuf höheren Level gewirkt: pro Level 1W6 mehr Schaden"
+}

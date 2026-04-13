@@ -1,0 +1,65 @@
+{
+  "name": "Wiggan Nettlebee",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr2",
+      "elemental-evil",
+      "halfling"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 11,
+  "hp": {
+    "average": 36,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 12,
+    "con": 12,
+    "int": 14,
+    "wis": 15,
+    "cha": 13
+  },
+  "skills": {
+    "Deception": 3,
+    "Insight": 4
+  },
+  "languages": [
+    "Common",
+    "Halfling"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Brave Devotion",
+      "text": "Wiggan has advantage on saving throws against being charmed or frightened."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "Wiggan is a 4th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). He has the following cleric spells prepared:\n\n* Cantrips (at will): guidance, light, mending, shillelagh, thaumaturgy\n\n* 1st Level (4 slots): animal friendship, cure wounds, healing word, inflict wounds, speak with animals\n\n* 2nd Level (3 slots): barkskin, spike growth, spiritual weapon"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Wiggan makes two attacks with his wooden cane."
+    },
+    {
+      "name": "Wooden Cane",
+      "type": "special",
+      "text": "Melee Weapon Attack: +0 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 1 (1d4-1) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh."
+    }
+  ],
+  "source": "creature"
+}

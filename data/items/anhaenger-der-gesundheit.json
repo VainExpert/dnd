@@ -1,0 +1,47 @@
+{
+  "id": "anhaenger-der-gesundheit",
+  "type": "item",
+  "name": "Anhänger der Gesundheit",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "neck",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 150,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diesen Anhänger trägst, kannst du mit einer Aktion 2W4 + TP bei dir selbst heilen. Diese Fähigkeitkann nur einmal pro Tag genutzt werden und wird am Morgen zurückgesetzt. Außerdem hat der Träger Vorteil auf Rettungswürfe gegen den Vergiftet Zustand (bekommen oder beenden).",
+  "tags": [
+    "magisch",
+    "schutz",
+    "nützlich",
+    "abenteuer",
+    "einstimmung",
+    "anhänger",
+    "heilung"
+  ]
+}

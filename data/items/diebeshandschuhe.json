@@ -1,0 +1,44 @@
+{
+  "id": "diebeshandschuhe",
+  "type": "item",
+  "name": "diebeshandschuhe",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hands",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 300,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Die Handschuhe können nicht erkannt werden, wenn sie getragen werden. Der Träger bekommt einen +5 Bonus auf Fingerfertigkeit-Würfe.>",
+  "tags": [
+    "magisch",
+    "handschuhe",
+    "bonus",
+    "fingerfertigkeit"
+  ]
+}

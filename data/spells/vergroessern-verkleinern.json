@@ -1,0 +1,20 @@
+{
+  "id": "vergroessern-verkleinern",
+  "name": "Vergrößern / Verkleinern",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V, G, M (Prise Eisenpulver)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Druide",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Wenn das Ziel eine Kreatur ist, verändert sich auch die Ausrüstung. Wird ein Gegenstand fallen gelassen, kehrt dieser sofort zu seiner normalen Größe zurück.\nVergrößern: Die Größe des Ziels verdoppelt sich in alle Richtungen und sein Gewicht wird mit 8 multipliziert. Dadurch steigt die Größen-Klasse um 1. Wenn nicht genug Platz vorhanden ist, wird das Wesen so groß wie die Umgebung erlaubt. Bis der Zauber endet ist das Ziel bei allen STR-Würfen im Vorteil. Vergrößerte Waffen fügen 1W4 mehr Schaden zu.\nVerkleinern: Die Größe des Ziels halbiert sich und sein Gewicht wird auf 1/8 verringert. Dadurch verringert sich die Größen-Klasse um 1. Bis der Zauber endet, ist das Ziel bei allen STR-Würfen im Nachteil. Verkleinerte Waffen fügen 1W4 weniger Schaden zu, aber nicht weniger als 1."
+}

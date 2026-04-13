@@ -1,0 +1,60 @@
+{
+  "name": "Alkith",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr11",
+      "mordenkainens-tome-of-foes",
+      "demon"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 17,
+  "hp": {
+    "average": 157,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 19,
+    "con": 22,
+    "int": 6,
+    "wis": 11,
+    "cha": 7
+  },
+  "skills": {
+    "Stealth": 8
+  },
+  "languages": [
+    "understands Abyssal but can't speak"
+  ],
+  "challenge": {
+    "cr": "11",
+    "xp": 7200,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Amorph",
+      "text": "Der Alkilith kann sich durch einen Raum bewegen, der so schmal wie1 inch  breit ist, ohne sich dabei zusammenzudrücken."
+    },
+    {
+      "name": "Schein",
+      "text": "Solange der Alkilith sich nicht bewegt, ist er von gewöhnlichem Schleim oder Pilz nicht zu unterscheiden."
+    },
+    {
+      "name": "Foment-Wahnsinn",
+      "text": "Jedes Wesen, das kein Dämon ist und seinen Zug in30 feetder Nähe des Alkiliths beginnt, muss einenDC 18Weisheits-Rettungswurf bestehen; andernfalls hört es für einen Moment ein leises Summen in seinem Kopf und erhält Nachteil bei seinem nächsten Angriffswurf, Rettungswurf oder Fähigkeitscheck.\nWenn der Rettungswurf gegen „Wahnsinn schüren“ um 5 oder mehr verfehlt wird, wird die Kreatur stattdessen für 1 Minute dem Zauber „Verwirrung“ unterworfen (keine Konzentration seitens des Alkiliths erforderlich). Solange sie unter dem Einfluss dieser Verwirrung steht, ist die Kreatur immun gegen „Wahnsinn schüren“."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Alkilith hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

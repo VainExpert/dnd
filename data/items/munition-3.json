@@ -1,0 +1,45 @@
+{
+  "id": "munition-3",
+  "type": "item",
+  "name": "Munition, +3",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "ammunition",
+  "rarity": "sehr selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1500,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Kann Munition jeglischer Art sein, in den normalen Sets (Pfeile, Bolzen, ...). Du erhältst einen +3 Bonus auf alle Angriffs- und Schadenswürfe, die du mit diesen magischen Geschossen ausführst. Sobald sie ein Ziel treffen, sind die Geschosse nicht mehr magisch.",
+  "tags": [
+    "munition",
+    "fernkampf",
+    "magisch",
+    "bonus",
+    "kampf"
+  ]
+}

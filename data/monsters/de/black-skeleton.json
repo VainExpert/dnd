@@ -1,0 +1,63 @@
+{
+  "name": "Schwarzes Skelett",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr4",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 17,
+  "hp": {
+    "average": 71,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 19,
+    "con": 13,
+    "int": 13,
+    "wis": 10,
+    "cha": 14
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 6
+  },
+  "languages": [
+    "the languages it knew in life but can’t speak"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Meister des Kurzschwerts",
+      "text": "Schwarze Skelette erhalten Verteidigungsboni (+2 auf\nRK) und Boni auf Angriffe (+2 auf Treffer), wenn sie zwei Kurzschwerter führen\n(in den Werten enthalten)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Das schwarze Skelett führt zwei Klauenangriffe oder zwei\nKurzschwertangriffe aus."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 zum Treffen, Reichweite 1,5 m., ein Ziel. Treffer: 8\n(1d8 + 4) Schnittschaden, und der Stärke-Wert des Ziels wird\num 1d4. verringert. Das Ziel stirbt, wenn seine Stärke dadurch auf 0 sinkt. Andernfalls\nhält die Verringerung so lange an, bis das Ziel eine kurze oder lange Erholung absolviert hat."
+    },
+    {
+      "name": "Kurzschwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +8 auf Treffer, Reichweite 1,5 m., ein Ziel.\nTreffer: 11 (2d6 + 4) Durchdringungsschaden, und der Stärke-Wert des Ziels wird\num 1d4. verringert. Das Ziel stirbt, wenn seine Stärke dadurch auf 0 sinkt. Andernfalls\nhält die Verringerung so lange an, bis das Ziel eine kurze oder lange Erholung absolviert hat"
+    }
+  ],
+  "source": "creature"
+}

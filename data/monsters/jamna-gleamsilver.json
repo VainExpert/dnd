@@ -1,0 +1,75 @@
+{
+  "name": "Jamna Gleamsilver",
+  "size": "Small",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr1",
+      "tyranny-of-dragons",
+      "gnome"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 15,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 17,
+    "con": 14,
+    "int": 15,
+    "wis": 10,
+    "cha": 12
+  },
+  "skills": {
+    "Acrobatics": 5,
+    "Deception": 3,
+    "Insight": 2,
+    "Perception": 4,
+    "Persuasion": 3,
+    "Stealth": 7
+  },
+  "languages": [
+    "Common",
+    "Gnomish",
+    "Goblin",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Cunning Action",
+      "text": "Jamna can take a bonus action to take the Dash, Disengage, or Hide action."
+    },
+    {
+      "name": "Gnome Cunning",
+      "text": "Jamna has advantage on Intelligence, Wisdom and Charisma saving throws against magic."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "Jamna is a 4th-level spellcaster that uses Intelligence as her spellcasting ability (spell save DC 12, +4 to hit with spell attacks). Jamna has the following spells prepared from the wizard spell list.\n\n* Cantrips (at will): <i>mage hand, minor illusion, prestidigitation, ray of frost</i>\n\n* 1st level (3 slots): <i>charm person, color spray, disguise self, longstrider</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Jamna attacks twice with her shortswords."
+    },
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage, or 9 (1d6 + 3) plus (1d6) piercing damage if the target is Medium or larger."
+    }
+  ],
+  "source": "creature"
+}

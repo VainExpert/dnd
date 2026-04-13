@@ -1,0 +1,67 @@
+{
+  "name": "Pyrefly",
+  "size": "Tiny",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "tiny",
+      "elemental",
+      "cr1/4",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 12,
+  "hp": {
+    "average": 14,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 6,
+    "dex": 14,
+    "con": 10,
+    "int": 10,
+    "wis": 14,
+    "cha": 4
+  },
+  "skills": {},
+  "languages": [
+    "understands Ignan but can’t speak"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Attraction to Fire",
+      "text": "Pyreflies can detect any nearby\nfires and will flock to them, dancing and making\nbeautiful colors. They grow aggressive when these\nfires are put out."
+    },
+    {
+      "name": "Illumination",
+      "text": "The pyrefly sheds bright light in a 5-\nfoot radius and dim light an additional 5 feet."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Spark",
+      "type": "special",
+      "text": "Melee Spell Attack: +4 to hit, reach 5ft., one\ntarget. Hit: 5 (1d6 + 2) fire damage."
+    },
+    {
+      "name": "Flare",
+      "type": "special",
+      "text": "The pyrefly gives off a brilliant flash of light.\nAll non-pyrefly creatures within 10 feet of the\npyrefly must succeed on a DC 12 Constitution\nsaving throw or be blinded until the end of their\nnext turn."
+    },
+    {
+      "name": "Ignite (1/Day)",
+      "type": "special",
+      "text": "The pyrefly sets fire to a flammable\nobject not being worn or carried."
+    }
+  ],
+  "source": "creature"
+}

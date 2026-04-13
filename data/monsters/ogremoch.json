@@ -1,0 +1,84 @@
+{
+  "name": "Ogremoch",
+  "size": "Gargantuan",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "gargantuan",
+      "elemental",
+      "cr20",
+      "elemental-evil"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 20,
+  "hp": {
+    "average": 526,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 50
+  },
+  "abilities": {
+    "str": 26,
+    "dex": 11,
+    "con": 28,
+    "int": 11,
+    "wis": 15,
+    "cha": 22
+  },
+  "skills": {},
+  "languages": [
+    "Common",
+    "Terran"
+  ],
+  "challenge": {
+    "cr": "20",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Empowered Attacks",
+      "text": "Ogremoch's slam attacks are treated as magical and adamantine for the purpose of bypassing resistance and immunity to nonmagical weapons."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "Ogremoch's innate spellcasting ability is Charisma (spell save DC 20, +12 to hit with spell attacks). He can innately cast the following spells, requiring no material components:\n\n* At will: <i>meld into stone, move earth, wall of stone</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "text": "If Ogremoch fails a saving throw, he can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "Ogremoch has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "Ogremoch deals double damage to objects and structures with his melee and ranged weapon attacks."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Ogremoch makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 30 (4d10 + 8) bludgeoning damage."
+    },
+    {
+      "name": "Boulder",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +6 to hit, range 500 ft., one target. Hit: 46 (7d10 + 8) bludgeoning damage. If the target is a creature, it must succeed on a DC 23 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Summon Elementals (1/Day)",
+      "type": "special",
+      "text": "Ogremoch summons up to three earth elementals and loses 30 hit points for each elemental he summons. Summoned elementals have maximum hit points, appear within 100 feet of Ogremoch, and disappear if Ogremoch is reduced to 0 hit points."
+    }
+  ],
+  "source": "creature"
+}

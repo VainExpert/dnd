@@ -1,0 +1,59 @@
+{
+  "name": "Allip (ToH)",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 18,
+  "hp": {
+    "average": 33,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 6,
+    "dex": 13,
+    "con": 13,
+    "int": 11,
+    "wis": 11,
+    "cha": 16
+  },
+  "skills": {
+    "Perception": 3,
+    "Stealth": 3
+  },
+  "languages": [
+    "Common",
+    "Deep Speech"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Gezimmer",
+      "text": "Der Allip murmelt wirr vor sich hin und erzeugt dabei eine hypnotische Wirkung. Alle Kreaturen in30 ft diesem Bereich, die nicht handlungsunfähig sind, müssen einenDC 11  Weisheits-Rettungswurf bestehen. Bei einem misslungenen Rettungswurf wird die Kreatur für die Dauer des Zaubers verzaubert. Solange sie von diesem Zauber verzaubert ist, ist die Kreatur\nhandlungsunfähig und hat eine Bewegungsgeschwindigkeit von 0. Der Effekt endet für eine betroffene Kreatur, wenn sie Schaden erleidet oder wenn jemand anderes eine Aktion einsetzt, um die Kreatur aus ihrer Benommenheit zu reißen."
+    },
+    {
+      "name": "Wahnsinn",
+      "text": "Jeder, der einen Allip mit einem Zauber oder Effekt angreift, der direkten Kontakt mit seinem gequälten Geist herstellt, muss einenDC 11  Weisheits-Rettungswurf bestehen oder 7 (2d6) psychischen Schaden erleiden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Ein Hauch von Wahnsinn",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +3 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 8 (2d6 + 1) psychischer Schaden."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,82 @@
+{
+  "name": "Wolf Reaver Dwarf",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "Humanoid",
+      "cr3",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "any chaotic",
+  "ac": 16,
+  "hp": {
+    "average": 76,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 19,
+    "int": 9,
+    "wis": 11,
+    "cha": 9
+  },
+  "skills": {
+    "Athletics": 6,
+    "Intimidation": 1
+  },
+  "languages": [
+    "Common",
+    "Dwarvish"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Danger Sense",
+      "text": "The wolf reaver dwarf has advantage on Dexterity saving throws against attacks it can see when it is not blinded, deafened, or incapacitated."
+    },
+    {
+      "name": "Dwarven Resistance",
+      "text": "The wolf reaver dwarf has advantage on saving throws against poison."
+    },
+    {
+      "name": "Pack Tactics",
+      "text": "The wolf reaver dwarf has advantage on attacks if at least one of the dwarf's allies is within 5 feet of the target and the ally isn't incapacitated."
+    },
+    {
+      "name": "Reckless",
+      "text": "At the start of its turn, the wolf reaver dwarf can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The wolf reaver dwarf makes two melee or ranged attacks."
+    },
+    {
+      "name": "Battleaxe",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft, one target. Hit: 8 (1d8 + 4) slashing damage."
+    },
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d4 + 4) piercing damage."
+    },
+    {
+      "name": "Spear",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 8 (1d8 + 4) piercing damage if used with two hands to make a melee attack."
+    }
+  ],
+  "source": "creature"
+}

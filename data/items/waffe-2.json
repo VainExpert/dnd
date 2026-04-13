@@ -1,0 +1,44 @@
+{
+  "id": "waffe-2",
+  "type": "item",
+  "name": "Waffe, +2",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "weapon",
+  "rarity": "selten",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Kann eine beliebige Waffe sein. Du erhältst einen +2 Bonus auf alle Angriffs- und Schadenswürfe, die du mit dieser magischen Waffe ausführst.",
+  "tags": [
+    "magisch",
+    "waffe",
+    "kampf",
+    "bonus"
+  ]
+}

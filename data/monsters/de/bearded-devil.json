@@ -1,0 +1,71 @@
+{
+  "name": "Der bärtige Teufel",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "medium",
+      "fiend",
+      "cr3",
+      "monster-manual",
+      "devil"
+    ]
+  },
+  "alignment": "gesetztreu-böse",
+  "ac": 13,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 15,
+    "con": 15,
+    "int": 9,
+    "wis": 11,
+    "cha": 11
+  },
+  "skills": {},
+  "languages": [
+    "Infernal",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Teufelsblick",
+      "text": "Magische Dunkelheit beeinträchtigt die Dunkelheitssicht des Teufels nicht."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Teufel hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Unerschütterlich",
+      "text": "Der Teufel lässt sich nicht erschrecken, solange er ein verbündetes Wesen in30 feetseiner Nähe sieht."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Teufel greift zweimal an: einmal mit seinem Bart und einmal mit seiner Gleve."
+    },
+    {
+      "name": "Bart",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffer, Reichweite:1,5 m 0 m, eine Kreatur. Treffer: 6 (1d8 + 2) Durchbohrungsschaden; außerdem muss das Ziel einenDC 12Konstitutions-Rettungswurf bestehen oder wird für 1 Minute vergiftet. Solange das Ziel auf diese Weise vergiftet ist, kann es keine Trefferpunkte zurückgewinnen. Das Ziel kann den Rettungswurf am Ende jedes seiner Züge wiederholen und den Effekt bei Erfolg auf sich selbst beenden."
+    },
+    {
+      "name": "Lanze",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite 3 m., ein Ziel. Treffer: 8 (1d10 + 3) Schnittschaden. Handelt es sich bei dem Ziel um eine Kreatur, die kein Untoter oder Konstrukt ist, muss es einenDC 12  Konstitutionsrettungswurf bestehen oder verliert zu Beginn jedes seiner Züge 5 (1d10) Trefferpunkte aufgrund einer höllischen Wunde. Jedes Mal, wenn der Teufel das verwundete Ziel mit diesem Angriff trifft, erhöht sich der durch die Wunde verursachte Schaden um 5 (1d10). Jede Kreatur kann eine Aktion ausführen, um die Wunde durch einen erfolgreichenDC 12  Weisheits- (Medizin-)Wurf zu stillen. Die Wunde schließt sich auch, wenn das Ziel magische Heilung erhält."
+    }
+  ],
+  "source": "creature"
+}

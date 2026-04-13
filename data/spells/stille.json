@@ -1,0 +1,18 @@
+{
+  "id": "stille",
+  "name": "Stille",
+  "level": 2,
+  "school": "Illusionsmagie",
+  "casting_time": "1 Aktion",
+  "range": "36 m (6 m Sphäre)",
+  "components": "V, G",
+  "duration": "Konzentration, bis zu 10 min",
+  "concentration": true,
+  "ritual": true,
+  "classes": [
+    "Barde",
+    "Kleriker",
+    "Waldläufer"
+  ],
+  "text": "Für die Wirkungsdauer kann kein Ton in einer 6 m Sphäre erzeugt werden oder die Sphäre durchdringen.\nDie Sphäre wird an einem Punkt deiner Wahl in Reichweite erzeugt.\nAlle Kreaturen und Gegenstände, die vollständig in der Sphäre sind, sind taub und gegen Schallschaden immun.\nIn der Sphäre kann kein Zauber gewirkt werden, der eine verbale Komponente enthält."
+}

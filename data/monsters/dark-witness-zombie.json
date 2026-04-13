@@ -1,0 +1,56 @@
+{
+  "name": "Dark Witness Zombie",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr3",
+      "out-of-the-box-5e"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 14,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 8,
+    "con": 16,
+    "int": 3,
+    "wis": 8,
+    "cha": 5
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Undead Fortitude",
+      "text": "If damage reduces a dark witness\nzombie to 0 hit points, it must make a Constitution\nsaving throw with a DC equal to 5 + the\ndamage taken, unless the damage is radiant or a\ncritical hit. On a success, the dark witness zombie\ndrops to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +2 to hit, reach 5 ft.,\nHit: 4 (1d8) piercing damage."
+    },
+    {
+      "name": "Aberrant Gaze",
+      "type": "special",
+      "text": "The dark witness zombie targets a\ncreature it can see within 120 ft. An eye at the end\nof one of its tentacle arms uses one of the following\neffects on the target.\n* **Fear Gaze.** The target creature must succeed on\na DC 13 Wisdom saving throw or be frightened of\nthe dark witness for 1 minute. The target can repeat\nthe saving throw at the end of each of its turns,\nending the effect on a success.\n* **Shocking Gaze.** The target creature must succeed\non a DC 13 Dexterity saving throw or take 28\n(8d6) lightning damage on a failed save, or half as\nmuch on a successful one."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,92 @@
+{
+  "name": "Blutgolem",
+  "size": "Groß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "large",
+      "aberration",
+      "cr8",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 17,
+  "hp": {
+    "average": 102,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 19,
+    "con": 16,
+    "int": 2,
+    "wis": 14,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "understands the languages of its creator but can’t speak"
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Amorph",
+      "text": "Der Blutgolem kann sich durch einen Raum bewegen, der genauso schmal wie\n1 inchbreit ist, ohne sich hindurchzwängen zu müssen."
+    },
+    {
+      "name": "Berserk",
+      "text": "Wenn der Blutgolem seinen Zug mit 40 oder\nweniger Trefferpunkten beginnt, würfle einen W6. Bei einer 6 gerät der Golem in Raserei. In jedem seiner Züge, während er\nin Raserei ist, greift der Golem die nächstgelegene Kreatur an, die er sehen kann. Befindet sich keine Kreatur\nin ausreichender Nähe, um sie anzugreifen, greift der Golem einen Gegenstand an, wobei\ner Gegenstände bevorzugt, die kleiner sind als er selbst. Sobald der Blutgolem\ndurchdreht, bleibt er in diesem Zustand, bis er zerstört wird oder alle seine Trefferpunkte\nzurückgewinnt.\n\nDer Schöpfer des Golems kann, sofern er sich60 feetin  Reichweite des durchgedrehten Golems befindet, versuchen,\nihn zu beruhigen, indem er mit fester und überzeugender Stimme spricht. Der Golem muss\nseinen Schöpfer hören können, der eine Aktion ausführen muss, um einenDC 15  Charisma\n(Überzeugungs-)Wurf durchzuführen. Gelingt der Wurf, hört der Golem auf, Amok zu laufen.\nErleidet er Schaden, während er noch 40 Trefferpunkte oder weniger hat, könnte der Golem\nerneut Amok laufen."
+    },
+    {
+      "name": "Blut tropft",
+      "text": "Der Blutgolem nimmt seinen gesamten Platz ein. Andere Kreaturen\nkönnen diesen Platz betreten, doch eine Kreatur, die dies tut, ist dem\n„Verschlingen“ des Blutgolems ausgesetzt und erhält Nachteil auf ihren Rettungswurf.\n\nKreaturen im Inneren des Blutgolems sind nicht sichtbar und genießen vollständige Deckung.\nEine Kreatur innerhalb5 feet  des Blutgolems kann eine Aktion ausführen, um\neine Kreatur oder einen Gegenstand aus dem Würfel zu ziehen. Dazu ist ein erfolgreicherDC\n12  Stärke-Check erforderlich, und die Kreatur, die den Versuch unternimmt, erleidet 10 (3d6)\nnekrotischen Schaden.\n\nDer Blutgolem kann jeweils nur eine große Kreatur oder bis zu vier mittlere\noder kleinere Kreaturen in sich aufnehmen."
+    },
+    {
+      "name": "Blutgefühl",
+      "text": "Der Blutgolem kann die Anwesenheit von\nBlut in Lebewesen in einer Entfernung von bis zu1 mile  metern magisch wahrnehmen. Er kennt die ungefähre Richtung,\nin der sie sich befinden, jedoch nicht ihre genaue Position."
+    },
+    {
+      "name": "Blutspritzer",
+      "text": "Jedes Mal, wenn der Golem im Kampf getroffen wird, spritzt eine Blutfontäne\naus seinem Körper. Alle Kreaturen im Umkreis10 feetvon  des Golems müssen\neinenDC 15  Geschicklichkeits-Rettungswurf bestehen, sonst sind sie bis zum Ende\ndes nächsten Zuges der Kreatur geblendet."
+    },
+    {
+      "name": "Unveränderliche Form",
+      "text": "Der Golem ist immun gegen alle Zauber und Effekte, die\nseine Gestalt verändern würden."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Der Golem hat einen Vorteil bei Rettungswürfen gegen\nZauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Waffenangriffe des Golems sind magischer Natur."
+    },
+    {
+      "name": "Split",
+      "text": "Wenn ein Blutgolem die maximale Trefferpunktzahl für seine Trefferwürfel\nerreicht, teilt er sich in zwei identische Golems. Jeder Golem verfügt über\ndie Hälfte der maximalen Trefferpunktzahl des ursprünglichen Golems. Neue Golems sind eine\nGröße kleiner als der ursprüngliche Golem."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Golem führt zwei Schlagangriffe aus."
+    },
+    {
+      "name": "Friede sei mit euch",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite10 ft\n., ein Ziel. Treffer:\n13 (2d8 + 4\n) Bludgeoning-Schaden, und das Ziel muss einenDC 15\nKonstitutions-Rettungswurf durchführen. Bei einem misslungenen Rettungswurf erleidet das Ziel 22 (4d8 +\n4\n) Bludgeoning-Schaden plus 14 (3d6 + 4\n) nekrotischen Schaden; seine maximalen Trefferpunkte\nwerden um den Wert des nekrotischen Schadens verringert, und der\nBlutgolem erhält Trefferpunkte in Höhe dieses Wertes zurück. Die Verringerung der\nmaximalen Trefferpunkte des Ziels hält an, bis das Ziel eine lange Ruhepause beendet hat. Das\nZiel stirbt, wenn dadurch seine maximalen Trefferpunkte auf 0 sinken."
+    },
+    {
+      "name": "Verschlingen",
+      "type": "special",
+      "text": "Der Blutgolem bewegt sich um seine Bewegungsreichweite vorwärts. Dabei kann er\ndie Felder von Kreaturen der Größe „Groß“ oder kleiner betreten. Immer wenn der Blutgolem\ndas Feld einer Kreatur betritt, muss diese einenDC 12Geschicklichkeits-Rettungswurf durchführen.\n\nBei einem erfolgreichen Rettungswurf kann die Kreatur wählen, ob sie\nvom Blutgolem zurück oder zur Seite5 feet gestoßen werden möchte. Eine Kreatur, die sich dagegen entscheidet, gestoßen zu werden,\nerleidet die Folgen eines misslungenen Rettungswurfs.\n\nBei einem misslungenen Rettungswurf betritt der Blutgolem das Feld der Kreatur, und die\nKreatur erleidet 10 (3d6) nekrotischen Schaden und wird verschlungen. Die verschlungene\nKreatur kann nicht atmen, ist gefesselt und erleidet zu\nBeginn jedes Zuges des Blutgolems 21 (6d6) nekrotischen Schaden. Wenn sich der Blutgolem bewegt,\nbewegt sich die verschlungene Kreatur mit ihm.\n\nEine verschlungene Kreatur kann versuchen zu entkommen, indem sie eine Aktion verwendet, um einen\nDC 12Stärke-Check durchzuführen. Bei Erfolg entkommt die Kreatur und begibt sich auf ein\nFeld ihrer Wahl innerhalb5 feetvon  vom Blutgolem."
+    }
+  ],
+  "source": "creature"
+}

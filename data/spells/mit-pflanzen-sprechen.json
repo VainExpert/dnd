@@ -1,0 +1,18 @@
+{
+  "id": "mit-pflanzen-sprechen",
+  "name": "Mit Pflanzen sprechen",
+  "level": 3,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst (9 m Sphäre)",
+  "components": "V, G",
+  "duration": "10 min",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Barde",
+    "Druide",
+    "Waldläufer"
+  ],
+  "text": "Pflanzen im Abstand von max. 9 m zu dir erlangen begrenztes Bewusstsein. Sie können mit dir kommunizieren und einfache Befehle befolgen, aber sich nicht entwurzeln und frei herumlaufen.\nSie kennen die Ereignisse des letzten Tages, wie das Wetter, vorbeiziehende Kreaturen und ähnliches.\nDie Kommunikation funktioniert, wie als würdet ihr dieselbe Sprache sprechen. Eine magische Beeinflussung der Pflanzen ist nicht möglich.\nAufgrund von Pflanzenwachstum schwieriges Terrain wird für die Wirkungsdauer zu normalem Terrain, auch normal zu schwierig möglich.\nPflanzen die mittels „Verstricken“ erschaffen wurden, können so festgesetzte Wesen wieder freilassen."
+}

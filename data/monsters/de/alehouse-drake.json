@@ -1,0 +1,77 @@
+{
+  "name": "Drake's Bierstube",
+  "size": "Winzig",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "tiny",
+      "dragon",
+      "cr1/2",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 13,
+  "hp": {
+    "average": 65,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 7,
+    "dex": 16,
+    "con": 19,
+    "int": 11,
+    "wis": 12,
+    "cha": 16
+  },
+  "skills": {
+    "Deception": 5,
+    "Insight": 3,
+    "Persuasion": 5
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Erpels ist Charisma (ZauberrettungswurfDC 13, +5 auf Treffer bei Zauberangriffen). Er kann die folgenden Zauber von Natur aus wirken, ohne dass materielle Komponenten erforderlich sind:\n\n* Beliebig oft: Freunde, Boshafte Verspottung\n\n* Je 5/Tag: Gefühle beruhigen, Dissonantes Flüstern, Strahl der Krankheit, Abscheuliches Gelächter\n\n* Je 3/Tag: Verwirrung, Unsichtbarkeit"
+    },
+    {
+      "name": "Zaubersprüche, die man leicht vergisst",
+      "text": "Wenn eine Kreatur einen Rettungswurf auf Intelligenz, Weisheit oder Charisma gegen einen Zauber verfehlt, der von einem Wirtshausdrachen gewirkt wurde, vergisst sie sofort, von wem der Zauber stammt."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 6 (1d6 + 3) Durchschlagschaden."
+    },
+    {
+      "name": "Klaue",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffer, Reichweite5 ft: , ein Ziel. Treffer: 8 (2d4 + 3) Schnittschaden."
+    },
+    {
+      "name": "Atemwaffe (Aufladezeit 5-6)",
+      "type": "special",
+      "text": "Ein „Alehouse Drake“ kann eine Wolke berauschenden Gases in einem 4,5 Meter breiten Kegel ausstoßen. Eine Kreatur, die von der Wolke erfasst wird, erleidet 1 Minute lang Vergiftungsschaden und muss einen erfolgreichenDC 14Konstitutions-Rettungswurf bestehen, sonst ist sie für1d6  Runden betäubt."
+    },
+    {
+      "name": "Verwirrende Berührung",
+      "type": "special",
+      "text": "Ein Alehouse-Drachen kann einen Berührungsangriff ausführen, der seinem Ziel einen Bonus von +3 auf Geschicklichkeits-basierte Fertigkeitsproben und Nahkampfangriffe gewährt, aber auch Verwirrung gemäß dem Zauber hervorruft. Dieser Effekt hält1d4  Runden an. Ein erfolgreicherDC 13Charisma-Rettungswurf hebt diesen Effekt auf."
+    }
+  ],
+  "source": "creature"
+}

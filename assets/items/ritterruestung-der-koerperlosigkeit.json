@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-ritterruestung-der-koerperlosigkeit",
+  "type": "item",
+  "name": "Ritterrüstung der Körperlosigkeit",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "armor",
+  "rarity": "legendär",
+  "requires_attunement": true,
+  "attunement_text": "Ritterrüstung",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du dieser Rüstung trägst, kannst du als Aktion ihr Befehlswort aussprechen, um den Effekt des Zaubers Körperlosigkeit  zu erhalten. Dieser dauert zehn Minuten an oder bis du die Rüstung ablegst oder als Aktion das Befehlswort nochmals sprichst. Diese Eigenschaft der Rüstung kann erst im nächsten Morgengrauen wiederverwendet werden.",
+  "tags": []
+}

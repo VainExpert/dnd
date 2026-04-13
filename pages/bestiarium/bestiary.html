@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Bestiarium</title>
+  <link rel="stylesheet" href="../../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Bestiarium</div>
+      <div class="subtitle">Sammlung verschiedener Monster</div>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Suchen..."/>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="nav">
+        <div class="group">
+          <div class="group-title">Startseite</div>
+          <a href="../../index.html">Startseite</a>
+          <a href="../../index.html#content/house-rules/index.md">Hausregeln</a>
+          <a href="../../index.html#content/safety/index.md">Sicherheit</a>
+          <a href="../../index.html#content/character-options/index.md">Charakteroptionen</a>
+          <a href="../../index.html#content/recaps/index.md">Rückblicke</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Werkzeuge</div>
+          <a href="../werkzeuge/tools.html">Zufallstabellen & Generatoren</a>
+          <a href="../werkzeuge/dice.html">Würfel</a>
+          <a href="../werkzeuge/units.html">Umrechner</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Sammlungen</div>
+          <a href="./bestiary.html" class="active">Bestiarium</a>
+          <a href="../zauber/spells.html">Zauber</a>
+          <a href="../items/items.html">Gegenstände</a>
+          <a href="../maps.html">Karten</a>
+          <a href="../spieler/pcs.html">Spieler</a>
+          <a href="../icons.html">Symbole</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="content" style="max-width:1100px;">
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
+          <select id="cr" class="select">
+            <option value="">Alle Herausforderungsgrade (HG)</option>
+            <option>0</option><option>1/8</option><option>1/4</option><option>1/2</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+          </select>
+          <select id="size" class="select">
+            <option value="">Alle Größen</option>
+            <option>Winzig</option><option>Klein</option><option>Mittel</option><option>Groß</option><option>Riesig</option><option>Gigantisch</option>
+          </select>
+          <select id="type" class="select">
+            <option value="">Alle Typen</option>
+            <option>Aberration</option><option>Tier</option><option>Himmelswesen</option><option>Konstrukt</option><option>Drache</option>
+            <option>Elementar</option><option>Feenwesen</option><option>Unhold</option><option>Riese</option><option>Humanoid</option>
+            <option>Monstrosität</option><option>Schleim</option><option>Pflanze</option><option>Untot</option>
+          </select>
+        </div>
+
+        <div id="grid" class="card-grid"></div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany, mod, fmtSigned, normalizeMonster } from "../../lib.js";
+
+    const grid = document.getElementById("grid");
+    const qEl = document.getElementById("q");
+    const crEl = document.getElementById("cr");
+    const sizeEl = document.getElementById("size");
+    const typeEl = document.getElementById("type");
+
+    function formatSenses(s){
+      if (!s) return "";
+      if (typeof s === "string") return s;
+      const parts = [];
+      if (s.blindsight != null) parts.push(`Blindsicht ${s.blindsight} ft.`);
+      if (s.darkvision != null) parts.push(`Dunkelsicht ${s.darkvision} ft.`);
+      if (s.tremorsense != null) parts.push(`Erschütterungssinn ${s.tremorsense} ft.`);
+      if (s.truesight != null) parts.push(`Wahrsicht ${s.truesight} ft.`);
+      if (s.passive_perception != null) parts.push(`Passive Wahrnehmung ${s.passive_perception}`);
+      return parts.join(", ");
+    }
+
+    function formatSaves(s){
+      if (!s) return "";
+      if (typeof s === "string") return s;
+      const order = ["str","dex","con","int","wis","cha"];
+      const parts = [];
+      for (const k of order){
+        if (s[k] == null) continue;
+        parts.push(`${k.toUpperCase()} ${s[k] >= 0 ? "+" + s[k] : s[k]}`);
+      }
+      return parts.join(", ");
+    }
+
+    function formatList(x){
+      if (!x) return "";
+      if (Array.isArray(x)) return x.join(", ");
+      if (typeof x === "object") {
+        return Object.entries(x).map(([key, value]) => `${key} ${value}`).join(", ");
+      }
+      return String(x);
+    }
+
+    function formatSpeed(speed){
+      if (!speed || typeof speed !== "object") return "—";
+      const order = ["walk", "fly", "swim", "climb", "burrow"];
+      const labels = {
+        walk: "Laufen",
+        fly: "Fliegen",
+        swim: "Schwimmen",
+        climb: "Klettern",
+        burrow: "Graben"
+      };
+      const parts = [];
+      for (const key of order){
+        if (speed[key] == null || speed[key] === "") continue;
+        parts.push(`${labels[key]} ${speed[key]} ft.`);
+      }
+      return parts.length ? parts.join(", ") : "—";
+    }
+
+    function card(m){
+      const ab = m.abilities || {};
+      const cr = m.challenge?.cr ?? "—";
+      const pb = m.challenge?.proficiency_bonus != null ? fmtSigned(m.challenge.proficiency_bonus) : "—";
+      const speed = formatSpeed(m.speed);
+      const typeLine = `${m.size ?? "—"} ${m.type?.type ?? "—"}, ${m.alignment ?? "—"}`;
+
+      const traits = (m.traits || []).slice(0, 2)
+        .map(t => `<div class="mini"><b>${escapeHtml(t.name)}:</b> ${escapeHtml(t.text)}</div>`).join("");
+
+      const actions = (m.actions || []).slice(0, 2)
+        .map(a => `<div class="mini"><b>${escapeHtml(a.name)}:</b> ${escapeHtml(a.text || a.type || "")}</div>`).join("");
+
+      const sensesLine = formatSenses(m.senses);
+      const languagesLine = (m.languages && m.languages.length) ? m.languages.join(", ") : "";
+      const savesLine = formatSaves(m.saving_throws);
+
+      const defenses = [];
+      const imm = formatList(m.damage_immunities);
+      const res = formatList(m.damage_resistances);
+      const vul = formatList(m.damage_vulnerabilities);
+      const cimm = formatList(m.condition_immunities);
+      if (vul) defenses.push(`<div class="mini"><b>Verwundbar:</b> ${escapeHtml(vul)}</div>`);
+      if (res) defenses.push(`<div class="mini"><b>Resistenz:</b> ${escapeHtml(res)}</div>`);
+      if (imm) defenses.push(`<div class="mini"><b>Immun:</b> ${escapeHtml(imm)}</div>`);
+      if (cimm) defenses.push(`<div class="mini"><b>Statusimmunität:</b> ${escapeHtml(cimm)}</div>`);
+
+      const legIntro = m.legendary_actions_intro ? `<div class="mini">${escapeHtml(m.legendary_actions_intro)}</div>` : "";
+      const legActions = (m.legendary_actions || []).slice(0, 2).map(a => {
+        const cost = a.cost != null ? ` (Kosten ${a.cost})` : "";
+        return `<div class="mini"><b>${escapeHtml(a.name)}${escapeHtml(cost)}:</b> ${escapeHtml(a.text)}</div>`;
+      }).join("");
+      const legBox = (m.legendary_actions && m.legendary_actions.length)
+        ? `<div class="mini-box"><div class="mini-box-title">Legendäre Aktionen</div><div class="mini-box-text">${legIntro}${legActions}</div></div>`
+        : "";
+
+      return `
+        <div class="mini-card">
+          <div class="mini-head">
+            <div class="mini-title"><a href="./monster.html?id=${encodeURIComponent(m.id || m.name || "")}">${escapeHtml(m.name)}</a></div>
+            <div class="mini-sub">${escapeHtml(typeLine)}</div>
+            <div class="pillbar">
+              <span class="pill"><b>RK</b> ${escapeHtml(m.ac)}${m.ac_note ? ` <span class="muted">(${escapeHtml(m.ac_note)})</span>` : ""}</span>
+              <span class="pill"><b>TP</b> ${escapeHtml(m.hp?.average)} <span class="muted">(${escapeHtml(m.hp?.formula)})</span></span>
+              <span class="pill"><b>Bewegung</b> ${escapeHtml(speed)}</span>
+              <span class="pill"><b>HG</b> ${escapeHtml(cr)}</span>
+              <span class="pill"><b>ÜB</b> ${escapeHtml(pb)}</span>
+            </div>
+          </div>
+
+          <div class="mini-body">
+            <div class="mini-box">
+              <div class="mini-box-title">Fähigkeiten</div>
+              <div class="mini-box-text">
+                <span class="abi"><b>STR</b> ${ab.str ?? "—"} (${fmtSigned(mod(ab.str ?? 10))})</span>
+                <span class="abi"><b>DEX</b> ${ab.dex ?? "—"} (${fmtSigned(mod(ab.dex ?? 10))})</span>
+                <span class="abi"><b>CON</b> ${ab.con ?? "—"} (${fmtSigned(mod(ab.con ?? 10))})</span>
+                <span class="abi"><b>INT</b> ${ab.int ?? "—"} (${fmtSigned(mod(ab.int ?? 10))})</span>
+                <span class="abi"><b>WIS</b> ${ab.wis ?? "—"} (${fmtSigned(mod(ab.wis ?? 10))})</span>
+                <span class="abi"><b>CHA</b> ${ab.cha ?? "—"} (${fmtSigned(mod(ab.cha ?? 10))})</span>
+              </div>
+            </div>
+
+            ${(savesLine || sensesLine || languagesLine) ? `
+              <div class="mini-box">
+                <div class="mini-box-title">Rettungswürfe • Sinne • Sprachen</div>
+                <div class="mini-box-text">
+                  ${savesLine ? `<div class="mini"><b>Rettungswürfe:</b> ${escapeHtml(savesLine)}</div>` : ""}
+                  ${sensesLine ? `<div class="mini"><b>Sinne:</b> ${escapeHtml(sensesLine)}</div>` : ""}
+                  ${languagesLine ? `<div class="mini"><b>Sprachen:</b> ${escapeHtml(languagesLine)}</div>` : ""}
+                </div>
+              </div>` : ""}
+
+            ${defenses.length ? `<div class="mini-box"><div class="mini-box-title">Verteidigungen</div><div class="mini-box-text">${defenses.join("")}</div></div>` : ""}
+
+            ${(m.traits?.length) ? `<div class="mini-box"><div class="mini-box-title">Eigenschaften</div><div class="mini-box-text">${traits}</div></div>` : ""}
+            ${(m.actions?.length) ? `<div class="mini-box"><div class="mini-box-title">Aktionen</div><div class="mini-box-text">${actions}</div></div>` : ""}
+
+            ${legBox}
+
+            <div class="mini-footer muted">${m.source ? `Quelle: ${escapeHtml(typeof m.source === "string" ? m.source : "homebrew")}` : ""}</div>
+          </div>
+        </div>
+      `;
+    }
+
+    function matches(m, q, cr, size, type){
+      const sensesStr = (m.senses && typeof m.senses === "object")
+        ? Object.entries(m.senses).map(([k,v]) => `${k} ${v}`).join(" ")
+        : (m.senses || "");
+      const savesStr = (m.saving_throws && typeof m.saving_throws === "object")
+        ? Object.entries(m.saving_throws).map(([k,v]) => `${k} ${v}`).join(" ")
+        : (m.saving_throws || "");
+
+      const hay = [
+        m.name,
+        m.size,
+        m.type?.type,
+        ...(m.type?.tags || []),
+        m.alignment,
+        m.ac_note,
+        ...(m.languages || []),
+        sensesStr,
+        savesStr,
+        ...(m.damage_vulnerabilities || []),
+        ...(m.damage_resistances || []),
+        ...(m.damage_immunities || []),
+        ...(m.condition_immunities || []),
+        ...(m.traits || []).flatMap(t => [t.name, t.text]),
+        ...(m.actions || []).flatMap(a => [a.name, a.type, a.text]),
+        ...(m.legendary_actions || []).flatMap(a => [a.name, a.text]),
+        m.legendary_actions_intro,
+      ].join(" ").toLowerCase();
+
+      if (q && !hay.includes(q)) return false;
+      if (cr && (m.challenge?.cr ?? "") !== cr) return false;
+      if (size && (m.size ?? "") !== size) return false;
+      if (type && (m.type?.type ?? "") !== type) return false;
+      return true;
+    }
+
+    const files = await loadIndex("../../data/monsters/index.json");
+    const monsters = (await loadMany("../../data/monsters", files)).map(normalizeMonster);
+
+    function render(){
+      const q = (qEl.value || "").trim().toLowerCase();
+      const cr = crEl.value || "";
+      const size = sizeEl.value || "";
+      const type = typeEl.value || "";
+
+      const filtered = monsters.filter(m => matches(m, q, cr, size, type));
+      grid.innerHTML = filtered.map(card).join("") || `<p>Keine Treffer.</p>`;
+    }
+
+    qEl.addEventListener("input", render);
+    crEl.addEventListener("change", render);
+    sizeEl.addEventListener("change", render);
+    typeEl.addEventListener("change", render);
+
+    render();
+  </script>
+</body>
+</html>

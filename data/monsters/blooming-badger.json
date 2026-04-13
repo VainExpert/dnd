@@ -1,0 +1,58 @@
+{
+  "name": "Blooming Badger",
+  "size": "Tiny",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "tiny",
+      "beast",
+      "cr1/4",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 11,
+  "hp": {
+    "average": 7,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 5
+  },
+  "abilities": {
+    "str": 4,
+    "dex": 12,
+    "con": 12,
+    "int": 3,
+    "wis": 13,
+    "cha": 6
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Floral Camouflage",
+      "text": "While the badger remains\nmotionless, it is indistinguishable from a very large\nflower."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +2 to hit, reach 5 ft.,\none target. Hit: 3 (1d4 + 1) piercing damage."
+    },
+    {
+      "name": "Petal Burst (1/Day)",
+      "type": "special",
+      "text": "The badger arches its body and\nfires a burst of razor sharp petals at a creature\nwithin 20 feet. That creature must make a DC 10\nDexterity saving throw, taking 10 (4d4) slashing\ndamage on a failed save, or half as much damage on\na successful one."
+    }
+  ],
+  "source": "creature"
+}

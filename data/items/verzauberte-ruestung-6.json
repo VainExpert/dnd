@@ -1,0 +1,47 @@
+{
+  "id": "verzauberte-ruestung-6",
+  "type": "item",
+  "name": "Verzauberte Rüstung, Level 6",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "legendär",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Es kann jede beliebige Rüstung sein. In diese Rüstung ist ein Level 6 Zauber (Illusion oder Bannmagie) eingebunden. Die Rüstung hat 6 Ladungen und bekommt 1W6 täglich am Morgen zurück. Wenn die Rüstung getragen wird, kann eine Ladung verwendet werden um den eingebundenen Zauber zu wirken. Der Zauberangriffsbonus ist +9 und der Zauberrettung-SG ist 17.",
+  "tags": [
+    "magisch",
+    "abwehr",
+    "rüstung",
+    "zauber",
+    "ladungen",
+    "illusion",
+    "bannmagie"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "name": "Einhorn",
+  "size": "Groß",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "large",
+      "celestial",
+      "cr5",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "gesetztreu-gut",
+  "ac": 13,
+  "hp": {
+    "average": 76,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 90
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 16,
+    "con": 16,
+    "int": 11,
+    "wis": 17,
+    "cha": 16
+  },
+  "skills": {
+    "Perception": 6
+  },
+  "languages": [
+    "Celestial",
+    "Elvish",
+    "Sylvan",
+    "telepathy 18 m."
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Last",
+      "text": "Wenn sich das Alicorn mindestens20 feet  geradlinig\nauf ein Ziel zubewegt und es dann im selben Zug\nmit einem Hornangriff trifft, erleidet das Ziel zusätzlich 9 (2d8)\ndurchdringenden Schaden. Handelt es sich bei dem Ziel um eine Kreatur,\nmuss sie einenDC 15  Stärke-Rettungswurf bestehen oder\nwird zu Boden geworfen."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Alicorns\nist Charisma (ZauberrettungswurfDC 14). Es kann von Natur aus\ndie folgenden Zauber wirken, ohne dass dafür Komponenten benötigt werden:\n\n* Beliebig oft: Das Böse und das Gute erkennen, Druidenkunst, Spurlos verschwinden\n\n* Je 1/Tag: Gefühle beruhigen, Das Böse und das Gute vertreiben, Verstricken"
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Das Alicorn hat einen Vorteil bei Rettungswürfen\ngegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Angriffe der Alicorn-Waffe\nsind magischer Natur."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Das Alicorn führt einen Angriff mit seinen\nHufen und einen Angriff mit seinem Horn aus."
+    },
+    {
+      "name": "Hufe",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite:1,5 m .,\nein Ziel. Treffer: 11 (2d6 + 4) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Horn",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite:1,5 m .,\nein Ziel. Treffer: 8 (1d8 + 4) Durchdringungsschaden."
+    },
+    {
+      "name": "Heilende Berührung (3/Tag)",
+      "type": "special",
+      "text": "Das Alicorn berührt ein anderes\nWesen mit seinem Horn. Das Ziel erhält auf magische Weise\n11 (2d8 + 2) Trefferpunkte zurück. Außerdem beseitigt die Berührung\nalle Krankheiten und neutralisiert alle Gifte,\ndie das Ziel befallen haben."
+    },
+    {
+      "name": "Teleportieren (1 Mal pro Tag)",
+      "type": "special",
+      "text": "Das Alicorn teleportiert sich auf magische Weise\nzusammen mit bis zu drei willigen Wesen, die es\nin5 feetseiner Nähe sehen kann, sowie mit jeglicher Ausrüstung, die diese\ntragen oder bei sich haben, an einen Ort, den das Alicorn\nkennt, bis zu1 mile  entfernt."
+    }
+  ],
+  "source": "creature"
+}

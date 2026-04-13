@@ -1,0 +1,46 @@
+{
+  "id": "verkleidungsausruestung",
+  "type": "item",
+  "name": "Verkleidungsausrüstung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 1.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 25,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Set aus Schminke, Perücken, Accessoires und Werkzeugen zum Verkleiden. Nutzen: Make-Up aufbringen (SG 10). Fertigen: Kostüm",
+  "tags": [
+    "verkleidung",
+    "schminke",
+    "perücken",
+    "accessoires",
+    "nützlich",
+    "täuschen"
+  ]
+}

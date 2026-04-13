@@ -1,0 +1,54 @@
+{
+  "name": "Bronze Scout",
+  "size": "Medium",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "medium",
+      "construct",
+      "cr1",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 18,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 30
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 16,
+    "con": 11,
+    "int": 3,
+    "wis": 14,
+    "cha": 1
+  },
+  "skills": {
+    "Perception": 6,
+    "Stealth": 7
+  },
+  "languages": [
+    "understands one language of its creator but can't speak"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Earth Armor",
+      "text": "The bronze scout doesn't provoke opportunity attacks when it burrows."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The bronze scout has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

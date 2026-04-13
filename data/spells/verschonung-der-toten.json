@@ -1,0 +1,18 @@
+{
+  "id": "verschonung-der-toten",
+  "name": "Verschonung der Toten",
+  "level": 0,
+  "school": "Nekromantie",
+  "casting_time": "1 Aktion",
+  "range": "Berührung",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Kleriker",
+    "Druide"
+  ],
+  "text": "Du berührst eine lebende Kreatur mit 0 TP. Die Kreatur wird stabilisiert.\nDer Zauber hat keine Auswirkungen auf Untote oder Konstrukte."
+}

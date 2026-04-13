@@ -1,0 +1,42 @@
+{
+  "name": "Gray Render",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr12",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "chaotic neutral",
+  "ac": 19,
+  "hp": {
+    "average": 189,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 19,
+    "dex": 13,
+    "con": 20,
+    "int": 3,
+    "wis": 6,
+    "cha": 8
+  },
+  "skills": {
+    "Perception": 2
+  },
+  "languages": [
+    "-"
+  ],
+  "challenge": {
+    "cr": "12",
+    "xp": 8400,
+    "proficiency_bonus": 4
+  },
+  "traits": [],
+  "actions": [],
+  "source": "creature"
+}

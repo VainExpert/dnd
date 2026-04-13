@@ -1,0 +1,63 @@
+{
+  "name": "Vegepygmy",
+  "size": "Small",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "small",
+      "plant",
+      "cr1/4",
+      "volos-guide"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 13,
+  "hp": {
+    "average": 9,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 7,
+    "dex": 14,
+    "con": 13,
+    "int": 6,
+    "wis": 11,
+    "cha": 7
+  },
+  "skills": {
+    "Perception": 2,
+    "Stealth": 4
+  },
+  "languages": [
+    "Vegepygmy"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Plant Camouflage",
+      "text": "The vegepygmy has advantage on Dexterity (Stealth) checks it makes in any terrain with ample obscuring plant life."
+    },
+    {
+      "name": "Regeneration",
+      "text": "The vegepygmy regains 5 hit points at the start of its turn. If it takes cold, fire, or necrotic damage, this trait doesn't function at the start of the vegepygmy's next turn. The vegepygmy dies only if it starts its turn with 0 hit points and doesn't regenerate."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) slashing damage."
+    },
+    {
+      "name": "Sling",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4+2) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

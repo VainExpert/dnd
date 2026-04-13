@@ -1,0 +1,53 @@
+{
+  "name": "Shadow Dancer",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr7",
+      "mordenkainens-tome-of-foes",
+      "elf"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 15,
+  "hp": {
+    "average": 71,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 13,
+    "int": 11,
+    "wis": 12,
+    "cha": 12
+  },
+  "skills": {
+    "Stealth": 6
+  },
+  "languages": [
+    "Common",
+    "Elvish"
+  ],
+  "challenge": {
+    "cr": "7",
+    "xp": 2900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Fey Ancestry",
+      "text": "The shadow dancer has advantage on saving throws against being charmed, and magic can't put it to sleep."
+    },
+    {
+      "name": "Shadow Jump",
+      "text": "As a bonus action, the shadow dancer can teleport up to 30 feet to an unoccupied space it can see. Both the space it teleports from and the space it teleports to must be in dim light or darkness. The shadow dancer can use this ability between the weapon attacks of another action it takes."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

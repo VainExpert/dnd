@@ -1,0 +1,58 @@
+{
+  "name": "Vine Viper",
+  "size": "Tiny",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "tiny",
+      "beast",
+      "cr1/2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 18,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 5,
+    "dex": 16,
+    "con": 14,
+    "int": 2,
+    "wis": 12,
+    "cha": 4
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Floral Camouflage",
+      "text": "While the viper remains\nmotionless, it is indistinguishable from an ordinary\ntree vine."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft.,\none creature. Hit: 5 (1d4 + 3) piercing damage, and\nthe target must succeed on a DC 11 Constitution\nsaving throw against being magically petrified. On a\nfailed save, the creature begins to turn to wood and\nis restrained. It must repeat the saving throw at the\nend of its next turn. On a success, the effect ends.\nOn a failure, the create is petrified for the next 8\nhours."
+    },
+    {
+      "name": "Nutrient Absorption",
+      "type": "special",
+      "text": "The viper drives its tail into a\ntree or petrified creature within 5 feet, draining\nresources from the target to heal itself. The target\ntakes 5 (2d4) necrotic damage and the snake\nrestores hit points equal to the amount of necrotic\ndamage dealt."
+    }
+  ],
+  "source": "creature"
+}

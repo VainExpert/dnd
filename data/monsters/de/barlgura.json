@@ -1,0 +1,80 @@
+{
+  "name": "Schau es dir an",
+  "size": "Groß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr5",
+      "monster-manual",
+      "demon"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 15,
+  "hp": {
+    "average": 68,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 40
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 15,
+    "con": 16,
+    "int": 7,
+    "wis": 14,
+    "cha": 9
+  },
+  "skills": {
+    "Perception": 5,
+    "Stealth": 5
+  },
+  "languages": [
+    "Abyssal",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die Zauberkompetenz des Barlgura ist Weisheit (ZauberrettungswurfDC 13). Der Barlgura kann von Natur aus die folgenden Zauber wirken, ohne dass dafür materielle Komponenten erforderlich sind:\n\n* Je 1/Tag: Verwickeln, Phantasmatische Kraft\n\n* Je 2/Tag: Selbsttäuschung, Unsichtbarkeit (nur auf sich selbst)"
+    },
+    {
+      "name": "Leichtsinnig",
+      "text": "Zu Beginn seines Zuges kann die Barlgura bei allen Nahkampf-Angriffswürfen, die sie in diesem Zug ausführt, einen Vorteil erhalten, doch Angriffe gegen sie haben bis zum Beginn ihres nächsten Zuges einen Vorteil."
+    },
+    {
+      "name": "Sprunglauf",
+      "text": "Der Weitsprung des Barlgura beträgt bis zu40 feet  und sein Hochsprung bis zu ,6 m wenn er Anlauf nimmt."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Barlgura führt drei Angriffe aus: einen mit seinem Biss und zwei mit seinen Fäusten."
+    },
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 11 (2d6 + 4) Durchdringungsschaden."
+    },
+    {
+      "name": "Fist",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +7 zum Treffen, Reichweite5 ft: , ein Ziel. Treffer: 9 (1d10 + 4) Bludgeoning-Schaden."
+    },
+    {
+      "name": "Variante: Dämon beschwören (1/Tag)",
+      "type": "special",
+      "text": "Der Dämon wählt aus, was er beschwören möchte, und versucht, eine magische Beschwörung durchzuführen.\n\nEin Barlgura hat eine Chance von 30 Prozent, einen weiteren Barlgura zu beschwören.\n\nEin beschworener Dämon erscheint auf einem freien Feld in60 feetder Nähe seines Beschwörers, handelt als Verbündeter seines Beschwörers und kann keine anderen Dämonen beschwören. Er bleibt 1 Minute lang bestehen, bis er oder sein Beschwörer stirbt oder bis sein Beschwörer ihn als Aktion entlässt."
+    }
+  ],
+  "source": "creature"
+}

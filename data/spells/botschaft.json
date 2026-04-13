@@ -1,0 +1,20 @@
+{
+  "id": "botschaft",
+  "name": "Botschaft",
+  "level": 0,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "36 m",
+  "components": "V, G, M (1 kurzes Stück Kupferdraht)",
+  "duration": "1 Runde (6 s) / 1 h",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Druide",
+    "Zauberer",
+    "Magier"
+  ],
+  "text": "Du deutest mit dem Finger auf eine Kreatur in Reichweite und flüsterst eine Botschaft. Nur das Ziel hört die Botschaft und kann in einem Flüstern antworten, das nur du hören kannst.\nWirkt durch feste Gegenstände, wenn du das Ziel kennst und weißt, dass es jenseits der Barriere ist. Muss keiner geraden Linie folgen.\nAußerhalb eines Kampfes hält das für 1 h und im Kampf für 1 Runde.\nBlockiert durch: Magische Stille, 9 cm Stein, 1,5 m Holz, eine dünne Schicht Blei oder gewöhnliches Metall."
+}

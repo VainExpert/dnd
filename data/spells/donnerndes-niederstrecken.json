@@ -1,0 +1,16 @@
+{
+  "id": "donnerndes-niederstrecken",
+  "name": "Donnerndes Niederstrecken",
+  "level": 1,
+  "school": "Hervorrufung",
+  "casting_time": "1 Bonus Aktion",
+  "range": "Selbst",
+  "components": "V",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Paladin"
+  ],
+  "text": "Dein nächster Waffenangriff-Treffer, während der Wirkungsdauer des Zaubers, fügt zusätzlich 2W6 Schallschaden zu.\nDein Ziel muss außerdem einen STR-Rettungswurf bestehen, um nicht 3 m von dir weggestoßen zu werden und hinzufallen."
+}

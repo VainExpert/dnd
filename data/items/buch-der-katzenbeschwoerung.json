@@ -1,0 +1,43 @@
+{
+  "id": "buch-der-katzenbeschwoerung",
+  "type": "item",
+  "name": "Buch der Katzenbeschwörung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 100,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein hübsches Buch in gold und rot mit einer großen Katzenpfote auf der Vorderseite. Lesen aus dem Buch beschwört einmal pro Tag eine zufällige, dir wohlgesonnene, Katzenart. Der DM würfelt dafür. Im Kampf agiert sie direkt nach dir und gehorcht deinen Befehlen (keine Aktion notwendig). Wenn du keinen Befehl gibst bringt sich das Tier nicht selbst in Gefahr und agiert nach seiner Natur. Das Tier bleibt bis zum nächsten Morgen bestehen oder bis seine TP auf 0 fallen.",
+  "tags": [
+    "magisch",
+    "buch",
+    "beschwörung"
+  ]
+}

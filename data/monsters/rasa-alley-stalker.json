@@ -1,0 +1,71 @@
+{
+  "name": "Rasa Alley Stalker",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "any evil alignment",
+  "ac": 14,
+  "hp": {
+    "average": 27,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 13,
+    "int": 14,
+    "wis": 8,
+    "cha": 13
+  },
+  "skills": {
+    "Deception": 5,
+    "Stealth": 7
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The rasa's innate spellcasting\nability is Intelligence (spell save DC 12). It can\ninnately cast the following spells, requiring no\ncomponents:\n\n* At will: <i>mage hand, message</i>\n\n* 1/day each: <i>disguise self, silent image</i>"
+    },
+    {
+      "name": "Mask of Shadows",
+      "text": "The alley stalker has a mask\nenchanted to make them a threat in shadowed\nareas and when striking the first blow on an enemy.\nThe alley stalker has advantage on stealth checks\nand its attacks against surprised enemies are always\nconsidered a critical hit."
+    },
+    {
+      "name": "Inscrutable Intentions",
+      "text": "The rasa is immune to any\nmagical effects to determine if it is lying."
+    },
+    {
+      "name": "Sight of the Rasa",
+      "text": "The rasa share a special sight that\nis invisible to all non-rasa creatures. As an action, a\nrasa can touch a creature and place a secret mark\non that creature's chest. This mark lets other rasa\nknow whether or not this creature should be\nregarded as a friend or a foe."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The rasa makes two melee attacks."
+    },
+    {
+      "name": "Poisoned Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack:\n+5 to hit, reach 5 ft. or range 20/60 ft., one target.\nHit: 5 (1d4 + 3) piercing damage plus 2 (1d4)\npoison damage."
+    }
+  ],
+  "source": "creature"
+}

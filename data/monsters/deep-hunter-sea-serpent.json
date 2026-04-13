@@ -1,0 +1,75 @@
+{
+  "name": "Deep Hunter Sea Serpent",
+  "size": "Gargantuan",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "gargantuan",
+      "dragon",
+      "cr21",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 19,
+  "hp": {
+    "average": 385,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 80
+  },
+  "abilities": {
+    "str": 26,
+    "dex": 14,
+    "con": 25,
+    "int": 7,
+    "wis": 13,
+    "cha": 14
+  },
+  "skills": {
+    "Athletics": 15,
+    "Perception": 8
+  },
+  "languages": [
+    "Aquan",
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "21",
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The deep hunter serpent can breathe air and water."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "The deep hunter serpent deals double damage to objects\nand structures."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "A deep hunter serpent attacks once with its tail and either\nbites or uses its swallow attack."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 34\n(4d12 + 8) piercing damage plus 22 (4d10) poison damage, and the target\nis grappled (escape DC 23) and restrained. The deep sea hunter can’t make\na bit attack while it has a creature grappled with its bite."
+    },
+    {
+      "name": "Tail Slap",
+      "type": "special",
+      "text": "Melee Weapon Attack: +15 to hit, reach 20 ft., one target. Hit:\n30 (4d10 + 8) bludgeoning damage and the target is pushed 15 feet away\nand knocked prone."
+    },
+    {
+      "name": "Swallow",
+      "type": "special",
+      "text": "A Large or smaller target grappled by the serpent’s bite attack\nis swallowed and the grapple ends. While swallowed, the creature is\nblinded and restrained, it has total cover against attacks and other effects\noutside the deep hunter serpent, and it takes 42 (12d6) acid damage at the\nstart of each of the deep hunter serpent’s turns. If the deep hunter takes\n30 damage or more on a single turn from a creature inside it, the serpent\nmust succeed on a DC 25 Constitution saving throw at the end of that\nturn or regurgitate all swallowed creatures, which fall prone in a space\nwithin 10 feet of the serpent. If the serpent dies, a swallowed creature is\nno longer restrained by it and can escape from the corpse using 15 feet of\nmovement, exiting prone."
+    }
+  ],
+  "source": "creature"
+}

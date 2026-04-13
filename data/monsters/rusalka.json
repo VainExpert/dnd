@@ -1,0 +1,66 @@
+{
+  "name": "Rusalka",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr6",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 14,
+  "hp": {
+    "average": 88,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 40
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 13,
+    "con": 12,
+    "int": 11,
+    "wis": 15,
+    "cha": 18
+  },
+  "skills": {},
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "6",
+    "xp": 2300,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Withered Tresses",
+      "text": "If a rusalka is kept out of water for 24 consecutive hours, its hair and body dry into desiccated swamp weeds and the creature is utterly destroyed."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The rusalka's innate casting ability is Charisma (spell save DC 15). She can innately cast the following spells, requiring no material components:\n\nAt will: control water, suggestion, tongues, water walk (can be ended freely at will)\n\n1/day: dominate person"
+    },
+    {
+      "name": "Watery Camouflage",
+      "text": "In dim light or darkness, a rusalka that's underwater is invisible."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Breathless Kiss",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: the target is grappled (escape DC 13) and the rusalka draws all the air from the target's lungs with a kiss. If the rusalka has movement remaining, she drags the grappled creature into deep water, where it begins suffocating."
+    },
+    {
+      "name": "Drowning Hair (1/Day)",
+      "type": "special",
+      "text": "The rusalka's long hair tangles around a creature the rusalka has grappled. The creature takes 33 (6d10) necrotic damage, or half damage with a successful DC 15 Constitution saving throw. In addition, until it escapes the rusalka's grapple, it is restrained and has disadvantage on Strength checks to break free of the grapple."
+    }
+  ],
+  "source": "creature"
+}

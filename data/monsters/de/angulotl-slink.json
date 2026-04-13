@@ -1,0 +1,77 @@
+{
+  "name": "Angulotl Slink",
+  "size": "Klein",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr2",
+      "ambusher",
+      "flee-mortals"
+    ]
+  },
+  "alignment": "any",
+  "ac": 13,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20,
+    "swim": 30
+  },
+  "abilities": {
+    "str": 7,
+    "dex": 17,
+    "con": 12,
+    "int": 10,
+    "wis": 14,
+    "cha": 8
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 7,
+    "Survival": 4
+  },
+  "languages": [
+    "Angulotl"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibisch",
+      "text": "Der Slink kann sowohl an der Luft als auch unter Wasser atmen."
+    },
+    {
+      "name": "Spinnenklettern",
+      "text": "Der Slink kann schwierige Oberflächen erklimmen, darunter\nauch kopfüber an Decken, ohne dass er eine\nFähigkeitsprobe ablegen muss."
+    },
+    {
+      "name": "giftig",
+      "text": "Wenn eine Kreatur den Slink mit einem Nahkampfangriff trifft,\nwährend sie sich5 feetin seiner Nähe befindet, oder den Slink berührt, erleidet diese Kreatur\n2 (1d4) Giftschaden."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Slink führt einen „Giftdolch“-Angriff und\neinen „Zungenhieb“-Angriff aus."
+    },
+    {
+      "name": "Giftdolch",
+      "type": "special",
+      "text": "Nahkampf- oder Fernkampfangriff: +5 auf\nTreffer, Reichweite 1,5 m[ ]20/60Fuß, ein Ziel. Treffer: 5 (1d4 + 3)\nDurchdringungsschaden plus 10 (3d6) Giftschaden, und das\nZiel kann bis zum Beginn seines nächsten Zuges keine Reaktionen ausführen."
+    },
+    {
+      "name": "Zungenhalter",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite:3 m .,\neine mittelgroße oder kleinere Kreatur. Treffer: Der Slink schnappt sich einen\nkleinen oder winzigen Gegenstand, den er sehen kann und den das Ziel in der Hand hält\noder bei sich trägt. Der Slink kann den Gegenstand auffangen, wenn er eine\nfreie Hand hat, andernfalls landet er vor den Füßen des Slinks."
+    }
+  ],
+  "source": "creature"
+}

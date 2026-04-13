@@ -1,0 +1,61 @@
+{
+  "name": "Blutbusch",
+  "size": "Klein",
+  "type": {
+    "type": "plant",
+    "tags": [
+      "small",
+      "plant",
+      "cr3",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 13,
+  "hp": {
+    "average": 59,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 15,
+    "dex": 14,
+    "con": 20,
+    "int": 2,
+    "wis": 12,
+    "cha": 8
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Keimen",
+      "text": "Wesen, denen ein Blutbuschsamen implantiert wurde, leiden unter\nden Auswirkungen seiner raschen Keimung in ihrem Inneren. Sobald er implantiert ist,\nbeginnt der Samen schnell zu wachsen und sich auszubreiten. Alle 24 Stunden\nmuss das Ziel denDC 14Konstitutions-Rettungswurf wiederholen; bei einem Fehlschlag\nverringert sich seine maximale Trefferpunktzahl um 5 (1d10). Bei einem Erfolg\nwird der keimende Samen vom Immunsystem zerstört. Das Ziel stirbt, wenn dadurch\nseine maximalen Trefferpunkte auf 0 reduziert werden. Diese Reduzierung der maximalen Trefferpunkte\ndes Ziels hält so lange an, bis der Blutbusch-Samen entfernt wird."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Blutbusch führt einen Angriff mit seinen Blütenpfeilen und\nzwei Angriffe mit seinen Ranken aus."
+    },
+    {
+      "name": "Ranke",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 zum Treffer, Reichweite5 ft: 0, ein Ziel. Treffer: 4\n(1d4 + 2) Schnittschaden. Ist das Ziel eine mittelgroße oder kleinere Kreatur,\nwird sie festgehalten (Befreiung:DC 12 ) und bewegungsunfähig gemacht, und der Blutbusch kann\nkein weiteres Ziel festhalten."
+    },
+    {
+      "name": "Blumenpfeil",
+      "type": "special",
+      "text": "Fernkampfangriff: +4 auf den Trefferwurf, Reichweite5 ft: , ein Ziel.\nTreffer: 5 (1d6 + 2) Durchdringungsschaden; außerdem muss das Ziel einenDC\n14Konstitutions-Rettungswurf bestehen oder es wird ihm ein Blutbusch-Samen implantiert (siehe\nKeimen)."
+    }
+  ],
+  "source": "creature"
+}

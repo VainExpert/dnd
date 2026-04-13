@@ -1,0 +1,77 @@
+{
+  "name": "Ooze Master",
+  "size": "Huge",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "huge",
+      "undead",
+      "cr10",
+      "tales-from-the-yawning-portal"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 9,
+  "hp": {
+    "average": 138,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 30
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 1,
+    "con": 20,
+    "int": 17,
+    "wis": 10,
+    "cha": 16
+  },
+  "skills": {
+    "Arcana": 7,
+    "Insight": 4
+  },
+  "languages": [
+    "Common",
+    "Primordial",
+    "Thayan"
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "text": "tales from the yawning portal,  page 241"
+    },
+    {
+      "name": "Undead Nature",
+      "text": "The ooze master doesn't require air, food, drink, or sleep."
+    },
+    {
+      "name": "Corrosive Form",
+      "text": "A creature that touches the Ooze Master or hits it with a melee attack while within 5 feet of it takes 9 (2d8) acid damage. Any nonmagical weapon that hits the Ooze Master corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition that hits the Ooze Master is destroyed after dealing damage.\n\nThe Ooze Master can eat through 2-inch-thick, nonmagical wood or metal in 1 round."
+    },
+    {
+      "name": "Instinctive Attack",
+      "text": "When the Ooze Master casts a spell with a casting time of 1 action, it can make one pseudopod attack as a bonus action."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The Ooze Master is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). It has the following wizard spells prepared:\n\n* Cantrips (at will): <i>acid splash, friends, mage hand, poison spray</i>\n\n* 1st level (4 slots): <i>charm person, detect magic, magic missile, ray of sickness</i>\n\n* 2nd level (3 slots): <i>detect thoughts, Melf's acid arrow, suggestion</i>\n\n* 3rd level (3 slots): <i>fear, slow, stinking cloud</i>\n\n* 4th level (3 slots): <i>confusion, Evard's evard's black tentacles</i>\n\n* 5th level (1 slot): <i>cloudkill</i>"
+    },
+    {
+      "name": "Spider Climb",
+      "text": "The Ooze Master can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Pseudopod",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (3d6 + 3) bludgeoning damage plus 10 (3d6) acid damage."
+    }
+  ],
+  "source": "creature"
+}

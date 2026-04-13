@@ -1,0 +1,51 @@
+{
+  "name": "Armanite",
+  "size": "Groß",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr7",
+      "mordenkainens-tome-of-foes",
+      "demon"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 16,
+  "hp": {
+    "average": 84,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 21,
+    "dex": 18,
+    "con": 21,
+    "int": 8,
+    "wis": 12,
+    "cha": 13
+  },
+  "skills": {},
+  "languages": [
+    "Abyssal",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "7",
+    "xp": 2900,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Magieresistenz",
+      "text": "Der Armanit hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+    },
+    {
+      "name": "Magische Waffen",
+      "text": "Die Waffenangriffe des Armaniten sind magischer Natur."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

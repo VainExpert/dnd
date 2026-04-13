@@ -1,0 +1,80 @@
+{
+  "name": "Electrum Mouse Dragon",
+  "size": "Tiny",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "tiny",
+      "dragon",
+      "cr4",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic good",
+  "ac": 15,
+  "hp": {
+    "average": 31,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 10
+  },
+  "abilities": {
+    "str": 5,
+    "dex": 14,
+    "con": 15,
+    "int": 10,
+    "wis": 11,
+    "cha": 12
+  },
+  "skills": {
+    "Arcana": 2,
+    "Nature": 2,
+    "Perception": 4,
+    "Stealth": 6
+  },
+  "languages": [
+    "understands Common and Draconic but can’t speak"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Pack Tactics",
+      "text": "The mouse dragon has advantage on an attack roll against\na creature if at least one of the dragon’s allies is within 5 feet of the creature\nand the ally isn’t incapacitated."
+    },
+    {
+      "name": "Treasure Sense",
+      "text": "The mouse dragon can pinpoint, by scent, the location\nof precious metals and stones, such as coins and gems, within 60 feet of it."
+    },
+    {
+      "name": "Underfoot",
+      "text": "The mouse dragon can attempt to hide even when it is\nobscured only by a creature that is at least one size larger than it."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The electrum mouse dragon makes one bite attack and two\nclaw attacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6\n(1d8 + 2) slashing damage."
+    },
+    {
+      "name": "Lightning Breath (Recharge 5–6)",
+      "type": "special",
+      "text": "The dragon exhales lightning in a\n20-foot line that is 1 foot wide. Each creature in that line must make a DC\n12 Dexterity saving throw, taking 27 (6d8) lightning damage on a failed\nsaving throw, or half as much damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

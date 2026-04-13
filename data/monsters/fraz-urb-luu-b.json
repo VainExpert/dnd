@@ -1,0 +1,68 @@
+{
+  "name": "Fraz-Urb'luu (B)",
+  "size": "Large",
+  "type": {
+    "type": "fiend",
+    "tags": [
+      "large",
+      "fiend",
+      "cr23",
+      "mordenkainens-tome-of-foes",
+      "demon"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 18,
+  "hp": {
+    "average": 337,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 29,
+    "dex": 12,
+    "con": 25,
+    "int": 26,
+    "wis": 24,
+    "cha": 26
+  },
+  "skills": {
+    "Deception": 15,
+    "Perception": 14,
+    "Stealth": 8
+  },
+  "languages": [
+    "all",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "23",
+    "proficiency_bonus": 7
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "Fraz-Urb'luu's spellcasting ability is Charisma (spell save DC 23). Fraz-Urb'luu can innately cast the following spells, requiring no material components:\n\n* At will: <i>alter self </i>(can become Medium-sized when changing his appearance)<i>, detect magic, dispel magic, phantasmal force</i>\n\n* 3/day each: <i>confusion, dream, mislead, programmed illusion, seeming</i>\n\n* 1/day each: <i>mirage arcane, modify memory, project image</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "text": "If Fraz-Urb'luu fails a saving throw, he can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "Fraz-Urb'luu has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "text": "Fraz-Urb'luu's weapon attacks are magical."
+    },
+    {
+      "name": "Undetectable",
+      "text": "Fraz-Urb'luu can't be targeted by divination magic, perceived through magical scrying sensors, or detected by abilities that sense demons or fiends."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

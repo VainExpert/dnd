@@ -1,0 +1,45 @@
+{
+  "id": "drachenschach_set",
+  "type": "item",
+  "name": "Drachenschach-Set",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 1,
+    "currency": "sp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein Spielset aus Brett und Figuren für Drachenschach. Nutzen: Erkennen ob jemand schummelt (SG 10) oder das Spiel gewinnen (SG variabel). Genaue Spielregelen sind Extra beschrieben.",
+  "tags": [
+    "spiel",
+    "soziales",
+    "glücksspiel",
+    "nützlich",
+    "abenteuer"
+  ]
+}

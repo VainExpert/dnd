@@ -1,0 +1,53 @@
+{
+  "name": "Giant Leech",
+  "size": "Medium",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "medium",
+      "beast",
+      "cr1",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 11,
+  "hp": {
+    "average": 26,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 20
+  },
+  "abilities": {
+    "str": 11,
+    "dex": 12,
+    "con": 14,
+    "int": 2,
+    "wis": 10,
+    "cha": 1
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Vulnerability to Salt",
+      "text": "A handful of salt burns a giant leech\nas if it were a flask of acid, causing 1d6 acid damage per use."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Blood Drain",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5 ft. one\ncreature. Hit: 4 (1d6 + 1) piercing damage, and the leech attaches\nto the target. While attached, the leech doesn’t attack. Instead, at the\nstart of the leech’s turns, the target loses 5 (1d8 + 1) hit points due\nto blood loss.\n\nThe leech can detach itself by spending 5 feet of its movement.\nIt does so after it drains 25 hit points of blood from the target or\nthe target dies. A creature, including the target, can use its action to\nmake a DC 10 Strength check to rip the leech off and make it detach."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "chaos-pfeil",
+  "name": "Chaos Pfeil",
+  "level": 1,
+  "school": "Hervorrufung",
+  "casting_time": "1 Aktion",
+  "range": "36 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Zauberer"
+  ],
+  "text": "Du wirfst Chaos-Energie nach einer Kreatur in Reichweite.\nFühre einen Fernkampf-Zauberangriff gegen das Ziel durch.\nBei Treffer: 2W8 + 1W6 Schaden. Einer der W8 entscheidet über den Schadentyp (1-Säure, 2-Kälte, 3-Feuer, 4-Energie, 5-Blitz, 6-Gift, 7-Psychisch, 8-Donner).\nWenn beide Werte gleich sind, springt die Energie auf eine andere Kreatur in 9 m Entfernung zu dir über. Mache einen neuen Angriffs- und Schadenswurf. Die Energie kann auch hier weiterspringen.\nJede Kreatur kann nur einmal pro Wirken des Zaubers als Ziel gewählt werden.\n\nAuf höheren Level: pro Level 1W6 mehr Schaden"
+}

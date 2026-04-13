@@ -1,0 +1,60 @@
+{
+  "name": "Behälter",
+  "size": "Groß",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "large",
+      "aberration",
+      "cr13",
+      "monster-manual"
+    ]
+  },
+  "alignment": "gesetztreu-böse",
+  "ac": 18,
+  "hp": {
+    "average": 180,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 20
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 18,
+    "int": 17,
+    "wis": 15,
+    "cha": 17
+  },
+  "skills": {
+    "Perception": 12
+  },
+  "languages": [
+    "Deep Speech",
+    "Undercommon"
+  ],
+  "challenge": {
+    "cr": "13",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Anti-Magie-Kegel",
+      "text": "Das zentrale Auge des Beholders erzeugt in einem 150-Fuß-Kegel einen Bereich mit Antimagie, ähnlich wie der Zauber „Antimagiefeld“. Zu Beginn jedes seiner Züge entscheidet der Beholder, in welche Richtung der Kegel zeigt und ob er aktiv ist. Der Bereich wirkt den eigenen Augenstrahlen des Beholders entgegen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffer, Reichweite5 ft: , ein Ziel. Treffer: 14 (4d6) Durchdringungsschaden."
+    },
+    {
+      "name": "Augenstrahlen",
+      "type": "special",
+      "text": "Der Beholder feuert nach dem Zufallsprinzip drei der folgenden magischen Augenstrahlen ab (Doppelte werden neu gewürfelt) und wählt dabei ein bis drei Ziele aus, die er in120 ft einem Umkreis von  m um sich herum sehen kann:\n\n1. Bezauberungsstrahl. Die betroffene Kreatur muss einenDC 16  Weisheits-Rettungswurf bestehen oder wird vom Beholder für 1 Stunde verzaubert, oder bis der Beholder der Kreatur Schaden zufügt.\n\n2. Lähmungsstrahl. Die betroffene Kreatur muss einenDC 16  Konstitutions-Rettungswurf bestehen oder wird für 1 Minute gelähmt. Das Ziel kann den Rettungswurf am Ende jedes seiner Züge wiederholen und den Effekt auf sich selbst bei Erfolg beenden.\n\n3. Furcht-Strahl. Die betroffene Kreatur muss einenDC 16  Weisheits-Rettungswurf bestehen oder wird für 1 Minute in Furcht versetzt. Das Ziel kann den Rettungswurf am Ende jedes seiner Züge wiederholen und den Effekt auf sich selbst bei Erfolg beenden.\n\n4. Verlangsamungsstrahl. Die betroffene Kreatur muss einenDC 16  Geschicklichkeits-Rettungswurf bestehen. Bei einem misslungenen Rettungswurf wird die Geschwindigkeit des Ziels für 1 Minute halbiert. Außerdem kann die Kreatur keine Reaktionen ausführen und in ihrem Zug entweder eine Aktion oder eine Bonusaktion ausführen, nicht beides. Die Kreatur kann den Rettungswurf am Ende jedes ihrer Züge wiederholen und beendet den Effekt auf sich selbst bei Erfolg.\n\n5. Entkräftungsstrahl. Die betroffene Kreatur muss einenDC 16  Konstitutions-Rettungswurf durchführen und erleidet bei einem misslungenen Rettungswurf 36 (8d8) nekrotischen Schaden oder bei einem erfolgreichen Rettungswurf die Hälfte dieses Schadens.\n\n6. Telekinetischer Strahl. Handelt es sich bei dem Ziel um eine Kreatur, muss diese einenDC 16  Stärke-Rettungswurf bestehen, andernfalls bewegt der Beholder sie bis zu 9 m. in eine beliebige Richtung. Es wird durch den telekinetischen Griff des Strahls festgehalten, bis der nächste Zug des Beholders beginnt oder bis der Beholder handlungsunfähig wird.\nIst das Ziel ein Gegenstand mit einem Gewicht von 300 Pfund oder weniger, der nicht getragen oder bei sich geführt wird, wird er bis 30 ftzu 100 Fuß in eine beliebige Richtung bewegt. Der Beholder kann mit diesem Strahl auch präzise Kontrolle über Gegenstände ausüben, beispielsweise ein einfaches Werkzeug bedienen oder eine Tür oder einen Behälter öffnen.\n\n7. Schlafstrahl. Die betroffene Kreatur muss einenDC 16  Weisheits-Rettungswurf bestehen oder schläft ein und bleibt 1 Minute lang bewusstlos. Das Ziel erwacht, wenn es Schaden erleidet oder eine andere Kreatur eine Aktion ausführt, um es zu wecken. Dieser Strahl hat keine Wirkung auf Konstrukte und Untote.\n\n8. Versteinerungsstrahl. Die betroffene Kreatur muss einenDC 16Geschicklichkeits-Rettungswurf durchführen. Bei einem misslungenen Rettungswurf beginnt die Kreatur, sich in Stein zu verwandeln, und ist gefesselt. Sie muss den Rettungswurf am Ende ihres nächsten Zuges wiederholen. Bei Erfolg endet der Effekt. Bei Misserfolg bleibt die Kreatur versteinert, bis sie durch den Zauber „Große Wiederherstellung“ oder andere Magie befreit wird.\n\n9. Desintegrationsstrahl. Ist das Ziel eine Kreatur, muss sie einenDC 16Geschicklichkeits-Rettungswurf bestehen oder 45 (10d8) Kraftschaden erleiden. Reduziert dieser Schaden die Lebenspunkte der Kreatur auf 0, zerfällt ihr Körper zu einem Haufen feinen grauen Staubs.\nIst das Ziel ein großer oder kleinerer nichtmagischer Gegenstand oder eine Schöpfung magischer Kraft, wird es ohne Rettungswurf desintegriert. Ist das Ziel ein riesiger oder größerer Gegenstand oder eine Schöpfung magischer Kraft, löst dieser Strahl einen 10-Fuß-Würfel davon auf.\n\n10. Todesstrahl. Die betroffene Kreatur muss einenDC 16  Geschicklichkeits-Rettungswurf bestehen oder erleidet 55 (10d10) nekrotischen Schaden. Das Ziel stirbt, wenn der Strahl seine Trefferpunkte auf 0 reduziert."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "zauberstab-des-dirigierens",
+  "type": "item",
+  "name": "Zauberstab des Dirigierens",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": true,
+  "equip_slot": "hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Der Zauberstab hat 7 Ladungen. Wenn er gehalten wird, kann mit einer Aktion eine Ladung verwendet werden um einen kleinen harmlosen, vielfarbigen Lichtblitz zu erzeugen an einem Punkt in bis zu 36 m Abstand, den du sehen kannst. Der Lichtblitz wird von einem knisternden Geräusch begleitet, das bis zu 90 m weit hörbar ist. Der Lichtblitz is so hell wie eine Fackel hält aber nur für 1 s. Der Zauberstab bekommt 1W6+1 am Morgen wieder. Wenn die letzte Ladung verwendet wurde, muss ein W20 gewürfelt werden. Bei einer 1 zerplatzt der Stab in einem kleinen, harmlosen Feuerwerk.",
+  "tags": [
+    "magisch",
+    "zauberstab",
+    "ladungen",
+    "aktion",
+    "illusion"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "flammen-erzeugen",
+  "name": "Flammen erzeugen",
+  "level": 0,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "V, G",
+  "duration": "10 min",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Druide"
+  ],
+  "text": "Eine flackernde Flamme erscheint in deiner Hand, bleibt für die Wirkungsdauer bestehen und schadet weder dir noch deiner Ausrüstung.\nSie gibt in einem 3 m Radius helles Licht und für weitere 3 m gedimmtes Licht ab.\nDer Zauber endet, wenn du ihn als Aktion beendest oder ihn erneut wirkst.\nDu kannst mit der Flamme angreifen, das beendet den Zauber. Du kannst die Flamme auf eine Kreatur in bis zu 9 m Abstand von dir schleudern.\nMache einen Fernkampf-Zauberangriff gegen das Ziel.\nBei Treffer: 1W8 Feuerschaden\n\nAuf höheren Level: Schaden steigt um je 1W8 auf Level 5, 11 und 17."
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Pterafolk",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "Large",
+      "monstrosity",
+      "cr1",
+      "tomb-of-annihilation"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 12,
+  "hp": {
+    "average": 26,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 13,
+    "con": 12,
+    "int": 9,
+    "wis": 10,
+    "cha": 11
+  },
+  "skills": {
+    "Perception": 2,
+    "Survival": 2
+  },
+  "languages": [],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Terror Dive",
+      "text": "If the pterafolk is flying and dives at least 30 feet straight toward a target, and then hits that target with a melee weapon attack, the target is frightened until the end of its next turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The pterafolk makes three attacks: one with its bite and two with its claws. Alternatively, it makes two melee attacks with its javelin."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 +2) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (ld6 +2) slashing damage."
+    },
+    {
+      "name": "Javelin",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 9 (2d6 +2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

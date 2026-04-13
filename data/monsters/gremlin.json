@@ -1,0 +1,70 @@
+{
+  "name": "Gremlin",
+  "size": "Small",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "small",
+      "fey",
+      "cr1/4",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 14,
+  "hp": {
+    "average": 10,
+    "formula": ""
+  },
+  "speed": {
+    "climb": 20
+  },
+  "abilities": {
+    "str": 7,
+    "dex": 16,
+    "con": 11,
+    "int": 14,
+    "wis": 14,
+    "cha": 15
+  },
+  "skills": {
+    "Acrobatics": 5,
+    "Arcana": 4,
+    "Perception": 4,
+    "Sleight of Hand": 5,
+    "Stealth": 5
+  },
+  "languages": [
+    "Common",
+    "Goblin",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "1/4",
+    "xp": 50,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Knot Expert",
+      "text": "The gremlin has advantage on any check or saving throw\nto break free of any effect grappling or restraining it when the effect is\nmade of rope or rope-like objects."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The gremlin’s innate spellcasting ability is\nCharisma (spell save DC 12, +4 to hit with spell attacks). It can cast the\nfollowing spells without requiring material components.\n\n* At will: <i>arcane lock, knock</i>\n\n* 3/day: <i>find traps</i>\n\n* 1/day: <i>passwall</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+    },
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

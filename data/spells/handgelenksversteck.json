@@ -1,0 +1,16 @@
+{
+  "id": "handgelenksversteck",
+  "name": "Handgelenksversteck",
+  "level": 2,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "Selbst",
+  "components": "G",
+  "duration": "Konzentration, bis zu 1 h",
+  "concentration": true,
+  "ritual": true,
+  "classes": [
+    "Magier"
+  ],
+  "text": "Ein Gegenstand in deiner Hand (nur du darfst ihn halten; max. 2,5 kg) verschwindet in einem extradimensionalen Raum und bleibt dort für die Wirkungsdauer.\nBis der Zauber endet, kannst du als Aktion den Gegenstand in deine freie Hand beschwören oder ihn als Aktion zurück in den Raum schicken.\nIst der Gegenstand noch im Versteck, wenn der Zauber endet, erscheint er zu deinen Füßen."
+}

@@ -1,0 +1,39 @@
+{
+  "id": "magicitem-umhang-der-spinnentiere",
+  "type": "item",
+  "name": "Umhang der Spinnentiere",
+  "rules_version": "2024",
+  "source": "a-z.html",
+  "item_category": "wondrous-item",
+  "rarity": "sehr selten",
+  "requires_attunement": true,
+  "attunement_text": "erfordert Einstimmung",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 0,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser feine Umhang ist aus schwarzer Seide gewoben und mit zarten, silbrig glänzenden Fäden durchwirkt. Wenn du ihn trägst, erhältst du die folgenden Vorteile:",
+  "tags": []
+}

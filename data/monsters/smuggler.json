@@ -1,0 +1,55 @@
+{
+  "name": "Smuggler",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/8",
+      "out-of-the-box-5e",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 13,
+  "hp": {
+    "average": 11,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 13,
+    "dex": 12,
+    "con": 12,
+    "int": 10,
+    "wis": 11,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 2,
+    "Vehicles (water)": 2
+  },
+  "languages": [
+    "Any one language (usually Common)"
+  ],
+  "challenge": {
+    "cr": "1/8",
+    "xp": 25,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +3 to hit,\nreach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d4 + 1) piercing damage."
+    },
+    {
+      "name": "Scimitar",
+      "type": "special",
+      "text": "Melee Weapon Attack: +3 to hit, reach 5\nft., one target. Hit: 4 (1d6 + 1) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

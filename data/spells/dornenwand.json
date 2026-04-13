@@ -1,0 +1,16 @@
+{
+  "id": "dornenwand",
+  "name": "Dornenwand",
+  "level": 6,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "36 m",
+  "components": "V, G, M (Handvoll Dornen)",
+  "duration": "Konzentration, bis zu 10 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Druide"
+  ],
+  "text": "Du erschaffst eine Wand aus dornigen Büschen.\nSie erscheint auf einer Oberfläche in Reichweite und bleibt für die Wirkungsdauer bestehen. Die Wand kann bis zu 18 m lang, 3 m hoch und 1,5 m dick sein, als Ring max. 6 m Durchmesser, 6 m hoch und 1,5 m dick. Die Wand blockiert Sichtlinien.\nJede Kreatur im Bereich der Wand bei Erscheinen muss einen DEX-Rettungswurf machen.\nBei Fehlschlag: 7W8 Stichschaden, sonst die Hälfte\nEine Kreatur kann die Dornen durchdringen muss aber pro 1,5 m in der Wand 3 m ihrer Geschwindigkeit aufbringen. Zudem muss eine Kreatur, die die Wand zum ersten Mal betritt oder den Zug darin beendet, einen DEX-Rettungswurf gegen den Schaden machen.\n\nAuf höheren Level gewirkt: pro Level 1W8 mehr Schaden"
+}

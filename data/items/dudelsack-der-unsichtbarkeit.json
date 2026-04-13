@@ -1,0 +1,45 @@
+{
+  "id": "dudelsack-der-unsichtbarkeit",
+  "type": "item",
+  "name": "Dudelsack der Unsichtbarkeit",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 200,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Der Spieler wird, wöhrend er den Dudelsack spielt, unsichtbar. Sein Spiel kann trotzdem gehört werden.",
+  "tags": [
+    "magisch",
+    "instrument",
+    "unsichtbar",
+    "unsichtbarkeit",
+    "zeit"
+  ]
+}

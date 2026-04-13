@@ -1,0 +1,47 @@
+{
+  "id": "waechterschild",
+  "type": "item",
+  "name": "Wächterschild",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "off-hand",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 400,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn das Schild getragen wird, hast du Vorteil auf Initiative-Würfe und Wahrnehmung-Würfe. Das Schild hat ein großes Auge auf der Vorderseite.",
+  "tags": [
+    "magisch",
+    "abwehr",
+    "rüstung",
+    "schild",
+    "vorteil",
+    "wahrnehmung",
+    "initiative"
+  ]
+}

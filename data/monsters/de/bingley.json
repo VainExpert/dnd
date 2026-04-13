@@ -1,0 +1,85 @@
+{
+  "name": "Bingley",
+  "size": "Klein",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "small",
+      "humanoid",
+      "cr3",
+      "out-of-the-box-5e",
+      "halfling, shapechanger"
+    ]
+  },
+  "alignment": "chaotisch böse",
+  "ac": 12,
+  "hp": {
+    "average": 49,
+    "formula": ""
+  },
+  "speed": {
+    "walk": 35
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 15,
+    "con": 14,
+    "int": 10,
+    "wis": 11,
+    "cha": 11
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 4
+  },
+  "languages": [
+    "Common",
+    "Halfling (can’t speak in wolf form)"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Tapfer",
+      "text": "Bingley hat einen Vorteil bei Rettungswürfen\ngegen das Erschrecken."
+    },
+    {
+      "name": "Die Wendigkeit der Halblinge",
+      "text": "Bingley kann sich durch\nden Platz einer mittelgroßen oder größeren Kreatur bewegen.\nScharfes Gehör und Geruchssinn. Bingley hat einen Vorteil bei\nWeisheits- (Wahrnehmungs-)Proben, die auf Gehör oder\nGeruch beruhen."
+    },
+    {
+      "name": "Glück",
+      "text": "Wenn Bingley bei einem Angriffswurf, einer\nFertigkeitsprobe oder einem Rettungswurf eine 1 würfelt, darf er den Würfel erneut werfen und\nmuss das neue Ergebnis verwenden."
+    },
+    {
+      "name": "Gestaltwandler",
+      "text": "Bingley kann seine Aktion nutzen, um sich\nin einen wolfsähnlichen Humanoiden oder in einen Wolf zu verwandeln,\noder zurück in seine wahre Gestalt, die humanoid ist. Seine\nWerte, mit Ausnahme seiner RK, sind in jeder\nGestalt identisch. Ausrüstung, die er trägt oder bei sich hat, wird nicht\nverwandelt. Er kehrt in seine wahre Gestalt zurück, wenn er stirbt."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff (nur in humanoider oder hybrider Form)",
+      "type": "special",
+      "text": "Bingley führt zwei Angriffe aus: zwei mit seinem Speer (in humanoider\nGestalt) oder einen mit seinem Biss und einen mit seinen\nKlauen (in hybrider Gestalt)."
+    },
+    {
+      "name": "Biss (nur Wolfs- oder Mischform)",
+      "type": "special",
+      "text": "Nahkampfwaffe\nAngriff: +4 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 6 (1d8 + 2) Durchdringungsschaden. Ist das Ziel ein Humanoid,\nmuss es einenDC 12  Konstitutions-Rettungswurf bestehen\noder wird mit Werwolf-Lykanthropie verflucht."
+    },
+    {
+      "name": "Klauen (nur in der Hybridform)",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +4 zum Treffen, Reichweite5 ft: , eine Kreatur. Treffer: 7 (2d4 + 2)\nSchadensart: Schnitt."
+    },
+    {
+      "name": "Speer (nur in humanoider Gestalt)",
+      "type": "special",
+      "text": "Nahkampf oder Fernkampf\nWaffenangriff: +4 zum Treffen, Reichweite5 ft\n[ ] oder20/60\n[ ] Fuß, eine Kreatur. Treffer: 5 (1d6 + 2\n) Durchbohrungsschaden,\noder 6 (1d8 + 2\n) Durchbohrungsschaden, wenn die Waffe mit beiden\nHänden für einen Nahkampfangriff eingesetzt wird."
+    }
+  ],
+  "source": "creature"
+}

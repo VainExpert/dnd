@@ -1,0 +1,45 @@
+{
+  "id": "segelschiff",
+  "type": "item",
+  "name": "Segelschiff",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 10000,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Ein großes Segelschiff für maximale 20 Passagiere und bis zu 100 t Cargo, benötigt auch eine Crew von 20 Leuten.",
+  "tags": [
+    "abenteuer",
+    "reise",
+    "wassser",
+    "transport",
+    "navigation"
+  ]
+}

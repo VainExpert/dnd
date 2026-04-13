@@ -1,0 +1,44 @@
+{
+  "id": "faelscherausruestung",
+  "type": "item",
+  "name": "Fälscherausrüstung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "armor",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "body",
+  "stackable": false,
+  "weight": {
+    "value": 2.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 15,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Werkzeug-Set zum Fälschen von Dokumenten. Nutzen: Kann bis zu 10 Wörter in einer anderen Handschrift nachstellen (SG 15) oder ein Wachs-Siegel duplizieren (SG 20).",
+  "tags": [
+    "abenteuer",
+    "werkzeug",
+    "nützlich",
+    "täuschen"
+  ]
+}

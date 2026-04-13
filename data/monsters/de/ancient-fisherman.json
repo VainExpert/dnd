@@ -1,0 +1,76 @@
+{
+  "name": "Der alte Fischer",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 16,
+  "hp": {
+    "average": 110,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 30
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 10,
+    "con": 16,
+    "int": 12,
+    "wis": 16,
+    "cha": 12
+  },
+  "skills": {
+    "Athletics": 6,
+    "Nature": 4,
+    "Perception": 9,
+    "Survival": 6
+  },
+  "languages": [
+    "any three languages"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Experte für Wasserlebewesen",
+      "text": "Der Fischer kann seinen Atem\nbis zu 10 Minuten lang anhalten, und seine Fähigkeiten\nbleiben im Unterwasserkampf unbeeinträchtigt."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene\nZauberfähigkeit des Fischers ist Weisheit (ZauberrettungswurfDC 14).\nDer Fischer kann von Natur aus die folgenden\nZauber wirken, ohne dass dafür materielle Komponenten erforderlich sind:\n\n* Beliebig oft: Tanzende Lichter, Wasser formen\n\n* Je 1 Mal pro Tag: Wasser beherrschen, Flutwelle, Wasserwand, Wasserkugel"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Fischer führt drei Angriffe aus: einen\nmit seiner Harpune und zwei mit seinem Haken."
+    },
+    {
+      "name": "Riesenhaken",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite\n1,5 m, ein Ziel. Treffer: 7 (1d8 + 3) Durchschlagschaden."
+    },
+    {
+      "name": "Harpune",
+      "type": "special",
+      "text": "Fernkampfangriff: +6 zum Treffen, Reichweite\n20/18 m., ein Ziel. Treffer: 6 (1d6 + 3) Durchdringungsschaden\nund das Ziel wird festgehalten (Befreiung DC 14).\n\nDer Fischer kann seine Bonusaktion nutzen, um das\nZiel bis zu30 feet  zu sich heranzuziehen, wobei er\nzusätzliche 9 (2d8) Durchdringungsschaden verursacht. Wenn der\nFischer diesen Angriff bei einem bereits\nfestgehaltenen Ziel einsetzt, wird das Ziel um weitere  30\nfeetherangezogen und erleidet 9 (2d8) Durchbohrungsschaden. Immer wenn\ndie festgehaltene Kreatur versucht, sich aus dem\nGriff zu befreien, erleidet sie sofort 9 (2d8) Durchbohrungsschaden,\nda die Harpune an ihr zerreißt."
+    },
+    {
+      "name": "Fangen und Freilassen (Aufladen 5-6)",
+      "type": "special",
+      "text": "Der Fischer\nführt einen brutalen Angriff auf ein Ziel aus5 feet, das er\nmit seiner Harpune festgehalten hat. Er führt einen Angriffswurf\nmit Vorteil unter Verwendung seines riesigen Hakens durch. Bei einem Treffer\ndurchbohrt er das Ziel mit dem Haken und reißt\nes dann aus dessen Körper, wodurch er mit diesem Angriff zusätzlich 33 (6d10)\nDurchbohrungsschaden verursacht."
+    }
+  ],
+  "source": "creature"
+}

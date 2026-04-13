@@ -1,0 +1,86 @@
+{
+  "name": "Baba Yagas Hütte",
+  "size": "Gigantisch",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "gargantuan",
+      "construct",
+      "cr12",
+      "homebrew"
+    ]
+  },
+  "alignment": "chaotisch neutral",
+  "ac": 17,
+  "hp": {
+    "average": 154,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 23,
+    "dex": 9,
+    "con": 17,
+    "int": 7,
+    "wis": 10,
+    "cha": 16
+  },
+  "skills": {},
+  "languages": [
+    "Understands Common and Sylvan but can't speak"
+  ],
+  "challenge": {
+    "cr": "12",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Schein",
+      "text": "Solange die Hütte stillsteht,\nist sie von einer gewöhnlichen (wenn auch grässlich\ngeschmückten) Hütte nicht zu unterscheiden."
+    },
+    {
+      "name": "Unveränderliche Form",
+      "text": "Baba Yagas Hütte ist immun gegen alle\nZauber oder Effekte, die ihre Gestalt verändern würden."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "Baba Yagas Hütte verursacht doppelten Schaden an\nObjekten und Gebäuden."
+    },
+    {
+      "name": "Die beste Freundin einer Hexe",
+      "text": "Solange sie sich in der Nähe60 feetvon Baba\nYaga befindet, erhält die Hütte Zugang zu einer begrenzten Zauberspruchliste, wie\nunter „Gemeinsames Zaubern“ beschrieben."
+    },
+    {
+      "name": "Gemeinsames Zaubern",
+      "text": "Solange Baba Yaga und ihre Hütte\n60 feetnebeneinander stehen, können beide die\nfolgenden Zauber wirken, müssen sich jedoch die Zauberslots\nteilen. Für das Wirken dieser Zauber gilt die Hütte als Zauberwirker der Stufe 7.\nIhre Zauberfertigkeit ist Charisma\n(Zauber-Rettungswurf-SG beträgt 15, +7 auf Treffer bei Zauberangriffen). Die\nHütte beherrscht die folgenden Zauber, für die keine materiellen\nKomponenten benötigt werden:\n\n* Cantrips (beliebig oft): Druidenkunst, Kleine Illusion, Dornenpeitsche\n\n* 1. Stufe (4 Plätze): Verwickeln, Strahl der Krankheit\n\n* 2. Stufe (3 Plätze): Flammende Kugel, Mondstrahl\n\n* 3. Stufe (3 Plätze): Blitzruf, Pflanzenwachstum\n\n* 4. Stufe (1 Platz): Verwüstung"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Baba Yagas Hütte führt zwei Angriffe aus. Einen\nmit ihrem Tritt und einen mit ihrem klaffenden Rachen."
+    },
+    {
+      "name": "Kick",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffer, Reichweite5 ft: , ein\nZiel. Treffer: 39 (6d10+6) Bludgeoning-Schaden. Bei einem Treffer\nmüssen Ziele der Größe „Groß“ oder kleiner einenDC 15  Stärke-\nRettungswurf bestehen oder werden zu Boden geworfen."
+    },
+    {
+      "name": "Gähnende Schlucht",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +9 zum Treffen, Reichweite5\nft: , ein Ziel. Verursacht 32 (6d12+6) Durchdringungsschaden. Bei einem\nTreffer werden Ziele der Größe „Groß“ oder kleiner festgehalten, während das Wesen\nversucht, das Ziel zu verschlingen."
+    },
+    {
+      "name": "Schwalbe",
+      "type": "special",
+      "text": "Die Hütte führt einen Angriff mit dem „Gaping Maw“ gegen\nein großes oder kleineres Ziel aus, das sie im Griff hat. Trifft der Angriff,\nwird das Ziel verschluckt und der Griff endet. Das\nverschluckte Ziel hat vollständige Deckung gegen Angriffe und\nandere Effekte außerhalb der Hütte, während es ziellos in\neinem extradimensionalen Raum schwebt. Als Aktion am Ende\nihres Zuges kann eine verschluckte Kreatur einenDC 17 \nIntelligenz-Rettungswurf durchführen, um einen Weg zu finden,\naus der Hütte zu entkommen. Bei Erfolg wird die Kreatur an\neiner unbesetzten Stelle innerhalb5 feet  der Hütte ausgespuckt. Wenn die Hütte\nstirbt, spuckt sie alle verschluckten Kreaturen und Gegenstände aus."
+    },
+    {
+      "name": "Mega Hop (Nachfüllpackung 5-6)",
+      "type": "special",
+      "text": "Baba Yagas Hütte springt hoch\nin die Luft und landet an einer freien Stelle im120\nfeet\nUmkreis von  ihres ursprünglichen Standorts. Alle Kreaturen im Umkreis von 30\nFuß müssen einen Stärke-Rettungswurf durchführenDC 18\noder erleiden 51 (10d8+6\n) Blitzschaden und werden\nzu Boden geworfen. Bei einem erfolgreichen Rettungswurf erleidet eine Kreatur nur die Hälfte\ndes Schadens und wird nicht zu Boden geworfen."
+    }
+  ],
+  "source": "creature"
+}

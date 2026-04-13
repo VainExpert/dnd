@@ -1,0 +1,44 @@
+{
+  "id": "flugbesen",
+  "type": "item",
+  "name": "Flugbesen",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wondrous-item",
+  "rarity": "ungewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 1.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 450,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Dieser hölzerne Besen wiegt 1,5 kg und ist als normaler Besen verwendbar, bis du dich über den Besenstiel stellst und sein Befehlswort aussprichst. Dann schwebt er unter dir und du kannst mit ihm durch die Luft fliegen. Die Flugbewegungsrate des Besens beträgt 15 m. Er kann bis zu 200 kg tragen. Allerdings sinkt seine Flugbewegungsrate auf 9 m, wenn er mehr als 100 kg trägt. Der Besen hört auf zu schweben, wenn du landest. Du kannst den Besen ohne Passagier zu einem Ziel im Abstand von bis zu 1,6 km von dir schicken, wenn du sein Befehlswort aussprichst, den Ort nennst und du mit dem Ort vertraut bist. Der Besen kehrt zu dir zurück, wenn du ein anderes Befehlswort aussprichst, sofern er immer noch maximal 1,6 km von dir entfernt ist.",
+  "tags": [
+    "magisch",
+    "transport",
+    "bewegung",
+    "befehlswort"
+  ]
+}

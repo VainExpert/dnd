@@ -1,0 +1,82 @@
+{
+  "name": "Chaos Blade",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 17,
+  "hp": {
+    "average": 73,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 10,
+    "dex": 16,
+    "con": 16,
+    "int": 9,
+    "wis": 13,
+    "cha": 18
+  },
+  "skills": {
+    "Athletics": 7,
+    "Deception": 8,
+    "Perception": 5,
+    "Persuasion": 8
+  },
+  "languages": [
+    "Any two languages"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Chaotic Strikes",
+      "text": "When the chaos blade rolls a natural\n1 or a critical hit with a weapon attack, it can\nimmediately cast a spell with a casting time of 1\naction as a bonus action."
+    },
+    {
+      "name": "Improved Criticals",
+      "text": "The chaos blade scores a critical\nhit with its weapon attacks on a roll of 19 or 20."
+    },
+    {
+      "name": "Infused Strikes",
+      "text": "The chaos blades weapons are\ninfused with elemental energy and deal 2d6\nadditional cold, fire, or lightning damage on hit\n(chosen at random and included in the attack)."
+    },
+    {
+      "name": "Spellcasting",
+      "text": "The chaos blade is a 6th-level\nspellcaster. Its spellcasting ability is charisma (spell\nsave DC 16, +8 to hit with spell attacks). The chaos\nblade has the following sorcerer spells prepared:\n\n* Cantrips (at will): <i>acid splash, blade ward, true strike</i>\n\n* 1st level (4 slots): <i>burning hands, color spray, shield</i>\n\n* 2nd level (3 slots): <i>blur, hold person, misty step</i>\n\n* 3rd level (3 slots): <i>counterspell, dispel magic, haste</i>"
+    },
+    {
+      "name": "War Caster",
+      "text": "The chaos blade has advantage on\nConstitution saving throws made to maintain\nconcentration on spells and can cast spells while\nwielding a weapon in each hand."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The chaos blade makes two shortsword\nattacks."
+    },
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach\n5 ft., one target. Hit: 6 (1d6 + 3) piercing damage\nplus 7 (2d6) cold, fire, or lightning damage (chosen\nrandomly)."
+    },
+    {
+      "name": "Action Surge (1/Short Rest)",
+      "type": "special",
+      "text": "The chaos blade makes\n3 shortsword attacks."
+    }
+  ],
+  "source": "creature"
+}

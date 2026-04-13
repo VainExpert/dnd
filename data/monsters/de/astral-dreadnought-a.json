@@ -1,0 +1,43 @@
+{
+  "name": "Astral-Dreadnought (A)",
+  "size": "Gigantisch",
+  "type": {
+    "type": "titan",
+    "tags": [
+      "gargantuan",
+      "titan",
+      "cr21",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "ohne Gesinnung",
+  "ac": 20,
+  "hp": {
+    "average": 297,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 28,
+    "dex": 7,
+    "con": 25,
+    "int": 5,
+    "wis": 14,
+    "cha": 18
+  },
+  "skills": {
+    "Perception": 9
+  },
+  "languages": [
+    "---"
+  ],
+  "challenge": {
+    "cr": "21",
+    "proficiency_bonus": 7
+  },
+  "traits": [],
+  "actions": [],
+  "source": "creature"
+}

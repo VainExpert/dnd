@@ -1,0 +1,19 @@
+{
+  "id": "befall",
+  "name": "Befall",
+  "level": 0,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V, G, M (eine lebende Fliege)",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Druide",
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Eine Wolke aus Fliegen, Milben und anderen Parasiten erscheint auf einer Kreatur in Reichweite, die du sehen kannst.\nDas Ziel muss einen CON-Rettungswurf machen.\nBei Fehlschlag: 1W6 Giftschaden und es bewegt sich 1,5 m in eine zufällige Richtung (1W4: 1-Norden, 2-Süden, 3-Osten, 4-Westen), wenn es sich bewegen kann und der Weg frei ist. Die Bewegung provoziert keine Gelegenheitsangriffe."
+}

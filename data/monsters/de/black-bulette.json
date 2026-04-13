@@ -1,0 +1,76 @@
+{
+  "name": "Schwarze Bulette",
+  "size": "Riesig",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "huge",
+      "monstrosity",
+      "cr13",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "gesetztreu-böse",
+  "ac": 19,
+  "hp": {
+    "average": 225,
+    "formula": ""
+  },
+  "speed": {
+    "burrow": 80
+  },
+  "abilities": {
+    "str": 22,
+    "dex": 14,
+    "con": 22,
+    "int": 6,
+    "wis": 14,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 7
+  },
+  "languages": [
+    "all",
+    "telepathy 36 m."
+  ],
+  "challenge": {
+    "cr": "13",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Das Schnäppchen des Lebens",
+      "text": "Wird die schwarze Bulette getötet, zerfällt ihr Körper\nin Obsidian-Glasscherben und befreit den darin gefangenen Dämon. Der\nDämon kann von beliebiger Art sein (nach Ermessen des Spielleiters), mit Ausnahme eines Dämons\nköniglichen Ranges. Der Dämon wird demjenigen dankbar sein, der seine\njahrhundertelange Gefangenschaft beendet hat, und den Verantwortlichen als Gegenleistung einen\nGefallen anbieten, bevor er in die höllischen Reiche seiner Heimatwelt zurückkehrt.\nKluge Empfänger dieses Angebots sollten bedenken, dass die üblichen Vorbehalte beim\nUmgang mit Teufeln bei jedem Handel in vollem Umfang gelten."
+    },
+    {
+      "name": "Das Böse und das Gute erkennen",
+      "text": "Die Bulette weiß, ob sich in30 feetihrer Nähe eine Abnormität befindet –\nsei es ein himmlisches Wesen, ein Elementar, ein Feenwesen, ein Dämon oder ein Untoter – und wo\nsich diese Kreatur aufhält. Die Bulette weiß außerdem, ob sich in30 feetihrer Nähe ein Ort oder ein Gegenstand befindet,\nder geweiht oder entweiht wurde."
+    },
+    {
+      "name": "Doppelte planare Verbindung",
+      "text": "Die schwarze Bulette ist eng mit dem\nAbgrund verbunden, wo sie als angekettetes, adamantines Fass in Form einer\nabstrahierten Bulette erscheint."
+    },
+    {
+      "name": "Höllischer Gestank",
+      "text": "Jedes Wesen, das seinen Zug in120 feetReichweite\nder Bulette beginnt, muss einenDC 18Konstitutions-Rettungswurf bestehen, sonst ist es\nbis zum Beginn seines nächsten Zuges vergiftet. Kommt eine Kreatur in physischen Kontakt mit\neiner schwarzen Bulette, wird ihr ein schrecklicher Gestank anhaftet,\nder dazu führt, dass sie 12\nStunden lang Nachteil bei Geschicklichkeits- (Verstecken-)Proben hat. Der Gestank kann früher beseitigt werden, wenn reichlich Seife, Wasser und\nzwei volle Stunden Schrubben zum Einsatz kommen."
+    },
+    {
+      "name": "Magieresistenz",
+      "text": "Die Bulette hat einen Vorteil bei Rettungswürfen gegen\nZauber und andere magische Effekte."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Biss",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +11 zum Treffen, Reichweite:3 m ., ein Ziel. Treffer: 58\n(8d12 + 6) Durchdringungsschaden."
+    },
+    {
+      "name": "Atem der Tiefen (Wiederladezeit 5–6)",
+      "type": "special",
+      "text": "Die Bulette speit Feuer in einem 18 Meter\nbreiten Kegel. Jedes Wesen in diesem Bereich muss einenDC 18  Geschicklichkeits-Rettungswurf\nausführen und erleidet bei einem misslungenen Rettungswurf 42 (12d6) Feuerschaden oder die Hälfte des\nSchadens bei einem erfolgreichen Rettungswurf."
+    }
+  ],
+  "source": "creature"
+}

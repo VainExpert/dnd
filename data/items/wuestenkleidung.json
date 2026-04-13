@@ -1,0 +1,42 @@
+{
+  "id": "wuestenkleidung",
+  "type": "item",
+  "name": "Wüstenkleidung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 5,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": null
+  },
+  "uses": {
+    "max": null,
+    "recharge": null
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn du diese Wüstenkleidung trägst, aber keine Mittlere oder Schwere Rüstung, schaffst du automatisch Rettungswürfe gegen die Effekte von extreme Hitze.",
+  "tags": [
+    "kleidung",
+    "wetter"
+  ]
+}

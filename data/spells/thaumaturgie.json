@@ -1,0 +1,16 @@
+{
+  "id": "thaumaturgie",
+  "name": "Thaumaturgie",
+  "level": 0,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Kleriker"
+  ],
+  "text": "Du erzeugst einen der folgenden magischen Effekte in Reichweite:\n * Deine Stimme klingt 1 min lang bis zu 3x so laut wie sonst.\n * Lässt 1 min lang Flammen auflodern, stärker oder schwächer leuchten oder ihre Farbe ändern.\n * Du verursachst 1 min lang ein harmloses Erdbeben.\n * Du erzeugst einen unmittelbaren Klang, der von einem Punkt deiner Wahl in Reichweite ausgeht.\n * Lässt unmittelbar eine unverschlossene Tür oder ein unverschlossenes Fenster auffliegen oder zuschlagen.\n * Du veränderst 1 min lang das Aussehen deiner Augen.\nBis zu 3 der 1 min Effekte gleichzeitig wirken, als Aktion einen der Effekte beenden."
+}

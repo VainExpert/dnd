@@ -1,0 +1,70 @@
+{
+  "name": "Desert Giant",
+  "size": "Huge",
+  "type": {
+    "type": "giant",
+    "tags": [
+      "huge",
+      "giant",
+      "cr9",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 17,
+  "hp": {
+    "average": 175,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 27,
+    "dex": 10,
+    "con": 22,
+    "int": 13,
+    "wis": 18,
+    "cha": 15
+  },
+  "skills": {
+    "Perception": 8,
+    "Stealth": 4,
+    "Survival": 8
+  },
+  "languages": [
+    "Common",
+    "Giant"
+  ],
+  "challenge": {
+    "cr": "9",
+    "xp": 5000,
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Sand Camouflage",
+      "text": "The giant has advantage on Dexterity (Stealth) checks made to hide in sandy terrain."
+    },
+    {
+      "name": "Wasteland Stride",
+      "text": "The giant ignores difficult terrain caused by sand, gravel, or rocks."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The giant makes two falchion attacks."
+    },
+    {
+      "name": "Falchion",
+      "type": "special",
+      "text": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 23 (6d4 + 8) slashing damage."
+    },
+    {
+      "name": "Rock",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +12 to hit, range 60/240 ft., one target. Hit: 30 (4d10 + 8) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

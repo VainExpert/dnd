@@ -1,0 +1,70 @@
+{
+  "name": "Human Brawler",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "brute",
+      "cr2",
+      "flee-mortals"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 14,
+  "hp": {
+    "average": 52,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 17,
+    "dex": 14,
+    "con": 16,
+    "int": 10,
+    "wis": 10,
+    "cha": 12
+  },
+  "skills": {
+    "Athletics": 5,
+    "Intimidation": 3
+  },
+  "languages": [
+    "Common"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Exploit Opening (3/Day)",
+      "text": "When the brawler makes an\nattack, they have advantage on the attack roll."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The brawler makes two attacks using Grab,\nHaymaker, or both."
+    },
+    {
+      "name": "Grab",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one\nMedium or smaller creature. Hit: 5 (1d4 + 3) bludgeoning\ndamage, and the target is grappled (escape DC 13). Until this\ngrapple ends, the brawler can’t grab another creature."
+    },
+    {
+      "name": "Haymaker",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft.,\none target. Hit: 5 (1d4 + 3) bludgeoning damage, or\n10 (3d4 + 3) bludgeoning damage against a grappled target."
+    },
+    {
+      "name": "Throw",
+      "type": "special",
+      "text": "The brawler throws one Medium or smaller creature\nthey are grappling or object they are holding up to 30 feet\nhorizontally. If the thrown target is a creature, they fall prone\nafter this throw. If the thrown target would enter the space\nof a creature or solid object that is no more than one size\nsmaller than it, the thrown target collides with it and stops in\nthe nearest unoccupied space, taking 3 (1d6) bludgeoning\ndamage for every 10 feet it was thrown. A Large or smaller\ncreature hit by this thrown target must succeed on a DC 13\nDexterity saving throw or take the same amount of damage\nand fall prone."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Bogenschütze",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "volos-guide",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 16,
+  "hp": {
+    "average": 75,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 18,
+    "con": 16,
+    "int": 11,
+    "wis": 13,
+    "cha": 10
+  },
+  "skills": {
+    "Acrobatics": 6,
+    "Perception": 5
+  },
+  "languages": [
+    "any one language (usually Common)"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Das Auge des Bogenschützen",
+      "text": "Als Bonusaktion kann der Bogenschütze bei seinem nächsten Angriffs- oder Schadenswurf1d10 mit einem Langbogen oder Kurzbogen  hinzufügen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Bogenschütze führt zwei Angriffe mit seinem Langbogen aus."
+    },
+    {
+      "name": "Kurzschwert",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite5 ft: ein Ziel. Treffer: 7 (1d6+4) Durchschlagschaden."
+    },
+    {
+      "name": "Langbogen",
+      "type": "special",
+      "text": "Fernkampfangriff: +6 auf Treffer, Reichweite150/600  Fuß, ein Ziel. Treffer: 8 (1d8+4) Durchdringungsschaden."
+    }
+  ],
+  "source": "creature"
+}

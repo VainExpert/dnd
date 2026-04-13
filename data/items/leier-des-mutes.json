@@ -1,0 +1,51 @@
+{
+  "id": "leier-des-mutes",
+  "type": "item",
+  "name": "Leier des Mutes",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "wand",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "durch einen Barde",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": null,
+  "stackable": false,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 600,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Diese magische Leier gehört zur Bardenakademie des Mutes. Man muss eingestimmt sein um das Instrument zu spielen. Eine Kreatur, die nicht eingestimmt ist, und das Intrument spielt, muss eienen SG-15 WIS-Rettugnswaurf bestehen oder nimmt 2W4 Psychischen Schaden. Wenn das Instrument gespielt wird, kann einer der folgenden Zauber gewirkt werden: Fliegen Schweben Unsichtbarkeit Schutz vor Gut und Böse Stein formen Feuerwand Windwand Das Instrument kann nur einmal pro Tag gespielt werden. Du verwendest deinen eigenen Zauberangriff-Modifkator und Zauberrettung-SG beim Wirken.",
+  "tags": [
+    "instrument",
+    "bardeninstrument",
+    "magisch",
+    "zauber",
+    "fliegen",
+    "unischtbarkeit",
+    "schweben",
+    "schutz vor gut und böse",
+    "stein formen",
+    "feuerwand",
+    "windwand"
+  ]
+}

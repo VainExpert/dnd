@@ -1,0 +1,18 @@
+{
+  "id": "nebelschritt",
+  "name": "Nebelschritt",
+  "level": 2,
+  "school": "Beschwörung",
+  "casting_time": "1 Bonus Aktion",
+  "range": "Selbst",
+  "components": "V",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Zauberer",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Du wirst von silbrigem Nebel umgeben und teleportierst dich bis zu 9 m weit an eine freie Stelle, die du sehen kannst."
+}

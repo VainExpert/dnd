@@ -1,0 +1,64 @@
+{
+  "name": "Capricious Fireweaver",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "any alignment",
+  "ac": 12,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 15,
+    "int": 12,
+    "wis": 12,
+    "cha": 16
+  },
+  "skills": {
+    "Arcana": 3,
+    "History": 3,
+    "Persuasion": 5
+  },
+  "languages": [
+    "Any two languages"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "text": "The flameweaver is a 3th-level\nspellcaster. Its spellcasting ability is Charisma (spell\nsave DC 13, +5 to hit with spell attacks). The\nflameweaver has the following sorcerer spells\nprepared:\n\n* Cantrips (at will): <i>firebolt, prestidigitation, shocking grasp</i>\n\n* 1st level (4 slots): <i>burning hands, detect magic, mage armor, magic missile</i>\n\n* 2nd level (2 slots): <i>flaming sphere, scorching ray, suggestion</i>"
+    },
+    {
+      "name": "Sorcery Points",
+      "text": "The flameweaver has 3 sorcery\npoints. It can spend 1 or more sorcery points as a\nbonus action to gain one of the following benefits:\n* Quickened Spell. When the sorcerer casts a spell\nthat has a casting time of an action, it can spend\n2 sorcery points to change the casting time to 1\nbonus action instead.\n* Subtle Spell. When the sorcerer casts a spell, it\ncan spend 1 sorcery point to cast the spell\nwithout any somatic or verbal components."
+    },
+    {
+      "name": "Wild Magic",
+      "text": "When the fireweaver casts a spell of 1st\nlevel or higher, roll a d10. On a result of 1, roll on the\nWild Magic Surge table (PHB Pg. 104) immediately\nafter the spell is cast to create a random effect."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +4 to hit,\nreach 5 ft. or range 20/60 ft., one target. Hit: 4\n(1d4 + 2) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

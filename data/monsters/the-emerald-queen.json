@@ -1,0 +1,77 @@
+{
+  "name": "The Emerald Queen",
+  "size": "Medium",
+  "type": {
+    "type": "fey",
+    "tags": [
+      "medium",
+      "fey",
+      "cr7",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 15,
+  "hp": {
+    "average": 134,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 18,
+    "con": 16,
+    "int": 12,
+    "wis": 14,
+    "cha": 17
+  },
+  "skills": {
+    "Acrobatics": 7,
+    "Deception": 6,
+    "Perception": 5,
+    "Persuasion": 6
+  },
+  "languages": [
+    "Common",
+    "Elvish",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "7",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Legendary Resistance (1/Day)",
+      "text": "If the queen fails a saving\nthrow, she can choose to succeed instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The queen makes two attacks: one with her\nshortsword and one with her thornwhip, or two attacks\nwith her longbow."
+    },
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5ft.,\none target. Hit: 7 (1d6 + 4) slashing damage plus 7\n(2d6) fire damage."
+    },
+    {
+      "name": "Thorn Whip",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach\n15ft., one target. Hit: 9 (2d4 + 4) slashing damage. The\ntarget is grappled (escape DC 14) if the Queen is not\nalready grappling a creature. Until the grapple ends, the\ntarget takes 10 (3d6) piercing damage at the start of\neach of its turns. If the queen uses this attack while a\ntarget is already grappled, she may pull the target to her\nand deal an additional 9 (2d4 +4) piercing damage\nautomatically."
+    },
+    {
+      "name": "Longbow",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +7 to hit, range\n150/600 ft., one target. Hit: 8 (1d8 + 4) piercing\ndamage plus 7 (2d6) poison damage."
+    },
+    {
+      "name": "Hail of Thorns (Recharge 5-6)",
+      "type": "special",
+      "text": "The queen launches a\nvolley of deadly thorns in a 30-foot cone. Each creature\nin the area must make a DC 14 Dexterity saving throw,\ntaking 35 (10d6) piercing damage on a failed save, or\nhalf as much damage on a successful one."
+    }
+  ],
+  "source": "creature"
+}

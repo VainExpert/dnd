@@ -1,0 +1,87 @@
+{
+  "name": "Gorgimera",
+  "size": "Large",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "large",
+      "monstrosity",
+      "cr13",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 14,
+  "hp": {
+    "average": 114,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 50
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 13,
+    "con": 19,
+    "int": 4,
+    "wis": 13,
+    "cha": 10
+  },
+  "skills": {
+    "Perception": 11
+  },
+  "languages": [
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "13",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Flyby",
+      "text": "The gorgimera doesn’t provoke an opportunity attack when it\nflies out of an enemy’s reach."
+    },
+    {
+      "name": "Keen Smell",
+      "text": "The gorgimera has advantage on Wisdom (Perception)\nchecks that rely on smell."
+    },
+    {
+      "name": "Charge",
+      "text": "If the gorgimera moves at least 20 feet straight towards\na creature and then hits with a gore attack on the same turn, the target\ntakes an extra 9 (2d8) piercing damage. If the target is a creature, it must\nsucceed on a DC 14 Strength saving throw or be pushed up to 10 feet away\nand knocked prone."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The gorgimera makes five melee attacks: two with its\nclaws, two bites, and one gore attack. Alternatively, it can use its two\nbreath weapons in place of the bite attacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 17\n(3d8 + 4) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 11\n(2d6 + 4) slashing damage."
+    },
+    {
+      "name": "Gore",
+      "type": "special",
+      "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13\n(2d8 + 4) piercing damage."
+    },
+    {
+      "name": "Dragon Breath (Recharge 5–6)",
+      "type": "special",
+      "text": "The dragon head exhales its breath\nbased on its color. Each creature in the area affected\nmust make a DC 18 Dexterity saving throw, taking 31 (7d8) damage on a\nfailed save, of half as much on a successful one.\n\n* *Black:* 40-foot-long, 5-foot-wide line of acid\n* *Blue:* 40-foot-long, 5-foot-wide line of lightning\n* *Green:* 20-foot cone of poisonous gas\n* *Red:* 20-foot cone of fire\n* *White:* 20-foot cone of cold"
+    },
+    {
+      "name": "Gorgon Breath. (Recharge 5–6)",
+      "type": "special",
+      "text": "The gorgon head exhales petrifying\ngas in a 30-foot cone. Each creature in that area must succeed on a DC\n18 Constitution saving throw or begin to turn to stone and berestrained.\nThe restrained target must repeat the saving throw at the end of its next\nturn. On a success, the effect ends on the target. On a failure, the target is\npetrified until freed by a greater restoration spell or other magic."
+    }
+  ],
+  "source": "creature"
+}

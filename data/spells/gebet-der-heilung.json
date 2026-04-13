@@ -1,0 +1,17 @@
+{
+  "id": "gebet-der-heilung",
+  "name": "Gebet der Heilung",
+  "level": 2,
+  "school": "Hervorrufung",
+  "casting_time": "10 min",
+  "range": "9 m",
+  "components": "V",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Kleriker",
+    "Paladin"
+  ],
+  "text": "Bis zu 6 Kreaturen deiner Wahl, die du in Reichweite sehen kannst, bekommen 2W8 + dein Zauberfähigkeit-Modifikator an TP zurück.\nDer Zauber hat keine Wirkung auf Untote oder Konstrukte.\n\nAuf höheren Level gewirkt: pro Level 1W8 mehr Heilung"
+}

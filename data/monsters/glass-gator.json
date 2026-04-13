@@ -1,0 +1,73 @@
+{
+  "name": "Glass Gator",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr1",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 15,
+  "hp": {
+    "average": 45,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 50
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 14,
+    "con": 12,
+    "int": 4,
+    "wis": 10,
+    "cha": 5
+  },
+  "skills": {
+    "Perception": 2,
+    "Stealth": 4
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1",
+    "xp": 200,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The glass gator can breathe air and water."
+    },
+    {
+      "name": "Lunge",
+      "text": "When the glass gator leaps at least 10 feet toward a creature and hits that creature with a claws attack on the same turn, it can immediately constrict the target as a bonus action."
+    },
+    {
+      "name": "Transparency",
+      "text": "The glass gator has advantage on Dexterity (Stealth) checks while underwater or in dim light."
+    },
+    {
+      "name": "Standing Leap",
+      "text": "The glass gator can long jump up to 15 feet from water or up to 10 feet on land, with or without a running start."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claws",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained and the glass gator can't attack a different target."
+    },
+    {
+      "name": "Constrict",
+      "type": "special",
+      "text": "One creature that's already grappled by the glass gator takes 7 (2d4 + 2) bludgeoning damage plus 7 (2d6) poison damage, or half as much poison damage with a successful DC 11 Constitution saving throw."
+    }
+  ],
+  "source": "creature"
+}

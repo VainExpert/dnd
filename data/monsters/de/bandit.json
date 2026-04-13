@@ -1,0 +1,52 @@
+{
+  "name": "Bandit",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr1/8",
+      "monster-manual",
+      "any race"
+    ]
+  },
+  "alignment": "any non-lawful alignment",
+  "ac": 12,
+  "hp": {
+    "average": 11,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 12,
+    "con": 12,
+    "int": 10,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "any one language (usually Common)"
+  ],
+  "challenge": {
+    "cr": "1/8",
+    "xp": 25,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Krumsäbel",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +3 auf Treffer, Reichweite5 ft: , ein Ziel. Treffer: 4 (1d6 + 1) Schnittschaden."
+    },
+    {
+      "name": "Leichte Armbrust",
+      "type": "special",
+      "text": "Fernkampfangriff: +3 auf Treffer, Reichweite 24 m96 m/., ein Ziel. Treffer: 5 (1d8 + 1) Durchschlagschaden."
+    }
+  ],
+  "source": "creature"
+}

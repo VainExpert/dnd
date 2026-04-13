@@ -1,0 +1,83 @@
+{
+  "name": "Olhydra",
+  "size": "Huge",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "huge",
+      "elemental",
+      "cr18",
+      "elemental-evil"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 18,
+  "hp": {
+    "average": 324,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 100
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 22,
+    "con": 24,
+    "int": 17,
+    "wis": 18,
+    "cha": 23
+  },
+  "skills": {},
+  "languages": [
+    "Aquan"
+  ],
+  "challenge": {
+    "cr": "18",
+    "proficiency_bonus": 6
+  },
+  "traits": [
+    {
+      "name": "Empowered Attacks",
+      "text": "Olhydra's slam attacks are treated as magical for the purpose of bypassing resistance and immunity to nonmagical weapons."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "Olhydra's innate spellcasting ability is Charisma (spell save DC 20, +12 to hit with spell attacks). She can innately cast the following spells, requiring no material components:\n\n* At will: <i>wall of ice</i>\n\n* 3/day: <i>ice storm</i>\n\n* 1/day: <i>storm of vengeance</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "text": "If Olhydra fails a saving throw, she can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "Olhydra has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Water Form",
+      "text": "Olhydra can enter a hostile creature's space and stop there. She can move through a space as narrow as 1 inch wide without squeezing."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "Olhydra makes two slam attacks or two water jet attacks."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 21 (3d10 + 5) bludgeoning damage, and the target is grappled (escape DC 19). Olhydra can grapple up to four targets. When Olhydra moves, all creatures she is grappling move with her."
+    },
+    {
+      "name": "Water Jet",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +12 to hit, range 120 ft., one target. Hit: 21 (6d6) bludgeoning damage, and the target is knocked prone if it fails a DC 19 Strength saving throw."
+    },
+    {
+      "name": "Summon Elementals (1/Day)",
+      "type": "special",
+      "text": "Olhydra summons up to three water elementals and loses 30 hit points for each elemental she summons. Summoned elementals have maximum hit points, appear within 100 feet of Olhydra, and disappear if Olhydra is reduced to 0 hit points."
+    }
+  ],
+  "source": "creature"
+}

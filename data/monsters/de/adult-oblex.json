@@ -1,0 +1,64 @@
+{
+  "name": "Oblex für Erwachsene",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "ooze",
+    "tags": [
+      "medium",
+      "ooze",
+      "cr5",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "gesetztreu-böse",
+  "ac": 14,
+  "hp": {
+    "average": 75,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 8,
+    "dex": 19,
+    "con": 16,
+    "int": 19,
+    "wis": 12,
+    "cha": 15
+  },
+  "skills": {
+    "Deception": 5,
+    "Perception": 4,
+    "Arcana": 7,
+    "History": 7,
+    "Nature": 7,
+    "or Religion": 7
+  },
+  "languages": [
+    "Common plus two more languages"
+  ],
+  "challenge": {
+    "cr": "5",
+    "xp": 1800,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Amorph",
+      "text": "Der Oblex kann sich durch einen Raum bewegen, der genauso schmal wie1 inchbreit ist, ohne sich dabei zusammenzudrücken."
+    },
+    {
+      "name": "Feuerangst",
+      "text": "Erleidet der Oblex Feuerschaden, hat er bis zum Ende seines nächsten Zuges Nachteil bei Angriffswürfen und Fertigkeitsproben."
+    },
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Oblex ist Intelligenz (ZauberrettungswurfDC 15, +7 auf Treffer bei Zauberangriffen). Er kann die folgenden Zauber von Natur aus wirken, ohne dass dafür Komponenten benötigt werden:\n\n* Jeweils 3/Tag: Person bezaubern (als Zauber der Stufe 5), Farbspritzer, Gedanken erkennen, Person festhalten (als Zauber der Stufe 3)"
+    },
+    {
+      "name": "Eine schrille Imitation",
+      "text": "Als Bonusaktion kann der Oblex einen Teil von sich selbst ausstülpen, der das Aussehen einer mittelgroßen oder kleineren Kreatur annimmt, deren Erinnerungen er gestohlen hat. Dieses Simulacrum sieht aus, fühlt sich an und klingt genau wie die Kreatur, die es imitiert, riecht jedoch schwach nach Schwefel. Der Oblex kann verschiedene Kreaturen1d4 + 1 imitieren, wobei jede durch einen Schleimfaden, der sich bis zu120 feet  Weit erstrecken kann, an seinen Körper gebunden ist. Praktisch gesehen ist das Simulacrum der Oblex, was bedeutet, dass der Oblex gleichzeitig seinen eigenen Raum und den Raum des Simulacrums einnimmt. Der schleimige Faden ist immun gegen Schaden, wird jedoch durchtrennt, wenn zwischen dem Hauptkörper des Oblex und dem Simulacrum keine Öffnung von mindestens1 inch  Breite vorhanden ist. Das Simulacrum verschwindet, wenn der Faden durchtrennt wird."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

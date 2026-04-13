@@ -1,0 +1,57 @@
+{
+  "name": "Sirac of Suzail",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr0",
+      "storm-kings-thunder",
+      "chondathan human"
+    ]
+  },
+  "alignment": "lawful good",
+  "ac": 14,
+  "hp": {
+    "average": 22,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 17,
+    "con": 11,
+    "int": 12,
+    "wis": 13,
+    "cha": 16
+  },
+  "skills": {
+    "Athletics": 4,
+    "Insight": 3,
+    "Survival": 3
+  },
+  "languages": [
+    "Common",
+    "Orc"
+  ],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Shortsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6+3) piercing  damage."
+    },
+    {
+      "name": "Dart",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 5 (1d4+3) piercing damage. Sirac carries six darts."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "unsichtbarer-diener",
+  "name": "Unsichtbarer Diener",
+  "level": 1,
+  "school": "Beschwörung",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, G, M (Stück Schnur und Stück Holz)",
+  "duration": "1 h",
+  "concentration": false,
+  "ritual": true,
+  "classes": [
+    "Barde",
+    "Hexenmeister",
+    "Magier"
+  ],
+  "text": "Der Zauber erschafft eine unsichtbare, geist- und formlose Kreatur, das auf deinen Befehl einfache Aufgaben erfüllt, bis der Zauber endet.\nDer Diener erscheint in einem freien Bereich in Reichweite auf dem Boden. Er hat RK 10, STR 2, 1 TP und kann nicht angreifen. Wenn seine TP auf 0 sinken, endet der Zauber.\nAls Bonus Aktion kannst du in jedem deiner Züge dem Diener mental befehlen sich bis zu 4,5 m zu bewegen und mit einem Gegenstand zu interagieren.\nBeispiele für Aufgaben: Dinge holen, reinigen, reparieren, Feuer entfachen, Essen servieren, Wein einschenken\nSobald der Befehl erteilt ist, wird dieser nach den Kräften des Dieners ausgeführt, bis er erledigt ist. Dann wartet er auf einen neuen Befehl.\nWenn der Diener sich für eine Aufgabe mehr als 18 m von dir entfernt, endet der Zauber."
+}

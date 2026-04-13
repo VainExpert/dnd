@@ -1,0 +1,88 @@
+{
+  "name": "Firebird",
+  "size": "Small",
+  "type": {
+    "type": "celestial",
+    "tags": [
+      "small",
+      "celestial",
+      "cr4",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "neutral good",
+  "ac": 16,
+  "hp": {
+    "average": 99,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 100
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 19,
+    "con": 14,
+    "int": 16,
+    "wis": 15,
+    "cha": 21
+  },
+  "skills": {
+    "Acrobatics": 6,
+    "Arcana": 5,
+    "Insight": 4,
+    "Medicine": 4,
+    "Nature": 5,
+    "Perception": 7,
+    "Religion": 5
+  },
+  "languages": [
+    "Celestial",
+    "Common",
+    "Elvish",
+    "Primordial",
+    "Sylvan"
+  ],
+  "challenge": {
+    "cr": "4",
+    "xp": 1100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "text": "The firebird's innate spellcasting ability is Charisma (spell save DC 15). It can innately cast the following spells, requiring no material components:\n\nAt will: guidance, purify food and drink, speak with animals\n\n3/day each: charm person, cure wounds (2d8 + 5), daylight, faerie fire, heat metal, hypnotic pattern, tongues\n\n1/day each: geas, heal, reincarnate"
+    },
+    {
+      "name": "Light of the World",
+      "text": "The firebird's feathers glow with a warm light. The creature sheds light as dim as a candle or as bright as a lantern. It always sheds light, and any feathers plucked from the creature continue to shed light as a torch."
+    },
+    {
+      "name": "Warming Presence",
+      "text": "The firebird and any creatures within a 5-foot radius are immune to the effects of natural, environmental cold. Invited into a home or building, a firebird can expand this warming presence to its inhabitants no matter how close they are to the creature."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The firebird makes one bite attack and two claw attacks."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 4) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d8 + 4) slashing damage."
+    },
+    {
+      "name": "Blinding Ray (Recharge 5-6)",
+      "type": "special",
+      "text": "The firebird can fire a burning ray of light from its tail feathers in a line 5 feet wide and up to 50 feet long. Targets in the line must succeed on a DC 15 Dexterity saving throw or take 24 (7d6) fire damage and become blinded for 1d4 rounds. A successful saving throw negates the blindness and reduces the damage by half."
+    }
+  ],
+  "source": "creature"
+}

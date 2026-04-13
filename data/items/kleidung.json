@@ -1,0 +1,44 @@
+{
+  "id": "kleidung",
+  "type": "item",
+  "name": "Gewöhnliche Kleidung",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "adventuring-gear",
+  "rarity": "alltäglich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": true,
+  "equip_slot": "ring",
+  "stackable": false,
+  "weight": {
+    "value": 1.5,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 5,
+    "currency": "sp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Alltägliche Kleidung zum Reisen und für den Alltag.",
+  "tags": [
+    "kleidung",
+    "alltag",
+    "reise",
+    "soziales"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "name": "Haugbui",
+  "size": "Medium",
+  "type": {
+    "type": "undead",
+    "tags": [
+      "medium",
+      "undead",
+      "cr13",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "lawful neutral",
+  "ac": 18,
+  "hp": {
+    "average": 136,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 40
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 17,
+    "con": 18,
+    "int": 15,
+    "wis": 20,
+    "cha": 16
+  },
+  "skills": {
+    "Arcana": 7,
+    "History": 7,
+    "Intimidation": 8,
+    "Perception": 10,
+    "Religion": 12
+  },
+  "languages": [
+    "the languages it spoke in life; telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "13",
+    "xp": 10000,
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Incorporeal Movement",
+      "text": "The haugbui can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The haugbui's innate spellcasting ability is Wisdom (spell save DC 18). It can innately cast the following spells, requiring no material components:\n\nConstant: detect thoughts, invisibility, mage hand, scrying\n\nAt will: dancing lights, druidcraft, mending, spare the dying\n\n7/day each: bane, create or destroy water, fog cloud, purify food and drink\n\n5/day each: blindness/deafness, gust of wind, locate object, moonbeam, shatter\n\n3/day each: bestow curse, dispel magic, plant growth, remove curse, telekinesis\n\n1/day each: blight, contagion, dream\n\n1/week each: geas, hallow"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "text": "If the haugbui fails a saving throw it can choose to succeed instead."
+    },
+    {
+      "name": "Sepulchral Scrying (1/Day)",
+      "text": "An invisible magical eye is created under the haugbui's control, allowing it to watch its territory without leaving the burial mound. The eye travels at the speed of thought and can be up to 5 miles from the haugbui's location. The haugbui can see and hear as if it were standing at the eye's location, and it can use its innate spellcasting abilities as if it were at the eye's location. The eye can be noticed with a successful DC 18 Wisdom (Perception) check and can be dispelled as if it were 3rd-level spell. Spells that block other scrying spells work against Sepulchral Scrying as well. Unless dismissed by its creator or dispelled, lasts for up to 12 hours after its creation; only one can be created per 24-hour period."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "text": "While in sunlight, the haugbui has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Turn Resistance",
+      "text": "The haugbui has advantage on saving throws against any effect that turns undead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The haugbui makes two psychic claw attacks."
+    },
+    {
+      "name": "Psychic Claw",
+      "type": "special",
+      "text": "Ranged Magical Attack: +10 to hit, range 40 ft., one target. Hit: 32 (6d8 + 5) psychic damage."
+    }
+  ],
+  "source": "creature"
+}

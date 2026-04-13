@@ -1,0 +1,45 @@
+{
+  "id": "kugel-der-zeit",
+  "type": "item",
+  "name": "Kugel der Zeit",
+  "rules_version": "2024",
+  "source": "",
+  "item_category": "ammunition",
+  "rarity": "gewöhnlich",
+  "requires_attunement": false,
+  "attunement_text": "",
+  "consumable": true,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
+  "weight": {
+    "value": 0,
+    "unit": "lb"
+  },
+  "value": {
+    "amount": 50,
+    "currency": "gp"
+  },
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Wenn die Kugel gehalten wird, kann mit einer Aktion festgestellt werden ob es Morgen, Mittag, Nachmittag, Abend oder Nacht ist. FUnktioniert nur wenn diese Tageszeiten auf der Ebene exisitieren.",
+  "tags": [
+    "magisch",
+    "arkaner fokus",
+    "kugel",
+    "zeit",
+    "aktion"
+  ]
+}

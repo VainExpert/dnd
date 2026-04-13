@@ -1,0 +1,64 @@
+{
+  "name": "Azer Lavashaper",
+  "size": "Mittelgroß",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "medium",
+      "elemental",
+      "cr2",
+      "nerzugals-extended-bestiary"
+    ]
+  },
+  "alignment": "gesetztreu-neutral",
+  "ac": 13,
+  "hp": {
+    "average": 38,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 12,
+    "int": 11,
+    "wis": 10,
+    "cha": 14
+  },
+  "skills": {},
+  "languages": [
+    "Ignan"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Angeborene Zauberfähigkeit",
+      "text": "Die angeborene Zauberfähigkeit des Azers\nist Charisma (ZauberrettungswurfDC 12, +4 auf Treffer bei\nZauberangriffen). Er kann die folgenden\nZauber von Natur aus wirken, ohne dass dafür Komponenten benötigt werden:\n\n* Beliebig oft: Heilen, Flamme erzeugen, Sprachen verstehen\n\n* Je 1/Tag: Brennende Hände, Versengender Strahl, Vergrößern/Verkleinern, Dunkelheitssicht"
+    },
+    {
+      "name": "Beheizte Waffen",
+      "text": "Wenn der Azer mit einer metallenen\nNahkampfwaffe trifft, verursacht er zusätzlich 3 (1d6) Feuerschaden\n(im Angriff enthalten)."
+    },
+    {
+      "name": "Beleuchtung",
+      "text": "Der Azer strahlt helles Licht in einem Umkreis von 3 Metern\nund schwaches Licht in einem Umkreis von weiteren 3 m."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "type": "special",
+      "text": "Der Azer führt zwei Angriffe mit seinem\nKriegshammer aus."
+    },
+    {
+      "name": "Warhammer",
+      "type": "special",
+      "text": "Nahkampfwaffenangriff: +5 zum Treffen, Reichweite\n1,5 m: 1, ein Ziel. Treffer: 6 (1d8 + 2) Bludgeoning-Schaden\noder 7 (1d10 + 2) Bludgeoning-Schaden, wenn\ndie Waffe für einen Nahkampfangriff mit beiden Händen eingesetzt wird, plus 3\n(1d6) Feuerschaden."
+    }
+  ],
+  "source": "creature"
+}

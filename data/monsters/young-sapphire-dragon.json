@@ -1,0 +1,69 @@
+{
+  "name": "Young Sapphire Dragon",
+  "size": "Large",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "large",
+      "dragon",
+      "cr10",
+      "strongholds-and-followers"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 19,
+  "hp": {
+    "average": 127,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 80
+  },
+  "abilities": {
+    "str": 18,
+    "dex": 17,
+    "con": 14,
+    "int": 18,
+    "wis": 16,
+    "cha": 17
+  },
+  "skills": {
+    "Arcana": 8,
+    "Insight": 7,
+    "Perception": 7,
+    "Religion": 8
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "10",
+    "proficiency_bonus": 4
+  },
+  "traits": [
+    {
+      "name": "Awe Aura",
+      "text": "All creatures within 30 feet must\nmake a DC 16 Charisma saving throw in order to\nattack this dragon. On a failed save, the attacking\ncreature’s turn ends immediately. On a success,\nthat creature is immune to the Awe Aura of all\ngemstone dragons for 1 week."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The dragon makes three attacks: one\nwith its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 10 ft.,\none target. Hit: 15 (2d10 + 4) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +8 to hit, reach 5 ft.,\none target. Hit: 11 (2d6 + 4) slashing damage."
+    }
+  ],
+  "source": "creature"
+}

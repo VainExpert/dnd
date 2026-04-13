@@ -1,0 +1,75 @@
+{
+  "name": "Likho",
+  "size": "Medium",
+  "type": {
+    "type": "monstrosity",
+    "tags": [
+      "medium",
+      "monstrosity",
+      "cr6",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "chaotic evil",
+  "ac": 15,
+  "hp": {
+    "average": 90,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 16,
+    "dex": 18,
+    "con": 16,
+    "int": 13,
+    "wis": 16,
+    "cha": 21
+  },
+  "skills": {
+    "Acrobatics": 7,
+    "Perception": 6,
+    "Stealth": 10
+  },
+  "languages": [
+    "Common",
+    "Goblin",
+    "Void Speech"
+  ],
+  "challenge": {
+    "cr": "6",
+    "xp": 2300,
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Pounce",
+      "text": "If the likho moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the likho can use a bonus action to make two additional claw attacks against it."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The likho's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components:\n\nAt will: message\n\n3/day each: crown of madness, mirror image, ray of enfeeblement\n\n1/day: bestow curse"
+    },
+    {
+      "name": "Magic Resistance",
+      "text": "The likho has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The likho makes two claw attacks."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
+    },
+    {
+      "name": "Disruptive Gaze",
+      "type": "special",
+      "text": "As a bonus action, the likho directs its gaze at any single creature it can see and afflicts it with a temporary bout of bad luck. The targeted creature has disadvantage on attack rolls, saving throws, and skill checks until the end of its next turn."
+    }
+  ],
+  "source": "creature"
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Gray Dragon Wyrmling",
+  "size": "Medium",
+  "type": {
+    "type": "dragon",
+    "tags": [
+      "medium",
+      "dragon",
+      "cr4",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 16,
+  "hp": {
+    "average": 44,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 60,
+    "swim": 30
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 14,
+    "con": 13,
+    "int": 10,
+    "wis": 11,
+    "cha": 13
+  },
+  "skills": {
+    "Perception": 4,
+    "Stealth": 4
+  },
+  "languages": [
+    "Draconic"
+  ],
+  "challenge": {
+    "cr": "4",
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The dragon can breathe air and water."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8\n(1d10 + 3) piercing damage plus 5 (1d10) fire damage."
+    },
+    {
+      "name": "Steam Breath (Recharge 5–6)",
+      "type": "special",
+      "text": "The dragon exhales steam in a 15 cone.\nCreatures in the area must make a DC 11 Constitution saving throw. On\na failed saving throw, the creature takes 21 (6d6) fire damage, or half as\nmuch damage on a successful saving throw. Being underwater doesn’t\ngrant resistance to this damage."
+    }
+  ],
+  "source": "creature"
+}

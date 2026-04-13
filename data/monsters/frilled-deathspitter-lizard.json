@@ -1,0 +1,63 @@
+{
+  "name": "Frilled Deathspitter Lizard",
+  "size": "Small",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "small",
+      "beast",
+      "cr1/2",
+      "homebrew"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 13,
+  "hp": {
+    "average": 18,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 13,
+    "int": 4,
+    "wis": 12,
+    "cha": 6
+  },
+  "skills": {
+    "Perception": 3
+  },
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The deathspitter makes three attacks: one with its bite\nand two with its claws."
+    },
+    {
+      "name": "Bite",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6\n(1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6\n(1d6 + 3) slashing damage."
+    },
+    {
+      "name": "Spit Poison",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +5 to hit, range 15/30 ft., one\ntarget. Hit: The target must make a DC 13 Constitution saving throw,\ntaking 18 (4d8) poison damage on a failed save, or half as much\ndamage on a successful one. In addition, a creature that fails its\nsaving throw is blinded until the end of the deathspitter’s next turn."
+    }
+  ],
+  "source": "creature"
+}

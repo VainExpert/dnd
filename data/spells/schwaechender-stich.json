@@ -1,0 +1,16 @@
+{
+  "id": "schwaechender-stich",
+  "name": "Schwächender Stich",
+  "level": 0,
+  "school": "Nekromantie",
+  "casting_time": "1 Aktion",
+  "range": "9 m",
+  "components": "V, G",
+  "duration": "Unmittelbar",
+  "concentration": false,
+  "ritual": false,
+  "classes": [
+    "Magier"
+  ],
+  "text": "Du raubst einer Kreatur in Reichweite, die du sehen kannst, Vitalität.\nDas Ziel muss einen CON-Rettungswurf machen.\nBei Fehlschlag: 1W4 nekrotischer Schaden und es liegt am Boden.\n\nAuf höheren Level: Schaden steigt um je 1W4 auf Level 5, 11 und 17."
+}

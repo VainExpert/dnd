@@ -1,0 +1,58 @@
+{
+  "name": "Giant Seahorse",
+  "size": "Large",
+  "type": {
+    "type": "beast",
+    "tags": [
+      "large",
+      "beast",
+      "cr1/2",
+      "tome-of-horrors"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 12,
+  "hp": {
+    "average": 26,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 30
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 15,
+    "con": 13,
+    "int": 2,
+    "wis": 13,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "--"
+  ],
+  "challenge": {
+    "cr": "1/2",
+    "xp": 100,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Water Breathing",
+      "text": "The giant seahorse can only breathe underwater."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Tail Slap",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7\n(1d8 + 3) bludgeoning damage."
+    },
+    {
+      "name": "Head Butt",
+      "type": "special",
+      "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit:\n7 (1d8 + 3) bludgeoning damage."
+    }
+  ],
+  "source": "creature"
+}

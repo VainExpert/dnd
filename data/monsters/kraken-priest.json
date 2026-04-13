@@ -1,0 +1,64 @@
+{
+  "name": "Kraken Priest",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr5",
+      "volos-guide",
+      "any race"
+    ]
+  },
+  "alignment": "any evil alignment",
+  "ac": 10,
+  "hp": {
+    "average": 75,
+    "formula": ""
+  },
+  "speed": {
+    "swim": 30
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 10,
+    "con": 16,
+    "int": 10,
+    "wis": 15,
+    "cha": 14
+  },
+  "skills": {
+    "Perception": 5
+  },
+  "languages": [
+    "any two languages"
+  ],
+  "challenge": {
+    "cr": "5",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "text": "The priest can breathe air and water."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "text": "The priest's spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\n* At will: <i>command, create or destroy water</i>\n\n* 3/day each: <i>control water, darkness, water breathing, water walk</i>\n\n* 1/day each: <i>call lightning, Evard's black tentacles</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Thunderous Touch",
+      "type": "special",
+      "text": "Melee Spell Attack: +5 to hit, reach 5 ft., one creature. Hit: 27 (5d10) thunder damage."
+    },
+    {
+      "name": "Voice of the Kraken (Recharges after a Short or Long Rest)",
+      "type": "special",
+      "text": "A kraken speaks through the priest with a thunderous voice audible within 300 feet. Creatures of the priest's choice that can hear the kraken's words (which are spoken in Abyssal, Infernal, or Primordial) must succeed on a DC 14 Charisma saving throw or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ],
+  "source": "creature"
+}

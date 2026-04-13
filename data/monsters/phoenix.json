@@ -1,0 +1,66 @@
+{
+  "name": "Phoenix",
+  "size": "Gargantuan",
+  "type": {
+    "type": "elemental",
+    "tags": [
+      "gargantuan",
+      "elemental",
+      "cr16",
+      "mordenkainens-tome-of-foes"
+    ]
+  },
+  "alignment": "neutral",
+  "ac": 18,
+  "hp": {
+    "average": 175,
+    "formula": ""
+  },
+  "speed": {
+    "fly": 120
+  },
+  "abilities": {
+    "str": 19,
+    "dex": 26,
+    "con": 25,
+    "int": 2,
+    "wis": 21,
+    "cha": 18
+  },
+  "skills": {},
+  "languages": [
+    "-"
+  ],
+  "challenge": {
+    "cr": "16",
+    "proficiency_bonus": 5
+  },
+  "traits": [
+    {
+      "name": "Fiery Death and Rebirth",
+      "text": "When the phoenix dies, it explodes. Each creature within 60-feet of it must make a DC 20 Dexterity saving throw, taking 22 (4d10) fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren't worn or carried.\nThe explosion destroys the phoenix's body and leaves behind an egg-shaped cinder that weighs 5 pounds. The cinder is blazing hot, dealing 21 (6d6) fire damage to any creature that touches it, though no more than once per round. The cinder is immune to all damage, and after 1d6 days, it hatches a new phoenix."
+    },
+    {
+      "name": "Fire Form",
+      "text": "The phoenix can move through a space as narrow as 1 inch wide without squeezing. Any creature that touches the phoenix or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage. In addition, the phoenix can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 5 (1d10) fire damage. With a touch, the phoenix can also ignite flammable objects that aren't worn or carried (no action required)."
+    },
+    {
+      "name": "Flyby",
+      "text": "The phoenix doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+    },
+    {
+      "name": "Illumination",
+      "text": "The phoenix sheds bright light in a 60-foot radius and dim light for an additional 30 feet."
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "text": "If the phoenix fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Siege Monster",
+      "text": "The phoenix deals double damage to objects and structures."
+    }
+  ],
+  "actions": [],
+  "source": "creature"
+}

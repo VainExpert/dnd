@@ -1,0 +1,65 @@
+{
+  "name": "Monolith Footman",
+  "size": "Large",
+  "type": {
+    "type": "construct",
+    "tags": [
+      "large",
+      "construct",
+      "cr3",
+      "tome-of-beasts"
+    ]
+  },
+  "alignment": "unaligned",
+  "ac": 14,
+  "hp": {
+    "average": 60,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 14,
+    "int": 10,
+    "wis": 10,
+    "cha": 10
+  },
+  "skills": {},
+  "languages": [
+    "Elvish",
+    "Umbral"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Blatant Dismissal",
+      "text": "While in the courts or castles of the fey, a monolith footman that scores a successful hit with its longsword can try to force the substitution of the target with a shadow double. The target must succeed at a DC 10 Charisma saving throw or become invisible, silent, and paralyzed, while an illusory version of itself remains visible and audible.and under the monolith footman's control, shouting for a retreat or the like. Outside fey locales, this ability does not function."
+    },
+    {
+      "name": "Fey Flame",
+      "text": "The ritual powering a monolith footman grants it an inner flame that it can use to enhance its weapon or its fists with additional fire or cold damage, depending on the construct's needs."
+    },
+    {
+      "name": "Simple Construction",
+      "text": "Monolith footmen are designed with a delicate fey construction. They burst into pieces and are destroyed when they receive a critical hit."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Longsword",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage plus 9 (2d8) cold or fire damage."
+    },
+    {
+      "name": "Slam",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage plus 9 (2d8) cold or fire damage."
+    }
+  ],
+  "source": "creature"
+}

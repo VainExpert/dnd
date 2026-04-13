@@ -1,0 +1,73 @@
+{
+  "name": "Mind Flayer Psion",
+  "size": "Medium",
+  "type": {
+    "type": "aberration",
+    "tags": [
+      "medium",
+      "aberration",
+      "cr8",
+      "volos-guide"
+    ]
+  },
+  "alignment": "lawful evil",
+  "ac": 15,
+  "hp": {
+    "average": 71,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 11,
+    "dex": 12,
+    "con": 12,
+    "int": 19,
+    "wis": 17,
+    "cha": 17
+  },
+  "skills": {
+    "Arcana": 7,
+    "Deception": 6,
+    "Insight": 6,
+    "Perception": 6,
+    "Persuasion": 6,
+    "Stealth": 4
+  },
+  "languages": [
+    "Deep Speech",
+    "Undercommon",
+    "telepathy 120 ft."
+  ],
+  "challenge": {
+    "cr": "8",
+    "proficiency_bonus": 3
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "text": "The mind flayer has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "text": "The mind flayer is a 10th-level spellcaster. Its innate spellcasting ability is Intelligence (spell save DC 15; +7 to hit with spell attacks). It can innately cast the following spells, requiring no components:\n\n* At will: <i>guidance, mage hand, vicious mockery, true strike</i>\n\n* 1st level (4 slots): <i>charm person, command, comprehend languages, sanctuary</i>\n\n* 2nd level (3 slots): <i>crown of madness, phantasmal force, see invisibility</i>\n\n* 3rd level (3 slots): <i>clairvoyance, fear, meld into stone</i>\n\n* 4th level (3 slots): <i>confusion, stone shape</i>\n\n* 5th level (2 slots): <i>scrying, telekinesis</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Tentacles",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 15 (2dl0+4) psychic damage. If the target is Medium or smaller, it is grappled (escape DC 15) and must succeed on a DC 15 Intelligence saving throw or be stunned until this grapple ends."
+    },
+    {
+      "name": "Extract Brain",
+      "type": "special",
+      "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one incapacitated humanoid grappled by the mind flayer. Hit: The target takes 55 (10d10) piercing damage. If this damage reduces the target to 0 hit points, the mind flayer kills the target by extracting and devouring its brain."
+    },
+    {
+      "name": "Mind Blast (Recharge 5-6)",
+      "type": "special",
+      "text": "The mind flayer magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 22 (4d8+4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ],
+  "source": "creature"
+}

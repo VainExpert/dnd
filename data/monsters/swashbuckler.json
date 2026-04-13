@@ -1,0 +1,70 @@
+{
+  "name": "Swashbuckler",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr3",
+      "volos-guide",
+      "any race"
+    ]
+  },
+  "alignment": "any non-lawful alignment",
+  "ac": 17,
+  "hp": {
+    "average": 66,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 12,
+    "dex": 18,
+    "con": 12,
+    "int": 14,
+    "wis": 11,
+    "cha": 15
+  },
+  "skills": {
+    "Acrobatics": 8,
+    "Athletics": 5,
+    "Persuasion": 6
+  },
+  "languages": [
+    "any one language (usually Common)"
+  ],
+  "challenge": {
+    "cr": "3",
+    "xp": 700,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Lightfooted",
+      "text": "The swashbuckler can take the Dash or Disengage action as a bonus action on each of its turns."
+    },
+    {
+      "name": "Suave Defense",
+      "text": "While the swashbuckler is wearing light or no armor and wielding no shield, its AC includes its Charisma modifier."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The swashbuckler makes three attacks: one with a dagger and two with its rapier."
+    },
+    {
+      "name": "Dagger",
+      "type": "special",
+      "text": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d4+4) piercing damage."
+    },
+    {
+      "name": "Rapier",
+      "type": "special",
+      "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8+4) piercing damage."
+    }
+  ],
+  "source": "creature"
+}

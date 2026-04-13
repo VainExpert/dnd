@@ -1,0 +1,69 @@
+{
+  "name": "Tribal Soldier Veteran",
+  "size": "Medium",
+  "type": {
+    "type": "humanoid",
+    "tags": [
+      "medium",
+      "humanoid",
+      "cr2",
+      "nerzugals-extended-bestiary",
+      "any race"
+    ]
+  },
+  "alignment": "neutral evil",
+  "ac": 15,
+  "hp": {
+    "average": 58,
+    "formula": ""
+  },
+  "speed": {},
+  "abilities": {
+    "str": 14,
+    "dex": 15,
+    "con": 15,
+    "int": 10,
+    "wis": 12,
+    "cha": 8
+  },
+  "skills": {
+    "Acrobatics": 4,
+    "Athletics": 4
+  },
+  "languages": [
+    "any two languages"
+  ],
+  "challenge": {
+    "cr": "2",
+    "xp": 450,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "Natural Resilience",
+      "text": "A life away from the pleasures of\nsociety has made the soldier tougher than an\nordinary individual. It has advantage on Constitution\nand Strength saving throws."
+    },
+    {
+      "name": "Inspirational Presence",
+      "text": "Allies within 60 feet of the elder that\ncan see it gain a +1 bonus to all attack and damage rolls. (This\nbonus cannot exceed +1, even if multiple veterans are\npresent.)"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "special",
+      "text": "The soldier makes two glaive attacks."
+    },
+    {
+      "name": "Glaive",
+      "type": "special",
+      "text": "Melee Weapon Attack: +4 to hit, reach 10\nft., one target. Hit: 7 (1d10 + 2) slashing damage."
+    },
+    {
+      "name": "Javelin",
+      "type": "special",
+      "text": "Ranged Weapon Attack: +4 to hit, range\n30/120 ft., one target. Hit: 5 (1d6 + 2) piercing\ndamage."
+    }
+  ],
+  "source": "creature"
+}

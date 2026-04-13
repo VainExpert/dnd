@@ -1,0 +1,18 @@
+{
+  "id": "metall-erhitzen",
+  "name": "Metall erhitzen",
+  "level": 2,
+  "school": "Verwandlungsmagie",
+  "casting_time": "1 Aktion",
+  "range": "18 m",
+  "components": "V, G, M (Stück Eisen und eine Flamme)",
+  "duration": "Konzentration, bis zu 1 min",
+  "concentration": true,
+  "ritual": false,
+  "classes": [
+    "Artificer",
+    "Barde",
+    "Druide"
+  ],
+  "text": "Wähle einen verarbeiteten Gegenstand aus Metall in Reichweite, den du sehen kannst. Dieser wird glühend heiß.\nAlle Kreaturen in physischem Kontakt mit dem Gegenstand erleiden 2W8 Feuerschaden.\nBis der Zauber endet kannst du mit einer Bonus Aktion den Schaden erneut verursachen.\nEine Kreatur, die den Gegenstand hält oder trägt muss einen CON-Rettungswurf bestehen um den Gegenstand, falls möglich, fallenzulassen.\nFalls der Gegenstand nicht fallengelassen wird, ist die Kreatur bis zum Beginn deines nächsten Zuges im Nachteil bei Angriffs- und Fertigkeitswürfen.\n\nAuf höheren Level gewirkt: pro Level 1W8 mehr Schaden"
+}

@@ -1,10 +1,10 @@
 {
   "id": "abenteurerpaket",
-  "type": "item",
+  "type": "Paket",
   "name": "Abenteurerpaket",
   "rules_version": "2024",
-  "source": "",
-  "item_category": "adventuring-gear",
+  "source": "PHB'24",
+  "item_category": "Abenteuerausrüstung",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",
@@ -14,11 +14,11 @@
   "stackable": false,
   "weight": {
     "value": 27.5,
-    "unit": "lb"
+    "unit": "kg"
   },
   "value": {
     "amount": 12,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,
@@ -33,11 +33,13 @@
   "modifiers": [],
   "granted_action_ids": [],
   "granted_spell_ids": [],
+  "contained_item_ids": ["rucksack", "kraehenfuesse", "oel", "ration", "hanf-seil", "zunderkaestchen", "fackel", "wasserschlauch", "leichter-hammer", "eisenkeile"],
   "effects": [],
-  "text": "Das Paket enthält: Rucksack Krähenfüße Brechstange 2 Flaschen Öl 10 Rationen Seil Zunderkästchen 10 Fackel Wasserschlauch Leichter Hammer Eisennägel",
+  "text": "Das Paket enthält: - Rucksack\n - Krähenfüße\n - Brechstange\n - 2 Flaschen Öl\n - 10 Rationen\n - Seil\n - Zunderkästchen\n - 10 Fackeln\n - Wasserschlauch\n - Leichter Hammer\n - Eisenkeile",
   "tags": [
     "abenteuer",
     "paket",
     "start"
-  ]
+  ],
+  "vendors": ["Abenteurerladen"]
 }

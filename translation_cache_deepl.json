@@ -2117,5 +2117,7 @@
   "DE::name::Blood Hag::0::-8884667694398387265": "Bluthexe",
   "DE::name::Blood Sense::0::-8884667694398387265": "Blutgefühl",
   "DE::text::A blood hag automatically senses the blood of living creatures within 90 feet and can pinpoint their locations within 30 feet.::0::-8884667694398387265": "Eine Bluthexe spürt automatisch das Blut lebender Wesen in ihrer Umgebung90 feetund kann deren 30 feetStandort genau bestimmen.",
-  "DE::name::Innate Spellcasting::0::-8884667694398387265": "Angeborene Zauberfähigkeit"
+  "DE::name::Innate Spellcasting::0::-8884667694398387265": "Angeborene Zauberfähigkeit",
+  "DE::name::Blood Hag::0::5659641515347028442": "Bluthexe",
+  "DE::name::Blood Sense::0::5659641515347028442": "Blutgefühl"
 }

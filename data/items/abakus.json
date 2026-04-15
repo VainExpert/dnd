@@ -1,24 +1,24 @@
 {
   "id": "abakus",
-  "type": "item",
+  "type": "Werkzeug",
   "name": "Abakus",
-  "rules_version": "2024",
-  "source": "",
-  "item_category": "adventuring-gear",
+  "rules_version": "2014",
+  "source": "PHB'14",
+  "item_category": "Abenteurerausrüstung",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "ring",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": false,
+  "stackable": true,
   "weight": {
     "value": 1,
-    "unit": "lb"
+    "unit": "kg"
   },
   "value": {
     "amount": 2,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,
@@ -33,11 +33,13 @@
   "modifiers": [],
   "granted_action_ids": [],
   "granted_spell_ids": [],
+  "contained_item_ids": [],
   "effects": [],
   "text": "Rechenrahmen zum Zählen und Rechnen.",
   "tags": [
     "nützlich",
     "abenteuer",
     "werkzeug"
-  ]
+  ],
+  "vendors": ["Abenteurerladen", "Werkzeugladen"]
 }

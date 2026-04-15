@@ -10,7 +10,7 @@
   "concentration": false,
   "ritual": false,
   "classes": [
-    "<Herkunft>"
+    "Barde", "Druide"
   ],
   "text": "Du schleuderst eine kleine Lichtkugel auf eine Kreatur oder einen Gegenstand in Reichweite.\nFühre einen Fernkampf-Zauberangriff gegen das Ziel aus.\nBei Treffer: 1W8 Strahlenschaden und bis zum Ende deines nächsten Zuges gibt das Ziel in 3 m Radius gedimmtes Licht ab und kann nicht unsichtbar werden.\n\nAuf höheren Level: Schaden steigt um je 1W8 auf Level 5, 11 und 17."
 }

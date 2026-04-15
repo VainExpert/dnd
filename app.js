@@ -1,23 +1,25 @@
 const PAGES = [
-  ["Kern", "Hausregeln & Tischkonventionen", "content/house-rules/index.md"],
-  ["Kern", "Sicherheitswerkzeuge & Erwartungen", "content/safety/index.md"],
-  ["Kern", "Charakteroptionen (erlaubt/verbote/abschwaechungen)", "content/character-options/index.md"],
+  ["Start", "Startseite", "content/home.md"],
 
-  ["Welt", "Spielerwissen (Ueberblick)", "content/lore/index.md"],
+  ["Kern", "Hausregeln & Tischkonventionen", "content/house-rules/index.md"],
+  ["Kern", "Verfolgungsjagden", "content/house-rules/chase.md"],
+  ["Kern", "Spiele am Tisch", "content/house-rules/games.md"],
+  ["Kern", "Sicherheitswerkzeuge & Erwartungen", "content/safety/index.md"],
+  ["Kern", "Charakteroptionen", "content/character-options/index.md"],
+
+  ["Welt", "Spielerwissen (Überblick)", "content/lore/index.md"],
   ["Welt", "Ortsverzeichnis", "content/lore/gazetteer.md"],
-  ["Welt", "Fraktionen", "content/lore/factions.md"],
-  ["Welt", "Religionen", "content/lore/religions.md"],
+  ["Welt", "Länder", "content/lore/country.md"],
+  ["Welt", "Religionen", "content/lore/religion.md"],
 
   ["Spiel", "Reise- & Auszeitregeln", "content/travel-downtime/index.md"],
   ["Spiel", "Schatz- & Herstellungsregeln", "content/treasure-crafting/index.md"],
 
-  ["Handouts", "Handout-Uebersicht", "content/handouts/index.md"],
+  ["Handouts", "Handout-Übersicht", "content/handouts/index.md"],
   ["Handouts", "Briefe / Requisitentexte", "content/handouts/letters.md"],
-  ["Handouts", "Raetsel", "content/handouts/puzzles.md"],
+  ["Handouts", "Rätsel", "content/handouts/puzzles.md"],
 
-  ["Rueckblicke", "Archiv der Sitzungsrueckblicke", "content/recaps/index.md"],
-  ["Rueckblicke", "Sitzung 01 (2026-02-10)", "content/recaps/2026-02-10-session-01.md"],
-  ["Rueckblicke", "Sitzung 02 (2026-02-17)", "content/recaps/2026-02-17-session-02.md"],
+  ["Rückblicke", "Archiv der Sitzungsrückblicke", "content/recaps/index.md"],
 ];
 
 const navEl = document.getElementById("nav");

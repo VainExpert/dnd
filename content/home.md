@@ -1,20 +1,22 @@
-# Welcome
+# Willkommen
 
-This is the player-facing campaign hub.
+Dies ist die spielerfreundliche Startseite für die Kampagne.
 
-## Quick links
+## Schnellzugriff
 
-- [House Rules](./content/house-rules/index.md)
-- [Safety Tools](./content/safety/index.md)
-- [Character Options](./content/character-options/index.md)
-- [Session Recaps](./content/recaps/index.md)
+- [Hausregeln](#content/house-rules/index.md)
+- [Sicherheitswerkzeuge](#content/safety/index.md)
+- [Charakteroptionen](#content/character-options/index.md)
+- [Sitzungsrückblicke](#content/recaps/index.md)
 
-## Libraries
+## Sammlungen
 
-- [Bestiary](./pages/bestiary.html)
-- [Spells](./pages/spells.html)
-- [Items](./pages/items.html)
-- [Maps](./pages/maps.html)
-- [PCs](./pages/pcs.html)
-- [Icons](./pages/icons.html)
-- [Tools](./pages/tools.html)
+- [Bestiarium](./pages/bestiarium/bestiary.html)
+- [Zauber](./pages/zauber/spells.html)
+- [Gegenstände](./pages/items/items.html)
+- [Karten](./pages/maps.html)
+- [Spielercharaktere](./pages/spieler/pcs.html)
+- [Symbole](./pages/icons.html)
+- [Werkzeuge](./pages/werkzeuge/tools.html)
+- [Würfel](./pages/werkzeuge/dice.html)
+- [Einheitenumrechner](./pages/werkzeuge/units.html)

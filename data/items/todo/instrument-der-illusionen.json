@@ -2,23 +2,30 @@
   "id": "instrument-der-illusionen",
   "type": "item",
   "name": "Instrument der Illusionen",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Juwelier",
+    "Feine Künste"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "adventuring-gear",
   "rarity": "gewöhnlich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "ring",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 100,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

@@ -2,23 +2,33 @@
   "id": "hut-der-schaedlinge",
   "type": "item",
   "name": "Hut der Schädlinge",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Lederer",
+    "Apotheker",
+    "Alchemist",
+    "Schneider",
+    "Reittierhändler"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "wondrous-item",
   "rarity": "gewöhnlich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": true,
-  "equippable": true,
-  "equip_slot": "head",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 100,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

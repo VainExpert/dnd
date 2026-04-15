@@ -2,23 +2,35 @@
   "id": "rubin-des-kriegsmagiers",
   "type": "item",
   "name": "Rubin des Kriegsmagiers",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen",
+    "Apotheker",
+    "Alchemist",
+    "Juwelier",
+    "Tempel"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "weapon",
   "rarity": "gewöhnlich",
   "requires_attunement": true,
   "attunement_text": "druch einen Zauberwirker",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "hand",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 50,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

@@ -2,23 +2,30 @@
   "id": "tintenstift",
   "type": "item",
   "name": "Tintenstift",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Bücherladen",
+    "Abenteurerladen"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "wondrous-item",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
+  "equippable": false,
   "equip_slot": null,
-  "stackable": false,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 2,
-    "currency": "cp"
+    "currency": "KM"
   },
   "weapon": null,
   "armor": null,

@@ -2,23 +2,31 @@
   "id": "wraps-der-unbewaffneten-macht-1",
   "type": "item",
   "name": "Wraps der unbewaffneten Macht, +1",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "weapon",
   "rarity": "ungewöhnlich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "hand",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 350,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

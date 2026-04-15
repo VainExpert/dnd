@@ -2,23 +2,32 @@
   "id": "anhaenger-des-giftschutzes",
   "type": "item",
   "name": "Anhänger des Giftschutzes",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Schwarzmarkt",
+    "Schneider",
+    "Juwelier",
+    "Abenteurerladen"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "wondrous-item",
   "rarity": "selten",
   "requires_attunement": true,
   "attunement_text": "",
   "consumable": true,
-  "equippable": true,
-  "equip_slot": "head",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 500,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

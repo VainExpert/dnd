@@ -2,23 +2,35 @@
   "id": "halskette-der-anpassung",
   "type": "item",
   "name": "Halskette der Anpassung",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Schwarzmarkt",
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen",
+    "Apotheker",
+    "Alchemist",
+    "Juwelier"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "wondrous-item",
   "rarity": "ungewöhnlich",
   "requires_attunement": true,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "neck",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 250,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

@@ -2,23 +2,32 @@
   "id": "glasblaeserwerkzeuge",
   "type": "item",
   "name": "Glasbläserwerkzeuge",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Apotheker",
+    "Alchemist",
+    "Werkzeugladen",
+    "Juwelier"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "adventuring-gear",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "ring",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 2.5,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 30,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

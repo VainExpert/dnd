@@ -2,23 +2,29 @@
   "id": "zauberstab-des-kriegsmagiers-3",
   "type": "item",
   "name": "Zauberstab des Kriegsmagiers, +3",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Schreiner"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "wand",
   "rarity": "sehr selten",
   "requires_attunement": true,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "hand",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 450,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

@@ -2,8 +2,17 @@
   "id": "trank-des-heldenmuts",
   "type": "item",
   "name": "Trank des Heldenmuts",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Apotheker",
+    "Alchemist",
+    "Reittierhändler",
+    "Taverne"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "potion",
   "rarity": "selten",
   "requires_attunement": false,
@@ -14,11 +23,11 @@
   "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 800,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

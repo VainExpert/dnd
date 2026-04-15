@@ -2,8 +2,19 @@
   "id": "munition-1",
   "type": "item",
   "name": "Munition, +1",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen",
+    "Apotheker",
+    "Alchemist",
+    "Schreiner"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "ammunition",
   "rarity": "ungewöhnlich",
   "requires_attunement": false,
@@ -14,11 +25,11 @@
   "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 100,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

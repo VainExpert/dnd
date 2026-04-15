@@ -2,23 +2,30 @@
   "id": "armbrustbolzen",
   "type": "item",
   "name": "Armbrustbolzen",
+  "vendors": [
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen",
+    "Apotheker",
+    "Alchemist"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "ammunition",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": true,
   "equippable": false,
-  "equip_slot": "hand",
+  "equip_slot": null,
   "stackable": true,
   "weight": {
     "value": 0.75,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 1,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

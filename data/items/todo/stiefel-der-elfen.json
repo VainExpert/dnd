@@ -2,23 +2,29 @@
   "id": "stiefel-der-elfen",
   "type": "item",
   "name": "Stiefel der Elfen",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Schneider"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "wondrous-item",
   "rarity": "ungewöhnlich",
   "requires_attunement": true,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "feet",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 350,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

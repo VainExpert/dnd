@@ -2,23 +2,36 @@
   "id": "reittierruestung",
   "type": "item",
   "name": "Reittier-Rüstung",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen",
+    "Lederer",
+    "Apotheker",
+    "Alchemist",
+    "Juwelier",
+    "Reittierhändler"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "armor",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "body",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 2,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 4,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

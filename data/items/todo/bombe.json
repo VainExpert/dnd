@@ -2,23 +2,29 @@
   "id": "bombe",
   "type": "item",
   "name": "Bombe",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Abenteurerladen"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "wondrous-item",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
+  "equippable": false,
   "equip_slot": null,
-  "stackable": false,
+  "stackable": true,
   "weight": {
     "value": 0.5,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 150,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

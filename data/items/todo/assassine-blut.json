@@ -2,23 +2,31 @@
   "id": "assassinen-blut",
   "type": "item",
   "name": "Assassinen Blut",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Schwarzmarkt",
+    "Apotheker",
+    "Alchemist"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "wondrous-item",
   "rarity": "ungewöhnlich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": true,
-  "equippable": true,
+  "equippable": false,
   "equip_slot": null,
-  "stackable": false,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 150,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

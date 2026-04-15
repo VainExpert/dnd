@@ -2,8 +2,14 @@
   "id": "gegengift",
   "type": "item",
   "name": "Gegengift",
+  "vendors": [
+    "Schwarzmarkt",
+    "Apotheker",
+    "Alchemist",
+    "Abenteurerladen"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "potion",
   "rarity": "alltäglich",
   "requires_attunement": false,
@@ -14,11 +20,11 @@
   "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 50,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

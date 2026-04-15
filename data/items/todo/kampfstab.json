@@ -2,23 +2,29 @@
   "id": "kampfstab",
   "type": "item",
   "name": "Kampfstab",
+  "vendors": [
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen",
+    "Schreiner"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "weapon",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "hand",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 2,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 2,
-    "currency": "sp"
+    "currency": "SM"
   },
   "weapon": null,
   "armor": null,

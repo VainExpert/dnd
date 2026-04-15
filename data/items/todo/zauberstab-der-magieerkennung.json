@@ -2,23 +2,29 @@
   "id": "zauberstab-der-magieerkennung",
   "type": "item",
   "name": "Zauberstab der Magieerkennung",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Schreiner"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "wand",
   "rarity": "ungewöhnlich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": true,
-  "equippable": true,
-  "equip_slot": "hand",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 200,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

@@ -2,23 +2,40 @@
   "id": "robe-der-nuetzlichen-dinge",
   "type": "item",
   "name": "Robe der nützlichen Dinge",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen",
+    "Lederer",
+    "Apotheker",
+    "Alchemist",
+    "Bücherladen",
+    "Schneider",
+    "Schreiner",
+    "Juwelier",
+    "Fischer",
+    "Reittierhändler"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "wondrous-item",
   "rarity": "ungewöhnlich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "body",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 400,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

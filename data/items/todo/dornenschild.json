@@ -2,23 +2,33 @@
   "id": "dornenschild",
   "type": "item",
   "name": "Dornenschild",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen",
+    "Apotheker",
+    "Alchemist"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "armor",
   "rarity": "ungewöhnlich",
   "requires_attunement": true,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "off-hand",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 350,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

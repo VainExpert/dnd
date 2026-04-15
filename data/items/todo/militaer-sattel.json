@@ -2,23 +2,31 @@
   "id": "militaer-sattel",
   "type": "item",
   "name": "Militär-Sattel",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Lederer",
+    "Juwelier",
+    "Reittierhändler"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "adventuring-gear",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "ring",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 15,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 20,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

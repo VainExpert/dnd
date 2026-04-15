@@ -2,23 +2,30 @@
   "id": "unverwuestliches-zauberbuch",
   "type": "item",
   "name": "Unverwüstliches Zauberbuch",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Bücherladen",
+    "Fischer"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "wondrous-item",
   "rarity": "gewöhnlich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
+  "equippable": false,
   "equip_slot": null,
-  "stackable": false,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 100,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

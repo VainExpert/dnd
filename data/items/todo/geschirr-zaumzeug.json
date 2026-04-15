@@ -2,23 +2,30 @@
   "id": "geschirr_und_zaumzeug",
   "type": "item",
   "name": "Geschirr und Zaumzeug",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Reittierhändler",
+    "Abenteurerladen"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "wondrous-item",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
+  "equippable": false,
   "equip_slot": null,
-  "stackable": false,
+  "stackable": true,
   "weight": {
     "value": 0.5,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 2,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

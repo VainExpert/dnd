@@ -1,14 +1,58 @@
 {
   "id": "robben-umhang",
+  "type": "item",
   "name": "Robben-Umhang",
-  "vendors": ["Ishmar"],
-  "type": "Wundersamer Gegenstand",
-  "tags": ["magisch", "kleidung", "umhang", "schwimmen", "bewegung", "vorteil", "überzeugen", "sylvan", "aquan", "tier", "robbe", "tiergestalt", "aktion", "fluch", "kurze rast"],
+  "vendors": [
+    "Ishmar's Magisches Allerlei"
+  ],
+  "rules_version": "2024",
+  "source": "PHB'24",
+  "item_category": "wondrous-item",
+  "rarity": "selten",
+  "requires_attunement": true,
+  "attunement_text": "",
+  "consumable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
+  "weight": {
+    "value": 0,
+    "unit": "kg"
+  },
   "price": {
-    "amount": 5.0,
+    "amount": 5,
     "currency": "GM"
   },
-  "attunement": true,
-  "description": "<p>Während du diesen Umhang trägst, bekommst du eine Schwimmbewegungsrate von 9 m. Du hast Vorteil auf alle Überzeugen-Würfe gegen Humanoide, die dein Geschlecht attraktiv finden. Auch kannst du dich als Aktion in eine Robbe verwandeln. Dafür gelten die Regeln, wie für die druidische Tiergestalt. Du kannst aber unbegrenzt in dieser Form blieben und kannst zusätzlich die Sprachen Sylvan und Aquan in der Robben-Form.<br><b>Fluch:</b> Bei Berühren des Umhangs muss eine SG-15 WIS-Rettungswurf bestaden werden, oder du wirst automatisch auf den Gegenstand eingestimmt. Wenn du eingestimmt bist kleidest du didch automtisch in dem Umhang und kannst ihn nicht abnhemen oder dei Einstimmung brechen, außer mit dem Fluch entfernen - Zauber. Einmal pro Tag muss du für eine Kurze Rast in der Robben-Form in einem See oder ähnlichen schwimmen, sonst bekommst du ein Level Erschöpfung, das nicht durch eine Lange Rast entfernt werden kann. Jede andere Kreatur,die versucht den Umhang zu entfernen, siehst du als Feind und wehrst dich heftig gegen sie.</p>",
-  "rarity": "selten"
+  "weapon": null,
+  "armor": null,
+  "charges": {
+    "max": null,
+    "recharge": ""
+  },
+  "uses": {
+    "max": null,
+    "recharge": ""
+  },
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "effects": [],
+  "text": "Während du diesen Umhang trägst, bekommst du eine Schwimmbewegungsrate von 9 m. Du hast Vorteil auf alle Überzeugen-Würfe gegen Humanoide, die dein Geschlecht attraktiv finden. Auch kannst du dich als Aktion in eine Robbe verwandeln. Dafür gelten die Regeln, wie für die druidische Tiergestalt. Du kannst aber unbegrenzt in dieser Form blieben und kannst zusätzlich die Sprachen Sylvan und Aquan in der Robben-Form.\nFluch: Bei Berühren des Umhangs muss eine SG-15 WIS-Rettungswurf bestaden werden, oder du wirst automatisch auf den Gegenstand eingestimmt. Wenn du eingestimmt bist kleidest du didch automtisch in dem Umhang und kannst ihn nicht abnhemen oder dei Einstimmung brechen, außer mit dem Fluch entfernen - Zauber. Einmal pro Tag muss du für eine Kurze Rast in der Robben-Form in einem See oder ähnlichen schwimmen, sonst bekommst du ein Level Erschöpfung, das nicht durch eine Lange Rast entfernt werden kann. Jede andere Kreatur,die versucht den Umhang zu entfernen, siehst du als Feind und wehrst dich heftig gegen sie.",
+  "tags": [
+    "magisch",
+    "kleidung",
+    "umhang",
+    "schwimmen",
+    "bewegung",
+    "vorteil",
+    "überzeugen",
+    "sylvan",
+    "aquan",
+    "tier",
+    "robbe",
+    "tiergestalt",
+    "aktion",
+    "fluch",
+    "kurze rast"
+  ]
 }

@@ -2,23 +2,31 @@
   "id": "magicitem-stiefel-der-winterlande",
   "type": "item",
   "name": "Stiefel der Winterlande",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Apotheker",
+    "Alchemist",
+    "Schneider"
+  ],
   "rules_version": "2024",
-  "source": "a-z.html",
+  "source": "PHB'24",
   "item_category": "wondrous-item",
   "rarity": "ungewöhnlich",
   "requires_attunement": true,
   "attunement_text": "erfordert Einstimmung",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "feet",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 0,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

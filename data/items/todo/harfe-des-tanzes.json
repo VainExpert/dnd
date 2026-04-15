@@ -2,23 +2,32 @@
   "id": "harfe-des-tanzes",
   "type": "item",
   "name": "Harfe des Tanzes",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Apotheker",
+    "Alchemist",
+    "Schneider",
+    "Feine Künste"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "wand",
   "rarity": "sehr selten",
   "requires_attunement": true,
   "attunement_text": "durch einen Barde",
   "consumable": false,
-  "equippable": true,
+  "equippable": false,
   "equip_slot": null,
-  "stackable": false,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 1000,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

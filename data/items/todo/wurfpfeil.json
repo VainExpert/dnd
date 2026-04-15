@@ -2,23 +2,29 @@
   "id": "wurfpfeil",
   "type": "item",
   "name": "Wurfpfeil",
+  "vendors": [
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen",
+    "Schreiner"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "ammunition",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": true,
   "equippable": false,
-  "equip_slot": "hand",
+  "equip_slot": null,
   "stackable": true,
   "weight": {
     "value": 0.125,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 5,
-    "currency": "cp"
+    "currency": "KM"
   },
   "weapon": null,
   "armor": null,

@@ -2,8 +2,16 @@
   "id": "zauberschriftrolle-3",
   "type": "item",
   "name": "Zauberschriftrolle, Level 3",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Apotheker",
+    "Alchemist",
+    "Bücherladen"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "scroll",
   "rarity": "ungewöhnlich",
   "requires_attunement": false,
@@ -14,11 +22,11 @@
   "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 400,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

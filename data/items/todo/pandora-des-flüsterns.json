@@ -2,23 +2,34 @@
   "id": "pandora-des-fluesterns",
   "type": "item",
   "name": "Pandora des Flüsterns",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Apotheker",
+    "Alchemist",
+    "Schneider",
+    "Juwelier",
+    "Reittierhändler",
+    "Feine Künste"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "adventuring-gear",
   "rarity": "ungewöhnlich",
   "requires_attunement": true,
   "attunement_text": "durch einen Barde",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "ring",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 400,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

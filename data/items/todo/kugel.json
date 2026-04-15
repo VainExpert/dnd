@@ -2,8 +2,19 @@
   "id": "kugel",
   "type": "item",
   "name": "Kugel",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen",
+    "Apotheker",
+    "Alchemist",
+    "Tempel"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "ammunition",
   "rarity": "alltäglich",
   "requires_attunement": false,
@@ -14,11 +25,11 @@
   "stackable": true,
   "weight": {
     "value": 1.5,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 20,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

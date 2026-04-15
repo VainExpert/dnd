@@ -2,8 +2,15 @@
   "id": "gewoehnlicher-heiltrank",
   "type": "item",
   "name": "Gewöhnlicher Heiltrank",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Apotheker",
+    "Alchemist"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "potion",
   "rarity": "gewöhnlich",
   "requires_attunement": false,
@@ -14,11 +21,11 @@
   "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 25,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

@@ -2,23 +2,29 @@
   "id": "ring-des-springens",
   "type": "item",
   "name": "Ring des Springens",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Juwelier"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "ring",
   "rarity": "ungewöhnlich",
   "requires_attunement": true,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "ring",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 225,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

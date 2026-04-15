@@ -2,23 +2,35 @@
   "id": "mandoline-des-glanzes",
   "type": "item",
   "name": "Madoline des Glanzes",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen",
+    "Apotheker",
+    "Alchemist",
+    "Schneider",
+    "Feine Künste"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "weapon",
   "rarity": "selten",
   "requires_attunement": true,
   "attunement_text": "durch einen Barde",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "hand",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 600,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

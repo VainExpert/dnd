@@ -2,8 +2,17 @@
   "id": "unzerbrechlicher-pfeil",
   "type": "item",
   "name": "Unzerbrechlicher Pfeil",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen",
+    "Schreiner"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "ammunition",
   "rarity": "gewöhnlich",
   "requires_attunement": false,
@@ -14,11 +23,11 @@
   "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 25,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

@@ -2,8 +2,16 @@
   "id": "munition",
   "type": "item",
   "name": "Munition",
+  "vendors": [
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen",
+    "Apotheker",
+    "Alchemist",
+    "Beute"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "ammunition",
   "rarity": "alltäglich",
   "requires_attunement": false,
@@ -14,11 +22,11 @@
   "stackable": true,
   "weight": {
     "value": 1,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 3,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

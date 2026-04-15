@@ -2,23 +2,28 @@
   "id": "zepter-des-pakthalters-1",
   "type": "item",
   "name": "Zepter des Pakthalters, +1",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "wand",
   "rarity": "ungewöhnlich",
   "requires_attunement": true,
   "attunement_text": "durch einen Hexenmeister",
   "consumable": false,
-  "equippable": true,
-  "equip_slot": "hand",
-  "stackable": false,
+  "equippable": false,
+  "equip_slot": null,
+  "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 350,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

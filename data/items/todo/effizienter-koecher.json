@@ -2,8 +2,16 @@
   "id": "effizienter-koecher",
   "type": "item",
   "name": "Effizienter Köcher",
+  "vendors": [
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen",
+    "Apotheker",
+    "Alchemist",
+    "Schreiner"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "ammunition",
   "rarity": "ungewöhnlich",
   "requires_attunement": false,
@@ -14,11 +22,11 @@
   "stackable": true,
   "weight": {
     "value": 1,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 500,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

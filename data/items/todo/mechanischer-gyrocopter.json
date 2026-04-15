@@ -2,23 +2,32 @@
   "id": "mechanisches-gyrocopter",
   "type": "item",
   "name": "Mechanisches Gyrocopter",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Apotheker",
+    "Alchemist",
+    "Schreiner",
+    "Juwelier"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "wondrous-item",
   "rarity": "selten",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
-  "equippable": true,
+  "equippable": false,
   "equip_slot": null,
-  "stackable": false,
+  "stackable": true,
   "weight": {
     "value": 250,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 800,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

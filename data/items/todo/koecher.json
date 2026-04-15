@@ -2,8 +2,14 @@
   "id": "koecher",
   "type": "item",
   "name": "Köcher",
+  "vendors": [
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen",
+    "Schreiner"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "ammunition",
   "rarity": "alltäglich",
   "requires_attunement": false,
@@ -14,11 +20,11 @@
   "stackable": true,
   "weight": {
     "value": 0.5,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 1,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

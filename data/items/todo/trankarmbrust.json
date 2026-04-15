@@ -2,23 +2,35 @@
   "id": "trankarmbrust-des-alchemisten",
   "type": "item",
   "name": "Trankarmbrust des Alchemisten",
+  "vendors": [
+    "Ishmar's Magisches Allerlei",
+    "Zaubererturm",
+    "Beute",
+    "Schmied",
+    "Zwergenschmied",
+    "Abenteurerladen",
+    "Lederer",
+    "Apotheker",
+    "Alchemist",
+    "Schneider"
+  ],
   "rules_version": "2024",
-  "source": "",
+  "source": "PHB'24",
   "item_category": "potion",
   "rarity": "gewöhnlich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": true,
   "equippable": false,
-  "equip_slot": "hand",
+  "equip_slot": null,
   "stackable": true,
   "weight": {
     "value": 0,
-    "unit": "lb"
+    "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 100,
-    "currency": "gp"
+    "currency": "GM"
   },
   "weapon": null,
   "armor": null,

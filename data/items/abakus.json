@@ -16,7 +16,7 @@
     "value": 1,
     "unit": "kg"
   },
-  "value": {
+  "price": {
     "amount": 2,
     "currency": "GM"
   },
@@ -35,6 +35,7 @@
   "granted_spell_ids": [],
   "contained_item_ids": [],
   "effects": [],
+  "use_cost": null,
   "text": "Rechenrahmen zum Zählen und Rechnen.",
   "tags": [
     "nützlich",

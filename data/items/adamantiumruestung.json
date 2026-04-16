@@ -1,36 +1,31 @@
 {
-  "id": "adamantruestung",
-  "type": "item",
-  "name": "Adamantrüstung",
+  "id": "adamantiumruestung",
+  "type": "Rüstung",
+  "name": "Adamantiumrüstung",
   "vendors": [
-    "Ishmar's Magisches Allerlei",
-    "Zaubererturm",
     "Beute",
-    "Schmied",
-    "Zwergenschmied",
-    "Abenteurerladen",
-    "Lederer"
+    "Zwergenschmied"
   ],
   "rules_version": "2024",
-  "source": "PHB'24",
-  "item_category": "armor",
+  "source": "DMG'24",
+  "item_category": "Rüstung",
   "rarity": "ungewöhnlich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
-  "equippable": false,
-  "equip_slot": null,
+  "equippable": true,
+  "equip_slot": "körper",
   "stackable": true,
   "weight": {
     "value": 0,
     "unit": "kg"
   },
   "price": {
-    "amount": 0,
+    "amount": 400,
     "currency": "GM"
   },
   "weapon": null,
-  "armor": null,
+  "armor": "jeglische mittlere bis schwere Rütung (außer Fell)",
   "charges": {
     "max": null,
     "recharge": ""
@@ -39,10 +34,12 @@
     "max": null,
     "recharge": ""
   },
-  "modifiers": [],
+  "modifiers": ["keine kritischen Treffer gegen dich"],
   "granted_action_ids": [],
   "granted_spell_ids": [],
+  "contained_item_ids": [],
   "effects": [],
+  "use_cost": null,
   "text": "Kann jede mittlere bis schwere Rüstungsart sein (außer Fell). Die Rüstung ist mit Adamant verstärkt. Wenn getragen, wird jeder kritische Treffer gegen dich zu einem normalen Treffer.",
   "tags": [
     "abenteuer",

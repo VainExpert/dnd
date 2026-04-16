@@ -57,7 +57,7 @@
       <div class="mini-box">
         <div class="mini-box-title">Werte</div>
         <div class="mini-box-text">
-          ${item.attunement ? `<div><b>Bindung:</b> ${escapeHtml(item.attunement_text || "Ja")}</div>` : ""}
+          ${item.requires_attunement ? `<div><b>Bindung:</b> ${item.attunement_text ? escapeHtml(item.attunement_text) : "Ja"}</div>` : ""}
           ${item.price ? `<div><b>Preis:</b> ${escapeHtml(item.price)}</div>` : ""}
           ${item.weight ? `<div><b>Gewicht:</b> ${escapeHtml(item.weight)}</div>` : ""}
         </div>

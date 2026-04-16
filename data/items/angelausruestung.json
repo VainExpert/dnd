@@ -1,18 +1,16 @@
 {
-  "id": "anpassungen",
-  "type": "item",
-  "name": "Anpassungen",
+  "id": "angelausruestung",
+  "type": "Werkzeug",
+  "name": "Angelausrüstung",
   "vendors": [
-    "Ishmar's Magisches Allerlei",
-    "Zaubererturm",
-    "Beute",
-    "Schneider",
-    "Juwelier"
+    "Abenteurerladen",
+    "Werkzeugladen",
+    "Fischer"
   ],
-  "rules_version": "2024",
-  "source": "PHB'24",
-  "item_category": "adventuring-gear",
-  "rarity": "gewöhnlich",
+  "rules_version": "2014",
+  "source": "PHB'14",
+  "item_category": "Werkzeug",
+  "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
@@ -20,11 +18,11 @@
   "equip_slot": null,
   "stackable": true,
   "weight": {
-    "value": 0,
+    "value": 2,
     "unit": "kg"
   },
   "price": {
-    "amount": 0,
+    "amount": 1,
     "currency": "GM"
   },
   "weapon": null,
@@ -40,11 +38,13 @@
   "modifiers": [],
   "granted_action_ids": [],
   "granted_spell_ids": [],
+  "contained_item_ids": [],
   "effects": [],
-  "text": "Verändert Kleidung, Größe / Typ.",
+  "use_cost": [],
+  "text": "Angelausrüstung (Rute, Haken, Schnur) um Fische als Rationen zu fangen.",
   "tags": [
-    "kleidung",
-    "anpassung",
-    "modifikation"
+    "essen",
+    "werkzeug",
+    "nützlich"
   ]
 }

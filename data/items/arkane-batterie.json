@@ -1,6 +1,6 @@
 {
   "id": "arkane-batterie",
-  "type": "item",
+  "type": "Wundersamer Gegenstand",
   "name": "Arkane Batterie",
   "vendors": [
     "Ishmar's Magisches Allerlei",
@@ -8,8 +8,8 @@
     "Beute"
   ],
   "rules_version": "2024",
-  "source": "PHB'24",
-  "item_category": "wondrous-item",
+  "source": "Netheril's Fall",
+  "item_category": "Wundersamer Gegenstand",
   "rarity": "ungewöhnlich",
   "requires_attunement": false,
   "attunement_text": "",
@@ -38,7 +38,9 @@
   "modifiers": [],
   "granted_action_ids": [],
   "granted_spell_ids": [],
-  "effects": [],
+  "contained_item_ids": [],
+  "effects": ["stellt 1W4 + 1 Ladungen wiederher"],
+  "use_cost": "Aktion",
   "text": "Dieser glatte ovale Stein kann als Aktion an einen magischen Gegenstand gehalten werden, der Ladungen braucht und stellt sofort 1W4+1 dieser Ladungen wieder auf. Dies kann nur einmal verwendet werden.",
   "tags": [
     "nützlich",

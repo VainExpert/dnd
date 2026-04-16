@@ -40,11 +40,15 @@ function formatPrice(price){
 
 function formatWeight(weight){
   if (weight == null || weight === "") return "";
-  if (typeof weight === "number") return trimTrailingZeros(weight);
+  if (typeof weight === "number") return weight > 0 ? trimTrailingZeros(weight) : "";
   if (typeof weight === "string") return repairText(weight).trim();
   if (typeof weight !== "object") return String(weight);
 
-  const amount = weight.amount != null ? trimTrailingZeros(weight.amount) : "";
+  const rawAmount = weight.value != null ? weight.value : weight.amount;
+  const numericAmount = Number(rawAmount);
+  if (Number.isFinite(numericAmount) && numericAmount <= 0) return "";
+
+  const amount = rawAmount != null ? trimTrailingZeros(rawAmount) : "";
   const unit = repairText(weight.unit ?? "").trim();
   return [amount, unit].filter(Boolean).join(" ").trim();
 }
@@ -56,6 +60,7 @@ function mapValue(value, entries){
 }
 
 export function escapeHtml(s){
+  console.log(s)
   return repairText(String(s ?? ""))
     .replaceAll("&","&amp;")
     .replaceAll("<","&lt;")

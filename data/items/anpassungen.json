@@ -1,19 +1,22 @@
 {
-  "id": "2-personen-zelt",
-  "type": "Rast",
-  "name": "2-Personen Zelt",
+  "id": "anpassungen",
+  "type": "Dienstleistung",
+  "name": "Anpassungen",
+  "vendors": [
+    "Schneider"
+  ],
   "rules_version": "2024",
-  "source": "PHB'24",
-  "item_category": "Abenteuerausrüstung",
+  "source": "Homebrew",
+  "item_category": "Kleidung",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
   "equippable": false,
   "equip_slot": null,
-  "stackable": false,
+  "stackable": true,
   "weight": {
-    "value": 10,
+    "value": 0,
     "unit": "kg"
   },
   "price": {
@@ -36,15 +39,10 @@
   "contained_item_ids": [],
   "effects": [],
   "use_cost": null,
-  "text": "Ein kleines Zelt für bis zu zwei Kleine bis Mittlere Humanoide oder einen Großen Humanoiden; schützt beim Lagern vor Wind und Wetter.",
+  "text": "Verändert Kleidung, Größe / Typ.",
   "tags": [
-    "rast",
-    "schutz",
-    "schlaf",
-    "abenteuer",
-    "grundausstattung",
-    "nützlich",
-    "sozial"
-  ],
-  "vendors": ["Abenteurerladen", "Schneider"]
+    "kleidung",
+    "anpassung",
+    "modifikation"
+  ]
 }

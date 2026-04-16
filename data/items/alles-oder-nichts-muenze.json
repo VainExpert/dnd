@@ -1,16 +1,15 @@
 {
   "id": "alles-oder-nichts-muenze",
-  "type": "item",
+  "type": "Wundersamer Gegenstand",
   "name": "Alles oder Nichts - Münze",
   "vendors": [
     "Ishmar's Magisches Allerlei",
-    "Zaubererturm",
     "Beute"
   ],
   "rules_version": "2024",
-  "source": "PHB'24",
-  "item_category": "wondrous-item",
-  "rarity": "common",
+  "source": "Homebrew",
+  "item_category": "Wundersamer Gegenstand",
+  "rarity": "gewöhnlich",
   "requires_attunement": true,
   "attunement_text": "",
   "consumable": false,
@@ -32,13 +31,15 @@
     "recharge": ""
   },
   "uses": {
-    "max": null,
-    "recharge": ""
+    "max": 1,
+    "recharge": "Lange Rast"
   },
   "modifiers": [],
   "granted_action_ids": [],
   "granted_spell_ids": [],
-  "effects": [],
+  "contained_item_ids": [],
+  "effects": ["20 oder 1"],
+  "use_cost": null,
   "text": "Einmal pro Tag kann diese Münze anstelle eines W20 geworfen werden. Du musst vorher das Ergebnis vorraussagen. Bei richtiger Vorhersage ist das Ergebnis eine 20, bei falscher eine 1.",
   "tags": [
     "magisch",

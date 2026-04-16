@@ -1,21 +1,16 @@
 {
   "id": "alchemiekrug",
-  "type": "item",
+  "type": "Wundersamer Gegenstand",
   "name": "Alchemiekrug",
   "vendors": [
     "Ishmar's Magisches Allerlei",
-    "Zaubererturm",
     "Beute",
     "Schwarzmarkt",
-    "Apotheker",
-    "Alchemist",
-    "Juwelier",
-    "Fischer",
-    "Taverne"
+    "Alchemist"
   ],
   "rules_version": "2024",
-  "source": "PHB'24",
-  "item_category": "adventuring-gear",
+  "source": "DMG'24",
+  "item_category": "Wundersamer Gegenstand",
   "rarity": "gewöhnlich",
   "requires_attunement": false,
   "attunement_text": "",
@@ -38,13 +33,15 @@
     "recharge": ""
   },
   "uses": {
-    "max": null,
-    "recharge": ""
+    "max": 1,
+    "recharge": "Nächster Morgen"
   },
   "modifiers": [],
   "granted_action_ids": [],
   "granted_spell_ids": [],
+  "contained_item_ids": ["saeure", "einfaches-gift", "oel"],
   "effects": [],
+  "use_cost": "2 Aktionen",
   "text": "Dieser Keramikkrug hält bis zu 3,8 l Flüssigkeit und er macht immer schwabende Geräusche. Als Aktion kann eine Flüssigkeit bennant werden und der Krug füllt sich mit der genannten Flüssigkeit, wie in der Tabelle beschrieben. Danach kann der Krug entkorkt werden und mit einer Aktion die Flüssigkeit ausgegossen werden bis zu 7,6 l pro min. Wenn der Krug einmal Flüssigkeit produziert hat, kann es keine andere produzieren oder mehr als das Maximum für die Flüssigkeit bis zum nächsten Morgen. Flüssigkeit max. Menge Säure 250 ml Einfaches Gift 125 ml Bier 15 l Honig 3,8 l Mayonaisse 7,6 l Öl 1 l Essig 7,6 l Frischwasser 30 l Salzwasser 45 l Wein 3,8 l",
   "tags": [
     "alchemie",

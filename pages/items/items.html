@@ -101,7 +101,7 @@
             <div class="mini-title"><a href="${href}">${escapeHtml(i.name)}</a></div>
             <div class="mini-sub">${escapeHtml(i.type ?? "Item")}${i.rarity ? " • " + escapeHtml(i.rarity) : ""}</div>
             <div class="pillbar">
-              ${i.attunement ? `<span class="pill"><b>Bindung</b> ja</span>` : ""}
+              ${i.requires_attunement ? `<span class="pill"><b>Bindung</b> ja</span>` : ""}
               ${i.price ? `<span class="pill"><b>Preis</b> ${escapeHtml(i.price)}</span>` : ""}
               ${i.weight ? `<span class="pill"><b>Gewicht</b> ${escapeHtml(i.weight)}</span>` : ""}
             </div>

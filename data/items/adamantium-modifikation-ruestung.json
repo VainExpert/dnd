@@ -1,35 +1,29 @@
 {
-  "id": "adamant-modifikation-ruestung",
-  "type": "item",
-  "name": "Adamant-Modifikation Rüstung",
+  "id": "adamantium-modifikation-ruestung",
+  "type": "Modifikation",
+  "name": "Adamantium-Modifikation Rüstung",
   "vendors": [
-    "Ishmar's Magisches Allerlei",
-    "Zaubererturm",
-    "Beute",
-    "Schmied",
-    "Zwergenschmied",
-    "Abenteurerladen",
-    "Lederer"
+    "Zwergenschmied"
   ],
   "rules_version": "2024",
-  "source": "PHB'24",
-  "item_category": "armor",
+  "source": "DMG'24",
+  "item_category": "Rüstung",
   "rarity": "ungewöhnlich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
   "equippable": false,
   "equip_slot": null,
-  "stackable": true,
+  "stackable": false,
   "weight": {
     "value": 0,
     "unit": "kg"
   },
   "price": {
-    "amount": 750,
+    "amount": 350,
     "currency": "GM"
   },
-  "weapon": null,
+  "weapon": "mittlere bis schwere Rüstung (außer Fell)",
   "armor": null,
   "charges": {
     "max": null,
@@ -39,11 +33,13 @@
     "max": null,
     "recharge": ""
   },
-  "modifiers": [],
+  "modifiers": ["keine kritischen Treffer gegen dich möglich"],
   "granted_action_ids": [],
   "granted_spell_ids": [],
+  "contained_item_ids": [],
   "effects": [],
-  "text": "Überzieht eine mittlere bis schwere Rüstung (außer Fell) mit Adamant. Dadurch können keine kritischen Treffer gegen dich erzielt werden.",
+  "use_cost": null,
+  "text": "Überzieht eine mittlere bis schwere Rüstung (außer Fell) mit Adamantium. Dadurch können keine kritischen Treffer gegen dich erzielt werden.",
   "tags": [
     "abenteuer",
     "magisch",

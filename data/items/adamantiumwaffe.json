@@ -1,31 +1,27 @@
 {
-  "id": "adamant-modifikation-waffen",
-  "type": "item",
-  "name": "Adamant-Modifikation Waffen",
+  "id": "adamantiumwaffe",
+  "type": "Waffe",
+  "name": "Adamantiumwaffe",
   "vendors": [
-    "Ishmar's Magisches Allerlei",
-    "Zaubererturm",
     "Beute",
-    "Schmied",
-    "Zwergenschmied",
-    "Abenteurerladen"
+    "Zwergenschmied"
   ],
   "rules_version": "2024",
-  "source": "PHB'24",
-  "item_category": "weapon",
+  "source": "DMG'24",
+  "item_category": "Waffe",
   "rarity": "ungewöhnlich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
-  "equippable": false,
-  "equip_slot": null,
+  "equippable": true,
+  "equip_slot": "hand",
   "stackable": true,
   "weight": {
     "value": 0,
     "unit": "kg"
   },
   "price": {
-    "amount": 250,
+    "amount": 300,
     "currency": "GM"
   },
   "weapon": null,
@@ -38,18 +34,17 @@
     "max": null,
     "recharge": ""
   },
-  "modifiers": [],
+  "modifiers": ["jeder Treffer wird kritisch"],
   "granted_action_ids": [],
   "granted_spell_ids": [],
+  "contained_item_ids": [],
   "effects": [],
-  "text": "Überzieht eine geschmiedete Waffe mit Adamant. Dies macht die Waffe magisch und Treffer mit der Waffe gelten immer als kritische Treffer.",
+  "use_cost": null,
+  "text": "Eine geschmiedete Waffen aus Adamant. Die Angriffe gelten als magisch und Treffer mit ihr gelten immer als kritische Treffer.",
   "tags": [
     "abenteuer",
     "magisch",
     "adamant",
-    "modifikation",
-    "waffe",
-    "kampf",
-    "schmied"
+    "ungewöhnlich"
   ]
 }

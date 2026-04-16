@@ -1,31 +1,28 @@
 {
-  "id": "angelausruestung",
-  "type": "item",
-  "name": "Angelausrüstung",
+  "id": "alchemistenfeuer",
+  "type": "Gegenstand",
+  "name": "Alchemistenfeuer",
   "vendors": [
-    "Schmied",
-    "Zwergenschmied",
+    "Schwarzmarkt",
     "Abenteurerladen",
-    "Werkzeugladen",
-    "Fischer",
-    "Taverne"
+    "Alchemist"
   ],
   "rules_version": "2024",
   "source": "PHB'24",
-  "item_category": "armor",
+  "item_category": "Waffe",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",
-  "consumable": false,
+  "consumable": true,
   "equippable": false,
   "equip_slot": null,
   "stackable": true,
   "weight": {
-    "value": 2,
+    "value": 0.5,
     "unit": "kg"
   },
   "price": {
-    "amount": 1,
+    "amount": 50,
     "currency": "GM"
   },
   "weapon": null,
@@ -41,11 +38,18 @@
   "modifiers": [],
   "granted_action_ids": [],
   "granted_spell_ids": [],
+  "contained_item_ids": [],
   "effects": [],
-  "text": "Angelausrüstung (Rute, Haken, Schnur) um Fische als Rationen zu fangen.",
+  "use_cost": "Aktion",
+  "text": "Mit einer Aktion kann eine Flasche Alchemistenfeuer auf eine Kreatur in 6 m Abstand geworfen werden. Das Ziel muss einen DEX-Rettungswurf machen oder wird davon getroffen und nimmt 1W4 Feuerschaden und brennt.",
   "tags": [
-    "essen",
-    "werkzeug",
+    "abenteuer",
+    "waffe",
+    "kampf",
+    "feuer",
+    "einfach",
+    "fernkampf",
+    "konsumiert",
     "nützlich"
   ]
 }

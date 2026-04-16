@@ -43,7 +43,7 @@
     async function loadNpc(){
       // Fast path: direct file
       try {
-        return await fetchJson(`../../data/npcs/${encodeURIComponent(id)}.json`);
+        return await fetchJson(`../../data/monsters/npc/${encodeURIComponent(id)}.json`);
       } catch {}
 
       // Fallback: scan index (if you have it)

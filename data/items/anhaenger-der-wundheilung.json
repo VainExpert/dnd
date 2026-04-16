@@ -1,28 +1,21 @@
 {
   "id": "anhaenger-der-wundheilung",
-  "type": "item",
+  "type": "Wundersamer Gegenstand",
   "name": "Anhänger der Wundheilung",
   "vendors": [
     "Ishmar's Magisches Allerlei",
-    "Zaubererturm",
-    "Beute",
-    "Apotheker",
-    "Alchemist",
-    "Schneider",
-    "Schreiner",
-    "Juwelier",
-    "Abenteurerladen"
+    "Beute"
   ],
   "rules_version": "2024",
-  "source": "PHB'24",
-  "item_category": "wondrous-item",
+  "source": "DMG'24",
+  "item_category": "Wundersamer Gegenstand",
   "rarity": "ungewöhnlich",
   "requires_attunement": true,
-  "attunement_text": "",
+  "attunement_text": null,
   "consumable": false,
-  "equippable": false,
-  "equip_slot": null,
-  "stackable": true,
+  "equippable": true,
+  "equip_slot": "hals",
+  "stackable": false,
   "weight": {
     "value": 0,
     "unit": "kg"
@@ -44,7 +37,9 @@
   "modifiers": [],
   "granted_action_ids": [],
   "granted_spell_ids": [],
-  "effects": [],
+  "contained_item_ids": [],
+  "effects": ["Bei Tod: Doppelter Trefferwürfel-Würfe an TP als Heilung"],
+  "use_cost": null,
   "text": "Wenn du diesen Anhänger trägst und sterben würdest, stabilisierst du dich zum Beginn deines Zugs. Wenn du einen Trefferwürfel verwendest, um Trefferpunkte zurückzuerhalten, verdoppelst du außerdem jedes Mal die zurückerhaltenen Trefferpunkte.",
   "tags": [
     "magisch",

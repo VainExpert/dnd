@@ -1,28 +1,21 @@
 {
   "id": "anhaenger-der-gesundheit",
-  "type": "item",
+  "type": "Wundersamer Gegenstand",
   "name": "Anhänger der Gesundheit",
   "vendors": [
     "Ishmar's Magisches Allerlei",
-    "Zaubererturm",
-    "Beute",
-    "Schwarzmarkt",
-    "Apotheker",
-    "Alchemist",
-    "Schneider",
-    "Juwelier",
-    "Abenteurerladen"
+    "Beute"
   ],
   "rules_version": "2024",
-  "source": "PHB'24",
-  "item_category": "wondrous-item",
+  "source": "DMG'24",
+  "item_category": "Wundersamer Gegenstand",
   "rarity": "ungewöhnlich",
   "requires_attunement": true,
-  "attunement_text": "",
+  "attunement_text": null,
   "consumable": false,
-  "equippable": false,
-  "equip_slot": null,
-  "stackable": true,
+  "equippable": true,
+  "equip_slot": "hals",
+  "stackable": false,
   "weight": {
     "value": 0,
     "unit": "kg"
@@ -38,13 +31,15 @@
     "recharge": ""
   },
   "uses": {
-    "max": null,
-    "recharge": ""
+    "max": 1,
+    "recharge": "Lange Rast"
   },
   "modifiers": [],
   "granted_action_ids": [],
   "granted_spell_ids": [],
-  "effects": [],
+  "contained_item_ids": [],
+  "effects": ["2W4 + 2 Heilung"],
+  "use_cost": "Aktion",
   "text": "Wenn du diesen Anhänger trägst, kannst du mit einer Aktion 2W4 + TP bei dir selbst heilen. Diese Fähigkeitkann nur einmal pro Tag genutzt werden und wird am Morgen zurückgesetzt. Außerdem hat der Träger Vorteil auf Rettungswürfe gegen den Vergiftet Zustand (bekommen oder beenden).",
   "tags": [
     "magisch",

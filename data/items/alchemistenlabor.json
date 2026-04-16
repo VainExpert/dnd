@@ -1,21 +1,14 @@
 {
   "id": "alchemistenlabor",
-  "type": "item",
+  "type": "Werkzeug",
   "name": "Alchemistenlabor",
   "vendors": [
-    "Ishmar's Magisches Allerlei",
-    "Zaubererturm",
-    "Beute",
-    "Apotheker",
     "Alchemist",
-    "Werkzeugladen",
-    "Bücherladen",
-    "Juwelier",
-    "Abenteurerladen"
+    "Werkzeugladen"
   ],
   "rules_version": "2024",
   "source": "PHB'24",
-  "item_category": "adventuring-gear",
+  "item_category": "Werkzeug",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",
@@ -44,8 +37,10 @@
   "modifiers": [],
   "granted_action_ids": [],
   "granted_spell_ids": [],
+  "contained_item_ids": ["saeure", "alchemistenfeuer", "komponentenbeutel", "oel", "papier", "parfuem"],
   "effects": [],
-  "text": "Werkzeug zum Brauen und Identifizieren von alchemistischen Substanzen. Nutzen: Kann eine Substanz identifizieren (SG 15) oder ein Feuer entfachen (SG 15). Fertigen: Säure, Alchemisten Feuer, Komponentenbeutel, Öl, Papier, Parfüm",
+  "use_cost": null,
+  "text": "Werkzeug zum Brauen und Identifizieren von alchemistischen Substanzen. Nutzen: Kann eine Substanz identifizieren (SG 15) oder ein Feuer entfachen (SG 15). Fertigen: Säure, Alchemistenfeuer, Komponentenbeutel, Öl, Papier, Parfüm",
   "tags": [
     "abenteuer",
     "werkzeug",

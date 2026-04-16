@@ -1,27 +1,22 @@
 {
   "id": "amulett-des-schutzes-gegen-ortung-und-ausspaehung",
-  "type": "item",
+  "type": "Wundersamer Gegenstand",
   "name": "Amulett des Schutzes gegen Ortung und Ausspähung",
   "vendors": [
     "Ishmar's Magisches Allerlei",
     "Zaubererturm",
-    "Beute",
-    "Apotheker",
-    "Alchemist",
-    "Schneider",
-    "Juwelier",
-    "Abenteurerladen"
+    "Beute"
   ],
   "rules_version": "2024",
-  "source": "PHB'24",
-  "item_category": "wondrous-item",
+  "source": "DMG'24",
+  "item_category": "Schmuck",
   "rarity": "ungewöhnlich",
   "requires_attunement": true,
   "attunement_text": "",
   "consumable": false,
-  "equippable": false,
-  "equip_slot": null,
-  "stackable": true,
+  "equippable": true,
+  "equip_slot": "halse",
+  "stackable": false,
   "weight": {
     "value": 0,
     "unit": "kg"
@@ -43,7 +38,9 @@
   "modifiers": [],
   "granted_action_ids": [],
   "granted_spell_ids": [],
-  "effects": [],
+  "contained_item_ids": [],
+  "effects": ["Schutz vor Erkenntnismagie"],
+  "use_cost": null,
   "text": "Wenn du dieses Amulett trägst, bist du vor Erkenntnismagie versteckt. Du kannst nicht das Ziel solcher Magie sein oder durch magische Ausspähungssensoren wahrgenommen werden.",
   "tags": [
     "magisch",

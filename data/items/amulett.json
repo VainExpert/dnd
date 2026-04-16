@@ -1,19 +1,15 @@
 {
-  "id": "adamant-waffen",
-  "type": "item",
-  "name": "Adamant-Waffen",
+  "id": "amulett",
+  "type": "Magischer Fokus",
+  "name": "Amulett",
   "vendors": [
-    "Ishmar's Magisches Allerlei",
-    "Zaubererturm",
     "Beute",
-    "Schmied",
-    "Zwergenschmied",
-    "Abenteurerladen"
+    "Tempel"
   ],
   "rules_version": "2024",
   "source": "PHB'24",
-  "item_category": "armor",
-  "rarity": "ungewöhnlich",
+  "item_category": "Heiliges Symbol",
+  "rarity": "gewöhnlich",
   "requires_attunement": false,
   "attunement_text": "",
   "consumable": false,
@@ -21,11 +17,11 @@
   "equip_slot": null,
   "stackable": true,
   "weight": {
-    "value": 0,
+    "value": 0.5,
     "unit": "kg"
   },
   "price": {
-    "amount": 0,
+    "amount": 5,
     "currency": "GM"
   },
   "weapon": null,
@@ -41,12 +37,17 @@
   "modifiers": [],
   "granted_action_ids": [],
   "granted_spell_ids": [],
+  "contained_item_ids": [],
   "effects": [],
-  "text": "Eine geschmiedete Waffen aus Adamant. Die Angriffe gelten als magisch und Treffer mit ihr gelten immer als kritische Treffer.",
+  "use_cost": null,
+  "text": "Ein Amulett mit heiligen Symbolen, das als arkaner Fokus für Zauber dient. Das Amulett muss gehalten oder getragen werden.",
   "tags": [
     "abenteuer",
-    "magisch",
-    "adamant",
-    "ungewöhnlich"
+    "magie",
+    "fokus",
+    "zauber",
+    "kleriker",
+    "paladin",
+    "tempel"
   ]
 }

@@ -21,7 +21,7 @@
   </main>
 
   <script type="module">
-    import { escapeHtml, loadIndex, loadMany, normalizeItem } from "../../lib.js";
+    import { escapeHtml, loadIndex, loadMany, normalizeItem } from "../../lib.js?v=2026-04-16-weight-fix";
 
     const view = document.getElementById("view");
     const titleEl = document.getElementById("title");
@@ -46,6 +46,34 @@
 
     titleEl.textContent = item.name || "Gegenstand";
 
+    function weightDisplay(entry){
+      const weight = entry.weight;
+      if (weight == null || weight === "") return "";
+      if (typeof weight === "number") return weight > 0 ? escapeHtml(String(weight)) : "";
+      if (typeof weight === "string") {
+        const trimmed = weight.trim();
+        const match = trimmed.match(/^-?\d+(?:[.,]\d+)?/);
+        if (!match) return escapeHtml(trimmed);
+        const numeric = Number(match[0].replace(",", "."));
+        return Number.isFinite(numeric) && numeric > 0 ? escapeHtml(trimmed) : "";
+      }
+      if (typeof weight === "object") {
+        const rawValue = weight.value ?? weight.amount;
+        const numeric = Number(rawValue);
+        if (!Number.isFinite(numeric) || numeric <= 0) return "";
+        const unit = String(weight.unit ?? "").trim();
+        return escapeHtml([String(rawValue), unit].filter(Boolean).join(" ").trim());
+      }
+      return "";
+    }
+
+    function attunementDisplay(entry){
+      const text = String(entry.attunement_text ?? "").trim();
+      return text || "Ja";
+    }
+
+    const weight = weightDisplay(item);
+
     const effectHtml = item.html
       ? `<div class="mini-box-text">${item.html}</div>`
       : (item.text ? `<div class="mini-box-text">${escapeHtml(item.text).replaceAll("\n","<br/>")}</div>` : "");
@@ -57,9 +85,9 @@
       <div class="mini-box">
         <div class="mini-box-title">Werte</div>
         <div class="mini-box-text">
-          ${item.requires_attunement ? `<div><b>Bindung:</b> ${item.attunement_text ? escapeHtml(item.attunement_text) : "Ja"}</div>` : ""}
+          ${item.requires_attunement ? `<div><b>Bindung:</b> ${escapeHtml(attunementDisplay(item))}</div>` : ""}
           ${item.price ? `<div><b>Preis:</b> ${escapeHtml(item.price)}</div>` : ""}
-          ${item.weight ? `<div><b>Gewicht:</b> ${escapeHtml(item.weight)}</div>` : ""}
+          ${weight ? `<div><b>Gewicht:</b> ${weight}</div>` : ""}
         </div>
       </div>
 

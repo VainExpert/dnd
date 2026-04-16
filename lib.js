@@ -53,6 +53,22 @@ function formatWeight(weight){
   return [amount, unit].filter(Boolean).join(" ").trim();
 }
 
+function weightValue(weight){
+  if (weight == null || weight === "") return null;
+  if (typeof weight === "number") return Number.isFinite(weight) ? weight : null;
+  if (typeof weight === "string") {
+    const match = repairText(weight).trim().match(/^-?\d+(?:[.,]\d+)?/);
+    if (!match) return null;
+    const parsed = Number(match[0].replace(",", "."));
+    return Number.isFinite(parsed) ? parsed : null;
+  }
+  if (typeof weight !== "object") return null;
+
+  const rawAmount = weight.value != null ? weight.value : weight.amount;
+  const numericAmount = Number(rawAmount);
+  return Number.isFinite(numericAmount) ? numericAmount : null;
+}
+
 function mapValue(value, entries){
   const raw = repairText(String(value ?? ""));
   const key = raw.trim().toLowerCase();
@@ -346,7 +362,8 @@ export function normalizeItem(raw){
     attunement_text: attText,
     attunement: attBool,
     price: formatPrice(raw.price),
-    weight: formatWeight(raw.weight)
+    weight: formatWeight(raw.weight),
+    weight_value: weightValue(raw.weight)
   };
 }
 

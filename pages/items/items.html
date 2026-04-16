@@ -59,7 +59,7 @@
   </div>
 
   <script type="module">
-    import { escapeHtml, loadIndex, loadMany, normalizeItem } from "../../lib.js";
+    import { escapeHtml, loadIndex, loadMany, normalizeItem } from "../../lib.js?v=2026-04-16-weight-fix";
 
     const grid = document.getElementById("grid");
     const qEl = document.getElementById("q");
@@ -68,6 +68,27 @@
 
     const files = await loadIndex("../../data/items/index.json");
     const items = (await loadMany("../../data/items", files)).map(normalizeItem);
+
+    function weightDisplay(item){
+      const weight = item.weight;
+      if (weight == null || weight === "") return "";
+      if (typeof weight === "number") return weight > 0 ? escapeHtml(String(weight)) : "";
+      if (typeof weight === "string") {
+        const trimmed = weight.trim();
+        const match = trimmed.match(/^-?\d+(?:[.,]\d+)?/);
+        if (!match) return escapeHtml(trimmed);
+        const numeric = Number(match[0].replace(",", "."));
+        return Number.isFinite(numeric) && numeric > 0 ? escapeHtml(trimmed) : "";
+      }
+      if (typeof weight === "object") {
+        const rawValue = weight.value ?? weight.amount;
+        const numeric = Number(rawValue);
+        if (!Number.isFinite(numeric) || numeric <= 0) return "";
+        const unit = String(weight.unit ?? "").trim();
+        return escapeHtml([String(rawValue), unit].filter(Boolean).join(" ").trim());
+      }
+      return "";
+    }
 
     const types = Array.from(new Set(items.map(i => i.type).filter(Boolean))).sort((a,b)=>a.localeCompare(b));
     for (const t of types){
@@ -91,9 +112,15 @@
       return t.length > n ? t.slice(0, n - 1) + "…" : t;
     }
 
+    function attunementDisplay(item){
+      const text = String(item.attunement_text ?? "").trim();
+      return text || "Ja";
+    }
+
     function card(i){
       const id = i.id || i.name || "";
       const href = `./item.html?id=${encodeURIComponent(id)}`;
+      const weight = weightDisplay(i);
 
       return `
         <div class="mini-card">
@@ -101,9 +128,9 @@
             <div class="mini-title"><a href="${href}">${escapeHtml(i.name)}</a></div>
             <div class="mini-sub">${escapeHtml(i.type ?? "Item")}${i.rarity ? " • " + escapeHtml(i.rarity) : ""}</div>
             <div class="pillbar">
-              ${i.requires_attunement ? `<span class="pill"><b>Bindung</b> ja</span>` : ""}
+              ${i.requires_attunement ? `<span class="pill"><b>Bindung</b> ${escapeHtml(attunementDisplay(i))}</span>` : ""}
               ${i.price ? `<span class="pill"><b>Preis</b> ${escapeHtml(i.price)}</span>` : ""}
-              ${i.weight ? `<span class="pill"><b>Gewicht</b> ${escapeHtml(i.weight)}</span>` : ""}
+              ${weight ? `<span class="pill"><b>Gewicht</b> ${weight}</span>` : ""}
             </div>
           </div>
           <div class="mini-body">

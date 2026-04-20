@@ -1,6 +1,6 @@
 {
   "id": "arkaner-fokus",
-  "type": "item",
+  "type": "Gegenstand",
   "name": "Arkaner Fokus",
   "vendors": [
     "Ishmar's Magisches Allerlei",
@@ -14,7 +14,7 @@
   ],
   "rules_version": "2024",
   "source": "PHB'24",
-  "item_category": "adventuring-gear",
+  "item_category": "Gegenstand",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",

@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Händler-Sortimente</title>
+  <link rel="stylesheet" href="../../styles.css"/>
+  <style>
+    .tool-row{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+    .btn{
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--rule);
+      background:#0b0e16;
+      color:var(--text);
+      cursor:pointer;
+    }
+    .btn:hover{ border-color: rgba(225,91,79,.35); background: rgba(225,91,79,.12); }
+    .vendor-grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap:12px;
+      margin-top:14px;
+    }
+    .vendor-actions{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      align-items:center;
+      margin-top:10px;
+    }
+    .vendor-list{ margin:0; padding-left:18px; }
+    .vendor-list li + li{ margin-top:8px; }
+    .empty-note{ color:var(--muted); font-size:12px; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Händler-Sortimente</div>
+      <div class="subtitle">Zufällige Auslagen aus den vorhandenen Gegenständen je Händler</div>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Händler suchen..."/>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="nav">
+        <div class="group">
+          <div class="group-title">Start</div>
+          <a href="../../index.html">Startseite</a>
+          <a href="../../index.html#content/house-rules/index.md">Hausregeln</a>
+          <a href="../../index.html#content/safety/index.md">Sicherheit</a>
+          <a href="../../index.html#content/character-options/index.md">Charakteroptionen</a>
+          <a href="../../index.html#content/recaps/index.md">Rückblicke</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Werkzeuge</div>
+          <a href="../werkzeuge/tools.html">Zufallstabellen & Generatoren</a>
+          <a href="../werkzeuge/dice.html">Würfel</a>
+          <a href="../werkzeuge/units.html">Einheitenumrechner</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Sammlungen</div>
+          <a href="../bestiarium/bestiary.html">Bestiarium</a>
+          <a href="../zauber/spells.html">Zauber</a>
+          <a href="./items.html">Gegenstände</a>
+          <a href="./vendors.html" class="active">Händler-Sortimente</a>
+          <a href="../maps.html">Karten</a>
+          <a href="../spieler/pcs.html">Spieler</a>
+          <a href="../icons.html">Symbole</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="content" style="max-width:1200px;">
+        <div class="mini-box">
+          <div class="mini-box-title">Generator</div>
+          <div class="mini-box-text">
+            <div class="tool-row">
+              <label for="count"><b>Gegenstände pro Händler</b></label>
+              <input id="count" class="select" type="number" min="1" value="8" style="width:120px;"/>
+              <button id="generateAll" class="btn">Alle Sortimente neu würfeln</button>
+            </div>
+            <div class="tool-row" style="margin-top:10px;">
+              <label for="vendorSelect"><b>Einzelner Händler</b></label>
+              <select id="vendorSelect" class="select" style="min-width:260px;"></select>
+              <button id="generateOne" class="btn">Ausgewählten Händler würfeln</button>
+            </div>
+            <p class="empty-note" style="margin:10px 0 0;">
+              Jeder Händler zieht ohne Duplikate aus seinem eigenen verfügbaren Sortiment.
+            </p>
+          </div>
+        </div>
+
+        <div id="summary" class="mini" style="margin-top:14px;"></div>
+        <div id="vendors" class="vendor-grid"></div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany, normalizeItem } from "../../lib.js?v=2026-04-20-vendor-generator";
+
+    const qEl = document.getElementById("q");
+    const countEl = document.getElementById("count");
+    const generateAllBtn = document.getElementById("generateAll");
+    const vendorSelectEl = document.getElementById("vendorSelect");
+    const generateOneBtn = document.getElementById("generateOne");
+    const summaryEl = document.getElementById("summary");
+    const vendorsEl = document.getElementById("vendors");
+
+    const files = await loadIndex("../../data/items/index.json");
+    const items = (await loadMany("../../data/items", files)).map(normalizeItem);
+
+    function itemHref(item){
+      const id = item.id || item.name || "";
+      return `./item.html?id=${encodeURIComponent(id)}`;
+    }
+
+    function itemMeta(item){
+      return [item.type, item.rarity, item.price].filter(Boolean).map(escapeHtml).join(" • ");
+    }
+
+    function shuffle(list){
+      const copy = [...list];
+      for (let i = copy.length - 1; i > 0; i--){
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    const vendorEntries = Array.from(
+      items.reduce((map, item) => {
+        for (const vendor of item.vendors ?? []){
+          if (!map.has(vendor)) map.set(vendor, []);
+          map.get(vendor).push(item);
+        }
+        return map;
+      }, new Map())
+    )
+      .map(([vendor, stock]) => ({
+        vendor,
+        stock: stock.slice().sort((a, b) => String(a.name ?? "").localeCompare(String(b.name ?? ""))),
+        current: []
+      }))
+      .sort((a, b) => a.vendor.localeCompare(b.vendor));
+
+    for (const entry of vendorEntries){
+      const opt = document.createElement("option");
+      opt.value = entry.vendor;
+      opt.textContent = entry.vendor;
+      vendorSelectEl.appendChild(opt);
+    }
+
+    function desiredCount(){
+      return Math.max(1, Number(countEl.value || 1));
+    }
+
+    function rollVendor(entry){
+      const take = Math.min(desiredCount(), entry.stock.length);
+      entry.current = shuffle(entry.stock)
+        .slice(0, take)
+        .sort((a, b) => String(a.name ?? "").localeCompare(String(b.name ?? "")));
+    }
+
+    function rollAll(){
+      for (const entry of vendorEntries) rollVendor(entry);
+    }
+
+    function render(){
+      const query = String(qEl.value || "").trim().toLowerCase();
+      const visibleEntries = vendorEntries.filter(entry => {
+        if (!query) return true;
+        const haystack = [
+          entry.vendor,
+          ...entry.stock.map(item => [item.name, item.type, item.rarity, ...(item.tags ?? [])].join(" "))
+        ].join(" ").toLowerCase();
+        return haystack.includes(query);
+      });
+
+      summaryEl.textContent = `${visibleEntries.length} Händler gefunden`;
+
+      vendorsEl.innerHTML = visibleEntries.map(entry => `
+        <div class="mini-card">
+          <div class="mini-head">
+            <div class="mini-title">${escapeHtml(entry.vendor)}</div>
+            <div class="mini-sub">${escapeHtml(String(entry.stock.length))} mögliche Gegenstände</div>
+            <div class="pillbar">
+              <span class="pill"><b>Sortiment</b> ${escapeHtml(String(entry.current.length || Math.min(desiredCount(), entry.stock.length)))}</span>
+            </div>
+          </div>
+          <div class="mini-body">
+            <div class="mini-box">
+              <div class="mini-box-title">Aktuelle Auslage</div>
+              <div class="mini-box-text">
+                ${entry.current.length ? `
+                  <ul class="vendor-list">
+                    ${entry.current.map(item => `
+                      <li>
+                        <a href="${itemHref(item)}"><b>${escapeHtml(item.name)}</b></a>
+                        ${itemMeta(item) ? `<div class="muted">${itemMeta(item)}</div>` : ""}
+                      </li>
+                    `).join("")}
+                  </ul>
+                ` : `<div class="empty-note">Noch nicht gewürfelt.</div>`}
+              </div>
+            </div>
+            <div class="vendor-actions">
+              <button class="btn" data-action="reroll" data-vendor="${escapeHtml(entry.vendor)}">Neu würfeln</button>
+            </div>
+          </div>
+        </div>
+      `).join("");
+
+      for (const button of vendorsEl.querySelectorAll("[data-action='reroll']")){
+        button.addEventListener("click", () => {
+          const vendorName = button.getAttribute("data-vendor");
+          const entry = vendorEntries.find(candidate => candidate.vendor === vendorName);
+          if (!entry) return;
+          rollVendor(entry);
+          render();
+        });
+      }
+    }
+
+    countEl.addEventListener("input", () => {
+      rollAll();
+      render();
+    });
+    qEl.addEventListener("input", render);
+    generateAllBtn.addEventListener("click", () => {
+      rollAll();
+      render();
+    });
+    generateOneBtn.addEventListener("click", () => {
+      const entry = vendorEntries.find(candidate => candidate.vendor === vendorSelectEl.value);
+      if (!entry) return;
+      rollVendor(entry);
+      render();
+      const cardTitle = Array.from(vendorsEl.querySelectorAll(".mini-title"))
+        .find(node => node.textContent === entry.vendor);
+      cardTitle?.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+
+    rollAll();
+    render();
+  </script>
+</body>
+</html>

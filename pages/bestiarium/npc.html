@@ -28,8 +28,6 @@
       fmtSigned,
       mod,
       linkifyRefs,
-      normalizeNpc,
-      slugify,
       entityLinkHtml,
       normalizeEntityRef
     } from "../../lib.js";
@@ -51,30 +49,91 @@
       return r.json();
     }
 
+    function slugifyLocal(value){
+      return String(value ?? "")
+        .trim()
+        .toLowerCase()
+        .normalize("NFKD")
+        .replace(/\u00df/g, "ss")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/['"`´’]/g, "")
+        .replace(/&/g, " und ")
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+    }
+
+    function normalizeNpcData(raw){
+      if (!raw || typeof raw !== "object") return raw;
+
+      const abilities = {};
+      for (const key of ["str", "dex", "con", "int", "wis", "cha"]) {
+        const value = raw.abilities?.[key];
+        const score = typeof value === "object" ? Number(value?.score) : Number(value);
+        if (Number.isFinite(score)) abilities[key] = score;
+      }
+
+      const languages = raw.languages && typeof raw.languages === "object" && !Array.isArray(raw.languages)
+        ? [...(raw.languages.speaks || []), ...(raw.languages.understands || []).map(x => `versteht ${x}`)]
+        : (Array.isArray(raw.languages) ? raw.languages : (raw.languages ? [String(raw.languages)] : []));
+
+      return {
+        ...raw,
+        id: raw.id || slugifyLocal(raw.name),
+        name: raw.name || "NSC",
+        race: raw.subtype || raw.creature_type || raw.race || "",
+        role: raw.role || "",
+        faction: raw.faction || "",
+        type: raw.creature_type || raw.type || "",
+        alignment: raw.alignment || "",
+        ac: raw.armor_class?.value ?? raw.ac ?? null,
+        ac_note: raw.armor_class?.display ?? raw.ac_note ?? "",
+        hp: raw.hit_points?.average ?? raw.hp?.average ?? raw.hp ?? null,
+        hp_formula: raw.hit_points?.formula ?? raw.hp?.formula ?? "",
+        speed: raw.speed || {},
+        abilities,
+        saving_throws: raw.saving_throws || {},
+        skills: raw.skills || {},
+        senses: raw.senses || {},
+        languages,
+        challenge: {
+          cr: String(raw.challenge_rating ?? raw.challenge?.cr ?? raw.challenge ?? ""),
+          proficiency_bonus: raw.proficiency_bonus ?? raw.challenge?.proficiency_bonus ?? null
+        },
+        xp: raw.xp ?? "",
+        notes: raw.notes || "",
+        traits: Array.isArray(raw.traits) ? raw.traits.map(t => ({ name: t.name, text: t.text ?? t.value ?? "" })) : [],
+        actions: Array.isArray(raw.actions) ? raw.actions.map(a => ({ name: a.name, text: a.text ?? a.value ?? a.type ?? "" })) : [],
+        bonus_actions: Array.isArray(raw.bonus_actions) ? raw.bonus_actions.map(a => ({ name: a.name, text: a.text ?? a.value ?? a.type ?? "" })) : [],
+        reactions: Array.isArray(raw.reactions) ? raw.reactions.map(a => ({ name: a.name, text: a.text ?? a.value ?? a.type ?? "" })) : [],
+        legendary_actions: Array.isArray(raw.legendary_actions) ? raw.legendary_actions.map(a => ({ name: a.name, text: a.text ?? a.value ?? a.type ?? "" })) : [],
+        spellcasting: Array.isArray(raw.spellcasting) ? raw.spellcasting : []
+      };
+    }
+
     async function loadNpc(idParam){
       const rawId = String(idParam || "").trim();
       const candidates = Array.from(new Set([
         rawId,
-        slugify(rawId),
+        slugifyLocal(rawId),
         rawId.toLowerCase()
       ].filter(Boolean)));
 
       for (const candidate of candidates) {
         try {
           const raw = await fetchJson(`../../data/monsters/npc/${encodeURIComponent(candidate)}.json`);
-          return normalizeNpc(raw);
+          return normalizeNpcData(raw);
         } catch {}
       }
 
       const files = await loadIndex("../../data/monsters/npc/index.json").catch(() => []);
-      const npcs = (await loadMany("../../data/monsters/npc", files).catch(() => [])).map(normalizeNpc);
+      const npcs = (await loadMany("../../data/monsters/npc", files).catch(() => [])).map(normalizeNpcData);
       const lowered = rawId.toLowerCase();
-      const slug = slugify(rawId);
+      const slug = slugifyLocal(rawId);
 
       return (
         npcs.find(n => String(n.id || "").toLowerCase() === lowered) ||
         npcs.find(n => String(n.name || "").toLowerCase() === lowered) ||
-        npcs.find(n => slugify(n.id || n.name || "") === slug) ||
+        npcs.find(n => slugifyLocal(n.id || n.name || "") === slug) ||
         null
       );
     }

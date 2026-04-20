@@ -222,8 +222,11 @@ Vorteil: 2d20kh1+5"></textarea>
   </div>
 </main>
 
+<script src="../../data/tables/tables-global.js?v=2"></script>
+
 <script type="module">
   import { escapeHtml, normalizeTable, rollTableEntry } from "../../lib.js";
+  import { TABLE_FILES, TABLE_DATA_BY_FILE } from "../../data/tables/tables-data.js?v=2";
 
   // ---------------- Dice engine ----------------
   function randInt(min, max){
@@ -687,7 +690,7 @@ Vorteil: 2d20kh1+5"></textarea>
     const tableFile = p.get("table_file");
     if (tableFile){
       try{
-        const t = await fetchJson(`../../data/tables/${tableFile}`);
+        const t = TABLE_DATA_BY_FILE[tableFile] ?? await fetchJson(`../../data/tables/${tableFile}`);
         setActiveTableFromObject(t, tableFile);
         if (auto) rollTable();
       } catch {
@@ -732,10 +735,10 @@ Vorteil: 2d20kh1+5"></textarea>
 
   async function loadTablesIndex(){
     try{
-      const idx = await fetchJson("../../data/tables/index.json");
-      const files = idx.files || [];
+      const files = Array.isArray(TABLE_FILES) && TABLE_FILES.length ? TABLE_FILES : [];
       tableSel.innerHTML = `<option value="">(Tabelle wählen)</option>` + files.map(f => `<option value="${escapeHtml(f)}">${escapeHtml(f)}</option>`).join("");
       loadedTables = files;
+      if (!files.length) rollTableBtn.disabled = true;
     } catch {
       tableSel.innerHTML = `<option value="">(kein Tabellenindex)</option>`;
       rollTableBtn.disabled = true;
@@ -747,13 +750,20 @@ Vorteil: 2d20kh1+5"></textarea>
       if (!activeTable){
         const f = tableSel.value;
         if (!f) return;
-        activeTable = normalizeTable(await fetchJson(`../../data/tables/${f}`), f.replace(/\.json$/i, ""));
+        activeTable = normalizeTable(TABLE_DATA_BY_FILE[f] ?? await fetchJson(`../../data/tables/${f}`), f.replace(/\.json$/i, ""));
       }
       const r = rollTableEntry(activeTable);
       tableResult.innerHTML = `
         <div class="mini-box" style="margin:0;">
           <div class="mini-box-title">${escapeHtml(activeTable.name || "Tabelle")}${activeTable.dice ? ` (${escapeHtml(activeTable.dice)})` : ""}${r.roll!=null ? ` • Wurf ${escapeHtml(String(r.roll))}` : ""}</div>
-          <div class="mini-box-text">${escapeHtml(String(r.text))}</div>
+          <div class="mini-box-text">
+            <div>${escapeHtml(String(r.text))}</div>
+            ${Array.isArray(r.parts) && r.parts.length ? `
+              <ul class="cards-list">
+                ${r.parts.map(part => `<li><b>${escapeHtml(part.label)}:</b> ${escapeHtml(part.text)}${part.roll != null ? ` (${escapeHtml(String(part.roll))})` : ""}</li>`).join("")}
+              </ul>
+            ` : ""}
+          </div>
         </div>
       `;
     } catch (e){
@@ -765,7 +775,7 @@ Vorteil: 2d20kh1+5"></textarea>
     activeTable = null;
     if (tableSel.value){
       try{
-        const t = await fetchJson(`../../data/tables/${tableSel.value}`);
+        const t = TABLE_DATA_BY_FILE[tableSel.value] ?? await fetchJson(`../../data/tables/${tableSel.value}`);
         setActiveTableFromObject(t, tableSel.value);
       } catch {
         tableResult.innerHTML = `<div class="small">Tabelle konnte nicht geladen werden.</div>`;
@@ -777,6 +787,76 @@ Vorteil: 2d20kh1+5"></textarea>
   // init
   await loadTablesIndex();
   await loadExternalFromParams();
+</script>
+
+<script>
+  (function(){
+    const api = window.DND_TABLES;
+    const tableSel = document.getElementById("tableSel");
+    const rollTableBtn = document.getElementById("rollTableBtn");
+    const tableResult = document.getElementById("tableResult");
+    if (!api || !tableSel || !rollTableBtn || !tableResult) return;
+    if (tableSel.options.length > 1) return;
+
+    const tablesByFile = {};
+    const files = (api.files || []).slice();
+
+    tableSel.innerHTML = `<option value="">(Tabelle wählen)</option>`;
+    for (const file of files){
+      const opt = document.createElement("option");
+      opt.value = file;
+      opt.textContent = file;
+      tableSel.appendChild(opt);
+      tablesByFile[file] = api.normalizeTable(api.dataByFile[file], file.replace(/\.json$/i, ""));
+    }
+
+    let activeTable = null;
+
+    function setActiveTable(table, label){
+      activeTable = table;
+      tableResult.innerHTML = `<div class="small">Aktive Tabelle: <span class="mono">${api.escapeHtml(table?.name || label || "Tabelle")}</span></div>`;
+    }
+
+    function rollActiveTable(){
+      if (!activeTable && tableSel.value){
+        activeTable = tablesByFile[tableSel.value] || null;
+      }
+      if (!activeTable) return;
+      const rolled = api.rollTableEntry(activeTable);
+      tableResult.innerHTML = `
+        <div class="mini-box" style="margin:0;">
+          <div class="mini-box-title">${api.escapeHtml(activeTable.name || "Tabelle")}${activeTable.dice ? ` (${api.escapeHtml(activeTable.dice)})` : ""}${rolled.roll != null ? ` • Wurf ${api.escapeHtml(String(rolled.roll))}` : ""}</div>
+          <div class="mini-box-text">
+            <div>${api.escapeHtml(String(rolled.text))}</div>
+            ${Array.isArray(rolled.parts) && rolled.parts.length ? `
+              <ul class="cards-list">
+                ${rolled.parts.map(part => `<li><b>${api.escapeHtml(part.label)}:</b> ${api.escapeHtml(part.text)}${part.roll != null ? ` (${api.escapeHtml(String(part.roll))})` : ""}</li>`).join("")}
+              </ul>
+            ` : ""}
+          </div>
+        </div>
+      `;
+    }
+
+    tableSel.addEventListener("change", () => {
+      activeTable = null;
+      if (tableSel.value){
+        setActiveTable(tablesByFile[tableSel.value], tableSel.value);
+      } else {
+        tableResult.innerHTML = "";
+      }
+    });
+
+    rollTableBtn.addEventListener("click", rollActiveTable);
+
+    const params = new URLSearchParams(location.search);
+    const tableFile = params.get("table_file");
+    if (tableFile && tablesByFile[tableFile]){
+      tableSel.value = tableFile;
+      setActiveTable(tablesByFile[tableFile], tableFile);
+      if (params.get("auto") === "1") rollActiveTable();
+    }
+  })();
 </script>
 </body>
 </html>

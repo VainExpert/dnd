@@ -10,7 +10,7 @@
   <header class="topbar">
     <div class="brand">
       <div class="title" id="title">Gegenstand</div>
-      <div class="subtitle"><a href="./items.html">← Zurück zu allen Gegenständen</a> • <a href="../../index.html">Startseite</a></div>
+      <div class="subtitle"><a href="./items.html">← Zurück zu allen Gegenständen</a> • <a href="./vendors.html">Händler-Sortimente</a> • <a href="../../index.html">Startseite</a></div>
     </div>
   </header>
 
@@ -21,7 +21,7 @@
   </main>
 
   <script type="module">
-    import { escapeHtml, loadIndex, loadMany, normalizeItem } from "../../lib.js?v=2026-04-16-weight-fix";
+    import { escapeHtml, loadIndex, loadMany, normalizeItem } from "../../lib.js?v=2026-04-20-vendor-filter";
 
     const view = document.getElementById("view");
     const titleEl = document.getElementById("title");
@@ -73,6 +73,7 @@
     }
 
     const weight = weightDisplay(item);
+    const vendors = (item.vendors ?? []).map(escapeHtml).join(", ");
 
     const effectHtml = item.html
       ? `<div class="mini-box-text">${item.html}</div>`
@@ -88,6 +89,7 @@
           ${item.requires_attunement ? `<div><b>Bindung:</b> ${escapeHtml(attunementDisplay(item))}</div>` : ""}
           ${item.price ? `<div><b>Preis:</b> ${escapeHtml(item.price)}</div>` : ""}
           ${weight ? `<div><b>Gewicht:</b> ${weight}</div>` : ""}
+          ${vendors ? `<div><b>Händler:</b> ${vendors}</div>` : ""}
         </div>
       </div>
 

@@ -1,6 +1,6 @@
 {
   "id": "augen-der-bezauberung",
-  "type": "item",
+  "type": "Wundersamer Gegenstand",
   "name": "Augen der Bezauberung",
   "vendors": [
     "Ishmar's Magisches Allerlei",
@@ -9,7 +9,7 @@
   ],
   "rules_version": "2024",
   "source": "PHB'24",
-  "item_category": "wondrous-item",
+  "item_category": "Wundersamer Gegenstand",
   "rarity": "ungewöhnlich",
   "requires_attunement": true,
   "attunement_text": "",

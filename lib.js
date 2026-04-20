@@ -1,16 +1,23 @@
-const MOJIBAKE_RE = /(?:Ã.|Â.|â.|œ|ž)/;
+const MOJIBAKE_RE = /(?:\u00C3.|\u00C2.|\u00E2.|\u00C5.|\u00C6.|\u00E6.|\u0153|\u017E)/;
 const UTF8_DECODER = new TextDecoder("utf-8", { fatal: true });
 
 export function repairText(value){
-  const input = String(value ?? "");
-  if (!MOJIBAKE_RE.test(input)) return input;
+  let input = String(value ?? "");
 
-  try {
-    const bytes = Uint8Array.from(input, ch => ch.charCodeAt(0) & 0xff);
-    return UTF8_DECODER.decode(bytes);
-  } catch {
-    return input;
+  for (let i = 0; i < 3; i++){
+    if (!MOJIBAKE_RE.test(input)) return input;
+
+    try {
+      const bytes = Uint8Array.from(input, ch => ch.charCodeAt(0) & 0xff);
+      const repaired = UTF8_DECODER.decode(bytes);
+      if (repaired === input) return input;
+      input = repaired;
+    } catch {
+      return input;
+    }
   }
+
+  return input;
 }
 
 function deepRepair(value){
@@ -71,6 +78,44 @@ function formatTableValue(value){
   }
 
   return repairText(String(value ?? ""));
+}
+
+function getTablePartCount(table){
+  const headerCount = Array.isArray(table.header) ? table.header.length : 0;
+  const entryCount = [...(table.rangeEntries || []), ...(table.entries || [])]
+    .reduce((max, entry) => {
+      const value = entry?.value ?? entry;
+      return Array.isArray(value) ? Math.max(max, value.length) : max;
+    }, 0);
+
+  return Math.max(headerCount, entryCount, 1);
+}
+
+function getTablePartLabel(table, index){
+  if (Array.isArray(table.header) && table.header[index] != null) {
+    return repairText(String(table.header[index]));
+  }
+  if (!Array.isArray(table.header) && typeof table.header === "string" && index === 0) {
+    return repairText(table.header);
+  }
+  return `Teil ${index + 1}`;
+}
+
+function rollTableValue(table){
+  if (table.rangeEntries.length){
+    const dice = parseTableDiceSpec(table.dice);
+    const max = Math.max(...table.rangeEntries.map(entry => entry.max));
+    const roll = dice ? randomInt(1, dice.count * dice.sides) : randomInt(1, max);
+    const hit = table.rangeEntries.find(entry => roll >= entry.min && roll <= entry.max) ?? table.rangeEntries[0];
+    return { roll, value: hit?.value ?? null };
+  }
+
+  if (table.entries.length){
+    const value = table.entries[randomInt(0, table.entries.length - 1)];
+    return { roll: null, value };
+  }
+
+  return { roll: null, value: null };
 }
 
 function trimTrailingZeros(value){
@@ -136,7 +181,6 @@ function mapValue(value, entries){
 }
 
 export function escapeHtml(s){
-  console.log(s)
   return repairText(String(s ?? ""))
     .replaceAll("&","&amp;")
     .replaceAll("<","&lt;")
@@ -221,28 +265,41 @@ export function rollTableEntry(rawTable){
   const table = normalizeTable(rawTable);
   if (!table) return { roll: null, text: "(keine Tabelle)", value: null };
 
-  if (table.rangeEntries.length){
-    const dice = parseTableDiceSpec(table.dice);
-    const max = Math.max(...table.rangeEntries.map(entry => entry.max));
-    const roll = dice ? randomInt(1, dice.count * dice.sides) : randomInt(1, max);
-    const hit = table.rangeEntries.find(entry => roll >= entry.min && roll <= entry.max) ?? table.rangeEntries[0];
-    return {
-      roll,
-      text: formatTableValue(hit?.value),
-      value: hit?.value ?? null
-    };
-  }
+  if (table.parts){
+    const partCount = getTablePartCount(table);
+    const parts = Array.from({ length: partCount }, (_, index) => {
+      const rolled = rollTableValue(table);
+      const rawValue = Array.isArray(rolled.value)
+        ? (rolled.value[index] ?? rolled.value[rolled.value.length - 1] ?? "")
+        : rolled.value;
 
-  if (table.entries.length){
-    const value = table.entries[randomInt(0, table.entries.length - 1)];
+      return {
+        index,
+        label: getTablePartLabel(table, index),
+        roll: rolled.roll,
+        text: formatTableValue(rawValue),
+        value: rawValue
+      };
+    });
+
     return {
       roll: null,
-      text: formatTableValue(value),
-      value
+      text: formatTableValue(parts.map(part => part.text).filter(Boolean)),
+      value: parts.map(part => part.value),
+      parts
     };
   }
 
-  return { roll: null, text: "(keine Einträge)", value: null };
+  const rolled = rollTableValue(table);
+  if (rolled.value != null) {
+    return {
+      roll: rolled.roll,
+      text: formatTableValue(rolled.value),
+      value: rolled.value
+    };
+  }
+
+  return { roll: null, text: "(keine Eintr?ge)", value: null };
 }
 
 export function mod(score){ return Math.floor((Number(score) - 10) / 2); }

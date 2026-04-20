@@ -1,6 +1,6 @@
 {
   "id": "armbrustbolzen-schachtel",
-  "type": "item",
+  "type": "Waffe",
   "name": "Armbrustbolzen-Schachtel",
   "vendors": [
     "Schmied",
@@ -12,7 +12,7 @@
   ],
   "rules_version": "2024",
   "source": "PHB'24",
-  "item_category": "ammunition",
+  "item_category": "Waffe",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",

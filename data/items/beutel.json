@@ -1,6 +1,6 @@
 {
   "id": "beutel",
-  "type": "item",
+  "type": "Behälter",
   "name": "Beutel",
   "vendors": [
     "Ishmar's Magisches Allerlei",
@@ -15,7 +15,7 @@
   ],
   "rules_version": "2024",
   "source": "PHB'24",
-  "item_category": "wondrous-item",
+  "item_category": "Behälter",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",

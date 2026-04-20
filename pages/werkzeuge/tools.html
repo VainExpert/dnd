@@ -190,18 +190,19 @@
     </div>
   </main>
 
+  <script src="../../data/tables/tables-global.js?v=2"></script>
+
   <script type="module">
     import { loadIndex, loadMany, escapeHtml, normalizeTable, rollTableEntry } from "../../lib.js";
+    import { TABLE_FILES, TABLE_DATA_BY_FILE } from "../../data/tables/tables-data.js?v=2";
 
     // ---------------- Random Tables ----------------
     const tableSel = document.getElementById("table");
     const rollBtn = document.getElementById("roll");
     const resultEl = document.getElementById("result");
 
-    const tFiles = await loadIndex("../../data/tables/index.json");
-    const tableObjects = await loadMany("../../data/tables", tFiles);
-    const tables = tableObjects
-      .map((table, index) => normalizeTable(table, tFiles[index]?.replace(/\.json$/i, "")))
+    const tables = TABLE_FILES
+      .map(file => normalizeTable(TABLE_DATA_BY_FILE[file], file.replace(/\.json$/i, "")))
       .filter(Boolean);
 
     for (const t of tables){
@@ -209,6 +210,10 @@
       opt.value = t.id || t.name;
       opt.textContent = t.name;
       tableSel.appendChild(opt);
+    }
+
+    function pick(arr){
+      return arr[Math.floor(Math.random() * arr.length)];
     }
 
     function roll(){
@@ -222,7 +227,14 @@
       resultEl.innerHTML = `
         <div class="mini-box">
           <div class="mini-box-title">${escapeHtml(t.name)}${t.dice ? " ("+escapeHtml(t.dice)+")" : ""}${r.roll != null ? " • Wurf " + escapeHtml(String(r.roll)) : ""}</div>
-          <div class="mini-box-text">${escapeHtml(r.text)}</div>
+          <div class="mini-box-text">
+            <div>${escapeHtml(r.text)}</div>
+            ${Array.isArray(r.parts) && r.parts.length ? `
+              <ul class="cards-list">
+                ${r.parts.map(part => `<li><b>${escapeHtml(part.label)}:</b> ${escapeHtml(part.text)}${part.roll != null ? ` (${escapeHtml(String(part.roll))})` : ""}</li>`).join("")}
+              </ul>
+            ` : ""}
+          </div>
         </div>
       `;
     }
@@ -235,8 +247,14 @@
     const genBtn = document.getElementById("gen");
     const encEl = document.getElementById("enc");
 
-    const mFiles = await loadIndex("../../data/monsters/index.json");
-    const monsters = await loadMany("../../data/monsters", mFiles);
+    let monsters = [];
+    try{
+      const mFiles = await loadIndex("../../data/monsters/index.json");
+      monsters = await loadMany("../../data/monsters", mFiles);
+    } catch {
+      encEl.innerHTML = `<p>Begegnungen konnten nicht geladen werden.</p>`;
+      genBtn.disabled = true;
+    }
 
     function getMonsterId(m){
       return m.id || m.slug || m.name || "";
@@ -424,6 +442,54 @@
     drawBtn.addEventListener("click", drawCards);
 
     resetDeck();
+  </script>
+
+  <script>
+    (function(){
+      const api = window.DND_TABLES;
+      const tableSel = document.getElementById("table");
+      const rollBtn = document.getElementById("roll");
+      const resultEl = document.getElementById("result");
+      if (!api || !tableSel || !rollBtn || !resultEl) return;
+      if (tableSel.options.length > 0) return;
+
+      const tables = (api.files || [])
+        .map(file => api.normalizeTable(api.dataByFile[file], file.replace(/\.json$/i, "")))
+        .filter(Boolean);
+
+      for (const table of tables){
+        const opt = document.createElement("option");
+        opt.value = table.id || table.name;
+        opt.textContent = table.name;
+        tableSel.appendChild(opt);
+      }
+
+      function render(){
+        const selected = tableSel.value;
+        const table = tables.find(entry => (entry.id || entry.name) === selected);
+        if (!table){
+          resultEl.innerHTML = "<p>Keine Einträge.</p>";
+          return;
+        }
+        const rolled = api.rollTableEntry(table);
+        resultEl.innerHTML = `
+          <div class="mini-box">
+            <div class="mini-box-title">${api.escapeHtml(table.name)}${table.dice ? ` (${api.escapeHtml(table.dice)})` : ""}${rolled.roll != null ? ` • Wurf ${api.escapeHtml(String(rolled.roll))}` : ""}</div>
+            <div class="mini-box-text">
+              <div>${api.escapeHtml(rolled.text)}</div>
+              ${Array.isArray(rolled.parts) && rolled.parts.length ? `
+                <ul class="cards-list">
+                  ${rolled.parts.map(part => `<li><b>${api.escapeHtml(part.label)}:</b> ${api.escapeHtml(part.text)}${part.roll != null ? ` (${api.escapeHtml(String(part.roll))})` : ""}</li>`).join("")}
+                </ul>
+              ` : ""}
+            </div>
+          </div>
+        `;
+      }
+
+      rollBtn.addEventListener("click", render);
+      render();
+    })();
   </script>
 </body>
 </html>

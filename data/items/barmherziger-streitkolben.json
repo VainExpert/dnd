@@ -1,6 +1,6 @@
 {
   "id": "bamherziger-streitkolben",
-  "type": "item",
+  "type": "Waffe",
   "name": "Bamherziger Streitkolben",
   "vendors": [
     "Ishmar's Magisches Allerlei",
@@ -15,7 +15,7 @@
   ],
   "rules_version": "2024",
   "source": "PHB'24",
-  "item_category": "weapon",
+  "item_category": "Waffe",
   "rarity": "gewöhnlich",
   "requires_attunement": false,
   "attunement_text": "",

@@ -57,10 +57,56 @@
   </div>
 
   <script type="module">
-    import { escapeHtml, loadIndex, loadMany, fmtSigned, mod, normalizeNpc } from "../../lib.js";
+    import { escapeHtml, loadIndex, loadMany, fmtSigned, mod } from "../../lib.js";
 
     const grid = document.getElementById("grid");
     const qEl = document.getElementById("q");
+
+    function normalizeNpcData(raw){
+      if (!raw || typeof raw !== "object") return raw;
+
+      const abilities = {};
+      for (const key of ["str", "dex", "con", "int", "wis", "cha"]) {
+        const value = raw.abilities?.[key];
+        const score = typeof value === "object" ? Number(value?.score) : Number(value);
+        if (Number.isFinite(score)) abilities[key] = score;
+      }
+
+      const languages = raw.languages && typeof raw.languages === "object" && !Array.isArray(raw.languages)
+        ? [...(raw.languages.speaks || []), ...(raw.languages.understands || []).map(x => `versteht ${x}`)]
+        : (Array.isArray(raw.languages) ? raw.languages : (raw.languages ? [String(raw.languages)] : []));
+
+      return {
+        ...raw,
+        id: raw.id || raw.name || "",
+        name: raw.name || "NSC",
+        race: raw.subtype || raw.creature_type || raw.race || "",
+        role: raw.role || "",
+        faction: raw.faction || "",
+        type: raw.creature_type || raw.type || "",
+        alignment: raw.alignment || "",
+        ac: raw.armor_class?.value ?? raw.ac ?? null,
+        ac_note: raw.armor_class?.display ?? raw.ac_note ?? "",
+        hp: raw.hit_points?.average ?? raw.hp?.average ?? raw.hp ?? null,
+        hp_formula: raw.hit_points?.formula ?? raw.hp?.formula ?? "",
+        speed: raw.speed || {},
+        abilities,
+        saving_throws: raw.saving_throws || {},
+        skills: raw.skills || {},
+        senses: raw.senses || {},
+        languages,
+        challenge: {
+          cr: String(raw.challenge_rating ?? raw.challenge?.cr ?? raw.challenge ?? ""),
+          proficiency_bonus: raw.proficiency_bonus ?? raw.challenge?.proficiency_bonus ?? null
+        },
+        xp: raw.xp ?? "",
+        notes: raw.notes || "",
+        traits: Array.isArray(raw.traits) ? raw.traits.map(t => ({ name: t.name, text: t.text ?? t.value ?? "" })) : [],
+        actions: Array.isArray(raw.actions) ? raw.actions.map(a => ({ name: a.name, text: a.text ?? a.value ?? a.type ?? "" })) : [],
+        bonus_actions: Array.isArray(raw.bonus_actions) ? raw.bonus_actions.map(a => ({ name: a.name, text: a.text ?? a.value ?? a.type ?? "" })) : [],
+        reactions: Array.isArray(raw.reactions) ? raw.reactions.map(a => ({ name: a.name, text: a.text ?? a.value ?? a.type ?? "" })) : [],
+      };
+    }
 
     function formatList(value){
       if (!value) return "";
@@ -160,7 +206,7 @@
     }
 
     const files = await loadIndex("../../data/monsters/npc/index.json");
-    const npcs = (await loadMany("../../data/monsters/npc", files)).map(normalizeNpc);
+    const npcs = (await loadMany("../../data/monsters/npc", files)).map(normalizeNpcData);
 
     function render(){
       const q = (qEl.value || "").trim().toLowerCase();

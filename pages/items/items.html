@@ -40,6 +40,7 @@
           <a href="../bestiarium/bestiary.html">Bestiarium</a>
           <a href="../zauber/spells.html">Zauber</a>
           <a href="./items.html" class="active">Gegenstände</a>
+          <a href="./vendors.html">Händler-Sortimente</a>
           <a href="../maps.html">Karten</a>
           <a href="../spieler/pcs.html">Spieler</a>
           <a href="../icons.html">Symbole</a>
@@ -52,6 +53,7 @@
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
           <select id="type" class="select"><option value="">Alle Typen</option></select>
           <select id="rarity" class="select"><option value="">Alle Seltenheiten</option></select>
+          <select id="vendor" class="select"><option value="">Alle Händler</option></select>
         </div>
         <div id="grid" class="card-grid"></div>
       </div>
@@ -59,12 +61,13 @@
   </div>
 
   <script type="module">
-    import { escapeHtml, loadIndex, loadMany, normalizeItem } from "../../lib.js?v=2026-04-16-weight-fix";
+    import { escapeHtml, loadIndex, loadMany, normalizeItem } from "../../lib.js?v=2026-04-20-vendor-filter";
 
     const grid = document.getElementById("grid");
     const qEl = document.getElementById("q");
     const typeEl = document.getElementById("type");
     const rarityEl = document.getElementById("rarity");
+    const vendorEl = document.getElementById("vendor");
 
     const files = await loadIndex("../../data/items/index.json");
     const items = (await loadMany("../../data/items", files)).map(normalizeItem);
@@ -90,7 +93,7 @@
       return "";
     }
 
-    const types = Array.from(new Set(items.map(i => i.type).filter(Boolean))).sort((a,b)=>a.localeCompare(b));
+    const types = Array.from(new Set(items.map(i => i.type).filter(Boolean))).sort((a, b) => a.localeCompare(b));
     for (const t of types){
       const opt = document.createElement("option");
       opt.value = t;
@@ -98,12 +101,20 @@
       typeEl.appendChild(opt);
     }
 
-    const rarities = Array.from(new Set(items.map(i => i.rarity).filter(Boolean))).sort((a,b)=>a.localeCompare(b));
+    const rarities = Array.from(new Set(items.map(i => i.rarity).filter(Boolean))).sort((a, b) => a.localeCompare(b));
     for (const r of rarities){
       const opt = document.createElement("option");
       opt.value = r;
       opt.textContent = r;
       rarityEl.appendChild(opt);
+    }
+
+    const vendors = Array.from(new Set(items.flatMap(i => i.vendors ?? []).filter(Boolean))).sort((a, b) => a.localeCompare(b));
+    for (const vendor of vendors){
+      const opt = document.createElement("option");
+      opt.value = vendor;
+      opt.textContent = vendor;
+      vendorEl.appendChild(opt);
     }
 
     function excerpt(s, n = 220){
@@ -117,10 +128,18 @@
       return text || "Ja";
     }
 
+    function vendorDisplay(item){
+      const vendors = item.vendors ?? [];
+      if (!vendors.length) return "";
+      if (vendors.length === 1) return escapeHtml(vendors[0]);
+      return escapeHtml(`${vendors[0]} +${vendors.length - 1}`);
+    }
+
     function card(i){
       const id = i.id || i.name || "";
       const href = `./item.html?id=${encodeURIComponent(id)}`;
       const weight = weightDisplay(i);
+      const vendor = vendorDisplay(i);
 
       return `
         <div class="mini-card">
@@ -131,6 +150,7 @@
               ${i.requires_attunement ? `<span class="pill"><b>Bindung</b> ${escapeHtml(attunementDisplay(i))}</span>` : ""}
               ${i.price ? `<span class="pill"><b>Preis</b> ${escapeHtml(i.price)}</span>` : ""}
               ${weight ? `<span class="pill"><b>Gewicht</b> ${weight}</span>` : ""}
+              ${vendor ? `<span class="pill"><b>Händler</b> ${vendor}</span>` : ""}
             </div>
           </div>
           <div class="mini-body">
@@ -141,11 +161,12 @@
       `;
     }
 
-    function matches(i, q, type, rarity){
-      const hay = [i.id, i.name, i.type, i.rarity, i.text, i.source].join(" ").toLowerCase();
+    function matches(i, q, type, rarity, vendor){
+      const hay = [i.id, i.name, i.type, i.rarity, i.text, i.source, ...(i.vendors ?? [])].join(" ").toLowerCase();
       if (q && !hay.includes(q)) return false;
       if (type && (i.type ?? "") !== type) return false;
       if (rarity && (i.rarity ?? "") !== rarity) return false;
+      if (vendor && !(i.vendors ?? []).includes(vendor)) return false;
       return true;
     }
 
@@ -153,14 +174,16 @@
       const q = (qEl.value || "").trim().toLowerCase();
       const t = typeEl.value;
       const r = rarityEl.value;
+      const v = vendorEl.value;
 
-      const filtered = items.filter(i => matches(i, q, t, r));
+      const filtered = items.filter(i => matches(i, q, t, r, v));
       grid.innerHTML = filtered.map(card).join("") || `<p>Keine Treffer.</p>`;
     }
 
     qEl.addEventListener("input", render);
     typeEl.addEventListener("change", render);
     rarityEl.addEventListener("change", render);
+    vendorEl.addEventListener("change", render);
     render();
   </script>
 </body>

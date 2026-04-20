@@ -1,6 +1,6 @@
 {
   "id": "baba-yagas-tanzender-besen",
-  "type": "item",
+  "type": "Wundersamer Gegenstand",
   "name": "Baba Yaga's tanzender Besen",
   "vendors": [
     "Ishmar's Magisches Allerlei",
@@ -11,7 +11,7 @@
   ],
   "rules_version": "2024",
   "source": "PHB'24",
-  "item_category": "wondrous-item",
+  "item_category": "Wundersamer Gegenstand",
   "rarity": "ungewöhnlich",
   "requires_attunement": true,
   "attunement_text": "",

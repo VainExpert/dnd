@@ -1,6 +1,6 @@
 {
   "id": "magicitem-armschienen-des-bogenschuetzen",
-  "type": "item",
+  "type": "Wundersamer Gegenstand",
   "name": "Armschienen des Bogenschützen ",
   "vendors": [
     "Ishmar's Magisches Allerlei",
@@ -16,7 +16,7 @@
   ],
   "rules_version": "2024",
   "source": "PHB'24",
-  "item_category": "weapon",
+  "item_category": "Wundersamer Gegenstand",
   "rarity": "ungewöhnlich",
   "requires_attunement": true,
   "attunement_text": "",

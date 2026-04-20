@@ -1,6 +1,6 @@
 {
   "id": "beschlagene-lederruestung",
-  "type": "item",
+  "type": "Rüstung",
   "name": "Beschlagene Lederrüstung",
   "vendors": [
     "Schmied",
@@ -10,7 +10,7 @@
   ],
   "rules_version": "2024",
   "source": "PHB'24",
-  "item_category": "armor",
+  "item_category": "Rüstung",
   "rarity": "alltäglich",
   "requires_attunement": false,
   "attunement_text": "",

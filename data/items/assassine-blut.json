@@ -1,6 +1,6 @@
 {
   "id": "assassinen-blut",
-  "type": "item",
+  "type": "Gegenstand",
   "name": "Assassinen Blut",
   "vendors": [
     "Ishmar's Magisches Allerlei",
@@ -12,7 +12,7 @@
   ],
   "rules_version": "2024",
   "source": "PHB'24",
-  "item_category": "wondrous-item",
+  "item_category": "Gegenstand",
   "rarity": "ungewöhnlich",
   "requires_attunement": false,
   "attunement_text": "",

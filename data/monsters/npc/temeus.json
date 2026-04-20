@@ -1,66 +1,66 @@
 {
     "id": "npc-temeus",
     "src": "homebrew",
-    "name": "Temeus (Schwarzer Drachenblütiger, Leiter der Geheimpolizei)",
+    "name": "Temeus",
     "size": "Mittelgroß",
     "type": "Humanoid (Drachenblütiger)",
     "alignment": "gesetztreu-gut",
     "armor-class": { "value": "18", "info": "" },
     "hit-points": { "value": "58", "formula": "9W8+18" },
     "speeds": { "walk": "9 m" },
-    "attributes": [
-      { "class": "str", "value": "14", "modifier": "+2" },
-      { "class": "dex", "value": "16", "modifier": "+3" },
-      { "class": "con", "value": "14", "modifier": "+2" },
-      { "class": "int", "value": "12", "modifier": "+1" },
-      { "class": "wis", "value": "12", "modifier": "+1" },
-      { "class": "cha", "value": "16", "modifier": "+3" }
-    ],
-    "saving-throws": ["CON +4", "WIS +3"],
-    "skills": ["Täuschen +5", "Motiv erkennen +3", "Einschüchtern +5", "Nachforschungen +3", "Wahrnehmung +3"],
-    "damage-resistances": ["Säure"],
-    "senses": ["Passive Wahrnehmung 13"],
-    "languages": ["Gemeinsprache", "Drakonisch"],
+    "attributes": {
+      "str": { "score": "14", "mod": "+2" },
+      "dex": { "score": "16", "mod": "+3" },
+      "con": { "score": "14", "mod": "+2" },
+      "int": { "score": "12", "mod": "+1" },
+      "wis": { "score": "12", "mod": "+1" },
+      "cha": { "score": "16", "mod": "+3" }
+    },
+    "saving_throws": {"con":4, "wis": 3},
+    "skills": {"deception": 5, "insight": 3, "intimidation": 5, "investigation": 3, "perception": 3},
+    "damage_resistances": ["Säure"],
+    "senses": {"passive_perception": 13},
+    "languages": { "speaks": ["Gemeinsprache", "Drakonisch"], "understands": [] },
     "challenge": "3",
     "xp": "700",
     "traits": [
       {
         "name": "Makellose Autorität",
-        "value": "Solange Temeus seine formelle Kleidung (Mantel, Handschuhe, Zylinder) trägt, hat er Vorteil bei Charismawürfen (Einschüchtern), um Gehorsam von Kreaturen zu erzwingen, die ihn sehen können."
+        "text": "Solange Temeus seine formelle Kleidung (Mantel, Handschuhe, Zylinder) trägt, hat er Vorteil bei Charismawürfen (Einschüchtern), um Gehorsam von Kreaturen zu erzwingen, die ihn sehen können."
       },
       {
         "name": "Führung (aufladbar nach kurzer oder langer Rast)",
-        "value": "Für 1 Minute kann Temeus Befehle geben. Immer wenn eine nicht feindselige Kreatur, die er innerhalb von 9 m sehen kann, einen Angriffswurf oder Rettungswurf ausführt, kann sie 1W4 zu ihrem Wurf addieren, sofern sie ihn hören und verstehen kann. Der Effekt endet, wenn Temeus handlungsunfähig wird."
+        "text": "Für 1 Minute kann Temeus Befehle geben. Immer wenn eine nicht feindselige Kreatur, die er innerhalb von 9 m sehen kann, einen Angriffswurf oder Rettungswurf ausführt, kann sie 1W4 zu ihrem Wurf addieren, sofern sie ihn hören und verstehen kann. Der Effekt endet, wenn Temeus handlungsunfähig wird."
       },
       {
         "name": "Stock-Tarnung",
-        "value": "Der Spazierstock ist eine verborgene Rapierklinge. Temeus kann sie als Teil eines Angriffs ziehen."
+        "text": "Der Spazierstock ist eine verborgene Rapierklinge. Temeus kann sie als Teil eines Angriffs ziehen."
       }
     ],
     "actions": [
       {
         "name": "Mehrfachangriff",
-        "value": "Temeus führt zwei Angriffe mit der Stock-Rapierklinge aus."
+        "text": "Temeus führt zwei Angriffe mit der Stock-Rapierklinge aus."
       },
       {
         "name": "Stock-Rapierklinge",
-        "value": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 7 (1W8+3) Stichschaden."
+        "text": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 7 (1W8+3) Stichschaden."
       },
       {
         "name": "Stockhaken",
-        "value": "Unmittelbar nachdem Varrasz eine Kreatur mit Stock-Rapierklinge trifft, muss das Ziel einen SG-13-Stärkerettungswurf bestehen oder es liegt am Boden."
+        "text": "Unmittelbar nachdem Temeus eine Kreatur mit Stock-Rapierklinge trifft, muss das Ziel einen SG-13-Stärkerettungswurf bestehen oder es liegt am Boden."
       },
       {
         "name": "Säureodem (Aufladung 5-6)",
-        "value": "Varrasz speit Säure in einer 4,5 m langen, 1,5 m breiten Linie. Jede Kreatur in der Linie muss einen SG-13-Geschicklichkeitsrettungswurf ausführen. Bei Misslingen: 18 (4W8) Säureschaden, sonst die Hälfte."
+        "text": "Temeus speit Säure in einer 4,5 m langen, 1,5 m breiten Linie. Jede Kreatur in der Linie muss einen SG-13-Geschicklichkeitsrettungswurf ausführen. Bei Misslingen: 18 (4W8) Säureschaden, sonst die Hälfte."
       }
     ],
     "bonus_actions": [
-      { "name": "Königlicher Schritt", "value": "Temeus führt die Aktion Rückzug aus." },
-      { "name": "Stockfinte", "value": "Temeus wählt eine Kreatur innerhalb von 1,5 m. Der nächste Stock-Rapierklingenangriff gegen dieses Ziel in diesem Zug hat Vorteil." }
+      { "name": "Königlicher Schritt", "text": "Temeus führt die Aktion Rückzug aus." },
+      { "name": "Stockfinte", "text": "Temeus wählt eine Kreatur innerhalb von 1,5 m. Der nächste Stock-Rapierklingenangriff gegen dieses Ziel in diesem Zug hat Vorteil." }
     ],
     "reactions": [
-      { "name": "Parade", "value": "Temeus erhöht seine RK um 2 gegen einen Nahkampfangriff, der ihn treffen würde, sofern er den Angreifer sehen kann und die Stock-Rapierklinge führt." }
+      { "name": "Parade", "text": "Temeus erhöht seine RK um 2 gegen einen Nahkampfangriff, der ihn treffen würde, sofern er den Angreifer sehen kann und die Stock-Rapierklinge führt." }
     ],
     "legendary-actions": []
   }

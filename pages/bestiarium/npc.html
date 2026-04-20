@@ -10,7 +10,7 @@
   <header class="topbar">
     <div class="brand">
       <div class="title" id="title">NPC</div>
-      <div class="subtitle"><a href="../../index.html">Startseite</a></div>
+      <div class="subtitle"><a href="./npcs.html">← Zurück zu den NSC</a> • <a href="./bestiary.html">Bestiarium</a> • <a href="../../index.html">Startseite</a></div>
     </div>
   </header>
 
@@ -21,7 +21,18 @@
   </main>
 
   <script type="module">
-    import { escapeHtml, loadIndex, loadMany, fmtSigned, mod, linkifyRefs } from "../../lib.js";
+    import {
+      escapeHtml,
+      loadIndex,
+      loadMany,
+      fmtSigned,
+      mod,
+      linkifyRefs,
+      normalizeNpc,
+      slugify,
+      entityLinkHtml,
+      normalizeEntityRef
+    } from "../../lib.js";
 
     const view = document.getElementById("view");
     const titleEl = document.getElementById("title");
@@ -40,22 +51,102 @@
       return r.json();
     }
 
-    async function loadNpc(){
-      // Fast path: direct file
-      try {
-        return await fetchJson(`../../data/monsters/npc/${encodeURIComponent(id)}.json`);
-      } catch {}
+    async function loadNpc(idParam){
+      const rawId = String(idParam || "").trim();
+      const candidates = Array.from(new Set([
+        rawId,
+        slugify(rawId),
+        rawId.toLowerCase()
+      ].filter(Boolean)));
 
-      // Fallback: scan index (if you have it)
-      const files = await loadIndex("../../data/npcs/index.json").catch(() => []);
-      const npcs = await loadMany("../../data/npcs", files).catch(() => []);
-      const key = id.toLowerCase();
-      return npcs.find(n => String(n.id || "").toLowerCase() === key) ||
-             npcs.find(n => String(n.name || "").toLowerCase() === key) ||
-             null;
+      for (const candidate of candidates) {
+        try {
+          const raw = await fetchJson(`../../data/monsters/npc/${encodeURIComponent(candidate)}.json`);
+          return normalizeNpc(raw);
+        } catch {}
+      }
+
+      const files = await loadIndex("../../data/monsters/npc/index.json").catch(() => []);
+      const npcs = (await loadMany("../../data/monsters/npc", files).catch(() => [])).map(normalizeNpc);
+      const lowered = rawId.toLowerCase();
+      const slug = slugify(rawId);
+
+      return (
+        npcs.find(n => String(n.id || "").toLowerCase() === lowered) ||
+        npcs.find(n => String(n.name || "").toLowerCase() === lowered) ||
+        npcs.find(n => slugify(n.id || n.name || "") === slug) ||
+        null
+      );
     }
 
-    const n = await loadNpc();
+    function formatList(value) {
+      if (!value) return "";
+      if (Array.isArray(value)) {
+        return value.map(entry => typeof entry === "object" ? `${entry.name || ""}${entry.note || ""}`.trim() : String(entry)).join(", ");
+      }
+      if (typeof value === "object") {
+        return Object.entries(value).map(([key, entry]) => `${key} ${entry}`).join(", ");
+      }
+      return String(value);
+    }
+
+    function formatSpeed(speed) {
+      if (!speed) return "—";
+      if (typeof speed === "string") return speed;
+      const order = ["walk", "fly", "swim", "climb", "burrow"];
+      const labels = {
+        walk: "Laufen",
+        fly: "Fliegen",
+        swim: "Schwimmen",
+        climb: "Klettern",
+        burrow: "Graben"
+      };
+      const parts = [];
+      for (const key of order) {
+        const value = speed[key];
+        if (value == null || value === "") continue;
+        parts.push(typeof value === "number" ? `${labels[key]} ${value} ft.` : `${labels[key]} ${value}`);
+      }
+      return parts.length ? parts.join(", ") : "—";
+    }
+
+    function renderSpellRefs(refs) {
+      return (Array.isArray(refs) ? refs : [])
+        .map(ref => {
+          if (ref && typeof ref === "object" && ref.id) {
+            return entityLinkHtml("spell", normalizeEntityRef(ref), { base: "../zauber/" });
+          }
+          return escapeHtml(String(ref ?? ""));
+        })
+        .join(", ");
+    }
+
+    function renderSpellcastingSection(entries) {
+      return (Array.isArray(entries) ? entries : []).map(entry => {
+        const groups = Object.entries(entry?.spells || {})
+          .map(([key, refs]) => {
+            const label = key === "cantrips_at_will"
+              ? "Zaubertricks (beliebig)"
+              : key.startsWith("level_")
+                ? `Grad ${key.replace("level_", "")}`
+                : key.replaceAll("_", " ");
+            const html = renderSpellRefs(refs);
+            return html ? `<div class="mini"><b>${escapeHtml(label)}:</b> ${html}</div>` : "";
+          })
+          .filter(Boolean)
+          .join("");
+
+        return `
+          <div class="mini" style="margin-bottom:10px;">
+            ${entry?.name ? `<div><b>${escapeHtml(entry.name)}</b></div>` : ""}
+            ${entry?.text ? `<div style="margin:4px 0 6px 0;">${linkifyRefs(entry.text, { base: "./" })}</div>` : ""}
+            ${groups}
+          </div>
+        `;
+      }).join("");
+    }
+
+    const n = await loadNpc(id);
     if (!n) {
       view.innerHTML = `<p>NSC nicht gefunden: <code>${escapeHtml(id)}</code></p>`;
       throw new Error("NSC nicht gefunden");
@@ -65,7 +156,11 @@
 
     const subtitle = [n.race, n.role, n.faction].filter(Boolean).join(" • ");
     const ab = n.abilities || {};
-    const showAbilities = ["str","dex","con","int","wis","cha"].some(k => ab?.[k] != null);
+    const showAbilities = ["str", "dex", "con", "int", "wis", "cha"].some(k => ab?.[k] != null);
+    const savesLine = formatList(n.saving_throws);
+    const skillsLine = formatList(n.skills);
+    const sensesLine = formatList(n.senses);
+    const languagesLine = Array.isArray(n.languages) ? n.languages.join(", ") : formatList(n.languages);
 
     view.innerHTML = `
       <h1>${escapeHtml(n.name)}</h1>
@@ -74,9 +169,9 @@
       <div class="mini-box">
         <div class="mini-box-title">Werte</div>
         <div class="mini-box-text">
-          ${n.ac != null ? `<div><b>AC:</b> ${escapeHtml(n.ac)}</div>` : ""}
-          ${n.hp != null ? `<div><b>HP:</b> ${escapeHtml(n.hp)}</div>` : ""}
-          ${n.speed != null ? `<div><b>Bewegung:</b> ${escapeHtml(n.speed)}</div>` : ""}
+          ${n.ac != null ? `<div><b>RK:</b> ${escapeHtml(n.ac)}${n.ac_note ? ` <span class="muted">(${escapeHtml(n.ac_note)})</span>` : ""}</div>` : ""}
+          ${n.hp != null ? `<div><b>TP:</b> ${escapeHtml(n.hp)}${n.hp_formula ? ` <span class="muted">(${escapeHtml(n.hp_formula)})</span>` : ""}</div>` : ""}
+          <div><b>Bewegung:</b> ${escapeHtml(formatSpeed(n.speed))}</div>
         </div>
       </div>
 
@@ -93,6 +188,25 @@
               <b>CHA</b> ${ab.cha ?? "—"} (${fmtSigned(mod(ab.cha ?? 10))})
             </div>
           </div>
+        </div>
+      ` : ""}
+
+      ${(savesLine || skillsLine || sensesLine || languagesLine) ? `
+        <div class="mini-box" style="margin-top:12px;">
+          <div class="mini-box-title">Fertigkeiten</div>
+          <div class="mini-box-text">
+            ${savesLine ? `<div class="mini"><b>Rettungswürfe:</b> ${escapeHtml(savesLine)}</div>` : ""}
+            ${skillsLine ? `<div class="mini"><b>Fertigkeiten:</b> ${escapeHtml(skillsLine)}</div>` : ""}
+            ${sensesLine ? `<div class="mini"><b>Sinne:</b> ${escapeHtml(sensesLine)}</div>` : ""}
+            ${languagesLine ? `<div class="mini"><b>Sprachen:</b> ${escapeHtml(languagesLine)}</div>` : ""}
+          </div>
+        </div>
+      ` : ""}
+
+      ${(n.spellcasting && n.spellcasting.length) ? `
+        <div class="mini-box" style="margin-top:12px;">
+          <div class="mini-box-title">Zauber</div>
+          <div class="mini-box-text">${renderSpellcastingSection(n.spellcasting)}</div>
         </div>
       ` : ""}
 
@@ -116,10 +230,43 @@
         <div class="mini-box" style="margin-top:12px;">
           <div class="mini-box-title">Aktionen</div>
           <div class="mini-box-text">
-            ${n.actions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || a.type || "", { base: "./" })}</div>`).join("")}
+            ${n.actions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || "", { base: "./" })}</div>`).join("")}
           </div>
         </div>
       ` : ""}
+
+      ${(n.bonus_actions && n.bonus_actions.length) ? `
+        <div class="mini-box" style="margin-top:12px;">
+          <div class="mini-box-title">Bonusaktionen</div>
+          <div class="mini-box-text">
+            ${n.bonus_actions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || "", { base: "./" })}</div>`).join("")}
+          </div>
+        </div>
+      ` : ""}
+
+      ${(n.reactions && n.reactions.length) ? `
+        <div class="mini-box" style="margin-top:12px;">
+          <div class="mini-box-title">Reaktionen</div>
+          <div class="mini-box-text">
+            ${n.reactions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || "", { base: "./" })}</div>`).join("")}
+          </div>
+        </div>
+      ` : ""}
+
+      ${(n.legendary_actions && n.legendary_actions.length) ? `
+        <div class="mini-box" style="margin-top:12px;">
+          <div class="mini-box-title">Legendäre Aktionen</div>
+          <div class="mini-box-text">
+            ${n.legendary_actions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || "", { base: "./" })}</div>`).join("")}
+          </div>
+        </div>
+      ` : ""}
+
+      <p class="muted" style="margin-top:12px;">
+        ${n.challenge?.cr ? `<b>HG:</b> ${escapeHtml(n.challenge.cr)}` : ""}
+        ${n.challenge?.proficiency_bonus != null ? ` • <b>ÜB:</b> ${escapeHtml(fmtSigned(n.challenge.proficiency_bonus))}` : ""}
+        ${n.xp ? ` • <b>EP:</b> ${escapeHtml(n.xp)}` : ""}
+      </p>
     `;
   </script>
 </body>

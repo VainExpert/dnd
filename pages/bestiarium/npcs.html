@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>NSC</title>
+  <link rel="stylesheet" href="../../styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">NSC-Verzeichnis</div>
+      <div class="subtitle">Nichtspielercharaktere aus dem Bestiarium</div>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Suchen..."/>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="nav">
+        <div class="group">
+          <div class="group-title">Startseite</div>
+          <a href="../../index.html">Startseite</a>
+          <a href="../../index.html#content/house-rules/index.md">Hausregeln</a>
+          <a href="../../index.html#content/safety/index.md">Sicherheit</a>
+          <a href="../../index.html#content/character-options/index.md">Charakteroptionen</a>
+          <a href="../../index.html#content/recaps/index.md">Rückblicke</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Werkzeuge</div>
+          <a href="../werkzeuge/tools.html">Zufallstabellen & Generatoren</a>
+          <a href="../werkzeuge/dice.html">Würfel</a>
+          <a href="../werkzeuge/units.html">Umrechner</a>
+        </div>
+
+        <div class="group">
+          <div class="group-title">Sammlungen</div>
+          <a href="./bestiary.html">Bestiarium</a>
+          <a href="./npcs.html" class="active">NSC</a>
+          <a href="../zauber/spells.html">Zauber</a>
+          <a href="../items/items.html">Gegenstände</a>
+          <a href="../maps.html">Karten</a>
+          <a href="../spieler/pcs.html">Spieler</a>
+          <a href="../icons.html">Symbole</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="content" style="max-width:1100px;">
+        <div id="grid" class="card-grid"></div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany, fmtSigned, mod, normalizeNpc } from "../../lib.js";
+
+    const grid = document.getElementById("grid");
+    const qEl = document.getElementById("q");
+
+    function formatList(value){
+      if (!value) return "";
+      if (Array.isArray(value)) return value.join(", ");
+      if (typeof value === "object") {
+        return Object.entries(value).map(([key, entry]) => `${key} ${entry}`).join(", ");
+      }
+      return String(value);
+    }
+
+    function formatSpeed(speed){
+      if (!speed) return "—";
+      if (typeof speed === "string") return speed;
+      const order = ["walk", "fly", "swim", "climb", "burrow"];
+      const labels = {
+        walk: "Laufen",
+        fly: "Fliegen",
+        swim: "Schwimmen",
+        climb: "Klettern",
+        burrow: "Graben"
+      };
+      const parts = [];
+      for (const key of order){
+        const value = speed[key];
+        if (value == null || value === "") continue;
+        parts.push(typeof value === "number" ? `${labels[key]} ${value} ft.` : `${labels[key]} ${value}`);
+      }
+      return parts.length ? parts.join(", ") : "—";
+    }
+
+    function card(n){
+      const ab = n.abilities || {};
+      const subtitle = [n.race, n.role, n.faction].filter(Boolean).join(" • ");
+      const details = [n.type, n.alignment].filter(Boolean).join(", ");
+      return `
+        <div class="mini-card">
+          <div class="mini-head">
+            <div class="mini-title"><a href="./npc.html?id=${encodeURIComponent(n.id || n.name || "")}">${escapeHtml(n.name)}</a></div>
+            <div class="mini-sub">${escapeHtml(subtitle || details || "NSC")}</div>
+            <div class="pillbar">
+              ${n.ac != null ? `<span class="pill"><b>RK</b> ${escapeHtml(n.ac)}</span>` : ""}
+              ${n.hp != null ? `<span class="pill"><b>TP</b> ${escapeHtml(n.hp)}${n.hp_formula ? ` <span class="muted">(${escapeHtml(n.hp_formula)})</span>` : ""}</span>` : ""}
+              <span class="pill"><b>Bewegung</b> ${escapeHtml(formatSpeed(n.speed))}</span>
+              ${n.challenge?.cr ? `<span class="pill"><b>HG</b> ${escapeHtml(n.challenge.cr)}</span>` : ""}
+            </div>
+          </div>
+          <div class="mini-body">
+            <div class="mini-box">
+              <div class="mini-box-title">Attribute</div>
+              <div class="mini-box-text">
+                <span class="abi"><b>STR</b> ${ab.str ?? "—"} (${fmtSigned(mod(ab.str ?? 10))})</span>
+                <span class="abi"><b>DEX</b> ${ab.dex ?? "—"} (${fmtSigned(mod(ab.dex ?? 10))})</span>
+                <span class="abi"><b>CON</b> ${ab.con ?? "—"} (${fmtSigned(mod(ab.con ?? 10))})</span>
+                <span class="abi"><b>INT</b> ${ab.int ?? "—"} (${fmtSigned(mod(ab.int ?? 10))})</span>
+                <span class="abi"><b>WIS</b> ${ab.wis ?? "—"} (${fmtSigned(mod(ab.wis ?? 10))})</span>
+                <span class="abi"><b>CHA</b> ${ab.cha ?? "—"} (${fmtSigned(mod(ab.cha ?? 10))})</span>
+              </div>
+            </div>
+
+            ${(n.skills || n.languages?.length || n.senses) ? `
+              <div class="mini-box">
+                <div class="mini-box-title">Fertigkeiten</div>
+                <div class="mini-box-text">
+                  ${n.skills ? `<div class="mini"><b>Fertigkeiten:</b> ${escapeHtml(formatList(n.skills))}</div>` : ""}
+                  ${n.senses ? `<div class="mini"><b>Sinne:</b> ${escapeHtml(formatList(n.senses))}</div>` : ""}
+                  ${n.languages?.length ? `<div class="mini"><b>Sprachen:</b> ${escapeHtml(n.languages.join(", "))}</div>` : ""}
+                </div>
+              </div>` : ""}
+
+            ${(n.traits?.length) ? `<div class="mini-box"><div class="mini-box-title">Eigenschaften</div><div class="mini-box-text">${n.traits.slice(0, 2).map(t => `<div class="mini"><b>${escapeHtml(t.name)}:</b> ${escapeHtml(t.text)}</div>`).join("")}</div></div>` : ""}
+            ${(n.actions?.length) ? `<div class="mini-box"><div class="mini-box-title">Aktionen</div><div class="mini-box-text">${n.actions.slice(0, 2).map(a => `<div class="mini"><b>${escapeHtml(a.name)}:</b> ${escapeHtml(a.text)}</div>`).join("")}</div></div>` : ""}
+
+            <div class="mini-footer muted">${details ? escapeHtml(details) : ""}</div>
+          </div>
+        </div>
+      `;
+    }
+
+    function matches(n, q){
+      const hay = [
+        n.name,
+        n.race,
+        n.role,
+        n.faction,
+        n.type,
+        n.alignment,
+        formatList(n.skills),
+        formatList(n.senses),
+        ...(n.languages || []),
+        ...(n.traits || []).flatMap(t => [t.name, t.text]),
+        ...(n.actions || []).flatMap(a => [a.name, a.text]),
+        ...(n.bonus_actions || []).flatMap(a => [a.name, a.text]),
+        ...(n.reactions || []).flatMap(a => [a.name, a.text]),
+        n.notes
+      ].join(" ").toLowerCase();
+      return !q || hay.includes(q);
+    }
+
+    const files = await loadIndex("../../data/monsters/npc/index.json");
+    const npcs = (await loadMany("../../data/monsters/npc", files)).map(normalizeNpc);
+
+    function render(){
+      const q = (qEl.value || "").trim().toLowerCase();
+      const filtered = npcs.filter(n => matches(n, q));
+      grid.innerHTML = filtered.map(card).join("") || `<p>Keine Treffer.</p>`;
+    }
+
+    qEl.addEventListener("input", render);
+    render();
+  </script>
+</body>
+</html>

@@ -191,7 +191,7 @@
   </main>
 
   <script type="module">
-    import { loadIndex, loadMany, escapeHtml } from "../../lib.js";
+    import { loadIndex, loadMany, escapeHtml, normalizeTable, rollTableEntry } from "../../lib.js";
 
     // ---------------- Random Tables ----------------
     const tableSel = document.getElementById("table");
@@ -199,29 +199,30 @@
     const resultEl = document.getElementById("result");
 
     const tFiles = await loadIndex("../../data/tables/index.json");
-    const tables = await loadMany("../../data/tables", tFiles);
+    const tableObjects = await loadMany("../../data/tables", tFiles);
+    const tables = tableObjects
+      .map((table, index) => normalizeTable(table, tFiles[index]?.replace(/\.json$/i, "")))
+      .filter(Boolean);
 
     for (const t of tables){
       const opt = document.createElement("option");
-      opt.value = t.name;
+      opt.value = t.id || t.name;
       opt.textContent = t.name;
       tableSel.appendChild(opt);
     }
 
-    function pick(arr){ return arr[Math.floor(Math.random() * arr.length)]; }
-
     function roll(){
       const name = tableSel.value;
-      const t = tables.find(x => x.name === name);
-      if (!t || !t.entries || !t.entries.length){
+      const t = tables.find(x => (x.id || x.name) === name);
+      if (!t){
         resultEl.innerHTML = `<p>Keine Einträge.</p>`;
         return;
       }
-      const r = pick(t.entries);
+      const r = rollTableEntry(t);
       resultEl.innerHTML = `
         <div class="mini-box">
-          <div class="mini-box-title">${escapeHtml(t.name)}${t.dice ? " ("+escapeHtml(t.dice)+")" : ""}</div>
-          <div class="mini-box-text">${escapeHtml(r)}</div>
+          <div class="mini-box-title">${escapeHtml(t.name)}${t.dice ? " ("+escapeHtml(t.dice)+")" : ""}${r.roll != null ? " • Wurf " + escapeHtml(String(r.roll)) : ""}</div>
+          <div class="mini-box-text">${escapeHtml(r.text)}</div>
         </div>
       `;
     }

@@ -23,6 +23,56 @@ function deepRepair(value){
   );
 }
 
+function parseTableKey(key){
+  const match = String(key ?? "").trim().match(/^(\d+)(?:\s*-\s*(\d+))?$/);
+  if (!match) return null;
+
+  const min = Number(match[1]);
+  const max = match[2] ? Number(match[2]) : min;
+  if (!Number.isFinite(min) || !Number.isFinite(max)) return null;
+
+  return { min, max };
+}
+
+function normalizeTableDice(rawDice){
+  if (rawDice == null || rawDice === "") return "";
+  if (typeof rawDice === "number" && Number.isFinite(rawDice)) return `1d${rawDice}`;
+
+  const text = repairText(String(rawDice)).trim();
+  if (!text) return "";
+  if (/^\d+$/.test(text)) return `1d${text}`;
+  return text;
+}
+
+function parseTableDiceSpec(diceStr){
+  const match = String(diceStr ?? "").trim().match(/^(\d*)d(\d+|%)$/i);
+  if (!match) return null;
+
+  const count = match[1] ? Number(match[1]) : 1;
+  const sides = match[2] === "%" ? 100 : Number(match[2]);
+  if (!Number.isFinite(count) || !Number.isFinite(sides) || count < 1 || sides < 1) return null;
+
+  return { count, sides };
+}
+
+function randomInt(min, max){
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function formatTableValue(value){
+  if (Array.isArray(value)){
+    return value
+      .map(part => repairText(String(part ?? "")).trim())
+      .filter(Boolean)
+      .reduce((out, part) => {
+        if (!out) return part;
+        return /^[,.;:!?)]/.test(part) || /^[-/]/.test(part) ? out + part : `${out} ${part}`;
+      }, "");
+  }
+
+  return repairText(String(value ?? ""));
+}
+
 function trimTrailingZeros(value){
   return String(value).replace(/\.0+$/,"").replace(/(\.\d*?)0+$/,"$1");
 }
@@ -67,6 +117,16 @@ function weightValue(weight){
   const rawAmount = weight.value != null ? weight.value : weight.amount;
   const numericAmount = Number(rawAmount);
   return Number.isFinite(numericAmount) ? numericAmount : null;
+}
+
+function normalizeVendors(vendors){
+  const source = Array.isArray(vendors)
+    ? vendors
+    : (vendors == null || vendors === "" ? [] : [vendors]);
+
+  return source
+    .map(entry => repairText(String(entry ?? "")).trim())
+    .filter(Boolean);
 }
 
 function mapValue(value, entries){
@@ -120,6 +180,69 @@ export async function loadMany(basePath, files, { concurrency = 12 } = {}){
   const workers = Array.from({ length: Math.min(concurrency, files.length) }, worker);
   await Promise.all(workers);
   return out;
+}
+
+export function normalizeTable(raw, fallbackLabel = ""){
+  if (!raw || typeof raw !== "object") return null;
+
+  const repaired = deepRepair(raw);
+  const rangeEntries = Object.entries(repaired)
+    .map(([key, value]) => {
+      const range = parseTableKey(key);
+      return range ? { ...range, value } : null;
+    })
+    .filter(Boolean)
+    .sort((a, b) => a.min - b.min || a.max - b.max);
+
+  const entries = Array.isArray(repaired.entries)
+    ? repaired.entries.map(entry => deepRepair(entry))
+    : rangeEntries.map(entry => entry.value);
+
+  const name = repairText(
+    repaired.name ??
+    repaired.title ??
+    repaired.titel ??
+    fallbackLabel ??
+    repaired.id ??
+    "Tabelle"
+  ).trim();
+
+  return {
+    ...repaired,
+    name: name || "Tabelle",
+    dice: normalizeTableDice(repaired.dice),
+    entries,
+    rangeEntries,
+    header: deepRepair(repaired.header)
+  };
+}
+
+export function rollTableEntry(rawTable){
+  const table = normalizeTable(rawTable);
+  if (!table) return { roll: null, text: "(keine Tabelle)", value: null };
+
+  if (table.rangeEntries.length){
+    const dice = parseTableDiceSpec(table.dice);
+    const max = Math.max(...table.rangeEntries.map(entry => entry.max));
+    const roll = dice ? randomInt(1, dice.count * dice.sides) : randomInt(1, max);
+    const hit = table.rangeEntries.find(entry => roll >= entry.min && roll <= entry.max) ?? table.rangeEntries[0];
+    return {
+      roll,
+      text: formatTableValue(hit?.value),
+      value: hit?.value ?? null
+    };
+  }
+
+  if (table.entries.length){
+    const value = table.entries[randomInt(0, table.entries.length - 1)];
+    return {
+      roll: null,
+      text: formatTableValue(value),
+      value
+    };
+  }
+
+  return { roll: null, text: "(keine Einträge)", value: null };
 }
 
 export function mod(score){ return Math.floor((Number(score) - 10) / 2); }
@@ -363,7 +486,8 @@ export function normalizeItem(raw){
     attunement: attBool,
     price: formatPrice(raw.price),
     weight: formatWeight(raw.weight),
-    weight_value: weightValue(raw.weight)
+    weight_value: weightValue(raw.weight),
+    vendors: normalizeVendors(raw.vendors ?? raw.vendor)
   };
 }
 
@@ -618,6 +742,73 @@ function uniqueRefs(list){
   }
 
   return out;
+}
+
+export function normalizeNpc(raw){
+  if (!raw || typeof raw !== "object") return raw;
+  raw = deepRepair(raw);
+
+  if (raw.kind === "monster" || raw.npc) {
+    const abilities = {};
+    for (const key of ["str", "dex", "con", "int", "wis", "cha"]) {
+      const value = raw.abilities?.[key];
+      const score = typeof value === "object" ? Number(value?.score) : Number(value);
+      if (Number.isFinite(score)) abilities[key] = score;
+    }
+
+    const languages = raw.languages && typeof raw.languages === "object" && !Array.isArray(raw.languages)
+      ? [...(raw.languages.speaks || []), ...(raw.languages.understands || []).map(x => `versteht ${x}`)]
+      : (Array.isArray(raw.languages) ? raw.languages : (raw.languages ? [String(raw.languages)] : []));
+
+    return {
+      ...raw,
+      id: raw.id || slugify(raw.name),
+      name: raw.name || "NSC",
+      race: raw.subtype || raw.creature_type || "",
+      role: raw.role || "",
+      faction: raw.faction || "",
+      size: raw.size || "",
+      type: raw.creature_type || raw.type || "",
+      alignment: raw.alignment || "",
+      ac: raw.armor_class?.value ?? raw.ac ?? null,
+      ac_note: raw.armor_class?.display ?? raw.ac_note ?? "",
+      hp: raw.hit_points?.average ?? raw.hp?.average ?? raw.hp ?? null,
+      hp_formula: raw.hit_points?.formula ?? raw.hp?.formula ?? "",
+      speed: raw.speed || {},
+      abilities,
+      saving_throws: raw.saving_throws || {},
+      skills: raw.skills || {},
+      senses: raw.senses || {},
+      languages,
+      challenge: {
+        cr: String(raw.challenge_rating ?? raw.challenge?.cr ?? raw.challenge ?? ""),
+        proficiency_bonus: raw.proficiency_bonus ?? raw.challenge?.proficiency_bonus ?? null
+      },
+      xp: raw.xp ?? "",
+      notes: raw.notes || "",
+      traits: Array.isArray(raw.traits) ? raw.traits.map(t => ({ name: t.name, text: t.text ?? t.value ?? "" })) : [],
+      actions: Array.isArray(raw.actions) ? raw.actions.map(a => ({ name: a.name, text: a.text ?? a.value ?? a.type ?? "" })) : [],
+      bonus_actions: Array.isArray(raw.bonus_actions) ? raw.bonus_actions.map(a => ({ name: a.name, text: a.text ?? a.value ?? a.type ?? "" })) : [],
+      reactions: Array.isArray(raw.reactions) ? raw.reactions.map(a => ({ name: a.name, text: a.text ?? a.value ?? a.type ?? "" })) : [],
+      legendary_actions: Array.isArray(raw.legendary_actions) ? raw.legendary_actions.map(a => ({ name: a.name, text: a.text ?? a.value ?? a.type ?? "" })) : [],
+      spellcasting: Array.isArray(raw.spellcasting) ? raw.spellcasting : []
+    };
+  }
+
+  const normalized = normalizeMonster(raw);
+  return {
+    ...normalized,
+    id: normalized.id || slugify(normalized.name),
+    name: normalized.name || "NSC",
+    race: raw.race || "",
+    role: raw.role || "",
+    faction: raw.faction || "",
+    hp_formula: normalized.hp?.formula ?? "",
+    notes: raw.notes || "",
+    bonus_actions: Array.isArray(normalized.bonus_actions) ? normalized.bonus_actions : [],
+    reactions: Array.isArray(normalized.reactions) ? normalized.reactions : [],
+    spellcasting: Array.isArray(normalized.spellcasting) ? normalized.spellcasting : []
+  };
 }
 
 export function normalizePc(raw){

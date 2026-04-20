@@ -223,7 +223,7 @@ Vorteil: 2d20kh1+5"></textarea>
 </main>
 
 <script type="module">
-  import { escapeHtml } from "../../lib.js";
+  import { escapeHtml, normalizeTable, rollTableEntry } from "../../lib.js";
 
   // ---------------- Dice engine ----------------
   function randInt(min, max){
@@ -704,23 +704,7 @@ Vorteil: 2d20kh1+5"></textarea>
   let loadedTables = [];
   let activeTable = null;
 
-  function parseDiceSides(diceStr){
-    // supports "d20" or "1d100" etc.
-    const m = (diceStr || "").trim().match(/(\d*)d(\d+|%)/i);
-    if (!m) return null;
-    const count = m[1] ? Number(m[1]) : 1;
-    const sides = (m[2] === "%") ? 100 : Number(m[2]);
-    return { count, sides };
-  }
-
-  function parseRangePrefix(entry){
-    // supports "1-3: text", "4: text"
-    const m = entry.match(/^\s*(\d+)\s*(?:-\s*(\d+))?\s*[:.)-]\s*(.*)$/);
-    if (!m) return null;
-    return { min: Number(m[1]), max: m[2] ? Number(m[2]) : Number(m[1]), text: m[3] };
-  }
-
-  function rollOnTable(t){
+  function unusedLegacyRollOnTable(t){
     const entries = Array.isArray(t.entries) ? t.entries : [];
     if (!entries.length) return { roll: null, text: "(keine Einträge)" };
 
@@ -742,8 +726,8 @@ Vorteil: 2d20kh1+5"></textarea>
   }
 
   function setActiveTableFromObject(t, label){
-    activeTable = t;
-    tableResult.innerHTML = `<div class="small">Aktive Tabelle: <span class="mono">${escapeHtml(label || t.name || "Tabelle")}</span></div>`;
+    activeTable = normalizeTable(t, label?.replace(/\.json$/i, ""));
+    tableResult.innerHTML = `<div class="small">Aktive Tabelle: <span class="mono">${escapeHtml(activeTable?.name || label || "Tabelle")}</span></div>`;
   }
 
   async function loadTablesIndex(){
@@ -763,9 +747,9 @@ Vorteil: 2d20kh1+5"></textarea>
       if (!activeTable){
         const f = tableSel.value;
         if (!f) return;
-        activeTable = await fetchJson(`../../data/tables/${f}`);
+        activeTable = normalizeTable(await fetchJson(`../../data/tables/${f}`), f.replace(/\.json$/i, ""));
       }
-      const r = rollOnTable(activeTable);
+      const r = rollTableEntry(activeTable);
       tableResult.innerHTML = `
         <div class="mini-box" style="margin:0;">
           <div class="mini-box-title">${escapeHtml(activeTable.name || "Tabelle")}${activeTable.dice ? ` (${escapeHtml(activeTable.dice)})` : ""}${r.roll!=null ? ` • Wurf ${escapeHtml(String(r.roll))}` : ""}</div>

@@ -62,6 +62,13 @@
           const raw = await fetchJson(`../../data/monsters/${encodeURIComponent(candidate)}.json`);
           return normalizeMonster(raw);
         } catch {}
+
+        for (const folder of ["de", "eng"]) {
+          try {
+            const raw = await fetchJson(`../../data/monsters/${folder}/${encodeURIComponent(candidate)}.json`);
+            return normalizeMonster(raw);
+          } catch {}
+        }
       }
 
       const files = await loadIndex("../../data/monsters/index.json");

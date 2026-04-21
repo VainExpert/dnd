@@ -10,18 +10,31 @@
   <header class="topbar">
     <div class="brand">
       <div class="title" id="title">Spieler-Charakter</div>
-      <div class="subtitle"><a href="./pcs.html">← Zurück zu allen Spieler-Charakteren</a> • <a href="../../index.html">Startseite</a></div>
+      <div class="subtitle"><a href="./pcs.html">Zurück zu allen Spieler-Charakteren</a> &bull; <a href="../../index.html">Startseite</a></div>
     </div>
   </header>
 
   <main class="main">
-    <div class="content" style="max-width:900px;">
+    <div class="content" style="max-width:980px;">
       <div id="view"></div>
     </div>
   </main>
 
   <script type="module">
-    import { escapeHtml, loadIndex, loadMany, fmtSigned, mod, linkifyRefs, normalizePc, entityLinkHtml } from "../../lib.js";
+    import {
+      escapeHtml,
+      loadIndex,
+      loadMany,
+      fmtSigned,
+      mod,
+      linkifyRefs,
+      normalizePc,
+      normalizeItem,
+      normalizeSpell,
+      buildLookupIndex,
+      resolveEntityRef,
+      entityLinkHtml
+    } from "../../lib.js";
 
     const view = document.getElementById("view");
     const titleEl = document.getElementById("title");
@@ -53,19 +66,31 @@
              null;
     }
 
-    const p = normalizePc(await loadPc());
+    async function loadLinkedLookup(basePath, normalize){
+      const files = await loadIndex(`${basePath}/index.json`).catch(() => []);
+      const entries = await loadMany(basePath, files).catch(() => []);
+      return buildLookupIndex(entries.map(normalize));
+    }
+
+    const rawPc = await loadPc();
+    const p = normalizePc(rawPc);
     if (!p) {
       view.innerHTML = `<p>SC nicht gefunden: <code>${escapeHtml(id)}</code></p>`;
       throw new Error("SC nicht gefunden");
     }
 
+    const [itemLookup, spellLookup] = await Promise.all([
+      loadLinkedLookup("../../data/items", normalizeItem),
+      loadLinkedLookup("../../data/spells", normalizeSpell)
+    ]);
+
     titleEl.textContent = p.name || "SC";
 
     const subtitle = [p.race, p.class, p.subclass ? `(${p.subclass})` : null, p.level ? `Lv ${p.level}` : null]
-      .filter(Boolean).join(" • ");
+      .filter(Boolean).join(" &bull; ");
 
     const portrait = p.portrait
-      ? `<img src="${escapeHtml(p.portrait)}" alt="${escapeHtml(p.name || "SC")}" style="width:180px;height:220px;object-fit:cover;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.25);" />`
+      ? `<img src="${escapeHtml(p.portrait)}" alt="${escapeHtml(p.name || "SC")}" style="width:180px;height:220px;object-fit:cover;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,.25);" />`
       : "";
 
     const ab = p.abilities || {};
@@ -73,8 +98,27 @@
     const spellSections = Array.isArray(p.spell_sections) ? p.spell_sections.filter(section => Array.isArray(section?.refs) && section.refs.length) : [];
     const itemSections = Array.isArray(p.item_sections) ? p.item_sections.filter(section => Array.isArray(section?.refs) && section.refs.length) : [];
 
+    function slugFromText(value){
+      return String(value ?? "")
+        .trim()
+        .toLowerCase()
+        .normalize("NFKD")
+        .replace(/\u00df/g, "ss")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/['"`´']/g, "")
+        .replace(/&/g, " und ")
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+    }
+
+    function linkedRef(kind, ref, { base, lookup }){
+      const resolved = resolveEntityRef(ref, lookup);
+      return entityLinkHtml(kind, resolved || ref, { base });
+    }
+
     function renderRefList(kind, refs, base){
-      return refs.map(ref => `<li>${entityLinkHtml(kind, ref, { base })}</li>`).join("");
+      const lookup = kind === "spell" ? spellLookup : kind === "item" ? itemLookup : null;
+      return refs.map(ref => `<li>${linkedRef(kind, ref, { base, lookup })}</li>`).join("");
     }
 
     function renderSectionList(kind, sections, base){
@@ -88,6 +132,285 @@
         </div>
       `).join("");
     }
+
+    function isPlainObject(value){
+      return value && typeof value === "object" && !Array.isArray(value);
+    }
+
+    function hasContent(value){
+      if (value == null || value === "") return false;
+      if (Array.isArray(value)) return value.some(hasContent);
+      if (isPlainObject(value)) return Object.values(value).some(hasContent);
+      return true;
+    }
+
+    function formatLabel(key){
+      const labels = {
+        ability_scores: "Attribute",
+        actions: "Aktionen",
+        advantages: "Vorteile",
+        age: "Alter",
+        alignment: "Gesinnung",
+        allies: "Verbündete",
+        always_prepared: "Immer vorbereitet",
+        always_prepared_spells: "Immer vorbereitete Zauber",
+        appearance: "Aussehen",
+        armor: "Rüstungen",
+        armor_class: "Rüstungsklasse",
+        attack_bonus: "Angriffsbonus",
+        attacks_and_cantrips: "Angriffe und Zaubertricks",
+        background: "Hintergrund",
+        backstory: "Hintergrundgeschichte",
+        bonus_actions: "Bonusaktionen",
+        cantrip_note: "Zaubertrick-Notiz",
+        cantrips: "Zaubertricks",
+        class: "Klasse",
+        combat: "Kampf",
+        condition_immunities: "Zustandsimmunitäten",
+        contents_listed: "Inhalt",
+        costs: "Kosten",
+        currency: "Münzen",
+        damage: "Schaden",
+        defenses: "Verteidigungen",
+        deity: "Gottheit",
+        description: "Beschreibung",
+        details: "Details",
+        distinguishing_marks: "Besondere Merkmale",
+        duration: "Dauer",
+        effects: "Effekte",
+        encumbered_at: "Belastet ab",
+        equipment: "Ausrüstung",
+        flaws: "Schwächen",
+        gender: "Geschlecht",
+        gp: "GM",
+        hair: "Haare",
+        height: "Größe",
+        hit_dice: "Trefferwürfel",
+        hp: "Trefferpunkte",
+        ideals: "Ideale",
+        identity: "Identität",
+        infusions_known: "Bekannte Infusionen",
+        infused_items_listed: "Durchdrungene Gegenstände",
+        inspiration: "Inspiration",
+        initiative: "Initiative",
+        item_ref: "Gegenstand",
+        items: "Gegenstände",
+        languages: "Sprachen",
+        max: "Maximum",
+        modes: "Modi",
+        motivation: "Motivation",
+        name: "Name",
+        notes: "Notizen",
+        options: "Optionen",
+        options_known: "Bekannte Optionen",
+        organizations: "Organisationen",
+        passive_scores: "Passive Werte",
+        personality: "Persönlichkeit",
+        player_name: "Spieler",
+        proficiencies: "Übungen",
+        proficiency_bonus: "Übungsbonus",
+        properties: "Eigenschaften",
+        push_drag_lift: "Schieben/Ziehen/Heben",
+        quantity: "Anzahl",
+        race: "Volk",
+        racial: "Volk",
+        reactions: "Reaktionen",
+        recovery: "Erholung",
+        resistances: "Resistenzen",
+        resource: "Ressource",
+        runes: "Runen",
+        save: "Rettungswurf",
+        senses: "Sinne",
+        skills: "Fertigkeiten",
+        skin: "Haut",
+        special: "Besonderes",
+        special_sources: "Besondere Quellen",
+        spell_attack_bonus: "Zauberangriff",
+        spell_ref: "Zauber",
+        spell_save_dc: "Zauberrettungs-SG",
+        spell_slots: "Zauberplätze",
+        spellcasting: "Zauberwirken",
+        spellcasting_ability: "Zauberattribut",
+        spellcasting_ability_mod: "Zauberattribut-Mod.",
+        spellcasting_class: "Zauberklasse",
+        speeds: "Bewegung",
+        standard: "Aktionen",
+        subclass: "Unterklasse",
+        summary: "Zusammenfassung",
+        talents_and_magic_items_text: "Talente und magische Gegenstände",
+        tools: "Werkzeuge",
+        traits: "Merkmale",
+        type: "Typ",
+        uses: "Anwendungen",
+        walk: "Gehen",
+        weapons: "Waffen",
+        weight: "Gewicht",
+        weights: "Gewichte"
+      };
+
+      if (labels[key]) return labels[key];
+      const levelMatch = String(key).match(/^level_(\d+)_spells_listed$/);
+      if (levelMatch) return `Zauber Grad ${levelMatch[1]}`;
+
+      return String(key)
+        .replaceAll("_", " ")
+        .replaceAll("-", " ")
+        .replace(/\b\w/g, ch => ch.toUpperCase());
+    }
+
+    function formatScalar(value, key = ""){
+      if (typeof value === "boolean") return value ? "Ja" : "Nein";
+      if (value == null) return "";
+      if (typeof value === "number") return escapeHtml(value);
+
+      const text = String(value);
+      const trimmed = text.trim();
+      const spellHit = spellLookup.get(slugFromText(trimmed));
+      const itemHit = itemLookup.get(slugFromText(trimmed));
+
+      if (spellHit) {
+        return linkedRef("spell", spellHit, { base: "../zauber/", lookup: spellLookup });
+      }
+      if (itemHit) {
+        return linkedRef("item", itemHit, { base: "../items/", lookup: itemLookup });
+      }
+
+      return linkifyRefs(text, { base: "./" });
+    }
+
+    function renderDefinitionList(entries){
+      const rows = entries.filter(([, value]) => hasContent(value));
+      if (!rows.length) return "";
+      return `<dl style="display:grid;grid-template-columns:minmax(120px, 220px) 1fr;gap:6px 14px;margin:0;">
+        ${rows.map(([key, value]) => `
+          <dt class="muted" style="font-weight:700;">${escapeHtml(formatLabel(key))}</dt>
+          <dd style="margin:0;">${renderValue(value, key)}</dd>
+        `).join("")}
+      </dl>`;
+    }
+
+    function renderValue(value, key = ""){
+      if (!hasContent(value)) return "";
+
+      if (key === "spell_ref") return linkedRef("spell", value, { base: "../zauber/", lookup: spellLookup });
+      if (key === "item_ref") return linkedRef("item", value, { base: "../items/", lookup: itemLookup });
+
+      if (Array.isArray(value)) {
+        const compact = value.every(entry => !isPlainObject(entry) && !Array.isArray(entry));
+        if (compact) {
+          return `<ul style="margin:0;padding-left:18px;">${value.filter(hasContent).map(entry => `<li>${formatScalar(entry, key)}</li>`).join("")}</ul>`;
+        }
+
+        return `<div style="display:grid;gap:8px;">${value.filter(hasContent).map(entry => renderArrayEntry(entry, key)).join("")}</div>`;
+      }
+
+      if (isPlainObject(value)) {
+        if (value.spell_ref && Object.keys(value).length <= 2) return renderValue(value.spell_ref, "spell_ref");
+        if (value.item_ref && Object.keys(value).length <= 2) return renderValue(value.item_ref, "item_ref");
+        if ((value.id || value.name) && key === "spells") return linkedRef("spell", value, { base: "../zauber/", lookup: spellLookup });
+        if ((value.id || value.name) && key === "items") return linkedRef("item", value, { base: "../items/", lookup: itemLookup });
+
+        return renderDefinitionList(Object.entries(value));
+      }
+
+      return formatScalar(value, key);
+    }
+
+    function renderArrayEntry(entry, key = ""){
+      if (isPlainObject(entry)) {
+        const heading = entry.name || entry.source || entry.rune || entry.type || "";
+        const bodyEntries = Object.entries(entry).filter(([entryKey]) => entryKey !== "name" && entryKey !== "source");
+        return `<div class="mini-box" style="background:rgba(255,255,255,.025);">
+          ${heading ? `<div class="mini-box-title">${formatScalar(heading, key)}</div>` : ""}
+          <div class="mini-box-text">${renderDefinitionList(bodyEntries)}</div>
+        </div>`;
+      }
+
+      if (Array.isArray(entry)) return renderValue(entry, key);
+      return `<div>${formatScalar(entry, key)}</div>`;
+    }
+
+    function renderInfoBox(title, html){
+      if (!html) return "";
+      return `<div class="mini-box" style="margin-top:12px;">
+        <div class="mini-box-title">${escapeHtml(title)}</div>
+        <div class="mini-box-text">${html}</div>
+      </div>`;
+    }
+
+    function renderCurrency(currency){
+      if (!isPlainObject(currency)) return "";
+      return `<div class="pillbar">${Object.entries(currency)
+        .filter(([, value]) => value != null && value !== "")
+        .map(([key, value]) => `<span class="pill"><b>${escapeHtml(formatLabel(key))}</b> ${escapeHtml(value)}</span>`)
+        .join("")}</div>`;
+    }
+
+    function renderAttacks(attacks){
+      if (!Array.isArray(attacks) || !attacks.length) return "";
+      return attacks.map(attack => `
+        <div class="mini-box" style="background:rgba(255,255,255,.025);">
+          <div class="mini-box-title">${escapeHtml(attack.name || "Angriff")}</div>
+          <div class="mini-box-text">
+            ${renderDefinitionList(Object.entries(attack).filter(([key]) => key !== "name"))}
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderInventory(items){
+      if (!Array.isArray(items) || !items.length) return "";
+      return `<div style="overflow:auto;">
+        <table style="width:100%;border-collapse:collapse;">
+          <thead>
+            <tr>
+              <th style="text-align:left;padding:6px;border-bottom:1px solid rgba(255,255,255,.12);">Gegenstand</th>
+              <th style="text-align:right;padding:6px;border-bottom:1px solid rgba(255,255,255,.12);">Anzahl</th>
+              <th style="text-align:right;padding:6px;border-bottom:1px solid rgba(255,255,255,.12);">Gewicht</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${items.map(item => `
+              <tr>
+                <td style="padding:6px;border-bottom:1px solid rgba(255,255,255,.06);">
+                  ${item.item_ref ? linkedRef("item", item.item_ref, { base: "../items/", lookup: itemLookup }) : formatScalar(item.name || "", "item")}
+                  ${Array.isArray(item.contents_listed) && item.contents_listed.length ? `<div class="muted" style="margin-top:4px;">Inhalt: ${item.contents_listed.map(sub => sub.item_ref ? linkedRef("item", sub.item_ref, { base: "../items/", lookup: itemLookup }) : formatScalar(sub.name || "", "item")).join(", ")}</div>` : ""}
+                </td>
+                <td style="padding:6px;text-align:right;border-bottom:1px solid rgba(255,255,255,.06);">${escapeHtml(item.quantity ?? "")}</td>
+                <td style="padding:6px;text-align:right;border-bottom:1px solid rgba(255,255,255,.06);">${escapeHtml(item.weight ?? "")}</td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      </div>`;
+    }
+
+    const character = p.character || {};
+    const identity = character.identity || {};
+    const combat = character.combat || {};
+    const spellcasting = character.spellcasting || {};
+    const equipment = character.equipment || {};
+    const proficiencies = character.proficiencies || {};
+    const features = character.features || {};
+    const personality = character.personality || {};
+    const backstory = character.backstory || {};
+
+    const identityDetails = renderDefinitionList(Object.entries(identity).filter(([key]) => !["name", "player_name", "class", "race"].includes(key)));
+    const combatDetails = renderDefinitionList(Object.entries(combat).filter(([key]) => key !== "attacks_and_cantrips"));
+    const spellcastingDetails = renderDefinitionList(Object.entries(spellcasting));
+    const equipmentDetails = renderDefinitionList(Object.entries(equipment).filter(([key]) => !["items", "currency", "attuned_magic_items_listed"].includes(key)));
+    const rawSections = [
+      ["Identität", identityDetails],
+      ["Kampf", combatDetails],
+      ["Angriffe und Zaubertricks", renderAttacks(combat.attacks_and_cantrips)],
+      ["Übungen", renderValue(proficiencies)],
+      ["Zauberwirken", spellcastingDetails],
+      ["Features", renderValue(features)],
+      ["Inventar", [renderCurrency(equipment.currency), renderInventory(equipment.items), renderValue(equipment.attuned_magic_items_listed, "item")].filter(Boolean).join("<div style=\"height:10px;\"></div>")],
+      ["Ausrüstungsdetails", equipmentDetails],
+      ["Persönlichkeit", renderValue(personality)],
+      ["Hintergrundgeschichte", renderValue(backstory)]
+    ];
 
     view.innerHTML = `
       <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;">
@@ -111,12 +434,12 @@
               <div class="mini-box-title">Attribute</div>
               <div class="mini-box-text">
                 <div>
-                  <b>STR</b> ${ab.str ?? "—"} (${fmtSigned(mod(ab.str ?? 10))}) •
-                  <b>DEX</b> ${ab.dex ?? "—"} (${fmtSigned(mod(ab.dex ?? 10))}) •
-                  <b>CON</b> ${ab.con ?? "—"} (${fmtSigned(mod(ab.con ?? 10))}) •
-                  <b>INT</b> ${ab.int ?? "—"} (${fmtSigned(mod(ab.int ?? 10))}) •
-                  <b>WIS</b> ${ab.wis ?? "—"} (${fmtSigned(mod(ab.wis ?? 10))}) •
-                  <b>CHA</b> ${ab.cha ?? "—"} (${fmtSigned(mod(ab.cha ?? 10))})
+                  <b>STR</b> ${ab.str ?? "-"} (${fmtSigned(mod(ab.str ?? 10))}) &bull;
+                  <b>DEX</b> ${ab.dex ?? "-"} (${fmtSigned(mod(ab.dex ?? 10))}) &bull;
+                  <b>CON</b> ${ab.con ?? "-"} (${fmtSigned(mod(ab.con ?? 10))}) &bull;
+                  <b>INT</b> ${ab.int ?? "-"} (${fmtSigned(mod(ab.int ?? 10))}) &bull;
+                  <b>WIS</b> ${ab.wis ?? "-"} (${fmtSigned(mod(ab.wis ?? 10))}) &bull;
+                  <b>CHA</b> ${ab.cha ?? "-"} (${fmtSigned(mod(ab.cha ?? 10))})
                 </div>
               </div>
             </div>
@@ -147,6 +470,11 @@
             </div>
           ` : ""}
         </div>
+      </div>
+
+      <div style="margin-top:20px;">
+        <h2>Alle Charakterdaten</h2>
+        ${rawSections.map(([sectionTitle, html]) => renderInfoBox(sectionTitle, html)).join("")}
       </div>
     `;
   </script>

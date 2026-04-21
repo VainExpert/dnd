@@ -12,7 +12,7 @@ import path from "node:path";
  * Supported map image extensions: .webp, .png, .jpg, .jpeg
  */
 
-const jsonCollections = ["monsters", "spells", "items", "pcs", "tables"];
+const jsonCollections = ["spells", "items", "pcs", "tables"];
 
 // --- JSON collections --------------------------------------------------------
 for (const c of jsonCollections) {
@@ -222,4 +222,37 @@ if (!fs.existsSync(iconsAssetsDir)) {
 
   fs.writeFileSync(iconsIndexPath, JSON.stringify({ icons }, null, 2));
   console.log(`Wrote data/icons/index.json (${icons.length} icons)`);
+}
+
+// --- Monster collection ------------------------------------------------------
+// Monster data is split into language folders. The root index stores URL-ready
+// relative paths so existing loaders can keep using data/monsters as the base.
+const monstersDir = path.join("data", "monsters");
+if (!fs.existsSync(monstersDir)) {
+  console.warn("Skip data/monsters (missing folder)");
+} else {
+  const monsterFolders = fs
+    .readdirSync(monstersDir, { withFileTypes: true })
+    .filter((d) => d.isDirectory() && d.name !== "npc")
+    .map((d) => d.name)
+    .sort((a, b) => a.localeCompare(b, "en"));
+
+  const rootFiles = [];
+
+  for (const folder of monsterFolders) {
+    const folderDir = path.join(monstersDir, folder);
+    const files = fs
+      .readdirSync(folderDir, { withFileTypes: true })
+      .filter((d) => d.isFile())
+      .map((d) => d.name)
+      .filter((f) => f.endsWith(".json") && f !== "index.json")
+      .sort((a, b) => a.localeCompare(b, "en"));
+
+    fs.writeFileSync(path.join(folderDir, "index.json"), JSON.stringify({ files }, null, 2));
+    rootFiles.push(...files.map((file) => path.posix.join(folder, file)));
+    console.log(`Wrote data/monsters/${folder}/index.json (${files.length} files)`);
+  }
+
+  fs.writeFileSync(path.join(monstersDir, "index.json"), JSON.stringify({ files: rootFiles }, null, 2));
+  console.log(`Wrote data/monsters/index.json (${rootFiles.length} files)`);
 }

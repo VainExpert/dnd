@@ -1,0 +1,79 @@
+{
+    "id": "wanted-poster-silber-steckbriefe",
+    "titel": "Wanted Poster Silber-Steckbriefe",
+    "description": "W8-Zufallstabelle mit Silber-Steckbriefen vom schwarzen Brett.",
+    "dice": 8,
+    "parts": false,
+    "1": {
+      "name": "Harlon \"Der Schröpfer\"",
+      "vergehen": "Schutzgelderpressung, Bedrohung von Ladenbesitzern, schwere Körperverletzung",
+      "beschreibung": "Menschlicher Mann, Narben über dem Kinn, grauer Mantel, eiserner Schlagring.",
+      "zuletzt_gesehen": "Im Krämerbezirk.",
+      "besonderer_hinweis": "Hat mehrere einschüchternde Schläger unter sich.",
+      "belohnung": "100 Goldstücke",
+      "hinweis": "Lebend bevorzugt, um Aussagen über sein Netzwerk zu erhalten."
+    },
+    "2": {
+      "name": "Salma Nebelschritt",
+      "vergehen": "Einbruch in wohlhabende Häuser, Diebstahl von Schmuck und Dokumenten",
+      "beschreibung": "Elfin, dunkler Umhang, silbernes Ohrpiercing, bewegt sich lautlos.",
+      "zuletzt_gesehen": "In den besseren Wohnvierteln nahe der Ratsallee.",
+      "besonderer_hinweis": "Gilt als ausgezeichnete Kletterin und Schlösserknackerin.",
+      "belohnung": "120 Goldstücke",
+      "hinweis": "Dächer und Balkone im Auge behalten."
+    },
+    "3": {
+      "name": "Bruder Kalven",
+      "vergehen": "Verbotene Predigten, Aufwiegelung, Verbreitung staatsfeindlicher Schriften",
+      "beschreibung": "Menschlicher Mann, tonsurähnlicher Haarschnitt, heisere Stimme, einfache dunkle Robe.",
+      "zuletzt_gesehen": "In Hinterhöfen und Kellerandachten.",
+      "besonderer_hinweis": "Verführt Zuhörer mit feurigen Reden und sammelt Anhänger.",
+      "belohnung": "90 Goldstücke",
+      "hinweis": "Schriften und Listen seiner Versammlungen sicherstellen."
+    },
+    "4": {
+      "name": "Dorga Schiefhammer",
+      "vergehen": "Schmuggel von Waffen in die Stadt, Bestechung, Urkundenfälschung",
+      "beschreibung": "Zwergin, schwer gebaut, halber Bartzopf, dunkles Kettenhemd unter Arbeitskleidung.",
+      "zuletzt_gesehen": "Am westlichen Flusskai.",
+      "besonderer_hinweis": "Arbeitet über harmlose Frachtkisten und gefälschte Liefersiegel.",
+    "belohnung": "125 Goldstücke",
+    "hinweis": "Kontakte im Hafen möglich."
+  },
+  "5": {
+    "name": "Jorin Fassbinder",
+    "vergehen": "Vergiftung von Konkurrenzfässern, Sabotage, versuchter Mord",
+    "beschreibung": "Menschlicher Mann, blasse Haut, kräftige Arme, trägt meist ein Fassmesser.",
+    "zuletzt_gesehen": "Bei Brauereien und Lagerkellern.",
+    "besonderer_hinweis": "Mischt Bitterstoffe und Gifte in Getränkevorräte.",
+    "belohnung": "110 Goldstücke",
+    "hinweis": "Behälter und Werkzeuge als Beweise sichern."
+  },
+  "6": {
+    "name": "Mutter Ruß",
+    "vergehen": "Anwerben minderjähriger Diebe, Hehlerei, Bandenführung",
+    "beschreibung": "Ältere Frau unbekannter Herkunft, verrußtes Gesicht, humpelnd, spricht freundlich und kalt zugleich.",
+    "zuletzt_gesehen": "In den Schornsteingassen des Armenviertels.",
+    "besonderer_hinweis": "Nutzt Straßenkinder als Boten und Späher.",
+    "belohnung": "130 Goldstücke",
+    "hinweis": "Diskretion empfohlen, um die Kinder nicht unnötig zu gefährden."
+  },
+  "7": {
+    "name": "Torvik und die Kettenhunde",
+    "vergehen": "Söldnergewalt, Einschüchterung, Entführung von Schuldnern",
+    "beschreibung": "Torvik ist ein breitschultriger Halbork mit Kettenpeitsche; 4–6 Gefolgsleute.",
+    "zuletzt_gesehen": "Entlang der Speicher und Lagerplätze.",
+    "besonderer_hinweis": "Arbeitet gegen Bezahlung für Kredithaie und dubiose Händler.",
+    "belohnung": "150 Goldstücke für Torvik, kleinere Summen für bestätigte Gefolgsleute",
+    "hinweis": "Nur mit ausreichender Kampfkraft angehen."
+  },
+  "8": {
+    "name": "Yselle von Dorn",
+    "vergehen": "Fälschung von Adelsbriefen, Verkauf gefälschter Siegel, Erpressung",
+    "beschreibung": "Adlige Erscheinung, dunkles Haar, teure Kleidung, stets mit Handschuhen.",
+    "zuletzt_gesehen": "In besseren Gasthäusern und beim Schreiberviertel.",
+    "besonderer_hinweis": "Wirkt charmant und kultiviert, ist aber äußerst gefährlich im Umgang mit Dokumenten.",
+    "belohnung": "140 Goldstücke",
+    "hinweis": "Schriftproben und Siegelwerkzeuge von besonderem Wert."
+  }
+}

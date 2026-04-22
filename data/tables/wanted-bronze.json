@@ -1,0 +1,97 @@
+{
+  "id": "wanted-poster-bronze-steckbriefe",
+  "titel": "Wanted Poster Bronze-Steckbriefe",
+  "description": "W10-Zufallstabelle mit Bronze-Steckbriefen vom schwarzen Brett.",
+  "dice": 10,
+  "parts": false,
+  "1": {
+    "name": "Tillo \"Flinkfinger\" Merz",
+    "vergehen": "Taschendiebstahl, Beutelschneiderei, Flucht vor der Stadtwache",
+    "beschreibung": "Männlicher Halbling, lockiges braunes Haar, auffällig grüne Weste, stets mit zu großem Hut.",
+    "zuletzt_gesehen": "Auf dem Marktplatz im Gerberviertel.",
+    "besonderer_hinweis": "Arbeitet gern in Menschenmengen und nutzt Kinder oder Straßenhändler als Ablenkung.",
+    "belohnung": "25 Goldstücke",
+    "hinweis": "Lebend festsetzen. Beute möglichst vollständig sicherstellen."
+  },
+  "2": {
+    "name": "Alva Krähenzahn",
+    "vergehen": "Betrug mit gefälschten Heiltränken, Verkauf wertloser Tinkturen",
+    "beschreibung": "Menschliche Frau, schwarzes Haar, wettergegerbtes Gesicht, trägt häufig Reisekiste und Kräutertasche.",
+    "zuletzt_gesehen": "In den Außengassen nahe dem Südtor.",
+    "besonderer_hinweis": "Gibt sich als wandernde Heilerin aus und verschwindet meist vor Tagesanbruch.",
+    "belohnung": "30 Goldstücke",
+    "hinweis": "Vorsicht vor Rauchpulvern und Blendstaub."
+  },
+  "3": {
+    "name": "Borkel Einauge",
+    "vergehen": "Schlägerei, Wegelagerei, Bedrohung von Händlern",
+    "beschreibung": "Menschlicher Mann, groß, kräftig, linkes Auge milchig blind, zerfetzter Ledermantel.",
+    "zuletzt_gesehen": "An der Straße zum nördlichen Mühlenpfad.",
+    "besonderer_hinweis": "Vermutlich mit 2–3 weiteren Halunken unterwegs.",
+    "belohnung": "35 Goldstücke",
+    "hinweis": "Bewaffnet mit Knüppel oder rostigem Kurzschwert."
+  },
+  "4": {
+    "name": "Mira \"Die Falsche Nonne\"",
+    "vergehen": "Spendenbetrug, Amtsanmaßung, Diebstahl von Tempelgut",
+    "beschreibung": "Menschliche Frau, mittleres Alter, einfache graue Robe, spricht sanft und überzeugend.",
+    "zuletzt_gesehen": "Vor kleinen Schreinen in Armenvierteln.",
+    "besonderer_hinweis": "Gibt sich als fromme Sammlerin für Waisen oder Tempelreparaturen aus.",
+    "belohnung": "25 Goldstücke",
+    "hinweis": "Möglichst mitsamt Aufzeichnungen und Spendenkasse vorführen."
+  },
+  "5": {
+    "name": "Ollo und Pell",
+    "vergehen": "Stallraub, Hühner- und Ziegendiebstahl, kleinere Einbrüche",
+    "beschreibung": "Zwei junge Halbelfen, oft gemeinsam, einer rotblond, einer schwarzhaarig.",
+    "zuletzt_gesehen": "Bei Gehöften südwestlich der Stadt.",
+    "besonderer_hinweis": "Reiten häufig auf gestohlenen Eseln davon.",
+    "belohnung": "20 Goldstücke pro Person",
+    "hinweis": "Lebend erwünscht. Gestohlene Tiere unversehrt zurückführen."
+  },
+  "6": {
+    "name": "Grete Felsnase",
+    "vergehen": "Falschspiel, gezinkte Würfel, Betrug bei Glücksspielen",
+    "beschreibung": "Zwergin, kupferrote Zöpfe, breites Grinsen, trägt viele Ringe an den Fingern.",
+    "zuletzt_gesehen": "In Schankhäusern beim Hafen.",
+    "besonderer_hinweis": "Behauptet lautstark, nur aus Glück zu gewinnen.",
+    "belohnung": "30 Goldstücke",
+    "hinweis": "Würfelbecher, Karten und Münzen als Beweise mitbringen."
+  },
+  "7": {
+    "name": "Der Sackmann",
+    "vergehen": "Einbruch in Lagerhäuser, Diebstahl von Mehl, Salz und Vorräten",
+    "beschreibung": "Identität unbekannt; trägt Sackhaube mit Sehschlitzen, schmal, flink.",
+    "zuletzt_gesehen": "Lagergassen am östlichen Hafen.",
+    "besonderer_hinweis": "Hinterlässt häufig verschüttetes Korn und durchtrennte Seile.",
+    "belohnung": "40 Goldstücke",
+    "hinweis": "Möglicherweise nur ein einzelner Täter, möglicherweise Nachahmer."
+  },
+  "8": {
+    "name": "Kella Riemenhand",
+    "vergehen": "Hehlerei kleiner Waren, Weiterverkauf gestohlener Gürtel, Werkzeuge und Messer",
+    "beschreibung": "Halbork-Frau, kahl rasierter Schädel, lederne Armschiene, scharfe Stimme.",
+    "zuletzt_gesehen": "Im Viertel der Gerber und Sattler.",
+    "besonderer_hinweis": "Kauft Diebesgut billig auf und verkauft es unkenntlich weiter.",
+    "belohnung": "35 Goldstücke",
+    "hinweis": "Lagerort gestohlener Ware von besonderem Interesse."
+  },
+  "9": {
+    "name": "Pater Enzio",
+    "vergehen": "Verkauf falscher Segnungen, Aberglaubensbetrug, Erpressung von Bauern",
+    "beschreibung": "Älterer Mensch, schütteres Haar, falscher Priesterkragen, trägt bronzene Glocke.",
+    "zuletzt_gesehen": "Auf Landstraßen zwischen Dörfern.",
+    "besonderer_hinweis": "Droht mit „göttlichem Fluch“, falls keine Münzen gezahlt werden.",
+    "belohnung": "20 Goldstücke",
+    "hinweis": "Möglichst ohne öffentliche Prügelei festsetzen."
+  },
+  "10": {
+    "name": "Nib und Nab",
+    "vergehen": "Brandstiftung aus Mutwillen, Vandalismus, Zerstörung von Marktständen",
+    "beschreibung": "Zwei junge Gnome, vermutlich Geschwister, ständig rußverschmiert, tragen Zündschnüre.",
+    "zuletzt_gesehen": "In der Nähe stillgelegter Werkstätten.",
+    "besonderer_hinweis": "Nutzen Knallpulver, Rauchkugeln und stinkende Alchemie.",
+    "belohnung": "40 Goldstücke für beide zusammen",
+    "hinweis": "Vorsicht vor improvisierten Fallen."
+  }
+}

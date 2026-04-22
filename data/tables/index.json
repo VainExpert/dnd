@@ -1,5 +1,10 @@
 {
   "files": [
+    "abenteuergilde-auftraege-bronze.json",
+    "abenteuergilde-auftraege-gold.json",
+    "abenteuergilde-auftraege-nach-tier.json",
+    "abenteuergilde-auftraege-platin.json",
+    "abenteuergilde-auftraege-silber.json",
     "ereignisse-nacht.json",
     "ereignisse-tempelbrand.json",
     "ortsnamen-baukasten.json",
@@ -8,6 +13,10 @@
     "traeume-athene+poseidon.json",
     "traeume-druidin.json",
     "traeume-hera.json",
-    "traeume-hestia.json"
+    "traeume-hestia.json",
+    "wanted-bronze.json",
+    "wanted-gold.json",
+    "wanted-platin.json",
+    "wanted-silber.json"
   ]
 }

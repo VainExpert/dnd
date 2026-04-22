@@ -1,0 +1,447 @@
+{
+  "1": {
+    "id": "AG-004",
+    "titel": "Die Scheune der Schreie",
+    "tier": "Silber",
+    "hook": "Ein ganzer Hof ist verriegelt; aus der Scheune hört man Krachen, aber niemand traut sich hinein.",
+    "briefing": "Die Tiere im Inneren sind am Durchdrehen. Der Besitzer ist verschwunden.",
+    "objectives": [
+      "Scheune sichern, Tiere retten, Brand vermeiden.",
+      "Den verschwundenen Besitzer finden.",
+      "Verbindung zu Lieferketten (Futterhändler, Stallmeister) herstellen."
+    ],
+    "complications": [
+      "Ein alchemistisches Gerät im Heuboden stößt unregelmäßig Dampf aus.",
+      "Der Besitzer war verschuldet; Unterweltinteressen mischen mit."
+    ],
+    "clues": [
+      "Ein unscheinbarer grauer Staub in Ritzen – unter UV/Feenlicht kurz sichtbar.",
+      "Ein Lieferschein mit falschem Siegel."
+    ],
+    "outcomes": {
+      "success": "Gerät/Staub gesichert; Spur zu Futterhändler.",
+      "partial": "Scheune beschädigt; Entschädigungsforderung.",
+      "failure": "Brand; Stadtwache übernimmt und versiegelt alles."
+    }
+  },
+  "2": {
+    "id": "AG-005",
+    "titel": "Schlachtfeld der Hufe",
+    "tier": "Silber",
+    "hook": "Beim Markt-Renntag drehen Pferde durch, rennen in die Menge, zertrampeln Stände.",
+    "briefing": "Die Gilde muss die Menge schützen und herausfinden, warum ausgerechnet Turnierpferde betroffen sind.",
+    "objectives": [
+      "Pferde stoppen (Netze, Beruhigung, Barrieren).",
+      "Stallungen untersuchen: Sattelzeug, Wasser, Heu, Huföl.",
+      "Verdächtige in der Menge identifizieren (Saboteure, Händler, Wache)."
+    ],
+    "complications": [
+      "Der General nutzt die Gelegenheit für mehr Wachenpräsenz und Ausgangssperren.",
+      "Ein Konkurrent beschuldigt öffentlich den Handwerker-Kandidaten."
+    ],
+    "clues": [
+      "Huföl stammt aus einer neuen Charge; Geruch neutral, aber temperaturabhängig.",
+      "Ein Stallbursche wurde bestochen, 'nur ein bisschen Öl' zu verwenden."
+    ],
+    "outcomes": {
+      "success": "Beweis für manipulierte Lieferkette.",
+      "partial": "Adliger verletzt; politischer Druck steigt.",
+      "failure": "Markt kollabiert; Misstrauen gegen Gilde."
+    }
+  },
+  "3": {
+    "id": "AG-006",
+    "titel": "Fieber im Fischteich",
+    "tier": "Silber",
+    "hook": "In den Fischteichen am Stadtrand sterben Fische, und Wasservögel greifen Menschen an.",
+    "briefing": "Die Wasserhüter fürchten Seuche; der Tempel ruft nach Reinigung.",
+    "objectives": [
+      "Wasserquelle upstream finden.",
+      "Proben nehmen und an die magische Universität liefern.",
+      "Wildvögel vertreiben, ohne sie zu töten."
+    ],
+    "complications": [
+      "Ein Mühlenbesitzer blockiert Zugang (hat Angst vor Schuld).",
+      "Die Substanz ist für Humanoide unsichtbar, aber verursacht Halluzinationen bei Monstern."
+    ],
+    "clues": [
+      "An der Uferlinie klebt ein unsichtbarer Film, der auf Salz reagiert.",
+      "Ein unterirdischer Abfluss führt Richtung alte Werkstattkanäle."
+    ],
+    "outcomes": {
+      "success": "Spur in die Kanalisation/alte Werkstätten.",
+      "partial": "Universität fordert Quarantäne; Handel leidet.",
+      "failure": "Tempel erklärt es zum göttlichen Zorn; Unruhen."
+    }
+  },
+  "4": {
+    "id": "AG-009",
+    "titel": "Prüfung der Meister",
+    "tier": "Silber",
+    "hook": "Die Handwerkergilde bittet die Gilde um neutrale Beobachter für die Auswahlmetriken – nach Sabotagevorfällen.",
+    "briefing": "Offiziell geht es um Fairness. Inoffiziell fürchten einige Meister, dass die Streuner den Prozess kapern.",
+    "objectives": [
+      "Prüfstationen sichern (Material, Werkzeuge, Aufträge).",
+      "Unregelmäßigkeiten dokumentieren, ohne Partei zu ergreifen.",
+      "Einen Saboteur auf frischer Tat ertappen."
+    ],
+    "complications": [
+      "Der Handwerker-Kandidat wirkt hilfsbereit und kompetent; Rivalen wirken paranoid.",
+      "Der General nutzt jeden Skandal, um Stadtwache in die Gilde zu setzen."
+    ],
+    "clues": [
+      "Sabotage-Methode passt zu den Tier-Ausfällen (gleiche Substanz in Schmieröl/Staub).",
+      "Ein Prüfungsraum hat winzige Kratzspuren in Pfotenform, aber nur als Markierung für Dead Drop."
+    ],
+    "outcomes": {
+      "success": "Beweis für Manipulation; politischer Hebel gegen Streuner.",
+      "partial": "Beweise reichen nicht, aber Verdacht wächst.",
+      "failure": "Gilde spaltet sich; Zeremonie wird riskanter."
+    }
+  },
+  "5": {
+    "id": "AG-013",
+    "titel": "Schriftrolle aus der Universität",
+    "tier": "Silber",
+    "hook": "Die magische Universität braucht Eskorte für ein Artefakt-Transportkonvoi.",
+    "briefing": "Ein Professor will nichts über die Ladung sagen, aber die Route ist heikel.",
+    "objectives": [
+      "Konvoi unauffällig begleiten.",
+      "Hinterhalt verhindern oder abwehren.",
+      "Herausfinden, wer die Route verraten hat."
+    ],
+    "complications": [
+      "Ein Student ist heimlich mitgereist (und löst Probleme aus).",
+      "Ein magischer Störimpuls setzt Schutzzauber zeitweise außer Kraft."
+    ],
+    "rewards": [
+      "Zugang zu Bibliotheksressourcen",
+      "Ein einmaliger magischer Dienst (Identify/Remove Curse etc.)"
+    ]
+  },
+  "6": {
+    "id": "AG-016",
+    "titel": "Grenzfeuer",
+    "tier": "Silber",
+    "hook": "An der Nordgrenze brennen Signalfeuer falsch; ein Fort meldet Infiltration.",
+    "briefing": "Der General will schnelle Aufklärung, bevor Panik entsteht.",
+    "objectives": [
+      "Zum Fort reisen und Lage prüfen.",
+      "Saboteure finden (Spuren, Codes, Insider).",
+      "Signalnetz reparieren/absichern."
+    ],
+    "complications": [
+      "Der Kommandant vor Ort ist loyal zum General, nicht zum König.",
+      "Die 'Saboteure' sind Flüchtlinge, die Schutz suchen."
+    ],
+    "rewards": [
+      "Militärische Ausrüstung",
+      "Ein Empfehlungsschreiben (oder Feindschaft) des Generals"
+    ]
+  },
+  "7": {
+    "id": "AG-018",
+    "titel": "Schatten über dem Theater",
+    "tier": "Silber",
+    "hook": "Ein Theaterdirektor bittet: Jemand sabotiert Aufführungen mit Illusionsmagie.",
+    "briefing": "Das Theater ist politisch wichtig – dort werden Meinungen gemacht.",
+    "objectives": [
+      "Saboteur entlarven (Backstage, Proben, Publikumsraum).",
+      "Aufführung retten, ohne Panik.",
+      "Motiv aufdecken: Geld, Politik, Rache."
+    ],
+    "complications": [
+      "Der Saboteur ist ein gefeierter Künstler mit Immunität durch Patron.",
+      "Eine echte, gefährliche Illusion entgleist (Panikstempel).\"],"
+    ],
+    "rewards": [
+      "Einfluss in der Kulturszene",
+      "Hinweise auf Gerüchtekampagnen (Barden-Netzwerk)"
+    ]
+  },
+  "8": {
+    "id": "AG-023",
+    "titel": "Rauch ueber den Gaerten",
+    "tier": "Silber",
+    "aushang": "Gesucht: diskrete, faehige Abenteurer fuer den Botanischen Garten. Bienen, Pfauen und Ziertiere sind ausser Rand und Band, und aus einem Gewaechshaus steigt nachts violetter Dunst auf. Keine oeffentliche Panik, gute Bezahlung.",
+    "auftraggeber": "Verwalterin des Botanischen Gartens, im Namen des Foerderkreises",
+    "briefing": "Ein Silberauftrag fuer Personen mit ruhiger Hand: Besucher muessen geschuetzt, das Gewaechshaus untersucht und die Ursache des Dunsts festgestellt werden, ohne die maechtigen Spender gegen die Gilde aufzubringen.",
+    "objectives": [
+      "Besucher und Personal sichern oder evakuieren.",
+      "Gewaechshaus, Bewaesserung und Duenger pruefen.",
+      "Eine Dunstprobe fuer Untersuchung sichern."
+    ],
+    "complications": [
+      "Die Gartenleitung verschweigt illegale Beschleunigungsversuche mit Pflanzen.",
+      "Ein Bienenzuechter nutzt die Lage fuer Anschuldigungen gegen Rivalen."
+    ],
+    "clues": [
+      "Die Reaktion verstaerkt sich bei Waerme und hoher Feuchtigkeit.",
+      "Ein verborgenes Rohrsystem fuehrt zu einer alten Kraeuterkueche."
+    ],
+    "rewards": [
+      "80 GM",
+      "Seltene Kraeuter oder Saaten im Wert von 25 GM",
+      "Ein Gefallen des botanischen Foerderkreises"
+    ],
+    "outcomes": {
+      "success": "Die Kraeuterkueche wird als Verteilerstelle entlarvt.",
+      "partial": "Der Garten wird geschlossen, aber die Verantwortlichen entgehen vorerst.",
+      "failure": "Die Beweise werden vernichtet und der Garten wird politisch versiegelt."
+    }
+  },
+  "9": {
+    "id": "AG-024",
+    "titel": "Die Glocke im Schacht",
+    "tier": "Silber",
+    "aushang": "Bergwerksauftrag: Fledermaeuse, Grubenponys und Lastziegen drehen beim Schlagen der Alarmglocke durch. Gesucht werden belastbare Leute zur Sicherung der Foerderstollen und Aufklaerung im Schacht. Gefahrenzulage inklusive.",
+    "auftraggeber": "Steinbruch- und Erzgemeinschaft am Nordgrat",
+    "briefing": "Die Auftraggeber wollen den Betrieb nicht stilllegen, bevor Klarheit herrscht. Abenteurer sollen Tiere und Arbeiter schuetzen, Klangquellen pruefen und moegliche Sabotage dokumentieren.",
+    "objectives": [
+      "Stallungen und Foerderwege sichern.",
+      "Glocke, Seilzuege und Erzstaubablagerungen untersuchen.",
+      "Tiere beruhigen oder aus dem kritischen Stollenabschnitt bringen."
+    ],
+    "complications": [
+      "Ein Vorarbeiter faelscht Sicherheitsberichte.",
+      "Ein Nebenschacht ist teilweise eingestuerzt."
+    ],
+    "clues": [
+      "Auf dem Glockenjoch sitzt ein reaktiver Rueckstand.",
+      "Die heftigsten Reaktionen treten nur in einem bestimmten Seitenstollen auf."
+    ],
+    "rewards": [
+      "90 GM",
+      "Bergwerkszulage in Erz oder Rohmetall im Wert von 20 GM",
+      "Vorzugsrecht auf Transport oder Unterkunft am Nordgrat"
+    ],
+    "outcomes": {
+      "success": "Die Resonanzquelle wird entdeckt und eine tiefere Sabotagespur gesichert.",
+      "partial": "Der Betrieb laeuft weiter, doch das Problem ist nur eingedaemmt.",
+      "failure": "Ein neuer Einsturz zerstoert Spuren und kostet Vertrauen."
+    }
+  },
+  "10": {
+    "id": "AG-025",
+    "titel": "Das Wehr am schwarzen Bach",
+    "tier": "Silber",
+    "aushang": "Soforthilfe am Stadtwehr gesucht. Aale, Otter und Wasservoegel verhalten sich aggressiv, die Schleusen klemmen, und Ueberschwemmung droht. Wer Ursache und Mechanik sichert, erhaelt guten Lohn.",
+    "auftraggeber": "Wasserhueter des Westwehrs",
+    "briefing": "Dies ist ein Auftrag fuer das Brett, weil Schnelligkeit zaehlt: Das Wehr muss gesichert werden, aber zugleich sollen Wasserproben und moegliche Zuleitungen dokumentiert werden.",
+    "objectives": [
+      "Schleusen bedienen oder notduerftig stabilisieren.",
+      "Wasserlaeufe ober- und unterhalb des Wehrs pruefen.",
+      "Werkkanaele und Metallkontakte vergleichen."
+    ],
+    "complications": [
+      "Mueller und Faerber blockieren einander die Zugaenge.",
+      "Ein Stadtrat fordert vorschnell das Oeffnen aller Schleusen."
+    ],
+    "clues": [
+      "Der violette Film sitzt besonders dort, wo stilles Wasser Metall beruehrt.",
+      "Ein Seitenkanal fuehrt in alte Werkstattgewoelbe."
+    ],
+    "rewards": [
+      "85 GM",
+      "Freie Faehr- und Wehrpassage fuer spaetere Reisen",
+      "Dankesschreiben der Wasserhueter"
+    ],
+    "outcomes": {
+      "success": "Die Werkstattgewoelbe werden als wichtige Spur entdeckt.",
+      "partial": "Das Wehr haelt, doch Muehlen und Handel leiden.",
+      "failure": "Ein Viertel wird ueberschwemmt und die Beweislage versinkt im Chaos."
+    }
+  },
+  "11": {
+    "id": "AG-026",
+    "titel": "Falsches Futter, falscher Eid",
+    "tier": "Silber",
+    "aushang": "Diskrete Hilfe im Militaerdepot gesucht. Meldehunde, Stallfalken und Botentauben verhalten sich unzuverlaessig. Gesucht werden neutrale Abenteurer, die Beschaffung und Futterpruefung uebernehmen. Schweigepflicht erwartet.",
+    "auftraggeber": "Quartiermeisteramt, inoffiziell ueber einen Lagerverwalter",
+    "briefing": "Ein klassischer Silberauftrag fuers schwarze Brett mit politischer Note: Das Depot soll funktionstuechtig bleiben, aber jemand muss die Lieferungen pruefen und moegliche Bestechung nachweisen.",
+    "objectives": [
+      "Futterlager, Wasser und Pflegeoele pruefen.",
+      "Mindestens eine betroffene Charge sichern.",
+      "Lieferweg und Beschaffungskette nachverfolgen."
+    ],
+    "complications": [
+      "Ein Offizier versucht belastende Beweise verschwinden zu lassen.",
+      "Jede Verzoegerung wird als Angriff auf die Einsatzbereitschaft gewertet."
+    ],
+    "clues": [
+      "Nur eine neue Notfallcharge ist betroffen.",
+      "Mehrere Formulare tragen dieselbe Faelscherhand."
+    ],
+    "rewards": [
+      "95 GM",
+      "Militaerrationen und Pfeile oder Bolzen fuer eine Gruppe",
+      "Ein militaerischer Passierschein fuer eingeschraenkte Zonen"
+    ],
+    "outcomes": {
+      "success": "Korruption in der Beschaffung wird belegbar.",
+      "partial": "Die Tiere werden gerettet, doch das Amt schiebt Schuld ab.",
+      "failure": "Botenrouten brechen zusammen und das Depot schottet sich ab."
+    }
+  },
+  "12": {
+    "id": "AG-027",
+    "titel": "Die Menagerie des Sammlers",
+    "tier": "Silber",
+    "aushang": "Diskreter Einsatz im Anwesen eines Sammlers gesucht. Exotische Tiere wurden waehrend einer Vorfuehrung aggressiv. Gesucht werden besonnene Leute mit Erfahrung im Umgang mit Bestien. Schweigen wird zusaetzlich belohnt.",
+    "auftraggeber": "Verwalter des Hauses Veler, im Namen des Sammlers",
+    "briefing": "Der Auftrag ist fuer ein schwarzes Brett ungewoehnlich fein, aber eindeutig: Das Anwesen sichern, Tiere einhegen und herausfinden, ob Kaefigpflege, Futter oder ein Gast verantwortlich ist.",
+    "objectives": [
+      "Ausgebrochene Tiere eindämmen oder umlenken.",
+      "Futterkammer, Kaefigschloesser und Pflegesalben untersuchen.",
+      "Personal und Gaeste unauffaellig befragen."
+    ],
+    "complications": [
+      "Der Sammler will jeden Skandal vertuschen.",
+      "Ein Gast moechte im Chaos ein seltenes Tier stehlen."
+    ],
+    "clues": [
+      "Mehrere Kaefigschloesser tragen reaktives Oel.",
+      "Ein neues Parfum scheint die Tiere zusaetzlich zu reizen."
+    ],
+    "rewards": [
+      "100 GM",
+      "Eine wertvolle, aber unkritische Kuriositaet aus der Sammlung",
+      "Einladung oder Nameingang in besseren Kreisen"
+    ],
+    "outcomes": {
+      "success": "Pflegeoel und Parfum liefern eine belastbare Verbindungsroute.",
+      "partial": "Das Anwesen bleibt ruhig, doch der Auftraggeber drueckt auf Schweigen.",
+      "failure": "Ein Tier entkommt in die Stadt und verschiebt alle Aufmerksamkeit."
+    }
+  },
+  "13": {
+    "id": "AG-042",
+    "titel": "Das kalte Archiv",
+    "tier": "Silber",
+    "aushang": "Gesucht: verlaessliche Abenteurer fuer das Stadtarchiv. Mehrere wichtige Akten sind ueber Nacht vereist, umsortiert oder verschwunden. Das Archiv braucht diskrete Hilfe, bevor Rat und Gilden davon erfahren.",
+    "auftraggeber": "Archivarin Tessa Mare",
+    "briefing": "Ein Silberauftrag mit Ermittlungscharakter. Die Gruppe soll das Archiv sichern, fehlende Akten finden und pruefen, ob es sich um Magie, Diebstahl oder Sabotage durch einen Insider handelt.",
+    "objectives": [
+      "Die betroffenen Archivraeume sichern.",
+      "Fehlende oder manipulierte Akten identifizieren.",
+      "Den Einbruchs- oder Magiepfad finden."
+    ],
+    "complications": [
+      "Ein Archivar hat selbst Fehler vertuscht und liefert falsche Angaben.",
+      "Ein Frostzauber hat Schutzsiegel teilweise unlesbar gemacht."
+    ],
+    "clues": [
+      "Nur bestimmte Schrankreihen sind betroffen, und alle enthalten Bau- oder Liefervertraege.",
+      "An einem Kellerfenster kleben Reste alchemischen Reifs."
+    ],
+    "rewards": [
+      "82 GM",
+      "Archivzugang fuer spaetere Recherchen",
+      "Eine beglaubigte Kopie eines seltenen Plans oder Registers"
+    ],
+    "outcomes": {
+      "success": "Die Akten werden gesichert und ein Diebstahlmuster wird sichtbar.",
+      "partial": "Der Schaden wird begrenzt, aber eine wichtige Akte bleibt weg.",
+      "failure": "Das Archiv wird versiegelt und die politische Lage verhaertet sich."
+    }
+  },
+  "14": {
+    "id": "AG-043",
+    "titel": "Die Karawane der stillen Hufe",
+    "tier": "Silber",
+    "aushang": "Gesucht: erfahrene Begleitung fuer eine Karawane, deren Zugtiere seit zwei Naechten kaum noch Laute von sich geben, dann aber ploetzlich panisch ausschlagen. Ware und Tiere sind wertvoll; diskrete Untersuchung erwuenscht.",
+    "auftraggeber": "Karawanenmeisterin Jara Venn",
+    "briefing": "Ein Silberauftrag zwischen Eskorte und Ermittlung. Die Gruppe soll die Karawane sicher bis zum naechsten Umschlagplatz bringen, die Ursache des merkwuerdigen Tierverhaltens finden und klaeren, ob ein Konkurrent oder eine Liefercharge dahintersteckt.",
+    "objectives": [
+      "Karawane, Treiber und Zugtiere auf der gefaehrdeten Strecke sichern.",
+      "Futter, Hufpflege, Geschirr und Wasserfaesser untersuchen.",
+      "Den letzten Umschlagplatz oder einen Saboteur identifizieren."
+    ],
+    "complications": [
+      "Ein Teil der Karawanenwache arbeitet heimlich fuer einen rivalisierenden Haendler.",
+      "Die Tiere reagieren auf bestimmte Pfeifsignale und Metallklirren mit verzogerter Panik."
+    ],
+    "clues": [
+      "An mehreren Hufriemen sitzt ein geruchloses, reaktives Oel.",
+      "Die stillsten Tiere wurden alle am selben Brunnen getraenkt."
+    ],
+    "rewards": [
+      "98 GM",
+      "Transportplatz fuer eine spaetere Reise",
+      "Handelskontakt zu Karawanen und Umschlagplaetzen"
+    ],
+    "outcomes": {
+      "success": "Die Karawane erreicht ihr Ziel und ein Umschlagplatz wird als Verteilerpunkt belastbar verdaechtig.",
+      "partial": "Die Ware kommt an, aber ein Tier geht verloren und der Saboteur entkommt.",
+      "failure": "Die Karawane zerstreut sich auf der Strasse, und mehrere Spuren verschwinden mit der Ladung."
+    }
+  },
+  "15": {
+    "id": "AG-044",
+    "titel": "Die roten Ziegel",
+    "tier": "Silber",
+    "aushang": "Sonderauftrag fuer die Bauhuette: Eine neue Lieferung roter Ziegel zerplatzt bei Hitze, verraeuchert Lagerhaeuser und macht Arbeiter krank. Ursache unbekannt. Gesucht werden belastbare Leute zur Untersuchung.",
+    "auftraggeber": "Bauhuette der Stadt",
+    "briefing": "Ein Silberauftrag mit Material- und Sabotagefokus. Die Gruppe soll Lager, Brennofen und Lieferwege untersuchen, weitere Schaeden verhindern und feststellen, ob die Ziegel absichtlich manipuliert wurden.",
+    "objectives": [
+      "Lager und Ofenbereich absichern.",
+      "Gelieferte Ziegel mit alten Chargen vergleichen.",
+      "Lieferweg, Brandzeichen und Brennprotokolle pruefen."
+    ],
+    "complications": [
+      "Ein Bauprojekt fuer einen einflussreichen Auftraggeber wartet auf genau diese Steine.",
+      "Der Ofenmeister versucht, eigene Nachlaessigkeit als Sabotage zu tarnen."
+    ],
+    "clues": [
+      "Nur die juengsten Chargen zeigen einen violett dunklen Kern.",
+      "Mehrere Karren wurden an derselben Zwischenstation umgeladen."
+    ],
+    "rewards": [
+      "86 GM",
+      "Baukontakte und Lagerraumhilfe",
+      "Baumaterial oder Handwerkerunterstuetzung im Wert von 20 GM"
+    ],
+    "outcomes": {
+      "success": "Die faulen Chargen werden erkannt und die Zwischenstation wird verdaechtig.",
+      "partial": "Weitere Schaeden werden verhindert, aber die Lieferkette bleibt lueckenhaft.",
+      "failure": "Ein Lagerhausbrand oder Einsturz verschlimmert die Lage."
+    }
+  },
+  "16": {
+    "id": "AG-045",
+    "titel": "Im Schatten der Arena",
+    "tier": "Silber",
+    "aushang": "Vor den naechsten Arenaspielen verschwinden Ausruestung, Siegespreise und Startlisten. Gesucht wird eine neutrale Gruppe zur Sicherung der Vorbereitung und Untersuchung moeglicher Sabotage vor Spielbeginn.",
+    "auftraggeber": "Arena-Verwalterin Selka Dorn",
+    "briefing": "Ein Silberauftrag mit oeffentlichem Risiko: Die Arena darf nicht im Chaos versinken. Die Auftragnehmer sollen Hinterraeume sichern, Saboteure finden und die Spiele retten oder gezielt absagen.",
+    "objectives": [
+      "Hinterraeume, Ruestkammern und Preislager absichern.",
+      "Fehlende Gegenstaende und manipulierte Listen aufspueren.",
+      "Moegliche Saboteure unter Personal, Wettmachern oder Kaempfern identifizieren."
+    ],
+    "complications": [
+      "Wettmacher setzen auf einen Skandal und stoeren die Ermittlungen.",
+      "Ein beruehmter Gladiator schuetzt einen verdaechtigen Waffenmeister."
+    ],
+    "clues": [
+      "Mehrere Startlisten wurden mit fast identischer Handschrift geaendert.",
+      "Eine Siegerklinge taucht im Pfandregister eines nahegelegenen Hauses auf."
+    ],
+    "rewards": [
+      "92 GM",
+      "Freier Eintritt und Kontakte in die Arena",
+      "Wettgutscheine oder Stadionmarken im Wert von 15 GM"
+    ],
+    "outcomes": {
+      "success": "Die Spiele bleiben kontrollierbar und ein Sabotagepfad wird offengelegt.",
+      "partial": "Die Arena bleibt offen, aber ein oeffentlicher Zwischenfall beschaedigt den Ruf der Gilde.",
+      "failure": "Die Spiele enden im Skandal und die Spur wird von Wettmachern aufgekauft."
+    }
+  },
+  "id": "abenteuergilde-auftraege-silber",
+  "titel": "Abenteuergilde-Auftraege Silber",
+  "description": "Silber-Auftraege der Abenteurergilde als eigenstaendige Zufallstabelle mit vollstaendigen Auftragseintraegen.",
+  "tier": "Silber",
+  "dice": 16,
+  "parts": false
+}

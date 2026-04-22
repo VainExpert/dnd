@@ -1,0 +1,61 @@
+{
+  "id": "wanted-poster-gold-steckbriefe",
+  "titel": "Wanted Poster Gold-Steckbriefe",
+  "description": "W6-Zufallstabelle mit Gold-Steckbriefen vom schwarzen Brett.",
+  "dice": 6,
+  "parts": false,
+  "1": {
+    "name": "Rask \"Laternenmesser\"",
+    "vergehen": "Mehrfacher Mord, Raub, Flucht aus Gewahrsam",
+    "beschreibung": "Menschlicher Mann, hager, kurze schwarze Haare, tiefe Schnittnarbe über der rechten Wange.",
+    "zuletzt_gesehen": "In dunklen Gassen nahe der Hafenmauer.",
+    "besonderer_hinweis": "Greift bevorzugt nachts und aus dem Hinterhalt an.",
+    "belohnung": "300 Goldstücke",
+    "hinweis": "Als äußerst gefährlich einzustufen."
+  },
+  "2": {
+    "name": "Noreia Aschensang",
+    "vergehen": "Brandstiftung, Erpressung, Anstiftung zu Aufruhr",
+    "beschreibung": "Halbelfin, rot gefärbtes Haar, goldene Ohrringe, auffallend melodische Stimme.",
+    "zuletzt_gesehen": "Bei Armenküchen, Marktplätzen und öffentlichen Versammlungen.",
+    "besonderer_hinweis": "Nutzt Charme, Musik und gezielte Hetze, bevor Feuer gelegt wird.",
+    "belohnung": "325 Goldstücke",
+    "hinweis": "Möglichst lebend, um Hintermänner zu ermitteln."
+  },
+  "3": {
+    "name": "Vargan Steinfaust",
+    "vergehen": "Anführung bewaffneter Räuber, Überfälle auf Karawanen, Tötung von Wachen",
+    "beschreibung": "Zwerg, massig, grauer Bart, eiserne Faustprothese.",
+    "zuletzt_gesehen": "Auf der Handelsstraße durch den Hügelpass.",
+    "besonderer_hinweis": "Führt eine disziplinierte Räubergruppe mit militärischer Härte.",
+    "belohnung": "350 Goldstücke",
+    "hinweis": "Seine Bande ist organisiert und gut bewaffnet."
+  },
+  "4": {
+    "name": "Meistra Kallidra",
+    "vergehen": "Verbotene Nekromantie, Grabschändung, Handel mit Gebeinen",
+    "beschreibung": "Menschliche Frau, bleiche Haut, violette Robe, oft mit Knochenstab.",
+    "zuletzt_gesehen": "Bei alten Friedhöfen und verfallenen Kapellen.",
+    "besonderer_hinweis": "Vermutlich begleitet von Untoten oder alchemischen Dienern.",
+    "belohnung": "400 Goldstücke",
+    "hinweis": "Priesterliche Unterstützung empfohlen."
+  },
+  "5": {
+    "name": "Orenz der Sammler",
+    "vergehen": "Entführung von Handwerkern und Schreiberlingen, erzwungene Arbeit, Folter",
+    "beschreibung": "Menschlicher Mann, geschniegelt, schmale Nase, stets mit feinem Stock.",
+    "zuletzt_gesehen": "In verlassenen Stadthäusern nahe dem Fluss.",
+    "besonderer_hinweis": "Hält Opfer angeblich für „nützliche Ressourcen“.",
+    "belohnung": "375 Goldstücke",
+    "hinweis": "Opferrettung hat Vorrang."
+  },
+  "6": {
+    "name": "Die Graue Natter",
+    "vergehen": "Spionage, Auftragsmord, Verkauf von Staatsgeheimnissen",
+    "beschreibung": "Wahre Identität unbekannt; Gerüchte sprechen von wechselndem Aussehen und vielen Namen.",
+    "zuletzt_gesehen": "Keine sichere Sichtung.",
+    "besonderer_hinweis": "Hat möglicherweise Kontakte zu Hof, Wache oder Rat.",
+    "belohnung": "450 Goldstücke",
+    "hinweis": "Jeder belastbare Hinweis ist ebenfalls vergütungspflichtig."
+  }
+}

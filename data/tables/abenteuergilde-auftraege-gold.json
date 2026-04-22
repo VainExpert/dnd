@@ -1,0 +1,310 @@
+{
+  "1": {
+    "id": "AG-007",
+    "titel": "Der Duft, den keiner riecht",
+    "tier": "Gold",
+    "hook": "Mehrere Viertel melden aggressive Tiere gleichzeitig, als ob eine Welle durch die Stadt zieht.",
+    "briefing": "Die Gilde erhält Sondervollmacht, die Ursache schnell zu finden, bevor der General die Stadt abriegeln lässt.",
+    "objectives": [
+      "Hotspots triangulieren (Zeitpunkte, Wind, Geräusche, Wasserleitungen).",
+      "Einen 'Trigger' identifizieren, der die Substanz aktiviert (Glocken, Schmiedehämmer, Feuerwerk).",
+      "Quelle lokalisieren und stoppen, ohne Massenpanik."
+    ],
+    "complications": [
+      "Streuner verbreiten gezielt falsche Hotspots, um SC zu binden.",
+      "Der Puppenspieler bietet 'Hilfe' an – gegen Gefallen."
+    ],
+    "clues": [
+      "Die Wellen korrelieren mit einem Lieferwagen, der morgens Routen fährt.",
+      "Ein unscheinbares Pulver wird beim Pflastern der Straßen verteilt."
+    ],
+    "outcomes": {
+      "success": "Quelle/Verteiler identifiziert; Zugriff auf Hauptplot möglich.",
+      "partial": "Quelle bekannt, aber Täter entkommt.",
+      "failure": "Ausgangssperre; Gilde unter Verdacht."
+    }
+  },
+  "2": {
+    "id": "AG-008",
+    "titel": "Die unsichtbare Pranke",
+    "tier": "Gold",
+    "hook": "Ein Monster (z.B. Manticore, Basilisk, Owlbear) wird in der Nähe der Stadt ungewöhnlich aggressiv und zieht andere Tiere mit.",
+    "briefing": "Die Wache will es jagen. Die Gilde soll herausfinden, ob es 'gejagt' wird oder etwas es treibt.",
+    "objectives": [
+      "Monster nicht töten, sondern vertreiben/fangen, um Ursache zu untersuchen.",
+      "Spuren von Substanz an Krallen/Fell sammeln.",
+      "Verbindung zwischen Monsterroute und Stadt-Hotspots finden."
+    ],
+    "complications": [
+      "Monster reagiert auf Magie besonders stark; Zauber können es eskalieren.",
+      "Leibgardist des Königs drängt auf schnelle Exekution."
+    ],
+    "clues": [
+      "Am Fell klebt derselbe unsichtbare Film wie an den Teichen.",
+      "Das Monster meidet bestimmte Steine/Metalle (Hinweis auf Gegenmittel)."
+    ],
+    "outcomes": {
+      "success": "Antidot-/Abschirmmaterial entdeckt.",
+      "partial": "Monster entkommt verletzt; wird noch gefährlicher.",
+      "failure": "Monster getötet; wichtigste Probe verloren."
+    }
+  },
+  "3": {
+    "id": "AG-028",
+    "titel": "Das Lied der stillen Stadt",
+    "tier": "Gold",
+    "aushang": "Sonderauftrag. Mehrere Viertel melden in derselben Nacht aggressive Tiere im Takt bestimmter Glocken und Spieluhren. Die Gilde sucht erfahrene Teams zur stillen Aufklaerung eines moeglichen stadtweiten Ausloesersystems. Hohe Bezahlung.",
+    "auftraggeber": "Die Abenteurergilde selbst, mit Sondervollmacht",
+    "briefing": "Dies ist ein echter Schwarzes-Brett-Goldauftrag: Mehrere Hinweise muessen parallel geprueft, Klangquellen verglichen und ein moegliches Ausloesesystem lokalisiert werden, bevor die Stadt in den Ausnahmezustand kippt.",
+    "objectives": [
+      "Zeitpunkte, Klangquellen und Hotspots abgleichen.",
+      "Die ausloesende Melodie oder Frequenz identifizieren.",
+      "Das Sendesystem stilllegen, ohne Massenpanik zu erzeugen."
+    ],
+    "complications": [
+      "Falsche Melodien werden absichtlich in Umlauf gebracht.",
+      "Einflussreiche Buerger verweigern Zugang zu ihren Tuermen oder Hallen."
+    ],
+    "clues": [
+      "Dieselbe Vier-Noten-Folge taucht in mehreren Vierteln auf.",
+      "Mehrere Klangkoerper stammen aus derselben Giesserei."
+    ],
+    "rewards": [
+      "220 GM",
+      "Sondervorrang bei kuenftigen Gildenauftraegen",
+      "Ein Gefallen des Quartiermeisters der Gilde"
+    ],
+    "outcomes": {
+      "success": "Das akustische Ausloesersystem wird lokalisiert und stillgelegt.",
+      "partial": "Die Melodie ist bekannt, aber der mobile Sender entkommt.",
+      "failure": "Eine Ausgangssperre tritt in Kraft und andere ziehen Nutzen daraus."
+    }
+  },
+  "4": {
+    "id": "AG-029",
+    "titel": "Jagd auf den Verteiler",
+    "tier": "Gold",
+    "aushang": "Sonderfahndung. Gesucht wird ein Kurier mit Lieferlisten zu Oelen, Staub, Futterchargen und Strassenmaterial. Zielperson lebend gefangen bevorzugt. Hohe Belohnung und Verschwiegenheit garantiert.",
+    "auftraggeber": "Abenteurergilde im Einvernehmen mit vertraulichen Stellen",
+    "briefing": "Ein Goldauftrag fuers Brett: Der Kurier muss identifiziert, verfolgt und moeglichst lebend gefasst werden, bevor andere Fraktionen ihn zum Schweigen bringen.",
+    "objectives": [
+      "Den Kurier identifizieren und verfolgen.",
+      "Unterlagen, Decknamen und Geldfluesse sichern.",
+      "Naechste Kontaktstelle oder Auftraggeber bestimmen."
+    ],
+    "complications": [
+      "Mehrere Gruppen wollen den Kurier toeten statt befragen.",
+      "Es gibt Locktaschen und absichtlich falsche Listen."
+    ],
+    "clues": [
+      "Ein wasserfestes Notizbuch arbeitet mit Farbcodes statt Namen.",
+      "Mehrere harmlose Stadtdienste tauchen auf denselben Listen auf."
+    ],
+    "rewards": [
+      "240 GM",
+      "Zugriff auf beschlagnahmte Ausruestung im kleinen Umfang",
+      "Vorrangige Behandlung durch die Gildenleitung bei politischen Fragen"
+    ],
+    "outcomes": {
+      "success": "Ein belastbares Verteilernetz wird aufgedeckt.",
+      "partial": "Der Kurier stirbt, aber seine Unterlagen bleiben erhalten.",
+      "failure": "Der Kurier verschwindet, und alle Hotspots wechseln schlagartig."
+    }
+  },
+  "5": {
+    "id": "AG-030",
+    "titel": "Der falsche Erlass",
+    "tier": "Gold",
+    "aushang": "Dringende Pruefung eines angeblich koeniglichen Erlasses: Tierkeulungen, Quarantaene und Sondergewalt der Wache wurden angeordnet. Gesucht werden verlaessliche Ermittler zur Echtheitspruefung und Unterbindung unrechtmaessiger Vollstreckung.",
+    "auftraggeber": "Abenteurergilde, vermerkt durch das Siegel des Hauptschreibers",
+    "briefing": "Das ist ein Brettauftrag mit politischer Sprengkraft. Papier, Siegel und Botenkette muessen geprueft, die Vollstreckung notfalls verzoegert und der Faelscher oder Nutzniesser gefunden werden.",
+    "objectives": [
+      "Siegel, Wachs, Papier und Botenkette pruefen.",
+      "Die Vollstreckung stoppen oder verzoegern.",
+      "Faelscher oder politischen Nutzniesser identifizieren."
+    ],
+    "complications": [
+      "Einige Funktionstraeger wollen den Erlass ungeprueft nutzen.",
+      "Zu offenes Vorgehen laesst die Gilde als Staatsfeind erscheinen."
+    ],
+    "clues": [
+      "Das Wachs stimmt nicht mit Archivstuecken ueberein.",
+      "Die Botenroute fuehrt ueber eine verlassene Kanzlei."
+    ],
+    "rewards": [
+      "230 GM",
+      "Archivzugang oder notarielle Hilfe durch koenigliche Kanzleikontakte",
+      "Ein offizielles Entlastungsschreiben fuer spaetere Konfliktlagen"
+    ],
+    "outcomes": {
+      "success": "Die Faelschung wird bewiesen und eine Saeuberungsaktion verhindert.",
+      "partial": "Die Vollstreckung stoppt, aber die Hintermaenner entziehen sich.",
+      "failure": "Die falsche Verfuegung tritt in Kraft und schafft vollendete Tatsachen."
+    }
+  },
+  "6": {
+    "id": "AG-031",
+    "titel": "Unter dem Pflaster",
+    "tier": "Gold",
+    "aushang": "Sonderkommando fuer unterirdische Mischkammer gesucht. Hinweise deuten auf geheime Leitungen unter den Strassen hin, die Rueckstaende in Brunnen, Kanaele und Lagerkeller tragen. Nur erfahrene Teams melden sich.",
+    "auftraggeber": "Abenteurergilde mit Sonderrecht zum Zugriff",
+    "briefing": "Ein schwarzes Brett fuer grosse Auftraege: Zugang finden, Anlage sichern, Geraete und Faesser pruefen und moeglichst belastbare Beweise auf Auftraggeber und Verteilwege bergen.",
+    "objectives": [
+      "Zugang zur Hauptkammer finden.",
+      "Faesser, Leitungen und Mischgeraete sichern.",
+      "Beweise auf Auftraggeber, Logistik und Trigger sammeln."
+    ],
+    "complications": [
+      "Die Anlage kann sich selbst fluten oder verraeuchern.",
+      "Einige Arbeiter handeln unter Zwang und sollten moeglichst lebend gesichert werden."
+    ],
+    "clues": [
+      "Bronzerohre verbinden bekannte Hotspots.",
+      "Faesser sind nach Tierart und Ausloeser gruppiert."
+    ],
+    "rewards": [
+      "260 GM",
+      "Anteil an beschlagnahmter Ware oder Material im Wert von 40 GM",
+      "Groesseres Ansehen innerhalb der Gilde"
+    ],
+    "outcomes": {
+      "success": "Die Hauptquelle wird abgeschaltet und das Netz offengelegt.",
+      "partial": "Die Quelle ist vernichtet, aber die Koepfe dahinter bleiben im Dunkeln.",
+      "failure": "Die Kammer wird geflutet und fast alle Beweise gehen verloren."
+    }
+  },
+  "7": {
+    "id": "AG-032",
+    "titel": "Die schwarze Audienz",
+    "tier": "Gold",
+    "aushang": "Verdeckter Einsatz. Es gibt Hinweise auf ein geheimes Treffen, bei dem Vertreter aus Gilden, Tempeln, Wache und Unterwelt zugleich manipuliert werden. Gesucht werden diskrete, belastbare Teams fuer Infiltration und Beweissicherung.",
+    "auftraggeber": "Verdeckter Ausschuss der Abenteurergilde",
+    "briefing": "Ein Goldauftrag fuer das schwarze Brett, aber nur fuer bewaehrte Leute: Eindringen, Namen sichern und unterscheiden, wer Taeter und wer nur erpresst ist.",
+    "objectives": [
+      "Das Treffen infiltrieren oder belauschen.",
+      "Schuldige von bloß Erpressten unterscheiden.",
+      "Mit Namen, Dokumenten oder Beweisen entkommen."
+    ],
+    "complications": [
+      "Nicht alle Teilnehmer sind freiwillig dort.",
+      "Ein Broker im Hintergrund arbeitet mit wohltätigen Fronten."
+    ],
+    "clues": [
+      "Jede Fraktion erhielt eine andere Katastrophengeschichte als Einladung.",
+      "Mehrere Liefer- und Spendenwege laufen auf dieselben Strohmaenner hinaus."
+    ],
+    "rewards": [
+      "250 GM",
+      "Politische Schutzdeckung durch die Gilde",
+      "Einmaliger Zugriff auf ein geheimes Informantennetz"
+    ],
+    "outcomes": {
+      "success": "Die politische Struktur hinter dem Komplott wird sichtbar.",
+      "partial": "Einige Namen werden gesichert, die Schluesselfigur bleibt aber verdeckt.",
+      "failure": "Die Gilde wird selbst kompromittiert."
+    }
+  },
+  "8": {
+    "id": "AG-033",
+    "titel": "Der Kaefig des Koenigs",
+    "tier": "Gold",
+    "aushang": "Sonderauftrag. Ein koenigliches Schaustueck mit seltenen Bestien soll heimlich in eine sichere Anlage verlegt werden, nachdem ein Tierpfleger verschwand und mehrere Kaefige manipuliert wurden. Nur erfahrene Teams melden sich.",
+    "auftraggeber": "Abenteurergilde im Auftrag eines koeniglichen Stallmeisters",
+    "briefing": "Ein Goldauftrag mit politischem Gewicht: Die Gruppe soll die Bestienanlage sichern, den verschwundenen Pfleger finden, die Kaefigmechanik untersuchen und klaeren, ob jemand die Tiere als Ausloeser fuer einen Hofskandal missbrauchen will.",
+    "objectives": [
+      "Kaefige, Schleusen und Beruhigungsprotokolle sichern.",
+      "Den verschwundenen Pfleger oder seine Aufzeichnungen finden.",
+      "Manipulierte Pflegeoele, Futter oder Klangzeichen identifizieren.",
+      "Eine Eskalation am Hof oder eine oeffentliche Tierjagd verhindern."
+    ],
+    "complications": [
+      "Ein koeniglicher Leibgardist will die gefaehrlichsten Tiere sofort toeten lassen.",
+      "Ein Hofbeamter versucht, die Anlage vor der Gilde zu versiegeln.",
+      "Mindestens ein Tier ist nicht boese, sondern gezielt auf bestimmte Signale konditioniert worden."
+    ],
+    "clues": [
+      "Mehrere Kaefigriegel tragen dasselbe reaktive Oel wie fruehere Hotspots.",
+      "Im Notizbuch des Pflegers stehen Lieferzeichen, die auch in Futter- und Strassenmateriallisten auftauchen.",
+      "Eine Glockenfolge aus dem Hofgarten loest Unruhe aus, obwohl sie offiziell nur Zeremonien dient."
+    ],
+    "rewards": [
+      "270 GM",
+      "Koeniglicher Stall- oder Hofzugang fuer spaetere Ermittlungen",
+      "Ein diskreter Gefallen eines einflussreichen Hofkontakts"
+    ],
+    "outcomes": {
+      "success": "Die Anlage bleibt unter Kontrolle, der Pfleger oder seine Beweise werden gesichert und eine Hofspur fuehrt tiefer ins Komplott.",
+      "partial": "Die Tiere werden gerettet, aber ein Verantwortlicher entkommt mit wichtigen Unterlagen.",
+      "failure": "Ein Ausbruch erzwingt eine oeffentliche Jagd und der Hof nutzt die Katastrophe gegen die Gilde."
+    }
+  },
+  "9": {
+    "id": "AG-046",
+    "titel": "Das rote Register",
+    "tier": "Gold",
+    "aushang": "Sonderauftrag nur fuer erfahrene Teams: Eine versteckte Buchfuehrung zu Futter, Oelen und Schutzgeldern soll in einem gesicherten Lagerhaus geborgen werden. Diskretion, Geschwindigkeit und belastbare Beweise sind zwingend.",
+    "auftraggeber": "Abenteurergilde, auf Anweisung der Leitung",
+    "briefing": "Ein Schwarzes-Brett-Goldauftrag mit klarer Zielsetzung: Eindringen, Register sichern, lebende Zeugen wenn moeglich festsetzen und den Inhalt schuetzen, bevor Unterwelt oder Wache die Sache bereinigen.",
+    "objectives": [
+      "In das Lagerhaus eindringen.",
+      "Register, Zahlungslisten und Proben sichern.",
+      "Mindestens einen Verantwortlichen identifizieren oder festsetzen."
+    ],
+    "complications": [
+      "Das Lagerhaus ist doppelt abgesichert: gegen Diebe und gegen Verrat von innen.",
+      "Ein Feuerplan soll Beweise bei Gefahr vernichten."
+    ],
+    "clues": [
+      "Mehrere Listen verknuepfen scheinbar harmlose Haendler zu einem Ring.",
+      "Eine rot markierte Spalte verweist auf besondere Ausloeser und Zieltiere."
+    ],
+    "rewards": [
+      "245 GM",
+      "Beschlagnahmte Ware im Wert von 30 GM",
+      "Ein direkter Gefallen der Gildenleitung"
+    ],
+    "outcomes": {
+      "success": "Das Register liefert harte Beweise und Namen.",
+      "partial": "Die Listen werden gesichert, aber die Verantwortlichen entkommen.",
+      "failure": "Das Lagerhaus brennt aus und die Beweise sind fast voellig verloren."
+    }
+  },
+  "10": {
+    "id": "AG-047",
+    "titel": "Die Maske des Kaemmerers",
+    "tier": "Gold",
+    "aushang": "Grosser Sonderauftrag: Bei einem Hofmaskenfest sollen Abrechnungen, Siegel und Erpressungsmaterial den Besitzer wechseln. Gesucht wird eine erfahrene Gruppe zur stillen Beobachtung, Sicherung und Aufdeckung des Drahtziehers.",
+    "auftraggeber": "Abenteurergilde ueber einen verdeckten Hofkontakt",
+    "briefing": "Ein Goldauftrag fuer diskrete Spezialisten. Die Gruppe soll ein Maskenfest infiltrieren, die Uebergabe verhindern oder kontrollieren und moeglichst belastbare Hinweise auf Auftraggeber und Empfaenger gewinnen.",
+    "objectives": [
+      "Zugang zum Fest oder zu seinen Dienerwegen erhalten.",
+      "Die zu uebergebenden Unterlagen, Siegel oder Listen identifizieren.",
+      "Den Drahtzieher oder den Empfaenger entlarven und Beweise sichern."
+    ],
+    "complications": [
+      "Mehrere Gaeste tragen identische Masken und Doppelrollen.",
+      "Ein harmloser Skandal kann das eigentliche Geschaeft ueberdecken.",
+      "Zu fruehes Eingreifen laesst die entscheidende Verbindung verschwinden."
+    ],
+    "clues": [
+      "Der Kaemmerer nutzt einen zweiten, inoffiziellen Siegelring fuer geheime Abrechnungen.",
+      "Eine Servierroute durch den Wintergarten wird nur fuer ganz bestimmte Gaeste geoeffnet."
+    ],
+    "rewards": [
+      "255 GM",
+      "Ein Hofpass fuer spaetere Ermittlungen",
+      "Wohlwollen oder Schuldbrief eines wichtigen Hofkontakts"
+    ],
+    "outcomes": {
+      "success": "Die Uebergabe wird kontrolliert oder verhindert, und eine wichtige Hofspur wird gesichert.",
+      "partial": "Beweise werden geborgen, aber der Hauptdrahtzieher entkommt.",
+      "failure": "Das Fest endet im politischen Skandal und die Gruppe geraet unter Verdacht."
+    }
+  },
+  "id": "abenteuergilde-auftraege-gold",
+  "titel": "Abenteuergilde-Auftraege Gold",
+  "description": "Gold-Auftraege der Abenteurergilde als eigenstaendige Zufallstabelle mit vollstaendigen Auftragseintraegen.",
+  "tier": "Gold",
+  "dice": 10,
+  "parts": false
+}

@@ -1,0 +1,43 @@
+{
+  "id": "wanted-poster-platin-steckbriefe",
+  "titel": "Wanted Poster Platin-Steckbriefe",
+  "description": "W4-Zufallstabelle mit Platin-Steckbriefen vom schwarzen Brett.",
+  "dice": 4,
+  "parts": false,
+  "1": {
+    "name": "Garrick Moorkrone",
+    "vergehen": "Hochverrat, Finanzierung bewaffneter Aufstände, Bestechung von Offizieren",
+    "beschreibung": "Menschlicher Adliger, ergrautes Haar, aufrechter Gang, trägt oft dunklen Reitmantel mit Silberbrosche.",
+    "zuletzt_gesehen": "Auf Landsitzen östlich der Hauptstadt, jedoch oft unter Schutz reisend.",
+    "besonderer_hinweis": "Politisch vernetzt, besitzt loyale bewaffnete Gefolgsleute.",
+    "belohnung": "1.000 Goldstücke",
+    "hinweis": "Nur mit Genehmigung höherer Stellen oder im Namen der Krone zugreifen."
+  },
+  "2": {
+    "name": "Sereth die Schwarze Glocke",
+    "vergehen": "Kultführung, Menschenopfer, Entführung, Dämonenpakt",
+    "beschreibung": "Elfe unklaren Alters, weißes Haar, schwarze Glocke am Gürtel, dunkle zeremonielle Gewänder.",
+    "zuletzt_gesehen": "In Ruinen südlich des Königsforstes.",
+    "besonderer_hinweis": "Führt fanatische Anhänger und bedient sich finsterer Magie.",
+    "belohnung": "1.200 Goldstücke",
+    "hinweis": "Priester, Magiekundige und erfahrene Kämpfer dringend empfohlen."
+  },
+  "3": {
+    "name": "Königsmörder Halbrecht",
+    "vergehen": "Attentatsversuch auf hochgestellte Würdenträger, mehrfacher Mord, Flucht aus königlichem Gewahrsam",
+    "beschreibung": "Menschlicher Mann, mittelgroß, bartlos, unscheinbares Gesicht, oft als Diener verkleidet.",
+    "zuletzt_gesehen": "Zuletzt in der Hauptstadt; seitdem keine bestätigte Spur.",
+    "besonderer_hinweis": "Meister der Tarnung und des Giftgebrauchs.",
+    "belohnung": "1.500 Goldstücke",
+    "hinweis": "Mit äußerster Vorsicht vorgehen. Nicht allein verfolgen."
+  },
+  "4": {
+    "name": "Brynja Feuerkette",
+    "vergehen": "Piraterie, Brandplünderung, Versenkung königlicher Handelsschiffe, Mord",
+    "beschreibung": "Zwergin, geflochtener schwarzer Bart, brandnarbiges Gesicht, Kettenmantel mit roten Metallringen.",
+    "zuletzt_gesehen": "Auf einem schnellen schwarzen Flussschiff mit rotem Segel.",
+    "besonderer_hinweis": "Führt eine disziplinierte und grausame Flussräuberbande.",
+    "belohnung": "1.300 Goldstücke",
+    "hinweis": "Zugriff vorzugsweise mit Wasserwache oder bewaffneter Eskorte."
+  }
+}

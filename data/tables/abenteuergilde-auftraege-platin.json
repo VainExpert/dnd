@@ -1,0 +1,212 @@
+{
+  "1": {
+    "id": "AG-048",
+    "titel": "Die violette Flut",
+    "tier": "Platin",
+    "aushang": "Platinauftrag. Mehrere Stadtviertel, Teiche und Stallungen zeigen gleichzeitig Ausbrueche aggressiven Tierverhaltens. Hinweise deuten auf eine koordinierte Freisetzung ueber Wasser, Oel und Staub hin. Nur erfahrenste Teams melden sich.",
+    "auftraggeber": "Abenteurergilde mit Sondervollmacht des Kronrates",
+    "briefing": "Dies ist ein langer und gefaehrlicher Auftrag vom Schwarzen Brett, der mehrere Einsaetze umfasst: Versorgungspunkte sichern, eine Freisetzungsroute rekonstruieren, Schluesseldepots stilllegen und die stadtweite Welle brechen, bevor die Ordnung kollabiert.",
+    "objectives": [
+      "Mindestens drei Hotspots innerhalb kurzer Zeit absichern.",
+      "Wasser-, Oel- und Staubquellen kartieren und vergleichen.",
+      "Ein Hauptdepot oder eine Mischkammer lokalisieren und abschalten.",
+      "Die Stadt vor Ausgangssperre oder Massenkeulung bewahren."
+    ],
+    "complications": [
+      "Wache, Tempel und Unterwelt verfolgen teils gegensaetzliche Ziele.",
+      "Mehrere Scheindepots und falsche Hotspots werden absichtlich gestreut.",
+      "Oeffentliche Panik droht jede Ermittlung zu ersticken."
+    ],
+    "clues": [
+      "Bronzerohre und Lieferkarren verbinden Viertel, die oberflaechlich nichts gemeinsam haben.",
+      "Bestimmte Trigger wie Glocken, Schmiedehaemmer oder Trompetensignale verstaerken die Ausbrueche."
+    ],
+    "rewards": [
+      "420 GM",
+      "Grosses Ansehen innerhalb der Gilde",
+      "Sonderzugriff auf Gildenressourcen, Heilung und Informanten",
+      "Ein politischer Gefallen mittlerer Tragweite"
+    ],
+    "outcomes": {
+      "success": "Die Welle wird gebrochen und das Netzwerk hinter der Freisetzung wird sichtbar.",
+      "partial": "Die Stadt bleibt stabil, aber die Drahtzieher entkommen in eine zweite Phase.",
+      "failure": "Ein Notstand wird ausgerufen und die Gilde geraet selbst unter Verdacht."
+    }
+  },
+  "2": {
+    "id": "AG-049",
+    "titel": "Die Faelschung des Schweigethrons",
+    "tier": "Platin",
+    "aushang": "Platinauftrag. Belastbare Hinweise deuten darauf hin, dass mehrere gefaelschte koenigliche Erlasse, Transportrechte und Quarantaenebefehle gleichzeitig im Umlauf sind. Erfahrene Ermittler gesucht, die Archiv, Kanzlei und Botennetz pruefen koennen.",
+    "auftraggeber": "Abenteurergilde und verdeckte Kontakte aus der Kanzlei",
+    "briefing": "Ein lang angelegter Auftrag: Die Gruppe muss Faelschungen identifizieren, den Botenapparat infiltrieren, echte Dokumente schuetzen und den politischen Nutzniesser entlarven, bevor die Stadt nach falschen Befehlen handelt.",
+    "objectives": [
+      "Mindestens zwei gefaelschte Erlasswege rekonstruieren.",
+      "Das Faelscheratelier oder die Ausgabestelle finden.",
+      "Belastbare Beweise sichern, die vor Rat oder Krone standhalten.",
+      "Die Vollstreckung der gefaehrlichsten Faelschungen verhindern."
+    ],
+    "complications": [
+      "Hochgestellte Namen tauchen in der Kette auf.",
+      "Ein Teil der Wache vollstreckt Befehle bereits guten Glaubens.",
+      "Die Faelscher nutzen echte Archiveintraege als Tarnung."
+    ],
+    "clues": [
+      "Wachs, Papier und Randmarkierungen unterscheiden sich minimal von echten Stuecken.",
+      "Mehrere Botenrouten ueberschneiden sich an einer verlassenen Kanzlei mit verdecktem Zugang."
+    ],
+    "rewards": [
+      "430 GM",
+      "Archiv- und Siegelzugang auf Zeit",
+      "Ein starkes Empfehlungsschreiben an Hof oder Rat",
+      "Ein belastbarer politischer Gefallen"
+    ],
+    "outcomes": {
+      "success": "Das Faelschernetz wird offengelegt und mehrere Fehlbefehle werden annulliert.",
+      "partial": "Die Faelschungen stoppen, doch die Auftraggeber bleiben nur teilweise verdeckt sichtbar.",
+      "failure": "Die Gruppe verhindert Einzelnes, aber das Machtspiel kippt weiter zu Gunsten der Feinde."
+    }
+  },
+  "3": {
+    "id": "AG-050",
+    "titel": "Die drei Kreise der Audienz",
+    "tier": "Platin",
+    "aushang": "Platinauftrag. Es gibt Hinweise auf drei gekoppelte Geheimtreffen von Gilden, Tempeln und Unterwelt. Ziel: Infiltration, Beweissicherung und Zuordnung von Taetern, Nutzniessern und Erpressten. Nur bewaehrte Teams.",
+    "auftraggeber": "Verdeckter Ausschuss der Abenteurergilde",
+    "briefing": "Der Auftrag ist lang und riskant: Drei Veranstaltungen an unterschiedlichen Orten muessen beobachtet oder infiltriert werden. Die Gruppe muss Informationen verknuepfen, ohne zu frueh aufzufliegen, und anschliessend harte Beweise an den richtigen Ort bringen.",
+    "objectives": [
+      "Mindestens zwei der drei Treffen unentdeckt beobachten oder infiltrieren.",
+      "Verbindungen zwischen Teilnehmern und Liefernetz belegen.",
+      "Schuldige von bloss Erpressten unterscheiden.",
+      "Mit den gesicherten Beweisen entkommen und sie an eine verlaessliche Stelle bringen."
+    ],
+    "complications": [
+      "Die Treffen nutzen verschiedene Tarnungen: Spendenabend, kleine Tempelzeremonie, Handelsmahl.",
+      "Einige Teilnehmer sind potentielle Verbuendete, wenn man sie richtig behandelt.",
+      "Die Feinde testen absichtlich auf Verrat in den eigenen Reihen."
+    ],
+    "clues": [
+      "Dieselben Namen tauchen nie direkt auf, aber dieselben Geldstroeme und Transportzeichen schon.",
+      "Wohltaetige Frontorganisationen verbinden mehrere Machtzentren miteinander."
+    ],
+    "rewards": [
+      "440 GM",
+      "Dauerhafter Kontakt zu einem verdeckten Informantennetz",
+      "Zugang zu einem sicheren Haus der Gilde",
+      "Ein einmaliger diplomatischer oder krimineller Gefallen"
+    ],
+    "outcomes": {
+      "success": "Die Machtstruktur hinter dem Komplott wird aufgedeckt und mehrere Gegner werden zugleich verwundbar.",
+      "partial": "Ein Kreis wird gesprengt, aber die anderen gehen tiefer in den Untergrund.",
+      "failure": "Die Gruppe fliegt auf und wird selbst Teil der Erzaehlung des Feindes."
+    }
+  },
+  "4": {
+    "id": "AG-051",
+    "titel": "Unterstadt Null",
+    "tier": "Platin",
+    "aushang": "Platinauftrag. Unter der Unterstadt existiert offenbar eine zweite, verborgene Verteilebene mit Mischkammern, Kanaelen und Notdepots. Ziel ist die Erkundung, Sicherung und Abschaltung dieser Ebene. Lebensgefahr wahrscheinlich.",
+    "auftraggeber": "Abenteurergilde mit Unterstuetzung der Wasserhueter",
+    "briefing": "Ein laengerer Dungeon- und Ermittlungsauftrag: Einstieg finden, die unterirdische Infrastruktur kartieren, Arbeiter und Wachen voneinander trennen, Proben sichern und die Anlage abschalten, ohne die halbe Unterstadt zu ueberfluten.",
+    "objectives": [
+      "Einstieg und Hauptachse der Unteranlage finden.",
+      "Mischgeraete, Leitungen und Reservoire dokumentieren.",
+      "Zwangsarbeiter oder Unbeteiligte wenn moeglich lebend sichern.",
+      "Die Anlage kontrolliert abschalten oder unbrauchbar machen."
+    ],
+    "complications": [
+      "Selbstflutung, giftige Daempfe und Notverschluesse machen den Rueckweg unsicher.",
+      "Bewaffnete Aufseher und bezahlte Saboteure kennen die Gaenge besser als jede Wache.",
+      "Ein falscher Hebel kann die Beweise vernichten."
+    ],
+    "clues": [
+      "Mehrere Leitungsstraenge entsprechen exakt bekannten Hotspots an der Oberflaeche.",
+      "Substanzvarianten sind nach Tierart, Ausloeser und Zielviertel sortiert."
+    ],
+    "rewards": [
+      "450 GM",
+      "Anteil an beschlagnahmter Ware im Wert von 60 GM",
+      "Grosser Respekt bei Gilde und Wasserhuetern",
+      "Bevorzugter Zugriff auf spaetere Sonderauftraege"
+    ],
+    "outcomes": {
+      "success": "Die Unteranlage faellt, und das logistische Herz des Netzwerks ist gebrochen.",
+      "partial": "Die Anlage wird schwer beschaedigt, doch ein Zweig entkommt mit Kernunterlagen.",
+      "failure": "Die Anlage flutet und begraebt Beweise und moegliche Zeugen."
+    }
+  },
+  "5": {
+    "id": "AG-052",
+    "titel": "Der Hof hinter dem Spiegel",
+    "tier": "Platin",
+    "aushang": "Platinauftrag. Eine Reihe von Spuren deutet auf einen verdeckten Hofzirkel hin, der Tierchaos, Faelschungen und politische Massnahmen zugleich steuert. Erfahrene Teams werden gesucht, um den Zirkel zu enttarnen, ohne einen Staatskollaps auszuloesen.",
+    "auftraggeber": "Abenteurergilde in streng vertraulicher Absprache mit der Krone",
+    "briefing": "Dieser Auftrag verlangt mehrere Phasen: hoefische Infiltration, Beweisfuehrung, Schutz einzelner Zeugen und gegebenenfalls Zugriff auf einen inneren Kreis. Offene Gewalt kann katastrophale Folgen haben, falsches Zoegern ebenso.",
+    "objectives": [
+      "Den inneren Zirkel identifizieren.",
+      "Belastbare Beweise gegen mindestens zwei hochrangige Beteiligte sichern.",
+      "Schluesselzeugen oder Dokumente vor Bereinigung schuetzen.",
+      "Einen Zugriff ermoeglichen, ohne Buergerkrieg oder Putsch auszuloesen."
+    ],
+    "complications": [
+      "Nicht jeder Adlige im Zirkel ist Taeter; manche sind erpresst oder manipuliert.",
+      "Mehrere Seiten wollen die Gruppe gegeneinander ausspielen.",
+      "Ein entlarvter Gegner koennte sofort den Notstand ausrufen lassen."
+    ],
+    "clues": [
+      "Liefer- und Spendenwege enden in denselben hoefischen Haushalten.",
+      "Mehrere scheinbar unabhaengige Entscheidungen ergeben zusammen ein Muster geplanter Krise."
+    ],
+    "rewards": [
+      "460 GM",
+      "Hofzugang und ein Schutzbrief der Krone",
+      "Ein maechtiger politischer Gefallen",
+      "Ein dauerhaft erhoehter Rang oder Ruf in der Gilde"
+    ],
+    "outcomes": {
+      "success": "Der Hofzirkel wird enttarnt und die Krise politisch kontrollierbar.",
+      "partial": "Ein Teil des Zirkels faellt, doch die groesste Figur entzieht sich der direkten Schuld.",
+      "failure": "Der Zirkel ueberlebt und lenkt den Verdacht auf andere oder auf die Gilde."
+    }
+  },
+  "6": {
+    "id": "AG-053",
+    "titel": "Die letzte Parade",
+    "tier": "Platin",
+    "aushang": "Platinauftrag. Mehrere Hinweise deuten darauf hin, dass eine bevorstehende koenigliche Parade als finaler Ausloeser fuer flaechendeckendes Tierchaos, Massenpanik und politische Saeuberung missbraucht werden soll. Sofortige Einsatzbereitschaft erforderlich.",
+    "auftraggeber": "Abenteurergilde mit koeniglicher Notsiegelung",
+    "briefing": "Der Auftrag vereint Schutzmission, Ermittlungsabschluss und moeglichen Endzugriff: Die Parade muss gesichert, Trigger stillgelegt, Tiere und Publikum geschuetzt und die Drahtzieher vor Ort oder im Hintergrund gestellt werden.",
+    "objectives": [
+      "Paradeweg, Tierbereiche und Klangquellen im Voraus pruefen.",
+      "Mindestens zwei Trigger oder Sabotagepunkte stilllegen.",
+      "Panik im Publikum und Massenkeulungen verhindern.",
+      "Drahtzieher oder deren Einsatzleitung stellen oder entlarven."
+    ],
+    "complications": [
+      "Die Parade selbst erzeugt viele Geraeusche, Bewegungen und politische Angriffsflaechen.",
+      "Jede Partei des Reichs deutet das Ereignis anders und nutzt Fehler sofort aus.",
+      "Ein offener Fehlschlag koennte die Krone oder die Gilde dauerhaft schwaechen."
+    ],
+    "clues": [
+      "Fanfaren, Glocken, Tierpflege und Lieferketten greifen exakt ineinander.",
+      "Ein Teil der scheinbaren Sicherheitsmassnahmen ist selbst Teil des Plans."
+    ],
+    "rewards": [
+      "500 GM",
+      "Koenigliche Anerkennung oder grosser Schutzbrief",
+      "Zugang zu hochrangigen Ressourcen der Gilde",
+      "Ein dauerhafter, weltlich oder politisch bedeutsamer Gefallen"
+    ],
+    "outcomes": {
+      "success": "Die Parade wird gerettet und das Netzwerk hinter der Verschwoerung bricht sichtbar zusammen.",
+      "partial": "Die Katastrophe wird verkleinert, aber nicht voellig verhindert; einige Koepfe entkommen.",
+      "failure": "Die Parade endet im Desaster und eine neue Ordnung erhebt Anspruch auf die Stadt."
+    }
+  },
+  "id": "abenteuergilde-auftraege-platin",
+  "titel": "Abenteuergilde-Auftraege Platin",
+  "description": "Platin-Auftraege der Abenteurergilde als eigenstaendige Zufallstabelle mit vollstaendigen Auftragseintraegen.",
+  "tier": "Platin",
+  "dice": 6,
+  "parts": false
+}

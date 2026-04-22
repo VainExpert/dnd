@@ -2,14 +2,30 @@
   const storageKey = "dnd-theme";
   const root = document.documentElement;
 
+  function readSavedTheme(){
+    try {
+      return localStorage.getItem(storageKey);
+    } catch {
+      return null;
+    }
+  }
+
+  function writeSavedTheme(theme){
+    try {
+      localStorage.setItem(storageKey, theme);
+    } catch {}
+  }
+
   function getTheme(){
-    const saved = localStorage.getItem(storageKey);
+    const saved = readSavedTheme();
     return saved === "light" || saved === "dark" ? saved : "dark";
   }
 
   function setTheme(theme){
     root.dataset.theme = theme;
-    localStorage.setItem(storageKey, theme);
+    root.classList.toggle("theme-light", theme === "light");
+    root.classList.toggle("theme-dark", theme === "dark");
+    writeSavedTheme(theme);
     const button = document.querySelector("[data-theme-toggle]");
     if (button) {
       button.textContent = theme === "light" ? "Dunkel" : "Hell";

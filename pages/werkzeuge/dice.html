@@ -4,8 +4,8 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Würfel</title>
-  <link rel="stylesheet" href="../../styles.css"/>
-  <script src="../../theme.js"></script>
+  <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
+  <script src="../../theme.js?v=theme-20260422"></script>
 
   <style>
     .tool-row{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
@@ -223,11 +223,11 @@ Vorteil: 2d20kh1+5"></textarea>
   </div>
 </main>
 
-<script src="../../data/tables/tables-global.js?v=2"></script>
+<script src="../../data/tables/tables-global.js?v=3"></script>
 
 <script type="module">
-  import { escapeHtml, normalizeTable, rollTableEntry } from "../../lib.js";
-  import { TABLE_FILES, TABLE_DATA_BY_FILE } from "../../data/tables/tables-data.js?v=2";
+  import { escapeHtml, normalizeTable, rollTableEntry, renderTableHtml } from "../../lib.js";
+  import { TABLE_FILES, TABLE_DATA_BY_FILE } from "../../data/tables/tables-data.js?v=3";
 
   // ---------------- Dice engine ----------------
   function randInt(min, max){
@@ -737,7 +737,10 @@ Vorteil: 2d20kh1+5"></textarea>
   async function loadTablesIndex(){
     try{
       const files = Array.isArray(TABLE_FILES) && TABLE_FILES.length ? TABLE_FILES : [];
-      tableSel.innerHTML = `<option value="">(Tabelle wählen)</option>` + files.map(f => `<option value="${escapeHtml(f)}">${escapeHtml(f)}</option>`).join("");
+      tableSel.innerHTML = `<option value="">(Tabelle w&auml;hlen)</option>` + files.map(f => {
+        const table = normalizeTable(TABLE_DATA_BY_FILE[f], f.replace(/\.json$/i, ""));
+        return `<option value="${escapeHtml(f)}">${escapeHtml(table?.name || f)}</option>`;
+      }).join("");
       loadedTables = files;
       if (!files.length) rollTableBtn.disabled = true;
     } catch {
@@ -758,12 +761,7 @@ Vorteil: 2d20kh1+5"></textarea>
         <div class="mini-box" style="margin:0;">
           <div class="mini-box-title">${escapeHtml(activeTable.name || "Tabelle")}${activeTable.dice ? ` (${escapeHtml(activeTable.dice)})` : ""}${r.roll!=null ? ` • Wurf ${escapeHtml(String(r.roll))}` : ""}</div>
           <div class="mini-box-text">
-            <div>${escapeHtml(String(r.text))}</div>
-            ${Array.isArray(r.parts) && r.parts.length ? `
-              <ul class="cards-list">
-                ${r.parts.map(part => `<li><b>${escapeHtml(part.label)}:</b> ${escapeHtml(part.text)}${part.roll != null ? ` (${escapeHtml(String(part.roll))})` : ""}</li>`).join("")}
-              </ul>
-            ` : ""}
+            ${renderTableHtml(activeTable, r)}
           </div>
         </div>
       `;
@@ -797,18 +795,19 @@ Vorteil: 2d20kh1+5"></textarea>
     const rollTableBtn = document.getElementById("rollTableBtn");
     const tableResult = document.getElementById("tableResult");
     if (!api || !tableSel || !rollTableBtn || !tableResult) return;
-    if (tableSel.options.length > 1) return;
+    tableSel.innerHTML = "";
 
     const tablesByFile = {};
     const files = (api.files || []).slice();
 
-    tableSel.innerHTML = `<option value="">(Tabelle wählen)</option>`;
+    tableSel.innerHTML = `<option value="">(Tabelle w&auml;hlen)</option>`;
     for (const file of files){
+      const table = api.normalizeTable(api.dataByFile[file], file.replace(/\.json$/i, ""));
       const opt = document.createElement("option");
       opt.value = file;
-      opt.textContent = file;
+      opt.textContent = table?.name || file;
       tableSel.appendChild(opt);
-      tablesByFile[file] = api.normalizeTable(api.dataByFile[file], file.replace(/\.json$/i, ""));
+      tablesByFile[file] = table;
     }
 
     let activeTable = null;
@@ -828,12 +827,7 @@ Vorteil: 2d20kh1+5"></textarea>
         <div class="mini-box" style="margin:0;">
           <div class="mini-box-title">${api.escapeHtml(activeTable.name || "Tabelle")}${activeTable.dice ? ` (${api.escapeHtml(activeTable.dice)})` : ""}${rolled.roll != null ? ` • Wurf ${api.escapeHtml(String(rolled.roll))}` : ""}</div>
           <div class="mini-box-text">
-            <div>${api.escapeHtml(String(rolled.text))}</div>
-            ${Array.isArray(rolled.parts) && rolled.parts.length ? `
-              <ul class="cards-list">
-                ${rolled.parts.map(part => `<li><b>${api.escapeHtml(part.label)}:</b> ${api.escapeHtml(part.text)}${part.roll != null ? ` (${api.escapeHtml(String(part.roll))})` : ""}</li>`).join("")}
-              </ul>
-            ` : ""}
+            ${api.renderTableHtml(activeTable, rolled)}
           </div>
         </div>
       `;

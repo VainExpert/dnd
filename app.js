@@ -8,6 +8,7 @@ const PAGES = [
   ["Kern", "Charakteroptionen", "content/character-options/index.md"],
 
   ["Welt", "Spielerwissen (Überblick)", "content/lore/index.md"],
+  ["Welt", "Kampagnen-Zeitachsen", "content/campaigns/timelines.md"],
   ["Welt", "Ortsverzeichnis", "content/lore/gazetteer.md"],
   ["Welt", "Länder", "content/lore/country.md"],
   ["Welt", "Religionen", "content/lore/religion.md"],
@@ -92,6 +93,7 @@ function simpleMarkdown(md) {
       const b = block.trim();
       if (!b) return "";
       if (b.startsWith("<h") || b.startsWith("<ul>") || b.startsWith("<blockquote>")) return b;
+      if (b.startsWith("<")) return b;
       return `<p>${b.replace(/\n/g, "<br/>")}</p>`;
     })
     .join("\n");

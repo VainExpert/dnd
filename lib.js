@@ -69,7 +69,7 @@ function randomInt(min, max){
 function formatTableValue(value){
   if (Array.isArray(value)){
     return value
-      .map(part => repairText(String(part ?? "")).trim())
+      .map(part => formatTableValue(part).trim())
       .filter(Boolean)
       .reduce((out, part) => {
         if (!out) return part;
@@ -77,7 +77,114 @@ function formatTableValue(value){
       }, "");
   }
 
+  if (value && typeof value === "object"){
+    return Object.entries(value)
+      .map(([key, entry]) => {
+        const label = String(key).replaceAll("_", " ");
+        return `${label}: ${formatTableValue(entry)}`;
+      })
+      .filter(Boolean)
+      .join(" | ");
+  }
+
   return repairText(String(value ?? ""));
+}
+
+const STRUCTURED_FIELD_LABELS = {
+  id: "ID",
+  tier: "Rang",
+  vergehen: "Vergehen",
+  beschreibung: "Beschreibung",
+  zuletzt_gesehen: "Zuletzt gesehen",
+  besonderer_hinweis: "Besonderer Hinweis",
+  belohnung: "Belohnung",
+  hinweis: "Hinweis",
+  aushang: "Aushang",
+  auftraggeber: "Auftraggeber",
+  hook: "Aufhänger",
+  briefing: "Briefing",
+  objectives: "Ziele",
+  complications: "Komplikationen",
+  clues: "Hinweise",
+  rewards: "Belohnungen",
+  outcomes: "Ausgänge",
+  success: "Erfolg",
+  partial: "Teilerfolg",
+  failure: "Fehlschlag"
+};
+
+const STRUCTURED_FIELD_ORDER = [
+  "id",
+  "tier",
+  "vergehen",
+  "beschreibung",
+  "zuletzt_gesehen",
+  "besonderer_hinweis",
+  "belohnung",
+  "hinweis",
+  "aushang",
+  "auftraggeber",
+  "hook",
+  "briefing",
+  "objectives",
+  "complications",
+  "clues",
+  "rewards",
+  "outcomes"
+];
+
+function fieldLabel(key){
+  return STRUCTURED_FIELD_LABELS[key] || repairText(String(key)).replaceAll("_", " ");
+}
+
+function renderStructuredFieldValue(value){
+  if (Array.isArray(value)){
+    return `<ul>${value.map(entry => `<li>${renderStructuredFieldValue(entry)}</li>`).join("")}</ul>`;
+  }
+
+  if (value && typeof value === "object"){
+    return `
+      <dl class="structured-subfields">
+        ${Object.entries(value).map(([key, entry]) => `
+          <div>
+            <dt>${escapeHtml(fieldLabel(key))}</dt>
+            <dd>${renderStructuredFieldValue(entry)}</dd>
+          </div>
+        `).join("")}
+      </dl>
+    `;
+  }
+
+  return escapeHtml(value);
+}
+
+function renderStructuredTableValueHtml(value){
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    return escapeHtml(formatTableValue(value));
+  }
+
+  const title = value.titel || value.name || value.id || "Eintrag";
+  const subtitle = [value.tier, value.belohnung, value.auftraggeber].filter(Boolean).map(formatTableValue).join(" • ");
+  const hiddenTitleKeys = new Set(["titel", "name"]);
+  const orderedKeys = [
+    ...STRUCTURED_FIELD_ORDER.filter(key => Object.prototype.hasOwnProperty.call(value, key)),
+    ...Object.keys(value).filter(key => !STRUCTURED_FIELD_ORDER.includes(key))
+  ].filter(key => !hiddenTitleKeys.has(key));
+
+  return `
+    <article class="structured-entry">
+      <div class="structured-entry-title">${escapeHtml(title)}</div>
+      ${subtitle ? `<div class="structured-entry-subtitle">${escapeHtml(subtitle)}</div>` : ""}
+      <dl class="structured-fields">
+        ${orderedKeys.map(key => `
+          <div class="structured-field">
+            <dt>${escapeHtml(fieldLabel(key))}</dt>
+            <dd>${renderStructuredFieldValue(value[key])}</dd>
+          </div>
+        `).join("")}
+      </dl>
+    </article>
+  `;
 }
 
 function getTablePartCount(table){
@@ -261,6 +368,70 @@ export function normalizeTable(raw, fallbackLabel = ""){
   };
 }
 
+export function renderTableHtml(rawTable, rollResult){
+  const table = normalizeTable(rawTable);
+  if (!table) return "";
+
+  const entries = table.rangeEntries.length
+    ? table.rangeEntries
+    : table.entries.map((value, index) => ({ min: index + 1, max: index + 1, value }));
+  if (!entries.length) return "";
+
+  const rangeLabel = entry => entry.min === entry.max ? String(entry.min) : `${entry.min}-${entry.max}`;
+
+  if (table.parts){
+    const partCount = getTablePartCount(table);
+    const parts = Array.isArray(rollResult?.parts) ? rollResult.parts : [];
+    const headers = Array.from({ length: partCount }, (_, index) => getTablePartLabel(table, index));
+
+    return `
+      <div class="table-scroll">
+        <table class="roll-table">
+          <thead>
+            <tr>
+              <th>Wurf</th>
+              ${headers.map(header => `<th>${escapeHtml(header)}</th>`).join("")}
+            </tr>
+          </thead>
+          <tbody>
+            ${entries.map(entry => `
+              <tr>
+                <td class="mono">${escapeHtml(rangeLabel(entry))}</td>
+                ${headers.map((_, index) => {
+                  const value = Array.isArray(entry.value) ? (entry.value[index] ?? "") : entry.value;
+                  const selected = parts.some(part => part.index === index && part.roll != null && part.roll >= entry.min && part.roll <= entry.max);
+                  return `<td class="${selected ? "rolled-cell" : ""}">${renderStructuredTableValueHtml(value)}</td>`;
+                }).join("")}
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
+
+  return `
+    <div class="table-scroll">
+      <table class="roll-table">
+        <thead>
+          <tr><th>Wurf</th><th>${escapeHtml(table.header || "Ergebnis")}</th></tr>
+        </thead>
+        <tbody>
+          ${entries.map(entry => {
+            const selected = rollResult?.roll != null && rollResult.roll >= entry.min && rollResult.roll <= entry.max;
+            return `
+              <tr class="${selected ? "rolled-row" : ""}">
+                <td class="mono">${escapeHtml(rangeLabel(entry))}</td>
+                <td>${renderStructuredTableValueHtml(entry.value)}</td>
+              </tr>
+            `;
+          }).join("")}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
 export function rollTableEntry(rawTable){
   const table = normalizeTable(rawTable);
   if (!table) return { roll: null, text: "(keine Tabelle)", value: null };
@@ -299,7 +470,7 @@ export function rollTableEntry(rawTable){
     };
   }
 
-  return { roll: null, text: "(keine Eintr?ge)", value: null };
+  return { roll: null, text: "(keine Einträge)", value: null };
 }
 
 export function mod(score){ return Math.floor((Number(score) - 10) / 2); }

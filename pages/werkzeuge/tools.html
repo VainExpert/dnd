@@ -4,8 +4,8 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Werkzeuge</title>
-  <link rel="stylesheet" href="../../styles.css"/>
-  <script src="../../theme.js"></script>
+  <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
+  <script src="../../theme.js?v=theme-20260422"></script>
 
   <style>
     /* --- Coin flip --- */
@@ -314,11 +314,11 @@
     </div>
   </main>
 
-  <script src="../../data/tables/tables-global.js?v=2"></script>
+  <script src="../../data/tables/tables-global.js?v=3"></script>
 
   <script type="module">
-    import { loadIndex, loadMany, escapeHtml, normalizeTable, rollTableEntry } from "../../lib.js";
-    import { TABLE_FILES, TABLE_DATA_BY_FILE } from "../../data/tables/tables-data.js?v=2";
+    import { loadIndex, loadMany, escapeHtml, normalizeTable, rollTableEntry, renderTableHtml } from "../../lib.js";
+    import { TABLE_FILES, TABLE_DATA_BY_FILE } from "../../data/tables/tables-data.js?v=3";
 
     // ---------------- Random Tables ----------------
     const tableSel = document.getElementById("table");
@@ -329,6 +329,7 @@
       .map(file => normalizeTable(TABLE_DATA_BY_FILE[file], file.replace(/\.json$/i, "")))
       .filter(Boolean);
 
+    tableSel.innerHTML = "";
     for (const t of tables){
       const opt = document.createElement("option");
       opt.value = t.id || t.name;
@@ -352,12 +353,7 @@
         <div class="mini-box">
           <div class="mini-box-title">${escapeHtml(t.name)}${t.dice ? " ("+escapeHtml(t.dice)+")" : ""}${r.roll != null ? " • Wurf " + escapeHtml(String(r.roll)) : ""}</div>
           <div class="mini-box-text">
-            <div>${escapeHtml(r.text)}</div>
-            ${Array.isArray(r.parts) && r.parts.length ? `
-              <ul class="cards-list">
-                ${r.parts.map(part => `<li><b>${escapeHtml(part.label)}:</b> ${escapeHtml(part.text)}${part.roll != null ? ` (${escapeHtml(String(part.roll))})` : ""}</li>`).join("")}
-              </ul>
-            ` : ""}
+            ${renderTableHtml(t, r)}
           </div>
         </div>
       `;
@@ -862,7 +858,7 @@
       const rollBtn = document.getElementById("roll");
       const resultEl = document.getElementById("result");
       if (!api || !tableSel || !rollBtn || !resultEl) return;
-      if (tableSel.options.length > 0) return;
+      tableSel.innerHTML = "";
 
       const tables = (api.files || [])
         .map(file => api.normalizeTable(api.dataByFile[file], file.replace(/\.json$/i, "")))
@@ -887,12 +883,7 @@
           <div class="mini-box">
             <div class="mini-box-title">${api.escapeHtml(table.name)}${table.dice ? ` (${api.escapeHtml(table.dice)})` : ""}${rolled.roll != null ? ` • Wurf ${api.escapeHtml(String(rolled.roll))}` : ""}</div>
             <div class="mini-box-text">
-              <div>${api.escapeHtml(rolled.text)}</div>
-              ${Array.isArray(rolled.parts) && rolled.parts.length ? `
-                <ul class="cards-list">
-                  ${rolled.parts.map(part => `<li><b>${api.escapeHtml(part.label)}:</b> ${api.escapeHtml(part.text)}${part.roll != null ? ` (${api.escapeHtml(String(part.roll))})` : ""}</li>`).join("")}
-                </ul>
-              ` : ""}
+              ${api.renderTableHtml(table, rolled)}
             </div>
           </div>
         `;

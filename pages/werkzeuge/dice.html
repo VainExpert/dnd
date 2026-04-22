@@ -688,7 +688,8 @@ Vorteil: 2d20kh1+5"></textarea>
     }
 
     // Roll a table by file
-    const tableFile = p.get("table_file");
+    const tableParam = p.get("table_file") || p.get("table");
+    const tableFile = tableParam && /\.json$/i.test(tableParam) ? tableParam : (tableParam ? `${tableParam}.json` : "");
     if (tableFile){
       try{
         const t = TABLE_DATA_BY_FILE[tableFile] ?? await fetchJson(`../../data/tables/${tableFile}`);
@@ -845,7 +846,8 @@ Vorteil: 2d20kh1+5"></textarea>
     rollTableBtn.addEventListener("click", rollActiveTable);
 
     const params = new URLSearchParams(location.search);
-    const tableFile = params.get("table_file");
+    const tableParam = params.get("table_file") || params.get("table");
+    const tableFile = tableParam && /\.json$/i.test(tableParam) ? tableParam : (tableParam ? `${tableParam}.json` : "");
     if (tableFile && tablesByFile[tableFile]){
       tableSel.value = tableFile;
       setActiveTable(tablesByFile[tableFile], tableFile);

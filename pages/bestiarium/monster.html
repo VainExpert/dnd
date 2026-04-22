@@ -144,7 +144,7 @@
         return `
           <div class="mini" style="margin-bottom:10px;">
             ${entry?.name ? `<div><b>${escapeHtml(entry.name)}</b></div>` : ""}
-            ${entry?.text ? `<div style="margin:4px 0 6px 0;">${linkifyRefs(entry.text, { base: "./" })}</div>` : ""}
+            ${entry?.text ? `<div style="margin:4px 0 6px 0;">${linkifyRefs(entry.text)}</div>` : ""}
             ${groups}
           </div>
         `;
@@ -182,7 +182,7 @@
       const legIntro = m.legendary_actions_intro ? `<div class="mini">${escapeHtml(m.legendary_actions_intro)}</div>` : "";
       const legActions = (m.legendary_actions || []).map(action => {
         const cost = action.cost != null ? ` (Kosten ${action.cost})` : "";
-        return `<div class="mini"><b>${escapeHtml(action.name)}${escapeHtml(cost)}.</b> ${linkifyRefs(action.text || "", { base: "./" })}</div>`;
+        return `<div class="mini"><b>${escapeHtml(action.name)}${escapeHtml(cost)}.</b> ${linkifyRefs(action.text || "")}</div>`;
       }).join("");
 
       view.innerHTML = `
@@ -230,7 +230,7 @@
           <div class="mini-box" style="margin-top:12px;">
             <div class="mini-box-title">Eigenschaften</div>
             <div class="mini-box-text">
-              ${m.traits.map(trait => `<div class="mini"><b>${escapeHtml(trait.name)}.</b> ${linkifyRefs(trait.text || "", { base: "./" })}</div>`).join("")}
+              ${m.traits.map(trait => `<div class="mini"><b>${escapeHtml(trait.name)}.</b> ${linkifyRefs(trait.text || "")}</div>`).join("")}
             </div>
           </div>` : ""}
 
@@ -238,7 +238,7 @@
           <div class="mini-box" style="margin-top:12px;">
             <div class="mini-box-title">Aktionen</div>
             <div class="mini-box-text">
-              ${m.actions.map(action => `<div class="mini"><b>${escapeHtml(action.name)}.</b> ${linkifyRefs(action.text || action.type || "", { base: "./" })}</div>`).join("")}
+              ${m.actions.map(action => `<div class="mini"><b>${escapeHtml(action.name)}.</b> ${linkifyRefs(action.text || action.type || "")}</div>`).join("")}
             </div>
           </div>` : ""}
 

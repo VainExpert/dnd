@@ -199,7 +199,7 @@
         return `
           <div class="mini" style="margin-bottom:10px;">
             ${entry?.name ? `<div><b>${escapeHtml(entry.name)}</b></div>` : ""}
-            ${entry?.text ? `<div style="margin:4px 0 6px 0;">${linkifyRefs(entry.text, { base: "./" })}</div>` : ""}
+            ${entry?.text ? `<div style="margin:4px 0 6px 0;">${linkifyRefs(entry.text)}</div>` : ""}
             ${groups}
           </div>
         `;
@@ -273,7 +273,7 @@
       ${n.notes ? `
         <div class="mini-box" style="margin-top:12px;">
           <div class="mini-box-title">Notizen</div>
-          <div class="mini-box-text">${linkifyRefs(n.notes, { base: "./" })}</div>
+          <div class="mini-box-text">${linkifyRefs(n.notes)}</div>
         </div>
       ` : ""}
 
@@ -281,7 +281,7 @@
         <div class="mini-box" style="margin-top:12px;">
           <div class="mini-box-title">Eigenschaften</div>
           <div class="mini-box-text">
-            ${n.traits.map(t => `<div class="mini"><b>${escapeHtml(t.name)}.</b> ${linkifyRefs(t.text, { base: "./" })}</div>`).join("")}
+            ${n.traits.map(t => `<div class="mini"><b>${escapeHtml(t.name)}.</b> ${linkifyRefs(t.text)}</div>`).join("")}
           </div>
         </div>
       ` : ""}
@@ -290,7 +290,7 @@
         <div class="mini-box" style="margin-top:12px;">
           <div class="mini-box-title">Aktionen</div>
           <div class="mini-box-text">
-            ${n.actions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || "", { base: "./" })}</div>`).join("")}
+            ${n.actions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || "")}</div>`).join("")}
           </div>
         </div>
       ` : ""}
@@ -299,7 +299,7 @@
         <div class="mini-box" style="margin-top:12px;">
           <div class="mini-box-title">Bonusaktionen</div>
           <div class="mini-box-text">
-            ${n.bonus_actions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || "", { base: "./" })}</div>`).join("")}
+            ${n.bonus_actions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || "")}</div>`).join("")}
           </div>
         </div>
       ` : ""}
@@ -308,7 +308,7 @@
         <div class="mini-box" style="margin-top:12px;">
           <div class="mini-box-title">Reaktionen</div>
           <div class="mini-box-text">
-            ${n.reactions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || "", { base: "./" })}</div>`).join("")}
+            ${n.reactions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || "")}</div>`).join("")}
           </div>
         </div>
       ` : ""}
@@ -317,7 +317,7 @@
         <div class="mini-box" style="margin-top:12px;">
           <div class="mini-box-title">Legendäre Aktionen</div>
           <div class="mini-box-text">
-            ${n.legendary_actions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || "", { base: "./" })}</div>`).join("")}
+            ${n.legendary_actions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || "")}</div>`).join("")}
           </div>
         </div>
       ` : ""}

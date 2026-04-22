@@ -276,7 +276,7 @@
         return linkedRef("item", itemHit, { base: "../items/", lookup: itemLookup });
       }
 
-      return linkifyRefs(text, { base: "./" });
+      return linkifyRefs(text, { lookups: { spell: spellLookup, item: itemLookup } });
     }
 
     function renderDefinitionList(entries){
@@ -467,7 +467,7 @@
           ${p.notes ? `
             <div class="mini-box" style="margin-top:12px;">
               <div class="mini-box-title">Notizen</div>
-              <div class="mini-box-text">${linkifyRefs(p.notes, { base: "./" })}</div>
+              <div class="mini-box-text">${linkifyRefs(p.notes, { lookups: { spell: spellLookup, item: itemLookup } })}</div>
             </div>
           ` : ""}
         </div>

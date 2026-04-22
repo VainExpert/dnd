@@ -64,6 +64,15 @@ function escapeHtml(s) {
   return String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;");
 }
 
+function prettifyEntityId(id) {
+  return String(id || "")
+    .replace(/\.(json|html?)$/i, "")
+    .replaceAll("_", " ")
+    .replaceAll("-", " ")
+    .trim()
+    .replace(/\b\S/g, ch => ch.toLocaleUpperCase("de-DE"));
+}
+
 function simpleMarkdown(md) {
   const codeBlocks = [];
   md = md.replace(/```([\s\S]*?)```/g, (_, code) => {
@@ -103,16 +112,17 @@ function simpleMarkdown(md) {
     return `<pre><code>${code}</code></pre>`;
   });
 
-  md = md.replace(/\[\[(spell|monster|pc|npc|item):([^\]]+)\]\]/gi, (_, kind, id) => {
+  md = md.replace(/\[\[(spell|monster|pc|npc|item|table):([^|\]]+)(?:\|([^\]]+))?\]\]/gi, (_, kind, id, label) => {
     const k = String(kind).toLowerCase();
     const slug = String(id).trim();
-    const label = slug.replaceAll("-", " ");
-    if (k === "spell") return `<a href="./pages/zauber/spell.html?id=${encodeURIComponent(slug)}">${label}</a>`;
-    if (k === "monster") return `<a href="./pages/bestiarium/monster.html?id=${encodeURIComponent(slug)}">${label}</a>`;
-    if (k === "pc") return `<a href="./pages/spieler/pc.html?id=${encodeURIComponent(slug)}">${label}</a>`;
-    if (k === "npc") return `<a href="./pages/bestiarium/npc.html?id=${encodeURIComponent(slug)}">${label}</a>`;
-    if (k === "item") return `<a href="./pages/items/item.html?id=${encodeURIComponent(slug)}">${label}</a>`;
-    return label;
+    const text = escapeHtml(String(label || prettifyEntityId(slug)));
+    if (k === "spell") return `<a href="./pages/zauber/spell.html?id=${encodeURIComponent(slug)}">${text}</a>`;
+    if (k === "monster") return `<a href="./pages/bestiarium/monster.html?id=${encodeURIComponent(slug)}">${text}</a>`;
+    if (k === "pc") return `<a href="./pages/spieler/pc.html?id=${encodeURIComponent(slug)}">${text}</a>`;
+    if (k === "npc") return `<a href="./pages/bestiarium/npc.html?id=${encodeURIComponent(slug)}">${text}</a>`;
+    if (k === "item") return `<a href="./pages/items/item.html?id=${encodeURIComponent(slug)}">${text}</a>`;
+    if (k === "table") return `<a href="./pages/werkzeuge/dice.html?table_file=${encodeURIComponent(slug)}">${text}</a>`;
+    return text;
   });
 
   return md;

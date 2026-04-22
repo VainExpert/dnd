@@ -22,7 +22,7 @@
   </main>
 
   <script type="module">
-    import { escapeHtml, loadIndex, loadMany, normalizeSpell } from "../../lib.js";
+    import { escapeHtml, loadIndex, loadMany, normalizeSpell, buildLookupIndex, linkifyRefs } from "../../lib.js";
 
     const view = document.getElementById("view");
     const titleEl = document.getElementById("title");
@@ -37,6 +37,7 @@
 
     const files = await loadIndex("../../data/spells/index.json");
     const spells = (await loadMany("../../data/spells", files)).map(normalizeSpell);
+    const spellLookup = buildLookupIndex(spells);
 
     const spell =
       spells.find(s => (s.id || "").toLowerCase() === id.toLowerCase()) ||
@@ -59,7 +60,7 @@
 
     const effectHtml = spell.html
       ? `<div class="mini-box-text">${spell.html}</div>`
-      : (spell.text ? `<div class="mini-box-text">${escapeHtml(spell.text).replaceAll("\n","<br/>")}</div>` : "");
+      : (spell.text ? `<div class="mini-box-text">${linkifyRefs(spell.text, { lookups: { spell: spellLookup } })}</div>` : "");
 
     view.innerHTML = `
       <h1>${escapeHtml(spell.name)}</h1>

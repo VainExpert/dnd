@@ -155,12 +155,12 @@ function renderStructuredFieldValue(value){
     `;
   }
 
-  return escapeHtml(value);
+  return linkifyRefs(value);
 }
 
 function renderStructuredTableValueHtml(value){
   if (!value || typeof value !== "object" || Array.isArray(value)) {
-    return escapeHtml(formatTableValue(value));
+    return linkifyRefs(formatTableValue(value));
   }
 
   const title = value.titel || value.name || value.id || "Eintrag";
@@ -586,6 +586,7 @@ export function entityHref(kind, id, { base = "./" } = {}){
   if (kind === "pc") return `${base}pc.html?id=${encodeURIComponent(cleanId)}`;
   if (kind === "npc") return `${base}npc.html?id=${encodeURIComponent(cleanId)}`;
   if (kind === "item") return `${base}item.html?id=${encodeURIComponent(cleanId)}`;
+  if (kind === "table") return `${base}dice.html?table_file=${encodeURIComponent(cleanId)}`;
   return null;
 }
 
@@ -1119,9 +1120,74 @@ export function normalizePc(raw){
   };
 }
 
-export function linkifyRefs(text, { base = "./" } = {}) {
+function prettifyEntityId(id){
+  return repairText(String(id ?? ""))
+    .replace(/\.(json|html?)$/i, "")
+    .replaceAll("_", " ")
+    .replaceAll("-", " ")
+    .trim()
+    .replace(/\b\S/g, ch => ch.toLocaleUpperCase("de-DE"));
+}
+
+function lookupEntityName(kind, id, lookups){
+  const lookup = lookups?.[kind];
+  if (!lookup) return "";
+
+  const candidates = [
+    String(id ?? "").trim(),
+    slugify(id),
+    String(id ?? "").trim().toLowerCase()
+  ].filter(Boolean);
+
+  for (const key of candidates){
+    const hit = lookup instanceof Map
+      ? (lookup.get(key) || lookup.get(key.toLowerCase()) || lookup.get(slugify(key)))
+      : lookup[key];
+    if (hit) return String(hit.name ?? hit.title ?? hit.label ?? hit.id ?? hit);
+  }
+
+  return "";
+}
+
+function pageRelativeEntityHref(kind, id){
+  const cleanId = String(id ?? "").trim();
+  if (!cleanId) return null;
+
+  const encoded = encodeURIComponent(cleanId);
+  const path = typeof location !== "undefined" ? location.pathname.replace(/\\/g, "/") : "";
+  const inPages = path.includes("/pages/");
+  const inBestiary = path.includes("/pages/bestiarium/");
+  const inItems = path.includes("/pages/items/");
+  const inPlayer = path.includes("/pages/spieler/");
+  const inTools = path.includes("/pages/werkzeuge/");
+  const inSpells = path.includes("/pages/zauber/");
+
+  const fromRoot = {
+    spell: `./pages/zauber/spell.html?id=${encoded}`,
+    monster: `./pages/bestiarium/monster.html?id=${encoded}`,
+    npc: `./pages/bestiarium/npc.html?id=${encoded}`,
+    pc: `./pages/spieler/pc.html?id=${encoded}`,
+    item: `./pages/items/item.html?id=${encoded}`,
+    table: `./pages/werkzeuge/dice.html?table_file=${encoded}`
+  };
+
+  if (!inPages) return fromRoot[kind] || null;
+
+  const routes = {
+    spell: `${inSpells ? "./" : "../zauber/"}spell.html?id=${encoded}`,
+    monster: `${inBestiary ? "./" : "../bestiarium/"}monster.html?id=${encoded}`,
+    npc: `${inBestiary ? "./" : "../bestiarium/"}npc.html?id=${encoded}`,
+    pc: `${inPlayer ? "./" : "../spieler/"}pc.html?id=${encoded}`,
+    item: `${inItems ? "./" : "../items/"}item.html?id=${encoded}`,
+    table: `${inTools ? "./" : "../werkzeuge/"}dice.html?table_file=${encoded}`
+  };
+
+  return routes[kind] || null;
+}
+
+export function linkifyRefs(text, { base = null, lookups = {}, routes = null } = {}) {
   const s = String(text ?? "");
-  const re = /\[\[(spell|monster|pc|npc|item):([^\]]+)\]\]/gi;
+  const re = /\[\[(spell|monster|pc|npc|item|table):([^|\]]+)(?:\|([^\]]+))?\]\]/gi;
 
   let out = "";
   let last = 0;
@@ -1129,18 +1195,17 @@ export function linkifyRefs(text, { base = "./" } = {}) {
   for (const m of s.matchAll(re)) {
     const kind = String(m[1]).toLowerCase();
     const id = String(m[2]).trim();
+    const customLabel = String(m[3] ?? "").trim();
     const start = m.index ?? 0;
 
     out += escapeHtml(s.slice(last, start)).replaceAll("\n", "<br/>");
 
-    const label = escapeHtml(id.replaceAll("-", " "));
-    let href = null;
-
-    if (kind === "spell") href = `${base}spell.html?id=${encodeURIComponent(id)}`;
-    else if (kind === "monster") href = `${base}monster.html?id=${encodeURIComponent(id)}`;
-    else if (kind === "pc") href = `${base}pc.html?id=${encodeURIComponent(id)}`;
-    else if (kind === "npc") href = `${base}npc.html?id=${encodeURIComponent(id)}`;
-    else if (kind === "item") href = `${base}item.html?id=${encodeURIComponent(id)}`;
+    const label = escapeHtml(customLabel || lookupEntityName(kind, id, lookups) || prettifyEntityId(id));
+    const route = routes?.[kind];
+    let href = typeof route === "function"
+      ? route(id)
+      : (typeof route === "string" ? `${route}${encodeURIComponent(id)}` : null);
+    if (!href) href = base == null ? pageRelativeEntityHref(kind, id) : entityHref(kind, id, { base });
 
     out += href ? `<a href="${href}">${label}</a>` : label;
     last = start + String(m[0]).length;

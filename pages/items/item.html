@@ -22,7 +22,7 @@
   </main>
 
   <script type="module">
-    import { escapeHtml, loadIndex, loadMany, normalizeItem } from "../../lib.js?v=2026-04-20-vendor-filter";
+    import { escapeHtml, loadIndex, loadMany, normalizeItem, buildLookupIndex, linkifyRefs } from "../../lib.js?v=2026-04-20-vendor-filter";
 
     const view = document.getElementById("view");
     const titleEl = document.getElementById("title");
@@ -35,6 +35,7 @@
 
     const files = await loadIndex("../../data/items/index.json");
     const items = (await loadMany("../../data/items", files)).map(normalizeItem);
+    const itemLookup = buildLookupIndex(items);
 
     const item =
       items.find(i => (i.id || "").toLowerCase() === id.toLowerCase()) ||
@@ -78,7 +79,7 @@
 
     const effectHtml = item.html
       ? `<div class="mini-box-text">${item.html}</div>`
-      : (item.text ? `<div class="mini-box-text">${escapeHtml(item.text).replaceAll("\n","<br/>")}</div>` : "");
+      : (item.text ? `<div class="mini-box-text">${linkifyRefs(item.text, { lookups: { item: itemLookup } })}</div>` : "");
 
     view.innerHTML = `
       <h1>${escapeHtml(item.name)}</h1>

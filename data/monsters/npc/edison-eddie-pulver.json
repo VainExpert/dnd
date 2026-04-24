@@ -1,82 +1,84 @@
 {
-  "id": "edison-eddie-pulver",
-  "name": "Edison \"Eddie\" Pulver",
-  "aliases": [],
-  "source_file": "Edison_Eddie_Pulver.monster",
-  "kind": "monster",
+  "id": "edison-pulver",
+  "name": "Edison Pulver",
+  "aliases": ["Eddie"],
+  "source": "homebrew",
+  "image": "",
+  "kind": "Antagonist",
   "npc": true,
   "size": "Medium",
-  "creature_type": "humanoid",
-  "subtype": "Gnome",
-  "alignment": "chaotic evil",
+  "creature_type": "Humanoid",
+  "subtype": "Gnom",
+  "alignment": "chaotisch böse",
   "armor_class": {
     "value": 17,
-    "display": "17 (Enhanced Artificer Armor)"
+    "note": "(Verbesserte Artificer-Rüstung)"
   },
   "hit_points": {
     "average": 64,
-    "formula": "8d8 + 16"
+    "formula": "[[roll:8W8+16|8W8 + 16]]"
   },
-  "speed": {
-    "walk": "30 ft."
+  "speeds": {
+    "walk": "9 m"
   },
   "abilities": {
     "str": {
       "score": 8,
-      "mod": -1
+      "mod": -1,
+      "save": -1
     },
     "dex": {
       "score": 16,
-      "mod": 3
+      "mod": 3,
+      "save": 3
     },
     "con": {
       "score": 14,
-      "mod": 2
+      "mod": 2,
+      "save": 5
     },
     "int": {
       "score": 18,
-      "mod": 4
+      "mod": 4,
+      "save": 7
     },
     "wis": {
       "score": 10,
-      "mod": 0
+      "mod": 0,
+      "save": 0
     },
     "cha": {
       "score": 13,
-      "mod": 1
+      "mod": 1,
+      "save": 1
     }
-  },
-  "saving_throws": {
-    "con": 5,
-    "int": 7
   },
   "skills": {
-    "history": 7,
-    "investigation": 7,
-    "sleight of hand": 6,
-    "stealth": 6
+    "Geschichte": 7,
+    "Nachforschung": 7,
+    "Fingerfertigkeit": 6,
+    "Heimlichkeit": 6
   },
   "damage_resistances": [
-    {
-      "name": "lightning",
-      "note": "(Resistant)"
-    }
+    "Blitz"
   ],
   "damage_immunities": [],
   "damage_vulnerabilities": [],
   "special_damage_defenses": [],
   "condition_immunities": [
-    "stunned"
+    "[[condition:betaeubt]]"
   ],
   "senses": {
-    "darkvision": "60 ft.",
-    "passive_perception": 10
+    "Dunkelsicht": "18 m",
+    "Passive Wahrnehmung": 10,
+    "Passives Motiv erkennen": 11,
+    "Passive Nachforschung": 17
   },
   "languages": {
     "speaks": [
-      "Common",
-      "Gnomish",
-      "Thieves Cant'"
+      "Weltsprache",
+      "Gnomisch",
+      "Diebessprech"
     ],
     "understands": []
   },
@@ -85,38 +87,38 @@
   "proficiency_bonus": 3,
   "traits": [
     {
-      "name": "Gnome Cunning",
-      "text": "Eddie has advantage on all Intelligence, Wisdom, and Charisma saves against magic."
+      "name": "Gnomische Gerissenheit",
+      "text": "Edison hat Vorteil auf alle INT-, WIS- und CHA-Rettungswürfe gegen Zauberei."
     }
   ],
   "spellcasting": [],
   "actions": [
     {
-      "name": "Multiattack",
-      "text": "Eddie can make up to 2 attacks."
+      "name": "Multiangriff",
+      "text": "Edison kann bis zu 2 Angriffe machen."
     },
     {
-      "name": "Dagger",
-      "text": "_Melee Weapon Attack:_ +6 to hit, one target, range 1,5 m, thrown (6 m/ 18 m), _Hit:_ 1d4 + 3 piercing damage."
+      "name": "[[item:dolch]]",
+      "text": "*Nahkampfwaffenangriff:* +6, 1,5 m, 1 Ziel, geworfen (6/18 m). *Treffer:* [[roll:1W4+3|5 (1W4 + 3)]] Stichschaden."
     },
     {
-      "name": "Self-Made Crossbow",
-      "text": "_Ranged Weapon Attack:_ +6 to hit, one targe, range (9 m/96 m), _Hit:_ 1d8 + 3 piercing damage, ignores _loading_ property."
+      "name": "Selbstgebaute Armbrust",
+      "text": "*Fernkampfwaffenangriff:* +6, 9/24 m, 1 Ziel. *Treffer:* [[roll:1W8+3|7 (1W8 + 3)]] Stichschaden, igonriert Laden-Eigenschaft."
     },
     {
-      "name": "Weapon Invention",
-      "text": "Eddie uses 1 of the following option (1d6 to choose). Every choice once per day.\n> 1. Smoke Grenade: Eddie throws a smoke grenade up to 18 m. The hit area gets heavily obscured within 6 m radius of the target. Moderate wind disperses in 4 rounds, strong wind in 1 round.\n> 2. Gnomengrenade: Eddie throws the Gnomengrenade up to 18 m. The grenade explodes on impact and unleashes the following effects:\n> a. Every creature in the blast radius of 6 m must make a DC 13 CON saving throw or take 4d6 thunder damage and be _deafend_ for 1 min. On a success only half the damage and not _deafend_.\n> b. 2 random effects from the Wild Magic Table effect the impact suroundings. (reroll splicates)\n> 3. Alchemist Fire: Eddie throws a flask of Alchemist Fire. _Ranged Weapon Attack:_ +6 to hit, range (1,5 m/9 m), one target, _Hit:_ 1d4 fire damage and 1d4 fire damage at the start of each of the targets turns until extinguished with a DC 13 DEX saving throw.\n> 4. Shatter Grenade: Eddie throws a shatter grenade up to 18 m. The grenade explodes on impact and every creature within the blast radius of 6 m must make a DC 13 CON saving throw or be knocked _prone_ and pushed away from the grenade by 3 m.\n> 5. Glue Bomb: Eddie throws a glue bomb up to 18 m. The hit area within a 6 m radius becomes difficult terrain and every creature within the area makes a DC 13 Dex saving throw or gets _restrained_ for 10 min. The glue dissolves after 10 min or after some alcohol was applied to the glue. A DC 13 STR saving throw can be done by hit creatures as an action each turn to escape the glue.\n> 6. Healing Bomb: Eddie throws a healing bomb up to 18 m. The bomb explodes on impact. Every ally of Eddie in 6 m of the impact regains 4d4 + 4 hit points."
+      "name": "Waffenerfindung",
+      "text": "Edison nutzt eine der folgenden Optionen ([[roll:1W6]] zum Auswählen). Jede Option nur einmal pro Tag:\n> 1. Rauchbombe: Edison wirft eine Rauchbombe bis zu 18 m weit. Der getroffene Bereich wird in einem 6 m Radius stark verdunkelt. Moderater Wind verteilt den Rauch in 4 Runden, starker in 1 Runde.\n> 2. Gnomengranate: Edison wift die Gnomengranate bis zu 18 m. Die Granate explodiert bei Einschlag und löst einen der folgenden Effekte aus:\n> a. Jede Kreatur im Explosionsradius von 6 m muss einen SG 13 CON-Rettungswurf bestehen oder nimmt [[roll:4W6|12 (4W6)]] Donnerschaden und ist [[condition:taub]] für 1 min. Bei Erfolg nimmt die Kreatur nur die Hälfte an Schaden und wir dniocht [[condition:taub]].\n> b. 2 zufällige Effekte der [[table:wilde-magie]] entstehen bei Einschlag (Duplikate neu würfeln).\n> 3. [[item:alchemistenfeuer]]: Edison wirft eine Flasche Alchemistenfeuer. Fernkampfwaffenangriff: +6, 1,5/9 m, 1 Ziel, Treffer: [[roll:1W4|2 (1W4)]] Feuerschaden und [[roll:1W4|2 (1W4)]] Feuerschaden am Beginn jedes seiner Züge solange es brennt, löschen mit einer Aktion und der halben Bewegungsgeschwindigkeit.\n> 4. Splittergranate: Edison wirft eine Splittergranate bis zu 18 m weit. Die Granate explodiert bei Einschlag und jede Kreatur im 6 m Explosionsradius muss einen SG 13 CON-Rettungswurf machen oder wird [[condition:liegend|auf den Boden geworfen]] und 3 m von Einschlagsort weggedrückt.\n> 5. Leimbombe: Edison wirft eine Leimbombe bis zu 18 m weit. Der getroffene Bereich wird in einem 6 m Radius zu [[rule:schwieriges-gelaende|Schwierigem Gelände]] und jede Kreatur in dem Bereich muss einen SG 13 DEX-Rettungswurf schaffen oder wird für 10 min [[condition:restrained]]. Der Leim löst sich nach 10 min oder wenn Alkohohl darüber gegossen wird. Man kann sich auch mit einem SG 13 STR-Wurf als Aktion vom Leim befreien..\n> 6. Heilungsbombe: Edison wirft eine Heilungsbombe bis zu 18 m. Die Bombe explodiert bei Einschlag und jede Kreatur im 6 m Explosionsradius erhält [[roll:4W4+4|12 (4W4 +12)]] TP zurück."
     }
   ],
   "bonus_actions": [],
   "reactions": [
     {
-      "name": "Emergency Exit (2/day)",
-      "text": "Eddie can safely teleport to an unoccupied space in 9 m he knows of."
+      "name": "Notfallausgang (2/Tag)",
+      "text": "Edison kann sich sicher auf ein freies Feld in 9 m Abstand teleportieren, den er kennt."
     },
     {
-      "name": "Flash of Genius",
-      "text": "If he or another creature he can see within 30 feet of Eddie makes an ability check or a saving throw, he can use his reaction to add +4 to the roll."
+      "name": "Geistesblitz",
+      "text": "Wenn Edison oder eine andere Kreatur in 9 m Abstand zu Edison einen Fähigkeiten- oder Rettungswurf macht, kann er als Reaktion +4 zu dem Wurf hinzufügen."
     }
   ],
   "legendary_actions": [],
@@ -125,14 +127,7 @@
   "mythic_actions": [],
   "lair_actions": [],
   "regional_effects": [],
-  "display": {
-    "double_columns": true,
-    "separation_point": 4
-  },
-  "import_notes": [
-    "AC taken from custom armor description.",
-    "Ignored inconsistent customCr value \"1 (200 XP)\" and used cr \"7\".",
-    "Ignored inconsistent customProf value \"2\" and used proficiency bonus +3 from CR."
-  ],
-  "source_format": "monster builder export"
+  "background": "In jungen Jahren wurde der Hof seiner Familie von einer Adeligen Jagdgesellschaft verwüstet. Bei den Aufräum und Reparatur arbeiten erkannte Edison, dass er sehr gut im Umgang mit Werkzeuge ist und hat den Hof nicht nur mit aufgebaut, sondern auch verbessert. Dieses Talent verfeinerte er noch über die nächsen Jahre. Als er erwachsen wurde zog er in die Hauptstadt und eröffnete seinen eigenen Jahren und half der einfachen Bevölkerung für einen billigen Preis. Adeligen half er nur sehr ungern oder zu überhöhten Preisen. In der Stadt traf er zufällig auf Ladrian, mit dem er sich sehr gut verstand. Später kamen auch Düwel und Marlowe dazu, die von Edison gehört hatten und bei ihm Aufträge aufgegeben hatten.",
+  "personality": "zuvorkommend, klug, nachdenklich",
+  "inventory": ["Verbesserte Artificer Rüstung", "[[item:dolch]]", "Selbstgebaute Armbrust", "Rauchbombe", "Gnomgranate", "Splittergranate", "Heilbombe", "Leimbombe", "[[item:alchemistenfeuer]]", "[[item:tueftlerwerkzeug]]", "[[item:alchemistenkrug]]", "[[item:armbrustbolzen-schachtel]]", "20 [[item:Armbrustbolzen]]", "[[item:beutel|Geldbeutel mit 85 GM]]"]
 }

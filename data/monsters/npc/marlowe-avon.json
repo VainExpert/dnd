@@ -1,60 +1,63 @@
 {
   "id": "marlowe-avon",
   "name": "Marlowe Avon",
-  "aliases": [],
-  "source_file": "MarloweAvon.monster",
-  "kind": "monster",
+  "aliases": ["William Shakespeare"],
+  "source": "homebrew",
+  "image": "",
+  "kind": "Antagonist",
   "npc": true,
-  "size": "Small",
-  "creature_type": "humanoid",
-  "subtype": "Halfling",
-  "alignment": "chaotic evil",
+  "size": "Klein",
+  "creature_type": "Humanoid",
+  "subtype": "Halbling",
+  "alignment": "chaotisch böse",
   "armor_class": {
     "value": 14,
-    "display": "14 (studded leather)"
+    "note": "([[item:beschlagene-lederruestung]])"
   },
   "hit_points": {
     "average": 48,
-    "formula": "8d8 + 16"
+    "formula": "[[roll:8W8+16|8W8 + 16]]"
   },
-  "speed": {
-    "walk": "30 ft."
+  "speeds": {
+    "walk": "9 m"
   },
   "abilities": {
     "str": {
       "score": 8,
-      "mod": -1
+      "mod": -1,
+      "save": -1
     },
     "dex": {
       "score": 15,
-      "mod": 2
+      "mod": 2,
+      "save": 5
     },
     "con": {
       "score": 14,
-      "mod": 2
+      "mod": 2,
+      "save": 2
     },
     "int": {
       "score": 10,
-      "mod": 0
+      "mod": 0,
+      "save": 0
     },
     "wis": {
       "score": 12,
-      "mod": 1
+      "mod": 1,
+      "save": 1
     },
     "cha": {
       "score": 16,
-      "mod": 3
+      "mod": 3,
+      "save": 6
     }
   },
-  "saving_throws": {
-    "dex": 5,
-    "cha": 6
-  },
   "skills": {
-    "acrobatics": 5,
-    "deception": 9,
-    "performance": 9,
-    "persuasion": 6
+    "Akrobatik": 5,
+    "Täuschen": 9,
+    "Auftreten": 9,
+    "Überzeugen": 6
   },
   "damage_resistances": [],
   "damage_immunities": [],
@@ -62,14 +65,16 @@
   "special_damage_defenses": [],
   "condition_immunities": [],
   "senses": {
-    "passive_perception": 11
+    "Passive Wahrnehmung": 11,
+    "Passives Motiv erkennen": 13,
+    "Passive Nachforschung": 10
   },
   "languages": {
     "speaks": [
-      "Common",
-      "Draconic",
-      "Halfling",
-      "Thieves Cant'"
+      "Weltsprache",
+      "Drakonisch",
+      "Halbling",
+      "Diebessprech"
     ],
     "understands": []
   },
@@ -79,91 +84,91 @@
   "traits": [
     {
       "name": "Jack of All Trades",
-      "text": "Marlowe adds +1 to any skill check he is not proficient in."
+      "text": "Marlowe fügt +1 auf jeden Fähigkeitenwurf hinzu in dem er nicht geübt ist."
     },
     {
-      "name": "Words of Terror (1/day)",
-      "text": "Marlowe instills fear of a specific creature in a humanoid target he can talk to for at least 1 min. The target must make a WIS saving throw or is _frightened_ for 1 h or until it or an ally gets attacked. On a successful save the target doesn't know of the attempt."
+      "name": "Wörter des Terror (1/Tag)",
+      "text": "Marlowe lässt Angst vor einer spezifischen Kreatur in einem humanoiden Ziel aufkommen, wenn er für mindestens 1 min mit ihm redet. Das Ziel muss einen SG 14 WIS-Rettungswurf oder ist für 1 h [[condition:veraengstigt]] oder bis ein Verbündeter angegriffen wird. Bei Erfolg weiß das Ziel nichts von dem Versuch."
     },
     {
-      "name": "Bardic Inspiration (3/day)",
-      "text": "Marlowe can give a Bardic Inspiration die (1d8) to an ally in 18 m, that can hear him. The target can use the die as a bonus for one d20 roll in the next 10 min."
+      "name": "Bardische Inspiration (3/Tag)",
+      "text": "Marlowe kann einen Bardische Inspiration Würfel (1W8) zu einem Verbündeten in 18 m Abstand, der ihn hören kann, geben. Das Ziel kann den Würfel als Bonus auf einen beliebigen W20 Wurf in den nächsten 10 min nutzen."
     },
     {
-      "name": "Magical Inspiration",
-      "text": "A creature that has Marlowe's Bardic Inspiration can roll it add the roll to healed hit points or damage dealt."
+      "name": "Magische Inspiration",
+      "text": "Eine Kreatur, die Marlowe's *\"Bardische Inspiration\"* hat, kann den Würfel auch zu einem Schadens- oder Heilungswurf hinzufügen."
     },
     {
-      "name": "Psychic Blades",
-      "text": "Marlowe can spend 1 use of his \"Bardic Inspiration\" and add 3d6 psychic damage to a weapon attack that hits."
+      "name": "Psyschiche Klingen",
+      "text": "Marlowe kann eine Verwendung seiner *\"Bardischen Inspiration\"* nutzen und [[roll:3W6|9 (3W6)]] psyschichen Schaden zu einem Waffenangriffstreffer hinzufügen."
     }
   ],
   "spellcasting": [
     {
-      "name": "Spellcasting",
-      "text": "Marlowe is a 8th-level spellcaster. His spellcasting ability is CHA (spell save DC 14, +5 to hit). He knows the following spells:\n> * Cantrips (at will): _Mage Hand_, _Message_, _Vicious Mockery_\n> * 1st Level (4/day): _Dissonant Whispers_, _Faerie Fire_, _Sleep_, _Tashas Hideous Laughter_\n> * 2nd Level (3/day): _Crown of Madness_, _Mirror Image_, _Shatter_\n> * 3rd Level (3/day): _Antagonize_, _Fear_, _Motivational Speech_\n> * 4th Level (2/day): _Confusion_, _Greater Invisibility_",
+      "name": "Zauberei",
+      "text": "Marlowe ist ein Level 8 Zauberwirker. Seine Zauberfähigkeit ist CHA (Zauberrettungs-SG 14, Zauberangriffsbonus +5). Er kennt die folgenden Zauber:",
       "spells": {
         "cantrips_at_will": [
-          "Mage Hand",
-          "Message",
-          "Vicious Mockery"
+          "[[spell:magierhand]]",
+          "[[spell:botschaft]]",
+          "[[spell:gehaessiger-spott]]"
         ],
         "level_1": [
           "Dissonant Whispers",
-          "Faerie Fire",
-          "Sleep",
-          "Tashas Hideous Laughter"
+          "[[spell:feenfeuer]]",
+          "[[spell:schlaf]]",
+          "[[spell:tashas-fuerchterlicher-lachanfall]]"
         ],
         "level_2": [
-          "Crown of Madness",
-          "Mirror Image",
-          "Shatter"
+          "[[spell:krone-des-wahnsinns]]",
+          "[[spell:spiegelbilder]]",
+          "[[spell:zerbersten]]"
         ],
         "level_3": [
-          "Antagonize",
-          "Fear",
-          "Motivational Speech"
+          "[[spell:verfeinden]]",
+          "[[spell:angst]]",
+          "[[spell:motivationsrede]]"
         ],
         "level_4": [
-          "Confusion",
-          "Greater Invisibility"
+          "[[spell:verwirrung]]",
+          "[[spell:bessere-unsichtbarkeit]]"
         ]
       },
-      "ability": "charisma",
+      "ability": "CHA",
       "save_dc": 14,
       "attack_bonus": 5,
       "caster_level": 8,
-      "usage_by_level": {
-        "level_1": "4/day",
-        "level_2": "3/day",
-        "level_3": "3/day",
-        "level_4": "2/day"
+      "usage": {
+        "level_1": "4",
+        "level_2": "3",
+        "level_3": "3",
+        "level_4": "2"
       }
     }
   ],
   "actions": [
     {
-      "name": "Rapier",
-      "text": "_Melee Weapon Attack:_ + 5 to hit, reach 5 ft., 1 target. _Hit:_ 1d8 + 2 piercing damage"
+      "name": "[[item:rapier]]",
+      "text": "*Nahkampfwaffenangriff:* + 5, 1,5 m, 1 Ziel. *Treffer:* [[roll:1W8+2|6 (1W8 + 2)]] Stichschaden."
     },
     {
-      "name": "Hand Crossbow",
-      "text": "_Ranged Weapon Attack:_ +5 to hit, reach (9 m/ 36 m), 1 target. _Hit:_ 1d6 + 2 piercing damage"
+      "name": "[[item:handarmbrust]]",
+      "text": "*Fernkampfwaffenangriff:* +5, 9/36 m, 1 Ziel. *Treffer:* [[roll:1W6+2|5 (1W6 + 2)]] Stichschaden."
     },
     {
-      "name": "Countercharm",
-      "text": "Marlowe and any allies, that can hear him, within 9 m have advantage on saving throws against _frightened_ or _charmed_. This effect lasts for one round or until _incapacitated_, _silenced_ or ended voluntarily."
+      "name": "Bannlied",
+      "text": "Marlowe und jeder Verbündete, der ihn hören kann, in 9 m Abstand hat Vorteil auf Rettüngswürfe gegen [[condition:veraengstigt]] oder [[condition:verzaubert]]. Der Effekt hält für 1 min oder bis er [[condition:kampfunfaehig]] oder [[condition:stumm]] ist oder es freiwillig beendet."
     }
   ],
   "bonus_actions": [],
   "reactions": [
     {
-      "name": "Mantle of Whispers (1/day)",
-      "text": "A humanoid that dies within 9 m of Marlowe, he can take the shadow and persona of the dead humanoid for 1 h or until ended as a bonus action. He gets all information the dead would share with a random acquaintance (no secrets).\nHe gets a +5 to a counter Deception check against an Insight Check."
+      "name": "Mantel des Geflüsters (1/Tag)",
+      "text": "Marlowe kann von einem Humanoide, der in 9 m Abstand zu ihm stirbt, den Schatten und den Charakter für 1 h stehlen oder bis der Effekt als Bonusaktion beendet wird. Er bekommt alle Informationen, die der Tote mit einer zufälligen Person teilen würde (keien Geheimnisse).\nMarlowe bekommt einen +5 Bonus auf Täuschen-Würfe gegen Nachforschung- oder Motiv erkennen-Würfe um ihn zu enttarnen."
     },
     {
-      "name": "Parry",
-      "text": "Marlowe adds 2 to his AC against one melee attack that would hit. He must ne wielding his rapier to do this."
+      "name": "Parade",
+      "text": "Wenn Marlowe sein [[item:rapier]] hält, kann er einmal seiner RK +2 hinzufügen um einen Angriff zu parieren, der ihn trifft."
     }
   ],
   "legendary_actions": [],
@@ -172,14 +177,7 @@
   "mythic_actions": [],
   "lair_actions": [],
   "regional_effects": [],
-  "display": {
-    "double_columns": true,
-    "separation_point": 4
-  },
-  "import_notes": [
-    "AC inferred from armorName, Dexterity modifier, and shieldBonus.",
-    "Ignored inconsistent customCr value \"1 (200 XP)\" and used cr \"7\".",
-    "Ignored inconsistent customProf value \"2\" and used proficiency bonus +3 from CR."
-  ],
-  "source_format": "monster builder export"
+  "background": "Als Barde zieht er schon seit seiner Jugend durchs Land und hat schon von vielen Adelshäusern das Innere gesehen. Daher hat er aus erster Hand eine gewisse Abscheu gegenüber dem Adel im Land entwickelt. Er traf auf Düwel bei einem solchen Auftritt in einem Adelshaus, während der zweite etwas stehlen wollte. Sie verstanden sich gut und zogen ab da gemeinsam herum um dem Adel auf meherere Weisen das Geld aus der Tasche zu ziehen. In der Hauptstadt traffen sie schließlich auf Edison, der ihnen Ladrian vorstellte.",
+  "personality": "gewievt, gerissen, Großmaul",
+  "inventory": ["[[item:rapier]]", "[[item:handarmbrust]]", "[[item:verkleidungsausruestung]]", "[[item:laute|Laute (arkaner Fokus)]]", "[[item:kostuem]]", "[[item:trank-der-verwandlung]]", "[[item:armbrustbolzen-schachtel]]", "20 [[item:Armbrustbolzen]]", "[[item:beutel|Geldbeutel mit 75 GM]]"]
 }

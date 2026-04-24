@@ -29,6 +29,7 @@
       fmtSigned,
       mod,
       linkifyRefs,
+      renderRichText as renderMarkdownText,
       normalizePc,
       normalizeItem,
       normalizeSpell,
@@ -123,13 +124,16 @@
     }
 
     function renderSectionList(kind, sections, base){
+      const lookups = kind === "spell"
+        ? { spell: spellLookup, item: itemLookup }
+        : { item: itemLookup, spell: spellLookup };
       return sections.map(section => `
         <div style="margin-bottom:10px;">
           <div><b>${escapeHtml(section.label || kind)}</b></div>
           <ul>
             ${renderRefList(kind, section.refs || [], base)}
           </ul>
-          ${(section.notes && section.notes.length) ? `<div class="muted">${escapeHtml(section.notes.join(" "))}</div>` : ""}
+          ${(section.notes && section.notes.length) ? `<div class="muted">${renderMarkdownText(section.notes.join(" "), { lookups, inlineOnly: true })}</div>` : ""}
         </div>
       `).join("");
     }
@@ -276,7 +280,7 @@
         return linkedRef("item", itemHit, { base: "../items/", lookup: itemLookup });
       }
 
-      return linkifyRefs(text, { lookups: { spell: spellLookup, item: itemLookup } });
+      return renderMarkdownText(text, { lookups: { spell: spellLookup, item: itemLookup }, inlineOnly: true });
     }
 
     function renderDefinitionList(entries){
@@ -351,7 +355,7 @@
       if (!Array.isArray(attacks) || !attacks.length) return "";
       return attacks.map(attack => `
         <div class="mini-box" style="background:rgba(255,255,255,.025);">
-          <div class="mini-box-title">${escapeHtml(attack.name || "Angriff")}</div>
+          <div class="mini-box-title">${linkifyRefs(attack.name || "Angriff", { lookups: { spell: spellLookup, item: itemLookup } })}</div>
           <div class="mini-box-text">
             ${renderDefinitionList(Object.entries(attack).filter(([key]) => key !== "name"))}
           </div>
@@ -467,7 +471,7 @@
           ${p.notes ? `
             <div class="mini-box" style="margin-top:12px;">
               <div class="mini-box-title">Notizen</div>
-              <div class="mini-box-text">${linkifyRefs(p.notes, { lookups: { spell: spellLookup, item: itemLookup } })}</div>
+              <div class="mini-box-text">${renderMarkdownText(p.notes, { lookups: { spell: spellLookup, item: itemLookup } })}</div>
             </div>
           ` : ""}
         </div>

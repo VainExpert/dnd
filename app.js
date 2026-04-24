@@ -73,6 +73,26 @@ function prettifyEntityId(id) {
     .replace(/\b\S/g, ch => ch.toLocaleUpperCase("de-DE"));
 }
 
+function normalizeRollExpression(expr) {
+  return String(expr || "").trim().replace(/\s+/g, "").replace(/w/gi, "d");
+}
+
+function formatRollExpression(expr) {
+  return normalizeRollExpression(expr).replace(/d/gi, "W");
+}
+
+function normalizeInlineKind(kind) {
+  const value = String(kind || "").trim().toLowerCase();
+  if (value === "spell" || value === "zauber") return "spell";
+  if (value === "monster") return "monster";
+  if (value === "npc" || value === "nsc") return "npc";
+  if (value === "pc" || value === "charakter") return "pc";
+  if (value === "item" || value === "gegenstand") return "item";
+  if (value === "table" || value === "tabelle") return "table";
+  if (value === "roll" || value === "wurf" || value === "wuerfel") return "roll";
+  return value;
+}
+
 function simpleMarkdown(md) {
   const codeBlocks = [];
   md = md.replace(/```([\s\S]*?)```/g, (_, code) => {
@@ -112,16 +132,17 @@ function simpleMarkdown(md) {
     return `<pre><code>${code}</code></pre>`;
   });
 
-  md = md.replace(/\[\[(spell|monster|pc|npc|item|table):([^|\]]+)(?:\|([^\]]+))?\]\]/gi, (_, kind, id, label) => {
-    const k = String(kind).toLowerCase();
+  md = md.replace(/\[\[([a-z]+):([^|\]]+)(?:\|([^\]]+))?\]\]/gi, (_, kind, id, label) => {
+    const k = normalizeInlineKind(kind);
     const slug = String(id).trim();
-    const text = escapeHtml(String(label || prettifyEntityId(slug)));
-    if (k === "spell") return `<a href="./pages/zauber/spell.html?id=${encodeURIComponent(slug)}">${text}</a>`;
-    if (k === "monster") return `<a href="./pages/bestiarium/monster.html?id=${encodeURIComponent(slug)}">${text}</a>`;
-    if (k === "pc") return `<a href="./pages/spieler/pc.html?id=${encodeURIComponent(slug)}">${text}</a>`;
-    if (k === "npc") return `<a href="./pages/bestiarium/npc.html?id=${encodeURIComponent(slug)}">${text}</a>`;
-    if (k === "item") return `<a href="./pages/items/item.html?id=${encodeURIComponent(slug)}">${text}</a>`;
-    if (k === "table") return `<a href="./pages/werkzeuge/dice.html?table_file=${encodeURIComponent(slug)}">${text}</a>`;
+    const text = escapeHtml(String(label || (k === "roll" ? formatRollExpression(slug) : prettifyEntityId(slug))));
+    if (k === "spell") return `<a href="./pages/zauber/spell.html?id=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`;
+    if (k === "monster") return `<a href="./pages/bestiarium/monster.html?id=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`;
+    if (k === "pc") return `<a href="./pages/spieler/pc.html?id=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`;
+    if (k === "npc") return `<a href="./pages/bestiarium/npc.html?id=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`;
+    if (k === "item") return `<a href="./pages/items/item.html?id=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`;
+    if (k === "table") return `<a href="./pages/werkzeuge/dice.html?table_file=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`;
+    if (k === "roll") return `<a href="./pages/werkzeuge/dice.html?expr=${encodeURIComponent(normalizeRollExpression(slug))}&auto=1" target="dnd-dice" rel="noopener">${text}</a>`;
     return text;
   });
 

@@ -31,7 +31,7 @@
 
         <div class="group">
           <div class="group-title">Werkzeuge</div>
-          <a href="../werkzeuge/tools.html">Zufallstabellen & Generatoren</a>
+          <a href="../werkzeuge/tools.html">Zufallstabellen &amp; Generatoren</a>
           <a href="../werkzeuge/dice.html">Würfel</a>
           <a href="../werkzeuge/units.html">Einheitenumrechner</a>
         </div>
@@ -70,63 +70,34 @@
     const rarityEl = document.getElementById("rarity");
     const vendorEl = document.getElementById("vendor");
 
-    const files = await loadIndex("../../data/items/index.json");
-    const items = (await loadMany("../../data/items", files)).map(normalizeItem);
-
-    function weightDisplay(item){
-      const weight = item.weight;
-      if (weight == null || weight === "") return "";
-      if (typeof weight === "number") return weight > 0 ? escapeHtml(String(weight)) : "";
-      if (typeof weight === "string") {
-        const trimmed = weight.trim();
-        const match = trimmed.match(/^-?\d+(?:[.,]\d+)?/);
-        if (!match) return escapeHtml(trimmed);
-        const numeric = Number(match[0].replace(",", "."));
-        return Number.isFinite(numeric) && numeric > 0 ? escapeHtml(trimmed) : "";
-      }
-      if (typeof weight === "object") {
-        const rawValue = weight.value ?? weight.amount;
-        const numeric = Number(rawValue);
-        if (!Number.isFinite(numeric) || numeric <= 0) return "";
-        const unit = String(weight.unit ?? "").trim();
-        return escapeHtml([String(rawValue), unit].filter(Boolean).join(" ").trim());
-      }
-      return "";
+    function isMeaningful(value){
+      if (value == null) return false;
+      if (typeof value === "string") return value.trim() !== "";
+      if (typeof value === "number") return Number.isFinite(value);
+      if (typeof value === "boolean") return value;
+      if (Array.isArray(value)) return value.some(isMeaningful);
+      if (typeof value === "object") return Object.values(value).some(isMeaningful);
+      return true;
     }
 
-    const types = Array.from(new Set(items.map(i => i.type).filter(Boolean))).sort((a, b) => a.localeCompare(b));
-    for (const t of types){
-      const opt = document.createElement("option");
-      opt.value = t;
-      opt.textContent = t;
-      typeEl.appendChild(opt);
-    }
-
-    const rarities = Array.from(new Set(items.map(i => i.rarity).filter(Boolean))).sort((a, b) => a.localeCompare(b));
-    for (const r of rarities){
-      const opt = document.createElement("option");
-      opt.value = r;
-      opt.textContent = r;
-      rarityEl.appendChild(opt);
-    }
-
-    const vendors = Array.from(new Set(items.flatMap(i => i.vendors ?? []).filter(Boolean))).sort((a, b) => a.localeCompare(b));
-    for (const vendor of vendors){
-      const opt = document.createElement("option");
-      opt.value = vendor;
-      opt.textContent = vendor;
-      vendorEl.appendChild(opt);
-    }
-
-    function excerpt(s, n = 220){
-      const t = String(s ?? "").trim();
-      if (!t) return "";
-      return t.length > n ? t.slice(0, n - 1) + "…" : t;
+    function kindDisplay(item){
+      const type = String(item.type ?? "").trim();
+      const category = String(item.item_category ?? "").trim();
+      if (!type) return category || "Item";
+      if (!category || category.toLowerCase() === type.toLowerCase()) return type;
+      if (type.toLowerCase() === "item") return category;
+      return `${type} - ${category}`;
     }
 
     function attunementDisplay(item){
       const text = String(item.attunement_text ?? "").trim();
       return text || "Ja";
+    }
+
+    function excerpt(text, length = 220){
+      const value = String(text ?? "").trim();
+      if (!value) return "";
+      return value.length > length ? `${value.slice(0, length - 1)}...` : value;
     }
 
     function vendorDisplay(item){
@@ -136,49 +107,110 @@
       return escapeHtml(`${vendors[0]} +${vendors.length - 1}`);
     }
 
-    function card(i){
-      const id = i.id || i.name || "";
+    function usageDisplay(item){
+      const uses = item.uses;
+      const charges = item.charges;
+      if (isMeaningful(uses?.max) || isMeaningful(uses?.recharge)) {
+        return [
+          isMeaningful(uses?.max) ? `${uses.max} Nutzung${Number(uses.max) === 1 ? "" : "en"}` : "",
+          isMeaningful(uses?.recharge) ? `Reset: ${uses.recharge}` : ""
+        ].filter(Boolean).join(" - ");
+      }
+      if (isMeaningful(charges?.max) || isMeaningful(charges?.recharge)) {
+        return [
+          isMeaningful(charges?.max) ? `${charges.max} Aufladung${Number(charges.max) === 1 ? "" : "en"}` : "",
+          isMeaningful(charges?.recharge) ? `Reset: ${charges.recharge}` : ""
+        ].filter(Boolean).join(" - ");
+      }
+      return "";
+    }
+
+    function card(item){
+      const id = item.id || item.name || "";
       const href = `./item.html?id=${encodeURIComponent(id)}`;
-      const weight = weightDisplay(i);
-      const vendor = vendorDisplay(i);
+      const vendor = vendorDisplay(item);
+      const usage = usageDisplay(item);
+      const tagSummary = (item.tags ?? []).slice(0, 3).map(escapeHtml).join(", ");
 
       return `
         <div class="mini-card">
           <div class="mini-head">
-            <div class="mini-title"><a href="${href}">${escapeHtml(i.name)}</a></div>
-            <div class="mini-sub">${escapeHtml(i.type ?? "Item")}${i.rarity ? " • " + escapeHtml(i.rarity) : ""}</div>
+            <div class="mini-title"><a href="${href}">${escapeHtml(item.name)}</a></div>
+            <div class="mini-sub">${escapeHtml(kindDisplay(item))}${item.rarity ? " &bull; " + escapeHtml(item.rarity) : ""}</div>
             <div class="pillbar">
-              ${i.requires_attunement ? `<span class="pill"><b>Bindung</b> ${escapeHtml(attunementDisplay(i))}</span>` : ""}
-              ${i.price ? `<span class="pill"><b>Preis</b> ${escapeHtml(i.price)}</span>` : ""}
-              ${weight ? `<span class="pill"><b>Gewicht</b> ${weight}</span>` : ""}
+              ${item.requires_attunement ? `<span class="pill"><b>Bindung</b> ${escapeHtml(attunementDisplay(item))}</span>` : ""}
+              ${item.price ? `<span class="pill"><b>Preis</b> ${escapeHtml(item.price)}</span>` : ""}
+              ${usage ? `<span class="pill"><b>Nutzung</b> ${escapeHtml(usage)}</span>` : ""}
               ${vendor ? `<span class="pill"><b>Händler</b> ${vendor}</span>` : ""}
             </div>
           </div>
           <div class="mini-body">
-            ${i.text ? `<div class="mini-box"><div class="mini-box-title">Effekt</div><div class="mini-box-text">${escapeHtml(excerpt(i.text))}</div></div>` : ""}
-            ${i.source ? `<div class="mini-footer muted">Quelle: ${escapeHtml(i.source)}</div>` : ""}
+            ${item.text ? `<div class="mini-box"><div class="mini-box-title">Effekt</div><div class="mini-box-text">${escapeHtml(excerpt(item.text))}</div></div>` : ""}
+            ${tagSummary ? `<div class="mini-footer muted">Tags: ${tagSummary}</div>` : ""}
+            ${item.source ? `<div class="mini-footer muted">Quelle: ${escapeHtml(item.source)}</div>` : ""}
           </div>
         </div>
       `;
     }
 
-    function matches(i, q, type, rarity, vendor){
-      const hay = [i.id, i.name, i.type, i.rarity, i.text, i.source, ...(i.vendors ?? [])].join(" ").toLowerCase();
-      if (q && !hay.includes(q)) return false;
-      if (type && (i.type ?? "") !== type) return false;
-      if (rarity && (i.rarity ?? "") !== rarity) return false;
-      if (vendor && !(i.vendors ?? []).includes(vendor)) return false;
+    const itemFiles = await loadIndex("../../data/items/index.json");
+    const items = (await loadMany("../../data/items", itemFiles)).map(normalizeItem);
+
+    const types = Array.from(new Set(items.map(kindDisplay).filter(Boolean))).sort((a, b) => a.localeCompare(b));
+    for (const type of types) {
+      const option = document.createElement("option");
+      option.value = type;
+      option.textContent = type;
+      typeEl.appendChild(option);
+    }
+
+    const rarities = Array.from(new Set(items.map(item => item.rarity).filter(Boolean))).sort((a, b) => a.localeCompare(b));
+    for (const rarity of rarities) {
+      const option = document.createElement("option");
+      option.value = rarity;
+      option.textContent = rarity;
+      rarityEl.appendChild(option);
+    }
+
+    const vendors = Array.from(new Set(items.flatMap(item => item.vendors ?? []).filter(Boolean))).sort((a, b) => a.localeCompare(b));
+    for (const vendor of vendors) {
+      const option = document.createElement("option");
+      option.value = vendor;
+      option.textContent = vendor;
+      vendorEl.appendChild(option);
+    }
+
+    function matches(item, query, type, rarity, vendor){
+      const haystack = [
+        item.id,
+        item.name,
+        item.type,
+        item.item_category,
+        item.rarity,
+        item.text,
+        item.source,
+        item.use_cost,
+        ...(item.tags ?? []),
+        ...(item.modifiers ?? []),
+        ...(item.effects ?? []),
+        ...(item.vendors ?? [])
+      ].join(" ").toLowerCase();
+
+      if (query && !haystack.includes(query)) return false;
+      if (type && kindDisplay(item) !== type) return false;
+      if (rarity && (item.rarity ?? "") !== rarity) return false;
+      if (vendor && !(item.vendors ?? []).includes(vendor)) return false;
       return true;
     }
 
     function render(){
-      const q = (qEl.value || "").trim().toLowerCase();
-      const t = typeEl.value;
-      const r = rarityEl.value;
-      const v = vendorEl.value;
+      const query = (qEl.value || "").trim().toLowerCase();
+      const type = typeEl.value;
+      const rarity = rarityEl.value;
+      const vendor = vendorEl.value;
 
-      const filtered = items.filter(i => matches(i, q, t, r, v));
-      grid.innerHTML = filtered.map(card).join("") || `<p>Keine Treffer.</p>`;
+      const filtered = items.filter(item => matches(item, query, type, rarity, vendor));
+      grid.innerHTML = filtered.map(card).join("") || "<p>Keine Treffer.</p>";
     }
 
     qEl.addEventListener("input", render);

@@ -1,0 +1,109 @@
+{
+  "id": "bessie",
+  "name": "Bessie",
+  "aliases": [],
+  "source": "homebrew",
+  "image": "",
+  "kind": "Verbündeter",
+  "npc": true,
+  "size": "Large",
+  "creature_type": "Drache",
+  "subtype": "",
+  "alignment": "unaligned",
+  "armor_class": {
+    "value": 18,
+    "display": "Natürliche Rüstung"
+  },
+  "hit_points": {
+    "average": 80,
+    "formula": "[[roll:15W10+30|15W10 + 30]]"
+  },
+  "speeds": {
+    "walk": "9 m",
+    "fly": "12 m"
+  },
+  "abilities": {
+    "str": {
+      "score": 16,
+      "mod": 3,
+      "save": 3
+    },
+    "dex": {
+      "score": 12,
+      "mod": 1,
+      "save": 3
+    },
+    "con": {
+      "score": 15,
+      "mod": 2,
+      "save": 2
+    },
+    "int": {
+      "score": 8,
+      "mod": -1,
+      "save": -1
+    },
+    "wis": {
+      "score": 14,
+      "mod": 2,
+      "save": 4
+    },
+    "cha": {
+      "score": 8,
+      "mod": -1,
+      "save": -1
+    }
+  },
+  "skills": {},
+  "damage_resistances": [],
+  "damage_immunities": [
+    "Feuer"
+  ],
+  "damage_vulnerabilities": [],
+  "special_damage_defenses": [],
+  "condition_immunities": [],
+  "senses": {
+    "Dunkelsicht": "18 m",
+    "Passive Wahrnehmung": 12,
+    "Passives Motiv erkennen": 12,
+    "Passive Nachforschung": 9
+  },
+  "languages": {
+    "speaks": [
+      "Drakonisch"
+    ],
+    "understands": []
+  },
+  "challenge_rating": "1",
+  "xp": 200,
+  "proficiency_bonus": 2,
+  "traits": [
+    {
+      "name": "Draconic Essence",
+      "text": "Bessie will always be summoned as a red fire drake. She has fire immunity and her attacks deal extra fire damage."
+    }
+  ],
+  "spellcasting": [],
+  "actions": [
+    {
+      "name": "Bite",
+      "text": "*Nahkampfwaffenangriff:* +8, 1,5 m, 1 Ziel. *Treffer:* 1W6 + 5 piercing damage plus 2W6 fire damage."
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [
+    {
+      "name": "Infused Strikes",
+      "text": "When an allied creature within 9 m of Bessie that she can see hits a target with a weapon attack, Bessie infuses the strike with her essence, causing the target to take an extra 1W6 fire damage."
+    }
+  ],
+  "legendary_actions": [],
+  "legendary_actions_per_round": 0,
+  "legendary_description": null,
+  "mythic_actions": [],
+  "lair_actions": [],
+  "regional_effects": [],
+  "background": "",
+  "personality": "",
+  "inventory": []
+}

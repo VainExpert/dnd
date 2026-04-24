@@ -1,0 +1,183 @@
+{
+  "id": "spectacles-horn",
+  "name": "Spectacles Horn",
+  "aliases": [
+    "Professor Horn"
+  ],
+  "source": "homebrew",
+  "image": "",
+  "kind": "Verbündeter",
+  "npc": true,
+  "size": "Medium",
+  "creature_type": "Humanoid",
+  "subtype": "Elf",
+  "alignment": "rechtschaffen neutral",
+  "armor_class": {
+    "value": 12,
+    "note": "15 mit [[spell:magierruestung]]"
+  },
+  "hit_points": {
+    "average": 99,
+    "formula": "[[roll:18W8+18|18W8 + 18]]"
+  },
+  "speeds": {
+    "walk": "9 m"
+  },
+  "abilities": {
+    "str": {
+      "score": 10,
+      "mod": 0,
+      "save": 0
+    },
+    "dex": {
+      "score": 14,
+      "mod": 2,
+      "save": 2
+    },
+    "con": {
+      "score": 12,
+      "mod": 1,
+      "save": 1
+    },
+    "int": {
+      "score": 20,
+      "mod": 5,
+      "save": 9
+    },
+    "wis": {
+      "score": 15,
+      "mod": 2,
+      "save": 6
+    },
+    "cha": {
+      "score": 16,
+      "mod": 3,
+      "save": 3
+    }
+  },
+  "skills": {
+    "Arkane Kunde": 13,
+    "Geschichte": 13
+  },
+  "damage_resistances": [],
+  "damage_immunities": [],
+  "damage_vulnerabilities": [],
+  "special_damage_defenses": [
+    "Nichtmagischer Hieb-, Stich- und Wuchtschaden durch [[spell:steinhaut]] (Resistant)"
+  ],
+  "condition_immunities": [
+    "[[condition:verzaubert]]"
+  ],
+  "senses": {
+    "Passive Wahrnehmung": 12,
+    "Passives Motiv erkennen": 12,
+    "Passive Nachforschung": 15
+  },
+  "languages": {
+    "speaks": [
+      "Weltsprache",
+      "Drakonisch",
+      "Elfisch",
+      "Riesisch",
+      "Infernal",
+      "Sylvan"
+    ],
+    "understands": []
+  },
+  "challenge_rating": "12",
+  "xp": 8400,
+  "proficiency_bonus": 4,
+  "traits": [
+    {
+      "name": "Magieresistenz",
+      "text": "Spectacles Horn hat Vorteil auf Rettungswürfe gegen Zauber und andere magische Effekte."
+    }
+  ],
+  "spellcasting": [
+    {
+      "name": "Zauberei",
+      "text": "Spectacles Horn ist ein Level 18 Zauberwirker. Seine Zauberfähigkeit ist INT (Zauberrettungs-SG 17, Zauberangriffsbonus +9). Er hat die folgenden Zauber vorbereitet:",
+      "spells": {
+        "cantrips_at_will": [
+          "[[spell:feuerpfeil]]",
+          "[[spell:licht]]",
+          "[[spell:magierhand]]",
+          "[[spell:taschenspielerei]]",
+          "[[spell:guidance]]",
+          "[[spell:unsichtbarkeit]]",
+          "[[spell:selbst-verkleiden]]"
+        ],
+        "level_1": [
+          "[[spell:magie-entdecken]]",
+          "[[spell:identifizieren]]",
+          "[[spell:magierruestung]]",
+          "[[spell:magisches-geschoss]]"
+        ],
+        "level_2": [
+          "[[spell:gedanken-entdecken]]",
+          "[[spell:objekt-orten]]",
+          "[[spell:unsichtbares-sehen]]"
+        ],
+        "level_3": [
+          "[[spell:gegenzauber]]",
+          "[[spell:hellsehen]]",
+          "[[spell:blitzstrahl]]"
+        ],
+        "level_4": [
+          "[[spell:arkanes-auge]]",
+          "[[spell:kreatur-aufspueren]]",
+          "[[spell:steinhaut]]"
+        ],
+        "level_5": [
+          "Contact Other Plane",
+          "[[spell:rarys-telepathisches-band]]",
+          "[[spell:ausspaehung]]"
+        ],
+        "level_6": [
+          "[[spell:globus-der-unverwundbarkeit]]"
+        ],
+        "level_7": [
+          "[[spell:teleportieren]]"
+        ],
+        "level_8": [
+          "[[spell:telepathie]]"
+        ],
+        "level_9": [
+          "[[spell:voraussicht]]"
+        ]
+      },
+      "ability": "INT",
+      "save_dc": 17,
+      "attack_bonus": 9,
+      "caster_level": 18,
+      "usage": {
+        "level_1": 4,
+        "level_2": 3,
+        "level_3": 3,
+        "level_4": 3,
+        "level_5": 3,
+        "level_6": 1,
+        "level_7": 1,
+        "level_8": 1,
+        "level_9": 1
+      }
+    }
+  ],
+  "actions": [
+    {
+      "name": "[[item:dolch]]",
+      "text": "*Nahkampf- oder Fernkampfwaffenangriff:* +6, 1,5 m, 1 Ziel, geworfen 6/18 m. *Treffer:* [[roll:1W4+2|4 (1W4 + 2)]] Stichschaden."
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [],
+  "legendary_actions": [],
+  "legendary_actions_per_round": 0,
+  "legendary_description": null,
+  "mythic_actions": [],
+  "lair_actions": [],
+  "regional_effects": [],
+  "background": "",
+  "personality": "",
+  "inventory": ["[[item:dolch]]", "[[item:kugel|Wahrsagekugel (arkaner Fokus)]]"]
+}

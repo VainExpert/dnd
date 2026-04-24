@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Würfel</title>
+  <title>Wuerfel</title>
   <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
   <script src="../../theme.js?v=theme-20260422"></script>
 
@@ -28,7 +28,9 @@
     }
 
     .dice-buttons{
-      display:flex; gap:8px; flex-wrap:wrap;
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
       margin-top:10px;
     }
     .chip{
@@ -88,14 +90,6 @@
     }
     .mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
     .small{ font-size: 12px; color: var(--muted); }
-    .two-col{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-    @media (max-width: 820px){
-      .two-col{ grid-template-columns: 1fr; }
-    }
     .roll-anim{
       display:flex;
       gap:10px;
@@ -117,8 +111,77 @@
       font-weight: 900;
     }
     .die .k{ margin-top:4px; font-size: 11px; color: var(--muted); }
+
+    .coin-wrap{ display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-top:10px; }
+    .coin-stage{ perspective: 900px; }
+    .coin{
+      width: 86px; height: 86px;
+      position: relative;
+      transform-style: preserve-3d;
+      border-radius: 999px;
+      will-change: transform;
+      filter: drop-shadow(0 10px 20px rgba(0,0,0,.35));
+    }
+    .coin-face{
+      position:absolute; inset:0;
+      display:flex; align-items:center; justify-content:center;
+      border-radius:999px;
+      border:2px solid rgba(255,255,255,.18);
+      backface-visibility:hidden;
+      user-select:none;
+      font-weight:900;
+      letter-spacing:.4px;
+    }
+    .coin-front{
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.35), rgba(255,255,255,.06) 42%, rgba(255,255,255,.02) 72%),
+                  linear-gradient(180deg, rgba(225,91,79,.35), rgba(225,91,79,.10));
+    }
+    .coin-back{
+      transform: rotateY(180deg);
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.35), rgba(255,255,255,.06) 42%, rgba(255,255,255,.02) 72%),
+                  linear-gradient(180deg, rgba(138,180,255,.35), rgba(138,180,255,.10));
+    }
+    .coin-front span, .coin-back span{
+      font-size:22px;
+      color:var(--text);
+      text-shadow:0 1px 0 rgba(0,0,0,.35);
+    }
+    .coin-edge{
+      position:absolute; inset:-2px;
+      border-radius:999px;
+      border:2px solid rgba(255,255,255,.12);
+      pointer-events:none;
+    }
+    @keyframes coinFlipHeads {
+      0% { transform: rotateY(0deg) rotateX(0deg); }
+      50% { transform: rotateY(720deg) rotateX(20deg); }
+      100% { transform: rotateY(1440deg) rotateX(0deg); }
+    }
+    @keyframes coinFlipTails {
+      0% { transform: rotateY(0deg) rotateX(0deg); }
+      50% { transform: rotateY(720deg) rotateX(20deg); }
+      100% { transform: rotateY(1620deg) rotateX(0deg); }
+    }
+    .coin.flipping-heads{ animation: coinFlipHeads 1.05s cubic-bezier(.2,.8,.2,1); }
+    .coin.flipping-tails{ animation: coinFlipTails 1.05s cubic-bezier(.2,.8,.2,1); }
+
+    .cards-grid{
+      margin-top:10px;
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap:12px;
+    }
+    .cards-list{
+      margin: 8px 0 0;
+      padding-left: 18px;
+    }
+
+    @media (max-width: 820px){
+      .entry-top{ align-items:flex-start; }
+    }
     @media (prefers-reduced-motion: reduce){
       .die{ transition:none !important; }
+      .coin.flipping-heads, .coin.flipping-tails{ animation:none; }
     }
   </style>
 </head>
@@ -126,8 +189,8 @@
 <body>
 <header class="topbar">
   <div class="brand">
-    <div class="title">Würfel</div>
-    <div class="subtitle">Mehrfachwürfe • Vorteil/Nachteil • Aus Monstern/Zaubern/Gegenständen/Spielern • Tabellen</div>
+    <div class="title">Wuerfel</div>
+    <div class="subtitle">Mehrfachwuerfe • Muenzwurf • Karten • Ausdrucke • Tabellen</div>
   </div>
   <div class="top-actions">
     <a class="home-btn" href="../../index.html">← Startseite</a>
@@ -137,9 +200,8 @@
 <main class="main">
   <div class="content" style="max-width:1100px;">
     <div class="grid">
-
       <div class="mini-box">
-        <div class="mini-box-title">Schnellwürfel</div>
+        <div class="mini-box-title">Schnellwuerfel</div>
         <div class="mini-box-text">
           <div class="tool-row">
             <label class="small">Anzahl</label>
@@ -151,45 +213,113 @@
           <div class="dice-buttons" id="quickDice"></div>
 
           <div class="tool-row" style="margin-top:10px;">
-            <button id="advBtn" class="btn">d20 Vorteil (2d20kh1)</button>
-            <button id="disBtn" class="btn">d20 Nachteil (2d20kl1)</button>
-            <button id="pctBtn" class="btn">Prozentwurf (d100)</button>
+            <button id="advBtn" class="btn">W20 Vorteil (2W20kh1)</button>
+            <button id="disBtn" class="btn">W20 Nachteil (2W20kl1)</button>
+            <button id="pctBtn" class="btn">Prozentwurf (W100)</button>
           </div>
         </div>
       </div>
 
       <div class="mini-box">
-        <div class="mini-box-title">Ausdruck würfeln</div>
+        <div class="mini-box-title">Ausdruck wuerfeln</div>
         <div class="mini-box-text">
-          <div class="small">Eine Zeile pro Ausdruck. Du kannst Zeilen benennen: <span class="mono">Feuerball: 8d6</span>. Unterstützt <span class="mono">kh/kl</span> (z. B. <span class="mono">2d20kh1</span>).</div>
+          <div class="small">Eine Zeile pro Ausdruck. Du kannst Zeilen benennen: <span class="mono">Feuerball: 8W6</span>. Unterstuetzt <span class="mono">kh/kl</span> (z. B. <span class="mono">2W20kh1</span>).</div>
           <textarea id="expr" class="select" placeholder="z. B.
-Angriff: 1d20+7
-Schaden: 2d10+7
-Feuerball: 8d6
-Vorteil: 2d20kh1+5"></textarea>
+Angriff: 1W20+7
+Schaden: 2W10+7
+Feuerball: 8W6
+Vorteil: 2W20kh1+5"></textarea>
 
           <div class="tool-row" style="margin-top:10px;">
             <label class="small">Jede Zeile wiederholen</label>
             <input id="repeat" class="select" type="number" min="1" value="1" style="width:110px;">
-            <button id="rollExpr" class="btn">Würfeln</button>
+            <button id="rollExpr" class="btn">Wuerfeln</button>
             <div id="animArea" class="roll-anim"></div>
             <button id="clearHistory" class="btn">Verlauf leeren</button>
           </div>
         </div>
       </div>
-
     </div>
 
     <div class="grid" style="margin-top:14px;">
       <div class="mini-box">
-        <div class="mini-box-title">Aus Sammlungen extrahieren & würfeln</div>
+        <div class="mini-box-title">Muenzwurf</div>
+        <div class="mini-box-text">
+          <div class="coin-wrap">
+            <div class="coin-stage">
+              <div id="coin" class="coin" aria-label="coin">
+                <div class="coin-face coin-front"><span>KOPF</span></div>
+                <div class="coin-face coin-back"><span>ZAHL</span></div>
+                <div class="coin-edge"></div>
+              </div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:10px;">
+              <div class="tool-row">
+                <button id="flip" class="btn">Werfen</button>
+                <button id="flip5" class="btn">5x werfen</button>
+              </div>
+              <div class="mini-box" style="margin:0;">
+                <div class="mini-box-title">Ergebnis</div>
+                <div class="mini-box-text">
+                  <div id="coinResult" class="mono">—</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-box">
+        <div class="mini-box-title">Karten ziehen</div>
+        <div class="mini-box-text">
+          <div class="tool-row">
+            <select id="deckType" class="select">
+              <option value="32">32 (Skat)</option>
+              <option value="52">52 (Standard)</option>
+              <option value="110">110 (Romme)</option>
+            </select>
+            <input id="drawN" class="select" type="number" min="1" value="5" style="width:110px;" />
+            <button id="drawBtn" class="btn">Ziehen</button>
+            <button id="resetDeckBtn" class="btn">Zuruecksetzen / Mischen</button>
+          </div>
+
+          <div class="cards-grid">
+            <div class="mini-box" style="margin:0;">
+              <div class="mini-box-title">Stapel</div>
+              <div class="mini-box-text">
+                <div><b>Verbleibend:</b> <span id="remainingCards" class="mono">—</span></div>
+                <div class="muted" style="margin-top:8px;">Es wird ohne Zuruecklegen gezogen. Zum Neu-Mischen zuruecksetzen.</div>
+              </div>
+            </div>
+
+            <div class="mini-box" style="margin:0;">
+              <div class="mini-box-title">Letzter Zug</div>
+              <div class="mini-box-text">
+                <ul id="lastDraw" class="cards-list mono"></ul>
+              </div>
+            </div>
+
+            <div class="mini-box" style="margin:0;">
+              <div class="mini-box-title">Bisher gezogen</div>
+              <div class="mini-box-text">
+                <ul id="allDrawn" class="cards-list mono"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid" style="margin-top:14px;">
+      <div class="mini-box">
+        <div class="mini-box-title">Aus Sammlungen extrahieren & wuerfeln</div>
         <div class="mini-box-text">
           <div class="small">
-            Diese Seite kann JSON laden und Würfelausdrücke automatisch extrahieren.
+            Diese Seite kann JSON laden und Wuerfelausdruecke automatisch extrahieren.
             Nutze URL-Parameter wie:
             <div class="mono" style="margin-top:6px;">
               dice.html?monster=adult-blue-dracolich<br/>
-              dice.html?spell=fireball&auto=1<br/>
+              dice.html?spell=fireball&amp;auto=1<br/>
               dice.html?item=wand-of-magic-missiles<br/>
               dice.html?pc=mistletoe
             </div>
@@ -205,13 +335,13 @@ Vorteil: 2d20kh1+5"></textarea>
         <div class="mini-box-title">Zufallstabellen</div>
         <div class="mini-box-text">
           <div class="small">
-            Wenn du <span class="mono">data/tables/index.json</span> hast, kannst du hier eine Tabelle wählen.
+            Wenn du <span class="mono">data/tables/index.json</span> hast, kannst du hier eine Tabelle waehlen.
             Oder nutze die URL: <span class="mono">dice.html?table_file=rumors.json</span>
           </div>
 
           <div class="tool-row" style="margin-top:10px;">
-            <select id="tableSel" class="select" style="min-width: 260px;"></select>
-            <button id="rollTableBtn" class="btn">Tabelle würfeln</button>
+            <select id="tableSel" class="select" style="min-width:260px;"></select>
+            <button id="rollTableBtn" class="btn">Tabelle wuerfeln</button>
           </div>
           <div id="tableResult" style="margin-top:10px;"></div>
         </div>
@@ -229,76 +359,73 @@ Vorteil: 2d20kh1+5"></textarea>
   import { escapeHtml, normalizeTable, rollTableEntry, renderTableHtml } from "../../lib.js";
   import { TABLE_FILES, TABLE_DATA_BY_FILE } from "../../data/tables/tables-data.js?v=3";
 
-  // ---------------- Dice engine ----------------
   function randInt(min, max){
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
+  function normalizeDiceExpression(expr){
+    return String(expr || "").trim().replace(/\s+/g, "").replace(/w/gi, "d");
+  }
+
+  function formatDiceExpression(expr){
+    return normalizeDiceExpression(expr).replace(/d/gi, "W");
+  }
+
   function parseDiceToken(tok){
-    // e.g. "2d20kh1", "d6", "1d%", "2d10dl1"
-    const m = tok.match(/^(\d*)d(\d+|%)(?:(kh|kl|dh|dl)(\d+))?$/i);
+    const normalized = normalizeDiceExpression(tok);
+    const m = normalized.match(/^(\d*)d(\d+|%)(?:(kh|kl|dh|dl)(\d+))?$/i);
     if (!m) return null;
     const count = m[1] ? Number(m[1]) : 1;
     const sides = (m[2] === "%") ? 100 : Number(m[2]);
     const mode = m[3] ? m[3].toLowerCase() : null;
     const keepDropN = m[4] ? Number(m[4]) : null;
-    return { count, sides, mode, keepDropN, raw: tok };
+    return { count, sides, mode, keepDropN, raw: normalized };
   }
 
   function rollDice(spec){
-    const rolls = Array.from({length: spec.count}, () => randInt(1, spec.sides));
+    const rolls = Array.from({ length: spec.count }, () => randInt(1, spec.sides));
     let kept = [...rolls];
-
     if (spec.mode && spec.keepDropN != null){
       const n = Math.max(0, Math.min(spec.keepDropN, rolls.length));
-      const sorted = [...rolls].sort((a,b)=>a-b);
+      const sorted = [...rolls].sort((a, b) => a - b);
       if (spec.mode === "kh") kept = sorted.slice(-n);
       if (spec.mode === "kl") kept = sorted.slice(0, n);
       if (spec.mode === "dh") kept = sorted.slice(0, sorted.length - n);
       if (spec.mode === "dl") kept = sorted.slice(n);
     }
-
-    const sum = kept.reduce((a,b)=>a+b,0);
+    const sum = kept.reduce((a, b) => a + b, 0);
     return { rolls, kept, sum };
   }
 
   function tokenize(expr){
-    // Supports numbers, dice tokens, + - * / parentheses
-    const s = expr.replace(/\s+/g, "");
+    const s = normalizeDiceExpression(expr);
     const tokens = [];
     let i = 0;
-
     const isOp = c => ["+","-","*","/","(",")"].includes(c);
 
     while (i < s.length){
       const c = s[i];
       if (isOp(c)){
-        tokens.push({type:"op", v:c});
+        tokens.push({ type:"op", v:c });
         i++;
         continue;
       }
-
-      // dice token starting with digit or 'd'
       const diceMatch = s.slice(i).match(/^(\d*d(\d+|%)(?:kh\d+|kl\d+|dh\d+|dl\d+)?)?/i);
       if (diceMatch && diceMatch[0]){
         const tok = diceMatch[0];
         if (tok.includes("d") || tok.includes("D")){
-          tokens.push({type:"dice", v: tok});
+          tokens.push({ type:"dice", v:tok });
           i += tok.length;
           continue;
         }
       }
-
-      // number
       const num = s.slice(i).match(/^\d+(\.\d+)?/);
       if (num){
-        tokens.push({type:"num", v: num[0]});
+        tokens.push({ type:"num", v:num[0] });
         i += num[0].length;
         continue;
       }
-
-      // unknown char
-      tokens.push({type:"unknown", v:c});
+      tokens.push({ type:"unknown", v:c });
       i++;
     }
     return tokens;
@@ -308,7 +435,6 @@ Vorteil: 2d20kh1+5"></textarea>
     const out = [];
     const ops = [];
     const prec = { "+":1, "-":1, "*":2, "/":2 };
-
     for (const t of tokens){
       if (t.type === "num" || t.type === "dice"){
         out.push(t);
@@ -321,17 +447,17 @@ Vorteil: 2d20kh1+5"></textarea>
           continue;
         }
         if (op === ")"){
-          while (ops.length && ops[ops.length-1] !== "(") out.push({type:"op", v: ops.pop()});
-          if (ops.length && ops[ops.length-1] === "(") ops.pop();
+          while (ops.length && ops[ops.length - 1] !== "(") out.push({ type:"op", v:ops.pop() });
+          if (ops.length && ops[ops.length - 1] === "(") ops.pop();
           continue;
         }
-        while (ops.length && ops[ops.length-1] !== "(" && prec[ops[ops.length-1]] >= prec[op]){
-          out.push({type:"op", v: ops.pop()});
+        while (ops.length && ops[ops.length - 1] !== "(" && prec[ops[ops.length - 1]] >= prec[op]){
+          out.push({ type:"op", v:ops.pop() });
         }
         ops.push(op);
       }
     }
-    while (ops.length) out.push({type:"op", v: ops.pop()});
+    while (ops.length) out.push({ type:"op", v:ops.pop() });
     return out;
   }
 
@@ -350,9 +476,9 @@ Vorteil: 2d20kh1+5"></textarea>
         const spec = parseDiceToken(t.v);
         if (!spec) throw new Error(`Bad dice token: ${t.v}`);
         const r = rollDice(spec);
-        const keptStr = (spec.mode ? ` -> [${r.kept.join(",")}]` : "");
-        breakdownParts.push(`${t.v} = [${r.rolls.join(",")}]${keptStr} = ${r.sum}`);
-        pushVal(r.sum, `${t.v}=${r.sum}`);
+        const keptStr = spec.mode ? ` -> [${r.kept.join(",")}]` : "";
+        breakdownParts.push(`${formatDiceExpression(t.v)} = [${r.rolls.join(",")}]${keptStr} = ${r.sum}`);
+        pushVal(r.sum, `${formatDiceExpression(t.v)}=${r.sum}`);
       } else if (t.type === "op"){
         const b = stack.pop();
         const a = stack.pop();
@@ -372,28 +498,35 @@ Vorteil: 2d20kh1+5"></textarea>
 
   function rollExpression(expr){
     const tokens = tokenize(expr);
-    // quick validation
     if (tokens.some(t => t.type === "unknown")) throw new Error("Invalid characters in expression");
-    const rpn = toRPN(tokens);
-    return evalRPN(rpn);
+    return evalRPN(toRPN(tokens));
   }
 
-  // ---------------- UI helpers ----------------
   const historyEl = document.getElementById("history");
 
   function addHistory(label, expr, result){
     const div = document.createElement("div");
     div.className = "entry";
-    const sub = (result.breakdown && result.breakdown.length)
-      ? result.breakdown.join("\n")
-      : "";
-
+    const sub = (result.breakdown && result.breakdown.length) ? result.breakdown.join("\n") : "";
     div.innerHTML = `
       <div class="entry-top">
-        <div class="entry-expr">${escapeHtml(label ? `${label}: ${expr}` : expr)}</div>
+        <div class="entry-expr">${escapeHtml(label ? `${label}: ${formatDiceExpression(expr)}` : formatDiceExpression(expr))}</div>
         <div class="entry-total">${escapeHtml(String(Math.round(result.total * 1000) / 1000))}</div>
       </div>
       ${sub ? `<div class="entry-sub mono">${escapeHtml(sub)}</div>` : ""}
+    `;
+    historyEl.prepend(div);
+  }
+
+  function addTextHistory(label, total, details = ""){
+    const div = document.createElement("div");
+    div.className = "entry";
+    div.innerHTML = `
+      <div class="entry-top">
+        <div class="entry-expr">${escapeHtml(label)}</div>
+        <div class="entry-total">${escapeHtml(total)}</div>
+      </div>
+      ${details ? `<div class="entry-sub mono">${escapeHtml(details)}</div>` : ""}
     `;
     historyEl.prepend(div);
   }
@@ -403,17 +536,14 @@ Vorteil: 2d20kh1+5"></textarea>
   }
 
   function splitLabel(line){
-    // "Label: expr" or "Label | expr"
-    let m = line.match(/^(.+?)\s*[:|]\s*(.+)$/);
+    const m = line.match(/^(.+?)\s*[:|]\s*(.+)$/);
     if (m) return { label: m[1].trim(), expr: m[2].trim() };
     return { label: "", expr: line };
   }
 
-  // ---------------- Quick dice buttons ----------------
   const quickDiceEl = document.getElementById("quickDice");
   const quickCountEl = document.getElementById("quickCount");
   const quickModEl = document.getElementById("quickMod");
-
   const QUICK = [2,4,6,8,10,12,20,100];
 
   function makeChip(text, onClick){
@@ -425,45 +555,39 @@ Vorteil: 2d20kh1+5"></textarea>
   }
 
   for (const d of QUICK){
-    quickDiceEl.appendChild(makeChip(`<b>d${d}</b> roll`, async () => {
+    quickDiceEl.appendChild(makeChip(`<b>W${d}</b> Wurf`, async () => {
       const n = Math.max(1, Number(quickCountEl.value || 1));
       const mod = Number(quickModEl.value || 0);
-      const expr = `${n}d${d}${mod ? (mod>0?`+${mod}`:`${mod}`) : ""}`;
-      const r = rollExpression(expr);
+      const expr = `${n}d${d}${mod ? (mod > 0 ? `+${mod}` : `${mod}`) : ""}`;
       await animateRoll(expr, "");
     }));
   }
 
   document.getElementById("advBtn").addEventListener("click", async () => {
     const mod = Number(quickModEl.value || 0);
-    const expr = `2d20kh1${mod ? (mod>0?`+${mod}`:`${mod}`) : ""}`;
+    const expr = `2d20kh1${mod ? (mod > 0 ? `+${mod}` : `${mod}`) : ""}`;
     await animateRoll(expr, "Vorteil");
   });
 
   document.getElementById("disBtn").addEventListener("click", async () => {
     const mod = Number(quickModEl.value || 0);
-    const expr = `2d20kl1${mod ? (mod>0?`+${mod}`:`${mod}`) : ""}`;
+    const expr = `2d20kl1${mod ? (mod > 0 ? `+${mod}` : `${mod}`) : ""}`;
     await animateRoll(expr, "Nachteil");
   });
 
   document.getElementById("pctBtn").addEventListener("click", async () => {
-    const expr = `1d100`;
-    await animateRoll(expr, "Prozentwurf");
+    await animateRoll("1d100", "Prozentwurf");
   });
 
-  // ---------------- Expression roller ----------------
   const exprEl = document.getElementById("expr");
   const repeatEl = document.getElementById("repeat");
   const animArea = document.getElementById("animArea");
 
   function uniqDiceTokens(expr){
-    // returns array of dice tokens in expression, in order, deduped by position (keep repeats)
-    const tokens = tokenize(expr).filter(t => t.type === "dice").map(t => t.v);
-    return tokens;
+    return tokenize(expr).filter(t => t.type === "dice").map(t => t.v);
   }
 
   function dieFace(sides){
-    // show plausible values during animation
     return randInt(1, sides);
   }
 
@@ -472,7 +596,7 @@ Vorteil: 2d20kh1+5"></textarea>
     const die = document.createElement("div");
     die.className = "die";
     die.innerHTML = `
-      <div class="t mono">${escapeHtml(tok)}</div>
+      <div class="t mono">${escapeHtml(formatDiceExpression(tok))}</div>
       <div class="v mono" data-v>—</div>
       <div class="k mono" data-k></div>
     `;
@@ -482,7 +606,6 @@ Vorteil: 2d20kh1+5"></textarea>
 
   async function animateRoll(expr, label){
     const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
     const diceTokens = uniqDiceTokens(expr);
     animArea.innerHTML = "";
     const dieEls = diceTokens.map(t => makeDieEl(t));
@@ -495,48 +618,38 @@ Vorteil: 2d20kh1+5"></textarea>
       return;
     }
 
-    // animate for ~700ms with stagger
     const start = performance.now();
     const duration = 700;
-
     function tick(now){
       const t = now - start;
-      for (let i=0; i<dieEls.length; i++){
+      for (let i = 0; i < dieEls.length; i++){
         const el = dieEls[i];
         const spec = el._spec;
         if (!spec) continue;
         const vEl = el.querySelector("[data-v]");
         const kEl = el.querySelector("[data-k]");
-        const localT = t - i * 60; // stagger per die
+        const localT = t - i * 60;
         if (localT < 0) continue;
         if (localT < duration){
           vEl.textContent = String(dieFace(spec.sides));
-          kEl.textContent = "rolling…";
+          kEl.textContent = "rolling...";
         }
       }
-      if (t < duration + dieEls.length * 60){
-        requestAnimationFrame(tick);
-      }
+      if (t < duration + dieEls.length * 60) requestAnimationFrame(tick);
     }
     requestAnimationFrame(tick);
-
-    // wait until animation completes
     await new Promise(r => setTimeout(r, duration + dieEls.length * 60));
 
-    // compute real result (this will roll again, but that’s fine: animation is just visual)
     const result = rollExpression(expr);
     addHistory(label, expr, result);
 
-    // show final per-token values (from breakdown if possible)
-    // We'll parse breakdown lines like "2d6 = [..] = sum" to show the sum.
     const byTok = new Map();
     for (const line of (result.breakdown || [])){
       const m = line.match(/^(\S+)\s*=\s*\[.*\]\s*(?:->\s*\[.*\]\s*)?=\s*(\d+)/);
-      if (m) byTok.set(m[1], m[2]);
+      if (m) byTok.set(normalizeDiceExpression(m[1]), m[2]);
     }
     for (const el of dieEls){
-      const spec = el._spec;
-      const tok = spec?.raw || "";
+      const tok = el._spec?.raw || "";
       const vEl = el.querySelector("[data-v]");
       const kEl = el.querySelector("[data-k]");
       if (byTok.has(tok)){
@@ -546,8 +659,6 @@ Vorteil: 2d20kh1+5"></textarea>
         kEl.textContent = "";
       }
     }
-
-    // clear the animation area shortly after
     setTimeout(() => { animArea.innerHTML = ""; }, 1200);
   }
 
@@ -556,8 +667,8 @@ Vorteil: 2d20kh1+5"></textarea>
     const rep = Math.max(1, Number(repeatEl.value || 1));
     for (const line of lines){
       const { label, expr } = splitLabel(line);
-      for (let i=0; i<rep; i++){
-        const lbl = label ? (rep>1 ? `${label} #${i+1}` : label) : (rep>1 ? `Roll #${i+1}` : "");
+      for (let i = 0; i < rep; i++){
+        const lbl = label ? (rep > 1 ? `${label} #${i + 1}` : label) : (rep > 1 ? `Roll #${i + 1}` : "");
         await animateRoll(expr, lbl);
       }
     }
@@ -567,11 +678,142 @@ Vorteil: 2d20kh1+5"></textarea>
     historyEl.innerHTML = "";
   });
 
-  // ---------------- Extract dice from JSON sources ----------------
+  const coin = document.getElementById("coin");
+  const flipBtn = document.getElementById("flip");
+  const flip5Btn = document.getElementById("flip5");
+  const coinResult = document.getElementById("coinResult");
+
+  function doFlipOnce(){
+    const isHeads = Math.random() < 0.5;
+    coin.classList.remove("flipping-heads", "flipping-tails");
+    void coin.offsetWidth;
+    coin.classList.add(isHeads ? "flipping-heads" : "flipping-tails");
+    window.setTimeout(() => {
+      coinResult.textContent = isHeads ? "KOPF" : "ZAHL";
+    }, 1050);
+    return isHeads ? "KOPF" : "ZAHL";
+  }
+
+  flipBtn.addEventListener("click", () => {
+    const result = doFlipOnce();
+    addTextHistory("Muenzwurf", result, "1 Wurf");
+  });
+
+  flip5Btn.addEventListener("click", async () => {
+    const results = [];
+    for (let i = 0; i < 5; i++){
+      results.push(doFlipOnce());
+      await new Promise(r => setTimeout(r, 1120));
+    }
+    coinResult.textContent = results.join(" • ");
+    const heads = results.filter(r => r === "KOPF").length;
+    const tails = results.length - heads;
+    addTextHistory("Muenzwurf 5x", results.join(" • "), `Kopf: ${heads}\nZahl: ${tails}`);
+  });
+
+  const deckTypeEl = document.getElementById("deckType");
+  const drawNEl = document.getElementById("drawN");
+  const drawBtn = document.getElementById("drawBtn");
+  const resetDeckBtn = document.getElementById("resetDeckBtn");
+  const remainingCardsEl = document.getElementById("remainingCards");
+  const lastDrawEl = document.getElementById("lastDraw");
+  const allDrawnEl = document.getElementById("allDrawn");
+
+  let deck = [];
+  let drawn = [];
+
+  function shuffle(a){
+    for (let i = a.length - 1; i > 0; i--){
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  const SUITS = ["♠","♥","♦","♣"];
+  const RANKS_52 = ["A","2","3","4","5","6","7","8","9","10","J","Q","K"];
+  const RANKS_SKAT = ["7","8","9","10","J","Q","K","A"];
+
+  function buildDeck32(){
+    const d = [];
+    for (const s of SUITS){
+      for (const r of RANKS_SKAT) d.push(`${r}${s}`);
+    }
+    return d;
+  }
+
+  function buildDeck52(){
+    const d = [];
+    for (const s of SUITS){
+      for (const r of RANKS_52) d.push(`${r}${s}`);
+    }
+    return d;
+  }
+
+  function buildDeck110(){
+    const d = [];
+    for (let k = 0; k < 2; k++){
+      for (const s of SUITS){
+        for (const r of RANKS_52) d.push(`${r}${s}`);
+      }
+    }
+    for (let j = 1; j <= 6; j++) d.push(`🃏JOKER${j}`);
+    return d;
+  }
+
+  function deckTypeLabel(){
+    if (deckTypeEl.value === "110") return "110";
+    if (deckTypeEl.value === "32") return "32";
+    return "52";
+  }
+
+  function resetDeck(){
+    const t = deckTypeEl.value;
+    if (t === "110") deck = buildDeck110();
+    else if (t === "32") deck = buildDeck32();
+    else deck = buildDeck52();
+    shuffle(deck);
+    drawn = [];
+    renderDeckUI([], true);
+  }
+
+  function renderList(el, cards){
+    el.innerHTML = cards.map(c => `<li>${escapeHtml(c.replace(/^🃏JOKER\d+$/, "🃏JOKER"))}</li>`).join("");
+  }
+
+  function renderDeckUI(last, justReset = false){
+    remainingCardsEl.textContent = String(deck.length);
+    renderList(lastDrawEl, last);
+    renderList(allDrawnEl, drawn);
+    if (justReset){
+      lastDrawEl.innerHTML = "";
+      allDrawnEl.innerHTML = "";
+    }
+  }
+
+  function drawCards(){
+    const n = Math.max(1, Number(drawNEl.value || 1));
+    if (deck.length === 0){
+      renderDeckUI([]);
+      lastDrawEl.innerHTML = "<li>(Stapel leer)</li>";
+      addTextHistory("Karten ziehen", "Stapel leer", "Bitte neu mischen.");
+      return;
+    }
+    const take = Math.min(n, deck.length);
+    const pulled = deck.splice(0, take);
+    drawn.push(...pulled);
+    renderDeckUI(pulled);
+    addTextHistory(`Karten ziehen (${deckTypeLabel()})`, pulled.join(" • "), `Gezogen: ${take}\nVerbleibend: ${deck.length}`);
+  }
+
+  deckTypeEl.addEventListener("change", resetDeck);
+  resetDeckBtn.addEventListener("click", resetDeck);
+  drawBtn.addEventListener("click", drawCards);
+  resetDeck();
+
   const extractStatus = document.getElementById("extractStatus");
   const extractList = document.getElementById("extractList");
-
-  const DICE_EXPR_RE = /(?<!\w)(?:\d*d(?:\d+|%)(?:kh\d+|kl\d+|dh\d+|dl\d+)?)(?:\s*[+\-]\s*\d+)*(?!\w)/gi;
+  const DICE_EXPR_RE = /(?<!\w)(?:\d*[dw](?:\d+|%)(?:kh\d+|kl\d+|dh\d+|dl\d+)?)(?:\s*[+\-]\s*\d+)*(?!\w)/gi;
 
   function extractDiceFromAny(obj){
     const found = [];
@@ -579,20 +821,15 @@ Vorteil: 2d20kh1+5"></textarea>
       if (typeof v === "string"){
         const matches = v.match(DICE_EXPR_RE);
         if (matches){
-          for (const m of matches){
-            found.push({ expr: m.replace(/\s+/g,""), path: path.join(".") });
-          }
+          for (const m of matches) found.push({ expr: normalizeDiceExpression(m), path: path.join(".") });
         }
       } else if (Array.isArray(v)){
-        v.forEach((x,i)=>walk(x, path.concat([`[${i}]`])));
+        v.forEach((x, i) => walk(x, path.concat([`[${i}]`])));
       } else if (v && typeof v === "object"){
-        for (const [k,val] of Object.entries(v)){
-          walk(val, path.concat([k]));
-        }
+        for (const [k, val] of Object.entries(v)) walk(val, path.concat([k]));
       }
     }
     walk(obj, []);
-    // de-dupe by expr + path (keep first)
     const seen = new Set();
     const out = [];
     for (const x of found){
@@ -606,34 +843,32 @@ Vorteil: 2d20kh1+5"></textarea>
 
   function renderExtractList(items){
     if (!items.length){
-      extractList.innerHTML = `<div class="small">In den geladenen Daten wurden keine Würfelausdrücke gefunden.</div>`;
+      extractList.innerHTML = '<div class="small">In den geladenen Daten wurden keine Wuerfelausdruecke gefunden.</div>';
       return;
     }
     extractList.innerHTML = `
-      <div class="small">${items.length} würfelbare Ausdrücke gefunden:</div>
+      <div class="small">${items.length} wuerfelbare Ausdruecke gefunden:</div>
       <div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap;">
         ${items.map((it, idx) => `
           <div class="chip" data-idx="${idx}">
-            <b>${escapeHtml(it.expr)}</b>
+            <b>${escapeHtml(formatDiceExpression(it.expr))}</b>
             <span class="small">(${escapeHtml(it.path)})</span>
           </div>
         `).join("")}
       </div>
-      <div class="small" style="margin-top:10px;">Klicke auf einen Chip, um ihn zu würfeln. Mit Umschalt-Klick fügst du ihn dem Ausdrucksfeld hinzu.</div>
+      <div class="small" style="margin-top:10px;">Klicke auf einen Chip, um ihn zu wuerfeln. Mit Umschalt-Klick fuegst du ihn dem Ausdrucksfeld hinzu.</div>
     `;
 
     extractList.querySelectorAll(".chip").forEach(el => {
-      el.addEventListener("click", (e) => {
+      el.addEventListener("click", e => {
         const idx = Number(el.getAttribute("data-idx"));
         const it = items[idx];
         if (!it) return;
         if (e.shiftKey){
-          const line = `${it.expr}`;
-          exprEl.value = (exprEl.value ? (exprEl.value.trimEnd() + "\n") : "") + line;
+          exprEl.value = (exprEl.value ? (exprEl.value.trimEnd() + "\n") : "") + formatDiceExpression(it.expr);
           return;
         }
-        const r = rollExpression(it.expr);
-        addHistory(it.path, it.expr, r);
+        addHistory(it.path, it.expr, rollExpression(it.expr));
       });
     });
   }
@@ -648,46 +883,40 @@ Vorteil: 2d20kh1+5"></textarea>
     const p = new URLSearchParams(location.search);
     const auto = p.get("auto") === "1";
 
-    // Direct expressions
     const exprParam = p.get("expr");
     if (exprParam){
-      exprEl.value = decodeURIComponent(exprParam);
+      exprEl.value = formatDiceExpression(decodeURIComponent(exprParam));
       if (auto) document.getElementById("rollExpr").click();
     }
 
-    // Load a JSON and extract dice
     const sources = [
       ["monster", "../../data/monsters/"],
-      ["spell",   "../../data/spells/"],
-      ["pc",      "../../data/pcs/"],
-      ["item",    "../../data/items/"],
+      ["spell", "../../data/spells/"],
+      ["pc", "../../data/pcs/"],
+      ["item", "../../data/items/"]
     ];
 
     for (const [key, base] of sources){
       const id = p.get(key);
       if (!id) continue;
       const path = `${base}${id}.json`;
-      extractStatus.textContent = `${key} wird geladen: ${id} …`;
+      extractStatus.textContent = `${key} wird geladen: ${id} ...`;
       try{
         const obj = await fetchJson(path);
         const items = extractDiceFromAny(obj);
-        extractStatus.textContent = `${key} geladen: ${id} (${items.length} Ausdrücke gefunden)`;
+        extractStatus.textContent = `${key} geladen: ${id} (${items.length} Ausdruecke gefunden)`;
         renderExtractList(items);
         if (auto && items.length){
-          // auto-roll each extracted expression once
           for (const it of items){
-            try{
-              addHistory(it.path, it.expr, rollExpression(it.expr));
-            } catch {}
+            try { addHistory(it.path, it.expr, rollExpression(it.expr)); } catch {}
           }
         }
-      } catch (e){
+      } catch {
         extractStatus.textContent = `${key} konnte nicht geladen werden: ${id} (erwartet: ${path})`;
       }
-      return; // only first matched source
+      return;
     }
 
-    // Roll a table by file
     const tableParam = p.get("table_file") || p.get("table");
     const tableFile = tableParam && /\.json$/i.test(tableParam) ? tableParam : (tableParam ? `${tableParam}.json` : "");
     if (tableFile){
@@ -695,40 +924,14 @@ Vorteil: 2d20kh1+5"></textarea>
         const t = TABLE_DATA_BY_FILE[tableFile] ?? await fetchJson(`../../data/tables/${tableFile}`);
         setActiveTableFromObject(t, tableFile);
         if (auto) rollTable();
-      } catch {
-        // ignore
-      }
+      } catch {}
     }
   }
 
-  // ---------------- Tables ----------------
   const tableSel = document.getElementById("tableSel");
   const rollTableBtn = document.getElementById("rollTableBtn");
   const tableResult = document.getElementById("tableResult");
-
-  let loadedTables = [];
   let activeTable = null;
-
-  function unusedLegacyRollOnTable(t){
-    const entries = Array.isArray(t.entries) ? t.entries : [];
-    if (!entries.length) return { roll: null, text: "(keine Einträge)" };
-
-    const ranged = entries
-      .map(e => typeof e === "string" ? parseRangePrefix(e) : null)
-      .filter(Boolean);
-
-    // If entries have ranges, use dice if available, else infer max
-    if (ranged.length){
-      const dice = parseDiceSides(t.dice || "");
-      const max = Math.max(...ranged.map(r => r.max));
-      const r = dice ? randInt(1, dice.count * dice.sides) : randInt(1, max);
-      const hit = ranged.find(x => r >= x.min && r <= x.max);
-      return { roll: r, text: hit ? hit.text : entries[Math.floor(Math.random()*entries.length)] };
-    }
-
-    // otherwise random entry
-    return { roll: null, text: entries[Math.floor(Math.random()*entries.length)] };
-  }
 
   function setActiveTableFromObject(t, label){
     activeTable = normalizeTable(t, label?.replace(/\.json$/i, ""));
@@ -738,14 +941,13 @@ Vorteil: 2d20kh1+5"></textarea>
   async function loadTablesIndex(){
     try{
       const files = Array.isArray(TABLE_FILES) && TABLE_FILES.length ? TABLE_FILES : [];
-      tableSel.innerHTML = `<option value="">(Tabelle w&auml;hlen)</option>` + files.map(f => {
+      tableSel.innerHTML = '<option value="">(Tabelle waehlen)</option>' + files.map(f => {
         const table = normalizeTable(TABLE_DATA_BY_FILE[f], f.replace(/\.json$/i, ""));
         return `<option value="${escapeHtml(f)}">${escapeHtml(table?.name || f)}</option>`;
       }).join("");
-      loadedTables = files;
       if (!files.length) rollTableBtn.disabled = true;
     } catch {
-      tableSel.innerHTML = `<option value="">(kein Tabellenindex)</option>`;
+      tableSel.innerHTML = '<option value="">(kein Tabellenindex)</option>';
       rollTableBtn.disabled = true;
     }
   }
@@ -760,14 +962,14 @@ Vorteil: 2d20kh1+5"></textarea>
       const r = rollTableEntry(activeTable);
       tableResult.innerHTML = `
         <div class="mini-box" style="margin:0;">
-          <div class="mini-box-title">${escapeHtml(activeTable.name || "Tabelle")}${activeTable.dice ? ` (${escapeHtml(activeTable.dice)})` : ""}${r.roll!=null ? ` • Wurf ${escapeHtml(String(r.roll))}` : ""}</div>
+          <div class="mini-box-title">${escapeHtml(activeTable.name || "Tabelle")}${activeTable.dice ? ` (${escapeHtml(formatDiceExpression(activeTable.dice))})` : ""}${r.roll != null ? ` • Wurf ${escapeHtml(String(r.roll))}` : ""}</div>
           <div class="mini-box-text">
             ${renderTableHtml(activeTable, r)}
           </div>
         </div>
       `;
-    } catch (e){
-      tableResult.innerHTML = `<div class="small">Tabelle konnte nicht gewürfelt werden.</div>`;
+    } catch {
+      tableResult.innerHTML = '<div class="small">Tabelle konnte nicht gewuerfelt werden.</div>';
     }
   }
 
@@ -778,13 +980,12 @@ Vorteil: 2d20kh1+5"></textarea>
         const t = TABLE_DATA_BY_FILE[tableSel.value] ?? await fetchJson(`../../data/tables/${tableSel.value}`);
         setActiveTableFromObject(t, tableSel.value);
       } catch {
-        tableResult.innerHTML = `<div class="small">Tabelle konnte nicht geladen werden.</div>`;
+        tableResult.innerHTML = '<div class="small">Tabelle konnte nicht geladen werden.</div>';
       }
     }
   });
   rollTableBtn.addEventListener("click", rollTable);
 
-  // init
   await loadTablesIndex();
   await loadExternalFromParams();
 </script>
@@ -800,8 +1001,7 @@ Vorteil: 2d20kh1+5"></textarea>
 
     const tablesByFile = {};
     const files = (api.files || []).slice();
-
-    tableSel.innerHTML = `<option value="">(Tabelle w&auml;hlen)</option>`;
+    tableSel.innerHTML = '<option value="">(Tabelle waehlen)</option>';
     for (const file of files){
       const table = api.normalizeTable(api.dataByFile[file], file.replace(/\.json$/i, ""));
       const opt = document.createElement("option");
@@ -812,21 +1012,17 @@ Vorteil: 2d20kh1+5"></textarea>
     }
 
     let activeTable = null;
-
     function setActiveTable(table, label){
       activeTable = table;
       tableResult.innerHTML = `<div class="small">Aktive Tabelle: <span class="mono">${api.escapeHtml(table?.name || label || "Tabelle")}</span></div>`;
     }
-
     function rollActiveTable(){
-      if (!activeTable && tableSel.value){
-        activeTable = tablesByFile[tableSel.value] || null;
-      }
+      if (!activeTable && tableSel.value) activeTable = tablesByFile[tableSel.value] || null;
       if (!activeTable) return;
       const rolled = api.rollTableEntry(activeTable);
       tableResult.innerHTML = `
         <div class="mini-box" style="margin:0;">
-          <div class="mini-box-title">${api.escapeHtml(activeTable.name || "Tabelle")}${activeTable.dice ? ` (${api.escapeHtml(activeTable.dice)})` : ""}${rolled.roll != null ? ` • Wurf ${api.escapeHtml(String(rolled.roll))}` : ""}</div>
+          <div class="mini-box-title">${api.escapeHtml(activeTable.name || "Tabelle")}${activeTable.dice ? ` (${api.escapeHtml(formatDiceExpression(activeTable.dice))})` : ""}${rolled.roll != null ? ` • Wurf ${api.escapeHtml(String(rolled.roll))}` : ""}</div>
           <div class="mini-box-text">
             ${api.renderTableHtml(activeTable, rolled)}
           </div>
@@ -836,13 +1032,9 @@ Vorteil: 2d20kh1+5"></textarea>
 
     tableSel.addEventListener("change", () => {
       activeTable = null;
-      if (tableSel.value){
-        setActiveTable(tablesByFile[tableSel.value], tableSel.value);
-      } else {
-        tableResult.innerHTML = "";
-      }
+      if (tableSel.value) setActiveTable(tablesByFile[tableSel.value], tableSel.value);
+      else tableResult.innerHTML = "";
     });
-
     rollTableBtn.addEventListener("click", rollActiveTable);
 
     const params = new URLSearchParams(location.search);
@@ -857,3 +1049,4 @@ Vorteil: 2d20kh1+5"></textarea>
 </script>
 </body>
 </html>
+

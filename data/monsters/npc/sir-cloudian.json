@@ -1,0 +1,126 @@
+{
+  "id": "sir-cloudian",
+  "name": "Sir Cloudian",
+  "aliases": [],
+  "source": "homebrew",
+  "image": "",
+  "kind": "Verbündeter",
+  "npc": true,
+  "size": "Medium",
+  "creature_type": "Humanoid",
+  "subtype": "Goliath",
+  "alignment": "gesetztreu gut",
+  "armor_class": {
+    "value": 18,
+    "note": "[[item:plattenruestung]]"
+  },
+  "hit_points": {
+    "average": 52,
+    "formula": "[[roll:8W8+16|8W8 + 16]]"
+  },
+  "speeds": {
+    "walk": "9 m"
+  },
+  "abilities": {
+    "str": {
+      "score": 16,
+      "mod": 3,
+      "save": 3
+    },
+    "dex": {
+      "score": 11,
+      "mod": 0,
+      "save": 0
+    },
+    "con": {
+      "score": 15,
+      "mod": 2,
+      "save": 4
+    },
+    "int": {
+      "score": 11,
+      "mod": 0,
+      "save": 0
+    },
+    "wis": {
+      "score": 11,
+      "mod": 0,
+      "save": 2
+    },
+    "cha": {
+      "score": 15,
+      "mod": 2,
+      "save": 2
+    }
+  },
+  "skills": {
+    "Athletik": 7,
+    "Einschüchtern": 4
+  },
+  "damage_resistances": [],
+  "damage_immunities": [],
+  "damage_vulnerabilities": [],
+  "special_damage_defenses": [],
+  "condition_immunities": [],
+  "senses": {
+    "Passive Wahrnehmung": 10,
+    "Passives Motiv erkennen": 12,
+    "Passive Nachforschung": 10
+  },
+  "languages": {
+    "speaks": [
+      "Weltsprache",
+      "Riesisch"
+    ],
+    "understands": []
+  },
+  "challenge_rating": "3",
+  "xp": 700,
+  "proficiency_bonus": 2,
+  "traits": [
+    {
+      "name": "Mutig",
+      "text": "Sir Cloudian hat Vorteil auf Rettungswürfe gegen [[condition:veraengstigt]] werden."
+    },
+    {
+      "name": "Anführer (1/Tag)",
+      "text": "Für 1 min kann Sir Cloudian Befehle geben. Immer wenn eine nicht feindselige Kreatur, die er innerhalb von 9 m sehen kann, einen Angriffswurf oder Rettungswurf ausführt, kann sie 1W4 zu ihrem Wurf addieren, sofern sie ihn hören und verstehen kann. Der Effekt endet, wenn Ladrian [[condition:kampfunfaehig]] wird."
+    }
+  ],
+  "spellcasting": [],
+  "actions": [
+    {
+      "name": "Multiangriff",
+      "text": "Sir Cloudian macht 2 Angriffe."
+    },
+    {
+      "name": "[[item:grossschwert]]",
+      "text": "*Nahkampfwaffenangriff:* +5, 1,5 m, 1 Ziel. *Treffer:* [[roll:2W6+3|9 (2W6 + 3)]] Hiebschaden."
+    }
+  ],
+  "bonus_actions": [
+    {
+      "name": "Wolkenschritt",
+      "text": "Sir Cloudian kann bis zu 9 m auf ein freies Feld teleportieren."
+    },
+    {
+      "name": "Massige Gestalt (1/Tag)",
+      "text": "Sir Cloudian ändert seine Größe zu groß, wenn er genug Platz hat. Die Verwandlung hält für 10 min oder bis er sie freiwillig beendet (ohne Aktion). Für die Dauer hat er Vorteil auf STR-Würfe und seine Bewegungsgeschwindigkeit erhöht sich um 3 m."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parade",
+      "text": "Wenn Sir Cloudian sein [[item:grossschwert]] hält, kann er einmal seiner RK +2 hinzufügen um einen Angriff zu parieren, der ihn trifft."
+    }
+  ],
+  "legendary_actions": [],
+  "legendary_actions_per_round": 0,
+  "legendary_description": null,
+  "mythic_actions": [],
+  "lair_actions": [],
+  "regional_effects": [],
+  "background": "",
+  "personality": "",
+  "inventory": ["[[item:grossschwert]]", "[[item:plattenruestung]]", "[[item:beutel|Geldbeutel mit 15 GM]]"]
+}

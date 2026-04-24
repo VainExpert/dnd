@@ -29,7 +29,11 @@
       fmtSigned,
       mod,
       normalizeMonster,
+      normalizeSpell,
       linkifyRefs,
+      renderRichText,
+      buildLookupIndex,
+      resolveEntityRef,
       entityLinkHtml,
       normalizeEntityRef,
       slugify
@@ -85,6 +89,12 @@
       );
     }
 
+    async function loadSpellLookup() {
+      const files = await loadIndex("../../data/spells/index.json").catch(() => []);
+      const spells = await loadMany("../../data/spells", files).catch(() => []);
+      return buildLookupIndex(spells.map(normalizeSpell));
+    }
+
     function formatSpeed(speed) {
       if (!speed || typeof speed !== "object") return "—";
       const order = ["walk", "fly", "swim", "climb", "burrow"];
@@ -115,14 +125,23 @@
       return String(value);
     }
 
+    const spellLookup = await loadSpellLookup();
+
+    function linkedSpellRef(ref) {
+      if (typeof ref === "string" && ref.includes("[[")) {
+        return linkifyRefs(ref, { lookups: { spell: spellLookup } });
+      }
+      const resolved = resolveEntityRef(ref, spellLookup);
+      return entityLinkHtml("spell", resolved || normalizeEntityRef(ref), { base: "../zauber/" });
+    }
+
     function renderSpellRefs(refs) {
       return (Array.isArray(refs) ? refs : [])
         .map(ref => {
-          if (ref && typeof ref === "object" && ref.id) {
-            return entityLinkHtml("spell", normalizeEntityRef(ref), { base: "../zauber/" });
-          }
-          return escapeHtml(String(ref ?? ""));
+          if (ref == null || ref === "") return "";
+          return linkedSpellRef(ref);
         })
+        .filter(Boolean)
         .join(", ");
     }
 
@@ -143,8 +162,8 @@
 
         return `
           <div class="mini" style="margin-bottom:10px;">
-            ${entry?.name ? `<div><b>${escapeHtml(entry.name)}</b></div>` : ""}
-            ${entry?.text ? `<div style="margin:4px 0 6px 0;">${linkifyRefs(entry.text)}</div>` : ""}
+            ${entry?.name ? `<div><b>${linkifyRefs(entry.name, { lookups: { spell: spellLookup } })}</b></div>` : ""}
+            ${entry?.text ? `<div style="margin:4px 0 6px 0;">${renderRichText(entry.text, { lookups: { spell: spellLookup }, inlineOnly: true })}</div>` : ""}
             ${groups}
           </div>
         `;
@@ -182,7 +201,7 @@
       const legIntro = m.legendary_actions_intro ? `<div class="mini">${escapeHtml(m.legendary_actions_intro)}</div>` : "";
       const legActions = (m.legendary_actions || []).map(action => {
         const cost = action.cost != null ? ` (Kosten ${action.cost})` : "";
-        return `<div class="mini"><b>${escapeHtml(action.name)}${escapeHtml(cost)}.</b> ${linkifyRefs(action.text || "")}</div>`;
+        return `<div class="mini"><b>${linkifyRefs(action.name, { lookups: { spell: spellLookup } })}${escapeHtml(cost)}.</b> ${renderRichText(action.text || "", { lookups: { spell: spellLookup }, inlineOnly: true })}</div>`;
       }).join("");
 
       view.innerHTML = `
@@ -192,8 +211,8 @@
         <div class="mini-box">
           <div class="mini-box-title">Werte</div>
           <div class="mini-box-text">
-            <div><b>RK:</b> ${escapeHtml(m.ac)}${m.ac_note ? ` <span class="muted">(${escapeHtml(m.ac_note)})</span>` : ""}</div>
-            <div><b>TP:</b> ${escapeHtml(m.hp?.average)}${m.hp?.formula ? ` <span class="muted">(${escapeHtml(m.hp.formula)})</span>` : ""}</div>
+            <div><b>RK:</b> ${escapeHtml(m.ac)}${m.ac_note ? ` <span class="muted">(${linkifyRefs(m.ac_note, { lookups: { spell: spellLookup } })})</span>` : ""}</div>
+            <div><b>TP:</b> ${escapeHtml(m.hp?.average)}${m.hp?.formula ? ` <span class="muted">(${linkifyRefs(m.hp.formula, { lookups: { spell: spellLookup } })})</span>` : ""}</div>
             <div><b>Bewegung:</b> ${escapeHtml(formatSpeed(m.speed))}</div>
             <div style="margin-top:8px;">
               <b>STR</b> ${ab.str ?? "—"} (${fmtSigned(mod(ab.str ?? 10))}) •
@@ -230,7 +249,7 @@
           <div class="mini-box" style="margin-top:12px;">
             <div class="mini-box-title">Eigenschaften</div>
             <div class="mini-box-text">
-              ${m.traits.map(trait => `<div class="mini"><b>${escapeHtml(trait.name)}.</b> ${linkifyRefs(trait.text || "")}</div>`).join("")}
+              ${m.traits.map(trait => `<div class="mini"><b>${linkifyRefs(trait.name, { lookups: { spell: spellLookup } })}.</b> ${renderRichText(trait.text || "", { lookups: { spell: spellLookup }, inlineOnly: true })}</div>`).join("")}
             </div>
           </div>` : ""}
 
@@ -238,7 +257,7 @@
           <div class="mini-box" style="margin-top:12px;">
             <div class="mini-box-title">Aktionen</div>
             <div class="mini-box-text">
-              ${m.actions.map(action => `<div class="mini"><b>${escapeHtml(action.name)}.</b> ${linkifyRefs(action.text || action.type || "")}</div>`).join("")}
+              ${m.actions.map(action => `<div class="mini"><b>${linkifyRefs(action.name, { lookups: { spell: spellLookup } })}.</b> ${renderRichText(action.text || action.type || "", { lookups: { spell: spellLookup }, inlineOnly: true })}</div>`).join("")}
             </div>
           </div>` : ""}
 

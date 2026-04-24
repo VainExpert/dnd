@@ -28,7 +28,11 @@
       loadMany,
       fmtSigned,
       mod,
+      normalizeSpell,
       linkifyRefs,
+      renderRichText as renderMarkdownText,
+      buildLookupIndex,
+      resolveEntityRef,
       entityLinkHtml,
       normalizeEntityRef
     } from "../../lib.js";
@@ -77,6 +81,19 @@
         ? [...(raw.languages.speaks || []), ...(raw.languages.understands || []).map(x => `versteht ${x}`)]
         : (Array.isArray(raw.languages) ? raw.languages : (raw.languages ? [String(raw.languages)] : []));
 
+      const savingThrows = raw.saving_throws && typeof raw.saving_throws === "object" && !Array.isArray(raw.saving_throws)
+        ? raw.saving_throws
+        : Object.fromEntries(
+            ["str", "dex", "con", "int", "wis", "cha"]
+              .map(key => {
+                const save = raw.abilities?.[key] && typeof raw.abilities[key] === "object"
+                  ? Number(raw.abilities[key].save)
+                  : NaN;
+                return Number.isFinite(save) ? [key.toUpperCase(), save] : null;
+              })
+              .filter(Boolean)
+          );
+
       return {
         ...raw,
         id: raw.id || slugifyLocal(raw.name),
@@ -87,12 +104,12 @@
         type: raw.creature_type || raw.type || "",
         alignment: raw.alignment || "",
         ac: raw.armor_class?.value ?? raw.ac ?? null,
-        ac_note: raw.armor_class?.display ?? raw.ac_note ?? "",
+        ac_note: raw.armor_class?.display ?? raw.armor_class?.note ?? raw.ac_note ?? "",
         hp: raw.hit_points?.average ?? raw.hp?.average ?? raw.hp ?? null,
         hp_formula: raw.hit_points?.formula ?? raw.hp?.formula ?? "",
-        speed: raw.speed || {},
+        speed: raw.speeds ?? raw.speed ?? {},
         abilities,
-        saving_throws: raw.saving_throws || {},
+        saving_throws: savingThrows,
         skills: raw.skills || {},
         senses: raw.senses || {},
         languages,
@@ -102,10 +119,14 @@
         },
         xp: raw.xp ?? "",
         notes: raw.notes || "",
+        background: raw.background || "",
+        personality: raw.personality || "",
+        inventory: Array.isArray(raw.inventory) ? raw.inventory : [],
         traits: Array.isArray(raw.traits) ? raw.traits.map(t => ({ name: t.name, text: t.text ?? t.value ?? "" })) : [],
         actions: Array.isArray(raw.actions) ? raw.actions.map(a => ({ name: a.name, text: a.text ?? a.value ?? a.type ?? "" })) : [],
         bonus_actions: Array.isArray(raw.bonus_actions) ? raw.bonus_actions.map(a => ({ name: a.name, text: a.text ?? a.value ?? a.type ?? "" })) : [],
         reactions: Array.isArray(raw.reactions) ? raw.reactions.map(a => ({ name: a.name, text: a.text ?? a.value ?? a.type ?? "" })) : [],
+        legendary_description: raw.legendary_description || "",
         legendary_actions: Array.isArray(raw.legendary_actions) ? raw.legendary_actions.map(a => ({ name: a.name, text: a.text ?? a.value ?? a.type ?? "" })) : [],
         spellcasting: Array.isArray(raw.spellcasting) ? raw.spellcasting : []
       };
@@ -139,6 +160,12 @@
       );
     }
 
+    async function loadSpellLookup(){
+      const files = await loadIndex("../../data/spells/index.json").catch(() => []);
+      const spells = await loadMany("../../data/spells", files).catch(() => []);
+      return buildLookupIndex(spells.map(normalizeSpell));
+    }
+
     function formatList(value) {
       if (!value) return "";
       if (Array.isArray(value)) {
@@ -148,6 +175,30 @@
         return Object.entries(value).map(([key, entry]) => `${key} ${entry}`).join(", ");
       }
       return String(value);
+    }
+
+    function formatBonuses(value) {
+      if (!value || typeof value !== "object" || Array.isArray(value)) return formatList(value);
+      return Object.entries(value)
+        .map(([key, entry]) => {
+          const numeric = typeof entry === "number" ? entry : Number(entry);
+          const label = String(key).toUpperCase();
+          return Number.isFinite(numeric) ? `${label} ${fmtSigned(numeric)}` : `${label} ${entry}`;
+        })
+        .join(", ");
+    }
+
+    function renderRichText(value, { empty = "—" } = {}) {
+      const text = String(value ?? "").trim();
+      return text ? renderMarkdownText(text, { lookups: { spell: spellLookup }, inlineOnly: true }) : escapeHtml(empty);
+    }
+
+    function renderRichList(values) {
+      const items = (Array.isArray(values) ? values : [])
+        .map(value => String(value ?? "").trim())
+        .filter(Boolean);
+      if (!items.length) return "";
+      return `<ul>${items.map(item => `<li>${renderMarkdownText(item, { lookups: { spell: spellLookup }, inlineOnly: true })}</li>`).join("")}</ul>`;
     }
 
     function formatSpeed(speed) {
@@ -170,14 +221,23 @@
       return parts.length ? parts.join(", ") : "—";
     }
 
+    const spellLookup = await loadSpellLookup();
+
+    function linkedSpellRef(ref) {
+      if (typeof ref === "string" && ref.includes("[[")) {
+        return linkifyRefs(ref, { lookups: { spell: spellLookup } });
+      }
+      const resolved = resolveEntityRef(ref, spellLookup);
+      return entityLinkHtml("spell", resolved || normalizeEntityRef(ref), { base: "../zauber/" });
+    }
+
     function renderSpellRefs(refs) {
       return (Array.isArray(refs) ? refs : [])
         .map(ref => {
-          if (ref && typeof ref === "object" && ref.id) {
-            return entityLinkHtml("spell", normalizeEntityRef(ref), { base: "../zauber/" });
-          }
-          return escapeHtml(String(ref ?? ""));
+          if (ref == null || ref === "") return "";
+          return linkedSpellRef(ref);
         })
+        .filter(Boolean)
         .join(", ");
     }
 
@@ -188,18 +248,22 @@
             const label = key === "cantrips_at_will"
               ? "Zaubertricks (beliebig)"
               : key.startsWith("level_")
-                ? `Grad ${key.replace("level_", "")}`
+                ? `Level ${key.replace("level_", "")}`
                 : key.replaceAll("_", " ");
+            const usageValue = entry?.usage?.[key];
+            const usageSuffix = usageValue != null && usageValue !== ""
+              ? ` <span class="muted">(${escapeHtml(usageValue)})</span>`
+              : "";
             const html = renderSpellRefs(refs);
-            return html ? `<div class="mini"><b>${escapeHtml(label)}:</b> ${html}</div>` : "";
+            return html ? `<div class="mini"><b>${escapeHtml(label)}:${usageSuffix}</b> ${html}</div>` : "";
           })
           .filter(Boolean)
           .join("");
 
         return `
           <div class="mini" style="margin-bottom:10px;">
-            ${entry?.name ? `<div><b>${escapeHtml(entry.name)}</b></div>` : ""}
-            ${entry?.text ? `<div style="margin:4px 0 6px 0;">${linkifyRefs(entry.text)}</div>` : ""}
+            ${entry?.name ? `<div><b>${linkifyRefs(entry.name, { lookups: { spell: spellLookup } })}</b></div>` : ""}
+            ${entry?.text ? `<div style="margin:4px 0 6px 0;">${renderMarkdownText(entry.text, { lookups: { spell: spellLookup }, inlineOnly: true })}</div>` : ""}
             ${groups}
           </div>
         `;
@@ -217,7 +281,21 @@
     const subtitle = [n.race, n.role, n.faction].filter(Boolean).join(" • ");
     const ab = n.abilities || {};
     const showAbilities = ["str", "dex", "con", "int", "wis", "cha"].some(k => ab?.[k] != null);
-    const savesLine = formatList(n.saving_throws);
+    const savesLine = Object.entries(n.saving_throws || {})
+      .filter(([key, value]) => {
+        const normalizedKey = String(key).toLowerCase();
+        const abilityScore = ab?.[normalizedKey];
+        const saveValue = typeof value === "number" ? value : Number(value);
+        if (!Number.isFinite(saveValue)) return true;
+        if (abilityScore == null) return true;
+        return saveValue !== mod(abilityScore);
+      })
+      .map(([key, value]) => {
+        const numeric = typeof value === "number" ? value : Number(value);
+        const label = String(key).toUpperCase();
+        return Number.isFinite(numeric) ? `${label} ${fmtSigned(numeric)}` : `${label} ${value}`;
+      })
+      .join(", ");
     const skillsLine = formatList(n.skills);
     const sensesLine = formatList(n.senses);
     const languagesLine = Array.isArray(n.languages) ? n.languages.join(", ") : formatList(n.languages);
@@ -229,9 +307,16 @@
       <div class="mini-box">
         <div class="mini-box-title">Werte</div>
         <div class="mini-box-text">
-          ${n.ac != null ? `<div><b>RK:</b> ${escapeHtml(n.ac)}${n.ac_note ? ` <span class="muted">(${escapeHtml(n.ac_note)})</span>` : ""}</div>` : ""}
-          ${n.hp != null ? `<div><b>TP:</b> ${escapeHtml(n.hp)}${n.hp_formula ? ` <span class="muted">(${escapeHtml(n.hp_formula)})</span>` : ""}</div>` : ""}
+          ${n.ac != null ? `<div><b>RK:</b> ${escapeHtml(n.ac)}${n.ac_note ? ` <span class="muted">(${renderMarkdownText(n.ac_note, { lookups: { spell: spellLookup }, inlineOnly: true })})</span>` : ""}</div>` : ""}
+          ${n.hp != null ? `<div><b>TP:</b> ${escapeHtml(n.hp)}${n.hp_formula ? ` <span class="muted">(${renderMarkdownText(n.hp_formula, { lookups: { spell: spellLookup }, inlineOnly: true })})</span>` : ""}</div>` : ""}
           <div><b>Bewegung:</b> ${escapeHtml(formatSpeed(n.speed))}</div>
+          ${(n.challenge?.cr || n.challenge?.proficiency_bonus != null || n.xp) ? `
+            <div>
+              ${n.challenge?.cr ? `<b>HG:</b> ${escapeHtml(n.challenge.cr)}` : ""}
+              ${n.challenge?.proficiency_bonus != null ? `${n.challenge?.cr ? ` • ` : ""}<b>ÜB:</b> ${escapeHtml(fmtSigned(n.challenge.proficiency_bonus))}` : ""}
+              ${n.xp ? `${(n.challenge?.cr || n.challenge?.proficiency_bonus != null) ? ` • ` : ""}<b>EP:</b> ${escapeHtml(n.xp)}` : ""}
+            </div>
+          ` : ""}
         </div>
       </div>
 
@@ -273,7 +358,7 @@
       ${n.notes ? `
         <div class="mini-box" style="margin-top:12px;">
           <div class="mini-box-title">Notizen</div>
-          <div class="mini-box-text">${linkifyRefs(n.notes)}</div>
+          <div class="mini-box-text">${renderMarkdownText(n.notes, { lookups: { spell: spellLookup } })}</div>
         </div>
       ` : ""}
 
@@ -281,7 +366,7 @@
         <div class="mini-box" style="margin-top:12px;">
           <div class="mini-box-title">Eigenschaften</div>
           <div class="mini-box-text">
-            ${n.traits.map(t => `<div class="mini"><b>${escapeHtml(t.name)}.</b> ${linkifyRefs(t.text)}</div>`).join("")}
+            ${n.traits.map(t => `<div class="mini"><b>${linkifyRefs(t.name, { lookups: { spell: spellLookup } })}.</b> ${renderMarkdownText(t.text, { lookups: { spell: spellLookup }, inlineOnly: true })}</div>`).join("")}
           </div>
         </div>
       ` : ""}
@@ -290,7 +375,7 @@
         <div class="mini-box" style="margin-top:12px;">
           <div class="mini-box-title">Aktionen</div>
           <div class="mini-box-text">
-            ${n.actions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || "")}</div>`).join("")}
+            ${n.actions.map(a => `<div class="mini"><b>${linkifyRefs(a.name, { lookups: { spell: spellLookup } })}.</b> ${renderMarkdownText(a.text || "", { lookups: { spell: spellLookup }, inlineOnly: true })}</div>`).join("")}
           </div>
         </div>
       ` : ""}
@@ -299,7 +384,7 @@
         <div class="mini-box" style="margin-top:12px;">
           <div class="mini-box-title">Bonusaktionen</div>
           <div class="mini-box-text">
-            ${n.bonus_actions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || "")}</div>`).join("")}
+            ${n.bonus_actions.map(a => `<div class="mini"><b>${linkifyRefs(a.name, { lookups: { spell: spellLookup } })}.</b> ${renderMarkdownText(a.text || "", { lookups: { spell: spellLookup }, inlineOnly: true })}</div>`).join("")}
           </div>
         </div>
       ` : ""}
@@ -308,7 +393,7 @@
         <div class="mini-box" style="margin-top:12px;">
           <div class="mini-box-title">Reaktionen</div>
           <div class="mini-box-text">
-            ${n.reactions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || "")}</div>`).join("")}
+            ${n.reactions.map(a => `<div class="mini"><b>${linkifyRefs(a.name, { lookups: { spell: spellLookup } })}.</b> ${renderMarkdownText(a.text || "", { lookups: { spell: spellLookup }, inlineOnly: true })}</div>`).join("")}
           </div>
         </div>
       ` : ""}
@@ -317,16 +402,22 @@
         <div class="mini-box" style="margin-top:12px;">
           <div class="mini-box-title">Legendäre Aktionen</div>
           <div class="mini-box-text">
-            ${n.legendary_actions.map(a => `<div class="mini"><b>${escapeHtml(a.name)}.</b> ${linkifyRefs(a.text || "")}</div>`).join("")}
+            ${n.legendary_description ? `<div class="mini">${renderMarkdownText(n.legendary_description, { lookups: { spell: spellLookup } })}</div>` : ""}
+            ${n.legendary_actions.map(a => `<div class="mini"><b>${linkifyRefs(a.name, { lookups: { spell: spellLookup } })}.</b> ${renderMarkdownText(a.text || "", { lookups: { spell: spellLookup }, inlineOnly: true })}</div>`).join("")}
           </div>
         </div>
       ` : ""}
 
-      <p class="muted" style="margin-top:12px;">
-        ${n.challenge?.cr ? `<b>HG:</b> ${escapeHtml(n.challenge.cr)}` : ""}
-        ${n.challenge?.proficiency_bonus != null ? ` • <b>ÜB:</b> ${escapeHtml(fmtSigned(n.challenge.proficiency_bonus))}` : ""}
-        ${n.xp ? ` • <b>EP:</b> ${escapeHtml(n.xp)}` : ""}
-      </p>
+      ${(n.background || n.personality || (n.inventory && n.inventory.length)) ? `
+        <div class="mini-box" style="margin-top:12px;">
+          <div class="mini-box-title">Charakter</div>
+          <div class="mini-box-text">
+            ${n.background ? `<div class="mini"><b>Hintergrund:</b> ${renderRichText(n.background)}</div>` : ""}
+            ${n.personality ? `<div class="mini"><b>Persönlichkeit:</b> ${renderRichText(n.personality)}</div>` : ""}
+            ${(n.inventory && n.inventory.length) ? `<div class="mini"><b>Inventar:</b>${renderRichList(n.inventory)}</div>` : ""}
+          </div>
+        </div>
+      ` : ""}
     `;
   </script>
 </body>

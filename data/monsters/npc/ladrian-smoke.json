@@ -2,77 +2,77 @@
   "id": "ladrian-smoke",
   "name": "Ladrian Smoke",
   "aliases": [],
-  "source_file": "LadrianSmoke.monster",
-  "kind": "monster",
+  "source": "homebrew",
+  "image": "",
+  "kind": "Antagonist",
   "npc": true,
   "size": "Medium",
-  "creature_type": "humanoid",
-  "subtype": "Red Dragonborn",
-  "alignment": "lawful evil",
+  "creature_type": "Humanoid",
+  "subtype": "Drachenblütiger (rot)",
+  "alignment": "gesetztreu böse",
   "armor_class": {
     "value": 20,
-    "display": "20 (plate, shield)"
+    "note": "[[item:ritterruestung]] und [[item:schild]]"
   },
   "hit_points": {
     "average": 105,
-    "formula": "10d8 + 40"
+    "formula": "[[roll:10W8 + 40]]"
   },
-  "speed": {
-    "walk": "30 ft."
+  "speeds": {
+    "walk": "9 m"
   },
   "abilities": {
     "str": {
       "score": 20,
-      "mod": 5
+      "mod": 5,
+      "save": 9
     },
     "dex": {
       "score": 12,
-      "mod": 1
+      "mod": 1,
+      "save": 1
     },
     "con": {
       "score": 18,
-      "mod": 4
+      "mod": 4,
+      "save": 8
     },
     "int": {
       "score": 8,
-      "mod": -1
+      "mod": -1,
+      "save": -1
     },
     "wis": {
       "score": 12,
-      "mod": 1
+      "mod": 1,
+      "save": 1
     },
     "cha": {
       "score": 16,
-      "mod": 3
+      "mod": 3,
+      "save": 3
     }
-  },
-  "saving_throws": {
-    "str": 9,
-    "con": 8
   },
   "skills": {
-    "athletics": 9,
-    "intimidation": 7
+    "Athletik": 9,
+    "Einschüchtern": 7
   },
-  "damage_resistances": [],
-  "damage_immunities": [
-    {
-      "name": "fire",
-      "note": "(Immune)"
-    }
-  ],
+  "damage_resistances": ["Feuer"],
+  "damage_immunities": [],
   "damage_vulnerabilities": [],
   "special_damage_defenses": [],
   "condition_immunities": [
-    "frightened"
+    "[[condition:veraengstigt]]"
   ],
   "senses": {
-    "passive_perception": 11
+    "Passive Wahrnehmung": 11,
+    "Passives Motiv erkennen": 13,
+    "Passive Nachforschung": 9
   },
   "languages": {
     "speaks": [
-      "Common",
-      "Draconic",
+      "Weltsprache",
+      "Drakonisch",
       "Infernal"
     ],
     "understands": []
@@ -82,42 +82,47 @@
   "proficiency_bonus": 4,
   "traits": [
     {
-      "name": "Legendary Resistance (1/day)",
-      "text": "If Ladrian fals a saving throw, he can chosse to succeed it instead."
+      "name": "Legendäre Resistenz (1/Tag)",
+      "text": "Wenn Ladrian einen Rettungswurf nicht schafft, kann er sich dazu entscheiden ihn zu schaffen."
     },
     {
-      "name": "Second Wind (1/day)",
-      "text": "Ladrian gathers his stamina and regains 1d10 + 4 hit points."
+      "name": "Zweiter Wind (1/Tag)",
+      "text": "Ladrian sammelt seine Kräfte und bekommt [[roll:1W10+4|9 (1W10 + 4)]] TP zurück."
     },
     {
-      "name": "Action Surge (1/day)",
-      "text": "Ladrian pushes his body to the limits and can make 1 extra action this turn."
+      "name": "Tatendrang (1/Tag)",
+      "text": "Ladrian bringt seine Körper über seine Grenzen und kann eine weitere Aktion in diesem Zug machen."
     },
     {
-      "name": "Leadership (1/day)",
-      "text": "For 1 min, Ladrian utters a special command or warning a nonhostile creature that he can see within 9 m of it makes an attack roll or a saving throw. The creature can add a d6 to its roll provided it can hear him. This effect ends if the knight is _incapacitated_."
+      "name": "Anführer (1/Tag)",
+      "text": "Für 1 min kann Ladrian Befehle geben. Immer wenn eine nicht feindselige Kreatur, die er innerhalb von 9 m sehen kann, einen Angriffswurf oder Rettungswurf ausführt, kann sie 1W4 zu ihrem Wurf addieren, sofern sie ihn hören und verstehen kann. Der Effekt endet, wenn Ladrian [[condition:kampfunfaehig]] wird."
     }
   ],
   "spellcasting": [],
   "actions": [
     {
-      "name": "Multiattack",
-      "text": "Ladrian makes two attacks."
+      "name": "Multiangriff",
+      "text": "Ladrian macht 2 Angriffe."
     },
     {
-      "name": "Longsword, +1",
-      "text": "_Melee Weapon Attack:_ +10 to hit, reach 1,5 m, one target. _Hit:_ 1d8 + 7 slashing damage"
+      "name": "[[item:waffe-1|Langschwert, +1]]",
+      "text": "*Nahkampfwaffenangriff:* +10, 1,5 m, 1 Ziel. *Treffer:* [[roll:1W8+7|11 (1W8 + 7)]] Hiebschaden."
     },
     {
-      "name": "Fire Breath (Recharge 6)",
-      "text": "Ladrian exhales fire in a 9 m cone. Each creature in that area must make a DC 15 DEX saving throw. On a failed save, the creature takes 3d6 fire damage, on a successful save half."
+      "name": "Feueratem (Aufladung 5-6)",
+      "text": "Ladrian atmet Feuer in einem 9 m Kegel aus. Jede Kreatur in dem Bereich muss einen SG 15 DEX-Rettungswurf machen. Bei Misserfolg: [[roll:3W6|9 (3W6)]] Feuerschaden. Bei Erfolg: Die Hälfte."
     }
   ],
-  "bonus_actions": [],
+  "bonus_actions": [
+    {
+      "name": "Drachenflügel (1/Tag)",
+      "text": "Als Bonusaktion kann Ladrian Spektralflügel aus seinem Rücken wachsen lassen. Diese geben ihm für 10 min eine Fluggeschwindigkeit gleich seiner normalen Bewegungsgeschwindigkeit. Die Flügekl könenn auch freiwillig eingezogen werden (ohne Aktion) oder halten bis Ladrian [[condition:kampfunfaehig]] ist."
+    }
+  ],
   "reactions": [
     {
-      "name": "Retreat",
-      "text": "Ladrian can shout \"Retreat\" and all his allies that can hear him wihin 18 m immediatly take their reaction, if possbile, to Disengage the combat."
+      "name": "Rückzug",
+      "text": "Ladrian kann \"Rückzug\" rufen und alle seine Verbündeten in 18 m Abstand, die ihn hören können, nehmen unmittelbar ihre Reaktion, wenn sie können, um Flucht auszuführen."
     }
   ],
   "legendary_actions": [],
@@ -126,14 +131,7 @@
   "mythic_actions": [],
   "lair_actions": [],
   "regional_effects": [],
-  "display": {
-    "double_columns": true,
-    "separation_point": 2
-  },
-  "import_notes": [
-    "AC inferred from armorName, Dexterity modifier, and shieldBonus.",
-    "Ignored inconsistent customCr value \"1 (200 XP)\" and used cr \"10\".",
-    "Ignored inconsistent customProf value \"2\" and used proficiency bonus +4 from CR."
-  ],
-  "source_format": "monster builder export"
+  "background": "Als Bastard-Sohn der Familie \"Von Pyris\" musste er schon früh für sich selbst sorgen. Zu seinem Glück hat er das Kampfgeschick seines Vaters geerbt und konnte so schnell in den Rängen der Wache und Armee aufsteigen. Bei einem Festtagsturnier nahm auch der König von seiner Kraft kenntnis und machte ihn zu einem seiner Leibwächter. Den Ritterschlag verweigerte er und er verschweigt auch seit jeher seine wahre Abstammung. Auf Edison traf er als der König bei ihm eine Bestellung aufgab. Sie verstanden sich direkt und gründeten die kleine Geheimorganisation. Mit Düwel und Marlowe wuchs sie, sodass Ladrian selbst einige Stricke ziehen musste um weiterhin ungestört arbeiten zu können. Mit Edison ist ein perfekter Kandidat ihm erschienen um das System von innen heraus zu vernichten.",
+  "personality": "zurückhaltend, autoritär, ",
+  "inventory": ["[[waffe-1|Langschwert, +1", "[[item:schild]]", "[[item:ritterruestung]]", "[[item:beutel|Geldbeutel mit 5 GM]]"]
 }

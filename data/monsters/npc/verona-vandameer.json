@@ -4,78 +4,75 @@
   "aliases": [
     "Verona Vandameer"
   ],
-  "source_file": "VeronaVandameer.monster",
+  "source": "homebrew",
   "kind": "monster",
   "npc": true,
   "size": "Medium",
-  "creature_type": "humanoid",
-  "subtype": null,
-  "alignment": "neutral evil",
+  "creature_type": "Humanoid",
+  "subtype": "Mensch",
+  "alignment": "neutral böse",
   "armor_class": {
     "value": 16,
-    "display": "16 (hide armor, shield)"
+    "note": "[[item:fellruestung]] und [[item:schild]]"
   },
   "hit_points": {
     "average": 132,
-    "formula": "24d8 + 24"
+    "formula": "[[roll:24W8+24|24W8 + 24]]"
   },
   "speed": {
-    "walk": "30 ft."
+    "walk": "9 m"
   },
   "abilities": {
     "str": {
       "score": 10,
-      "mod": 0
+      "mod": 0,
+      "save": 0
     },
     "dex": {
       "score": 14,
-      "mod": 2
+      "mod": 2,
+      "save": 2
     },
     "con": {
       "score": 12,
-      "mod": 1
+      "mod": 1,
+      "save": 1
     },
     "int": {
       "score": 12,
-      "mod": 1
+      "mod": 1,
+      "save": 5
     },
     "wis": {
       "score": 20,
-      "mod": 5
+      "mod": 5,
+      "save": 9
     },
     "cha": {
       "score": 12,
-      "mod": 1
+      "mod": 1,
+      "save": 1
     }
   },
-  "saving_throws": {
-    "int": 5,
-    "wis": 9
-  },
   "skills": {
-    "medicine": 9,
-    "nature": 5,
-    "perception": 9,
-    "religion": 5
+    "Medizin": 9,
+    "Naturkunde": 5,
+    "Wahrnehmung": 9,
+    "Religion": 5
   },
   "damage_resistances": [],
   "damage_immunities": [],
   "damage_vulnerabilities": [],
-  "special_damage_defenses": [
-    {
-      "name": "Critical Hits",
-      "note": " (Resistant)",
-      "type": "r"
-    }
-  ],
   "condition_immunities": [],
   "senses": {
-    "passive_perception": 19
+    "Passive Wahrnehmung": 19,
+    "Passives Motiv erkennen": 11,
+    "Passive Nachforschung": 11
   },
   "languages": {
     "speaks": [
-      "Common",
-      "Druidic",
+      "Weltsprache",
+      "Druidisch",
       "Infernal"
     ],
     "understands": []
@@ -86,77 +83,74 @@
   "traits": [],
   "spellcasting": [
     {
-      "name": "Spellcasting",
-      "text": "Maria is an 18th-level Spellcaster. Her spellcasting ability is WIS (spell save DC 17, +9 to hit). She has the following spells prepared:\n- Cantrips (at will): _Druidcraft, Poison Spray, Infestation, Shillelagh_\n- 1st Level (4 slots): _Speak with Animals, Faerie Fire, Entangle, Thunderwave_\n- 2nd Level (3 slots): _Heat Metal, Wither and Bloom, Darkvision, Hold Person, Blindness/Deafness_\n- 3rd Level (3 slots): _Feign Death, Aura of Vitality, Plant Growth, Water Breathing, Conjure Animals_\n- 4th Level (3 slots): _Polymorph, Stoneskin, Blight, Confusion_\n- 5th Level (3 slots): _Insect Plague, Tree Stride, Wrath of Nature, Scrying, Awaken_\n- 6th Level (1 slot): _Heal, Wall of Thorns, Flesh to Stone_\n- 7th Level (1 slot): _Symbol_\n- 8th Level (1 slot): _Feeblemind_\n- 9th Level (1 slot): _Foresight_",
+      "name": "Zauberei",
+      "text": "Maria ist ein Level 18 Zauberwirker. Ihre Zauberfähigkiet ist WIS (Zauberrettungs-SG 17. Zauberangriffsbonus +7). Sie hat die folgenden Zauber vorbereitet:",
       "spells": {
         "cantrips_at_will": [
-          "Druidcraft",
-          "Poison Spray",
-          "Infestation",
-          {
-            "id": "shillelagh",
-            "name": "Shillelagh"
-          }
+          "[[spell:druidenkunst]]",
+          "[[spell:gift-versprühen]]",
+          "[[spell:befall]]",
+          "[[spell:shillelagh]]"
         ],
         "level_1": [
-          "Speak with Animals",
-          "Faerie Fire",
-          "Entangle",
-          "Thunderwave"
+          "[[spell:mit-tieren-sprechen]]",
+          "[[spell:feenfeuer]]",
+          "[[spell:verstricken]]",
+          "[[spell:donnnerwoge]]"
         ],
         "level_2": [
-          "Heat Metal",
-          "Wither and Bloom",
-          "Darkvision",
-          "Hold Person",
-          "Blindness/Deafness"
+          "[[spell:metall-erhitzen]]",
+          "[[spell:welken-und-bluehen]]",
+          "[[spell:dunkelsicht]]",
+          "[[spell:person-festhalten]]",
+          "[[spell:blindheit-taubheit]]"
         ],
         "level_3": [
-          "Feign Death",
-          "Aura of Vitality",
-          "Plant Growth",
-          "Water Breathing",
-          "Conjure Animals"
+          "[[spell:tod-vortaeuschen]]",
+          "[[spell:aura-der-vitalitaet]]",
+          "[[spell:pflanzenwachstum]]",
+          "[[spell:wasseratmung]]",
+          "[[spell:tiere-beschwoeren]]"
         ],
         "level_4": [
-          "Polymorph",
-          "Stoneskin",
-          "Blight",
-          "Confusion"
+          "[[spell:polymorph]]",
+          "[[spell:steinhaut]]",
+          "[[spell:duerre]]",
+          "[[spell:verwirrung]]"
         ],
         "level_5": [
-          "Insect Plague",
-          "Tree Stride",
-          "Wrath of Nature",
-          "Scrying",
-          "Awaken"
+          "[[spell:insektenplage]]",
+          "[[spell:baumschritt]]",
+          "[[spell:zorn-der-natur]]",
+          "[[spell:ausspaehung]]",
+          "[[spell:erwecken]]"
         ],
         "level_6": [
-          "Heal",
-          "Wall of Thorns",
-          "Flesh to Stone"
+          "[[spell:heilung]]",
+          "[[spell:dornenwand]]",
+          "[[spell:fleisch-zu-stein]]"
         ],
         "level_7": [
-          "Symbol"
+          "[[spell:symbol]]"
         ],
         "level_8": [
-          "Feeblemind"
+          "[[spell:schwachsinn]]"
         ],
         "level_9": [
-          "Foresight"
+          "[[spell:voraussicht]]"
         ]
       },
-      "ability": "wisdom",
+      "ability": "WIS",
       "save_dc": 17,
       "attack_bonus": 9,
       "caster_level": 18,
-      "slots": {
+      "usage": {
         "level_1": 4,
         "level_2": 3,
         "level_3": 3,
         "level_4": 3,
         "level_5": 3,
-        "level_6": 1,
+        "level_6": 2,
         "level_7": 1,
         "level_8": 1,
         "level_9": 1
@@ -165,61 +159,53 @@
   ],
   "actions": [
     {
-      "name": "Shillelagh (Staff)",
-      "text": "_Melee Weapon Attack_: +9 to hit, reach 1,5 m, one target. _Hit_: 1d8 + 5 slashing damage."
+      "name": "Shillelagh ([[item:kampfstab|Stab]])",
+      "text": "*Nahkampfwaffenangriff:* +9, 1,5 m, 1 Ziel. *Treffer:* [[roll:1W8+5|9 (1W8 + 5)]] Hiebschaden."
     },
     {
-      "name": "Wildfire",
-      "text": "_Ranged Spell Attack_: +9 to hit, range 120 ft., one target. _Hit_: 6d6 + 5 fire damage, and the target is blinded until the start of the druid’s next turn."
+      "name": "Lauffeuer",
+      "text": "*Fernkampfzauberangriff:* +9, 36 m, 1 Ziel. *Treffer:* [[roll:6W6+5|23 (6W6 + 5)]] Feuerschaden, und das Ziel ist [[condition:blind]] bis zum Start von Maria's nächsten Zug."
     },
     {
-      "name": "Change Shape (2/Day)",
-      "text": "Maria magically polymorphs into a beast or elemental with a CR of 6 or less, and can remain in this form for up to 9 hours. Her equipment melds with her new form. Maria reverts to her true form if she dies or falls unconscious. Maria can revert to her true form using a Bonus Action on her turn.\nWhile in the new form, Maria retains its game statistics and ability to speak, only her AC, movement modes, STR, and DEX are replaced by those of the new form, and it gains any special senses, proficiencies, traits, actions, and reactions (except class features, legendary actions, and lair actions) that the new form has but that it lacks. It can cast its spells with verbal or somatic components in its new form.\nThe new form’s attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks."
+      "name": "Tiergestalt (2/Tag)",
+      "text": "Maria verwandelt sich in ein Tier oder ein Elementar mit bis zu HG 6 und kann bis zu 9 h in der Form bleiben. Ihre Ausrüstung schmilzt in ihre neue Form. Sie verwandelt sich zurück, wenn sie stirbt oder [[condition:bewusstlos]] wird. Maria kann sich auch mit einer Bonusaktion zurückverwandeln.\nIn dieser Form behält Maria ihre eigenen Werte und kann sprechen. Mur ihre RK, Bewegungsgeschwindigkeiten, STR und DEX werden ersetzt. Auch bekommt Maria alle speziellen Sinne, Übungen, Merkmale, Aktionen und Reaktionen (außer Klassenmerkmale, Legendäre und Umgebungsaktionen). Sie kann trotzdem Zauber mit verbalen und somatischen Komponeneten wirken.\nDie Angriffe der neuen Form gelten als magisch um Resistenzen und Immunitäten zu umgeben."
     },
     {
-      "name": "Symbiotic Entity",
-      "text": "As an Action, Maria can expend a use of her \"Change Shape\" feature to awaken her spores and she gains 72 temporary HP. While this feature is active, Maria gains the following benefits:\n- When Maria deals damage with its \"Halo of Spores\", she rolls the damage die a second time and adds it to the total.\n- Maria' melee weapon attacks deal an extra 1d6 poison damage to any target they hit."
+      "name": "Symbiotisches Wesen",
+      "text": "Als Aktion kann Maria ein *\"Tiergestalt\"* nutzen um ihre Sporen zu aktivieren. Sie bekommt 72 temporäre TP. Während dies aktiv ist, bekommt Maria die folgenden Eigenschaften:\n- Wenn Maria mit dem *\"Sporenkranz\"* Schaden macht, würfelt sie den Schadenswürfel zweimal.\n- Maria's Nahkampfwaffenangriffe machen [[roll:1W6|3 (1W6)]] Extra Giftschaden."
     }
   ],
   "bonus_actions": [],
   "reactions": [
     {
-      "name": "Halo of Spores",
-      "text": "A creature you can see in 3 m from you or starts its turn there must make a CON saving throw or take 1d10 necrotic damage."
+      "name": "Sporenkranz",
+      "text": "Eine Kreatur, die du sehen kannst, die in 3 m Abstand von dir ihren Zug beginnt, muss einen SG 17 CON-Rettungswurf bestehen oder nimmt [[roll:1W10|5 (1W10)]] nekrotischen Schaden."
     },
     {
-      "name": "Fungal Infestation (5/day)",
-      "text": "Her Spores animate a Small or Medium dead Beast or Humanoid within 3 m of her to a zombie. It gains 1 HP and after 1 h it dies. It moves directly after Maria and is mentally commanded by her."
+      "name": "Pilzbefall (5/Tag)",
+      "text": "Ihre Sporen können kleine bis mittlere tote Tiere oder Humanoide in 3 m Abstand zu ihr in einen Zombie verwandeln. Es bekommt 1 TP und es stirbt nach 1 h. Es agiert direkt nach Maria und wird mental von ihr gesteuert."
     }
   ],
   "legendary_actions": [
     {
-      "name": "Attacks and Spells",
-      "text": "She attacks with her Staff, Wildfire or casts any one spell from her list."
+      "name": "Angriffe und Zauber",
+      "text": "Maria greift mit ihrem *[[item:kampfstab|Stab]]* oder *Lauffeuer* an oder wirkt einen *Zauber*."
     },
     {
-      "name": "Misty Escape",
-      "text": "After she takes damage, Maria can cast \"Misty Step\" to escape more damage."
+      "name": "Nebelflucht",
+      "text": "Nachdem Maria Schaden genommen hat, kann sie direkt [[spell:nebelschritt]] wirken, um mehr Schaden zu entkommen."
     },
     {
       "name": "Spreading Spores",
-      "text": "While the \"Symbiotic Entity\" feature is active, Maria can hurl spores up to 9 m away, where they swirl in a 3 m cube for 1 min. Whenever a creature moves into the cube or starts its turn there, that creature takes \"Halo of Spores\" damage, unless the creature succeeds on a CON saving throw (DC 17). A creature can take this damage no more than once per turn."
+      "text": "Während *\"Symbiotisches Wesen\"* aktiv ist, kann Maria Sporen bis zu 9 m weit werfen, wo sie für 1 min in einem 3 m Würfel schwebem. Immer wenn eine Kreatur in den Würfel läuft oder ihren Zug darin beginnt, nimmt sie *\"Sporenkranz\"* Schaden, außer sie schafft einen SG 17 CON-Rettungswurf. Eine Kreatur kann den Schaden nur einmal pro Zug bekommen."
     }
   ],
   "legendary_actions_per_round": 3,
-  "legendary_description": "The monster can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The monster regains spent legendary actions at the start of its turn.",
+  "legendary_description": "Maria kann Legendäre Aktionen aus den unteren Optionen bis zur Hälfte ihrer Gegner pro Zug verwenden. Sie kann nur eine dieser Aktionen nehmen und nur am Ende des Zuges einer anderen Kreatur. Sie bekommt alle verwendeten Legendären Aktionen am Beginn ihres Zuges zurück.",
   "mythic_actions": [],
   "lair_actions": [],
   "regional_effects": [],
-  "display": {
-    "double_columns": true,
-    "separation_point": 3
-  },
-  "import_notes": [
-    "AC inferred from armorName, Dexterity modifier, and shieldBonus.",
-    "Filename suggests alias/name: Verona Vandameer.",
-    "Ignored inconsistent customCr value \"1 (200 XP)\" and used cr \"12\".",
-    "Ignored inconsistent customProf value \"2\" and used proficiency bonus +4 from CR."
-  ],
-  "source_format": "monster builder export"
+  "background": "",
+  "personality": "leicht belustigt, dunkler Humor, Nico Robin",
+  "inventory": ["[[item:kampfstab|Stab (Druidischer Fokus)]]", "[[item:fellruestung]]", "[[item:schild]]", "2 [[item:hoechster-heiltrank]]", "[[item:beutel|Geldbeutel mit 1500 GM]]"]
 }

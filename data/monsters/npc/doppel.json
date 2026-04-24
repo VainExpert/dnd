@@ -1,0 +1,91 @@
+{
+  "id": "npc-abgeschwaechter-assassine",
+  "src": "chat://custom",
+  "name": "Abgeschwächter Assassine",
+  "size": "Mittelgroß",
+  "type": "Humanoid (beliebige Abstammung)",
+  "alignment": "beliebige nicht gute Gesinnung",
+  "armor-class": { "value": "16", "info": "beschlagenes Leder" },
+  "hit-points": { "value": "66", "formula": "12W8+12" },
+  "speeds": { "walk": "9 m" },
+  "attributes": [
+    { "class": "str", "value": "11", "modifier": "+0" },
+    { "class": "dex", "value": "17", "modifier": "+3" },
+    { "class": "con", "value": "13", "modifier": "+1" },
+    { "class": "int", "value": "13", "modifier": "+1" },
+    { "class": "wis", "value": "12", "modifier": "+1" },
+    { "class": "cha", "value": "10", "modifier": "+0" }
+  ],
+  "saving-throws": ["Ges +6", "Int +4"],
+  "skills": ["Akrobatik +6", "Täuschung +3", "Wahrnehmung +4", "Heimlichkeit +9"],
+  "damage-resistances": ["Gift"],
+  "senses": ["Passive Wahrnehmung 14"],
+  "languages": ["Diebessprache", "zwei beliebige Sprachen"],
+  "challenge": "5",
+  "xp": "1.800",
+  "traits": [
+    {
+      "name": "Meucheln",
+      "value": "Während seines ersten Zuges im Kampf hat der Assassine Vorteil bei Angriffswürfen gegen Kreaturen, die noch nicht am Zug waren. Jeder Treffer, den der Assassine gegen eine überraschte Kreatur erzielt, ist ein kritischer Treffer."
+    },
+    {
+      "name": "Ausweichen",
+      "value": "Wenn der Assassine einem Effekt ausgesetzt ist, der ihm bei einem gelungenen Geschicklichkeitsrettungswurf nur halben Schaden zufügen würde, erleidet er stattdessen bei einem Erfolg keinen Schaden und bei einem Misserfolg nur halben Schaden."
+    },
+    {
+      "name": "Hinterhältiger Angriff",
+      "value": "Einmal pro Zug verursacht der Assassine zusätzlich 10 (3W6) Schaden, wenn er ein Ziel mit einem Waffenangriff trifft und Vorteil beim Angriffswurf hat oder wenn sich das Ziel innerhalb von 1,5 m um einen Verbündeten des Assassinen befindet, der nicht handlungsunfähig ist, und der Assassine keinen Nachteil beim Angriffswurf hat."
+    },
+    {
+      "name": "Gerissene Bewegung",
+      "value": "Als Bonusaktion kann der Assassine die Aktion Rennen, Rückzug oder Verstecken ausführen."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Mehrfachangriff",
+      "value": "Der Assassine führt zwei Angriffe mit Kurzschwert oder Leichter Armbrust aus."
+    },
+    {
+      "name": "Kurzschwert",
+      "value": "Nahkampfwaffenangriff: +6 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 6 (1W6+3) Stichschaden, und das Ziel muss einen SG-14-Konstitutionsrettungswurf ausführen. Bei Misslingen erleidet es 10 (3W6) Giftschaden, bei Erfolg die Hälfte."
+    },
+    {
+      "name": "Leichte Armbrust",
+      "value": "Fernkampfwaffenangriff: +6 auf Treffer, Distanz 24/96 m, ein Ziel. Treffer: 7 (1W8+3) Stichschaden, und das Ziel muss einen SG-14-Konstitutionsrettungswurf ausführen. Bei Misslingen erleidet es 10 (3W6) Giftschaden, bei Erfolg die Hälfte."
+    },
+    {
+      "name": "Rauchbombe (Aufladung 5-6)",
+      "value": "Der Assassine wirft eine Rauchbombe auf einen Punkt, den er innerhalb von 9 m sehen kann. Es entsteht eine 3 m durchmessende Wolke aus dichtem Rauch, die den Bereich bis zum Ende des nächsten Zuges des Assassinen schwer verschleiert. Kreaturen innerhalb der Wolke sind effektiv stark verdeckt. Ein mäßiger oder stärkerer Wind zerstreut den Rauch frühzeitig."
+    },
+    {
+      "name": "Lähmendes Gift (1/Tag)",
+      "value": "Der Assassine setzt eine konzentrierte Dosis Gift gegen eine Kreatur ein, die er innerhalb von 1,5 m sehen kann. Das Ziel muss einen SG-14-Konstitutionsrettungswurf bestehen. Bei Misslingen ist es bis zum Ende seines nächsten Zuges gelähmt. Danach ist es bis zu 1 Minute vergiftet. Das Ziel kann den Rettungswurf am Ende jedes seiner Züge wiederholen und den Effekt bei Erfolg beenden. Bei einem Erfolg auf den ersten Rettungswurf ist das Ziel nicht gelähmt, aber bis zum Ende seines nächsten Zuges vergiftet."
+    }
+  ],
+  "bonus_actions": [
+    {
+      "name": "Gerissene Bewegung",
+      "value": "Der Assassine führt die Aktion Rennen, Rückzug oder Verstecken aus."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parieren",
+      "value": "Der Assassine erhöht seine RK um 2 gegen einen Nahkampfangriff, der ihn treffen würde. Dazu muss er den Angreifer sehen und eine Nahkampfwaffe führen."
+    }
+  ],
+  "legendary-actions": [],
+  "source": {
+    "primary_targets": [
+      "https://openrpg.de/srd/5e/de/",
+      "https://openrpg.de/srd/5e/de/api/"
+    ],
+    "fallbacks_used": [
+      "https://matterabyte.github.io/bestiary/creatures/assassin",
+      "https://dr-eigenvalue.github.io/bestiary/creature/bandit",
+      "https://matterabyte.github.io/bestiary/creatures/noble",
+      "https://dnd2024.wikidot.com/spell:fog-cloud"
+    ]
+  }
+}

@@ -22,7 +22,7 @@
   </main>
 
   <script type="module">
-    import { escapeHtml, loadIndex, loadMany, normalizeSpell, buildLookupIndex, linkifyRefs } from "../../lib.js";
+    import { escapeHtml, loadIndex, loadMany, normalizeSpell, buildLookupIndex, renderRichText } from "../../lib.js";
 
     const view = document.getElementById("view");
     const titleEl = document.getElementById("title");
@@ -60,7 +60,7 @@
 
     const effectHtml = spell.html
       ? `<div class="mini-box-text">${spell.html}</div>`
-      : (spell.text ? `<div class="mini-box-text">${linkifyRefs(spell.text, { lookups: { spell: spellLookup } })}</div>` : "");
+      : (spell.text ? `<div class="mini-box-text">${renderRichText(spell.text, { lookups: { spell: spellLookup } })}</div>` : "");
 
     view.innerHTML = `
       <h1>${escapeHtml(spell.name)}</h1>

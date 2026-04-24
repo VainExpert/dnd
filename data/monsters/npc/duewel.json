@@ -2,82 +2,79 @@
   "id": "duewel",
   "name": "Düwel",
   "aliases": [],
-  "source_file": "Düwel.monster",
-  "kind": "monster",
+  "source": "homebrew",
+  "image": "",
+  "kind": "Antagonist",
   "npc": true,
   "size": "Medium",
-  "creature_type": "humanoid",
+  "creature_type": "Humanoid",
   "subtype": "Tiefling",
-  "alignment": "chaotic evil",
+  "alignment": "chaotisch böse",
   "armor_class": {
     "value": 15,
-    "display": "15 (studded leather)"
+    "note": "[[item:beschlagene-lederruestung]]"
   },
   "hit_points": {
     "average": 78,
-    "formula": "12d8 + 24"
+    "formula": "[[roll:12W8+24|12W8 + 24]]"
   },
-  "speed": {
-    "walk": "30 ft."
+  "speeds": {
+    "walk": "9 m"
   },
   "abilities": {
     "str": {
       "score": 11,
-      "mod": 0
+      "mod": 0,
+      "save": 0
     },
     "dex": {
       "score": 16,
-      "mod": 3
+      "mod": 3,
+      "save": 6
     },
     "con": {
       "score": 14,
-      "mod": 2
+      "mod": 2,
+      "save": 2
     },
     "int": {
       "score": 13,
-      "mod": 1
+      "mod": 1,
+      "save": 4
     },
     "wis": {
       "score": 11,
-      "mod": 0
+      "mod": 0,
+      "save": 0
     },
     "cha": {
       "score": 10,
-      "mod": 0
+      "mod": 0,
+      "save": 0
     }
-  },
-  "saving_throws": {
-    "dex": 6,
-    "int": 4
   },
   "skills": {
-    "acrobatics": 6,
-    "deception": 3,
-    "perception": 3,
-    "stealth": 9
+    "Akrobatik": 6,
+    "Täuschen": 3,
+    "Wahrnehmung": 3,
+    "Heimlichkeit": 9
   },
   "damage_resistances": [
-    {
-      "name": "fire",
-      "note": "(Resistant)"
-    },
-    {
-      "name": "poison",
-      "note": "(Resistant)"
-    }
+    "Feuer", "Gift"
   ],
   "damage_immunities": [],
   "damage_vulnerabilities": [],
-  "special_damage_defenses": [],
   "condition_immunities": [],
   "senses": {
-    "passive_perception": 13
+    "Passive Wahrnehmung": 13,
+    "Passives Motiv erkennen": 10,
+    "Passive Nachforschung": 11
   },
   "languages": {
     "speaks": [
-      "Common",
+      "Weltsprache",
       "Infernal",
-      "Thieves' Cant"
+      "Diebessprech"
     ],
     "understands": []
   },
@@ -86,68 +83,75 @@
   "proficiency_bonus": 3,
   "traits": [
     {
-      "name": "Assassinate",
-      "text": "During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit."
+      "name": "Meucheln",
+      "text": "Während seinem ersten Zug hat Düwel, Vorteil auf Angriffe gegen Kreaturen, die noch nicht am Zug waren. Jeden Treffer den der Assassine gegen eine [[condition:ueberrascht|überraschte]] Kreatur landet, ist [[rule:kritisch]]."
     },
     {
-      "name": "Evasion",
-      "text": "If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+      "name": "Ausweichen",
+      "text": "Wenn Düwel einem Effekt ausgesetzt ist, der ist der ihn einen DEX-Rettungswurf für halbierten Schaden machen ließ, bekommt er bei Erfolg gar keinen und bei Misserfolg nur den halben Schaden."
     },
     {
-      "name": "Sneak Attack (1/Turn)",
-      "text": "The assassin deals an extra 13 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 ft. of an ally of the assassin that isn't incapacitated and the assassin doesn't have disadvantage on the attack roll."
+      "name": "Hinterhältiger Angriff (1/Zug)",
+      "text": "Düwel macht zusätzlich [[roll:4W6|12 (4W6)]] Schaden des Waffentyps, wenn er ein Ziel mit einem Waffenangriff trifft und beim Angriffswurf Vorteil hatte oder wenn das Ziel in 1,5 m von einem Verbündeten von Düwel ist, der nicht [[condition:kampfunfaehig]] ist und Düwel keinen Nachteil auf den Angriffswurf hat."
     }
   ],
   "spellcasting": [
     {
-      "name": "Spellcasting",
-      "text": "Through his Tiefling Legacy Düwel can cast spells. His spellcasting ability is INT (spell save DC 12, +4 to hit). He can cast th efollowing spells:\n> * At will: _Fire Bolt, Thaumaturgy_\n> * 1/day: _Hellish Rebuke, Darkness_",
+      "name": "Zauberei",
+      "text": "Durch seine Tiefling-Abstammung kann Düwel zaubern. Seine Zauberfähigkeit ist INT (Zauberrettungs-SG 12, Zauberangriffsbonus +4). Er kann die folgenden Zauber wirken:",
       "spells": {
         "cantrips_at_will": [
-          "Fire Bolt",
-          "Thaumaturgy"
+          "[[spell:feuerpfeil]]",
+          "[[spell:thaumaturgie]]"
         ],
         "level_1": [
-          "Hellish Rebuke"
+          "[[spell:hoellischer-tadel]]"
         ],
         "level_2": [
-          "Darkness"
+          "[[spell:dunkelheit]]"
         ]
       },
-      "ability": "intelligence",
+      "ability": "INT",
       "save_dc": 12,
       "attack_bonus": 4,
       "usage": {
-        "daily": 1
+        "level_1": 1,
+        "level_2": 1
       }
     }
   ],
   "actions": [
     {
-      "name": "Multiattack",
-      "text": "The assassin makes two shortsword attacks."
+      "name": "Multiangriff",
+      "text": "Düwel macht 2 Kurzschwert oder Leichte Armbrust Angriffe für eine Angriffsaktion."
     },
     {
-      "name": "Shortsword",
-      "text": "_Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target. _Hit:_ 6 (1d6 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one."
+      "name": "[[item:kurzschwert]]",
+      "text": "*Nahkampfwaffenangriff:* +6, 1,5 m, 1 Ziel. *Treffer:* [[roll:1W6+3|6 (1W6 + 3)]] Stichschaden, und das Ziel muss einen SG 15 CON-Rettungswurf machen. Misserfolg: [[roll:7W6|21 (7W6)]] Giftschaden. Bei Erfolg: Die Hälfte."
     },
     {
-      "name": "Light Crossbow",
-      "text": "_Ranged Weapon Attack:_ +6 to hit, range 80/320 ft., one target. _Hit:_ 7 (1d8 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one."
+      "name": "[[item:leichte-armbrust]]",
+      "text": "*Fernkampfwaffenangriff:* +6, 24/96 m, 1 Ziel. *Treffer:* [[roll:1W8+3|7 (1W8 + 3)]] Stichschaden, und das Ziel muss einen SG 15 CON-Rettungswurf machen. Misserfolg: [[roll:7W6|21 (7W6)]] Giftschaden. Bei Erfolg: Die Hälfte."
     }
   ],
   "bonus_actions": [],
-  "reactions": [],
+  "reactions": [
+    {
+      "name": "[[spell:hoellischer-tadel]]",
+      "text": ""
+    },
+    {
+      "name": "Parade",
+      "text": "Wenn Düwel sein [[item:kurzschwert]] hält, kann er einmal seiner RK +2 hinzufügen um einen Angriff zu parieren, der ihn trifft."
+    }
+  ],
   "legendary_actions": [],
   "legendary_actions_per_round": 0,
   "legendary_description": null,
   "mythic_actions": [],
   "lair_actions": [],
   "regional_effects": [],
-  "display": {
-    "double_columns": false,
-    "separation_point": 2
-  },
-  "import_notes": [],
-  "source_format": "monster builder export"
+  "background": "Ein einfacher Tiefling, aufgewachsen als Waisenkind. Hat sich mit Diebstahl durchs Leben geschlagen und wurde immer besser unentdeckt zu bleiben. Wurde als Teenager vom Mann mit den Tausend Gesichern aufgenommen und hat für ihn Aufträge und Morde ausgeführt. Irgendwann wurde er zu gut und hat sich losgelöst von seinem Boss um im Land zu reisen. Auf seinen Reisen, bei einem heiklen Auftrag gegen den Adel, traf er auf Marlowe. Gemeinsam entwickelten sie einen Hass auf den Adel und deren Machtausnutzung. Später traffen sie auf Ladrian und Edison in Deltahl.",
+  "personality": "arrogant, mysteriös, sehr selbstüberzeugt",
+  "inventory": ["[[item:kurzschwert]]", "[[item:leichte-armbrust]]", "[[item:trank-der-unsichtbarkeit]]", "[[item:gegengift]]", "[[item:beschlagene-lederruestung]]", "[[item:armbrustbolzen-schachtel]]", "20 [[item:Armbrustbolzen]]", "[[item:beutel|Geldbeutel mit 110 GM]]"]
 }

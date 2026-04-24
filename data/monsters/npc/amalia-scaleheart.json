@@ -1,0 +1,185 @@
+{
+  "id": "amalia-scaleheart",
+  "name": "Amalia Scaleheart",
+  "aliases": [],
+  "source": "homebrew",
+  "image": "",
+  "kind": "Verbündeter",
+  "npc": true,
+  "size": "Medium",
+  "creature_type": "Humanoid",
+  "subtype": "Mensch",
+  "alignment": "rechtschaffen gut",
+  "armor_class": {
+    "value": 15,
+    "note": "[[item:beschlagene-lederruestung]]"
+  },
+  "hit_points": {
+    "average": 160,
+    "formula": "[[roll:15W10+60|15W10 + 60]]"
+  },
+  "speeds": {
+    "walk": "10,5 m",
+    "climb": "10,5 m",
+    "swim": "10,5 m"
+  },
+  "abilities": {
+    "str": {
+      "score": 10,
+      "mod": 0,
+      "save": 2
+    },
+    "dex": {
+      "score": 20,
+      "mod": 5,
+      "save": 7
+    },
+    "con": {
+      "score": 18,
+      "mod": 4,
+      "save": 4
+    },
+    "int": {
+      "score": 13,
+      "mod": 1,
+      "save": 1
+    },
+    "wis": {
+      "score": 18,
+      "mod": 4,
+      "save": 4
+    },
+    "cha": {
+      "score": 10,
+      "mod": 0,
+      "save": 0
+    }
+  },
+  "skills": {
+    "Mit Tieren umgehen": 8,
+    "Naturkunde": 5,
+    "Wahrnehmung": 8,
+    "Überlebenskunst": 10
+  },
+  "damage_resistances": [
+    "Feuer"
+  ],
+  "damage_immunities": [],
+  "damage_vulnerabilities": [],
+  "special_damage_defenses": [],
+  "condition_immunities": [],
+  "senses": {
+    "Passive Wahrnehmung": 18,
+    "Passives Motiv erkennen": 14,
+    "Passive Nachforschung": 11
+  },
+  "languages": {
+    "speaks": [
+      "Weltsprache",
+      "Drakonisch",
+      "Zwergisch",
+      "Elfisch"
+    ],
+    "understands": []
+  },
+  "challenge_rating": "1",
+  "xp": 200,
+  "proficiency_bonus": 2,
+  "traits": [
+    {
+      "name": "Archery Specialist",
+      "text": "Amalia has +2 to attack rolls with ranged weapons."
+    },
+    {
+      "name": "Favored Foe (5/day)",
+      "text": "When Amalia hits a creature with an attack roll, she can mark the target as her favored enemy for 1 minute or until she loses her concentration (as if concentrating on a spell). The first time on each of her turns that she hits the favored enemy and deals damage to it, including when she marks it, that damage increases by 1W8."
+    },
+    {
+      "name": "Tireless (5/day)",
+      "text": "Amalia gains 1W8 + 4 temporary hit points."
+    },
+    {
+      "name": "Land's Stride",
+      "text": "Moving through nonmagical difficult terrain costs Amalia no extra movement, and she can move through hazardous plants without taking damage or being slowed. She also has advantage on saving throws against magical plants that aim to impede movement."
+    },
+    {
+      "name": "Summon Bessie",
+      "text": "Amalia can magically summon her drake Bessie to an unoccupied space within 9 m of her."
+    }
+  ],
+  "spellcasting": [
+    {
+      "name": "Spellcasting",
+      "text": "Amalia's spellcasting ability is WIS (spell save DC 17, spell attack bonus +9). She can cast the following spells:",
+      "spells": {
+        "cantrips_at_will": [
+          "[[spell:thaumaturgie]]"
+        ],
+        "level_1": [
+          "[[spell:wunden-heilen]]",
+          "[[spell:jaegermal]]",
+          "[[spell:mit-tieren-sprechen]]"
+        ],
+        "level_2": [
+          "[[spell:rindenhaut]]",
+          "[[spell:schwache-genesung]]",
+          "[[spell:tiergefuehl]]"
+        ],
+        "level_3": [
+          "Ashardalon's Stride",
+          "[[spell:wiederbeleben]]",
+          "[[spell:windwall]]",
+          "[[spell:mit-pflanzen-sprechen]]"
+        ],
+        "level_4": [
+          "[[spell:steinhaut]]",
+          "Grasping Vine",
+          "[[spell:kreatur-aufspueren]]"
+        ]
+      },
+      "ability": "WIS",
+      "save_dc": 17,
+      "attack_bonus": 9,
+      "usage": {
+        "level_1": 4,
+        "level_2": 3,
+        "level_3": 3,
+        "level_4": 2
+      }
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiangriff",
+      "text": "Amalia makes two attacks with her weapons."
+    },
+    {
+      "name": "Rapier +1",
+      "text": "*Nahkampfwaffenangriff:* +11, 1,5 m, 1 Ziel. *Treffer:* 1W8 + 7 piercing damage."
+    },
+    {
+      "name": "Longbow +3",
+      "text": "*Fernkampfwaffenangriff:* +15, 45/180 m, 1 Ziel. *Treffer:* 1W8 + 8 piercing damage."
+    }
+  ],
+  "bonus_actions": [
+    {
+      "name": "Nature's Veil (5/day)",
+      "text": "Amalia becomes magically invisible until the start of her next turn."
+    },
+    {
+      "name": "Vanish",
+      "text": "Amalia takes the [[rule:hide|Hide]] action."
+    }
+  ],
+  "reactions": [],
+  "legendary_actions": [],
+  "legendary_actions_per_round": 0,
+  "legendary_description": null,
+  "mythic_actions": [],
+  "lair_actions": [],
+  "regional_effects": [],
+  "background": "",
+  "personality": "",
+  "inventory": []
+}

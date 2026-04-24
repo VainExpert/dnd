@@ -3,12 +3,11 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Werkzeuge</title>
+  <title>Generatoren</title>
   <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
   <script src="../../theme.js?v=theme-20260422"></script>
 
   <style>
-    /* --- Coin flip --- */
     .tool-row{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
     .btn{
       padding:10px 12px;
@@ -19,77 +18,6 @@
       cursor:pointer;
     }
     .btn:hover{ border-color: rgba(225,91,79,.35); background: rgba(225,91,79,.12); }
-
-    .coin-wrap{ display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-top:10px; }
-    .coin-stage{ perspective: 900px; }
-    .coin{
-      width: 86px; height: 86px;
-      position: relative;
-      transform-style: preserve-3d;
-      border-radius: 999px;
-      will-change: transform;
-      filter: drop-shadow(0 10px 20px rgba(0,0,0,.35));
-    }
-    .coin-face{
-      position:absolute; inset:0;
-      display:flex; align-items:center; justify-content:center;
-      border-radius:999px;
-      border: 2px solid rgba(255,255,255,.18);
-      backface-visibility:hidden;
-      user-select:none;
-      font-weight: 900;
-      letter-spacing:.4px;
-    }
-    .coin-front{
-      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.35), rgba(255,255,255,.06) 42%, rgba(255,255,255,.02) 72%),
-                  linear-gradient(180deg, rgba(225,91,79,.35), rgba(225,91,79,.10));
-    }
-    .coin-back{
-      transform: rotateY(180deg);
-      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.35), rgba(255,255,255,.06) 42%, rgba(255,255,255,.02) 72%),
-                  linear-gradient(180deg, rgba(138,180,255,.35), rgba(138,180,255,.10));
-    }
-    .coin-front span, .coin-back span{
-      font-size: 22px;
-      color: var(--text);
-      text-shadow: 0 1px 0 rgba(0,0,0,.35);
-    }
-    .coin-edge{
-      position:absolute; inset:-2px;
-      border-radius:999px;
-      border: 2px solid rgba(255,255,255,.12);
-      pointer-events:none;
-    }
-
-    @keyframes coinFlipHeads {
-      0%   { transform: rotateY(0deg) rotateX(0deg); }
-      50%  { transform: rotateY(720deg) rotateX(20deg); }
-      100% { transform: rotateY(1440deg) rotateX(0deg); }
-    }
-    @keyframes coinFlipTails {
-      0%   { transform: rotateY(0deg) rotateX(0deg); }
-      50%  { transform: rotateY(720deg) rotateX(20deg); }
-      100% { transform: rotateY(1620deg) rotateX(0deg); } /* +180deg to land on back */
-    }
-
-    .coin.flipping-heads{ animation: coinFlipHeads 1.05s cubic-bezier(.2,.8,.2,1); }
-    .coin.flipping-tails{ animation: coinFlipTails 1.05s cubic-bezier(.2,.8,.2,1); }
-
-    @media (prefers-reduced-motion: reduce){
-      .coin.flipping-heads, .coin.flipping-tails{ animation: none; }
-    }
-
-    /* --- Cards --- */
-    .cards-grid{
-      margin-top: 10px;
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap:12px;
-    }
-    .cards-list{
-      margin: 8px 0 0;
-      padding-left: 18px;
-    }
     .mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
     .encounter-builder{
       display:grid;
@@ -101,7 +29,8 @@
       display:grid;
       gap:10px;
     }
-    .encounter-controls label{
+    .encounter-controls label,
+    .loot-controls label{
       display:grid;
       gap:5px;
       font-size:13px;
@@ -142,34 +71,66 @@
       background:rgba(255,255,255,.03);
     }
     .budget-tile.active{ border-color:rgba(225,91,79,.55); background:rgba(225,91,79,.12); }
-    .encounter-list{
+    .encounter-list,
+    .loot-items{
       display:grid;
       gap:8px;
       margin-top:10px;
+    }
+    .encounter-row,
+    .loot-item{
+      padding:8px;
+      border:1px solid var(--rule);
+      border-radius:8px;
+      background:rgba(255,255,255,.025);
     }
     .encounter-row{
       display:grid;
       grid-template-columns: minmax(0, 1fr) auto auto;
       gap:8px;
       align-items:center;
-      padding:8px;
-      border:1px solid var(--rule);
-      border-radius:8px;
-      background:rgba(255,255,255,.025);
     }
     .encounter-row input{ width:72px; }
+    .loot-controls{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap:10px;
+      align-items:end;
+    }
+    .loot-actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      margin-top:10px;
+    }
+    .loot-grid{
+      display:grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(260px, .9fr);
+      gap:12px;
+      margin-top:12px;
+      align-items:start;
+    }
+    .checkbox-row{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      color:var(--muted);
+      font-size:13px;
+    }
     @media (max-width: 820px){
       .encounter-builder{ grid-template-columns:1fr; }
       .budget-grid{ grid-template-columns:1fr; }
       .encounter-row{ grid-template-columns:1fr auto; }
+      .loot-grid{ grid-template-columns:1fr; }
     }
   </style>
 </head>
 <body>
   <header class="topbar">
     <div class="brand">
-      <div class="title">Werkzeuge</div>
-      <div class="subtitle">Zufallstabellen • Begegnungen • Münzwurf • Karten</div>
+      <div class="title">Generatoren</div>
+      <div class="subtitle">Zufallstabellen • Begegnungen • Loot</div>
     </div>
     <div class="top-actions">
       <a class="home-btn" href="../../index.html">← Startseite</a>
@@ -181,18 +142,18 @@
       <h1>Zufallstabellen</h1>
       <div class="tool-row">
         <select id="table" class="select"></select>
-        <button id="roll" class="btn">Würfeln</button>
+        <button id="roll" class="btn">Wuerfeln</button>
       </div>
       <div id="result" style="margin-top:12px;"></div>
 
-      <h2 style="margin-top:26px;">Begegnungsbauer (D&D 2024)</h2>
+      <h2 style="margin-top:26px;">Begegnungsbauer (D&amp;D 2024)</h2>
       <div class="encounter-builder">
         <div class="mini-box">
           <div class="mini-box-title">Gruppe</div>
           <div class="mini-box-text">
             <div class="tool-row">
               <select id="pcSelect" class="select"></select>
-              <button id="addPc" class="btn">SC hinzufügen</button>
+              <button id="addPc" class="btn">SC hinzufuegen</button>
               <button id="addAllPcs" class="btn">Alle SCs</button>
               <button id="clearPcs" class="btn">Leeren</button>
             </div>
@@ -242,8 +203,8 @@
               <input id="monsterSearch" class="select" type="search" placeholder="Monster suchen..." />
             </label>
             <div class="tool-row">
-              <button id="gen" class="btn">Budget füllen</button>
-              <button id="addMonster" class="btn">Monster hinzufügen</button>
+              <button id="gen" class="btn">Budget fuellen</button>
+              <button id="addMonster" class="btn">Monster hinzufuegen</button>
               <button id="clearEncounter" class="btn">Encounter leeren</button>
             </div>
           </div>
@@ -251,64 +212,54 @@
       </div>
       <div id="enc" style="margin-top:12px;"></div>
 
-      <h2 style="margin-top:26px;">Münzwurf</h2>
-      <div class="coin-wrap">
-        <div class="coin-stage">
-          <div id="coin" class="coin" aria-label="coin">
-            <div class="coin-face coin-front"><span>KOPF</span></div>
-            <div class="coin-face coin-back"><span>ZAHL</span></div>
-            <div class="coin-edge"></div>
+      <h2 style="margin-top:26px;">Lootgenerator (D&amp;D 2024)</h2>
+      <div class="mini-box">
+        <div class="mini-box-title">Beute nach HG</div>
+        <div class="mini-box-text">
+          <div class="loot-controls">
+            <label>
+              Beuteart
+              <select id="lootMode" class="select">
+                <option value="hoard">Schatzhort / Questbelohnung</option>
+                <option value="individual">Einzelbeute</option>
+              </select>
+            </label>
+            <label>
+              HG / Anfuehrer-HG
+              <select id="lootCr" class="select">
+                <option>0</option><option>1/8</option><option>1/4</option><option>1/2</option>
+                <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                <option>11</option><option>12</option><option>13</option><option>14</option><option>15</option>
+                <option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+                <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option>
+                <option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+              </select>
+            </label>
+            <label>
+              Schwierigkeit
+              <select id="lootDifficulty" class="select">
+                <option value="low">Low</option>
+                <option value="moderate" selected>Moderate</option>
+                <option value="high">High</option>
+              </select>
+            </label>
+            <label>
+              Kreaturenzahl
+              <input id="lootCreatureCount" class="select" type="number" min="1" max="99" value="1" />
+            </label>
           </div>
-        </div>
-        <div style="display:flex; flex-direction:column; gap:10px;">
-          <div class="tool-row">
-            <button id="flip" class="btn">Werfen</button>
-            <button id="flip5" class="btn">5x werfen</button>
-          </div>
-          <div class="mini-box" style="margin:0;">
-            <div class="mini-box-title">Ergebnis</div>
-            <div class="mini-box-text">
-              <div id="coinResult" class="mono">—</div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <h2 style="margin-top:26px;">Karten ziehen</h2>
-      <div class="tool-row">
-        <select id="deckType" class="select">
-          <option value="32">32 (Skat)</option>
-          <option value="52">52 (Standard)</option>
-          <option value="110">110 (Rommé)</option>
-        </select>
-        <input id="drawN" class="select" type="number" min="1" value="5" style="width:110px;" />
-        <button id="drawBtn" class="btn">Ziehen</button>
-        <button id="resetDeckBtn" class="btn">Zurücksetzen / Mischen</button>
-      </div>
-
-      <div class="cards-grid">
-        <div class="mini-box">
-          <div class="mini-box-title">Stapel</div>
-          <div class="mini-box-text">
-            <div><b>Verbleibend:</b> <span id="remainingCards" class="mono">—</span></div>
-            <div class="muted" style="margin-top:8px;">
-              Es wird ohne Zurücklegen gezogen. Zum Neu-Mischen zurücksetzen.
-            </div>
+          <div class="loot-actions">
+            <label class="checkbox-row">
+              <input id="lootMagicToggle" type="checkbox" checked />
+              High-Begegnungen mit gewoehnlichen/ungewoehnlichen magischen Items anreichern
+            </label>
+            <button id="lootUseEncounter" class="btn">Encounter uebernehmen</button>
+            <button id="lootGenerate" class="btn">Loot generieren</button>
           </div>
-        </div>
 
-        <div class="mini-box">
-          <div class="mini-box-title">Letzter Zug</div>
-          <div class="mini-box-text">
-            <ul id="lastDraw" class="cards-list mono"></ul>
-          </div>
-        </div>
-
-        <div class="mini-box">
-          <div class="mini-box-title">Bisher gezogen</div>
-          <div class="mini-box-text">
-            <ul id="allDrawn" class="cards-list mono"></ul>
-          </div>
+          <div id="lootResult" style="margin-top:12px;"></div>
         </div>
       </div>
     </div>
@@ -317,10 +268,9 @@
   <script src="../../data/tables/tables-global.js?v=3"></script>
 
   <script type="module">
-    import { loadIndex, loadMany, escapeHtml, normalizeTable, rollTableEntry, renderTableHtml } from "../../lib.js";
+    import { loadIndex, loadMany, escapeHtml, normalizeItem, normalizeTable, rollTableEntry, renderTableHtml } from "../../lib.js";
     import { TABLE_FILES, TABLE_DATA_BY_FILE } from "../../data/tables/tables-data.js?v=3";
 
-    // ---------------- Random Tables ----------------
     const tableSel = document.getElementById("table");
     const rollBtn = document.getElementById("roll");
     const resultEl = document.getElementById("result");
@@ -345,13 +295,13 @@
       const name = tableSel.value;
       const t = tables.find(x => (x.id || x.name) === name);
       if (!t){
-        resultEl.innerHTML = `<p>Keine Einträge.</p>`;
+        resultEl.innerHTML = "<p>Keine Eintraege.</p>";
         return;
       }
       const r = rollTableEntry(t);
       resultEl.innerHTML = `
         <div class="mini-box">
-          <div class="mini-box-title">${escapeHtml(t.name)}${t.dice ? " ("+escapeHtml(t.dice)+")" : ""}${r.roll != null ? " • Wurf " + escapeHtml(String(r.roll)) : ""}</div>
+          <div class="mini-box-title">${escapeHtml(t.name)}${t.dice ? " (" + escapeHtml(t.dice) + ")" : ""}${r.roll != null ? " • Wurf " + escapeHtml(String(r.roll)) : ""}</div>
           <div class="mini-box-text">
             ${renderTableHtml(t, r)}
           </div>
@@ -361,7 +311,6 @@
     rollBtn.addEventListener("click", roll);
     roll();
 
-    // ---------------- 2024 Encounter Builder ----------------
     const XP_BUDGET_2024 = {
       1: { low: 50, moderate: 75, high: 100 },
       2: { low: 100, moderate: 150, high: 200 },
@@ -396,6 +345,13 @@
     };
 
     const DIFFICULTY_LABELS = { low: "Low", moderate: "Moderate", high: "High" };
+    const LOOT_TABLE_2024 = {
+      0: { label: "HG 0-4", individualGp: 10, hoardGp: 500, highItems: 1 },
+      5: { label: "HG 5-10", individualGp: 90, hoardGp: 4400, highItems: 2 },
+      11: { label: "HG 11-16", individualGp: 1100, hoardGp: 36000, highItems: 3 },
+      17: { label: "HG 17+", individualGp: 9000, hoardGp: 330000, highItems: 4 }
+    };
+
     const pcSelect = document.getElementById("pcSelect");
     const addPcBtn = document.getElementById("addPc");
     const addAllPcsBtn = document.getElementById("addAllPcs");
@@ -411,9 +367,19 @@
     const addMonsterBtn = document.getElementById("addMonster");
     const clearEncounterBtn = document.getElementById("clearEncounter");
     const encEl = document.getElementById("enc");
+    const lootModeEl = document.getElementById("lootMode");
+    const lootCrEl = document.getElementById("lootCr");
+    const lootDifficultyEl = document.getElementById("lootDifficulty");
+    const lootCreatureCountEl = document.getElementById("lootCreatureCount");
+    const lootMagicToggleEl = document.getElementById("lootMagicToggle");
+    const lootUseEncounterBtn = document.getElementById("lootUseEncounter");
+    const lootGenerateBtn = document.getElementById("lootGenerate");
+    const lootResultEl = document.getElementById("lootResult");
 
     let pcs = [];
     let monsters = [];
+    let items = [];
+    let itemLoadPromise = null;
     let selectedPcIds = [];
     let encounter = [];
 
@@ -439,7 +405,7 @@
     } catch {}
 
     if (!monsters.length){
-      encEl.innerHTML = `<p>Begegnungen konnten nicht geladen werden.</p>`;
+      encEl.innerHTML = "<p>Begegnungen konnten nicht geladen werden.</p>";
       genBtn.disabled = true;
       addMonsterBtn.disabled = true;
     }
@@ -457,6 +423,66 @@
       const direct = Number(String(m.xp ?? m.challenge?.xp ?? "").replace(/[^\d.-]/g, ""));
       if (Number.isFinite(direct) && direct > 0) return direct;
       return CR_XP[getCR(m)] ?? 0;
+    }
+
+    function parseCrValue(cr){
+      const value = String(cr ?? "").trim();
+      if (!value) return 0;
+      if (value.includes("/")){
+        const [a, b] = value.split("/").map(Number);
+        return Number.isFinite(a) && Number.isFinite(b) && b ? a / b : 0;
+      }
+      const n = Number(value);
+      return Number.isFinite(n) ? n : 0;
+    }
+
+    function getLootBand(cr){
+      const value = parseCrValue(cr);
+      if (value >= 17) return LOOT_TABLE_2024[17];
+      if (value >= 11) return LOOT_TABLE_2024[11];
+      if (value >= 5) return LOOT_TABLE_2024[5];
+      return LOOT_TABLE_2024[0];
+    }
+
+    function normalizeRarity(value){
+      return String(value ?? "")
+        .toLowerCase()
+        .replace(/ä/g, "ae")
+        .replace(/ö/g, "oe")
+        .replace(/ü/g, "ue")
+        .replace(/ß/g, "ss")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim();
+    }
+
+    function isMagicItem(item){
+      const rarity = normalizeRarity(item?.rarity);
+      const tags = Array.isArray(item?.tags) ? item.tags.map(tag => normalizeRarity(tag)) : [];
+      return !!rarity || tags.includes("magisch");
+    }
+
+    function magicItemsByRarity(rarity){
+      const wanted = normalizeRarity(rarity);
+      return items.filter(item => isMagicItem(item) && normalizeRarity(item.rarity) === wanted);
+    }
+
+    async function ensureItemsLoaded(){
+      if (items.length) return items;
+      if (!itemLoadPromise){
+        itemLoadPromise = (async () => {
+          try{
+            const itemFiles = await loadIndex("../../data/items/index.json");
+            items = (await loadMany("../../data/items", itemFiles))
+              .map(normalizeItem)
+              .filter(Boolean);
+          } catch {
+            items = [];
+          }
+          return items;
+        })();
+      }
+      return itemLoadPromise;
     }
 
     function fmtNumber(value){
@@ -477,7 +503,6 @@
     function getPartyEntries(){
       const selected = getSelectedPcs();
       if (selected.length) return selected.map(p => ({ ...p, source: "pc" }));
-
       const count = Math.max(1, Math.min(12, Number(manualCountEl.value || 4)));
       const level = clampLevel(manualLevelEl.value || 1);
       return Array.from({ length: count }, (_, index) => ({
@@ -504,7 +529,117 @@
       if (totalXp <= budget.low) return "Low";
       if (totalXp <= budget.moderate) return "Moderate";
       if (totalXp <= budget.high) return "High";
-      return "Über High";
+      return "Ueber High";
+    }
+
+    function encounterStats(){
+      const budget = getPartyBudget();
+      const totalXp = encounter.reduce((sum, entry) => sum + getMonsterXp(entry.monster) * entry.count, 0);
+      const totalCount = encounter.reduce((sum, entry) => sum + entry.count, 0);
+      const leader = encounter.reduce((best, entry) => {
+        if (!best) return entry.monster;
+        return parseCrValue(getCR(entry.monster)) > parseCrValue(getCR(best)) ? entry.monster : best;
+      }, null);
+      return {
+        budget,
+        totalXp,
+        totalCount,
+        classification: classifyEncounter(totalXp, budget),
+        leader
+      };
+    }
+
+    function randomInt(min, max){
+      const from = Math.min(min, max);
+      const to = Math.max(min, max);
+      return Math.floor(Math.random() * (to - from + 1)) + from;
+    }
+
+    function pickUniqueItems(pool, count){
+      const available = [...pool];
+      const picked = [];
+      while (available.length && picked.length < count){
+        const index = Math.floor(Math.random() * available.length);
+        picked.push(available.splice(index, 1)[0]);
+      }
+      return picked;
+    }
+
+    function rollMagicItemCount(mode, band, creatureCount){
+      if (mode === "individual"){
+        return Math.max(1, Math.min(band.highItems, Math.ceil(creatureCount / 4)));
+      }
+      return randomInt(1, band.highItems);
+    }
+
+    function rollMagicItemsForBand(band, count){
+      const commonPool = magicItemsByRarity("gewoehnlich");
+      const uncommonPool = magicItemsByRarity("ungewoehnlich");
+      const picked = [];
+      const usedIds = new Set();
+
+      for (let i = 0; i < count; i++){
+        const roll = Math.random();
+        let rarity = "ungewoehnlich";
+        if (band === LOOT_TABLE_2024[0]) rarity = roll < 0.65 ? "gewoehnlich" : "ungewoehnlich";
+        else if (band === LOOT_TABLE_2024[5]) rarity = roll < 0.35 ? "gewoehnlich" : "ungewoehnlich";
+        else rarity = roll < 0.15 ? "gewoehnlich" : "ungewoehnlich";
+
+        const primaryPool = (rarity === "gewoehnlich" ? commonPool : uncommonPool).filter(item => !usedIds.has(item.id));
+        const fallbackPool = (rarity === "gewoehnlich" ? uncommonPool : commonPool).filter(item => !usedIds.has(item.id));
+        const [item] = pickUniqueItems(primaryPool.length ? primaryPool : fallbackPool, 1);
+        if (item){
+          picked.push(item);
+          usedIds.add(item.id);
+        }
+      }
+      return picked;
+    }
+
+    async function renderLoot(){
+      const mode = lootModeEl.value;
+      const creatureCount = Math.max(1, Number(lootCreatureCountEl.value || 1));
+      const difficulty = lootDifficultyEl.value;
+      const band = getLootBand(lootCrEl.value);
+      const gp = mode === "individual" ? band.individualGp * creatureCount : band.hoardGp;
+      const addMagic = lootMagicToggleEl.checked && difficulty === "high";
+      if (addMagic) await ensureItemsLoaded();
+      const itemCount = addMagic ? rollMagicItemCount(mode, band, creatureCount) : 0;
+      const magicItems = addMagic ? rollMagicItemsForBand(band, itemCount) : [];
+
+      lootResultEl.innerHTML = `
+        <div class="loot-grid">
+          <div class="mini-box" style="margin:0;">
+            <div class="mini-box-title">Beute</div>
+            <div class="mini-box-text">
+              <div class="pillbar">
+                <span class="pill"><b>Tabelle</b> ${escapeHtml(band.label)}</span>
+                <span class="pill"><b>Art</b> ${escapeHtml(mode === "individual" ? "Einzelbeute" : "Schatzhort")}</span>
+                <span class="pill"><b>Schwierigkeit</b> ${escapeHtml(DIFFICULTY_LABELS[difficulty])}</span>
+              </div>
+              <p><b>Gold:</b> ${fmtNumber(gp)} GM</p>
+              <p class="muted">${escapeHtml(mode === "individual"
+                ? `Durchschnittliche 2024-Einzelbeute fuer ${creatureCount} Kreatur${creatureCount === 1 ? "" : "en"}.`
+                : "Durchschnittlicher 2024-Schatzhort bzw. eine Questbelohnung fuer dieses HG-Band.")}</p>
+            </div>
+          </div>
+          <div class="mini-box" style="margin:0;">
+            <div class="mini-box-title">Magische Extras</div>
+            <div class="mini-box-text">
+              ${addMagic
+                ? (magicItems.length
+                    ? `<div class="loot-items">${magicItems.map(item => `
+                        <div class="loot-item">
+                          <b><a href="../items/item.html?id=${encodeURIComponent(item.id || item.name || "")}">${escapeHtml(item.name || "Magischer Gegenstand")}</a></b>
+                          <div class="muted">${escapeHtml(item.rarity || "magisch")}${item.requires_attunement ? " • Bindung" : ""}</div>
+                        </div>
+                      `).join("")}</div>`
+                    : "<p>Es konnten keine passenden magischen Gegenstaende aus der lokalen Item-Liste geladen werden.</p>")
+                : "<p>Keine magischen Items: Extras werden nur fuer High-Begegnungen hinzugefuegt.</p>"}
+            </div>
+          </div>
+        </div>
+      `;
     }
 
     function filteredMonsters(){
@@ -534,7 +669,7 @@
 
       if (!pool.length){
         encounter = [];
-        renderEncounter(`<p>Keine Monster entsprechen diesem Filter oder Budget.</p>`);
+        renderEncounter("<p>Keine Monster entsprechen diesem Filter oder Budget.</p>");
         return;
       }
 
@@ -545,13 +680,11 @@
         guard++;
         const affordable = pool.filter(m => getMonsterXp(m) <= remaining);
         if (!affordable.length) break;
-
         const top = affordable.slice(0, Math.min(8, affordable.length));
         const m = pick(top);
         generated.push(m);
         remaining -= getMonsterXp(m);
-
-        if (generated.length > getPartyEntries().length * 2 && Math.random() < .35) break;
+        if (generated.length > getPartyEntries().length * 2 && Math.random() < 0.35) break;
       }
 
       encounter = [];
@@ -561,9 +694,9 @@
 
     function renderPcOptions(){
       pcSelect.innerHTML = pcs.map(p => {
-        const subtitle = [p.class, `Lv ${p.level}`, p.player].filter(Boolean).join(" · ");
+        const subtitle = [p.class, `Lv ${p.level}`, p.player].filter(Boolean).join(" • ");
         return `<option value="${escapeHtml(p.id)}">${escapeHtml(p.name)}${subtitle ? ` (${escapeHtml(subtitle)})` : ""}</option>`;
-      }).join("") || `<option value="">Keine SCs gefunden</option>`;
+      }).join("") || '<option value="">Keine SCs gefunden</option>';
     }
 
     function renderParty(){
@@ -576,7 +709,7 @@
               <button class="btn" type="button" data-remove-pc="${escapeHtml(p.id)}" aria-label="SC entfernen">×</button>
             </span>
           `).join("")
-        : `<span class="muted">Keine SCs ausgewählt; der manuelle Gruppenwert wird verwendet.</span>`;
+        : '<span class="muted">Keine SCs ausgewaehlt; der manuelle Gruppenwert wird verwendet.</span>';
 
       for (const btn of partyListEl.querySelectorAll("[data-remove-pc]")){
         btn.addEventListener("click", () => {
@@ -606,11 +739,12 @@
     }
 
     function renderEncounter(extraHtml = ""){
-      const budget = getPartyBudget();
-      const totalXp = encounter.reduce((sum, entry) => sum + getMonsterXp(entry.monster) * entry.count, 0);
+      const stats = encounterStats();
+      const budget = stats.budget;
+      const totalXp = stats.totalXp;
       const target = budget[difficultyEl.value] || budget.moderate;
       const remaining = target - totalXp;
-      const difficulty = classifyEncounter(totalXp, budget);
+      const difficulty = stats.classification;
 
       const rows = encounter.map((entry, index) => {
         const m = entry.monster;
@@ -621,7 +755,7 @@
           <div class="encounter-row">
             <div>
               <b><a href="../bestiarium/monster.html?id=${encodeURIComponent(mid)}">${escapeHtml(m.name)}</a></b>
-              <div class="muted">HG ${escapeHtml(crv)} · ${fmtNumber(xp)} EP pro Kreatur</div>
+              <div class="muted">HG ${escapeHtml(crv)} • ${fmtNumber(xp)} EP pro Kreatur</div>
             </div>
             <input class="select" type="number" min="1" max="99" value="${escapeHtml(entry.count)}" data-enc-count="${index}" />
             <button class="btn" type="button" data-enc-remove="${index}">Entfernen</button>
@@ -631,15 +765,15 @@
 
       encEl.innerHTML = `
         <div class="mini-box">
-          <div class="mini-box-title">Begegnung · ${escapeHtml(difficulty)}</div>
+          <div class="mini-box-title">Begegnung • ${escapeHtml(difficulty)}</div>
           <div class="mini-box-text">
             <div class="pillbar">
               <span class="pill"><b>Gesamt</b> ${fmtNumber(totalXp)} EP</span>
-              <span class="pill"><b>Ziel</b> ${escapeHtml(DIFFICULTY_LABELS[difficultyEl.value])} · ${fmtNumber(target)} EP</span>
+              <span class="pill"><b>Ziel</b> ${escapeHtml(DIFFICULTY_LABELS[difficultyEl.value])} • ${fmtNumber(target)} EP</span>
               <span class="pill"><b>Rest</b> ${fmtNumber(remaining)} EP</span>
             </div>
             ${extraHtml}
-            ${rows ? `<div class="encounter-list">${rows}</div>` : `<p>Noch keine Monster ausgewählt.</p>`}
+            ${rows ? `<div class="encounter-list">${rows}</div>` : "<p>Noch keine Monster ausgewaehlt.</p>"}
           </div>
         </div>
       `;
@@ -652,7 +786,6 @@
           renderEncounter();
         });
       }
-
       for (const btn of encEl.querySelectorAll("[data-enc-remove]")){
         btn.addEventListener("click", () => {
           encounter.splice(Number(btn.dataset.encRemove), 1);
@@ -661,10 +794,24 @@
       }
     }
 
+    function syncLootControlsFromEncounter(){
+      const stats = encounterStats();
+      lootCrEl.value = getCR(stats.leader) || "0";
+      lootCreatureCountEl.value = String(Math.max(1, stats.totalCount || 1));
+      lootDifficultyEl.value = stats.classification === "Low"
+        ? "low"
+        : (stats.classification === "Moderate" ? "moderate" : "high");
+    }
+
+    function updateLootCreatureInput(){
+      lootCreatureCountEl.disabled = lootModeEl.value !== "individual";
+    }
+
     function renderAll(){
       renderParty();
       renderBudget();
       renderEncounter();
+      updateLootCreatureInput();
     }
 
     addPcBtn.addEventListener("click", () => {
@@ -672,183 +819,51 @@
       if (id && !selectedPcIds.includes(id)) selectedPcIds.push(id);
       renderAll();
     });
-
     addAllPcsBtn.addEventListener("click", () => {
       selectedPcIds = pcs.map(p => p.id);
       renderAll();
     });
-
     clearPcsBtn.addEventListener("click", () => {
       selectedPcIds = [];
       renderAll();
     });
-
     manualCountEl.addEventListener("input", renderAll);
     manualLevelEl.addEventListener("input", renderAll);
     difficultyEl.addEventListener("change", renderAll);
     crSel.addEventListener("change", renderEncounter);
     monsterSearchEl.addEventListener("input", renderEncounter);
-
     addMonsterBtn.addEventListener("click", () => {
       const pool = filteredMonsters().sort((a, b) => getMonsterXp(a) - getMonsterXp(b));
       if (!pool.length){
-        renderEncounter(`<p>Keine Monster entsprechen diesem Filter.</p>`);
+        renderEncounter("<p>Keine Monster entsprechen diesem Filter.</p>");
         return;
       }
       addEncounterMonster(pool[0], 1);
     });
-
     clearEncounterBtn.addEventListener("click", () => {
       encounter = [];
       renderEncounter();
     });
 
+    lootModeEl.addEventListener("change", () => {
+      updateLootCreatureInput();
+      renderLoot();
+    });
+    lootCrEl.addEventListener("change", renderLoot);
+    lootDifficultyEl.addEventListener("change", renderLoot);
+    lootCreatureCountEl.addEventListener("input", renderLoot);
+    lootMagicToggleEl.addEventListener("change", renderLoot);
+    lootUseEncounterBtn.addEventListener("click", () => {
+      syncLootControlsFromEncounter();
+      renderLoot();
+    });
+    lootGenerateBtn.addEventListener("click", renderLoot);
+
     renderPcOptions();
     renderAll();
     genBtn.addEventListener("click", generate);
-
-    // ---------------- Coin Flip ----------------
-    const coin = document.getElementById("coin");
-    const flipBtn = document.getElementById("flip");
-    const flip5Btn = document.getElementById("flip5");
-    const coinResult = document.getElementById("coinResult");
-
-    function doFlipOnce(){
-      const isHeads = Math.random() < 0.5;
-
-      // reset animation
-      coin.classList.remove("flipping-heads", "flipping-tails");
-      // force reflow so animation restarts
-      void coin.offsetWidth;
-
-      coin.classList.add(isHeads ? "flipping-heads" : "flipping-tails");
-
-      // update result after animation ends
-      window.setTimeout(() => {
-        coinResult.textContent = isHeads ? "KOPF" : "ZAHL";
-      }, 1050);
-
-      return isHeads ? "KOPF" : "ZAHL";
-    }
-
-    flipBtn.addEventListener("click", () => {
-      doFlipOnce();
-    });
-
-    flip5Btn.addEventListener("click", async () => {
-      const results = [];
-      for (let i = 0; i < 5; i++){
-        results.push(doFlipOnce());
-        // small delay between flips
-        await new Promise(r => setTimeout(r, 1120));
-      }
-      coinResult.textContent = results.join(" • ");
-    });
-
-    // ---------------- Card Draw ----------------
-    const deckTypeEl = document.getElementById("deckType");
-    const drawNEl = document.getElementById("drawN");
-    const drawBtn = document.getElementById("drawBtn");
-    const resetDeckBtn = document.getElementById("resetDeckBtn");
-    const remainingCardsEl = document.getElementById("remainingCards");
-    const lastDrawEl = document.getElementById("lastDraw");
-    const allDrawnEl = document.getElementById("allDrawn");
-
-    let deck = [];
-    let drawn = [];
-
-    function shuffle(a){
-      for (let i = a.length - 1; i > 0; i--){
-        const j = Math.floor(Math.random() * (i + 1));
-        [a[i], a[j]] = [a[j], a[i]];
-      }
-      return a;
-    }
-
-    const SUITS = ["♠","♥","♦","♣"];
-    const RANKS_52 = ["A","2","3","4","5","6","7","8","9","10","J","Q","K"];
-    const RANKS_SKAT = ["7","8","9","10","J","Q","K","A"];
-
-    function buildDeck32(){ // true Skat: 7–A
-      const d = [];
-      for (const s of SUITS){
-        for (const r of RANKS_SKAT){
-          d.push(`${r}${s}`);
-        }
-      }
-      return d;
-    }
-
-    function buildDeck52(){
-      const d = [];
-      for (const s of SUITS){
-        for (const r of RANKS_52){
-          d.push(`${r}${s}`);
-        }
-      }
-      return d;
-    }
-
-    function buildDeck110(){
-      // 2 standard decks (104) + 6 jokers = 110
-      const d = [];
-      for (let k = 0; k < 2; k++){
-        for (const s of SUITS){
-          for (const r of RANKS_52){
-            d.push(`${r}${s}`);
-          }
-        }
-      }
-      for (let j = 1; j <= 6; j++){
-        d.push(`🃏JOKER${j}`);
-      }
-      return d;
-    }
-
-    function resetDeck(){
-      const t = deckTypeEl.value;
-      if (t === "110") deck = buildDeck110();
-      else if (t === "32") deck = buildDeck32();
-      else deck = buildDeck52();
-
-      shuffle(deck);
-      drawn = [];
-      renderDeckUI([], true);
-    }
-
-    function renderList(el, cards){
-      el.innerHTML = cards.map(c => `<li>${escapeHtml(c.replace(/^🃏JOKER\d+$/,"🃏JOKER"))}</li>`).join("");
-    }
-
-    function renderDeckUI(last, justReset=false){
-      remainingCardsEl.textContent = String(deck.length);
-      renderList(lastDrawEl, last);
-      renderList(allDrawnEl, drawn);
-      if (justReset){
-        lastDrawEl.innerHTML = "";
-        allDrawnEl.innerHTML = "";
-      }
-    }
-
-    function drawCards(){
-      const n = Math.max(1, Number(drawNEl.value || 1));
-      if (deck.length === 0){
-        renderDeckUI([]);
-        lastDrawEl.innerHTML = "<li>(Stapel leer)</li>";
-        return;
-      }
-
-      const take = Math.min(n, deck.length);
-      const pulled = deck.splice(0, take);
-      drawn.push(...pulled);
-      renderDeckUI(pulled);
-    }
-
-    deckTypeEl.addEventListener("change", resetDeck);
-    resetDeckBtn.addEventListener("click", resetDeck);
-    drawBtn.addEventListener("click", drawCards);
-
-    resetDeck();
+    syncLootControlsFromEncounter();
+    renderLoot();
   </script>
 
   <script>
@@ -875,7 +890,7 @@
         const selected = tableSel.value;
         const table = tables.find(entry => (entry.id || entry.name) === selected);
         if (!table){
-          resultEl.innerHTML = "<p>Keine Einträge.</p>";
+          resultEl.innerHTML = "<p>Keine Eintraege.</p>";
           return;
         }
         const rolled = api.rollTableEntry(table);

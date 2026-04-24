@@ -1,0 +1,117 @@
+{
+  "id": "satana",
+  "name": "Satana",
+  "aliases": [],
+  "source": "homebrew",
+  "kind": "Monster",
+  "npc": false,
+  "size": "Groß",
+  "creature_type": "Tier",
+  "subtype": null,
+  "alignment": "neutral böse",
+  "armor_class": {
+    "value": 14,
+    "note": "natürliche Rüstung"
+  },
+  "hit_points": {
+    "average": 95,
+    "formula": "[[roll:18W10]]"
+  },
+  "speed": {
+    "walk": "9 m",
+    "fly": "18 m",
+    "swim": "9 m"
+  },
+  "abilities": {
+    "str": {
+      "score": 15,
+      "mod": 2,
+      "save": 2
+    },
+    "dex": {
+      "score": 15,
+      "mod": 2,
+      "save": 6
+    },
+    "con": {
+      "score": 17,
+      "mod": 3,
+      "save": 7
+    },
+    "int": {
+      "score": 6,
+      "mod": -2,
+      "save": -2
+    },
+    "wis": {
+      "score": 12,
+      "mod": 1,
+      "save": 1
+    },
+    "cha": {
+      "score": 8,
+      "mod": -1,
+      "save": -1
+    }
+  },
+  "skills": {},
+  "damage_resistances": [],
+  "damage_immunities": [],
+  "damage_vulnerabilities": [],
+  "special_damage_defenses": [],
+  "condition_immunities": [],
+  "senses": {
+    "Blindsicht": "3 m",
+    "Dunkelsicht": "18 m",
+    "Passive Wahrnehmung": 11
+  },
+  "languages": {
+    "speaks": ["telepathisch (18 m)"],
+    "understands": [
+      "Weltsprache",
+      "Druidisch",
+      "Infernal"
+    ]
+  },
+  "challenge_rating": "9",
+  "xp": 5000,
+  "proficiency_bonus": 4,
+  "traits": [
+    {
+      "name": "Urkraft",
+      "text": "Magie fließt durch Satana und gibt ihm die folgenden Eigenschaften für 10 min:\n- *Riesiger Koloss:* Die Schlange wird riesig, oder füllt den verfügbaren Raum aus, und bekommt 20 temporäre TP.\n- *Beißer:* Alle Angriffe machen einen Schadenswürfel mehr Schaden.\n- *Titanischer Schritt:* Die Bewegungsgeschwindigkeit erhöht sich um 3 m.\n- *Baumschritt:* Satana kann den Zauber [[spell:baumschritt]] einmal wirken."
+    }
+  ],
+  "spellcasting": [],
+  "actions": [
+    {
+      "name": "Multiangriff",
+      "text": "Satana macht 2 Angriffe: ein *Biss* und ein *Schwanz* oder *Einengen*."
+    },
+    {
+      "name": "Biss",
+      "text": "_Nahkampfwaffenangriff:_ +6, 1,5 m, 1 Ziel. _Treffer:_ [[roll:1W8+2|6 (1W8 + 2)]] Stichschaden."
+    },
+    {
+      "name": "Schwanz",
+      "text": "_Nahkampfwaffenangriff:_ +6, 3 m, 1 Ziel. _Treffer:_ [[roll:1W6+2|5 (1W6 + 2)]] Wuchtschaden."
+    },
+    {
+      "name": "Einengen",
+      "text": "_Nahkampfwaffenangriff:_ +6, 1,5 m, 1 Kreatur. _Treffer:_ [[roll:2W8+2|10 (2W8 + 2)]] Wuchtschaden, und das Ziel ist [[condition:gegriffen]] (Ausbruch-SG 14). Bis der Griff endet ist die Kreatur [[condition:restrained]], und die Schlange kann keine weitere Kreatur *Einengen*."
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [
+    {
+      "name": "Angriff abfangen",
+      "text": "Wenn eine Kreatur, die Satana sehen kann, ein Ziel mit einem Angriff trifft und das Ziel in 1,5 m von der Schlange ist, nimmt das Ziel nur die Hälfte des Schadens. Satana nimmt den Rest des Schadens."
+    }
+  ],
+  "legendary_actions": [],
+  "legendary_actions_per_round": 0,
+  "legendary_description": null,
+  "mythic_actions": [],
+  "lair_actions": [],
+  "regional_effects": []
+}

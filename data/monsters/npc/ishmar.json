@@ -1,0 +1,145 @@
+{
+  "id": "ishmar",
+  "name": "Ishmar",
+  "aliases": [],
+  "source": "homebrew",
+  "image": "",
+  "kind": "Verbündeter",
+  "npc": true,
+  "size": "Medium",
+  "creature_type": "Humanoid",
+  "subtype": "Genasi",
+  "alignment": "neutral",
+  "armor_class": {
+    "value": 13,
+    "display": "[[item:lederrüstung]]"
+  },
+  "hit_points": {
+    "average": 27,
+    "formula": "[[roll:6W8|6W8]]"
+  },
+  "speeds": {
+    "walk": "9 m",
+    "fly": "9 m (schweben; nur auf dem magischen Teppich)"
+  },
+  "abilities": {
+    "str": {
+      "score": 10,
+      "mod": 0,
+      "save": 0
+    },
+    "dex": {
+      "score": 14,
+      "mod": 2,
+      "save": 2
+    },
+    "con": {
+      "score": 12,
+      "mod": 1,
+      "save": 1
+    },
+    "int": {
+      "score": 12,
+      "mod": 1,
+      "save": 1
+    },
+    "wis": {
+      "score": 10,
+      "mod": 0,
+      "save": 0
+    },
+    "cha": {
+      "score": 16,
+      "mod": 3,
+      "save": 3
+    }
+  },
+  "skills": {
+    "Überreden": 5,
+    "Täuschen": 5,
+    "Einschüchtern": 5,
+    "Wahrnehmung": 2
+  },
+  "damage_resistances": [
+    "Feuer"
+  ],
+  "damage_immunities": [],
+  "damage_vulnerabilities": [],
+  "special_damage_defenses": [],
+  "condition_immunities": [],
+  "senses": {
+    "Dunkelsicht": "18 m",
+    "Passive Wahrnehmung": 12,
+    "Passives Motiv erkennen": 10,
+    "Passive Nachforschung": 11
+  },
+  "languages": {
+    "speaks": [
+      "Weltsprache",
+      "Ignan"
+    ],
+    "understands": []
+  },
+  "challenge_rating": "1",
+  "xp": 200,
+  "proficiency_bonus": 2,
+  "traits": [
+    {
+      "name": "Geschäftstüchtig",
+      "text": "Der Händler hat Vorteil bei Überreden-Würfen, um zu handeln. Wenn er dafür mindestens 1 min Zeit hat, kann er auch einen Täuschen-Wurf verwenden."
+    },
+    {
+      "name": "Magischer Teppich (Warenkarawane)",
+      "text": "Solange der Händler auf seinem magischen Teppich steht, hat er eine Flugbewegungsrate von 9 m (schweben). Wird er vom Teppich heruntergestoßen oder ist der Teppich nicht verfügbar, verliert er diese Flugbewegungsrate. Der Teppich trägt ihn und seine Waren; der Händler hat Vorteil bei Athletik- oder Akrobatik-Würfen, um das Gleichgewicht auf dem Teppich zu halten."
+    },
+    {
+      "name": "Waren verteidigen",
+      "text": "Solange sich mindestens eine Kiste oder ein Beutel mit Waren innerhalb von 1,5 m um den Händler befindet, hat er Vorteil bei Angriffswürfen gegen Kreaturen, die sich ebenfalls innerhalb von 1,5 m um diese Waren befinden."
+    }
+  ],
+  "spellcasting": [
+    {
+      "name": "Zauberei",
+      "text": "Als Feuer-Genasi ist Ishmar ein Zauberwirker. Seine Zauberfähigkeit ist CHA (Zauberrettungs-SG 13, Zauberangriffsbonus +5). Er kann die folgenden Zauber wirken:",
+      "spells": {
+        "cantrips_at_will": [
+          "[[spell:feuerpfeil]]"
+        ]
+      },
+      "ability": "CHA",
+      "save_dc": 13,
+      "attack_bonus": 5
+    }
+  ],
+  "actions": [
+    {
+      "name": "[[item:doppleklingen-krummsaebel]]",
+      "text": "*Nahkampfwaffenangriff:* +4, 1,5 m, 1 Ziel. *Treffer:* [[roll:2W4+2|6 (2W4 + 2)]] Stichschaden."
+    },
+    {
+      "name": "[[spell:feuerpfeil]]",
+      "text": "*Fernkampfzauberangriff:* +5, 36 m, 1 Ziel. *Treffer:* [[roll:1W10|5 (1W10)]] Feuerschaden."
+    }
+  ],
+  "bonus_actions": [
+    {
+      "name": "Teppich-Ausweichmanöver",
+      "text": "Der Händler führt Flucht als Bonusaktion aus, sofern er auf seinem magischen Teppich steht."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Schütze die Ware!",
+      "text": "Wenn eine Kreatur innerhalb von 1,5 m um die Waren des Händlers einen Angriff gegen eine Ware oder einen Behälter ausführt oder versucht, eine Ware zu stehlen, kann der Händler eine Bewegung von bis zu 3 m ausführen (ohne Gelegenheitsangriffe zu provozieren), um sich zwischen die Kreatur und die Ware zu bringen."
+    }
+  ],
+  "legendary_actions": [],
+  "legendary_actions_per_round": 0,
+  "legendary_description": null,
+  "mythic_actions": [],
+  "lair_actions": [],
+  "regional_effects": [],
+  "background": "",
+  "personality": "",
+  "inventory": ["[[item:lederruestung]]", "[[item:doppelklingen-krummsaebel]]", "[[item:beutel|Geldbeutel mit 1500 GM]]"]
+}

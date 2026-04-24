@@ -11,7 +11,7 @@
   <header class="topbar">
     <div class="brand">
       <div class="title" id="title">Gegenstand</div>
-      <div class="subtitle"><a href="./items.html">← Zurück zu allen Gegenständen</a> • <a href="./vendors.html">Händler-Sortimente</a> • <a href="../../index.html">Startseite</a></div>
+      <div class="subtitle"><a href="./items.html">&larr; Zurück zu allen Gegenständen</a> &bull; <a href="./vendors.html">Händler-Sortimente</a> &bull; <a href="../../index.html">Startseite</a></div>
     </div>
   </header>
 
@@ -22,10 +22,161 @@
   </main>
 
   <script type="module">
-    import { escapeHtml, loadIndex, loadMany, normalizeItem, buildLookupIndex, linkifyRefs } from "../../lib.js?v=2026-04-20-vendor-filter";
+    import {
+      escapeHtml,
+      loadIndex,
+      loadMany,
+      normalizeItem,
+      normalizeSpell,
+      buildLookupIndex,
+      renderRichText,
+      linkifyRefs
+    } from "../../lib.js?v=2026-04-20-vendor-filter";
 
     const view = document.getElementById("view");
     const titleEl = document.getElementById("title");
+
+    const FIELD_LABELS = {
+      id: "ID",
+      type: "Typ",
+      item_category: "Kategorie",
+      rarity: "Seltenheit",
+      source: "Quelle",
+      rules_version: "Regelversion",
+      price: "Preis",
+      weight: "Gewicht",
+      requires_attunement: "Bindung",
+      consumable: "Verbrauchbar",
+      equippable: "Ausrüstbar",
+      equip_slot: "Slot",
+      stackable: "Stapelbar",
+      vendors: "Händler",
+      tags: "Tags",
+      armor: "Rüstung",
+      weapon: "Waffe",
+      charges: "Aufladungen",
+      uses: "Nutzungen",
+      modifiers: "Modifikatoren",
+      granted_spell_ids: "Zauber",
+      granted_action_ids: "Aktionen",
+      effects: "Effekte",
+      contained_item_ids: "Enthaltene Gegenstände",
+      use_cost: "Aktivierung",
+      text: "Beschreibung",
+      html: "Beschreibung",
+      description_html: "Beschreibung"
+    };
+
+    const DETAIL_FIELD_ORDER = [
+      "id",
+      "type",
+      "item_category",
+      "rarity",
+      "source",
+      "rules_version",
+      "price",
+      "weight",
+      "requires_attunement",
+      "consumable",
+      "equippable",
+      "equip_slot",
+      "stackable",
+      "vendors",
+      "tags",
+      "armor",
+      "weapon",
+      "charges",
+      "uses",
+      "use_cost",
+      "modifiers",
+      "effects",
+      "granted_spell_ids",
+      "granted_action_ids",
+      "contained_item_ids"
+    ];
+
+    function labelFor(key){
+      return FIELD_LABELS[key] || String(key ?? "").replaceAll("_", " ");
+    }
+
+    function isMeaningful(value){
+      if (value == null) return false;
+      if (typeof value === "string") return value.trim() !== "";
+      if (typeof value === "number") return Number.isFinite(value);
+      if (typeof value === "boolean") return value;
+      if (Array.isArray(value)) return value.some(isMeaningful);
+      if (typeof value === "object") return Object.values(value).some(isMeaningful);
+      return true;
+    }
+
+    function attunementDisplay(entry){
+      const text = String(entry.attunement_text ?? "").trim();
+      return text || "Ja";
+    }
+
+    function kindDisplay(entry){
+      const type = String(entry.type ?? "").trim();
+      const category = String(entry.item_category ?? "").trim();
+      if (!type) return category || "Item";
+      if (!category || category.toLowerCase() === type.toLowerCase()) return type;
+      if (type.toLowerCase() === "item") return category;
+      return `${type} - ${category}`;
+    }
+
+    function renderLinkedRefs(ids, kind, lookup){
+      return ids
+        .map(entryId => linkifyRefs(`[[${kind}:${entryId}]]`, { lookups: { [kind]: lookup } }))
+        .join(", ");
+    }
+
+    function renderObjectSummary(value){
+      return Object.entries(value)
+        .filter(([, entry]) => isMeaningful(entry))
+        .map(([subKey, entry]) => `${escapeHtml(labelFor(subKey))}: ${escapeHtml(String(entry))}`)
+        .join(" &bull; ");
+    }
+
+    function renderFieldValue(item, value, key, lookups){
+      if (key === "requires_attunement") return escapeHtml(attunementDisplay(item));
+      if (key === "vendors" || key === "tags") return (value ?? []).map(escapeHtml).join(", ");
+      if (key === "granted_spell_ids") return renderLinkedRefs(value ?? [], "spell", lookups.spell);
+      if (key === "contained_item_ids") return renderLinkedRefs(value ?? [], "item", lookups.item);
+      if (key === "modifiers" || key === "effects" || key === "granted_action_ids") return (value ?? []).map(escapeHtml).join(", ");
+
+      if (key === "charges" || key === "uses") {
+        const parts = [];
+        if (isMeaningful(value?.max)) parts.push(`Max. ${escapeHtml(String(value.max))}`);
+        if (isMeaningful(value?.recharge)) parts.push(`Regeneration: ${escapeHtml(String(value.recharge))}`);
+        return parts.join(" &bull; ");
+      }
+
+      if (key === "armor" && value && typeof value === "object" && !Array.isArray(value)) {
+        const parts = [];
+        if (isMeaningful(value.type)) parts.push(`Typ: ${escapeHtml(String(value.type))}`);
+        if (isMeaningful(value.base)) parts.push(`RK ${escapeHtml(String(value.base))}`);
+        if (value.dex_bonus === true) parts.push("GE-Bonus");
+        if (isMeaningful(value.max)) parts.push(`GE max. ${escapeHtml(String(value.max))}`);
+        if (value.stealth_disadvantage === true) parts.push("Nachteil auf Heimlichkeit");
+        return parts.join(" &bull; ");
+      }
+
+      if (typeof value === "boolean") return escapeHtml(value ? "Ja" : "Nein");
+      if (Array.isArray(value)) return value.map(entry => escapeHtml(String(entry))).join(", ");
+      if (value && typeof value === "object") return renderObjectSummary(value);
+      return escapeHtml(String(value ?? ""));
+    }
+
+    function renderDetailRows(item, lookups){
+      const orderedKeys = [
+        ...DETAIL_FIELD_ORDER.filter(key => Object.prototype.hasOwnProperty.call(item, key)),
+        ...Object.keys(item).filter(key => !DETAIL_FIELD_ORDER.includes(key) && !["text", "html", "description_html", "attunement_text"].includes(key))
+      ];
+
+      return orderedKeys
+        .filter(key => isMeaningful(item[key]))
+        .map(key => `<div><b>${escapeHtml(labelFor(key))}:</b> ${renderFieldValue(item, item[key], key, lookups)}</div>`)
+        .join("");
+    }
 
     const id = new URLSearchParams(location.search).get("id");
     if (!id) {
@@ -33,13 +184,23 @@
       throw new Error("Fehlende Gegenstands-ID");
     }
 
-    const files = await loadIndex("../../data/items/index.json");
-    const items = (await loadMany("../../data/items", files)).map(normalizeItem);
+    const itemFiles = await loadIndex("../../data/items/index.json");
+    const items = (await loadMany("../../data/items", itemFiles)).map(normalizeItem);
+
+    let spells = [];
+    try {
+      const spellFiles = await loadIndex("../../data/spells/index.json");
+      spells = (await loadMany("../../data/spells", spellFiles)).map(normalizeSpell);
+    } catch (error) {
+      console.warn("Zauberdaten konnten fur die Item-Ansicht nicht geladen werden.", error);
+    }
+
     const itemLookup = buildLookupIndex(items);
+    const spellLookup = buildLookupIndex(spells);
 
     const item =
-      items.find(i => (i.id || "").toLowerCase() === id.toLowerCase()) ||
-      items.find(i => (i.name || "").toLowerCase() === id.toLowerCase());
+      items.find(entry => (entry.id || "").toLowerCase() === id.toLowerCase()) ||
+      items.find(entry => (entry.name || "").toLowerCase() === id.toLowerCase());
 
     if (!item) {
       view.innerHTML = `<p>Gegenstand nicht gefunden: <code>${escapeHtml(id)}</code></p>`;
@@ -48,59 +209,24 @@
 
     titleEl.textContent = item.name || "Gegenstand";
 
-    function weightDisplay(entry){
-      const weight = entry.weight;
-      if (weight == null || weight === "") return "";
-      if (typeof weight === "number") return weight > 0 ? escapeHtml(String(weight)) : "";
-      if (typeof weight === "string") {
-        const trimmed = weight.trim();
-        const match = trimmed.match(/^-?\d+(?:[.,]\d+)?/);
-        if (!match) return escapeHtml(trimmed);
-        const numeric = Number(match[0].replace(",", "."));
-        return Number.isFinite(numeric) && numeric > 0 ? escapeHtml(trimmed) : "";
-      }
-      if (typeof weight === "object") {
-        const rawValue = weight.value ?? weight.amount;
-        const numeric = Number(rawValue);
-        if (!Number.isFinite(numeric) || numeric <= 0) return "";
-        const unit = String(weight.unit ?? "").trim();
-        return escapeHtml([String(rawValue), unit].filter(Boolean).join(" ").trim());
-      }
-      return "";
-    }
-
-    function attunementDisplay(entry){
-      const text = String(entry.attunement_text ?? "").trim();
-      return text || "Ja";
-    }
-
-    const weight = weightDisplay(item);
-    const vendors = (item.vendors ?? []).map(escapeHtml).join(", ");
-
-    const effectHtml = item.html
+    const detailRows = renderDetailRows(item, { item: itemLookup, spell: spellLookup });
+    const descriptionHtml = item.html
       ? `<div class="mini-box-text">${item.html}</div>`
-      : (item.text ? `<div class="mini-box-text">${linkifyRefs(item.text, { lookups: { item: itemLookup } })}</div>` : "");
+      : (item.text ? `<div class="mini-box-text">${renderRichText(item.text, { lookups: { item: itemLookup, spell: spellLookup } })}</div>` : "");
 
     view.innerHTML = `
       <h1>${escapeHtml(item.name)}</h1>
-      <p class="muted">${escapeHtml(item.type ?? "Item")}${item.rarity ? " • " + escapeHtml(item.rarity) : ""}</p>
+      <p class="muted">${escapeHtml(kindDisplay(item))}${item.rarity ? " &bull; " + escapeHtml(item.rarity) : ""}</p>
 
-      <div class="mini-box">
-        <div class="mini-box-title">Werte</div>
-        <div class="mini-box-text">
-          ${item.requires_attunement ? `<div><b>Bindung:</b> ${escapeHtml(attunementDisplay(item))}</div>` : ""}
-          ${item.price ? `<div><b>Preis:</b> ${escapeHtml(item.price)}</div>` : ""}
-          ${weight ? `<div><b>Gewicht:</b> ${weight}</div>` : ""}
-          ${vendors ? `<div><b>Händler:</b> ${vendors}</div>` : ""}
-        </div>
-      </div>
-
-      ${effectHtml ? `<div class="mini-box" style="margin-top:12px;">
-        <div class="mini-box-title">Beschreibung</div>
-        ${effectHtml}
+      ${detailRows ? `<div class="mini-box">
+        <div class="mini-box-title">Eigenschaften</div>
+        <div class="mini-box-text">${detailRows}</div>
       </div>` : ""}
 
-      ${item.source ? `<p class="muted" style="margin-top:12px;"><b>Quelle:</b> ${escapeHtml(item.source)}</p>` : ""}
+      ${descriptionHtml ? `<div class="mini-box" style="margin-top:12px;">
+        <div class="mini-box-title">Beschreibung</div>
+        ${descriptionHtml}
+      </div>` : ""}
     `;
   </script>
 </body>

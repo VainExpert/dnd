@@ -1,0 +1,132 @@
+{
+  "id": "dennis",
+  "name": "Dennis",
+  "aliases": [
+    "Dennis",
+    "Faust des Betrunkenen"
+  ],
+  "source": "homebrew",
+  "image": "",
+  "kind": "Verbündeter",
+  "npc": true,
+  "size": "Medium",
+  "creature_type": "Humanoid",
+  "subtype": "Mensch",
+  "alignment": "neutral",
+  "armor_class": {
+    "value": 15,
+    "note": "Ungepanzerte Verteidigung"
+  },
+  "hit_points": {
+    "average": 45,
+    "formula": "[[roll:6W8+18|6W8 + 18]]"
+  },
+  "speeds": {
+    "walk": "12 m"
+  },
+  "abilities": {
+    "str": {
+      "score": 14,
+      "mod": 2,
+      "save": 2
+    },
+    "dex": {
+      "score": 16,
+      "mod": 3,
+      "save": 5
+    },
+    "con": {
+      "score": 16,
+      "mod": 3,
+      "save": 3
+    },
+    "int": {
+      "score": 10,
+      "mod": 0,
+      "save": 0
+    },
+    "wis": {
+      "score": 14,
+      "mod": 2,
+      "save": 4
+    },
+    "cha": {
+      "score": 11,
+      "mod": 0,
+      "save": 0
+    }
+  },
+  "skills": {
+    "Akrobatik": 5,
+    "Athletik": 4,
+    "Motiv erkennen": 4,
+    "Einschüchtern": 2,
+    "Wahrnehmung": 4
+  },
+  "damage_resistances": [],
+  "damage_immunities": [],
+  "damage_vulnerabilities": [],
+  "special_damage_defenses": [],
+  "condition_immunities": [],
+  "senses": {
+    "Passive Wahrnehmung": 14,
+    "Passives Motiv erkennen": 14,
+    "Passive Nachforschung": 10
+  },
+  "languages": {
+    "speaks": [
+      "Weltsprache",
+      "Diebessprech"
+    ],
+    "understands": []
+  },
+  "challenge_rating": "2",
+  "xp": 450,
+  "proficiency_bonus": 2,
+  "traits": [
+    {
+      "name": "Tavernenraufbold",
+      "text": "Dennis ist geübt im Umgang mit improvisierten Waffen. Seine waffenlosen Schläge verursachen 1W6 Wuchtschaden. Wenn er eine Kreatur mit einem waffenlosen Schlag oder einer improvisierten Waffe trifft, kann er als Bonusaktion versuchen, das Ziel zu greifen (Flucht-SG 13)."
+    },
+    {
+      "name": "Betrunkene Fußarbeit",
+      "text": "Wenn Dennis *\"Wirbelnde Schläge\"* einsetzt, erhält er die Vorteile von Flucht und seine Bewegungsgeschwindigkeit steigt bis zum Ende seines Zuges um 3 m."
+    }
+  ],
+  "spellcasting": [],
+  "actions": [
+    {
+      "name": "Multiangriff",
+      "text": "Dennis macht 2 Angriffe."
+    },
+    {
+      "name": "Waffenloser Schlag",
+      "text": "*Nahkampfwaffenangriff:* +5, 1,5 m, 1 Ziel. *Treffer:* [[roll:1W6+3|6 (1W6 + 3)]] Wuchtschaden."
+    },
+    {
+      "name": "Improvisierte Waffe (Flasche, Krug, Stuhlbein)",
+      "text": "*Nahkampfwaffenangriff:* +5, 1,5 m, 1 Ziel, geworfen (6/18 m). *Treffer:* [[roll:1W6+3|6 (1W6 + 3)]] Wuchtschaden."
+    }
+  ],
+  "bonus_actions": [
+    {
+      "name": "Wirbelnde Schläge (3/Tag)",
+      "text": "Unmittelbar nachdem Dennis angegriffen hat, führt er einen zusätzlichen waffenlosen Schlag aus."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Schwankender Ausweichschritt",
+      "text": "Wenn eine Kreatur Dennis mit einem Nahkampfangriff verfehlt, kann er den Angreifer dazu bringen, denselben Angriff mit demselben Angriffswurf gegen eine andere Kreatur seiner Wahl innerhalb von 1,5 m um Dennis zu wiederholen."
+    }
+  ],
+  "legendary_actions": [],
+  "legendary_actions_per_round": 0,
+  "legendary_description": null,
+  "mythic_actions": [],
+  "lair_actions": [],
+  "regional_effects": [],
+  "background": "",
+  "personality": "",
+  "inventory": []
+}

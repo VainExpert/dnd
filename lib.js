@@ -564,14 +564,31 @@ export function resolveEntityRef(ref, lookup){
   const normalized = normalizeEntityRef(ref);
   if (!normalized) return null;
 
+  const originalText = typeof ref === "string"
+    ? ref.trim()
+    : String(ref?.name ?? ref?.label ?? ref?.id ?? "").trim();
+  const hasExplicitName = !!originalText && originalText !== String(normalized.id ?? "").trim();
+
   for (const candidate of cleanedLookupVariants(refDisplayName(normalized))) {
     const hit = lookup?.get(slugify(candidate));
-    if (hit) return { ...normalized, id: hit.id, name: normalized.name || hit.name };
+    if (hit) {
+      return {
+        ...normalized,
+        id: hit.id,
+        name: hasExplicitName ? normalized.name : (hit.name || normalized.name || hit.id)
+      };
+    }
   }
 
   if (normalized.id) {
     const hit = lookup?.get(slugify(normalized.id));
-    if (hit) return { ...normalized, id: hit.id, name: normalized.name || hit.name };
+    if (hit) {
+      return {
+        ...normalized,
+        id: hit.id,
+        name: hasExplicitName ? normalized.name : (hit.name || normalized.name || hit.id)
+      };
+    }
   }
 
   return normalized;
@@ -596,7 +613,7 @@ export function entityLinkHtml(kind, ref, { base = "./" } = {}){
 
   const label = escapeHtml(normalized.name || normalized.id).replaceAll("-", " ");
   const href = entityHref(kind, normalized.id, { base });
-  return href ? `<a href="${href}">${label}</a>` : label;
+  return href ? `<a href="${href}" target="dnd-reference" rel="noopener">${label}</a>` : label;
 }
 
 export function normalizeSpellRef(x){
@@ -1149,6 +1166,42 @@ function lookupEntityName(kind, id, lookups){
   return "";
 }
 
+function normalizeRollExpression(expr){
+  return repairText(String(expr ?? ""))
+    .trim()
+    .replace(/\s+/g, "")
+    .replace(/w/gi, "d");
+}
+
+function formatRollExpression(expr){
+  return normalizeRollExpression(expr).replace(/d/gi, "W");
+}
+
+function rollHref(expr){
+  const normalized = normalizeRollExpression(expr);
+  if (!normalized) return null;
+
+  const encoded = encodeURIComponent(normalized);
+  const path = typeof location !== "undefined" ? location.pathname.replace(/\\/g, "/") : "";
+  const inPages = path.includes("/pages/");
+  const inTools = path.includes("/pages/werkzeuge/");
+  const prefix = inPages ? (inTools ? "./" : "../werkzeuge/") : "./pages/werkzeuge/";
+
+  return `${prefix}dice.html?expr=${encoded}&auto=1`;
+}
+
+function normalizeInlineKind(kind){
+  const value = repairText(String(kind ?? "")).trim().toLowerCase();
+  if (value === "spell" || value === "zauber") return "spell";
+  if (value === "monster") return "monster";
+  if (value === "npc" || value === "nsc") return "npc";
+  if (value === "pc" || value === "charakter") return "pc";
+  if (value === "item" || value === "gegenstand") return "item";
+  if (value === "table" || value === "tabelle") return "table";
+  if (value === "roll" || value === "wurf" || value === "wuerfel") return "roll";
+  return value;
+}
+
 function pageRelativeEntityHref(kind, id){
   const cleanId = String(id ?? "").trim();
   if (!cleanId) return null;
@@ -1187,30 +1240,104 @@ function pageRelativeEntityHref(kind, id){
 
 export function linkifyRefs(text, { base = null, lookups = {}, routes = null } = {}) {
   const s = String(text ?? "");
-  const re = /\[\[(spell|monster|pc|npc|item|table):([^|\]]+)(?:\|([^\]]+))?\]\]/gi;
+  const re = /\[\[([a-z]+):([^|\]]+)(?:\|([^\]]+))?\]\]/gi;
 
   let out = "";
   let last = 0;
 
   for (const m of s.matchAll(re)) {
-    const kind = String(m[1]).toLowerCase();
+    const kind = normalizeInlineKind(m[1]);
     const id = String(m[2]).trim();
     const customLabel = String(m[3] ?? "").trim();
     const start = m.index ?? 0;
 
     out += escapeHtml(s.slice(last, start)).replaceAll("\n", "<br/>");
 
-    const label = escapeHtml(customLabel || lookupEntityName(kind, id, lookups) || prettifyEntityId(id));
+    const label = escapeHtml(customLabel || (kind === "roll" ? formatRollExpression(id) : lookupEntityName(kind, id, lookups) || prettifyEntityId(id)));
     const route = routes?.[kind];
     let href = typeof route === "function"
       ? route(id)
       : (typeof route === "string" ? `${route}${encodeURIComponent(id)}` : null);
-    if (!href) href = base == null ? pageRelativeEntityHref(kind, id) : entityHref(kind, id, { base });
+    if (!href) href = kind === "roll"
+      ? rollHref(id)
+      : (base == null ? pageRelativeEntityHref(kind, id) : entityHref(kind, id, { base }));
 
-    out += href ? `<a href="${href}">${label}</a>` : label;
+    const attrs = kind === "roll"
+      ? ' target="dnd-dice" rel="noopener"'
+      : ' target="dnd-reference" rel="noopener"';
+    out += href ? `<a href="${href}"${attrs}>${label}</a>` : label;
     last = start + String(m[0]).length;
   }
 
   out += escapeHtml(s.slice(last)).replaceAll("\n", "<br/>");
   return out;
+}
+
+function sanitizeMarkdownHref(url){
+  const value = String(url ?? "").trim();
+  if (!value) return null;
+  if (/^(https?:|mailto:|#|\/|\.\.?(?:\/|$))/i.test(value)) return value;
+  return null;
+}
+
+function applyInlineMarkdown(text){
+  let out = String(text ?? "");
+
+  out = out.replace(/\[([^\]\n]+)\]\(([^)\n]+)\)/g, (_, label, url) => {
+    const href = sanitizeMarkdownHref(url);
+    if (!href) return label;
+    const attrs = href.startsWith("#")
+      ? ""
+      : ' target="_blank" rel="noopener noreferrer"';
+    return `<a href="${escapeHtml(href)}"${attrs}>${label}</a>`;
+  });
+
+  out = out.replace(/\+\+([^\n+](?:.*?[^\n+])?)\+\+/g, "<u>$1</u>");
+  out = out.replace(/\*\*([^\n*](?:.*?[^\n*])?)\*\*/g, "<strong>$1</strong>");
+  out = out.replace(/__([^\n_](?:.*?[^\n_])?)__/g, "<strong>$1</strong>");
+  out = out.replace(/(^|[^\*])\*([^*\n][^*\n]*?)\*(?!\*)/g, "$1<em>$2</em>");
+  out = out.replace(/(^|[^_])_([^_\n][^_\n]*?)_(?!_)/g, "$1<em>$2</em>");
+
+  return out;
+}
+
+export function renderRichText(text, { base = null, lookups = {}, routes = null, inlineOnly = false } = {}) {
+  const htmlTokens = [];
+  const reserveHtml = (html) => {
+    const token = `%%HTMLTOKEN${htmlTokens.length}%%`;
+    htmlTokens.push(String(html ?? ""));
+    return token;
+  };
+  const restoreHtml = (value) => String(value ?? "").replace(/%%HTMLTOKEN(\d+)%%/g, (_, index) => htmlTokens[Number(index)] ?? "");
+
+  let source = String(text ?? "").replace(/\r\n?/g, "\n");
+
+  source = source.replace(/`([^`\n]+)`/g, (_, code) => reserveHtml(`<code>${escapeHtml(code)}</code>`));
+  source = source.replace(/\[\[([a-z]+):([^|\]]+)(?:\|([^\]]+))?\]\]/gi, (match) => reserveHtml(linkifyRefs(match, { base, lookups, routes })));
+  source = escapeHtml(source);
+  source = applyInlineMarkdown(source);
+
+  if (inlineOnly) {
+    return restoreHtml(source.replace(/\n/g, "<br/>"));
+  }
+
+  source = source.replace(/^### (.*)$/gm, "<h3>$1</h3>");
+  source = source.replace(/^## (.*)$/gm, "<h2>$1</h2>");
+  source = source.replace(/^# (.*)$/gm, "<h1>$1</h1>");
+  source = source.replace(/^> (.*)$/gm, "<blockquote>$1</blockquote>");
+  source = source.replace(/^\s*-\s+(.*)$/gm, "<li>$1</li>");
+  source = source.replace(/(<li>[\s\S]*?<\/li>\n?)+/g, (list) => `<ul>${list}</ul>`);
+
+  source = source
+    .split(/\n{2,}/)
+    .map((block) => {
+      const trimmed = block.trim();
+      if (!trimmed) return "";
+      if (trimmed.startsWith("<h") || trimmed.startsWith("<ul>") || trimmed.startsWith("<blockquote>")) return trimmed;
+      if (trimmed.startsWith("<")) return trimmed;
+      return `<p>${trimmed.replace(/\n/g, "<br/>")}</p>`;
+    })
+    .join("\n");
+
+  return restoreHtml(source);
 }

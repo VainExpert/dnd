@@ -1,0 +1,945 @@
+{
+  "id": "modulare-kultdiener-des-olymp",
+  "src": "chat://custom/collection",
+  "name": "Modulare Kultdiener des Olymps",
+  "quellen": {
+    "primarquellen": "OpenRPG führt deutsche SRD-Seiten für Kleriker/Paladin sowie den SRD-Index/Sitemap. :contentReference[oaicite:0]{index=0}",
+    "basis_akolyth": "Akolyth-Basiswerte und Standardzauber. :contentReference[oaicite:1]{index=1}",
+    "basis_paladin_kaempfergeruest": "Veteran als martialisches Grundgerüst für die modulare Paladin-Variante. :contentReference[oaicite:2]{index=2}",
+    "basis_hochkleriker": "Kuo-toa-Archpriest als Vorlage für einen hochstufigeren Kleriker-NPC mit vorbereiteten Zaubern. :contentReference[oaicite:3]{index=3}"
+  },
+  "anwendung": {
+    "reihenfolge": [
+      "1. Kopiere eine Basisschablone.",
+      "2. Ersetze Name und Titel durch den passenden Eintrag aus titelvarianten.",
+      "3. Ergänze Sprachen, Merkmale, Zauber und Signaturaktionen aus dem passenden gottmodul.",
+      "4. Wenn ein Modul 'ersetzt_standardzauber' enthält, nutze diese Zauberliste statt der Basisschablone.",
+      "5. Wenn ein Modul 'zusaetzliche_merkmale' oder 'signaturaktion' enthält, füge diese Felder der Schablone hinzu."
+    ]
+  },
+  "basisschablonen": {
+    "hochkleriker": {
+      "id": "template-hochkleriker-olymp",
+      "src": "chat://custom",
+      "name": "Hochkleriker des Olymps",
+      "size": "Mittelgroß",
+      "type": "Humanoid (beliebige Abstammung)",
+      "alignment": "meist neutral",
+      "armor-class": { "value": "13", "info": "" },
+      "hit-points": { "value": "39", "formula": "6W8+12" },
+      "speeds": { "walk": "9 m" },
+      "attributes": [
+        { "class": "str", "value": "10", "modifier": "+0" },
+        { "class": "dex", "value": "12", "modifier": "+1" },
+        { "class": "con", "value": "14", "modifier": "+2" },
+        { "class": "int", "value": "14", "modifier": "+2" },
+        { "class": "wis", "value": "16", "modifier": "+3" },
+        { "class": "cha", "value": "14", "modifier": "+2" }
+      ],
+      "saving-throws": ["Wei +5", "Cha +4"],
+      "skills": ["Geschichte +4", "Heilkunde +5", "Motiv erkennen +5", "Religion +5"],
+      "senses": ["Passive Wahrnehmung 13"],
+      "languages": ["Gemeinsprache", "Celestisch"],
+      "challenge": "2",
+      "xp": "450",
+      "traits": [
+        {
+          "name": "Zauberwirken",
+          "value": "Der Hochkleriker ist ein Zauberwirker. Sein Attribut zum Zauberwirken ist Weisheit (Zauberrettungswurf-SG 13, +5 auf Treffer mit Zauberangriffen)."
+        },
+        {
+          "name": "Oberster Kultdiener",
+          "value": "Verbündete Kreaturen der gleichen Gottheit innerhalb von 9 m um den Hochkleriker haben Vorteil bei Rettungswürfen gegen den Zustand verängstigt."
+        }
+      ],
+      "spellcasting": {
+        "ability": "wei",
+        "save_dc": 13,
+        "to_hit": 5,
+        "spells": {
+          "cantrips_at_will": ["Führung", "Heilige Flamme", "Thaumaturgie"],
+          "level_1": ["Magie entdecken", "Schild des Glaubens", "Zuflucht"],
+          "level_2": ["Geistige Waffe", "Person festhalten"],
+          "level_3": ["Geisterwächter", "Zungen"]
+        }
+      },
+      "actions": [
+        {
+          "name": "Kampfstab",
+          "value": "Nahkampfwaffenangriff: +2 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 3 (1W6) Wuchtschaden."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    "kleriker": {
+      "id": "template-kleriker-olymp",
+      "src": "chat://custom",
+      "name": "Kleriker des Olymps",
+      "size": "Mittelgroß",
+      "type": "Humanoid (beliebige Abstammung)",
+      "alignment": "meist neutral",
+      "armor-class": { "value": "13", "info": "Kettenhemd" },
+      "hit-points": { "value": "27", "formula": "5W8+5" },
+      "speeds": { "walk": "9 m" },
+      "attributes": [
+        { "class": "str", "value": "10", "modifier": "+0" },
+        { "class": "dex", "value": "12", "modifier": "+1" },
+        { "class": "con", "value": "12", "modifier": "+1" },
+        { "class": "int", "value": "12", "modifier": "+1" },
+        { "class": "wis", "value": "16", "modifier": "+3" },
+        { "class": "cha", "value": "12", "modifier": "+1" }
+      ],
+      "saving-throws": [],
+      "skills": ["Heilkunde +5", "Religion +5", "Wahrnehmung +3"],
+      "senses": ["Passive Wahrnehmung 13"],
+      "languages": ["Gemeinsprache", "Celestisch"],
+      "challenge": "1",
+      "xp": "200",
+      "traits": [
+        {
+          "name": "Zauberwirken",
+          "value": "Der Kleriker ist ein Zauberwirker. Sein Attribut zum Zauberwirken ist Weisheit (Zauberrettungswurf-SG 13, +5 auf Treffer mit Zauberangriffen)."
+        }
+      ],
+      "spellcasting": {
+        "ability": "wei",
+        "save_dc": 13,
+        "to_hit": 5,
+        "spells": {
+          "cantrips_at_will": ["Führung", "Heilige Flamme", "Thaumaturgie"],
+          "level_1": ["Heilendes Wort", "Segen", "Schild des Glaubens"],
+          "level_2": ["Geistige Waffe", "Schwache Genesung"]
+        }
+      },
+      "actions": [
+        {
+          "name": "Streitkolben",
+          "value": "Nahkampfwaffenangriff: +2 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 3 (1W6) Wuchtschaden."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    "akolyth": {
+      "id": "template-akolyth-olymp",
+      "src": "chat://custom",
+      "name": "Akolyth des Olymps",
+      "size": "Mittelgroß",
+      "type": "Humanoid (beliebige Abstammung)",
+      "alignment": "meist neutral",
+      "armor-class": { "value": "10", "info": "" },
+      "hit-points": { "value": "9", "formula": "2W8" },
+      "speeds": { "walk": "9 m" },
+      "attributes": [
+        { "class": "str", "value": "10", "modifier": "+0" },
+        { "class": "dex", "value": "10", "modifier": "+0" },
+        { "class": "con", "value": "10", "modifier": "+0" },
+        { "class": "int", "value": "10", "modifier": "+0" },
+        { "class": "wis", "value": "14", "modifier": "+2" },
+        { "class": "cha", "value": "11", "modifier": "+0" }
+      ],
+      "saving-throws": [],
+      "skills": ["Heilkunde +4", "Religion +2"],
+      "senses": ["Passive Wahrnehmung 12"],
+      "languages": ["Gemeinsprache"],
+      "challenge": "1/4",
+      "xp": "50",
+      "traits": [
+        {
+          "name": "Zauberwirken",
+          "value": "Der Akolyth ist ein Zauberwirker der 1. Stufe. Sein Attribut zum Zauberwirken ist Weisheit (Zauberrettungswurf-SG 12, +4 auf Treffer mit Zauberangriffen)."
+        }
+      ],
+      "spellcasting": {
+        "ability": "wei",
+        "save_dc": 12,
+        "to_hit": 4,
+        "spells": {
+          "cantrips_at_will": ["Licht", "Heilige Flamme", "Thaumaturgie"],
+          "level_1": ["Segen", "Wunden heilen", "Zuflucht"]
+        }
+      },
+      "actions": [
+        {
+          "name": "Keule",
+          "value": "Nahkampfwaffenangriff: +2 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 2 (1W4) Wuchtschaden."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [],
+      "legendary-actions": []
+    },
+    "paladin": {
+      "id": "template-paladin-olymp",
+      "src": "chat://custom",
+      "name": "Paladin des Olymps",
+      "size": "Mittelgroß",
+      "type": "Humanoid (beliebige Abstammung)",
+      "alignment": "meist rechtschaffen",
+      "armor-class": { "value": "18", "info": "Kettenpanzer, Schild" },
+      "hit-points": { "value": "32", "formula": "5W8+10" },
+      "speeds": { "walk": "9 m" },
+      "attributes": [
+        { "class": "str", "value": "16", "modifier": "+3" },
+        { "class": "dex", "value": "12", "modifier": "+1" },
+        { "class": "con", "value": "14", "modifier": "+2" },
+        { "class": "int", "value": "10", "modifier": "+0" },
+        { "class": "wis", "value": "12", "modifier": "+1" },
+        { "class": "cha", "value": "14", "modifier": "+2" }
+      ],
+      "saving-throws": ["Kon +4", "Wei +3"],
+      "skills": ["Athletik +5", "Motiv erkennen +3", "Überreden +4", "Religion +2"],
+      "senses": ["Passive Wahrnehmung 11"],
+      "languages": ["Gemeinsprache", "Celestisch"],
+      "challenge": "1",
+      "xp": "200",
+      "traits": [
+        {
+          "name": "Mutig",
+          "value": "Der Paladin hat Vorteil bei Rettungswürfen gegen den Zustand verängstigt."
+        },
+        {
+          "name": "Handauflegen",
+          "value": "Der Paladin verfügt über einen Heilungsvorrat von 15 Trefferpunkten, der nach einer langen Rast erneuert wird."
+        },
+        {
+          "name": "Göttlicher Smite",
+          "value": "Wenn der Paladin eine Kreatur mit einem Nahkampfwaffenangriff trifft, kann er zusätzliche 2W8 gleißenden Schaden verursachen."
+        }
+      ],
+      "spellcasting": {
+        "ability": "cha",
+        "save_dc": 12,
+        "to_hit": 4,
+        "spells": {
+          "level_1": ["Befehl", "Schild des Glaubens"]
+        }
+      },
+      "actions": [
+        {
+          "name": "Langschwert",
+          "value": "Nahkampfwaffenangriff: +5 auf Treffer, Reichweite 1,5 m, ein Ziel. Treffer: 7 (1W8+3) Hiebschaden oder 8 (1W10+3) Hiebschaden, wenn es zweihändig geführt wird."
+        },
+        {
+          "name": "Wurfspeer",
+          "value": "Nah- oder Fernkampfwaffenangriff: +5 auf Treffer, Reichweite 1,5 m oder Distanz 9/36 m, ein Ziel. Treffer: 6 (1W6+3) Stichschaden."
+        }
+      ],
+      "bonus_actions": [],
+      "reactions": [
+        {
+          "name": "Parade",
+          "value": "Der Paladin erhöht seine RK um 2 gegen einen Nahkampfangriff, der ihn treffen würde, sofern er den Angreifer sehen kann und eine Nahkampfwaffe führt."
+        }
+      ],
+      "legendary-actions": []
+    }
+  },
+  "gottmodule": {
+    "zeus": {
+      "titelvarianten": {
+        "hochkleriker": "Hochkleriker des Zeus",
+        "kleriker": "Kleriker des Zeus",
+        "akolyth": "Akolyth des Zeus",
+        "paladin": "Paladin des Zeus"
+      },
+      "zusatzsprachen": ["Primordial (Auran)"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Stimme des Himmels",
+          "value": "Der Kultdiener hat Vorteil bei Charismawürfen (Einschüchtern), solange Donner hörbar ist oder er sich im Freien unter freiem Himmel befindet."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Heilige Flamme", "Licht", "Thaumaturgie"],
+          "level_1": ["Befehl", "Donnerwoge", "Schild des Glaubens"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Führung", "Heilige Flamme", "Thaumaturgie"],
+          "level_1": ["Befehl", "Donnerwoge", "Schild des Glaubens"],
+          "level_2": ["Person festhalten", "Zersplittern"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Führung", "Heilige Flamme", "Thaumaturgie"],
+          "level_1": ["Befehl", "Donnerwoge", "Schild des Glaubens"],
+          "level_2": ["Person festhalten", "Zersplittern"],
+          "level_3": ["Blitz beschwören", "Magie bannen"]
+        },
+        "paladin": {
+          "level_1": ["Befehl", "Heldenmut"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Donnerschlag (1/Tag)",
+        "value": "Eine Kreatur innerhalb von 18 m, die der Kultdiener sehen kann, muss einen SG-13-Geschicklichkeitsrettungswurf bestehen oder 7 (2W6) Blitzschaden erleiden."
+      }
+    },
+    "hades": {
+      "titelvarianten": {
+        "hochkleriker": "Hochkleriker des Hades",
+        "kleriker": "Kleriker des Hades",
+        "akolyth": "Akolyth des Hades",
+        "paladin": "Paladin des Hades"
+      },
+      "zusatzsprachen": ["Untergemeinsprache"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Blick der Unterwelt",
+          "value": "Der Kultdiener hat Vorteil bei Weisheitswürfen (Motiv erkennen) gegen verängstigte oder eingeschüchterte Kreaturen."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Kältegriff", "Thaumaturgie", "Verschonung der Sterbenden"],
+          "level_1": ["Befehl", "Schutz vor Gut und Böse", "Zuflucht"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Kältegriff", "Thaumaturgie", "Verschonung der Sterbenden"],
+          "level_1": ["Befehl", "Schutz vor Gut und Böse", "Zuflucht"],
+          "level_2": ["Blindheit/Taubheit", "Person festhalten"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Kältegriff", "Thaumaturgie", "Verschonung der Sterbenden"],
+          "level_1": ["Befehl", "Schutz vor Gut und Böse", "Zuflucht"],
+          "level_2": ["Blindheit/Taubheit", "Person festhalten"],
+          "level_3": ["Fluch", "Mit Toten sprechen"]
+        },
+        "paladin": {
+          "level_1": ["Befehl", "Schutz vor Gut und Böse"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Schattenruf (1/Tag)",
+        "value": "Eine Kreatur innerhalb von 9 m muss einen SG-13-Weisheitsrettungswurf bestehen oder bis zum Ende ihres nächsten Zuges verängstigt sein."
+      }
+    },
+    "poseidon": {
+      "titelvarianten": {
+        "hochkleriker": "Hochkleriker des Poseidon",
+        "kleriker": "Kleriker des Poseidon",
+        "akolyth": "Akolyth des Poseidon",
+        "paladin": "Paladin des Poseidon"
+      },
+      "zusatzsprachen": ["Primordial (Aquan)"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Meereskind",
+          "value": "Der Kultdiener hat Vorteil bei Stärkewürfen (Athletik), um sich im Wasser zu bewegen oder gegen Strömungen anzukämpfen."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Froststrahl", "Licht", "Thaumaturgie"],
+          "level_1": ["Nebelwolke", "Schild des Glaubens", "Wasser erschaffen oder zerstören"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Froststrahl", "Führung", "Thaumaturgie"],
+          "level_1": ["Nebelwolke", "Schild des Glaubens", "Wasser erschaffen oder zerstören"],
+          "level_2": ["Person festhalten", "Zersplittern"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Froststrahl", "Führung", "Thaumaturgie"],
+          "level_1": ["Nebelwolke", "Schild des Glaubens", "Wasser erschaffen oder zerstören"],
+          "level_2": ["Person festhalten", "Zersplittern"],
+          "level_3": ["Wasser atmen", "Wasser kontrollieren"]
+        },
+        "paladin": {
+          "level_1": ["Schild des Glaubens", "Wasser erschaffen oder zerstören"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Gezeitenstoß (1/Tag)",
+        "value": "Eine Kreatur innerhalb von 4,5 m muss einen SG-13-Stärkerettungswurf bestehen oder 3 m weit weggeschoben werden und zu Boden gehen."
+      }
+    },
+    "hera": {
+      "titelvarianten": {
+        "hochkleriker": "Hochklerikerin des Hera",
+        "kleriker": "Klerikerin des Hera",
+        "akolyth": "Akolythin des Hera",
+        "paladin": "Paladin des Hera"
+      },
+      "zusatzsprachen": ["Celestisch"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Königliche Würde",
+          "value": "Der Kultdiener hat Vorteil bei Charismawürfen (Überreden) in formellen Audienzen, Eiden und Eheschwüren."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Führung", "Licht", "Thaumaturgie"],
+          "level_1": ["Segen", "Schild des Glaubens", "Zuflucht"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Führung", "Licht", "Thaumaturgie"],
+          "level_1": ["Segen", "Schild des Glaubens", "Zuflucht"],
+          "level_2": ["Gefühle besänftigen", "Zone der Wahrheit"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Führung", "Licht", "Thaumaturgie"],
+          "level_1": ["Segen", "Schild des Glaubens", "Zuflucht"],
+          "level_2": ["Gefühle besänftigen", "Zone der Wahrheit"],
+          "level_3": ["Leuchtfeuer der Hoffnung", "Magie bannen"]
+        },
+        "paladin": {
+          "level_1": ["Schild des Glaubens", "Zuflucht"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Gebieterischer Tadel (1/Tag)",
+        "value": "Eine feindliche Kreatur innerhalb von 9 m muss einen SG-13-Weisheitsrettungswurf bestehen oder bis zum Ende ihres nächsten Zuges keinen Gelegenheitsangriff ausführen können."
+      }
+    },
+    "demeter": {
+      "titelvarianten": {
+        "hochkleriker": "Hochklerikerin der Demeter",
+        "kleriker": "Klerikerin der Demeter",
+        "akolyth": "Akolythin der Demeter",
+        "paladin": "Paladin der Demeter"
+      },
+      "zusatzsprachen": ["Sylvan"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Segen der Ernte",
+          "value": "Während einer kurzen Rast kann der Kultdiener einfache Nahrung für bis zu 6 Kreaturen segnen; jede Kreatur erhält 1 temporären Trefferpunkt."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Führung", "Licht", "Thaumaturgie"],
+          "level_1": ["Gute Beere", "Wasser erschaffen oder zerstören", "Wunden heilen"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Führung", "Licht", "Thaumaturgie"],
+          "level_1": ["Gute Beere", "Wasser erschaffen oder zerstören", "Wunden heilen"],
+          "level_2": ["Attribut verbessern", "Schwache Genesung"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Führung", "Licht", "Thaumaturgie"],
+          "level_1": ["Gute Beere", "Wasser erschaffen oder zerstören", "Wunden heilen"],
+          "level_2": ["Attribut verbessern", "Schwache Genesung"],
+          "level_3": ["Nahrung und Wasser erschaffen", "Pflanzenwachstum"]
+        },
+        "paladin": {
+          "level_1": ["Heldenmut", "Wunden heilen"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Rankengriff (1/Tag)",
+        "value": "Eine Kreatur auf dem Boden innerhalb von 9 m muss einen SG-13-Stärkerettungswurf bestehen oder bis zum Ende ihres nächsten Zuges festgesetzt sein."
+      }
+    },
+    "aphrodite": {
+      "titelvarianten": {
+        "hochkleriker": "Hochklerikerin der Aphrodite",
+        "kleriker": "Klerikerin der Aphrodite",
+        "akolyth": "Akolythin der Aphrodite",
+        "paladin": "Paladin der Aphrodite"
+      },
+      "zusatzsprachen": ["Sylvan"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Überirdischer Charme",
+          "value": "Der Kultdiener hat Vorteil bei Charismawürfen (Überreden) gegen Kreaturen, die ihn sehen und hören können."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Freunde", "Licht", "Thaumaturgie"],
+          "level_1": ["Heilendes Wort", "Person bezaubern", "Zuflucht"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Freunde", "Licht", "Thaumaturgie"],
+          "level_1": ["Heilendes Wort", "Person bezaubern", "Zuflucht"],
+          "level_2": ["Gefühle besänftigen", "Vorschlag"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Freunde", "Licht", "Thaumaturgie"],
+          "level_1": ["Heilendes Wort", "Person bezaubern", "Zuflucht"],
+          "level_2": ["Gefühle besänftigen", "Vorschlag"],
+          "level_3": ["Senden", "Zungen"]
+        },
+        "paladin": {
+          "level_1": ["Heldenmut", "Schutz vor Gut und Böse"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Betörender Blick (1/Tag)",
+        "value": "Eine Kreatur innerhalb von 9 m muss einen SG-13-Weisheitsrettungswurf bestehen oder bis zum Ende des nächsten Zuges des Kultdieners bezaubert sein."
+      }
+    },
+    "athene": {
+      "titelvarianten": {
+        "hochkleriker": "Hochklerikerin der Athene",
+        "kleriker": "Klerikerin der Athene",
+        "akolyth": "Akolythin der Athene",
+        "paladin": "Paladin der Athene"
+      },
+      "zusatzsprachen": ["Celestisch"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Taktische Einsicht",
+          "value": "Der Kultdiener kann als Bonusaktion eine verbündete Kreatur innerhalb von 9 m wählen; der nächste Angriffswurf dieser Kreatur vor Beginn des nächsten Zuges des Kultdieners erhält +1W4."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Führung", "Licht", "Thaumaturgie"],
+          "level_1": ["Befehl", "Magie entdecken", "Schild des Glaubens"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Führung", "Licht", "Thaumaturgie"],
+          "level_1": ["Befehl", "Magie entdecken", "Schild des Glaubens"],
+          "level_2": ["Gegenstand aufspüren", "Zone der Wahrheit"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Führung", "Licht", "Thaumaturgie"],
+          "level_1": ["Befehl", "Magie entdecken", "Schild des Glaubens"],
+          "level_2": ["Gegenstand aufspüren", "Zone der Wahrheit"],
+          "level_3": ["Magie bannen", "Zungen"]
+        },
+        "paladin": {
+          "level_1": ["Befehl", "Schild des Glaubens"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Weisheitsgebot (1/Tag)",
+        "value": "Eine verbündete Kreatur innerhalb von 9 m darf sofort ihre Reaktion verwenden, um sich bis zur Hälfte ihrer Bewegungsrate zu bewegen."
+      }
+    },
+    "hephaistos": {
+      "titelvarianten": {
+        "hochkleriker": "Hochkleriker des Hephaistos",
+        "kleriker": "Kleriker des Hephaistos",
+        "akolyth": "Akolyth des Hephaistos",
+        "paladin": "Paladin des Hephaistos"
+      },
+      "zusatzsprachen": ["Primordial (Ignan)"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Schmiedesegen",
+          "value": "Der Kultdiener hat Vorteil bei Intelligenzwürfen mit Schmiedewerkzeugen und kann beschädigte Metallgegenstände in 1 Minute notdürftig reparieren."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Ausbessern", "Feuerpfeil", "Licht"],
+          "level_1": ["Brennende Hände", "Schild des Glaubens", "Zuflucht"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Ausbessern", "Feuerpfeil", "Licht"],
+          "level_1": ["Brennende Hände", "Schild des Glaubens", "Zuflucht"],
+          "level_2": ["Magische Waffe", "Metall erhitzen"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Ausbessern", "Feuerpfeil", "Licht"],
+          "level_1": ["Brennende Hände", "Schild des Glaubens", "Zuflucht"],
+          "level_2": ["Magische Waffe", "Metall erhitzen"],
+          "level_3": ["Magie bannen", "Schutz vor Energie"]
+        },
+        "paladin": {
+          "level_1": ["Heldenmut", "Schild des Glaubens"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Glühender Schlag (1/Tag)",
+        "value": "Ein Waffenangriff des Kultdieners verursacht zusätzlich 7 (2W6) Feuerschaden."
+      }
+    },
+    "ares": {
+      "titelvarianten": {
+        "hochkleriker": "Hochkleriker des Ares",
+        "kleriker": "Kleriker des Ares",
+        "akolyth": "Akolyth des Ares",
+        "paladin": "Paladin des Ares"
+      },
+      "zusatzsprachen": ["Celestisch"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Kriegsruf",
+          "value": "Verbündete innerhalb von 3 m um den Kultdiener haben Vorteil auf ihren ersten Rettungswurf gegen Verängstigt in jedem Kampf."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Heilige Flamme", "Thaumaturgie", "Widerstand"],
+          "level_1": ["Befehl", "Göttliche Gunst", "Schild des Glaubens"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Heilige Flamme", "Thaumaturgie", "Widerstand"],
+          "level_1": ["Befehl", "Göttliche Gunst", "Schild des Glaubens"],
+          "level_2": ["Geistige Waffe", "Magische Waffe"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Heilige Flamme", "Thaumaturgie", "Widerstand"],
+          "level_1": ["Befehl", "Göttliche Gunst", "Schild des Glaubens"],
+          "level_2": ["Geistige Waffe", "Magische Waffe"],
+          "level_3": ["Magie bannen", "Schutz vor Energie"]
+        },
+        "paladin": {
+          "level_1": ["Befehl", "Göttliche Gunst"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Kriegerischer Antrieb (1/Tag)",
+        "value": "Der Kultdiener darf sofort einen zusätzlichen Waffenangriff ausführen."
+      }
+    },
+    "apollo": {
+      "titelvarianten": {
+        "hochkleriker": "Hochkleriker des Apollo",
+        "kleriker": "Kleriker des Apollo",
+        "akolyth": "Akolyth des Apollo",
+        "paladin": "Paladin des Apollo"
+      },
+      "zusatzsprachen": ["Celestisch"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Sonnenorakel",
+          "value": "Der Kultdiener hat Vorteil bei Intelligenzwürfen (Geschichte) und Weisheitswürfen (Motiv erkennen), die mit Weissagungen, Liedern oder Prophezeiungen zu tun haben."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Heilige Flamme", "Licht", "Thaumaturgie"],
+          "level_1": ["Heilendes Wort", "Magie entdecken", "Segen"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Führung", "Heilige Flamme", "Licht"],
+          "level_1": ["Heilendes Wort", "Magie entdecken", "Segen"],
+          "level_2": ["Gegenstand aufspüren", "Schwache Genesung"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Führung", "Heilige Flamme", "Licht"],
+          "level_1": ["Heilendes Wort", "Magie entdecken", "Segen"],
+          "level_2": ["Gegenstand aufspüren", "Schwache Genesung"],
+          "level_3": ["Leuchtfeuer der Hoffnung", "Tageslicht"]
+        },
+        "paladin": {
+          "level_1": ["Heldenmut", "Magie entdecken"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Sonnenstrahl des Sängers (1/Tag)",
+        "value": "Eine Kreatur innerhalb von 18 m muss einen SG-13-Geschicklichkeitsrettungswurf bestehen oder 7 (2W6) gleißenden Schaden erleiden."
+      }
+    },
+    "artemis": {
+      "titelvarianten": {
+        "hochkleriker": "Hochklerikerin der Artemis",
+        "kleriker": "Klerikerin der Artemis",
+        "akolyth": "Akolythin der Artemis",
+        "paladin": "Paladin der Artemis"
+      },
+      "zusatzsprachen": ["Sylvan"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Jägerblick",
+          "value": "Der Kultdiener hat Vorteil bei Weisheitswürfen (Wahrnehmung) und Überlebenswürfen, die Spuren, Jagd oder Wildnis betreffen."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Führung", "Licht", "Widerstand"],
+          "level_1": ["Mit Tieren sprechen", "Nebelwolke", "Tierfreundschaft"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Führung", "Licht", "Widerstand"],
+          "level_1": ["Mit Tieren sprechen", "Nebelwolke", "Tierfreundschaft"],
+          "level_2": ["Mondstrahl", "Schwache Genesung"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Führung", "Licht", "Widerstand"],
+          "level_1": ["Mit Tieren sprechen", "Nebelwolke", "Tierfreundschaft"],
+          "level_2": ["Mondstrahl", "Schwache Genesung"],
+          "level_3": ["Pflanzenwachstum", "Tageslicht"]
+        },
+        "paladin": {
+          "level_1": ["Heldenmut", "Tierfreundschaft"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Mondjägerin (1/Tag)",
+        "value": "Bis zum Ende des nächsten Zuges des Kultdieners verursacht sein nächster Waffenangriff zusätzlich 4 (1W8) gleißenden Schaden."
+      }
+    },
+    "dionysos": {
+      "titelvarianten": {
+        "hochkleriker": "Hochkleriker des Dionysos",
+        "kleriker": "Kleriker des Dionysos",
+        "akolyth": "Akolyth des Dionysos",
+        "paladin": "Paladin des Dionysos"
+      },
+      "zusatzsprachen": ["Sylvan"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Rauschprediger",
+          "value": "Der Kultdiener hat Vorteil bei Charismawürfen (Täuschung) und (Auftreten), wenn Musik, Wein oder Feierlichkeiten im Spiel sind."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Freunde", "Licht", "Thaumaturgie"],
+          "level_1": ["Person bezaubern", "Schlaf", "Zuflucht"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Freunde", "Licht", "Thaumaturgie"],
+          "level_1": ["Person bezaubern", "Schlaf", "Zuflucht"],
+          "level_2": ["Spiegelbild", "Vorschlag"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Freunde", "Licht", "Thaumaturgie"],
+          "level_1": ["Person bezaubern", "Schlaf", "Zuflucht"],
+          "level_2": ["Spiegelbild", "Vorschlag"],
+          "level_3": ["Senden", "Zungen"]
+        },
+        "paladin": {
+          "level_1": ["Heldenmut", "Person bezaubern"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Taumel des Festes (1/Tag)",
+        "value": "Eine Kreatur innerhalb von 9 m muss einen SG-13-Weisheitsrettungswurf bestehen oder bis zum Ende ihres nächsten Zuges Nachteil auf Angriffswürfe haben."
+      }
+    },
+    "thanatos": {
+      "titelvarianten": {
+        "hochkleriker": "Hochkleriker des Thanatos",
+        "kleriker": "Kleriker des Thanatos",
+        "akolyth": "Akolyth des Thanatos",
+        "paladin": "Paladin des Thanatos"
+      },
+      "zusatzsprachen": ["Untergemeinsprache"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Unbestechlicher Richter",
+          "value": "Der Kultdiener hat Vorteil bei Weisheitswürfen (Motiv erkennen) gegen Untote und Kreaturen, die mit Toten sprechen oder Nekromantie wirken."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Kältegriff", "Thaumaturgie", "Verschonung der Sterbenden"],
+          "level_1": ["Befehl", "Schutz vor Gut und Böse", "Zuflucht"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Kältegriff", "Thaumaturgie", "Verschonung der Sterbenden"],
+          "level_1": ["Befehl", "Schutz vor Gut und Böse", "Zuflucht"],
+          "level_2": ["Blindheit/Taubheit", "Schwache Genesung"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Kältegriff", "Thaumaturgie", "Verschonung der Sterbenden"],
+          "level_1": ["Befehl", "Schutz vor Gut und Böse", "Zuflucht"],
+          "level_2": ["Blindheit/Taubheit", "Schwache Genesung"],
+          "level_3": ["Fluch", "Mit Toten sprechen"]
+        },
+        "paladin": {
+          "level_1": ["Befehl", "Schutz vor Gut und Böse"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Hand des Endes (1/Tag)",
+        "value": "Eine Kreatur innerhalb von 4,5 m erleidet zusätzlich 7 (2W6) nekrotischen Schaden, wenn sie vor dem Ende des Zuges des Kultdieners von einem Angriff getroffen wird."
+      }
+    },
+    "hestia": {
+      "titelvarianten": {
+        "hochkleriker": "Hochklerikerin der Hestia",
+        "kleriker": "Klerikerin der Hestia",
+        "akolyth": "Akolythin der Hestia",
+        "paladin": "Paladin der Hestia"
+      },
+      "zusatzsprachen": ["Celestisch"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Herdfeuer",
+          "value": "Verbündete, die eine kurze Rast innerhalb von 3 m um den Kultdiener beenden, erhalten 1 zusätzlichen Trefferpunkt Heilung pro Trefferwürfel."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Licht", "Thaumaturgie", "Widerstand"],
+          "level_1": ["Heilendes Wort", "Schild des Glaubens", "Zuflucht"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Führung", "Licht", "Widerstand"],
+          "level_1": ["Heilendes Wort", "Schild des Glaubens", "Zuflucht"],
+          "level_2": ["Schwache Genesung", "Zone der Wahrheit"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Führung", "Licht", "Widerstand"],
+          "level_1": ["Heilendes Wort", "Schild des Glaubens", "Zuflucht"],
+          "level_2": ["Schwache Genesung", "Zone der Wahrheit"],
+          "level_3": ["Leuchtfeuer der Hoffnung", "Schutzkreis"]
+        },
+        "paladin": {
+          "level_1": ["Heldenmut", "Schild des Glaubens"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Schutzflamme (1/Tag)",
+        "value": "Bis zum Beginn des nächsten Zuges des Kultdieners erhält eine verbündete Kreatur innerhalb von 9 m +2 RK."
+      }
+    },
+    "herkules": {
+      "titelvarianten": {
+        "hochkleriker": "Hochkleriker des Herkules",
+        "kleriker": "Kleriker des Herkules",
+        "akolyth": "Akolyth des Herkules",
+        "paladin": "Paladin des Herkules"
+      },
+      "zusatzsprachen": ["Celestisch"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Heroische Kraft",
+          "value": "Der Kultdiener hat Vorteil bei Stärkewürfen (Athletik), um zu springen, zu klettern oder Kreaturen zu packen."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Führung", "Thaumaturgie", "Widerstand"],
+          "level_1": ["Göttliche Gunst", "Heldenmut", "Segen"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Führung", "Thaumaturgie", "Widerstand"],
+          "level_1": ["Göttliche Gunst", "Heldenmut", "Segen"],
+          "level_2": ["Attribut verbessern", "Magische Waffe"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Führung", "Thaumaturgie", "Widerstand"],
+          "level_1": ["Göttliche Gunst", "Heldenmut", "Segen"],
+          "level_2": ["Attribut verbessern", "Magische Waffe"],
+          "level_3": ["Magie bannen", "Schutz vor Energie"]
+        },
+        "paladin": {
+          "level_1": ["Göttliche Gunst", "Heldenmut"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Heroischer Satz (1/Tag)",
+        "value": "Der Kultdiener springt bis zu 6 m weit zu einem freien Feld, ohne Gelegenheitsangriffe zu provozieren."
+      }
+    },
+    "tyche": {
+      "titelvarianten": {
+        "hochkleriker": "Hochklerikerin der Tyche",
+        "kleriker": "Klerikerin der Tyche",
+        "akolyth": "Akolythin der Tyche",
+        "paladin": "Paladin der Tyche"
+      },
+      "zusatzsprachen": ["Celestisch"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Glückszwinker",
+          "value": "Einmal pro langer Rast kann der Kultdiener einen misslungenen Angriffswurf, Fähigkeitswurf oder Rettungswurf wiederholen."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Führung", "Licht", "Thaumaturgie"],
+          "level_1": ["Magie entdecken", "Segen", "Zuflucht"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Führung", "Licht", "Thaumaturgie"],
+          "level_1": ["Magie entdecken", "Segen", "Zuflucht"],
+          "level_2": ["Gegenstand aufspüren", "Zone der Wahrheit"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Führung", "Licht", "Thaumaturgie"],
+          "level_1": ["Magie entdecken", "Segen", "Zuflucht"],
+          "level_2": ["Gegenstand aufspüren", "Zone der Wahrheit"],
+          "level_3": ["Magie bannen", "Zungen"]
+        },
+        "paladin": {
+          "level_1": ["Heldenmut", "Segen"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Wendung des Schicksals (1/Tag)",
+        "value": "Wenn eine Kreatur innerhalb von 9 m einen Angriffswurf verfehlt, kann der Kultdiener diesen Wurf um +2 modifizieren; dadurch kann der Angriff treffen."
+      }
+    },
+    "hecate": {
+      "titelvarianten": {
+        "hochkleriker": "Hochklerikerin der Hecate",
+        "kleriker": "Klerikerin der Hecate",
+        "akolyth": "Akolythin der Hecate",
+        "paladin": "Paladin der Hecate"
+      },
+      "zusatzsprachen": ["Sylvan", "Untergemeinsprache"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Herrin der Schwellen",
+          "value": "Der Kultdiener hat Vorteil auf Intelligenzwürfe (Arkane Kunde) und Weisheitswürfe (Wahrnehmung), die mit Portalen, Kreuzwegen oder Hexerei zu tun haben."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Ausbessern", "Licht", "Thaumaturgie"],
+          "level_1": ["Magie entdecken", "Nebelwolke", "Schutz vor Gut und Böse"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Ausbessern", "Licht", "Thaumaturgie"],
+          "level_1": ["Magie entdecken", "Nebelwolke", "Schutz vor Gut und Böse"],
+          "level_2": ["Person festhalten", "Spiegelbild"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Ausbessern", "Licht", "Thaumaturgie"],
+          "level_1": ["Magie entdecken", "Nebelwolke", "Schutz vor Gut und Böse"],
+          "level_2": ["Person festhalten", "Spiegelbild"],
+          "level_3": ["Magie bannen", "Schutzkreis"]
+        },
+        "paladin": {
+          "level_1": ["Magie entdecken", "Schutz vor Gut und Böse"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Hexenschatten (1/Tag)",
+        "value": "Der Kultdiener wird bis zum Beginn seines nächsten Zuges leicht verschleiert; Angriffswürfe gegen ihn haben Nachteil."
+      }
+    },
+    "pan": {
+      "titelvarianten": {
+        "hochkleriker": "Hochkleriker des Pan",
+        "kleriker": "Kleriker des Pan",
+        "akolyth": "Akolyth des Pan",
+        "paladin": "Paladin des Pan"
+      },
+      "zusatzsprachen": ["Sylvan"],
+      "zusaetzliche_merkmale": [
+        {
+          "name": "Wildes Lied",
+          "value": "Der Kultdiener hat Vorteil bei Charismawürfen (Auftreten) mit Flöten, Hörnern oder Naturgesang."
+        }
+      ],
+      "ersetzt_standardzauber": {
+        "akolyth": {
+          "cantrips_at_will": ["Freunde", "Führung", "Thaumaturgie"],
+          "level_1": ["Mit Tieren sprechen", "Person bezaubern", "Tierfreundschaft"]
+        },
+        "kleriker": {
+          "cantrips_at_will": ["Freunde", "Führung", "Thaumaturgie"],
+          "level_1": ["Mit Tieren sprechen", "Person bezaubern", "Tierfreundschaft"],
+          "level_2": ["Gefühle besänftigen", "Mondstrahl"]
+        },
+        "hochkleriker": {
+          "cantrips_at_will": ["Freunde", "Führung", "Thaumaturgie"],
+          "level_1": ["Mit Tieren sprechen", "Person bezaubern", "Tierfreundschaft"],
+          "level_2": ["Gefühle besänftigen", "Mondstrahl"],
+          "level_3": ["Pflanzenwachstum", "Zungen"]
+        },
+        "paladin": {
+          "level_1": ["Heldenmut", "Tierfreundschaft"]
+        }
+      },
+      "signaturaktion": {
+        "name": "Panischer Aufschrei (1/Tag)",
+        "value": "Eine Kreatur innerhalb von 9 m muss einen SG-13-Weisheitsrettungswurf bestehen oder bis zum Ende ihres nächsten Zuges verängstigt sein."
+      }
+    }
+  }
+}

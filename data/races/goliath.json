@@ -1,0 +1,98 @@
+{
+  "id": "goliath",
+  "type": "race",
+  "name": "Goliath",
+  "original_name": "Goliath",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/species:goliath",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Goliaths überragen die meisten Menschen und sind entfernte Nachkommen von Riesen. Jeder Goliath trägt die Gunst der ersten Riesen – Gunst, die sich in verschiedenen übernatürlichen Segen manifestiert, einschließlich der Fähigkeit, schnell zu wachsen und vorübergehend die Größe der gigantischen Verwandten der Goliaths zu erreichen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Goliaths überragen die meisten Menschen und sind entfernte Nachkommen von Riesen. Jeder Goliath trägt die Gunst der ersten Riesen – Gunst, die sich in verschiedenen übernatürlichen Segen manifestiert, einschließlich der Fähigkeit, schnell zu wachsen und vorübergehend die Größe der gigantischen Verwandten der Goliaths zu erreichen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Goliaths haben körperliche Merkmale, die an die Riesen ihrer Familienlinie erinnern. Einige Goliaths sehen beispielsweise aus wie Steinriesen, während andere wie Feuerriesen aussehen. Ganz gleich, welche Riesen sie zu ihren Verwandten zählen, Goliaths haben ihren eigenen Weg im Multiversum gebahnt – unbelastet von den mörderischen Konflikten, die die Riesenwelt seit Jahrhunderten verwüsten – und streben nach Höhen, die über denen ihrer Vorfahren liegen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Goliath-Eigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Humanoid. Größe: Mittelgroß (etwa 7 bis 8 Fuß groß). Geschwindigkeit: 35 Fuß"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Goliath haben Sie diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Riesige Abstammung. Sie stammen von Giants ab. Wählen Sie einen der folgenden Vorteile: eine übernatürliche Gabe Ihrer Abstammung; Sie können den gewählten Vorteil mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Wolkenausflug (Wolkenriese). Als Bonusaktion teleportierst du dich auf magische Weise bis zu 30 Fuß weit an einen unbesetzten Ort, den du sehen kannst.",
+        "Feuerbrand (Feuerriese). Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du diesem Ziel auch 1W10 Feuerschaden zufügen.",
+        "Frost's Chill (Frostriese). Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du diesem Ziel außerdem 1W6 Kälteschaden zufügen und seine Geschwindigkeit bis zum Beginn deines nächsten Zuges um 10 Fuß verringern.",
+        "Hill's Tumble (Hügelriese). Wenn du eine große oder kleinere Kreatur mit einem Angriffswurf triffst und ihr Schaden zufügst, kannst du diesem Ziel den Zustand „Anfällig“ geben.",
+        "Steins Ausdauer (Steinriese). Wenn du Schaden erleidest, kannst du eine Reaktion ausführen, um 1W12 zu würfeln. Addiere deinen Konstitutionsmodifikator zur gewürfelten Zahl und reduziere den Schaden um diese Summe.",
+        "Sturmdonner (Sturmriese). Wenn du Schaden von einer Kreatur in einem Umkreis von 60 Fuß um dich erleidest, kannst du eine Reaktion ausführen, um dieser Kreatur 1W8 Donnerschaden zuzufügen."
+      ],
+      "text": "Wolkenausflug (Wolkenriese). Als Bonusaktion teleportierst du dich auf magische Weise bis zu 30 Fuß weit an einen unbesetzten Ort, den du sehen kannst. Feuerbrand (Feuerriese). Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du diesem Ziel auch 1W10 Feuerschaden zufügen. Frost's Chill (Frostriese). Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du diesem Ziel außerdem 1W6 Kälteschaden zufügen und seine Geschwindigkeit bis zum Beginn deines nächsten Zuges um 10 Fuß verringern. Hill's Tumble (Hügelriese). Wenn du eine große oder kleinere Kreatur mit einem Angriffswurf triffst und ihr Schaden zufügst, kannst du diesem Ziel den Zustand „Anfällig“ geben. Steins Ausdauer (Steinriese). Wenn du Schaden erleidest, kannst du eine Reaktion ausführen, um 1W12 zu würfeln. Addiere deinen Konstitutionsmodifikator zur gewürfelten Zahl und reduziere den Schaden um diese Summe. Sturmdonner (Sturmriese). Wenn du Schaden von einer Kreatur in einem Umkreis von 60 Fuß um dich erleidest, kannst du eine Reaktion ausführen, um dieser Kreatur 1W8 Donnerschaden zuzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Große Form. Ab Charakterstufe 5 kannst du als Bonusaktion deine Größe auf „Groß“ ändern, wenn du dich in einem ausreichend großen Raum befindest. Diese Transformation dauert 10 Minuten oder bis Sie sie beenden (keine Aktion erforderlich). Für diese Dauer hast du einen Vorteil bei Stärkewürfen und deine Geschwindigkeit erhöht sich um 10 Fuß. Sobald Sie diese Eigenschaft verwendet haben, können Sie sie nicht erneut verwenden, bis Sie eine Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kraftvoller Aufbau. Du hast einen Vorteil bei jeder Fähigkeitsüberprüfung, die du durchführst, um den Zustand „Grappled“ zu beenden. Bei der Ermittlung Ihrer Tragfähigkeit rechnen Sie auch eine Nummer größer."
+    }
+  ],
+  "text": "Goliaths überragen die meisten Menschen und sind entfernte Nachkommen von Riesen. Jeder Goliath trägt die Gunst der ersten Riesen – Gunst, die sich in verschiedenen übernatürlichen Segen manifestiert, einschließlich der Fähigkeit, schnell zu wachsen und vorübergehend die Größe der gigantischen Verwandten der Goliaths zu erreichen.\n\nGoliaths haben körperliche Merkmale, die an die Riesen ihrer Familienlinie erinnern. Einige Goliaths sehen beispielsweise aus wie Steinriesen, während andere wie Feuerriesen aussehen. Ganz gleich, welche Riesen sie zu ihren Verwandten zählen, Goliaths haben ihren eigenen Weg im Multiversum gebahnt – unbelastet von den mörderischen Konflikten, die die Riesenwelt seit Jahrhunderten verwüsten – und streben nach Höhen, die über denen ihrer Vorfahren liegen.\n\nGoliath-Eigenschaften\n\nKreaturentyp: Humanoid. Größe: Mittelgroß (etwa 7 bis 8 Fuß groß). Geschwindigkeit: 35 Fuß\n\nAls Goliath haben Sie diese besonderen Eigenschaften.\n\nRiesige Abstammung. Sie stammen von Giants ab. Wählen Sie einen der folgenden Vorteile: eine übernatürliche Gabe Ihrer Abstammung; Sie können den gewählten Vorteil mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden:\n\nWolkenausflug (Wolkenriese). Als Bonusaktion teleportierst du dich auf magische Weise bis zu 30 Fuß weit an einen unbesetzten Ort, den du sehen kannst. Feuerbrand (Feuerriese). Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du diesem Ziel auch 1W10 Feuerschaden zufügen. Frost's Chill (Frostriese). Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du diesem Ziel außerdem 1W6 Kälteschaden zufügen und seine Geschwindigkeit bis zum Beginn deines nächsten Zuges um 10 Fuß verringern. Hill's Tumble (Hügelriese). Wenn du eine große oder kleinere Kreatur mit einem Angriffswurf triffst und ihr Schaden zufügst, kannst du diesem Ziel den Zustand „Anfällig“ geben. Steins Ausdauer (Steinriese). Wenn du Schaden erleidest, kannst du eine Reaktion ausführen, um 1W12 zu würfeln. Addiere deinen Konstitutionsmodifikator zur gewürfelten Zahl und reduziere den Schaden um diese Summe. Sturmdonner (Sturmriese). Wenn du Schaden von einer Kreatur in einem Umkreis von 60 Fuß um dich erleidest, kannst du eine Reaktion ausführen, um dieser Kreatur 1W8 Donnerschaden zuzufügen.\n\nGroße Form. Ab Charakterstufe 5 kannst du als Bonusaktion deine Größe auf „Groß“ ändern, wenn du dich in einem ausreichend großen Raum befindest. Diese Transformation dauert 10 Minuten oder bis Sie sie beenden (keine Aktion erforderlich). Für diese Dauer hast du einen Vorteil bei Stärkewürfen und deine Geschwindigkeit erhöht sich um 10 Fuß. Sobald Sie diese Eigenschaft verwendet haben, können Sie sie nicht erneut verwenden, bis Sie eine Lange Rast abgeschlossen haben.\n\nKraftvoller Aufbau. Du hast einen Vorteil bei jeder Fähigkeitsüberprüfung, die du durchführst, um den Zustand „Grappled“ zu beenden. Bei der Ermittlung Ihrer Tragfähigkeit rechnen Sie auch eine Nummer größer.",
+  "tags": [],
+  "size": [],
+  "creature_type": "Humanoid",
+  "speed": {
+    "walk": 11,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Riesige Abstammung",
+      "text": "Sie stammen von Giants ab. Wählen Sie einen der folgenden Vorteile: eine übernatürliche Gabe Ihrer Abstammung; Sie können den gewählten Vorteil mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden:"
+    },
+    {
+      "name": "Große Form",
+      "text": "Ab Charakterstufe 5 kannst du als Bonusaktion deine Größe auf „Groß“ ändern, wenn du dich in einem ausreichend großen Raum befindest. Diese Transformation dauert 10 Minuten oder bis Sie sie beenden (keine Aktion erforderlich). Für diese Dauer hast du einen Vorteil bei Stärkewürfen und deine Geschwindigkeit erhöht sich um 10 Fuß. Sobald Sie diese Eigenschaft verwendet haben, können Sie sie nicht erneut verwenden, bis Sie eine Lange Rast abgeschlossen haben."
+    },
+    {
+      "name": "Kraftvoller Aufbau",
+      "text": "Du hast einen Vorteil bei jeder Fähigkeitsüberprüfung, die du durchführst, um den Zustand „Grappled“ zu beenden. Bei der Ermittlung Ihrer Tragfähigkeit rechnen Sie auch eine Nummer größer."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "erbe-des-hauses-tharashk",
+  "type": "background",
+  "name": "Erbe des Hauses Tharashk",
+  "original_name": "House Tharashk Heir",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/background:house-tharashk-heir",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Konstitution, Intelligenz, Weisheit",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Konstitution, Intelligenz, Weisheit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Mal des Findens"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitskompetenzen: Wahrnehmung und Überleben"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkompetenz: Wählen Sie eine Art Gaming-Set"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Spielset (wie oben), Kletterausrüstung, feine Kleidung, Jagdfalle, Handschellen, 2 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Erben anderer Häuser führen ein Leben im Luxus, aber im Haus Tharashk hat man schon in jungen Jahren Selbstvertrauen gelernt. Was Ihrem jungen Haus an Ressourcen fehlt, macht es durch Geist und Entschlossenheit wett. Tharashk hat ein Schicksal zu erfüllen, und Sie haben einen Anteil daran. Ob im Kampf oder in der sozialen Interaktion, Sie haben gelernt, die Rolle des Jägers zu spielen: Studieren Sie Ihre Feinde, nutzen Sie ihre Schwächen aus und tun Sie alles, um den Sieg zu erringen."
+    }
+  ],
+  "text": "Fähigkeitswerte: Konstitution, Intelligenz, Weisheit\n\nTalent: Mal des Findens\n\nFähigkeitskompetenzen: Wahrnehmung und Überleben\n\nWerkzeugkompetenz: Wählen Sie eine Art Gaming-Set\n\nAusrüstung: Wähle A oder B: (A) Spielset (wie oben), Kletterausrüstung, feine Kleidung, Jagdfalle, Handschellen, 2 GP; oder (B) 50 GP\n\nErben anderer Häuser führen ein Leben im Luxus, aber im Haus Tharashk hat man schon in jungen Jahren Selbstvertrauen gelernt. Was Ihrem jungen Haus an Ressourcen fehlt, macht es durch Geist und Entschlossenheit wett. Tharashk hat ein Schicksal zu erfüllen, und Sie haben einen Anteil daran. Ob im Kampf oder in der sozialen Interaktion, Sie haben gelernt, die Rolle des Jägers zu spielen: Studieren Sie Ihre Feinde, nutzen Sie ihre Schwächen aus und tun Sie alles, um den Sieg zu erringen.",
+  "tags": [],
+  "ability_scores": [
+    "con",
+    "int",
+    "wis"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "con",
+      "int",
+      "wis"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [],
+  "tool_proficiencies": [
+    "Wählen Sie eine Art Gaming-Set\n"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "mal-des-findens-faehigkeitskompetenzen-wahrnehmung-und-ueberleben",
+  "granted_feat_name": "Mal des Findens\n\nFähigkeitskompetenzen: Wahrnehmung und Überleben\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Spielset (wie oben), Kletterausrüstung, feine Kleidung, Jagdfalle, Handschellen, 2 GP; oder (B) 50 GP\n\nErben anderer Häuser führen ein Leben im Luxus, aber im Haus Tharashk hat man schon in jungen Jahren Selbstvertrauen gelernt. Was Ihrem jungen Haus an Ressourcen fehlt, macht es durch Geist und Entschlossenheit wett. Tharashk hat ein Schicksal zu erfüllen, und Sie haben einen Anteil daran. Ob im Kampf oder in der sozialen Interaktion, Sie haben gelernt, die Rolle des Jägers zu spielen: Studieren Sie Ihre Feinde, nutzen Sie ihre Schwächen aus und tun Sie alles, um den Sieg zu erringen"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "segen-des-terrors",
+  "type": "feat",
+  "name": "Segen des Terrors",
+  "original_name": "Boon of Terror",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-terror",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Episches Segen-Talent (Voraussetzung: Level 19+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Episches Segen-Talent (Voraussetzung: Level 19+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe deinen Charisma-Wert um 1 auf maximal 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Furchtlos. Du hast Immunität gegen den Zustand „Verängstigt“."
+    },
+    {
+      "type": "paragraph",
+      "text": "Flieht, Narren! Wenn eine Kreatur mit dem Zustand „Verängstigt“ ihren Zug in einem Umkreis von 60 Fuß um dich beginnt, kannst du eine Reaktion ausführen, um ihren Schrecken zu verstärken, vorausgesetzt, du kannst die Kreatur sehen und sie befindet sich nicht hinter Total Cover. Wenn du dies tust, muss der Kreatur ein Weisheits-Rettungswurf (SG 8 plus dein Charisma-Modifikator und dein Uebungsbonus) gelingen oder sie muss ihren Zug damit verbringen, sich mit dem schnellsten verfügbaren Mittel von dir zu entfernen. Sobald Sie diesen Vorteil genutzt haben, können Sie ihn erst wieder nutzen, wenn Sie eine Kurze oder Lange Rast beendet haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Einschüchternd. Sie erwerben Kenntnisse in der Fertigkeit „Einschüchterung“, sofern Sie diese noch nicht besitzen. Sie erhalten außerdem Fachwissen im Bereich Einschüchterung."
+    }
+  ],
+  "text": "Episches Segen-Talent (Voraussetzung: Level 19+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe deinen Charisma-Wert um 1 auf maximal 30.\n\nFurchtlos. Du hast Immunität gegen den Zustand „Verängstigt“.\n\nFlieht, Narren! Wenn eine Kreatur mit dem Zustand „Verängstigt“ ihren Zug in einem Umkreis von 60 Fuß um dich beginnt, kannst du eine Reaktion ausführen, um ihren Schrecken zu verstärken, vorausgesetzt, du kannst die Kreatur sehen und sie befindet sich nicht hinter Total Cover. Wenn du dies tust, muss der Kreatur ein Weisheits-Rettungswurf (SG 8 plus dein Charisma-Modifikator und dein Uebungsbonus) gelingen oder sie muss ihren Zug damit verbringen, sich mit dem schnellsten verfügbaren Mittel von dir zu entfernen. Sobald Sie diesen Vorteil genutzt haben, können Sie ihn erst wieder nutzen, wenn Sie eine Kurze oder Lange Rast beendet haben.\n\nEinschüchternd. Sie erwerben Kenntnisse in der Fertigkeit „Einschüchterung“, sofern Sie diese noch nicht besitzen. Sie erhalten außerdem Fachwissen im Bereich Einschüchterung.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

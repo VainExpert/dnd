@@ -1,0 +1,90 @@
+{
+  "id": "shadowmoor-experte",
+  "type": "background",
+  "name": "Shadowmoor-Experte",
+  "original_name": "Shadowmoor Expert",
+  "rules_version": "2024",
+  "source": "Lorwyn - First Light",
+  "source_url": "http://dnd2024.wikidot.com/background:shadowmoor-expert",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Exotisch",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Geschicklichkeit, Intelligenz, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Geschicklichkeit, Intelligenz, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Schattenmoor-Hexer"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Akrobatik und Täuschung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkompetenz: Glasbläserwerkzeuge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Dolch, Glasbläserwerkzeuge, Rucksack, Jagdfalle, Lampe, Öl (3 Flaschen), Reisekleidung, Wasserschlauch, 8 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kommst aus Schattenmoor oder hast es jahrelang studiert. Es ist ein düsterer, chaotischer Ort, der ständig von blassem Mondlicht erhellt wird. Vielleicht überlebst du die gnadenlosen Bedingungen von Shadowmoor dank deines Witzes und deiner List, oder du hältst Bedrohungen mit deiner Kraft und deinem Mut in Schach. Unabhängig davon, wohin Sie gehen, ist Ihnen klar, dass Freundschaft ein seltenes Gut ist. Sie glauben, dass es nicht nur praktisch ist, zu wissen, wem man vertrauen und wen man auf Distanz halten kann, sondern dass es oft um Leben und Tod geht."
+    }
+  ],
+  "text": "Fähigkeitswerte: Geschicklichkeit, Intelligenz, Charisma\n\nTalent: Schattenmoor-Hexer\n\nFertigkeiten: Akrobatik und Täuschung\n\nWerkzeugkompetenz: Glasbläserwerkzeuge\n\nAusrüstung: Wähle A oder B: (A) Dolch, Glasbläserwerkzeuge, Rucksack, Jagdfalle, Lampe, Öl (3 Flaschen), Reisekleidung, Wasserschlauch, 8 GP; oder (B) 50 GP\n\nDu kommst aus Schattenmoor oder hast es jahrelang studiert. Es ist ein düsterer, chaotischer Ort, der ständig von blassem Mondlicht erhellt wird. Vielleicht überlebst du die gnadenlosen Bedingungen von Shadowmoor dank deines Witzes und deiner List, oder du hältst Bedrohungen mit deiner Kraft und deinem Mut in Schach. Unabhängig davon, wohin Sie gehen, ist Ihnen klar, dass Freundschaft ein seltenes Gut ist. Sie glauben, dass es nicht nur praktisch ist, zu wissen, wem man vertrauen und wen man auf Distanz halten kann, sondern dass es oft um Leben und Tod geht.",
+  "tags": [],
+  "ability_scores": [
+    "dex",
+    "int",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "dex",
+      "int",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Akrobatik",
+    "Taeuschung"
+  ],
+  "tool_proficiencies": [
+    "Glasbläserwerkzeuge\n"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "schattenmoor-hexer",
+  "granted_feat_name": "Schattenmoor-Hexer\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Dolch, Glasbläserwerkzeuge, Rucksack, Jagdfalle, Lampe, Öl (3 Flaschen), Reisekleidung, Wasserschlauch, 8 GP; oder (B) 50 GP\n\nDu kommst aus Schattenmoor oder hast es jahrelang studiert. Es ist ein düsterer, chaotischer Ort, der ständig von blassem Mondlicht erhellt wird. Vielleicht überlebst du die gnadenlosen Bedingungen von Shadowmoor dank deines Witzes und deiner List, oder du hältst Bedrohungen mit deiner Kraft und deinem Mut in Schach. Unabhängig davon, wohin Sie gehen, ist Ihnen klar, dass Freundschaft ein seltenes Gut ist. Sie glauben, dass es nicht nur praktisch ist, zu wissen, wem man vertrauen und wen man auf Distanz halten kann, sondern dass es oft um Leben und Tod geht"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "segen-der-hellen-sonne",
+  "type": "feat",
+  "name": "Segen der hellen Sonne",
+  "original_name": "Boon of the Bright Sun",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-the-bright-sun",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Episches Segen-Talent (Voraussetzung: Level 19+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Episches Segen-Talent (Voraussetzung: Level 19+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe deinen Konstitutions-, Weisheits- oder Charisma-Wert um 1 auf maximal 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tageslichtpräsenz. Als Bonusaktion strahlen Sie eine 30 Fuß lange Emanation hellen Lichts aus, das Sonnenlicht ist. Wenn sich ein Bereich der Emanation mit einem durch einen Zauber erzeugten Bereich der Dunkelheit überschneidet, wird dieser Zauber gebannt. Die Emanation bleibt bestehen, bis Sie sie aufgeben (keine Aktion erforderlich), sterben oder den Zustand „Kampfunfähig“ haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Stärkendes Licht. Wenn Ihre Tageslichtpräsenz aktiv ist, erhalten Sie und Ihre Verbündeten, die Sie in Ihrer Tageslichtpräsenz sehen können, zu Beginn jedes Ihrer Züge 10 temporäre Trefferpunkte."
+    }
+  ],
+  "text": "Episches Segen-Talent (Voraussetzung: Level 19+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe deinen Konstitutions-, Weisheits- oder Charisma-Wert um 1 auf maximal 30.\n\nTageslichtpräsenz. Als Bonusaktion strahlen Sie eine 30 Fuß lange Emanation hellen Lichts aus, das Sonnenlicht ist. Wenn sich ein Bereich der Emanation mit einem durch einen Zauber erzeugten Bereich der Dunkelheit überschneidet, wird dieser Zauber gebannt. Die Emanation bleibt bestehen, bis Sie sie aufgeben (keine Aktion erforderlich), sterben oder den Zustand „Kampfunfähig“ haben.\n\nStärkendes Licht. Wenn Ihre Tageslichtpräsenz aktiv ist, erhalten Sie und Ihre Verbündeten, die Sie in Ihrer Tageslichtpräsenz sehen können, zu Beginn jedes Ihrer Züge 10 temporäre Trefferpunkte.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

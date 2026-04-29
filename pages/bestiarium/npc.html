@@ -11,7 +11,6 @@
   <header class="topbar">
     <div class="brand">
       <div class="title" id="title">NPC</div>
-      <div class="subtitle"><a href="./npcs.html">← Zurück zu den NSC</a> • <a href="./bestiary.html">Bestiarium</a> • <a href="../../index.html">Startseite</a></div>
     </div>
   </header>
 
@@ -21,6 +20,7 @@
     </div>
   </main>
 
+  <script src="../../nav.js"></script>
   <script type="module">
     import {
       escapeHtml,
@@ -34,8 +34,10 @@
       buildLookupIndex,
       resolveEntityRef,
       entityLinkHtml,
+      formatSpeedList,
+      renderRollExpressionHtml,
       normalizeEntityRef
-    } from "../../lib.js";
+    } from "../../lib.js?v=2026-04-27-hitdice-links";
 
     const view = document.getElementById("view");
     const titleEl = document.getElementById("title");
@@ -106,7 +108,7 @@
         ac: raw.armor_class?.value ?? raw.ac ?? null,
         ac_note: raw.armor_class?.display ?? raw.armor_class?.note ?? raw.ac_note ?? "",
         hp: raw.hit_points?.average ?? raw.hp?.average ?? raw.hp ?? null,
-        hp_formula: raw.hit_points?.formula ?? raw.hp?.formula ?? "",
+        hp_formula: raw.hit_points?.formula ?? raw.hp?.formula ?? raw.hit_dice ?? "",
         speed: raw.speeds ?? raw.speed ?? {},
         abilities,
         saving_throws: savingThrows,
@@ -203,22 +205,15 @@
 
     function formatSpeed(speed) {
       if (!speed) return "—";
-      if (typeof speed === "string") return speed;
-      const order = ["walk", "fly", "swim", "climb", "burrow"];
-      const labels = {
-        walk: "Laufen",
-        fly: "Fliegen",
-        swim: "Schwimmen",
-        climb: "Klettern",
-        burrow: "Graben"
-      };
-      const parts = [];
-      for (const key of order) {
-        const value = speed[key];
-        if (value == null || value === "") continue;
-        parts.push(typeof value === "number" ? `${labels[key]} ${value} ft.` : `${labels[key]} ${value}`);
-      }
-      return parts.length ? parts.join(", ") : "—";
+      return formatSpeedList(speed) || "—";
+    }
+
+    function renderHitDice(value) {
+      const text = String(value ?? "").trim();
+      if (!text) return "";
+      return text.includes("[[")
+        ? renderMarkdownText(text, { lookups: { spell: spellLookup }, inlineOnly: true })
+        : renderRollExpressionHtml(text);
     }
 
     const spellLookup = await loadSpellLookup();
@@ -308,7 +303,7 @@
         <div class="mini-box-title">Werte</div>
         <div class="mini-box-text">
           ${n.ac != null ? `<div><b>RK:</b> ${escapeHtml(n.ac)}${n.ac_note ? ` <span class="muted">(${renderMarkdownText(n.ac_note, { lookups: { spell: spellLookup }, inlineOnly: true })})</span>` : ""}</div>` : ""}
-          ${n.hp != null ? `<div><b>TP:</b> ${escapeHtml(n.hp)}${n.hp_formula ? ` <span class="muted">(${renderMarkdownText(n.hp_formula, { lookups: { spell: spellLookup }, inlineOnly: true })})</span>` : ""}</div>` : ""}
+          ${n.hp != null ? `<div><b>TP:</b> ${escapeHtml(n.hp)}${n.hp_formula ? ` <span class="muted">(${renderHitDice(n.hp_formula)})</span>` : ""}</div>` : ""}
           <div><b>Bewegung:</b> ${escapeHtml(formatSpeed(n.speed))}</div>
           ${(n.challenge?.cr || n.challenge?.proficiency_bonus != null || n.xp) ? `
             <div>

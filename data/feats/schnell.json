@@ -1,0 +1,63 @@
+{
+  "id": "schnell",
+  "type": "feat",
+  "name": "Schnell",
+  "original_name": "Speedy",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:speedy",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Geschicklichkeit oder Konstitution 13+"
+  ],
+  "summary": "Voraussetzung: Level 4+, Geschicklichkeit oder Konstitution 13+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, Geschicklichkeit oder Konstitution 13+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Geschicklichkeits- oder Konstitutionswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschwindigkeitssteigerung. Deine Geschwindigkeit erhöht sich um 10 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Springe über schwieriges Gelände. Wenn du in deinem Zug die Sprint-Aktion ausführst, kostet dich „Schwieriges Gelände“ für den Rest des Zuges keine zusätzliche Bewegung."
+    },
+    {
+      "type": "paragraph",
+      "text": "Agile Bewegung. Gelegenheitsangriffe haben Nachteile für Sie."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, Geschicklichkeit oder Konstitution 13+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Geschicklichkeits- oder Konstitutionswert um 1 auf maximal 20.\n\nGeschwindigkeitssteigerung. Deine Geschwindigkeit erhöht sich um 10 Fuß.\n\nSpringe über schwieriges Gelände. Wenn du in deinem Zug die Sprint-Aktion ausführst, kostet dich „Schwieriges Gelände“ für den Rest des Zuges keine zusätzliche Bewegung.\n\nAgile Bewegung. Gelegenheitsangriffe haben Nachteile für Sie.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "dex",
+      "con"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

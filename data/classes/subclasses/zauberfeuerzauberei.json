@@ -1,0 +1,139 @@
+{
+  "id": "zauberfeuerzauberei",
+  "type": "subclass",
+  "name": "Zauberfeuerzauberei",
+  "original_name": "Spellfire Sorcery",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/sorcerer:spellfire-sorcery",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Nutze rohe Magie",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Nutze rohe Magie"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre angeborene Kraft stammt aus der Quelle der Magie selbst: dem Gewebe. Diese Verbindung manifestiert sich in einer seltenen Fähigkeit, die als Zauberfeuer bekannt ist, und Sie werden von strahlenden Ausbrüchen dieser rohen Magie erfüllt. Dein Talent im Zauberfeuer ermöglicht es dir, Verbündete zu heilen, Feinde zu verbrennen und mächtige Zauber zu absorbieren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Träger von Zauberfeuer neigen dazu, umherzuwandern. Viele reisen zwischen kosmopolitischen Siedlungen, beispielsweise denen entlang der Schwertküste, und setzen ihre Magie im Dienste des Gemeinwohls ein. Andere erkennen ihre eigenen seltsamen Kräfte, indem sie ebenso seltsame Länder durchstreifen, von den magisch verstrahlten Wüsten von Anauroch bis zu den von Gott berührten Wildnissen der Alten Reiche. Wo auch immer sie in den Reichen hingehen, werden Zauberfeuerzauberer von Fraktionen mit Interesse an arkanen Künsten umworben, wie den Harfnern, dem Drachenkult und den Roten Zauberern."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Zauberfeuerstoß"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du in deinem Zug mindestens 1 Zauberpunkt als Teil einer Zauberaktion oder einer Bonusaktion ausgibst, kannst du einen der folgenden magischen Effekte deiner Wahl auslösen. Dies ist nur einmal pro Spielzug möglich."
+    },
+    {
+      "type": "paragraph",
+      "text": "Stärkende Flammen. Du oder eine Kreatur, die du im Umkreis von 30 Fuß um dich herum sehen kannst, erhält temporäre Trefferpunkte in Höhe von 1W4 plus deinem Charisma-Modifikator."
+    },
+    {
+      "type": "paragraph",
+      "text": "Strahlendes Feuer. Eine Kreatur, die du im Umkreis von 30 Fuß um dich herum sehen kannst, erleidet 1W4 Feuer- oder Strahlungsschaden (nach deiner Wahl)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Zauberfeuerzauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine in der Spellfire-Zaubertabelle angegebene Zaubererstufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Zauberfeuerzauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Zauberer-Level",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Wunden heilen, Führungsbolzen, Geringe Wiederherstellung, Sengender Strahl"
+        ],
+        [
+          "5",
+          "Aura der Vitalität, Magie bannen"
+        ],
+        [
+          "7",
+          "Feuerschild, Feuerwand"
+        ],
+        [
+          "9",
+          "Große Wiederherstellung, Flammenschlag"
+        ]
+      ],
+      "text": "Zauber auf Zauberstufe: 3 Wunden heilen, Leitbolzen, Geringe Wiederherstellung, Sengender Strahl, 5 Aura der Vitalität, Magie bannen, 7 Feuerschild, Feuerwand, 9 Große Wiederherstellung, Flammenschlag"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Zauber absorbieren"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben den Gegenzauber immer vorbereitet. Wenn ein Ziel außerdem den Rettungswurf gegen einen von Ihnen gewirkten Gegenzauber misslingt, erhalten Sie 1W4 Zauberpunkte zurück."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 14: Verfeinertes Zauberfeuer"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihr Zauberfeuerstoß verbessert sich. Du addierst deine Zaubererstufe zu den temporären Trefferpunkten, die du durch Stärkung der Flammen erhältst, und der Schaden deines Strahlenden Feuers erhöht sich auf 1W8."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 18: Krone des Zauberfeuers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie „Angeborene Zauberei“ verwenden, können Sie diese ändern und sich mit der Essenz des Zauberfeuers erfüllen, wodurch Sie die folgenden Vorteile erhalten, während dieser Einsatz von „Angeborene Zauberei“ aktiv ist. Sobald Sie diese Funktion nutzen, um die angeborene Zauberei zu verändern, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie geben 5 Zauberpunkte aus (keine Aktion erforderlich), um sie wieder nutzen zu können."
+    },
+    {
+      "type": "paragraph",
+      "text": "Brennende Lebenskraft. Einmal pro Spielzug, wenn Sie von einem Angriffswurf getroffen werden, können Sie eine Anzahl an Trefferpunktwürfeln ausgeben, bis zu einem Maximum, das Ihrem Charisma-Modifikator entspricht (mindestens eins). Wirf die verbrauchten Würfel und reduziere den Schaden dieses Angriffs entsprechend der gewürfelten Summe."
+    },
+    {
+      "type": "paragraph",
+      "text": "Flug. Sie erreichen eine Fluggeschwindigkeit von 60 Fuß und können schweben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zaubervermeidung. Wenn Sie einem Zauberspruch oder einem magischen Effekt ausgesetzt sind, der es Ihnen ermöglicht, einen Rettungswurf auszuführen, der nur halben Schaden erleidet, erleiden Sie stattdessen keinen Schaden, wenn Ihnen der Rettungswurf gelingt, und nur halben Schaden, wenn Sie scheitern. Sie können diesen Vorteil nicht nutzen, wenn Sie an der Krankheit Kampfunfähigkeit leiden."
+    }
+  ],
+  "text": "Nutze rohe Magie\n\nIhre angeborene Kraft stammt aus der Quelle der Magie selbst: dem Gewebe. Diese Verbindung manifestiert sich in einer seltenen Fähigkeit, die als Zauberfeuer bekannt ist, und Sie werden von strahlenden Ausbrüchen dieser rohen Magie erfüllt. Dein Talent im Zauberfeuer ermöglicht es dir, Verbündete zu heilen, Feinde zu verbrennen und mächtige Zauber zu absorbieren.\n\nTräger von Zauberfeuer neigen dazu, umherzuwandern. Viele reisen zwischen kosmopolitischen Siedlungen, beispielsweise denen entlang der Schwertküste, und setzen ihre Magie im Dienste des Gemeinwohls ein. Andere erkennen ihre eigenen seltsamen Kräfte, indem sie ebenso seltsame Länder durchstreifen, von den magisch verstrahlten Wüsten von Anauroch bis zu den von Gott berührten Wildnissen der Alten Reiche. Wo auch immer sie in den Reichen hingehen, werden Zauberfeuerzauberer von Fraktionen mit Interesse an arkanen Künsten umworben, wie den Harfnern, dem Drachenkult und den Roten Zauberern.\n\nLevel 3: Zauberfeuerstoß\n\nWenn du in deinem Zug mindestens 1 Zauberpunkt als Teil einer Zauberaktion oder einer Bonusaktion ausgibst, kannst du einen der folgenden magischen Effekte deiner Wahl auslösen. Dies ist nur einmal pro Spielzug möglich.\n\nStärkende Flammen. Du oder eine Kreatur, die du im Umkreis von 30 Fuß um dich herum sehen kannst, erhält temporäre Trefferpunkte in Höhe von 1W4 plus deinem Charisma-Modifikator.\n\nStrahlendes Feuer. Eine Kreatur, die du im Umkreis von 30 Fuß um dich herum sehen kannst, erleidet 1W4 Feuer- oder Strahlungsschaden (nach deiner Wahl).\n\nStufe 3: Zauberfeuerzauber\n\nWenn Sie eine in der Spellfire-Zaubertabelle angegebene Zaubererstufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nZauberfeuerzauber\n\nZauber auf Zauberstufe: 3 Wunden heilen, Leitbolzen, Geringe Wiederherstellung, Sengender Strahl, 5 Aura der Vitalität, Magie bannen, 7 Feuerschild, Feuerwand, 9 Große Wiederherstellung, Flammenschlag\n\nLevel 6: Zauber absorbieren\n\nSie haben den Gegenzauber immer vorbereitet. Wenn ein Ziel außerdem den Rettungswurf gegen einen von Ihnen gewirkten Gegenzauber misslingt, erhalten Sie 1W4 Zauberpunkte zurück.\n\nStufe 14: Verfeinertes Zauberfeuer\n\nIhr Zauberfeuerstoß verbessert sich. Du addierst deine Zaubererstufe zu den temporären Trefferpunkten, die du durch Stärkung der Flammen erhältst, und der Schaden deines Strahlenden Feuers erhöht sich auf 1W8.\n\nLevel 18: Krone des Zauberfeuers\n\nWenn Sie „Angeborene Zauberei“ verwenden, können Sie diese ändern und sich mit der Essenz des Zauberfeuers erfüllen, wodurch Sie die folgenden Vorteile erhalten, während dieser Einsatz von „Angeborene Zauberei“ aktiv ist. Sobald Sie diese Funktion nutzen, um die angeborene Zauberei zu verändern, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie geben 5 Zauberpunkte aus (keine Aktion erforderlich), um sie wieder nutzen zu können.\n\nBrennende Lebenskraft. Einmal pro Spielzug, wenn Sie von einem Angriffswurf getroffen werden, können Sie eine Anzahl an Trefferpunktwürfeln ausgeben, bis zu einem Maximum, das Ihrem Charisma-Modifikator entspricht (mindestens eins). Wirf die verbrauchten Würfel und reduziere den Schaden dieses Angriffs entsprechend der gewürfelten Summe.\n\nFlug. Sie erreichen eine Fluggeschwindigkeit von 60 Fuß und können schweben.\n\nZaubervermeidung. Wenn Sie einem Zauberspruch oder einem magischen Effekt ausgesetzt sind, der es Ihnen ermöglicht, einen Rettungswurf auszuführen, der nur halben Schaden erleidet, erleiden Sie stattdessen keinen Schaden, wenn Ihnen der Rettungswurf gelingt, und nur halben Schaden, wenn Sie scheitern. Sie können diesen Vorteil nicht nutzen, wenn Sie an der Krankheit Kampfunfähigkeit leiden.",
+  "tags": [],
+  "class": "Zauberer",
+  "class_id": "zauberer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

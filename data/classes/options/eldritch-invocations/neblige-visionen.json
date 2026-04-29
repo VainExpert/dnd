@@ -1,0 +1,29 @@
+{
+  "id": "neblige-visionen",
+  "name": "Neblige Visionen",
+  "original_name": "Misty Visions",
+  "kind": "eldritch_invocation",
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:eldritch-invocation",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "",
+  "cost_original": "",
+  "prerequisite": "Hexenmeister der Stufe 2+",
+  "prerequisite_original": "Level 2+ Warlock",
+  "summary": "Du kannst Silent Image wirken, ohne einen Zauberslot zu verbrauchen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "You can cast Silent Image without expending a spell slot.",
+      "text_de": "Du kannst Silent Image wirken, ohne einen Zauberslot zu verbrauchen."
+    }
+  ]
+}

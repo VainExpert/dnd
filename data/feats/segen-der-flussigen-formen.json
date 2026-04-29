@@ -1,0 +1,65 @@
+{
+  "id": "segen-der-flussigen-formen",
+  "type": "feat",
+  "name": "Segen der flüssigen Formen",
+  "original_name": "Boon of Fluid Forms",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-fluid-forms",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Episches Segen-Talent (Voraussetzung: Level 19+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Episches Segen-Talent (Voraussetzung: Level 19+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gestaltwandler. Sie können eine magische Aktion ausführen, um sich in ein Biest, einen Humanoiden oder eine Monstrosität mit einem Herausforderungswert von nicht mehr als 10 zu verwandeln. Wenn Sie Ihre Gestalt verändern, erhalten Sie eine Anzahl temporärer Trefferpunkte, die den Trefferpunkten der Form entspricht. Der Gestaltwandlungseffekt hält 1 Stunde lang an und endet vorzeitig, wenn Sie keine temporären Trefferpunkte mehr haben oder eine magische Aktion ausführen, um zu Ihrer wahren Gestalt zurückzukehren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Deine Spielstatistiken werden durch den Statistikblock der gewählten Form ersetzt, aber du behältst deinen Kreaturentyp; Ausrichtung; Persönlichkeit; Intelligenz-, Weisheits- und Charisma-Werte; Trefferpunkte; Trefferpunktwürfel; Kenntnisse; und Kommunikationsfähigkeit. Wenn Sie über die Zauber- oder Paktmagie-Funktion verfügen, behalten Sie diese ebenfalls. Bei der Formänderung bestimmen Sie, ob Ihre Ausrüstung zu Boden fällt oder ob sie sich in Größe und Form an die neue Form anpasst, während Sie sich darin befinden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diesen Vorteil genutzt haben, können Sie dies nicht mehr tun, bis Sie eine Lange Rast beendet haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Hardy-Transformation. Wenn Sie beim Gestaltwandel temporäre Trefferpunkte erhalten, erhöhen Sie die Anzahl der temporären Trefferpunkte um 20."
+    }
+  ],
+  "text": "Episches Segen-Talent (Voraussetzung: Level 19+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 30.\n\nGestaltwandler. Sie können eine magische Aktion ausführen, um sich in ein Biest, einen Humanoiden oder eine Monstrosität mit einem Herausforderungswert von nicht mehr als 10 zu verwandeln. Wenn Sie Ihre Gestalt verändern, erhalten Sie eine Anzahl temporärer Trefferpunkte, die den Trefferpunkten der Form entspricht. Der Gestaltwandlungseffekt hält 1 Stunde lang an und endet vorzeitig, wenn Sie keine temporären Trefferpunkte mehr haben oder eine magische Aktion ausführen, um zu Ihrer wahren Gestalt zurückzukehren.\n\nDeine Spielstatistiken werden durch den Statistikblock der gewählten Form ersetzt, aber du behältst deinen Kreaturentyp; Ausrichtung; Persönlichkeit; Intelligenz-, Weisheits- und Charisma-Werte; Trefferpunkte; Trefferpunktwürfel; Kenntnisse; und Kommunikationsfähigkeit. Wenn Sie über die Zauber- oder Paktmagie-Funktion verfügen, behalten Sie diese ebenfalls. Bei der Formänderung bestimmen Sie, ob Ihre Ausrüstung zu Boden fällt oder ob sie sich in Größe und Form an die neue Form anpasst, während Sie sich darin befinden.\n\nSobald Sie diesen Vorteil genutzt haben, können Sie dies nicht mehr tun, bis Sie eine Lange Rast beendet haben.\n\nHardy-Transformation. Wenn Sie beim Gestaltwandel temporäre Trefferpunkte erhalten, erhöhen Sie die Anzahl der temporären Trefferpunkte um 20.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "id": "kreis-des-mondes",
+  "type": "subclass",
+  "name": "Kreis des Mondes",
+  "original_name": "Circle of the Moon",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/druid:circle-of-the-moon",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Nehmen Sie Tierformen an, um die Wildnis zu beschützen",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Nehmen Sie Tierformen an, um die Wildnis zu beschützen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Druiden des Kreises des Mondes nutzen Mondmagie, um sich zu verwandeln. Ihr Orden versammelt sich unter dem Mond, um Neuigkeiten auszutauschen und Rituale durchzuführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Veränderlich wie der Mond könnte ein Druide dieses Kreises in einer Nacht als große Katze umherstreifen, am nächsten Tag als Adler über die Baumwipfel fliegen und dann als Bär durch das Unterholz stürzen, um ein eindringendes Monster zu vertreiben. Die Wildnis liegt dem Druiden im Blut."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Kreisformen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können Mondmagie kanalisieren, wenn Sie eine Wildform annehmen, was Ihnen die folgenden Vorteile gewährt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Herausforderungsbewertung. Die maximale Herausforderungsbewertung für die Form entspricht Ihrer Druidenstufe geteilt durch 3 (abgerundet)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rüstungsklasse. Bis Sie das Formular verlassen, beträgt Ihre AC 13 plus Ihren Weisheitsmodifikator, wenn diese Summe höher ist als die AC des Biests."
+    },
+    {
+      "type": "paragraph",
+      "text": "Temporäre Trefferpunkte. Du erhältst eine Anzahl temporärer Trefferpunkte, die dem Dreifachen deiner Druidenstufe entspricht."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Zauber des Kreises des Mondes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine Druidenstufe erreichen, die in der Zaubertabelle des Kreises des Mondes angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie die Zaubersprüche dieser Funktion wirken, während Sie sich in einer Wildgestalt befinden."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Kreis der Mondzauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Druidenstufe",
+          "Vorbereitete Zauber"
+        ],
+        [
+          "3",
+          "Wunden heilen, Moonbeam, Starry Wisp"
+        ],
+        [
+          "5",
+          "Tiere beschwören"
+        ],
+        [
+          "7",
+          "Quelle des Mondlichts"
+        ],
+        [
+          "9",
+          "Massenheilung von Wunden"
+        ]
+      ],
+      "text": "Vorbereitete Zauber auf Druidenstufe: 3 Wunden heilen, Mondstrahl, Sternenirrlicht, 5 Tiere beschwören, 7 Quelle des Mondlichts, 9 Massenheilung von Wunden"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Verbesserte Kreisformen"
+    },
+    {
+      "type": "paragraph",
+      "text": "In einer Wildform-Form erhältst du die folgenden Vorteile."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mondstrahlung. Jeder Ihrer Angriffe in Wildform kann seinen normalen Schadenstyp oder Strahlungsschaden verursachen. Sie treffen diese Wahl jedes Mal, wenn Sie mit diesen Angriffen zuschlagen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhte Zähigkeit. Sie können Ihren Weisheitsmodifikator zu Ihrem Verfassungs-Rettungswurfs hinzufügen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Mondscheinschritt"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie transportieren sich auf magische Weise und tauchen im Mondlicht wieder auf. Als Bonusaktion teleportierst du dich bis zu 30 Fuß weit zu einem unbesetzten Feld, das du sehen kannst, und hast einen Vorteil beim nächsten Angriffswurf, den du vor dem Ende dieser Runde durchführst."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diese Funktion so oft verwenden, wie es Ihrem Weisheitsmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben. Sie können Verwendungen auch wiedererlangen, indem Sie für jede Verwendung, die Sie wiederherstellen möchten, einen Zauberslot der Stufe 2+ aufwenden (keine Aktion erforderlich)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Mondform"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Kraft des Mondes erfüllt Sie und gewährt Ihnen die folgenden Vorteile."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserte Mondstrahlung. Einmal pro Spielzug können Sie einem Ziel, das Sie mit dem Angriff einer Wildgestalt getroffen haben, zusätzlich 2W10 Strahlungsschaden zufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Geteiltes Mondlicht. Immer wenn du „Mondscheinschritt“ verwendest, kannst du auch eine willige Kreatur teleportieren. Diese Kreatur muss sich in einem Umkreis von 10 Fuß um dich befinden und du teleportierst sie zu einem unbesetzten Feld, das du innerhalb von 10 Fuß um dein Zielfeld sehen kannst."
+    }
+  ],
+  "text": "Nehmen Sie Tierformen an, um die Wildnis zu beschützen\n\nDruiden des Kreises des Mondes nutzen Mondmagie, um sich zu verwandeln. Ihr Orden versammelt sich unter dem Mond, um Neuigkeiten auszutauschen und Rituale durchzuführen.\n\nVeränderlich wie der Mond könnte ein Druide dieses Kreises in einer Nacht als große Katze umherstreifen, am nächsten Tag als Adler über die Baumwipfel fliegen und dann als Bär durch das Unterholz stürzen, um ein eindringendes Monster zu vertreiben. Die Wildnis liegt dem Druiden im Blut.\n\nLevel 3: Kreisformen\n\nSie können Mondmagie kanalisieren, wenn Sie eine Wildform annehmen, was Ihnen die folgenden Vorteile gewährt.\n\nHerausforderungsbewertung. Die maximale Herausforderungsbewertung für die Form entspricht Ihrer Druidenstufe geteilt durch 3 (abgerundet).\n\nRüstungsklasse. Bis Sie das Formular verlassen, beträgt Ihre AC 13 plus Ihren Weisheitsmodifikator, wenn diese Summe höher ist als die AC des Biests.\n\nTemporäre Trefferpunkte. Du erhältst eine Anzahl temporärer Trefferpunkte, die dem Dreifachen deiner Druidenstufe entspricht.\n\nStufe 3: Zauber des Kreises des Mondes\n\nWenn Sie eine Druidenstufe erreichen, die in der Zaubertabelle des Kreises des Mondes angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nDarüber hinaus können Sie die Zaubersprüche dieser Funktion wirken, während Sie sich in einer Wildgestalt befinden.\n\nKreis der Mondzauber\n\nVorbereitete Zauber auf Druidenstufe: 3 Wunden heilen, Mondstrahl, Sternenirrlicht, 5 Tiere beschwören, 7 Quelle des Mondlichts, 9 Massenheilung von Wunden\n\nLevel 6: Verbesserte Kreisformen\n\nIn einer Wildform-Form erhältst du die folgenden Vorteile.\n\nMondstrahlung. Jeder Ihrer Angriffe in Wildform kann seinen normalen Schadenstyp oder Strahlungsschaden verursachen. Sie treffen diese Wahl jedes Mal, wenn Sie mit diesen Angriffen zuschlagen.\n\nErhöhte Zähigkeit. Sie können Ihren Weisheitsmodifikator zu Ihrem Verfassungs-Rettungswurfs hinzufügen.\n\nLevel 10: Mondscheinschritt\n\nSie transportieren sich auf magische Weise und tauchen im Mondlicht wieder auf. Als Bonusaktion teleportierst du dich bis zu 30 Fuß weit zu einem unbesetzten Feld, das du sehen kannst, und hast einen Vorteil beim nächsten Angriffswurf, den du vor dem Ende dieser Runde durchführst.\n\nSie können diese Funktion so oft verwenden, wie es Ihrem Weisheitsmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben. Sie können Verwendungen auch wiedererlangen, indem Sie für jede Verwendung, die Sie wiederherstellen möchten, einen Zauberslot der Stufe 2+ aufwenden (keine Aktion erforderlich).\n\nLevel 14: Mondform\n\nDie Kraft des Mondes erfüllt Sie und gewährt Ihnen die folgenden Vorteile.\n\nVerbesserte Mondstrahlung. Einmal pro Spielzug können Sie einem Ziel, das Sie mit dem Angriff einer Wildgestalt getroffen haben, zusätzlich 2W10 Strahlungsschaden zufügen.\n\nGeteiltes Mondlicht. Immer wenn du „Mondscheinschritt“ verwendest, kannst du auch eine willige Kreatur teleportieren. Diese Kreatur muss sich in einem Umkreis von 10 Fuß um dich befinden und du teleportierst sie zu einem unbesetzten Feld, das du innerhalb von 10 Fuß um dein Zielfeld sehen kannst.",
+  "tags": [],
+  "class": "Druide",
+  "class_id": "druide",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

@@ -1,0 +1,210 @@
+{
+  "id": "kampfmeister",
+  "type": "subclass",
+  "name": "Kampfmeister",
+  "original_name": "Battle Master",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/fighter:battle-master",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Meistere anspruchsvolle Kampfmanöver",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Meistere anspruchsvolle Kampfmanöver"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kampfmeister sind Schüler der Kampfkunst und erlernen Kampftechniken, die über Generationen weitergegeben wurden. Die erfolgreichsten Kampfmeister sind vielseitige Persönlichkeiten, die ihre sorgfältig verfeinerten Kampffähigkeiten mit akademischen Studien in den Bereichen Geschichte, Theorie und Kunst kombinieren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Kampfüberlegenheit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Erfahrung auf dem Schlachtfeld hat Ihre Kampftechniken verfeinert. Sie lernen Manöver, die durch spezielle Würfel namens „Überlegenheitswürfel“ angetrieben werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Manöver. Im Abschnitt „Manöveroptionen“ weiter unten in der Beschreibung dieser Unterklasse lernen Sie drei Manöver Ihrer Wahl. Viele Manöver verstärken einen Angriff auf irgendeine Weise. Sie können nur ein Manöver pro Angriff verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie die Kämpferstufen 7, 10 und 15 erreichen, lernen Sie zwei zusätzliche Manöver Ihrer Wahl. Jedes Mal, wenn Sie neue Manöver lernen, können Sie auch ein Ihnen bekanntes Manöver durch ein anderes ersetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Überlegenheitswürfel. Sie haben vier Überlegenheitswürfel, d8. Ein Überlegenheitswürfel wird verbraucht, wenn Sie ihn verwenden. Du erhältst alle verbrauchten Überlegenheitswürfel zurück, wenn du eine kurze oder lange Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst einen zusätzlichen Überlegenheitswürfel, wenn du die Kämpferstufen 7 (insgesamt fünf Würfel) und 15 (insgesamt sechs Würfel) erreichst."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rettungswürfe. Wenn ein Manöver einen Rettungswurf erfordert, beträgt der SG 8 plus Ihrem Stärke- oder Geschicklichkeitsmodifikator (Ihrer Wahl) und dem Übungsbonus."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Kriegsschüler"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erlangst Kenntnisse im Umgang mit einer Art von Handwerkswerkzeugen deiner Wahl und in einer Fertigkeit deiner Wahl aus den Fertigkeiten, die Kämpfern auf Stufe 1 zur Verfügung stehen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Kennen Sie Ihren Feind"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion können Sie bestimmte Stärken und Schwächen einer Kreatur erkennen, die Sie in einem Umkreis von 30 Fuß um sich herum sehen können; Sie wissen, ob diese Kreatur Immunitäten, Resistenzen oder Schwachstellen hat, und wenn die Kreatur welche hat, wissen Sie, um welche es sich handelt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben. Sie können die Funktion auch wieder nutzen, indem Sie einen Überlegenheitswürfel ausgeben (keine Aktion erforderlich)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 10: Verbesserte Kampfüberlegenheit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dein Überlegenheitswürfel wird zu einem W10."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Unerbittlich"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie ein Manöver ausführen, können Sie einmal pro Spielzug 1W8 würfeln und die gewürfelte Zahl verwenden, anstatt einen Überlegenheitswürfel auszugeben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 18: Ultimative Kampfüberlegenheit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dein Überlegenheitswürfel wird zu einem W12."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Manöveroptionen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Manöver werden hier in alphabetischer Reihenfolge dargestellt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Hinterhalt. Wenn Sie eine Geschicklichkeitsprüfung (Stealth) oder einen Initiativewurf durchführen, können Sie einen Überlegenheitswürfel ausgeben und den Würfel zum Wurf hinzufügen, es sei denn, Sie verfügen über die Bedingung „Kampfunfähigkeit“."
+    },
+    {
+      "type": "paragraph",
+      "text": "Köder und Schalter. Wenn du dich in deinem Zug in einem Umkreis von 5 Fuß um eine Kreatur befindest, kannst du einen Überlegenheitswürfel ausgeben und mit dieser Kreatur den Platz tauschen, vorausgesetzt, dass du mindestens 5 Fuß Bewegung aufwendest und die Kreatur dazu bereit ist und nicht über den Zustand „Kampfunfähig“ verfügt. Diese Bewegung provoziert keine Gelegenheitsangriffe."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wirf den Überlegenheitswürfel. Bis zum Beginn Ihres nächsten Zuges erhalten Sie oder die andere Kreatur (Ihrer Wahl) einen Bonus auf die RK in Höhe der gewürfelten Zahl."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kommandantenschlag. Wenn Sie in Ihrem Zug die Angriffsaktion ausführen, können Sie einen Ihrer Angriffe ersetzen, um einen Ihrer Gefährten zum Angriff zu veranlassen. Wenn Sie dies tun, wählen Sie eine willige Kreatur, die Sie sehen oder hören kann, und geben Sie einen Überlegenheitswürfel aus. Diese Kreatur kann ihre Reaktion sofort nutzen, um einen Angriff mit einer Waffe oder einen unbewaffneten Schlag auszuführen, wobei sie bei einem Treffer den Überlegenheitswürfel zum Schadenswurf des Angriffs hinzufügt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Überzeugende Präsenz. Wenn Sie einen Charisma-Wurf (Einschüchterung, Leistung oder Überzeugung) durchführen, können Sie einen Überlegenheitswürfel ausgeben und diesen Würfel zum Wurf hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Entwaffnender Angriff. Wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du einen Überlegenheitswürfel ausgeben, um zu versuchen, das Ziel zu entwaffnen. Addiere den Überlegenheitswürfelwurf zum Schadenswurf des Angriffs. Dem Ziel muss ein Stärke-Rettungswurf gelingen oder ein von ihm gehaltenes Objekt Ihrer Wahl fallen gelassen werden, wobei das Objekt in seinem Feld landen muss."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ablenkender Schlag. Wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du einen Überlegenheitswürfel ausgeben, um das Ziel abzulenken. Addiere den Überlegenheitswürfelwurf zum Schadenswurf des Angriffs. Der nächste Angriffswurf gegen das Ziel durch einen anderen Angreifer als Sie hat einen Vorteil, wenn der Angriff vor Beginn Ihres nächsten Zuges erfolgt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausweichende Beinarbeit. Als Bonusaktion kannst du einen Überlegenheitswürfel ausgeben und die Aktion „Entgegnen“ durchführen. Außerdem würfelst du und addierst die gewürfelte Zahl bis zum Beginn deines nächsten Zuges zu deinem AC."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finting-Angriff. Als Bonusaktion kannst du einen Überlegenheitswürfel für eine Finte ausgeben und dabei eine Kreatur im Umkreis von 5 Fuß um dich selbst als Ziel auswählen. Du hast bei deinem nächsten Angriffswurf gegen dieses Ziel in diesem Zug einen Vorteil. Wenn dieser Angriff trifft, addiere den Überlegenheitswürfel zum Schadenswurf des Angriffs."
+    },
+    {
+      "type": "paragraph",
+      "text": "Anspornender Angriff. Wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du einen Überlegenheitswürfel ausgeben, um zu versuchen, das Ziel dazu zu bewegen, dich anzugreifen. Füge den Überlegenheitswürfel zum Schadenswurf des Angriffs hinzu. Das Ziel muss bis zum Ende seines nächsten Zuges bei einem Weisheits-Rettungswurf erfolgreich sein oder einen Nachteil bei Angriffswürfen gegen andere Ziele als dich haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausfallangriff. Als Bonusaktion kannst du einen Überlegenheitswürfel ausgeben und die Sprint-Aktion ausführen. Wenn Sie sich unmittelbar vor dem Angriff mit einem Nahkampfangriff als Teil der Angriffsaktion in diesem Zug mindestens 5 Fuß in einer geraden Linie bewegen, können Sie den Überlegenheitswürfel zum Schadenswurf des Angriffs hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Manövrierangriff. Wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du einen Überlegenheitswürfel ausgeben, um einen deiner Kameraden in eine andere Position zu manövrieren. Füge den Überlegenheitswürfelwurf zum Schadenswurf des Angriffs hinzu und wähle eine willige Kreatur, die dich sehen oder hören kann. Diese Kreatur kann ihre Reaktion nutzen, um sich bis zur Hälfte ihrer Geschwindigkeit zu bewegen, ohne Gelegenheitsangriffe beim Ziel Ihres Angriffs zu provozieren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bedrohlicher Angriff. Wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du einen Überlegenheitswürfel ausgeben, um zu versuchen, das Ziel zu erschrecken. Füge den Überlegenheitswürfel zum Schadenswurf des Angriffs hinzu. Dem Ziel muss ein Weisheits-Rettungswurf gelingen oder es muss sich bis zum Ende seines nächsten Zuges im Zustand „Verängstigt“ befinden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Parieren. Wenn eine andere Kreatur dir mit einem Nahkampfangriffswurf Schaden zufügt, kannst du eine Reaktion ausführen und einen Überlegenheitswürfel ausgeben, um den Schaden um die Zahl zu reduzieren, die du auf deinem Überlegenheitswürfel würfelst, plus deinem Stärke- oder Geschicklichkeitsmodifikator (nach deiner Wahl)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Präzisionsangriff. Wenn Sie mit einem Angriffswurf verfehlen, können Sie einen Überlegenheitswürfel ausgeben, diesen Würfel würfeln und ihn zum Angriffswurf hinzufügen, was möglicherweise dazu führt, dass der Angriff trifft."
+    },
+    {
+      "type": "paragraph",
+      "text": "Push-Angriff. Wenn du eine Kreatur mit einem Angriffswurf mit einer Waffe oder einem unbewaffneten Schlag triffst, kannst du einen Überlegenheitswürfel ausgeben, um zu versuchen, das Ziel zurückzudrängen. Füge den Überlegenheitswürfel zum Schadenswurf des Angriffs hinzu. Wenn das Ziel groß oder kleiner ist, muss ihm ein Kraft-Rettungswurf gelingen oder es kann bis zu 15 Fuß direkt von Ihnen weggeschoben werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rallye. Als Bonusaktion können Sie einen Überlegenheitswürfel ausgeben, um die Entschlossenheit eines Gefährten zu stärken. Wählen Sie einen Verbündeten im Umkreis von 30 Fuß um Sie herum, der Sie sehen oder hören kann. Diese Kreatur erhält temporäre Trefferpunkte in Höhe des Überlegenheitswürfelwurfs plus der Hälfte deiner Kämpferstufe (abgerundet)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gegenrede. Wenn eine Kreatur Sie mit einem Nahkampfangriffswurf verfehlt, können Sie eine Reaktion ausführen und einen Überlegenheitswürfel ausgeben, um einen Nahkampfangriffswurf mit einer Waffe oder einen unbewaffneten Schlag gegen die Kreatur durchzuführen. Wenn Sie treffen, addieren Sie den Überlegenheitswürfel zum Schaden des Angriffs."
+    },
+    {
+      "type": "paragraph",
+      "text": "Durchgreifender Angriff. Wenn du eine Kreatur mit einem Nahkampfangriffswurf mit einer Waffe oder einem unbewaffneten Schlag triffst, kannst du einen Überlegenheitswürfel ausgeben, um zu versuchen, einer anderen Kreatur Schaden zuzufügen. Wählen Sie eine andere Kreatur in einem Umkreis von 5 Fuß um das ursprüngliche Ziel und in Ihrer Reichweite. Wenn der ursprüngliche Angriffswurf die zweite Kreatur treffen würde, erleidet sie Schaden in Höhe der Zahl, die Sie auf Ihrem Überlegenheitswürfel würfeln. Der Schaden ist von der gleichen Art wie der ursprüngliche Angriff."
+    },
+    {
+      "type": "paragraph",
+      "text": "Taktische Beurteilung. Wenn Sie eine Intelligenzprüfung (Geschichte oder Untersuchung) oder eine Weisheitsprüfung (Einsicht) durchführen, können Sie einen Überlegenheitswürfel ausgeben und diesen Würfel zur Fähigkeitsprüfung hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Trip Attack. Wenn Sie eine Kreatur mit einem Angriffswurf mit einer Waffe oder einem unbewaffneten Schlag treffen, können Sie einen Überlegenheitswürfel ausgeben und den Würfel zum Schadenswurf des Angriffs hinzufügen. Wenn das Ziel groß oder kleiner ist, muss ihm ein Kraft-Rettungswurf gelingen oder er muss sich im Bauchzustand befinden."
+    }
+  ],
+  "text": "Meistere anspruchsvolle Kampfmanöver\n\nKampfmeister sind Schüler der Kampfkunst und erlernen Kampftechniken, die über Generationen weitergegeben wurden. Die erfolgreichsten Kampfmeister sind vielseitige Persönlichkeiten, die ihre sorgfältig verfeinerten Kampffähigkeiten mit akademischen Studien in den Bereichen Geschichte, Theorie und Kunst kombinieren.\n\nLevel 3: Kampfüberlegenheit\n\nIhre Erfahrung auf dem Schlachtfeld hat Ihre Kampftechniken verfeinert. Sie lernen Manöver, die durch spezielle Würfel namens „Überlegenheitswürfel“ angetrieben werden.\n\nManöver. Im Abschnitt „Manöveroptionen“ weiter unten in der Beschreibung dieser Unterklasse lernen Sie drei Manöver Ihrer Wahl. Viele Manöver verstärken einen Angriff auf irgendeine Weise. Sie können nur ein Manöver pro Angriff verwenden.\n\nWenn Sie die Kämpferstufen 7, 10 und 15 erreichen, lernen Sie zwei zusätzliche Manöver Ihrer Wahl. Jedes Mal, wenn Sie neue Manöver lernen, können Sie auch ein Ihnen bekanntes Manöver durch ein anderes ersetzen.\n\nÜberlegenheitswürfel. Sie haben vier Überlegenheitswürfel, d8. Ein Überlegenheitswürfel wird verbraucht, wenn Sie ihn verwenden. Du erhältst alle verbrauchten Überlegenheitswürfel zurück, wenn du eine kurze oder lange Rast abschließt.\n\nDu erhältst einen zusätzlichen Überlegenheitswürfel, wenn du die Kämpferstufen 7 (insgesamt fünf Würfel) und 15 (insgesamt sechs Würfel) erreichst.\n\nRettungswürfe. Wenn ein Manöver einen Rettungswurf erfordert, beträgt der SG 8 plus Ihrem Stärke- oder Geschicklichkeitsmodifikator (Ihrer Wahl) und dem Übungsbonus.\n\nStufe 3: Kriegsschüler\n\nDu erlangst Kenntnisse im Umgang mit einer Art von Handwerkswerkzeugen deiner Wahl und in einer Fertigkeit deiner Wahl aus den Fertigkeiten, die Kämpfern auf Stufe 1 zur Verfügung stehen.\n\nLevel 7: Kennen Sie Ihren Feind\n\nAls Bonusaktion können Sie bestimmte Stärken und Schwächen einer Kreatur erkennen, die Sie in einem Umkreis von 30 Fuß um sich herum sehen können; Sie wissen, ob diese Kreatur Immunitäten, Resistenzen oder Schwachstellen hat, und wenn die Kreatur welche hat, wissen Sie, um welche es sich handelt.\n\nSobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben. Sie können die Funktion auch wieder nutzen, indem Sie einen Überlegenheitswürfel ausgeben (keine Aktion erforderlich).\n\nStufe 10: Verbesserte Kampfüberlegenheit\n\nDein Überlegenheitswürfel wird zu einem W10.\n\nLevel 15: Unerbittlich\n\nWenn Sie ein Manöver ausführen, können Sie einmal pro Spielzug 1W8 würfeln und die gewürfelte Zahl verwenden, anstatt einen Überlegenheitswürfel auszugeben.\n\nLevel 18: Ultimative Kampfüberlegenheit\n\nDein Überlegenheitswürfel wird zu einem W12.\n\nManöveroptionen\n\nDie Manöver werden hier in alphabetischer Reihenfolge dargestellt.\n\nHinterhalt. Wenn Sie eine Geschicklichkeitsprüfung (Stealth) oder einen Initiativewurf durchführen, können Sie einen Überlegenheitswürfel ausgeben und den Würfel zum Wurf hinzufügen, es sei denn, Sie verfügen über die Bedingung „Kampfunfähigkeit“.\n\nKöder und Schalter. Wenn du dich in deinem Zug in einem Umkreis von 5 Fuß um eine Kreatur befindest, kannst du einen Überlegenheitswürfel ausgeben und mit dieser Kreatur den Platz tauschen, vorausgesetzt, dass du mindestens 5 Fuß Bewegung aufwendest und die Kreatur dazu bereit ist und nicht über den Zustand „Kampfunfähig“ verfügt. Diese Bewegung provoziert keine Gelegenheitsangriffe.\n\nWirf den Überlegenheitswürfel. Bis zum Beginn Ihres nächsten Zuges erhalten Sie oder die andere Kreatur (Ihrer Wahl) einen Bonus auf die RK in Höhe der gewürfelten Zahl.\n\nKommandantenschlag. Wenn Sie in Ihrem Zug die Angriffsaktion ausführen, können Sie einen Ihrer Angriffe ersetzen, um einen Ihrer Gefährten zum Angriff zu veranlassen. Wenn Sie dies tun, wählen Sie eine willige Kreatur, die Sie sehen oder hören kann, und geben Sie einen Überlegenheitswürfel aus. Diese Kreatur kann ihre Reaktion sofort nutzen, um einen Angriff mit einer Waffe oder einen unbewaffneten Schlag auszuführen, wobei sie bei einem Treffer den Überlegenheitswürfel zum Schadenswurf des Angriffs hinzufügt.\n\nÜberzeugende Präsenz. Wenn Sie einen Charisma-Wurf (Einschüchterung, Leistung oder Überzeugung) durchführen, können Sie einen Überlegenheitswürfel ausgeben und diesen Würfel zum Wurf hinzufügen.\n\nEntwaffnender Angriff. Wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du einen Überlegenheitswürfel ausgeben, um zu versuchen, das Ziel zu entwaffnen. Addiere den Überlegenheitswürfelwurf zum Schadenswurf des Angriffs. Dem Ziel muss ein Stärke-Rettungswurf gelingen oder ein von ihm gehaltenes Objekt Ihrer Wahl fallen gelassen werden, wobei das Objekt in seinem Feld landen muss.\n\nAblenkender Schlag. Wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du einen Überlegenheitswürfel ausgeben, um das Ziel abzulenken. Addiere den Überlegenheitswürfelwurf zum Schadenswurf des Angriffs. Der nächste Angriffswurf gegen das Ziel durch einen anderen Angreifer als Sie hat einen Vorteil, wenn der Angriff vor Beginn Ihres nächsten Zuges erfolgt.\n\nAusweichende Beinarbeit. Als Bonusaktion kannst du einen Überlegenheitswürfel ausgeben und die Aktion „Entgegnen“ durchführen. Außerdem würfelst du und addierst die gewürfelte Zahl bis zum Beginn deines nächsten Zuges zu deinem AC.\n\nFinting-Angriff. Als Bonusaktion kannst du einen Überlegenheitswürfel für eine Finte ausgeben und dabei eine Kreatur im Umkreis von 5 Fuß um dich selbst als Ziel auswählen. Du hast bei deinem nächsten Angriffswurf gegen dieses Ziel in diesem Zug einen Vorteil. Wenn dieser Angriff trifft, addiere den Überlegenheitswürfel zum Schadenswurf des Angriffs.\n\nAnspornender Angriff. Wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du einen Überlegenheitswürfel ausgeben, um zu versuchen, das Ziel dazu zu bewegen, dich anzugreifen. Füge den Überlegenheitswürfel zum Schadenswurf des Angriffs hinzu. Das Ziel muss bis zum Ende seines nächsten Zuges bei einem Weisheits-Rettungswurf erfolgreich sein oder einen Nachteil bei Angriffswürfen gegen andere Ziele als dich haben.\n\nAusfallangriff. Als Bonusaktion kannst du einen Überlegenheitswürfel ausgeben und die Sprint-Aktion ausführen. Wenn Sie sich unmittelbar vor dem Angriff mit einem Nahkampfangriff als Teil der Angriffsaktion in diesem Zug mindestens 5 Fuß in einer geraden Linie bewegen, können Sie den Überlegenheitswürfel zum Schadenswurf des Angriffs hinzufügen.\n\nManövrierangriff. Wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du einen Überlegenheitswürfel ausgeben, um einen deiner Kameraden in eine andere Position zu manövrieren. Füge den Überlegenheitswürfelwurf zum Schadenswurf des Angriffs hinzu und wähle eine willige Kreatur, die dich sehen oder hören kann. Diese Kreatur kann ihre Reaktion nutzen, um sich bis zur Hälfte ihrer Geschwindigkeit zu bewegen, ohne Gelegenheitsangriffe beim Ziel Ihres Angriffs zu provozieren.\n\nBedrohlicher Angriff. Wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du einen Überlegenheitswürfel ausgeben, um zu versuchen, das Ziel zu erschrecken. Füge den Überlegenheitswürfel zum Schadenswurf des Angriffs hinzu. Dem Ziel muss ein Weisheits-Rettungswurf gelingen oder es muss sich bis zum Ende seines nächsten Zuges im Zustand „Verängstigt“ befinden.\n\nParieren. Wenn eine andere Kreatur dir mit einem Nahkampfangriffswurf Schaden zufügt, kannst du eine Reaktion ausführen und einen Überlegenheitswürfel ausgeben, um den Schaden um die Zahl zu reduzieren, die du auf deinem Überlegenheitswürfel würfelst, plus deinem Stärke- oder Geschicklichkeitsmodifikator (nach deiner Wahl).\n\nPräzisionsangriff. Wenn Sie mit einem Angriffswurf verfehlen, können Sie einen Überlegenheitswürfel ausgeben, diesen Würfel würfeln und ihn zum Angriffswurf hinzufügen, was möglicherweise dazu führt, dass der Angriff trifft.\n\nPush-Angriff. Wenn du eine Kreatur mit einem Angriffswurf mit einer Waffe oder einem unbewaffneten Schlag triffst, kannst du einen Überlegenheitswürfel ausgeben, um zu versuchen, das Ziel zurückzudrängen. Füge den Überlegenheitswürfel zum Schadenswurf des Angriffs hinzu. Wenn das Ziel groß oder kleiner ist, muss ihm ein Kraft-Rettungswurf gelingen oder es kann bis zu 15 Fuß direkt von Ihnen weggeschoben werden.\n\nRallye. Als Bonusaktion können Sie einen Überlegenheitswürfel ausgeben, um die Entschlossenheit eines Gefährten zu stärken. Wählen Sie einen Verbündeten im Umkreis von 30 Fuß um Sie herum, der Sie sehen oder hören kann. Diese Kreatur erhält temporäre Trefferpunkte in Höhe des Überlegenheitswürfelwurfs plus der Hälfte deiner Kämpferstufe (abgerundet).\n\nGegenrede. Wenn eine Kreatur Sie mit einem Nahkampfangriffswurf verfehlt, können Sie eine Reaktion ausführen und einen Überlegenheitswürfel ausgeben, um einen Nahkampfangriffswurf mit einer Waffe oder einen unbewaffneten Schlag gegen die Kreatur durchzuführen. Wenn Sie treffen, addieren Sie den Überlegenheitswürfel zum Schaden des Angriffs.\n\nDurchgreifender Angriff. Wenn du eine Kreatur mit einem Nahkampfangriffswurf mit einer Waffe oder einem unbewaffneten Schlag triffst, kannst du einen Überlegenheitswürfel ausgeben, um zu versuchen, einer anderen Kreatur Schaden zuzufügen. Wählen Sie eine andere Kreatur in einem Umkreis von 5 Fuß um das ursprüngliche Ziel und in Ihrer Reichweite. Wenn der ursprüngliche Angriffswurf die zweite Kreatur treffen würde, erleidet sie Schaden in Höhe der Zahl, die Sie auf Ihrem Überlegenheitswürfel würfeln. Der Schaden ist von der gleichen Art wie der ursprüngliche Angriff.\n\nTaktische Beurteilung. Wenn Sie eine Intelligenzprüfung (Geschichte oder Untersuchung) oder eine Weisheitsprüfung (Einsicht) durchführen, können Sie einen Überlegenheitswürfel ausgeben und diesen Würfel zur Fähigkeitsprüfung hinzufügen.\n\nTrip Attack. Wenn Sie eine Kreatur mit einem Angriffswurf mit einer Waffe oder einem unbewaffneten Schlag treffen, können Sie einen Überlegenheitswürfel ausgeben und den Würfel zum Schadenswurf des Angriffs hinzufügen. Wenn das Ziel groß oder kleiner ist, muss ihm ein Kraft-Rettungswurf gelingen oder er muss sich im Bauchzustand befinden.",
+  "tags": [],
+  "class": "Kaempfer",
+  "class_id": "kaempfer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

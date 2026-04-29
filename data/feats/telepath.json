@@ -1,0 +1,59 @@
+{
+  "id": "telepath",
+  "type": "feat",
+  "name": "Telepath",
+  "original_name": "Telepathic",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:telepathic",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Stufe 4+"
+  ],
+  "summary": "Voraussetzung: Level 4+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Telepathische Äußerung. Sie können telepathisch mit jeder Kreatur sprechen, die Sie im Umkreis von 60 Fuß um sich herum sehen können. Ihre telepathischen Äußerungen erfolgen in einer Sprache, die Sie kennen, und die Kreatur versteht Sie nur, wenn sie diese Sprache beherrscht. Ihre Kommunikation gibt der Kreatur nicht die Fähigkeit, telepathisch auf Sie zu reagieren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gedanken erkennen. Sie haben immer den Zauber „Gedanken erkennen“ vorbereitet. Du kannst ihn ohne Zauberslot oder Zauberkomponenten wirken, und du musst Lange Rast abschließen, bevor du ihn auf diese Weise erneut wirken kannst. Sie können es auch mit Zauberslots der entsprechenden Stufe wirken, die Sie haben. Deine Zauberfähigkeit für den Zauber ist die durch dieses Talent erhöhte Fähigkeit."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20.\n\nTelepathische Äußerung. Sie können telepathisch mit jeder Kreatur sprechen, die Sie im Umkreis von 60 Fuß um sich herum sehen können. Ihre telepathischen Äußerungen erfolgen in einer Sprache, die Sie kennen, und die Kreatur versteht Sie nur, wenn sie diese Sprache beherrscht. Ihre Kommunikation gibt der Kreatur nicht die Fähigkeit, telepathisch auf Sie zu reagieren.\n\nGedanken erkennen. Sie haben immer den Zauber „Gedanken erkennen“ vorbereitet. Du kannst ihn ohne Zauberslot oder Zauberkomponenten wirken, und du musst Lange Rast abschließen, bevor du ihn auf diese Weise erneut wirken kannst. Sie können es auch mit Zauberslots der entsprechenden Stufe wirken, die Sie haben. Deine Zauberfähigkeit für den Zauber ist die durch dieses Talent erhöhte Fähigkeit.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

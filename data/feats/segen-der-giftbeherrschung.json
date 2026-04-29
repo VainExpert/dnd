@@ -1,0 +1,54 @@
+{
+  "id": "segen-der-giftbeherrschung",
+  "type": "feat",
+  "name": "Segen der Giftbeherrschung",
+  "original_name": "Boon of Poison Mastery",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-poison-mastery",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Episches Segen-Talent (Voraussetzung: Level 19+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Episches Segen-Talent (Voraussetzung: Level 19+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Antitoxisch. Du bist immun gegen Giftschaden und den Zustand „Vergiftet“."
+    },
+    {
+      "type": "paragraph",
+      "text": "Perfekter Giftmörder. Wenn du einmal pro Spielzug würfelst, um den Giftschaden zu bestimmen, den eine Kreatur durch deinen Angriff, Zauber oder deine Funktion erleidet, kannst du stattdessen für jeden Würfel die höchstmögliche Zahl verwenden."
+    }
+  ],
+  "text": "Episches Segen-Talent (Voraussetzung: Level 19+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30.\n\nAntitoxisch. Du bist immun gegen Giftschaden und den Zustand „Vergiftet“.\n\nPerfekter Giftmörder. Wenn du einmal pro Spielzug würfelst, um den Giftschaden zu bestimmen, den eine Kreatur durch deinen Angriff, Zauber oder deine Funktion erleidet, kannst du stattdessen für jeden Würfel die höchstmögliche Zahl verwenden.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

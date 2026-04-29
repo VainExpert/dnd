@@ -1,0 +1,96 @@
+{
+  "id": "attentater",
+  "type": "subclass",
+  "name": "Attentäter",
+  "original_name": "Assassin",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/rogue:assassin",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Üben Sie die düstere Kunst des Todes. Die Ausbildung eines Assassinen konzentriert sich auf den Einsatz von Heimlichkeit, Gift und Verkleidung, um Feinde mit tödlicher Effizienz zu eliminieren. Während einige Schurken, die diesem Weg folgen, angeheuerte Killer, Spione oder Kopfgeldjäger sind, sind die Fähigkeiten dieser Unterklasse gleichermaßen nützlich für Abenteurer, die sich einer Vielzahl monströser Feinde gegenübersehen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Üben Sie die düstere Kunst des Todes. Die Ausbildung eines Assassinen konzentriert sich auf den Einsatz von Heimlichkeit, Gift und Verkleidung, um Feinde mit tödlicher Effizienz zu eliminieren. Während einige Schurken, die diesem Weg folgen, angeheuerte Killer, Spione oder Kopfgeldjäger sind, sind die Fähigkeiten dieser Unterklasse gleichermaßen nützlich für Abenteurer, die sich einer Vielzahl monströser Feinde gegenübersehen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Ermorden"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie sind geschickt darin, ein Ziel zu überfallen, was Ihnen die folgenden Vorteile gewährt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Initiative. Du hast einen Vorteil bei Initiativewürfen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Überraschende Treffer. Während der ersten Runde jedes Kampfes hast du einen Vorteil bei Angriffswürfen gegen jede Kreatur, die noch keinen Zug gemacht hat. Wenn Ihr Hinterhältiger Angriff in dieser Runde ein Ziel trifft, erleidet das Ziel zusätzlichen Schaden in Höhe des Waffentyps, der Ihrer Stufe als Schurke entspricht."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Werkzeuge des Assassinen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst ein Verkleidungsset und ein Giftset und bist damit vertraut."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 9: Infiltrationsexpertise"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie sind Experte für die folgenden Techniken, die Ihre Infiltrationen unterstützen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Meisterhafte Mimikry. Sie können die Sprache, Handschrift oder beides einer anderen Person treffsicher nachahmen, wenn Sie sie mindestens eine Stunde lang studiert haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Umherziehendes Ziel. Deine Geschwindigkeit wird durch Steady Aim nicht auf 0 reduziert."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 13: Giftwaffen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie die Gift-Option Ihres Listigen Schlags verwenden, erleidet das Ziel außerdem 2W6 Giftschaden, wenn der Rettungswurf fehlschlägt. Dieser Schaden ignoriert den Resistenz-gegen-Gift-Schaden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 17: Todesstoß"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie in der ersten Runde eines Kampfes mit Ihrem Schleichangriff zuschlagen, muss das Ziel mit einem Konstitutions-Rettungswurf (SG 8 plus Geschicklichkeitsmodifikator und Uebungsbonus) erfolgreich sein, sonst wird der Schaden des Angriffs gegen das Ziel verdoppelt."
+    }
+  ],
+  "text": "Üben Sie die düstere Kunst des Todes. Die Ausbildung eines Assassinen konzentriert sich auf den Einsatz von Heimlichkeit, Gift und Verkleidung, um Feinde mit tödlicher Effizienz zu eliminieren. Während einige Schurken, die diesem Weg folgen, angeheuerte Killer, Spione oder Kopfgeldjäger sind, sind die Fähigkeiten dieser Unterklasse gleichermaßen nützlich für Abenteurer, die sich einer Vielzahl monströser Feinde gegenübersehen.\n\nLevel 3: Ermorden\n\nSie sind geschickt darin, ein Ziel zu überfallen, was Ihnen die folgenden Vorteile gewährt.\n\nInitiative. Du hast einen Vorteil bei Initiativewürfen.\n\nÜberraschende Treffer. Während der ersten Runde jedes Kampfes hast du einen Vorteil bei Angriffswürfen gegen jede Kreatur, die noch keinen Zug gemacht hat. Wenn Ihr Hinterhältiger Angriff in dieser Runde ein Ziel trifft, erleidet das Ziel zusätzlichen Schaden in Höhe des Waffentyps, der Ihrer Stufe als Schurke entspricht.\n\nLevel 3: Werkzeuge des Assassinen\n\nDu erhältst ein Verkleidungsset und ein Giftset und bist damit vertraut.\n\nLevel 9: Infiltrationsexpertise\n\nSie sind Experte für die folgenden Techniken, die Ihre Infiltrationen unterstützen.\n\nMeisterhafte Mimikry. Sie können die Sprache, Handschrift oder beides einer anderen Person treffsicher nachahmen, wenn Sie sie mindestens eine Stunde lang studiert haben.\n\nUmherziehendes Ziel. Deine Geschwindigkeit wird durch Steady Aim nicht auf 0 reduziert.\n\nLevel 13: Giftwaffen\n\nWenn Sie die Gift-Option Ihres Listigen Schlags verwenden, erleidet das Ziel außerdem 2W6 Giftschaden, wenn der Rettungswurf fehlschlägt. Dieser Schaden ignoriert den Resistenz-gegen-Gift-Schaden.\n\nLevel 17: Todesstoß\n\nWenn Sie in der ersten Runde eines Kampfes mit Ihrem Schleichangriff zuschlagen, muss das Ziel mit einem Konstitutions-Rettungswurf (SG 8 plus Geschicklichkeitsmodifikator und Uebungsbonus) erfolgreich sein, sonst wird der Schaden des Angriffs gegen das Ziel verdoppelt.",
+  "tags": [],
+  "class": "Schurke",
+  "class_id": "schurke",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

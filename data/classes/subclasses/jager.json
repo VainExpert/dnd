@@ -1,0 +1,96 @@
+{
+  "id": "jager",
+  "type": "subclass",
+  "name": "Jäger",
+  "original_name": "Hunter",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/ranger:hunter",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Beschütze die Natur und die Menschen vor der Zerstörung Du gehst in der Wildnis und anderswo auf Beutejagd und nutzt deine Fähigkeiten als Jäger, um die Natur und die Menschen überall vor Kräften zu schützen, die sie zerstören würden.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Beschütze die Natur und die Menschen vor der Zerstörung Du gehst in der Wildnis und anderswo auf Beutejagd und nutzt deine Fähigkeiten als Jäger, um die Natur und die Menschen überall vor Kräften zu schützen, die sie zerstören würden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Jägerkunde"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können die Kräfte der Natur herbeirufen, um bestimmte Stärken und Schwächen Ihrer Beute aufzudecken. Während eine Kreatur durch Ihr Jägermal gekennzeichnet ist, wissen Sie, ob die Kreatur über Immunitäten, Resistenzen oder Verwundbarkeiten verfügt, und wenn die Kreatur welche hat, wissen Sie, um welche es sich handelt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Jägerbeute"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erhalten eine der folgenden Funktionsoptionen Ihrer Wahl. Immer wenn Sie eine Kurze oder Lange Rast beendet haben, können Sie die gewählte Option durch die andere ersetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kolossjäger. Ihre Hartnäckigkeit kann selbst die widerstandsfähigsten Feinde zermürben. Wenn du eine Kreatur mit einer Waffe triffst, fügt die Waffe dem Ziel zusätzlich 1W8 Schaden zu, wenn ihr Trefferpunkte fehlen. Du kannst diesen zusätzlichen Schaden nur einmal pro Spielzug verursachen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Hordenbrecher. Einmal in jedem deiner Züge, wenn du einen Angriff mit einer Waffe ausführst, kannst du einen weiteren Angriff mit derselben Waffe gegen eine andere Kreatur ausführen, die sich innerhalb von 5 Fuß vom ursprünglichen Ziel befindet, die sich innerhalb der Reichweite der Waffe befindet und die du in diesem Zug nicht angegriffen hast."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Verteidigungstaktiken"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erhalten eine der folgenden Funktionsoptionen Ihrer Wahl. Immer wenn Sie eine Kurze oder Lange Rast beendet haben, können Sie die gewählte Option durch die andere ersetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Entkomme der Horde. Gelegenheitsangriffe haben Nachteile für Sie."
+    },
+    {
+      "type": "paragraph",
+      "text": "Multiattack-Verteidigung. Wenn eine Kreatur dich mit einem Angriffswurf trifft, hat diese Kreatur in diesem Zug bei allen anderen Angriffswürfen gegen dich einen Nachteil."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 11: Überlegene Jägerbeute"
+    },
+    {
+      "type": "paragraph",
+      "text": "Einmal pro Spielzug, wenn du einer Kreatur, die mit deinem Jägermal markiert ist, Schaden zufügst, kannst du den zusätzlichen Schaden dieses Zaubers auch einer anderen Kreatur zufügen, die du in einem Umkreis von 30 Fuß um die erste Kreatur sehen kannst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 15: Überlegene Jägerverteidigung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du Schaden erleidest, kannst du eine Reaktion ausführen, um dir bis zum Ende der aktuellen Runde Resistenz gegen diesen Schaden und jeden anderen Schaden derselben Art zu verleihen."
+    }
+  ],
+  "text": "Beschütze die Natur und die Menschen vor der Zerstörung Du gehst in der Wildnis und anderswo auf Beutejagd und nutzt deine Fähigkeiten als Jäger, um die Natur und die Menschen überall vor Kräften zu schützen, die sie zerstören würden.\n\nLevel 3: Jägerkunde\n\nSie können die Kräfte der Natur herbeirufen, um bestimmte Stärken und Schwächen Ihrer Beute aufzudecken. Während eine Kreatur durch Ihr Jägermal gekennzeichnet ist, wissen Sie, ob die Kreatur über Immunitäten, Resistenzen oder Verwundbarkeiten verfügt, und wenn die Kreatur welche hat, wissen Sie, um welche es sich handelt.\n\nLevel 3: Jägerbeute\n\nSie erhalten eine der folgenden Funktionsoptionen Ihrer Wahl. Immer wenn Sie eine Kurze oder Lange Rast beendet haben, können Sie die gewählte Option durch die andere ersetzen.\n\nKolossjäger. Ihre Hartnäckigkeit kann selbst die widerstandsfähigsten Feinde zermürben. Wenn du eine Kreatur mit einer Waffe triffst, fügt die Waffe dem Ziel zusätzlich 1W8 Schaden zu, wenn ihr Trefferpunkte fehlen. Du kannst diesen zusätzlichen Schaden nur einmal pro Spielzug verursachen.\n\nHordenbrecher. Einmal in jedem deiner Züge, wenn du einen Angriff mit einer Waffe ausführst, kannst du einen weiteren Angriff mit derselben Waffe gegen eine andere Kreatur ausführen, die sich innerhalb von 5 Fuß vom ursprünglichen Ziel befindet, die sich innerhalb der Reichweite der Waffe befindet und die du in diesem Zug nicht angegriffen hast.\n\nLevel 7: Verteidigungstaktiken\n\nSie erhalten eine der folgenden Funktionsoptionen Ihrer Wahl. Immer wenn Sie eine Kurze oder Lange Rast beendet haben, können Sie die gewählte Option durch die andere ersetzen.\n\nEntkomme der Horde. Gelegenheitsangriffe haben Nachteile für Sie.\n\nMultiattack-Verteidigung. Wenn eine Kreatur dich mit einem Angriffswurf trifft, hat diese Kreatur in diesem Zug bei allen anderen Angriffswürfen gegen dich einen Nachteil.\n\nLevel 11: Überlegene Jägerbeute\n\nEinmal pro Spielzug, wenn du einer Kreatur, die mit deinem Jägermal markiert ist, Schaden zufügst, kannst du den zusätzlichen Schaden dieses Zaubers auch einer anderen Kreatur zufügen, die du in einem Umkreis von 30 Fuß um die erste Kreatur sehen kannst.\n\nStufe 15: Überlegene Jägerverteidigung\n\nWenn du Schaden erleidest, kannst du eine Reaktion ausführen, um dir bis zum Ende der aktuellen Runde Resistenz gegen diesen Schaden und jeden anderen Schaden derselben Art zu verleihen.",
+  "tags": [],
+  "class": "Waldlaeufer",
+  "class_id": "waldlaeufer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

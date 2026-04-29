@@ -1,0 +1,34 @@
+{
+  "id": "abstossende-explosion",
+  "name": "Abstoßende Explosion",
+  "original_name": "Repelling Blast",
+  "kind": "eldritch_invocation",
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:eldritch-invocation",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "",
+  "cost_original": "",
+  "prerequisite": "Hexenmeister der Stufe 2+, ein Hexenmeister-Zaubertrick, der durch einen Angriffswurf Schaden verursacht",
+  "prerequisite_original": "Level 2+ Warlock, a Warlock Cantrip That Deals Damage via an Attack Roll",
+  "summary": "Wählen Sie einen Ihrer bekannten Hexenmeister-Cantrips, der einen Angriffswurf erfordert. Wenn du eine große oder kleinere Kreatur mit diesem Cantrip triffst, kannst du die Kreatur bis zu 10 Fuß direkt von dir wegschieben.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Choose one of your known Warlock cantrips that requires an attack roll. When you hit a Large or smaller creature with that cantrip, you can push the creature up to 10 feet straight away from you.",
+      "text_de": "Wählen Sie einen Ihrer bekannten Hexenmeister-Cantrips, der einen Angriffswurf erfordert. Wenn du eine große oder kleinere Kreatur mit diesem Cantrip triffst, kannst du die Kreatur bis zu 10 Fuß direkt von dir wegschieben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Repeatable. You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.",
+      "text_de": "Wiederholbar. Sie können diesen Anruf mehr als einmal erhalten. Wählen Sie jedes Mal einen anderen geeigneten Cantrip aus."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "zwei-waffen-kampf",
+  "type": "feat",
+  "name": "Zwei-Waffen-Kampf",
+  "original_name": "Two Weapon Fighting",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:two-weapon-fighting",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Kampfstil-Talente",
+  "group": "Kampfstil-Talente",
+  "prerequisites": [
+    "Talent im Kampfstil"
+  ],
+  "summary": "Voraussetzung: Talent im Kampfstil",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Talent im Kampfstil"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie aufgrund der Verwendung einer Waffe mit der Lichteigenschaft einen zusätzlichen Angriff ausführen, können Sie Ihren Fähigkeitsmodifikator zum Schaden dieses Angriffs hinzufügen, sofern Sie ihn nicht bereits zum Schaden hinzufügen."
+    }
+  ],
+  "text": "Voraussetzung: Talent im Kampfstil\n\nWenn Sie aufgrund der Verwendung einer Waffe mit der Lichteigenschaft einen zusätzlichen Angriff ausführen, können Sie Ihren Fähigkeitsmodifikator zum Schaden dieses Angriffs hinzufügen, sofern Sie ihn nicht bereits zum Schaden hinzufügen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

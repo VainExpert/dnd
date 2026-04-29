@@ -1,0 +1,29 @@
+{
+  "id": "beschleunigter-zauber",
+  "name": "Beschleunigter Zauber",
+  "original_name": "Quickened Spell",
+  "kind": "metamagic_option",
+  "class": "Zauberer",
+  "class_id": "zauberer",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/sorcerer:metamagic",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "2 Zauberpunkte",
+  "cost_original": "2 Sorcery Points",
+  "prerequisite": "",
+  "prerequisite_original": "",
+  "summary": "Wenn du einen Zauberspruch wirkst, der eine Zauberzeit einer Aktion hat, kannst du 2 Zauberpunkte ausgeben, um die Zauberzeit in eine Bonusaktion für diesen Zauber zu ändern. Sie können einen Zauber auf diese Weise nicht ändern, wenn Sie in der aktuellen Runde bereits einen Zauber der Stufe 1+ gewirkt haben, und Sie können in dieser Runde auch keinen Zauber der Stufe 1+ wirken, nachdem Sie einen Zauber auf diese Weise geändert haben.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "When you cast a spell that has a casting time of an action, you can spend 2 Sorcery Points to change the casting time to a Bonus Action for this casting. You can’t modify a spell in this way if you’ve already cast a level 1+ spell on the current turn, nor can you cast a level 1+ spell on this turn after modifying a spell in this way.",
+      "text_de": "Wenn du einen Zauberspruch wirkst, der eine Zauberzeit einer Aktion hat, kannst du 2 Zauberpunkte ausgeben, um die Zauberzeit in eine Bonusaktion für diesen Zauber zu ändern. Sie können einen Zauber auf diese Weise nicht ändern, wenn Sie in der aktuellen Runde bereits einen Zauber der Stufe 1+ gewirkt haben, und Sie können in dieser Runde auch keinen Zauber der Stufe 1+ wirken, nachdem Sie einen Zauber auf diese Weise geändert haben."
+    }
+  ]
+}

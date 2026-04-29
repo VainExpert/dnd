@@ -1,0 +1,54 @@
+{
+  "id": "investition-des-kettenmeisters",
+  "name": "Investition des Kettenmeisters",
+  "original_name": "Investment of the Chain Master",
+  "kind": "eldritch_invocation",
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:eldritch-invocation",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "",
+  "cost_original": "",
+  "prerequisite": "Level 5+ Hexenmeister, Pakt der Kettenaufrufung",
+  "prerequisite_original": "Level 5+ Warlock, Pact of the Chain Invocation",
+  "summary": "Wenn du „Vertrauten finden“ wirkst, überträgst du den beschworenen Vertrauten mit einem Maß deiner unheimlichen Kraft und gewährt der Kreatur die folgenden Vorteile.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "When you cast Find Familiar , you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits.",
+      "text_de": "Wenn du „Vertrauten finden“ wirkst, überträgst du den beschworenen Vertrauten mit einem Maß deiner unheimlichen Kraft und gewährt der Kreatur die folgenden Vorteile."
+    },
+    {
+      "type": "paragraph",
+      "text": "Aerial or Aquatic. The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet.",
+      "text_de": "Luft- oder Wassersport. Der Vertraute erhält entweder eine Fluggeschwindigkeit oder eine Schwimmgeschwindigkeit (nach Wahl) von 40 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Quick Attack. As a Bonus Action, you can command the familiar to take the Attack action.",
+      "text_de": "Schneller Angriff. Als Bonusaktion können Sie dem Vertrauten befehlen, die Angriffsaktion durchzuführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Necrotic or Radiant Damage. Whenever the familiar deals Bludgeoning, Piercing, or Slashing damage, you can make it deal Necrotic or Radiant damage instead.",
+      "text_de": "Nekrotischer oder strahlender Schaden. Immer wenn der Vertraute Wucht-, Stich- oder Hiebschaden verursacht, können Sie ihn stattdessen nekrotischen oder strahlenden Schaden zufügen lassen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Your Save DC. If the familiar forces a creature to make a saving throw, it uses your spell save DC.",
+      "text_de": "Ihr Save DC. Wenn der Vertraute eine Kreatur zu einem Rettungswurf zwingt, nutzt sie deinen Zauberwurf gegen SG."
+    },
+    {
+      "type": "paragraph",
+      "text": "Resistance. When the familiar takes damage, you can take a Reaction to grant it Resistance against that damage.",
+      "text_de": "Widerstand. Wenn der Vertraute Schaden erleidet, können Sie eine Reaktion ausführen, um ihm Resistenz gegen diesen Schaden zu verleihen."
+    }
+  ]
+}

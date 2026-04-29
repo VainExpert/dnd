@@ -1,0 +1,99 @@
+{
+  "id": "krieger-des-schattens",
+  "type": "subclass",
+  "name": "Krieger des Schattens",
+  "original_name": "Warrior of Shadow",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/monk:warrior-of-shadow",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Nutzen Sie die Schattenkraft für Heimlichkeit und Täuschung",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Nutzen Sie die Schattenkraft für Heimlichkeit und Täuschung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Krieger des Schattens üben Heimlichkeit und Täuschung und machen sich die Macht des Schattenfells zunutze. Sie fühlen sich in der Dunkelheit zu Hause, können Düsternis um sich herum erzeugen, um sich zu verstecken, von Schatten zu Schatten springen und eine geisterhafte Gestalt annehmen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Schattenkünste"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast gelernt, die Macht des Schattenfells zu nutzen und dadurch die folgenden Vorteile zu erlangen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dunkelheit. Du kannst 1 Fokuspunkt aufwenden, um den Zauber „Dunkelheit“ ohne Zauberkomponenten zu wirken. Mit dieser Funktion können Sie innerhalb des Wirkungsbereichs des Zaubers sehen, wenn Sie ihn wirken. Während der Zauber anhält, kannst du zu Beginn jedes deiner Züge seinen Bereich der Dunkelheit auf ein Feld innerhalb von 60 Fuß um dich herum verschieben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dunkelsicht. Du erhältst Dunkelsicht mit einer Reichweite von 60 Fuß. Wenn Sie Dunkelsicht bereits haben, erhöht sich die Reichweite um 60 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schattenhafte Erfindungen. Du kennst den Zauber „Kleine Illusion“. Weisheit ist deine Zauberfähigkeit dafür."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Schattenschritt"
+    },
+    {
+      "type": "paragraph",
+      "text": "Während Sie sich vollständig im Dämmerlicht oder in der Dunkelheit befinden, können Sie eine Bonusaktion nutzen, um sich bis zu 60 Fuß weit zu einem freien Raum zu teleportieren, den Sie sehen können und der sich ebenfalls im Dämmerlicht oder in der Dunkelheit befindet. Sie haben dann einen Vorteil beim nächsten Nahkampfangriff, den Sie vor dem Ende der aktuellen Runde ausführen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 11: Verbesserter Schattenschritt"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können Ihre Verbindung zu Shadowfell nutzen, um Ihre Teleportation zu stärken. Wenn Sie Ihren Schattenschritt verwenden, können Sie 1 Fokuspunkt ausgeben, um die Anforderung zu beseitigen, dass Sie für die Verwendung der Funktion bei schwachem Licht oder Dunkelheit beginnen und enden müssen. Im Rahmen dieser Bonusaktion können Sie unmittelbar nach dem Teleportieren einen unbewaffneten Schlag ausführen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 17: Umhang der Schatten"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als magische Aktion kannst du, während du dich vollständig im Dämmerlicht oder in der Dunkelheit befindest, 3 Fokuspunkte aufwenden, um dich 1 Minute lang in Schatten zu hüllen, bis du den Zustand „Kampfunfähig“ hast oder bis du deinen Zug in Hellem Licht beendest. Während Sie von diesen Schatten umgeben sind, profitieren Sie von den folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Unsichtbarkeit. Sie haben den unsichtbaren Zustand."
+    },
+    {
+      "type": "paragraph",
+      "text": "Teilweise körperlos. Sie können sich durch besetzte Felder bewegen, als wären sie schwieriges Gelände. Wenn Sie Ihren Zug auf einem solchen Feld beenden, werden Sie auf das letzte freie Feld verschoben, auf dem Sie sich befanden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schattengewitter. Sie können Ihren Schlaghagel nutzen, ohne Fokuspunkte auszugeben."
+    }
+  ],
+  "text": "Nutzen Sie die Schattenkraft für Heimlichkeit und Täuschung\n\nKrieger des Schattens üben Heimlichkeit und Täuschung und machen sich die Macht des Schattenfells zunutze. Sie fühlen sich in der Dunkelheit zu Hause, können Düsternis um sich herum erzeugen, um sich zu verstecken, von Schatten zu Schatten springen und eine geisterhafte Gestalt annehmen.\n\nLevel 3: Schattenkünste\n\nDu hast gelernt, die Macht des Schattenfells zu nutzen und dadurch die folgenden Vorteile zu erlangen.\n\nDunkelheit. Du kannst 1 Fokuspunkt aufwenden, um den Zauber „Dunkelheit“ ohne Zauberkomponenten zu wirken. Mit dieser Funktion können Sie innerhalb des Wirkungsbereichs des Zaubers sehen, wenn Sie ihn wirken. Während der Zauber anhält, kannst du zu Beginn jedes deiner Züge seinen Bereich der Dunkelheit auf ein Feld innerhalb von 60 Fuß um dich herum verschieben.\n\nDunkelsicht. Du erhältst Dunkelsicht mit einer Reichweite von 60 Fuß. Wenn Sie Dunkelsicht bereits haben, erhöht sich die Reichweite um 60 Fuß.\n\nSchattenhafte Erfindungen. Du kennst den Zauber „Kleine Illusion“. Weisheit ist deine Zauberfähigkeit dafür.\n\nLevel 6: Schattenschritt\n\nWährend Sie sich vollständig im Dämmerlicht oder in der Dunkelheit befinden, können Sie eine Bonusaktion nutzen, um sich bis zu 60 Fuß weit zu einem freien Raum zu teleportieren, den Sie sehen können und der sich ebenfalls im Dämmerlicht oder in der Dunkelheit befindet. Sie haben dann einen Vorteil beim nächsten Nahkampfangriff, den Sie vor dem Ende der aktuellen Runde ausführen.\n\nLevel 11: Verbesserter Schattenschritt\n\nSie können Ihre Verbindung zu Shadowfell nutzen, um Ihre Teleportation zu stärken. Wenn Sie Ihren Schattenschritt verwenden, können Sie 1 Fokuspunkt ausgeben, um die Anforderung zu beseitigen, dass Sie für die Verwendung der Funktion bei schwachem Licht oder Dunkelheit beginnen und enden müssen. Im Rahmen dieser Bonusaktion können Sie unmittelbar nach dem Teleportieren einen unbewaffneten Schlag ausführen.\n\nLevel 17: Umhang der Schatten\n\nAls magische Aktion kannst du, während du dich vollständig im Dämmerlicht oder in der Dunkelheit befindest, 3 Fokuspunkte aufwenden, um dich 1 Minute lang in Schatten zu hüllen, bis du den Zustand „Kampfunfähig“ hast oder bis du deinen Zug in Hellem Licht beendest. Während Sie von diesen Schatten umgeben sind, profitieren Sie von den folgenden Vorteilen.\n\nUnsichtbarkeit. Sie haben den unsichtbaren Zustand.\n\nTeilweise körperlos. Sie können sich durch besetzte Felder bewegen, als wären sie schwieriges Gelände. Wenn Sie Ihren Zug auf einem solchen Feld beenden, werden Sie auf das letzte freie Feld verschoben, auf dem Sie sich befanden.\n\nSchattengewitter. Sie können Ihren Schlaghagel nutzen, ohne Fokuspunkte auszugeben.",
+  "tags": [],
+  "class": "Moench",
+  "class_id": "moench",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

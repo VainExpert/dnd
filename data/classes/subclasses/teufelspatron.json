@@ -1,0 +1,123 @@
+{
+  "id": "teufelspatron",
+  "type": "subclass",
+  "name": "Teufelspatron",
+  "original_name": "Fiend Patron",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:fiend-patron",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Machen Sie einen Deal mit den unteren Ebenen",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Machen Sie einen Deal mit den unteren Ebenen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihr Pakt bezieht sich auf die unteren Ebenen, die Bereiche des Verderbens. Sie könnten einen Handel mit einem Dämonenfürsten wie Demogorgon oder Orcus schließen; ein Erzteufel wie Asmodeus; oder ein Grubenteufel, Balor, Yugoloth oder eine Nachthexe, die besonders mächtig ist. Die Ziele dieses Gönners sind böse – die Korruption oder Zerstörung aller Dinge, letztendlich auch Sie selbst – und Ihr Weg wird durch das Ausmaß bestimmt, in dem Sie gegen diese Ziele kämpfen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Segen des Dunklen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie einen Feind auf 0 Trefferpunkte reduzieren, erhalten Sie temporäre Trefferpunkte in Höhe Ihres Charisma-Modifikators plus Ihrer Hexenmeisterstufe (mindestens 1 temporärer Trefferpunkt). Sie erhalten diesen Vorteil auch, wenn jemand anderes einen Feind im Umkreis von 10 Fuß um Sie auf 0 Trefferpunkte reduziert."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Unterweltlerzauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Magie deines Gönners sorgt dafür, dass du immer bestimmte Zaubersprüche parat hast; Wenn Sie eine in der Tabelle „Unterweltlerzauber“ angegebene Hexenmeisterstufe erreichen, stehen Ihnen danach immer die aufgeführten Zauber bereit."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Teufelszauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Hexenmeister-Level",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Brennende Hände, Befehl, Sengender Strahl, Vorschlag"
+        ],
+        [
+          "5",
+          "Feuerball, stinkende Wolke"
+        ],
+        [
+          "7",
+          "Feuerschild, Feuerwand"
+        ],
+        [
+          "9",
+          "Geas, Insektenplage"
+        ]
+      ],
+      "text": "Hexenmeister-Stufenzauber: 3 Brennende Hände, Befehl, Sengender Strahl, Vorschlag 5, Feuerball, Stinkende Wolke, 7 Feuerschild, Feuerwand, 9 Geas, Insektenplage"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Das eigene Glück des Dunklen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können Ihren teuflischen Gönner bitten, das Schicksal zu Ihren Gunsten zu ändern. Wenn Sie eine Fähigkeitsprüfung oder einen Rettungswurf durchführen, können Sie diese Funktion nutzen, um 1W10 zu Ihrem Wurf hinzuzufügen. Sie können dies tun, nachdem Sie den Wurf gesehen haben, aber bevor irgendwelche Effekte des Wurfs auftreten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diese Funktion so oft verwenden, wie es Ihrem Charisma-Modifikator entspricht (mindestens einmal), aber Sie können sie nicht mehr als einmal pro Wurf verwenden. Wenn Sie eine Lange Rast beenden, erhalten Sie alle verbrauchten Nutzungen zurück."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Teuflische Widerstandsfähigkeit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wählen Sie eine andere Schadensart als „Kraft“, wenn Sie eine kurze oder lange Rast beenden. Du hast Resistenz gegen diese Schadensart, bis du mit dieser Funktion eine andere wählst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Durch die Hölle schleudern"
+    },
+    {
+      "type": "paragraph",
+      "text": "Einmal pro Spielzug, wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du versuchen, das Ziel sofort durch die unteren Ebenen zu transportieren. Dem Ziel muss ein Charisma-Rettungswurf gegen den SG deines Zauberwurfs gelingen, sonst verschwindet das Ziel und rast durch eine Albtraumlandschaft. Das Ziel erleidet 8W10 psychischen Schaden, wenn es kein Unterweltler ist, und es hat den Zustand „Kampfunfähigkeit“ bis zum Ende Ihres nächsten Zuges, wenn es auf das Feld zurückkehrt, auf dem es sich zuvor befand, oder auf das nächste unbesetzte Feld."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie sie erst dann erneut nutzen, wenn Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Paktmagie-Zauberslot (keine Aktion erforderlich), um sie wieder nutzen zu können."
+    }
+  ],
+  "text": "Machen Sie einen Deal mit den unteren Ebenen\n\nIhr Pakt bezieht sich auf die unteren Ebenen, die Bereiche des Verderbens. Sie könnten einen Handel mit einem Dämonenfürsten wie Demogorgon oder Orcus schließen; ein Erzteufel wie Asmodeus; oder ein Grubenteufel, Balor, Yugoloth oder eine Nachthexe, die besonders mächtig ist. Die Ziele dieses Gönners sind böse – die Korruption oder Zerstörung aller Dinge, letztendlich auch Sie selbst – und Ihr Weg wird durch das Ausmaß bestimmt, in dem Sie gegen diese Ziele kämpfen.\n\nLevel 3: Segen des Dunklen\n\nWenn Sie einen Feind auf 0 Trefferpunkte reduzieren, erhalten Sie temporäre Trefferpunkte in Höhe Ihres Charisma-Modifikators plus Ihrer Hexenmeisterstufe (mindestens 1 temporärer Trefferpunkt). Sie erhalten diesen Vorteil auch, wenn jemand anderes einen Feind im Umkreis von 10 Fuß um Sie auf 0 Trefferpunkte reduziert.\n\nLevel 3: Unterweltlerzauber\n\nDie Magie deines Gönners sorgt dafür, dass du immer bestimmte Zaubersprüche parat hast; Wenn Sie eine in der Tabelle „Unterweltlerzauber“ angegebene Hexenmeisterstufe erreichen, stehen Ihnen danach immer die aufgeführten Zauber bereit.\n\nTeufelszauber\n\nHexenmeister-Stufenzauber: 3 Brennende Hände, Befehl, Sengender Strahl, Vorschlag 5, Feuerball, Stinkende Wolke, 7 Feuerschild, Feuerwand, 9 Geas, Insektenplage\n\nLevel 6: Das eigene Glück des Dunklen\n\nSie können Ihren teuflischen Gönner bitten, das Schicksal zu Ihren Gunsten zu ändern. Wenn Sie eine Fähigkeitsprüfung oder einen Rettungswurf durchführen, können Sie diese Funktion nutzen, um 1W10 zu Ihrem Wurf hinzuzufügen. Sie können dies tun, nachdem Sie den Wurf gesehen haben, aber bevor irgendwelche Effekte des Wurfs auftreten.\n\nSie können diese Funktion so oft verwenden, wie es Ihrem Charisma-Modifikator entspricht (mindestens einmal), aber Sie können sie nicht mehr als einmal pro Wurf verwenden. Wenn Sie eine Lange Rast beenden, erhalten Sie alle verbrauchten Nutzungen zurück.\n\nLevel 10: Teuflische Widerstandsfähigkeit\n\nWählen Sie eine andere Schadensart als „Kraft“, wenn Sie eine kurze oder lange Rast beenden. Du hast Resistenz gegen diese Schadensart, bis du mit dieser Funktion eine andere wählst.\n\nLevel 14: Durch die Hölle schleudern\n\nEinmal pro Spielzug, wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du versuchen, das Ziel sofort durch die unteren Ebenen zu transportieren. Dem Ziel muss ein Charisma-Rettungswurf gegen den SG deines Zauberwurfs gelingen, sonst verschwindet das Ziel und rast durch eine Albtraumlandschaft. Das Ziel erleidet 8W10 psychischen Schaden, wenn es kein Unterweltler ist, und es hat den Zustand „Kampfunfähigkeit“ bis zum Ende Ihres nächsten Zuges, wenn es auf das Feld zurückkehrt, auf dem es sich zuvor befand, oder auf das nächste unbesetzte Feld.\n\nSobald Sie diese Funktion nutzen, können Sie sie erst dann erneut nutzen, wenn Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Paktmagie-Zauberslot (keine Aktion erforderlich), um sie wieder nutzen zu können.",
+  "tags": [],
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

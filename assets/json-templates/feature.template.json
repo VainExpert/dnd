@@ -1,0 +1,23 @@
+{
+  "id": "<feature-id>",
+  "type": "feature",
+  "feature_type": "class",
+  "name": "<Feature Name>",
+  "rules_version": "2024",
+  "source": "<source>",
+  "granted_by": {
+    "kind": "class",
+    "id": "<class-id>"
+  },
+  "level": 1,
+  "choice_group": null,
+  "prerequisites": [],
+  "summary": "",
+  "text": "",
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_item_ids": [],
+  "resource_grants": [],
+  "tags": []
+}

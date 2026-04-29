@@ -1,0 +1,57 @@
+{
+  "id": "genie-magie",
+  "type": "feat",
+  "name": "Genie-Magie",
+  "original_name": "Genie Magic",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:genie-magic",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Level 4+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Level 4+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wunschmagie. Als magische Aktion können Sie einen Zauber der Stufe 1 Ihrer Wahl aus der Liste der Zaubererzauber wirken, dessen Zauberzeit einer Aktion entspricht. Sobald Sie diesen Vorteil genutzt haben, können Sie dies nicht mehr tun, bis Sie eine Lange Rast beendet haben. Die Zauberfähigkeit des Zaubers ist die Fähigkeit, die durch dieses Talent erhöht wird."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Stufe 11 erreichen, wird der Zauber, den Sie mit diesem Talent wirken, so gewirkt, als ob Sie einen Zauberslot der Stufe 2 verwenden würden. Wenn Sie Stufe 17 erreichen, wird der Zauber so gewirkt, als ob Sie einen Zauberslot der Stufe 3 verwenden würden."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Level 4+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20.\n\nWunschmagie. Als magische Aktion können Sie einen Zauber der Stufe 1 Ihrer Wahl aus der Liste der Zaubererzauber wirken, dessen Zauberzeit einer Aktion entspricht. Sobald Sie diesen Vorteil genutzt haben, können Sie dies nicht mehr tun, bis Sie eine Lange Rast beendet haben. Die Zauberfähigkeit des Zaubers ist die Fähigkeit, die durch dieses Talent erhöht wird.\n\nWenn Sie Stufe 11 erreichen, wird der Zauber, den Sie mit diesem Talent wirken, so gewirkt, als ob Sie einen Zauberslot der Stufe 2 verwenden würden. Wenn Sie Stufe 17 erreichen, wird der Zauber so gewirkt, als ob Sie einen Zauberslot der Stufe 3 verwenden würden.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "id": "eid-der-rache",
+  "type": "subclass",
+  "name": "Eid der Rache",
+  "original_name": "Oath of Vengeance",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/paladin:oath-of-vengeance",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Bestrafen Sie Übeltäter um jeden Preis",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Bestrafen Sie Übeltäter um jeden Preis"
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Racheeid ist eine feierliche Verpflichtung, diejenigen zu bestrafen, die schwere Taten begangen haben. Wenn böse Armeen hilflose Dorfbewohner abschlachten, wenn ein Tyrann sich dem Willen der Götter widersetzt, wenn eine Diebesgilde zu gewalttätig wird, wenn ein Drache durch das Land tobt – in Zeiten wie diesen erheben sich Paladine und schwören den Racheeid, um wiedergutzumachen, was schief gelaufen ist."
+    },
+    {
+      "type": "paragraph",
+      "text": "Diese Paladine teilen die folgenden Grundsätze:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Zeige den Bösen keine Gnade.",
+        "Bekämpfe Ungerechtigkeit und ihre Ursachen.",
+        "Helfen Sie denen, die durch Ungerechtigkeit geschädigt werden."
+      ],
+      "text": "Zeige den Bösen keine Gnade. Bekämpfe Ungerechtigkeit und ihre Ursachen. Helfen Sie denen, die durch Ungerechtigkeit geschädigt werden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Racheschwur-Zauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Magie deines Schwurs stellt sicher, dass du bestimmte Zauber immer bereit hast; Wenn Sie eine Paladin-Stufe erreichen, die in der Zaubertabelle „Eid der Rache“ angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Eid der Rache-Zauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Paladin-Level",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Bane, Mal des Jägers"
+        ],
+        [
+          "5",
+          "Halten Sie die Person, Misty Step"
+        ],
+        [
+          "9",
+          "Eile, Schutz vor Energie"
+        ],
+        [
+          "13",
+          "Verbannung, Dimensionstür"
+        ],
+        [
+          "17",
+          "Halten Sie Monster, Wahrsagen"
+        ]
+      ],
+      "text": "Paladin-Level-Zauber 3 Fluch, Zeichen des Jägers 5 Person festhalten, Nebelschritt 9 Eile, Schutz vor Energie 13 Verbannung, Dimensionstür 17 Monster festhalten, Wahrsagerei"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Gelübde der Feindschaft"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du die Angriffsaktion annimmst, kannst du eine Anwendung deiner Channel Divinity nutzen, um einen Feindschaftsschwur gegen eine Kreatur abzulegen, die du in einem Umkreis von 30 Fuß um dich herum sehen kannst. Du hast 1 Minute lang oder bis du diese Funktion erneut verwendest, einen Vorteil bei Angriffswürfen gegen die Kreatur."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn die Trefferpunkte der Kreatur vor Ende des Gelübdes auf 0 sinken, können Sie das Gelübde auf eine andere Kreatur im Umkreis von 30 Fuß um Sie herum übertragen (keine Aktion erforderlich)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Unerbittlicher Rächer"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dein übernatürlicher Fokus hilft dir, den Rückzug eines Feindes zu versperren. Wenn du eine Kreatur mit einem Gelegenheitsangriff triffst, kannst du die Geschwindigkeit der Kreatur bis zum Ende der aktuellen Runde auf 0 reduzieren. Anschließend können Sie sich im Rahmen derselben Reaktion bis zur Hälfte Ihrer Geschwindigkeit bewegen. Diese Bewegung provoziert keine Gelegenheitsangriffe."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Seele der Rache"
+    },
+    {
+      "type": "paragraph",
+      "text": "Unmittelbar nachdem eine Kreatur, die unter dem Effekt deines Feindschaftsgelübdes steht, mit einem Angriffswurf getroffen oder verfehlt wurde, kannst du eine Reaktion ausführen, um einen Nahkampfangriff gegen diese Kreatur durchzuführen, wenn sie sich in Reichweite befindet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 20: Racheengel"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion erhalten Sie die folgenden Vorteile für 10 Minuten oder bis Sie sie beenden (keine Aktion erforderlich). Sobald Sie diese Funktion verwenden, können Sie sie erst dann wieder verwenden, wenn Sie eine Lange Rast beendet haben. Sie können Ihre Nutzung auch wiederherstellen, indem Sie einen Zauberslot der Stufe 5 verbrauchen (keine Aktion erforderlich)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Flug. Dir wachsen Spektralflügel auf dem Rücken, du hast eine Fluggeschwindigkeit von 60 Fuß und kannst schweben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schreckliche Aura. Immer wenn ein Feind in deiner Aura des Schutzes an der Reihe ist, muss dieser Kreatur ein Weisheits-Rettungswurf gelingen oder sie muss 1 Minute lang oder bis sie Schaden erleidet, im Zustand „Verängstigt“ sein. Angriffswürfe gegen die verängstigte Kreatur haben einen Vorteil."
+    }
+  ],
+  "text": "Bestrafen Sie Übeltäter um jeden Preis\n\nDer Racheeid ist eine feierliche Verpflichtung, diejenigen zu bestrafen, die schwere Taten begangen haben. Wenn böse Armeen hilflose Dorfbewohner abschlachten, wenn ein Tyrann sich dem Willen der Götter widersetzt, wenn eine Diebesgilde zu gewalttätig wird, wenn ein Drache durch das Land tobt – in Zeiten wie diesen erheben sich Paladine und schwören den Racheeid, um wiedergutzumachen, was schief gelaufen ist.\n\nDiese Paladine teilen die folgenden Grundsätze:\n\nZeige den Bösen keine Gnade. Bekämpfe Ungerechtigkeit und ihre Ursachen. Helfen Sie denen, die durch Ungerechtigkeit geschädigt werden.\n\nStufe 3: Racheschwur-Zauber\n\nDie Magie deines Schwurs stellt sicher, dass du bestimmte Zauber immer bereit hast; Wenn Sie eine Paladin-Stufe erreichen, die in der Zaubertabelle „Eid der Rache“ angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nEid der Rache-Zauber\n\nPaladin-Level-Zauber 3 Fluch, Zeichen des Jägers 5 Person festhalten, Nebelschritt 9 Eile, Schutz vor Energie 13 Verbannung, Dimensionstür 17 Monster festhalten, Wahrsagerei\n\nStufe 3: Gelübde der Feindschaft\n\nWenn du die Angriffsaktion annimmst, kannst du eine Anwendung deiner Channel Divinity nutzen, um einen Feindschaftsschwur gegen eine Kreatur abzulegen, die du in einem Umkreis von 30 Fuß um dich herum sehen kannst. Du hast 1 Minute lang oder bis du diese Funktion erneut verwendest, einen Vorteil bei Angriffswürfen gegen die Kreatur.\n\nWenn die Trefferpunkte der Kreatur vor Ende des Gelübdes auf 0 sinken, können Sie das Gelübde auf eine andere Kreatur im Umkreis von 30 Fuß um Sie herum übertragen (keine Aktion erforderlich).\n\nLevel 7: Unerbittlicher Rächer\n\nDein übernatürlicher Fokus hilft dir, den Rückzug eines Feindes zu versperren. Wenn du eine Kreatur mit einem Gelegenheitsangriff triffst, kannst du die Geschwindigkeit der Kreatur bis zum Ende der aktuellen Runde auf 0 reduzieren. Anschließend können Sie sich im Rahmen derselben Reaktion bis zur Hälfte Ihrer Geschwindigkeit bewegen. Diese Bewegung provoziert keine Gelegenheitsangriffe.\n\nLevel 15: Seele der Rache\n\nUnmittelbar nachdem eine Kreatur, die unter dem Effekt deines Feindschaftsgelübdes steht, mit einem Angriffswurf getroffen oder verfehlt wurde, kannst du eine Reaktion ausführen, um einen Nahkampfangriff gegen diese Kreatur durchzuführen, wenn sie sich in Reichweite befindet.\n\nLevel 20: Racheengel\n\nAls Bonusaktion erhalten Sie die folgenden Vorteile für 10 Minuten oder bis Sie sie beenden (keine Aktion erforderlich). Sobald Sie diese Funktion verwenden, können Sie sie erst dann wieder verwenden, wenn Sie eine Lange Rast beendet haben. Sie können Ihre Nutzung auch wiederherstellen, indem Sie einen Zauberslot der Stufe 5 verbrauchen (keine Aktion erforderlich).\n\nFlug. Dir wachsen Spektralflügel auf dem Rücken, du hast eine Fluggeschwindigkeit von 60 Fuß und kannst schweben.\n\nSchreckliche Aura. Immer wenn ein Feind in deiner Aura des Schutzes an der Reihe ist, muss dieser Kreatur ein Weisheits-Rettungswurf gelingen oder sie muss 1 Minute lang oder bis sie Schaden erleidet, im Zustand „Verängstigt“ sein. Angriffswürfe gegen die verängstigte Kreatur haben einen Vorteil.",
+  "tags": [],
+  "class": "Paladin",
+  "class_id": "paladin",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

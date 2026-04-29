@@ -1,0 +1,90 @@
+{
+  "id": "zecher",
+  "type": "background",
+  "name": "Zecher",
+  "original_name": "Carouser",
+  "rules_version": "2024",
+  "source": "Astarion's Book of Hungers",
+  "source_url": "http://dnd2024.wikidot.com/background:carouser",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Exotisch",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Geschicklichkeit, Intelligenz, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Geschicklichkeit, Intelligenz, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Unermüdlicher Nachtschwärmer"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Täuschung und Überzeugung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkompetenz: Wählen Sie eine Art Gaming-Set"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Dolch, Spielset (wie oben), feine Kleidung, Glasflasche, Spiegel, Parfüm, Beutel, Zunderbüchse, 19 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du bist im pulsierenden Herzen einer Großstadt wie Baldur’s Gate erwachsen geworden. Sie haben unzählige Abende in Tavernen, Schauspielhäusern, Salons und Spielhöllen verbracht und alles genossen, was die Stadt zu bieten hat. Sie sind ein Naturtalent im Umgang mit Menschen, um ihre Geheimnisse zu erfahren, sei es bei einem Spiel mit hohen Einsätzen oder bei einer hochklassigen Soiree. Man wurde vielleicht aus einem oder mehreren Lokalen geworfen, aber nur von Leuten, die nicht wissen, wie man feiert."
+    }
+  ],
+  "text": "Fähigkeitswerte: Geschicklichkeit, Intelligenz, Charisma\n\nTalent: Unermüdlicher Nachtschwärmer\n\nFertigkeiten: Täuschung und Überzeugung\n\nWerkzeugkompetenz: Wählen Sie eine Art Gaming-Set\n\nAusrüstung: Wähle A oder B: (A) Dolch, Spielset (wie oben), feine Kleidung, Glasflasche, Spiegel, Parfüm, Beutel, Zunderbüchse, 19 GP; oder (B) 50 GP\n\nDu bist im pulsierenden Herzen einer Großstadt wie Baldur’s Gate erwachsen geworden. Sie haben unzählige Abende in Tavernen, Schauspielhäusern, Salons und Spielhöllen verbracht und alles genossen, was die Stadt zu bieten hat. Sie sind ein Naturtalent im Umgang mit Menschen, um ihre Geheimnisse zu erfahren, sei es bei einem Spiel mit hohen Einsätzen oder bei einer hochklassigen Soiree. Man wurde vielleicht aus einem oder mehreren Lokalen geworfen, aber nur von Leuten, die nicht wissen, wie man feiert.",
+  "tags": [],
+  "ability_scores": [
+    "dex",
+    "int",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "dex",
+      "int",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Taeuschung",
+    "Ueberzeugung"
+  ],
+  "tool_proficiencies": [
+    "Wählen Sie eine Art Gaming-Set\n"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "unermuedlicher-nachtschwaermer",
+  "granted_feat_name": "Unermüdlicher Nachtschwärmer\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Dolch, Spielset (wie oben), feine Kleidung, Glasflasche, Spiegel, Parfüm, Beutel, Zunderbüchse, 19 GP; oder (B) 50 GP\n\nDu bist im pulsierenden Herzen einer Großstadt wie Baldur’s Gate erwachsen geworden. Sie haben unzählige Abende in Tavernen, Schauspielhäusern, Salons und Spielhöllen verbracht und alles genossen, was die Stadt zu bieten hat. Sie sind ein Naturtalent im Umgang mit Menschen, um ihre Geheimnisse zu erfahren, sei es bei einem Spiel mit hohen Einsätzen oder bei einer hochklassigen Soiree. Man wurde vielleicht aus einem oder mehreren Lokalen geworfen, aber nur von Leuten, die nicht wissen, wie man feiert"
+    }
+  ]
+}

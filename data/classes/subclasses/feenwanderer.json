@@ -1,0 +1,183 @@
+{
+  "id": "feenwanderer",
+  "type": "subclass",
+  "name": "Feenwanderer",
+  "original_name": "Fey Wanderer",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/ranger:fey-wanderer",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Führe Fröhlichkeit und Wut der Feen aus. Eine feenhafte Mystik umgibt dich, dank des Segens eines Erzfeenwesens oder eines Ortes in der Feenwildnis, der dich verwandelt hat. Wie auch immer du Feenmagie erlangt hast, du bist jetzt ein Feenwanderer. Dein freudiges Lachen erhellt die Herzen der Unterdrückten und deine kriegerische Tapferkeit versetzt deine Feinde in Angst und Schrecken, denn groß ist die Heiterkeit der Feenwesen und schrecklich ist ihre Wut.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Führe Fröhlichkeit und Wut der Feen aus. Eine feenhafte Mystik umgibt dich, dank des Segens eines Erzfeenwesens oder eines Ortes in der Feenwildnis, der dich verwandelt hat. Wie auch immer du Feenmagie erlangt hast, du bist jetzt ein Feenwanderer. Dein freudiges Lachen erhellt die Herzen der Unterdrückten und deine kriegerische Tapferkeit versetzt deine Feinde in Angst und Schrecken, denn groß ist die Heiterkeit der Feenwesen und schrecklich ist ihre Wut."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Schreckliche Schläge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können Ihre Waffenangriffe mit bewusstseinserweiternder Magie verstärken, die aus den düsteren Höhlen der Feywild stammt. Wenn du eine Kreatur mit einer Waffe triffst, kannst du dem Ziel zusätzlich 1W4 psychischen Schaden zufügen, das diesen zusätzlichen Schaden nur einmal pro Spielzug erleiden kann. Der zusätzliche Schaden erhöht sich auf 1W6, wenn Sie Ranger-Level 11 erreichen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Feenwanderer-Zauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine Ranger-Stufe erreichen, die in der Fey Wanderer-Zaubertabelle angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Feenwanderer-Zauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ranger-Level",
+          "Fluch"
+        ],
+        [
+          "3",
+          "Charmante Person"
+        ],
+        [
+          "5",
+          "Misty Step"
+        ],
+        [
+          "9",
+          "Beschwöre Feen"
+        ],
+        [
+          "13",
+          "Dimensionstür"
+        ],
+        [
+          "17",
+          "Irreführen"
+        ]
+      ],
+      "text": "Waldläufer-Stufe Zauber 3 Person bezaubern 5 Nebelschritt 9 Fee beschwören 13 Dimensionstür 17 Irreführen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du besitzt außerdem einen Feensegen. Wählen Sie es aus der Feywild-Geschenke-Tabelle oder bestimmen Sie es zufällig."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Feywild-Geschenke"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "1W6",
+          "Geschenk"
+        ],
+        [
+          "1",
+          "Illusionäre Schmetterlinge flattern um Sie herum, während Sie eine kurze oder lange Rast machen."
+        ],
+        [
+          "2",
+          "Jeden Morgen blühen Blumen aus deinem Haar."
+        ],
+        [
+          "3",
+          "Sie riechen leicht nach Zimt, Lavendel, Muskatnuss oder einem anderen beruhigenden Kraut oder Gewürz."
+        ],
+        [
+          "4",
+          "Dein Schatten tanzt, während niemand ihn direkt ansieht."
+        ],
+        [
+          "5",
+          "Aus deinem Kopf wachsen Hörner oder Geweihe."
+        ],
+        [
+          "6",
+          "Mit jedem Morgengrauen ändern Ihre Haut und Haare ihre Farbe."
+        ]
+      ],
+      "text": "1W6 Geschenk 1 Illusorische Schmetterlinge flattern um dich herum, während du eine kurze oder lange Rast machst. Jeden Morgen blühen 2 Blumen aus deinem Haar. 3 Du riechst leicht nach Zimt, Lavendel, Muskatnuss oder einem anderen beruhigenden Kraut oder Gewürz. 4 Dein Schatten tanzt, während niemand ihn direkt ansieht. 5 Hörner oder Geweihe sprießen aus deinem Kopf. 6 Mit jedem Morgengrauen ändern Ihre Haut und Haare ihre Farbe."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Jenseitiger Glamour."
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie einen Charisma-Wurf durchführen, erhalten Sie einen Bonus auf den Wurf in Höhe Ihres Weisheitsmodifikators (mindestens +1)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erwerben außerdem Kenntnisse in einer dieser Fähigkeiten Ihrer Wahl: Täuschung, Leistung oder Überzeugung."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Betörende Wendung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Magie der Feywild bewacht deinen Geist. Sie haben den Vorteil eines Rettungswurfs, um den Charmed- oder Frightened-Zustand zu vermeiden oder zu beenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn dir oder einer Kreatur, die du in einem Umkreis von 120 Fuß um dich herum sehen kannst, ein Rettungswurf gelingt, um den Zustand „Verzaubert“ oder „Verängstigt“ zu vermeiden oder zu beenden, kannst du außerdem eine Reaktion ausführen, um eine andere Kreatur, die du in einem Umkreis von 120 Fuß um dich sehen kannst, zu einem Weisheitswurf gegen deinen Zauberwurf-SG zu zwingen. Bei einem fehlgeschlagenen Rettungswurf wird das Ziel 1 Minute lang verzaubert oder verängstigt (nach Wahl). Das Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge und beendet bei einem Erfolg den Effekt auf sich selbst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 11: Fey-Verstärkung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können „Fey beschwören“ ohne eine Materialkomponente wirken. Sie können es auch einmal ohne Zauberslot wirken und erhalten die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn Sie Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wann immer Sie mit dem Wirken des Zaubers beginnen, können Sie ihn so ändern, dass keine Konzentration erforderlich ist. Wenn Sie dies tun, beträgt die Wirkdauer des Zaubers 1 Minute."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Nebeliger Wanderer"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst Misty Step wirken, ohne einen Zauberslot zu verbrauchen. Sie können dies so oft tun, wie es Ihrem Weisheitsmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus kannst du jedes Mal, wenn du Misty Step wirkst, eine willige Kreatur mitbringen, die du im Umkreis von 5 Fuß um dich herum sehen kannst. Diese Kreatur teleportiert sich zu einem unbesetzten Feld Ihrer Wahl im Umkreis von 5 Fuß um Ihr Zielfeld."
+    }
+  ],
+  "text": "Führe Fröhlichkeit und Wut der Feen aus. Eine feenhafte Mystik umgibt dich, dank des Segens eines Erzfeenwesens oder eines Ortes in der Feenwildnis, der dich verwandelt hat. Wie auch immer du Feenmagie erlangt hast, du bist jetzt ein Feenwanderer. Dein freudiges Lachen erhellt die Herzen der Unterdrückten und deine kriegerische Tapferkeit versetzt deine Feinde in Angst und Schrecken, denn groß ist die Heiterkeit der Feenwesen und schrecklich ist ihre Wut.\n\nLevel 3: Schreckliche Schläge\n\nSie können Ihre Waffenangriffe mit bewusstseinserweiternder Magie verstärken, die aus den düsteren Höhlen der Feywild stammt. Wenn du eine Kreatur mit einer Waffe triffst, kannst du dem Ziel zusätzlich 1W4 psychischen Schaden zufügen, das diesen zusätzlichen Schaden nur einmal pro Spielzug erleiden kann. Der zusätzliche Schaden erhöht sich auf 1W6, wenn Sie Ranger-Level 11 erreichen.\n\nStufe 3: Feenwanderer-Zauber\n\nWenn Sie eine Ranger-Stufe erreichen, die in der Fey Wanderer-Zaubertabelle angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nFeenwanderer-Zauber\n\nWaldläufer-Stufe Zauber 3 Person bezaubern 5 Nebelschritt 9 Fee beschwören 13 Dimensionstür 17 Irreführen\n\nDu besitzt außerdem einen Feensegen. Wählen Sie es aus der Feywild-Geschenke-Tabelle oder bestimmen Sie es zufällig.\n\nFeywild-Geschenke\n\n1W6 Geschenk 1 Illusorische Schmetterlinge flattern um dich herum, während du eine kurze oder lange Rast machst. Jeden Morgen blühen 2 Blumen aus deinem Haar. 3 Du riechst leicht nach Zimt, Lavendel, Muskatnuss oder einem anderen beruhigenden Kraut oder Gewürz. 4 Dein Schatten tanzt, während niemand ihn direkt ansieht. 5 Hörner oder Geweihe sprießen aus deinem Kopf. 6 Mit jedem Morgengrauen ändern Ihre Haut und Haare ihre Farbe.\n\nLevel 3: Jenseitiger Glamour.\n\nImmer wenn Sie einen Charisma-Wurf durchführen, erhalten Sie einen Bonus auf den Wurf in Höhe Ihres Weisheitsmodifikators (mindestens +1).\n\nSie erwerben außerdem Kenntnisse in einer dieser Fähigkeiten Ihrer Wahl: Täuschung, Leistung oder Überzeugung.\n\nLevel 7: Betörende Wendung\n\nDie Magie der Feywild bewacht deinen Geist. Sie haben den Vorteil eines Rettungswurfs, um den Charmed- oder Frightened-Zustand zu vermeiden oder zu beenden.\n\nWenn dir oder einer Kreatur, die du in einem Umkreis von 120 Fuß um dich herum sehen kannst, ein Rettungswurf gelingt, um den Zustand „Verzaubert“ oder „Verängstigt“ zu vermeiden oder zu beenden, kannst du außerdem eine Reaktion ausführen, um eine andere Kreatur, die du in einem Umkreis von 120 Fuß um dich sehen kannst, zu einem Weisheitswurf gegen deinen Zauberwurf-SG zu zwingen. Bei einem fehlgeschlagenen Rettungswurf wird das Ziel 1 Minute lang verzaubert oder verängstigt (nach Wahl). Das Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge und beendet bei einem Erfolg den Effekt auf sich selbst.\n\nLevel 11: Fey-Verstärkung\n\nSie können „Fey beschwören“ ohne eine Materialkomponente wirken. Sie können es auch einmal ohne Zauberslot wirken und erhalten die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn Sie Lange Rast abgeschlossen haben.\n\nWann immer Sie mit dem Wirken des Zaubers beginnen, können Sie ihn so ändern, dass keine Konzentration erforderlich ist. Wenn Sie dies tun, beträgt die Wirkdauer des Zaubers 1 Minute.\n\nLevel 15: Nebeliger Wanderer\n\nDu kannst Misty Step wirken, ohne einen Zauberslot zu verbrauchen. Sie können dies so oft tun, wie es Ihrem Weisheitsmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben.\n\nDarüber hinaus kannst du jedes Mal, wenn du Misty Step wirkst, eine willige Kreatur mitbringen, die du im Umkreis von 5 Fuß um dich herum sehen kannst. Diese Kreatur teleportiert sich zu einem unbesetzten Feld Ihrer Wahl im Umkreis von 5 Fuß um Ihr Zielfeld.",
+  "tags": [],
+  "class": "Waldlaeufer",
+  "class_id": "waldlaeufer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

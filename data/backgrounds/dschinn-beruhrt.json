@@ -1,0 +1,137 @@
+{
+  "id": "dschinn-beruhrt",
+  "type": "background",
+  "name": "Dschinn berührt",
+  "original_name": "Genie Touched",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/background:genie-touched",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Geschicklichkeit, Weisheit, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Geschicklichkeit, Weisheit, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Magischer Eingeweihter (Zauberer)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kompetenzen: Wahrnehmung und Überzeugung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkompetenz: Glasbläserwerkzeuge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Leichter Hammer, Glasbläserwerkzeuge, feine Kleidung, Lampe, Öl (3 Flaschen), Wasserschlauch, 2 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Obwohl Calimshan nicht mehr von Dschinns regiert wird, ist die Dschinni-Magie in Ihrer Heimat immer noch weit verbreitet. Vielleicht haben Sie versehentlich einen Dschinn aus einer magischen Lampe herbeigerufen, oder vielleicht sind Sie auf eine Oase gestoßen, die von einem Marid bewacht wird. Ein Dao hätte dich vielleicht vor einem Erdrutsch bewahrt, oder du hast mit einem Efreeti um flüchtigen Reichtum verhandelt. Wie auch immer sich Ihr Schicksal mit dem eines Geistes kreuzte, die Erfahrung hinterließ Ihnen ein scharfes Auge, eine silberne Zunge und mehr als einen Hauch von Magie."
+    }
+  ],
+  "text": "Fähigkeitswerte: Geschicklichkeit, Weisheit, Charisma\n\nTalent: Magischer Eingeweihter (Zauberer)\n\nKompetenzen: Wahrnehmung und Überzeugung\n\nWerkzeugkompetenz: Glasbläserwerkzeuge\n\nAusrüstung: Wähle A oder B: (A) Leichter Hammer, Glasbläserwerkzeuge, feine Kleidung, Lampe, Öl (3 Flaschen), Wasserschlauch, 2 GP; oder (B) 50 GP\n\nObwohl Calimshan nicht mehr von Dschinns regiert wird, ist die Dschinni-Magie in Ihrer Heimat immer noch weit verbreitet. Vielleicht haben Sie versehentlich einen Dschinn aus einer magischen Lampe herbeigerufen, oder vielleicht sind Sie auf eine Oase gestoßen, die von einem Marid bewacht wird. Ein Dao hätte dich vielleicht vor einem Erdrutsch bewahrt, oder du hast mit einem Efreeti um flüchtigen Reichtum verhandelt. Wie auch immer sich Ihr Schicksal mit dem eines Geistes kreuzte, die Erfahrung hinterließ Ihnen ein scharfes Auge, eine silberne Zunge und mehr als einen Hauch von Magie.",
+  "tags": [],
+  "ability_scores": [
+    "dex",
+    "wis",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "dex",
+      "wis",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [],
+  "tool_proficiencies": [
+    "Glasbläserwerkzeuge\n"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "magischer-eingeweihter-zauberer-kompetenzen-wahrnehmung-und-ueberzeugung",
+  "granted_feat_name": "Magischer Eingeweihter (Zauberer)\n\nKompetenzen: Wahrnehmung und Überzeugung\n",
+  "modifiers": [],
+  "choice_sets": [
+    {
+      "id": "dschinn-beruhrt-background-cantrips",
+      "type": "spell",
+      "choose": 2,
+      "spell_levels": [
+        0
+      ],
+      "source": "dschinn-beruhrt",
+      "spell_list_names": [
+        "Zauberer"
+      ]
+    },
+    {
+      "id": "dschinn-beruhrt-background-level-1-spell",
+      "type": "spell",
+      "choose": 1,
+      "spell_levels": [
+        1
+      ],
+      "source": "dschinn-beruhrt",
+      "spell_list_names": [
+        "Zauberer"
+      ]
+    }
+  ],
+  "spellcasting": {
+    "ability": "cha",
+    "spell_choices": [
+      {
+        "id": "dschinn-beruhrt-background-cantrips",
+        "type": "spell",
+        "choose": 2,
+        "spell_levels": [
+          0
+        ],
+        "source": "dschinn-beruhrt",
+        "spell_list_names": [
+          "Zauberer"
+        ]
+      },
+      {
+        "id": "dschinn-beruhrt-background-level-1-spell",
+        "type": "spell",
+        "choose": 1,
+        "spell_levels": [
+          1
+        ],
+        "source": "dschinn-beruhrt",
+        "spell_list_names": [
+          "Zauberer"
+        ]
+      }
+    ],
+    "always_prepared": true
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Leichter Hammer, Glasbläserwerkzeuge, feine Kleidung, Lampe, Öl (3 Flaschen), Wasserschlauch, 2 GP; oder (B) 50 GP\n\nObwohl Calimshan nicht mehr von Dschinns regiert wird, ist die Dschinni-Magie in Ihrer Heimat immer noch weit verbreitet. Vielleicht haben Sie versehentlich einen Dschinn aus einer magischen Lampe herbeigerufen, oder vielleicht sind Sie auf eine Oase gestoßen, die von einem Marid bewacht wird. Ein Dao hätte dich vielleicht vor einem Erdrutsch bewahrt, oder du hast mit einem Efreeti um flüchtigen Reichtum verhandelt. Wie auch immer sich Ihr Schicksal mit dem eines Geistes kreuzte, die Erfahrung hinterließ Ihnen ein scharfes Auge, eine silberne Zunge und mehr als einen Hauch von Magie"
+    }
+  ]
+}

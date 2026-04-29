@@ -1,0 +1,44 @@
+{
+  "id": "<species-id>",
+  "type": "race",
+  "name": "<Species Name>",
+  "original_name": "<Original Species Name>",
+  "rules_version": "2024",
+  "source": "<source>",
+  "source_url": null,
+  "source_page": null,
+  "license": {
+    "name": "",
+    "spdx": "",
+    "url": ""
+  },
+  "translation_note": "",
+  "category": "Spezies",
+  "group": "",
+  "prerequisites": [],
+  "summary": "",
+  "entries": [],
+  "size": [
+    "Medium"
+  ],
+  "creature_type": "humanoid",
+  "speed": {
+    "walk": 9,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "<Trait Name>",
+      "text": ""
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "text": "",
+  "tags": []
+}

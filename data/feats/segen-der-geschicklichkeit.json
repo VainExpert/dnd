@@ -1,0 +1,56 @@
+{
+  "id": "segen-der-geschicklichkeit",
+  "type": "feat",
+  "name": "Segen der Geschicklichkeit",
+  "original_name": "Boon of Skill",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-skill",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 19+"
+  ],
+  "summary": "Voraussetzung: Level 19+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 19+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Allround-Experte. Sie erwerben Kenntnisse in allen Fertigkeiten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sachverstand. Wählen Sie eine Fertigkeit, in der es Ihnen an Fachwissen mangelt. Du erlangst Fachwissen in dieser Fertigkeit."
+    }
+  ],
+  "text": "Voraussetzung: Level 19+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30.\n\nAllround-Experte. Sie erwerben Kenntnisse in allen Fertigkeiten.\n\nSachverstand. Wählen Sie eine Fertigkeit, in der es Ihnen an Fachwissen mangelt. Du erlangst Fachwissen in dieser Fertigkeit.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

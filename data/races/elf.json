@@ -1,0 +1,242 @@
+{
+  "id": "elf",
+  "type": "race",
+  "name": "Elf",
+  "original_name": "Elf",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/species:elf",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Die ersten Elfen wurden vom Gott Corellon erschaffen und konnten ihre Gestalt nach Belieben ändern. Sie verloren diese Fähigkeit, als Corellon sie verfluchte, weil sie mit der Gottheit Lolth eine Verschwörung geplant hatten, die scheiterte und versuchte, Corellons Herrschaft an sich zu reißen. Als Lolth in den Abgrund geworfen wurde, sagten die meisten Elfen von ihr ab und verdienten Corellons Vergebung, aber das, was Corellon ihnen genommen hatte, war für immer verloren.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Die ersten Elfen wurden vom Gott Corellon erschaffen und konnten ihre Gestalt nach Belieben ändern. Sie verloren diese Fähigkeit, als Corellon sie verfluchte, weil sie mit der Gottheit Lolth eine Verschwörung geplant hatten, die scheiterte und versuchte, Corellons Herrschaft an sich zu reißen. Als Lolth in den Abgrund geworfen wurde, sagten die meisten Elfen von ihr ab und verdienten Corellons Vergebung, aber das, was Corellon ihnen genommen hatte, war für immer verloren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Da die Elfen nicht mehr in der Lage waren, ihre Gestalt nach Belieben zu verändern, zogen sie sich in die Feywild zurück, wo ihr Kummer durch den Einfluss dieser Ebene noch größer wurde. Im Laufe der Zeit veranlasste ihre Neugier viele von ihnen, andere Ebenen der Existenz zu erkunden, einschließlich Welten auf der materiellen Ebene."
+    },
+    {
+      "type": "paragraph",
+      "text": "Elfen haben spitze Ohren und keine Gesichts- und Körperbehaarung. Sie leben etwa 750 Jahre und schlafen nicht, sondern geraten in Trance, wenn sie Ruhe brauchen. In diesem Zustand bleiben sie sich ihrer Umgebung bewusst, während sie in Erinnerungen und Meditationen versinken."
+    },
+    {
+      "type": "paragraph",
+      "text": "Eine Umgebung verwandelt Elfen auf subtile Weise, nachdem sie sie ein Jahrtausend oder länger bewohnt haben, und verleiht ihnen bestimmte Arten von Magie. Drow, Hochelfen und Waldelfen sind Beispiele für Elfen, die auf diese Weise verwandelt wurden."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Drow"
+    },
+    {
+      "type": "paragraph",
+      "text": "Drow leben normalerweise im Unterreich und wurden von diesem geprägt. Einige Drow-Individuen und -Gesellschaften meiden das Unterreich gänzlich, tragen aber seine Magie in sich. Im Eberron-Setting leben Drow beispielsweise in Regenwäldern und Zyklopenruinen auf dem Kontinent Xen'drik."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Hochelfen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hochelfen wurden mit der Magie der Übergänge zwischen der Feenwildnis und der Materiellen Ebene erfüllt. Auf manchen Welten bezeichnen sich Hochelfen mit anderen Namen. Beispielsweise nennen sie sich Sonnen- oder Mondelfen im Setting „Forgotten Realms“, Silvanesti und Qualinesti im Setting „Dragonlance“ und Aereni im Setting „Eberron“."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Waldelfen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Waldelfen tragen die Magie der Urwälder in sich. Sie sind unter vielen anderen Namen bekannt, darunter Wildelfen, Grünelfen und Waldelfen. Grugach sind zurückgezogen lebende Waldelfen der Greyhawk-Welt, während die Kagonesti und die Tairnadal Waldelfen der Dragonlance- und Eberron-Welten sind."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Lorwyn-Shadowmoor"
+    },
+    {
+      "type": "paragraph",
+      "text": "Quelle: Lorwyn – Erstes Licht"
+    },
+    {
+      "type": "paragraph",
+      "text": "Elfen im Reich Lorwyn-Shadowmoor besitzen schwarze Augen ohne Pupillen; gebogene Hörner; Beine, die in gespaltenen Hufen enden; und spitze Ohren. Die Elfen von Lorwyn unterscheiden sich körperlich und kulturell deutlich von ihren Schattenmoor-Kollegen."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "In Lorwyn"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Hörner der Lorwyn-Elfen sind kurz wie die einer Ziege oder gebogen wie die eines Widders, aber immer geriffelt. Ihre spitzen Ohren sind lang und schlank."
+    },
+    {
+      "type": "paragraph",
+      "text": "In Lorwyn schätzen Elfen Schönheit an erster Stelle, obwohl das, was ein Elf für schön hält, willkürlich erscheinen kann. Einige Lorwyn-Elfen übernehmen die Autorität über die anderen Völker des Landes und nutzen ihr gefallenes Reich, um ihre Ansprüche zu stützen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Diese Elfen machen äußere Bedrohungen für den Untergang ihres Imperiums verantwortlich, insbesondere die Invasion der Phyrexianer. Obwohl die Invasion den Todesstoß für das Imperium bedeutete, hatten die Selbstgefälligkeit und mangelnde Bereitschaft der Bevölkerung, mit anderen Spezies zusammenzuarbeiten, bereits zum Niedergang des Imperiums geführt."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Im Schattenmoor"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Hörner der Schattenmoorelfen sind lang, gewellt und mit einer rauen, dornigen Textur bedeckt. Ihre spitzen Ohren sind normalerweise länger als die ihrer Lorwyn-Artgenossen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wie Lorwyn-Elfen schützen Schattenmoor-Elfen die Schönheit, obwohl die Definition von „schön“ durch einen Schattenmoor-Elfen abstrakt sein kann. Viele ihrer Art glauben, dass Schönheit je nach den eigenen Handlungen gewonnen oder verloren wird; Insbesondere betrachten sie Heldentum und Selbstaufopferung als die höchsten Formen der Schönheit."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bloomseekers sind Schattenmoor-Elfen, die Lorwyn studieren und erforschen. Jeder trägt ein Reliquiar der Dämmerung. Neben Safewrights – Schattenmoor-Elfen, die auf der Suche nach schönen Dingen durch ihr Reich streifen – gehören Bloomseekers zu den vertrauenswürdigsten und am meisten verehrten Mitgliedern ihrer Gesellschaft."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Elfeneigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Humanoid. Größe: Mittelgroß (etwa 1,5–1,8 m groß). Geschwindigkeit: 9,1 m"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Elf hast du diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Elfenlinie. Sie sind Teil einer Abstammungslinie, die Ihnen übernatürliche Fähigkeiten verleiht. Wählen Sie eine Abstammungslinie aus der Tabelle „Elfen-Abstammungslinien“. Sie erhalten den Vorteil der Stufe 1 dieser Linie."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie die Charakterstufen 3 und 5 erreichen, lernen Sie einen höherstufigen Zauber, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können den Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für die Zauber, die Sie mit dieser Eigenschaft wirken (wählen Sie die Fähigkeit, wenn Sie die Abstammungslinie auswählen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fey-Abstammung. Sie haben einen Vorteil bei Rettungswürfen, die Sie ausführen, um den Charmed-Zustand zu vermeiden oder zu beenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschärfte Sinne. Sie verfügen über Kenntnisse in den Fertigkeiten Einsicht, Wahrnehmung oder Überleben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Trance. Du musst nicht schlafen und Magie kann dich nicht einschläfern lassen. Sie können eine Lange Rast in 4 Stunden beenden, wenn Sie diese Stunden in einer tranceähnlichen Meditation verbringen, bei der Sie das Bewusstsein bewahren."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Elfenlinien"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Abstammung",
+          "Stufe 1",
+          "Stufe 3",
+          "Stufe 5"
+        ],
+        [
+          "Drow",
+          "Die Reichweite Ihrer Dunkelsicht erhöht sich auf 120 Fuß. Sie kennen auch den Cantrip „Dancing Lights“.",
+          "Feenfeuer",
+          "Dunkelheit"
+        ],
+        [
+          "Hochelf",
+          "Sie kennen den Prestidigitation-Cantrip. Immer wenn Sie einen Lange Rast abgeschlossen haben, können Sie diesen Cantrip durch einen anderen Cantrip aus der Zauberliste des Zauberers ersetzen.",
+          "Magie erkennen",
+          "Misty Step"
+        ],
+        [
+          "Waldelf",
+          "Ihre Geschwindigkeit erhöht sich auf 35 Fuß. Sie kennen auch den Druidcraft-Cantrip.",
+          "Langläufer",
+          "Pass ohne Spur"
+        ],
+        [
+          "Lorwyn-Elf",
+          "Du kennst den Cantrip „Thorn Whip“. Immer wenn Sie einen Lange Rast abgeschlossen haben, können Sie diesen Cantrip durch einen anderen Cantrip aus der Druidenzauberliste ersetzen.",
+          "Befehl",
+          "Schweigen"
+        ],
+        [
+          "Schattenmoor-Elf",
+          "Die Reichweite Ihrer Dunkelsicht erhöht sich auf 120 Fuß. Sie kennen auch den Cantrip „Starry Wisp“.",
+          "Heldentum",
+          "Sanfte Ruhe"
+        ]
+      ],
+      "text": "Abstammungsstufe 1 Stufe 3 Stufe 5 Drow Die Reichweite Ihrer Dunkelsicht erhöht sich auf 120 Fuß. Sie kennen auch den Cantrip „Dancing Lights“. Feen-Feuer-Dunkelheit-Hochelf Du kennst den Prestidigitation-Cantrip. Immer wenn Sie einen Lange Rast abgeschlossen haben, können Sie diesen Cantrip durch einen anderen Cantrip aus der Zauberliste des Zauberers ersetzen. Entdecken Sie Magic Misty Step Wood Elf. Ihre Geschwindigkeit erhöht sich auf 35 Fuß. Sie kennen auch den Druidcraft-Cantrip. Longstrider Pass ohne Spur Lorwyn Elf Du kennst den Cantrip „Dorn Whip“. Immer wenn Sie einen Lange Rast abgeschlossen haben, können Sie diesen Cantrip durch einen anderen Cantrip aus der Druidenzauberliste ersetzen. Command Silence Shadowmoor Elf Die Reichweite Ihrer Dunkelsicht erhöht sich auf 120 Fuß. Sie kennen auch den Cantrip „Starry Wisp“. Heldentum Sanfte Ruhe"
+    }
+  ],
+  "text": "Die ersten Elfen wurden vom Gott Corellon erschaffen und konnten ihre Gestalt nach Belieben ändern. Sie verloren diese Fähigkeit, als Corellon sie verfluchte, weil sie mit der Gottheit Lolth eine Verschwörung geplant hatten, die scheiterte und versuchte, Corellons Herrschaft an sich zu reißen. Als Lolth in den Abgrund geworfen wurde, sagten die meisten Elfen von ihr ab und verdienten Corellons Vergebung, aber das, was Corellon ihnen genommen hatte, war für immer verloren.\n\nDa die Elfen nicht mehr in der Lage waren, ihre Gestalt nach Belieben zu verändern, zogen sie sich in die Feywild zurück, wo ihr Kummer durch den Einfluss dieser Ebene noch größer wurde. Im Laufe der Zeit veranlasste ihre Neugier viele von ihnen, andere Ebenen der Existenz zu erkunden, einschließlich Welten auf der materiellen Ebene.\n\nElfen haben spitze Ohren und keine Gesichts- und Körperbehaarung. Sie leben etwa 750 Jahre und schlafen nicht, sondern geraten in Trance, wenn sie Ruhe brauchen. In diesem Zustand bleiben sie sich ihrer Umgebung bewusst, während sie in Erinnerungen und Meditationen versinken.\n\nEine Umgebung verwandelt Elfen auf subtile Weise, nachdem sie sie ein Jahrtausend oder länger bewohnt haben, und verleiht ihnen bestimmte Arten von Magie. Drow, Hochelfen und Waldelfen sind Beispiele für Elfen, die auf diese Weise verwandelt wurden.\n\nDrow\n\nDrow leben normalerweise im Unterreich und wurden von diesem geprägt. Einige Drow-Individuen und -Gesellschaften meiden das Unterreich gänzlich, tragen aber seine Magie in sich. Im Eberron-Setting leben Drow beispielsweise in Regenwäldern und Zyklopenruinen auf dem Kontinent Xen'drik.\n\nHochelfen\n\nHochelfen wurden mit der Magie der Übergänge zwischen der Feenwildnis und der Materiellen Ebene erfüllt. Auf manchen Welten bezeichnen sich Hochelfen mit anderen Namen. Beispielsweise nennen sie sich Sonnen- oder Mondelfen im Setting „Forgotten Realms“, Silvanesti und Qualinesti im Setting „Dragonlance“ und Aereni im Setting „Eberron“.\n\nWaldelfen\n\nWaldelfen tragen die Magie der Urwälder in sich. Sie sind unter vielen anderen Namen bekannt, darunter Wildelfen, Grünelfen und Waldelfen. Grugach sind zurückgezogen lebende Waldelfen der Greyhawk-Welt, während die Kagonesti und die Tairnadal Waldelfen der Dragonlance- und Eberron-Welten sind.\n\nLorwyn-Shadowmoor\n\nQuelle: Lorwyn – Erstes Licht\n\nElfen im Reich Lorwyn-Shadowmoor besitzen schwarze Augen ohne Pupillen; gebogene Hörner; Beine, die in gespaltenen Hufen enden; und spitze Ohren. Die Elfen von Lorwyn unterscheiden sich körperlich und kulturell deutlich von ihren Schattenmoor-Kollegen.\n\nIn Lorwyn\n\nDie Hörner der Lorwyn-Elfen sind kurz wie die einer Ziege oder gebogen wie die eines Widders, aber immer geriffelt. Ihre spitzen Ohren sind lang und schlank.\n\nIn Lorwyn schätzen Elfen Schönheit an erster Stelle, obwohl das, was ein Elf für schön hält, willkürlich erscheinen kann. Einige Lorwyn-Elfen übernehmen die Autorität über die anderen Völker des Landes und nutzen ihr gefallenes Reich, um ihre Ansprüche zu stützen.\n\nDiese Elfen machen äußere Bedrohungen für den Untergang ihres Imperiums verantwortlich, insbesondere die Invasion der Phyrexianer. Obwohl die Invasion den Todesstoß für das Imperium bedeutete, hatten die Selbstgefälligkeit und mangelnde Bereitschaft der Bevölkerung, mit anderen Spezies zusammenzuarbeiten, bereits zum Niedergang des Imperiums geführt.\n\nIm Schattenmoor\n\nDie Hörner der Schattenmoorelfen sind lang, gewellt und mit einer rauen, dornigen Textur bedeckt. Ihre spitzen Ohren sind normalerweise länger als die ihrer Lorwyn-Artgenossen.\n\nWie Lorwyn-Elfen schützen Schattenmoor-Elfen die Schönheit, obwohl die Definition von „schön“ durch einen Schattenmoor-Elfen abstrakt sein kann. Viele ihrer Art glauben, dass Schönheit je nach den eigenen Handlungen gewonnen oder verloren wird; Insbesondere betrachten sie Heldentum und Selbstaufopferung als die höchsten Formen der Schönheit.\n\nBloomseekers sind Schattenmoor-Elfen, die Lorwyn studieren und erforschen. Jeder trägt ein Reliquiar der Dämmerung. Neben Safewrights – Schattenmoor-Elfen, die auf der Suche nach schönen Dingen durch ihr Reich streifen – gehören Bloomseekers zu den vertrauenswürdigsten und am meisten verehrten Mitgliedern ihrer Gesellschaft.\n\nElfeneigenschaften\n\nKreaturentyp: Humanoid. Größe: Mittelgroß (etwa 1,5–1,8 m groß). Geschwindigkeit: 9,1 m\n\nAls Elf hast du diese besonderen Eigenschaften.\n\nDunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß.\n\nElfenlinie. Sie sind Teil einer Abstammungslinie, die Ihnen übernatürliche Fähigkeiten verleiht. Wählen Sie eine Abstammungslinie aus der Tabelle „Elfen-Abstammungslinien“. Sie erhalten den Vorteil der Stufe 1 dieser Linie.\n\nWenn Sie die Charakterstufen 3 und 5 erreichen, lernen Sie einen höherstufigen Zauber, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können den Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben.\n\nIntelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für die Zauber, die Sie mit dieser Eigenschaft wirken (wählen Sie die Fähigkeit, wenn Sie die Abstammungslinie auswählen).\n\nFey-Abstammung. Sie haben einen Vorteil bei Rettungswürfen, die Sie ausführen, um den Charmed-Zustand zu vermeiden oder zu beenden.\n\nGeschärfte Sinne. Sie verfügen über Kenntnisse in den Fertigkeiten Einsicht, Wahrnehmung oder Überleben.\n\nTrance. Du musst nicht schlafen und Magie kann dich nicht einschläfern lassen. Sie können eine Lange Rast in 4 Stunden beenden, wenn Sie diese Stunden in einer tranceähnlichen Meditation verbringen, bei der Sie das Bewusstsein bewahren.\n\nElfenlinien\n\nAbstammungsstufe 1 Stufe 3 Stufe 5 Drow Die Reichweite Ihrer Dunkelsicht erhöht sich auf 120 Fuß. Sie kennen auch den Cantrip „Dancing Lights“. Feen-Feuer-Dunkelheit-Hochelf Du kennst den Prestidigitation-Cantrip. Immer wenn Sie einen Lange Rast abgeschlossen haben, können Sie diesen Cantrip durch einen anderen Cantrip aus der Zauberliste des Zauberers ersetzen. Entdecken Sie Magic Misty Step Wood Elf. Ihre Geschwindigkeit erhöht sich auf 35 Fuß. Sie kennen auch den Druidcraft-Cantrip. Longstrider Pass ohne Spur Lorwyn Elf Du kennst den Cantrip „Dorn Whip“. Immer wenn Sie einen Lange Rast abgeschlossen haben, können Sie diesen Cantrip durch einen anderen Cantrip aus der Druidenzauberliste ersetzen. Command Silence Shadowmoor Elf Die Reichweite Ihrer Dunkelsicht erhöht sich auf 120 Fuß. Sie kennen auch den Cantrip „Starry Wisp“. Heldentum Sanfte Ruhe",
+  "tags": [],
+  "size": [],
+  "creature_type": "Humanoid",
+  "speed": {
+    "walk": 3,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Waldelfen tragen die Magie der Urwälder in sich",
+      "text": "Sie sind unter vielen anderen Namen bekannt, darunter Wildelfen, Grünelfen und Waldelfen. Grugach sind zurückgezogen lebende Waldelfen der Greyhawk-Welt, während die Kagonesti und die Tairnadal Waldelfen der Dragonlance- und Eberron-Welten sind."
+    },
+    {
+      "name": "Dunkelsicht",
+      "text": "Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß."
+    },
+    {
+      "name": "Elfenlinie",
+      "text": "Sie sind Teil einer Abstammungslinie, die Ihnen übernatürliche Fähigkeiten verleiht. Wählen Sie eine Abstammungslinie aus der Tabelle „Elfen-Abstammungslinien“. Sie erhalten den Vorteil der Stufe 1 dieser Linie."
+    },
+    {
+      "name": "Fey-Abstammung",
+      "text": "Sie haben einen Vorteil bei Rettungswürfen, die Sie ausführen, um den Charmed-Zustand zu vermeiden oder zu beenden."
+    },
+    {
+      "name": "Geschärfte Sinne",
+      "text": "Sie verfügen über Kenntnisse in den Fertigkeiten Einsicht, Wahrnehmung oder Überleben."
+    },
+    {
+      "name": "Trance",
+      "text": "Du musst nicht schlafen und Magie kann dich nicht einschläfern lassen. Sie können eine Lange Rast in 4 Stunden beenden, wenn Sie diese Stunden in einer tranceähnlichen Meditation verbringen, bei der Sie das Bewusstsein bewahren."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "reizende-nebel",
+  "type": "feat",
+  "name": "Reizende Nebel",
+  "original_name": "Cloying Mists",
+  "rules_version": "2024",
+  "source": "Astarion's Book of Hungers",
+  "source_url": "http://dnd2024.wikidot.com/feat:cloying-mists",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Exotisch",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Level 4+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Level 4+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Steh auf, Nebel. Du hast immer den Zauber „Nebelwolke“ vorbereitet. Du kannst es ohne Zauberslot wirken und musst einen Lange Rast abschließen, bevor du es auf diese Weise erneut wirken kannst. Sie können es auch mit Zauberslots der entsprechenden Stufe wirken, die Sie haben. Deine Zauberfähigkeit für den Zauber ist die durch dieses Talent erhöhte Fähigkeit."
+    },
+    {
+      "type": "paragraph",
+      "text": "Greifender Nebel. Immer wenn du „Nebelwolke“ wirkst, werden nichtmagische Flammen in der Sphäre des Zaubers gelöscht und die Geschwindigkeit anderer Kreaturen als dir und deinen Verbündeten wird um 1,5 m verringert, solange sie sich in der Sphäre des Zaubers aufhalten."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Level 4+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20.\n\nSteh auf, Nebel. Du hast immer den Zauber „Nebelwolke“ vorbereitet. Du kannst es ohne Zauberslot wirken und musst einen Lange Rast abschließen, bevor du es auf diese Weise erneut wirken kannst. Sie können es auch mit Zauberslots der entsprechenden Stufe wirken, die Sie haben. Deine Zauberfähigkeit für den Zauber ist die durch dieses Talent erhöhte Fähigkeit.\n\nGreifender Nebel. Immer wenn du „Nebelwolke“ wirkst, werden nichtmagische Flammen in der Sphäre des Zaubers gelöscht und die Geschwindigkeit anderer Kreaturen als dir und deinen Verbündeten wird um 1,5 m verringert, solange sie sich in der Sphäre des Zaubers aufhalten.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

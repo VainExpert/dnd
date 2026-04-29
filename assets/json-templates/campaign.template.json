@@ -1,0 +1,14 @@
+{
+  "id": "<campaign-id>",
+  "type": "campaign",
+  "name": "<Campaign Name>",
+  "rules_version": "2024",
+  "gm": "",
+  "players": [],
+  "party_character_ids": [],
+  "house_rule_ids": [],
+  "setting_refs": [],
+  "session_ids": [],
+  "tags": [],
+  "notes_md": ""
+}

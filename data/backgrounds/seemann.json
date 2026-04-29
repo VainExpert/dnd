@@ -1,0 +1,74 @@
+{
+  "id": "seemann",
+  "type": "background",
+  "name": "Seemann",
+  "original_name": "Sailor",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/background:sailor",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Du hast als Seefahrer gelebt, mit dem Wind im Rücken und schwankenden Decks unter deinen Füßen. Sie haben in mehr Anlaufhäfen, als Sie sich erinnern können, auf Barhockern gesessen, mächtigen Stürmen getrotzt und Geschichten mit Menschen ausgetauscht, die unter den Wellen leben.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Du hast als Seefahrer gelebt, mit dem Wind im Rücken und schwankenden Decks unter deinen Füßen. Sie haben in mehr Anlaufhäfen, als Sie sich erinnern können, auf Barhockern gesessen, mächtigen Stürmen getrotzt und Geschichten mit Menschen ausgetauscht, die unter den Wellen leben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Stärke, Geschicklichkeit, Weisheit Talent: Tavernenschläger Fertigkeiten: Akrobatik und Wahrnehmung Werkzeugkompetenz: Werkzeuge des Navigators Ausrüstung: Wählen Sie A oder B: (A) Dolch, Werkzeuge des Navigators, Seil, Kleidung des Reisenden, 20 GP; oder (B) 50 GP"
+    }
+  ],
+  "text": "Du hast als Seefahrer gelebt, mit dem Wind im Rücken und schwankenden Decks unter deinen Füßen. Sie haben in mehr Anlaufhäfen, als Sie sich erinnern können, auf Barhockern gesessen, mächtigen Stürmen getrotzt und Geschichten mit Menschen ausgetauscht, die unter den Wellen leben.\n\nFähigkeitswerte: Stärke, Geschicklichkeit, Weisheit Talent: Tavernenschläger Fertigkeiten: Akrobatik und Wahrnehmung Werkzeugkompetenz: Werkzeuge des Navigators Ausrüstung: Wählen Sie A oder B: (A) Dolch, Werkzeuge des Navigators, Seil, Kleidung des Reisenden, 20 GP; oder (B) 50 GP",
+  "tags": [],
+  "ability_scores": [
+    "str",
+    "dex",
+    "wis"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "str",
+      "dex",
+      "wis"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Akrobatik",
+    "Wahrnehmung"
+  ],
+  "tool_proficiencies": [
+    "Werkzeuge des Navigators"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "tavernenschlaeger",
+  "granted_feat_name": "Tavernenschläger",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wählen Sie A oder B: (A) Dolch, Werkzeuge des Navigators, Seil, Kleidung des Reisenden, 20 GP; oder (B) 50 GP"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "aasimar",
+  "type": "race",
+  "name": "Aasimar",
+  "original_name": "Aasimar",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/species:aasimar",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Aasimar (ausgesprochen AH-sih-mar) sind Sterbliche, die einen Funken der Höheren Ebenen in ihrer Seele tragen. Ob sie von einem Engelswesen abstammen oder mit himmlischer Kraft erfüllt sind, sie können diesen Funken entfachen, um Licht, Heilung und himmlische Wut zu bringen. Aasimar kann in jeder Population von Sterblichen entstehen. Sie ähneln ihren Eltern, werden aber bis zu 160 Jahre alt und weisen Merkmale auf, die auf ihre himmlische Abstammung hinweisen, wie etwa metallische Sommersprossen, leuchtende Augen, einen Heiligenschein oder die Hautfarbe eines Engels (Silber, schillerndes Grün oder Kupferrot). Diese Merkmale beginnen subtil und werden offensichtlich, wenn der Aasimar lernt, seine volle himmlische Natur zu offenbaren.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Aasimar (ausgesprochen AH-sih-mar) sind Sterbliche, die einen Funken der Höheren Ebenen in ihrer Seele tragen. Ob sie von einem Engelswesen abstammen oder mit himmlischer Kraft erfüllt sind, sie können diesen Funken entfachen, um Licht, Heilung und himmlische Wut zu bringen. Aasimar kann in jeder Population von Sterblichen entstehen. Sie ähneln ihren Eltern, werden aber bis zu 160 Jahre alt und weisen Merkmale auf, die auf ihre himmlische Abstammung hinweisen, wie etwa metallische Sommersprossen, leuchtende Augen, einen Heiligenschein oder die Hautfarbe eines Engels (Silber, schillerndes Grün oder Kupferrot). Diese Merkmale beginnen subtil und werden offensichtlich, wenn der Aasimar lernt, seine volle himmlische Natur zu offenbaren."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Aasimar-Eigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Humanoid. Größe: Mittel (ca. 4 bis 7 Fuß groß) oder Klein (ca. 2 bis 4 Fuß groß), ausgewählt, wenn Sie diese Art auswählen. Geschwindigkeit: 30 Fuß"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Aasimar verfügen Sie über diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Himmlische Resistenz. Du hast Resistenz gegen nekrotischen Schaden und Strahlungsschaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Heilende Hände. Als magische Aktion berührst du eine Kreatur und wirfst eine Anzahl von W4, die deinem Uebungsbonus entspricht. Die Kreatur erhält eine Anzahl an Trefferpunkten zurück, die der gewürfelten Summe entspricht. Sobald Sie diese Eigenschaft verwendet haben, können Sie sie nicht erneut verwenden, bis Sie eine Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Lichtträger. Sie kennen den Light-Cantrip. Charisma ist Ihre Zauberfähigkeit dafür."
+    },
+    {
+      "type": "paragraph",
+      "text": "Himmlische Offenbarung. Wenn Sie Charakterstufe 3 erreichen, können Sie sich als Bonusaktion mit einer der folgenden Optionen verwandeln (wählen Sie die Option bei jeder Transformation). Die Transformation dauert 1 Minute oder bis Sie sie beenden (keine Aktion erforderlich). Sobald Sie sich verwandelt haben, können Sie dies nicht erneut tun, bis Sie eine Lange Rast beendet haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Einmal in jedem deiner Züge, bevor die Verwandlung endet, kannst du einem Ziel zusätzlichen Schaden zufügen, wenn du ihm mit einem Angriff oder einem Zauber Schaden zufügst. Der zusätzliche Schaden entspricht Ihrem Uebungsbonus und der Typ des zusätzlichen Schadens ist entweder Necrotic für Necrotic Shroud oder Radiant für Heavenly Wings und Inner Radiance."
+    },
+    {
+      "type": "paragraph",
+      "text": "Hier sind die Transformationsmöglichkeiten: Heavenly Wings. Aus deinem Rücken sprießen vorübergehend zwei Spektralflügel. Bis zum Ende der Transformation hast du eine Fluggeschwindigkeit, die deiner Geschwindigkeit entspricht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Innere Ausstrahlung. Sengendes Licht strahlt vorübergehend aus Ihren Augen und Ihrem Mund. Für die Dauer wirfst du helles Licht in einem Radius von 10 Fuß und schwaches Licht für weitere 10 Fuß ab, und am Ende jedes deiner Spielzüge erleidet jede Kreatur im Umkreis von 10 Fuß um dich Strahlungsschaden in Höhe deines Uebungsbonus."
+    },
+    {
+      "type": "paragraph",
+      "text": "Nekrotischer Schleier. Ihre Augen verwandeln sich kurzzeitig in dunkle Tümpel und aus Ihrem Rücken sprießen vorübergehend flugunfähige Flügel. Andere Kreaturen als deine Verbündeten im Umkreis von 10 Fuß um dich müssen einen Charisma-Rettungswurf (SG 8 plus dein Charisma-Modifikator und Uebungsbonus) bestehen oder bis zum Ende deines nächsten Zuges den Zustand „Verängstigt“ haben."
+    }
+  ],
+  "text": "Aasimar (ausgesprochen AH-sih-mar) sind Sterbliche, die einen Funken der Höheren Ebenen in ihrer Seele tragen. Ob sie von einem Engelswesen abstammen oder mit himmlischer Kraft erfüllt sind, sie können diesen Funken entfachen, um Licht, Heilung und himmlische Wut zu bringen. Aasimar kann in jeder Population von Sterblichen entstehen. Sie ähneln ihren Eltern, werden aber bis zu 160 Jahre alt und weisen Merkmale auf, die auf ihre himmlische Abstammung hinweisen, wie etwa metallische Sommersprossen, leuchtende Augen, einen Heiligenschein oder die Hautfarbe eines Engels (Silber, schillerndes Grün oder Kupferrot). Diese Merkmale beginnen subtil und werden offensichtlich, wenn der Aasimar lernt, seine volle himmlische Natur zu offenbaren.\n\nAasimar-Eigenschaften\n\nKreaturentyp: Humanoid. Größe: Mittel (ca. 4 bis 7 Fuß groß) oder Klein (ca. 2 bis 4 Fuß groß), ausgewählt, wenn Sie diese Art auswählen. Geschwindigkeit: 30 Fuß\n\nAls Aasimar verfügen Sie über diese besonderen Eigenschaften.\n\nHimmlische Resistenz. Du hast Resistenz gegen nekrotischen Schaden und Strahlungsschaden.\n\nDunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß.\n\nHeilende Hände. Als magische Aktion berührst du eine Kreatur und wirfst eine Anzahl von W4, die deinem Uebungsbonus entspricht. Die Kreatur erhält eine Anzahl an Trefferpunkten zurück, die der gewürfelten Summe entspricht. Sobald Sie diese Eigenschaft verwendet haben, können Sie sie nicht erneut verwenden, bis Sie eine Lange Rast abgeschlossen haben.\n\nLichtträger. Sie kennen den Light-Cantrip. Charisma ist Ihre Zauberfähigkeit dafür.\n\nHimmlische Offenbarung. Wenn Sie Charakterstufe 3 erreichen, können Sie sich als Bonusaktion mit einer der folgenden Optionen verwandeln (wählen Sie die Option bei jeder Transformation). Die Transformation dauert 1 Minute oder bis Sie sie beenden (keine Aktion erforderlich). Sobald Sie sich verwandelt haben, können Sie dies nicht erneut tun, bis Sie eine Lange Rast beendet haben.\n\nEinmal in jedem deiner Züge, bevor die Verwandlung endet, kannst du einem Ziel zusätzlichen Schaden zufügen, wenn du ihm mit einem Angriff oder einem Zauber Schaden zufügst. Der zusätzliche Schaden entspricht Ihrem Uebungsbonus und der Typ des zusätzlichen Schadens ist entweder Necrotic für Necrotic Shroud oder Radiant für Heavenly Wings und Inner Radiance.\n\nHier sind die Transformationsmöglichkeiten: Heavenly Wings. Aus deinem Rücken sprießen vorübergehend zwei Spektralflügel. Bis zum Ende der Transformation hast du eine Fluggeschwindigkeit, die deiner Geschwindigkeit entspricht.\n\nInnere Ausstrahlung. Sengendes Licht strahlt vorübergehend aus Ihren Augen und Ihrem Mund. Für die Dauer wirfst du helles Licht in einem Radius von 10 Fuß und schwaches Licht für weitere 10 Fuß ab, und am Ende jedes deiner Spielzüge erleidet jede Kreatur im Umkreis von 10 Fuß um dich Strahlungsschaden in Höhe deines Uebungsbonus.\n\nNekrotischer Schleier. Ihre Augen verwandeln sich kurzzeitig in dunkle Tümpel und aus Ihrem Rücken sprießen vorübergehend flugunfähige Flügel. Andere Kreaturen als deine Verbündeten im Umkreis von 10 Fuß um dich müssen einen Charisma-Rettungswurf (SG 8 plus dein Charisma-Modifikator und Uebungsbonus) bestehen oder bis zum Ende deines nächsten Zuges den Zustand „Verängstigt“ haben.",
+  "tags": [],
+  "size": [
+    "Klein",
+    "Mittel"
+  ],
+  "creature_type": "Humanoid",
+  "speed": {
+    "walk": 9,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Himmlische Resistenz",
+      "text": "Du hast Resistenz gegen nekrotischen Schaden und Strahlungsschaden."
+    },
+    {
+      "name": "Dunkelsicht",
+      "text": "Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß."
+    },
+    {
+      "name": "Heilende Hände",
+      "text": "Als magische Aktion berührst du eine Kreatur und wirfst eine Anzahl von W4, die deinem Uebungsbonus entspricht. Die Kreatur erhält eine Anzahl an Trefferpunkten zurück, die der gewürfelten Summe entspricht. Sobald Sie diese Eigenschaft verwendet haben, können Sie sie nicht erneut verwenden, bis Sie eine Lange Rast abgeschlossen haben."
+    },
+    {
+      "name": "Lichtträger",
+      "text": "Sie kennen den Light-Cantrip. Charisma ist Ihre Zauberfähigkeit dafür."
+    },
+    {
+      "name": "Himmlische Offenbarung",
+      "text": "Wenn Sie Charakterstufe 3 erreichen, können Sie sich als Bonusaktion mit einer der folgenden Optionen verwandeln (wählen Sie die Option bei jeder Transformation). Die Transformation dauert 1 Minute oder bis Sie sie beenden (keine Aktion erforderlich). Sobald Sie sich verwandelt haben, können Sie dies nicht erneut tun, bis Sie eine Lange Rast beendet haben."
+    },
+    {
+      "name": "Innere Ausstrahlung",
+      "text": "Sengendes Licht strahlt vorübergehend aus Ihren Augen und Ihrem Mund. Für die Dauer wirfst du helles Licht in einem Radius von 10 Fuß und schwaches Licht für weitere 10 Fuß ab, und am Ende jedes deiner Spielzüge erleidet jede Kreatur im Umkreis von 10 Fuß um dich Strahlungsschaden in Höhe deines Uebungsbonus."
+    },
+    {
+      "name": "Nekrotischer Schleier",
+      "text": "Ihre Augen verwandeln sich kurzzeitig in dunkle Tümpel und aus Ihrem Rücken sprießen vorübergehend flugunfähige Flügel. Andere Kreaturen als deine Verbündeten im Umkreis von 10 Fuß um dich müssen einen Charisma-Rettungswurf (SG 8 plus dein Charisma-Modifikator und Uebungsbonus) bestehen oder bis zum Ende deines nächsten Zuges den Zustand „Verängstigt“ haben."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

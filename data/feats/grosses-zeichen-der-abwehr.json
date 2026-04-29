@@ -1,0 +1,54 @@
+{
+  "id": "grosses-zeichen-der-abwehr",
+  "type": "feat",
+  "name": "Großes Zeichen der Abwehr",
+  "original_name": "Greater Mark of Warding",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:greater-mark-of-warding",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Groessere Drachenmale",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen des Abwehrtalents)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen des Abwehrtalents)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserte Intuition. Wenn Sie den Vorteil „Wächterintuition“ Ihres Talents „Mal der Abwehr“ nutzen, können Sie 1W6 statt 1W4 würfeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserte Abwehr. Wenn eine Kreatur einen Angriffswurf gegen dich oder eine Kreatur ausführt, die du in einem Umkreis von 30 Fuß um dich herum sehen kannst, kannst du eine Reaktion ausführen, um diesem Wurf einen Nachteil zuzufügen. Sie können diesen Vorteil mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen des Abwehrtalents)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20.\n\nVerbesserte Intuition. Wenn Sie den Vorteil „Wächterintuition“ Ihres Talents „Mal der Abwehr“ nutzen, können Sie 1W6 statt 1W4 würfeln.\n\nVerbesserte Abwehr. Wenn eine Kreatur einen Angriffswurf gegen dich oder eine Kreatur ausführt, die du in einem Umkreis von 30 Fuß um dich herum sehen kannst, kannst du eine Reaktion ausführen, um diesem Wurf einen Nachteil zuzufügen. Sie können diesen Vorteil mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "segen-des-blutvergiessens",
+  "type": "feat",
+  "name": "Segen des Blutvergießens",
+  "original_name": "Boon of Bloodshed",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-bloodshed",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Episches Segen-Talent (Voraussetzung: Level 19+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Episches Segen-Talent (Voraussetzung: Level 19+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Killer’s Fortune. Wenn ein Feind, den Sie sehen können, auf 0 Trefferpunkte reduziert wird, erhalten Sie einen Vorteil beim nächsten Angriffswurf, den Sie vor dem Ende Ihres nächsten Zuges durchführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kraft aus Schmerz. Wenn du einmal pro Spielzug einen Angriffswurf ausführst, während du blutig bist, kannst du dem Ziel zusätzlichen Schaden in Höhe deines Uebungsbonus zufügen. Die Art des zusätzlichen Schadens ist dieselbe wie die Art des Angriffs."
+    }
+  ],
+  "text": "Episches Segen-Talent (Voraussetzung: Level 19+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30.\n\nKiller’s Fortune. Wenn ein Feind, den Sie sehen können, auf 0 Trefferpunkte reduziert wird, erhalten Sie einen Vorteil beim nächsten Angriffswurf, den Sie vor dem Ende Ihres nächsten Zuges durchführen.\n\nKraft aus Schmerz. Wenn du einmal pro Spielzug einen Angriffswurf ausführst, während du blutig bist, kannst du dem Ziel zusätzlichen Schaden in Höhe deines Uebungsbonus zufügen. Die Art des zusätzlichen Schadens ist dieselbe wie die Art des Angriffs.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

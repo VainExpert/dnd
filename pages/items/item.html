@@ -11,7 +11,6 @@
   <header class="topbar">
     <div class="brand">
       <div class="title" id="title">Gegenstand</div>
-      <div class="subtitle"><a href="./items.html">&larr; Zurück zu allen Gegenständen</a> &bull; <a href="./vendors.html">Händler-Sortimente</a> &bull; <a href="../../index.html">Startseite</a></div>
     </div>
   </header>
 
@@ -21,6 +20,7 @@
     </div>
   </main>
 
+  <script src="../../nav.js"></script>
   <script type="module">
     import {
       escapeHtml,
@@ -129,41 +129,44 @@
         .join(", ");
     }
 
-    function renderObjectSummary(value){
+    function renderObjectSummary(value, lookups){
+      const richOptions = { lookups: { item: lookups.item, spell: lookups.spell }, inlineOnly: true };
       return Object.entries(value)
         .filter(([, entry]) => isMeaningful(entry))
-        .map(([subKey, entry]) => `${escapeHtml(labelFor(subKey))}: ${escapeHtml(String(entry))}`)
+        .map(([subKey, entry]) => `${escapeHtml(labelFor(subKey))}: ${renderRichText(String(entry), richOptions)}`)
         .join(" &bull; ");
     }
 
     function renderFieldValue(item, value, key, lookups){
-      if (key === "requires_attunement") return escapeHtml(attunementDisplay(item));
-      if (key === "vendors" || key === "tags") return (value ?? []).map(escapeHtml).join(", ");
+      const richOptions = { lookups: { item: lookups.item, spell: lookups.spell }, inlineOnly: true };
+
+      if (key === "requires_attunement") return renderRichText(attunementDisplay(item), richOptions);
+      if (key === "vendors" || key === "tags") return (value ?? []).map(entry => renderRichText(String(entry), richOptions)).join(", ");
       if (key === "granted_spell_ids") return renderLinkedRefs(value ?? [], "spell", lookups.spell);
       if (key === "contained_item_ids") return renderLinkedRefs(value ?? [], "item", lookups.item);
-      if (key === "modifiers" || key === "effects" || key === "granted_action_ids") return (value ?? []).map(escapeHtml).join(", ");
+      if (key === "modifiers" || key === "effects" || key === "granted_action_ids") return (value ?? []).map(entry => renderRichText(String(entry), richOptions)).join(", ");
 
       if (key === "charges" || key === "uses") {
         const parts = [];
-        if (isMeaningful(value?.max)) parts.push(`Max. ${escapeHtml(String(value.max))}`);
-        if (isMeaningful(value?.recharge)) parts.push(`Regeneration: ${escapeHtml(String(value.recharge))}`);
+        if (isMeaningful(value?.max)) parts.push(`Max. ${renderRichText(String(value.max), richOptions)}`);
+        if (isMeaningful(value?.recharge)) parts.push(`Regeneration: ${renderRichText(String(value.recharge), richOptions)}`);
         return parts.join(" &bull; ");
       }
 
       if (key === "armor" && value && typeof value === "object" && !Array.isArray(value)) {
         const parts = [];
-        if (isMeaningful(value.type)) parts.push(`Typ: ${escapeHtml(String(value.type))}`);
-        if (isMeaningful(value.base)) parts.push(`RK ${escapeHtml(String(value.base))}`);
+        if (isMeaningful(value.type)) parts.push(`Typ: ${renderRichText(String(value.type), richOptions)}`);
+        if (isMeaningful(value.base)) parts.push(`RK ${renderRichText(String(value.base), richOptions)}`);
         if (value.dex_bonus === true) parts.push("GE-Bonus");
-        if (isMeaningful(value.max)) parts.push(`GE max. ${escapeHtml(String(value.max))}`);
+        if (isMeaningful(value.max)) parts.push(`GE max. ${renderRichText(String(value.max), richOptions)}`);
         if (value.stealth_disadvantage === true) parts.push("Nachteil auf Heimlichkeit");
         return parts.join(" &bull; ");
       }
 
       if (typeof value === "boolean") return escapeHtml(value ? "Ja" : "Nein");
-      if (Array.isArray(value)) return value.map(entry => escapeHtml(String(entry))).join(", ");
-      if (value && typeof value === "object") return renderObjectSummary(value);
-      return escapeHtml(String(value ?? ""));
+      if (Array.isArray(value)) return value.map(entry => renderRichText(String(entry), richOptions)).join(", ");
+      if (value && typeof value === "object") return renderObjectSummary(value, lookups);
+      return renderRichText(String(value ?? ""), richOptions);
     }
 
     function renderDetailRows(item, lookups){

@@ -1,0 +1,82 @@
+{
+  "id": "exil-der-schattenmeister",
+  "type": "background",
+  "name": "Exil der Schattenmeister",
+  "original_name": "Shadowmasters Exile",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/background:shadowmasters-exile",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Fähigkeitswert: Geschicklichkeit, Intelligenz, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswert: Geschicklichkeit, Intelligenz, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Wilder Angreifer"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Akrobatik und Stealth"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkompetenz: Diebeswerkzeuge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) 2 Dolche, Diebeswerkzeuge, Krähenfüße, Kostüm, Enterhaken, Eisenstacheln, Spiegel, 2 Beutel, Seil, Reisekleidung, 3 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast dein ganzes Leben lang darauf trainiert, Mitglied der Shadowmasters zu werden, der mysteriösen Diebesgilde, die das Reich von Thesk hinter den Kulissen kontrolliert. Heimlichkeit und schnelle Reflexe waren nur der Anfang Ihrer Shadowmaster-Ausbildung; Sie mussten auch Ihre Rücksichtslosigkeit verbessern, um die Sicherheit der Geheimnisse der Gilde zu gewährleisten. Aber ein falscher Schritt führte zu Ihrem Ausschluss aus dem Orden. Jetzt müssen Sie Ihren eigenen Weg gehen."
+    }
+  ],
+  "text": "Fähigkeitswert: Geschicklichkeit, Intelligenz, Charisma\n\nTalent: Wilder Angreifer\n\nFertigkeiten: Akrobatik und Stealth\n\nWerkzeugkompetenz: Diebeswerkzeuge\n\nAusrüstung: Wähle A oder B: (A) 2 Dolche, Diebeswerkzeuge, Krähenfüße, Kostüm, Enterhaken, Eisenstacheln, Spiegel, 2 Beutel, Seil, Reisekleidung, 3 GP; oder (B) 50 GP\n\nDu hast dein ganzes Leben lang darauf trainiert, Mitglied der Shadowmasters zu werden, der mysteriösen Diebesgilde, die das Reich von Thesk hinter den Kulissen kontrolliert. Heimlichkeit und schnelle Reflexe waren nur der Anfang Ihrer Shadowmaster-Ausbildung; Sie mussten auch Ihre Rücksichtslosigkeit verbessern, um die Sicherheit der Geheimnisse der Gilde zu gewährleisten. Aber ein falscher Schritt führte zu Ihrem Ausschluss aus dem Orden. Jetzt müssen Sie Ihren eigenen Weg gehen.",
+  "tags": [],
+  "ability_scores": [],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Akrobatik",
+    "Stealth"
+  ],
+  "tool_proficiencies": [
+    "Diebeswerkzeuge\n"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "wilder-angreifer",
+  "granted_feat_name": "Wilder Angreifer\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) 2 Dolche, Diebeswerkzeuge, Krähenfüße, Kostüm, Enterhaken, Eisenstacheln, Spiegel, 2 Beutel, Seil, Reisekleidung, 3 GP; oder (B) 50 GP\n\nDu hast dein ganzes Leben lang darauf trainiert, Mitglied der Shadowmasters zu werden, der mysteriösen Diebesgilde, die das Reich von Thesk hinter den Kulissen kontrolliert. Heimlichkeit und schnelle Reflexe waren nur der Anfang Ihrer Shadowmaster-Ausbildung; Sie mussten auch Ihre Rücksichtslosigkeit verbessern, um die Sicherheit der Geheimnisse der Gilde zu gewährleisten. Aber ein falscher Schritt führte zu Ihrem Ausschluss aus dem Orden. Jetzt müssen Sie Ihren eigenen Weg gehen"
+    }
+  ]
+}

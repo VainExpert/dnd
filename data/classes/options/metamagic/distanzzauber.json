@@ -1,0 +1,29 @@
+{
+  "id": "distanzzauber",
+  "name": "Distanzzauber",
+  "original_name": "Distant Spell",
+  "kind": "metamagic_option",
+  "class": "Zauberer",
+  "class_id": "zauberer",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/sorcerer:metamagic",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "1 Zauberpunkt",
+  "cost_original": "1 Sorcery Point",
+  "prerequisite": "",
+  "prerequisite_original": "",
+  "summary": "Wenn Sie einen Zauber wirken, der eine Reichweite von mindestens 5 Fuß hat, können Sie 1 Zauberpunkt ausgeben, um die Reichweite des Zaubers zu verdoppeln. Oder wenn Sie einen Zauber wirken, der eine Reichweite von Berührung hat, können Sie 1 Zauberpunkt ausgeben, um die Reichweite des Zaubers auf 30 Fuß zu erhöhen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "When you cast a spell that has a range of at least 5 feet, you can spend 1 Sorcery Point to double the spell’s range. Or when you cast a spell that has a range of Touch, you can spend 1 Sorcery Point to make the spell’s range 30 feet.",
+      "text_de": "Wenn Sie einen Zauber wirken, der eine Reichweite von mindestens 5 Fuß hat, können Sie 1 Zauberpunkt ausgeben, um die Reichweite des Zaubers zu verdoppeln. Oder wenn Sie einen Zauber wirken, der eine Reichweite von Berührung hat, können Sie 1 Zauberpunkt ausgeben, um die Reichweite des Zaubers auf 30 Fuß zu erhöhen."
+    }
+  ]
+}

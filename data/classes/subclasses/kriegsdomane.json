@@ -1,0 +1,119 @@
+{
+  "id": "kriegsdomane",
+  "type": "subclass",
+  "name": "Kriegsdomäne",
+  "original_name": "War Domain",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/cleric:war-domain",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Inspiriere Tapferkeit und zerschmettere Feinde",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Inspiriere Tapferkeit und zerschmettere Feinde"
+    },
+    {
+      "type": "paragraph",
+      "text": "Krieg hat viele Erscheinungsformen. Es kann aus gewöhnlichen Menschen Helden machen. Es kann verzweifelt und schrecklich sein, wobei Grausamkeit und Feigheit Beispiele von Exzellenz und Mut in den Schatten stellen. Kleriker, die sich die Magie der Kriegsdomäne zunutze machen, zeichnen sich im Kampf aus, indem sie andere zum guten Kampf inspirieren oder Gewalttaten als Gebete darbringen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Götter der Kriegsdomäne wachen über die Krieger und belohnen sie für ihre großen Taten. Dazu gehören Verfechter der Ehre und des Rittertums sowie Götter der Zerstörung und Plünderung. Andere Kriegsgötter nehmen eine neutralere Haltung ein, fördern den Krieg in all seinen Erscheinungsformen und unterstützen Krieger unter allen Umständen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Geführter Schlag"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie oder eine Kreatur in einem Umkreis von 30 Fuß um Sie mit einem Angriffswurf verfehlen, können Sie eine Anwendung Ihrer Kanalgöttlichkeit aufwenden und diesem Wurf einen Bonus von +10 verleihen, was möglicherweise dazu führt, dass er trifft. Wenn Sie diese Funktion nutzen, um den Angriffswurf einer anderen Kreatur zu unterstützen, müssen Sie dazu eine Reaktion durchführen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Kriegsdomänenzauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Verbindung zu dieser göttlichen Domäne stellt sicher, dass Sie immer über bestimmte Zaubersprüche verfügen. Wenn Sie eine in der Kriegsdomänen-Zaubertabelle angegebene Klerikerstufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kriegsdomänenzauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Kleriker-Stufe",
+          "Vorbereitete Zauber"
+        ],
+        [
+          "3",
+          "Führungsbolzen, magische Waffe, Schild des Glaubens, spirituelle Waffe"
+        ],
+        [
+          "5",
+          "Mantel des Kreuzfahrers, Geisterwächter"
+        ],
+        [
+          "7",
+          "Feuerschild, Bewegungsfreiheit"
+        ],
+        [
+          "9",
+          "Halte Monster, Stahlwindschlag"
+        ]
+      ],
+      "text": "Vorbereitete Zauber auf Klerikerstufe: 3 Führungsbolzen, magische Waffe, Schild des Glaubens, spirituelle Waffe, 5 Mantel des Kreuzfahrers, Geisterwächter, 7 Feuerschild, Bewegungsfreiheit, 9 Monster festhalten, Stahlwindschlag"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Kriegspriester"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion können Sie einen Angriff mit einer Waffe oder einen unbewaffneten Schlag ausführen. Du kannst diese Bonusaktion so oft nutzen, wie es deinem Weisheitsmodifikator entspricht (mindestens einmal). Du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Kurze oder Lange Rast beendest."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 6: Kriegsgottes Segen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst eine Nutzung deiner Kanalgöttlichkeit aufwenden, um „Schild des Glaubens“ oder „Spirituelle Waffe“ zu wirken, anstatt einen Zauberslot zu verbrauchen. Wenn Sie einen der Zauber auf diese Weise wirken, erfordert der Zauber keine Konzentration. Stattdessen hält der Zauber 1 Minute an, endet jedoch vorzeitig, wenn Sie den Zauber erneut wirken, den Zustand „Kampfunfähig“ haben oder sterben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 17: Avatar der Schlacht"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst Resistenz gegen Wucht-, Stich- und Hiebschaden."
+    }
+  ],
+  "text": "Inspiriere Tapferkeit und zerschmettere Feinde\n\nKrieg hat viele Erscheinungsformen. Es kann aus gewöhnlichen Menschen Helden machen. Es kann verzweifelt und schrecklich sein, wobei Grausamkeit und Feigheit Beispiele von Exzellenz und Mut in den Schatten stellen. Kleriker, die sich die Magie der Kriegsdomäne zunutze machen, zeichnen sich im Kampf aus, indem sie andere zum guten Kampf inspirieren oder Gewalttaten als Gebete darbringen.\n\nDie Götter der Kriegsdomäne wachen über die Krieger und belohnen sie für ihre großen Taten. Dazu gehören Verfechter der Ehre und des Rittertums sowie Götter der Zerstörung und Plünderung. Andere Kriegsgötter nehmen eine neutralere Haltung ein, fördern den Krieg in all seinen Erscheinungsformen und unterstützen Krieger unter allen Umständen.\n\nStufe 3: Geführter Schlag\n\nWenn Sie oder eine Kreatur in einem Umkreis von 30 Fuß um Sie mit einem Angriffswurf verfehlen, können Sie eine Anwendung Ihrer Kanalgöttlichkeit aufwenden und diesem Wurf einen Bonus von +10 verleihen, was möglicherweise dazu führt, dass er trifft. Wenn Sie diese Funktion nutzen, um den Angriffswurf einer anderen Kreatur zu unterstützen, müssen Sie dazu eine Reaktion durchführen.\n\nStufe 3: Kriegsdomänenzauber\n\nIhre Verbindung zu dieser göttlichen Domäne stellt sicher, dass Sie immer über bestimmte Zaubersprüche verfügen. Wenn Sie eine in der Kriegsdomänen-Zaubertabelle angegebene Klerikerstufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nKriegsdomänenzauber\n\nVorbereitete Zauber auf Klerikerstufe: 3 Führungsbolzen, magische Waffe, Schild des Glaubens, spirituelle Waffe, 5 Mantel des Kreuzfahrers, Geisterwächter, 7 Feuerschild, Bewegungsfreiheit, 9 Monster festhalten, Stahlwindschlag\n\nStufe 3: Kriegspriester\n\nAls Bonusaktion können Sie einen Angriff mit einer Waffe oder einen unbewaffneten Schlag ausführen. Du kannst diese Bonusaktion so oft nutzen, wie es deinem Weisheitsmodifikator entspricht (mindestens einmal). Du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Kurze oder Lange Rast beendest.\n\nStufe 6: Kriegsgottes Segen\n\nDu kannst eine Nutzung deiner Kanalgöttlichkeit aufwenden, um „Schild des Glaubens“ oder „Spirituelle Waffe“ zu wirken, anstatt einen Zauberslot zu verbrauchen. Wenn Sie einen der Zauber auf diese Weise wirken, erfordert der Zauber keine Konzentration. Stattdessen hält der Zauber 1 Minute an, endet jedoch vorzeitig, wenn Sie den Zauber erneut wirken, den Zustand „Kampfunfähig“ haben oder sterben.\n\nLevel 17: Avatar der Schlacht\n\nDu erhältst Resistenz gegen Wucht-, Stich- und Hiebschaden.",
+  "tags": [],
+  "class": "Kleriker",
+  "class_id": "kleriker",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

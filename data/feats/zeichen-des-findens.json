@@ -1,0 +1,96 @@
+{
+  "id": "zeichen-des-findens",
+  "type": "feat",
+  "name": "Zeichen des Findens",
+  "original_name": "Mark of Finding",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:mark-of-finding",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Drachenmale",
+  "prerequisites": [],
+  "summary": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Intuition des Jägers. Wenn Sie eine Weisheitsprüfung (Wahrnehmung oder Überleben) durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finder’s Magic. Sie haben immer den Zauber „Mal des Jägers“ vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können es auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wenn Sie dieses Talent auswählen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du Charakterstufe 3 erreichst, hast du auch immer den Zauber „Objekt finden“ vorbereitet und kannst ihn auf die gleiche Weise wirken."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauber der Marke. Wenn Sie über die Funktion „Zauberwirkung“ oder „Paktmagie“ verfügen, werden die Zaubersprüche in der Tabelle „Mal des Findens von Zaubersprüchen“ zur Zauberliste dieser Funktion hinzugefügt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zeichen des Findens von Zaubersprüchen"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Zauberstufe",
+          "Zauber"
+        ],
+        [
+          "1",
+          "Feenfeuer, Langläufer"
+        ],
+        [
+          "2",
+          "Suchen Sie Tiere oder Pflanzen, Mind Spike"
+        ],
+        [
+          "3",
+          "Hellsehen, Mit Pflanzen sprechen"
+        ],
+        [
+          "4",
+          "Weissagung, Kreatur lokalisieren"
+        ],
+        [
+          "5",
+          "Kommunizieren Sie mit der Natur"
+        ]
+      ],
+      "text": "Zauberstufe Zauber 1 Feenfeuer, Langwanderer 2 Tiere oder Pflanzen lokalisieren, Gedankenspitze 3 Hellsehen, Mit Pflanzen sprechen 4 Weissagung, Kreatur lokalisieren 5 Mit der Natur kommunizieren"
+    }
+  ],
+  "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)\n\nSie profitieren von folgenden Vorteilen.\n\nDie Intuition des Jägers. Wenn Sie eine Weisheitsprüfung (Wahrnehmung oder Überleben) durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen.\n\nFinder’s Magic. Sie haben immer den Zauber „Mal des Jägers“ vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können es auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wenn Sie dieses Talent auswählen).\n\nWenn du Charakterstufe 3 erreichst, hast du auch immer den Zauber „Objekt finden“ vorbereitet und kannst ihn auf die gleiche Weise wirken.\n\nZauber der Marke. Wenn Sie über die Funktion „Zauberwirkung“ oder „Paktmagie“ verfügen, werden die Zaubersprüche in der Tabelle „Mal des Findens von Zaubersprüchen“ zur Zauberliste dieser Funktion hinzugefügt.\n\nZeichen des Findens von Zaubersprüchen\n\nZauberstufe Zauber 1 Feenfeuer, Langwanderer 2 Tiere oder Pflanzen lokalisieren, Gedankenspitze 3 Hellsehen, Mit Pflanzen sprechen 4 Weissagung, Kreatur lokalisieren 5 Mit der Natur kommunizieren",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

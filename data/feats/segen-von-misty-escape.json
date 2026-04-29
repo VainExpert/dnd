@@ -1,0 +1,57 @@
+{
+  "id": "segen-von-misty-escape",
+  "type": "feat",
+  "name": "Segen von Misty Escape",
+  "original_name": "Boon of Misty Escape",
+  "rules_version": "2024",
+  "source": "Astarion's Book of Hungers",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-misty-escape",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Exotisch",
+  "prerequisites": [],
+  "summary": "Episches Segen-Talent (Voraussetzung: Level 19+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Episches Segen-Talent (Voraussetzung: Level 19+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gasförmige Form. Wenn Ihre Trefferpunkte auf 0 sinken, Sie aber nicht sofort getötet werden, können Sie stattdessen auf 1 Trefferpunkt sinken und „Gasförmige Gestalt“ wirken, ohne einen Zauberslot zu verbrauchen (keine Aktion erforderlich). Wenn Sie diesen Zauber auf diese Weise wirken, können Sie nur sich selbst als Ziel haben, Ihre Fluggeschwindigkeit beträgt 20 Fuß und Sie erhalten zu Beginn jedes Ihrer Züge für die Dauer des Zaubers 10 Trefferpunkte zurück. Die Zauberfähigkeit des Zaubers ist die Fähigkeit, die durch dieses Talent erhöht wird."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diesen Vorteil genutzt haben, können Sie dies nicht mehr tun, bis Sie eine Lange Rast beendet haben."
+    }
+  ],
+  "text": "Episches Segen-Talent (Voraussetzung: Level 19+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 30.\n\nGasförmige Form. Wenn Ihre Trefferpunkte auf 0 sinken, Sie aber nicht sofort getötet werden, können Sie stattdessen auf 1 Trefferpunkt sinken und „Gasförmige Gestalt“ wirken, ohne einen Zauberslot zu verbrauchen (keine Aktion erforderlich). Wenn Sie diesen Zauber auf diese Weise wirken, können Sie nur sich selbst als Ziel haben, Ihre Fluggeschwindigkeit beträgt 20 Fuß und Sie erhalten zu Beginn jedes Ihrer Züge für die Dauer des Zaubers 10 Trefferpunkte zurück. Die Zauberfähigkeit des Zaubers ist die Fähigkeit, die durch dieses Talent erhöht wird.\n\nSobald Sie diesen Vorteil genutzt haben, können Sie dies nicht mehr tun, bis Sie eine Lange Rast beendet haben.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

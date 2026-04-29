@@ -1,12 +1,13 @@
-# Safety Tools & Expectations
+# Sicherheitswerkzeuge & Erwartungen
 
-## Safety tools
+## Sicherheitswerkzeuge
 
-- **X-card:** anyone can stop content immediately.
-- **Open Door:** you can step away anytime.
-- **Lines & Veils:** we don’t cross lines; veils fade to black.
+- **X-Karte:** jeder kann das Spiel jederzeit stoppen.
+- **Offene Tür:** man kann immer aus dem Raum gehen, wenn es zu viel wird.
+- **Grenzen & Schleier:** Grenzen wredn nicht überschritten; Schleier gehen zu schwarz über und machen mit der nächsten Szene danach weiter.
 
-## Expectations
+## Erwartungen
 
-- Be kind, share spotlight, ask before PvP.
-- No surprise torture/sexual violence content.
+- Seid nett zueinander, teilt das Rampenlicht
+- kein expliziter Inhalt
+- kein PvP

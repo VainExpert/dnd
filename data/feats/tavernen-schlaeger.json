@@ -1,0 +1,54 @@
+{
+  "id": "tavernen-schlaeger",
+  "type": "feat",
+  "name": "Tavernen-Schlaeger",
+  "original_name": "Tavern Brawler",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:tavern-brawler",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Sie profitieren von folgenden Vorteilen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserter unbewaffneter Schlag. Wenn Sie mit Ihrem unbewaffneten Schlag zuschlagen und Schaden verursachen, können Sie anstelle des normalen Schadens eines unbewaffneten Schlags Wuchtschaden in Höhe von 1W4 plus Ihrem Stärkemodifikator verursachen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schadenswiederholungen. Wann immer Sie einen Schadenswürfel für Ihren Unbewaffneten Schlag werfen, können Sie den Würfel erneut würfeln, wenn er eine 1 ergibt, und Sie müssen den neuen Wurf verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Improvisierte Waffen. Sie beherrschen den Umgang mit improvisierten Waffen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Drücken. Wenn du in deinem Zug eine Kreatur mit einem unbewaffneten Schlag als Teil der Angriffsaktion triffst, kannst du dem Ziel Schaden zufügen und es außerdem 1,5 m von dir wegstoßen. Du kannst diesen Vorteil nur einmal pro Spielzug nutzen."
+    }
+  ],
+  "text": "Sie profitieren von folgenden Vorteilen.\n\nVerbesserter unbewaffneter Schlag. Wenn Sie mit Ihrem unbewaffneten Schlag zuschlagen und Schaden verursachen, können Sie anstelle des normalen Schadens eines unbewaffneten Schlags Wuchtschaden in Höhe von 1W4 plus Ihrem Stärkemodifikator verursachen.\n\nSchadenswiederholungen. Wann immer Sie einen Schadenswürfel für Ihren Unbewaffneten Schlag werfen, können Sie den Würfel erneut würfeln, wenn er eine 1 ergibt, und Sie müssen den neuen Wurf verwenden.\n\nImprovisierte Waffen. Sie beherrschen den Umgang mit improvisierten Waffen.\n\nDrücken. Wenn du in deinem Zug eine Kreatur mit einem unbewaffneten Schlag als Teil der Angriffsaktion triffst, kannst du dem Ziel Schaden zufügen und es außerdem 1,5 m von dir wegstoßen. Du kannst diesen Vorteil nur einmal pro Spielzug nutzen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

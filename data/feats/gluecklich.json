@@ -1,0 +1,50 @@
+{
+  "id": "gluecklich",
+  "type": "feat",
+  "name": "Gluecklich",
+  "original_name": "Lucky",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:lucky",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Sie profitieren von folgenden Vorteilen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Glückspunkte. Sie verfügen über eine Anzahl an Glückspunkten in Höhe Ihres Uebungsbonus und können die Punkte für die unten aufgeführten Vorteile einlösen. Du erhältst deine verbrauchten Glückspunkte zurück, wenn du eine Lange Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vorteil. Wenn Sie für einen W20-Test einen W20 würfeln, können Sie 1 Glückspunkt ausgeben, um sich beim Wurf einen Vorteil zu verschaffen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Nachteil. Wenn eine Kreatur einen W20 für einen Angriffswurf gegen dich würfelt, kannst du 1 Glückspunkt ausgeben, um diesem Wurf einen Nachteil zuzufügen."
+    }
+  ],
+  "text": "Sie profitieren von folgenden Vorteilen.\n\nGlückspunkte. Sie verfügen über eine Anzahl an Glückspunkten in Höhe Ihres Uebungsbonus und können die Punkte für die unten aufgeführten Vorteile einlösen. Du erhältst deine verbrauchten Glückspunkte zurück, wenn du eine Lange Rast abschließt.\n\nVorteil. Wenn Sie für einen W20-Test einen W20 würfeln, können Sie 1 Glückspunkt ausgeben, um sich beim Wurf einen Vorteil zu verschaffen.\n\nNachteil. Wenn eine Kreatur einen W20 für einen Angriffswurf gegen dich würfelt, kannst du 1 Glückspunkt ausgeben, um diesem Wurf einen Nachteil zuzufügen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

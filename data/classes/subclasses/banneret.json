@@ -1,0 +1,125 @@
+{
+  "id": "banneret",
+  "type": "subclass",
+  "name": "Banneret",
+  "original_name": "Banneret",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/fighter:banneret",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Sammeln Sie Mithelden mit inspirierender Führung",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Sammeln Sie Mithelden mit inspirierender Führung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bannerets sind Vorbilder von Tapferkeit und Führung, die die Unschuldigen beschützen und Mitabenteurer für die Sache der Gerechtigkeit und Freiheit mobilisieren. Viele sind Ritter, die in Cormyr, den Silbermarken, Damara, Chessenta oder anderen Ländern in ganz Faerûn dienen. Sie wandern als umherziehende Ritter durch die Reiche und führen den Kampf gegen das Böse über die Grenzen ihres Königreichs hinaus."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ein Banneret verlässt sich auf Urteilsvermögen, Tapferkeit und Treue zum Ritterkodex, um Übeltäter zu besiegen. Ein einsamer Banneret ist ein geschickter Krieger, aber wenn er eine Gruppe von Verbündeten anführt, kann einer dieser Krieger selbst eine schlecht ausgerüstete Miliz in eine wilde Kriegsbande verwandeln."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Ritterlicher Gesandter"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie wissen, wie Sie sich als edler Botschafter mit Anmut verhalten. Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verständnis. Sie können den Zauber „Sprachen verstehen“ wirken, jedoch nur als Ritual. Charisma ist Ihre Zauberfähigkeit dafür."
+    },
+    {
+      "type": "paragraph",
+      "text": "Polyglott. Sie lernen eine Sprache anhand der Sprachtabellen im Spielerhandbuch oder Kapitel 2 dieses Buches. Wenn Sie eine Lange Rast abgeschlossen haben, können Sie eine im Rahmen dieser Veranstaltung erlernte Sprache durch eine andere Sprache ersetzen, die Sie in den letzten 24 Stunden gehört, gesehen oder gelesen haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gut gesprochen. Sie erwerben Kenntnisse in einer der folgenden Fähigkeiten Ihrer Wahl: Einsicht, Einschüchterung, Überzeugung oder Leistung."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Gruppenwiederherstellung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Ihren „Zweiten Wind“ verwenden, um Trefferpunkte zurückzugewinnen, können Sie eine Anzahl von Verbündeten innerhalb einer 30-Fuß-Emanation auswählen, die von Ihnen selbst stammt, bis zu einer Anzahl von Verbündeten, die Ihrem Charisma-Modifikator entspricht (mindestens eins). Jeder dieser Verbündeten erhält Trefferpunkte in Höhe von 1W4 plus deiner Kämpferstufe zurück. Sobald Sie diese Fähigkeit nutzen, können Sie sie nicht erneut nutzen, bis Sie eine kurze oder lange Rast beendet haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Teamtaktik"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Gruppenwiederherstellung verwenden, hat jeder ausgewählte Verbündete bis zum Beginn Ihres nächsten Zuges einen Vorteil bei D20-Tests."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Rallying Surge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Ihre Aktion Surge verwenden, können Sie Verbündete innerhalb einer 30-Fuß-Emanation auswählen, die von Ihnen selbst stammt, bis zu einer Anzahl von Verbündeten, die Ihrem Charisma-Modifikator entspricht (mindestens eins). Jeder dieser Verbündeten kann sofort eine Reaktion ausführen, um eine der folgenden Optionen zu nutzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Angriff. Der Verbündete führt einen Angriff mit einer Waffe oder einem unbewaffneten Schlag durch."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bewegen. Der Verbündete bewegt sich bis zur Hälfte seiner Geschwindigkeit, ohne Gelegenheitsangriffe zu provozieren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Gemeinsame Resilienz"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn einem Verbündeten, den Sie im Umkreis von 60 Fuß um sich herum sehen können, ein Rettungswurf misslingt, können Sie eine Reaktion durchführen, um einen Einsatz Ihrer Unbezwingbarkeitsfunktion zu nutzen. Der Verbündete kann den Rettungswurf sofort mit einem Bonus wiederholen, der Ihrer Kämpferstufe entspricht; Der Verbündete muss den neuen Wurf verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 18: Inspirierender Kommandant"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gestärkte Rallye. Der Wirkungsbereich von Group Recovery und Rallying Surge beträgt jetzt eine 60-Fuß-Emanation."
+    },
+    {
+      "type": "paragraph",
+      "text": "Unerschütterlicher Mut. Du hast Immunität gegen die Zustände „Bezaubert“ und „Verängstigt“."
+    }
+  ],
+  "text": "Sammeln Sie Mithelden mit inspirierender Führung\n\nBannerets sind Vorbilder von Tapferkeit und Führung, die die Unschuldigen beschützen und Mitabenteurer für die Sache der Gerechtigkeit und Freiheit mobilisieren. Viele sind Ritter, die in Cormyr, den Silbermarken, Damara, Chessenta oder anderen Ländern in ganz Faerûn dienen. Sie wandern als umherziehende Ritter durch die Reiche und führen den Kampf gegen das Böse über die Grenzen ihres Königreichs hinaus.\n\nEin Banneret verlässt sich auf Urteilsvermögen, Tapferkeit und Treue zum Ritterkodex, um Übeltäter zu besiegen. Ein einsamer Banneret ist ein geschickter Krieger, aber wenn er eine Gruppe von Verbündeten anführt, kann einer dieser Krieger selbst eine schlecht ausgerüstete Miliz in eine wilde Kriegsbande verwandeln.\n\nLevel 3: Ritterlicher Gesandter\n\nSie wissen, wie Sie sich als edler Botschafter mit Anmut verhalten. Sie profitieren von folgenden Vorteilen.\n\nVerständnis. Sie können den Zauber „Sprachen verstehen“ wirken, jedoch nur als Ritual. Charisma ist Ihre Zauberfähigkeit dafür.\n\nPolyglott. Sie lernen eine Sprache anhand der Sprachtabellen im Spielerhandbuch oder Kapitel 2 dieses Buches. Wenn Sie eine Lange Rast abgeschlossen haben, können Sie eine im Rahmen dieser Veranstaltung erlernte Sprache durch eine andere Sprache ersetzen, die Sie in den letzten 24 Stunden gehört, gesehen oder gelesen haben.\n\nGut gesprochen. Sie erwerben Kenntnisse in einer der folgenden Fähigkeiten Ihrer Wahl: Einsicht, Einschüchterung, Überzeugung oder Leistung.\n\nStufe 3: Gruppenwiederherstellung\n\nWenn Sie Ihren „Zweiten Wind“ verwenden, um Trefferpunkte zurückzugewinnen, können Sie eine Anzahl von Verbündeten innerhalb einer 30-Fuß-Emanation auswählen, die von Ihnen selbst stammt, bis zu einer Anzahl von Verbündeten, die Ihrem Charisma-Modifikator entspricht (mindestens eins). Jeder dieser Verbündeten erhält Trefferpunkte in Höhe von 1W4 plus deiner Kämpferstufe zurück. Sobald Sie diese Fähigkeit nutzen, können Sie sie nicht erneut nutzen, bis Sie eine kurze oder lange Rast beendet haben.\n\nLevel 7: Teamtaktik\n\nWenn Sie Gruppenwiederherstellung verwenden, hat jeder ausgewählte Verbündete bis zum Beginn Ihres nächsten Zuges einen Vorteil bei D20-Tests.\n\nLevel 10: Rallying Surge\n\nWenn Sie Ihre Aktion Surge verwenden, können Sie Verbündete innerhalb einer 30-Fuß-Emanation auswählen, die von Ihnen selbst stammt, bis zu einer Anzahl von Verbündeten, die Ihrem Charisma-Modifikator entspricht (mindestens eins). Jeder dieser Verbündeten kann sofort eine Reaktion ausführen, um eine der folgenden Optionen zu nutzen.\n\nAngriff. Der Verbündete führt einen Angriff mit einer Waffe oder einem unbewaffneten Schlag durch.\n\nBewegen. Der Verbündete bewegt sich bis zur Hälfte seiner Geschwindigkeit, ohne Gelegenheitsangriffe zu provozieren.\n\nLevel 15: Gemeinsame Resilienz\n\nWenn einem Verbündeten, den Sie im Umkreis von 60 Fuß um sich herum sehen können, ein Rettungswurf misslingt, können Sie eine Reaktion durchführen, um einen Einsatz Ihrer Unbezwingbarkeitsfunktion zu nutzen. Der Verbündete kann den Rettungswurf sofort mit einem Bonus wiederholen, der Ihrer Kämpferstufe entspricht; Der Verbündete muss den neuen Wurf verwenden.\n\nLevel 18: Inspirierender Kommandant\n\nSie profitieren von folgenden Vorteilen.\n\nGestärkte Rallye. Der Wirkungsbereich von Group Recovery und Rallying Surge beträgt jetzt eine 60-Fuß-Emanation.\n\nUnerschütterlicher Mut. Du hast Immunität gegen die Zustände „Bezaubert“ und „Verängstigt“.",
+  "tags": [],
+  "class": "Kaempfer",
+  "class_id": "kaempfer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

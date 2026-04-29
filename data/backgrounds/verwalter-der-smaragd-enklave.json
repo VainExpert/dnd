@@ -1,0 +1,90 @@
+{
+  "id": "verwalter-der-smaragd-enklave",
+  "type": "background",
+  "name": "Verwalter der Smaragd-Enklave",
+  "original_name": "Emerald Enclave Caretaker",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/background:emerald-enclave-caretaker",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Konstitution, Intelligenz, Weisheit",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Konstitution, Intelligenz, Weisheit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Jungling der Smaragd-Enklave"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Natur und Überleben"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkompetenz: Kräuterkunde-Kit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Kurzbogen, 20 Pfeile, Kräuterkunde-Set, Schlafsack, Decke, Beutel, Zelt, Reisekleidung, 13 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Hausmeister der Smaragd-Enklave kümmern Sie sich um diejenigen, denen die Welt am Herzen liegt. Entweder zusammen mit Ihren Mitmitgliedern der Emerald Enclave oder allein haben Sie wesentliche Fähigkeiten für das Leben mit dem Land erlernt: wie man Wild aufspürt, wo man nach nützlichen Kräutern sucht und sogar wie man das Wetter vorhersagt. Sie nutzen diese Talente, um das Gleichgewicht zwischen Zivilisation und Wildnis aufrechtzuerhalten und die Welt von unnatürlichen Kreaturen zu befreien."
+    }
+  ],
+  "text": "Fähigkeitswerte: Konstitution, Intelligenz, Weisheit\n\nTalent: Jungling der Smaragd-Enklave\n\nFertigkeiten: Natur und Überleben\n\nWerkzeugkompetenz: Kräuterkunde-Kit\n\nAusrüstung: Wähle A oder B: (A) Kurzbogen, 20 Pfeile, Kräuterkunde-Set, Schlafsack, Decke, Beutel, Zelt, Reisekleidung, 13 GP; oder (B) 50 GP\n\nAls Hausmeister der Smaragd-Enklave kümmern Sie sich um diejenigen, denen die Welt am Herzen liegt. Entweder zusammen mit Ihren Mitmitgliedern der Emerald Enclave oder allein haben Sie wesentliche Fähigkeiten für das Leben mit dem Land erlernt: wie man Wild aufspürt, wo man nach nützlichen Kräutern sucht und sogar wie man das Wetter vorhersagt. Sie nutzen diese Talente, um das Gleichgewicht zwischen Zivilisation und Wildnis aufrechtzuerhalten und die Welt von unnatürlichen Kreaturen zu befreien.",
+  "tags": [],
+  "ability_scores": [
+    "con",
+    "int",
+    "wis"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "con",
+      "int",
+      "wis"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Natur",
+    "Ueberleben"
+  ],
+  "tool_proficiencies": [
+    "Kräuterkunde-Kit\n"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "jungling-der-smaragd-enklave",
+  "granted_feat_name": "Jungling der Smaragd-Enklave\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Kurzbogen, 20 Pfeile, Kräuterkunde-Set, Schlafsack, Decke, Beutel, Zelt, Reisekleidung, 13 GP; oder (B) 50 GP\n\nAls Hausmeister der Smaragd-Enklave kümmern Sie sich um diejenigen, denen die Welt am Herzen liegt. Entweder zusammen mit Ihren Mitmitgliedern der Emerald Enclave oder allein haben Sie wesentliche Fähigkeiten für das Leben mit dem Land erlernt: wie man Wild aufspürt, wo man nach nützlichen Kräutern sucht und sogar wie man das Wetter vorhersagt. Sie nutzen diese Talente, um das Gleichgewicht zwischen Zivilisation und Wildnis aufrechtzuerhalten und die Welt von unnatürlichen Kreaturen zu befreien"
+    }
+  ]
+}

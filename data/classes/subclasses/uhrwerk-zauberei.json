@@ -1,0 +1,182 @@
+{
+  "id": "uhrwerk-zauberei",
+  "type": "subclass",
+  "name": "Uhrwerk-Zauberei",
+  "original_name": "Clockwork Sorcery",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/sorcerer:clockwork-sorcery",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Kanalisieren Sie die kosmischen Kräfte der Ordnung",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Kanalisieren Sie die kosmischen Kräfte der Ordnung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die kosmische Ordnungskraft hat Sie mit Magie erfüllt. Diese Macht entspringt Mechanus oder einem ähnlichen Reich – einer Existenzebene, die vollständig von der Effizienz eines Uhrwerks geprägt ist. Sie oder jemand aus Ihrer Abstammung sind möglicherweise in die Machenschaften der Modrons verwickelt, der ordentlichen Wesen, die Mechanus bewohnen. Vielleicht hat Ihr Vorfahre sogar am Großen Modron-Marsch teilgenommen. Was auch immer ihr Ursprung in Ihnen sein mag, die Macht der Ordnung mag für andere seltsam erscheinen, aber für Sie ist sie Teil eines riesigen und herrlichen Systems."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Uhrwerkzauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine in der Uhrwerk-Zaubertabelle angegebene Zaubererstufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Uhrwerkzauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Zauberer-Level",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Hilfe, Alarm, geringere Wiederherstellung, Schutz vor Bösem und Gutem"
+        ],
+        [
+          "5",
+          "Magie bannen, Schutz vor Energie"
+        ],
+        [
+          "7",
+          "Bewegungsfreiheit, Konstrukt beschwören"
+        ],
+        [
+          "9",
+          "Größere Wiederherstellung, Mauer der Macht"
+        ]
+      ],
+      "text": "Zauber der Stufe Zauberer: 3 Hilfe, Alarm, Geringe Wiederherstellung, Schutz vor Bösem und Gutem, 5 Magie bannen, Schutz vor Energie, 7 Bewegungsfreiheit, Konstrukt beschwören, 9 Große Wiederherstellung, Mauer der Macht"
+    },
+    {
+      "type": "paragraph",
+      "text": "Konsultieren Sie außerdem die Tabelle „Manifestationen der Ordnung“ und wählen oder bestimmen Sie nach dem Zufallsprinzip, wie sich Ihre Verbindung zur Ordnung manifestiert, während Sie einen Ihrer Zaubererzauber wirken."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Manifestationen der Ordnung"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "1W6",
+          "Manifestation"
+        ],
+        [
+          "1",
+          "Spektrale Zahnräder schweben hinter dir."
+        ],
+        [
+          "2",
+          "Die Zeiger einer Uhr drehen sich in deinen Augen."
+        ],
+        [
+          "3",
+          "Ihre Haut erstrahlt in messingfarbenem Glanz."
+        ],
+        [
+          "4",
+          "Schwebende Gleichungen und geometrische Objekte überlagern Ihren Körper."
+        ],
+        [
+          "5",
+          "Ihr Zauberfokus nimmt vorübergehend die Form eines winzigen Uhrwerks an."
+        ],
+        [
+          "6",
+          "Das Ticken von Zahnrädern oder das Klingeln einer Uhr können Sie und diejenigen, die von Ihrer Magie betroffen sind, hören."
+        ]
+      ],
+      "text": "1d6 Manifestation 1 Spektrale Zahnräder schweben hinter dir. 2 Die Zeiger einer Uhr drehen sich in deinen Augen. 3 Ihre Haut erstrahlt in messingfarbenem Glanz. 4 Schwebende Gleichungen und geometrische Objekte liegen über Ihrem Körper. 5 Ihr Zauberfokus nimmt vorübergehend die Form eines winzigen Uhrwerks an. 6 Das Ticken von Zahnrädern oder das Klingeln einer Uhr können Sie und diejenigen, die von Ihrer Magie betroffen sind, hören."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Gleichgewicht wiederherstellen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Verbindung zur Ebene der absoluten Ordnung ermöglicht es Ihnen, chaotische Momente auszugleichen. Wenn eine Kreatur, die Sie im Umkreis von 60 Fuß um sich herum sehen können, im Begriff ist, einen W20 mit Vorteil oder Nachteil zu würfeln, können Sie eine Reaktion durchführen, um zu verhindern, dass der Wurf durch Vorteil und Nachteil beeinflusst wird."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diese Funktion so oft verwenden, wie es Ihrem Charisma-Modifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Bastion des Gesetzes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können die große Gleichung der Existenz nutzen, um einer Kreatur einen schimmernden Schild der Ordnung zu verleihen. Als magische Aktion können Sie 1 bis 5 Zauberpunkte ausgeben, um einen magischen Schutz um sich selbst oder eine andere Kreatur zu errichten, die Sie in einem Umkreis von 30 Fuß um sich herum sehen können. Der Schutzzauber wird durch eine Anzahl von W8 dargestellt, die der Anzahl der Zauberpunkte entspricht, die für seine Errichtung aufgewendet wurden. Wenn die geschützte Kreatur Schaden erleidet, kann sie eine Reihe dieser Würfel ausgeben, sie würfeln und den erlittenen Schaden um die mit diesen Würfeln gewürfelte Summe reduzieren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Schutz bleibt bestehen, bis Sie eine Lange Rast abgeschlossen haben oder diese Funktion erneut verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Trance der Ordnung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst die Fähigkeit, dein Bewusstsein mit den endlosen Berechnungen von Mechanus in Einklang zu bringen. Als Bonusaktion können Sie diesen Zustand für 1 Minute betreten. Während dieser Dauer können Angriffswürfe gegen Sie nicht vom Vorteil profitieren, und wann immer Sie einen W20-Test machen, können Sie einen Wurf von 9 oder weniger auf dem W20 als 10 behandeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie geben 5 Zauberpunkte aus (keine Aktion erforderlich), um sie wieder nutzen zu können."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 18: Uhrwerk-Kavalkade"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie beschwören für einen Moment Geister der Ordnung, um die Unordnung um Sie herum zu beseitigen. Als magische Aktion beschwörst du die Geister in einem 30-Fuß-Würfel, der von dir stammt. Die Geister sehen aus wie Modrons oder andere Konstrukte Ihrer Wahl. Die Geister sind immateriell und unverwundbar und erzeugen die Effekte unten im Würfel, bevor sie verschwinden. Sobald Sie diese Aktion verwendet haben, können Sie sie nicht erneut verwenden, bis Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie geben 7 Zauberpunkte aus (keine Aktion erforderlich), um sie wieder verwenden zu können."
+    },
+    {
+      "type": "paragraph",
+      "text": "Heilen. Die Geister stellen bis zu 100 Trefferpunkte wieder her, die nach Belieben auf beliebig viele Kreaturen im Würfel aufgeteilt werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Reparieren. Beschädigte Gegenstände, die sich vollständig im Cube befinden, werden sofort repariert."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zerstreuen. Jeder Zauber der Stufe 6 und niedriger endet bei Kreaturen und Objekten deiner Wahl im Würfel."
+    }
+  ],
+  "text": "Kanalisieren Sie die kosmischen Kräfte der Ordnung\n\nDie kosmische Ordnungskraft hat Sie mit Magie erfüllt. Diese Macht entspringt Mechanus oder einem ähnlichen Reich – einer Existenzebene, die vollständig von der Effizienz eines Uhrwerks geprägt ist. Sie oder jemand aus Ihrer Abstammung sind möglicherweise in die Machenschaften der Modrons verwickelt, der ordentlichen Wesen, die Mechanus bewohnen. Vielleicht hat Ihr Vorfahre sogar am Großen Modron-Marsch teilgenommen. Was auch immer ihr Ursprung in Ihnen sein mag, die Macht der Ordnung mag für andere seltsam erscheinen, aber für Sie ist sie Teil eines riesigen und herrlichen Systems.\n\nLevel 3: Uhrwerkzauber\n\nWenn Sie eine in der Uhrwerk-Zaubertabelle angegebene Zaubererstufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nUhrwerkzauber\n\nZauber der Stufe Zauberer: 3 Hilfe, Alarm, Geringe Wiederherstellung, Schutz vor Bösem und Gutem, 5 Magie bannen, Schutz vor Energie, 7 Bewegungsfreiheit, Konstrukt beschwören, 9 Große Wiederherstellung, Mauer der Macht\n\nKonsultieren Sie außerdem die Tabelle „Manifestationen der Ordnung“ und wählen oder bestimmen Sie nach dem Zufallsprinzip, wie sich Ihre Verbindung zur Ordnung manifestiert, während Sie einen Ihrer Zaubererzauber wirken.\n\nManifestationen der Ordnung\n\n1d6 Manifestation 1 Spektrale Zahnräder schweben hinter dir. 2 Die Zeiger einer Uhr drehen sich in deinen Augen. 3 Ihre Haut erstrahlt in messingfarbenem Glanz. 4 Schwebende Gleichungen und geometrische Objekte liegen über Ihrem Körper. 5 Ihr Zauberfokus nimmt vorübergehend die Form eines winzigen Uhrwerks an. 6 Das Ticken von Zahnrädern oder das Klingeln einer Uhr können Sie und diejenigen, die von Ihrer Magie betroffen sind, hören.\n\nStufe 3: Gleichgewicht wiederherstellen\n\nIhre Verbindung zur Ebene der absoluten Ordnung ermöglicht es Ihnen, chaotische Momente auszugleichen. Wenn eine Kreatur, die Sie im Umkreis von 60 Fuß um sich herum sehen können, im Begriff ist, einen W20 mit Vorteil oder Nachteil zu würfeln, können Sie eine Reaktion durchführen, um zu verhindern, dass der Wurf durch Vorteil und Nachteil beeinflusst wird.\n\nSie können diese Funktion so oft verwenden, wie es Ihrem Charisma-Modifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben.\n\nLevel 6: Bastion des Gesetzes\n\nSie können die große Gleichung der Existenz nutzen, um einer Kreatur einen schimmernden Schild der Ordnung zu verleihen. Als magische Aktion können Sie 1 bis 5 Zauberpunkte ausgeben, um einen magischen Schutz um sich selbst oder eine andere Kreatur zu errichten, die Sie in einem Umkreis von 30 Fuß um sich herum sehen können. Der Schutzzauber wird durch eine Anzahl von W8 dargestellt, die der Anzahl der Zauberpunkte entspricht, die für seine Errichtung aufgewendet wurden. Wenn die geschützte Kreatur Schaden erleidet, kann sie eine Reihe dieser Würfel ausgeben, sie würfeln und den erlittenen Schaden um die mit diesen Würfeln gewürfelte Summe reduzieren.\n\nDer Schutz bleibt bestehen, bis Sie eine Lange Rast abgeschlossen haben oder diese Funktion erneut verwenden.\n\nLevel 14: Trance der Ordnung\n\nDu erhältst die Fähigkeit, dein Bewusstsein mit den endlosen Berechnungen von Mechanus in Einklang zu bringen. Als Bonusaktion können Sie diesen Zustand für 1 Minute betreten. Während dieser Dauer können Angriffswürfe gegen Sie nicht vom Vorteil profitieren, und wann immer Sie einen W20-Test machen, können Sie einen Wurf von 9 oder weniger auf dem W20 als 10 behandeln.\n\nSobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie geben 5 Zauberpunkte aus (keine Aktion erforderlich), um sie wieder nutzen zu können.\n\nLevel 18: Uhrwerk-Kavalkade\n\nSie beschwören für einen Moment Geister der Ordnung, um die Unordnung um Sie herum zu beseitigen. Als magische Aktion beschwörst du die Geister in einem 30-Fuß-Würfel, der von dir stammt. Die Geister sehen aus wie Modrons oder andere Konstrukte Ihrer Wahl. Die Geister sind immateriell und unverwundbar und erzeugen die Effekte unten im Würfel, bevor sie verschwinden. Sobald Sie diese Aktion verwendet haben, können Sie sie nicht erneut verwenden, bis Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie geben 7 Zauberpunkte aus (keine Aktion erforderlich), um sie wieder verwenden zu können.\n\nHeilen. Die Geister stellen bis zu 100 Trefferpunkte wieder her, die nach Belieben auf beliebig viele Kreaturen im Würfel aufgeteilt werden.\n\nReparieren. Beschädigte Gegenstände, die sich vollständig im Cube befinden, werden sofort repariert.\n\nZerstreuen. Jeder Zauber der Stufe 6 und niedriger endet bei Kreaturen und Objekten deiner Wahl im Würfel.",
+  "tags": [],
+  "class": "Zauberer",
+  "class_id": "zauberer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

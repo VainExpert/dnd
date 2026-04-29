@@ -1,0 +1,52 @@
+{
+  "id": "segen-des-schicksals",
+  "type": "feat",
+  "name": "Segen des Schicksals",
+  "original_name": "Boon of Fate",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-fate",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 19+"
+  ],
+  "summary": "Voraussetzung: Level 19+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 19+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbessere das Schicksal. Wenn Sie oder eine andere Kreatur im Umkreis von 60 Fuß um Sie einen W20-Test bestehen oder nicht bestehen, können Sie 2W4 würfeln und die gewürfelte Summe als Bonus oder Malus auf den W20-Wurf anwenden. Sobald Sie diesen Vorteil nutzen, können Sie ihn nicht erneut nutzen, bis Sie Initiative würfeln oder eine kurze oder lange Rast beenden."
+    }
+  ],
+  "text": "Voraussetzung: Level 19+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30.\n\nVerbessere das Schicksal. Wenn Sie oder eine andere Kreatur im Umkreis von 60 Fuß um Sie einen W20-Test bestehen oder nicht bestehen, können Sie 2W4 würfeln und die gewürfelte Summe als Bonus oder Malus auf den W20-Wurf anwenden. Sobald Sie diesen Vorteil nutzen, können Sie ihn nicht erneut nutzen, bis Sie Initiative würfeln oder eine kurze oder lange Rast beenden.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

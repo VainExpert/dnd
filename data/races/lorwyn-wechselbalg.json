@@ -1,0 +1,108 @@
+{
+  "id": "lorwyn-wechselbalg",
+  "type": "race",
+  "name": "Lorwyn-Wechselbalg",
+  "original_name": "Lorwyn Changeling",
+  "rules_version": "2024",
+  "source": "Lorwyn - First Light",
+  "source_url": "http://dnd2024.wikidot.com/species:lorwyn-changeling",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Lorwyn",
+  "prerequisites": [],
+  "summary": "Die Gestaltwandler von Lorwyn sind charismatische Gestaltwandler, die die Formen von Kreaturen und Pflanzen grob nachahmen können. Im Gegensatz zu den meisten Gestaltwandlern erlauben es ihnen ihre angeborenen Kräfte jedoch nicht, sich wirklich zu verkleiden. Vielmehr sind ihre Transformationen rein oberflächlich.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Die Gestaltwandler von Lorwyn sind charismatische Gestaltwandler, die die Formen von Kreaturen und Pflanzen grob nachahmen können. Im Gegensatz zu den meisten Gestaltwandlern erlauben es ihnen ihre angeborenen Kräfte jedoch nicht, sich wirklich zu verkleiden. Vielmehr sind ihre Transformationen rein oberflächlich."
+    },
+    {
+      "type": "paragraph",
+      "text": "Unabhängig von ihrer Form behalten Lorwyn-Wechselbälge ihre wichtigsten Merkmale: blaugrüne Haut, tentakelartige Fellbüschel und bauchige gelbe Augen mit geschlitzten Pupillen. Die wahre Gestalt eines Wechselbalgs, eines Baumes mit Käferaugen, eines blaugrünen Elchs oder eines pelzigen Felsbrockens, ist immer leicht zu erkennen. Diese Fälschungen sind so offensichtlich, dass viele Einwohner von Lorwyn den Effekt unerklärlich charmant finden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wechselbälge aus Lorwyn leben in einer riesigen, mystischen Höhle namens Velis Vel Grotto. Einmal im Jahr pilgern viele Wechselbälger zur Grotte, um über ihre vergangenen Taten nachzudenken."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Lorwyn Changeling-Eigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Fee"
+    },
+    {
+      "type": "paragraph",
+      "text": "Größe: Mittel (ca. 4–7 Fuß hoch) oder Klein (ca. 2–4 Fuß hoch), ausgewählt bei der Auswahl dieser Art"
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschwindigkeit: 30 Fuß"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Lorwyn Changeling verfügen Sie über diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gestalte dich selbst. Als Aktion können Sie Ihren Körper in die Form eines zweibeinigen Humanoiden oder in die Form eines vierbeinigen Biests umformen. Während Sie eine humanoide Gestalt haben, können Sie Kleidung und Rüstung tragen, die für einen Humanoiden Ihrer Größe hergestellt wurden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 120 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Entzückender Nachahmer. Sie beherrschen die Fähigkeit „Performance“."
+    },
+    {
+      "type": "paragraph",
+      "text": "Unvorhersehbare Bewegung. Wenn Sie Initiative würfeln und bei diesem Wurf keinen Nachteil haben, können Sie die Sprint-Aktion als Reaktion ausführen."
+    }
+  ],
+  "text": "Die Gestaltwandler von Lorwyn sind charismatische Gestaltwandler, die die Formen von Kreaturen und Pflanzen grob nachahmen können. Im Gegensatz zu den meisten Gestaltwandlern erlauben es ihnen ihre angeborenen Kräfte jedoch nicht, sich wirklich zu verkleiden. Vielmehr sind ihre Transformationen rein oberflächlich.\n\nUnabhängig von ihrer Form behalten Lorwyn-Wechselbälge ihre wichtigsten Merkmale: blaugrüne Haut, tentakelartige Fellbüschel und bauchige gelbe Augen mit geschlitzten Pupillen. Die wahre Gestalt eines Wechselbalgs, eines Baumes mit Käferaugen, eines blaugrünen Elchs oder eines pelzigen Felsbrockens, ist immer leicht zu erkennen. Diese Fälschungen sind so offensichtlich, dass viele Einwohner von Lorwyn den Effekt unerklärlich charmant finden.\n\nWechselbälge aus Lorwyn leben in einer riesigen, mystischen Höhle namens Velis Vel Grotto. Einmal im Jahr pilgern viele Wechselbälger zur Grotte, um über ihre vergangenen Taten nachzudenken.\n\nLorwyn Changeling-Eigenschaften\n\nKreaturentyp: Fee\n\nGröße: Mittel (ca. 4–7 Fuß hoch) oder Klein (ca. 2–4 Fuß hoch), ausgewählt bei der Auswahl dieser Art\n\nGeschwindigkeit: 30 Fuß\n\nAls Lorwyn Changeling verfügen Sie über diese besonderen Eigenschaften.\n\nGestalte dich selbst. Als Aktion können Sie Ihren Körper in die Form eines zweibeinigen Humanoiden oder in die Form eines vierbeinigen Biests umformen. Während Sie eine humanoide Gestalt haben, können Sie Kleidung und Rüstung tragen, die für einen Humanoiden Ihrer Größe hergestellt wurden.\n\nDunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 120 Fuß.\n\nEntzückender Nachahmer. Sie beherrschen die Fähigkeit „Performance“.\n\nUnvorhersehbare Bewegung. Wenn Sie Initiative würfeln und bei diesem Wurf keinen Nachteil haben, können Sie die Sprint-Aktion als Reaktion ausführen.",
+  "tags": [],
+  "size": [
+    "Klein",
+    "Mittel"
+  ],
+  "creature_type": "Fee",
+  "speed": {
+    "walk": 9,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Gestalte dich selbst",
+      "text": "Als Aktion können Sie Ihren Körper in die Form eines zweibeinigen Humanoiden oder in die Form eines vierbeinigen Biests umformen. Während Sie eine humanoide Gestalt haben, können Sie Kleidung und Rüstung tragen, die für einen Humanoiden Ihrer Größe hergestellt wurden."
+    },
+    {
+      "name": "Dunkelsicht",
+      "text": "Sie haben Dunkelsicht mit einer Reichweite von 120 Fuß."
+    },
+    {
+      "name": "Entzückender Nachahmer",
+      "text": "Sie beherrschen die Fähigkeit „Performance“."
+    },
+    {
+      "name": "Unvorhersehbare Bewegung",
+      "text": "Wenn Sie Initiative würfeln und bei diesem Wurf keinen Nachteil haben, können Sie die Sprint-Aktion als Reaktion ausführen."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

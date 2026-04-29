@@ -1,0 +1,52 @@
+{
+  "id": "schwer-gepanzert",
+  "type": "feat",
+  "name": "Schwer Gepanzert",
+  "original_name": "Heavily Armored",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:heavily-armored",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, mittlere Rüstungsausbildung"
+  ],
+  "summary": "Voraussetzung: Level 4+, mittlere Rüstungsausbildung",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, mittlere Rüstungsausbildung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe deinen Konstitutions- oder Stärkewert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rüstungstraining. Du erhältst eine Ausbildung mit schwerer Rüstung."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, mittlere Rüstungsausbildung\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe deinen Konstitutions- oder Stärkewert um 1 auf maximal 20.\n\nRüstungstraining. Du erhältst eine Ausbildung mit schwerer Rüstung.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

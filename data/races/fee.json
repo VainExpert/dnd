@@ -1,0 +1,109 @@
+{
+  "id": "fee",
+  "type": "race",
+  "name": "Fee",
+  "original_name": "Faerie",
+  "rules_version": "2024",
+  "source": "Lorwyn - First Light",
+  "source_url": "http://dnd2024.wikidot.com/species:faerie",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Lorwyn",
+  "prerequisites": [],
+  "summary": "Feen sind für ihren Unfug bekannt und ähneln Insekten mit humanoiden Merkmalen. Ihre Größe und Form können variieren, aber alle haben Fühler, schwarze Augen, chitinhaltige Haut sowie insektoide Beine und Flügel. Jede Fee wird aus einer Blume geboren und besitzt eine angeborene Magie, die viele zum Spielen von Streichen nutzen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Feen sind für ihren Unfug bekannt und ähneln Insekten mit humanoiden Merkmalen. Ihre Größe und Form können variieren, aber alle haben Fühler, schwarze Augen, chitinhaltige Haut sowie insektoide Beine und Flügel. Jede Fee wird aus einer Blume geboren und besitzt eine angeborene Magie, die viele zum Spielen von Streichen nutzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Einige Lorwyn-Feen dienen Königin Oura, die sich selbst zur Herrscherin der Feen ernannt hat. Allerdings erkennen nicht alle Feen Ouras Autorität an. Im Schattenmoor könnten Feen stattdessen Königin Maralen verehren, die Elfe, die die vorherige Feenkönigin stürzte und, wie manche sagen, den Zusammenstoß zwischen Lorwyn und Schattenmoor einleitete."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Feenmerkmale"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp. Du bist eine Fee."
+    },
+    {
+      "type": "paragraph",
+      "text": "Größe. Sie sind klein (ca. 60–120 cm groß)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschwindigkeit. Ihre Gehgeschwindigkeit beträgt 30 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Fee hast du die folgenden Eigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Feenmagie. Sie kennen den Druidcraft-Cantrip."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ab der 3. Stufe können Sie mit dieser Eigenschaft den Zauber „Feenfeuer“ wirken. Ab der 5. Stufe kannst du mit dieser Eigenschaft auch den Zauber „Vergrößern/Verkleinern“ wirken. Sobald Sie mit dieser Eigenschaft „Feenfeuer“ oder „Vergrößern/Verkleinern“ gewirkt haben, können Sie diesen Zauber nicht erneut damit wirken, bis Sie eine lange Pause beendet haben. Sie können jeden dieser Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diese Zauber, wenn Sie sie mit dieser Eigenschaft wirken (wählen Sie, wenn Sie diese Rasse auswählen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Flug. Aufgrund Ihrer Flügel haben Sie eine Fluggeschwindigkeit, die Ihrer Gehgeschwindigkeit entspricht. Sie können diese Fluggeschwindigkeit nicht nutzen, wenn Sie mittlere oder schwere Rüstung tragen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus verfügen Shadowmoor-Feen über Dunkelsicht mit einer Reichweite von 120 Fuß."
+    }
+  ],
+  "text": "Feen sind für ihren Unfug bekannt und ähneln Insekten mit humanoiden Merkmalen. Ihre Größe und Form können variieren, aber alle haben Fühler, schwarze Augen, chitinhaltige Haut sowie insektoide Beine und Flügel. Jede Fee wird aus einer Blume geboren und besitzt eine angeborene Magie, die viele zum Spielen von Streichen nutzen.\n\nEinige Lorwyn-Feen dienen Königin Oura, die sich selbst zur Herrscherin der Feen ernannt hat. Allerdings erkennen nicht alle Feen Ouras Autorität an. Im Schattenmoor könnten Feen stattdessen Königin Maralen verehren, die Elfe, die die vorherige Feenkönigin stürzte und, wie manche sagen, den Zusammenstoß zwischen Lorwyn und Schattenmoor einleitete.\n\nFeenmerkmale\n\nKreaturentyp. Du bist eine Fee.\n\nGröße. Sie sind klein (ca. 60–120 cm groß).\n\nGeschwindigkeit. Ihre Gehgeschwindigkeit beträgt 30 Fuß.\n\nAls Fee hast du die folgenden Eigenschaften\n\nFeenmagie. Sie kennen den Druidcraft-Cantrip.\n\nAb der 3. Stufe können Sie mit dieser Eigenschaft den Zauber „Feenfeuer“ wirken. Ab der 5. Stufe kannst du mit dieser Eigenschaft auch den Zauber „Vergrößern/Verkleinern“ wirken. Sobald Sie mit dieser Eigenschaft „Feenfeuer“ oder „Vergrößern/Verkleinern“ gewirkt haben, können Sie diesen Zauber nicht erneut damit wirken, bis Sie eine lange Pause beendet haben. Sie können jeden dieser Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben.\n\nIntelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diese Zauber, wenn Sie sie mit dieser Eigenschaft wirken (wählen Sie, wenn Sie diese Rasse auswählen).\n\nFlug. Aufgrund Ihrer Flügel haben Sie eine Fluggeschwindigkeit, die Ihrer Gehgeschwindigkeit entspricht. Sie können diese Fluggeschwindigkeit nicht nutzen, wenn Sie mittlere oder schwere Rüstung tragen.\n\nDarüber hinaus verfügen Shadowmoor-Feen über Dunkelsicht mit einer Reichweite von 120 Fuß.",
+  "tags": [],
+  "size": [],
+  "creature_type": "",
+  "speed": {
+    "walk": null,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Größe",
+      "text": "Sie sind klein (ca. 60–120 cm groß)."
+    },
+    {
+      "name": "Geschwindigkeit",
+      "text": "Ihre Gehgeschwindigkeit beträgt 30 Fuß."
+    },
+    {
+      "name": "Feenmagie",
+      "text": "Sie kennen den Druidcraft-Cantrip."
+    },
+    {
+      "name": "Ab der 3",
+      "text": "Stufe können Sie mit dieser Eigenschaft den Zauber „Feenfeuer“ wirken. Ab der 5. Stufe kannst du mit dieser Eigenschaft auch den Zauber „Vergrößern/Verkleinern“ wirken. Sobald Sie mit dieser Eigenschaft „Feenfeuer“ oder „Vergrößern/Verkleinern“ gewirkt haben, können Sie diesen Zauber nicht erneut damit wirken, bis Sie eine lange Pause beendet haben. Sie können jeden dieser Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben."
+    },
+    {
+      "name": "Flug",
+      "text": "Aufgrund Ihrer Flügel haben Sie eine Fluggeschwindigkeit, die Ihrer Gehgeschwindigkeit entspricht. Sie können diese Fluggeschwindigkeit nicht nutzen, wenn Sie mittlere oder schwere Rüstung tragen."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

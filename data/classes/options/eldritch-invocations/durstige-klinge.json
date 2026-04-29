@@ -1,0 +1,29 @@
+{
+  "id": "durstige-klinge",
+  "name": "Durstige Klinge",
+  "original_name": "Thirsting Blade",
+  "kind": "eldritch_invocation",
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:eldritch-invocation",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "",
+  "cost_original": "",
+  "prerequisite": "Hexenmeister der Stufe 5+, Anrufung des Pakts der Klinge",
+  "prerequisite_original": "Level 5+ Warlock, Pact of the Blade Invocation",
+  "summary": "Sie erhalten die Extra-Angriffsfunktion nur für Ihre Paktwaffe. Mit dieser Funktion können Sie mit der Waffe zweimal statt nur einmal angreifen, wenn Sie in Ihrem Zug die Angriffsaktion ausführen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "You gain the Extra Attack feature for your pact weapon only. With that feature, you can attack twice with the weapon instead of once when you take the Attack action on your turn.",
+      "text_de": "Sie erhalten die Extra-Angriffsfunktion nur für Ihre Paktwaffe. Mit dieser Funktion können Sie mit der Waffe zweimal statt nur einmal angreifen, wenn Sie in Ihrem Zug die Angriffsaktion ausführen."
+    }
+  ]
+}

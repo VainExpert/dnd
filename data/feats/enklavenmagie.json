@@ -1,0 +1,57 @@
+{
+  "id": "enklavenmagie",
+  "type": "feat",
+  "name": "Enklavenmagie",
+  "original_name": "Enclave Magic",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:enclave-magic",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Level 4+, Jungtalent der Smaragd-Enklave)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Level 4+, Jungtalent der Smaragd-Enklave)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Freund der Tiere. Du hast einen Vorteil bei Fähigkeitsüberprüfungen, wenn du die Aktion „Einfluss“ mit Bestien ausführst."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zwei Herzen, ein Geist. Du hast immer den Zauber „Tiersinn“ vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Wenn Sie es mit dieser Funktion ohne Zauberslot wirken, ist keine Konzentration erforderlich. Sie können den Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Die Zauberfähigkeit des Zaubers ist die Fähigkeit, die durch dieses Talent erhöht wird."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Level 4+, Jungtalent der Smaragd-Enklave)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20.\n\nFreund der Tiere. Du hast einen Vorteil bei Fähigkeitsüberprüfungen, wenn du die Aktion „Einfluss“ mit Bestien ausführst.\n\nZwei Herzen, ein Geist. Du hast immer den Zauber „Tiersinn“ vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Wenn Sie es mit dieser Funktion ohne Zauberslot wirken, ist keine Konzentration erforderlich. Sie können den Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Die Zauberfähigkeit des Zaubers ist die Fähigkeit, die durch dieses Talent erhöht wird.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "erbe-des-hauses-phiarlan",
+  "type": "background",
+  "name": "Erbe des Hauses Phiarlan",
+  "original_name": "House Phiarlan Heir",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/background:house-phiarlan-heir",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Geschicklichkeit, Weisheit, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Geschicklichkeit, Weisheit, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Mal des Schattens"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Täuschung und Heimlichkeit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkompetenz: Verkleidungsset"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Verkleidungsset, feine Kleidung, 10 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Obwohl Sie als Kind des Hauses Phiarlan Reichtum, Ruhm und Schönheit gesehen haben, betrachten Sie Wissen (und die Macht, die es mit sich bringt) als den größten Schatz von allen. Sie könnten dieser Macht als Künstler oder Performer nachgehen und stets auf der Hut vor Geheimnissen sein, selbst wenn Sie die Welt mit Geschichten, Liedern, Akrobatik oder Kunst erfreuen. Oder Sie pflegen Verbindungen zur geheimen Spionageabteilung Ihres Hauses: dem Serpentine Table."
+    }
+  ],
+  "text": "Fähigkeitswerte: Geschicklichkeit, Weisheit, Charisma\n\nTalent: Mal des Schattens\n\nFertigkeiten: Täuschung und Heimlichkeit\n\nWerkzeugkompetenz: Verkleidungsset\n\nAusrüstung: Wähle A oder B: (A) Verkleidungsset, feine Kleidung, 10 GP; oder (B) 50 GP\n\nObwohl Sie als Kind des Hauses Phiarlan Reichtum, Ruhm und Schönheit gesehen haben, betrachten Sie Wissen (und die Macht, die es mit sich bringt) als den größten Schatz von allen. Sie könnten dieser Macht als Künstler oder Performer nachgehen und stets auf der Hut vor Geheimnissen sein, selbst wenn Sie die Welt mit Geschichten, Liedern, Akrobatik oder Kunst erfreuen. Oder Sie pflegen Verbindungen zur geheimen Spionageabteilung Ihres Hauses: dem Serpentine Table.",
+  "tags": [],
+  "ability_scores": [
+    "dex",
+    "wis",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "dex",
+      "wis",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Taeuschung",
+    "Heimlichkeit"
+  ],
+  "tool_proficiencies": [
+    "Verkleidungsset\n"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "mal-des-schattens",
+  "granted_feat_name": "Mal des Schattens\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Verkleidungsset, feine Kleidung, 10 GP; oder (B) 50 GP\n\nObwohl Sie als Kind des Hauses Phiarlan Reichtum, Ruhm und Schönheit gesehen haben, betrachten Sie Wissen (und die Macht, die es mit sich bringt) als den größten Schatz von allen. Sie könnten dieser Macht als Künstler oder Performer nachgehen und stets auf der Hut vor Geheimnissen sein, selbst wenn Sie die Welt mit Geschichten, Liedern, Akrobatik oder Kunst erfreuen. Oder Sie pflegen Verbindungen zur geheimen Spionageabteilung Ihres Hauses: dem Serpentine Table"
+    }
+  ]
+}

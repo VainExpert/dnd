@@ -1,0 +1,60 @@
+{
+  "id": "<character-id>",
+  "type": "character",
+  "name": "<Character Name>",
+  "rules_version": "2024",
+  "player": "",
+  "campaign_id": null,
+  "species_id": null,
+  "background_id": null,
+  "class_levels": [
+    {
+      "class_id": "<class-id>",
+      "subclass_id": null,
+      "level": 1
+    }
+  ],
+  "abilities_base": {
+    "str": 10,
+    "dex": 10,
+    "con": 10,
+    "int": 10,
+    "wis": 10,
+    "cha": 10
+  },
+  "manual_overrides": {
+    "max_hp": null,
+    "ac": null,
+    "speed": {}
+  },
+  "feat_ids": [],
+  "feature_ids_extra": [],
+  "skill_proficiency_ids": [],
+  "skill_expertise_ids": [],
+  "tool_proficiency_ids": [],
+  "language_ids_extra": [],
+  "inventory": [
+    {
+      "item_id": "<item-id>",
+      "quantity": 1,
+      "equipped": false,
+      "attuned": false,
+      "container_id": null,
+      "notes": ""
+    }
+  ],
+  "spellcasting_state": {
+    "known_spell_ids": [],
+    "prepared_spell_ids": [],
+    "always_prepared_spell_ids": []
+  },
+  "resources_state": {
+    "current_hp": null,
+    "temp_hp": 0,
+    "hit_dice_used": {},
+    "spell_slots_used": {},
+    "custom_resources": {}
+  },
+  "conditions_active": [],
+  "notes_md": ""
+}

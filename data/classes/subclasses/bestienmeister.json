@@ -1,0 +1,282 @@
+{
+  "id": "bestienmeister",
+  "type": "subclass",
+  "name": "Bestienmeister",
+  "original_name": "Beast Master",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/ranger:beast-master",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Bindung mit einem Urtier Ein Tiermeister geht eine mystische Bindung zu einem besonderen Tier ein und greift dabei auf Urmagie und eine tiefe Verbindung zur Natur zurück.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Bindung mit einem Urtier Ein Tiermeister geht eine mystische Bindung zu einem besonderen Tier ein und greift dabei auf Urmagie und eine tiefe Verbindung zur Natur zurück."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Urgefährte"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du beschwörst auf magische Weise ein Urtier, das Kraft aus deiner Verbundenheit mit der Natur schöpft. Wählen Sie seinen Statistikblock: Biest des Landes, Biest des Meeres oder Biest des Himmels. Sie bestimmen auch, um welche Art von Tier es sich handelt, indem Sie eine Art auswählen, die zum Statistikblock passt. Für welches Tier Sie sich auch entscheiden, es trägt ursprüngliche Merkmale, die auf seinen übernatürlichen Ursprung hinweisen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Das Biest im Kampf. Im Kampf agiert das Biest während Ihres Zuges. Es kann sich bewegen und seine Reaktion eigenständig nutzen, aber die einzige Aktion, die es ausführt, ist die Ausweichen-Aktion, es sei denn, Sie führen eine Bonusaktion aus, um ihm zu befehlen, eine Aktion in seinem Statistikblock oder eine andere Aktion auszuführen. Sie können auch einen Ihrer Angriffe opfern, wenn Sie die Angriffsaktion ausführen, um dem Biest zu befehlen, die Aktion „Schlag des Biests“ auszuführen. Wenn Sie den Zustand „Kampfunfähig“ haben, handelt das Biest eigenständig und ist nicht auf die Ausweichaktion beschränkt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Das Biest wiederherstellen oder ersetzen. Wenn das Tier innerhalb der letzten Stunde gestorben ist, können Sie eine magische Aktion ausführen, um es zu berühren und einen Zauberslot zu verbrauchen. Das Biest erwacht nach 1 Minute wieder zum Leben und alle seine Trefferpunkte sind wiederhergestellt. Immer wenn Sie Lange Rast abschließen, können Sie ein anderes Urtier beschwören, das an einem unbesetzten Ort im Umkreis von 5 Fuß um Sie herum erscheint. Sie wählen seinen Statistikblock und sein Aussehen. Wenn Sie bereits über ein Biest dieser Funktion verfügen, verschwindet das alte, wenn das neue erscheint."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Biest des Landes"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Biest des Landes"
+        ],
+        [
+          "Mittleres Biest, Neutral"
+        ],
+        [
+          "Rüstungsklasse: 13 plus Ihr Weisheitsmodifikator"
+        ],
+        [
+          "Trefferpunkte: 5 + das Fünffache deiner Ranger-Stufe (das Biest hat eine Anzahl an Trefferwürfeln [d8s], die deiner Ranger-Stufe entspricht)"
+        ],
+        [
+          "Geschwindigkeit: 40 Fuß, Steigung 40 Fuß"
+        ],
+        [
+          "STR (Modifizieren/Speichern)",
+          "DEX (Modifizieren/Speichern)",
+          "CON (Modieren/Speichern)",
+          "INT (Modifizieren/Speichern)",
+          "WIS (Modieren/Speichern)",
+          "CHA (Modifizieren/Speichern)"
+        ],
+        [
+          "14 (+2/+2)",
+          "14 (+2/+2)",
+          "15 (+2/+2)",
+          "8 (−1/-1)",
+          "14 (+2/+2)",
+          "11 (+0/+0)"
+        ],
+        [
+          "Sinne: Dunkelsicht 60 Fuß, Passive Wahrnehmung 12"
+        ],
+        [
+          "Sprachen: Versteht die Sprachen, die Sie kennen"
+        ],
+        [
+          "Herausforderungsbewertung: Keine (XP 0; PB entspricht deinem Uebungsbonus)"
+        ],
+        [
+          "Eigenschaften"
+        ],
+        [
+          "Urbindung. Fügen Sie Ihren Uebungsbonus zu jeder Fähigkeitsüberprüfung oder jedem Rettungswurf hinzu, den das Biest durchführt."
+        ],
+        [
+          "Aktionen"
+        ],
+        [
+          "Der Schlag des Biests. Nahkampfangriffswurf: Bonus entspricht Ihrem Zauberangriffsmodifikator, Reichweite 5 Fuß. Treffer: 1W8 + 2 plus Ihrem Weisheitsmodifikator Schlag-, Stich- oder Hiebschaden (Ihre Wahl, wenn Sie das Biest beschwören). Wenn sich das Tier vor dem Treffer mindestens 20 Fuß direkt auf das Ziel zu bewegte, erleidet das Ziel zusätzlich 1W6 Schaden derselben Art und das Ziel befindet sich im Zustand „Anfällig“, wenn es sich um eine große oder kleinere Kreatur handelt."
+        ]
+      ],
+      "text": "Biest des Landes Mittleres Biest, neutrale Rüstungsklasse: 13 plus Ihr Weisheitsmodifikator Trefferpunkte: 5 + das Fünffache Ihrer Ranger-Stufe (das Biest hat eine Anzahl an Trefferwürfeln [d8s], die Ihrer Ranger-Stufe entspricht) Geschwindigkeit: 40 Fuß, Aufstieg 40 Fuß STR (Mod/Speichern) DEX (Mod/Speichern) CON (Mod/Speichern) INT (Mod/Speichern) WIS (Mod/Speichern) CHA (Mod/Speichern) 14 (+2/+2) 14 (+2/+2) 15 (+2/+2) 8 (−1/-1) 14 (+2/+2) 11 (+0/+0) Sinne: Dunkelsicht 60 Fuß, Passive Wahrnehmung 12 Sprachen: Versteht die Sprachen, die Sie kennen. Herausforderungsbewertung: Keine (XP 0; PB entspricht Ihrem Uebungsbonus) Eigenschaften Urbindung. Fügen Sie Ihren Uebungsbonus zu jeder Fähigkeitsüberprüfung oder jedem Rettungswurf hinzu, den das Biest durchführt. Aktionen Beast's Strike. Nahkampfangriffswurf: Bonus entspricht Ihrem Zauberangriffsmodifikator, Reichweite 5 Fuß. Treffer: 1W8 + 2 plus Ihrem Weisheitsmodifikator Schlag-, Stich- oder Hiebschaden (Ihre Wahl, wenn Sie das Biest beschwören). Wenn sich das Tier vor dem Treffer mindestens 20 Fuß direkt auf das Ziel zu bewegte, erleidet das Ziel zusätzlich 1W6 Schaden derselben Art und das Ziel befindet sich im Zustand „Anfällig“, wenn es sich um eine große oder kleinere Kreatur handelt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Biest des Himmels"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Biest des Himmels"
+        ],
+        [
+          "Kleines Biest, Neutral"
+        ],
+        [
+          "Rüstungsklasse: 13 plus Ihr Weisheitsmodifikator"
+        ],
+        [
+          "Trefferpunkte: 4 + das Vierfache deiner Ranger-Stufe (das Biest hat eine Anzahl an Trefferwürfeln [d6s], die deiner Ranger-Stufe entspricht)"
+        ],
+        [
+          "Geschwindigkeit: 10 Fuß, Flug 60 Fuß"
+        ],
+        [
+          "STR (Modifizieren/Speichern)",
+          "DEX (Modifizieren/Speichern)",
+          "CON (Modieren/Speichern)",
+          "INT (Modifizieren/Speichern)",
+          "WIS (Modieren/Speichern)",
+          "CHA (Modifizieren/Speichern)"
+        ],
+        [
+          "6 (-2/-2)",
+          "16 (+3/+3)",
+          "13 (+1/+1)",
+          "8 (−1/-1)",
+          "14 (+2/+2)",
+          "11 (+0/+0)"
+        ],
+        [
+          "Sinne: Dunkelsicht 60 Fuß, Passive Wahrnehmung 12"
+        ],
+        [
+          "Sprachen: Versteht die Sprachen, die Sie kennen"
+        ],
+        [
+          "Herausforderungsbewertung: Keine (XP 0; PB entspricht deinem Uebungsbonus)"
+        ],
+        [
+          "Eigenschaften"
+        ],
+        [
+          "Vorbeiflug. Das Biest provoziert keine Gelegenheitsangriffe, wenn es außerhalb der Reichweite eines Feindes fliegt."
+        ],
+        [
+          "Urbindung. Fügen Sie Ihren Uebungsbonus zu jeder Fähigkeitsüberprüfung oder jedem Rettungswurf hinzu, den das Biest durchführt."
+        ],
+        [
+          "Aktionen"
+        ],
+        [
+          "Der Schlag des Biests. Nahkampfangriffswurf: Bonus entspricht Ihrem Zauberangriffsmodifikator, Reichweite 5 Fuß. Treffer: 1W4 + 3 plus Ihrem Weisheitsmodifikator Hiebschaden."
+        ]
+      ],
+      "text": "Himmelsbestie Kleine Bestie, neutrale Rüstungsklasse: 13 plus Ihr Weisheitsmodifikator Trefferpunkte: 4 + das Vierfache Ihrer Ranger-Stufe (die Bestie hat eine Anzahl an Trefferwürfeln [d6s] entsprechend Ihrer Ranger-Stufe) Geschwindigkeit: 10 Fuß, Fliegen 60 Fuß STR (Mod/Speichern) DEX (Mod/Speichern) CON (Mod/Speichern) INT (Mod/Speichern) WIS (Mod/Speichern) CHA (Mod/Save) 6 (-2/-2) 16 (+3/+3) 13 (+1/+1) 8 (−1/-1) 14 (+2/+2) 11 (+0/+0) Sinne: Dunkelsicht 60 ft., Passive Wahrnehmung 12 Sprachen: Versteht die Sprachen, die Sie kennen. Herausforderungsbewertung: Keine (XP 0; PB entspricht Ihrem Uebungsbonus) Eigenschaften Vorbeiflug. Das Biest provoziert keine Gelegenheitsangriffe, wenn es außerhalb der Reichweite eines Feindes fliegt. Urbindung. Fügen Sie Ihren Uebungsbonus zu jeder Fähigkeitsüberprüfung oder jedem Rettungswurf hinzu, den das Biest durchführt. Aktionen Beast's Strike. Nahkampfangriffswurf: Bonus entspricht Ihrem Zauberangriffsmodifikator, Reichweite 5 Fuß. Treffer: 1W4 + 3 plus Ihrem Weisheitsmodifikator Hiebschaden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Biest des Meeres"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Biest des Meeres"
+        ],
+        [
+          "Mittleres Biest, Neutral"
+        ],
+        [
+          "Rüstungsklasse: 13 plus Ihr Weisheitsmodifikator"
+        ],
+        [
+          "Trefferpunkte: 5 + das Fünffache deiner Ranger-Stufe (das Biest hat eine Anzahl an Trefferwürfeln [d8s], die deiner Ranger-Stufe entspricht)"
+        ],
+        [
+          "Geschwindigkeit: 5 Fuß, Schwimmen 60 Fuß"
+        ],
+        [
+          "STR (Modifizieren/Speichern)",
+          "DEX (Modifizieren/Speichern)",
+          "CON (Modieren/Speichern)",
+          "INT (Modifizieren/Speichern)",
+          "WIS (Modieren/Speichern)",
+          "CHA (Modifizieren/Speichern)"
+        ],
+        [
+          "14 (+2/+2)",
+          "14 (+2/+2)",
+          "15 (+2/+2)",
+          "8 (−1/-1)",
+          "14 (+2/+2)",
+          "11 (+0/+0)"
+        ],
+        [
+          "Sinne: Dunkelsicht 90 Fuß, Passive Wahrnehmung 12"
+        ],
+        [
+          "Sprachen: Versteht die Sprachen, die Sie kennen"
+        ],
+        [
+          "Herausforderungsbewertung: Keine (XP 0; PB entspricht deinem Uebungsbonus)"
+        ],
+        [
+          "Eigenschaften"
+        ],
+        [
+          "Amphibisch. Das Biest kann Luft und Wasser atmen"
+        ],
+        [
+          "Urbindung. Fügen Sie Ihren Uebungsbonus zu jeder Fähigkeitsüberprüfung oder jedem Rettungswurf hinzu, den das Biest durchführt."
+        ],
+        [
+          "Aktionen"
+        ],
+        [
+          "Der Schlag des Biests. Nahkampfangriffswurf: Bonus entspricht Ihrem Zauberangriffsmodifikator, Reichweite 5 Fuß. Treffer: 1W6 + 2 plus Ihrem Weisheitsmodifikator. Knüppel- oder Stichschaden (Ihre Wahl, wenn Sie das Biest beschwören), und das Ziel hat den Zustand „Grappled“ (Flucht-SG entspricht Ihrem Zauberwurf-SG)."
+        ]
+      ],
+      "text": "Meeresbestie Mittlere Bestie, neutrale Rüstungsklasse: 13 plus Ihr Weisheitsmodifikator Trefferpunkte: 5 + das Fünffache Ihrer Ranger-Stufe (die Bestie hat eine Anzahl an Trefferwürfeln [d8s], die Ihrer Ranger-Stufe entspricht) Geschwindigkeit: 5 Fuß, 60 Fuß schwimmen STR (Mod/Speichern) DEX (Mod/Speichern) CON (Mod/Speichern) INT (Mod/Speichern) WIS (Mod/Speichern) CHA (Mod/Speichern) 14 (+2/+2) 14 (+2/+2) 15 (+2/+2) 8 (−1/-1) 14 (+2/+2) 11 (+0/+0) Sinne: Dunkelsicht 90 Fuß, Passive Wahrnehmung 12 Sprachen: Versteht die Sprachen, die Sie kennen. Herausforderungsbewertung: Keine (XP 0; PB entspricht Ihrem Uebungsbonus) Eigenschaften Amphibisch. Das Biest kann Luft und Wasser atmen. Primal Bond. Fügen Sie Ihren Uebungsbonus zu jeder Fähigkeitsüberprüfung oder jedem Rettungswurf hinzu, den das Biest durchführt. Aktionen Beast's Strike. Nahkampfangriffswurf: Bonus entspricht Ihrem Zauberangriffsmodifikator, Reichweite 5 Fuß. Treffer: 1W6 + 2 plus Ihrem Weisheitsmodifikator. Knüppel- oder Stichschaden (Ihre Wahl, wenn Sie das Biest beschwören), und das Ziel hat den Zustand „Grappled“ (Flucht-SG entspricht Ihrem Zauberwurf-SG)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Außergewöhnliches Training"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine Bonusaktion ausführen, um Ihrem Primal Companion-Tier zu befehlen, eine Aktion auszuführen, können Sie ihm mithilfe seiner Bonusaktion auch befehlen, die Aktionen „Sprinten“, „Entfernen“, „Ausweichen“ oder „Hilfe“ auszuführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus kann es jedes Mal, wenn es mit einem Angriffswurf trifft und Schaden verursacht, Machtschaden Ihrer Wahl oder seine normale Schadensart verursachen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 11: Bestialische Wut"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Ihrem Urgefährten-Tier befehlen, die Aktion „Schlag des Biests“ auszuführen, kann das Biest sie zweimal verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn es in jeder Runde zum ersten Mal eine Kreatur trifft, die unter der Wirkung deines Zaubers „Mal des Jägers“ steht, verursacht das Tier außerdem zusätzlichen Machtschaden in Höhe des Bonusschadens dieses Zaubers."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Zauber teilen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du einen Zauber gegen dich selbst wirkst, kannst du den Zauber auch auf dein Urgefährtentier anwenden, wenn sich das Tier in einem Umkreis von 30 Fuß um dich befindet."
+    }
+  ],
+  "text": "Bindung mit einem Urtier Ein Tiermeister geht eine mystische Bindung zu einem besonderen Tier ein und greift dabei auf Urmagie und eine tiefe Verbindung zur Natur zurück.\n\nLevel 3: Urgefährte\n\nDu beschwörst auf magische Weise ein Urtier, das Kraft aus deiner Verbundenheit mit der Natur schöpft. Wählen Sie seinen Statistikblock: Biest des Landes, Biest des Meeres oder Biest des Himmels. Sie bestimmen auch, um welche Art von Tier es sich handelt, indem Sie eine Art auswählen, die zum Statistikblock passt. Für welches Tier Sie sich auch entscheiden, es trägt ursprüngliche Merkmale, die auf seinen übernatürlichen Ursprung hinweisen.\n\nDas Biest im Kampf. Im Kampf agiert das Biest während Ihres Zuges. Es kann sich bewegen und seine Reaktion eigenständig nutzen, aber die einzige Aktion, die es ausführt, ist die Ausweichen-Aktion, es sei denn, Sie führen eine Bonusaktion aus, um ihm zu befehlen, eine Aktion in seinem Statistikblock oder eine andere Aktion auszuführen. Sie können auch einen Ihrer Angriffe opfern, wenn Sie die Angriffsaktion ausführen, um dem Biest zu befehlen, die Aktion „Schlag des Biests“ auszuführen. Wenn Sie den Zustand „Kampfunfähig“ haben, handelt das Biest eigenständig und ist nicht auf die Ausweichaktion beschränkt.\n\nDas Biest wiederherstellen oder ersetzen. Wenn das Tier innerhalb der letzten Stunde gestorben ist, können Sie eine magische Aktion ausführen, um es zu berühren und einen Zauberslot zu verbrauchen. Das Biest erwacht nach 1 Minute wieder zum Leben und alle seine Trefferpunkte sind wiederhergestellt. Immer wenn Sie Lange Rast abschließen, können Sie ein anderes Urtier beschwören, das an einem unbesetzten Ort im Umkreis von 5 Fuß um Sie herum erscheint. Sie wählen seinen Statistikblock und sein Aussehen. Wenn Sie bereits über ein Biest dieser Funktion verfügen, verschwindet das alte, wenn das neue erscheint.\n\nBiest des Landes\n\nBiest des Landes Mittleres Biest, neutrale Rüstungsklasse: 13 plus Ihr Weisheitsmodifikator Trefferpunkte: 5 + das Fünffache Ihrer Ranger-Stufe (das Biest hat eine Anzahl an Trefferwürfeln [d8s], die Ihrer Ranger-Stufe entspricht) Geschwindigkeit: 40 Fuß, Aufstieg 40 Fuß STR (Mod/Speichern) DEX (Mod/Speichern) CON (Mod/Speichern) INT (Mod/Speichern) WIS (Mod/Speichern) CHA (Mod/Speichern) 14 (+2/+2) 14 (+2/+2) 15 (+2/+2) 8 (−1/-1) 14 (+2/+2) 11 (+0/+0) Sinne: Dunkelsicht 60 Fuß, Passive Wahrnehmung 12 Sprachen: Versteht die Sprachen, die Sie kennen. Herausforderungsbewertung: Keine (XP 0; PB entspricht Ihrem Uebungsbonus) Eigenschaften Urbindung. Fügen Sie Ihren Uebungsbonus zu jeder Fähigkeitsüberprüfung oder jedem Rettungswurf hinzu, den das Biest durchführt. Aktionen Beast's Strike. Nahkampfangriffswurf: Bonus entspricht Ihrem Zauberangriffsmodifikator, Reichweite 5 Fuß. Treffer: 1W8 + 2 plus Ihrem Weisheitsmodifikator Schlag-, Stich- oder Hiebschaden (Ihre Wahl, wenn Sie das Biest beschwören). Wenn sich das Tier vor dem Treffer mindestens 20 Fuß direkt auf das Ziel zu bewegte, erleidet das Ziel zusätzlich 1W6 Schaden derselben Art und das Ziel befindet sich im Zustand „Anfällig“, wenn es sich um eine große oder kleinere Kreatur handelt.\n\nBiest des Himmels\n\nHimmelsbestie Kleine Bestie, neutrale Rüstungsklasse: 13 plus Ihr Weisheitsmodifikator Trefferpunkte: 4 + das Vierfache Ihrer Ranger-Stufe (die Bestie hat eine Anzahl an Trefferwürfeln [d6s] entsprechend Ihrer Ranger-Stufe) Geschwindigkeit: 10 Fuß, Fliegen 60 Fuß STR (Mod/Speichern) DEX (Mod/Speichern) CON (Mod/Speichern) INT (Mod/Speichern) WIS (Mod/Speichern) CHA (Mod/Save) 6 (-2/-2) 16 (+3/+3) 13 (+1/+1) 8 (−1/-1) 14 (+2/+2) 11 (+0/+0) Sinne: Dunkelsicht 60 ft., Passive Wahrnehmung 12 Sprachen: Versteht die Sprachen, die Sie kennen. Herausforderungsbewertung: Keine (XP 0; PB entspricht Ihrem Uebungsbonus) Eigenschaften Vorbeiflug. Das Biest provoziert keine Gelegenheitsangriffe, wenn es außerhalb der Reichweite eines Feindes fliegt. Urbindung. Fügen Sie Ihren Uebungsbonus zu jeder Fähigkeitsüberprüfung oder jedem Rettungswurf hinzu, den das Biest durchführt. Aktionen Beast's Strike. Nahkampfangriffswurf: Bonus entspricht Ihrem Zauberangriffsmodifikator, Reichweite 5 Fuß. Treffer: 1W4 + 3 plus Ihrem Weisheitsmodifikator Hiebschaden.\n\nBiest des Meeres\n\nMeeresbestie Mittlere Bestie, neutrale Rüstungsklasse: 13 plus Ihr Weisheitsmodifikator Trefferpunkte: 5 + das Fünffache Ihrer Ranger-Stufe (die Bestie hat eine Anzahl an Trefferwürfeln [d8s], die Ihrer Ranger-Stufe entspricht) Geschwindigkeit: 5 Fuß, 60 Fuß schwimmen STR (Mod/Speichern) DEX (Mod/Speichern) CON (Mod/Speichern) INT (Mod/Speichern) WIS (Mod/Speichern) CHA (Mod/Speichern) 14 (+2/+2) 14 (+2/+2) 15 (+2/+2) 8 (−1/-1) 14 (+2/+2) 11 (+0/+0) Sinne: Dunkelsicht 90 Fuß, Passive Wahrnehmung 12 Sprachen: Versteht die Sprachen, die Sie kennen. Herausforderungsbewertung: Keine (XP 0; PB entspricht Ihrem Uebungsbonus) Eigenschaften Amphibisch. Das Biest kann Luft und Wasser atmen. Primal Bond. Fügen Sie Ihren Uebungsbonus zu jeder Fähigkeitsüberprüfung oder jedem Rettungswurf hinzu, den das Biest durchführt. Aktionen Beast's Strike. Nahkampfangriffswurf: Bonus entspricht Ihrem Zauberangriffsmodifikator, Reichweite 5 Fuß. Treffer: 1W6 + 2 plus Ihrem Weisheitsmodifikator. Knüppel- oder Stichschaden (Ihre Wahl, wenn Sie das Biest beschwören), und das Ziel hat den Zustand „Grappled“ (Flucht-SG entspricht Ihrem Zauberwurf-SG).\n\nLevel 7: Außergewöhnliches Training\n\nWenn Sie eine Bonusaktion ausführen, um Ihrem Primal Companion-Tier zu befehlen, eine Aktion auszuführen, können Sie ihm mithilfe seiner Bonusaktion auch befehlen, die Aktionen „Sprinten“, „Entfernen“, „Ausweichen“ oder „Hilfe“ auszuführen.\n\nDarüber hinaus kann es jedes Mal, wenn es mit einem Angriffswurf trifft und Schaden verursacht, Machtschaden Ihrer Wahl oder seine normale Schadensart verursachen.\n\nLevel 11: Bestialische Wut\n\nWenn Sie Ihrem Urgefährten-Tier befehlen, die Aktion „Schlag des Biests“ auszuführen, kann das Biest sie zweimal verwenden.\n\nWenn es in jeder Runde zum ersten Mal eine Kreatur trifft, die unter der Wirkung deines Zaubers „Mal des Jägers“ steht, verursacht das Tier außerdem zusätzlichen Machtschaden in Höhe des Bonusschadens dieses Zaubers.\n\nLevel 15: Zauber teilen\n\nWenn du einen Zauber gegen dich selbst wirkst, kannst du den Zauber auch auf dein Urgefährtentier anwenden, wenn sich das Tier in einem Umkreis von 30 Fuß um dich befindet.",
+  "tags": [],
+  "class": "Waldlaeufer",
+  "class_id": "waldlaeufer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

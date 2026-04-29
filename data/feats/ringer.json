@@ -1,0 +1,63 @@
+{
+  "id": "ringer",
+  "type": "feat",
+  "name": "Ringer",
+  "original_name": "Grappler",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:grappler",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Stärke oder Geschicklichkeit 13+"
+  ],
+  "summary": "Voraussetzung: Level 4+, Stärke oder Geschicklichkeit 13+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, Stärke oder Geschicklichkeit 13+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Geschicklichkeitswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schlagen und Greifen. Wenn du in deinem Zug eine Kreatur mit einem unbewaffneten Schlag als Teil der Angriffsaktion triffst, kannst du sowohl die Schadens- als auch die Greifoption nutzen. Du kannst diesen Vorteil nur einmal pro Spielzug nutzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Angriffsvorteil. Du hast einen Vorteil bei Angriffswürfen gegen eine von dir im Ringen befindliche Kreatur."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schneller Wrestler. Du musst keine zusätzliche Bewegung aufwenden, um eine von dir umklammerte Kreatur zu bewegen, wenn die Kreatur deine Größe oder kleiner hat."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, Stärke oder Geschicklichkeit 13+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Geschicklichkeitswert um 1 auf maximal 20.\n\nSchlagen und Greifen. Wenn du in deinem Zug eine Kreatur mit einem unbewaffneten Schlag als Teil der Angriffsaktion triffst, kannst du sowohl die Schadens- als auch die Greifoption nutzen. Du kannst diesen Vorteil nur einmal pro Spielzug nutzen.\n\nAngriffsvorteil. Du hast einen Vorteil bei Angriffswürfen gegen eine von dir im Ringen befindliche Kreatur.\n\nSchneller Wrestler. Du musst keine zusätzliche Bewegung aufwenden, um eine von dir umklammerte Kreatur zu bewegen, wenn die Kreatur deine Größe oder kleiner hat.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str",
+      "dex"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

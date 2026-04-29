@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Charakteroption</title>
+  <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
+  <script src="../../theme.js?v=theme-20260422"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title" id="title">Charakteroption</div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="content" style="max-width:900px;">
+      <div id="view"></div>
+    </div>
+  </main>
+
+  <script src="../../nav.js"></script>
+  <script type="module">
+    import { escapeHtml, loadIndex, renderRichText, slugify } from "../../lib.js?v=character-options-20260429";
+
+    const COLLECTIONS = {
+      class: { label: "Klasse", basePath: "../../data/classes", indexPath: "../../data/classes/index.json" },
+      background: { label: "Hintergrund", basePath: "../../data/backgrounds", indexPath: "../../data/backgrounds/index.json" },
+      feat: { label: "Talent", basePath: "../../data/feats", indexPath: "../../data/feats/index.json" },
+      race: { label: "Volk", basePath: "../../data/races", indexPath: "../../data/races/index.json" }
+    };
+
+    const FIELD_LABELS = {
+      id: "ID",
+      original_name: "Originalname",
+      rules_version: "Regelversion",
+      source: "Quelle",
+      source_url: "Quell-URL",
+      source_page: "Quellseite",
+      license: "Lizenz",
+      translation_note: "Uebersetzungshinweis",
+      category: "Kategorie",
+      group: "Gruppe",
+      prerequisite: "Voraussetzung",
+      prerequisites: "Voraussetzungen",
+      requirement: "Voraussetzung",
+      voraussetzung: "Voraussetzung",
+      level: "Stufe",
+      hit_die: "Trefferwuerfel",
+      primary_abilities: "Primaere Attribute",
+      proficiencies: "Uebungen",
+      proficiencies_text: "Uebungen",
+      skill_choices: "Fertigkeitswahl",
+      skill_proficiencies: "Fertigkeitsuebungen",
+      tool_proficiencies: "Werkzeuguebungen",
+      language_choices: "Sprachwahl",
+      ability_scores: "Attributswerte",
+      size: "Groesse",
+      creature_type: "Kreaturentyp",
+      speed: "Bewegung",
+      languages: "Sprachen",
+      senses: "Sinne",
+      equipment: "Ausruestung",
+      starting_equipment: "Startausruestung",
+      multiclass_requirements: "Mehrklassen-Voraussetzungen",
+      spellcasting: "Zauberwirken",
+      spellcasting_overrides: "Zauberwirken-Anpassungen",
+      features: "Merkmale",
+      traits: "Merkmale",
+      spells: "Zauber",
+      levels: "Stufen",
+      subclasses: "Unterklassen",
+      subclass_index: "Unterklassen-Index",
+      class: "Klasse",
+      class_id: "Klassen-ID",
+      granted_feat_id: "Gewaehrtes Talent",
+      granted_action_ids: "Gewaehrte Aktionen",
+      granted_spell_ids: "Gewaehrte Zauber",
+      granted_feature_ids: "Gewaehrte Merkmale",
+      choice_sets: "Auswahlsets",
+      modifiers: "Modifikatoren",
+      tags: "Tags",
+      text: "Beschreibung",
+      description: "Beschreibung",
+      beschreibung: "Beschreibung",
+      summary: "Kurzfassung"
+    };
+
+    const DETAIL_ORDER = [
+      "id", "original_name", "rules_version", "source", "source_url", "source_page", "category", "group",
+      "prerequisites", "prerequisite", "requirement", "voraussetzung", "level", "hit_die",
+      "primary_abilities", "proficiencies", "proficiencies_text", "skill_choices", "skill_proficiencies",
+      "tool_proficiencies", "language_choices", "ability_scores", "size", "creature_type", "speed", "languages", "senses",
+      "equipment", "starting_equipment",
+      "multiclass_requirements", "spellcasting", "spellcasting_overrides", "features", "traits", "spells",
+      "levels", "subclasses", "subclass_index", "class", "class_id", "granted_feat_id", "granted_action_ids",
+      "granted_spell_ids", "granted_feature_ids", "choice_sets", "modifiers", "license", "translation_note", "tags"
+    ];
+
+    const view = document.getElementById("view");
+    const titleEl = document.getElementById("title");
+
+    function labelFor(key){
+      return FIELD_LABELS[key] || String(key).replaceAll("_", " ");
+    }
+
+    function isMeaningful(value){
+      if (value == null) return false;
+      if (typeof value === "string") return value.trim() !== "";
+      if (typeof value === "number") return Number.isFinite(value);
+      if (typeof value === "boolean") return true;
+      if (Array.isArray(value)) return value.some(isMeaningful);
+      if (typeof value === "object") return Object.values(value).some(isMeaningful);
+      return true;
+    }
+
+    function renderValue(value){
+      if (Array.isArray(value)) {
+        return `<ul>${value.map(entry => `<li>${renderValue(entry)}</li>`).join("")}</ul>`;
+      }
+      if (value && typeof value === "object") {
+        return `<dl class="structured-fields">${Object.entries(value)
+          .filter(([, entry]) => isMeaningful(entry))
+          .map(([key, entry]) => `<div class="structured-field"><dt>${escapeHtml(labelFor(key))}</dt><dd>${renderValue(entry)}</dd></div>`)
+          .join("")}</dl>`;
+      }
+      if (typeof value === "boolean") return escapeHtml(value ? "Ja" : "Nein");
+      return renderRichText(String(value ?? ""), { inlineOnly: true });
+    }
+
+    function renderEntry(entry){
+      if (!entry || typeof entry !== "object") return renderValue(entry);
+
+      if (entry.type === "heading") {
+        const level = Math.min(Math.max(Number(entry.level) || 2, 2), 5);
+        return `<h${level}>${escapeHtml(entry.text || "")}</h${level}>`;
+      }
+
+      if (entry.type === "list" && Array.isArray(entry.items)) {
+        const tag = entry.ordered ? "ol" : "ul";
+        return `<${tag}>${entry.items.map(item => `<li>${renderRichText(String(item ?? ""), { inlineOnly: true })}</li>`).join("")}</${tag}>`;
+      }
+
+      if (entry.type === "table" && Array.isArray(entry.rows)) {
+        return `<div class="table-scroll"><table class="roll-table"><tbody>${entry.rows.map((row, rowIndex) => {
+          const cells = Array.isArray(row) ? row : [row];
+          const tag = rowIndex === 0 ? "th" : "td";
+          return `<tr>${cells.map(cell => `<${tag}>${renderRichText(String(cell ?? ""), { inlineOnly: true })}</${tag}>`).join("")}</tr>`;
+        }).join("")}</tbody></table></div>`;
+      }
+
+      if (entry.text) return `<p>${renderRichText(entry.text)}</p>`;
+      return renderValue(entry);
+    }
+
+    function renderDescription(option, fallback){
+      if (option.html || option.description_html) return option.html || option.description_html;
+      if (Array.isArray(option.entries) && option.entries.some(isMeaningful)) {
+        return option.entries.map(renderEntry).join("");
+      }
+      return renderRichText(String(fallback || ""));
+    }
+
+    function optionName(entry, fallbackId){
+      return entry.name || entry.title || entry.titel || entry.label || fallbackId;
+    }
+
+    function normalizeOption(entry, collection, sourceFile){
+      const fallbackId = slugify(optionName(entry, ""));
+      const id = String(entry.id || entry.slug || fallbackId || "").trim();
+      return {
+        ...entry,
+        id,
+        name: optionName(entry, id || collection.label),
+        collectionLabel: collection.label,
+        sourceFile
+      };
+    }
+
+    async function loadOptionFile(collection, file){
+      try {
+        const response = await fetch(`${collection.basePath}/${file}`, { cache: "no-cache" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const entry = await response.json();
+        return normalizeOption(entry, collection, file);
+      } catch (error) {
+        console.warn(`${file} konnte nicht geladen werden.`, error);
+        return null;
+      }
+    }
+
+    const params = new URLSearchParams(location.search);
+    const type = params.get("type") || "";
+    const id = params.get("id") || "";
+    const collection = COLLECTIONS[type];
+
+    if (!collection || !id) {
+      view.innerHTML = "<p>Fehlende oder unbekannte Charakteroption.</p>";
+      throw new Error("Fehlende Charakteroption");
+    }
+
+    let files = [];
+    let entries = [];
+    try {
+      files = await loadIndex(collection.indexPath);
+      entries = (await Promise.all(files.map(file => loadOptionFile(collection, file)))).filter(Boolean);
+    } catch (error) {
+      console.warn("Charakteroptionen konnten nicht geladen werden.", error);
+    }
+
+    const option = entries.find(entry => String(entry.id).toLowerCase() === id.toLowerCase())
+      || entries.find(entry => String(entry.name).toLowerCase() === id.toLowerCase())
+      || entries.find(entry => String(entry.sourceFile).toLowerCase() === id.toLowerCase());
+
+    if (!option) {
+      view.innerHTML = `<p>${escapeHtml(collection.label)} nicht gefunden: <code>${escapeHtml(id)}</code></p>`;
+      throw new Error("Charakteroption nicht gefunden");
+    }
+
+    titleEl.textContent = option.name || collection.label;
+
+    const description = option.html || option.description_html || option.entries || option.text || option.description || option.beschreibung || option.summary || "";
+    const hidden = new Set(["name", "title", "titel", "label", "slug", "html", "description_html", "entries", "text", "description", "beschreibung", "summary", "collectionLabel", "sourceFile", "type"]);
+    const keys = [
+      ...DETAIL_ORDER.filter(key => Object.prototype.hasOwnProperty.call(option, key)),
+      ...Object.keys(option).filter(key => !DETAIL_ORDER.includes(key) && !hidden.has(key))
+    ];
+
+    const rows = keys
+      .filter(key => isMeaningful(option[key]))
+      .map(key => `<div class="structured-field"><dt>${escapeHtml(labelFor(key))}</dt><dd>${renderValue(option[key])}</dd></div>`)
+      .join("");
+
+    view.innerHTML = `
+      <h1>${escapeHtml(option.name)}</h1>
+      <p class="muted">${escapeHtml(option.collectionLabel)}${option.source ? " - " + escapeHtml(option.source) : ""}</p>
+
+      ${rows ? `<div class="mini-box">
+        <div class="mini-box-title">Eigenschaften</div>
+        <dl class="structured-fields">${rows}</dl>
+      </div>` : ""}
+
+      ${description ? `<div class="mini-box" style="margin-top:12px;">
+        <div class="mini-box-title">Beschreibung</div>
+        <div class="mini-box-text">${renderDescription(option, description)}</div>
+      </div>` : ""}
+    `;
+  </script>
+</body>
+</html>

@@ -81,8 +81,9 @@
     </main>
   </div>
 
+  <script src="../../nav.js"></script>
   <script type="module">
-    import { escapeHtml, loadIndex, loadMany, mod, fmtSigned, normalizeMonster } from "../../lib.js";
+    import { escapeHtml, loadIndex, loadMany, mod, fmtSigned, normalizeMonster, renderRichText, renderRollExpressionHtml } from "../../lib.js?v=2026-04-27-hitdice-links";
 
     const grid = document.getElementById("grid");
     const qEl = document.getElementById("q");
@@ -149,14 +150,15 @@
       const typeLine = `${m.size ?? "—"} ${m.type?.type ?? "—"}, ${m.alignment ?? "—"}`;
 
       const traits = (m.traits || []).slice(0, 2)
-        .map(t => `<div class="mini"><b>${escapeHtml(t.name)}:</b> ${escapeHtml(t.text)}</div>`).join("");
+        .map(t => `<div class="mini"><b>${renderRichText(t.name, { inlineOnly: true })}:</b> ${renderRichText(t.text, { inlineOnly: true })}</div>`).join("");
 
       const actions = (m.actions || []).slice(0, 2)
-        .map(a => `<div class="mini"><b>${escapeHtml(a.name)}:</b> ${escapeHtml(a.text || a.type || "")}</div>`).join("");
+        .map(a => `<div class="mini"><b>${renderRichText(a.name, { inlineOnly: true })}:</b> ${renderRichText(a.text || a.type || "", { inlineOnly: true })}</div>`).join("");
 
       const sensesLine = formatSenses(m.senses);
       const languagesLine = (m.languages && m.languages.length) ? m.languages.join(", ") : "";
       const savesLine = formatSaves(m.saving_throws);
+      const hpFormula = String(m.hp?.formula ?? "").trim();
 
       const defenses = [];
       const imm = formatList(m.damage_immunities);
@@ -168,10 +170,10 @@
       if (imm) defenses.push(`<div class="mini"><b>Immun:</b> ${escapeHtml(imm)}</div>`);
       if (cimm) defenses.push(`<div class="mini"><b>Statusimmunität:</b> ${escapeHtml(cimm)}</div>`);
 
-      const legIntro = m.legendary_actions_intro ? `<div class="mini">${escapeHtml(m.legendary_actions_intro)}</div>` : "";
+      const legIntro = m.legendary_actions_intro ? `<div class="mini">${renderRichText(m.legendary_actions_intro, { inlineOnly: true })}</div>` : "";
       const legActions = (m.legendary_actions || []).slice(0, 2).map(a => {
         const cost = a.cost != null ? ` (Kosten ${a.cost})` : "";
-        return `<div class="mini"><b>${escapeHtml(a.name)}${escapeHtml(cost)}:</b> ${escapeHtml(a.text)}</div>`;
+        return `<div class="mini"><b>${renderRichText(a.name, { inlineOnly: true })}${escapeHtml(cost)}:</b> ${renderRichText(a.text, { inlineOnly: true })}</div>`;
       }).join("");
       const legBox = (m.legendary_actions && m.legendary_actions.length)
         ? `<div class="mini-box"><div class="mini-box-title">Legendäre Aktionen</div><div class="mini-box-text">${legIntro}${legActions}</div></div>`
@@ -184,7 +186,7 @@
             <div class="mini-sub">${escapeHtml(typeLine)}</div>
             <div class="pillbar">
               <span class="pill"><b>RK</b> ${escapeHtml(m.ac)}${m.ac_note ? ` <span class="muted">(${escapeHtml(m.ac_note)})</span>` : ""}</span>
-              <span class="pill"><b>TP</b> ${escapeHtml(m.hp?.average)} <span class="muted">(${escapeHtml(m.hp?.formula)})</span></span>
+              <span class="pill"><b>TP</b> ${escapeHtml(m.hp?.average)}${hpFormula ? ` <span class="muted">(${hpFormula.includes("[[") ? renderRichText(hpFormula, { inlineOnly: true }) : renderRollExpressionHtml(hpFormula)})</span>` : ""}</span>
               <span class="pill"><b>Bewegung</b> ${escapeHtml(speed)}</span>
               <span class="pill"><b>HG</b> ${escapeHtml(cr)}</span>
               <span class="pill"><b>ÜB</b> ${escapeHtml(pb)}</span>

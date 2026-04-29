@@ -1,0 +1,193 @@
+{
+  "id": "artillerist",
+  "type": "subclass",
+  "name": "Artillerist",
+  "original_name": "Artillerist",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/artificer:artillerist",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Üben Sie zerstörerische Kraft aus der Ferne aus. Ein Artillerist ist darauf spezialisiert, mithilfe von Magie Energie, Projektile und Explosionen auf ein Schlachtfeld zu schleudern.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Üben Sie zerstörerische Kraft aus der Ferne aus. Ein Artillerist ist darauf spezialisiert, mithilfe von Magie Energie, Projektile und Explosionen auf ein Schlachtfeld zu schleudern."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Handwerkszeug"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fernkampfwaffen. Sie erwerben Kenntnisse im Umgang mit Kampf-Fernkampfwaffen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse. Sie erwerben Kenntnisse im Umgang mit den Werkzeugen des Holzschnitzers. Wenn Sie bereits über diese Fertigkeit verfügen, erwerben Sie Kenntnisse im Umgang mit einer anderen Art von Handwerkswerkzeugen Ihrer Wahl."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberstab-Herstellung. Wenn Sie einen Zauberstab herstellen, halbiert sich die dafür benötigte Zeit."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Artilleristenzauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine in der Artillerist-Zaubertabelle angegebene Artificer-Stufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Artilleristenzauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Artificer-Stufe",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Schild, Donnerwelle"
+        ],
+        [
+          "5",
+          "Sengender Strahl, Zerschmettern"
+        ],
+        [
+          "9",
+          "Feuerball, Windwand"
+        ],
+        [
+          "13",
+          "Eissturm, Feuerwand"
+        ],
+        [
+          "17",
+          "Kältekegel, Wand der Macht"
+        ]
+      ],
+      "text": "Magier der Stufe „Artificer“: 3 Schild, Donnerwelle, 5 Sengender Strahl, Zerschmettern, 9 Feuerball, Windwand, 13 Eissturm, Feuerwand, 17 Kältekegel, Wand der Macht"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Eldritch-Kanone"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mit Smiths Werkzeugen oder Holzschnitzerwerkzeugen können Sie eine magische Aktion ausführen, um eine kleine oder winzige Eldritch-Kanone an einem freien Platz auf einer horizontalen Fläche in einem Umkreis von 5 Fuß um sich herum zu erschaffen. Die Spielstatistiken der Kanone werden unten angezeigt. Sie bestimmen sein Aussehen, einschließlich der Frage, ob Sie es tragen oder nicht (und die Wahl der Beine oder Räder für Letzteres). Es verschwindet, wenn es auf 0 Trefferpunkte reduziert wird oder nach 1 Stunde. Sie können es vorzeitig als magische Aktion abtun."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie eine Kanone erstellt haben, können Sie dies nicht erneut tun, bis Sie eine Lange Rast abgeschlossen oder einen Zauberslot ausgegeben haben, um eine zu erstellen. Sie können jeweils nur eine Kanone haben und keine erstellen, solange Sie bereits eine haben."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Unheimliche Kanone"
+        ],
+        [
+          "Kleines oder winziges Objekt"
+        ],
+        [
+          "Rüstungsklasse: 18"
+        ],
+        [
+          "Trefferpunkte: 5 × deine Artificer-Stufe (das Wirken von „Reparieren“ auf die Kanone stellt 2W6 Trefferpunkte wieder her)"
+        ],
+        [
+          "Immunitäten: Gift, Hellseher"
+        ],
+        [
+          "Kanone aktivieren (erfordert, dass Sie sich innerhalb von 60 Fuß von der Kanone befinden): Als Bonusaktion befehlen Sie der Kanone, die unten aufgeführte Option Flammenwerfer, Kraftballista oder Beschützer zu verwenden; Sie können die Kanone vor oder nach dieser Option so steuern, dass sie sich bis zu 15 Fuß weit bewegt:"
+        ],
+        [
+          "Flammenwerfer: Die Kanone stößt Feuer in einem 15 Fuß hohen Kegel aus. Jede Kreatur in diesem Bereich führt einen Geschicklichkeits-Rettungswurf gegen den SG deines Zauberwurfs durch und erleidet bei einem fehlgeschlagenen Rettungswurf 2W8 Feuerschaden oder bei einem erfolgreichen Rettungswurf halb so viel Schaden. Brennbare Gegenstände im Kegel, die nicht getragen oder getragen werden, beginnen zu brennen."
+        ],
+        [
+          "Ballista erzwingen: Führen Sie einen von der Kanone ausgehenden Fernkampfangriff auf eine Kreatur oder einen Gegenstand in einem Umkreis von 120 Fuß aus. Bei einem Treffer erleidet das Ziel 2W8 Machtschaden und wenn es sich bei dem Ziel um eine Kreatur handelt, wird sie bis zu 5 Fuß von der Kanone entfernt."
+        ],
+        [
+          "Beschützer: Die Kanone stößt einen Schuss positiver Energie aus, der ihr selbst und jeder Kreatur Ihrer Wahl im Umkreis von 10 Fuß um sie herum eine Anzahl temporärer Trefferpunkte in Höhe von 1W8 plus Ihrem Intelligenzmodifikator (mindestens 1) verleiht."
+        ]
+      ],
+      "text": "Eldritch-Kanone, kleines oder winziges Objekt, Rüstungsklasse: 18 Trefferpunkte: 5 × Ihre Artificer-Stufe (das Wirken von „Reparieren“ auf die Kanone stellt 2W6 Trefferpunkte wieder her) Immunitäten: Gift, Kanone mit psychischer Aktivierung (Sie müssen sich innerhalb von 60 Fuß von der Kanone befinden): Als Bonusaktion befehlen Sie der Kanone, die unten aufgeführte Option „Flammenwerfer“, „Kraftballiste“ oder „Beschützer“ zu verwenden; Sie können die Kanone vor oder nach dieser Option so steuern, dass sie sich bis zu 15 Fuß weit bewegt: Flammenwerfer: Die Kanone stößt Feuer in einem 15 Fuß hohen Kegel aus. Jede Kreatur in diesem Bereich führt einen Geschicklichkeits-Rettungswurf gegen den SG deines Zauberwurfs durch und erleidet bei einem fehlgeschlagenen Rettungswurf 2W8 Feuerschaden oder bei einem erfolgreichen Rettungswurf halb so viel Schaden. Brennbare Gegenstände im Kegel, die nicht getragen oder getragen werden, beginnen zu brennen. Ballista erzwingen: Führen Sie einen von der Kanone ausgehenden Fernkampfangriff auf eine Kreatur oder einen Gegenstand in einem Umkreis von 120 Fuß aus. Bei einem Treffer erleidet das Ziel 2W8 Machtschaden und wenn es sich bei dem Ziel um eine Kreatur handelt, wird sie bis zu 5 Fuß von der Kanone entfernt. Beschützer: Die Kanone stößt einen Schuss positiver Energie aus, der ihr selbst und jeder Kreatur Ihrer Wahl im Umkreis von 10 Fuß um sie herum eine Anzahl temporärer Trefferpunkte in Höhe von 1W8 plus Ihrem Intelligenzmodifikator (mindestens 1) verleiht."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 5: Arkane Schusswaffe"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine Lange Rast abgeschlossen haben, können Sie mit den Werkzeugen des Holzschnitzers spezielle Siegel in eine Rute, einen Stab, einen Zauberstab oder eine Kampf-Fernkampfwaffe schnitzen und sie dadurch in Ihre arkane Schusswaffe verwandeln. Die Siegel verschwinden vom Objekt, wenn Sie sie später auf einen anderen Gegenstand schnitzen. Ansonsten sind die Siegel unbegrenzt gültig."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können Ihre arkane Feuerwaffe als Zauberfokus für Ihre Kunsthandwerkerzauber verwenden. Wenn Sie einen Kunsthandwerker-Zauber durch die Schusswaffe wirken, würfeln Sie 1W8 und Sie erhalten einen Bonus auf einen der Schadenswürfe des Zaubers in Höhe der gewürfelten Zahl."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 9: Sprengkanone"
+    },
+    {
+      "type": "paragraph",
+      "text": "Jede Eldritch-Kanone, die Sie erstellen, ist jetzt zerstörerischer. Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Detonieren. Wenn Ihre Kanone Schaden erleidet, können Sie eine Reaktion ausführen, um der Kanone zu befehlen, zu explodieren, wenn Sie sich in einem Umkreis von 60 Fuß um sie befinden. Dadurch wird die Kanone zerstört und jede Kreatur im Umkreis von 20 Fuß gezwungen, einen Geschicklichkeits-Rettungswurf gegen den SG deines Zauberwurfs auszuführen, wobei sie bei einem fehlgeschlagenen Rettungswurf 3W10 Machtschaden oder bei einem erfolgreichen Rettungswurf die Hälfte des Schadens erleidet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Feuerkraft. Die Schadenswürfe der Kanone und die Anzahl der durch Protector gewährten temporären Trefferpunkte erhöhen sich um 1W8."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Befestigte Position"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du bist ein Meister darin, mit deiner Eldritch-Kanone gut verteidigte Stellungen zu errichten. Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Doppelte Feuerkraft. Sie können jetzt zwei Kanonen gleichzeitig haben und zwei mit derselben Magic-Aktion erstellen. (Wenn Sie einen Zauberplatz aufwenden, um die erste Kanone zu erschaffen, müssen Sie einen weiteren Zauberplatz aufwenden, um die zweite zu erschaffen.) Sie können beide mit derselben Bonusaktion aktivieren und ihnen befehlen, dieselbe oder unterschiedliche Aktivierungsoptionen zu verwenden. Sie können keine dritte Kanone erstellen, solange Sie zwei haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schimmernde Feldprojektion. Sie und Ihre Verbündeten haben halbe Deckung, solange Sie sich in einem Umkreis von 10 Fuß um Ihre Eldritch-Kanone befinden."
+    }
+  ],
+  "text": "Üben Sie zerstörerische Kraft aus der Ferne aus. Ein Artillerist ist darauf spezialisiert, mithilfe von Magie Energie, Projektile und Explosionen auf ein Schlachtfeld zu schleudern.\n\nLevel 3: Handwerkszeug\n\nSie profitieren von folgenden Vorteilen.\n\nFernkampfwaffen. Sie erwerben Kenntnisse im Umgang mit Kampf-Fernkampfwaffen.\n\nWerkzeugkenntnisse. Sie erwerben Kenntnisse im Umgang mit den Werkzeugen des Holzschnitzers. Wenn Sie bereits über diese Fertigkeit verfügen, erwerben Sie Kenntnisse im Umgang mit einer anderen Art von Handwerkswerkzeugen Ihrer Wahl.\n\nZauberstab-Herstellung. Wenn Sie einen Zauberstab herstellen, halbiert sich die dafür benötigte Zeit.\n\nStufe 3: Artilleristenzauber\n\nWenn Sie eine in der Artillerist-Zaubertabelle angegebene Artificer-Stufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nArtilleristenzauber\n\nMagier der Stufe „Artificer“: 3 Schild, Donnerwelle, 5 Sengender Strahl, Zerschmettern, 9 Feuerball, Windwand, 13 Eissturm, Feuerwand, 17 Kältekegel, Wand der Macht\n\nLevel 3: Eldritch-Kanone\n\nMit Smiths Werkzeugen oder Holzschnitzerwerkzeugen können Sie eine magische Aktion ausführen, um eine kleine oder winzige Eldritch-Kanone an einem freien Platz auf einer horizontalen Fläche in einem Umkreis von 5 Fuß um sich herum zu erschaffen. Die Spielstatistiken der Kanone werden unten angezeigt. Sie bestimmen sein Aussehen, einschließlich der Frage, ob Sie es tragen oder nicht (und die Wahl der Beine oder Räder für Letzteres). Es verschwindet, wenn es auf 0 Trefferpunkte reduziert wird oder nach 1 Stunde. Sie können es vorzeitig als magische Aktion abtun.\n\nSobald Sie eine Kanone erstellt haben, können Sie dies nicht erneut tun, bis Sie eine Lange Rast abgeschlossen oder einen Zauberslot ausgegeben haben, um eine zu erstellen. Sie können jeweils nur eine Kanone haben und keine erstellen, solange Sie bereits eine haben.\n\nEldritch-Kanone, kleines oder winziges Objekt, Rüstungsklasse: 18 Trefferpunkte: 5 × Ihre Artificer-Stufe (das Wirken von „Reparieren“ auf die Kanone stellt 2W6 Trefferpunkte wieder her) Immunitäten: Gift, Kanone mit psychischer Aktivierung (Sie müssen sich innerhalb von 60 Fuß von der Kanone befinden): Als Bonusaktion befehlen Sie der Kanone, die unten aufgeführte Option „Flammenwerfer“, „Kraftballiste“ oder „Beschützer“ zu verwenden; Sie können die Kanone vor oder nach dieser Option so steuern, dass sie sich bis zu 15 Fuß weit bewegt: Flammenwerfer: Die Kanone stößt Feuer in einem 15 Fuß hohen Kegel aus. Jede Kreatur in diesem Bereich führt einen Geschicklichkeits-Rettungswurf gegen den SG deines Zauberwurfs durch und erleidet bei einem fehlgeschlagenen Rettungswurf 2W8 Feuerschaden oder bei einem erfolgreichen Rettungswurf halb so viel Schaden. Brennbare Gegenstände im Kegel, die nicht getragen oder getragen werden, beginnen zu brennen. Ballista erzwingen: Führen Sie einen von der Kanone ausgehenden Fernkampfangriff auf eine Kreatur oder einen Gegenstand in einem Umkreis von 120 Fuß aus. Bei einem Treffer erleidet das Ziel 2W8 Machtschaden und wenn es sich bei dem Ziel um eine Kreatur handelt, wird sie bis zu 5 Fuß von der Kanone entfernt. Beschützer: Die Kanone stößt einen Schuss positiver Energie aus, der ihr selbst und jeder Kreatur Ihrer Wahl im Umkreis von 10 Fuß um sie herum eine Anzahl temporärer Trefferpunkte in Höhe von 1W8 plus Ihrem Intelligenzmodifikator (mindestens 1) verleiht.\n\nLevel 5: Arkane Schusswaffe\n\nWenn Sie eine Lange Rast abgeschlossen haben, können Sie mit den Werkzeugen des Holzschnitzers spezielle Siegel in eine Rute, einen Stab, einen Zauberstab oder eine Kampf-Fernkampfwaffe schnitzen und sie dadurch in Ihre arkane Schusswaffe verwandeln. Die Siegel verschwinden vom Objekt, wenn Sie sie später auf einen anderen Gegenstand schnitzen. Ansonsten sind die Siegel unbegrenzt gültig.\n\nSie können Ihre arkane Feuerwaffe als Zauberfokus für Ihre Kunsthandwerkerzauber verwenden. Wenn Sie einen Kunsthandwerker-Zauber durch die Schusswaffe wirken, würfeln Sie 1W8 und Sie erhalten einen Bonus auf einen der Schadenswürfe des Zaubers in Höhe der gewürfelten Zahl.\n\nLevel 9: Sprengkanone\n\nJede Eldritch-Kanone, die Sie erstellen, ist jetzt zerstörerischer. Sie profitieren von folgenden Vorteilen.\n\nDetonieren. Wenn Ihre Kanone Schaden erleidet, können Sie eine Reaktion ausführen, um der Kanone zu befehlen, zu explodieren, wenn Sie sich in einem Umkreis von 60 Fuß um sie befinden. Dadurch wird die Kanone zerstört und jede Kreatur im Umkreis von 20 Fuß gezwungen, einen Geschicklichkeits-Rettungswurf gegen den SG deines Zauberwurfs auszuführen, wobei sie bei einem fehlgeschlagenen Rettungswurf 3W10 Machtschaden oder bei einem erfolgreichen Rettungswurf die Hälfte des Schadens erleidet.\n\nFeuerkraft. Die Schadenswürfe der Kanone und die Anzahl der durch Protector gewährten temporären Trefferpunkte erhöhen sich um 1W8.\n\nLevel 15: Befestigte Position\n\nDu bist ein Meister darin, mit deiner Eldritch-Kanone gut verteidigte Stellungen zu errichten. Sie profitieren von folgenden Vorteilen.\n\nDoppelte Feuerkraft. Sie können jetzt zwei Kanonen gleichzeitig haben und zwei mit derselben Magic-Aktion erstellen. (Wenn Sie einen Zauberplatz aufwenden, um die erste Kanone zu erschaffen, müssen Sie einen weiteren Zauberplatz aufwenden, um die zweite zu erschaffen.) Sie können beide mit derselben Bonusaktion aktivieren und ihnen befehlen, dieselbe oder unterschiedliche Aktivierungsoptionen zu verwenden. Sie können keine dritte Kanone erstellen, solange Sie zwei haben.\n\nSchimmernde Feldprojektion. Sie und Ihre Verbündeten haben halbe Deckung, solange Sie sich in einem Umkreis von 10 Fuß um Ihre Eldritch-Kanone befinden.",
+  "tags": [],
+  "class": "Artificer",
+  "class_id": "artificer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

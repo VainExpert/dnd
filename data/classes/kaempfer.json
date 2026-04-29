@@ -1,0 +1,721 @@
+{
+  "id": "kaempfer",
+  "type": "class",
+  "name": "Kaempfer",
+  "original_name": "Fighter",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/fighter:main",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Klassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Kämpfer beherrschen viele Schlachtfelder. Auf der Suche nach Rittern, königlichen Champions, Elitesoldaten und hartgesottenen Söldnern – als Kämpfer verfügen sie alle über ein beispielloses Können im Umgang mit Waffen und Rüstungen. Und sie sind mit dem Tod bestens vertraut, sowohl wenn er ihn austeilt als auch ihm trotzt.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Kämpfer beherrschen viele Schlachtfelder. Auf der Suche nach Rittern, königlichen Champions, Elitesoldaten und hartgesottenen Söldnern – als Kämpfer verfügen sie alle über ein beispielloses Können im Umgang mit Waffen und Rüstungen. Und sie sind mit dem Tod bestens vertraut, sowohl wenn er ihn austeilt als auch ihm trotzt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kämpfer beherrschen verschiedene Waffentechniken und ein gut ausgerüsteter Kämpfer hat für jede Kampfsituation immer das richtige Werkzeug zur Hand. Ebenso ist ein Kämpfer mit jeder Art von Rüstung vertraut. Über diesen grundlegenden Grad an Vertrautheit hinaus ist jeder Kämpfer auf bestimmte Kampfstile spezialisiert. Manche konzentrieren sich auf das Bogenschießen, manche auf den Kampf mit zwei Waffen gleichzeitig und wieder andere darauf, ihre Kampffähigkeiten durch Magie zu verbessern. Diese Kombination aus umfassenden Fähigkeiten und umfassender Spezialisierung macht Kämpfer zu überlegenen Kämpfern."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Kerneigenschaften des Kämpfers"
+        ],
+        [
+          "Primäre Fähigkeit",
+          "Stärke oder Geschicklichkeit"
+        ],
+        [
+          "Trefferpunktwürfel",
+          "D10 pro Kämpferstufe"
+        ],
+        [
+          "Rettungswurf-Kenntnisse",
+          "Stärke und Konstitution"
+        ],
+        [
+          "Fertigkeiten",
+          "Wählen Sie 2: Akrobatik, Umgang mit Tieren, Leichtathletik, Geschichte, Einsicht, Einschüchterung, Überzeugung, Wahrnehmung oder Überleben"
+        ],
+        [
+          "Waffenkenntnisse",
+          "Einfache und Kampfwaffen"
+        ],
+        [
+          "Rüstungstraining",
+          "Leichte, mittlere und schwere Rüstungen und Schilde"
+        ],
+        [
+          "Startausrüstung",
+          "Wählen Sie A, B oder C: (A) Kettenhemd, Großschwert, Dreschflegel, 8 Speere, Paket des Kerkermeisters und 4 GP; (B) Beschlagene Lederrüstung, Krummsäbel, Kurzschwert, Langbogen, 20 Pfeile, Köcher, Paket des Kerkermeisters und 11 GP; oder (C) 155 GP"
+        ]
+      ],
+      "text": "Kerneigenschaften des Kämpfers Primäre Fähigkeit Stärke oder Geschicklichkeit Trefferpunkt Würfel D10 pro Kämpferstufe Rettungswurf-Fähigkeiten Stärke und Konstitution Fertigkeiten-Fähigkeiten Wählen Sie 2: Akrobatik, Tierhandhabung, Leichtathletik, Geschichte, Einsicht, Einschüchterung, Überzeugung, Wahrnehmung oder Überleben Waffenkenntnisse Einfache Waffen und Kampfwaffen Rüstungstraining Leichte, mittlere und schwere Rüstungen und Schilde Startausrüstung Wählen Sie A, B oder C: (A) Kettenhemd, Großschwert, Dreschflegel, 8 Speere, Paket des Kerkermeisters und 4 gp (B) Beschlagene Lederrüstung, Krummsäbel, Kurzschwert, Langbogen, 20 Pfeile, Köcher, Paket des Kerkermeisters und 11 GP; oder (C) 155 GP"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Ein Kämpfer werden…"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Kämpfer der Stufe 1"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalte alle Eigenschaften in der Tabelle „Kernkämpfereigenschaften“.",
+        "Erhalte die Fähigkeiten des Kämpfers der Stufe 1, die in der Tabelle „Kämpfertalente“ aufgeführt sind."
+      ],
+      "text": "Erhalte alle Eigenschaften in der Tabelle „Kernkämpfereigenschaften“. Erhalte die Fähigkeiten des Kämpfers der Stufe 1, die in der Tabelle „Kämpfertalente“ aufgeführt sind."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Mehrklassenkämpfer"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalten Sie die folgenden Eigenschaften aus der Tabelle „Kernkämpfereigenschaften“: Trefferpunktwürfel, Kenntnisse im Umgang mit Kampfwaffen und Training mit leichter und mittlerer Rüstung und Schilden.",
+        "Erhalte die Fähigkeiten des Kämpfers der Stufe 1, die in der Tabelle „Kämpfertalente“ aufgeführt sind."
+      ],
+      "text": "Erhalten Sie die folgenden Eigenschaften aus der Tabelle „Kernkämpfereigenschaften“: Trefferpunktwürfel, Kenntnisse im Umgang mit Kampfwaffen und Training mit leichter und mittlerer Rüstung und Schilden. Erhalte die Fähigkeiten des Kämpfers der Stufe 1, die in der Tabelle „Kämpfertalente“ aufgeführt sind."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Talente der Kämpferklasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kämpfertalente"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ebene",
+          "Uebungsbonus",
+          "Klassentalente",
+          "Zweiter Wind",
+          "Waffenbeherrschung"
+        ],
+        [
+          "1",
+          "+2",
+          "Kampfstil, Zweiter Wind, Waffenbeherrschung",
+          "2",
+          "3"
+        ],
+        [
+          "2",
+          "+2",
+          "Aktion Surge (Einmalgebrauch), Taktischer Geist",
+          "2",
+          "3"
+        ],
+        [
+          "3",
+          "+2",
+          "Kämpfer-Unterklasse",
+          "2",
+          "3"
+        ],
+        [
+          "4",
+          "+2",
+          "Faehigkeitswert-Verbesserung",
+          "3",
+          "4"
+        ],
+        [
+          "5",
+          "+3",
+          "Zusätzlicher Angriff, taktischer Wechsel",
+          "3",
+          "4"
+        ],
+        [
+          "6",
+          "+3",
+          "Faehigkeitswert-Verbesserung",
+          "3",
+          "4"
+        ],
+        [
+          "7",
+          "+3",
+          "Unterklasse Talent",
+          "3",
+          "4"
+        ],
+        [
+          "8",
+          "+3",
+          "Faehigkeitswert-Verbesserung",
+          "3",
+          "4"
+        ],
+        [
+          "9",
+          "+4",
+          "Unbezähmbar (Einmalgebrauch), Taktischer Meister",
+          "3",
+          "4"
+        ],
+        [
+          "10",
+          "+4",
+          "Unterklasse Talent",
+          "4",
+          "5"
+        ],
+        [
+          "11",
+          "+4",
+          "Zwei zusätzliche Angriffe",
+          "4",
+          "5"
+        ],
+        [
+          "12",
+          "+4",
+          "Faehigkeitswert-Verbesserung",
+          "4",
+          "5"
+        ],
+        [
+          "13",
+          "+5",
+          "Unbezwingbar (zwei Verwendungszwecke), studierte Angriffe",
+          "4",
+          "5"
+        ],
+        [
+          "14",
+          "+5",
+          "Faehigkeitswert-Verbesserung",
+          "4",
+          "5"
+        ],
+        [
+          "15",
+          "+5",
+          "Unterklasse Talent",
+          "4",
+          "5"
+        ],
+        [
+          "16",
+          "+5",
+          "Faehigkeitswert-Verbesserung",
+          "4",
+          "6"
+        ],
+        [
+          "17",
+          "+6",
+          "Aktion Surge (zwei Verwendungszwecke), Indomitable (drei Verwendungszwecke)",
+          "4",
+          "6"
+        ],
+        [
+          "18",
+          "+6",
+          "Unterklasse Talent",
+          "4",
+          "6"
+        ],
+        [
+          "19",
+          "+6",
+          "Epischer Segen",
+          "4",
+          "6"
+        ],
+        [
+          "20",
+          "+6",
+          "Drei zusätzliche Angriffe",
+          "4",
+          "6"
+        ]
+      ],
+      "text": "Level Uebungsbonus Klassentalente Zweiter Wind Waffenbeherrschung 1 +2 Kampfstil, Zweiter Wind, Waffenbeherrschung 2 3 2 +2 Aktionsschub (Einmal verwenden), Taktischer Verstand 2 3 3 +2 Kämpfer-Unterklasse 2 3 4 +2 Fähigkeitswert-Verbesserung 3 4 5 +3 Zusätzlicher Angriff, Taktischer Wandel 3 4 6 +3 Fähigkeitswert-Verbesserung 3 4 7 +3 Unterklasse-Talent 3 4 8 +3 Verbesserung des Fähigkeitswerts 3 4 9 +4 Unbezwingbar (eine Verwendung), Taktischer Meister 3 4 10 +4 Talent der Unterklasse 4 5 11 +4 Zwei zusätzliche Angriffe 4 5 12 +4 Verbesserung des Fähigkeitswerts 4 5 13 +5 Verbesserung des Fähigkeitswerts 4 5 13 +5 Verbesserung des Fähigkeitswerts 4 5 14 +5 Verbesserung des Fähigkeitswerts 4 5 15 +5 Talent der Unterklasse 4 5 16 +5 Verbesserung des Fähigkeitswerts 4 6 17 +6 Aktionsschub (zwei Verwendungszwecke), Unbezwingbar (drei Verwendungszwecke) 4 6 18 +6 Unterklassentalent 4 6 19 +6 Epischer Segen 4 6 20 +6 Drei zusätzliche Angriffe 4 6"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Kämpfer erhältst du die folgenden Klassenmerkmale, wenn du die angegebenen Kämpferstufen erreichst. Diese Funktionen sind in der Tabelle „Fighter Talentures“ aufgeführt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 1: Kampfstil"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst ein Kampfstil-Talent deiner Wahl (siehe Kapitel 5). Verteidigung wird empfohlen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie eine Kämpferstufe erreichen, können Sie das von Ihnen gewählte Talent durch ein anderes Kampfstil-Talent ersetzen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 1: Zweiter Wind"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie verfügen nur über eine begrenzte körperliche und geistige Ausdauer, auf die Sie zurückgreifen können. Als Bonusaktion können Sie damit Trefferpunkte in Höhe von 1W10 plus Ihrer Kämpferstufe zurückgewinnen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diese Funktion zweimal nutzen. Du erhältst eine verbrauchte Nutzung zurück, wenn du eine Kurze Rast beendest, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast beendest."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie bestimmte Kämpferstufen erreichen, können Sie diese Funktion häufiger nutzen, wie in der Spalte „Zweiter Wind“ der Tabelle „Kämpfertalente“ gezeigt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 1: Waffenbeherrschung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihr Waffentraining ermöglicht es Ihnen, die Meisterschaftseigenschaften von drei Arten einfacher oder kriegerischer Waffen Ihrer Wahl zu nutzen. Immer wenn Sie eine Lange Rast abgeschlossen haben, können Sie Waffenübungen üben und eine dieser Waffenoptionen ändern."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie bestimmte Kämpferstufen erreichen, erhalten Sie die Fähigkeit, die Meisterschaftseigenschaften weiterer Waffenarten zu nutzen, wie in der Spalte „Waffenmeisterschaft“ der Tabelle „Kämpfertalente“ gezeigt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 2: Aktion Surge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können für einen Moment über Ihre normalen Grenzen hinausgehen. In deinem Zug kannst du außer der Magie-Aktion eine zusätzliche Aktion ausführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine kurze oder lange Rast beendet haben. Ab Level 17 können Sie es zweimal vor einer Pause, aber nur einmal pro Runde verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 2: Taktischer Verstand"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast ein Gespür für Taktiken auf und neben dem Schlachtfeld. Wenn Sie bei einer Fähigkeitsüberprüfung scheitern, können Sie Ihren zweiten Wind einsetzen, um sich selbst zum Erfolg zu führen. Anstatt Trefferpunkte zurückzugewinnen, würfeln Sie 1W10 und addieren die gewürfelte Zahl zum Fähigkeitstest, was möglicherweise zu einem Erfolg führt. Wenn die Prüfung immer noch fehlschlägt, wird dieser Einsatz von „Second Wind“ nicht verbraucht."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Kämpfer-Unterklasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine Kämpfer-Unterklasse deiner Wahl. Die Unterklassen „Battle Master“, „Champion“, „Eldritch Knight“ und „Psi Warrior“ werden nach der Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Kämpferstufen Funktionen gewährt. Für den Rest Ihrer Karriere erhalten Sie alle Eigenschaften Ihrer Unterklasse, die Ihrer Kämpferstufe oder niedriger entsprechen."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Kämpfer-Unterklassen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nennen Sie Banneret Battle Master Champion Eldritch Knight Psi Warrior"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 4: Verbesserung der Fähigkeitsbewertung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Kämpferstufen 6, 8, 12, 14 und 16."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 5: Zusätzlicher Angriff"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst jedes Mal, wenn du in deinem Zug die Angriffsaktion ausführst, zweimal statt einmal angreifen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 5: Taktischer Wandel"
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn du deinen Second Wind mit einer Bonusaktion aktivierst, kannst du dich bis zur Hälfte deiner Geschwindigkeit bewegen, ohne Gelegenheitsangriffe zu provozieren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 9: Unbezwingbar"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn dir ein Rettungswurf misslingt, kannst du ihn mit einem Bonus in Höhe deiner Kämpferstufe wiederholen. Sie müssen den neuen Wurf verwenden und können diese Funktion erst wieder verwenden, wenn Sie eine Lange Rast beendet haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diese Funktion zweimal vor einem Lange Rast ab Level 13 und dreimal vor einem Lange Rast ab Level 17 nutzen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 9: Taktischer Meister"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie mit einer Waffe angreifen, deren Meisterschaftseigenschaft Sie verwenden können, können Sie diese Eigenschaft für diesen Angriff durch die Eigenschaft „Schieben“, „Sap“ oder „Verlangsamen“ ersetzen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 11: Zwei zusätzliche Angriffe"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können dreimal statt einmal angreifen, wenn Sie in Ihrem Zug die Angriffsaktion durchführen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 13: Studierte Angriffe"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie studieren Ihre Gegner und lernen aus jedem Angriff, den Sie ausführen. Wenn du einen Angriffswurf gegen eine Kreatur durchführst und verfehlst, hast du bei deinem nächsten Angriffswurf gegen diese Kreatur vor dem Ende deines nächsten Zuges einen Vorteil."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 19: Epischer Segen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Segen der Kampfkraft wird empfohlen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 20: Drei zusätzliche Angriffe"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können viermal statt einmal angreifen, wenn Sie in Ihrem Zug die Angriffsaktion durchführen."
+    }
+  ],
+  "text": "Kämpfer beherrschen viele Schlachtfelder. Auf der Suche nach Rittern, königlichen Champions, Elitesoldaten und hartgesottenen Söldnern – als Kämpfer verfügen sie alle über ein beispielloses Können im Umgang mit Waffen und Rüstungen. Und sie sind mit dem Tod bestens vertraut, sowohl wenn er ihn austeilt als auch ihm trotzt.\n\nKämpfer beherrschen verschiedene Waffentechniken und ein gut ausgerüsteter Kämpfer hat für jede Kampfsituation immer das richtige Werkzeug zur Hand. Ebenso ist ein Kämpfer mit jeder Art von Rüstung vertraut. Über diesen grundlegenden Grad an Vertrautheit hinaus ist jeder Kämpfer auf bestimmte Kampfstile spezialisiert. Manche konzentrieren sich auf das Bogenschießen, manche auf den Kampf mit zwei Waffen gleichzeitig und wieder andere darauf, ihre Kampffähigkeiten durch Magie zu verbessern. Diese Kombination aus umfassenden Fähigkeiten und umfassender Spezialisierung macht Kämpfer zu überlegenen Kämpfern.\n\nKerneigenschaften des Kämpfers Primäre Fähigkeit Stärke oder Geschicklichkeit Trefferpunkt Würfel D10 pro Kämpferstufe Rettungswurf-Fähigkeiten Stärke und Konstitution Fertigkeiten-Fähigkeiten Wählen Sie 2: Akrobatik, Tierhandhabung, Leichtathletik, Geschichte, Einsicht, Einschüchterung, Überzeugung, Wahrnehmung oder Überleben Waffenkenntnisse Einfache Waffen und Kampfwaffen Rüstungstraining Leichte, mittlere und schwere Rüstungen und Schilde Startausrüstung Wählen Sie A, B oder C: (A) Kettenhemd, Großschwert, Dreschflegel, 8 Speere, Paket des Kerkermeisters und 4 gp (B) Beschlagene Lederrüstung, Krummsäbel, Kurzschwert, Langbogen, 20 Pfeile, Köcher, Paket des Kerkermeisters und 11 GP; oder (C) 155 GP\n\nEin Kämpfer werden…\n\nAls Kämpfer der Stufe 1\n\nErhalte alle Eigenschaften in der Tabelle „Kernkämpfereigenschaften“. Erhalte die Fähigkeiten des Kämpfers der Stufe 1, die in der Tabelle „Kämpfertalente“ aufgeführt sind.\n\nAls Mehrklassenkämpfer\n\nErhalten Sie die folgenden Eigenschaften aus der Tabelle „Kernkämpfereigenschaften“: Trefferpunktwürfel, Kenntnisse im Umgang mit Kampfwaffen und Training mit leichter und mittlerer Rüstung und Schilden. Erhalte die Fähigkeiten des Kämpfers der Stufe 1, die in der Tabelle „Kämpfertalente“ aufgeführt sind.\n\nTalente der Kämpferklasse\n\nKämpfertalente\n\nLevel Uebungsbonus Klassentalente Zweiter Wind Waffenbeherrschung 1 +2 Kampfstil, Zweiter Wind, Waffenbeherrschung 2 3 2 +2 Aktionsschub (Einmal verwenden), Taktischer Verstand 2 3 3 +2 Kämpfer-Unterklasse 2 3 4 +2 Fähigkeitswert-Verbesserung 3 4 5 +3 Zusätzlicher Angriff, Taktischer Wandel 3 4 6 +3 Fähigkeitswert-Verbesserung 3 4 7 +3 Unterklasse-Talent 3 4 8 +3 Verbesserung des Fähigkeitswerts 3 4 9 +4 Unbezwingbar (eine Verwendung), Taktischer Meister 3 4 10 +4 Talent der Unterklasse 4 5 11 +4 Zwei zusätzliche Angriffe 4 5 12 +4 Verbesserung des Fähigkeitswerts 4 5 13 +5 Verbesserung des Fähigkeitswerts 4 5 13 +5 Verbesserung des Fähigkeitswerts 4 5 14 +5 Verbesserung des Fähigkeitswerts 4 5 15 +5 Talent der Unterklasse 4 5 16 +5 Verbesserung des Fähigkeitswerts 4 6 17 +6 Aktionsschub (zwei Verwendungszwecke), Unbezwingbar (drei Verwendungszwecke) 4 6 18 +6 Unterklassentalent 4 6 19 +6 Epischer Segen 4 6 20 +6 Drei zusätzliche Angriffe 4 6\n\nAls Kämpfer erhältst du die folgenden Klassenmerkmale, wenn du die angegebenen Kämpferstufen erreichst. Diese Funktionen sind in der Tabelle „Fighter Talentures“ aufgeführt.\n\nLevel 1: Kampfstil\n\nDu erhältst ein Kampfstil-Talent deiner Wahl (siehe Kapitel 5). Verteidigung wird empfohlen.\n\nImmer wenn Sie eine Kämpferstufe erreichen, können Sie das von Ihnen gewählte Talent durch ein anderes Kampfstil-Talent ersetzen.\n\nLevel 1: Zweiter Wind\n\nSie verfügen nur über eine begrenzte körperliche und geistige Ausdauer, auf die Sie zurückgreifen können. Als Bonusaktion können Sie damit Trefferpunkte in Höhe von 1W10 plus Ihrer Kämpferstufe zurückgewinnen.\n\nSie können diese Funktion zweimal nutzen. Du erhältst eine verbrauchte Nutzung zurück, wenn du eine Kurze Rast beendest, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast beendest.\n\nWenn Sie bestimmte Kämpferstufen erreichen, können Sie diese Funktion häufiger nutzen, wie in der Spalte „Zweiter Wind“ der Tabelle „Kämpfertalente“ gezeigt.\n\nLevel 1: Waffenbeherrschung\n\nIhr Waffentraining ermöglicht es Ihnen, die Meisterschaftseigenschaften von drei Arten einfacher oder kriegerischer Waffen Ihrer Wahl zu nutzen. Immer wenn Sie eine Lange Rast abgeschlossen haben, können Sie Waffenübungen üben und eine dieser Waffenoptionen ändern.\n\nWenn Sie bestimmte Kämpferstufen erreichen, erhalten Sie die Fähigkeit, die Meisterschaftseigenschaften weiterer Waffenarten zu nutzen, wie in der Spalte „Waffenmeisterschaft“ der Tabelle „Kämpfertalente“ gezeigt.\n\nLevel 2: Aktion Surge\n\nSie können für einen Moment über Ihre normalen Grenzen hinausgehen. In deinem Zug kannst du außer der Magie-Aktion eine zusätzliche Aktion ausführen.\n\nSobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine kurze oder lange Rast beendet haben. Ab Level 17 können Sie es zweimal vor einer Pause, aber nur einmal pro Runde verwenden.\n\nLevel 2: Taktischer Verstand\n\nDu hast ein Gespür für Taktiken auf und neben dem Schlachtfeld. Wenn Sie bei einer Fähigkeitsüberprüfung scheitern, können Sie Ihren zweiten Wind einsetzen, um sich selbst zum Erfolg zu führen. Anstatt Trefferpunkte zurückzugewinnen, würfeln Sie 1W10 und addieren die gewürfelte Zahl zum Fähigkeitstest, was möglicherweise zu einem Erfolg führt. Wenn die Prüfung immer noch fehlschlägt, wird dieser Einsatz von „Second Wind“ nicht verbraucht.\n\nLevel 3: Kämpfer-Unterklasse\n\nDu erhältst eine Kämpfer-Unterklasse deiner Wahl. Die Unterklassen „Battle Master“, „Champion“, „Eldritch Knight“ und „Psi Warrior“ werden nach der Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Kämpferstufen Funktionen gewährt. Für den Rest Ihrer Karriere erhalten Sie alle Eigenschaften Ihrer Unterklasse, die Ihrer Kämpferstufe oder niedriger entsprechen.\n\nKämpfer-Unterklassen\n\nNennen Sie Banneret Battle Master Champion Eldritch Knight Psi Warrior\n\nStufe 4: Verbesserung der Fähigkeitsbewertung\n\nDu erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Kämpferstufen 6, 8, 12, 14 und 16.\n\nLevel 5: Zusätzlicher Angriff\n\nDu kannst jedes Mal, wenn du in deinem Zug die Angriffsaktion ausführst, zweimal statt einmal angreifen.\n\nLevel 5: Taktischer Wandel\n\nImmer wenn du deinen Second Wind mit einer Bonusaktion aktivierst, kannst du dich bis zur Hälfte deiner Geschwindigkeit bewegen, ohne Gelegenheitsangriffe zu provozieren.\n\nLevel 9: Unbezwingbar\n\nWenn dir ein Rettungswurf misslingt, kannst du ihn mit einem Bonus in Höhe deiner Kämpferstufe wiederholen. Sie müssen den neuen Wurf verwenden und können diese Funktion erst wieder verwenden, wenn Sie eine Lange Rast beendet haben.\n\nSie können diese Funktion zweimal vor einem Lange Rast ab Level 13 und dreimal vor einem Lange Rast ab Level 17 nutzen.\n\nLevel 9: Taktischer Meister\n\nWenn Sie mit einer Waffe angreifen, deren Meisterschaftseigenschaft Sie verwenden können, können Sie diese Eigenschaft für diesen Angriff durch die Eigenschaft „Schieben“, „Sap“ oder „Verlangsamen“ ersetzen.\n\nLevel 11: Zwei zusätzliche Angriffe\n\nSie können dreimal statt einmal angreifen, wenn Sie in Ihrem Zug die Angriffsaktion durchführen.\n\nLevel 13: Studierte Angriffe\n\nSie studieren Ihre Gegner und lernen aus jedem Angriff, den Sie ausführen. Wenn du einen Angriffswurf gegen eine Kreatur durchführst und verfehlst, hast du bei deinem nächsten Angriffswurf gegen diese Kreatur vor dem Ende deines nächsten Zuges einen Vorteil.\n\nLevel 19: Epischer Segen\n\nDu erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Segen der Kampfkraft wird empfohlen.\n\nLevel 20: Drei zusätzliche Angriffe\n\nSie können viermal statt einmal angreifen, wenn Sie in Ihrem Zug die Angriffsaktion durchführen.",
+  "tags": [],
+  "hit_die": 10,
+  "primary_abilities": [
+    "str",
+    "dex"
+  ],
+  "proficiencies": {
+    "saving_throws": [
+      "str",
+      "con"
+    ],
+    "armor": [
+      "Leichte",
+      "mittlere",
+      "schwere Rüstungen",
+      "Schilde"
+    ],
+    "weapons": [
+      "Einfache",
+      "Kampfwaffen"
+    ],
+    "tools": []
+  },
+  "skill_choices": {
+    "choose": 2,
+    "options": [
+      "Akrobatik",
+      "Tierhandhabung",
+      "Athletik",
+      "Geschichte",
+      "Einsicht",
+      "Einschuechterung",
+      "Ueberzeugung",
+      "Wahrnehmung",
+      "Ueberleben"
+    ]
+  },
+  "spellcasting": {
+    "ability": null,
+    "progression": null,
+    "preparation_formula": null,
+    "known_formula": null,
+    "focus_types": [],
+    "spell_list_names": [],
+    "uses_spell_slots": false
+  },
+  "starting_equipment": {
+    "fixed": [],
+    "choices": []
+  },
+  "multiclass_requirements": {
+    "minimum_abilities": {}
+  },
+  "levels": [
+    {
+      "level": 1,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Kampfstil",
+        "Zweiter Wind",
+        "Waffenbeherrschung"
+      ],
+      "zweiter wind": "2",
+      "waffenbeherrschung": "3"
+    },
+    {
+      "level": 2,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Aktion Surge (Einmalgebrauch)",
+        "Taktischer Geist"
+      ],
+      "zweiter wind": "2",
+      "waffenbeherrschung": "3"
+    },
+    {
+      "level": 3,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Kämpfer-Unterklasse"
+      ],
+      "zweiter wind": "2",
+      "waffenbeherrschung": "3"
+    },
+    {
+      "level": 4,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "zweiter wind": "3",
+      "waffenbeherrschung": "4"
+    },
+    {
+      "level": 5,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Zusätzlicher Angriff",
+        "taktischer Wechsel"
+      ],
+      "zweiter wind": "3",
+      "waffenbeherrschung": "4"
+    },
+    {
+      "level": 6,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "zweiter wind": "3",
+      "waffenbeherrschung": "4"
+    },
+    {
+      "level": 7,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "zweiter wind": "3",
+      "waffenbeherrschung": "4"
+    },
+    {
+      "level": 8,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "zweiter wind": "3",
+      "waffenbeherrschung": "4"
+    },
+    {
+      "level": 9,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Unbezähmbar (Einmalgebrauch)",
+        "Taktischer Meister"
+      ],
+      "zweiter wind": "3",
+      "waffenbeherrschung": "4"
+    },
+    {
+      "level": 10,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "zweiter wind": "4",
+      "waffenbeherrschung": "5"
+    },
+    {
+      "level": 11,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Zwei zusätzliche Angriffe"
+      ],
+      "zweiter wind": "4",
+      "waffenbeherrschung": "5"
+    },
+    {
+      "level": 12,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "zweiter wind": "4",
+      "waffenbeherrschung": "5"
+    },
+    {
+      "level": 13,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Unbezwingbar (zwei Verwendungszwecke)",
+        "studierte Angriffe"
+      ],
+      "zweiter wind": "4",
+      "waffenbeherrschung": "5"
+    },
+    {
+      "level": 14,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "zweiter wind": "4",
+      "waffenbeherrschung": "5"
+    },
+    {
+      "level": 15,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "zweiter wind": "4",
+      "waffenbeherrschung": "5"
+    },
+    {
+      "level": 16,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "zweiter wind": "4",
+      "waffenbeherrschung": "6"
+    },
+    {
+      "level": 17,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Aktion Surge (zwei Verwendungszwecke)",
+        "Indomitable (drei Verwendungszwecke)"
+      ],
+      "zweiter wind": "4",
+      "waffenbeherrschung": "6"
+    },
+    {
+      "level": 18,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "zweiter wind": "4",
+      "waffenbeherrschung": "6"
+    },
+    {
+      "level": 19,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Epischer Segen"
+      ],
+      "zweiter wind": "4",
+      "waffenbeherrschung": "6"
+    },
+    {
+      "level": 20,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Drei zusätzliche Angriffe"
+      ],
+      "zweiter wind": "4",
+      "waffenbeherrschung": "6"
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Banneret",
+      "original_name": "Banneret",
+      "id": "banneret",
+      "source_url": "http://dnd2024.wikidot.com/fighter:banneret",
+      "file": "subclasses/banneret.json"
+    },
+    {
+      "name": "Kampfmeister",
+      "original_name": "Battle Master",
+      "id": "kampfmeister",
+      "source_url": "http://dnd2024.wikidot.com/fighter:battle-master",
+      "file": "subclasses/kampfmeister.json"
+    },
+    {
+      "name": "Champion",
+      "original_name": "Champion",
+      "id": "champion",
+      "source_url": "http://dnd2024.wikidot.com/fighter:champion",
+      "file": "subclasses/champion.json"
+    },
+    {
+      "name": "Unheimlicher Ritter",
+      "original_name": "Eldritch Knight",
+      "id": "unheimlicher-ritter",
+      "source_url": "http://dnd2024.wikidot.com/fighter:eldritch-knight",
+      "file": "subclasses/unheimlicher-ritter.json"
+    },
+    {
+      "name": "Psi-Krieger",
+      "original_name": "Psi Warrior",
+      "id": "psi-krieger",
+      "source_url": "http://dnd2024.wikidot.com/fighter:psi-warrior",
+      "file": "subclasses/psi-krieger.json"
+    }
+  ],
+  "subclass_index": [
+    "banneret.json",
+    "champion.json",
+    "kampfmeister.json",
+    "psi-krieger.json",
+    "unheimlicher-ritter.json"
+  ]
+}

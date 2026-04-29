@@ -1,0 +1,60 @@
+{
+  "id": "ritualmagier",
+  "type": "feat",
+  "name": "Ritualmagier",
+  "original_name": "Ritual Caster",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:ritual-caster",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Intelligenz, Weisheit oder Charisma 13+"
+  ],
+  "summary": "Voraussetzung: Level 4+, Intelligenz, Weisheit oder Charisma 13+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, Intelligenz, Weisheit oder Charisma 13+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ritualzauber. Wählen Sie eine Anzahl von Zaubersprüchen der Stufe 1 in Höhe Ihres Uebungsbonus, die über das Ritual-Tag verfügen. Sie haben diese Zauber immer bereit und können sie mit allen Zauberslots wirken, die Sie haben. Die Zauberfähigkeit des Zaubers ist die Fähigkeit, die durch dieses Talent erhöht wird. Immer wenn sich Ihr Uebungsbonus danach erhöht, können Sie einen zusätzlichen Zauber der Stufe 1 mit dem Ritual-Tag zu den Zaubern hinzufügen, die immer mit dieser Funktion vorbereitet werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schnelles Ritual. Mit diesem Vorteil können Sie einen von Ihnen vorbereiteten Ritualzauber mit der regulären Zauberzeit statt der verlängerten Zeit eines Rituals wirken. Dafür ist kein Zauberslot erforderlich. Sobald Sie den Zauber auf diese Weise gewirkt haben, können Sie diesen Vorteil erst wieder nutzen, wenn Sie eine Lange Rast abgeschlossen haben."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, Intelligenz, Weisheit oder Charisma 13+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20.\n\nRitualzauber. Wählen Sie eine Anzahl von Zaubersprüchen der Stufe 1 in Höhe Ihres Uebungsbonus, die über das Ritual-Tag verfügen. Sie haben diese Zauber immer bereit und können sie mit allen Zauberslots wirken, die Sie haben. Die Zauberfähigkeit des Zaubers ist die Fähigkeit, die durch dieses Talent erhöht wird. Immer wenn sich Ihr Uebungsbonus danach erhöht, können Sie einen zusätzlichen Zauber der Stufe 1 mit dem Ritual-Tag zu den Zaubern hinzufügen, die immer mit dieser Funktion vorbereitet werden.\n\nSchnelles Ritual. Mit diesem Vorteil können Sie einen von Ihnen vorbereiteten Ritualzauber mit der regulären Zauberzeit statt der verlängerten Zeit eines Rituals wirken. Dafür ist kein Zauberslot erforderlich. Sobald Sie den Zauber auf diese Weise gewirkt haben, können Sie diesen Vorteil erst wieder nutzen, wenn Sie eine Lange Rast abgeschlossen haben.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

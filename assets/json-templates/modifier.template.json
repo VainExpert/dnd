@@ -1,0 +1,24 @@
+{
+  "id": "<modifier-id>",
+  "type": "modifier",
+  "modifier_type": "bonus",
+  "target": "ac",
+  "value": 0,
+  "formula": null,
+  "stacking": "stack",
+  "condition": {
+    "while_equipped": false,
+    "while_attuned": false,
+    "wearing_armor": false,
+    "wielding_shield": false,
+    "has_condition_ids": [],
+    "class_ids": [],
+    "species_ids": [],
+    "minimum_level": null
+  },
+  "source_ref": {
+    "kind": "feature",
+    "id": "<source-id>"
+  },
+  "notes": ""
+}

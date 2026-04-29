@@ -1,0 +1,167 @@
+{
+  "id": "kreis-der-sterne",
+  "type": "subclass",
+  "name": "Kreis der Sterne",
+  "original_name": "Circle of the Stars",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/druid:circle-of-the-stars",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Machen Sie sich Geheimnisse zunutze, die in Sternbildern verborgen sind",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Machen Sie sich Geheimnisse zunutze, die in Sternbildern verborgen sind"
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Kreis der Sterne verfolgt seit jeher himmlische Muster und entdeckt Geheimnisse, die in den Sternbildern verborgen sind. Durch das Verständnis dieser Geheimnisse versuchen die Druiden dieses Kreises, die Kräfte des Kosmos zu nutzen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Sternenkarte"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben im Rahmen Ihrer Himmelsstudien eine Sternenkarte erstellt. Es ist ein winziges Objekt und Sie können es als Zauberfokus für Ihre Druidenzauber verwenden. Sie bestimmen die Form, indem Sie auf der Sternenkartentabelle würfeln oder eine auswählen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Während Sie die Karte halten, haben Sie die Zauber „Führung“ und „Leitbolzen“ vorbereitet und können „Leitbolzen“ wirken, ohne einen Zauberslot zu verbrauchen. Du kannst es auf diese Weise so oft wirken, wie es deinem Weisheitsmodifikator entspricht (mindestens einmal), und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendet hast."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie die Karte verlieren, können Sie eine einstündige Zeremonie durchführen, um auf magische Weise einen Ersatz zu erstellen. Diese Zeremonie kann während einer kurzen oder langen Rast durchgeführt werden und zerstört die vorherige Karte."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Sternenkarte"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "1W6",
+          "Kartenformular"
+        ],
+        [
+          "1",
+          "Eine Schriftrolle mit Darstellungen von Sternbildern"
+        ],
+        [
+          "2",
+          "Eine Steintafel mit feinen Löchern darin"
+        ],
+        [
+          "3",
+          "Eine Eulenbärenhaut, verziert mit Sternsymbolen"
+        ],
+        [
+          "4",
+          "Eine Sammlung von Karten, gebunden in einem Einband aus Ebenholz"
+        ],
+        [
+          "5",
+          "Ein Kristall mit eingravierten Sternenmustern"
+        ],
+        [
+          "6",
+          "Eine Glasscheibe mit geätzten Sternbildern"
+        ]
+      ],
+      "text": "1W6 Kartenform 1 Eine Schriftrolle mit Darstellungen von Sternbildern 2 Eine Steintafel mit feinen Löchern 3 Eine mit Sternsymbolen verzierte Eulenbärenhaut 4 Eine in einen Ebenholzeinband gebundene Kartensammlung 5 Ein Kristall mit eingravierten Sternenmustern 6 Eine Glasscheibe mit geätzten Sternbildern"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Sternenform"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion können Sie Ihre Wild Shape-Funktion nutzen, um eine Sternenform anzunehmen, anstatt ihre Form zu verändern."
+    },
+    {
+      "type": "paragraph",
+      "text": "Während Sie in Ihrer Sternengestalt sind, behalten Sie Ihre Spielstatistiken, aber Ihr Körper wird leuchtend, Ihre Gelenke schimmern wie Sterne und leuchtende Linien verbinden sie wie auf einer Sternenkarte. Diese Form spendet helles Licht in einem Radius von 10 Fuß und schwaches Licht für weitere 10 Fuß. Das Formular dauert 10 Minuten. Es endet vorzeitig, wenn Sie es ablehnen (keine Aktion erforderlich), die Bedingung „Kampfunfähigkeit“ vorliegt oder diese Funktion erneut verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wann immer Sie Ihre Sternengestalt annehmen, wählen Sie, welches der folgenden Sternbilder auf Ihrem Körper schimmert; Ihre Wahl bietet Ihnen während des Formulars bestimmte Vorteile."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bogenschütze. Auf Ihnen erscheint das Sternbild eines Bogenschützen. Wenn du diese Form aktivierst und als Bonusaktion in deinen folgenden Zügen, solange sie andauert, kannst du einen Fernkampfzauberangriff ausführen, bei dem du einen leuchtenden Pfeil schleuderst, der eine Kreatur in einem Umkreis von 60 Fuß um dich herum anvisiert. Bei einem Treffer verursacht der Angriff Strahlungsschaden in Höhe von 1W8 plus Ihrem Weisheitsmodifikator."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kelch. Auf Ihnen erscheint die Konstellation eines lebensspendenden Kelchs. Immer wenn du einen Zauber über einen Zauberslot wirkst, der einer Kreatur Trefferpunkte wiederherstellt, kannst du oder eine andere Kreatur im Umkreis von 30 Fuß um dich Trefferpunkte in Höhe von 1W8 plus deinem Weisheitsmodifikator zurückgewinnen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Drachen. Auf dir erscheint das Sternbild eines weisen Drachen. Wenn Sie einen Intelligenz- oder Weisheitswurf oder einen Konstitutions-Rettungswurf durchführen, um die Konzentration aufrechtzuerhalten, können Sie einen Wurf von 9 oder weniger auf dem W20 als 10 behandeln."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 6: Kosmisches Omen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie eine Lange Rast beendet haben, können Sie auf Ihrer Sternenkarte nach Vorzeichen suchen und einen Würfel werfen. Bis du deinen nächsten Lange Rast beendet hast, erhältst du Zugang zu einer besonderen Reaktion, je nachdem, ob du eine gerade oder eine ungerade Augenzahl gewürfelt hast:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wohl (gerade). Immer wenn eine Kreatur, die Sie im Umkreis von 30 Fuß sehen können, einen W20-Test machen will, können Sie eine Reaktion durchführen, um 1W6 zu würfeln und die gewürfelte Zahl zur Gesamtsumme zu addieren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wehe (seltsam). Immer wenn eine Kreatur, die Sie in einem Umkreis von 30 Fuß um sich herum sehen können, im Begriff ist, einen W20-Test durchzuführen, können Sie eine Reaktion durchführen, um 1W6 zu würfeln und die gewürfelte Zahl von der Gesamtsumme abzuziehen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diese Reaktion so oft verwenden, wie es Ihrem Weisheitsmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast beendet haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Funkelnde Konstellationen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Konstellationen Ihrer Sternengestalt verbessern sich. Der 1W8 des Bogenschützen und des Kelchs wird zu 2W8, und während der Drache aktiv ist, haben Sie eine Fluggeschwindigkeit von 20 Fuß und können schweben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie zu Beginn jeder Ihrer Runden in Ihrer Sternengestalt ändern, welches Sternbild auf Ihrem Körper schimmert."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Voller Sterne"
+    },
+    {
+      "type": "paragraph",
+      "text": "Während du in deiner Sternengestalt bist, wirst du teilweise körperlos und erhältst Resistenz gegen Schlag-, Stich- und Hiebschaden."
+    }
+  ],
+  "text": "Machen Sie sich Geheimnisse zunutze, die in Sternbildern verborgen sind\n\nDer Kreis der Sterne verfolgt seit jeher himmlische Muster und entdeckt Geheimnisse, die in den Sternbildern verborgen sind. Durch das Verständnis dieser Geheimnisse versuchen die Druiden dieses Kreises, die Kräfte des Kosmos zu nutzen.\n\nLevel 3: Sternenkarte\n\nSie haben im Rahmen Ihrer Himmelsstudien eine Sternenkarte erstellt. Es ist ein winziges Objekt und Sie können es als Zauberfokus für Ihre Druidenzauber verwenden. Sie bestimmen die Form, indem Sie auf der Sternenkartentabelle würfeln oder eine auswählen.\n\nWährend Sie die Karte halten, haben Sie die Zauber „Führung“ und „Leitbolzen“ vorbereitet und können „Leitbolzen“ wirken, ohne einen Zauberslot zu verbrauchen. Du kannst es auf diese Weise so oft wirken, wie es deinem Weisheitsmodifikator entspricht (mindestens einmal), und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendet hast.\n\nWenn Sie die Karte verlieren, können Sie eine einstündige Zeremonie durchführen, um auf magische Weise einen Ersatz zu erstellen. Diese Zeremonie kann während einer kurzen oder langen Rast durchgeführt werden und zerstört die vorherige Karte.\n\nSternenkarte\n\n1W6 Kartenform 1 Eine Schriftrolle mit Darstellungen von Sternbildern 2 Eine Steintafel mit feinen Löchern 3 Eine mit Sternsymbolen verzierte Eulenbärenhaut 4 Eine in einen Ebenholzeinband gebundene Kartensammlung 5 Ein Kristall mit eingravierten Sternenmustern 6 Eine Glasscheibe mit geätzten Sternbildern\n\nLevel 3: Sternenform\n\nAls Bonusaktion können Sie Ihre Wild Shape-Funktion nutzen, um eine Sternenform anzunehmen, anstatt ihre Form zu verändern.\n\nWährend Sie in Ihrer Sternengestalt sind, behalten Sie Ihre Spielstatistiken, aber Ihr Körper wird leuchtend, Ihre Gelenke schimmern wie Sterne und leuchtende Linien verbinden sie wie auf einer Sternenkarte. Diese Form spendet helles Licht in einem Radius von 10 Fuß und schwaches Licht für weitere 10 Fuß. Das Formular dauert 10 Minuten. Es endet vorzeitig, wenn Sie es ablehnen (keine Aktion erforderlich), die Bedingung „Kampfunfähigkeit“ vorliegt oder diese Funktion erneut verwenden.\n\nWann immer Sie Ihre Sternengestalt annehmen, wählen Sie, welches der folgenden Sternbilder auf Ihrem Körper schimmert; Ihre Wahl bietet Ihnen während des Formulars bestimmte Vorteile.\n\nBogenschütze. Auf Ihnen erscheint das Sternbild eines Bogenschützen. Wenn du diese Form aktivierst und als Bonusaktion in deinen folgenden Zügen, solange sie andauert, kannst du einen Fernkampfzauberangriff ausführen, bei dem du einen leuchtenden Pfeil schleuderst, der eine Kreatur in einem Umkreis von 60 Fuß um dich herum anvisiert. Bei einem Treffer verursacht der Angriff Strahlungsschaden in Höhe von 1W8 plus Ihrem Weisheitsmodifikator.\n\nKelch. Auf Ihnen erscheint die Konstellation eines lebensspendenden Kelchs. Immer wenn du einen Zauber über einen Zauberslot wirkst, der einer Kreatur Trefferpunkte wiederherstellt, kannst du oder eine andere Kreatur im Umkreis von 30 Fuß um dich Trefferpunkte in Höhe von 1W8 plus deinem Weisheitsmodifikator zurückgewinnen.\n\nDrachen. Auf dir erscheint das Sternbild eines weisen Drachen. Wenn Sie einen Intelligenz- oder Weisheitswurf oder einen Konstitutions-Rettungswurf durchführen, um die Konzentration aufrechtzuerhalten, können Sie einen Wurf von 9 oder weniger auf dem W20 als 10 behandeln.\n\nStufe 6: Kosmisches Omen\n\nImmer wenn Sie eine Lange Rast beendet haben, können Sie auf Ihrer Sternenkarte nach Vorzeichen suchen und einen Würfel werfen. Bis du deinen nächsten Lange Rast beendet hast, erhältst du Zugang zu einer besonderen Reaktion, je nachdem, ob du eine gerade oder eine ungerade Augenzahl gewürfelt hast:\n\nWohl (gerade). Immer wenn eine Kreatur, die Sie im Umkreis von 30 Fuß sehen können, einen W20-Test machen will, können Sie eine Reaktion durchführen, um 1W6 zu würfeln und die gewürfelte Zahl zur Gesamtsumme zu addieren.\n\nWehe (seltsam). Immer wenn eine Kreatur, die Sie in einem Umkreis von 30 Fuß um sich herum sehen können, im Begriff ist, einen W20-Test durchzuführen, können Sie eine Reaktion durchführen, um 1W6 zu würfeln und die gewürfelte Zahl von der Gesamtsumme abzuziehen.\n\nSie können diese Reaktion so oft verwenden, wie es Ihrem Weisheitsmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast beendet haben.\n\nLevel 10: Funkelnde Konstellationen\n\nDie Konstellationen Ihrer Sternengestalt verbessern sich. Der 1W8 des Bogenschützen und des Kelchs wird zu 2W8, und während der Drache aktiv ist, haben Sie eine Fluggeschwindigkeit von 20 Fuß und können schweben.\n\nDarüber hinaus können Sie zu Beginn jeder Ihrer Runden in Ihrer Sternengestalt ändern, welches Sternbild auf Ihrem Körper schimmert.\n\nLevel 14: Voller Sterne\n\nWährend du in deiner Sternengestalt bist, wirst du teilweise körperlos und erhältst Resistenz gegen Schlag-, Stich- und Hiebschaden.",
+  "tags": [],
+  "class": "Druide",
+  "class_id": "druide",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

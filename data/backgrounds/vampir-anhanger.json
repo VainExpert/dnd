@@ -1,0 +1,88 @@
+{
+  "id": "vampir-anhanger",
+  "type": "background",
+  "name": "Vampir-Anhänger",
+  "original_name": "Vampire Devotee",
+  "rules_version": "2024",
+  "source": "Astarion's Book of Hungers",
+  "source_url": "http://dnd2024.wikidot.com/background:vampire-devotee",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Exotisch",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Stärke, Konstitution, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Stärke, Konstitution, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Spielzeug des Vampirs"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Überzeugung und Heimlichkeit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse: Kochutensilien"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Kochutensilien, feine Kleidung, 2 Glasflaschen, Heilerset, Parfüm, Lampe, Öl (3 Fläschchen), Wasserschlauch, 19 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du warst im Dienst eines Vampirs oder einer kleinen Gruppe von Vampiren, die sich zusammenlagerten. Die Untoten haben dein Blut öfter getrunken, als du zählen kannst. Vielleicht haben Sie freiwillig gedient, vielleicht mit dem Wunsch, eines Tages selbst ein Vampir zu werden. Oder Sie wurden magisch verzaubert und behalten nur ein paar wirre Erinnerungen an Ihre Zeit als Vampirvertrauter. In jedem Fall ist Ihre Zeit in der Vampirhöhle vorbei."
+    }
+  ],
+  "text": "Fähigkeitswerte: Stärke, Konstitution, Charisma\n\nTalent: Spielzeug des Vampirs\n\nFertigkeiten: Überzeugung und Heimlichkeit\n\nWerkzeugkenntnisse: Kochutensilien\n\nAusrüstung: Wähle A oder B: (A) Kochutensilien, feine Kleidung, 2 Glasflaschen, Heilerset, Parfüm, Lampe, Öl (3 Fläschchen), Wasserschlauch, 19 GP; oder (B) 50 GP\n\nDu warst im Dienst eines Vampirs oder einer kleinen Gruppe von Vampiren, die sich zusammenlagerten. Die Untoten haben dein Blut öfter getrunken, als du zählen kannst. Vielleicht haben Sie freiwillig gedient, vielleicht mit dem Wunsch, eines Tages selbst ein Vampir zu werden. Oder Sie wurden magisch verzaubert und behalten nur ein paar wirre Erinnerungen an Ihre Zeit als Vampirvertrauter. In jedem Fall ist Ihre Zeit in der Vampirhöhle vorbei.",
+  "tags": [],
+  "ability_scores": [
+    "str",
+    "con",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "str",
+      "con",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Ueberzeugung",
+    "Heimlichkeit\n\nWerkzeugkenntnisse: Kochutensilien"
+  ],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "spielzeug-des-vampirs",
+  "granted_feat_name": "Spielzeug des Vampirs\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Kochutensilien, feine Kleidung, 2 Glasflaschen, Heilerset, Parfüm, Lampe, Öl (3 Fläschchen), Wasserschlauch, 19 GP; oder (B) 50 GP\n\nDu warst im Dienst eines Vampirs oder einer kleinen Gruppe von Vampiren, die sich zusammenlagerten. Die Untoten haben dein Blut öfter getrunken, als du zählen kannst. Vielleicht haben Sie freiwillig gedient, vielleicht mit dem Wunsch, eines Tages selbst ein Vampir zu werden. Oder Sie wurden magisch verzaubert und behalten nur ein paar wirre Erinnerungen an Ihre Zeit als Vampirvertrauter. In jedem Fall ist Ihre Zeit in der Vampirhöhle vorbei"
+    }
+  ]
+}

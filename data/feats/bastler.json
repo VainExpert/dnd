@@ -1,0 +1,97 @@
+{
+  "id": "bastler",
+  "type": "feat",
+  "name": "Bastler",
+  "original_name": "Crafter",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:crafter",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Sie profitieren von folgenden Vorteilen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkompetenz. Sie erwerben Kenntnisse im Umgang mit drei verschiedenen Handwerkswerkzeugen Ihrer Wahl aus der Tabelle „Schnelles Handwerk“."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rabatt . Immer wenn Sie einen nichtmagischen Gegenstand kaufen, erhalten Sie 20 Prozent Rabatt darauf."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schnelles Basteln. Wenn Sie eine Lange Rast abgeschlossen haben, können Sie ein Ausrüstungsteil aus der Schnellherstellungstabelle herstellen, vorausgesetzt, Sie verfügen über die mit diesem Gegenstand verknüpften Handwerkerwerkzeuge und sind mit diesen Werkzeugen vertraut. Der Gegenstand bleibt bestehen, bis Sie eine weitere Lange Rast beendet haben, woraufhin der Gegenstand auseinanderfällt."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Schnelles Basteln"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Handwerkerwerkzeuge",
+          "Hergestellte Ausrüstung"
+        ],
+        [
+          "Zimmermannswerkzeuge",
+          "Leiter, Fackel"
+        ],
+        [
+          "Werkzeuge des Lederarbeiters",
+          "Etui, Beutel"
+        ],
+        [
+          "Maurerwerkzeuge",
+          "Block und Tackle"
+        ],
+        [
+          "Töpferwerkzeuge",
+          "Krug, Lampe"
+        ],
+        [
+          "Smiths Werkzeuge",
+          "Kugellager, Eimer, Krähenfüße, Enterhaken, Eisentopf"
+        ],
+        [
+          "Bastelwerkzeuge",
+          "Glocke, Schaufel, Zunderbüchse"
+        ],
+        [
+          "Weberwerkzeuge",
+          "Korb, Seil, Netz, Zelt"
+        ],
+        [
+          "Werkzeuge des Holzschnitzers",
+          "Club, Greatclub, Quarterstaff"
+        ]
+      ],
+      "text": "Kunsthandwerkliche Werkzeuge, hergestellte Ausrüstung, Zimmermannswerkzeuge, Leiter, Fackel, Lederarbeiter-Werkzeugkoffer, Beutel, Maurerwerkzeuge, Block und Tackle, Töpferwerkzeuge, Krug, Lampe, Schmiedewerkzeuge, Kugellager, Eimer, Krähenfüße, Enterhaken, Eisentopf, Bastlerwerkzeuge, Glocke, Schaufel, Zunderbüchse, Weberwerkzeuge, Korb, Seil, Netz, Zelt, Holzschnitzerwerkzeuge-Club, Großkeule, Quartierstab"
+    }
+  ],
+  "text": "Sie profitieren von folgenden Vorteilen.\n\nWerkzeugkompetenz. Sie erwerben Kenntnisse im Umgang mit drei verschiedenen Handwerkswerkzeugen Ihrer Wahl aus der Tabelle „Schnelles Handwerk“.\n\nRabatt . Immer wenn Sie einen nichtmagischen Gegenstand kaufen, erhalten Sie 20 Prozent Rabatt darauf.\n\nSchnelles Basteln. Wenn Sie eine Lange Rast abgeschlossen haben, können Sie ein Ausrüstungsteil aus der Schnellherstellungstabelle herstellen, vorausgesetzt, Sie verfügen über die mit diesem Gegenstand verknüpften Handwerkerwerkzeuge und sind mit diesen Werkzeugen vertraut. Der Gegenstand bleibt bestehen, bis Sie eine weitere Lange Rast beendet haben, woraufhin der Gegenstand auseinanderfällt.\n\nSchnelles Basteln\n\nKunsthandwerkliche Werkzeuge, hergestellte Ausrüstung, Zimmermannswerkzeuge, Leiter, Fackel, Lederarbeiter-Werkzeugkoffer, Beutel, Maurerwerkzeuge, Block und Tackle, Töpferwerkzeuge, Krug, Lampe, Schmiedewerkzeuge, Kugellager, Eimer, Krähenfüße, Enterhaken, Eisentopf, Bastlerwerkzeuge, Glocke, Schaufel, Zunderbüchse, Weberwerkzeuge, Korb, Seil, Netz, Zelt, Holzschnitzerwerkzeuge-Club, Großkeule, Quartierstab",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "id": "moonwell-pilger",
+  "type": "background",
+  "name": "Moonwell-Pilger",
+  "original_name": "Moonwell Pilgrim",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/background:moonwell-pilgrim",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Konstitution, Weisheit, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Konstitution, Weisheit, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Magischer Eingeweihter (Druide)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Natur und Leistung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse: Malerbedarf"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Quartierstab, Malerbedarf, Schlafsack, Glocke, Beutel, Robe, Schnur, Reisekleidung, Wasserschlauch, 34 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wie viele, die von den Moonshae-Inseln stammen, sind Sie mit der Verehrung des gesegneten Landes, seiner einzigartigen Götter und der geheimnisvollen Schreine namens Mondbrunnen aufgewachsen. Als Mondbrunnen-Pilger hast du dich auf die Aufgabe begeben, jeden Mondbrunnen auf (oder außerhalb) der Karte zu besuchen und mit ihm in Kontakt zu treten. Auf Ihren idyllischen Reisen haben Sie ein Repertoire mondschawianischer Volkslieder gesammelt, Landschaften mit bezaubernden Ausblicken gemalt und sogar gelernt, wie man ein wenig Urmagie beherrscht."
+    }
+  ],
+  "text": "Fähigkeitswerte: Konstitution, Weisheit, Charisma\n\nTalent: Magischer Eingeweihter (Druide)\n\nFertigkeiten: Natur und Leistung\n\nWerkzeugkenntnisse: Malerbedarf\n\nAusrüstung: Wähle A oder B: (A) Quartierstab, Malerbedarf, Schlafsack, Glocke, Beutel, Robe, Schnur, Reisekleidung, Wasserschlauch, 34 GP; oder (B) 50 GP\n\nWie viele, die von den Moonshae-Inseln stammen, sind Sie mit der Verehrung des gesegneten Landes, seiner einzigartigen Götter und der geheimnisvollen Schreine namens Mondbrunnen aufgewachsen. Als Mondbrunnen-Pilger hast du dich auf die Aufgabe begeben, jeden Mondbrunnen auf (oder außerhalb) der Karte zu besuchen und mit ihm in Kontakt zu treten. Auf Ihren idyllischen Reisen haben Sie ein Repertoire mondschawianischer Volkslieder gesammelt, Landschaften mit bezaubernden Ausblicken gemalt und sogar gelernt, wie man ein wenig Urmagie beherrscht.",
+  "tags": [],
+  "ability_scores": [
+    "con",
+    "wis",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "con",
+      "wis",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Natur",
+    "Leistung\n\nWerkzeugkenntnisse: Malerbedarf"
+  ],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "magischer-eingeweihter-druide",
+  "granted_feat_name": "Magischer Eingeweihter (Druide)\n",
+  "modifiers": [],
+  "choice_sets": [
+    {
+      "id": "moonwell-pilger-background-cantrips",
+      "type": "spell",
+      "choose": 2,
+      "spell_levels": [
+        0
+      ],
+      "source": "moonwell-pilger",
+      "spell_list_names": [
+        "Druide"
+      ]
+    },
+    {
+      "id": "moonwell-pilger-background-level-1-spell",
+      "type": "spell",
+      "choose": 1,
+      "spell_levels": [
+        1
+      ],
+      "source": "moonwell-pilger",
+      "spell_list_names": [
+        "Druide"
+      ]
+    }
+  ],
+  "spellcasting": {
+    "ability": "wis",
+    "spell_choices": [
+      {
+        "id": "moonwell-pilger-background-cantrips",
+        "type": "spell",
+        "choose": 2,
+        "spell_levels": [
+          0
+        ],
+        "source": "moonwell-pilger",
+        "spell_list_names": [
+          "Druide"
+        ]
+      },
+      {
+        "id": "moonwell-pilger-background-level-1-spell",
+        "type": "spell",
+        "choose": 1,
+        "spell_levels": [
+          1
+        ],
+        "source": "moonwell-pilger",
+        "spell_list_names": [
+          "Druide"
+        ]
+      }
+    ],
+    "always_prepared": true
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Quartierstab, Malerbedarf, Schlafsack, Glocke, Beutel, Robe, Schnur, Reisekleidung, Wasserschlauch, 34 GP; oder (B) 50 GP\n\nWie viele, die von den Moonshae-Inseln stammen, sind Sie mit der Verehrung des gesegneten Landes, seiner einzigartigen Götter und der geheimnisvollen Schreine namens Mondbrunnen aufgewachsen. Als Mondbrunnen-Pilger hast du dich auf die Aufgabe begeben, jeden Mondbrunnen auf (oder außerhalb) der Karte zu besuchen und mit ihm in Kontakt zu treten. Auf Ihren idyllischen Reisen haben Sie ein Repertoire mondschawianischer Volkslieder gesammelt, Landschaften mit bezaubernden Ausblicken gemalt und sogar gelernt, wie man ein wenig Urmagie beherrscht"
+    }
+  ]
+}

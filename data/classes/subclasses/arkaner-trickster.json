@@ -1,0 +1,286 @@
+{
+  "id": "arkaner-trickster",
+  "type": "subclass",
+  "name": "Arkaner Trickster",
+  "original_name": "Arcane Trickster",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/rogue:arcane-trickster",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Verbessern Sie Ihre Heimlichkeit mit arkanen Zaubersprüchen. Einige Schurken verbessern ihre ausgefeilten Fähigkeiten der Heimlichkeit und Beweglichkeit mit Zaubersprüchen und lernen magische Tricks, die ihnen bei ihrem Handwerk helfen. Einige arkane Betrüger nutzen ihre Talente als Taschendiebe und Einbrecher, während andere als Scherze auftreten.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Verbessern Sie Ihre Heimlichkeit mit arkanen Zaubersprüchen. Einige Schurken verbessern ihre ausgefeilten Fähigkeiten der Heimlichkeit und Beweglichkeit mit Zaubersprüchen und lernen magische Tricks, die ihnen bei ihrem Handwerk helfen. Einige arkane Betrüger nutzen ihre Talente als Taschendiebe und Einbrecher, während andere als Scherze auftreten."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Zaubern"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast gelernt, Zauber zu wirken. Die Regeln zum Zaubern finden Sie in Kapitel 7. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln als arkaner Betrüger anwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zaubertricks. Sie kennen drei Cantrips: Magierhand und zwei weitere Cantrips Ihrer Wahl aus der Liste der Zaubererzauber (die Liste finden Sie im Abschnitt dieser Klasse). Empfohlen werden Mind Sliver und Minor Illusion."
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie ein Schurken-Level erreichen, können Sie einen Ihrer Cantrips, mit Ausnahme der Magierhand, durch einen anderen Zauberer-Cantrip Ihrer Wahl ersetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Schurkenstufe 10 erreichen, lernen Sie einen weiteren Zauberer-Cantrip Ihrer Wahl."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberplatz. Die Arcane Trickster Spellcasting-Tabelle zeigt, wie viele Zauberslots Ihnen zum Wirken Ihrer Zauber der Stufe 1+ zur Verfügung stehen. Du erhältst alle verbrauchten Zauberslots zurück, wenn du eine Lange Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vorbereitete Zauber der Stufe 1+. Sie bereiten eine Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst drei Zaubersprüche der Stufe 1 aus. Empfohlen werden Charm Person, Disguise Self und Fog Cloud."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Anzahl der Zaubersprüche auf Ihrer Liste erhöht sich mit zunehmender Schurkenstufe, wie in der Spalte „Vorbereitete Zaubersprüche“ der Zaubertabelle „Arkaner Trickster“ angezeigt. Wenn sich diese Zahl erhöht, wählen Sie weitere Zaubererzauber aus, bis die Anzahl der Zauber auf Ihrer Liste mit der Zahl in der Tabelle „Arkaner Betrüger“ übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Schurke der Stufe 7 sind, kann Ihre Liste vorbereiteter Zauber fünf Zaubersprüche der Stufe 1 oder 2 in beliebiger Kombination enthalten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ändern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie eine Schurkenstufe erreichen, können Sie einen Zauber auf Ihrer Liste durch einen anderen Zaubererzauber ersetzen, für den Sie Zauberplätze haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfähigkeit. Intelligenz ist Ihre Zauberfähigkeit für Ihre Zaubersprüche."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfokus. Sie können einen Arkanen Fokus als Zauberfokus für Ihre Zaubersprüche verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Arkane Trickster-Zauberwirkung"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Schurkenlevel",
+          "Vorbereitete Zauber",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        [
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "4",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "5",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "6",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "7",
+          "5",
+          "4",
+          "2",
+          "-",
+          "-"
+        ],
+        [
+          "8",
+          "6",
+          "4",
+          "2",
+          "-",
+          "-"
+        ],
+        [
+          "9",
+          "6",
+          "4",
+          "2",
+          "-",
+          "-"
+        ],
+        [
+          "10",
+          "7",
+          "4",
+          "3",
+          "-",
+          "-"
+        ],
+        [
+          "11",
+          "8",
+          "4",
+          "3",
+          "-",
+          "-"
+        ],
+        [
+          "12",
+          "8",
+          "4",
+          "3",
+          "-",
+          "-"
+        ],
+        [
+          "13",
+          "9",
+          "4",
+          "3",
+          "2",
+          "-"
+        ],
+        [
+          "14",
+          "10",
+          "4",
+          "3",
+          "2",
+          "-"
+        ],
+        [
+          "15",
+          "10",
+          "4",
+          "3",
+          "2",
+          "-"
+        ],
+        [
+          "16",
+          "11",
+          "4",
+          "3",
+          "3",
+          "-"
+        ],
+        [
+          "17",
+          "11",
+          "4",
+          "3",
+          "3",
+          "-"
+        ],
+        [
+          "18",
+          "11",
+          "4",
+          "3",
+          "3",
+          "-"
+        ],
+        [
+          "19",
+          "12",
+          "4",
+          "3",
+          "3",
+          "1"
+        ],
+        [
+          "20",
+          "13",
+          "4",
+          "3",
+          "3",
+          "1"
+        ]
+      ],
+      "text": "Vorbereitete Zauber auf Schurkenstufe 1. 2. 3. 4. 3 3 2 - - - 4 4 3 - - - 5 4 3 - - - 6 4 3 - - - 7 5 4 2 - - 8 6 4 2 - - 9 6 4 2 - - 10 7 4 3 - - 11 8 4 3 - - 12 8 4 3 - - 13 9 4 3 2 - 14 10 4 3 2 - 15 10 4 3 2 - 16 11 4 3 3 - 17 11 4 3 3 - 18 11 4 3 3 - 19 12 4 3 3 1 20 13 4 3 3 1"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Magierhand-Legerdemain"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du die Magierhand wirkst, kannst du sie als Bonusaktion wirken und die Spektralhand unsichtbar machen. Sie können die Hand als Bonusaktion kontrollieren und damit Geschicklichkeitsprüfungen durchführen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 9: Magischer Hinterhalt"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du den Zustand „Unsichtbar“ hast, wenn du einen Zauber auf eine Kreatur wirkst, hat sie einen Nachteil bei jedem Rettungswurf, den sie im selben Zug gegen den Zauber macht."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 13: Vielseitiger Trickster"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst die Fähigkeit, Ziele mit deiner Magierhand abzulenken. Wenn du die Trip-Option deines Listigen Schlags auf eine Kreatur verwendest, kannst du diese Option auch auf eine andere Kreatur im Umkreis von 5 Fuß um die Spektralhand anwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 17: Zauberdieb"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst die Fähigkeit, einem anderen Zauberer auf magische Weise das Wissen darüber zu stehlen, wie man einen Zauber wirkt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Unmittelbar nachdem eine Kreatur einen Zauber gewirkt hat, der Sie als Ziel hat oder Sie in ihren Wirkungsbereich einbezieht, können Sie eine Reaktion ausführen, um die Kreatur zu einem Intelligenz-Rettungswurf zu zwingen. Der DC entspricht deinem Zauberwurf-DC. Bei einem fehlgeschlagenen Rettungswurf annullieren Sie die Wirkung des Zaubers gegen Sie und stehlen das Wissen über den Zauber, wenn er mindestens Stufe 1 und eine Stufe hat, die Sie wirken können (es muss kein Zaubererzauber sein). Für die nächsten 8 Stunden haben Sie den Zauber vorbereitet. Die Kreatur kann es erst wirken, wenn 8 Stunden vergangen sind."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie mit dieser Funktion einen Zauberspruch gestohlen haben, können Sie diese Funktion erst wieder verwenden, wenn Sie eine Lange Rast abgeschlossen haben."
+    }
+  ],
+  "text": "Verbessern Sie Ihre Heimlichkeit mit arkanen Zaubersprüchen. Einige Schurken verbessern ihre ausgefeilten Fähigkeiten der Heimlichkeit und Beweglichkeit mit Zaubersprüchen und lernen magische Tricks, die ihnen bei ihrem Handwerk helfen. Einige arkane Betrüger nutzen ihre Talente als Taschendiebe und Einbrecher, während andere als Scherze auftreten.\n\nLevel 3: Zaubern\n\nDu hast gelernt, Zauber zu wirken. Die Regeln zum Zaubern finden Sie in Kapitel 7. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln als arkaner Betrüger anwenden.\n\nZaubertricks. Sie kennen drei Cantrips: Magierhand und zwei weitere Cantrips Ihrer Wahl aus der Liste der Zaubererzauber (die Liste finden Sie im Abschnitt dieser Klasse). Empfohlen werden Mind Sliver und Minor Illusion.\n\nImmer wenn Sie ein Schurken-Level erreichen, können Sie einen Ihrer Cantrips, mit Ausnahme der Magierhand, durch einen anderen Zauberer-Cantrip Ihrer Wahl ersetzen.\n\nWenn Sie Schurkenstufe 10 erreichen, lernen Sie einen weiteren Zauberer-Cantrip Ihrer Wahl.\n\nZauberplatz. Die Arcane Trickster Spellcasting-Tabelle zeigt, wie viele Zauberslots Ihnen zum Wirken Ihrer Zauber der Stufe 1+ zur Verfügung stehen. Du erhältst alle verbrauchten Zauberslots zurück, wenn du eine Lange Rast abschließt.\n\nVorbereitete Zauber der Stufe 1+. Sie bereiten eine Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst drei Zaubersprüche der Stufe 1 aus. Empfohlen werden Charm Person, Disguise Self und Fog Cloud.\n\nDie Anzahl der Zaubersprüche auf Ihrer Liste erhöht sich mit zunehmender Schurkenstufe, wie in der Spalte „Vorbereitete Zaubersprüche“ der Zaubertabelle „Arkaner Trickster“ angezeigt. Wenn sich diese Zahl erhöht, wählen Sie weitere Zaubererzauber aus, bis die Anzahl der Zauber auf Ihrer Liste mit der Zahl in der Tabelle „Arkaner Betrüger“ übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Schurke der Stufe 7 sind, kann Ihre Liste vorbereiteter Zauber fünf Zaubersprüche der Stufe 1 oder 2 in beliebiger Kombination enthalten.\n\nÄndern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie eine Schurkenstufe erreichen, können Sie einen Zauber auf Ihrer Liste durch einen anderen Zaubererzauber ersetzen, für den Sie Zauberplätze haben.\n\nZauberfähigkeit. Intelligenz ist Ihre Zauberfähigkeit für Ihre Zaubersprüche.\n\nZauberfokus. Sie können einen Arkanen Fokus als Zauberfokus für Ihre Zaubersprüche verwenden.\n\nArkane Trickster-Zauberwirkung\n\nVorbereitete Zauber auf Schurkenstufe 1. 2. 3. 4. 3 3 2 - - - 4 4 3 - - - 5 4 3 - - - 6 4 3 - - - 7 5 4 2 - - 8 6 4 2 - - 9 6 4 2 - - 10 7 4 3 - - 11 8 4 3 - - 12 8 4 3 - - 13 9 4 3 2 - 14 10 4 3 2 - 15 10 4 3 2 - 16 11 4 3 3 - 17 11 4 3 3 - 18 11 4 3 3 - 19 12 4 3 3 1 20 13 4 3 3 1\n\nLevel 3: Magierhand-Legerdemain\n\nWenn du die Magierhand wirkst, kannst du sie als Bonusaktion wirken und die Spektralhand unsichtbar machen. Sie können die Hand als Bonusaktion kontrollieren und damit Geschicklichkeitsprüfungen durchführen.\n\nLevel 9: Magischer Hinterhalt\n\nWenn du den Zustand „Unsichtbar“ hast, wenn du einen Zauber auf eine Kreatur wirkst, hat sie einen Nachteil bei jedem Rettungswurf, den sie im selben Zug gegen den Zauber macht.\n\nLevel 13: Vielseitiger Trickster\n\nDu erhältst die Fähigkeit, Ziele mit deiner Magierhand abzulenken. Wenn du die Trip-Option deines Listigen Schlags auf eine Kreatur verwendest, kannst du diese Option auch auf eine andere Kreatur im Umkreis von 5 Fuß um die Spektralhand anwenden.\n\nLevel 17: Zauberdieb\n\nDu erhältst die Fähigkeit, einem anderen Zauberer auf magische Weise das Wissen darüber zu stehlen, wie man einen Zauber wirkt.\n\nUnmittelbar nachdem eine Kreatur einen Zauber gewirkt hat, der Sie als Ziel hat oder Sie in ihren Wirkungsbereich einbezieht, können Sie eine Reaktion ausführen, um die Kreatur zu einem Intelligenz-Rettungswurf zu zwingen. Der DC entspricht deinem Zauberwurf-DC. Bei einem fehlgeschlagenen Rettungswurf annullieren Sie die Wirkung des Zaubers gegen Sie und stehlen das Wissen über den Zauber, wenn er mindestens Stufe 1 und eine Stufe hat, die Sie wirken können (es muss kein Zaubererzauber sein). Für die nächsten 8 Stunden haben Sie den Zauber vorbereitet. Die Kreatur kann es erst wirken, wenn 8 Stunden vergangen sind.\n\nSobald Sie mit dieser Funktion einen Zauberspruch gestohlen haben, können Sie diese Funktion erst wieder verwenden, wenn Sie eine Lange Rast abgeschlossen haben.",
+  "tags": [],
+  "class": "Schurke",
+  "class_id": "schurke",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

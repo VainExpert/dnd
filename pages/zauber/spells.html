@@ -68,8 +68,9 @@
     </main>
   </div>
 
+  <script src="../../nav.js"></script>
   <script type="module">
-    import { escapeHtml, loadIndex, loadMany, normalizeSpell } from "../../lib.js";
+    import { escapeHtml, loadIndex, loadMany, normalizeSpell, buildLookupIndex, renderRichText } from "../../lib.js";
 
     const grid = document.getElementById("grid");
     const qEl = document.getElementById("q");
@@ -78,6 +79,7 @@
 
     const files = await loadIndex("../../data/spells/index.json");
     const spells = (await loadMany("../../data/spells", files)).map(normalizeSpell);
+    const spellLookup = buildLookupIndex(spells);
 
     const classes = Array.from(new Set(
       spells.flatMap(s => Array.isArray(s.classes) ? s.classes : [])
@@ -120,7 +122,7 @@
           </div>
           <div class="mini-body">
             ${s.components ? `<div class="mini-box"><div class="mini-box-title">Komponenten</div><div class="mini-box-text">${escapeHtml(s.components)}</div></div>` : ""}
-            ${(s.text || s.html) ? `<div class="mini-box"><div class="mini-box-title">Effekt</div><div class="mini-box-text">${escapeHtml(excerpt(s.text || ""))}</div></div>` : ""}
+            ${(s.text || s.html) ? `<div class="mini-box"><div class="mini-box-title">Effekt</div><div class="mini-box-text">${renderRichText(excerpt(s.text || ""), { lookups: { spell: spellLookup }, inlineOnly: true })}</div></div>` : ""}
             ${(s.classes && s.classes.length) ? `<div class="mini-footer muted">Klassen: ${escapeHtml(s.classes.join(", "))}</div>` : ""}
           </div>
         </div>

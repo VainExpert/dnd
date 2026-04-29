@@ -1,0 +1,88 @@
+{
+  "id": "erbe-des-hauses-orien",
+  "type": "background",
+  "name": "Erbe des Hauses Orien",
+  "original_name": "House Orien Heir",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/background:house-orien-heir",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Geschicklichkeit, Konstitution, Intelligenz",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Geschicklichkeit, Konstitution, Intelligenz"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Zeichen der Passage"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Akrobatik und Leichtathletik"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse: Werkzeuge des Kartographen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wählen Sie A oder B: (A) Kartographenwerkzeuge, feine Kleidung, Karte, Karten- oder Schriftrollenkoffer, 18 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Vor dem letzten Krieg erstreckte sich Oriens Einfluss auf Khorvaire, und seine Handelsstraßen und Blitzschienen waren der Lebensnerv eines pulsierenden Königreichs. Aber der Krieg hat diese Arterien durchtrennt, wodurch Galifar tot und das Haus Orien blutüberströmt zurückblieb. Während die Kuriere und Spediteure des Hauses immer noch dafür sorgen, dass die Waren auf beiden Seiten des Kontinents transportiert werden, bleibt die Suche nach einer Möglichkeit, die Routen durch das Trauerland wiederherzustellen, die oberste Priorität des Hauses. In der Zwischenzeit können Orien-Abenteurer ihr Haus versorgen, indem sie vermisste Kuriere untersuchen, aus Wohnwagen gestohlene Waren zurückholen und Störungen an der Blitzschiene beheben."
+    }
+  ],
+  "text": "Fähigkeitswerte: Geschicklichkeit, Konstitution, Intelligenz\n\nTalent: Zeichen der Passage\n\nFertigkeiten: Akrobatik und Leichtathletik\n\nWerkzeugkenntnisse: Werkzeuge des Kartographen\n\nAusrüstung: Wählen Sie A oder B: (A) Kartographenwerkzeuge, feine Kleidung, Karte, Karten- oder Schriftrollenkoffer, 18 GP; oder (B) 50 GP\n\nVor dem letzten Krieg erstreckte sich Oriens Einfluss auf Khorvaire, und seine Handelsstraßen und Blitzschienen waren der Lebensnerv eines pulsierenden Königreichs. Aber der Krieg hat diese Arterien durchtrennt, wodurch Galifar tot und das Haus Orien blutüberströmt zurückblieb. Während die Kuriere und Spediteure des Hauses immer noch dafür sorgen, dass die Waren auf beiden Seiten des Kontinents transportiert werden, bleibt die Suche nach einer Möglichkeit, die Routen durch das Trauerland wiederherzustellen, die oberste Priorität des Hauses. In der Zwischenzeit können Orien-Abenteurer ihr Haus versorgen, indem sie vermisste Kuriere untersuchen, aus Wohnwagen gestohlene Waren zurückholen und Störungen an der Blitzschiene beheben.",
+  "tags": [],
+  "ability_scores": [
+    "dex",
+    "con",
+    "int"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "dex",
+      "con",
+      "int"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Akrobatik",
+    "Leichtathletik\n\nWerkzeugkenntnisse: Werkzeuge des Kartographen"
+  ],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "zeichen-der-passage",
+  "granted_feat_name": "Zeichen der Passage\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wählen Sie A oder B: (A) Kartographenwerkzeuge, feine Kleidung, Karte, Karten- oder Schriftrollenkoffer, 18 GP; oder (B) 50 GP\n\nVor dem letzten Krieg erstreckte sich Oriens Einfluss auf Khorvaire, und seine Handelsstraßen und Blitzschienen waren der Lebensnerv eines pulsierenden Königreichs. Aber der Krieg hat diese Arterien durchtrennt, wodurch Galifar tot und das Haus Orien blutüberströmt zurückblieb. Während die Kuriere und Spediteure des Hauses immer noch dafür sorgen, dass die Waren auf beiden Seiten des Kontinents transportiert werden, bleibt die Suche nach einer Möglichkeit, die Routen durch das Trauerland wiederherzustellen, die oberste Priorität des Hauses. In der Zwischenzeit können Orien-Abenteurer ihr Haus versorgen, indem sie vermisste Kuriere untersuchen, aus Wohnwagen gestohlene Waren zurückholen und Störungen an der Blitzschiene beheben"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "wahrsager",
+  "type": "subclass",
+  "name": "Wahrsager",
+  "original_name": "Diviner",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/wizard:diviner",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Lernen Sie die Geheimnisse des Multiversums kennen Der Rat eines Wahrsagers wird von denen gesucht, die ein klareres Verständnis der Vergangenheit, Gegenwart und Zukunft wünschen. Als Wahrsager streben Sie danach, die Schleier von Raum, Zeit und Bewusstsein zu öffnen. Sie arbeiten daran, Zauber der Unterscheidung, der Fernwahrnehmung, des übernatürlichen Wissens und der Voraussicht zu meistern.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Lernen Sie die Geheimnisse des Multiversums kennen Der Rat eines Wahrsagers wird von denen gesucht, die ein klareres Verständnis der Vergangenheit, Gegenwart und Zukunft wünschen. Als Wahrsager streben Sie danach, die Schleier von Raum, Zeit und Bewusstsein zu öffnen. Sie arbeiten daran, Zauber der Unterscheidung, der Fernwahrnehmung, des übernatürlichen Wissens und der Voraussicht zu meistern."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Wahrsagungsgelehrter"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wählen Sie zwei Zaubersprüche aus der Wahrsagungsschule, die jeweils nicht höher als Stufe 2 sein dürfen, und fügen Sie sie kostenlos Ihrem Zauberbuch hinzu."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie, wenn Sie in dieser Klasse Zugriff auf eine neue Stufe an Zauberslots erhalten, Ihrem Zauberbuch kostenlos einen Zaubererzauber aus der Wahrsagungsschule hinzufügen. Der gewählte Zauber muss einer Stufe angehören, für die du über Zauberslots verfügst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Vorzeichen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Einblicke in die Zukunft drängen auf Ihr Bewusstsein. Wenn Sie eine Lange Rast beendet haben, würfeln Sie zwei W20 und notieren Sie die gewürfelten Zahlen. Du kannst jeden D20-Test, den du oder eine Kreatur, die du sehen kannst, durchgeführt hast, durch einen dieser Vorhersagewürfe ersetzen. Sie müssen sich dafür vor dem Wurf entscheiden und können einen Wurf auf diese Weise nur einmal pro Spielzug ersetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Jeder Vorhersagewurf kann nur einmal verwendet werden. Wenn Sie eine Lange Rast beenden, verlieren Sie alle ungenutzten Vorhersagewürfe."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Wahrsagungsexperte"
+    },
+    {
+      "type": "paragraph",
+      "text": "Das Wirken von Weissagungszaubern fällt Ihnen so leicht, dass es nur einen Bruchteil Ihres Zauberaufwands erfordert. Wenn du einen Weissagungszauber mit einem Zauberslot der Stufe 2+ wirkst, erhältst du einen verbrauchten Zauberslot zurück. Der Slot, den Sie zurückgewinnen, muss eine niedrigere Stufe haben als der von Ihnen ausgegebene Slot und darf nicht höher als Stufe 5 sein."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Das Dritte Auge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können Ihre Wahrnehmungsfähigkeit steigern. Wählen Sie als Bonusaktion einen der folgenden Vorteile, der so lange anhält, bis Sie eine Kurze oder Lange Rast starten. Sie können diese Funktion erst wieder verwenden, wenn Sie eine kurze oder lange Rast beendet haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dunkelsicht. Du erhältst Dunkelsicht mit einer Reichweite von 120 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Größeres Verständnis. Sie können jede Sprache lesen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Siehe Unsichtbarkeit. Du kannst „Unsichtbarkeit sehen“ wirken, ohne einen Zauberslot zu verbrauchen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 14: Größeres Vorzeichen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Visionen in Ihren Träumen werden intensiver und zeichnen in Ihrem Kopf ein genaueres Bild von dem, was kommen wird. Würfeln Sie für Ihr Vorzeichen-Feature drei W20 statt zwei."
+    }
+  ],
+  "text": "Lernen Sie die Geheimnisse des Multiversums kennen Der Rat eines Wahrsagers wird von denen gesucht, die ein klareres Verständnis der Vergangenheit, Gegenwart und Zukunft wünschen. Als Wahrsager streben Sie danach, die Schleier von Raum, Zeit und Bewusstsein zu öffnen. Sie arbeiten daran, Zauber der Unterscheidung, der Fernwahrnehmung, des übernatürlichen Wissens und der Voraussicht zu meistern.\n\nLevel 3: Wahrsagungsgelehrter\n\nWählen Sie zwei Zaubersprüche aus der Wahrsagungsschule, die jeweils nicht höher als Stufe 2 sein dürfen, und fügen Sie sie kostenlos Ihrem Zauberbuch hinzu.\n\nDarüber hinaus können Sie, wenn Sie in dieser Klasse Zugriff auf eine neue Stufe an Zauberslots erhalten, Ihrem Zauberbuch kostenlos einen Zaubererzauber aus der Wahrsagungsschule hinzufügen. Der gewählte Zauber muss einer Stufe angehören, für die du über Zauberslots verfügst.\n\nStufe 3: Vorzeichen\n\nEinblicke in die Zukunft drängen auf Ihr Bewusstsein. Wenn Sie eine Lange Rast beendet haben, würfeln Sie zwei W20 und notieren Sie die gewürfelten Zahlen. Du kannst jeden D20-Test, den du oder eine Kreatur, die du sehen kannst, durchgeführt hast, durch einen dieser Vorhersagewürfe ersetzen. Sie müssen sich dafür vor dem Wurf entscheiden und können einen Wurf auf diese Weise nur einmal pro Spielzug ersetzen.\n\nJeder Vorhersagewurf kann nur einmal verwendet werden. Wenn Sie eine Lange Rast beenden, verlieren Sie alle ungenutzten Vorhersagewürfe.\n\nLevel 6: Wahrsagungsexperte\n\nDas Wirken von Weissagungszaubern fällt Ihnen so leicht, dass es nur einen Bruchteil Ihres Zauberaufwands erfordert. Wenn du einen Weissagungszauber mit einem Zauberslot der Stufe 2+ wirkst, erhältst du einen verbrauchten Zauberslot zurück. Der Slot, den Sie zurückgewinnen, muss eine niedrigere Stufe haben als der von Ihnen ausgegebene Slot und darf nicht höher als Stufe 5 sein.\n\nLevel 10: Das Dritte Auge\n\nSie können Ihre Wahrnehmungsfähigkeit steigern. Wählen Sie als Bonusaktion einen der folgenden Vorteile, der so lange anhält, bis Sie eine Kurze oder Lange Rast starten. Sie können diese Funktion erst wieder verwenden, wenn Sie eine kurze oder lange Rast beendet haben.\n\nDunkelsicht. Du erhältst Dunkelsicht mit einer Reichweite von 120 Fuß.\n\nGrößeres Verständnis. Sie können jede Sprache lesen.\n\nSiehe Unsichtbarkeit. Du kannst „Unsichtbarkeit sehen“ wirken, ohne einen Zauberslot zu verbrauchen.\n\nStufe 14: Größeres Vorzeichen\n\nDie Visionen in Ihren Träumen werden intensiver und zeichnen in Ihrem Kopf ein genaueres Bild von dem, was kommen wird. Würfeln Sie für Ihr Vorzeichen-Feature drei W20 statt zwei.",
+  "tags": [],
+  "class": "Magier",
+  "class_id": "magier",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

@@ -1,0 +1,54 @@
+{
+  "id": "defensiver-duellant",
+  "type": "feat",
+  "name": "Defensiver Duellant",
+  "original_name": "Defensive Duelist",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:defensive-duelist",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Geschicklichkeit 13+"
+  ],
+  "summary": "Voraussetzung: Level 4+, Geschicklichkeit 13+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, Geschicklichkeit 13+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Geschicklichkeitswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Parieren. Wenn Sie eine Finesse-Waffe in der Hand halten und eine andere Kreatur Sie mit einem Nahkampfangriff trifft, können Sie eine Reaktion ausführen, um Ihren Uebungsbonus zu Ihrer Rüstungsklasse hinzuzufügen, was möglicherweise dazu führt, dass der Angriff Sie verfehlt. Du erhältst diesen Bonus auf deine RK gegen Nahkampfangriffe bis zum Beginn deines nächsten Zuges."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, Geschicklichkeit 13+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Geschicklichkeitswert um 1 auf maximal 20.\n\nParieren. Wenn Sie eine Finesse-Waffe in der Hand halten und eine andere Kreatur Sie mit einem Nahkampfangriff trifft, können Sie eine Reaktion ausführen, um Ihren Uebungsbonus zu Ihrer Rüstungsklasse hinzuzufügen, was möglicherweise dazu führt, dass der Angriff Sie verfehlt. Du erhältst diesen Bonus auf deine RK gegen Nahkampfangriffe bis zum Beginn deines nächsten Zuges.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "dex"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

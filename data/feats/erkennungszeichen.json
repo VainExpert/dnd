@@ -1,0 +1,96 @@
+{
+  "id": "erkennungszeichen",
+  "type": "feat",
+  "name": "Erkennungszeichen",
+  "original_name": "Mark of Detection",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:mark-of-detection",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Drachenmale",
+  "prerequisites": [],
+  "summary": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Deduktive Intuition. Wenn Sie eine Intelligenzprüfung (Untersuchung) oder Weisheitsprüfung (Einsicht) durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Magische Erkennung. Sie haben immer die Zauber „Magie erkennen“ und „Gift und Krankheit erkennen“ vorbereitet. Sie können jeden Zauber einmal ohne Zauberslot wirken und erhalten die Fähigkeit, ihn auf diese Weise zu wirken, wieder, wenn Sie eine Lange Rast abgeschlossen haben. Sie können diese Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Intelligenz, Weisheit oder Charisma sind Ihre Zauberfähigkeiten für diese Zaubersprüche (wählen Sie, wenn Sie dieses Talent auswählen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Charakterstufe 3 erreichen, haben Sie auch immer den Zauber „Unsichtbarkeit sehen“ vorbereitet und können ihn auf die gleiche Weise wirken."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauber der Marke. Wenn Sie über die Funktion „Zauberwirkung“ oder „Paktmagie“ verfügen, werden die Zauber in der Tabelle „Mal der Entdeckung“-Zauber zur Zauberliste dieser Funktion hinzugefügt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zeichen der Entdeckungszauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Zauberstufe",
+          "Zauber"
+        ],
+        [
+          "1",
+          "Böses und Gutes erkennen, identifizieren"
+        ],
+        [
+          "2",
+          "Gedanken erkennen, Fallen finden"
+        ],
+        [
+          "3",
+          "Hellsehen, Nichterkennung"
+        ],
+        [
+          "4",
+          "Arkanes Auge, Weissagung"
+        ],
+        [
+          "5",
+          "Legendenkunde"
+        ]
+      ],
+      "text": "Zauberstufenzauber 1 Böses und Gutes erkennen, Identifizieren 2 Gedanken erkennen, Fallen finden 3 Hellsehen, Nichtentdeckung 4 Arkanes Auge, Weissagung 5 Legendenkunde"
+    }
+  ],
+  "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)\n\nSie profitieren von folgenden Vorteilen.\n\nDeduktive Intuition. Wenn Sie eine Intelligenzprüfung (Untersuchung) oder Weisheitsprüfung (Einsicht) durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen.\n\nMagische Erkennung. Sie haben immer die Zauber „Magie erkennen“ und „Gift und Krankheit erkennen“ vorbereitet. Sie können jeden Zauber einmal ohne Zauberslot wirken und erhalten die Fähigkeit, ihn auf diese Weise zu wirken, wieder, wenn Sie eine Lange Rast abgeschlossen haben. Sie können diese Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Intelligenz, Weisheit oder Charisma sind Ihre Zauberfähigkeiten für diese Zaubersprüche (wählen Sie, wenn Sie dieses Talent auswählen).\n\nWenn Sie Charakterstufe 3 erreichen, haben Sie auch immer den Zauber „Unsichtbarkeit sehen“ vorbereitet und können ihn auf die gleiche Weise wirken.\n\nZauber der Marke. Wenn Sie über die Funktion „Zauberwirkung“ oder „Paktmagie“ verfügen, werden die Zauber in der Tabelle „Mal der Entdeckung“-Zauber zur Zauberliste dieser Funktion hinzugefügt.\n\nZeichen der Entdeckungszauber\n\nZauberstufenzauber 1 Böses und Gutes erkennen, Identifizieren 2 Gedanken erkennen, Fallen finden 3 Hellsehen, Nichtentdeckung 4 Arkanes Auge, Weissagung 5 Legendenkunde",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

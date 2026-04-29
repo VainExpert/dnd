@@ -1,0 +1,96 @@
+{
+  "id": "zeichen-des-schreibens",
+  "type": "feat",
+  "name": "Zeichen des Schreibens",
+  "original_name": "Mark of Scribing",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:mark-of-scribing",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Drachenmale",
+  "prerequisites": [],
+  "summary": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Begabter Schreiber. Wenn Sie eine Intelligenzprüfung (Geschichte) oder eine Fähigkeitsprüfung mit den Vorräten des Kalligraphen durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Einsicht des Schreibers. Sie kennen den Message-Cantrip. Sie haben auch immer den Zauber „Sprachen verstehen“ vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können es auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wenn Sie dieses Talent auswählen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du Charakterstufe 3 erreichst, hast du auch immer den Zauber „Magischer Mund“ parat und kannst ihn auf die gleiche Weise wirken."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauber der Marke. Wenn Sie über die Klassenfunktion „Zauberkunst“ oder „Paktmagie“ verfügen, werden die Zauber in der Tabelle „Mal des Schreibens“ zur Zauberliste dieser Funktion hinzugefügt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zeichen des Schreibens von Zaubersprüchen"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Zauberstufe",
+          "Zauber"
+        ],
+        [
+          "1",
+          "Befehl, Scheinskript"
+        ],
+        [
+          "2",
+          "Tierbote, Stille"
+        ],
+        [
+          "3",
+          "Senden, Zungen"
+        ],
+        [
+          "4",
+          "Arkanes Auge, Verwirrung"
+        ],
+        [
+          "5",
+          "Traum"
+        ]
+      ],
+      "text": "Zauberstufe Zauber 1 Befehl, Illusionsskript 2 Tierbote, Stille 3 Senden, Zungen 4 Arkanes Auge, Verwirrung 5 Traum"
+    }
+  ],
+  "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)\n\nSie profitieren von folgenden Vorteilen.\n\nBegabter Schreiber. Wenn Sie eine Intelligenzprüfung (Geschichte) oder eine Fähigkeitsprüfung mit den Vorräten des Kalligraphen durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen.\n\nEinsicht des Schreibers. Sie kennen den Message-Cantrip. Sie haben auch immer den Zauber „Sprachen verstehen“ vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können es auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wenn Sie dieses Talent auswählen).\n\nWenn du Charakterstufe 3 erreichst, hast du auch immer den Zauber „Magischer Mund“ parat und kannst ihn auf die gleiche Weise wirken.\n\nZauber der Marke. Wenn Sie über die Klassenfunktion „Zauberkunst“ oder „Paktmagie“ verfügen, werden die Zauber in der Tabelle „Mal des Schreibens“ zur Zauberliste dieser Funktion hinzugefügt.\n\nZeichen des Schreibens von Zaubersprüchen\n\nZauberstufe Zauber 1 Befehl, Illusionsskript 2 Tierbote, Stille 3 Senden, Zungen 4 Arkanes Auge, Verwirrung 5 Traum",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

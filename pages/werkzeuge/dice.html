@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Wuerfel</title>
+  <title>Würfel</title>
   <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
   <script src="../../theme.js?v=theme-20260422"></script>
 
@@ -189,11 +189,11 @@
 <body>
 <header class="topbar">
   <div class="brand">
-    <div class="title">Wuerfel</div>
-    <div class="subtitle">Mehrfachwuerfe • Muenzwurf • Karten • Ausdrucke • Tabellen</div>
+    <div class="title">Würfel</div>
+    <div class="subtitle">Mehrfachwürfe â€¢ Münzwurf â€¢ Karten â€¢ Ausdrucke â€¢ Tabellen</div>
   </div>
   <div class="top-actions">
-    <a class="home-btn" href="../../index.html">← Startseite</a>
+    <a class="home-btn" href="../../index.html">â† Startseite</a>
   </div>
 </header>
 
@@ -201,7 +201,7 @@
   <div class="content" style="max-width:1100px;">
     <div class="grid">
       <div class="mini-box">
-        <div class="mini-box-title">Schnellwuerfel</div>
+        <div class="mini-box-title">Schnellwürfel</div>
         <div class="mini-box-text">
           <div class="tool-row">
             <label class="small">Anzahl</label>
@@ -221,7 +221,7 @@
       </div>
 
       <div class="mini-box">
-        <div class="mini-box-title">Ausdruck wuerfeln</div>
+        <div class="mini-box-title">Ausdruck würfeln</div>
         <div class="mini-box-text">
           <div class="small">Eine Zeile pro Ausdruck. Du kannst Zeilen benennen: <span class="mono">Feuerball: 8W6</span>. Unterstuetzt <span class="mono">kh/kl</span> (z. B. <span class="mono">2W20kh1</span>).</div>
           <textarea id="expr" class="select" placeholder="z. B.
@@ -233,7 +233,7 @@ Vorteil: 2W20kh1+5"></textarea>
           <div class="tool-row" style="margin-top:10px;">
             <label class="small">Jede Zeile wiederholen</label>
             <input id="repeat" class="select" type="number" min="1" value="1" style="width:110px;">
-            <button id="rollExpr" class="btn">Wuerfeln</button>
+            <button id="rollExpr" class="btn">Würfeln</button>
             <div id="animArea" class="roll-anim"></div>
             <button id="clearHistory" class="btn">Verlauf leeren</button>
           </div>
@@ -243,7 +243,7 @@ Vorteil: 2W20kh1+5"></textarea>
 
     <div class="grid" style="margin-top:14px;">
       <div class="mini-box">
-        <div class="mini-box-title">Muenzwurf</div>
+        <div class="mini-box-title">Münzwurf</div>
         <div class="mini-box-text">
           <div class="coin-wrap">
             <div class="coin-stage">
@@ -261,7 +261,7 @@ Vorteil: 2W20kh1+5"></textarea>
               <div class="mini-box" style="margin:0;">
                 <div class="mini-box-title">Ergebnis</div>
                 <div class="mini-box-text">
-                  <div id="coinResult" class="mono">—</div>
+                  <div id="coinResult" class="mono">â€”</div>
                 </div>
               </div>
             </div>
@@ -280,15 +280,15 @@ Vorteil: 2W20kh1+5"></textarea>
             </select>
             <input id="drawN" class="select" type="number" min="1" value="5" style="width:110px;" />
             <button id="drawBtn" class="btn">Ziehen</button>
-            <button id="resetDeckBtn" class="btn">Zuruecksetzen / Mischen</button>
+            <button id="resetDeckBtn" class="btn">Zurücksetzen / Mischen</button>
           </div>
 
           <div class="cards-grid">
             <div class="mini-box" style="margin:0;">
               <div class="mini-box-title">Stapel</div>
               <div class="mini-box-text">
-                <div><b>Verbleibend:</b> <span id="remainingCards" class="mono">—</span></div>
-                <div class="muted" style="margin-top:8px;">Es wird ohne Zuruecklegen gezogen. Zum Neu-Mischen zuruecksetzen.</div>
+                <div><b>Verbleibend:</b> <span id="remainingCards" class="mono">â€”</span></div>
+                <div class="muted" style="margin-top:8px;">Es wird ohne Zurücklegen gezogen. Zum Neu-Mischen zurücksetzen.</div>
               </div>
             </div>
 
@@ -312,10 +312,10 @@ Vorteil: 2W20kh1+5"></textarea>
 
     <div class="grid" style="margin-top:14px;">
       <div class="mini-box">
-        <div class="mini-box-title">Aus Sammlungen extrahieren & wuerfeln</div>
+        <div class="mini-box-title">Aus Sammlungen extrahieren & würfeln</div>
         <div class="mini-box-text">
           <div class="small">
-            Diese Seite kann JSON laden und Wuerfelausdruecke automatisch extrahieren.
+            Diese Seite kann JSON laden und Würfelausdrücke automatisch extrahieren.
             Nutze URL-Parameter wie:
             <div class="mono" style="margin-top:6px;">
               dice.html?monster=adult-blue-dracolich<br/>
@@ -335,13 +335,13 @@ Vorteil: 2W20kh1+5"></textarea>
         <div class="mini-box-title">Zufallstabellen</div>
         <div class="mini-box-text">
           <div class="small">
-            Wenn du <span class="mono">data/tables/index.json</span> hast, kannst du hier eine Tabelle waehlen.
+            Wenn du <span class="mono">data/tables/index.json</span> hast, kannst du hier eine Tabelle wählen.
             Oder nutze die URL: <span class="mono">dice.html?table_file=rumors.json</span>
           </div>
 
           <div class="tool-row" style="margin-top:10px;">
             <select id="tableSel" class="select" style="min-width:260px;"></select>
-            <button id="rollTableBtn" class="btn">Tabelle wuerfeln</button>
+            <button id="rollTableBtn" class="btn">Tabelle würfeln</button>
           </div>
           <div id="tableResult" style="margin-top:10px;"></div>
         </div>
@@ -353,6 +353,7 @@ Vorteil: 2W20kh1+5"></textarea>
   </div>
 </main>
 
+<script src="../../nav.js"></script>
 <script src="../../data/tables/tables-global.js?v=3"></script>
 
 <script type="module">
@@ -597,7 +598,7 @@ Vorteil: 2W20kh1+5"></textarea>
     die.className = "die";
     die.innerHTML = `
       <div class="t mono">${escapeHtml(formatDiceExpression(tok))}</div>
-      <div class="v mono" data-v>—</div>
+      <div class="v mono" data-v>â€”</div>
       <div class="k mono" data-k></div>
     `;
     die._spec = spec;
@@ -696,7 +697,7 @@ Vorteil: 2W20kh1+5"></textarea>
 
   flipBtn.addEventListener("click", () => {
     const result = doFlipOnce();
-    addTextHistory("Muenzwurf", result, "1 Wurf");
+    addTextHistory("Münzwurf", result, "1 Wurf");
   });
 
   flip5Btn.addEventListener("click", async () => {
@@ -705,10 +706,10 @@ Vorteil: 2W20kh1+5"></textarea>
       results.push(doFlipOnce());
       await new Promise(r => setTimeout(r, 1120));
     }
-    coinResult.textContent = results.join(" • ");
+    coinResult.textContent = results.join(" â€¢ ");
     const heads = results.filter(r => r === "KOPF").length;
     const tails = results.length - heads;
-    addTextHistory("Muenzwurf 5x", results.join(" • "), `Kopf: ${heads}\nZahl: ${tails}`);
+    addTextHistory("Münzwurf 5x", results.join(" â€¢ "), `Kopf: ${heads}\nZahl: ${tails}`);
   });
 
   const deckTypeEl = document.getElementById("deckType");
@@ -730,7 +731,7 @@ Vorteil: 2W20kh1+5"></textarea>
     return a;
   }
 
-  const SUITS = ["♠","♥","♦","♣"];
+  const SUITS = ["â™ ","â™¥","â™¦","â™£"];
   const RANKS_52 = ["A","2","3","4","5","6","7","8","9","10","J","Q","K"];
   const RANKS_SKAT = ["7","8","9","10","J","Q","K","A"];
 
@@ -757,7 +758,7 @@ Vorteil: 2W20kh1+5"></textarea>
         for (const r of RANKS_52) d.push(`${r}${s}`);
       }
     }
-    for (let j = 1; j <= 6; j++) d.push(`🃏JOKER${j}`);
+    for (let j = 1; j <= 6; j++) d.push(`ðŸƒJOKER${j}`);
     return d;
   }
 
@@ -778,7 +779,7 @@ Vorteil: 2W20kh1+5"></textarea>
   }
 
   function renderList(el, cards){
-    el.innerHTML = cards.map(c => `<li>${escapeHtml(c.replace(/^🃏JOKER\d+$/, "🃏JOKER"))}</li>`).join("");
+    el.innerHTML = cards.map(c => `<li>${escapeHtml(c.replace(/^ðŸƒJOKER\d+$/, "ðŸƒJOKER"))}</li>`).join("");
   }
 
   function renderDeckUI(last, justReset = false){
@@ -803,7 +804,7 @@ Vorteil: 2W20kh1+5"></textarea>
     const pulled = deck.splice(0, take);
     drawn.push(...pulled);
     renderDeckUI(pulled);
-    addTextHistory(`Karten ziehen (${deckTypeLabel()})`, pulled.join(" • "), `Gezogen: ${take}\nVerbleibend: ${deck.length}`);
+    addTextHistory(`Karten ziehen (${deckTypeLabel()})`, pulled.join(" â€¢ "), `Gezogen: ${take}\nVerbleibend: ${deck.length}`);
   }
 
   deckTypeEl.addEventListener("change", resetDeck);
@@ -843,11 +844,11 @@ Vorteil: 2W20kh1+5"></textarea>
 
   function renderExtractList(items){
     if (!items.length){
-      extractList.innerHTML = '<div class="small">In den geladenen Daten wurden keine Wuerfelausdruecke gefunden.</div>';
+      extractList.innerHTML = '<div class="small">In den geladenen Daten wurden keine Würfelausdrücke gefunden.</div>';
       return;
     }
     extractList.innerHTML = `
-      <div class="small">${items.length} wuerfelbare Ausdruecke gefunden:</div>
+      <div class="small">${items.length} würfelbare Ausdrücke gefunden:</div>
       <div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap;">
         ${items.map((it, idx) => `
           <div class="chip" data-idx="${idx}">
@@ -856,7 +857,7 @@ Vorteil: 2W20kh1+5"></textarea>
           </div>
         `).join("")}
       </div>
-      <div class="small" style="margin-top:10px;">Klicke auf einen Chip, um ihn zu wuerfeln. Mit Umschalt-Klick fuegst du ihn dem Ausdrucksfeld hinzu.</div>
+      <div class="small" style="margin-top:10px;">Klicke auf einen Chip, um ihn zu würfeln. Mit Umschalt-Klick fügst du ihn dem Ausdrucksfeld hinzu.</div>
     `;
 
     extractList.querySelectorAll(".chip").forEach(el => {
@@ -904,7 +905,7 @@ Vorteil: 2W20kh1+5"></textarea>
       try{
         const obj = await fetchJson(path);
         const items = extractDiceFromAny(obj);
-        extractStatus.textContent = `${key} geladen: ${id} (${items.length} Ausdruecke gefunden)`;
+        extractStatus.textContent = `${key} geladen: ${id} (${items.length} Ausdrücke gefunden)`;
         renderExtractList(items);
         if (auto && items.length){
           for (const it of items){
@@ -941,7 +942,7 @@ Vorteil: 2W20kh1+5"></textarea>
   async function loadTablesIndex(){
     try{
       const files = Array.isArray(TABLE_FILES) && TABLE_FILES.length ? TABLE_FILES : [];
-      tableSel.innerHTML = '<option value="">(Tabelle waehlen)</option>' + files.map(f => {
+      tableSel.innerHTML = '<option value="">(Tabelle wählen)</option>' + files.map(f => {
         const table = normalizeTable(TABLE_DATA_BY_FILE[f], f.replace(/\.json$/i, ""));
         return `<option value="${escapeHtml(f)}">${escapeHtml(table?.name || f)}</option>`;
       }).join("");
@@ -962,14 +963,14 @@ Vorteil: 2W20kh1+5"></textarea>
       const r = rollTableEntry(activeTable);
       tableResult.innerHTML = `
         <div class="mini-box" style="margin:0;">
-          <div class="mini-box-title">${escapeHtml(activeTable.name || "Tabelle")}${activeTable.dice ? ` (${escapeHtml(formatDiceExpression(activeTable.dice))})` : ""}${r.roll != null ? ` • Wurf ${escapeHtml(String(r.roll))}` : ""}</div>
+          <div class="mini-box-title">${escapeHtml(activeTable.name || "Tabelle")}${activeTable.dice ? ` (${escapeHtml(formatDiceExpression(activeTable.dice))})` : ""}${r.roll != null ? ` â€¢ Wurf ${escapeHtml(String(r.roll))}` : ""}</div>
           <div class="mini-box-text">
             ${renderTableHtml(activeTable, r)}
           </div>
         </div>
       `;
     } catch {
-      tableResult.innerHTML = '<div class="small">Tabelle konnte nicht gewuerfelt werden.</div>';
+      tableResult.innerHTML = '<div class="small">Tabelle konnte nicht gewürfelt werden.</div>';
     }
   }
 
@@ -1001,7 +1002,7 @@ Vorteil: 2W20kh1+5"></textarea>
 
     const tablesByFile = {};
     const files = (api.files || []).slice();
-    tableSel.innerHTML = '<option value="">(Tabelle waehlen)</option>';
+    tableSel.innerHTML = '<option value="">(Tabelle wählen)</option>';
     for (const file of files){
       const table = api.normalizeTable(api.dataByFile[file], file.replace(/\.json$/i, ""));
       const opt = document.createElement("option");
@@ -1022,7 +1023,7 @@ Vorteil: 2W20kh1+5"></textarea>
       const rolled = api.rollTableEntry(activeTable);
       tableResult.innerHTML = `
         <div class="mini-box" style="margin:0;">
-          <div class="mini-box-title">${api.escapeHtml(activeTable.name || "Tabelle")}${activeTable.dice ? ` (${api.escapeHtml(formatDiceExpression(activeTable.dice))})` : ""}${rolled.roll != null ? ` • Wurf ${api.escapeHtml(String(rolled.roll))}` : ""}</div>
+          <div class="mini-box-title">${api.escapeHtml(activeTable.name || "Tabelle")}${activeTable.dice ? ` (${api.escapeHtml(formatDiceExpression(activeTable.dice))})` : ""}${rolled.roll != null ? ` â€¢ Wurf ${api.escapeHtml(String(rolled.roll))}` : ""}</div>
           <div class="mini-box-text">
             ${api.renderTableHtml(activeTable, rolled)}
           </div>

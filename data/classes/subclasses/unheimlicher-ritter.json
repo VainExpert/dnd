@@ -1,0 +1,295 @@
+{
+  "id": "unheimlicher-ritter",
+  "type": "subclass",
+  "name": "Unheimlicher Ritter",
+  "original_name": "Eldritch Knight",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/fighter:eldritch-knight",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Unterstützen Sie Kampffähigkeiten mit arkaner Magie",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Unterstützen Sie Kampffähigkeiten mit arkaner Magie"
+    },
+    {
+      "type": "paragraph",
+      "text": "Eldritch Knights kombinieren die kriegerische Meisterschaft, die allen Kämpfern gemeinsam ist, mit einem sorgfältigen Studium der Magie. Ihre Zauber ergänzen und erweitern ihre Kampffähigkeiten, bieten zusätzlichen Schutz zur Verstärkung ihrer Rüstung und ermöglichen es ihnen, viele Feinde gleichzeitig mit explosiver Magie anzugreifen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Zaubern"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast gelernt, Zauber zu wirken. Die Regeln zum Zaubern finden Sie in Kapitel 7. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln als Eldritch Knight anwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zaubertricks. Sie kennen zwei Cantrips Ihrer Wahl aus der Liste der Zaubererzauber (die Liste finden Sie im Abschnitt dieser Klasse). Empfohlen werden „Froststrahl“ und „Schockierender Griff“. Immer wenn Sie eine Kämpferstufe erreichen, können Sie einen dieser Cantrips durch einen anderen Cantrip Ihrer Wahl aus der Zaubererzauberliste ersetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Kämpferstufe 10 erreichen, lernen Sie einen weiteren Zauberer-Cantrip Ihrer Wahl."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberplatz. Die Eldritch Knight-Zaubertabelle zeigt, wie viele Zauberslots Ihnen zum Wirken Ihrer Zauber der Stufe 1+ zur Verfügung stehen. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vorbereitete Zauber der Stufe 1+. Sie bereiten die Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst drei Zauber der Stufe 1 aus der Zauberliste des Zauberers aus. Empfohlen werden Burning Hands, Jump und Shield."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Anzahl der Zauber auf Ihrer Liste erhöht sich mit zunehmender Kämpferstufe, wie in der Spalte „Vorbereitete Zauber“ der Eldritch Knight-Zaubertabelle angezeigt. Immer wenn sich diese Zahl erhöht, wähle weitere Zaubersprüche aus der Liste der Zaubererzauber, bis die Anzahl der Zaubersprüche auf deiner Liste mit der Zahl auf der Tabelle übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Kämpfer der Stufe 7 sind, kann Ihre Liste der vorbereiteten Zaubersprüche fünf Zaubererzauber der Stufen 1 und 2 in beliebiger Kombination enthalten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ändern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie eine Kämpferstufe erreichen, können Sie einen Zauberspruch auf Ihrer Liste durch einen anderen Zaubererzauber ersetzen, für den Sie Zauberplätze haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfähigkeit. Intelligenz ist Ihre Zauberfähigkeit für Ihre Zaubersprüche."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfokus. Sie können einen Arkanen Fokus als Zauberfokus für Ihre Zaubersprüche verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Eldritch Knight-Zauberkunst"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Kämpfer-Level",
+          "Vorbereitete Zauber",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        [
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "4",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "5",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "6",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "7",
+          "5",
+          "4",
+          "2",
+          "-",
+          "-"
+        ],
+        [
+          "8",
+          "6",
+          "4",
+          "2",
+          "-",
+          "-"
+        ],
+        [
+          "9",
+          "6",
+          "4",
+          "2",
+          "-",
+          "-"
+        ],
+        [
+          "10",
+          "7",
+          "4",
+          "3",
+          "-",
+          "-"
+        ],
+        [
+          "11",
+          "8",
+          "4",
+          "3",
+          "-",
+          "-"
+        ],
+        [
+          "12",
+          "8",
+          "4",
+          "3",
+          "-",
+          "-"
+        ],
+        [
+          "13",
+          "9",
+          "4",
+          "3",
+          "2",
+          "-"
+        ],
+        [
+          "14",
+          "10",
+          "4",
+          "3",
+          "2",
+          "-"
+        ],
+        [
+          "15",
+          "10",
+          "4",
+          "3",
+          "2",
+          "-"
+        ],
+        [
+          "16",
+          "11",
+          "4",
+          "3",
+          "3",
+          "-"
+        ],
+        [
+          "17",
+          "11",
+          "4",
+          "3",
+          "3",
+          "-"
+        ],
+        [
+          "18",
+          "11",
+          "4",
+          "3",
+          "3",
+          "-"
+        ],
+        [
+          "19",
+          "12",
+          "4",
+          "3",
+          "3",
+          "1"
+        ],
+        [
+          "20",
+          "13",
+          "4",
+          "3",
+          "3",
+          "1"
+        ]
+      ],
+      "text": "Vorbereitete Zauber auf Kämpferstufe 1. 2. 3. 4. 3 3 2 - - - 4 4 3 - - - 5 4 3 - - - 6 4 3 - - - 7 5 4 2 - - 8 6 4 2 - - 9 6 4 2 - - 10 7 4 3 - - 11 8 4 3 - - 12 8 4 3 - - 13 9 4 3 2 - 14 10 4 3 2 - 15 10 4 3 2 - 16 11 4 3 3 - 17 11 4 3 3 - 18 11 4 3 3 - 19 12 4 3 3 1 20 13 4 3 3 1"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Kriegsanleihe"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du lernst ein Ritual, das eine magische Verbindung zwischen dir und einer Waffe herstellt. Sie führen das Ritual im Laufe einer Stunde durch, was auch während einer Kurzen Rast möglich ist. Die Waffe muss während des gesamten Rituals in Ihrer Reichweite sein. Am Ende des Rituals berühren Sie die Waffe und knüpfen den Bund. Die Bindung schlägt fehl, wenn ein anderer Kämpfer an die Waffe gebunden ist oder wenn es sich bei der Waffe um einen magischen Gegenstand handelt, auf den jemand anderes abgestimmt ist."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie eine Waffe an sich gebunden haben, können Sie diese Waffe nicht mehr entwaffnen, es sei denn, Sie verfügen über die Bedingung „Kampfunfähigkeit“. Wenn sie sich auf derselben Existenzebene befindet, können Sie diese Waffe als Bonusaktion beschwören, wodurch sie sofort auf Ihre Hand teleportiert wird."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können bis zu zwei gebundene Waffen haben, aber mit einer Bonusaktion können Sie jeweils nur eine beschwören. Wenn Sie versuchen, eine Bindung mit einer dritten Waffe herzustellen, müssen Sie die Bindung mit einer der anderen beiden lösen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Kriegsmagie"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie in Ihrem Zug die Angriffsaktion ausführen, können Sie einen der Angriffe durch das Wirken eines Ihrer Zauberer-Cantrips ersetzen, der eine Zauberzeit einer Aktion hat."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Unheimlicher Schlag"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du lernst, wie du mit deinen Waffenangriffen die Fähigkeit einer Kreatur untergräbst, deinen Zaubern zu widerstehen. Wenn du eine Kreatur mit einem Angriff mit einer Waffe triffst, hat diese Kreatur beim nächsten Rettungswurf, den sie ausführt, einen Nachteil gegen einen Zauber, den du vor dem Ende deines nächsten Zuges wirkst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Arkane Ladung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Ihre Aktion Surge verwenden, können Sie sich bis zu 30 Fuß weit zu einem freien, sichtbaren Ort teleportieren. Sie können sich vor oder nach der Zusatzaktion teleportieren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 18: Verbesserte Kriegsmagie"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie in Ihrem Zug die Angriffsaktion ausführen, können Sie zwei der Angriffe durch das Wirken eines Ihrer Zauberzauber der Stufe 1 oder 2 ersetzen, der eine Wirkzeit einer Aktion hat."
+    }
+  ],
+  "text": "Unterstützen Sie Kampffähigkeiten mit arkaner Magie\n\nEldritch Knights kombinieren die kriegerische Meisterschaft, die allen Kämpfern gemeinsam ist, mit einem sorgfältigen Studium der Magie. Ihre Zauber ergänzen und erweitern ihre Kampffähigkeiten, bieten zusätzlichen Schutz zur Verstärkung ihrer Rüstung und ermöglichen es ihnen, viele Feinde gleichzeitig mit explosiver Magie anzugreifen.\n\nLevel 3: Zaubern\n\nDu hast gelernt, Zauber zu wirken. Die Regeln zum Zaubern finden Sie in Kapitel 7. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln als Eldritch Knight anwenden.\n\nZaubertricks. Sie kennen zwei Cantrips Ihrer Wahl aus der Liste der Zaubererzauber (die Liste finden Sie im Abschnitt dieser Klasse). Empfohlen werden „Froststrahl“ und „Schockierender Griff“. Immer wenn Sie eine Kämpferstufe erreichen, können Sie einen dieser Cantrips durch einen anderen Cantrip Ihrer Wahl aus der Zaubererzauberliste ersetzen.\n\nWenn Sie Kämpferstufe 10 erreichen, lernen Sie einen weiteren Zauberer-Cantrip Ihrer Wahl.\n\nZauberplatz. Die Eldritch Knight-Zaubertabelle zeigt, wie viele Zauberslots Ihnen zum Wirken Ihrer Zauber der Stufe 1+ zur Verfügung stehen. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt.\n\nVorbereitete Zauber der Stufe 1+. Sie bereiten die Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst drei Zauber der Stufe 1 aus der Zauberliste des Zauberers aus. Empfohlen werden Burning Hands, Jump und Shield.\n\nDie Anzahl der Zauber auf Ihrer Liste erhöht sich mit zunehmender Kämpferstufe, wie in der Spalte „Vorbereitete Zauber“ der Eldritch Knight-Zaubertabelle angezeigt. Immer wenn sich diese Zahl erhöht, wähle weitere Zaubersprüche aus der Liste der Zaubererzauber, bis die Anzahl der Zaubersprüche auf deiner Liste mit der Zahl auf der Tabelle übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Kämpfer der Stufe 7 sind, kann Ihre Liste der vorbereiteten Zaubersprüche fünf Zaubererzauber der Stufen 1 und 2 in beliebiger Kombination enthalten.\n\nÄndern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie eine Kämpferstufe erreichen, können Sie einen Zauberspruch auf Ihrer Liste durch einen anderen Zaubererzauber ersetzen, für den Sie Zauberplätze haben.\n\nZauberfähigkeit. Intelligenz ist Ihre Zauberfähigkeit für Ihre Zaubersprüche.\n\nZauberfokus. Sie können einen Arkanen Fokus als Zauberfokus für Ihre Zaubersprüche verwenden.\n\nEldritch Knight-Zauberkunst\n\nVorbereitete Zauber auf Kämpferstufe 1. 2. 3. 4. 3 3 2 - - - 4 4 3 - - - 5 4 3 - - - 6 4 3 - - - 7 5 4 2 - - 8 6 4 2 - - 9 6 4 2 - - 10 7 4 3 - - 11 8 4 3 - - 12 8 4 3 - - 13 9 4 3 2 - 14 10 4 3 2 - 15 10 4 3 2 - 16 11 4 3 3 - 17 11 4 3 3 - 18 11 4 3 3 - 19 12 4 3 3 1 20 13 4 3 3 1\n\nLevel 3: Kriegsanleihe\n\nDu lernst ein Ritual, das eine magische Verbindung zwischen dir und einer Waffe herstellt. Sie führen das Ritual im Laufe einer Stunde durch, was auch während einer Kurzen Rast möglich ist. Die Waffe muss während des gesamten Rituals in Ihrer Reichweite sein. Am Ende des Rituals berühren Sie die Waffe und knüpfen den Bund. Die Bindung schlägt fehl, wenn ein anderer Kämpfer an die Waffe gebunden ist oder wenn es sich bei der Waffe um einen magischen Gegenstand handelt, auf den jemand anderes abgestimmt ist.\n\nSobald Sie eine Waffe an sich gebunden haben, können Sie diese Waffe nicht mehr entwaffnen, es sei denn, Sie verfügen über die Bedingung „Kampfunfähigkeit“. Wenn sie sich auf derselben Existenzebene befindet, können Sie diese Waffe als Bonusaktion beschwören, wodurch sie sofort auf Ihre Hand teleportiert wird.\n\nSie können bis zu zwei gebundene Waffen haben, aber mit einer Bonusaktion können Sie jeweils nur eine beschwören. Wenn Sie versuchen, eine Bindung mit einer dritten Waffe herzustellen, müssen Sie die Bindung mit einer der anderen beiden lösen.\n\nLevel 7: Kriegsmagie\n\nWenn Sie in Ihrem Zug die Angriffsaktion ausführen, können Sie einen der Angriffe durch das Wirken eines Ihrer Zauberer-Cantrips ersetzen, der eine Zauberzeit einer Aktion hat.\n\nLevel 10: Unheimlicher Schlag\n\nDu lernst, wie du mit deinen Waffenangriffen die Fähigkeit einer Kreatur untergräbst, deinen Zaubern zu widerstehen. Wenn du eine Kreatur mit einem Angriff mit einer Waffe triffst, hat diese Kreatur beim nächsten Rettungswurf, den sie ausführt, einen Nachteil gegen einen Zauber, den du vor dem Ende deines nächsten Zuges wirkst.\n\nLevel 15: Arkane Ladung\n\nWenn Sie Ihre Aktion Surge verwenden, können Sie sich bis zu 30 Fuß weit zu einem freien, sichtbaren Ort teleportieren. Sie können sich vor oder nach der Zusatzaktion teleportieren.\n\nLevel 18: Verbesserte Kriegsmagie\n\nWenn Sie in Ihrem Zug die Angriffsaktion ausführen, können Sie zwei der Angriffe durch das Wirken eines Ihrer Zauberzauber der Stufe 1 oder 2 ersetzen, der eine Wirkzeit einer Aktion hat.",
+  "tags": [],
+  "class": "Kaempfer",
+  "class_id": "kaempfer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

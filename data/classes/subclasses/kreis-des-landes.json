@@ -1,0 +1,251 @@
+{
+  "id": "kreis-des-landes",
+  "type": "subclass",
+  "name": "Kreis des Landes",
+  "original_name": "Circle of the Land",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/druid:circle-of-the-land",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Feiern Sie die Verbindung zur Natur",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Feiern Sie die Verbindung zur Natur"
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Kreis des Landes besteht aus Mystikern und Weisen, die altes Wissen und Rituale bewahren. Diese Druiden treffen sich in heiligen Kreisen aus Bäumen oder stehenden Steinen, um Urgeheimnisse auf Druidisch zu flüstern. Die weisesten Mitglieder des Kreises präsidieren als Oberpriester ihrer Gemeinschaften."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Kreis der Landzauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine Lange Rast beendet haben, wählen Sie einen Landtyp: trocken, polar, gemäßigt oder tropisch. Konsultieren Sie die Tabelle unten, die dem gewählten Typ entspricht; Sie haben die für Ihre Druidenstufe und niedriger aufgeführten Zaubersprüche vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Trockenes Land"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Druidenstufe",
+          "Kreiszauber"
+        ],
+        [
+          "3",
+          "Unschärfe, brennende Hände, Feuerblitz"
+        ],
+        [
+          "5",
+          "Feuerball"
+        ],
+        [
+          "7",
+          "Fäule"
+        ],
+        [
+          "9",
+          "Mauer aus Stein"
+        ]
+      ],
+      "text": "Druidenstufe Kreiszauber 3 Unschärfe, Brennende Hände, Feuerblitz 5 Feuerball 7 Seuche 9 Steinmauer"
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Polarland"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Druidenstufe",
+          "Kreiszauber"
+        ],
+        [
+          "3",
+          "Nebelwolke, Person festhalten, Froststrahl"
+        ],
+        [
+          "5",
+          "Graupelsturm"
+        ],
+        [
+          "7",
+          "Eissturm"
+        ],
+        [
+          "9",
+          "Kältekegel"
+        ]
+      ],
+      "text": "Druiden-Stufenkreiszauber 3 Nebelwolke, Person festhalten, Froststrahl 5 Graupelsturm 7 Eissturm 9 Kältekegel"
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Gemäßigtes Land"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Druidenstufe",
+          "Kreiszauber"
+        ],
+        [
+          "3",
+          "Nebliger Schritt, schockierender Griff, Schlaf"
+        ],
+        [
+          "5",
+          "Blitz"
+        ],
+        [
+          "7",
+          "Bewegungsfreiheit"
+        ],
+        [
+          "9",
+          "Baumschritt"
+        ]
+      ],
+      "text": "Druiden-Stufenkreiszauber: 3 Nebelschritt, Schockierender Griff, Schlaf, 5 Blitzschlag, 7 Bewegungsfreiheit, 9 Baumschritt"
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Tropisches Land"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Druidenstufe",
+          "Kreiszauber"
+        ],
+        [
+          "3",
+          "Acid Splash, Ray of Sickness, Web"
+        ],
+        [
+          "5",
+          "Stinkende Wolke"
+        ],
+        [
+          "7",
+          "Polymorph"
+        ],
+        [
+          "9",
+          "Insektenplage"
+        ]
+      ],
+      "text": "Druiden-Stufenkreiszauber: 3 Säurespritzer, Krankheitsstrahl, Netz, 5 Stinkende Wolke, 7 Verwandlung, 9 Insektenplage"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Landhilfe"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als magische Aktion können Sie Ihre Wildform nutzen und einen Punkt in einem Umkreis von 60 Fuß um sich selbst auswählen. Vitalität spendende Blumen und lebensraubende Dornen erscheinen für einen Moment in einer Kugel mit einem Radius von 10 Fuß, die auf diesem Punkt zentriert ist. Jede Kreatur Ihrer Wahl in der Sphäre muss einen Konstitutions-Rettungswurf gegen den SG Ihres Zauberwurfs ausführen und bei einem fehlgeschlagenen Rettungswurf 2W6 nekrotischen Schaden oder bei einem erfolgreichen Rettungswurf die Hälfte des Schadens erleiden. Eine Kreatur deiner Wahl in diesem Bereich erhält 2W6 Trefferpunkte zurück."
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Schaden und die Heilung erhöhen sich um 1W6, wenn Sie die Druidenstufen 10 (3W6) und 14 (4W6) erreichen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 6: Natürliche Erholung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können einen der Zauber der Stufe 1+ wirken, die Sie mit der Funktion „Kreiszauber“ vorbereitet haben, ohne einen Zauberslot zu verbrauchen, und Sie müssen einen Lange Rast abschließen, bevor Sie dies erneut tun können."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine Kurze Rast abgeschlossen haben, können Sie außerdem verbrauchte Zauberslots zur Wiederherstellung auswählen. Die Zauberslots können zusammen eine Stufe haben, die gleich oder kleiner als die Hälfte Ihrer Druidenstufe ist (aufgerundet), und keiner von ihnen darf Stufe 6+ sein. Wenn Sie beispielsweise ein Druide der Stufe 6 sind, können Sie Zauberslots im Wert von bis zu drei Stufen wiederherstellen. Sie können einen Zauberslot der Stufe 3, einen Zauberslot der Stufe 2 und einen Zauberslot der Stufe 1 oder drei Zauberslots der Stufe 1 wiederherstellen. Sobald Sie mit dieser Funktion Zauberslots wiederhergestellt haben, können Sie dies erst wieder tun, wenn Sie eine Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Schutz der Natur"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie sind immun gegen den Zustand „Vergiftet“ und verfügen über Resistenz gegen eine Schadensart, die mit Ihrer aktuellen Landwahl in der Kreiszauberfunktion verknüpft ist, wie in der Tabelle „Nature’s Ward“ gezeigt."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Schutz der Natur"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Landtyp",
+          "Widerstand"
+        ],
+        [
+          "Trocken",
+          "Feuer"
+        ],
+        [
+          "Polar",
+          "Kalt"
+        ],
+        [
+          "Gemäßigt",
+          "Blitz"
+        ],
+        [
+          "Tropisch",
+          "Gift"
+        ]
+      ],
+      "text": "Landtyp Resistenz Trockenes Feuer Polares Kaltes Gemäßigtes Klima Blitz Tropisches Gift"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Naturschutzgebiet"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als magische Aktion können Sie Ihre Wildform nutzen und gespenstische Bäume und Ranken in einem 15-Fuß-Würfel auf dem Boden in einem Umkreis von 120 Fuß um sich herum erscheinen lassen. Sie bleiben dort 1 Minute lang bestehen oder bis Sie den Zustand „Kampfunfähig“ haben oder sterben. Sie und Ihre Verbündeten haben in diesem Bereich halbe Deckung und Ihre Verbündeten erhalten dort die aktuelle Resistenz Ihres Naturschutzes."
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion können Sie den Würfel in einem Umkreis von 120 Fuß um Sie herum bis zu 60 Fuß über den Boden bewegen."
+    }
+  ],
+  "text": "Feiern Sie die Verbindung zur Natur\n\nDer Kreis des Landes besteht aus Mystikern und Weisen, die altes Wissen und Rituale bewahren. Diese Druiden treffen sich in heiligen Kreisen aus Bäumen oder stehenden Steinen, um Urgeheimnisse auf Druidisch zu flüstern. Die weisesten Mitglieder des Kreises präsidieren als Oberpriester ihrer Gemeinschaften.\n\nLevel 3: Kreis der Landzauber\n\nWenn Sie eine Lange Rast beendet haben, wählen Sie einen Landtyp: trocken, polar, gemäßigt oder tropisch. Konsultieren Sie die Tabelle unten, die dem gewählten Typ entspricht; Sie haben die für Ihre Druidenstufe und niedriger aufgeführten Zaubersprüche vorbereitet.\n\nTrockenes Land\n\nDruidenstufe Kreiszauber 3 Unschärfe, Brennende Hände, Feuerblitz 5 Feuerball 7 Seuche 9 Steinmauer\n\nPolarland\n\nDruiden-Stufenkreiszauber 3 Nebelwolke, Person festhalten, Froststrahl 5 Graupelsturm 7 Eissturm 9 Kältekegel\n\nGemäßigtes Land\n\nDruiden-Stufenkreiszauber: 3 Nebelschritt, Schockierender Griff, Schlaf, 5 Blitzschlag, 7 Bewegungsfreiheit, 9 Baumschritt\n\nTropisches Land\n\nDruiden-Stufenkreiszauber: 3 Säurespritzer, Krankheitsstrahl, Netz, 5 Stinkende Wolke, 7 Verwandlung, 9 Insektenplage\n\nStufe 3: Landhilfe\n\nAls magische Aktion können Sie Ihre Wildform nutzen und einen Punkt in einem Umkreis von 60 Fuß um sich selbst auswählen. Vitalität spendende Blumen und lebensraubende Dornen erscheinen für einen Moment in einer Kugel mit einem Radius von 10 Fuß, die auf diesem Punkt zentriert ist. Jede Kreatur Ihrer Wahl in der Sphäre muss einen Konstitutions-Rettungswurf gegen den SG Ihres Zauberwurfs ausführen und bei einem fehlgeschlagenen Rettungswurf 2W6 nekrotischen Schaden oder bei einem erfolgreichen Rettungswurf die Hälfte des Schadens erleiden. Eine Kreatur deiner Wahl in diesem Bereich erhält 2W6 Trefferpunkte zurück.\n\nDer Schaden und die Heilung erhöhen sich um 1W6, wenn Sie die Druidenstufen 10 (3W6) und 14 (4W6) erreichen.\n\nStufe 6: Natürliche Erholung\n\nSie können einen der Zauber der Stufe 1+ wirken, die Sie mit der Funktion „Kreiszauber“ vorbereitet haben, ohne einen Zauberslot zu verbrauchen, und Sie müssen einen Lange Rast abschließen, bevor Sie dies erneut tun können.\n\nWenn Sie eine Kurze Rast abgeschlossen haben, können Sie außerdem verbrauchte Zauberslots zur Wiederherstellung auswählen. Die Zauberslots können zusammen eine Stufe haben, die gleich oder kleiner als die Hälfte Ihrer Druidenstufe ist (aufgerundet), und keiner von ihnen darf Stufe 6+ sein. Wenn Sie beispielsweise ein Druide der Stufe 6 sind, können Sie Zauberslots im Wert von bis zu drei Stufen wiederherstellen. Sie können einen Zauberslot der Stufe 3, einen Zauberslot der Stufe 2 und einen Zauberslot der Stufe 1 oder drei Zauberslots der Stufe 1 wiederherstellen. Sobald Sie mit dieser Funktion Zauberslots wiederhergestellt haben, können Sie dies erst wieder tun, wenn Sie eine Lange Rast abgeschlossen haben.\n\nLevel 10: Schutz der Natur\n\nSie sind immun gegen den Zustand „Vergiftet“ und verfügen über Resistenz gegen eine Schadensart, die mit Ihrer aktuellen Landwahl in der Kreiszauberfunktion verknüpft ist, wie in der Tabelle „Nature’s Ward“ gezeigt.\n\nSchutz der Natur\n\nLandtyp Resistenz Trockenes Feuer Polares Kaltes Gemäßigtes Klima Blitz Tropisches Gift\n\nLevel 14: Naturschutzgebiet\n\nAls magische Aktion können Sie Ihre Wildform nutzen und gespenstische Bäume und Ranken in einem 15-Fuß-Würfel auf dem Boden in einem Umkreis von 120 Fuß um sich herum erscheinen lassen. Sie bleiben dort 1 Minute lang bestehen oder bis Sie den Zustand „Kampfunfähig“ haben oder sterben. Sie und Ihre Verbündeten haben in diesem Bereich halbe Deckung und Ihre Verbündeten erhalten dort die aktuelle Resistenz Ihres Naturschutzes.\n\nAls Bonusaktion können Sie den Würfel in einem Umkreis von 120 Fuß um Sie herum bis zu 60 Fuß über den Boden bewegen.",
+  "tags": [],
+  "class": "Druide",
+  "class_id": "druide",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

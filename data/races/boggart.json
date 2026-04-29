@@ -1,0 +1,135 @@
+{
+  "id": "boggart",
+  "type": "race",
+  "name": "Boggart",
+  "original_name": "Boggart",
+  "rules_version": "2024",
+  "source": "Lorwyn - First Light",
+  "source_url": "http://dnd2024.wikidot.com/species:boggart",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Lorwyn",
+  "prerequisites": [],
+  "summary": "Irrwichte sind kleine, gedrungene Kobolde, die im Reich Lorwyn-Shadowmoor vorkommen. Sie besitzen bestialische körperliche Merkmale, darunter Hörner und tierähnliche Schnauzen. Abgesehen von diesen Gemeinsamkeiten ist das Erscheinungsbild des Trottels sehr unterschiedlich. Der eine Irrwicht könnte wie ein Igel aussehen, mit stacheligem Fell und Knopfaugen, während ein anderer vielleicht die Schnauze und die fleischigen Ohren eines Schweins hat. Boggarts lieben es, Tränke herzustellen und konzentrieren sich häufig auf bestimmte Fachgebiete, wie in den folgenden Abschnitten erwähnt.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Irrwichte sind kleine, gedrungene Kobolde, die im Reich Lorwyn-Shadowmoor vorkommen. Sie besitzen bestialische körperliche Merkmale, darunter Hörner und tierähnliche Schnauzen. Abgesehen von diesen Gemeinsamkeiten ist das Erscheinungsbild des Trottels sehr unterschiedlich. Der eine Irrwicht könnte wie ein Igel aussehen, mit stacheligem Fell und Knopfaugen, während ein anderer vielleicht die Schnauze und die fleischigen Ohren eines Schweins hat. Boggarts lieben es, Tränke herzustellen und konzentrieren sich häufig auf bestimmte Fachgebiete, wie in den folgenden Abschnitten erwähnt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "In Lorwyn"
+    },
+    {
+      "type": "paragraph",
+      "text": "Boggarts in Lorwyn werden in Gemeinschaftsgehegen hineingeboren, in denen Gesetze und Hierarchien als Vorschläge betrachtet werden. Die ältesten und mächtigsten Boggarts, bekannt als „Tanten“, dienen als angesehene Anführer, die für den Frieden sorgen. Lorwyn Boggarts legen Wert darauf, Wissen und vergangene Erfahrungen mit ihren Gemeinden zu teilen. Viele sind bereit, großen Gefahren auf der Suche nach neuen Erfahrungen zu trotzen, und Abenteurer sind weit verbreitet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Lorwyn Boggarts haben auch ein Händchen für Magie. Irrwichte, die sich dazu hingezogen fühlen, diese natürlichen Affinitäten zu erlernen und zu nutzen, werden oft zu Druiden. Ein Irrwicht aus Lorwyn könnte alternativ eine Berufung als Waldläufer, insbesondere der Unterklasse der Fey Wanderer, oder als Zauberer, insbesondere der Unterklasse der Wahrsager, finden, da Irrwichte bewiesen haben, dass sie gern Informationen durch Weissagungsmagie ermitteln."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Im Schattenmoor"
+    },
+    {
+      "type": "paragraph",
+      "text": "Boggarts in Shadowmoor haben im Allgemeinen schärfere körperliche Merkmale als Lorwyn Boggarts, einschließlich zusätzlicher Hörner. Sie sind auch für Körpermodifikationen bekannt, wie zum Beispiel das Annieten von Panzerplatten an ihrer Haut. Die Boggart-Gesellschaft von Shadowmoor ist chaotisch und dezentralisiert; Ihre Gemeinschaften sind gering und wahrscheinlich in isolierten oder gefährlichen Umgebungen zu finden. Tanten in Shadowmoor wandern durch das Land und begrüßen diejenigen, denen sie begegnen, mit willkürlichen Prüfungen, Segenswünschen oder sogar Flüchen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wie ihre Lorwyn-Kollegen fühlen sich auch die Boggarts aus Shadowmoor von der Magie angezogen. Diese Irrwichte könnten Hexenmeister werden, insbesondere mit einer Neigung zur Unterklasse der Archfey-Patronen; Manche glauben vielleicht, ihr Gönner sei Isilu. Andere erweisen sich als Zauberer und manifestieren ihre Macht besonders wahrscheinlich in Form der Unterklasse Wild Magic Sorcery."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Boggart-Eigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp. Du bist ein Humanoid. Sie gelten auch als Goblinoid für alle Voraussetzungen oder Effekte, die erfordern, dass Sie ein Goblinoid sind."
+    },
+    {
+      "type": "paragraph",
+      "text": "Größe. Sie sind klein (ca. 60–120 cm groß)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschwindigkeit. Ihre Gehgeschwindigkeit beträgt 30 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Boggart hast du diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dunkelsicht. Sie können bei schwachem Licht in einem Umkreis von 60 Fuß um Sie herum sehen, als ob es helles Licht wäre, und bei Dunkelheit, als wäre es schwaches Licht. Sie erkennen Farben in dieser Dunkelheit nur als Grautöne."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fey-Abstammung. Sie haben einen Vorteil bei Rettungswürfen, die Sie durchführen, um den verzauberten Zustand auf sich selbst zu vermeiden oder zu beenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wut des Kleinen. Wenn du einer Kreatur mit einem Angriff oder einem Zauber Schaden zufügst und die Größe der Kreatur größer als deine ist, kannst du bewirken, dass der Angriff oder Zauber der Kreatur zusätzlichen Schaden zufügt. Der zusätzliche Schaden entspricht Ihrem Fähigkeitsbonus. Sie können diese Eigenschaft so oft verwenden, wie es Ihrem Fähigkeitsbonus entspricht. Nach einer langen Pause erhalten Sie alle verbrauchten Verwendungen zurück und können sie höchstens einmal pro Spielzug verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Flinke Flucht. Du kannst in jedem deiner Züge die Aktion „Entfernen“ oder „Verstecken“ als Bonusaktion ausführen."
+    }
+  ],
+  "text": "Irrwichte sind kleine, gedrungene Kobolde, die im Reich Lorwyn-Shadowmoor vorkommen. Sie besitzen bestialische körperliche Merkmale, darunter Hörner und tierähnliche Schnauzen. Abgesehen von diesen Gemeinsamkeiten ist das Erscheinungsbild des Trottels sehr unterschiedlich. Der eine Irrwicht könnte wie ein Igel aussehen, mit stacheligem Fell und Knopfaugen, während ein anderer vielleicht die Schnauze und die fleischigen Ohren eines Schweins hat. Boggarts lieben es, Tränke herzustellen und konzentrieren sich häufig auf bestimmte Fachgebiete, wie in den folgenden Abschnitten erwähnt.\n\nIn Lorwyn\n\nBoggarts in Lorwyn werden in Gemeinschaftsgehegen hineingeboren, in denen Gesetze und Hierarchien als Vorschläge betrachtet werden. Die ältesten und mächtigsten Boggarts, bekannt als „Tanten“, dienen als angesehene Anführer, die für den Frieden sorgen. Lorwyn Boggarts legen Wert darauf, Wissen und vergangene Erfahrungen mit ihren Gemeinden zu teilen. Viele sind bereit, großen Gefahren auf der Suche nach neuen Erfahrungen zu trotzen, und Abenteurer sind weit verbreitet.\n\nLorwyn Boggarts haben auch ein Händchen für Magie. Irrwichte, die sich dazu hingezogen fühlen, diese natürlichen Affinitäten zu erlernen und zu nutzen, werden oft zu Druiden. Ein Irrwicht aus Lorwyn könnte alternativ eine Berufung als Waldläufer, insbesondere der Unterklasse der Fey Wanderer, oder als Zauberer, insbesondere der Unterklasse der Wahrsager, finden, da Irrwichte bewiesen haben, dass sie gern Informationen durch Weissagungsmagie ermitteln.\n\nIm Schattenmoor\n\nBoggarts in Shadowmoor haben im Allgemeinen schärfere körperliche Merkmale als Lorwyn Boggarts, einschließlich zusätzlicher Hörner. Sie sind auch für Körpermodifikationen bekannt, wie zum Beispiel das Annieten von Panzerplatten an ihrer Haut. Die Boggart-Gesellschaft von Shadowmoor ist chaotisch und dezentralisiert; Ihre Gemeinschaften sind gering und wahrscheinlich in isolierten oder gefährlichen Umgebungen zu finden. Tanten in Shadowmoor wandern durch das Land und begrüßen diejenigen, denen sie begegnen, mit willkürlichen Prüfungen, Segenswünschen oder sogar Flüchen.\n\nWie ihre Lorwyn-Kollegen fühlen sich auch die Boggarts aus Shadowmoor von der Magie angezogen. Diese Irrwichte könnten Hexenmeister werden, insbesondere mit einer Neigung zur Unterklasse der Archfey-Patronen; Manche glauben vielleicht, ihr Gönner sei Isilu. Andere erweisen sich als Zauberer und manifestieren ihre Macht besonders wahrscheinlich in Form der Unterklasse Wild Magic Sorcery.\n\nBoggart-Eigenschaften\n\nKreaturentyp. Du bist ein Humanoid. Sie gelten auch als Goblinoid für alle Voraussetzungen oder Effekte, die erfordern, dass Sie ein Goblinoid sind.\n\nGröße. Sie sind klein (ca. 60–120 cm groß).\n\nGeschwindigkeit. Ihre Gehgeschwindigkeit beträgt 30 Fuß.\n\nAls Boggart hast du diese besonderen Eigenschaften.\n\nDunkelsicht. Sie können bei schwachem Licht in einem Umkreis von 60 Fuß um Sie herum sehen, als ob es helles Licht wäre, und bei Dunkelheit, als wäre es schwaches Licht. Sie erkennen Farben in dieser Dunkelheit nur als Grautöne.\n\nFey-Abstammung. Sie haben einen Vorteil bei Rettungswürfen, die Sie durchführen, um den verzauberten Zustand auf sich selbst zu vermeiden oder zu beenden.\n\nWut des Kleinen. Wenn du einer Kreatur mit einem Angriff oder einem Zauber Schaden zufügst und die Größe der Kreatur größer als deine ist, kannst du bewirken, dass der Angriff oder Zauber der Kreatur zusätzlichen Schaden zufügt. Der zusätzliche Schaden entspricht Ihrem Fähigkeitsbonus. Sie können diese Eigenschaft so oft verwenden, wie es Ihrem Fähigkeitsbonus entspricht. Nach einer langen Pause erhalten Sie alle verbrauchten Verwendungen zurück und können sie höchstens einmal pro Spielzug verwenden.\n\nFlinke Flucht. Du kannst in jedem deiner Züge die Aktion „Entfernen“ oder „Verstecken“ als Bonusaktion ausführen.",
+  "tags": [],
+  "size": [],
+  "creature_type": "",
+  "speed": {
+    "walk": null,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Lorwyn Boggarts haben auch ein Händchen für Magie",
+      "text": "Irrwichte, die sich dazu hingezogen fühlen, diese natürlichen Affinitäten zu erlernen und zu nutzen, werden oft zu Druiden. Ein Irrwicht aus Lorwyn könnte alternativ eine Berufung als Waldläufer, insbesondere der Unterklasse der Fey Wanderer, oder als Zauberer, insbesondere der Unterklasse der Wahrsager, finden, da Irrwichte bewiesen haben, dass sie gern Informationen durch Weissagungsmagie ermitteln."
+    },
+    {
+      "name": "Größe",
+      "text": "Sie sind klein (ca. 60–120 cm groß)."
+    },
+    {
+      "name": "Geschwindigkeit",
+      "text": "Ihre Gehgeschwindigkeit beträgt 30 Fuß."
+    },
+    {
+      "name": "Dunkelsicht",
+      "text": "Sie können bei schwachem Licht in einem Umkreis von 60 Fuß um Sie herum sehen, als ob es helles Licht wäre, und bei Dunkelheit, als wäre es schwaches Licht. Sie erkennen Farben in dieser Dunkelheit nur als Grautöne."
+    },
+    {
+      "name": "Fey-Abstammung",
+      "text": "Sie haben einen Vorteil bei Rettungswürfen, die Sie durchführen, um den verzauberten Zustand auf sich selbst zu vermeiden oder zu beenden."
+    },
+    {
+      "name": "Wut des Kleinen",
+      "text": "Wenn du einer Kreatur mit einem Angriff oder einem Zauber Schaden zufügst und die Größe der Kreatur größer als deine ist, kannst du bewirken, dass der Angriff oder Zauber der Kreatur zusätzlichen Schaden zufügt. Der zusätzliche Schaden entspricht Ihrem Fähigkeitsbonus. Sie können diese Eigenschaft so oft verwenden, wie es Ihrem Fähigkeitsbonus entspricht. Nach einer langen Pause erhalten Sie alle verbrauchten Verwendungen zurück und können sie höchstens einmal pro Spielzug verwenden."
+    },
+    {
+      "name": "Flinke Flucht",
+      "text": "Du kannst in jedem deiner Züge die Aktion „Entfernen“ oder „Verstecken“ als Bonusaktion ausführen."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

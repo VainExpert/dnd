@@ -1,0 +1,62 @@
+{
+  "id": "armbrust-experte",
+  "type": "feat",
+  "name": "Armbrust-Experte",
+  "original_name": "Crossbow Expert",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:crossbow-expert",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Geschicklichkeit 13+"
+  ],
+  "summary": "Voraussetzung: Level 4+, Geschicklichkeit 13+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, Geschicklichkeit 13+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Geschicklichkeitswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Laden ignorieren. Sie ignorieren die Ladeeigenschaft der Handarmbrust, der schweren Armbrust und der leichten Armbrust (an anderer Stelle in diesem Kunststück alle als Armbrüste bezeichnet). Wenn Sie eines davon in der Hand halten, können Sie ein Stück Munition hineinladen, auch wenn Sie keine freie Hand haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schießen im Nahkampf. Wenn Sie sich in einem Umkreis von 5 Fuß um einen Feind aufhalten, bedeutet dies keinen Nachteil für Ihre Angriffswürfe mit Armbrüsten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Beidhändigkeit. Wenn Sie den zusätzlichen Angriff mit der Lichteigenschaft ausführen, können Sie Ihren Fähigkeitsmodifikator zum Schaden des zusätzlichen Angriffs hinzufügen, wenn dieser Angriff mit einer Armbrust erfolgt, die über die Lichteigenschaft verfügt, und Sie diesen Modifikator nicht bereits zum Schaden hinzufügen."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, Geschicklichkeit 13+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Geschicklichkeitswert um 1 auf maximal 20.\n\nLaden ignorieren. Sie ignorieren die Ladeeigenschaft der Handarmbrust, der schweren Armbrust und der leichten Armbrust (an anderer Stelle in diesem Kunststück alle als Armbrüste bezeichnet). Wenn Sie eines davon in der Hand halten, können Sie ein Stück Munition hineinladen, auch wenn Sie keine freie Hand haben.\n\nSchießen im Nahkampf. Wenn Sie sich in einem Umkreis von 5 Fuß um einen Feind aufhalten, bedeutet dies keinen Nachteil für Ihre Angriffswürfe mit Armbrüsten.\n\nBeidhändigkeit. Wenn Sie den zusätzlichen Angriff mit der Lichteigenschaft ausführen, können Sie Ihren Fähigkeitsmodifikator zum Schaden des zusätzlichen Angriffs hinzufügen, wenn dieser Angriff mit einer Armbrust erfolgt, die über die Lichteigenschaft verfügt, und Sie diesen Modifikator nicht bereits zum Schaden hinzufügen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "dex"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": "khoravar",
+  "type": "race",
+  "name": "Khoravar",
+  "original_name": "Khoravar",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/species:khoravar",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Im Laufe der Jahrhunderte haben die Nachkommen von Menschen und Elfen in Khorvaire ihre eigenen Gemeinschaften und Traditionen entwickelt. Der Aufstieg der Häuser Lyrandar und Medani hat diese Identität gestärkt. Mitglieder dieser Gemeinschaften nennen sich Khoravar, ein elbischer Begriff, der „Kinder von Khorvaire“ bedeutet, da sie den Begriff „Halbelf“ nicht mögen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Im Laufe der Jahrhunderte haben die Nachkommen von Menschen und Elfen in Khorvaire ihre eigenen Gemeinschaften und Traditionen entwickelt. Der Aufstieg der Häuser Lyrandar und Medani hat diese Identität gestärkt. Mitglieder dieser Gemeinschaften nennen sich Khoravar, ein elbischer Begriff, der „Kinder von Khorvaire“ bedeutet, da sie den Begriff „Halbelf“ nicht mögen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Viele Khoravar vertreten die Idee, „die Brücke zwischen“ zu sein, und glauben, dass sie dazu berufen sind, die Kommunikation und Zusammenarbeit zwischen Mitgliedern verschiedener Kulturen oder Arten zu erleichtern. Khoravar, die dieser Philosophie folgen, werden oft Barden, Diplomaten, Vermittler oder Übersetzer. Andere sind fasziniert von ihrer fernen Verbindung zu den Fey und versuchen, Brücken zwischen der Materiellen Ebene und der Feywildnis von Thelanis zu bauen. Diese Khoravar werden oft zu Druiden oder Hexenmeistern mit Erzfey-Gönnern."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Khoravar-Eigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Humanoid"
+    },
+    {
+      "type": "paragraph",
+      "text": "Größe: Mittel (ca. 4–6 Fuß hoch) oder Klein (ca. 2–4 Fuß hoch), ausgewählt bei der Auswahl dieser Art"
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschwindigkeit: 30 Fuß"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Khoravar verfügen Sie über diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fey-Abstammung. Sie haben einen Vorteil bei Rettungswürfen, die Sie ausführen, um den Charmed-Zustand zu vermeiden oder zu beenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Feengeschenk. Sie kennen den Friends-Cantrip. Immer wenn Sie einen Lange Rast abgeschlossen haben, können Sie diesen Cantrip durch einen anderen Cantrip aus der Zauberliste „Kleriker“, „Druide“ oder „Zauberer“ ersetzen. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für den Zauber, den Sie mit dieser Eigenschaft wirken (wird ausgewählt, wenn Sie diese Spezies auswählen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Lethargie-Resilienz. Wenn Ihnen ein Rettungswurf zur Vermeidung oder Beendigung der Bewusstlosigkeit misslingt, können Sie stattdessen Erfolg haben. Sobald Sie diese Eigenschaft verwenden, können Sie dies nicht erneut tun, bis Sie 1W4 Lange Rasts beendet haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vielseitigkeit der Fähigkeiten. Sie erwerben Kenntnisse in einer Fertigkeit oder einem Werkzeug Ihrer Wahl. Immer wenn Sie eine Lange Rast abgeschlossen haben, können Sie sie durch eine andere Fertigkeit oder Werkzeugkompetenz ersetzen."
+    }
+  ],
+  "text": "Im Laufe der Jahrhunderte haben die Nachkommen von Menschen und Elfen in Khorvaire ihre eigenen Gemeinschaften und Traditionen entwickelt. Der Aufstieg der Häuser Lyrandar und Medani hat diese Identität gestärkt. Mitglieder dieser Gemeinschaften nennen sich Khoravar, ein elbischer Begriff, der „Kinder von Khorvaire“ bedeutet, da sie den Begriff „Halbelf“ nicht mögen.\n\nViele Khoravar vertreten die Idee, „die Brücke zwischen“ zu sein, und glauben, dass sie dazu berufen sind, die Kommunikation und Zusammenarbeit zwischen Mitgliedern verschiedener Kulturen oder Arten zu erleichtern. Khoravar, die dieser Philosophie folgen, werden oft Barden, Diplomaten, Vermittler oder Übersetzer. Andere sind fasziniert von ihrer fernen Verbindung zu den Fey und versuchen, Brücken zwischen der Materiellen Ebene und der Feywildnis von Thelanis zu bauen. Diese Khoravar werden oft zu Druiden oder Hexenmeistern mit Erzfey-Gönnern.\n\nKhoravar-Eigenschaften\n\nKreaturentyp: Humanoid\n\nGröße: Mittel (ca. 4–6 Fuß hoch) oder Klein (ca. 2–4 Fuß hoch), ausgewählt bei der Auswahl dieser Art\n\nGeschwindigkeit: 30 Fuß\n\nAls Khoravar verfügen Sie über diese besonderen Eigenschaften.\n\nDunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß.\n\nFey-Abstammung. Sie haben einen Vorteil bei Rettungswürfen, die Sie ausführen, um den Charmed-Zustand zu vermeiden oder zu beenden.\n\nFeengeschenk. Sie kennen den Friends-Cantrip. Immer wenn Sie einen Lange Rast abgeschlossen haben, können Sie diesen Cantrip durch einen anderen Cantrip aus der Zauberliste „Kleriker“, „Druide“ oder „Zauberer“ ersetzen. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für den Zauber, den Sie mit dieser Eigenschaft wirken (wird ausgewählt, wenn Sie diese Spezies auswählen).\n\nLethargie-Resilienz. Wenn Ihnen ein Rettungswurf zur Vermeidung oder Beendigung der Bewusstlosigkeit misslingt, können Sie stattdessen Erfolg haben. Sobald Sie diese Eigenschaft verwenden, können Sie dies nicht erneut tun, bis Sie 1W4 Lange Rasts beendet haben.\n\nVielseitigkeit der Fähigkeiten. Sie erwerben Kenntnisse in einer Fertigkeit oder einem Werkzeug Ihrer Wahl. Immer wenn Sie eine Lange Rast abgeschlossen haben, können Sie sie durch eine andere Fertigkeit oder Werkzeugkompetenz ersetzen.",
+  "tags": [],
+  "size": [
+    "Klein",
+    "Mittel"
+  ],
+  "creature_type": "Humanoid",
+  "speed": {
+    "walk": 9,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Dunkelsicht",
+      "text": "Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß."
+    },
+    {
+      "name": "Fey-Abstammung",
+      "text": "Sie haben einen Vorteil bei Rettungswürfen, die Sie ausführen, um den Charmed-Zustand zu vermeiden oder zu beenden."
+    },
+    {
+      "name": "Feengeschenk",
+      "text": "Sie kennen den Friends-Cantrip. Immer wenn Sie einen Lange Rast abgeschlossen haben, können Sie diesen Cantrip durch einen anderen Cantrip aus der Zauberliste „Kleriker“, „Druide“ oder „Zauberer“ ersetzen. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für den Zauber, den Sie mit dieser Eigenschaft wirken (wird ausgewählt, wenn Sie diese Spezies auswählen)."
+    },
+    {
+      "name": "Lethargie-Resilienz",
+      "text": "Wenn Ihnen ein Rettungswurf zur Vermeidung oder Beendigung der Bewusstlosigkeit misslingt, können Sie stattdessen Erfolg haben. Sobald Sie diese Eigenschaft verwenden, können Sie dies nicht erneut tun, bis Sie 1W4 Lange Rasts beendet haben."
+    },
+    {
+      "name": "Vielseitigkeit der Fähigkeiten",
+      "text": "Sie erwerben Kenntnisse in einer Fertigkeit oder einem Werkzeug Ihrer Wahl. Immer wenn Sie eine Lange Rast abgeschlossen haben, können Sie sie durch eine andere Fertigkeit oder Werkzeugkompetenz ersetzen."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

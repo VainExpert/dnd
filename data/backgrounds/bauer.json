@@ -1,0 +1,74 @@
+{
+  "id": "bauer",
+  "type": "background",
+  "name": "Bauer",
+  "original_name": "Farmer",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/background:farmer",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Du bist nah am Land aufgewachsen. Die jahrelange Beschäftigung mit Tieren und der Bewirtschaftung der Erde hat Sie mit Geduld und guter Gesundheit belohnt. Sie haben eine ausgeprägte Wertschätzung für die Großzügigkeit der Natur und gleichzeitig einen gesunden Respekt vor dem Zorn der Natur.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Du bist nah am Land aufgewachsen. Die jahrelange Beschäftigung mit Tieren und der Bewirtschaftung der Erde hat Sie mit Geduld und guter Gesundheit belohnt. Sie haben eine ausgeprägte Wertschätzung für die Großzügigkeit der Natur und gleichzeitig einen gesunden Respekt vor dem Zorn der Natur."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Stärke, Konstitution, Weisheit Talent: Harte Fertigkeit Fertigkeiten: Umgang mit Tieren und Natur Werkzeugkompetenz: Zimmermannswerkzeuge Ausrüstung: Wählen Sie A oder B: (A) Sichel, Zimmermannswerkzeuge, Heilerausrüstung, Eisentopf, Schaufel, Reisekleidung, 30 GP; oder (B) 50 GP"
+    }
+  ],
+  "text": "Du bist nah am Land aufgewachsen. Die jahrelange Beschäftigung mit Tieren und der Bewirtschaftung der Erde hat Sie mit Geduld und guter Gesundheit belohnt. Sie haben eine ausgeprägte Wertschätzung für die Großzügigkeit der Natur und gleichzeitig einen gesunden Respekt vor dem Zorn der Natur.\n\nFähigkeitswerte: Stärke, Konstitution, Weisheit Talent: Harte Fertigkeit Fertigkeiten: Umgang mit Tieren und Natur Werkzeugkompetenz: Zimmermannswerkzeuge Ausrüstung: Wählen Sie A oder B: (A) Sichel, Zimmermannswerkzeuge, Heilerausrüstung, Eisentopf, Schaufel, Reisekleidung, 30 GP; oder (B) 50 GP",
+  "tags": [],
+  "ability_scores": [
+    "str",
+    "con",
+    "wis"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "str",
+      "con",
+      "wis"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Tierhandhabung",
+    "Natur"
+  ],
+  "tool_proficiencies": [
+    "Zimmermannswerkzeuge"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "harte-fertigkeit",
+  "granted_feat_name": "Harte Fertigkeit",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wählen Sie A oder B: (A) Sichel, Zimmermannswerkzeuge, Heilerausrüstung, Eisentopf, Schaufel, Reisekleidung, 30 GP; oder (B) 50 GP"
+    }
+  ]
+}

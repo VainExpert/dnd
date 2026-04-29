@@ -34,7 +34,10 @@
   "granted_action_ids": [],
   "granted_spell_ids": [],
   "contained_item_ids": [],
-  "effects": ["6 m helles Licht", "6 m gedimmtes Licht"],
+  "effects": [
+    "6 m helles Licht",
+    "6 m gedimmtes Licht"
+  ],
   "use_cost": "Bonus Aktion",
   "text": "Während der Ring offen ist, produziert er eine kleine, nicht warme Flamme, die keinen Zunder braucht. Diese macht 6 m helles Licht und weitere 6 m gedimmtes Licht. Der Ring kann als Bonus Aktion geöffnet oder geschlossen werden.",
   "tags": [
@@ -46,5 +49,9 @@
     "licht",
     "bonus aktion"
   ],
-  "vendors": ["Abenteurerladen", "Ishmar's Magisches Allerlei", "Beute", "Zwergenschmied"]
+  "vendors": [
+    "Abenteurerladen",
+    "Ishmar's Magisches Allerlei",
+    "Zwergenschmied"
+  ]
 }

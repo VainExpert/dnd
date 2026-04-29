@@ -3,8 +3,7 @@
   "type": "item",
   "name": "Münze des Kaufens",
   "vendors": [
-    "Ishmar's Magisches Allerlei",
-    "Beute"
+    "Ishmar's Magisches Allerlei"
   ],
   "rules_version": "2024",
   "source": "PHB'24",

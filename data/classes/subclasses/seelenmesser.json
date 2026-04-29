@@ -1,0 +1,169 @@
+{
+  "id": "seelenmesser",
+  "type": "subclass",
+  "name": "Seelenmesser",
+  "original_name": "Soulknife",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/rogue:soulknife",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Schlagen Sie Feinde mit psionischen Klingen an. Ein Seelenmesser schlägt mit dem Geist zu und durchbricht sowohl physische als auch psychische Barrieren. Diese Schurken entdecken psionische Kräfte in sich und kanalisieren sie für ihre schurkische Arbeit. Als Seelenmesser haben Sie Ihre psionischen Fähigkeiten möglicherweise schon seit Ihrer Kindheit verfolgt und ihr volles Potenzial erst dann offenbart, wenn Sie den Stress des Abenteuers erlebt haben. Oder Sie haben vielleicht einen Orden übersinnlicher Adepten aufgesucht und Jahre damit verbracht, zu lernen, wie Sie Ihre Macht manifestieren können.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Schlagen Sie Feinde mit psionischen Klingen an. Ein Seelenmesser schlägt mit dem Geist zu und durchbricht sowohl physische als auch psychische Barrieren. Diese Schurken entdecken psionische Kräfte in sich und kanalisieren sie für ihre schurkische Arbeit. Als Seelenmesser haben Sie Ihre psionischen Fähigkeiten möglicherweise schon seit Ihrer Kindheit verfolgt und ihr volles Potenzial erst dann offenbart, wenn Sie den Stress des Abenteuers erlebt haben. Oder Sie haben vielleicht einen Orden übersinnlicher Adepten aufgesucht und Jahre damit verbracht, zu lernen, wie Sie Ihre Macht manifestieren können."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Psionische Kraft"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du birgst eine Quelle psionischer Energie in dir. Es wird durch Ihre Psionischen Energiewürfel repräsentiert, die bestimmte Kräfte dieser Unterklasse antreiben. Die Soulknife-Energiewürfeltabelle zeigt die Anzahl dieser Würfel, die Sie haben, wenn Sie bestimmte Schurkenstufen erreichen, und die Tabelle zeigt die Würfelgröße."
+    },
+    {
+      "type": "paragraph",
+      "text": "Seelenmesser-Energiewürfel"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Schurkenlevel",
+          "Die Größe",
+          "Nummer"
+        ],
+        [
+          "3",
+          "D6",
+          "4"
+        ],
+        [
+          "5",
+          "D8",
+          "6"
+        ],
+        [
+          "9",
+          "D8",
+          "8"
+        ],
+        [
+          "11",
+          "D10",
+          "8"
+        ],
+        [
+          "13",
+          "D10",
+          "10"
+        ],
+        [
+          "17",
+          "D12",
+          "12"
+        ]
+      ],
+      "text": "Rogue Level Würfelgröße Nummer 3 D6 4 5 D8 6 9 D8 8 11 D10 8 13 D10 10 17 D12 12"
+    },
+    {
+      "type": "paragraph",
+      "text": "Alle Features in dieser Unterklasse, die einen Psionischen Energiewürfel verwenden, verwenden nur die Würfel dieser Unterklasse. Einige Ihrer Kräfte verbrauchen einen Psi-Energiewürfel, wie in der Beschreibung der Kraft angegeben, und Sie können die Kraft nicht verwenden, wenn dafür ein Würfel erforderlich ist, wenn alle Psi-Energiewürfel verbraucht sind."
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst einen deiner verbrauchten Psi-Energiewürfel zurück, wenn du eine Kurze Rast abschließt, und du erhältst alle Würfel zurück, wenn du eine Lange Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Psi-gestützter Knack. Wenn Sie bei einer Fähigkeitsüberprüfung mit einer Fertigkeit oder einem Werkzeug, mit der Sie sich auskennen, scheitern, können Sie einen Psionischen Energiewürfel werfen und die gewürfelte Zahl zur Überprüfung hinzufügen, was möglicherweise dazu führt, dass aus einem Misserfolg ein Erfolg wird. Der Würfel wird nur ausgegeben, wenn der Wurf dann gelingt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Psychisches Flüstern. Sie können eine telepathische Kommunikation zwischen sich und anderen herstellen. Wählen Sie als magische Aktion eine oder mehrere Kreaturen aus, die Sie sehen können, bis zu einer Anzahl von Kreaturen, die Ihrem Uebungsbonus entspricht, und werfen Sie dann einen Psionischen Energiewürfel. Für eine Anzahl von Stunden, die der gewürfelten Zahl entspricht, können die ausgewählten Kreaturen telepathisch mit Ihnen sprechen, und Sie können telepathisch mit ihnen sprechen. Um eine Nachricht zu senden oder zu empfangen (keine Aktion erforderlich), müssen Sie und die andere Kreatur maximal 1 Meile voneinander entfernt sein. Eine Kreatur kann die telepathische Verbindung jederzeit beenden (keine Aktion erforderlich)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Psychische Klingen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst schimmernde Klingen psychischer Energie manifestieren. Immer wenn du die Angriffsaktion ausführst oder einen Gelegenheitsangriff ausführst, kannst du eine Psiklinge in deiner freien Hand manifestieren und den Angriff mit dieser Klinge ausführen. Die magische Klinge hat die folgenden Eigenschaften:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Waffenkategorie: Einfacher Nahkampfschaden bei einem Treffer: 1W6 Psi plus der Fähigkeitsmodifikator, der für den Angriffswurf verwendet wird. Eigenschaften: Finesse, Wurfkraft (Reichweite 60/120 Fuß) Meisterschaft: Vex (Sie können diese Eigenschaft verwenden und sie zählt nicht zu der Anzahl der Eigenschaften, die Sie mit Waffenbeherrschung verwenden können.)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Klinge verschwindet sofort, nachdem sie ihr Ziel trifft oder verfehlt, und hinterlässt keine Spuren, wenn sie Schaden verursacht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Nachdem Sie in Ihrem Zug mit der Klinge angegriffen haben, können Sie im selben Zug als Bonusaktion einen Nahkampf- oder Fernkampfangriff mit einer zweiten Psiklinge durchführen, wenn Ihre andere Hand dafür frei ist. Der Schadenswürfel dieses Bonusangriffs beträgt 1W4 statt 1W6."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 9: Seelenklingen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können jetzt mit Ihren Psychic Blades die folgenden Kräfte nutzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Homing Strikes. Wenn Sie mit Ihrer Psi-Klinge einen Angriffswurf ausführen und das Ziel verfehlen, können Sie einen Psionischen Energiewürfel werfen und die gewürfelte Zahl zum Angriffswurf hinzufügen. Wenn dies dazu führt, dass der Angriff trifft, wird der Würfel verbraucht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Psychische Teleportation. Als Bonusaktion manifestierst du eine Psi-Klinge, gibst einen Würfel mit Psi-Energie aus, wirfst ihn und wirfst die Klinge auf einen unbesetzten Raum, den du in einer Entfernung von bis zu 10 Fuß sehen kannst, was dem Zehnfachen der gewürfelten Zahl entspricht. Sie teleportieren sich dann zu diesem Raum und die Klinge verschwindet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 13: Psychischer Schleier"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können einen Schleier aus psychischer Statik weben, um sich selbst zu maskieren. Als magische Aktion erhalten Sie den Zustand „Unsichtbar“ für 1 Stunde oder bis Sie den Effekt aufheben (keine Aktion erforderlich). Diese Unsichtbarkeit endet vorzeitig, sobald du einer Kreatur Schaden zufügst oder eine Kreatur zu einem Rettungswurf zwingst."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie dies nicht erneut tun, bis Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Psi-Energiewürfel (keine Aktion erforderlich), um sie wieder nutzen zu können."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 17: Rend Mind"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst deine Psiklingen durch den Geist einer Kreatur fegen. Wenn Sie Ihre Psiklingen verwenden, um einer Kreatur Schleichangriffsschaden zuzufügen, können Sie das Ziel dazu zwingen, einen Weisheits-Rettungswurf auszuführen (SG 8 plus Geschicklichkeitsmodifikator und Uebungsbonus). Wenn der Speichervorgang fehlschlägt, befindet sich das Ziel 1 Minute lang im Zustand „Betäubt“. Das betäubte Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge und beendet den Effekt auf sich selbst mit einem Erfolg."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen drei Psionische Energiewürfel (keine Aktion erforderlich), um sie wieder nutzen zu können."
+    }
+  ],
+  "text": "Schlagen Sie Feinde mit psionischen Klingen an. Ein Seelenmesser schlägt mit dem Geist zu und durchbricht sowohl physische als auch psychische Barrieren. Diese Schurken entdecken psionische Kräfte in sich und kanalisieren sie für ihre schurkische Arbeit. Als Seelenmesser haben Sie Ihre psionischen Fähigkeiten möglicherweise schon seit Ihrer Kindheit verfolgt und ihr volles Potenzial erst dann offenbart, wenn Sie den Stress des Abenteuers erlebt haben. Oder Sie haben vielleicht einen Orden übersinnlicher Adepten aufgesucht und Jahre damit verbracht, zu lernen, wie Sie Ihre Macht manifestieren können.\n\nStufe 3: Psionische Kraft\n\nDu birgst eine Quelle psionischer Energie in dir. Es wird durch Ihre Psionischen Energiewürfel repräsentiert, die bestimmte Kräfte dieser Unterklasse antreiben. Die Soulknife-Energiewürfeltabelle zeigt die Anzahl dieser Würfel, die Sie haben, wenn Sie bestimmte Schurkenstufen erreichen, und die Tabelle zeigt die Würfelgröße.\n\nSeelenmesser-Energiewürfel\n\nRogue Level Würfelgröße Nummer 3 D6 4 5 D8 6 9 D8 8 11 D10 8 13 D10 10 17 D12 12\n\nAlle Features in dieser Unterklasse, die einen Psionischen Energiewürfel verwenden, verwenden nur die Würfel dieser Unterklasse. Einige Ihrer Kräfte verbrauchen einen Psi-Energiewürfel, wie in der Beschreibung der Kraft angegeben, und Sie können die Kraft nicht verwenden, wenn dafür ein Würfel erforderlich ist, wenn alle Psi-Energiewürfel verbraucht sind.\n\nDu erhältst einen deiner verbrauchten Psi-Energiewürfel zurück, wenn du eine Kurze Rast abschließt, und du erhältst alle Würfel zurück, wenn du eine Lange Rast abschließt.\n\nPsi-gestützter Knack. Wenn Sie bei einer Fähigkeitsüberprüfung mit einer Fertigkeit oder einem Werkzeug, mit der Sie sich auskennen, scheitern, können Sie einen Psionischen Energiewürfel werfen und die gewürfelte Zahl zur Überprüfung hinzufügen, was möglicherweise dazu führt, dass aus einem Misserfolg ein Erfolg wird. Der Würfel wird nur ausgegeben, wenn der Wurf dann gelingt.\n\nPsychisches Flüstern. Sie können eine telepathische Kommunikation zwischen sich und anderen herstellen. Wählen Sie als magische Aktion eine oder mehrere Kreaturen aus, die Sie sehen können, bis zu einer Anzahl von Kreaturen, die Ihrem Uebungsbonus entspricht, und werfen Sie dann einen Psionischen Energiewürfel. Für eine Anzahl von Stunden, die der gewürfelten Zahl entspricht, können die ausgewählten Kreaturen telepathisch mit Ihnen sprechen, und Sie können telepathisch mit ihnen sprechen. Um eine Nachricht zu senden oder zu empfangen (keine Aktion erforderlich), müssen Sie und die andere Kreatur maximal 1 Meile voneinander entfernt sein. Eine Kreatur kann die telepathische Verbindung jederzeit beenden (keine Aktion erforderlich).\n\nLevel 3: Psychische Klingen\n\nDu kannst schimmernde Klingen psychischer Energie manifestieren. Immer wenn du die Angriffsaktion ausführst oder einen Gelegenheitsangriff ausführst, kannst du eine Psiklinge in deiner freien Hand manifestieren und den Angriff mit dieser Klinge ausführen. Die magische Klinge hat die folgenden Eigenschaften:\n\nWaffenkategorie: Einfacher Nahkampfschaden bei einem Treffer: 1W6 Psi plus der Fähigkeitsmodifikator, der für den Angriffswurf verwendet wird. Eigenschaften: Finesse, Wurfkraft (Reichweite 60/120 Fuß) Meisterschaft: Vex (Sie können diese Eigenschaft verwenden und sie zählt nicht zu der Anzahl der Eigenschaften, die Sie mit Waffenbeherrschung verwenden können.)\n\nDie Klinge verschwindet sofort, nachdem sie ihr Ziel trifft oder verfehlt, und hinterlässt keine Spuren, wenn sie Schaden verursacht.\n\nNachdem Sie in Ihrem Zug mit der Klinge angegriffen haben, können Sie im selben Zug als Bonusaktion einen Nahkampf- oder Fernkampfangriff mit einer zweiten Psiklinge durchführen, wenn Ihre andere Hand dafür frei ist. Der Schadenswürfel dieses Bonusangriffs beträgt 1W4 statt 1W6.\n\nLevel 9: Seelenklingen\n\nSie können jetzt mit Ihren Psychic Blades die folgenden Kräfte nutzen.\n\nHoming Strikes. Wenn Sie mit Ihrer Psi-Klinge einen Angriffswurf ausführen und das Ziel verfehlen, können Sie einen Psionischen Energiewürfel werfen und die gewürfelte Zahl zum Angriffswurf hinzufügen. Wenn dies dazu führt, dass der Angriff trifft, wird der Würfel verbraucht.\n\nPsychische Teleportation. Als Bonusaktion manifestierst du eine Psi-Klinge, gibst einen Würfel mit Psi-Energie aus, wirfst ihn und wirfst die Klinge auf einen unbesetzten Raum, den du in einer Entfernung von bis zu 10 Fuß sehen kannst, was dem Zehnfachen der gewürfelten Zahl entspricht. Sie teleportieren sich dann zu diesem Raum und die Klinge verschwindet.\n\nLevel 13: Psychischer Schleier\n\nSie können einen Schleier aus psychischer Statik weben, um sich selbst zu maskieren. Als magische Aktion erhalten Sie den Zustand „Unsichtbar“ für 1 Stunde oder bis Sie den Effekt aufheben (keine Aktion erforderlich). Diese Unsichtbarkeit endet vorzeitig, sobald du einer Kreatur Schaden zufügst oder eine Kreatur zu einem Rettungswurf zwingst.\n\nSobald Sie diese Funktion nutzen, können Sie dies nicht erneut tun, bis Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Psi-Energiewürfel (keine Aktion erforderlich), um sie wieder nutzen zu können.\n\nLevel 17: Rend Mind\n\nDu kannst deine Psiklingen durch den Geist einer Kreatur fegen. Wenn Sie Ihre Psiklingen verwenden, um einer Kreatur Schleichangriffsschaden zuzufügen, können Sie das Ziel dazu zwingen, einen Weisheits-Rettungswurf auszuführen (SG 8 plus Geschicklichkeitsmodifikator und Uebungsbonus). Wenn der Speichervorgang fehlschlägt, befindet sich das Ziel 1 Minute lang im Zustand „Betäubt“. Das betäubte Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge und beendet den Effekt auf sich selbst mit einem Erfolg.\n\nSobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen drei Psionische Energiewürfel (keine Aktion erforderlich), um sie wieder nutzen zu können.",
+  "tags": [],
+  "class": "Schurke",
+  "class_id": "schurke",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

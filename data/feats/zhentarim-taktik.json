@@ -1,0 +1,56 @@
+{
+  "id": "zhentarim-taktik",
+  "type": "feat",
+  "name": "Zhentarim-Taktik",
+  "original_name": "Zhentarim Tactics",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:zhentarim-tactics",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zhentarim-Raufbold-Talent)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zhentarim-Raufbold-Talent)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe deinen Geschicklichkeits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vergeltung. Unmittelbar nachdem eine Kreatur in einem Umkreis von 1,5 m um Sie herum Sie mit einem Nahkampfangriff getroffen hat, können Sie einen Gelegenheitsangriff gegen diese Kreatur durchführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vielseitiger Merc. Wenn Sie eine Lange Rast abgeschlossen haben, wählen Sie eine Fertigkeit, die Sie beherrschen. Du verfügst über Fachwissen in dieser Fertigkeit, bis du deinen nächsten Lange Rast abgeschlossen hast."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zhentarim-Raufbold-Talent)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe deinen Geschicklichkeits- oder Charisma-Wert um 1 auf maximal 20.\n\nVergeltung. Unmittelbar nachdem eine Kreatur in einem Umkreis von 1,5 m um Sie herum Sie mit einem Nahkampfangriff getroffen hat, können Sie einen Gelegenheitsangriff gegen diese Kreatur durchführen.\n\nVielseitiger Merc. Wenn Sie eine Lange Rast abgeschlossen haben, wählen Sie eine Fertigkeit, die Sie beherrschen. Du verfügst über Fachwissen in dieser Fertigkeit, bis du deinen nächsten Lange Rast abgeschlossen hast.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

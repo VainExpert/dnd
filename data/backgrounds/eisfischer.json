@@ -1,0 +1,90 @@
+{
+  "id": "eisfischer",
+  "type": "background",
+  "name": "Eisfischer",
+  "original_name": "Ice Fisher",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/background:ice-fisher",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Stärke, Geschicklichkeit, Konstitution",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Stärke, Geschicklichkeit, Konstitution"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Aufmerksam"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Umgang mit Tieren und Leichtathletik"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkompetenz: Holzschnitzerwerkzeuge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wählen Sie A oder B: (A) Holzschnitzerwerkzeuge, Korb, Block und Tackle, Eimer, Kette, Jagdfalle, Netz, Stange, Rationen (im Wert von 3 Tagen), Seil, Reisekleidung, 32 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie stammen aus einer stolzen Linie von Eisfischern aus Ten-Towns in Icewind Dale. Der Fang von Goldforellen ist nicht gerade der glorreichste Beruf im Norden, aber es ist ein ehrlicher Lebensunterhalt. Sie haben Ihre Sinne auf den kleinsten Ruck an der Leine trainiert, große Forellen aus eisbedeckten Seen gezerrt und so viele Riesenforellen ausgenommen, dass Sie Ihr Dorf um ein Vielfaches ernähren könnten. Diese Erfahrungen haben Ihren Körper und Geist für ein Leben voller Abenteuer gestärkt."
+    }
+  ],
+  "text": "Fähigkeitswerte: Stärke, Geschicklichkeit, Konstitution\n\nTalent: Aufmerksam\n\nFertigkeiten: Umgang mit Tieren und Leichtathletik\n\nWerkzeugkompetenz: Holzschnitzerwerkzeuge\n\nAusrüstung: Wählen Sie A oder B: (A) Holzschnitzerwerkzeuge, Korb, Block und Tackle, Eimer, Kette, Jagdfalle, Netz, Stange, Rationen (im Wert von 3 Tagen), Seil, Reisekleidung, 32 GP; oder (B) 50 GP\n\nSie stammen aus einer stolzen Linie von Eisfischern aus Ten-Towns in Icewind Dale. Der Fang von Goldforellen ist nicht gerade der glorreichste Beruf im Norden, aber es ist ein ehrlicher Lebensunterhalt. Sie haben Ihre Sinne auf den kleinsten Ruck an der Leine trainiert, große Forellen aus eisbedeckten Seen gezerrt und so viele Riesenforellen ausgenommen, dass Sie Ihr Dorf um ein Vielfaches ernähren könnten. Diese Erfahrungen haben Ihren Körper und Geist für ein Leben voller Abenteuer gestärkt.",
+  "tags": [],
+  "ability_scores": [
+    "str",
+    "dex",
+    "con"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "str",
+      "dex",
+      "con"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Tierhandhabung",
+    "Athletik"
+  ],
+  "tool_proficiencies": [
+    "Holzschnitzerwerkzeuge\n"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "aufmerksam",
+  "granted_feat_name": "Aufmerksam\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wählen Sie A oder B: (A) Holzschnitzerwerkzeuge, Korb, Block und Tackle, Eimer, Kette, Jagdfalle, Netz, Stange, Rationen (im Wert von 3 Tagen), Seil, Reisekleidung, 32 GP; oder (B) 50 GP\n\nSie stammen aus einer stolzen Linie von Eisfischern aus Ten-Towns in Icewind Dale. Der Fang von Goldforellen ist nicht gerade der glorreichste Beruf im Norden, aber es ist ein ehrlicher Lebensunterhalt. Sie haben Ihre Sinne auf den kleinsten Ruck an der Leine trainiert, große Forellen aus eisbedeckten Seen gezerrt und so viele Riesenforellen ausgenommen, dass Sie Ihr Dorf um ein Vielfaches ernähren könnten. Diese Erfahrungen haben Ihren Körper und Geist für ein Leben voller Abenteuer gestärkt"
+    }
+  ]
+}

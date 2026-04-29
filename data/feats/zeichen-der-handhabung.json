@@ -1,0 +1,96 @@
+{
+  "id": "zeichen-der-handhabung",
+  "type": "feat",
+  "name": "Zeichen der Handhabung",
+  "original_name": "Mark of Handling",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:mark-of-handling",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Drachenmale",
+  "prerequisites": [],
+  "summary": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wilde Intuition. Wenn Sie eine Intelligenzprüfung (Natur) oder Weisheitsprüfung (Tierhandhabung) durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Urverbindung. Sie haben immer die Zauber „Tierfreundschaft“ und „Mit Tieren sprechen“ vorbereitet. Sie können jeden Zauber einmal ohne Zauberslot wirken und erhalten die Fähigkeit, ihn auf diese Weise zu wirken, wieder, wenn Sie eine Lange Rast abgeschlossen haben. Sie können diese Zauber auch mit beliebigen Zauberslots wirken, die Sie haben. Intelligenz, Weisheit oder Charisma sind Ihre Zauberfähigkeiten für diese Zaubersprüche (wählen Sie, wenn Sie dieses Talent auswählen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ungeheuerliche Verbindungen. Wenn du Charakterstufe 3 erreichst, kannst du eine Monstrosität als Ziel wählen, wenn du „Tierfreundschaft“ oder „Mit Tieren sprechen“ wirkst, wenn der Intelligenzwert der Kreatur 3 oder niedriger ist."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauber der Marke. Wenn Sie über die Funktion „Zauberwirkung“ oder „Paktmagie“ verfügen, werden die Zauber in der Tabelle „Zeichen des Umgangs mit Zaubersprüchen“ zur Zauberliste dieser Funktion hinzugefügt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zeichen des Umgangs mit Zaubern"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Zauberstufe",
+          "Zauber"
+        ],
+        [
+          "1",
+          "Befehl, Vertrautes finden"
+        ],
+        [
+          "2",
+          "Tiersinn, ruhige Gefühle"
+        ],
+        [
+          "3",
+          "Leuchtfeuer der Hoffnung, Tiere beschwören"
+        ],
+        [
+          "4",
+          "Aura des Lebens, Beherrsche das Biest"
+        ],
+        [
+          "5",
+          "Wecken"
+        ]
+      ],
+      "text": "Zauberstufe Zauber 1 Befehlen, Vertrautes finden 2 Tiersinn, Gefühle beruhigen 3 Leuchtfeuer der Hoffnung, Tiere beschwören 4 Aura des Lebens, Beherrschen des Tieres 5 Erwachen"
+    }
+  ],
+  "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)\n\nSie profitieren von folgenden Vorteilen.\n\nWilde Intuition. Wenn Sie eine Intelligenzprüfung (Natur) oder Weisheitsprüfung (Tierhandhabung) durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen.\n\nUrverbindung. Sie haben immer die Zauber „Tierfreundschaft“ und „Mit Tieren sprechen“ vorbereitet. Sie können jeden Zauber einmal ohne Zauberslot wirken und erhalten die Fähigkeit, ihn auf diese Weise zu wirken, wieder, wenn Sie eine Lange Rast abgeschlossen haben. Sie können diese Zauber auch mit beliebigen Zauberslots wirken, die Sie haben. Intelligenz, Weisheit oder Charisma sind Ihre Zauberfähigkeiten für diese Zaubersprüche (wählen Sie, wenn Sie dieses Talent auswählen).\n\nUngeheuerliche Verbindungen. Wenn du Charakterstufe 3 erreichst, kannst du eine Monstrosität als Ziel wählen, wenn du „Tierfreundschaft“ oder „Mit Tieren sprechen“ wirkst, wenn der Intelligenzwert der Kreatur 3 oder niedriger ist.\n\nZauber der Marke. Wenn Sie über die Funktion „Zauberwirkung“ oder „Paktmagie“ verfügen, werden die Zauber in der Tabelle „Zeichen des Umgangs mit Zaubersprüchen“ zur Zauberliste dieser Funktion hinzugefügt.\n\nZeichen des Umgangs mit Zaubern\n\nZauberstufe Zauber 1 Befehlen, Vertrautes finden 2 Tiersinn, Gefühle beruhigen 3 Leuchtfeuer der Hoffnung, Tiere beschwören 4 Aura des Lebens, Beherrschen des Tieres 5 Erwachen",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

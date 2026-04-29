@@ -1,0 +1,109 @@
+{
+  "id": "flammenkind",
+  "type": "race",
+  "name": "Flammenkind",
+  "original_name": "Flamekin",
+  "rules_version": "2024",
+  "source": "Lorwyn - First Light",
+  "source_url": "http://dnd2024.wikidot.com/species:flamekin",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Lorwyn",
+  "prerequisites": [],
+  "summary": "Flamekin sind Menschen, die aus zwei Schlüsselelementen der Schöpfung bestehen: Feuer und Stein. Aus diesem Grund empfinden viele Flammenverwandte eine starke Verbindung zur Natur. Flamekins Körper strahlen harmlose magische Flammen aus, obwohl sie über eine angeborene Magie verfügen, die es ihnen ermöglicht, brennende Flammen in einer Vielzahl von Formen zu erzeugen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Flamekin sind Menschen, die aus zwei Schlüsselelementen der Schöpfung bestehen: Feuer und Stein. Aus diesem Grund empfinden viele Flammenverwandte eine starke Verbindung zur Natur. Flamekins Körper strahlen harmlose magische Flammen aus, obwohl sie über eine angeborene Magie verfügen, die es ihnen ermöglicht, brennende Flammen in einer Vielzahl von Formen zu erzeugen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Flamekin betrachten Selbstfindung und Selbstdarstellung als die edelsten Bestrebungen und glauben, dass Selbstverwirklichung das Wichtigste ist, was ein Mensch in seinem Leben tun kann. Flamekin nennt dieses lebenslange Streben den Pfad der Flamme."
+    },
+    {
+      "type": "paragraph",
+      "text": "Flamekin leben entweder in Lorwyn oder Shadowmoor. Physisch und kulturell sind sie in beiden Ländern ähnlich."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Flamekin-Eigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp. Du bist ein Humanoid."
+    },
+    {
+      "type": "paragraph",
+      "text": "Größe. Mittel (etwa 4–7 Fuß hoch) oder Klein (etwa 2–4 ​​Fuß hoch), wählen Sie bei der Auswahl dieser Art aus."
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschwindigkeit. Ihre Gehgeschwindigkeit beträgt 30 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Flamekin hast du diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dunkelsicht. Sie können bei schwachem Licht in einem Umkreis von 60 Fuß um Sie herum sehen, als ob es helles Licht wäre, und bei Dunkelheit, als wäre es schwaches Licht. Sie erkennen Farben in dieser Dunkelheit nur als Grautöne."
+    },
+    {
+      "type": "paragraph",
+      "text": "Feuerbeständigkeit. Du hast Resistenz gegen Feuerschaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erreichen Sie die Flamme. Sie kennen den „Produce Flame“-Cantrip. Ab der 3. Stufe können Sie mit dieser Eigenschaft den Zauber „Brennende Hände“ wirken. Ab der 5. Stufe können Sie mit dieser Eigenschaft auch den Zauber Flammenklinge wirken, ohne dass eine Materialkomponente erforderlich ist. Sobald Sie „Brennende Hände“ oder „Flammenklinge“ mit dieser Eigenschaft gewirkt haben, können Sie diesen Zauber nicht erneut damit wirken, bis Sie eine lange Pause beendet haben. Sie können jeden dieser Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diese Zauber, wenn Sie sie mit dieser Eigenschaft wirken (wählen Sie, wenn Sie diese Rasse auswählen)."
+    }
+  ],
+  "text": "Flamekin sind Menschen, die aus zwei Schlüsselelementen der Schöpfung bestehen: Feuer und Stein. Aus diesem Grund empfinden viele Flammenverwandte eine starke Verbindung zur Natur. Flamekins Körper strahlen harmlose magische Flammen aus, obwohl sie über eine angeborene Magie verfügen, die es ihnen ermöglicht, brennende Flammen in einer Vielzahl von Formen zu erzeugen.\n\nFlamekin betrachten Selbstfindung und Selbstdarstellung als die edelsten Bestrebungen und glauben, dass Selbstverwirklichung das Wichtigste ist, was ein Mensch in seinem Leben tun kann. Flamekin nennt dieses lebenslange Streben den Pfad der Flamme.\n\nFlamekin leben entweder in Lorwyn oder Shadowmoor. Physisch und kulturell sind sie in beiden Ländern ähnlich.\n\nFlamekin-Eigenschaften\n\nKreaturentyp. Du bist ein Humanoid.\n\nGröße. Mittel (etwa 4–7 Fuß hoch) oder Klein (etwa 2–4 ​​Fuß hoch), wählen Sie bei der Auswahl dieser Art aus.\n\nGeschwindigkeit. Ihre Gehgeschwindigkeit beträgt 30 Fuß.\n\nAls Flamekin hast du diese besonderen Eigenschaften.\n\nDunkelsicht. Sie können bei schwachem Licht in einem Umkreis von 60 Fuß um Sie herum sehen, als ob es helles Licht wäre, und bei Dunkelheit, als wäre es schwaches Licht. Sie erkennen Farben in dieser Dunkelheit nur als Grautöne.\n\nFeuerbeständigkeit. Du hast Resistenz gegen Feuerschaden.\n\nErreichen Sie die Flamme. Sie kennen den „Produce Flame“-Cantrip. Ab der 3. Stufe können Sie mit dieser Eigenschaft den Zauber „Brennende Hände“ wirken. Ab der 5. Stufe können Sie mit dieser Eigenschaft auch den Zauber Flammenklinge wirken, ohne dass eine Materialkomponente erforderlich ist. Sobald Sie „Brennende Hände“ oder „Flammenklinge“ mit dieser Eigenschaft gewirkt haben, können Sie diesen Zauber nicht erneut damit wirken, bis Sie eine lange Pause beendet haben. Sie können jeden dieser Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diese Zauber, wenn Sie sie mit dieser Eigenschaft wirken (wählen Sie, wenn Sie diese Rasse auswählen).",
+  "tags": [],
+  "size": [],
+  "creature_type": "",
+  "speed": {
+    "walk": null,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Flamekin leben entweder in Lorwyn oder Shadowmoor",
+      "text": "Physisch und kulturell sind sie in beiden Ländern ähnlich."
+    },
+    {
+      "name": "Größe",
+      "text": "Mittel (etwa 4–7 Fuß hoch) oder Klein (etwa 2–4 ​​Fuß hoch), wählen Sie bei der Auswahl dieser Art aus."
+    },
+    {
+      "name": "Geschwindigkeit",
+      "text": "Ihre Gehgeschwindigkeit beträgt 30 Fuß."
+    },
+    {
+      "name": "Dunkelsicht",
+      "text": "Sie können bei schwachem Licht in einem Umkreis von 60 Fuß um Sie herum sehen, als ob es helles Licht wäre, und bei Dunkelheit, als wäre es schwaches Licht. Sie erkennen Farben in dieser Dunkelheit nur als Grautöne."
+    },
+    {
+      "name": "Feuerbeständigkeit",
+      "text": "Du hast Resistenz gegen Feuerschaden."
+    },
+    {
+      "name": "Erreichen Sie die Flamme",
+      "text": "Sie kennen den „Produce Flame“-Cantrip. Ab der 3. Stufe können Sie mit dieser Eigenschaft den Zauber „Brennende Hände“ wirken. Ab der 5. Stufe können Sie mit dieser Eigenschaft auch den Zauber Flammenklinge wirken, ohne dass eine Materialkomponente erforderlich ist. Sobald Sie „Brennende Hände“ oder „Flammenklinge“ mit dieser Eigenschaft gewirkt haben, können Sie diesen Zauber nicht erneut damit wirken, bis Sie eine lange Pause beendet haben. Sie können jeden dieser Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diese Zauber, wenn Sie sie mit dieser Eigenschaft wirken (wählen Sie, wenn Sie diese Rasse auswählen)."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

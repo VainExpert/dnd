@@ -1,0 +1,88 @@
+{
+  "id": "archaologe",
+  "type": "background",
+  "name": "Archäologe",
+  "original_name": "Archaeologist",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/background:archaeologist",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Geschicklichkeit, Intelligenz, Weisheit",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Geschicklichkeit, Intelligenz, Weisheit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Geschickt"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Geschichte und Überleben"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse: Werkzeuge des Kartographen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wählen Sie A oder B: (A) Kartographenwerkzeuge, Bullseye-Laterne, Karte, Karten- oder Schriftrollenkoffer, Schaufel, Zelt, Reisekleidung, 17 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben ein Leben lang die verlorenen und gefallenen Kulturen der Vergangenheit studiert, ihre Ruinen besucht, ihre schriftlichen Aufzeichnungen entschlüsselt und ihre erhaltenen Meisterwerke untersucht. Vielleicht haben Sie an der Morgrave University oder einer ähnlichen Institution studiert und Ihre Zeit in der Bibliothek durch Feldforschung inmitten antiker Ruinen an abgelegenen Orten ergänzt. Manche Archäologen plündern die Schätze der Vergangenheit auf der Suche nach Reichtum oder Ruhm, doch die meisten betrachten es als ihre Berufung, aus der Vergangenheit zu lernen. Auf jeden Fall vereinen die Archäologen von Eberron die Qualitäten gelehrter Historiker mit dem Mut von Schatzsuchern."
+    }
+  ],
+  "text": "Fähigkeitswerte: Geschicklichkeit, Intelligenz, Weisheit\n\nTalent: Geschickt\n\nFertigkeiten: Geschichte und Überleben\n\nWerkzeugkenntnisse: Werkzeuge des Kartographen\n\nAusrüstung: Wählen Sie A oder B: (A) Kartographenwerkzeuge, Bullseye-Laterne, Karte, Karten- oder Schriftrollenkoffer, Schaufel, Zelt, Reisekleidung, 17 GP; oder (B) 50 GP\n\nSie haben ein Leben lang die verlorenen und gefallenen Kulturen der Vergangenheit studiert, ihre Ruinen besucht, ihre schriftlichen Aufzeichnungen entschlüsselt und ihre erhaltenen Meisterwerke untersucht. Vielleicht haben Sie an der Morgrave University oder einer ähnlichen Institution studiert und Ihre Zeit in der Bibliothek durch Feldforschung inmitten antiker Ruinen an abgelegenen Orten ergänzt. Manche Archäologen plündern die Schätze der Vergangenheit auf der Suche nach Reichtum oder Ruhm, doch die meisten betrachten es als ihre Berufung, aus der Vergangenheit zu lernen. Auf jeden Fall vereinen die Archäologen von Eberron die Qualitäten gelehrter Historiker mit dem Mut von Schatzsuchern.",
+  "tags": [],
+  "ability_scores": [
+    "dex",
+    "int",
+    "wis"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "dex",
+      "int",
+      "wis"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Geschichte",
+    "Überleben\n\nWerkzeugkenntnisse: Werkzeuge des Kartographen"
+  ],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "geschickt",
+  "granted_feat_name": "Geschickt\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wählen Sie A oder B: (A) Kartographenwerkzeuge, Bullseye-Laterne, Karte, Karten- oder Schriftrollenkoffer, Schaufel, Zelt, Reisekleidung, 17 GP; oder (B) 50 GP\n\nSie haben ein Leben lang die verlorenen und gefallenen Kulturen der Vergangenheit studiert, ihre Ruinen besucht, ihre schriftlichen Aufzeichnungen entschlüsselt und ihre erhaltenen Meisterwerke untersucht. Vielleicht haben Sie an der Morgrave University oder einer ähnlichen Institution studiert und Ihre Zeit in der Bibliothek durch Feldforschung inmitten antiker Ruinen an abgelegenen Orten ergänzt. Manche Archäologen plündern die Schätze der Vergangenheit auf der Suche nach Reichtum oder Ruhm, doch die meisten betrachten es als ihre Berufung, aus der Vergangenheit zu lernen. Auf jeden Fall vereinen die Archäologen von Eberron die Qualitäten gelehrter Historiker mit dem Mut von Schatzsuchern"
+    }
+  ]
+}

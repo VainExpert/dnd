@@ -1,0 +1,46 @@
+{
+  "id": "alarmiert",
+  "type": "feat",
+  "name": "Alarmiert",
+  "original_name": "Alert",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:alert",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Sie profitieren von folgenden Vorteilen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Initiativkompetenz. Wenn Sie Initiative würfeln, können Sie Ihren Uebungsbonus zum Wurf hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Initiative-Tausch. Unmittelbar nachdem Sie Initiative gewürfelt haben, können Sie Ihre Initiative mit der Initiative eines willigen Verbündeten im selben Kampf tauschen. Sie können diesen Tausch nicht durchführen, wenn Sie oder der Verbündete über die Bedingung „Kampfunfähigkeit“ verfügen."
+    }
+  ],
+  "text": "Sie profitieren von folgenden Vorteilen.\n\nInitiativkompetenz. Wenn Sie Initiative würfeln, können Sie Ihren Uebungsbonus zum Wurf hinzufügen.\n\nInitiative-Tausch. Unmittelbar nachdem Sie Initiative gewürfelt haben, können Sie Ihre Initiative mit der Initiative eines willigen Verbündeten im selben Kampf tauschen. Sie können diesen Tausch nicht durchführen, wenn Sie oder der Verbündete über die Bedingung „Kampfunfähigkeit“ verfügen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

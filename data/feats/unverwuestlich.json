@@ -1,0 +1,56 @@
+{
+  "id": "unverwuestlich",
+  "type": "feat",
+  "name": "Unverwuestlich",
+  "original_name": "Durable",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:durable",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Stufe 4+"
+  ],
+  "summary": "Voraussetzung: Level 4+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe deinen Konstitutionswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Trotze dem Tod. Sie haben einen Vorteil bei Todesrettungswürfen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schnelle Genesung. Als Bonusaktion können Sie einen Ihrer Hitpoint-Würfel ausgeben, den Würfel würfeln und so viele Hitpoints zurückerhalten, wie Sie gewürfelt haben."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe deinen Konstitutionswert um 1 auf maximal 20.\n\nTrotze dem Tod. Sie haben einen Vorteil bei Todesrettungswürfen.\n\nSchnelle Genesung. Als Bonusaktion können Sie einen Ihrer Hitpoint-Würfel ausgeben, den Würfel würfeln und so viele Hitpoints zurückerhalten, wie Sie gewürfelt haben.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

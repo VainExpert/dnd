@@ -1,4 +1,29 @@
 {
   "files": [
+    "aasimar.json",
+    "boggart.json",
+    "dhampir.json",
+    "drachenbluetig.json",
+    "drachenbluetige.json",
+    "elf.json",
+    "fee.json",
+    "flammenkind.json",
+    "genasi.json",
+    "gnom.json",
+    "goliath.json",
+    "halb-elf.json",
+    "halb-ork.json",
+    "halbling.json",
+    "kalashtar.json",
+    "khoravar.json",
+    "kriegsgeschmiedeter.json",
+    "lorwyn-wechselbalg.json",
+    "mensch.json",
+    "ork.json",
+    "reifkind.json",
+    "tiefling.json",
+    "wandler.json",
+    "wechselbalg.json",
+    "zwerg.json"
   ]
 }

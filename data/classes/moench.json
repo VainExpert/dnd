@@ -1,0 +1,934 @@
+{
+  "id": "moench",
+  "type": "class",
+  "name": "Moench",
+  "original_name": "Monk",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/monk:main",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Klassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Mönche nutzen strenges Kampftraining und mentale Disziplin, um sich dem Multiversum anzuschließen und ihre inneren Machtreservoirs zu bündeln. Verschiedene Mönche konzeptualisieren diese Kraft auf unterschiedliche Weise: zum Beispiel als Atem, Energie, Lebenskraft, Essenz oder Selbst. Ob als beeindruckende Demonstration kriegerischer Fähigkeiten oder als subtilere Manifestation von Verteidigung und Geschwindigkeit kanalisiert, diese Kraft durchdringt alles, was ein Mönch tut.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Mönche nutzen strenges Kampftraining und mentale Disziplin, um sich dem Multiversum anzuschließen und ihre inneren Machtreservoirs zu bündeln. Verschiedene Mönche konzeptualisieren diese Kraft auf unterschiedliche Weise: zum Beispiel als Atem, Energie, Lebenskraft, Essenz oder Selbst. Ob als beeindruckende Demonstration kriegerischer Fähigkeiten oder als subtilere Manifestation von Verteidigung und Geschwindigkeit kanalisiert, diese Kraft durchdringt alles, was ein Mönch tut."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mönche konzentrieren ihre innere Kraft, um außergewöhnliche, sogar übernatürliche Wirkungen zu erzielen. Sie nutzen unheimliche Geschwindigkeit und Stärke für ihre Angriffe, mit oder ohne den Einsatz von Waffen. In den Händen eines Mönchs können selbst die einfachsten Waffen zu anspruchsvollen Werkzeugen der Kampfbeherrschung werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Viele Mönche sind der Meinung, dass ein strukturiertes Leben in asketischem Rückzug ihnen hilft, die körperliche und geistige Konzentration zu entwickeln, die sie benötigen, um ihre Kraft zu nutzen. Andere Mönche glauben, dass das Eintauchen in die pulsierende Verwirrung des Lebens ihre Entschlossenheit und Disziplin stärkt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mönche betrachten Abenteuer im Allgemeinen als Prüfungen ihrer körperlichen und geistigen Entwicklung. Sie werden von dem Wunsch getrieben, eine größere Mission zu erfüllen, als nur Monster zu töten und Schätze zu plündern; Sie streben danach, sich in lebende Waffen zu verwandeln."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Kernmerkmale eines Mönchs"
+        ],
+        [
+          "Primäre Fähigkeit",
+          "Geschicklichkeit und Weisheit"
+        ],
+        [
+          "Trefferpunktwürfel",
+          "D8 pro Mönchsstufe"
+        ],
+        [
+          "Rettungswurf-Kenntnisse",
+          "Kraft und Geschicklichkeit"
+        ],
+        [
+          "Fertigkeiten",
+          "Wählen Sie 2: Akrobatik, Leichtathletik, Geschichte, Einsicht, Religion oder Heimlichkeit"
+        ],
+        [
+          "Werkzeugkenntnisse",
+          "Wählen Sie eine Art Handwerkswerkzeug oder Musikinstrument"
+        ],
+        [
+          "Waffenkenntnisse",
+          "Einfache Waffen und Kampfwaffen, die über die Lichteigenschaft verfügen"
+        ],
+        [
+          "Rüstungstraining",
+          "Keiner"
+        ],
+        [
+          "Startausrüstung",
+          "Wählen Sie A oder B: (A) Speer, 5 Dolche, Handwerkerwerkzeuge oder Musikinstrument, das für die oben genannte Werkzeugkompetenz ausgewählt wurde, Forscherpaket und 11 GP; oder (B) 50 GP"
+        ]
+      ],
+      "text": "Kerneigenschaften eines Mönchs Primäre Fähigkeit Geschicklichkeit und Weisheit Trefferpunkt Würfel W8 pro Mönchsstufe Rettungswurf-Fähigkeiten Stärke und Geschicklichkeit Fertigkeiten-Fähigkeiten Wählen Sie 2: Akrobatik, Leichtathletik, Geschichte, Einsicht, Religion oder Heimlichkeit Werkzeug-Fähigkeiten Wählen Sie eine Art Handwerkszeug oder Musikinstrument-Waffen-Fähigkeiten Einfache Waffen und Kampfwaffen mit der Eigenschaft „Leicht“ Rüstungstraining Keine Startausrüstung Wählen Sie A oder B: (A) Speer, 5 Dolche, Handwerkerwerkzeuge oder Musikinstrument, das für die oben genannte Werkzeugkompetenz ausgewählt wurde, Forscherpaket und 11 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Mönch werden…"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Charakter der Stufe 1"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalte alle Eigenschaften in der Tabelle „Kernmerkmale des Mönchs“.",
+        "Erhalten Sie die Level-1-Funktionen des Mönchs, die in der Tabelle „Mönchstalente“ aufgeführt sind."
+      ],
+      "text": "Erhalte alle Eigenschaften in der Tabelle „Kernmerkmale des Mönchs“. Erhalten Sie die Level-1-Funktionen des Mönchs, die in der Tabelle „Mönchstalente“ aufgeführt sind."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Mehrklassen-Mönch"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalte die Eigenschaft „Hitpoint-Würfel“ aus der Tabelle „Kernmerkmale des Mönchs“.",
+        "Erhalten Sie die Level-1-Funktionen des Mönchs, die in der Tabelle „Mönchstalente“ aufgeführt sind."
+      ],
+      "text": "Erhalte die Eigenschaft „Hitpoint-Würfel“ aus der Tabelle „Kernmerkmale des Mönchs“. Erhalten Sie die Level-1-Funktionen des Mönchs, die in der Tabelle „Mönchstalente“ aufgeführt sind."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Talente der Mönchsklasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mönchstalente (Teil A)"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ebene",
+          "Uebungsbonus",
+          "Klassentalente"
+        ],
+        [
+          "1",
+          "+2",
+          "Kampfkunst, ungepanzerte Verteidigung"
+        ],
+        [
+          "2",
+          "+2",
+          "Mönchsfokus, Ungepanzerte Bewegung, Unheimlicher Stoffwechsel"
+        ],
+        [
+          "3",
+          "+2",
+          "Angriffe abwehren, Mönch-Unterklasse"
+        ],
+        [
+          "4",
+          "+2",
+          "Verbesserung der Fähigkeitsbewertung, langsamer Fall"
+        ],
+        [
+          "5",
+          "+3",
+          "Zusätzlicher Angriff, atemberaubender Schlag"
+        ],
+        [
+          "6",
+          "+3",
+          "Ermächtigte Schläge, Unterklasse-Talent"
+        ],
+        [
+          "7",
+          "+3",
+          "Ausweichen"
+        ],
+        [
+          "8",
+          "+3",
+          "Faehigkeitswert-Verbesserung"
+        ],
+        [
+          "9",
+          "+4",
+          "Akrobatische Bewegung"
+        ],
+        [
+          "10",
+          "+4",
+          "Erhöhter Fokus, Selbstwiederherstellung"
+        ],
+        [
+          "11",
+          "+4",
+          "Unterklasse Talent"
+        ],
+        [
+          "12",
+          "+4",
+          "Faehigkeitswert-Verbesserung"
+        ],
+        [
+          "13",
+          "+5",
+          "Energie ablenken"
+        ],
+        [
+          "14",
+          "+5",
+          "Disziplinierter Überlebender"
+        ],
+        [
+          "15",
+          "+5",
+          "Perfekter Fokus"
+        ],
+        [
+          "16",
+          "+5",
+          "Faehigkeitswert-Verbesserung"
+        ],
+        [
+          "17",
+          "+6",
+          "Unterklasse Talent"
+        ],
+        [
+          "18",
+          "+6",
+          "Überlegene Verteidigung"
+        ],
+        [
+          "19",
+          "+6",
+          "Epischer Segen"
+        ],
+        [
+          "20",
+          "+6",
+          "Körper und Geist"
+        ]
+      ],
+      "text": "Level Uebungsbonus Klassentalente 1 +2 Kampfkunst, Ungepanzerte Verteidigung 2 +2 Mönchsfokus, Ungepanzerte Bewegung, Unheimlicher Stoffwechsel 3 +2 Angriffe abwehren, Mönchsunterklasse 4 +2 Fähigkeitswertverbesserung, Langsamer Fall 5 +3 Zusätzlicher Angriff, Betäubender Schlag 6 +3 Verstärkte Schläge, Unterklassentalent 7 +3 Ausweichen 8 +3 Fähigkeitswertverbesserung 9 +4 Akrobatische Bewegung 10 +4 Erhöhter Fokus, Selbstwiederherstellung 11 +4 Unterklassentalent 12 +4 Fähigkeitswertverbesserung 13 +5 Energie ablenken 14 +5 Disziplinierter Überlebender 15 +5 Perfekter Fokus 16 +5 Fähigkeitswertverbesserung 17 +6 Unterklassentalent 18 +6 Überlegene Verteidigung 19 +6 Epischer Segen 20 +6 Körper und Geist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mönchstalente (Teil B)"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ebene",
+          "Kampfkunst",
+          "Fokuspunkte",
+          "Ungepanzerte Bewegung"
+        ],
+        [
+          "1",
+          "1W6",
+          "-",
+          "-"
+        ],
+        [
+          "2",
+          "1W6",
+          "2",
+          "+10 Fuß"
+        ],
+        [
+          "3",
+          "1W6",
+          "3",
+          "+10 Fuß"
+        ],
+        [
+          "4",
+          "1W6",
+          "4",
+          "+10 Fuß"
+        ],
+        [
+          "5",
+          "1W8",
+          "5",
+          "+10 Fuß"
+        ],
+        [
+          "6",
+          "1W8",
+          "6",
+          "+15 Fuß"
+        ],
+        [
+          "7",
+          "1W8",
+          "7",
+          "+15 Fuß"
+        ],
+        [
+          "8",
+          "1W8",
+          "8",
+          "+15 Fuß"
+        ],
+        [
+          "9",
+          "1W8",
+          "9",
+          "+15 Fuß"
+        ],
+        [
+          "10",
+          "1W8",
+          "10",
+          "+20 Fuß"
+        ],
+        [
+          "11",
+          "1d10",
+          "11",
+          "+20 Fuß"
+        ],
+        [
+          "12",
+          "1d10",
+          "12",
+          "+20 Fuß"
+        ],
+        [
+          "13",
+          "1d10",
+          "13",
+          "+20 Fuß"
+        ],
+        [
+          "14",
+          "1d10",
+          "14",
+          "+25 Fuß"
+        ],
+        [
+          "15",
+          "1d10",
+          "15",
+          "+25 Fuß"
+        ],
+        [
+          "16",
+          "1d10",
+          "16",
+          "+25 Fuß"
+        ],
+        [
+          "17",
+          "1d12",
+          "17",
+          "+25 Fuß"
+        ],
+        [
+          "18",
+          "1d12",
+          "18",
+          "+30 Fuß"
+        ],
+        [
+          "19",
+          "1d12",
+          "19",
+          "+30 Fuß"
+        ],
+        [
+          "20",
+          "1d12",
+          "20",
+          "+30 Fuß"
+        ]
+      ],
+      "text": "Stufe Kampfkunst-Fokuspunkte Ungepanzerte Bewegung 1 1W6 - - 2 1W6 2 +10 Fuß 3 1W6 3 +10 Fuß 4 1W6 4 +10 Fuß 5 1W8 5 +10 Fuß 6 1W8 6 +15 Fuß 7 1W8 7 +15 Fuß 8 1W8 8 +15 Fuß 9 1W8 9 +15 Fuß 10 1W8 10 +20 Fuß 11 1W10 11 +20 Fuß 12 1W10 12 +20 Fuß 13 1W10 13 +20 Fuß 14 1W10 14 +25 Fuß 15 1W10 15 +25 Fuß 16 1W10 16 +25 Fuß 17 1W12 17 +25 Fuß 18 1W12 18 +30 Fuß 19 1W12 19 +30 Fuß 20 1W12 20 +30 Fuß"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Mönch erhältst du die folgenden Klassenmerkmale, wenn du die angegebenen Mönchsstufen erreichst. Diese Eigenschaften sind in der Tabelle „Mönchstalente“ aufgeführt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Kampfkunst"
+    },
+    {
+      "type": "paragraph",
+      "text": "Durch das Praktizieren von Kampfkünsten beherrschen Sie die folgenden Kampfstile, bei denen Sie Ihre unbewaffneten Schlag- und Mönchswaffen einsetzen:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Einfache Nahkampfwaffen",
+        "Kampfnahkampfwaffen mit der Lichteigenschaft"
+      ],
+      "text": "Einfache Nahkampfwaffen. Kampfnahkampfwaffen mit der Lichteigenschaft"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erhalten die folgenden Vorteile, wenn Sie unbewaffnet sind oder nur Mönchswaffen tragen und keine Rüstung tragen oder einen Schild tragen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bonus: Unbewaffneter Schlag. Als Bonusaktion können Sie einen unbewaffneten Angriff durchführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kampfkunst-Stanze. Sie können 1W6 anstelle des normalen Schadens Ihrer Waffen „Unbewaffneter Schlag“ oder „Mönch“ würfeln. Dieser Würfel ändert sich mit zunehmender Mönchsstufe, wie in der Spalte „Kampfkunst“ der Tabelle „Mönchstalente“ gezeigt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschickte Angriffe. Sie können Ihren Geschicklichkeitsmodifikator anstelle Ihres Stärkemodifikators für die Angriffs- und Schadenswürfe Ihrer unbewaffneten Angriffe und Mönchswaffen verwenden. Wenn Sie außerdem die Option „Grapple“ oder „Stove“ Ihres unbewaffneten Schlags verwenden, können Sie Ihren Geschicklichkeitsmodifikator anstelle Ihres Stärkemodifikators verwenden, um den Rettungswurf-SG zu bestimmen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Ungepanzerte Verteidigung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Solange Sie keine Rüstung tragen oder keinen Schild führen, beträgt Ihre Grundrüstungsklasse 10 plus Ihre Geschicklichkeits- und Weisheitsmodifikatoren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 2: Mönchsfokus"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Konzentration und Ihr Kampftraining ermöglichen es Ihnen, eine Quelle außergewöhnlicher Energie in sich zu nutzen. Diese Energie wird durch Fokuspunkte repräsentiert. Ihre Mönchsstufe bestimmt die Anzahl Ihrer Punkte, wie in der Spalte „Fokuspunkte“ der Tabelle „Mönchstalente“ angezeigt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diese Punkte ausgeben, um bestimmte Mönchsfunktionen zu verbessern oder zu stärken. Sie kennen zunächst drei solcher Funktionen: „Flurry of Blows“, „Patient Defense“ und „Step of the Wind“, die im Folgenden detailliert beschrieben werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie einen Fokuspunkt ausgeben, ist dieser erst verfügbar, wenn Sie eine kurze oder lange Rast beendet haben. Am Ende erhalten Sie alle Ihre verbrauchten Punkte zurück."
+    },
+    {
+      "type": "paragraph",
+      "text": "Einige Funktionen, die Fokuspunkte verwenden, erfordern, dass Ihr Ziel einen Rettungswurf durchführt. Der Rettungswurf-SG beträgt 8 plus deinen Weisheitsmodifikator und Uebungsbonus."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schlaghagel. Als Bonusaktion können Sie 1 Fokuspunkt ausgeben, um zwei unbewaffnete Angriffe durchzuführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Patientenverteidigung. Sie können die Disengage-Aktion als Bonusaktion nutzen. Alternativ können Sie 1 Fokuspunkt ausgeben, um sowohl die Aktionen „Entfernen“ als auch „Ausweichen“ als Bonusaktion durchzuführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schritt des Windes. Sie können die Dash-Aktion als Bonusaktion nutzen. Alternativ können Sie 1 Fokuspunkt ausgeben, um sowohl die Aktionen „Entfernen“ als auch „Sprinten“ als Bonusaktion auszuführen, und Ihre Sprungweite wird für die Runde verdoppelt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 2: Ungepanzerte Bewegung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Geschwindigkeit erhöht sich um 10 Fuß, wenn Sie keine Rüstung tragen oder keinen Schild tragen. Dieser Bonus erhöht sich, wenn Sie bestimmte Mönchsstufen erreichen, wie in der Tabelle „Mönchstalente“ aufgeführt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 2: Unheimlicher Stoffwechsel"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Initiative würfeln, können Sie alle verbrauchten Fokuspunkte zurückerhalten. Wenn Sie dies tun, werfen Sie Ihren Kampfkunstwürfel und erhalten eine Anzahl an Trefferpunkten zurück, die Ihrer Mönchsstufe plus der gewürfelten Zahl entspricht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast beendet haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Angriffe abwehren"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn ein Angriffswurf Sie trifft und sein Schaden Knüppel-, Stich- oder Hiebschaden umfasst, können Sie eine Reaktion ausführen, um den Gesamtschaden des Angriffs gegen Sie zu reduzieren. Die Reduzierung beträgt 1W10 plus Ihrem Geschicklichkeitsmodifikator und Ihrer Mönchsstufe."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie den Schaden auf 0 reduzieren, können Sie 1 Fokuspunkt ausgeben, um einen Teil der Angriffskraft umzuleiten. Wenn du dies tust, wähle eine Kreatur, die du im Umkreis von 5 Fuß um dich herum sehen kannst, wenn der Angriff ein Nahkampfangriff war, oder eine Kreatur, die du im Umkreis von 60 Fuß um dich herum sehen kannst und die sich nicht hinter Total Cover befindet, wenn der Angriff ein Fernkampfangriff war. Dieser Kreatur muss ein Geschicklichkeits-Rettungswurf gelingen oder sie erleidet Schaden in Höhe von zwei Würfen deines Kampfkunstwürfels plus deinem Geschicklichkeitsmodifikator. Der Schaden ist von der gleichen Art wie der Angriff."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Mönch-Unterklasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine Mönch-Unterklasse deiner Wahl. Die Unterklassen „Krieger der Barmherzigkeit“, „Krieger des Schattens“, „Krieger der Elemente“ und „Krieger der offenen Hand“ werden nach der Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Mönchstufen Funktionen gewährt. Für den Rest Ihrer Karriere erwerben Sie alle Merkmale Ihrer Unterklasse, die Ihrem Mönchsniveau oder niedriger entsprechen."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Monk-Unterklassen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Name: Krieger der Barmherzigkeit, Krieger des Schattens, Krieger der Elemente, Krieger der offenen Hand"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 4: Verbesserung der Fähigkeitsbewertung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Mönchsstufen 8, 12 und 16."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 4: Langsamer Fall"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du fällst, kannst du eine Reaktion ausführen, um den Schaden, den du durch den Sturz erleidest, um das Fünffache deiner Mönchsstufe zu reduzieren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 5: Zusätzlicher Angriff"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst jedes Mal, wenn du in deinem Zug die Angriffsaktion ausführst, zweimal statt einmal angreifen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 5: Betäubender Schlag"
+    },
+    {
+      "type": "paragraph",
+      "text": "Einmal pro Spielzug, wenn du eine Kreatur mit einer Mönchswaffe oder einem unbewaffneten Schlag triffst, kannst du 1 Fokuspunkt ausgeben, um einen atemberaubenden Schlag zu versuchen. Das Ziel muss einen Verfassungs-Rettungswurf machen. Bei einem fehlgeschlagenen Rettungswurf bleibt das Ziel bis zum Beginn Ihres nächsten Zuges im Zustand „Betäubt“. Bei einem erfolgreichen Rettungswurf wird die Geschwindigkeit des Ziels bis zum Beginn Ihres nächsten Zuges halbiert und der nächste Angriffswurf gegen das Ziel davor hat einen Vorteil."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Kraftvolle Schläge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wann immer du mit deinem unbewaffneten Schlag Schaden verursachst, kann er Machtschaden deiner Wahl oder seinen normalen Schadenstyp verursachen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Ausweichen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie einem Effekt ausgesetzt sind, der es Ihnen ermöglicht, einen Geschicklichkeits-Rettungswurf auszuführen, der nur halben Schaden erleidet, erleiden Sie stattdessen keinen Schaden, wenn Ihnen der Rettungswurf gelingt, und nur halben Schaden, wenn Sie scheitern."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren nicht von dieser Funktion, wenn Sie an der Krankheit „Kampfunfähig“ leiden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 9: Akrobatische Bewegung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Solange Sie keine Rüstung tragen oder keinen Schild tragen, erhalten Sie die Fähigkeit, sich in Ihrem Zug entlang vertikaler Flächen und über Flüssigkeiten zu bewegen, ohne während der Bewegung zu fallen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 10: Erhöhter Fokus"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Fähigkeiten „Schlaghagel“, „Geduldige Verteidigung“ und „Schritt des Windes“ erhalten die folgenden Vorteile."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schlaghagel. Sie können 1 Fokuspunkt ausgeben, um Flurry of Blows zu verwenden und damit drei unbewaffnete Schläge statt zwei auszuführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Patientenverteidigung. Wenn Sie einen Fokuspunkt ausgeben, um „Geduldige Verteidigung“ einzusetzen, erhalten Sie eine Anzahl temporärer Trefferpunkte, die zwei Würfen Ihres Kampfkunstwürfels entspricht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schritt des Windes. Wenn du einen Fokuspunkt ausgibst, um „Schritt des Windes“ zu verwenden, kannst du eine willige Kreatur in einem Umkreis von 5 Fuß um dich selbst auswählen, die groß oder kleiner ist. Du bewegst die Kreatur bis zum Ende deines Zuges mit dir. Die Bewegung der Kreatur provoziert keine Gelegenheitsangriffe."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 10: Selbstwiederherstellung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Durch bloße Willenskraft kannst du am Ende jedes deiner Züge einen der folgenden Zustände von dir entfernen: Bezaubert, verängstigt oder vergiftet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus führt der Verzicht auf Essen und Trinken nicht zu Erschöpfungszuständen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 13: Energie ablenken"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können die Funktion „Angriffe abwehren“ jetzt gegen Angriffe verwenden, die jede Art von Schaden verursachen, nicht nur gegen Schläge, Stiche oder Hiebe."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 14: Disziplinierter Überlebender"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre körperliche und geistige Disziplin befähigen Sie zur Beherrschung aller Rettungswürfe."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie jedes Mal, wenn Sie einen Rettungswurf durchführen und scheitern, 1 Fokuspunkt ausgeben, um ihn erneut zu würfeln, und Sie müssen den neuen Wurf verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Perfekter Fokus"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Initiative würfeln und keinen unheimlichen Stoffwechsel nutzen, erhalten Sie verbrauchte Fokuspunkte zurück, bis Sie 4 haben, falls Sie 3 oder weniger haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 18: Überlegene Verteidigung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Zu Beginn Ihres Zuges können Sie 3 Fokuspunkte ausgeben, um sich 1 Minute lang oder bis Sie den Zustand „Kampfunfähig“ erreichen, gegen Schaden zu wappnen. Während dieser Zeit hast du Resistenz gegen jeglichen Schaden außer Machtschaden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 19: Epischer Segen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Segen der unwiderstehlichen Offensive wird empfohlen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 20: Körper und Geist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben Ihren Körper und Geist zu neuen Höhen entwickelt. Ihre Geschicklichkeits- und Weisheitswerte erhöhen sich um 4 auf maximal 25."
+    }
+  ],
+  "text": "Mönche nutzen strenges Kampftraining und mentale Disziplin, um sich dem Multiversum anzuschließen und ihre inneren Machtreservoirs zu bündeln. Verschiedene Mönche konzeptualisieren diese Kraft auf unterschiedliche Weise: zum Beispiel als Atem, Energie, Lebenskraft, Essenz oder Selbst. Ob als beeindruckende Demonstration kriegerischer Fähigkeiten oder als subtilere Manifestation von Verteidigung und Geschwindigkeit kanalisiert, diese Kraft durchdringt alles, was ein Mönch tut.\n\nMönche konzentrieren ihre innere Kraft, um außergewöhnliche, sogar übernatürliche Wirkungen zu erzielen. Sie nutzen unheimliche Geschwindigkeit und Stärke für ihre Angriffe, mit oder ohne den Einsatz von Waffen. In den Händen eines Mönchs können selbst die einfachsten Waffen zu anspruchsvollen Werkzeugen der Kampfbeherrschung werden.\n\nViele Mönche sind der Meinung, dass ein strukturiertes Leben in asketischem Rückzug ihnen hilft, die körperliche und geistige Konzentration zu entwickeln, die sie benötigen, um ihre Kraft zu nutzen. Andere Mönche glauben, dass das Eintauchen in die pulsierende Verwirrung des Lebens ihre Entschlossenheit und Disziplin stärkt.\n\nMönche betrachten Abenteuer im Allgemeinen als Prüfungen ihrer körperlichen und geistigen Entwicklung. Sie werden von dem Wunsch getrieben, eine größere Mission zu erfüllen, als nur Monster zu töten und Schätze zu plündern; Sie streben danach, sich in lebende Waffen zu verwandeln.\n\nKerneigenschaften eines Mönchs Primäre Fähigkeit Geschicklichkeit und Weisheit Trefferpunkt Würfel W8 pro Mönchsstufe Rettungswurf-Fähigkeiten Stärke und Geschicklichkeit Fertigkeiten-Fähigkeiten Wählen Sie 2: Akrobatik, Leichtathletik, Geschichte, Einsicht, Religion oder Heimlichkeit Werkzeug-Fähigkeiten Wählen Sie eine Art Handwerkszeug oder Musikinstrument-Waffen-Fähigkeiten Einfache Waffen und Kampfwaffen mit der Eigenschaft „Leicht“ Rüstungstraining Keine Startausrüstung Wählen Sie A oder B: (A) Speer, 5 Dolche, Handwerkerwerkzeuge oder Musikinstrument, das für die oben genannte Werkzeugkompetenz ausgewählt wurde, Forscherpaket und 11 GP; oder (B) 50 GP\n\nMönch werden…\n\nAls Charakter der Stufe 1\n\nErhalte alle Eigenschaften in der Tabelle „Kernmerkmale des Mönchs“. Erhalten Sie die Level-1-Funktionen des Mönchs, die in der Tabelle „Mönchstalente“ aufgeführt sind.\n\nAls Mehrklassen-Mönch\n\nErhalte die Eigenschaft „Hitpoint-Würfel“ aus der Tabelle „Kernmerkmale des Mönchs“. Erhalten Sie die Level-1-Funktionen des Mönchs, die in der Tabelle „Mönchstalente“ aufgeführt sind.\n\nTalente der Mönchsklasse\n\nMönchstalente (Teil A)\n\nLevel Uebungsbonus Klassentalente 1 +2 Kampfkunst, Ungepanzerte Verteidigung 2 +2 Mönchsfokus, Ungepanzerte Bewegung, Unheimlicher Stoffwechsel 3 +2 Angriffe abwehren, Mönchsunterklasse 4 +2 Fähigkeitswertverbesserung, Langsamer Fall 5 +3 Zusätzlicher Angriff, Betäubender Schlag 6 +3 Verstärkte Schläge, Unterklassentalent 7 +3 Ausweichen 8 +3 Fähigkeitswertverbesserung 9 +4 Akrobatische Bewegung 10 +4 Erhöhter Fokus, Selbstwiederherstellung 11 +4 Unterklassentalent 12 +4 Fähigkeitswertverbesserung 13 +5 Energie ablenken 14 +5 Disziplinierter Überlebender 15 +5 Perfekter Fokus 16 +5 Fähigkeitswertverbesserung 17 +6 Unterklassentalent 18 +6 Überlegene Verteidigung 19 +6 Epischer Segen 20 +6 Körper und Geist\n\nMönchstalente (Teil B)\n\nStufe Kampfkunst-Fokuspunkte Ungepanzerte Bewegung 1 1W6 - - 2 1W6 2 +10 Fuß 3 1W6 3 +10 Fuß 4 1W6 4 +10 Fuß 5 1W8 5 +10 Fuß 6 1W8 6 +15 Fuß 7 1W8 7 +15 Fuß 8 1W8 8 +15 Fuß 9 1W8 9 +15 Fuß 10 1W8 10 +20 Fuß 11 1W10 11 +20 Fuß 12 1W10 12 +20 Fuß 13 1W10 13 +20 Fuß 14 1W10 14 +25 Fuß 15 1W10 15 +25 Fuß 16 1W10 16 +25 Fuß 17 1W12 17 +25 Fuß 18 1W12 18 +30 Fuß 19 1W12 19 +30 Fuß 20 1W12 20 +30 Fuß\n\nAls Mönch erhältst du die folgenden Klassenmerkmale, wenn du die angegebenen Mönchsstufen erreichst. Diese Eigenschaften sind in der Tabelle „Mönchstalente“ aufgeführt.\n\nStufe 1: Kampfkunst\n\nDurch das Praktizieren von Kampfkünsten beherrschen Sie die folgenden Kampfstile, bei denen Sie Ihre unbewaffneten Schlag- und Mönchswaffen einsetzen:\n\nEinfache Nahkampfwaffen. Kampfnahkampfwaffen mit der Lichteigenschaft\n\nSie erhalten die folgenden Vorteile, wenn Sie unbewaffnet sind oder nur Mönchswaffen tragen und keine Rüstung tragen oder einen Schild tragen.\n\nBonus: Unbewaffneter Schlag. Als Bonusaktion können Sie einen unbewaffneten Angriff durchführen.\n\nKampfkunst-Stanze. Sie können 1W6 anstelle des normalen Schadens Ihrer Waffen „Unbewaffneter Schlag“ oder „Mönch“ würfeln. Dieser Würfel ändert sich mit zunehmender Mönchsstufe, wie in der Spalte „Kampfkunst“ der Tabelle „Mönchstalente“ gezeigt.\n\nGeschickte Angriffe. Sie können Ihren Geschicklichkeitsmodifikator anstelle Ihres Stärkemodifikators für die Angriffs- und Schadenswürfe Ihrer unbewaffneten Angriffe und Mönchswaffen verwenden. Wenn Sie außerdem die Option „Grapple“ oder „Stove“ Ihres unbewaffneten Schlags verwenden, können Sie Ihren Geschicklichkeitsmodifikator anstelle Ihres Stärkemodifikators verwenden, um den Rettungswurf-SG zu bestimmen.\n\nStufe 1: Ungepanzerte Verteidigung\n\nSolange Sie keine Rüstung tragen oder keinen Schild führen, beträgt Ihre Grundrüstungsklasse 10 plus Ihre Geschicklichkeits- und Weisheitsmodifikatoren.\n\nLevel 2: Mönchsfokus\n\nIhre Konzentration und Ihr Kampftraining ermöglichen es Ihnen, eine Quelle außergewöhnlicher Energie in sich zu nutzen. Diese Energie wird durch Fokuspunkte repräsentiert. Ihre Mönchsstufe bestimmt die Anzahl Ihrer Punkte, wie in der Spalte „Fokuspunkte“ der Tabelle „Mönchstalente“ angezeigt.\n\nSie können diese Punkte ausgeben, um bestimmte Mönchsfunktionen zu verbessern oder zu stärken. Sie kennen zunächst drei solcher Funktionen: „Flurry of Blows“, „Patient Defense“ und „Step of the Wind“, die im Folgenden detailliert beschrieben werden.\n\nWenn Sie einen Fokuspunkt ausgeben, ist dieser erst verfügbar, wenn Sie eine kurze oder lange Rast beendet haben. Am Ende erhalten Sie alle Ihre verbrauchten Punkte zurück.\n\nEinige Funktionen, die Fokuspunkte verwenden, erfordern, dass Ihr Ziel einen Rettungswurf durchführt. Der Rettungswurf-SG beträgt 8 plus deinen Weisheitsmodifikator und Uebungsbonus.\n\nSchlaghagel. Als Bonusaktion können Sie 1 Fokuspunkt ausgeben, um zwei unbewaffnete Angriffe durchzuführen.\n\nPatientenverteidigung. Sie können die Disengage-Aktion als Bonusaktion nutzen. Alternativ können Sie 1 Fokuspunkt ausgeben, um sowohl die Aktionen „Entfernen“ als auch „Ausweichen“ als Bonusaktion durchzuführen.\n\nSchritt des Windes. Sie können die Dash-Aktion als Bonusaktion nutzen. Alternativ können Sie 1 Fokuspunkt ausgeben, um sowohl die Aktionen „Entfernen“ als auch „Sprinten“ als Bonusaktion auszuführen, und Ihre Sprungweite wird für die Runde verdoppelt.\n\nLevel 2: Ungepanzerte Bewegung\n\nIhre Geschwindigkeit erhöht sich um 10 Fuß, wenn Sie keine Rüstung tragen oder keinen Schild tragen. Dieser Bonus erhöht sich, wenn Sie bestimmte Mönchsstufen erreichen, wie in der Tabelle „Mönchstalente“ aufgeführt.\n\nLevel 2: Unheimlicher Stoffwechsel\n\nWenn Sie Initiative würfeln, können Sie alle verbrauchten Fokuspunkte zurückerhalten. Wenn Sie dies tun, werfen Sie Ihren Kampfkunstwürfel und erhalten eine Anzahl an Trefferpunkten zurück, die Ihrer Mönchsstufe plus der gewürfelten Zahl entspricht.\n\nSobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast beendet haben.\n\nLevel 3: Angriffe abwehren\n\nWenn ein Angriffswurf Sie trifft und sein Schaden Knüppel-, Stich- oder Hiebschaden umfasst, können Sie eine Reaktion ausführen, um den Gesamtschaden des Angriffs gegen Sie zu reduzieren. Die Reduzierung beträgt 1W10 plus Ihrem Geschicklichkeitsmodifikator und Ihrer Mönchsstufe.\n\nWenn Sie den Schaden auf 0 reduzieren, können Sie 1 Fokuspunkt ausgeben, um einen Teil der Angriffskraft umzuleiten. Wenn du dies tust, wähle eine Kreatur, die du im Umkreis von 5 Fuß um dich herum sehen kannst, wenn der Angriff ein Nahkampfangriff war, oder eine Kreatur, die du im Umkreis von 60 Fuß um dich herum sehen kannst und die sich nicht hinter Total Cover befindet, wenn der Angriff ein Fernkampfangriff war. Dieser Kreatur muss ein Geschicklichkeits-Rettungswurf gelingen oder sie erleidet Schaden in Höhe von zwei Würfen deines Kampfkunstwürfels plus deinem Geschicklichkeitsmodifikator. Der Schaden ist von der gleichen Art wie der Angriff.\n\nLevel 3: Mönch-Unterklasse\n\nDu erhältst eine Mönch-Unterklasse deiner Wahl. Die Unterklassen „Krieger der Barmherzigkeit“, „Krieger des Schattens“, „Krieger der Elemente“ und „Krieger der offenen Hand“ werden nach der Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Mönchstufen Funktionen gewährt. Für den Rest Ihrer Karriere erwerben Sie alle Merkmale Ihrer Unterklasse, die Ihrem Mönchsniveau oder niedriger entsprechen.\n\nMonk-Unterklassen\n\nName: Krieger der Barmherzigkeit, Krieger des Schattens, Krieger der Elemente, Krieger der offenen Hand\n\nStufe 4: Verbesserung der Fähigkeitsbewertung\n\nDu erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Mönchsstufen 8, 12 und 16.\n\nStufe 4: Langsamer Fall\n\nWenn du fällst, kannst du eine Reaktion ausführen, um den Schaden, den du durch den Sturz erleidest, um das Fünffache deiner Mönchsstufe zu reduzieren.\n\nLevel 5: Zusätzlicher Angriff\n\nDu kannst jedes Mal, wenn du in deinem Zug die Angriffsaktion ausführst, zweimal statt einmal angreifen.\n\nLevel 5: Betäubender Schlag\n\nEinmal pro Spielzug, wenn du eine Kreatur mit einer Mönchswaffe oder einem unbewaffneten Schlag triffst, kannst du 1 Fokuspunkt ausgeben, um einen atemberaubenden Schlag zu versuchen. Das Ziel muss einen Verfassungs-Rettungswurf machen. Bei einem fehlgeschlagenen Rettungswurf bleibt das Ziel bis zum Beginn Ihres nächsten Zuges im Zustand „Betäubt“. Bei einem erfolgreichen Rettungswurf wird die Geschwindigkeit des Ziels bis zum Beginn Ihres nächsten Zuges halbiert und der nächste Angriffswurf gegen das Ziel davor hat einen Vorteil.\n\nLevel 6: Kraftvolle Schläge\n\nWann immer du mit deinem unbewaffneten Schlag Schaden verursachst, kann er Machtschaden deiner Wahl oder seinen normalen Schadenstyp verursachen.\n\nLevel 7: Ausweichen\n\nWenn Sie einem Effekt ausgesetzt sind, der es Ihnen ermöglicht, einen Geschicklichkeits-Rettungswurf auszuführen, der nur halben Schaden erleidet, erleiden Sie stattdessen keinen Schaden, wenn Ihnen der Rettungswurf gelingt, und nur halben Schaden, wenn Sie scheitern.\n\nSie profitieren nicht von dieser Funktion, wenn Sie an der Krankheit „Kampfunfähig“ leiden.\n\nLevel 9: Akrobatische Bewegung\n\nSolange Sie keine Rüstung tragen oder keinen Schild tragen, erhalten Sie die Fähigkeit, sich in Ihrem Zug entlang vertikaler Flächen und über Flüssigkeiten zu bewegen, ohne während der Bewegung zu fallen.\n\nStufe 10: Erhöhter Fokus\n\nIhre Fähigkeiten „Schlaghagel“, „Geduldige Verteidigung“ und „Schritt des Windes“ erhalten die folgenden Vorteile.\n\nSchlaghagel. Sie können 1 Fokuspunkt ausgeben, um Flurry of Blows zu verwenden und damit drei unbewaffnete Schläge statt zwei auszuführen.\n\nPatientenverteidigung. Wenn Sie einen Fokuspunkt ausgeben, um „Geduldige Verteidigung“ einzusetzen, erhalten Sie eine Anzahl temporärer Trefferpunkte, die zwei Würfen Ihres Kampfkunstwürfels entspricht.\n\nSchritt des Windes. Wenn du einen Fokuspunkt ausgibst, um „Schritt des Windes“ zu verwenden, kannst du eine willige Kreatur in einem Umkreis von 5 Fuß um dich selbst auswählen, die groß oder kleiner ist. Du bewegst die Kreatur bis zum Ende deines Zuges mit dir. Die Bewegung der Kreatur provoziert keine Gelegenheitsangriffe.\n\nStufe 10: Selbstwiederherstellung\n\nDurch bloße Willenskraft kannst du am Ende jedes deiner Züge einen der folgenden Zustände von dir entfernen: Bezaubert, verängstigt oder vergiftet.\n\nDarüber hinaus führt der Verzicht auf Essen und Trinken nicht zu Erschöpfungszuständen.\n\nLevel 13: Energie ablenken\n\nSie können die Funktion „Angriffe abwehren“ jetzt gegen Angriffe verwenden, die jede Art von Schaden verursachen, nicht nur gegen Schläge, Stiche oder Hiebe.\n\nStufe 14: Disziplinierter Überlebender\n\nIhre körperliche und geistige Disziplin befähigen Sie zur Beherrschung aller Rettungswürfe.\n\nDarüber hinaus können Sie jedes Mal, wenn Sie einen Rettungswurf durchführen und scheitern, 1 Fokuspunkt ausgeben, um ihn erneut zu würfeln, und Sie müssen den neuen Wurf verwenden.\n\nLevel 15: Perfekter Fokus\n\nWenn Sie Initiative würfeln und keinen unheimlichen Stoffwechsel nutzen, erhalten Sie verbrauchte Fokuspunkte zurück, bis Sie 4 haben, falls Sie 3 oder weniger haben.\n\nLevel 18: Überlegene Verteidigung\n\nZu Beginn Ihres Zuges können Sie 3 Fokuspunkte ausgeben, um sich 1 Minute lang oder bis Sie den Zustand „Kampfunfähig“ erreichen, gegen Schaden zu wappnen. Während dieser Zeit hast du Resistenz gegen jeglichen Schaden außer Machtschaden.\n\nLevel 19: Epischer Segen\n\nDu erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Segen der unwiderstehlichen Offensive wird empfohlen.\n\nLevel 20: Körper und Geist\n\nSie haben Ihren Körper und Geist zu neuen Höhen entwickelt. Ihre Geschicklichkeits- und Weisheitswerte erhöhen sich um 4 auf maximal 25.",
+  "tags": [],
+  "hit_die": null,
+  "primary_abilities": [],
+  "proficiencies": {
+    "saving_throws": [],
+    "armor": [],
+    "weapons": [],
+    "tools": []
+  },
+  "skill_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "spellcasting": {
+    "ability": null,
+    "progression": null,
+    "preparation_formula": null,
+    "known_formula": null,
+    "focus_types": [],
+    "spell_list_names": [],
+    "uses_spell_slots": false
+  },
+  "starting_equipment": {
+    "fixed": [],
+    "choices": []
+  },
+  "multiclass_requirements": {
+    "minimum_abilities": {}
+  },
+  "levels": [
+    {
+      "level": 1,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Kampfkunst",
+        "ungepanzerte Verteidigung"
+      ],
+      "kampfkunst": "1W6"
+    },
+    {
+      "level": 2,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Mönchsfokus",
+        "Ungepanzerte Bewegung",
+        "Unheimlicher Stoffwechsel"
+      ],
+      "kampfkunst": "1W6",
+      "fokuspunkte": "2",
+      "ungepanzerte bewegung": "+10 Fuß"
+    },
+    {
+      "level": 3,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Angriffe abwehren",
+        "Mönch-Unterklasse"
+      ],
+      "kampfkunst": "1W6",
+      "fokuspunkte": "3",
+      "ungepanzerte bewegung": "+10 Fuß"
+    },
+    {
+      "level": 4,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Verbesserung der Fähigkeitsbewertung",
+        "langsamer Fall"
+      ],
+      "kampfkunst": "1W6",
+      "fokuspunkte": "4",
+      "ungepanzerte bewegung": "+10 Fuß"
+    },
+    {
+      "level": 5,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Zusätzlicher Angriff",
+        "atemberaubender Schlag"
+      ],
+      "kampfkunst": "1W8",
+      "fokuspunkte": "5",
+      "ungepanzerte bewegung": "+10 Fuß"
+    },
+    {
+      "level": 6,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Ermächtigte Schläge",
+        "Unterklasse-Talent"
+      ],
+      "kampfkunst": "1W8",
+      "fokuspunkte": "6",
+      "ungepanzerte bewegung": "+15 Fuß"
+    },
+    {
+      "level": 7,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Ausweichen"
+      ],
+      "kampfkunst": "1W8",
+      "fokuspunkte": "7",
+      "ungepanzerte bewegung": "+15 Fuß"
+    },
+    {
+      "level": 8,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "kampfkunst": "1W8",
+      "fokuspunkte": "8",
+      "ungepanzerte bewegung": "+15 Fuß"
+    },
+    {
+      "level": 9,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Akrobatische Bewegung"
+      ],
+      "kampfkunst": "1W8",
+      "fokuspunkte": "9",
+      "ungepanzerte bewegung": "+15 Fuß"
+    },
+    {
+      "level": 10,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Erhöhter Fokus",
+        "Selbstwiederherstellung"
+      ],
+      "kampfkunst": "1W8",
+      "fokuspunkte": "10",
+      "ungepanzerte bewegung": "+20 Fuß"
+    },
+    {
+      "level": 11,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "kampfkunst": "1d10",
+      "fokuspunkte": "11",
+      "ungepanzerte bewegung": "+20 Fuß"
+    },
+    {
+      "level": 12,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "kampfkunst": "1d10",
+      "fokuspunkte": "12",
+      "ungepanzerte bewegung": "+20 Fuß"
+    },
+    {
+      "level": 13,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Energie ablenken"
+      ],
+      "kampfkunst": "1d10",
+      "fokuspunkte": "13",
+      "ungepanzerte bewegung": "+20 Fuß"
+    },
+    {
+      "level": 14,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Disziplinierter Überlebender"
+      ],
+      "kampfkunst": "1d10",
+      "fokuspunkte": "14",
+      "ungepanzerte bewegung": "+25 Fuß"
+    },
+    {
+      "level": 15,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Perfekter Fokus"
+      ],
+      "kampfkunst": "1d10",
+      "fokuspunkte": "15",
+      "ungepanzerte bewegung": "+25 Fuß"
+    },
+    {
+      "level": 16,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "kampfkunst": "1d10",
+      "fokuspunkte": "16",
+      "ungepanzerte bewegung": "+25 Fuß"
+    },
+    {
+      "level": 17,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "kampfkunst": "1d12",
+      "fokuspunkte": "17",
+      "ungepanzerte bewegung": "+25 Fuß"
+    },
+    {
+      "level": 18,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Überlegene Verteidigung"
+      ],
+      "kampfkunst": "1d12",
+      "fokuspunkte": "18",
+      "ungepanzerte bewegung": "+30 Fuß"
+    },
+    {
+      "level": 19,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Epischer Segen"
+      ],
+      "kampfkunst": "1d12",
+      "fokuspunkte": "19",
+      "ungepanzerte bewegung": "+30 Fuß"
+    },
+    {
+      "level": 20,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Körper und Geist"
+      ],
+      "kampfkunst": "1d12",
+      "fokuspunkte": "20",
+      "ungepanzerte bewegung": "+30 Fuß"
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Krieger der Barmherzigkeit",
+      "original_name": "Warrior of Mercy",
+      "id": "krieger-der-barmherzigkeit",
+      "source_url": "http://dnd2024.wikidot.com/monk:warrior-of-mercy",
+      "file": "subclasses/krieger-der-barmherzigkeit.json"
+    },
+    {
+      "name": "Krieger des Schattens",
+      "original_name": "Warrior of Shadow",
+      "id": "krieger-des-schattens",
+      "source_url": "http://dnd2024.wikidot.com/monk:warrior-of-shadow",
+      "file": "subclasses/krieger-des-schattens.json"
+    },
+    {
+      "name": "Krieger der Elemente",
+      "original_name": "Warrior of the Elements",
+      "id": "krieger-der-elemente",
+      "source_url": "http://dnd2024.wikidot.com/monk:warrior-of-the-elements",
+      "file": "subclasses/krieger-der-elemente.json"
+    },
+    {
+      "name": "Krieger der offenen Hand",
+      "original_name": "Warrior of the Open Hand",
+      "id": "krieger-der-offenen-hand",
+      "source_url": "http://dnd2024.wikidot.com/monk:warrior-of-the-open-hand",
+      "file": "subclasses/krieger-der-offenen-hand.json"
+    }
+  ],
+  "subclass_index": [
+    "krieger-der-barmherzigkeit.json",
+    "krieger-der-elemente.json",
+    "krieger-der-offenen-hand.json",
+    "krieger-des-schattens.json"
+  ]
+}

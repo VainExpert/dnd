@@ -1,0 +1,44 @@
+{
+  "id": "blind-kaempfen",
+  "type": "feat",
+  "name": "Blind Kaempfen",
+  "original_name": "Blind Fighting",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:blind-fighting",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Kampfstil-Talente",
+  "group": "Kampfstil-Talente",
+  "prerequisites": [
+    "Talent im Kampfstil"
+  ],
+  "summary": "Voraussetzung: Talent im Kampfstil",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Talent im Kampfstil"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie verfügen über Blindsicht mit einer Reichweite von 10 Fuß."
+    }
+  ],
+  "text": "Voraussetzung: Talent im Kampfstil\n\nSie verfügen über Blindsicht mit einer Reichweite von 10 Fuß.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

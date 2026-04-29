@@ -1,0 +1,29 @@
+{
+  "id": "verschlingende-klinge",
+  "name": "Verschlingende Klinge",
+  "original_name": "Devouring Blade",
+  "kind": "eldritch_invocation",
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:eldritch-invocation",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "",
+  "cost_original": "",
+  "prerequisite": "Hexenmeister der Stufe 12+, Beschwörung der durstigen Klinge",
+  "prerequisite_original": "Level 12+ Warlock, Thirsting Blade Invocation",
+  "summary": "Der zusätzliche Angriff Ihrer Thirsting Blade-Anrufung verleiht zwei zusätzliche Angriffe statt einem.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "The Extra Attack of your Thirsting Blade invocation confers two extra attacks rather than one.",
+      "text_de": "Der zusätzliche Angriff Ihrer Thirsting Blade-Anrufung verleiht zwei zusätzliche Angriffe statt einem."
+    }
+  ]
+}

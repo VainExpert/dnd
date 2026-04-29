@@ -1,0 +1,48 @@
+{
+  "id": "pirat",
+  "type": "background",
+  "name": "Pirat",
+  "original_name": null,
+  "rules_version": "2024",
+  "source": "",
+  "source_url": null,
+  "source_page": null,
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": null,
+  "category": "",
+  "group": "",
+  "prerequisites": [],
+  "summary": "",
+  "entries": [],
+  "text": "",
+  "tags": [],
+  "ability_scores": [],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": null,
+  "granted_feat_name": "",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": []
+}

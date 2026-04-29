@@ -3,8 +3,7 @@
   "type": "Wundersamer Gegenstand",
   "name": "Anhänger der Gesundheit",
   "vendors": [
-    "Ishmar's Magisches Allerlei",
-    "Beute"
+    "Ishmar's Magisches Allerlei"
   ],
   "rules_version": "2024",
   "source": "DMG'24",
@@ -38,7 +37,9 @@
   "granted_action_ids": [],
   "granted_spell_ids": [],
   "contained_item_ids": [],
-  "effects": ["2W4 + 2 Heilung"],
+  "effects": [
+    "2W4 + 2 Heilung"
+  ],
   "use_cost": "Aktion",
   "text": "Wenn du diesen Anhänger trägst, kannst du mit einer Aktion 2W4 + TP bei dir selbst heilen. Diese Fähigkeitkann nur einmal pro Tag genutzt werden und wird am Morgen zurückgesetzt. Außerdem hat der Träger Vorteil auf Rettungswürfe gegen den Vergiftet Zustand (bekommen oder beenden).",
   "tags": [

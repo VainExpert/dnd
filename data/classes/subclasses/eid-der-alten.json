@@ -1,0 +1,149 @@
+{
+  "id": "eid-der-alten",
+  "type": "subclass",
+  "name": "Eid der Alten",
+  "original_name": "Oath of the Ancients",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/paladin:oath-of-the-ancients",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Bewahre Leben und Licht in der Welt",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Bewahre Leben und Licht in der Welt"
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Eid der Alten ist so alt wie die ersten Elfen. Paladine, die diesen Eid schwören, schätzen das Licht; Sie lieben die schönen und lebensspendenden Dinge der Welt mehr als alle Prinzipien der Ehre, des Mutes und der Gerechtigkeit. Sie schmücken ihre Rüstung und Kleidung oft mit Bildern von wachsenden Dingen – Blättern, Geweihen oder Blumen – um ihr Engagement für die Bewahrung von Leben und Licht zum Ausdruck zu bringen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Diese Paladine teilen die folgenden Grundsätze:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Entfachen Sie das Licht der Hoffnung.",
+        "Leben im Tierheim.",
+        "Freude an Kunst und Lachen."
+      ],
+      "text": "Entfachen Sie das Licht der Hoffnung. Leben im Tierheim. Freude an Kunst und Lachen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Zorn der Natur"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als magische Aktion kannst du eine deiner Anwendungen von Channel Divinity nutzen, um Spektralranken um Kreaturen in der Nähe zu beschwören. Jede Kreatur deiner Wahl, die du in einem Umkreis von 15 Fuß um dich herum sehen kannst, muss einen Rettungswurf der Stärke bestehen oder sich 1 Minute lang im Zustand „Gebremst“ befinden. Eine zurückgehaltene Kreatur wiederholt den Rettungswurf am Ende jedes ihrer Züge und beendet den Effekt bei einem Erfolg."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Zauber „Eid der Alten“."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Magie deines Schwurs stellt sicher, dass du bestimmte Zauber immer bereit hast; Wenn Sie eine Paladin-Stufe erreichen, die in der Zaubertabelle „Eid der Alten“ angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Eid der Alten Zauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Paladin-Level",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Ensnaring Strike, Sprich mit Tieren"
+        ],
+        [
+          "5",
+          "Misty Step, Moonbeam"
+        ],
+        [
+          "9",
+          "Pflanzenwachstum, Schutz vor Energie"
+        ],
+        [
+          "13",
+          "Eissturm, Steinhaut"
+        ],
+        [
+          "17",
+          "Kommunizieren Sie mit der Natur, Baumschritt"
+        ]
+      ],
+      "text": "Paladin-Stufenzauber: 3 „Fesselnder Schlag“, „Mit Tieren sprechen“, „Nebliger Schritt“, „Mondstrahl“, „9 Pflanzenwachstum“, „Schutz vor Energie“, „13 Eissturm“, „Steinhaut“, „17 Gemeinschaft mit der Natur“, „Baumschritt“."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 7: Aura der Abwehr"
+    },
+    {
+      "type": "paragraph",
+      "text": "Uralte Magie lastet so schwer auf dir, dass sie einen unheimlichen Schutzzauber bildet, der Energie von jenseits der materiellen Ebene abschwächt; Sie und Ihre Verbündeten verfügen über Resistenz gegen nekrotischen, psychischen und strahlenden Schaden, während Sie sich in Ihrer Aura des Schutzes befinden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Unsterblicher Wächter"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Ihre Trefferpunkte auf 0 reduziert werden und Sie nicht sofort getötet werden, können Sie stattdessen auf 1 Trefferpunkt sinken und eine Anzahl an Trefferpunkten zurückerhalten, die dem Dreifachen Ihrer Paladin-Stufe entspricht. Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie nicht auf magische Weise altern und hören auf, sichtbar zu altern."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 20: Ältester Champion"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion können Sie Ihre Aura des Schutzes mit Urkraft erfüllen und so die folgenden Vorteile für 1 Minute oder bis Sie sie beenden gewähren (keine Aktion erforderlich). Sobald Sie diese Funktion verwenden, können Sie sie erst dann wieder verwenden, wenn Sie eine Lange Rast beendet haben. Sie können Ihre Nutzung auch wiederherstellen, indem Sie einen Zauberslot der Stufe 5 verbrauchen (keine Aktion erforderlich)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verringern Sie den Trotz. Feinde in der Aura haben bei Rettungswürfen einen Nachteil gegenüber deinen Zaubersprüchen und Channel Divinity-Optionen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Regeneration. Zu Beginn jedes Ihrer Züge erhalten Sie 10 Trefferpunkte zurück."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schnelle Zauber. Immer wenn du einen Zauber wirkst, der eine Zauberzeit einer Aktion hat, kannst du ihn stattdessen mit einer Bonusaktion wirken."
+    }
+  ],
+  "text": "Bewahre Leben und Licht in der Welt\n\nDer Eid der Alten ist so alt wie die ersten Elfen. Paladine, die diesen Eid schwören, schätzen das Licht; Sie lieben die schönen und lebensspendenden Dinge der Welt mehr als alle Prinzipien der Ehre, des Mutes und der Gerechtigkeit. Sie schmücken ihre Rüstung und Kleidung oft mit Bildern von wachsenden Dingen – Blättern, Geweihen oder Blumen – um ihr Engagement für die Bewahrung von Leben und Licht zum Ausdruck zu bringen.\n\nDiese Paladine teilen die folgenden Grundsätze:\n\nEntfachen Sie das Licht der Hoffnung. Leben im Tierheim. Freude an Kunst und Lachen.\n\nStufe 3: Zorn der Natur\n\nAls magische Aktion kannst du eine deiner Anwendungen von Channel Divinity nutzen, um Spektralranken um Kreaturen in der Nähe zu beschwören. Jede Kreatur deiner Wahl, die du in einem Umkreis von 15 Fuß um dich herum sehen kannst, muss einen Rettungswurf der Stärke bestehen oder sich 1 Minute lang im Zustand „Gebremst“ befinden. Eine zurückgehaltene Kreatur wiederholt den Rettungswurf am Ende jedes ihrer Züge und beendet den Effekt bei einem Erfolg.\n\nStufe 3: Zauber „Eid der Alten“.\n\nDie Magie deines Schwurs stellt sicher, dass du bestimmte Zauber immer bereit hast; Wenn Sie eine Paladin-Stufe erreichen, die in der Zaubertabelle „Eid der Alten“ angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nEid der Alten Zauber\n\nPaladin-Stufenzauber: 3 „Fesselnder Schlag“, „Mit Tieren sprechen“, „Nebliger Schritt“, „Mondstrahl“, „9 Pflanzenwachstum“, „Schutz vor Energie“, „13 Eissturm“, „Steinhaut“, „17 Gemeinschaft mit der Natur“, „Baumschritt“.\n\nStufe 7: Aura der Abwehr\n\nUralte Magie lastet so schwer auf dir, dass sie einen unheimlichen Schutzzauber bildet, der Energie von jenseits der materiellen Ebene abschwächt; Sie und Ihre Verbündeten verfügen über Resistenz gegen nekrotischen, psychischen und strahlenden Schaden, während Sie sich in Ihrer Aura des Schutzes befinden.\n\nLevel 15: Unsterblicher Wächter\n\nWenn Ihre Trefferpunkte auf 0 reduziert werden und Sie nicht sofort getötet werden, können Sie stattdessen auf 1 Trefferpunkt sinken und eine Anzahl an Trefferpunkten zurückerhalten, die dem Dreifachen Ihrer Paladin-Stufe entspricht. Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben.\n\nDarüber hinaus können Sie nicht auf magische Weise altern und hören auf, sichtbar zu altern.\n\nLevel 20: Ältester Champion\n\nAls Bonusaktion können Sie Ihre Aura des Schutzes mit Urkraft erfüllen und so die folgenden Vorteile für 1 Minute oder bis Sie sie beenden gewähren (keine Aktion erforderlich). Sobald Sie diese Funktion verwenden, können Sie sie erst dann wieder verwenden, wenn Sie eine Lange Rast beendet haben. Sie können Ihre Nutzung auch wiederherstellen, indem Sie einen Zauberslot der Stufe 5 verbrauchen (keine Aktion erforderlich).\n\nVerringern Sie den Trotz. Feinde in der Aura haben bei Rettungswürfen einen Nachteil gegenüber deinen Zaubersprüchen und Channel Divinity-Optionen.\n\nRegeneration. Zu Beginn jedes Ihrer Züge erhalten Sie 10 Trefferpunkte zurück.\n\nSchnelle Zauber. Immer wenn du einen Zauber wirkst, der eine Zauberzeit einer Aktion hat, kannst du ihn stattdessen mit einer Bonusaktion wirken.",
+  "tags": [],
+  "class": "Paladin",
+  "class_id": "paladin",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

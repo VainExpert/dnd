@@ -1,0 +1,88 @@
+{
+  "id": "toter-magischer-bewohner",
+  "type": "background",
+  "name": "Toter magischer Bewohner",
+  "original_name": "Dead Magic Dweller",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/background:dead-magic-dweller",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Stärke, Konstitution, Weisheit",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Stärke, Konstitution, Weisheit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Heiler"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Medizin und Überleben"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse: Werkzeuge des Lederarbeiters"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Große Keule, Werkzeuge des Lederarbeiters, Schlafsack, Decke, Heilerausrüstung, Stange, Rationen (im Wert von 3 Tagen), Zelt, Zunderbüchse, 5 Fackeln, Kleidung des Reisenden, Wasserschlauch, 32 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die toten Magiezonen der Anauroch-Wüste sind für Zauberer und Monster, die auf Magie angewiesen sind, ein Gräuel – und das ist genau der Grund, warum Sie Ihr Leben dort aufgebaut haben. Vielleicht bist du auf der Flucht vor den Roten Zauberern, oder du bist in Calimshan einem mächtigen Dschinn in die Quere gekommen. Wie dem auch sei, Sie haben entschieden, dass das Leben in Anauroch Ihre beste Option ist. Nach langen Monaten oder Jahren sind Sie stärker, weiser und verfügen über hart erarbeitetes Wissen über Wüstenmedizin und das Überleben im Ödland."
+    }
+  ],
+  "text": "Fähigkeitswerte: Stärke, Konstitution, Weisheit\n\nTalent: Heiler\n\nFertigkeiten: Medizin und Überleben\n\nWerkzeugkenntnisse: Werkzeuge des Lederarbeiters\n\nAusrüstung: Wähle A oder B: (A) Große Keule, Werkzeuge des Lederarbeiters, Schlafsack, Decke, Heilerausrüstung, Stange, Rationen (im Wert von 3 Tagen), Zelt, Zunderbüchse, 5 Fackeln, Kleidung des Reisenden, Wasserschlauch, 32 GP; oder (B) 50 GP\n\nDie toten Magiezonen der Anauroch-Wüste sind für Zauberer und Monster, die auf Magie angewiesen sind, ein Gräuel – und das ist genau der Grund, warum Sie Ihr Leben dort aufgebaut haben. Vielleicht bist du auf der Flucht vor den Roten Zauberern, oder du bist in Calimshan einem mächtigen Dschinn in die Quere gekommen. Wie dem auch sei, Sie haben entschieden, dass das Leben in Anauroch Ihre beste Option ist. Nach langen Monaten oder Jahren sind Sie stärker, weiser und verfügen über hart erarbeitetes Wissen über Wüstenmedizin und das Überleben im Ödland.",
+  "tags": [],
+  "ability_scores": [
+    "str",
+    "con",
+    "wis"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "str",
+      "con",
+      "wis"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Medizin",
+    "Überleben\n\nWerkzeugkenntnisse: Werkzeuge des Lederarbeiters"
+  ],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "heiler",
+  "granted_feat_name": "Heiler\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Große Keule, Werkzeuge des Lederarbeiters, Schlafsack, Decke, Heilerausrüstung, Stange, Rationen (im Wert von 3 Tagen), Zelt, Zunderbüchse, 5 Fackeln, Kleidung des Reisenden, Wasserschlauch, 32 GP; oder (B) 50 GP\n\nDie toten Magiezonen der Anauroch-Wüste sind für Zauberer und Monster, die auf Magie angewiesen sind, ein Gräuel – und das ist genau der Grund, warum Sie Ihr Leben dort aufgebaut haben. Vielleicht bist du auf der Flucht vor den Roten Zauberern, oder du bist in Calimshan einem mächtigen Dschinn in die Quere gekommen. Wie dem auch sei, Sie haben entschieden, dass das Leben in Anauroch Ihre beste Option ist. Nach langen Monaten oder Jahren sind Sie stärker, weiser und verfügen über hart erarbeitetes Wissen über Wüstenmedizin und das Überleben im Ödland"
+    }
+  ]
+}

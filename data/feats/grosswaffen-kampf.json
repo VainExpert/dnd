@@ -1,0 +1,44 @@
+{
+  "id": "grosswaffen-kampf",
+  "type": "feat",
+  "name": "Grosswaffen-Kampf",
+  "original_name": "Great Weapon Fighting",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:great-weapon-fighting",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Kampfstil-Talente",
+  "group": "Kampfstil-Talente",
+  "prerequisites": [
+    "Talent im Kampfstil"
+  ],
+  "summary": "Voraussetzung: Talent im Kampfstil",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Talent im Kampfstil"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Schaden für einen Angriff würfeln, den Sie mit einer Nahkampfwaffe ausführen, die Sie mit zwei Händen halten, können Sie eine beliebige 1 oder 2 auf einem Schadenswürfel als 3 behandeln. Um diesen Vorteil zu erhalten, muss die Waffe über die Eigenschaft „Zweihändig“ oder „Vielseitig“ verfügen."
+    }
+  ],
+  "text": "Voraussetzung: Talent im Kampfstil\n\nWenn Sie Schaden für einen Angriff würfeln, den Sie mit einer Nahkampfwaffe ausführen, die Sie mit zwei Händen halten, können Sie eine beliebige 1 oder 2 auf einem Schadenswürfel als 3 behandeln. Um diesen Vorteil zu erhalten, muss die Waffe über die Eigenschaft „Zweihändig“ oder „Vielseitig“ verfügen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

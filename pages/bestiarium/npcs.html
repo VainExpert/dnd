@@ -57,8 +57,9 @@
     </main>
   </div>
 
+  <script src="../../nav.js"></script>
   <script type="module">
-    import { escapeHtml, loadIndex, loadMany, fmtSigned, mod } from "../../lib.js";
+    import { escapeHtml, loadIndex, loadMany, fmtSigned, mod, renderRichText, formatSpeedList, renderRollExpressionHtml } from "../../lib.js?v=2026-04-27-hitdice-links";
 
     const grid = document.getElementById("grid");
     const qEl = document.getElementById("q");
@@ -89,8 +90,8 @@
         ac: raw.armor_class?.value ?? raw.ac ?? null,
         ac_note: raw.armor_class?.display ?? raw.ac_note ?? "",
         hp: raw.hit_points?.average ?? raw.hp?.average ?? raw.hp ?? null,
-        hp_formula: raw.hit_points?.formula ?? raw.hp?.formula ?? "",
-        speed: raw.speed || {},
+        hp_formula: raw.hit_points?.formula ?? raw.hp?.formula ?? raw.hit_dice ?? "",
+        speed: raw.speeds ?? raw.speed ?? {},
         abilities,
         saving_throws: raw.saving_throws || {},
         skills: raw.skills || {},
@@ -120,22 +121,15 @@
 
     function formatSpeed(speed){
       if (!speed) return "—";
-      if (typeof speed === "string") return speed;
-      const order = ["walk", "fly", "swim", "climb", "burrow"];
-      const labels = {
-        walk: "Laufen",
-        fly: "Fliegen",
-        swim: "Schwimmen",
-        climb: "Klettern",
-        burrow: "Graben"
-      };
-      const parts = [];
-      for (const key of order){
-        const value = speed[key];
-        if (value == null || value === "") continue;
-        parts.push(typeof value === "number" ? `${labels[key]} ${value} ft.` : `${labels[key]} ${value}`);
-      }
-      return parts.length ? parts.join(", ") : "—";
+      return formatSpeedList(speed) || "—";
+    }
+
+    function renderHitDice(value){
+      const text = String(value ?? "").trim();
+      if (!text) return "";
+      return text.includes("[[")
+        ? renderRichText(text, { inlineOnly: true })
+        : renderRollExpressionHtml(text);
     }
 
     function card(n){
@@ -149,7 +143,7 @@
             <div class="mini-sub">${escapeHtml(subtitle || details || "NSC")}</div>
             <div class="pillbar">
               ${n.ac != null ? `<span class="pill"><b>RK</b> ${escapeHtml(n.ac)}</span>` : ""}
-              ${n.hp != null ? `<span class="pill"><b>TP</b> ${escapeHtml(n.hp)}${n.hp_formula ? ` <span class="muted">(${escapeHtml(n.hp_formula)})</span>` : ""}</span>` : ""}
+              ${n.hp != null ? `<span class="pill"><b>TP</b> ${escapeHtml(n.hp)}${n.hp_formula ? ` <span class="muted">(${renderHitDice(n.hp_formula)})</span>` : ""}</span>` : ""}
               <span class="pill"><b>Bewegung</b> ${escapeHtml(formatSpeed(n.speed))}</span>
               ${n.challenge?.cr ? `<span class="pill"><b>HG</b> ${escapeHtml(n.challenge.cr)}</span>` : ""}
             </div>
@@ -177,8 +171,8 @@
                 </div>
               </div>` : ""}
 
-            ${(n.traits?.length) ? `<div class="mini-box"><div class="mini-box-title">Eigenschaften</div><div class="mini-box-text">${n.traits.slice(0, 2).map(t => `<div class="mini"><b>${escapeHtml(t.name)}:</b> ${escapeHtml(t.text)}</div>`).join("")}</div></div>` : ""}
-            ${(n.actions?.length) ? `<div class="mini-box"><div class="mini-box-title">Aktionen</div><div class="mini-box-text">${n.actions.slice(0, 2).map(a => `<div class="mini"><b>${escapeHtml(a.name)}:</b> ${escapeHtml(a.text)}</div>`).join("")}</div></div>` : ""}
+            ${(n.traits?.length) ? `<div class="mini-box"><div class="mini-box-title">Eigenschaften</div><div class="mini-box-text">${n.traits.slice(0, 2).map(t => `<div class="mini"><b>${renderRichText(t.name, { inlineOnly: true })}:</b> ${renderRichText(t.text, { inlineOnly: true })}</div>`).join("")}</div></div>` : ""}
+            ${(n.actions?.length) ? `<div class="mini-box"><div class="mini-box-title">Aktionen</div><div class="mini-box-text">${n.actions.slice(0, 2).map(a => `<div class="mini"><b>${renderRichText(a.name, { inlineOnly: true })}:</b> ${renderRichText(a.text, { inlineOnly: true })}</div>`).join("")}</div></div>` : ""}
 
             <div class="mini-footer muted">${details ? escapeHtml(details) : ""}</div>
           </div>

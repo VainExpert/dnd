@@ -1,0 +1,85 @@
+{
+  "id": "vasall-der-lords-alliance",
+  "type": "background",
+  "name": "Vasall der Lords' Alliance",
+  "original_name": "Lords' Alliance Vassal",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/background:lords-alliance-vassal",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Stärke, Intelligenz, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Stärke, Intelligenz, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Agent der Lords‘ Alliance"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kompetenzen: Einsicht und Überzeugung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse: Kalligraphenbedarf"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) 2 Speere, Kalligraphenbedarf, feine Kleidung, Tinte, 5 Tintenstifte, Pergament (9 Blatt), 13 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben einer Mitgliedsstadt der Lords‘ Alliance Ihre Treue geschworen. Als Agent der Allianz müssen Sie die Grundsätze der Allianz wahren und sich für mehr Sicherheit und Wohlstand an der Schwertküste einsetzen. Du hast geschworen, dem Haus deines Herrn Ehre und Ruhm zu verleihen, sei es durch die Sicherung von Handelsstraßen für einen Handelsherrn von Waterdeep oder durch die Besiegung von Monstern flussaufwärts von Daggerford. Sie haben eine Ausbildung in den Künsten des Schwertkampfs und der Staatskunst und sind im Umgang mit der Klinge genauso geschickt wie im Umgang mit der Feder."
+    }
+  ],
+  "text": "Fähigkeitswerte: Stärke, Intelligenz, Charisma\n\nTalent: Agent der Lords‘ Alliance\n\nKompetenzen: Einsicht und Überzeugung\n\nWerkzeugkenntnisse: Kalligraphenbedarf\n\nAusrüstung: Wähle A oder B: (A) 2 Speere, Kalligraphenbedarf, feine Kleidung, Tinte, 5 Tintenstifte, Pergament (9 Blatt), 13 GP; oder (B) 50 GP\n\nSie haben einer Mitgliedsstadt der Lords‘ Alliance Ihre Treue geschworen. Als Agent der Allianz müssen Sie die Grundsätze der Allianz wahren und sich für mehr Sicherheit und Wohlstand an der Schwertküste einsetzen. Du hast geschworen, dem Haus deines Herrn Ehre und Ruhm zu verleihen, sei es durch die Sicherung von Handelsstraßen für einen Handelsherrn von Waterdeep oder durch die Besiegung von Monstern flussaufwärts von Daggerford. Sie haben eine Ausbildung in den Künsten des Schwertkampfs und der Staatskunst und sind im Umgang mit der Klinge genauso geschickt wie im Umgang mit der Feder.",
+  "tags": [],
+  "ability_scores": [
+    "str",
+    "int",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "str",
+      "int",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "agent-der-lords-alliance-kompetenzen-einsicht-und-ueberzeugung-werkzeugkenntnisse-kalligraphenbedarf",
+  "granted_feat_name": "Agent der Lords‘ Alliance\n\nKompetenzen: Einsicht und Überzeugung\n\nWerkzeugkenntnisse: Kalligraphenbedarf\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) 2 Speere, Kalligraphenbedarf, feine Kleidung, Tinte, 5 Tintenstifte, Pergament (9 Blatt), 13 GP; oder (B) 50 GP\n\nSie haben einer Mitgliedsstadt der Lords‘ Alliance Ihre Treue geschworen. Als Agent der Allianz müssen Sie die Grundsätze der Allianz wahren und sich für mehr Sicherheit und Wohlstand an der Schwertküste einsetzen. Du hast geschworen, dem Haus deines Herrn Ehre und Ruhm zu verleihen, sei es durch die Sicherung von Handelsstraßen für einen Handelsherrn von Waterdeep oder durch die Besiegung von Monstern flussaufwärts von Daggerford. Sie haben eine Ausbildung in den Künsten des Schwertkampfs und der Staatskunst und sind im Umgang mit der Klinge genauso geschickt wie im Umgang mit der Feder"
+    }
+  ]
+}

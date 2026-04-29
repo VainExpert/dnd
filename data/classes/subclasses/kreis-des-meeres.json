@@ -1,0 +1,135 @@
+{
+  "id": "kreis-des-meeres",
+  "type": "subclass",
+  "name": "Kreis des Meeres",
+  "original_name": "Circle of the Sea",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/druid:circle-of-the-sea",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Werden Sie eins mit Gezeiten und Stürmen",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Werden Sie eins mit Gezeiten und Stürmen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Druiden des Kreises des Meeres nutzen die stürmischen Kräfte der Ozeane und Stürme. Manche sehen sich als Verkörperung des Zorns der Natur und streben nach Rache an denen, die die Natur plündern. Andere suchen die mystische Einheit mit der Natur, indem sie sich auf die Ebbe und Flut der Gezeiten einstellen, dem Rauschen der Strömungen und Wellen folgen und dem unergründlichen Flüstern und Brüllen der Winde lauschen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Kreis der Meereszauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine Druidenstufe erreichen, die in der Zaubertabelle „Circle of the Sea“ angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Kreis der Meereszauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Druidenstufe",
+          "Vorbereitete Zauber"
+        ],
+        [
+          "3",
+          "Nebelwolke, Windstoß, Froststrahl, Donnerwelle"
+        ],
+        [
+          "5",
+          "Blitz, Wasseratmung"
+        ],
+        [
+          "7",
+          "Kontrollieren Sie Wasser, Eissturm"
+        ],
+        [
+          "9",
+          "Elementar beschwören, Monster festhalten"
+        ]
+      ],
+      "text": "Druidenstufe Vorbereitete Zauber 3 Nebelwolke, Windstoß, Froststrahl, Donnerwelle 5 Blitz, Wasseratmung 7 Wasser kontrollieren, Eissturm 9 Elementar beschwören, Monster festhalten"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Zorn des Meeres"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion können Sie Ihre Wildform nutzen, um eine 1,5 Meter lange Emanation zu manifestieren, die die Form einer Meeresgischt annimmt, die Sie 10 Minuten lang umgibt. Es endet vorzeitig, wenn Sie es abweisen (keine Aktion erforderlich), es erneut manifestieren oder den Zustand „Kampfunfähig“ haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du die Emanation manifestierst, kannst du als Bonusaktion in deinen folgenden Zügen eine andere Kreatur auswählen, die du in der Emanation sehen kannst. Dem Ziel muss ein Konstitutions-Rettungswurf gegen den SG deines Zaubers gelingen, sonst erleidet es Kälteschaden und muss, wenn die Kreatur groß oder kleiner ist, bis zu 15 Fuß von dir entfernt werden. Um diesen Schaden zu bestimmen, würfeln Sie mit einer Anzahl von W6, die Ihrem Weisheitsmodifikator entspricht (mindestens ein Würfel)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Aquatische Affinität"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Größe der durch Ihren Zorn des Meeres erzeugten Emanation erhöht sich auf 10 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus erhältst du eine Schwimmgeschwindigkeit, die deiner Geschwindigkeit entspricht."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Sturmgeboren"
+    },
+    {
+      "type": "paragraph",
+      "text": "Euer Zorn des Meeres gewährt, solange er aktiv ist, zwei weitere Vorteile, wie unten beschrieben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Flug. Du erhältst eine Fluggeschwindigkeit, die deiner Geschwindigkeit entspricht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Widerstand. Du hast Resistenz gegen Kälte-, Blitz- und Donnerschaden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Ozeanisches Geschenk"
+    },
+    {
+      "type": "paragraph",
+      "text": "Anstatt die Ausstrahlung des Zorns des Meeres um dich herum zu manifestieren, kannst du sie um eine willige Kreatur in einem Umkreis von 60 Fuß um dich herum manifestieren. Diese Kreatur erhält alle Vorteile der Emanation und nutzt dafür deinen Zauberwurf gegen SG und deinen Weisheitsmodifikator."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie die Emanation sowohl um die andere Kreatur als auch um sich selbst manifestieren, wenn Sie beim Manifestieren zwei Anwendungen Ihrer Wildform anstelle einer verwenden."
+    }
+  ],
+  "text": "Werden Sie eins mit Gezeiten und Stürmen\n\nDruiden des Kreises des Meeres nutzen die stürmischen Kräfte der Ozeane und Stürme. Manche sehen sich als Verkörperung des Zorns der Natur und streben nach Rache an denen, die die Natur plündern. Andere suchen die mystische Einheit mit der Natur, indem sie sich auf die Ebbe und Flut der Gezeiten einstellen, dem Rauschen der Strömungen und Wellen folgen und dem unergründlichen Flüstern und Brüllen der Winde lauschen.\n\nLevel 3: Kreis der Meereszauber\n\nWenn Sie eine Druidenstufe erreichen, die in der Zaubertabelle „Circle of the Sea“ angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nKreis der Meereszauber\n\nDruidenstufe Vorbereitete Zauber 3 Nebelwolke, Windstoß, Froststrahl, Donnerwelle 5 Blitz, Wasseratmung 7 Wasser kontrollieren, Eissturm 9 Elementar beschwören, Monster festhalten\n\nLevel 3: Zorn des Meeres\n\nAls Bonusaktion können Sie Ihre Wildform nutzen, um eine 1,5 Meter lange Emanation zu manifestieren, die die Form einer Meeresgischt annimmt, die Sie 10 Minuten lang umgibt. Es endet vorzeitig, wenn Sie es abweisen (keine Aktion erforderlich), es erneut manifestieren oder den Zustand „Kampfunfähig“ haben.\n\nWenn du die Emanation manifestierst, kannst du als Bonusaktion in deinen folgenden Zügen eine andere Kreatur auswählen, die du in der Emanation sehen kannst. Dem Ziel muss ein Konstitutions-Rettungswurf gegen den SG deines Zaubers gelingen, sonst erleidet es Kälteschaden und muss, wenn die Kreatur groß oder kleiner ist, bis zu 15 Fuß von dir entfernt werden. Um diesen Schaden zu bestimmen, würfeln Sie mit einer Anzahl von W6, die Ihrem Weisheitsmodifikator entspricht (mindestens ein Würfel).\n\nLevel 6: Aquatische Affinität\n\nDie Größe der durch Ihren Zorn des Meeres erzeugten Emanation erhöht sich auf 10 Fuß.\n\nDarüber hinaus erhältst du eine Schwimmgeschwindigkeit, die deiner Geschwindigkeit entspricht.\n\nLevel 10: Sturmgeboren\n\nEuer Zorn des Meeres gewährt, solange er aktiv ist, zwei weitere Vorteile, wie unten beschrieben.\n\nFlug. Du erhältst eine Fluggeschwindigkeit, die deiner Geschwindigkeit entspricht.\n\nWiderstand. Du hast Resistenz gegen Kälte-, Blitz- und Donnerschaden.\n\nLevel 14: Ozeanisches Geschenk\n\nAnstatt die Ausstrahlung des Zorns des Meeres um dich herum zu manifestieren, kannst du sie um eine willige Kreatur in einem Umkreis von 60 Fuß um dich herum manifestieren. Diese Kreatur erhält alle Vorteile der Emanation und nutzt dafür deinen Zauberwurf gegen SG und deinen Weisheitsmodifikator.\n\nDarüber hinaus können Sie die Emanation sowohl um die andere Kreatur als auch um sich selbst manifestieren, wenn Sie beim Manifestieren zwei Anwendungen Ihrer Wildform anstelle einer verwenden.",
+  "tags": [],
+  "class": "Druide",
+  "class_id": "druide",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "erbe-des-hauses-ghallanda",
+  "type": "background",
+  "name": "Erbe des Hauses Ghallanda",
+  "original_name": "House Ghallanda Heir",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/background:house-ghallanda-heir",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Geschicklichkeit, Weisheit, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Geschicklichkeit, Weisheit, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Zeichen der Gastfreundschaft"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kompetenzen: Einsicht und Überzeugung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse: Kochutensilien"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Kochutensilien, feine Kleidung, Eisentopf, Lampe, Öl (5 Flaschen), Parfüm, 26 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dank Ihrer Verbindungen zum Haus Ghallanda sind Sie als Kind an Annehmlichkeiten, lebhafte Gespräche, gute Getränke und köstliches Essen gewöhnt. Sie könnten ein charmanter und witziger Sprössling des Hauses sein, der nichts mehr liebt als einen angenehmen Abend an einem warmen Kaminfeuer. Oder Sie könnten ein Intrigant sein, der Vertrauens- und Freundschaftsbeziehungen ausnutzt, um andere Ihrem Willen zu unterwerfen. Sie könnten eine abenteuerliche Karriere verfolgen, um die Küchen anderer Kulturen und Zeitalter kennenzulernen, Ihr Netzwerk nützlicher Kontakte zu erweitern oder genug Geld zu verdienen, um ein eigenes Gasthaus zu eröffnen."
+    }
+  ],
+  "text": "Fähigkeitswerte: Geschicklichkeit, Weisheit, Charisma\n\nTalent: Zeichen der Gastfreundschaft\n\nKompetenzen: Einsicht und Überzeugung\n\nWerkzeugkenntnisse: Kochutensilien\n\nAusrüstung: Wähle A oder B: (A) Kochutensilien, feine Kleidung, Eisentopf, Lampe, Öl (5 Flaschen), Parfüm, 26 GP; oder (B) 50 GP\n\nDank Ihrer Verbindungen zum Haus Ghallanda sind Sie als Kind an Annehmlichkeiten, lebhafte Gespräche, gute Getränke und köstliches Essen gewöhnt. Sie könnten ein charmanter und witziger Sprössling des Hauses sein, der nichts mehr liebt als einen angenehmen Abend an einem warmen Kaminfeuer. Oder Sie könnten ein Intrigant sein, der Vertrauens- und Freundschaftsbeziehungen ausnutzt, um andere Ihrem Willen zu unterwerfen. Sie könnten eine abenteuerliche Karriere verfolgen, um die Küchen anderer Kulturen und Zeitalter kennenzulernen, Ihr Netzwerk nützlicher Kontakte zu erweitern oder genug Geld zu verdienen, um ein eigenes Gasthaus zu eröffnen.",
+  "tags": [],
+  "ability_scores": [
+    "dex",
+    "wis",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "dex",
+      "wis",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "zeichen-der-gastfreundschaft-kompetenzen-einsicht-und-ueberzeugung-werkzeugkenntnisse-kochutensilien",
+  "granted_feat_name": "Zeichen der Gastfreundschaft\n\nKompetenzen: Einsicht und Überzeugung\n\nWerkzeugkenntnisse: Kochutensilien\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Kochutensilien, feine Kleidung, Eisentopf, Lampe, Öl (5 Flaschen), Parfüm, 26 GP; oder (B) 50 GP\n\nDank Ihrer Verbindungen zum Haus Ghallanda sind Sie als Kind an Annehmlichkeiten, lebhafte Gespräche, gute Getränke und köstliches Essen gewöhnt. Sie könnten ein charmanter und witziger Sprössling des Hauses sein, der nichts mehr liebt als einen angenehmen Abend an einem warmen Kaminfeuer. Oder Sie könnten ein Intrigant sein, der Vertrauens- und Freundschaftsbeziehungen ausnutzt, um andere Ihrem Willen zu unterwerfen. Sie könnten eine abenteuerliche Karriere verfolgen, um die Küchen anderer Kulturen und Zeitalter kennenzulernen, Ihr Netzwerk nützlicher Kontakte zu erweitern oder genug Geld zu verdienen, um ein eigenes Gasthaus zu eröffnen"
+    }
+  ]
+}

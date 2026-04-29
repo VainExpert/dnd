@@ -1,0 +1,105 @@
+{
+  "id": "champion",
+  "type": "subclass",
+  "name": "Champion",
+  "original_name": "Champion",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/fighter:champion",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Streben Sie nach körperlicher Exzellenz im Kampf",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Streben Sie nach körperlicher Exzellenz im Kampf"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ein Champion konzentriert sich auf die Entwicklung kriegerischer Fähigkeiten in einem unermüdlichen Streben nach dem Sieg. Champions kombinieren rigoroses Training mit körperlicher Exzellenz, um verheerende Schläge auszuteilen, Gefahren zu widerstehen und Ruhm zu erlangen. Ob in sportlichen Wettkämpfen oder blutigen Schlachten, Champions streben nach der Krone des Siegers."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Verbesserter kritischer Treffer"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Angriffswürfe mit Waffen und unbewaffneten Schlägen können bei einem Wurf von 19 oder 20 auf dem W20 einen kritischen Treffer erzielen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Bemerkenswerter Athlet"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dank Ihrer Athletik haben Sie einen Vorteil bei Initiativewürfen und Kraftproben (Leichtathletik)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie sich sofort nach einem kritischen Treffer bis zur Hälfte Ihrer Geschwindigkeit bewegen, ohne Gelegenheitsangriffe zu provozieren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Zusätzlicher Kampfstil"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst ein weiteres Kampfstil-Talent deiner Wahl."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Heroischer Krieger"
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Nervenkitzel des Kampfes treibt Sie zum Sieg. Während des Kampfes kannst du dir immer dann eine heroische Inspiration verschaffen, wenn du deinen Zug ohne sie beginnst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 15: Überlegener kritischer Treffer"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Angriffswürfe mit Waffen und unbewaffneten Schlägen können jetzt einen kritischen Treffer bei einem Wurf von 18-20 auf dem W20 erzielen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 18: Überlebender"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erreichen den Höhepunkt der Widerstandsfähigkeit im Kampf und erhalten diese Vorteile."
+    },
+    {
+      "type": "paragraph",
+      "text": "Trotze dem Tod. Sie haben einen Vorteil bei Todesrettungswürfen. Wenn Sie bei einem Todes-Rettungswurf eine Zahl von 18 bis 20 würfeln, haben Sie darüber hinaus den Vorteil, eine 20 zu würfeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Heroische Rallye. Zu Beginn jedes Ihrer Züge erhalten Sie Trefferpunkte in Höhe von 5 plus Ihrem Konstitutionsmodifikator zurück, wenn Sie blutbefleckt sind und mindestens 1 Trefferpunkt haben."
+    }
+  ],
+  "text": "Streben Sie nach körperlicher Exzellenz im Kampf\n\nEin Champion konzentriert sich auf die Entwicklung kriegerischer Fähigkeiten in einem unermüdlichen Streben nach dem Sieg. Champions kombinieren rigoroses Training mit körperlicher Exzellenz, um verheerende Schläge auszuteilen, Gefahren zu widerstehen und Ruhm zu erlangen. Ob in sportlichen Wettkämpfen oder blutigen Schlachten, Champions streben nach der Krone des Siegers.\n\nStufe 3: Verbesserter kritischer Treffer\n\nIhre Angriffswürfe mit Waffen und unbewaffneten Schlägen können bei einem Wurf von 19 oder 20 auf dem W20 einen kritischen Treffer erzielen.\n\nStufe 3: Bemerkenswerter Athlet\n\nDank Ihrer Athletik haben Sie einen Vorteil bei Initiativewürfen und Kraftproben (Leichtathletik).\n\nDarüber hinaus können Sie sich sofort nach einem kritischen Treffer bis zur Hälfte Ihrer Geschwindigkeit bewegen, ohne Gelegenheitsangriffe zu provozieren.\n\nLevel 7: Zusätzlicher Kampfstil\n\nDu erhältst ein weiteres Kampfstil-Talent deiner Wahl.\n\nLevel 10: Heroischer Krieger\n\nDer Nervenkitzel des Kampfes treibt Sie zum Sieg. Während des Kampfes kannst du dir immer dann eine heroische Inspiration verschaffen, wenn du deinen Zug ohne sie beginnst.\n\nStufe 15: Überlegener kritischer Treffer\n\nIhre Angriffswürfe mit Waffen und unbewaffneten Schlägen können jetzt einen kritischen Treffer bei einem Wurf von 18-20 auf dem W20 erzielen.\n\nLevel 18: Überlebender\n\nSie erreichen den Höhepunkt der Widerstandsfähigkeit im Kampf und erhalten diese Vorteile.\n\nTrotze dem Tod. Sie haben einen Vorteil bei Todesrettungswürfen. Wenn Sie bei einem Todes-Rettungswurf eine Zahl von 18 bis 20 würfeln, haben Sie darüber hinaus den Vorteil, eine 20 zu würfeln.\n\nHeroische Rallye. Zu Beginn jedes Ihrer Züge erhalten Sie Trefferpunkte in Höhe von 5 plus Ihrem Konstitutionsmodifikator zurück, wenn Sie blutbefleckt sind und mindestens 1 Trefferpunkt haben.",
+  "tags": [],
+  "class": "Kaempfer",
+  "class_id": "kaempfer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

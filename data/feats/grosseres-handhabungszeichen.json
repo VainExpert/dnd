@@ -1,0 +1,58 @@
+{
+  "id": "grosseres-handhabungszeichen",
+  "type": "feat",
+  "name": "Größeres Handhabungszeichen",
+  "original_name": "Greater Mark of Handling",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:greater-mark-of-handling",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Groessere Drachenmale",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen für Handhabungstalent)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen für Handhabungstalent)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserte Intuition. Wenn Sie den Vorteil „Wilde Intuition“ Ihres Talents „Mal der Handhabung“ nutzen, können Sie 1W6 statt 1W4 würfeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserte Handhabung. Während Sie auf einem Reittier sitzen, kann Ihr Reittier unmittelbar nachdem Sie mit einem Nahkampfangriffswurf ein Ziel im Umkreis von 5 Fuß um Ihr Reittier getroffen haben, eine Reaktion ausführen, um seine Geschwindigkeit zu erreichen, oder die Angriffsaktion ausführen, um nur einen Angriff auszuführen (Ihre Wahl)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tier unterwerfen. Als magische Aktion üben Sie das Kommando über ein Biest oder eine Monstrosität aus, die Sie im Umkreis von 30 Fuß um sich herum sehen können. Dem Ziel muss ein Weisheits-Rettungswurf (SG 8 plus Weisheitsmodifikator und Uebungsbonus) gelingen oder er muss sich bis zum Beginn seines nächsten Zuges im Zustand „Verängstigt“ befinden. Sie können diesen Vorteil mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen für Handhabungstalent)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20.\n\nVerbesserte Intuition. Wenn Sie den Vorteil „Wilde Intuition“ Ihres Talents „Mal der Handhabung“ nutzen, können Sie 1W6 statt 1W4 würfeln.\n\nVerbesserte Handhabung. Während Sie auf einem Reittier sitzen, kann Ihr Reittier unmittelbar nachdem Sie mit einem Nahkampfangriffswurf ein Ziel im Umkreis von 5 Fuß um Ihr Reittier getroffen haben, eine Reaktion ausführen, um seine Geschwindigkeit zu erreichen, oder die Angriffsaktion ausführen, um nur einen Angriff auszuführen (Ihre Wahl).\n\nTier unterwerfen. Als magische Aktion üben Sie das Kommando über ein Biest oder eine Monstrosität aus, die Sie im Umkreis von 30 Fuß um sich herum sehen können. Dem Ziel muss ein Weisheits-Rettungswurf (SG 8 plus Weisheitsmodifikator und Uebungsbonus) gelingen oder er muss sich bis zum Beginn seines nächsten Zuges im Zustand „Verängstigt“ befinden. Sie können diesen Vorteil mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

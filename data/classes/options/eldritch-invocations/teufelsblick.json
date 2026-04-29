@@ -1,0 +1,29 @@
+{
+  "id": "teufelsblick",
+  "name": "Teufelsblick",
+  "original_name": "Devil’s Sight",
+  "kind": "eldritch_invocation",
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:eldritch-invocation",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "",
+  "cost_original": "",
+  "prerequisite": "Hexenmeister der Stufe 2+",
+  "prerequisite_original": "Level 2+ Warlock",
+  "summary": "Sie können bei schwachem Licht und Dunkelheit – sowohl magisch als auch nicht magisch – in einem Umkreis von 120 Fuß um sich herum normal sehen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "You can see normally in Dim Light and Darkness—both magical and nonmagical—within 120 feet of yourself.",
+      "text_de": "Sie können bei schwachem Licht und Dunkelheit – sowohl magisch als auch nicht magisch – in einem Umkreis von 120 Fuß um sich herum normal sehen."
+    }
+  ]
+}

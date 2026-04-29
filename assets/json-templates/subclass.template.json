@@ -1,0 +1,35 @@
+{
+  "id": "<subclass-id>",
+  "type": "subclass",
+  "name": "<Subclass Name>",
+  "original_name": "<Original Subclass Name>",
+  "rules_version": "2024",
+  "source": "<source>",
+  "source_url": null,
+  "source_page": null,
+  "license": {
+    "name": "",
+    "spdx": "",
+    "url": ""
+  },
+  "translation_note": "",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "",
+  "entries": [],
+  "class_id": "<class-id>",
+  "class": "<Class Name>",
+  "tags": [],
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": [
+    {
+      "level": 3,
+      "feature_ids": []
+    }
+  ],
+  "text": ""
+}

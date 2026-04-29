@@ -1,0 +1,92 @@
+{
+  "id": "zeichen-der-herstellung",
+  "type": "feat",
+  "name": "Zeichen der Herstellung",
+  "original_name": "Mark of Making",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:mark-of-making",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Drachenmale",
+  "prerequisites": [],
+  "summary": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Intuition des Handwerkers. Wenn Sie mit den Werkzeugen des Handwerkers eine Intelligenzprüfung (Arcana) oder eine Fähigkeitsprüfung durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberschmied. Sie kennen den Mending-Cantrip. Außerdem haben Sie immer den Zauber „Magische Waffe“ parat. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können es auch mit beliebigen Zauberslots wirken, die Sie haben. Intelligenz, Weisheit oder Charisma sind Ihre Zauberfähigkeiten für diese Zaubersprüche (wählen Sie, wenn Sie dieses Talent auswählen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauber der Marke. Wenn Sie über die Klassenfunktion „Zauberkunst“ oder „Paktmagie“ verfügen, werden die Zaubersprüche in der Tabelle „Zeichen der Zauberherstellung“ zur Zauberliste dieser Funktion hinzugefügt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zeichen des Zauberns"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Zauberstufe",
+          "Zauber"
+        ],
+        [
+          "1",
+          "Identifizieren Sie Tensers schwebende Scheibe"
+        ],
+        [
+          "2",
+          "Kontinuierliche Flamme, spirituelle Waffe"
+        ],
+        [
+          "3",
+          "Sperrfeuer beschwören, Elementarwaffe"
+        ],
+        [
+          "4",
+          "Herstellen, Steinform"
+        ],
+        [
+          "5",
+          "Schaffung"
+        ]
+      ],
+      "text": "Zauberstufenzauber 1 Identifizieren, Tensers schwebende Scheibe 2 Kontinuierliche Flamme, Spirituelle Waffe 3 Sperrfeuer beschwören, Elementarwaffe 4 Herstellen, Steinform 5 Schöpfung"
+    }
+  ],
+  "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)\n\nSie profitieren von folgenden Vorteilen.\n\nDie Intuition des Handwerkers. Wenn Sie mit den Werkzeugen des Handwerkers eine Intelligenzprüfung (Arcana) oder eine Fähigkeitsprüfung durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen.\n\nZauberschmied. Sie kennen den Mending-Cantrip. Außerdem haben Sie immer den Zauber „Magische Waffe“ parat. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können es auch mit beliebigen Zauberslots wirken, die Sie haben. Intelligenz, Weisheit oder Charisma sind Ihre Zauberfähigkeiten für diese Zaubersprüche (wählen Sie, wenn Sie dieses Talent auswählen).\n\nZauber der Marke. Wenn Sie über die Klassenfunktion „Zauberkunst“ oder „Paktmagie“ verfügen, werden die Zaubersprüche in der Tabelle „Zeichen der Zauberherstellung“ zur Zauberliste dieser Funktion hinzugefügt.\n\nZeichen des Zauberns\n\nZauberstufenzauber 1 Identifizieren, Tensers schwebende Scheibe 2 Kontinuierliche Flamme, Spirituelle Waffe 3 Sperrfeuer beschwören, Elementarwaffe 4 Herstellen, Steinform 5 Schöpfung",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

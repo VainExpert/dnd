@@ -1,0 +1,158 @@
+{
+  "id": "tiefling",
+  "type": "race",
+  "name": "Tiefling",
+  "original_name": "Tiefling",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/species:tiefling",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Tieflinge werden entweder in den unteren Ebenen geboren oder haben teuflische Vorfahren, die dort ihren Ursprung haben. Ein Tiefling (ausgesprochen TEE-fling) ist durch Blut mit einem Teufel, einem Dämon oder einem anderen Unhold verbunden. Diese Verbindung zu den unteren Ebenen ist das teuflische Erbe des Tieflings, das mit dem Versprechen von Macht einhergeht, aber keinen Einfluss auf die moralische Einstellung des Tieflings hat.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Tieflinge werden entweder in den unteren Ebenen geboren oder haben teuflische Vorfahren, die dort ihren Ursprung haben. Ein Tiefling (ausgesprochen TEE-fling) ist durch Blut mit einem Teufel, einem Dämon oder einem anderen Unhold verbunden. Diese Verbindung zu den unteren Ebenen ist das teuflische Erbe des Tieflings, das mit dem Versprechen von Macht einhergeht, aber keinen Einfluss auf die moralische Einstellung des Tieflings hat."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ein Tiefling entscheidet, ob er sein teuflisches Erbe annimmt oder beklagt. Die drei Hinterlassenschaften werden im Folgenden beschrieben."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Abgründig"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Entropie des Abyss, das Chaos von Pandemonium und die Verzweiflung von Carceri rufen die Tieflinge an, die das Erbe des Abgrunds besitzen. Hörner, Fell, Stoßzähne und eigenartige Düfte sind typische körperliche Merkmale solcher Tieflinge, in deren Adern zumeist das Blut von Dämonen fließt."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Chthonisch"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tieflinge, die das chthonische Erbe haben, spüren nicht nur die Anziehungskraft von Carceri, sondern auch die Gier von Gehenna und die Dunkelheit des Hades. Einige dieser Tieflinge sehen aus wie Leichen. Andere besitzen die überirdische Schönheit eines Sukkubus, oder sie haben körperliche Merkmale gemeinsam mit einer Nachthexe, einem Yugoloth oder einem anderen teuflischen Vorfahren des Neutralen Bösen."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Höllisch"
+    },
+    {
+      "type": "paragraph",
+      "text": "Das höllische Erbe verbindet Tieflinge nicht nur mit Gehenna, sondern auch mit den Neun Höllen und den tobenden Schlachtfeldern von Acheron. Hörner, Stacheln, Schwänze, goldene Augen und ein schwacher Schwefel- oder Rauchgeruch sind häufige körperliche Merkmale solcher Tieflinge, von denen die meisten ihre Abstammung auf Teufel zurückführen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Tiefling-Eigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Humanoid. Größe: Mittel (ca. 4 bis 7 Fuß groß) oder Klein (ca. 3 bis 4 Fuß groß), ausgewählt, wenn Sie diese Art auswählen. Geschwindigkeit: 30 Fuß"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Tiefling verfügen Sie über die folgenden besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Teuflisches Erbe. Sie sind der Empfänger eines Erbes, das Ihnen übernatürliche Fähigkeiten verleiht. Wählen Sie ein Vermächtnis aus der Tabelle „Teuflische Vermächtnisse“ aus. Sie erhalten den Vorteil der Stufe 1 des gewählten Vermächtnisses."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie die Charakterstufen 3 und 5 erreichen, lernen Sie einen höherstufigen Zauber, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können den Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für die Zauber, die Sie mit dieser Eigenschaft wirken (wählen Sie die Fähigkeit aus, wenn Sie das Vermächtnis auswählen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Jenseitige Präsenz. Sie kennen den Thaumaturgie-Cantrip. Wenn Sie ihn mit dieser Eigenschaft wirken, verwendet der Zauber die gleiche Zauberfähigkeit, die Sie für Ihre Eigenschaft „Teuflisches Vermächtnis“ verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Teuflische Hinterlassenschaften"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Vermächtnis",
+          "Stufe 1",
+          "Stufe 3",
+          "Stufe 5"
+        ],
+        [
+          "Abgründig",
+          "Du hast Resistenz gegen Giftschaden. Sie kennen auch den Cantrip „Poison Spray“.",
+          "Strahl der Krankheit",
+          "Person festhalten"
+        ],
+        [
+          "Chthonisch",
+          "Du hast Resistenz gegen nekrotischen Schaden. Sie kennen auch den Chill Touch-Cantrip.",
+          "Falsches Leben",
+          "Strahl der Schwächung"
+        ],
+        [
+          "Höllisch",
+          "Du hast Resistenz gegen Feuerschaden. Sie kennen auch den Fire Bolt-Cantrip.",
+          "Höllische Zurechtweisung",
+          "Dunkelheit"
+        ]
+      ],
+      "text": "Legacy Level 1 Level 3 Level 5 Abyssal Du hast Resistenz gegen Giftschaden. Sie kennen auch den Cantrip „Poison Spray“. Strahl der Krankheit Halte Person Chthonic Du hast Resistenz gegen nekrotischen Schaden. Sie kennen auch den Chill Touch-Cantrip. Falscher Lebensstrahl der Schwächung Infernal Du hast Resistenz gegen Feuerschaden. Sie kennen auch den Fire Bolt-Cantrip. Höllische Tadel-Dunkelheit"
+    }
+  ],
+  "text": "Tieflinge werden entweder in den unteren Ebenen geboren oder haben teuflische Vorfahren, die dort ihren Ursprung haben. Ein Tiefling (ausgesprochen TEE-fling) ist durch Blut mit einem Teufel, einem Dämon oder einem anderen Unhold verbunden. Diese Verbindung zu den unteren Ebenen ist das teuflische Erbe des Tieflings, das mit dem Versprechen von Macht einhergeht, aber keinen Einfluss auf die moralische Einstellung des Tieflings hat.\n\nEin Tiefling entscheidet, ob er sein teuflisches Erbe annimmt oder beklagt. Die drei Hinterlassenschaften werden im Folgenden beschrieben.\n\nAbgründig\n\nDie Entropie des Abyss, das Chaos von Pandemonium und die Verzweiflung von Carceri rufen die Tieflinge an, die das Erbe des Abgrunds besitzen. Hörner, Fell, Stoßzähne und eigenartige Düfte sind typische körperliche Merkmale solcher Tieflinge, in deren Adern zumeist das Blut von Dämonen fließt.\n\nChthonisch\n\nTieflinge, die das chthonische Erbe haben, spüren nicht nur die Anziehungskraft von Carceri, sondern auch die Gier von Gehenna und die Dunkelheit des Hades. Einige dieser Tieflinge sehen aus wie Leichen. Andere besitzen die überirdische Schönheit eines Sukkubus, oder sie haben körperliche Merkmale gemeinsam mit einer Nachthexe, einem Yugoloth oder einem anderen teuflischen Vorfahren des Neutralen Bösen.\n\nHöllisch\n\nDas höllische Erbe verbindet Tieflinge nicht nur mit Gehenna, sondern auch mit den Neun Höllen und den tobenden Schlachtfeldern von Acheron. Hörner, Stacheln, Schwänze, goldene Augen und ein schwacher Schwefel- oder Rauchgeruch sind häufige körperliche Merkmale solcher Tieflinge, von denen die meisten ihre Abstammung auf Teufel zurückführen.\n\nTiefling-Eigenschaften\n\nKreaturentyp: Humanoid. Größe: Mittel (ca. 4 bis 7 Fuß groß) oder Klein (ca. 3 bis 4 Fuß groß), ausgewählt, wenn Sie diese Art auswählen. Geschwindigkeit: 30 Fuß\n\nAls Tiefling verfügen Sie über die folgenden besonderen Eigenschaften.\n\nDunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß.\n\nTeuflisches Erbe. Sie sind der Empfänger eines Erbes, das Ihnen übernatürliche Fähigkeiten verleiht. Wählen Sie ein Vermächtnis aus der Tabelle „Teuflische Vermächtnisse“ aus. Sie erhalten den Vorteil der Stufe 1 des gewählten Vermächtnisses.\n\nWenn Sie die Charakterstufen 3 und 5 erreichen, lernen Sie einen höherstufigen Zauber, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können den Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben.\n\nIntelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für die Zauber, die Sie mit dieser Eigenschaft wirken (wählen Sie die Fähigkeit aus, wenn Sie das Vermächtnis auswählen).\n\nJenseitige Präsenz. Sie kennen den Thaumaturgie-Cantrip. Wenn Sie ihn mit dieser Eigenschaft wirken, verwendet der Zauber die gleiche Zauberfähigkeit, die Sie für Ihre Eigenschaft „Teuflisches Vermächtnis“ verwenden.\n\nTeuflische Hinterlassenschaften\n\nLegacy Level 1 Level 3 Level 5 Abyssal Du hast Resistenz gegen Giftschaden. Sie kennen auch den Cantrip „Poison Spray“. Strahl der Krankheit Halte Person Chthonic Du hast Resistenz gegen nekrotischen Schaden. Sie kennen auch den Chill Touch-Cantrip. Falscher Lebensstrahl der Schwächung Infernal Du hast Resistenz gegen Feuerschaden. Sie kennen auch den Fire Bolt-Cantrip. Höllische Tadel-Dunkelheit",
+  "tags": [],
+  "size": [
+    "Klein",
+    "Mittel"
+  ],
+  "creature_type": "Humanoid",
+  "speed": {
+    "walk": 9,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Dunkelsicht",
+      "text": "Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß."
+    },
+    {
+      "name": "Teuflisches Erbe",
+      "text": "Sie sind der Empfänger eines Erbes, das Ihnen übernatürliche Fähigkeiten verleiht. Wählen Sie ein Vermächtnis aus der Tabelle „Teuflische Vermächtnisse“ aus. Sie erhalten den Vorteil der Stufe 1 des gewählten Vermächtnisses."
+    },
+    {
+      "name": "Jenseitige Präsenz",
+      "text": "Sie kennen den Thaumaturgie-Cantrip. Wenn Sie ihn mit dieser Eigenschaft wirken, verwendet der Zauber die gleiche Zauberfähigkeit, die Sie für Ihre Eigenschaft „Teuflisches Vermächtnis“ verwenden."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

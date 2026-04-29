@@ -1,0 +1,107 @@
+{
+  "id": "schildmeister",
+  "type": "feat",
+  "name": "Schildmeister",
+  "original_name": "Shield Master",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:shield-master",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Schildtraining"
+  ],
+  "summary": "Voraussetzung: Level 4+, Schildtraining",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, Schildtraining"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärkewert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schildschlag. Wenn du im Rahmen der Angriffsaktion eine Kreatur in einem Umkreis von 5 Fuß um dich angreifst und mit einer Nahkampfwaffe triffst, kannst du das Ziel sofort mit deinem Schild schlagen, sofern dieser ausgerüstet ist, und das Ziel zu einem Stärke-Rettungswurf (SG 8 plus Stärkemodifikator und Uebungsbonus) zwingen. Bei einem fehlgeschlagenen Rettungswurf schieben Sie das Ziel entweder 1,5 m von sich weg oder versetzen es in den Zustand „Liegend“ (Ihre Wahl). Du kannst diesen Vorteil in jedem deiner Züge nur einmal nutzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schild zwischenlegen. Wenn Sie einem Effekt ausgesetzt sind, der es Ihnen ermöglicht, einen Geschicklichkeits-Rettungswurf auszuführen, um nur den halben Schaden zu erleiden, können Sie eine Reaktion erleiden, um keinen Schaden zu erleiden, wenn Ihnen der Rettungswurf gelingt und Sie einen Schild tragen."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, Schildtraining\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärkewert um 1 auf maximal 20.\n\nSchildschlag. Wenn du im Rahmen der Angriffsaktion eine Kreatur in einem Umkreis von 5 Fuß um dich angreifst und mit einer Nahkampfwaffe triffst, kannst du das Ziel sofort mit deinem Schild schlagen, sofern dieser ausgerüstet ist, und das Ziel zu einem Stärke-Rettungswurf (SG 8 plus Stärkemodifikator und Uebungsbonus) zwingen. Bei einem fehlgeschlagenen Rettungswurf schieben Sie das Ziel entweder 1,5 m von sich weg oder versetzen es in den Zustand „Liegend“ (Ihre Wahl). Du kannst diesen Vorteil in jedem deiner Züge nur einmal nutzen.\n\nSchild zwischenlegen. Wenn Sie einem Effekt ausgesetzt sind, der es Ihnen ermöglicht, einen Geschicklichkeits-Rettungswurf auszuführen, um nur den halben Schaden zu erleiden, können Sie eine Reaktion erleiden, um keinen Schaden zu erleiden, wenn Ihnen der Rettungswurf gelingt und Sie einen Schild tragen.",
+  "tags": [],
+  "modifiers": [
+    {
+      "type": "ability_score_bonus",
+      "ability": "str",
+      "value": 1,
+      "max": 20,
+      "source": "schildmeister",
+      "inferred": true
+    },
+    {
+      "type": "ability_score_bonus",
+      "ability": "str",
+      "value": 1,
+      "max": 20,
+      "source": "schildmeister",
+      "inferred": true
+    },
+    {
+      "type": "ability_score_bonus",
+      "ability": "str",
+      "value": 1,
+      "max": 20,
+      "source": "schildmeister",
+      "inferred": true
+    },
+    {
+      "type": "ability_score_bonus",
+      "ability": "str",
+      "value": 1,
+      "max": 20,
+      "source": "schildmeister",
+      "inferred": true
+    },
+    {
+      "type": "ability_score_bonus",
+      "ability": "str",
+      "value": 1,
+      "max": 20,
+      "source": "schildmeister",
+      "inferred": true
+    },
+    {
+      "type": "ability_score_bonus",
+      "ability": "str",
+      "value": 1,
+      "max": 20,
+      "source": "schildmeister",
+      "inferred": true
+    }
+  ],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

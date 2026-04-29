@@ -1,0 +1,1065 @@
+{
+  "id": "paladin",
+  "type": "class",
+  "name": "Paladin",
+  "original_name": "Paladin",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/paladin:main",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Klassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Paladine sind durch ihre Eide vereint, den Mächten der Vernichtung und Verderbnis entgegenzutreten. Ob vor dem Altar eines Gottes, auf einer heiligen Lichtung vor Naturgeistern oder in einem Moment der Verzweiflung und Trauer mit den Toten als einzigen Zeugen, der Eid eines Paladins ist ein starkes Band. Es ist eine Kraftquelle, die einen frommen Krieger in einen gesegneten Champion verwandelt. Paladine trainieren, um Kampffähigkeiten zu erlernen und eine Vielzahl von Waffen und Rüstungen zu beherrschen. Dennoch sind ihre Kampffähigkeiten zweitrangig gegenüber der magischen Kraft, die sie ausüben: die Fähigkeit, Verletzte zu heilen, ihre Feinde zu zerschmettern und die Hilflosen und diejenigen zu beschützen, die an ihrer Seite kämpfen. Fast per Definition ist das Leben eines Paladins ein Abenteuerleben, denn jeder Paladin lebt im Einklang mit dem kosmischen Kampf gegen die Vernichtung. Kämpfer sind in den Reihen der Armeen der Welt selten genug, aber noch weniger können den Ruf eines Paladins beanspruchen. Wenn sie den Ruf erhalten, wenden sich diese gesegneten Leute von ihren früheren Beschäftigungen ab und greifen zu Waffen und Magie.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Paladine sind durch ihre Eide vereint, den Mächten der Vernichtung und Verderbnis entgegenzutreten. Ob vor dem Altar eines Gottes, auf einer heiligen Lichtung vor Naturgeistern oder in einem Moment der Verzweiflung und Trauer mit den Toten als einzigen Zeugen, der Eid eines Paladins ist ein starkes Band. Es ist eine Kraftquelle, die einen frommen Krieger in einen gesegneten Champion verwandelt. Paladine trainieren, um Kampffähigkeiten zu erlernen und eine Vielzahl von Waffen und Rüstungen zu beherrschen. Dennoch sind ihre Kampffähigkeiten zweitrangig gegenüber der magischen Kraft, die sie ausüben: die Fähigkeit, Verletzte zu heilen, ihre Feinde zu zerschmettern und die Hilflosen und diejenigen zu beschützen, die an ihrer Seite kämpfen. Fast per Definition ist das Leben eines Paladins ein Abenteuerleben, denn jeder Paladin lebt im Einklang mit dem kosmischen Kampf gegen die Vernichtung. Kämpfer sind in den Reihen der Armeen der Welt selten genug, aber noch weniger können den Ruf eines Paladins beanspruchen. Wenn sie den Ruf erhalten, wenden sich diese gesegneten Leute von ihren früheren Beschäftigungen ab und greifen zu Waffen und Magie."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Kerneigenschaften des Paladins"
+        ],
+        [
+          "Primäre Fähigkeit",
+          "Stärke und Charisma"
+        ],
+        [
+          "Trefferpunktwürfel",
+          "D10 pro Paladin-Level"
+        ],
+        [
+          "Rettungswurf-Kenntnisse",
+          "Weisheit und Charisma"
+        ],
+        [
+          "Fertigkeiten",
+          "Wählen Sie 2: Leichtathletik, Einsicht, Einschüchterung, Medizin, Überzeugung oder Religion"
+        ],
+        [
+          "Waffenkenntnisse",
+          "Einfache und Kampfwaffen"
+        ],
+        [
+          "Rüstungstraining",
+          "Leichte, mittlere und schwere Rüstungen und Schilde"
+        ],
+        [
+          "Startausrüstung",
+          "Wähle A oder B: (A) Kettenhemd, Schild, Langschwert, 6 Speere, Heiliges Symbol, Priesterpaket und 9 GP; oder (B) 150 GP"
+        ]
+      ],
+      "text": "Kerneigenschaften des Paladins Primäre Fähigkeit Stärke und Charisma Trefferpunkt Würfel D10 pro Paladinstufe Rettungswurf-Fähigkeiten Weisheit und Charisma-Fähigkeiten Fertigkeiten Wählen Sie 2: Leichtathletik, Einsicht, Einschüchterung, Medizin, Überzeugung oder Religion Waffenfertigkeiten Einfache Waffen und Kampfwaffen Rüstungstraining Leichte, mittlere und schwere Rüstungen und Schilde Startausrüstung Wählen Sie A oder B: (A) Kettenhemd, Schild, Langschwert, 6 Speere, Heiliges Symbol, Priesterpaket und 9 Hausarzt; oder (B) 150 GP"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Ein Paladin werden …"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Charakter der Stufe 1"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalte alle Eigenschaften in der Tabelle „Kernpaladineigenschaften“.",
+        "Erhalten Sie die Level-1-Funktionen des Paladins, die in der Tabelle „Talente des Paladins“ aufgeführt sind."
+      ],
+      "text": "Erhalte alle Eigenschaften in der Tabelle „Kernpaladineigenschaften“. Erhalten Sie die Level-1-Funktionen des Paladins, die in der Tabelle „Talente des Paladins“ aufgeführt sind."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Multiklassen-Charakter"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalten Sie die folgenden Eigenschaften aus der Tabelle „Kernpaladineigenschaften“: Trefferpunktwürfel, Kenntnisse im Umgang mit Kampfwaffen und Training mit leichter und mittlerer Rüstung und Schilden.",
+        "Erhalten Sie die Level-1-Funktionen des Paladins, die in der Tabelle „Talente des Paladins“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen."
+      ],
+      "text": "Erhalten Sie die folgenden Eigenschaften aus der Tabelle „Kernpaladineigenschaften“: Trefferpunktwürfel, Kenntnisse im Umgang mit Kampfwaffen und Training mit leichter und mittlerer Rüstung und Schilden. Erhalten Sie die Level-1-Funktionen des Paladins, die in der Tabelle „Talente des Paladins“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Talente der Paladin-Klasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Paladin-Talente (Teil A)"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ebene",
+          "Uebungsbonus",
+          "Klassentalente"
+        ],
+        [
+          "1",
+          "+2",
+          "Handauflegen, Zaubern, Waffenbeherrschung"
+        ],
+        [
+          "2",
+          "+2",
+          "Kampfstil, Paladins Smite"
+        ],
+        [
+          "3",
+          "+2",
+          "Channel Divinity, Paladin-Unterklasse"
+        ],
+        [
+          "4",
+          "+2",
+          "Faehigkeitswert-Verbesserung"
+        ],
+        [
+          "5",
+          "+3",
+          "Zusätzlicher Angriff, treues Ross"
+        ],
+        [
+          "6",
+          "+3",
+          "Aura des Schutzes"
+        ],
+        [
+          "7",
+          "+3",
+          "Unterklasse Talent"
+        ],
+        [
+          "8",
+          "+3",
+          "Faehigkeitswert-Verbesserung"
+        ],
+        [
+          "9",
+          "+4",
+          "Feinde abschwören"
+        ],
+        [
+          "10",
+          "+4",
+          "Aura des Mutes"
+        ],
+        [
+          "11",
+          "+4",
+          "Strahlende Schläge"
+        ],
+        [
+          "12",
+          "+4",
+          "Faehigkeitswert-Verbesserung"
+        ],
+        [
+          "13",
+          "+5",
+          "-"
+        ],
+        [
+          "14",
+          "+5",
+          "Berührung wiederherstellen"
+        ],
+        [
+          "15",
+          "+5",
+          "Unterklasse Talent"
+        ],
+        [
+          "16",
+          "+5",
+          "Faehigkeitswert-Verbesserung"
+        ],
+        [
+          "17",
+          "+6",
+          "-"
+        ],
+        [
+          "18",
+          "+6",
+          "Aura-Erweiterung"
+        ],
+        [
+          "19",
+          "+6",
+          "Epischer Segen"
+        ],
+        [
+          "20",
+          "+6",
+          "Unterklasse Talent"
+        ]
+      ],
+      "text": "Level Uebungsbonus-Klassentalente 1 +2 Handauflegen, Zaubern, Waffenbeherrschung 2 +2 Kampfstil, Schlag des Paladins 3 +2 Göttlichkeit kanalisieren, Paladin-Unterklasse 4 +2 Fähigkeitswertverbesserung 5 +3 Extraangriff, Treues Ross 6 +3 Aura des Schutzes 7 +3 Unterklassentalent 8 +3 Fähigkeitswertverbesserung 9 +4 Feinde abschwören 10 +4 Aura des Mutes 11 +4 Strahlende Schläge 12 +4 Fähigkeitswertverbesserung 13 +5 - 14 +5 Wiederherstellende Berührung 15 +5 Unterklassentalent 16 +5 Fähigkeitswertverbesserung 17 +6 - 18 +6 Auraerweiterung 19 +6 Epischer Segen 20 +6 Unterklassentalent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Paladin-Talente (Teil B)"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ebene",
+          "Kanal-Göttlichkeit",
+          "Vorbereitete Zauber",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        [
+          "1",
+          "-",
+          "2",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "2",
+          "-",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "3",
+          "2",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "4",
+          "2",
+          "5",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "5",
+          "2",
+          "6",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "6",
+          "2",
+          "6",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "7",
+          "2",
+          "7",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "8",
+          "2",
+          "7",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "9",
+          "2",
+          "9",
+          "4",
+          "3",
+          "2",
+          "-",
+          "-"
+        ],
+        [
+          "10",
+          "2",
+          "9",
+          "4",
+          "3",
+          "2",
+          "-",
+          "-"
+        ],
+        [
+          "11",
+          "3",
+          "10",
+          "4",
+          "3",
+          "3",
+          "-",
+          "-"
+        ],
+        [
+          "12",
+          "3",
+          "10",
+          "4",
+          "3",
+          "3",
+          "-",
+          "-"
+        ],
+        [
+          "13",
+          "3",
+          "11",
+          "4",
+          "3",
+          "3",
+          "1",
+          "-"
+        ],
+        [
+          "14",
+          "3",
+          "11",
+          "4",
+          "3",
+          "3",
+          "1",
+          "-"
+        ],
+        [
+          "15",
+          "3",
+          "12",
+          "4",
+          "3",
+          "3",
+          "2",
+          "-"
+        ],
+        [
+          "16",
+          "3",
+          "12",
+          "4",
+          "3",
+          "3",
+          "2",
+          "-"
+        ],
+        [
+          "17",
+          "3",
+          "14",
+          "4",
+          "3",
+          "3",
+          "3",
+          "1"
+        ],
+        [
+          "18",
+          "3",
+          "14",
+          "4",
+          "3",
+          "3",
+          "3",
+          "1"
+        ],
+        [
+          "19",
+          "3",
+          "15",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2"
+        ],
+        [
+          "20",
+          "3",
+          "15",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2"
+        ]
+      ],
+      "text": "Stufe Kanal Göttlichkeit Vorbereitete Zauber 1. 2. 3. 4. 5. 1 - 2 2 - - - - 2 - 3 2 - - - - 3 2 4 3 - - - - 4 2 5 3 - - - - 5 2 6 4 2 - - - 6 2 6 4 2 - - - 7 2 7 4 3 - - - 8 2 7 4 3 - - - 9 2 9 4 3 2 - - 10 2 9 4 3 2 - - 11 3 10 4 3 3 - - 12 3 10 4 3 3 - - 13 3 11 4 3 3 1 - 14 3 11 4 3 3 1 - 15 3 12 4 3 3 2 - 16 3 12 4 3 3 2 - 17 3 14 4 3 3 3 1 18 3 14 4 3 3 3 1 19 3 15 4 3 3 3 2 20 3 15 4 3 3 3 2"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Paladin erhältst du die folgenden Klassenmerkmale, wenn du die angegebenen Paladin-Stufen erreichst. Diese Funktionen sind in der Paladin-Talenturentabelle aufgeführt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Handauflegen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Deine gesegnete Berührung kann Wunden heilen. Du verfügst über einen Vorrat an Heilkraft, der sich wieder auffüllt, wenn du eine Lange Rast beendet hast. Mit diesem Pool können Sie eine Gesamtzahl an Trefferpunkten wiederherstellen, die dem Fünffachen Ihres Paladin-Levels entspricht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion kannst du eine Kreatur (die du selbst sein könntest) berühren und Kraft aus dem Heilungsvorrat ziehen, um dieser Kreatur eine Reihe von Trefferpunkten wiederherzustellen, bis zur maximalen Menge, die im Vorrat verbleibt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können auch 5 Trefferpunkte aus dem Pool der Heilkraft aufwenden, um den Zustand „Vergiftet“ von der Kreatur zu entfernen. Diese Punkte stellen der Kreatur nicht auch Trefferpunkte wieder her."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Zaubern"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben gelernt, durch Gebet und Meditation Zauber zu wirken. Die Regeln zum Zaubern finden Sie in Kapitel 7. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln mit Paladin-Zaubersprüchen anwenden, die später in der Beschreibung der Klasse in der Paladin-Zauberliste erscheinen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberplatz. Die Paladin-Talentures-Tabelle zeigt, wie viele Zauberslots Sie haben, um Ihre Zauber der Stufe 1+ zu wirken. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vorbereitete Zauber der Stufe 1+. Sie bereiten die Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst zwei Paladinzauber der Stufe 1 aus. Heldentum und Sengender Schlag werden empfohlen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Anzahl der Zauber auf Ihrer Liste erhöht sich mit zunehmender Paladin-Stufe, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Talente des Paladins“ angezeigt. Immer wenn sich diese Zahl erhöht, wähle weitere Zauber aus der Paladin-Zauberliste, bis die Anzahl der Zauber auf deiner Liste mit der Zahl auf der Tabelle übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Paladin der Stufe 5 sind, kann Ihre Liste der vorbereiteten Zaubersprüche sechs Zaubersprüche der Stufen 1 und 2 in beliebiger Kombination enthalten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn eine andere Paladin-Funktion dir Zauber verleiht, die du schon immer vorbereitet hast, zählen diese Zauber nicht zu der Anzahl der Zauber, die du mit dieser Funktion vorbereiten kannst. Ansonsten zählen diese Zauber für dich jedoch als Paladin-Zauber."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ändern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie Lange Rast abgeschlossen haben, können Sie einen Zauber auf Ihrer Liste durch einen anderen Paladin-Zauber ersetzen, für den Sie Zauberplätze haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfähigkeit. Charisma ist Ihre Zauberfähigkeit für Ihre Paladin-Zauber."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfokus. Sie können ein heiliges Symbol als Zauberfokus für Ihre Paladin-Zauber verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 1: Waffenbeherrschung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihr Waffentraining ermöglicht es Ihnen, die Beherrschung von zwei Arten von Waffen Ihrer Wahl zu nutzen, mit denen Sie sich auskennen, beispielsweise Langschwerter und Speere."
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie Lange Rast abgeschlossen haben, können Sie die Art der von Ihnen gewählten Waffen ändern. Beispielsweise könnten Sie dazu wechseln, die Meisterschaftseigenschaften von Hellebarden und Dreschflegeln zu nutzen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 2: Kampfstil"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst ein Kampfstil-Talent deiner Wahl (siehe Kapitel 5). Anstatt sich für eine dieser Leistungen zu entscheiden, können Sie die folgende Option wählen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gesegneter Krieger. Sie lernen zwei Kleriker-Cantrips Ihrer Wahl (eine Liste der Kleriker-Zaubersprüche finden Sie im Abschnitt zur Kleriker-Klasse). Führung und Heilige Flamme werden empfohlen. Die gewählten Cantrips gelten für dich als Paladinzauber und Charisma ist deine Zauberfähigkeit für sie. Immer wenn Sie eine Paladin-Stufe erreichen, können Sie einen dieser Cantrips durch einen anderen Kleriker-Cantrip ersetzen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 2: Paladins Smite"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben immer den Zauber „Göttlicher Schlag“ vorbereitet. Du kannst es wirken, ohne einen Zauberslot zu verbrauchen, aber du musst Lange Rast abschließen, bevor du es erneut auf diese Weise wirken kannst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Göttlichkeit kanalisieren"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können göttliche Energie direkt von den Äußeren Ebenen kanalisieren und damit magische Effekte verstärken. Sie beginnen mit einem solchen Effekt: Divine Sense, der unten beschrieben wird. Andere Paladin-Funktionen bieten zusätzliche Channel Divinity-Effektoptionen. Jedes Mal, wenn Sie die Channel Divinity dieser Klasse verwenden, wählen Sie aus, welchen Effekt dieser Klasse Sie erstellen möchten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können die Channel Divinity dieser Klasse zweimal verwenden. Du erhältst eine seiner verbrauchten Nutzungen zurück, wenn du eine Kurze Rast abschließt, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast abschließt. Einen zusätzlichen Nutzen erhältst du, wenn du Paladin-Level 11 erreichst."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn ein Channel Divinity-Effekt einen Rettungswurf erfordert, entspricht der SG dem Zauberwurf-SG des Zaubertalents dieser Klasse."
+    },
+    {
+      "type": "paragraph",
+      "text": "Göttlicher Sinn. Als Bonusaktion können Sie Ihr Bewusstsein öffnen, um Himmlische, Unterweltler und Untote zu entdecken. Für die nächsten 10 Minuten oder bis Sie die Bedingung „Kampfunfähig“ haben, kennen Sie die Position jeder Kreatur dieser Art im Umkreis von 60 Fuß um sich selbst und kennen deren Kreaturentyp. Innerhalb desselben Radius erkennen Sie auch die Anwesenheit von Orten oder Gegenständen, die geweiht oder geschändet wurden, wie beim Zauber „Heiligen“."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Paladin-Unterklasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine Paladin-Unterklasse deiner Wahl. Die Unterklassen „Eid der Hingabe“, „Eid des Ruhms“, „Eid der Alten“ und „Eid der Rache“ werden nach der Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Paladin-Stufen Funktionen gewährt. Für den Rest Ihrer Karriere erhalten Sie alle Merkmale Ihrer Unterklasse, die Ihrer Paladin-Stufe oder niedriger entsprechen."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Paladin-Unterklassen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Name Eid der Hingabe, Eid der Herrlichkeit, Eid der Alten, Eid der edlen Geister, Eid der Rache"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Brechen Sie Ihren Eid"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ein Paladin versucht, die höchsten Verhaltensstandards einzuhalten, aber selbst die engagiertesten sind fehlbar. Manchmal bricht ein Paladin seinen Eid."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ein Paladin, der ein Gelübde gebrochen hat, strebt in der Regel nach Absolution, indem er als Zeichen der Reue eine Nachtwache verbringt oder fastet. Nach einem Vergebungsritual beginnt der Paladin neu."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Ihr Paladin reuelos seinen Eid bricht, sprechen Sie mit Ihrem DM. Ihr Paladin sollte wahrscheinlich eine passendere Unterklasse wählen oder die Klasse sogar aufgeben und eine andere übernehmen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 4: Verbesserung der Fähigkeitsbewertung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Paladin-Stufen 8, 12 und 16."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 5: Zusätzlicher Angriff"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst jedes Mal, wenn du in deinem Zug die Angriffsaktion ausführst, zweimal statt einmal angreifen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 5: Treues Ross"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können die Hilfe eines jenseitigen Rosses in Anspruch nehmen. Sie haben immer den Zauber „Ross finden“ vorbereitet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können den Zauber auch einmal wirken, ohne einen Zauberslot zu verbrauchen, und Sie erhalten Ihre Fähigkeit dazu wieder, wenn Sie eine Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 6: Aura des Schutzes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du strahlst eine schützende, unsichtbare Aura in einer 10 Fuß großen Emanation aus, die von dir ausgeht. Die Aura ist inaktiv, solange Sie den Zustand „Kampfunfähig“ haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Du und deine Verbündeten in der Aura erhalten einen Bonus auf Rettungswürfe in Höhe deines Charisma-Modifikators (Mindestbonus von +1)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn ein anderer Paladin anwesend ist, kann eine Kreatur jeweils nur von einer Aura des Schutzes profitieren; Die Kreatur wählt die Aura aus, während sie sich in ihnen befindet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 9: Feinde abschwören"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als magische Aktion können Sie eine Anwendung der Kanalgöttlichkeit dieser Klasse nutzen, um Feinde mit Ehrfurcht zu überwältigen. Wenn Sie Ihr Heiliges Symbol oder Ihre Waffe präsentieren, können Sie eine Anzahl von Kreaturen in Höhe Ihres Charisma-Modifikators (mindestens eine Kreatur) als Ziel wählen, die Sie in einem Umkreis von 60 Fuß um sich selbst sehen können. Jedes Ziel muss einen Weisheits-Rettungswurf bestehen oder 1 Minute lang oder bis es Schaden erleidet, im Zustand „Verängstigt“ sein. Während ein Ziel auf diese Weise verängstigt ist, kann es in seinem Zug nur eine der folgenden Aktionen ausführen: sich bewegen, eine Aktion ausführen oder eine Bonusaktion ausführen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 10: Aura des Mutes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Während Sie sich in Ihrer Aura des Schutzes befinden, sind Sie und Ihre Verbündeten immun gegen den Zustand „Verängstigt“. Wenn ein verängstigter Verbündeter die Aura betritt, hat dieser Zustand keine Auswirkung auf diesen Verbündeten, solange er dort ist."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 11: Strahlende Schläge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Deine Schläge tragen jetzt übernatürliche Kräfte in sich. Wenn Sie ein Ziel mit einem Angriffswurf mit einer Nahkampfwaffe oder einem unbewaffneten Schlag treffen, erleidet das Ziel zusätzlich 1W8 Strahlungsschaden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Berührung wiederherstellen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Handauflegen auf eine Kreatur anwenden, können Sie auch einen oder mehrere der folgenden Zustände von der Kreatur entfernen: Geblendet, Bezaubert, Taubheit, Verängstigt, Gelähmt oder Betäubt. Für jeden dieser Zustände, den Sie entfernen, müssen Sie 5 Trefferpunkte aus dem Heilungsvorrat von „Handauflegen“ aufwenden. Diese Punkte stellen der Kreatur nicht auch Trefferpunkte wieder her."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 18: Aura-Erweiterung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Aura des Schutzes ist jetzt eine 30-Fuß-Emanation."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 19: Epischer Segen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Boon of Truesight wird empfohlen."
+    }
+  ],
+  "text": "Paladine sind durch ihre Eide vereint, den Mächten der Vernichtung und Verderbnis entgegenzutreten. Ob vor dem Altar eines Gottes, auf einer heiligen Lichtung vor Naturgeistern oder in einem Moment der Verzweiflung und Trauer mit den Toten als einzigen Zeugen, der Eid eines Paladins ist ein starkes Band. Es ist eine Kraftquelle, die einen frommen Krieger in einen gesegneten Champion verwandelt. Paladine trainieren, um Kampffähigkeiten zu erlernen und eine Vielzahl von Waffen und Rüstungen zu beherrschen. Dennoch sind ihre Kampffähigkeiten zweitrangig gegenüber der magischen Kraft, die sie ausüben: die Fähigkeit, Verletzte zu heilen, ihre Feinde zu zerschmettern und die Hilflosen und diejenigen zu beschützen, die an ihrer Seite kämpfen. Fast per Definition ist das Leben eines Paladins ein Abenteuerleben, denn jeder Paladin lebt im Einklang mit dem kosmischen Kampf gegen die Vernichtung. Kämpfer sind in den Reihen der Armeen der Welt selten genug, aber noch weniger können den Ruf eines Paladins beanspruchen. Wenn sie den Ruf erhalten, wenden sich diese gesegneten Leute von ihren früheren Beschäftigungen ab und greifen zu Waffen und Magie.\n\nKerneigenschaften des Paladins Primäre Fähigkeit Stärke und Charisma Trefferpunkt Würfel D10 pro Paladinstufe Rettungswurf-Fähigkeiten Weisheit und Charisma-Fähigkeiten Fertigkeiten Wählen Sie 2: Leichtathletik, Einsicht, Einschüchterung, Medizin, Überzeugung oder Religion Waffenfertigkeiten Einfache Waffen und Kampfwaffen Rüstungstraining Leichte, mittlere und schwere Rüstungen und Schilde Startausrüstung Wählen Sie A oder B: (A) Kettenhemd, Schild, Langschwert, 6 Speere, Heiliges Symbol, Priesterpaket und 9 Hausarzt; oder (B) 150 GP\n\nEin Paladin werden …\n\nAls Charakter der Stufe 1\n\nErhalte alle Eigenschaften in der Tabelle „Kernpaladineigenschaften“. Erhalten Sie die Level-1-Funktionen des Paladins, die in der Tabelle „Talente des Paladins“ aufgeführt sind.\n\nAls Multiklassen-Charakter\n\nErhalten Sie die folgenden Eigenschaften aus der Tabelle „Kernpaladineigenschaften“: Trefferpunktwürfel, Kenntnisse im Umgang mit Kampfwaffen und Training mit leichter und mittlerer Rüstung und Schilden. Erhalten Sie die Level-1-Funktionen des Paladins, die in der Tabelle „Talente des Paladins“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen.\n\nTalente der Paladin-Klasse\n\nPaladin-Talente (Teil A)\n\nLevel Uebungsbonus-Klassentalente 1 +2 Handauflegen, Zaubern, Waffenbeherrschung 2 +2 Kampfstil, Schlag des Paladins 3 +2 Göttlichkeit kanalisieren, Paladin-Unterklasse 4 +2 Fähigkeitswertverbesserung 5 +3 Extraangriff, Treues Ross 6 +3 Aura des Schutzes 7 +3 Unterklassentalent 8 +3 Fähigkeitswertverbesserung 9 +4 Feinde abschwören 10 +4 Aura des Mutes 11 +4 Strahlende Schläge 12 +4 Fähigkeitswertverbesserung 13 +5 - 14 +5 Wiederherstellende Berührung 15 +5 Unterklassentalent 16 +5 Fähigkeitswertverbesserung 17 +6 - 18 +6 Auraerweiterung 19 +6 Epischer Segen 20 +6 Unterklassentalent\n\nPaladin-Talente (Teil B)\n\nStufe Kanal Göttlichkeit Vorbereitete Zauber 1. 2. 3. 4. 5. 1 - 2 2 - - - - 2 - 3 2 - - - - 3 2 4 3 - - - - 4 2 5 3 - - - - 5 2 6 4 2 - - - 6 2 6 4 2 - - - 7 2 7 4 3 - - - 8 2 7 4 3 - - - 9 2 9 4 3 2 - - 10 2 9 4 3 2 - - 11 3 10 4 3 3 - - 12 3 10 4 3 3 - - 13 3 11 4 3 3 1 - 14 3 11 4 3 3 1 - 15 3 12 4 3 3 2 - 16 3 12 4 3 3 2 - 17 3 14 4 3 3 3 1 18 3 14 4 3 3 3 1 19 3 15 4 3 3 3 2 20 3 15 4 3 3 3 2\n\nAls Paladin erhältst du die folgenden Klassenmerkmale, wenn du die angegebenen Paladin-Stufen erreichst. Diese Funktionen sind in der Paladin-Talenturentabelle aufgeführt.\n\nStufe 1: Handauflegen\n\nDeine gesegnete Berührung kann Wunden heilen. Du verfügst über einen Vorrat an Heilkraft, der sich wieder auffüllt, wenn du eine Lange Rast beendet hast. Mit diesem Pool können Sie eine Gesamtzahl an Trefferpunkten wiederherstellen, die dem Fünffachen Ihres Paladin-Levels entspricht.\n\nAls Bonusaktion kannst du eine Kreatur (die du selbst sein könntest) berühren und Kraft aus dem Heilungsvorrat ziehen, um dieser Kreatur eine Reihe von Trefferpunkten wiederherzustellen, bis zur maximalen Menge, die im Vorrat verbleibt.\n\nSie können auch 5 Trefferpunkte aus dem Pool der Heilkraft aufwenden, um den Zustand „Vergiftet“ von der Kreatur zu entfernen. Diese Punkte stellen der Kreatur nicht auch Trefferpunkte wieder her.\n\nStufe 1: Zaubern\n\nSie haben gelernt, durch Gebet und Meditation Zauber zu wirken. Die Regeln zum Zaubern finden Sie in Kapitel 7. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln mit Paladin-Zaubersprüchen anwenden, die später in der Beschreibung der Klasse in der Paladin-Zauberliste erscheinen.\n\nZauberplatz. Die Paladin-Talentures-Tabelle zeigt, wie viele Zauberslots Sie haben, um Ihre Zauber der Stufe 1+ zu wirken. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt.\n\nVorbereitete Zauber der Stufe 1+. Sie bereiten die Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst zwei Paladinzauber der Stufe 1 aus. Heldentum und Sengender Schlag werden empfohlen.\n\nDie Anzahl der Zauber auf Ihrer Liste erhöht sich mit zunehmender Paladin-Stufe, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Talente des Paladins“ angezeigt. Immer wenn sich diese Zahl erhöht, wähle weitere Zauber aus der Paladin-Zauberliste, bis die Anzahl der Zauber auf deiner Liste mit der Zahl auf der Tabelle übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Paladin der Stufe 5 sind, kann Ihre Liste der vorbereiteten Zaubersprüche sechs Zaubersprüche der Stufen 1 und 2 in beliebiger Kombination enthalten.\n\nWenn eine andere Paladin-Funktion dir Zauber verleiht, die du schon immer vorbereitet hast, zählen diese Zauber nicht zu der Anzahl der Zauber, die du mit dieser Funktion vorbereiten kannst. Ansonsten zählen diese Zauber für dich jedoch als Paladin-Zauber.\n\nÄndern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie Lange Rast abgeschlossen haben, können Sie einen Zauber auf Ihrer Liste durch einen anderen Paladin-Zauber ersetzen, für den Sie Zauberplätze haben.\n\nZauberfähigkeit. Charisma ist Ihre Zauberfähigkeit für Ihre Paladin-Zauber.\n\nZauberfokus. Sie können ein heiliges Symbol als Zauberfokus für Ihre Paladin-Zauber verwenden.\n\nLevel 1: Waffenbeherrschung\n\nIhr Waffentraining ermöglicht es Ihnen, die Beherrschung von zwei Arten von Waffen Ihrer Wahl zu nutzen, mit denen Sie sich auskennen, beispielsweise Langschwerter und Speere.\n\nImmer wenn Sie Lange Rast abgeschlossen haben, können Sie die Art der von Ihnen gewählten Waffen ändern. Beispielsweise könnten Sie dazu wechseln, die Meisterschaftseigenschaften von Hellebarden und Dreschflegeln zu nutzen.\n\nLevel 2: Kampfstil\n\nDu erhältst ein Kampfstil-Talent deiner Wahl (siehe Kapitel 5). Anstatt sich für eine dieser Leistungen zu entscheiden, können Sie die folgende Option wählen.\n\nGesegneter Krieger. Sie lernen zwei Kleriker-Cantrips Ihrer Wahl (eine Liste der Kleriker-Zaubersprüche finden Sie im Abschnitt zur Kleriker-Klasse). Führung und Heilige Flamme werden empfohlen. Die gewählten Cantrips gelten für dich als Paladinzauber und Charisma ist deine Zauberfähigkeit für sie. Immer wenn Sie eine Paladin-Stufe erreichen, können Sie einen dieser Cantrips durch einen anderen Kleriker-Cantrip ersetzen.\n\nLevel 2: Paladins Smite\n\nSie haben immer den Zauber „Göttlicher Schlag“ vorbereitet. Du kannst es wirken, ohne einen Zauberslot zu verbrauchen, aber du musst Lange Rast abschließen, bevor du es erneut auf diese Weise wirken kannst.\n\nLevel 3: Göttlichkeit kanalisieren\n\nSie können göttliche Energie direkt von den Äußeren Ebenen kanalisieren und damit magische Effekte verstärken. Sie beginnen mit einem solchen Effekt: Divine Sense, der unten beschrieben wird. Andere Paladin-Funktionen bieten zusätzliche Channel Divinity-Effektoptionen. Jedes Mal, wenn Sie die Channel Divinity dieser Klasse verwenden, wählen Sie aus, welchen Effekt dieser Klasse Sie erstellen möchten.\n\nSie können die Channel Divinity dieser Klasse zweimal verwenden. Du erhältst eine seiner verbrauchten Nutzungen zurück, wenn du eine Kurze Rast abschließt, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast abschließt. Einen zusätzlichen Nutzen erhältst du, wenn du Paladin-Level 11 erreichst.\n\nWenn ein Channel Divinity-Effekt einen Rettungswurf erfordert, entspricht der SG dem Zauberwurf-SG des Zaubertalents dieser Klasse.\n\nGöttlicher Sinn. Als Bonusaktion können Sie Ihr Bewusstsein öffnen, um Himmlische, Unterweltler und Untote zu entdecken. Für die nächsten 10 Minuten oder bis Sie die Bedingung „Kampfunfähig“ haben, kennen Sie die Position jeder Kreatur dieser Art im Umkreis von 60 Fuß um sich selbst und kennen deren Kreaturentyp. Innerhalb desselben Radius erkennen Sie auch die Anwesenheit von Orten oder Gegenständen, die geweiht oder geschändet wurden, wie beim Zauber „Heiligen“.\n\nLevel 3: Paladin-Unterklasse\n\nDu erhältst eine Paladin-Unterklasse deiner Wahl. Die Unterklassen „Eid der Hingabe“, „Eid des Ruhms“, „Eid der Alten“ und „Eid der Rache“ werden nach der Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Paladin-Stufen Funktionen gewährt. Für den Rest Ihrer Karriere erhalten Sie alle Merkmale Ihrer Unterklasse, die Ihrer Paladin-Stufe oder niedriger entsprechen.\n\nPaladin-Unterklassen\n\nName Eid der Hingabe, Eid der Herrlichkeit, Eid der Alten, Eid der edlen Geister, Eid der Rache\n\nBrechen Sie Ihren Eid\n\nEin Paladin versucht, die höchsten Verhaltensstandards einzuhalten, aber selbst die engagiertesten sind fehlbar. Manchmal bricht ein Paladin seinen Eid.\n\nEin Paladin, der ein Gelübde gebrochen hat, strebt in der Regel nach Absolution, indem er als Zeichen der Reue eine Nachtwache verbringt oder fastet. Nach einem Vergebungsritual beginnt der Paladin neu.\n\nWenn Ihr Paladin reuelos seinen Eid bricht, sprechen Sie mit Ihrem DM. Ihr Paladin sollte wahrscheinlich eine passendere Unterklasse wählen oder die Klasse sogar aufgeben und eine andere übernehmen.\n\nStufe 4: Verbesserung der Fähigkeitsbewertung\n\nDu erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Paladin-Stufen 8, 12 und 16.\n\nLevel 5: Zusätzlicher Angriff\n\nDu kannst jedes Mal, wenn du in deinem Zug die Angriffsaktion ausführst, zweimal statt einmal angreifen.\n\nLevel 5: Treues Ross\n\nSie können die Hilfe eines jenseitigen Rosses in Anspruch nehmen. Sie haben immer den Zauber „Ross finden“ vorbereitet.\n\nSie können den Zauber auch einmal wirken, ohne einen Zauberslot zu verbrauchen, und Sie erhalten Ihre Fähigkeit dazu wieder, wenn Sie eine Lange Rast abgeschlossen haben.\n\nStufe 6: Aura des Schutzes\n\nDu strahlst eine schützende, unsichtbare Aura in einer 10 Fuß großen Emanation aus, die von dir ausgeht. Die Aura ist inaktiv, solange Sie den Zustand „Kampfunfähig“ haben.\n\nDu und deine Verbündeten in der Aura erhalten einen Bonus auf Rettungswürfe in Höhe deines Charisma-Modifikators (Mindestbonus von +1).\n\nWenn ein anderer Paladin anwesend ist, kann eine Kreatur jeweils nur von einer Aura des Schutzes profitieren; Die Kreatur wählt die Aura aus, während sie sich in ihnen befindet.\n\nStufe 9: Feinde abschwören\n\nAls magische Aktion können Sie eine Anwendung der Kanalgöttlichkeit dieser Klasse nutzen, um Feinde mit Ehrfurcht zu überwältigen. Wenn Sie Ihr Heiliges Symbol oder Ihre Waffe präsentieren, können Sie eine Anzahl von Kreaturen in Höhe Ihres Charisma-Modifikators (mindestens eine Kreatur) als Ziel wählen, die Sie in einem Umkreis von 60 Fuß um sich selbst sehen können. Jedes Ziel muss einen Weisheits-Rettungswurf bestehen oder 1 Minute lang oder bis es Schaden erleidet, im Zustand „Verängstigt“ sein. Während ein Ziel auf diese Weise verängstigt ist, kann es in seinem Zug nur eine der folgenden Aktionen ausführen: sich bewegen, eine Aktion ausführen oder eine Bonusaktion ausführen.\n\nStufe 10: Aura des Mutes\n\nWährend Sie sich in Ihrer Aura des Schutzes befinden, sind Sie und Ihre Verbündeten immun gegen den Zustand „Verängstigt“. Wenn ein verängstigter Verbündeter die Aura betritt, hat dieser Zustand keine Auswirkung auf diesen Verbündeten, solange er dort ist.\n\nLevel 11: Strahlende Schläge\n\nDeine Schläge tragen jetzt übernatürliche Kräfte in sich. Wenn Sie ein Ziel mit einem Angriffswurf mit einer Nahkampfwaffe oder einem unbewaffneten Schlag treffen, erleidet das Ziel zusätzlich 1W8 Strahlungsschaden.\n\nLevel 14: Berührung wiederherstellen\n\nWenn Sie Handauflegen auf eine Kreatur anwenden, können Sie auch einen oder mehrere der folgenden Zustände von der Kreatur entfernen: Geblendet, Bezaubert, Taubheit, Verängstigt, Gelähmt oder Betäubt. Für jeden dieser Zustände, den Sie entfernen, müssen Sie 5 Trefferpunkte aus dem Heilungsvorrat von „Handauflegen“ aufwenden. Diese Punkte stellen der Kreatur nicht auch Trefferpunkte wieder her.\n\nLevel 18: Aura-Erweiterung\n\nIhre Aura des Schutzes ist jetzt eine 30-Fuß-Emanation.\n\nLevel 19: Epischer Segen\n\nDu erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Boon of Truesight wird empfohlen.",
+  "tags": [],
+  "hit_die": 10,
+  "primary_abilities": [
+    "str",
+    "cha"
+  ],
+  "proficiencies": {
+    "saving_throws": [
+      "wis",
+      "cha"
+    ],
+    "armor": [
+      "Leichte",
+      "mittlere",
+      "schwere Rüstungen",
+      "Schilde"
+    ],
+    "weapons": [
+      "Einfache",
+      "Kampfwaffen"
+    ],
+    "tools": []
+  },
+  "skill_choices": {
+    "choose": 2,
+    "options": [
+      "Athletik",
+      "Einsicht",
+      "Einschuechterung",
+      "Medizin",
+      "Ueberzeugung",
+      "Religion"
+    ]
+  },
+  "spellcasting": {
+    "ability": "cha",
+    "progression": "half",
+    "preparation_formula": null,
+    "known_formula": null,
+    "focus_types": [
+      "Sie können ein heiliges Symbol als Zauberfokus für Ihre Paladin-Zauber verwenden"
+    ],
+    "spell_list_names": [
+      "Paladin"
+    ],
+    "uses_spell_slots": true
+  },
+  "starting_equipment": {
+    "fixed": [],
+    "choices": []
+  },
+  "multiclass_requirements": {
+    "minimum_abilities": {}
+  },
+  "levels": [
+    {
+      "level": 1,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Handauflegen",
+        "Zaubern",
+        "Waffenbeherrschung"
+      ],
+      "prepared_spells": 2,
+      "spell_slots": {
+        "1": 2
+      }
+    },
+    {
+      "level": 2,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Kampfstil",
+        "Paladins Smite"
+      ],
+      "prepared_spells": 3,
+      "spell_slots": {
+        "1": 2
+      }
+    },
+    {
+      "level": 3,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Channel Divinity",
+        "Paladin-Unterklasse"
+      ],
+      "kanal-goettlichkeit": "2",
+      "prepared_spells": 4,
+      "spell_slots": {
+        "1": 3
+      }
+    },
+    {
+      "level": 4,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "kanal-goettlichkeit": "2",
+      "prepared_spells": 5,
+      "spell_slots": {
+        "1": 3
+      }
+    },
+    {
+      "level": 5,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Zusätzlicher Angriff",
+        "treues Ross"
+      ],
+      "kanal-goettlichkeit": "2",
+      "prepared_spells": 6,
+      "spell_slots": {
+        "1": 4,
+        "2": 2
+      }
+    },
+    {
+      "level": 6,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Aura des Schutzes"
+      ],
+      "kanal-goettlichkeit": "2",
+      "prepared_spells": 6,
+      "spell_slots": {
+        "1": 4,
+        "2": 2
+      }
+    },
+    {
+      "level": 7,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "kanal-goettlichkeit": "2",
+      "prepared_spells": 7,
+      "spell_slots": {
+        "1": 4,
+        "2": 3
+      }
+    },
+    {
+      "level": 8,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "kanal-goettlichkeit": "2",
+      "prepared_spells": 7,
+      "spell_slots": {
+        "1": 4,
+        "2": 3
+      }
+    },
+    {
+      "level": 9,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Feinde abschwören"
+      ],
+      "kanal-goettlichkeit": "2",
+      "prepared_spells": 9,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 2
+      }
+    },
+    {
+      "level": 10,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Aura des Mutes"
+      ],
+      "kanal-goettlichkeit": "2",
+      "prepared_spells": 9,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 2
+      }
+    },
+    {
+      "level": 11,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Strahlende Schläge"
+      ],
+      "kanal-goettlichkeit": "3",
+      "prepared_spells": 10,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3
+      }
+    },
+    {
+      "level": 12,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "kanal-goettlichkeit": "3",
+      "prepared_spells": 10,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3
+      }
+    },
+    {
+      "level": 13,
+      "proficiency_bonus": "+5",
+      "kanal-goettlichkeit": "3",
+      "prepared_spells": 11,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1
+      }
+    },
+    {
+      "level": 14,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Berührung wiederherstellen"
+      ],
+      "kanal-goettlichkeit": "3",
+      "prepared_spells": 11,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1
+      }
+    },
+    {
+      "level": 15,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "kanal-goettlichkeit": "3",
+      "prepared_spells": 12,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2
+      }
+    },
+    {
+      "level": 16,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "kanal-goettlichkeit": "3",
+      "prepared_spells": 12,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2
+      }
+    },
+    {
+      "level": 17,
+      "proficiency_bonus": "+6",
+      "kanal-goettlichkeit": "3",
+      "prepared_spells": 14,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1
+      }
+    },
+    {
+      "level": 18,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Aura-Erweiterung"
+      ],
+      "kanal-goettlichkeit": "3",
+      "prepared_spells": 14,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1
+      }
+    },
+    {
+      "level": 19,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Epischer Segen"
+      ],
+      "kanal-goettlichkeit": "3",
+      "prepared_spells": 15,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2
+      }
+    },
+    {
+      "level": 20,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "kanal-goettlichkeit": "3",
+      "prepared_spells": 15,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2
+      }
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Eid der Hingabe",
+      "original_name": "Oath of Devotion",
+      "id": "eid-der-hingabe",
+      "source_url": "http://dnd2024.wikidot.com/paladin:oath-of-devotion",
+      "file": "subclasses/eid-der-hingabe.json"
+    },
+    {
+      "name": "Eid der Herrlichkeit",
+      "original_name": "Oath of Glory",
+      "id": "eid-der-herrlichkeit",
+      "source_url": "http://dnd2024.wikidot.com/paladin:oath-of-glory",
+      "file": "subclasses/eid-der-herrlichkeit.json"
+    },
+    {
+      "name": "Eid der Alten",
+      "original_name": "Oath of the Ancients",
+      "id": "eid-der-alten",
+      "source_url": "http://dnd2024.wikidot.com/paladin:oath-of-the-ancients",
+      "file": "subclasses/eid-der-alten.json"
+    },
+    {
+      "name": "Eid der edlen Geister",
+      "original_name": "Oath of the Noble Genies",
+      "id": "eid-der-edlen-geister",
+      "source_url": "http://dnd2024.wikidot.com/paladin:oath-of-the-noble-genies",
+      "file": "subclasses/eid-der-edlen-geister.json"
+    },
+    {
+      "name": "Eid der Rache",
+      "original_name": "Oath of Vengeance",
+      "id": "eid-der-rache",
+      "source_url": "http://dnd2024.wikidot.com/paladin:oath-of-vengeance",
+      "file": "subclasses/eid-der-rache.json"
+    }
+  ],
+  "subclass_index": [
+    "eid-der-alten.json",
+    "eid-der-edlen-geister.json",
+    "eid-der-herrlichkeit.json",
+    "eid-der-hingabe.json",
+    "eid-der-rache.json"
+  ]
+}

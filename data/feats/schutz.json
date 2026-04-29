@@ -1,0 +1,44 @@
+{
+  "id": "schutz",
+  "type": "feat",
+  "name": "Schutz",
+  "original_name": "Protection",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:protection",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Kampfstil-Talente",
+  "group": "Kampfstil-Talente",
+  "prerequisites": [
+    "Talent im Kampfstil"
+  ],
+  "summary": "Voraussetzung: Talent im Kampfstil",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Talent im Kampfstil"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn eine Kreatur, die du sehen kannst, ein anderes Ziel als dich angreift, das sich in einem Umkreis von 5 Fuß um dich befindet, kannst du eine Reaktion durchführen, um deinen Schild zu unterbrechen, falls du einen hältst. Sie benachteiligen den auslösenden Angriffswurf und alle anderen Angriffswürfe gegen das Ziel bis zum Beginn Ihres nächsten Zuges, wenn Sie sich innerhalb von 5 Fuß vom Ziel aufhalten."
+    }
+  ],
+  "text": "Voraussetzung: Talent im Kampfstil\n\nWenn eine Kreatur, die du sehen kannst, ein anderes Ziel als dich angreift, das sich in einem Umkreis von 5 Fuß um dich befindet, kannst du eine Reaktion durchführen, um deinen Schild zu unterbrechen, falls du einen hältst. Sie benachteiligen den auslösenden Angriffswurf und alle anderen Angriffswürfe gegen das Ziel bis zum Beginn Ihres nächsten Zuges, wenn Sie sich innerhalb von 5 Fuß vom Ziel aufhalten.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

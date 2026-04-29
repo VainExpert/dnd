@@ -4,8 +4,7 @@
   "name": "Prothese",
   "vendors": [
     "Ishmar's Magisches Allerlei",
-    "Zaubererturm",
-    "Beute"
+    "Zaubererturm"
   ],
   "rules_version": "2024",
   "source": "PHB'24",

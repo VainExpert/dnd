@@ -1,0 +1,61 @@
+{
+  "id": "strassenjustiz",
+  "type": "feat",
+  "name": "Straßenjustiz",
+  "original_name": "Street Justice",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:street-justice",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Level 4+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Level 4+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Geschicklichkeitswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Headlock. Deine Verbündeten haben einen Vorteil bei Angriffswürfen gegen eine von dir im Ringen befindliche Kreatur."
+    },
+    {
+      "type": "paragraph",
+      "text": "Stabiler Knoten. Wenn du Ketten, Handschellen oder Seile verwendest, um eine Kreatur zu fesseln, füge deinen Uebungsbonus zum SG hinzu, um der Kette, den Handschellen oder dem Seil zu entkommen oder sie zu sprengen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Hartes Gespräch. Die feindselige Einstellung einer Kreatur führt nicht zu einem Nachteil bei deinen Charisma-Prüfungen (Einschüchterung), um diese Kreatur zu beeinflussen."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Level 4+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Geschicklichkeitswert um 1 auf maximal 20.\n\nHeadlock. Deine Verbündeten haben einen Vorteil bei Angriffswürfen gegen eine von dir im Ringen befindliche Kreatur.\n\nStabiler Knoten. Wenn du Ketten, Handschellen oder Seile verwendest, um eine Kreatur zu fesseln, füge deinen Uebungsbonus zum SG hinzu, um der Kette, den Handschellen oder dem Seil zu entkommen oder sie zu sprengen.\n\nHartes Gespräch. Die feindselige Einstellung einer Kreatur führt nicht zu einem Nachteil bei deinen Charisma-Prüfungen (Einschüchterung), um diese Kreatur zu beeinflussen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

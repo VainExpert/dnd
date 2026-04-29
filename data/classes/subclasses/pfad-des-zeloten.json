@@ -1,0 +1,108 @@
+{
+  "id": "pfad-des-zeloten",
+  "type": "subclass",
+  "name": "Pfad des Zeloten",
+  "original_name": "Path of the Zealot",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/barbarian:path-of-the-zealot",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Wut in ekstatischer Vereinigung mit einem Gott. Barbaren, die den Pfad des Zeloten beschreiten, erhalten Segen von einem Gott oder Pantheon. Diese Barbaren erleben ihre Wut als eine ekstatische Episode göttlicher Vereinigung, die ihnen Macht verleiht. Sie sind oft Verbündete der Priester und anderer Anhänger ihres Gottes oder Pantheons.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Wut in ekstatischer Vereinigung mit einem Gott. Barbaren, die den Pfad des Zeloten beschreiten, erhalten Segen von einem Gott oder Pantheon. Diese Barbaren erleben ihre Wut als eine ekstatische Episode göttlicher Vereinigung, die ihnen Macht verleiht. Sie sind oft Verbündete der Priester und anderer Anhänger ihres Gottes oder Pantheons."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Göttliche Wut"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst göttliche Kraft in deine Schläge kanalisieren. In jedem deiner Züge, während deine Wut aktiv ist, erleidet die erste Kreatur, die du mit einer Waffe oder einem unbewaffneten Schlag triffst, zusätzlichen Schaden in Höhe von 1W6 plus der Hälfte deiner Barbarenstufe (abgerundet). Der zusätzliche Schaden ist nekrotisch oder strahlend; Du wählst den Typ jedes Mal aus, wenn du den Schaden zufügst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Krieger der Götter"
+    },
+    {
+      "type": "paragraph",
+      "text": "Eine göttliche Wesenheit sorgt dafür, dass Sie den Kampf fortsetzen können. Du hast einen Vorrat von vier D12, die du ausgeben kannst, um dich selbst zu heilen. Als Bonusaktion können Sie Würfel aus dem Vorrat ausgeben, sie würfeln und eine Anzahl an Trefferpunkten zurückerhalten, die der Gesamtsumme des Würfelwurfs entspricht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dein Pool erhält alle verbrauchten Würfel zurück, wenn du eine Lange Rast beendet hast."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die maximale Würfelanzahl des Pools erhöht sich um eins, wenn Sie die Barbarenstufen 6 (5 Würfel), 12 (6 Würfel) und 17 (7 Würfel) erreichen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 6: Fanatischer Fokus"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Ihnen ein Rettungswurf einmal pro aktiver Wut misslingt, können Sie ihn mit einem Bonus in Höhe Ihres Wutschadensbonus erneut würfeln und müssen den neuen Wurf verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Eifernde Präsenz"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion entfesseln Sie einen Schlachtruf voller göttlicher Energie. Bis zu zehn andere Kreaturen deiner Wahl im Umkreis von 60 Fuß um dich erhalten bis zum Beginn deines nächsten Zuges Vorteile bei Angriffswürfen und Rettungswürfen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie sie erst dann erneut verwenden, wenn Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Einsatz Ihrer Wut (keine Aktion erforderlich), um sie wieder nutzen zu können."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Wut der Götter"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du deine Wut aktivierst, kannst du die Gestalt eines göttlichen Kriegers annehmen. Diese Form dauert 1 Minute oder bis Sie auf 0 Trefferpunkte sinken. Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "In diesem Formular profitieren Sie von den folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Flug. Sie haben eine Fluggeschwindigkeit, die Ihrer Geschwindigkeit entspricht, und können schweben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Widerstand. Du hast Resistenz gegen nekrotischen, psychischen und strahlenden Schaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wiederbelebung. Wenn eine Kreatur in einem Umkreis von 30 Fuß um dich auf 0 Trefferpunkte sinken würde, kannst du eine Reaktion ausführen, um einen Einsatz deiner Wut zu verbrauchen und stattdessen die Trefferpunkte des Ziels auf eine Zahl zu ändern, die deiner Barbarenstufe entspricht."
+    }
+  ],
+  "text": "Wut in ekstatischer Vereinigung mit einem Gott. Barbaren, die den Pfad des Zeloten beschreiten, erhalten Segen von einem Gott oder Pantheon. Diese Barbaren erleben ihre Wut als eine ekstatische Episode göttlicher Vereinigung, die ihnen Macht verleiht. Sie sind oft Verbündete der Priester und anderer Anhänger ihres Gottes oder Pantheons.\n\nStufe 3: Göttliche Wut\n\nDu kannst göttliche Kraft in deine Schläge kanalisieren. In jedem deiner Züge, während deine Wut aktiv ist, erleidet die erste Kreatur, die du mit einer Waffe oder einem unbewaffneten Schlag triffst, zusätzlichen Schaden in Höhe von 1W6 plus der Hälfte deiner Barbarenstufe (abgerundet). Der zusätzliche Schaden ist nekrotisch oder strahlend; Du wählst den Typ jedes Mal aus, wenn du den Schaden zufügst.\n\nLevel 3: Krieger der Götter\n\nEine göttliche Wesenheit sorgt dafür, dass Sie den Kampf fortsetzen können. Du hast einen Vorrat von vier D12, die du ausgeben kannst, um dich selbst zu heilen. Als Bonusaktion können Sie Würfel aus dem Vorrat ausgeben, sie würfeln und eine Anzahl an Trefferpunkten zurückerhalten, die der Gesamtsumme des Würfelwurfs entspricht.\n\nDein Pool erhält alle verbrauchten Würfel zurück, wenn du eine Lange Rast beendet hast.\n\nDie maximale Würfelanzahl des Pools erhöht sich um eins, wenn Sie die Barbarenstufen 6 (5 Würfel), 12 (6 Würfel) und 17 (7 Würfel) erreichen.\n\nStufe 6: Fanatischer Fokus\n\nWenn Ihnen ein Rettungswurf einmal pro aktiver Wut misslingt, können Sie ihn mit einem Bonus in Höhe Ihres Wutschadensbonus erneut würfeln und müssen den neuen Wurf verwenden.\n\nLevel 10: Eifernde Präsenz\n\nAls Bonusaktion entfesseln Sie einen Schlachtruf voller göttlicher Energie. Bis zu zehn andere Kreaturen deiner Wahl im Umkreis von 60 Fuß um dich erhalten bis zum Beginn deines nächsten Zuges Vorteile bei Angriffswürfen und Rettungswürfen.\n\nSobald Sie diese Funktion nutzen, können Sie sie erst dann erneut verwenden, wenn Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Einsatz Ihrer Wut (keine Aktion erforderlich), um sie wieder nutzen zu können.\n\nLevel 14: Wut der Götter\n\nWenn du deine Wut aktivierst, kannst du die Gestalt eines göttlichen Kriegers annehmen. Diese Form dauert 1 Minute oder bis Sie auf 0 Trefferpunkte sinken. Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben.\n\nIn diesem Formular profitieren Sie von den folgenden Vorteilen.\n\nFlug. Sie haben eine Fluggeschwindigkeit, die Ihrer Geschwindigkeit entspricht, und können schweben.\n\nWiderstand. Du hast Resistenz gegen nekrotischen, psychischen und strahlenden Schaden.\n\nWiederbelebung. Wenn eine Kreatur in einem Umkreis von 30 Fuß um dich auf 0 Trefferpunkte sinken würde, kannst du eine Reaktion ausführen, um einen Einsatz deiner Wut zu verbrauchen und stattdessen die Trefferpunkte des Ziels auf eine Zahl zu ändern, die deiner Barbarenstufe entspricht.",
+  "tags": [],
+  "class": "Barbar",
+  "class_id": "barbar",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

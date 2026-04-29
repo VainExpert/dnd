@@ -1,0 +1,112 @@
+{
+  "id": "kriegsgeschmiedeter",
+  "type": "race",
+  "name": "Kriegsgeschmiedeter",
+  "original_name": "Warforged",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/species:warforged",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Kriegsgeschmiedete sind mechanische Wesen, die als Waffen für den Kampf im letzten Krieg gebaut wurden. Ein unerwarteter Durchbruch brachte fühlende Wesen aus Holz und Metall hervor, die dennoch Schmerz und Emotionen spüren können.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Kriegsgeschmiedete sind mechanische Wesen, die als Waffen für den Kampf im letzten Krieg gebaut wurden. Ein unerwarteter Durchbruch brachte fühlende Wesen aus Holz und Metall hervor, die dennoch Schmerz und Emotionen spüren können."
+    },
+    {
+      "type": "paragraph",
+      "text": "Warforged besteht aus einer Mischung aus organischen und anorganischen Materialien. Als Muskeln dienen wurzelartige Schnüre, die mit alchemistischen Flüssigkeiten angereichert sind und um ein Gerüst aus Stahl, dunklem Holz oder Stein gewickelt sind. Panzerplatten bilden eine schützende Außenhülle und verstärken Gelenke. Je mehr ein Kriegsgeschmiedeter seine Individualität kultiviert, desto wahrscheinlicher ist es, dass er seinen Körper verändert und einen Kunsthandwerker aufsucht, um das Aussehen seines Gesichts, seiner Gliedmaßen und seiner Panzerung anzupassen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kriegsgeschmiedete Eigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Konstrukt"
+    },
+    {
+      "type": "paragraph",
+      "text": "Größe: Mittel (ca. 6–8 Fuß hoch) oder Klein (ca. 3–4 Fuß hoch), ausgewählt bei der Auswahl dieser Art"
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschwindigkeit: 30 Fuß"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Kriegsgeschmiedeter verfügen Sie über diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Resilienz aufbauen. Du hast Resistenz gegen Giftschaden. Sie haben auch Vorteile bei Rettungswürfen, um den vergifteten Zustand zu vermeiden oder zu beenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Integrierter Schutz. Du erhältst einen Bonus von +1 auf deine Rüstungsklasse. Darüber hinaus kann die von Ihnen angelegte Rüstung zu Lebzeiten nicht gegen Ihren Willen abgenommen werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sentry's Rest. Du musst nicht schlafen und Magie kann dich nicht einschläfern lassen. Sie können eine Lange Rast in 6 Stunden beenden, wenn Sie diese Stunden in einem inaktiven, bewegungslosen Zustand verbringen. Während dieser Zeit wirken Sie träge, bleiben aber bei Bewusstsein."
+    },
+    {
+      "type": "paragraph",
+      "text": "Spezialisiertes Design. Sie erwerben eine Fertigkeitskompetenz und eine Werkzeugkompetenz Ihrer Wahl."
+    },
+    {
+      "type": "paragraph",
+      "text": "Unermüdlich. Durch Dehydrierung, Unterernährung oder Erstickung kommt es nicht zu einer Erschöpfung."
+    }
+  ],
+  "text": "Kriegsgeschmiedete sind mechanische Wesen, die als Waffen für den Kampf im letzten Krieg gebaut wurden. Ein unerwarteter Durchbruch brachte fühlende Wesen aus Holz und Metall hervor, die dennoch Schmerz und Emotionen spüren können.\n\nWarforged besteht aus einer Mischung aus organischen und anorganischen Materialien. Als Muskeln dienen wurzelartige Schnüre, die mit alchemistischen Flüssigkeiten angereichert sind und um ein Gerüst aus Stahl, dunklem Holz oder Stein gewickelt sind. Panzerplatten bilden eine schützende Außenhülle und verstärken Gelenke. Je mehr ein Kriegsgeschmiedeter seine Individualität kultiviert, desto wahrscheinlicher ist es, dass er seinen Körper verändert und einen Kunsthandwerker aufsucht, um das Aussehen seines Gesichts, seiner Gliedmaßen und seiner Panzerung anzupassen.\n\nKriegsgeschmiedete Eigenschaften\n\nKreaturentyp: Konstrukt\n\nGröße: Mittel (ca. 6–8 Fuß hoch) oder Klein (ca. 3–4 Fuß hoch), ausgewählt bei der Auswahl dieser Art\n\nGeschwindigkeit: 30 Fuß\n\nAls Kriegsgeschmiedeter verfügen Sie über diese besonderen Eigenschaften.\n\nResilienz aufbauen. Du hast Resistenz gegen Giftschaden. Sie haben auch Vorteile bei Rettungswürfen, um den vergifteten Zustand zu vermeiden oder zu beenden.\n\nIntegrierter Schutz. Du erhältst einen Bonus von +1 auf deine Rüstungsklasse. Darüber hinaus kann die von Ihnen angelegte Rüstung zu Lebzeiten nicht gegen Ihren Willen abgenommen werden.\n\nSentry's Rest. Du musst nicht schlafen und Magie kann dich nicht einschläfern lassen. Sie können eine Lange Rast in 6 Stunden beenden, wenn Sie diese Stunden in einem inaktiven, bewegungslosen Zustand verbringen. Während dieser Zeit wirken Sie träge, bleiben aber bei Bewusstsein.\n\nSpezialisiertes Design. Sie erwerben eine Fertigkeitskompetenz und eine Werkzeugkompetenz Ihrer Wahl.\n\nUnermüdlich. Durch Dehydrierung, Unterernährung oder Erstickung kommt es nicht zu einer Erschöpfung.",
+  "tags": [],
+  "size": [
+    "Klein",
+    "Mittel"
+  ],
+  "creature_type": "Konstrukt",
+  "speed": {
+    "walk": 9,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Resilienz aufbauen",
+      "text": "Du hast Resistenz gegen Giftschaden. Sie haben auch Vorteile bei Rettungswürfen, um den vergifteten Zustand zu vermeiden oder zu beenden."
+    },
+    {
+      "name": "Integrierter Schutz",
+      "text": "Du erhältst einen Bonus von +1 auf deine Rüstungsklasse. Darüber hinaus kann die von Ihnen angelegte Rüstung zu Lebzeiten nicht gegen Ihren Willen abgenommen werden."
+    },
+    {
+      "name": "Sentry's Rest",
+      "text": "Du musst nicht schlafen und Magie kann dich nicht einschläfern lassen. Sie können eine Lange Rast in 6 Stunden beenden, wenn Sie diese Stunden in einem inaktiven, bewegungslosen Zustand verbringen. Während dieser Zeit wirken Sie träge, bleiben aber bei Bewusstsein."
+    },
+    {
+      "name": "Spezialisiertes Design",
+      "text": "Sie erwerben eine Fertigkeitskompetenz und eine Werkzeugkompetenz Ihrer Wahl."
+    },
+    {
+      "name": "Unermüdlich",
+      "text": "Durch Dehydrierung, Unterernährung oder Erstickung kommt es nicht zu einer Erschöpfung."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

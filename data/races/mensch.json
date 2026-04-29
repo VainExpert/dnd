@@ -1,0 +1,88 @@
+{
+  "id": "mensch",
+  "type": "race",
+  "name": "Mensch",
+  "original_name": "Human",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/species:human",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Im gesamten Multiversum sind die Menschen ebenso vielfältig wie zahlreich und streben danach, in den Jahren, die ihnen gegeben werden, so viel wie möglich zu erreichen. Ihr Ehrgeiz und ihr Einfallsreichtum werden auf vielen Welten gelobt, respektiert und gefürchtet.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Im gesamten Multiversum sind die Menschen ebenso vielfältig wie zahlreich und streben danach, in den Jahren, die ihnen gegeben werden, so viel wie möglich zu erreichen. Ihr Ehrgeiz und ihr Einfallsreichtum werden auf vielen Welten gelobt, respektiert und gefürchtet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Menschen sehen genauso vielfältig aus wie die Menschen auf der Erde und haben viele Götter. Wissenschaftler streiten über den Ursprung der Menschheit, aber eine der frühesten bekannten menschlichen Zusammenkünfte soll in Sigil stattgefunden haben, der torusförmigen Stadt im Zentrum des Multiversums und dem Ort, an dem die gemeinsame Sprache geboren wurde. Von dort aus hätten sich die Menschen in alle Teile des Multiversums ausbreiten und die Weltoffenheit der Stadt der Türen mitbringen können."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Menschliche Eigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Humanoid. Größe: Mittel (ca. 4 bis 7 Fuß groß) oder Klein (ca. 2 bis 4 Fuß groß), ausgewählt, wenn Sie diese Art auswählen. Geschwindigkeit: 30 Fuß"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Mensch haben Sie diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Einfallsreich. Du erhältst jedes Mal heroische Inspiration, wenn du eine Lange Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschickt. Sie erwerben Kenntnisse in einer Fertigkeit Ihrer Wahl."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vielseitig. Sie erhalten einen Ursprungstalent Ihrer Wahl. Fachkenntnisse werden empfohlen."
+    }
+  ],
+  "text": "Im gesamten Multiversum sind die Menschen ebenso vielfältig wie zahlreich und streben danach, in den Jahren, die ihnen gegeben werden, so viel wie möglich zu erreichen. Ihr Ehrgeiz und ihr Einfallsreichtum werden auf vielen Welten gelobt, respektiert und gefürchtet.\n\nMenschen sehen genauso vielfältig aus wie die Menschen auf der Erde und haben viele Götter. Wissenschaftler streiten über den Ursprung der Menschheit, aber eine der frühesten bekannten menschlichen Zusammenkünfte soll in Sigil stattgefunden haben, der torusförmigen Stadt im Zentrum des Multiversums und dem Ort, an dem die gemeinsame Sprache geboren wurde. Von dort aus hätten sich die Menschen in alle Teile des Multiversums ausbreiten und die Weltoffenheit der Stadt der Türen mitbringen können.\n\nMenschliche Eigenschaften\n\nKreaturentyp: Humanoid. Größe: Mittel (ca. 4 bis 7 Fuß groß) oder Klein (ca. 2 bis 4 Fuß groß), ausgewählt, wenn Sie diese Art auswählen. Geschwindigkeit: 30 Fuß\n\nAls Mensch haben Sie diese besonderen Eigenschaften.\n\nEinfallsreich. Du erhältst jedes Mal heroische Inspiration, wenn du eine Lange Rast abschließt.\n\nGeschickt. Sie erwerben Kenntnisse in einer Fertigkeit Ihrer Wahl.\n\nVielseitig. Sie erhalten einen Ursprungstalent Ihrer Wahl. Fachkenntnisse werden empfohlen.",
+  "tags": [],
+  "size": [
+    "Klein",
+    "Mittel"
+  ],
+  "creature_type": "Humanoid",
+  "speed": {
+    "walk": 9,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Einfallsreich",
+      "text": "Du erhältst jedes Mal heroische Inspiration, wenn du eine Lange Rast abschließt."
+    },
+    {
+      "name": "Geschickt",
+      "text": "Sie erwerben Kenntnisse in einer Fertigkeit Ihrer Wahl."
+    },
+    {
+      "name": "Vielseitig",
+      "text": "Sie erhalten einen Ursprungstalent Ihrer Wahl. Fachkenntnisse werden empfohlen."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

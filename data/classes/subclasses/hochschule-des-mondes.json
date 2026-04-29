@@ -1,0 +1,103 @@
+{
+  "id": "hochschule-des-mondes",
+  "type": "subclass",
+  "name": "Hochschule des Mondes",
+  "original_name": "College of the Moon",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/bard:college-of-the-moon",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Inspirieren Sie Verbündete mit Urgeschichten",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Inspirieren Sie Verbündete mit Urgeschichten"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Ursprünge des College of the Moon gehen auf die alten Druidenzirkel der Moonshae-Inseln zurück, die die ersten Barden dieser Tradition damit beauftragte, die Geschichten der Inseln und ihres Volkes aufzuzeichnen. Barden dieser Hochschule schöpfen aus der Feenmagie der Inseln und der Urkraft der Mondbrunnen, um ihre Verbündeten zu stärken, die Natur zu schützen und ihre bardischen Werke zu inspirieren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Inspiration des Mondes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die ursprüngliche und sich ständig verändernde Kraft des Mondes durchströmt Sie und gewährt Ihnen die folgenden Vorteile."
+    },
+    {
+      "type": "paragraph",
+      "text": "Inspirierte Sonnenfinsternis. Wenn du eine Bonusaktion ausführst, um einer Kreatur einen bardischen Inspirationswürfel zu geben, kannst du den Zustand „Unsichtbar“ annehmen und dich bis zu 30 Fuß weit zu einem unbesetzten Feld teleportieren, das du im Rahmen dieser Bonusaktion sehen kannst. Diese Unsichtbarkeit hält bis zum Beginn Ihres nächsten Zuges an und endet vorzeitig, unmittelbar nachdem Sie einen Angriffswurf ausgeführt, Schaden verursacht oder einen Zauber gewirkt haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mondvitalität. Einmal pro Spielzug, wenn Sie einer Kreatur mit einem Zauber Trefferpunkte wiederherstellen, können Sie einen bardischen Inspirationswürfel ausgeben und die Anzahl der wiederhergestellten Trefferpunkte um eine Zahl erhöhen, die einem Wurf des bardischen Inspirationswürfels entspricht. Die Geschwindigkeit der Kreatur erhöht sich bis zum Ende ihres nächsten Zuges ebenfalls um 10 Fuß."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Urkunde"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du lernst Druidisch und einen Cantrip aus der Druidenzauberliste. Es zählt für Sie als Bardenzauber, zählt aber nicht zu der Anzahl der Zaubertricks, die Sie kennen. Immer wenn Sie eine Bardenstufe erreichen, können Sie diesen Cantrip durch einen anderen Cantrip Ihrer Wahl aus der Druidenzauberliste ersetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wählen Sie außerdem eine der folgenden Fähigkeiten: Umgang mit Tieren, Einsicht, Medizin, Natur, Wahrnehmung oder Überleben. Sie beherrschen diese Fähigkeit."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 6: Segen des Mondlichts"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast immer den Zauber „Mondstrahl“ vorbereitet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie „Mondstrahl“ wirken, können Sie den Zauber so ändern, dass Sie schwach leuchten, während der Zauber aktiv ist. Während du leuchtest, wirfst du schwaches Licht bis zu einer Entfernung von 5 Fuß ab, und wenn einer Kreatur der Rettungswurf gegen die Effekte dieses Mondstrahls nicht gelingt, erhält eine andere Kreatur deiner Wahl, die du in einem Umkreis von 60 Fuß um dich herum sehen kannst, 2W4 Trefferpunkte zurück."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion verwenden, um eine Besetzung von „Mondstrahl“ zu ändern, können Sie sie erst wieder verwenden, wenn Sie „Lange Rast“ abgeschlossen haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Abendzeits Pracht"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie werden von der Macht des Mondes durchdrungen und verbessern die Inspiration Ihres Mondes auf folgende Weise."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schatten des Neumondes. Wenn Sie „Inspirierte Sonnenfinsternis“ verwenden, kann die Kreatur, die den bardischen Inspirationswürfel erhalten hat, auch den Zustand „Unsichtbar“ haben und sofort eine Reaktion ausführen, um sich bis zu 30 Fuß weit in einen freien Raum zu teleportieren, den sie sehen kann. Die Kreatur bleibt bis zum Beginn ihres nächsten Zuges unsichtbar."
+    },
+    {
+      "type": "paragraph",
+      "text": "Lebendigkeit des Vollmonds. Wenn Sie Mondvitalität verwenden, können Sie 1W6 würfeln und die gewürfelte Zahl verwenden, anstatt einen bardischen Inspirationswürfel auszugeben."
+    }
+  ],
+  "text": "Inspirieren Sie Verbündete mit Urgeschichten\n\nDie Ursprünge des College of the Moon gehen auf die alten Druidenzirkel der Moonshae-Inseln zurück, die die ersten Barden dieser Tradition damit beauftragte, die Geschichten der Inseln und ihres Volkes aufzuzeichnen. Barden dieser Hochschule schöpfen aus der Feenmagie der Inseln und der Urkraft der Mondbrunnen, um ihre Verbündeten zu stärken, die Natur zu schützen und ihre bardischen Werke zu inspirieren.\n\nStufe 3: Inspiration des Mondes\n\nDie ursprüngliche und sich ständig verändernde Kraft des Mondes durchströmt Sie und gewährt Ihnen die folgenden Vorteile.\n\nInspirierte Sonnenfinsternis. Wenn du eine Bonusaktion ausführst, um einer Kreatur einen bardischen Inspirationswürfel zu geben, kannst du den Zustand „Unsichtbar“ annehmen und dich bis zu 30 Fuß weit zu einem unbesetzten Feld teleportieren, das du im Rahmen dieser Bonusaktion sehen kannst. Diese Unsichtbarkeit hält bis zum Beginn Ihres nächsten Zuges an und endet vorzeitig, unmittelbar nachdem Sie einen Angriffswurf ausgeführt, Schaden verursacht oder einen Zauber gewirkt haben.\n\nMondvitalität. Einmal pro Spielzug, wenn Sie einer Kreatur mit einem Zauber Trefferpunkte wiederherstellen, können Sie einen bardischen Inspirationswürfel ausgeben und die Anzahl der wiederhergestellten Trefferpunkte um eine Zahl erhöhen, die einem Wurf des bardischen Inspirationswürfels entspricht. Die Geschwindigkeit der Kreatur erhöht sich bis zum Ende ihres nächsten Zuges ebenfalls um 10 Fuß.\n\nLevel 3: Urkunde\n\nDu lernst Druidisch und einen Cantrip aus der Druidenzauberliste. Es zählt für Sie als Bardenzauber, zählt aber nicht zu der Anzahl der Zaubertricks, die Sie kennen. Immer wenn Sie eine Bardenstufe erreichen, können Sie diesen Cantrip durch einen anderen Cantrip Ihrer Wahl aus der Druidenzauberliste ersetzen.\n\nWählen Sie außerdem eine der folgenden Fähigkeiten: Umgang mit Tieren, Einsicht, Medizin, Natur, Wahrnehmung oder Überleben. Sie beherrschen diese Fähigkeit.\n\nStufe 6: Segen des Mondlichts\n\nDu hast immer den Zauber „Mondstrahl“ vorbereitet.\n\nWenn Sie „Mondstrahl“ wirken, können Sie den Zauber so ändern, dass Sie schwach leuchten, während der Zauber aktiv ist. Während du leuchtest, wirfst du schwaches Licht bis zu einer Entfernung von 5 Fuß ab, und wenn einer Kreatur der Rettungswurf gegen die Effekte dieses Mondstrahls nicht gelingt, erhält eine andere Kreatur deiner Wahl, die du in einem Umkreis von 60 Fuß um dich herum sehen kannst, 2W4 Trefferpunkte zurück.\n\nSobald Sie diese Funktion verwenden, um eine Besetzung von „Mondstrahl“ zu ändern, können Sie sie erst wieder verwenden, wenn Sie „Lange Rast“ abgeschlossen haben.\n\nLevel 14: Abendzeits Pracht\n\nSie werden von der Macht des Mondes durchdrungen und verbessern die Inspiration Ihres Mondes auf folgende Weise.\n\nSchatten des Neumondes. Wenn Sie „Inspirierte Sonnenfinsternis“ verwenden, kann die Kreatur, die den bardischen Inspirationswürfel erhalten hat, auch den Zustand „Unsichtbar“ haben und sofort eine Reaktion ausführen, um sich bis zu 30 Fuß weit in einen freien Raum zu teleportieren, den sie sehen kann. Die Kreatur bleibt bis zum Beginn ihres nächsten Zuges unsichtbar.\n\nLebendigkeit des Vollmonds. Wenn Sie Mondvitalität verwenden, können Sie 1W6 würfeln und die gewürfelte Zahl verwenden, anstatt einen bardischen Inspirationswürfel auszugeben.",
+  "tags": [],
+  "class": "Barde",
+  "class_id": "barde",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

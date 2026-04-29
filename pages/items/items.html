@@ -61,8 +61,9 @@
     </main>
   </div>
 
+  <script src="../../nav.js"></script>
   <script type="module">
-    import { escapeHtml, loadIndex, loadMany, normalizeItem } from "../../lib.js?v=2026-04-20-vendor-filter";
+    import { escapeHtml, loadIndex, loadMany, normalizeItem, renderRichText } from "../../lib.js?v=2026-04-20-vendor-filter";
 
     const grid = document.getElementById("grid");
     const qEl = document.getElementById("q");
@@ -145,7 +146,7 @@
             </div>
           </div>
           <div class="mini-body">
-            ${item.text ? `<div class="mini-box"><div class="mini-box-title">Effekt</div><div class="mini-box-text">${escapeHtml(excerpt(item.text))}</div></div>` : ""}
+            ${item.text ? `<div class="mini-box"><div class="mini-box-title">Effekt</div><div class="mini-box-text">${renderRichText(excerpt(item.text), { inlineOnly: true })}</div></div>` : ""}
             ${tagSummary ? `<div class="mini-footer muted">Tags: ${tagSummary}</div>` : ""}
             ${item.source ? `<div class="mini-footer muted">Quelle: ${escapeHtml(item.source)}</div>` : ""}
           </div>
@@ -172,7 +173,9 @@
       rarityEl.appendChild(option);
     }
 
-    const vendors = Array.from(new Set(items.flatMap(item => item.vendors ?? []).filter(Boolean))).sort((a, b) => a.localeCompare(b));
+    const vendors = Array.from(new Set(items.flatMap(item => item.vendors ?? [])
+      .filter(vendor => vendor && String(vendor).trim() !== "Beute")))
+      .sort((a, b) => a.localeCompare(b));
     for (const vendor of vendors) {
       const option = document.createElement("option");
       option.value = vendor;

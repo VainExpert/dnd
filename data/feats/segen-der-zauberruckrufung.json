@@ -1,0 +1,55 @@
+{
+  "id": "segen-der-zauberruckrufung",
+  "type": "feat",
+  "name": "Segen der Zauberrückrufung",
+  "original_name": "Boon of Spell Recall",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-spell-recall",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 19+"
+  ],
+  "summary": "Voraussetzung: Level 19+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 19+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kostenloses Casting. Immer wenn du einen Zauber mit einem Zauberslot der Stufen 1–4 wirkst, wirf 1W4. Wenn die gewürfelte Zahl mit der Stufe des Slots übereinstimmt, wird der Slot nicht aufgebraucht."
+    }
+  ],
+  "text": "Voraussetzung: Level 19+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 30.\n\nKostenloses Casting. Immer wenn du einen Zauber mit einem Zauberslot der Stufen 1–4 wirkst, wirf 1W4. Wenn die gewürfelte Zahl mit der Stufe des Slots übereinstimmt, wird der Slot nicht aufgebraucht.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

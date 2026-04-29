@@ -1,0 +1,211 @@
+{
+  "id": "wilde-zauberei",
+  "type": "subclass",
+  "name": "Wilde Zauberei",
+  "original_name": "Wild Magic Sorcery",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/sorcerer:wild-magic-sorcery",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Entfessle chaotische Magie",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Entfessle chaotische Magie"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre angeborene Magie entspringt den Kräften des Chaos, die der Ordnung der Schöpfung zugrunde liegen. Möglicherweise waren Sie oder ein Vorfahre roher Magie ausgesetzt, vielleicht durch ein Ebenenportal, das in die Schwebe oder die Elementarebenen führte. Vielleicht wurden Sie von einem Feenwesen gesegnet oder von einem Dämon gezeichnet. Oder Ihre Magie könnte ein Zufall ohne ersichtlichen Grund sein. Was auch immer ihre Quelle ist, diese Magie brodelt in dir und wartet auf ein Ventil."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Wilde magische Welle"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihr Zauber kann Wellen ungezähmter Magie freisetzen. Einmal pro Spielzug kannst du 1W20 würfeln, unmittelbar nachdem du einen Zaubererzauber mit einem Zauberslot gewirkt hast. Wenn Sie eine 20 würfeln, würfeln Sie auf dem Wild Magic Surge-Tisch, um einen magischen Effekt zu erzielen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn der magische Effekt ein Zauber ist, ist er zu wild, um von Ihrer Metamagie beeinflusst zu werden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Fluten des Chaos"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können das Chaos selbst manipulieren, um sich bei einem W20-Test einen Vorteil zu verschaffen, bevor Sie den W20 würfeln. Sobald Sie dies getan haben, müssen Sie einen Zaubererzauber mit einem Zauberslot wirken oder einen Lange Rast abschließen, bevor Sie diese Funktion erneut verwenden können."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie einen Zaubererzauber mit einem Zauberslot wirken, bevor Sie eine Lange Rast beendet haben, würfeln Sie automatisch auf der Wild Magic Surge-Tabelle."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Biegen Sie Glück"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben die Fähigkeit, das Schicksal mithilfe Ihrer wilden Magie zu verändern. Unmittelbar nachdem eine andere Kreatur, die Sie sehen können, den W20 für einen W20-Test gewürfelt hat, können Sie eine Reaktion ausführen und 1 Zauberpunkt ausgeben, um 1W4 zu würfeln und die gewürfelte Zahl als Bonus oder Strafe (Ihrer Wahl) auf den W20-Wurf anzuwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Kontrolliertes Chaos"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst ein Mindestmaß an Kontrolle über die Wellen deiner wilden Magie. Wann immer Sie am Wild Magic Surge-Tisch würfeln, können Sie zweimal würfeln und eine der beiden Zahlen verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 18: Gezähmte Welle"
+    },
+    {
+      "type": "paragraph",
+      "text": "Unmittelbar nachdem Sie einen Zaubererzauber mit einem Zauberslot gewirkt haben, können Sie einen Effekt Ihrer Wahl aus der Wild Magic Surge-Tabelle erstellen, anstatt auf dieser Tabelle zu würfeln. Sie können jeden Effekt in der Tabelle auswählen, mit Ausnahme der letzten Zeile, und wenn der ausgewählte Effekt einen Wurf beinhaltet, müssen Sie ihn durchführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Wilde magische Welle"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "1d100",
+          "Wirkung"
+        ],
+        [
+          "01-04",
+          "Würfeln Sie zu Beginn jedes Ihrer Züge für die nächste Minute auf diesem Tisch und ignorieren Sie dieses Ergebnis bei nachfolgenden Würfen."
+        ],
+        [
+          "05-08",
+          "Eine Kreatur, die dir gegenüber freundlich ist, erscheint an einem zufälligen, unbesetzten Ort im Umkreis von 60 Fuß um dich. Die Kreatur steht unter der Kontrolle des DM und verschwindet 1 Minute später. Wirf 1W4, um die Kreatur zu bestimmen: Bei einer 1 erscheint ein Modron Duodrone; bei einer 2 erscheint ein Flumph; bei einer 3 erscheint ein Modron Monodrone; Bei einer 4 erscheint ein Einhorn. Den Statistikblock der Kreatur finden Sie im Monsterhandbuch."
+        ],
+        [
+          "09-12",
+          "In der nächsten Minute erhalten Sie zu Beginn jedes Ihrer Züge 5 Trefferpunkte zurück."
+        ],
+        [
+          "13-16",
+          "Kreaturen haben bei Rettungswürfen einen Nachteil gegenüber dem nächsten Zauber, den du in der nächsten Minute wirkst und der einen Rettungswurf beinhaltet."
+        ],
+        [
+          "17-20",
+          "Sie sind einem Effekt ausgesetzt, der 1 Minute lang anhält, sofern in der Beschreibung nichts anderes angegeben ist. Würfeln Sie 1W8, um den Effekt zu bestimmen: Bei einer 1 sind Sie von schwacher, ätherischer Musik umgeben, die nur Sie und Kreaturen im Umkreis von 5 Fuß um Sie hören können; bei einer 2 erhöht sich Ihre Größe um eine Größenkategorie; Bei einer 3 lässt du dir einen langen Bart aus Federn wachsen, der so lange bestehen bleibt, bis du niest. Dann explodieren die Federn aus deinem Gesicht und verschwinden. bei einer 4 musst du schreien, wenn du sprichst; bei einer 5 flattern illusorische Schmetterlinge in einem Umkreis von 10 Fuß um Sie in der Luft; Bei einer 6 erscheint ein Auge auf deiner Stirn, das dir einen Vorteil bei Weisheitswürfen (Wahrnehmung) verschafft. Bei einer 7 schweben beim Sprechen rosa Blasen aus Ihrem Mund; Bei einer 8 nimmt Ihre Haut 24 Stunden lang oder bis der Effekt durch den Zauber „Fluch entfernen“ beendet wird, einen leuchtenden Blauton an."
+        ],
+        [
+          "21-24",
+          "Für die nächste Minute haben alle deine Zauber mit einer Zauberzeit einer Aktion eine Zauberzeit einer Bonusaktion."
+        ],
+        [
+          "25-28",
+          "Sie werden bis zum Ende Ihres nächsten Zuges auf die Astralebene transportiert. Sie kehren dann zu dem Feld zurück, das Sie zuvor besetzt hatten, oder zum nächstgelegenen freien Feld, falls dieses Feld bereits besetzt ist."
+        ],
+        [
+          "29-32",
+          "Wenn Sie innerhalb der nächsten Minute das nächste Mal einen Zauber wirken, der Schaden verursacht, werfen Sie nicht die Schadenswürfel des Zaubers für den Schaden. Verwenden Sie stattdessen für jeden Schadenswürfel die höchstmögliche Zahl."
+        ],
+        [
+          "33-36",
+          "Du hast für die nächste Minute Resistenz gegen jeglichen Schaden."
+        ],
+        [
+          "37-40",
+          "Du verwandelst dich bis zum Beginn deines nächsten Zuges in eine Topfpflanze. Während du eine Pflanze bist, hast du den Zustand „Kampfunfähig“ und bist anfällig für jeglichen Schaden. Wenn Sie auf 0 Trefferpunkte sinken, zerbricht Ihr Pot und Ihre Form kehrt zurück."
+        ],
+        [
+          "41-44",
+          "In der nächsten Minute können Sie sich als Bonusaktion in jedem Ihrer Züge bis zu 20 Fuß weit teleportieren."
+        ],
+        [
+          "45-48",
+          "Du und bis zu drei von dir ausgewählte Kreaturen im Umkreis von 30 Fuß um dich herum haben 1 Minute lang den Zustand „Unsichtbar“. Diese Unsichtbarkeit endet für eine Kreatur sofort, nachdem sie einen Angriffswurf ausgeführt, Schaden verursacht oder einen Zauber gewirkt hat."
+        ],
+        [
+          "49-52",
+          "Ein Spektralschild schwebt für die nächste Minute in Ihrer Nähe und gewährt Ihnen einen Bonus von +2 auf Ihre RK und Immunität gegen magische Raketen."
+        ],
+        [
+          "53-56",
+          "Du kannst in diesem Zug eine zusätzliche Aktion ausführen."
+        ],
+        [
+          "57-60",
+          "Du wirkst einen zufälligen Zauber. Wenn der Zauber normalerweise Konzentration erfordert, ist in diesem Fall keine Konzentration erforderlich. Der Zauber hält für seine gesamte Dauer an. Wirf 1W10, um den Zauber zu bestimmen: bei einer 1 Verwirrung; bei einer 2, Feuerball; auf einer 3, Nebelwolke; bei einer 4: Fliegen (wird auf eine zufällige Kreatur innerhalb von 60 Fuß um dich herum angewendet), bei einer 5: Fett; bei einer 6: Levitate (auf dich selbst wirken); auf einer 7, Magische Rakete (wird als Zauberspruch der Stufe 5 gewirkt); auf einer 8, Spiegelbild; bei einer 9, Polymorph (auf dich selbst gewirkt), und wenn dir der Rettungswurf misslingt, verwandelst du dich in eine Ziege (siehe Anhang B); auf einer 10, siehe Unsichtbarkeit."
+        ],
+        [
+          "61-64",
+          "In der nächsten Minute geht jedes brennbare, nichtmagische Objekt, das du berührst und das nicht von einer anderen Kreatur getragen oder getragen wird, in Flammen auf, erleidet 1W4 Feuerschaden und brennt."
+        ],
+        [
+          "65-68",
+          "Wenn Sie innerhalb der nächsten Stunde sterben, werden Sie wie durch den Reinkarnationszauber sofort wiederbelebt."
+        ],
+        [
+          "69-72",
+          "Du hast den Zustand „Verängstigt“ bis zum Ende deines nächsten Zuges. Der DM bestimmt die Quelle Ihrer Angst."
+        ],
+        [
+          "73-76",
+          "Sie teleportieren sich bis zu 60 Fuß weit zu einem freien, sichtbaren Ort."
+        ],
+        [
+          "77-80",
+          "Eine zufällige Kreatur im Umkreis von 60 Fuß um dich hat den Zustand „Vergiftet“ für 1W4 Stunden."
+        ],
+        [
+          "81-84",
+          "Du strahlst für die nächste Minute helles Licht in einem Radius von 30 Fuß aus. Jede Kreatur, die ihren Zug innerhalb von 5 Fuß um dich herum beendet, hat bis zum Ende ihres nächsten Zuges den Zustand „Geblendet“."
+        ],
+        [
+          "85-88",
+          "Bis zu drei Kreaturen deiner Wahl, die du in einem Umkreis von 30 Fuß um dich sehen kannst, erleiden 1W10 nekrotischen Schaden. Du erhältst Trefferpunkte in Höhe der Summe des verursachten nekrotischen Schadens zurück."
+        ],
+        [
+          "89-92",
+          "Bis zu drei Kreaturen deiner Wahl, die du in einem Umkreis von 30 Fuß um dich sehen kannst, erleiden 4W10 Blitzschaden."
+        ],
+        [
+          "93-96",
+          "Du und alle Kreaturen im Umkreis von 30 Fuß um dich herum sind für die nächste Minute anfällig für Stichschaden."
+        ],
+        [
+          "97-00",
+          "Würfeln Sie 1W6: Bei einer 1 erhalten Sie 2W10 Trefferpunkte zurück; Bei einer 2 erhält ein Verbündeter Ihrer Wahl im Umkreis von 300 Fuß um Sie 2W10 Trefferpunkte zurück; Bei einer 3 erhältst du deinen verbrauchten Zauberslot der niedrigsten Stufe zurück; Bei einer 4 erhält ein Verbündeter deiner Wahl im Umkreis von 300 Fuß um dich seinen Zauberplatz mit der niedrigsten Stufe zurück; bei einer 5 erhältst du alle deine verbrauchten Zauberpunkte zurück; Bei einer 6 wirken sich alle Effekte der Reihe 17–20 gleichzeitig auf Sie aus."
+        ]
+      ],
+      "text": "1d100 Wirkung 01-04 Wirf zu Beginn jedes deiner Züge für die nächste Minute auf diesen Tisch und ignoriere dieses Ergebnis bei nachfolgenden Würfen. 05-08 Eine Kreatur, die dir gegenüber freundlich ist, erscheint an einem zufälligen, unbesetzten Ort im Umkreis von 60 Fuß um dich. Die Kreatur steht unter der Kontrolle des DM und verschwindet 1 Minute später. Wirf 1W4, um die Kreatur zu bestimmen: Bei einer 1 erscheint ein Modron Duodrone; bei einer 2 erscheint ein Flumph; bei einer 3 erscheint ein Modron Monodrone; Bei einer 4 erscheint ein Einhorn. Den Statistikblock der Kreatur finden Sie im Monsterhandbuch. 09-12 Für die nächste Minute erhalten Sie zu Beginn jedes Ihrer Züge 5 Trefferpunkte zurück. 13–16 Kreaturen haben bei Rettungswürfen einen Nachteil gegenüber dem nächsten Zauber, den du in der nächsten Minute wirkst und der einen Rettungswurf beinhaltet. 17-20 Sie sind einem Effekt ausgesetzt, der 1 Minute anhält, sofern in der Beschreibung nichts anderes angegeben ist. Würfeln Sie 1W8, um den Effekt zu bestimmen: Bei einer 1 sind Sie von schwacher, ätherischer Musik umgeben, die nur Sie und Kreaturen im Umkreis von 5 Fuß um Sie hören können; bei einer 2 erhöht sich Ihre Größe um eine Größenkategorie; Bei einer 3 lässt du dir einen langen Bart aus Federn wachsen, der so lange bestehen bleibt, bis du niest. Dann explodieren die Federn aus deinem Gesicht und verschwinden. bei einer 4 musst du schreien, wenn du sprichst; bei einer 5 flattern illusorische Schmetterlinge in einem Umkreis von 10 Fuß um Sie in der Luft; Bei einer 6 erscheint ein Auge auf deiner Stirn, das dir einen Vorteil bei Weisheitswürfen (Wahrnehmung) verschafft. Bei einer 7 schweben beim Sprechen rosa Blasen aus Ihrem Mund; Bei einer 8 nimmt Ihre Haut 24 Stunden lang oder bis der Effekt durch den Zauber „Fluch entfernen“ beendet wird, einen leuchtenden Blauton an. 21-24 Für die nächste Minute haben alle deine Zauber mit einer Zauberzeit einer Aktion eine Zauberzeit einer Bonusaktion. 25-28 Du wirst bis zum Ende deines nächsten Zuges auf die Astralebene transportiert. Sie kehren dann zu dem Feld zurück, das Sie zuvor besetzt hatten, oder zum nächstgelegenen freien Feld, falls dieses Feld bereits besetzt ist. 29-32 Wenn du das nächste Mal innerhalb der nächsten Minute einen Zauber wirkst, der Schaden verursacht, wirf nicht die Schadenswürfel des Zaubers für den Schaden. Verwenden Sie stattdessen für jeden Schadenswürfel die höchstmögliche Zahl. 33-36 Du hast für die nächste Minute Resistenz gegen jeglichen Schaden. 37-40 Du verwandelst dich bis zum Beginn deines nächsten Zuges in eine Topfpflanze. Während du eine Pflanze bist, hast du den Zustand „Kampfunfähig“ und bist anfällig für jeglichen Schaden. Wenn Sie auf 0 Trefferpunkte sinken, zerbricht Ihr Pot und Ihre Form kehrt zurück. 41-44 In der nächsten Minute kannst du dich als Bonusaktion in jedem deiner Züge bis zu 20 Fuß weit teleportieren. 45-48 Du und bis zu drei von dir ausgewählte Kreaturen im Umkreis von 30 Fuß um dich herum haben 1 Minute lang den Zustand „Unsichtbar“. Diese Unsichtbarkeit endet für eine Kreatur sofort, nachdem sie einen Angriffswurf ausgeführt, Schaden verursacht oder einen Zauber gewirkt hat. 49-52 Ein Spektralschild schwebt für die nächste Minute in Ihrer Nähe und gewährt Ihnen einen Bonus von +2 auf Ihre RK und Immunität gegen magische Raketen. 53-56 Du kannst in diesem Zug eine zusätzliche Aktion ausführen. 57-60 Du wirkst einen zufälligen Zauber. Wenn der Zauber normalerweise Konzentration erfordert, ist in diesem Fall keine Konzentration erforderlich. Der Zauber hält für seine gesamte Dauer an. Wirf 1W10, um den Zauber zu bestimmen: bei einer 1 Verwirrung; bei einer 2, Feuerball; auf einer 3, Nebelwolke; bei einer 4: Fliegen (wird auf eine zufällige Kreatur innerhalb von 60 Fuß um dich herum angewendet), bei einer 5: Fett; bei einer 6: Levitate (auf dich selbst wirken); auf einer 7, Magische Rakete (wird als Zauberspruch der Stufe 5 gewirkt); auf einer 8, Spiegelbild; bei einer 9, Polymorph (auf dich selbst gewirkt), und wenn dir der Rettungswurf misslingt, verwandelst du dich in eine Ziege (siehe Anhang B); auf einer 10, siehe Unsichtbarkeit. 61-64 In der nächsten Minute geht jeder brennbare, nichtmagische Gegenstand, den du berührst und der nicht von einer anderen Kreatur getragen oder getragen wird, in Flammen auf, erleidet 1W4 Feuerschaden und brennt. 65-68 Wenn Sie innerhalb der nächsten Stunde sterben, werden Sie wie durch den Reinkarnationszauber sofort wiederbelebt. 69-72 Du hast den Zustand „Verängstigt“ bis zum Ende deines nächsten Zuges. Der DM bestimmt die Quelle Ihrer Angst. 73-76 Du teleportierst dich bis zu 60 Fuß weit zu einem unbesetzten Raum, den du sehen kannst. 77-80 Eine zufällige Kreatur im Umkreis von 60 Fuß um dich hat den Zustand „Vergiftet“ für 1W4 Stunden. 81-84 Du strahlst für die nächste Minute helles Licht in einem Radius von 30 Fuß aus. Jede Kreatur, die ihren Zug innerhalb von 5 Fuß um dich herum beendet, hat bis zum Ende ihres nächsten Zuges den Zustand „Geblendet“. 85-88 Bis zu drei Kreaturen deiner Wahl, die du in einem Umkreis von 30 Fuß um dich sehen kannst, erleiden 1W10 nekrotischen Schaden. Du erhältst Trefferpunkte in Höhe der Summe des verursachten nekrotischen Schadens zurück. 89-92 Bis zu drei Kreaturen deiner Wahl, die du in einem Umkreis von 30 Fuß um dich sehen kannst, erleiden 4W10 Blitzschaden. 93-96 Du und alle Kreaturen im Umkreis von 30 Fuß um dich herum sind für die nächste Minute anfällig für Stichschaden. 97-00 Wurf 1W6: Bei einer 1 erhältst du 2W10 Trefferpunkte zurück; Bei einer 2 erhält ein Verbündeter Ihrer Wahl im Umkreis von 300 Fuß um Sie 2W10 Trefferpunkte zurück; Bei einer 3 erhältst du deinen verbrauchten Zauberslot der niedrigsten Stufe zurück; Bei einer 4 erhält ein Verbündeter deiner Wahl im Umkreis von 300 Fuß um dich seinen Zauberplatz mit der niedrigsten Stufe zurück; bei einer 5 erhältst du alle deine verbrauchten Zauberpunkte zurück; Bei einer 6 wirken sich alle Effekte der Reihe 17–20 gleichzeitig auf Sie aus."
+    }
+  ],
+  "text": "Entfessle chaotische Magie\n\nIhre angeborene Magie entspringt den Kräften des Chaos, die der Ordnung der Schöpfung zugrunde liegen. Möglicherweise waren Sie oder ein Vorfahre roher Magie ausgesetzt, vielleicht durch ein Ebenenportal, das in die Schwebe oder die Elementarebenen führte. Vielleicht wurden Sie von einem Feenwesen gesegnet oder von einem Dämon gezeichnet. Oder Ihre Magie könnte ein Zufall ohne ersichtlichen Grund sein. Was auch immer ihre Quelle ist, diese Magie brodelt in dir und wartet auf ein Ventil.\n\nLevel 3: Wilde magische Welle\n\nIhr Zauber kann Wellen ungezähmter Magie freisetzen. Einmal pro Spielzug kannst du 1W20 würfeln, unmittelbar nachdem du einen Zaubererzauber mit einem Zauberslot gewirkt hast. Wenn Sie eine 20 würfeln, würfeln Sie auf dem Wild Magic Surge-Tisch, um einen magischen Effekt zu erzielen.\n\nWenn der magische Effekt ein Zauber ist, ist er zu wild, um von Ihrer Metamagie beeinflusst zu werden.\n\nLevel 3: Fluten des Chaos\n\nSie können das Chaos selbst manipulieren, um sich bei einem W20-Test einen Vorteil zu verschaffen, bevor Sie den W20 würfeln. Sobald Sie dies getan haben, müssen Sie einen Zaubererzauber mit einem Zauberslot wirken oder einen Lange Rast abschließen, bevor Sie diese Funktion erneut verwenden können.\n\nWenn Sie einen Zaubererzauber mit einem Zauberslot wirken, bevor Sie eine Lange Rast beendet haben, würfeln Sie automatisch auf der Wild Magic Surge-Tabelle.\n\nLevel 6: Biegen Sie Glück\n\nSie haben die Fähigkeit, das Schicksal mithilfe Ihrer wilden Magie zu verändern. Unmittelbar nachdem eine andere Kreatur, die Sie sehen können, den W20 für einen W20-Test gewürfelt hat, können Sie eine Reaktion ausführen und 1 Zauberpunkt ausgeben, um 1W4 zu würfeln und die gewürfelte Zahl als Bonus oder Strafe (Ihrer Wahl) auf den W20-Wurf anzuwenden.\n\nLevel 14: Kontrolliertes Chaos\n\nDu erhältst ein Mindestmaß an Kontrolle über die Wellen deiner wilden Magie. Wann immer Sie am Wild Magic Surge-Tisch würfeln, können Sie zweimal würfeln und eine der beiden Zahlen verwenden.\n\nLevel 18: Gezähmte Welle\n\nUnmittelbar nachdem Sie einen Zaubererzauber mit einem Zauberslot gewirkt haben, können Sie einen Effekt Ihrer Wahl aus der Wild Magic Surge-Tabelle erstellen, anstatt auf dieser Tabelle zu würfeln. Sie können jeden Effekt in der Tabelle auswählen, mit Ausnahme der letzten Zeile, und wenn der ausgewählte Effekt einen Wurf beinhaltet, müssen Sie ihn durchführen.\n\nSobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben.\n\nWilde magische Welle\n\n1d100 Wirkung 01-04 Wirf zu Beginn jedes deiner Züge für die nächste Minute auf diesen Tisch und ignoriere dieses Ergebnis bei nachfolgenden Würfen. 05-08 Eine Kreatur, die dir gegenüber freundlich ist, erscheint an einem zufälligen, unbesetzten Ort im Umkreis von 60 Fuß um dich. Die Kreatur steht unter der Kontrolle des DM und verschwindet 1 Minute später. Wirf 1W4, um die Kreatur zu bestimmen: Bei einer 1 erscheint ein Modron Duodrone; bei einer 2 erscheint ein Flumph; bei einer 3 erscheint ein Modron Monodrone; Bei einer 4 erscheint ein Einhorn. Den Statistikblock der Kreatur finden Sie im Monsterhandbuch. 09-12 Für die nächste Minute erhalten Sie zu Beginn jedes Ihrer Züge 5 Trefferpunkte zurück. 13–16 Kreaturen haben bei Rettungswürfen einen Nachteil gegenüber dem nächsten Zauber, den du in der nächsten Minute wirkst und der einen Rettungswurf beinhaltet. 17-20 Sie sind einem Effekt ausgesetzt, der 1 Minute anhält, sofern in der Beschreibung nichts anderes angegeben ist. Würfeln Sie 1W8, um den Effekt zu bestimmen: Bei einer 1 sind Sie von schwacher, ätherischer Musik umgeben, die nur Sie und Kreaturen im Umkreis von 5 Fuß um Sie hören können; bei einer 2 erhöht sich Ihre Größe um eine Größenkategorie; Bei einer 3 lässt du dir einen langen Bart aus Federn wachsen, der so lange bestehen bleibt, bis du niest. Dann explodieren die Federn aus deinem Gesicht und verschwinden. bei einer 4 musst du schreien, wenn du sprichst; bei einer 5 flattern illusorische Schmetterlinge in einem Umkreis von 10 Fuß um Sie in der Luft; Bei einer 6 erscheint ein Auge auf deiner Stirn, das dir einen Vorteil bei Weisheitswürfen (Wahrnehmung) verschafft. Bei einer 7 schweben beim Sprechen rosa Blasen aus Ihrem Mund; Bei einer 8 nimmt Ihre Haut 24 Stunden lang oder bis der Effekt durch den Zauber „Fluch entfernen“ beendet wird, einen leuchtenden Blauton an. 21-24 Für die nächste Minute haben alle deine Zauber mit einer Zauberzeit einer Aktion eine Zauberzeit einer Bonusaktion. 25-28 Du wirst bis zum Ende deines nächsten Zuges auf die Astralebene transportiert. Sie kehren dann zu dem Feld zurück, das Sie zuvor besetzt hatten, oder zum nächstgelegenen freien Feld, falls dieses Feld bereits besetzt ist. 29-32 Wenn du das nächste Mal innerhalb der nächsten Minute einen Zauber wirkst, der Schaden verursacht, wirf nicht die Schadenswürfel des Zaubers für den Schaden. Verwenden Sie stattdessen für jeden Schadenswürfel die höchstmögliche Zahl. 33-36 Du hast für die nächste Minute Resistenz gegen jeglichen Schaden. 37-40 Du verwandelst dich bis zum Beginn deines nächsten Zuges in eine Topfpflanze. Während du eine Pflanze bist, hast du den Zustand „Kampfunfähig“ und bist anfällig für jeglichen Schaden. Wenn Sie auf 0 Trefferpunkte sinken, zerbricht Ihr Pot und Ihre Form kehrt zurück. 41-44 In der nächsten Minute kannst du dich als Bonusaktion in jedem deiner Züge bis zu 20 Fuß weit teleportieren. 45-48 Du und bis zu drei von dir ausgewählte Kreaturen im Umkreis von 30 Fuß um dich herum haben 1 Minute lang den Zustand „Unsichtbar“. Diese Unsichtbarkeit endet für eine Kreatur sofort, nachdem sie einen Angriffswurf ausgeführt, Schaden verursacht oder einen Zauber gewirkt hat. 49-52 Ein Spektralschild schwebt für die nächste Minute in Ihrer Nähe und gewährt Ihnen einen Bonus von +2 auf Ihre RK und Immunität gegen magische Raketen. 53-56 Du kannst in diesem Zug eine zusätzliche Aktion ausführen. 57-60 Du wirkst einen zufälligen Zauber. Wenn der Zauber normalerweise Konzentration erfordert, ist in diesem Fall keine Konzentration erforderlich. Der Zauber hält für seine gesamte Dauer an. Wirf 1W10, um den Zauber zu bestimmen: bei einer 1 Verwirrung; bei einer 2, Feuerball; auf einer 3, Nebelwolke; bei einer 4: Fliegen (wird auf eine zufällige Kreatur innerhalb von 60 Fuß um dich herum angewendet), bei einer 5: Fett; bei einer 6: Levitate (auf dich selbst wirken); auf einer 7, Magische Rakete (wird als Zauberspruch der Stufe 5 gewirkt); auf einer 8, Spiegelbild; bei einer 9, Polymorph (auf dich selbst gewirkt), und wenn dir der Rettungswurf misslingt, verwandelst du dich in eine Ziege (siehe Anhang B); auf einer 10, siehe Unsichtbarkeit. 61-64 In der nächsten Minute geht jeder brennbare, nichtmagische Gegenstand, den du berührst und der nicht von einer anderen Kreatur getragen oder getragen wird, in Flammen auf, erleidet 1W4 Feuerschaden und brennt. 65-68 Wenn Sie innerhalb der nächsten Stunde sterben, werden Sie wie durch den Reinkarnationszauber sofort wiederbelebt. 69-72 Du hast den Zustand „Verängstigt“ bis zum Ende deines nächsten Zuges. Der DM bestimmt die Quelle Ihrer Angst. 73-76 Du teleportierst dich bis zu 60 Fuß weit zu einem unbesetzten Raum, den du sehen kannst. 77-80 Eine zufällige Kreatur im Umkreis von 60 Fuß um dich hat den Zustand „Vergiftet“ für 1W4 Stunden. 81-84 Du strahlst für die nächste Minute helles Licht in einem Radius von 30 Fuß aus. Jede Kreatur, die ihren Zug innerhalb von 5 Fuß um dich herum beendet, hat bis zum Ende ihres nächsten Zuges den Zustand „Geblendet“. 85-88 Bis zu drei Kreaturen deiner Wahl, die du in einem Umkreis von 30 Fuß um dich sehen kannst, erleiden 1W10 nekrotischen Schaden. Du erhältst Trefferpunkte in Höhe der Summe des verursachten nekrotischen Schadens zurück. 89-92 Bis zu drei Kreaturen deiner Wahl, die du in einem Umkreis von 30 Fuß um dich sehen kannst, erleiden 4W10 Blitzschaden. 93-96 Du und alle Kreaturen im Umkreis von 30 Fuß um dich herum sind für die nächste Minute anfällig für Stichschaden. 97-00 Wurf 1W6: Bei einer 1 erhältst du 2W10 Trefferpunkte zurück; Bei einer 2 erhält ein Verbündeter Ihrer Wahl im Umkreis von 300 Fuß um Sie 2W10 Trefferpunkte zurück; Bei einer 3 erhältst du deinen verbrauchten Zauberslot der niedrigsten Stufe zurück; Bei einer 4 erhält ein Verbündeter deiner Wahl im Umkreis von 300 Fuß um dich seinen Zauberplatz mit der niedrigsten Stufe zurück; bei einer 5 erhältst du alle deine verbrauchten Zauberpunkte zurück; Bei einer 6 wirken sich alle Effekte der Reihe 17–20 gleichzeitig auf Sie aus.",
+  "tags": [],
+  "class": "Zauberer",
+  "class_id": "zauberer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

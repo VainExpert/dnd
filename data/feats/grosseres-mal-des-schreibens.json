@@ -1,0 +1,54 @@
+{
+  "id": "grosseres-mal-des-schreibens",
+  "type": "feat",
+  "name": "Größeres Mal des Schreibens",
+  "original_name": "Greater Mark of Scribing",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:greater-mark-of-scribing",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Groessere Drachenmale",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen des Schreibtalents)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen des Schreibtalents)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserte Intuition. Wenn Sie den Vorteil „Begabter Schreiber“ Ihres Talents „Mal des Schreibers“ nutzen, können Sie 1W6 statt 1W4 würfeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Inspiriertes Schreiben. Wenn Sie „Sprachen verstehen“ wirken, können Sie den Zauber so ändern, dass er bis zu drei willige Kreaturen umfasst, die Sie in einem Umkreis von 30 Fuß um sich selbst sehen können. Jede ausgewählte Kreatur erhält für die Dauer außerdem die Vorteile des Zaubers. Darüber hinaus können Sie und die ausgewählten Kreaturen für die Dauer des Zaubers telepathisch miteinander kommunizieren, während sie sich im Umkreis von 1,6 km voneinander befinden. Sobald Sie den Zauber mit diesem Vorteil modifiziert haben, können Sie dies erst wieder tun, wenn Sie eine Lange Rast abgeschlossen haben."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen des Schreibtalents)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20.\n\nVerbesserte Intuition. Wenn Sie den Vorteil „Begabter Schreiber“ Ihres Talents „Mal des Schreibers“ nutzen, können Sie 1W6 statt 1W4 würfeln.\n\nInspiriertes Schreiben. Wenn Sie „Sprachen verstehen“ wirken, können Sie den Zauber so ändern, dass er bis zu drei willige Kreaturen umfasst, die Sie in einem Umkreis von 30 Fuß um sich selbst sehen können. Jede ausgewählte Kreatur erhält für die Dauer außerdem die Vorteile des Zaubers. Darüber hinaus können Sie und die ausgewählten Kreaturen für die Dauer des Zaubers telepathisch miteinander kommunizieren, während sie sich im Umkreis von 1,6 km voneinander befinden. Sobald Sie den Zauber mit diesem Vorteil modifiziert haben, können Sie dies erst wieder tun, wenn Sie eine Lange Rast abgeschlossen haben.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

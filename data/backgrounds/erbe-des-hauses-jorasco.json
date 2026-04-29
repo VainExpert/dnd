@@ -1,0 +1,90 @@
+{
+  "id": "erbe-des-hauses-jorasco",
+  "type": "background",
+  "name": "Erbe des Hauses Jorasco",
+  "original_name": "House Jorasco Heir",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/background:house-jorasco-heir",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Geschicklichkeit, Konstitution, Weisheit",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Geschicklichkeit, Konstitution, Weisheit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Zeichen der Heilung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Medizin und Heimlichkeit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkompetenz: Kräuterkunde-Kit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Kräuterkundeset, feine Kleidung, Heilerset, 25 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Das Haus Jorasco lehrt, dass Krankheiten und Verletzungen die Lebenden wie Geister verfolgen und ihnen Gesundheit und Langlebigkeit rauben. Ihnen wurden Möglichkeiten beigebracht, diese Geißeln sowohl magisch als auch medizinisch zu bekämpfen. Sie sind darin geschult, diese Fähigkeiten in den Dienst anderer zu stellen – und sicherzustellen, dass Sie für diesen Dienst stets angemessen entlohnt werden, um die Gesundheit und Langlebigkeit des Hauses Jorasco sicherzustellen. Sie könnten ein freundlicher Heiler sein, der keinen Mut zum Kampf hat, oder ein leidenschaftsloser Spezialist, der genau weiß, wie man einen Feind mit präzisen Schlägen außer Gefecht setzt oder tötet."
+    }
+  ],
+  "text": "Fähigkeitswerte: Geschicklichkeit, Konstitution, Weisheit\n\nTalent: Zeichen der Heilung\n\nFertigkeiten: Medizin und Heimlichkeit\n\nWerkzeugkompetenz: Kräuterkunde-Kit\n\nAusrüstung: Wähle A oder B: (A) Kräuterkundeset, feine Kleidung, Heilerset, 25 GP; oder (B) 50 GP\n\nDas Haus Jorasco lehrt, dass Krankheiten und Verletzungen die Lebenden wie Geister verfolgen und ihnen Gesundheit und Langlebigkeit rauben. Ihnen wurden Möglichkeiten beigebracht, diese Geißeln sowohl magisch als auch medizinisch zu bekämpfen. Sie sind darin geschult, diese Fähigkeiten in den Dienst anderer zu stellen – und sicherzustellen, dass Sie für diesen Dienst stets angemessen entlohnt werden, um die Gesundheit und Langlebigkeit des Hauses Jorasco sicherzustellen. Sie könnten ein freundlicher Heiler sein, der keinen Mut zum Kampf hat, oder ein leidenschaftsloser Spezialist, der genau weiß, wie man einen Feind mit präzisen Schlägen außer Gefecht setzt oder tötet.",
+  "tags": [],
+  "ability_scores": [
+    "dex",
+    "con",
+    "wis"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "dex",
+      "con",
+      "wis"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Medizin",
+    "Heimlichkeit"
+  ],
+  "tool_proficiencies": [
+    "Kräuterkunde-Kit\n"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "zeichen-der-heilung",
+  "granted_feat_name": "Zeichen der Heilung\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Kräuterkundeset, feine Kleidung, Heilerset, 25 GP; oder (B) 50 GP\n\nDas Haus Jorasco lehrt, dass Krankheiten und Verletzungen die Lebenden wie Geister verfolgen und ihnen Gesundheit und Langlebigkeit rauben. Ihnen wurden Möglichkeiten beigebracht, diese Geißeln sowohl magisch als auch medizinisch zu bekämpfen. Sie sind darin geschult, diese Fähigkeiten in den Dienst anderer zu stellen – und sicherzustellen, dass Sie für diesen Dienst stets angemessen entlohnt werden, um die Gesundheit und Langlebigkeit des Hauses Jorasco sicherzustellen. Sie könnten ein freundlicher Heiler sein, der keinen Mut zum Kampf hat, oder ein leidenschaftsloser Spezialist, der genau weiß, wie man einen Feind mit präzisen Schlägen außer Gefecht setzt oder tötet"
+    }
+  ]
+}

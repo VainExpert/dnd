@@ -1,0 +1,52 @@
+{
+  "id": "meister-schwerer-ruestungen",
+  "type": "feat",
+  "name": "Meister schwerer Ruestungen",
+  "original_name": "Heavy Armor Master",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:heavy-armor-master",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, schwere Rüstungsausbildung"
+  ],
+  "summary": "Voraussetzung: Level 4+, Ausbildung in schwerer Rüstung",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, Ausbildung in schwerer Rüstung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe deinen Konstitutions- oder Stärkewert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schadensreduzierung. Wenn du von einem Angriff getroffen wirst, während du eine schwere Rüstung trägst, wird jeglicher Prügel-, Stich- und Hiebschaden, der dir durch diesen Angriff zugefügt wird, um einen Betrag reduziert, der deinem Uebungsbonus entspricht."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, Ausbildung in schwerer Rüstung\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe deinen Konstitutions- oder Stärkewert um 1 auf maximal 20.\n\nSchadensreduzierung. Wenn du von einem Angriff getroffen wirst, während du eine schwere Rüstung trägst, wird jeglicher Prügel-, Stich- und Hiebschaden, der dir durch diesen Angriff zugefügt wird, um einen Betrag reduziert, der deinem Uebungsbonus entspricht.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

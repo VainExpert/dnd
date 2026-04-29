@@ -11,7 +11,6 @@
   <header class="topbar">
     <div class="brand">
       <div class="title" id="title">Monster</div>
-      <div class="subtitle"><a href="./bestiary.html">← Zurück zum Bestiarium</a> • <a href="../../index.html">Startseite</a></div>
     </div>
   </header>
 
@@ -21,6 +20,7 @@
     </div>
   </main>
 
+  <script src="../../nav.js"></script>
   <script type="module">
     import {
       escapeHtml,
@@ -32,12 +32,13 @@
       normalizeSpell,
       linkifyRefs,
       renderRichText,
+      renderRollExpressionHtml,
       buildLookupIndex,
       resolveEntityRef,
       entityLinkHtml,
       normalizeEntityRef,
       slugify
-    } from "../../lib.js";
+    } from "../../lib.js?v=2026-04-27-hitdice-links";
 
     const view = document.getElementById("view");
     const titleEl = document.getElementById("title");
@@ -114,6 +115,14 @@
       return parts.length ? parts.join(", ") : "—";
     }
 
+    function renderHitDice(value) {
+      const text = String(value ?? "").trim();
+      if (!text) return "";
+      return text.includes("[[")
+        ? renderRichText(text, { lookups: { spell: spellLookup }, inlineOnly: true })
+        : renderRollExpressionHtml(text);
+    }
+
     function formatList(value) {
       if (!value) return "";
       if (Array.isArray(value)) {
@@ -188,17 +197,17 @@
       const res = formatList(m.damage_resistances);
       const imm = formatList(m.damage_immunities);
       const cimm = formatList(m.condition_immunities);
-      if (vul) defenses.push(`<div class="mini"><b>Verwundbar:</b> ${escapeHtml(vul)}</div>`);
-      if (res) defenses.push(`<div class="mini"><b>Resistenz:</b> ${escapeHtml(res)}</div>`);
-      if (imm) defenses.push(`<div class="mini"><b>Immun:</b> ${escapeHtml(imm)}</div>`);
-      if (cimm) defenses.push(`<div class="mini"><b>Statusimmunität:</b> ${escapeHtml(cimm)}</div>`);
+      if (vul) defenses.push(`<div class="mini"><b>Verwundbar:</b> ${renderRichText(vul, { lookups: { spell: spellLookup }, inlineOnly: true })}</div>`);
+      if (res) defenses.push(`<div class="mini"><b>Resistenz:</b> ${renderRichText(res, { lookups: { spell: spellLookup }, inlineOnly: true })}</div>`);
+      if (imm) defenses.push(`<div class="mini"><b>Immun:</b> ${renderRichText(imm, { lookups: { spell: spellLookup }, inlineOnly: true })}</div>`);
+      if (cimm) defenses.push(`<div class="mini"><b>Statusimmunität:</b> ${renderRichText(cimm, { lookups: { spell: spellLookup }, inlineOnly: true })}</div>`);
 
       const savesLine = formatList(m.saving_throws);
       const skillsLine = formatList(m.skills);
       const sensesLine = formatList(m.senses);
       const languagesLine = Array.isArray(m.languages) ? m.languages.join(", ") : formatList(m.languages);
 
-      const legIntro = m.legendary_actions_intro ? `<div class="mini">${escapeHtml(m.legendary_actions_intro)}</div>` : "";
+      const legIntro = m.legendary_actions_intro ? `<div class="mini">${renderRichText(m.legendary_actions_intro, { lookups: { spell: spellLookup }, inlineOnly: true })}</div>` : "";
       const legActions = (m.legendary_actions || []).map(action => {
         const cost = action.cost != null ? ` (Kosten ${action.cost})` : "";
         return `<div class="mini"><b>${linkifyRefs(action.name, { lookups: { spell: spellLookup } })}${escapeHtml(cost)}.</b> ${renderRichText(action.text || "", { lookups: { spell: spellLookup }, inlineOnly: true })}</div>`;
@@ -212,7 +221,7 @@
           <div class="mini-box-title">Werte</div>
           <div class="mini-box-text">
             <div><b>RK:</b> ${escapeHtml(m.ac)}${m.ac_note ? ` <span class="muted">(${linkifyRefs(m.ac_note, { lookups: { spell: spellLookup } })})</span>` : ""}</div>
-            <div><b>TP:</b> ${escapeHtml(m.hp?.average)}${m.hp?.formula ? ` <span class="muted">(${linkifyRefs(m.hp.formula, { lookups: { spell: spellLookup } })})</span>` : ""}</div>
+            <div><b>TP:</b> ${escapeHtml(m.hp?.average)}${m.hp?.formula ? ` <span class="muted">(${renderHitDice(m.hp.formula)})</span>` : ""}</div>
             <div><b>Bewegung:</b> ${escapeHtml(formatSpeed(m.speed))}</div>
             <div style="margin-top:8px;">
               <b>STR</b> ${ab.str ?? "—"} (${fmtSigned(mod(ab.str ?? 10))}) •

@@ -1,0 +1,87 @@
+{
+  "id": "erbe-des-hauses-vadalis",
+  "type": "background",
+  "name": "Erbe des Hauses Vadalis",
+  "original_name": "House Vadalis Heir",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/background:house-vadalis-heir",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Konstitution, Weisheit, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Konstitution, Weisheit, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Zeichen der Handhabung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kompetenzen: Umgang mit Tieren und Natur"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkompetenz: Kräuterkunde-Kit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Kräuterkundeset, feine Kleidung, Netz, 29 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie sind mit Respekt vor der Familie und der Natur aufgewachsen. Sie verstehen die Kultur der Fünf Nationen, lassen sich aber nicht auf die Spiele um Ehrgeiz und Status ein, die andere spielen. Sie kennen die Schönheit und Kraft des Lebens, die Geheimnisse von Geburt und Tod und die Wunder, die dazwischen geschehen. Ihre Einblicke in die natürliche Welt ermöglichen es Ihnen, die Lügen und Täuschungen der Stadtbewohner zu durchschauen – und lassen Sie sich nicht anmerken, wie viel von ihren Täuschungen Sie erkennen."
+    }
+  ],
+  "text": "Fähigkeitswerte: Konstitution, Weisheit, Charisma\n\nTalent: Zeichen der Handhabung\n\nKompetenzen: Umgang mit Tieren und Natur\n\nWerkzeugkompetenz: Kräuterkunde-Kit\n\nAusrüstung: Wähle A oder B: (A) Kräuterkundeset, feine Kleidung, Netz, 29 GP; oder (B) 50 GP\n\nSie sind mit Respekt vor der Familie und der Natur aufgewachsen. Sie verstehen die Kultur der Fünf Nationen, lassen sich aber nicht auf die Spiele um Ehrgeiz und Status ein, die andere spielen. Sie kennen die Schönheit und Kraft des Lebens, die Geheimnisse von Geburt und Tod und die Wunder, die dazwischen geschehen. Ihre Einblicke in die natürliche Welt ermöglichen es Ihnen, die Lügen und Täuschungen der Stadtbewohner zu durchschauen – und lassen Sie sich nicht anmerken, wie viel von ihren Täuschungen Sie erkennen.",
+  "tags": [],
+  "ability_scores": [
+    "con",
+    "wis",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "con",
+      "wis",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [],
+  "tool_proficiencies": [
+    "Kräuterkunde-Kit\n"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "zeichen-der-handhabung-kompetenzen-umgang-mit-tieren-und-natur",
+  "granted_feat_name": "Zeichen der Handhabung\n\nKompetenzen: Umgang mit Tieren und Natur\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Kräuterkundeset, feine Kleidung, Netz, 29 GP; oder (B) 50 GP\n\nSie sind mit Respekt vor der Familie und der Natur aufgewachsen. Sie verstehen die Kultur der Fünf Nationen, lassen sich aber nicht auf die Spiele um Ehrgeiz und Status ein, die andere spielen. Sie kennen die Schönheit und Kraft des Lebens, die Geheimnisse von Geburt und Tod und die Wunder, die dazwischen geschehen. Ihre Einblicke in die natürliche Welt ermöglichen es Ihnen, die Lügen und Täuschungen der Stadtbewohner zu durchschauen – und lassen Sie sich nicht anmerken, wie viel von ihren Täuschungen Sie erkennen"
+    }
+  ]
+}

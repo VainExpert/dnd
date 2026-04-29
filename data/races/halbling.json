@@ -1,0 +1,155 @@
+{
+  "id": "halbling",
+  "type": "race",
+  "name": "Halbling",
+  "original_name": "Halfling",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/species:halfling",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Von Göttern geschätzt und geführt, die das Leben, die Heimat und den Herd wertschätzen, ziehen es Halblinge zu idyllischen Zufluchtsorten, wo Familie und Gemeinschaft ihr Leben mitgestalten. Allerdings besitzen viele Halblinge einen mutigen und abenteuerlustigen Geist, der sie auf Entdeckungsreisen führt und ihnen die Möglichkeit gibt, eine größere Welt zu erkunden und unterwegs neue Freunde zu finden. Ihre Größe – ähnlich der eines menschlichen Kindes – hilft ihnen, unbemerkt durch Menschenmengen zu gelangen und durch enge Räume zu schlüpfen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Von Göttern geschätzt und geführt, die das Leben, die Heimat und den Herd wertschätzen, ziehen es Halblinge zu idyllischen Zufluchtsorten, wo Familie und Gemeinschaft ihr Leben mitgestalten. Allerdings besitzen viele Halblinge einen mutigen und abenteuerlustigen Geist, der sie auf Entdeckungsreisen führt und ihnen die Möglichkeit gibt, eine größere Welt zu erkunden und unterwegs neue Freunde zu finden. Ihre Größe – ähnlich der eines menschlichen Kindes – hilft ihnen, unbemerkt durch Menschenmengen zu gelangen und durch enge Räume zu schlüpfen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Jeder, der Zeit mit Halblingen verbracht hat, insbesondere mit Halbling-Abenteurern, hat wahrscheinlich das sagenumwobene „Glück der Halblinge“ in Aktion erlebt. Wenn ein Halbling in Lebensgefahr gerät, scheint eine unsichtbare Macht zugunsten des Halblings einzugreifen. Viele Halblinge glauben an die Macht des Glücks und schreiben ihre ungewöhnliche Gabe einem oder mehreren ihrer gütigen Götter zu, darunter Yondalla, Brandobaris und Charmalaine. Die gleiche Gabe könnte zu ihrer robusten Lebensdauer (ca. 150 Jahre) beitragen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Halblingsgemeinschaften gibt es in allen Varianten. Für jedes abgeschottete Auenland, das in einem unberührten Teil der Welt versteckt ist, gibt es ein Verbrechersyndikat wie den Boromar-Clan im Eberron-Setting oder eine territoriale Meute von Halblingen wie im Dark Sun-Setting."
+    },
+    {
+      "type": "paragraph",
+      "text": "Halblinge, die lieber unter der Erde leben, werden manchmal als herzstarke Halblinge oder Stouts bezeichnet. Nomadische Halblinge sowie diejenigen, die unter Menschen und anderen großen Leuten leben, werden manchmal als leichtfüßige Halblinge oder Tallfellows bezeichnet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Halbling-Eigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Humanoid Größe: Klein (ca. 6–9 m groß) Geschwindigkeit: 9 m"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Halbling hast du diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mutig. Sie haben einen Vorteil bei Rettungswürfen, die Sie durchführen, um den Angstzustand zu vermeiden oder zu beenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Halblings Beweglichkeit. Du kannst dich durch das Feld jeder Kreatur bewegen, die größer ist als du, aber du kannst nicht im selben Feld anhalten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Glück. Wenn Sie auf dem W20 eines D20-Tests eine 1 würfeln, können Sie den Würfel erneut würfeln und müssen den neuen Wurf verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Natürlich heimlich. Sie können die Aktion „Verstecken“ auch dann ausführen, wenn Sie nur von einer Kreatur verdeckt werden, die mindestens eine Größe größer ist als Sie."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kithkin"
+    },
+    {
+      "type": "paragraph",
+      "text": "Quelle: Lorwyn – Erstes Licht"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kithkin sind kleine Leute mit kräftigen Beinen, langen Armen und kräftigem Oberkörper. Ihre breiten Gesichter; runde Ohren; und große, ausdrucksstarke Augen verleihen ihnen ein leicht bärenhaftes Aussehen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die meisten Kithkin sind durch ein empathisches Netz verbunden, das sie die Gefühle der nahestehenden Kithkin spüren lässt. Aufgrund dieser Verbindung vertrauen sich viele Kithkin gegenseitig."
+    },
+    {
+      "type": "paragraph",
+      "text": "Einige Kithkin entfernen sich aus verschiedenen Gründen vorübergehend oder sogar dauerhaft aus diesem empathischen Netz, oft aufgrund eines Traumas, das sie während der Invasion der Phyrexianer erlitten haben. Unabhängig davon glauben Kithkin normalerweise, dass es ein abscheuliches Verbrechen ist, ihre eigenen zu verraten."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "In Lorwyn"
+    },
+    {
+      "type": "paragraph",
+      "text": "Lorwyn Kithkin leben in Hirtendörfern namens Clachans und heißen Außenstehende in ihren Gemeinden willkommen. Diese Kithkin sammeln ihr kulturelles Erbe in einem Buch namens „Book of Kith and Kin“. Sie hegen auch oft viele Aberglauben, insbesondere im Zusammenhang mit Lorwyns Inkarnationen der Natur."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Im Schattenmoor"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Schattenmoor-Kithkin sind eher abgeschottet und fremdenfeindlich. Sie leben meist in befestigten Siedlungen namens Douns, in denen strenge Bräuche zur Wahrung der sozialen Ordnung gelten. Die Anführer der Schattenmoor-Kithkin behalten ihre Gemeinschaften genau im Auge und achten auf Anzeichen von Verbrechen oder Verrat."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Einen Kithkin spielen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Verwenden Sie die Halbling-Spezies, wenn Sie einen Kithkin-Spielercharakter erstellen. Shadowmoor-Kithkin haben Dunkelsicht mit einer Reichweite von 120 Fuß."
+    }
+  ],
+  "text": "Von Göttern geschätzt und geführt, die das Leben, die Heimat und den Herd wertschätzen, ziehen es Halblinge zu idyllischen Zufluchtsorten, wo Familie und Gemeinschaft ihr Leben mitgestalten. Allerdings besitzen viele Halblinge einen mutigen und abenteuerlustigen Geist, der sie auf Entdeckungsreisen führt und ihnen die Möglichkeit gibt, eine größere Welt zu erkunden und unterwegs neue Freunde zu finden. Ihre Größe – ähnlich der eines menschlichen Kindes – hilft ihnen, unbemerkt durch Menschenmengen zu gelangen und durch enge Räume zu schlüpfen.\n\nJeder, der Zeit mit Halblingen verbracht hat, insbesondere mit Halbling-Abenteurern, hat wahrscheinlich das sagenumwobene „Glück der Halblinge“ in Aktion erlebt. Wenn ein Halbling in Lebensgefahr gerät, scheint eine unsichtbare Macht zugunsten des Halblings einzugreifen. Viele Halblinge glauben an die Macht des Glücks und schreiben ihre ungewöhnliche Gabe einem oder mehreren ihrer gütigen Götter zu, darunter Yondalla, Brandobaris und Charmalaine. Die gleiche Gabe könnte zu ihrer robusten Lebensdauer (ca. 150 Jahre) beitragen.\n\nHalblingsgemeinschaften gibt es in allen Varianten. Für jedes abgeschottete Auenland, das in einem unberührten Teil der Welt versteckt ist, gibt es ein Verbrechersyndikat wie den Boromar-Clan im Eberron-Setting oder eine territoriale Meute von Halblingen wie im Dark Sun-Setting.\n\nHalblinge, die lieber unter der Erde leben, werden manchmal als herzstarke Halblinge oder Stouts bezeichnet. Nomadische Halblinge sowie diejenigen, die unter Menschen und anderen großen Leuten leben, werden manchmal als leichtfüßige Halblinge oder Tallfellows bezeichnet.\n\nHalbling-Eigenschaften\n\nKreaturentyp: Humanoid Größe: Klein (ca. 6–9 m groß) Geschwindigkeit: 9 m\n\nAls Halbling hast du diese besonderen Eigenschaften.\n\nMutig. Sie haben einen Vorteil bei Rettungswürfen, die Sie durchführen, um den Angstzustand zu vermeiden oder zu beenden.\n\nHalblings Beweglichkeit. Du kannst dich durch das Feld jeder Kreatur bewegen, die größer ist als du, aber du kannst nicht im selben Feld anhalten.\n\nGlück. Wenn Sie auf dem W20 eines D20-Tests eine 1 würfeln, können Sie den Würfel erneut würfeln und müssen den neuen Wurf verwenden.\n\nNatürlich heimlich. Sie können die Aktion „Verstecken“ auch dann ausführen, wenn Sie nur von einer Kreatur verdeckt werden, die mindestens eine Größe größer ist als Sie.\n\nKithkin\n\nQuelle: Lorwyn – Erstes Licht\n\nKithkin sind kleine Leute mit kräftigen Beinen, langen Armen und kräftigem Oberkörper. Ihre breiten Gesichter; runde Ohren; und große, ausdrucksstarke Augen verleihen ihnen ein leicht bärenhaftes Aussehen.\n\nDie meisten Kithkin sind durch ein empathisches Netz verbunden, das sie die Gefühle der nahestehenden Kithkin spüren lässt. Aufgrund dieser Verbindung vertrauen sich viele Kithkin gegenseitig.\n\nEinige Kithkin entfernen sich aus verschiedenen Gründen vorübergehend oder sogar dauerhaft aus diesem empathischen Netz, oft aufgrund eines Traumas, das sie während der Invasion der Phyrexianer erlitten haben. Unabhängig davon glauben Kithkin normalerweise, dass es ein abscheuliches Verbrechen ist, ihre eigenen zu verraten.\n\nIn Lorwyn\n\nLorwyn Kithkin leben in Hirtendörfern namens Clachans und heißen Außenstehende in ihren Gemeinden willkommen. Diese Kithkin sammeln ihr kulturelles Erbe in einem Buch namens „Book of Kith and Kin“. Sie hegen auch oft viele Aberglauben, insbesondere im Zusammenhang mit Lorwyns Inkarnationen der Natur.\n\nIm Schattenmoor\n\nDie Schattenmoor-Kithkin sind eher abgeschottet und fremdenfeindlich. Sie leben meist in befestigten Siedlungen namens Douns, in denen strenge Bräuche zur Wahrung der sozialen Ordnung gelten. Die Anführer der Schattenmoor-Kithkin behalten ihre Gemeinschaften genau im Auge und achten auf Anzeichen von Verbrechen oder Verrat.\n\nEinen Kithkin spielen\n\nVerwenden Sie die Halbling-Spezies, wenn Sie einen Kithkin-Spielercharakter erstellen. Shadowmoor-Kithkin haben Dunkelsicht mit einer Reichweite von 120 Fuß.",
+  "tags": [],
+  "size": [
+    "Klein"
+  ],
+  "creature_type": "Humanoid Größe: Klein (ca",
+  "speed": {
+    "walk": 3,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Halblingsgemeinschaften gibt es in allen Varianten",
+      "text": "Für jedes abgeschottete Auenland, das in einem unberührten Teil der Welt versteckt ist, gibt es ein Verbrechersyndikat wie den Boromar-Clan im Eberron-Setting oder eine territoriale Meute von Halblingen wie im Dark Sun-Setting."
+    },
+    {
+      "name": "Mutig",
+      "text": "Sie haben einen Vorteil bei Rettungswürfen, die Sie durchführen, um den Angstzustand zu vermeiden oder zu beenden."
+    },
+    {
+      "name": "Halblings Beweglichkeit",
+      "text": "Du kannst dich durch das Feld jeder Kreatur bewegen, die größer ist als du, aber du kannst nicht im selben Feld anhalten."
+    },
+    {
+      "name": "Glück",
+      "text": "Wenn Sie auf dem W20 eines D20-Tests eine 1 würfeln, können Sie den Würfel erneut würfeln und müssen den neuen Wurf verwenden."
+    },
+    {
+      "name": "Natürlich heimlich",
+      "text": "Sie können die Aktion „Verstecken“ auch dann ausführen, wenn Sie nur von einer Kreatur verdeckt werden, die mindestens eine Größe größer ist als Sie."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

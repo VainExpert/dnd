@@ -1,0 +1,92 @@
+{
+  "id": "evoker",
+  "type": "subclass",
+  "name": "Evoker",
+  "original_name": "Evoker",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/wizard:evoker",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Erzeugen Sie explosive Elementareffekte. Der Schwerpunkt Ihres Studiums liegt auf Magie, die mächtige Elementareffekte wie bittere Kälte, sengende Flammen, grollenden Donner, knisternde Blitze und brennende Säure erzeugt. Einige Evoker finden eine Anstellung in militärischen Streitkräften und dienen als Artillerie, um Armeen aus der Ferne zu vernichten. Andere nutzen ihre Macht, um andere zu schützen, während andere ihren eigenen Vorteil suchen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Erzeugen Sie explosive Elementareffekte. Der Schwerpunkt Ihres Studiums liegt auf Magie, die mächtige Elementareffekte wie bittere Kälte, sengende Flammen, grollenden Donner, knisternde Blitze und brennende Säure erzeugt. Einige Evoker finden eine Anstellung in militärischen Streitkräften und dienen als Artillerie, um Armeen aus der Ferne zu vernichten. Andere nutzen ihre Macht, um andere zu schützen, während andere ihren eigenen Vorteil suchen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Evocation Savant"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wählen Sie zwei Zaubererzauber aus der Evokationsschule, die jeweils nicht höher als Stufe 2 sein dürfen, und fügen Sie sie kostenlos Ihrem Zauberbuch hinzu."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie, wann immer Sie Zugriff auf eine neue Stufe an Zauberslots in dieser Klasse erhalten, Ihrem Zauberbuch kostenlos einen Zaubererzauber aus der Evokationsschule hinzufügen. Der gewählte Zauber muss einer Stufe angehören, für die du über Zauberslots verfügst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Starker Zaubertrick"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre schädlichen Cantrips wirken sich sogar auf Kreaturen aus, die der Hauptlast des Effekts entgehen. Wenn du einen Cantrip auf eine Kreatur wirkst und beim Angriffswurf verfehlst oder dem Ziel ein Rettungswurf gegen den Cantrip gelingt, erleidet das Ziel die Hälfte des Schadens des Cantrips (sofern vorhanden), erleidet jedoch keinen zusätzlichen Effekt des Cantrips."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Zauber formen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können innerhalb der Auswirkungen Ihrer Evokationen Nischen relativer Sicherheit schaffen. Wenn du einen Evokationszauber wirkst, der andere Kreaturen betrifft, die du sehen kannst, kannst du eine Anzahl von ihnen auswählen, die 1 plus der Stufe des Zaubers entspricht. Den ausgewählten Kreaturen gelingt ihr Rettungswurf gegen den Zauber automatisch und sie erleiden keinen Schaden, wenn sie bei einem erfolgreichen Rettungswurf normalerweise den halben Schaden erleiden würden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Ermächtigte Evokation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie einen Zaubererzauber aus der Evokationsschule wirken, können Sie Ihren Intelligenzmodifikator zu einem Schadenswurf dieses Zaubers hinzufügen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Überkanal"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst die Kraft deiner Zauber erhöhen. Wenn Sie einen Zaubererzauber mit einem Zauberslot der Stufen 1–5 wirken, der Schaden verursacht, können Sie mit diesem Zauber in der Runde, in der Sie ihn wirken, maximalen Schaden verursachen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie dies zum ersten Mal tun, treten keine negativen Auswirkungen auf Sie auf. Wenn Sie diese Funktion erneut verwenden, bevor Sie einen Lange Rast beendet haben, erleiden Sie unmittelbar nach dem Wirken 2W12 nekrotischen Schaden für jede Stufe des Zauberslots. Dieser Schaden ignoriert Resistenz und Immunität."
+    },
+    {
+      "type": "paragraph",
+      "text": "Jedes Mal, wenn Sie diese Funktion erneut verwenden, bevor Sie einen Lange Rast beenden, erhöht sich der nekrotische Schaden pro Zauberstufe um 1W12."
+    }
+  ],
+  "text": "Erzeugen Sie explosive Elementareffekte. Der Schwerpunkt Ihres Studiums liegt auf Magie, die mächtige Elementareffekte wie bittere Kälte, sengende Flammen, grollenden Donner, knisternde Blitze und brennende Säure erzeugt. Einige Evoker finden eine Anstellung in militärischen Streitkräften und dienen als Artillerie, um Armeen aus der Ferne zu vernichten. Andere nutzen ihre Macht, um andere zu schützen, während andere ihren eigenen Vorteil suchen.\n\nLevel 3: Evocation Savant\n\nWählen Sie zwei Zaubererzauber aus der Evokationsschule, die jeweils nicht höher als Stufe 2 sein dürfen, und fügen Sie sie kostenlos Ihrem Zauberbuch hinzu.\n\nDarüber hinaus können Sie, wann immer Sie Zugriff auf eine neue Stufe an Zauberslots in dieser Klasse erhalten, Ihrem Zauberbuch kostenlos einen Zaubererzauber aus der Evokationsschule hinzufügen. Der gewählte Zauber muss einer Stufe angehören, für die du über Zauberslots verfügst.\n\nLevel 3: Starker Zaubertrick\n\nIhre schädlichen Cantrips wirken sich sogar auf Kreaturen aus, die der Hauptlast des Effekts entgehen. Wenn du einen Cantrip auf eine Kreatur wirkst und beim Angriffswurf verfehlst oder dem Ziel ein Rettungswurf gegen den Cantrip gelingt, erleidet das Ziel die Hälfte des Schadens des Cantrips (sofern vorhanden), erleidet jedoch keinen zusätzlichen Effekt des Cantrips.\n\nLevel 6: Zauber formen\n\nSie können innerhalb der Auswirkungen Ihrer Evokationen Nischen relativer Sicherheit schaffen. Wenn du einen Evokationszauber wirkst, der andere Kreaturen betrifft, die du sehen kannst, kannst du eine Anzahl von ihnen auswählen, die 1 plus der Stufe des Zaubers entspricht. Den ausgewählten Kreaturen gelingt ihr Rettungswurf gegen den Zauber automatisch und sie erleiden keinen Schaden, wenn sie bei einem erfolgreichen Rettungswurf normalerweise den halben Schaden erleiden würden.\n\nLevel 10: Ermächtigte Evokation\n\nImmer wenn Sie einen Zaubererzauber aus der Evokationsschule wirken, können Sie Ihren Intelligenzmodifikator zu einem Schadenswurf dieses Zaubers hinzufügen.\n\nLevel 14: Überkanal\n\nDu kannst die Kraft deiner Zauber erhöhen. Wenn Sie einen Zaubererzauber mit einem Zauberslot der Stufen 1–5 wirken, der Schaden verursacht, können Sie mit diesem Zauber in der Runde, in der Sie ihn wirken, maximalen Schaden verursachen.\n\nWenn Sie dies zum ersten Mal tun, treten keine negativen Auswirkungen auf Sie auf. Wenn Sie diese Funktion erneut verwenden, bevor Sie einen Lange Rast beendet haben, erleiden Sie unmittelbar nach dem Wirken 2W12 nekrotischen Schaden für jede Stufe des Zauberslots. Dieser Schaden ignoriert Resistenz und Immunität.\n\nJedes Mal, wenn Sie diese Funktion erneut verwenden, bevor Sie einen Lange Rast beenden, erhöht sich der nekrotische Schaden pro Zauberstufe um 1W12.",
+  "tags": [],
+  "class": "Magier",
+  "class_id": "magier",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

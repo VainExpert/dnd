@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Charakteroptionen</title>
+  <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
+  <script src="../../theme.js?v=theme-20260422"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Charakteroptionen</div>
+      <div class="subtitle">Klassen, Hintergruende, Talente und Voelker</div>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Suchen..."/>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="content" style="max-width:1100px;">
+      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
+        <select id="kind" class="select">
+          <option value="">Alle Sammlungen</option>
+        </select>
+      </div>
+      <div id="grid" class="card-grid"></div>
+    </div>
+  </main>
+
+  <script src="../../nav.js"></script>
+  <script type="module">
+    import { escapeHtml, loadIndex, renderRichText, slugify } from "../../lib.js?v=character-options-20260429";
+
+    const COLLECTIONS = [
+      { kind: "class", label: "Klassen", singular: "Klasse", basePath: "../../data/classes", indexPath: "../../data/classes/index.json" },
+      { kind: "background", label: "Hintergruende", singular: "Hintergrund", basePath: "../../data/backgrounds", indexPath: "../../data/backgrounds/index.json" },
+      { kind: "feat", label: "Talente", singular: "Talent", basePath: "../../data/feats", indexPath: "../../data/feats/index.json" },
+      { kind: "race", label: "Voelker", singular: "Volk", basePath: "../../data/races", indexPath: "../../data/races/index.json" }
+    ];
+
+    const grid = document.getElementById("grid");
+    const qEl = document.getElementById("q");
+    const kindEl = document.getElementById("kind");
+
+    for (const collection of COLLECTIONS) {
+      const option = document.createElement("option");
+      option.value = collection.kind;
+      option.textContent = collection.label;
+      kindEl.appendChild(option);
+    }
+
+    function compactText(value){
+      if (value == null) return "";
+      if (typeof value === "string" || typeof value === "number" || typeof value === "boolean") return String(value);
+      if (Array.isArray(value)) return value.map(compactText).filter(Boolean).join(" ");
+      if (typeof value === "object") return Object.values(value).map(compactText).filter(Boolean).join(" ");
+      return "";
+    }
+
+    function optionName(entry, fallbackId){
+      return entry.name || entry.title || entry.titel || entry.label || fallbackId;
+    }
+
+    function normalizeOption(entry, collection){
+      const fallbackId = slugify(optionName(entry, ""));
+      const id = String(entry.id || entry.slug || fallbackId || "").trim();
+      return {
+        ...entry,
+        id,
+        name: optionName(entry, id || collection.singular),
+        collectionKind: collection.kind,
+        collectionLabel: collection.singular,
+        sourceFile: entry.sourceFile
+      };
+    }
+
+    function excerpt(entry){
+      const text = entry.summary || entry.kurzbeschreibung || entry.description || entry.beschreibung || entry.text || compactText(entry.features || entry.traits || entry.entries);
+      const clean = String(text || "").replace(/\s+/g, " ").trim();
+      return clean.length > 240 ? `${clean.slice(0, 239)}...` : clean;
+    }
+
+    function metaParts(entry){
+      return [
+        entry.collectionLabel,
+        entry.source,
+        entry.requirement || entry.prerequisite || entry.voraussetzung || (Array.isArray(entry.prerequisites) ? entry.prerequisites.join(", ") : ""),
+        entry.level ? `Stufe ${entry.level}` : "",
+        entry.hit_die ? `TW ${entry.hit_die}` : ""
+      ].filter(Boolean);
+    }
+
+    function card(entry){
+      const id = entry.id || entry.sourceFile || entry.name;
+      const href = `./option.html?type=${encodeURIComponent(entry.collectionKind)}&id=${encodeURIComponent(id)}`;
+      const text = excerpt(entry);
+      return `
+        <div class="mini-card">
+          <div class="mini-head">
+            <div class="mini-title"><a href="${href}">${escapeHtml(entry.name)}</a></div>
+            <div class="mini-sub">${escapeHtml(metaParts(entry).join(" - "))}</div>
+          </div>
+          <div class="mini-body">
+            ${text ? `<div class="mini-box"><div class="mini-box-title">Kurztext</div><div class="mini-box-text">${renderRichText(text, { inlineOnly: true })}</div></div>` : ""}
+            ${entry.sourceFile ? `<div class="mini-footer muted">Datei: ${escapeHtml(entry.sourceFile)}</div>` : ""}
+          </div>
+        </div>
+      `;
+    }
+
+    async function loadOptionFile(collection, file){
+      try {
+        const response = await fetch(`${collection.basePath}/${file}`, { cache: "no-cache" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const entry = await response.json();
+        return normalizeOption({ ...entry, sourceFile: file }, collection);
+      } catch (error) {
+        console.warn(`${file} konnte nicht geladen werden.`, error);
+        return null;
+      }
+    }
+
+    async function loadCollection(collection){
+      try {
+        const files = await loadIndex(collection.indexPath);
+        const entries = await Promise.all(files.map(file => loadOptionFile(collection, file)));
+        return entries.filter(entry => entry && (entry.id || entry.name));
+      } catch (error) {
+        console.warn(`${collection.label} konnten nicht geladen werden.`, error);
+        return [];
+      }
+    }
+
+    const entries = (await Promise.all(COLLECTIONS.map(loadCollection))).flat()
+      .sort((a, b) => String(a.name).localeCompare(String(b.name), "de"));
+
+    function matches(entry, query, kind){
+      if (kind && entry.collectionKind !== kind) return false;
+      if (!query) return true;
+      const haystack = [
+        entry.id,
+        entry.name,
+        entry.collectionLabel,
+        entry.source,
+        entry.requirement,
+        entry.prerequisite,
+        Array.isArray(entry.prerequisites) ? entry.prerequisites.join(" ") : "",
+        entry.voraussetzung,
+        compactText(entry)
+      ].join(" ").toLowerCase();
+      return haystack.includes(query);
+    }
+
+    function render(){
+      const query = (qEl.value || "").trim().toLowerCase();
+      const kind = kindEl.value;
+      const filtered = entries.filter(entry => matches(entry, query, kind));
+      if (!entries.length) {
+        grid.innerHTML = `<p>Keine Charakteroptionen geladen. Die Sammlungsseiten sind bereit; die Indexdateien unter <code>data/classes</code>, <code>data/backgrounds</code>, <code>data/feats</code> und <code>data/races</code> enthalten aktuell keine Eintraege.</p>`;
+        return;
+      }
+      grid.innerHTML = filtered.map(card).join("") || "<p>Keine Treffer.</p>";
+    }
+
+    qEl.addEventListener("input", render);
+    kindEl.addEventListener("change", render);
+    render();
+  </script>
+</body>
+</html>

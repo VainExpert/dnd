@@ -1,0 +1,54 @@
+{
+  "id": "lila-drachenturm",
+  "type": "feat",
+  "name": "Lila Drachenturm",
+  "original_name": "Purple Dragon Rook",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:purple-dragon-rook",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Ursprungstalent",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Ursprungstalent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Anflehen. Sie erwerben Kenntnisse in einer der folgenden Fähigkeiten: Einsicht, Leistung oder Überzeugung."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sammelruf. Wenn du Initiative würfelst und nicht über die Bedingung „Kampfunfähig“ verfügst, kannst du eine Anzahl an Kreaturen in Höhe deines Uebungsbonus auswählen, die du in einem Umkreis von 30 Fuß um dich herum sehen kannst. Diese Kreaturen erhalten heroische Inspiration."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diesen Vorteil genutzt haben, können Sie dies nicht mehr tun, bis Sie eine Lange Rast beendet haben."
+    }
+  ],
+  "text": "Ursprungstalent\n\nSie profitieren von folgenden Vorteilen.\n\nAnflehen. Sie erwerben Kenntnisse in einer der folgenden Fähigkeiten: Einsicht, Leistung oder Überzeugung.\n\nSammelruf. Wenn du Initiative würfelst und nicht über die Bedingung „Kampfunfähig“ verfügst, kannst du eine Anzahl an Kreaturen in Höhe deines Uebungsbonus auswählen, die du in einem Umkreis von 30 Fuß um dich herum sehen kannst. Diese Kreaturen erhalten heroische Inspiration.\n\nSobald Sie diesen Vorteil genutzt haben, können Sie dies nicht mehr tun, bis Sie eine Lange Rast beendet haben.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

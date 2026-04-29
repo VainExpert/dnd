@@ -135,6 +135,13 @@ a:hover{ text-decoration:underline; }
   background:var(--panel-tint);
   padding:14px;
 }
+.site-sidebar{
+  position:sticky;
+  top:67px;
+  align-self:start;
+  max-height:calc(100vh - 67px);
+  overflow:auto;
+}
 .nav{
   display:flex;
   flex-direction:column;
@@ -163,6 +170,25 @@ a:hover{ text-decoration:underline; }
 .nav a.active{
   background:var(--accent-soft);
   border-color:var(--accent-ring);
+}
+.nav a.nav-child{
+  margin-left:14px;
+  padding-left:18px;
+  font-size:13px;
+  color:var(--muted);
+  position:relative;
+}
+.nav a.nav-child::before{
+  content:"";
+  position:absolute;
+  left:6px;
+  top:50%;
+  width:6px;
+  height:1px;
+  background:var(--muted2);
+}
+.nav a.nav-child.active{
+  color:var(--text);
 }
 .sidebar-note{
   margin-top:16px;
@@ -229,6 +255,30 @@ a:hover{ text-decoration:underline; }
   padding:8px 12px;
   background: var(--accent-soft);
   color:var(--text);
+}
+.markdown-table-scroll{
+  margin:14px 0;
+  overflow:auto;
+}
+.markdown-table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:14px;
+}
+.markdown-table th,
+.markdown-table td{
+  border:1px solid var(--rule-soft);
+  padding:8px 10px;
+  vertical-align:top;
+  line-height:1.45;
+}
+.markdown-table th{
+  background:var(--card-tint);
+  color:var(--text);
+  font-weight:800;
+}
+.markdown-table tbody tr:nth-child(even) td{
+  background:var(--panel-tint);
 }
 
 @media (max-width: 860px){

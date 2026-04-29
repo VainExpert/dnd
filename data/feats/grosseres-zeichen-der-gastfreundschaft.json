@@ -1,0 +1,57 @@
+{
+  "id": "grosseres-zeichen-der-gastfreundschaft",
+  "type": "feat",
+  "name": "Größeres Zeichen der Gastfreundschaft",
+  "original_name": "Greater Mark of Hospitality",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:greater-mark-of-hospitality",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Groessere Drachenmale",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen für Gastfreundschaftstalent)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen für Gastfreundschaftstalent)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserte Intuition. Wenn Sie den Vorteil „Immer gastfreundlich“ Ihres Talents „Zeichen der Gastfreundschaft“ nutzen, können Sie 1W6 statt 1W4 würfeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Inspirierte Gastfreundschaft. Wenn du „Essen und Trinken reinigen“ wirkst, kannst du den Zauber so modifizieren, dass anstelle seines normalen Effekts jede Kreatur deiner Wahl im Umkreis von 30 Fuß um dich erfrischt wird. Die Erschöpfungsstufe jeder betroffenen Kreatur wird um 1 verringert und die Kreatur erhält vorübergehende Trefferpunkte in Höhe Ihres Uebungsbonus plus Ihres Intelligenz-, Weisheits- oder Charisma-Modifikators (wählen Sie, wenn Sie dieses Talent auswählen). Sobald Sie den Zauber mit diesem Vorteil modifiziert haben, können Sie dies erst wieder tun, wenn Sie eine Lange Rast abgeschlossen haben."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen für Gastfreundschaftstalent)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20.\n\nVerbesserte Intuition. Wenn Sie den Vorteil „Immer gastfreundlich“ Ihres Talents „Zeichen der Gastfreundschaft“ nutzen, können Sie 1W6 statt 1W4 würfeln.\n\nInspirierte Gastfreundschaft. Wenn du „Essen und Trinken reinigen“ wirkst, kannst du den Zauber so modifizieren, dass anstelle seines normalen Effekts jede Kreatur deiner Wahl im Umkreis von 30 Fuß um dich erfrischt wird. Die Erschöpfungsstufe jeder betroffenen Kreatur wird um 1 verringert und die Kreatur erhält vorübergehende Trefferpunkte in Höhe Ihres Uebungsbonus plus Ihres Intelligenz-, Weisheits- oder Charisma-Modifikators (wählen Sie, wenn Sie dieses Talent auswählen). Sobald Sie den Zauber mit diesem Vorteil modifiziert haben, können Sie dies erst wieder tun, wenn Sie eine Lange Rast abgeschlossen haben.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

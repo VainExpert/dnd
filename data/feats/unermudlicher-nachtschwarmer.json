@@ -1,0 +1,42 @@
+{
+  "id": "unermudlicher-nachtschwarmer",
+  "type": "feat",
+  "name": "Unermüdlicher Nachtschwärmer",
+  "original_name": "Tireless Reveler",
+  "rules_version": "2024",
+  "source": "Astarion's Book of Hungers",
+  "source_url": "http://dnd2024.wikidot.com/feat:tireless-reveler",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Exotisch",
+  "prerequisites": [],
+  "summary": "Ursprungstalent",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Ursprungstalent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn ein Verbündeter, den Sie im Umkreis von 60 Fuß um sich herum sehen können, heroische Inspiration verbraucht, können Sie heroische Inspiration erhalten, wenn Ihnen diese fehlt. Sie können diesen Vorteil mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Kurze oder Lange Rast beenden."
+    }
+  ],
+  "text": "Ursprungstalent\n\nWenn ein Verbündeter, den Sie im Umkreis von 60 Fuß um sich herum sehen können, heroische Inspiration verbraucht, können Sie heroische Inspiration erhalten, wenn Ihnen diese fehlt. Sie können diesen Vorteil mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Kurze oder Lange Rast beenden.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

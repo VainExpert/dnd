@@ -1,0 +1,50 @@
+{
+  "id": "liebesbisse",
+  "type": "feat",
+  "name": "Liebesbisse",
+  "original_name": "Love Bites",
+  "rules_version": "2024",
+  "source": "Astarion's Book of Hungers",
+  "source_url": "http://dnd2024.wikidot.com/feat:love-bites",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Exotisch",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Level 4+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Level 4+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Liebenswerter Schmerz. Unmittelbar nachdem du einer Kreatur mit einer Nahkampfwaffe oder einem unbewaffneten Schlag Schaden zugefügt hast, kannst du eine Bonusaktion ausführen, um dem Ziel bis zum Beginn deines nächsten Zuges oder bis du oder deine Verbündeten ihm Schaden zufügst, den Zustand „Verzaubert“ zu verleihen. Sobald Sie diesen Vorteil genutzt haben, können Sie ihn erst wieder nutzen, wenn Sie eine Kurze oder Lange Rast beendet haben."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Level 4+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20.\n\nLiebenswerter Schmerz. Unmittelbar nachdem du einer Kreatur mit einer Nahkampfwaffe oder einem unbewaffneten Schlag Schaden zugefügt hast, kannst du eine Bonusaktion ausführen, um dem Ziel bis zum Beginn deines nächsten Zuges oder bis du oder deine Verbündeten ihm Schaden zufügst, den Zustand „Verzaubert“ zu verleihen. Sobald Sie diesen Vorteil genutzt haben, können Sie ihn erst wieder nutzen, wenn Sie eine Kurze oder Lange Rast beendet haben.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

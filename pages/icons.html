@@ -78,8 +78,9 @@
     </div>
   </div>
 
+  <script src="../nav.js"></script>
   <script type="module">
-    import { escapeHtml } from "../lib.js";
+    import { escapeHtml, renderRichText } from "../lib.js";
 
     const qEl = document.getElementById("q");
     const kindEl = document.getElementById("kind");
@@ -112,7 +113,7 @@
       if (i.tags && i.tags.length) metaParts.push(i.tags.join(", "));
       if (i.blurb) metaParts.push(i.blurb);
       if (i.credit) metaParts.push(`Quelle: ${i.credit}`);
-      modalMeta.textContent = metaParts.join(" • ");
+      modalMeta.innerHTML = metaParts.map(part => renderRichText(part, { inlineOnly: true })).join(" &bull; ");
       modal.style.display = "block";
     }
 

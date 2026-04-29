@@ -1,0 +1,116 @@
+{
+  "id": "pfad-des-wilden-herzens",
+  "type": "subclass",
+  "name": "Pfad des wilden Herzens",
+  "original_name": "Path of the Wild Heart",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/barbarian:path-of-the-wild-heart",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Wandeln Sie in Gemeinschaft mit der Tierwelt. Barbaren, die dem Pfad des wilden Herzens folgen, betrachten sich selbst als mit Tieren verwandt. Diese Barbaren erlernen magische Mittel, um mit Tieren zu kommunizieren, und ihre Wut stärkt ihre Verbindung zu Tieren, da sie sie mit übernatürlicher Macht erfüllt.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Wandeln Sie in Gemeinschaft mit der Tierwelt. Barbaren, die dem Pfad des wilden Herzens folgen, betrachten sich selbst als mit Tieren verwandt. Diese Barbaren erlernen magische Mittel, um mit Tieren zu kommunizieren, und ihre Wut stärkt ihre Verbindung zu Tieren, da sie sie mit übernatürlicher Macht erfüllt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Tiersprecher"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können die Zauber „Tiersinn“ und „Mit Tieren sprechen“ wirken, jedoch nur als Rituale. Weisheit ist für sie Ihre Zauberfähigkeit."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Rage of the Wilds"
+    },
+    {
+      "type": "paragraph",
+      "text": "Deine Wut nutzt die Urkraft der Tiere. Immer wenn du deine Wut aktivierst, erhältst du eine der folgenden Optionen deiner Wahl."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tragen. Während deine Wut aktiv ist, hast du Resistenz gegen jede Schadensart außer Kraft, Nekrotisch, Hellseher und Strahlend."
+    },
+    {
+      "type": "paragraph",
+      "text": "Adler. Wenn Sie Ihre Wut aktivieren, können Sie als Teil dieser Bonusaktion die Aktionen „Entfernen“ und „Sprint“ ausführen. Während Ihre Wut aktiv ist, können Sie eine Bonusaktion durchführen, um beide Aktionen auszuführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wolf. Während Ihre Wut aktiv ist, haben Ihre Verbündeten einen Vorteil bei Angriffswürfen gegen jeden Ihrer Feinde im Umkreis von 5 Fuß um Sie."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Aspekt der Wildnis"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erhalten eine der folgenden Optionen Ihrer Wahl. Wann immer Sie eine Lange Rast beendet haben, können Sie Ihre Wahl ändern."
+    },
+    {
+      "type": "paragraph",
+      "text": "Eule. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß. Wenn Sie Dunkelsicht bereits haben, erhöht sich die Reichweite um 60 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Panther. Du hast eine Steiggeschwindigkeit, die deiner Geschwindigkeit entspricht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Lachs. Du hast eine Schwimmgeschwindigkeit, die deiner Geschwindigkeit entspricht."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Natursprecher"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können den Zauber „Mit der Natur kommunizieren“ wirken, jedoch nur als Ritual. Weisheit ist deine Zauberfähigkeit dafür."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Macht der Wildnis"
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn du deine Wut aktivierst, erhältst du eine der folgenden Optionen deiner Wahl."
+    },
+    {
+      "type": "paragraph",
+      "text": "Falke. Während deine Wut aktiv ist, hast du eine Fluggeschwindigkeit, die deiner Geschwindigkeit entspricht, wenn du keine Rüstung trägst."
+    },
+    {
+      "type": "paragraph",
+      "text": "Löwe. Während deine Wut aktiv ist, hat jeder deiner Feinde im Umkreis von 5 Fuß um dich einen Nachteil bei Angriffswürfen gegen andere Ziele als dich oder einen anderen Barbaren, bei dem diese Option aktiv ist."
+    },
+    {
+      "type": "paragraph",
+      "text": "RAM. Während deine Wut aktiv ist, kannst du eine große oder kleinere Kreatur in den Zustand „Anfällig“ versetzen, wenn du sie mit einem Nahkampfangriff triffst."
+    }
+  ],
+  "text": "Wandeln Sie in Gemeinschaft mit der Tierwelt. Barbaren, die dem Pfad des wilden Herzens folgen, betrachten sich selbst als mit Tieren verwandt. Diese Barbaren erlernen magische Mittel, um mit Tieren zu kommunizieren, und ihre Wut stärkt ihre Verbindung zu Tieren, da sie sie mit übernatürlicher Macht erfüllt.\n\nStufe 3: Tiersprecher\n\nSie können die Zauber „Tiersinn“ und „Mit Tieren sprechen“ wirken, jedoch nur als Rituale. Weisheit ist für sie Ihre Zauberfähigkeit.\n\nLevel 3: Rage of the Wilds\n\nDeine Wut nutzt die Urkraft der Tiere. Immer wenn du deine Wut aktivierst, erhältst du eine der folgenden Optionen deiner Wahl.\n\nTragen. Während deine Wut aktiv ist, hast du Resistenz gegen jede Schadensart außer Kraft, Nekrotisch, Hellseher und Strahlend.\n\nAdler. Wenn Sie Ihre Wut aktivieren, können Sie als Teil dieser Bonusaktion die Aktionen „Entfernen“ und „Sprint“ ausführen. Während Ihre Wut aktiv ist, können Sie eine Bonusaktion durchführen, um beide Aktionen auszuführen.\n\nWolf. Während Ihre Wut aktiv ist, haben Ihre Verbündeten einen Vorteil bei Angriffswürfen gegen jeden Ihrer Feinde im Umkreis von 5 Fuß um Sie.\n\nLevel 6: Aspekt der Wildnis\n\nSie erhalten eine der folgenden Optionen Ihrer Wahl. Wann immer Sie eine Lange Rast beendet haben, können Sie Ihre Wahl ändern.\n\nEule. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß. Wenn Sie Dunkelsicht bereits haben, erhöht sich die Reichweite um 60 Fuß.\n\nPanther. Du hast eine Steiggeschwindigkeit, die deiner Geschwindigkeit entspricht.\n\nLachs. Du hast eine Schwimmgeschwindigkeit, die deiner Geschwindigkeit entspricht.\n\nLevel 10: Natursprecher\n\nSie können den Zauber „Mit der Natur kommunizieren“ wirken, jedoch nur als Ritual. Weisheit ist deine Zauberfähigkeit dafür.\n\nLevel 14: Macht der Wildnis\n\nImmer wenn du deine Wut aktivierst, erhältst du eine der folgenden Optionen deiner Wahl.\n\nFalke. Während deine Wut aktiv ist, hast du eine Fluggeschwindigkeit, die deiner Geschwindigkeit entspricht, wenn du keine Rüstung trägst.\n\nLöwe. Während deine Wut aktiv ist, hat jeder deiner Feinde im Umkreis von 5 Fuß um dich einen Nachteil bei Angriffswürfen gegen andere Ziele als dich oder einen anderen Barbaren, bei dem diese Option aktiv ist.\n\nRAM. Während deine Wut aktiv ist, kannst du eine große oder kleinere Kreatur in den Zustand „Anfällig“ versetzen, wenn du sie mit einem Nahkampfangriff triffst.",
+  "tags": [],
+  "class": "Barbar",
+  "class_id": "barbar",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

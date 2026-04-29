@@ -1,0 +1,1159 @@
+{
+  "id": "kleriker",
+  "type": "class",
+  "name": "Kleriker",
+  "original_name": "Cleric",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/cleric:main",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Klassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Kleriker beziehen Macht aus den Reichen der Götter und nutzen sie, um Wunder zu wirken. Gesegnet von einer Gottheit, einem Pantheon oder einem anderen unsterblichen Wesen, kann ein Kleriker die göttliche Magie der Äußeren Ebenen – wo Götter wohnen – nutzen und sie nutzen, um Menschen zu stärken und Feinde zu bekämpfen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Kleriker beziehen Macht aus den Reichen der Götter und nutzen sie, um Wunder zu wirken. Gesegnet von einer Gottheit, einem Pantheon oder einem anderen unsterblichen Wesen, kann ein Kleriker die göttliche Magie der Äußeren Ebenen – wo Götter wohnen – nutzen und sie nutzen, um Menschen zu stärken und Feinde zu bekämpfen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Da ihre Macht eine göttliche Gabe ist, verbinden sich Kleriker normalerweise mit Tempeln, die der Gottheit oder einer anderen unsterblichen Kraft gewidmet sind, die ihre Magie freigesetzt hat. Die Nutzung göttlicher Magie erfordert keine spezielle Ausbildung, dennoch können Kleriker Gebete und Riten erlernen, die ihnen helfen, die Macht der Äußeren Ebenen zu nutzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Nicht jedes Mitglied eines Tempels oder Schreins ist ein Kleriker. Einige Priester sind zu einem einfachen Leben im Tempeldienst berufen und üben ihre Hingabe durch Gebete und Rituale aus, nicht durch Magie. Viele Sterbliche behaupten, für die Götter zu sprechen, aber nur wenige können die Macht dieser Götter so bündeln wie ein Kleriker."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Kernmerkmale des Klerikers"
+        ],
+        [
+          "Primäre Fähigkeit",
+          "Weisheit"
+        ],
+        [
+          "Trefferpunktwürfel",
+          "D8 pro Klerikerstufe"
+        ],
+        [
+          "Rettungswurf-Kenntnisse",
+          "Weisheit und Charisma"
+        ],
+        [
+          "Fertigkeiten",
+          "Wählen Sie 2: Geschichte, Einsicht, Medizin, Überzeugung oder Religion"
+        ],
+        [
+          "Waffenkenntnisse",
+          "Einfache Waffen"
+        ],
+        [
+          "Rüstungstraining",
+          "Leichte und mittlere Rüstungen und Schilde"
+        ],
+        [
+          "Startausrüstung",
+          "Wähle A oder B: (A) Kettenhemd, Schild, Streitkolben, Heiliges Symbol, Priesterpaket und 7 GP; oder (B) 110 GP"
+        ]
+      ],
+      "text": "Kerneigenschaften des Klerikers Primärfähigkeit Weisheit Trefferpunkt Würfel W8 pro Klerikerstufe Rettungswurf-Fertigkeiten Weisheit und Charisma-Fertigkeitskompetenzen Wählen Sie 2: Geschichte, Einsicht, Medizin, Überzeugung oder Religion Waffenkompetenzen Einfache Waffen Rüstungstraining Leichte und mittlere Rüstungen und Schilde Startausrüstung Wählen Sie A oder B: (A) Kettenhemd, Schild, Streitkolben, Heiliges Symbol, Priesterpaket und 7 GP; oder (B) 110 GP"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Kleriker werden …"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Charakter der Stufe 1"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalte alle Eigenschaften in der Tabelle „Kleriker-Kernmerkmale“.",
+        "Erhalten Sie die Level-1-Funktionen des Klerikers, die in der Tabelle „Kleriker-Talente“ aufgeführt sind."
+      ],
+      "text": "Erhalte alle Eigenschaften in der Tabelle „Kleriker-Kernmerkmale“. Erhalten Sie die Level-1-Funktionen des Klerikers, die in der Tabelle „Kleriker-Talente“ aufgeführt sind."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Multiklassen-Charakter"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalten Sie die folgenden Eigenschaften aus der Tabelle „Kleriker-Kernmerkmale“: Trefferpunktwürfel und Training mit leichter und mittlerer Rüstung und Schilden.",
+        "Erhalten Sie die Level-1-Funktionen des Klerikers, die in der Tabelle „Kleriker-Talente“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen."
+      ],
+      "text": "Erhalten Sie die folgenden Eigenschaften aus der Tabelle „Kleriker-Kernmerkmale“: Trefferpunktwürfel und Training mit leichter und mittlerer Rüstung und Schilden. Erhalten Sie die Level-1-Funktionen des Klerikers, die in der Tabelle „Kleriker-Talente“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Talente der Klerikerklasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Klerikertalente (Teil A)"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ebene",
+          "Uebungsbonus",
+          "Talenturen"
+        ],
+        [
+          "1",
+          "+2",
+          "Zauberei, Göttliche Ordnung"
+        ],
+        [
+          "2",
+          "+2",
+          "Kanal-Göttlichkeit"
+        ],
+        [
+          "3",
+          "+2",
+          "Kleriker-Unterklasse"
+        ],
+        [
+          "4",
+          "+2",
+          "Faehigkeitswert-Verbesserung"
+        ],
+        [
+          "5",
+          "+3",
+          "Untote verbrennen"
+        ],
+        [
+          "6",
+          "+3",
+          "Unterklasse Talent"
+        ],
+        [
+          "7",
+          "+3",
+          "Gesegnete Schläge"
+        ],
+        [
+          "8",
+          "+3",
+          "Faehigkeitswert-Verbesserung"
+        ],
+        [
+          "9",
+          "+4",
+          "-"
+        ],
+        [
+          "10",
+          "+4",
+          "Göttliches Eingreifen"
+        ],
+        [
+          "11",
+          "+4",
+          "-"
+        ],
+        [
+          "12",
+          "+4",
+          "Faehigkeitswert-Verbesserung"
+        ],
+        [
+          "13",
+          "+5",
+          "-"
+        ],
+        [
+          "14",
+          "+5",
+          "Verbesserte gesegnete Schläge"
+        ],
+        [
+          "15",
+          "+5",
+          "-"
+        ],
+        [
+          "16",
+          "+5",
+          "Faehigkeitswert-Verbesserung"
+        ],
+        [
+          "17",
+          "+6",
+          "Unterklasse Talent"
+        ],
+        [
+          "18",
+          "+6",
+          "-"
+        ],
+        [
+          "19",
+          "+6",
+          "Epischer Segen"
+        ],
+        [
+          "20",
+          "+6",
+          "Größere göttliche Intervention"
+        ]
+      ],
+      "text": "Stufe Uebungsbonus Talente 1 +2 Zauber, Göttlicher Befehl 2 +2 Göttlichkeit kanalisieren 3 +2 Kleriker-Unterklasse 4 +2 Fähigkeitswert-Verbesserung 5 +3 Untote verbrennen 6 +3 Unterklassen-Talent 7 +3 Gesegnete Schläge 8 +3 Fähigkeitswert-Verbesserung 9 +4 - 10 +4 Göttliches Eingreifen 11 +4 - 12 +4 Fähigkeitswert-Verbesserung 13 +5 - 14 +5 Verbesserte gesegnete Schläge 15 +5 – 16 +5 Verbesserung des Fähigkeitswerts 17 +6 Unterklassentalent 18 +6 – 19 +6 Epischer Segen 20 +6 Größere göttliche Intervention"
+    },
+    {
+      "type": "paragraph",
+      "text": "Klerikertalente (Teil B)"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ebene",
+          "Kanal-Göttlichkeit",
+          "Zaubertricks",
+          "Vorbereitete Zauber",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        [
+          "1",
+          "-",
+          "3",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "2",
+          "2",
+          "3",
+          "5",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "3",
+          "2",
+          "3",
+          "6",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "4",
+          "2",
+          "4",
+          "7",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "5",
+          "2",
+          "4",
+          "9",
+          "4",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "6",
+          "3",
+          "4",
+          "10",
+          "4",
+          "3",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "7",
+          "3",
+          "4",
+          "11",
+          "4",
+          "3",
+          "3",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "8",
+          "3",
+          "4",
+          "12",
+          "4",
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "9",
+          "3",
+          "4",
+          "14",
+          "4",
+          "3",
+          "3",
+          "3",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "10",
+          "3",
+          "5",
+          "15",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "11",
+          "3",
+          "5",
+          "16",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "12",
+          "3",
+          "5",
+          "16",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "13",
+          "3",
+          "5",
+          "17",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "14",
+          "3",
+          "5",
+          "17",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "15",
+          "3",
+          "5",
+          "18",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "-"
+        ],
+        [
+          "16",
+          "3",
+          "5",
+          "18",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "-"
+        ],
+        [
+          "17",
+          "3",
+          "5",
+          "19",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "18",
+          "4",
+          "5",
+          "20",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "19",
+          "4",
+          "5",
+          "21",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "20",
+          "4",
+          "5",
+          "22",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "2",
+          "2",
+          "1",
+          "1"
+        ]
+      ],
+      "text": "Level Kanal Göttlichkeit Zaubertricks Vorbereitete Zauber 1. 2. 3. 4. 5. 6. 7. 8. 9. 1 - 3 4 2 - - - - - - - - 2 2 3 5 3 - - - - - - - - 3 2 3 6 4 2 - - - - - - - 4 2 4 7 4 3 - - - - - - - 5 2 4 9 4 3 2 - - - - - - 6 3 4 10 4 3 3 - - - - - - 7 3 4 11 4 3 3 1 - - - - - 8 3 4 12 4 3 3 2 - - - - - 9 3 4 14 4 3 3 3 1 - - - - 10 3 5 15 4 3 3 3 2 - - - - 11 3 5 16 4 3 3 3 2 1 - - - 12 3 5 16 4 3 3 3 2 1 - - - 13 3 5 17 4 3 3 3 2 1 1 - - 14 3 5 17 4 3 3 3 2 1 1 - - 15 3 5 18 4 3 3 3 2 1 1 1 - 16 3 5 18 4 3 3 3 2 1 1 1 - 17 3 5 19 4 3 3 3 2 1 1 1 1 18 4 5 20 4 3 3 3 3 1 1 1 1 19 4 5 21 4 3 3 3 3 2 1 1 1 20 4 5 22 4 3 3 3 3 2 2 1 1"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Kleriker erhalten Sie die folgenden Klassenmerkmale, wenn Sie die angegebenen Klerikerstufen erreichen. Diese Eigenschaften sind in der Tabelle „Kleriker-Talente“ aufgeführt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Zaubern"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben gelernt, durch Gebet und Meditation Zauber zu wirken. Die Regeln zum Zaubern finden Sie in Kapitel 7. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln mit Kleriker-Zaubersprüchen anwenden, die später in der Klassenbeschreibung in der Liste der Kleriker-Zauber aufgeführt werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zaubertricks. Du kennst drei Cantrips deiner Wahl aus der Zauberliste „Kleriker“. Führung, Heilige Flamme und Thaumaturgie werden empfohlen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie eine Klerikerstufe erreichen, können Sie einen Ihrer Cantrips durch einen anderen Cantrip Ihrer Wahl aus der Liste der Klerikerzauber ersetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie die Kleriker-Stufen 4 und 10 erreichen, lernen Sie einen weiteren Cantrip Ihrer Wahl aus der Kleriker-Zauberliste, wie in der Spalte „Zaubertricks“ der Tabelle „Kleriker-Talente“ aufgeführt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberplatz. Die Tabelle „Kleriker-Talente“ zeigt, wie viele Zauberslots Ihnen zum Wirken Ihrer Zauber der Stufe 1+ zur Verfügung stehen. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vorbereitete Zauber der Stufe 1+. Sie bereiten die Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst vier Zaubersprüche der Stufe 1 aus der Liste der Klerikerzauber aus. Empfohlen werden „Segnen“, „Wunden heilen“, „Führungsbolzen“ und „Schild des Glaubens“."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Anzahl der Zaubersprüche auf Ihrer Liste erhöht sich mit zunehmender Klerikerstufe, wie in der Spalte „Vorbereitete Zaubersprüche“ der Tabelle „Klerikertalente“ angezeigt. Sobald sich diese Zahl erhöht, wähle weitere Zauber aus der Kleriker-Zauberliste, bis die Anzahl der Zauber auf deiner Liste mit der Zahl auf der Tabelle übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Kleriker der Stufe 3 sind, kann Ihre Liste der vorbereiteten Zauber sechs Zauber der Stufen 1 und 2 in beliebiger Kombination enthalten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn eine andere Kleriker-Funktion dir Zauber verleiht, die du schon immer vorbereitet hast, zählen diese Zauber nicht zu der Anzahl der Zauber, die du mit dieser Funktion vorbereiten kannst. Ansonsten zählen diese Zauber für dich jedoch als Kleriker-Zauber."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ändern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie Lange Rast abgeschlossen haben, können Sie Ihre Liste der vorbereiteten Zaubersprüche ändern und jeden der dortigen Zaubersprüche durch andere Klerikerzauber ersetzen, für die Sie Zauberplätze haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfähigkeit. Weisheit ist Ihre Zauberfähigkeit für Ihre Klerikerzauber."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfokus. Sie können ein Heiliges Symbol als Zauberfokus für Ihre Klerikerzauber verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Göttliche Ordnung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben sich einer der folgenden heiligen Rollen Ihrer Wahl verschrieben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schutz. Wenn Sie für den Kampf ausgebildet sind, erwerben Sie Kenntnisse im Umgang mit Kampfwaffen und trainieren mit schwerer Rüstung."
+    },
+    {
+      "type": "paragraph",
+      "text": "Thaumaturg. Sie kennen einen zusätzlichen Cantrip aus der Zauberliste des Klerikers. Darüber hinaus gibt Ihnen Ihre mystische Verbindung zum Göttlichen einen Bonus auf Ihre Intelligenzprüfungen (Arkane oder Religion). Der Bonus entspricht Ihrem Weisheitsmodifikator (mindestens +1)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 2: Göttlichkeit kanalisieren"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können göttliche Energie direkt von den Äußeren Ebenen kanalisieren, um magische Effekte zu erzielen. Sie beginnen mit zwei solchen Effekten: „Göttlicher Funke“ und „Untote verwandeln“, die jeweils im Folgenden beschrieben werden. Jedes Mal, wenn Sie Channel Divinity dieser Klasse verwenden, wählen Sie aus, welchen Channel Divinity-Effekt dieser Klasse Sie erstellen möchten. Mit höheren Klerikerstufen erhältst du zusätzliche Effektoptionen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können die Channel Divinity dieser Klasse zweimal verwenden. Du erhältst eine seiner verbrauchten Nutzungen zurück, wenn du eine Kurze Rast abschließt, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast abschließt. Sie erhalten zusätzliche Verwendungsmöglichkeiten, wenn Sie bestimmte Klerikerstufen erreichen, wie in der Spalte „Göttlichkeit kanalisieren“ der Tabelle „Klerikertalente“ angezeigt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn ein Channel Divinity-Effekt einen Rettungswurf erfordert, entspricht der SG dem SG des Zauberwurfs aus der Zauberfunktion dieser Klasse."
+    },
+    {
+      "type": "paragraph",
+      "text": "Göttlicher Funke. Als magische Aktion richten Sie Ihr Heiliges Symbol auf eine andere Kreatur, die Sie im Umkreis von 30 Fuß um sich herum sehen können, und richten göttliche Energie auf sie. Wirf 1W8 und füge deinen Weisheitsmodifikator hinzu. Du stellst der Kreatur entweder Trefferpunkte in Höhe dieser Summe wieder her oder zwingst die Kreatur zu einem Konstitutions-Rettungswurf. Bei einem fehlgeschlagenen Rettungswurf erleidet die Kreatur nekrotischen oder strahlenden Schaden (nach Wahl) in Höhe dieser Summe. Bei einem erfolgreichen Rettungswurf erleidet die Kreatur halb so viel Schaden (abgerundet)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie würfeln einen zusätzlichen W8, wenn Sie die Klerikerstufen 7 (2W8), 13 (3W8) und 18 (4W8) erreichen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verwandle Untote. Als magische Aktion präsentierst du dein Heiliges Symbol und tadelst untote Kreaturen. Jeder Untote Ihrer Wahl im Umkreis von 30 Fuß um Sie muss einen Weisheits-Rettungswurf ausführen. Wenn der Rettungswurf der Kreatur fehlschlägt, hat sie 1 Minute lang die Zustände „Verängstigt“ und „Kampfunfähig“. Während dieser Dauer versucht es in seinen Zügen, sich so weit wie möglich von dir zu entfernen. Dieser Effekt endet vorzeitig für die Kreatur, wenn sie Schaden erleidet, wenn Sie über den Zustand „Kampfunfähig“ verfügen oder wenn Sie sterben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Kleriker-Unterklasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine Kleriker-Unterklasse deiner Wahl. Die Unterklassen „Life Domain“, „Light Domain“, „Trickery Domain“ und „War Domain“ werden nach der Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Klerikerstufen Funktionen verleiht. Für den Rest Ihrer Karriere erhalten Sie alle Merkmale Ihrer Unterklasse, die Ihrer Klerikerstufe oder niedriger entsprechen."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Kleriker-Unterklassen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Name Wissensdomäne Lebensdomäne Lichtdomäne Trickereidomäne Kriegsdomäne"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 4: Verbesserung der Fähigkeitsbewertung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Klerikerstufen 8, 12 und 16."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 5: Untote verbrennen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wann immer Sie „Untote verwandeln“ verwenden, können Sie eine Anzahl von W8 in Höhe Ihres Weisheitsmodifikators (mindestens 1W8) würfeln und die Würfe addieren. Jeder Untote, dessen Rettungswurf gegen diese Anwendung von „Untote verwandeln“ fehlschlägt, erleidet Strahlungsschaden in Höhe der Gesamtsumme des Wurfs. Dieser Schaden beendet den Zugeffekt nicht."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Gesegnete Schläge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Göttliche Macht erfüllt dich im Kampf. Sie erhalten eine der folgenden Optionen Ihrer Wahl (wenn Sie eine der Optionen einer Kleriker-Unterklasse in einem älteren Buch erhalten, verwenden Sie nur die Option, die Sie für diese Funktion ausgewählt haben)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Göttlicher Schlag. Einmal in jedem deiner Züge, wenn du eine Kreatur mit einem Angriffswurf mit einer Waffe triffst, kannst du dafür sorgen, dass das Ziel zusätzlich 1W8 nekrotischen oder strahlenden Schaden (nach deiner Wahl) erleidet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kraftvolle Zauberei. Addiere deinen Weisheitsmodifikator zum Schaden, den du mit einem Kleriker-Cantrip verursachst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 10: Göttliches Eingreifen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können Ihre Gottheit oder Ihr Pantheon anrufen, um in Ihrem Namen einzugreifen. Wählen Sie als magische Aktion einen beliebigen Klerikerzauber der Stufe 5 oder niedriger, für dessen Wirkung keine Reaktion erforderlich ist. Als Teil derselben Aktion wirkst du diesen Zauber, ohne einen Zauberslot zu verbrauchen oder Materialkomponenten zu benötigen. Sie können diese Funktion erst wieder verwenden, wenn Sie eine Lange Rast beendet haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 14: Verbesserte gesegnete Schläge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Option, die Sie für „Blessed Strikes“ gewählt haben, wird mächtiger."
+    },
+    {
+      "type": "paragraph",
+      "text": "Göttlicher Schlag. Der zusätzliche Schaden deines Göttlichen Schlags erhöht sich auf 2W8."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kraftvolle Zauberei. Wenn du einen Kleriker-Cantrip wirkst und damit einer Kreatur Schaden zufügst, kannst du dir selbst oder einer anderen Kreatur im Umkreis von 60 Fuß um dich selbst Vitalität verleihen und eine Anzahl temporärer Trefferpunkte gewähren, die dem Doppelten deines Weisheitsmodifikators entspricht."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 19: Epischer Segen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Segen des Schicksals wird empfohlen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 20: Größere göttliche Intervention"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können ein noch stärkeres göttliches Eingreifen in Anspruch nehmen. Wenn Sie die Funktion „Göttliche Intervention“ verwenden, können Sie bei der Auswahl eines Zaubers „Wünschen“ wählen. Wenn du dies tust, kannst du „Göttliche Intervention“ erst wieder verwenden, wenn du 2W4 Lange Rasts abgeschlossen hast."
+    }
+  ],
+  "text": "Kleriker beziehen Macht aus den Reichen der Götter und nutzen sie, um Wunder zu wirken. Gesegnet von einer Gottheit, einem Pantheon oder einem anderen unsterblichen Wesen, kann ein Kleriker die göttliche Magie der Äußeren Ebenen – wo Götter wohnen – nutzen und sie nutzen, um Menschen zu stärken und Feinde zu bekämpfen.\n\nDa ihre Macht eine göttliche Gabe ist, verbinden sich Kleriker normalerweise mit Tempeln, die der Gottheit oder einer anderen unsterblichen Kraft gewidmet sind, die ihre Magie freigesetzt hat. Die Nutzung göttlicher Magie erfordert keine spezielle Ausbildung, dennoch können Kleriker Gebete und Riten erlernen, die ihnen helfen, die Macht der Äußeren Ebenen zu nutzen.\n\nNicht jedes Mitglied eines Tempels oder Schreins ist ein Kleriker. Einige Priester sind zu einem einfachen Leben im Tempeldienst berufen und üben ihre Hingabe durch Gebete und Rituale aus, nicht durch Magie. Viele Sterbliche behaupten, für die Götter zu sprechen, aber nur wenige können die Macht dieser Götter so bündeln wie ein Kleriker.\n\nKerneigenschaften des Klerikers Primärfähigkeit Weisheit Trefferpunkt Würfel W8 pro Klerikerstufe Rettungswurf-Fertigkeiten Weisheit und Charisma-Fertigkeitskompetenzen Wählen Sie 2: Geschichte, Einsicht, Medizin, Überzeugung oder Religion Waffenkompetenzen Einfache Waffen Rüstungstraining Leichte und mittlere Rüstungen und Schilde Startausrüstung Wählen Sie A oder B: (A) Kettenhemd, Schild, Streitkolben, Heiliges Symbol, Priesterpaket und 7 GP; oder (B) 110 GP\n\nKleriker werden …\n\nAls Charakter der Stufe 1\n\nErhalte alle Eigenschaften in der Tabelle „Kleriker-Kernmerkmale“. Erhalten Sie die Level-1-Funktionen des Klerikers, die in der Tabelle „Kleriker-Talente“ aufgeführt sind.\n\nAls Multiklassen-Charakter\n\nErhalten Sie die folgenden Eigenschaften aus der Tabelle „Kleriker-Kernmerkmale“: Trefferpunktwürfel und Training mit leichter und mittlerer Rüstung und Schilden. Erhalten Sie die Level-1-Funktionen des Klerikers, die in der Tabelle „Kleriker-Talente“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen.\n\nTalente der Klerikerklasse\n\nKlerikertalente (Teil A)\n\nStufe Uebungsbonus Talente 1 +2 Zauber, Göttlicher Befehl 2 +2 Göttlichkeit kanalisieren 3 +2 Kleriker-Unterklasse 4 +2 Fähigkeitswert-Verbesserung 5 +3 Untote verbrennen 6 +3 Unterklassen-Talent 7 +3 Gesegnete Schläge 8 +3 Fähigkeitswert-Verbesserung 9 +4 - 10 +4 Göttliches Eingreifen 11 +4 - 12 +4 Fähigkeitswert-Verbesserung 13 +5 - 14 +5 Verbesserte gesegnete Schläge 15 +5 – 16 +5 Verbesserung des Fähigkeitswerts 17 +6 Unterklassentalent 18 +6 – 19 +6 Epischer Segen 20 +6 Größere göttliche Intervention\n\nKlerikertalente (Teil B)\n\nLevel Kanal Göttlichkeit Zaubertricks Vorbereitete Zauber 1. 2. 3. 4. 5. 6. 7. 8. 9. 1 - 3 4 2 - - - - - - - - 2 2 3 5 3 - - - - - - - - 3 2 3 6 4 2 - - - - - - - 4 2 4 7 4 3 - - - - - - - 5 2 4 9 4 3 2 - - - - - - 6 3 4 10 4 3 3 - - - - - - 7 3 4 11 4 3 3 1 - - - - - 8 3 4 12 4 3 3 2 - - - - - 9 3 4 14 4 3 3 3 1 - - - - 10 3 5 15 4 3 3 3 2 - - - - 11 3 5 16 4 3 3 3 2 1 - - - 12 3 5 16 4 3 3 3 2 1 - - - 13 3 5 17 4 3 3 3 2 1 1 - - 14 3 5 17 4 3 3 3 2 1 1 - - 15 3 5 18 4 3 3 3 2 1 1 1 - 16 3 5 18 4 3 3 3 2 1 1 1 - 17 3 5 19 4 3 3 3 2 1 1 1 1 18 4 5 20 4 3 3 3 3 1 1 1 1 19 4 5 21 4 3 3 3 3 2 1 1 1 20 4 5 22 4 3 3 3 3 2 2 1 1\n\nAls Kleriker erhalten Sie die folgenden Klassenmerkmale, wenn Sie die angegebenen Klerikerstufen erreichen. Diese Eigenschaften sind in der Tabelle „Kleriker-Talente“ aufgeführt.\n\nStufe 1: Zaubern\n\nSie haben gelernt, durch Gebet und Meditation Zauber zu wirken. Die Regeln zum Zaubern finden Sie in Kapitel 7. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln mit Kleriker-Zaubersprüchen anwenden, die später in der Klassenbeschreibung in der Liste der Kleriker-Zauber aufgeführt werden.\n\nZaubertricks. Du kennst drei Cantrips deiner Wahl aus der Zauberliste „Kleriker“. Führung, Heilige Flamme und Thaumaturgie werden empfohlen.\n\nImmer wenn Sie eine Klerikerstufe erreichen, können Sie einen Ihrer Cantrips durch einen anderen Cantrip Ihrer Wahl aus der Liste der Klerikerzauber ersetzen.\n\nWenn Sie die Kleriker-Stufen 4 und 10 erreichen, lernen Sie einen weiteren Cantrip Ihrer Wahl aus der Kleriker-Zauberliste, wie in der Spalte „Zaubertricks“ der Tabelle „Kleriker-Talente“ aufgeführt.\n\nZauberplatz. Die Tabelle „Kleriker-Talente“ zeigt, wie viele Zauberslots Ihnen zum Wirken Ihrer Zauber der Stufe 1+ zur Verfügung stehen. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt.\n\nVorbereitete Zauber der Stufe 1+. Sie bereiten die Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst vier Zaubersprüche der Stufe 1 aus der Liste der Klerikerzauber aus. Empfohlen werden „Segnen“, „Wunden heilen“, „Führungsbolzen“ und „Schild des Glaubens“.\n\nDie Anzahl der Zaubersprüche auf Ihrer Liste erhöht sich mit zunehmender Klerikerstufe, wie in der Spalte „Vorbereitete Zaubersprüche“ der Tabelle „Klerikertalente“ angezeigt. Sobald sich diese Zahl erhöht, wähle weitere Zauber aus der Kleriker-Zauberliste, bis die Anzahl der Zauber auf deiner Liste mit der Zahl auf der Tabelle übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Kleriker der Stufe 3 sind, kann Ihre Liste der vorbereiteten Zauber sechs Zauber der Stufen 1 und 2 in beliebiger Kombination enthalten.\n\nWenn eine andere Kleriker-Funktion dir Zauber verleiht, die du schon immer vorbereitet hast, zählen diese Zauber nicht zu der Anzahl der Zauber, die du mit dieser Funktion vorbereiten kannst. Ansonsten zählen diese Zauber für dich jedoch als Kleriker-Zauber.\n\nÄndern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie Lange Rast abgeschlossen haben, können Sie Ihre Liste der vorbereiteten Zaubersprüche ändern und jeden der dortigen Zaubersprüche durch andere Klerikerzauber ersetzen, für die Sie Zauberplätze haben.\n\nZauberfähigkeit. Weisheit ist Ihre Zauberfähigkeit für Ihre Klerikerzauber.\n\nZauberfokus. Sie können ein Heiliges Symbol als Zauberfokus für Ihre Klerikerzauber verwenden.\n\nStufe 1: Göttliche Ordnung\n\nSie haben sich einer der folgenden heiligen Rollen Ihrer Wahl verschrieben.\n\nSchutz. Wenn Sie für den Kampf ausgebildet sind, erwerben Sie Kenntnisse im Umgang mit Kampfwaffen und trainieren mit schwerer Rüstung.\n\nThaumaturg. Sie kennen einen zusätzlichen Cantrip aus der Zauberliste des Klerikers. Darüber hinaus gibt Ihnen Ihre mystische Verbindung zum Göttlichen einen Bonus auf Ihre Intelligenzprüfungen (Arkane oder Religion). Der Bonus entspricht Ihrem Weisheitsmodifikator (mindestens +1).\n\nLevel 2: Göttlichkeit kanalisieren\n\nSie können göttliche Energie direkt von den Äußeren Ebenen kanalisieren, um magische Effekte zu erzielen. Sie beginnen mit zwei solchen Effekten: „Göttlicher Funke“ und „Untote verwandeln“, die jeweils im Folgenden beschrieben werden. Jedes Mal, wenn Sie Channel Divinity dieser Klasse verwenden, wählen Sie aus, welchen Channel Divinity-Effekt dieser Klasse Sie erstellen möchten. Mit höheren Klerikerstufen erhältst du zusätzliche Effektoptionen.\n\nSie können die Channel Divinity dieser Klasse zweimal verwenden. Du erhältst eine seiner verbrauchten Nutzungen zurück, wenn du eine Kurze Rast abschließt, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast abschließt. Sie erhalten zusätzliche Verwendungsmöglichkeiten, wenn Sie bestimmte Klerikerstufen erreichen, wie in der Spalte „Göttlichkeit kanalisieren“ der Tabelle „Klerikertalente“ angezeigt.\n\nWenn ein Channel Divinity-Effekt einen Rettungswurf erfordert, entspricht der SG dem SG des Zauberwurfs aus der Zauberfunktion dieser Klasse.\n\nGöttlicher Funke. Als magische Aktion richten Sie Ihr Heiliges Symbol auf eine andere Kreatur, die Sie im Umkreis von 30 Fuß um sich herum sehen können, und richten göttliche Energie auf sie. Wirf 1W8 und füge deinen Weisheitsmodifikator hinzu. Du stellst der Kreatur entweder Trefferpunkte in Höhe dieser Summe wieder her oder zwingst die Kreatur zu einem Konstitutions-Rettungswurf. Bei einem fehlgeschlagenen Rettungswurf erleidet die Kreatur nekrotischen oder strahlenden Schaden (nach Wahl) in Höhe dieser Summe. Bei einem erfolgreichen Rettungswurf erleidet die Kreatur halb so viel Schaden (abgerundet).\n\nSie würfeln einen zusätzlichen W8, wenn Sie die Klerikerstufen 7 (2W8), 13 (3W8) und 18 (4W8) erreichen.\n\nVerwandle Untote. Als magische Aktion präsentierst du dein Heiliges Symbol und tadelst untote Kreaturen. Jeder Untote Ihrer Wahl im Umkreis von 30 Fuß um Sie muss einen Weisheits-Rettungswurf ausführen. Wenn der Rettungswurf der Kreatur fehlschlägt, hat sie 1 Minute lang die Zustände „Verängstigt“ und „Kampfunfähig“. Während dieser Dauer versucht es in seinen Zügen, sich so weit wie möglich von dir zu entfernen. Dieser Effekt endet vorzeitig für die Kreatur, wenn sie Schaden erleidet, wenn Sie über den Zustand „Kampfunfähig“ verfügen oder wenn Sie sterben.\n\nLevel 3: Kleriker-Unterklasse\n\nDu erhältst eine Kleriker-Unterklasse deiner Wahl. Die Unterklassen „Life Domain“, „Light Domain“, „Trickery Domain“ und „War Domain“ werden nach der Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Klerikerstufen Funktionen verleiht. Für den Rest Ihrer Karriere erhalten Sie alle Merkmale Ihrer Unterklasse, die Ihrer Klerikerstufe oder niedriger entsprechen.\n\nKleriker-Unterklassen\n\nName Wissensdomäne Lebensdomäne Lichtdomäne Trickereidomäne Kriegsdomäne\n\nStufe 4: Verbesserung der Fähigkeitsbewertung\n\nDu erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Klerikerstufen 8, 12 und 16.\n\nLevel 5: Untote verbrennen\n\nWann immer Sie „Untote verwandeln“ verwenden, können Sie eine Anzahl von W8 in Höhe Ihres Weisheitsmodifikators (mindestens 1W8) würfeln und die Würfe addieren. Jeder Untote, dessen Rettungswurf gegen diese Anwendung von „Untote verwandeln“ fehlschlägt, erleidet Strahlungsschaden in Höhe der Gesamtsumme des Wurfs. Dieser Schaden beendet den Zugeffekt nicht.\n\nLevel 7: Gesegnete Schläge\n\nGöttliche Macht erfüllt dich im Kampf. Sie erhalten eine der folgenden Optionen Ihrer Wahl (wenn Sie eine der Optionen einer Kleriker-Unterklasse in einem älteren Buch erhalten, verwenden Sie nur die Option, die Sie für diese Funktion ausgewählt haben).\n\nGöttlicher Schlag. Einmal in jedem deiner Züge, wenn du eine Kreatur mit einem Angriffswurf mit einer Waffe triffst, kannst du dafür sorgen, dass das Ziel zusätzlich 1W8 nekrotischen oder strahlenden Schaden (nach deiner Wahl) erleidet.\n\nKraftvolle Zauberei. Addiere deinen Weisheitsmodifikator zum Schaden, den du mit einem Kleriker-Cantrip verursachst.\n\nStufe 10: Göttliches Eingreifen\n\nSie können Ihre Gottheit oder Ihr Pantheon anrufen, um in Ihrem Namen einzugreifen. Wählen Sie als magische Aktion einen beliebigen Klerikerzauber der Stufe 5 oder niedriger, für dessen Wirkung keine Reaktion erforderlich ist. Als Teil derselben Aktion wirkst du diesen Zauber, ohne einen Zauberslot zu verbrauchen oder Materialkomponenten zu benötigen. Sie können diese Funktion erst wieder verwenden, wenn Sie eine Lange Rast beendet haben.\n\nStufe 14: Verbesserte gesegnete Schläge\n\nDie Option, die Sie für „Blessed Strikes“ gewählt haben, wird mächtiger.\n\nGöttlicher Schlag. Der zusätzliche Schaden deines Göttlichen Schlags erhöht sich auf 2W8.\n\nKraftvolle Zauberei. Wenn du einen Kleriker-Cantrip wirkst und damit einer Kreatur Schaden zufügst, kannst du dir selbst oder einer anderen Kreatur im Umkreis von 60 Fuß um dich selbst Vitalität verleihen und eine Anzahl temporärer Trefferpunkte gewähren, die dem Doppelten deines Weisheitsmodifikators entspricht.\n\nLevel 19: Epischer Segen\n\nDu erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Segen des Schicksals wird empfohlen.\n\nStufe 20: Größere göttliche Intervention\n\nSie können ein noch stärkeres göttliches Eingreifen in Anspruch nehmen. Wenn Sie die Funktion „Göttliche Intervention“ verwenden, können Sie bei der Auswahl eines Zaubers „Wünschen“ wählen. Wenn du dies tust, kannst du „Göttliche Intervention“ erst wieder verwenden, wenn du 2W4 Lange Rasts abgeschlossen hast.",
+  "tags": [],
+  "hit_die": null,
+  "primary_abilities": [],
+  "proficiencies": {
+    "saving_throws": [],
+    "armor": [],
+    "weapons": [],
+    "tools": []
+  },
+  "skill_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "spellcasting": {
+    "ability": "wis",
+    "progression": "full",
+    "preparation_formula": null,
+    "known_formula": null,
+    "focus_types": [
+      "Sie können ein Heiliges Symbol als Zauberfokus für Ihre Klerikerzauber verwenden"
+    ],
+    "spell_list_names": [
+      "Kleriker",
+      "Cleric"
+    ],
+    "uses_spell_slots": true
+  },
+  "starting_equipment": {
+    "fixed": [],
+    "choices": []
+  },
+  "multiclass_requirements": {
+    "minimum_abilities": {}
+  },
+  "levels": [
+    {
+      "level": 1,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Zauberei",
+        "Göttliche Ordnung"
+      ],
+      "cantrips_known": 3,
+      "prepared_spells": 4,
+      "spell_slots": {
+        "1": 2
+      }
+    },
+    {
+      "level": 2,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Kanal-Göttlichkeit"
+      ],
+      "kanal-goettlichkeit": "2",
+      "cantrips_known": 3,
+      "prepared_spells": 5,
+      "spell_slots": {
+        "1": 3
+      }
+    },
+    {
+      "level": 3,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Kleriker-Unterklasse"
+      ],
+      "kanal-goettlichkeit": "2",
+      "cantrips_known": 3,
+      "prepared_spells": 6,
+      "spell_slots": {
+        "1": 4,
+        "2": 2
+      }
+    },
+    {
+      "level": 4,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "kanal-goettlichkeit": "2",
+      "cantrips_known": 4,
+      "prepared_spells": 7,
+      "spell_slots": {
+        "1": 4,
+        "2": 3
+      }
+    },
+    {
+      "level": 5,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Untote verbrennen"
+      ],
+      "kanal-goettlichkeit": "2",
+      "cantrips_known": 4,
+      "prepared_spells": 9,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 2
+      }
+    },
+    {
+      "level": 6,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "kanal-goettlichkeit": "3",
+      "cantrips_known": 4,
+      "prepared_spells": 10,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3
+      }
+    },
+    {
+      "level": 7,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Gesegnete Schläge"
+      ],
+      "kanal-goettlichkeit": "3",
+      "cantrips_known": 4,
+      "prepared_spells": 11,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1
+      }
+    },
+    {
+      "level": 8,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "kanal-goettlichkeit": "3",
+      "cantrips_known": 4,
+      "prepared_spells": 12,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2
+      }
+    },
+    {
+      "level": 9,
+      "proficiency_bonus": "+4",
+      "kanal-goettlichkeit": "3",
+      "cantrips_known": 4,
+      "prepared_spells": 14,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1
+      }
+    },
+    {
+      "level": 10,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Göttliches Eingreifen"
+      ],
+      "kanal-goettlichkeit": "3",
+      "cantrips_known": 5,
+      "prepared_spells": 15,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2
+      }
+    },
+    {
+      "level": 11,
+      "proficiency_bonus": "+4",
+      "kanal-goettlichkeit": "3",
+      "cantrips_known": 5,
+      "prepared_spells": 16,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      }
+    },
+    {
+      "level": 12,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "kanal-goettlichkeit": "3",
+      "cantrips_known": 5,
+      "prepared_spells": 16,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      }
+    },
+    {
+      "level": 13,
+      "proficiency_bonus": "+5",
+      "kanal-goettlichkeit": "3",
+      "cantrips_known": 5,
+      "prepared_spells": 17,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      }
+    },
+    {
+      "level": 14,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Verbesserte gesegnete Schläge"
+      ],
+      "kanal-goettlichkeit": "3",
+      "cantrips_known": 5,
+      "prepared_spells": 17,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      }
+    },
+    {
+      "level": 15,
+      "proficiency_bonus": "+5",
+      "kanal-goettlichkeit": "3",
+      "cantrips_known": 5,
+      "prepared_spells": 18,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      }
+    },
+    {
+      "level": 16,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "kanal-goettlichkeit": "3",
+      "cantrips_known": 5,
+      "prepared_spells": 18,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      }
+    },
+    {
+      "level": 17,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "kanal-goettlichkeit": "3",
+      "cantrips_known": 5,
+      "prepared_spells": 19,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 18,
+      "proficiency_bonus": "+6",
+      "kanal-goettlichkeit": "4",
+      "cantrips_known": 5,
+      "prepared_spells": 20,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 19,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Epischer Segen"
+      ],
+      "kanal-goettlichkeit": "4",
+      "cantrips_known": 5,
+      "prepared_spells": 21,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 20,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Größere göttliche Intervention"
+      ],
+      "kanal-goettlichkeit": "4",
+      "cantrips_known": 5,
+      "prepared_spells": 22,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 1
+      }
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Wissensbereich",
+      "original_name": "Knowledge Domain",
+      "id": "wissensbereich",
+      "source_url": "http://dnd2024.wikidot.com/cleric:knowledge-domain",
+      "file": "subclasses/wissensbereich.json"
+    },
+    {
+      "name": "Lebensbereich",
+      "original_name": "Life Domain",
+      "id": "lebensbereich",
+      "source_url": "http://dnd2024.wikidot.com/cleric:life-domain",
+      "file": "subclasses/lebensbereich.json"
+    },
+    {
+      "name": "Lichtdomäne",
+      "original_name": "Light Domain",
+      "id": "lichtdomane",
+      "source_url": "http://dnd2024.wikidot.com/cleric:light-domain",
+      "file": "subclasses/lichtdomane.json"
+    },
+    {
+      "name": "Trickery-Domäne",
+      "original_name": "Trickery Domain",
+      "id": "trickery-domane",
+      "source_url": "http://dnd2024.wikidot.com/cleric:trickery-domain",
+      "file": "subclasses/trickery-domane.json"
+    },
+    {
+      "name": "Kriegsdomäne",
+      "original_name": "War Domain",
+      "id": "kriegsdomane",
+      "source_url": "http://dnd2024.wikidot.com/cleric:war-domain",
+      "file": "subclasses/kriegsdomane.json"
+    }
+  ],
+  "subclass_index": [
+    "kriegsdomane.json",
+    "lebensbereich.json",
+    "lichtdomane.json",
+    "trickery-domane.json",
+    "wissensbereich.json"
+  ]
+}

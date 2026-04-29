@@ -1,0 +1,152 @@
+{
+  "id": "aberrante-zauberei",
+  "type": "subclass",
+  "name": "Aberrante Zauberei",
+  "original_name": "Aberrant Sorcery",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/sorcerer:aberrant-sorcery",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Nutze unnatürliche psionische Kräfte",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Nutze unnatürliche psionische Kräfte"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ein außerirdischer Einfluss hat seine Ranken um deinen Geist geschlungen und dir psionische Kräfte verliehen. Sie können jetzt mit dieser Kraft andere Köpfe berühren und die Welt um Sie herum verändern. Wird diese Kraft von Ihnen als hoffnungsvolles Leuchtfeuer für andere ausgehen? Oder wirst du ein Schrecken für diejenigen sein, die den Stich deines Geistes spüren?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Vielleicht trug ein psychischer Wind aus der Astralebene psionische Energie zu Ihnen, oder Sie waren dem verzerrenden Einfluss des Fernen Reichs ausgesetzt. Alternativ wurde Ihnen eine Gedankenschinder-Kaulquappe implantiert, aber Ihre Verwandlung in einen Geistesschinder fand nie statt; Jetzt gehört die psionische Kraft der Kaulquappe Ihnen. Wie auch immer Sie diese Kraft erlangt haben, Ihr Geist brennt davon."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Psionische Zauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine in der Tabelle „Psi-Zauber“ angegebene Zaubererstufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Psionische Zauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Zauberer-Level",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Arme von Hadar, Ruhige Gefühle, Gedanken erkennen, Dissonantes Flüstern, Gedankensplitter"
+        ],
+        [
+          "5",
+          "Hunger von Hadar, Senden"
+        ],
+        [
+          "7",
+          "Evards schwarze Tentakel, Aberration beschwören"
+        ],
+        [
+          "9",
+          "Rarys telepathische Bindung, Telekinese"
+        ]
+      ],
+      "text": "Zauber auf Zauberstufe: 3 Arme von Hadar, Ruhige Gefühle, Gedanken erkennen, Dissonantes Flüstern, Gedankensplitter, 5 Hunger von Hadar, Senden, 7 Evards schwarze Tentakel, Beschwörungsverirrung, 9 Rarys telepathischer Bund, Telekinese"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Telepathische Sprache"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können eine telepathische Verbindung zwischen Ihrem Geist und dem Geist eines anderen herstellen. Wählen Sie als Bonusaktion eine Kreatur aus, die Sie in einem Umkreis von 30 Fuß um sich selbst sehen können. Sie und die ausgewählte Kreatur können telepathisch miteinander kommunizieren, während Sie beide sich innerhalb einer Anzahl von Meilen voneinander befinden, die Ihrem Charisma-Modifikator entspricht (mindestens 1 Meile). Um einander zu verstehen, muss jeder im Geiste eine Sprache verwenden, die der andere kennt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die telepathische Verbindung dauert einige Minuten, die Ihrer Zaubererstufe entsprechen. Es endet vorzeitig, wenn Sie diese Fähigkeit nutzen, um eine Verbindung mit einer anderen Kreatur herzustellen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Psionische Zauberei"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie einen Zauber der Stufe 1+ aus Ihrer Funktion „Psi-Zauber“ wirken, können Sie ihn wirken, indem Sie wie gewohnt einen Zauberplatz aufwenden oder indem Sie eine Anzahl an Zauberpunkten ausgeben, die der Stufe des Zaubers entspricht. Wenn Sie den Zauber mit Zauberpunkten wirken, sind keine verbalen oder somatischen Komponenten erforderlich, und es sind keine materiellen Komponenten erforderlich, es sei denn, sie werden vom Zauber verbraucht oder es sind darin Kosten angegeben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Psychische Abwehr"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast Resistenz gegen psychischen Schaden und einen Vorteil bei Rettungswürfen, um den Zustand „Verzaubert“ oder „Verängstigt“ zu vermeiden oder zu beenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 14: Offenbarung im Fleisch"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können die abweichende Wahrheit, die in Ihnen verborgen ist, freisetzen. Als Bonusaktion können Sie 1 Zauberpunkt oder mehr ausgeben, um Ihren Körper 10 Minuten lang auf magische Weise zu verändern. Für jeden von Ihnen ausgegebenen Zauberpunkt erhalten Sie einen der folgenden Vorteile Ihrer Wahl, dessen Wirkung bis zum Ende der Änderung anhält."
+    },
+    {
+      "type": "paragraph",
+      "text": "Aquatische Anpassung. Du erhältst eine Schwimmgeschwindigkeit, die dem Doppelten deiner Geschwindigkeit entspricht, und du kannst unter Wasser atmen. Kiemen wachsen aus Ihrem Hals oder ragen hinter Ihren Ohren hervor, und an Ihren Fingern bilden sich Schwimmhäute oder Ihnen wachsen zappelnde Flimmerhärchen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Glitzernder Flug. Du erhältst eine Fluggeschwindigkeit in Höhe deiner Geschwindigkeit und kannst schweben. Während Sie fliegen, glitzert Ihre Haut vor Schleim oder jenseitigem Licht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sehen Sie das Unsichtbare. Sie können jede unsichtbare Kreatur im Umkreis von 60 Fuß um sich herum sehen, die sich nicht hinter Total Cover befindet. Auch Ihre Augen werden schwarz oder werden zu sich windenden Sinnesranken."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wurmartige Bewegung. Ihr Körper und alle Geräte, die Sie tragen oder tragen, werden schleimig und geschmeidig. Sie können sich durch jeden Raum bewegen, der nur 1 Zoll schmal ist, und Sie können 5 Fuß Bewegung aufwenden, um nichtmagischen Beschränkungen oder dem Zustand „Grappled“ zu entkommen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 18: Warping Implosion"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können eine raumverzerrende Anomalie auslösen. Als magische Aktion teleportierst du dich zu einem freien Raum, den du im Umkreis von 120 Fuß um dich herum sehen kannst. Unmittelbar nach deinem Verschwinden muss jede Kreatur im Umkreis von 30 Fuß um den Raum, den du verlassen hast, einen Stärke-Rettungswurf gegen deinen Zauberwurf-SG ausführen. Bei einem fehlgeschlagenen Rettungswurf erleidet eine Kreatur 3W10 Machtschaden und wird direkt zu dem Feld gezogen, das Sie verlassen haben, und landet auf einem unbesetzten Feld, das so nah wie möglich an Ihrem vorherigen Feld liegt. Bei einem erfolgreichen Rettungswurf erleidet die Kreatur nur halb so viel Schaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie geben 5 Zauberpunkte aus (keine Aktion erforderlich), um sie wieder nutzen zu können."
+    }
+  ],
+  "text": "Nutze unnatürliche psionische Kräfte\n\nEin außerirdischer Einfluss hat seine Ranken um deinen Geist geschlungen und dir psionische Kräfte verliehen. Sie können jetzt mit dieser Kraft andere Köpfe berühren und die Welt um Sie herum verändern. Wird diese Kraft von Ihnen als hoffnungsvolles Leuchtfeuer für andere ausgehen? Oder wirst du ein Schrecken für diejenigen sein, die den Stich deines Geistes spüren?\n\nVielleicht trug ein psychischer Wind aus der Astralebene psionische Energie zu Ihnen, oder Sie waren dem verzerrenden Einfluss des Fernen Reichs ausgesetzt. Alternativ wurde Ihnen eine Gedankenschinder-Kaulquappe implantiert, aber Ihre Verwandlung in einen Geistesschinder fand nie statt; Jetzt gehört die psionische Kraft der Kaulquappe Ihnen. Wie auch immer Sie diese Kraft erlangt haben, Ihr Geist brennt davon.\n\nLevel 3: Psionische Zauber\n\nWenn Sie eine in der Tabelle „Psi-Zauber“ angegebene Zaubererstufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nPsionische Zauber\n\nZauber auf Zauberstufe: 3 Arme von Hadar, Ruhige Gefühle, Gedanken erkennen, Dissonantes Flüstern, Gedankensplitter, 5 Hunger von Hadar, Senden, 7 Evards schwarze Tentakel, Beschwörungsverirrung, 9 Rarys telepathischer Bund, Telekinese\n\nStufe 3: Telepathische Sprache\n\nSie können eine telepathische Verbindung zwischen Ihrem Geist und dem Geist eines anderen herstellen. Wählen Sie als Bonusaktion eine Kreatur aus, die Sie in einem Umkreis von 30 Fuß um sich selbst sehen können. Sie und die ausgewählte Kreatur können telepathisch miteinander kommunizieren, während Sie beide sich innerhalb einer Anzahl von Meilen voneinander befinden, die Ihrem Charisma-Modifikator entspricht (mindestens 1 Meile). Um einander zu verstehen, muss jeder im Geiste eine Sprache verwenden, die der andere kennt.\n\nDie telepathische Verbindung dauert einige Minuten, die Ihrer Zaubererstufe entsprechen. Es endet vorzeitig, wenn Sie diese Fähigkeit nutzen, um eine Verbindung mit einer anderen Kreatur herzustellen.\n\nLevel 6: Psionische Zauberei\n\nWenn Sie einen Zauber der Stufe 1+ aus Ihrer Funktion „Psi-Zauber“ wirken, können Sie ihn wirken, indem Sie wie gewohnt einen Zauberplatz aufwenden oder indem Sie eine Anzahl an Zauberpunkten ausgeben, die der Stufe des Zaubers entspricht. Wenn Sie den Zauber mit Zauberpunkten wirken, sind keine verbalen oder somatischen Komponenten erforderlich, und es sind keine materiellen Komponenten erforderlich, es sei denn, sie werden vom Zauber verbraucht oder es sind darin Kosten angegeben.\n\nLevel 6: Psychische Abwehr\n\nDu hast Resistenz gegen psychischen Schaden und einen Vorteil bei Rettungswürfen, um den Zustand „Verzaubert“ oder „Verängstigt“ zu vermeiden oder zu beenden.\n\nStufe 14: Offenbarung im Fleisch\n\nSie können die abweichende Wahrheit, die in Ihnen verborgen ist, freisetzen. Als Bonusaktion können Sie 1 Zauberpunkt oder mehr ausgeben, um Ihren Körper 10 Minuten lang auf magische Weise zu verändern. Für jeden von Ihnen ausgegebenen Zauberpunkt erhalten Sie einen der folgenden Vorteile Ihrer Wahl, dessen Wirkung bis zum Ende der Änderung anhält.\n\nAquatische Anpassung. Du erhältst eine Schwimmgeschwindigkeit, die dem Doppelten deiner Geschwindigkeit entspricht, und du kannst unter Wasser atmen. Kiemen wachsen aus Ihrem Hals oder ragen hinter Ihren Ohren hervor, und an Ihren Fingern bilden sich Schwimmhäute oder Ihnen wachsen zappelnde Flimmerhärchen.\n\nGlitzernder Flug. Du erhältst eine Fluggeschwindigkeit in Höhe deiner Geschwindigkeit und kannst schweben. Während Sie fliegen, glitzert Ihre Haut vor Schleim oder jenseitigem Licht.\n\nSehen Sie das Unsichtbare. Sie können jede unsichtbare Kreatur im Umkreis von 60 Fuß um sich herum sehen, die sich nicht hinter Total Cover befindet. Auch Ihre Augen werden schwarz oder werden zu sich windenden Sinnesranken.\n\nWurmartige Bewegung. Ihr Körper und alle Geräte, die Sie tragen oder tragen, werden schleimig und geschmeidig. Sie können sich durch jeden Raum bewegen, der nur 1 Zoll schmal ist, und Sie können 5 Fuß Bewegung aufwenden, um nichtmagischen Beschränkungen oder dem Zustand „Grappled“ zu entkommen.\n\nLevel 18: Warping Implosion\n\nSie können eine raumverzerrende Anomalie auslösen. Als magische Aktion teleportierst du dich zu einem freien Raum, den du im Umkreis von 120 Fuß um dich herum sehen kannst. Unmittelbar nach deinem Verschwinden muss jede Kreatur im Umkreis von 30 Fuß um den Raum, den du verlassen hast, einen Stärke-Rettungswurf gegen deinen Zauberwurf-SG ausführen. Bei einem fehlgeschlagenen Rettungswurf erleidet eine Kreatur 3W10 Machtschaden und wird direkt zu dem Feld gezogen, das Sie verlassen haben, und landet auf einem unbesetzten Feld, das so nah wie möglich an Ihrem vorherigen Feld liegt. Bei einem erfolgreichen Rettungswurf erleidet die Kreatur nur halb so viel Schaden.\n\nSobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie geben 5 Zauberpunkte aus (keine Aktion erforderlich), um sie wieder nutzen zu können.",
+  "tags": [],
+  "class": "Zauberer",
+  "class_id": "zauberer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

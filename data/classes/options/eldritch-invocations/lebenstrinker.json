@@ -1,0 +1,29 @@
+{
+  "id": "lebenstrinker",
+  "name": "Lebenstrinker",
+  "original_name": "Lifedrinker",
+  "kind": "eldritch_invocation",
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:eldritch-invocation",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "",
+  "cost_original": "",
+  "prerequisite": "Level 9+ Hexenmeister, Anrufung des Pakts der Klinge",
+  "prerequisite_original": "Level 9+ Warlock, Pact of the Blade Invocation",
+  "summary": "Einmal pro Spielzug, wenn du eine Kreatur mit deiner Paktwaffe triffst, kannst du der Kreatur zusätzlich 1W6 nekrotischen, psychischen oder strahlenden Schaden (nach deiner Wahl) zufügen, und du kannst einen deiner Trefferpunktwürfel ausgeben, um ihn zu würfeln und eine Anzahl an Trefferpunkten zurückzugewinnen, die dem Wurf plus deinem Konstitutionsmodifikator entspricht (mindestens 1 Trefferpunkt).",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Once per turn when you hit a creature with your pact weapon, you can deal an extra 1d6 Necrotic, Psychic, or Radiant damage (your choice) to the creature, and you can expend one of your Hit Point Dice to roll it and regain a number of Hit Points equal to the roll plus your Constitution modifier (minimum of 1 Hit Point).",
+      "text_de": "Einmal pro Spielzug, wenn du eine Kreatur mit deiner Paktwaffe triffst, kannst du der Kreatur zusätzlich 1W6 nekrotischen, psychischen oder strahlenden Schaden (nach deiner Wahl) zufügen, und du kannst einen deiner Trefferpunktwürfel ausgeben, um ihn zu würfeln und eine Anzahl an Trefferpunkten zurückzugewinnen, die dem Wurf plus deinem Konstitutionsmodifikator entspricht (mindestens 1 Trefferpunkt)."
+    }
+  ]
+}

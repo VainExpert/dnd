@@ -1,0 +1,57 @@
+{
+  "id": "segen-des-wutenden-sturms",
+  "type": "feat",
+  "name": "Segen des wütenden Sturms",
+  "original_name": "Boon of the Furious Storm",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-the-furious-storm",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Episches Segen-Talent (Voraussetzung: Level 19+, Zauber- oder Paktmagie-Talent)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Episches Segen-Talent (Voraussetzung: Level 19+, Zauber- oder Paktmagie-Talent)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Auge des Sturms. Du hast Resistenz gegen Blitz- und Donnerschaden. Während du blutig bist, bist du immun gegen Blitz- und Donnerschaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sturmstärke. Kreaturen haben bei Rettungswürfen einen Nachteil gegenüber deinen Zaubern, die Blitz- oder Donnerschaden verursachen."
+    }
+  ],
+  "text": "Episches Segen-Talent (Voraussetzung: Level 19+, Zauber- oder Paktmagie-Talent)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 30.\n\nAuge des Sturms. Du hast Resistenz gegen Blitz- und Donnerschaden. Während du blutig bist, bist du immun gegen Blitz- und Donnerschaden.\n\nSturmstärke. Kreaturen haben bei Rettungswürfen einen Nachteil gegenüber deinen Zaubern, die Blitz- oder Donnerschaden verursachen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

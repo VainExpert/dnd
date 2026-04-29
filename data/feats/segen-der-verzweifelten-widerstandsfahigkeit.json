@@ -1,0 +1,52 @@
+{
+  "id": "segen-der-verzweifelten-widerstandsfahigkeit",
+  "type": "feat",
+  "name": "Segen der verzweifelten Widerstandsfähigkeit",
+  "original_name": "Boon of Desperate Resilience",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-desperate-resilience",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Episches Segen-Talent (Voraussetzung: Level 19+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Episches Segen-Talent (Voraussetzung: Level 19+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Konstitutionswert um 1 auf maximal 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verteidigung von Körper und Geist. Während du blutig bist, hast du Resistenz gegen jede Schadensart außer Kraft."
+    }
+  ],
+  "text": "Episches Segen-Talent (Voraussetzung: Level 19+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Konstitutionswert um 1 auf maximal 30.\n\nVerteidigung von Körper und Geist. Während du blutig bist, hast du Resistenz gegen jede Schadensart außer Kraft.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

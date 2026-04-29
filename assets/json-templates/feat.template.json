@@ -1,0 +1,28 @@
+{
+  "id": "<feat-id>",
+  "type": "feat",
+  "name": "<Feat Name>",
+  "original_name": "<Original Feat Name>",
+  "rules_version": "2024",
+  "source": "<source>",
+  "source_url": null,
+  "source_page": null,
+  "license": {
+    "name": "",
+    "spdx": "",
+    "url": ""
+  },
+  "translation_note": "",
+  "category": "",
+  "group": "",
+  "prerequisites": [],
+  "summary": "",
+  "entries": [],
+  "text": "",
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "tags": []
+}

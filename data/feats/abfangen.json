@@ -1,0 +1,44 @@
+{
+  "id": "abfangen",
+  "type": "feat",
+  "name": "Abfangen",
+  "original_name": "Interception",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:interception",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Kampfstil-Talente",
+  "group": "Kampfstil-Talente",
+  "prerequisites": [
+    "Talent im Kampfstil"
+  ],
+  "summary": "Voraussetzung: Talent im Kampfstil",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Talent im Kampfstil"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn eine Kreatur, die du sehen kannst, eine andere Kreatur im Umkreis von 5 Fuß um dich herum mit einem Angriffswurf trifft, kannst du eine Reaktion ausführen, um den dem Ziel zugefügten Schaden um 1W10 plus deinen Uebungsbonus zu reduzieren. Um diese Reaktion nutzen zu können, müssen Sie einen Schild oder eine einfache oder kriegerische Waffe tragen."
+    }
+  ],
+  "text": "Voraussetzung: Talent im Kampfstil\n\nWenn eine Kreatur, die du sehen kannst, eine andere Kreatur im Umkreis von 5 Fuß um dich herum mit einem Angriffswurf trifft, kannst du eine Reaktion ausführen, um den dem Ziel zugefügten Schaden um 1W10 plus deinen Uebungsbonus zu reduzieren. Um diese Reaktion nutzen zu können, müssen Sie einen Schild oder eine einfache oder kriegerische Waffe tragen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

@@ -6,6 +6,7 @@
   <title>Generatoren</title>
   <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
   <script src="../../theme.js?v=theme-20260422"></script>
+  <script src="../../nav.js" defer></script>
 
   <style>
     .tool-row{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
@@ -132,21 +133,20 @@
       <div class="title">Generatoren</div>
       <div class="subtitle">Zufallstabellen • Begegnungen • Loot</div>
     </div>
-    <div class="top-actions">
-      <a class="home-btn" href="../../index.html">← Startseite</a>
-    </div>
   </header>
 
-  <main class="main">
-    <div class="content" style="max-width:1100px;">
-      <h1>Zufallstabellen</h1>
-      <div class="tool-row">
-        <select id="table" class="select"></select>
-        <button id="roll" class="btn">Wuerfeln</button>
-      </div>
-      <div id="result" style="margin-top:12px;"></div>
+  <div class="layout">
+    <aside class="sidebar"></aside>
 
-      <h2 style="margin-top:26px;">Begegnungsbauer (D&amp;D 2024)</h2>
+    <main class="main">
+      <div class="content" style="max-width:1100px;">
+      <h1>Ersteller</h1>
+      <div class="tool-row" style="margin-bottom:18px;">
+        <a class="btn" href="./character-builder.html">Charakter erstellen</a>
+        <a class="btn" href="./creature-builder.html">NSC/Monster erstellen</a>
+      </div>
+
+      <h1>Begegnungsbauer (D&amp;D 2024)</h1>
       <div class="encounter-builder">
         <div class="mini-box">
           <div class="mini-box-title">Gruppe</div>
@@ -262,8 +262,16 @@
           <div id="lootResult" style="margin-top:12px;"></div>
         </div>
       </div>
-    </div>
-  </main>
+
+      <h2 style="margin-top:26px;">Zufallstabellen</h2>
+      <div class="tool-row">
+        <select id="table" class="select"></select>
+        <button id="roll" class="btn">Wuerfeln</button>
+      </div>
+      <div id="result" style="margin-top:12px;"></div>
+      </div>
+    </main>
+  </div>
 
   <script src="../../data/tables/tables-global.js?v=3"></script>
 

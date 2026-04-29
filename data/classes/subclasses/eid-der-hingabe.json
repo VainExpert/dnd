@@ -1,0 +1,161 @@
+{
+  "id": "eid-der-hingabe",
+  "type": "subclass",
+  "name": "Eid der Hingabe",
+  "original_name": "Oath of Devotion",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/paladin:oath-of-devotion",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Halten Sie die Ideale von Gerechtigkeit und Ordnung aufrecht",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Halten Sie die Ideale von Gerechtigkeit und Ordnung aufrecht"
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Eid der Hingabe bindet Paladine an die Ideale von Gerechtigkeit und Ordnung. Diese Paladine treffen auf den Archetyp des Ritters in glänzender Rüstung. Sie legen an sich selbst die höchsten Verhaltensstandards fest, und einige stellen – im Guten wie im Schlechten – auch an den Rest der Welt dieselben Standards."
+    },
+    {
+      "type": "paragraph",
+      "text": "Viele, die diesen Eid schwören, sind den Göttern des Gesetzes und des Guten ergeben und nutzen die Lehren ihrer Götter als Maßstab für ihre persönliche Hingabe. Andere bezeichneten Engel als ihre Ideale und integrierten Abbildungen von Engelsflügeln in ihre Helme oder Wappen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Diese Paladine teilen die folgenden Grundsätze:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Lassen Sie Ihr Wort Ihr Versprechen sein.",
+        "Beschütze die Schwachen und habe keine Angst zu handeln.",
+        "Lassen Sie Ihre ehrenhaften Taten ein Vorbild sein."
+      ],
+      "text": "Lassen Sie Ihr Wort Ihr Versprechen sein. Beschütze die Schwachen und habe keine Angst zu handeln. Lassen Sie Ihre ehrenhaften Taten ein Vorbild sein."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Zauber „Eid der Hingabe“."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Magie deines Schwurs stellt sicher, dass du bestimmte Zauber immer bereit hast; Wenn Sie eine Paladin-Stufe erreichen, die in der Zaubertabelle „Eid der Hingabe“ angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Eid der Hingabe-Zauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Paladin-Level",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Schutz vor Bösem und Gutem, Schild des Glaubens"
+        ],
+        [
+          "5",
+          "Hilfe, Zone der Wahrheit"
+        ],
+        [
+          "9",
+          "Leuchtfeuer der Hoffnung, Magie bannen"
+        ],
+        [
+          "13",
+          "Bewegungsfreiheit, Hüter des Glaubens"
+        ],
+        [
+          "17",
+          "Kommune, Flammenschlag"
+        ]
+      ],
+      "text": "Paladin-Stufenzauber: 3 Schutz vor Bösem und Gutem, Schild des Glaubens, 5 Hilfe, Zone der Wahrheit, 9 Leuchtfeuer der Hoffnung, Magie bannen, 13 Bewegungsfreiheit, Wächter des Glaubens, 17 Kommune, Flammenschlag"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Heilige Waffe"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie die Angriffsaktion ausführen, können Sie eine Anwendung Ihrer Channel Divinity nutzen, um eine Nahkampfwaffe, die Sie in der Hand halten, mit positiver Energie zu erfüllen. 10 Minuten lang oder bis Sie diese Funktion erneut verwenden, fügen Sie Ihren Charisma-Modifikator zu den Angriffswürfen hinzu, die Sie mit dieser Waffe ausführen (Mindestbonus von +1), und jedes Mal, wenn Sie mit ihr treffen, verursachen Sie, dass sie ihren normalen Schadenstyp oder Strahlungsschaden verursacht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Waffe strahlt außerdem helles Licht in einem Radius von 20 Fuß und schwaches Licht in einem Radius von 20 Fuß darüber hinaus aus."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diesen Effekt vorzeitig beenden (keine Aktion erforderlich). Dieser Effekt endet auch, wenn Sie die Waffe nicht tragen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 7: Aura der Hingabe"
+    },
+    {
+      "type": "paragraph",
+      "text": "Während Sie sich in Ihrer Aura des Schutzes befinden, sind Sie und Ihre Verbündeten immun gegen den Zustand „Verzaubert“. Wenn ein verzauberter Verbündeter die Aura betritt, hat dieser Zustand keine Auswirkung auf diesen Verbündeten, solange er dort ist."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Smite of Protection"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dein magischer Schlag strahlt jetzt schützende Energie aus. Immer wenn du „Göttlicher Schlag“ wirkst, haben du und deine Verbündeten in eurer Aura des Schutzes halbe Deckung."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Aura hat diesen Vorteil bis zum Beginn Ihres nächsten Zuges."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 20: Heiliger Nimbus"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion können Sie Ihre Aura des Schutzes mit heiliger Kraft erfüllen und so die unten aufgeführten Vorteile für 10 Minuten gewähren oder bis Sie sie beenden (keine Aktion erforderlich). Sobald Sie diese Funktion verwenden, können Sie sie erst dann wieder verwenden, wenn Sie eine Lange Rast beendet haben. Sie können Ihre Nutzung auch wiederherstellen, indem Sie einen Zauberslot der Stufe 5 verbrauchen (keine Aktion erforderlich)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Heiliger Bezirk. Sie haben einen Vorteil bei jedem Rettungswurf, zu dem Sie von einem Unterweltler oder Untoten gezwungen werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Strahlender Schaden. Immer wenn ein Feind seinen Zug in der Aura beginnt, erleidet diese Kreatur Strahlungsschaden in Höhe Ihres Charisma-Modifikators plus Ihres Uebungsbonus."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sonnenlicht. Die Aura ist mit hellem Licht gefüllt, das Sonnenlicht ist."
+    }
+  ],
+  "text": "Halten Sie die Ideale von Gerechtigkeit und Ordnung aufrecht\n\nDer Eid der Hingabe bindet Paladine an die Ideale von Gerechtigkeit und Ordnung. Diese Paladine treffen auf den Archetyp des Ritters in glänzender Rüstung. Sie legen an sich selbst die höchsten Verhaltensstandards fest, und einige stellen – im Guten wie im Schlechten – auch an den Rest der Welt dieselben Standards.\n\nViele, die diesen Eid schwören, sind den Göttern des Gesetzes und des Guten ergeben und nutzen die Lehren ihrer Götter als Maßstab für ihre persönliche Hingabe. Andere bezeichneten Engel als ihre Ideale und integrierten Abbildungen von Engelsflügeln in ihre Helme oder Wappen.\n\nDiese Paladine teilen die folgenden Grundsätze:\n\nLassen Sie Ihr Wort Ihr Versprechen sein. Beschütze die Schwachen und habe keine Angst zu handeln. Lassen Sie Ihre ehrenhaften Taten ein Vorbild sein.\n\nStufe 3: Zauber „Eid der Hingabe“.\n\nDie Magie deines Schwurs stellt sicher, dass du bestimmte Zauber immer bereit hast; Wenn Sie eine Paladin-Stufe erreichen, die in der Zaubertabelle „Eid der Hingabe“ angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nEid der Hingabe-Zauber\n\nPaladin-Stufenzauber: 3 Schutz vor Bösem und Gutem, Schild des Glaubens, 5 Hilfe, Zone der Wahrheit, 9 Leuchtfeuer der Hoffnung, Magie bannen, 13 Bewegungsfreiheit, Wächter des Glaubens, 17 Kommune, Flammenschlag\n\nStufe 3: Heilige Waffe\n\nWenn Sie die Angriffsaktion ausführen, können Sie eine Anwendung Ihrer Channel Divinity nutzen, um eine Nahkampfwaffe, die Sie in der Hand halten, mit positiver Energie zu erfüllen. 10 Minuten lang oder bis Sie diese Funktion erneut verwenden, fügen Sie Ihren Charisma-Modifikator zu den Angriffswürfen hinzu, die Sie mit dieser Waffe ausführen (Mindestbonus von +1), und jedes Mal, wenn Sie mit ihr treffen, verursachen Sie, dass sie ihren normalen Schadenstyp oder Strahlungsschaden verursacht.\n\nDie Waffe strahlt außerdem helles Licht in einem Radius von 20 Fuß und schwaches Licht in einem Radius von 20 Fuß darüber hinaus aus.\n\nSie können diesen Effekt vorzeitig beenden (keine Aktion erforderlich). Dieser Effekt endet auch, wenn Sie die Waffe nicht tragen.\n\nStufe 7: Aura der Hingabe\n\nWährend Sie sich in Ihrer Aura des Schutzes befinden, sind Sie und Ihre Verbündeten immun gegen den Zustand „Verzaubert“. Wenn ein verzauberter Verbündeter die Aura betritt, hat dieser Zustand keine Auswirkung auf diesen Verbündeten, solange er dort ist.\n\nLevel 15: Smite of Protection\n\nDein magischer Schlag strahlt jetzt schützende Energie aus. Immer wenn du „Göttlicher Schlag“ wirkst, haben du und deine Verbündeten in eurer Aura des Schutzes halbe Deckung.\n\nDie Aura hat diesen Vorteil bis zum Beginn Ihres nächsten Zuges.\n\nLevel 20: Heiliger Nimbus\n\nAls Bonusaktion können Sie Ihre Aura des Schutzes mit heiliger Kraft erfüllen und so die unten aufgeführten Vorteile für 10 Minuten gewähren oder bis Sie sie beenden (keine Aktion erforderlich). Sobald Sie diese Funktion verwenden, können Sie sie erst dann wieder verwenden, wenn Sie eine Lange Rast beendet haben. Sie können Ihre Nutzung auch wiederherstellen, indem Sie einen Zauberslot der Stufe 5 verbrauchen (keine Aktion erforderlich).\n\nHeiliger Bezirk. Sie haben einen Vorteil bei jedem Rettungswurf, zu dem Sie von einem Unterweltler oder Untoten gezwungen werden.\n\nStrahlender Schaden. Immer wenn ein Feind seinen Zug in der Aura beginnt, erleidet diese Kreatur Strahlungsschaden in Höhe Ihres Charisma-Modifikators plus Ihres Uebungsbonus.\n\nSonnenlicht. Die Aura ist mit hellem Licht gefüllt, das Sonnenlicht ist.",
+  "tags": [],
+  "class": "Paladin",
+  "class_id": "paladin",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

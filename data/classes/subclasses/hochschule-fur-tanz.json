@@ -1,0 +1,95 @@
+{
+  "id": "hochschule-fur-tanz",
+  "type": "subclass",
+  "name": "Hochschule für Tanz",
+  "original_name": "College of Dance",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/bard:college-of-dance",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Bewegen Sie sich in Harmonie mit dem Kosmos. Die Barden des College of Dance wissen, dass die Worte der Schöpfung nicht in Sprache oder Gesang enthalten sein können. Die Worte werden durch die Bewegungen der Himmelskörper geäußert und fließen durch die Bewegungen der kleinsten Lebewesen. Diese Barden praktizieren eine Art, im Einklang mit dem wirbelnden Kosmos zu sein, bei der Beweglichkeit, Schnelligkeit und Anmut im Vordergrund stehen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Bewegen Sie sich in Harmonie mit dem Kosmos. Die Barden des College of Dance wissen, dass die Worte der Schöpfung nicht in Sprache oder Gesang enthalten sein können. Die Worte werden durch die Bewegungen der Himmelskörper geäußert und fließen durch die Bewegungen der kleinsten Lebewesen. Diese Barden praktizieren eine Art, im Einklang mit dem wirbelnden Kosmos zu sein, bei der Beweglichkeit, Schnelligkeit und Anmut im Vordergrund stehen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Umwerfende Beinarbeit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Solange Sie keine Rüstung tragen oder keinen Schild tragen, profitieren Sie von den folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tanzvirtuose. Sie haben einen Vorteil bei jeder Charisma-(Leistungs-)Überprüfung, bei der Sie tanzen müssen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ungepanzerte Verteidigung. Ihre Grundrüstungsklasse beträgt 10 plus Ihre Geschicklichkeits- und Charisma-Modifikatoren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Agile Strikes. Wenn du einen Einsatz deiner bardischen Inspiration als Teil einer Aktion, einer Bonusaktion oder einer Reaktion verwendest, kannst du als Teil dieser Aktion, Bonusaktion oder Reaktion einen unbewaffneten Schlag ausführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bardischer Schaden. Sie können für die Angriffswürfe Ihrer unbewaffneten Schläge Geschicklichkeit anstelle von Stärke verwenden. Wenn du mit einem unbewaffneten Schlag Schaden verursachst, kannst du anstelle des normalen Schadens des Schlags Wuchtschaden in Höhe eines Wurfs deines bardischen Inspirationswürfels plus deinem Geschicklichkeitsmodifikator verursachen. Bei diesem Wurf wird der Würfel nicht verbraucht."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Inspirierende Bewegung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn ein Feind, den Sie sehen können, seinen Zug innerhalb von 5 Fuß um Sie herum beendet, können Sie eine Reaktion ausführen und eine Anwendung Ihrer bardischen Inspiration aufwenden, um sich bis zur Hälfte Ihrer Geschwindigkeit zu bewegen. Dann kann sich auch ein Verbündeter deiner Wahl im Umkreis von 30 Fuß um dich mit seiner Reaktion bis zur Hälfte seiner Geschwindigkeit bewegen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keine Bewegung dieser Funktion provoziert Gelegenheitsangriffe."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Tandem-Beinarbeit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Initiative würfeln, können Sie eine Anwendung Ihrer bardischen Inspiration aufwenden, wenn Sie nicht über die Bedingung „Kampfunfähig“ verfügen. Wenn Sie dies tun, werfen Sie Ihren bardischen Inspirationswürfel; Sie und jeder Verbündete im Umkreis von 30 Fuß um Sie, der Sie sehen oder hören kann, erhalten einen Initiativebonus in Höhe der gewürfelten Zahl."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Führendes Ausweichen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie einem Effekt ausgesetzt sind, der es Ihnen ermöglicht, einen Geschicklichkeits-Rettungswurf auszuführen, der nur halben Schaden erleidet, erleiden Sie stattdessen keinen Schaden, wenn Ihnen der Rettungswurf gelingt, und nur halben Schaden, wenn Sie scheitern. Wenn Kreaturen in einem Umkreis von 5 Fuß um dich herum denselben Geschicklichkeits-Rettungswurf ausführen, kannst du diesen Vorteil für diesen Rettungswurf mit ihnen teilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diese Funktion nicht verwenden, wenn Sie an der Krankheit Kampfunfähigkeit leiden."
+    }
+  ],
+  "text": "Bewegen Sie sich in Harmonie mit dem Kosmos. Die Barden des College of Dance wissen, dass die Worte der Schöpfung nicht in Sprache oder Gesang enthalten sein können. Die Worte werden durch die Bewegungen der Himmelskörper geäußert und fließen durch die Bewegungen der kleinsten Lebewesen. Diese Barden praktizieren eine Art, im Einklang mit dem wirbelnden Kosmos zu sein, bei der Beweglichkeit, Schnelligkeit und Anmut im Vordergrund stehen.\n\nLevel 3: Umwerfende Beinarbeit\n\nSolange Sie keine Rüstung tragen oder keinen Schild tragen, profitieren Sie von den folgenden Vorteilen.\n\nTanzvirtuose. Sie haben einen Vorteil bei jeder Charisma-(Leistungs-)Überprüfung, bei der Sie tanzen müssen.\n\nUngepanzerte Verteidigung. Ihre Grundrüstungsklasse beträgt 10 plus Ihre Geschicklichkeits- und Charisma-Modifikatoren.\n\nAgile Strikes. Wenn du einen Einsatz deiner bardischen Inspiration als Teil einer Aktion, einer Bonusaktion oder einer Reaktion verwendest, kannst du als Teil dieser Aktion, Bonusaktion oder Reaktion einen unbewaffneten Schlag ausführen.\n\nBardischer Schaden. Sie können für die Angriffswürfe Ihrer unbewaffneten Schläge Geschicklichkeit anstelle von Stärke verwenden. Wenn du mit einem unbewaffneten Schlag Schaden verursachst, kannst du anstelle des normalen Schadens des Schlags Wuchtschaden in Höhe eines Wurfs deines bardischen Inspirationswürfels plus deinem Geschicklichkeitsmodifikator verursachen. Bei diesem Wurf wird der Würfel nicht verbraucht.\n\nLevel 6: Inspirierende Bewegung\n\nWenn ein Feind, den Sie sehen können, seinen Zug innerhalb von 5 Fuß um Sie herum beendet, können Sie eine Reaktion ausführen und eine Anwendung Ihrer bardischen Inspiration aufwenden, um sich bis zur Hälfte Ihrer Geschwindigkeit zu bewegen. Dann kann sich auch ein Verbündeter deiner Wahl im Umkreis von 30 Fuß um dich mit seiner Reaktion bis zur Hälfte seiner Geschwindigkeit bewegen.\n\nKeine Bewegung dieser Funktion provoziert Gelegenheitsangriffe.\n\nLevel 6: Tandem-Beinarbeit\n\nWenn Sie Initiative würfeln, können Sie eine Anwendung Ihrer bardischen Inspiration aufwenden, wenn Sie nicht über die Bedingung „Kampfunfähig“ verfügen. Wenn Sie dies tun, werfen Sie Ihren bardischen Inspirationswürfel; Sie und jeder Verbündete im Umkreis von 30 Fuß um Sie, der Sie sehen oder hören kann, erhalten einen Initiativebonus in Höhe der gewürfelten Zahl.\n\nLevel 14: Führendes Ausweichen\n\nWenn Sie einem Effekt ausgesetzt sind, der es Ihnen ermöglicht, einen Geschicklichkeits-Rettungswurf auszuführen, der nur halben Schaden erleidet, erleiden Sie stattdessen keinen Schaden, wenn Ihnen der Rettungswurf gelingt, und nur halben Schaden, wenn Sie scheitern. Wenn Kreaturen in einem Umkreis von 5 Fuß um dich herum denselben Geschicklichkeits-Rettungswurf ausführen, kannst du diesen Vorteil für diesen Rettungswurf mit ihnen teilen.\n\nSie können diese Funktion nicht verwenden, wenn Sie an der Krankheit Kampfunfähigkeit leiden.",
+  "tags": [],
+  "class": "Barde",
+  "class_id": "barde",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

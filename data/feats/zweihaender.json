@@ -1,0 +1,59 @@
+{
+  "id": "zweihaender",
+  "type": "feat",
+  "name": "Zweihaender",
+  "original_name": "Dual Wielder",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:dual-wielder",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Stärke oder Geschicklichkeit 13+"
+  ],
+  "summary": "Voraussetzung: Level 4+, Stärke oder Geschicklichkeit 13+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, Stärke oder Geschicklichkeit 13+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Geschicklichkeitswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbessertes Tragen beider Waffen. Wenn Sie in Ihrem Zug die Angriffsaktion ausführen und mit einer Waffe angreifen, die über die Eigenschaft „Licht“ verfügt, können Sie später im selben Zug einen zusätzlichen Angriff als Bonusaktion mit einer anderen Waffe durchführen, bei der es sich um eine Nahkampfwaffe ohne die Eigenschaft „Zweihändig“ handeln muss. Sie addieren Ihren Fähigkeitsmodifikator nicht zum Schaden des zusätzlichen Angriffs, es sei denn, dieser Modifikator ist negativ."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schnelles Zeichnen. Sie können zwei Waffen ziehen oder verstauen, denen die Eigenschaft „Zweihändig“ fehlt, obwohl Sie normalerweise nur eine Waffe ziehen oder verstauen könnten."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, Stärke oder Geschicklichkeit 13+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Geschicklichkeitswert um 1 auf maximal 20.\n\nVerbessertes Tragen beider Waffen. Wenn Sie in Ihrem Zug die Angriffsaktion ausführen und mit einer Waffe angreifen, die über die Eigenschaft „Licht“ verfügt, können Sie später im selben Zug einen zusätzlichen Angriff als Bonusaktion mit einer anderen Waffe durchführen, bei der es sich um eine Nahkampfwaffe ohne die Eigenschaft „Zweihändig“ handeln muss. Sie addieren Ihren Fähigkeitsmodifikator nicht zum Schaden des zusätzlichen Angriffs, es sei denn, dieser Modifikator ist negativ.\n\nSchnelles Zeichnen. Sie können zwei Waffen ziehen oder verstauen, denen die Eigenschaft „Zweihändig“ fehlt, obwohl Sie normalerweise nur eine Waffe ziehen oder verstauen könnten.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str",
+      "dex"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

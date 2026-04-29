@@ -1,0 +1,57 @@
+{
+  "id": "zauberfeuer-experte",
+  "type": "feat",
+  "name": "Zauberfeuer-Experte",
+  "original_name": "Spellfire Adept",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:spellfire-adept",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Level 4+, Talent „Zauberfeuerfunke“ oder das Talent „Zauberwirkung“ oder „Paktmagie“)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Level 4+, Talent „Zauberfeuerfunke“ oder das Talent „Zauberwirkung“ oder „Paktmagie“)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Angetriebenes Zauberfeuer. Einmal pro Spielzug, wenn ein von dir gewirkter Zauber Strahlungsschaden verursacht, kannst du bis zu zwei Trefferpunktwürfel ausgeben, sie würfeln und die gewürfelte Summe zu einem Schadenswurf des Zaubers addieren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sengendes Zauberfeuer. Wenn Sie einen Schadenswurf durchführen, der Strahlungsschaden verursacht, ignoriert dieser die Resistenz gegen Strahlungsschaden."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Level 4+, Talent „Zauberfeuerfunke“ oder das Talent „Zauberwirkung“ oder „Paktmagie“)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20.\n\nAngetriebenes Zauberfeuer. Einmal pro Spielzug, wenn ein von dir gewirkter Zauber Strahlungsschaden verursacht, kannst du bis zu zwei Trefferpunktwürfel ausgeben, sie würfeln und die gewürfelte Summe zu einem Schadenswurf des Zaubers addieren.\n\nSengendes Zauberfeuer. Wenn Sie einen Schadenswurf durchführen, der Strahlungsschaden verursacht, ignoriert dieser die Resistenz gegen Strahlungsschaden.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

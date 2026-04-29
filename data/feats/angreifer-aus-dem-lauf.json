@@ -1,0 +1,59 @@
+{
+  "id": "angreifer-aus-dem-lauf",
+  "type": "feat",
+  "name": "Angreifer aus dem Lauf",
+  "original_name": "Charger",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:charger",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Stärke oder Geschicklichkeit 13+"
+  ],
+  "summary": "Voraussetzung: Level 4+, Stärke oder Geschicklichkeit 13+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, Stärke oder Geschicklichkeit 13+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Geschicklichkeitswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserter Dash. Wenn Sie die Aktion „Sprint“ ausführen, erhöht sich Ihre Geschwindigkeit für diese Aktion um 10 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Angriffsangriff. Wenn Sie sich mindestens 10 Fuß in einer geraden Linie auf ein Ziel zubewegen, unmittelbar bevor Sie es im Rahmen der Angriffsaktion mit einem Nahkampfangriffswurf treffen, wählen Sie einen der folgenden Effekte: Erhalten Sie einen Bonus von 1W8 auf den Schadenswurf des Angriffs oder schieben Sie das Ziel bis zu 10 Fuß weg, wenn es nicht mehr als eine Größe größer als Sie ist. Du kannst diesen Vorteil in jedem deiner Züge nur einmal nutzen."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, Stärke oder Geschicklichkeit 13+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Geschicklichkeitswert um 1 auf maximal 20.\n\nVerbesserter Dash. Wenn Sie die Aktion „Sprint“ ausführen, erhöht sich Ihre Geschwindigkeit für diese Aktion um 10 Fuß.\n\nAngriffsangriff. Wenn Sie sich mindestens 10 Fuß in einer geraden Linie auf ein Ziel zubewegen, unmittelbar bevor Sie es im Rahmen der Angriffsaktion mit einem Nahkampfangriffswurf treffen, wählen Sie einen der folgenden Effekte: Erhalten Sie einen Bonus von 1W8 auf den Schadenswurf des Angriffs oder schieben Sie das Ziel bis zu 10 Fuß weg, wenn es nicht mehr als eine Größe größer als Sie ist. Du kannst diesen Vorteil in jedem deiner Züge nur einmal nutzen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str",
+      "dex"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

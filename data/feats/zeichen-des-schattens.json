@@ -1,0 +1,93 @@
+{
+  "id": "zeichen-des-schattens",
+  "type": "feat",
+  "name": "Zeichen des Schattens",
+  "original_name": "Mark of Shadow",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:mark-of-shadow",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Drachenmale",
+  "prerequisites": [],
+  "summary": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Listige Intuition. Wenn Sie eine Prüfung auf Geschicklichkeit (Stealth) oder Charisma (Leistung) durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schatten formen. Sie kennen den Cantrip „Minor Illusion“. Sie haben auch immer den Unsichtbarkeitszauber vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können es auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Intelligenz, Weisheit oder Charisma sind Ihre Zauberfähigkeiten für diese Zaubersprüche (wählen Sie, wenn Sie dieses Talent auswählen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauber der Marke. Wenn Sie über die Funktion „Zauberwirkung“ oder „Paktmagie“ verfügen, werden die Zauber in der Tabelle „Mal des Schattens“ zur Zauberliste dieser Funktion hinzugefügt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zeichen der Schattenzauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Zauberstufe",
+          "Zauber"
+        ],
+        [
+          "1",
+          "Sich verkleiden, stilles Bild"
+        ],
+        [
+          "2",
+          "Dunkelheit, spurlos vergehen"
+        ],
+        [
+          "3",
+          "Hellsehen, Hauptbild"
+        ],
+        [
+          "4",
+          "Größere Unsichtbarkeit, halluzinatorisches Terrain"
+        ],
+        [
+          "5",
+          "Irreführen"
+        ]
+      ],
+      "text": "Zauberstufenzauber 1 Selbstverkleidung, Stilles Bild 2 Dunkelheit, Spurloses Vorbeigehen 3 Hellsehen, Großes Bild 4 Große Unsichtbarkeit, Halluzinatorisches Gelände 5 Irreführen"
+    }
+  ],
+  "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)\n\nSie profitieren von folgenden Vorteilen.\n\nListige Intuition. Wenn Sie eine Prüfung auf Geschicklichkeit (Stealth) oder Charisma (Leistung) durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen.\n\nSchatten formen. Sie kennen den Cantrip „Minor Illusion“. Sie haben auch immer den Unsichtbarkeitszauber vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können es auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Intelligenz, Weisheit oder Charisma sind Ihre Zauberfähigkeiten für diese Zaubersprüche (wählen Sie, wenn Sie dieses Talent auswählen).\n\nZauber der Marke. Wenn Sie über die Funktion „Zauberwirkung“ oder „Paktmagie“ verfügen, werden die Zauber in der Tabelle „Mal des Schattens“ zur Zauberliste dieser Funktion hinzugefügt.\n\nZeichen der Schattenzauber\n\nZauberstufenzauber 1 Selbstverkleidung, Stilles Bild 2 Dunkelheit, Spurloses Vorbeigehen 3 Hellsehen, Großes Bild 4 Große Unsichtbarkeit, Halluzinatorisches Gelände 5 Irreführen",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "dex",
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

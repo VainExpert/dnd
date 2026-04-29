@@ -1,0 +1,29 @@
+{
+  "id": "flustern-des-grabes",
+  "name": "Flüstern des Grabes",
+  "original_name": "Whispers of the Grave",
+  "kind": "eldritch_invocation",
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:eldritch-invocation",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "",
+  "cost_original": "",
+  "prerequisite": "Hexenmeister der Stufe 7+",
+  "prerequisite_original": "Level 7+ Warlock",
+  "summary": "Du kannst „Mit Toten sprechen“ wirken, ohne einen Zauberslot zu verbrauchen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "You can cast Speak with Dead without expending a spell slot.",
+      "text_de": "Du kannst „Mit Toten sprechen“ wirken, ohne einen Zauberslot zu verbrauchen."
+    }
+  ]
+}

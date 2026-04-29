@@ -1,0 +1,178 @@
+{
+  "id": "eid-der-edlen-geister",
+  "type": "subclass",
+  "name": "Eid der edlen Geister",
+  "original_name": "Oath of the Noble Genies",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/paladin:oath-of-the-noble-genies",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Schwingen Sie die elementare Pracht der Geister",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Schwingen Sie die elementare Pracht der Geister"
+    },
+    {
+      "type": "paragraph",
+      "text": "Paladine, die den Eid der Edlen Geister geschworen haben, verehren die Kräfte der Elementarebenen. Durch das Ablegen dieses Eides schöpfen Paladine ihre Macht aus den vier verschiedenen Arten von Geistern: Dao, Herren der Erde; Dschinn, Meister der Luft; Efreet, Meister des Feuers; und Marids, Meister des Wassers. In Faerûn stammen viele Paladine, die diesen Eid schwören, aus Calimshan, einem Land voller Geister."
+    },
+    {
+      "type": "paragraph",
+      "text": "Paladine, die diesen Eid schwören, unternehmen oft Quests, die sie durch alle Reiche und das Multiversum führen – einschließlich der Elementarebenen. Diese Paladine teilen die folgenden Grundsätze:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Säe die Saat der Schöpfung inmitten der Asche der Zerstörung.",
+        "Führe mit Glanz und Anmut.",
+        "Respektiere die Elemente und fürchte ihren Zorn."
+      ],
+      "text": "Säe die Saat der Schöpfung inmitten der Asche der Zerstörung. Führe mit Glanz und Anmut. Respektiere die Elemente und fürchte ihren Zorn."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Elementarschlag"
+    },
+    {
+      "type": "paragraph",
+      "text": "Unmittelbar nachdem du „Divine Smite“ gewirkt hast, kannst du eine Anwendung deiner „Channel Divinity“ aufwenden und einen der folgenden Effekte hervorrufen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Daos Schwarm. Die Erde erhebt sich um das Ziel deines göttlichen Schlags. Das Ziel hat den Zustand „Grappled“ (Flucht-SG entspricht deinem Zauberwurf-SG). Während es im Ringkampf ist, befindet sich das Ziel im Zustand „Gefesselt“."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dschinnis Flucht. Du teleportierst dich zu einem freien Raum, den du im Umkreis von 30 Fuß um dich herum sehen kannst, und nimmst eine halbkörperliche Form an, die bis zum Ende deines nächsten Zuges anhält. In dieser Form verfügen Sie über Resistenz gegen Knüppel-, Stich- und Hiebschaden und sind immun gegen die Zustände „Kampf“, „Anliegen“ und „Gefesselt“."
+    },
+    {
+      "type": "paragraph",
+      "text": "Efreetis Zorn. Das Ziel Ihres göttlichen Schlags erleidet zusätzlich 2W4 Feuerschaden und das Feuer springt vom Ziel auf eine andere Kreatur über, die Sie in einem Umkreis von 30 Fuß um sich selbst sehen können. Die zweite Kreatur erleidet ebenfalls 2W4 Feuerschaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Marids Welle. Das Ziel deines göttlichen Schlags und jede Kreatur deiner Wahl in einer von dir ausgehenden 10-Fuß-Emanation führen einen Stärke-Rettungswurf gegen den SG deines Zaubers aus. Bei einem fehlgeschlagenen Rettungswurf wird eine Kreatur 15 Fuß direkt von dir weggestoßen und befindet sich im Zustand „Bauchen“."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Dschinni-Zauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine in der Genie-Zaubertabelle angegebene Paladin-Stufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Dschinni-Zauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Paladin-Level",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Chromatische Kugel, Elementarismus, Donnernder Schlag"
+        ],
+        [
+          "5",
+          "Spiegelbild, Phantomkraft"
+        ],
+        [
+          "9",
+          "Fliege, gasförmige Form"
+        ],
+        [
+          "13",
+          "Kleinere Elementare beschwören, Elementar beschwören"
+        ],
+        [
+          "17",
+          "Smite verbannen, andere Ebene kontaktieren"
+        ]
+      ],
+      "text": "Paladin-Stufenzauber: 3 Chromatische Kugel, Elementarismus, Donnernder Schlag, 5 Spiegelbild, Phantomkraft, 9 Fliege, Gasförmige Form, 13 Kleinere Elementare beschwören, Elementar beschwören, 17 Bannender Schlag, Kontakt mit einer anderen Ebene"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Genie's Splendor"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie keine Rüstung tragen, beträgt Ihre Grundrüstungsklasse 10 plus Ihre Geschicklichkeits- und Charisma-Modifikatoren. Sie können einen Schild verwenden und trotzdem diesen Vorteil erhalten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erwerben außerdem Kenntnisse in einer der folgenden Fähigkeiten Ihrer Wahl: Akrobatik, Einschüchterung, Leistung oder Überzeugung."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 7: Aura der elementaren Abschirmung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wählen Sie eine der folgenden Schadensarten: Säure, Kälte, Feuer, Blitz oder Donner. Sie und Ihre Verbündeten verfügen über Resistenz gegen diese Schadensart, während Sie sich in Ihrer Aura des Schutzes befinden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zu Beginn jedes Ihrer Züge können Sie die von dieser Funktion betroffene Schadensart in eine der anderen aufgeführten Optionen ändern (keine Aktion erforderlich)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Elementare Zurechtweisung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du von einem Angriffswurf getroffen wirst, kannst du eine Reaktion ausführen, um den Schaden des Angriffs gegen dich selbst zu halbieren (abzurunden) und den Angreifer zu einem Geschicklichkeits-Rettungswurf gegen deinen Zauberwurf zu zwingen. Bei einem fehlgeschlagenen Rettungswurf erleidet der Angreifer Schaden in Höhe von 2W10 plus Ihrem Charisma-Modifikator einer der folgenden Arten (Ihrer Wahl): Säure, Kälte, Feuer, Blitz oder Donner. Bei einem erfolgreichen Rettungswurf erleidet der Angreifer halb so viel Schaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diese Funktion so oft verwenden, wie es Ihrem Charisma-Modifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 20: Edler Spross"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion erhalten Sie die folgenden Vorteile für 10 Minuten oder bis Sie sie beenden (keine Aktion erforderlich). Sobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast beendet haben. Sie können Ihre Nutzung auch wiederherstellen, indem Sie einen Zauberslot der Stufe 5 verbrauchen (keine Aktion erforderlich)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Flug. Sie haben eine Fluggeschwindigkeit von 60 Fuß und können schweben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kleiner Wunsch. Wenn Sie oder ein Verbündeter in Ihrer Aura des Schutzes einen D20-Test nicht bestehen, können Sie stattdessen eine Reaktion durchführen, um Ihnen oder diesem Verbündeten zum Erfolg zu verhelfen."
+    }
+  ],
+  "text": "Schwingen Sie die elementare Pracht der Geister\n\nPaladine, die den Eid der Edlen Geister geschworen haben, verehren die Kräfte der Elementarebenen. Durch das Ablegen dieses Eides schöpfen Paladine ihre Macht aus den vier verschiedenen Arten von Geistern: Dao, Herren der Erde; Dschinn, Meister der Luft; Efreet, Meister des Feuers; und Marids, Meister des Wassers. In Faerûn stammen viele Paladine, die diesen Eid schwören, aus Calimshan, einem Land voller Geister.\n\nPaladine, die diesen Eid schwören, unternehmen oft Quests, die sie durch alle Reiche und das Multiversum führen – einschließlich der Elementarebenen. Diese Paladine teilen die folgenden Grundsätze:\n\nSäe die Saat der Schöpfung inmitten der Asche der Zerstörung. Führe mit Glanz und Anmut. Respektiere die Elemente und fürchte ihren Zorn.\n\nLevel 3: Elementarschlag\n\nUnmittelbar nachdem du „Divine Smite“ gewirkt hast, kannst du eine Anwendung deiner „Channel Divinity“ aufwenden und einen der folgenden Effekte hervorrufen.\n\nDaos Schwarm. Die Erde erhebt sich um das Ziel deines göttlichen Schlags. Das Ziel hat den Zustand „Grappled“ (Flucht-SG entspricht deinem Zauberwurf-SG). Während es im Ringkampf ist, befindet sich das Ziel im Zustand „Gefesselt“.\n\nDschinnis Flucht. Du teleportierst dich zu einem freien Raum, den du im Umkreis von 30 Fuß um dich herum sehen kannst, und nimmst eine halbkörperliche Form an, die bis zum Ende deines nächsten Zuges anhält. In dieser Form verfügen Sie über Resistenz gegen Knüppel-, Stich- und Hiebschaden und sind immun gegen die Zustände „Kampf“, „Anliegen“ und „Gefesselt“.\n\nEfreetis Zorn. Das Ziel Ihres göttlichen Schlags erleidet zusätzlich 2W4 Feuerschaden und das Feuer springt vom Ziel auf eine andere Kreatur über, die Sie in einem Umkreis von 30 Fuß um sich selbst sehen können. Die zweite Kreatur erleidet ebenfalls 2W4 Feuerschaden.\n\nMarids Welle. Das Ziel deines göttlichen Schlags und jede Kreatur deiner Wahl in einer von dir ausgehenden 10-Fuß-Emanation führen einen Stärke-Rettungswurf gegen den SG deines Zaubers aus. Bei einem fehlgeschlagenen Rettungswurf wird eine Kreatur 15 Fuß direkt von dir weggestoßen und befindet sich im Zustand „Bauchen“.\n\nLevel 3: Dschinni-Zauber\n\nWenn Sie eine in der Genie-Zaubertabelle angegebene Paladin-Stufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet\n\nDschinni-Zauber\n\nPaladin-Stufenzauber: 3 Chromatische Kugel, Elementarismus, Donnernder Schlag, 5 Spiegelbild, Phantomkraft, 9 Fliege, Gasförmige Form, 13 Kleinere Elementare beschwören, Elementar beschwören, 17 Bannender Schlag, Kontakt mit einer anderen Ebene\n\nLevel 3: Genie's Splendor\n\nWenn Sie keine Rüstung tragen, beträgt Ihre Grundrüstungsklasse 10 plus Ihre Geschicklichkeits- und Charisma-Modifikatoren. Sie können einen Schild verwenden und trotzdem diesen Vorteil erhalten.\n\nSie erwerben außerdem Kenntnisse in einer der folgenden Fähigkeiten Ihrer Wahl: Akrobatik, Einschüchterung, Leistung oder Überzeugung.\n\nStufe 7: Aura der elementaren Abschirmung\n\nWählen Sie eine der folgenden Schadensarten: Säure, Kälte, Feuer, Blitz oder Donner. Sie und Ihre Verbündeten verfügen über Resistenz gegen diese Schadensart, während Sie sich in Ihrer Aura des Schutzes befinden.\n\nZu Beginn jedes Ihrer Züge können Sie die von dieser Funktion betroffene Schadensart in eine der anderen aufgeführten Optionen ändern (keine Aktion erforderlich).\n\nLevel 15: Elementare Zurechtweisung\n\nWenn du von einem Angriffswurf getroffen wirst, kannst du eine Reaktion ausführen, um den Schaden des Angriffs gegen dich selbst zu halbieren (abzurunden) und den Angreifer zu einem Geschicklichkeits-Rettungswurf gegen deinen Zauberwurf zu zwingen. Bei einem fehlgeschlagenen Rettungswurf erleidet der Angreifer Schaden in Höhe von 2W10 plus Ihrem Charisma-Modifikator einer der folgenden Arten (Ihrer Wahl): Säure, Kälte, Feuer, Blitz oder Donner. Bei einem erfolgreichen Rettungswurf erleidet der Angreifer halb so viel Schaden.\n\nSie können diese Funktion so oft verwenden, wie es Ihrem Charisma-Modifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben.\n\nLevel 20: Edler Spross\n\nAls Bonusaktion erhalten Sie die folgenden Vorteile für 10 Minuten oder bis Sie sie beenden (keine Aktion erforderlich). Sobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast beendet haben. Sie können Ihre Nutzung auch wiederherstellen, indem Sie einen Zauberslot der Stufe 5 verbrauchen (keine Aktion erforderlich).\n\nFlug. Sie haben eine Fluggeschwindigkeit von 60 Fuß und können schweben.\n\nKleiner Wunsch. Wenn Sie oder ein Verbündeter in Ihrer Aura des Schutzes einen D20-Test nicht bestehen, können Sie stattdessen eine Reaktion durchführen, um Ihnen oder diesem Verbündeten zum Erfolg zu verhelfen.",
+  "tags": [],
+  "class": "Paladin",
+  "class_id": "paladin",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

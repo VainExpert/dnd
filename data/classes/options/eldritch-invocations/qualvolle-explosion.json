@@ -1,0 +1,34 @@
+{
+  "id": "qualvolle-explosion",
+  "name": "Qualvolle Explosion",
+  "original_name": "Agonizing Blast",
+  "kind": "eldritch_invocation",
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:eldritch-invocation",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "",
+  "cost_original": "",
+  "prerequisite": "Hexenmeister der Stufe 2+, ein Hexenmeister-Zaubertrick, der Schaden verursacht",
+  "prerequisite_original": "Level 2+ Warlock, a Warlock Cantrip That Deals Damage",
+  "summary": "Wählen Sie einen Ihrer bekannten Hexenmeister-Cantrips, der Schaden verursacht. Du kannst deinen Charisma-Modifikator zu den Schadenswürfen dieses Zaubers hinzufügen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell’s damage rolls.",
+      "text_de": "Wählen Sie einen Ihrer bekannten Hexenmeister-Cantrips, der Schaden verursacht. Du kannst deinen Charisma-Modifikator zu den Schadenswürfen dieses Zaubers hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Repeatable. You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.",
+      "text_de": "Wiederholbar. Sie können diesen Anruf mehr als einmal erhalten. Wählen Sie jedes Mal einen anderen geeigneten Cantrip aus."
+    }
+  ]
+}

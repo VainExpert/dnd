@@ -1,0 +1,96 @@
+{
+  "id": "zeichen-der-heilung",
+  "type": "feat",
+  "name": "Zeichen der Heilung",
+  "original_name": "Mark of Healing",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:mark-of-healing",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Drachenmale",
+  "prerequisites": [],
+  "summary": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Medizinische Intuition. Wenn Sie einen Weisheits- (Medizin-)Wurf oder einen Fähigkeitswurf mit einem Kräuterkunde-Set durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zum Fähigkeitswurf hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Heilende Berührung. Sie haben immer den Zauber „Wunden heilen“ vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können es auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Ihnen zur Verfügung stehen. Intelligenz, Weisheit oder Charisma sind Ihre Zauberfähigkeiten für diese Zaubersprüche (wählen Sie, wenn Sie dieses Talent auswählen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Charakterstufe 3 erreichen, haben Sie auch immer den Zauber „Geringe Wiederherstellung“ vorbereitet und können ihn auf die gleiche Weise wirken."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauber der Marke. Wenn Sie über die Zauber- oder Paktmagie-Funktion verfügen, werden die Zauber in der Tabelle „Zeichen der Heilzauber“ zur Zauberliste dieser Funktion hinzugefügt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zeichen der Heilzauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Zauberstufe",
+          "Zauber"
+        ],
+        [
+          "1",
+          "Falsches Leben, heilendes Wort"
+        ],
+        [
+          "2",
+          "Arkane Kraft, Gebet der Heilung"
+        ],
+        [
+          "3",
+          "Aura der Vitalität, Massenheilungswort"
+        ],
+        [
+          "4",
+          "Aura des Lebens, Aura der Reinheit"
+        ],
+        [
+          "5",
+          "Größere Wiederherstellung"
+        ]
+      ],
+      "text": "Zauberstufe Zauber 1 Falsches Leben, Heilendes Wort, 2 Arkane Kraft, Gebet der Heilung, 3 Aura der Vitalität, Massenheilendes Wort, 4 Aura des Lebens, Aura der Reinheit, 5 Große Wiederherstellung"
+    }
+  ],
+  "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)\n\nSie profitieren von folgenden Vorteilen.\n\nMedizinische Intuition. Wenn Sie einen Weisheits- (Medizin-)Wurf oder einen Fähigkeitswurf mit einem Kräuterkunde-Set durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zum Fähigkeitswurf hinzufügen.\n\nHeilende Berührung. Sie haben immer den Zauber „Wunden heilen“ vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können es auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Ihnen zur Verfügung stehen. Intelligenz, Weisheit oder Charisma sind Ihre Zauberfähigkeiten für diese Zaubersprüche (wählen Sie, wenn Sie dieses Talent auswählen).\n\nWenn Sie Charakterstufe 3 erreichen, haben Sie auch immer den Zauber „Geringe Wiederherstellung“ vorbereitet und können ihn auf die gleiche Weise wirken.\n\nZauber der Marke. Wenn Sie über die Zauber- oder Paktmagie-Funktion verfügen, werden die Zauber in der Tabelle „Zeichen der Heilzauber“ zur Zauberliste dieser Funktion hinzugefügt.\n\nZeichen der Heilzauber\n\nZauberstufe Zauber 1 Falsches Leben, Heilendes Wort, 2 Arkane Kraft, Gebet der Heilung, 3 Aura der Vitalität, Massenheilendes Wort, 4 Aura des Lebens, Aura der Reinheit, 5 Große Wiederherstellung",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

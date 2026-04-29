@@ -1,0 +1,9 @@
+{
+  "ID": "<tabellen-id>",
+  "Titel": "<Tabellentitel>",
+  "Kurzbeschreibung": "",
+  "Würfel": "1d20",
+  "1": "<Ergebnis 1>",
+  "2-5": "<Ergebnis 2 bis 5>",
+  "6-20": "<Ergebnis 6 bis 20>"
+}

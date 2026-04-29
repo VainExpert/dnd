@@ -1,0 +1,145 @@
+{
+  "id": "grossartiger-alter-gonner",
+  "type": "subclass",
+  "name": "Großartiger alter Gönner",
+  "original_name": "Great Old One Patron",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:great-old-one-patron",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Entdecken Sie verbotene Lehren unbeschreiblicher Wesen",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Entdecken Sie verbotene Lehren unbeschreiblicher Wesen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie diese Unterklasse wählen, können Sie sich an ein unaussprechliches Wesen aus dem Fernen Reich oder an einen älteren Gott binden – ein Wesen wie Tharizdun, den angeketteten Gott; Zargon, der Rückkehrer; Hadar, der dunkle Hunger; oder Großer Cthulhu. Oder Sie rufen mehrere Entitäten an, ohne sich an eine zu binden. Die Motive dieser Wesen sind unverständlich und dem Großen Alten könnte Ihre Existenz gleichgültig sein. Aber die Geheimnisse, die Sie gelernt haben, ermöglichen es Ihnen dennoch, seltsame Magie daraus zu ziehen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Erwachter Geist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können eine telepathische Verbindung zwischen Ihrem Geist und dem Geist eines anderen herstellen. Wählen Sie als Bonusaktion eine Kreatur aus, die Sie in einem Umkreis von 30 Fuß um sich selbst sehen können. Sie und die ausgewählte Kreatur können telepathisch miteinander kommunizieren, während Sie beide sich innerhalb einer Anzahl von Meilen voneinander befinden, die Ihrem Charisma-Modifikator entspricht (mindestens 1 Meile). Um einander zu verstehen, muss jeder im Geiste eine Sprache verwenden, die der andere kennt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die telepathische Verbindung dauert einige Minuten, die Ihrer Hexenmeisterstufe entsprechen. Es endet vorzeitig, wenn Sie diese Funktion nutzen, um sich mit einer anderen Kreatur zu verbinden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Zauber des Großen Alten"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Magie deines Gönners sorgt dafür, dass du immer bestimmte Zaubersprüche parat hast; Wenn Sie eine Hexenmeisterstufe erreichen, die in der Tabelle „Großer alter Zauber“ angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Große alte Zaubersprüche"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Hexenmeister-Level",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Erkenne Gedanken, dissonantes Flüstern, phantastische Kraft und Tashas abscheuliches Lachen"
+        ],
+        [
+          "5",
+          "Hellsehen, Hunger von Hadar"
+        ],
+        [
+          "7",
+          "Verwirrung, Aberration beschwören"
+        ],
+        [
+          "9",
+          "Gedächtnis ändern, Telekinese"
+        ]
+      ],
+      "text": "Hexenmeister-Level-Zaubersprüche 3 Gedanken erkennen, Dissonantes Flüstern, Phantomkraft, Tashas abscheuliches Lachen 5 Hellsehen, Hunger von Hadar 7 Verwirrung, Aberration beschwören 9 Gedächtnis modifizieren, Telekinese"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Psychische Zauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie einen Hexenmeisterzauber wirken, der Schaden verursacht, können Sie seinen Schadenstyp in „Psychisch“ ändern. Wenn Sie außerdem einen Hexenmeisterzauber wirken, bei dem es sich um eine Verzauberung oder eine Illusion handelt, können Sie dies ohne verbale oder somatische Komponenten tun."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 6: Hellseherischer Kämpfer"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du mithilfe deines Erwachten Geistes eine telepathische Bindung mit einer Kreatur eingeht, kannst du diese Kreatur dazu zwingen, einen Weisheits-Rettungswurf gegen den SG deines Zauberwurfs auszuführen. Bei einem fehlgeschlagenen Rettungswurf hat die Kreatur einen Nachteil bei Angriffswürfen gegen dich und du hast für die Dauer der Bindung einen Vorteil bei Angriffswürfen gegen diese Kreatur."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie sie erst dann erneut nutzen, wenn Sie einen kurzen oder langen Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Paktmagie-Zauberslot (keine Aktion erforderlich), um sie wieder nutzen zu können."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Eldritch-Hex"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dein außerirdischer Gönner gewährt dir einen mächtigen Fluch. Sie haben immer den Hex-Zauber vorbereitet. Wenn du „Verhexen“ wirkst und eine Fähigkeit wählst, hat das Ziel für die Dauer des Zaubers auch einen Nachteil bei Rettungswürfen der gewählten Fähigkeit."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Gedankenschild"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Gedanken können nicht telepathisch oder auf andere Weise gelesen werden, es sei denn, Sie erlauben dies. Du hast außerdem Resistenz gegen Psi-Schaden und wann immer eine Kreatur dir Psi-Schaden zufügt, erleidet diese Kreatur die gleiche Menge an Schaden, die du erleidest."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Thrall erschaffen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie „Aberration beschwören“ wirken, können Sie diese so ändern, dass keine Konzentration erforderlich ist. Wenn Sie dies tun, beträgt die Wirkungsdauer des Zaubers 1 Minute und bei der Beschwörung verfügt die Aberration über eine Anzahl temporärer Trefferpunkte, die Ihrer Hexenmeisterstufe plus Ihrem Charisma-Modifikator entspricht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus fügt die Aberration dem Ziel beim ersten Mal in jeder Runde, wenn sie eine Kreatur trifft, die unter der Wirkung deiner Verhexung steht, zusätzlichen psychischen Schaden in Höhe des Bonusschadens dieses Zaubers zu."
+    }
+  ],
+  "text": "Entdecken Sie verbotene Lehren unbeschreiblicher Wesen\n\nWenn Sie diese Unterklasse wählen, können Sie sich an ein unaussprechliches Wesen aus dem Fernen Reich oder an einen älteren Gott binden – ein Wesen wie Tharizdun, den angeketteten Gott; Zargon, der Rückkehrer; Hadar, der dunkle Hunger; oder Großer Cthulhu. Oder Sie rufen mehrere Entitäten an, ohne sich an eine zu binden. Die Motive dieser Wesen sind unverständlich und dem Großen Alten könnte Ihre Existenz gleichgültig sein. Aber die Geheimnisse, die Sie gelernt haben, ermöglichen es Ihnen dennoch, seltsame Magie daraus zu ziehen.\n\nStufe 3: Erwachter Geist\n\nSie können eine telepathische Verbindung zwischen Ihrem Geist und dem Geist eines anderen herstellen. Wählen Sie als Bonusaktion eine Kreatur aus, die Sie in einem Umkreis von 30 Fuß um sich selbst sehen können. Sie und die ausgewählte Kreatur können telepathisch miteinander kommunizieren, während Sie beide sich innerhalb einer Anzahl von Meilen voneinander befinden, die Ihrem Charisma-Modifikator entspricht (mindestens 1 Meile). Um einander zu verstehen, muss jeder im Geiste eine Sprache verwenden, die der andere kennt.\n\nDie telepathische Verbindung dauert einige Minuten, die Ihrer Hexenmeisterstufe entsprechen. Es endet vorzeitig, wenn Sie diese Funktion nutzen, um sich mit einer anderen Kreatur zu verbinden.\n\nLevel 3: Zauber des Großen Alten\n\nDie Magie deines Gönners sorgt dafür, dass du immer bestimmte Zaubersprüche parat hast; Wenn Sie eine Hexenmeisterstufe erreichen, die in der Tabelle „Großer alter Zauber“ angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nGroße alte Zaubersprüche\n\nHexenmeister-Level-Zaubersprüche 3 Gedanken erkennen, Dissonantes Flüstern, Phantomkraft, Tashas abscheuliches Lachen 5 Hellsehen, Hunger von Hadar 7 Verwirrung, Aberration beschwören 9 Gedächtnis modifizieren, Telekinese\n\nLevel 3: Psychische Zauber\n\nWenn Sie einen Hexenmeisterzauber wirken, der Schaden verursacht, können Sie seinen Schadenstyp in „Psychisch“ ändern. Wenn Sie außerdem einen Hexenmeisterzauber wirken, bei dem es sich um eine Verzauberung oder eine Illusion handelt, können Sie dies ohne verbale oder somatische Komponenten tun.\n\nStufe 6: Hellseherischer Kämpfer\n\nWenn du mithilfe deines Erwachten Geistes eine telepathische Bindung mit einer Kreatur eingeht, kannst du diese Kreatur dazu zwingen, einen Weisheits-Rettungswurf gegen den SG deines Zauberwurfs auszuführen. Bei einem fehlgeschlagenen Rettungswurf hat die Kreatur einen Nachteil bei Angriffswürfen gegen dich und du hast für die Dauer der Bindung einen Vorteil bei Angriffswürfen gegen diese Kreatur.\n\nSobald Sie diese Funktion nutzen, können Sie sie erst dann erneut nutzen, wenn Sie einen kurzen oder langen Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Paktmagie-Zauberslot (keine Aktion erforderlich), um sie wieder nutzen zu können.\n\nLevel 10: Eldritch-Hex\n\nDein außerirdischer Gönner gewährt dir einen mächtigen Fluch. Sie haben immer den Hex-Zauber vorbereitet. Wenn du „Verhexen“ wirkst und eine Fähigkeit wählst, hat das Ziel für die Dauer des Zaubers auch einen Nachteil bei Rettungswürfen der gewählten Fähigkeit.\n\nLevel 10: Gedankenschild\n\nIhre Gedanken können nicht telepathisch oder auf andere Weise gelesen werden, es sei denn, Sie erlauben dies. Du hast außerdem Resistenz gegen Psi-Schaden und wann immer eine Kreatur dir Psi-Schaden zufügt, erleidet diese Kreatur die gleiche Menge an Schaden, die du erleidest.\n\nLevel 14: Thrall erschaffen\n\nWenn Sie „Aberration beschwören“ wirken, können Sie diese so ändern, dass keine Konzentration erforderlich ist. Wenn Sie dies tun, beträgt die Wirkungsdauer des Zaubers 1 Minute und bei der Beschwörung verfügt die Aberration über eine Anzahl temporärer Trefferpunkte, die Ihrer Hexenmeisterstufe plus Ihrem Charisma-Modifikator entspricht.\n\nDarüber hinaus fügt die Aberration dem Ziel beim ersten Mal in jeder Runde, wenn sie eine Kreatur trifft, die unter der Wirkung deiner Verhexung steht, zusätzlichen psychischen Schaden in Höhe des Bonusschadens dieses Zaubers zu.",
+  "tags": [],
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

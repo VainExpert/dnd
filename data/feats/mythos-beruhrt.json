@@ -1,0 +1,99 @@
+{
+  "id": "mythos-beruhrt",
+  "type": "feat",
+  "name": "Mythos berührt",
+  "original_name": "Mythal Touched",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:mythal-touched",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Level 4+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Level 4+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mythal Ward. Wenn Sie von einem Zauberangriff getroffen werden oder Ihnen ein Rettungswurf gegen einen Zauber misslingt, können Sie auf dem Mythal-Touched Magic-Tisch eine Reaktion würfeln, um einen magischen Effekt zu erzeugen. Wenn ein Effekt einen Rettungswurf erfordert, beträgt der SG 8 plus den um dieses Talent erhöhten Modifikator der Fähigkeit und deinen Uebungsbonus."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diesen Vorteil mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mythenberührte Magie"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "1d20",
+          "Wirkung"
+        ],
+        [
+          "1-2",
+          "Du und jede Kreatur im Umkreis von 15 Fuß um dich führen einen Geschicklichkeits-Rettungswurf aus und erleiden bei einem fehlgeschlagenen Rettungswurf Machtschaden in Höhe des 1W8-fachen der Stufe des auslösenden Zaubers oder halb so viel Schaden bei einem erfolgreichen Rettungswurf."
+        ],
+        [
+          "3-7",
+          "Sie und der Zauberer des auslösenden Zaubers stellen 1 Stunde lang eine telepathische Verbindung her."
+        ],
+        [
+          "8-10",
+          "Mit dem Zauber „Schwerkraft umkehren“ wird die Schwerkraft in einem 15 Fuß hohen und 15 Fuß hohen Zylinder, der auf Sie zentriert ist, für 1 Minute umgekehrt."
+        ],
+        [
+          "11-13",
+          "Sie und der Zauberer des auslösenden Zaubers machen jeweils einen Konstitutions-Rettungswurf. Bei einem fehlgeschlagenen Rettungswurf bleibt die Kreatur bis zum Ende ihres nächsten Zuges im Zustand „Betäubt“."
+        ],
+        [
+          "14-17",
+          "Du erhältst 1 Minute lang einen Bonus von +2 auf deine RK, wodurch der auslösende Zauber möglicherweise zu einem Fehlschlag wird, wenn es sich um einen Zauberangriff handelt."
+        ],
+        [
+          "18-19",
+          "Jeder brennbare, nichtmagische Gegenstand im Umkreis von 10 Fuß um den Zauberwirker des auslösenden Zaubers, der nicht von einer anderen Kreatur getragen oder getragen wird, geht in Flammen auf, erleidet 1W4 Feuerschaden und brennt."
+        ],
+        [
+          "20",
+          "Der auslösende Zauber verschwindet ohne Wirkung und die Aktion, Bonusaktion oder Reaktion, mit der er gewirkt wurde, ist verschwendet. Wenn dieser Zauber mit einem Zauberslot gewirkt wurde, wird der Slot nicht verbraucht."
+        ]
+      ],
+      "text": "1d20 Wirkung 1-2 Du und jede Kreatur im Umkreis von 15 Fuß um dich führen einen Geschicklichkeits-Rettungswurf aus und erleiden bei einem fehlgeschlagenen Rettungswurf Machtschaden in Höhe des 1W8-fachen der Stufe des auslösenden Zaubers oder halb so viel Schaden bei einem erfolgreichen Rettungswurf. 3-7 Du und der Zauberer des auslösenden Zaubers stellen 1 Stunde lang eine telepathische Verbindung her. 8-10 Mit dem Zauber „Schwerkraft umkehren“ wird die Schwerkraft 1 Minute lang in einem 15 Fuß großen und 60 Fuß hohen Zylinder, der auf dich zentriert ist, umgekehrt. 11-13 Sie und der Zauberer des auslösenden Zaubers machen jeweils einen Konstitutions-Rettungswurf. Bei einem fehlgeschlagenen Rettungswurf bleibt die Kreatur bis zum Ende ihres nächsten Zuges im Zustand „Betäubt“. 14-17 Du erhältst 1 Minute lang einen Bonus von +2 auf deine RK, wodurch der auslösende Zauber möglicherweise zu einem Fehlschlag wird, wenn es sich um einen Zauberangriff handelt. 18-19 Jeder brennbare, nichtmagische Gegenstand im Umkreis von 10 Fuß um den Zauberwirker des auslösenden Zaubers, der nicht von einer anderen Kreatur getragen oder getragen wird, geht in Flammen auf, erleidet 1W4 Feuerschaden und brennt. 20 Der auslösende Zauber verschwindet ohne Wirkung und die Aktion, Bonusaktion oder Reaktion, mit der er gewirkt wurde, ist verschwendet. Wenn dieser Zauber mit einem Zauberslot gewirkt wurde, wird der Slot nicht verbraucht."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Level 4+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20.\n\nMythal Ward. Wenn Sie von einem Zauberangriff getroffen werden oder Ihnen ein Rettungswurf gegen einen Zauber misslingt, können Sie auf dem Mythal-Touched Magic-Tisch eine Reaktion würfeln, um einen magischen Effekt zu erzeugen. Wenn ein Effekt einen Rettungswurf erfordert, beträgt der SG 8 plus den um dieses Talent erhöhten Modifikator der Fähigkeit und deinen Uebungsbonus.\n\nSie können diesen Vorteil mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden.\n\nMythenberührte Magie\n\n1d20 Wirkung 1-2 Du und jede Kreatur im Umkreis von 15 Fuß um dich führen einen Geschicklichkeits-Rettungswurf aus und erleiden bei einem fehlgeschlagenen Rettungswurf Machtschaden in Höhe des 1W8-fachen der Stufe des auslösenden Zaubers oder halb so viel Schaden bei einem erfolgreichen Rettungswurf. 3-7 Du und der Zauberer des auslösenden Zaubers stellen 1 Stunde lang eine telepathische Verbindung her. 8-10 Mit dem Zauber „Schwerkraft umkehren“ wird die Schwerkraft 1 Minute lang in einem 15 Fuß großen und 60 Fuß hohen Zylinder, der auf dich zentriert ist, umgekehrt. 11-13 Sie und der Zauberer des auslösenden Zaubers machen jeweils einen Konstitutions-Rettungswurf. Bei einem fehlgeschlagenen Rettungswurf bleibt die Kreatur bis zum Ende ihres nächsten Zuges im Zustand „Betäubt“. 14-17 Du erhältst 1 Minute lang einen Bonus von +2 auf deine RK, wodurch der auslösende Zauber möglicherweise zu einem Fehlschlag wird, wenn es sich um einen Zauberangriff handelt. 18-19 Jeder brennbare, nichtmagische Gegenstand im Umkreis von 10 Fuß um den Zauberwirker des auslösenden Zaubers, der nicht von einer anderen Kreatur getragen oder getragen wird, geht in Flammen auf, erleidet 1W4 Feuerschaden und brennt. 20 Der auslösende Zauber verschwindet ohne Wirkung und die Aktion, Bonusaktion oder Reaktion, mit der er gewirkt wurde, ist verschwendet. Wenn dieser Zauber mit einem Zauberslot gewirkt wurde, wird der Slot nicht verbraucht.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

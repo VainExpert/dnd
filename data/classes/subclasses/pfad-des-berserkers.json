@@ -1,0 +1,75 @@
+{
+  "id": "pfad-des-berserkers",
+  "type": "subclass",
+  "name": "Pfad des Berserkers",
+  "original_name": "Path of the Berserker",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/barbarian:path-of-the-berserker",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Kanalisieren Sie Wut in gewalttätige Wut. Barbaren, die den Pfad des Berserkers beschreiten, richten ihre Wut hauptsächlich auf Gewalt. Ihr Weg ist ein Weg ungezügelter Wut, und sie begeistern sich im Chaos des Kampfes, während sie sich von ihrer Wut ergreifen und stärken lassen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Kanalisieren Sie Wut in gewalttätige Wut. Barbaren, die den Pfad des Berserkers beschreiten, richten ihre Wut hauptsächlich auf Gewalt. Ihr Weg ist ein Weg ungezügelter Wut, und sie begeistern sich im Chaos des Kampfes, während sie sich von ihrer Wut ergreifen und stärken lassen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Raserei"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie „Rücksichtsloser Angriff“ verwenden, während Ihre Wut aktiv ist, fügen Sie dem ersten Ziel, das Sie in Ihrem Zug treffen, mit einem auf Stärke basierenden Angriff zusätzlichen Schaden zu. Um den zusätzlichen Schaden zu bestimmen, würfeln Sie eine Anzahl von W6, die Ihrem Wutschadensbonus entspricht, und addieren Sie sie. Der Schaden hat denselben Typ wie die Waffe oder der unbewaffnete Schlag, die für den Angriff verwendet wurden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 6: Geisteslose Wut"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du bist immun gegen die Zustände „Bezaubert“ und „Verängstigt“, solange deine Wut aktiv ist. Wenn Sie beim Eintritt in Ihre Wut verzaubert oder verängstigt sind, endet der Zustand bei Ihnen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 10: Vergeltung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du Schaden von einer Kreatur erleidest, die sich in einem Umkreis von 5 Fuß um dich befindet, kannst du eine Reaktion ausführen, um einen Nahkampfangriff gegen diese Kreatur durchzuführen, indem du eine Waffe oder einen unbewaffneten Schlag verwendest."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 14: Einschüchternde Präsenz"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion können Sie mit Ihrer bedrohlichen Präsenz und Urkraft andere in Angst und Schrecken versetzen. Wenn du dies tust, muss jede Kreatur deiner Wahl in einer von dir ausgehenden 30-Fuß-Emanation einen Weisheits-Rettungswurf ausführen (SG 8 plus dein Stärkemodifikator und Uebungsbonus). Bei einem fehlgeschlagenen Rettungswurf befindet sich eine Kreatur 1 Minute lang im Zustand „Verängstigt“. Am Ende jedes Zuges der verängstigten Kreatur wiederholt die Kreatur den Rettungswurf und beendet bei einem Erfolg den Effekt auf sich selbst."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Einsatz Ihrer Wut (keine Aktion erforderlich), um sie wieder nutzen zu können."
+    }
+  ],
+  "text": "Kanalisieren Sie Wut in gewalttätige Wut. Barbaren, die den Pfad des Berserkers beschreiten, richten ihre Wut hauptsächlich auf Gewalt. Ihr Weg ist ein Weg ungezügelter Wut, und sie begeistern sich im Chaos des Kampfes, während sie sich von ihrer Wut ergreifen und stärken lassen.\n\nStufe 3: Raserei\n\nWenn Sie „Rücksichtsloser Angriff“ verwenden, während Ihre Wut aktiv ist, fügen Sie dem ersten Ziel, das Sie in Ihrem Zug treffen, mit einem auf Stärke basierenden Angriff zusätzlichen Schaden zu. Um den zusätzlichen Schaden zu bestimmen, würfeln Sie eine Anzahl von W6, die Ihrem Wutschadensbonus entspricht, und addieren Sie sie. Der Schaden hat denselben Typ wie die Waffe oder der unbewaffnete Schlag, die für den Angriff verwendet wurden.\n\nStufe 6: Geisteslose Wut\n\nDu bist immun gegen die Zustände „Bezaubert“ und „Verängstigt“, solange deine Wut aktiv ist. Wenn Sie beim Eintritt in Ihre Wut verzaubert oder verängstigt sind, endet der Zustand bei Ihnen.\n\nStufe 10: Vergeltung\n\nWenn du Schaden von einer Kreatur erleidest, die sich in einem Umkreis von 5 Fuß um dich befindet, kannst du eine Reaktion ausführen, um einen Nahkampfangriff gegen diese Kreatur durchzuführen, indem du eine Waffe oder einen unbewaffneten Schlag verwendest.\n\nStufe 14: Einschüchternde Präsenz\n\nAls Bonusaktion können Sie mit Ihrer bedrohlichen Präsenz und Urkraft andere in Angst und Schrecken versetzen. Wenn du dies tust, muss jede Kreatur deiner Wahl in einer von dir ausgehenden 30-Fuß-Emanation einen Weisheits-Rettungswurf ausführen (SG 8 plus dein Stärkemodifikator und Uebungsbonus). Bei einem fehlgeschlagenen Rettungswurf befindet sich eine Kreatur 1 Minute lang im Zustand „Verängstigt“. Am Ende jedes Zuges der verängstigten Kreatur wiederholt die Kreatur den Rettungswurf und beendet bei einem Erfolg den Effekt auf sich selbst.\n\nSobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Einsatz Ihrer Wut (keine Aktion erforderlich), um sie wieder nutzen zu können.",
+  "tags": [],
+  "class": "Barbar",
+  "class_id": "barbar",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

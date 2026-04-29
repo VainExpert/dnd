@@ -1,0 +1,92 @@
+{
+  "id": "illusionist",
+  "type": "subclass",
+  "name": "Illusionist",
+  "original_name": "Illusionist",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/wizard:illusionist",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Weben Sie subtile Täuschungszauber Sie sind auf Magie spezialisiert, die die Sinne blendet und den Geist täuscht, und die Illusionen, die Sie erschaffen, lassen das Unmögliche real erscheinen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Weben Sie subtile Täuschungszauber Sie sind auf Magie spezialisiert, die die Sinne blendet und den Geist täuscht, und die Illusionen, die Sie erschaffen, lassen das Unmögliche real erscheinen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Illusionsgelehrter"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wählen Sie zwei Zaubererzauber aus der Illusionsschule, die jeweils nicht höher als Stufe 2 sein dürfen, und fügen Sie sie kostenlos Ihrem Zauberbuch hinzu."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie, wann immer Sie Zugriff auf eine neue Stufe an Zauberslots in dieser Klasse erhalten, Ihrem Zauberbuch kostenlos einen Zaubererzauber aus der Schule der Illusion hinzufügen. Der gewählte Zauber muss einer Stufe angehören, für die du über Zauberslots verfügst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Verbesserte Illusionen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können Illusionszauber wirken, ohne verbale Komponenten bereitzustellen, und wenn ein von Ihnen gewirkter Illusionszauber eine Reichweite von mehr als 10 Fuß hat, erhöht sich die Reichweite um 60 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie kennen auch den Cantrip „Minor Illusion“. Wenn Sie es bereits kennen, lernen Sie einen anderen Zauberer-Cantrip Ihrer Wahl. Der Cantrip wird nicht auf die Anzahl Ihrer bekannten Cantrips angerechnet. Sie können mit einem einzigen Zauber von Minor Illusion sowohl einen Ton als auch ein Bild erzeugen und ihn als Bonusaktion wirken."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Phantomkreaturen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast immer die Zauber „Bestie beschwören“ und „Feen beschwören“ vorbereitet. Wann immer du einen Zauber wirkst, kannst du seine Zauberart in „Illusion“ ändern, wodurch die beschworene Kreatur spektral erscheint. Du kannst die Illusionsversion jedes Zaubers wirken, ohne einen Zauberslot zu verbrauchen, aber das Wirken ohne Zauberslot halbiert die Trefferpunkte der Kreatur. Sobald Sie einen Zauberspruch ohne Zauberslot wirken, müssen Sie einen Lange Rast abschließen, bevor Sie den Zauberspruch erneut auf diese Weise wirken können."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Illusionäres Selbst"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn eine Kreatur Sie mit einem Angriffswurf trifft, können Sie eine Reaktion durchführen, um ein illusorisches Duplikat Ihrer selbst zwischen den Angreifer und sich selbst zu stellen. Der Angriff verfehlt Sie automatisch, dann löst sich die Illusion auf."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion verwenden, können Sie sie erst wieder verwenden, wenn Sie eine kurze oder lange Rast beendet haben. Sie können Ihre Nutzung auch wiederherstellen, indem Sie einen Zauberslot der Stufe 2+ verbrauchen (keine Aktion erforderlich)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 14: Illusionäre Realität"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben gelernt, Schattenmagie in Ihre Illusionen einzuweben, um ihnen eine Halbwirklichkeit zu verleihen. Wenn Sie einen Illusionszauber mit einem Zauberslot wirken, können Sie ein unbelebtes, nicht magisches Objekt auswählen, das Teil der Illusion ist, und dieses Objekt real machen. Du kannst dies in deinem Zug als Bonusaktion tun, während der Zauber noch andauert. Das Objekt bleibt 1 Minute lang real und kann während dieser Zeit keinen Schaden verursachen oder Bedingungen erteilen. Sie können beispielsweise die Illusion einer Brücke über einen Abgrund erzeugen, diese dann real umsetzen und sie überqueren."
+    }
+  ],
+  "text": "Weben Sie subtile Täuschungszauber Sie sind auf Magie spezialisiert, die die Sinne blendet und den Geist täuscht, und die Illusionen, die Sie erschaffen, lassen das Unmögliche real erscheinen.\n\nLevel 3: Illusionsgelehrter\n\nWählen Sie zwei Zaubererzauber aus der Illusionsschule, die jeweils nicht höher als Stufe 2 sein dürfen, und fügen Sie sie kostenlos Ihrem Zauberbuch hinzu.\n\nDarüber hinaus können Sie, wann immer Sie Zugriff auf eine neue Stufe an Zauberslots in dieser Klasse erhalten, Ihrem Zauberbuch kostenlos einen Zaubererzauber aus der Schule der Illusion hinzufügen. Der gewählte Zauber muss einer Stufe angehören, für die du über Zauberslots verfügst.\n\nLevel 3: Verbesserte Illusionen\n\nSie können Illusionszauber wirken, ohne verbale Komponenten bereitzustellen, und wenn ein von Ihnen gewirkter Illusionszauber eine Reichweite von mehr als 10 Fuß hat, erhöht sich die Reichweite um 60 Fuß.\n\nSie kennen auch den Cantrip „Minor Illusion“. Wenn Sie es bereits kennen, lernen Sie einen anderen Zauberer-Cantrip Ihrer Wahl. Der Cantrip wird nicht auf die Anzahl Ihrer bekannten Cantrips angerechnet. Sie können mit einem einzigen Zauber von Minor Illusion sowohl einen Ton als auch ein Bild erzeugen und ihn als Bonusaktion wirken.\n\nLevel 6: Phantomkreaturen\n\nDu hast immer die Zauber „Bestie beschwören“ und „Feen beschwören“ vorbereitet. Wann immer du einen Zauber wirkst, kannst du seine Zauberart in „Illusion“ ändern, wodurch die beschworene Kreatur spektral erscheint. Du kannst die Illusionsversion jedes Zaubers wirken, ohne einen Zauberslot zu verbrauchen, aber das Wirken ohne Zauberslot halbiert die Trefferpunkte der Kreatur. Sobald Sie einen Zauberspruch ohne Zauberslot wirken, müssen Sie einen Lange Rast abschließen, bevor Sie den Zauberspruch erneut auf diese Weise wirken können.\n\nLevel 10: Illusionäres Selbst\n\nWenn eine Kreatur Sie mit einem Angriffswurf trifft, können Sie eine Reaktion durchführen, um ein illusorisches Duplikat Ihrer selbst zwischen den Angreifer und sich selbst zu stellen. Der Angriff verfehlt Sie automatisch, dann löst sich die Illusion auf.\n\nSobald Sie diese Funktion verwenden, können Sie sie erst wieder verwenden, wenn Sie eine kurze oder lange Rast beendet haben. Sie können Ihre Nutzung auch wiederherstellen, indem Sie einen Zauberslot der Stufe 2+ verbrauchen (keine Aktion erforderlich).\n\nStufe 14: Illusionäre Realität\n\nSie haben gelernt, Schattenmagie in Ihre Illusionen einzuweben, um ihnen eine Halbwirklichkeit zu verleihen. Wenn Sie einen Illusionszauber mit einem Zauberslot wirken, können Sie ein unbelebtes, nicht magisches Objekt auswählen, das Teil der Illusion ist, und dieses Objekt real machen. Du kannst dies in deinem Zug als Bonusaktion tun, während der Zauber noch andauert. Das Objekt bleibt 1 Minute lang real und kann während dieser Zeit keinen Schaden verursachen oder Bedingungen erteilen. Sie können beispielsweise die Illusion einer Brücke über einen Abgrund erzeugen, diese dann real umsetzen und sie überqueren.",
+  "tags": [],
+  "class": "Magier",
+  "class_id": "magier",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

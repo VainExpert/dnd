@@ -1,0 +1,38 @@
+{
+  "id": "genasi",
+  "type": "race",
+  "name": "Genasi",
+  "original_name": null,
+  "rules_version": "2024",
+  "source": "",
+  "source_url": null,
+  "source_page": null,
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": null,
+  "category": "",
+  "group": "",
+  "prerequisites": [],
+  "summary": "",
+  "entries": [],
+  "text": "",
+  "tags": [],
+  "size": [],
+  "creature_type": "",
+  "speed": {
+    "walk": null,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

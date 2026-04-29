@@ -1,0 +1,82 @@
+{
+  "id": "aberrantes-drachenmal",
+  "type": "feat",
+  "name": "Aberrantes Drachenmal",
+  "original_name": "Aberrant Dragonmark",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:aberrant-dragonmark",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Drachenmale",
+  "prerequisites": [],
+  "summary": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Aberrante Seelenstärke. Wenn Ihnen ein Verfassungs-Rettungswurf misslingt, können Sie eine Reaktion nutzen, um 1W4 zu würfeln und die gewürfelte Zahl zum Rettungswurf hinzuzufügen, wodurch der Misserfolg möglicherweise in einen Erfolg umgewandelt wird. Sobald Sie diesen Vorteil genutzt haben, können Sie ihn erst wieder nutzen, wenn Sie eine Lange Rast beendet haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Aberrante Magie. Du kennst einen Cantrip deiner Wahl aus der Zauberliste „Zauberer“. Wählen Sie außerdem einen Zauber der Stufe 1 aus dieser Zauberliste. Du hast diesen Zauber immer vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du einen kurzen oder langen Rast beendet hast. Sie können diesen Zauber auch mit allen Zauberplätzen wirken, die Sie haben. Konstitution ist deine Zauberfähigkeit für diesen Zauber."
+    },
+    {
+      "type": "paragraph",
+      "text": "Aberranter Anstieg. Wenn Sie den Zauber der Stufe 1 dieses Talents wirken, können Sie einen Ihrer Trefferpunktwürfel ausgeben und ihn würfeln. Wenn Sie eine gerade Zahl würfeln, erhalten Sie so viele temporäre Trefferpunkte wie die gewürfelte Zahl. Wenn du eine ungerade Zahl würfelst, erleidet eine Kreatur im Umkreis von 30 Fuß um dich (ohne dich selbst) Machtschaden in Höhe der gewürfelten Zahl. Wenn keine anderen Kreaturen in Reichweite sind, erleidest du den Schaden."
+    }
+  ],
+  "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)\n\nSie profitieren von folgenden Vorteilen.\n\nAberrante Seelenstärke. Wenn Ihnen ein Verfassungs-Rettungswurf misslingt, können Sie eine Reaktion nutzen, um 1W4 zu würfeln und die gewürfelte Zahl zum Rettungswurf hinzuzufügen, wodurch der Misserfolg möglicherweise in einen Erfolg umgewandelt wird. Sobald Sie diesen Vorteil genutzt haben, können Sie ihn erst wieder nutzen, wenn Sie eine Lange Rast beendet haben.\n\nAberrante Magie. Du kennst einen Cantrip deiner Wahl aus der Zauberliste „Zauberer“. Wählen Sie außerdem einen Zauber der Stufe 1 aus dieser Zauberliste. Du hast diesen Zauber immer vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du einen kurzen oder langen Rast beendet hast. Sie können diesen Zauber auch mit allen Zauberplätzen wirken, die Sie haben. Konstitution ist deine Zauberfähigkeit für diesen Zauber.\n\nAberranter Anstieg. Wenn Sie den Zauber der Stufe 1 dieses Talents wirken, können Sie einen Ihrer Trefferpunktwürfel ausgeben und ihn würfeln. Wenn Sie eine gerade Zahl würfeln, erhalten Sie so viele temporäre Trefferpunkte wie die gewürfelte Zahl. Wenn du eine ungerade Zahl würfelst, erleidet eine Kreatur im Umkreis von 30 Fuß um dich (ohne dich selbst) Machtschaden in Höhe der gewürfelten Zahl. Wenn keine anderen Kreaturen in Reichweite sind, erleidest du den Schaden.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [
+    {
+      "id": "aberrantes-drachenmal-level-1-spell",
+      "type": "spell",
+      "choose": 1,
+      "spell_levels": [
+        1
+      ],
+      "source": "aberrantes-drachenmal",
+      "spell_list_names": [
+        "Zauberer"
+      ]
+    }
+  ],
+  "spellcasting": {
+    "ability_choices": [
+      "con"
+    ],
+    "spell_choices": [
+      {
+        "id": "aberrantes-drachenmal-level-1-spell",
+        "type": "spell",
+        "choose": 1,
+        "spell_levels": [
+          1
+        ],
+        "source": "aberrantes-drachenmal",
+        "spell_list_names": [
+          "Zauberer"
+        ]
+      }
+    ],
+    "always_prepared": true
+  }
+}

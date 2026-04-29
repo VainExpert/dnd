@@ -1,0 +1,149 @@
+{
+  "id": "gnom",
+  "type": "race",
+  "name": "Gnom",
+  "original_name": "Gnome",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/species:gnome",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Gnome sind magische Wesen, die von Göttern der Erfindung, der Illusionen und des Lebens im Untergrund erschaffen wurden. Die frühesten Gnome wurden von anderen Völkern aufgrund ihrer verschwiegenen Natur und ihrer Neigung, in Wäldern und Höhlen zu leben, selten gesehen. Was ihnen an Größe fehlte, machten sie durch Klugheit wett. Sie verwirrten Raubtiere mit Fallen und labyrinthischen Tunneln. Sie lernten auch Magie von Göttern wie Garl Glittergold, Baervan Wildwanderer und Baravar Cloakshadow, die sie verkleidet besuchten. Diese Magie schuf schließlich die Abstammungslinien der Waldzwerge und Felszwerge.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Gnome sind magische Wesen, die von Göttern der Erfindung, der Illusionen und des Lebens im Untergrund erschaffen wurden. Die frühesten Gnome wurden von anderen Völkern aufgrund ihrer verschwiegenen Natur und ihrer Neigung, in Wäldern und Höhlen zu leben, selten gesehen. Was ihnen an Größe fehlte, machten sie durch Klugheit wett. Sie verwirrten Raubtiere mit Fallen und labyrinthischen Tunneln. Sie lernten auch Magie von Göttern wie Garl Glittergold, Baervan Wildwanderer und Baravar Cloakshadow, die sie verkleidet besuchten. Diese Magie schuf schließlich die Abstammungslinien der Waldzwerge und Felszwerge."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zwerge sind zierliche Menschen mit großen Augen und spitzen Ohren, die etwa 425 Jahre alt werden. Viele Zwerge mögen das Gefühl eines Daches über dem Kopf, auch wenn dieses „Dach“ nichts weiter als ein Hut ist."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Gnomeneigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Humanoid Größe: Klein (ca. 90–120 cm groß) Geschwindigkeit: 9 m"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Gnom hast du diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gnomische List. Sie haben einen Vorteil in Bezug auf Intelligenz, Weisheit und Charisma des Rettungswurfs."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gnomische Linie. Sie sind Teil einer Abstammungslinie, die Ihnen übernatürliche Fähigkeiten verleiht. Wählen Sie eine der folgenden Optionen; Was auch immer Sie wählen: Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für die Zauber, die Sie mit dieser Eigenschaft wirken (wählen Sie die Fähigkeit, wenn Sie die Abstammungslinie auswählen):"
+    },
+    {
+      "type": "paragraph",
+      "text": "Waldzwerg. Sie kennen den Cantrip „Minor Illusion“. Sie haben auch immer den Zauber „Mit Tieren sprechen“ vorbereitet. Du kannst es ohne Zauberslot so oft wirken, wie es deinem Uebungsbonus entspricht, und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest. Sie können auch alle verfügbaren Zauberslots verwenden, um den Zauber zu wirken."
+    },
+    {
+      "type": "paragraph",
+      "text": "Felsenzwerg. Sie kennen die Cantrips „Mending“ und „Prestidigitation“. Darüber hinaus können Sie 10 Minuten damit verbringen, „Prestidigitation“ zu wirken, um ein winziges Uhrwerkgerät (Wechselstrom 5,1 PS) zu erschaffen, beispielsweise ein Spielzeug, einen Feueranzünder oder eine Spieluhr. Wenn Sie das Gerät erstellen, bestimmen Sie seine Funktion, indem Sie einen Effekt aus Prestidigitation auswählen; Das Gerät erzeugt diesen Effekt immer dann, wenn Sie oder eine andere Kreatur eine Bonusaktion ausführen, um es durch eine Berührung zu aktivieren. Wenn der ausgewählte Effekt Optionen enthält, wählen Sie beim Erstellen eine dieser Optionen für das Gerät aus. Wenn Sie beispielsweise den Effekt „Entzünden/Löschen“ des Zaubers wählen, bestimmen Sie, ob das Gerät Feuer entzündet oder löscht; Das Gerät kann nicht beides. Sie können gleichzeitig über drei solcher Geräte verfügen, und jedes zerfällt 8 Stunden nach seiner Erstellung oder wenn Sie es mit einer Berührung als Nutzen-Aktion zerlegen."
+    }
+  ],
+  "text": "Gnome sind magische Wesen, die von Göttern der Erfindung, der Illusionen und des Lebens im Untergrund erschaffen wurden. Die frühesten Gnome wurden von anderen Völkern aufgrund ihrer verschwiegenen Natur und ihrer Neigung, in Wäldern und Höhlen zu leben, selten gesehen. Was ihnen an Größe fehlte, machten sie durch Klugheit wett. Sie verwirrten Raubtiere mit Fallen und labyrinthischen Tunneln. Sie lernten auch Magie von Göttern wie Garl Glittergold, Baervan Wildwanderer und Baravar Cloakshadow, die sie verkleidet besuchten. Diese Magie schuf schließlich die Abstammungslinien der Waldzwerge und Felszwerge.\n\nZwerge sind zierliche Menschen mit großen Augen und spitzen Ohren, die etwa 425 Jahre alt werden. Viele Zwerge mögen das Gefühl eines Daches über dem Kopf, auch wenn dieses „Dach“ nichts weiter als ein Hut ist.\n\nGnomeneigenschaften\n\nKreaturentyp: Humanoid Größe: Klein (ca. 90–120 cm groß) Geschwindigkeit: 9 m\n\nAls Gnom hast du diese besonderen Eigenschaften.\n\nDunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß.\n\nGnomische List. Sie haben einen Vorteil in Bezug auf Intelligenz, Weisheit und Charisma des Rettungswurfs.\n\nGnomische Linie. Sie sind Teil einer Abstammungslinie, die Ihnen übernatürliche Fähigkeiten verleiht. Wählen Sie eine der folgenden Optionen; Was auch immer Sie wählen: Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für die Zauber, die Sie mit dieser Eigenschaft wirken (wählen Sie die Fähigkeit, wenn Sie die Abstammungslinie auswählen):\n\nWaldzwerg. Sie kennen den Cantrip „Minor Illusion“. Sie haben auch immer den Zauber „Mit Tieren sprechen“ vorbereitet. Du kannst es ohne Zauberslot so oft wirken, wie es deinem Uebungsbonus entspricht, und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest. Sie können auch alle verfügbaren Zauberslots verwenden, um den Zauber zu wirken.\n\nFelsenzwerg. Sie kennen die Cantrips „Mending“ und „Prestidigitation“. Darüber hinaus können Sie 10 Minuten damit verbringen, „Prestidigitation“ zu wirken, um ein winziges Uhrwerkgerät (Wechselstrom 5,1 PS) zu erschaffen, beispielsweise ein Spielzeug, einen Feueranzünder oder eine Spieluhr. Wenn Sie das Gerät erstellen, bestimmen Sie seine Funktion, indem Sie einen Effekt aus Prestidigitation auswählen; Das Gerät erzeugt diesen Effekt immer dann, wenn Sie oder eine andere Kreatur eine Bonusaktion ausführen, um es durch eine Berührung zu aktivieren. Wenn der ausgewählte Effekt Optionen enthält, wählen Sie beim Erstellen eine dieser Optionen für das Gerät aus. Wenn Sie beispielsweise den Effekt „Entzünden/Löschen“ des Zaubers wählen, bestimmen Sie, ob das Gerät Feuer entzündet oder löscht; Das Gerät kann nicht beides. Sie können gleichzeitig über drei solcher Geräte verfügen, und jedes zerfällt 8 Stunden nach seiner Erstellung oder wenn Sie es mit einer Berührung als Nutzen-Aktion zerlegen.",
+  "tags": [],
+  "size": [
+    "Klein"
+  ],
+  "creature_type": "Humanoid Größe: Klein (ca",
+  "speed": {
+    "walk": 3,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Dunkelsicht",
+      "text": "Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß."
+    },
+    {
+      "name": "Gnomische List",
+      "text": "Sie haben einen Vorteil in Bezug auf Intelligenz, Weisheit und Charisma des Rettungswurfs."
+    },
+    {
+      "name": "Gnomische Linie",
+      "text": "Sie sind Teil einer Abstammungslinie, die Ihnen übernatürliche Fähigkeiten verleiht. Wählen Sie eine der folgenden Optionen; Was auch immer Sie wählen: Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für die Zauber, die Sie mit dieser Eigenschaft wirken (wählen Sie die Fähigkeit, wenn Sie die Abstammungslinie auswählen):"
+    },
+    {
+      "name": "Waldzwerg",
+      "text": "Sie kennen den Cantrip „Minor Illusion“. Sie haben auch immer den Zauber „Mit Tieren sprechen“ vorbereitet. Du kannst es ohne Zauberslot so oft wirken, wie es deinem Uebungsbonus entspricht, und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest. Sie können auch alle verfügbaren Zauberslots verwenden, um den Zauber zu wirken."
+    },
+    {
+      "name": "Felsenzwerg",
+      "text": "Sie kennen die Cantrips „Mending“ und „Prestidigitation“. Darüber hinaus können Sie 10 Minuten damit verbringen, „Prestidigitation“ zu wirken, um ein winziges Uhrwerkgerät (Wechselstrom 5,1 PS) zu erschaffen, beispielsweise ein Spielzeug, einen Feueranzünder oder eine Spieluhr. Wenn Sie das Gerät erstellen, bestimmen Sie seine Funktion, indem Sie einen Effekt aus Prestidigitation auswählen; Das Gerät erzeugt diesen Effekt immer dann, wenn Sie oder eine andere Kreatur eine Bonusaktion ausführen, um es durch eine Berührung zu aktivieren. Wenn der ausgewählte Effekt Optionen enthält, wählen Sie beim Erstellen eine dieser Optionen für das Gerät aus. Wenn Sie beispielsweise den Effekt „Entzünden/Löschen“ des Zaubers wählen, bestimmen Sie, ob das Gerät Feuer entzündet oder löscht; Das Gerät kann nicht beides. Sie können gleichzeitig über drei solcher Geräte verfügen, und jedes zerfällt 8 Stunden nach seiner Erstellung oder wenn Sie es mit einer Berührung als Nutzen-Aktion zerlegen."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": [
+    {
+      "id": "gnom-felsenzwerg-cantrips",
+      "type": "spell",
+      "choose": 1,
+      "spell_levels": [
+        0
+      ],
+      "source": "gnom-felsenzwerg"
+    },
+    {
+      "id": "gnom-felsenzwerg-cantrips",
+      "type": "spell",
+      "choose": 1,
+      "spell_levels": [
+        0
+      ],
+      "source": "gnom-felsenzwerg"
+    },
+    {
+      "id": "gnom-felsenzwerg-cantrips",
+      "type": "spell",
+      "choose": 1,
+      "spell_levels": [
+        0
+      ],
+      "source": "gnom-felsenzwerg"
+    },
+    {
+      "id": "gnom-felsenzwerg-cantrips",
+      "type": "spell",
+      "choose": 1,
+      "spell_levels": [
+        0
+      ],
+      "source": "gnom-felsenzwerg"
+    },
+    {
+      "id": "gnom-felsenzwerg-cantrips",
+      "type": "spell",
+      "choose": 1,
+      "spell_levels": [
+        0
+      ],
+      "source": "gnom-felsenzwerg"
+    }
+  ]
+}

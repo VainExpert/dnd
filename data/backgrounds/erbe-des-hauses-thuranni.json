@@ -1,0 +1,85 @@
+{
+  "id": "erbe-des-hauses-thuranni",
+  "type": "background",
+  "name": "Erbe des Hauses Thuranni",
+  "original_name": "House Thuranni Heir",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/background:house-thuranni-heir",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Geschicklichkeit, Intelligenz, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Geschicklichkeit, Intelligenz, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Mal des Schattens"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeitskompetenzen: Leistung und Heimlichkeit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse: Wählen Sie eine Art Musikinstrument"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Musikinstrument (wie oben), Kostüm, feine Kleidung, 13 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Angesichts der kurzen Geschichte des Hauses Thuranni und seiner Konzentration auf Spionage erwarten seine Anführer, dass Sie bei jeder Gelegenheit die Interessen des Hauses fördern. Während der Gründungsjahre des Hauses als unabhängige Einheit wurde jeder Ihrer Schritte genau beobachtet. Das soll nicht heißen, dass jeder Thuranni-Erbe auf Geheiß der Hausältesten aktiv spionieren muss. Aber auch die isoliertesten Künstler und Kunsthandwerker des Hauses müssen über das aktuelle politische Geschehen auf dem Laufenden bleiben und auf Anfrage Informationen weitergeben oder sammeln."
+    }
+  ],
+  "text": "Fähigkeitswerte: Geschicklichkeit, Intelligenz, Charisma\n\nTalent: Mal des Schattens\n\nFertigkeitskompetenzen: Leistung und Heimlichkeit\n\nWerkzeugkenntnisse: Wählen Sie eine Art Musikinstrument\n\nAusrüstung: Wähle A oder B: (A) Musikinstrument (wie oben), Kostüm, feine Kleidung, 13 GP; oder (B) 50 GP\n\nAngesichts der kurzen Geschichte des Hauses Thuranni und seiner Konzentration auf Spionage erwarten seine Anführer, dass Sie bei jeder Gelegenheit die Interessen des Hauses fördern. Während der Gründungsjahre des Hauses als unabhängige Einheit wurde jeder Ihrer Schritte genau beobachtet. Das soll nicht heißen, dass jeder Thuranni-Erbe auf Geheiß der Hausältesten aktiv spionieren muss. Aber auch die isoliertesten Künstler und Kunsthandwerker des Hauses müssen über das aktuelle politische Geschehen auf dem Laufenden bleiben und auf Anfrage Informationen weitergeben oder sammeln.",
+  "tags": [],
+  "ability_scores": [
+    "dex",
+    "int",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "dex",
+      "int",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "mal-des-schattens-fertigkeitskompetenzen-leistung-und-heimlichkeit-werkzeugkenntnisse-waehlen-sie-eine-art-musikinstrument",
+  "granted_feat_name": "Mal des Schattens\n\nFertigkeitskompetenzen: Leistung und Heimlichkeit\n\nWerkzeugkenntnisse: Wählen Sie eine Art Musikinstrument\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Musikinstrument (wie oben), Kostüm, feine Kleidung, 13 GP; oder (B) 50 GP\n\nAngesichts der kurzen Geschichte des Hauses Thuranni und seiner Konzentration auf Spionage erwarten seine Anführer, dass Sie bei jeder Gelegenheit die Interessen des Hauses fördern. Während der Gründungsjahre des Hauses als unabhängige Einheit wurde jeder Ihrer Schritte genau beobachtet. Das soll nicht heißen, dass jeder Thuranni-Erbe auf Geheiß der Hausältesten aktiv spionieren muss. Aber auch die isoliertesten Künstler und Kunsthandwerker des Hauses müssen über das aktuelle politische Geschehen auf dem Laufenden bleiben und auf Anfrage Informationen weitergeben oder sammeln"
+    }
+  ]
+}

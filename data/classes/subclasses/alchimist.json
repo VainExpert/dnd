@@ -1,0 +1,195 @@
+{
+  "id": "alchimist",
+  "type": "subclass",
+  "name": "Alchimist",
+  "original_name": "Alchemist",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/artificer:alchemist",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Stelle magische Elixiere und Tränke her. Ein Alchemist ist ein Experte darin, Reagenzien zu kombinieren, um magische Effekte zu erzielen. Alchemisten nutzen ihre Schöpfungen, um Leben zu spenden und es zu entziehen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Stelle magische Elixiere und Tränke her. Ein Alchemist ist ein Experte darin, Reagenzien zu kombinieren, um magische Effekte zu erzielen. Alchemisten nutzen ihre Schöpfungen, um Leben zu spenden und es zu entziehen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Handwerkszeug"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse. Sie erwerben Kenntnisse im Umgang mit Alchemistenbedarf und dem Kräuterkunde-Kit. Wenn Sie bereits über eine dieser Fähigkeiten verfügen, erwerben Sie Kenntnisse in einer anderen Art von Handwerkswerkzeugen Ihrer Wahl (oder in zwei anderen Arten, wenn Sie beide haben)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zaubertrankherstellung. Wenn Sie einen Trank mithilfe der Herstellungsregeln im Dungeon Master’s Guide brauen, halbiert sich die für die Herstellung erforderliche Zeit."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Alchemistenzauber."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine in der Alchemist-Zaubertabelle angegebene Stufe des Kunsthandwerkers erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Alchemistenzauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Artificer-Stufe",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Heilendes Wort, Strahl der Krankheit"
+        ],
+        [
+          "5",
+          "Flammende Kugel, Melfs Säurepfeil"
+        ],
+        [
+          "9",
+          "Gasförmige Form, Massenheilungswort"
+        ],
+        [
+          "13",
+          "Todesabteilung, Vitriolische Sphäre"
+        ],
+        [
+          "17",
+          "Cloudkill, Raise Dead"
+        ]
+      ],
+      "text": "Zauber der Stufe „Artificer“ 3 Heilendes Wort, Strahl der Krankheit 5 Flammende Kugel, Melfs Säurepfeil 9 Gasförmige Form, Massenheilendes Wort 13 Todesschutz, Vitriolische Sphäre 17 Cloudkill, Tote erwecken"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Experimentelles Elixier"
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie einen Lange Rast fertigstellen, während Sie die Vorräte des Alchemisten in der Hand haben, können Sie dieses Werkzeug verwenden, um auf magische Weise zwei Elixiere herzustellen. Würfeln Sie für jedes Elixier auf der Tabelle „Experimentelles Elixier“, um den Effekt des Elixiers zu erhalten, der ausgelöst wird, wenn jemand das Elixier trinkt. Das Elixier erscheint in einer Phiole und die Phiole verschwindet, wenn das Elixier getrunken oder ausgegossen wird. Wenn nach Beendigung einer Lange Rast noch ein Elixier übrig ist, verschwinden das Elixier und seine Phiole."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ein Elixier trinken. Als Bonusaktion kann eine Kreatur das Elixier trinken oder es einer anderen Kreatur im Umkreis von 5 Fuß um sich selbst verabreichen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zusätzliche Elixiere herstellen. Als magische Aktion können Sie, während Sie die Vorräte des Alchemisten besitzen, einen Zauberplatz aufwenden, um ein weiteres Elixier herzustellen. Wenn Sie dies tun, wählen Sie den Effekt aus der Tabelle „Experimentelles Elixier“, anstatt zu würfeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie bestimmte Artificer-Level erreichen, können Sie am Ende jedes Langen Rasts ein zusätzliches Elixier herstellen: insgesamt drei auf Level 5, vier auf Level 9 und fünf auf Level 15."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Experimentelles Elixier"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "D6",
+          "Wirkung"
+        ],
+        [
+          "1",
+          "Heilung. Der Trinker erhält eine Anzahl an Trefferpunkten zurück, die 2W8 plus Ihrem Intelligenzmodifikator entspricht. Die Anzahl der wiederhergestellten Trefferpunkte erhöht sich um 1W8, wenn Sie die Level 9 (3W8) und 15 (4W8) des Kunsthandwerkers erreichen."
+        ],
+        [
+          "2",
+          "Schnelligkeit. Die Geschwindigkeit des Trinkers erhöht sich 1 Stunde lang um 10 Fuß. Dieser Bonus erhöht sich, wenn Sie die Artificer-Stufen 9 (15 Fuß) und 15 (20 Fuß) erreichen."
+        ],
+        [
+          "3",
+          "Widerstandsfähigkeit. Der Trinker erhält 10 Minuten lang einen Bonus von +1 auf seine RK. Die Dauer erhöht sich, wenn Sie die Artificer-Stufen 9 (1 Stunde) und 15 (8 Stunden) erreichen."
+        ],
+        [
+          "4",
+          "Mut. Der Trinker kann 1W4 würfeln und die gewürfelte Zahl zu jedem Angriffswurf und Rettungswurf addieren, den er für die nächste Minute macht. Die Dauer erhöht sich, wenn Sie die Artificer-Stufen 9 (10 Minuten) und 15 (1 Stunde) erreichen."
+        ],
+        [
+          "5",
+          "Flug. Der Trinker erreicht 10 Minuten lang eine Fluggeschwindigkeit von 10 Fuß. Die Fluggeschwindigkeit erhöht sich, wenn Sie die Artificer-Stufen 9 (20 Fuß) und 15 (30 Fuß) erreichen."
+        ],
+        [
+          "6",
+          "Die Wirkung des Elixiers bestimmen Sie, indem Sie eine der anderen Zeilen dieser Tabelle auswählen."
+        ]
+      ],
+      "text": "D6 Effekt 1 Heilung. Der Trinker erhält eine Anzahl an Trefferpunkten zurück, die 2W8 plus Ihrem Intelligenzmodifikator entspricht. Die Anzahl der wiederhergestellten Trefferpunkte erhöht sich um 1W8, wenn Sie die Level 9 (3W8) und 15 (4W8) des Kunsthandwerkers erreichen. 2 Schnelligkeit. Die Geschwindigkeit des Trinkers erhöht sich 1 Stunde lang um 10 Fuß. Dieser Bonus erhöht sich, wenn Sie die Artificer-Stufen 9 (15 Fuß) und 15 (20 Fuß) erreichen. 3 Resilienz. Der Trinker erhält 10 Minuten lang einen Bonus von +1 auf seine RK. Die Dauer erhöht sich, wenn Sie die Artificer-Stufen 9 (1 Stunde) und 15 (8 Stunden) erreichen. 4 Mut. Der Trinker kann 1W4 würfeln und die gewürfelte Zahl zu jedem Angriffswurf und Rettungswurf addieren, den er für die nächste Minute macht. Die Dauer erhöht sich, wenn Sie die Artificer-Stufen 9 (10 Minuten) und 15 (1 Stunde) erreichen. 5 Flug. Der Trinker erreicht 10 Minuten lang eine Fluggeschwindigkeit von 10 Fuß. Die Fluggeschwindigkeit erhöht sich, wenn Sie die Artificer-Stufen 9 (20 Fuß) und 15 (30 Fuß) erreichen. 6 Du bestimmst die Wirkung des Elixiers, indem du eine der anderen Zeilen dieser Tabelle auswählst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 5: Alchemistischer Gelehrter"
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn du einen Zauber mit den Vorräten deines Alchemisten als Zauberfokus wirkst, erhältst du einen Bonus auf einen Zauberwurf. Dieser Wurf muss Trefferpunkte wiederherstellen oder ein Schadenswurf sein, der Säure-, Feuer- oder Giftschaden verursacht. Der Bonus entspricht Ihrem Intelligenzmodifikator (Mindestbonus von +1)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 9: Wiederherstellungsreagenzien"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können „Geringe Wiederherstellung“ wirken, ohne einen Zauberslot zu verbrauchen und ohne den Zauber vorzubereiten, vorausgesetzt, Sie verwenden die Vorräte des Alchemisten als Zauberfokus. Sie können dies so oft tun, wie es Ihrem Intelligenzmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Chemische Beherrschung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Alchemistischer Ausbruch. Wenn Sie einen Kunsthandwerkerzauber wirken, der einem Ziel Säure-, Feuer- oder Giftschaden zufügt, können Sie diesem Ziel auch 2W8 Machtschaden zufügen. Du kannst diesen Vorteil in jedem deiner Züge nur einmal nutzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Chemische Beständigkeit. Du erhältst Resistenz gegen Säure- und Giftschaden. Sie erhalten außerdem Immunität gegen den Zustand „Vergiftet“."
+    },
+    {
+      "type": "paragraph",
+      "text": "Beschworener Kessel. Sie können Tashas sprudelnden Kessel wirken, ohne einen Zauberslot zu verbrauchen, ohne den Zauber vorzubereiten und ohne Materialkomponenten, vorausgesetzt, Sie verwenden die Vorräte des Alchemisten als Zauberfokus. Sobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast beendet haben."
+    }
+  ],
+  "text": "Stelle magische Elixiere und Tränke her. Ein Alchemist ist ein Experte darin, Reagenzien zu kombinieren, um magische Effekte zu erzielen. Alchemisten nutzen ihre Schöpfungen, um Leben zu spenden und es zu entziehen.\n\nLevel 3: Handwerkszeug\n\nSie profitieren von folgenden Vorteilen.\n\nWerkzeugkenntnisse. Sie erwerben Kenntnisse im Umgang mit Alchemistenbedarf und dem Kräuterkunde-Kit. Wenn Sie bereits über eine dieser Fähigkeiten verfügen, erwerben Sie Kenntnisse in einer anderen Art von Handwerkswerkzeugen Ihrer Wahl (oder in zwei anderen Arten, wenn Sie beide haben).\n\nZaubertrankherstellung. Wenn Sie einen Trank mithilfe der Herstellungsregeln im Dungeon Master’s Guide brauen, halbiert sich die für die Herstellung erforderliche Zeit.\n\nStufe 3: Alchemistenzauber.\n\nWenn Sie eine in der Alchemist-Zaubertabelle angegebene Stufe des Kunsthandwerkers erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nAlchemistenzauber\n\nZauber der Stufe „Artificer“ 3 Heilendes Wort, Strahl der Krankheit 5 Flammende Kugel, Melfs Säurepfeil 9 Gasförmige Form, Massenheilendes Wort 13 Todesschutz, Vitriolische Sphäre 17 Cloudkill, Tote erwecken\n\nLevel 3: Experimentelles Elixier\n\nImmer wenn Sie einen Lange Rast fertigstellen, während Sie die Vorräte des Alchemisten in der Hand haben, können Sie dieses Werkzeug verwenden, um auf magische Weise zwei Elixiere herzustellen. Würfeln Sie für jedes Elixier auf der Tabelle „Experimentelles Elixier“, um den Effekt des Elixiers zu erhalten, der ausgelöst wird, wenn jemand das Elixier trinkt. Das Elixier erscheint in einer Phiole und die Phiole verschwindet, wenn das Elixier getrunken oder ausgegossen wird. Wenn nach Beendigung einer Lange Rast noch ein Elixier übrig ist, verschwinden das Elixier und seine Phiole.\n\nEin Elixier trinken. Als Bonusaktion kann eine Kreatur das Elixier trinken oder es einer anderen Kreatur im Umkreis von 5 Fuß um sich selbst verabreichen.\n\nZusätzliche Elixiere herstellen. Als magische Aktion können Sie, während Sie die Vorräte des Alchemisten besitzen, einen Zauberplatz aufwenden, um ein weiteres Elixier herzustellen. Wenn Sie dies tun, wählen Sie den Effekt aus der Tabelle „Experimentelles Elixier“, anstatt zu würfeln.\n\nWenn Sie bestimmte Artificer-Level erreichen, können Sie am Ende jedes Langen Rasts ein zusätzliches Elixier herstellen: insgesamt drei auf Level 5, vier auf Level 9 und fünf auf Level 15.\n\nExperimentelles Elixier\n\nD6 Effekt 1 Heilung. Der Trinker erhält eine Anzahl an Trefferpunkten zurück, die 2W8 plus Ihrem Intelligenzmodifikator entspricht. Die Anzahl der wiederhergestellten Trefferpunkte erhöht sich um 1W8, wenn Sie die Level 9 (3W8) und 15 (4W8) des Kunsthandwerkers erreichen. 2 Schnelligkeit. Die Geschwindigkeit des Trinkers erhöht sich 1 Stunde lang um 10 Fuß. Dieser Bonus erhöht sich, wenn Sie die Artificer-Stufen 9 (15 Fuß) und 15 (20 Fuß) erreichen. 3 Resilienz. Der Trinker erhält 10 Minuten lang einen Bonus von +1 auf seine RK. Die Dauer erhöht sich, wenn Sie die Artificer-Stufen 9 (1 Stunde) und 15 (8 Stunden) erreichen. 4 Mut. Der Trinker kann 1W4 würfeln und die gewürfelte Zahl zu jedem Angriffswurf und Rettungswurf addieren, den er für die nächste Minute macht. Die Dauer erhöht sich, wenn Sie die Artificer-Stufen 9 (10 Minuten) und 15 (1 Stunde) erreichen. 5 Flug. Der Trinker erreicht 10 Minuten lang eine Fluggeschwindigkeit von 10 Fuß. Die Fluggeschwindigkeit erhöht sich, wenn Sie die Artificer-Stufen 9 (20 Fuß) und 15 (30 Fuß) erreichen. 6 Du bestimmst die Wirkung des Elixiers, indem du eine der anderen Zeilen dieser Tabelle auswählst.\n\nLevel 5: Alchemistischer Gelehrter\n\nImmer wenn du einen Zauber mit den Vorräten deines Alchemisten als Zauberfokus wirkst, erhältst du einen Bonus auf einen Zauberwurf. Dieser Wurf muss Trefferpunkte wiederherstellen oder ein Schadenswurf sein, der Säure-, Feuer- oder Giftschaden verursacht. Der Bonus entspricht Ihrem Intelligenzmodifikator (Mindestbonus von +1).\n\nStufe 9: Wiederherstellungsreagenzien\n\nSie können „Geringe Wiederherstellung“ wirken, ohne einen Zauberslot zu verbrauchen und ohne den Zauber vorzubereiten, vorausgesetzt, Sie verwenden die Vorräte des Alchemisten als Zauberfokus. Sie können dies so oft tun, wie es Ihrem Intelligenzmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben.\n\nLevel 15: Chemische Beherrschung\n\nSie profitieren von folgenden Vorteilen.\n\nAlchemistischer Ausbruch. Wenn Sie einen Kunsthandwerkerzauber wirken, der einem Ziel Säure-, Feuer- oder Giftschaden zufügt, können Sie diesem Ziel auch 2W8 Machtschaden zufügen. Du kannst diesen Vorteil in jedem deiner Züge nur einmal nutzen.\n\nChemische Beständigkeit. Du erhältst Resistenz gegen Säure- und Giftschaden. Sie erhalten außerdem Immunität gegen den Zustand „Vergiftet“.\n\nBeschworener Kessel. Sie können Tashas sprudelnden Kessel wirken, ohne einen Zauberslot zu verbrauchen, ohne den Zauber vorzubereiten und ohne Materialkomponenten, vorausgesetzt, Sie verwenden die Vorräte des Alchemisten als Zauberfokus. Sobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast beendet haben.",
+  "tags": [],
+  "class": "Artificer",
+  "class_id": "artificer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

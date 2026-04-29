@@ -1,0 +1,42 @@
+{
+  "id": "talentiert",
+  "type": "feat",
+  "name": "Talentiert",
+  "original_name": "Skilled",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:skilled",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Sie erwerben Kenntnisse in einer beliebigen Kombination von drei Fertigkeiten oder Werkzeugen Ihrer Wahl.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Sie erwerben Kenntnisse in einer beliebigen Kombination von drei Fertigkeiten oder Werkzeugen Ihrer Wahl."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wiederholbar. Sie können dieses Kunststück mehr als einmal ausführen."
+    }
+  ],
+  "text": "Sie erwerben Kenntnisse in einer beliebigen Kombination von drei Fertigkeiten oder Werkzeugen Ihrer Wahl.\n\nWiederholbar. Sie können dieses Kunststück mehr als einmal ausführen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

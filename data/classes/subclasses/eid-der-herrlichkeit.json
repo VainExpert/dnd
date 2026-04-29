@@ -1,0 +1,162 @@
+{
+  "id": "eid-der-herrlichkeit",
+  "type": "subclass",
+  "name": "Eid der Herrlichkeit",
+  "original_name": "Oath of Glory",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/paladin:oath-of-glory",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Strebe nach den Höhen des Heldentums",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Strebe nach den Höhen des Heldentums"
+    },
+    {
+      "type": "paragraph",
+      "text": "Paladine, die den Eid des Ruhms leisten, glauben, dass sie und ihre Gefährten dazu bestimmt sind, durch Heldentaten Ruhm zu erlangen. Sie trainieren fleißig und ermutigen ihre Gefährten, damit sie alle bereit sind, wenn das Schicksal sie ruft."
+    },
+    {
+      "type": "paragraph",
+      "text": "Diese Paladine teilen die folgenden Grundsätze:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Bemühen Sie sich, durch Ihre Taten bekannt zu werden.",
+        "Begegnen Sie den Schwierigkeiten mit Mut.",
+        "Inspiriere andere, nach Ruhm zu streben."
+      ],
+      "text": "Bemühen Sie sich, durch Ihre Taten bekannt zu werden. Begegnen Sie den Schwierigkeiten mit Mut. Inspiriere andere, nach Ruhm zu streben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Inspirierender Smite"
+    },
+    {
+      "type": "paragraph",
+      "text": "Unmittelbar nachdem du „Göttlicher Schlag“ gewirkt hast, kannst du eine Anwendung deiner Göttlichkeit kanalisieren nutzen und temporäre Trefferpunkte an Kreaturen deiner Wahl im Umkreis von 30 Fuß um dich verteilen, zu denen auch du gehören kannst. Die Gesamtzahl der temporären Trefferpunkte beträgt 2W8 plus deine Paladin-Stufe und wird nach Belieben auf die ausgewählten Kreaturen aufgeteilt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Ruhmesschwur-Zauber."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Magie deines Schwurs stellt sicher, dass du bestimmte Zauber immer bereit hast; Wenn Sie eine Paladin-Stufe erreichen, die in der Zaubertabelle „Eid des Ruhms“ angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Ruhmesschwur-Zauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Paladin-Level",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Leitbolzen, Heldentum"
+        ],
+        [
+          "5",
+          "Fähigkeit verbessern, magische Waffe"
+        ],
+        [
+          "9",
+          "Eile, Schutz vor Energie"
+        ],
+        [
+          "13",
+          "Zwang, Bewegungsfreiheit"
+        ],
+        [
+          "17",
+          "Legend Lore, Yolandes königliche Präsenz"
+        ]
+      ],
+      "text": "Paladin-Level-Zaubersprüche 3 Leitbolzen, Heldentum 5 Verbesserungsfähigkeit, magische Waffe 9 Eile, Schutz vor Energie 13 Zwang, Bewegungsfreiheit 17 Legendenkunde, Yolandes königliche Präsenz"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Unvergleichlicher Athlet"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion können Sie Ihre Channel Divinity einmal nutzen, um Ihre Sportlichkeit zu steigern. Für eine Stunde haben Sie einen Vorteil bei Kraft- (Leichtathletik) und Geschicklichkeitswürfen (Akrobatik) und die Distanz Ihrer Weit- und Hochsprünge erhöht sich um 10 Fuß (diese zusätzliche Distanz kostet wie üblich Bewegung)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 7: Aura der Eifer"
+    },
+    {
+      "type": "paragraph",
+      "text": "Deine Geschwindigkeit erhöht sich um 10 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus erhöht sich die Geschwindigkeit des Verbündeten bis zum Ende seines nächsten Zuges um 10 Fuß, wenn ein Verbündeter in einem Zug zum ersten Mal in deine Aura des Schutzes eintritt oder dort seinen Zug beginnt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Glorreiche Verteidigung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können die Verteidigung in einen plötzlichen Angriff umwandeln. Wenn Sie oder eine andere Kreatur, die Sie im Umkreis von 10 Fuß sehen können, von einem Angriffswurf getroffen werden, können Sie eine Reaktion ausführen, um der AC des Ziels einen Bonus gegen diesen Angriff zu gewähren, was möglicherweise dazu führt, dass es fehlschlägt. Der Bonus entspricht Ihrem Charisma-Modifikator (mindestens +1). Wenn der Angriff fehlschlägt, können Sie im Rahmen dieser Reaktion einen Angriff mit einer Waffe gegen den Angreifer durchführen, sofern sich der Angreifer in Reichweite Ihrer Waffe befindet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diese Funktion so oft verwenden, wie es Ihrem Charisma-Modifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 20: Lebende Legende"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können sich mit den Legenden – ob wahr oder übertrieben – Ihrer großen Taten stärken. Als Bonusaktion erhalten Sie 10 Minuten lang die unten aufgeführten Vorteile. Sobald Sie diese Funktion verwenden, können Sie sie erst dann wieder verwenden, wenn Sie eine Lange Rast beendet haben. Sie können Ihre Nutzung auch wiederherstellen, indem Sie einen Zauberslot der Stufe 5 verbrauchen (keine Aktion erforderlich)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Charismatisch. Du bist mit einer jenseitigen Präsenz gesegnet und hast bei allen Charisma-Würfen einen Vorteil."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rettungswurf-Neuwurf. Wenn dir ein Rettungswurf misslingt, kannst du eine Reaktion nutzen, um ihn erneut zu würfeln. Sie müssen diese neue Rolle verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zielsicherer Schlag. Einmal in jedem Ihrer Züge, wenn Sie einen Angriffswurf mit einer Waffe durchführen und verfehlen, können Sie diesen Angriff stattdessen auslösen."
+    }
+  ],
+  "text": "Strebe nach den Höhen des Heldentums\n\nPaladine, die den Eid des Ruhms leisten, glauben, dass sie und ihre Gefährten dazu bestimmt sind, durch Heldentaten Ruhm zu erlangen. Sie trainieren fleißig und ermutigen ihre Gefährten, damit sie alle bereit sind, wenn das Schicksal sie ruft.\n\nDiese Paladine teilen die folgenden Grundsätze:\n\nBemühen Sie sich, durch Ihre Taten bekannt zu werden. Begegnen Sie den Schwierigkeiten mit Mut. Inspiriere andere, nach Ruhm zu streben.\n\nLevel 3: Inspirierender Smite\n\nUnmittelbar nachdem du „Göttlicher Schlag“ gewirkt hast, kannst du eine Anwendung deiner Göttlichkeit kanalisieren nutzen und temporäre Trefferpunkte an Kreaturen deiner Wahl im Umkreis von 30 Fuß um dich verteilen, zu denen auch du gehören kannst. Die Gesamtzahl der temporären Trefferpunkte beträgt 2W8 plus deine Paladin-Stufe und wird nach Belieben auf die ausgewählten Kreaturen aufgeteilt.\n\nStufe 3: Ruhmesschwur-Zauber.\n\nDie Magie deines Schwurs stellt sicher, dass du bestimmte Zauber immer bereit hast; Wenn Sie eine Paladin-Stufe erreichen, die in der Zaubertabelle „Eid des Ruhms“ angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nRuhmesschwur-Zauber\n\nPaladin-Level-Zaubersprüche 3 Leitbolzen, Heldentum 5 Verbesserungsfähigkeit, magische Waffe 9 Eile, Schutz vor Energie 13 Zwang, Bewegungsfreiheit 17 Legendenkunde, Yolandes königliche Präsenz\n\nLevel 3: Unvergleichlicher Athlet\n\nAls Bonusaktion können Sie Ihre Channel Divinity einmal nutzen, um Ihre Sportlichkeit zu steigern. Für eine Stunde haben Sie einen Vorteil bei Kraft- (Leichtathletik) und Geschicklichkeitswürfen (Akrobatik) und die Distanz Ihrer Weit- und Hochsprünge erhöht sich um 10 Fuß (diese zusätzliche Distanz kostet wie üblich Bewegung).\n\nStufe 7: Aura der Eifer\n\nDeine Geschwindigkeit erhöht sich um 10 Fuß.\n\nDarüber hinaus erhöht sich die Geschwindigkeit des Verbündeten bis zum Ende seines nächsten Zuges um 10 Fuß, wenn ein Verbündeter in einem Zug zum ersten Mal in deine Aura des Schutzes eintritt oder dort seinen Zug beginnt.\n\nLevel 15: Glorreiche Verteidigung\n\nSie können die Verteidigung in einen plötzlichen Angriff umwandeln. Wenn Sie oder eine andere Kreatur, die Sie im Umkreis von 10 Fuß sehen können, von einem Angriffswurf getroffen werden, können Sie eine Reaktion ausführen, um der AC des Ziels einen Bonus gegen diesen Angriff zu gewähren, was möglicherweise dazu führt, dass es fehlschlägt. Der Bonus entspricht Ihrem Charisma-Modifikator (mindestens +1). Wenn der Angriff fehlschlägt, können Sie im Rahmen dieser Reaktion einen Angriff mit einer Waffe gegen den Angreifer durchführen, sofern sich der Angreifer in Reichweite Ihrer Waffe befindet.\n\nSie können diese Funktion so oft verwenden, wie es Ihrem Charisma-Modifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben.\n\nLevel 20: Lebende Legende\n\nSie können sich mit den Legenden – ob wahr oder übertrieben – Ihrer großen Taten stärken. Als Bonusaktion erhalten Sie 10 Minuten lang die unten aufgeführten Vorteile. Sobald Sie diese Funktion verwenden, können Sie sie erst dann wieder verwenden, wenn Sie eine Lange Rast beendet haben. Sie können Ihre Nutzung auch wiederherstellen, indem Sie einen Zauberslot der Stufe 5 verbrauchen (keine Aktion erforderlich).\n\nCharismatisch. Du bist mit einer jenseitigen Präsenz gesegnet und hast bei allen Charisma-Würfen einen Vorteil.\n\nRettungswurf-Neuwurf. Wenn dir ein Rettungswurf misslingt, kannst du eine Reaktion nutzen, um ihn erneut zu würfeln. Sie müssen diese neue Rolle verwenden.\n\nZielsicherer Schlag. Einmal in jedem Ihrer Züge, wenn Sie einen Angriffswurf mit einer Waffe durchführen und verfehlen, können Sie diesen Angriff stattdessen auslösen.",
+  "tags": [],
+  "class": "Paladin",
+  "class_id": "paladin",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

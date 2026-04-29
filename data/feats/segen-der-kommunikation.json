@@ -1,0 +1,61 @@
+{
+  "id": "segen-der-kommunikation",
+  "type": "feat",
+  "name": "Segen der Kommunikation",
+  "original_name": "Boon of Communication",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-communication",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Episches Segen-Talent (Voraussetzung: Level 19+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Episches Segen-Talent (Voraussetzung: Level 19+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Listiger Sprecher. Du hast keinen Nachteil bei Fähigkeitsüberprüfungen, um feindliche Kreaturen zu beeinflussen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Begabter Dolmetscher. Sie verstehen die wörtliche Bedeutung jeder Sprache, die Sie hören oder sehen, und Sie können die wörtliche Bedeutung jeder geschriebenen Sprache verstehen, die Sie sehen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mentale Kommunikation. Sie erhalten Telepathie mit einer Reichweite von 120 Fuß."
+    }
+  ],
+  "text": "Episches Segen-Talent (Voraussetzung: Level 19+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 30.\n\nListiger Sprecher. Du hast keinen Nachteil bei Fähigkeitsüberprüfungen, um feindliche Kreaturen zu beeinflussen.\n\nBegabter Dolmetscher. Sie verstehen die wörtliche Bedeutung jeder Sprache, die Sie hören oder sehen, und Sie können die wörtliche Bedeutung jeder geschriebenen Sprache verstehen, die Sie sehen.\n\nMentale Kommunikation. Sie erhalten Telepathie mit einer Reichweite von 120 Fuß.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

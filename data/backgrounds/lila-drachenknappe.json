@@ -1,0 +1,87 @@
+{
+  "id": "lila-drachenknappe",
+  "type": "background",
+  "name": "Lila Drachenknappe",
+  "original_name": "Purple Dragon Squire",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/background:purple-dragon-squire",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Stärke, Weisheit, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Stärke, Weisheit, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Lila Drachenturm"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kompetenzen: Umgang mit Tieren und Einsicht"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkompetenz: Navigator’s Tools"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Speer, Navigatorwerkzeuge, Feine Kleidung, 9 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast dein Leben der Sicherheit von Cormyr geschworen und dich um Aufnahme in den Orden der Elitekrieger dieses Reiches bemüht: die Purple Dragon Knights. Doch bevor Sie die Chance haben, offiziell in den Rang eines Ritters einzutreten, müssen Sie zunächst als Knappe eines Ritters dienen. Du hast einen Lehnsherrn gefunden, der bereit ist, dich aufzunehmen und dir die Wege des Ordens beizubringen. Wirst du die Ideale der Purple Dragon Knights von Ruhm, Ehre und Stärke hochhalten und dich als würdig erweisen, zum Ritter geschlagen zu werden?"
+    }
+  ],
+  "text": "Fähigkeitswerte: Stärke, Weisheit, Charisma\n\nTalent: Lila Drachenturm\n\nKompetenzen: Umgang mit Tieren und Einsicht\n\nWerkzeugkompetenz: Navigator’s Tools\n\nAusrüstung: Wähle A oder B: (A) Speer, Navigatorwerkzeuge, Feine Kleidung, 9 GP; oder (B) 50 GP\n\nDu hast dein Leben der Sicherheit von Cormyr geschworen und dich um Aufnahme in den Orden der Elitekrieger dieses Reiches bemüht: die Purple Dragon Knights. Doch bevor Sie die Chance haben, offiziell in den Rang eines Ritters einzutreten, müssen Sie zunächst als Knappe eines Ritters dienen. Du hast einen Lehnsherrn gefunden, der bereit ist, dich aufzunehmen und dir die Wege des Ordens beizubringen. Wirst du die Ideale der Purple Dragon Knights von Ruhm, Ehre und Stärke hochhalten und dich als würdig erweisen, zum Ritter geschlagen zu werden?",
+  "tags": [],
+  "ability_scores": [
+    "str",
+    "wis",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "str",
+      "wis",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [],
+  "tool_proficiencies": [
+    "Navigator’s Tools\n"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "lila-drachenturm-kompetenzen-umgang-mit-tieren-und-einsicht",
+  "granted_feat_name": "Lila Drachenturm\n\nKompetenzen: Umgang mit Tieren und Einsicht\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Speer, Navigatorwerkzeuge, Feine Kleidung, 9 GP; oder (B) 50 GP\n\nDu hast dein Leben der Sicherheit von Cormyr geschworen und dich um Aufnahme in den Orden der Elitekrieger dieses Reiches bemüht: die Purple Dragon Knights. Doch bevor Sie die Chance haben, offiziell in den Rang eines Ritters einzutreten, müssen Sie zunächst als Knappe eines Ritters dienen. Du hast einen Lehnsherrn gefunden, der bereit ist, dich aufzunehmen und dir die Wege des Ordens beizubringen. Wirst du die Ideale der Purple Dragon Knights von Ruhm, Ehre und Stärke hochhalten und dich als würdig erweisen, zum Ritter geschlagen zu werden?"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "<background-id>",
+  "type": "background",
+  "name": "<Background Name>",
+  "original_name": "<Original Background Name>",
+  "rules_version": "2024",
+  "source": "<source>",
+  "source_url": null,
+  "source_page": null,
+  "license": {
+    "name": "",
+    "spdx": "",
+    "url": ""
+  },
+  "translation_note": "",
+  "category": "",
+  "group": "",
+  "prerequisites": [],
+  "summary": "",
+  "entries": [],
+  "ability_scores": [],
+  "skill_proficiencies": [],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": null,
+  "modifiers": [],
+  "starting_equipment": [],
+  "text": "",
+  "tags": []
+}

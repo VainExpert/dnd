@@ -1,0 +1,58 @@
+{
+  "id": "segen-der-unwiderstehlichen-offensive",
+  "type": "feat",
+  "name": "Segen der unwiderstehlichen Offensive",
+  "original_name": "Boon of Irresistible Offense",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-irresistible-offense",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 19+"
+  ],
+  "summary": "Voraussetzung: Level 19+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 19+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Geschicklichkeitswert um 1 auf maximal 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Überwinde Abwehrkräfte. Der von Ihnen verursachte Knüppel-, Stich- und Hiebschaden ignoriert immer Resistenz."
+    },
+    {
+      "type": "paragraph",
+      "text": "Überwältigender Schlag. Wenn Sie für einen Angriffswurf eine 20 auf dem W20 würfeln, können Sie dem Ziel zusätzlichen Schaden in Höhe des durch dieses Talent erhöhten Fähigkeitswerts zufügen. Die Art des zusätzlichen Schadens ist dieselbe wie die Art des Angriffs."
+    }
+  ],
+  "text": "Voraussetzung: Level 19+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Geschicklichkeitswert um 1 auf maximal 30.\n\nÜberwinde Abwehrkräfte. Der von Ihnen verursachte Knüppel-, Stich- und Hiebschaden ignoriert immer Resistenz.\n\nÜberwältigender Schlag. Wenn Sie für einen Angriffswurf eine 20 auf dem W20 würfeln, können Sie dem Ziel zusätzlichen Schaden in Höhe des durch dieses Talent erhöhten Fähigkeitswerts zufügen. Die Art des zusätzlichen Schadens ist dieselbe wie die Art des Angriffs.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

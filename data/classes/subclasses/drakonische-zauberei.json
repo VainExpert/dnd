@@ -1,0 +1,131 @@
+{
+  "id": "drakonische-zauberei",
+  "type": "subclass",
+  "name": "Drakonische Zauberei",
+  "original_name": "Draconic Sorcery",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/sorcerer:draconic-sorcery",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Atmen Sie die Magie der Drachen ein",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Atmen Sie die Magie der Drachen ein"
+    },
+    {
+      "type": "paragraph",
+      "text": "Deine angeborene Magie kommt von der Gabe eines Drachen. Vielleicht hat ein uralter Drache im Angesicht des Todes einen Teil seiner magischen Kraft Ihnen oder Ihrem Vorfahren vermacht. Möglicherweise haben Sie Magie von einem Ort absorbiert, der von Drachenkräften durchdrungen ist. Oder vielleicht haben Sie mit einem Schatz umgegangen, der aus dem Hort eines Drachens stammte und von drakonischer Macht durchdrungen war. Oder Sie haben vielleicht einen Drachen als Vorfahren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Drakonische Widerstandsfähigkeit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Magie in Ihrem Körper manifestiert die physischen Merkmale Ihrer drakonischen Gabe. Dein Trefferpunktemaximum erhöht sich um 3 und jedes Mal um 1, wenn du eine weitere Zaubererstufe erreichst."
+    },
+    {
+      "type": "paragraph",
+      "text": "Teile von dir sind außerdem von drachenähnlichen Schuppen bedeckt. Solange Sie keine Rüstung tragen, beträgt Ihre Grundrüstungsklasse 10 plus Ihre Geschicklichkeits- und Charisma-Modifikatoren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Drakonische Zauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine Zaubererstufe erreichen, die in der Tabelle „Drakonische Zauber“ angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Drakonische Zauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Zauberer-Level",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Alter Self, Chromatische Kugel, Befehl, Drachenatem"
+        ],
+        [
+          "5",
+          "Angst, Fliege"
+        ],
+        [
+          "7",
+          "Arkanes Auge, Charm-Monster"
+        ],
+        [
+          "9",
+          "Legendenkunde, Drachen beschwören"
+        ]
+      ],
+      "text": "Zauberer-Level-Zauber 3 Alter Self, Chromatische Kugel, Befehl, Drachenatem 5 Angst, Fliege 7 Arkanes Auge, Monster bezaubern 9 Legendenkunde, Drachen beschwören"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Elementaraffinität"
+    },
+    {
+      "type": "paragraph",
+      "text": "Deine drakonische Magie hat eine Affinität zu einer Schadensart, die mit Drachen in Verbindung gebracht wird. Wählen Sie einen dieser Typen: Säure, Kälte, Feuer, Blitz oder Gift."
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast Resistenz gegen diese Schadensart, und wenn du einen Zauber wirkst, der Schaden dieser Art verursacht, kannst du deinen Charisma-Modifikator zu einem Schadenswurf dieses Zaubers hinzufügen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Drachenflügel"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion kannst du Drachenflügel auf deinem Rücken erscheinen lassen. Die Flügel halten 1 Stunde lang oder bis Sie sie ablegen (keine Aktion erforderlich). Für die Dauer haben Sie eine Fluggeschwindigkeit von 60 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie geben 3 Zauberpunkte aus (keine Aktion erforderlich), um sie wieder nutzen zu können."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 18: Drachengefährte"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können „Drache beschwören“ ohne eine Materialkomponente wirken. Sie können es auch einmal ohne Zauberslot wirken und erhalten die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn Sie Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wann immer Sie mit dem Wirken des Zaubers beginnen, können Sie ihn so ändern, dass keine Konzentration erforderlich ist. Wenn Sie dies tun, beträgt die Dauer des Zaubers für diesen Zauber 1 Minute."
+    }
+  ],
+  "text": "Atmen Sie die Magie der Drachen ein\n\nDeine angeborene Magie kommt von der Gabe eines Drachen. Vielleicht hat ein uralter Drache im Angesicht des Todes einen Teil seiner magischen Kraft Ihnen oder Ihrem Vorfahren vermacht. Möglicherweise haben Sie Magie von einem Ort absorbiert, der von Drachenkräften durchdrungen ist. Oder vielleicht haben Sie mit einem Schatz umgegangen, der aus dem Hort eines Drachens stammte und von drakonischer Macht durchdrungen war. Oder Sie haben vielleicht einen Drachen als Vorfahren.\n\nStufe 3: Drakonische Widerstandsfähigkeit\n\nDie Magie in Ihrem Körper manifestiert die physischen Merkmale Ihrer drakonischen Gabe. Dein Trefferpunktemaximum erhöht sich um 3 und jedes Mal um 1, wenn du eine weitere Zaubererstufe erreichst.\n\nTeile von dir sind außerdem von drachenähnlichen Schuppen bedeckt. Solange Sie keine Rüstung tragen, beträgt Ihre Grundrüstungsklasse 10 plus Ihre Geschicklichkeits- und Charisma-Modifikatoren.\n\nLevel 3: Drakonische Zauber\n\nWenn Sie eine Zaubererstufe erreichen, die in der Tabelle „Drakonische Zauber“ angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nDrakonische Zauber\n\nZauberer-Level-Zauber 3 Alter Self, Chromatische Kugel, Befehl, Drachenatem 5 Angst, Fliege 7 Arkanes Auge, Monster bezaubern 9 Legendenkunde, Drachen beschwören\n\nLevel 6: Elementaraffinität\n\nDeine drakonische Magie hat eine Affinität zu einer Schadensart, die mit Drachen in Verbindung gebracht wird. Wählen Sie einen dieser Typen: Säure, Kälte, Feuer, Blitz oder Gift.\n\nDu hast Resistenz gegen diese Schadensart, und wenn du einen Zauber wirkst, der Schaden dieser Art verursacht, kannst du deinen Charisma-Modifikator zu einem Schadenswurf dieses Zaubers hinzufügen.\n\nLevel 14: Drachenflügel\n\nAls Bonusaktion kannst du Drachenflügel auf deinem Rücken erscheinen lassen. Die Flügel halten 1 Stunde lang oder bis Sie sie ablegen (keine Aktion erforderlich). Für die Dauer haben Sie eine Fluggeschwindigkeit von 60 Fuß.\n\nSobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie geben 3 Zauberpunkte aus (keine Aktion erforderlich), um sie wieder nutzen zu können.\n\nLevel 18: Drachengefährte\n\nSie können „Drache beschwören“ ohne eine Materialkomponente wirken. Sie können es auch einmal ohne Zauberslot wirken und erhalten die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn Sie Lange Rast abgeschlossen haben.\n\nWann immer Sie mit dem Wirken des Zaubers beginnen, können Sie ihn so ändern, dass keine Konzentration erforderlich ist. Wenn Sie dies tun, beträgt die Dauer des Zaubers für diesen Zauber 1 Minute.",
+  "tags": [],
+  "class": "Zauberer",
+  "class_id": "zauberer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

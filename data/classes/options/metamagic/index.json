@@ -1,0 +1,14 @@
+{
+  "files": [
+    "beschleunigter-zauber.json",
+    "distanzzauber.json",
+    "erhoehter-zauber.json",
+    "sorgfaeltiger-zauber.json",
+    "subtiler-zauber.json",
+    "suchender-zauber.json",
+    "transmutierter-zauber.json",
+    "verlaengerter-zauber.json",
+    "verstaerkter-zauber.json",
+    "zwillingszauber.json"
+  ]
+}

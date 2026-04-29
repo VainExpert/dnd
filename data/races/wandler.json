@@ -1,0 +1,132 @@
+{
+  "id": "wandler",
+  "type": "race",
+  "name": "Wandler",
+  "original_name": "Shifter",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/species:shifter",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Gestaltwandler – manchmal auch „Werberührte“ genannt – stammen von Menschen ab, die vollständig oder teilweise an Lykanthropie erkrankt sind. Humanoide mit einem bestialischen Aspekt, Gestaltwandler, können ihre Gestalt nicht vollständig ändern, aber sie können ihre animalischen Eigenschaften vorübergehend in einem Prozess verstärken, den sie „Wandlung“ nennen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Gestaltwandler – manchmal auch „Werberührte“ genannt – stammen von Menschen ab, die vollständig oder teilweise an Lykanthropie erkrankt sind. Humanoide mit einem bestialischen Aspekt, Gestaltwandler, können ihre Gestalt nicht vollständig ändern, aber sie können ihre animalischen Eigenschaften vorübergehend in einem Prozess verstärken, den sie „Wandlung“ nennen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gestaltwandler ähneln in Größe und Körperbau Menschen, sind jedoch typischerweise geschmeidiger und flexibler. Ihre Gesichtszüge haben einen bestialischen Anstrich, oft mit großen Augen und spitzen Ohren; Die meisten Gestaltwandler besitzen auch hervorstehende Eckzähne. An fast jedem Teil ihres Körpers wachsen pelzartige Haare. Während das Aussehen eines Gestaltwandlers einen Betrachter an ein Tier erinnern könnte, bleibt der Gestaltwandler auch in seiner wildesten Form eindeutig als Humanoider erkennbar."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Shifter-Eigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Humanoid"
+    },
+    {
+      "type": "paragraph",
+      "text": "Größe: Mittel (ca. 4–7 Fuß hoch) oder Klein (ca. 2–4 Fuß hoch), ausgewählt bei der Auswahl dieser Art"
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschwindigkeit: 30 Fuß"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Shifter verfügen Sie über diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bestialische Instinkte. Indem du das Biest in dir kanalisierst, lernst du eine der folgenden Fertigkeiten deiner Wahl: Akrobatik, Leichtathletik, Einschüchterung oder Überleben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verschiebung. Als Bonusaktion können Sie Ihre Gestalt verändern, um ein bestialischeres Aussehen anzunehmen. Diese Verwandlung dauert 1 Minute oder bis Sie als Bonusaktion zu Ihrem normalen Aussehen zurückkehren. Wenn Sie wechseln, erhalten Sie temporäre Trefferpunkte in Höhe des Zweifachen Ihres Uebungsbonus. Du kannst so oft wechseln, wie es deinem Uebungsbonus entspricht, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast beendest."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wann immer Sie wechseln, profitieren Sie von einer der folgenden Optionen (wählen Sie, wenn Sie diese Art auswählen):"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bestienhaut. Du erhältst 1W6 zusätzliche temporäre Trefferpunkte. Während der Verschiebung erhältst du einen Bonus von +1 auf deine Rüstungsklasse."
+    },
+    {
+      "type": "paragraph",
+      "text": "Langzahn. Wenn du verwandelst und als Bonusaktion in deinen anderen Zügen, während du verlagert bist, kannst du deine verlängerten Reißzähne nutzen, um einen unbewaffneten Schlag auszuführen. Wenn du mit diesem unbewaffneten Schlag zuschlägst und Schaden verursachst, kannst du statt des normalen Schadens eines unbewaffneten Schlags Stichschaden in Höhe von 1W6 plus deinem Stärkemodifikator verursachen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schneller Schritt. Während Sie versetzt sind, erhöht sich Ihre Geschwindigkeit um 10 Fuß. Darüber hinaus kannst du dich als Reaktion bis zu 10 Fuß weit bewegen, wenn eine Kreatur ihren Zug innerhalb von 5 Fuß von dir beendet. Diese reaktive Bewegung provoziert keine Opportunity-Angriffsaktion."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wildjagd. Während der Verschiebung hast du einen Vorteil bei Weisheitswürfen. Darüber hinaus kann keine Kreatur im Umkreis von 30 Fuß um Sie einen Vorteil bei einem Angriffswurf gegen Sie haben, es sei denn, Sie verfügen über die Bedingung Kampfunfähigkeit."
+    }
+  ],
+  "text": "Gestaltwandler – manchmal auch „Werberührte“ genannt – stammen von Menschen ab, die vollständig oder teilweise an Lykanthropie erkrankt sind. Humanoide mit einem bestialischen Aspekt, Gestaltwandler, können ihre Gestalt nicht vollständig ändern, aber sie können ihre animalischen Eigenschaften vorübergehend in einem Prozess verstärken, den sie „Wandlung“ nennen.\n\nGestaltwandler ähneln in Größe und Körperbau Menschen, sind jedoch typischerweise geschmeidiger und flexibler. Ihre Gesichtszüge haben einen bestialischen Anstrich, oft mit großen Augen und spitzen Ohren; Die meisten Gestaltwandler besitzen auch hervorstehende Eckzähne. An fast jedem Teil ihres Körpers wachsen pelzartige Haare. Während das Aussehen eines Gestaltwandlers einen Betrachter an ein Tier erinnern könnte, bleibt der Gestaltwandler auch in seiner wildesten Form eindeutig als Humanoider erkennbar.\n\nShifter-Eigenschaften\n\nKreaturentyp: Humanoid\n\nGröße: Mittel (ca. 4–7 Fuß hoch) oder Klein (ca. 2–4 Fuß hoch), ausgewählt bei der Auswahl dieser Art\n\nGeschwindigkeit: 30 Fuß\n\nAls Shifter verfügen Sie über diese besonderen Eigenschaften.\n\nBestialische Instinkte. Indem du das Biest in dir kanalisierst, lernst du eine der folgenden Fertigkeiten deiner Wahl: Akrobatik, Leichtathletik, Einschüchterung oder Überleben.\n\nDunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß.\n\nVerschiebung. Als Bonusaktion können Sie Ihre Gestalt verändern, um ein bestialischeres Aussehen anzunehmen. Diese Verwandlung dauert 1 Minute oder bis Sie als Bonusaktion zu Ihrem normalen Aussehen zurückkehren. Wenn Sie wechseln, erhalten Sie temporäre Trefferpunkte in Höhe des Zweifachen Ihres Uebungsbonus. Du kannst so oft wechseln, wie es deinem Uebungsbonus entspricht, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast beendest.\n\nWann immer Sie wechseln, profitieren Sie von einer der folgenden Optionen (wählen Sie, wenn Sie diese Art auswählen):\n\nBestienhaut. Du erhältst 1W6 zusätzliche temporäre Trefferpunkte. Während der Verschiebung erhältst du einen Bonus von +1 auf deine Rüstungsklasse.\n\nLangzahn. Wenn du verwandelst und als Bonusaktion in deinen anderen Zügen, während du verlagert bist, kannst du deine verlängerten Reißzähne nutzen, um einen unbewaffneten Schlag auszuführen. Wenn du mit diesem unbewaffneten Schlag zuschlägst und Schaden verursachst, kannst du statt des normalen Schadens eines unbewaffneten Schlags Stichschaden in Höhe von 1W6 plus deinem Stärkemodifikator verursachen.\n\nSchneller Schritt. Während Sie versetzt sind, erhöht sich Ihre Geschwindigkeit um 10 Fuß. Darüber hinaus kannst du dich als Reaktion bis zu 10 Fuß weit bewegen, wenn eine Kreatur ihren Zug innerhalb von 5 Fuß von dir beendet. Diese reaktive Bewegung provoziert keine Opportunity-Angriffsaktion.\n\nWildjagd. Während der Verschiebung hast du einen Vorteil bei Weisheitswürfen. Darüber hinaus kann keine Kreatur im Umkreis von 30 Fuß um Sie einen Vorteil bei einem Angriffswurf gegen Sie haben, es sei denn, Sie verfügen über die Bedingung Kampfunfähigkeit.",
+  "tags": [],
+  "size": [
+    "Klein",
+    "Mittel"
+  ],
+  "creature_type": "Humanoid",
+  "speed": {
+    "walk": 9,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Bestialische Instinkte",
+      "text": "Indem du das Biest in dir kanalisierst, lernst du eine der folgenden Fertigkeiten deiner Wahl: Akrobatik, Leichtathletik, Einschüchterung oder Überleben."
+    },
+    {
+      "name": "Dunkelsicht",
+      "text": "Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß."
+    },
+    {
+      "name": "Verschiebung",
+      "text": "Als Bonusaktion können Sie Ihre Gestalt verändern, um ein bestialischeres Aussehen anzunehmen. Diese Verwandlung dauert 1 Minute oder bis Sie als Bonusaktion zu Ihrem normalen Aussehen zurückkehren. Wenn Sie wechseln, erhalten Sie temporäre Trefferpunkte in Höhe des Zweifachen Ihres Uebungsbonus. Du kannst so oft wechseln, wie es deinem Uebungsbonus entspricht, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast beendest."
+    },
+    {
+      "name": "Bestienhaut",
+      "text": "Du erhältst 1W6 zusätzliche temporäre Trefferpunkte. Während der Verschiebung erhältst du einen Bonus von +1 auf deine Rüstungsklasse."
+    },
+    {
+      "name": "Langzahn",
+      "text": "Wenn du verwandelst und als Bonusaktion in deinen anderen Zügen, während du verlagert bist, kannst du deine verlängerten Reißzähne nutzen, um einen unbewaffneten Schlag auszuführen. Wenn du mit diesem unbewaffneten Schlag zuschlägst und Schaden verursachst, kannst du statt des normalen Schadens eines unbewaffneten Schlags Stichschaden in Höhe von 1W6 plus deinem Stärkemodifikator verursachen."
+    },
+    {
+      "name": "Schneller Schritt",
+      "text": "Während Sie versetzt sind, erhöht sich Ihre Geschwindigkeit um 10 Fuß. Darüber hinaus kannst du dich als Reaktion bis zu 10 Fuß weit bewegen, wenn eine Kreatur ihren Zug innerhalb von 5 Fuß von dir beendet. Diese reaktive Bewegung provoziert keine Opportunity-Angriffsaktion."
+    },
+    {
+      "name": "Wildjagd",
+      "text": "Während der Verschiebung hast du einen Vorteil bei Weisheitswürfen. Darüber hinaus kann keine Kreatur im Umkreis von 30 Fuß um Sie einen Vorteil bei einem Angriffswurf gegen Sie haben, es sei denn, Sie verfügen über die Bedingung Kampfunfähigkeit."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

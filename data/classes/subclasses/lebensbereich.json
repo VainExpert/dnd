@@ -1,0 +1,119 @@
+{
+  "id": "lebensbereich",
+  "type": "subclass",
+  "name": "Lebensbereich",
+  "original_name": "Life Domain",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/cleric:life-domain",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Lindert die Schmerzen der Welt",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Lindert die Schmerzen der Welt"
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Lebensbereich konzentriert sich auf die positive Energie, die dabei hilft, alles Leben im Multiversum zu erhalten. Kleriker, die sich diesen Bereich erschließen, sind Meister der Heilung und nutzen diese Lebenskraft, um viele Verletzungen zu heilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Existenz selbst hängt von der positiven Energie ab, die mit diesem Bereich verbunden ist, weshalb sich ein Geistlicher fast jeder religiösen Tradition für ihn entscheiden könnte. Dieser Bereich wird insbesondere mit landwirtschaftlichen Gottheiten, Göttern der Heilung oder Ausdauer sowie Göttern der Heimat und Gemeinschaft in Verbindung gebracht. Auch religiöse Heilsorden suchen die Magie dieses Bereichs."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Jünger des Lebens"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn ein Zauber, den du mit einem Zauberslot wirkst, einer Kreatur Trefferpunkte wiederherstellt, erhält diese Kreatur in der Runde, in der du den Zauber wirkst, zusätzliche Trefferpunkte zurück. Die zusätzlichen Trefferpunkte betragen 2 plus die Stufe des Zauberslots."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Lebensdomänenzauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Verbindung zu dieser göttlichen Domäne stellt sicher, dass Sie immer über bestimmte Zaubersprüche verfügen. Wenn Sie eine in der Lebensdomänen-Zaubertabelle angegebene Klerikerstufe erreichen, haben Sie danach immer die aufgelisteten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Lebensdomänenzauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Kleriker-Stufe",
+          "Vorbereitete Zauber"
+        ],
+        [
+          "3",
+          "Helfen, segnen, Wunden heilen, geringere Wiederherstellung"
+        ],
+        [
+          "5",
+          "Massenheilungswort, Wiederbelebung"
+        ],
+        [
+          "7",
+          "Aura des Lebens, Todesabteilung"
+        ],
+        [
+          "9",
+          "Größere Wiederherstellung, Massenheilung von Wunden"
+        ]
+      ],
+      "text": "Vorbereitete Zauber auf Klerikerstufe: 3 Hilfe, Segen, Wunden heilen, geringe Wiederherstellung, 5 Massenheilungswort, Wiederbelebung, 7 Aura des Lebens, Todesschutz, 9 große Wiederherstellung, Massenheilung von Wunden"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Leben bewahren"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als magische Aktion präsentierst du dein Heiliges Symbol und verwendest einen Einsatz deiner Göttlichkeit kanalisieren, um Heilenergie hervorzurufen, die eine Anzahl an Trefferpunkten wiederherstellen kann, die dem Fünffachen deiner Klerikerstufe entspricht. Wählen Sie blutbefleckte Kreaturen in einem Umkreis von 30 Fuß um sich aus (darunter auch Sie selbst) und teilen Sie diese Trefferpunkte unter ihnen auf. Mit dieser Funktion kann eine Kreatur höchstens die Hälfte ihrer maximalen Trefferpunkte wiederherstellen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 6: Gesegneter Heiler"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Heilzauber, die du auf andere wirkst, heilen auch dich. Unmittelbar nachdem du einen Zauber mit einem Zauberslot gewirkt hast, der einer oder mehreren Kreaturen außer dir selbst Trefferpunkte wiederherstellt, erhältst du Trefferpunkte in Höhe von 2 plus der Stufe des Zauberslots zurück."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 17: Höchste Heilung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie normalerweise einen oder mehrere Würfel werfen würden, um einer Kreatur mit einem Zauberspruch oder der Kanalisierung der Göttlichkeit Trefferpunkte wiederherzustellen, werfen Sie diese Würfel nicht für die Heilung; Verwenden Sie stattdessen für jeden Würfel die höchstmögliche Zahl. Anstatt beispielsweise 2W6 Trefferpunkte einer Kreatur mit einem Zauber wiederherzustellen, stellen Sie 12 wieder her."
+    }
+  ],
+  "text": "Lindert die Schmerzen der Welt\n\nDer Lebensbereich konzentriert sich auf die positive Energie, die dabei hilft, alles Leben im Multiversum zu erhalten. Kleriker, die sich diesen Bereich erschließen, sind Meister der Heilung und nutzen diese Lebenskraft, um viele Verletzungen zu heilen.\n\nDie Existenz selbst hängt von der positiven Energie ab, die mit diesem Bereich verbunden ist, weshalb sich ein Geistlicher fast jeder religiösen Tradition für ihn entscheiden könnte. Dieser Bereich wird insbesondere mit landwirtschaftlichen Gottheiten, Göttern der Heilung oder Ausdauer sowie Göttern der Heimat und Gemeinschaft in Verbindung gebracht. Auch religiöse Heilsorden suchen die Magie dieses Bereichs.\n\nStufe 3: Jünger des Lebens\n\nWenn ein Zauber, den du mit einem Zauberslot wirkst, einer Kreatur Trefferpunkte wiederherstellt, erhält diese Kreatur in der Runde, in der du den Zauber wirkst, zusätzliche Trefferpunkte zurück. Die zusätzlichen Trefferpunkte betragen 2 plus die Stufe des Zauberslots.\n\nStufe 3: Lebensdomänenzauber\n\nIhre Verbindung zu dieser göttlichen Domäne stellt sicher, dass Sie immer über bestimmte Zaubersprüche verfügen. Wenn Sie eine in der Lebensdomänen-Zaubertabelle angegebene Klerikerstufe erreichen, haben Sie danach immer die aufgelisteten Zauber vorbereitet.\n\nLebensdomänenzauber\n\nVorbereitete Zauber auf Klerikerstufe: 3 Hilfe, Segen, Wunden heilen, geringe Wiederherstellung, 5 Massenheilungswort, Wiederbelebung, 7 Aura des Lebens, Todesschutz, 9 große Wiederherstellung, Massenheilung von Wunden\n\nStufe 3: Leben bewahren\n\nAls magische Aktion präsentierst du dein Heiliges Symbol und verwendest einen Einsatz deiner Göttlichkeit kanalisieren, um Heilenergie hervorzurufen, die eine Anzahl an Trefferpunkten wiederherstellen kann, die dem Fünffachen deiner Klerikerstufe entspricht. Wählen Sie blutbefleckte Kreaturen in einem Umkreis von 30 Fuß um sich aus (darunter auch Sie selbst) und teilen Sie diese Trefferpunkte unter ihnen auf. Mit dieser Funktion kann eine Kreatur höchstens die Hälfte ihrer maximalen Trefferpunkte wiederherstellen.\n\nStufe 6: Gesegneter Heiler\n\nDie Heilzauber, die du auf andere wirkst, heilen auch dich. Unmittelbar nachdem du einen Zauber mit einem Zauberslot gewirkt hast, der einer oder mehreren Kreaturen außer dir selbst Trefferpunkte wiederherstellt, erhältst du Trefferpunkte in Höhe von 2 plus der Stufe des Zauberslots zurück.\n\nStufe 17: Höchste Heilung\n\nWenn Sie normalerweise einen oder mehrere Würfel werfen würden, um einer Kreatur mit einem Zauberspruch oder der Kanalisierung der Göttlichkeit Trefferpunkte wiederherzustellen, werfen Sie diese Würfel nicht für die Heilung; Verwenden Sie stattdessen für jeden Würfel die höchstmögliche Zahl. Anstatt beispielsweise 2W6 Trefferpunkte einer Kreatur mit einem Zauber wiederherzustellen, stellen Sie 12 wieder her.",
+  "tags": [],
+  "class": "Kleriker",
+  "class_id": "kleriker",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

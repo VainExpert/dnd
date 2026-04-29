@@ -1,0 +1,50 @@
+{
+  "id": "zhentarim-ruffian",
+  "type": "feat",
+  "name": "Zhentarim Ruffian",
+  "original_name": "Zhentarim Ruffian",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:zhentarim-ruffian",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Ursprungstalent",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Ursprungstalent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Exploit-Eröffnung. Wenn Sie für einen Gelegenheitsangriff Schaden würfeln, können Sie die Schadenswürfel zweimal werfen und einen der Würfel gegen das Ziel verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Familie zuerst. Wenn du beim Initiativewurf über heroische Inspiration verfügst, kannst du diese einsetzen, um dir und deinen Verbündeten bei diesem Initiativewurf einen Vorteil zu verschaffen."
+    }
+  ],
+  "text": "Ursprungstalent\n\nSie profitieren von folgenden Vorteilen.\n\nExploit-Eröffnung. Wenn Sie für einen Gelegenheitsangriff Schaden würfeln, können Sie die Schadenswürfel zweimal werfen und einen der Würfel gegen das Ziel verwenden.\n\nFamilie zuerst. Wenn du beim Initiativewurf über heroische Inspiration verfügst, kannst du diese einsetzen, um dir und deinen Verbündeten bei diesem Initiativewurf einen Vorteil zu verschaffen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

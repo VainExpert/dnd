@@ -1,0 +1,143 @@
+{
+  "id": "archfey-patron",
+  "type": "subclass",
+  "name": "Archfey-Patron",
+  "original_name": "Archfey Patron",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:archfey-patron",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Handeln Sie mit Whimsical Fey",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Handeln Sie mit Whimsical Fey"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihr Pakt stützt sich auf die Macht der Feywild. Wenn Sie sich für diese Unterklasse entscheiden, können Sie einen Deal mit einem Erzfey wie dem Prinzen des Frosts abschließen. die Königin der Luft und der Dunkelheit, Herrscherin des Gloaming Court; Titania vom Sommerhof; oder eine alte Hexe. Oder Sie rufen ein Spektrum von Fey an und weben ein Netz aus Gefälligkeiten und Schulden. Wer auch immer es ist, Ihr Gönner ist oft unergründlich und skurril."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Erzfey-Zauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Magie deines Gönners sorgt dafür, dass du immer bestimmte Zaubersprüche parat hast; Wenn Sie eine in der Tabelle „Erzfey-Zauber“ angegebene Hexenmeisterstufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Erzfey-Zauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Hexenmeister-Level",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Ruhige Gefühle, Feenfeuer, Nebelschritt, Phantomkraft, Schlaf"
+        ],
+        [
+          "5",
+          "Blink, Pflanzenwachstum"
+        ],
+        [
+          "7",
+          "Beherrsche das Biest, größere Unsichtbarkeit"
+        ],
+        [
+          "9",
+          "Beherrschen Sie die Person, scheinbar"
+        ]
+      ],
+      "text": "Hexenmeister-Level-Zauber 3 Ruhige Gefühle, Feenfeuer, Nebelschritt, Trugbildende Kraft, Schlaf 5 Blinzeln, Pflanzenwachstum 7 Beherrsche das Biest, Größere Unsichtbarkeit 9 Beherrsche die Person, Scheinbar"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Schritte der Feen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihr Gönner gewährt Ihnen die Möglichkeit, sich zwischen den Grenzen der Ebenen zu bewegen. Du kannst Misty Step wirken, ohne einen Zauberslot zu verbrauchen, und zwar so oft, wie es deinem Charisma-Modifikator entspricht (mindestens einmal), und du erhältst alle verbrauchten Anwendungen zurück, wenn du einen Lange Rast beendet hast."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus kannst du jedes Mal, wenn du diesen Zauber wirkst, einen der folgenden zusätzlichen Effekte wählen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erfrischender Schritt. Unmittelbar nach dem Teleportieren erhältst du oder eine Kreatur, die du im Umkreis von 10 Fuß um dich herum sehen kannst, 1W10 temporäre Trefferpunkte."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verspottender Schritt. Kreaturen im Umkreis von 5 Fuß um den Raum, den du verlassen hast, müssen bis zum Beginn deines nächsten Zuges einen Weisheits-Rettungswurf gegen den SG deines Zaubers bestehen oder einen Nachteil bei Angriffswürfen gegen andere Kreaturen als dich haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Nebelflucht"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst Misty Step als Reaktion auf erlittenen Schaden wirken."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus gehören jetzt die folgenden Effekte zu Ihren „Steps of the Fey“-Optionen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verschwindender Schritt. Sie haben den Zustand „Unsichtbar“ bis zum Beginn Ihres nächsten Zuges oder bis unmittelbar nachdem Sie einen Angriffswurf ausgeführt, Schaden verursacht oder einen Zauber gewirkt haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schrecklicher Schritt. Kreaturen im Umkreis von 5 Fuß um den Raum, den du verlassen hast oder in dem du auftauchst (nach deiner Wahl), müssen einen Weisheits-Rettungswurf gegen den SG deines Zaubers bestehen oder 2W10 Psi-Schaden erleiden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Betörende Verteidigung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihr Gönner bringt Ihnen bei, wie Sie Ihren Geist und Körper schützen können. Du bist immun gegen den Charmed-Zustand."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie unmittelbar nachdem eine Kreatur, die Sie sehen können, Sie mit einem Angriffswurf trifft, eine Reaktion ausführen, um den erlittenen Schaden um die Hälfte (abzurunden) zu reduzieren, und Sie können den Angreifer zwingen, einen Weisheits-Rettungswurf gegen Ihren Zauberwurf-SG durchzuführen. Bei einem fehlgeschlagenen Rettungswurf erleidet der Angreifer psychischen Schaden in Höhe des erlittenen Schadens. Sobald Sie diese Reaktion verwendet haben, können Sie sie nicht erneut verwenden, bis Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Paktmagie-Zauberslot (keine Aktion erforderlich), um Ihre Verwendung wiederherzustellen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Bezaubernde Magie"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihr Gönner gewährt Ihnen die Fähigkeit, Ihre Magie mit Teleportation zu verbinden. Unmittelbar nachdem Sie einen Verzauberungs- oder Illusionszauber mit einer Aktion und einem Zauberslot gewirkt haben, können Sie Misty Step als Teil derselben Aktion wirken, ohne einen Zauberslot zu verbrauchen."
+    }
+  ],
+  "text": "Handeln Sie mit Whimsical Fey\n\nIhr Pakt stützt sich auf die Macht der Feywild. Wenn Sie sich für diese Unterklasse entscheiden, können Sie einen Deal mit einem Erzfey wie dem Prinzen des Frosts abschließen. die Königin der Luft und der Dunkelheit, Herrscherin des Gloaming Court; Titania vom Sommerhof; oder eine alte Hexe. Oder Sie rufen ein Spektrum von Fey an und weben ein Netz aus Gefälligkeiten und Schulden. Wer auch immer es ist, Ihr Gönner ist oft unergründlich und skurril.\n\nStufe 3: Erzfey-Zauber\n\nDie Magie deines Gönners sorgt dafür, dass du immer bestimmte Zaubersprüche parat hast; Wenn Sie eine in der Tabelle „Erzfey-Zauber“ angegebene Hexenmeisterstufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nErzfey-Zauber\n\nHexenmeister-Level-Zauber 3 Ruhige Gefühle, Feenfeuer, Nebelschritt, Trugbildende Kraft, Schlaf 5 Blinzeln, Pflanzenwachstum 7 Beherrsche das Biest, Größere Unsichtbarkeit 9 Beherrsche die Person, Scheinbar\n\nLevel 3: Schritte der Feen\n\nIhr Gönner gewährt Ihnen die Möglichkeit, sich zwischen den Grenzen der Ebenen zu bewegen. Du kannst Misty Step wirken, ohne einen Zauberslot zu verbrauchen, und zwar so oft, wie es deinem Charisma-Modifikator entspricht (mindestens einmal), und du erhältst alle verbrauchten Anwendungen zurück, wenn du einen Lange Rast beendet hast.\n\nDarüber hinaus kannst du jedes Mal, wenn du diesen Zauber wirkst, einen der folgenden zusätzlichen Effekte wählen.\n\nErfrischender Schritt. Unmittelbar nach dem Teleportieren erhältst du oder eine Kreatur, die du im Umkreis von 10 Fuß um dich herum sehen kannst, 1W10 temporäre Trefferpunkte.\n\nVerspottender Schritt. Kreaturen im Umkreis von 5 Fuß um den Raum, den du verlassen hast, müssen bis zum Beginn deines nächsten Zuges einen Weisheits-Rettungswurf gegen den SG deines Zaubers bestehen oder einen Nachteil bei Angriffswürfen gegen andere Kreaturen als dich haben.\n\nLevel 6: Nebelflucht\n\nDu kannst Misty Step als Reaktion auf erlittenen Schaden wirken.\n\nDarüber hinaus gehören jetzt die folgenden Effekte zu Ihren „Steps of the Fey“-Optionen.\n\nVerschwindender Schritt. Sie haben den Zustand „Unsichtbar“ bis zum Beginn Ihres nächsten Zuges oder bis unmittelbar nachdem Sie einen Angriffswurf ausgeführt, Schaden verursacht oder einen Zauber gewirkt haben.\n\nSchrecklicher Schritt. Kreaturen im Umkreis von 5 Fuß um den Raum, den du verlassen hast oder in dem du auftauchst (nach deiner Wahl), müssen einen Weisheits-Rettungswurf gegen den SG deines Zaubers bestehen oder 2W10 Psi-Schaden erleiden.\n\nLevel 10: Betörende Verteidigung\n\nIhr Gönner bringt Ihnen bei, wie Sie Ihren Geist und Körper schützen können. Du bist immun gegen den Charmed-Zustand.\n\nDarüber hinaus können Sie unmittelbar nachdem eine Kreatur, die Sie sehen können, Sie mit einem Angriffswurf trifft, eine Reaktion ausführen, um den erlittenen Schaden um die Hälfte (abzurunden) zu reduzieren, und Sie können den Angreifer zwingen, einen Weisheits-Rettungswurf gegen Ihren Zauberwurf-SG durchzuführen. Bei einem fehlgeschlagenen Rettungswurf erleidet der Angreifer psychischen Schaden in Höhe des erlittenen Schadens. Sobald Sie diese Reaktion verwendet haben, können Sie sie nicht erneut verwenden, bis Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Paktmagie-Zauberslot (keine Aktion erforderlich), um Ihre Verwendung wiederherzustellen.\n\nLevel 14: Bezaubernde Magie\n\nIhr Gönner gewährt Ihnen die Fähigkeit, Ihre Magie mit Teleportation zu verbinden. Unmittelbar nachdem Sie einen Verzauberungs- oder Illusionszauber mit einer Aktion und einem Zauberslot gewirkt haben, können Sie Misty Step als Teil derselben Aktion wirken, ohne einen Zauberslot zu verbrauchen.",
+  "tags": [],
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

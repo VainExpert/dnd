@@ -1,0 +1,95 @@
+{
+  "id": "hochschule-fur-glamour",
+  "type": "subclass",
+  "name": "Hochschule für Glamour",
+  "original_name": "College of Glamour",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/bard:college-of-glamour",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Weben Sie betörende Feenmagie. Die Ursprünge des College of Glamour gehen auf die betörende Magie der Feenwildnis zurück. Barden, die diese Magie studieren, weben Fäden der Schönheit und des Schreckens in ihre Lieder und Geschichten, und die Mächtigsten unter ihnen können sich in jenseitige Majestät hüllen. Ihre Auftritte wecken die wehmütige Sehnsucht nach vergessener Unschuld, wecken unbewusste Erinnerungen an lange gehegte Ängste und berühren die Emotionen selbst der hartherzigsten Zuhörer.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Weben Sie betörende Feenmagie. Die Ursprünge des College of Glamour gehen auf die betörende Magie der Feenwildnis zurück. Barden, die diese Magie studieren, weben Fäden der Schönheit und des Schreckens in ihre Lieder und Geschichten, und die Mächtigsten unter ihnen können sich in jenseitige Majestät hüllen. Ihre Auftritte wecken die wehmütige Sehnsucht nach vergessener Unschuld, wecken unbewusste Erinnerungen an lange gehegte Ängste und berühren die Emotionen selbst der hartherzigsten Zuhörer."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Betörende Magie"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben immer die Zauber „Person bezaubern“ und „Spiegelbild“ vorbereitet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie unmittelbar nachdem Sie einen Verzauberungs- oder Illusionszauber mithilfe eines Zauberslots gewirkt haben, eine Kreatur, die Sie in einem Umkreis von 60 Fuß um sich herum sehen können, veranlassen, einen Weisheits-Rettungswurf gegen den SG Ihres Zaubers auszuführen. Bei einem fehlgeschlagenen Rettungswurf befindet sich das Ziel 1 Minute lang im Zustand „Bezaubert“ oder „Verängstigt“ (nach Wahl). Das Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge und beendet bei einem Erfolg den Effekt auf sich selbst."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diesen Vorteil genutzt haben, können Sie ihn nicht erneut nutzen, bis Sie eine Lange Rast beendet haben. Sie können Ihre Nutzung auch wiederherstellen, indem Sie eine Nutzung Ihrer bardischen Inspiration verbrauchen (keine Aktion erforderlich)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Mantel der Inspiration"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können Feenmagie in ein Lied oder einen Tanz einbinden, um andere mit Kraft zu erfüllen. Als Bonusaktion kannst du eine Bardische Inspiration einsetzen, indem du einen Bardischen Inspirationswürfel wirfst. Wenn Sie dies tun, wählen Sie eine Anzahl anderer Kreaturen im Umkreis von 60 Fuß um sich selbst aus, bis zu einer Anzahl, die Ihrem Charisma-Modifikator entspricht (mindestens eine Kreatur). Jede dieser Kreaturen erhält eine Anzahl an temporären Trefferpunkten, die dem Zweifachen der auf dem bardischen Inspirationswürfel gewürfelten Zahl entspricht, und dann kann jede ihre Reaktion nutzen, um ihre Geschwindigkeit zu erreichen, ohne Gelegenheitsangriffe zu provozieren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Mantel der Majestät"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben immer den Befehlszauber vorbereitet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion wirken Sie „Befehl“, ohne einen Zauberslot zu verbrauchen, und nehmen für 1 Minute oder bis Ihre Konzentration endet, ein unheimliches Aussehen an. Während dieser Zeit kannst du „Befehl“ als Bonusaktion wirken, ohne einen Zauberslot zu verbrauchen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Rettungswurf jeder von dir verzauberten Kreatur gegen den Befehl, den du mit dieser Funktion gewirkt hast, scheitert automatisch."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast beendet haben. Sie können Ihre Nutzung auch wiederherstellen, indem Sie einen Zauberslot der Stufe 3+ verbrauchen (keine Aktion erforderlich)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Unzerbrechliche Majestät"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion können Sie für 1 Minute oder bis Sie die Bedingung „Kampfunfähig“ haben, eine magisch majestätische Präsenz annehmen. Immer wenn eine Kreatur dich für die Dauer zum ersten Mal in einer Runde mit einem Angriffswurf trifft, muss dem Angreifer ein Charisma-Rettungswurf gegen deinen Zauberwurf-SG gelingen, andernfalls geht der Angriff stattdessen fehl, da die Kreatur vor deiner Majestät zurückschreckt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese majestätische Präsenz angenommen haben, können Sie dies nicht mehr tun, bis Sie eine Kurze oder Lange Rast beendet haben."
+    }
+  ],
+  "text": "Weben Sie betörende Feenmagie. Die Ursprünge des College of Glamour gehen auf die betörende Magie der Feenwildnis zurück. Barden, die diese Magie studieren, weben Fäden der Schönheit und des Schreckens in ihre Lieder und Geschichten, und die Mächtigsten unter ihnen können sich in jenseitige Majestät hüllen. Ihre Auftritte wecken die wehmütige Sehnsucht nach vergessener Unschuld, wecken unbewusste Erinnerungen an lange gehegte Ängste und berühren die Emotionen selbst der hartherzigsten Zuhörer.\n\nLevel 3: Betörende Magie\n\nSie haben immer die Zauber „Person bezaubern“ und „Spiegelbild“ vorbereitet.\n\nDarüber hinaus können Sie unmittelbar nachdem Sie einen Verzauberungs- oder Illusionszauber mithilfe eines Zauberslots gewirkt haben, eine Kreatur, die Sie in einem Umkreis von 60 Fuß um sich herum sehen können, veranlassen, einen Weisheits-Rettungswurf gegen den SG Ihres Zaubers auszuführen. Bei einem fehlgeschlagenen Rettungswurf befindet sich das Ziel 1 Minute lang im Zustand „Bezaubert“ oder „Verängstigt“ (nach Wahl). Das Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge und beendet bei einem Erfolg den Effekt auf sich selbst.\n\nSobald Sie diesen Vorteil genutzt haben, können Sie ihn nicht erneut nutzen, bis Sie eine Lange Rast beendet haben. Sie können Ihre Nutzung auch wiederherstellen, indem Sie eine Nutzung Ihrer bardischen Inspiration verbrauchen (keine Aktion erforderlich).\n\nLevel 3: Mantel der Inspiration\n\nSie können Feenmagie in ein Lied oder einen Tanz einbinden, um andere mit Kraft zu erfüllen. Als Bonusaktion kannst du eine Bardische Inspiration einsetzen, indem du einen Bardischen Inspirationswürfel wirfst. Wenn Sie dies tun, wählen Sie eine Anzahl anderer Kreaturen im Umkreis von 60 Fuß um sich selbst aus, bis zu einer Anzahl, die Ihrem Charisma-Modifikator entspricht (mindestens eine Kreatur). Jede dieser Kreaturen erhält eine Anzahl an temporären Trefferpunkten, die dem Zweifachen der auf dem bardischen Inspirationswürfel gewürfelten Zahl entspricht, und dann kann jede ihre Reaktion nutzen, um ihre Geschwindigkeit zu erreichen, ohne Gelegenheitsangriffe zu provozieren.\n\nLevel 6: Mantel der Majestät\n\nSie haben immer den Befehlszauber vorbereitet.\n\nAls Bonusaktion wirken Sie „Befehl“, ohne einen Zauberslot zu verbrauchen, und nehmen für 1 Minute oder bis Ihre Konzentration endet, ein unheimliches Aussehen an. Während dieser Zeit kannst du „Befehl“ als Bonusaktion wirken, ohne einen Zauberslot zu verbrauchen.\n\nDer Rettungswurf jeder von dir verzauberten Kreatur gegen den Befehl, den du mit dieser Funktion gewirkt hast, scheitert automatisch.\n\nSobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast beendet haben. Sie können Ihre Nutzung auch wiederherstellen, indem Sie einen Zauberslot der Stufe 3+ verbrauchen (keine Aktion erforderlich).\n\nLevel 14: Unzerbrechliche Majestät\n\nAls Bonusaktion können Sie für 1 Minute oder bis Sie die Bedingung „Kampfunfähig“ haben, eine magisch majestätische Präsenz annehmen. Immer wenn eine Kreatur dich für die Dauer zum ersten Mal in einer Runde mit einem Angriffswurf trifft, muss dem Angreifer ein Charisma-Rettungswurf gegen deinen Zauberwurf-SG gelingen, andernfalls geht der Angriff stattdessen fehl, da die Kreatur vor deiner Majestät zurückschreckt.\n\nSobald Sie diese majestätische Präsenz angenommen haben, können Sie dies nicht mehr tun, bis Sie eine Kurze oder Lange Rast beendet haben.",
+  "tags": [],
+  "class": "Barde",
+  "class_id": "barde",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

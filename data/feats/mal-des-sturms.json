@@ -1,0 +1,96 @@
+{
+  "id": "mal-des-sturms",
+  "type": "feat",
+  "name": "Mal des Sturms",
+  "original_name": "Mark of Storm",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:mark-of-storm",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Drachenmale",
+  "prerequisites": [],
+  "summary": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Windwrights Intuition. Wenn Sie mit Navigator’s Tools eine Geschicklichkeitsprüfung (Akrobatik) oder eine Fähigkeitsprüfung durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sturms Segen. Du hast Resistenz gegen Blitzschaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sturmmagie. Sie kennen den Thunderclap-Cantrip. Wenn Sie Charakterstufe 3 erreichen, haben Sie auch immer den Zauber „Windstoß“ vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können es auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Intelligenz, Weisheit oder Charisma sind Ihre Zauberfähigkeiten für diese Zaubersprüche (wählen Sie, wenn Sie dieses Talent auswählen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauber der Marke. Wenn Sie über die Zauber- oder Paktmagie-Funktion verfügen, werden die Zauber in der Tabelle „Mal des Sturms“ zur Zauberliste dieser Funktion hinzugefügt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zeichen des Sturms"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Zauberstufe",
+          "Zauber"
+        ],
+        [
+          "1",
+          "Talenther Herbst, Nebelwolke"
+        ],
+        [
+          "2",
+          "Schweben, zerschmettern"
+        ],
+        [
+          "3",
+          "Graupelsturm, Windwand"
+        ],
+        [
+          "4",
+          "Beschwöre kleinere Elementare und kontrolliere das Wasser"
+        ],
+        [
+          "5",
+          "Elementar beschwören"
+        ]
+      ],
+      "text": "Zauberstufe Zauber 1 Talenther Fall, Nebelwolke 2 Levitieren, Zerschmettern 3 Schneeregensturm, Windwand 4 Kleinere Elementare beschwören, Wasser kontrollieren 5 Elementar beschwören"
+    }
+  ],
+  "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)\n\nSie profitieren von folgenden Vorteilen.\n\nWindwrights Intuition. Wenn Sie mit Navigator’s Tools eine Geschicklichkeitsprüfung (Akrobatik) oder eine Fähigkeitsprüfung durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen.\n\nSturms Segen. Du hast Resistenz gegen Blitzschaden.\n\nSturmmagie. Sie kennen den Thunderclap-Cantrip. Wenn Sie Charakterstufe 3 erreichen, haben Sie auch immer den Zauber „Windstoß“ vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können es auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Intelligenz, Weisheit oder Charisma sind Ihre Zauberfähigkeiten für diese Zaubersprüche (wählen Sie, wenn Sie dieses Talent auswählen).\n\nZauber der Marke. Wenn Sie über die Zauber- oder Paktmagie-Funktion verfügen, werden die Zauber in der Tabelle „Mal des Sturms“ zur Zauberliste dieser Funktion hinzugefügt.\n\nZeichen des Sturms\n\nZauberstufe Zauber 1 Talenther Fall, Nebelwolke 2 Levitieren, Zerschmettern 3 Schneeregensturm, Windwand 4 Kleinere Elementare beschwören, Wasser kontrollieren 5 Elementar beschwören",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

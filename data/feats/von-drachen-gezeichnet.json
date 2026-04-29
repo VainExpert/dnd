@@ -1,0 +1,56 @@
+{
+  "id": "von-drachen-gezeichnet",
+  "type": "feat",
+  "name": "Von Drachen gezeichnet",
+  "original_name": "Dragonscarred",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:dragonscarred",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Level 4+, Talent „Kult des Drachen“-Einsteigers)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Level 4+, Talent „Kult des Drachen“-Einsteigers)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe deinen Konstitutions- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schadensresistenz. Wenn Sie dieses Talent erhalten, wählen Sie Säure, Kälte, Feuer, Blitz oder Gift. Du hast Resistenz gegenüber der gewählten Schadensart."
+    },
+    {
+      "type": "paragraph",
+      "text": "Furchterregende Macht. Wenn du in deinem Zug einer Kreatur im Rahmen der Aktion „Angriff“ oder „Magie“ Schaden zufügst, kannst du in diesem Zug den Vorteil „Schrecken des Drachen“ des Talents „Kult des Dracheninitianten“ als Bonusaktion nutzen."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Level 4+, Talent „Kult des Drachen“-Einsteigers)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe deinen Konstitutions- oder Charisma-Wert um 1 auf maximal 20.\n\nSchadensresistenz. Wenn Sie dieses Talent erhalten, wählen Sie Säure, Kälte, Feuer, Blitz oder Gift. Du hast Resistenz gegenüber der gewählten Schadensart.\n\nFurchterregende Macht. Wenn du in deinem Zug einer Kreatur im Rahmen der Aktion „Angriff“ oder „Magie“ Schaden zufügst, kannst du in diesem Zug den Vorteil „Schrecken des Drachen“ des Talents „Kult des Dracheninitianten“ als Bonusaktion nutzen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

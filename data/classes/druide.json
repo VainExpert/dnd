@@ -1,0 +1,1247 @@
+{
+  "id": "druide",
+  "type": "class",
+  "name": "Druide",
+  "original_name": "Druid",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/druid:main",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Klassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Druiden gehören zu alten Orden, die sich auf die Kräfte der Natur berufen. Druiden nutzen die Magie von Tieren, Pflanzen und den vier Elementen, heilen, verwandeln sich in Tiere und üben elementare Zerstörung aus.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Druiden gehören zu alten Orden, die sich auf die Kräfte der Natur berufen. Druiden nutzen die Magie von Tieren, Pflanzen und den vier Elementen, heilen, verwandeln sich in Tiere und üben elementare Zerstörung aus."
+    },
+    {
+      "type": "paragraph",
+      "text": "Da einzelne Druiden vor allem die Natur verehren, beziehen sie ihre Magie aus der Natur, einer Naturgottheit oder beidem und schließen sich normalerweise mit anderen Druiden zusammen, um Riten durchzuführen, die den Verlauf der Jahreszeiten und anderer natürlicher Zyklen markieren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Druiden befassen sich mit dem empfindlichen ökologischen Gleichgewicht, das das Pflanzen- und Tierleben erhält, und mit der Notwendigkeit, dass die Menschen im Einklang mit der Natur leben. Druiden bewachen oft heilige Stätten oder wachen über Regionen mit unberührter Natur, aber wenn eine erhebliche Gefahr entsteht, übernehmen Druiden eine aktivere Rolle als Abenteurer, die die Bedrohung bekämpfen."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Kernmerkmale des Druiden"
+        ],
+        [
+          "Primäre Fähigkeit",
+          "Weisheit"
+        ],
+        [
+          "Trefferpunktwürfel",
+          "D8 pro Druidenstufe"
+        ],
+        [
+          "Rettungswurf-Kenntnisse",
+          "Intelligenz und Weisheit"
+        ],
+        [
+          "Fertigkeiten",
+          "Wählen Sie 2: Arkana, Umgang mit Tieren, Einsicht, Medizin, Natur, Wahrnehmung, Religion oder Überleben"
+        ],
+        [
+          "Waffenkenntnisse",
+          "Einfache Waffen"
+        ],
+        [
+          "Werkzeugkenntnisse",
+          "Kräuterkunde-Set"
+        ],
+        [
+          "Rüstungstraining",
+          "Leichte Rüstung und Schilde"
+        ],
+        [
+          "Startausrüstung",
+          "Wähle A oder B: (A) Lederrüstung, Schild, Sichel, Druidischer Fokus (Quartierstab), Forscherpaket, Kräuterkunde-Kit und 9 GP; oder (B) 50 GP"
+        ]
+      ],
+      "text": "Kerneigenschaften des Druiden Primärfähigkeit Weisheit Trefferpunkt Würfel D8 pro Druidenstufe Rettungswurf-Kompetenzen Intelligenz und Weisheit Fertigkeiten-Kompetenzen Wählen Sie 2: Arcana, Umgang mit Tieren, Einsicht, Medizin, Natur, Wahrnehmung, Religion oder Überleben Waffenkompetenzen Einfache Waffen Werkzeugkompetenzen Kräuterkunde-Kit Rüstungstraining Leichte Rüstung und Schilde Startausrüstung Wählen Sie A oder B: (A) Lederrüstung, Schild, Sichel, Druidischer Fokus (Quartierstab), Forscherpaket, Kräuterkunde-Kit, und 9 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Druide der Stufe 1"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalte alle Eigenschaften in der Tabelle „Kerndruideneigenschaften“.",
+        "Erhalten Sie die Level-1-Funktionen des Druiden, die in der Tabelle „Druidentalente“ aufgeführt sind."
+      ],
+      "text": "Erhalte alle Eigenschaften in der Tabelle „Kerndruideneigenschaften“. Erhalten Sie die Level-1-Funktionen des Druiden, die in der Tabelle „Druidentalente“ aufgeführt sind."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Mehrklassen-Druide"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalten Sie die folgenden Eigenschaften aus der Tabelle „Kerndruideneigenschaften“: Trefferpunktwürfel und Training mit leichter Rüstung und Schilden.",
+        "Erhalten Sie die Level-1-Funktionen des Druiden, die in der Tabelle „Druidentalente“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen."
+      ],
+      "text": "Erhalten Sie die folgenden Eigenschaften aus der Tabelle „Kerndruideneigenschaften“: Trefferpunktwürfel und Training mit leichter Rüstung und Schilden. Erhalten Sie die Level-1-Funktionen des Druiden, die in der Tabelle „Druidentalente“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Talente der Druidenklasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Druidentalente (Teil A)"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ebene",
+          "Uebungsbonus",
+          "Talenturen"
+        ],
+        [
+          "1",
+          "+2",
+          "Zauberei, Druide, Urorden"
+        ],
+        [
+          "2",
+          "+2",
+          "Wilde Gestalt, wilder Begleiter"
+        ],
+        [
+          "3",
+          "+2",
+          "Druiden-Unterklasse"
+        ],
+        [
+          "4",
+          "+2",
+          "Faehigkeitswert-Verbesserung"
+        ],
+        [
+          "5",
+          "+3",
+          "Wildes Wiederaufleben"
+        ],
+        [
+          "6",
+          "+3",
+          "Unterklasse Talent"
+        ],
+        [
+          "7",
+          "+3",
+          "Elementare Wut"
+        ],
+        [
+          "8",
+          "+3",
+          "Faehigkeitswert-Verbesserung"
+        ],
+        [
+          "9",
+          "+4",
+          "-"
+        ],
+        [
+          "10",
+          "+4",
+          "Unterklasse Talent"
+        ],
+        [
+          "11",
+          "+4",
+          "-"
+        ],
+        [
+          "12",
+          "+4",
+          "Faehigkeitswert-Verbesserung"
+        ],
+        [
+          "13",
+          "+5",
+          "-"
+        ],
+        [
+          "14",
+          "+5",
+          "Unterklasse Talent"
+        ],
+        [
+          "15",
+          "+5",
+          "Verbesserte Elementarwut"
+        ],
+        [
+          "16",
+          "+5",
+          "Faehigkeitswert-Verbesserung"
+        ],
+        [
+          "17",
+          "+6",
+          "-"
+        ],
+        [
+          "18",
+          "+6",
+          "Tierzauber"
+        ],
+        [
+          "19",
+          "+6",
+          "Epischer Segen"
+        ],
+        [
+          "20",
+          "+6",
+          "Erzdruide"
+        ]
+      ],
+      "text": "Level Uebungsbonus Talente 1 +2 Zauber, Druide, Urorden 2 +2 Wilde Gestalt, Wilder Gefährte 3 +2 Druide-Unterklasse 4 +2 Verbesserung des Fähigkeitswerts 5 +3 Wildes Wiederaufleben 6 +3 Unterklasse-Talent 7 +3 Elementarzorn 8 +3 Fähigkeitswert-Verbesserung 9 +4 - 10 +4 Unterklassen-Talentwert 11 +4 - 12 +4 Fähigkeitswert-Verbesserung 13 +5 - 14 +5 Talent der Unterklasse 15 +5 Verbesserte Elementarwut 16 +5 Verbesserung des Fähigkeitswerts 17 +6 - 18 +6 Bestienzauber 19 +6 Epischer Segen 20 +6 Erzdruide"
+    },
+    {
+      "type": "paragraph",
+      "text": "Druidentalente (Teil B)"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ebene",
+          "Wilde Form",
+          "Zaubertricks",
+          "Vorbereitete Zauber",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        [
+          "1",
+          "-",
+          "2",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "2",
+          "2",
+          "2",
+          "5",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "3",
+          "2",
+          "2",
+          "6",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "4",
+          "2",
+          "3",
+          "7",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "5",
+          "2",
+          "3",
+          "9",
+          "4",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "6",
+          "3",
+          "3",
+          "10",
+          "4",
+          "3",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "7",
+          "3",
+          "3",
+          "11",
+          "4",
+          "3",
+          "3",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "8",
+          "3",
+          "3",
+          "12",
+          "4",
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "9",
+          "3",
+          "3",
+          "14",
+          "4",
+          "3",
+          "3",
+          "3",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "10",
+          "3",
+          "4",
+          "15",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "11",
+          "3",
+          "4",
+          "16",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "12",
+          "3",
+          "4",
+          "16",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "13",
+          "3",
+          "4",
+          "17",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "14",
+          "3",
+          "4",
+          "17",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "15",
+          "3",
+          "4",
+          "18",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "-"
+        ],
+        [
+          "16",
+          "3",
+          "4",
+          "18",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "-"
+        ],
+        [
+          "17",
+          "4",
+          "4",
+          "19",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "18",
+          "4",
+          "4",
+          "20",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "19",
+          "4",
+          "4",
+          "21",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "20",
+          "4",
+          "4",
+          "22",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "2",
+          "2",
+          "1",
+          "1"
+        ]
+      ],
+      "text": "Level Wildform Zaubertricks Vorbereitete Zauber 1. 2. 3. 4. 5. 6. 7. 8. 9. 1 - 2 4 2 - - - - - - - - 2 2 2 5 3 - - - - - - - - 3 2 2 6 4 2 - - - - - - - 4 2 3 7 4 3 - - - - - - - 5 2 3 9 4 3 2 - - - - - - 6 3 3 10 4 3 3 - - - - - - 7 3 3 11 4 3 3 1 - - - - - 8 3 3 12 4 3 3 2 - - - - - 9 3 3 14 4 3 3 3 1 - - - - 10 3 4 15 4 3 3 3 2 - - - - 11 3 4 16 4 3 3 3 2 1 - - - 12 3 4 16 4 3 3 3 2 1 - - - 13 3 4 17 4 3 3 3 2 1 1 - - 14 3 4 17 4 3 3 3 2 1 1 - - 15 3 4 18 4 3 3 3 2 1 1 1 - 16 3 4 18 4 3 3 3 2 1 1 1 - 17 4 4 19 4 3 3 3 2 1 1 1 1 18 4 4 20 4 3 3 3 3 1 1 1 1 19 4 4 21 4 3 3 3 3 2 1 1 1 20 4 4 22 4 3 3 3 3 2 2 1 1"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Druide erhältst du die folgenden Klassenmerkmale, wenn du die angegebenen Druidenstufen erreichst. Diese Funktionen sind in der Tabelle „Druidentalente“ aufgeführt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Zaubern"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben gelernt, Zauber zu wirken, indem Sie die mystischen Kräfte der Natur studiert haben. Die Regeln zum Zaubern finden Sie in Kapitel 7. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln mit Druidenzaubern anwenden, die später in der Beschreibung der Klasse in der Liste der Druidenzauber aufgeführt werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zaubertricks. Sie kennen zwei Cantrips Ihrer Wahl aus der Druidenzauberliste. Druidcraft und Produce Flame werden empfohlen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie eine Druidenstufe erreichen, können Sie einen Ihrer Cantrips durch einen anderen Cantrip Ihrer Wahl aus der Druidenzauberliste ersetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie die Druidenstufen 4 und 10 erreichen, lernen Sie einen weiteren Cantrip Ihrer Wahl aus der Liste der Druidenzauber, wie in der Spalte „Zaubertricks“ der Tabelle „Druidentalente“ aufgeführt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberplatz. Die Tabelle „Druidentalente“ zeigt, wie viele Zauberslots Ihnen zum Wirken Ihrer Zauber der Stufe 1+ zur Verfügung stehen. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vorbereitete Zauber der Stufe 1+. Sie bereiten die Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst vier Zauber der Stufe 1 aus der Liste der Druidenzauber aus. Empfohlen werden „Tierfreundschaft“, „Wunden heilen“, „Feenfeuer“ und „Donnerwelle“."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Anzahl der Zaubersprüche auf Ihrer Liste erhöht sich mit zunehmender Druidenstufe, wie in der Spalte „Vorbereitete Zaubersprüche“ der Tabelle „Druidentalente“ angezeigt. Wenn sich diese Zahl erhöht, wähle weitere Zauber aus der Druiden-Zauberliste, bis die Anzahl der Zauber auf deiner Liste mit der Zahl auf der Tabelle übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Druide der Stufe 3 sind, kann Ihre Liste der vorbereiteten Zaubersprüche sechs Zaubersprüche der Stufen 1 und 2 in beliebiger Kombination enthalten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Ihnen eine andere Druidenfunktion Zauber verleiht, die Sie schon immer vorbereitet haben, zählen diese Zauber nicht zu der Anzahl der Zauber, die Sie mit dieser Funktion vorbereiten können. Ansonsten zählen diese Zauber für Sie jedoch als Druidenzauber."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ändern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie eine Lange Rast abgeschlossen haben, können Sie Ihre Liste der vorbereiteten Zauber ändern und jeden der Zauber durch andere Druidenzauber ersetzen, für die Sie Zauberplätze haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfähigkeit. Weisheit ist Ihre Zauberfähigkeit für Ihre Druidenzauber."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfokus. Sie können einen Druidenfokus als Zauberfokus für Ihre Druidenzauber verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Druidisch"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie kennen Druidisch, die Geheimsprache der Druiden. Durch das Erlernen dieser alten Sprache haben Sie auch die Magie der Kommunikation mit Tieren entdeckt. Sie haben immer den Zauber „Mit Tieren sprechen“ vorbereitet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können Druidic verwenden, um versteckte Nachrichten zu hinterlassen. Sie und andere, die sich mit Druidic auskennen, erkennen eine solche Nachricht automatisch. Andere erkennen das Vorhandensein der Nachricht mit einer erfolgreichen Intelligenzprüfung (Untersuchung) gegen SG 15, können sie aber ohne Magie nicht entschlüsseln."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Urordnung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben sich einer der folgenden heiligen Rollen Ihrer Wahl verschrieben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberer. Sie kennen einen zusätzlichen Cantrip aus der Liste der Druidenzauber. Darüber hinaus verschafft Ihnen Ihre mystische Verbindung zur Natur einen Bonus auf Ihre Intelligenzprüfungen (Arcana oder Natur). Der Bonus entspricht Ihrem Weisheitsmodifikator (Mindestbonus von +1)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Aufseher. Wenn Sie für den Kampf ausgebildet sind, erwerben Sie Kenntnisse im Umgang mit Kampfwaffen und trainieren mit mittlerer Rüstung."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 2: Wildform"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Kraft der Natur ermöglicht es Ihnen, die Gestalt eines Tieres anzunehmen. Als Bonusaktion verwandelst du dich in eine Bestienform, die du für diese Funktion gelernt hast (siehe „Bekannte Formen“ unten). Sie bleiben in dieser Form für eine Anzahl von Stunden, die der Hälfte Ihrer Druidenstufe entspricht, oder bis Sie Wild Shape erneut verwenden, den Zustand „Kampfunfähig“ haben oder sterben. Sie können das Formular auch als Bonusaktion vorzeitig verlassen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Anzahl der Verwendungen. Sie können Wild Shape zweimal verwenden. Du erhältst eine verbrauchte Nutzung zurück, wenn du eine Kurze Rast beendest, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast beendest."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erhalten zusätzliche Verwendungsmöglichkeiten, wenn Sie bestimmte Druidenstufen erreichen, wie in der Spalte „Wilde Gestalt“ der Tabelle „Druidentalente“ angezeigt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bekannte Formen. Sie kennen vier Bestienformen für diese Funktion, ausgewählt aus Bestien-Statistikblöcken, die eine maximale Herausforderungsbewertung von 1/4 haben und denen eine Fluggeschwindigkeit fehlt (siehe Anhang B für Statistikblockoptionen). Empfohlen werden die Ratte, das Reitpferd, die Spinne und der Wolf. Immer wenn Sie eine Lange Rast beendet haben, können Sie eines Ihrer bekannten Formulare durch ein anderes berechtigtes Formular ersetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie bestimmte Druidenstufen erreichen, erhöhen sich Ihre Anzahl bekannter Formen und die maximale Herausforderungsbewertung für diese Formen, wie in der Tabelle „Bestienformen“ gezeigt. Darüber hinaus können Sie ab Level 8 eine Form annehmen, die über eine Fluggeschwindigkeit verfügt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bei der Auswahl bekannter Formen können Sie im Monster-Handbuch oder anderswo nach geeigneten Bestien suchen, wenn der Dungeon-Meister Ihnen dies erlaubt."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Druidenstufe",
+          "Bekannte Formen",
+          "Max CR",
+          "Fluggeschwindigkeit"
+        ],
+        [
+          "2",
+          "4",
+          "1/4",
+          "NEIN"
+        ],
+        [
+          "4",
+          "6",
+          "1/2",
+          "NEIN"
+        ],
+        [
+          "8",
+          "8",
+          "1",
+          "Ja"
+        ]
+      ],
+      "text": "Druidenstufe Bekannte Formen Max. CR-Fluggeschwindigkeit 2 4 1/4 Nein 4 6 1/2 Nein 8 8 1 Ja"
+    },
+    {
+      "type": "paragraph",
+      "text": "Regeln während der Formänderung. Während Sie sich in einer Form befinden, behalten Sie Ihre Persönlichkeit, Ihre Erinnerungen und Ihre Sprechfähigkeit, und es gelten die folgenden Regeln:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Temporäre Trefferpunkte. Wenn Sie eine wilde Gestalt annehmen, erhalten Sie eine Anzahl temporärer Trefferpunkte, die Ihrer Druidenstufe entspricht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Spielstatistiken. Deine Spielstatistiken werden durch den Statistikblock des Biests ersetzt, aber du behältst deinen Kreaturentyp; Trefferpunkte; Trefferpunktwürfel; Intelligenz-, Weisheits- und Charisma-Werte; Klassenmerkmale; Sprachen; und Heldentaten. Außerdem behältst du deine Fertigkeiten und Rettungswurffähigkeiten und verwendest dafür deinen Uebungsbonus, zusätzlich zum Erwerb der Fertigkeiten der Kreatur. Wenn ein Fertigkeits- oder Rettungswurfmodifikator im Statistikblock des Biests höher ist als deiner, verwende den im Statistikblock."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kein Zaubern. Sie können keine Zauber wirken, aber die Formänderung beeinträchtigt weder Ihre Konzentration noch beeinträchtigt sie auf andere Weise einen Zauber, den Sie bereits gewirkt haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Objekte. Ihre Fähigkeit, mit Objekten umzugehen, wird durch die Gliedmaßen der Form und nicht durch Ihre eigenen bestimmt. Darüber hinaus entscheiden Sie, ob Ihre Ausrüstung in Ihren Raum fällt, in Ihre neue Form übergeht oder von dieser getragen wird. Getragene Ausrüstung funktioniert wie gewohnt, aber der DM entscheidet anhand der Größe und Form der Kreatur, ob es für die neue Form praktisch ist, ein Ausrüstungsteil zu tragen. Ihre Ausrüstung ändert weder Größe noch Form, um sich an die neue Form anzupassen, und alle Ausrüstungsgegenstände, die die neue Form nicht tragen kann, müssen entweder zu Boden fallen oder mit der Form verschmelzen. Ausrüstung, die mit der Form verschmilzt, hat keine Wirkung, solange Sie sich in dieser Form befinden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 2: Wilder Begleiter"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können einen Naturgeist herbeirufen, der eine Tiergestalt annimmt, um Ihnen zu helfen. Als magische Aktion können Sie einen Zauberslot oder die Verwendung von Wild Shape aufwenden, um den Zauber „Vertraute finden“ ohne Materialkomponenten zu wirken."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie den Zauber auf diese Weise wirken, ist der Vertraute Fey und verschwindet, wenn Sie eine Lange Rast beendet haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Druiden-Unterklasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine Druiden-Unterklasse deiner Wahl. Die Unterklassen „Circle of the Land“, „Circle of the Moon“, „Circle of the Sea“ und „Circle of the Stars“ werden nach der Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Druidenstufen Funktionen gewährt. Für den Rest Ihrer Karriere erwerben Sie alle Merkmale Ihrer Unterklasse, die Ihrer Druidenstufe oder niedriger entsprechen."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Druiden-Unterklassen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Name Kreis des Landes Kreis des Mondes Kreis des Meeres Kreis der Sterne"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 4: Verbesserung der Fähigkeitsbewertung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Druidenstufen 8, 12 und 16."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 5: Wildes Wiederaufleben"
+    },
+    {
+      "type": "paragraph",
+      "text": "Einmal in jedem Ihrer Züge können Sie, wenn Sie Wild Shape nicht mehr verwenden können, sich selbst eine Verwendung gönnen, indem Sie einen Zauberslot aufwenden (keine Aktion erforderlich)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie eine Anwendung von „Wild Shape“ (keine Aktion erforderlich) aufwenden, um sich einen Zauberslot der Stufe 1 zu verschaffen. Dies ist jedoch erst wieder möglich, wenn Sie „Lange Rast“ beendet haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Elementarwut"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Kraft der Elemente durchströmt dich. Sie erhalten eine der folgenden Optionen Ihrer Wahl."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kraftvolle Zauberei. Addiere deinen Weisheitsmodifikator zum Schaden, den du mit einem Druiden-Cantrip verursachst."
+    },
+    {
+      "type": "paragraph",
+      "text": "Urschlag. Einmal in jedem deiner Züge, wenn du eine Kreatur mit einem Angriffswurf mit einer Waffe oder dem Angriff einer Bestienform in Wildform triffst, kannst du dafür sorgen, dass das Ziel zusätzlich 1W8 Kälte-, Feuer-, Blitz- oder Donnerschaden erleidet (wähle, wann du triffst)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 15: Verbesserte Elementarwut"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Option, die Sie für „Elemental Fury“ gewählt haben, wird stärker, wie unten beschrieben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kraftvolle Zauberei. Wenn Sie einen Druiden-Cantrip mit einer Reichweite von 10 Fuß oder mehr wirken, erhöht sich die Reichweite des Zaubers um 300 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Urschlag. Der zusätzliche Schaden deines Urangriffs erhöht sich auf 2W8."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 18: Bestienzauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Während du Wild Shape verwendest, kannst du Zauber in Bestienform wirken, mit Ausnahme von Zaubersprüchen, die eine Materialkomponente mit angegebenen Kosten haben oder deren Materialkomponente verbraucht."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 19: Epischer Segen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Boon of Dimensional Travel wird empfohlen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 20: Erzdruide"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Vitalität der Natur erblüht ständig in Ihnen und beschert Ihnen die folgenden Vorteile."
+    },
+    {
+      "type": "paragraph",
+      "text": "Immergrüne Wildform. Immer wenn du die Initiative würfelst und Wild Shape nicht mehr nutzen kannst, erhältst du einen verbrauchten Einsatz davon zurück."
+    },
+    {
+      "type": "paragraph",
+      "text": "Naturmagier. Sie können die Verwendung von Wild Shape in einen Zauberslot umwandeln (keine Aktion erforderlich). Wählen Sie eine Reihe Ihrer nicht verbrauchten Verwendungen von Wild Shape aus und wandeln Sie sie in einen einzelnen Zauberslot um, wobei jede Verwendung 2 Zauberstufen beisteuert. Wenn Sie beispielsweise zwei Verwendungen von Wild Shape umwandeln, erzeugen Sie einen Zauberslot der Stufe 4. Sobald Sie diesen Vorteil genutzt haben, können Sie dies nicht mehr tun, bis Sie eine Lange Rast beendet haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Langlebigkeit. Die Urmagie, die Sie ausüben, lässt Sie langsamer altern. Alle zehn Jahre, die vergehen, altert Ihr Körper nur um ein Jahr."
+    }
+  ],
+  "text": "Druiden gehören zu alten Orden, die sich auf die Kräfte der Natur berufen. Druiden nutzen die Magie von Tieren, Pflanzen und den vier Elementen, heilen, verwandeln sich in Tiere und üben elementare Zerstörung aus.\n\nDa einzelne Druiden vor allem die Natur verehren, beziehen sie ihre Magie aus der Natur, einer Naturgottheit oder beidem und schließen sich normalerweise mit anderen Druiden zusammen, um Riten durchzuführen, die den Verlauf der Jahreszeiten und anderer natürlicher Zyklen markieren.\n\nDruiden befassen sich mit dem empfindlichen ökologischen Gleichgewicht, das das Pflanzen- und Tierleben erhält, und mit der Notwendigkeit, dass die Menschen im Einklang mit der Natur leben. Druiden bewachen oft heilige Stätten oder wachen über Regionen mit unberührter Natur, aber wenn eine erhebliche Gefahr entsteht, übernehmen Druiden eine aktivere Rolle als Abenteurer, die die Bedrohung bekämpfen.\n\nKerneigenschaften des Druiden Primärfähigkeit Weisheit Trefferpunkt Würfel D8 pro Druidenstufe Rettungswurf-Kompetenzen Intelligenz und Weisheit Fertigkeiten-Kompetenzen Wählen Sie 2: Arcana, Umgang mit Tieren, Einsicht, Medizin, Natur, Wahrnehmung, Religion oder Überleben Waffenkompetenzen Einfache Waffen Werkzeugkompetenzen Kräuterkunde-Kit Rüstungstraining Leichte Rüstung und Schilde Startausrüstung Wählen Sie A oder B: (A) Lederrüstung, Schild, Sichel, Druidischer Fokus (Quartierstab), Forscherpaket, Kräuterkunde-Kit, und 9 GP; oder (B) 50 GP\n\nAls Druide der Stufe 1\n\nErhalte alle Eigenschaften in der Tabelle „Kerndruideneigenschaften“. Erhalten Sie die Level-1-Funktionen des Druiden, die in der Tabelle „Druidentalente“ aufgeführt sind.\n\nAls Mehrklassen-Druide\n\nErhalten Sie die folgenden Eigenschaften aus der Tabelle „Kerndruideneigenschaften“: Trefferpunktwürfel und Training mit leichter Rüstung und Schilden. Erhalten Sie die Level-1-Funktionen des Druiden, die in der Tabelle „Druidentalente“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen.\n\nTalente der Druidenklasse\n\nDruidentalente (Teil A)\n\nLevel Uebungsbonus Talente 1 +2 Zauber, Druide, Urorden 2 +2 Wilde Gestalt, Wilder Gefährte 3 +2 Druide-Unterklasse 4 +2 Verbesserung des Fähigkeitswerts 5 +3 Wildes Wiederaufleben 6 +3 Unterklasse-Talent 7 +3 Elementarzorn 8 +3 Fähigkeitswert-Verbesserung 9 +4 - 10 +4 Unterklassen-Talentwert 11 +4 - 12 +4 Fähigkeitswert-Verbesserung 13 +5 - 14 +5 Talent der Unterklasse 15 +5 Verbesserte Elementarwut 16 +5 Verbesserung des Fähigkeitswerts 17 +6 - 18 +6 Bestienzauber 19 +6 Epischer Segen 20 +6 Erzdruide\n\nDruidentalente (Teil B)\n\nLevel Wildform Zaubertricks Vorbereitete Zauber 1. 2. 3. 4. 5. 6. 7. 8. 9. 1 - 2 4 2 - - - - - - - - 2 2 2 5 3 - - - - - - - - 3 2 2 6 4 2 - - - - - - - 4 2 3 7 4 3 - - - - - - - 5 2 3 9 4 3 2 - - - - - - 6 3 3 10 4 3 3 - - - - - - 7 3 3 11 4 3 3 1 - - - - - 8 3 3 12 4 3 3 2 - - - - - 9 3 3 14 4 3 3 3 1 - - - - 10 3 4 15 4 3 3 3 2 - - - - 11 3 4 16 4 3 3 3 2 1 - - - 12 3 4 16 4 3 3 3 2 1 - - - 13 3 4 17 4 3 3 3 2 1 1 - - 14 3 4 17 4 3 3 3 2 1 1 - - 15 3 4 18 4 3 3 3 2 1 1 1 - 16 3 4 18 4 3 3 3 2 1 1 1 - 17 4 4 19 4 3 3 3 2 1 1 1 1 18 4 4 20 4 3 3 3 3 1 1 1 1 19 4 4 21 4 3 3 3 3 2 1 1 1 20 4 4 22 4 3 3 3 3 2 2 1 1\n\nAls Druide erhältst du die folgenden Klassenmerkmale, wenn du die angegebenen Druidenstufen erreichst. Diese Funktionen sind in der Tabelle „Druidentalente“ aufgeführt.\n\nStufe 1: Zaubern\n\nSie haben gelernt, Zauber zu wirken, indem Sie die mystischen Kräfte der Natur studiert haben. Die Regeln zum Zaubern finden Sie in Kapitel 7. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln mit Druidenzaubern anwenden, die später in der Beschreibung der Klasse in der Liste der Druidenzauber aufgeführt werden.\n\nZaubertricks. Sie kennen zwei Cantrips Ihrer Wahl aus der Druidenzauberliste. Druidcraft und Produce Flame werden empfohlen.\n\nImmer wenn Sie eine Druidenstufe erreichen, können Sie einen Ihrer Cantrips durch einen anderen Cantrip Ihrer Wahl aus der Druidenzauberliste ersetzen.\n\nWenn Sie die Druidenstufen 4 und 10 erreichen, lernen Sie einen weiteren Cantrip Ihrer Wahl aus der Liste der Druidenzauber, wie in der Spalte „Zaubertricks“ der Tabelle „Druidentalente“ aufgeführt.\n\nZauberplatz. Die Tabelle „Druidentalente“ zeigt, wie viele Zauberslots Ihnen zum Wirken Ihrer Zauber der Stufe 1+ zur Verfügung stehen. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt.\n\nVorbereitete Zauber der Stufe 1+. Sie bereiten die Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst vier Zauber der Stufe 1 aus der Liste der Druidenzauber aus. Empfohlen werden „Tierfreundschaft“, „Wunden heilen“, „Feenfeuer“ und „Donnerwelle“.\n\nDie Anzahl der Zaubersprüche auf Ihrer Liste erhöht sich mit zunehmender Druidenstufe, wie in der Spalte „Vorbereitete Zaubersprüche“ der Tabelle „Druidentalente“ angezeigt. Wenn sich diese Zahl erhöht, wähle weitere Zauber aus der Druiden-Zauberliste, bis die Anzahl der Zauber auf deiner Liste mit der Zahl auf der Tabelle übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Druide der Stufe 3 sind, kann Ihre Liste der vorbereiteten Zaubersprüche sechs Zaubersprüche der Stufen 1 und 2 in beliebiger Kombination enthalten.\n\nWenn Ihnen eine andere Druidenfunktion Zauber verleiht, die Sie schon immer vorbereitet haben, zählen diese Zauber nicht zu der Anzahl der Zauber, die Sie mit dieser Funktion vorbereiten können. Ansonsten zählen diese Zauber für Sie jedoch als Druidenzauber.\n\nÄndern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie eine Lange Rast abgeschlossen haben, können Sie Ihre Liste der vorbereiteten Zauber ändern und jeden der Zauber durch andere Druidenzauber ersetzen, für die Sie Zauberplätze haben.\n\nZauberfähigkeit. Weisheit ist Ihre Zauberfähigkeit für Ihre Druidenzauber.\n\nZauberfokus. Sie können einen Druidenfokus als Zauberfokus für Ihre Druidenzauber verwenden.\n\nStufe 1: Druidisch\n\nSie kennen Druidisch, die Geheimsprache der Druiden. Durch das Erlernen dieser alten Sprache haben Sie auch die Magie der Kommunikation mit Tieren entdeckt. Sie haben immer den Zauber „Mit Tieren sprechen“ vorbereitet.\n\nSie können Druidic verwenden, um versteckte Nachrichten zu hinterlassen. Sie und andere, die sich mit Druidic auskennen, erkennen eine solche Nachricht automatisch. Andere erkennen das Vorhandensein der Nachricht mit einer erfolgreichen Intelligenzprüfung (Untersuchung) gegen SG 15, können sie aber ohne Magie nicht entschlüsseln.\n\nStufe 1: Urordnung\n\nSie haben sich einer der folgenden heiligen Rollen Ihrer Wahl verschrieben.\n\nZauberer. Sie kennen einen zusätzlichen Cantrip aus der Liste der Druidenzauber. Darüber hinaus verschafft Ihnen Ihre mystische Verbindung zur Natur einen Bonus auf Ihre Intelligenzprüfungen (Arcana oder Natur). Der Bonus entspricht Ihrem Weisheitsmodifikator (Mindestbonus von +1).\n\nAufseher. Wenn Sie für den Kampf ausgebildet sind, erwerben Sie Kenntnisse im Umgang mit Kampfwaffen und trainieren mit mittlerer Rüstung.\n\nLevel 2: Wildform\n\nDie Kraft der Natur ermöglicht es Ihnen, die Gestalt eines Tieres anzunehmen. Als Bonusaktion verwandelst du dich in eine Bestienform, die du für diese Funktion gelernt hast (siehe „Bekannte Formen“ unten). Sie bleiben in dieser Form für eine Anzahl von Stunden, die der Hälfte Ihrer Druidenstufe entspricht, oder bis Sie Wild Shape erneut verwenden, den Zustand „Kampfunfähig“ haben oder sterben. Sie können das Formular auch als Bonusaktion vorzeitig verlassen.\n\nAnzahl der Verwendungen. Sie können Wild Shape zweimal verwenden. Du erhältst eine verbrauchte Nutzung zurück, wenn du eine Kurze Rast beendest, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast beendest.\n\nSie erhalten zusätzliche Verwendungsmöglichkeiten, wenn Sie bestimmte Druidenstufen erreichen, wie in der Spalte „Wilde Gestalt“ der Tabelle „Druidentalente“ angezeigt.\n\nBekannte Formen. Sie kennen vier Bestienformen für diese Funktion, ausgewählt aus Bestien-Statistikblöcken, die eine maximale Herausforderungsbewertung von 1/4 haben und denen eine Fluggeschwindigkeit fehlt (siehe Anhang B für Statistikblockoptionen). Empfohlen werden die Ratte, das Reitpferd, die Spinne und der Wolf. Immer wenn Sie eine Lange Rast beendet haben, können Sie eines Ihrer bekannten Formulare durch ein anderes berechtigtes Formular ersetzen.\n\nWenn Sie bestimmte Druidenstufen erreichen, erhöhen sich Ihre Anzahl bekannter Formen und die maximale Herausforderungsbewertung für diese Formen, wie in der Tabelle „Bestienformen“ gezeigt. Darüber hinaus können Sie ab Level 8 eine Form annehmen, die über eine Fluggeschwindigkeit verfügt.\n\nBei der Auswahl bekannter Formen können Sie im Monster-Handbuch oder anderswo nach geeigneten Bestien suchen, wenn der Dungeon-Meister Ihnen dies erlaubt.\n\nDruidenstufe Bekannte Formen Max. CR-Fluggeschwindigkeit 2 4 1/4 Nein 4 6 1/2 Nein 8 8 1 Ja\n\nRegeln während der Formänderung. Während Sie sich in einer Form befinden, behalten Sie Ihre Persönlichkeit, Ihre Erinnerungen und Ihre Sprechfähigkeit, und es gelten die folgenden Regeln:\n\nTemporäre Trefferpunkte. Wenn Sie eine wilde Gestalt annehmen, erhalten Sie eine Anzahl temporärer Trefferpunkte, die Ihrer Druidenstufe entspricht.\n\nSpielstatistiken. Deine Spielstatistiken werden durch den Statistikblock des Biests ersetzt, aber du behältst deinen Kreaturentyp; Trefferpunkte; Trefferpunktwürfel; Intelligenz-, Weisheits- und Charisma-Werte; Klassenmerkmale; Sprachen; und Heldentaten. Außerdem behältst du deine Fertigkeiten und Rettungswurffähigkeiten und verwendest dafür deinen Uebungsbonus, zusätzlich zum Erwerb der Fertigkeiten der Kreatur. Wenn ein Fertigkeits- oder Rettungswurfmodifikator im Statistikblock des Biests höher ist als deiner, verwende den im Statistikblock.\n\nKein Zaubern. Sie können keine Zauber wirken, aber die Formänderung beeinträchtigt weder Ihre Konzentration noch beeinträchtigt sie auf andere Weise einen Zauber, den Sie bereits gewirkt haben.\n\nObjekte. Ihre Fähigkeit, mit Objekten umzugehen, wird durch die Gliedmaßen der Form und nicht durch Ihre eigenen bestimmt. Darüber hinaus entscheiden Sie, ob Ihre Ausrüstung in Ihren Raum fällt, in Ihre neue Form übergeht oder von dieser getragen wird. Getragene Ausrüstung funktioniert wie gewohnt, aber der DM entscheidet anhand der Größe und Form der Kreatur, ob es für die neue Form praktisch ist, ein Ausrüstungsteil zu tragen. Ihre Ausrüstung ändert weder Größe noch Form, um sich an die neue Form anzupassen, und alle Ausrüstungsgegenstände, die die neue Form nicht tragen kann, müssen entweder zu Boden fallen oder mit der Form verschmelzen. Ausrüstung, die mit der Form verschmilzt, hat keine Wirkung, solange Sie sich in dieser Form befinden.\n\nLevel 2: Wilder Begleiter\n\nSie können einen Naturgeist herbeirufen, der eine Tiergestalt annimmt, um Ihnen zu helfen. Als magische Aktion können Sie einen Zauberslot oder die Verwendung von Wild Shape aufwenden, um den Zauber „Vertraute finden“ ohne Materialkomponenten zu wirken.\n\nWenn Sie den Zauber auf diese Weise wirken, ist der Vertraute Fey und verschwindet, wenn Sie eine Lange Rast beendet haben.\n\nLevel 3: Druiden-Unterklasse\n\nDu erhältst eine Druiden-Unterklasse deiner Wahl. Die Unterklassen „Circle of the Land“, „Circle of the Moon“, „Circle of the Sea“ und „Circle of the Stars“ werden nach der Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Druidenstufen Funktionen gewährt. Für den Rest Ihrer Karriere erwerben Sie alle Merkmale Ihrer Unterklasse, die Ihrer Druidenstufe oder niedriger entsprechen.\n\nDruiden-Unterklassen\n\nName Kreis des Landes Kreis des Mondes Kreis des Meeres Kreis der Sterne\n\nStufe 4: Verbesserung der Fähigkeitsbewertung\n\nDu erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Druidenstufen 8, 12 und 16.\n\nLevel 5: Wildes Wiederaufleben\n\nEinmal in jedem Ihrer Züge können Sie, wenn Sie Wild Shape nicht mehr verwenden können, sich selbst eine Verwendung gönnen, indem Sie einen Zauberslot aufwenden (keine Aktion erforderlich).\n\nDarüber hinaus können Sie eine Anwendung von „Wild Shape“ (keine Aktion erforderlich) aufwenden, um sich einen Zauberslot der Stufe 1 zu verschaffen. Dies ist jedoch erst wieder möglich, wenn Sie „Lange Rast“ beendet haben.\n\nLevel 7: Elementarwut\n\nDie Kraft der Elemente durchströmt dich. Sie erhalten eine der folgenden Optionen Ihrer Wahl.\n\nKraftvolle Zauberei. Addiere deinen Weisheitsmodifikator zum Schaden, den du mit einem Druiden-Cantrip verursachst.\n\nUrschlag. Einmal in jedem deiner Züge, wenn du eine Kreatur mit einem Angriffswurf mit einer Waffe oder dem Angriff einer Bestienform in Wildform triffst, kannst du dafür sorgen, dass das Ziel zusätzlich 1W8 Kälte-, Feuer-, Blitz- oder Donnerschaden erleidet (wähle, wann du triffst).\n\nStufe 15: Verbesserte Elementarwut\n\nDie Option, die Sie für „Elemental Fury“ gewählt haben, wird stärker, wie unten beschrieben.\n\nKraftvolle Zauberei. Wenn Sie einen Druiden-Cantrip mit einer Reichweite von 10 Fuß oder mehr wirken, erhöht sich die Reichweite des Zaubers um 300 Fuß.\n\nUrschlag. Der zusätzliche Schaden deines Urangriffs erhöht sich auf 2W8.\n\nLevel 18: Bestienzauber\n\nWährend du Wild Shape verwendest, kannst du Zauber in Bestienform wirken, mit Ausnahme von Zaubersprüchen, die eine Materialkomponente mit angegebenen Kosten haben oder deren Materialkomponente verbraucht.\n\nLevel 19: Epischer Segen\n\nDu erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Boon of Dimensional Travel wird empfohlen.\n\nLevel 20: Erzdruide\n\nDie Vitalität der Natur erblüht ständig in Ihnen und beschert Ihnen die folgenden Vorteile.\n\nImmergrüne Wildform. Immer wenn du die Initiative würfelst und Wild Shape nicht mehr nutzen kannst, erhältst du einen verbrauchten Einsatz davon zurück.\n\nNaturmagier. Sie können die Verwendung von Wild Shape in einen Zauberslot umwandeln (keine Aktion erforderlich). Wählen Sie eine Reihe Ihrer nicht verbrauchten Verwendungen von Wild Shape aus und wandeln Sie sie in einen einzelnen Zauberslot um, wobei jede Verwendung 2 Zauberstufen beisteuert. Wenn Sie beispielsweise zwei Verwendungen von Wild Shape umwandeln, erzeugen Sie einen Zauberslot der Stufe 4. Sobald Sie diesen Vorteil genutzt haben, können Sie dies nicht mehr tun, bis Sie eine Lange Rast beendet haben.\n\nLanglebigkeit. Die Urmagie, die Sie ausüben, lässt Sie langsamer altern. Alle zehn Jahre, die vergehen, altert Ihr Körper nur um ein Jahr.",
+  "tags": [],
+  "hit_die": null,
+  "primary_abilities": [],
+  "proficiencies": {
+    "saving_throws": [],
+    "armor": [],
+    "weapons": [],
+    "tools": []
+  },
+  "skill_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "spellcasting": {
+    "ability": "wis",
+    "progression": "full",
+    "preparation_formula": null,
+    "known_formula": null,
+    "focus_types": [
+      "Sie können einen Druidenfokus als Zauberfokus für Ihre Druidenzauber verwenden"
+    ],
+    "spell_list_names": [
+      "Druide",
+      "Druid"
+    ],
+    "uses_spell_slots": true
+  },
+  "starting_equipment": {
+    "fixed": [],
+    "choices": []
+  },
+  "multiclass_requirements": {
+    "minimum_abilities": {}
+  },
+  "levels": [
+    {
+      "level": 1,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Zauberei",
+        "Druide",
+        "Urorden"
+      ],
+      "cantrips_known": 2,
+      "prepared_spells": 4,
+      "spell_slots": {
+        "1": 2
+      }
+    },
+    {
+      "level": 2,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Wilde Gestalt",
+        "wilder Begleiter"
+      ],
+      "wilde form": "2",
+      "cantrips_known": 2,
+      "prepared_spells": 5,
+      "spell_slots": {
+        "1": 3
+      }
+    },
+    {
+      "level": 3,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Druiden-Unterklasse"
+      ],
+      "wilde form": "2",
+      "cantrips_known": 2,
+      "prepared_spells": 6,
+      "spell_slots": {
+        "1": 4,
+        "2": 2
+      }
+    },
+    {
+      "level": 4,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "wilde form": "2",
+      "cantrips_known": 3,
+      "prepared_spells": 7,
+      "spell_slots": {
+        "1": 4,
+        "2": 3
+      }
+    },
+    {
+      "level": 5,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Wildes Wiederaufleben"
+      ],
+      "wilde form": "2",
+      "cantrips_known": 3,
+      "prepared_spells": 9,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 2
+      }
+    },
+    {
+      "level": 6,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "wilde form": "3",
+      "cantrips_known": 3,
+      "prepared_spells": 10,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3
+      }
+    },
+    {
+      "level": 7,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Elementare Wut"
+      ],
+      "wilde form": "3",
+      "cantrips_known": 3,
+      "prepared_spells": 11,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1
+      }
+    },
+    {
+      "level": 8,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "wilde form": "3",
+      "cantrips_known": 3,
+      "prepared_spells": 12,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2
+      }
+    },
+    {
+      "level": 9,
+      "proficiency_bonus": "+4",
+      "wilde form": "3",
+      "cantrips_known": 3,
+      "prepared_spells": 14,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1
+      }
+    },
+    {
+      "level": 10,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "wilde form": "3",
+      "cantrips_known": 4,
+      "prepared_spells": 15,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2
+      }
+    },
+    {
+      "level": 11,
+      "proficiency_bonus": "+4",
+      "wilde form": "3",
+      "cantrips_known": 4,
+      "prepared_spells": 16,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      }
+    },
+    {
+      "level": 12,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "wilde form": "3",
+      "cantrips_known": 4,
+      "prepared_spells": 16,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      }
+    },
+    {
+      "level": 13,
+      "proficiency_bonus": "+5",
+      "wilde form": "3",
+      "cantrips_known": 4,
+      "prepared_spells": 17,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      }
+    },
+    {
+      "level": 14,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "wilde form": "3",
+      "cantrips_known": 4,
+      "prepared_spells": 17,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      }
+    },
+    {
+      "level": 15,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Verbesserte Elementarwut"
+      ],
+      "wilde form": "3",
+      "cantrips_known": 4,
+      "prepared_spells": 18,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      }
+    },
+    {
+      "level": 16,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "wilde form": "3",
+      "cantrips_known": 4,
+      "prepared_spells": 18,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      }
+    },
+    {
+      "level": 17,
+      "proficiency_bonus": "+6",
+      "wilde form": "4",
+      "cantrips_known": 4,
+      "prepared_spells": 19,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 18,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Tierzauber"
+      ],
+      "wilde form": "4",
+      "cantrips_known": 4,
+      "prepared_spells": 20,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 19,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Epischer Segen"
+      ],
+      "wilde form": "4",
+      "cantrips_known": 4,
+      "prepared_spells": 21,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 20,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Erzdruide"
+      ],
+      "wilde form": "4",
+      "cantrips_known": 4,
+      "prepared_spells": 22,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 1
+      }
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Kreis des Landes",
+      "original_name": "Circle of the Land",
+      "id": "kreis-des-landes",
+      "source_url": "http://dnd2024.wikidot.com/druid:circle-of-the-land",
+      "file": "subclasses/kreis-des-landes.json"
+    },
+    {
+      "name": "Kreis des Mondes",
+      "original_name": "Circle of the Moon",
+      "id": "kreis-des-mondes",
+      "source_url": "http://dnd2024.wikidot.com/druid:circle-of-the-moon",
+      "file": "subclasses/kreis-des-mondes.json"
+    },
+    {
+      "name": "Kreis des Meeres",
+      "original_name": "Circle of the Sea",
+      "id": "kreis-des-meeres",
+      "source_url": "http://dnd2024.wikidot.com/druid:circle-of-the-sea",
+      "file": "subclasses/kreis-des-meeres.json"
+    },
+    {
+      "name": "Kreis der Sterne",
+      "original_name": "Circle of the Stars",
+      "id": "kreis-der-sterne",
+      "source_url": "http://dnd2024.wikidot.com/druid:circle-of-the-stars",
+      "file": "subclasses/kreis-der-sterne.json"
+    }
+  ],
+  "subclass_index": [
+    "kreis-der-sterne.json",
+    "kreis-des-landes.json",
+    "kreis-des-meeres.json",
+    "kreis-des-mondes.json"
+  ]
+}

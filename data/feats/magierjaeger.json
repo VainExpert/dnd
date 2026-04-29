@@ -1,0 +1,60 @@
+{
+  "id": "magierjaeger",
+  "type": "feat",
+  "name": "Magierjaeger",
+  "original_name": "Mage Slayer",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:mage-slayer",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Stufe 4+"
+  ],
+  "summary": "Voraussetzung: Level 4+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Geschicklichkeitswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Konzentrationsbrecher. Wenn du einer Kreatur, die sich konzentriert, Schaden zufügst, hat sie einen Nachteil bei dem Rettungswurf, den sie ausführt, um die Konzentration aufrechtzuerhalten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Behüteter Geist. Wenn Sie bei einem Intelligenz-, Weisheits- oder Charisma-Rettungswurf scheitern, können Sie sich stattdessen selbst zum Erfolg verhelfen. Sobald Sie diesen Vorteil genutzt haben, können Sie ihn nicht erneut nutzen, bis Sie eine Kurze oder Lange Rast beendet haben."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Geschicklichkeitswert um 1 auf maximal 20.\n\nKonzentrationsbrecher. Wenn du einer Kreatur, die sich konzentriert, Schaden zufügst, hat sie einen Nachteil bei dem Rettungswurf, den sie ausführt, um die Konzentration aufrechtzuerhalten.\n\nBehüteter Geist. Wenn Sie bei einem Intelligenz-, Weisheits- oder Charisma-Rettungswurf scheitern, können Sie sich stattdessen selbst zum Erfolg verhelfen. Sobald Sie diesen Vorteil genutzt haben, können Sie ihn nicht erneut nutzen, bis Sie eine Kurze oder Lange Rast beendet haben.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str",
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

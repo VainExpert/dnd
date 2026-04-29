@@ -1,0 +1,58 @@
+{
+  "id": "segen-der-lodernden-morgenrote",
+  "type": "feat",
+  "name": "Segen der lodernden Morgenröte",
+  "original_name": "Boon of Blazing Dawn",
+  "rules_version": "2024",
+  "source": "Astarion's Book of Hungers",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-blazing-dawn",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Exotisch",
+  "prerequisites": [],
+  "summary": "Episches Segen-Talent (Voraussetzung: Level 19+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Episches Segen-Talent (Voraussetzung: Level 19+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Geliebte der Sonne. Du bist immun gegen Strahlungsschaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Flammender Schlag. Wenn du eine Kreatur mit einem Waffenangriff triffst, kann der Schaden strahlend oder der normale Schadenstyp der Waffe sein (nach deiner Wahl)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sonnenstrahl. Einmal pro Spielzug, wenn du eine Kreatur mit einem Angriff triffst, der Strahlungsschaden verursacht, kannst du bis zum Beginn deines nächsten Spielzugs helles Licht in einem Radius von 30 Fuß um dich herum und gedämpftes Licht für weitere 30 Fuß aussenden. Dieses Licht ist Sonnenlicht."
+    }
+  ],
+  "text": "Episches Segen-Talent (Voraussetzung: Level 19+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30.\n\nGeliebte der Sonne. Du bist immun gegen Strahlungsschaden.\n\nFlammender Schlag. Wenn du eine Kreatur mit einem Waffenangriff triffst, kann der Schaden strahlend oder der normale Schadenstyp der Waffe sein (nach deiner Wahl).\n\nSonnenstrahl. Einmal pro Spielzug, wenn du eine Kreatur mit einem Angriff triffst, der Strahlungsschaden verursacht, kannst du bis zum Beginn deines nächsten Spielzugs helles Licht in einem Radius von 30 Fuß um dich herum und gedämpftes Licht für weitere 30 Fuß aussenden. Dieses Licht ist Sonnenlicht.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

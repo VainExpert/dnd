@@ -1,0 +1,60 @@
+{
+  "id": "koch",
+  "type": "feat",
+  "name": "Koch",
+  "original_name": "Chef",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:chef",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Stufe 4+"
+  ],
+  "summary": "Voraussetzung: Level 4+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe deinen Konstitutions- oder Weisheitswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kochutensilien. Sie erwerben Kenntnisse im Umgang mit Kochutensilien, sofern Sie diese noch nicht besitzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Auffüllende Mahlzeit. Im Rahmen einer Kurzen Rast können Sie besondere Speisen zubereiten, wenn Sie Zutaten und Kochutensilien zur Hand haben. Du kannst von dieser Nahrung genug für eine Anzahl von Kreaturen in Höhe von 4 plus deinem Uebungsbonus zubereiten. Am Ende der Kurzen Rast erhält jede Kreatur, die das Essen isst und einen oder mehrere Trefferwürfel ausgibt, um Trefferpunkte zurückzugewinnen, zusätzlich 1W8 Trefferpunkte zurück."
+    },
+    {
+      "type": "paragraph",
+      "text": "Stärkende Leckereien. Mit 1 Stunde Arbeit oder wenn Sie eine Lange Rast beendet haben, können Sie eine Anzahl von Leckereien in Höhe Ihres Uebungsbonus kochen, wenn Sie Zutaten und Kochutensilien zur Hand haben. Diese besonderen Leckereien sind nach der Zubereitung 8 Stunden haltbar. Eine Kreatur kann eine Bonusaktion nutzen, um eine dieser Leckereien zu essen. um eine Anzahl temporärer Trefferpunkte in Höhe Ihres Uebungsbonus zu erhalten."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe deinen Konstitutions- oder Weisheitswert um 1 auf maximal 20.\n\nKochutensilien. Sie erwerben Kenntnisse im Umgang mit Kochutensilien, sofern Sie diese noch nicht besitzen.\n\nAuffüllende Mahlzeit. Im Rahmen einer Kurzen Rast können Sie besondere Speisen zubereiten, wenn Sie Zutaten und Kochutensilien zur Hand haben. Du kannst von dieser Nahrung genug für eine Anzahl von Kreaturen in Höhe von 4 plus deinem Uebungsbonus zubereiten. Am Ende der Kurzen Rast erhält jede Kreatur, die das Essen isst und einen oder mehrere Trefferwürfel ausgibt, um Trefferpunkte zurückzugewinnen, zusätzlich 1W8 Trefferpunkte zurück.\n\nStärkende Leckereien. Mit 1 Stunde Arbeit oder wenn Sie eine Lange Rast beendet haben, können Sie eine Anzahl von Leckereien in Höhe Ihres Uebungsbonus kochen, wenn Sie Zutaten und Kochutensilien zur Hand haben. Diese besonderen Leckereien sind nach der Zubereitung 8 Stunden haltbar. Eine Kreatur kann eine Bonusaktion nutzen, um eine dieser Leckereien zu essen. um eine Anzahl temporärer Trefferpunkte in Höhe Ihres Uebungsbonus zu erhalten.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

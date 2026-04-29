@@ -1,0 +1,90 @@
+{
+  "id": "erbe-des-hauses-cannith",
+  "type": "background",
+  "name": "Erbe des Hauses Cannith",
+  "original_name": "House Cannith Heir",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/background:house-cannith-heir",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Stärke, Geschicklichkeit, Intelligenz",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Stärke, Geschicklichkeit, Intelligenz"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Mal des Schaffens"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Ermittlung und Fingerfertigkeit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkompetenz: Wählen Sie eine Art von Handwerkerwerkzeugen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Handwerkszeug (wie oben), Brechstange, Feine Kleidung, 2 Beutel, 17 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Spross des Hauses Cannith tragen Sie ein stolzes Erbe in sich. Cannith schafft Wunder der modernen Welt, und von Ihnen wird erwartet, dass Sie durch Erfindungen, Wissenschaft, Geschäfte oder Diplomatie zum anhaltenden Erfolg des Hauses beitragen. Das Einzige, was Ihnen im Weg stehen kann, ist die tiefe Kluft innerhalb Ihres eigenen Hauses. Je früher die drei Barone herausfinden, wer von ihnen das wahre Oberhaupt des Hauses ist (und Sie haben zweifellos Ihre Präferenz), desto eher kann Haus Cannith seine rechtmäßige Führungsposition unter allen mit Drachenzeichen versehenen Häusern beanspruchen."
+    }
+  ],
+  "text": "Fähigkeitswerte: Stärke, Geschicklichkeit, Intelligenz\n\nTalent: Mal des Schaffens\n\nFertigkeiten: Ermittlung und Fingerfertigkeit\n\nWerkzeugkompetenz: Wählen Sie eine Art von Handwerkerwerkzeugen\n\nAusrüstung: Wähle A oder B: (A) Handwerkszeug (wie oben), Brechstange, Feine Kleidung, 2 Beutel, 17 GP; oder (B) 50 GP\n\nAls Spross des Hauses Cannith tragen Sie ein stolzes Erbe in sich. Cannith schafft Wunder der modernen Welt, und von Ihnen wird erwartet, dass Sie durch Erfindungen, Wissenschaft, Geschäfte oder Diplomatie zum anhaltenden Erfolg des Hauses beitragen. Das Einzige, was Ihnen im Weg stehen kann, ist die tiefe Kluft innerhalb Ihres eigenen Hauses. Je früher die drei Barone herausfinden, wer von ihnen das wahre Oberhaupt des Hauses ist (und Sie haben zweifellos Ihre Präferenz), desto eher kann Haus Cannith seine rechtmäßige Führungsposition unter allen mit Drachenzeichen versehenen Häusern beanspruchen.",
+  "tags": [],
+  "ability_scores": [
+    "str",
+    "dex",
+    "int"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "str",
+      "dex",
+      "int"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Ermittlung",
+    "Fingerfertigkeit"
+  ],
+  "tool_proficiencies": [
+    "Wählen Sie eine Art von Handwerkerwerkzeugen\n"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "mal-des-schaffens",
+  "granted_feat_name": "Mal des Schaffens\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Handwerkszeug (wie oben), Brechstange, Feine Kleidung, 2 Beutel, 17 GP; oder (B) 50 GP\n\nAls Spross des Hauses Cannith tragen Sie ein stolzes Erbe in sich. Cannith schafft Wunder der modernen Welt, und von Ihnen wird erwartet, dass Sie durch Erfindungen, Wissenschaft, Geschäfte oder Diplomatie zum anhaltenden Erfolg des Hauses beitragen. Das Einzige, was Ihnen im Weg stehen kann, ist die tiefe Kluft innerhalb Ihres eigenen Hauses. Je früher die drei Barone herausfinden, wer von ihnen das wahre Oberhaupt des Hauses ist (und Sie haben zweifellos Ihre Präferenz), desto eher kann Haus Cannith seine rechtmäßige Führungsposition unter allen mit Drachenzeichen versehenen Häusern beanspruchen"
+    }
+  ]
+}

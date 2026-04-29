@@ -1,0 +1,152 @@
+{
+  "id": "dusternispirscher",
+  "type": "subclass",
+  "name": "Düsternispirscher",
+  "original_name": "Gloom Stalker",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/ranger:gloom-stalker",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Nutzen Sie Schattenmagie, um Ihre Feinde zu bekämpfen",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Nutzen Sie Schattenmagie, um Ihre Feinde zu bekämpfen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Gloom Stalker sind an den dunkelsten Orten zu Hause und nutzen die Magie aus dem Shadowfell, um Feinde zu bekämpfen, die in der Dunkelheit lauern."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Dread Ambusher"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie beherrschen die Kunst, furchterregende Hinterhalte zu erschaffen, was Ihnen die folgenden Vorteile verschafft."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sprung des Hinterhalts. Zu Beginn Ihrer ersten Runde jedes Kampfes erhöht sich Ihre Geschwindigkeit bis zum Ende dieser Runde um 10 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schrecklicher Schlag. Wenn du eine Kreatur angreifst und sie mit einer Waffe triffst, kannst du zusätzlich 2W6 Psi-Schaden verursachen. Du kannst diesen Vorteil nur einmal pro Runde nutzen, du kannst ihn mehrmals in Höhe deines Weisheitsmodifikators nutzen (mindestens einmal) und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast beendest."
+    },
+    {
+      "type": "paragraph",
+      "text": "Initiativebonus. Wenn Sie Initiative würfeln, können Sie Ihren Weisheitsmodifikator zum Wurf hinzufügen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Zauber des Düsterpirschers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine Ranger-Stufe erreichen, die in der Zaubertabelle des Gloom Stalker angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Düsternispirscher-Zauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ranger-Level",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Sich selbst verkleiden"
+        ],
+        [
+          "5",
+          "Seiltrick"
+        ],
+        [
+          "9",
+          "Furcht"
+        ],
+        [
+          "13",
+          "Größere Unsichtbarkeit"
+        ],
+        [
+          "17",
+          "Scheinbar"
+        ]
+      ],
+      "text": "Waldläufer-Level-Zauber 3 Sich selbst verkleiden 5 Seiltrick 9 Furcht 13 Größere Unsichtbarkeit 17 Scheinbar"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Schattensicht"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst Dunkelsicht mit einer Reichweite von 60 Fuß. Wenn Sie bei Erhalt dieser Funktion bereits über Dunkelsicht verfügen, erhöht sich die Reichweite um 60 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie sind auch geschickt darin, Kreaturen auszuweichen, die auf Dunkelsicht angewiesen sind. Während du dich vollständig in der Dunkelheit befindest, verfügst du über den Zustand „Unsichtbar“ für jede Kreatur, die auf Dunkelsicht angewiesen ist, um dich in dieser Dunkelheit zu sehen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Eiserner Geist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast deine Fähigkeit verbessert, bewusstseinsverändernden Kräften zu widerstehen. Sie erwerben Kenntnisse im Weisheits-Rettungswurfs. Wenn Sie bereits über diese Kompetenz verfügen, erwerben Sie stattdessen Kenntnisse in Intelligenz oder Charisma-Rettungswürfen (nach Wahl)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 11: Stalker's Flurry"
+    },
+    {
+      "type": "paragraph",
+      "text": "Der psychische Schaden deines Schrecklichen Schlags beträgt 2W8. Wenn Sie außerdem den Dreadful Strike-Effekt Ihrer Dread Ambusher-Funktion verwenden, können Sie einen der folgenden zusätzlichen Effekte nutzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Plötzlicher Schlag. Sie können mit derselben Waffe einen weiteren Angriff gegen eine andere Kreatur ausführen, die sich in einem Umkreis von 5 Fuß um das ursprüngliche Ziel befindet und sich innerhalb der Reichweite der Waffe befindet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Massenangst. Das Ziel und jede Kreatur im Umkreis von 10 Fuß müssen einen Weisheits-Rettungswurf gegen den SG deines Zauberwurfs durchführen. Bei einem fehlgeschlagenen Rettungswurf bleibt eine Kreatur bis zum Beginn deines nächsten Zuges im Zustand „Verängstigt“."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Schattenhaftes Ausweichen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn eine Kreatur einen Angriffswurf gegen dich durchführt, kannst du eine Reaktion durchführen, um diesem Wurf einen Nachteil zuzufügen. Unabhängig davon, ob der Angriff trifft oder verfehlt, können Sie sich bis zu 30 Fuß weit zu einem freien, für Sie sichtbaren Raum teleportieren."
+    }
+  ],
+  "text": "Nutzen Sie Schattenmagie, um Ihre Feinde zu bekämpfen\n\nGloom Stalker sind an den dunkelsten Orten zu Hause und nutzen die Magie aus dem Shadowfell, um Feinde zu bekämpfen, die in der Dunkelheit lauern.\n\nLevel 3: Dread Ambusher\n\nSie beherrschen die Kunst, furchterregende Hinterhalte zu erschaffen, was Ihnen die folgenden Vorteile verschafft.\n\nSprung des Hinterhalts. Zu Beginn Ihrer ersten Runde jedes Kampfes erhöht sich Ihre Geschwindigkeit bis zum Ende dieser Runde um 10 Fuß.\n\nSchrecklicher Schlag. Wenn du eine Kreatur angreifst und sie mit einer Waffe triffst, kannst du zusätzlich 2W6 Psi-Schaden verursachen. Du kannst diesen Vorteil nur einmal pro Runde nutzen, du kannst ihn mehrmals in Höhe deines Weisheitsmodifikators nutzen (mindestens einmal) und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast beendest.\n\nInitiativebonus. Wenn Sie Initiative würfeln, können Sie Ihren Weisheitsmodifikator zum Wurf hinzufügen.\n\nStufe 3: Zauber des Düsterpirschers\n\nWenn Sie eine Ranger-Stufe erreichen, die in der Zaubertabelle des Gloom Stalker angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nDüsternispirscher-Zauber\n\nWaldläufer-Level-Zauber 3 Sich selbst verkleiden 5 Seiltrick 9 Furcht 13 Größere Unsichtbarkeit 17 Scheinbar\n\nLevel 3: Schattensicht\n\nDu erhältst Dunkelsicht mit einer Reichweite von 60 Fuß. Wenn Sie bei Erhalt dieser Funktion bereits über Dunkelsicht verfügen, erhöht sich die Reichweite um 60 Fuß.\n\nSie sind auch geschickt darin, Kreaturen auszuweichen, die auf Dunkelsicht angewiesen sind. Während du dich vollständig in der Dunkelheit befindest, verfügst du über den Zustand „Unsichtbar“ für jede Kreatur, die auf Dunkelsicht angewiesen ist, um dich in dieser Dunkelheit zu sehen.\n\nLevel 7: Eiserner Geist\n\nDu hast deine Fähigkeit verbessert, bewusstseinsverändernden Kräften zu widerstehen. Sie erwerben Kenntnisse im Weisheits-Rettungswurfs. Wenn Sie bereits über diese Kompetenz verfügen, erwerben Sie stattdessen Kenntnisse in Intelligenz oder Charisma-Rettungswürfen (nach Wahl).\n\nLevel 11: Stalker's Flurry\n\nDer psychische Schaden deines Schrecklichen Schlags beträgt 2W8. Wenn Sie außerdem den Dreadful Strike-Effekt Ihrer Dread Ambusher-Funktion verwenden, können Sie einen der folgenden zusätzlichen Effekte nutzen.\n\nPlötzlicher Schlag. Sie können mit derselben Waffe einen weiteren Angriff gegen eine andere Kreatur ausführen, die sich in einem Umkreis von 5 Fuß um das ursprüngliche Ziel befindet und sich innerhalb der Reichweite der Waffe befindet.\n\nMassenangst. Das Ziel und jede Kreatur im Umkreis von 10 Fuß müssen einen Weisheits-Rettungswurf gegen den SG deines Zauberwurfs durchführen. Bei einem fehlgeschlagenen Rettungswurf bleibt eine Kreatur bis zum Beginn deines nächsten Zuges im Zustand „Verängstigt“.\n\nLevel 15: Schattenhaftes Ausweichen\n\nWenn eine Kreatur einen Angriffswurf gegen dich durchführt, kannst du eine Reaktion durchführen, um diesem Wurf einen Nachteil zuzufügen. Unabhängig davon, ob der Angriff trifft oder verfehlt, können Sie sich bis zu 30 Fuß weit zu einem freien, für Sie sichtbaren Raum teleportieren.",
+  "tags": [],
+  "class": "Waldlaeufer",
+  "class_id": "waldlaeufer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

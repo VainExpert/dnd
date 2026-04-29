@@ -1,0 +1,1132 @@
+{
+  "id": "zauberer",
+  "type": "class",
+  "name": "Zauberer",
+  "original_name": "Sorcerer",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/sorcerer:main",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Klassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Zauberer verfügen über angeborene Magie, die in ihr Wesen eingeprägt ist. Einige Zauberer können den Ursprung ihrer Macht nicht benennen, während andere sie auf seltsame Ereignisse in ihrer persönlichen oder familiären Geschichte zurückführen. Der Segen eines Drachens oder einer Dryade bei der Geburt eines Babys oder der Blitzeinschlag aus heiterem Himmel könnten die Gabe eines Zauberers auslösen. Das gilt auch für die Gabe einer Gottheit, den Kontakt mit der seltsamen Magie einer anderen Ebene der Existenz oder einen Einblick in das Innenleben der Realität. Was auch immer der Ursprung sein mag, das Ergebnis ist ein unauslöschliches Zeichen für den Zauberer, eine rührende Magie, die über Generationen weitergegeben werden kann.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Zauberer verfügen über angeborene Magie, die in ihr Wesen eingeprägt ist. Einige Zauberer können den Ursprung ihrer Macht nicht benennen, während andere sie auf seltsame Ereignisse in ihrer persönlichen oder familiären Geschichte zurückführen. Der Segen eines Drachens oder einer Dryade bei der Geburt eines Babys oder der Blitzeinschlag aus heiterem Himmel könnten die Gabe eines Zauberers auslösen. Das gilt auch für die Gabe einer Gottheit, den Kontakt mit der seltsamen Magie einer anderen Ebene der Existenz oder einen Einblick in das Innenleben der Realität. Was auch immer der Ursprung sein mag, das Ergebnis ist ein unauslöschliches Zeichen für den Zauberer, eine rührende Magie, die über Generationen weitergegeben werden kann."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberer lernen keine Magie; Die rohe, brodelnde Kraft der Magie ist Teil von ihnen. Die wesentliche Kunst eines Zauberers besteht darin, zu lernen, diese angeborene Magie zu nutzen und zu kanalisieren, sodass der Zauberer neue und erstaunliche Wege entdecken kann, seine Macht zu entfesseln. Wenn Zauberer ihre angeborene Magie beherrschen, werden sie sich immer mehr auf ihren Ursprung einlassen und entwickeln ausgeprägte Kräfte, die ihre Quelle widerspiegeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberer sind selten. Einige Familienlinien bringen in jeder Generation genau einen Zauberer hervor, aber meistens erscheinen die Talente der Zauberei als Zufall. Menschen, die über diese magische Kraft verfügen, merken schnell, dass es nicht gerne still bleibt. Die Magie eines Zauberers möchte ausgeübt werden."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Kerneigenschaften des Zauberers"
+        ],
+        [
+          "Primäre Fähigkeit",
+          "Charisma"
+        ],
+        [
+          "Trefferpunktwürfel",
+          "D6 pro Zaubererstufe"
+        ],
+        [
+          "Rettungswurf-Kenntnisse",
+          "Verfassung und Charisma"
+        ],
+        [
+          "Fertigkeiten",
+          "Wählen Sie 2: Arkana, Täuschung, Einsicht, Einschüchterung, Überzeugung oder Religion"
+        ],
+        [
+          "Waffenkenntnisse",
+          "Einfache Waffen"
+        ],
+        [
+          "Rüstungstraining",
+          "Keiner"
+        ],
+        [
+          "Startausrüstung",
+          "Wähle A oder B: (A) Speer, 2 Dolche, Arkaner Fokus (Kristall), Paket des Kerkermeisters und 28 GP; oder (B) 50 GP"
+        ]
+      ],
+      "text": "Kerneigenschaften des Zauberers Primärfähigkeit Charisma Trefferpunkt Würfel D6 pro Zaubererstufe Rettungswurf-Fertigkeiten Konstitutions- und Charisma-Fertigkeitskompetenzen Wählen Sie 2: Arcana, Täuschung, Einsicht, Einschüchterung, Überzeugung oder Religion Waffenkompetenzen Einfache Waffen Rüstungstraining Keine Startausrüstung Wählen Sie A oder B: (A) Speer, 2 Dolche, Arkaner Fokus (Kristall), Paket des Kerkermeisters und 28 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Ein Zauberer werden …"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Charakter der Stufe 1"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalte alle Eigenschaften in der Tabelle „Kern-Zauberer-Eigenschaften“.",
+        "Erhalte die Fähigkeiten des Zauberers der Stufe 1, die in der Tabelle „Zauberer-Talente“ aufgeführt sind."
+      ],
+      "text": "Erhalte alle Eigenschaften in der Tabelle „Kern-Zauberer-Eigenschaften“. Erhalte die Fähigkeiten des Zauberers der Stufe 1, die in der Tabelle „Zauberer-Talente“ aufgeführt sind."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Multiklassen-Charakter"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalte den Trefferpunktwürfel aus der Tabelle „Kerneigenschaften des Zauberers“.",
+        "Erhalte die Fähigkeiten des Zauberers der Stufe 1, die in der Tabelle „Zauberer-Talente“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen."
+      ],
+      "text": "Erhalte den Trefferpunktwürfel aus der Tabelle „Kerneigenschaften des Zauberers“. Erhalte die Fähigkeiten des Zauberers der Stufe 1, die in der Tabelle „Zauberer-Talente“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Talente der Zaubererklasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberertalente"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ebene",
+          "Uebungsbonus",
+          "Talenturen",
+          "Zauberpunkte",
+          "Zaubertricks",
+          "Vorbereitete Zauber",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        [
+          "1",
+          "+2",
+          "Zauberei, angeborene Zauberei",
+          "-",
+          "4",
+          "2",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "2",
+          "+2",
+          "Schriftart der Magie, Metamagie",
+          "2",
+          "4",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "3",
+          "+2",
+          "Unterklasse der Zauberer",
+          "3",
+          "4",
+          "6",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "4",
+          "+2",
+          "Faehigkeitswert-Verbesserung",
+          "4",
+          "5",
+          "7",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "5",
+          "+3",
+          "Zauberhafte Wiederherstellung",
+          "5",
+          "5",
+          "9",
+          "4",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "6",
+          "+3",
+          "Unterklassenfunktion",
+          "6",
+          "5",
+          "10",
+          "4",
+          "3",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "7",
+          "+3",
+          "Inkarnierte Zauberei",
+          "7",
+          "5",
+          "11",
+          "4",
+          "3",
+          "3",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "8",
+          "+3",
+          "Faehigkeitswert-Verbesserung",
+          "8",
+          "5",
+          "12",
+          "4",
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "9",
+          "+4",
+          "-",
+          "9",
+          "5",
+          "14",
+          "4",
+          "3",
+          "3",
+          "3",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "10",
+          "+4",
+          "Metamagie",
+          "10",
+          "6",
+          "15",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "11",
+          "+4",
+          "-",
+          "11",
+          "6",
+          "16",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "12",
+          "+4",
+          "Faehigkeitswert-Verbesserung",
+          "12",
+          "6",
+          "16",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "13",
+          "+5",
+          "-",
+          "13",
+          "6",
+          "17",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "14",
+          "+5",
+          "Unterklassenfunktion",
+          "14",
+          "6",
+          "17",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "15",
+          "+5",
+          "-",
+          "15",
+          "6",
+          "18",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "-"
+        ],
+        [
+          "16",
+          "+5",
+          "Faehigkeitswert-Verbesserung",
+          "16",
+          "6",
+          "18",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "-"
+        ],
+        [
+          "17",
+          "+6",
+          "Metamagie",
+          "17",
+          "6",
+          "19",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "18",
+          "+6",
+          "Unterklassenfunktion",
+          "18",
+          "6",
+          "20",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "19",
+          "+6",
+          "Epischer Segen",
+          "19",
+          "6",
+          "21",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "20",
+          "+6",
+          "Arkane Apotheose",
+          "20",
+          "6",
+          "22",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "2",
+          "2",
+          "1",
+          "1"
+        ]
+      ],
+      "text": "Stufe Uebungsbonus Talente Zauberpunkte Zaubertricks Vorbereitete Zauber 1. 2. 3. 4. 5. 6. 7. 8. 9. 1 +2 Zauberei, Angeborene Zauberei - 4 2 2 - - - - - - - - 2 +2 Schriftart der Magie, Metamagie 2 4 4 3 - - - - - - - - 3 +2 Zauberer-Unterklasse 3 4 6 4 2 - - - - - - - 4 +2 Fähigkeitswertverbesserung 4 5 7 4 3 - - - - - - - 5 +3 Zauberhafte Wiederherstellung 5 5 9 4 3 2 - - - - - - 6 +3 Unterklassenmerkmal 6 5 10 4 3 3 - - - - - - 7 +3 Inkarnierte Zauberei 7 5 11 4 3 3 1 - - - - - 8 +3 Fähigkeitswertverbesserung 8 5 12 4 3 3 2 - - - - - 9 +4 - 9 5 14 4 3 3 3 1 - - - - 10 +4 Metamagie 10 6 15 4 3 3 3 2 - - - - 11 +4 - 11 6 16 4 3 3 3 2 1 - - - 12 +4 Fähigkeitswertverbesserung 12 6 16 4 3 3 3 2 1 - - - 13 +5 - 13 6 17 4 3 3 3 2 1 1 - - 14 +5 Unterklassenmerkmal 14 6 17 4 3 3 3 2 1 1 - - 15 +5 - 15 6 18 4 3 3 3 2 1 1 1 - 16 +5 Verbesserung des Fähigkeitswerts 16 6 18 4 3 3 3 2 1 1 1 - 17 +6 Metamagie 17 6 19 4 3 3 3 2 1 1 1 1 18 +6 Unterklassenmerkmal 18 6 20 4 3 3 3 3 1 1 1 1 19 +6 Epischer Segen 19 6 21 4 3 3 3 3 2 1 1 1 20 +6 Arkane Apotheose 20 6 22 4 3 3 3 3 2 2 1 1"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Zauberer erhalten Sie die folgenden Klassenmerkmale, wenn Sie die angegebenen Zaubererstufen erreichen. Diese Eigenschaften sind in der Tabelle „Zauberer-Talente“ aufgeführt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Zaubern"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mithilfe deiner angeborenen Magie kannst du Zauber wirken. Die Regeln zum Zaubern finden Sie in Kapitel 7. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln mit Zaubersprüchen des Zauberers anwenden, die später in der Beschreibung der Klasse in der Zauberliste des Zauberers erscheinen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zaubertricks. Sie kennen vier Zauberer-Cantrips Ihrer Wahl. Empfohlen werden Light, Prestidigitation, Shocking Grasp und Sorcerous Burst. Immer wenn Sie ein Zauberer-Level erreichen, können Sie einen Ihrer Cantrips aus dieser Funktion durch einen anderen Zauberer-Cantrip Ihrer Wahl ersetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie die Zauberer-Stufen 4 und 10 erreichen, lernen Sie einen weiteren Zauberer-Cantrip Ihrer Wahl, wie in der Spalte „Zaubertricks“ der Tabelle „Zauberer-Talente“ gezeigt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberplatz. Die Tabelle „Zauberer-Talente“ zeigt, wie viele Zauberslots Ihnen zum Wirken Ihrer Zauber der Stufe 1+ zur Verfügung stehen. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vorbereitete Zauber der Stufe 1+. Sie bereiten die Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst zwei Zaubererzauber der Stufe 1 aus. Empfohlen werden Burning Hands und Detect Magic."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Anzahl der Zauber auf Ihrer Liste erhöht sich mit zunehmender Zaubererstufe, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Zauberertalente“ angezeigt. Immer wenn sich diese Zahl erhöht, wähle weitere Zaubererzauber, bis die Anzahl der Zaubersprüche auf deiner Liste mit der Zahl in der Tabelle „Zauberertalente“ übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Zauberer der Stufe 3 sind, kann Ihre Liste der vorbereiteten Zaubersprüche sechs Zaubererzauber der Stufe 1 oder 2 in beliebiger Kombination enthalten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn eine andere Zauberer-Funktion dir Zauber verleiht, die du schon immer vorbereitet hast, zählen diese Zauber nicht zu der Anzahl der Zauber, die du mit dieser Funktion vorbereiten kannst. Ansonsten zählen diese Zauber für dich jedoch als Zauberer-Zauber."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ändern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie eine Zauberer-Stufe erreichen, können Sie einen Zauber auf Ihrer Liste durch einen anderen Zauberer-Zauber ersetzen, für den Sie Zauberplätze haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfähigkeit. Charisma ist Ihre Zauberfähigkeit für Ihre Zaubersprüche."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfokus. Du kannst einen Arkanen Fokus als Zauberfokus für deine Zaubererzauber verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Angeborene Zauberei"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ein Ereignis in Ihrer Vergangenheit hat einen unauslöschlichen Eindruck bei Ihnen hinterlassen und Sie mit schwelender Magie erfüllt. Als Bonusaktion kannst du diese Magie 1 Minute lang entfesseln und erhältst dabei die folgenden Vorteile:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Der Zauberwurf-SG deiner Zaubererzauber erhöht sich um 1.",
+        "Du hast einen Vorteil bei den Angriffswürfen der Zaubererzauber, die du wirkst."
+      ],
+      "text": "Der Zauberwurf-SG deiner Zauberer-Zauber erhöht sich um 1. Du hast einen Vorteil bei den Angriffswürfen der Zauberer-Zauber, die du wirkst."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diese Funktion zweimal nutzen und erhalten alle verbrauchten Nutzungsmöglichkeiten zurück, wenn Sie eine Lange Rast beendet haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 2: Quelle der Magie"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können die Quelle der Magie in sich selbst erschließen. Diese Quelle wird durch Zauberpunkte repräsentiert, mit denen Sie eine Vielzahl magischer Effekte erzeugen können."
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast 2 Zauberpunkte und erhältst mehr, wenn du höhere Stufen erreichst, wie in der Spalte „Zauberpunkte“ der Tabelle „Zaubertalente“ angezeigt. Sie können nicht mehr Zauberpunkte haben als in der Tabelle für Ihr Level angegeben. Du erhältst alle verbrauchten Zauberpunkte zurück, wenn du eine Lange Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können Ihre Zauberpunkte verwenden, um die folgenden Optionen sowie andere Funktionen wie Metamagic, die diese Punkte verwenden, zu nutzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Umwandlung von Zauberplätzen in Zauberpunkte. Sie können einen Zauberslot ausgeben, um eine Anzahl an Zauberpunkten zu erhalten, die der Stufe des Slots entspricht (keine Aktion erforderlich)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberplätze erschaffen. Als Bonusaktion kannst du nicht ausgegebene Zauberpunkte in einen Zauberslot umwandeln. Die Tabelle „Zauberplätze erstellen“ zeigt die Kosten für die Erstellung eines Zauberslots einer bestimmten Stufe und listet die Mindestzaubererstufe auf, die Sie zum Erstellen eines Zauberplatzes haben müssen. Sie können einen Zauberslot nicht höher als Stufe 5 erstellen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Jeder Zauberslot, den Sie mit dieser Funktion erstellen, verschwindet, wenn Sie eine Lange Rast beenden."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Zauberplätze erschaffen"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Zauberplatz-Ebene",
+          "Kosten für Zauberpunkte",
+          "Min. Zauberer-Level"
+        ],
+        [
+          "1",
+          "2",
+          "2"
+        ],
+        [
+          "2",
+          "3",
+          "3"
+        ],
+        [
+          "3",
+          "5",
+          "5"
+        ],
+        [
+          "4",
+          "6",
+          "7"
+        ],
+        [
+          "5",
+          "7",
+          "9"
+        ]
+      ],
+      "text": "Zauberplatz-Stufe Zauberpunktkosten Min. Zauberer Level 1 2 2 2 3 3 3 5 5 4 6 7 5 7 9"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 2: Metamagie"
+    },
+    {
+      "type": "paragraph",
+      "text": "Da Ihre Magie von innen kommt, können Sie Ihre Zaubersprüche an Ihre Bedürfnisse anpassen. Sie erhalten zwei Metamagic-Optionen Ihrer Wahl unter „Metamagic-Optionen“ weiter unten in der Beschreibung dieser Klasse. Sie verwenden die gewählten Optionen, um von Ihnen gewirkte Zauber vorübergehend zu modifizieren. Um eine Option nutzen zu können, müssen Sie die Anzahl an Zauberpunkten ausgeben, die sie kostet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können beim Wirken eines Zaubers nur eine Metamagic-Option verwenden, sofern in einer dieser Optionen nichts anderes angegeben ist."
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie ein Zauberer-Level erreichen, können Sie eine Ihrer Metamagic-Optionen durch eine Ihnen unbekannte ersetzen. Auf Zauberer-Stufe 10 erhältst du zwei weitere Optionen und auf Zauberer-Stufe 17 zwei weitere."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Zauberer-Unterklasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine Zauberer-Unterklasse deiner Wahl. Die Unterklassen Aberrant Sorcery, Clockwork Sorcery, Draconic Sorcery und Wild Magic Sorcery werden nach der Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen Funktionen auf bestimmten Zaubererstufen gewährt. Für den Rest Ihrer Karriere erhalten Sie alle Eigenschaften Ihrer Unterklasse, die Ihrer Zaubererstufe oder niedriger entsprechen."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Zauberer-Unterklassen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Name Aberrant Sorcery Clockwork Sorcery Draconic Sorcery Spellfire Sorcery Wild Magic Sorcery"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 4: Verbesserung der Fähigkeitsbewertung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Zaubererstufen 8, 12 und 16."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 5: Zauberhafte Wiederherstellung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du eine Kurze Rast abschließt, kannst du verbrauchte Zauberpunkte zurückerhalten, jedoch nicht mehr als eine Zahl, die der Hälfte deiner Zaubererstufe (abgerundet) entspricht. Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Inkarnierte Zauberei"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie die angeborene Zauberei nicht mehr nutzen können, können Sie sie verwenden, indem Sie 2 Zauberpunkte ausgeben, wenn Sie die Bonusaktion nutzen, um sie zu aktivieren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Während Ihre Funktion „Angeborene Zauberei“ aktiv ist, können Sie außerdem bis zu zwei Ihrer Metamagic-Optionen für jeden von Ihnen gewirkten Zauber verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 19: Epischer Segen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Boon of Dimensional Travel wird empfohlen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 20: Arkane Apotheose"
+    },
+    {
+      "type": "paragraph",
+      "text": "Während Ihre Funktion „Angeborene Zauberei“ aktiv ist, können Sie in jedem Ihrer Züge eine Metamagische Option verwenden, ohne dafür Zauberpunkte auszugeben."
+    }
+  ],
+  "text": "Zauberer verfügen über angeborene Magie, die in ihr Wesen eingeprägt ist. Einige Zauberer können den Ursprung ihrer Macht nicht benennen, während andere sie auf seltsame Ereignisse in ihrer persönlichen oder familiären Geschichte zurückführen. Der Segen eines Drachens oder einer Dryade bei der Geburt eines Babys oder der Blitzeinschlag aus heiterem Himmel könnten die Gabe eines Zauberers auslösen. Das gilt auch für die Gabe einer Gottheit, den Kontakt mit der seltsamen Magie einer anderen Ebene der Existenz oder einen Einblick in das Innenleben der Realität. Was auch immer der Ursprung sein mag, das Ergebnis ist ein unauslöschliches Zeichen für den Zauberer, eine rührende Magie, die über Generationen weitergegeben werden kann.\n\nZauberer lernen keine Magie; Die rohe, brodelnde Kraft der Magie ist Teil von ihnen. Die wesentliche Kunst eines Zauberers besteht darin, zu lernen, diese angeborene Magie zu nutzen und zu kanalisieren, sodass der Zauberer neue und erstaunliche Wege entdecken kann, seine Macht zu entfesseln. Wenn Zauberer ihre angeborene Magie beherrschen, werden sie sich immer mehr auf ihren Ursprung einlassen und entwickeln ausgeprägte Kräfte, die ihre Quelle widerspiegeln.\n\nZauberer sind selten. Einige Familienlinien bringen in jeder Generation genau einen Zauberer hervor, aber meistens erscheinen die Talente der Zauberei als Zufall. Menschen, die über diese magische Kraft verfügen, merken schnell, dass es nicht gerne still bleibt. Die Magie eines Zauberers möchte ausgeübt werden.\n\nKerneigenschaften des Zauberers Primärfähigkeit Charisma Trefferpunkt Würfel D6 pro Zaubererstufe Rettungswurf-Fertigkeiten Konstitutions- und Charisma-Fertigkeitskompetenzen Wählen Sie 2: Arcana, Täuschung, Einsicht, Einschüchterung, Überzeugung oder Religion Waffenkompetenzen Einfache Waffen Rüstungstraining Keine Startausrüstung Wählen Sie A oder B: (A) Speer, 2 Dolche, Arkaner Fokus (Kristall), Paket des Kerkermeisters und 28 GP; oder (B) 50 GP\n\nEin Zauberer werden …\n\nAls Charakter der Stufe 1\n\nErhalte alle Eigenschaften in der Tabelle „Kern-Zauberer-Eigenschaften“. Erhalte die Fähigkeiten des Zauberers der Stufe 1, die in der Tabelle „Zauberer-Talente“ aufgeführt sind.\n\nAls Multiklassen-Charakter\n\nErhalte den Trefferpunktwürfel aus der Tabelle „Kerneigenschaften des Zauberers“. Erhalte die Fähigkeiten des Zauberers der Stufe 1, die in der Tabelle „Zauberer-Talente“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen.\n\nTalente der Zaubererklasse\n\nZauberertalente\n\nStufe Uebungsbonus Talente Zauberpunkte Zaubertricks Vorbereitete Zauber 1. 2. 3. 4. 5. 6. 7. 8. 9. 1 +2 Zauberei, Angeborene Zauberei - 4 2 2 - - - - - - - - 2 +2 Schriftart der Magie, Metamagie 2 4 4 3 - - - - - - - - 3 +2 Zauberer-Unterklasse 3 4 6 4 2 - - - - - - - 4 +2 Fähigkeitswertverbesserung 4 5 7 4 3 - - - - - - - 5 +3 Zauberhafte Wiederherstellung 5 5 9 4 3 2 - - - - - - 6 +3 Unterklassenmerkmal 6 5 10 4 3 3 - - - - - - 7 +3 Inkarnierte Zauberei 7 5 11 4 3 3 1 - - - - - 8 +3 Fähigkeitswertverbesserung 8 5 12 4 3 3 2 - - - - - 9 +4 - 9 5 14 4 3 3 3 1 - - - - 10 +4 Metamagie 10 6 15 4 3 3 3 2 - - - - 11 +4 - 11 6 16 4 3 3 3 2 1 - - - 12 +4 Fähigkeitswertverbesserung 12 6 16 4 3 3 3 2 1 - - - 13 +5 - 13 6 17 4 3 3 3 2 1 1 - - 14 +5 Unterklassenmerkmal 14 6 17 4 3 3 3 2 1 1 - - 15 +5 - 15 6 18 4 3 3 3 2 1 1 1 - 16 +5 Verbesserung des Fähigkeitswerts 16 6 18 4 3 3 3 2 1 1 1 - 17 +6 Metamagie 17 6 19 4 3 3 3 2 1 1 1 1 18 +6 Unterklassenmerkmal 18 6 20 4 3 3 3 3 1 1 1 1 19 +6 Epischer Segen 19 6 21 4 3 3 3 3 2 1 1 1 20 +6 Arkane Apotheose 20 6 22 4 3 3 3 3 2 2 1 1\n\nAls Zauberer erhalten Sie die folgenden Klassenmerkmale, wenn Sie die angegebenen Zaubererstufen erreichen. Diese Eigenschaften sind in der Tabelle „Zauberer-Talente“ aufgeführt.\n\nStufe 1: Zaubern\n\nMithilfe deiner angeborenen Magie kannst du Zauber wirken. Die Regeln zum Zaubern finden Sie in Kapitel 7. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln mit Zaubersprüchen des Zauberers anwenden, die später in der Beschreibung der Klasse in der Zauberliste des Zauberers erscheinen.\n\nZaubertricks. Sie kennen vier Zauberer-Cantrips Ihrer Wahl. Empfohlen werden Light, Prestidigitation, Shocking Grasp und Sorcerous Burst. Immer wenn Sie ein Zauberer-Level erreichen, können Sie einen Ihrer Cantrips aus dieser Funktion durch einen anderen Zauberer-Cantrip Ihrer Wahl ersetzen.\n\nWenn Sie die Zauberer-Stufen 4 und 10 erreichen, lernen Sie einen weiteren Zauberer-Cantrip Ihrer Wahl, wie in der Spalte „Zaubertricks“ der Tabelle „Zauberer-Talente“ gezeigt.\n\nZauberplatz. Die Tabelle „Zauberer-Talente“ zeigt, wie viele Zauberslots Ihnen zum Wirken Ihrer Zauber der Stufe 1+ zur Verfügung stehen. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt.\n\nVorbereitete Zauber der Stufe 1+. Sie bereiten die Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst zwei Zaubererzauber der Stufe 1 aus. Empfohlen werden Burning Hands und Detect Magic.\n\nDie Anzahl der Zauber auf Ihrer Liste erhöht sich mit zunehmender Zaubererstufe, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Zauberertalente“ angezeigt. Immer wenn sich diese Zahl erhöht, wähle weitere Zaubererzauber, bis die Anzahl der Zaubersprüche auf deiner Liste mit der Zahl in der Tabelle „Zauberertalente“ übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Zauberer der Stufe 3 sind, kann Ihre Liste der vorbereiteten Zaubersprüche sechs Zaubererzauber der Stufe 1 oder 2 in beliebiger Kombination enthalten.\n\nWenn eine andere Zauberer-Funktion dir Zauber verleiht, die du schon immer vorbereitet hast, zählen diese Zauber nicht zu der Anzahl der Zauber, die du mit dieser Funktion vorbereiten kannst. Ansonsten zählen diese Zauber für dich jedoch als Zauberer-Zauber.\n\nÄndern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie eine Zauberer-Stufe erreichen, können Sie einen Zauber auf Ihrer Liste durch einen anderen Zauberer-Zauber ersetzen, für den Sie Zauberplätze haben.\n\nZauberfähigkeit. Charisma ist Ihre Zauberfähigkeit für Ihre Zaubersprüche.\n\nZauberfokus. Du kannst einen Arkanen Fokus als Zauberfokus für deine Zaubererzauber verwenden.\n\nStufe 1: Angeborene Zauberei\n\nEin Ereignis in Ihrer Vergangenheit hat einen unauslöschlichen Eindruck bei Ihnen hinterlassen und Sie mit schwelender Magie erfüllt. Als Bonusaktion kannst du diese Magie 1 Minute lang entfesseln und erhältst dabei die folgenden Vorteile:\n\nDer Zauberwurf-SG deiner Zauberer-Zauber erhöht sich um 1. Du hast einen Vorteil bei den Angriffswürfen der Zauberer-Zauber, die du wirkst.\n\nSie können diese Funktion zweimal nutzen und erhalten alle verbrauchten Nutzungsmöglichkeiten zurück, wenn Sie eine Lange Rast beendet haben.\n\nLevel 2: Quelle der Magie\n\nSie können die Quelle der Magie in sich selbst erschließen. Diese Quelle wird durch Zauberpunkte repräsentiert, mit denen Sie eine Vielzahl magischer Effekte erzeugen können.\n\nDu hast 2 Zauberpunkte und erhältst mehr, wenn du höhere Stufen erreichst, wie in der Spalte „Zauberpunkte“ der Tabelle „Zaubertalente“ angezeigt. Sie können nicht mehr Zauberpunkte haben als in der Tabelle für Ihr Level angegeben. Du erhältst alle verbrauchten Zauberpunkte zurück, wenn du eine Lange Rast abschließt.\n\nSie können Ihre Zauberpunkte verwenden, um die folgenden Optionen sowie andere Funktionen wie Metamagic, die diese Punkte verwenden, zu nutzen.\n\nUmwandlung von Zauberplätzen in Zauberpunkte. Sie können einen Zauberslot ausgeben, um eine Anzahl an Zauberpunkten zu erhalten, die der Stufe des Slots entspricht (keine Aktion erforderlich).\n\nZauberplätze erschaffen. Als Bonusaktion kannst du nicht ausgegebene Zauberpunkte in einen Zauberslot umwandeln. Die Tabelle „Zauberplätze erstellen“ zeigt die Kosten für die Erstellung eines Zauberslots einer bestimmten Stufe und listet die Mindestzaubererstufe auf, die Sie zum Erstellen eines Zauberplatzes haben müssen. Sie können einen Zauberslot nicht höher als Stufe 5 erstellen.\n\nJeder Zauberslot, den Sie mit dieser Funktion erstellen, verschwindet, wenn Sie eine Lange Rast beenden.\n\nZauberplätze erschaffen\n\nZauberplatz-Stufe Zauberpunktkosten Min. Zauberer Level 1 2 2 2 3 3 3 5 5 4 6 7 5 7 9\n\nStufe 2: Metamagie\n\nDa Ihre Magie von innen kommt, können Sie Ihre Zaubersprüche an Ihre Bedürfnisse anpassen. Sie erhalten zwei Metamagic-Optionen Ihrer Wahl unter „Metamagic-Optionen“ weiter unten in der Beschreibung dieser Klasse. Sie verwenden die gewählten Optionen, um von Ihnen gewirkte Zauber vorübergehend zu modifizieren. Um eine Option nutzen zu können, müssen Sie die Anzahl an Zauberpunkten ausgeben, die sie kostet.\n\nSie können beim Wirken eines Zaubers nur eine Metamagic-Option verwenden, sofern in einer dieser Optionen nichts anderes angegeben ist.\n\nImmer wenn Sie ein Zauberer-Level erreichen, können Sie eine Ihrer Metamagic-Optionen durch eine Ihnen unbekannte ersetzen. Auf Zauberer-Stufe 10 erhältst du zwei weitere Optionen und auf Zauberer-Stufe 17 zwei weitere.\n\nLevel 3: Zauberer-Unterklasse\n\nDu erhältst eine Zauberer-Unterklasse deiner Wahl. Die Unterklassen Aberrant Sorcery, Clockwork Sorcery, Draconic Sorcery und Wild Magic Sorcery werden nach der Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen Funktionen auf bestimmten Zaubererstufen gewährt. Für den Rest Ihrer Karriere erhalten Sie alle Eigenschaften Ihrer Unterklasse, die Ihrer Zaubererstufe oder niedriger entsprechen.\n\nZauberer-Unterklassen\n\nName Aberrant Sorcery Clockwork Sorcery Draconic Sorcery Spellfire Sorcery Wild Magic Sorcery\n\nStufe 4: Verbesserung der Fähigkeitsbewertung\n\nDu erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Zaubererstufen 8, 12 und 16.\n\nLevel 5: Zauberhafte Wiederherstellung\n\nWenn du eine Kurze Rast abschließt, kannst du verbrauchte Zauberpunkte zurückerhalten, jedoch nicht mehr als eine Zahl, die der Hälfte deiner Zaubererstufe (abgerundet) entspricht. Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben.\n\nLevel 7: Inkarnierte Zauberei\n\nWenn Sie die angeborene Zauberei nicht mehr nutzen können, können Sie sie verwenden, indem Sie 2 Zauberpunkte ausgeben, wenn Sie die Bonusaktion nutzen, um sie zu aktivieren.\n\nWährend Ihre Funktion „Angeborene Zauberei“ aktiv ist, können Sie außerdem bis zu zwei Ihrer Metamagic-Optionen für jeden von Ihnen gewirkten Zauber verwenden.\n\nLevel 19: Epischer Segen\n\nDu erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Boon of Dimensional Travel wird empfohlen.\n\nLevel 20: Arkane Apotheose\n\nWährend Ihre Funktion „Angeborene Zauberei“ aktiv ist, können Sie in jedem Ihrer Züge eine Metamagische Option verwenden, ohne dafür Zauberpunkte auszugeben.",
+  "tags": [],
+  "hit_die": 6,
+  "primary_abilities": [
+    "cha"
+  ],
+  "proficiencies": {
+    "saving_throws": [
+      "cha"
+    ],
+    "armor": [],
+    "weapons": [
+      "Einfache Waffen"
+    ],
+    "tools": []
+  },
+  "skill_choices": {
+    "choose": 2,
+    "options": [
+      "Arkana",
+      "Taeuschung",
+      "Einsicht",
+      "Einschuechterung",
+      "Ueberzeugung",
+      "Religion"
+    ]
+  },
+  "spellcasting": {
+    "ability": "cha",
+    "progression": "full",
+    "preparation_formula": null,
+    "known_formula": null,
+    "focus_types": [
+      "Du kannst einen Arkanen Fokus als Zauberfokus für deine Zaubererzauber verwenden"
+    ],
+    "spell_list_names": [
+      "Zauberer",
+      "Sorcerer"
+    ],
+    "uses_spell_slots": true
+  },
+  "starting_equipment": {
+    "fixed": [],
+    "choices": []
+  },
+  "multiclass_requirements": {
+    "minimum_abilities": {}
+  },
+  "levels": [
+    {
+      "level": 1,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Zauberei",
+        "angeborene Zauberei"
+      ],
+      "cantrips_known": 4,
+      "prepared_spells": 2,
+      "spell_slots": {
+        "1": 2
+      }
+    },
+    {
+      "level": 2,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Schriftart der Magie",
+        "Metamagie"
+      ],
+      "zauberpunkte": "2",
+      "cantrips_known": 4,
+      "prepared_spells": 4,
+      "spell_slots": {
+        "1": 3
+      }
+    },
+    {
+      "level": 3,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Unterklasse der Zauberer"
+      ],
+      "zauberpunkte": "3",
+      "cantrips_known": 4,
+      "prepared_spells": 6,
+      "spell_slots": {
+        "1": 4,
+        "2": 2
+      }
+    },
+    {
+      "level": 4,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "zauberpunkte": "4",
+      "cantrips_known": 5,
+      "prepared_spells": 7,
+      "spell_slots": {
+        "1": 4,
+        "2": 3
+      }
+    },
+    {
+      "level": 5,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Zauberhafte Wiederherstellung"
+      ],
+      "zauberpunkte": "5",
+      "cantrips_known": 5,
+      "prepared_spells": 9,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 2
+      }
+    },
+    {
+      "level": 6,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Unterklassenfunktion"
+      ],
+      "zauberpunkte": "6",
+      "cantrips_known": 5,
+      "prepared_spells": 10,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3
+      }
+    },
+    {
+      "level": 7,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Inkarnierte Zauberei"
+      ],
+      "zauberpunkte": "7",
+      "cantrips_known": 5,
+      "prepared_spells": 11,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1
+      }
+    },
+    {
+      "level": 8,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "zauberpunkte": "8",
+      "cantrips_known": 5,
+      "prepared_spells": 12,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2
+      }
+    },
+    {
+      "level": 9,
+      "proficiency_bonus": "+4",
+      "zauberpunkte": "9",
+      "cantrips_known": 5,
+      "prepared_spells": 14,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1
+      }
+    },
+    {
+      "level": 10,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Metamagie"
+      ],
+      "zauberpunkte": "10",
+      "cantrips_known": 6,
+      "prepared_spells": 15,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2
+      }
+    },
+    {
+      "level": 11,
+      "proficiency_bonus": "+4",
+      "zauberpunkte": "11",
+      "cantrips_known": 6,
+      "prepared_spells": 16,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      }
+    },
+    {
+      "level": 12,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "zauberpunkte": "12",
+      "cantrips_known": 6,
+      "prepared_spells": 16,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      }
+    },
+    {
+      "level": 13,
+      "proficiency_bonus": "+5",
+      "zauberpunkte": "13",
+      "cantrips_known": 6,
+      "prepared_spells": 17,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      }
+    },
+    {
+      "level": 14,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Unterklassenfunktion"
+      ],
+      "zauberpunkte": "14",
+      "cantrips_known": 6,
+      "prepared_spells": 17,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      }
+    },
+    {
+      "level": 15,
+      "proficiency_bonus": "+5",
+      "zauberpunkte": "15",
+      "cantrips_known": 6,
+      "prepared_spells": 18,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      }
+    },
+    {
+      "level": 16,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "zauberpunkte": "16",
+      "cantrips_known": 6,
+      "prepared_spells": 18,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      }
+    },
+    {
+      "level": 17,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Metamagie"
+      ],
+      "zauberpunkte": "17",
+      "cantrips_known": 6,
+      "prepared_spells": 19,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 18,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Unterklassenfunktion"
+      ],
+      "zauberpunkte": "18",
+      "cantrips_known": 6,
+      "prepared_spells": 20,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 19,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Epischer Segen"
+      ],
+      "zauberpunkte": "19",
+      "cantrips_known": 6,
+      "prepared_spells": 21,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 20,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Arkane Apotheose"
+      ],
+      "zauberpunkte": "20",
+      "cantrips_known": 6,
+      "prepared_spells": 22,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 1
+      }
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Aberrante Zauberei",
+      "original_name": "Aberrant Sorcery",
+      "id": "aberrante-zauberei",
+      "source_url": "http://dnd2024.wikidot.com/sorcerer:aberrant-sorcery",
+      "file": "subclasses/aberrante-zauberei.json"
+    },
+    {
+      "name": "Uhrwerk-Zauberei",
+      "original_name": "Clockwork Sorcery",
+      "id": "uhrwerk-zauberei",
+      "source_url": "http://dnd2024.wikidot.com/sorcerer:clockwork-sorcery",
+      "file": "subclasses/uhrwerk-zauberei.json"
+    },
+    {
+      "name": "Drakonische Zauberei",
+      "original_name": "Draconic Sorcery",
+      "id": "drakonische-zauberei",
+      "source_url": "http://dnd2024.wikidot.com/sorcerer:draconic-sorcery",
+      "file": "subclasses/drakonische-zauberei.json"
+    },
+    {
+      "name": "Zauberfeuerzauberei",
+      "original_name": "Spellfire Sorcery",
+      "id": "zauberfeuerzauberei",
+      "source_url": "http://dnd2024.wikidot.com/sorcerer:spellfire-sorcery",
+      "file": "subclasses/zauberfeuerzauberei.json"
+    },
+    {
+      "name": "Wilde Zauberei",
+      "original_name": "Wild Magic Sorcery",
+      "id": "wilde-zauberei",
+      "source_url": "http://dnd2024.wikidot.com/sorcerer:wild-magic-sorcery",
+      "file": "subclasses/wilde-zauberei.json"
+    }
+  ],
+  "subclass_index": [
+    "aberrante-zauberei.json",
+    "drakonische-zauberei.json",
+    "uhrwerk-zauberei.json",
+    "wilde-zauberei.json",
+    "zauberfeuerzauberei.json"
+  ]
+}

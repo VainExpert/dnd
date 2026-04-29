@@ -1,0 +1,116 @@
+{
+  "id": "magie-initiierter",
+  "type": "feat",
+  "name": "Magie-Initiierter",
+  "original_name": "Magic Initiate",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:magic-initiate",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Sie profitieren von folgenden Vorteilen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zwei Zaubertricks. Sie lernen zwei Cantrips Ihrer Wahl aus der Zauberliste „Kleriker“, „Druide“ oder „Zauberer“. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für die Zauber dieses Talents (wählen Sie, wenn Sie dieses Talent auswählen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauber der Stufe 1. Wählen Sie einen Zauberspruch der Stufe 1 aus derselben Liste, die Sie für die Cantrips dieses Kunststücks ausgewählt haben. Du hast diesen Zauber immer vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können den Zauber auch mit beliebigen Zauberslots wirken, die Sie haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberänderung. Immer wenn Sie eine neue Stufe erreichen, können Sie einen der Zauber, die Sie für dieses Talent ausgewählt haben, durch einen anderen Zauber derselben Stufe aus der Liste der ausgewählten Zauber ersetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wiederholbar. Sie können dieses Kunststück mehr als einmal ausführen, müssen jedoch jedes Mal eine andere Zauberliste auswählen."
+    }
+  ],
+  "text": "Sie profitieren von folgenden Vorteilen.\n\nZwei Zaubertricks. Sie lernen zwei Cantrips Ihrer Wahl aus der Zauberliste „Kleriker“, „Druide“ oder „Zauberer“. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für die Zauber dieses Talents (wählen Sie, wenn Sie dieses Talent auswählen).\n\nZauber der Stufe 1. Wählen Sie einen Zauberspruch der Stufe 1 aus derselben Liste, die Sie für die Cantrips dieses Kunststücks ausgewählt haben. Du hast diesen Zauber immer vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können den Zauber auch mit beliebigen Zauberslots wirken, die Sie haben.\n\nZauberänderung. Immer wenn Sie eine neue Stufe erreichen, können Sie einen der Zauber, die Sie für dieses Talent ausgewählt haben, durch einen anderen Zauber derselben Stufe aus der Liste der ausgewählten Zauber ersetzen.\n\nWiederholbar. Sie können dieses Kunststück mehr als einmal ausführen, müssen jedoch jedes Mal eine andere Zauberliste auswählen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [
+    {
+      "id": "magie-initiierter-cantrips",
+      "type": "spell",
+      "choose": 2,
+      "spell_levels": [
+        0
+      ],
+      "source": "magie-initiierter",
+      "spell_list_names": [
+        "Druide",
+        "Kleriker",
+        "Zauberer"
+      ]
+    },
+    {
+      "id": "magie-initiierter-level-1-spell",
+      "type": "spell",
+      "choose": 1,
+      "spell_levels": [
+        1
+      ],
+      "source": "magie-initiierter",
+      "spell_list_names": [
+        "Druide",
+        "Kleriker",
+        "Zauberer"
+      ]
+    }
+  ],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [
+      {
+        "id": "magie-initiierter-cantrips",
+        "type": "spell",
+        "choose": 2,
+        "spell_levels": [
+          0
+        ],
+        "source": "magie-initiierter",
+        "spell_list_names": [
+          "Druide",
+          "Kleriker",
+          "Zauberer"
+        ]
+      },
+      {
+        "id": "magie-initiierter-level-1-spell",
+        "type": "spell",
+        "choose": 1,
+        "spell_levels": [
+          1
+        ],
+        "source": "magie-initiierter",
+        "spell_list_names": [
+          "Druide",
+          "Kleriker",
+          "Zauberer"
+        ]
+      }
+    ],
+    "always_prepared": true
+  }
+}

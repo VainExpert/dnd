@@ -1,0 +1,46 @@
+{
+  "id": "heiler",
+  "type": "feat",
+  "name": "Heiler",
+  "original_name": "Healer",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:healer",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Sie profitieren von folgenden Vorteilen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kampfmediziner. Wenn du über ein Heiler-Set verfügst, kannst du es einmal nutzen und dich im Rahmen einer Nutzen-Aktion um eine Kreatur im Umkreis von 5 Fuß um dich kümmern. Diese Kreatur kann einen ihrer Trefferpunktwürfel ausgeben und du wirfst dann diesen Würfel. Die Kreatur erhält eine Anzahl an Trefferpunkten zurück, die dem Wurf plus deinem Uebungsbonus entspricht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Heilungswiederholungen. Immer wenn Sie einen Würfel werfen, um die Anzahl der Trefferpunkte zu bestimmen, die Sie mit einem Zauber oder mit dem Kampfsanitätervorteil dieses Talents wiederherstellen, können Sie den Würfel erneut würfeln, wenn er eine 1 würfelt, und Sie müssen den neuen Wurf verwenden."
+    }
+  ],
+  "text": "Sie profitieren von folgenden Vorteilen.\n\nKampfmediziner. Wenn du über ein Heiler-Set verfügst, kannst du es einmal nutzen und dich im Rahmen einer Nutzen-Aktion um eine Kreatur im Umkreis von 5 Fuß um dich kümmern. Diese Kreatur kann einen ihrer Trefferpunktwürfel ausgeben und du wirfst dann diesen Würfel. Die Kreatur erhält eine Anzahl an Trefferpunkten zurück, die dem Wurf plus deinem Uebungsbonus entspricht.\n\nHeilungswiederholungen. Immer wenn Sie einen Würfel werfen, um die Anzahl der Trefferpunkte zu bestimmen, die Sie mit einem Zauber oder mit dem Kampfsanitätervorteil dieses Talents wiederherstellen, können Sie den Würfel erneut würfeln, wenn er eine 1 würfelt, und Sie müssen den neuen Wurf verwenden.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

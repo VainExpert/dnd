@@ -1,0 +1,128 @@
+{
+  "id": "dhampir",
+  "type": "race",
+  "name": "Dhampir",
+  "original_name": "Dhampir",
+  "rules_version": "2024",
+  "source": "Astarion's Book of Hungers",
+  "source_url": "http://dnd2024.wikidot.com/species:dhampir",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Exotisch",
+  "prerequisites": [],
+  "summary": "Dhampire sind lebende Menschen, die vampirische Fähigkeiten besitzen, aber mit makaberem Hunger verflucht sind. Die meisten Dhampire dürsten nach Blut, aber einige ernähren sich von Träumen, Lebensenergie oder anderen lebenswichtigen Quellen. Dhampire müssen sich entscheiden, ob sie kämpfen, um ihren Hunger zu kontrollieren, oder ob sie räuberischen Trieben nachgeben wollen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Dhampire sind lebende Menschen, die vampirische Fähigkeiten besitzen, aber mit makaberem Hunger verflucht sind. Die meisten Dhampire dürsten nach Blut, aber einige ernähren sich von Träumen, Lebensenergie oder anderen lebenswichtigen Quellen. Dhampire müssen sich entscheiden, ob sie kämpfen, um ihren Hunger zu kontrollieren, oder ob sie räuberischen Trieben nachgeben wollen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dhampire entstehen oft aus Begegnungen mit Vampiren; Einige sind die Nachkommen eines mächtigen Vampirs, während andere durch den Biss eines Vampirs teilweise verwandelt wurden. Alle möglichen makabren Geschäfte und nekromantischen Einflüsse könnten ebenfalls zur Entstehung eines Dhampirs führen. Unabhängig von ihrer Herkunft zeigen Dhampire ihre vampirische Natur auf verschiedene Weise, einschließlich erhöhter Geschwindigkeit und eines lebensraubenden Bisses."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Dhampir-Eigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Humanoid"
+    },
+    {
+      "type": "paragraph",
+      "text": "Größe: Mittel (ca. 4–7 Fuß hoch) oder Klein (ca. 2–4 Fuß hoch), ausgewählt bei der Auswahl dieser Art"
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschwindigkeit: 35 Fuß"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Dhampir haben Sie diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Spinnenaufstieg. Du hast eine Steiggeschwindigkeit, die deiner Geschwindigkeit entspricht. Wenn Sie Charakterstufe 3 erreichen, können Sie sich nach oben, unten und über vertikale Flächen und an der Decke bewegen, während Sie Ihre Hände frei haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Spur des Untodes. Du hast Resistenz gegen nekrotischen Schaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vampirbiss. Wenn Sie Ihren unbewaffneten Schlag einsetzen und Schaden verursachen, können Sie sich dafür entscheiden, mit Ihren Reißzähnen zu beißen. Du verursachst Stichschaden in Höhe von 1W4 plus deinem Konstitutionsmodifikator anstelle des normalen Schadens eines unbewaffneten Schlags."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du diesen Schaden einer Kreatur zufügst, die kein Konstrukt oder Untoter ist, kannst du dich außerdem auf eine der folgenden Arten stärken:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Abfluss. Du erhältst Trefferpunkte zurück, die dem zugefügten Stichschaden entsprechen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Stärken. Du erhältst einen Bonus auf die nächste Fähigkeitsüberprüfung oder den nächsten Angriffswurf, den du innerhalb der nächsten Minute durchführst; Der Bonus entspricht dem verursachten Piercing-Schaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst dich mit dieser Eigenschaft mehrmals in Höhe deines Uebungsbonus stärken und erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast abschließt."
+    }
+  ],
+  "text": "Dhampire sind lebende Menschen, die vampirische Fähigkeiten besitzen, aber mit makaberem Hunger verflucht sind. Die meisten Dhampire dürsten nach Blut, aber einige ernähren sich von Träumen, Lebensenergie oder anderen lebenswichtigen Quellen. Dhampire müssen sich entscheiden, ob sie kämpfen, um ihren Hunger zu kontrollieren, oder ob sie räuberischen Trieben nachgeben wollen.\n\nDhampire entstehen oft aus Begegnungen mit Vampiren; Einige sind die Nachkommen eines mächtigen Vampirs, während andere durch den Biss eines Vampirs teilweise verwandelt wurden. Alle möglichen makabren Geschäfte und nekromantischen Einflüsse könnten ebenfalls zur Entstehung eines Dhampirs führen. Unabhängig von ihrer Herkunft zeigen Dhampire ihre vampirische Natur auf verschiedene Weise, einschließlich erhöhter Geschwindigkeit und eines lebensraubenden Bisses.\n\nDhampir-Eigenschaften\n\nKreaturentyp: Humanoid\n\nGröße: Mittel (ca. 4–7 Fuß hoch) oder Klein (ca. 2–4 Fuß hoch), ausgewählt bei der Auswahl dieser Art\n\nGeschwindigkeit: 35 Fuß\n\nAls Dhampir haben Sie diese besonderen Eigenschaften.\n\nDunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß.\n\nSpinnenaufstieg. Du hast eine Steiggeschwindigkeit, die deiner Geschwindigkeit entspricht. Wenn Sie Charakterstufe 3 erreichen, können Sie sich nach oben, unten und über vertikale Flächen und an der Decke bewegen, während Sie Ihre Hände frei haben.\n\nSpur des Untodes. Du hast Resistenz gegen nekrotischen Schaden.\n\nVampirbiss. Wenn Sie Ihren unbewaffneten Schlag einsetzen und Schaden verursachen, können Sie sich dafür entscheiden, mit Ihren Reißzähnen zu beißen. Du verursachst Stichschaden in Höhe von 1W4 plus deinem Konstitutionsmodifikator anstelle des normalen Schadens eines unbewaffneten Schlags.\n\nWenn du diesen Schaden einer Kreatur zufügst, die kein Konstrukt oder Untoter ist, kannst du dich außerdem auf eine der folgenden Arten stärken:\n\nAbfluss. Du erhältst Trefferpunkte zurück, die dem zugefügten Stichschaden entsprechen.\n\nStärken. Du erhältst einen Bonus auf die nächste Fähigkeitsüberprüfung oder den nächsten Angriffswurf, den du innerhalb der nächsten Minute durchführst; Der Bonus entspricht dem verursachten Piercing-Schaden.\n\nDu kannst dich mit dieser Eigenschaft mehrmals in Höhe deines Uebungsbonus stärken und erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast abschließt.",
+  "tags": [],
+  "size": [
+    "Klein",
+    "Mittel"
+  ],
+  "creature_type": "Humanoid",
+  "speed": {
+    "walk": 11,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Dunkelsicht",
+      "text": "Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß."
+    },
+    {
+      "name": "Spinnenaufstieg",
+      "text": "Du hast eine Steiggeschwindigkeit, die deiner Geschwindigkeit entspricht. Wenn Sie Charakterstufe 3 erreichen, können Sie sich nach oben, unten und über vertikale Flächen und an der Decke bewegen, während Sie Ihre Hände frei haben."
+    },
+    {
+      "name": "Spur des Untodes",
+      "text": "Du hast Resistenz gegen nekrotischen Schaden."
+    },
+    {
+      "name": "Vampirbiss",
+      "text": "Wenn Sie Ihren unbewaffneten Schlag einsetzen und Schaden verursachen, können Sie sich dafür entscheiden, mit Ihren Reißzähnen zu beißen. Du verursachst Stichschaden in Höhe von 1W4 plus deinem Konstitutionsmodifikator anstelle des normalen Schadens eines unbewaffneten Schlags."
+    },
+    {
+      "name": "Abfluss",
+      "text": "Du erhältst Trefferpunkte zurück, die dem zugefügten Stichschaden entsprechen."
+    },
+    {
+      "name": "Stärken",
+      "text": "Du erhältst einen Bonus auf die nächste Fähigkeitsüberprüfung oder den nächsten Angriffswurf, den du innerhalb der nächsten Minute durchführst; Der Bonus entspricht dem verursachten Piercing-Schaden."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

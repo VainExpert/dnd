@@ -1,0 +1,112 @@
+{
+  "id": "dieb",
+  "type": "subclass",
+  "name": "Dieb",
+  "original_name": "Thief",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/rogue:thief",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Gehen Sie als klassischer Abenteurer auf Schatzsuche. Als Mischung aus Einbrecher, Schatzsucher und Entdecker sind Sie der Inbegriff eines Abenteurers. Zusätzlich zur Verbesserung Ihrer Beweglichkeit und Tarnung erhalten Sie nützliche Fähigkeiten, um in Ruinen vorzudringen und den größtmöglichen Nutzen aus den magischen Gegenständen zu ziehen, die Sie dort finden.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Gehen Sie als klassischer Abenteurer auf Schatzsuche. Als Mischung aus Einbrecher, Schatzsucher und Entdecker sind Sie der Inbegriff eines Abenteurers. Zusätzlich zur Verbesserung Ihrer Beweglichkeit und Tarnung erhalten Sie nützliche Fähigkeiten, um in Ruinen vorzudringen und den größtmöglichen Nutzen aus den magischen Gegenständen zu ziehen, die Sie dort finden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Schnelle Hände"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion können Sie eine der folgenden Aktionen ausführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fingerfertigkeit. Machen Sie einen Geschicklichkeitswurf (Fingerfertigkeit), um ein Schloss zu knacken, eine Falle mit Diebeswerkzeug zu entschärfen oder eine Tasche zu stehlen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verwenden Sie ein Objekt. Führen Sie die Aktion „Verwenden“ oder die Aktion „Magie“ aus, um einen magischen Gegenstand zu verwenden, der diese Aktion erfordert."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Zweite Story-Arbeit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben darauf trainiert, an besonders schwer zugängliche Orte zu gelangen, was Ihnen diese Vorteile verschafft."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bergsteiger. Du erhältst eine Steiggeschwindigkeit, die deiner Geschwindigkeit entspricht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Jumper. Sie können Ihre Sprungweite anhand Ihrer Geschicklichkeit und nicht anhand Ihrer Stärke bestimmen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 9: Höchster Sneak"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst die folgende Listiger-Schlag-Option."
+    },
+    {
+      "type": "paragraph",
+      "text": "Heimlicher Angriff (Kosten: 1W6). Wenn du die Bedingung „Unsichtbar“ der Aktion „Verstecken“ hast, beendet dieser Angriff diese Bedingung für dich nicht, wenn du den Zug hinter „Dreiviertel-Deckung“ oder „Vollständige Deckung“ beendest."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 13: Benutze ein magisches Gerät"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben gelernt, wie Sie magische Gegenstände optimal nutzen können, was Ihnen die folgenden Vorteile bietet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Einstimmung. Sie können sich auf bis zu vier magische Gegenstände gleichzeitig einstimmen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gebühren. Immer wenn Sie eine magische Gegenstandseigenschaft verwenden, die Ladungen verbraucht, würfeln Sie 1W6. Bei einem Würfelwurf von 6 nutzen Sie die Immobilie, ohne die Kosten aufzuwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schriftrollen. Sie können jede beliebige Zauberschriftrolle verwenden und Intelligenz als Zauberfähigkeit für den Zauber verwenden. Wenn es sich bei dem Zauber um einen Cantrip oder einen Zauber der Stufe 1 handelt, können Sie ihn zuverlässig wirken. Wenn die Schriftrolle einen Zauber höherer Stufe enthält, müssen Sie zunächst eine Intelligenzprüfung (Arcana) bestehen (SG 10 plus Stufe des Zaubers). Bei einem erfolgreichen Wurf wirkst du den Zauber aus der Schriftrolle. Bei einer fehlgeschlagenen Prüfung zerfällt die Schriftrolle."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 17: Diebesreflexe"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie sind geschickt darin, Hinterhalte zu legen und Gefahren schnell zu entkommen. Sie können in der ersten Runde eines jeden Kampfes zwei Runden absolvieren. Du machst deinen ersten Zug mit deiner normalen Initiative und deinen zweiten Zug mit deiner Initiative minus 10."
+    }
+  ],
+  "text": "Gehen Sie als klassischer Abenteurer auf Schatzsuche. Als Mischung aus Einbrecher, Schatzsucher und Entdecker sind Sie der Inbegriff eines Abenteurers. Zusätzlich zur Verbesserung Ihrer Beweglichkeit und Tarnung erhalten Sie nützliche Fähigkeiten, um in Ruinen vorzudringen und den größtmöglichen Nutzen aus den magischen Gegenständen zu ziehen, die Sie dort finden.\n\nLevel 3: Schnelle Hände\n\nAls Bonusaktion können Sie eine der folgenden Aktionen ausführen.\n\nFingerfertigkeit. Machen Sie einen Geschicklichkeitswurf (Fingerfertigkeit), um ein Schloss zu knacken, eine Falle mit Diebeswerkzeug zu entschärfen oder eine Tasche zu stehlen.\n\nVerwenden Sie ein Objekt. Führen Sie die Aktion „Verwenden“ oder die Aktion „Magie“ aus, um einen magischen Gegenstand zu verwenden, der diese Aktion erfordert.\n\nLevel 3: Zweite Story-Arbeit\n\nSie haben darauf trainiert, an besonders schwer zugängliche Orte zu gelangen, was Ihnen diese Vorteile verschafft.\n\nBergsteiger. Du erhältst eine Steiggeschwindigkeit, die deiner Geschwindigkeit entspricht.\n\nJumper. Sie können Ihre Sprungweite anhand Ihrer Geschicklichkeit und nicht anhand Ihrer Stärke bestimmen.\n\nLevel 9: Höchster Sneak\n\nDu erhältst die folgende Listiger-Schlag-Option.\n\nHeimlicher Angriff (Kosten: 1W6). Wenn du die Bedingung „Unsichtbar“ der Aktion „Verstecken“ hast, beendet dieser Angriff diese Bedingung für dich nicht, wenn du den Zug hinter „Dreiviertel-Deckung“ oder „Vollständige Deckung“ beendest.\n\nLevel 13: Benutze ein magisches Gerät\n\nSie haben gelernt, wie Sie magische Gegenstände optimal nutzen können, was Ihnen die folgenden Vorteile bietet.\n\nEinstimmung. Sie können sich auf bis zu vier magische Gegenstände gleichzeitig einstimmen.\n\nGebühren. Immer wenn Sie eine magische Gegenstandseigenschaft verwenden, die Ladungen verbraucht, würfeln Sie 1W6. Bei einem Würfelwurf von 6 nutzen Sie die Immobilie, ohne die Kosten aufzuwenden.\n\nSchriftrollen. Sie können jede beliebige Zauberschriftrolle verwenden und Intelligenz als Zauberfähigkeit für den Zauber verwenden. Wenn es sich bei dem Zauber um einen Cantrip oder einen Zauber der Stufe 1 handelt, können Sie ihn zuverlässig wirken. Wenn die Schriftrolle einen Zauber höherer Stufe enthält, müssen Sie zunächst eine Intelligenzprüfung (Arcana) bestehen (SG 10 plus Stufe des Zaubers). Bei einem erfolgreichen Wurf wirkst du den Zauber aus der Schriftrolle. Bei einer fehlgeschlagenen Prüfung zerfällt die Schriftrolle.\n\nLevel 17: Diebesreflexe\n\nSie sind geschickt darin, Hinterhalte zu legen und Gefahren schnell zu entkommen. Sie können in der ersten Runde eines jeden Kampfes zwei Runden absolvieren. Du machst deinen ersten Zug mit deiner normalen Initiative und deinen zweiten Zug mit deiner Initiative minus 10.",
+  "tags": [],
+  "class": "Schurke",
+  "class_id": "schurke",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

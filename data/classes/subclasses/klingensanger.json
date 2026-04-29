@@ -1,0 +1,112 @@
+{
+  "id": "klingensanger",
+  "type": "subclass",
+  "name": "Klingensänger",
+  "original_name": "Bladesinger",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/wizard:bladesinger",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Führen Sie Waffen und Zauberei im eleganten Tandem",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Führen Sie Waffen und Zauberei im eleganten Tandem"
+    },
+    {
+      "type": "paragraph",
+      "text": "Klingensänger beherrschen eine Tradition der Zauberei, die Schwertkampf und Tanz beinhaltet. Im Kampf wendet ein Klingensänger komplizierte, elegante Manöver an, die Schaden abwehren und es ihm ermöglichen, Magie in verheerende Angriffe und eine listige Verteidigung zu kanalisieren. Viele, die einen Klingensänger bei der Arbeit beobachtet haben, erinnern sich an die Vorführung als eines der schönsten Erlebnisse in ihrem Leben – ein herrlicher Tanz, begleitet von einer singenden Klinge."
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Klingengesang wird mit den alten Elfengesellschaften in Verbindung gebracht, die diese Kunst als Erste beherrschten und den Begriff prägten. Auch heute noch stammen die meisten Klingensänger aus alten Elfenreichen wie Myth Drannor oder aus nicht-elfischen Gesellschaften, die Land und Geschichte mit Elfen teilen, wie zum Beispiel den Silbermarken. Wo auch immer sie herkommen, Klingensänger tragen ihre Talente in alle Reiche, um gewöhnlichen Menschen zu helfen und Heldentaten zu vollbringen. Die meisten Gemeinden begrüßen die Ankunft eines Klingensängers als gutes Omen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Klingengesang"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion beschwörst du einen Elfenzauber namens „Klingensang“, sofern du keine Rüstung trägst oder einen Schild verwendest."
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Klingengesang dauert 1 Minute und endet vorzeitig, wenn Sie über die Bedingung „Kampfunfähig“ verfügen, wenn Sie eine Rüstung oder einen Schild tragen oder wenn Sie zwei Hände verwenden, um mit einer Waffe anzugreifen. Sie können den Klingengesang jederzeit ablehnen (es sind keine Maßnahmen erforderlich)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Während der Klingengesang aktiv ist, erhältst du die folgenden Vorteile. Du kannst den Klingengesang so oft beschwören, wie es deinem Intelligenzmodifikator entspricht (mindestens einmal), und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest. Wenn Sie „Arkane Wiederherstellung“ verwenden, erhalten Sie eine verbrauchte Nutzung zurück."
+    },
+    {
+      "type": "paragraph",
+      "text": "Beweglichkeit. Du erhältst einen Bonus auf deine RK in Höhe deines Intelligenzmodifikators (mindestens +1) und deine Geschwindigkeit erhöht sich um 10 Fuß. Darüber hinaus haben Sie einen Vorteil bei Fertigkeitswürfen (Akrobatik)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Klingenarbeit. Wenn Sie mit einer Waffe angreifen, die Sie beherrschen, können Sie Ihren Intelligenzmodifikator für die Angriffs- und Schadenswürfe verwenden, anstatt Stärke oder Geschicklichkeit zu verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fokus. Wenn Sie einen Konstitutions-Rettungswurf durchführen, um die Konzentration aufrechtzuerhalten, können Sie Ihren Intelligenzmodifikator zur Gesamtsumme hinzufügen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Ausbildung in Krieg und Gesang"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erwerben Kenntnisse im Umgang mit allen Nahkampfwaffen, die nicht über die Eigenschaft „Zweihändig“ oder „Schwer“ verfügen. Sie können eine Nahkampfwaffe, mit der Sie vertraut sind, als Zauberfokus für Ihre Zaubersprüche verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erwerben außerdem Kenntnisse in einer der folgenden Fertigkeiten Ihrer Wahl: Akrobatik, Leichtathletik, Leistung oder Überzeugungskraft."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 6: Zusätzlicher Angriff"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können zweimal statt einmal angreifen, wenn Sie in Ihrem Zug die Angriffsaktion durchführen. Darüber hinaus können Sie anstelle eines dieser Angriffe einen Ihrer Zauberer-Cantrips wirken, der eine Zauberzeit für eine Aktion hat."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Lied der Verteidigung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du Schaden erleidest, während dein Klingengesang aktiv ist, kannst du eine Reaktion ausführen, um einen Zauberplatz zu verbrauchen und den erlittenen Schaden um einen Betrag zu reduzieren, der dem Fünffachen der Stufe des Zauberplatzes entspricht."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Lied des Sieges"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nachdem Sie einen Zauber gewirkt haben, der eine Zauberzeit einer Aktion hat, können Sie als Bonusaktion einen Angriff mit einer Waffe durchführen."
+    }
+  ],
+  "text": "Führen Sie Waffen und Zauberei im eleganten Tandem\n\nKlingensänger beherrschen eine Tradition der Zauberei, die Schwertkampf und Tanz beinhaltet. Im Kampf wendet ein Klingensänger komplizierte, elegante Manöver an, die Schaden abwehren und es ihm ermöglichen, Magie in verheerende Angriffe und eine listige Verteidigung zu kanalisieren. Viele, die einen Klingensänger bei der Arbeit beobachtet haben, erinnern sich an die Vorführung als eines der schönsten Erlebnisse in ihrem Leben – ein herrlicher Tanz, begleitet von einer singenden Klinge.\n\nDer Klingengesang wird mit den alten Elfengesellschaften in Verbindung gebracht, die diese Kunst als Erste beherrschten und den Begriff prägten. Auch heute noch stammen die meisten Klingensänger aus alten Elfenreichen wie Myth Drannor oder aus nicht-elfischen Gesellschaften, die Land und Geschichte mit Elfen teilen, wie zum Beispiel den Silbermarken. Wo auch immer sie herkommen, Klingensänger tragen ihre Talente in alle Reiche, um gewöhnlichen Menschen zu helfen und Heldentaten zu vollbringen. Die meisten Gemeinden begrüßen die Ankunft eines Klingensängers als gutes Omen.\n\nLevel 3: Klingengesang\n\nAls Bonusaktion beschwörst du einen Elfenzauber namens „Klingensang“, sofern du keine Rüstung trägst oder einen Schild verwendest.\n\nDer Klingengesang dauert 1 Minute und endet vorzeitig, wenn Sie über die Bedingung „Kampfunfähig“ verfügen, wenn Sie eine Rüstung oder einen Schild tragen oder wenn Sie zwei Hände verwenden, um mit einer Waffe anzugreifen. Sie können den Klingengesang jederzeit ablehnen (es sind keine Maßnahmen erforderlich).\n\nWährend der Klingengesang aktiv ist, erhältst du die folgenden Vorteile. Du kannst den Klingengesang so oft beschwören, wie es deinem Intelligenzmodifikator entspricht (mindestens einmal), und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest. Wenn Sie „Arkane Wiederherstellung“ verwenden, erhalten Sie eine verbrauchte Nutzung zurück.\n\nBeweglichkeit. Du erhältst einen Bonus auf deine RK in Höhe deines Intelligenzmodifikators (mindestens +1) und deine Geschwindigkeit erhöht sich um 10 Fuß. Darüber hinaus haben Sie einen Vorteil bei Fertigkeitswürfen (Akrobatik).\n\nKlingenarbeit. Wenn Sie mit einer Waffe angreifen, die Sie beherrschen, können Sie Ihren Intelligenzmodifikator für die Angriffs- und Schadenswürfe verwenden, anstatt Stärke oder Geschicklichkeit zu verwenden.\n\nFokus. Wenn Sie einen Konstitutions-Rettungswurf durchführen, um die Konzentration aufrechtzuerhalten, können Sie Ihren Intelligenzmodifikator zur Gesamtsumme hinzufügen.\n\nStufe 3: Ausbildung in Krieg und Gesang\n\nSie erwerben Kenntnisse im Umgang mit allen Nahkampfwaffen, die nicht über die Eigenschaft „Zweihändig“ oder „Schwer“ verfügen. Sie können eine Nahkampfwaffe, mit der Sie vertraut sind, als Zauberfokus für Ihre Zaubersprüche verwenden.\n\nSie erwerben außerdem Kenntnisse in einer der folgenden Fertigkeiten Ihrer Wahl: Akrobatik, Leichtathletik, Leistung oder Überzeugungskraft.\n\nStufe 6: Zusätzlicher Angriff\n\nSie können zweimal statt einmal angreifen, wenn Sie in Ihrem Zug die Angriffsaktion durchführen. Darüber hinaus können Sie anstelle eines dieser Angriffe einen Ihrer Zauberer-Cantrips wirken, der eine Zauberzeit für eine Aktion hat.\n\nLevel 10: Lied der Verteidigung\n\nWenn du Schaden erleidest, während dein Klingengesang aktiv ist, kannst du eine Reaktion ausführen, um einen Zauberplatz zu verbrauchen und den erlittenen Schaden um einen Betrag zu reduzieren, der dem Fünffachen der Stufe des Zauberplatzes entspricht.\n\nLevel 14: Lied des Sieges\n\nNachdem Sie einen Zauber gewirkt haben, der eine Zauberzeit einer Aktion hat, können Sie als Bonusaktion einen Angriff mit einer Waffe durchführen.",
+  "tags": [],
+  "class": "Magier",
+  "class_id": "magier",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

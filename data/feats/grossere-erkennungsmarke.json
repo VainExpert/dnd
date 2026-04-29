@@ -1,0 +1,54 @@
+{
+  "id": "grossere-erkennungsmarke",
+  "type": "feat",
+  "name": "Größere Erkennungsmarke",
+  "original_name": "Greater Mark of Detection",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:greater-mark-of-detection",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Groessere Drachenmale",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Level 4+, Zeichen des Erkennungstalents)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Level 4+, Zeichen des Erkennungstalents)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserte Intuition. Wenn Sie den Vorteil „Deduktive Intuition“ Ihres Talents „Mal der Entdeckung“ nutzen, können Sie 1W6 statt 1W4 würfeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gemeinsame Erkennung. Wenn Sie den Vorteil „Magische Erkennung“ Ihres Talents „Mal der Erkennung“ nutzen, um „Unsichtbarkeit sehen“ ohne Zauberslot zu wirken, können Sie eine Kreatur auswählen, die Sie in einem Umkreis von 30 Fuß um sich selbst sehen können. Diese Kreatur profitiert außerdem für die Dauer des Zaubers von den Vorteilen."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Level 4+, Zeichen des Erkennungstalents)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20.\n\nVerbesserte Intuition. Wenn Sie den Vorteil „Deduktive Intuition“ Ihres Talents „Mal der Entdeckung“ nutzen, können Sie 1W6 statt 1W4 würfeln.\n\nGemeinsame Erkennung. Wenn Sie den Vorteil „Magische Erkennung“ Ihres Talents „Mal der Erkennung“ nutzen, um „Unsichtbarkeit sehen“ ohne Zauberslot zu wirken, können Sie eine Kreatur auswählen, die Sie in einem Umkreis von 30 Fuß um sich selbst sehen können. Diese Kreatur profitiert außerdem für die Dauer des Zaubers von den Vorteilen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

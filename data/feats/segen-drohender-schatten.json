@@ -1,0 +1,54 @@
+{
+  "id": "segen-drohender-schatten",
+  "type": "feat",
+  "name": "Segen drohender Schatten",
+  "original_name": "Boon of Looming Shadows",
+  "rules_version": "2024",
+  "source": "Astarion's Book of Hungers",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-looming-shadows",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Exotisch",
+  "prerequisites": [],
+  "summary": "Episches Segen-Talent (Voraussetzung: Level 19+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Episches Segen-Talent (Voraussetzung: Level 19+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schattenhafte Strecke. Wenn Sie die Angriffsaktion ausführen, erhöht sich Ihre Reichweite für Ihre Nahkampfwaffenangriffe bis zum Ende Ihres Zuges um 10 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tanzende Silhouette. Sie können die Ausweichen-Aktion als Bonusaktion nutzen."
+    }
+  ],
+  "text": "Episches Segen-Talent (Voraussetzung: Level 19+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30.\n\nSchattenhafte Strecke. Wenn Sie die Angriffsaktion ausführen, erhöht sich Ihre Reichweite für Ihre Nahkampfwaffenangriffe bis zum Ende Ihres Zuges um 10 Fuß.\n\nTanzende Silhouette. Sie können die Ausweichen-Aktion als Bonusaktion nutzen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

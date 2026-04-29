@@ -4,14 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kampagnen-Werkzeugkasten</title>
-  <link rel="stylesheet" href="./styles.css?v=theme-20260422" />
+  <link rel="stylesheet" href="./styles.css?v=markdown-tables-20260429" />
   <script src="./theme.js?v=theme-20260422"></script>
 </head>
 <body>
   <header class="topbar">
     <div class="brand">
       <div class="title">Kampagnen-Werkzeugkasten</div>
-      <div class="subtitle">Hausregeln &bull; Lore &bull; Handouts &bull; Rückblicke</div>
+      <div class="subtitle">Regeln &bull; Lore &bull; Handouts &bull; Rückblicke</div>
     </div>
     <div class="search">
       <input id="search" type="search" placeholder="Seiten durchsuchen (Titel/Text)..." />
@@ -22,11 +22,15 @@
     <aside class="sidebar">
       <nav id="nav" class="nav">
         <div class="group">
+          <div class="group-title">Start</div>
+          <a href="./index.html#content/home.md">Startseite</a>
+        </div>
+        <div class="group">
           <div class="group-title">Spiel</div>
+          <a href="./index.html#content/rules/index.md">Regeln</a>
           <a href="./index.html#content/house-rules/index.md">Hausregeln</a>
           <a href="./index.html#content/safety/index.md">Sicherheit</a>
           <a href="./index.html#content/character-options/index.md">Charakteroptionen</a>
-          <a href="./index.html#content/campaigns/timelines.md">Kampagnen-Zeitachsen</a>
           <a href="./index.html#content/recaps/index.md">Sitzungsrückblicke</a>
         </div>
       </nav>
@@ -42,6 +46,7 @@
           <a href="./pages/bestiarium/bestiary.html">Bestiarium</a>
           <a href="./pages/zauber/spells.html">Zauber</a>
           <a href="./pages/items/items.html">Gegenstände</a>
+          <a href="./pages/charakteroptionen/options.html">Charakteroptionen</a>
           <a href="./pages/maps.html">Karten</a>
           <a href="./pages/spieler/pcs.html">Spieler</a>
           <a href="./pages/icons.html">Symbole</a>
@@ -58,6 +63,7 @@
     </main>
   </div>
 
-  <script src="./app.js"></script>
+  <script src="./nav.js?v=markdown-20260427"></script>
+  <script src="./app.js?v=markdown-tables-20260429"></script>
 </body>
 </html>

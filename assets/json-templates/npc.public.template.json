@@ -1,0 +1,22 @@
+{
+  "id": "<npc-id>",
+  "type": "npc",
+  "name": "<NPC Name>",
+  "rules_version": "2024",
+  "public_name": "<Public Name>",
+  "source": "<source>",
+  "role": "",
+  "faction": "",
+  "race": "",
+  "portrait": "",
+  "public_summary": "",
+  "known_traits": [
+    {
+      "name": "<Known Trait>",
+      "text": ""
+    }
+  ],
+  "known_spell_ids": [],
+  "public_notes": "",
+  "tags": []
+}

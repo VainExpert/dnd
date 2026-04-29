@@ -1,0 +1,116 @@
+{
+  "id": "segen-von-siberys",
+  "type": "feat",
+  "name": "Segen von Siberys",
+  "original_name": "Boon of Siberys",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-siberys",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Episches Segen-Talent (Voraussetzung: Level 19+, Eberron-Kampagne)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Episches Segen-Talent (Voraussetzung: Level 19+, Eberron-Kampagne)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Aberrante Magie. Wählen Sie einen Zauber der Stufe 8 oder niedriger aus der Liste der Zaubererzauber oder einen Zauber aus der Tabelle der Drachenzeichen-Zauber von Siberys (die Tabelle enthält Vorschläge für Drachenzeichen, wenn Sie einen Zauber mit einem der Zeichen verknüpfen möchten). Du hast diesen Zauber immer vorbereitet. Du kannst es einmal ohne Zauberslot oder Zauberkomponenten wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, zurück, wenn du eine Kurze oder Lange Rast beendet hast. Sie können diesen Zauber auch mit allen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wann Sie dieses Talent erlangen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Siberys Drachenmal-Zauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Fluch",
+          "Vorgeschlagenes Drachenzeichen"
+        ],
+        [
+          "Tierformen",
+          "Handhabung"
+        ],
+        [
+          "Kontrollieren Sie das Wetter",
+          "Sturm"
+        ],
+        [
+          "Halbflugzeug",
+          "Herstellung"
+        ],
+        [
+          "Heldenfest",
+          "Gastfreundschaft"
+        ],
+        [
+          "Labyrinth",
+          "Abwehr"
+        ],
+        [
+          "Geist leer",
+          "Waechter"
+        ],
+        [
+          "Flugzeugverschiebung",
+          "Passage"
+        ],
+        [
+          "Projektbild",
+          "Schatten"
+        ],
+        [
+          "Regenerieren",
+          "Heilung"
+        ],
+        [
+          "Symbol",
+          "Schreiben"
+        ],
+        [
+          "Teleportieren",
+          "Finden"
+        ],
+        [
+          "Wahres Sehen",
+          "Erkennung"
+        ]
+      ],
+      "text": "Vorgeschlagener Zauber: Drachenzeichen, Tierformen, Umgang mit Kontrolle, Wetter, Sturm, Halbflugzeug, Herstellung von Heldenfest, Gastfreundschaft, Labyrinth, Abwehr des Geistes, Leere, Wächterebene, Verschiebung, Passage, Projekt, Bild, Schatten, Regenerieren, Heilungssymbol, Schreiben, Teleportieren, Wahres Sehen finden, Erkennung"
+    }
+  ],
+  "text": "Episches Segen-Talent (Voraussetzung: Level 19+, Eberron-Kampagne)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30.\n\nAberrante Magie. Wählen Sie einen Zauber der Stufe 8 oder niedriger aus der Liste der Zaubererzauber oder einen Zauber aus der Tabelle der Drachenzeichen-Zauber von Siberys (die Tabelle enthält Vorschläge für Drachenzeichen, wenn Sie einen Zauber mit einem der Zeichen verknüpfen möchten). Du hast diesen Zauber immer vorbereitet. Du kannst es einmal ohne Zauberslot oder Zauberkomponenten wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, zurück, wenn du eine Kurze oder Lange Rast beendet hast. Sie können diesen Zauber auch mit allen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wann Sie dieses Talent erlangen).\n\nSiberys Drachenmal-Zauber\n\nVorgeschlagener Zauber: Drachenzeichen, Tierformen, Umgang mit Kontrolle, Wetter, Sturm, Halbflugzeug, Herstellung von Heldenfest, Gastfreundschaft, Labyrinth, Abwehr des Geistes, Leere, Wächterebene, Verschiebung, Passage, Projekt, Bild, Schatten, Regenerieren, Heilungssymbol, Schreiben, Teleportieren, Wahres Sehen finden, Erkennung",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": true
+  }
+}

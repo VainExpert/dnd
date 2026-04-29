@@ -1,0 +1,90 @@
+{
+  "id": "harper",
+  "type": "background",
+  "name": "Harper",
+  "original_name": "Harper",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/background:harper",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Geschicklichkeit, Intelligenz, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Geschicklichkeit, Intelligenz, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Harper-Agent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Leistung und Fingerfertigkeit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkompetenz: Verkleidungsset"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Verkleidungsset, Schlafsack, Kostüm, Enterhaken, Seil, Reisekleidung, 14 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben eine Einladung zum Beitritt zu den Harpers angenommen und einen Eid geschworen, den Harper-Kodex einzuhalten und im Dienste des Gemeinwohls zu handeln. Wie alle Harpers verstehen Sie den Wert der Teamarbeit und wissen auch, wann es am besten ist, es alleine zu machen. Harper-Veteranen haben Ihnen die Geheimnisse des Ordens beigebracht – magische Melodien, besondere Parolen und Taschenspielertricks – und haben Ihnen anvertraut, dieses Wissen zu nutzen, um die Mächte des Bösen zu überwachen und zu untergraben."
+    }
+  ],
+  "text": "Fähigkeitswerte: Geschicklichkeit, Intelligenz, Charisma\n\nTalent: Harper-Agent\n\nFertigkeiten: Leistung und Fingerfertigkeit\n\nWerkzeugkompetenz: Verkleidungsset\n\nAusrüstung: Wähle A oder B: (A) Verkleidungsset, Schlafsack, Kostüm, Enterhaken, Seil, Reisekleidung, 14 GP; oder (B) 50 GP\n\nSie haben eine Einladung zum Beitritt zu den Harpers angenommen und einen Eid geschworen, den Harper-Kodex einzuhalten und im Dienste des Gemeinwohls zu handeln. Wie alle Harpers verstehen Sie den Wert der Teamarbeit und wissen auch, wann es am besten ist, es alleine zu machen. Harper-Veteranen haben Ihnen die Geheimnisse des Ordens beigebracht – magische Melodien, besondere Parolen und Taschenspielertricks – und haben Ihnen anvertraut, dieses Wissen zu nutzen, um die Mächte des Bösen zu überwachen und zu untergraben.",
+  "tags": [],
+  "ability_scores": [
+    "dex",
+    "int",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "dex",
+      "int",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Auftreten",
+    "Fingerfertigkeit"
+  ],
+  "tool_proficiencies": [
+    "Verkleidungsset\n"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "harper-agent",
+  "granted_feat_name": "Harper-Agent\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Verkleidungsset, Schlafsack, Kostüm, Enterhaken, Seil, Reisekleidung, 14 GP; oder (B) 50 GP\n\nSie haben eine Einladung zum Beitritt zu den Harpers angenommen und einen Eid geschworen, den Harper-Kodex einzuhalten und im Dienste des Gemeinwohls zu handeln. Wie alle Harpers verstehen Sie den Wert der Teamarbeit und wissen auch, wann es am besten ist, es alleine zu machen. Harper-Veteranen haben Ihnen die Geheimnisse des Ordens beigebracht – magische Melodien, besondere Parolen und Taschenspielertricks – und haben Ihnen anvertraut, dieses Wissen zu nutzen, um die Mächte des Bösen zu überwachen und zu untergraben"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "sorgfaeltiger-zauber",
+  "name": "Sorgfaeltiger Zauber",
+  "original_name": "Careful Spell",
+  "kind": "metamagic_option",
+  "class": "Zauberer",
+  "class_id": "zauberer",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/sorcerer:metamagic",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "1 Zauberpunkt",
+  "cost_original": "1 Sorcery Point",
+  "prerequisite": "",
+  "prerequisite_original": "",
+  "summary": "Wenn Sie einen Zauber wirken, der andere Kreaturen dazu zwingt, einen Rettungswurf auszuführen, können Sie einige dieser Kreaturen vor der vollen Kraft des Zaubers schützen. Geben Sie dazu 1 Zauberpunkt aus und wählen Sie eine Anzahl dieser Kreaturen bis zu Ihrem Charisma-Modifikator aus (mindestens eine Kreatur). Der Rettungswurf einer ausgewählten Kreatur gegen den Zauber gelingt automatisch und sie erleidet keinen Schaden, wenn sie bei einem erfolgreichen Rettungswurf normalerweise den halben Schaden erleiden würde.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, spend 1 Sorcery Point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell, and it takes no damage if it would normally take half damage on a successful save.",
+      "text_de": "Wenn Sie einen Zauber wirken, der andere Kreaturen dazu zwingt, einen Rettungswurf auszuführen, können Sie einige dieser Kreaturen vor der vollen Kraft des Zaubers schützen. Geben Sie dazu 1 Zauberpunkt aus und wählen Sie eine Anzahl dieser Kreaturen bis zu Ihrem Charisma-Modifikator aus (mindestens eine Kreatur). Der Rettungswurf einer ausgewählten Kreatur gegen den Zauber gelingt automatisch und sie erleidet keinen Schaden, wenn sie bei einem erfolgreichen Rettungswurf normalerweise den halben Schaden erleiden würde."
+    }
+  ]
+}

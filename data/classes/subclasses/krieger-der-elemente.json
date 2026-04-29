@@ -1,0 +1,108 @@
+{
+  "id": "krieger-der-elemente",
+  "type": "subclass",
+  "name": "Krieger der Elemente",
+  "original_name": "Warrior of the Elements",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/monk:warrior-of-the-elements",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Führe Schläge und Ausbrüche elementarer Kraft aus",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Führe Schläge und Ausbrüche elementarer Kraft aus"
+    },
+    {
+      "type": "paragraph",
+      "text": "Krieger der Elemente nutzen die Kraft der Elementarebenen. Diese Mönche nutzen ihren übernatürlichen Fokus und zähmen vorübergehend die Energie des Elementarchaos, um sich im und außerhalb des Kampfes zu stärken."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Elementare Einstimmung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Zu Beginn Ihres Zuges können Sie 1 Fokuspunkt ausgeben, um sich mit elementarer Energie zu erfüllen. Die Energie hält 10 Minuten an oder bis Sie den kampfunfähigen Zustand erreichen. Während diese Funktion aktiv ist, profitieren Sie von den folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erreichen. Wenn Sie einen unbewaffneten Schlag ausführen, ist Ihre Reichweite 10 Fuß größer als normal, da die Elementarenergie von Ihnen ausgeht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Elementarschläge. Wann immer Sie mit Ihrem unbewaffneten Schlag zuschlagen, können Sie dafür sorgen, dass er statt der normalen Schadensart Säure-, Kälte-, Feuer-, Blitz- oder Donnerschaden Ihrer Wahl verursacht. Wenn Sie mit einem dieser Typen umgehen, können Sie das Ziel auch zu einem Stärke-Rettungswurf zwingen. Bei einem fehlgeschlagenen Rettungswurf kannst du das Ziel bis zu 3 m auf dich zu oder von dir wegbewegen, während elementare Energie um es herumwirbelt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Elemente manipulieren"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kennst den Zauber „Elementarismus“. Weisheit ist deine Zauberfähigkeit dafür."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Elementarexplosion"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als magische Aktion können Sie 2 Fokuspunkte ausgeben, um elementare Energie in einer Kugel mit einem Radius von 20 Fuß auszubrechen, die auf einem Punkt innerhalb von 120 Fuß von Ihnen zentriert ist. Wählen Sie eine Schadensart: Säure, Kälte, Feuer, Blitz oder Donner."
+    },
+    {
+      "type": "paragraph",
+      "text": "Jede Kreatur in der Sphäre muss einen Geschicklichkeits-Rettungswurf ausführen. Bei einem fehlgeschlagenen Rettungswurf erleidet eine Kreatur Schaden der gewählten Art in Höhe von drei Würfen deines Kampfkunstwürfels. Bei einem erfolgreichen Rettungswurf erleidet eine Kreatur halb so viel Schaden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 11: Schritt der Elemente"
+    },
+    {
+      "type": "paragraph",
+      "text": "Während Ihre Elementare Einstimmung aktiv ist, verfügen Sie außerdem über eine Fluggeschwindigkeit und eine Schwimmgeschwindigkeit, die Ihrer Geschwindigkeit entsprechen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 17: Elementarer Inbegriff"
+    },
+    {
+      "type": "paragraph",
+      "text": "Während Ihre Elementare Einstimmung aktiv ist, erhalten Sie außerdem die folgenden Vorteile."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schadensresistenz. Du erhältst Resistenz gegen eine der folgenden Schadensarten deiner Wahl: Säure, Kälte, Feuer, Blitz oder Donner. Zu Beginn jedes deiner Züge kannst du diese Wahl ändern."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zerstörerischer Schritt. Wenn Sie Ihren „Schritt des Windes“ verwenden, erhöht sich Ihre Geschwindigkeit bis zum Ende der Runde um 20 Fuß. Während dieser Dauer erleidet jede Kreatur deiner Wahl Schaden in Höhe eines Wurfs deines Kampfkunstwürfels, wenn du ein Feld im Umkreis von 5 Fuß um sie betrittst. Als Schadensart können Sie zwischen Säure, Kälte, Feuer, Blitz oder Donner wählen. Eine Kreatur kann diesen Schaden nur einmal pro Spielzug erleiden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kraftvolle Schläge. Einmal in jedem deiner Züge kannst du einem Ziel zusätzlichen Schaden in Höhe eines Wurfs deines Kampfkunstwürfels zufügen, wenn du es mit einem unbewaffneten Schlag triffst. Der zusätzliche Schaden ist derselbe, der durch diesen Schlag verursacht wird."
+    }
+  ],
+  "text": "Führe Schläge und Ausbrüche elementarer Kraft aus\n\nKrieger der Elemente nutzen die Kraft der Elementarebenen. Diese Mönche nutzen ihren übernatürlichen Fokus und zähmen vorübergehend die Energie des Elementarchaos, um sich im und außerhalb des Kampfes zu stärken.\n\nStufe 3: Elementare Einstimmung\n\nZu Beginn Ihres Zuges können Sie 1 Fokuspunkt ausgeben, um sich mit elementarer Energie zu erfüllen. Die Energie hält 10 Minuten an oder bis Sie den kampfunfähigen Zustand erreichen. Während diese Funktion aktiv ist, profitieren Sie von den folgenden Vorteilen.\n\nErreichen. Wenn Sie einen unbewaffneten Schlag ausführen, ist Ihre Reichweite 10 Fuß größer als normal, da die Elementarenergie von Ihnen ausgeht.\n\nElementarschläge. Wann immer Sie mit Ihrem unbewaffneten Schlag zuschlagen, können Sie dafür sorgen, dass er statt der normalen Schadensart Säure-, Kälte-, Feuer-, Blitz- oder Donnerschaden Ihrer Wahl verursacht. Wenn Sie mit einem dieser Typen umgehen, können Sie das Ziel auch zu einem Stärke-Rettungswurf zwingen. Bei einem fehlgeschlagenen Rettungswurf kannst du das Ziel bis zu 3 m auf dich zu oder von dir wegbewegen, während elementare Energie um es herumwirbelt.\n\nLevel 3: Elemente manipulieren\n\nDu kennst den Zauber „Elementarismus“. Weisheit ist deine Zauberfähigkeit dafür.\n\nLevel 6: Elementarexplosion\n\nAls magische Aktion können Sie 2 Fokuspunkte ausgeben, um elementare Energie in einer Kugel mit einem Radius von 20 Fuß auszubrechen, die auf einem Punkt innerhalb von 120 Fuß von Ihnen zentriert ist. Wählen Sie eine Schadensart: Säure, Kälte, Feuer, Blitz oder Donner.\n\nJede Kreatur in der Sphäre muss einen Geschicklichkeits-Rettungswurf ausführen. Bei einem fehlgeschlagenen Rettungswurf erleidet eine Kreatur Schaden der gewählten Art in Höhe von drei Würfen deines Kampfkunstwürfels. Bei einem erfolgreichen Rettungswurf erleidet eine Kreatur halb so viel Schaden.\n\nLevel 11: Schritt der Elemente\n\nWährend Ihre Elementare Einstimmung aktiv ist, verfügen Sie außerdem über eine Fluggeschwindigkeit und eine Schwimmgeschwindigkeit, die Ihrer Geschwindigkeit entsprechen.\n\nLevel 17: Elementarer Inbegriff\n\nWährend Ihre Elementare Einstimmung aktiv ist, erhalten Sie außerdem die folgenden Vorteile.\n\nSchadensresistenz. Du erhältst Resistenz gegen eine der folgenden Schadensarten deiner Wahl: Säure, Kälte, Feuer, Blitz oder Donner. Zu Beginn jedes deiner Züge kannst du diese Wahl ändern.\n\nZerstörerischer Schritt. Wenn Sie Ihren „Schritt des Windes“ verwenden, erhöht sich Ihre Geschwindigkeit bis zum Ende der Runde um 20 Fuß. Während dieser Dauer erleidet jede Kreatur deiner Wahl Schaden in Höhe eines Wurfs deines Kampfkunstwürfels, wenn du ein Feld im Umkreis von 5 Fuß um sie betrittst. Als Schadensart können Sie zwischen Säure, Kälte, Feuer, Blitz oder Donner wählen. Eine Kreatur kann diesen Schaden nur einmal pro Spielzug erleiden.\n\nKraftvolle Schläge. Einmal in jedem deiner Züge kannst du einem Ziel zusätzlichen Schaden in Höhe eines Wurfs deines Kampfkunstwürfels zufügen, wenn du es mit einem unbewaffneten Schlag triffst. Der zusätzliche Schaden ist derselbe, der durch diesen Schlag verursacht wird.",
+  "tags": [],
+  "class": "Moench",
+  "class_id": "moench",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

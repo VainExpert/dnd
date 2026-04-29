@@ -1,0 +1,107 @@
+{
+  "id": "scharfer-verstand",
+  "type": "feat",
+  "name": "Scharfer Verstand",
+  "original_name": "Keen Mind",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:keen-mind",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Intelligenz 13+"
+  ],
+  "summary": "Voraussetzung: Level 4+, Intelligenz 13+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, Intelligenz 13+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenzwert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Überlieferungswissen. Wählen Sie eine der folgenden Fähigkeiten: Arcana, Geschichte, Untersuchung, Natur oder Religion. Wenn Sie die gewählte Fertigkeit nicht beherrschen, erwerben Sie Kenntnisse darin, und wenn Sie bereits über Kenntnisse darin verfügen, erwerben Sie Fachwissen darin."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schnelles Lernen. Sie können die Lernaktion als Bonusaktion nutzen."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, Intelligenz 13+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenzwert um 1 auf maximal 20.\n\nÜberlieferungswissen. Wählen Sie eine der folgenden Fähigkeiten: Arcana, Geschichte, Untersuchung, Natur oder Religion. Wenn Sie die gewählte Fertigkeit nicht beherrschen, erwerben Sie Kenntnisse darin, und wenn Sie bereits über Kenntnisse darin verfügen, erwerben Sie Fachwissen darin.\n\nSchnelles Lernen. Sie können die Lernaktion als Bonusaktion nutzen.",
+  "tags": [],
+  "modifiers": [
+    {
+      "type": "ability_score_bonus",
+      "ability": "int",
+      "value": 1,
+      "max": 20,
+      "source": "scharfer-verstand",
+      "inferred": true
+    },
+    {
+      "type": "ability_score_bonus",
+      "ability": "int",
+      "value": 1,
+      "max": 20,
+      "source": "scharfer-verstand",
+      "inferred": true
+    },
+    {
+      "type": "ability_score_bonus",
+      "ability": "int",
+      "value": 1,
+      "max": 20,
+      "source": "scharfer-verstand",
+      "inferred": true
+    },
+    {
+      "type": "ability_score_bonus",
+      "ability": "int",
+      "value": 1,
+      "max": 20,
+      "source": "scharfer-verstand",
+      "inferred": true
+    },
+    {
+      "type": "ability_score_bonus",
+      "ability": "int",
+      "value": 1,
+      "max": 20,
+      "source": "scharfer-verstand",
+      "inferred": true
+    },
+    {
+      "type": "ability_score_bonus",
+      "ability": "int",
+      "value": 1,
+      "max": 20,
+      "source": "scharfer-verstand",
+      "inferred": true
+    }
+  ],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

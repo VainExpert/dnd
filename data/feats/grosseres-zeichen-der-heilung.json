@@ -1,0 +1,58 @@
+{
+  "id": "grosseres-zeichen-der-heilung",
+  "type": "feat",
+  "name": "Größeres Zeichen der Heilung",
+  "original_name": "Greater Mark of Healing",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:greater-mark-of-healing",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Groessere Drachenmale",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen des Heiltalents)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen des Heiltalents)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserte Intuition. Wenn Sie den Vorteil „Medizinische Intuition“ Ihres Talents „Mal der Heilung“ nutzen, können Sie 1W6 statt 1W4 würfeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserte Heilung. Du kannst jetzt den Vorteil „Heilende Berührung“ deines Talents „Mal der Heilung“ nutzen, um „Wunden heilen“ zu wirken, ohne einen Zauberslot zu verwenden, und zwar so oft, wie es deinem Uebungsbonus entspricht, und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie außerdem „Wunden heilen“ wirken und würfeln, um die Anzahl der wiederhergestellten Trefferpunkte zu bestimmen, können Sie jede 1 oder 2 in einem Wurf als 3 behandeln."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen des Heiltalents)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20.\n\nVerbesserte Intuition. Wenn Sie den Vorteil „Medizinische Intuition“ Ihres Talents „Mal der Heilung“ nutzen, können Sie 1W6 statt 1W4 würfeln.\n\nVerbesserte Heilung. Du kannst jetzt den Vorteil „Heilende Berührung“ deines Talents „Mal der Heilung“ nutzen, um „Wunden heilen“ zu wirken, ohne einen Zauberslot zu verwenden, und zwar so oft, wie es deinem Uebungsbonus entspricht, und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast abschließt.\n\nWenn Sie außerdem „Wunden heilen“ wirken und würfeln, um die Anzahl der wiederhergestellten Trefferpunkte zu bestimmen, können Sie jede 1 oder 2 in einem Wurf als 3 behandeln.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

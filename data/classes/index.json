@@ -1,4 +1,18 @@
 {
   "files": [
+    "artificer.json",
+    "barbar.json",
+    "barde.json",
+    "druide.json",
+    "hexenmeister.json",
+    "kaempfer.json",
+    "kleriker.json",
+    "magier.json",
+    "moench.json",
+    "paladin.json",
+    "schurke.json",
+    "waldlaeufer.json",
+    "waldlaufer.json",
+    "zauberer.json"
   ]
 }

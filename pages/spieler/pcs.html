@@ -56,8 +56,9 @@
     </main>
   </div>
 
+  <script src="../../nav.js"></script>
   <script type="module">
-    import { escapeHtml, loadIndex, loadMany, normalizePc } from "../../lib.js";
+    import { escapeHtml, loadIndex, loadMany, normalizePc, renderRichText, renderRollExpressionHtml } from "../../lib.js?v=2026-04-27-hitdice-links";
 
     const grid = document.getElementById("grid");
     const qEl = document.getElementById("q");
@@ -76,12 +77,13 @@
             <div class="pillbar">
               ${p.ac != null ? `<span class="pill"><b>AC</b> ${escapeHtml(p.ac)}</span>` : ""}
               ${p.hp != null ? `<span class="pill"><b>HP</b> ${escapeHtml(p.hp)}</span>` : ""}
+              ${p.hit_dice ? `<span class="pill"><b>TW</b> ${renderRollExpressionHtml(p.hit_dice)}</span>` : ""}
               ${p.speed != null ? `<span class="pill"><b>Bewegung</b> ${escapeHtml(p.speed)}</span>` : ""}
             </div>
           </div>
           <div class="mini-body">
             ${portrait}
-            ${p.notes ? `<div class="mini-box"><div class="mini-box-title">Notizen</div><div class="mini-box-text">${escapeHtml(p.notes)}</div></div>` : ""}
+            ${p.notes ? `<div class="mini-box"><div class="mini-box-title">Notizen</div><div class="mini-box-text">${renderRichText(p.notes)}</div></div>` : ""}
             ${p.player ? `<div class="mini-footer muted">Spieler: ${escapeHtml(p.player)}</div>` : ""}
           </div>
         </div>

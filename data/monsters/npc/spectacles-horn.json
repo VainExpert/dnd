@@ -11,7 +11,7 @@
   "size": "Medium",
   "creature_type": "Humanoid",
   "subtype": "Elf",
-  "alignment": "rechtschaffen neutral",
+  "alignment": "gesetztreu neutral",
   "armor_class": {
     "value": 12,
     "note": "15 mit [[spell:magierruestung]]"
@@ -59,12 +59,10 @@
     "Arkane Kunde": 13,
     "Geschichte": 13
   },
-  "damage_resistances": [],
+  "damage_resistances": ["Nichtmagischer Hieb-, Stich- und Wuchtschaden durch [[spell:steinhaut]]"],
   "damage_immunities": [],
   "damage_vulnerabilities": [],
-  "special_damage_defenses": [
-    "Nichtmagischer Hieb-, Stich- und Wuchtschaden durch [[spell:steinhaut]] (Resistant)"
-  ],
+  "special_damage_defenses": [],
   "condition_immunities": [
     "[[condition:verzaubert]]"
   ],
@@ -178,6 +176,6 @@
   "lair_actions": [],
   "regional_effects": [],
   "background": "",
-  "personality": "",
-  "inventory": ["[[item:dolch]]", "[[item:kugel|Wahrsagekugel (arkaner Fokus)]]"]
+  "personality": "weise, bedacht, rätselhaft",
+  "inventory": ["[[item:dolch]]", "[[item:kugel|Wahrsagekugel (arkaner Fokus)]]", "[[item:robe]]", "[[item:beutel|Geldbeutel mit 5 GM]]"]
 }

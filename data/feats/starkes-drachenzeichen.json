@@ -1,0 +1,54 @@
+{
+  "id": "starkes-drachenzeichen",
+  "type": "feat",
+  "name": "Starkes Drachenzeichen",
+  "original_name": "Potent Dragonmark",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:potent-dragonmark",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Groessere Drachenmale",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Stufe 4+, beliebiges Drachenzeichen-Talent)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, beliebiges Drachenzeichen-Talent)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe den von deinem Drachenmal-Talent verwendeten Zauberfähigkeitswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dragonmark-Vorbereitung. Sie haben immer die Zauber auf Ihrer Liste der Zauber des Zeichens (falls vorhanden) vorbereitet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Drachenmal-Zauberkunst. Du hast einen zusätzlichen Zauberslot, um die Zauber zu wirken, die dir dein Drachenmal-Talent verleiht. Die Stufe des Zauberslots beträgt die Hälfte deines Levels (aufgerundet), bis zu einem Maximum von Level 5. Du erhältst den verbrauchten Slot zurück, wenn du eine Kurze oder Lange Rast abschließt. Du kannst diesen Zauberslot verwenden, um nur einen Zauber zu wirken, den du aufgrund deines Drachenmal-Talents oder des Drachenmal-Vorbereitungsvorteils dieses Talents vorbereitet hast."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, beliebiges Drachenzeichen-Talent)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe den von deinem Drachenmal-Talent verwendeten Zauberfähigkeitswert um 1 auf maximal 20.\n\nDragonmark-Vorbereitung. Sie haben immer die Zauber auf Ihrer Liste der Zauber des Zeichens (falls vorhanden) vorbereitet.\n\nDrachenmal-Zauberkunst. Du hast einen zusätzlichen Zauberslot, um die Zauber zu wirken, die dir dein Drachenmal-Talent verleiht. Die Stufe des Zauberslots beträgt die Hälfte deines Levels (aufgerundet), bis zu einem Maximum von Level 5. Du erhältst den verbrauchten Slot zurück, wenn du eine Kurze oder Lange Rast abschließt. Du kannst diesen Zauberslot verwenden, um nur einen Zauber zu wirken, den du aufgrund deines Drachenmal-Talents oder des Drachenmal-Vorbereitungsvorteils dieses Talents vorbereitet hast.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

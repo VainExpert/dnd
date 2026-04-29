@@ -1,0 +1,127 @@
+{
+  "id": "wissensbereich",
+  "type": "subclass",
+  "name": "Wissensbereich",
+  "original_name": "Knowledge Domain",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/cleric:knowledge-domain",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Entdecken Sie Geheimnisse und beherrschen Sie den Geist",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Entdecken Sie Geheimnisse und beherrschen Sie den Geist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Wissensbereich legt vor allem Wert auf Lernen und Verstehen. Kleriker, die diesen Bereich erschließen, studieren esoterische Überlieferungen, sammeln alte Wälzer, tauchen in geheime Orte ein und untersuchen die Prozesse des Geistes. Für sie ist Wissen wertvoller als materieller Reichtum, und Lernen ist ein Akt der Anbetung. Auch Bibliotheken, Universitäten und andere Bildungseinrichtungen nutzen die Leistungsfähigkeit des Wissensbereichs."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Götter des Wissens reichen von Meistern arkaner Magie bis hin zu Förderern von Handwerk und Erfindungsreichtum. In Faerûn verehren Kleriker der Wissensdomäne Gottheiten der Gelehrsamkeit und des Einfallsreichtums wie Oghma und Gond und viele andere."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Segen des Wissens"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erwerben Kenntnisse im Umgang mit einer Art von Handwerkswerkzeugen Ihrer Wahl und in zwei der folgenden Fertigkeiten Ihrer Wahl: Arkana, Geschichte, Natur oder Religion. Sie verfügen über Fachwissen in diesen beiden Fähigkeiten."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Zauber der Wissensdomäne"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine in der Wissensdomänen-Zaubertabelle angegebene Klerikerstufe erreichen, stehen Ihnen danach immer die aufgeführten Zauber bereit."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Wissensdomänenzauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Kleriker-Stufe",
+          "Vorbereitete Zauber"
+        ],
+        [
+          "3",
+          "Befehlen, Sprachen verstehen*, Magie erkennen*, Gedanken erkennen*, Identifizieren*, Mind Spike*"
+        ],
+        [
+          "5",
+          "Magie bannen, Nichterkennung, Zungen*"
+        ],
+        [
+          "7",
+          "Arkanes Auge*, Verbannung, Verwirrung"
+        ],
+        [
+          "9",
+          "Legendenkunde*, Wahrsagen*, Synaptische Statik"
+        ]
+      ],
+      "text": "Vorbereitete Zauber auf Klerikerstufe 3 Befehlen, Sprachen verstehen*, Magie erkennen*, Gedanken erkennen*, Identifizieren*, Geistesstachel* 5 Magie bannen, Nichtentdeckung, Zungen* 7 Arkanes Auge*, Verbannung, Verwirrung 9 Legendenkunde*, Wahrsagerei*, Synaptische Statik"
+    },
+    {
+      "type": "paragraph",
+      "text": "*Zauber der Wahrsagungsschule"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Gedankenmagie"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als magische Aktion kannst du eine Nutzung deiner Channel Divinity nutzen, um dein magisches Wissen zu manifestieren. Wählen Sie einen Zauberspruch aus der Wahrsagungsschule aus der von Ihnen vorbereiteten Tabelle „Wissensbereichszauber“ aus. Als Teil dieser Aktion wirkst du diesen Zauber, ohne einen Zauberslot zu verbrauchen oder Materialkomponenten zu benötigen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 6: Uneingeschränkter Geist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erhalten Telepathie bis zu einer Entfernung von 60 Fuß. Wenn Sie diese Telepathie nutzen, können Sie gleichzeitig mit einer Anzahl von Kreaturen in Höhe Ihres Weisheitsmodifikators (mindestens eine) Kontakt aufnehmen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus erwerben Sie Kenntnisse im Geheimdienst-Rettungswurf. Wenn Sie bereits über diese Fähigkeit verfügen, erwerben Sie stattdessen die Fähigkeit „Rettungswurf“ mit einer Fähigkeit, bei der Ihnen diese Fähigkeit fehlt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 17: Göttliches Vorwissen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion erweitern Sie Ihren Geist auf magische Weise in die Zukunft. Eine Stunde lang haben Sie einen Vorteil bei D20-Tests. Sobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast beendet haben. Sie können die Nutzung dieser Funktion auch wiederherstellen, indem Sie einen Zauberslot der Stufe 6+ verbrauchen (keine Aktion erforderlich)."
+    }
+  ],
+  "text": "Entdecken Sie Geheimnisse und beherrschen Sie den Geist\n\nDer Wissensbereich legt vor allem Wert auf Lernen und Verstehen. Kleriker, die diesen Bereich erschließen, studieren esoterische Überlieferungen, sammeln alte Wälzer, tauchen in geheime Orte ein und untersuchen die Prozesse des Geistes. Für sie ist Wissen wertvoller als materieller Reichtum, und Lernen ist ein Akt der Anbetung. Auch Bibliotheken, Universitäten und andere Bildungseinrichtungen nutzen die Leistungsfähigkeit des Wissensbereichs.\n\nDie Götter des Wissens reichen von Meistern arkaner Magie bis hin zu Förderern von Handwerk und Erfindungsreichtum. In Faerûn verehren Kleriker der Wissensdomäne Gottheiten der Gelehrsamkeit und des Einfallsreichtums wie Oghma und Gond und viele andere.\n\nStufe 3: Segen des Wissens\n\nSie erwerben Kenntnisse im Umgang mit einer Art von Handwerkswerkzeugen Ihrer Wahl und in zwei der folgenden Fertigkeiten Ihrer Wahl: Arkana, Geschichte, Natur oder Religion. Sie verfügen über Fachwissen in diesen beiden Fähigkeiten.\n\nStufe 3: Zauber der Wissensdomäne\n\nWenn Sie eine in der Wissensdomänen-Zaubertabelle angegebene Klerikerstufe erreichen, stehen Ihnen danach immer die aufgeführten Zauber bereit.\n\nWissensdomänenzauber\n\nVorbereitete Zauber auf Klerikerstufe 3 Befehlen, Sprachen verstehen*, Magie erkennen*, Gedanken erkennen*, Identifizieren*, Geistesstachel* 5 Magie bannen, Nichtentdeckung, Zungen* 7 Arkanes Auge*, Verbannung, Verwirrung 9 Legendenkunde*, Wahrsagerei*, Synaptische Statik\n\n*Zauber der Wahrsagungsschule\n\nStufe 3: Gedankenmagie\n\nAls magische Aktion kannst du eine Nutzung deiner Channel Divinity nutzen, um dein magisches Wissen zu manifestieren. Wählen Sie einen Zauberspruch aus der Wahrsagungsschule aus der von Ihnen vorbereiteten Tabelle „Wissensbereichszauber“ aus. Als Teil dieser Aktion wirkst du diesen Zauber, ohne einen Zauberslot zu verbrauchen oder Materialkomponenten zu benötigen.\n\nStufe 6: Uneingeschränkter Geist\n\nSie erhalten Telepathie bis zu einer Entfernung von 60 Fuß. Wenn Sie diese Telepathie nutzen, können Sie gleichzeitig mit einer Anzahl von Kreaturen in Höhe Ihres Weisheitsmodifikators (mindestens eine) Kontakt aufnehmen.\n\nDarüber hinaus erwerben Sie Kenntnisse im Geheimdienst-Rettungswurf. Wenn Sie bereits über diese Fähigkeit verfügen, erwerben Sie stattdessen die Fähigkeit „Rettungswurf“ mit einer Fähigkeit, bei der Ihnen diese Fähigkeit fehlt.\n\nStufe 17: Göttliches Vorwissen\n\nAls Bonusaktion erweitern Sie Ihren Geist auf magische Weise in die Zukunft. Eine Stunde lang haben Sie einen Vorteil bei D20-Tests. Sobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast beendet haben. Sie können die Nutzung dieser Funktion auch wiederherstellen, indem Sie einen Zauberslot der Stufe 6+ verbrauchen (keine Aktion erforderlich).",
+  "tags": [],
+  "class": "Kleriker",
+  "class_id": "kleriker",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

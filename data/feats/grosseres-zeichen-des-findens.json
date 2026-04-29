@@ -1,0 +1,54 @@
+{
+  "id": "grosseres-zeichen-des-findens",
+  "type": "feat",
+  "name": "Größeres Zeichen des Findens",
+  "original_name": "Greater Mark of Finding",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:greater-mark-of-finding",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Groessere Drachenmale",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen „Talent gefunden“)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen „Talent gefunden“)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserte Intuition. Wenn Sie den Vorteil „Intuition des Jägers“ Ihres Talents „Mal des Findens“ nutzen, können Sie 1W6 statt 1W4 würfeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserte Suche. Wenn Sie den Finder-Magie-Vorteil Ihres „Mal des Findens“ nutzen, um „Mal des Jägers“ ohne Zauberslot zu wirken, wird die Reichweite des Zaubers verdoppelt und Sie können den Zauber so modifizieren, dass das Ziel für die Dauer nicht vom Zustand „Unsichtbar“ profitieren kann."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, Zeichen „Talent gefunden“)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20.\n\nVerbesserte Intuition. Wenn Sie den Vorteil „Intuition des Jägers“ Ihres Talents „Mal des Findens“ nutzen, können Sie 1W6 statt 1W4 würfeln.\n\nVerbesserte Suche. Wenn Sie den Finder-Magie-Vorteil Ihres „Mal des Findens“ nutzen, um „Mal des Jägers“ ohne Zauberslot zu wirken, wird die Reichweite des Zaubers verdoppelt und Sie können den Zauber so modifizieren, dass das Ziel für die Dauer nicht vom Zustand „Unsichtbar“ profitieren kann.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

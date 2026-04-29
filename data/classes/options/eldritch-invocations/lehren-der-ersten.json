@@ -1,0 +1,34 @@
+{
+  "id": "lehren-der-ersten",
+  "name": "Lehren der Ersten",
+  "original_name": "Lessons of the First Ones",
+  "kind": "eldritch_invocation",
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:eldritch-invocation",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "",
+  "cost_original": "",
+  "prerequisite": "Hexenmeister der Stufe 2+",
+  "prerequisite_original": "Level 2+ Warlock",
+  "summary": "Du hast Wissen von einer älteren Entität des Multiversums erhalten, was es dir ermöglicht, ein Ursprungstalent deiner Wahl zu erlangen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.",
+      "text_de": "Du hast Wissen von einer älteren Entität des Multiversums erhalten, was es dir ermöglicht, ein Ursprungstalent deiner Wahl zu erlangen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Repeatable. You can gain this invocation more than once. Each time you do so, choose a different Origin feat .",
+      "text_de": "Wiederholbar. Sie können diesen Anruf mehr als einmal erhalten. Wählen Sie jedes Mal ein anderes Ursprungstalent aus."
+    }
+  ]
+}

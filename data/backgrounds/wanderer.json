@@ -1,0 +1,74 @@
+{
+  "id": "wanderer",
+  "type": "background",
+  "name": "Wanderer",
+  "original_name": "Wayfarer",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/background:wayfarer",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Sie sind auf der Straße aufgewachsen, umgeben von ähnlich unglückseligen Ausgestoßenen, von denen einige Freunde und einige Rivalen waren. Du hast geschlafen, wo du konntest, und hast Gelegenheitsarbeiten erledigt, um Essen zu bekommen. Manchmal, wenn der Hunger unerträglich wurde, griffen Sie zum Diebstahl. Dennoch haben Sie nie Ihren Stolz verloren und die Hoffnung nie aufgegeben. Das Schicksal ist mit dir noch nicht fertig.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Sie sind auf der Straße aufgewachsen, umgeben von ähnlich unglückseligen Ausgestoßenen, von denen einige Freunde und einige Rivalen waren. Du hast geschlafen, wo du konntest, und hast Gelegenheitsarbeiten erledigt, um Essen zu bekommen. Manchmal, wenn der Hunger unerträglich wurde, griffen Sie zum Diebstahl. Dennoch haben Sie nie Ihren Stolz verloren und die Hoffnung nie aufgegeben. Das Schicksal ist mit dir noch nicht fertig."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Geschicklichkeit, Weisheit, Charisma Talent: Glücksfertigkeit Fertigkeiten: Einsicht und Heimlichkeit Werkzeugkompetenz: Diebeswerkzeuge Ausrüstung: Wählen Sie A oder B: (A) 2 Dolche, Diebeswerkzeuge, Spielset (beliebig), Schlafsack, 2 Beutel, Reisekleidung, 16 GP; oder (B) 50 GP"
+    }
+  ],
+  "text": "Sie sind auf der Straße aufgewachsen, umgeben von ähnlich unglückseligen Ausgestoßenen, von denen einige Freunde und einige Rivalen waren. Du hast geschlafen, wo du konntest, und hast Gelegenheitsarbeiten erledigt, um Essen zu bekommen. Manchmal, wenn der Hunger unerträglich wurde, griffen Sie zum Diebstahl. Dennoch haben Sie nie Ihren Stolz verloren und die Hoffnung nie aufgegeben. Das Schicksal ist mit dir noch nicht fertig.\n\nFähigkeitswerte: Geschicklichkeit, Weisheit, Charisma Talent: Glücksfertigkeit Fertigkeiten: Einsicht und Heimlichkeit Werkzeugkompetenz: Diebeswerkzeuge Ausrüstung: Wählen Sie A oder B: (A) 2 Dolche, Diebeswerkzeuge, Spielset (beliebig), Schlafsack, 2 Beutel, Reisekleidung, 16 GP; oder (B) 50 GP",
+  "tags": [],
+  "ability_scores": [
+    "dex",
+    "wis",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "dex",
+      "wis",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Einsicht",
+    "Heimlichkeit"
+  ],
+  "tool_proficiencies": [
+    "Diebeswerkzeuge"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "gluecksfertigkeit",
+  "granted_feat_name": "Glücksfertigkeit",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wählen Sie A oder B: (A) 2 Dolche, Diebeswerkzeuge, Spielset (beliebig), Schlafsack, 2 Beutel, Reisekleidung, 16 GP; oder (B) 50 GP"
+    }
+  ]
+}

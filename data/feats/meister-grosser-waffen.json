@@ -1,0 +1,107 @@
+{
+  "id": "meister-grosser-waffen",
+  "type": "feat",
+  "name": "Meister grosser Waffen",
+  "original_name": "Great Weapon Master",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:great-weapon-master",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Stärke 13+"
+  ],
+  "summary": "Voraussetzung: Level 4+, Stärke 13+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, Stärke 13+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärkewert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Beherrschung schwerer Waffen. Wenn du im Rahmen der Angriffsaktion in deinem Zug eine Kreatur mit einer Waffe triffst, die über die Eigenschaft „Heavy“ verfügt, kannst du bewirken, dass die Waffe dem Ziel zusätzlichen Schaden zufügt. Der zusätzliche Schaden entspricht deinem Uebungsbonus."
+    },
+    {
+      "type": "paragraph",
+      "text": "Hauen. Unmittelbar nachdem du mit einer Nahkampfwaffe einen kritischen Treffer erzielt oder eine Kreatur damit auf 0 Trefferpunkte reduziert hast, kannst du als Bonusaktion einen Angriff mit derselben Waffe durchführen."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, Stärke 13+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärkewert um 1 auf maximal 20.\n\nBeherrschung schwerer Waffen. Wenn du im Rahmen der Angriffsaktion in deinem Zug eine Kreatur mit einer Waffe triffst, die über die Eigenschaft „Heavy“ verfügt, kannst du bewirken, dass die Waffe dem Ziel zusätzlichen Schaden zufügt. Der zusätzliche Schaden entspricht deinem Uebungsbonus.\n\nHauen. Unmittelbar nachdem du mit einer Nahkampfwaffe einen kritischen Treffer erzielt oder eine Kreatur damit auf 0 Trefferpunkte reduziert hast, kannst du als Bonusaktion einen Angriff mit derselben Waffe durchführen.",
+  "tags": [],
+  "modifiers": [
+    {
+      "type": "ability_score_bonus",
+      "ability": "str",
+      "value": 1,
+      "max": 20,
+      "source": "meister-grosser-waffen",
+      "inferred": true
+    },
+    {
+      "type": "ability_score_bonus",
+      "ability": "str",
+      "value": 1,
+      "max": 20,
+      "source": "meister-grosser-waffen",
+      "inferred": true
+    },
+    {
+      "type": "ability_score_bonus",
+      "ability": "str",
+      "value": 1,
+      "max": 20,
+      "source": "meister-grosser-waffen",
+      "inferred": true
+    },
+    {
+      "type": "ability_score_bonus",
+      "ability": "str",
+      "value": 1,
+      "max": 20,
+      "source": "meister-grosser-waffen",
+      "inferred": true
+    },
+    {
+      "type": "ability_score_bonus",
+      "ability": "str",
+      "value": 1,
+      "max": 20,
+      "source": "meister-grosser-waffen",
+      "inferred": true
+    },
+    {
+      "type": "ability_score_bonus",
+      "ability": "str",
+      "value": 1,
+      "max": 20,
+      "source": "meister-grosser-waffen",
+      "inferred": true
+    }
+  ],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

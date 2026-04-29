@@ -1,0 +1,61 @@
+{
+  "id": "herrliche-entschlossenheit",
+  "type": "feat",
+  "name": "Herrliche Entschlossenheit",
+  "original_name": "Lordly Resolve",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:lordly-resolve",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Level 4+, Agententalent der Lords’ Alliance)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Level 4+, Agententalent der Lords’ Alliance)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fahnenträger. Wählen Sie als Bonusaktion bis zu drei Kreaturen im Umkreis von 60 Fuß um sich aus, die Sie sehen können. Jedes Ziel kann sofort eine Reaktion ausführen, um sich wieder aufzurichten und den Liegend-Zustand zu beenden, vorausgesetzt, seine Geschwindigkeit ist nicht 0."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus stärken Sie die Entschlossenheit der Ziele, was 1 Minute lang anhält oder bis Sie den Zustand „Kampfunfähigkeit“ erreichen. Während ein Ziel verstärkt wird, kann es nicht besessen werden oder den Zustand „Verzaubert“ oder „Verängstigt“ erlangen; Wenn ein Ziel bereits besessen, bezaubert oder verängstigt ist, hat das Ziel bei jedem neuen Rettungswurf einen Vorteil gegenüber dem entsprechenden Effekt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diesen Vorteil genutzt haben, können Sie dies nicht mehr tun, bis Sie eine Lange Rast beendet haben."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Level 4+, Agententalent der Lords’ Alliance)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Charisma-Wert um 1 auf maximal 20.\n\nFahnenträger. Wählen Sie als Bonusaktion bis zu drei Kreaturen im Umkreis von 60 Fuß um sich aus, die Sie sehen können. Jedes Ziel kann sofort eine Reaktion ausführen, um sich wieder aufzurichten und den Liegend-Zustand zu beenden, vorausgesetzt, seine Geschwindigkeit ist nicht 0.\n\nDarüber hinaus stärken Sie die Entschlossenheit der Ziele, was 1 Minute lang anhält oder bis Sie den Zustand „Kampfunfähigkeit“ erreichen. Während ein Ziel verstärkt wird, kann es nicht besessen werden oder den Zustand „Verzaubert“ oder „Verängstigt“ erlangen; Wenn ein Ziel bereits besessen, bezaubert oder verängstigt ist, hat das Ziel bei jedem neuen Rettungswurf einen Vorteil gegenüber dem entsprechenden Effekt.\n\nSobald Sie diesen Vorteil genutzt haben, können Sie dies nicht mehr tun, bis Sie eine Lange Rast beendet haben.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "spielzeug-des-vampirs",
+  "type": "feat",
+  "name": "Spielzeug des Vampirs",
+  "original_name": "Vampire's Plaything",
+  "rules_version": "2024",
+  "source": "Astarion's Book of Hungers",
+  "source_url": "http://dnd2024.wikidot.com/feat:vampire-s-plaything",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Exotisch",
+  "prerequisites": [],
+  "summary": "Ursprungstalent",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Ursprungstalent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dekantieren. Wenn Sie einen Lange Rast beendet haben, können Sie einen Heiltrank oder ein Antitoxin herstellen, sofern Sie eine leere Phiole oder einen leeren Kolben haben. Diese Flüssigkeiten verdampfen, wenn Sie eine weitere Lange Rast beendet haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rechtzeitiger Rückzug. Sie können eine Bonusaktion durchführen, um die Dash-Aktion oder die Disengage-Aktion auszuführen. Sie können diesen Vorteil mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vampirische Verbindung. Der DM bestimmt das Schicksal Ihres ehemaligen Vampirmeisters. Während Sie und Ihr ehemaliger Vampirmeister sich auf derselben Existenzebene befinden, kann der Vampir telepathisch mit Ihnen kommunizieren und Sie können dem Vampir erlauben, durch Ihre Sinne wahrzunehmen."
+    }
+  ],
+  "text": "Ursprungstalent\n\nSie profitieren von folgenden Vorteilen.\n\nDekantieren. Wenn Sie einen Lange Rast beendet haben, können Sie einen Heiltrank oder ein Antitoxin herstellen, sofern Sie eine leere Phiole oder einen leeren Kolben haben. Diese Flüssigkeiten verdampfen, wenn Sie eine weitere Lange Rast beendet haben.\n\nRechtzeitiger Rückzug. Sie können eine Bonusaktion durchführen, um die Dash-Aktion oder die Disengage-Aktion auszuführen. Sie können diesen Vorteil mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden.\n\nVampirische Verbindung. Der DM bestimmt das Schicksal Ihres ehemaligen Vampirmeisters. Während Sie und Ihr ehemaliger Vampirmeister sich auf derselben Existenzebene befinden, kann der Vampir telepathisch mit Ihnen kommunizieren und Sie können dem Vampir erlauben, durch Ihre Sinne wahrzunehmen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

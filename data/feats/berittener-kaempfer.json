@@ -1,0 +1,62 @@
+{
+  "id": "berittener-kaempfer",
+  "type": "feat",
+  "name": "Berittener Kaempfer",
+  "original_name": "Mounted Combatant",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:mounted-combatant",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Stufe 4+"
+  ],
+  "summary": "Voraussetzung: Level 4+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke-, Geschicklichkeits- oder Weisheitswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Berittener Schlag. Während du beritten bist, hast du einen Vorteil bei Angriffswürfen gegen jede nicht berittene Kreatur im Umkreis von 5 Fuß um dein Reittier, die mindestens eine Größe kleiner als das Reittier ist."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zur Seite springen. Wenn Ihr Reittier einem Effekt ausgesetzt ist, der es ihm ermöglicht, einen Geschicklichkeits-Rettungswurf auszuführen, der nur halben Schaden erleidet, erleidet es stattdessen keinen Schaden, wenn ihm der Rettungswurf gelingt, und nur halben Schaden, wenn er fehlschlägt. Damit Ihr Reittier diesen Vorteil erhält, müssen Sie es reiten und keiner von Ihnen darf über die Bedingung „Kampfunfähigkeit“ verfügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Veer. Während du reitest, kannst du einen Angriff erzwingen, der dein Reittier trifft, um stattdessen dich zu treffen, wenn du nicht über die Bedingung „Kampfunfähig“ verfügst."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke-, Geschicklichkeits- oder Weisheitswert um 1 auf maximal 20.\n\nBerittener Schlag. Während du beritten bist, hast du einen Vorteil bei Angriffswürfen gegen jede nicht berittene Kreatur im Umkreis von 5 Fuß um dein Reittier, die mindestens eine Größe kleiner als das Reittier ist.\n\nZur Seite springen. Wenn Ihr Reittier einem Effekt ausgesetzt ist, der es ihm ermöglicht, einen Geschicklichkeits-Rettungswurf auszuführen, der nur halben Schaden erleidet, erleidet es stattdessen keinen Schaden, wenn ihm der Rettungswurf gelingt, und nur halben Schaden, wenn er fehlschlägt. Damit Ihr Reittier diesen Vorteil erhält, müssen Sie es reiten und keiner von Ihnen darf über die Bedingung „Kampfunfähigkeit“ verfügen.\n\nVeer. Während du reitest, kannst du einen Angriff erzwingen, der dein Reittier trifft, um stattdessen dich zu treffen, wenn du nicht über die Bedingung „Kampfunfähig“ verfügst.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

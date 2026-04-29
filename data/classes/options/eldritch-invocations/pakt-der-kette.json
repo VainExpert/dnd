@@ -1,0 +1,39 @@
+{
+  "id": "pakt-der-kette",
+  "name": "Pakt der Kette",
+  "original_name": "Pact of the Chain",
+  "kind": "eldritch_invocation",
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:eldritch-invocation",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "",
+  "cost_original": "",
+  "prerequisite": "",
+  "prerequisite_original": "",
+  "summary": "Du lernst den Zauber „Vertrauten finden“ und kannst ihn als magische Aktion wirken, ohne einen Zauberslot zu verbrauchen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "You learn the Find Familiar spell and can cast it as a Magic action without expending a spell slot.",
+      "text_de": "Du lernst den Zauber „Vertrauten finden“ und kannst ihn als magische Aktion wirken, ohne einen Zauberslot zu verbrauchen."
+    },
+    {
+      "type": "paragraph",
+      "text": "When you cast the spell, you choose one of the normal forms for your familiar or one of the following special forms: Imp, Pseudodragon, Quasit, Skeleton, Slaad Tadpole, Sphinx of Wonder, Sprite, or Venomous Snake (see appendix B for the familiar’s stat block).",
+      "text_de": "Wenn du den Zauber wirkst, wählst du eine der normalen Formen deines Vertrauten oder eine der folgenden Sonderformen: Kobold, Pseudodrache, Quasit, Skelett, Slaad-Kaulquappe, Sphinx des Wunders, Kobold oder Giftschlange (siehe Anhang B für den Statistikblock des Vertrauten)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its Reaction.",
+      "text_de": "Wenn Sie die Angriffsaktion ausführen, können Sie außerdem auf einen Ihrer eigenen Angriffe verzichten, damit Ihr Vertrauter mit seiner Reaktion einen eigenen Angriff ausführen kann."
+    }
+  ]
+}

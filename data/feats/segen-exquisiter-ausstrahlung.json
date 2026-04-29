@@ -1,0 +1,54 @@
+{
+  "id": "segen-exquisiter-ausstrahlung",
+  "type": "feat",
+  "name": "Segen exquisiter Ausstrahlung",
+  "original_name": "Boon of Exquisite Radiance",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-exquisite-radiance",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Episches Segen-Talent (Voraussetzung: Level 19+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Episches Segen-Talent (Voraussetzung: Level 19+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ewige Ruhe. Kreaturen, die du auf 0 Trefferpunkte reduzierst, können nicht zu Untoten werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kraftvolle Ausstrahlung. Wenn Sie einen Schadenswurf durchführen, der Strahlungsschaden verursacht, können Sie stattdessen für jeden Schadenswürfel die höchstmögliche Zahl verwenden. Sobald Sie diesen Vorteil genutzt haben, können Sie dies nicht mehr tun, bis Sie eine Lange Rast beendet haben."
+    }
+  ],
+  "text": "Episches Segen-Talent (Voraussetzung: Level 19+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30.\n\nEwige Ruhe. Kreaturen, die du auf 0 Trefferpunkte reduzierst, können nicht zu Untoten werden.\n\nKraftvolle Ausstrahlung. Wenn Sie einen Schadenswurf durchführen, der Strahlungsschaden verursacht, können Sie stattdessen für jeden Schadenswürfel die höchstmögliche Zahl verwenden. Sobald Sie diesen Vorteil genutzt haben, können Sie dies nicht mehr tun, bis Sie eine Lange Rast beendet haben.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

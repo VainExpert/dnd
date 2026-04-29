@@ -1,0 +1,88 @@
+{
+  "id": "soldner-der-flammenfaust",
+  "type": "background",
+  "name": "Söldner der Flammenfaust",
+  "original_name": "Flaming Fist Mercenary",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/background:flaming-fist-mercenary",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Stärke, Konstitution, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Stärke, Konstitution, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Hart"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Einschüchterung und Wahrnehmung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse: Smith’s Tools"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Streitkolben, Schmiedewerkzeuge, feine Kleidung, Handschellen, tragbarer Widder, 4 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die wichtigste Strafverfolgungsbehörde von Baldur’s Gate ist die Flaming Fist, eine bullige Söldnergilde, die vom Großherzog der Stadt angeführt wird. Du hast einst als Flaming Fist gedient und dabei gelernt, mit deinem einschüchternden Blick Ärger zu verhindern und, wenn nötig, tödliche Schläge abzuwehren. Söldner der Flaming Fist, ob aktiv oder im Ruhestand, gelten als einige der härtesten und widerstandsfähigsten Krieger an der Schwertküste, und Sie möchten diesen Ruf aufrechterhalten."
+    }
+  ],
+  "text": "Fähigkeitswerte: Stärke, Konstitution, Charisma\n\nTalent: Hart\n\nFertigkeiten: Einschüchterung und Wahrnehmung\n\nWerkzeugkenntnisse: Smith’s Tools\n\nAusrüstung: Wähle A oder B: (A) Streitkolben, Schmiedewerkzeuge, feine Kleidung, Handschellen, tragbarer Widder, 4 GP; oder (B) 50 GP\n\nDie wichtigste Strafverfolgungsbehörde von Baldur’s Gate ist die Flaming Fist, eine bullige Söldnergilde, die vom Großherzog der Stadt angeführt wird. Du hast einst als Flaming Fist gedient und dabei gelernt, mit deinem einschüchternden Blick Ärger zu verhindern und, wenn nötig, tödliche Schläge abzuwehren. Söldner der Flaming Fist, ob aktiv oder im Ruhestand, gelten als einige der härtesten und widerstandsfähigsten Krieger an der Schwertküste, und Sie möchten diesen Ruf aufrechterhalten.",
+  "tags": [],
+  "ability_scores": [
+    "str",
+    "con",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "str",
+      "con",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Einschuechterung",
+    "Wahrnehmung\n\nWerkzeugkenntnisse: Smith’s Tools"
+  ],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "hart",
+  "granted_feat_name": "Hart\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Streitkolben, Schmiedewerkzeuge, feine Kleidung, Handschellen, tragbarer Widder, 4 GP; oder (B) 50 GP\n\nDie wichtigste Strafverfolgungsbehörde von Baldur’s Gate ist die Flaming Fist, eine bullige Söldnergilde, die vom Großherzog der Stadt angeführt wird. Du hast einst als Flaming Fist gedient und dabei gelernt, mit deinem einschüchternden Blick Ärger zu verhindern und, wenn nötig, tödliche Schläge abzuwehren. Söldner der Flaming Fist, ob aktiv oder im Ruhestand, gelten als einige der härtesten und widerstandsfähigsten Krieger an der Schwertküste, und Sie möchten diesen Ruf aufrechterhalten"
+    }
+  ]
+}

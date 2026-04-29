@@ -1,0 +1,88 @@
+{
+  "id": "rashemi-wanderer",
+  "type": "background",
+  "name": "Rashemi Wanderer",
+  "original_name": "Rashemi Wanderer",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/background:rashemi-wanderer",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Stärke, Konstitution, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Stärke, Konstitution, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Hart"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Einschüchterung und Wahrnehmung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse: Werkzeuge des Kartographen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wählen Sie A oder B: (A) Kartographenwerkzeug, Rucksack, Schlafsack, Kapuzenlaterne, Öl (3 Flaschen), Seil, Zunderbüchse, Reisekleidung, Wasserschlauch, 23 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast Jahre damit verbracht, durch das Hochland von Rashemen zu wandern, eine gefährliche, windgepeitschte Heide, die mit uralten Obelisken übersät ist, die Unholde einsperren sollen und in der Drachen, Gnolle und andere tödliche Kreaturen leben. Freundschaften sind in einem so isolierten Land schwer zu finden, und Sie haben gelernt, Fremde auf Distanz zu halten."
+    }
+  ],
+  "text": "Fähigkeitswerte: Stärke, Konstitution, Charisma\n\nTalent: Hart\n\nFertigkeiten: Einschüchterung und Wahrnehmung\n\nWerkzeugkenntnisse: Werkzeuge des Kartographen\n\nAusrüstung: Wählen Sie A oder B: (A) Kartographenwerkzeug, Rucksack, Schlafsack, Kapuzenlaterne, Öl (3 Flaschen), Seil, Zunderbüchse, Reisekleidung, Wasserschlauch, 23 GP; oder (B) 50 GP\n\nDu hast Jahre damit verbracht, durch das Hochland von Rashemen zu wandern, eine gefährliche, windgepeitschte Heide, die mit uralten Obelisken übersät ist, die Unholde einsperren sollen und in der Drachen, Gnolle und andere tödliche Kreaturen leben. Freundschaften sind in einem so isolierten Land schwer zu finden, und Sie haben gelernt, Fremde auf Distanz zu halten.",
+  "tags": [],
+  "ability_scores": [
+    "str",
+    "con",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "str",
+      "con",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Einschuechterung",
+    "Wahrnehmung\n\nWerkzeugkenntnisse: Werkzeuge des Kartographen"
+  ],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "hart",
+  "granted_feat_name": "Hart\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wählen Sie A oder B: (A) Kartographenwerkzeug, Rucksack, Schlafsack, Kapuzenlaterne, Öl (3 Flaschen), Seil, Zunderbüchse, Reisekleidung, Wasserschlauch, 23 GP; oder (B) 50 GP\n\nDu hast Jahre damit verbracht, durch das Hochland von Rashemen zu wandern, eine gefährliche, windgepeitschte Heide, die mit uralten Obelisken übersät ist, die Unholde einsperren sollen und in der Drachen, Gnolle und andere tödliche Kreaturen leben. Freundschaften sind in einem so isolierten Land schwer zu finden, und Sie haben gelernt, Fremde auf Distanz zu halten"
+    }
+  ]
+}

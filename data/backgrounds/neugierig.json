@@ -1,0 +1,87 @@
+{
+  "id": "neugierig",
+  "type": "background",
+  "name": "Neugierig",
+  "original_name": "Inquisitive",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/background:inquisitive",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Konstitution, Intelligenz, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Konstitution, Intelligenz, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Aufmerksam"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kompetenzen: Einsicht und Untersuchung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkompetenz: Diebeswerkzeuge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Diebeswerkzeuge, Bullseye-Laterne, Brecheisen, Öl (10 Fläschchen), Reisekleidung, 10 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben Ihr Ermittlungs- und Schlussfolgerungstalent verfeinert – angetrieben von einer grenzenlosen Neugier –, um Geheimnisse zu erforschen, vermisste Personen zu finden, gestohlene Güter wiederzufinden, Korruption und Verschwörungen aufzudecken und Verbrechen aufzuklären. Als Wissbegieriger waren Sie möglicherweise einer freiberuflichen Tätigkeit nachgegangen, haben bei einer Agentur für Neugierige unterschrieben (vielleicht bei einer, die von einem mit Drachenzeichen versehenen Haus wie Medani oder Tharashk lizenziert wurde), haben sich für ein Flugblatt gemeldet oder für eine Polizei gearbeitet."
+    }
+  ],
+  "text": "Fähigkeitswerte: Konstitution, Intelligenz, Charisma\n\nTalent: Aufmerksam\n\nKompetenzen: Einsicht und Untersuchung\n\nWerkzeugkompetenz: Diebeswerkzeuge\n\nAusrüstung: Wähle A oder B: (A) Diebeswerkzeuge, Bullseye-Laterne, Brecheisen, Öl (10 Fläschchen), Reisekleidung, 10 GP; oder (B) 50 GP\n\nSie haben Ihr Ermittlungs- und Schlussfolgerungstalent verfeinert – angetrieben von einer grenzenlosen Neugier –, um Geheimnisse zu erforschen, vermisste Personen zu finden, gestohlene Güter wiederzufinden, Korruption und Verschwörungen aufzudecken und Verbrechen aufzuklären. Als Wissbegieriger waren Sie möglicherweise einer freiberuflichen Tätigkeit nachgegangen, haben bei einer Agentur für Neugierige unterschrieben (vielleicht bei einer, die von einem mit Drachenzeichen versehenen Haus wie Medani oder Tharashk lizenziert wurde), haben sich für ein Flugblatt gemeldet oder für eine Polizei gearbeitet.",
+  "tags": [],
+  "ability_scores": [
+    "con",
+    "int",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "con",
+      "int",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [],
+  "tool_proficiencies": [
+    "Diebeswerkzeuge\n"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "aufmerksam-kompetenzen-einsicht-und-untersuchung",
+  "granted_feat_name": "Aufmerksam\n\nKompetenzen: Einsicht und Untersuchung\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Diebeswerkzeuge, Bullseye-Laterne, Brecheisen, Öl (10 Fläschchen), Reisekleidung, 10 GP; oder (B) 50 GP\n\nSie haben Ihr Ermittlungs- und Schlussfolgerungstalent verfeinert – angetrieben von einer grenzenlosen Neugier –, um Geheimnisse zu erforschen, vermisste Personen zu finden, gestohlene Güter wiederzufinden, Korruption und Verschwörungen aufzudecken und Verbrechen aufzuklären. Als Wissbegieriger waren Sie möglicherweise einer freiberuflichen Tätigkeit nachgegangen, haben bei einer Agentur für Neugierige unterschrieben (vielleicht bei einer, die von einem mit Drachenzeichen versehenen Haus wie Medani oder Tharashk lizenziert wurde), haben sich für ein Flugblatt gemeldet oder für eine Polizei gearbeitet"
+    }
+  ]
+}

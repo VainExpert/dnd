@@ -1,0 +1,57 @@
+{
+  "id": "widerstandsfahigkeit-des-ordens",
+  "type": "feat",
+  "name": "Widerstandsfähigkeit des Ordens",
+  "original_name": "Order's Resilience",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:order-s-resilience",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Level 4+, Tyro of the Gauntlet-Talent)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Level 4+, Tyro of the Gauntlet-Talent)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe deinen Stärke-, Weisheits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wiederaufleben. Wenn Sie sich im Bauchzustand befinden, können Sie sich mit einer Bewegung von nur 1,50 m wieder aufrichten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gemeinsam stärker. Wenn Sie sich in einem Umkreis von 5 Fuß um einen Verbündeten befinden, der nicht über die Bedingung „Kampfunfähig“ verfügt, haben Sie und dieser Verbündete einen Vorteil bei Stärke-Rettungswürfen. Sie können diesen Vorteil nicht nutzen, solange Sie an der Krankheit „Kampfunfähigkeit“ leiden."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Level 4+, Tyro of the Gauntlet-Talent)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe deinen Stärke-, Weisheits- oder Charisma-Wert um 1 auf maximal 20.\n\nWiederaufleben. Wenn Sie sich im Bauchzustand befinden, können Sie sich mit einer Bewegung von nur 1,50 m wieder aufrichten.\n\nGemeinsam stärker. Wenn Sie sich in einem Umkreis von 5 Fuß um einen Verbündeten befinden, der nicht über die Bedingung „Kampfunfähig“ verfügt, haben Sie und dieser Verbündete einen Vorteil bei Stärke-Rettungswürfen. Sie können diesen Vorteil nicht nutzen, solange Sie an der Krankheit „Kampfunfähigkeit“ leiden.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

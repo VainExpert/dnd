@@ -1,0 +1,75 @@
+{
+  "id": "feen-beruehrt",
+  "type": "feat",
+  "name": "Feen-Beruehrt",
+  "original_name": "Fey Touched",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:fey-touched",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Stufe 4+"
+  ],
+  "summary": "Voraussetzung: Level 4+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihr Kontakt mit der Magie der Feywild gewährt Ihnen die folgenden Vorteile."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Feenmagie. Wählen Sie einen Zauberspruch der Stufe 1 aus der Zauberschule Wahrsagen oder Verzauberung. Sie haben diesen Zauber und den Nebelschritt-Zauber immer vorbereitet. Sie können jeden dieser Zauber wirken, ohne einen Zauberslot zu verbrauchen. Sobald Sie einen Zauberspruch auf diese Weise gewirkt haben, können Sie diesen Zauberspruch nicht erneut auf diese Weise wirken, bis Sie eine Lange Rast abgeschlossen haben. Sie können diese Zauber auch mit Zauberslots der entsprechenden Stufe wirken, die Sie haben. Die Zauberfähigkeit des Zaubers ist die Fähigkeit, die durch dieses Talent erhöht wird."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+\n\nIhr Kontakt mit der Magie der Feywild gewährt Ihnen die folgenden Vorteile.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20.\n\nFeenmagie. Wählen Sie einen Zauberspruch der Stufe 1 aus der Zauberschule Wahrsagen oder Verzauberung. Sie haben diesen Zauber und den Nebelschritt-Zauber immer vorbereitet. Sie können jeden dieser Zauber wirken, ohne einen Zauberslot zu verbrauchen. Sobald Sie einen Zauberspruch auf diese Weise gewirkt haben, können Sie diesen Zauberspruch nicht erneut auf diese Weise wirken, bis Sie eine Lange Rast abgeschlossen haben. Sie können diese Zauber auch mit Zauberslots der entsprechenden Stufe wirken, die Sie haben. Die Zauberfähigkeit des Zaubers ist die Fähigkeit, die durch dieses Talent erhöht wird.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [
+    {
+      "id": "feen-beruehrt-level-1-spell",
+      "type": "spell",
+      "choose": 1,
+      "spell_levels": [
+        1
+      ],
+      "source": "feen-beruehrt"
+    }
+  ],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [
+      {
+        "id": "feen-beruehrt-level-1-spell",
+        "type": "spell",
+        "choose": 1,
+        "spell_levels": [
+          1
+        ],
+        "source": "feen-beruehrt"
+      }
+    ],
+    "always_prepared": true
+  }
+}

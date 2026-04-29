@@ -1,0 +1,34 @@
+{
+  "id": "blick-zweier-kopfe",
+  "name": "Blick zweier Köpfe",
+  "original_name": "Gaze of Two Minds",
+  "kind": "eldritch_invocation",
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:eldritch-invocation",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "",
+  "cost_original": "",
+  "prerequisite": "Hexenmeister der Stufe 5+",
+  "prerequisite_original": "Level 5+ Warlock",
+  "summary": "Mit einer Bonusaktion kannst du bis zum Ende deines nächsten Zuges eine willige Kreatur berühren und mit ihren Sinnen wahrnehmen. Solange sich die Kreatur auf derselben Existenzebene wie du befindet, kannst du in den folgenden Zügen eine Bonusaktion ausführen, um diese Verbindung aufrechtzuerhalten, wodurch die Dauer bis zum Ende deines nächsten Zuges verlängert wird. Die Verbindung endet, wenn Sie sie nicht auf diese Weise aufrechterhalten.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "You can use a Bonus Action to touch a willing creature and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can take a Bonus Action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. The connection ends if you don’t maintain it in this way.",
+      "text_de": "Mit einer Bonusaktion kannst du bis zum Ende deines nächsten Zuges eine willige Kreatur berühren und mit ihren Sinnen wahrnehmen. Solange sich die Kreatur auf derselben Existenzebene wie du befindet, kannst du in den folgenden Zügen eine Bonusaktion ausführen, um diese Verbindung aufrechtzuerhalten, wodurch die Dauer bis zum Ende deines nächsten Zuges verlängert wird. Die Verbindung endet, wenn Sie sie nicht auf diese Weise aufrechterhalten."
+    },
+    {
+      "type": "paragraph",
+      "text": "While perceiving through the other creature’s senses, you benefit from any special senses possessed by that creature, and you can cast spells as if you were in your space or the other creature’s space if the two of you are within 60 feet of each other.",
+      "text_de": "Während du mit den Sinnen der anderen Kreatur wahrnimmst, profitierst du von allen besonderen Sinnen, die diese Kreatur besitzt, und du kannst Zauber wirken, als ob du in deinem Raum oder im Raum der anderen Kreatur wärst, wenn ihr beide weniger als 60 Fuß voneinander entfernt seid."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "erbe-des-hauses-kundarak",
+  "type": "background",
+  "name": "Erbe des Hauses Kundarak",
+  "original_name": "House Kundarak Heir",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/background:house-kundarak-heir",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Stärke, Konstitution, Intelligenz",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Stärke, Konstitution, Intelligenz"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Zeichen der Abwehr"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Arcana und Untersuchung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkompetenz: Diebeswerkzeuge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Diebeswerkzeuge, Feine Kleidung, 10 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Erbe des Hauses Kundarak sind Sie sehr stolz auf Ihre Familie und ihre Arbeit, die Wertsachen von Khorvaire zu schützen. Ihr Haus war schon immer ein Anführer unter den Clans der Mror Holds. Obwohl es nie die Krone innehatte, genießt es einen Ruf für Professionalität, Ehre und Ordnung. Sie könnten danach streben, diesen Ruf aufrechtzuerhalten, Sie könnten Ihr eigenes Ehrgefühl über das Ihrer Familie stellen, oder Sie könnten gegen die Erwartungen des Hauses rebellieren und sich über die Anforderungen der Ehre hinwegsetzen."
+    }
+  ],
+  "text": "Fähigkeitswerte: Stärke, Konstitution, Intelligenz\n\nTalent: Zeichen der Abwehr\n\nFertigkeiten: Arcana und Untersuchung\n\nWerkzeugkompetenz: Diebeswerkzeuge\n\nAusrüstung: Wähle A oder B: (A) Diebeswerkzeuge, Feine Kleidung, 10 GP; oder (B) 50 GP\n\nAls Erbe des Hauses Kundarak sind Sie sehr stolz auf Ihre Familie und ihre Arbeit, die Wertsachen von Khorvaire zu schützen. Ihr Haus war schon immer ein Anführer unter den Clans der Mror Holds. Obwohl es nie die Krone innehatte, genießt es einen Ruf für Professionalität, Ehre und Ordnung. Sie könnten danach streben, diesen Ruf aufrechtzuerhalten, Sie könnten Ihr eigenes Ehrgefühl über das Ihrer Familie stellen, oder Sie könnten gegen die Erwartungen des Hauses rebellieren und sich über die Anforderungen der Ehre hinwegsetzen.",
+  "tags": [],
+  "ability_scores": [
+    "str",
+    "con",
+    "int"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "str",
+      "con",
+      "int"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Arkana",
+    "Untersuchung"
+  ],
+  "tool_proficiencies": [
+    "Diebeswerkzeuge\n"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "zeichen-der-abwehr",
+  "granted_feat_name": "Zeichen der Abwehr\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Diebeswerkzeuge, Feine Kleidung, 10 GP; oder (B) 50 GP\n\nAls Erbe des Hauses Kundarak sind Sie sehr stolz auf Ihre Familie und ihre Arbeit, die Wertsachen von Khorvaire zu schützen. Ihr Haus war schon immer ein Anführer unter den Clans der Mror Holds. Obwohl es nie die Krone innehatte, genießt es einen Ruf für Professionalität, Ehre und Ordnung. Sie könnten danach streben, diesen Ruf aufrechtzuerhalten, Sie könnten Ihr eigenes Ehrgefühl über das Ihrer Familie stellen, oder Sie könnten gegen die Erwartungen des Hauses rebellieren und sich über die Anforderungen der Ehre hinwegsetzen"
+    }
+  ]
+}

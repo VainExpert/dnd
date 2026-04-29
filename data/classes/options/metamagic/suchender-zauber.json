@@ -1,0 +1,34 @@
+{
+  "id": "suchender-zauber",
+  "name": "Suchender Zauber",
+  "original_name": "Seeking Spell",
+  "kind": "metamagic_option",
+  "class": "Zauberer",
+  "class_id": "zauberer",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/sorcerer:metamagic",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "1 Zauberpunkt",
+  "cost_original": "1 Sorcery Point",
+  "prerequisite": "",
+  "prerequisite_original": "",
+  "summary": "Wenn Sie einen Angriffswurf für einen Zauber durchführen und ihn verfehlen, können Sie 1 Zauberpunkt ausgeben, um den W20 erneut zu würfeln, und Sie müssen den neuen Wurf verwenden.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "If you make an attack roll for a spell and miss, you can spend 1 Sorcery Point to reroll the d20, and you must use the new roll.",
+      "text_de": "Wenn Sie einen Angriffswurf für einen Zauber durchführen und ihn verfehlen, können Sie 1 Zauberpunkt ausgeben, um den W20 erneut zu würfeln, und Sie müssen den neuen Wurf verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use Seeking Spell even if you’ve already used a different Metamagic option during the casting of the spell.",
+      "text_de": "Sie können den Suchzauber auch dann verwenden, wenn Sie beim Wirken des Zaubers bereits eine andere metamagische Option verwendet haben."
+    }
+  ]
+}

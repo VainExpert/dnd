@@ -1,0 +1,58 @@
+{
+  "id": "grossere-abweichende-marke",
+  "type": "feat",
+  "name": "Größere abweichende Marke",
+  "original_name": "Greater Aberrant Mark",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:greater-aberrant-mark",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Groessere Drachenmale",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Level 4+, Talent „Abnormes Drachenzeichen“)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Level 4+, Talent „Abnormes Drachenzeichen“)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe deinen Konstitutionswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserte Standhaftigkeit. Wenn Sie den Vorteil „Abnorme Seelenstärke“ Ihres Talents „Abnormes Drachenzeichen“ nutzen, können Sie 1W6 statt 1W4 würfeln. Sie können jetzt auch „Abweichende Zähigkeit“ wieder nutzen, wenn Sie eine kurze oder lange Rast beenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zeichen der Inspiration. Wenn Sie einen Cantrip wirken, können Sie einen oder zwei Ihrer nicht verbrauchten Trefferpunktwürfel werfen. Du erhältst eine Anzahl an temporären Trefferpunkten, die der gewürfelten Zahl plus deinem Konstitutionsmodifikator entspricht, und eine Kreatur deiner Wahl im Umkreis von 30 Fuß um dich (ohne dich selbst) erleidet Machtschaden in Höhe der gewürfelten Zahl. Diese Würfel werden dann ausgegeben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diesen Vorteil mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Level 4+, Talent „Abnormes Drachenzeichen“)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe deinen Konstitutionswert um 1 auf maximal 20.\n\nVerbesserte Standhaftigkeit. Wenn Sie den Vorteil „Abnorme Seelenstärke“ Ihres Talents „Abnormes Drachenzeichen“ nutzen, können Sie 1W6 statt 1W4 würfeln. Sie können jetzt auch „Abweichende Zähigkeit“ wieder nutzen, wenn Sie eine kurze oder lange Rast beenden.\n\nZeichen der Inspiration. Wenn Sie einen Cantrip wirken, können Sie einen oder zwei Ihrer nicht verbrauchten Trefferpunktwürfel werfen. Du erhältst eine Anzahl an temporären Trefferpunkten, die der gewürfelten Zahl plus deinem Konstitutionsmodifikator entspricht, und eine Kreatur deiner Wahl im Umkreis von 30 Fuß um dich (ohne dich selbst) erleidet Machtschaden in Höhe der gewürfelten Zahl. Diese Würfel werden dann ausgegeben.\n\nSie können diesen Vorteil mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

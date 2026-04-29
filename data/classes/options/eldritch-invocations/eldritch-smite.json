@@ -1,0 +1,29 @@
+{
+  "id": "eldritch-smite",
+  "name": "Eldritch Smite",
+  "original_name": "Eldritch Smite",
+  "kind": "eldritch_invocation",
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:eldritch-invocation",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "",
+  "cost_original": "",
+  "prerequisite": "Hexenmeister der Stufe 5+, Anrufung des Pakts der Klinge",
+  "prerequisite_original": "Level 5+ Warlock, Pact of the Blade Invocation",
+  "summary": "Einmal pro Spielzug, wenn du eine Kreatur mit deiner Paktwaffe triffst, kannst du einen Paktmagie-Zauberplatz nutzen, um dem Ziel zusätzlich 1W8 Machtschaden zuzufügen, plus weitere 1W8 pro Stufe des Zauberplatzes, und du kannst dem Ziel den Zustand „Anfällig“ geben, wenn es riesig oder kleiner ist.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Once per turn when you hit a creature with your pact weapon, you can expend a Pact Magic spell slot to deal an extra 1d8 Force damage to the target, plus another 1d8 per level of the spell slot, and you can give the target the Prone condition if it is Huge or smaller.",
+      "text_de": "Einmal pro Spielzug, wenn du eine Kreatur mit deiner Paktwaffe triffst, kannst du einen Paktmagie-Zauberplatz nutzen, um dem Ziel zusätzlich 1W8 Machtschaden zuzufügen, plus weitere 1W8 pro Stufe des Zauberplatzes, und du kannst dem Ziel den Zustand „Anfällig“ geben, wenn es riesig oder kleiner ist."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "ork",
+  "type": "race",
+  "name": "Ork",
+  "original_name": "Orc",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/species:orc",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Orks führen ihre Schöpfung auf Gruumsh zurück, einen mächtigen Gott, der die weiten Weiten der Materiellen Ebene durchstreifte. Gruumsh stattete seine Kinder mit Gaben aus, um ihnen zu helfen, durch weite Ebenen, riesige Höhlen und aufgewühlte Meere zu wandern und sich den dort lauernden Monstern zu stellen. Selbst wenn sie ihre Hingabe an andere Götter richten, behalten Orks Gruumshs Gaben: Ausdauer, Entschlossenheit und die Fähigkeit, in der Dunkelheit zu sehen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Orks führen ihre Schöpfung auf Gruumsh zurück, einen mächtigen Gott, der die weiten Weiten der Materiellen Ebene durchstreifte. Gruumsh stattete seine Kinder mit Gaben aus, um ihnen zu helfen, durch weite Ebenen, riesige Höhlen und aufgewühlte Meere zu wandern und sich den dort lauernden Monstern zu stellen. Selbst wenn sie ihre Hingabe an andere Götter richten, behalten Orks Gruumshs Gaben: Ausdauer, Entschlossenheit und die Fähigkeit, in der Dunkelheit zu sehen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Orks sind im Durchschnitt groß und breit. Sie haben graue Haut, spitze Ohren und hervorstehende untere Eckzähne, die kleinen Stoßzähnen ähneln. Auf manchen Welten wird den Ork-Jugendlichen von den großen Reisen und Mühen ihrer Vorfahren erzählt. Inspiriert von diesen Geschichten fragen sich viele dieser Orks, wann Gruumsh sie auffordern wird, die Heldentaten der Vergangenheit zu wiederholen, und ob sie sich seiner Gunst als würdig erweisen werden. Andere Orks lassen gerne alte Geschichten hinter sich und finden ihren eigenen Weg."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Ork-Eigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Humanoid. Größe: Mittelgroß (ca. 1,8–2,1 m groß). Geschwindigkeit: 9,1 m"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Ork hast du diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Adrenalinkick. Sie können die Dash-Aktion als Bonusaktion nutzen. Wenn Sie dies tun, erhalten Sie eine Anzahl temporärer Trefferpunkte in Höhe Ihres Uebungsbonus."
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst diese Eigenschaft so oft nutzen, wie es deinem Uebungsbonus entspricht, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Kurze oder Lange Rast beendest."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 120 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Unerbittliche Ausdauer. Wenn Ihre Trefferpunkte auf 0 reduziert, aber nicht vollständig getötet werden, können Sie stattdessen auf 1 Trefferpunkt sinken. Sobald Sie diese Eigenschaft verwenden, können Sie dies nicht erneut tun, bis Sie eine Lange Rast abgeschlossen haben."
+    }
+  ],
+  "text": "Orks führen ihre Schöpfung auf Gruumsh zurück, einen mächtigen Gott, der die weiten Weiten der Materiellen Ebene durchstreifte. Gruumsh stattete seine Kinder mit Gaben aus, um ihnen zu helfen, durch weite Ebenen, riesige Höhlen und aufgewühlte Meere zu wandern und sich den dort lauernden Monstern zu stellen. Selbst wenn sie ihre Hingabe an andere Götter richten, behalten Orks Gruumshs Gaben: Ausdauer, Entschlossenheit und die Fähigkeit, in der Dunkelheit zu sehen.\n\nOrks sind im Durchschnitt groß und breit. Sie haben graue Haut, spitze Ohren und hervorstehende untere Eckzähne, die kleinen Stoßzähnen ähneln. Auf manchen Welten wird den Ork-Jugendlichen von den großen Reisen und Mühen ihrer Vorfahren erzählt. Inspiriert von diesen Geschichten fragen sich viele dieser Orks, wann Gruumsh sie auffordern wird, die Heldentaten der Vergangenheit zu wiederholen, und ob sie sich seiner Gunst als würdig erweisen werden. Andere Orks lassen gerne alte Geschichten hinter sich und finden ihren eigenen Weg.\n\nOrk-Eigenschaften\n\nKreaturentyp: Humanoid. Größe: Mittelgroß (ca. 1,8–2,1 m groß). Geschwindigkeit: 9,1 m\n\nAls Ork hast du diese besonderen Eigenschaften.\n\nAdrenalinkick. Sie können die Dash-Aktion als Bonusaktion nutzen. Wenn Sie dies tun, erhalten Sie eine Anzahl temporärer Trefferpunkte in Höhe Ihres Uebungsbonus.\n\nDu kannst diese Eigenschaft so oft nutzen, wie es deinem Uebungsbonus entspricht, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Kurze oder Lange Rast beendest.\n\nDunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 120 Fuß.\n\nUnerbittliche Ausdauer. Wenn Ihre Trefferpunkte auf 0 reduziert, aber nicht vollständig getötet werden, können Sie stattdessen auf 1 Trefferpunkt sinken. Sobald Sie diese Eigenschaft verwenden, können Sie dies nicht erneut tun, bis Sie eine Lange Rast abgeschlossen haben.",
+  "tags": [],
+  "size": [],
+  "creature_type": "Humanoid",
+  "speed": {
+    "walk": 3,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Orks sind im Durchschnitt groß und breit",
+      "text": "Sie haben graue Haut, spitze Ohren und hervorstehende untere Eckzähne, die kleinen Stoßzähnen ähneln. Auf manchen Welten wird den Ork-Jugendlichen von den großen Reisen und Mühen ihrer Vorfahren erzählt. Inspiriert von diesen Geschichten fragen sich viele dieser Orks, wann Gruumsh sie auffordern wird, die Heldentaten der Vergangenheit zu wiederholen, und ob sie sich seiner Gunst als würdig erweisen werden. Andere Orks lassen gerne alte Geschichten hinter sich und finden ihren eigenen Weg."
+    },
+    {
+      "name": "Adrenalinkick",
+      "text": "Sie können die Dash-Aktion als Bonusaktion nutzen. Wenn Sie dies tun, erhalten Sie eine Anzahl temporärer Trefferpunkte in Höhe Ihres Uebungsbonus."
+    },
+    {
+      "name": "Dunkelsicht",
+      "text": "Sie haben Dunkelsicht mit einer Reichweite von 120 Fuß."
+    },
+    {
+      "name": "Unerbittliche Ausdauer",
+      "text": "Wenn Ihre Trefferpunkte auf 0 reduziert, aber nicht vollständig getötet werden, können Sie stattdessen auf 1 Trefferpunkt sinken. Sobald Sie diese Eigenschaft verwenden, können Sie dies nicht erneut tun, bis Sie eine Lange Rast abgeschlossen haben."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

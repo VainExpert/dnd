@@ -1,0 +1,54 @@
+{
+  "id": "segen-des-seelentrinkers",
+  "type": "feat",
+  "name": "Segen des Seelentrinkers",
+  "original_name": "Boon of the Soul Drinker",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-the-soul-drinker",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Episches Segen-Talent (Voraussetzung: Level 19+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Episches Segen-Talent (Voraussetzung: Level 19+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Grave Resistenz. Du hast Resistenz gegen Kälteschaden und nekrotischen Schaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Siphon-Leben. Wenn ein Feind in einem Umkreis von 120 Fuß um Sie auf 0 Trefferpunkte reduziert wird, können Sie eine Reaktion durchführen, um 50 Trefferpunkte zurückzugewinnen. Sobald Sie diesen Vorteil genutzt haben, können Sie ihn erst wieder nutzen, wenn Sie eine Kurze oder Lange Rast beendet haben."
+    }
+  ],
+  "text": "Episches Segen-Talent (Voraussetzung: Level 19+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30.\n\nGrave Resistenz. Du hast Resistenz gegen Kälteschaden und nekrotischen Schaden.\n\nSiphon-Leben. Wenn ein Feind in einem Umkreis von 120 Fuß um Sie auf 0 Trefferpunkte reduziert wird, können Sie eine Reaktion durchführen, um 50 Trefferpunkte zurückzugewinnen. Sobald Sie diesen Vorteil genutzt haben, können Sie ihn erst wieder nutzen, wenn Sie eine Kurze oder Lange Rast beendet haben.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

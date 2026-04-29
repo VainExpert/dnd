@@ -1,0 +1,50 @@
+{
+  "id": "agent-der-lords-alliance",
+  "type": "feat",
+  "name": "Agent der Lords' Alliance",
+  "original_name": "Lords' Alliance Agent",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:lords-alliance-agent",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Ursprungstalent",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Ursprungstalent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Inspirierender Schlag. Einmal pro Spielzug, wenn Sie einen kritischen Treffer gegen eine Kreatur erzielen, können Sie einen Verbündeten im Umkreis von 30 Fuß um sich selbst auswählen, der Sie sehen oder hören kann und dem es an heroischer Inspiration mangelt. Dieser Verbündete erhält heroische Inspiration."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erneuern Sie die Ehre. Wenn ein Feind, den Sie sehen können, einem Verbündeten Schaden zufügt, der sich in einem Umkreis von 5 Fuß um Sie befindet, haben Sie vor dem Ende Ihres nächsten Zuges einen Vorteil bei Ihrem nächsten Angriffswurf gegen diesen Feind."
+    }
+  ],
+  "text": "Ursprungstalent\n\nSie profitieren von folgenden Vorteilen.\n\nInspirierender Schlag. Einmal pro Spielzug, wenn Sie einen kritischen Treffer gegen eine Kreatur erzielen, können Sie einen Verbündeten im Umkreis von 30 Fuß um sich selbst auswählen, der Sie sehen oder hören kann und dem es an heroischer Inspiration mangelt. Dieser Verbündete erhält heroische Inspiration.\n\nErneuern Sie die Ehre. Wenn ein Feind, den Sie sehen können, einem Verbündeten Schaden zufügt, der sich in einem Umkreis von 5 Fuß um Sie befindet, haben Sie vor dem Ende Ihres nächsten Zuges einen Vorteil bei Ihrem nächsten Angriffswurf gegen diesen Feind.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "meister-mittlerer-ruestungen",
+  "type": "feat",
+  "name": "Meister mittlerer Ruestungen",
+  "original_name": "Medium Armor Master",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:medium-armor-master",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, mittlere Rüstungsausbildung"
+  ],
+  "summary": "Voraussetzung: Level 4+, mittlere Rüstungsausbildung",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, mittlere Rüstungsausbildung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Geschicklichkeitswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschickter Träger. Während du eine mittlere Rüstung trägst, kannst du 3 statt 2 zu deiner AC hinzufügen, wenn du einen Geschicklichkeitswert von 16 oder höher hast."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, mittlere Rüstungsausbildung\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Geschicklichkeitswert um 1 auf maximal 20.\n\nGeschickter Träger. Während du eine mittlere Rüstung trägst, kannst du 3 statt 2 zu deiner AC hinzufügen, wenn du einen Geschicklichkeitswert von 16 oder höher hast.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

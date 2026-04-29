@@ -1,0 +1,79 @@
+{
+  "id": "pfad-des-weltenbaums",
+  "type": "subclass",
+  "name": "Pfad des Weltenbaums",
+  "original_name": "Path of the World Tree",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/barbarian:path-of-the-world-tree",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Verfolgen Sie die Wurzeln und Zweige der Multiversum-Barbaren, die dem Pfad des Weltenbaums folgen und sich durch ihre Wut mit dem kosmischen Baum Yggdrasil verbinden. Dieser Baum wächst zwischen den Äußeren Ebenen und verbindet sie untereinander und mit der Materiellen Ebene. Diese Barbaren nutzen die Magie des Baumes für ihre Vitalität und als Mittel zur dimensionalen Reise.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Verfolgen Sie die Wurzeln und Zweige der Multiversum-Barbaren, die dem Pfad des Weltenbaums folgen und sich durch ihre Wut mit dem kosmischen Baum Yggdrasil verbinden. Dieser Baum wächst zwischen den Äußeren Ebenen und verbindet sie untereinander und mit der Materiellen Ebene. Diese Barbaren nutzen die Magie des Baumes für ihre Vitalität und als Mittel zur dimensionalen Reise."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Vitalität des Baumes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Deine Wut nutzt die Lebenskraft des Weltenbaums. Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vitalitätsschub. Wenn du deine Wut aktivierst, erhältst du eine Anzahl temporärer Trefferpunkte in Höhe deiner Barbarenstufe."
+    },
+    {
+      "type": "paragraph",
+      "text": "Lebensgebende Kraft. Zu Beginn jedes deiner Züge, während deine Wut aktiv ist, kannst du eine andere Kreatur in einem Umkreis von 10 Fuß um dich selbst auswählen, um temporäre Trefferpunkte zu erhalten. Um die Anzahl der temporären Trefferpunkte zu bestimmen, würfeln Sie eine Anzahl von W6, die Ihrem Wutschadensbonus entspricht, und addieren Sie sie. Wenn einer dieser temporären Trefferpunkte übrig bleibt, wenn Ihre Wut endet, verschwinden sie."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Zweige des Baumes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn eine Kreatur, die Sie sehen können, innerhalb von 30 Fuß um Sie herum ihren Zug beginnt, während Ihre Wut aktiv ist, können Sie eine Reaktion ausführen, um Spektralzweige des Weltenbaums um sie herum zu beschwören. Dem Ziel muss ein Stärke-Rettungswurf (SG 8 plus Ihr Stärke-Modifikator und Uebungsbonus) gelingen oder es wird zu einem unbesetzten Feld teleportiert, das Sie in einem Umkreis von 5 Fuß um sich selbst sehen können, oder in das nächstgelegene unbesetzte Feld, das Sie sehen können. Nachdem sich das Ziel teleportiert hat, können Sie seine Geschwindigkeit bis zum Ende der aktuellen Runde auf 0 reduzieren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Wurzeln schlagen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Während Ihres Zuges ist Ihre Reichweite mit jeder Nahkampfwaffe, die über die Eigenschaft „Schwer“ oder „Vielseitig“ verfügt, um 10 Fuß größer, da sich die Ranken des Weltenbaums von Ihnen aus erstrecken. Wenn Sie in Ihrem Zug mit einer solchen Waffe zuschlagen, können Sie zusätzlich zu einer anderen Meisterschaftseigenschaft, die Sie mit dieser Waffe verwenden, die Meisterschaftseigenschaft Stoßen oder Umstürzen aktivieren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Reise entlang des Baumes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du deine Wut aktivierst und als Bonusaktion, während deine Wut aktiv ist, kannst du dich bis zu 60 Fuß weit zu einem freien, sichtbaren Raum teleportieren. Darüber hinaus können Sie einmal pro Wut die Reichweite dieses Teleports auf 150 Fuß erhöhen. Wenn Sie dies tun, können Sie auch bis zu sechs willige Kreaturen mitbringen, die sich in einem Umkreis von 10 Fuß um Sie befinden. Jede Kreatur teleportiert sich zu einem unbesetzten Feld Ihrer Wahl im Umkreis von 10 Fuß um Ihr Zielfeld."
+    }
+  ],
+  "text": "Verfolgen Sie die Wurzeln und Zweige der Multiversum-Barbaren, die dem Pfad des Weltenbaums folgen und sich durch ihre Wut mit dem kosmischen Baum Yggdrasil verbinden. Dieser Baum wächst zwischen den Äußeren Ebenen und verbindet sie untereinander und mit der Materiellen Ebene. Diese Barbaren nutzen die Magie des Baumes für ihre Vitalität und als Mittel zur dimensionalen Reise.\n\nStufe 3: Vitalität des Baumes\n\nDeine Wut nutzt die Lebenskraft des Weltenbaums. Sie profitieren von folgenden Vorteilen.\n\nVitalitätsschub. Wenn du deine Wut aktivierst, erhältst du eine Anzahl temporärer Trefferpunkte in Höhe deiner Barbarenstufe.\n\nLebensgebende Kraft. Zu Beginn jedes deiner Züge, während deine Wut aktiv ist, kannst du eine andere Kreatur in einem Umkreis von 10 Fuß um dich selbst auswählen, um temporäre Trefferpunkte zu erhalten. Um die Anzahl der temporären Trefferpunkte zu bestimmen, würfeln Sie eine Anzahl von W6, die Ihrem Wutschadensbonus entspricht, und addieren Sie sie. Wenn einer dieser temporären Trefferpunkte übrig bleibt, wenn Ihre Wut endet, verschwinden sie.\n\nLevel 6: Zweige des Baumes\n\nImmer wenn eine Kreatur, die Sie sehen können, innerhalb von 30 Fuß um Sie herum ihren Zug beginnt, während Ihre Wut aktiv ist, können Sie eine Reaktion ausführen, um Spektralzweige des Weltenbaums um sie herum zu beschwören. Dem Ziel muss ein Stärke-Rettungswurf (SG 8 plus Ihr Stärke-Modifikator und Uebungsbonus) gelingen oder es wird zu einem unbesetzten Feld teleportiert, das Sie in einem Umkreis von 5 Fuß um sich selbst sehen können, oder in das nächstgelegene unbesetzte Feld, das Sie sehen können. Nachdem sich das Ziel teleportiert hat, können Sie seine Geschwindigkeit bis zum Ende der aktuellen Runde auf 0 reduzieren.\n\nLevel 10: Wurzeln schlagen\n\nWährend Ihres Zuges ist Ihre Reichweite mit jeder Nahkampfwaffe, die über die Eigenschaft „Schwer“ oder „Vielseitig“ verfügt, um 10 Fuß größer, da sich die Ranken des Weltenbaums von Ihnen aus erstrecken. Wenn Sie in Ihrem Zug mit einer solchen Waffe zuschlagen, können Sie zusätzlich zu einer anderen Meisterschaftseigenschaft, die Sie mit dieser Waffe verwenden, die Meisterschaftseigenschaft Stoßen oder Umstürzen aktivieren.\n\nLevel 14: Reise entlang des Baumes\n\nWenn du deine Wut aktivierst und als Bonusaktion, während deine Wut aktiv ist, kannst du dich bis zu 60 Fuß weit zu einem freien, sichtbaren Raum teleportieren. Darüber hinaus können Sie einmal pro Wut die Reichweite dieses Teleports auf 150 Fuß erhöhen. Wenn Sie dies tun, können Sie auch bis zu sechs willige Kreaturen mitbringen, die sich in einem Umkreis von 10 Fuß um Sie befinden. Jede Kreatur teleportiert sich zu einem unbesetzten Feld Ihrer Wahl im Umkreis von 10 Fuß um Ihr Zielfeld.",
+  "tags": [],
+  "class": "Barbar",
+  "class_id": "barbar",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

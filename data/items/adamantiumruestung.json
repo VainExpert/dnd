@@ -3,7 +3,6 @@
   "type": "Rüstung",
   "name": "Adamantiumrüstung",
   "vendors": [
-    "Beute",
     "Zwergenschmied"
   ],
   "rules_version": "2024",
@@ -34,7 +33,9 @@
     "max": null,
     "recharge": ""
   },
-  "modifiers": ["keine kritischen Treffer gegen dich"],
+  "modifiers": [
+    "keine kritischen Treffer gegen dich"
+  ],
   "granted_action_ids": [],
   "granted_spell_ids": [],
   "contained_item_ids": [],

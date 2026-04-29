@@ -1,0 +1,255 @@
+{
+  "id": "schlacht-smith",
+  "type": "subclass",
+  "name": "Schlacht Smith",
+  "original_name": "Battle Smith",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/artificer:battle-smith",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Kommandiere einen Konstruktwächter. Ein Kampfschmied ist eine Kombination aus Beschützer und Sanitäter, ein Experte darin, andere zu verteidigen und sowohl Material als auch Personal zu reparieren. Um sie bei ihrer Arbeit zu unterstützen, werden Battle Smiths von einem Steel Defender begleitet, einem schützenden Begleiter, den sie selbst geschaffen haben.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Kommandiere einen Konstruktwächter. Ein Kampfschmied ist eine Kombination aus Beschützer und Sanitäter, ein Experte darin, andere zu verteidigen und sowohl Material als auch Personal zu reparieren. Um sie bei ihrer Arbeit zu unterstützen, werden Battle Smiths von einem Steel Defender begleitet, einem schützenden Begleiter, den sie selbst geschaffen haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Handwerkszeug"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse. Sie erwerben Kenntnisse im Umgang mit Smith’s Tools. Wenn Sie bereits über diese Fertigkeit verfügen, erwerben Sie Kenntnisse im Umgang mit einer anderen Art von Handwerkswerkzeugen Ihrer Wahl."
+    },
+    {
+      "type": "paragraph",
+      "text": "Waffenherstellung. Wenn Sie eine nichtmagische oder magische Waffe herstellen, halbiert sich die für die Herstellung erforderliche Zeit."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Battle Smith-Zauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine in der Battle Smith-Zaubertabelle angegebene Artificer-Stufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kampfschmied-Zauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Artificer-Stufe",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Heldentum, Schild"
+        ],
+        [
+          "5",
+          "Shining Smite, Warding Bond"
+        ],
+        [
+          "9",
+          "Aura der Vitalität, Sperrfeuer beschwören"
+        ],
+        [
+          "13",
+          "Aura der Reinheit, Feuerschild"
+        ],
+        [
+          "17",
+          "Verbannung von Smite, Massenheilung von Wunden"
+        ]
+      ],
+      "text": "Magier der Stufe „Artificer“ 3 Heldentum, Schild 5 Leuchtendes Zerschmettern, Abwehrband 9 Aura der Vitalität, Beschwörungssperrfeuer 13 Aura der Reinheit, Feuerschild 17 Bannendes Zerschmettern, Massenheilung von Wunden"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Kampfbereit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihr Kampftraining und Ihre Experimente mit Magie haben sich in zweierlei Hinsicht ausgezahlt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Arkane Ermächtigung. Wenn Sie mit einer magischen Waffe angreifen, können Sie für die Angriffs- und Schadenswürfe Ihren Intelligenzmodifikator anstelle Ihres Stärke- oder Geschicklichkeitsmodifikators verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Waffenwissen. Sie erlangen Kenntnisse im Umgang mit Kampfwaffen. Sie können eine Waffe, mit der Sie vertraut sind, als Zauberfokus für Ihre Artificer-Zauber verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Stahlverteidiger"
+    },
+    {
+      "type": "paragraph",
+      "text": "Durch Ihr Basteln ist Ihnen ein Begleiter entstanden, ein Stahlverteidiger (siehe Statistikblock). Sie bestimmen das Aussehen des Verteidigers und ob er zwei oder vier Beine hat; Ihre Entscheidungen haben keinen Einfluss auf die Spielstatistik des Verteidigers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Verteidiger ist freundlich zu Ihnen und Ihren Verbündeten und gehorcht Ihnen. Es verschwindet, wenn du stirbst."
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Verteidiger im Kampf. Im Kampf agiert der Verteidiger während Ihres Zuges. Es kann sich selbstständig bewegen und seine Reaktion ausführen, aber die einzige Aktion, die es ausführt, ist die Ausweichen-Aktion, es sei denn, Sie führen eine Bonusaktion aus, um ihm zu befehlen, eine Aktion auszuführen. Wenn Sie über die Bedingung „Kampfunfähig“ verfügen, handelt der Verteidiger selbstständig und ist nicht auf die Ausweichaktion beschränkt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Den Defender wiederherstellen oder ersetzen. Wenn der Verteidiger innerhalb der letzten Stunde gestorben ist, können Sie eine magische Aktion ausführen, um ihn zu berühren und einen Zauberslot zu verbrauchen. Der Verteidiger erwacht nach 1 Minute wieder zum Leben, wobei alle seine Trefferpunkte wiederhergestellt sind."
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie Lange Rast abgeschlossen haben, können Sie einen neuen Verteidiger erstellen, wenn Sie Smith’s Tools in der Hand haben. Wenn Sie bereits einen Verteidiger aus dieser Funktion haben, verschwindet der erste."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Stahlverteidiger"
+        ],
+        [
+          "Mittleres Konstrukt"
+        ],
+        [
+          "Rüstungsklasse: 12 + Ihr Intelligenzmodifikator"
+        ],
+        [
+          "Trefferpunkte: HP 5 + das Fünffache deiner Artificer-Stufe (der Verteidiger hat eine Anzahl an Trefferwürfeln [W8], die deiner Artificer-Stufe entspricht)"
+        ],
+        [
+          "Geschwindigkeit: Geschwindigkeit 40 Fuß."
+        ],
+        [
+          "STR (Modifizieren/Speichern)",
+          "DEX (Modifizieren/Speichern)",
+          "CON (Modieren/Speichern)",
+          "INT (Modifizieren/Speichern)",
+          "WIS (Modieren/Speichern)",
+          "CHA (Modifizieren/Speichern)"
+        ],
+        [
+          "14 (+2/+2)",
+          "12 (+1/+1)",
+          "14 (+2/+2)",
+          "4 (−3/-3)",
+          "10 (+0/+0)",
+          "6 (-2/-2)"
+        ],
+        [
+          "Immunitäten: Gift; Bezaubert, Erschöpfung, Vergiftet"
+        ],
+        [
+          "Sinne: Dunkelsicht 60 Fuß, Passive Wahrnehmung 10"
+        ],
+        [
+          "Sprachen: Versteht die Sprachen, die Sie kennen"
+        ],
+        [
+          "Herausforderungsbewertung: Keine (XP 0; PB entspricht deinem Uebungsbonus)"
+        ],
+        [
+          "Eigenschaften"
+        ],
+        [
+          "Stahlbindung. Fügen Sie Ihren Uebungsbonus zu jeder Fähigkeitsüberprüfung oder jedem Rettungswurf hinzu, den der Steel Defender durchführt."
+        ],
+        [
+          "Aktionen"
+        ],
+        [
+          "Machtverstärkter Rend. Nahkampfangriffswurf: Bonus entspricht Ihrem Zauberangriffsmodifikator, Reichweite 5 Fuß. Treffer: 1W8 + 2 plus Ihrem Intelligenzmodifikator Kraftschaden."
+        ],
+        [
+          "Reparatur (3/Tag) . Der Verteidiger oder ein Konstrukt oder Objekt, das er im Umkreis von 5 Fuß sehen kann, erhält eine Anzahl an Trefferpunkten zurück, die 2W8 plus Ihrem Intelligenzmodifikator entspricht."
+        ],
+        [
+          "Reaktionen"
+        ],
+        [
+          "Angriff abwehren. Auslöser: Eine Kreatur, die der Verteidiger in einem Umkreis von 5 Fuß sehen kann, führt einen Angriffswurf durch, der auf eine andere Kreatur abzielt. Reaktion: Die auslösende Kreatur führt den Angriffswurf mit Nachteil durch."
+        ]
+      ],
+      "text": "Steel Defender Medium Construct Armor Klasse: 12 + Ihr Intelligenzmodifikator Trefferpunkte: HP 5 + das Fünffache Ihrer Artificer-Stufe (der Verteidiger hat eine Anzahl an Trefferwürfeln [W8], die Ihrer Artificer-Stufe entspricht) Geschwindigkeit: Geschwindigkeit 40 Fuß. STR (Mod/Speichern) DEX (Mod/Speichern) CON (Mod/Speichern) INT (Mod/Speichern) WIS (Mod/Speichern) CHA (Mod/Speichern) 14 (+2/+2) 12 (+1/+1) 14 (+2/+2) 4 (−3/-3) 10 (+0/+0) 6 (-2/-2) Immunitäten: Gift; Bezaubert, Erschöpfung, Vergiftet Sinne: Dunkelsicht 60 Fuß, Passive Wahrnehmung 10 Sprachen: Versteht die Sprachen, die Sie kennen. Herausforderungsbewertung: Keine (XP 0; PB entspricht Ihrem Uebungsbonus) Eigenschaften Stahlbindung. Fügen Sie Ihren Uebungsbonus zu jeder Fähigkeitsüberprüfung oder jedem Rettungswurf hinzu, den der Steel Defender durchführt. Aktionen Force-Empowered Rend. Nahkampfangriffswurf: Bonus entspricht Ihrem Zauberangriffsmodifikator, Reichweite 5 Fuß. Treffer: 1W8 + 2 plus Ihrem Intelligenzmodifikator Kraftschaden. Reparatur (3/Tag) . Der Verteidiger oder ein Konstrukt oder Objekt, das er im Umkreis von 5 Fuß sehen kann, erhält eine Anzahl an Trefferpunkten zurück, die 2W8 plus Ihrem Intelligenzmodifikator entspricht. Reaktionen Angriff abwehren. Auslöser: Eine Kreatur, die der Verteidiger in einem Umkreis von 5 Fuß sehen kann, führt einen Angriffswurf durch, der auf eine andere Kreatur abzielt. Reaktion: Die auslösende Kreatur führt den Angriffswurf mit Nachteil durch."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 5: Zusätzlicher Angriff"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst jedes Mal, wenn du in deinem Zug die Angriffsaktion ausführst, zweimal statt einmal angreifen. Sie können auf einen Ihrer Angriffe verzichten, wenn Sie die Angriffsaktion ausführen, um Ihrem Stahlverteidiger zu befehlen, die Aktion „Machtverstärkter Rend“ auszuführen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 9: Arkaner Stoß"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie entweder ein Ziel mit einem Angriffswurf mit einer magischen Waffe treffen oder Ihr Steel Defender ein Ziel trifft, können Sie durch den Schlag magische Energie kanalisieren, um einen der folgenden Effekte zu erzeugen:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Zerstörerische Energie. Das Ziel erleidet zusätzlich 2W6 Machtschaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wiederherstellende Energie. Wählen Sie eine Kreatur oder ein Objekt aus, das Sie im Umkreis von 30 Fuß um das Ziel sehen können. Heilende Energie fließt in den ausgewählten Empfänger und stellt bei ihm 2W6 Trefferpunkte wieder her."
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst diese Energie so oft verwenden, wie es deinem Intelligenzmodifikator entspricht (mindestens einmal), aber nicht mehr als einmal pro Spielzug. Wenn Sie eine Lange Rast beenden, erhalten Sie alle verbrauchten Nutzungen zurück."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Verbesserter Verteidiger"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihr „Arkaner Stoß“ und Ihr „Stählerner Verteidiger“ sind mächtiger geworden und gewähren diese Vorteile."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserter Ruck. Der zusätzliche Schaden und die Heilung deines „Arkanen Stoßes“ erhöhen sich beide auf 4W6."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserte Ablenkung. Immer wenn Ihr Stahlverteidiger seinen Abwehrangriff einsetzt, erleidet der Angreifer Machtschaden in Höhe von 1W4 plus Ihrem Intelligenzmodifikator."
+    }
+  ],
+  "text": "Kommandiere einen Konstruktwächter. Ein Kampfschmied ist eine Kombination aus Beschützer und Sanitäter, ein Experte darin, andere zu verteidigen und sowohl Material als auch Personal zu reparieren. Um sie bei ihrer Arbeit zu unterstützen, werden Battle Smiths von einem Steel Defender begleitet, einem schützenden Begleiter, den sie selbst geschaffen haben.\n\nLevel 3: Handwerkszeug\n\nSie profitieren von folgenden Vorteilen.\n\nWerkzeugkenntnisse. Sie erwerben Kenntnisse im Umgang mit Smith’s Tools. Wenn Sie bereits über diese Fertigkeit verfügen, erwerben Sie Kenntnisse im Umgang mit einer anderen Art von Handwerkswerkzeugen Ihrer Wahl.\n\nWaffenherstellung. Wenn Sie eine nichtmagische oder magische Waffe herstellen, halbiert sich die für die Herstellung erforderliche Zeit.\n\nLevel 3: Battle Smith-Zauber\n\nWenn Sie eine in der Battle Smith-Zaubertabelle angegebene Artificer-Stufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nKampfschmied-Zauber\n\nMagier der Stufe „Artificer“ 3 Heldentum, Schild 5 Leuchtendes Zerschmettern, Abwehrband 9 Aura der Vitalität, Beschwörungssperrfeuer 13 Aura der Reinheit, Feuerschild 17 Bannendes Zerschmettern, Massenheilung von Wunden\n\nStufe 3: Kampfbereit\n\nIhr Kampftraining und Ihre Experimente mit Magie haben sich in zweierlei Hinsicht ausgezahlt.\n\nArkane Ermächtigung. Wenn Sie mit einer magischen Waffe angreifen, können Sie für die Angriffs- und Schadenswürfe Ihren Intelligenzmodifikator anstelle Ihres Stärke- oder Geschicklichkeitsmodifikators verwenden.\n\nWaffenwissen. Sie erlangen Kenntnisse im Umgang mit Kampfwaffen. Sie können eine Waffe, mit der Sie vertraut sind, als Zauberfokus für Ihre Artificer-Zauber verwenden.\n\nLevel 3: Stahlverteidiger\n\nDurch Ihr Basteln ist Ihnen ein Begleiter entstanden, ein Stahlverteidiger (siehe Statistikblock). Sie bestimmen das Aussehen des Verteidigers und ob er zwei oder vier Beine hat; Ihre Entscheidungen haben keinen Einfluss auf die Spielstatistik des Verteidigers.\n\nDer Verteidiger ist freundlich zu Ihnen und Ihren Verbündeten und gehorcht Ihnen. Es verschwindet, wenn du stirbst.\n\nDer Verteidiger im Kampf. Im Kampf agiert der Verteidiger während Ihres Zuges. Es kann sich selbstständig bewegen und seine Reaktion ausführen, aber die einzige Aktion, die es ausführt, ist die Ausweichen-Aktion, es sei denn, Sie führen eine Bonusaktion aus, um ihm zu befehlen, eine Aktion auszuführen. Wenn Sie über die Bedingung „Kampfunfähig“ verfügen, handelt der Verteidiger selbstständig und ist nicht auf die Ausweichaktion beschränkt.\n\nDen Defender wiederherstellen oder ersetzen. Wenn der Verteidiger innerhalb der letzten Stunde gestorben ist, können Sie eine magische Aktion ausführen, um ihn zu berühren und einen Zauberslot zu verbrauchen. Der Verteidiger erwacht nach 1 Minute wieder zum Leben, wobei alle seine Trefferpunkte wiederhergestellt sind.\n\nImmer wenn Sie Lange Rast abgeschlossen haben, können Sie einen neuen Verteidiger erstellen, wenn Sie Smith’s Tools in der Hand haben. Wenn Sie bereits einen Verteidiger aus dieser Funktion haben, verschwindet der erste.\n\nSteel Defender Medium Construct Armor Klasse: 12 + Ihr Intelligenzmodifikator Trefferpunkte: HP 5 + das Fünffache Ihrer Artificer-Stufe (der Verteidiger hat eine Anzahl an Trefferwürfeln [W8], die Ihrer Artificer-Stufe entspricht) Geschwindigkeit: Geschwindigkeit 40 Fuß. STR (Mod/Speichern) DEX (Mod/Speichern) CON (Mod/Speichern) INT (Mod/Speichern) WIS (Mod/Speichern) CHA (Mod/Speichern) 14 (+2/+2) 12 (+1/+1) 14 (+2/+2) 4 (−3/-3) 10 (+0/+0) 6 (-2/-2) Immunitäten: Gift; Bezaubert, Erschöpfung, Vergiftet Sinne: Dunkelsicht 60 Fuß, Passive Wahrnehmung 10 Sprachen: Versteht die Sprachen, die Sie kennen. Herausforderungsbewertung: Keine (XP 0; PB entspricht Ihrem Uebungsbonus) Eigenschaften Stahlbindung. Fügen Sie Ihren Uebungsbonus zu jeder Fähigkeitsüberprüfung oder jedem Rettungswurf hinzu, den der Steel Defender durchführt. Aktionen Force-Empowered Rend. Nahkampfangriffswurf: Bonus entspricht Ihrem Zauberangriffsmodifikator, Reichweite 5 Fuß. Treffer: 1W8 + 2 plus Ihrem Intelligenzmodifikator Kraftschaden. Reparatur (3/Tag) . Der Verteidiger oder ein Konstrukt oder Objekt, das er im Umkreis von 5 Fuß sehen kann, erhält eine Anzahl an Trefferpunkten zurück, die 2W8 plus Ihrem Intelligenzmodifikator entspricht. Reaktionen Angriff abwehren. Auslöser: Eine Kreatur, die der Verteidiger in einem Umkreis von 5 Fuß sehen kann, führt einen Angriffswurf durch, der auf eine andere Kreatur abzielt. Reaktion: Die auslösende Kreatur führt den Angriffswurf mit Nachteil durch.\n\nLevel 5: Zusätzlicher Angriff\n\nDu kannst jedes Mal, wenn du in deinem Zug die Angriffsaktion ausführst, zweimal statt einmal angreifen. Sie können auf einen Ihrer Angriffe verzichten, wenn Sie die Angriffsaktion ausführen, um Ihrem Stahlverteidiger zu befehlen, die Aktion „Machtverstärkter Rend“ auszuführen.\n\nStufe 9: Arkaner Stoß\n\nWenn Sie entweder ein Ziel mit einem Angriffswurf mit einer magischen Waffe treffen oder Ihr Steel Defender ein Ziel trifft, können Sie durch den Schlag magische Energie kanalisieren, um einen der folgenden Effekte zu erzeugen:\n\nZerstörerische Energie. Das Ziel erleidet zusätzlich 2W6 Machtschaden.\n\nWiederherstellende Energie. Wählen Sie eine Kreatur oder ein Objekt aus, das Sie im Umkreis von 30 Fuß um das Ziel sehen können. Heilende Energie fließt in den ausgewählten Empfänger und stellt bei ihm 2W6 Trefferpunkte wieder her.\n\nDu kannst diese Energie so oft verwenden, wie es deinem Intelligenzmodifikator entspricht (mindestens einmal), aber nicht mehr als einmal pro Spielzug. Wenn Sie eine Lange Rast beenden, erhalten Sie alle verbrauchten Nutzungen zurück.\n\nLevel 15: Verbesserter Verteidiger\n\nIhr „Arkaner Stoß“ und Ihr „Stählerner Verteidiger“ sind mächtiger geworden und gewähren diese Vorteile.\n\nVerbesserter Ruck. Der zusätzliche Schaden und die Heilung deines „Arkanen Stoßes“ erhöhen sich beide auf 4W6.\n\nVerbesserte Ablenkung. Immer wenn Ihr Stahlverteidiger seinen Abwehrangriff einsetzt, erleidet der Angreifer Machtschaden in Höhe von 1W4 plus Ihrem Intelligenzmodifikator.",
+  "tags": [],
+  "class": "Artificer",
+  "class_id": "artificer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

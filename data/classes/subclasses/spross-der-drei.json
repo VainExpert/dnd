@@ -1,0 +1,130 @@
+{
+  "id": "spross-der-drei",
+  "type": "subclass",
+  "name": "Spross der Drei",
+  "original_name": "Scion of the Three",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/rogue:scion-of-the-three",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Werde ein grausamer Agent der Bosheit",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Werde ein grausamer Agent der Bosheit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ein Spross der Drei bezieht seine Macht von einer Gruppe bösartiger Götter, die in Baldur's Gate als die Toten Drei bekannt sind: Bane, ein Gott der Tyrannei; Bhaal, ein Gott der Gewalt und des Mordes; und Myrkul, ein Gott des Todes. Während sich einige Schurken dieser Unterklasse inbrünstig den drei makabren Göttern schwören, werden andere von einem Fluch auf diesen Weg gedrängt. Wie dem auch sei, die Macht eines Spross manifestiert sich in verschiedenen okkulten Gaben sowie in einem unheimlichen Talent, Feinde zu schlagen und in Angst und Schrecken zu versetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Nachkommen der Drei kommen am häufigsten in Baldur’s Gate vor, wo die Toten Drei als Sterbliche lebten, bevor sie zur Gottheit aufstiegen. Untergrundkulte um Bane, Bhaal und Myrkul zählen die Sprösslinge der Drei oft zu ihren nützlichsten Agenten. Außerhalb von Baldur’s Gate könnten säkulare Diebesgilden wie die Schattendiebe von Amn oder die Xanathar-Gilde in Waterdeep einen Spross der Drei auffordern, einen besonders brutalen Vertrag abzuschließen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Blutdurst"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn ein Feind, den Sie im Umkreis von 30 Fuß um sich herum sehen können, Schaden erleidet und blutig wird, nachdem er diesen Schaden erlitten hat, aber nicht sofort getötet wird, können Sie eine Reaktion ausführen und sich zu einem unbesetzten Feld teleportieren, das Sie im Umkreis von 5 Fuß um den Feind sehen können. Sie können dann einen Nahkampfangriff ausführen. Sie können diese Funktion so oft verwenden, wie es Ihrem Intelligenzmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Schreckenstreue"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wählen Sie einen der drei Toten: Bane, Bhaal oder Myrkul. Du erhältst Resistenz gegen eine Art von Schaden und die Fähigkeit, einen Cantrip zu wirken, wie in der Tabelle unten beschrieben; Intelligenz ist Ihre Zauberfähigkeit für diesen Cantrip. Wenn Sie eine Lange Rast beendet haben, können Sie Ihre Wahl ändern."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Gott",
+          "Schadensresistenz",
+          "Zaubertrick"
+        ],
+        [
+          "Fluch",
+          "Hellseher",
+          "Kleinere Illusion"
+        ],
+        [
+          "Bhaal",
+          "Gift",
+          "Klingenschutz"
+        ],
+        [
+          "Myrkul",
+          "Nekrotisch",
+          "Chill Touch"
+        ]
+      ],
+      "text": "Gott Schadensresistenz Zaubertrick Bane Psychic Minor Illusion Bhaal Poison Blade Ward Myrkul Necrotic Chill Touch"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 9: Schlagangst"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst die folgende Listiger-Schlag-Option."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erschrecken (Kosten: 1W6). Dem Ziel muss ein Weisheits-Rettungswurf gelingen, sonst befindet es sich 1 Minute lang im Zustand „Verängstigt“. Während das Ziel auf diese Weise verängstigt ist, haben Sie einen Vorteil bei Angriffswürfen gegen das Ziel."
+    },
+    {
+      "type": "paragraph",
+      "text": "Das verängstigte Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge und beendet bei einem Erfolg den Effekt auf sich selbst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 13: Aura der Böswilligkeit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie strahlen eine bösartige Kraft aus, die mit einem der Toten Drei verbunden ist. Wenn du Blutdurst verwendest und teleportierst, erleidet jede Kreatur deiner Wahl innerhalb von 10 Fuß um das von dir verlassene Feld oder um dein Zielfeld (nach deiner Wahl) Schaden in Höhe deines Intelligenzmodifikators; Die Schadensart ist die gleiche wie die Schadensresistenz, die Sie in der Funktion „Schreckenstreue“ erhalten. Der durch diese Funktion verursachte Schaden ignoriert Resistenz."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 17: Inkarnation des Schreckens"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Halsabschneider. Du erhältst eine verbrauchte Anwendung von Blutdurst zurück, wenn du eine Kurze Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mordabsicht. Wenn Sie Ihren Sneak Attack-Schaden auswürfeln, können Sie einen Wurf von 1 oder 2 auf dem Würfel als 3 behandeln."
+    }
+  ],
+  "text": "Werde ein grausamer Agent der Bosheit\n\nEin Spross der Drei bezieht seine Macht von einer Gruppe bösartiger Götter, die in Baldur's Gate als die Toten Drei bekannt sind: Bane, ein Gott der Tyrannei; Bhaal, ein Gott der Gewalt und des Mordes; und Myrkul, ein Gott des Todes. Während sich einige Schurken dieser Unterklasse inbrünstig den drei makabren Göttern schwören, werden andere von einem Fluch auf diesen Weg gedrängt. Wie dem auch sei, die Macht eines Spross manifestiert sich in verschiedenen okkulten Gaben sowie in einem unheimlichen Talent, Feinde zu schlagen und in Angst und Schrecken zu versetzen.\n\nNachkommen der Drei kommen am häufigsten in Baldur’s Gate vor, wo die Toten Drei als Sterbliche lebten, bevor sie zur Gottheit aufstiegen. Untergrundkulte um Bane, Bhaal und Myrkul zählen die Sprösslinge der Drei oft zu ihren nützlichsten Agenten. Außerhalb von Baldur’s Gate könnten säkulare Diebesgilden wie die Schattendiebe von Amn oder die Xanathar-Gilde in Waterdeep einen Spross der Drei auffordern, einen besonders brutalen Vertrag abzuschließen.\n\nStufe 3: Blutdurst\n\nWenn ein Feind, den Sie im Umkreis von 30 Fuß um sich herum sehen können, Schaden erleidet und blutig wird, nachdem er diesen Schaden erlitten hat, aber nicht sofort getötet wird, können Sie eine Reaktion ausführen und sich zu einem unbesetzten Feld teleportieren, das Sie im Umkreis von 5 Fuß um den Feind sehen können. Sie können dann einen Nahkampfangriff ausführen. Sie können diese Funktion so oft verwenden, wie es Ihrem Intelligenzmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben.\n\nStufe 3: Schreckenstreue\n\nWählen Sie einen der drei Toten: Bane, Bhaal oder Myrkul. Du erhältst Resistenz gegen eine Art von Schaden und die Fähigkeit, einen Cantrip zu wirken, wie in der Tabelle unten beschrieben; Intelligenz ist Ihre Zauberfähigkeit für diesen Cantrip. Wenn Sie eine Lange Rast beendet haben, können Sie Ihre Wahl ändern.\n\nGott Schadensresistenz Zaubertrick Bane Psychic Minor Illusion Bhaal Poison Blade Ward Myrkul Necrotic Chill Touch\n\nLevel 9: Schlagangst\n\nDu erhältst die folgende Listiger-Schlag-Option.\n\nErschrecken (Kosten: 1W6). Dem Ziel muss ein Weisheits-Rettungswurf gelingen, sonst befindet es sich 1 Minute lang im Zustand „Verängstigt“. Während das Ziel auf diese Weise verängstigt ist, haben Sie einen Vorteil bei Angriffswürfen gegen das Ziel.\n\nDas verängstigte Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge und beendet bei einem Erfolg den Effekt auf sich selbst.\n\nStufe 13: Aura der Böswilligkeit\n\nSie strahlen eine bösartige Kraft aus, die mit einem der Toten Drei verbunden ist. Wenn du Blutdurst verwendest und teleportierst, erleidet jede Kreatur deiner Wahl innerhalb von 10 Fuß um das von dir verlassene Feld oder um dein Zielfeld (nach deiner Wahl) Schaden in Höhe deines Intelligenzmodifikators; Die Schadensart ist die gleiche wie die Schadensresistenz, die Sie in der Funktion „Schreckenstreue“ erhalten. Der durch diese Funktion verursachte Schaden ignoriert Resistenz.\n\nStufe 17: Inkarnation des Schreckens\n\nSie profitieren von folgenden Vorteilen.\n\nHalsabschneider. Du erhältst eine verbrauchte Anwendung von Blutdurst zurück, wenn du eine Kurze Rast abschließt.\n\nMordabsicht. Wenn Sie Ihren Sneak Attack-Schaden auswürfeln, können Sie einen Wurf von 1 oder 2 auf dem Würfel als 3 behandeln.",
+  "tags": [],
+  "class": "Schurke",
+  "class_id": "schurke",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

@@ -1,0 +1,54 @@
+{
+  "id": "grosses-mal-des-sturms",
+  "type": "feat",
+  "name": "Großes Mal des Sturms",
+  "original_name": "Greater Mark of Storm",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:greater-mark-of-storm",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Groessere Drachenmale",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Level 4+, Talent „Mal des Sturms“)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Level 4+, Talent „Mal des Sturms“)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserte Intuition. Wenn Sie den Vorteil „Intuition des Windbauers“ Ihres Talents „Mal des Sturms“ nutzen, können Sie 1W6 statt 1W4 würfeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserter Sturm. Wenn Sie den Vorteil „Sturmmagie“ Ihres Talents „Mal des Sturms“ nutzen, um „Windstoß“ ohne Zauberslot zu wirken, erhalten Sie für die Dauer des Zaubers außerdem eine Fluggeschwindigkeit von 60 Fuß."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Level 4+, Talent „Mal des Sturms“)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20.\n\nVerbesserte Intuition. Wenn Sie den Vorteil „Intuition des Windbauers“ Ihres Talents „Mal des Sturms“ nutzen, können Sie 1W6 statt 1W4 würfeln.\n\nVerbesserter Sturm. Wenn Sie den Vorteil „Sturmmagie“ Ihres Talents „Mal des Sturms“ nutzen, um „Windstoß“ ohne Zauberslot zu wirken, erhalten Sie für die Dauer des Zaubers außerdem eine Fluggeschwindigkeit von 60 Fuß.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

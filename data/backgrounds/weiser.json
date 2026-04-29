@@ -1,0 +1,124 @@
+{
+  "id": "weiser",
+  "type": "background",
+  "name": "Weiser",
+  "original_name": "Sage",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/background:sage",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Sie verbrachten Ihre prägenden Jahre damit, zwischen Herrenhäusern und Klöstern zu reisen und im Gegenzug für den Zugang zu deren Bibliotheken verschiedene Gelegenheitsarbeiten und Dienstleistungen auszuführen. Sie haben viele lange Abende damit verbracht, Bücher und Schriftrollen zu studieren, die Überlieferungen des Multiversums kennenzulernen – sogar die Grundlagen der Magie – und Ihr Geist sehnt sich nach mehr.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Sie verbrachten Ihre prägenden Jahre damit, zwischen Herrenhäusern und Klöstern zu reisen und im Gegenzug für den Zugang zu deren Bibliotheken verschiedene Gelegenheitsarbeiten und Dienstleistungen auszuführen. Sie haben viele lange Abende damit verbracht, Bücher und Schriftrollen zu studieren, die Überlieferungen des Multiversums kennenzulernen – sogar die Grundlagen der Magie – und Ihr Geist sehnt sich nach mehr."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Konstitution, Intelligenz, Weisheit Talent: Magischer Eingeweihter (Zauberer) Fertigkeiten: Arcana und Geschichte Werkzeugkompetenz: Vorräte des Kalligraphen Ausrüstung: Wählen Sie A oder B: (A) Quartierstab, Vorräte des Kalligraphen, Buch (Geschichte), Pergament (8 Blätter), Robe, 8 GP; oder (B) 50 GP"
+    }
+  ],
+  "text": "Sie verbrachten Ihre prägenden Jahre damit, zwischen Herrenhäusern und Klöstern zu reisen und im Gegenzug für den Zugang zu deren Bibliotheken verschiedene Gelegenheitsarbeiten und Dienstleistungen auszuführen. Sie haben viele lange Abende damit verbracht, Bücher und Schriftrollen zu studieren, die Überlieferungen des Multiversums kennenzulernen – sogar die Grundlagen der Magie – und Ihr Geist sehnt sich nach mehr.\n\nFähigkeitswerte: Konstitution, Intelligenz, Weisheit Talent: Magischer Eingeweihter (Zauberer) Fertigkeiten: Arcana und Geschichte Werkzeugkompetenz: Vorräte des Kalligraphen Ausrüstung: Wählen Sie A oder B: (A) Quartierstab, Vorräte des Kalligraphen, Buch (Geschichte), Pergament (8 Blätter), Robe, 8 GP; oder (B) 50 GP",
+  "tags": [],
+  "ability_scores": [
+    "con",
+    "int",
+    "wis"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "con",
+      "int",
+      "wis"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Arkana",
+    "Geschichte"
+  ],
+  "tool_proficiencies": [
+    "Vorräte des Kalligraphen"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "magischer-eingeweihter-zauberer",
+  "granted_feat_name": "Magischer Eingeweihter (Zauberer)",
+  "modifiers": [],
+  "choice_sets": [
+    {
+      "id": "weiser-background-cantrips",
+      "type": "spell",
+      "choose": 2,
+      "spell_levels": [
+        0
+      ],
+      "source": "weiser",
+      "spell_list_names": [
+        "Zauberer"
+      ]
+    },
+    {
+      "id": "weiser-background-level-1-spell",
+      "type": "spell",
+      "choose": 1,
+      "spell_levels": [
+        1
+      ],
+      "source": "weiser",
+      "spell_list_names": [
+        "Zauberer"
+      ]
+    }
+  ],
+  "spellcasting": {
+    "ability": "cha",
+    "spell_choices": [
+      {
+        "id": "weiser-background-cantrips",
+        "type": "spell",
+        "choose": 2,
+        "spell_levels": [
+          0
+        ],
+        "source": "weiser",
+        "spell_list_names": [
+          "Zauberer"
+        ]
+      },
+      {
+        "id": "weiser-background-level-1-spell",
+        "type": "spell",
+        "choose": 1,
+        "spell_levels": [
+          1
+        ],
+        "source": "weiser",
+        "spell_list_names": [
+          "Zauberer"
+        ]
+      }
+    ],
+    "always_prepared": true
+  },
+  "starting_equipment": [
+    {
+      "text": "Wählen Sie A oder B: (A) Quartierstab, Vorräte des Kalligraphen, Buch (Geschichte), Pergament (8 Blätter), Robe, 8 GP; oder (B) 50 GP"
+    }
+  ]
+}

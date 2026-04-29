@@ -1,0 +1,60 @@
+{
+  "id": "telekinese",
+  "type": "feat",
+  "name": "Telekinese",
+  "original_name": "Telekinetic",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:telekinetic",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Stufe 4+"
+  ],
+  "summary": "Voraussetzung: Level 4+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kleinere Telekinese. Du lernst den Zauber „Magierhand“. Sie können es ohne verbale oder somatische Komponenten wirken, Sie können die Spektralhand unsichtbar machen und ihre Reichweite sowie die Entfernung, die sie von Ihnen entfernt sein kann, erhöhen sich um 30 Fuß, wenn Sie sie wirken. Die Zauberfähigkeit des Zaubers ist die Fähigkeit, die durch dieses Talent erhöht wird."
+    },
+    {
+      "type": "paragraph",
+      "text": "Telekinetischer Stoß. Als Bonusaktion können Sie eine Kreatur, die Sie sehen können, telekinetisch in einen Umkreis von 30 Fuß um Sie herum schieben. Wenn Sie dies tun, muss das Ziel einen Stärke-Rettungswurf (SG 8 plus Fähigkeitsmodifikator der um dieses Talent und Ihren Uebungsbonus erhöhten Punktzahl) bestehen oder 1,5 m auf Sie zu oder von Ihnen weg bewegt werden."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20.\n\nKleinere Telekinese. Du lernst den Zauber „Magierhand“. Sie können es ohne verbale oder somatische Komponenten wirken, Sie können die Spektralhand unsichtbar machen und ihre Reichweite sowie die Entfernung, die sie von Ihnen entfernt sein kann, erhöhen sich um 30 Fuß, wenn Sie sie wirken. Die Zauberfähigkeit des Zaubers ist die Fähigkeit, die durch dieses Talent erhöht wird.\n\nTelekinetischer Stoß. Als Bonusaktion können Sie eine Kreatur, die Sie sehen können, telekinetisch in einen Umkreis von 30 Fuß um Sie herum schieben. Wenn Sie dies tun, muss das Ziel einen Stärke-Rettungswurf (SG 8 plus Fähigkeitsmodifikator der um dieses Talent und Ihren Uebungsbonus erhöhten Punktzahl) bestehen oder 1,5 m auf Sie zu oder von Ihnen weg bewegt werden.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str",
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

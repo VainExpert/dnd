@@ -1,0 +1,56 @@
+{
+  "id": "giftmischer",
+  "type": "feat",
+  "name": "Giftmischer",
+  "original_name": "Poisoner",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:poisoner",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Stufe 4+"
+  ],
+  "summary": "Voraussetzung: Level 4+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Geschicklichkeits- oder Intelligenzwert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Starkes Gift. Wenn Sie einen Schadenswurf durchführen, der Giftschaden verursacht, ignoriert dieser die Resistenz gegen Giftschaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gift brauen. Sie erwerben Kenntnisse im Umgang mit dem Poisoner’s Kit. Wenn Sie mit einem solchen Bausatz eine Stunde arbeiten und Materialien im Wert von 50 GP aufwenden, können Sie eine Anzahl an Giftdosen herstellen, die Ihrem Uebungsbonus entspricht. Als Bonusaktion können Sie eine Giftdosis auf eine Waffe oder ein Munitionsstück auftragen. Nach der Anwendung behält das Gift seine Wirksamkeit für 1 Minute oder bis Sie mit dem vergifteten Gegenstand Schaden verursachen, je nachdem, welcher Zeitraum kürzer ist. Wenn eine Kreatur Schaden durch den vergifteten Gegenstand erleidet, muss dieser Kreatur ein Konstitutions-Rettungswurf (SG 8 plus der durch dieses Talent erhöhte Modifikator der Fähigkeit und Ihr Uebungsbonus) gelingen oder sie erleidet 2W8 Giftschaden und bleibt bis zum Ende Ihres nächsten Zuges im Zustand „Vergiftet“."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Geschicklichkeits- oder Intelligenzwert um 1 auf maximal 20.\n\nStarkes Gift. Wenn Sie einen Schadenswurf durchführen, der Giftschaden verursacht, ignoriert dieser die Resistenz gegen Giftschaden.\n\nGift brauen. Sie erwerben Kenntnisse im Umgang mit dem Poisoner’s Kit. Wenn Sie mit einem solchen Bausatz eine Stunde arbeiten und Materialien im Wert von 50 GP aufwenden, können Sie eine Anzahl an Giftdosen herstellen, die Ihrem Uebungsbonus entspricht. Als Bonusaktion können Sie eine Giftdosis auf eine Waffe oder ein Munitionsstück auftragen. Nach der Anwendung behält das Gift seine Wirksamkeit für 1 Minute oder bis Sie mit dem vergifteten Gegenstand Schaden verursachen, je nachdem, welcher Zeitraum kürzer ist. Wenn eine Kreatur Schaden durch den vergifteten Gegenstand erleidet, muss dieser Kreatur ein Konstitutions-Rettungswurf (SG 8 plus der durch dieses Talent erhöhte Modifikator der Fähigkeit und Ihr Uebungsbonus) gelingen oder sie erleidet 2W8 Giftschaden und bleibt bis zum Ende Ihres nächsten Zuges im Zustand „Vergiftet“.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

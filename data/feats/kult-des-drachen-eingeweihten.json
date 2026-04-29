@@ -1,0 +1,54 @@
+{
+  "id": "kult-des-drachen-eingeweihten",
+  "type": "feat",
+  "name": "Kult des Drachen-Eingeweihten",
+  "original_name": "Cult of the Dragon Initiate",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:cult-of-the-dragon-initiate",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Ursprungstalent",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Ursprungstalent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Drachenzunge. Du kennst Draconic. Wenn Sie Drakonisch bereits beherrschen, wenn Sie dieses Talent wählen, lernen Sie stattdessen eine Sprache Ihrer Wahl aus den Sprachtabellen im Spielerhandbuch oder Kapitel 2 dieses Buches."
+    },
+    {
+      "type": "paragraph",
+      "text": "Drachenschrecken. Sie können eine magische Aktion ausführen, um einer Kreatur, die Sie in einem Umkreis von 30 Fuß um sich herum sehen können, Schrecken einzuflößen. Dem Ziel muss ein Weisheits-Rettungswurf (SG 8 plus Weisheitsmodifikator und Uebungsbonus) gelingen oder er muss sich bis zum Ende seines nächsten Zuges im Zustand „Verängstigt“ befinden. Gelingt dem Ziel der Rettungswurf oder endet der Effekt für ein Ziel, ist das Ziel 24 Stunden lang immun gegen diesen Effekt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Inspiriert von Angst. Wenn Sie dafür sorgen, dass eine Kreatur den Zustand „Verängstigt“ hat und Sie die Quelle ihrer Angst sind, können Sie heroische Inspiration erlangen, wenn Ihnen diese fehlt. Sobald Sie diesen Vorteil genutzt haben, können Sie ihn erst wieder nutzen, wenn Sie eine Kurze oder Lange Rast beendet haben."
+    }
+  ],
+  "text": "Ursprungstalent\n\nSie profitieren von folgenden Vorteilen.\n\nDrachenzunge. Du kennst Draconic. Wenn Sie Drakonisch bereits beherrschen, wenn Sie dieses Talent wählen, lernen Sie stattdessen eine Sprache Ihrer Wahl aus den Sprachtabellen im Spielerhandbuch oder Kapitel 2 dieses Buches.\n\nDrachenschrecken. Sie können eine magische Aktion ausführen, um einer Kreatur, die Sie in einem Umkreis von 30 Fuß um sich herum sehen können, Schrecken einzuflößen. Dem Ziel muss ein Weisheits-Rettungswurf (SG 8 plus Weisheitsmodifikator und Uebungsbonus) gelingen oder er muss sich bis zum Ende seines nächsten Zuges im Zustand „Verängstigt“ befinden. Gelingt dem Ziel der Rettungswurf oder endet der Effekt für ein Ziel, ist das Ziel 24 Stunden lang immun gegen diesen Effekt.\n\nInspiriert von Angst. Wenn Sie dafür sorgen, dass eine Kreatur den Zustand „Verängstigt“ hat und Sie die Quelle ihrer Angst sind, können Sie heroische Inspiration erlangen, wenn Ihnen diese fehlt. Sobald Sie diesen Vorteil genutzt haben, können Sie ihn erst wieder nutzen, wenn Sie eine Kurze oder Lange Rast beendet haben.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

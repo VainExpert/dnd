@@ -1,0 +1,1174 @@
+{
+  "id": "barde",
+  "type": "class",
+  "name": "Barde",
+  "original_name": "Bard",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/bard:main",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Klassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Barden beschwören Magie durch Musik, Tanz und Verse und sind Experten darin, andere zu inspirieren, Verletzungen zu lindern, Feinde zu entmutigen und Illusionen zu erzeugen. Barden glauben, dass das Multiversum durch Worte ins Leben gerufen wurde und dass Überreste seiner Worte der Schöpfung immer noch auf jeder Ebene der Existenz erklingen und schimmern. Bardische Magie versucht, sich diese Worte zunutze zu machen, die über jede Sprache hinausgehen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Barden beschwören Magie durch Musik, Tanz und Verse und sind Experten darin, andere zu inspirieren, Verletzungen zu lindern, Feinde zu entmutigen und Illusionen zu erzeugen. Barden glauben, dass das Multiversum durch Worte ins Leben gerufen wurde und dass Überreste seiner Worte der Schöpfung immer noch auf jeder Ebene der Existenz erklingen und schimmern. Bardische Magie versucht, sich diese Worte zunutze zu machen, die über jede Sprache hinausgehen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Alles kann die Inspiration für ein neues Lied oder eine neue Geschichte sein, daher sind Barden von fast allem fasziniert. Sie beherrschen viele Dinge, darunter das Aufführen von Musik, das Wirken von Magie und das Machen von Scherzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Das Leben eines Barden verbringt er damit, zu reisen, Wissen zu sammeln, Geschichten zu erzählen und von der Dankbarkeit des Publikums zu leben, genau wie jeder andere Entertainer. Aber Barden zeichnen sich durch ihr tiefes Wissen und ihre Beherrschung der Magie aus."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Kerneigenschaften des Barden"
+        ],
+        [
+          "Primäre Fähigkeit",
+          "Charisma"
+        ],
+        [
+          "Trefferpunktwürfel",
+          "D8 pro Bardenstufe"
+        ],
+        [
+          "Rettungswurf-Kenntnisse",
+          "Geschicklichkeit und Charisma"
+        ],
+        [
+          "Fertigkeiten",
+          "Wähle 3 beliebige Fähigkeiten"
+        ],
+        [
+          "Werkzeugkenntnisse",
+          "Wählen Sie 3 Musikinstrumente"
+        ],
+        [
+          "Waffenkenntnisse",
+          "Einfache Waffen"
+        ],
+        [
+          "Rüstungstraining",
+          "Leichte Rüstung"
+        ],
+        [
+          "Startausrüstung",
+          "Wähle A oder B: (A) Lederrüstung, 2 Dolche, Musikinstrument deiner Wahl, Entertainer-Paket und 19 GP; oder (B) 90 GP"
+        ]
+      ],
+      "text": "Kerneigenschaften des Barden: Primärfähigkeit: Charisma, Trefferpunkt, Würfel, D8 pro Bardenstufe, Rettungswurf-Fähigkeiten, Geschicklichkeit und Charisma, Fertigkeiten, Fertigkeiten. Wählen Sie drei beliebige Fertigkeiten. oder (B) 90 GP"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Ein Barde werden …"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Charakter der Stufe 1"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalte alle Eigenschaften in der Tabelle „Kernbardeneigenschaften“.",
+        "Erhalten Sie die Level-1-Funktionen des Barden, die in der Tabelle „Bardentalente“ aufgeführt sind."
+      ],
+      "text": "Erhalte alle Eigenschaften in der Tabelle „Kernbardeneigenschaften“. Erhalten Sie die Level-1-Funktionen des Barden, die in der Tabelle „Bardentalente“ aufgeführt sind."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Multiklassen-Charakter"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalten Sie die folgenden Eigenschaften aus der Tabelle „Kernbardeneigenschaften“: Trefferpunktwürfel, Kenntnisse in einer Fertigkeit Ihrer Wahl, Kenntnisse im Umgang mit einem Musikinstrument Ihrer Wahl und Training mit leichter Rüstung.",
+        "Erhalten Sie die Level-1-Funktionen des Barden, die in der Tabelle „Bardentalente“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen."
+      ],
+      "text": "Erhalten Sie die folgenden Eigenschaften aus der Tabelle „Kernbardeneigenschaften“: Trefferpunktwürfel, Kenntnisse in einer Fertigkeit Ihrer Wahl, Kenntnisse im Umgang mit einem Musikinstrument Ihrer Wahl und Training mit leichter Rüstung. Erhalten Sie die Level-1-Funktionen des Barden, die in der Tabelle „Bardentalente“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Talente der Bardenklasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bardentalente (Teil A)"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ebene",
+          "Uebungsbonus",
+          "Talenturen",
+          "Bardischer Würfel"
+        ],
+        [
+          "1",
+          "+2",
+          "Bardische Inspiration, Zauberei",
+          "D6"
+        ],
+        [
+          "2",
+          "+2",
+          "Fachkompetenz, Alleskönner",
+          "D6"
+        ],
+        [
+          "3",
+          "+2",
+          "Barden-Unterklasse",
+          "D6"
+        ],
+        [
+          "4",
+          "+2",
+          "Faehigkeitswert-Verbesserung",
+          "D6"
+        ],
+        [
+          "5",
+          "+3",
+          "Schriftart der Inspiration",
+          "D8"
+        ],
+        [
+          "6",
+          "+3",
+          "Unterklassenfunktion",
+          "D8"
+        ],
+        [
+          "7",
+          "+3",
+          "Gegenzauber",
+          "D8"
+        ],
+        [
+          "8",
+          "+3",
+          "Faehigkeitswert-Verbesserung",
+          "D8"
+        ],
+        [
+          "9",
+          "+4",
+          "Sachverstand",
+          "D8"
+        ],
+        [
+          "10",
+          "+4",
+          "Magische Geheimnisse",
+          "D10"
+        ],
+        [
+          "11",
+          "+4",
+          "-",
+          "D10"
+        ],
+        [
+          "12",
+          "+4",
+          "Faehigkeitswert-Verbesserung",
+          "D10"
+        ],
+        [
+          "13",
+          "+5",
+          "-",
+          "D10"
+        ],
+        [
+          "14",
+          "+5",
+          "Unterklassenfunktion",
+          "D10"
+        ],
+        [
+          "15",
+          "+5",
+          "-",
+          "D12"
+        ],
+        [
+          "16",
+          "+5",
+          "Faehigkeitswert-Verbesserung",
+          "D12"
+        ],
+        [
+          "17",
+          "+6",
+          "-",
+          "D12"
+        ],
+        [
+          "18",
+          "+6",
+          "Überlegene Inspiration",
+          "D12"
+        ],
+        [
+          "19",
+          "+6",
+          "Epischer Segen",
+          "D12"
+        ],
+        [
+          "20",
+          "+6",
+          "Worte der Schöpfung",
+          "D12"
+        ]
+      ],
+      "text": "Level Uebungsbonus Talentures Bardic Würfel 1 +2 Bardic Inspiration, Zauber D6 2 +2 Expertise, Alleskönner D6 3 +2 Bard Subclass D6 4 +2 Ability Score Improvement D6 5 +3 Font of Inspiration D8 6 +3 Subclass Feature D8 7 +3 Counterzauber D8 8 +3 Ability Score Improvement D8 9 +4 Expertise D8 10 +4 Magische Geheimnisse D10 11 +4 – D10 12 +4 Verbesserung des Fähigkeitswerts D10 13 +5 – D10 14 +5 Unterklassenmerkmal D10 15 +5 – D12 16 +5 Verbesserung des Fähigkeitswerts D12 17 +6 – D12 18 +6 Überlegene Inspiration D12 19 +6 Epischer Segen D12 20 +6 Worte der Schöpfung D12"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bardentalente (Teil B)"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ebene",
+          "Zaubertricks",
+          "Vorbereitete Zauber",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        [
+          "1",
+          "2",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "2",
+          "2",
+          "5",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "3",
+          "2",
+          "6",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "4",
+          "3",
+          "7",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "5",
+          "3",
+          "9",
+          "4",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "6",
+          "3",
+          "10",
+          "4",
+          "3",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "7",
+          "3",
+          "11",
+          "4",
+          "3",
+          "3",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "8",
+          "3",
+          "12",
+          "4",
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "9",
+          "3",
+          "14",
+          "4",
+          "3",
+          "3",
+          "3",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "10",
+          "4",
+          "15",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "11",
+          "4",
+          "16",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "12",
+          "4",
+          "16",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "13",
+          "4",
+          "17",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "14",
+          "4",
+          "17",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "15",
+          "4",
+          "18",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "-"
+        ],
+        [
+          "16",
+          "4",
+          "18",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "-"
+        ],
+        [
+          "17",
+          "4",
+          "19",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "18",
+          "4",
+          "20",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "19",
+          "4",
+          "21",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "20",
+          "4",
+          "22",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "2",
+          "2",
+          "1",
+          "1"
+        ]
+      ],
+      "text": "Stufe Zaubertricks Vorbereitete Zauber 1. 2. 3. 4. 5. 6. 7. 8. 9. 1 2 4 2 - - - - - - - - 2 2 5 3 - - - - - - - - 3 2 6 4 2 - - - - - - - 4 3 7 4 3 - - - - - - - 5 3 9 4 3 2 - - - - - - 6 3 10 4 3 3 - - - - - - 7 3 11 4 3 3 1 - - - - - 8 3 12 4 3 3 2 - - - - - 9 3 14 4 3 3 3 1 - - - - 10 4 15 4 3 3 3 2 - - - - 11 4 16 4 3 3 3 2 1 - - - 12 4 16 4 3 3 3 2 1 - - - 13 4 17 4 3 3 3 2 1 1 - - 14 4 17 4 3 3 3 2 1 1 - - 15 4 18 4 3 3 3 2 1 1 1 - 16 4 18 4 3 3 3 2 1 1 1 - 17 4 19 4 3 3 3 2 1 1 1 1 18 4 20 4 3 3 3 3 1 1 1 1 19 4 21 4 3 3 3 3 2 1 1 1 20 4 22 4 3 3 3 3 2 2 1 1"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Barde erhältst du die folgenden Klassenmerkmale, wenn du die angegebenen Bardenstufen erreichst. Diese Eigenschaften sind in der Tabelle „Bardentalente“ aufgeführt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Bardische Inspiration"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können andere durch Worte, Musik oder Tanz auf übernatürliche Weise inspirieren. Diese Inspiration wird durch Ihren bardischen Inspirationswürfel repräsentiert, der ein W6 ist."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bardische Inspiration nutzen. Als Bonusaktion können Sie eine andere Kreatur in einem Umkreis von 60 Fuß um Sie herum inspirieren, die Sie sehen oder hören kann. Diese Kreatur erhält einen deiner bardischen Inspirationswürfel. Eine Kreatur kann jeweils nur einen bardischen Inspirationswürfel haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald die Kreatur innerhalb der nächsten Stunde einen W20-Test nicht besteht, kann sie den Bardic Inspiration-Würfel würfeln und die gewürfelte Zahl zum W20 addieren, wodurch der Misserfolg möglicherweise in einen Erfolg umgewandelt wird. Ein bardischer Inspirationswürfel wird verbraucht, wenn er gewürfelt wird."
+    },
+    {
+      "type": "paragraph",
+      "text": "Anzahl der Verwendungen. Du kannst einen bardischen Inspirationswürfel so oft verleihen, wie es deinem Charisma-Modifikator entspricht (mindestens einmal), und du erhältst alle verbrauchten Verwendungen zurück, wenn du eine Lange Rast beendet hast."
+    },
+    {
+      "type": "paragraph",
+      "text": "Auf höheren Ebenen. Ihr bardischer Inspirationswürfel ändert sich, wenn Sie bestimmte Bardenstufen erreichen, wie in der Spalte „Bardenwürfel“ der Tabelle „Bardentalente“ angezeigt. Der Würfel wird auf Stufe 5 zu einem W8, auf Stufe 10 zu einem W10 und auf Stufe 15 zu einem W12."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Zaubern"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast durch deine bardischen Künste gelernt, Zauber zu wirken. Die Regeln zum Zaubern finden Sie in Kapitel 7. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln mit Bardenzaubern anwenden, die später in der Klassenbeschreibung in der Liste der Bardenzauber erscheinen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zaubertricks. Du kennst zwei Cantrips deiner Wahl aus der Liste der Bardenzauber. Tanzende Lichter und bösartiger Spott werden empfohlen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie eine Bardenstufe erreichen, können Sie einen Ihrer Cantrips durch einen anderen Cantrip Ihrer Wahl aus der Liste der Bardenzauber ersetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie die Bardenstufen 4 und 10 erreichen, lernen Sie einen weiteren Cantrip Ihrer Wahl aus der Liste der Bardenzauber, wie in der Spalte „Zaubertricks“ der Tabelle „Bardentalente“ aufgeführt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberplatz. Die Tabelle „Bardentalente“ zeigt, wie viele Zauberslots Ihnen zum Wirken Ihrer Zauber der Stufe 1+ zur Verfügung stehen. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vorbereitete Zauber der Stufe 1+. Sie bereiten die Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst vier Zaubersprüche der Stufe 1 aus der Liste der Bardenzauber aus. Empfohlen werden „Charm Person“, „Color Spray“, „Dissonant Whispers“ und „Healing Word“."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Anzahl der Zauber auf Ihrer Liste erhöht sich mit zunehmender Bardenstufe, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Bardentalente“ angezeigt. Immer wenn sich diese Zahl erhöht, wähle weitere Zauber aus der Liste der Bardenzauber, bis die Anzahl der Zauber auf deiner Liste mit der Zahl auf der Tabelle übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Barde der Stufe 3 sind, kann Ihre Liste der vorbereiteten Zaubersprüche sechs Zaubersprüche der Stufen 1 und 2 in beliebiger Kombination enthalten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Ihnen eine andere Bardenfunktion Zauber verleiht, die Sie schon immer vorbereitet haben, zählen diese Zauber nicht zu der Anzahl der Zauber, die Sie mit dieser Funktion vorbereiten können. Ansonsten zählen diese Zauber für Sie jedoch als Bardenzauber."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ändern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie eine Bardenstufe erreichen, können Sie einen Zauber auf Ihrer Liste durch einen anderen Bardenzauber ersetzen, für den Sie Zauberplätze haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfähigkeit. Charisma ist Ihre Zauberfähigkeit für Ihre Bardenzauber."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfokus. Sie können ein Musikinstrument als Zauberfokus für Ihre Bardenzauber verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 2: Fachwissen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erwerben Fachwissen (siehe Regelglossar) in zwei Ihrer Fertigkeitsfertigkeiten Ihrer Wahl. Leistung und Überzeugung werden empfohlen, wenn Sie diese beherrschen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Auf Bardenstufe 9 erwerben Sie Fachwissen in zwei weiteren Fertigkeiten Ihrer Wahl."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 2: Alleskönner"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können die Hälfte Ihres Uebungsbonus (abgerundet) zu jeder Fähigkeitsüberprüfung hinzufügen, die Sie durchführen und die eine Fertigkeitskompetenz verwendet, die Ihnen fehlt, und die Ihren Uebungsbonus ansonsten nicht nutzt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie beispielsweise einen Krafttest (Leichtathletik) durchführen und keine Leichtathletikkenntnisse haben, können Sie die Hälfte Ihres Übungsbonus zum Check hinzufügen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Barden-Unterklasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine Barden-Unterklasse deiner Wahl. Die Unterklassen College of Dance, College of Glamour, College of Lore und College of Valor werden nach der Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Bardenstufen Funktionen verleiht. Für den Rest Ihrer Karriere erhalten Sie alle Merkmale Ihrer Unterklasse, die Ihrer Bardenstufe oder niedriger entsprechen."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Barden-Unterklassen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Name: College of Dance, College of Glamour, College of Lore, College of the Moon, College of Valor"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 4: Verbesserung der Fähigkeitsbewertung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Bardenstufen 8, 12 und 16."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 5: Quelle der Inspiration"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine Kurze oder Lange Rast abschließen, erhalten Sie jetzt alle verbrauchten Nutzungen von Bardeninspiration zurück."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie einen Zauberplatz aufwenden (keine Aktion erforderlich), um eine verbrauchte Anwendung von Bardeninspiration wiederzuerlangen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Gegenzauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können Musiknoten oder kraftvolle Worte verwenden, um geistesbeeinflussende Effekte zu unterbrechen. Wenn dir oder einer Kreatur im Umkreis von 30 Fuß um dich ein Rettungswurf gegen einen Effekt misslingt, der den Zustand „Bezaubert“ oder „Verängstigt“ auslöst, kannst du eine Reaktion ausführen, um den Rettungswurf erneut zu würfeln, und der neue Wurf hat einen Vorteil."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Magische Geheimnisse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast Geheimnisse aus verschiedenen magischen Traditionen erfahren. Immer wenn Sie eine Bardenstufe erreichen (einschließlich dieser Stufe) und die Anzahl der vorbereiteten Zauber in der Tabelle „Bardentalente“ steigt, können Sie einen Ihrer neuen vorbereiteten Zauber aus den Zauberlisten „Barde“, „Kleriker“, „Druide“ und „Zauberer“ auswählen. Die ausgewählten Zauber gelten für Sie als Bardenzauber (die Zauberliste finden Sie im Abschnitt einer Klasse). Darüber hinaus können Sie jedes Mal, wenn Sie einen für diese Klasse vorbereiteten Zauber ersetzen, ihn durch einen Zauber aus diesen Listen ersetzen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 18: Überlegene Inspiration"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du Initiative würfelst, erhältst du verbrauchte Bardic Inspiration-Anwendungen zurück, bis du zwei hast, falls du weniger hast."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 19: Epischer Segen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Segen des Zauberrückrufs wird empfohlen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 20: Worte der Schöpfung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie beherrschen zwei der Worte der Schöpfung: die Worte von Leben und Tod. Sie haben daher immer die Zauber „Machtwort: Heilen“ und „Machtwort: Töten“ parat. Wenn du einen der beiden Zauber wirkst, kannst du damit eine zweite Kreatur anvisieren, wenn sich diese Kreatur innerhalb von 10 Fuß vom ersten Ziel befindet."
+    }
+  ],
+  "text": "Barden beschwören Magie durch Musik, Tanz und Verse und sind Experten darin, andere zu inspirieren, Verletzungen zu lindern, Feinde zu entmutigen und Illusionen zu erzeugen. Barden glauben, dass das Multiversum durch Worte ins Leben gerufen wurde und dass Überreste seiner Worte der Schöpfung immer noch auf jeder Ebene der Existenz erklingen und schimmern. Bardische Magie versucht, sich diese Worte zunutze zu machen, die über jede Sprache hinausgehen.\n\nAlles kann die Inspiration für ein neues Lied oder eine neue Geschichte sein, daher sind Barden von fast allem fasziniert. Sie beherrschen viele Dinge, darunter das Aufführen von Musik, das Wirken von Magie und das Machen von Scherzen.\n\nDas Leben eines Barden verbringt er damit, zu reisen, Wissen zu sammeln, Geschichten zu erzählen und von der Dankbarkeit des Publikums zu leben, genau wie jeder andere Entertainer. Aber Barden zeichnen sich durch ihr tiefes Wissen und ihre Beherrschung der Magie aus.\n\nKerneigenschaften des Barden: Primärfähigkeit: Charisma, Trefferpunkt, Würfel, D8 pro Bardenstufe, Rettungswurf-Fähigkeiten, Geschicklichkeit und Charisma, Fertigkeiten, Fertigkeiten. Wählen Sie drei beliebige Fertigkeiten. oder (B) 90 GP\n\nEin Barde werden …\n\nAls Charakter der Stufe 1\n\nErhalte alle Eigenschaften in der Tabelle „Kernbardeneigenschaften“. Erhalten Sie die Level-1-Funktionen des Barden, die in der Tabelle „Bardentalente“ aufgeführt sind.\n\nAls Multiklassen-Charakter\n\nErhalten Sie die folgenden Eigenschaften aus der Tabelle „Kernbardeneigenschaften“: Trefferpunktwürfel, Kenntnisse in einer Fertigkeit Ihrer Wahl, Kenntnisse im Umgang mit einem Musikinstrument Ihrer Wahl und Training mit leichter Rüstung. Erhalten Sie die Level-1-Funktionen des Barden, die in der Tabelle „Bardentalente“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen.\n\nTalente der Bardenklasse\n\nBardentalente (Teil A)\n\nLevel Uebungsbonus Talentures Bardic Würfel 1 +2 Bardic Inspiration, Zauber D6 2 +2 Expertise, Alleskönner D6 3 +2 Bard Subclass D6 4 +2 Ability Score Improvement D6 5 +3 Font of Inspiration D8 6 +3 Subclass Feature D8 7 +3 Counterzauber D8 8 +3 Ability Score Improvement D8 9 +4 Expertise D8 10 +4 Magische Geheimnisse D10 11 +4 – D10 12 +4 Verbesserung des Fähigkeitswerts D10 13 +5 – D10 14 +5 Unterklassenmerkmal D10 15 +5 – D12 16 +5 Verbesserung des Fähigkeitswerts D12 17 +6 – D12 18 +6 Überlegene Inspiration D12 19 +6 Epischer Segen D12 20 +6 Worte der Schöpfung D12\n\nBardentalente (Teil B)\n\nStufe Zaubertricks Vorbereitete Zauber 1. 2. 3. 4. 5. 6. 7. 8. 9. 1 2 4 2 - - - - - - - - 2 2 5 3 - - - - - - - - 3 2 6 4 2 - - - - - - - 4 3 7 4 3 - - - - - - - 5 3 9 4 3 2 - - - - - - 6 3 10 4 3 3 - - - - - - 7 3 11 4 3 3 1 - - - - - 8 3 12 4 3 3 2 - - - - - 9 3 14 4 3 3 3 1 - - - - 10 4 15 4 3 3 3 2 - - - - 11 4 16 4 3 3 3 2 1 - - - 12 4 16 4 3 3 3 2 1 - - - 13 4 17 4 3 3 3 2 1 1 - - 14 4 17 4 3 3 3 2 1 1 - - 15 4 18 4 3 3 3 2 1 1 1 - 16 4 18 4 3 3 3 2 1 1 1 - 17 4 19 4 3 3 3 2 1 1 1 1 18 4 20 4 3 3 3 3 1 1 1 1 19 4 21 4 3 3 3 3 2 1 1 1 20 4 22 4 3 3 3 3 2 2 1 1\n\nAls Barde erhältst du die folgenden Klassenmerkmale, wenn du die angegebenen Bardenstufen erreichst. Diese Eigenschaften sind in der Tabelle „Bardentalente“ aufgeführt.\n\nStufe 1: Bardische Inspiration\n\nSie können andere durch Worte, Musik oder Tanz auf übernatürliche Weise inspirieren. Diese Inspiration wird durch Ihren bardischen Inspirationswürfel repräsentiert, der ein W6 ist.\n\nBardische Inspiration nutzen. Als Bonusaktion können Sie eine andere Kreatur in einem Umkreis von 60 Fuß um Sie herum inspirieren, die Sie sehen oder hören kann. Diese Kreatur erhält einen deiner bardischen Inspirationswürfel. Eine Kreatur kann jeweils nur einen bardischen Inspirationswürfel haben.\n\nSobald die Kreatur innerhalb der nächsten Stunde einen W20-Test nicht besteht, kann sie den Bardic Inspiration-Würfel würfeln und die gewürfelte Zahl zum W20 addieren, wodurch der Misserfolg möglicherweise in einen Erfolg umgewandelt wird. Ein bardischer Inspirationswürfel wird verbraucht, wenn er gewürfelt wird.\n\nAnzahl der Verwendungen. Du kannst einen bardischen Inspirationswürfel so oft verleihen, wie es deinem Charisma-Modifikator entspricht (mindestens einmal), und du erhältst alle verbrauchten Verwendungen zurück, wenn du eine Lange Rast beendet hast.\n\nAuf höheren Ebenen. Ihr bardischer Inspirationswürfel ändert sich, wenn Sie bestimmte Bardenstufen erreichen, wie in der Spalte „Bardenwürfel“ der Tabelle „Bardentalente“ angezeigt. Der Würfel wird auf Stufe 5 zu einem W8, auf Stufe 10 zu einem W10 und auf Stufe 15 zu einem W12.\n\nStufe 1: Zaubern\n\nDu hast durch deine bardischen Künste gelernt, Zauber zu wirken. Die Regeln zum Zaubern finden Sie in Kapitel 7. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln mit Bardenzaubern anwenden, die später in der Klassenbeschreibung in der Liste der Bardenzauber erscheinen.\n\nZaubertricks. Du kennst zwei Cantrips deiner Wahl aus der Liste der Bardenzauber. Tanzende Lichter und bösartiger Spott werden empfohlen.\n\nImmer wenn Sie eine Bardenstufe erreichen, können Sie einen Ihrer Cantrips durch einen anderen Cantrip Ihrer Wahl aus der Liste der Bardenzauber ersetzen.\n\nWenn Sie die Bardenstufen 4 und 10 erreichen, lernen Sie einen weiteren Cantrip Ihrer Wahl aus der Liste der Bardenzauber, wie in der Spalte „Zaubertricks“ der Tabelle „Bardentalente“ aufgeführt.\n\nZauberplatz. Die Tabelle „Bardentalente“ zeigt, wie viele Zauberslots Ihnen zum Wirken Ihrer Zauber der Stufe 1+ zur Verfügung stehen. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt.\n\nVorbereitete Zauber der Stufe 1+. Sie bereiten die Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst vier Zaubersprüche der Stufe 1 aus der Liste der Bardenzauber aus. Empfohlen werden „Charm Person“, „Color Spray“, „Dissonant Whispers“ und „Healing Word“.\n\nDie Anzahl der Zauber auf Ihrer Liste erhöht sich mit zunehmender Bardenstufe, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Bardentalente“ angezeigt. Immer wenn sich diese Zahl erhöht, wähle weitere Zauber aus der Liste der Bardenzauber, bis die Anzahl der Zauber auf deiner Liste mit der Zahl auf der Tabelle übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Barde der Stufe 3 sind, kann Ihre Liste der vorbereiteten Zaubersprüche sechs Zaubersprüche der Stufen 1 und 2 in beliebiger Kombination enthalten.\n\nWenn Ihnen eine andere Bardenfunktion Zauber verleiht, die Sie schon immer vorbereitet haben, zählen diese Zauber nicht zu der Anzahl der Zauber, die Sie mit dieser Funktion vorbereiten können. Ansonsten zählen diese Zauber für Sie jedoch als Bardenzauber.\n\nÄndern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie eine Bardenstufe erreichen, können Sie einen Zauber auf Ihrer Liste durch einen anderen Bardenzauber ersetzen, für den Sie Zauberplätze haben.\n\nZauberfähigkeit. Charisma ist Ihre Zauberfähigkeit für Ihre Bardenzauber.\n\nZauberfokus. Sie können ein Musikinstrument als Zauberfokus für Ihre Bardenzauber verwenden.\n\nStufe 2: Fachwissen\n\nSie erwerben Fachwissen (siehe Regelglossar) in zwei Ihrer Fertigkeitsfertigkeiten Ihrer Wahl. Leistung und Überzeugung werden empfohlen, wenn Sie diese beherrschen.\n\nAuf Bardenstufe 9 erwerben Sie Fachwissen in zwei weiteren Fertigkeiten Ihrer Wahl.\n\nLevel 2: Alleskönner\n\nSie können die Hälfte Ihres Uebungsbonus (abgerundet) zu jeder Fähigkeitsüberprüfung hinzufügen, die Sie durchführen und die eine Fertigkeitskompetenz verwendet, die Ihnen fehlt, und die Ihren Uebungsbonus ansonsten nicht nutzt.\n\nWenn Sie beispielsweise einen Krafttest (Leichtathletik) durchführen und keine Leichtathletikkenntnisse haben, können Sie die Hälfte Ihres Übungsbonus zum Check hinzufügen.\n\nLevel 3: Barden-Unterklasse\n\nDu erhältst eine Barden-Unterklasse deiner Wahl. Die Unterklassen College of Dance, College of Glamour, College of Lore und College of Valor werden nach der Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Bardenstufen Funktionen verleiht. Für den Rest Ihrer Karriere erhalten Sie alle Merkmale Ihrer Unterklasse, die Ihrer Bardenstufe oder niedriger entsprechen.\n\nBarden-Unterklassen\n\nName: College of Dance, College of Glamour, College of Lore, College of the Moon, College of Valor\n\nStufe 4: Verbesserung der Fähigkeitsbewertung\n\nDu erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Bardenstufen 8, 12 und 16.\n\nStufe 5: Quelle der Inspiration\n\nWenn Sie eine Kurze oder Lange Rast abschließen, erhalten Sie jetzt alle verbrauchten Nutzungen von Bardeninspiration zurück.\n\nDarüber hinaus können Sie einen Zauberplatz aufwenden (keine Aktion erforderlich), um eine verbrauchte Anwendung von Bardeninspiration wiederzuerlangen.\n\nLevel 7: Gegenzauber\n\nSie können Musiknoten oder kraftvolle Worte verwenden, um geistesbeeinflussende Effekte zu unterbrechen. Wenn dir oder einer Kreatur im Umkreis von 30 Fuß um dich ein Rettungswurf gegen einen Effekt misslingt, der den Zustand „Bezaubert“ oder „Verängstigt“ auslöst, kannst du eine Reaktion ausführen, um den Rettungswurf erneut zu würfeln, und der neue Wurf hat einen Vorteil.\n\nLevel 10: Magische Geheimnisse\n\nDu hast Geheimnisse aus verschiedenen magischen Traditionen erfahren. Immer wenn Sie eine Bardenstufe erreichen (einschließlich dieser Stufe) und die Anzahl der vorbereiteten Zauber in der Tabelle „Bardentalente“ steigt, können Sie einen Ihrer neuen vorbereiteten Zauber aus den Zauberlisten „Barde“, „Kleriker“, „Druide“ und „Zauberer“ auswählen. Die ausgewählten Zauber gelten für Sie als Bardenzauber (die Zauberliste finden Sie im Abschnitt einer Klasse). Darüber hinaus können Sie jedes Mal, wenn Sie einen für diese Klasse vorbereiteten Zauber ersetzen, ihn durch einen Zauber aus diesen Listen ersetzen.\n\nStufe 18: Überlegene Inspiration\n\nWenn du Initiative würfelst, erhältst du verbrauchte Bardic Inspiration-Anwendungen zurück, bis du zwei hast, falls du weniger hast.\n\nLevel 19: Epischer Segen\n\nDu erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Segen des Zauberrückrufs wird empfohlen.\n\nLevel 20: Worte der Schöpfung\n\nSie beherrschen zwei der Worte der Schöpfung: die Worte von Leben und Tod. Sie haben daher immer die Zauber „Machtwort: Heilen“ und „Machtwort: Töten“ parat. Wenn du einen der beiden Zauber wirkst, kannst du damit eine zweite Kreatur anvisieren, wenn sich diese Kreatur innerhalb von 10 Fuß vom ersten Ziel befindet.",
+  "tags": [],
+  "hit_die": 8,
+  "primary_abilities": [
+    "cha"
+  ],
+  "proficiencies": {
+    "saving_throws": [
+      "dex",
+      "cha"
+    ],
+    "armor": [
+      "Leichte Rüstung"
+    ],
+    "weapons": [
+      "Einfache Waffen"
+    ],
+    "tools": [
+      "Wählen Sie 3 Musikinstrumente"
+    ]
+  },
+  "skill_choices": {
+    "choose": 0,
+    "options": [
+      "Wähle 3 beliebige Fähigkeiten"
+    ]
+  },
+  "spellcasting": {
+    "ability": "cha",
+    "progression": "full",
+    "preparation_formula": null,
+    "known_formula": null,
+    "focus_types": [
+      "Sie können ein Musikinstrument als Zauberfokus für Ihre Bardenzauber verwenden"
+    ],
+    "spell_list_names": [
+      "Barde",
+      "Bard"
+    ],
+    "uses_spell_slots": true
+  },
+  "starting_equipment": {
+    "fixed": [],
+    "choices": []
+  },
+  "multiclass_requirements": {
+    "minimum_abilities": {}
+  },
+  "levels": [
+    {
+      "level": 1,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Bardische Inspiration",
+        "Zauberei"
+      ],
+      "bardischer wuerfel": "D6",
+      "cantrips_known": 2,
+      "prepared_spells": 4,
+      "spell_slots": {
+        "1": 2
+      }
+    },
+    {
+      "level": 2,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Fachkompetenz",
+        "Alleskönner"
+      ],
+      "bardischer wuerfel": "D6",
+      "cantrips_known": 2,
+      "prepared_spells": 5,
+      "spell_slots": {
+        "1": 3
+      }
+    },
+    {
+      "level": 3,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Barden-Unterklasse"
+      ],
+      "bardischer wuerfel": "D6",
+      "cantrips_known": 2,
+      "prepared_spells": 6,
+      "spell_slots": {
+        "1": 4,
+        "2": 2
+      }
+    },
+    {
+      "level": 4,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "bardischer wuerfel": "D6",
+      "cantrips_known": 3,
+      "prepared_spells": 7,
+      "spell_slots": {
+        "1": 4,
+        "2": 3
+      }
+    },
+    {
+      "level": 5,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Schriftart der Inspiration"
+      ],
+      "bardischer wuerfel": "D8",
+      "cantrips_known": 3,
+      "prepared_spells": 9,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 2
+      }
+    },
+    {
+      "level": 6,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Unterklassenfunktion"
+      ],
+      "bardischer wuerfel": "D8",
+      "cantrips_known": 3,
+      "prepared_spells": 10,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3
+      }
+    },
+    {
+      "level": 7,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Gegenzauber"
+      ],
+      "bardischer wuerfel": "D8",
+      "cantrips_known": 3,
+      "prepared_spells": 11,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1
+      }
+    },
+    {
+      "level": 8,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "bardischer wuerfel": "D8",
+      "cantrips_known": 3,
+      "prepared_spells": 12,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2
+      }
+    },
+    {
+      "level": 9,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Sachverstand"
+      ],
+      "bardischer wuerfel": "D8",
+      "cantrips_known": 3,
+      "prepared_spells": 14,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1
+      }
+    },
+    {
+      "level": 10,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Magische Geheimnisse"
+      ],
+      "bardischer wuerfel": "D10",
+      "cantrips_known": 4,
+      "prepared_spells": 15,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2
+      }
+    },
+    {
+      "level": 11,
+      "proficiency_bonus": "+4",
+      "bardischer wuerfel": "D10",
+      "cantrips_known": 4,
+      "prepared_spells": 16,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      }
+    },
+    {
+      "level": 12,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "bardischer wuerfel": "D10",
+      "cantrips_known": 4,
+      "prepared_spells": 16,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      }
+    },
+    {
+      "level": 13,
+      "proficiency_bonus": "+5",
+      "bardischer wuerfel": "D10",
+      "cantrips_known": 4,
+      "prepared_spells": 17,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      }
+    },
+    {
+      "level": 14,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Unterklassenfunktion"
+      ],
+      "bardischer wuerfel": "D10",
+      "cantrips_known": 4,
+      "prepared_spells": 17,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      }
+    },
+    {
+      "level": 15,
+      "proficiency_bonus": "+5",
+      "bardischer wuerfel": "D12",
+      "cantrips_known": 4,
+      "prepared_spells": 18,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      }
+    },
+    {
+      "level": 16,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "bardischer wuerfel": "D12",
+      "cantrips_known": 4,
+      "prepared_spells": 18,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      }
+    },
+    {
+      "level": 17,
+      "proficiency_bonus": "+6",
+      "bardischer wuerfel": "D12",
+      "cantrips_known": 4,
+      "prepared_spells": 19,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 18,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Überlegene Inspiration"
+      ],
+      "bardischer wuerfel": "D12",
+      "cantrips_known": 4,
+      "prepared_spells": 20,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 19,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Epischer Segen"
+      ],
+      "bardischer wuerfel": "D12",
+      "cantrips_known": 4,
+      "prepared_spells": 21,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 20,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Worte der Schöpfung"
+      ],
+      "bardischer wuerfel": "D12",
+      "cantrips_known": 4,
+      "prepared_spells": 22,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 1
+      }
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Hochschule für Tanz",
+      "original_name": "College of Dance",
+      "id": "hochschule-fur-tanz",
+      "source_url": "http://dnd2024.wikidot.com/bard:college-of-dance",
+      "file": "subclasses/hochschule-fur-tanz.json"
+    },
+    {
+      "name": "Hochschule für Glamour",
+      "original_name": "College of Glamour",
+      "id": "hochschule-fur-glamour",
+      "source_url": "http://dnd2024.wikidot.com/bard:college-of-glamour",
+      "file": "subclasses/hochschule-fur-glamour.json"
+    },
+    {
+      "name": "Hochschule für Überlieferungen",
+      "original_name": "College of Lore",
+      "id": "hochschule-fur-uberlieferungen",
+      "source_url": "http://dnd2024.wikidot.com/bard:college-of-lore",
+      "file": "subclasses/hochschule-fur-uberlieferungen.json"
+    },
+    {
+      "name": "Hochschule des Mondes",
+      "original_name": "College of the Moon",
+      "id": "hochschule-des-mondes",
+      "source_url": "http://dnd2024.wikidot.com/bard:college-of-the-moon",
+      "file": "subclasses/hochschule-des-mondes.json"
+    },
+    {
+      "name": "College of Valor",
+      "original_name": "College of Valor",
+      "id": "college-of-valor",
+      "source_url": "http://dnd2024.wikidot.com/bard:college-of-valor",
+      "file": "subclasses/college-of-valor.json"
+    }
+  ],
+  "subclass_index": [
+    "college-of-valor.json",
+    "hochschule-des-mondes.json",
+    "hochschule-fur-glamour.json",
+    "hochschule-fur-tanz.json",
+    "hochschule-fur-uberlieferungen.json"
+  ]
+}

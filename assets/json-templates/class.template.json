@@ -1,0 +1,59 @@
+{
+  "id": "<class-id>",
+  "type": "class",
+  "name": "<Class Name>",
+  "original_name": "<Original Class Name>",
+  "rules_version": "2024",
+  "source": "<source>",
+  "source_url": null,
+  "source_page": null,
+  "license": {
+    "name": "",
+    "spdx": "",
+    "url": ""
+  },
+  "translation_note": "",
+  "category": "Klassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "",
+  "entries": [],
+  "tags": [],
+  "hit_die": 8,
+  "primary_abilities": [],
+  "proficiencies": {
+    "saving_throws": [],
+    "armor": [],
+    "weapons": [],
+    "tools": []
+  },
+  "skill_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "spellcasting": {
+    "ability": null,
+    "progression": null,
+    "preparation_formula": null,
+    "known_formula": null,
+    "focus_types": []
+  },
+  "starting_equipment": {
+    "fixed": [],
+    "choices": []
+  },
+  "multiclass_requirements": {
+    "minimum_abilities": {}
+  },
+  "levels": [
+    {
+      "level": 1,
+      "feature_ids": [],
+      "spell_slots": {},
+      "cantrips_known": null
+    }
+  ],
+  "subclasses": [],
+  "subclass_index": [],
+  "text": ""
+}

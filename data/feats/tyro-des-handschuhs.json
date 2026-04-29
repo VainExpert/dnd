@@ -1,0 +1,50 @@
+{
+  "id": "tyro-des-handschuhs",
+  "type": "feat",
+  "name": "Tyro des Handschuhs",
+  "original_name": "Tyro of the Gauntlet",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:tyro-of-the-gauntlet",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Ursprungstalent",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Ursprungstalent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Stehen Sie als Einheit. Wenn ein Verbündeter in einem Umkreis von 5 Fuß um dich herum einem Effekt ausgesetzt ist, der ihn stoßen oder ziehen würde, kannst du eine Reaktion durchführen, um zu verhindern, dass dieser Verbündete gestoßen oder gezogen wird. Um diesen Vorteil zu erhalten, darf der Verbündete nicht über die Bedingung „Kampfunfähigkeit“ verfügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wachsam. Wenn Sie die Aktion „Bereit“ ausführen, hat der nächste Angriffswurf gegen Sie vor Beginn Ihres nächsten Zuges einen Nachteil."
+    }
+  ],
+  "text": "Ursprungstalent\n\nSie profitieren von folgenden Vorteilen.\n\nStehen Sie als Einheit. Wenn ein Verbündeter in einem Umkreis von 5 Fuß um dich herum einem Effekt ausgesetzt ist, der ihn stoßen oder ziehen würde, kannst du eine Reaktion durchführen, um zu verhindern, dass dieser Verbündete gestoßen oder gezogen wird. Um diesen Vorteil zu erhalten, darf der Verbündete nicht über die Bedingung „Kampfunfähigkeit“ verfügen.\n\nWachsam. Wenn Sie die Aktion „Bereit“ ausführen, hat der nächste Angriffswurf gegen Sie vor Beginn Ihres nächsten Zuges einen Nachteil.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

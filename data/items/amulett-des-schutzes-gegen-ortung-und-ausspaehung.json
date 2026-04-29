@@ -4,8 +4,7 @@
   "name": "Amulett des Schutzes gegen Ortung und Ausspähung",
   "vendors": [
     "Ishmar's Magisches Allerlei",
-    "Zaubererturm",
-    "Beute"
+    "Zaubererturm"
   ],
   "rules_version": "2024",
   "source": "DMG'24",
@@ -39,7 +38,9 @@
   "granted_action_ids": [],
   "granted_spell_ids": [],
   "contained_item_ids": [],
-  "effects": ["Schutz vor Erkenntnismagie"],
+  "effects": [
+    "Schutz vor Erkenntnismagie"
+  ],
   "use_cost": null,
   "text": "Wenn du dieses Amulett trägst, bist du vor Erkenntnismagie versteckt. Du kannst nicht das Ziel solcher Magie sein oder durch magische Ausspähungssensoren wahrgenommen werden.",
   "tags": [

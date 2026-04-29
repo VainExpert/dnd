@@ -1,0 +1,59 @@
+{
+  "id": "beobachter",
+  "type": "feat",
+  "name": "Beobachter",
+  "original_name": "Observant",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:observant",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Intelligenz oder Weisheit 13+"
+  ],
+  "summary": "Voraussetzung: Level 4+, Intelligenz oder Weisheit 13+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, Intelligenz oder Weisheit 13+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz- oder Weisheitswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Scharfer Beobachter. Wählen Sie eine der folgenden Fähigkeiten: Einsicht, Untersuchung oder Wahrnehmung. Wenn Sie die gewählte Fertigkeit nicht beherrschen, erwerben Sie Kenntnisse darin, und wenn Sie bereits über Kenntnisse darin verfügen, erwerben Sie Fachwissen darin."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schnellsuche. Sie können die Suchaktion als Bonusaktion nutzen."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, Intelligenz oder Weisheit 13+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz- oder Weisheitswert um 1 auf maximal 20.\n\nScharfer Beobachter. Wählen Sie eine der folgenden Fähigkeiten: Einsicht, Untersuchung oder Wahrnehmung. Wenn Sie die gewählte Fertigkeit nicht beherrschen, erwerben Sie Kenntnisse darin, und wenn Sie bereits über Kenntnisse darin verfügen, erwerben Sie Fachwissen darin.\n\nSchnellsuche. Sie können die Suchaktion als Bonusaktion nutzen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "wis"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

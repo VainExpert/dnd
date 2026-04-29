@@ -71,8 +71,9 @@
     </div>
   </div>
 
+  <script src="../nav.js"></script>
   <script type="module">
-    import { escapeHtml } from "../lib.js";
+    import { escapeHtml, renderRichText } from "../lib.js";
 
     const qEl = document.getElementById("q");
     const tagEl = document.getElementById("tag");
@@ -117,7 +118,7 @@
       if (m.tags && m.tags.length) metaParts.push(m.tags.join(", "));
       const sz = getSizeLabel(m);
       if (sz) metaParts.push(sz);
-      modalMeta.textContent = metaParts.join(" • ");
+      modalMeta.innerHTML = metaParts.map(part => renderRichText(part, { inlineOnly: true })).join(" &bull; ");
       modal.style.display = "block";
     }
 

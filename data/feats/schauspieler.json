@@ -1,0 +1,59 @@
+{
+  "id": "schauspieler",
+  "type": "feat",
+  "name": "Schauspieler",
+  "original_name": "Actor",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:actor",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Charisma 13+"
+  ],
+  "summary": "Voraussetzung: Level 4+, Charisma 13+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, Charisma 13+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe deinen Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Identitätswechsel. Während Sie als reale oder fiktive Person getarnt sind, verfügen Sie über einen Vorteil bei Charisma-Prüfungen (Täuschung oder Leistung), um andere davon zu überzeugen, dass Sie diese Person sind."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mimikry. Sie können die Geräusche anderer Lebewesen nachahmen, einschließlich der Sprache. Eine Kreatur, die die Nachahmung hört, muss einen Wurf auf Weisheit (Einsicht) bestehen, um festzustellen, dass der Effekt vorgetäuscht ist (SG 8 plus Ihr Charisma-Modifikator und Uebungsbonus)."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, Charisma 13+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe deinen Charisma-Wert um 1 auf maximal 20.\n\nIdentitätswechsel. Während Sie als reale oder fiktive Person getarnt sind, verfügen Sie über einen Vorteil bei Charisma-Prüfungen (Täuschung oder Leistung), um andere davon zu überzeugen, dass Sie diese Person sind.\n\nMimikry. Sie können die Geräusche anderer Lebewesen nachahmen, einschließlich der Sprache. Eine Kreatur, die die Nachahmung hört, muss einen Wurf auf Weisheit (Einsicht) bestehen, um festzustellen, dass der Effekt vorgetäuscht ist (SG 8 plus Ihr Charisma-Modifikator und Uebungsbonus).",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "zauberscharfschuetze",
+  "type": "feat",
+  "name": "Zauberscharfschuetze",
+  "original_name": "Spell Sniper",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:spell-sniper",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Zauber- oder Paktmagie-Talent"
+  ],
+  "summary": "Voraussetzung: Stufe 4+, Zauberkunst oder Paktmagie-Talent",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Stufe 4+, Zauberkunst oder Paktmagie-Talent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bypass-Abdeckung. Deine Angriffswürfe für Zauber ignorieren Halbe Deckung und Dreiviertel-Deckung."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wirken im Nahkampf. Wenn Sie sich in einem Umkreis von 5 Fuß um einen Feind aufhalten, bedeutet dies keinen Nachteil für Ihre Angriffswürfe mit Zaubersprüchen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhte Reichweite. Wenn Sie einen Zauber wirken, der eine Reichweite von mindestens 10 Fuß hat und einen Angriffswurf erfordert, können Sie die Reichweite des Zaubers um 60 Fuß erhöhen."
+    }
+  ],
+  "text": "Voraussetzung: Stufe 4+, Zauberkunst oder Paktmagie-Talent\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20.\n\nBypass-Abdeckung. Deine Angriffswürfe für Zauber ignorieren Halbe Deckung und Dreiviertel-Deckung.\n\nWirken im Nahkampf. Wenn Sie sich in einem Umkreis von 5 Fuß um einen Feind aufhalten, bedeutet dies keinen Nachteil für Ihre Angriffswürfe mit Zaubersprüchen.\n\nErhöhte Reichweite. Wenn Sie einen Zauber wirken, der eine Reichweite von mindestens 10 Fuß hat und einen Angriffswurf erfordert, können Sie die Reichweite des Zaubers um 60 Fuß erhöhen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

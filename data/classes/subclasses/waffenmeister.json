@@ -1,0 +1,264 @@
+{
+  "id": "waffenmeister",
+  "type": "subclass",
+  "name": "Waffenmeister",
+  "original_name": "Armorer",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/artificer:armorer",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Stelle magische Rüstungen her, um deine Fähigkeiten zu verbessern. Ein Waffenschmied modifiziert Rüstungen so, dass sie fast wie eine zweite Haut funktionieren. Die Rüstung wird verbessert, um die Magie des Waffenschmieds zu verbessern, mächtige Angriffe zu entfesseln und eine beeindruckende Verteidigung zu erzeugen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Stelle magische Rüstungen her, um deine Fähigkeiten zu verbessern. Ein Waffenschmied modifiziert Rüstungen so, dass sie fast wie eine zweite Haut funktionieren. Die Rüstung wird verbessert, um die Magie des Waffenschmieds zu verbessern, mächtige Angriffe zu entfesseln und eine beeindruckende Verteidigung zu erzeugen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Handwerkszeug"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rüstungstraining. Du erhältst eine Ausbildung mit schwerer Rüstung."
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse. Sie erwerben Kenntnisse im Umgang mit Smith’s Tools. Wenn Sie bereits über diese Werkzeugkenntnisse verfügen, erwerben Sie Kenntnisse im Umgang mit einer anderen Art von Handwerkswerkzeugen Ihrer Wahl."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rüstungsherstellung. Wenn Sie nichtmagische oder magische Rüstungen herstellen, halbiert sich die für die Herstellung erforderliche Zeit."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Rüstungszauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine in der Waffenschmied-Zaubertabelle angegebene Stufe als Kunsthandwerker erreichen, stehen Ihnen danach immer die aufgeführten Zauber zur Verfügung."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Rüstungszauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Artificer-Stufe",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Magische Rakete, Donnerwelle"
+        ],
+        [
+          "5",
+          "Spiegelbild, zerbrechen"
+        ],
+        [
+          "9",
+          "Hypnotisches Muster, Blitz"
+        ],
+        [
+          "13",
+          "Feuerschild, größere Unsichtbarkeit"
+        ],
+        [
+          "17",
+          "Passwall, Mauer der Macht"
+        ]
+      ],
+      "text": "Magier-Stufenzauber: 3 Magisches Geschoss, Donnerwelle, 5 Spiegelbild, Zerschmettern, 9 Hypnotisches Muster, Blitzschlag, 13 Feuerschild, Große Unsichtbarkeit, 17 Passmauer, Mauer der Macht"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Arkane Rüstung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als magische Aktion können Sie, während Sie Smiths Werkzeuge in der Hand haben, eine Rüstung, die Sie tragen, in eine arkane Rüstung verwandeln. Die Rüstung bleibt eine arkane Rüstung, bis Sie eine andere Rüstung anlegen oder sterben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Ihre arkane Rüstung tragen, erhalten Sie die folgenden Vorteile."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keine Kraftanforderung. Wenn die Rüstung normalerweise eine Stärkeanforderung hat, fehlt diese Anforderung bei der Arkanen Rüstung für Sie."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schnelles An- und Ausziehen. Sie können die Rüstung als Nutzen-Aktion an- oder ausziehen. Die Rüstung kann nicht gegen deinen Willen entfernt werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfokus. Sie können die arkane Rüstung als Zauberfokus für Ihre Artificer-Zauber verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Rüstungsmodell"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können Ihre arkane Rüstung anpassen. Wählen Sie dabei eines der folgenden Rüstungsmodelle: Dreadnaught, Guardian oder Infiltrator. Das von Ihnen gewählte Modell bietet Ihnen besondere Vorteile beim Tragen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Jedes Modell enthält eine Spezialwaffe. Wenn Sie mit dieser Waffe angreifen, können Sie Ihren Intelligenzmodifikator anstelle Ihres Stärke- oder Geschicklichkeitsmodifikators zu den Angriffs- und Schadenswürfen hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können das Modell der Rüstung jedes Mal ändern, wenn Sie einen kurzen oder langen Rast abschließen, wenn Sie Smith’s Tools in der Hand haben."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Schreckensschiff."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie gestalten Ihre Rüstung so, dass sie im Kampf zu einem gewaltigen Moloch wird. Es verfügt über folgende Funktionen:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Zerstörer erzwingen. Eine arkane Abrissbirne oder ein Vorschlaghammer ragt aus deiner Rüstung hervor. Der Zerstörer zählt als einfache Nahkampfwaffe mit der Eigenschaft „Reichweite“ und verursacht bei einem Treffer 1W10 Machtschaden. Wenn du mit dem Zerstörer eine Kreatur triffst, die mindestens eine Größe kleiner ist als du selbst, kannst du die Kreatur bis zu 3 m direkt von dir wegstoßen oder sie bis zu 3 m auf dich zu ziehen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Riesige Statur. Als Bonusaktion verwandelst und vergrößerst du deine Rüstung für 1 Minute. Für die Dauer erhöht sich Ihre Reichweite um 5 Fuß, und wenn Sie kleiner als „Groß“ sind, werden Sie zu „Groß“, zusammen mit allem, was Sie tragen. Wenn nicht genügend Platz für eine Vergrößerung vorhanden ist, ändert sich Ihre Größe nicht. Sie können diese Bonusaktion mehrmals in Höhe Ihres Intelligenzmodifikators verwenden (mindestens einmal). Wenn Sie eine Lange Rast beenden, erhalten Sie alle verbrauchten Nutzungen zurück."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Wächter."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie entwerfen Ihre Rüstung so, dass sie an vorderster Front im Konflikt steht. Es verfügt über folgende Funktionen:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Donnerimpuls. Mit Schlägen aus Ihrer Rüstung können Sie erschütternde Explosionen abfeuern. Der Impuls zählt als einfache Nahkampfwaffe und verursacht bei einem Treffer 1W8 Donnerschaden. Eine vom Puls getroffene Kreatur hat bis zum Beginn deines nächsten Zuges einen Nachteil bei Angriffswürfen gegen andere Ziele als dich."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verteidigungsfeld. Während du blutig bist, kannst du eine Bonusaktion durchführen, um temporäre Trefferpunkte in Höhe deiner Artificer-Stufe zu erhalten. Diese temporären Trefferpunkte verlierst du, wenn du die Rüstung ablegst."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Eindringling."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie passen Ihre Rüstung für subtilere Unternehmungen an. Es verfügt über folgende Funktionen:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Blitzwerfer. Auf Ihrer Rüstung erscheint ein edelsteinartiger Knoten, von dem aus Sie Blitze abfeuern können. Der Werfer gilt als einfache Fernkampfwaffe mit einer normalen Reichweite von 90 Fuß und einer großen Reichweite von 300 Fuß und verursacht bei einem Treffer 1W6 Blitzschaden. Einmal in jedem deiner Züge, wenn du eine Kreatur mit dem Werfer triffst, kannst du diesem Ziel zusätzlich 1W6 Blitzschaden zufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Angetriebene Schritte. Deine Geschwindigkeit erhöht sich um 5 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dämpfungsfeld. Du hast einen Vorteil bei Geschicklichkeits- (Stealth-)Würfen. Wenn die Rüstung solchen Würfen einen Nachteil auferlegt, heben sich Vorteil und Nachteil wie üblich gegenseitig auf."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 5: Zusätzlicher Angriff"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst jedes Mal, wenn du in deinem Zug die Angriffsaktion ausführst, zweimal statt einmal angreifen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 9: Verbesserter Waffenschmied"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rüstungsreplikation. Sie lernen einen zusätzlichen Plan für Ihre Funktion „Magischen Gegenstand replizieren“ kennen, der zur Kategorie „Rüstung“ gehören muss. Wenn Sie diesen Plan ersetzen, müssen Sie ihn durch einen anderen Rüstungsplan ersetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie mit dieser Funktion einen zusätzlichen Gegenstand erstellen, der ebenfalls zur Kategorie „Rüstung“ gehören muss."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbessertes Arsenal. Du erhältst einen Bonus von +1 auf Angriffs- und Schadenswürfe mit der Spezialwaffe deines Arcane Armor-Modells."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Perfektionierte Rüstung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre arkane Rüstung erhält je nach Modell zusätzliche Vorteile, wie unten beschrieben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schreckensschiff. Der Schadenswürfel deines Machtzerstörers erhöht sich auf 2W6 Machtschaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie außerdem Ihre Riesenstatur verwenden, erhöht sich Ihre Reichweite um 10 Fuß, Ihre Größe kann auf „Groß“ oder „Riesig“ (Ihrer Wahl) erhöht werden und Sie haben für die Dauer einen Vorteil bei Stärkewürfen und Stärke-Rettungswürfen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wächter. Der Schadenswürfel Ihres Donnerimpulses erhöht sich auf 1W10 Donnerschaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn eine riesige oder kleinere Kreatur, die du siehst, ihren Zug in einem Umkreis von 30 Fuß um dich beendet, kannst du außerdem eine Reaktion ausführen, um diese Kreatur auf magische Weise zu einem Stärke-Rettungswurf gegen deinen Zauberwurf zu zwingen. Bei einem fehlgeschlagenen Rettungswurf ziehen Sie die Kreatur bis zu 25 Fuß direkt auf sich zu und an einen freien Platz. Wenn Sie das Ziel in einen Bereich innerhalb von 5 Fuß von Ihnen ziehen, können Sie im Rahmen dieser Reaktion einen Nahkampfwaffenangriff gegen es ausführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst diese Reaktion so oft ausführen, wie es deinem Intelligenzmodifikator entspricht (mindestens einmal), und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest."
+    },
+    {
+      "type": "paragraph",
+      "text": "Eindringling. Der Schadenswürfel Ihres Blitzwerfers erhöht sich auf 2W6 Blitzschaden. Jede Kreatur, die durch deinen Blitzwerfer Blitzschaden erleidet, schimmert bis zum Beginn deines nächsten Zuges in magischem Licht. Die schimmernde Kreatur strahlt schwaches Licht in einem Radius von 1,5 m aus und hat einen Nachteil bei Angriffswürfen gegen dich, da das Licht sie erschüttert, wenn sie dich angreift."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zusätzlich kannst du als Bonusaktion bis zum Ende der aktuellen Runde eine Fluggeschwindigkeit erhalten, die dem Doppelten deiner Geschwindigkeit entspricht. Du kannst diese Bonusaktion so oft ausführen, wie es deinem Intelligenzmodifikator entspricht (mindestens einmal), und du erhältst alle verbrauchten Einsätze zurück, wenn du eine Lange Rast beendest."
+    }
+  ],
+  "text": "Stelle magische Rüstungen her, um deine Fähigkeiten zu verbessern. Ein Waffenschmied modifiziert Rüstungen so, dass sie fast wie eine zweite Haut funktionieren. Die Rüstung wird verbessert, um die Magie des Waffenschmieds zu verbessern, mächtige Angriffe zu entfesseln und eine beeindruckende Verteidigung zu erzeugen.\n\nLevel 3: Handwerkszeug\n\nSie profitieren von folgenden Vorteilen.\n\nRüstungstraining. Du erhältst eine Ausbildung mit schwerer Rüstung.\n\nWerkzeugkenntnisse. Sie erwerben Kenntnisse im Umgang mit Smith’s Tools. Wenn Sie bereits über diese Werkzeugkenntnisse verfügen, erwerben Sie Kenntnisse im Umgang mit einer anderen Art von Handwerkswerkzeugen Ihrer Wahl.\n\nRüstungsherstellung. Wenn Sie nichtmagische oder magische Rüstungen herstellen, halbiert sich die für die Herstellung erforderliche Zeit.\n\nStufe 3: Rüstungszauber\n\nWenn Sie eine in der Waffenschmied-Zaubertabelle angegebene Stufe als Kunsthandwerker erreichen, stehen Ihnen danach immer die aufgeführten Zauber zur Verfügung.\n\nRüstungszauber\n\nMagier-Stufenzauber: 3 Magisches Geschoss, Donnerwelle, 5 Spiegelbild, Zerschmettern, 9 Hypnotisches Muster, Blitzschlag, 13 Feuerschild, Große Unsichtbarkeit, 17 Passmauer, Mauer der Macht\n\nLevel 3: Arkane Rüstung\n\nAls magische Aktion können Sie, während Sie Smiths Werkzeuge in der Hand haben, eine Rüstung, die Sie tragen, in eine arkane Rüstung verwandeln. Die Rüstung bleibt eine arkane Rüstung, bis Sie eine andere Rüstung anlegen oder sterben.\n\nWenn Sie Ihre arkane Rüstung tragen, erhalten Sie die folgenden Vorteile.\n\nKeine Kraftanforderung. Wenn die Rüstung normalerweise eine Stärkeanforderung hat, fehlt diese Anforderung bei der Arkanen Rüstung für Sie.\n\nSchnelles An- und Ausziehen. Sie können die Rüstung als Nutzen-Aktion an- oder ausziehen. Die Rüstung kann nicht gegen deinen Willen entfernt werden.\n\nZauberfokus. Sie können die arkane Rüstung als Zauberfokus für Ihre Artificer-Zauber verwenden.\n\nLevel 3: Rüstungsmodell\n\nSie können Ihre arkane Rüstung anpassen. Wählen Sie dabei eines der folgenden Rüstungsmodelle: Dreadnaught, Guardian oder Infiltrator. Das von Ihnen gewählte Modell bietet Ihnen besondere Vorteile beim Tragen.\n\nJedes Modell enthält eine Spezialwaffe. Wenn Sie mit dieser Waffe angreifen, können Sie Ihren Intelligenzmodifikator anstelle Ihres Stärke- oder Geschicklichkeitsmodifikators zu den Angriffs- und Schadenswürfen hinzufügen.\n\nSie können das Modell der Rüstung jedes Mal ändern, wenn Sie einen kurzen oder langen Rast abschließen, wenn Sie Smith’s Tools in der Hand haben.\n\nSchreckensschiff.\n\nSie gestalten Ihre Rüstung so, dass sie im Kampf zu einem gewaltigen Moloch wird. Es verfügt über folgende Funktionen:\n\nZerstörer erzwingen. Eine arkane Abrissbirne oder ein Vorschlaghammer ragt aus deiner Rüstung hervor. Der Zerstörer zählt als einfache Nahkampfwaffe mit der Eigenschaft „Reichweite“ und verursacht bei einem Treffer 1W10 Machtschaden. Wenn du mit dem Zerstörer eine Kreatur triffst, die mindestens eine Größe kleiner ist als du selbst, kannst du die Kreatur bis zu 3 m direkt von dir wegstoßen oder sie bis zu 3 m auf dich zu ziehen.\n\nRiesige Statur. Als Bonusaktion verwandelst und vergrößerst du deine Rüstung für 1 Minute. Für die Dauer erhöht sich Ihre Reichweite um 5 Fuß, und wenn Sie kleiner als „Groß“ sind, werden Sie zu „Groß“, zusammen mit allem, was Sie tragen. Wenn nicht genügend Platz für eine Vergrößerung vorhanden ist, ändert sich Ihre Größe nicht. Sie können diese Bonusaktion mehrmals in Höhe Ihres Intelligenzmodifikators verwenden (mindestens einmal). Wenn Sie eine Lange Rast beenden, erhalten Sie alle verbrauchten Nutzungen zurück.\n\nWächter.\n\nSie entwerfen Ihre Rüstung so, dass sie an vorderster Front im Konflikt steht. Es verfügt über folgende Funktionen:\n\nDonnerimpuls. Mit Schlägen aus Ihrer Rüstung können Sie erschütternde Explosionen abfeuern. Der Impuls zählt als einfache Nahkampfwaffe und verursacht bei einem Treffer 1W8 Donnerschaden. Eine vom Puls getroffene Kreatur hat bis zum Beginn deines nächsten Zuges einen Nachteil bei Angriffswürfen gegen andere Ziele als dich.\n\nVerteidigungsfeld. Während du blutig bist, kannst du eine Bonusaktion durchführen, um temporäre Trefferpunkte in Höhe deiner Artificer-Stufe zu erhalten. Diese temporären Trefferpunkte verlierst du, wenn du die Rüstung ablegst.\n\nEindringling.\n\nSie passen Ihre Rüstung für subtilere Unternehmungen an. Es verfügt über folgende Funktionen:\n\nBlitzwerfer. Auf Ihrer Rüstung erscheint ein edelsteinartiger Knoten, von dem aus Sie Blitze abfeuern können. Der Werfer gilt als einfache Fernkampfwaffe mit einer normalen Reichweite von 90 Fuß und einer großen Reichweite von 300 Fuß und verursacht bei einem Treffer 1W6 Blitzschaden. Einmal in jedem deiner Züge, wenn du eine Kreatur mit dem Werfer triffst, kannst du diesem Ziel zusätzlich 1W6 Blitzschaden zufügen.\n\nAngetriebene Schritte. Deine Geschwindigkeit erhöht sich um 5 Fuß.\n\nDämpfungsfeld. Du hast einen Vorteil bei Geschicklichkeits- (Stealth-)Würfen. Wenn die Rüstung solchen Würfen einen Nachteil auferlegt, heben sich Vorteil und Nachteil wie üblich gegenseitig auf.\n\nLevel 5: Zusätzlicher Angriff\n\nDu kannst jedes Mal, wenn du in deinem Zug die Angriffsaktion ausführst, zweimal statt einmal angreifen.\n\nLevel 9: Verbesserter Waffenschmied\n\nSie profitieren von folgenden Vorteilen.\n\nRüstungsreplikation. Sie lernen einen zusätzlichen Plan für Ihre Funktion „Magischen Gegenstand replizieren“ kennen, der zur Kategorie „Rüstung“ gehören muss. Wenn Sie diesen Plan ersetzen, müssen Sie ihn durch einen anderen Rüstungsplan ersetzen.\n\nDarüber hinaus können Sie mit dieser Funktion einen zusätzlichen Gegenstand erstellen, der ebenfalls zur Kategorie „Rüstung“ gehören muss.\n\nVerbessertes Arsenal. Du erhältst einen Bonus von +1 auf Angriffs- und Schadenswürfe mit der Spezialwaffe deines Arcane Armor-Modells.\n\nLevel 15: Perfektionierte Rüstung\n\nIhre arkane Rüstung erhält je nach Modell zusätzliche Vorteile, wie unten beschrieben.\n\nSchreckensschiff. Der Schadenswürfel deines Machtzerstörers erhöht sich auf 2W6 Machtschaden.\n\nWenn Sie außerdem Ihre Riesenstatur verwenden, erhöht sich Ihre Reichweite um 10 Fuß, Ihre Größe kann auf „Groß“ oder „Riesig“ (Ihrer Wahl) erhöht werden und Sie haben für die Dauer einen Vorteil bei Stärkewürfen und Stärke-Rettungswürfen.\n\nWächter. Der Schadenswürfel Ihres Donnerimpulses erhöht sich auf 1W10 Donnerschaden.\n\nWenn eine riesige oder kleinere Kreatur, die du siehst, ihren Zug in einem Umkreis von 30 Fuß um dich beendet, kannst du außerdem eine Reaktion ausführen, um diese Kreatur auf magische Weise zu einem Stärke-Rettungswurf gegen deinen Zauberwurf zu zwingen. Bei einem fehlgeschlagenen Rettungswurf ziehen Sie die Kreatur bis zu 25 Fuß direkt auf sich zu und an einen freien Platz. Wenn Sie das Ziel in einen Bereich innerhalb von 5 Fuß von Ihnen ziehen, können Sie im Rahmen dieser Reaktion einen Nahkampfwaffenangriff gegen es ausführen.\n\nDu kannst diese Reaktion so oft ausführen, wie es deinem Intelligenzmodifikator entspricht (mindestens einmal), und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest.\n\nEindringling. Der Schadenswürfel Ihres Blitzwerfers erhöht sich auf 2W6 Blitzschaden. Jede Kreatur, die durch deinen Blitzwerfer Blitzschaden erleidet, schimmert bis zum Beginn deines nächsten Zuges in magischem Licht. Die schimmernde Kreatur strahlt schwaches Licht in einem Radius von 1,5 m aus und hat einen Nachteil bei Angriffswürfen gegen dich, da das Licht sie erschüttert, wenn sie dich angreift.\n\nZusätzlich kannst du als Bonusaktion bis zum Ende der aktuellen Runde eine Fluggeschwindigkeit erhalten, die dem Doppelten deiner Geschwindigkeit entspricht. Du kannst diese Bonusaktion so oft ausführen, wie es deinem Intelligenzmodifikator entspricht (mindestens einmal), und du erhältst alle verbrauchten Einsätze zurück, wenn du eine Lange Rast beendest.",
+  "tags": [],
+  "class": "Artificer",
+  "class_id": "artificer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

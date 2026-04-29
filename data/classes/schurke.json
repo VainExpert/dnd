@@ -1,0 +1,742 @@
+{
+  "id": "schurke",
+  "type": "class",
+  "name": "Schurke",
+  "original_name": "Rogue",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/rogue:main",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Klassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Schurken verlassen sich auf List, Heimlichkeit und die Verwundbarkeit ihrer Feinde, um in jeder Situation die Oberhand zu gewinnen. Sie haben ein Händchen dafür, für nahezu jedes Problem eine Lösung zu finden. Einige erlernen sogar Zaubertricks, um ihre anderen Fähigkeiten zu ergänzen. Viele Schurken konzentrieren sich auf Heimlichkeit und Täuschung, während andere Fähigkeiten verfeinern, die ihnen in einer Dungeon-Umgebung helfen, wie z. B. Klettern, Fallen finden und entschärfen und Schlösser öffnen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Schurken verlassen sich auf List, Heimlichkeit und die Verwundbarkeit ihrer Feinde, um in jeder Situation die Oberhand zu gewinnen. Sie haben ein Händchen dafür, für nahezu jedes Problem eine Lösung zu finden. Einige erlernen sogar Zaubertricks, um ihre anderen Fähigkeiten zu ergänzen. Viele Schurken konzentrieren sich auf Heimlichkeit und Täuschung, während andere Fähigkeiten verfeinern, die ihnen in einer Dungeon-Umgebung helfen, wie z. B. Klettern, Fallen finden und entschärfen und Schlösser öffnen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Im Kampf bevorzugen Schurken subtile Angriffe gegenüber roher Gewalt. Sie führen lieber einen präzisen Schlag aus, als einen Gegner mit einer Flut von Schlägen zu zermürben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Einige Schurken begannen ihre Karriere als Kriminelle, während andere ihre List zur Verbrechensbekämpfung nutzten. Wie auch immer die Beziehung eines Schurken zum Gesetz sein mag, kein gewöhnlicher Krimineller oder Gesetzeshüter kann mit der subtilen Brillanz der größten Schurken mithalten."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Kerneigenschaften des Schurken"
+        ],
+        [
+          "Primäre Fähigkeit",
+          "Geschicklichkeit"
+        ],
+        [
+          "Trefferpunktwürfel",
+          "D8 pro Schurkenstufe"
+        ],
+        [
+          "Rettungswurf-Kenntnisse",
+          "Geschicklichkeit und Intelligenz"
+        ],
+        [
+          "Fertigkeiten",
+          "Wählen Sie 4: Akrobatik, Leichtathletik, Täuschung, Einsicht, Einschüchterung, Untersuchung, Wahrnehmung, Überzeugung, Fingerfertigkeit oder Heimlichkeit."
+        ],
+        [
+          "Waffenkenntnisse",
+          "Einfache Waffen und Kampfwaffen mit der Eigenschaft „Finesse“ oder „Licht“."
+        ],
+        [
+          "Werkzeugkenntnisse",
+          "Werkzeuge der Diebe"
+        ],
+        [
+          "Rüstungstraining",
+          "Leichte Rüstung"
+        ],
+        [
+          "Startausrüstung",
+          "Wähle A oder B: (A) Lederrüstung, 2 Dolche, Kurzschwert, Kurzbogen, 20 Pfeile, Köcher, Diebeswerkzeug, Einbrecherpaket und 8 GP; oder (B) 100 GP"
+        ]
+      ],
+      "text": "Kerneigenschaften des Schurken Primärfähigkeit Geschicklichkeit Trefferpunkt Würfel D8 pro Schurkenstufe Rettungswurf-Fähigkeiten Geschicklichkeit und Intelligenz Fertigkeiten Fertigkeiten Wählen Sie 4: Akrobatik, Leichtathletik, Täuschung, Einsicht, Einschüchterung, Ermittlung, Wahrnehmung, Überredung, Fingerfertigkeit oder Heimlichkeit. Waffenkenntnisse Einfache Waffen und Kampfwaffen mit der Eigenschaft „Finesse“ oder „Licht“ Werkzeugkenntnisse Diebeswerkzeuge Rüstungstraining Leichte Rüstung Startausrüstung Wählen Sie A oder B: (A) Lederrüstung, 2 Dolche, Kurzschwert, Kurzbogen, 20 Pfeile, Köcher, Diebeswerkzeuge, Einbrecherpaket und 8 GP; oder (B) 100 GP"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Ein Schurke werden …"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Charakter der Stufe 1"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalte alle Eigenschaften in der Tabelle „Kernschurkeneigenschaften“.",
+        "Erhalte die Level-1-Funktionen des Schurken, die in der Tabelle „Schurkentalente“ aufgeführt sind."
+      ],
+      "text": "Erhalte alle Eigenschaften in der Tabelle „Kernschurkeneigenschaften“. Erhalte die Level-1-Funktionen des Schurken, die in der Tabelle „Schurkentalente“ aufgeführt sind."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Multiklassen-Charakter"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalten Sie die folgenden Eigenschaften aus der Tabelle „Kerneigenschaften des Schurken“: Trefferpunktwürfel, Kenntnisse in einer Fertigkeit Ihrer Wahl aus der Fertigkeitsliste des Schurken, Kenntnisse im Umgang mit Diebeswerkzeugen und Training mit leichter Rüstung.",
+        "Erhalte die Level-1-Funktionen des Schurken, die in der Tabelle „Schurkentalente“ aufgeführt sind."
+      ],
+      "text": "Erhalten Sie die folgenden Eigenschaften aus der Tabelle „Kerneigenschaften des Schurken“: Trefferpunktwürfel, Kenntnisse in einer Fertigkeit Ihrer Wahl aus der Fertigkeitsliste des Schurken, Kenntnisse im Umgang mit Diebeswerkzeugen und Training mit leichter Rüstung. Erhalte die Level-1-Funktionen des Schurken, die in der Tabelle „Schurkentalente“ aufgeführt sind."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Talente der Schurkenklasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Schurkentalente"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ebene",
+          "Uebungsbonus",
+          "Klassentalente",
+          "Hinterhältiger Angriff"
+        ],
+        [
+          "1",
+          "+2",
+          "Fachwissen, Hinterhältiger Angriff, Diebesgehabe, Waffenbeherrschung",
+          "1W6"
+        ],
+        [
+          "2",
+          "+2",
+          "Listige Aktion",
+          "1W6"
+        ],
+        [
+          "3",
+          "+2",
+          "Rogue-Unterklasse, Steady Aim",
+          "2d6"
+        ],
+        [
+          "4",
+          "+2",
+          "Faehigkeitswert-Verbesserung",
+          "2d6"
+        ],
+        [
+          "5",
+          "+3",
+          "Listiger Schlag, unheimliches Ausweichen",
+          "3d6"
+        ],
+        [
+          "6",
+          "+3",
+          "Sachverstand",
+          "3d6"
+        ],
+        [
+          "7",
+          "+3",
+          "Ausweichen, zuverlässiges Talent",
+          "4d6"
+        ],
+        [
+          "8",
+          "+3",
+          "Faehigkeitswert-Verbesserung",
+          "4d6"
+        ],
+        [
+          "9",
+          "+4",
+          "Unterklasse Talent",
+          "5d6"
+        ],
+        [
+          "10",
+          "+4",
+          "Faehigkeitswert-Verbesserung",
+          "5d6"
+        ],
+        [
+          "11",
+          "+4",
+          "Verbesserter Listiger Schlag",
+          "6d6"
+        ],
+        [
+          "12",
+          "+4",
+          "Faehigkeitswert-Verbesserung",
+          "6d6"
+        ],
+        [
+          "13",
+          "+5",
+          "Unterklasse Talent",
+          "7d6"
+        ],
+        [
+          "14",
+          "+5",
+          "Hinterlistige Schläge",
+          "7d6"
+        ],
+        [
+          "15",
+          "+5",
+          "Schlüpfriger Geist",
+          "8d6"
+        ],
+        [
+          "16",
+          "+5",
+          "Faehigkeitswert-Verbesserung",
+          "8d6"
+        ],
+        [
+          "17",
+          "+6",
+          "Unterklasse Talent",
+          "9d6"
+        ],
+        [
+          "18",
+          "+6",
+          "Schwer fassbar",
+          "9d6"
+        ],
+        [
+          "19",
+          "+6",
+          "Epischer Segen",
+          "10d6"
+        ],
+        [
+          "20",
+          "+6",
+          "Glücksfall",
+          "10d6"
+        ]
+      ],
+      "text": "Level Uebungsbonus-Klasse Talente Hinterhältiger Angriff 1 +2 Sachkenntnis, Hinterlistiger Angriff, Diebesgehabe, Waffenbeherrschung 1W6 2 +2 Gerissene Aktion 1W6 3 +2 Schurken-Unterklasse, Stetiges Zielen 2W6 4 +2 Verbesserung des Fähigkeitswerts 2W6 5 +3 Gerissener Schlag, Unheimliches Ausweichen 3W6 6 +3 Fachwissen 3W6 7 +3 Ausweichen, Zuverlässiges Talent 4d6 8 +3 Verbesserung des Fähigkeitswerts 4d6 9 +4 Unterklassentalent 5d6 10 +4 Verbesserung des Fähigkeitswerts 5d6 11 +4 Verbesserter Listiger Schlag 6d6 12 +4 Verbesserung des Fähigkeitswerts 6d6 13 +5 Unterklassentalent 7d6 14 +5 Hinterhältige Schläge 7d6 15 +5 Glatter Verstand 8d6 16 +5 Verbesserung des Fähigkeitswerts 8W6 17 +6 Unterklassentalent 9W6 18 +6 Flüchtig 9W6 19 +6 Epischer Segen 10W6 20 +6 Glücksfall 10W6"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Schurke erhältst du die folgenden Klassenmerkmale, wenn du die angegebenen Schurkenstufen erreichst. Diese Funktionen sind in der Tabelle „Rogue Talentures“ aufgeführt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Fachwissen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erwerben Fachwissen in zwei Ihrer Fertigkeitskompetenzen Ihrer Wahl. Fingerfertigkeit und Stealth werden empfohlen, wenn Sie sich darin auskennen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Auf Schurkenstufe 6 erwerben Sie Fachwissen in zwei weiteren Fertigkeiten Ihrer Wahl."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 1: Hinterhältiger Angriff"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie wissen, wie man subtil zuschlägt und die Ablenkung eines Gegners ausnutzt. Einmal pro Spielzug kannst du einer Kreatur, die du mit einem Angriffswurf triffst, zusätzlich 1W6 Schaden zufügen, wenn du bei dem Wurf einen Vorteil hast und der Angriff eine Finesse- oder eine Fernkampfwaffe nutzt. Der Typ des zusätzlichen Schadens ist derselbe wie der Typ der Waffe."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie benötigen beim Angriffswurf keinen Vorteil, wenn sich mindestens einer Ihrer Verbündeten innerhalb von 5 Fuß vom Ziel befindet, der Verbündete nicht über die Bedingung „Kampfunfähig“ verfügt und Sie beim Angriffswurf keinen Nachteil haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Der zusätzliche Schaden erhöht sich mit zunehmender Rogue-Stufe, wie in der Spalte „Sneak Attack“ der Rogue Talentures-Tabelle gezeigt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 1: Diebesgesang"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben in den Gemeinden, in denen Sie Ihre schelmischen Talente eingesetzt haben, verschiedene Sprachen gelernt. Sie beherrschen Thieves' Cant und eine weitere Sprache Ihrer Wahl, die Sie aus den Sprachtabellen in Kapitel 2 auswählen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 1: Waffenbeherrschung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihr Waffentraining ermöglicht es Ihnen, die Beherrschung von zwei Arten von Waffen Ihrer Wahl zu nutzen, mit denen Sie sich auskennen, z. B. Dolche und Kurzbögen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie Lange Rast abgeschlossen haben, können Sie die Art der von Ihnen gewählten Waffen ändern. Sie könnten beispielsweise auf die Meisterschaftseigenschaften von Krummsäbeln und Kurzschwertern umsteigen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 2: Listige Aktion"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihr schnelles Denken und Ihre Beweglichkeit ermöglichen es Ihnen, sich schnell zu bewegen und zu handeln. Wenn du an der Reihe bist, kannst du als Bonusaktion eine der folgenden Aktionen ausführen: Springen, Loslassen oder Verstecken."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Rogue-Unterklasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine Schurken-Unterklasse deiner Wahl. Die Unterklassen Arcane Trickster, Assassin, Soulknife und Thief werden im Anschluss an die Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Schurkenstufen Funktionen gewährt. Für den Rest Ihrer Karriere erhalten Sie alle Merkmale Ihrer Unterklasse, die Ihrer Schurkenstufe oder niedriger entsprechen."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Rogue-Unterklassen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nennen Sie den Arcane Trickster Assassin Scion of the Three Soulknife Thief"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Stetiges Zielen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion gibst du dir selbst einen Vorteil bei deinem nächsten Angriffswurf in deinem aktuellen Zug. Du kannst diese Funktion nur verwenden, wenn du dich in diesem Zug nicht bewegt hast, und nachdem du sie verwendet hast, ist deine Geschwindigkeit bis zum Ende des aktuellen Zugs 0."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 4: Verbesserung der Fähigkeitsbewertung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Schurkenstufen 8, 10, 12 und 16."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 5: Listiger Schlag"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben clevere Möglichkeiten entwickelt, Ihren Sneak Attack einzusetzen. Wenn Sie Sneak Attack-Schaden verursachen, können Sie einen der folgenden Listy Strike-Effekte hinzufügen. Jeder Effekt hat Würfelkosten, die der Anzahl der Sneak Attack-Würfel entsprechen, auf die Sie verzichten müssen, um den Effekt hinzuzufügen. Sie entfernen den Würfel vor dem Würfeln und der Effekt tritt sofort ein, nachdem der Schaden des Angriffs verursacht wurde. Wenn Sie beispielsweise den Gifteffekt hinzufügen, entfernen Sie 1W6 vom Schaden des Hinterhältigen Angriffs, bevor Sie würfeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn ein Listiger Schlag einen Rettungswurf erfordert, beträgt der SG 8 plus deinen Geschicklichkeitsmodifikator und Uebungsbonus."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gift (Kosten: 1W6). Du fügst deinem Angriff ein Gift hinzu und zwingst das Ziel zu einem Konstitutions-Rettungswurf. Bei einem fehlgeschlagenen Rettungswurf befindet sich das Ziel 1 Minute lang im Zustand „Vergiftet“. Am Ende jeder Runde wiederholt das vergiftete Ziel den Rettungswurf und beendet so den Effekt bei einem Erfolg."
+    },
+    {
+      "type": "paragraph",
+      "text": "Um diesen Effekt nutzen zu können, müssen Sie ein Poisoner's Kit bei sich haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Reise (Kosten: 1W6). Wenn das Ziel groß oder kleiner ist, muss ihm ein Geschicklichkeits-Rettungswurf gelingen oder es muss sich im Bauchzustand befinden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rückzug (Kosten: 1W6). Unmittelbar nach dem Angriff bewegen Sie sich bis zur Hälfte Ihrer Geschwindigkeit, ohne Gelegenheitsangriffe zu provozieren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 5: Unheimliches Ausweichen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn ein Angreifer, den du sehen kannst, dich mit einem Angriffswurf trifft, kannst du eine Reaktion ausführen, um den Schaden des Angriffs gegen dich zu halbieren (abzurunden)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Ausweichen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können bestimmten Gefahren geschickt ausweichen. Wenn Sie einem Effekt ausgesetzt sind, der es Ihnen ermöglicht, einen Geschicklichkeits-Rettungswurf auszuführen, der nur den halben Schaden erleidet, erleiden Sie stattdessen keinen Schaden, wenn Ihnen der Rettungswurf gelingt, und nur halben Schaden, wenn Sie scheitern. Sie können diese Funktion nicht verwenden, wenn Sie an der Krankheit Kampfunfähigkeit leiden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 7: Zuverlässiges Talent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn du eine Fähigkeitsüberprüfung durchführst, bei der eine deiner Fertigkeiten oder Werkzeugfertigkeiten zum Einsatz kommt, kannst du einen W20-Wurf von 9 oder weniger als 10 behandeln."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 11: Verbesserter Listiger Schlag"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst bis zu zwei Effekte von „Clistiger Schlag“ nutzen, wenn du „Hinterhältiger Angriff“-Schaden verursachst, wobei du die Würfelkosten für jeden Effekt bezahlst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Hinterlistige Schläge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben neue Möglichkeiten geübt, Ihren Schleichangriff hinterhältig einzusetzen. Die folgenden Effekte gehören jetzt zu Ihren Cunning Strike-Optionen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Benommenheit (Kosten: 2W6). Dem Ziel muss ein Konstitutions-Rettungswurf gelingen, sonst kann es in seinem nächsten Zug nur eine der folgenden Aktionen ausführen: sich bewegen oder eine Aktion oder eine Bonusaktion ausführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Knock Out (Kosten: 6W6). Dem Ziel muss ein Konstitutions-Rettungswurf gelingen, sonst bleibt es 1 Minute lang oder bis es Schaden erleidet, im Zustand Bewusstlos. Das bewusstlose Ziel wiederholt den Rettungswurf am Ende seines Zuges und beendet bei einem Erfolg den Effekt auf sich selbst."
+    },
+    {
+      "type": "paragraph",
+      "text": "Undurchsichtig (Kosten: 3d6). Dem Ziel muss ein Geschicklichkeits-Rettungswurf gelingen, sonst bleibt es bis zum Ende seines nächsten Zuges im Zustand „Geblendet“."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Schlüpfriger Geist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihr Geist ist außerordentlich schwer zu kontrollieren. Sie erlangen Kenntnisse in Weisheit und Charisma des Rettungswurfs."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 18: Schwer fassbar"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie sind so ausweichend, dass Angreifer selten die Oberhand gegen Sie gewinnen. Kein Angriffswurf kann einen Vorteil gegen Sie haben, es sei denn, Sie verfügen über die Bedingung „Kampfunfähigkeit“."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 19: Epischer Segen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Segen des Nachtgeistes wird empfohlen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 20: Glücksfall"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben ein wunderbares Gespür dafür, erfolgreich zu sein, wenn es darauf ankommt. Wenn Sie einen W20-Test nicht bestehen, können Sie den Wurf in eine 20 umwandeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion verwenden, können Sie sie erst wieder verwenden, wenn Sie eine kurze oder lange Rast beendet haben."
+    }
+  ],
+  "text": "Schurken verlassen sich auf List, Heimlichkeit und die Verwundbarkeit ihrer Feinde, um in jeder Situation die Oberhand zu gewinnen. Sie haben ein Händchen dafür, für nahezu jedes Problem eine Lösung zu finden. Einige erlernen sogar Zaubertricks, um ihre anderen Fähigkeiten zu ergänzen. Viele Schurken konzentrieren sich auf Heimlichkeit und Täuschung, während andere Fähigkeiten verfeinern, die ihnen in einer Dungeon-Umgebung helfen, wie z. B. Klettern, Fallen finden und entschärfen und Schlösser öffnen.\n\nIm Kampf bevorzugen Schurken subtile Angriffe gegenüber roher Gewalt. Sie führen lieber einen präzisen Schlag aus, als einen Gegner mit einer Flut von Schlägen zu zermürben.\n\nEinige Schurken begannen ihre Karriere als Kriminelle, während andere ihre List zur Verbrechensbekämpfung nutzten. Wie auch immer die Beziehung eines Schurken zum Gesetz sein mag, kein gewöhnlicher Krimineller oder Gesetzeshüter kann mit der subtilen Brillanz der größten Schurken mithalten.\n\nKerneigenschaften des Schurken Primärfähigkeit Geschicklichkeit Trefferpunkt Würfel D8 pro Schurkenstufe Rettungswurf-Fähigkeiten Geschicklichkeit und Intelligenz Fertigkeiten Fertigkeiten Wählen Sie 4: Akrobatik, Leichtathletik, Täuschung, Einsicht, Einschüchterung, Ermittlung, Wahrnehmung, Überredung, Fingerfertigkeit oder Heimlichkeit. Waffenkenntnisse Einfache Waffen und Kampfwaffen mit der Eigenschaft „Finesse“ oder „Licht“ Werkzeugkenntnisse Diebeswerkzeuge Rüstungstraining Leichte Rüstung Startausrüstung Wählen Sie A oder B: (A) Lederrüstung, 2 Dolche, Kurzschwert, Kurzbogen, 20 Pfeile, Köcher, Diebeswerkzeuge, Einbrecherpaket und 8 GP; oder (B) 100 GP\n\nEin Schurke werden …\n\nAls Charakter der Stufe 1\n\nErhalte alle Eigenschaften in der Tabelle „Kernschurkeneigenschaften“. Erhalte die Level-1-Funktionen des Schurken, die in der Tabelle „Schurkentalente“ aufgeführt sind.\n\nAls Multiklassen-Charakter\n\nErhalten Sie die folgenden Eigenschaften aus der Tabelle „Kerneigenschaften des Schurken“: Trefferpunktwürfel, Kenntnisse in einer Fertigkeit Ihrer Wahl aus der Fertigkeitsliste des Schurken, Kenntnisse im Umgang mit Diebeswerkzeugen und Training mit leichter Rüstung. Erhalte die Level-1-Funktionen des Schurken, die in der Tabelle „Schurkentalente“ aufgeführt sind.\n\nTalente der Schurkenklasse\n\nSchurkentalente\n\nLevel Uebungsbonus-Klasse Talente Hinterhältiger Angriff 1 +2 Sachkenntnis, Hinterlistiger Angriff, Diebesgehabe, Waffenbeherrschung 1W6 2 +2 Gerissene Aktion 1W6 3 +2 Schurken-Unterklasse, Stetiges Zielen 2W6 4 +2 Verbesserung des Fähigkeitswerts 2W6 5 +3 Gerissener Schlag, Unheimliches Ausweichen 3W6 6 +3 Fachwissen 3W6 7 +3 Ausweichen, Zuverlässiges Talent 4d6 8 +3 Verbesserung des Fähigkeitswerts 4d6 9 +4 Unterklassentalent 5d6 10 +4 Verbesserung des Fähigkeitswerts 5d6 11 +4 Verbesserter Listiger Schlag 6d6 12 +4 Verbesserung des Fähigkeitswerts 6d6 13 +5 Unterklassentalent 7d6 14 +5 Hinterhältige Schläge 7d6 15 +5 Glatter Verstand 8d6 16 +5 Verbesserung des Fähigkeitswerts 8W6 17 +6 Unterklassentalent 9W6 18 +6 Flüchtig 9W6 19 +6 Epischer Segen 10W6 20 +6 Glücksfall 10W6\n\nAls Schurke erhältst du die folgenden Klassenmerkmale, wenn du die angegebenen Schurkenstufen erreichst. Diese Funktionen sind in der Tabelle „Rogue Talentures“ aufgeführt.\n\nStufe 1: Fachwissen\n\nSie erwerben Fachwissen in zwei Ihrer Fertigkeitskompetenzen Ihrer Wahl. Fingerfertigkeit und Stealth werden empfohlen, wenn Sie sich darin auskennen.\n\nAuf Schurkenstufe 6 erwerben Sie Fachwissen in zwei weiteren Fertigkeiten Ihrer Wahl.\n\nLevel 1: Hinterhältiger Angriff\n\nSie wissen, wie man subtil zuschlägt und die Ablenkung eines Gegners ausnutzt. Einmal pro Spielzug kannst du einer Kreatur, die du mit einem Angriffswurf triffst, zusätzlich 1W6 Schaden zufügen, wenn du bei dem Wurf einen Vorteil hast und der Angriff eine Finesse- oder eine Fernkampfwaffe nutzt. Der Typ des zusätzlichen Schadens ist derselbe wie der Typ der Waffe.\n\nSie benötigen beim Angriffswurf keinen Vorteil, wenn sich mindestens einer Ihrer Verbündeten innerhalb von 5 Fuß vom Ziel befindet, der Verbündete nicht über die Bedingung „Kampfunfähig“ verfügt und Sie beim Angriffswurf keinen Nachteil haben.\n\nDer zusätzliche Schaden erhöht sich mit zunehmender Rogue-Stufe, wie in der Spalte „Sneak Attack“ der Rogue Talentures-Tabelle gezeigt.\n\nLevel 1: Diebesgesang\n\nSie haben in den Gemeinden, in denen Sie Ihre schelmischen Talente eingesetzt haben, verschiedene Sprachen gelernt. Sie beherrschen Thieves' Cant und eine weitere Sprache Ihrer Wahl, die Sie aus den Sprachtabellen in Kapitel 2 auswählen.\n\nLevel 1: Waffenbeherrschung\n\nIhr Waffentraining ermöglicht es Ihnen, die Beherrschung von zwei Arten von Waffen Ihrer Wahl zu nutzen, mit denen Sie sich auskennen, z. B. Dolche und Kurzbögen.\n\nImmer wenn Sie Lange Rast abgeschlossen haben, können Sie die Art der von Ihnen gewählten Waffen ändern. Sie könnten beispielsweise auf die Meisterschaftseigenschaften von Krummsäbeln und Kurzschwertern umsteigen.\n\nLevel 2: Listige Aktion\n\nIhr schnelles Denken und Ihre Beweglichkeit ermöglichen es Ihnen, sich schnell zu bewegen und zu handeln. Wenn du an der Reihe bist, kannst du als Bonusaktion eine der folgenden Aktionen ausführen: Springen, Loslassen oder Verstecken.\n\nLevel 3: Rogue-Unterklasse\n\nDu erhältst eine Schurken-Unterklasse deiner Wahl. Die Unterklassen Arcane Trickster, Assassin, Soulknife und Thief werden im Anschluss an die Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Schurkenstufen Funktionen gewährt. Für den Rest Ihrer Karriere erhalten Sie alle Merkmale Ihrer Unterklasse, die Ihrer Schurkenstufe oder niedriger entsprechen.\n\nRogue-Unterklassen\n\nNennen Sie den Arcane Trickster Assassin Scion of the Three Soulknife Thief\n\nLevel 3: Stetiges Zielen\n\nAls Bonusaktion gibst du dir selbst einen Vorteil bei deinem nächsten Angriffswurf in deinem aktuellen Zug. Du kannst diese Funktion nur verwenden, wenn du dich in diesem Zug nicht bewegt hast, und nachdem du sie verwendet hast, ist deine Geschwindigkeit bis zum Ende des aktuellen Zugs 0.\n\nStufe 4: Verbesserung der Fähigkeitsbewertung\n\nDu erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Schurkenstufen 8, 10, 12 und 16.\n\nLevel 5: Listiger Schlag\n\nSie haben clevere Möglichkeiten entwickelt, Ihren Sneak Attack einzusetzen. Wenn Sie Sneak Attack-Schaden verursachen, können Sie einen der folgenden Listy Strike-Effekte hinzufügen. Jeder Effekt hat Würfelkosten, die der Anzahl der Sneak Attack-Würfel entsprechen, auf die Sie verzichten müssen, um den Effekt hinzuzufügen. Sie entfernen den Würfel vor dem Würfeln und der Effekt tritt sofort ein, nachdem der Schaden des Angriffs verursacht wurde. Wenn Sie beispielsweise den Gifteffekt hinzufügen, entfernen Sie 1W6 vom Schaden des Hinterhältigen Angriffs, bevor Sie würfeln.\n\nWenn ein Listiger Schlag einen Rettungswurf erfordert, beträgt der SG 8 plus deinen Geschicklichkeitsmodifikator und Uebungsbonus.\n\nGift (Kosten: 1W6). Du fügst deinem Angriff ein Gift hinzu und zwingst das Ziel zu einem Konstitutions-Rettungswurf. Bei einem fehlgeschlagenen Rettungswurf befindet sich das Ziel 1 Minute lang im Zustand „Vergiftet“. Am Ende jeder Runde wiederholt das vergiftete Ziel den Rettungswurf und beendet so den Effekt bei einem Erfolg.\n\nUm diesen Effekt nutzen zu können, müssen Sie ein Poisoner's Kit bei sich haben.\n\nReise (Kosten: 1W6). Wenn das Ziel groß oder kleiner ist, muss ihm ein Geschicklichkeits-Rettungswurf gelingen oder es muss sich im Bauchzustand befinden.\n\nRückzug (Kosten: 1W6). Unmittelbar nach dem Angriff bewegen Sie sich bis zur Hälfte Ihrer Geschwindigkeit, ohne Gelegenheitsangriffe zu provozieren.\n\nLevel 5: Unheimliches Ausweichen\n\nWenn ein Angreifer, den du sehen kannst, dich mit einem Angriffswurf trifft, kannst du eine Reaktion ausführen, um den Schaden des Angriffs gegen dich zu halbieren (abzurunden).\n\nLevel 7: Ausweichen\n\nSie können bestimmten Gefahren geschickt ausweichen. Wenn Sie einem Effekt ausgesetzt sind, der es Ihnen ermöglicht, einen Geschicklichkeits-Rettungswurf auszuführen, der nur den halben Schaden erleidet, erleiden Sie stattdessen keinen Schaden, wenn Ihnen der Rettungswurf gelingt, und nur halben Schaden, wenn Sie scheitern. Sie können diese Funktion nicht verwenden, wenn Sie an der Krankheit Kampfunfähigkeit leiden.\n\nStufe 7: Zuverlässiges Talent\n\nImmer wenn du eine Fähigkeitsüberprüfung durchführst, bei der eine deiner Fertigkeiten oder Werkzeugfertigkeiten zum Einsatz kommt, kannst du einen W20-Wurf von 9 oder weniger als 10 behandeln.\n\nStufe 11: Verbesserter Listiger Schlag\n\nDu kannst bis zu zwei Effekte von „Clistiger Schlag“ nutzen, wenn du „Hinterhältiger Angriff“-Schaden verursachst, wobei du die Würfelkosten für jeden Effekt bezahlst.\n\nLevel 14: Hinterlistige Schläge\n\nSie haben neue Möglichkeiten geübt, Ihren Schleichangriff hinterhältig einzusetzen. Die folgenden Effekte gehören jetzt zu Ihren Cunning Strike-Optionen.\n\nBenommenheit (Kosten: 2W6). Dem Ziel muss ein Konstitutions-Rettungswurf gelingen, sonst kann es in seinem nächsten Zug nur eine der folgenden Aktionen ausführen: sich bewegen oder eine Aktion oder eine Bonusaktion ausführen.\n\nKnock Out (Kosten: 6W6). Dem Ziel muss ein Konstitutions-Rettungswurf gelingen, sonst bleibt es 1 Minute lang oder bis es Schaden erleidet, im Zustand Bewusstlos. Das bewusstlose Ziel wiederholt den Rettungswurf am Ende seines Zuges und beendet bei einem Erfolg den Effekt auf sich selbst.\n\nUndurchsichtig (Kosten: 3d6). Dem Ziel muss ein Geschicklichkeits-Rettungswurf gelingen, sonst bleibt es bis zum Ende seines nächsten Zuges im Zustand „Geblendet“.\n\nLevel 15: Schlüpfriger Geist\n\nIhr Geist ist außerordentlich schwer zu kontrollieren. Sie erlangen Kenntnisse in Weisheit und Charisma des Rettungswurfs.\n\nLevel 18: Schwer fassbar\n\nSie sind so ausweichend, dass Angreifer selten die Oberhand gegen Sie gewinnen. Kein Angriffswurf kann einen Vorteil gegen Sie haben, es sei denn, Sie verfügen über die Bedingung „Kampfunfähigkeit“.\n\nLevel 19: Epischer Segen\n\nDu erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Segen des Nachtgeistes wird empfohlen.\n\nLevel 20: Glücksfall\n\nSie haben ein wunderbares Gespür dafür, erfolgreich zu sein, wenn es darauf ankommt. Wenn Sie einen W20-Test nicht bestehen, können Sie den Wurf in eine 20 umwandeln.\n\nSobald Sie diese Funktion verwenden, können Sie sie erst wieder verwenden, wenn Sie eine kurze oder lange Rast beendet haben.",
+  "tags": [],
+  "hit_die": 8,
+  "primary_abilities": [
+    "dex"
+  ],
+  "proficiencies": {
+    "saving_throws": [
+      "dex",
+      "int"
+    ],
+    "armor": [
+      "Leichte Rüstung"
+    ],
+    "weapons": [
+      "Einfache Waffen",
+      "Kampfwaffen mit der Eigenschaft „Finesse“",
+      "„Licht“"
+    ],
+    "tools": [
+      "Werkzeuge der Diebe"
+    ]
+  },
+  "skill_choices": {
+    "choose": 4,
+    "options": [
+      "Akrobatik",
+      "Athletik",
+      "Taeuschung",
+      "Einsicht",
+      "Einschuechterung",
+      "Untersuchung",
+      "Wahrnehmung",
+      "Ueberzeugung",
+      "Fingerfertigkeit",
+      "Heimlichkeit"
+    ]
+  },
+  "spellcasting": {
+    "ability": null,
+    "progression": null,
+    "preparation_formula": null,
+    "known_formula": null,
+    "focus_types": [],
+    "spell_list_names": [],
+    "uses_spell_slots": false
+  },
+  "starting_equipment": {
+    "fixed": [],
+    "choices": []
+  },
+  "multiclass_requirements": {
+    "minimum_abilities": {}
+  },
+  "levels": [
+    {
+      "level": 1,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Fachwissen",
+        "Hinterhältiger Angriff",
+        "Diebesgehabe",
+        "Waffenbeherrschung"
+      ],
+      "hinterhaeltiger angriff": "1W6"
+    },
+    {
+      "level": 2,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Listige Aktion"
+      ],
+      "hinterhaeltiger angriff": "1W6"
+    },
+    {
+      "level": 3,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Rogue-Unterklasse",
+        "Steady Aim"
+      ],
+      "hinterhaeltiger angriff": "2d6"
+    },
+    {
+      "level": 4,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "hinterhaeltiger angriff": "2d6"
+    },
+    {
+      "level": 5,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Listiger Schlag",
+        "unheimliches Ausweichen"
+      ],
+      "hinterhaeltiger angriff": "3d6"
+    },
+    {
+      "level": 6,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Sachverstand"
+      ],
+      "hinterhaeltiger angriff": "3d6"
+    },
+    {
+      "level": 7,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Ausweichen",
+        "zuverlässiges Talent"
+      ],
+      "hinterhaeltiger angriff": "4d6"
+    },
+    {
+      "level": 8,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "hinterhaeltiger angriff": "4d6"
+    },
+    {
+      "level": 9,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "hinterhaeltiger angriff": "5d6"
+    },
+    {
+      "level": 10,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "hinterhaeltiger angriff": "5d6"
+    },
+    {
+      "level": 11,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Verbesserter Listiger Schlag"
+      ],
+      "hinterhaeltiger angriff": "6d6"
+    },
+    {
+      "level": 12,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "hinterhaeltiger angriff": "6d6"
+    },
+    {
+      "level": 13,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "hinterhaeltiger angriff": "7d6"
+    },
+    {
+      "level": 14,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Hinterlistige Schläge"
+      ],
+      "hinterhaeltiger angriff": "7d6"
+    },
+    {
+      "level": 15,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Schlüpfriger Geist"
+      ],
+      "hinterhaeltiger angriff": "8d6"
+    },
+    {
+      "level": 16,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "hinterhaeltiger angriff": "8d6"
+    },
+    {
+      "level": 17,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Unterklasse Talent"
+      ],
+      "hinterhaeltiger angriff": "9d6"
+    },
+    {
+      "level": 18,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Schwer fassbar"
+      ],
+      "hinterhaeltiger angriff": "9d6"
+    },
+    {
+      "level": 19,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Epischer Segen"
+      ],
+      "hinterhaeltiger angriff": "10d6"
+    },
+    {
+      "level": 20,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Glücksfall"
+      ],
+      "hinterhaeltiger angriff": "10d6"
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Arkaner Trickster",
+      "original_name": "Arcane Trickster",
+      "id": "arkaner-trickster",
+      "source_url": "http://dnd2024.wikidot.com/rogue:arcane-trickster",
+      "file": "subclasses/arkaner-trickster.json"
+    },
+    {
+      "name": "Attentäter",
+      "original_name": "Assassin",
+      "id": "attentater",
+      "source_url": "http://dnd2024.wikidot.com/rogue:assassin",
+      "file": "subclasses/attentater.json"
+    },
+    {
+      "name": "Spross der Drei",
+      "original_name": "Scion of the Three",
+      "id": "spross-der-drei",
+      "source_url": "http://dnd2024.wikidot.com/rogue:scion-of-the-three",
+      "file": "subclasses/spross-der-drei.json"
+    },
+    {
+      "name": "Seelenmesser",
+      "original_name": "Soulknife",
+      "id": "seelenmesser",
+      "source_url": "http://dnd2024.wikidot.com/rogue:soulknife",
+      "file": "subclasses/seelenmesser.json"
+    },
+    {
+      "name": "Dieb",
+      "original_name": "Thief",
+      "id": "dieb",
+      "source_url": "http://dnd2024.wikidot.com/rogue:thief",
+      "file": "subclasses/dieb.json"
+    }
+  ],
+  "subclass_index": [
+    "arkaner-trickster.json",
+    "attentater.json",
+    "dieb.json",
+    "seelenmesser.json",
+    "spross-der-drei.json"
+  ]
+}

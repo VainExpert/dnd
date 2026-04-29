@@ -1,0 +1,85 @@
+{
+  "id": "ritter-des-handschuhs",
+  "type": "background",
+  "name": "Ritter des Handschuhs",
+  "original_name": "Knight Of The Gauntlet",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/background:knight-of-the-gauntlet",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Stärke, Intelligenz, Weisheit",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Stärke, Intelligenz, Weisheit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Tyro des Handschuhs"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kompetenzen: Leichtathletik und Medizin"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse: Smith’s Tools"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Speer, Schmiedewerkzeuge, Bullseye-Laterne, Heiliges Symbol, Handschellen, Öl (5 Flaschen), Zunderbüchse, Kleidung des Reisenden, 9 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nicht alle, die dem Ruf einer höheren Macht folgen, geben sich damit zufrieden, in einer stickigen Tempelapsis über der Heiligen Schrift zu brüten. Du hast den Weg des heiligen Kriegers gewählt, indem du dem Order of the Gauntlet beigetreten bist. Als Ritter des Spießrutenlaufs üben Sie gerechte Verachtung gegenüber den Mächten des Bösen, unerschütterliche Kameradschaft gegenüber Ihren Waffengeschwistern und tief empfundenes Mitgefühl für die Überlebenden des Krieges aus. Mit der Waffe und dem heiligen Symbol in der Hand hast du geschworen, nicht zu ruhen, bis das Licht der Gerechtigkeit den Schatten des Chaos in Faerûn besiegt hat."
+    }
+  ],
+  "text": "Fähigkeitswerte: Stärke, Intelligenz, Weisheit\n\nTalent: Tyro des Handschuhs\n\nKompetenzen: Leichtathletik und Medizin\n\nWerkzeugkenntnisse: Smith’s Tools\n\nAusrüstung: Wähle A oder B: (A) Speer, Schmiedewerkzeuge, Bullseye-Laterne, Heiliges Symbol, Handschellen, Öl (5 Flaschen), Zunderbüchse, Kleidung des Reisenden, 9 GP; oder (B) 50 GP\n\nNicht alle, die dem Ruf einer höheren Macht folgen, geben sich damit zufrieden, in einer stickigen Tempelapsis über der Heiligen Schrift zu brüten. Du hast den Weg des heiligen Kriegers gewählt, indem du dem Order of the Gauntlet beigetreten bist. Als Ritter des Spießrutenlaufs üben Sie gerechte Verachtung gegenüber den Mächten des Bösen, unerschütterliche Kameradschaft gegenüber Ihren Waffengeschwistern und tief empfundenes Mitgefühl für die Überlebenden des Krieges aus. Mit der Waffe und dem heiligen Symbol in der Hand hast du geschworen, nicht zu ruhen, bis das Licht der Gerechtigkeit den Schatten des Chaos in Faerûn besiegt hat.",
+  "tags": [],
+  "ability_scores": [
+    "str",
+    "int",
+    "wis"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "str",
+      "int",
+      "wis"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "tyro-des-handschuhs-kompetenzen-leichtathletik-und-medizin-werkzeugkenntnisse-smith-s-tools",
+  "granted_feat_name": "Tyro des Handschuhs\n\nKompetenzen: Leichtathletik und Medizin\n\nWerkzeugkenntnisse: Smith’s Tools\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Speer, Schmiedewerkzeuge, Bullseye-Laterne, Heiliges Symbol, Handschellen, Öl (5 Flaschen), Zunderbüchse, Kleidung des Reisenden, 9 GP; oder (B) 50 GP\n\nNicht alle, die dem Ruf einer höheren Macht folgen, geben sich damit zufrieden, in einer stickigen Tempelapsis über der Heiligen Schrift zu brüten. Du hast den Weg des heiligen Kriegers gewählt, indem du dem Order of the Gauntlet beigetreten bist. Als Ritter des Spießrutenlaufs üben Sie gerechte Verachtung gegenüber den Mächten des Bösen, unerschütterliche Kameradschaft gegenüber Ihren Waffengeschwistern und tief empfundenes Mitgefühl für die Überlebenden des Krieges aus. Mit der Waffe und dem heiligen Symbol in der Hand hast du geschworen, nicht zu ruhen, bis das Licht der Gerechtigkeit den Schatten des Chaos in Faerûn besiegt hat"
+    }
+  ]
+}

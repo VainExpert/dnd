@@ -1,0 +1,169 @@
+{
+  "id": "psi-krieger",
+  "type": "subclass",
+  "name": "Psi-Krieger",
+  "original_name": "Psi Warrior",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/fighter:psi-warrior",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Verstärke deine physische Kraft mit psionischer Kraft",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Verstärke deine physische Kraft mit psionischer Kraft"
+    },
+    {
+      "type": "paragraph",
+      "text": "Psi-Krieger erwecken die Kraft ihres Geistes, um ihre körperliche Kraft zu verstärken. Sie nutzen diese psionische Kraft, um ihre Waffenangriffe zu verstärken, mit telekinetischer Energie zu schlagen und Barrieren mentaler Kraft zu errichten."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Psionische Kraft"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du birgst eine Quelle psionischer Energie in dir. Es wird durch Ihre Psionischen Energiewürfel dargestellt, welche Treibstoffkräfte Sie aus dieser Unterklasse haben. Die Tabelle der Psi-Krieger-Energiewürfel zeigt die Würfelgröße und Anzahl dieser Würfel, die Sie haben, wenn Sie bestimmte Kämpferstufen erreichen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Psi-Krieger-Energiewürfel"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Kämpfer-Level",
+          "Die Größe",
+          "Nummer"
+        ],
+        [
+          "3",
+          "D6",
+          "4"
+        ],
+        [
+          "5",
+          "D8",
+          "6"
+        ],
+        [
+          "9",
+          "D8",
+          "8"
+        ],
+        [
+          "11",
+          "D10",
+          "8"
+        ],
+        [
+          "13",
+          "D10",
+          "10"
+        ],
+        [
+          "17",
+          "D12",
+          "12"
+        ]
+      ],
+      "text": "Kämpfer-Level-Würfelgröße Nummer 3 D6 4 5 D8 6 9 D8 8 11 D10 8 13 D10 10 17 D12 12"
+    },
+    {
+      "type": "paragraph",
+      "text": "Alle Features in dieser Unterklasse, die einen Psionischen Energiewürfel verwenden, verwenden nur die Würfel dieser Unterklasse. Einige Ihrer Kräfte verbrauchen den Psi-Energiewürfel, wie in der Beschreibung einer Kraft angegeben, und Sie können eine Kraft nicht verwenden, wenn dafür ein Würfel erforderlich ist, wenn alle Ihre Psi-Energiewürfel verbraucht sind."
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst einen deiner verbrauchten Psi-Energiewürfel zurück, wenn du eine Kurze Rast abschließt, und du erhältst alle Würfel zurück, wenn du eine Lange Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schutzfeld. Wenn Sie oder eine andere Kreatur, die Sie in einem Umkreis von 30 Fuß um sich herum sehen können, Schaden erleiden, können Sie eine Reaktion durchführen, um einen Psi-Energiewürfel zu verbrauchen, den Würfel würfeln und den erlittenen Schaden um die gewürfelte Zahl plus Ihren Intelligenzmodifikator reduzieren (Mindestreduzierung 1), während Sie einen vorübergehenden Schild aus telekinetischer Kraft erschaffen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Psionischer Schlag. Sie können Ihre Waffen mit psionischer Kraft antreiben. Einmal in jedem Ihrer Züge, unmittelbar nachdem Sie ein Ziel in einem Umkreis von 30 Fuß um sich herum mit einem Angriff getroffen und ihm mit einer Waffe Schaden zugefügt haben, können Sie einen Psi-Energiewürfel verbrauchen, ihn würfeln und dem Ziel Machtschaden in Höhe der gewürfelten Zahl plus Ihrem Intelligenzmodifikator zufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Telekinetische Bewegung. Du kannst einen Gegenstand oder eine Kreatur mit deinem Verstand bewegen. Wählen Sie als magische Aktion ein Ziel aus, das Sie in einem Umkreis von 30 Fuß um sich selbst sehen können. Das Ziel muss ein loser Gegenstand sein, der groß oder kleiner ist, oder eine willige Kreatur außer dir. Sie transportieren das Ziel bis zu 30 Fuß weit an einen unbesetzten Ort, den Sie sehen können. Wenn das Ziel alternativ ein winziges Objekt ist, können Sie es zu Ihrer Hand oder von dort weg transportieren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Aktion ausgeführt haben, können Sie dies nicht noch einmal tun, bis Sie eine kurze oder lange Rast beendet haben, es sei denn, Sie verbrauchen einen Psi-Energiewürfel (keine Aktion erforderlich), um die Nutzung wiederherzustellen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Telekinetischer Experte"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben neue Möglichkeiten gemeistert, Ihre telekinetischen Fähigkeiten zu nutzen, die unten beschrieben werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Psi-angetriebener Sprung. Als Bonusaktion erhältst du bis zum Ende der aktuellen Runde eine Fluggeschwindigkeit, die dem Doppelten deiner Geschwindigkeit entspricht. Sobald Sie diese Bonusaktion in Anspruch genommen haben, können Sie dies nicht noch einmal tun, bis Sie eine kurze oder lange Rast beendet haben, es sei denn, Sie verbrauchen einen Psi-Energiewürfel (keine Aktion erforderlich), um die Nutzung wiederherzustellen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Telekinetischer Schub. Wenn Sie einem Ziel mit Ihrem Psionischen Schlag Schaden zufügen, können Sie das Ziel dazu zwingen, einen Stärke-Rettungswurf auszuführen (SG 8 plus Ihr Intelligenzmodifikator und Uebungsbonus). Bei einem fehlgeschlagenen Speichervorgang können Sie dem Ziel den Zustand „Liegend“ geben oder es bis zu 10 Fuß horizontal transportieren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Bewachter Geist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast Resistenz gegen psychischen Schaden. Wenn Sie Ihren Zug außerdem mit dem Zustand „Bezaubert“ oder „Verängstigt“ beginnen, können Sie einen Psi-Energiewürfel ausgeben (keine Aktion erforderlich) und jeden Effekt auf sich selbst beenden, der Ihnen diese Zustände verleiht."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Bollwerk der Macht"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können sich und andere mit telekinetischer Kraft schützen. Als Bonusaktion kannst du Kreaturen, einschließlich dir selbst, in einem Umkreis von 30 Fuß um dich selbst auswählen, bis zu einer Anzahl von Kreaturen, die deinem Intelligenzmodifikator entspricht (mindestens eine Kreatur). Jede der ausgewählten Kreaturen hat 1 Minute lang oder bis Sie die Bedingung „Kampfunfähig“ haben, halbe Deckung."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie einen Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Psionischen Energiewürfel (keine Aktion erforderlich), um sie wieder nutzen zu können."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 18: Telekinetischer Meister"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben immer den Telekinese-Zauber vorbereitet. Mit dieser Funktion können Sie es ohne Zauberslot oder Komponenten wirken, und Ihre Zauberfähigkeit dafür ist Intelligenz. Während Sie Ihre Konzentration auf die Waffe aufrechterhalten, können Sie in jeder Ihrer Runden, einschließlich der Runde, in der Sie sie wirken, als Bonusaktion einen Angriff mit einer Waffe durchführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie den Zauber mit dieser Funktion gewirkt haben, können Sie dies nicht erneut auf diese Weise tun, bis Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Psionischen Energiewürfel (keine Aktion erforderlich), um ihn wieder zu nutzen."
+    }
+  ],
+  "text": "Verstärke deine physische Kraft mit psionischer Kraft\n\nPsi-Krieger erwecken die Kraft ihres Geistes, um ihre körperliche Kraft zu verstärken. Sie nutzen diese psionische Kraft, um ihre Waffenangriffe zu verstärken, mit telekinetischer Energie zu schlagen und Barrieren mentaler Kraft zu errichten.\n\nStufe 3: Psionische Kraft\n\nDu birgst eine Quelle psionischer Energie in dir. Es wird durch Ihre Psionischen Energiewürfel dargestellt, welche Treibstoffkräfte Sie aus dieser Unterklasse haben. Die Tabelle der Psi-Krieger-Energiewürfel zeigt die Würfelgröße und Anzahl dieser Würfel, die Sie haben, wenn Sie bestimmte Kämpferstufen erreichen.\n\nPsi-Krieger-Energiewürfel\n\nKämpfer-Level-Würfelgröße Nummer 3 D6 4 5 D8 6 9 D8 8 11 D10 8 13 D10 10 17 D12 12\n\nAlle Features in dieser Unterklasse, die einen Psionischen Energiewürfel verwenden, verwenden nur die Würfel dieser Unterklasse. Einige Ihrer Kräfte verbrauchen den Psi-Energiewürfel, wie in der Beschreibung einer Kraft angegeben, und Sie können eine Kraft nicht verwenden, wenn dafür ein Würfel erforderlich ist, wenn alle Ihre Psi-Energiewürfel verbraucht sind.\n\nDu erhältst einen deiner verbrauchten Psi-Energiewürfel zurück, wenn du eine Kurze Rast abschließt, und du erhältst alle Würfel zurück, wenn du eine Lange Rast abschließt.\n\nSchutzfeld. Wenn Sie oder eine andere Kreatur, die Sie in einem Umkreis von 30 Fuß um sich herum sehen können, Schaden erleiden, können Sie eine Reaktion durchführen, um einen Psi-Energiewürfel zu verbrauchen, den Würfel würfeln und den erlittenen Schaden um die gewürfelte Zahl plus Ihren Intelligenzmodifikator reduzieren (Mindestreduzierung 1), während Sie einen vorübergehenden Schild aus telekinetischer Kraft erschaffen.\n\nPsionischer Schlag. Sie können Ihre Waffen mit psionischer Kraft antreiben. Einmal in jedem Ihrer Züge, unmittelbar nachdem Sie ein Ziel in einem Umkreis von 30 Fuß um sich herum mit einem Angriff getroffen und ihm mit einer Waffe Schaden zugefügt haben, können Sie einen Psi-Energiewürfel verbrauchen, ihn würfeln und dem Ziel Machtschaden in Höhe der gewürfelten Zahl plus Ihrem Intelligenzmodifikator zufügen.\n\nTelekinetische Bewegung. Du kannst einen Gegenstand oder eine Kreatur mit deinem Verstand bewegen. Wählen Sie als magische Aktion ein Ziel aus, das Sie in einem Umkreis von 30 Fuß um sich selbst sehen können. Das Ziel muss ein loser Gegenstand sein, der groß oder kleiner ist, oder eine willige Kreatur außer dir. Sie transportieren das Ziel bis zu 30 Fuß weit an einen unbesetzten Ort, den Sie sehen können. Wenn das Ziel alternativ ein winziges Objekt ist, können Sie es zu Ihrer Hand oder von dort weg transportieren.\n\nSobald Sie diese Aktion ausgeführt haben, können Sie dies nicht noch einmal tun, bis Sie eine kurze oder lange Rast beendet haben, es sei denn, Sie verbrauchen einen Psi-Energiewürfel (keine Aktion erforderlich), um die Nutzung wiederherzustellen.\n\nLevel 7: Telekinetischer Experte\n\nSie haben neue Möglichkeiten gemeistert, Ihre telekinetischen Fähigkeiten zu nutzen, die unten beschrieben werden.\n\nPsi-angetriebener Sprung. Als Bonusaktion erhältst du bis zum Ende der aktuellen Runde eine Fluggeschwindigkeit, die dem Doppelten deiner Geschwindigkeit entspricht. Sobald Sie diese Bonusaktion in Anspruch genommen haben, können Sie dies nicht noch einmal tun, bis Sie eine kurze oder lange Rast beendet haben, es sei denn, Sie verbrauchen einen Psi-Energiewürfel (keine Aktion erforderlich), um die Nutzung wiederherzustellen.\n\nTelekinetischer Schub. Wenn Sie einem Ziel mit Ihrem Psionischen Schlag Schaden zufügen, können Sie das Ziel dazu zwingen, einen Stärke-Rettungswurf auszuführen (SG 8 plus Ihr Intelligenzmodifikator und Uebungsbonus). Bei einem fehlgeschlagenen Speichervorgang können Sie dem Ziel den Zustand „Liegend“ geben oder es bis zu 10 Fuß horizontal transportieren.\n\nLevel 10: Bewachter Geist\n\nDu hast Resistenz gegen psychischen Schaden. Wenn Sie Ihren Zug außerdem mit dem Zustand „Bezaubert“ oder „Verängstigt“ beginnen, können Sie einen Psi-Energiewürfel ausgeben (keine Aktion erforderlich) und jeden Effekt auf sich selbst beenden, der Ihnen diese Zustände verleiht.\n\nLevel 15: Bollwerk der Macht\n\nSie können sich und andere mit telekinetischer Kraft schützen. Als Bonusaktion kannst du Kreaturen, einschließlich dir selbst, in einem Umkreis von 30 Fuß um dich selbst auswählen, bis zu einer Anzahl von Kreaturen, die deinem Intelligenzmodifikator entspricht (mindestens eine Kreatur). Jede der ausgewählten Kreaturen hat 1 Minute lang oder bis Sie die Bedingung „Kampfunfähig“ haben, halbe Deckung.\n\nSobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie einen Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Psionischen Energiewürfel (keine Aktion erforderlich), um sie wieder nutzen zu können.\n\nLevel 18: Telekinetischer Meister\n\nSie haben immer den Telekinese-Zauber vorbereitet. Mit dieser Funktion können Sie es ohne Zauberslot oder Komponenten wirken, und Ihre Zauberfähigkeit dafür ist Intelligenz. Während Sie Ihre Konzentration auf die Waffe aufrechterhalten, können Sie in jeder Ihrer Runden, einschließlich der Runde, in der Sie sie wirken, als Bonusaktion einen Angriff mit einer Waffe durchführen.\n\nSobald Sie den Zauber mit dieser Funktion gewirkt haben, können Sie dies nicht erneut auf diese Weise tun, bis Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Psionischen Energiewürfel (keine Aktion erforderlich), um ihn wieder zu nutzen.",
+  "tags": [],
+  "class": "Kaempfer",
+  "class_id": "kaempfer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

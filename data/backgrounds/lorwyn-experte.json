@@ -1,0 +1,88 @@
+{
+  "id": "lorwyn-experte",
+  "type": "background",
+  "name": "Lorwyn-Experte",
+  "original_name": "Lorwyn Expert",
+  "rules_version": "2024",
+  "source": "Lorwyn - First Light",
+  "source_url": "http://dnd2024.wikidot.com/background:lorwyn-expert",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Exotisch",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Stärke, Konstitution, Weisheit",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Stärke, Konstitution, Weisheit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Kind der Sonne"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Leichtathletik und Natur"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse: Werkzeuge des Kartographen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wählen Sie A oder B: (A) Quartierstab, Werkzeuge des Kartographen, Rucksack, Korb, Pergament (4 Blatt), Seil, Kleidung des Reisenden, 29 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie stammen aus Lorwyn, einem Land des ewigen Sonnenscheins, oder Sie haben den Ort mit großer Intensität studiert. Sie betrachten das majestätische Geschöpf Eirdu als die lebendige Verkörperung der Sonne und lieben es, sich auf skurrile Abenteuer einzulassen. Sie halten Ihre Liebsten fest in der Hand, wenn auch nur emotional, denn Sie haben gesehen, wie einige sich ins Schattenmoor oder darüber hinaus wagten und zu verblassten Versionen ihrer selbst wurden. Dennoch bist du mutig und sehnst dich immer nach neuen Erfahrungen."
+    }
+  ],
+  "text": "Fähigkeitswerte: Stärke, Konstitution, Weisheit\n\nTalent: Kind der Sonne\n\nFertigkeiten: Leichtathletik und Natur\n\nWerkzeugkenntnisse: Werkzeuge des Kartographen\n\nAusrüstung: Wählen Sie A oder B: (A) Quartierstab, Werkzeuge des Kartographen, Rucksack, Korb, Pergament (4 Blatt), Seil, Kleidung des Reisenden, 29 GP; oder (B) 50 GP\n\nSie stammen aus Lorwyn, einem Land des ewigen Sonnenscheins, oder Sie haben den Ort mit großer Intensität studiert. Sie betrachten das majestätische Geschöpf Eirdu als die lebendige Verkörperung der Sonne und lieben es, sich auf skurrile Abenteuer einzulassen. Sie halten Ihre Liebsten fest in der Hand, wenn auch nur emotional, denn Sie haben gesehen, wie einige sich ins Schattenmoor oder darüber hinaus wagten und zu verblassten Versionen ihrer selbst wurden. Dennoch bist du mutig und sehnst dich immer nach neuen Erfahrungen.",
+  "tags": [],
+  "ability_scores": [
+    "str",
+    "con",
+    "wis"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "str",
+      "con",
+      "wis"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Athletik",
+    "Natur\n\nWerkzeugkenntnisse: Werkzeuge des Kartographen"
+  ],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "kind-der-sonne",
+  "granted_feat_name": "Kind der Sonne\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wählen Sie A oder B: (A) Quartierstab, Werkzeuge des Kartographen, Rucksack, Korb, Pergament (4 Blatt), Seil, Kleidung des Reisenden, 29 GP; oder (B) 50 GP\n\nSie stammen aus Lorwyn, einem Land des ewigen Sonnenscheins, oder Sie haben den Ort mit großer Intensität studiert. Sie betrachten das majestätische Geschöpf Eirdu als die lebendige Verkörperung der Sonne und lieben es, sich auf skurrile Abenteuer einzulassen. Sie halten Ihre Liebsten fest in der Hand, wenn auch nur emotional, denn Sie haben gesehen, wie einige sich ins Schattenmoor oder darüber hinaus wagten und zu verblassten Versionen ihrer selbst wurden. Dennoch bist du mutig und sehnst dich immer nach neuen Erfahrungen"
+    }
+  ]
+}

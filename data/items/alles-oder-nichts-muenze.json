@@ -3,8 +3,7 @@
   "type": "Wundersamer Gegenstand",
   "name": "Alles oder Nichts - Münze",
   "vendors": [
-    "Ishmar's Magisches Allerlei",
-    "Beute"
+    "Ishmar's Magisches Allerlei"
   ],
   "rules_version": "2024",
   "source": "Homebrew",
@@ -38,7 +37,9 @@
   "granted_action_ids": [],
   "granted_spell_ids": [],
   "contained_item_ids": [],
-  "effects": ["20 oder 1"],
+  "effects": [
+    "20 oder 1"
+  ],
   "use_cost": null,
   "text": "Einmal pro Tag kann diese Münze anstelle eines W20 geworfen werden. Du musst vorher das Ergebnis vorraussagen. Bei richtiger Vorhersage ist das Ergebnis eine 20, bei falscher eine 1.",
   "tags": [

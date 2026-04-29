@@ -604,6 +604,7 @@ export function entityHref(kind, id, { base = "./" } = {}){
   if (kind === "npc") return `${base}npc.html?id=${encodeURIComponent(cleanId)}`;
   if (kind === "item") return `${base}item.html?id=${encodeURIComponent(cleanId)}`;
   if (kind === "table") return `${base}dice.html?table_file=${encodeURIComponent(cleanId)}`;
+  if (kind === "status") return `${base}index.html#content/rules/status-effects.md#${statusAnchorSlug(cleanId)}`;
   return null;
 }
 
@@ -970,6 +971,39 @@ function lowerAbilityMap(scores){
   return out;
 }
 
+function formatMovementDistance(value){
+  if (value == null || value === "") return "";
+  if (typeof value === "number" && Number.isFinite(value)) return `${trimTrailingZeros(value)} m`;
+
+  const text = repairText(String(value)).trim();
+  if (!text) return "";
+  if (/^-?\d+(?:[.,]\d+)?$/.test(text)) return `${text} m`;
+  return text;
+}
+
+export function formatSpeedList(speed){
+  if (!speed) return "";
+  if (typeof speed === "string" || typeof speed === "number") return formatMovementDistance(speed);
+  if (typeof speed !== "object") return "";
+
+  const order = ["walk", "fly", "swim", "climb", "burrow"];
+  const labels = {
+    walk: "Gehen",
+    fly: "Fliegen",
+    swim: "Schwimmen",
+    climb: "Klettern",
+    burrow: "Graben"
+  };
+
+  return order
+    .map(key => {
+      const text = formatMovementDistance(speed[key]);
+      return text ? `${labels[key]} ${text}` : "";
+    })
+    .filter(Boolean)
+    .join(", ");
+}
+
 function normalizeRefList(list){
   return (Array.isArray(list) ? list : [])
     .map(normalizeEntityRef)
@@ -1127,7 +1161,8 @@ export function normalizePc(raw){
     portrait: identity.appearance?.img || raw.portrait || "",
     ac: combat.armor_class ?? raw.ac ?? null,
     hp: combat.hp?.max ?? raw.hp ?? null,
-    speed: combat.speeds?.walk != null ? `${combat.speeds.walk} m` : (raw.speed ?? null),
+    hit_dice: combat.hp?.hit_dice ?? raw.hit_dice ?? raw.hitDice ?? "",
+    speed: formatSpeedList(combat.speeds || raw.speeds || raw.speed),
     abilities: lowerAbilityMap(c.ability_scores || {}),
     spell_sections: spellSections,
     item_sections: itemSections,
@@ -1190,6 +1225,17 @@ function rollHref(expr){
   return `${prefix}dice.html?expr=${encoded}&auto=1`;
 }
 
+export function renderRollExpressionHtml(expr, label = null){
+  const normalized = normalizeRollExpression(expr);
+  const display = label == null || label === "" ? formatRollExpression(expr) : repairText(String(label));
+  if (!normalized) return escapeHtml(display);
+
+  const href = rollHref(normalized);
+  return href
+    ? `<a href="${href}" target="dnd-dice" rel="noopener">${escapeHtml(display)}</a>`
+    : escapeHtml(display);
+}
+
 function normalizeInlineKind(kind){
   const value = repairText(String(kind ?? "")).trim().toLowerCase();
   if (value === "spell" || value === "zauber") return "spell";
@@ -1197,9 +1243,43 @@ function normalizeInlineKind(kind){
   if (value === "npc" || value === "nsc") return "npc";
   if (value === "pc" || value === "charakter") return "pc";
   if (value === "item" || value === "gegenstand") return "item";
+  if (value === "status" || value === "zustand" || value === "condition" || value === "effect" || value === "effekt") return "status";
   if (value === "table" || value === "tabelle") return "table";
   if (value === "roll" || value === "wurf" || value === "wuerfel") return "roll";
   return value;
+}
+
+function statusAnchorSlug(value){
+  const slug = slugify(value);
+  const aliases = {
+    blind: "blind",
+    blinded: "blind",
+    bezaubert: "bezaubert",
+    charmed: "bezaubert",
+    betaubt: "betaubt",
+    stunned: "betaubt",
+    bewusstlos: "bewusstlos",
+    unconscious: "bewusstlos",
+    festgesetzt: "festgesetzt",
+    restrained: "festgesetzt",
+    gelahmt: "gelahmt",
+    paralyzed: "gelahmt",
+    gepackt: "gepackt",
+    grappled: "gepackt",
+    liegend: "liegend",
+    prone: "liegend",
+    taub: "taub",
+    deafened: "taub",
+    unsichtbar: "unsichtbar",
+    invisible: "unsichtbar",
+    vergiftet: "vergiftet",
+    poisoned: "vergiftet",
+    verangstigt: "verangstigt",
+    frightened: "verangstigt",
+    versteinert: "versteinert",
+    petrified: "versteinert"
+  };
+  return aliases[slug] || slug;
 }
 
 function pageRelativeEntityHref(kind, id){
@@ -1221,6 +1301,7 @@ function pageRelativeEntityHref(kind, id){
     npc: `./pages/bestiarium/npc.html?id=${encoded}`,
     pc: `./pages/spieler/pc.html?id=${encoded}`,
     item: `./pages/items/item.html?id=${encoded}`,
+    status: `./index.html#content/rules/status-effects.md#${statusAnchorSlug(cleanId)}`,
     table: `./pages/werkzeuge/dice.html?table_file=${encoded}`
   };
 
@@ -1232,6 +1313,7 @@ function pageRelativeEntityHref(kind, id){
     npc: `${inBestiary ? "./" : "../bestiarium/"}npc.html?id=${encoded}`,
     pc: `${inPlayer ? "./" : "../spieler/"}pc.html?id=${encoded}`,
     item: `${inItems ? "./" : "../items/"}item.html?id=${encoded}`,
+    status: `../../index.html#content/rules/status-effects.md#${statusAnchorSlug(cleanId)}`,
     table: `${inTools ? "./" : "../werkzeuge/"}dice.html?table_file=${encoded}`
   };
 
@@ -1244,6 +1326,7 @@ export function linkifyRefs(text, { base = null, lookups = {}, routes = null } =
 
   let out = "";
   let last = 0;
+  const renderInlineSlice = (value) => applyInlineMarkdown(escapeHtml(value)).replaceAll("\n", "<br/>");
 
   for (const m of s.matchAll(re)) {
     const kind = normalizeInlineKind(m[1]);
@@ -1251,9 +1334,9 @@ export function linkifyRefs(text, { base = null, lookups = {}, routes = null } =
     const customLabel = String(m[3] ?? "").trim();
     const start = m.index ?? 0;
 
-    out += escapeHtml(s.slice(last, start)).replaceAll("\n", "<br/>");
+    out += renderInlineSlice(s.slice(last, start));
 
-    const label = escapeHtml(customLabel || (kind === "roll" ? formatRollExpression(id) : lookupEntityName(kind, id, lookups) || prettifyEntityId(id)));
+    const label = renderInlineSlice(customLabel || (kind === "roll" ? formatRollExpression(id) : lookupEntityName(kind, id, lookups) || prettifyEntityId(id)));
     const route = routes?.[kind];
     let href = typeof route === "function"
       ? route(id)
@@ -1269,7 +1352,7 @@ export function linkifyRefs(text, { base = null, lookups = {}, routes = null } =
     last = start + String(m[0]).length;
   }
 
-  out += escapeHtml(s.slice(last)).replaceAll("\n", "<br/>");
+  out += renderInlineSlice(s.slice(last));
   return out;
 }
 
@@ -1277,6 +1360,8 @@ function sanitizeMarkdownHref(url){
   const value = String(url ?? "").trim();
   if (!value) return null;
   if (/^(https?:|mailto:|#|\/|\.\.?(?:\/|$))/i.test(value)) return value;
+  if (/^[a-z][a-z0-9+.-]*:/i.test(value)) return null;
+  if (/^[^\s<>"']+$/i.test(value)) return value;
   return null;
 }
 
@@ -1293,6 +1378,8 @@ function applyInlineMarkdown(text){
   });
 
   out = out.replace(/\+\+([^\n+](?:.*?[^\n+])?)\+\+/g, "<u>$1</u>");
+  out = out.replace(/\*\*\*([^\n*](?:.*?[^\n*])?)\*\*\*/g, "<strong><em>$1</em></strong>");
+  out = out.replace(/___([^\n_](?:.*?[^\n_])?)___/g, "<strong><em>$1</em></strong>");
   out = out.replace(/\*\*([^\n*](?:.*?[^\n*])?)\*\*/g, "<strong>$1</strong>");
   out = out.replace(/__([^\n_](?:.*?[^\n_])?)__/g, "<strong>$1</strong>");
   out = out.replace(/(^|[^\*])\*([^*\n][^*\n]*?)\*(?!\*)/g, "$1<em>$2</em>");
@@ -1313,6 +1400,15 @@ export function renderRichText(text, { base = null, lookups = {}, routes = null,
   let source = String(text ?? "").replace(/\r\n?/g, "\n");
 
   source = source.replace(/`([^`\n]+)`/g, (_, code) => reserveHtml(`<code>${escapeHtml(code)}</code>`));
+  source = source.replace(/<\/?(?:i|em|b|strong|u|br)\s*\/?>/gi, (tag) => {
+    const normalized = tag
+      .replace(/\s+/g, "")
+      .replace(/^<i\/?>$/i, "<em>")
+      .replace(/^<\/i>$/i, "</em>")
+      .replace(/^<b\/?>$/i, "<strong>")
+      .replace(/^<\/b>$/i, "</strong>");
+    return reserveHtml(normalized);
+  });
   source = source.replace(/\[\[([a-z]+):([^|\]]+)(?:\|([^\]]+))?\]\]/gi, (match) => reserveHtml(linkifyRefs(match, { base, lookups, routes })));
   source = escapeHtml(source);
   source = applyInlineMarkdown(source);

@@ -1,0 +1,58 @@
+{
+  "id": "brecher",
+  "type": "feat",
+  "name": "Brecher",
+  "original_name": "Crusher",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:crusher",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Stufe 4+"
+  ],
+  "summary": "Voraussetzung: Level 4+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Konstitutionswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Drücken. Wenn du einmal pro Spielzug eine Kreatur mit einem Angriff triffst, der Wuchtschaden verursacht, kannst du sie 1,5 m weit auf ein freies Feld bewegen, wenn das Ziel nicht mehr als eine Größe größer als du ist."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhter kritischer Wert. Wenn du einen kritischen Treffer erzielst, der einer Kreatur Wuchtschaden zufügt, haben Angriffswürfe gegen diese Kreatur bis zum Beginn deines nächsten Zuges einen Vorteil."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke- oder Konstitutionswert um 1 auf maximal 20.\n\nDrücken. Wenn du einmal pro Spielzug eine Kreatur mit einem Angriff triffst, der Wuchtschaden verursacht, kannst du sie 1,5 m weit auf ein freies Feld bewegen, wenn das Ziel nicht mehr als eine Größe größer als du ist.\n\nErhöhter kritischer Wert. Wenn du einen kritischen Treffer erzielst, der einer Kreatur Wuchtschaden zufügt, haben Angriffswürfe gegen diese Kreatur bis zum Beginn deines nächsten Zuges einen Vorteil.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

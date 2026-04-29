@@ -4,8 +4,7 @@
   "name": "Arkane Batterie",
   "vendors": [
     "Ishmar's Magisches Allerlei",
-    "Zaubererturm",
-    "Beute"
+    "Zaubererturm"
   ],
   "rules_version": "2024",
   "source": "Netheril's Fall",
@@ -39,7 +38,9 @@
   "granted_action_ids": [],
   "granted_spell_ids": [],
   "contained_item_ids": [],
-  "effects": ["stellt 1W4 + 1 Ladungen wiederher"],
+  "effects": [
+    "stellt 1W4 + 1 Ladungen wiederher"
+  ],
   "use_cost": "Aktion",
   "text": "Dieser glatte ovale Stein kann als Aktion an einen magischen Gegenstand gehalten werden, der Ladungen braucht und stellt sofort 1W4+1 dieser Ladungen wieder auf. Dies kann nur einmal verwendet werden.",
   "tags": [

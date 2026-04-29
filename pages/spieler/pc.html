@@ -11,7 +11,6 @@
   <header class="topbar">
     <div class="brand">
       <div class="title" id="title">Spieler-Charakter</div>
-      <div class="subtitle"><a href="./pcs.html">Zurück zu allen Spieler-Charakteren</a> &bull; <a href="../../index.html">Startseite</a></div>
     </div>
   </header>
 
@@ -21,6 +20,7 @@
     </div>
   </main>
 
+  <script src="../../nav.js"></script>
   <script type="module">
     import {
       escapeHtml,
@@ -33,10 +33,12 @@
       normalizePc,
       normalizeItem,
       normalizeSpell,
+      formatSpeedList,
+      renderRollExpressionHtml,
       buildLookupIndex,
       resolveEntityRef,
       entityLinkHtml
-    } from "../../lib.js";
+    } from "../../lib.js?v=2026-04-27-hitdice-links";
 
     const view = document.getElementById("view");
     const titleEl = document.getElementById("title");
@@ -191,6 +193,7 @@
         hair: "Haare",
         height: "Größe",
         hit_dice: "Trefferwürfel",
+        hitDice: "Trefferwürfel",
         hp: "Trefferpunkte",
         ideals: "Ideale",
         identity: "Identität",
@@ -269,6 +272,12 @@
       if (typeof value === "number") return escapeHtml(value);
 
       const text = String(value);
+      if (/^hit_?dice$/i.test(key) || key === "hitDice") {
+        const label = text.trim().replace(/d/gi, "W");
+        const expr = text.trim().replace(/w/gi, "d");
+        return renderRollExpressionHtml(expr, label);
+      }
+
       const trimmed = text.trim();
       const spellHit = spellLookup.get(slugFromText(trimmed));
       const itemHit = itemLookup.get(slugFromText(trimmed));
@@ -310,6 +319,7 @@
       }
 
       if (isPlainObject(value)) {
+        if (key === "speeds" || key === "speed") return escapeHtml(formatSpeedList(value));
         if (value.spell_ref && Object.keys(value).length <= 2) return renderValue(value.spell_ref, "spell_ref");
         if (value.item_ref && Object.keys(value).length <= 2) return renderValue(value.item_ref, "item_ref");
         if ((value.id || value.name) && key === "spells") return linkedRef("spell", value, { base: "../zauber/", lookup: spellLookup });
@@ -429,6 +439,7 @@
             <div class="mini-box-text">
               ${p.ac != null ? `<div><b>AC:</b> ${escapeHtml(p.ac)}</div>` : ""}
               ${p.hp != null ? `<div><b>HP:</b> ${escapeHtml(p.hp)}</div>` : ""}
+              ${p.hit_dice ? `<div><b>Trefferwürfel:</b> ${formatScalar(p.hit_dice, "hit_dice")}</div>` : ""}
               ${p.speed != null ? `<div><b>Bewegung:</b> ${escapeHtml(p.speed)}</div>` : ""}
               ${p.player ? `<div><b>Spieler:</b> ${escapeHtml(p.player)}</div>` : ""}
             </div>

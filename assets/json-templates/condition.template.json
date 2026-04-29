@@ -1,0 +1,12 @@
+{
+  "id": "<condition-id>",
+  "type": "condition",
+  "name": "<Condition Name>",
+  "rules_version": "2024",
+  "source": "<source>",
+  "summary": "",
+  "text": "",
+  "modifiers": [],
+  "ends_on": [],
+  "tags": []
+}

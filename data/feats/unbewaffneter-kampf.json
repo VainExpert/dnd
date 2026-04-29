@@ -1,0 +1,48 @@
+{
+  "id": "unbewaffneter-kampf",
+  "type": "feat",
+  "name": "Unbewaffneter Kampf",
+  "original_name": "Unarmed Fighting",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:unarmed-fighting",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Kampfstil-Talente",
+  "group": "Kampfstil-Talente",
+  "prerequisites": [
+    "Talent im Kampfstil"
+  ],
+  "summary": "Voraussetzung: Talent im Kampfstil",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Talent im Kampfstil"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie mit Ihrem unbewaffneten Schlag zuschlagen und Schaden verursachen, können Sie anstelle des normalen Schadens eines unbewaffneten Schlags Wuchtschaden in Höhe von 1W6 plus Ihrem Stärkemodifikator verursachen. Wenn Sie beim Angriffswurf weder Waffen noch einen Schild in der Hand haben, wird der W6 zu einem W8."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zu Beginn jedes deiner Züge kannst du einer Kreatur, die du im Ringen führst, 1W4 Knüppelschaden zufügen."
+    }
+  ],
+  "text": "Voraussetzung: Talent im Kampfstil\n\nWenn Sie mit Ihrem unbewaffneten Schlag zuschlagen und Schaden verursachen, können Sie anstelle des normalen Schadens eines unbewaffneten Schlags Wuchtschaden in Höhe von 1W6 plus Ihrem Stärkemodifikator verursachen. Wenn Sie beim Angriffswurf weder Waffen noch einen Schild in der Hand haben, wird der W6 zu einem W8.\n\nZu Beginn jedes deiner Züge kannst du einer Kreatur, die du im Ringen führst, 1W4 Knüppelschaden zufügen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

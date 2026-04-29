@@ -1,0 +1,103 @@
+{
+  "id": "kalashtar",
+  "type": "race",
+  "name": "Kalashtar",
+  "original_name": "Kalashtar",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/species:kalashtar",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Kalashtar (ausgesprochen kal-ASH-tar) sind aus der Vereinigung der Menschheit und abtrünnigen Geistern namens Quori aus der Ebene der Träume entstanden. Kalashtar scheinen menschlich zu sein, aber ihre spirituelle Verbindung beeinflusst sie auf vielfältige Weise. Sie haben symmetrische, leicht kantige Gesichtszüge und ihre Augen leuchten oft, wenn sie sich konzentrieren oder starke Gefühle ausdrücken.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Kalashtar (ausgesprochen kal-ASH-tar) sind aus der Vereinigung der Menschheit und abtrünnigen Geistern namens Quori aus der Ebene der Träume entstanden. Kalashtar scheinen menschlich zu sein, aber ihre spirituelle Verbindung beeinflusst sie auf vielfältige Weise. Sie haben symmetrische, leicht kantige Gesichtszüge und ihre Augen leuchten oft, wenn sie sich konzentrieren oder starke Gefühle ausdrücken."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kalashtar kann nicht direkt mit seinen Quori-Geistern kommunizieren. Kalashtar könnte sie vielmehr als eine Quelle von Instinkt und Inspiration erleben und dabei auf die Erinnerungen der Geister zurückgreifen, wenn die Kalashtar schlafen. Diese Verbindung verleiht Kalashtar kleinere psionische Fähigkeiten sowie Schutz vor psionischen Angriffen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kalashtar-Eigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Aberration"
+    },
+    {
+      "type": "paragraph",
+      "text": "Größe: Mittel (ca. 1,8–2,1 m groß)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschwindigkeit: 30 Fuß"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Kalashtar verfügen Sie über diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dualer Geist. Sie haben einen Vorsprung auf Weisheit und Charisma des Rettungswurfs."
+    },
+    {
+      "type": "paragraph",
+      "text": "Geistige Disziplin. Du hast Resistenz gegen psychischen Schaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mind Link. Sie verfügen über Telepathie mit einer Reichweite in Fuß, die dem Zehnfachen Ihrer Stufe entspricht. Wenn Sie diese Eigenschaft verwenden, um telepathisch mit einer Kreatur zu sprechen, können Sie eine magische Aktion ausführen, um dieser Kreatur die Fähigkeit zu geben, eine Stunde lang oder bis Sie eine weitere magische Aktion ausführen, um diesen Effekt zu beenden, telepathisch mit Ihnen zu sprechen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Von Träumen getrennt. Du kannst nicht das Ziel des Traumzaubers sein. Wenn Sie eine Lange Rast abschließen, erwerben Sie außerdem Kenntnisse in einer Fertigkeit Ihrer Wahl. Diese Fertigkeit hält an, bis Sie eine weitere Lange Rast absolviert haben."
+    }
+  ],
+  "text": "Kalashtar (ausgesprochen kal-ASH-tar) sind aus der Vereinigung der Menschheit und abtrünnigen Geistern namens Quori aus der Ebene der Träume entstanden. Kalashtar scheinen menschlich zu sein, aber ihre spirituelle Verbindung beeinflusst sie auf vielfältige Weise. Sie haben symmetrische, leicht kantige Gesichtszüge und ihre Augen leuchten oft, wenn sie sich konzentrieren oder starke Gefühle ausdrücken.\n\nKalashtar kann nicht direkt mit seinen Quori-Geistern kommunizieren. Kalashtar könnte sie vielmehr als eine Quelle von Instinkt und Inspiration erleben und dabei auf die Erinnerungen der Geister zurückgreifen, wenn die Kalashtar schlafen. Diese Verbindung verleiht Kalashtar kleinere psionische Fähigkeiten sowie Schutz vor psionischen Angriffen.\n\nKalashtar-Eigenschaften\n\nKreaturentyp: Aberration\n\nGröße: Mittel (ca. 1,8–2,1 m groß)\n\nGeschwindigkeit: 30 Fuß\n\nAls Kalashtar verfügen Sie über diese besonderen Eigenschaften.\n\nDualer Geist. Sie haben einen Vorsprung auf Weisheit und Charisma des Rettungswurfs.\n\nGeistige Disziplin. Du hast Resistenz gegen psychischen Schaden.\n\nMind Link. Sie verfügen über Telepathie mit einer Reichweite in Fuß, die dem Zehnfachen Ihrer Stufe entspricht. Wenn Sie diese Eigenschaft verwenden, um telepathisch mit einer Kreatur zu sprechen, können Sie eine magische Aktion ausführen, um dieser Kreatur die Fähigkeit zu geben, eine Stunde lang oder bis Sie eine weitere magische Aktion ausführen, um diesen Effekt zu beenden, telepathisch mit Ihnen zu sprechen.\n\nVon Träumen getrennt. Du kannst nicht das Ziel des Traumzaubers sein. Wenn Sie eine Lange Rast abschließen, erwerben Sie außerdem Kenntnisse in einer Fertigkeit Ihrer Wahl. Diese Fertigkeit hält an, bis Sie eine weitere Lange Rast absolviert haben.",
+  "tags": [],
+  "size": [
+    "Mittel"
+  ],
+  "creature_type": "Aberration",
+  "speed": {
+    "walk": 9,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Dualer Geist",
+      "text": "Sie haben einen Vorsprung auf Weisheit und Charisma des Rettungswurfs."
+    },
+    {
+      "name": "Geistige Disziplin",
+      "text": "Du hast Resistenz gegen psychischen Schaden."
+    },
+    {
+      "name": "Mind Link",
+      "text": "Sie verfügen über Telepathie mit einer Reichweite in Fuß, die dem Zehnfachen Ihrer Stufe entspricht. Wenn Sie diese Eigenschaft verwenden, um telepathisch mit einer Kreatur zu sprechen, können Sie eine magische Aktion ausführen, um dieser Kreatur die Fähigkeit zu geben, eine Stunde lang oder bis Sie eine weitere magische Aktion ausführen, um diesen Effekt zu beenden, telepathisch mit Ihnen zu sprechen."
+    },
+    {
+      "name": "Von Träumen getrennt",
+      "text": "Du kannst nicht das Ziel des Traumzaubers sein. Wenn Sie eine Lange Rast abschließen, erwerben Sie außerdem Kenntnisse in einer Fertigkeit Ihrer Wahl. Diese Fertigkeit hält an, bis Sie eine weitere Lange Rast absolviert haben."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

@@ -1,0 +1,59 @@
+{
+  "id": "stangenwaffen-meister",
+  "type": "feat",
+  "name": "Stangenwaffen-Meister",
+  "original_name": "Polearm Master",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:polearm-master",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Stärke oder Geschicklichkeit 13+)"
+  ],
+  "summary": "Voraussetzung: Level 4+, Stärke oder Geschicklichkeit 13+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, Stärke oder Geschicklichkeit 13+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Geschicklichkeits- oder Stärkewert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Stangenschlag. Unmittelbar nachdem Sie die Angriffsaktion durchgeführt und mit einem Kampfstab, einem Speer oder einer Waffe mit den Eigenschaften „Schwer“ und „Reichweite“ angegriffen haben, können Sie eine Bonusaktion verwenden, um einen Nahkampfangriff mit dem anderen Ende der Waffe durchzuführen. Die Waffe verursacht Wuchtschaden und der Schadenswürfel der Waffe für diesen Angriff ist ein W4."
+    },
+    {
+      "type": "paragraph",
+      "text": "Reaktiver Schlag. Während Sie einen Kampfstab, einen Speer oder eine Waffe mit den Eigenschaften „Schwer“ und „Reichweite“ in der Hand halten, können Sie eine Reaktion ausführen, um einen Nahkampfangriff gegen eine Kreatur durchzuführen, die in die Reichweite gelangt, die Sie mit dieser Waffe haben."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, Stärke oder Geschicklichkeit 13+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Geschicklichkeits- oder Stärkewert um 1 auf maximal 20.\n\nStangenschlag. Unmittelbar nachdem Sie die Angriffsaktion durchgeführt und mit einem Kampfstab, einem Speer oder einer Waffe mit den Eigenschaften „Schwer“ und „Reichweite“ angegriffen haben, können Sie eine Bonusaktion verwenden, um einen Nahkampfangriff mit dem anderen Ende der Waffe durchzuführen. Die Waffe verursacht Wuchtschaden und der Schadenswürfel der Waffe für diesen Angriff ist ein W4.\n\nReaktiver Schlag. Während Sie einen Kampfstab, einen Speer oder eine Waffe mit den Eigenschaften „Schwer“ und „Reichweite“ in der Hand halten, können Sie eine Reaktion ausführen, um einen Nahkampfangriff gegen eine Kreatur durchzuführen, die in die Reichweite gelangt, die Sie mit dieser Waffe haben.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str",
+      "dex"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

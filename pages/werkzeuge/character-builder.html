@@ -1,0 +1,496 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Charakter erstellen</title>
+  <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
+  <script src="../../theme.js?v=theme-20260422"></script>
+  <script src="../../nav.js" defer></script>
+  <style>
+    .builder-shell{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.85fr);gap:14px;align-items:start}
+    .builder-panel{border:1px solid var(--rule);border-radius:8px;background:rgba(255,255,255,.025);padding:14px}
+    .builder-panel h2{margin-top:22px}
+    .form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}
+    .form-field{display:grid;gap:5px;color:var(--muted);font-size:13px}
+    .ability-grid{display:grid;grid-template-columns:repeat(6,minmax(90px,1fr));gap:8px}
+    .ability-card{border:1px solid var(--rule);border-radius:8px;padding:8px;background:rgba(255,255,255,.025)}
+    .ability-card label{display:grid;gap:5px;color:var(--muted);font-size:12px}
+    .ability-score{font-size:22px;color:var(--text);font-weight:700}
+    .ability-card input[type="number"]{width:100%}
+    .builder-actions,.chip-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .chip{display:inline-flex;gap:7px;align-items:center;border:1px solid var(--rule);border-radius:999px;padding:6px 9px;background:rgba(255,255,255,.035)}
+    .chip button{border:0;background:transparent;color:var(--muted);cursor:pointer;font-size:16px;line-height:1}
+    .choice-box{display:grid;gap:8px}
+    .preview-card{border:1px solid var(--rule);border-radius:8px;padding:12px;background:rgba(255,255,255,.025);margin-bottom:10px}
+    .preview-title{font-weight:700;margin-bottom:3px}
+    .preview-text{color:var(--muted);font-size:13px;line-height:1.45}
+    .json-box{min-height:300px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px}
+    .btn{padding:10px 12px;border-radius:8px;border:1px solid var(--rule);background:#0b0e16;color:var(--text);cursor:pointer}
+    .btn:hover{border-color:rgba(225,91,79,.35);background:rgba(225,91,79,.12)}
+    @media (max-width:900px){.builder-shell{grid-template-columns:1fr}.ability-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Charakter erstellen</div>
+      <div class="subtitle">Standardarray, lokale Optionen, JSON-Export</div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar"></aside>
+    <main class="main">
+      <div class="content" style="max-width:1200px;">
+        <div class="builder-shell">
+          <section class="builder-panel">
+            <h1>Spielercharakter</h1>
+            <div class="form-grid">
+              <label class="form-field">Name <input id="name" class="select" value="Neuer Charakter"/></label>
+              <label class="form-field">Spieler <input id="player" class="select"/></label>
+              <label class="form-field">Stufe <input id="level" class="select" type="number" min="1" max="20" value="1"/></label>
+              <label class="form-field">Volk <select id="race" class="select"></select></label>
+              <label class="form-field">Hintergrund <select id="background" class="select"></select></label>
+              <label class="form-field">Klasse <select id="klass" class="select"></select></label>
+              <label class="form-field">Unterklasse <select id="subclass" class="select"></select></label>
+              <label class="form-field">Bewegung in m <input id="speed" class="select" type="number" min="0" value="9"/></label>
+            </div>
+
+            <h2>Werte</h2>
+            <label class="form-field" style="margin-bottom:10px;">Quelle der Anpassungen <input id="abilitySource" class="select" placeholder="z.B. Volk, Hintergrund, Talent, Hausregel"/></label>
+            <div id="abilities" class="ability-grid"></div>
+
+            <h2>Talente</h2>
+            <div class="choice-box">
+              <div class="form-grid">
+                <label class="form-field">Talent suchen <input id="featSearch" class="select" type="search" placeholder="Name, Gruppe, Voraussetzung"/></label>
+                <label class="form-field">Talent <select id="featSelect" class="select"></select></label>
+              </div>
+              <div class="builder-actions">
+                <button id="addFeat" class="btn" type="button">Talent hinzufuegen</button>
+                <button id="clearFeats" class="btn" type="button">Talente leeren</button>
+              </div>
+              <div id="featChips" class="chip-row"></div>
+            </div>
+
+            <h2>Zauber</h2>
+            <div class="choice-box">
+              <div id="spellNeed" class="preview-card"></div>
+              <div class="form-grid">
+                <label class="form-field">Zauber suchen <input id="spellSearch" class="select" type="search" placeholder="Name, Schule, Klasse"/></label>
+                <label class="form-field">Grad <select id="spellLevel" class="select"></select></label>
+                <label class="form-field">Zauber <select id="spellSelect" class="select"></select></label>
+              </div>
+              <div class="builder-actions">
+                <button id="addSpell" class="btn" type="button">Zauber hinzufuegen</button>
+                <button id="clearSpells" class="btn" type="button">Zauber leeren</button>
+              </div>
+              <div id="spellChips" class="chip-row"></div>
+            </div>
+
+            <h2>Gegenstaende</h2>
+            <div class="choice-box">
+              <div class="form-grid">
+                <label class="form-field">Gegenstand suchen <input id="itemSearch" class="select" type="search" placeholder="Name, Kategorie, Tags"/></label>
+                <label class="form-field">Gegenstand <select id="itemSelect" class="select"></select></label>
+                <label class="form-field">Anzahl <input id="itemQty" class="select" type="number" min="1" max="999" value="1"/></label>
+              </div>
+              <div class="builder-actions">
+                <button id="addItem" class="btn" type="button">Gegenstand hinzufuegen</button>
+                <button id="clearItems" class="btn" type="button">Gegenstaende leeren</button>
+              </div>
+              <div id="itemChips" class="chip-row"></div>
+            </div>
+
+            <h2>Notizen</h2>
+            <textarea id="notes" class="select" rows="5" placeholder="Persoenlichkeit, Aussehen, offene Entscheidungen..."></textarea>
+          </section>
+
+          <aside class="builder-panel">
+            <h2 style="margin-top:0">Vorschau</h2>
+            <div id="summary"></div>
+            <h2>Export</h2>
+            <div class="builder-actions" style="margin-bottom:10px;">
+              <button id="download" class="btn" type="button">JSON herunterladen</button>
+            </div>
+            <textarea id="json" class="select json-box" readonly></textarea>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany, normalizeItem, repairText, slugify } from "../../lib.js";
+
+    const STANDARD = [15, 14, 13, 12, 10, 8];
+    const ABILITIES = [
+      ["str", "STR", "Staerke"],
+      ["dex", "DEX", "Geschick"],
+      ["con", "CON", "Konstitution"],
+      ["int", "INT", "Intelligenz"],
+      ["wis", "WIS", "Weisheit"],
+      ["cha", "CHA", "Charisma"]
+    ];
+    const state = {
+      feats: [],
+      spells: [],
+      items: [],
+      abilityBase: { str:15, dex:14, con:13, int:12, wis:10, cha:8 },
+      abilityAdjust: { str:0, dex:0, con:0, int:0, wis:0, cha:0 }
+    };
+    let races = [], backgrounds = [], classes = [], feats = [], spells = [], items = [];
+
+    const $ = id => document.getElementById(id);
+    const nameEl = $("name"), playerEl = $("player"), levelEl = $("level"), raceEl = $("race"), backgroundEl = $("background"), klassEl = $("klass"), subclassEl = $("subclass"), speedEl = $("speed"), notesEl = $("notes");
+    const featSearchEl = $("featSearch"), featSelectEl = $("featSelect"), spellSearchEl = $("spellSearch"), spellLevelEl = $("spellLevel"), spellSelectEl = $("spellSelect"), itemSearchEl = $("itemSearch"), itemSelectEl = $("itemSelect"), itemQtyEl = $("itemQty");
+
+    function displayName(entry){ return repairText(entry?.name || entry?.id || ""); }
+    function byName(a, b){ return displayName(a).localeCompare(displayName(b), "de"); }
+    function optionHtml(entry){ return `<option value="${escapeHtml(entry.id)}">${escapeHtml(displayName(entry))}</option>`; }
+    function shortText(entry, max = 320){
+      const text = repairText(entry?.summary || entry?.text || "").replace(/\s+/g, " ").trim();
+      return text.length > max ? text.slice(0, max - 1) + "..." : text;
+    }
+    function mod(score){ return Math.floor((Number(score) - 10) / 2); }
+    function signed(n){ return n >= 0 ? `+${n}` : String(n); }
+    function selectedRace(){ return races.find(x => x.id === raceEl.value) || null; }
+    function selectedBackground(){ return backgrounds.find(x => x.id === backgroundEl.value) || null; }
+    function selectedClass(){ return classes.find(x => x.id === klassEl.value) || null; }
+    function selectedSubclass(){
+      const klass = selectedClass();
+      return (klass?.subclasses || []).find(x => x.id === subclassEl.value) || null;
+    }
+    function abilityScores(){
+      return Object.fromEntries(ABILITIES.map(([key]) => [
+        key,
+        Math.max(1, Math.min(30, Number(state.abilityBase[key] || 10) + Number(state.abilityAdjust[key] || 0)))
+      ]));
+    }
+    function searchableText(entry){ return repairText([entry?.name, entry?.original_name, entry?.group, entry?.category, entry?.summary, entry?.text, ...(entry?.prerequisites || [])].join(" ")); }
+    function normName(value){ return repairText(value || "").toLowerCase(); }
+    function spellChoices(entry){
+      const choices = [];
+      if (Array.isArray(entry?.choice_sets)) choices.push(...entry.choice_sets.filter(choice => choice?.type === "spell"));
+      if (Array.isArray(entry?.spellcasting?.spell_choices)) choices.push(...entry.spellcasting.spell_choices);
+      const seen = new Set();
+      return choices.filter(choice => {
+        const id = choice.id || JSON.stringify(choice);
+        if (seen.has(id)) return false;
+        seen.add(id);
+        return true;
+      });
+    }
+    function hasSpellcastingData(entry){
+      return Boolean(entry?.spellcasting?.ability || entry?.spellcasting?.uses_spell_slots || entry?.spellcasting?.spell_list_names?.length || spellChoices(entry).length);
+    }
+    function grantsSpells(entry){
+      if (hasSpellcastingData(entry)) return true;
+      const text = searchableText(entry).toLowerCase();
+      return /zauber|cantrip|spell|magie|magisch|ritual/.test(text);
+    }
+    function selectedSpellSourceInfo(){
+      const sources = [];
+      const klass = selectedClass();
+      if (klass && (grantsSpells(klass) || spells.some(sp => (sp.classes || []).map(normName).includes(normName(displayName(klass)))))) sources.push({ name: displayName(klass), entry: klass });
+      const background = selectedBackground();
+      if (background && grantsSpells(background)) sources.push({ name: displayName(background), entry: background });
+      for (const feat of state.feats) if (grantsSpells(feat)) sources.push({ name: displayName(feat), entry: feat });
+      return sources;
+    }
+    function selectedSpellSources(){
+      return selectedSpellSourceInfo().map(source => source.name);
+    }
+    function classSpellNames(){
+      const klass = selectedClass();
+      if (!klass) return [];
+      return [...new Set([displayName(klass), klass.original_name, klass.id, ...(klass.spellcasting?.spell_list_names || [])].filter(Boolean).map(normName))];
+    }
+    function spellFiltersFromSources(sourceInfo){
+      const names = [];
+      const levels = [];
+      for (const source of sourceInfo){
+        names.push(...(source.entry?.spellcasting?.spell_list_names || []));
+        for (const choice of spellChoices(source.entry)){
+          names.push(...(choice.spell_list_names || []));
+          levels.push(...(choice.spell_levels || []));
+        }
+      }
+      return {
+        names: [...new Set(names.filter(Boolean).map(normName))],
+        levels: [...new Set(levels.filter(level => level != null).map(String))]
+      };
+    }
+
+    async function loadCatalog(base){
+      const files = await loadIndex(`../../data/${base}/index.json`);
+      return (await loadMany(`../../data/${base}`, files)).filter(Boolean).sort(byName);
+    }
+
+    function renderOptions(){
+      raceEl.innerHTML = races.map(optionHtml).join("");
+      backgroundEl.innerHTML = backgrounds.map(optionHtml).join("");
+      klassEl.innerHTML = classes.map(optionHtml).join("");
+      renderSubclasses();
+      renderFeatOptions();
+      renderSpellLevelOptions();
+      renderSpellOptions();
+      renderItemOptions();
+    }
+
+    function renderSubclasses(){
+      const klass = selectedClass();
+      const subclasses = klass?.subclasses || [];
+      const current = subclassEl.value;
+      subclassEl.innerHTML = `<option value="">Keine / spaeter waehlen</option>` + subclasses.map(sc => `<option value="${escapeHtml(sc.id)}">${escapeHtml(displayName(sc))}</option>`).join("");
+      if (subclasses.some(sc => sc.id === current)) subclassEl.value = current;
+    }
+
+    function renderAbilities(){
+      const scores = abilityScores();
+      $("abilities").innerHTML = ABILITIES.map(([key, abbr, label]) => `
+        <div class="ability-card">
+          <label>${escapeHtml(label)} Basis
+            <select class="select" data-ability-base="${key}">
+              ${STANDARD.map(score => `<option value="${score}" ${state.abilityBase[key] === score ? "selected" : ""}>${score}</option>`).join("")}
+            </select>
+          </label>
+          <label>Anpassung
+            <input class="select" type="number" min="-10" max="20" value="${escapeHtml(state.abilityAdjust[key])}" data-ability-adjust="${key}" />
+          </label>
+          <label>Endwert
+            <input class="select" type="number" min="1" max="30" value="${escapeHtml(scores[key])}" data-ability-final="${key}" />
+          </label>
+          <div class="ability-score">${escapeHtml(scores[key])}</div>
+          <div class="muted">${escapeHtml(abbr)} ${escapeHtml(signed(mod(scores[key])))} | Basis ${escapeHtml(state.abilityBase[key])}</div>
+        </div>
+      `).join("");
+      for (const select of document.querySelectorAll("[data-ability-base]")){
+        select.addEventListener("change", () => {
+          state.abilityBase[select.dataset.abilityBase] = Number(select.value);
+          render();
+        });
+      }
+      for (const input of document.querySelectorAll("[data-ability-adjust]")){
+        input.addEventListener("input", () => {
+          state.abilityAdjust[input.dataset.abilityAdjust] = Number(input.value || 0);
+          render();
+        });
+      }
+      for (const input of document.querySelectorAll("[data-ability-final]")){
+        input.addEventListener("input", () => {
+          const key = input.dataset.abilityFinal;
+          state.abilityAdjust[key] = Number(input.value || state.abilityBase[key]) - Number(state.abilityBase[key] || 0);
+          render();
+        });
+      }
+    }
+
+    function renderFeatOptions(){
+      const q = featSearchEl.value.trim().toLowerCase();
+      const chosen = new Set(state.feats.map(f => f.id));
+      const pool = feats.filter(f => !chosen.has(f.id)).filter(f => !q || [f.name, f.group, f.category, f.summary, ...(f.prerequisites || [])].join(" ").toLowerCase().includes(q)).slice(0, 120);
+      featSelectEl.innerHTML = pool.map(optionHtml).join("") || `<option value="">Keine Treffer</option>`;
+    }
+
+    function renderSpellLevelOptions(){
+      const current = spellLevelEl.value;
+      spellLevelEl.innerHTML = `<option value="">Alle Grade</option>` + Array.from({ length: 10 }, (_, level) => `<option value="${level}">${level === 0 ? "Zaubertrick" : `Grad ${level}`}</option>`).join("");
+      spellLevelEl.value = [...spellLevelEl.options].some(opt => opt.value === current) ? current : "";
+    }
+
+    function spellPool(){
+      const q = spellSearchEl.value.trim().toLowerCase();
+      const level = spellLevelEl.value;
+      const classNames = classSpellNames();
+      const sourceInfo = selectedSpellSourceInfo();
+      const sources = sourceInfo.map(source => source.name);
+      const sourceFilters = spellFiltersFromSources(sourceInfo);
+      const chosen = new Set(state.spells.map(sp => sp.id));
+      let pool = spells.filter(sp => !chosen.has(sp.id));
+      if (level !== "") pool = pool.filter(sp => String(sp.level ?? "") === level);
+      else if (sourceFilters.levels.length) pool = pool.filter(sp => sourceFilters.levels.includes(String(sp.level ?? "")));
+      const spellListNames = [...new Set([...classNames, ...sourceFilters.names])];
+      if (spellListNames.length && sources.length) {
+        pool = pool.filter(sp => (sp.classes || []).some(c => spellListNames.includes(normName(c))));
+      }
+      if (q) pool = pool.filter(sp => [sp.name, sp.school, ...(sp.classes || []), sp.text].join(" ").toLowerCase().includes(q));
+      return { pool: pool.slice(0, 160), sources };
+    }
+
+    function renderSpellOptions(){
+      const { pool, sources } = spellPool();
+      $("spellNeed").innerHTML = `
+        <div class="preview-title">${sources.length ? "Zauberauswahl empfohlen" : "Zauberauswahl optional"}</div>
+        <div class="preview-text">${escapeHtml(sources.length
+          ? `Ausgeloest durch: ${sources.join(", ")}. Die Liste wird, wenn moeglich, nach der gewaehlten Klasse gefiltert.`
+          : "Keine gewaehlte Klasse, kein Hintergrund und kein Talent verlangt laut lokalem Text eindeutig Zauber; du kannst trotzdem Zauber hinzufuegen.")}</div>
+      `;
+      spellSelectEl.innerHTML = pool.map(sp => `<option value="${escapeHtml(sp.id)}">${escapeHtml(displayName(sp))}${sp.level != null ? ` (${sp.level === 0 ? "Zaubertrick" : `Grad ${sp.level}`})` : ""}</option>`).join("") || `<option value="">Keine Treffer</option>`;
+    }
+
+    function renderItemOptions(){
+      const q = itemSearchEl.value.trim().toLowerCase();
+      const pool = items.filter(item => !q || [item.name, item.item_category, item.rarity, ...(item.tags || [])].join(" ").toLowerCase().includes(q)).slice(0, 160);
+      itemSelectEl.innerHTML = pool.map(optionHtml).join("") || `<option value="">Keine Treffer</option>`;
+    }
+
+    function renderChips(){
+      $("featChips").innerHTML = state.feats.map(f => `<span class="chip">${escapeHtml(displayName(f))}<button type="button" data-remove-feat="${escapeHtml(f.id)}">x</button></span>`).join("") || `<span class="muted">Keine Talente gewaehlt.</span>`;
+      $("spellChips").innerHTML = state.spells.map(sp => `<span class="chip">${escapeHtml(displayName(sp))}<button type="button" data-remove-spell="${escapeHtml(sp.id)}">x</button></span>`).join("") || `<span class="muted">Keine Zauber gewaehlt.</span>`;
+      $("itemChips").innerHTML = state.items.map(entry => `<span class="chip">${escapeHtml(entry.qty)}x ${escapeHtml(displayName(entry.item))}<button type="button" data-remove-item="${escapeHtml(entry.item.id)}">x</button></span>`).join("") || `<span class="muted">Keine Gegenstaende gewaehlt.</span>`;
+      for (const btn of document.querySelectorAll("[data-remove-feat]")) btn.addEventListener("click", () => { state.feats = state.feats.filter(f => f.id !== btn.dataset.removeFeat); render(); });
+      for (const btn of document.querySelectorAll("[data-remove-spell]")) btn.addEventListener("click", () => { state.spells = state.spells.filter(sp => sp.id !== btn.dataset.removeSpell); render(); });
+      for (const btn of document.querySelectorAll("[data-remove-item]")) btn.addEventListener("click", () => { state.items = state.items.filter(e => e.item.id !== btn.dataset.removeItem); render(); });
+    }
+
+    function buildCharacter(){
+      const race = selectedRace(), background = selectedBackground(), klass = selectedClass(), subclass = selectedSubclass();
+      const level = Math.max(1, Math.min(20, Number(levelEl.value || 1)));
+      const id = slugify(nameEl.value || "neuer-charakter");
+      const abilities = abilityScores();
+      const hitDie = Number(String(klass?.text || "").match(/D(\d+)/i)?.[1] || 8);
+      const conMod = mod(abilities.con);
+      const hp = Math.max(1, hitDie + conMod + (level - 1) * (Math.ceil(hitDie / 2) + 1 + conMod));
+      const spellRefs = state.spells.map(sp => ({ id: sp.id, name: displayName(sp), level: sp.level ?? null }));
+      return {
+        id,
+        type: "pc",
+        name: nameEl.value.trim() || "Neuer Charakter",
+        player: playerEl.value.trim(),
+        race: displayName(race),
+        background: displayName(background),
+        class: displayName(klass),
+        subclass: displayName(subclass),
+        level,
+        abilities,
+        ability_generation: {
+          method: "standard_array_plus_adjustments",
+          standard_array: STANDARD,
+          base: { ...state.abilityBase },
+          adjustments: { ...state.abilityAdjust },
+          source: $("abilitySource").value.trim()
+        },
+        feats: state.feats.map(f => ({ id: f.id, name: displayName(f) })),
+        spells: spellRefs,
+        items: state.items.map(e => ({ id: e.item.id, name: displayName(e.item), quantity: e.qty })),
+        notes: notesEl.value.trim(),
+        character: {
+          identity: {
+            name: nameEl.value.trim() || "Neuer Charakter",
+            player_name: playerEl.value.trim(),
+            race: displayName(race),
+            background: displayName(background),
+            class: { name: displayName(klass), subclass: displayName(subclass), level }
+          },
+          ability_scores: Object.fromEntries(ABILITIES.map(([key, abbr]) => [abbr, { score: abilities[key], base: state.abilityBase[key], adjustment: state.abilityAdjust[key] }])),
+          combat: {
+            armor_class: 10 + mod(abilities.dex),
+            hp: { max: hp, hit_dice: `${level}d${hitDie}` },
+            speeds: { walk: Number(speedEl.value || 9) }
+          },
+          features: {
+            race: race ? { id: race.id, name: displayName(race), summary: shortText(race) } : null,
+            background: background ? { id: background.id, name: displayName(background), summary: shortText(background) } : null,
+            class: klass ? { id: klass.id, name: displayName(klass), summary: shortText(klass) } : null,
+            feats: state.feats.map(f => ({ id: f.id, name: displayName(f), prerequisites: f.prerequisites || [], summary: shortText(f) }))
+          },
+          equipment: {
+            items: state.items.map(e => ({ quantity: e.qty, item_ref: { id: e.item.id, name: displayName(e.item) } }))
+          },
+          spellcasting: {
+            sources: selectedSpellSources(),
+            spells: spellRefs,
+            cantrips: spellRefs.filter(sp => sp.level === 0),
+            known_or_prepared: spellRefs.filter(sp => sp.level !== 0)
+          }
+        }
+      };
+    }
+
+    function renderSummary(character){
+      const cards = [
+        ["Konzept", `${character.name} - ${character.race || "Volk offen"} - ${character.background || "Hintergrund offen"} - ${character.class || "Klasse offen"} ${character.level}`],
+        ["Werte", ABILITIES.map(([key, abbr]) => `${abbr} ${character.abilities[key]} (${signed(mod(character.abilities[key]))})`).join(", ")],
+        ["Volk", shortText(selectedRace()) || "Keine Beschreibung."],
+        ["Hintergrund", shortText(selectedBackground()) || "Keine Beschreibung."],
+        ["Klasse", shortText(selectedClass()) || "Keine Beschreibung."],
+        ["Talente", state.feats.map(displayName).join(", ") || "Keine gewaehlt."],
+        ["Zauber", state.spells.map(sp => `${displayName(sp)}${sp.level != null ? ` (${sp.level === 0 ? "Zaubertrick" : `Grad ${sp.level}`})` : ""}`).join(", ") || "Keine gewaehlt."],
+        ["Gegenstaende", state.items.map(e => `${e.qty}x ${displayName(e.item)}`).join(", ") || "Keine gewaehlt."]
+      ];
+      $("summary").innerHTML = cards.map(([title, text]) => `<div class="preview-card"><div class="preview-title">${escapeHtml(title)}</div><div class="preview-text">${escapeHtml(text)}</div></div>`).join("");
+    }
+
+    function render(){
+      renderSubclasses();
+      renderAbilities();
+      renderFeatOptions();
+      renderSpellLevelOptions();
+      renderSpellOptions();
+      renderItemOptions();
+      renderChips();
+      const character = buildCharacter();
+      renderSummary(character);
+      $("json").value = JSON.stringify(character, null, 2);
+    }
+
+    function downloadJson(){
+      const character = buildCharacter();
+      const blob = new Blob([JSON.stringify(character, null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = `${character.id || "charakter"}.json`;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+
+    [nameEl, playerEl, levelEl, raceEl, backgroundEl, speedEl, notesEl, $("abilitySource")].forEach(el => el.addEventListener("input", render));
+    klassEl.addEventListener("input", () => { subclassEl.value = ""; render(); });
+    subclassEl.addEventListener("input", render);
+    featSearchEl.addEventListener("input", renderFeatOptions);
+    spellSearchEl.addEventListener("input", renderSpellOptions);
+    spellLevelEl.addEventListener("input", renderSpellOptions);
+    itemSearchEl.addEventListener("input", renderItemOptions);
+    $("addFeat").addEventListener("click", () => {
+      const feat = feats.find(f => f.id === featSelectEl.value);
+      if (feat && !state.feats.some(f => f.id === feat.id)) state.feats.push(feat);
+      render();
+    });
+    $("clearFeats").addEventListener("click", () => { state.feats = []; render(); });
+    $("addSpell").addEventListener("click", () => {
+      const spell = spells.find(sp => sp.id === spellSelectEl.value);
+      if (spell && !state.spells.some(sp => sp.id === spell.id)) state.spells.push(spell);
+      render();
+    });
+    $("clearSpells").addEventListener("click", () => { state.spells = []; render(); });
+    $("addItem").addEventListener("click", () => {
+      const item = items.find(i => i.id === itemSelectEl.value);
+      if (!item) return;
+      const existing = state.items.find(e => e.item.id === item.id);
+      const qty = Math.max(1, Number(itemQtyEl.value || 1));
+      if (existing) existing.qty += qty;
+      else state.items.push({ item, qty });
+      render();
+    });
+    $("clearItems").addEventListener("click", () => { state.items = []; render(); });
+    $("download").addEventListener("click", downloadJson);
+
+    try{
+      [races, backgrounds, classes, feats, spells, items] = await Promise.all([
+        loadCatalog("races"),
+        loadCatalog("backgrounds"),
+        loadCatalog("classes"),
+        loadCatalog("feats"),
+        loadCatalog("spells"),
+        loadCatalog("items").then(list => list.map(normalizeItem).filter(Boolean))
+      ]);
+      renderOptions();
+      render();
+    } catch (err) {
+      $("summary").innerHTML = `<p>Die lokalen Daten konnten nicht geladen werden: ${escapeHtml(err.message || err)}</p>`;
+    }
+  </script>
+</body>
+</html>

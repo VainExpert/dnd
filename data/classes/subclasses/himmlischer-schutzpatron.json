@@ -1,0 +1,123 @@
+{
+  "id": "himmlischer-schutzpatron",
+  "type": "subclass",
+  "name": "Himmlischer Schutzpatron",
+  "original_name": "Celestial Patron",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:celestial-patron",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Rufen Sie die Kraft des Himmels an",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Rufen Sie die Kraft des Himmels an"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihr Pakt bezieht sich auf die Höheren Ebenen, die Bereiche ewiger Glückseligkeit. Sie könnten eine Vereinbarung mit einem Empyrean, einem Couatl, einer Sphinx, einem Einhorn oder einem anderen himmlischen Wesen treffen. Oder Sie rufen zahlreiche solcher Wesen an, während Sie Ziele verfolgen, die mit ihren übereinstimmen. Ihr Pakt ermöglicht es Ihnen, einen Hauch des heiligen Lichts zu erleben, das das Multiversum erleuchtet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Himmlische Zauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Magie deines Gönners sorgt dafür, dass du immer bestimmte Zaubersprüche parat hast; Wenn Sie eine in der Tabelle „Himmlische Zauber“ angegebene Hexenmeisterstufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Himmlische Zauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Hexenmeister-Level",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Hilfe, Wunden heilen, Führungsbolzen, Geringe Wiederherstellung, Licht, Heilige Flamme"
+        ],
+        [
+          "5",
+          "Tageslicht, Wiederbelebung"
+        ],
+        [
+          "7",
+          "Hüter des Glaubens, Wand des Feuers"
+        ],
+        [
+          "9",
+          "Große Wiederherstellung, Himmlische beschwören"
+        ]
+      ],
+      "text": "Hexenmeister-Stufenzauber 3 Hilfe, Wunden heilen, Leitender Bolzen, Geringe Wiederherstellung, Licht, Heilige Flamme 5 Tageslicht, Wiederbelebung 7 Wächter des Glaubens, Feuerwand 9 Große Wiederherstellung, Himmlische beschwören"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Heilendes Licht"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst die Fähigkeit, himmlische Energie zu kanalisieren, um Wunden zu heilen. Du hast einen Vorrat an W6, um diese Heilung voranzutreiben. Die Anzahl der Würfel im Pool entspricht 1 plus deiner Hexenmeisterstufe."
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion können Sie sich selbst oder eine Kreatur, die Sie in einem Umkreis von 60 Fuß um sich herum sehen können, heilen, indem Sie Würfel aus dem Pool verbrauchen. Die maximale Anzahl an Würfeln, die du auf einmal ausgeben kannst, entspricht deinem Charisma-Modifikator (mindestens ein Würfel). Wirf die Würfel, die du ausgibst, und stelle eine Anzahl an Trefferpunkten wieder her, die der Gesamtsumme des Wurfs entspricht. Dein Pool erhält alle verbrauchten Würfel zurück, wenn du eine Lange Rast beendet hast."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Strahlende Seele"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Verbindung zu Ihrem Gönner ermöglicht es Ihnen, als Kanal für Strahlungsenergie zu dienen. Du hast Resistenz gegen Strahlungsschaden. Einmal pro Spielzug, wenn ein von dir gewirkter Zauber Strahlungs- oder Feuerschaden verursacht, kannst du deinen Charisma-Modifikator zum Schaden dieses Zaubers gegen eines der Ziele des Zaubers hinzufügen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 10: Himmlische Widerstandsfähigkeit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst temporäre Trefferpunkte, wenn du deine Funktion „Magische List“ nutzt oder eine kurze oder lange Rast abschließt. Diese temporären Trefferpunkte entsprechen Ihrer Hexenmeisterstufe plus Ihrem Charisma-Modifikator. Wählen Sie außerdem bis zu fünf Kreaturen aus, die Sie sehen können, wenn Sie Punkte sammeln. Diese Kreaturen erhalten jeweils temporäre Trefferpunkte in Höhe der Hälfte Ihrer Hexenmeisterstufe plus Ihrem Charisma-Modifikator."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 14: Sengende Rache"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie oder ein Verbündeter im Umkreis von 60 Fuß um Sie herum einen Todesrettungswurf ausführen wollen, können Sie Strahlungsenergie freisetzen, um die Kreatur zu retten. Die Kreatur erhält Trefferpunkte zurück, die der Hälfte ihres maximalen Trefferpunkts entsprechen, und kann den Zustand „Anfällig“ für sich selbst beenden. Jede Kreatur deiner Wahl, die sich in einem Umkreis von 30 Fuß um die Kreatur befindet, erleidet Strahlungsschaden in Höhe von 2W8 plus deinem Charisma-Modifikator und jede hat den Zustand „Geblendet“ bis zum Ende der aktuellen Runde."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast beendet haben."
+    }
+  ],
+  "text": "Rufen Sie die Kraft des Himmels an\n\nIhr Pakt bezieht sich auf die Höheren Ebenen, die Bereiche ewiger Glückseligkeit. Sie könnten eine Vereinbarung mit einem Empyrean, einem Couatl, einer Sphinx, einem Einhorn oder einem anderen himmlischen Wesen treffen. Oder Sie rufen zahlreiche solcher Wesen an, während Sie Ziele verfolgen, die mit ihren übereinstimmen. Ihr Pakt ermöglicht es Ihnen, einen Hauch des heiligen Lichts zu erleben, das das Multiversum erleuchtet.\n\nStufe 3: Himmlische Zauber\n\nDie Magie deines Gönners sorgt dafür, dass du immer bestimmte Zaubersprüche parat hast; Wenn Sie eine in der Tabelle „Himmlische Zauber“ angegebene Hexenmeisterstufe erreichen, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nHimmlische Zauber\n\nHexenmeister-Stufenzauber 3 Hilfe, Wunden heilen, Leitender Bolzen, Geringe Wiederherstellung, Licht, Heilige Flamme 5 Tageslicht, Wiederbelebung 7 Wächter des Glaubens, Feuerwand 9 Große Wiederherstellung, Himmlische beschwören\n\nStufe 3: Heilendes Licht\n\nDu erhältst die Fähigkeit, himmlische Energie zu kanalisieren, um Wunden zu heilen. Du hast einen Vorrat an W6, um diese Heilung voranzutreiben. Die Anzahl der Würfel im Pool entspricht 1 plus deiner Hexenmeisterstufe.\n\nAls Bonusaktion können Sie sich selbst oder eine Kreatur, die Sie in einem Umkreis von 60 Fuß um sich herum sehen können, heilen, indem Sie Würfel aus dem Pool verbrauchen. Die maximale Anzahl an Würfeln, die du auf einmal ausgeben kannst, entspricht deinem Charisma-Modifikator (mindestens ein Würfel). Wirf die Würfel, die du ausgibst, und stelle eine Anzahl an Trefferpunkten wieder her, die der Gesamtsumme des Wurfs entspricht. Dein Pool erhält alle verbrauchten Würfel zurück, wenn du eine Lange Rast beendet hast.\n\nLevel 6: Strahlende Seele\n\nIhre Verbindung zu Ihrem Gönner ermöglicht es Ihnen, als Kanal für Strahlungsenergie zu dienen. Du hast Resistenz gegen Strahlungsschaden. Einmal pro Spielzug, wenn ein von dir gewirkter Zauber Strahlungs- oder Feuerschaden verursacht, kannst du deinen Charisma-Modifikator zum Schaden dieses Zaubers gegen eines der Ziele des Zaubers hinzufügen.\n\nStufe 10: Himmlische Widerstandsfähigkeit\n\nDu erhältst temporäre Trefferpunkte, wenn du deine Funktion „Magische List“ nutzt oder eine kurze oder lange Rast abschließt. Diese temporären Trefferpunkte entsprechen Ihrer Hexenmeisterstufe plus Ihrem Charisma-Modifikator. Wählen Sie außerdem bis zu fünf Kreaturen aus, die Sie sehen können, wenn Sie Punkte sammeln. Diese Kreaturen erhalten jeweils temporäre Trefferpunkte in Höhe der Hälfte Ihrer Hexenmeisterstufe plus Ihrem Charisma-Modifikator.\n\nStufe 14: Sengende Rache\n\nWenn Sie oder ein Verbündeter im Umkreis von 60 Fuß um Sie herum einen Todesrettungswurf ausführen wollen, können Sie Strahlungsenergie freisetzen, um die Kreatur zu retten. Die Kreatur erhält Trefferpunkte zurück, die der Hälfte ihres maximalen Trefferpunkts entsprechen, und kann den Zustand „Anfällig“ für sich selbst beenden. Jede Kreatur deiner Wahl, die sich in einem Umkreis von 30 Fuß um die Kreatur befindet, erleidet Strahlungsschaden in Höhe von 2W8 plus deinem Charisma-Modifikator und jede hat den Zustand „Geblendet“ bis zum Ende der aktuellen Runde.\n\nSobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast beendet haben.",
+  "tags": [],
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

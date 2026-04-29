@@ -1,0 +1,1058 @@
+{
+  "id": "magier",
+  "type": "class",
+  "name": "Magier",
+  "original_name": "Wizard",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/wizard:main",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Klassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Zauberer zeichnen sich dadurch aus, dass sie das Innenleben der Magie gründlich studieren. Sie wirken explosives Feuer, bogenförmige Blitze, subtile Täuschung und spektakuläre Transformationen. Ihre Magie beschwört Monster aus anderen Ebenen der Existenz, wirft einen Blick in die Zukunft oder bildet Schutzbarrieren. Ihre mächtigsten Zauber verwandeln eine Substanz in eine andere, rufen Meteore vom Himmel oder öffnen Portale zu anderen Welten.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Zauberer zeichnen sich dadurch aus, dass sie das Innenleben der Magie gründlich studieren. Sie wirken explosives Feuer, bogenförmige Blitze, subtile Täuschung und spektakuläre Transformationen. Ihre Magie beschwört Monster aus anderen Ebenen der Existenz, wirft einen Blick in die Zukunft oder bildet Schutzbarrieren. Ihre mächtigsten Zauber verwandeln eine Substanz in eine andere, rufen Meteore vom Himmel oder öffnen Portale zu anderen Welten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die meisten Zauberer haben einen wissenschaftlichen Ansatz zur Magie. Sie untersuchen die theoretischen Grundlagen der Magie, insbesondere die Kategorisierung von Zaubersprüchen in Zauberschulen. Berühmte Zauberer wie Bigby, Tasha, Mordenkainen und Yolande haben auf ihren Studien aufgebaut, um ikonische Zaubersprüche zu erfinden, die heute im gesamten Multiversum verwendet werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die wahrscheinlichste Annäherung eines Zauberers an ein normales Leben ist die Arbeit als Weiser oder Dozent. Andere Zauberer verkaufen ihre Dienste als Berater, dienen in Streitkräften oder führen ein Leben voller Verbrechen oder Herrschaft."
+    },
+    {
+      "type": "paragraph",
+      "text": "Aber die Verlockung des Wissens lockt selbst die abenteuerlustigsten Zauberer aus der Sicherheit ihrer Bibliotheken und Labore in verfallende Ruinen und verlorene Städte. Die meisten Zauberer glauben, dass ihre Gegenstücke in alten Zivilisationen Geheimnisse der Magie kannten, die im Laufe der Zeit verloren gegangen sind, und dass die Entdeckung dieser Geheimnisse den Weg zu einer Macht eröffnen könnte, die größer ist als jede verfügbare Magie der Gegenwart."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Kerneigenschaften des Zauberers"
+        ],
+        [
+          "Primäre Fähigkeit",
+          "Intelligenz"
+        ],
+        [
+          "Trefferpunktwürfel",
+          "D6 pro Zaubererstufe"
+        ],
+        [
+          "Rettungswurf-Kenntnisse",
+          "Intelligenz und Weisheit"
+        ],
+        [
+          "Fertigkeiten",
+          "Wählen Sie 2: Arkana, Geschichte, Einsicht, Untersuchung, Medizin, Natur oder Religion"
+        ],
+        [
+          "Waffenkenntnisse",
+          "Einfache Waffen"
+        ],
+        [
+          "Rüstungstraining",
+          "Keiner"
+        ],
+        [
+          "Startausrüstung",
+          "Wähle A oder B: (A) 2 Dolche, Arkaner Fokus (Quartierstab), Robe, Zauberbuch, Gelehrtenpaket und 5 GP; oder (B) 55 GP"
+        ]
+      ],
+      "text": "Kerneigenschaften des Zauberers Primärfähigkeit Intelligenz Trefferpunkt Würfel W6 pro Zaubererstufe Rettungswurf-Fähigkeiten Intelligenz- und Weisheits-Fertigkeitskompetenzen Wählen Sie 2: Arcana, Geschichte, Einsicht, Untersuchung, Medizin, Natur oder Religion Waffenkompetenzen Einfache Waffen Rüstungstraining Keine Startausrüstung Wählen Sie A oder B: (A) 2 Dolche, Arkaner Fokus (Viertelstab), Robe, Zauberbuch, Gelehrtenpaket und 5 GP; oder (B) 55 GP"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Ein Zauberer werden …"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Charakter der Stufe 1"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalten Sie alle Eigenschaften in der Tabelle „Kernzauberereigenschaften“.",
+        "Erhalten Sie die Fähigkeiten des Zauberers der Stufe 1, die in der Tabelle „Zauberertalente“ aufgeführt sind."
+      ],
+      "text": "Erhalten Sie alle Eigenschaften in der Tabelle „Kernzauberereigenschaften“. Erhalten Sie die Fähigkeiten des Zauberers der Stufe 1, die in der Tabelle „Zauberertalente“ aufgeführt sind."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Als Multiklassen-Charakter"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Erhalte den Trefferpunktwürfel aus der Tabelle „Kerneigenschaften des Zauberers“.",
+        "Erhalten Sie die Fähigkeiten des Zauberers der Stufe 1, die in der Tabelle „Zauberertalente“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen."
+      ],
+      "text": "Erhalte den Trefferpunktwürfel aus der Tabelle „Kerneigenschaften des Zauberers“. Erhalten Sie die Fähigkeiten des Zauberers der Stufe 1, die in der Tabelle „Zauberertalente“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Talente der Zaubererklasse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberertalente"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ebene",
+          "Uebungsbonus",
+          "Talenturen",
+          "Zaubertricks",
+          "Vorbereitete Zauber",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        [
+          "1",
+          "+2",
+          "Zauberei, Ritualexperte, arkane Wiederherstellung",
+          "3",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "2",
+          "+2",
+          "Gelehrte",
+          "3",
+          "5",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "3",
+          "+2",
+          "Wizard-Unterklasse",
+          "3",
+          "6",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "4",
+          "+2",
+          "Faehigkeitswert-Verbesserung",
+          "4",
+          "7",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "5",
+          "+3",
+          "Zauber auswendig lernen",
+          "4",
+          "9",
+          "4",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "6",
+          "+3",
+          "Unterklassenfunktion",
+          "4",
+          "10",
+          "4",
+          "3",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "7",
+          "+3",
+          "-",
+          "4",
+          "11",
+          "4",
+          "3",
+          "3",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "8",
+          "+3",
+          "Faehigkeitswert-Verbesserung",
+          "4",
+          "12",
+          "4",
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "9",
+          "+4",
+          "-",
+          "4",
+          "14",
+          "4",
+          "3",
+          "3",
+          "3",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "10",
+          "+4",
+          "Unterklassenfunktion",
+          "5",
+          "15",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "11",
+          "+4",
+          "-",
+          "5",
+          "16",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "12",
+          "+4",
+          "Faehigkeitswert-Verbesserung",
+          "5",
+          "16",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "13",
+          "+5",
+          "-",
+          "5",
+          "17",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "14",
+          "+5",
+          "Unterklassenfunktion",
+          "5",
+          "18",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "15",
+          "+5",
+          "-",
+          "5",
+          "19",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "-"
+        ],
+        [
+          "16",
+          "+5",
+          "Faehigkeitswert-Verbesserung",
+          "5",
+          "21",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "-"
+        ],
+        [
+          "17",
+          "+6",
+          "-",
+          "5",
+          "22",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "18",
+          "+6",
+          "Zauberbeherrschung",
+          "5",
+          "23",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "19",
+          "+6",
+          "Epischer Segen",
+          "5",
+          "24",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "20",
+          "+6",
+          "Signaturzauber",
+          "5",
+          "25",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "2",
+          "2",
+          "1",
+          "1"
+        ]
+      ],
+      "text": "Stufe Uebungsbonus Talente Zaubertricks Vorbereitete Zauber 1. 2. 3. 4. 5. 6. 7. 8. 9. 1 +2 Zaubern, Ritual-Adept, Arkane Erholung 3 4 2 - - - - - - - - 2 +2 Gelehrter 3 5 3 - - - - - - - - 3 +2 Zauberer-Unterklasse 3 6 4 2 - - - - - - - 4 +2 Verbesserung der Fähigkeitsbewertung 4 7 4 3 - - - - - - - 5 +3 Zauber auswendig lernen 4 9 4 3 2 - - - - - - 6 +3 Unterklassenmerkmal 4 10 4 3 3 - - - - - - 7 +3 - 4 11 4 3 3 1 - - - - - 8 +3 Verbesserung der Fähigkeitsbewertung 4 12 4 3 3 2 - - - - - 9 +4 - 4 14 4 3 3 3 1 - - - - 10 +4 Unterklassenmerkmal 5 15 4 3 3 3 2 - - - - 11 +4 - 5 16 4 3 3 3 2 1 - - - 12 +4 Verbesserung der Fähigkeitsbewertung 5 16 4 3 3 3 2 1 - - - 13 +5 - 5 17 4 3 3 3 2 1 1 - - 14 +5 Unterklassenmerkmal 5 18 4 3 3 3 2 1 1 - - 15 +5 - 5 19 4 3 3 3 2 1 1 1 - 16 +5 Fähigkeitswertverbesserung 5 21 4 3 3 3 2 1 1 1 - 17 +6 - 5 22 4 3 3 3 2 1 1 1 1 18 +6 Zauberbeherrschung 5 23 4 3 3 3 3 1 1 1 1 19 +6 Epischer Segen 5 24 4 3 3 3 3 2 1 1 1 20 +6 Signaturzauber 5 25 4 3 3 3 3 2 2 1 1"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Zauberer erhalten Sie die folgenden Klassenmerkmale, wenn Sie die angegebenen Zaubererstufen erreichen. Diese Funktionen sind in der Tabelle „Wizard Talentures“ aufgeführt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Zaubern"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Schüler der arkanen Magie hast du gelernt, Zauber zu wirken. Die Regeln zum Zaubern finden Sie in Kapitel 7. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln mit Zaubersprüchen verwenden, die später in der Beschreibung der Klasse in der Liste der Zauberzauber aufgeführt werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zaubertricks. Sie kennen drei Zauberer-Cantrips Ihrer Wahl. Empfohlen werden Licht, Magierhand und Froststrahl. Immer wenn Sie eine Lange Rast abgeschlossen haben, können Sie einen Ihrer Cantrips aus dieser Funktion durch einen anderen Zauberer-Cantrip Ihrer Wahl ersetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie die Zaubererstufen 4 und 10 erreichen, lernen Sie einen weiteren Zauberer-Cantrip Ihrer Wahl, wie in der Spalte „Zaubertricks“ der Tabelle „Zaubertalente“ aufgeführt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberbuch. Ihre Zauberlehre gipfelte in der Schaffung eines einzigartigen Buches: Ihrem Zauberbuch. Es ist ein winziges Objekt, das 3 Pfund wiegt, 100 Seiten enthält und nur von Ihnen oder jemandem, der „Identifizieren“ wirkt, gelesen werden kann. Sie bestimmen das Aussehen und die Materialien des Buches, beispielsweise einen Wälzer mit Goldschnitt oder eine Sammlung von mit Bindfaden gebundenem Pergament."
+    },
+    {
+      "type": "paragraph",
+      "text": "Das Buch enthält die Zaubersprüche der Stufe 1+, die Sie kennen. Es beginnt mit sechs Zaubersprüchen der Stufe 1 Ihrer Wahl. Empfohlen werden „Magie erkennen“, „Talent her Fall“, „Mage Armor“, „Magic Missile“, „Sleep“ und „Thunderwave“."
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie nach Stufe 1 eine Zaubererstufe erreichen, fügen Sie Ihrem Zauberbuch zwei Zaubererzauber Ihrer Wahl hinzu. Jeder dieser Zauber muss einer Stufe angehören, für die Sie über Zauberslots verfügen, wie in der Tabelle „Zaubertalente“ aufgeführt. Die Zauber sind der Höhepunkt der arkanen Forschung, die Sie regelmäßig durchführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberplatz. Die Tabelle „Zaubertalente“ zeigt, wie viele Zauberslots Ihnen zum Wirken Ihrer Zauber der Stufe 1+ zur Verfügung stehen. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vorbereitete Zauber der Stufe 1+. Sie bereiten die Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie dazu vier Zauber aus Ihrem Zauberbuch. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Anzahl der Zaubersprüche auf Ihrer Liste erhöht sich mit zunehmender Zaubererstufe, wie in der Spalte „Vorbereitete Zaubersprüche“ der Tabelle „Zauberertalente“ angezeigt. Wenn sich diese Zahl erhöht, wählen Sie weitere Zaubererzauber aus, bis die Anzahl der Zaubersprüche auf Ihrer Liste mit der Zahl in der Tabelle übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Zauberer der Stufe 3 sind, kann Ihre Liste der vorbereiteten Zaubersprüche sechs Zaubersprüche der Stufen 1 und 2 in beliebiger Kombination aus Ihrem Zauberbuch enthalten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Ihnen eine andere Zaubererfunktion Zauber verleiht, die Sie schon immer vorbereitet haben, zählen diese Zauber nicht zu der Anzahl der Zauber, die Sie mit dieser Funktion vorbereiten können. Ansonsten zählen diese Zauber für Sie jedoch als Zaubererzauber."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ändern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie eine Lange Rast abgeschlossen haben, können Sie Ihre Liste der vorbereiteten Zaubersprüche ändern und jeden der dortigen Zaubersprüche durch Zaubersprüche aus Ihrem Zauberbuch ersetzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfähigkeit. Intelligenz ist Ihre Zauberfähigkeit für Ihre Zaubersprüche."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfokus. Sie können einen Arkanen Fokus oder Ihr Zauberbuch als Zauberfokus für Ihre Zaubersprüche verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Erweitern und Ersetzen eines Zauberbuchs"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Zaubersprüche, die Sie Ihrem Zauberbuch hinzufügen, wenn Sie Stufen aufsteigen, spiegeln Ihre laufende magische Forschung wider, aber vielleicht finden Sie während Ihrer Abenteuer auch andere Zaubersprüche, die Sie dem Buch hinzufügen können. Sie könnten beispielsweise einen Zaubererzauber auf einer Zauberrolle entdecken und ihn dann in Ihr Zauberbuch kopieren."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Einen Zauberspruch in das Buch kopieren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie einen Zaubererzauber der Stufe 1+ finden, können Sie ihn in Ihr Zauberbuch kopieren, wenn er einer Stufe entspricht, die Sie vorbereiten können, und wenn Sie Zeit zum Kopieren haben. Für jede Stufe des Zaubers dauert die Transkription 2 Stunden und kostet 50 GP. Anschließend können Sie den Zauber wie die anderen Zauber in Ihrem Zauberbuch vorbereiten."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Das Buch kopieren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können einen Zauber aus Ihrem Zauberbuch in ein anderes Buch kopieren. Dies ähnelt dem Kopieren eines neuen Zaubers in Ihr Zauberbuch, ist jedoch schneller, da Sie bereits wissen, wie man den Zauber wirkt. Sie müssen für jede Stufe des kopierten Zaubers nur 1 Stunde und 10 GP aufwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Ihr Zauberbuch verlieren, können Sie mit dem gleichen Verfahren die Zaubersprüche, die Sie vorbereitet haben, in ein neues Zauberbuch übertragen. Um den Rest des neuen Buches auszufüllen, müssen Sie dafür neue Zaubersprüche finden. Aus diesem Grund führen viele Zauberer ein Backup-Zauberbuch."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Ritualexperte"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst jeden Zauber als Ritual wirken, wenn dieser Zauber das Ritual-Tag hat und sich der Zauber in deinem Zauberbuch befindet. Sie müssen den Zauber nicht vorbereitet haben, aber Sie müssen aus dem Buch lesen, um einen Zauber auf diese Weise wirken zu können."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 1: Arkane Wiederherstellung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können einen Teil Ihrer magischen Energie zurückgewinnen, indem Sie Ihr Zauberbuch studieren. Wenn Sie eine Kurze Rast abgeschlossen haben, können Sie verbrauchte Zauberslots zur Wiederherstellung auswählen. Die Zauberplätze dürfen zusammen eine Stufe haben, die nicht mehr als der Hälfte Ihrer Zaubererstufe entspricht (aufgerundet), und keiner der Plätze darf Stufe 6 oder höher sein. Wenn Sie beispielsweise ein Zauberer der Stufe 4 sind, können Sie Zauberslots im Wert von bis zu zwei Stufen zurückgewinnen, wobei Sie entweder einen Zauberslot der Stufe 2 oder zwei Zauberslots der Stufe 1 zurückgewinnen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 2: Gelehrter"
+    },
+    {
+      "type": "paragraph",
+      "text": "Während du Magie studiertest, hast du dich auch auf ein anderes Studienfach spezialisiert. Wählen Sie eine der folgenden Fähigkeiten, die Sie beherrschen: Arcana, Geschichte, Forschung, Medizin, Natur oder Religion. Sie verfügen über Fachwissen in der gewählten Fertigkeit."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Arkane Tradition"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine Wizard-Unterklasse deiner Wahl. Die Unterklassen „Abjurer“, „Divider“, „Evoker“ und „Illusionist“ werden im Anschluss an die Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen Funktionen auf bestimmten Wizard-Ebenen gewährt. Für den Rest Ihrer Karriere erwerben Sie alle Funktionen Ihrer Unterklasse, die Ihrer Zaubererstufe oder niedriger entsprechen."
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Wizard-Unterklassen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nennen Sie Abjurer Bladesinger Wahrsager Evoker Illusionist"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 4: Verbesserung der Fähigkeitsbewertung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Zaubererstufen 8, 12 und 16."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 5: Zauber auswendig lernen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie eine Kurze Rast beendet haben, können Sie Ihr Zauberbuch studieren und einen der Zaubererzauber der Stufe 1+, die Sie für Ihre Zauberfunktion vorbereitet haben, durch einen anderen Zauber der Stufe 1+ aus dem Buch ersetzen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 18: Zauberbeherrschung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast bestimmte Zauber so gut gemeistert, dass du sie nach Belieben wirken kannst. Wählen Sie in Ihrem Zauberbuch einen Zauber der Stufe 1 und der Stufe 2, die eine Zauberzeit einer Aktion haben. Sie haben diese Zauber immer bereit und können sie auf der niedrigsten Stufe wirken, ohne einen Zauberslot zu verbrauchen. Um einen Zauber auf einer höheren Stufe zu wirken, musst du einen Zauberslot verbrauchen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie Lange Rast abgeschlossen haben, können Sie Ihr Zauberbuch studieren und einen dieser Zauber durch einen geeigneten Zauber derselben Stufe aus dem Buch ersetzen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 19: Epischer Segen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Segen des Zauberrückrufs wird empfohlen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 20: Signaturzauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wählen Sie zwei Zauber der Stufe 3 aus Ihrem Zauberbuch als Ihre Signaturzauber. Sie haben diese Zauber immer bereit und können jeden von ihnen auf Stufe 3 einmal wirken, ohne einen Zauberslot zu verbrauchen. Wenn Sie dies tun, können Sie sie nicht erneut auf diese Weise wirken, bis Sie eine Kurze oder Lange Rast beendet haben. Um einen Zauber auf einer höheren Stufe zu wirken, musst du einen Zauberslot verbrauchen."
+    }
+  ],
+  "text": "Zauberer zeichnen sich dadurch aus, dass sie das Innenleben der Magie gründlich studieren. Sie wirken explosives Feuer, bogenförmige Blitze, subtile Täuschung und spektakuläre Transformationen. Ihre Magie beschwört Monster aus anderen Ebenen der Existenz, wirft einen Blick in die Zukunft oder bildet Schutzbarrieren. Ihre mächtigsten Zauber verwandeln eine Substanz in eine andere, rufen Meteore vom Himmel oder öffnen Portale zu anderen Welten.\n\nDie meisten Zauberer haben einen wissenschaftlichen Ansatz zur Magie. Sie untersuchen die theoretischen Grundlagen der Magie, insbesondere die Kategorisierung von Zaubersprüchen in Zauberschulen. Berühmte Zauberer wie Bigby, Tasha, Mordenkainen und Yolande haben auf ihren Studien aufgebaut, um ikonische Zaubersprüche zu erfinden, die heute im gesamten Multiversum verwendet werden.\n\nDie wahrscheinlichste Annäherung eines Zauberers an ein normales Leben ist die Arbeit als Weiser oder Dozent. Andere Zauberer verkaufen ihre Dienste als Berater, dienen in Streitkräften oder führen ein Leben voller Verbrechen oder Herrschaft.\n\nAber die Verlockung des Wissens lockt selbst die abenteuerlustigsten Zauberer aus der Sicherheit ihrer Bibliotheken und Labore in verfallende Ruinen und verlorene Städte. Die meisten Zauberer glauben, dass ihre Gegenstücke in alten Zivilisationen Geheimnisse der Magie kannten, die im Laufe der Zeit verloren gegangen sind, und dass die Entdeckung dieser Geheimnisse den Weg zu einer Macht eröffnen könnte, die größer ist als jede verfügbare Magie der Gegenwart.\n\nKerneigenschaften des Zauberers Primärfähigkeit Intelligenz Trefferpunkt Würfel W6 pro Zaubererstufe Rettungswurf-Fähigkeiten Intelligenz- und Weisheits-Fertigkeitskompetenzen Wählen Sie 2: Arcana, Geschichte, Einsicht, Untersuchung, Medizin, Natur oder Religion Waffenkompetenzen Einfache Waffen Rüstungstraining Keine Startausrüstung Wählen Sie A oder B: (A) 2 Dolche, Arkaner Fokus (Viertelstab), Robe, Zauberbuch, Gelehrtenpaket und 5 GP; oder (B) 55 GP\n\nEin Zauberer werden …\n\nAls Charakter der Stufe 1\n\nErhalten Sie alle Eigenschaften in der Tabelle „Kernzauberereigenschaften“. Erhalten Sie die Fähigkeiten des Zauberers der Stufe 1, die in der Tabelle „Zauberertalente“ aufgeführt sind.\n\nAls Multiklassen-Charakter\n\nErhalte den Trefferpunktwürfel aus der Tabelle „Kerneigenschaften des Zauberers“. Erhalten Sie die Fähigkeiten des Zauberers der Stufe 1, die in der Tabelle „Zauberertalente“ aufgeführt sind. Sehen Sie sich die Multiclassing-Regeln im Multiclassing an, um Ihre verfügbaren Zauberslots zu bestimmen.\n\nTalente der Zaubererklasse\n\nZauberertalente\n\nStufe Uebungsbonus Talente Zaubertricks Vorbereitete Zauber 1. 2. 3. 4. 5. 6. 7. 8. 9. 1 +2 Zaubern, Ritual-Adept, Arkane Erholung 3 4 2 - - - - - - - - 2 +2 Gelehrter 3 5 3 - - - - - - - - 3 +2 Zauberer-Unterklasse 3 6 4 2 - - - - - - - 4 +2 Verbesserung der Fähigkeitsbewertung 4 7 4 3 - - - - - - - 5 +3 Zauber auswendig lernen 4 9 4 3 2 - - - - - - 6 +3 Unterklassenmerkmal 4 10 4 3 3 - - - - - - 7 +3 - 4 11 4 3 3 1 - - - - - 8 +3 Verbesserung der Fähigkeitsbewertung 4 12 4 3 3 2 - - - - - 9 +4 - 4 14 4 3 3 3 1 - - - - 10 +4 Unterklassenmerkmal 5 15 4 3 3 3 2 - - - - 11 +4 - 5 16 4 3 3 3 2 1 - - - 12 +4 Verbesserung der Fähigkeitsbewertung 5 16 4 3 3 3 2 1 - - - 13 +5 - 5 17 4 3 3 3 2 1 1 - - 14 +5 Unterklassenmerkmal 5 18 4 3 3 3 2 1 1 - - 15 +5 - 5 19 4 3 3 3 2 1 1 1 - 16 +5 Fähigkeitswertverbesserung 5 21 4 3 3 3 2 1 1 1 - 17 +6 - 5 22 4 3 3 3 2 1 1 1 1 18 +6 Zauberbeherrschung 5 23 4 3 3 3 3 1 1 1 1 19 +6 Epischer Segen 5 24 4 3 3 3 3 2 1 1 1 20 +6 Signaturzauber 5 25 4 3 3 3 3 2 2 1 1\n\nAls Zauberer erhalten Sie die folgenden Klassenmerkmale, wenn Sie die angegebenen Zaubererstufen erreichen. Diese Funktionen sind in der Tabelle „Wizard Talentures“ aufgeführt.\n\nStufe 1: Zaubern\n\nAls Schüler der arkanen Magie hast du gelernt, Zauber zu wirken. Die Regeln zum Zaubern finden Sie in Kapitel 7. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln mit Zaubersprüchen verwenden, die später in der Beschreibung der Klasse in der Liste der Zauberzauber aufgeführt werden.\n\nZaubertricks. Sie kennen drei Zauberer-Cantrips Ihrer Wahl. Empfohlen werden Licht, Magierhand und Froststrahl. Immer wenn Sie eine Lange Rast abgeschlossen haben, können Sie einen Ihrer Cantrips aus dieser Funktion durch einen anderen Zauberer-Cantrip Ihrer Wahl ersetzen.\n\nWenn Sie die Zaubererstufen 4 und 10 erreichen, lernen Sie einen weiteren Zauberer-Cantrip Ihrer Wahl, wie in der Spalte „Zaubertricks“ der Tabelle „Zaubertalente“ aufgeführt.\n\nZauberbuch. Ihre Zauberlehre gipfelte in der Schaffung eines einzigartigen Buches: Ihrem Zauberbuch. Es ist ein winziges Objekt, das 3 Pfund wiegt, 100 Seiten enthält und nur von Ihnen oder jemandem, der „Identifizieren“ wirkt, gelesen werden kann. Sie bestimmen das Aussehen und die Materialien des Buches, beispielsweise einen Wälzer mit Goldschnitt oder eine Sammlung von mit Bindfaden gebundenem Pergament.\n\nDas Buch enthält die Zaubersprüche der Stufe 1+, die Sie kennen. Es beginnt mit sechs Zaubersprüchen der Stufe 1 Ihrer Wahl. Empfohlen werden „Magie erkennen“, „Talent her Fall“, „Mage Armor“, „Magic Missile“, „Sleep“ und „Thunderwave“.\n\nImmer wenn Sie nach Stufe 1 eine Zaubererstufe erreichen, fügen Sie Ihrem Zauberbuch zwei Zaubererzauber Ihrer Wahl hinzu. Jeder dieser Zauber muss einer Stufe angehören, für die Sie über Zauberslots verfügen, wie in der Tabelle „Zaubertalente“ aufgeführt. Die Zauber sind der Höhepunkt der arkanen Forschung, die Sie regelmäßig durchführen.\n\nZauberplatz. Die Tabelle „Zaubertalente“ zeigt, wie viele Zauberslots Ihnen zum Wirken Ihrer Zauber der Stufe 1+ zur Verfügung stehen. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt.\n\nVorbereitete Zauber der Stufe 1+. Sie bereiten die Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie dazu vier Zauber aus Ihrem Zauberbuch. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen.\n\nDie Anzahl der Zaubersprüche auf Ihrer Liste erhöht sich mit zunehmender Zaubererstufe, wie in der Spalte „Vorbereitete Zaubersprüche“ der Tabelle „Zauberertalente“ angezeigt. Wenn sich diese Zahl erhöht, wählen Sie weitere Zaubererzauber aus, bis die Anzahl der Zaubersprüche auf Ihrer Liste mit der Zahl in der Tabelle übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Zauberer der Stufe 3 sind, kann Ihre Liste der vorbereiteten Zaubersprüche sechs Zaubersprüche der Stufen 1 und 2 in beliebiger Kombination aus Ihrem Zauberbuch enthalten.\n\nWenn Ihnen eine andere Zaubererfunktion Zauber verleiht, die Sie schon immer vorbereitet haben, zählen diese Zauber nicht zu der Anzahl der Zauber, die Sie mit dieser Funktion vorbereiten können. Ansonsten zählen diese Zauber für Sie jedoch als Zaubererzauber.\n\nÄndern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie eine Lange Rast abgeschlossen haben, können Sie Ihre Liste der vorbereiteten Zaubersprüche ändern und jeden der dortigen Zaubersprüche durch Zaubersprüche aus Ihrem Zauberbuch ersetzen.\n\nZauberfähigkeit. Intelligenz ist Ihre Zauberfähigkeit für Ihre Zaubersprüche.\n\nZauberfokus. Sie können einen Arkanen Fokus oder Ihr Zauberbuch als Zauberfokus für Ihre Zaubersprüche verwenden.\n\nErweitern und Ersetzen eines Zauberbuchs\n\nDie Zaubersprüche, die Sie Ihrem Zauberbuch hinzufügen, wenn Sie Stufen aufsteigen, spiegeln Ihre laufende magische Forschung wider, aber vielleicht finden Sie während Ihrer Abenteuer auch andere Zaubersprüche, die Sie dem Buch hinzufügen können. Sie könnten beispielsweise einen Zaubererzauber auf einer Zauberrolle entdecken und ihn dann in Ihr Zauberbuch kopieren.\n\nEinen Zauberspruch in das Buch kopieren.\n\nWenn Sie einen Zaubererzauber der Stufe 1+ finden, können Sie ihn in Ihr Zauberbuch kopieren, wenn er einer Stufe entspricht, die Sie vorbereiten können, und wenn Sie Zeit zum Kopieren haben. Für jede Stufe des Zaubers dauert die Transkription 2 Stunden und kostet 50 GP. Anschließend können Sie den Zauber wie die anderen Zauber in Ihrem Zauberbuch vorbereiten.\n\nDas Buch kopieren.\n\nSie können einen Zauber aus Ihrem Zauberbuch in ein anderes Buch kopieren. Dies ähnelt dem Kopieren eines neuen Zaubers in Ihr Zauberbuch, ist jedoch schneller, da Sie bereits wissen, wie man den Zauber wirkt. Sie müssen für jede Stufe des kopierten Zaubers nur 1 Stunde und 10 GP aufwenden.\n\nWenn Sie Ihr Zauberbuch verlieren, können Sie mit dem gleichen Verfahren die Zaubersprüche, die Sie vorbereitet haben, in ein neues Zauberbuch übertragen. Um den Rest des neuen Buches auszufüllen, müssen Sie dafür neue Zaubersprüche finden. Aus diesem Grund führen viele Zauberer ein Backup-Zauberbuch.\n\nStufe 1: Ritualexperte\n\nDu kannst jeden Zauber als Ritual wirken, wenn dieser Zauber das Ritual-Tag hat und sich der Zauber in deinem Zauberbuch befindet. Sie müssen den Zauber nicht vorbereitet haben, aber Sie müssen aus dem Buch lesen, um einen Zauber auf diese Weise wirken zu können.\n\nStufe 1: Arkane Wiederherstellung\n\nSie können einen Teil Ihrer magischen Energie zurückgewinnen, indem Sie Ihr Zauberbuch studieren. Wenn Sie eine Kurze Rast abgeschlossen haben, können Sie verbrauchte Zauberslots zur Wiederherstellung auswählen. Die Zauberplätze dürfen zusammen eine Stufe haben, die nicht mehr als der Hälfte Ihrer Zaubererstufe entspricht (aufgerundet), und keiner der Plätze darf Stufe 6 oder höher sein. Wenn Sie beispielsweise ein Zauberer der Stufe 4 sind, können Sie Zauberslots im Wert von bis zu zwei Stufen zurückgewinnen, wobei Sie entweder einen Zauberslot der Stufe 2 oder zwei Zauberslots der Stufe 1 zurückgewinnen.\n\nSobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben.\n\nStufe 2: Gelehrter\n\nWährend du Magie studiertest, hast du dich auch auf ein anderes Studienfach spezialisiert. Wählen Sie eine der folgenden Fähigkeiten, die Sie beherrschen: Arcana, Geschichte, Forschung, Medizin, Natur oder Religion. Sie verfügen über Fachwissen in der gewählten Fertigkeit.\n\nStufe 3: Arkane Tradition\n\nDu erhältst eine Wizard-Unterklasse deiner Wahl. Die Unterklassen „Abjurer“, „Divider“, „Evoker“ und „Illusionist“ werden im Anschluss an die Beschreibung dieser Klasse detailliert beschrieben. Eine Unterklasse ist eine Spezialisierung, die Ihnen Funktionen auf bestimmten Wizard-Ebenen gewährt. Für den Rest Ihrer Karriere erwerben Sie alle Funktionen Ihrer Unterklasse, die Ihrer Zaubererstufe oder niedriger entsprechen.\n\nWizard-Unterklassen\n\nNennen Sie Abjurer Bladesinger Wahrsager Evoker Illusionist\n\nStufe 4: Verbesserung der Fähigkeitsbewertung\n\nDu erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Zaubererstufen 8, 12 und 16.\n\nLevel 5: Zauber auswendig lernen\n\nImmer wenn Sie eine Kurze Rast beendet haben, können Sie Ihr Zauberbuch studieren und einen der Zaubererzauber der Stufe 1+, die Sie für Ihre Zauberfunktion vorbereitet haben, durch einen anderen Zauber der Stufe 1+ aus dem Buch ersetzen.\n\nLevel 18: Zauberbeherrschung\n\nDu hast bestimmte Zauber so gut gemeistert, dass du sie nach Belieben wirken kannst. Wählen Sie in Ihrem Zauberbuch einen Zauber der Stufe 1 und der Stufe 2, die eine Zauberzeit einer Aktion haben. Sie haben diese Zauber immer bereit und können sie auf der niedrigsten Stufe wirken, ohne einen Zauberslot zu verbrauchen. Um einen Zauber auf einer höheren Stufe zu wirken, musst du einen Zauberslot verbrauchen.\n\nImmer wenn Sie Lange Rast abgeschlossen haben, können Sie Ihr Zauberbuch studieren und einen dieser Zauber durch einen geeigneten Zauber derselben Stufe aus dem Buch ersetzen.\n\nLevel 19: Epischer Segen\n\nDu erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Segen des Zauberrückrufs wird empfohlen.\n\nLevel 20: Signaturzauber\n\nWählen Sie zwei Zauber der Stufe 3 aus Ihrem Zauberbuch als Ihre Signaturzauber. Sie haben diese Zauber immer bereit und können jeden von ihnen auf Stufe 3 einmal wirken, ohne einen Zauberslot zu verbrauchen. Wenn Sie dies tun, können Sie sie nicht erneut auf diese Weise wirken, bis Sie eine Kurze oder Lange Rast beendet haben. Um einen Zauber auf einer höheren Stufe zu wirken, musst du einen Zauberslot verbrauchen.",
+  "tags": [],
+  "hit_die": 6,
+  "primary_abilities": [
+    "int"
+  ],
+  "proficiencies": {
+    "saving_throws": [
+      "int",
+      "wis"
+    ],
+    "armor": [],
+    "weapons": [
+      "Einfache Waffen"
+    ],
+    "tools": []
+  },
+  "skill_choices": {
+    "choose": 2,
+    "options": [
+      "Arkana",
+      "Geschichte",
+      "Einsicht",
+      "Untersuchung",
+      "Medizin",
+      "Natur",
+      "Religion"
+    ]
+  },
+  "spellcasting": {
+    "ability": "int",
+    "progression": "full",
+    "preparation_formula": null,
+    "known_formula": null,
+    "focus_types": [
+      "Sie können einen Arkanen Fokus",
+      "Ihr Zauberbuch als Zauberfokus für Ihre Zaubersprüche verwenden"
+    ],
+    "spell_list_names": [
+      "Magier",
+      "Wizard"
+    ],
+    "uses_spell_slots": true
+  },
+  "starting_equipment": {
+    "fixed": [],
+    "choices": []
+  },
+  "multiclass_requirements": {
+    "minimum_abilities": {}
+  },
+  "levels": [
+    {
+      "level": 1,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Zauberei",
+        "Ritualexperte",
+        "arkane Wiederherstellung"
+      ],
+      "cantrips_known": 3,
+      "prepared_spells": 4,
+      "spell_slots": {
+        "1": 2
+      }
+    },
+    {
+      "level": 2,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Gelehrte"
+      ],
+      "cantrips_known": 3,
+      "prepared_spells": 5,
+      "spell_slots": {
+        "1": 3
+      }
+    },
+    {
+      "level": 3,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Wizard-Unterklasse"
+      ],
+      "cantrips_known": 3,
+      "prepared_spells": 6,
+      "spell_slots": {
+        "1": 4,
+        "2": 2
+      }
+    },
+    {
+      "level": 4,
+      "proficiency_bonus": "+2",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "cantrips_known": 4,
+      "prepared_spells": 7,
+      "spell_slots": {
+        "1": 4,
+        "2": 3
+      }
+    },
+    {
+      "level": 5,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Zauber auswendig lernen"
+      ],
+      "cantrips_known": 4,
+      "prepared_spells": 9,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 2
+      }
+    },
+    {
+      "level": 6,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Unterklassenfunktion"
+      ],
+      "cantrips_known": 4,
+      "prepared_spells": 10,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3
+      }
+    },
+    {
+      "level": 7,
+      "proficiency_bonus": "+3",
+      "cantrips_known": 4,
+      "prepared_spells": 11,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1
+      }
+    },
+    {
+      "level": 8,
+      "proficiency_bonus": "+3",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "cantrips_known": 4,
+      "prepared_spells": 12,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2
+      }
+    },
+    {
+      "level": 9,
+      "proficiency_bonus": "+4",
+      "cantrips_known": 4,
+      "prepared_spells": 14,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1
+      }
+    },
+    {
+      "level": 10,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Unterklassenfunktion"
+      ],
+      "cantrips_known": 5,
+      "prepared_spells": 15,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2
+      }
+    },
+    {
+      "level": 11,
+      "proficiency_bonus": "+4",
+      "cantrips_known": 5,
+      "prepared_spells": 16,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      }
+    },
+    {
+      "level": 12,
+      "proficiency_bonus": "+4",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "cantrips_known": 5,
+      "prepared_spells": 16,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      }
+    },
+    {
+      "level": 13,
+      "proficiency_bonus": "+5",
+      "cantrips_known": 5,
+      "prepared_spells": 17,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      }
+    },
+    {
+      "level": 14,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Unterklassenfunktion"
+      ],
+      "cantrips_known": 5,
+      "prepared_spells": 18,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      }
+    },
+    {
+      "level": 15,
+      "proficiency_bonus": "+5",
+      "cantrips_known": 5,
+      "prepared_spells": 19,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      }
+    },
+    {
+      "level": 16,
+      "proficiency_bonus": "+5",
+      "features": [
+        "Faehigkeitswert-Verbesserung"
+      ],
+      "cantrips_known": 5,
+      "prepared_spells": 21,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      }
+    },
+    {
+      "level": 17,
+      "proficiency_bonus": "+6",
+      "cantrips_known": 5,
+      "prepared_spells": 22,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 18,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Zauberbeherrschung"
+      ],
+      "cantrips_known": 5,
+      "prepared_spells": 23,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 19,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Epischer Segen"
+      ],
+      "cantrips_known": 5,
+      "prepared_spells": 24,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 20,
+      "proficiency_bonus": "+6",
+      "features": [
+        "Signaturzauber"
+      ],
+      "cantrips_known": 5,
+      "prepared_spells": 25,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 1
+      }
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Abschwörer",
+      "original_name": "Abjurer",
+      "id": "abschworer",
+      "source_url": "http://dnd2024.wikidot.com/wizard:abjurer",
+      "file": "subclasses/abschworer.json"
+    },
+    {
+      "name": "Klingensänger",
+      "original_name": "Bladesinger",
+      "id": "klingensanger",
+      "source_url": "http://dnd2024.wikidot.com/wizard:bladesinger",
+      "file": "subclasses/klingensanger.json"
+    },
+    {
+      "name": "Wahrsager",
+      "original_name": "Diviner",
+      "id": "wahrsager",
+      "source_url": "http://dnd2024.wikidot.com/wizard:diviner",
+      "file": "subclasses/wahrsager.json"
+    },
+    {
+      "name": "Evoker",
+      "original_name": "Evoker",
+      "id": "evoker",
+      "source_url": "http://dnd2024.wikidot.com/wizard:evoker",
+      "file": "subclasses/evoker.json"
+    },
+    {
+      "name": "Illusionist",
+      "original_name": "Illusionist",
+      "id": "illusionist",
+      "source_url": "http://dnd2024.wikidot.com/wizard:illusionist",
+      "file": "subclasses/illusionist.json"
+    }
+  ],
+  "subclass_index": [
+    "abschworer.json",
+    "evoker.json",
+    "illusionist.json",
+    "klingensanger.json",
+    "wahrsager.json"
+  ]
+}

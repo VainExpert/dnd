@@ -1,0 +1,85 @@
+{
+  "id": "erbe-des-hauses-sivis",
+  "type": "background",
+  "name": "Erbe des Hauses Sivis",
+  "original_name": "House Sivis Heir",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/background:house-sivis-heir",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Intelligenz, Weisheit, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Intelligenz, Weisheit, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Zeichen des Schreibens"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kompetenzen: Geschichte und Wahrnehmung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse: Kalligraphenbedarf"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wählen Sie A oder B: (A) Kalligraphenbedarf, feine Kleidung, Tinte, 5 Tintenstifte, Papier (30 Blatt), Pergament (9 Blatt), 8 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Seit fast dreißig Jahrhunderten setzt sich Ihre Familie für die Aufrechterhaltung der Ordnung ein. Kommunikation ist das Band, das die Zivilisation zusammenhält, und Ihre Vorfahren schlichteten die Streitigkeiten der Herrscher und halfen den Häusern mit Drachenzeichen, einen Platz in der Welt zu finden. Nur wenige Menschen sind sich des Einflusses bewusst, den das Haus Sivis auf die Gestaltung des modernen Zeitalters hatte – ebenso wenige wissen, wie oft ein königlicher Berater mehr Macht innehat als der eigentliche Herrscher. Während die anderen mit Drachenzeichen versehenen Häuser um Ruhm und Anerkennung kämpfen, spielt das Haus Sivis hinter den Kulissen ein langes Spiel mit subtilem Einfluss, um im Chaos endloser Intrigen für Ordnung zu sorgen."
+    }
+  ],
+  "text": "Fähigkeitswerte: Intelligenz, Weisheit, Charisma\n\nTalent: Zeichen des Schreibens\n\nKompetenzen: Geschichte und Wahrnehmung\n\nWerkzeugkenntnisse: Kalligraphenbedarf\n\nAusrüstung: Wählen Sie A oder B: (A) Kalligraphenbedarf, feine Kleidung, Tinte, 5 Tintenstifte, Papier (30 Blatt), Pergament (9 Blatt), 8 GP; oder (B) 50 GP\n\nSeit fast dreißig Jahrhunderten setzt sich Ihre Familie für die Aufrechterhaltung der Ordnung ein. Kommunikation ist das Band, das die Zivilisation zusammenhält, und Ihre Vorfahren schlichteten die Streitigkeiten der Herrscher und halfen den Häusern mit Drachenzeichen, einen Platz in der Welt zu finden. Nur wenige Menschen sind sich des Einflusses bewusst, den das Haus Sivis auf die Gestaltung des modernen Zeitalters hatte – ebenso wenige wissen, wie oft ein königlicher Berater mehr Macht innehat als der eigentliche Herrscher. Während die anderen mit Drachenzeichen versehenen Häuser um Ruhm und Anerkennung kämpfen, spielt das Haus Sivis hinter den Kulissen ein langes Spiel mit subtilem Einfluss, um im Chaos endloser Intrigen für Ordnung zu sorgen.",
+  "tags": [],
+  "ability_scores": [
+    "int",
+    "wis",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "zeichen-des-schreibens-kompetenzen-geschichte-und-wahrnehmung-werkzeugkenntnisse-kalligraphenbedarf",
+  "granted_feat_name": "Zeichen des Schreibens\n\nKompetenzen: Geschichte und Wahrnehmung\n\nWerkzeugkenntnisse: Kalligraphenbedarf\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wählen Sie A oder B: (A) Kalligraphenbedarf, feine Kleidung, Tinte, 5 Tintenstifte, Papier (30 Blatt), Pergament (9 Blatt), 8 GP; oder (B) 50 GP\n\nSeit fast dreißig Jahrhunderten setzt sich Ihre Familie für die Aufrechterhaltung der Ordnung ein. Kommunikation ist das Band, das die Zivilisation zusammenhält, und Ihre Vorfahren schlichteten die Streitigkeiten der Herrscher und halfen den Häusern mit Drachenzeichen, einen Platz in der Welt zu finden. Nur wenige Menschen sind sich des Einflusses bewusst, den das Haus Sivis auf die Gestaltung des modernen Zeitalters hatte – ebenso wenige wissen, wie oft ein königlicher Berater mehr Macht innehat als der eigentliche Herrscher. Während die anderen mit Drachenzeichen versehenen Häuser um Ruhm und Anerkennung kämpfen, spielt das Haus Sivis hinter den Kulissen ein langes Spiel mit subtilem Einfluss, um im Chaos endloser Intrigen für Ordnung zu sorgen"
+    }
+  ]
+}

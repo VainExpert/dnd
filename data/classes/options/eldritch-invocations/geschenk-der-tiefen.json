@@ -1,0 +1,34 @@
+{
+  "id": "geschenk-der-tiefen",
+  "name": "Geschenk der Tiefen",
+  "original_name": "Gift of the Depths",
+  "kind": "eldritch_invocation",
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:eldritch-invocation",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "",
+  "cost_original": "",
+  "prerequisite": "Hexenmeister der Stufe 5+",
+  "prerequisite_original": "Level 5+ Warlock",
+  "summary": "Du kannst unter Wasser atmen und erhältst eine Schwimmgeschwindigkeit, die deiner Geschwindigkeit entspricht.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "You can breathe underwater, and you gain a Swim Speed equal to your Speed.",
+      "text_de": "Du kannst unter Wasser atmen und erhältst eine Schwimmgeschwindigkeit, die deiner Geschwindigkeit entspricht."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also cast Water Breathing once without expending a spell slot. You regain the ability to cast it in this way again when you finish a Long Rest.",
+      "text_de": "Du kannst „Wasseratmung“ auch einmal wirken, ohne einen Zauberslot zu verbrauchen. Die Fähigkeit, es auf diese Weise zu wirken, erhältst du wieder, wenn du Lange Rast beendet hast."
+    }
+  ]
+}

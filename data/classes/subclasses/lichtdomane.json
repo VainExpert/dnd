@@ -1,0 +1,131 @@
+{
+  "id": "lichtdomane",
+  "type": "subclass",
+  "name": "Lichtdomäne",
+  "original_name": "Light Domain",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/cleric:light-domain",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Bringen Sie Licht, um die Dunkelheit zu vertreiben",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Bringen Sie Licht, um die Dunkelheit zu vertreiben"
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Lichtbereich betont die göttliche Macht, loderndes Feuer und Offenbarung herbeizuführen. Kleriker, die diese Macht ausüben, sind erleuchtete Seelen, die von strahlendem Glanz und der Macht der scharfsinnigen Vision ihrer Gottheiten erfüllt sind und die Aufgabe haben, Lügen zu vertreiben und die Dunkelheit zu verbrennen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Lichtdomäne wird mit Göttern der Wahrheit, Wachsamkeit, Schönheit, Einsicht und Erneuerung in Verbindung gebracht. Einige dieser Götter werden mit der Sonne identifiziert oder als Wagenlenker, die die Sonne über den Himmel führen. Andere sind Wächter, die Täuschungen durchdringen. Einige sind Gottheiten der Schönheit und Kunstfertigkeit, die lehren, dass Kunst ein Mittel zur Verbesserung der Seele sei."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Lichtdomänenzauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Verbindung zu dieser göttlichen Domäne stellt sicher, dass Sie immer über bestimmte Zaubersprüche verfügen. Wenn Sie eine in der Tabelle „Lichtdomänenzauber“ angegebene Klerikerstufe erreichen, stehen Ihnen danach immer die aufgeführten Zauber bereit."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Leichte Domänenzauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Kleriker-Stufe",
+          "Vorbereitete Zauber"
+        ],
+        [
+          "3",
+          "Brennende Hände, Feenfeuer, Sengender Strahl, Siehe Unsichtbarkeit"
+        ],
+        [
+          "5",
+          "Tageslicht, Feuerball"
+        ],
+        [
+          "7",
+          "Arkanes Auge, Feuerwand"
+        ],
+        [
+          "9",
+          "Flammenschlag, Wahrsagen"
+        ]
+      ],
+      "text": "Vorbereitete Zauber auf Klerikerstufe: 3 Brennende Hände, Feenfeuer, Sengender Strahl, Unsichtbarkeit sehen, 5 Tageslicht, Feuerball, 7 Arkanes Auge, Feuerwand, 9 Flammenschlag, Wahrsagerei"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Strahlen der Morgenröte"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als magische Aktion präsentierst du dein Heiliges Symbol und verwendest deine Channel-Göttlichkeit, um einen Lichtblitz in einer 9 Meter langen Emanation auszusenden, die von dir selbst ausgeht. Jegliche magische Dunkelheit – etwa die durch den Zauber „Dunkelheit“ erzeugte – in diesem Bereich wird gebannt. Darüber hinaus muss jede Kreatur Ihrer Wahl in diesem Bereich einen Konstitutions-Rettungswurf ausführen und bei einem fehlgeschlagenen Rettungswurf Strahlungsschaden in Höhe von 2W10 plus Ihrer Klerikerstufe oder halb so viel Schaden bei einem erfolgreichen Rettungswurf erleiden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Abwehrfeuer"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn eine Kreatur, die du in einem Umkreis von 30 Fuß um dich herum sehen kannst, einen Angriffswurf ausführt, kannst du eine Reaktion ausführen, um dem Angriffswurf einen Nachteil zu verleihen, wodurch Licht aufflackert, bevor es trifft oder verfehlt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diese Funktion so oft verwenden, wie es Ihrem Weisheitsmodifikator entspricht (mindestens einmal). Wenn Sie eine Lange Rast beenden, erhalten Sie alle verbrauchten Nutzungen zurück."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 6: Verbessertes Abwehrsignal"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du erhältst alle verbrauchten Nutzungen deiner Abwehrfackel zurück, wenn du eine kurze oder lange Rast abschließt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie dem Ziel des auslösenden Angriffs bei jedem Einsatz von „Warding Flare“ eine Anzahl temporärer Trefferpunkte in Höhe von 2W6 plus Ihrem Weisheitsmodifikator geben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 17: Korona des Lichts"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als magische Aktion veranlassen Sie sich selbst, eine Aura aus Sonnenlicht auszustrahlen, die 1 Minute lang anhält oder bis Sie sie aufheben (keine Aktion erforderlich). Sie strahlen helles Licht in einem Radius von 60 Fuß und schwaches Licht für weitere 30 Fuß aus. Deine Feinde im Hellen Licht haben bei Rettungswürfen einen Nachteil gegenüber Radiance of the Dawn und allen Zaubern, die Feuer- oder Radiant-Schaden verursachen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diese Funktion so oft verwenden, wie es Ihrem Weisheitsmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben."
+    }
+  ],
+  "text": "Bringen Sie Licht, um die Dunkelheit zu vertreiben\n\nDer Lichtbereich betont die göttliche Macht, loderndes Feuer und Offenbarung herbeizuführen. Kleriker, die diese Macht ausüben, sind erleuchtete Seelen, die von strahlendem Glanz und der Macht der scharfsinnigen Vision ihrer Gottheiten erfüllt sind und die Aufgabe haben, Lügen zu vertreiben und die Dunkelheit zu verbrennen.\n\nDie Lichtdomäne wird mit Göttern der Wahrheit, Wachsamkeit, Schönheit, Einsicht und Erneuerung in Verbindung gebracht. Einige dieser Götter werden mit der Sonne identifiziert oder als Wagenlenker, die die Sonne über den Himmel führen. Andere sind Wächter, die Täuschungen durchdringen. Einige sind Gottheiten der Schönheit und Kunstfertigkeit, die lehren, dass Kunst ein Mittel zur Verbesserung der Seele sei.\n\nStufe 3: Lichtdomänenzauber\n\nIhre Verbindung zu dieser göttlichen Domäne stellt sicher, dass Sie immer über bestimmte Zaubersprüche verfügen. Wenn Sie eine in der Tabelle „Lichtdomänenzauber“ angegebene Klerikerstufe erreichen, stehen Ihnen danach immer die aufgeführten Zauber bereit.\n\nLeichte Domänenzauber\n\nVorbereitete Zauber auf Klerikerstufe: 3 Brennende Hände, Feenfeuer, Sengender Strahl, Unsichtbarkeit sehen, 5 Tageslicht, Feuerball, 7 Arkanes Auge, Feuerwand, 9 Flammenschlag, Wahrsagerei\n\nLevel 3: Strahlen der Morgenröte\n\nAls magische Aktion präsentierst du dein Heiliges Symbol und verwendest deine Channel-Göttlichkeit, um einen Lichtblitz in einer 9 Meter langen Emanation auszusenden, die von dir selbst ausgeht. Jegliche magische Dunkelheit – etwa die durch den Zauber „Dunkelheit“ erzeugte – in diesem Bereich wird gebannt. Darüber hinaus muss jede Kreatur Ihrer Wahl in diesem Bereich einen Konstitutions-Rettungswurf ausführen und bei einem fehlgeschlagenen Rettungswurf Strahlungsschaden in Höhe von 2W10 plus Ihrer Klerikerstufe oder halb so viel Schaden bei einem erfolgreichen Rettungswurf erleiden.\n\nLevel 3: Abwehrfeuer\n\nWenn eine Kreatur, die du in einem Umkreis von 30 Fuß um dich herum sehen kannst, einen Angriffswurf ausführt, kannst du eine Reaktion ausführen, um dem Angriffswurf einen Nachteil zu verleihen, wodurch Licht aufflackert, bevor es trifft oder verfehlt.\n\nSie können diese Funktion so oft verwenden, wie es Ihrem Weisheitsmodifikator entspricht (mindestens einmal). Wenn Sie eine Lange Rast beenden, erhalten Sie alle verbrauchten Nutzungen zurück.\n\nStufe 6: Verbessertes Abwehrsignal\n\nDu erhältst alle verbrauchten Nutzungen deiner Abwehrfackel zurück, wenn du eine kurze oder lange Rast abschließt.\n\nDarüber hinaus können Sie dem Ziel des auslösenden Angriffs bei jedem Einsatz von „Warding Flare“ eine Anzahl temporärer Trefferpunkte in Höhe von 2W6 plus Ihrem Weisheitsmodifikator geben.\n\nLevel 17: Korona des Lichts\n\nAls magische Aktion veranlassen Sie sich selbst, eine Aura aus Sonnenlicht auszustrahlen, die 1 Minute lang anhält oder bis Sie sie aufheben (keine Aktion erforderlich). Sie strahlen helles Licht in einem Radius von 60 Fuß und schwaches Licht für weitere 30 Fuß aus. Deine Feinde im Hellen Licht haben bei Rettungswürfen einen Nachteil gegenüber Radiance of the Dawn und allen Zaubern, die Feuer- oder Radiant-Schaden verursachen.\n\nSie können diese Funktion so oft verwenden, wie es Ihrem Weisheitsmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben.",
+  "tags": [],
+  "class": "Kleriker",
+  "class_id": "kleriker",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

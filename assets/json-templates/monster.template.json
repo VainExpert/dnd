@@ -1,0 +1,81 @@
+{
+  "id": "<monster-id>",
+  "type": "monster",
+  "name": "<Monster Name>",
+  "rules_version": "2024",
+  "source": "<source>",
+  "size": "Medium",
+  "type_data": {
+    "type": "humanoid",
+    "tags": []
+  },
+  "alignment": "unaligned",
+  "ac": "10",
+  "ac_note": "",
+  "hp": {
+    "average": 1,
+    "formula": "1d8"
+  },
+  "speed": {
+    "walk": 30,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 10,
+    "con": 10,
+    "int": 10,
+    "wis": 10,
+    "cha": 10
+  },
+  "saving_throws": "",
+  "skills": "",
+  "damage_vulnerabilities": [],
+  "damage_resistances": [],
+  "damage_immunities": [],
+  "condition_immunities": [],
+  "senses": "",
+  "languages": [],
+  "challenge": {
+    "cr": "0",
+    "xp": 10,
+    "proficiency_bonus": 2
+  },
+  "traits": [
+    {
+      "name": "<Trait Name>",
+      "text": ""
+    }
+  ],
+  "actions": [
+    {
+      "name": "<Action Name>",
+      "text": ""
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [],
+  "legendary_actions_intro": "",
+  "legendary_actions": [],
+  "spellcasting": {
+    "ability": null,
+    "save_dc": null,
+    "attack_bonus": null,
+    "spells": {
+      "cantrips_at_will": [],
+      "level_1": [],
+      "level_2": [],
+      "level_3": [],
+      "level_4": [],
+      "level_5": [],
+      "level_6": [],
+      "level_7": [],
+      "level_8": [],
+      "level_9": []
+    }
+  },
+  "tags": []
+}

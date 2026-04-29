@@ -1,0 +1,75 @@
+{
+  "id": "hochschule-fur-uberlieferungen",
+  "type": "subclass",
+  "name": "Hochschule für Überlieferungen",
+  "original_name": "College of Lore",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/bard:college-of-lore",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Erkunden Sie die Tiefen magischen Wissens. Barden des College of Lore sammeln Zaubersprüche und Geheimnisse aus verschiedenen Quellen, wie zum Beispiel wissenschaftlichen Wälzern, mystischen Riten und Bauerngeschichten. Die Mitglieder des Kollegiums versammeln sich in Bibliotheken und Universitäten, um ihr Wissen miteinander zu teilen. Sie treffen sich auch auf Festen oder Staatsangelegenheiten, wo sie Korruption aufdecken, Lügen aufdecken und sich über selbstgefällige Autoritätspersonen lustig machen können.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Erkunden Sie die Tiefen magischen Wissens. Barden des College of Lore sammeln Zaubersprüche und Geheimnisse aus verschiedenen Quellen, wie zum Beispiel wissenschaftlichen Wälzern, mystischen Riten und Bauerngeschichten. Die Mitglieder des Kollegiums versammeln sich in Bibliotheken und Universitäten, um ihr Wissen miteinander zu teilen. Sie treffen sich auch auf Festen oder Staatsangelegenheiten, wo sie Korruption aufdecken, Lügen aufdecken und sich über selbstgefällige Autoritätspersonen lustig machen können."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Bonuskompetenzen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erwerben Kenntnisse in drei Fertigkeiten Ihrer Wahl."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Wörter schneiden"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie lernen, Ihren Witz zu nutzen, um das Selbstvertrauen und die Kompetenz anderer auf übernatürliche Weise abzulenken, zu verwirren und auf andere Weise zu untergraben. Wenn eine Kreatur, die du im Umkreis von 60 Fuß um dich herum sehen kannst, einen Schadenswurf ausführt oder eine Fähigkeits- oder Angriffsprobe erfolgreich abschließt, kannst du eine Reaktion durchführen, um eine Anwendung deiner bardischen Inspiration zu verbrauchen; Wirf deinen bardischen Inspirationswürfel und subtrahiere die gewürfelte Zahl vom Würfelwurf der Kreatur, wodurch der Schaden verringert wird oder der Erfolg möglicherweise zu einem Misserfolg wird."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Magische Entdeckungen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du lernst zwei Zaubersprüche deiner Wahl. Diese Zauber können aus der Zauberliste „Kleriker“, „Druide“ oder „Zauberer“ oder einer beliebigen Kombination davon stammen (die Zauberliste finden Sie im Abschnitt einer Klasse). Ein von Ihnen gewählter Zauber muss ein Cantrip oder ein Zauber sein, für den Sie über Zauberslots verfügen, wie in der Tabelle „Bardentalente“ gezeigt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben immer die gewählten Zaubersprüche vorbereitet, und wenn Sie eine Bardenstufe erreichen, können Sie einen der Zaubersprüche durch einen anderen Zauberspruch ersetzen, der diese Anforderungen erfüllt."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Unvergleichliche Fähigkeiten"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine Fähigkeitsüberprüfung oder einen Angriffswurf durchführen und diese scheitert, können Sie eine Anwendung von Bardic Inspiration verbrauchen; Wirf den bardischen Inspirationswürfel und addiere die gewürfelte Zahl zum W20, was möglicherweise aus einem Misserfolg einen Erfolg macht. Bei einem Misserfolg wird die bardische Inspiration nicht verbraucht."
+    }
+  ],
+  "text": "Erkunden Sie die Tiefen magischen Wissens. Barden des College of Lore sammeln Zaubersprüche und Geheimnisse aus verschiedenen Quellen, wie zum Beispiel wissenschaftlichen Wälzern, mystischen Riten und Bauerngeschichten. Die Mitglieder des Kollegiums versammeln sich in Bibliotheken und Universitäten, um ihr Wissen miteinander zu teilen. Sie treffen sich auch auf Festen oder Staatsangelegenheiten, wo sie Korruption aufdecken, Lügen aufdecken und sich über selbstgefällige Autoritätspersonen lustig machen können.\n\nStufe 3: Bonuskompetenzen\n\nSie erwerben Kenntnisse in drei Fertigkeiten Ihrer Wahl.\n\nLevel 3: Wörter schneiden\n\nSie lernen, Ihren Witz zu nutzen, um das Selbstvertrauen und die Kompetenz anderer auf übernatürliche Weise abzulenken, zu verwirren und auf andere Weise zu untergraben. Wenn eine Kreatur, die du im Umkreis von 60 Fuß um dich herum sehen kannst, einen Schadenswurf ausführt oder eine Fähigkeits- oder Angriffsprobe erfolgreich abschließt, kannst du eine Reaktion durchführen, um eine Anwendung deiner bardischen Inspiration zu verbrauchen; Wirf deinen bardischen Inspirationswürfel und subtrahiere die gewürfelte Zahl vom Würfelwurf der Kreatur, wodurch der Schaden verringert wird oder der Erfolg möglicherweise zu einem Misserfolg wird.\n\nLevel 6: Magische Entdeckungen\n\nDu lernst zwei Zaubersprüche deiner Wahl. Diese Zauber können aus der Zauberliste „Kleriker“, „Druide“ oder „Zauberer“ oder einer beliebigen Kombination davon stammen (die Zauberliste finden Sie im Abschnitt einer Klasse). Ein von Ihnen gewählter Zauber muss ein Cantrip oder ein Zauber sein, für den Sie über Zauberslots verfügen, wie in der Tabelle „Bardentalente“ gezeigt.\n\nSie haben immer die gewählten Zaubersprüche vorbereitet, und wenn Sie eine Bardenstufe erreichen, können Sie einen der Zaubersprüche durch einen anderen Zauberspruch ersetzen, der diese Anforderungen erfüllt.\n\nLevel 14: Unvergleichliche Fähigkeiten\n\nWenn Sie eine Fähigkeitsüberprüfung oder einen Angriffswurf durchführen und diese scheitert, können Sie eine Anwendung von Bardic Inspiration verbrauchen; Wirf den bardischen Inspirationswürfel und addiere die gewürfelte Zahl zum W20, was möglicherweise aus einem Misserfolg einen Erfolg macht. Bei einem Misserfolg wird die bardische Inspiration nicht verbraucht.",
+  "tags": [],
+  "class": "Barde",
+  "class_id": "barde",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

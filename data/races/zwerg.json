@@ -1,0 +1,101 @@
+{
+  "id": "zwerg",
+  "type": "race",
+  "name": "Zwerg",
+  "original_name": "Dwarf",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/species:dwarf",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Zwerge wurden in früheren Zeiten von einer Gottheit der Schmiede aus der Erde erweckt. Dieser Gott wurde auf verschiedenen Welten mit verschiedenen Namen bezeichnet – Moradin, Reorx und anderen – und verlieh den Zwergen eine Affinität zu Stein und Metall sowie zum Leben unter der Erde. Der Gott machte sie auch widerstandsfähig wie die Berge mit einer Lebensdauer von etwa 350 Jahren.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Zwerge wurden in früheren Zeiten von einer Gottheit der Schmiede aus der Erde erweckt. Dieser Gott wurde auf verschiedenen Welten mit verschiedenen Namen bezeichnet – Moradin, Reorx und anderen – und verlieh den Zwergen eine Affinität zu Stein und Metall sowie zum Leben unter der Erde. Der Gott machte sie auch widerstandsfähig wie die Berge mit einer Lebensdauer von etwa 350 Jahren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die ursprünglichen Zwerge waren gedrungen und oft bärtig und schnitzten Städte und Festungen in Berghänge und unter die Erde. Ihre ältesten Legenden erzählen von Konflikten mit den Monstern der Berggipfel und dem Unterreich, egal ob es sich bei diesen Monstern um gewaltige Riesen oder unterirdische Schrecken handelte. Inspiriert von diesen Geschichten singen Zwerge jeder Kultur oft von tapferen Taten – insbesondere davon, dass die Kleinen die Mächtigen besiegen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Auf einigen Welten im Multiversum wurden die ersten Zwergensiedlungen auf Hügeln oder Bergen errichtet, und die Familien, die ihre Vorfahren auf diese Siedlungen zurückführen, nennen sich Hügelzwerge bzw. Bergzwerge. In den Schauplätzen „Greyhawk“ und „Dragonlance“ gibt es solche Communities."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Zwergeneigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Humanoid. Größe: Mittelgroß (etwa 1,2–1,5 m groß). Geschwindigkeit: 9 m"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Zwerg hast du diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 120 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Widerstandsfähigkeit der Zwerge. Du hast Resistenz gegen Giftschaden. Sie haben auch einen Vorteil bei Rettungswürfen, die Sie durchführen, um den Zustand „Vergiftet“ zu vermeiden oder zu beenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zwergische Zähigkeit. Dein Trefferpunktemaximum erhöht sich um 1 und jedes Mal, wenn du ein Level aufsteigst, erneut um 1."
+    },
+    {
+      "type": "paragraph",
+      "text": "Steinlist. Als Bonusaktion erhaltet ihr 10 Minuten lang Tremorsense mit einer Reichweite von 60 Fuß. Sie müssen sich auf einer Steinoberfläche befinden oder eine Steinoberfläche berühren, um diesen Tremorsense verwenden zu können. Der Stein kann naturbelassen oder bearbeitet sein."
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst diese Bonusaktion so oft nutzen, wie es deinem Uebungsbonus entspricht, und du erhältst alle verbrauchten Einsätze zurück, wenn du eine Lange Rast abschließt."
+    }
+  ],
+  "text": "Zwerge wurden in früheren Zeiten von einer Gottheit der Schmiede aus der Erde erweckt. Dieser Gott wurde auf verschiedenen Welten mit verschiedenen Namen bezeichnet – Moradin, Reorx und anderen – und verlieh den Zwergen eine Affinität zu Stein und Metall sowie zum Leben unter der Erde. Der Gott machte sie auch widerstandsfähig wie die Berge mit einer Lebensdauer von etwa 350 Jahren.\n\nDie ursprünglichen Zwerge waren gedrungen und oft bärtig und schnitzten Städte und Festungen in Berghänge und unter die Erde. Ihre ältesten Legenden erzählen von Konflikten mit den Monstern der Berggipfel und dem Unterreich, egal ob es sich bei diesen Monstern um gewaltige Riesen oder unterirdische Schrecken handelte. Inspiriert von diesen Geschichten singen Zwerge jeder Kultur oft von tapferen Taten – insbesondere davon, dass die Kleinen die Mächtigen besiegen.\n\nAuf einigen Welten im Multiversum wurden die ersten Zwergensiedlungen auf Hügeln oder Bergen errichtet, und die Familien, die ihre Vorfahren auf diese Siedlungen zurückführen, nennen sich Hügelzwerge bzw. Bergzwerge. In den Schauplätzen „Greyhawk“ und „Dragonlance“ gibt es solche Communities.\n\nZwergeneigenschaften\n\nKreaturentyp: Humanoid. Größe: Mittelgroß (etwa 1,2–1,5 m groß). Geschwindigkeit: 9 m\n\nAls Zwerg hast du diese besonderen Eigenschaften.\n\nDunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 120 Fuß.\n\nWiderstandsfähigkeit der Zwerge. Du hast Resistenz gegen Giftschaden. Sie haben auch einen Vorteil bei Rettungswürfen, die Sie durchführen, um den Zustand „Vergiftet“ zu vermeiden oder zu beenden.\n\nZwergische Zähigkeit. Dein Trefferpunktemaximum erhöht sich um 1 und jedes Mal, wenn du ein Level aufsteigst, erneut um 1.\n\nSteinlist. Als Bonusaktion erhaltet ihr 10 Minuten lang Tremorsense mit einer Reichweite von 60 Fuß. Sie müssen sich auf einer Steinoberfläche befinden oder eine Steinoberfläche berühren, um diesen Tremorsense verwenden zu können. Der Stein kann naturbelassen oder bearbeitet sein.\n\nDu kannst diese Bonusaktion so oft nutzen, wie es deinem Uebungsbonus entspricht, und du erhältst alle verbrauchten Einsätze zurück, wenn du eine Lange Rast abschließt.",
+  "tags": [],
+  "size": [],
+  "creature_type": "Humanoid",
+  "speed": {
+    "walk": 3,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Dunkelsicht",
+      "text": "Sie haben Dunkelsicht mit einer Reichweite von 120 Fuß."
+    },
+    {
+      "name": "Widerstandsfähigkeit der Zwerge",
+      "text": "Du hast Resistenz gegen Giftschaden. Sie haben auch einen Vorteil bei Rettungswürfen, die Sie durchführen, um den Zustand „Vergiftet“ zu vermeiden oder zu beenden."
+    },
+    {
+      "name": "Zwergische Zähigkeit",
+      "text": "Dein Trefferpunktemaximum erhöht sich um 1 und jedes Mal, wenn du ein Level aufsteigst, erneut um 1."
+    },
+    {
+      "name": "Steinlist",
+      "text": "Als Bonusaktion erhaltet ihr 10 Minuten lang Tremorsense mit einer Reichweite von 60 Fuß. Sie müssen sich auf einer Steinoberfläche befinden oder eine Steinoberfläche berühren, um diesen Tremorsense verwenden zu können. Der Stein kann naturbelassen oder bearbeitet sein."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

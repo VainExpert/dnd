@@ -1,0 +1,60 @@
+{
+  "id": "blutdurst",
+  "type": "feat",
+  "name": "Blutdurst",
+  "original_name": "Bloodlust",
+  "rules_version": "2024",
+  "source": "Astarion's Book of Hungers",
+  "source_url": "http://dnd2024.wikidot.com/feat:bloodlust",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Exotisch",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Level 4+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Level 4+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke-, Geschicklichkeits- oder Konstitutionswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kraftvolle Erholung. Wenn Sie einen Hitpoint-Würfel werfen, um Hitpoints zurückzugewinnen, können Sie jeden Wurf von 1 oder 2 als 3 behandeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sanguinisches Fest. Einmal pro Spielzug, wenn du eine blutbefleckte Kreatur, die kein Konstrukt oder Untoter ist, mit einem Angriffswurf triffst, kannst du einen Trefferpunktwürfel ausgeben, ihn würfeln und eine Anzahl an Trefferpunkten zurückerhalten, die der gewürfelten Zahl plus deinem Konstitutionsmodifikator entspricht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diese Funktion so oft nutzen, wie es Ihrem Uebungsbonus entspricht, und Sie erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Level 4+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Stärke-, Geschicklichkeits- oder Konstitutionswert um 1 auf maximal 20.\n\nKraftvolle Erholung. Wenn Sie einen Hitpoint-Würfel werfen, um Hitpoints zurückzugewinnen, können Sie jeden Wurf von 1 oder 2 als 3 behandeln.\n\nSanguinisches Fest. Einmal pro Spielzug, wenn du eine blutbefleckte Kreatur, die kein Konstrukt oder Untoter ist, mit einem Angriffswurf triffst, kannst du einen Trefferpunktwürfel ausgeben, ihn würfeln und eine Anzahl an Trefferpunkten zurückerhalten, die der gewürfelten Zahl plus deinem Konstitutionsmodifikator entspricht.\n\nSie können diese Funktion so oft nutzen, wie es Ihrem Uebungsbonus entspricht, und Sie erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "str"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

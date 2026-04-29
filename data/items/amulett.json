@@ -3,7 +3,6 @@
   "type": "Magischer Fokus",
   "name": "Amulett",
   "vendors": [
-    "Beute",
     "Tempel"
   ],
   "rules_version": "2024",

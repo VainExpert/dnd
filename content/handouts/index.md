@@ -1,6 +1,7 @@
 # Handouts
 
-Printable or copyable handouts for players:
+Druck- und kopierbare Handouts für die Spieler:
 
-- Letters / prop text
-- Puzzles (spoiler-safe unless noted)
+- Briefe
+- Pamphlets
+- Puzzle-Beschreibungen

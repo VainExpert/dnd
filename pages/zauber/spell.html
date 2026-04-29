@@ -11,7 +11,6 @@
   <header class="topbar">
     <div class="brand">
       <div class="title" id="title">Zauber</div>
-      <div class="subtitle"><a href="./spells.html">← Zurück zu allen Zaubern</a> • <a href="../../index.html">Startseite</a></div>
     </div>
   </header>
 
@@ -21,6 +20,7 @@
     </div>
   </main>
 
+  <script src="../../nav.js"></script>
   <script type="module">
     import { escapeHtml, loadIndex, loadMany, normalizeSpell, buildLookupIndex, renderRichText } from "../../lib.js";
 
@@ -69,10 +69,10 @@
       <div class="mini-box">
         <div class="mini-box-title">Werte</div>
         <div class="mini-box-text">
-          ${(spell.casting_time || spell.time) ? `<div><b>Wirkzeit:</b> ${escapeHtml(spell.casting_time || spell.time)}</div>` : ""}
-          ${spell.range ? `<div><b>Reichweite:</b> ${escapeHtml(spell.range)}</div>` : ""}
-          ${spell.components ? `<div><b>Komponenten:</b> ${escapeHtml(spell.components)}</div>` : ""}
-          ${spell.duration ? `<div><b>Dauer:</b> ${escapeHtml(spell.duration)}</div>` : ""}
+          ${(spell.casting_time || spell.time) ? `<div><b>Wirkzeit:</b> ${renderRichText(spell.casting_time || spell.time, { lookups: { spell: spellLookup }, inlineOnly: true })}</div>` : ""}
+          ${spell.range ? `<div><b>Reichweite:</b> ${renderRichText(spell.range, { lookups: { spell: spellLookup }, inlineOnly: true })}</div>` : ""}
+          ${spell.components ? `<div><b>Komponenten:</b> ${renderRichText(spell.components, { lookups: { spell: spellLookup }, inlineOnly: true })}</div>` : ""}
+          ${spell.duration ? `<div><b>Dauer:</b> ${renderRichText(spell.duration, { lookups: { spell: spellLookup }, inlineOnly: true })}</div>` : ""}
         </div>
       </div>
 

@@ -1,0 +1,74 @@
+{
+  "id": "soldat",
+  "type": "background",
+  "name": "Soldat",
+  "original_name": "Soldier",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/background:soldier",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Sie haben mit der Kriegsvorbereitung begonnen, als Sie das Erwachsenenalter erreichten, und haben nur wenige Erinnerungen an das Leben vor Ihrem Angriff auf die Waffen. Der Kampf liegt dir im Blut. Manchmal ertappt man sich dabei, dass man reflexartig die grundlegenden Kampfübungen ausführt, die man zuerst gelernt hat. Schließlich setzen Sie diese Ausbildung auf dem Schlachtfeld ein und schützen das Reich, indem Sie Krieg führen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Sie haben mit der Kriegsvorbereitung begonnen, als Sie das Erwachsenenalter erreichten, und haben nur wenige Erinnerungen an das Leben vor Ihrem Angriff auf die Waffen. Der Kampf liegt dir im Blut. Manchmal ertappt man sich dabei, dass man reflexartig die grundlegenden Kampfübungen ausführt, die man zuerst gelernt hat. Schließlich setzen Sie diese Ausbildung auf dem Schlachtfeld ein und schützen das Reich, indem Sie Krieg führen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Stärke, Geschicklichkeit, Konstitution Talent: Wilder Angreifer Fertigkeiten: Athletik und Einschüchterung Werkzeugkompetenz: Wählen Sie eine Art Spielset. Ausrüstung: Wählen Sie A oder B: (A) Speer, Kurzbogen, 20 Pfeile, Spielset (wie oben), Heilerausrüstung, Köcher, Kleidung des Reisenden, 14 GP; oder (B) 50 GP"
+    }
+  ],
+  "text": "Sie haben mit der Kriegsvorbereitung begonnen, als Sie das Erwachsenenalter erreichten, und haben nur wenige Erinnerungen an das Leben vor Ihrem Angriff auf die Waffen. Der Kampf liegt dir im Blut. Manchmal ertappt man sich dabei, dass man reflexartig die grundlegenden Kampfübungen ausführt, die man zuerst gelernt hat. Schließlich setzen Sie diese Ausbildung auf dem Schlachtfeld ein und schützen das Reich, indem Sie Krieg führen.\n\nFähigkeitswerte: Stärke, Geschicklichkeit, Konstitution Talent: Wilder Angreifer Fertigkeiten: Athletik und Einschüchterung Werkzeugkompetenz: Wählen Sie eine Art Spielset. Ausrüstung: Wählen Sie A oder B: (A) Speer, Kurzbogen, 20 Pfeile, Spielset (wie oben), Heilerausrüstung, Köcher, Kleidung des Reisenden, 14 GP; oder (B) 50 GP",
+  "tags": [],
+  "ability_scores": [
+    "str",
+    "dex",
+    "con"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "str",
+      "dex",
+      "con"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Athletik",
+    "Einschuechterung"
+  ],
+  "tool_proficiencies": [
+    "Wählen Sie eine Art Spielset"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "wilder-angreifer",
+  "granted_feat_name": "Wilder Angreifer",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wählen Sie A oder B: (A) Speer, Kurzbogen, 20 Pfeile, Spielset (wie oben), Heilerausrüstung, Köcher, Kleidung des Reisenden, 14 GP; oder (B) 50 GP"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "verstaerkter-zauber",
+  "name": "Verstaerkter Zauber",
+  "original_name": "Empowered Spell",
+  "kind": "metamagic_option",
+  "class": "Zauberer",
+  "class_id": "zauberer",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/sorcerer:metamagic",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "1 Zauberpunkt",
+  "cost_original": "1 Sorcery Point",
+  "prerequisite": "",
+  "prerequisite_original": "",
+  "summary": "Wenn Sie für einen Zauber Schaden würfeln, können Sie 1 Zauberpunkt ausgeben, um eine Anzahl der Schadenswürfel bis zu Ihrem Charisma-Modifikator (mindestens einen) erneut zu würfeln, und Sie müssen die neuen Würfe verwenden.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "When you roll damage for a spell, you can spend 1 Sorcery Point to reroll a number of the damage dice up to your Charisma modifier (minimum of one), and you must use the new rolls.",
+      "text_de": "Wenn Sie für einen Zauber Schaden würfeln, können Sie 1 Zauberpunkt ausgeben, um eine Anzahl der Schadenswürfel bis zu Ihrem Charisma-Modifikator (mindestens einen) erneut zu würfeln, und Sie müssen die neuen Würfe verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use Empowered Spell even if you’ve already used a different Metamagic option during the casting of the spell.",
+      "text_de": "Sie können „Ermächtigter Zauber“ auch dann verwenden, wenn Sie beim Wirken des Zaubers bereits eine andere Metamagie-Option verwendet haben."
+    }
+  ]
+}

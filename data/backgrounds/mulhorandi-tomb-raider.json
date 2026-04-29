@@ -1,0 +1,85 @@
+{
+  "id": "mulhorandi-tomb-raider",
+  "type": "background",
+  "name": "Mulhorandi Tomb Raider",
+  "original_name": "Mulhorandi Tomb Raider",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/background:mulhorandi-tomb-raider",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Geschicklichkeit, Konstitution, Intelligenz",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Geschicklichkeit, Konstitution, Intelligenz"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Glück"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kompetenzen: Untersuchung und Religion"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse: Mason’s Tools"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wählen Sie A oder B: (A) Dolch, leichter Hammer, Maurerwerkzeug, Rucksack, Schlafsack, Brechstange, Leiter, Stange, 2 Beutel, Seil, Schnur, Zunderbüchse, 5 Fackeln, Reisekleidung, Wasserschlauch, 26 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du bist in einem Land lebender Gottkönige aufgewachsen und als Kind wurden dir unzählige Geschichten über alte Reiche und verschüttete Städte erzählt. In diesen Geschichten war Mulhorand ein Land voller vergessener Reichtümer – unschätzbare Schätze, die auf jeden warteten, der schlau und mutig genug war, sie zu suchen. Sie haben es sich zur Aufgabe gemacht, die Krypten, Gräber und Pyramiden Ihres Heimatlandes zu erkunden, um die Relikte Ihres Volkes zurückzugewinnen."
+    }
+  ],
+  "text": "Fähigkeitswerte: Geschicklichkeit, Konstitution, Intelligenz\n\nTalent: Glück\n\nKompetenzen: Untersuchung und Religion\n\nWerkzeugkenntnisse: Mason’s Tools\n\nAusrüstung: Wählen Sie A oder B: (A) Dolch, leichter Hammer, Maurerwerkzeug, Rucksack, Schlafsack, Brechstange, Leiter, Stange, 2 Beutel, Seil, Schnur, Zunderbüchse, 5 Fackeln, Reisekleidung, Wasserschlauch, 26 GP; oder (B) 50 GP\n\nDu bist in einem Land lebender Gottkönige aufgewachsen und als Kind wurden dir unzählige Geschichten über alte Reiche und verschüttete Städte erzählt. In diesen Geschichten war Mulhorand ein Land voller vergessener Reichtümer – unschätzbare Schätze, die auf jeden warteten, der schlau und mutig genug war, sie zu suchen. Sie haben es sich zur Aufgabe gemacht, die Krypten, Gräber und Pyramiden Ihres Heimatlandes zu erkunden, um die Relikte Ihres Volkes zurückzugewinnen.",
+  "tags": [],
+  "ability_scores": [
+    "dex",
+    "con",
+    "int"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "dex",
+      "con",
+      "int"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "glueck-kompetenzen-untersuchung-und-religion-werkzeugkenntnisse-mason-s-tools",
+  "granted_feat_name": "Glück\n\nKompetenzen: Untersuchung und Religion\n\nWerkzeugkenntnisse: Mason’s Tools\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wählen Sie A oder B: (A) Dolch, leichter Hammer, Maurerwerkzeug, Rucksack, Schlafsack, Brechstange, Leiter, Stange, 2 Beutel, Seil, Schnur, Zunderbüchse, 5 Fackeln, Reisekleidung, Wasserschlauch, 26 GP; oder (B) 50 GP\n\nDu bist in einem Land lebender Gottkönige aufgewachsen und als Kind wurden dir unzählige Geschichten über alte Reiche und verschüttete Städte erzählt. In diesen Geschichten war Mulhorand ein Land voller vergessener Reichtümer – unschätzbare Schätze, die auf jeden warteten, der schlau und mutig genug war, sie zu suchen. Sie haben es sich zur Aufgabe gemacht, die Krypten, Gräber und Pyramiden Ihres Heimatlandes zu erkunden, um die Relikte Ihres Volkes zurückzugewinnen"
+    }
+  ]
+}

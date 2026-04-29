@@ -1,0 +1,160 @@
+{
+  "id": "winterwanderer",
+  "type": "subclass",
+  "name": "Winterwanderer",
+  "original_name": "Winter Walker",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/ranger:winter-walker",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Widerstehen Sie den Schrecken der kalten Ödlande",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Widerstehen Sie den Schrecken der kalten Ödlande"
+    },
+    {
+      "type": "paragraph",
+      "text": "Winterwanderer verfeinern ihr Handwerk in der trostlosen und gefrorenen Wildnis von Orten wie Icewind Dale. Diese rücksichtslosen Ranger mit gealtertem Fell jagen Monster, die in den arktischen Ödlanden ihr Unwesen treiben, und werden schließlich selbst zu eiskalten Schrecken. Winterwanderer sind mit den Phänomenen von Icewind Dale bestens vertraut, einschließlich der latenten Magie gefallener niederländischer Städte, endemischer Monster wie Yetis und Felsenkatzen und der wachsenden Bedrohung durch Eindringlinge aus dem Unterreich. Aufgrund ihres kalten Pragmatismus, ihrer furchterregenden Magie und ihrer Beherrschung der Region werden Winterwanderer gleichermaßen mit Respekt und Furcht betrachtet. Bürger von Ten-Towns sagen, dass Winter Walkers durch den häufigen Kontakt mit bösartigen Wesen ihre furchterregenden Kräfte erhalten. Viele Reghed-Nomaden hingegen glauben, dass Naturgeister den Winterwanderern einen einzigartigen Fluch auferlegen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Kalter Entdecker"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Beißende Kälte. Der durch deine Waffenangriffe, Ranger-Zauber und Ranger-Funktionen verursachte Schaden ignoriert Resistenz gegen Kälteschaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Frostbeständigkeit. Du hast Resistenz gegen Kälteschaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Polarstreiks. Wenn du eine Kreatur mit einem Angriffswurf und einer Waffe triffst, kannst du dem Ziel zusätzlich 1W4 Kälteschaden zufügen, das diesen zusätzlichen Schaden nur einmal pro Spielzug erleiden kann. Wenn Sie Ranger-Level 11 erreichen, erhöht sich dieser zusätzliche Schaden auf 1W6."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Raureif des Jägers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Eis umhüllt Sie und Ihre Beute, schützt Sie und behindert sie. Wenn du „Mal des Jägers“ wirkst, erhältst du temporäre Trefferpunkte in Höhe von 1W10 plus deiner Ranger-Stufe."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus kann eine Kreatur, solange sie durch das Mal deines Jägers markiert ist, die Aktion „Entfernen“ nicht ausführen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Winterwanderer-Zauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine Ranger-Stufe erreichen, die in der Winter Walker-Zaubertabelle angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Winterwanderer-Zauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Ranger-Level",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Eismesser"
+        ],
+        [
+          "5",
+          "Person festhalten"
+        ],
+        [
+          "9",
+          "Fluch entfernen"
+        ],
+        [
+          "13",
+          "Eissturm"
+        ],
+        [
+          "17",
+          "Kältekegel"
+        ]
+      ],
+      "text": "Waldläufer-Stufenzauber: 3 Eismesser, 5 Person festhalten, 9 Fluch entfernen, 13 Eissturm, 17 Kältekegel"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 7: Stärkende Seele"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Erfahrung im Überleben erschütternder Umgebungen ermöglicht es Ihnen, nicht nur sich selbst, sondern auch Ihre Verbündeten zu stärken. Als magische Aktion wählst du so viele Kreaturen aus, die du sehen kannst, dass sie deinem Weisheitsmodifikator entsprechen (mindestens eine). Jede ausgewählte Kreatur erhält Trefferpunkte in Höhe von 1W10 plus deiner Ranger-Stufe zurück und hat einen Vorteil bei Rettungswürfen, um den Angstzustand für 1 Stunde zu vermeiden oder zu beenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast beendet haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 11: Abschreckende Vergeltung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn eine Kreatur dich mit einem Angriffswurf trifft, kannst du eine Reaktion ausführen, um die Kreatur zu einem Weisheits-Rettungswurf gegen deinen Zauberwurf-SG zu zwingen. Bei einem fehlgeschlagenen Rettungswurf bleibt das Ziel bis zum Ende Ihres nächsten Zuges im Zustand „Betäubt“. Während das Ziel betäubt ist, wird seine Geschwindigkeit auf 0 Fuß reduziert."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diese Funktion so oft verwenden, wie es Ihrem Weisheitsmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Gefrorener Spuk"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du „Mal des Jägers“ wirkst, kannst du eine geisterhafte, schneebedeckte Gestalt annehmen. Diese Form bleibt bestehen, bis der Zauber endet, und während Sie sich in dieser Form befinden, erhalten Sie die folgenden Vorteile. Sobald Sie diese Funktion verwendet haben, können Sie sie nicht erneut verwenden, bis Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Zauberslot der Stufe 4+ (keine Aktion erforderlich)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gefrorene Seele. Du bist immun gegen Kälteschaden. Wenn Sie diese Form zum ersten Mal annehmen und zu Beginn jedes Ihrer folgenden Züge, erleidet jede Kreatur Ihrer Wahl in einer von Ihnen ausgehenden 15-Fuß-Emanation 2W4 Kälteschaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Teilweise körperlos. Sie sind immun gegen die Zustände „Grappled“, „Binnd“ und „Contained“. Du kannst dich durch Kreaturen und Objekte bewegen, als wären sie schwieriges Gelände, aber du erleidest 1W10 Machtschaden, wenn du deinen Zug innerhalb einer Kreatur oder eines Objekts beendest. Wenn die Form endet, während Sie sich in einer Kreatur oder einem Objekt befinden, werden Sie zum nächstgelegenen freien Feld verschoben."
+    }
+  ],
+  "text": "Widerstehen Sie den Schrecken der kalten Ödlande\n\nWinterwanderer verfeinern ihr Handwerk in der trostlosen und gefrorenen Wildnis von Orten wie Icewind Dale. Diese rücksichtslosen Ranger mit gealtertem Fell jagen Monster, die in den arktischen Ödlanden ihr Unwesen treiben, und werden schließlich selbst zu eiskalten Schrecken. Winterwanderer sind mit den Phänomenen von Icewind Dale bestens vertraut, einschließlich der latenten Magie gefallener niederländischer Städte, endemischer Monster wie Yetis und Felsenkatzen und der wachsenden Bedrohung durch Eindringlinge aus dem Unterreich. Aufgrund ihres kalten Pragmatismus, ihrer furchterregenden Magie und ihrer Beherrschung der Region werden Winterwanderer gleichermaßen mit Respekt und Furcht betrachtet. Bürger von Ten-Towns sagen, dass Winter Walkers durch den häufigen Kontakt mit bösartigen Wesen ihre furchterregenden Kräfte erhalten. Viele Reghed-Nomaden hingegen glauben, dass Naturgeister den Winterwanderern einen einzigartigen Fluch auferlegen.\n\nLevel 3: Kalter Entdecker\n\nSie profitieren von folgenden Vorteilen.\n\nBeißende Kälte. Der durch deine Waffenangriffe, Ranger-Zauber und Ranger-Funktionen verursachte Schaden ignoriert Resistenz gegen Kälteschaden.\n\nFrostbeständigkeit. Du hast Resistenz gegen Kälteschaden.\n\nPolarstreiks. Wenn du eine Kreatur mit einem Angriffswurf und einer Waffe triffst, kannst du dem Ziel zusätzlich 1W4 Kälteschaden zufügen, das diesen zusätzlichen Schaden nur einmal pro Spielzug erleiden kann. Wenn Sie Ranger-Level 11 erreichen, erhöht sich dieser zusätzliche Schaden auf 1W6.\n\nLevel 3: Raureif des Jägers\n\nEis umhüllt Sie und Ihre Beute, schützt Sie und behindert sie. Wenn du „Mal des Jägers“ wirkst, erhältst du temporäre Trefferpunkte in Höhe von 1W10 plus deiner Ranger-Stufe.\n\nDarüber hinaus kann eine Kreatur, solange sie durch das Mal deines Jägers markiert ist, die Aktion „Entfernen“ nicht ausführen.\n\nLevel 3: Winterwanderer-Zauber\n\nWenn Sie eine Ranger-Stufe erreichen, die in der Winter Walker-Zaubertabelle angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nWinterwanderer-Zauber\n\nWaldläufer-Stufenzauber: 3 Eismesser, 5 Person festhalten, 9 Fluch entfernen, 13 Eissturm, 17 Kältekegel\n\nLevel 7: Stärkende Seele\n\nIhre Erfahrung im Überleben erschütternder Umgebungen ermöglicht es Ihnen, nicht nur sich selbst, sondern auch Ihre Verbündeten zu stärken. Als magische Aktion wählst du so viele Kreaturen aus, die du sehen kannst, dass sie deinem Weisheitsmodifikator entsprechen (mindestens eine). Jede ausgewählte Kreatur erhält Trefferpunkte in Höhe von 1W10 plus deiner Ranger-Stufe zurück und hat einen Vorteil bei Rettungswürfen, um den Angstzustand für 1 Stunde zu vermeiden oder zu beenden.\n\nSobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast beendet haben.\n\nLevel 11: Abschreckende Vergeltung\n\nWenn eine Kreatur dich mit einem Angriffswurf trifft, kannst du eine Reaktion ausführen, um die Kreatur zu einem Weisheits-Rettungswurf gegen deinen Zauberwurf-SG zu zwingen. Bei einem fehlgeschlagenen Rettungswurf bleibt das Ziel bis zum Ende Ihres nächsten Zuges im Zustand „Betäubt“. Während das Ziel betäubt ist, wird seine Geschwindigkeit auf 0 Fuß reduziert.\n\nSie können diese Funktion so oft verwenden, wie es Ihrem Weisheitsmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben.\n\nLevel 15: Gefrorener Spuk\n\nWenn du „Mal des Jägers“ wirkst, kannst du eine geisterhafte, schneebedeckte Gestalt annehmen. Diese Form bleibt bestehen, bis der Zauber endet, und während Sie sich in dieser Form befinden, erhalten Sie die folgenden Vorteile. Sobald Sie diese Funktion verwendet haben, können Sie sie nicht erneut verwenden, bis Sie eine Lange Rast abgeschlossen haben, es sei denn, Sie verbrauchen einen Zauberslot der Stufe 4+ (keine Aktion erforderlich).\n\nGefrorene Seele. Du bist immun gegen Kälteschaden. Wenn Sie diese Form zum ersten Mal annehmen und zu Beginn jedes Ihrer folgenden Züge, erleidet jede Kreatur Ihrer Wahl in einer von Ihnen ausgehenden 15-Fuß-Emanation 2W4 Kälteschaden.\n\nTeilweise körperlos. Sie sind immun gegen die Zustände „Grappled“, „Binnd“ und „Contained“. Du kannst dich durch Kreaturen und Objekte bewegen, als wären sie schwieriges Gelände, aber du erleidest 1W10 Machtschaden, wenn du deinen Zug innerhalb einer Kreatur oder eines Objekts beendest. Wenn die Form endet, während Sie sich in einer Kreatur oder einem Objekt befinden, werden Sie zum nächstgelegenen freien Feld verschoben.",
+  "tags": [],
+  "class": "Waldlaeufer",
+  "class_id": "waldlaeufer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

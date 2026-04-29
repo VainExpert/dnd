@@ -1,0 +1,50 @@
+{
+  "id": "vampirjager",
+  "type": "feat",
+  "name": "Vampirjäger",
+  "original_name": "Vampire Hunter",
+  "rules_version": "2024",
+  "source": "Astarion's Book of Hungers",
+  "source_url": "http://dnd2024.wikidot.com/feat:vampire-hunter",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Exotisch",
+  "prerequisites": [],
+  "summary": "Ursprungstalent",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Ursprungstalent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschickte Flucht. Du hast einen Vorteil bei Würfen, um nichtmagischen Fesseln oder dem Zustand „Grifft“ zu entkommen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vitalitätsstation. Wenn Sie nekrotischen Schaden erleiden, können Sie eine Reaktion durchführen, um den Schaden zu mildern. Würfeln Sie eine Anzahl von W6, die Ihrem Uebungsbonus entspricht, und addieren Sie sie. Reduziere den von dir erlittenen nekrotischen Schaden um diesen Betrag. Sobald Sie diesen Vorteil genutzt haben, können Sie ihn erst wieder nutzen, wenn Sie eine Kurze oder Lange Rast beendet haben."
+    }
+  ],
+  "text": "Ursprungstalent\n\nSie profitieren von folgenden Vorteilen.\n\nGeschickte Flucht. Du hast einen Vorteil bei Würfen, um nichtmagischen Fesseln oder dem Zustand „Grifft“ zu entkommen.\n\nVitalitätsstation. Wenn Sie nekrotischen Schaden erleiden, können Sie eine Reaktion durchführen, um den Schaden zu mildern. Würfeln Sie eine Anzahl von W6, die Ihrem Uebungsbonus entspricht, und addieren Sie sie. Reduziere den von dir erlittenen nekrotischen Schaden um diesen Betrag. Sobald Sie diesen Vorteil genutzt haben, können Sie ihn erst wieder nutzen, wenn Sie eine Kurze oder Lange Rast beendet haben.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

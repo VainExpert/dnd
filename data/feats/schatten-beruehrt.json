@@ -1,0 +1,75 @@
+{
+  "id": "schatten-beruehrt",
+  "type": "feat",
+  "name": "Schatten-Beruehrt",
+  "original_name": "Shadow Touched",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:shadow-touched",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Stufe 4+"
+  ],
+  "summary": "Voraussetzung: Level 4+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie der Magie von Shadowfell ausgesetzt sind, erhalten Sie die folgenden Vorteile."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schattenmagie. Wählen Sie einen Zauberspruch der Stufe 1 aus der Zauberschule Illusion oder Nekromantie. Sie haben diesen Zauber und den Unsichtbarkeitszauber immer vorbereitet. Sie können jeden dieser Zauber wirken, ohne einen Zauberslot zu verbrauchen. Sobald Sie einen Zauberspruch auf diese Weise gewirkt haben, können Sie diesen Zauberspruch nicht erneut auf diese Weise wirken, bis Sie eine Lange Rast abgeschlossen haben. Sie können diese Zauber auch mit Zauberslots der entsprechenden Stufe wirken, die Sie haben. Die Zauberfähigkeit des Zaubers ist die Fähigkeit, die durch dieses Talent erhöht wird."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+\n\nWenn Sie der Magie von Shadowfell ausgesetzt sind, erhalten Sie die folgenden Vorteile.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20.\n\nSchattenmagie. Wählen Sie einen Zauberspruch der Stufe 1 aus der Zauberschule Illusion oder Nekromantie. Sie haben diesen Zauber und den Unsichtbarkeitszauber immer vorbereitet. Sie können jeden dieser Zauber wirken, ohne einen Zauberslot zu verbrauchen. Sobald Sie einen Zauberspruch auf diese Weise gewirkt haben, können Sie diesen Zauberspruch nicht erneut auf diese Weise wirken, bis Sie eine Lange Rast abgeschlossen haben. Sie können diese Zauber auch mit Zauberslots der entsprechenden Stufe wirken, die Sie haben. Die Zauberfähigkeit des Zaubers ist die Fähigkeit, die durch dieses Talent erhöht wird.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [
+    {
+      "id": "schatten-beruehrt-level-1-spell",
+      "type": "spell",
+      "choose": 1,
+      "spell_levels": [
+        1
+      ],
+      "source": "schatten-beruehrt"
+    }
+  ],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [
+      {
+        "id": "schatten-beruehrt-level-1-spell",
+        "type": "spell",
+        "choose": 1,
+        "spell_levels": [
+          1
+        ],
+        "source": "schatten-beruehrt"
+      }
+    ],
+    "always_prepared": true
+  }
+}

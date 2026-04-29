@@ -1,0 +1,29 @@
+{
+  "id": "transmutierter-zauber",
+  "name": "Transmutierter Zauber",
+  "original_name": "Transmuted Spell",
+  "kind": "metamagic_option",
+  "class": "Zauberer",
+  "class_id": "zauberer",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/sorcerer:metamagic",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "1 Zauberpunkt",
+  "cost_original": "1 Sorcery Point",
+  "prerequisite": "",
+  "prerequisite_original": "",
+  "summary": "Wenn du einen Zauberspruch wirkst, der einen Schadenstyp aus der folgenden Liste verursacht, kannst du 1 Zauberpunkt ausgeben, um diesen Schadenstyp in einen der anderen aufgeführten Schadenstypen zu ändern: Säure, Kälte, Feuer, Blitz, Gift, Donner.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "When you cast a spell that deals a type of damage from the following list, you can spend 1 Sorcery Point to change that damage type to one of the other listed types: Acid, Cold, Fire, Lightning, Poison, Thunder.",
+      "text_de": "Wenn du einen Zauberspruch wirkst, der einen Schadenstyp aus der folgenden Liste verursacht, kannst du 1 Zauberpunkt ausgeben, um diesen Schadenstyp in einen der anderen aufgeführten Schadenstypen zu ändern: Säure, Kälte, Feuer, Blitz, Gift, Donner."
+    }
+  ]
+}

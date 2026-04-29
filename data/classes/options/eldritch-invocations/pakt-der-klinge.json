@@ -1,0 +1,39 @@
+{
+  "id": "pakt-der-klinge",
+  "name": "Pakt der Klinge",
+  "original_name": "Pact of the Blade",
+  "kind": "eldritch_invocation",
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:eldritch-invocation",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "",
+  "cost_original": "",
+  "prerequisite": "",
+  "prerequisite_original": "",
+  "summary": "Als Bonusaktion können Sie eine Paktwaffe in Ihre Hand zaubern – eine einfache oder kriegerische Nahkampfwaffe Ihrer Wahl, mit der Sie sich verbinden – oder eine Verbindung mit einer magischen Waffe herstellen, die Sie berühren; Sie können sich nicht mit einer magischen Waffe verbinden, wenn jemand anderes darauf eingestimmt ist oder ein anderer Hexenmeister mit ihr verbunden ist. Bis zum Ende der Bindung verfügen Sie über Kenntnisse im Umgang mit der Waffe und können sie als Zauberfokus verwenden.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "As a Bonus Action, you can conjure a pact weapon in your hand—a Simple or Martial Melee weapon of your choice with which you bond—or create a bond with a magic weapon you touch; you can’t bond with a magic weapon if someone else is attuned to it or another Warlock is bonded with it. Until the bond ends, you have proficiency with the weapon, and you can use it as a Spellcasting Focus.",
+      "text_de": "Als Bonusaktion können Sie eine Paktwaffe in Ihre Hand zaubern – eine einfache oder kriegerische Nahkampfwaffe Ihrer Wahl, mit der Sie sich verbinden – oder eine Verbindung mit einer magischen Waffe herstellen, die Sie berühren; Sie können sich nicht mit einer magischen Waffe verbinden, wenn jemand anderes darauf eingestimmt ist oder ein anderer Hexenmeister mit ihr verbunden ist. Bis zum Ende der Bindung verfügen Sie über Kenntnisse im Umgang mit der Waffe und können sie als Zauberfokus verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Whenever you attack with the bonded weapon, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity; and you can cause the weapon to deal Necrotic, Psychic, or Radiant damage or its normal damage type.",
+      "text_de": "Wann immer Sie mit der gebundenen Waffe angreifen, können Sie Ihren Charisma-Modifikator für die Angriffs- und Schadenswürfe verwenden, anstatt Stärke oder Geschicklichkeit zu verwenden; und Sie können die Waffe dazu bringen, nekrotischen, psychischen oder strahlenden Schaden oder ihren normalen Schadenstyp zu verursachen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Your bond with the weapon ends if you use this feature’s Bonus Action again, if the weapon is more than 5 feet away from you for 1 minute or more, or if you die. A conjured weapon disappears when the bond ends.",
+      "text_de": "Ihre Bindung an die Waffe endet, wenn Sie die Bonusaktion dieser Funktion erneut nutzen, wenn die Waffe 1 Minute oder länger mehr als 5 Fuß von Ihnen entfernt ist oder wenn Sie sterben. Eine beschworene Waffe verschwindet, wenn die Bindung endet."
+    }
+  ]
+}

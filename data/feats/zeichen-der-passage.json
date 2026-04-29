@@ -1,0 +1,97 @@
+{
+  "id": "zeichen-der-passage",
+  "type": "feat",
+  "name": "Zeichen der Passage",
+  "original_name": "Mark of Passage",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:mark-of-passage",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Drachenmale",
+  "prerequisites": [],
+  "summary": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Geschwindigkeit des Kuriers. Deine Geschwindigkeit erhöht sich um 5 Fuß."
+    },
+    {
+      "type": "paragraph",
+      "text": "Intuitive Bewegung. Wenn Sie eine Prüfung auf Kraft (Leichtathletik) oder Geschicklichkeit (Akrobatik) durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Magische Passage. Du hast immer den Zauber „Nebliger Schritt“ vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können es auch mit beliebigen Zauberslots wirken, die Sie haben. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wenn Sie dieses Talent auswählen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauber der Marke. Wenn Sie über die Funktion „Zauberwirkung“ oder „Paktmagie“ verfügen, werden die Zauber in der Tabelle „Mark of Passage Spells“ zur Zauberliste dieser Funktion hinzugefügt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zeichen der Passage-Zauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Zauberstufe",
+          "Zauber"
+        ],
+        [
+          "1",
+          "Schneller Rückzug, Sprung"
+        ],
+        [
+          "2",
+          "Finde Ross und gehe spurlos vorbei"
+        ],
+        [
+          "3",
+          "Blink, Phantomross"
+        ],
+        [
+          "4",
+          "Dimension Tür, Bewegungsfreiheit"
+        ],
+        [
+          "5",
+          "Teleportationskreis"
+        ]
+      ],
+      "text": "Zauberstufe Zauber 1 Schneller Rückzug, Sprung 2 Ross finden, Spurlos passieren 3 Blinzeln, Phantomross 4 Dimensionstür, Bewegungsfreiheit 5 Teleportationskreis"
+    }
+  ],
+  "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)\n\nSie profitieren von folgenden Vorteilen.\n\nDie Geschwindigkeit des Kuriers. Deine Geschwindigkeit erhöht sich um 5 Fuß.\n\nIntuitive Bewegung. Wenn Sie eine Prüfung auf Kraft (Leichtathletik) oder Geschicklichkeit (Akrobatik) durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen.\n\nMagische Passage. Du hast immer den Zauber „Nebliger Schritt“ vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können es auch mit beliebigen Zauberslots wirken, die Sie haben. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wenn Sie dieses Talent auswählen).\n\nZauber der Marke. Wenn Sie über die Funktion „Zauberwirkung“ oder „Paktmagie“ verfügen, werden die Zauber in der Tabelle „Mark of Passage Spells“ zur Zauberliste dieser Funktion hinzugefügt.\n\nZeichen der Passage-Zauber\n\nZauberstufe Zauber 1 Schneller Rückzug, Sprung 2 Ross finden, Spurlos passieren 3 Blinzeln, Phantomross 4 Dimensionstür, Bewegungsfreiheit 5 Teleportationskreis",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "dex",
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

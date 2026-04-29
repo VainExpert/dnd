@@ -1,0 +1,29 @@
+{
+  "id": "erhoehter-zauber",
+  "name": "Erhoehter Zauber",
+  "original_name": "Heightened Spell",
+  "kind": "metamagic_option",
+  "class": "Zauberer",
+  "class_id": "zauberer",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/sorcerer:metamagic",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "2 Zauberpunkte",
+  "cost_original": "2 Sorcery Points",
+  "prerequisite": "",
+  "prerequisite_original": "",
+  "summary": "Wenn du einen Zauber wirkst, der eine Kreatur zu einem Rettungswurf zwingt, kannst du 2 Zauberpunkte ausgeben, um einem Ziel des Zaubers einen Nachteil bei Rettungswürfen gegen den Zauber zu verschaffen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "When you cast a spell that forces a creature to make a saving throw, you can spend 2 Sorcery Points to give one target of the spell Disadvantage on saves against the spell.",
+      "text_de": "Wenn du einen Zauber wirkst, der eine Kreatur zu einem Rettungswurf zwingt, kannst du 2 Zauberpunkte ausgeben, um einem Ziel des Zaubers einen Nachteil bei Rettungswürfen gegen den Zauber zu verschaffen."
+    }
+  ]
+}

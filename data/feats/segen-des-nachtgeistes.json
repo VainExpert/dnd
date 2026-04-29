@@ -1,0 +1,56 @@
+{
+  "id": "segen-des-nachtgeistes",
+  "type": "feat",
+  "name": "Segen des Nachtgeistes",
+  "original_name": "Boon of the Night Spirit",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:boon-of-the-night-spirit",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Epische Segenstalente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 19+"
+  ],
+  "summary": "Voraussetzung: Level 19+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 19+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mit Schatten verschmelzen. Während du dich im Dämmerlicht oder in der Dunkelheit befindest, kannst du dir als Bonusaktion den Zustand „Unsichtbar“ gönnen. Die Bedingung endet für Sie sofort, nachdem Sie eine Aktion, eine Bonusaktion oder eine Reaktion ausgeführt haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schattenhafte Form. Während du dich in Dämmerlicht oder Dunkelheit befindest, verfügst du über Resistenz gegen jeglichen Schaden außer Hellseher und Strahlend."
+    }
+  ],
+  "text": "Voraussetzung: Level 19+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 30.\n\nMit Schatten verschmelzen. Während du dich im Dämmerlicht oder in der Dunkelheit befindest, kannst du dir als Bonusaktion den Zustand „Unsichtbar“ gönnen. Die Bedingung endet für Sie sofort, nachdem Sie eine Aktion, eine Bonusaktion oder eine Reaktion ausgeführt haben.\n\nSchattenhafte Form. Während du dich in Dämmerlicht oder Dunkelheit befindest, verfügst du über Resistenz gegen jeglichen Schaden außer Hellseher und Strahlend.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

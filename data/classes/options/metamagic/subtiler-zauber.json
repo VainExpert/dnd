@@ -1,0 +1,29 @@
+{
+  "id": "subtiler-zauber",
+  "name": "Subtiler Zauber",
+  "original_name": "Subtle Spell",
+  "kind": "metamagic_option",
+  "class": "Zauberer",
+  "class_id": "zauberer",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/sorcerer:metamagic",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "1 Zauberpunkt",
+  "cost_original": "1 Sorcery Point",
+  "prerequisite": "",
+  "prerequisite_original": "",
+  "summary": "Wenn Sie einen Zauber wirken, können Sie 1 Zauberpunkt ausgeben, um ihn ohne verbale, somatische oder materielle Komponenten zu wirken, mit Ausnahme von Materialkomponenten, die vom Zauber verbraucht werden oder deren Kosten im Zauber festgelegt sind.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "When you cast a spell, you can spend 1 Sorcery Point to cast it without any Verbal, Somatic, or Material components, except Material components that are consumed by the spell or that have a cost specified in the spell.",
+      "text_de": "Wenn Sie einen Zauber wirken, können Sie 1 Zauberpunkt ausgeben, um ihn ohne verbale, somatische oder materielle Komponenten zu wirken, mit Ausnahme von Materialkomponenten, die vom Zauber verbraucht werden oder deren Kosten im Zauber festgelegt sind."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "faehigkeitswert-verbesserung",
+  "type": "feat",
+  "name": "Faehigkeitswert-Verbesserung",
+  "original_name": "Ability Score Improvement",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:ability-score-improvement",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Stufe 4+"
+  ],
+  "summary": "Voraussetzung: Level 4+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhe einen Fähigkeitswert deiner Wahl um 2 oder zwei Fähigkeitswerte deiner Wahl um 1. Dieses Talent kann einen Fähigkeitswert nicht über 20 erhöhen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wiederholbar. Sie können dieses Kunststück mehr als einmal ausführen."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+\n\nErhöhe einen Fähigkeitswert deiner Wahl um 2 oder zwei Fähigkeitswerte deiner Wahl um 1. Dieses Talent kann einen Fähigkeitswert nicht über 20 erhöhen.\n\nWiederholbar. Sie können dieses Kunststück mehr als einmal ausführen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

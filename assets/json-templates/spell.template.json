@@ -1,0 +1,41 @@
+{
+  "id": "<spell-id>",
+  "type": "spell",
+  "name": "<Spell Name>",
+  "rules_version": "2024",
+  "source": "<source>",
+  "level": 0,
+  "school": "evocation",
+  "casting_time": "1 action",
+  "range": {
+    "type": "distance",
+    "normal": 120,
+    "long": null,
+    "unit": "ft"
+  },
+  "components": {
+    "v": false,
+    "s": false,
+    "m": {
+      "text": "",
+      "cost_gp": null,
+      "consumed": false
+    }
+  },
+  "duration": {
+    "type": "instantaneous",
+    "value": null,
+    "unit": null
+  },
+  "concentration": false,
+  "ritual": false,
+  "classes": [],
+  "attack": null,
+  "save": null,
+  "damage": [],
+  "healing": [],
+  "effects": [],
+  "scaling": [],
+  "text": "",
+  "tags": []
+}

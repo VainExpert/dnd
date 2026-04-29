@@ -1,0 +1,59 @@
+{
+  "id": "elementar-adept",
+  "type": "feat",
+  "name": "Elementar-Adept",
+  "original_name": "Elemental Adept",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:elemental-adept",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Zauber- oder Paktmagie-Talent"
+  ],
+  "summary": "Voraussetzung: Stufe 4+, Zauberkunst oder Paktmagie-Talent",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Stufe 4+, Zauberkunst oder Paktmagie-Talent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Energiebeherrschung. Wählen Sie eine der folgenden Schadensarten: Säure, Kälte, Feuer, Blitz oder Donner. Zauber, die du wirkst, ignorieren die Resistenz gegen Schaden des gewählten Typs. Wenn du außerdem Schaden für einen von dir gewirkten Zauber würfelst, der Schaden dieser Art verursacht, kannst du jede 1 auf einem Schadenswürfel als 2 behandeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wiederholbar. Du kannst dieses Talent mehr als einmal ausführen, aber für die Energiebeherrschung musst du jedes Mal eine andere Schadensart wählen."
+    }
+  ],
+  "text": "Voraussetzung: Stufe 4+, Zauberkunst oder Paktmagie-Talent\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20.\n\nEnergiebeherrschung. Wählen Sie eine der folgenden Schadensarten: Säure, Kälte, Feuer, Blitz oder Donner. Zauber, die du wirkst, ignorieren die Resistenz gegen Schaden des gewählten Typs. Wenn du außerdem Schaden für einen von dir gewirkten Zauber würfelst, der Schaden dieser Art verursacht, kannst du jede 1 auf einem Schadenswürfel als 2 behandeln.\n\nWiederholbar. Du kannst dieses Talent mehr als einmal ausführen, aber für die Energiebeherrschung musst du jedes Mal eine andere Schadensart wählen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

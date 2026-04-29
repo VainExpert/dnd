@@ -1,0 +1,173 @@
+{
+  "id": "kartograph",
+  "type": "subclass",
+  "name": "Kartograph",
+  "original_name": "Cartographer",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/artificer:cartographer",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Kartieren Sie vorteilhafte Kurse durch Turbulenzen. Kartographen sind die führenden Navigatoren und Aufklärungsagenten. Mit ihren Kreationen können Kartographen Bedrohungen hervorheben, Verbündete schützen und Portale zu entfernten Orten schnitzen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Kartieren Sie vorteilhafte Kurse durch Turbulenzen. Kartographen sind die führenden Navigatoren und Aufklärungsagenten. Mit ihren Kreationen können Kartographen Bedrohungen hervorheben, Verbündete schützen und Portale zu entfernten Orten schnitzen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Handwerkszeug"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse. Sie erwerben Kenntnisse im Umgang mit Kalligraphenbedarf und Kartographenwerkzeugen. Wenn Sie bereits über eine dieser Fähigkeiten verfügen, erwerben Sie Kenntnisse in einer anderen Art von Handwerkswerkzeugen Ihrer Wahl (oder in zwei anderen Arten, wenn Sie beide haben)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schriftrollenherstellung. Wenn Sie eine Zauberschriftrolle anhand der Herstellungsregeln im Spielerhandbuch anfertigen, halbiert sich die für die Herstellung erforderliche Zeit."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Kartographenzauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine in der Kartographen-Zaubertabelle angegebene Stufe des Konstrukteurs erreichen, stehen Ihnen danach immer die aufgeführten Zauber zur Verfügung."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kartographenzauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Artificer-Stufe",
+          "Zauber"
+        ],
+        [
+          "3",
+          "Feenfeuer, Leitbolzen, Heilwort"
+        ],
+        [
+          "5",
+          "Suchen Sie das Objekt und den Mind Spike"
+        ],
+        [
+          "9",
+          "Rufen Sie Blitz, Hellsehen an"
+        ],
+        [
+          "13",
+          "Verbannung, Kreatur lokalisieren"
+        ],
+        [
+          "17",
+          "Wahrsagen, Teleportationskreis"
+        ]
+      ],
+      "text": "Zauber der Stufe „Artificer“ 3 Feenfeuer, Leitbolzen, Heilwort 5 Objekt lokalisieren, Geistesstachel 9 Blitz herbeirufen, Hellsehen 13 Verbannung, Kreatur lokalisieren 17 Wahrsagerei, Teleportationskreis"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Atlas des Abenteurers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn du eine Lange Rast abschließt, während du die Werkzeuge des Kartographen in der Hand hältst, kannst du dieses Werkzeug verwenden, um eine Reihe magischer Karten zu erstellen, indem du mindestens zwei Kreaturen (von denen eine du selbst sein kannst) berühren, bis zu einer maximalen Anzahl von Kreaturen, die 1 plus deinem Intelligenzmodifikator entspricht (mindestens zwei Kreaturen). Jedes Ziel erhält eine magische Karte, die ständig aktualisiert wird, um die relative Position aller Karteninhaber anzuzeigen, für alle anderen jedoch unleserlich ist. Die Karten bleiben bestehen, bis Sie sterben oder diese Funktion erneut verwenden. An diesem Punkt verschwinden alle vorhandenen Karten, die durch diese Funktion erstellt wurden, sofort."
+    },
+    {
+      "type": "paragraph",
+      "text": "Während ein Ziel die Karte trägt, erhält es die folgenden Vorteile."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bewusstsein. Das Ziel erhöht seinen Initiativewurf um 1W4."
+    },
+    {
+      "type": "paragraph",
+      "text": "Positionierung. Das Ziel kennt den Standort aller anderen Karteninhaber, die sich auf derselben Existenzebene wie es selbst befinden. Beim Wirken eines Zauberspruchs oder beim Erzeugen eines anderen Effekts, für den es erforderlich ist, das Ziel des Effekts sehen zu können, kann ein Karteninhaber einen anderen Karteninhaber anvisieren, unabhängig von Sichtweite oder Deckung, solange sich der andere Karteninhaber noch in der Reichweite des Effekts befindet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Mapping-Magie"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Beleuchtete Kartographie. Sie können Feenfeuer wirken, ohne einen Zauberslot zu verbrauchen, und dabei die betroffenen Kreaturen wie mit Tinte umreißen. Sie können dies so oft tun, wie es Ihrem Intelligenzmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Portalsprung. In deinem Zug kannst du eine Bewegungsmenge in Höhe der Hälfte deiner Geschwindigkeit (abgerundet) aufwenden, um dich zu einem unbesetzten Feld zu teleportieren, das du im Umkreis von 10 Fuß um dich selbst sehen kannst, oder im Umkreis von 5 Fuß um eine Kreatur, die sich im Umkreis von 30 Fuß um dich befindet und eine deiner Atlas-Karten des Abenteurers hält. Du kannst diesen Vorteil nicht nutzen, wenn deine Geschwindigkeit 0 ist."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 5: Geführte Präzision"
+    },
+    {
+      "type": "paragraph",
+      "text": "Einmal pro Spielzug können Sie Ihren Intelligenzmodifikator zu einem Schadenswurf des Zaubers oder Angriffs hinzufügen, wenn Sie einen Zauber aus Ihrer Kartographenzauberliste wirken oder eine von Ihrem Feenfeuer betroffene Kreatur mit einem Angriffswurf treffen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus kann das Erleiden von Schaden nicht dazu führen, dass du die Konzentration auf Feenfeuer verlierst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 9: Geniale Bewegung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du deinen „Flash of Genius“ verwendest, kannst du oder eine willige Kreatur deiner Wahl, die du in einem Umkreis von 30 Fuß um dich herum sehen kannst, bis zu 30 Fuß weit in einen unbesetzten Raum teleportieren, den du im Rahmen derselben Reaktion sehen kannst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 15: Überlegener Atlas"
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Atlas Ihres Abenteurers wird verbessert und bietet die folgenden Vorteile."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sicherer Hafen. Wenn ein Karteninhaber auf 0 Trefferpunkte reduziert, aber nicht vollständig getötet wird, kann diese Kreatur ihre Karte zerstören. Stattdessen ändern sich die Trefferpunkte der Kreatur auf eine Zahl, die dem Doppelten Ihrer Artificer-Stufe entspricht, und die Kreatur wird zu einem unbesetzten Feld im Umkreis von 5 Fuß um Sie oder einen anderen Karteninhaber Ihrer Wahl teleportiert."
+    },
+    {
+      "type": "paragraph",
+      "text": "Unfehlbarer Weg. Wenn Sie einer der Karteninhaber Ihres Abenteureratlas sind, können Sie „Den Pfad finden“ wirken, ohne einen Zauberslot zu verbrauchen, ohne den Zauber vorzubereiten und ohne Zauberkomponenten zu benötigen. Sobald Sie diesen Vorteil genutzt haben, können Sie ihn nicht erneut nutzen, bis Sie eine Lange Rast beendet haben."
+    }
+  ],
+  "text": "Kartieren Sie vorteilhafte Kurse durch Turbulenzen. Kartographen sind die führenden Navigatoren und Aufklärungsagenten. Mit ihren Kreationen können Kartographen Bedrohungen hervorheben, Verbündete schützen und Portale zu entfernten Orten schnitzen.\n\nLevel 3: Handwerkszeug\n\nSie profitieren von folgenden Vorteilen.\n\nWerkzeugkenntnisse. Sie erwerben Kenntnisse im Umgang mit Kalligraphenbedarf und Kartographenwerkzeugen. Wenn Sie bereits über eine dieser Fähigkeiten verfügen, erwerben Sie Kenntnisse in einer anderen Art von Handwerkswerkzeugen Ihrer Wahl (oder in zwei anderen Arten, wenn Sie beide haben).\n\nSchriftrollenherstellung. Wenn Sie eine Zauberschriftrolle anhand der Herstellungsregeln im Spielerhandbuch anfertigen, halbiert sich die für die Herstellung erforderliche Zeit.\n\nStufe 3: Kartographenzauber\n\nWenn Sie eine in der Kartographen-Zaubertabelle angegebene Stufe des Konstrukteurs erreichen, stehen Ihnen danach immer die aufgeführten Zauber zur Verfügung.\n\nKartographenzauber\n\nZauber der Stufe „Artificer“ 3 Feenfeuer, Leitbolzen, Heilwort 5 Objekt lokalisieren, Geistesstachel 9 Blitz herbeirufen, Hellsehen 13 Verbannung, Kreatur lokalisieren 17 Wahrsagerei, Teleportationskreis\n\nLevel 3: Atlas des Abenteurers\n\nImmer wenn du eine Lange Rast abschließt, während du die Werkzeuge des Kartographen in der Hand hältst, kannst du dieses Werkzeug verwenden, um eine Reihe magischer Karten zu erstellen, indem du mindestens zwei Kreaturen (von denen eine du selbst sein kannst) berühren, bis zu einer maximalen Anzahl von Kreaturen, die 1 plus deinem Intelligenzmodifikator entspricht (mindestens zwei Kreaturen). Jedes Ziel erhält eine magische Karte, die ständig aktualisiert wird, um die relative Position aller Karteninhaber anzuzeigen, für alle anderen jedoch unleserlich ist. Die Karten bleiben bestehen, bis Sie sterben oder diese Funktion erneut verwenden. An diesem Punkt verschwinden alle vorhandenen Karten, die durch diese Funktion erstellt wurden, sofort.\n\nWährend ein Ziel die Karte trägt, erhält es die folgenden Vorteile.\n\nBewusstsein. Das Ziel erhöht seinen Initiativewurf um 1W4.\n\nPositionierung. Das Ziel kennt den Standort aller anderen Karteninhaber, die sich auf derselben Existenzebene wie es selbst befinden. Beim Wirken eines Zauberspruchs oder beim Erzeugen eines anderen Effekts, für den es erforderlich ist, das Ziel des Effekts sehen zu können, kann ein Karteninhaber einen anderen Karteninhaber anvisieren, unabhängig von Sichtweite oder Deckung, solange sich der andere Karteninhaber noch in der Reichweite des Effekts befindet.\n\nLevel 3: Mapping-Magie\n\nSie profitieren von folgenden Vorteilen.\n\nBeleuchtete Kartographie. Sie können Feenfeuer wirken, ohne einen Zauberslot zu verbrauchen, und dabei die betroffenen Kreaturen wie mit Tinte umreißen. Sie können dies so oft tun, wie es Ihrem Intelligenzmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben.\n\nPortalsprung. In deinem Zug kannst du eine Bewegungsmenge in Höhe der Hälfte deiner Geschwindigkeit (abgerundet) aufwenden, um dich zu einem unbesetzten Feld zu teleportieren, das du im Umkreis von 10 Fuß um dich selbst sehen kannst, oder im Umkreis von 5 Fuß um eine Kreatur, die sich im Umkreis von 30 Fuß um dich befindet und eine deiner Atlas-Karten des Abenteurers hält. Du kannst diesen Vorteil nicht nutzen, wenn deine Geschwindigkeit 0 ist.\n\nStufe 5: Geführte Präzision\n\nEinmal pro Spielzug können Sie Ihren Intelligenzmodifikator zu einem Schadenswurf des Zaubers oder Angriffs hinzufügen, wenn Sie einen Zauber aus Ihrer Kartographenzauberliste wirken oder eine von Ihrem Feenfeuer betroffene Kreatur mit einem Angriffswurf treffen.\n\nDarüber hinaus kann das Erleiden von Schaden nicht dazu führen, dass du die Konzentration auf Feenfeuer verlierst.\n\nLevel 9: Geniale Bewegung\n\nWenn du deinen „Flash of Genius“ verwendest, kannst du oder eine willige Kreatur deiner Wahl, die du in einem Umkreis von 30 Fuß um dich herum sehen kannst, bis zu 30 Fuß weit in einen unbesetzten Raum teleportieren, den du im Rahmen derselben Reaktion sehen kannst.\n\nLevel 15: Überlegener Atlas\n\nDer Atlas Ihres Abenteurers wird verbessert und bietet die folgenden Vorteile.\n\nSicherer Hafen. Wenn ein Karteninhaber auf 0 Trefferpunkte reduziert, aber nicht vollständig getötet wird, kann diese Kreatur ihre Karte zerstören. Stattdessen ändern sich die Trefferpunkte der Kreatur auf eine Zahl, die dem Doppelten Ihrer Artificer-Stufe entspricht, und die Kreatur wird zu einem unbesetzten Feld im Umkreis von 5 Fuß um Sie oder einen anderen Karteninhaber Ihrer Wahl teleportiert.\n\nUnfehlbarer Weg. Wenn Sie einer der Karteninhaber Ihres Abenteureratlas sind, können Sie „Den Pfad finden“ wirken, ohne einen Zauberslot zu verbrauchen, ohne den Zauber vorzubereiten und ohne Zauberkomponenten zu benötigen. Sobald Sie diesen Vorteil genutzt haben, können Sie ihn nicht erneut nutzen, bis Sie eine Lange Rast beendet haben.",
+  "tags": [],
+  "class": "Artificer",
+  "class_id": "artificer",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

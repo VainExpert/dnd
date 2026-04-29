@@ -1,0 +1,45 @@
+{
+  "id": "<action-id>",
+  "type": "action",
+  "name": "<Action Name>",
+  "action_type": "action",
+  "activation": {
+    "type": "action",
+    "cost": 1
+  },
+  "range": {
+    "type": "self",
+    "normal": 0,
+    "long": null,
+    "unit": "ft"
+  },
+  "target": {
+    "type": "creature",
+    "count": 1
+  },
+  "rolls": [
+    {
+      "kind": "attack",
+      "attack_type": "melee_weapon_attack",
+      "to_hit": {
+        "formula": "1d20 + @attack_bonus"
+      },
+      "damage": [
+        {
+          "formula": "1d8 + @str_mod",
+          "damage_type": "slashing"
+        }
+      ],
+      "save": null,
+      "healing": []
+    }
+  ],
+  "uses": {
+    "max": null,
+    "recharge": null,
+    "resource_id": null
+  },
+  "scaling": [],
+  "text": "",
+  "tags": []
+}

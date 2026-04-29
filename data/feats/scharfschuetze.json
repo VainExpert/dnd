@@ -1,0 +1,62 @@
+{
+  "id": "scharfschuetze",
+  "type": "feat",
+  "name": "Scharfschuetze",
+  "original_name": "Sharpshooter",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:sharpshooter",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Geschicklichkeit 13+"
+  ],
+  "summary": "Voraussetzung: Level 4+, Geschicklichkeit 13+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, Geschicklichkeit 13+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Geschicklichkeitswert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bypass-Abdeckung. Ihre Fernangriffe mit Waffen ignorieren Halbdeckung und Dreivierteldeckung."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schießen im Nahkampf. Wenn Sie sich in einem Umkreis von 5 Fuß um einen Feind aufhalten, bedeutet dies keinen Nachteil für Ihre Angriffswürfe mit Fernkampfwaffen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Totale Aufnahmen. Ein Angriff aus großer Entfernung führt nicht zu einem Nachteil bei Ihren Angriffswürfen mit Fernkampfwaffen."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, Geschicklichkeit 13+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Geschicklichkeitswert um 1 auf maximal 20.\n\nBypass-Abdeckung. Ihre Fernangriffe mit Waffen ignorieren Halbdeckung und Dreivierteldeckung.\n\nSchießen im Nahkampf. Wenn Sie sich in einem Umkreis von 5 Fuß um einen Feind aufhalten, bedeutet dies keinen Nachteil für Ihre Angriffswürfe mit Fernkampfwaffen.\n\nTotale Aufnahmen. Ein Angriff aus großer Entfernung führt nicht zu einem Nachteil bei Ihren Angriffswürfen mit Fernkampfwaffen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "dex"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

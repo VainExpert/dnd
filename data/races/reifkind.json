@@ -1,0 +1,100 @@
+{
+  "id": "reifkind",
+  "type": "race",
+  "name": "Reifkind",
+  "original_name": "Rimekin",
+  "rules_version": "2024",
+  "source": "Lorwyn - First Light",
+  "source_url": "http://dnd2024.wikidot.com/species:rimekin",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Lorwyn",
+  "prerequisites": [],
+  "summary": "Rimekin stammen sowohl aus Lorwyn als auch aus Schattenmoor, obwohl die ersten Rimekin während der Invasion der Phyrexianer aus Flammenkin hervorgegangen sind. Diese Flammensippe gingen ihre Probleme mit kalter Logik an und lehnten reaktionäre Reaktionen ab. Dadurch nahmen die magischen Flammen, die ihre Körper umhüllten, eine eiskalte Atmosphäre an und sie wurden zu Rimekin.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Rimekin stammen sowohl aus Lorwyn als auch aus Schattenmoor, obwohl die ersten Rimekin während der Invasion der Phyrexianer aus Flammenkin hervorgegangen sind. Diese Flammensippe gingen ihre Probleme mit kalter Logik an und lehnten reaktionäre Reaktionen ab. Dadurch nahmen die magischen Flammen, die ihre Körper umhüllten, eine eiskalte Atmosphäre an und sie wurden zu Rimekin."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wie Flammenkin besitzen auch Rimekin angeborene Magie, aber die Flammen, die sie heraufbeschwören, brennen eher eisblau als glühend heiß. Darüber hinaus strahlen diese „Flammen“ eher eine eisige Kälte als eine glühende Hitze aus. Dieser Effekt erstreckt sich oberflächlich auf die Gegenstände, die Rimekin berührt. Alle von Rimekin getragenen Rüstungen oder Waffen werden mit Schichten stacheligen, aber harmlosen Raureifs überzogen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Rimekin-Eigenschaften"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Humanoid"
+    },
+    {
+      "type": "paragraph",
+      "text": "Größe: Mittel (ca. 4–7 Fuß hoch) oder Klein (ca. 2–4 Fuß hoch), ausgewählt bei der Auswahl dieser Art"
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschwindigkeit: 30 Fuß"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Rimekin verfügen Sie über diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kalte Feuermagie. Sie kennen den Cantrip „Ray of Frost“. Wenn Sie die Charakterstufen 3 und 5 erreichen, lernen Sie den Zauber „Eismesser“ bzw. den Zauber „Flammenklinge“. Du hast diese Zauber immer vorbereitet. Sie können jeden Zauber einmal ohne einen Zauberslot wirken und erhalten die Fähigkeit, diese Zauber auf diese Weise zu wirken, wieder, wenn Sie eine Lange Rast abgeschlossen haben. Sie können die Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Wenn du Flammenklinge mit dieser Eigenschaft wirkst, verursacht der Zauber Kälteschaden statt Feuerschaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Intelligenz, Weisheit oder Charisma sind Ihre Zauberfähigkeiten für diese Zaubersprüche (wählen Sie die Fähigkeit, wenn Sie diese Art auswählen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kältebeständig. Du hast Resistenz gegen Kälteschaden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß."
+    }
+  ],
+  "text": "Rimekin stammen sowohl aus Lorwyn als auch aus Schattenmoor, obwohl die ersten Rimekin während der Invasion der Phyrexianer aus Flammenkin hervorgegangen sind. Diese Flammensippe gingen ihre Probleme mit kalter Logik an und lehnten reaktionäre Reaktionen ab. Dadurch nahmen die magischen Flammen, die ihre Körper umhüllten, eine eiskalte Atmosphäre an und sie wurden zu Rimekin.\n\nWie Flammenkin besitzen auch Rimekin angeborene Magie, aber die Flammen, die sie heraufbeschwören, brennen eher eisblau als glühend heiß. Darüber hinaus strahlen diese „Flammen“ eher eine eisige Kälte als eine glühende Hitze aus. Dieser Effekt erstreckt sich oberflächlich auf die Gegenstände, die Rimekin berührt. Alle von Rimekin getragenen Rüstungen oder Waffen werden mit Schichten stacheligen, aber harmlosen Raureifs überzogen.\n\nRimekin-Eigenschaften\n\nKreaturentyp: Humanoid\n\nGröße: Mittel (ca. 4–7 Fuß hoch) oder Klein (ca. 2–4 Fuß hoch), ausgewählt bei der Auswahl dieser Art\n\nGeschwindigkeit: 30 Fuß\n\nAls Rimekin verfügen Sie über diese besonderen Eigenschaften.\n\nKalte Feuermagie. Sie kennen den Cantrip „Ray of Frost“. Wenn Sie die Charakterstufen 3 und 5 erreichen, lernen Sie den Zauber „Eismesser“ bzw. den Zauber „Flammenklinge“. Du hast diese Zauber immer vorbereitet. Sie können jeden Zauber einmal ohne einen Zauberslot wirken und erhalten die Fähigkeit, diese Zauber auf diese Weise zu wirken, wieder, wenn Sie eine Lange Rast abgeschlossen haben. Sie können die Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Wenn du Flammenklinge mit dieser Eigenschaft wirkst, verursacht der Zauber Kälteschaden statt Feuerschaden.\n\nIntelligenz, Weisheit oder Charisma sind Ihre Zauberfähigkeiten für diese Zaubersprüche (wählen Sie die Fähigkeit, wenn Sie diese Art auswählen).\n\nKältebeständig. Du hast Resistenz gegen Kälteschaden.\n\nDunkelsicht. Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß.",
+  "tags": [],
+  "size": [
+    "Klein",
+    "Mittel"
+  ],
+  "creature_type": "Humanoid",
+  "speed": {
+    "walk": 9,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Kalte Feuermagie",
+      "text": "Sie kennen den Cantrip „Ray of Frost“. Wenn Sie die Charakterstufen 3 und 5 erreichen, lernen Sie den Zauber „Eismesser“ bzw. den Zauber „Flammenklinge“. Du hast diese Zauber immer vorbereitet. Sie können jeden Zauber einmal ohne einen Zauberslot wirken und erhalten die Fähigkeit, diese Zauber auf diese Weise zu wirken, wieder, wenn Sie eine Lange Rast abgeschlossen haben. Sie können die Zauber auch mit beliebigen Zauberslots der entsprechenden Stufe wirken, die Sie haben. Wenn du Flammenklinge mit dieser Eigenschaft wirkst, verursacht der Zauber Kälteschaden statt Feuerschaden."
+    },
+    {
+      "name": "Kältebeständig",
+      "text": "Du hast Resistenz gegen Kälteschaden."
+    },
+    {
+      "name": "Dunkelsicht",
+      "text": "Sie haben Dunkelsicht mit einer Reichweite von 60 Fuß."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

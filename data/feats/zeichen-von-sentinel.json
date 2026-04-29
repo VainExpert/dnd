@@ -1,0 +1,92 @@
+{
+  "id": "zeichen-von-sentinel",
+  "type": "feat",
+  "name": "Zeichen von Sentinel",
+  "original_name": "Mark of Sentinel",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:mark-of-sentinel",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Drachenmale",
+  "prerequisites": [],
+  "summary": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sentinels Intuition. Wenn Sie eine Weisheitsprüfung (Einsicht oder Wahrnehmung) durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schild des Wächters. Du hast immer den Schildzauber vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können es auch mit beliebigen Zauberslots wirken, die Sie haben. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wenn Sie dieses Talent auswählen)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wachsamer Wächter. Wenn eine Kreatur, die du im Umkreis von 5 Fuß um dich herum sehen kannst, von einem Angriffswurf getroffen wird, kannst du eine Reaktion ausführen, um mit dieser Kreatur den Platz zu tauschen, und wirst stattdessen von dem Angriff getroffen. Sie können diese Funktion mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauber der Marke. Wenn Sie über die Klassenfunktion „Zauberkunst“ oder „Paktmagie“ verfügen, werden die Zauber in der Tabelle „Mal des Wächters“ zur Zauberliste dieser Funktion hinzugefügt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zeichen der Sentinel-Zauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Zauberstufe",
+          "Zauber"
+        ],
+        [
+          "1",
+          "Erzwungenes Duell, Schild des Glaubens"
+        ],
+        [
+          "2",
+          "Warding Bond, Zone der Wahrheit"
+        ],
+        [
+          "3",
+          "Gegenzauber, Schutz vor Energie"
+        ],
+        [
+          "4",
+          "Todeswache, Hüter des Glaubens"
+        ],
+        [
+          "5",
+          "Bigbys Hand"
+        ]
+      ],
+      "text": "Zauberstufe Zauber 1 Erzwungenes Duell, Schild des Glaubens, 2 Abwehrband, Zone der Wahrheit, 3 Gegenzauber, Schutz vor Energie, 4 Todesschutz, Wächter des Glaubens, 5 Bigbys Hand"
+    }
+  ],
+  "text": "Drachenzeichen-Talent (Voraussetzung: Eberron-Kampagne, kein weiteres Drachenzeichen-Talent möglich)\n\nSentinels Intuition. Wenn Sie eine Weisheitsprüfung (Einsicht oder Wahrnehmung) durchführen, können Sie 1W4 würfeln und die gewürfelte Zahl zur Fähigkeitsprüfung hinzufügen.\n\nSchild des Wächters. Du hast immer den Schildzauber vorbereitet. Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können es auch mit beliebigen Zauberslots wirken, die Sie haben. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wenn Sie dieses Talent auswählen).\n\nWachsamer Wächter. Wenn eine Kreatur, die du im Umkreis von 5 Fuß um dich herum sehen kannst, von einem Angriffswurf getroffen wird, kannst du eine Reaktion ausführen, um mit dieser Kreatur den Platz zu tauschen, und wirst stattdessen von dem Angriff getroffen. Sie können diese Funktion mehrmals in Höhe Ihres Uebungsbonus nutzen und erhalten alle verbrauchten Nutzungen zurück, wenn Sie eine Lange Rast beenden.\n\nZauber der Marke. Wenn Sie über die Klassenfunktion „Zauberkunst“ oder „Paktmagie“ verfügen, werden die Zauber in der Tabelle „Mal des Wächters“ zur Zauberliste dieser Funktion hinzugefügt.\n\nZeichen der Sentinel-Zauber\n\nZauberstufe Zauber 1 Erzwungenes Duell, Schild des Glaubens, 2 Abwehrband, Zone der Wahrheit, 3 Gegenzauber, Schutz vor Energie, 4 Todesschutz, Wächter des Glaubens, 5 Bigbys Hand",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

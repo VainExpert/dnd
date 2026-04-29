@@ -1,0 +1,55 @@
+{
+  "id": "inspirierender-anfuehrer",
+  "type": "feat",
+  "name": "Inspirierender Anfuehrer",
+  "original_name": "Inspiring Leader",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:inspiring-leader",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Gewoehnlich",
+  "prerequisites": [
+    "Level 4+, Weisheit oder Charisma 13+"
+  ],
+  "summary": "Voraussetzung: Level 4+, Weisheit oder Charisma 13+",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Voraussetzung: Level 4+, Weisheit oder Charisma 13+"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe deinen Weisheits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Leistungssteigerung. Wenn Sie eine Kurze oder Lange Rast beendet haben, können Sie eine inspirierende Darbietung geben: eine Rede, ein Lied oder einen Tanz. Wenn Sie dies tun, wählen Sie bis zu sechs Verbündete (zu denen Sie selbst gehören können) im Umkreis von 30 Fuß um sich selbst aus, die der Aufführung beiwohnen. Die ausgewählten Kreaturen erhalten jeweils temporäre Trefferpunkte in Höhe Ihrer Charakterstufe plus dem Modifikator der Fähigkeit, die Sie mit diesem Talent erhöht haben."
+    }
+  ],
+  "text": "Voraussetzung: Level 4+, Weisheit oder Charisma 13+\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe deinen Weisheits- oder Charisma-Wert um 1 auf maximal 20.\n\nLeistungssteigerung. Wenn Sie eine Kurze oder Lange Rast beendet haben, können Sie eine inspirierende Darbietung geben: eine Rede, ein Lied oder einen Tanz. Wenn Sie dies tun, wählen Sie bis zu sechs Verbündete (zu denen Sie selbst gehören können) im Umkreis von 30 Fuß um sich selbst aus, die der Aufführung beiwohnen. Die ausgewählten Kreaturen erhalten jeweils temporäre Trefferpunkte in Höhe Ihrer Charakterstufe plus dem Modifikator der Fähigkeit, die Sie mit diesem Talent erhöht haben.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "geschenk-der-beschutzer",
+  "name": "Geschenk der Beschützer",
+  "original_name": "Gift of the Protectors",
+  "kind": "eldritch_invocation",
+  "class": "Hexenmeister",
+  "class_id": "hexenmeister",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/warlock:eldritch-invocation",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Originaltext bleibt zur Kontrolle enthalten.",
+  "cost": "",
+  "cost_original": "",
+  "prerequisite": "Level 9+ Hexenmeister, Pakt der Wälzer-Anrufung",
+  "prerequisite_original": "Level 9+ Warlock, Pact of the Tome Invocation",
+  "summary": "Wenn Sie es beschwören, erscheint eine neue Seite in Ihrem Buch der Schatten. Mit Ihrer Erlaubnis kann eine Kreatur eine Aktion ausführen, um ihren Namen auf diese Seite zu schreiben, die eine Anzahl von Namen enthalten kann, die Ihrem Charisma-Modifikator entspricht (mindestens ein Name).",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "A new page appears in your Book of Shadows when you conjure it. With your permission, a creature can take an action to write its name on that page, which can contain a number of names equal to your Charisma modifier (minimum of one name).",
+      "text_de": "Wenn Sie es beschwören, erscheint eine neue Seite in Ihrem Buch der Schatten. Mit Ihrer Erlaubnis kann eine Kreatur eine Aktion ausführen, um ihren Namen auf diese Seite zu schreiben, die eine Anzahl von Namen enthalten kann, die Ihrem Charisma-Modifikator entspricht (mindestens ein Name)."
+    },
+    {
+      "type": "paragraph",
+      "text": "When any creature whose name is on the page is reduced to 0 Hit Points but not killed outright, the creature magically drops to 1 Hit Point instead. Once this magic is triggered, no creature can benefit from it until you finish a Long Rest.",
+      "text_de": "Wenn eine Kreatur, deren Name auf der Seite steht, auf 0 Trefferpunkte reduziert, aber nicht vollständig getötet wird, sinkt die Kreatur stattdessen auf magische Weise auf 1 Trefferpunkt. Sobald diese Magie ausgelöst wird, kann keine Kreatur davon profitieren, bis Sie eine Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "As a Magic action, you can erase a name on the page by touching it.",
+      "text_de": "Als Magic-Aktion können Sie einen Namen auf der Seite löschen, indem Sie ihn berühren."
+    }
+  ]
+}

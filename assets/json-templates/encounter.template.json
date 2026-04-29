@@ -1,0 +1,20 @@
+{
+  "id": "<encounter-id>",
+  "type": "encounter",
+  "name": "<Encounter Name>",
+  "campaign_id": null,
+  "rules_version": "2024",
+  "combatants": [
+    {
+      "id": "<combatant-id>",
+      "kind": "monster",
+      "ref_id": "<monster-id>",
+      "count": 1,
+      "initiative": null,
+      "hp_current": null,
+      "conditions_active": []
+    }
+  ],
+  "environment": "",
+  "notes_md": ""
+}

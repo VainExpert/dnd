@@ -1,0 +1,54 @@
+{
+  "id": "zauberfeuerfunke",
+  "type": "feat",
+  "name": "Zauberfeuerfunke",
+  "original_name": "Spellfire Spark",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:spellfire-spark",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Ursprungstalent",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Ursprungstalent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Magieabsorption. Einmal pro Spielzug, wenn du durch einen Zauber oder einen magischen Effekt Schaden erleidest, reduzierst du den insgesamt erlittenen Schaden um 1W4. Sie können diesen Vorteil nicht nutzen, wenn Sie an der Krankheit Kampfunfähigkeit leiden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauberfeuerflamme. Du lernst den Cantrip „Heilige Flamme“. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wenn Sie dieses Talent auswählen). Sie können diesen Cantrip auch mehrmals in Höhe Ihres Uebungsbonus als Bonusaktion wirken und erhalten alle verbrauchten Einsätze zurück, wenn Sie eine Lange Rast beenden."
+    }
+  ],
+  "text": "Ursprungstalent\n\nSie profitieren von folgenden Vorteilen.\n\nMagieabsorption. Einmal pro Spielzug, wenn du durch einen Zauber oder einen magischen Effekt Schaden erleidest, reduzierst du den insgesamt erlittenen Schaden um 1W4. Sie können diesen Vorteil nicht nutzen, wenn Sie an der Krankheit Kampfunfähigkeit leiden.\n\nZauberfeuerflamme. Du lernst den Cantrip „Heilige Flamme“. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wenn Sie dieses Talent auswählen). Sie können diesen Cantrip auch mehrmals in Höhe Ihres Uebungsbonus als Bonusaktion wirken und erhalten alle verbrauchten Einsätze zurück, wenn Sie eine Lange Rast beenden.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

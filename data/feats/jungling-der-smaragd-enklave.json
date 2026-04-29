@@ -1,0 +1,54 @@
+{
+  "id": "jungling-der-smaragd-enklave",
+  "type": "feat",
+  "name": "Jungling der Smaragd-Enklave",
+  "original_name": "Emerald Enclave Fledgling",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:emerald-enclave-fledgling",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Ursprungstalent",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Ursprungstalent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sprich mit Tieren. Du hast immer den Zauber „Mit Tieren sprechen“ vorbereitet und kannst ihn mit allen verfügbaren Zauberslots wirken. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wenn Sie dieses Talent auswählen). Wenn Sie diesen Zauber als Ritual wirken, beträgt seine Dauer 8 Stunden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tag-Team. Wenn Sie die Aktion „Hilfe“ ausführen, können Sie im Rahmen derselben Aktion mit einem willigen Verbündeten im Umkreis von 1,5 m um sich herum den Platz tauschen. Diese Bewegung provoziert keine Gelegenheitsangriffe. Sie können diesen Vorteil nicht nutzen, wenn der Verbündete über die Bedingung „Kampfunfähigkeit“ verfügt."
+    }
+  ],
+  "text": "Ursprungstalent\n\nSie profitieren von folgenden Vorteilen.\n\nSprich mit Tieren. Du hast immer den Zauber „Mit Tieren sprechen“ vorbereitet und kannst ihn mit allen verfügbaren Zauberslots wirken. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wenn Sie dieses Talent auswählen). Wenn Sie diesen Zauber als Ritual wirken, beträgt seine Dauer 8 Stunden.\n\nTag-Team. Wenn Sie die Aktion „Hilfe“ ausführen, können Sie im Rahmen derselben Aktion mit einem willigen Verbündeten im Umkreis von 1,5 m um sich herum den Platz tauschen. Diese Bewegung provoziert keine Gelegenheitsangriffe. Sie können diesen Vorteil nicht nutzen, wenn der Verbündete über die Bedingung „Kampfunfähigkeit“ verfügt.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

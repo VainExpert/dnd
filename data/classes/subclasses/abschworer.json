@@ -1,0 +1,96 @@
+{
+  "id": "abschworer",
+  "type": "subclass",
+  "name": "Abschwörer",
+  "original_name": "Abjurer",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/wizard:abjurer",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Gefährten abschirmen und Feinde verbannen Ihr Studium der Magie konzentriert sich auf Zaubersprüche, die blockieren, verbannen oder schützen – schädliche Effekte beenden, böse Einflüsse verbannen und die Schwachen schützen. Abschwörer werden gesucht, wenn unheilvolle Geister einen Exorzismus erfordern, wenn Orte vor magischer Spionage geschützt werden müssen und wenn Portale zu anderen Ebenen der Existenz geschlossen werden müssen. Abenteurergruppen schätzen Abjurer wegen des Schutzes, den sie vor einer Vielzahl feindlicher Magie und anderen Angriffen bieten.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Gefährten abschirmen und Feinde verbannen Ihr Studium der Magie konzentriert sich auf Zaubersprüche, die blockieren, verbannen oder schützen – schädliche Effekte beenden, böse Einflüsse verbannen und die Schwachen schützen. Abschwörer werden gesucht, wenn unheilvolle Geister einen Exorzismus erfordern, wenn Orte vor magischer Spionage geschützt werden müssen und wenn Portale zu anderen Ebenen der Existenz geschlossen werden müssen. Abenteurergruppen schätzen Abjurer wegen des Schutzes, den sie vor einer Vielzahl feindlicher Magie und anderen Angriffen bieten."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Gelehrter der Abschwörung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wählen Sie zwei Zaubersprüche aus der Abschwörungsschule, die jeweils nicht höher als Stufe 2 sein dürfen, und fügen Sie sie kostenlos Ihrem Zauberbuch hinzu."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie, wann immer Sie Zugang zu einer neuen Stufe an Zauberslots in dieser Klasse erhalten, Ihrem Zauberbuch kostenlos einen Zaubererzauber aus der Abschwörungsschule hinzufügen. Der gewählte Zauber muss einer Stufe angehören, für die du über Zauberslots verfügst."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Arkaner Schutz"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können zum Schutz Magie um sich weben. Wenn Sie einen Abschwörungszauber mit einem Zauberslot wirken, können Sie gleichzeitig einen Strang der Magie des Zaubers verwenden, um einen magischen Schutz auf sich selbst zu erschaffen, der anhält, bis Sie einen Lange Rast abgeschlossen haben. Die maximale Trefferpunktzahl des Schutzzaubers entspricht dem Doppelten Ihrer Zaubererstufe plus Ihrem Intelligenzmodifikator. Immer wenn du Schaden erleidest, erleidet stattdessen der Schutz den Schaden. Wenn du Resistenzen oder Schwachstellen hast, wende diese an, bevor du die Trefferpunkte des Schutzes reduzierst. Wenn der Schaden den Schutz auf 0 Trefferpunkte reduziert, erleidest du den verbleibenden Schaden. Obwohl der Schutzschild keine Trefferpunkte hat, kann er keinen Schaden absorbieren, aber seine Magie bleibt erhalten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie einen Abschwörungszauber mit einem Zauberslot wirken, erhält der Schutzzauber eine Anzahl an Trefferpunkten zurück, die dem Doppelten der Stufe des Zauberslots entspricht. Alternativ können Sie als Bonusaktion einen Zauberslot verbrauchen und der Schutzzauber erhält eine Anzahl an Trefferpunkten zurück, die dem Doppelten der Stufe des verbrauchten Zauberslots entspricht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie den Schutzzauber erstellt haben, können Sie ihn erst erneut erstellen, wenn Sie Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Geplanter Ward"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn eine Kreatur, die du im Umkreis von 30 Fuß um dich herum sehen kannst, Schaden erleidet, kannst du eine Reaktion durchführen, um deinen Arkanen Schutz zu veranlassen, diesen Schaden zu absorbieren. Wenn dieser Schaden den Schutz auf 0 Trefferpunkte reduziert, erleidet die geschützte Kreatur den verbleibenden Schaden. Wenn diese Kreatur Resistenzen oder Schwachstellen hat, wenden Sie diese an, bevor Sie die Trefferpunkte des Schutzzaubers reduzieren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 10: Zauberbrecher"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie haben immer die Zaubersprüche „Gegenzauber“ und „Magie bannen“ vorbereitet. Darüber hinaus können Sie „Magie bannen“ als Bonusaktion wirken und Ihren Uebungsbonus zur Fähigkeitsprüfung hinzufügen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du einen Zauber mit einem Zauberslot wirkst, wird dieser Slot nicht aufgebraucht, wenn der Zauber einen Zauber nicht stoppen kann."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Zauberresistenz"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du hast einen Vorteil bei Rettungswürfen gegen Zaubersprüche, und du hast Resistenz gegenüber dem Schaden von Zaubersprüchen."
+    }
+  ],
+  "text": "Gefährten abschirmen und Feinde verbannen Ihr Studium der Magie konzentriert sich auf Zaubersprüche, die blockieren, verbannen oder schützen – schädliche Effekte beenden, böse Einflüsse verbannen und die Schwachen schützen. Abschwörer werden gesucht, wenn unheilvolle Geister einen Exorzismus erfordern, wenn Orte vor magischer Spionage geschützt werden müssen und wenn Portale zu anderen Ebenen der Existenz geschlossen werden müssen. Abenteurergruppen schätzen Abjurer wegen des Schutzes, den sie vor einer Vielzahl feindlicher Magie und anderen Angriffen bieten.\n\nLevel 3: Gelehrter der Abschwörung\n\nWählen Sie zwei Zaubersprüche aus der Abschwörungsschule, die jeweils nicht höher als Stufe 2 sein dürfen, und fügen Sie sie kostenlos Ihrem Zauberbuch hinzu.\n\nDarüber hinaus können Sie, wann immer Sie Zugang zu einer neuen Stufe an Zauberslots in dieser Klasse erhalten, Ihrem Zauberbuch kostenlos einen Zaubererzauber aus der Abschwörungsschule hinzufügen. Der gewählte Zauber muss einer Stufe angehören, für die du über Zauberslots verfügst.\n\nLevel 3: Arkaner Schutz\n\nSie können zum Schutz Magie um sich weben. Wenn Sie einen Abschwörungszauber mit einem Zauberslot wirken, können Sie gleichzeitig einen Strang der Magie des Zaubers verwenden, um einen magischen Schutz auf sich selbst zu erschaffen, der anhält, bis Sie einen Lange Rast abgeschlossen haben. Die maximale Trefferpunktzahl des Schutzzaubers entspricht dem Doppelten Ihrer Zaubererstufe plus Ihrem Intelligenzmodifikator. Immer wenn du Schaden erleidest, erleidet stattdessen der Schutz den Schaden. Wenn du Resistenzen oder Schwachstellen hast, wende diese an, bevor du die Trefferpunkte des Schutzes reduzierst. Wenn der Schaden den Schutz auf 0 Trefferpunkte reduziert, erleidest du den verbleibenden Schaden. Obwohl der Schutzschild keine Trefferpunkte hat, kann er keinen Schaden absorbieren, aber seine Magie bleibt erhalten.\n\nImmer wenn Sie einen Abschwörungszauber mit einem Zauberslot wirken, erhält der Schutzzauber eine Anzahl an Trefferpunkten zurück, die dem Doppelten der Stufe des Zauberslots entspricht. Alternativ können Sie als Bonusaktion einen Zauberslot verbrauchen und der Schutzzauber erhält eine Anzahl an Trefferpunkten zurück, die dem Doppelten der Stufe des verbrauchten Zauberslots entspricht.\n\nSobald Sie den Schutzzauber erstellt haben, können Sie ihn erst erneut erstellen, wenn Sie Lange Rast abgeschlossen haben.\n\nLevel 6: Geplanter Ward\n\nWenn eine Kreatur, die du im Umkreis von 30 Fuß um dich herum sehen kannst, Schaden erleidet, kannst du eine Reaktion durchführen, um deinen Arkanen Schutz zu veranlassen, diesen Schaden zu absorbieren. Wenn dieser Schaden den Schutz auf 0 Trefferpunkte reduziert, erleidet die geschützte Kreatur den verbleibenden Schaden. Wenn diese Kreatur Resistenzen oder Schwachstellen hat, wenden Sie diese an, bevor Sie die Trefferpunkte des Schutzzaubers reduzieren.\n\nLevel 10: Zauberbrecher\n\nSie haben immer die Zaubersprüche „Gegenzauber“ und „Magie bannen“ vorbereitet. Darüber hinaus können Sie „Magie bannen“ als Bonusaktion wirken und Ihren Uebungsbonus zur Fähigkeitsprüfung hinzufügen.\n\nWenn du einen Zauber mit einem Zauberslot wirkst, wird dieser Slot nicht aufgebraucht, wenn der Zauber einen Zauber nicht stoppen kann.\n\nLevel 14: Zauberresistenz\n\nDu hast einen Vorteil bei Rettungswürfen gegen Zaubersprüche, und du hast Resistenz gegenüber dem Schaden von Zaubersprüchen.",
+  "tags": [],
+  "class": "Magier",
+  "class_id": "magier",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

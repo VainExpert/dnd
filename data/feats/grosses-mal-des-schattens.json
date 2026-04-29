@@ -1,0 +1,54 @@
+{
+  "id": "grosses-mal-des-schattens",
+  "type": "feat",
+  "name": "Großes Mal des Schattens",
+  "original_name": "Greater Mark of Shadow",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/feat:greater-mark-of-shadow",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Drachenmal-Talente",
+  "group": "Groessere Drachenmale",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Stufe 4+, Talent „Zeichen des Schattens“)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, Talent „Zeichen des Schattens“)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserte Intuition. Wenn Sie den Vorteil „Schlaue Intuition“ Ihres Talents „Mal des Schattens“ nutzen, können Sie 1W6 statt 1W4 würfeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verbesserter Schatten. Wenn Sie den Vorteil „Shape Shadows“ Ihres Talents „Mal des Schattens“ nutzen, um Unsichtbarkeit ohne Zauberslot zu wirken, wirken Sie den Zauber als Version der Stufe 3."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Stufe 4+, Talent „Zeichen des Schattens“)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe einen Fähigkeitswert deiner Wahl um 1, bis zu einem Maximum von 20.\n\nVerbesserte Intuition. Wenn Sie den Vorteil „Schlaue Intuition“ Ihres Talents „Mal des Schattens“ nutzen, können Sie 1W6 statt 1W4 würfeln.\n\nVerbesserter Schatten. Wenn Sie den Vorteil „Shape Shadows“ Ihres Talents „Mal des Schattens“ nutzen, um Unsichtbarkeit ohne Zauberslot zu wirken, wirken Sie den Zauber als Version der Stufe 3.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

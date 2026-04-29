@@ -1,0 +1,72 @@
+{
+  "id": "einsiedler",
+  "type": "background",
+  "name": "Einsiedler",
+  "original_name": "Hermit",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/background:hermit",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Sie haben Ihre frühen Jahre zurückgezogen in einer Hütte oder einem Kloster verbracht, die weit außerhalb der nächsten Siedlung liegt. Damals waren die Kreaturen des Waldes und diejenigen, die gelegentlich zu Besuch kamen, um Neuigkeiten von der Außenwelt und Vorräte zu bringen, Ihre einzigen Begleiter. Die Einsamkeit ermöglichte es Ihnen, viele Stunden damit zu verbringen, über die Geheimnisse der Schöpfung nachzudenken.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Sie haben Ihre frühen Jahre zurückgezogen in einer Hütte oder einem Kloster verbracht, die weit außerhalb der nächsten Siedlung liegt. Damals waren die Kreaturen des Waldes und diejenigen, die gelegentlich zu Besuch kamen, um Neuigkeiten von der Außenwelt und Vorräte zu bringen, Ihre einzigen Begleiter. Die Einsamkeit ermöglichte es Ihnen, viele Stunden damit zu verbringen, über die Geheimnisse der Schöpfung nachzudenken."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Konstitution, Weisheit, Charisma Talent: Heiler Fertigkeiten: Medizin und Religion Werkzeugkenntnisse: Kräuterkunde-Set Ausrüstung: Wählen Sie A oder B: (A) Quartierstab, Kräuterkunde-Set, Schlafsack, Buch (Philosophie), Lampe, Öl (3 Fläschchen), Reisekleidung, 16 GP; oder (B) 50 GP"
+    }
+  ],
+  "text": "Sie haben Ihre frühen Jahre zurückgezogen in einer Hütte oder einem Kloster verbracht, die weit außerhalb der nächsten Siedlung liegt. Damals waren die Kreaturen des Waldes und diejenigen, die gelegentlich zu Besuch kamen, um Neuigkeiten von der Außenwelt und Vorräte zu bringen, Ihre einzigen Begleiter. Die Einsamkeit ermöglichte es Ihnen, viele Stunden damit zu verbringen, über die Geheimnisse der Schöpfung nachzudenken.\n\nFähigkeitswerte: Konstitution, Weisheit, Charisma Talent: Heiler Fertigkeiten: Medizin und Religion Werkzeugkenntnisse: Kräuterkunde-Set Ausrüstung: Wählen Sie A oder B: (A) Quartierstab, Kräuterkunde-Set, Schlafsack, Buch (Philosophie), Lampe, Öl (3 Fläschchen), Reisekleidung, 16 GP; oder (B) 50 GP",
+  "tags": [],
+  "ability_scores": [
+    "con",
+    "wis",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "con",
+      "wis",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Medizin",
+    "Religion Werkzeugkenntnisse: Kräuterkunde-Set"
+  ],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "heiler",
+  "granted_feat_name": "Heiler",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wählen Sie A oder B: (A) Quartierstab, Kräuterkunde-Set, Schlafsack, Buch (Philosophie), Lampe, Öl (3 Fläschchen), Reisekleidung, 16 GP; oder (B) 50 GP"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "krieger-der-barmherzigkeit",
+  "type": "subclass",
+  "name": "Krieger der Barmherzigkeit",
+  "original_name": "Warrior of Mercy",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/monk:warrior-of-mercy",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Manipulieren Sie die Kräfte von Leben und Tod",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Manipulieren Sie die Kräfte von Leben und Tod"
+    },
+    {
+      "type": "paragraph",
+      "text": "Krieger der Barmherzigkeit manipulieren die Lebenskraft anderer. Diese Mönche sind umherziehende Ärzte, aber sie bereiten ihren Feinden ein schnelles Ende. Sie tragen oft Masken und präsentieren sich als gesichtslose Überbringer von Leben und Tod."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Hand des Schadens"
+    },
+    {
+      "type": "paragraph",
+      "text": "Einmal pro Spielzug, wenn du eine Kreatur mit einem unbewaffneten Schlag triffst und ihr Schaden zufügst, kannst du 1 Fokuspunkt ausgeben, um zusätzlichen nekrotischen Schaden zu verursachen, der einem Wurf deines Kampfkunstwürfels plus deinem Weisheitsmodifikator entspricht."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Hand der Heilung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als magische Aktion kannst du 1 Fokuspunkt ausgeben, um eine Kreatur zu berühren und eine Anzahl an Trefferpunkten wiederherzustellen, die einem Wurf deines Kampfkunstwürfels plus deinem Weisheitsmodifikator entspricht."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Ihren Schlaghagel verwenden, können Sie einen der unbewaffneten Schläge durch die Verwendung dieser Funktion ersetzen, ohne einen Fokuspunkt für die Heilung aufzuwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Geräte der Barmherzigkeit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mit dem Herbalism Kit erwerben Sie Kenntnisse in den Fertigkeiten „Einsicht“ und „Medizin“."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Arztberührung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Hand des Schadens und Ihre Hand der Heilung verbessern sich, wie unten beschrieben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Hand des Schadens. Wenn du „Hand des Schadens“ auf eine Kreatur anwendest, kannst du dieser Kreatur bis zum Ende deines nächsten Zuges auch den Zustand „Vergiftet“ verleihen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Hand der Heilung. Wenn Sie „Hand der Heilung“ verwenden, können Sie bei der von Ihnen geheilten Kreatur auch einen der folgenden Zustände beenden: „Blindheit“, „Taubheit“, „Gelähmt“, „Vergiftet“ oder „Betäubt“."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 11: Flut der Heilung und des Schadens"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie Flurry of Blows verwenden, können Sie jeden der unbewaffneten Schläge durch den Einsatz von Hand of Healing ersetzen, ohne Fokuspunkte für die Heilung aufzuwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du außerdem einen unbewaffneten Schlag mit „Flur der Schläge“ ausführst und Schaden verursachst, kannst du „Hand des Schadens“ mit diesem Schlag verwenden, ohne einen Fokuspunkt für „Hand des Schadens“ zu verbrauchen. Du kannst „Hand des Schadens“ immer noch nur einmal pro Spielzug verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst diese Vorteile insgesamt so oft nutzen, wie es deinem Weisheitsmodifikator entspricht (mindestens einmal). Wenn Sie eine Lange Rast beenden, erhalten Sie alle verbrauchten Nutzungen zurück."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 17: Hand der ultimativen Barmherzigkeit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Beherrschung der Lebensenergie öffnet die Tür zur ultimativen Barmherzigkeit. Als magische Aktion kannst du die Leiche einer Kreatur berühren, die innerhalb der letzten 24 Stunden gestorben ist, und dafür 5 Fokuspunkte ausgeben. Die Kreatur erwacht dann mit einer Anzahl an Trefferpunkten von 4W10 plus Ihrem Weisheitsmodifikator wieder zum Leben. Wenn die Kreatur mit einem der folgenden Zustände gestorben ist, wird sie mit den entfernten Zuständen wiederbelebt: Geblendet, Betäubt, Gelähmt, Vergiftet und Betäubt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast beendet haben."
+    }
+  ],
+  "text": "Manipulieren Sie die Kräfte von Leben und Tod\n\nKrieger der Barmherzigkeit manipulieren die Lebenskraft anderer. Diese Mönche sind umherziehende Ärzte, aber sie bereiten ihren Feinden ein schnelles Ende. Sie tragen oft Masken und präsentieren sich als gesichtslose Überbringer von Leben und Tod.\n\nLevel 3: Hand des Schadens\n\nEinmal pro Spielzug, wenn du eine Kreatur mit einem unbewaffneten Schlag triffst und ihr Schaden zufügst, kannst du 1 Fokuspunkt ausgeben, um zusätzlichen nekrotischen Schaden zu verursachen, der einem Wurf deines Kampfkunstwürfels plus deinem Weisheitsmodifikator entspricht.\n\nLevel 3: Hand der Heilung\n\nAls magische Aktion kannst du 1 Fokuspunkt ausgeben, um eine Kreatur zu berühren und eine Anzahl an Trefferpunkten wiederherzustellen, die einem Wurf deines Kampfkunstwürfels plus deinem Weisheitsmodifikator entspricht.\n\nWenn Sie Ihren Schlaghagel verwenden, können Sie einen der unbewaffneten Schläge durch die Verwendung dieser Funktion ersetzen, ohne einen Fokuspunkt für die Heilung aufzuwenden.\n\nStufe 3: Geräte der Barmherzigkeit\n\nMit dem Herbalism Kit erwerben Sie Kenntnisse in den Fertigkeiten „Einsicht“ und „Medizin“.\n\nLevel 6: Arztberührung\n\nIhre Hand des Schadens und Ihre Hand der Heilung verbessern sich, wie unten beschrieben.\n\nHand des Schadens. Wenn du „Hand des Schadens“ auf eine Kreatur anwendest, kannst du dieser Kreatur bis zum Ende deines nächsten Zuges auch den Zustand „Vergiftet“ verleihen.\n\nHand der Heilung. Wenn Sie „Hand der Heilung“ verwenden, können Sie bei der von Ihnen geheilten Kreatur auch einen der folgenden Zustände beenden: „Blindheit“, „Taubheit“, „Gelähmt“, „Vergiftet“ oder „Betäubt“.\n\nStufe 11: Flut der Heilung und des Schadens\n\nWenn Sie Flurry of Blows verwenden, können Sie jeden der unbewaffneten Schläge durch den Einsatz von Hand of Healing ersetzen, ohne Fokuspunkte für die Heilung aufzuwenden.\n\nWenn du außerdem einen unbewaffneten Schlag mit „Flur der Schläge“ ausführst und Schaden verursachst, kannst du „Hand des Schadens“ mit diesem Schlag verwenden, ohne einen Fokuspunkt für „Hand des Schadens“ zu verbrauchen. Du kannst „Hand des Schadens“ immer noch nur einmal pro Spielzug verwenden.\n\nDu kannst diese Vorteile insgesamt so oft nutzen, wie es deinem Weisheitsmodifikator entspricht (mindestens einmal). Wenn Sie eine Lange Rast beenden, erhalten Sie alle verbrauchten Nutzungen zurück.\n\nLevel 17: Hand der ultimativen Barmherzigkeit\n\nIhre Beherrschung der Lebensenergie öffnet die Tür zur ultimativen Barmherzigkeit. Als magische Aktion kannst du die Leiche einer Kreatur berühren, die innerhalb der letzten 24 Stunden gestorben ist, und dafür 5 Fokuspunkte ausgeben. Die Kreatur erwacht dann mit einer Anzahl an Trefferpunkten von 4W10 plus Ihrem Weisheitsmodifikator wieder zum Leben. Wenn die Kreatur mit einem der folgenden Zustände gestorben ist, wird sie mit den entfernten Zuständen wiederbelebt: Geblendet, Betäubt, Gelähmt, Vergiftet und Betäubt.\n\nSobald Sie diese Funktion nutzen, können Sie sie erst wieder verwenden, wenn Sie eine Lange Rast beendet haben.",
+  "tags": [],
+  "class": "Moench",
+  "class_id": "moench",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

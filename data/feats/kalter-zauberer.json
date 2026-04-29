@@ -1,0 +1,57 @@
+{
+  "id": "kalter-zauberer",
+  "type": "feat",
+  "name": "Kalter Zauberer",
+  "original_name": "Cold Caster",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:cold-caster",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Level 4+)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Level 4+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zaubertrick. Du lernst den Cantrip „Ray of Frost“. Wenn Sie es bereits kennen, lernen Sie einen anderen Zauberer-Cantrip Ihrer Wahl. Die Zauberfähigkeit des Zaubers ist die Fähigkeit, die durch dieses Talent erhöht wird."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erfrierung. Einmal pro Spielzug, wenn du eine Kreatur mit einem Angriffswurf triffst und ihr Kälteschaden zufügst, kannst du die Verteidigung der Kreatur vorübergehend aufheben. Die Kreatur zieht 1W4 vom nächsten Rettungswurf ab, den sie vor dem Ende deines nächsten Zuges ausführt."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Level 4+)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhen Sie Ihren Intelligenz-, Weisheits- oder Charisma-Wert um 1 auf maximal 20.\n\nZaubertrick. Du lernst den Cantrip „Ray of Frost“. Wenn Sie es bereits kennen, lernen Sie einen anderen Zauberer-Cantrip Ihrer Wahl. Die Zauberfähigkeit des Zaubers ist die Fähigkeit, die durch dieses Talent erhöht wird.\n\nErfrierung. Einmal pro Spielzug, wenn du eine Kreatur mit einem Angriffswurf triffst und ihr Kälteschaden zufügst, kannst du die Verteidigung der Kreatur vorübergehend aufheben. Die Kreatur zieht 1W4 vom nächsten Rettungswurf ab, den sie vor dem Ende deines nächsten Zuges ausführt.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "krieger-der-offenen-hand",
+  "type": "subclass",
+  "name": "Krieger der offenen Hand",
+  "original_name": "Warrior of the Open Hand",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/monk:warrior-of-the-open-hand",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Meistere unbewaffnete Kampftechniken",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Meistere unbewaffnete Kampftechniken"
+    },
+    {
+      "type": "paragraph",
+      "text": "Krieger der Offenen Hand sind Meister des unbewaffneten Kampfes. Sie erlernen Techniken, um ihre Gegner zu stoßen und zu Fall zu bringen und ihre eigene Energie zu manipulieren, um sich vor Schaden zu schützen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Technik der offenen Hand"
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn du eine Kreatur mit einem durch deinen Schlaghagel gewährten Angriff triffst, kannst du diesem Ziel einen der folgenden Effekte auferlegen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verderben. Das Ziel kann bis zum Beginn seines nächsten Zuges keine Gelegenheitsangriffe durchführen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Drücken. Dem Ziel muss ein Kraft-Rettungswurf gelingen oder es kann bis zu 15 Fuß von Ihnen entfernt werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Stürzen. Das Ziel muss bei einem Dexterity-Rettungswurf erfolgreich sein oder sich im Bauchzustand befinden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 6: Ganzheit des Körpers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erlangen die Fähigkeit, sich selbst zu heilen. Als Bonusaktion kannst du deinen Kampfsportwürfel werfen. Sie erhalten eine Anzahl an Trefferpunkten zurück, die der gewürfelten Zahl plus Ihrem Weisheitsmodifikator entspricht (mindestens 1 wiedergewonnener Trefferpunkt)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können diese Funktion so oft verwenden, wie es Ihrem Weisheitsmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 11: Flottenschritt"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn Sie eine andere Bonusaktion als „Step of the Wind“ nehmen, können Sie „Step of the Wind“ auch unmittelbar nach dieser Bonusaktion verwenden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 17: Zitternde Palme"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erlangen die Fähigkeit, im Körper einer Person tödliche Vibrationen auszulösen. Wenn du eine Kreatur mit einem unbewaffneten Schlag triffst, kannst du 4 Fokuspunkte ausgeben, um diese nicht wahrnehmbaren Vibrationen auszulösen, die für eine Anzahl von Tagen anhalten, die deiner Mönchsstufe entspricht. Die Vibrationen sind harmlos, es sei denn, Sie ergreifen Maßnahmen, um sie zu beenden. Wenn Sie in Ihrem Zug die Angriffsaktion ausführen, können Sie alternativ auf einen der Angriffe verzichten, um die Vibrationen zu beenden. Um sie zu beenden, müssen Sie und das Ziel auf derselben Existenzebene sein. Wenn Sie sie beenden, muss das Ziel einen Konstitutions-Rettungswurf ausführen und dabei 10W12 Machtschaden bei einem fehlgeschlagenen Rettungswurf oder halb so viel Schaden bei einem erfolgreichen Rettungswurf erleiden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst jeweils nur eine Kreatur unter dem Effekt dieser Funktion haben. Sie können die Vibrationen harmlos beenden (kein Handlungsbedarf)."
+    }
+  ],
+  "text": "Meistere unbewaffnete Kampftechniken\n\nKrieger der Offenen Hand sind Meister des unbewaffneten Kampfes. Sie erlernen Techniken, um ihre Gegner zu stoßen und zu Fall zu bringen und ihre eigene Energie zu manipulieren, um sich vor Schaden zu schützen.\n\nStufe 3: Technik der offenen Hand\n\nImmer wenn du eine Kreatur mit einem durch deinen Schlaghagel gewährten Angriff triffst, kannst du diesem Ziel einen der folgenden Effekte auferlegen.\n\nVerderben. Das Ziel kann bis zum Beginn seines nächsten Zuges keine Gelegenheitsangriffe durchführen.\n\nDrücken. Dem Ziel muss ein Kraft-Rettungswurf gelingen oder es kann bis zu 15 Fuß von Ihnen entfernt werden.\n\nStürzen. Das Ziel muss bei einem Dexterity-Rettungswurf erfolgreich sein oder sich im Bauchzustand befinden.\n\nStufe 6: Ganzheit des Körpers\n\nSie erlangen die Fähigkeit, sich selbst zu heilen. Als Bonusaktion kannst du deinen Kampfsportwürfel werfen. Sie erhalten eine Anzahl an Trefferpunkten zurück, die der gewürfelten Zahl plus Ihrem Weisheitsmodifikator entspricht (mindestens 1 wiedergewonnener Trefferpunkt).\n\nSie können diese Funktion so oft verwenden, wie es Ihrem Weisheitsmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben.\n\nLevel 11: Flottenschritt\n\nWenn Sie eine andere Bonusaktion als „Step of the Wind“ nehmen, können Sie „Step of the Wind“ auch unmittelbar nach dieser Bonusaktion verwenden.\n\nLevel 17: Zitternde Palme\n\nSie erlangen die Fähigkeit, im Körper einer Person tödliche Vibrationen auszulösen. Wenn du eine Kreatur mit einem unbewaffneten Schlag triffst, kannst du 4 Fokuspunkte ausgeben, um diese nicht wahrnehmbaren Vibrationen auszulösen, die für eine Anzahl von Tagen anhalten, die deiner Mönchsstufe entspricht. Die Vibrationen sind harmlos, es sei denn, Sie ergreifen Maßnahmen, um sie zu beenden. Wenn Sie in Ihrem Zug die Angriffsaktion ausführen, können Sie alternativ auf einen der Angriffe verzichten, um die Vibrationen zu beenden. Um sie zu beenden, müssen Sie und das Ziel auf derselben Existenzebene sein. Wenn Sie sie beenden, muss das Ziel einen Konstitutions-Rettungswurf ausführen und dabei 10W12 Machtschaden bei einem fehlgeschlagenen Rettungswurf oder halb so viel Schaden bei einem erfolgreichen Rettungswurf erleiden.\n\nDu kannst jeweils nur eine Kreatur unter dem Effekt dieser Funktion haben. Sie können die Vibrationen harmlos beenden (kein Handlungsbedarf).",
+  "tags": [],
+  "class": "Moench",
+  "class_id": "moench",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

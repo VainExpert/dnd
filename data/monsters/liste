@@ -1,0 +1,18 @@
+npcs:
+hochkleriker, abgeschwächter assassine
+
+monster:
+humanoid:
+bandit, veteran, ritter, goldklingen, wache, bogenschütze, adeliger, mönch, pirat, schmuggler, zwerg-wache, (halb-)ork, barde, 
+
+tiere:
+ratten-schwarm, katze, fluch-katze, löwe, tiger, crag katze, panther, säbelzahntiger, säbelzahnjaguar, mastiff, streitross, alpha kriegs adler, braunbär, reh, elch, aurochse, korkodil, zugpferd, oktopus, eichhörnchen
+
+konstrukte:
+erwachtes objekt (klein, medium), erwachter besen, robohund
+
+pflanzen:
+erwachter busch, erwachter baum, vine viper
+
+feen:
+homebrew-feenwesen

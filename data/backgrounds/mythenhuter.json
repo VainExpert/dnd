@@ -1,0 +1,88 @@
+{
+  "id": "mythenhuter",
+  "type": "background",
+  "name": "Mythenhüter",
+  "original_name": "Mythalkeeper",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/background:mythalkeeper",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Intelligenz, Weisheit, Charisma",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Intelligenz, Weisheit, Charisma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Handwerker"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Arkana und Geschichte"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse: Juwelierwerkzeuge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wähle A oder B: (A) Kampfstab, Juwelierwerkzeuge, Parfüm, Beutel, Robe, Schaufel, Schnur, Wasserschlauch, 16 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mythen sind Quellen großer magischer Kraft, die das Gewebe oder sogar die Natur der Realität verändern können. Die meisten wurden in der Antike erbaut und viele wurden seitdem beschädigt oder stehen still. Als Mythenhüter aus den Dalelands haben Sie Ihre ersten Erfahrungen mit einem Mythos wahrscheinlich in den Ruinen von Myth Drannor gemacht. Sie durchstreifen Faerûn auf der Suche nach anderen zerstörten Orten der Macht und hoffen, mehr über die Geschichte und Macht der Mythen zu erfahren – oder sogar einen defekten Ort wiederherzustellen."
+    }
+  ],
+  "text": "Fähigkeitswerte: Intelligenz, Weisheit, Charisma\n\nTalent: Handwerker\n\nFertigkeiten: Arkana und Geschichte\n\nWerkzeugkenntnisse: Juwelierwerkzeuge\n\nAusrüstung: Wähle A oder B: (A) Kampfstab, Juwelierwerkzeuge, Parfüm, Beutel, Robe, Schaufel, Schnur, Wasserschlauch, 16 GP; oder (B) 50 GP\n\nMythen sind Quellen großer magischer Kraft, die das Gewebe oder sogar die Natur der Realität verändern können. Die meisten wurden in der Antike erbaut und viele wurden seitdem beschädigt oder stehen still. Als Mythenhüter aus den Dalelands haben Sie Ihre ersten Erfahrungen mit einem Mythos wahrscheinlich in den Ruinen von Myth Drannor gemacht. Sie durchstreifen Faerûn auf der Suche nach anderen zerstörten Orten der Macht und hoffen, mehr über die Geschichte und Macht der Mythen zu erfahren – oder sogar einen defekten Ort wiederherzustellen.",
+  "tags": [],
+  "ability_scores": [
+    "int",
+    "wis",
+    "cha"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Arkana",
+    "Geschichte\n\nWerkzeugkenntnisse: Juwelierwerkzeuge"
+  ],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "handwerker",
+  "granted_feat_name": "Handwerker\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wähle A oder B: (A) Kampfstab, Juwelierwerkzeuge, Parfüm, Beutel, Robe, Schaufel, Schnur, Wasserschlauch, 16 GP; oder (B) 50 GP\n\nMythen sind Quellen großer magischer Kraft, die das Gewebe oder sogar die Natur der Realität verändern können. Die meisten wurden in der Antike erbaut und viele wurden seitdem beschädigt oder stehen still. Als Mythenhüter aus den Dalelands haben Sie Ihre ersten Erfahrungen mit einem Mythos wahrscheinlich in den Ruinen von Myth Drannor gemacht. Sie durchstreifen Faerûn auf der Suche nach anderen zerstörten Orten der Macht und hoffen, mehr über die Geschichte und Macht der Mythen zu erfahren – oder sogar einen defekten Ort wiederherzustellen"
+    }
+  ]
+}

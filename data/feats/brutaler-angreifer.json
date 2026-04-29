@@ -1,0 +1,38 @@
+{
+  "id": "brutaler-angreifer",
+  "type": "feat",
+  "name": "Brutaler Angreifer",
+  "original_name": "Savage Attacker",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:savage-attacker",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Du hast trainiert, besonders schädliche Schläge auszuführen. Einmal pro Spielzug, wenn Sie ein Ziel mit einer Waffe treffen, können Sie die Schadenswürfel der Waffe zweimal werfen und einen der beiden Würfe gegen das Ziel verwenden.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Du hast trainiert, besonders schädliche Schläge auszuführen. Einmal pro Spielzug, wenn Sie ein Ziel mit einer Waffe treffen, können Sie die Schadenswürfel der Waffe zweimal werfen und einen der beiden Würfe gegen das Ziel verwenden."
+    }
+  ],
+  "text": "Du hast trainiert, besonders schädliche Schläge auszuführen. Einmal pro Spielzug, wenn Sie ein Ziel mit einer Waffe treffen, können Sie die Schadenswürfel der Waffe zweimal werfen und einen der beiden Würfe gegen das Ziel verwenden.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

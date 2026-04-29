@@ -1,0 +1,139 @@
+{
+  "id": "trickery-domane",
+  "type": "subclass",
+  "name": "Trickery-Domäne",
+  "original_name": "Trickery Domain",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/cleric:trickery-domain",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Machen Sie Unfug und fordern Sie die Autorität heraus",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Machen Sie Unfug und fordern Sie die Autorität heraus"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Trickery Domain bietet Magie der Täuschung, Illusion und Heimlichkeit. Kleriker, die diese Magie einsetzen, sind eine zerstörerische Kraft in der Welt, die den Stolz verletzt, Tyrannen verspottet, Gefangene befreit und hohle Traditionen missachtet. Sie ziehen Täuschungen und Streiche einer direkten Konfrontation vor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Götter der Täuschung sind Unruhestifter und Anstifter, die eine ständige Herausforderung für die akzeptierte Ordnung sowohl unter Göttern als auch unter Sterblichen darstellen. Sie verkörpern die Kräfte des Wandels und des sozialen Aufruhrs und sind Förderer von Dieben, Schurken, Spielern, Rebellen und Befreiern. Religiöse Orden, die im Verborgenen agieren, insbesondere solche, die repressive Regierungen oder Hierarchien untergraben wollen, nutzen ebenfalls die Macht der Trickery Domain."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Segen des Tricksters"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als magische Aktion kannst du dich selbst oder eine willige Kreatur in einem Umkreis von 30 Fuß um dich selbst auswählen, um einen Vorteil bei Geschicklichkeitswürfen (Stealth) zu haben. Dieser Segen hält an, bis Sie eine Lange Rast beendet haben oder diese Funktion erneut nutzen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Trickery-Domänenzauber"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ihre Verbindung zu dieser göttlichen Domäne stellt sicher, dass Sie immer über bestimmte Zaubersprüche verfügen. Wenn Sie eine Klerikerstufe erreichen, die in der Tabelle „Trickery Domain Spells“ angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Trickreiche Domänenzauber"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Kleriker-Stufe",
+          "Vorbereitete Zauber"
+        ],
+        [
+          "3",
+          "Person bezaubern, sich verkleiden, unsichtbar machen, spurlos passieren"
+        ],
+        [
+          "5",
+          "Hypnotisches Muster, Nichterkennung"
+        ],
+        [
+          "7",
+          "Verwirrung, Dimensionstür"
+        ],
+        [
+          "9",
+          "Person dominieren, Gedächtnis verändern"
+        ]
+      ],
+      "text": "Vorbereitete Zauber auf Klerikerstufe 3 Person bezaubern, Selbst verkleiden, Unsichtbarkeit, Spurlos verschwinden 5 Hypnotisches Muster, Nichterkennung 7 Verwirrung, Dimensionstür 9 Person dominieren, Erinnerung modifizieren"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Duplizität hervorrufen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Bonusaktion können Sie eine Nutzung Ihres Channel Divinity nutzen, um eine perfekte visuelle Illusion von sich selbst in einem unbesetzten Raum zu erzeugen, den Sie in einem Umkreis von 30 Fuß um sich selbst sehen können. Die Illusion ist immateriell und nimmt keinen Raum ein. Es dauert 1 Minute, endet jedoch vorzeitig, wenn Sie es ablehnen (keine Aktion erforderlich) oder die Bedingung „Kampfunfähig“ hat. Die Illusion ist animiert und ahmt Ihre Mimik und Gesten nach. Solange es bestehen bleibt, erhalten Sie die folgenden Vorteile."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zauber wirken. Sie können Zauber wirken, als ob Sie sich im Raum der Illusion befänden, aber Sie müssen Ihre eigenen Sinne nutzen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ablenken. Wenn Sie und Ihre Illusion sich in einem Umkreis von 5 Fuß um eine Kreatur befinden, die die Illusion sehen kann, haben Sie einen Vorteil bei Angriffswürfen gegen diese Kreatur, da die Illusion das Ziel ablenkt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bewegen. Als Bonusaktion können Sie die Illusion bis zu 30 Fuß weit an einen für Sie sichtbaren unbesetzten Ort bewegen, der weniger als 120 Fuß von Ihnen entfernt ist."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 6: Trickster’s Transposition"
+    },
+    {
+      "type": "paragraph",
+      "text": "Immer wenn Sie die Bonusaktion nutzen, um die Illusion Ihrer Invoke Duplicity zu erzeugen oder zu verschieben, können Sie sich teleportieren und dabei mit der Illusion den Platz tauschen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 17: Verbesserte Duplizität"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Illusion Ihrer Invoke Duplicity ist auf folgende Weise mächtiger geworden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Geteilte Ablenkung. Wenn Sie und Ihre Verbündeten Angriffswürfe gegen eine Kreatur innerhalb von 5 Fuß um die Illusion durchführen, haben die Angriffswürfe einen Vorteil."
+    },
+    {
+      "type": "paragraph",
+      "text": "Heilende Illusion. Wenn die Illusion endet, erhältst du oder eine Kreatur deiner Wahl im Umkreis von 1,5 m um sie herum eine Anzahl an Trefferpunkten zurück, die deiner Klerikerstufe entspricht."
+    }
+  ],
+  "text": "Machen Sie Unfug und fordern Sie die Autorität heraus\n\nDie Trickery Domain bietet Magie der Täuschung, Illusion und Heimlichkeit. Kleriker, die diese Magie einsetzen, sind eine zerstörerische Kraft in der Welt, die den Stolz verletzt, Tyrannen verspottet, Gefangene befreit und hohle Traditionen missachtet. Sie ziehen Täuschungen und Streiche einer direkten Konfrontation vor.\n\nGötter der Täuschung sind Unruhestifter und Anstifter, die eine ständige Herausforderung für die akzeptierte Ordnung sowohl unter Göttern als auch unter Sterblichen darstellen. Sie verkörpern die Kräfte des Wandels und des sozialen Aufruhrs und sind Förderer von Dieben, Schurken, Spielern, Rebellen und Befreiern. Religiöse Orden, die im Verborgenen agieren, insbesondere solche, die repressive Regierungen oder Hierarchien untergraben wollen, nutzen ebenfalls die Macht der Trickery Domain.\n\nLevel 3: Segen des Tricksters\n\nAls magische Aktion kannst du dich selbst oder eine willige Kreatur in einem Umkreis von 30 Fuß um dich selbst auswählen, um einen Vorteil bei Geschicklichkeitswürfen (Stealth) zu haben. Dieser Segen hält an, bis Sie eine Lange Rast beendet haben oder diese Funktion erneut nutzen.\n\nStufe 3: Trickery-Domänenzauber\n\nIhre Verbindung zu dieser göttlichen Domäne stellt sicher, dass Sie immer über bestimmte Zaubersprüche verfügen. Wenn Sie eine Klerikerstufe erreichen, die in der Tabelle „Trickery Domain Spells“ angegeben ist, haben Sie danach immer die aufgeführten Zauber vorbereitet.\n\nTrickreiche Domänenzauber\n\nVorbereitete Zauber auf Klerikerstufe 3 Person bezaubern, Selbst verkleiden, Unsichtbarkeit, Spurlos verschwinden 5 Hypnotisches Muster, Nichterkennung 7 Verwirrung, Dimensionstür 9 Person dominieren, Erinnerung modifizieren\n\nStufe 3: Duplizität hervorrufen\n\nAls Bonusaktion können Sie eine Nutzung Ihres Channel Divinity nutzen, um eine perfekte visuelle Illusion von sich selbst in einem unbesetzten Raum zu erzeugen, den Sie in einem Umkreis von 30 Fuß um sich selbst sehen können. Die Illusion ist immateriell und nimmt keinen Raum ein. Es dauert 1 Minute, endet jedoch vorzeitig, wenn Sie es ablehnen (keine Aktion erforderlich) oder die Bedingung „Kampfunfähig“ hat. Die Illusion ist animiert und ahmt Ihre Mimik und Gesten nach. Solange es bestehen bleibt, erhalten Sie die folgenden Vorteile.\n\nZauber wirken. Sie können Zauber wirken, als ob Sie sich im Raum der Illusion befänden, aber Sie müssen Ihre eigenen Sinne nutzen.\n\nAblenken. Wenn Sie und Ihre Illusion sich in einem Umkreis von 5 Fuß um eine Kreatur befinden, die die Illusion sehen kann, haben Sie einen Vorteil bei Angriffswürfen gegen diese Kreatur, da die Illusion das Ziel ablenkt.\n\nBewegen. Als Bonusaktion können Sie die Illusion bis zu 30 Fuß weit an einen für Sie sichtbaren unbesetzten Ort bewegen, der weniger als 120 Fuß von Ihnen entfernt ist.\n\nLevel 6: Trickster’s Transposition\n\nImmer wenn Sie die Bonusaktion nutzen, um die Illusion Ihrer Invoke Duplicity zu erzeugen oder zu verschieben, können Sie sich teleportieren und dabei mit der Illusion den Platz tauschen.\n\nStufe 17: Verbesserte Duplizität\n\nDie Illusion Ihrer Invoke Duplicity ist auf folgende Weise mächtiger geworden.\n\nGeteilte Ablenkung. Wenn Sie und Ihre Verbündeten Angriffswürfe gegen eine Kreatur innerhalb von 5 Fuß um die Illusion durchführen, haben die Angriffswürfe einen Vorteil.\n\nHeilende Illusion. Wenn die Illusion endet, erhältst du oder eine Kreatur deiner Wahl im Umkreis von 1,5 m um sie herum eine Anzahl an Trefferpunkten zurück, die deiner Klerikerstufe entspricht.",
+  "tags": [],
+  "class": "Kleriker",
+  "class_id": "kleriker",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

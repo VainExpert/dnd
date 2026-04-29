@@ -1,0 +1,108 @@
+{
+  "id": "wechselbalg",
+  "type": "race",
+  "name": "Wechselbalg",
+  "original_name": "Changeling",
+  "rules_version": "2024",
+  "source": "Eberron - Forge of the Artificer",
+  "source_url": "http://dnd2024.wikidot.com/species:changeling",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Spezies",
+  "group": "Eberron",
+  "prerequisites": [],
+  "summary": "Mit ihrem ständig wechselnden Aussehen halten sich Gestaltwandler in vielen Gesellschaften unentdeckt auf. Jeder Wechselbalg kann auf übernatürliche Weise jedes Gesicht annehmen, das er möchte. Für manche Wechselbälge kann ein neues Gesicht einen Aspekt ihrer Seele offenbaren.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Mit ihrem ständig wechselnden Aussehen halten sich Gestaltwandler in vielen Gesellschaften unentdeckt auf. Jeder Wechselbalg kann auf übernatürliche Weise jedes Gesicht annehmen, das er möchte. Für manche Wechselbälge kann ein neues Gesicht einen Aspekt ihrer Seele offenbaren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die ersten Wechselbälger des Multiversums erschienen in der Feenwildnis, und die wundersame, veränderliche Essenz dieser Ebene lebt noch heute in den Wechselbögen – selbst in jenen, die noch nie einen Fuß in das Feenreich gesetzt haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "In ihrer wahren Form wirken Wechselbälger verblasst, ihre Gesichtszüge weisen kaum Details auf. Es ist selten, einen in dieser Form zu sehen, denn ein typischer Wechselbalg verändert seine Gestalt auf die Art und Weise, wie andere ihre Kleidung wechseln würden. Viele Wechselbälger entwickeln jedoch Identitäten mit mehr Tiefe und erschaffen eine Persona mit Geschichte und Überzeugungen, die zu jeder Gestalt passt. Ein Wechselbalg-Abenteurer könnte Personas für viele Situationen haben, darunter Verhandlungen, Ermittlungen und Kämpfe."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mehrere Gestaltwandler können eine Persona teilen. Personas können sogar über eine Familie weitergegeben werden, sodass ein jüngerer Wechselbalg von den Kontakten profitieren kann, die von früheren Benutzern der Persona geknüpft wurden."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Eigenschaften des Wechselbalgs"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kreaturentyp: Fee"
+    },
+    {
+      "type": "paragraph",
+      "text": "Größe: Mittel (ca. 4–7 Fuß hoch) oder Klein (ca. 2–4 Fuß hoch), ausgewählt bei der Auswahl dieser Art"
+    },
+    {
+      "type": "paragraph",
+      "text": "Geschwindigkeit: 30 Fuß"
+    },
+    {
+      "type": "paragraph",
+      "text": "Als Changeling hast du diese besonderen Eigenschaften."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wechselbalg-Instinkte. Dank Ihrer Verbindung zum Feenreich erwerben Sie Kenntnisse in zwei der folgenden Fähigkeiten Ihrer Wahl: Täuschung, Einsicht, Einschüchterung, Leistung oder Überzeugung."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gestaltwandler. Als Aktion können Sie Ihre Gestalt verändern, um Ihr Aussehen und Ihre Stimme zu verändern. Sie bestimmen die Einzelheiten der Veränderungen, einschließlich Ihrer Färbung, Haarlänge und Ihres Geschlechts. Sie können auch Ihre Größe und Ihr Gewicht anpassen und Ihre Größe zwischen Mittel und Klein ändern. Sie können sich als Mitglied einer anderen spielbaren Spezies ausgeben, Ihre Spielstatistiken ändern sich jedoch nicht. Sie können das Aussehen einer Person, die Sie noch nie gesehen haben, nicht nachahmen und müssen eine Form annehmen, die die gleiche grundlegende Anordnung der Gliedmaßen aufweist wie Sie. Diese Eigenschaft ändert nichts an Ihrer Kleidung und Ausrüstung."
+    },
+    {
+      "type": "paragraph",
+      "text": "Während du mit dieser Eigenschaft gestaltverändert bist, hast du einen Vorteil bei Charisma-Würfen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie bleiben in der neuen Form, bis Sie Maßnahmen ergreifen, um zu Ihrer wahren Form zurückzukehren."
+    }
+  ],
+  "text": "Mit ihrem ständig wechselnden Aussehen halten sich Gestaltwandler in vielen Gesellschaften unentdeckt auf. Jeder Wechselbalg kann auf übernatürliche Weise jedes Gesicht annehmen, das er möchte. Für manche Wechselbälge kann ein neues Gesicht einen Aspekt ihrer Seele offenbaren.\n\nDie ersten Wechselbälger des Multiversums erschienen in der Feenwildnis, und die wundersame, veränderliche Essenz dieser Ebene lebt noch heute in den Wechselbögen – selbst in jenen, die noch nie einen Fuß in das Feenreich gesetzt haben.\n\nIn ihrer wahren Form wirken Wechselbälger verblasst, ihre Gesichtszüge weisen kaum Details auf. Es ist selten, einen in dieser Form zu sehen, denn ein typischer Wechselbalg verändert seine Gestalt auf die Art und Weise, wie andere ihre Kleidung wechseln würden. Viele Wechselbälger entwickeln jedoch Identitäten mit mehr Tiefe und erschaffen eine Persona mit Geschichte und Überzeugungen, die zu jeder Gestalt passt. Ein Wechselbalg-Abenteurer könnte Personas für viele Situationen haben, darunter Verhandlungen, Ermittlungen und Kämpfe.\n\nMehrere Gestaltwandler können eine Persona teilen. Personas können sogar über eine Familie weitergegeben werden, sodass ein jüngerer Wechselbalg von den Kontakten profitieren kann, die von früheren Benutzern der Persona geknüpft wurden.\n\nEigenschaften des Wechselbalgs\n\nKreaturentyp: Fee\n\nGröße: Mittel (ca. 4–7 Fuß hoch) oder Klein (ca. 2–4 Fuß hoch), ausgewählt bei der Auswahl dieser Art\n\nGeschwindigkeit: 30 Fuß\n\nAls Changeling hast du diese besonderen Eigenschaften.\n\nWechselbalg-Instinkte. Dank Ihrer Verbindung zum Feenreich erwerben Sie Kenntnisse in zwei der folgenden Fähigkeiten Ihrer Wahl: Täuschung, Einsicht, Einschüchterung, Leistung oder Überzeugung.\n\nGestaltwandler. Als Aktion können Sie Ihre Gestalt verändern, um Ihr Aussehen und Ihre Stimme zu verändern. Sie bestimmen die Einzelheiten der Veränderungen, einschließlich Ihrer Färbung, Haarlänge und Ihres Geschlechts. Sie können auch Ihre Größe und Ihr Gewicht anpassen und Ihre Größe zwischen Mittel und Klein ändern. Sie können sich als Mitglied einer anderen spielbaren Spezies ausgeben, Ihre Spielstatistiken ändern sich jedoch nicht. Sie können das Aussehen einer Person, die Sie noch nie gesehen haben, nicht nachahmen und müssen eine Form annehmen, die die gleiche grundlegende Anordnung der Gliedmaßen aufweist wie Sie. Diese Eigenschaft ändert nichts an Ihrer Kleidung und Ausrüstung.\n\nWährend du mit dieser Eigenschaft gestaltverändert bist, hast du einen Vorteil bei Charisma-Würfen.\n\nSie bleiben in der neuen Form, bis Sie Maßnahmen ergreifen, um zu Ihrer wahren Form zurückzukehren.",
+  "tags": [],
+  "size": [
+    "Klein",
+    "Mittel"
+  ],
+  "creature_type": "Fee",
+  "speed": {
+    "walk": 9,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "languages": [],
+  "senses": [],
+  "traits": [
+    {
+      "name": "Mehrere Gestaltwandler können eine Persona teilen",
+      "text": "Personas können sogar über eine Familie weitergegeben werden, sodass ein jüngerer Wechselbalg von den Kontakten profitieren kann, die von früheren Benutzern der Persona geknüpft wurden."
+    },
+    {
+      "name": "Wechselbalg-Instinkte",
+      "text": "Dank Ihrer Verbindung zum Feenreich erwerben Sie Kenntnisse in zwei der folgenden Fähigkeiten Ihrer Wahl: Täuschung, Einsicht, Einschüchterung, Leistung oder Überzeugung."
+    },
+    {
+      "name": "Gestaltwandler",
+      "text": "Als Aktion können Sie Ihre Gestalt verändern, um Ihr Aussehen und Ihre Stimme zu verändern. Sie bestimmen die Einzelheiten der Veränderungen, einschließlich Ihrer Färbung, Haarlänge und Ihres Geschlechts. Sie können auch Ihre Größe und Ihr Gewicht anpassen und Ihre Größe zwischen Mittel und Klein ändern. Sie können sich als Mitglied einer anderen spielbaren Spezies ausgeben, Ihre Spielstatistiken ändern sich jedoch nicht. Sie können das Aussehen einer Person, die Sie noch nie gesehen haben, nicht nachahmen und müssen eine Form annehmen, die die gleiche grundlegende Anordnung der Gliedmaßen aufweist wie Sie. Diese Eigenschaft ändert nichts an Ihrer Kleidung und Ausrüstung."
+    }
+  ],
+  "modifiers": [],
+  "granted_feature_ids": [],
+  "choice_sets": []
+}

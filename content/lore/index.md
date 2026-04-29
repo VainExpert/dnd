@@ -1,9 +1,9 @@
-# Player-Facing Lore
+# Die Welt
 
-This section is spoiler-safe.
+Spielerwissen der Charaktere aufgeteilt auf die verschiedene Kampagnen.
 
-## What you can find here
+## Bereiche
 
-- Gazetteer (places)
-- Factions (who wants what)
-- Religions (gods, rites, taboos)
+- [Online-Kampagne](online-kampagne/index.md)
+- [Hauptkampagne](hauptkampagne/index.md)
+- [Allgemeines](geteiltes-wissen/index.md)

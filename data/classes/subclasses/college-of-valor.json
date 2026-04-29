@@ -1,0 +1,87 @@
+{
+  "id": "college-of-valor",
+  "type": "subclass",
+  "name": "College of Valor",
+  "original_name": "College of Valor",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/bard:college-of-valor",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Subklassen",
+  "group": "",
+  "prerequisites": [],
+  "summary": "Singen Sie die Taten antiker Helden. Barden des College of Valor sind mutige Geschichtenerzähler, deren Geschichten die Erinnerung an die großen Helden der Vergangenheit bewahren. Diese Barden besingen die Taten der Mächtigen in gewölbten Hallen oder vor Menschenmengen, die sich um große Freudenfeuer versammelt haben. Sie reisen, um großartige Ereignisse aus erster Hand mitzuerleben und sicherzustellen, dass die Erinnerung an diese Ereignisse nicht vergeht. Mit ihren Liedern inspirieren sie neue Generationen dazu, die gleichen Erfolge zu erreichen wie die Helden der alten Zeit.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Singen Sie die Taten antiker Helden. Barden des College of Valor sind mutige Geschichtenerzähler, deren Geschichten die Erinnerung an die großen Helden der Vergangenheit bewahren. Diese Barden besingen die Taten der Mächtigen in gewölbten Hallen oder vor Menschenmengen, die sich um große Freudenfeuer versammelt haben. Sie reisen, um großartige Ereignisse aus erster Hand mitzuerleben und sicherzustellen, dass die Erinnerung an diese Ereignisse nicht vergeht. Mit ihren Liedern inspirieren sie neue Generationen dazu, die gleichen Erfolge zu erreichen wie die Helden der alten Zeit."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 3: Kampfinspiration"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie können Ihren Verstand einsetzen, um das Blatt im Kampf zu wenden. Eine Kreatur, die einen bardischen Inspirationswürfel von dir hat, kann ihn für einen der folgenden Effekte verwenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verteidigung. Wenn die Kreatur von einem Angriffswurf getroffen wird, kann diese Kreatur ihre Reaktion nutzen, um den bardischen Inspirationswürfel zu würfeln und die gewürfelte Zahl zu ihrer AC gegen diesen Angriff zu addieren, was möglicherweise dazu führt, dass der Angriff fehlschlägt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Angriff. Unmittelbar nachdem die Kreatur ein Ziel mit einem Angriffswurf getroffen hat, kann die Kreatur den bardischen Inspirationswürfel werfen und die gewürfelte Zahl zum Schaden des Angriffs gegen das Ziel addieren."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 3: Kampftraining"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie erwerben Kenntnisse im Umgang mit Kampfwaffen und trainieren mit mittleren Rüstungen und Schilden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie eine einfache Waffe oder eine Kampfwaffe als Zauberfokus verwenden, um Zauber aus Ihrer Bardenzauberliste zu wirken."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stufe 6: Zusätzlicher Angriff"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du kannst jedes Mal, wenn du in deinem Zug die Angriffsaktion ausführst, zweimal statt einmal angreifen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Sie anstelle eines dieser Angriffe einen Ihrer Cantrips wirken, der eine Zauberzeit für eine Aktion hat."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level 14: Kampfmagie"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nachdem Sie einen Zauber gewirkt haben, der eine Zauberzeit einer Aktion hat, können Sie als Bonusaktion einen Angriff mit einer Waffe durchführen."
+    }
+  ],
+  "text": "Singen Sie die Taten antiker Helden. Barden des College of Valor sind mutige Geschichtenerzähler, deren Geschichten die Erinnerung an die großen Helden der Vergangenheit bewahren. Diese Barden besingen die Taten der Mächtigen in gewölbten Hallen oder vor Menschenmengen, die sich um große Freudenfeuer versammelt haben. Sie reisen, um großartige Ereignisse aus erster Hand mitzuerleben und sicherzustellen, dass die Erinnerung an diese Ereignisse nicht vergeht. Mit ihren Liedern inspirieren sie neue Generationen dazu, die gleichen Erfolge zu erreichen wie die Helden der alten Zeit.\n\nStufe 3: Kampfinspiration\n\nSie können Ihren Verstand einsetzen, um das Blatt im Kampf zu wenden. Eine Kreatur, die einen bardischen Inspirationswürfel von dir hat, kann ihn für einen der folgenden Effekte verwenden.\n\nVerteidigung. Wenn die Kreatur von einem Angriffswurf getroffen wird, kann diese Kreatur ihre Reaktion nutzen, um den bardischen Inspirationswürfel zu würfeln und die gewürfelte Zahl zu ihrer AC gegen diesen Angriff zu addieren, was möglicherweise dazu führt, dass der Angriff fehlschlägt.\n\nAngriff. Unmittelbar nachdem die Kreatur ein Ziel mit einem Angriffswurf getroffen hat, kann die Kreatur den bardischen Inspirationswürfel werfen und die gewürfelte Zahl zum Schaden des Angriffs gegen das Ziel addieren.\n\nLevel 3: Kampftraining\n\nSie erwerben Kenntnisse im Umgang mit Kampfwaffen und trainieren mit mittleren Rüstungen und Schilden.\n\nDarüber hinaus können Sie eine einfache Waffe oder eine Kampfwaffe als Zauberfokus verwenden, um Zauber aus Ihrer Bardenzauberliste zu wirken.\n\nStufe 6: Zusätzlicher Angriff\n\nDu kannst jedes Mal, wenn du in deinem Zug die Angriffsaktion ausführst, zweimal statt einmal angreifen.\n\nDarüber hinaus können Sie anstelle eines dieser Angriffe einen Ihrer Cantrips wirken, der eine Zauberzeit für eine Aktion hat.\n\nLevel 14: Kampfmagie\n\nNachdem Sie einen Zauber gewirkt haben, der eine Zauberzeit einer Aktion hat, können Sie als Bonusaktion einen Angriff mit einer Waffe durchführen.",
+  "tags": [],
+  "class": "Barde",
+  "class_id": "barde",
+  "spellcasting_overrides": {
+    "ability": null,
+    "extra_spell_ids": []
+  },
+  "levels": []
+}

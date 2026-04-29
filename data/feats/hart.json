@@ -1,0 +1,38 @@
+{
+  "id": "hart",
+  "type": "feat",
+  "name": "Hart",
+  "original_name": "Tough",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/feat:tough",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Ihr maximaler Trefferpunkt erhöht sich um einen Betrag, der dem Doppelten Ihrer Charakterstufe entspricht, wenn Sie dieses Talent erlangen. Immer wenn Sie danach eine Charakterstufe aufsteigen, erhöht sich Ihr Hitpoint-Maximum um weitere 2 Hitpoints.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Ihr maximaler Trefferpunkt erhöht sich um einen Betrag, der dem Doppelten Ihrer Charakterstufe entspricht, wenn Sie dieses Talent erlangen. Immer wenn Sie danach eine Charakterstufe aufsteigen, erhöht sich Ihr Hitpoint-Maximum um weitere 2 Hitpoints."
+    }
+  ],
+  "text": "Ihr maximaler Trefferpunkt erhöht sich um einen Betrag, der dem Doppelten Ihrer Charakterstufe entspricht, wenn Sie dieses Talent erlangen. Immer wenn Sie danach eine Charakterstufe aufsteigen, erhöht sich Ihr Hitpoint-Maximum um weitere 2 Hitpoints.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

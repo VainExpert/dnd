@@ -1,0 +1,88 @@
+{
+  "id": "drachenkultist",
+  "type": "background",
+  "name": "Drachenkultist",
+  "original_name": "Dragon Cultist",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/background:dragon-cultist",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Fähigkeitswerte: Geschicklichkeit, Konstitution, Intelligenz",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Geschicklichkeit, Konstitution, Intelligenz"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talent: Kult des Drachen-Eingeweihten"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fertigkeiten: Täuschung und Heimlichkeit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Werkzeugkenntnisse: Kalligraphenbedarf"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ausrüstung: Wählen Sie A oder B: (A) Kalligraphenbedarf, Dolch, Glasflasche, Lampe, Handschellen, Öl (5 Flaschen), 2 Beutel, Robe, Seil, 30 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "paragraph",
+      "text": "Du bist ein Eingeweihter des Drachenkults. Sie haben einen Zellkult entdeckt oder wurden zu ihm gebracht, wo Sie die von Drachenkultisten geschätzten Werte verkörperten: Doppelzüngigkeit, Geheimhaltung und Entschlossenheit. Als Gegenleistung für deinen Eid, dem Kult zu dienen, bot dir der Kult die Gesellschaft anderer Drachenanbeter sowie Zugang zu Ressourcen an, die dir bei deinen Studien in den Bereichen Arkana und Okkultismus helfen könnten."
+    }
+  ],
+  "text": "Fähigkeitswerte: Geschicklichkeit, Konstitution, Intelligenz\n\nTalent: Kult des Drachen-Eingeweihten\n\nFertigkeiten: Täuschung und Heimlichkeit\n\nWerkzeugkenntnisse: Kalligraphenbedarf\n\nAusrüstung: Wählen Sie A oder B: (A) Kalligraphenbedarf, Dolch, Glasflasche, Lampe, Handschellen, Öl (5 Flaschen), 2 Beutel, Robe, Seil, 30 GP; oder (B) 50 GP\n\nDu bist ein Eingeweihter des Drachenkults. Sie haben einen Zellkult entdeckt oder wurden zu ihm gebracht, wo Sie die von Drachenkultisten geschätzten Werte verkörperten: Doppelzüngigkeit, Geheimhaltung und Entschlossenheit. Als Gegenleistung für deinen Eid, dem Kult zu dienen, bot dir der Kult die Gesellschaft anderer Drachenanbeter sowie Zugang zu Ressourcen an, die dir bei deinen Studien in den Bereichen Arkana und Okkultismus helfen könnten.",
+  "tags": [],
+  "ability_scores": [
+    "dex",
+    "con",
+    "int"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "dex",
+      "con",
+      "int"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Taeuschung",
+    "Heimlichkeit\n\nWerkzeugkenntnisse: Kalligraphenbedarf"
+  ],
+  "tool_proficiencies": [],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "kult-des-drachen-eingeweihten",
+  "granted_feat_name": "Kult des Drachen-Eingeweihten\n",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wählen Sie A oder B: (A) Kalligraphenbedarf, Dolch, Glasflasche, Lampe, Handschellen, Öl (5 Flaschen), 2 Beutel, Robe, Seil, 30 GP; oder (B) 50 GP\n\nDu bist ein Eingeweihter des Drachenkults. Sie haben einen Zellkult entdeckt oder wurden zu ihm gebracht, wo Sie die von Drachenkultisten geschätzten Werte verkörperten: Doppelzüngigkeit, Geheimhaltung und Entschlossenheit. Als Gegenleistung für deinen Eid, dem Kult zu dienen, bot dir der Kult die Gesellschaft anderer Drachenanbeter sowie Zugang zu Ressourcen an, die dir bei deinen Studien in den Bereichen Arkana und Okkultismus helfen könnten"
+    }
+  ]
+}

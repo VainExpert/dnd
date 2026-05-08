@@ -604,6 +604,9 @@ export function entityHref(kind, id, { base = "./" } = {}){
   if (kind === "npc") return `${base}npc.html?id=${encodeURIComponent(cleanId)}`;
   if (kind === "item") return `${base}item.html?id=${encodeURIComponent(cleanId)}`;
   if (kind === "table") return `${base}dice.html?table_file=${encodeURIComponent(cleanId)}`;
+  if (kind === "class" || kind === "subclass" || kind === "background" || kind === "feat" || kind === "race") {
+    return `${base}option.html?type=${encodeURIComponent(kind)}&id=${encodeURIComponent(cleanId)}`;
+  }
   if (kind === "status") return `${base}index.html#content/rules/status-effects.md#${statusAnchorSlug(cleanId)}`;
   return null;
 }
@@ -1243,6 +1246,11 @@ function normalizeInlineKind(kind){
   if (value === "npc" || value === "nsc") return "npc";
   if (value === "pc" || value === "charakter") return "pc";
   if (value === "item" || value === "gegenstand") return "item";
+  if (value === "class" || value === "klasse") return "class";
+  if (value === "subclass" || value === "subklasse" || value === "unterklasse") return "subclass";
+  if (value === "background" || value === "hintergrund") return "background";
+  if (value === "feat" || value === "talent") return "feat";
+  if (value === "race" || value === "volk") return "race";
   if (value === "status" || value === "zustand" || value === "condition" || value === "effect" || value === "effekt") return "status";
   if (value === "table" || value === "tabelle") return "table";
   if (value === "roll" || value === "wurf" || value === "wuerfel") return "roll";
@@ -1301,6 +1309,11 @@ function pageRelativeEntityHref(kind, id){
     npc: `./pages/bestiarium/npc.html?id=${encoded}`,
     pc: `./pages/spieler/pc.html?id=${encoded}`,
     item: `./pages/items/item.html?id=${encoded}`,
+    class: `./pages/charakteroptionen/option.html?type=class&id=${encoded}`,
+    subclass: `./pages/charakteroptionen/option.html?type=subclass&id=${encoded}`,
+    background: `./pages/charakteroptionen/option.html?type=background&id=${encoded}`,
+    feat: `./pages/charakteroptionen/option.html?type=feat&id=${encoded}`,
+    race: `./pages/charakteroptionen/option.html?type=race&id=${encoded}`,
     status: `./index.html#content/rules/status-effects.md#${statusAnchorSlug(cleanId)}`,
     table: `./pages/werkzeuge/dice.html?table_file=${encoded}`
   };
@@ -1313,6 +1326,11 @@ function pageRelativeEntityHref(kind, id){
     npc: `${inBestiary ? "./" : "../bestiarium/"}npc.html?id=${encoded}`,
     pc: `${inPlayer ? "./" : "../spieler/"}pc.html?id=${encoded}`,
     item: `${inItems ? "./" : "../items/"}item.html?id=${encoded}`,
+    class: `../charakteroptionen/option.html?type=class&id=${encoded}`,
+    subclass: `../charakteroptionen/option.html?type=subclass&id=${encoded}`,
+    background: `../charakteroptionen/option.html?type=background&id=${encoded}`,
+    feat: `../charakteroptionen/option.html?type=feat&id=${encoded}`,
+    race: `../charakteroptionen/option.html?type=race&id=${encoded}`,
     status: `../../index.html#content/rules/status-effects.md#${statusAnchorSlug(cleanId)}`,
     table: `${inTools ? "./" : "../werkzeuge/"}dice.html?table_file=${encoded}`
   };

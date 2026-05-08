@@ -1,0 +1,56 @@
+{
+  "id": "harper-teamarbeit",
+  "type": "feat",
+  "name": "Harper-Teamarbeit",
+  "original_name": "Harper Teamwork",
+  "rules_version": "2024",
+  "source": "Forgotten Realms - Heroes of Faerun",
+  "source_url": "http://dnd2024.wikidot.com/feat:harper-teamwork",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Allgemeine Talente",
+  "group": "Faerun",
+  "prerequisites": [],
+  "summary": "Allgemeines Talent (Voraussetzung: Level 4+, Harper-Agent-Talent)",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Allgemeines Talent (Voraussetzung: Level 4+, Harper-Agent-Talent)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Erhöhung des Fähigkeitswerts. Erhöhe deinen Geschicklichkeits- oder Charisma-Wert um 1 auf maximal 20."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vernichtendes Wortspiel. Wenn Sie die Aktion „Hilfe“ ausführen, um den Angriffswurf eines Verbündeten gegen einen Feind zu unterstützen, hat dieser Feind auch einen Nachteil beim ersten Rettungswurf, den er vor Beginn Ihres nächsten Zuges ausführt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Inspirierende Willenskraft. Wenn es dir mit einem Rettungswurf gelingt, den Zustand „Verängstigt“ oder „Gelähmt“ bei dir selbst zu beenden, kannst du einen Verbündeten auswählen, der im Umkreis von 30 Fuß um dich herum sichtbar ist und der den gleichen Zustand hat. Dieser Zustand endet für diesen Verbündeten sofort."
+    }
+  ],
+  "text": "Allgemeines Talent (Voraussetzung: Level 4+, Harper-Agent-Talent)\n\nSie profitieren von folgenden Vorteilen.\n\nErhöhung des Fähigkeitswerts. Erhöhe deinen Geschicklichkeits- oder Charisma-Wert um 1 auf maximal 20.\n\nVernichtendes Wortspiel. Wenn Sie die Aktion „Hilfe“ ausführen, um den Angriffswurf eines Verbündeten gegen einen Feind zu unterstützen, hat dieser Feind auch einen Nachteil beim ersten Rettungswurf, den er vor Beginn Ihres nächsten Zuges ausführt.\n\nInspirierende Willenskraft. Wenn es dir mit einem Rettungswurf gelingt, den Zustand „Verängstigt“ oder „Gelähmt“ bei dir selbst zu beenden, kannst du einen Verbündeten auswählen, der im Umkreis von 30 Fuß um dich herum sichtbar ist und der den gleichen Zustand hat. Dieser Zustand endet für diesen Verbündeten sofort.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

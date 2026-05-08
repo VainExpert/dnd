@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Kampagnenkalender</title>
+  <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
+  <script src="../../theme.js?v=theme-20260422"></script>
+  <script src="../../nav.js" defer></script>
+  <style>
+    .tool-shell{display:grid;gap:12px}
+    .toolbar,.filters,.row-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .btn{padding:9px 11px;border-radius:8px;border:1px solid var(--rule);background:var(--control);color:var(--text);cursor:pointer;font:inherit;font-size:13px}
+    .btn:hover,.btn.active{border-color:var(--accent-ring);background:var(--accent-soft);text-decoration:none}
+    .btn.small{padding:6px 8px;font-size:12px}
+    .btn.danger:hover{border-color:rgba(225,91,79,.7);background:rgba(225,91,79,.18)}
+    .calendar-grid{display:grid;grid-template-columns:280px minmax(0,1fr);gap:12px;align-items:start}
+    .panel{border:1px solid var(--rule);border-radius:8px;background:var(--panel-tint);padding:12px}
+    .panel h1,.panel h2{margin-top:0}
+    .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+    .stat{border:1px solid var(--rule-soft);border-radius:8px;background:var(--card-tint);padding:10px}
+    .stat span{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.35px}
+    .stat b{display:block;font-size:18px;margin-top:3px}
+    .form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+    label.field{display:grid;gap:5px;color:var(--muted);font-size:12px}
+    textarea.select{min-height:76px;resize:vertical;width:100%}
+    .wide{grid-column:1 / -1}
+    .timeline{display:grid;gap:9px}
+    .entry{border:1px solid var(--rule-soft);border-radius:8px;background:var(--card-tint);padding:10px;display:grid;gap:8px}
+    .entry.overdue{border-color:rgba(225,91,79,.75);background:rgba(225,91,79,.1)}
+    .entry.today{border-color:var(--accent-ring)}
+    .entry-head{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;flex-wrap:wrap}
+    .entry-title{font-weight:800}
+    .entry-sub,.small{color:var(--muted);font-size:12px}
+    .pill-line{display:flex;gap:6px;flex-wrap:wrap}
+    .pill-lite{border:1px solid var(--rule-soft);border-radius:999px;padding:3px 7px;color:var(--muted);font-size:11px;background:var(--panel-tint)}
+    .profile-list{display:grid;gap:8px;margin-top:10px}
+    .profile-btn{width:100%;text-align:left;padding:10px;border:1px solid var(--rule);border-radius:8px;background:var(--control);color:var(--text);cursor:pointer}
+    .profile-btn.active{border-color:var(--accent-ring);background:var(--accent-soft)}
+    .modal{position:fixed;inset:0;background:var(--overlay);display:none;align-items:center;justify-content:center;padding:18px;z-index:30}
+    .modal.open{display:flex}
+    .dialog{width:min(780px,96vw);max-height:90vh;overflow:auto;border:1px solid var(--rule);border-radius:8px;background:var(--panel);padding:14px;box-shadow:var(--shadow)}
+    .empty{color:var(--muted);border:1px dashed var(--rule);border-radius:8px;padding:12px}
+    input[type="file"]{max-width:100%}
+    @media (max-width:960px){.calendar-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Kampagnenkalender</div>
+      <div class="subtitle">Zeitverlauf &bull; Reisen &bull; Fristen &bull; Downtime &bull; Monde</div>
+    </div>
+    <div class="top-actions">
+      <a class="home-btn" href="../../index.html">Startseite</a>
+      <a class="home-btn" href="./quests.html">Quests &amp; Fronten</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar"></aside>
+    <main class="main">
+      <div class="content" style="max-width:1320px;">
+        <div class="tool-shell">
+          <section class="panel">
+            <div class="toolbar">
+              <button id="prevDay" class="btn" type="button">Tag zur&uuml;ck</button>
+              <button id="nextDay" class="btn" type="button">Tag vor</button>
+              <button id="nextWeek" class="btn" type="button">7 Tage vor</button>
+              <button id="addTravel" class="btn" type="button">Reise hinzuf&uuml;gen</button>
+              <button id="addDeadline" class="btn" type="button">Frist hinzuf&uuml;gen</button>
+              <button id="addDowntime" class="btn" type="button">Downtime hinzuf&uuml;gen</button>
+              <button id="addHoliday" class="btn" type="button">Feiertag hinzuf&uuml;gen</button>
+              <button id="addEvent" class="btn" type="button">Ereignis hinzuf&uuml;gen</button>
+              <button id="exportBtn" class="btn" type="button">JSON exportieren</button>
+              <button id="importBtn" class="btn" type="button">JSON importieren</button>
+              <input id="importFile" type="file" accept="application/json,.json" hidden>
+            </div>
+          </section>
+
+          <div class="calendar-grid">
+            <aside class="panel">
+              <h2>Kalenderprofile</h2>
+              <div class="toolbar">
+                <button id="newProfile" class="btn small" type="button">Profil</button>
+                <button id="duplicateProfile" class="btn small" type="button">Kopie</button>
+              </div>
+              <div id="profileList" class="profile-list"></div>
+            </aside>
+
+            <section class="panel">
+              <div id="overview"></div>
+              <div class="filters" id="filters"></div>
+              <div id="timeline" class="timeline"></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="dialog">
+      <div class="entry-head">
+        <h2 id="modalTitle">Eintrag</h2>
+        <button id="closeModal" class="btn small" type="button">Schlie&szlig;en</button>
+      </div>
+      <form id="entryForm" class="form-grid"></form>
+    </div>
+  </div>
+
+  <script type="module">
+    import { escapeHtml } from "../../lib.js";
+
+    const STORAGE_KEY = "dnd.campaignCalendar.v1";
+    const QUEST_KEY = "dnd.questFronts.v1";
+    const TYPES = [
+      ["travel", "Reisen"],
+      ["deadline", "Fristen"],
+      ["downtime", "Downtime"],
+      ["holiday", "Feiertage"],
+      ["event", "Ereignisse"],
+      ["quest-deadline", "Questfristen"]
+    ];
+    const PHASES = ["Neumond", "zunehmend", "Halbmond zunehmend", "zunehmend voll", "Vollmond", "abnehmend", "Halbmond abnehmend", "abnehmende Sichel"];
+
+    const $ = id => document.getElementById(id);
+    let store = loadStore();
+    let activeId = store.activeProfileId || store.profiles[0].id;
+    let filters = new Set(TYPES.map(([id]) => id));
+    let editing = null;
+
+    function uid(prefix){ return `${prefix}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`; }
+    function nowIso(){ return new Date().toISOString(); }
+    function num(value, fallback = 0){ const n = Number(value); return Number.isFinite(n) ? n : fallback; }
+    function asArray(value){ return Array.isArray(value) ? value : []; }
+
+    function defaultProfile(input = {}){
+      return {
+        id: String(input.id || uid("calendar")),
+        name: String(input.name || "Hauptkampagne"),
+        calendarName: String(input.calendarName || "Kampagnenkalender"),
+        currentDay: num(input.currentDay, 1),
+        displayDate: String(input.displayDate || "Kampagnentag 1"),
+        year: num(input.year, 1),
+        month: num(input.month, 1),
+        day: num(input.day, 1),
+        daysPerMonth: num(input.daysPerMonth, 30),
+        monthsPerYear: num(input.monthsPerYear, 12),
+        moons: asArray(input.moons).length ? asArray(input.moons).map(normalizeMoon) : [normalizeMoon({ name: "Mond", cycle: 28, offset: 0 })],
+        holidays: asArray(input.holidays).map(normalizeHoliday),
+        entries: asArray(input.entries).map(normalizeEntry),
+        updatedAt: String(input.updatedAt || nowIso())
+      };
+    }
+
+    function normalizeMoon(item = {}){
+      return { id: String(item.id || uid("moon")), name: String(item.name || "Mond"), cycle: Math.max(1, num(item.cycle, 28)), offset: num(item.offset, 0) };
+    }
+
+    function normalizeHoliday(item = {}){
+      return { id: String(item.id || uid("holiday")), name: String(item.name || "Feiertag"), day: num(item.day, 1), notes: String(item.notes || "") };
+    }
+
+    function normalizeEntry(item = {}){
+      return {
+        id: String(item.id || uid("entry")),
+        type: String(item.type || "event"),
+        title: String(item.title || "Neuer Eintrag"),
+        startDay: num(item.startDay ?? item.day, 1),
+        endDay: num(item.endDay ?? item.startDay ?? item.day, num(item.startDay, 1)),
+        status: String(item.status || "offen"),
+        from: String(item.from || ""),
+        to: String(item.to || ""),
+        duration: num(item.duration, 0),
+        progress: num(item.progress, 0),
+        character: String(item.character || ""),
+        activity: String(item.activity || ""),
+        result: String(item.result || ""),
+        linkedQuestId: String(item.linkedQuestId || ""),
+        linkedFrontId: String(item.linkedFrontId || ""),
+        notes: String(item.notes || ""),
+        sessionId: String(item.sessionId || "")
+      };
+    }
+
+    function loadStore(){
+      try{
+        const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+        const profiles = asArray(raw.profiles).map(defaultProfile);
+        if (profiles.length) return { version: 1, activeProfileId: String(raw.activeProfileId || profiles[0].id), profiles };
+      } catch {}
+      const profile = defaultProfile();
+      return { version: 1, activeProfileId: profile.id, profiles: [profile] };
+    }
+
+    function saveStore(){
+      const profile = activeProfile();
+      if (profile) profile.updatedAt = nowIso();
+      store.activeProfileId = activeId;
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+    }
+
+    function activeProfile(){ return store.profiles.find(p => p.id === activeId) || store.profiles[0]; }
+
+    function dayLabel(profile, day){
+      const d = Math.max(1, num(day, 1));
+      const daysPerMonth = Math.max(1, num(profile.daysPerMonth, 30));
+      const monthsPerYear = Math.max(1, num(profile.monthsPerYear, 12));
+      const zero = d - 1;
+      const y = Math.floor(zero / (daysPerMonth * monthsPerYear)) + 1;
+      const m = Math.floor((zero % (daysPerMonth * monthsPerYear)) / daysPerMonth) + 1;
+      const dd = (zero % daysPerMonth) + 1;
+      return `Tag ${d} (J${y} M${m} T${dd})`;
+    }
+
+    function moonPhase(moon, day){
+      const cycle = Math.max(1, num(moon.cycle, 28));
+      const pos = ((num(day, 1) - 1 + num(moon.offset, 0)) % cycle + cycle) % cycle;
+      const index = Math.floor((pos / cycle) * PHASES.length) % PHASES.length;
+      return `${moon.name}: ${PHASES[index]}`;
+    }
+
+    function readQuestDeadlines(){
+      try{
+        const raw = JSON.parse(localStorage.getItem(QUEST_KEY) || "{}");
+        return asArray(raw.quests).filter(q => q.deadlineDay != null && q.title).map(q => normalizeEntry({
+          id: `quest-${q.id}`,
+          type: "quest-deadline",
+          title: `Questfrist: ${q.title}`,
+          startDay: q.deadlineDay,
+          endDay: q.deadlineDay,
+          status: q.status || "offen",
+          linkedQuestId: q.id,
+          notes: q.deadlineText || q.consequences || ""
+        }));
+      } catch {
+        return [];
+      }
+    }
+
+    function combinedEntries(profile){
+      const holidayEntries = profile.holidays.map(h => normalizeEntry({ id: `holiday-${h.id}`, type: "holiday", title: h.name, startDay: h.day, endDay: h.day, notes: h.notes }));
+      return [...profile.entries, ...holidayEntries, ...readQuestDeadlines()].sort((a, b) => a.startDay - b.startDay || a.endDay - b.endDay || a.title.localeCompare(b.title, "de"));
+    }
+
+    function render(){
+      const p = activeProfile();
+      renderProfiles(p);
+      renderOverview(p);
+      renderFilters();
+      renderTimeline(p);
+    }
+
+    function renderProfiles(p){
+      $("profileList").innerHTML = store.profiles.map(profile => `
+        <button class="profile-btn ${profile.id === p.id ? "active" : ""}" type="button" data-profile="${escapeHtml(profile.id)}">
+          <b>${escapeHtml(profile.name)}</b>
+          <span class="small">${escapeHtml(profile.calendarName)} &bull; ${escapeHtml(dayLabel(profile, profile.currentDay))}</span>
+        </button>
+      `).join("");
+      document.querySelectorAll("[data-profile]").forEach(btn => btn.addEventListener("click", () => { activeId = btn.dataset.profile; saveStore(); render(); }));
+    }
+
+    function renderOverview(p){
+      $("overview").innerHTML = `
+        <h1>${escapeHtml(p.name)}</h1>
+        <div class="stat-grid">
+          <div class="stat"><span>Aktuell</span><b>${escapeHtml(dayLabel(p, p.currentDay))}</b></div>
+          <div class="stat"><span>Anzeige</span><b>${escapeHtml(p.displayDate || "Freies Datum")}</b></div>
+          <div class="stat"><span>Monde</span><b>${escapeHtml(p.moons.map(m => moonPhase(m, p.currentDay)).join(" / "))}</b></div>
+          <div class="stat"><span>Eintr&auml;ge</span><b>${combinedEntries(p).length}</b></div>
+        </div>
+        <div class="form-grid" style="margin:12px 0;">
+          <label class="field">Profilname<input id="profileName" class="select" value="${escapeHtml(p.name)}"></label>
+          <label class="field">Kalendername<input id="calendarName" class="select" value="${escapeHtml(p.calendarName)}"></label>
+          <label class="field">Kampagnentag<input id="currentDay" class="select" type="number" min="1" value="${escapeHtml(p.currentDay)}"></label>
+          <label class="field">Freies Datum<input id="displayDate" class="select" value="${escapeHtml(p.displayDate)}"></label>
+          <label class="field">Tage / Monat<input id="daysPerMonth" class="select" type="number" min="1" value="${escapeHtml(p.daysPerMonth)}"></label>
+          <label class="field">Monate / Jahr<input id="monthsPerYear" class="select" type="number" min="1" value="${escapeHtml(p.monthsPerYear)}"></label>
+          <label class="field">Mondzyklus<input id="moonCycle" class="select" type="number" min="1" value="${escapeHtml(p.moons[0]?.cycle || 28)}"></label>
+          <label class="field">Mond-Offset<input id="moonOffset" class="select" type="number" value="${escapeHtml(p.moons[0]?.offset || 0)}"></label>
+        </div>
+      `;
+      bindProfileField("profileName", v => p.name = v);
+      bindProfileField("calendarName", v => p.calendarName = v);
+      bindProfileField("displayDate", v => p.displayDate = v);
+      bindProfileField("currentDay", v => p.currentDay = Math.max(1, num(v, 1)), true);
+      bindProfileField("daysPerMonth", v => p.daysPerMonth = Math.max(1, num(v, 30)), true);
+      bindProfileField("monthsPerYear", v => p.monthsPerYear = Math.max(1, num(v, 12)), true);
+      bindProfileField("moonCycle", v => p.moons[0].cycle = Math.max(1, num(v, 28)), true);
+      bindProfileField("moonOffset", v => p.moons[0].offset = num(v, 0), true);
+    }
+
+    function bindProfileField(id, setter, rerender = false){
+      const el = $(id);
+      el?.addEventListener("input", () => {
+        setter(el.value);
+        saveStore();
+        if (rerender) render();
+        else renderProfiles(activeProfile());
+      });
+    }
+
+    function renderFilters(){
+      $("filters").innerHTML = TYPES.map(([id, label]) => `<button class="btn small ${filters.has(id) ? "active" : ""}" type="button" data-filter="${id}">${label}</button>`).join("");
+      document.querySelectorAll("[data-filter]").forEach(btn => btn.addEventListener("click", () => {
+        if (filters.has(btn.dataset.filter)) filters.delete(btn.dataset.filter);
+        else filters.add(btn.dataset.filter);
+        render();
+      }));
+    }
+
+    function renderTimeline(p){
+      const entries = combinedEntries(p).filter(e => filters.has(e.type));
+      $("timeline").innerHTML = entries.map(e => entryHtml(p, e)).join("") || `<div class="empty">Keine Eintr&auml;ge in diesem Filter.</div>`;
+      document.querySelectorAll("[data-edit-entry]").forEach(btn => btn.addEventListener("click", () => openEntry(btn.dataset.editEntry)));
+      document.querySelectorAll("[data-remove-entry]").forEach(btn => btn.addEventListener("click", () => removeEntry(btn.dataset.removeEntry)));
+    }
+
+    function typeLabel(type){ return TYPES.find(([id]) => id === type)?.[1] || type; }
+
+    function entryHtml(p, e){
+      const overdue = e.type === "deadline" || e.type === "quest-deadline" ? e.startDay < p.currentDay && !["erledigt", "abgewendet"].includes(e.status) : false;
+      const today = e.startDay <= p.currentDay && e.endDay >= p.currentDay;
+      const progress = e.type === "travel" && e.duration ? `${Math.min(100, Math.round(((p.currentDay - e.startDay + 1) / e.duration) * 100))}%` : `${e.progress || 0}%`;
+      const linked = e.linkedQuestId ? ` &bull; <a href="./quests.html?quest=${encodeURIComponent(e.linkedQuestId)}">Quest</a>` : "";
+      return `
+        <div class="entry ${overdue ? "overdue" : ""} ${today ? "today" : ""}">
+          <div class="entry-head">
+            <div>
+              <div class="entry-title">${escapeHtml(e.title)}</div>
+              <div class="entry-sub">${escapeHtml(typeLabel(e.type))} &bull; ${escapeHtml(dayLabel(p, e.startDay))}${e.endDay !== e.startDay ? ` bis ${escapeHtml(dayLabel(p, e.endDay))}` : ""}${linked}</div>
+            </div>
+            <div class="row-actions">
+              ${e.type.startsWith("quest") ? "" : `<button class="btn small" type="button" data-edit-entry="${escapeHtml(e.id)}">Bearbeiten</button><button class="btn small danger" type="button" data-remove-entry="${escapeHtml(e.id)}">L&ouml;schen</button>`}
+            </div>
+          </div>
+          <div class="pill-line">
+            ${e.from || e.to ? `<span class="pill-lite">${escapeHtml([e.from, e.to].filter(Boolean).join(" -> "))}</span>` : ""}
+            ${e.character || e.activity ? `<span class="pill-lite">${escapeHtml([e.character, e.activity].filter(Boolean).join(": "))}</span>` : ""}
+            ${e.type === "travel" || e.type === "downtime" ? `<span class="pill-lite">Fortschritt ${escapeHtml(progress)}</span>` : ""}
+            <span class="pill-lite">${escapeHtml(p.moons.map(m => moonPhase(m, e.startDay)).join(" / "))}</span>
+            ${overdue ? `<span class="pill-lite">ueberfaellig</span>` : ""}
+          </div>
+          ${e.notes || e.result ? `<div>${escapeHtml([e.notes, e.result].filter(Boolean).join(" / "))}</div>` : ""}
+        </div>
+      `;
+    }
+
+    function openEntry(idOrType){
+      const p = activeProfile();
+      let item = p.entries.find(e => e.id === idOrType);
+      if (!item && idOrType.startsWith("holiday-")){
+        const holiday = p.holidays.find(h => h.id === idOrType.replace(/^holiday-/, ""));
+        if (holiday) item = normalizeEntry({ id: `holiday-${holiday.id}`, type: "holiday", title: holiday.name, startDay: holiday.day, endDay: holiday.day, notes: holiday.notes });
+      }
+      if (!item) item = normalizeEntry({ type: idOrType, startDay: p.currentDay, endDay: p.currentDay, title: defaultTitle(idOrType) });
+      editing = item;
+      $("modalTitle").textContent = item.id && p.entries.some(e => e.id === item.id) ? "Eintrag bearbeiten" : "Eintrag hinzufuegen";
+      $("entryForm").innerHTML = entryFormHtml(item);
+      $("modal").classList.add("open");
+      $("entryForm").querySelector("[data-save]")?.addEventListener("click", saveEntryFromForm);
+      $("entryForm").querySelector("[data-cancel]")?.addEventListener("click", closeModal);
+    }
+
+    function defaultTitle(type){
+      if (type === "travel") return "Neue Reise";
+      if (type === "deadline") return "Neue Frist";
+      if (type === "downtime") return "Neue Downtime";
+      if (type === "holiday") return "Neuer Feiertag";
+      return "Neues Ereignis";
+    }
+
+    function entryFormHtml(e){
+      return `
+        <label class="field">Typ<select id="entryType" class="select">${TYPES.filter(([id]) => !id.startsWith("quest")).map(([id,label]) => `<option value="${id}" ${e.type === id ? "selected" : ""}>${label}</option>`).join("")}</select></label>
+        <label class="field">Titel<input id="entryTitle" class="select" value="${escapeHtml(e.title)}"></label>
+        <label class="field">Starttag<input id="entryStart" class="select" type="number" min="1" value="${escapeHtml(e.startDay)}"></label>
+        <label class="field">Endtag<input id="entryEnd" class="select" type="number" min="1" value="${escapeHtml(e.endDay)}"></label>
+        <label class="field">Status<input id="entryStatus" class="select" value="${escapeHtml(e.status)}"></label>
+        <label class="field">Start / Quelle<input id="entryFrom" class="select" value="${escapeHtml(e.from)}"></label>
+        <label class="field">Ziel<input id="entryTo" class="select" value="${escapeHtml(e.to)}"></label>
+        <label class="field">Dauer<input id="entryDuration" class="select" type="number" min="0" value="${escapeHtml(e.duration)}"></label>
+        <label class="field">Fortschritt %<input id="entryProgress" class="select" type="number" min="0" max="100" value="${escapeHtml(e.progress)}"></label>
+        <label class="field">Charakter<input id="entryCharacter" class="select" value="${escapeHtml(e.character)}"></label>
+        <label class="field">Aktivitaet<input id="entryActivity" class="select" value="${escapeHtml(e.activity)}"></label>
+        <label class="field wide">Ergebnis<textarea id="entryResult" class="select">${escapeHtml(e.result)}</textarea></label>
+        <label class="field wide">Notizen<textarea id="entryNotes" class="select">${escapeHtml(e.notes)}</textarea></label>
+        <div class="toolbar wide">
+          <button class="btn" type="button" data-save>Speichern</button>
+          <button class="btn" type="button" data-cancel>Abbrechen</button>
+        </div>
+      `;
+    }
+
+    function saveEntryFromForm(){
+      const p = activeProfile();
+      const saved = normalizeEntry({
+        ...editing,
+        type: $("entryType").value,
+        title: $("entryTitle").value,
+        startDay: $("entryStart").value,
+        endDay: $("entryEnd").value,
+        status: $("entryStatus").value,
+        from: $("entryFrom").value,
+        to: $("entryTo").value,
+        duration: $("entryDuration").value,
+        progress: $("entryProgress").value,
+        character: $("entryCharacter").value,
+        activity: $("entryActivity").value,
+        result: $("entryResult").value,
+        notes: $("entryNotes").value
+      });
+      if (saved.type === "holiday"){
+        const existingHolidayId = editing.id?.startsWith("holiday-") ? editing.id.replace(/^holiday-/, "") : "";
+        p.holidays = p.holidays.filter(h => h.id !== existingHolidayId);
+        p.entries = p.entries.filter(e => e.id !== editing.id);
+        p.holidays.push(normalizeHoliday({ name: saved.title, day: saved.startDay, notes: saved.notes }));
+      } else {
+        const index = p.entries.findIndex(e => e.id === saved.id);
+        if (index >= 0) p.entries[index] = saved;
+        else p.entries.push(saved);
+      }
+      saveStore();
+      closeModal();
+      render();
+    }
+
+    function closeModal(){
+      editing = null;
+      $("modal").classList.remove("open");
+    }
+
+    function removeEntry(id){
+      if (!confirm("Diesen Eintrag wirklich loeschen?")) return;
+      const p = activeProfile();
+      if (id.startsWith("holiday-")) p.holidays = p.holidays.filter(h => h.id !== id.replace(/^holiday-/, ""));
+      else p.entries = p.entries.filter(e => e.id !== id);
+      saveStore();
+      render();
+    }
+
+    function exportStore(){
+      const blob = new Blob([JSON.stringify(store, null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "kampagnenkalender.json";
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+
+    function importJson(file){
+      const reader = new FileReader();
+      reader.onload = () => {
+        try{
+          const raw = JSON.parse(String(reader.result || "{}"));
+          const profiles = asArray(raw.profiles).map(defaultProfile);
+          if (!profiles.length) throw new Error("No profiles");
+          store = { version: 1, activeProfileId: raw.activeProfileId || profiles[0].id, profiles };
+          activeId = store.activeProfileId;
+          saveStore();
+          render();
+        } catch {
+          alert("Import fehlgeschlagen: keine lesbaren Kalenderdaten.");
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    $("prevDay").addEventListener("click", () => { const p = activeProfile(); p.currentDay = Math.max(1, p.currentDay - 1); p.displayDate = dayLabel(p, p.currentDay); saveStore(); render(); });
+    $("nextDay").addEventListener("click", () => { const p = activeProfile(); p.currentDay += 1; p.displayDate = dayLabel(p, p.currentDay); saveStore(); render(); });
+    $("nextWeek").addEventListener("click", () => { const p = activeProfile(); p.currentDay += 7; p.displayDate = dayLabel(p, p.currentDay); saveStore(); render(); });
+    $("addTravel").addEventListener("click", () => openEntry("travel"));
+    $("addDeadline").addEventListener("click", () => openEntry("deadline"));
+    $("addDowntime").addEventListener("click", () => openEntry("downtime"));
+    $("addHoliday").addEventListener("click", () => openEntry("holiday"));
+    $("addEvent").addEventListener("click", () => openEntry("event"));
+    $("newProfile").addEventListener("click", () => { const p = defaultProfile({ name: "Neue Kampagne" }); store.profiles.unshift(p); activeId = p.id; saveStore(); render(); });
+    $("duplicateProfile").addEventListener("click", () => { const p = defaultProfile(JSON.parse(JSON.stringify(activeProfile()))); p.id = uid("calendar"); p.name = `${p.name} Kopie`; store.profiles.unshift(p); activeId = p.id; saveStore(); render(); });
+    $("exportBtn").addEventListener("click", exportStore);
+    $("importBtn").addEventListener("click", () => $("importFile").click());
+    $("importFile").addEventListener("change", () => { const [file] = $("importFile").files || []; if (file) importJson(file); $("importFile").value = ""; });
+    $("closeModal").addEventListener("click", closeModal);
+    $("modal").addEventListener("click", event => { if (event.target === $("modal")) closeModal(); });
+
+    render();
+  </script>
+</body>
+</html>

@@ -6,6 +6,35 @@
   <title>Spieler</title>
   <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
   <script src="../../theme.js?v=theme-20260422"></script>
+  <style>
+    .pc-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}
+    .pc-action{display:inline-flex;align-items:center;justify-content:center;padding:9px 11px;border:1px solid rgba(225,91,79,.35);border-radius:8px;background:rgba(225,91,79,.12);color:var(--text);text-decoration:none;cursor:pointer}
+    .pc-action:hover{border-color:rgba(225,91,79,.35);background:rgba(225,91,79,.12)}
+    .sheet-pages{display:grid;gap:18px}
+    .sheet-page{background:#fff;color:#1d1d1d;border-radius:8px;padding:24px;box-shadow:0 12px 34px rgba(0,0,0,.25)}
+    .sheet-page.sheet-template{width:min(100%,980px);min-height:1260px;margin:0 auto;padding:28px;background:#fff;color:#111}
+    .sheet-title{display:grid;grid-template-columns:2fr repeat(3,1fr);gap:8px;margin-bottom:10px}
+    .sheet-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:8px}
+    .sheet-box{border:1px solid #333;border-radius:6px;padding:8px;min-height:54px}
+    .sheet-box h3{font-size:11px;text-transform:uppercase;letter-spacing:0;margin:0 0 6px;color:#555}
+    .sheet-value{font-size:18px;font-weight:700}
+    .sheet-small{font-size:12px;line-height:1.35}
+    .sheet-lines{white-space:pre-wrap;font-size:12px;line-height:1.35}
+    .sheet-list{margin:0;padding-left:16px;font-size:12px;line-height:1.35}
+    .sheet-ability{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+    .sheet-muted{font-size:10px;color:#555;text-transform:uppercase}
+    .span-2{grid-column:span 2}.span-3{grid-column:span 3}.span-4{grid-column:span 4}.span-6{grid-column:span 6}.span-8{grid-column:span 8}.span-12{grid-column:span 12}
+    @media print{
+      body{background:#fff!important;color:#000!important}
+      .topbar,.sidebar,nav,.pc-actions,#nav,.site-nav{display:none!important}
+      .main,.content{max-width:none!important;margin:0!important;padding:0!important}
+      .sheet-pages{display:block}
+      .sheet-page{box-shadow:none;border-radius:0}
+      .sheet-page.sheet-template{width:auto;min-height:auto;padding:0;page-break-after:always}
+      .mini-box,.sheet-box{break-inside:avoid}
+      a{color:#000;text-decoration:none}
+    }
+  </style>
 </head>
 <body>
   <header class="topbar">
@@ -42,7 +71,11 @@
 
     const view = document.getElementById("view");
     const titleEl = document.getElementById("title");
-    const id = new URLSearchParams(location.search).get("id");
+    const params = new URLSearchParams(location.search);
+    const id = params.get("id");
+    const isPlayerView = params.get("view") === "player";
+    const isSheetView = params.get("sheet") === "1";
+    const includeGmFields = params.get("gm") === "1" && !isPlayerView;
 
     if (!id) {
       view.innerHTML = "<p>Fehlende SC-ID.</p>";
@@ -58,6 +91,12 @@
     }
 
     async function loadPc(){
+      if (params.get("draft") === "builder") {
+        try {
+          const draft = JSON.parse(sessionStorage.getItem("dnd.characterBuilder.sheet") || "null");
+          if (draft) return draft;
+        } catch {}
+      }
       try {
         return await fetchJson(`../../data/pcs/${encodeURIComponent(id)}.json`);
       } catch {}
@@ -83,9 +122,21 @@
       throw new Error("SC nicht gefunden");
     }
 
-    const [itemLookup, spellLookup] = await Promise.all([
+    const [itemLookup, spellLookup, classEntries, featEntries, spellEntries, itemEntries] = await Promise.all([
       loadLinkedLookup("../../data/items", normalizeItem),
-      loadLinkedLookup("../../data/spells", normalizeSpell)
+      loadLinkedLookup("../../data/spells", normalizeSpell),
+      loadIndex("../../data/classes/index.json")
+        .then(files => loadMany("../../data/classes", files))
+        .catch(() => []),
+      loadIndex("../../data/feats/index.json")
+        .then(files => loadMany("../../data/feats", files))
+        .catch(() => []),
+      loadIndex("../../data/spells/index.json")
+        .then(files => loadMany("../../data/spells", files))
+        .catch(() => []),
+      loadIndex("../../data/items/index.json")
+        .then(files => loadMany("../../data/items", files))
+        .catch(() => [])
     ]);
 
     titleEl.textContent = p.name || "SC";
@@ -113,6 +164,839 @@
         .replace(/&/g, " und ")
         .replace(/[^a-z0-9]+/g, "-")
         .replace(/^-+|-+$/g, "");
+    }
+
+    function textKey(value){
+      return slugFromText(value || "").toLowerCase();
+    }
+
+    const classLookup = new Map();
+    for (const entry of classEntries.filter(Boolean)) {
+      for (const key of [entry.id, entry.name, entry.original_name]) {
+        const slug = textKey(key);
+        if (slug && !classLookup.has(slug)) classLookup.set(slug, entry);
+      }
+    }
+    const selectedClassData = classLookup.get(textKey(p.class)) || classLookup.get(String(p.class || "").toLowerCase()) || null;
+    const sortedFeats = featEntries.filter(Boolean).sort((a, b) => displayName(a).localeCompare(displayName(b), "de"));
+    const sortedSpells = spellEntries.filter(Boolean).map(normalizeSpell).sort((a, b) => displayName(a).localeCompare(displayName(b), "de"));
+
+    function displayName(entry){
+      return entry?.name || entry?.original_name || entry?.id || "";
+    }
+    const itemCatalog = [...new Map(itemEntries
+      .filter(Boolean)
+      .map(normalizeItem)
+      .map(item => [item.id || item.name, item])).values()]
+      .sort((a, b) => String(a.name || a.id || "").localeCompare(String(b.name || b.id || ""), "de"));
+    const fullItemLookup = new Map();
+    for (const item of itemCatalog) {
+      for (const key of [item.id, item.name]) {
+        const slug = textKey(key);
+        if (slug && !fullItemLookup.has(slug)) fullItemLookup.set(slug, item);
+      }
+    }
+
+    function numberValue(value, fallback = 0){
+      const n = Number(value);
+      return Number.isFinite(n) ? n : fallback;
+    }
+
+    function formatNumber(value, digits = 2){
+      return new Intl.NumberFormat("de-DE", { maximumFractionDigits: digits }).format(numberValue(value));
+    }
+
+    function priceToGp(item){
+      const price = item?.price;
+      if (price && typeof price === "object") {
+        const amount = numberValue(price.amount);
+        const currency = String(price.currency || "GM").toUpperCase();
+        if (currency === "KM") return amount * 0.01;
+        if (currency === "SM") return amount * 0.1;
+        if (currency === "EM") return amount * 0.5;
+        if (currency === "PM") return amount * 10;
+        return amount;
+      }
+      const text = String(price ?? "");
+      const amount = numberValue((text.match(/[\d.,]+/) || ["0"])[0].replace(",", "."));
+      const upper = text.toUpperCase();
+      if (upper.includes("KM")) return amount * 0.01;
+      if (upper.includes("SM")) return amount * 0.1;
+      if (upper.includes("EM")) return amount * 0.5;
+      if (upper.includes("PM")) return amount * 10;
+      return amount;
+    }
+
+    function catalogStoreItem(item){
+      const normalized = normalizeItem(item);
+      return {
+        id: normalized.id || textKey(normalized.name || "item"),
+        name: normalized.name || normalized.id || "Gegenstand",
+        type: [normalized.type, normalized.item_category].filter(Boolean).join(" - ") || "Item",
+        rarity: normalized.rarity || "",
+        weight: numberValue(normalized.weight_value),
+        priceGp: priceToGp(normalized),
+        text: normalized.text || "",
+        tags: Array.isArray(normalized.tags) ? normalized.tags : [],
+        requiresAttunement: Boolean(normalized.requires_attunement || normalized.attunement),
+        consumable: Boolean(normalized.consumable),
+        equipSlot: normalized.equip_slot || normalized.equipSlot || "",
+        weapon: normalized.weapon || null,
+        armor: normalized.armor || null,
+        charges: normalized.charges || null,
+        uses: normalized.uses || null,
+        effects: Array.isArray(normalized.effects) ? normalized.effects : [],
+        modifiers: Array.isArray(normalized.modifiers) ? normalized.modifiers : [],
+        grantedActionIds: Array.isArray(normalized.granted_action_ids) ? normalized.granted_action_ids : [],
+        grantedSpellIds: Array.isArray(normalized.granted_spell_ids) ? normalized.granted_spell_ids : [],
+        source: normalized.source || ""
+      };
+    }
+
+    function readInventoryStore(){
+      try {
+        const saved = JSON.parse(localStorage.getItem("dnd.inventory.v1") || "null");
+        if (saved?.inventories?.length) return saved;
+      } catch {}
+      return { activeId: "", inventories: [] };
+    }
+
+    function writeInventoryStore(store, activeId = ""){
+      localStorage.setItem("dnd.inventory.v1", JSON.stringify({
+        activeId: activeId || store.activeId || "",
+        inventories: store.inventories || []
+      }));
+    }
+
+    function pcInventoryId(){
+      return `pc-${textKey(p.id || p.name || id)}`;
+    }
+
+    function pcInventory(store, create = false){
+      const pcId = String(p.id || id || "").toLowerCase();
+      const pcName = String(p.name || p.character?.identity?.name || "").toLowerCase();
+      let inv = store.inventories.find(entry =>
+        entry.ownerPcId && [String(entry.ownerPcId).toLowerCase(), textKey(entry.ownerPcId)].includes(pcId || textKey(p.id || id))
+      ) || store.inventories.find(entry =>
+        entry.ownerPcName && [String(entry.ownerPcName).toLowerCase(), textKey(entry.ownerPcName)].includes(pcName || textKey(p.name))
+      );
+      if (!inv && create) {
+        inv = {
+          id: pcInventoryId(),
+          name: `${p.name || "SC"} Inventar`,
+          isGroup: false,
+          ownerPcId: p.id || id || "",
+          ownerPcName: p.name || p.character?.identity?.name || "",
+          capacityKg: character?.equipment?.weights?.encumbered_at || Math.max(0, numberValue(ab.str, 10) * 7.5),
+          coins: { cp: 0, sp: 0, ep: 0, gp: 0, pp: 0 },
+          entries: [],
+          updatedAt: new Date().toISOString()
+        };
+        store.inventories.push(inv);
+      }
+      return inv || null;
+    }
+
+    function normalizeStoredEntry(entry){
+      const item = entry.item || {};
+      return {
+        id: entry.id || `line-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`,
+        item: {
+          id: item.id || textKey(item.name || "eigener-eintrag"),
+          name: item.name || item.id || "Gegenstand",
+          type: item.type || "Item",
+          rarity: item.rarity || "",
+          weight: numberValue(item.weight ?? item.weight_value),
+          priceGp: numberValue(item.priceGp),
+          text: item.text || "",
+          tags: Array.isArray(item.tags) ? item.tags : [],
+          requiresAttunement: Boolean(item.requiresAttunement),
+          consumable: Boolean(item.consumable),
+          equipSlot: item.equipSlot || item.equip_slot || "",
+          weapon: item.weapon || null,
+          armor: item.armor || null,
+          charges: item.charges || null,
+          uses: item.uses || null,
+          effects: Array.isArray(item.effects) ? item.effects : [],
+          modifiers: Array.isArray(item.modifiers) ? item.modifiers : [],
+          grantedActionIds: Array.isArray(item.grantedActionIds) ? item.grantedActionIds : [],
+          grantedSpellIds: Array.isArray(item.grantedSpellIds) ? item.grantedSpellIds : [],
+          source: item.source || ""
+        },
+        qty: Math.max(1, Math.round(numberValue(entry.qty || entry.quantity, 1))),
+        container: entry.container || "",
+        equipped: Boolean(entry.equipped),
+        attuned: Boolean(entry.attuned),
+        notes: entry.notes || ""
+      };
+    }
+
+    function inventoryEntryKey(value){
+      return textKey(value || "");
+    }
+
+    function ownEntryWeight(entry){
+      return numberValue(entry.qty, 1) * numberValue(entry.item?.weight ?? entry.item?.weight_value);
+    }
+
+    function likelyExternalContainer(name){
+      return /lager|truhe|kiste|wagen|pferd|reittier|gruppe|haus|bank|depot/i.test(String(name || ""));
+    }
+
+    function buildInventoryMetrics(entries, capacity = 0){
+      const rows = entries.map(normalizeStoredEntry);
+      const byContainerName = new Map();
+      for (const entry of rows) {
+        for (const key of [entry.item.id, entry.item.name].map(inventoryEntryKey).filter(Boolean)) {
+          if (!byContainerName.has(key)) byContainerName.set(key, entry);
+        }
+      }
+
+      const childrenByParentId = new Map();
+      const parentById = new Map();
+      for (const entry of rows) {
+        const parent = byContainerName.get(inventoryEntryKey(entry.container));
+        if (!parent || parent.id === entry.id) continue;
+        parentById.set(entry.id, parent);
+        if (!childrenByParentId.has(parent.id)) childrenByParentId.set(parent.id, []);
+        childrenByParentId.get(parent.id).push(entry);
+      }
+
+      const totalCache = new Map();
+      function totalWeight(entry, seen = new Set()){
+        if (!entry || seen.has(entry.id)) return 0;
+        if (totalCache.has(entry.id)) return totalCache.get(entry.id);
+        seen.add(entry.id);
+        const total = ownEntryWeight(entry) + (childrenByParentId.get(entry.id) || [])
+          .reduce((sum, child) => sum + totalWeight(child, seen), 0);
+        seen.delete(entry.id);
+        totalCache.set(entry.id, total);
+        return total;
+      }
+
+      function isCarried(entry, seen = new Set()){
+        if (!entry || seen.has(entry.id)) return false;
+        seen.add(entry.id);
+        const parent = parentById.get(entry.id);
+        if (parent) return isCarried(parent, seen);
+        if (!entry.container) return true;
+        return !likelyExternalContainer(entry.container);
+      }
+
+      const carriedWeight = rows
+        .filter(entry => isCarried(entry))
+        .reduce((sum, entry) => sum + ownEntryWeight(entry), 0);
+      const totalWeightAll = rows.reduce((sum, entry) => sum + ownEntryWeight(entry), 0);
+      const totalValue = rows.reduce((sum, entry) => sum + numberValue(entry.qty, 1) * numberValue(entry.item?.priceGp), 0);
+      const containers = rows
+        .filter(entry => (childrenByParentId.get(entry.id) || []).length)
+        .map(entry => ({
+          entry,
+          contents: childrenByParentId.get(entry.id) || [],
+          ownWeight: ownEntryWeight(entry),
+          totalWeight: totalWeight(entry),
+          carried: isCarried(entry)
+        }));
+      const loadPct = capacity > 0 ? Math.round((carriedWeight / capacity) * 100) : 0;
+
+      return {
+        rows,
+        childrenByParentId,
+        parentById,
+        containers,
+        carriedWeight,
+        totalWeightAll,
+        totalValue,
+        capacity,
+        loadPct,
+        overloaded: capacity > 0 && carriedWeight > capacity,
+        totalWeightForEntry: totalWeight
+      };
+    }
+
+    function bodySlots(){
+      const body = character?.body || character?.physiology || {};
+      return {
+        hands: Math.max(0, numberValue(body.hands ?? body.arms, 2)),
+        fingers: Math.max(0, numberValue(body.fingers, 10)),
+        attunement: Math.max(0, numberValue(character?.equipment?.attunement_slots, 3))
+      };
+    }
+
+    function equipmentProfile(entry){
+      const item = entry?.item || {};
+      const hay = [
+        item.id,
+        item.name,
+        item.type,
+        item.rarity,
+        item.weapon,
+        item.armor,
+        item.equipSlot,
+        item.equip_slot,
+        ...(item.tags || [])
+      ].join(" ").toLowerCase();
+      const name = String(item.name || "").toLowerCase();
+
+      const explicitSlot = textKey(item.equipSlot || item.equip_slot || "");
+      const explicitMap = {
+        ring: "finger",
+        finger: "finger",
+        armor: "armor",
+        ruestung: "armor",
+        shield: "shield",
+        schild: "shield",
+        head: "head",
+        kopf: "head",
+        neck: "neck",
+        hals: "neck",
+        cloak: "cloak",
+        feet: "feet",
+        hands: "hands",
+        waist: "waist",
+        back: "back",
+        body: "body",
+        hand: "held",
+        held: "held"
+      };
+      if (explicitMap[explicitSlot]) {
+        const slot = explicitMap[explicitSlot];
+        if (slot === "finger") return { slot, slotLabel: "Finger", slotCost: numberValue(entry.qty, 1), handCost: 0 };
+        if (slot === "held") return { slot, slotLabel: "Hand", slotCost: 0, handCost: numberValue(entry.qty, 1) };
+        return { slot, slotLabel: { armor: "Ruestung", shield: "Schild", head: "Kopf", neck: "Hals", cloak: "Umhang", feet: "Fuesse", hands: "Haende", waist: "Guertel", back: "Ruecken", body: "Kleidung" }[slot] || slot, slotCost: 1, handCost: slot === "shield" ? 1 : 0 };
+      }
+
+      if (/ring|reif/.test(hay)) return { slot: "finger", slotLabel: "Finger", slotCost: numberValue(entry.qty, 1), handCost: 0 };
+      if (/schild|shield/.test(hay)) return { slot: "shield", slotLabel: "Schild", slotCost: 1, handCost: 1 };
+      if (/rüstung|ruestung|armor|brustplatte|kettenhemd|lederruestung|lederrüstung|schuppenpanzer|platte/.test(hay)) return { slot: "armor", slotLabel: "Ruestung", slotCost: 1, handCost: 0 };
+      if (/helm|hut|diadem|krone|stirnreif|head/.test(hay)) return { slot: "head", slotLabel: "Kopf", slotCost: 1, handCost: 0 };
+      if (/amulett|amulet|anhänger|anhaenger|halskette|neck/.test(hay)) return { slot: "neck", slotLabel: "Hals", slotCost: 1, handCost: 0 };
+      if (/umhang|mantel|cloak|cape/.test(hay)) return { slot: "cloak", slotLabel: "Umhang", slotCost: 1, handCost: 0 };
+      if (/stiefel|schuhe|boots|feet/.test(hay)) return { slot: "feet", slotLabel: "Fuesse", slotCost: 1, handCost: 0 };
+      if (/handschuh|gauntlet|glove|hands/.test(hay)) return { slot: "hands", slotLabel: "Haende", slotCost: 1, handCost: 0 };
+      if (/gürtel|guertel|belt|waist/.test(hay)) return { slot: "waist", slotLabel: "Guertel", slotCost: 1, handCost: 0 };
+      if (/rucksack|backpack|koecher|köcher|quiver/.test(hay)) return { slot: "back", slotLabel: "Ruecken", slotCost: 1, handCost: 0 };
+      if (isWeaponItem(item) || /fokus|focus|stab|zauberstab|orb|kugel|kristall/.test(hay)) {
+        const twoHanded = /zweihändig|zweihandig|two-handed|2-hand|beidhändig|beidhaendig/.test(hay);
+        const versatile = /vielseitig|versatile/.test(hay);
+        const handCost = twoHanded ? 2 : 1;
+        return { slot: "held", slotLabel: versatile ? "Hand (vielseitig)" : "Hand", slotCost: 0, handCost: handCost * numberValue(entry.qty, 1) };
+      }
+      if (/robe|kleidung|clothes|gewand/.test(hay)) return { slot: "body", slotLabel: "Kleidung", slotCost: 1, handCost: 0 };
+      if (item.requiresAttunement || item.attunement) return { slot: "worn", slotLabel: "Getragen", slotCost: 1, handCost: 0 };
+      if (/werkzeug|tool|instrument|beutel|komponenten/.test(hay) || name) return { slot: "gear", slotLabel: "Ausrustung", slotCost: 0, handCost: 0 };
+      return { slot: "gear", slotLabel: "Ausrustung", slotCost: 0, handCost: 0 };
+    }
+
+    const EQUIP_SLOT_LIMITS = {
+      armor: 1,
+      shield: 1,
+      head: 1,
+      neck: 1,
+      cloak: 1,
+      feet: 1,
+      hands: 1,
+      waist: 1,
+      back: 1,
+      body: 1
+    };
+
+    function equipmentUsage(entries){
+      const slots = {};
+      let hands = 0;
+      let fingers = 0;
+      let attuned = 0;
+      const equippedEntries = entries.map(normalizeStoredEntry).filter(entry => entry.equipped);
+      for (const entry of equippedEntries) {
+        const profile = equipmentProfile(entry);
+        hands += profile.handCost || 0;
+        if (profile.slot === "finger") fingers += profile.slotCost || 0;
+        else slots[profile.slot] = (slots[profile.slot] || 0) + (profile.slotCost || 0);
+      }
+      for (const entry of entries.map(normalizeStoredEntry)) {
+        if (entry.attuned) attuned += 1;
+      }
+      return { slots, hands, fingers, attuned };
+    }
+
+    function validateEquipment(entries, targetId = ""){
+      const limits = bodySlots();
+      const usage = equipmentUsage(entries);
+      if (usage.hands > limits.hands) return `Zu viele Haende belegt (${usage.hands}/${limits.hands}).`;
+      if (usage.fingers > limits.fingers) return `Zu viele Finger/Ringe belegt (${usage.fingers}/${limits.fingers}).`;
+      if (usage.attuned > limits.attunement) return `Zu viele gebundene Gegenstaende (${usage.attuned}/${limits.attunement}).`;
+      for (const [slot, limit] of Object.entries(EQUIP_SLOT_LIMITS)) {
+        if ((usage.slots[slot] || 0) > limit) {
+          const labels = {
+            armor: "Ruestung",
+            shield: "Schild",
+            head: "Kopf",
+            neck: "Hals",
+            cloak: "Umhang",
+            feet: "Fuesse",
+            hands: "Handschuhe",
+            waist: "Guertel",
+            back: "Ruecken",
+            body: "Kleidung"
+          };
+          return `${labels[slot] || slot} ist bereits belegt (${usage.slots[slot]}/${limit}).`;
+        }
+      }
+      return "";
+    }
+
+    function savePcInventory(mutator){
+      const store = readInventoryStore();
+      const inv = pcInventory(store, true);
+      inv.entries = Array.isArray(inv.entries) ? inv.entries.map(normalizeStoredEntry) : [];
+      mutator(inv, store);
+      inv.ownerPcId = p.id || id || "";
+      inv.ownerPcName = p.name || p.character?.identity?.name || "";
+      inv.isGroup = false;
+      inv.updatedAt = new Date().toISOString();
+      writeInventoryStore(store, inv.id);
+      location.reload();
+    }
+
+    function itemFromLookup(ref){
+      if (!ref) return null;
+      const fullIdHit = fullItemLookup.get(String(ref.id || "").toLowerCase()) || fullItemLookup.get(textKey(ref.id));
+      if (fullIdHit) return fullIdHit;
+      const fullNameHit = fullItemLookup.get(textKey(ref.name || ref.id || ""));
+      if (fullNameHit) return fullNameHit;
+      const idHit = itemLookup.get(String(ref.id || "").toLowerCase()) || itemLookup.get(textKey(ref.id));
+      if (idHit) return idHit;
+      return itemLookup.get(textKey(ref.name || ref.id || ""));
+    }
+
+    function spellFromLookup(ref){
+      if (!ref) return null;
+      const idHit = spellLookup.get(String(ref.id || "").toLowerCase()) || spellLookup.get(textKey(ref.id));
+      if (idHit) return idHit;
+      return spellLookup.get(textKey(ref.name || ref.id || ""));
+    }
+
+    function readDynamicInventoryEntries(pc){
+      let saved = null;
+      try {
+        saved = JSON.parse(localStorage.getItem("dnd.inventory.v1") || "null");
+      } catch {}
+      if (!saved?.inventories?.length) return [];
+
+      const pcKeys = new Set([
+        pc.id,
+        pc.name,
+        pc.character?.identity?.name
+      ].filter(Boolean).flatMap(value => [String(value).toLowerCase(), textKey(value)]));
+
+      const rows = [];
+      for (const inv of saved.inventories) {
+        const ownerKeys = [
+          inv.ownerPcId,
+          inv.ownerPcName,
+          inv.name
+        ].filter(Boolean).flatMap(value => [String(value).toLowerCase(), textKey(value)]);
+        const inventoryBelongsToPc = ownerKeys.some(key => pcKeys.has(key));
+
+        for (const entry of inv.entries || []) {
+          const containerKeys = [entry.container].filter(Boolean).flatMap(value => [String(value).toLowerCase(), textKey(value)]);
+          if (!inventoryBelongsToPc && !containerKeys.some(key => pcKeys.has(key))) continue;
+
+          const catalogItem = itemFromLookup(entry.item || {});
+          const item = {
+            ...(catalogItem || {}),
+            ...(entry.item || {})
+          };
+          rows.push({
+            ...entry,
+            inventoryName: inv.name || "Inventar",
+            item,
+            qty: Math.max(1, Number(entry.qty || entry.quantity || 1))
+          });
+        }
+      }
+      return rows;
+    }
+
+    function isWeaponItem(item){
+      const hay = [
+        item?.type,
+        item?.item_category,
+        item?.category,
+        item?.weapon,
+        ...(item?.tags || [])
+      ].join(" ").toLowerCase();
+      return /\bweapon\b|waffe|kampf|nahkampf|fernkampf|bogen|armbrust|dolch|schwert|speer|stab|axt|hammer|keule|lanze/.test(hay);
+    }
+
+    function itemEffects(item){
+      return [
+        ...(Array.isArray(item?.effects) ? item.effects : []),
+        ...(Array.isArray(item?.modifiers) ? item.modifiers : [])
+      ].filter(Boolean).map(String);
+    }
+
+    function grantedActionLabels(entry){
+      const item = entry.item || {};
+      const labels = [
+        ...(Array.isArray(item.grantedActionIds) ? item.grantedActionIds : []),
+        ...(Array.isArray(item.granted_action_ids) ? item.granted_action_ids : [])
+      ];
+      const text = String(item.text || "");
+      if (/bonusaktion/i.test(text)) labels.push("Bonusaktion");
+      if (/\breaktion\b/i.test(text)) labels.push("Reaktion");
+      if (/\bals aktion\b|\baktion\b/i.test(text)) labels.push("Aktion");
+      if (item.uses?.max || item.charges?.max) labels.push("Nutzung / Ladung verwalten");
+      return [...new Set(labels.filter(Boolean))];
+    }
+
+    function grantedSpells(entry){
+      const item = entry.item || {};
+      const explicit = [
+        ...(Array.isArray(item.grantedSpellIds) ? item.grantedSpellIds : []),
+        ...(Array.isArray(item.granted_spell_ids) ? item.granted_spell_ids : [])
+      ].map(id => spellFromLookup({ id })).filter(Boolean);
+
+      const text = String(item.text || "").toLowerCase();
+      const mentioned = Array.from(spellLookup.values ? spellLookup.values() : [])
+        .filter(spell => spell?.name && text.includes(String(spell.name).toLowerCase()));
+
+      const byId = new Map([...explicit, ...mentioned].map(spell => [spell.id || spell.name, spell]));
+      return [...byId.values()];
+    }
+
+    function renderDynamicInventory(entries){
+      if (!entries.length) return "";
+      const capacity = character?.equipment?.weights?.encumbered_at || Math.max(0, numberValue(ab.str, 10) * 7.5);
+      const metrics = buildInventoryMetrics(entries, capacity);
+      return `
+        <div class="pillbar" style="margin-bottom:10px;">
+          <span class="pill"><b>Zeilen</b> ${escapeHtml(entries.length)}</span>
+          <span class="pill"><b>Gegenstaende</b> ${escapeHtml(entries.reduce((sum, entry) => sum + entry.qty, 0))}</span>
+          <span class="pill"><b>Mitgefuehrt</b> ${escapeHtml(formatNumber(metrics.carriedWeight))} / ${escapeHtml(formatNumber(metrics.capacity))} kg</span>
+          <span class="pill"><b>Gesamt</b> ${escapeHtml(formatNumber(metrics.totalWeightAll))} kg</span>
+        </div>
+        ${metrics.containers.length ? `
+          <div style="display:grid;gap:6px;margin-bottom:10px;">
+            ${metrics.containers.map(container => `
+              <div class="muted">
+                <b>${linkedRef("item", container.entry.item, { base: "../items/", lookup: itemLookup })}</b>:
+                ${escapeHtml(formatNumber(container.totalWeight))} kg inklusive ${escapeHtml(container.contents.length)} Inhalt${container.contents.length === 1 ? "" : "e"}
+              </div>
+            `).join("")}
+          </div>
+        ` : ""}
+        <div style="overflow:auto;">
+          <table style="width:100%;border-collapse:collapse;">
+            <thead>
+              <tr>
+                <th style="text-align:left;padding:6px;border-bottom:1px solid rgba(255,255,255,.12);">Gegenstand</th>
+                <th style="text-align:right;padding:6px;border-bottom:1px solid rgba(255,255,255,.12);">Anzahl</th>
+                <th style="text-align:left;padding:6px;border-bottom:1px solid rgba(255,255,255,.12);">Status</th>
+                <th style="text-align:left;padding:6px;border-bottom:1px solid rgba(255,255,255,.12);">Ort</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${entries.map(entry => `
+                <tr>
+                  <td style="padding:6px;border-bottom:1px solid rgba(255,255,255,.06);">${linkedRef("item", entry.item, { base: "../items/", lookup: itemLookup })}</td>
+                  <td style="padding:6px;text-align:right;border-bottom:1px solid rgba(255,255,255,.06);">${escapeHtml(entry.qty)}</td>
+                  <td style="padding:6px;border-bottom:1px solid rgba(255,255,255,.06);">${[entry.equipped ? "getragen" : "", entry.attuned ? "gebunden" : ""].filter(Boolean).join(", ") || "im Besitz"}</td>
+                  <td style="padding:6px;border-bottom:1px solid rgba(255,255,255,.06);">${escapeHtml(entry.container || entry.inventoryName || "")}</td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+      `;
+    }
+
+    function renderDynamicWeapons(entries){
+      const weapons = entries.filter(entry => entry.equipped && isWeaponItem(entry.item));
+      if (!weapons.length) return "";
+      return weapons.map(entry => `
+        <div class="mini-box" style="background:rgba(255,255,255,.025);">
+          <div class="mini-box-title">${linkedRef("item", entry.item, { base: "../items/", lookup: itemLookup })}</div>
+          <div class="mini-box-text">
+            <div class="pillbar">
+              <span class="pill"><b>Anzahl</b> ${escapeHtml(entry.qty)}</span>
+              ${entry.item?.tags?.length ? `<span class="pill"><b>Tags</b> ${escapeHtml(entry.item.tags.slice(0, 5).join(", "))}</span>` : ""}
+            </div>
+            ${entry.item?.text ? `<div style="margin-top:8px;">${renderMarkdownText(entry.item.text, { lookups: { spell: spellLookup, item: itemLookup }, inlineOnly: true })}</div>` : ""}
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderDynamicActions(entries){
+      const activeEntries = entries.filter(entry => entry.equipped || entry.attuned);
+      const rows = activeEntries.map(entry => ({
+        entry,
+        actions: grantedActionLabels(entry),
+        effects: itemEffects(entry.item)
+      })).filter(row => row.actions.length || row.effects.length);
+      if (!rows.length) return "";
+      return rows.map(row => `
+        <div class="mini-box" style="background:rgba(255,255,255,.025);">
+          <div class="mini-box-title">${linkedRef("item", row.entry.item, { base: "../items/", lookup: itemLookup })}</div>
+          <div class="mini-box-text">
+            ${row.actions.length ? `<div><b>Freigeschaltet:</b> ${escapeHtml(row.actions.join(", "))}</div>` : ""}
+            ${row.effects.length ? `<ul>${row.effects.map(effect => `<li>${renderMarkdownText(effect, { lookups: { spell: spellLookup, item: itemLookup }, inlineOnly: true })}</li>`).join("")}</ul>` : ""}
+            ${row.entry.item?.text ? `<div class="muted">${renderMarkdownText(row.entry.item.text, { lookups: { spell: spellLookup, item: itemLookup }, inlineOnly: true })}</div>` : ""}
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderDynamicSpells(entries){
+      const rows = entries
+        .filter(entry => entry.equipped || entry.attuned)
+        .map(entry => ({ entry, spells: grantedSpells(entry) }))
+        .filter(row => row.spells.length);
+      if (!rows.length) return "";
+      return rows.map(row => `
+        <div style="margin-bottom:10px;">
+          <div><b>${linkedRef("item", row.entry.item, { base: "../items/", lookup: itemLookup })}</b></div>
+          <ul>${row.spells.map(spell => `<li>${linkedRef("spell", spell, { base: "../zauber/", lookup: spellLookup })}</li>`).join("")}</ul>
+        </div>
+      `).join("");
+    }
+
+    function renderCharacterInventoryEditor(){
+      const store = readInventoryStore();
+      const inv = pcInventory(store, false);
+      const entries = (inv?.entries || []).map(normalizeStoredEntry);
+      const capacity = numberValue(inv?.capacityKg, character?.equipment?.weights?.encumbered_at || Math.max(0, numberValue(ab.str, 10) * 7.5));
+      const metrics = buildInventoryMetrics(entries, capacity);
+      const usage = equipmentUsage(entries);
+      const slotLimits = bodySlots();
+      const loadClass = metrics.overloaded ? "status-warn" : "";
+
+      return `
+        <div class="mini-box" id="characterInventoryEditor" style="margin-top:12px;">
+          <div class="mini-box-title">Inventar bearbeiten</div>
+          <div class="mini-box-text">
+            <div class="pillbar" style="margin-bottom:10px;">
+              <span class="pill"><b>Belastung</b> <span class="${loadClass}">${escapeHtml(formatNumber(metrics.carriedWeight))} kg</span></span>
+              <span class="pill"><b>Tragkraft</b> ${escapeHtml(formatNumber(capacity))} kg</span>
+              <span class="pill"><b>Auslastung</b> ${escapeHtml(metrics.loadPct)}%</span>
+              <span class="pill"><b>Gesamtgewicht</b> ${escapeHtml(formatNumber(metrics.totalWeightAll))} kg</span>
+              <span class="pill"><b>Wert</b> ${escapeHtml(formatNumber(metrics.totalValue))} GM</span>
+              <span class="pill"><b>Haende</b> ${escapeHtml(formatNumber(usage.hands, 0))}/${escapeHtml(slotLimits.hands)}</span>
+              <span class="pill"><b>Finger</b> ${escapeHtml(formatNumber(usage.fingers, 0))}/${escapeHtml(slotLimits.fingers)}</span>
+              <span class="pill"><b>Bindung</b> ${escapeHtml(entries.filter(entry => entry.attuned).length)}/${escapeHtml(slotLimits.attunement)}</span>
+            </div>
+            ${metrics.overloaded ? `<p class="status-warn" style="margin-top:0;">Die mitgefuehrte Last liegt ueber der aktuellen Tragkraft.</p>` : ""}
+            ${metrics.containers.length ? `
+              <div style="display:grid;gap:6px;margin-bottom:10px;">
+                ${metrics.containers.map(container => `
+                  <div class="muted">
+                    <b>${linkedRef("item", container.entry.item, { base: "../items/", lookup: itemLookup })}</b>
+                    traegt ${escapeHtml(formatNumber(container.totalWeight))} kg
+                    (${escapeHtml(formatNumber(container.ownWeight))} kg Eigengewicht, ${escapeHtml(formatNumber(container.totalWeight - container.ownWeight))} kg Inhalt).
+                  </div>
+                `).join("")}
+              </div>
+            ` : ""}
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;align-items:end;margin-bottom:10px;">
+              <label style="display:grid;gap:5px;color:var(--muted);font-size:12px;">Suche
+                <input id="pcInvSearch" class="select" type="search" placeholder="Gegenstand suchen"/>
+              </label>
+              <label style="display:grid;gap:5px;color:var(--muted);font-size:12px;">Katalog
+                <select id="pcInvItem" class="select"></select>
+              </label>
+              <label style="display:grid;gap:5px;color:var(--muted);font-size:12px;">Anzahl
+                <input id="pcInvQty" class="select" type="number" min="1" max="9999" value="1"/>
+              </label>
+              <label style="display:grid;gap:5px;color:var(--muted);font-size:12px;">Container
+                <input id="pcInvContainer" class="select" placeholder="Rucksack, Gurt, Beutel"/>
+              </label>
+            </div>
+
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;">
+              <button id="pcInvAdd" class="select" type="button">Hinzufuegen</button>
+              <button id="pcInvSeed" class="select" type="button">Statische Ausruestung uebernehmen</button>
+              <button id="pcInvCapacity" class="select" type="button">Tragkraft aktualisieren</button>
+            </div>
+
+            ${entries.length ? `
+              <div style="overflow:auto;">
+                <table style="width:100%;border-collapse:collapse;min-width:760px;">
+                  <thead>
+                    <tr>
+                      <th style="text-align:left;padding:6px;border-bottom:1px solid rgba(255,255,255,.12);">Gegenstand</th>
+                      <th style="text-align:left;padding:6px;border-bottom:1px solid rgba(255,255,255,.12);">Anzahl</th>
+                      <th style="text-align:left;padding:6px;border-bottom:1px solid rgba(255,255,255,.12);">Container</th>
+                      <th style="text-align:left;padding:6px;border-bottom:1px solid rgba(255,255,255,.12);">Slot</th>
+                      <th style="text-align:left;padding:6px;border-bottom:1px solid rgba(255,255,255,.12);">Status</th>
+                      <th style="text-align:right;padding:6px;border-bottom:1px solid rgba(255,255,255,.12);">Gewicht</th>
+                      <th style="text-align:right;padding:6px;border-bottom:1px solid rgba(255,255,255,.12);">Mit Inhalt</th>
+                      <th style="padding:6px;border-bottom:1px solid rgba(255,255,255,.12);"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${entries.map(entry => `
+                      <tr data-pc-inv-entry="${escapeHtml(entry.id)}">
+                        <td style="padding:6px;border-bottom:1px solid rgba(255,255,255,.06);">${linkedRef("item", entry.item, { base: "../items/", lookup: itemLookup })}</td>
+                        <td style="padding:6px;border-bottom:1px solid rgba(255,255,255,.06);">
+                          <button class="select" type="button" data-pc-dec style="padding:5px 8px;">-</button>
+                          <input class="select" data-pc-qty type="number" min="1" value="${escapeHtml(entry.qty)}" style="width:64px;padding:6px;"/>
+                          <button class="select" type="button" data-pc-inc style="padding:5px 8px;">+</button>
+                        </td>
+                        <td style="padding:6px;border-bottom:1px solid rgba(255,255,255,.06);"><input class="select" data-pc-container value="${escapeHtml(entry.container)}" style="min-width:130px;padding:6px;"/></td>
+                        <td style="padding:6px;border-bottom:1px solid rgba(255,255,255,.06);">${escapeHtml(equipmentProfile(entry).slotLabel)}</td>
+                        <td style="padding:6px;border-bottom:1px solid rgba(255,255,255,.06);">
+                          <label class="muted"><input data-pc-equipped type="checkbox" ${entry.equipped ? "checked" : ""}/> getragen</label><br>
+                          <label class="muted"><input data-pc-attuned type="checkbox" ${entry.attuned ? "checked" : ""}/> gebunden</label>
+                        </td>
+                        <td style="padding:6px;text-align:right;border-bottom:1px solid rgba(255,255,255,.06);">${escapeHtml(formatNumber(ownEntryWeight(entry)))} kg</td>
+                        <td style="padding:6px;text-align:right;border-bottom:1px solid rgba(255,255,255,.06);">${escapeHtml(formatNumber(metrics.totalWeightForEntry(entry)))} kg</td>
+                        <td style="padding:6px;text-align:right;border-bottom:1px solid rgba(255,255,255,.06);"><button class="select" type="button" data-pc-remove>Entfernen</button></td>
+                      </tr>
+                    `).join("")}
+                  </tbody>
+                </table>
+              </div>
+            ` : `<p class="muted">Noch keine dynamischen Gegenstaende fuer diesen Charakter.</p>`}
+          </div>
+        </div>
+      `;
+    }
+
+    function bindCharacterInventoryEditor(){
+      const root = document.getElementById("characterInventoryEditor");
+      if (!root) return;
+
+      function optionText(item){
+        return [item.name || item.id || "Gegenstand", item.item_category || item.type, item.rarity].filter(Boolean).join(" - ");
+      }
+
+      function renderOptions(){
+        const q = (document.getElementById("pcInvSearch")?.value || "").trim().toLowerCase();
+        const select = document.getElementById("pcInvItem");
+        if (!select) return;
+        const pool = itemCatalog
+          .filter(item => !q || [item.id, item.name, item.item_category, item.type, item.rarity, item.text, ...(item.tags || [])].join(" ").toLowerCase().includes(q))
+          .slice(0, 180);
+        select.innerHTML = pool
+          .map(item => `<option value="${escapeHtml(item.id || item.name || "")}">${escapeHtml(optionText(item))}</option>`)
+          .join("") || `<option value="">Keine Treffer</option>`;
+      }
+
+      renderOptions();
+      document.getElementById("pcInvSearch")?.addEventListener("input", renderOptions);
+      document.getElementById("pcInvAdd")?.addEventListener("click", () => {
+        const select = document.getElementById("pcInvItem");
+        const item = itemCatalog.find(entry => (entry.id || entry.name || "") === select?.value);
+        if (!item) return;
+        savePcInventory(inv => {
+          const entry = normalizeStoredEntry({
+            item: catalogStoreItem(item),
+            qty: document.getElementById("pcInvQty")?.value || 1,
+            container: document.getElementById("pcInvContainer")?.value || ""
+          });
+          const existing = inv.entries.find(row => row.item.id === entry.item.id && row.container === entry.container && !row.notes);
+          if (existing) existing.qty += entry.qty;
+          else inv.entries.push(entry);
+        });
+      });
+
+      document.getElementById("pcInvSeed")?.addEventListener("click", () => {
+        savePcInventory(inv => {
+          const staticItems = [
+            ...(p.items || []),
+            ...(character?.equipment?.items || [])
+          ];
+          for (const entry of staticItems) {
+            const itemRef = entry.item_ref || entry.item || entry;
+            const catalog = itemFromLookup(itemRef);
+            const name = entry.name || itemRef.name || itemRef.id || "Gegenstand";
+            const item = catalog ? catalogStoreItem(catalog) : {
+              id: itemRef.id || textKey(name),
+              name,
+              type: "SC-Eintrag",
+              rarity: "",
+              weight: numberValue(entry.weight),
+              priceGp: 0,
+              text: "",
+              tags: [],
+              requiresAttunement: false,
+              consumable: false
+            };
+            const line = normalizeStoredEntry({
+              item,
+              qty: entry.quantity || entry.qty || 1,
+              container: entry.container || ""
+            });
+            const existing = inv.entries.find(row => row.item.id === line.item.id && row.container === line.container && !row.notes);
+            if (existing) existing.qty += line.qty;
+            else inv.entries.push(line);
+          }
+        });
+      });
+
+      document.getElementById("pcInvCapacity")?.addEventListener("click", () => {
+        savePcInventory(inv => {
+          inv.capacityKg = character?.equipment?.weights?.encumbered_at || Math.max(0, numberValue(ab.str, 10) * 7.5);
+        });
+      });
+
+      for (const tr of root.querySelectorAll("[data-pc-inv-entry]")) {
+        const lineId = tr.dataset.pcInvEntry;
+        const mutate = updater => savePcInventory(inv => {
+          const entry = inv.entries.find(row => row.id === lineId);
+          if (!entry) return;
+          const before = JSON.parse(JSON.stringify(entry));
+          updater(entry, inv);
+          const error = validateEquipment(inv.entries, lineId);
+          if (error) {
+            Object.assign(entry, before);
+            window.alert(error);
+          }
+        });
+        tr.querySelector("[data-pc-dec]")?.addEventListener("click", () => savePcInventory(inv => {
+          const entry = inv.entries.find(row => row.id === lineId);
+          if (!entry) return;
+          if (entry.item?.consumable && Number(entry.qty || 1) <= 1) {
+            inv.entries = inv.entries.filter(row => row.id !== lineId);
+          } else {
+            entry.qty = Math.max(1, Number(entry.qty || 1) - 1);
+          }
+        }));
+        tr.querySelector("[data-pc-inc]")?.addEventListener("click", () => mutate(entry => { entry.qty = Number(entry.qty || 1) + 1; }));
+        tr.querySelector("[data-pc-qty]")?.addEventListener("change", event => mutate(entry => { entry.qty = Math.max(1, Math.round(numberValue(event.target.value, 1))); }));
+        tr.querySelector("[data-pc-container]")?.addEventListener("change", event => mutate(entry => { entry.container = event.target.value.trim(); }));
+        tr.querySelector("[data-pc-equipped]")?.addEventListener("change", event => {
+          const checked = event.target.checked;
+          savePcInventory(inv => {
+            const entry = inv.entries.find(row => row.id === lineId);
+            if (!entry) return;
+            entry.equipped = checked;
+            const error = validateEquipment(inv.entries, lineId);
+            if (error) {
+              entry.equipped = false;
+              window.alert(error);
+            }
+          });
+        });
+        tr.querySelector("[data-pc-attuned]")?.addEventListener("change", event => {
+          const checked = event.target.checked;
+          savePcInventory(inv => {
+            const entry = inv.entries.find(row => row.id === lineId);
+            if (!entry) return;
+            entry.attuned = checked;
+            const error = validateEquipment(inv.entries, lineId);
+            if (error) {
+              entry.attuned = false;
+              window.alert(error);
+            }
+          });
+        });
+        tr.querySelector("[data-pc-remove]")?.addEventListener("click", () => savePcInventory(inv => {
+          inv.entries = inv.entries.filter(entry => entry.id !== lineId);
+        }));
+      }
     }
 
     function linkedRef(kind, ref, { base, lookup }){
@@ -400,6 +1284,950 @@
       </div>`;
     }
 
+    function resourceStateKey(){
+      return `dnd.resources.v1.${p.id || textKey(p.name || id)}`;
+    }
+
+    function readResourceState(){
+      try {
+        const saved = JSON.parse(localStorage.getItem(resourceStateKey()) || "null");
+        if (saved && typeof saved === "object") return saved;
+      } catch {}
+      return { resources: {} };
+    }
+
+    function writeResourceState(state){
+      try {
+        localStorage.setItem(resourceStateKey(), JSON.stringify({
+          ...state,
+          updatedAt: new Date().toISOString()
+        }));
+      } catch {}
+    }
+
+    function firstNumber(value){
+      if (value == null) return null;
+      if (typeof value === "number" && Number.isFinite(value)) return value;
+      const match = String(value).match(/-?\d+/);
+      return match ? Number(match[0]) : null;
+    }
+
+    function recoveryLabel(recovery){
+      if (typeof recovery === "string") return recovery.trim();
+      if (recovery?.short_rest) return "Kurze Rast";
+      if (recovery?.long_rest) return "Lange Rast";
+      if (recovery?.recharge) return String(recovery.recharge);
+      return "";
+    }
+
+    function recoversOnRest(resource, kind){
+      if (resource.type === "hit_dice") return kind === "long";
+      const recovery = resource.recovery || {};
+      if (typeof recovery === "string") {
+        const text = recovery.toLowerCase();
+        if (kind === "short") return /kurze rast|short rest/.test(text);
+        return /lange rast|long rest|morgen|dawn|tagesanbruch/.test(text) || /kurze rast|short rest/.test(text);
+      }
+      if (kind === "short") return Boolean(recovery.short_rest);
+      return Boolean(recovery.long_rest || recovery.short_rest || /long rest|lange rast|dawn|tagesanbruch/i.test(String(recovery.recharge || "")));
+    }
+
+    function resourceId(...parts){
+      return parts.filter(Boolean).map(textKey).join(".");
+    }
+
+    function normalizeResource(resource, state){
+      const saved = state.resources?.[resource.id];
+      const max = Math.max(0, Number(resource.max || 0));
+      const current = saved?.current != null
+        ? Math.max(0, Math.min(max, Number(saved.current)))
+        : max;
+      return { ...resource, max, current };
+    }
+
+    function parseHitDice(value){
+      const match = String(value || "").trim().match(/(\d+)\s*[dDwW]\s*(\d+)/);
+      if (!match) return null;
+      const max = Number(match[1]);
+      const die = Number(match[2]);
+      if (!Number.isFinite(max) || !Number.isFinite(die) || max <= 0 || die <= 0) return null;
+      return { max, die, label: `${max}W${die}` };
+    }
+
+    function collectHitDiceResource(state){
+      const hitDice = parseHitDice(p.hit_dice || character?.combat?.hp?.hit_dice || character?.combat?.hp?.hitDice);
+      if (!hitDice) return [];
+      const recoveryAmount = Math.max(1, Math.floor(hitDice.max / 2));
+      return [normalizeResource({
+        id: resourceId("hit-dice", hitDice.die),
+        type: "hit_dice",
+        name: `Trefferwuerfel W${hitDice.die}`,
+        max: hitDice.max,
+        recovery: { long_rest: true },
+        recoveryAmount,
+        source: hitDice.label
+      }, state)];
+    }
+
+    function collectSpellSlotResources(spellcasting, state){
+      const slots = spellcasting?.spell_slots || {};
+      return Object.entries(slots).map(([key, slot]) => {
+        const level = Number(String(key).match(/\d+/)?.[0] || 0);
+        const max = firstNumber(slot?.max ?? slot) || 0;
+        if (!level || !max) return null;
+        return normalizeResource({
+          id: resourceId("spell-slot", level),
+          type: "spell_slot",
+          name: `Zauberplatz Grad ${level}`,
+          max,
+          recovery: { long_rest: true },
+          source: "Zauberwirken"
+        }, state);
+      }).filter(Boolean);
+    }
+
+    function collectFeatureResources(features, state){
+      const resources = [];
+      const visit = (value, path = []) => {
+        if (!value) return;
+        if (Array.isArray(value)) {
+          value.forEach((entry, index) => visit(entry, [...path, index]));
+          return;
+        }
+        if (!isPlainObject(value)) return;
+
+        const max = firstNumber(value.uses?.max ?? value.uses ?? value.charges?.max ?? value.charges);
+        const name = value.name || value.source || value.type || "";
+        if (max && name) {
+          resources.push(normalizeResource({
+            id: resourceId("feature", ...path, name),
+            type: "feature",
+            name,
+            max,
+            recovery: value.recovery || {},
+            source: path.filter(part => typeof part === "string").join(" / ")
+          }, state));
+        }
+
+        for (const [key, child] of Object.entries(value)) {
+          if (["uses", "charges", "recovery", "effects", "description", "text"].includes(key)) continue;
+          if (isPlainObject(child) || Array.isArray(child)) visit(child, [...path, key]);
+        }
+      };
+      visit(features, ["Features"]);
+      return resources;
+    }
+
+    function collectSpecialSpellResources(spellcasting, state){
+      const resources = [];
+      for (const section of spellcasting?.special_sources || []) {
+        for (const spell of section?.spells || []) {
+          const max = firstNumber(spell.uses);
+          if (!max) continue;
+          resources.push(normalizeResource({
+            id: resourceId("special-spell", section.source, spell.id || spell.name),
+            type: "feature",
+            name: spell.name || spell.id || "Zauber",
+            max,
+            recovery: spell.recovery || {},
+            source: section.source || "Besondere Quelle"
+          }, state));
+        }
+      }
+      return resources;
+    }
+
+    function collectItemResources(entries, state){
+      return entries.flatMap(entry => {
+        const item = entry.item || {};
+        const chargeMax = firstNumber(item.charges?.max ?? item.charges);
+        const useMax = firstNumber(item.uses?.max ?? item.uses);
+        const hasChargeOrUseResource = Boolean(chargeMax || useMax);
+        const candidates = [
+          { kind: "Ladungen", value: chargeMax, recovery: item.charges?.recovery || item.charges?.recharge || item.recovery || {} },
+          { kind: "Anwendungen", value: useMax, recovery: item.uses?.recovery || item.uses?.recharge || item.recovery || {} }
+        ];
+        const resources = candidates.map(candidate => {
+          const max = firstNumber(candidate.value);
+          if (!max) return null;
+          return normalizeResource({
+            id: resourceId("item", entry.id || item.id || item.name, candidate.kind),
+            type: "item",
+            name: `${item.name || item.id || "Gegenstand"}: ${candidate.kind}`,
+            max,
+            recovery: candidate.recovery,
+            source: entry.inventoryName || "Inventar"
+          }, state);
+        }).filter(Boolean);
+        if (item.consumable && !hasChargeOrUseResource) {
+          const qty = Math.max(0, Number(entry.qty || entry.quantity || 0));
+          const id = resourceId("consumable", entry.id || item.id || item.name);
+          const saved = state.resources?.[id] || {};
+          const max = Math.max(qty, Number(saved.max || 0), 1);
+          resources.push({
+            id,
+            type: "item",
+            resourceKind: "consumable",
+            entryId: entry.id,
+            name: `${item.name || item.id || "Gegenstand"}: Vorrat`,
+            max,
+            current: Math.min(qty, max),
+            recovery: {},
+            source: entry.inventoryName || "Inventar"
+          });
+        }
+        return resources;
+      });
+    }
+
+    function collectResources({ spellcasting, features, inventoryEntries }){
+      const state = readResourceState();
+      const byId = new Map([
+        ...collectSpellSlotResources(spellcasting, state),
+        ...collectFeatureResources(features, state),
+        ...collectSpecialSpellResources(spellcasting, state),
+        ...collectHitDiceResource(state),
+        ...collectItemResources(inventoryEntries, state)
+      ].map(resource => [resource.id, resource]));
+      const typeOrder = { spell_slot: 1, feature: 2, hit_dice: 3, item: 4 };
+      return [...byId.values()].sort((a, b) =>
+        (typeOrder[a.type] || 99) - (typeOrder[b.type] || 99) ||
+        String(a.name || "").localeCompare(String(b.name || ""), "de")
+      );
+    }
+
+    function resourceDots(resource){
+      return Array.from({ length: resource.max }, (_, index) =>
+        `<span title="${escapeHtml(index < resource.current ? "verfügbar" : "verbraucht")}" style="width:10px;height:10px;border-radius:999px;border:1px solid var(--rule);background:${index < resource.current ? "var(--accent)" : "transparent"};display:inline-block;"></span>`
+      ).join("");
+    }
+
+    function renderResourceTracker(resources){
+      if (!resources.length) return "";
+      const groups = [
+        ["spell_slot", "Zauberplätze"],
+        ["feature", "Fähigkeiten"],
+        ["hit_dice", "Trefferwürfel"],
+        ["item", "Gegenstände"]
+      ].map(([type, label]) => [label, resources.filter(resource => resource.type === type)])
+        .filter(([, rows]) => rows.length);
+
+      return `
+        <div class="mini-box" id="resourceTracker" style="margin-top:12px;">
+          <div class="mini-box-title">Ressourcen</div>
+          <div class="mini-box-text">
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;">
+              <button class="select" type="button" data-resource-rest="short">Kurze Rast</button>
+              <button class="select" type="button" data-resource-rest="long">Lange Rast</button>
+            </div>
+            ${groups.map(([label, rows]) => `
+              <div style="margin-top:10px;">
+                <b>${escapeHtml(label)}</b>
+                <div style="display:grid;gap:8px;margin-top:6px;">
+                  ${rows.map(resource => `
+                    <div style="display:grid;grid-template-columns:minmax(160px,1fr) auto auto;gap:8px;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);padding-bottom:6px;">
+                      <div>
+                        <div><b>${escapeHtml(resource.name)}</b></div>
+                        <div class="muted">${[resource.source, resource.type === "hit_dice" ? `Lange Rast: +${resource.recoveryAmount}` : recoveryLabel(resource.recovery)].filter(Boolean).map(escapeHtml).join(" | ")}</div>
+                      </div>
+                      <div style="display:flex;gap:4px;align-items:center;">${resourceDots(resource)}</div>
+                      <div style="display:flex;gap:4px;align-items:center;">
+                        <button class="select" style="padding:5px 8px;" type="button" data-resource-adjust="${escapeHtml(resource.id)}" data-delta="-1">-</button>
+                        <span style="min-width:42px;text-align:center;">${escapeHtml(resource.current)}/${escapeHtml(resource.max)}</span>
+                        <button class="select" style="padding:5px 8px;" type="button" data-resource-adjust="${escapeHtml(resource.id)}" data-delta="1">+</button>
+                      </div>
+                    </div>
+                  `).join("")}
+                </div>
+              </div>
+            `).join("")}
+          </div>
+        </div>
+      `;
+    }
+
+    function bindResourceTracker(resources){
+      if (!resources.length) return;
+      const state = readResourceState();
+      state.resources = state.resources || {};
+      for (const resource of resources) {
+        state.resources[resource.id] = {
+          ...(state.resources[resource.id] || {}),
+          current: resource.current,
+          max: resource.max
+        };
+      }
+      writeResourceState(state);
+
+      function updateResource(id, current){
+        const resource = resources.find(entry => entry.id === id);
+        if (!resource) return;
+        if (resource.resourceKind === "consumable") {
+          const delta = current - resource.current;
+          if (!delta) return;
+          savePcInventory(inv => {
+            const entry = inv.entries.find(row => row.id === resource.entryId);
+            if (!entry) return;
+            const nextQty = Math.max(0, Number(entry.qty || 0) + delta);
+            if (nextQty <= 0) inv.entries = inv.entries.filter(row => row.id !== resource.entryId);
+            else entry.qty = nextQty;
+          });
+          return;
+        }
+        const next = Math.max(0, Math.min(resource.max, current));
+        state.resources[id] = { ...(state.resources[id] || {}), current: next, max: resource.max };
+        writeResourceState(state);
+        location.reload();
+      }
+
+      for (const button of document.querySelectorAll("[data-resource-adjust]")) {
+        button.addEventListener("click", () => {
+          const id = button.dataset.resourceAdjust;
+          const resource = resources.find(entry => entry.id === id);
+          if (!resource) return;
+          updateResource(id, resource.current + Number(button.dataset.delta || 0));
+        });
+      }
+
+      for (const button of document.querySelectorAll("[data-resource-rest]")) {
+        button.addEventListener("click", () => {
+          const kind = button.dataset.resourceRest;
+          for (const resource of resources) {
+            if (resource.resourceKind === "consumable") continue;
+            if (!recoversOnRest(resource, kind)) continue;
+            const current = Number(state.resources[resource.id]?.current ?? resource.current);
+            const next = resource.type === "hit_dice"
+              ? Math.min(resource.max, current + resource.recoveryAmount)
+              : resource.max;
+            state.resources[resource.id] = { ...(state.resources[resource.id] || {}), current: next, max: resource.max };
+          }
+          writeResourceState(state);
+          location.reload();
+        });
+      }
+    }
+
+    function classTables(entry){
+      return (entry?.entries || []).filter(part => part?.type === "table" && Array.isArray(part.rows));
+    }
+
+    function parseDieSize(value){
+      const match = String(value || "").match(/[dDwW]\s*(\d+)/);
+      return match ? Number(match[1]) : null;
+    }
+
+    function inferHitDie(entry){
+      const fromPc = parseDieSize(p.hit_dice);
+      if (fromPc) return fromPc;
+
+      for (const table of classTables(entry)) {
+        for (const row of table.rows || []) {
+          const label = String(row?.[0] || "").toLowerCase();
+          if (!/trefferpunkt|hit point|hit dice/.test(label)) continue;
+          const die = parseDieSize(row.slice(1).join(" "));
+          if (die) return die;
+        }
+      }
+      return null;
+    }
+
+    function findProgressionTable(entry){
+      return classTables(entry).find(table => {
+        const header = table.rows?.[0] || [];
+        const first = String(header[0] || "").toLowerCase();
+        return /^(level|stufe|ebene)$/.test(first) || /level|stufe|ebene/.test(first);
+      }) || null;
+    }
+
+    function splitFeatureNames(value){
+      return String(value || "")
+        .split(/,\s*|;\s*|\s+und\s+/i)
+        .map(part => part.trim())
+        .filter(Boolean)
+        .filter(part => !/^[-–—]$/.test(part));
+    }
+
+    function classRowForLevel(entry, level){
+      const table = findProgressionTable(entry);
+      if (!table) return null;
+      const headers = table.rows[0] || [];
+      const row = table.rows.find((cells, index) => index > 0 && Number(String(cells?.[0] || "").match(/\d+/)?.[0]) === level);
+      if (!row) return null;
+      return { headers, row };
+    }
+
+    function levelRowDetails(entry, level){
+      const current = classRowForLevel(entry, level);
+      if (!current) return [];
+      return current.headers.map((header, index) => ({
+        label: header,
+        value: current.row[index] ?? ""
+      })).filter(detail => detail.value !== "" && detail.value !== "-");
+    }
+
+    function featuresForLevel(entry, level){
+      const current = classRowForLevel(entry, level);
+      if (!current) return [];
+      const featureIndex = current.headers.findIndex(header => /talent|feature|merkmal|funktion/i.test(String(header)));
+      if (featureIndex < 0) return [];
+      return splitFeatureNames(current.row[featureIndex]);
+    }
+
+    function classSpellNames(entry){
+      return [...new Set([
+        entry?.name,
+        entry?.original_name,
+        entry?.id,
+        ...(entry?.spellcasting?.spell_list_names || [])
+      ].filter(Boolean).map(textKey))];
+    }
+
+    function currentSpellRefs(){
+      const refs = [
+        ...(Array.isArray(p.spells) ? p.spells : []),
+        ...spellSections.flatMap(section => section.refs || [])
+      ];
+      const byId = new Map();
+      for (const ref of refs) {
+        const resolved = resolveEntityRef(ref, spellLookup) || ref;
+        const key = textKey(resolved.id || resolved.name);
+        if (key && !byId.has(key)) byId.set(key, resolved);
+      }
+      return [...byId.values()].sort((a, b) => String(a.name || a.id || "").localeCompare(String(b.name || b.id || ""), "de"));
+    }
+
+    function spellSlotsFromDetails(details){
+      return details
+        .map(detail => {
+          const label = String(detail.label || "").trim();
+          const value = String(detail.value || "").trim();
+          const level = /^\d+$/.test(label) ? Number(label) : null;
+          if (!level || level > 9 || !value || value === "-") return null;
+          return { level, slots: Number(value) || value };
+        })
+        .filter(Boolean);
+    }
+
+    function spellProgression(entry, currentLevel, nextLevel, details){
+      const current = classRowForLevel(entry, currentLevel);
+      const next = classRowForLevel(entry, nextLevel);
+      if (!next) return null;
+
+      const spellHeaders = next.headers.map((header, index) => ({ header: String(header || ""), index }));
+      const cantripColumn = spellHeaders.find(col => /zaubertrick|cantrip/i.test(col.header));
+      const preparedColumn = spellHeaders.find(col => /vorbereitete zauber|known spells|bekannte zauber/i.test(col.header));
+      const currentCantrips = cantripColumn && current ? Number(current.row[cantripColumn.index] || 0) : null;
+      const nextCantrips = cantripColumn ? Number(next.row[cantripColumn.index] || 0) : null;
+      const currentPrepared = preparedColumn && current ? Number(current.row[preparedColumn.index] || 0) : null;
+      const nextPrepared = preparedColumn ? Number(next.row[preparedColumn.index] || 0) : null;
+      const slots = spellSlotsFromDetails(details);
+      const maxSpellLevel = slots.reduce((max, slot) => Math.max(max, Number(slot.level) || 0), 0);
+      const classNames = classSpellNames(entry);
+      const spellPool = sortedSpells.filter(spell => (spell.classes || []).some(name => classNames.includes(textKey(name))));
+      const existingIds = new Set(currentSpellRefs().map(ref => textKey(ref.id || ref.name)));
+
+      return {
+        spellPool,
+        currentSpells: currentSpellRefs(),
+        newCantrips: Math.max(0, (nextCantrips || 0) - (currentCantrips || 0)),
+        newPrepared: Math.max(0, (nextPrepared || 0) - (currentPrepared || 0)),
+        canReplace: /ersetzen|ändern sie ihre vorbereiteten|immer wenn sie eine .*stufe erreichen.*ersetzen|level erreichen.*ersetzen/i.test(String(entry?.text || "")),
+        cantripCount: nextCantrips,
+        preparedCount: nextPrepared,
+        maxSpellLevel
+      };
+    }
+
+    function spellOptionHtml(spell, { allowCantrips = true, maxSpellLevel = 9 } = {}){
+      if (!allowCantrips && Number(spell.level || 0) === 0) return "";
+      if (Number(spell.level || 0) > maxSpellLevel) return "";
+      const levelLabel = Number(spell.level || 0) === 0 ? "Zaubertrick" : `Grad ${spell.level}`;
+      return `<option value="${escapeHtml(spell.id || spell.name)}">${escapeHtml(displayName(spell))} (${escapeHtml(levelLabel)})</option>`;
+    }
+
+    function renderFeatChoice(nextLevel){
+      if (![4, 8, 12, 16].includes(nextLevel)) return "";
+      return `
+        <div style="margin-bottom:10px;">
+          <b>Talent oder Attributsverbesserung</b>
+          <div style="display:grid;gap:8px;margin-top:6px;">
+            <select class="select" id="levelFeatChoice">
+              ${sortedFeats.map(feat => `<option value="${escapeHtml(feat.id)}" ${feat.id === "faehigkeitswert-verbesserung" ? "selected" : ""}>${escapeHtml(displayName(feat))}${feat.prerequisites?.length ? ` - ${escapeHtml(feat.prerequisites.join(", "))}` : ""}</option>`).join("")}
+            </select>
+            <div class="muted">Standard ist Faehigkeitswert-Verbesserung; du kannst hier jedes Talent wählen, für das der Charakter sich qualifiziert.</div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderSpellChoice(progress){
+      if (!progress || !progress.spellPool.length) return "";
+      const addCantripRows = Array.from({ length: progress.newCantrips }, (_, index) => `
+        <label style="display:grid;gap:5px;color:var(--muted);font-size:13px;">Neuer Zaubertrick ${index + 1}
+          <select class="select level-spell-add" data-spell-kind="cantrip">
+            ${progress.spellPool.map(spell => Number(spell.level || 0) === 0 ? spellOptionHtml(spell) : "").join("")}
+          </select>
+        </label>
+      `).join("");
+      const addSpellRows = Array.from({ length: progress.newPrepared }, (_, index) => `
+        <label style="display:grid;gap:5px;color:var(--muted);font-size:13px;">Neuer Zauber ${index + 1}
+          <select class="select level-spell-add" data-spell-kind="spell">
+            ${progress.spellPool.map(spell => Number(spell.level || 0) > 0 ? spellOptionHtml(spell, { allowCantrips: false, maxSpellLevel: progress.maxSpellLevel || 9 }) : "").join("")}
+          </select>
+        </label>
+      `).join("");
+      const replaceRows = progress.canReplace ? `
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;">
+          <label style="display:grid;gap:5px;color:var(--muted);font-size:13px;">Zauber ersetzen
+            <select class="select" id="levelSpellReplaceFrom">
+              <option value="">Keinen ersetzen</option>
+              ${progress.currentSpells.map(ref => `<option value="${escapeHtml(ref.id || ref.name)}">${escapeHtml(ref.name || ref.id)}</option>`).join("")}
+            </select>
+          </label>
+          <label style="display:grid;gap:5px;color:var(--muted);font-size:13px;">Neuer Zauber
+            <select class="select" id="levelSpellReplaceTo">
+              ${progress.spellPool.map(spell => spellOptionHtml(spell, { maxSpellLevel: progress.maxSpellLevel || 9 })).join("")}
+            </select>
+          </label>
+        </div>
+      ` : "";
+
+      if (!addCantripRows && !addSpellRows && !replaceRows) return "";
+      return `
+        <div style="margin-bottom:10px;">
+          <b>Zauber beim Level-up</b>
+          <div class="muted" style="margin-top:4px;">Ziel laut Klassentabelle: ${progress.cantripCount ?? "-"} Zaubertricks, ${progress.preparedCount ?? "-"} vorbereitete/bekannte Zauber. Höchster Slot: ${progress.maxSpellLevel || "-"}.</div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;margin-top:8px;">
+            ${addCantripRows}
+            ${addSpellRows}
+          </div>
+          ${replaceRows ? `<div style="margin-top:8px;">${replaceRows}</div>` : ""}
+        </div>
+      `;
+    }
+
+    function renderLevelUpPanel(entry){
+      const currentLevel = Number(p.level || 0);
+      if (!entry || !currentLevel || currentLevel >= 20) return "";
+
+      const nextLevel = currentLevel + 1;
+      const hitDie = inferHitDie(entry);
+      const conMod = mod(ab.con ?? 10);
+      const details = levelRowDetails(entry, nextLevel);
+      const features = featuresForLevel(entry, nextLevel);
+      const spellProgress = spellProgression(entry, currentLevel, nextLevel, details);
+      const averageGain = hitDie ? Math.max(1, Math.floor(hitDie / 2) + 1 + conMod) : null;
+      const currentHp = Number(p.hp || 0);
+      const draftKey = `dnd.levelup.v1.${p.id || textKey(p.name)}`;
+
+      return `
+        <div class="mini-box" id="levelUpPanel" style="margin-top:12px;">
+          <div class="mini-box-title">Level-up: Stufe ${escapeHtml(nextLevel)}</div>
+          <div class="mini-box-text">
+            <div class="pillbar" style="margin-bottom:10px;">
+              <span class="pill"><b>Klasse</b> ${escapeHtml(displayClassName(entry))}</span>
+              ${hitDie ? `<span class="pill"><b>Trefferwürfel</b> ${renderRollExpressionHtml(`1d${hitDie}`, `1W${hitDie}`)}</span>` : ""}
+              <span class="pill"><b>CON</b> ${escapeHtml(fmtSigned(conMod))}</span>
+              ${averageGain ? `<span class="pill"><b>Durchschnitt</b> +${escapeHtml(averageGain)} HP</span>` : ""}
+            </div>
+
+            <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
+              ${hitDie ? `<button class="select" id="rollLevelHp" type="button" data-hit-die="${escapeHtml(hitDie)}" data-con-mod="${escapeHtml(conMod)}" data-current-hp="${escapeHtml(currentHp)}" data-next-level="${escapeHtml(nextLevel)}" data-draft-key="${escapeHtml(draftKey)}">HP würfeln</button>` : ""}
+              ${averageGain ? `<button class="select" id="useAverageHp" type="button" data-gain="${escapeHtml(averageGain)}" data-current-hp="${escapeHtml(currentHp)}" data-next-level="${escapeHtml(nextLevel)}" data-draft-key="${escapeHtml(draftKey)}">Durchschnitt nehmen</button>` : ""}
+              <button class="select" id="saveLevelChoices" type="button" data-current-hp="${escapeHtml(currentHp)}" data-next-level="${escapeHtml(nextLevel)}" data-draft-key="${escapeHtml(draftKey)}">Auswahl speichern</button>
+            </div>
+            <div id="levelHpResult" class="muted" style="margin-bottom:10px;"></div>
+
+            ${features.length ? `
+              <div style="margin-bottom:10px;">
+                <b>Neue Features</b>
+                <ul style="margin:6px 0 0 18px;">
+                  ${features.map(feature => `<li>${renderMarkdownText(feature, { lookups: { spell: spellLookup, item: itemLookup }, inlineOnly: true })}</li>`).join("")}
+                </ul>
+              </div>
+            ` : ""}
+
+            ${renderFeatChoice(nextLevel)}
+            ${renderSpellChoice(spellProgress)}
+
+            ${details.length ? `
+              <details>
+                <summary>Automatisch gelesene Klassentabelle</summary>
+                ${renderDefinitionList(details.map(detail => [detail.label, detail.value]))}
+              </details>
+            ` : `<div class="muted">Keine Level-Zeile in den Klassendaten gefunden.</div>`}
+          </div>
+        </div>
+      `;
+    }
+
+    function displayClassName(entry){
+      return entry?.name || entry?.original_name || entry?.id || p.class || "Klasse";
+    }
+
+    function bindLevelUpPanel(){
+      const resultEl = document.getElementById("levelHpResult");
+      if (!resultEl) return;
+
+      function selectedOptionLabel(select){
+        return select?.selectedOptions?.[0]?.textContent?.trim() || "";
+      }
+
+      function gatherLevelChoices(){
+        const featSelect = document.getElementById("levelFeatChoice");
+        const addedSpells = [...document.querySelectorAll(".level-spell-add")]
+          .filter(select => select.value)
+          .map(select => ({
+            id: select.value,
+            name: selectedOptionLabel(select),
+            kind: select.dataset.spellKind || "spell"
+          }));
+        const replaceFrom = document.getElementById("levelSpellReplaceFrom");
+        const replaceTo = document.getElementById("levelSpellReplaceTo");
+        return {
+          feat: featSelect?.value ? { id: featSelect.value, name: selectedOptionLabel(featSelect) } : null,
+          added_spells: addedSpells,
+          replaced_spell: replaceFrom?.value ? {
+            from: { id: replaceFrom.value, name: selectedOptionLabel(replaceFrom) },
+            to: { id: replaceTo?.value || "", name: selectedOptionLabel(replaceTo) }
+          } : null
+        };
+      }
+
+      function saveDraft(button, gain, label){
+        const currentHp = Number(button.dataset.currentHp || 0);
+        const hasHpGain = Number.isFinite(gain);
+        const draft = {
+          pc: p.id || p.name,
+          from_level: Number(p.level || 0),
+          to_level: Number(button.dataset.nextLevel || 0),
+          class: p.class,
+          hp_before: currentHp,
+          hp_gain: hasHpGain ? gain : null,
+          hp_after: hasHpGain ? currentHp + gain : currentHp,
+          label,
+          choices: gatherLevelChoices(),
+          saved_at: new Date().toISOString()
+        };
+        try {
+          localStorage.setItem(button.dataset.draftKey, JSON.stringify(draft));
+        } catch {}
+        const chosen = [
+          draft.choices.feat ? `Talent: ${draft.choices.feat.name}` : "",
+          draft.choices.added_spells.length ? `Neue Zauber: ${draft.choices.added_spells.map(spell => spell.name).join(", ")}` : "",
+          draft.choices.replaced_spell ? `Ersetzt: ${draft.choices.replaced_spell.from.name} -> ${draft.choices.replaced_spell.to.name}` : ""
+        ].filter(Boolean).join(" | ");
+        const hpText = hasHpGain ? `: +${escapeHtml(gain)} HP, neu ${escapeHtml(draft.hp_after)} HP.` : ".";
+        resultEl.innerHTML = `<b>${escapeHtml(label)}</b>${hpText} ${chosen ? `<span>${escapeHtml(chosen)}</span> ` : ""}<span class="muted">Als lokaler Entwurf gespeichert.</span>`;
+      }
+
+      document.getElementById("rollLevelHp")?.addEventListener("click", event => {
+        const button = event.currentTarget;
+        const die = Number(button.dataset.hitDie || 0);
+        const conMod = Number(button.dataset.conMod || 0);
+        const roll = Math.floor(Math.random() * die) + 1;
+        saveDraft(button, Math.max(1, roll + conMod), `Wurf ${roll} auf 1W${die} ${fmtSigned(conMod)} CON`);
+      });
+
+      document.getElementById("useAverageHp")?.addEventListener("click", event => {
+        const button = event.currentTarget;
+        saveDraft(button, Number(button.dataset.gain || 0), "Durchschnitt");
+      });
+
+      document.getElementById("saveLevelChoices")?.addEventListener("click", event => {
+        saveDraft(event.currentTarget, Number.NaN, "Level-up-Auswahl");
+      });
+    }
+
+    function isSecretKey(key){
+      return /^(gm_only|dm_only|secret|hidden|private)$/i.test(String(key || ""));
+    }
+
+    function hasSecretMarker(value, key = ""){
+      if (isSecretKey(key) && value) return true;
+      if (typeof value === "string") return /\b(GM|SL|DM|Geheimnis|Nur SL|Nur GM|privat)\b/i.test(value);
+      if (Array.isArray(value)) return value.some(entry => hasSecretMarker(entry));
+      if (value && typeof value === "object") {
+        return Object.entries(value).some(([entryKey, entryValue]) => isSecretKey(entryKey) && entryValue);
+      }
+      return false;
+    }
+
+    function publicEntries(entries){
+      if (!isPlayerView && (includeGmFields || !isSheetView)) return entries;
+      return entries.filter(([key, value]) => !hasSecretMarker(value, key));
+    }
+
+    function publicList(values){
+      return (Array.isArray(values) ? values : []).filter(entry => !hasSecretMarker(entry));
+    }
+
+    function actionLinks(){
+      const currentId = encodeURIComponent(p.id || id || p.name || "");
+      const gmUrl = `pc.html?id=${currentId}&view=gm`;
+      const playerUrl = `pc.html?id=${currentId}&view=player`;
+      const sheetUrl = `pc.html?id=${currentId}&sheet=1`;
+      return `
+        <div class="pc-actions">
+          <a class="pc-action" href="${escapeHtml(isPlayerView ? gmUrl : playerUrl)}">${isPlayerView ? "GM-Ansicht" : "Spieler-URL"}</a>
+          <a class="pc-action" href="../werkzeuge/character-builder.html?pc=${currentId}">Im Builder bearbeiten</a>
+          <a class="pc-action" href="${escapeHtml(sheetUrl)}">Charactersheet exportieren</a>
+          ${isSheetView ? `<button class="pc-action" type="button" id="printSheet">Drucken / PDF</button>` : ""}
+        </div>
+      `;
+    }
+
+    function renderPublicPc(){
+      const publicFeatures = publicEntries(Object.entries(features || {}));
+      const publicNotes = hasSecretMarker(p.notes) ? "" : p.notes;
+      view.innerHTML = `
+        ${actionLinks()}
+        <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;">
+          ${portrait}
+          <div style="flex:1;min-width:260px;">
+            <h1 style="margin:0;">${escapeHtml(p.name)}</h1>
+            <p class="muted" style="margin:6px 0 0 0;">${escapeHtml(subtitle || (p.player ? `Spieler: ${p.player}` : ""))}</p>
+            <div class="mini-box" style="margin-top:12px;">
+              <div class="mini-box-title">Werte</div>
+              <div class="mini-box-text">
+                ${p.ac != null ? `<div><b>RK:</b> ${escapeHtml(p.ac)}</div>` : ""}
+                ${p.hp != null ? `<div><b>HP:</b> ${escapeHtml(p.hp)}</div>` : ""}
+                ${p.hit_dice ? `<div><b>Trefferwürfel:</b> ${formatScalar(p.hit_dice, "hit_dice")}</div>` : ""}
+                ${p.speed != null ? `<div><b>Bewegung:</b> ${escapeHtml(p.speed)}</div>` : ""}
+                ${p.player ? `<div><b>Spieler:</b> ${escapeHtml(p.player)}</div>` : ""}
+              </div>
+            </div>
+            ${showAbilities ? `
+              <div class="mini-box" style="margin-top:12px;">
+                <div class="mini-box-title">Attribute</div>
+                <div class="mini-box-text">
+                  <b>STR</b> ${ab.str ?? "-"} (${fmtSigned(mod(ab.str ?? 10))}) &bull;
+                  <b>DEX</b> ${ab.dex ?? "-"} (${fmtSigned(mod(ab.dex ?? 10))}) &bull;
+                  <b>CON</b> ${ab.con ?? "-"} (${fmtSigned(mod(ab.con ?? 10))}) &bull;
+                  <b>INT</b> ${ab.int ?? "-"} (${fmtSigned(mod(ab.int ?? 10))}) &bull;
+                  <b>WIS</b> ${ab.wis ?? "-"} (${fmtSigned(mod(ab.wis ?? 10))}) &bull;
+                  <b>CHA</b> ${ab.cha ?? "-"} (${fmtSigned(mod(ab.cha ?? 10))})
+                </div>
+              </div>
+            ` : ""}
+            ${spellSections.length ? renderInfoBox("Zauber", renderSectionList("spell", spellSections, "../zauber/")) : ""}
+            ${itemSections.length ? renderInfoBox("Gegenstände", renderSectionList("item", itemSections, "../items/")) : ""}
+            ${publicFeatures.length ? renderInfoBox("Features", renderDefinitionList(publicFeatures)) : ""}
+            ${publicNotes ? renderInfoBox("Notizen", renderMarkdownText(publicNotes, { lookups: { spell: spellLookup, item: itemLookup } })) : ""}
+          </div>
+        </div>
+      `;
+    }
+
+    function flatItemNames(list){
+      return publicList(list).map(item => `${item.quantity || item.qty || 1}x ${item.name || item.item_ref?.name || item.ref?.name || item.id || "Gegenstand"}`).join(", ");
+    }
+
+    function scalar(value){
+      if (value == null || value === "") return "";
+      if (Array.isArray(value)) return value.map(scalar).filter(Boolean).join(", ");
+      if (typeof value === "object") return stripHtml(renderValue(value));
+      return String(value);
+    }
+
+    function sheetLines(values, max = 12){
+      return publicList(values).map(value => scalar(value).replace(/\s+/g, " ").trim()).filter(Boolean).slice(0, max);
+    }
+
+    function featureLines(group, max = 10){
+      return sheetLines(features?.[group] || [], max);
+    }
+
+    function itemRows(values, max = 18){
+      return publicList(values).slice(0, max).map(item => ({
+        name: item.name || item.item_ref?.name || item.ref?.name || item.id || "",
+        qty: item.quantity || item.qty || "",
+        weight: item.weight ?? item.weight_value ?? ""
+      }));
+    }
+
+    function renderRows(rows, emptyRows = 0){
+      const html = rows.map(row => `<tr><td>${escapeHtml(row.name || "")}</td><td>${escapeHtml(row.qty || "")}</td><td>${escapeHtml(row.weight || "")}</td></tr>`).join("");
+      const blanks = Array.from({ length: Math.max(0, emptyRows - rows.length) }, () => "<tr><td>&nbsp;</td><td></td><td></td></tr>").join("");
+      return `<table style="width:100%;border-collapse:collapse;font-size:11px;"><thead><tr><th align="left">Name</th><th align="left">Anz</th><th align="left">Gewicht</th></tr></thead><tbody>${html}${blanks}</tbody></table>`;
+    }
+
+    function spellSlotText(){
+      const slots = spellcasting.spell_slots || {};
+      return Object.entries(slots).map(([key, value]) => `${key.replace("level_", "")}: ${value?.max ?? value}`).join(" / ");
+    }
+
+    function renderTemplateSheet(){
+      const proficiency = character.proficiency_bonus ?? character.proficiency?.bonus ?? "";
+      const saves = character.ability_scores || {};
+      const skillRows = Object.entries(character.skills || {}).filter(([, value]) => value != null).map(([key, value]) => `${key}: ${fmtSigned(Number(value) || 0)}`);
+      const attacks = publicList(combat.attacks_and_cantrips).map(a => `${a.name || "Angriff"} ${a.attack_bonus != null ? fmtSigned(a.attack_bonus) : ""} ${a.damage || ""}`.trim());
+      const actionText = combat.actions || {};
+      const spellRefs = currentSpellRefs().map(ref => ref.name || ref.id).filter(Boolean);
+      const equipmentRows = itemRows(equipment.items || [], 16);
+      const attunedRows = itemRows(equipment.attuned_magic_items_listed || [], 8);
+      const personalityRows = {
+        traits: sheetLines(personality.traits || personality.personality_traits || [], 4).join("\n"),
+        ideals: sheetLines(personality.ideals || [], 3).join("\n"),
+        motivation: sheetLines(personality.motivation || personality.bonds || [], 3).join("\n"),
+        flaws: sheetLines(personality.flaws || [], 3).join("\n")
+      };
+      const appearance = identity.appearance || {};
+      const notes = hasSecretMarker(p.notes) ? "" : p.notes;
+      view.innerHTML = `
+        ${actionLinks()}
+        <div class="sheet-pages">
+          <article class="sheet-page sheet-template">
+            <div class="sheet-title">
+              <div class="sheet-box"><h3>Name</h3><div class="sheet-value">${escapeHtml(p.name || "")}</div></div>
+              <div class="sheet-box"><h3>Klasse</h3><div>${escapeHtml([p.class, p.subclass].filter(Boolean).join(" / "))}</div></div>
+              <div class="sheet-box"><h3>Level</h3><div class="sheet-value">${escapeHtml(p.level || "")}</div></div>
+              <div class="sheet-box"><h3>Spieler</h3><div>${escapeHtml(p.player || "")}</div></div>
+              <div class="sheet-box"><h3>Spezies</h3><div>${escapeHtml(p.race || "")}</div></div>
+              <div class="sheet-box"><h3>Hintergrund</h3><div>${escapeHtml(p.background || "")}</div></div>
+              <div class="sheet-box"><h3>Uebungsbonus</h3><div class="sheet-value">${proficiency === "" ? "" : fmtSigned(Number(proficiency) || 0)}</div></div>
+              <div class="sheet-box"><h3>Weitere Sinne</h3><div>${escapeHtml(scalar(combat.senses || ""))}</div></div>
+            </div>
+            <div class="sheet-ability">
+              ${["str","dex","con","int","wis","cha"].map(key => `<div class="sheet-box"><h3>${key.toUpperCase()}</h3><div class="sheet-value">${escapeHtml(ab[key] ?? "")}</div><div>${fmtSigned(mod(ab[key] ?? 10))}</div></div>`).join("")}
+            </div>
+            <div class="sheet-grid" style="margin-top:8px;">
+              <div class="sheet-box span-2"><h3>RK</h3><div class="sheet-value">${escapeHtml(p.ac ?? "")}</div></div>
+              <div class="sheet-box span-2"><h3>Initiative</h3><div class="sheet-value">${escapeHtml(combat.initiative != null ? fmtSigned(combat.initiative) : fmtSigned(mod(ab.dex ?? 10)))}</div></div>
+              <div class="sheet-box span-2"><h3>Bewegung</h3><div class="sheet-value">${escapeHtml(p.speed || "")}</div></div>
+              <div class="sheet-box span-3"><h3>HP</h3><div class="sheet-value">${escapeHtml(p.hp ?? "")}</div></div>
+              <div class="sheet-box span-3"><h3>Trefferwuerfel</h3><div class="sheet-value">${escapeHtml(p.hit_dice || "")}</div></div>
+              <div class="sheet-box span-6"><h3>Rettungswurf-Modifikatoren</h3><div class="sheet-lines">${escapeHtml(Object.entries(saves).map(([key, value]) => `${key}: ${fmtSigned(Number(value?.save ?? mod(value?.score ?? value ?? 10)) || 0)}`).join("\n"))}</div></div>
+              <div class="sheet-box span-6"><h3>Fertigkeiten</h3><div class="sheet-lines">${escapeHtml(skillRows.join("\n"))}</div></div>
+              <div class="sheet-box span-3"><h3>Ruestung</h3><div class="sheet-lines">${escapeHtml(scalar(proficiencies.armor || ""))}</div></div>
+              <div class="sheet-box span-3"><h3>Waffen</h3><div class="sheet-lines">${escapeHtml(scalar(proficiencies.weapons || ""))}</div></div>
+              <div class="sheet-box span-3"><h3>Werkzeuge</h3><div class="sheet-lines">${escapeHtml(scalar(proficiencies.tools || ""))}</div></div>
+              <div class="sheet-box span-3"><h3>Sprachen</h3><div class="sheet-lines">${escapeHtml(scalar(proficiencies.languages || ""))}</div></div>
+              <div class="sheet-box span-6"><h3>Aktionen</h3><div class="sheet-lines">${escapeHtml([`Standard: ${scalar(actionText.standard || "Angriff, Ausweichen, Helfen, Magie")}`, `Bonusaktionen: ${scalar(actionText.bonus_actions || "")}`, `Reaktionen: ${scalar(actionText.reactions || "Gelegenheitsangriff")}`, `Spezial: ${scalar(actionText.special || "")}`].join("\n"))}</div></div>
+              <div class="sheet-box span-6"><h3>Angriffe / Zaubertricks</h3><div class="sheet-lines">${escapeHtml(attacks.join("\n"))}</div></div>
+              <div class="sheet-box span-12"><h3>Merkmale</h3><div class="sheet-grid">
+                <div class="span-3"><div class="sheet-muted">Klasse</div><ul class="sheet-list">${featureLines("class", 5).map(line => `<li>${escapeHtml(line)}</li>`).join("")}</ul></div>
+                <div class="span-3"><div class="sheet-muted">Spezies</div><ul class="sheet-list">${featureLines("racial", 5).map(line => `<li>${escapeHtml(line)}</li>`).join("")}</ul></div>
+                <div class="span-3"><div class="sheet-muted">Hintergrund</div><ul class="sheet-list">${featureLines("background", 5).map(line => `<li>${escapeHtml(line)}</li>`).join("")}</ul></div>
+                <div class="span-3"><div class="sheet-muted">Talente / Magie</div><ul class="sheet-list">${featureLines("feats", 5).concat(featureLines("talents_and_magic_items_text", 5)).map(line => `<li>${escapeHtml(line)}</li>`).join("")}</ul></div>
+              </div></div>
+            </div>
+          </article>
+
+          <article class="sheet-page sheet-template">
+            <div class="sheet-title">
+              <div class="sheet-box"><h3>Name</h3><div class="sheet-value">${escapeHtml(p.name || "")}</div></div>
+              <div class="sheet-box"><h3>Klasse</h3><div>${escapeHtml(p.class || "")}</div></div>
+              <div class="sheet-box"><h3>Level</h3><div>${escapeHtml(p.level || "")}</div></div>
+              <div class="sheet-box"><h3>Spieler</h3><div>${escapeHtml(p.player || "")}</div></div>
+            </div>
+            <div class="sheet-grid">
+              <div class="sheet-box span-4"><h3>Waehrung</h3><div class="sheet-lines">${escapeHtml(scalar(equipment.currency || ""))}</div></div>
+              <div class="sheet-box span-4"><h3>Gewicht</h3><div class="sheet-lines">${escapeHtml(scalar(equipment.weights || ""))}</div></div>
+              <div class="sheet-box span-4"><h3>Eingestimmte magische Items</h3>${renderRows(attunedRows, 5)}</div>
+              <div class="sheet-box span-12"><h3>Ausruestung</h3>${renderRows(equipmentRows, 18)}</div>
+              <div class="sheet-box span-12"><h3>Zusaetzliche Ausruestung</h3>${renderRows(itemRows((equipment.additional_items || []).concat(dynamicInventoryEntries.map(entry => ({ name: entry.item?.name, qty: entry.qty, weight: entry.item?.weight }))), 18), 12)}</div>
+            </div>
+          </article>
+
+          <article class="sheet-page sheet-template">
+            <div class="sheet-title">
+              <div class="sheet-box"><h3>Name</h3><div class="sheet-value">${escapeHtml(p.name || "")}</div></div>
+              <div class="sheet-box"><h3>Klasse</h3><div>${escapeHtml(p.class || "")}</div></div>
+              <div class="sheet-box"><h3>Level</h3><div>${escapeHtml(p.level || "")}</div></div>
+              <div class="sheet-box"><h3>Spieler</h3><div>${escapeHtml(p.player || "")}</div></div>
+            </div>
+            <div class="sheet-grid">
+              <div class="sheet-box span-4"><h3>Zusaetzliche Merkmale</h3><div class="sheet-lines">${escapeHtml(featureLines("subclass", 8).join("\n"))}</div></div>
+              <div class="sheet-box span-4"><h3>Weitere Eigenschaften</h3><div class="sheet-lines">${escapeHtml(featureLines("racial", 8).join("\n"))}</div></div>
+              <div class="sheet-box span-4"><h3>Weitere Talente</h3><div class="sheet-lines">${escapeHtml(featureLines("feats", 8).concat(featureLines("talents_and_magic_items_text", 8)).join("\n"))}</div></div>
+              <div class="sheet-box span-12"><h3>Notizen</h3><div class="sheet-lines">${escapeHtml(notes)}</div></div>
+            </div>
+          </article>
+
+          <article class="sheet-page sheet-template">
+            <div class="sheet-title">
+              <div class="sheet-box"><h3>Name</h3><div class="sheet-value">${escapeHtml(p.name || "")}</div></div>
+              <div class="sheet-box"><h3>Ausrichtung</h3><div>${escapeHtml(identity.alignment || "")}</div></div>
+              <div class="sheet-box"><h3>Glaube</h3><div>${escapeHtml(identity.deity || "")}</div></div>
+              <div class="sheet-box"><h3>Geschlecht / Alter</h3><div>${escapeHtml([identity.gender, identity.age].filter(Boolean).join(" / "))}</div></div>
+              <div class="sheet-box"><h3>Groessenklasse</h3><div>${escapeHtml(identity.size || "")}</div></div>
+              <div class="sheet-box"><h3>Groesse / Gewicht</h3><div>${escapeHtml([identity.height ? `${identity.height} m` : "", identity.weight ? `${identity.weight} kg` : ""].filter(Boolean).join(" / "))}</div></div>
+              <div class="sheet-box"><h3>Haut / Augen / Haar</h3><div>${escapeHtml([appearance.skin, appearance.eyes, appearance.hair].filter(Boolean).join(" / "))}</div></div>
+              <div class="sheet-box"><h3>Organisationen</h3><div>${escapeHtml(scalar(identity.organizations || ""))}</div></div>
+            </div>
+            <div class="sheet-grid">
+              <div class="sheet-box span-4"><h3>Persoenlichkeit</h3><div class="sheet-lines">${escapeHtml(personalityRows.traits)}</div></div>
+              <div class="sheet-box span-4"><h3>Ideale</h3><div class="sheet-lines">${escapeHtml(personalityRows.ideals)}</div></div>
+              <div class="sheet-box span-4"><h3>Motivation</h3><div class="sheet-lines">${escapeHtml(personalityRows.motivation)}</div></div>
+              <div class="sheet-box span-4"><h3>Makel</h3><div class="sheet-lines">${escapeHtml(personalityRows.flaws)}</div></div>
+              <div class="sheet-box span-4"><h3>Verbuendete</h3><div class="sheet-lines">${escapeHtml(scalar(backstory.allies || ""))}</div></div>
+              <div class="sheet-box span-4"><h3>Aussehen</h3><div class="sheet-lines">${escapeHtml(scalar(identity.appearance || ""))}</div></div>
+              <div class="sheet-box span-6"><h3>Hintergrundgeschichte</h3><div class="sheet-lines">${escapeHtml(scalar(backstory.summary || backstory))}</div></div>
+              <div class="sheet-box span-6"><h3>Zusatznotizen</h3><div class="sheet-lines">${escapeHtml(notes)}</div></div>
+            </div>
+          </article>
+
+          <article class="sheet-page sheet-template">
+            <div class="sheet-title">
+              <div class="sheet-box"><h3>Name</h3><div class="sheet-value">${escapeHtml(p.name || "")}</div></div>
+              <div class="sheet-box"><h3>Zauberklasse</h3><div>${escapeHtml(spellcasting.spellcasting_class || p.class || "")}</div></div>
+              <div class="sheet-box"><h3>Zauberfaehigkeit</h3><div>${escapeHtml([spellcasting.spellcasting_ability, spellcasting.spellcasting_ability_mod != null ? `(${fmtSigned(spellcasting.spellcasting_ability_mod)})` : ""].filter(Boolean).join(" "))}</div></div>
+              <div class="sheet-box"><h3>SG / Angriff</h3><div>${escapeHtml([spellcasting.spell_save_dc ? `SG ${spellcasting.spell_save_dc}` : "", spellcasting.spell_attack_bonus != null ? fmtSigned(spellcasting.spell_attack_bonus) : ""].filter(Boolean).join(" / "))}</div></div>
+            </div>
+            <div class="sheet-grid">
+              <div class="sheet-box span-4"><h3>Zauberplaetze</h3><div class="sheet-lines">${escapeHtml(spellSlotText())}</div></div>
+              <div class="sheet-box span-8"><h3>Zaubertricks</h3><div class="sheet-lines">${escapeHtml((spellcasting.cantrips || []).map(ref => ref.name || ref.id).join("\n"))}</div></div>
+              <div class="sheet-box span-12"><h3>Bekannte / vorbereitete Zauber</h3><div class="sheet-lines">${escapeHtml(spellRefs.join("\n"))}</div></div>
+            </div>
+          </article>
+        </div>
+      `;
+      document.getElementById("printSheet")?.addEventListener("click", () => window.print());
+    }
+
+    function renderSheet(){
+      return renderTemplateSheet();
+      const proficiency = character.proficiency_bonus ?? character.proficiency?.bonus ?? "";
+      const saves = character.ability_scores || {};
+      const skillRows = Object.entries(character.skills || {}).filter(([, value]) => value != null).map(([key, value]) => `${key}: ${fmtSigned(Number(value) || 0)}`).join("; ");
+      const attacks = publicList(combat.attacks_and_cantrips).map(a => `${a.name || "Angriff"} ${a.attack_bonus != null ? fmtSigned(a.attack_bonus) : ""} ${a.damage || ""}`.trim()).join("; ");
+      const featureText = publicEntries(Object.entries(features || {})).map(([key, value]) => `${formatLabel(key)}: ${stripHtml(renderValue(value))}`).join("\n");
+      const spellsText = currentSpellRefs().map(ref => ref.name || ref.id).join(", ");
+      view.innerHTML = `
+        ${actionLinks()}
+        <article class="sheet-page">
+          <div class="sheet-grid">
+            <div class="sheet-box span-4"><h3>Name</h3><div class="sheet-value">${escapeHtml(p.name || "")}</div></div>
+            <div class="sheet-box span-2"><h3>Spieler</h3><div>${escapeHtml(p.player || "")}</div></div>
+            <div class="sheet-box span-2"><h3>Volk</h3><div>${escapeHtml(p.race || "")}</div></div>
+            <div class="sheet-box span-2"><h3>Hintergrund</h3><div>${escapeHtml(p.background || "")}</div></div>
+            <div class="sheet-box span-2"><h3>Klasse</h3><div>${escapeHtml([p.class, p.subclass].filter(Boolean).join(" / "))}</div><div>Stufe ${escapeHtml(p.level || "")}</div></div>
+            ${["str","dex","con","int","wis","cha"].map(key => `<div class="sheet-box span-2"><h3>${key.toUpperCase()}</h3><div class="sheet-value">${escapeHtml(ab[key] ?? "")}</div><div>${fmtSigned(mod(ab[key] ?? 10))}</div></div>`).join("")}
+            <div class="sheet-box span-2"><h3>Übungsbonus</h3><div class="sheet-value">${proficiency === "" ? "" : fmtSigned(Number(proficiency) || 0)}</div></div>
+            <div class="sheet-box span-2"><h3>RK</h3><div class="sheet-value">${escapeHtml(p.ac ?? "")}</div></div>
+            <div class="sheet-box span-2"><h3>Initiative</h3><div class="sheet-value">${escapeHtml(combat.initiative != null ? fmtSigned(combat.initiative) : fmtSigned(mod(ab.dex ?? 10)))}</div></div>
+            <div class="sheet-box span-2"><h3>Bewegung</h3><div class="sheet-value">${escapeHtml(p.speed || "")}</div></div>
+            <div class="sheet-box span-2"><h3>HP</h3><div class="sheet-value">${escapeHtml(p.hp ?? "")}</div></div>
+            <div class="sheet-box span-2"><h3>Trefferwürfel</h3><div>${escapeHtml(p.hit_dice || "")}</div></div>
+            <div class="sheet-box span-6"><h3>Rettungswürfe</h3><div class="sheet-small">${escapeHtml(Object.entries(saves).map(([key, value]) => `${key}: ${fmtSigned(Number(value?.save ?? mod(value?.score ?? value ?? 10)) || 0)}`).join("; "))}</div></div>
+            <div class="sheet-box span-6"><h3>Fertigkeiten</h3><div class="sheet-small">${escapeHtml(skillRows)}</div></div>
+            <div class="sheet-box span-6"><h3>Angriffe / Zaubertricks</h3><div class="sheet-small">${escapeHtml(attacks)}</div></div>
+            <div class="sheet-box span-6"><h3>Ausrüstung</h3><div class="sheet-small">${escapeHtml(flatItemNames(equipment.items || []))}</div></div>
+            <div class="sheet-box span-8"><h3>Features</h3><div class="sheet-small" style="white-space:pre-wrap;">${escapeHtml(featureText)}</div></div>
+            <div class="sheet-box span-4"><h3>Zauberübersicht</h3><div class="sheet-small">${escapeHtml(spellsText)}</div></div>
+          </div>
+        </article>
+      `;
+      document.getElementById("printSheet")?.addEventListener("click", () => window.print());
+    }
+
+    function stripHtml(html){
+      const tmp = document.createElement("div");
+      tmp.innerHTML = html || "";
+      return tmp.textContent || tmp.innerText || "";
+    }
+
     const character = p.character || {};
     const identity = character.identity || {};
     const combat = character.combat || {};
@@ -409,25 +2237,44 @@
     const features = character.features || {};
     const personality = character.personality || {};
     const backstory = character.backstory || {};
+    const dynamicInventoryEntries = readDynamicInventoryEntries(p);
+    const dynamicInventoryHtml = renderDynamicInventory(dynamicInventoryEntries);
+    const dynamicWeaponsHtml = renderDynamicWeapons(dynamicInventoryEntries);
+    const dynamicActionsHtml = renderDynamicActions(dynamicInventoryEntries);
+    const dynamicSpellsHtml = renderDynamicSpells(dynamicInventoryEntries);
+    const characterInventoryEditorHtml = renderCharacterInventoryEditor();
+    const resourceList = collectResources({ spellcasting, features, inventoryEntries: dynamicInventoryEntries });
+    const resourceTrackerHtml = renderResourceTracker(resourceList);
 
     const identityDetails = renderDefinitionList(Object.entries(identity).filter(([key]) => !["name", "player_name", "class", "race"].includes(key)));
     const combatDetails = renderDefinitionList(Object.entries(combat).filter(([key]) => key !== "attacks_and_cantrips"));
     const spellcastingDetails = renderDefinitionList(Object.entries(spellcasting));
     const equipmentDetails = renderDefinitionList(Object.entries(equipment).filter(([key]) => !["items", "currency", "attuned_magic_items_listed"].includes(key)));
+    const levelUpHtml = renderLevelUpPanel(selectedClassData);
     const rawSections = [
       ["Identität", identityDetails],
       ["Kampf", combatDetails],
       ["Angriffe und Zaubertricks", renderAttacks(combat.attacks_and_cantrips)],
       ["Übungen", renderValue(proficiencies)],
       ["Zauberwirken", spellcastingDetails],
+      ["Dynamische Waffen", dynamicWeaponsHtml],
+      ["Dynamische Item-Aktionen", dynamicActionsHtml],
+      ["Dynamische Item-Zauber", dynamicSpellsHtml],
       ["Features", renderValue(features)],
+      ["Dynamisches Inventar", dynamicInventoryHtml],
       ["Inventar", [renderCurrency(equipment.currency), renderInventory(equipment.items), renderValue(equipment.attuned_magic_items_listed, "item")].filter(Boolean).join("<div style=\"height:10px;\"></div>")],
       ["Ausrüstungsdetails", equipmentDetails],
       ["Persönlichkeit", renderValue(personality)],
       ["Hintergrundgeschichte", renderValue(backstory)]
     ];
 
-    view.innerHTML = `
+    if (isSheetView) {
+      renderSheet();
+    } else if (isPlayerView) {
+      renderPublicPc();
+    } else {
+      view.innerHTML = `
+      ${actionLinks()}
       <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;">
         ${portrait}
         <div style="flex:1;min-width:260px;">
@@ -444,6 +2291,12 @@
               ${p.player ? `<div><b>Spieler:</b> ${escapeHtml(p.player)}</div>` : ""}
             </div>
           </div>
+
+          ${resourceTrackerHtml}
+
+          ${characterInventoryEditorHtml}
+
+          ${levelUpHtml}
 
           ${showAbilities ? `
             <div class="mini-box" style="margin-top:12px;">
@@ -493,6 +2346,10 @@
         ${rawSections.map(([sectionTitle, html]) => renderInfoBox(sectionTitle, html)).join("")}
       </div>
     `;
+      bindLevelUpPanel();
+      bindResourceTracker(resourceList);
+      bindCharacterInventoryEditor();
+    }
   </script>
 </body>
 </html>

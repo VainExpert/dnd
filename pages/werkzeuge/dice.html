@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8"/>
@@ -175,9 +175,76 @@
       margin: 8px 0 0;
       padding-left: 18px;
     }
+    .prob-controls{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap:10px;
+      align-items:end;
+    }
+    .prob-controls label{
+      display:grid;
+      gap:5px;
+      color:var(--muted);
+      font-size:12px;
+    }
+    .prob-summary{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap:10px;
+      margin-top:12px;
+    }
+    .prob-tile{
+      padding:10px;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:8px;
+      background:rgba(255,255,255,.03);
+    }
+    .prob-tile b{
+      display:block;
+      color:var(--muted);
+      font-size:12px;
+      margin-bottom:4px;
+    }
+    .prob-tile span{
+      font-size:20px;
+      font-weight:900;
+    }
+    .prob-bars{
+      display:grid;
+      gap:8px;
+      margin-top:12px;
+    }
+    .prob-bar-row{
+      display:grid;
+      grid-template-columns:92px minmax(0, 1fr) 68px;
+      gap:8px;
+      align-items:center;
+      font-size:12px;
+      color:var(--muted);
+    }
+    .prob-bar{
+      height:10px;
+      border-radius:999px;
+      background:rgba(255,255,255,.06);
+      overflow:hidden;
+    }
+    .prob-bar span{
+      display:block;
+      height:100%;
+      border-radius:inherit;
+      background:linear-gradient(90deg, rgba(225,91,79,.9), rgba(138,180,255,.9));
+    }
+    .check-row{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      color:var(--muted);
+      font-size:12px;
+    }
 
     @media (max-width: 820px){
       .entry-top{ align-items:flex-start; }
+      .prob-bar-row{ grid-template-columns:78px minmax(0, 1fr) 58px; }
     }
     @media (prefers-reduced-motion: reduce){
       .die{ transition:none !important; }
@@ -190,10 +257,10 @@
 <header class="topbar">
   <div class="brand">
     <div class="title">Würfel</div>
-    <div class="subtitle">Mehrfachwürfe â€¢ Münzwurf â€¢ Karten â€¢ Ausdrucke â€¢ Tabellen</div>
+    <div class="subtitle">Mehrfachwürfe • Münzwurf • Karten • Ausdrucke • Tabellen</div>
   </div>
   <div class="top-actions">
-    <a class="home-btn" href="../../index.html">â† Startseite</a>
+    <a class="home-btn" href="../../index.html">← Startseite</a>
   </div>
 </header>
 
@@ -223,7 +290,7 @@
       <div class="mini-box">
         <div class="mini-box-title">Ausdruck würfeln</div>
         <div class="mini-box-text">
-          <div class="small">Eine Zeile pro Ausdruck. Du kannst Zeilen benennen: <span class="mono">Feuerball: 8W6</span>. Unterstuetzt <span class="mono">kh/kl</span> (z. B. <span class="mono">2W20kh1</span>).</div>
+          <div class="small">Eine Zeile pro Ausdruck. Du kannst Zeilen benennen: <span class="mono">Feuerball: 8W6</span>. Unterstützt <span class="mono">kh/kl</span> (z. B. <span class="mono">2W20kh1</span>).</div>
           <textarea id="expr" class="select" placeholder="z. B.
 Angriff: 1W20+7
 Schaden: 2W10+7
@@ -261,7 +328,7 @@ Vorteil: 2W20kh1+5"></textarea>
               <div class="mini-box" style="margin:0;">
                 <div class="mini-box-title">Ergebnis</div>
                 <div class="mini-box-text">
-                  <div id="coinResult" class="mono">â€”</div>
+                  <div id="coinResult" class="mono">—</div>
                 </div>
               </div>
             </div>
@@ -287,7 +354,7 @@ Vorteil: 2W20kh1+5"></textarea>
             <div class="mini-box" style="margin:0;">
               <div class="mini-box-title">Stapel</div>
               <div class="mini-box-text">
-                <div><b>Verbleibend:</b> <span id="remainingCards" class="mono">â€”</span></div>
+                <div><b>Verbleibend:</b> <span id="remainingCards" class="mono">—</span></div>
                 <div class="muted" style="margin-top:8px;">Es wird ohne Zurücklegen gezogen. Zum Neu-Mischen zurücksetzen.</div>
               </div>
             </div>
@@ -311,6 +378,53 @@ Vorteil: 2W20kh1+5"></textarea>
     </div>
 
     <div class="grid" style="margin-top:14px;">
+      <div class="mini-box">
+        <div class="mini-box-title">Wahrscheinlichkeitsrechner</div>
+        <div class="mini-box-text">
+          <div class="prob-controls">
+            <label>
+              Art
+              <select id="probKind" class="select">
+                <option value="attack">Treffer gegen RK</option>
+                <option value="dc">DC-Chance</option>
+              </select>
+            </label>
+            <label>
+              Zielwert
+              <input id="probTarget" class="select" type="number" step="1" value="15">
+            </label>
+            <label>
+              Bonus
+              <input id="probBonus" class="select" type="number" step="1" value="5">
+            </label>
+            <label>
+              Wurf
+              <select id="probMode" class="select">
+                <option value="normal">Normal</option>
+                <option value="advantage">Vorteil</option>
+                <option value="disadvantage">Nachteil</option>
+              </select>
+            </label>
+            <label>
+              Schaden
+              <input id="probDamage" class="select mono" type="text" value="1W8+3" placeholder="z. B. 2W6+4">
+            </label>
+            <label>
+              Extra bei Treffer
+              <input id="probExtraDamage" class="select mono" type="text" value="" placeholder="z. B. 1W6">
+            </label>
+          </div>
+          <div class="tool-row" style="margin-top:10px;">
+            <label class="check-row">
+              <input id="probHalfOnSuccess" type="checkbox">
+              Bei DC-Schaden halber Schaden bei Erfolg
+            </label>
+            <button id="probAddHistory" class="btn">In Verlauf übernehmen</button>
+          </div>
+          <div id="probResult"></div>
+        </div>
+      </div>
+
       <div class="mini-box">
         <div class="mini-box-title">Aus Sammlungen extrahieren & würfeln</div>
         <div class="mini-box-text">
@@ -354,8 +468,6 @@ Vorteil: 2W20kh1+5"></textarea>
 </main>
 
 <script src="../../nav.js"></script>
-<script src="../../data/tables/tables-global.js?v=3"></script>
-
 <script type="module">
   import { escapeHtml, normalizeTable, rollTableEntry, renderTableHtml } from "../../lib.js";
   import { TABLE_FILES, TABLE_DATA_BY_FILE } from "../../data/tables/tables-data.js?v=3";
@@ -504,19 +616,59 @@ Vorteil: 2W20kh1+5"></textarea>
   }
 
   const historyEl = document.getElementById("history");
+  const SHARED_ROLL_LOG_KEY = "dnd.rollLog.v1";
+  const ACTIVE_SESSION_KEY = "dnd.sessionNotes.activeSessionId";
+
+  function readSharedRollLog(){
+    try{
+      const raw = JSON.parse(localStorage.getItem(SHARED_ROLL_LOG_KEY) || "{}");
+      if (Array.isArray(raw)) return raw;
+      if (Array.isArray(raw.entries)) return raw.entries;
+    } catch {}
+    return [];
+  }
+
+  function writeSharedRollLog(entry){
+    try{
+      const entries = readSharedRollLog();
+      entries.push(entry);
+      const trimmed = entries.slice(-500);
+      localStorage.setItem(SHARED_ROLL_LOG_KEY, JSON.stringify({ version: 1, entries: trimmed }));
+    } catch {}
+  }
+
+  function activeSessionId(){
+    try{ return localStorage.getItem(ACTIVE_SESSION_KEY) || ""; } catch { return ""; }
+  }
+
+  function rollLogId(){
+    return `roll-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
+  }
 
   function addHistory(label, expr, result){
     const div = document.createElement("div");
     div.className = "entry";
     const sub = (result.breakdown && result.breakdown.length) ? result.breakdown.join("\n") : "";
+    const formattedExpr = formatDiceExpression(expr);
+    const total = Math.round(result.total * 1000) / 1000;
     div.innerHTML = `
       <div class="entry-top">
-        <div class="entry-expr">${escapeHtml(label ? `${label}: ${formatDiceExpression(expr)}` : formatDiceExpression(expr))}</div>
-        <div class="entry-total">${escapeHtml(String(Math.round(result.total * 1000) / 1000))}</div>
+        <div class="entry-expr">${escapeHtml(label ? `${label}: ${formattedExpr}` : formattedExpr)}</div>
+        <div class="entry-total">${escapeHtml(String(total))}</div>
       </div>
       ${sub ? `<div class="entry-sub mono">${escapeHtml(sub)}</div>` : ""}
     `;
     historyEl.prepend(div);
+    writeSharedRollLog({
+      id: rollLogId(),
+      timestamp: new Date().toISOString(),
+      label: String(label || ""),
+      expression: formattedExpr,
+      total,
+      breakdown: Array.isArray(result.breakdown) ? result.breakdown : [],
+      source: "dice",
+      sessionId: activeSessionId() || undefined
+    });
   }
 
   function addTextHistory(label, total, details = ""){
@@ -530,7 +682,189 @@ Vorteil: 2W20kh1+5"></textarea>
       ${details ? `<div class="entry-sub mono">${escapeHtml(details)}</div>` : ""}
     `;
     historyEl.prepend(div);
+    const detailText = String(details || "");
+    writeSharedRollLog({
+      id: rollLogId(),
+      timestamp: new Date().toISOString(),
+      label: String(label || ""),
+      expression: detailText || String(label || ""),
+      total: String(total ?? ""),
+      breakdown: detailText ? detailText.split(/\r?\n/).filter(Boolean) : [],
+      source: "dice",
+      sessionId: activeSessionId() || undefined
+    });
   }
+
+  function pct(value){
+    return `${(value * 100).toFixed(1).replace(".0", "")}%`;
+  }
+
+  function fmtDecimal(value){
+    return String(Math.round(value * 100) / 100).replace(".", ",");
+  }
+
+  function d20Distribution(mode){
+    const counts = new Map();
+    if (mode === "normal"){
+      for (let roll = 1; roll <= 20; roll++) counts.set(roll, 1);
+      return Array.from(counts, ([roll, count]) => ({ roll, probability: count / 20 }));
+    }
+    for (let a = 1; a <= 20; a++){
+      for (let b = 1; b <= 20; b++){
+        const roll = mode === "advantage" ? Math.max(a, b) : Math.min(a, b);
+        counts.set(roll, (counts.get(roll) || 0) + 1);
+      }
+    }
+    return Array.from(counts, ([roll, count]) => ({ roll, probability: count / 400 }));
+  }
+
+  function averageDiceToken(tok){
+    const spec = parseDiceToken(tok);
+    if (!spec) return { average: 0, diceAverage: 0 };
+    const rollAverage = (spec.sides + 1) / 2;
+    const diceAverage = spec.count * rollAverage;
+    if (!spec.mode || spec.keepDropN == null){
+      return { average: diceAverage, diceAverage };
+    }
+
+    let total = 0;
+    let combinations = 0;
+    const rolls = Array(spec.count).fill(1);
+    function walk(index){
+      if (index >= rolls.length){
+        const sorted = [...rolls].sort((a, b) => a - b);
+        const n = Math.max(0, Math.min(spec.keepDropN, sorted.length));
+        let kept = sorted;
+        if (spec.mode === "kh") kept = sorted.slice(-n);
+        if (spec.mode === "kl") kept = sorted.slice(0, n);
+        if (spec.mode === "dh") kept = sorted.slice(0, sorted.length - n);
+        if (spec.mode === "dl") kept = sorted.slice(n);
+        total += kept.reduce((sum, value) => sum + value, 0);
+        combinations++;
+        return;
+      }
+      for (let value = 1; value <= spec.sides; value++){
+        rolls[index] = value;
+        walk(index + 1);
+      }
+    }
+
+    if (Math.pow(spec.sides, spec.count) <= 200000) walk(0);
+    else total = diceAverage, combinations = 1;
+    return { average: total / combinations, diceAverage };
+  }
+
+  function expectedExpression(expr){
+    const tokens = tokenize(expr || "0");
+    if (!tokens.length) return { average: 0, diceAverage: 0 };
+    if (tokens.some(t => t.type === "unknown")) throw new Error("Invalid characters in damage expression");
+
+    let diceAverage = 0;
+    const rpn = toRPN(tokens).map(t => {
+      if (t.type !== "dice") return t;
+      const avg = averageDiceToken(t.v);
+      diceAverage += avg.diceAverage;
+      return { type:"num", v:String(avg.average) };
+    });
+    const average = evalRPN(rpn).total;
+    return { average, diceAverage };
+  }
+
+  function chanceForMode(kind, mode, bonus, target){
+    const dist = d20Distribution(mode);
+    let success = 0;
+    let crit = 0;
+    for (const item of dist){
+      if (kind === "attack"){
+        if (item.roll === 20){
+          success += item.probability;
+          crit += item.probability;
+        } else if (item.roll !== 1 && item.roll + bonus >= target){
+          success += item.probability;
+        }
+      } else if (item.roll + bonus >= target){
+        success += item.probability;
+      }
+    }
+    return { success, crit };
+  }
+
+  const probKindEl = document.getElementById("probKind");
+  const probTargetEl = document.getElementById("probTarget");
+  const probBonusEl = document.getElementById("probBonus");
+  const probModeEl = document.getElementById("probMode");
+  const probDamageEl = document.getElementById("probDamage");
+  const probExtraDamageEl = document.getElementById("probExtraDamage");
+  const probHalfOnSuccessEl = document.getElementById("probHalfOnSuccess");
+  const probResultEl = document.getElementById("probResult");
+  const probAddHistoryBtn = document.getElementById("probAddHistory");
+
+  function renderProbability(){
+    const kind = probKindEl.value;
+    const mode = probModeEl.value;
+    const bonus = Number(probBonusEl.value || 0);
+    const target = Number(probTargetEl.value || 0);
+    let damage;
+    let extraDamage;
+    try{
+      damage = expectedExpression(probDamageEl.value || "0");
+      extraDamage = expectedExpression(probExtraDamageEl.value || "0");
+    } catch {
+      probResultEl.innerHTML = '<div class="small" style="margin-top:10px;">Schadensausdruck konnte nicht ausgewertet werden.</div>';
+      return null;
+    }
+
+    const current = chanceForMode(kind, mode, bonus, target);
+    const missChance = Math.max(0, 1 - current.success);
+    const nonCritSuccess = Math.max(0, current.success - current.crit);
+    const baseDamage = damage.average + extraDamage.average;
+    const critExtra = kind === "attack" ? damage.diceAverage + extraDamage.diceAverage : 0;
+    const expectedDamage = kind === "attack"
+      ? nonCritSuccess * baseDamage + current.crit * (baseDamage + critExtra)
+      : (probHalfOnSuccessEl.checked ? (missChance * baseDamage + current.success * baseDamage * 0.5) : current.success * baseDamage);
+    const labels = { normal:"Normal", advantage:"Vorteil", disadvantage:"Nachteil" };
+    const bars = ["normal", "advantage", "disadvantage"].map(key => {
+      const c = chanceForMode(kind, key, bonus, target);
+      return `
+        <div class="prob-bar-row">
+          <div>${labels[key]}</div>
+          <div class="prob-bar"><span style="width:${Math.round(c.success * 1000) / 10}%"></span></div>
+          <div class="mono">${pct(c.success)}</div>
+        </div>
+      `;
+    }).join("");
+
+    probResultEl.innerHTML = `
+      <div class="prob-summary">
+        <div class="prob-tile"><b>${kind === "attack" ? "Trefferchance" : "Erfolgschance"}</b><span class="mono">${pct(current.success)}</span></div>
+        <div class="prob-tile"><b>Kritchance</b><span class="mono">${pct(current.crit)}</span></div>
+        <div class="prob-tile"><b>Erwarteter Schaden</b><span class="mono">${fmtDecimal(expectedDamage)}</span></div>
+        <div class="prob-tile"><b>Durchschnitt bei Treffer</b><span class="mono">${fmtDecimal(baseDamage)}</span></div>
+      </div>
+      <div class="prob-bars">${bars}</div>
+    `;
+
+    return { kind, mode, bonus, target, current, baseDamage, expectedDamage, damage, extraDamage };
+  }
+
+  [probKindEl, probTargetEl, probBonusEl, probModeEl, probDamageEl, probExtraDamageEl, probHalfOnSuccessEl].forEach(el => {
+    el.addEventListener("input", renderProbability);
+    el.addEventListener("change", renderProbability);
+  });
+
+  probAddHistoryBtn.addEventListener("click", () => {
+    const r = renderProbability();
+    if (!r) return;
+    const kindLabel = r.kind === "attack" ? "Treffer gegen RK" : "DC-Chance";
+    const modeLabel = { normal:"Normal", advantage:"Vorteil", disadvantage:"Nachteil" }[r.mode];
+    addTextHistory(
+      "Wahrscheinlichkeitsrechner",
+      `${pct(r.current.success)} / ${fmtDecimal(r.expectedDamage)} Schaden`,
+      `${kindLabel} ${r.target} mit Bonus ${r.bonus}\nWurf: ${modeLabel}\nKritchance: ${pct(r.current.crit)}\nSchaden: ${formatDiceExpression(probDamageEl.value || "0")}${probExtraDamageEl.value ? ` + ${formatDiceExpression(probExtraDamageEl.value)}` : ""}`
+    );
+  });
+
+  renderProbability();
 
   function parseLines(text){
     return text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
@@ -598,7 +932,7 @@ Vorteil: 2W20kh1+5"></textarea>
     die.className = "die";
     die.innerHTML = `
       <div class="t mono">${escapeHtml(formatDiceExpression(tok))}</div>
-      <div class="v mono" data-v>â€”</div>
+      <div class="v mono" data-v>—</div>
       <div class="k mono" data-k></div>
     `;
     die._spec = spec;
@@ -706,10 +1040,10 @@ Vorteil: 2W20kh1+5"></textarea>
       results.push(doFlipOnce());
       await new Promise(r => setTimeout(r, 1120));
     }
-    coinResult.textContent = results.join(" â€¢ ");
+    coinResult.textContent = results.join(" • ");
     const heads = results.filter(r => r === "KOPF").length;
     const tails = results.length - heads;
-    addTextHistory("Münzwurf 5x", results.join(" â€¢ "), `Kopf: ${heads}\nZahl: ${tails}`);
+    addTextHistory("Münzwurf 5x", results.join(" • "), `Kopf: ${heads}\nZahl: ${tails}`);
   });
 
   const deckTypeEl = document.getElementById("deckType");
@@ -731,7 +1065,7 @@ Vorteil: 2W20kh1+5"></textarea>
     return a;
   }
 
-  const SUITS = ["â™ ","â™¥","â™¦","â™£"];
+  const SUITS = ["♠","♥","♦","♣"];
   const RANKS_52 = ["A","2","3","4","5","6","7","8","9","10","J","Q","K"];
   const RANKS_SKAT = ["7","8","9","10","J","Q","K","A"];
 
@@ -758,7 +1092,7 @@ Vorteil: 2W20kh1+5"></textarea>
         for (const r of RANKS_52) d.push(`${r}${s}`);
       }
     }
-    for (let j = 1; j <= 6; j++) d.push(`ðŸƒJOKER${j}`);
+    for (let j = 1; j <= 6; j++) d.push(`🃏JOKER${j}`);
     return d;
   }
 
@@ -779,7 +1113,7 @@ Vorteil: 2W20kh1+5"></textarea>
   }
 
   function renderList(el, cards){
-    el.innerHTML = cards.map(c => `<li>${escapeHtml(c.replace(/^ðŸƒJOKER\d+$/, "ðŸƒJOKER"))}</li>`).join("");
+    el.innerHTML = cards.map(c => `<li>${escapeHtml(c.replace(/^🃏JOKER\d+$/, "🃏JOKER"))}</li>`).join("");
   }
 
   function renderDeckUI(last, justReset = false){
@@ -804,7 +1138,7 @@ Vorteil: 2W20kh1+5"></textarea>
     const pulled = deck.splice(0, take);
     drawn.push(...pulled);
     renderDeckUI(pulled);
-    addTextHistory(`Karten ziehen (${deckTypeLabel()})`, pulled.join(" â€¢ "), `Gezogen: ${take}\nVerbleibend: ${deck.length}`);
+    addTextHistory(`Karten ziehen (${deckTypeLabel()})`, pulled.join(" • "), `Gezogen: ${take}\nVerbleibend: ${deck.length}`);
   }
 
   deckTypeEl.addEventListener("change", resetDeck);
@@ -963,7 +1297,7 @@ Vorteil: 2W20kh1+5"></textarea>
       const r = rollTableEntry(activeTable);
       tableResult.innerHTML = `
         <div class="mini-box" style="margin:0;">
-          <div class="mini-box-title">${escapeHtml(activeTable.name || "Tabelle")}${activeTable.dice ? ` (${escapeHtml(formatDiceExpression(activeTable.dice))})` : ""}${r.roll != null ? ` â€¢ Wurf ${escapeHtml(String(r.roll))}` : ""}</div>
+          <div class="mini-box-title">${escapeHtml(activeTable.name || "Tabelle")}${activeTable.dice ? ` (${escapeHtml(formatDiceExpression(activeTable.dice))})` : ""}${r.roll != null ? ` • Wurf ${escapeHtml(String(r.roll))}` : ""}</div>
           <div class="mini-box-text">
             ${renderTableHtml(activeTable, r)}
           </div>
@@ -991,63 +1325,6 @@ Vorteil: 2W20kh1+5"></textarea>
   await loadExternalFromParams();
 </script>
 
-<script>
-  (function(){
-    const api = window.DND_TABLES;
-    const tableSel = document.getElementById("tableSel");
-    const rollTableBtn = document.getElementById("rollTableBtn");
-    const tableResult = document.getElementById("tableResult");
-    if (!api || !tableSel || !rollTableBtn || !tableResult) return;
-    tableSel.innerHTML = "";
-
-    const tablesByFile = {};
-    const files = (api.files || []).slice();
-    tableSel.innerHTML = '<option value="">(Tabelle wählen)</option>';
-    for (const file of files){
-      const table = api.normalizeTable(api.dataByFile[file], file.replace(/\.json$/i, ""));
-      const opt = document.createElement("option");
-      opt.value = file;
-      opt.textContent = table?.name || file;
-      tableSel.appendChild(opt);
-      tablesByFile[file] = table;
-    }
-
-    let activeTable = null;
-    function setActiveTable(table, label){
-      activeTable = table;
-      tableResult.innerHTML = `<div class="small">Aktive Tabelle: <span class="mono">${api.escapeHtml(table?.name || label || "Tabelle")}</span></div>`;
-    }
-    function rollActiveTable(){
-      if (!activeTable && tableSel.value) activeTable = tablesByFile[tableSel.value] || null;
-      if (!activeTable) return;
-      const rolled = api.rollTableEntry(activeTable);
-      tableResult.innerHTML = `
-        <div class="mini-box" style="margin:0;">
-          <div class="mini-box-title">${api.escapeHtml(activeTable.name || "Tabelle")}${activeTable.dice ? ` (${api.escapeHtml(formatDiceExpression(activeTable.dice))})` : ""}${rolled.roll != null ? ` â€¢ Wurf ${api.escapeHtml(String(rolled.roll))}` : ""}</div>
-          <div class="mini-box-text">
-            ${api.renderTableHtml(activeTable, rolled)}
-          </div>
-        </div>
-      `;
-    }
-
-    tableSel.addEventListener("change", () => {
-      activeTable = null;
-      if (tableSel.value) setActiveTable(tablesByFile[tableSel.value], tableSel.value);
-      else tableResult.innerHTML = "";
-    });
-    rollTableBtn.addEventListener("click", rollActiveTable);
-
-    const params = new URLSearchParams(location.search);
-    const tableParam = params.get("table_file") || params.get("table");
-    const tableFile = tableParam && /\.json$/i.test(tableParam) ? tableParam : (tableParam ? `${tableParam}.json` : "");
-    if (tableFile && tablesByFile[tableFile]){
-      tableSel.value = tableFile;
-      setActiveTable(tablesByFile[tableFile], tableFile);
-      if (params.get("auto") === "1") rollActiveTable();
-    }
-  })();
-</script>
 </body>
 </html>
 

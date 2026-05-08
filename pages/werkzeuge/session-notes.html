@@ -1,0 +1,981 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Session-Notizen</title>
+  <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
+  <script src="../../theme.js?v=theme-20260422"></script>
+  <script src="../../nav.js" defer></script>
+  <style>
+    .session-shell{ display:grid; grid-template-columns:280px minmax(0,1fr); gap:12px; align-items:start; }
+    .session-list{ display:grid; gap:8px; margin-top:10px; }
+    .session-item{ width:100%; text-align:left; padding:10px; border:1px solid var(--rule); border-radius:8px; background:var(--control); color:var(--text); cursor:pointer; }
+    .session-item.active{ border-color:var(--accent-ring); background:var(--accent-soft); }
+    .session-item b{ display:block; font-size:13px; }
+    .session-item span{ display:block; color:var(--muted); font-size:11px; margin-top:3px; }
+    .toolbar{ display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:12px; }
+    .btn{ padding:9px 11px; border-radius:8px; border:1px solid var(--rule); background:var(--control); color:var(--text); cursor:pointer; font:inherit; font-size:13px; }
+    .btn:hover{ border-color:var(--accent-ring); background:var(--accent-soft); text-decoration:none; }
+    .btn.small{ padding:6px 8px; font-size:12px; }
+    .btn.danger:hover{ border-color:rgba(225,91,79,.7); background:rgba(225,91,79,.18); }
+    .tabs{ display:flex; gap:6px; flex-wrap:wrap; margin-bottom:12px; }
+    .tab{ border-radius:8px; }
+    .tab.active{ border-color:var(--accent-ring); background:var(--accent-soft); }
+    .panel{ display:none; }
+    .panel.active{ display:grid; gap:12px; }
+    .form-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; }
+    label.field{ display:grid; gap:5px; color:var(--muted); font-size:12px; }
+    textarea.select{ min-height:90px; resize:vertical; width:100%; line-height:1.35; }
+    .wide{ grid-column:1 / -1; }
+    .item-list{ display:grid; gap:8px; }
+    .note-row{ border:1px solid var(--rule-soft); border-radius:8px; background:var(--card-tint); padding:10px; display:grid; gap:8px; }
+    .row-head{ display:flex; justify-content:space-between; gap:8px; align-items:flex-start; flex-wrap:wrap; }
+    .row-title{ font-weight:800; }
+    .row-sub{ color:var(--muted); font-size:12px; margin-top:2px; }
+    .row-actions{ display:flex; gap:6px; flex-wrap:wrap; align-items:center; justify-content:flex-end; }
+    .pill-line{ display:flex; gap:6px; flex-wrap:wrap; }
+    .pill-lite{ border:1px solid var(--rule-soft); border-radius:999px; padding:3px 7px; color:var(--muted); font-size:11px; background:var(--panel-tint); }
+    .split{ display:grid; grid-template-columns:minmax(0,1fr) minmax(260px,.55fr); gap:12px; align-items:start; }
+    .log-list{ display:grid; gap:8px; max-height:560px; overflow:auto; padding-right:4px; }
+    .log-row{ border:1px solid var(--rule-soft); border-radius:8px; background:var(--card-tint); padding:9px; display:grid; gap:6px; }
+    .log-top{ display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap; }
+    .mono{ font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
+    .small{ font-size:12px; color:var(--muted); }
+    .empty{ color:var(--muted); border:1px dashed var(--rule); border-radius:8px; padding:12px; }
+    .preview{ min-height:240px; font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
+    input[type="file"]{ max-width:100%; }
+    @media (max-width:960px){ .session-shell,.split{ grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Session-Notizen</div>
+      <div class="subtitle">Szenen &bull; Hinweise &bull; NPCs &bull; Ereignisse &bull; Recap</div>
+    </div>
+    <div class="top-actions">
+      <a class="home-btn" href="../../index.html">Startseite</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar"></aside>
+    <main class="main">
+      <div class="content" style="max-width:1300px;">
+        <div class="session-shell">
+          <aside class="mini-box">
+            <div class="mini-box-title">Sessions</div>
+            <div class="toolbar">
+              <button id="newSession" class="btn small" type="button">Neue Session</button>
+              <button id="importBtn" class="btn small" type="button">JSON importieren</button>
+              <input id="importFile" type="file" accept="application/json,.json" hidden>
+            </div>
+            <div id="sessionList" class="session-list"></div>
+          </aside>
+
+          <section>
+            <div class="toolbar">
+              <button id="duplicateSession" class="btn" type="button">Session duplizieren</button>
+              <button id="exportSession" class="btn" type="button">Session exportieren</button>
+              <button id="regenRecap" class="btn" type="button">Recap aus Notizen erzeugen</button>
+              <button id="showMarkdown" class="btn" type="button">Markdown kopieren/anzeigen</button>
+              <button id="deleteSession" class="btn danger" type="button">Session l&ouml;schen</button>
+            </div>
+
+            <div class="tabs" id="tabs"></div>
+            <div id="panels"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { loadIndex, loadMany, escapeHtml } from "../../lib.js";
+
+    const STORAGE_KEY = "dnd.sessionNotes.v1";
+    const ACTIVE_SESSION_KEY = "dnd.sessionNotes.activeSessionId";
+    const ROLL_LOG_KEY = "dnd.rollLog.v1";
+    const COMBAT_LOG_KEY = "dnd.combatLog.v1";
+    const MAP_USAGE_KEY = "dnd.mapUsageLog.v1";
+    const VTT_STORAGE_KEY = "dnd.vttMaps.v1";
+    const TABS = [
+      ["overview", "&Uuml;berblick"],
+      ["scenes", "Szenen"],
+      ["secrets", "Geheimnisse & Hinweise"],
+      ["npcs", "Improvisierte NPCs"],
+      ["events", "Ereignisse"],
+      ["maps", "Verwendete Karten"],
+      ["rolls", "W&uuml;rfelverlauf"],
+      ["combat", "K&auml;mpfe/Encounter"],
+      ["recap", "Recap-Entwurf"]
+    ];
+
+    let store = loadStore();
+    let activeId = localStorage.getItem(ACTIVE_SESSION_KEY) || store.sessions[0]?.id || "";
+    let activeTab = "overview";
+    let pcs = [];
+    let npcIndex = [];
+    let rollFilter = "session";
+    let secretFilter = "open";
+    let combatFilter = "session";
+    let pendingRecap = "";
+
+    const sessionListEl = document.getElementById("sessionList");
+    const tabsEl = document.getElementById("tabs");
+    const panelsEl = document.getElementById("panels");
+    const importFileEl = document.getElementById("importFile");
+
+    function uid(prefix){
+      return `${prefix}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
+    }
+
+    function nowIso(){
+      return new Date().toISOString();
+    }
+
+    function today(){
+      return new Date().toISOString().slice(0, 10);
+    }
+
+    function asArray(value){
+      return Array.isArray(value) ? value : [];
+    }
+
+    function normalizeSession(input = {}){
+      const id = String(input.id || uid("session"));
+      return {
+        id,
+        title: String(input.title || input.titel || "Neue Session"),
+        campaign: String(input.campaign || input.arc || ""),
+        date: String(input.date || today()),
+        pcs: asArray(input.pcs || input.playerCharacters).map(String),
+        scenes: asArray(input.scenes).map(normalizeScene),
+        secrets: asArray(input.secrets || input.hints).map(normalizeSecret),
+        npcs: asArray(input.npcs || input.improvisedNpcs).map(normalizeNpc),
+        locations: asArray(input.locations).map(normalizeTextItem),
+        questions: asArray(input.questions || input.openQuestions).map(normalizeTextItem),
+        events: asArray(input.events || input.importantEvents).map(normalizeEvent),
+        loot: asArray(input.loot).map(normalizeTextItem),
+        rolls: asArray(input.rolls).map(normalizeLinkedLog),
+        combatEvents: asArray(input.combatEvents).map(normalizeLinkedLog),
+        recapDraft: String(input.recapDraft || ""),
+        updatedAt: String(input.updatedAt || nowIso())
+      };
+    }
+
+    function normalizeScene(item = {}){
+      return {
+        id: String(item.id || uid("scene")),
+        title: String(item.title || ""),
+        location: String(item.location || ""),
+        participants: String(item.participants || ""),
+        status: ["geplant", "aktiv", "erledigt", "&uuml;bersprungen", "uebersprungen"].includes(String(item.status)) ? String(item.status) : "geplant",
+        notes: String(item.notes || ""),
+        result: String(item.result || "")
+      };
+    }
+
+    function normalizeSecret(item = {}){
+      return {
+        id: String(item.id || uid("secret")),
+        text: String(item.text || item.secret || ""),
+        source: String(item.source || ""),
+        playerVisible: !!item.playerVisible,
+        discovered: !!item.discovered,
+        discoveredBy: String(item.discoveredBy || ""),
+        discoveredIn: String(item.discoveredIn || "")
+      };
+    }
+
+    function normalizeNpc(item = {}){
+      return {
+        id: String(item.id || uid("npc")),
+        name: String(item.name || ""),
+        role: String(item.role || ""),
+        faction: String(item.faction || item.location || ""),
+        voice: String(item.voice || ""),
+        motivation: String(item.motivation || ""),
+        secret: String(item.secret || ""),
+        notes: String(item.notes || ""),
+        sourceId: String(item.sourceId || "")
+      };
+    }
+
+    function normalizeEvent(item = {}){
+      return {
+        id: String(item.id || uid("event")),
+        title: String(item.title || ""),
+        text: String(item.text || item.notes || ""),
+        source: String(item.source || "manual"),
+        timestamp: String(item.timestamp || nowIso())
+      };
+    }
+
+    function normalizeTextItem(item = {}){
+      if (typeof item === "string") return { id: uid("text"), text: item };
+      return { id: String(item.id || uid("text")), text: String(item.text || item.name || "") };
+    }
+
+    function normalizeLinkedLog(item = {}){
+      return { id: String(item.id || item.timestamp || uid("log")), important: !!item.important };
+    }
+
+    function loadStore(){
+      try{
+        const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+        const sessions = asArray(raw.sessions).map(normalizeSession);
+        if (sessions.length) return { version: 1, sessions };
+      } catch {}
+      return { version: 1, sessions: [normalizeSession({ title: `Session ${today()}`, date: today() })] };
+    }
+
+    function saveStore(){
+      const active = getActiveSession();
+      if (active) active.updatedAt = nowIso();
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: 1, sessions: store.sessions }));
+      if (activeId) localStorage.setItem(ACTIVE_SESSION_KEY, activeId);
+    }
+
+    function getActiveSession(){
+      return store.sessions.find(s => s.id === activeId) || store.sessions[0] || null;
+    }
+
+    function touch(){
+      saveStore();
+      render();
+    }
+
+    function readLog(key){
+      try{
+        const raw = JSON.parse(localStorage.getItem(key) || "{}");
+        if (Array.isArray(raw)) return raw;
+        if (Array.isArray(raw.entries)) return raw.entries;
+      } catch {}
+      return [];
+    }
+
+    function writeLog(key, entries){
+      localStorage.setItem(key, JSON.stringify({ version: 1, entries }));
+    }
+
+    function fmtDateTime(value){
+      if (!value) return "";
+      const d = new Date(value);
+      if (Number.isNaN(d.getTime())) return String(value);
+      return d.toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" });
+    }
+
+    function mdLine(value){
+      return String(value || "").trim();
+    }
+
+    function linesFromTextItems(items){
+      return items.map(x => mdLine(x.text)).filter(Boolean);
+    }
+
+    function getRollId(entry){
+      return String(entry.id || entry.timestamp || `${entry.expression}-${entry.total}`);
+    }
+
+    function getCombatId(entry){
+      return String(entry.id || entry.timestamp || `${entry.combatId}-${entry.type}-${entry.text}`);
+    }
+
+    function findLinked(list, id){
+      return list.find(x => x.id === id);
+    }
+
+    async function loadReferenceData(){
+      try{
+        const files = await loadIndex("../../data/pcs/index.json");
+        pcs = (await loadMany("../../data/pcs", files)).map(p => ({
+          id: String(p.id || p.slug || p.name || ""),
+          name: String(p.name || p.character?.identity?.name || p.id || "SC")
+        })).filter(p => p.id);
+      } catch {}
+      try{
+        const files = await loadIndex("../../data/monsters/npc/index.json");
+        npcIndex = (await loadMany("../../data/monsters/npc", files)).map(n => ({
+          id: String(n.id || n.slug || n.name || ""),
+          name: String(n.name || n.id || "NPC")
+        })).filter(n => n.id);
+      } catch {}
+      render();
+    }
+
+    function render(){
+      if (!getActiveSession()){
+        store.sessions.push(normalizeSession({ title: `Session ${today()}` }));
+        activeId = store.sessions[0].id;
+        saveStore();
+      }
+      renderSessions();
+      renderTabs();
+      renderPanels();
+    }
+
+    function renderSessions(){
+      sessionListEl.innerHTML = store.sessions
+        .slice()
+        .sort((a, b) => String(b.date).localeCompare(String(a.date)) || String(b.updatedAt).localeCompare(String(a.updatedAt)))
+        .map(s => `
+          <button class="session-item ${s.id === activeId ? "active" : ""}" type="button" data-session="${escapeHtml(s.id)}">
+            <b>${escapeHtml(s.title || "Session")}</b>
+            <span>${escapeHtml(s.date || "")}${s.campaign ? ` &bull; ${escapeHtml(s.campaign)}` : ""}</span>
+          </button>
+        `).join("");
+      sessionListEl.querySelectorAll("[data-session]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          activeId = btn.dataset.session;
+          saveStore();
+          render();
+        });
+      });
+    }
+
+    function renderTabs(){
+      tabsEl.innerHTML = TABS.map(([id, label]) => `<button class="btn tab ${id === activeTab ? "active" : ""}" type="button" data-tab="${id}">${label}</button>`).join("");
+      tabsEl.querySelectorAll("[data-tab]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          activeTab = btn.dataset.tab;
+          render();
+        });
+      });
+    }
+
+    function renderPanels(){
+      const s = getActiveSession();
+      panelsEl.innerHTML = TABS.map(([id]) => `<section class="panel ${id === activeTab ? "active" : ""}" data-panel="${id}"></section>`).join("");
+      panel("overview").innerHTML = overviewHtml(s);
+      panel("scenes").innerHTML = listPanelHtml("Szenen", "scene");
+      panel("secrets").innerHTML = secretsHtml(s);
+      panel("npcs").innerHTML = listPanelHtml("Improvisierte NPCs", "npc");
+      panel("events").innerHTML = eventsHtml(s);
+      panel("maps").innerHTML = mapsHtml(s);
+      panel("rolls").innerHTML = rollsHtml(s);
+      panel("combat").innerHTML = combatHtml(s);
+      panel("recap").innerHTML = recapHtml(s);
+      bindOverview(s);
+      bindScenes(s);
+      bindSecrets(s);
+      bindNpcs(s);
+      bindTextCollections(s);
+      bindEvents(s);
+      bindRolls(s);
+      bindCombat(s);
+      bindRecap(s);
+    }
+
+    function panel(id){
+      return panelsEl.querySelector(`[data-panel="${id}"]`);
+    }
+
+    function overviewHtml(s){
+      return `
+        <div class="mini-box">
+          <div class="mini-box-title">&Uuml;berblick</div>
+          <div class="mini-box-text">
+            <div class="form-grid">
+              <label class="field">Titel<input id="sessionTitle" class="select" value="${escapeHtml(s.title)}"></label>
+              <label class="field">Kampagne / Arc<input id="sessionCampaign" class="select" value="${escapeHtml(s.campaign)}"></label>
+              <label class="field">Datum<input id="sessionDate" class="select" type="date" value="${escapeHtml(s.date)}"></label>
+              <label class="field">Teilnehmende SCs<select id="pcSelect" class="select" multiple size="6">${pcs.map(pc => `<option value="${escapeHtml(pc.id)}" ${s.pcs.includes(pc.id) ? "selected" : ""}>${escapeHtml(pc.name)}</option>`).join("")}</select></label>
+              <label class="field wide">Loot / Belohnungen<textarea id="lootText" class="select" placeholder="Eine Belohnung pro Zeile">${escapeHtml(linesFromTextItems(s.loot).join("\n"))}</textarea></label>
+              <label class="field wide">Orte<textarea id="locationsText" class="select" placeholder="Ein Ort pro Zeile">${escapeHtml(linesFromTextItems(s.locations).join("\n"))}</textarea></label>
+              <label class="field wide">Offene Fragen<textarea id="questionsText" class="select" placeholder="Eine Frage pro Zeile">${escapeHtml(linesFromTextItems(s.questions).join("\n"))}</textarea></label>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function listPanelHtml(title, kind){
+      return `
+        <div class="mini-box">
+          <div class="row-head">
+            <div class="mini-box-title">${escapeHtml(title)}</div>
+            <button class="btn small" type="button" data-add="${kind}">Hinzuf&uuml;gen</button>
+          </div>
+          <div class="mini-box-text"><div class="item-list" data-list="${kind}"></div></div>
+        </div>
+      `;
+    }
+
+    function secretsHtml(s){
+      const filtered = s.secrets.filter(item => secretFilter === "all" || (secretFilter === "open" ? !item.discovered : item.discovered));
+      return `
+        <div class="mini-box">
+          <div class="row-head">
+            <div>
+              <div class="mini-box-title">Geheimnisse & Hinweise</div>
+              <div class="toolbar">
+                ${["open", "discovered", "all"].map(f => `<button class="btn small ${secretFilter === f ? "active tab" : ""}" type="button" data-secret-filter="${f}">${f === "open" ? "Offen" : (f === "discovered" ? "Entdeckt" : "Alle")}</button>`).join("")}
+              </div>
+            </div>
+            <button class="btn small" type="button" data-add="secret">Hinzuf&uuml;gen</button>
+          </div>
+          <div class="mini-box-text"><div class="item-list" data-list="secret">${filtered.map(secretRowHtml).join("") || `<div class="empty">Keine Hinweise in diesem Filter.</div>`}</div></div>
+        </div>
+      `;
+    }
+
+    function eventsHtml(s){
+      return `
+        <div class="mini-box">
+          <div class="row-head">
+            <div class="mini-box-title">Wichtige Ereignisse</div>
+            <button class="btn small" type="button" data-add="event">Ereignis hinzuf&uuml;gen</button>
+          </div>
+          <div class="mini-box-text"><div class="item-list" data-list="event">${s.events.map(eventRowHtml).join("") || `<div class="empty">Noch keine Ereignisse.</div>`}</div></div>
+        </div>
+      `;
+    }
+
+    function rollsHtml(s){
+      const logs = readLog(ROLL_LOG_KEY).slice().reverse();
+      const shown = logs.filter(entry => {
+        const linked = findLinked(s.rolls, getRollId(entry));
+        if (rollFilter === "session") return entry.sessionId === s.id || !!linked;
+        if (rollFilter === "important") return !!linked?.important;
+        return true;
+      });
+      return `
+        <div class="split">
+          <div class="mini-box">
+            <div class="mini-box-title">W&uuml;rfelverlauf</div>
+            <div class="toolbar">
+              ${["all", "session", "important"].map(f => `<button class="btn small ${rollFilter === f ? "active tab" : ""}" type="button" data-roll-filter="${f}">${f === "all" ? "Alle" : (f === "session" ? "Aktuelle Session" : "Wichtig")}</button>`).join("")}
+            </div>
+            <div class="log-list">${shown.map(entry => rollRowHtml(s, entry)).join("") || `<div class="empty">Keine W&uuml;rfe gefunden. Neue W&uuml;rfe aus dice.html werden hier automatisch gelesen.</div>`}</div>
+          </div>
+          <div class="mini-box">
+            <div class="mini-box-title">Hinweis</div>
+            <div class="mini-box-text">Das W&uuml;rfeltool schreibt zus&auml;tzlich in <span class="mono">dnd.rollLog.v1</span>. Die aktive Session wird &uuml;ber <span class="mono">dnd.sessionNotes.activeSessionId</span> zugeordnet.</div>
+          </div>
+        </div>
+      `;
+    }
+
+    function combatHtml(s){
+      const logs = readLog(COMBAT_LOG_KEY).slice().reverse();
+      const shown = logs.filter(entry => {
+        const linked = findLinked(s.combatEvents, getCombatId(entry));
+        if (combatFilter === "session") return entry.sessionId === s.id || !!linked;
+        return true;
+      });
+      return `
+        <div class="split">
+          <div class="mini-box">
+            <div class="mini-box-title">Kampf-/Encounterereignisse</div>
+            <div class="toolbar">
+              ${["all", "session"].map(f => `<button class="btn small ${combatFilter === f ? "active tab" : ""}" type="button" data-combat-filter="${f}">${f === "all" ? "Alle" : "Aktuelle Session"}</button>`).join("")}
+            </div>
+            <div class="log-list">${shown.map(entry => combatRowHtml(s, entry)).join("") || `<div class="empty">Kein Kampf-Log gefunden. Wenn ein Kampftracker <span class="mono">dnd.combatLog.v1</span> schreibt, erscheint er hier ohne harte Abh&auml;ngigkeit.</div>`}</div>
+          </div>
+          <div class="mini-box">
+            <div class="mini-box-title">Zusammenfassung</div>
+            <div class="mini-box-text">${combatSummaryHtml(logs.filter(e => e.sessionId === s.id || findLinked(s.combatEvents, getCombatId(e))))}</div>
+          </div>
+        </div>
+      `;
+    }
+
+    function recapHtml(s){
+      return `
+        <div class="mini-box">
+          <div class="mini-box-title">Recap-Entwurf</div>
+          <div class="mini-box-text">
+            <div class="toolbar">
+              <button id="makePreview" class="btn small" type="button">Aus Notizen neu generieren</button>
+              <button id="applyPreview" class="btn small" type="button" ${pendingRecap ? "" : "disabled"}>Vorschau &uuml;bernehmen</button>
+            </div>
+            <label class="field">Editierbarer Entwurf<textarea id="recapDraft" class="select preview">${escapeHtml(s.recapDraft)}</textarea></label>
+            <label class="field">Vorschau<textarea id="recapPreview" class="select preview" readonly>${escapeHtml(pendingRecap)}</textarea></label>
+          </div>
+        </div>
+      `;
+    }
+
+    function sceneRowHtml(item, index, total){
+      return `
+        <div class="note-row" data-scene="${escapeHtml(item.id)}">
+          <div class="row-head">
+            <div>
+              <div class="row-title">${escapeHtml(item.title || "Unbenannte Szene")}</div>
+              <div class="row-sub">${escapeHtml(item.location || "Kein Ort")} &bull; ${escapeHtml(item.status)}</div>
+            </div>
+            <div class="row-actions">
+              <button class="btn small" type="button" data-scene-up="${escapeHtml(item.id)}" ${index === 0 ? "disabled" : ""}>Hoch</button>
+              <button class="btn small" type="button" data-scene-down="${escapeHtml(item.id)}" ${index === total - 1 ? "disabled" : ""}>Runter</button>
+              <button class="btn small" type="button" data-scene-event="${escapeHtml(item.id)}">Ereignis</button>
+              <button class="btn small danger" type="button" data-remove-scene="${escapeHtml(item.id)}">L&ouml;schen</button>
+            </div>
+          </div>
+          <div class="form-grid">
+            <label class="field">Titel<input class="select" data-scene-field="title" value="${escapeHtml(item.title)}"></label>
+            <label class="field">Ort<input class="select" data-scene-field="location" value="${escapeHtml(item.location)}"></label>
+            <label class="field">Status<select class="select" data-scene-field="status">${["geplant", "aktiv", "erledigt", "uebersprungen"].map(v => `<option value="${v}" ${item.status === v || (v === "uebersprungen" && item.status === "&uuml;bersprungen") ? "selected" : ""}>${v === "uebersprungen" ? "&Uuml;bersprungen" : v}</option>`).join("")}</select></label>
+            <label class="field wide">SCs / NPCs<input class="select" data-scene-field="participants" value="${escapeHtml(item.participants)}"></label>
+            <label class="field wide">Notizen<textarea class="select" data-scene-field="notes">${escapeHtml(item.notes)}</textarea></label>
+            <label class="field wide">Ergebnis<textarea class="select" data-scene-field="result">${escapeHtml(item.result)}</textarea></label>
+          </div>
+        </div>
+      `;
+    }
+
+    function secretRowHtml(item){
+      return `
+        <div class="note-row" data-secret="${escapeHtml(item.id)}">
+          <div class="row-head">
+            <div class="row-title">${escapeHtml(item.text || "Neuer Hinweis")}</div>
+            <button class="btn small danger" type="button" data-remove-secret="${escapeHtml(item.id)}">L&ouml;schen</button>
+          </div>
+          <div class="form-grid">
+            <label class="field wide">Geheimnis / Hinweis<textarea class="select" data-secret-field="text">${escapeHtml(item.text)}</textarea></label>
+            <label class="field">Quelle<input class="select" data-secret-field="source" value="${escapeHtml(item.source)}"></label>
+            <label class="field">Entdeckt von / Szene<input class="select" data-secret-field="discoveredBy" value="${escapeHtml(item.discoveredBy)}"></label>
+            <label class="field"><span>Sichtbar f&uuml;r Spieler</span><input type="checkbox" data-secret-check="playerVisible" ${item.playerVisible ? "checked" : ""}></label>
+            <label class="field"><span>Entdeckt</span><input type="checkbox" data-secret-check="discovered" ${item.discovered ? "checked" : ""}></label>
+          </div>
+        </div>
+      `;
+    }
+
+    function npcRowHtml(item){
+      return `
+        <div class="note-row" data-npc="${escapeHtml(item.id)}">
+          <div class="row-head">
+            <div>
+              <div class="row-title">${escapeHtml(item.name || "Improvisierter NPC")}</div>
+              <div class="row-sub">${escapeHtml([item.role, item.faction].filter(Boolean).join(" &bull; "))}</div>
+            </div>
+            <button class="btn small danger" type="button" data-remove-npc="${escapeHtml(item.id)}">L&ouml;schen</button>
+          </div>
+          <div class="form-grid">
+            <label class="field">Name<input class="select" data-npc-field="name" value="${escapeHtml(item.name)}"></label>
+            <label class="field">Rolle<input class="select" data-npc-field="role" value="${escapeHtml(item.role)}"></label>
+            <label class="field">Ort / Fraktion<input class="select" data-npc-field="faction" value="${escapeHtml(item.faction)}"></label>
+            <label class="field">Verlinkter Datensatz<select class="select" data-npc-field="sourceId"><option value="">Kein Link</option>${npcIndex.map(n => `<option value="${escapeHtml(n.id)}" ${item.sourceId === n.id ? "selected" : ""}>${escapeHtml(n.name)}</option>`).join("")}</select></label>
+            <label class="field wide">Stimme / Auftreten<input class="select" data-npc-field="voice" value="${escapeHtml(item.voice)}"></label>
+            <label class="field wide">Motivation<textarea class="select" data-npc-field="motivation">${escapeHtml(item.motivation)}</textarea></label>
+            <label class="field wide">Geheimnis<textarea class="select" data-npc-field="secret">${escapeHtml(item.secret)}</textarea></label>
+            <label class="field wide">Notizen<textarea class="select" data-npc-field="notes">${escapeHtml(item.notes)}</textarea></label>
+          </div>
+        </div>
+      `;
+    }
+
+    function eventRowHtml(item){
+      return `
+        <div class="note-row" data-event="${escapeHtml(item.id)}">
+          <div class="row-head">
+            <div>
+              <div class="row-title">${escapeHtml(item.title || "Ereignis")}</div>
+              <div class="row-sub">${escapeHtml(fmtDateTime(item.timestamp))} &bull; ${escapeHtml(item.source)}</div>
+            </div>
+            <button class="btn small danger" type="button" data-remove-event="${escapeHtml(item.id)}">L&ouml;schen</button>
+          </div>
+          <div class="form-grid">
+            <label class="field">Titel<input class="select" data-event-field="title" value="${escapeHtml(item.title)}"></label>
+            <label class="field wide">Text<textarea class="select" data-event-field="text">${escapeHtml(item.text)}</textarea></label>
+          </div>
+        </div>
+      `;
+    }
+
+    function rollRowHtml(s, entry){
+      const id = getRollId(entry);
+      const linked = findLinked(s.rolls, id);
+      const assigned = entry.sessionId === s.id || !!linked;
+      return `
+        <div class="log-row" data-roll="${escapeHtml(id)}">
+          <div class="log-top">
+            <b>${escapeHtml(entry.label || entry.expression || "Wurf")}</b>
+            <span class="mono">${escapeHtml(String(entry.total ?? ""))}</span>
+          </div>
+          <div class="small">${escapeHtml(fmtDateTime(entry.timestamp))} &bull; ${escapeHtml(entry.expression || "")}</div>
+          ${entry.breakdown ? `<div class="mono small">${escapeHtml(Array.isArray(entry.breakdown) ? entry.breakdown.join("\n") : String(entry.breakdown))}</div>` : ""}
+          <div class="row-actions">
+            <button class="btn small" type="button" data-roll-assign="${escapeHtml(id)}">${assigned ? "Zugeordnet" : "Session zuordnen"}</button>
+            <button class="btn small" type="button" data-roll-important="${escapeHtml(id)}">${linked?.important ? "Wichtig" : "Als wichtig markieren"}</button>
+            <button class="btn small" type="button" data-roll-event="${escapeHtml(id)}">In Recap &uuml;bernehmen</button>
+          </div>
+        </div>
+      `;
+    }
+
+    function combatRowHtml(s, entry){
+      const id = getCombatId(entry);
+      const linked = findLinked(s.combatEvents, id);
+      return `
+        <div class="log-row" data-combat="${escapeHtml(id)}">
+          <div class="log-top">
+            <b>${escapeHtml(entry.text || entry.type || "Kampfereignis")}</b>
+            <span class="small">${escapeHtml(entry.round != null ? `Runde ${entry.round}` : "")}</span>
+          </div>
+          <div class="small">${escapeHtml(fmtDateTime(entry.timestamp))}${entry.encounterName ? ` &bull; ${escapeHtml(entry.encounterName)}` : ""}</div>
+          <div class="row-actions">
+            <button class="btn small" type="button" data-combat-assign="${escapeHtml(id)}">${entry.sessionId === s.id || linked ? "Zugeordnet" : "Session zuordnen"}</button>
+            <button class="btn small" type="button" data-combat-event="${escapeHtml(id)}">Als Recap-Stichpunkt</button>
+          </div>
+        </div>
+      `;
+    }
+
+    function combatSummaryHtml(entries){
+      if (!entries.length) return "Noch keine Kampfereignisse f&uuml;r diese Session.";
+      const byCombat = new Map();
+      for (const entry of entries){
+        const id = entry.combatId || entry.encounterName || "combat";
+        if (!byCombat.has(id)) byCombat.set(id, []);
+        byCombat.get(id).push(entry);
+      }
+      return Array.from(byCombat, ([id, rows]) => {
+        const name = rows.find(r => r.encounterName)?.encounterName || id;
+        const rounds = Math.max(0, ...rows.map(r => Number(r.round) || 0));
+        const defeated = rows.filter(r => /besiegt|defeated|stabilisiert/i.test(`${r.type} ${r.text}`)).length;
+        const effects = rows.filter(r => /zustand|effekt|concentration|konzentration/i.test(`${r.type} ${r.text}`)).length;
+        const actors = new Set(rows.flatMap(r => [r.actor, r.target].filter(Boolean)));
+        return `<div class="note-row"><b>${escapeHtml(name)}</b><div class="pill-line"><span class="pill-lite">${rounds} Runden</span><span class="pill-lite">${actors.size} Beteiligte</span><span class="pill-lite">${defeated} besiegt/stabilisiert</span><span class="pill-lite">${effects} Effekte</span></div></div>`;
+      }).join("");
+    }
+
+    function readVttStore(){
+      try{
+        const raw = JSON.parse(localStorage.getItem(VTT_STORAGE_KEY) || "{}");
+        return raw.maps && typeof raw.maps === "object" ? raw.maps : {};
+      } catch {
+        return {};
+      }
+    }
+
+    function mapCounts(mapData){
+      const counts = { tokens: 0, markers: 0, notes: 0 };
+      for (const obj of asArray(mapData?.objects)){
+        if (obj.type === "token" || obj.type === "icon") counts.tokens += 1;
+        else if (obj.type === "note") counts.notes += 1;
+        else if (obj.type === "marker" || obj.type === "shape") counts.markers += 1;
+      }
+      return counts;
+    }
+
+    function mapUsageRows(s){
+      const logs = readLog(MAP_USAGE_KEY);
+      const scoped = logs.filter(entry => entry.sessionId === s.id);
+      const used = scoped.length ? scoped : logs.filter(entry => !entry.sessionId || entry.sessionId === activeId);
+      const vttMaps = readVttStore();
+      const byMap = new Map();
+      for (const entry of used){
+        const id = String(entry.mapId || "");
+        if (!id) continue;
+        const current = byMap.get(id) || { mapId: id, mapName: entry.mapName || id, last: "", actions: [] };
+        current.mapName = entry.mapName || current.mapName;
+        current.last = !current.last || String(entry.timestamp || "").localeCompare(current.last) > 0 ? String(entry.timestamp || "") : current.last;
+        current.actions.push(entry);
+        byMap.set(id, current);
+      }
+      return Array.from(byMap.values()).map(row => ({ ...row, counts: mapCounts(vttMaps[row.mapId]) }))
+        .sort((a, b) => String(b.last).localeCompare(String(a.last)));
+    }
+
+    function mapsHtml(s){
+      const rows = mapUsageRows(s);
+      return `
+        <div class="mini-box">
+          <div class="mini-box-title">Verwendete Karten</div>
+          <div class="mini-box-text">
+            <div class="item-list">
+              ${rows.map(mapUsageRowHtml).join("") || `<div class="empty">Noch keine Karten im VTT geoeffnet. Der Kartenmodus schreibt neue Eintraege automatisch hierher.</div>`}
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function mapUsageRowHtml(row){
+      const opened = row.actions.filter(x => x.action === "opened").length;
+      const added = row.actions.filter(x => x.action === "object_added").length;
+      const notes = row.actions.filter(x => x.action === "note_added").length;
+      return `
+        <div class="note-row">
+          <div class="row-head">
+            <div>
+              <div class="row-title">${escapeHtml(row.mapName || row.mapId)}</div>
+              <div class="row-sub">${escapeHtml(fmtDateTime(row.last))} &bull; ${opened}x geoeffnet &bull; ${added} Objekte &bull; ${notes} Notizen</div>
+            </div>
+            <a class="btn small" href="./vtt-map.html?map=${encodeURIComponent(row.mapId)}">Im Kartenmodus &ouml;ffnen</a>
+          </div>
+          <div class="pill-line">
+            <span class="pill-lite">${row.counts.tokens} Tokens</span>
+            <span class="pill-lite">${row.counts.markers} Marker/Flaechen</span>
+            <span class="pill-lite">${row.counts.notes} Notizen</span>
+          </div>
+        </div>
+      `;
+    }
+
+    function bindOverview(s){
+      bindInput("sessionTitle", v => s.title = v);
+      bindInput("sessionCampaign", v => s.campaign = v);
+      bindInput("sessionDate", v => s.date = v);
+      const pcSelect = document.getElementById("pcSelect");
+      pcSelect?.addEventListener("change", () => {
+        s.pcs = Array.from(pcSelect.selectedOptions).map(o => o.value);
+        saveStore();
+        renderSessions();
+      });
+      bindLines("lootText", lines => s.loot = lines.map(text => ({ id: uid("loot"), text })));
+      bindLines("locationsText", lines => s.locations = lines.map(text => ({ id: uid("loc"), text })));
+      bindLines("questionsText", lines => s.questions = lines.map(text => ({ id: uid("question"), text })));
+    }
+
+    function bindInput(id, setter){
+      const el = document.getElementById(id);
+      el?.addEventListener("input", () => {
+        setter(el.value);
+        saveStore();
+        renderSessions();
+      });
+    }
+
+    function bindLines(id, setter){
+      const el = document.getElementById(id);
+      el?.addEventListener("input", () => {
+        setter(el.value.split(/\r?\n/).map(x => x.trim()).filter(Boolean));
+        saveStore();
+      });
+    }
+
+    function bindScenes(s){
+      const list = panel("scenes").querySelector("[data-list='scene']");
+      if (list) list.innerHTML = s.scenes.map((item, i) => sceneRowHtml(item, i, s.scenes.length)).join("") || `<div class="empty">Noch keine Szenen.</div>`;
+      panel("scenes").querySelector("[data-add='scene']")?.addEventListener("click", () => { s.scenes.push(normalizeScene({ title: "Neue Szene" })); touch(); });
+      list?.querySelectorAll("[data-scene]").forEach(row => {
+        const item = s.scenes.find(x => x.id === row.dataset.scene);
+        if (!item) return;
+        row.querySelectorAll("[data-scene-field]").forEach(el => el.addEventListener("input", () => { item[el.dataset.sceneField] = el.value; saveStore(); renderSessions(); }));
+      });
+      list?.querySelectorAll("[data-remove-scene]").forEach(btn => btn.addEventListener("click", () => confirmRemove(() => { s.scenes = s.scenes.filter(x => x.id !== btn.dataset.removeScene); touch(); })));
+      list?.querySelectorAll("[data-scene-up]").forEach(btn => btn.addEventListener("click", () => moveById(s.scenes, btn.dataset.sceneUp, -1)));
+      list?.querySelectorAll("[data-scene-down]").forEach(btn => btn.addEventListener("click", () => moveById(s.scenes, btn.dataset.sceneDown, 1)));
+      list?.querySelectorAll("[data-scene-event]").forEach(btn => btn.addEventListener("click", () => {
+        const item = s.scenes.find(x => x.id === btn.dataset.sceneEvent);
+        if (!item) return;
+        s.events.unshift(normalizeEvent({ title: item.title || "Szenenereignis", text: [item.result, item.notes].filter(Boolean).join("\n"), source: "scene" }));
+        activeTab = "events";
+        touch();
+      }));
+    }
+
+    function bindSecrets(s){
+      panel("secrets").querySelector("[data-add='secret']")?.addEventListener("click", () => { s.secrets.push(normalizeSecret({ text: "Neuer Hinweis" })); touch(); });
+      panel("secrets").querySelectorAll("[data-secret-filter]").forEach(btn => btn.addEventListener("click", () => { secretFilter = btn.dataset.secretFilter; render(); }));
+      panel("secrets").querySelectorAll("[data-secret]").forEach(row => {
+        const item = s.secrets.find(x => x.id === row.dataset.secret);
+        if (!item) return;
+        row.querySelectorAll("[data-secret-field]").forEach(el => el.addEventListener("input", () => { item[el.dataset.secretField] = el.value; saveStore(); }));
+        row.querySelectorAll("[data-secret-check]").forEach(el => el.addEventListener("change", () => { item[el.dataset.secretCheck] = el.checked; saveStore(); render(); }));
+      });
+      panel("secrets").querySelectorAll("[data-remove-secret]").forEach(btn => btn.addEventListener("click", () => confirmRemove(() => { s.secrets = s.secrets.filter(x => x.id !== btn.dataset.removeSecret); touch(); })));
+    }
+
+    function bindNpcs(s){
+      const list = panel("npcs").querySelector("[data-list='npc']");
+      if (list) list.innerHTML = s.npcs.map(npcRowHtml).join("") || `<div class="empty">Noch keine improvisierten NPCs.</div>`;
+      panel("npcs").querySelector("[data-add='npc']")?.addEventListener("click", () => { s.npcs.push(normalizeNpc({ name: "Neuer NPC" })); touch(); });
+      list?.querySelectorAll("[data-npc]").forEach(row => {
+        const item = s.npcs.find(x => x.id === row.dataset.npc);
+        if (!item) return;
+        row.querySelectorAll("[data-npc-field]").forEach(el => el.addEventListener("input", () => { item[el.dataset.npcField] = el.value; saveStore(); renderSessions(); }));
+        row.querySelectorAll("select[data-npc-field]").forEach(el => el.addEventListener("change", () => { item[el.dataset.npcField] = el.value; saveStore(); }));
+      });
+      list?.querySelectorAll("[data-remove-npc]").forEach(btn => btn.addEventListener("click", () => confirmRemove(() => { s.npcs = s.npcs.filter(x => x.id !== btn.dataset.removeNpc); touch(); })));
+    }
+
+    function bindTextCollections(){
+    }
+
+    function bindEvents(s){
+      panel("events").querySelector("[data-add='event']")?.addEventListener("click", () => { s.events.unshift(normalizeEvent({ title: "Neues Ereignis" })); touch(); });
+      panel("events").querySelectorAll("[data-event]").forEach(row => {
+        const item = s.events.find(x => x.id === row.dataset.event);
+        if (!item) return;
+        row.querySelectorAll("[data-event-field]").forEach(el => el.addEventListener("input", () => { item[el.dataset.eventField] = el.value; saveStore(); }));
+      });
+      panel("events").querySelectorAll("[data-remove-event]").forEach(btn => btn.addEventListener("click", () => confirmRemove(() => { s.events = s.events.filter(x => x.id !== btn.dataset.removeEvent); touch(); })));
+    }
+
+    function bindRolls(s){
+      panel("rolls").querySelectorAll("[data-roll-filter]").forEach(btn => btn.addEventListener("click", () => { rollFilter = btn.dataset.rollFilter; render(); }));
+      const logs = readLog(ROLL_LOG_KEY);
+      panel("rolls").querySelectorAll("[data-roll-assign]").forEach(btn => btn.addEventListener("click", () => assignRoll(s, logs, btn.dataset.rollAssign, false)));
+      panel("rolls").querySelectorAll("[data-roll-important]").forEach(btn => btn.addEventListener("click", () => assignRoll(s, logs, btn.dataset.rollImportant, true)));
+      panel("rolls").querySelectorAll("[data-roll-event]").forEach(btn => btn.addEventListener("click", () => {
+        const entry = logs.find(x => getRollId(x) === btn.dataset.rollEvent);
+        if (!entry) return;
+        assignRoll(s, logs, getRollId(entry), true, true);
+        s.events.unshift(normalizeEvent({ title: `Wichtiger Wurf: ${entry.label || entry.expression || ""}`, text: `${entry.expression || ""} = ${entry.total ?? ""}`, source: "roll", timestamp: entry.timestamp || nowIso() }));
+        activeTab = "events";
+        touch();
+      }));
+    }
+
+    function assignRoll(s, logs, id, important, silent = false){
+      const linked = findLinked(s.rolls, id);
+      if (linked) linked.important = important ? !linked.important : linked.important;
+      else s.rolls.push({ id, important });
+      logs.forEach(entry => { if (getRollId(entry) === id) entry.sessionId = s.id; });
+      writeLog(ROLL_LOG_KEY, logs);
+      if (!silent) touch();
+      else saveStore();
+    }
+
+    function bindCombat(s){
+      panel("combat").querySelectorAll("[data-combat-filter]").forEach(btn => btn.addEventListener("click", () => { combatFilter = btn.dataset.combatFilter; render(); }));
+      const logs = readLog(COMBAT_LOG_KEY);
+      panel("combat").querySelectorAll("[data-combat-assign]").forEach(btn => btn.addEventListener("click", () => {
+        const id = btn.dataset.combatAssign;
+        if (!findLinked(s.combatEvents, id)) s.combatEvents.push({ id, important: false });
+        logs.forEach(entry => { if (getCombatId(entry) === id) entry.sessionId = s.id; });
+        writeLog(COMBAT_LOG_KEY, logs);
+        touch();
+      }));
+      panel("combat").querySelectorAll("[data-combat-event]").forEach(btn => btn.addEventListener("click", () => {
+        const entry = logs.find(x => getCombatId(x) === btn.dataset.combatEvent);
+        if (!entry) return;
+        if (!findLinked(s.combatEvents, getCombatId(entry))) s.combatEvents.push({ id: getCombatId(entry), important: true });
+        s.events.unshift(normalizeEvent({ title: entry.encounterName || "Kampfereignis", text: entry.text || entry.type || "", source: "combat", timestamp: entry.timestamp || nowIso() }));
+        activeTab = "events";
+        touch();
+      }));
+    }
+
+    function bindRecap(s){
+      document.getElementById("recapDraft")?.addEventListener("input", e => { s.recapDraft = e.target.value; saveStore(); });
+      document.getElementById("makePreview")?.addEventListener("click", () => { pendingRecap = generateRecap(s); render(); });
+      document.getElementById("applyPreview")?.addEventListener("click", () => {
+        if (!pendingRecap) return;
+        if (s.recapDraft && !confirm("Den bestehenden Recap-Entwurf mit der Vorschau ersetzen?")) return;
+        s.recapDraft = pendingRecap;
+        pendingRecap = "";
+        touch();
+      });
+    }
+
+    function moveById(list, id, dir){
+      const index = list.findIndex(x => x.id === id);
+      const next = index + dir;
+      if (index < 0 || next < 0 || next >= list.length) return;
+      [list[index], list[next]] = [list[next], list[index]];
+      touch();
+    }
+
+    function confirmRemove(fn){
+      if (confirm("Diesen Eintrag wirklich loeschen?")) fn();
+    }
+
+    function generateRecap(s){
+      const pcNames = s.pcs.map(id => pcs.find(pc => pc.id === id)?.name || id);
+      const discovered = s.secrets.filter(x => x.discovered);
+      const linkedRolls = readLog(ROLL_LOG_KEY).filter(r => findLinked(s.rolls, getRollId(r))?.important || r.sessionId === s.id);
+      const combatEntries = readLog(COMBAT_LOG_KEY).filter(r => r.sessionId === s.id || findLinked(s.combatEvents, getCombatId(r)));
+      const usedMaps = mapUsageRows(s);
+      const sections = [
+        `# ${mdLine(s.title) || "Session"} (${mdLine(s.date) || today()})`,
+        pcNames.length ? `## Teilnehmende SCs\n${pcNames.map(x => `- ${x}`).join("\n")}` : "",
+        `## Kurzfassung\n${s.events.slice(0, 5).map(e => `- ${mdLine(e.title || e.text)}`).join("\n") || "- "}`,
+        usedMaps.length ? `## Verwendete Karten\n${usedMaps.slice(0, 12).map(x => `- ${mdLine(x.mapName || x.mapId)} (${x.counts.tokens} Tokens, ${x.counts.markers} Marker, ${x.counts.notes} Notizen)`).join("\n")}` : "",
+        s.scenes.length ? `## Wichtige Szenen\n${s.scenes.filter(x => x.status !== "geplant").map(x => `- **${mdLine(x.title) || "Szene"}**${x.location ? ` (${x.location})` : ""}: ${mdLine(x.result || x.notes)}`).join("\n")}` : "",
+        discovered.length ? `## Entdeckte Hinweise\n${discovered.map(x => `- ${mdLine(x.text)}${x.discoveredBy ? ` (${x.discoveredBy})` : ""}`).join("\n")}` : "",
+        s.npcs.length ? `## Improvisierte NPCs\n${s.npcs.map(x => `- **${mdLine(x.name) || "NPC"}**${x.role ? `, ${x.role}` : ""}${x.faction ? ` (${x.faction})` : ""}: ${mdLine(x.motivation || x.notes || x.secret)}`).join("\n")}` : "",
+        combatEntries.length ? `## Kaempfe/Encounter\n${combatEntries.slice(0, 12).map(x => `- ${mdLine(x.encounterName || x.type || "Kampf")}: ${mdLine(x.text)}`).join("\n")}` : "",
+        linkedRolls.length ? `## Wichtige Wuerfe\n${linkedRolls.slice(0, 12).map(x => `- ${mdLine(x.label || x.expression || "Wurf")}: ${mdLine(x.expression)} = ${x.total ?? ""}`).join("\n")}` : "",
+        linesFromTextItems(s.questions).length ? `## Offene Fragen / Naechste Schritte\n${linesFromTextItems(s.questions).map(x => `- ${x}`).join("\n")}` : "",
+        linesFromTextItems(s.loot).length ? `## Loot / Belohnungen\n${linesFromTextItems(s.loot).map(x => `- ${x}`).join("\n")}` : ""
+      ];
+      return sections.filter(Boolean).join("\n\n") + "\n";
+    }
+
+    function exportActiveSession(){
+      const s = getActiveSession();
+      const blob = new Blob([JSON.stringify({ version: 1, session: s }, null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = `${(s.title || "session").toLowerCase().replace(/[^a-z0-9]+/gi, "-")}.json`;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+
+    function importJson(file){
+      const reader = new FileReader();
+      reader.onload = () => {
+        try{
+          const raw = JSON.parse(String(reader.result || "{}"));
+          const imported = raw.session ? [raw.session] : asArray(raw.sessions);
+          if (!imported.length) throw new Error("No sessions");
+          const normalized = imported.map(normalizeSession).map(s => ({ ...s, id: uid("session") }));
+          store.sessions.unshift(...normalized);
+          activeId = normalized[0].id;
+          saveStore();
+          render();
+        } catch {
+          alert("Import fehlgeschlagen: Die Datei enthaelt keine lesbaren Sessiondaten.");
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    document.getElementById("newSession").addEventListener("click", () => {
+      const s = normalizeSession({ title: `Session ${today()}`, date: today() });
+      store.sessions.unshift(s);
+      activeId = s.id;
+      activeTab = "overview";
+      touch();
+    });
+    document.getElementById("duplicateSession").addEventListener("click", () => {
+      const copy = normalizeSession(JSON.parse(JSON.stringify(getActiveSession())));
+      copy.id = uid("session");
+      copy.title = `${copy.title} (Kopie)`;
+      store.sessions.unshift(copy);
+      activeId = copy.id;
+      touch();
+    });
+    document.getElementById("deleteSession").addEventListener("click", () => {
+      if (store.sessions.length <= 1){
+        alert("Die letzte Session kann nicht geloescht werden.");
+        return;
+      }
+      confirmRemove(() => {
+        store.sessions = store.sessions.filter(s => s.id !== activeId);
+        activeId = store.sessions[0]?.id || "";
+        touch();
+      });
+    });
+    document.getElementById("exportSession").addEventListener("click", exportActiveSession);
+    document.getElementById("importBtn").addEventListener("click", () => importFileEl.click());
+    importFileEl.addEventListener("change", () => {
+      const [file] = importFileEl.files || [];
+      if (file) importJson(file);
+      importFileEl.value = "";
+    });
+    document.getElementById("regenRecap").addEventListener("click", () => {
+      pendingRecap = generateRecap(getActiveSession());
+      activeTab = "recap";
+      render();
+    });
+    document.getElementById("showMarkdown").addEventListener("click", async () => {
+      const s = getActiveSession();
+      const text = s.recapDraft || generateRecap(s);
+      pendingRecap = text;
+      activeTab = "recap";
+      render();
+      try{ await navigator.clipboard.writeText(text); } catch {}
+    });
+
+    render();
+    await loadReferenceData();
+  </script>
+</body>
+</html>

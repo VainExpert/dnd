@@ -1,0 +1,54 @@
+{
+  "id": "schattenmoor-hexer",
+  "type": "feat",
+  "name": "Schattenmoor-Hexer",
+  "original_name": "Shadowmoor Hexer",
+  "rules_version": "2024",
+  "source": "Lorwyn - First Light",
+  "source_url": "http://dnd2024.wikidot.com/feat:shadowmoor-hexer",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Exotisch",
+  "prerequisites": [],
+  "summary": "Ursprungstalent",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Ursprungstalent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Verhexen. Sie haben immer den Hex-Zauber vorbereitet. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wenn Sie dieses Talent auswählen). Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können den Zauber auch mit beliebigen Zauberslots wirken, die Sie haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fluchmagie. Wenn eine Kreatur, die du mit Verhexung verflucht hast, dich mit einem Angriffswurf trifft, erleidet die Kreatur psychischen Schaden in Höhe deines Uebungsbonus. Eine Kreatur erleidet diesen Schaden nur einmal pro Spielzug."
+    }
+  ],
+  "text": "Ursprungstalent\n\nSie profitieren von folgenden Vorteilen.\n\nVerhexen. Sie haben immer den Hex-Zauber vorbereitet. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wenn Sie dieses Talent auswählen). Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können den Zauber auch mit beliebigen Zauberslots wirken, die Sie haben.\n\nFluchmagie. Wenn eine Kreatur, die du mit Verhexung verflucht hast, dich mit einem Angriffswurf trifft, erleidet die Kreatur psychischen Schaden in Höhe deines Uebungsbonus. Eine Kreatur erleidet diesen Schaden nur einmal pro Spielzug.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

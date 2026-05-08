@@ -31,18 +31,24 @@
 
   <script src="../../nav.js"></script>
   <script type="module">
-    import { escapeHtml, loadIndex, renderRichText, slugify } from "../../lib.js?v=character-options-20260429";
+    import { buildLookupIndex, escapeHtml, loadIndex, renderRichText, slugify } from "../../lib.js?v=inline-refs-20260430";
 
     const COLLECTIONS = [
       { kind: "class", label: "Klassen", singular: "Klasse", basePath: "../../data/classes", indexPath: "../../data/classes/index.json" },
+      { kind: "subclass", label: "Unterklassen", singular: "Unterklasse", basePath: "../../data/classes/subclasses", indexPath: "../../data/classes/subclasses/index.json" },
       { kind: "background", label: "Hintergruende", singular: "Hintergrund", basePath: "../../data/backgrounds", indexPath: "../../data/backgrounds/index.json" },
       { kind: "feat", label: "Talente", singular: "Talent", basePath: "../../data/feats", indexPath: "../../data/feats/index.json" },
       { kind: "race", label: "Voelker", singular: "Volk", basePath: "../../data/races", indexPath: "../../data/races/index.json" }
+    ];
+    const EXTRA_LOOKUP_COLLECTIONS = [
+      { kind: "spell", label: "Zauber", singular: "Zauber", basePath: "../../data/spells", indexPath: "../../data/spells/index.json" },
+      { kind: "item", label: "Gegenstaende", singular: "Gegenstand", basePath: "../../data/items", indexPath: "../../data/items/index.json" }
     ];
 
     const grid = document.getElementById("grid");
     const qEl = document.getElementById("q");
     const kindEl = document.getElementById("kind");
+    const optionLookups = {};
 
     for (const collection of COLLECTIONS) {
       const option = document.createElement("option");
@@ -103,7 +109,7 @@
             <div class="mini-sub">${escapeHtml(metaParts(entry).join(" - "))}</div>
           </div>
           <div class="mini-body">
-            ${text ? `<div class="mini-box"><div class="mini-box-title">Kurztext</div><div class="mini-box-text">${renderRichText(text, { inlineOnly: true })}</div></div>` : ""}
+            ${text ? `<div class="mini-box"><div class="mini-box-title">Kurztext</div><div class="mini-box-text">${renderRichText(text, { lookups: optionLookups, inlineOnly: true })}</div></div>` : ""}
             ${entry.sourceFile ? `<div class="mini-footer muted">Datei: ${escapeHtml(entry.sourceFile)}</div>` : ""}
           </div>
         </div>
@@ -133,8 +139,31 @@
       }
     }
 
+    async function loadLookupCollection(collection){
+      try {
+        const files = await loadIndex(collection.indexPath);
+        const entries = await Promise.all(files.map(file => loadOptionFile(collection, file)));
+        return entries.filter(entry => entry && (entry.id || entry.name));
+      } catch (error) {
+        console.warn(`${collection.label} konnten nicht fuer Inline-Links geladen werden.`, error);
+        return [];
+      }
+    }
+
     const entries = (await Promise.all(COLLECTIONS.map(loadCollection))).flat()
       .sort((a, b) => String(a.name).localeCompare(String(b.name), "de"));
+
+    for (const collection of COLLECTIONS) {
+      optionLookups[collection.kind] = buildLookupIndex(entries
+        .filter(entry => entry.collectionKind === collection.kind)
+        .map(entry => ({ id: entry.id, name: entry.name, aliases: entry.aliases })));
+    }
+
+    for (const collection of EXTRA_LOOKUP_COLLECTIONS) {
+      const lookupEntries = await loadLookupCollection(collection);
+      optionLookups[collection.kind] = buildLookupIndex(lookupEntries
+        .map(entry => ({ id: entry.id, name: entry.name, aliases: entry.aliases })));
+    }
 
     function matches(entry, query, kind){
       if (kind && entry.collectionKind !== kind) return false;
@@ -158,7 +187,7 @@
       const kind = kindEl.value;
       const filtered = entries.filter(entry => matches(entry, query, kind));
       if (!entries.length) {
-        grid.innerHTML = `<p>Keine Charakteroptionen geladen. Die Sammlungsseiten sind bereit; die Indexdateien unter <code>data/classes</code>, <code>data/backgrounds</code>, <code>data/feats</code> und <code>data/races</code> enthalten aktuell keine Eintraege.</p>`;
+        grid.innerHTML = `<p>Keine Charakteroptionen geladen. Die Sammlungsseiten sind bereit; die Indexdateien unter <code>data/classes</code>, <code>data/classes/subclasses</code>, <code>data/backgrounds</code>, <code>data/feats</code> und <code>data/races</code> enthalten aktuell keine Eintraege.</p>`;
         return;
       }
       grid.innerHTML = filtered.map(card).join("") || "<p>Keine Treffer.</p>";

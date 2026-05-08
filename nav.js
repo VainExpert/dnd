@@ -10,14 +10,13 @@
       title: "Regeln",
       links: [
         { label: "Regelübersicht", href: "index.html#content/rules/index.md" },
-        { label: "Hausregeln", href: "index.html#content/house-rules/index.md" },
-        { label: "Gegenstände & Fertigung", href: "index.html#content/treasure-crafting/index.md" },
-        { label: "Reise & Auszeit", href: "index.html#content/travel-downtime/index.md" },
-        { label: "Charakteroptionen", href: "index.html#content/character-options/index.md" },
+        { label: "Hausregeln", href: "index.html#content/rules/house-rules/index.md" },
+        { label: "Gegenstände & Fertigung", href: "index.html#content/rules/treasure-crafting/index.md" },
+        { label: "Reise & Auszeit", href: "index.html#content/rules/travel-downtime/index.md" },
+        { label: "Charakteroptionen", href: "index.html#content/rules/character-options/index.md" },
         { label: "Kampfregeln", href: "index.html#content/rules/combat.md" },
         { label: "Zauberregeln", href: "index.html#content/rules/spells.md" },
-        { label: "Statuseffekte", href: "index.html#content/rules/status-effects.md" },
-        { label: "Kritische Treffer", href: "index.html#content/rules/combat.md#kritische-treffer" }
+        { label: "Statuseffekte", href: "index.html#content/rules/status-effects.md" }
       ]
     },
     {
@@ -25,6 +24,8 @@
       links: [
         { label: "Sicherheit", href: "index.html#content/safety/index.md" },
         { label: "Lore", href: "index.html#content/lore/index.md" },
+        { label: "Kampagnenkalender", href: "pages/kampagne/calendar.html" },
+        { label: "Quests & Fronten", href: "pages/kampagne/quests.html" },
         { label: "Handouts", href: "index.html#content/handouts/index.md" },
         { label: "Rückblicke", href: "index.html#content/recaps/index.md" }
       ]
@@ -52,7 +53,12 @@
     {
       title: "Werkzeuge",
       links: [
+        { label: "GM Screen", href: "pages/werkzeuge/gm-screen.html" },
+        { label: "Session-Notizen", href: "pages/werkzeuge/session-notes.html" },
+        { label: "Kartenmodus", href: "pages/werkzeuge/vtt-map.html" },
         { label: "Generatoren", href: "pages/werkzeuge/tools.html" },
+        { label: "Kampftracker", href: "pages/werkzeuge/combat-tracker.html" },
+        { label: "Inventar", href: "pages/werkzeuge/inventory.html" },
         { label: "Charakter erstellen", href: "pages/werkzeuge/character-builder.html", child: true },
         { label: "NSC/Monster erstellen", href: "pages/werkzeuge/creature-builder.html", child: true },
         { label: "Würfel", href: "pages/werkzeuge/dice.html" },

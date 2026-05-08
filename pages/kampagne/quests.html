@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Quests &amp; Fronten</title>
+  <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
+  <script src="../../theme.js?v=theme-20260422"></script>
+  <script src="../../nav.js" defer></script>
+  <style>
+    .tool-shell{display:grid;gap:12px}
+    .toolbar,.tabs,.row-actions,.pill-line{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .btn{padding:9px 11px;border-radius:8px;border:1px solid var(--rule);background:var(--control);color:var(--text);cursor:pointer;font:inherit;font-size:13px}
+    .btn:hover,.btn.active{border-color:var(--accent-ring);background:var(--accent-soft);text-decoration:none}
+    .btn.small{padding:6px 8px;font-size:12px}
+    .btn.danger:hover{border-color:rgba(225,91,79,.7);background:rgba(225,91,79,.18)}
+    .panel{border:1px solid var(--rule);border-radius:8px;background:var(--panel-tint);padding:12px}
+    .panel h1,.panel h2{margin-top:0}
+    .tab-panel{display:none}
+    .tab-panel.active{display:grid;gap:10px}
+    .control-row{display:grid;grid-template-columns:minmax(220px,1fr) repeat(2,minmax(160px,.35fr));gap:8px;align-items:center}
+    .list{display:grid;gap:9px}
+    .entry{border:1px solid var(--rule-soft);border-radius:8px;background:var(--card-tint);padding:10px;display:grid;gap:8px}
+    .entry-head{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;flex-wrap:wrap}
+    .entry-title{font-weight:800}
+    .entry-sub,.small{color:var(--muted);font-size:12px}
+    .pill-lite{border:1px solid var(--rule-soft);border-radius:999px;padding:3px 7px;color:var(--muted);font-size:11px;background:var(--panel-tint)}
+    .form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+    label.field{display:grid;gap:5px;color:var(--muted);font-size:12px}
+    textarea.select{min-height:76px;resize:vertical;width:100%}
+    .wide{grid-column:1 / -1}
+    .sublist{display:grid;gap:6px}
+    .subrow{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:8px;align-items:start;border:1px solid var(--rule-faint);border-radius:8px;padding:8px;background:var(--panel-tint)}
+    .subrow input[type="checkbox"]{margin-top:4px}
+    .doom{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center}
+    .bar{height:10px;border:1px solid var(--rule);border-radius:999px;overflow:hidden;background:var(--control)}
+    .bar span{display:block;height:100%;background:var(--accent);width:0}
+    .empty{color:var(--muted);border:1px dashed var(--rule);border-radius:8px;padding:12px}
+    .modal{position:fixed;inset:0;background:var(--overlay);display:none;align-items:center;justify-content:center;padding:18px;z-index:30}
+    .modal.open{display:flex}
+    .dialog{width:min(860px,96vw);max-height:90vh;overflow:auto;border:1px solid var(--rule);border-radius:8px;background:var(--panel);padding:14px;box-shadow:var(--shadow)}
+    input[type="file"]{max-width:100%}
+    @media (max-width:860px){.control-row{grid-template-columns:1fr}.subrow{grid-template-columns:auto 1fr}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Quests &amp; Fronten</div>
+      <div class="subtitle">Quests &bull; Fronten &bull; Fraktionen &bull; Hinweise &bull; Konsequenzen</div>
+    </div>
+    <div class="top-actions">
+      <a class="home-btn" href="../../index.html">Startseite</a>
+      <a class="home-btn" href="./calendar.html">Kampagnenkalender</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar"></aside>
+    <main class="main">
+      <div class="content" style="max-width:1320px;">
+        <div class="tool-shell">
+          <section class="panel">
+            <div class="toolbar">
+              <button id="addQuest" class="btn" type="button">Quest hinzuf&uuml;gen</button>
+              <button id="addFront" class="btn" type="button">Front hinzuf&uuml;gen</button>
+              <button id="addFaction" class="btn" type="button">Fraktion hinzuf&uuml;gen</button>
+              <button id="addClue" class="btn" type="button">Hinweis hinzuf&uuml;gen</button>
+              <button id="addQuestion" class="btn" type="button">Frage hinzuf&uuml;gen</button>
+              <button id="addConsequence" class="btn" type="button">Konsequenz hinzuf&uuml;gen</button>
+              <button id="exportBtn" class="btn" type="button">JSON exportieren</button>
+              <button id="importBtn" class="btn" type="button">JSON importieren</button>
+              <input id="importFile" type="file" accept="application/json,.json" hidden>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="tabs" id="tabs"></div>
+            <div class="control-row">
+              <input id="search" class="select" type="search" placeholder="Suchen...">
+              <select id="statusFilter" class="select"></select>
+              <select id="linkFilter" class="select"></select>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div id="panels"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="dialog">
+      <div class="entry-head">
+        <h2 id="modalTitle">Eintrag</h2>
+        <button id="closeModal" class="btn small" type="button">Schlie&szlig;en</button>
+      </div>
+      <form id="entryForm" class="form-grid"></form>
+    </div>
+  </div>
+
+  <script type="module">
+    import { escapeHtml } from "../../lib.js";
+
+    const STORAGE_KEY = "dnd.questFronts.v1";
+    const CALENDAR_KEY = "dnd.campaignCalendar.v1";
+    const TABS = [
+      ["quests", "Quests"],
+      ["fronts", "Fronten"],
+      ["factions", "Fraktionen"],
+      ["clues", "Hinweise"],
+      ["questions", "Offene Fragen"],
+      ["consequences", "Konsequenzen"]
+    ];
+    const QUEST_STATUSES = ["offen", "aktiv", "wartend", "erledigt", "gescheitert", "verborgen"];
+    const CONSEQUENCE_STATUSES = ["drohend", "eingetreten", "abgewendet"];
+    const PRIORITIES = ["niedrig", "normal", "hoch"];
+
+    const $ = id => document.getElementById(id);
+    let store = loadStore();
+    let activeTab = "quests";
+    let editing = null;
+
+    function uid(prefix){ return `${prefix}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`; }
+    function nowIso(){ return new Date().toISOString(); }
+    function asArray(value){ return Array.isArray(value) ? value : []; }
+    function num(value, fallback = 0){ const n = Number(value); return Number.isFinite(n) ? n : fallback; }
+    function lines(value){ return String(value || "").split(/\r?\n/).map(x => x.trim()).filter(Boolean); }
+
+    function normalizeQuest(item = {}){
+      return {
+        id: String(item.id || uid("quest")),
+        title: String(item.title || "Neue Quest"),
+        status: QUEST_STATUSES.includes(String(item.status)) ? String(item.status) : "offen",
+        source: String(item.source || ""),
+        pcs: String(item.pcs || ""),
+        goals: asArray(item.goals).map(normalizeChecklist),
+        clues: asArray(item.clues).map(normalizeChecklist),
+        questions: asArray(item.questions).map(normalizeChecklist),
+        reward: String(item.reward || ""),
+        deadlineText: String(item.deadlineText || ""),
+        deadlineDay: item.deadlineDay === "" || item.deadlineDay == null ? "" : num(item.deadlineDay, 0),
+        consequences: String(item.consequences || ""),
+        notes: String(item.notes || ""),
+        refs: String(item.refs || ""),
+        sessionId: String(item.sessionId || ""),
+        updatedAt: String(item.updatedAt || nowIso())
+      };
+    }
+
+    function normalizeFront(item = {}){
+      return {
+        id: String(item.id || uid("front")),
+        name: String(item.name || "Neue Front"),
+        agenda: String(item.agenda || ""),
+        faction: String(item.faction || ""),
+        progress: Math.max(0, num(item.progress, 0)),
+        maxProgress: Math.max(1, num(item.maxProgress, 6)),
+        nextEscalation: String(item.nextEscalation || ""),
+        trigger: String(item.trigger || ""),
+        consequences: String(item.consequences || ""),
+        affected: String(item.affected || ""),
+        notes: String(item.notes || ""),
+        sessionId: String(item.sessionId || ""),
+        updatedAt: String(item.updatedAt || nowIso())
+      };
+    }
+
+    function normalizeFaction(item = {}){
+      return {
+        id: String(item.id || uid("faction")),
+        name: String(item.name || "Neue Fraktion"),
+        attitude: String(item.attitude || "neutral"),
+        goals: String(item.goals || ""),
+        resources: String(item.resources || ""),
+        npcs: String(item.npcs || ""),
+        secrets: String(item.secrets || ""),
+        activeLinks: String(item.activeLinks || ""),
+        notes: String(item.notes || "")
+      };
+    }
+
+    function normalizeClue(item = {}){
+      return {
+        id: String(item.id || uid("clue")),
+        text: String(item.text || "Neuer Hinweis"),
+        source: String(item.source || ""),
+        discovered: !!item.discovered,
+        linkedQuestId: String(item.linkedQuestId || ""),
+        linkedFrontId: String(item.linkedFrontId || ""),
+        scene: String(item.scene || ""),
+        sessionId: String(item.sessionId || "")
+      };
+    }
+
+    function normalizeQuestion(item = {}){
+      return {
+        id: String(item.id || uid("question")),
+        question: String(item.question || "Offene Frage"),
+        origin: String(item.origin || ""),
+        priority: PRIORITIES.includes(String(item.priority)) ? String(item.priority) : "normal",
+        resolved: !!item.resolved,
+        answer: String(item.answer || ""),
+        linkedQuestId: String(item.linkedQuestId || ""),
+        linkedFrontId: String(item.linkedFrontId || ""),
+        sessionId: String(item.sessionId || "")
+      };
+    }
+
+    function normalizeConsequence(item = {}){
+      return {
+        id: String(item.id || uid("consequence")),
+        trigger: String(item.trigger || ""),
+        description: String(item.description || "Neue Konsequenz"),
+        status: CONSEQUENCE_STATUSES.includes(String(item.status)) ? String(item.status) : "drohend",
+        date: String(item.date || ""),
+        linkedQuestId: String(item.linkedQuestId || ""),
+        linkedFrontId: String(item.linkedFrontId || ""),
+        linkedFactionId: String(item.linkedFactionId || ""),
+        sessionId: String(item.sessionId || "")
+      };
+    }
+
+    function normalizeChecklist(item = {}){
+      if (typeof item === "string") return { id: uid("check"), text: item, done: false };
+      return { id: String(item.id || uid("check")), text: String(item.text || ""), done: !!item.done || !!item.discovered || !!item.resolved };
+    }
+
+    function loadStore(){
+      try{
+        const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+        return {
+          version: 1,
+          quests: asArray(raw.quests).map(normalizeQuest),
+          fronts: asArray(raw.fronts).map(normalizeFront),
+          factions: asArray(raw.factions).map(normalizeFaction),
+          clues: asArray(raw.clues).map(normalizeClue),
+          questions: asArray(raw.questions).map(normalizeQuestion),
+          consequences: asArray(raw.consequences).map(normalizeConsequence),
+          updatedAt: String(raw.updatedAt || nowIso())
+        };
+      } catch {
+        return blankStore();
+      }
+    }
+
+    function blankStore(){
+      return { version: 1, quests: [], fronts: [], factions: [], clues: [], questions: [], consequences: [], updatedAt: nowIso() };
+    }
+
+    function saveStore(){
+      store.updatedAt = nowIso();
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+    }
+
+    function render(){
+      renderTabs();
+      renderFilters();
+      renderPanels();
+    }
+
+    function renderTabs(){
+      $("tabs").innerHTML = TABS.map(([id, label]) => `<button class="btn ${activeTab === id ? "active" : ""}" type="button" data-tab="${id}">${label}</button>`).join("");
+      document.querySelectorAll("[data-tab]").forEach(btn => btn.addEventListener("click", () => { activeTab = btn.dataset.tab; render(); }));
+    }
+
+    function renderFilters(){
+      const current = $("statusFilter").value || "all";
+      const link = $("linkFilter").value || "all";
+      const statuses = activeTab === "quests" ? QUEST_STATUSES : activeTab === "consequences" ? CONSEQUENCE_STATUSES : ["all"];
+      $("statusFilter").innerHTML = `<option value="all">Alle Status</option>${statuses.filter(x => x !== "all").map(s => `<option value="${s}" ${current === s ? "selected" : ""}>${s}</option>`).join("")}`;
+      $("linkFilter").innerHTML = `
+        <option value="all" ${link === "all" ? "selected" : ""}>Alle Verknuepfungen</option>
+        <option value="linked" ${link === "linked" ? "selected" : ""}>Mit Quest/Front</option>
+        <option value="open" ${link === "open" ? "selected" : ""}>Ohne Verknuepfung</option>
+      `;
+    }
+
+    function renderPanels(){
+      $("panels").innerHTML = TABS.map(([id]) => `<section class="tab-panel ${activeTab === id ? "active" : ""}" data-panel="${id}"></section>`).join("");
+      panel("quests").innerHTML = listHtml("quests", filtered(store.quests, "quest").map(questHtml));
+      panel("fronts").innerHTML = listHtml("fronts", filtered(store.fronts, "front").map(frontHtml));
+      panel("factions").innerHTML = listHtml("factions", filtered(store.factions, "faction").map(factionHtml));
+      panel("clues").innerHTML = listHtml("clues", filtered(store.clues, "clue").map(clueHtml));
+      panel("questions").innerHTML = listHtml("questions", filtered(store.questions, "question").map(questionHtml));
+      panel("consequences").innerHTML = listHtml("consequences", filtered(store.consequences, "consequence").map(consequenceHtml));
+      bindRows();
+    }
+
+    function panel(id){ return $("panels").querySelector(`[data-panel="${id}"]`); }
+
+    function listHtml(kind, rows){
+      return `<div class="list" data-list="${kind}">${rows.join("") || `<div class="empty">Noch keine passenden Eintr&auml;ge.</div>`}</div>`;
+    }
+
+    function haystack(item){
+      return Object.values(item).flatMap(value => Array.isArray(value) ? value.map(x => x.text || "") : [value]).join(" ").toLowerCase();
+    }
+
+    function filtered(list, kind){
+      const q = $("search").value.trim().toLowerCase();
+      const status = $("statusFilter").value || "all";
+      const link = $("linkFilter").value || "all";
+      return list.filter(item => {
+        if (q && !haystack(item).includes(q)) return false;
+        if (status !== "all" && item.status !== status) return false;
+        const hasLink = !!(item.linkedQuestId || item.linkedFrontId || item.linkedFactionId);
+        if (link === "linked" && !hasLink && !["quest", "front", "faction"].includes(kind)) return false;
+        if (link === "open" && hasLink) return false;
+        return true;
+      });
+    }
+
+    function questHtml(q){
+      return `
+        <div class="entry" data-kind="quest" data-id="${escapeHtml(q.id)}">
+          <div class="entry-head">
+            <div>
+              <div class="entry-title">${escapeHtml(q.title)}</div>
+              <div class="entry-sub">${escapeHtml(q.status)}${q.source ? ` &bull; ${escapeHtml(q.source)}` : ""}${q.deadlineDay !== "" ? ` &bull; Tag ${escapeHtml(q.deadlineDay)}` : ""}</div>
+            </div>
+            <div class="row-actions">
+              <select class="select" data-status="${escapeHtml(q.id)}">${QUEST_STATUSES.map(s => `<option value="${s}" ${q.status === s ? "selected" : ""}>${s}</option>`).join("")}</select>
+              <button class="btn small" type="button" data-edit="${escapeHtml(q.id)}">Bearbeiten</button>
+              <button class="btn small danger" type="button" data-remove="${escapeHtml(q.id)}">L&ouml;schen</button>
+            </div>
+          </div>
+          <div class="pill-line">
+            ${q.reward ? `<span class="pill-lite">Belohnung: ${escapeHtml(q.reward)}</span>` : ""}
+            ${q.pcs ? `<span class="pill-lite">SCs: ${escapeHtml(q.pcs)}</span>` : ""}
+            ${q.refs ? `<span class="pill-lite">Refs: ${escapeHtml(q.refs)}</span>` : ""}
+          </div>
+          ${checklistHtml(q, "goals", "Ziele")}
+          ${checklistHtml(q, "clues", "Hinweise")}
+          ${checklistHtml(q, "questions", "Offene Fragen")}
+          ${q.consequences || q.notes ? `<div>${escapeHtml([q.consequences, q.notes].filter(Boolean).join(" / "))}</div>` : ""}
+        </div>
+      `;
+    }
+
+    function checklistHtml(item, field, label){
+      const list = item[field] || [];
+      return `
+        <div class="sublist">
+          <div class="entry-sub">${escapeHtml(label)}</div>
+          ${list.map(x => `
+            <div class="subrow">
+              <input type="checkbox" ${x.done ? "checked" : ""} data-check="${escapeHtml(item.id)}" data-field="${field}" data-check-id="${escapeHtml(x.id)}">
+              <span>${escapeHtml(x.text)}</span>
+              <button class="btn small danger" type="button" data-remove-check="${escapeHtml(item.id)}" data-field="${field}" data-check-id="${escapeHtml(x.id)}">Entfernen</button>
+            </div>
+          `).join("") || `<div class="small">Noch nichts eingetragen.</div>`}
+          <div class="toolbar"><input class="select" placeholder="${escapeHtml(label)} hinzufuegen" data-add-text="${escapeHtml(item.id)}" data-field="${field}"><button class="btn small" type="button" data-add-check="${escapeHtml(item.id)}" data-field="${field}">Hinzuf&uuml;gen</button></div>
+        </div>
+      `;
+    }
+
+    function frontHtml(f){
+      const pct = Math.min(100, Math.round((f.progress / f.maxProgress) * 100));
+      return `
+        <div class="entry" data-kind="front" data-id="${escapeHtml(f.id)}">
+          <div class="entry-head">
+            <div>
+              <div class="entry-title">${escapeHtml(f.name)}</div>
+              <div class="entry-sub">${escapeHtml([f.faction, f.trigger].filter(Boolean).join(" &bull; "))}</div>
+            </div>
+            <div class="row-actions">
+              <button class="btn small" type="button" data-front-dec="${escapeHtml(f.id)}">-</button>
+              <button class="btn small" type="button" data-front-inc="${escapeHtml(f.id)}">+</button>
+              <button class="btn small" type="button" data-front-calendar="${escapeHtml(f.id)}">Eskalation in Kalender</button>
+              <button class="btn small" type="button" data-front-consequence="${escapeHtml(f.id)}">Konsequenz</button>
+              <button class="btn small" type="button" data-edit="${escapeHtml(f.id)}">Bearbeiten</button>
+              <button class="btn small danger" type="button" data-remove="${escapeHtml(f.id)}">L&ouml;schen</button>
+            </div>
+          </div>
+          <div class="doom"><div class="bar"><span style="width:${pct}%"></span></div><span class="small">${escapeHtml(f.progress)} / ${escapeHtml(f.maxProgress)}</span></div>
+          <div class="pill-line">
+            ${f.nextEscalation ? `<span class="pill-lite">Naechste Eskalation: ${escapeHtml(f.nextEscalation)}</span>` : ""}
+            ${f.affected ? `<span class="pill-lite">Betroffen: ${escapeHtml(f.affected)}</span>` : ""}
+          </div>
+          ${f.agenda || f.consequences || f.notes ? `<div>${escapeHtml([f.agenda, f.consequences, f.notes].filter(Boolean).join(" / "))}</div>` : ""}
+        </div>
+      `;
+    }
+
+    function factionHtml(f){
+      return simpleEntryHtml("faction", f.id, f.name, f.attitude, [f.goals, f.resources, f.npcs, f.secrets, f.activeLinks, f.notes].filter(Boolean).join(" / "));
+    }
+
+    function clueHtml(c){
+      const link = linkLabel(c);
+      return `
+        <div class="entry" data-kind="clue" data-id="${escapeHtml(c.id)}">
+          <div class="entry-head">
+            <div>
+              <div class="entry-title">${escapeHtml(c.text)}</div>
+              <div class="entry-sub">${escapeHtml([c.source, c.scene, link].filter(Boolean).join(" &bull; "))}</div>
+            </div>
+            <div class="row-actions">
+              <button class="btn small" type="button" data-toggle-clue="${escapeHtml(c.id)}">${c.discovered ? "Entdeckt" : "Offen"}</button>
+              <button class="btn small" type="button" data-edit="${escapeHtml(c.id)}">Bearbeiten</button>
+              <button class="btn small danger" type="button" data-remove="${escapeHtml(c.id)}">L&ouml;schen</button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function questionHtml(q){
+      return simpleEntryHtml("question", q.id, q.question, `${q.priority}${q.resolved ? " / geklaert" : ""}`, [q.origin, q.answer, linkLabel(q)].filter(Boolean).join(" / "), `<button class="btn small" type="button" data-toggle-question="${escapeHtml(q.id)}">${q.resolved ? "Geklaert" : "Offen"}</button>`);
+    }
+
+    function consequenceHtml(c){
+      return simpleEntryHtml("consequence", c.id, c.description, `${c.status}${c.date ? ` / ${c.date}` : ""}`, [c.trigger, linkLabel(c)].filter(Boolean).join(" / "));
+    }
+
+    function simpleEntryHtml(kind, id, title, sub, body, extra = ""){
+      return `
+        <div class="entry" data-kind="${kind}" data-id="${escapeHtml(id)}">
+          <div class="entry-head">
+            <div>
+              <div class="entry-title">${escapeHtml(title)}</div>
+              <div class="entry-sub">${escapeHtml(sub || "")}</div>
+            </div>
+            <div class="row-actions">
+              ${extra}
+              <button class="btn small" type="button" data-edit="${escapeHtml(id)}">Bearbeiten</button>
+              <button class="btn small danger" type="button" data-remove="${escapeHtml(id)}">L&ouml;schen</button>
+            </div>
+          </div>
+          ${body ? `<div>${escapeHtml(body)}</div>` : ""}
+        </div>
+      `;
+    }
+
+    function linkLabel(item){
+      const q = store.quests.find(x => x.id === item.linkedQuestId)?.title;
+      const f = store.fronts.find(x => x.id === item.linkedFrontId)?.name;
+      const fac = store.factions.find(x => x.id === item.linkedFactionId)?.name;
+      return [q && `Quest: ${q}`, f && `Front: ${f}`, fac && `Fraktion: ${fac}`].filter(Boolean).join(" / ");
+    }
+
+    function findItem(id){
+      for (const key of ["quests", "fronts", "factions", "clues", "questions", "consequences"]){
+        const item = store[key].find(x => x.id === id);
+        if (item) return { key, item };
+      }
+      return null;
+    }
+
+    function bindRows(){
+      document.querySelectorAll("[data-edit]").forEach(btn => btn.addEventListener("click", () => openEditor(btn.dataset.edit)));
+      document.querySelectorAll("[data-remove]").forEach(btn => btn.addEventListener("click", () => removeById(btn.dataset.remove)));
+      document.querySelectorAll("[data-status]").forEach(sel => sel.addEventListener("change", () => { const q = store.quests.find(x => x.id === sel.dataset.status); if (q) q.status = sel.value; saveStore(); render(); }));
+      document.querySelectorAll("[data-check]").forEach(box => box.addEventListener("change", () => toggleChecklist(box)));
+      document.querySelectorAll("[data-add-check]").forEach(btn => btn.addEventListener("click", () => addChecklist(btn)));
+      document.querySelectorAll("[data-remove-check]").forEach(btn => btn.addEventListener("click", () => removeChecklist(btn)));
+      document.querySelectorAll("[data-front-inc]").forEach(btn => btn.addEventListener("click", () => shiftFront(btn.dataset.frontInc, 1)));
+      document.querySelectorAll("[data-front-dec]").forEach(btn => btn.addEventListener("click", () => shiftFront(btn.dataset.frontDec, -1)));
+      document.querySelectorAll("[data-front-calendar]").forEach(btn => btn.addEventListener("click", () => addFrontToCalendar(btn.dataset.frontCalendar)));
+      document.querySelectorAll("[data-front-consequence]").forEach(btn => btn.addEventListener("click", () => consequenceFromFront(btn.dataset.frontConsequence)));
+      document.querySelectorAll("[data-toggle-clue]").forEach(btn => btn.addEventListener("click", () => { const c = store.clues.find(x => x.id === btn.dataset.toggleClue); if (c) c.discovered = !c.discovered; saveStore(); render(); }));
+      document.querySelectorAll("[data-toggle-question]").forEach(btn => btn.addEventListener("click", () => { const q = store.questions.find(x => x.id === btn.dataset.toggleQuestion); if (q) q.resolved = !q.resolved; saveStore(); render(); }));
+    }
+
+    function toggleChecklist(box){
+      const q = store.quests.find(x => x.id === box.dataset.check);
+      const item = q?.[box.dataset.field]?.find(x => x.id === box.dataset.checkId);
+      if (item) item.done = box.checked;
+      saveStore();
+    }
+
+    function addChecklist(btn){
+      const q = store.quests.find(x => x.id === btn.dataset.addCheck);
+      const input = document.querySelector(`[data-add-text="${CSS.escape(btn.dataset.addCheck)}"][data-field="${CSS.escape(btn.dataset.field)}"]`);
+      const text = input?.value.trim();
+      if (!q || !text) return;
+      q[btn.dataset.field].push(normalizeChecklist(text));
+      saveStore();
+      render();
+    }
+
+    function removeChecklist(btn){
+      const q = store.quests.find(x => x.id === btn.dataset.removeCheck);
+      if (!q) return;
+      q[btn.dataset.field] = q[btn.dataset.field].filter(x => x.id !== btn.dataset.checkId);
+      saveStore();
+      render();
+    }
+
+    function shiftFront(id, dir){
+      const f = store.fronts.find(x => x.id === id);
+      if (!f) return;
+      f.progress = Math.max(0, Math.min(f.maxProgress, f.progress + dir));
+      saveStore();
+      render();
+    }
+
+    function addFrontToCalendar(id){
+      const f = store.fronts.find(x => x.id === id);
+      if (!f) return;
+      const calendar = readCalendar();
+      const profile = calendar.profiles?.find(p => p.id === calendar.activeProfileId) || calendar.profiles?.[0];
+      if (!profile){
+        alert("Kein Kalenderprofil gefunden. Oeffne zuerst den Kampagnenkalender.");
+        return;
+      }
+      profile.entries = asArray(profile.entries);
+      profile.entries.push({
+        id: uid("entry"),
+        type: "event",
+        title: `Front-Eskalation: ${f.name}`,
+        startDay: num(profile.currentDay, 1),
+        endDay: num(profile.currentDay, 1),
+        status: "geplant",
+        linkedFrontId: f.id,
+        notes: f.nextEscalation || f.consequences || f.agenda,
+        sessionId: f.sessionId || ""
+      });
+      profile.updatedAt = nowIso();
+      localStorage.setItem(CALENDAR_KEY, JSON.stringify(calendar));
+      alert("Eskalation wurde im Kampagnenkalender eingetragen.");
+    }
+
+    function consequenceFromFront(id){
+      const f = store.fronts.find(x => x.id === id);
+      if (!f) return;
+      store.consequences.unshift(normalizeConsequence({
+        trigger: `Front: ${f.name}`,
+        description: f.consequences || f.nextEscalation || "Eskalation",
+        linkedFrontId: f.id
+      }));
+      activeTab = "consequences";
+      saveStore();
+      render();
+    }
+
+    function readCalendar(){
+      try{
+        const raw = JSON.parse(localStorage.getItem(CALENDAR_KEY) || "{}");
+        if (Array.isArray(raw.profiles)) return raw;
+      } catch {}
+      const id = uid("calendar");
+      return { version: 1, activeProfileId: id, profiles: [{ id, name: "Hauptkampagne", calendarName: "Kampagnenkalender", currentDay: 1, displayDate: "Kampagnentag 1", daysPerMonth: 30, monthsPerYear: 12, moons: [{ id: uid("moon"), name: "Mond", cycle: 28, offset: 0 }], holidays: [], entries: [], updatedAt: nowIso() }] };
+    }
+
+    function openEditor(idOrKind){
+      const found = findItem(idOrKind);
+      let key = found?.key || `${idOrKind}s`;
+      let item = found?.item;
+      if (!item){
+        if (idOrKind === "quest") item = normalizeQuest();
+        if (idOrKind === "front") item = normalizeFront();
+        if (idOrKind === "faction") item = normalizeFaction();
+        if (idOrKind === "clue") item = normalizeClue();
+        if (idOrKind === "question") item = normalizeQuestion();
+        if (idOrKind === "consequence") item = normalizeConsequence();
+      }
+      editing = { key, item: JSON.parse(JSON.stringify(item)), isNew: !found };
+      $("modalTitle").textContent = editing.isNew ? "Eintrag hinzufuegen" : "Eintrag bearbeiten";
+      $("entryForm").innerHTML = formHtml(key, editing.item);
+      $("modal").classList.add("open");
+      $("entryForm").querySelector("[data-save]")?.addEventListener("click", saveEditor);
+      $("entryForm").querySelector("[data-cancel]")?.addEventListener("click", closeModal);
+    }
+
+    function optionHtml(list, value){ return list.map(x => `<option value="${escapeHtml(x)}" ${value === x ? "selected" : ""}>${escapeHtml(x)}</option>`).join(""); }
+    function linkFields(item){
+      return `
+        <label class="field">Quest<select id="linkedQuestId" class="select"><option value="">Keine</option>${store.quests.map(q => `<option value="${escapeHtml(q.id)}" ${item.linkedQuestId === q.id ? "selected" : ""}>${escapeHtml(q.title)}</option>`).join("")}</select></label>
+        <label class="field">Front<select id="linkedFrontId" class="select"><option value="">Keine</option>${store.fronts.map(f => `<option value="${escapeHtml(f.id)}" ${item.linkedFrontId === f.id ? "selected" : ""}>${escapeHtml(f.name)}</option>`).join("")}</select></label>
+      `;
+    }
+
+    function formHtml(key, item){
+      if (key === "quests") return `
+        <label class="field wide">Titel<input id="title" class="select" value="${escapeHtml(item.title)}"></label>
+        <label class="field">Status<select id="status" class="select">${optionHtml(QUEST_STATUSES, item.status)}</select></label>
+        <label class="field">Auftraggeber / Quelle<input id="source" class="select" value="${escapeHtml(item.source)}"></label>
+        <label class="field">Beteiligte SCs<input id="pcs" class="select" value="${escapeHtml(item.pcs)}"></label>
+        <label class="field">Frist Text<input id="deadlineText" class="select" value="${escapeHtml(item.deadlineText)}"></label>
+        <label class="field">Kampagnentag Frist<input id="deadlineDay" class="select" type="number" min="0" value="${escapeHtml(item.deadlineDay)}"></label>
+        <label class="field wide">Ziele<textarea id="goals" class="select" placeholder="Ein Ziel pro Zeile">${escapeHtml(item.goals.map(x => `${x.done ? "[x] " : ""}${x.text}`).join("\n"))}</textarea></label>
+        <label class="field wide">Hinweise<textarea id="clues" class="select" placeholder="Ein Hinweis pro Zeile">${escapeHtml(item.clues.map(x => `${x.done ? "[x] " : ""}${x.text}`).join("\n"))}</textarea></label>
+        <label class="field wide">Offene Fragen<textarea id="questions" class="select" placeholder="Eine Frage pro Zeile">${escapeHtml(item.questions.map(x => `${x.done ? "[x] " : ""}${x.text}`).join("\n"))}</textarea></label>
+        <label class="field wide">Belohnung / Versprechen<textarea id="reward" class="select">${escapeHtml(item.reward)}</textarea></label>
+        <label class="field wide">Konsequenzen<textarea id="consequences" class="select">${escapeHtml(item.consequences)}</textarea></label>
+        <label class="field wide">NSC-/Ort-Referenzen<textarea id="refs" class="select">${escapeHtml(item.refs)}</textarea></label>
+        <label class="field wide">Notizen<textarea id="notes" class="select">${escapeHtml(item.notes)}</textarea></label>
+        ${saveButtons()}
+      `;
+      if (key === "fronts") return `
+        <label class="field wide">Name<input id="name" class="select" value="${escapeHtml(item.name)}"></label>
+        <label class="field">Fraktion / Antagonist<input id="faction" class="select" value="${escapeHtml(item.faction)}"></label>
+        <label class="field">Fortschritt<input id="progress" class="select" type="number" min="0" value="${escapeHtml(item.progress)}"></label>
+        <label class="field">Maximum<input id="maxProgress" class="select" type="number" min="1" value="${escapeHtml(item.maxProgress)}"></label>
+        <label class="field wide">Bedrohung / Agenda<textarea id="agenda" class="select">${escapeHtml(item.agenda)}</textarea></label>
+        <label class="field wide">Naechste Eskalation<textarea id="nextEscalation" class="select">${escapeHtml(item.nextEscalation)}</textarea></label>
+        <label class="field wide">Ausloeser<textarea id="trigger" class="select">${escapeHtml(item.trigger)}</textarea></label>
+        <label class="field wide">Konsequenzen<textarea id="consequences" class="select">${escapeHtml(item.consequences)}</textarea></label>
+        <label class="field wide">Betroffene Orte/NSCs/Quests<textarea id="affected" class="select">${escapeHtml(item.affected)}</textarea></label>
+        <label class="field wide">Notizen<textarea id="notes" class="select">${escapeHtml(item.notes)}</textarea></label>
+        ${saveButtons()}
+      `;
+      if (key === "factions") return `
+        <label class="field wide">Name<input id="name" class="select" value="${escapeHtml(item.name)}"></label>
+        <label class="field">Haltung<input id="attitude" class="select" value="${escapeHtml(item.attitude)}"></label>
+        <label class="field wide">Ziele<textarea id="goals" class="select">${escapeHtml(item.goals)}</textarea></label>
+        <label class="field wide">Ressourcen<textarea id="resources" class="select">${escapeHtml(item.resources)}</textarea></label>
+        <label class="field wide">Bekannte NPCs<textarea id="npcs" class="select">${escapeHtml(item.npcs)}</textarea></label>
+        <label class="field wide">Offene Geheimnisse<textarea id="secrets" class="select">${escapeHtml(item.secrets)}</textarea></label>
+        <label class="field wide">Aktive Quests/Fronten<textarea id="activeLinks" class="select">${escapeHtml(item.activeLinks)}</textarea></label>
+        <label class="field wide">Notizen<textarea id="notes" class="select">${escapeHtml(item.notes)}</textarea></label>
+        ${saveButtons()}
+      `;
+      if (key === "clues") return `
+        <label class="field wide">Text<textarea id="text" class="select">${escapeHtml(item.text)}</textarea></label>
+        <label class="field">Quelle<input id="source" class="select" value="${escapeHtml(item.source)}"></label>
+        <label class="field">Szene / Session<input id="scene" class="select" value="${escapeHtml(item.scene)}"></label>
+        <label class="field">Entdeckt<select id="discovered" class="select"><option value="0">Nein</option><option value="1" ${item.discovered ? "selected" : ""}>Ja</option></select></label>
+        ${linkFields(item)}
+        ${saveButtons()}
+      `;
+      if (key === "questions") return `
+        <label class="field wide">Frage<textarea id="question" class="select">${escapeHtml(item.question)}</textarea></label>
+        <label class="field">Prioritaet<select id="priority" class="select">${optionHtml(PRIORITIES, item.priority)}</select></label>
+        <label class="field">Geklaert<select id="resolved" class="select"><option value="0">Nein</option><option value="1" ${item.resolved ? "selected" : ""}>Ja</option></select></label>
+        <label class="field">Entstanden aus<input id="origin" class="select" value="${escapeHtml(item.origin)}"></label>
+        ${linkFields(item)}
+        <label class="field wide">Antwort<textarea id="answer" class="select">${escapeHtml(item.answer)}</textarea></label>
+        ${saveButtons()}
+      `;
+      return `
+        <label class="field wide">Beschreibung<textarea id="description" class="select">${escapeHtml(item.description)}</textarea></label>
+        <label class="field">Status<select id="status" class="select">${optionHtml(CONSEQUENCE_STATUSES, item.status)}</select></label>
+        <label class="field">Datum / Tag<input id="date" class="select" value="${escapeHtml(item.date)}"></label>
+        <label class="field">Ausloeser<input id="trigger" class="select" value="${escapeHtml(item.trigger)}"></label>
+        ${linkFields(item)}
+        <label class="field">Fraktion<select id="linkedFactionId" class="select"><option value="">Keine</option>${store.factions.map(f => `<option value="${escapeHtml(f.id)}" ${item.linkedFactionId === f.id ? "selected" : ""}>${escapeHtml(f.name)}</option>`).join("")}</select></label>
+        ${saveButtons()}
+      `;
+    }
+
+    function saveButtons(){ return `<div class="toolbar wide"><button class="btn" type="button" data-save>Speichern</button><button class="btn" type="button" data-cancel>Abbrechen</button></div>`; }
+
+    function checklistFromText(value){
+      return lines(value).map(line => normalizeChecklist({ text: line.replace(/^\[x\]\s*/i, ""), done: /^\[x\]\s*/i.test(line) }));
+    }
+
+    function saveEditor(){
+      const { key, item, isNew } = editing;
+      const ids = Array.from($("entryForm").querySelectorAll("[id]")).map(el => el.id);
+      for (const id of ids){
+        const el = $(id);
+        if (!el) continue;
+        if (["goals", "clues", "questions"].includes(id) && key === "quests") item[id] = checklistFromText(el.value);
+        else if (["progress", "maxProgress", "deadlineDay"].includes(id)) item[id] = el.value === "" ? "" : num(el.value, 0);
+        else if (["discovered", "resolved"].includes(id)) item[id] = el.value === "1";
+        else item[id] = el.value;
+      }
+      if (item.updatedAt != null) item.updatedAt = nowIso();
+      if (isNew) store[key].unshift(item);
+      else {
+        const index = store[key].findIndex(x => x.id === item.id);
+        if (index >= 0) store[key][index] = item;
+      }
+      saveStore();
+      closeModal();
+      render();
+    }
+
+    function closeModal(){ editing = null; $("modal").classList.remove("open"); }
+
+    function removeById(id){
+      if (!confirm("Diesen Eintrag wirklich loeschen?")) return;
+      const found = findItem(id);
+      if (!found) return;
+      store[found.key] = store[found.key].filter(x => x.id !== id);
+      saveStore();
+      render();
+    }
+
+    function exportStore(){
+      const blob = new Blob([JSON.stringify(store, null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "quests-und-fronten.json";
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+
+    function importJson(file){
+      const reader = new FileReader();
+      reader.onload = () => {
+        try{
+          const raw = JSON.parse(String(reader.result || "{}"));
+          store = {
+            version: 1,
+            quests: asArray(raw.quests).map(normalizeQuest),
+            fronts: asArray(raw.fronts).map(normalizeFront),
+            factions: asArray(raw.factions).map(normalizeFaction),
+            clues: asArray(raw.clues).map(normalizeClue),
+            questions: asArray(raw.questions).map(normalizeQuestion),
+            consequences: asArray(raw.consequences).map(normalizeConsequence),
+            updatedAt: nowIso()
+          };
+          saveStore();
+          render();
+        } catch {
+          alert("Import fehlgeschlagen: keine lesbaren Quest-/Frontendaten.");
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    $("search").addEventListener("input", renderPanels);
+    $("statusFilter").addEventListener("change", renderPanels);
+    $("linkFilter").addEventListener("change", renderPanels);
+    $("addQuest").addEventListener("click", () => openEditor("quest"));
+    $("addFront").addEventListener("click", () => openEditor("front"));
+    $("addFaction").addEventListener("click", () => openEditor("faction"));
+    $("addClue").addEventListener("click", () => openEditor("clue"));
+    $("addQuestion").addEventListener("click", () => openEditor("question"));
+    $("addConsequence").addEventListener("click", () => openEditor("consequence"));
+    $("exportBtn").addEventListener("click", exportStore);
+    $("importBtn").addEventListener("click", () => $("importFile").click());
+    $("importFile").addEventListener("change", () => { const [file] = $("importFile").files || []; if (file) importJson(file); $("importFile").value = ""; });
+    $("closeModal").addEventListener("click", closeModal);
+    $("modal").addEventListener("click", event => { if (event.target === $("modal")) closeModal(); });
+
+    render();
+    const params = new URLSearchParams(location.search);
+    if (params.get("quest")){
+      activeTab = "quests";
+      $("search").value = store.quests.find(q => q.id === params.get("quest"))?.title || "";
+      render();
+    }
+  </script>
+</body>
+</html>

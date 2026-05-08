@@ -1,0 +1,630 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Gruppeninventar</title>
+  <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
+  <script src="../../theme.js?v=theme-20260422"></script>
+  <script src="../../nav.js" defer></script>
+  <style>
+    .inventory-shell{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.42fr);gap:14px;align-items:start}
+    .inventory-panel{border:1px solid var(--rule);border-radius:8px;background:var(--card-tint);padding:14px}
+    .inventory-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;align-items:end}
+    .inventory-field{display:grid;gap:5px;color:var(--muted);font-size:13px}
+    .inventory-actions,.inventory-tabs,.coin-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .btn{padding:10px 12px;border-radius:8px;border:1px solid var(--rule);background:var(--control);color:var(--text);cursor:pointer}
+    .btn:hover{border-color:var(--accent-ring);background:var(--accent-soft)}
+    .btn.danger:hover{border-color:rgba(230,70,70,.5);background:rgba(230,70,70,.12)}
+    .tab-btn.active{border-color:var(--accent-ring);background:var(--accent-soft)}
+    .summary-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+    .summary-tile{border:1px solid var(--rule-soft);border-radius:8px;padding:10px;background:var(--panel-tint)}
+    .summary-label{font-size:11px;text-transform:uppercase;letter-spacing:.35px;color:var(--muted2)}
+    .summary-value{font-size:20px;font-weight:800;margin-top:3px}
+    .item-table-wrap{overflow:auto;margin-top:12px;border:1px solid var(--rule-soft);border-radius:8px}
+    .item-table{width:100%;border-collapse:collapse;font-size:13px;min-width:860px}
+    .item-table th,.item-table td{border-bottom:1px solid var(--rule-faint);padding:8px;vertical-align:middle;text-align:left}
+    .item-table th{color:var(--muted);background:var(--panel-tint);font-size:11px;text-transform:uppercase;letter-spacing:.35px}
+    .item-table tr:last-child td{border-bottom:0}
+    .item-name{display:grid;gap:2px}
+    .item-name b{font-size:14px}
+    .item-meta{color:var(--muted2);font-size:11px}
+    .qty-control{display:inline-grid;grid-template-columns:28px 52px 28px;gap:4px;align-items:center}
+    .qty-control button{width:28px;height:28px;padding:0}
+    .qty-control input{width:52px;padding:7px;text-align:center}
+    .small-input{width:92px;padding:8px}
+    .wide-input{min-width:150px}
+    .empty-state{border:1px dashed var(--rule);border-radius:8px;padding:18px;text-align:center;color:var(--muted);margin-top:12px}
+    .coin-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+    .coin-grid input{width:100%}
+    .json-box{min-height:170px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px}
+    .notice{border:1px solid var(--rule-soft);border-radius:8px;padding:9px 10px;background:var(--panel-tint);color:var(--muted);font-size:12px}
+    .status-ok{color:#7fd29b}
+    .status-warn{color:#f0c674}
+    @media (max-width:980px){.inventory-shell{grid-template-columns:1fr}.coin-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.summary-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Gruppeninventar</div>
+      <div class="subtitle">Geteilte Gegenst&auml;nde der Abenteurer, ohne festen Besitzer</div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar"></aside>
+    <main class="main">
+      <div class="content" style="max-width:1250px;">
+        <div class="inventory-shell">
+          <section class="inventory-panel">
+            <div class="inventory-grid">
+              <label class="inventory-field">Name
+                <input id="inventoryName" class="select" placeholder="Gruppenlager, Wagen, Schatztruhe..."/>
+              </label>
+              <label class="inventory-field">Tragkraft in kg
+                <input id="capacity" class="select" type="number" min="0" step="0.5" value="75"/>
+              </label>
+            </div>
+
+            <h2>Gegenstand hinzuf&uuml;gen</h2>
+            <div class="inventory-grid">
+              <label class="inventory-field">Suche
+                <input id="itemSearch" class="select" type="search" placeholder="Name, Kategorie, Tags"/>
+              </label>
+              <label class="inventory-field">Katalog
+                <select id="itemSelect" class="select"></select>
+              </label>
+              <label class="inventory-field">Anzahl
+                <input id="itemQty" class="select" type="number" min="1" max="9999" value="1"/>
+              </label>
+              <label class="inventory-field">Container
+                <input id="itemContainer" class="select" placeholder="Rucksack, Lager, Wagen"/>
+              </label>
+            </div>
+            <div class="inventory-actions" style="margin-top:10px;">
+              <button id="addCatalogItem" class="btn" type="button">Aus Katalog hinzuf&uuml;gen</button>
+              <button id="addCustomItem" class="btn" type="button">Eigenen Eintrag</button>
+            </div>
+
+            <h2>Inventarliste</h2>
+            <div class="inventory-tabs">
+              <button class="btn tab-btn active" type="button" data-filter="all">Alle</button>
+              <button class="btn tab-btn" type="button" data-filter="equipped">Ausgeruestet</button>
+              <button class="btn tab-btn" type="button" data-filter="attuned">Gebunden</button>
+              <button class="btn tab-btn" type="button" data-filter="consumable">Verbrauchbar</button>
+            </div>
+            <div class="inventory-grid" style="margin-top:10px;">
+              <label class="inventory-field">Liste filtern
+                <input id="inventorySearch" class="select" type="search" placeholder="Name, Container, Notiz"/>
+              </label>
+              <label class="inventory-field">Container anzeigen
+                <select id="containerFilter" class="select"><option value="">Alle Container</option></select>
+              </label>
+              <label class="inventory-field">Sortierung
+                <select id="sortMode" class="select">
+                  <option value="name">Name</option>
+                  <option value="container">Container</option>
+                  <option value="weight">Gewicht</option>
+                  <option value="value">Wert</option>
+                </select>
+              </label>
+            </div>
+            <div id="inventoryList"></div>
+          </section>
+
+          <aside class="inventory-panel">
+            <h2 style="margin-top:0">Uebersicht</h2>
+            <div id="summary" class="summary-grid"></div>
+
+            <h2>Muenzen</h2>
+            <div class="coin-grid">
+              <label class="inventory-field">KM<input class="select" type="number" min="0" step="1" data-coin="cp"/></label>
+              <label class="inventory-field">SM<input class="select" type="number" min="0" step="1" data-coin="sp"/></label>
+              <label class="inventory-field">EM<input class="select" type="number" min="0" step="1" data-coin="ep"/></label>
+              <label class="inventory-field">GM<input class="select" type="number" min="0" step="1" data-coin="gp"/></label>
+              <label class="inventory-field">PM<input class="select" type="number" min="0" step="1" data-coin="pp"/></label>
+            </div>
+
+            <h2>Transfer</h2>
+            <div class="inventory-actions">
+              <button id="exportBtn" class="btn" type="button">Export aktualisieren</button>
+              <button id="importBtn" class="btn" type="button">JSON importieren</button>
+            </div>
+            <textarea id="jsonBox" class="select json-box" placeholder="Inventar-JSON fuer Import/Export"></textarea>
+            <div id="message" class="notice" style="margin-top:10px;">Bereit.</div>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany, normalizeItem, repairText, slugify } from "../../lib.js";
+
+    const STORAGE_KEY = "dnd.inventory.v1";
+    const COINS = [
+      ["cp", "KM", 0.01],
+      ["sp", "SM", 0.1],
+      ["ep", "EM", 0.5],
+      ["gp", "GM", 1],
+      ["pp", "PM", 10]
+    ];
+
+    const $ = id => document.getElementById(id);
+    const state = {
+      activeId: "",
+      inventories: [],
+      catalog: [],
+      pcs: [],
+      filter: "all"
+    };
+
+    function uid(prefix = "entry"){
+      return `${prefix}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
+    }
+
+    function numberValue(value, fallback = 0){
+      const n = Number(value);
+      return Number.isFinite(n) ? n : fallback;
+    }
+
+    function fmt(value, digits = 2){
+      return new Intl.NumberFormat("de-DE", { maximumFractionDigits: digits }).format(numberValue(value));
+    }
+
+    function displayName(entry){
+      return repairText(entry?.name || entry?.id || "Unbenannt");
+    }
+
+    function kindDisplay(item){
+      const type = repairText(String(item?.type ?? "")).trim();
+      const category = repairText(String(item?.item_category ?? "")).trim();
+      if (!type) return category || "Item";
+      if (!category || category.toLowerCase() === type.toLowerCase()) return type;
+      if (type.toLowerCase() === "item") return category;
+      return `${type} - ${category}`;
+    }
+
+    function priceToGp(item){
+      const price = item?.price;
+      if (price && typeof price === "object") {
+        const amount = numberValue(price.amount);
+        const currency = String(price.currency || "GM").toUpperCase();
+        if (currency === "KM") return amount * 0.01;
+        if (currency === "SM") return amount * 0.1;
+        if (currency === "EM") return amount * 0.5;
+        if (currency === "PM") return amount * 10;
+        return amount;
+      }
+      const text = String(price ?? "");
+      const amount = numberValue((text.match(/[\d.,]+/) || ["0"])[0].replace(",", "."));
+      const upper = text.toUpperCase();
+      if (upper.includes("KM")) return amount * 0.01;
+      if (upper.includes("SM")) return amount * 0.1;
+      if (upper.includes("EM")) return amount * 0.5;
+      if (upper.includes("PM")) return amount * 10;
+      return amount;
+    }
+
+    function catalogEntry(item){
+      const normalized = normalizeItem(item);
+      return {
+        id: normalized.id || slugify(normalized.name || "item"),
+        name: displayName(normalized),
+        type: kindDisplay(normalized),
+        rarity: repairText(normalized.rarity || ""),
+        weight: numberValue(normalized.weight_value),
+        priceGp: priceToGp(normalized),
+        text: repairText(normalized.text || ""),
+        tags: (normalized.tags || []).map(repairText),
+        requiresAttunement: Boolean(normalized.requires_attunement || normalized.attunement),
+        consumable: Boolean(normalized.consumable),
+        weapon: normalized.weapon || null,
+        armor: normalized.armor || null,
+        charges: normalized.charges || null,
+        uses: normalized.uses || null,
+        effects: Array.isArray(normalized.effects) ? normalized.effects.map(repairText) : [],
+        modifiers: Array.isArray(normalized.modifiers) ? normalized.modifiers.map(repairText) : [],
+        grantedActionIds: Array.isArray(normalized.granted_action_ids) ? normalized.granted_action_ids.map(repairText) : [],
+        grantedSpellIds: Array.isArray(normalized.granted_spell_ids) ? normalized.granted_spell_ids.map(repairText) : [],
+        source: repairText(normalized.source || "")
+      };
+    }
+
+    function blankInventory(name = "Gruppeninventar der Abenteurer"){
+      return {
+        id: "group-adventurers",
+        name,
+        isGroup: true,
+        capacityKg: 75,
+        coins: { cp: 0, sp: 0, ep: 0, gp: 0, pp: 0 },
+        ownerPcId: "",
+        ownerPcName: "",
+        entries: [],
+        updatedAt: new Date().toISOString()
+      };
+    }
+
+    function activeInventory(){
+      let inv = state.inventories.find(item => item.id === "group-adventurers") ||
+        state.inventories.find(item => item.isGroup && !item.ownerPcId);
+      if (!inv) {
+        inv = blankInventory();
+        state.inventories.push(inv);
+      }
+      inv.id = "group-adventurers";
+      inv.isGroup = true;
+      inv.ownerPcId = "";
+      inv.ownerPcName = "";
+      state.activeId = inv.id;
+      return inv;
+    }
+
+    function save(){
+      activeInventory().updatedAt = new Date().toISOString();
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({
+        activeId: state.activeId,
+        inventories: state.inventories
+      }));
+    }
+
+    function loadSaved(){
+      try {
+        const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
+        if (saved?.inventories?.length) {
+          state.inventories = saved.inventories;
+          state.activeId = saved.activeId || saved.inventories[0].id;
+          return;
+        }
+      } catch {}
+      const starter = blankInventory();
+      state.inventories = [starter];
+      state.activeId = starter.id;
+    }
+
+    function normalizeInventoryEntry(entry){
+      const item = entry.item || {};
+      return {
+        id: entry.id || uid("line"),
+        item: {
+          id: item.id || slugify(item.name || "eigener-eintrag"),
+          name: displayName(item),
+          type: repairText(item.type || "Eigener Eintrag"),
+          rarity: repairText(item.rarity || ""),
+          weight: numberValue(item.weight),
+          priceGp: numberValue(item.priceGp),
+          text: repairText(item.text || ""),
+          tags: Array.isArray(item.tags) ? item.tags.map(repairText) : [],
+          requiresAttunement: Boolean(item.requiresAttunement),
+          consumable: Boolean(item.consumable),
+          weapon: item.weapon || null,
+          armor: item.armor || null,
+          charges: item.charges || null,
+          uses: item.uses || null,
+          effects: Array.isArray(item.effects) ? item.effects.map(repairText) : [],
+          modifiers: Array.isArray(item.modifiers) ? item.modifiers.map(repairText) : [],
+          grantedActionIds: Array.isArray(item.grantedActionIds) ? item.grantedActionIds.map(repairText) : [],
+          grantedSpellIds: Array.isArray(item.grantedSpellIds) ? item.grantedSpellIds.map(repairText) : [],
+          source: repairText(item.source || "")
+        },
+        qty: Math.max(1, Math.round(numberValue(entry.qty, 1))),
+        container: repairText(entry.container || ""),
+        equipped: Boolean(entry.equipped),
+        attuned: Boolean(entry.attuned),
+        notes: repairText(entry.notes || "")
+      };
+    }
+
+    function addItem(item, qty = 1, container = ""){
+      const inv = activeInventory();
+      const normalized = normalizeInventoryEntry({ item, qty, container });
+      const existing = inv.entries.find(entry =>
+        entry.item.id === normalized.item.id &&
+        entry.container === normalized.container &&
+        entry.equipped === normalized.equipped &&
+        entry.attuned === normalized.attuned &&
+        !entry.notes
+      );
+      if (existing) existing.qty += normalized.qty;
+      else inv.entries.push(normalized);
+      save();
+      render();
+      setMessage(`${normalized.qty}x ${normalized.item.name} hinzugefuegt.`, "ok");
+    }
+
+    function coinValueGp(coins){
+      return COINS.reduce((sum, [key, , gp]) => sum + numberValue(coins?.[key]) * gp, 0);
+    }
+
+    function totals(inv){
+      const itemWeight = inv.entries.reduce((sum, entry) => sum + entry.qty * numberValue(entry.item.weight), 0);
+      const itemValue = inv.entries.reduce((sum, entry) => sum + entry.qty * numberValue(entry.item.priceGp), 0);
+      const coinCount = COINS.reduce((sum, [key]) => sum + numberValue(inv.coins?.[key]), 0);
+      const coinWeight = coinCount * 0.01;
+      const attuned = inv.entries.filter(entry => entry.attuned).length;
+      return {
+        itemWeight,
+        coinWeight,
+        weight: itemWeight + coinWeight,
+        value: itemValue + coinValueGp(inv.coins),
+        itemValue,
+        coinValue: coinValueGp(inv.coins),
+        coinCount,
+        attuned,
+        entries: inv.entries.reduce((sum, entry) => sum + entry.qty, 0)
+      };
+    }
+
+    function entryKey(value){
+      return String(value || "")
+        .trim()
+        .toLowerCase()
+        .normalize("NFKD")
+        .replace(/\u00df/g, "ss")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+    }
+
+    function ownEntryWeight(entry){
+      return numberValue(entry.qty, 1) * numberValue(entry.item?.weight);
+    }
+
+    function groupInventoryMetrics(inv){
+      const rows = inv.entries || [];
+      const byContainerName = new Map();
+      for (const entry of rows) {
+        for (const key of [entry.item?.id, entry.item?.name].map(entryKey).filter(Boolean)) {
+          if (!byContainerName.has(key)) byContainerName.set(key, entry);
+        }
+      }
+
+      const childrenByParentId = new Map();
+      for (const entry of rows) {
+        const parent = byContainerName.get(entryKey(entry.container));
+        if (!parent || parent.id === entry.id) continue;
+        if (!childrenByParentId.has(parent.id)) childrenByParentId.set(parent.id, []);
+        childrenByParentId.get(parent.id).push(entry);
+      }
+
+      const cache = new Map();
+      function totalWeightForEntry(entry, seen = new Set()){
+        if (!entry || seen.has(entry.id)) return 0;
+        if (cache.has(entry.id)) return cache.get(entry.id);
+        seen.add(entry.id);
+        const total = ownEntryWeight(entry) + (childrenByParentId.get(entry.id) || [])
+          .reduce((sum, child) => sum + totalWeightForEntry(child, seen), 0);
+        seen.delete(entry.id);
+        cache.set(entry.id, total);
+        return total;
+      }
+
+      const containers = rows
+        .filter(entry => (childrenByParentId.get(entry.id) || []).length)
+        .map(entry => ({
+          entry,
+          contents: childrenByParentId.get(entry.id) || [],
+          ownWeight: ownEntryWeight(entry),
+          totalWeight: totalWeightForEntry(entry)
+        }));
+
+      return { childrenByParentId, containers, totalWeightForEntry };
+    }
+
+    function catalogSearchText(item){
+      return [item.id, item.name, item.type, item.rarity, item.source, item.text, ...(item.tags || [])].join(" ").toLowerCase();
+    }
+
+    function renderCatalogOptions(){
+      const q = $("itemSearch").value.trim().toLowerCase();
+      const pool = state.catalog
+        .filter(item => !q || catalogSearchText(item).includes(q))
+        .slice(0, 220);
+      $("itemSelect").innerHTML = pool
+        .map(item => `<option value="${escapeHtml(item.id)}">${escapeHtml(item.name)}${item.type ? ` - ${escapeHtml(item.type)}` : ""}</option>`)
+        .join("") || `<option value="">Keine Treffer</option>`;
+    }
+
+    function containerOptions(inv){
+      return [...new Set(inv.entries.map(entry => entry.container).filter(Boolean))]
+        .sort((a, b) => a.localeCompare(b, "de"));
+    }
+
+    function renderControls(inv){
+      $("inventoryName").value = inv.name;
+      $("capacity").value = inv.capacityKg;
+      for (const input of document.querySelectorAll("[data-coin]")) {
+        input.value = inv.coins?.[input.dataset.coin] ?? 0;
+      }
+      const current = $("containerFilter").value;
+      $("containerFilter").innerHTML = `<option value="">Alle Container</option>` + containerOptions(inv)
+        .map(container => `<option value="${escapeHtml(container)}">${escapeHtml(container)}</option>`)
+        .join("");
+      if ([...$("containerFilter").options].some(opt => opt.value === current)) $("containerFilter").value = current;
+    }
+
+    function renderSummary(inv){
+      const t = totals(inv);
+      const metrics = groupInventoryMetrics(inv);
+      const capacity = numberValue(inv.capacityKg);
+      const loadPct = capacity > 0 ? Math.round((t.weight / capacity) * 100) : 0;
+      const loadClass = capacity > 0 && t.weight > capacity ? "status-warn" : "status-ok";
+      $("summary").innerHTML = `
+        <div class="summary-tile"><div class="summary-label">Gewicht</div><div class="summary-value ${loadClass}">${fmt(t.weight)} kg</div><div class="muted">${capacity ? `${loadPct}% von ${fmt(capacity)} kg` : "Keine Grenze"}</div></div>
+        <div class="summary-tile"><div class="summary-label">Gesamtwert</div><div class="summary-value">${fmt(t.value)} GM</div><div class="muted">Items ${fmt(t.itemValue)} GM, Muenzen ${fmt(t.coinValue)} GM</div></div>
+        <div class="summary-tile"><div class="summary-label">Eintraege</div><div class="summary-value">${fmt(t.entries, 0)}</div><div class="muted">${inv.entries.length} Zeilen</div></div>
+        <div class="summary-tile"><div class="summary-label">Container</div><div class="summary-value">${fmt(metrics.containers.length, 0)}</div><div class="muted">mit erkanntem Inhalt</div></div>
+      `;
+    }
+
+    function filteredEntries(inv){
+      const query = $("inventorySearch").value.trim().toLowerCase();
+      const container = $("containerFilter").value;
+      let rows = [...inv.entries];
+      if (state.filter === "equipped") rows = rows.filter(entry => entry.equipped);
+      if (state.filter === "attuned") rows = rows.filter(entry => entry.attuned);
+      if (state.filter === "consumable") rows = rows.filter(entry => entry.item.consumable);
+      if (container) rows = rows.filter(entry => entry.container === container);
+      if (query) rows = rows.filter(entry => [entry.item.name, entry.item.type, entry.item.rarity, entry.container, entry.notes, ...(entry.item.tags || [])].join(" ").toLowerCase().includes(query));
+      const sortMode = $("sortMode").value;
+      rows.sort((a, b) => {
+        if (sortMode === "container") return (a.container || "").localeCompare(b.container || "", "de") || a.item.name.localeCompare(b.item.name, "de");
+        if (sortMode === "weight") return (b.qty * b.item.weight) - (a.qty * a.item.weight);
+        if (sortMode === "value") return (b.qty * b.item.priceGp) - (a.qty * a.item.priceGp);
+        return a.item.name.localeCompare(b.item.name, "de");
+      });
+      return rows;
+    }
+
+    function renderList(inv){
+      const rows = filteredEntries(inv);
+      const metrics = groupInventoryMetrics(inv);
+      if (!rows.length) {
+        $("inventoryList").innerHTML = `<div class="empty-state">Keine Gegenstaende in dieser Ansicht.</div>`;
+        return;
+      }
+      $("inventoryList").innerHTML = `
+        <div class="item-table-wrap">
+          <table class="item-table">
+            <thead><tr><th>Gegenstand</th><th>Anzahl</th><th>Container</th><th>Gewicht</th><th>Mit Inhalt</th><th>Wert</th><th>Status</th><th>Notiz</th><th></th></tr></thead>
+            <tbody>
+              ${rows.map(entry => `
+                <tr data-entry="${escapeHtml(entry.id)}">
+                  <td>
+                    <div class="item-name">
+                      <b>${entry.item.id && !entry.item.id.startsWith("eigener-eintrag")
+                        ? `<a href="../items/item.html?id=${encodeURIComponent(entry.item.id)}">${escapeHtml(entry.item.name)}</a>`
+                        : escapeHtml(entry.item.name)}</b>
+                      <span class="item-meta">${escapeHtml([entry.item.type, entry.item.rarity, entry.item.source].filter(Boolean).join(" - "))}</span>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="qty-control">
+                      <button class="btn" type="button" data-dec>-</button>
+                      <input class="select" type="number" min="1" max="9999" value="${escapeHtml(entry.qty)}" data-qty/>
+                      <button class="btn" type="button" data-inc>+</button>
+                    </span>
+                  </td>
+                  <td><input class="select small-input wide-input" value="${escapeHtml(entry.container)}" data-container/></td>
+                  <td>${fmt(ownEntryWeight(entry))} kg<br><span class="item-meta">${fmt(entry.item.weight)} kg/Stk.</span></td>
+                  <td>${fmt(metrics.totalWeightForEntry(entry))} kg</td>
+                  <td>${fmt(entry.qty * entry.item.priceGp)} GM<br><span class="item-meta">${fmt(entry.item.priceGp)} GM/Stk.</span></td>
+                  <td>
+                    <label class="item-meta"><input type="checkbox" ${entry.equipped ? "checked" : ""} data-equipped/> getragen</label><br>
+                    <label class="item-meta"><input type="checkbox" ${entry.attuned ? "checked" : ""} data-attuned/> gebunden</label>
+                  </td>
+                  <td><input class="select small-input wide-input" value="${escapeHtml(entry.notes)}" data-notes/></td>
+                  <td><button class="btn danger" type="button" data-remove>Entfernen</button></td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+      `;
+
+      for (const tr of $("inventoryList").querySelectorAll("[data-entry]")) {
+        const entry = inv.entries.find(item => item.id === tr.dataset.entry);
+        if (!entry) continue;
+        tr.querySelector("[data-dec]").addEventListener("click", () => { entry.qty = Math.max(1, entry.qty - 1); save(); render(); });
+        tr.querySelector("[data-inc]").addEventListener("click", () => { entry.qty += 1; save(); render(); });
+        tr.querySelector("[data-qty]").addEventListener("change", event => { entry.qty = Math.max(1, Math.round(numberValue(event.target.value, 1))); save(); render(); });
+        tr.querySelector("[data-container]").addEventListener("change", event => { entry.container = repairText(event.target.value.trim()); save(); render(); });
+        tr.querySelector("[data-equipped]").addEventListener("change", event => { entry.equipped = event.target.checked; save(); render(); });
+        tr.querySelector("[data-attuned]").addEventListener("change", event => { entry.attuned = event.target.checked; save(); render(); });
+        tr.querySelector("[data-notes]").addEventListener("change", event => { entry.notes = repairText(event.target.value.trim()); save(); render(); });
+        tr.querySelector("[data-remove]").addEventListener("click", () => {
+          inv.entries = inv.entries.filter(item => item.id !== entry.id);
+          save();
+          render();
+        });
+      }
+    }
+
+    function renderJson(inv){
+      $("jsonBox").value = JSON.stringify(inv, null, 2);
+    }
+
+    function render(){
+      const inv = activeInventory();
+      renderControls(inv);
+      renderSummary(inv);
+      renderCatalogOptions();
+      renderList(inv);
+      renderJson(inv);
+    }
+
+    function setMessage(text, kind = ""){
+      $("message").className = `notice ${kind === "ok" ? "status-ok" : ""}`;
+      $("message").textContent = text;
+    }
+
+    function importInventory(){
+      try {
+        const imported = JSON.parse($("jsonBox").value);
+        const inv = {
+          ...blankInventory(imported.name || "Importiertes Inventar"),
+          ...imported,
+          id: "group-adventurers",
+          isGroup: true,
+          ownerPcId: "",
+          ownerPcName: "",
+          coins: { cp: 0, sp: 0, ep: 0, gp: 0, pp: 0, ...(imported.coins || {}) },
+          entries: Array.isArray(imported.entries) ? imported.entries.map(normalizeInventoryEntry) : []
+        };
+        const existingIndex = state.inventories.findIndex(item => item.id === inv.id);
+        if (existingIndex >= 0) state.inventories[existingIndex] = inv;
+        else state.inventories.push(inv);
+        state.activeId = inv.id;
+        save();
+        render();
+        setMessage("Inventar importiert.", "ok");
+      } catch (err) {
+        setMessage(`Import fehlgeschlagen: ${err.message || err}`);
+      }
+    }
+
+    $("inventoryName").addEventListener("change", event => { activeInventory().name = repairText(event.target.value.trim() || "Inventar"); save(); render(); });
+    $("capacity").addEventListener("change", event => { activeInventory().capacityKg = Math.max(0, numberValue(event.target.value)); save(); render(); });
+    $("itemSearch").addEventListener("input", renderCatalogOptions);
+    $("addCatalogItem").addEventListener("click", () => {
+      const item = state.catalog.find(entry => entry.id === $("itemSelect").value);
+      if (item) addItem(item, $("itemQty").value, $("itemContainer").value.trim());
+    });
+    $("addCustomItem").addEventListener("click", () => {
+      const name = $("itemSearch").value.trim() || "Eigener Eintrag";
+      addItem({ id: slugify(name), name, type: "Eigener Eintrag", weight: 0, priceGp: 0 }, $("itemQty").value, $("itemContainer").value.trim());
+    });
+    $("inventorySearch").addEventListener("input", () => renderList(activeInventory()));
+    $("containerFilter").addEventListener("change", () => renderList(activeInventory()));
+    $("sortMode").addEventListener("change", () => renderList(activeInventory()));
+    $("exportBtn").addEventListener("click", () => { renderJson(activeInventory()); setMessage("Export aktualisiert.", "ok"); });
+    $("importBtn").addEventListener("click", importInventory);
+    for (const input of document.querySelectorAll("[data-coin]")) {
+      input.addEventListener("change", event => {
+        activeInventory().coins[event.target.dataset.coin] = Math.max(0, Math.round(numberValue(event.target.value)));
+        save();
+        render();
+      });
+    }
+    for (const btn of document.querySelectorAll("[data-filter]")) {
+      btn.addEventListener("click", () => {
+        state.filter = btn.dataset.filter;
+        for (const other of document.querySelectorAll("[data-filter]")) other.classList.toggle("active", other === btn);
+        renderList(activeInventory());
+      });
+    }
+
+    loadSaved();
+    try {
+      const itemFiles = await loadIndex("../../data/items/index.json");
+      const rawItems = await loadMany("../../data/items", itemFiles);
+      state.catalog = rawItems.map(catalogEntry).sort((a, b) => a.name.localeCompare(b.name, "de"));
+      render();
+    } catch (err) {
+      render();
+      setMessage(`Katalog konnte nicht vollstaendig geladen werden: ${err.message || err}`);
+    }
+  </script>
+</body>
+</html>

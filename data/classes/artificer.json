@@ -16,17 +16,17 @@
   "category": "Klassen",
   "group": "",
   "prerequisites": [],
-  "summary": "Kunsthandwerker sind Meister der Erfindung und nutzen Einfallsreichtum und Magie, um außergewöhnliche Fähigkeiten in Objekten freizusetzen. Sie betrachten Magie als ein komplexes System, das darauf wartet, entschlüsselt und dann in ihren Zaubersprüchen und Erfindungen genutzt zu werden.",
+  "summary": "Artificer sind Meister der Erfindung und nutzen Einfallsreichtum und Magie, um außergewöhnliche Fähigkeiten in Objekten freizusetzen. Sie betrachten Magie als ein komplexes System, das darauf wartet, entschlüsselt und dann in ihren Zaubersprüchen und Erfindungen genutzt zu werden.",
   "entries": [
     {
       "type": "paragraph",
-      "text": "Kunsthandwerker sind Meister der Erfindung und nutzen Einfallsreichtum und Magie, um außergewöhnliche Fähigkeiten in Objekten freizusetzen. Sie betrachten Magie als ein komplexes System, das darauf wartet, entschlüsselt und dann in ihren Zaubersprüchen und Erfindungen genutzt zu werden."
+      "text": "Artificer sind Meister der Erfindung und nutzen Einfallsreichtum und Magie, um außergewöhnliche Fähigkeiten in Objekten freizusetzen. Sie betrachten Magie als ein komplexes System, das darauf wartet, entschlüsselt und dann in ihren Zaubersprüchen und Erfindungen genutzt zu werden."
     },
     {
       "type": "table",
       "rows": [
         [
-          "Kerneigenschaften des Kunsthandwerkers"
+          "Kerneigenschaften des Artficers"
         ],
         [
           "Primäre Fähigkeit",
@@ -37,12 +37,12 @@
           "D8 pro Artificer-Level"
         ],
         [
-          "Rettungswurf-Kenntnisse",
-          "Verfassung und Intelligenz"
+          "Rettungswurf-Kompetenz",
+          "Konstitution und Intelligenz"
         ],
         [
           "Fertigkeiten",
-          "Wählen Sie 2: Arkana, Geschichte, Untersuchung, Medizin, Natur, Wahrnehmung oder Fingerfertigkeit"
+          "Wählen Sie 2: Arkane-Kunde, Geschichte, Nachforschung, Medizin, Naturkunde, Wahrnehmung oder Fingerfertigkeit"
         ],
         [
           "Waffenkenntnisse",
@@ -50,23 +50,22 @@
         ],
         [
           "Werkzeugkenntnisse",
-          "Diebeswerkzeuge, Bastlerwerkzeuge und eine Art Handwerkerwerkzeuge Ihrer Wahl"
+          "[[item:diebeswerkzeug]], [[item:tueftlerwerkzeug]] und eine Art Handwerkerwerkzeuge Ihrer Wahl"
         ],
         [
           "Rüstungstraining",
-          "Leichte und mittlere Rüstungen und Schilde"
+          "Leichte und mittlere Rüstungen und [[item:schild|Schilde]]"
         ],
         [
           "Startausrüstung",
-          "Wähle A oder B: (A) Beschlagene Lederrüstung, Dolch, Diebeswerkzeuge, Bastlerwerkzeuge, Kerkermeisterpaket und 16 GP; oder (B) 150 GP"
+          "Wähle A oder B: (A) [[item:beschlagene-lederruestung]], [[item:dolch]], [[item:diebeswerkzeug]], [[item:tueftlerwerkzeug]], [[item:abenteurerpaket]] und 16 GM; oder (B) 150 GM"
         ]
-      ],
-      "text": "Kerneigenschaften des Kunsthandwerkers Primärfähigkeit Intelligenz Trefferpunktwürfel W8 pro Stufe des Kunsthandwerkers Rettungswurf-Fertigkeiten Konstitutions- und Intelligenzfähigkeits-Fertigkeiten Wählen Sie 2: Arkana, Geschichte, Untersuchung, Medizin, Natur, Wahrnehmung oder Fingerfertigkeit Waffenkenntnisse Einfache Waffen Werkzeugkenntnisse Diebeswerkzeuge, Bastlerwerkzeuge und eine Art von Handwerkswerkzeugen Ihrer Wahl Rüstungstraining Leichte und mittlere Rüstung und Schilde Startausrüstung Wählen Sie A oder B: (A) Beschlagene Lederrüstung, Dolch, Diebeswerkzeuge, Bastlerwerkzeuge, Dungeoneer’s Pack und 16 GP; oder (B) 150 GP"
+      ]
     },
     {
       "type": "heading",
       "level": 1,
-      "text": "Ein Kunsthandwerker werden …"
+      "text": "Ein Artificer werden …"
     },
     {
       "type": "heading",
@@ -77,10 +76,9 @@
       "type": "list",
       "ordered": false,
       "items": [
-        "Erhalte alle Eigenschaften in der Tabelle „Kernkunsthandwerkereigenschaften“.",
-        "Erhalten Sie die Level-1-Funktionen des Kunsthandwerkers, die in der Tabelle der Talente des Kunsthandwerkers aufgeführt sind."
-      ],
-      "text": "Erhalte alle Eigenschaften in der Tabelle „Kernkunsthandwerkereigenschaften“. Erhalten Sie die Level-1-Funktionen des Kunsthandwerkers, die in der Tabelle der Talente des Kunsthandwerkers aufgeführt sind."
+        "Erhalte alle Eigenschaften in der Tabelle Kerneigenschaften des Artificers.",
+        "Erhalten Sie die Level-1-Funktionen des Artificers, die in der Tabelle der Talente des Artificers aufgeführt sind."
+      ]
     },
     {
       "type": "heading",
@@ -91,10 +89,9 @@
       "type": "list",
       "ordered": false,
       "items": [
-        "Erhalten Sie die folgenden Eigenschaften aus der Tabelle „Kerneigenschaften des Kunsthandwerkers“: Trefferpunktwürfel, Kenntnisse im Umgang mit den Werkzeugen des Bastlers, Kenntnisse in einer Fertigkeit Ihrer Wahl aus der Fertigkeitsliste des Kunsthandwerkers und Training mit leichter und mittlerer Rüstung und Schilden.",
-        "Erhalten Sie die Level-1-Funktionen des Kunsthandwerkers, die in der Tabelle der Talente des Kunsthandwerkers aufgeführt sind. Sehen Sie sich die Multiklassenregeln im Spielerhandbuch an, um Ihre verfügbaren Zauberslots zu ermitteln, indem Sie die Hälfte Ihrer Artificer-Stufen addieren (aufgerundet)."
-      ],
-      "text": "Erhalten Sie die folgenden Eigenschaften aus der Tabelle „Kerneigenschaften des Kunsthandwerkers“: Trefferpunktwürfel, Kenntnisse im Umgang mit den Werkzeugen des Bastlers, Kenntnisse in einer Fertigkeit Ihrer Wahl aus der Fertigkeitsliste des Kunsthandwerkers und Training mit leichter und mittlerer Rüstung und Schilden. Erhalten Sie die Level-1-Funktionen des Kunsthandwerkers, die in der Tabelle der Talente des Kunsthandwerkers aufgeführt sind. Sehen Sie sich die Multiklassenregeln im Spielerhandbuch an, um Ihre verfügbaren Zauberslots zu ermitteln, indem Sie die Hälfte Ihrer Artificer-Stufen addieren (aufgerundet)."
+        "Erhalten Sie die folgenden Eigenschaften aus der Tabelle „Kerneigenschaften des Artificers“: Trefferpunktwürfel, Kenntnisse im Umgang mit [[item:tueftlerwerkzeug]], Kenntnisse in einer Fertigkeit Ihrer Wahl aus der Fertigkeitsliste des Artificers und Training mit leichter und mittlerer Rüstung und [[item:schild|Schilden]].",
+        "Erhalten Sie die Level-1-Funktionen des Artificer, die in der Tabelle der Talente des Artificers aufgeführt sind. Sehen Sie sich die Multiklassenregeln im Spielerhandbuch an, um Ihre verfügbaren Zauberplätze zu ermitteln, indem Sie die Hälfte Ihrer Artificer-Level addieren (aufgerundet)."
+      ]
     },
     {
       "type": "heading",
@@ -103,384 +100,151 @@
     },
     {
       "type": "paragraph",
-      "text": "Als Artificer erhalten Sie die folgenden Klassenmerkmale, wenn Sie die angegebenen Artificer-Stufen erreichen. Diese Funktionen sind in der Tabelle „Artificer Talentures“ aufgeführt."
+      "text": "Als Artificer erhalten Sie die folgenden Klassenmerkmale, wenn Sie das angegebene Artificer-Level erreichen. Diese Funktionen sind in der Tabelle „Artificer-Talente“ aufgeführt."
     },
     {
       "type": "paragraph",
-      "text": "Kunsthandwerker-Talente (Teil A)"
+      "text": "Artificer-Talente (Teil A)"
     },
     {
       "type": "table",
       "rows": [
         [
-          "Ebene",
-          "Uebungsbonus",
-          "Klassentalente"
+          "Ebene", "Übungsbonus", "Klassentalente"
         ],
         [
-          "1",
-          "+2",
-          "Zauberei, Tinker's Magic"
+          "1", "+2", "Zauberei, Tüftlermagie"
         ],
         [
-          "2",
-          "+2",
-          "Magischen Gegenstand replizieren"
+          "2", "+2", "Magischen Gegenstand replizieren"
         ],
         [
-          "3",
-          "+2",
-          "Artificer-Unterklasse"
+          "3", "+2", "Artificer-Unterklasse"
         ],
         [
-          "4",
-          "+2",
-          "Faehigkeitswert-Verbesserung"
+          "4", "+2", "[[feat:faehigkeitswert-verbesserung]] oder Talent"
         ],
         [
-          "5",
-          "+3",
-          "Unterklasse Talent"
+          "5", "+3", "Unterklassen-Eigenschaft"
         ],
         [
-          "6",
-          "+3",
-          "Basteln von magischen Gegenständen"
+          "6", "+3", "Fertigen von magischen Gegenständen"
         ],
         [
-          "7",
-          "+3",
-          "Ein Geistesblitz"
+          "7", "+3", "Geistesblitz"
         ],
         [
-          "8",
-          "+3",
-          "Faehigkeitswert-Verbesserung"
+          "8", "+3", "[[feat:faehigkeitswert-verbesserung]] oder Talent"
         ],
         [
-          "9",
-          "+4",
-          "Unterklasse Talent"
+          "9","+4", "Unterklassen-Eigenschaft"
         ],
         [
-          "10",
-          "+4",
-          "Experte für magische Gegenstände"
+          "10", "+4", "Experte für magische Gegenstände"
         ],
         [
-          "11",
-          "+4",
-          "Zauberspeichernder Gegenstand"
+          "11", "+4", "Zauberspeichernder Gegenstand"
         ],
         [
-          "12",
-          "+4",
-          "Faehigkeitswert-Verbesserung"
+          "12", "+4", "[[feat:faehigkeitswert-verbesserung]] oder Talent"
         ],
         [
-          "13",
-          "+5",
-          "-"
+          "13", "+5", "-"
         ],
         [
-          "14",
-          "+5",
-          "Fortgeschrittener Kunstgriff"
+          "14", "+5", "Fortgeschrittene Magieschmiedekunst"
         ],
         [
-          "15",
-          "+5",
-          "Unterklasse Talent"
+          "15", "+5", "Unterklassen-Eigenschaft"
         ],
         [
-          "16",
-          "+5",
-          "Faehigkeitswert-Verbesserung"
+          "16", "+5", "[[feat:faehigkeitswert-verbesserung]] oder Talent"
         ],
         [
-          "17",
-          "+6",
-          "-"
+          "17", "+6", "-"
         ],
         [
-          "18",
-          "+6",
-          "Meister magischer Gegenstände"
+          "18", "+6", "Meister magischer Gegenstände"
         ],
         [
-          "19",
-          "+6",
-          "Epischer Segen"
+          "19", "+6", "Epischer Segen"
         ],
         [
-          "20",
-          "+6",
-          "Seele der Künstlichkeit"
+          "20", "+6", "Seele der Magieschmiedekunst"
         ]
-      ],
-      "text": "Stufe Uebungsbonus Klassentalente 1 +2 Zauberwirkung, Magie des Bastlers 2 +2 Magischen Gegenstand replizieren 3 +2 Artificer-Unterklasse 4 +2 Fähigkeitswertverbesserung 5 +3 Unterklassentalent 6 +3 Magischer Gegenstand Tinker 7 +3 Genieblitz 8 +3 Fähigkeitswertverbesserung 9 +4 Unterklassentalent 10 +4 Magischer Gegenstand Adept 11 +4 Zauberspeichernder Gegenstand 12 +4 Verbesserung des Fähigkeitswerts 13 +5 - 14 +5 Fortgeschrittener Kunstgriff 15 +5 Unterklassentalent 16 +5 Verbesserung des Fähigkeitswerts 17 +6 - 18 +6 Magischer Gegenstandsmeister 19 +6 Epischer Segen 20 +6 Seele des Kunstgriffs"
+      ]
     },
     {
       "type": "paragraph",
-      "text": "Kunsthandwerker-Talente (Teil B)"
+      "text": "Artificer-Talente (Teil B)"
     },
     {
       "type": "table",
       "rows": [
         [
-          "Ebene",
-          "Pläne bekannt",
-          "Magische Gegenstände",
-          "Zaubertricks",
-          "Vorbereitete Zauber",
-          "1",
-          "2",
-          "3",
-          "4",
-          "5"
+          "Level", "Pläne bekannt", "Magische Gegenstände", "Zaubertricks", "Vorbereitete Zauber", "1", "2", "3", "4", "5"
         ],
         [
-          "1",
-          "-",
-          "-",
-          "2",
-          "2",
-          "2",
-          "-",
-          "-",
-          "-",
-          "-"
+          "1", "-", "-", "2", "2", "2", "-", "-", "-", "-"
         ],
         [
-          "2",
-          "4",
-          "2",
-          "2",
-          "3",
-          "2",
-          "-",
-          "-",
-          "-",
-          "-"
+          "2", "4", "2", "2", "3", "2", "-", "-", "-", "-"
         ],
         [
-          "3",
-          "4",
-          "2",
-          "2",
-          "4",
-          "3",
-          "-",
-          "-",
-          "-",
-          "-"
+          "3", "4", "2", "2", "4", "3", "-", "-", "-", "-"
         ],
         [
-          "4",
-          "4",
-          "2",
-          "2",
-          "5",
-          "3",
-          "-",
-          "-",
-          "-",
-          "-"
+          "4", "4", "2", "2", "5", "3", "-", "-", "-", "-"
         ],
         [
-          "5",
-          "4",
-          "2",
-          "2",
-          "6",
-          "4",
-          "2",
-          "-",
-          "-",
-          "-"
+          "5", "4", "2", "2", "6", "4", "2", "-", "-", "-"
         ],
         [
-          "6",
-          "5",
-          "3",
-          "2",
-          "6",
-          "4",
-          "2",
-          "-",
-          "-",
-          "-"
+          "6", "5", "3", "2", "6", "4", "2", "-", "-", "-"
         ],
         [
-          "7",
-          "5",
-          "3",
-          "2",
-          "7",
-          "4",
-          "3",
-          "-",
-          "-",
-          "-"
+          "7", "5", "3", "2", "7", "4", "3", "-", "-", "-"
         ],
         [
-          "8",
-          "5",
-          "3",
-          "2",
-          "7",
-          "4",
-          "3",
-          "-",
-          "-",
-          "-"
+          "8", "5", "3", "2", "7", "4", "3", "-", "-", "-"
         ],
         [
-          "9",
-          "5",
-          "3",
-          "2",
-          "9",
-          "4",
-          "3",
-          "2",
-          "-",
-          "-"
+          "9", "5", "3", "2", "9", "4", "3", "2", "-", "-"
         ],
         [
-          "10",
-          "6",
-          "4",
-          "3",
-          "9",
-          "4",
-          "3",
-          "2",
-          "-",
-          "-"
+          "10", "6", "4", "3", "9", "4", "3", "2", "-", "-"
         ],
         [
-          "11",
-          "6",
-          "4",
-          "3",
-          "10",
-          "4",
-          "3",
-          "3",
-          "-",
-          "-"
+          "11", "6", "4", "3", "10", "4", "3", "3", "-", "-"
         ],
         [
-          "12",
-          "6",
-          "4",
-          "3",
-          "10",
-          "4",
-          "3",
-          "3",
-          "-",
-          "-"
+          "12", "6", "4", "3", "10", "4", "3", "3", "-", "-"
         ],
         [
-          "13",
-          "6",
-          "4",
-          "3",
-          "11",
-          "4",
-          "3",
-          "3",
-          "1",
-          "-"
+          "13", "6", "4", "3", "11", "4", "3", "3", "1", "-"
         ],
         [
-          "14",
-          "7",
-          "5",
-          "4",
-          "11",
-          "4",
-          "3",
-          "3",
-          "1",
-          "-"
+          "14", "7", "5", "4", "11", "4", "3", "3", "1", "-"
         ],
         [
-          "15",
-          "7",
-          "5",
-          "4",
-          "12",
-          "4",
-          "3",
-          "3",
-          "2",
-          "-"
+          "15", "7", "5", "4", "12", "4", "3", "3", "2", "-"
         ],
         [
-          "16",
-          "7",
-          "5",
-          "4",
-          "12",
-          "4",
-          "3",
-          "3",
-          "2",
-          "-"
+          "16", "7", "5", "4", "12", "4", "3", "3", "2", "-"
         ],
         [
-          "17",
-          "7",
-          "5",
-          "4",
-          "14",
-          "4",
-          "3",
-          "3",
-          "3",
-          "1"
+          "17", "7", "5", "4", "14", "4", "3", "3", "3", "1"
         ],
         [
-          "18",
-          "8",
-          "6",
-          "4",
-          "14",
-          "4",
-          "3",
-          "3",
-          "3",
-          "1"
+          "18", "8", "6", "4", "14", "4", "3", "3", "3", "1"
         ],
         [
-          "19",
-          "8",
-          "6",
-          "4",
-          "15",
-          "4",
-          "3",
-          "3",
-          "3",
-          "2"
+          "19", "8", "6", "4", "15", "4", "3", "3", "3", "2"
         ],
         [
-          "20",
-          "8",
-          "6",
-          "4",
-          "15",
-          "4",
-          "3",
-          "3",
-          "3",
-          "2"
+          "20", "8", "6", "4", "15", "4", "3", "3", "3", "2"
         ]
-      ],
-      "text": "Levelpläne Bekannte magische Gegenstände Zaubertricks Vorbereitete Zaubersprüche 1. 2. 3. 4. 5. 1 - - 2 2 2 - - - - 2 4 2 2 3 2 - - - - 3 4 2 2 4 3 - - - - 4 4 2 2 5 3 - - - - 5 4 2 2 6 4 2 - - - 6 5 3 2 6 4 2 - - - 7 5 3 2 7 4 3 - - - 8 5 3 2 7 4 3 - - - 9 5 3 2 9 4 3 2 - - 10 6 4 3 9 4 3 2 - - 11 6 4 3 10 4 3 3 - - 12 6 4 3 10 4 3 3 - - 13 6 4 3 11 4 3 3 1 - 14 7 5 4 11 4 3 3 1 - 15 7 5 4 12 4 3 3 2 - 16 7 5 4 12 4 3 3 2 - 17 7 5 4 14 4 3 3 3 1 18 8 6 4 14 4 3 3 3 1 19 8 6 4 15 4 3 3 3 2 20 8 6 4 15 4 3 3 3 2"
+      ]
     },
     {
       "type": "heading",
@@ -489,121 +253,98 @@
     },
     {
       "type": "paragraph",
-      "text": "Sie haben gelernt, magische Energie durch Objekte zu kanalisieren. Die Regeln zum Zaubern finden Sie im Spielerhandbuch. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln mit Kunsthandwerker-Zaubersprüchen anwenden, die in der Kunsthandwerker-Zauberliste aufgeführt sind."
+      "text": "Sie haben gelernt, magische Energie durch Objekte zu kanalisieren. Die Regeln zum Zaubern finden Sie im Spielerhandbuch. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln mit Artificer-Zaubersprüchen anwenden, die in der Artificer-Zauberliste aufgeführt sind."
     },
     {
       "type": "paragraph",
-      "text": "Erforderliche Werkzeuge. Sie produzieren Ihre Artificer-Zauber mithilfe von Werkzeugen. Sie können Diebeswerkzeuge, Bastlerwerkzeuge oder eine andere Art von Handwerkswerkzeugen verwenden, mit denen Sie als Zauberfokus vertraut sind, und Sie müssen einen dieser Fokus in der Hand haben, wenn Sie einen Kunsthandwerkerzauber wirken (was bedeutet, dass der Zauber eine M-Komponente hat, wenn Sie ihn wirken)."
+      "text": "**Erforderliche Werkzeuge.** Sie produzieren Ihre Artificer-Zauber mithilfe von Werkzeugen. Sie können [[item:diebeswerkzeug]], [[item:tueftlerwerkzeug]] oder eine andere Art von Handwerkswerkzeugen verwenden, mit denen Sie als Zauberfokus vertraut sind, und Sie müssen einen dieser Fokus in der Hand haben, wenn Sie einen Artificerzauber wirken (was bedeutet, dass der Zauber eine M-Komponente hat, wenn Sie ihn wirken)."
     },
     {
       "type": "paragraph",
-      "text": "Zaubertricks. Sie kennen zwei Artificer-Cantrips Ihrer Wahl. Empfohlen werden Acid Splash und Prestidigitation."
+      "text": "**Zaubertricks.** Sie kennen zwei Artificer-Zaubertricks Ihrer Wahl. Empfohlen werden [[spell:saeurespritzer]] und [[spell:taschenspielerei]]."
     },
     {
       "type": "paragraph",
-      "text": "Immer wenn Sie Lange Rast abgeschlossen haben, können Sie einen Ihrer Cantrips aus dieser Funktion durch einen anderen Artificer-Cantrip Ihrer Wahl ersetzen."
+      "text": "Immer wenn Sie Lange Rast abgeschlossen haben, können Sie einen Ihrer Zaubertricks aus dieser Funktion durch einen anderen Artificer-Zaubertrick Ihrer Wahl ersetzen."
     },
     {
       "type": "paragraph",
-      "text": "Wenn Sie die Level 10 und 14 des Artificer erreichen, lernen Sie einen weiteren Artificer-Cantrip Ihrer Wahl, wie in der Spalte „Zaubertricks“ der Tabelle „Artificer-Talente“ gezeigt."
+      "text": "Wenn Sie die Level 10 und 14 des Artificer erreichen, lernen Sie einen weiteren Artificer-Zaubertrick Ihrer Wahl, wie in der Spalte „Zaubertricks“ der Tabelle „Artificer-Talente“ gezeigt."
     },
     {
       "type": "paragraph",
-      "text": "Zauberplatz. Die Tabelle „Artificer Talentures“ zeigt, wie viele Zauberslots Sie haben, um Ihre Zauber der Stufe 1+ zu wirken. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt."
+      "text": "**Zauberplatz.** Die Tabelle „Artificer-Talente“ zeigt, wie viele Zauberplätze Sie haben, um Ihre Zauber des Level 1 bis 5 zu wirken. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt."
     },
     {
       "type": "paragraph",
-      "text": "Vorbereitete Zauber der Stufe 1+. Sie bereiten die Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst zwei Artificer-Zauber der Stufe 1 aus. Wundheilung und Fett werden empfohlen."
+      "text": "**Vorbereitete Zauber der Stufe 1+.** Sie bereiten die Liste der Zauber des Level 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst zwei Artificer-Zauber des Level 1 aus. [[spell:wunden-heilen]] und [[spell:schmieren]] werden empfohlen."
     },
     {
       "type": "paragraph",
-      "text": "Die Anzahl der Zaubersprüche auf Ihrer Liste erhöht sich, je höher Sie die Stufe des Konstrukteurs erreichen, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Talente des Konstrukteurs“ angezeigt. Immer wenn sich diese Zahl erhöht, wähle weitere Kunsthandwerker-Zauber, bis die Anzahl der Zauber auf deiner Liste mit der Zahl auf der Tabelle übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Konstrukteur der Stufe 5 sind, kann Ihre Liste der vorbereiteten Zauber sechs Konstrukteurszauber der Stufen 1 und 2 in beliebiger Kombination enthalten."
+      "text": "Die Anzahl der Zaubersprüche auf Ihrer Liste erhöht sich, mit jedem höheren Artificer-Level, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Artificer-Talente“ angezeigt. Immer wenn sich diese Zahl erhöht, wähle weitere Artificer-Zauber, bis die Anzahl der Zauber auf deiner Liste mit der Zahl auf der Tabelle übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberplätze verfügen. Wenn Sie beispielsweise ein Konstrukteur der Stufe 5 sind, kann Ihre Liste der vorbereiteten Zauber sechs Konstrukteurszauber der Stufen 1 und 2 in beliebiger Kombination enthalten."
     },
     {
       "type": "paragraph",
-      "text": "Wenn eine andere Artificer-Funktion dir Zauber verleiht, die du schon immer vorbereitet hast, werden diese nicht auf die Anzahl der Zauber angerechnet, die du mit dieser Funktion vorbereiten kannst. Ansonsten zählen diese Zauber für dich jedoch als Artificer-Zauber."
+      "text": "Wenn eine andere Artificer-Funktion dir Zauber verleiht, die du schon immer vorbereitet hast, werden diese nicht auf die Anzahl der Zauber angerechnet, die du mit dieser Funktion vorbereiten kannst. Ansonsten zählen diese Zauber für dich als Artificer-Zauber."
     },
     {
       "type": "paragraph",
-      "text": "Ändern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie Lange Rast abgeschlossen haben, können Sie Ihre Liste der vorbereiteten Zaubersprüche ändern und jeden der dortigen Zaubersprüche durch andere Kunsthandwerkerzauber ersetzen, für die Sie Zauberplätze haben."
+      "text": "**Ändern Sie Ihre vorbereiteten Zaubersprüche.** Immer wenn Sie Lange Rast abgeschlossen haben, können Sie Ihre Liste der vorbereiteten Zaubersprüche ändern und jeden der dortigen Zaubersprüche durch andere Artificer-Zauber ersetzen, für die Sie Zauberplätze haben."
     },
     {
       "type": "paragraph",
-      "text": "Zauberfähigkeit. Intelligenz ist Ihre Zauberfähigkeit für Ihre Artificer-Zauber."
+      "text": "**Zauberfähigkeit.** Intelligenz (INT) ist Ihre Zauberfähigkeit für Ihre Artificer-Zauber."
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Level 1: Tinkers Magie"
+      "text": "Level 1: Tüftlermagie"
     },
     {
       "type": "paragraph",
-      "text": "Sie kennen den Mending-Cantrip."
+      "text": "Sie kennen den [[spell:ausbessern]]-Zaubertrick."
     },
     {
       "type": "paragraph",
-      "text": "Als magische Aktion kannst du, während du Tinkers Werkzeuge in der Hand hältst, einen Gegenstand in einem unbesetzten Raum innerhalb von 5 Fuß von dir selbst erschaffen, indem du den Gegenstand aus der folgenden Liste auswählst:"
+      "text": "Als magische Aktion kannst du, während du [[item:tueftlerwerkzeug]] in der Hand hältst, einen Gegenstand in einem freien Raum innerhalb von 1,5 m von dir selbst erschaffen, indem du den Gegenstand aus der folgenden Liste auswählst:"
     },
     {
       "type": "table",
       "rows": [
         [
-          "Kugellager",
-          "Flasche",
-          "Beutel"
+          "[[item:metallkuegelchen]]", "[[item:grosser-krug]]", "[[item:beutel]]"
         ],
         [
-          "Korb",
-          "Enterhaken",
-          "Seil"
+          "[[item:korb]]", "[[item:enterhaken]]", "[[item:hanf-seil]]"
         ],
         [
-          "Bettzeug",
-          "Jagdfalle",
-          "Sack"
+          "[[item:schlafsack]]", "[[item:baerenfalle]]", "[[item:sack]]"
         ],
         [
-          "Glocke",
-          "Krug",
-          "Schaufel"
+          "[[item:glocke]]", "[[item:krug]]", "[[item:schaufel]]"
         ],
         [
-          "Decke",
-          "Lampe",
-          "Spikes, Eisen"
+          "[[item:decke]]", "[[item:lampe]]", "[[item:eisenkeile]]"
         ],
         [
-          "Block und Tackle",
-          "Handschellen",
-          "Zeichenfolge"
+          "[[item:flaschenzug]]", "[[item:handschellen]]", "[[item:faden]]"
         ],
         [
-          "Flasche, Glas",
-          "Netto",
-          "Zunderbüchse"
+          "[[item:glasflasche]]", "[[item:netz]]", "[[item:zunderkaestchen]]"
         ],
         [
-          "Eimer",
-          "Öl",
-          "Fackel"
+          "[[item:eimer]]", "[[item:oel]]", "[[item:fackel]]"
         ],
         [
-          "Krähenfüße",
-          "Papier",
-          "Phiole"
+          "[[item:kraehenfuesse]]", "[[item:papier]]", "[[item:viole]]"
         ],
         [
-          "Kerze",
-          "Pergament",
-          ""
+          "[[item:kerze]]", "[[item:pergament]]", "[[item:seidenseil]]"
         ],
         [
-          "Brecheisen",
-          "Pole",
-          ""
+          "[[item:brechstange]]", " [[item:stange]]", ""
         ]
-      ],
-      "text": "Kugellager Flaschenbeutel Korb Enterhaken Seil Schlafsack Jagdfalle Sack Glocke Krug Schaufel Decke Lampe Spikes, Eisenblock und Tackle Handschellen Schnurflasche, Glasnetz Zunderbüchse Eimer Ölfackel Caltrops Papierfläschchen Kerze Pergament Brecheisenstange"
+      ]
     },
     {
       "type": "paragraph",
@@ -611,7 +352,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Sie können diese Funktion so oft verwenden, wie es Ihrem Intelligenzmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben."
+      "text": "Sie können diese Funktion so oft verwenden, wie es Ihrem INT-Modifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben."
     },
     {
       "type": "heading",
@@ -624,15 +365,15 @@
     },
     {
       "type": "paragraph",
-      "text": "Pläne bekannt. Wenn Sie diese Funktion erhalten, wählen Sie vier Pläne aus, die Sie aus der Tabelle „Pläne für magische Gegenstände (Artificer Level 2+)“ lernen möchten. Empfohlen werden „Bag of Holding“, „Cap of Water Breathing“, „Sendesteine“ und „Zauberstab des Kriegsmagiers“. Immer wenn Sie ein Artificer-Level erreichen, können Sie einen der Ihnen bekannten Pläne durch einen neuen Plan ersetzen, für den Sie sich qualifizieren."
+      "text": "**Pläne bekannt.** Wenn Sie diese Funktion erhalten, wählen Sie vier Pläne aus, die Sie aus der Tabelle „Pläne für magische Gegenstände (Artificer Level 2+)“ lernen möchten. Empfohlen werden [[item:nimmervoller-beutel]], „Kappe der Wasseratmung“, [[item:nachrichtstein]] und [[item:zauberstab-des-kriegsmagiers-1]]. Immer wenn Sie ein Artificer-Level erreichen, können Sie einen der Ihnen bekannten Pläne durch einen neuen Plan ersetzen, für den Sie sich qualifizieren."
     },
     {
       "type": "paragraph",
-      "text": "Sie lernen einen anderen Plan Ihrer Wahl, wenn Sie bestimmte Stufen als Kunsthandwerker erreichen, wie in der Spalte „Bekannte Pläne“ der Tabelle „Kunsthandwerkertalente“ angezeigt. Wenn Sie einen Plan zum Lernen auswählen, wählen Sie ihn aus einer beliebigen Tabelle mit Magic-Item-Plänen aus, für die Sie sich qualifizieren. Ihre Qualifikation basiert auf Ihrem Artificer-Level."
+      "text": "Sie lernen einen anderen Plan Ihrer Wahl, wenn Sie bestimmte Level als Artificer erreichen, wie in der Spalte „Bekannte Pläne“ der Tabelle „Artificer-Talente“ angezeigt. Wenn Sie einen Plan zum Lernen auswählen, wählen Sie ihn aus einer beliebigen Tabelle mit Magischen-Gegenstand-Plänen aus, für die Sie sich qualifizieren. Ihre Qualifikation basiert auf Ihrem Artificer-Level."
     },
     {
       "type": "paragraph",
-      "text": "Einen Artikel erstellen. Wenn Sie Lange Rast abgeschlossen haben, können Sie ein oder zwei verschiedene magische Gegenstände herstellen, wenn Sie Tinker’s Tools zur Hand haben. Jeder Artikel basiert auf einem der Ihnen bekannten Pläne für diese Funktion."
+      "text": "**Einen Gegenstand erstellen.** Wenn Sie Lange Rast abgeschlossen haben, können Sie ein oder zwei verschiedene magische Gegenstände herstellen, wenn Sie [[item:tueftlerwerkzeug]]zur Hand haben. Jeder Gegenstand basiert auf einem der Ihnen bekannten Pläne für diese Funktion."
     },
     {
       "type": "paragraph",
@@ -640,23 +381,23 @@
     },
     {
       "type": "paragraph",
-      "text": "Wenn Sie bestimmte Kunsthandwerker-Stufen erreichen, die in der Spalte „Magische Gegenstände“ der Tabelle „Kunsthandwerker-Talente“ angegeben sind, erhöht sich die Anzahl der magischen Gegenstände, die Sie am Ende einer Lange Rast herstellen können. Jeder Artikel, den Sie erstellen, muss auf einem anderen Plan basieren, den Sie kennen."
+      "text": "Wenn Sie bestimmte Artificer-Level erreichen, die in der Spalte „Magische Gegenstände“ der Tabelle „Artificer-Talente“ angegeben sind, erhöht sich die Anzahl der magischen Gegenstände, die Sie am Ende einer Lange Rast herstellen können. Jeder Artikel, den Sie erstellen, muss auf einem anderen Plan basieren, den Sie kennen."
     },
     {
       "type": "paragraph",
-      "text": "Sie können nicht mehr magische Gegenstände aus dieser Funktion haben, als in der Spalte „Magische Gegenstände“ der Tabelle „Artificer Talentures“ für Ihr Level angezeigt wird. Wenn Sie versuchen, die maximale Anzahl an magischen Gegenständen für diese Funktion zu überschreiten, verschwindet der älteste Gegenstand und der neue Gegenstand erscheint."
+      "text": "Sie können nicht mehr magische Gegenstände aus dieser Funktion haben, als in der Spalte „Magische Gegenstände“ der Tabelle „Artificer-Talente“ für Ihr Level angezeigt wird. Wenn Sie versuchen, die maximale Anzahl an magischen Gegenständen für diese Funktion zu überschreiten, verschwindet der älteste Gegenstand und der neue Gegenstand erscheint."
     },
     {
       "type": "paragraph",
-      "text": "Dauer. Ein durch diese Funktion erstellter magischer Gegenstand funktioniert wie ein normaler magischer Gegenstand, außer dass seine Magie nicht dauerhaft ist; Wenn du stirbst, verschwindet der magische Gegenstand nach 1W4 Tagen. Wenn Sie einen Ihnen bekannten Plan durch einen neuen Plan ersetzen, verschwinden alle magischen Gegenstände, die mit dem ersetzten Plan erstellt wurden, sofort."
+      "text": "**Dauer.** Ein durch diese Funktion erstellter magischer Gegenstand funktioniert wie ein normaler magischer Gegenstand, außer dass seine Magie nicht dauerhaft ist; Wenn du stirbst, verschwindet der magische Gegenstand nach [[roll:1W4]] Tagen. Wenn Sie einen Ihnen bekannten Plan durch einen neuen Plan ersetzen, verschwinden alle magischen Gegenstände, die mit dem ersetzten Plan erstellt wurden, sofort."
     },
     {
       "type": "paragraph",
-      "text": "Wenn es sich bei einem Gegenstand, den Sie mit dieser Funktion erstellt haben, um einen Behälter handelt, z. B. um eine Aufbewahrungstasche, und er verschwindet, erscheint sein Inhalt harmlos in und um seinen Raum herum."
+      "text": "Wenn es sich bei einem Gegenstand, den Sie mit dieser Funktion erstellt haben, um einen Behälter handelt, z.B. einen [[item:nimmervoller-beutel]], und er verschwindet, erscheint sein Inhalt harmlos in und um seinen Raum herum."
     },
     {
       "type": "paragraph",
-      "text": "Zauberfokus. Sie können jeden mit dieser Funktion erstellten Zauberstab oder jede Waffe als Zauberfokus verwenden, anstatt einen Satz Handwerkerwerkzeuge zu verwenden."
+      "text": "**Zauberfokus.** Sie können jeden mit dieser Funktion erstellten Zauberstab oder jede Waffe als Zauberfokus verwenden, anstatt einen Satz Handwerkerwerkzeuge zu verwenden."
     },
     {
       "type": "paragraph",
@@ -666,75 +407,58 @@
       "type": "table",
       "rows": [
         [
-          "Magischer Gegenstandsplan",
-          "Einstimmung"
+          "Magischer Gegenstandsplan", "Einstimmung"
         ],
         [
-          "Alchemiekrug",
-          "NEIN"
+          "[[item:alchemiekrug]]", "Nein"
         ],
         [
-          "Beutel voller Halt",
-          "NEIN"
+          "[[item:nimmervoller-beutel]]", "Nein"
         ],
         [
-          "Kappe der Wasseratmung",
-          "NEIN"
+          "Kappe der Wasseratmung", "Nein"
         ],
         [
           "Gewöhnlicher magischer Gegenstand, der kein Trank, keine Schriftrolle oder verflucht ist (Sie können diese Option mehrmals erlernen und müssen jedes Mal einen anderen Gegenstand auswählen; jeder ausgewählte Gegenstand zählt als ein anderer Plan)",
           "Variiert"
         ],
         [
-          "Schutzbrille der Nacht",
-          "NEIN"
+          "[[item:nachtbrille]]", "Nein"
         ],
         [
-          "Verteilerwerkzeug",
-          "Ja"
+          "[[item:vielfaeltiges-werkzeug]]", "Ja"
         ],
         [
-          "Wiederholter Schuss",
-          "Ja"
+          "[[item:wiederholender-schuss]]", "Ja"
         ],
         [
-          "Zurückkehrende Waffe",
-          "NEIN"
+          "[[item:wiederkehrende-waffe]]", "Nein"
         ],
         [
-          "Kletterseil",
-          "NEIN"
+          "[[item:seil-des-kletterns]]", "Nein"
         ],
         [
-          "Steine ​​verschicken",
-          "NEIN"
+          "[[item:nachrichtstein]]", "Nein"
         ],
         [
-          "Schild +1",
-          "NEIN"
+          "[[item:schild-1]]", "Nein"
         ],
         [
-          "Zauberstab der magischen Erkennung",
-          "NEIN"
+          "[[item:zauberstab-der-magieerkennung]]", "Nein"
         ],
         [
-          "Zauberstab der Geheimnisse",
-          "NEIN"
+          "[[item:zauberstab-der-geheimnisse]]", "Nein"
         ],
         [
-          "Zauberstab des Kriegsmagiers +1",
-          "Ja"
+          "[[item:zauberstab-des-kriegsmagiers-1]]", "Ja"
         ],
         [
-          "Waffe +1",
-          "NEIN"
+          "[[item:waffe-1]]", "Nein"
         ],
         [
-          "Hüllen der unbewaffneten Kraft +1",
-          "NEIN"
+          "[[item:wraps-der-unbewaffneten-macht-1]]", "Nein"
         ]
-      ],
-      "text": "Plan für magische Gegenstände: Einstimmung, Alchemiekrug, kein Beutel mit Inhalt, keine Mütze mit Wasseratmung, kein gewöhnlicher magischer Gegenstand, der kein Trank, keine Schriftrolle oder verflucht ist (Sie können diese Option mehrmals erlernen und müssen jedes Mal einen anderen Gegenstand auswählen; jeder ausgewählte Gegenstand zählt als ein anderer Plan). Variiert: Schutzbrille der Nacht, kein Manifold-Werkzeug, ja, Wiederholungsschuss, ja, zurückkehrende Waffe, kein Seil des Kletterns, keine sendenden Steine, kein Schild +1, kein Zauberstab der Magieerkennung, kein Zauberstab der Geheimnisse, kein Zauberstab des Kriegsmagiers +1 Ja Waffe +1 Nein Wraps of Unbewaffnete Kraft +1 Nein"
+      ]
     },
     {
       "type": "paragraph",
@@ -744,99 +468,75 @@
       "type": "table",
       "rows": [
         [
-          "Magischer Gegenstandsplan",
-          "Einstimmung"
+          "Magischer Gegenstandsplan", "Einstimmung"
         ],
         [
-          "Rüstung +1",
-          "NEIN"
+          "[[item:ruestung-1]]", "Nein"
         ],
         [
-          "Stiefel des Elfenkindes",
-          "NEIN"
+          "[[item:stiefel-der-elfen]]", "Nein"
         ],
         [
-          "Stiefel des gewundenen Pfades",
-          "Ja"
+          "Stiefel des gewundenen Pfades","Ja"
         ],
         [
-          "Umhang der Elfen",
-          "Ja"
+          "[[item:elfenumhang]]", "Ja"
         ],
         [
-          "Mantel des Mantarochens",
-          "NEIN"
+          "Mantel des Mantarochens", "Nein"
         ],
         [
-          "Schillernde Waffe",
-          "Ja"
+          "Schillernde Waffe", "Ja"
         ],
         [
-          "Augen voller Charme",
-          "Ja"
+          "[[item:augen-der-bezauberung]]", "Ja"
         ],
         [
-          "Augen des Minutensehens",
-          "NEIN"
+          "[[item:augen-des-praezisen-sehens]]", "Nein"
         ],
         [
-          "Handschuhe des Diebstahls",
-          "NEIN"
+          "[[item:diebeshandschuhe]]", "Nein"
         ],
         [
-          "Helm des Bewusstseins",
-          "NEIN"
+          "Helm des Bewusstseins", "Nein"
         ],
         [
-          "Laterne der Enthüllung",
-          "NEIN"
+          "[[item:laterne-der-enttarnung]]", "Nein"
         ],
         [
-          "Gedankenschärfer",
-          "Ja"
+          "Gedankenschärfer", "Ja"
         ],
         [
-          "Halskette der Anpassung",
-          "Ja"
+          "[[item:halskette-der-anpassung]]", "Ja"
         ],
         [
-          "Pfeifen des Spukens",
-          "NEIN"
+          "Pfeifen des Spukens", "Nein"
         ],
         [
-          "Abstoßungsschild",
-          "NEIN"
+          "[[item:rueckwurfschild]]", "Nein"
         ],
         [
-          "Ring des Schwimmens",
-          "NEIN"
+          "[[item:ring-des-schwimmens]]", "Nein"
         ],
         [
-          "Ring of Water Walking",
-          "NEIN"
+          "[[item:ring-des-wasserlaufens]]", "Nein"
         ],
         [
-          "Sentinel-Schild",
-          "NEIN"
+          "[[item:waechterschild]]", "Nein"
         ],
         [
-          "Zauberauftankring",
-          "Ja"
+          "[[item:zauberfuellender-ring]]", "Ja"
         ],
         [
-          "Zauberstab der magischen Raketen",
-          "NEIN"
+          "[[item:zauberstab-der-magischen-geschosse]]", "Nein"
         ],
         [
-          "Zauberstab des Netzes",
-          "Ja"
+          "[[item:zauberstab-des-netzes]]", "Ja"
         ],
         [
-          "Waffe der Warnung",
-          "Ja"
+          "Waffe der Warnung", "Ja"
         ]
-      ],
-      "text": "Magischer Gegenstandsplan Einstimmungsrüstung +1 Keine Stiefel der Elfenart Keine Stiefel des gewundenen Pfades Ja Umhang der Elfenart Ja Umhang des Mantarochens Nein Schillernde Waffe Ja Augen der Bezauberung Ja Augen der Scharfsinnigkeit Nein Handschuhe der Dieblichkeit Kein Helm des Bewusstseins Keine Laterne der Enthüllung Nein Gedankenschärfer Ja Halskette der Anpassung Ja Pfeifen des Spukens Nein Abstoßungsschild Kein Ring des Schwimmens Kein Ring des Wasserwandelns Kein Wächterschild Kein Zauberauftankring Ja, Zauberstab, Raketen, Nein, Zauberstab des Netzes, Ja, Waffe der Warnung, Ja"
+      ]
     },
     {
       "type": "paragraph",
@@ -846,55 +546,43 @@
       "type": "table",
       "rows": [
         [
-          "Magischer Gegenstandsplan",
-          "Einstimmung"
+          "Magischer Gegenstandsplan", "Einstimmung"
         ],
         [
-          "Rüstung des Widerstands",
-          "Ja"
+          "Rüstung des Widerstands", "Ja"
         ],
         [
-          "Dolch des Giftes",
-          "NEIN"
+          "[[item:giftdolch]]", "Nein"
         ],
         [
-          "Elfenkette",
-          "NEIN"
+          "Elfenkette", "Nein"
         ],
         [
-          "Ring of Talenther Falling",
-          "Ja"
+          "Ring of Talenther Falling", "Ja"
         ],
         [
-          "Ring des Springens",
-          "Ja"
+          "[[item:ring-des-springens]]", "Ja"
         ],
         [
-          "Ring der Geistesabschirmung",
-          "Ja"
+          "[[item:ring-der-gedankenabschirmung]]", "Ja"
         ],
         [
-          "Schild +2",
-          "NEIN"
+          "[[item:schild-2]]", "Nein"
         ],
         [
           "Ungewöhnlicher wundersamer Gegenstand, der nicht verflucht ist (Sie können diese Option mehrmals erlernen und müssen jedes Mal einen anderen Gegenstand auswählen; jeder ausgewählte Gegenstand zählt als ein anderer Plan)",
           "Variiert"
         ],
         [
-          "Zauberstab des Kriegsmagiers +2",
-          "Ja"
+          "[[item:zauberstab-des-kriegsmagiers-2]]", "Ja"
         ],
         [
-          "Waffe +2",
-          "NEIN"
+          "[[item:waffe-2]]", "Nein"
         ],
         [
-          "Hüllen der unbewaffneten Kraft +2",
-          "NEIN"
+          "[[item:wraps-der-unbewaffneten-macht-2]]", "Nein"
         ]
-      ],
-      "text": "Magischer Gegenstandsplan Einstimmung Rüstung der Resistenz Ja Dolch des Giftes Nein Elfenkette Nein Ring des Talenthers Fallens Ja Ring des Springens Ja Ring der Geistesabschirmung Ja Schild +2 Nein Ungewöhnlicher wundersamer Gegenstand, der nicht verflucht ist (Sie können diese Option mehrmals erlernen und müssen jedes Mal einen anderen Gegenstand auswählen; jeder ausgewählte Gegenstand zählt als ein anderer Plan) Variiert Zauberstab des Kriegsmagiers +2 Ja Waffe +2 Nein Wraps der unbewaffneten Kraft +2 Nein"
+      ]
     },
     {
       "type": "paragraph",
@@ -904,39 +592,32 @@
       "type": "table",
       "rows": [
         [
-          "Magischer Gegenstandsplan",
-          "Einstimmung"
+          "Magischer Gegenstandsplan", "Einstimmung"
         ],
         [
-          "Rüstung +2",
-          "NEIN"
+          "[[item:ruestung-2]]", "Nein"
         ],
         [
           "Pfeilfangender Schild",
           "Ja"
         ],
         [
-          "Flammenzunge",
-          "Ja"
+          "[[item:flammenzunge]]", "Ja"
         ],
         [
           "Seltener wundersamer Gegenstand, der nicht verflucht ist (Sie können diese Option mehrmals erlernen und müssen jedes Mal einen anderen Gegenstand auswählen; jeder ausgewählte Gegenstand zählt als ein anderer Plan)",
           "Variiert"
         ],
         [
-          "Ring der freien Aktion",
-          "Ja"
+          "Ring der freien Aktion", "Ja"
         ],
         [
-          "Ring des Schutzes",
-          "Ja"
+          "Ring des Schutzes", "Ja"
         ],
         [
-          "Ring des Widders",
-          "Ja"
+          "Ring des Widders", "Ja"
         ]
-      ],
-      "text": "Magischer Gegenstandsplan Einstimmungsrüstung +2 Nein Pfeilfangschild Ja Flammenzunge Ja Seltener wundersamer Gegenstand, der nicht verflucht ist (Sie können diese Option mehrmals erlernen und müssen jedes Mal einen anderen Gegenstand auswählen; jeder ausgewählte Gegenstand zählt als ein anderer Plan) Variiert Ring der freien Aktion Ja Ring des Schutzes Ja Ring des Widders Ja"
+      ]
     },
     {
       "type": "heading",
@@ -945,7 +626,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Du erhältst eine Artificer-Unterklasse deiner Wahl. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Artificer-Stufen Funktionen gewährt. Für den Rest Ihrer Karriere erhalten Sie alle Merkmale Ihrer Unterklasse, die Ihrer Artificer-Stufe oder niedriger entsprechen."
+      "text": "Du erhältst eine Artificer-Unterklasse deiner Wahl. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Artificer-Leveln Funktionen gewährt. Für den Rest Ihrer Karriere erhalten Sie alle Merkmale Ihrer Unterklasse, die Ihrem Artificer-Level oder niedriger entsprechen."
     },
     {
       "type": "heading",
@@ -954,21 +635,21 @@
     },
     {
       "type": "paragraph",
-      "text": "Name: Alchemist, Waffenschmied, Artillerist, Battle Smith, Kartograph"
+      "text": "Name: Alchemist, Waffenschmied, Artillerist, Kampfschmied, Kartograph"
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Stufe 4: Verbesserung der Fähigkeitsbewertung"
+      "text": "Stufe 4: [[feat:faehigkeitswert-verbesserung]] oder Talent"
     },
     {
       "type": "paragraph",
-      "text": "Du erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Artificer-Stufen 8, 12 und 16."
+      "text": "Du erhältst das Talent [[feat:faehigkeitswert-verbesserung]] oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Artificer-Stufen 8, 12 und 16."
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Level 6: Basteln von magischen Gegenständen"
+      "text": "Level 6: Fertigen von magischen Gegenständen"
     },
     {
       "type": "paragraph",
@@ -976,28 +657,28 @@
     },
     {
       "type": "paragraph",
-      "text": "Laden Sie einen magischen Gegenstand auf. Als Bonusaktion können Sie einen magischen Gegenstand im Umkreis von 5 Fuß um sich herum berühren, den Sie mit „Magischen Gegenstand replizieren“ erstellt haben und der Ladungen verbraucht. Du verbrauchst einen Zauberslot der Stufe 1+ und lädst den Gegenstand wieder auf. Die Anzahl der Ladungen, die der Gegenstand wiedererlangt, entspricht der Stufe des verbrauchten Zauberslots."
+      "text": "**Laden Sie einen magischen Gegenstand auf.** Als Bonusaktion können Sie einen magischen Gegenstand im Umkreis von 1,5 m um sich herum berühren, den Sie mit „Magischen Gegenstand replizieren“ erstellt haben und der Ladungen verbraucht. Du verbrauchst einen Zauberplatz des Level 1+ und lädst den Gegenstand wieder auf. Die Anzahl der Ladungen, die der Gegenstand wiedererlangt, entspricht der Stufe des verbrauchten Zauberplatz."
     },
     {
       "type": "paragraph",
-      "text": "Magischen Gegenstand entziehen. Als Bonusaktion können Sie einen magischen Gegenstand in einem Umkreis von 5 Fuß um sich herum berühren, den Sie mit „Magischen Gegenstand replizieren“ erstellt haben, und den Gegenstand verschwinden lassen, wodurch seine magische Energie in einen Zauberslot umgewandelt wird. Der Steckplatz ist Stufe 1, wenn der Gegenstand häufig ist, oder Stufe 2, wenn der Gegenstand ungewöhnlich oder selten ist. Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben. Jeder Zauberslot, den Sie mit dieser Funktion erstellen, verschwindet, wenn Sie eine Lange Rast beenden."
+      "text": "**Magischen Gegenstand entziehen.** Als Bonusaktion können Sie einen magischen Gegenstand in einem Umkreis von 1,5 m um sich herum berühren, den Sie mit „Magischen Gegenstand replizieren“ erstellt haben, und den Gegenstand verschwinden lassen, wodurch seine magische Energie in einen Zauberplatz umgewandelt wird. Der Zauberplatz ist Level 1, wenn der Gegenstand gewöhnlich ist, oder Stufe 2, wenn der Gegenstand ungewöhnlich oder selten ist. Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben. Jeder Zauberplatz, den Sie mit dieser Funktion erstellen, verschwindet, wenn Sie eine Lange Rast beenden."
     },
     {
       "type": "paragraph",
-      "text": "Magischen Gegenstand umwandeln. Als magische Aktion können Sie einen magischen Gegenstand in einem Umkreis von 5 Fuß um sich herum berühren, den Sie mit „Magischen Gegenstand replizieren“ erstellt haben, und ihn in einen anderen magischen Gegenstand verwandeln. Der resultierende Gegenstand muss auf einem Ihnen bekannten magischen Gegenstandsplan basieren. Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben."
+      "text": "**Magischen Gegenstand umwandeln.** Als magische Aktion können Sie einen magischen Gegenstand in einem Umkreis von 1,5 m um sich herum berühren, den Sie mit „Magischen Gegenstand replizieren“ erstellt haben, und ihn in einen anderen magischen Gegenstand verwandeln. Der resultierende Gegenstand muss auf einem Ihnen bekannten magischen Gegenstandsplan basieren. Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben."
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Level 7: Genieblitz"
+      "text": "Level 7: Geistesblitz"
     },
     {
       "type": "paragraph",
-      "text": "Wenn Ihnen oder einer Kreatur, die Sie im Umkreis von 30 Fuß sehen können, eine Fähigkeitsüberprüfung oder ein Rettungswurf misslingt, können Sie eine Reaktion ausführen, um dem Wurf einen Bonus hinzuzufügen, der möglicherweise zum Erfolg führt. Der Bonus entspricht Ihrem Intelligenzmodifikator (mindestens +1)."
+      "text": "Wenn Ihnen oder einer Kreatur, die Sie im Umkreis von 9 m sehen können, ein Fähigkeits- oder Rettungswurf misslingt, können Sie eine Reaktion ausführen, um dem Wurf einen Bonus hinzuzufügen, der möglicherweise zum Erfolg führt. Der Bonus entspricht Ihrem INT-Modifikator (mindestens +1)."
     },
     {
       "type": "paragraph",
-      "text": "Du kannst diese Reaktion so oft ausführen, wie es deinem Intelligenzmodifikator entspricht (mindestens einmal). Wenn Sie eine Lange Rast beenden, erhalten Sie alle verbrauchten Nutzungen zurück."
+      "text": "Du kannst diese Reaktion so oft ausführen, wie es deinem INT-Modifikator entspricht (mindestens einmal). Wenn Sie eine Lange Rast beenden, erhalten Sie alle verbrauchten Nutzungen zurück."
     },
     {
       "type": "heading",
@@ -1015,7 +696,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Immer wenn Sie einen Lange Rast abgeschlossen haben, können Sie eine einfache oder kriegerische Waffe oder einen Gegenstand berühren, den Sie als Zauberfokus verwenden können, und einen Zauber darin speichern. Wählen Sie dabei einen Kunsthandwerker-Zauber der Stufe 1, 2 oder 3 aus, der eine Zauberzeit einer Aktion hat und keine Materialkomponente erfordert, die vom Zauber verbraucht wird (Sie müssen den Zauber nicht vorbereitet haben)."
+      "text": "Immer wenn Sie einen Lange Rast abgeschlossen haben, können Sie eine einfache oder Kriegs-Waffe oder einen Gegenstand berühren, den Sie als Zauberfokus verwenden können, und einen Zauber darin speichern. Wählen Sie dabei einen Artificer-Zauber des Levels 1, 2 oder 3 aus, der eine Zauberzeit einer Aktion hat und keine Materialkomponente erfordert, die vom Zauber verbraucht wird (Sie müssen den Zauber nicht vorbereitet haben)."
     },
     {
       "type": "paragraph",
@@ -1023,12 +704,12 @@
     },
     {
       "type": "paragraph",
-      "text": "Der Zauber bleibt im Objekt, bis er so oft verwendet wurde, dass er dem Doppelten Ihres Intelligenzmodifikators entspricht (mindestens zweimal), oder bis Sie diese Funktion erneut verwenden, um einen Zauber in einem Objekt zu speichern."
+      "text": "Der Zauber bleibt im Objekt, bis er so oft verwendet wurde, dass er dem Doppelten Ihres INT-Modifikators entspricht (mindestens zweimal), oder bis Sie diese Funktion erneut verwenden, um einen Zauber in einem Objekt zu speichern."
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Level 14: Fortgeschrittener Kunstgriff"
+      "text": "Level 14: Fortgeschrittene Magieschmiedekunst"
     },
     {
       "type": "paragraph",
@@ -1036,11 +717,11 @@
     },
     {
       "type": "paragraph",
-      "text": "Savant für magische Gegenstände. Sie können sich jetzt auf bis zu fünf magische Gegenstände gleichzeitig einstimmen."
+      "text": "**Savant für magische Gegenstände.** Sie können sich jetzt auf bis zu fünf magische Gegenstände gleichzeitig einstimmen."
     },
     {
       "type": "paragraph",
-      "text": "Erfrischtes Genie. Wenn Sie eine Kurze Rast abschließen, erhalten Sie eine verbrauchte Nutzung Ihrer Flash of Genius-Funktion zurück."
+      "text": "**Erfrischtes Genie.** Wenn Sie eine Kurze Rast abschließen, erhalten Sie eine verbrauchte Nutzung Ihrer Geistesblitz-Funktion zurück."
     },
     {
       "type": "heading",
@@ -1058,12 +739,12 @@
     },
     {
       "type": "paragraph",
-      "text": "Du erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Segen der Energieresistenz wird empfohlen."
+      "text": "Du erhältst einen epischen Segen oder eine anderes Talent deiner Wahl, für die du dich qualifizierst. [[feat:segen-der-energieresistenz]] wird empfohlen."
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Level 20: Seele der Künstlichkeit"
+      "text": "Level 20: Seele der Magieschmiedekunst"
     },
     {
       "type": "paragraph",
@@ -1071,14 +752,13 @@
     },
     {
       "type": "paragraph",
-      "text": "Betrüge den Tod. Wenn Ihre Trefferpunkte auf 0 reduziert, aber nicht vollständig getötet werden, können Sie eine beliebige Anzahl ungewöhnlicher oder seltener magischer Gegenstände auflösen, die mit der Funktion „Magischen Gegenstand replizieren“ erstellt wurden. Wenn Sie dies tun, ändern sich Ihre Trefferpunkte stattdessen auf einen Wert, der dem 20-fachen der Anzahl der zerfallenen magischen Gegenstände entspricht."
+      "text": "**Betrüge den Tod.** Wenn Ihre Trefferpunkte auf 0 reduziert, aber nicht vollständig getötet werden, können Sie eine beliebige Anzahl ungewöhnlicher oder seltener magischer Gegenstände auflösen, die mit der Funktion „Magischen Gegenstand replizieren“ erstellt wurden. Wenn Sie dies tun, ändern sich Ihre Trefferpunkte stattdessen auf einen Wert, der dem 20-fachen der Anzahl der zerfallenen magischen Gegenstände entspricht."
     },
     {
       "type": "paragraph",
-      "text": "Magische Führung. Wenn du eine Kurze Rast abschließt, erhältst du alle verbrauchten Nutzungen deines Geistesblitzes zurück, wenn du über Einstimmung auf mindestens einen magischen Gegenstand verfügst."
+      "text": "**Magische Führung.** Wenn du eine Kurze Rast abschließt, erhältst du alle verbrauchten Nutzungen deines Geistesblitzes zurück, wenn du über Einstimmung auf mindestens einen magischen Gegenstand verfügst."
     }
   ],
-  "text": "Kunsthandwerker sind Meister der Erfindung und nutzen Einfallsreichtum und Magie, um außergewöhnliche Fähigkeiten in Objekten freizusetzen. Sie betrachten Magie als ein komplexes System, das darauf wartet, entschlüsselt und dann in ihren Zaubersprüchen und Erfindungen genutzt zu werden.\n\nKerneigenschaften des Kunsthandwerkers Primärfähigkeit Intelligenz Trefferpunktwürfel W8 pro Stufe des Kunsthandwerkers Rettungswurf-Fertigkeiten Konstitutions- und Intelligenzfähigkeits-Fertigkeiten Wählen Sie 2: Arkana, Geschichte, Untersuchung, Medizin, Natur, Wahrnehmung oder Fingerfertigkeit Waffenkenntnisse Einfache Waffen Werkzeugkenntnisse Diebeswerkzeuge, Bastlerwerkzeuge und eine Art von Handwerkswerkzeugen Ihrer Wahl Rüstungstraining Leichte und mittlere Rüstung und Schilde Startausrüstung Wählen Sie A oder B: (A) Beschlagene Lederrüstung, Dolch, Diebeswerkzeuge, Bastlerwerkzeuge, Dungeoneer’s Pack und 16 GP; oder (B) 150 GP\n\nEin Kunsthandwerker werden …\n\nAls Charakter der Stufe 1\n\nErhalte alle Eigenschaften in der Tabelle „Kernkunsthandwerkereigenschaften“. Erhalten Sie die Level-1-Funktionen des Kunsthandwerkers, die in der Tabelle der Talente des Kunsthandwerkers aufgeführt sind.\n\nAls Multiklassen-Charakter\n\nErhalten Sie die folgenden Eigenschaften aus der Tabelle „Kerneigenschaften des Kunsthandwerkers“: Trefferpunktwürfel, Kenntnisse im Umgang mit den Werkzeugen des Bastlers, Kenntnisse in einer Fertigkeit Ihrer Wahl aus der Fertigkeitsliste des Kunsthandwerkers und Training mit leichter und mittlerer Rüstung und Schilden. Erhalten Sie die Level-1-Funktionen des Kunsthandwerkers, die in der Tabelle der Talente des Kunsthandwerkers aufgeführt sind. Sehen Sie sich die Multiklassenregeln im Spielerhandbuch an, um Ihre verfügbaren Zauberslots zu ermitteln, indem Sie die Hälfte Ihrer Artificer-Stufen addieren (aufgerundet).\n\nTalente der Artificer-Klasse\n\nAls Artificer erhalten Sie die folgenden Klassenmerkmale, wenn Sie die angegebenen Artificer-Stufen erreichen. Diese Funktionen sind in der Tabelle „Artificer Talentures“ aufgeführt.\n\nKunsthandwerker-Talente (Teil A)\n\nStufe Uebungsbonus Klassentalente 1 +2 Zauberwirkung, Magie des Bastlers 2 +2 Magischen Gegenstand replizieren 3 +2 Artificer-Unterklasse 4 +2 Fähigkeitswertverbesserung 5 +3 Unterklassentalent 6 +3 Magischer Gegenstand Tinker 7 +3 Genieblitz 8 +3 Fähigkeitswertverbesserung 9 +4 Unterklassentalent 10 +4 Magischer Gegenstand Adept 11 +4 Zauberspeichernder Gegenstand 12 +4 Verbesserung des Fähigkeitswerts 13 +5 - 14 +5 Fortgeschrittener Kunstgriff 15 +5 Unterklassentalent 16 +5 Verbesserung des Fähigkeitswerts 17 +6 - 18 +6 Magischer Gegenstandsmeister 19 +6 Epischer Segen 20 +6 Seele des Kunstgriffs\n\nKunsthandwerker-Talente (Teil B)\n\nLevelpläne Bekannte magische Gegenstände Zaubertricks Vorbereitete Zaubersprüche 1. 2. 3. 4. 5. 1 - - 2 2 2 - - - - 2 4 2 2 3 2 - - - - 3 4 2 2 4 3 - - - - 4 4 2 2 5 3 - - - - 5 4 2 2 6 4 2 - - - 6 5 3 2 6 4 2 - - - 7 5 3 2 7 4 3 - - - 8 5 3 2 7 4 3 - - - 9 5 3 2 9 4 3 2 - - 10 6 4 3 9 4 3 2 - - 11 6 4 3 10 4 3 3 - - 12 6 4 3 10 4 3 3 - - 13 6 4 3 11 4 3 3 1 - 14 7 5 4 11 4 3 3 1 - 15 7 5 4 12 4 3 3 2 - 16 7 5 4 12 4 3 3 2 - 17 7 5 4 14 4 3 3 3 1 18 8 6 4 14 4 3 3 3 1 19 8 6 4 15 4 3 3 3 2 20 8 6 4 15 4 3 3 3 2\n\nStufe 1: Zaubern\n\nSie haben gelernt, magische Energie durch Objekte zu kanalisieren. Die Regeln zum Zaubern finden Sie im Spielerhandbuch. In den folgenden Informationen erfahren Sie, wie Sie diese Regeln mit Kunsthandwerker-Zaubersprüchen anwenden, die in der Kunsthandwerker-Zauberliste aufgeführt sind.\n\nErforderliche Werkzeuge. Sie produzieren Ihre Artificer-Zauber mithilfe von Werkzeugen. Sie können Diebeswerkzeuge, Bastlerwerkzeuge oder eine andere Art von Handwerkswerkzeugen verwenden, mit denen Sie als Zauberfokus vertraut sind, und Sie müssen einen dieser Fokus in der Hand haben, wenn Sie einen Kunsthandwerkerzauber wirken (was bedeutet, dass der Zauber eine M-Komponente hat, wenn Sie ihn wirken).\n\nZaubertricks. Sie kennen zwei Artificer-Cantrips Ihrer Wahl. Empfohlen werden Acid Splash und Prestidigitation.\n\nImmer wenn Sie Lange Rast abgeschlossen haben, können Sie einen Ihrer Cantrips aus dieser Funktion durch einen anderen Artificer-Cantrip Ihrer Wahl ersetzen.\n\nWenn Sie die Level 10 und 14 des Artificer erreichen, lernen Sie einen weiteren Artificer-Cantrip Ihrer Wahl, wie in der Spalte „Zaubertricks“ der Tabelle „Artificer-Talente“ gezeigt.\n\nZauberplatz. Die Tabelle „Artificer Talentures“ zeigt, wie viele Zauberslots Sie haben, um Ihre Zauber der Stufe 1+ zu wirken. Du erhältst alle verbrauchten Slots zurück, wenn du eine Lange Rast abschließt.\n\nVorbereitete Zauber der Stufe 1+. Sie bereiten die Liste der Zauber der Stufe 1+ vor, die Ihnen mit dieser Funktion zur Verfügung stehen. Wählen Sie zunächst zwei Artificer-Zauber der Stufe 1 aus. Wundheilung und Fett werden empfohlen.\n\nDie Anzahl der Zaubersprüche auf Ihrer Liste erhöht sich, je höher Sie die Stufe des Konstrukteurs erreichen, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Talente des Konstrukteurs“ angezeigt. Immer wenn sich diese Zahl erhöht, wähle weitere Kunsthandwerker-Zauber, bis die Anzahl der Zauber auf deiner Liste mit der Zahl auf der Tabelle übereinstimmt. Die ausgewählten Zauber müssen einer Stufe angehören, für die Sie über Zauberslots verfügen. Wenn Sie beispielsweise ein Konstrukteur der Stufe 5 sind, kann Ihre Liste der vorbereiteten Zauber sechs Konstrukteurszauber der Stufen 1 und 2 in beliebiger Kombination enthalten.\n\nWenn eine andere Artificer-Funktion dir Zauber verleiht, die du schon immer vorbereitet hast, werden diese nicht auf die Anzahl der Zauber angerechnet, die du mit dieser Funktion vorbereiten kannst. Ansonsten zählen diese Zauber für dich jedoch als Artificer-Zauber.\n\nÄndern Sie Ihre vorbereiteten Zaubersprüche. Immer wenn Sie Lange Rast abgeschlossen haben, können Sie Ihre Liste der vorbereiteten Zaubersprüche ändern und jeden der dortigen Zaubersprüche durch andere Kunsthandwerkerzauber ersetzen, für die Sie Zauberplätze haben.\n\nZauberfähigkeit. Intelligenz ist Ihre Zauberfähigkeit für Ihre Artificer-Zauber.\n\nLevel 1: Tinkers Magie\n\nSie kennen den Mending-Cantrip.\n\nAls magische Aktion kannst du, während du Tinkers Werkzeuge in der Hand hältst, einen Gegenstand in einem unbesetzten Raum innerhalb von 5 Fuß von dir selbst erschaffen, indem du den Gegenstand aus der folgenden Liste auswählst:\n\nKugellager Flaschenbeutel Korb Enterhaken Seil Schlafsack Jagdfalle Sack Glocke Krug Schaufel Decke Lampe Spikes, Eisenblock und Tackle Handschellen Schnurflasche, Glasnetz Zunderbüchse Eimer Ölfackel Caltrops Papierfläschchen Kerze Pergament Brecheisenstange\n\nDie Regeln für den Gegenstand finden Sie im Spielerhandbuch. Der Gegenstand bleibt bestehen, bis Sie eine Lange Rast beendet haben. Dann verschwindet er.\n\nSie können diese Funktion so oft verwenden, wie es Ihrem Intelligenzmodifikator entspricht (mindestens einmal), und Sie erhalten alle verbrauchten Anwendungen zurück, wenn Sie eine Lange Rast abgeschlossen haben.\n\nLevel 2: Magischen Gegenstand replizieren\n\nDu hast arkane Pläne erlernt, mit denen du magische Gegenstände herstellst.\n\nPläne bekannt. Wenn Sie diese Funktion erhalten, wählen Sie vier Pläne aus, die Sie aus der Tabelle „Pläne für magische Gegenstände (Artificer Level 2+)“ lernen möchten. Empfohlen werden „Bag of Holding“, „Cap of Water Breathing“, „Sendesteine“ und „Zauberstab des Kriegsmagiers“. Immer wenn Sie ein Artificer-Level erreichen, können Sie einen der Ihnen bekannten Pläne durch einen neuen Plan ersetzen, für den Sie sich qualifizieren.\n\nSie lernen einen anderen Plan Ihrer Wahl, wenn Sie bestimmte Stufen als Kunsthandwerker erreichen, wie in der Spalte „Bekannte Pläne“ der Tabelle „Kunsthandwerkertalente“ angezeigt. Wenn Sie einen Plan zum Lernen auswählen, wählen Sie ihn aus einer beliebigen Tabelle mit Magic-Item-Plänen aus, für die Sie sich qualifizieren. Ihre Qualifikation basiert auf Ihrem Artificer-Level.\n\nEinen Artikel erstellen. Wenn Sie Lange Rast abgeschlossen haben, können Sie ein oder zwei verschiedene magische Gegenstände herstellen, wenn Sie Tinker’s Tools zur Hand haben. Jeder Artikel basiert auf einem der Ihnen bekannten Pläne für diese Funktion.\n\nWenn für einen erstellten Gegenstand eine Einstimmung erforderlich ist, können Sie sich in dem Moment darauf einstimmen, in dem Sie ihn erstellen. Wenn Sie sich später dazu entschließen, sich auf den Gegenstand einzustimmen, müssen Sie dies mit dem normalen Einstimmungsprozess tun.\n\nWenn Sie bestimmte Kunsthandwerker-Stufen erreichen, die in der Spalte „Magische Gegenstände“ der Tabelle „Kunsthandwerker-Talente“ angegeben sind, erhöht sich die Anzahl der magischen Gegenstände, die Sie am Ende einer Lange Rast herstellen können. Jeder Artikel, den Sie erstellen, muss auf einem anderen Plan basieren, den Sie kennen.\n\nSie können nicht mehr magische Gegenstände aus dieser Funktion haben, als in der Spalte „Magische Gegenstände“ der Tabelle „Artificer Talentures“ für Ihr Level angezeigt wird. Wenn Sie versuchen, die maximale Anzahl an magischen Gegenständen für diese Funktion zu überschreiten, verschwindet der älteste Gegenstand und der neue Gegenstand erscheint.\n\nDauer. Ein durch diese Funktion erstellter magischer Gegenstand funktioniert wie ein normaler magischer Gegenstand, außer dass seine Magie nicht dauerhaft ist; Wenn du stirbst, verschwindet der magische Gegenstand nach 1W4 Tagen. Wenn Sie einen Ihnen bekannten Plan durch einen neuen Plan ersetzen, verschwinden alle magischen Gegenstände, die mit dem ersetzten Plan erstellt wurden, sofort.\n\nWenn es sich bei einem Gegenstand, den Sie mit dieser Funktion erstellt haben, um einen Behälter handelt, z. B. um eine Aufbewahrungstasche, und er verschwindet, erscheint sein Inhalt harmlos in und um seinen Raum herum.\n\nZauberfokus. Sie können jeden mit dieser Funktion erstellten Zauberstab oder jede Waffe als Zauberfokus verwenden, anstatt einen Satz Handwerkerwerkzeuge zu verwenden.\n\nPläne für magische Gegenstände (Artificer Level 2+)\n\nPlan für magische Gegenstände: Einstimmung, Alchemiekrug, kein Beutel mit Inhalt, keine Mütze mit Wasseratmung, kein gewöhnlicher magischer Gegenstand, der kein Trank, keine Schriftrolle oder verflucht ist (Sie können diese Option mehrmals erlernen und müssen jedes Mal einen anderen Gegenstand auswählen; jeder ausgewählte Gegenstand zählt als ein anderer Plan). Variiert: Schutzbrille der Nacht, kein Manifold-Werkzeug, ja, Wiederholungsschuss, ja, zurückkehrende Waffe, kein Seil des Kletterns, keine sendenden Steine, kein Schild +1, kein Zauberstab der Magieerkennung, kein Zauberstab der Geheimnisse, kein Zauberstab des Kriegsmagiers +1 Ja Waffe +1 Nein Wraps of Unbewaffnete Kraft +1 Nein\n\nPläne für magische Gegenstände (Artificer Level 6+)\n\nMagischer Gegenstandsplan Einstimmungsrüstung +1 Keine Stiefel der Elfenart Keine Stiefel des gewundenen Pfades Ja Umhang der Elfenart Ja Umhang des Mantarochens Nein Schillernde Waffe Ja Augen der Bezauberung Ja Augen der Scharfsinnigkeit Nein Handschuhe der Dieblichkeit Kein Helm des Bewusstseins Keine Laterne der Enthüllung Nein Gedankenschärfer Ja Halskette der Anpassung Ja Pfeifen des Spukens Nein Abstoßungsschild Kein Ring des Schwimmens Kein Ring des Wasserwandelns Kein Wächterschild Kein Zauberauftankring Ja, Zauberstab, Raketen, Nein, Zauberstab des Netzes, Ja, Waffe der Warnung, Ja\n\nPläne für magische Gegenstände (Artificer Level 10+)\n\nMagischer Gegenstandsplan Einstimmung Rüstung der Resistenz Ja Dolch des Giftes Nein Elfenkette Nein Ring des Talenthers Fallens Ja Ring des Springens Ja Ring der Geistesabschirmung Ja Schild +2 Nein Ungewöhnlicher wundersamer Gegenstand, der nicht verflucht ist (Sie können diese Option mehrmals erlernen und müssen jedes Mal einen anderen Gegenstand auswählen; jeder ausgewählte Gegenstand zählt als ein anderer Plan) Variiert Zauberstab des Kriegsmagiers +2 Ja Waffe +2 Nein Wraps der unbewaffneten Kraft +2 Nein\n\nPläne für magische Gegenstände (Artificer Level 14+)\n\nMagischer Gegenstandsplan Einstimmungsrüstung +2 Nein Pfeilfangschild Ja Flammenzunge Ja Seltener wundersamer Gegenstand, der nicht verflucht ist (Sie können diese Option mehrmals erlernen und müssen jedes Mal einen anderen Gegenstand auswählen; jeder ausgewählte Gegenstand zählt als ein anderer Plan) Variiert Ring der freien Aktion Ja Ring des Schutzes Ja Ring des Widders Ja\n\nLevel 3: Artificer-Unterklasse\n\nDu erhältst eine Artificer-Unterklasse deiner Wahl. Eine Unterklasse ist eine Spezialisierung, die Ihnen auf bestimmten Artificer-Stufen Funktionen gewährt. Für den Rest Ihrer Karriere erhalten Sie alle Merkmale Ihrer Unterklasse, die Ihrer Artificer-Stufe oder niedriger entsprechen.\n\nArtificer-Unterklassen\n\nName: Alchemist, Waffenschmied, Artillerist, Battle Smith, Kartograph\n\nStufe 4: Verbesserung der Fähigkeitsbewertung\n\nDu erhältst das Talent „Verbesserung des Fähigkeitswerts“ oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. Sie erhalten diese Funktion erneut auf den Artificer-Stufen 8, 12 und 16.\n\nLevel 6: Basteln von magischen Gegenständen\n\nIhre Funktion „Magischen Gegenstand replizieren“ bietet die folgenden Optionen.\n\nLaden Sie einen magischen Gegenstand auf. Als Bonusaktion können Sie einen magischen Gegenstand im Umkreis von 5 Fuß um sich herum berühren, den Sie mit „Magischen Gegenstand replizieren“ erstellt haben und der Ladungen verbraucht. Du verbrauchst einen Zauberslot der Stufe 1+ und lädst den Gegenstand wieder auf. Die Anzahl der Ladungen, die der Gegenstand wiedererlangt, entspricht der Stufe des verbrauchten Zauberslots.\n\nMagischen Gegenstand entziehen. Als Bonusaktion können Sie einen magischen Gegenstand in einem Umkreis von 5 Fuß um sich herum berühren, den Sie mit „Magischen Gegenstand replizieren“ erstellt haben, und den Gegenstand verschwinden lassen, wodurch seine magische Energie in einen Zauberslot umgewandelt wird. Der Steckplatz ist Stufe 1, wenn der Gegenstand häufig ist, oder Stufe 2, wenn der Gegenstand ungewöhnlich oder selten ist. Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben. Jeder Zauberslot, den Sie mit dieser Funktion erstellen, verschwindet, wenn Sie eine Lange Rast beenden.\n\nMagischen Gegenstand umwandeln. Als magische Aktion können Sie einen magischen Gegenstand in einem Umkreis von 5 Fuß um sich herum berühren, den Sie mit „Magischen Gegenstand replizieren“ erstellt haben, und ihn in einen anderen magischen Gegenstand verwandeln. Der resultierende Gegenstand muss auf einem Ihnen bekannten magischen Gegenstandsplan basieren. Sobald Sie diese Funktion nutzen, können Sie dies erst wieder tun, wenn Sie eine Lange Rast beendet haben.\n\nLevel 7: Genieblitz\n\nWenn Ihnen oder einer Kreatur, die Sie im Umkreis von 30 Fuß sehen können, eine Fähigkeitsüberprüfung oder ein Rettungswurf misslingt, können Sie eine Reaktion ausführen, um dem Wurf einen Bonus hinzuzufügen, der möglicherweise zum Erfolg führt. Der Bonus entspricht Ihrem Intelligenzmodifikator (mindestens +1).\n\nDu kannst diese Reaktion so oft ausführen, wie es deinem Intelligenzmodifikator entspricht (mindestens einmal). Wenn Sie eine Lange Rast beenden, erhalten Sie alle verbrauchten Nutzungen zurück.\n\nLevel 10: Experte für magische Gegenstände\n\nSie können sich jetzt auf bis zu vier magische Gegenstände gleichzeitig einstimmen.\n\nLevel 11: Zauberspeichernder Gegenstand\n\nImmer wenn Sie einen Lange Rast abgeschlossen haben, können Sie eine einfache oder kriegerische Waffe oder einen Gegenstand berühren, den Sie als Zauberfokus verwenden können, und einen Zauber darin speichern. Wählen Sie dabei einen Kunsthandwerker-Zauber der Stufe 1, 2 oder 3 aus, der eine Zauberzeit einer Aktion hat und keine Materialkomponente erfordert, die vom Zauber verbraucht wird (Sie müssen den Zauber nicht vorbereitet haben).\n\nWährend eine Kreatur das Objekt hält, kann sie eine magische Aktion ausführen, um mithilfe Ihres Zauberfähigkeitsmodifikators die Wirkung des Zaubers daraus zu erzeugen. Wenn der Zauber Konzentration erfordert, muss sich die Kreatur konzentrieren. Sobald eine Kreatur das Objekt verwendet hat, um die Wirkung des Zaubers hervorzurufen, kann das Objekt bis zum Beginn des nächsten Zuges der Kreatur nicht mehr auf diese Weise verwendet werden.\n\nDer Zauber bleibt im Objekt, bis er so oft verwendet wurde, dass er dem Doppelten Ihres Intelligenzmodifikators entspricht (mindestens zweimal), oder bis Sie diese Funktion erneut verwenden, um einen Zauber in einem Objekt zu speichern.\n\nLevel 14: Fortgeschrittener Kunstgriff\n\nSie profitieren von folgenden Vorteilen.\n\nSavant für magische Gegenstände. Sie können sich jetzt auf bis zu fünf magische Gegenstände gleichzeitig einstimmen.\n\nErfrischtes Genie. Wenn Sie eine Kurze Rast abschließen, erhalten Sie eine verbrauchte Nutzung Ihrer Flash of Genius-Funktion zurück.\n\nLevel 18: Meister magischer Gegenstände\n\nSie können sich jetzt auf bis zu sechs magische Gegenstände gleichzeitig einstimmen.\n\nLevel 19: Epischer Segen\n\nDu erhältst eine epische Segensleistung oder eine andere Leistung deiner Wahl, für die du dich qualifizierst. Segen der Energieresistenz wird empfohlen.\n\nLevel 20: Seele der Künstlichkeit\n\nSie haben eine mystische Verbindung zu Ihren magischen Gegenständen entwickelt, die Sie als Hilfe nutzen können. Sie profitieren von folgenden Vorteilen.\n\nBetrüge den Tod. Wenn Ihre Trefferpunkte auf 0 reduziert, aber nicht vollständig getötet werden, können Sie eine beliebige Anzahl ungewöhnlicher oder seltener magischer Gegenstände auflösen, die mit der Funktion „Magischen Gegenstand replizieren“ erstellt wurden. Wenn Sie dies tun, ändern sich Ihre Trefferpunkte stattdessen auf einen Wert, der dem 20-fachen der Anzahl der zerfallenen magischen Gegenstände entspricht.\n\nMagische Führung. Wenn du eine Kurze Rast abschließt, erhältst du alle verbrauchten Nutzungen deines Geistesblitzes zurück, wenn du über Einstimmung auf mindestens einen magischen Gegenstand verfügst.",
   "tags": [],
   "hit_die": 8,
   "primary_abilities": [
@@ -1086,43 +766,42 @@
   ],
   "proficiencies": {
     "saving_throws": [
-      "int"
+      "int", "con"
     ],
     "armor": [
-      "Leichte",
-      "mittlere Rüstungen",
-      "Schilde"
+      "Leichte Rüstungen",
+      "Mittlere Rüstungen",
+      "[[item:schild|Schilde]]"
     ],
     "weapons": [
       "Einfache Waffen"
     ],
     "tools": [
-      "Diebeswerkzeuge",
-      "Bastlerwerkzeuge",
+      "[[item:diebeswerkzeug]]",
+      "[[item:tueftlerwerkzeug]]",
       "eine Art Handwerkerwerkzeuge Ihrer Wahl"
     ]
   },
   "skill_choices": {
     "choose": 2,
     "options": [
-      "Arkana",
+      "Arkane-Kunde",
       "Geschichte",
-      "Untersuchung",
+      "Nachforschungen",
       "Medizin",
-      "Natur",
+      "Naturkunde",
       "Wahrnehmung",
       "Fingerfertigkeit"
     ]
   },
   "spellcasting": {
     "ability": "int",
-    "progression": "full",
-    "preparation_formula": null,
-    "known_formula": null,
+    "progression": "half",
+    "preparation_formula": true,
+    "known_formula": false,
     "focus_types": [
-      "Sie können jeden mit dieser Funktion erstellten Zauberstab",
-      "jede Waffe als Zauberfokus verwenden",
-      "anstatt einen Satz Handwerkerwerkzeuge zu verwenden"
+      "jede Waffe oder Zauberstab mit Magischen Gegenstand replizieren erstellt",
+      "Satz Handwerkerwerkzeuge"
     ],
     "spell_list_names": [
       "Artificer"
@@ -1130,8 +809,8 @@
     "uses_spell_slots": true
   },
   "starting_equipment": {
-    "fixed": [],
-    "choices": []
+    "a": ["[[item:beschlagene-lederruestung]]", "[[item:dolch]]", "[[item:diebeswerkzeug]]", "[[item:tueftlerwerkzeug]]", "[[item:abenteurerpaket]]", "16 GM"],
+    "b": ["150 GM"]
   },
   "multiclass_requirements": {
     "minimum_abilities": {}
@@ -1142,7 +821,7 @@
       "proficiency_bonus": "+2",
       "features": [
         "Zauberei",
-        "Tinker's Magic"
+        "Tüftlermagie"
       ],
       "cantrips_known": 2,
       "prepared_spells": 2,
@@ -1182,7 +861,7 @@
       "level": 4,
       "proficiency_bonus": "+2",
       "features": [
-        "Faehigkeitswert-Verbesserung"
+        "[[feat:faehigkeitswert-verbesserung]] oder Talent"
       ],
       "plaene bekannt": "4",
       "magische gegenstaende": "2",
@@ -1196,7 +875,7 @@
       "level": 5,
       "proficiency_bonus": "+3",
       "features": [
-        "Unterklasse Talent"
+        "Unterklassen-Eigenschaft"
       ],
       "plaene bekannt": "4",
       "magische gegenstaende": "2",
@@ -1211,7 +890,7 @@
       "level": 6,
       "proficiency_bonus": "+3",
       "features": [
-        "Basteln von magischen Gegenständen"
+        "Fertigen von magischen Gegenständen"
       ],
       "plaene bekannt": "5",
       "magische gegenstaende": "3",
@@ -1226,7 +905,7 @@
       "level": 7,
       "proficiency_bonus": "+3",
       "features": [
-        "Ein Geistesblitz"
+        "Geistesblitz"
       ],
       "plaene bekannt": "5",
       "magische gegenstaende": "3",
@@ -1241,7 +920,7 @@
       "level": 8,
       "proficiency_bonus": "+3",
       "features": [
-        "Faehigkeitswert-Verbesserung"
+        "[[feat:faehigkeitswert-verbesserung]] oder Talent"
       ],
       "plaene bekannt": "5",
       "magische gegenstaende": "3",
@@ -1256,7 +935,7 @@
       "level": 9,
       "proficiency_bonus": "+4",
       "features": [
-        "Unterklasse Talent"
+        "Unterklassen-Eigenschaft"
       ],
       "plaene bekannt": "5",
       "magische gegenstaende": "3",
@@ -1304,7 +983,7 @@
       "level": 12,
       "proficiency_bonus": "+4",
       "features": [
-        "Faehigkeitswert-Verbesserung"
+        "[[feat:faehigkeitswert-verbesserung]] oder Talent"
       ],
       "plaene bekannt": "6",
       "magische gegenstaende": "4",
@@ -1334,7 +1013,7 @@
       "level": 14,
       "proficiency_bonus": "+5",
       "features": [
-        "Fortgeschrittener Kunstgriff"
+        "Fortgeschrittene Magieschmiedekunst"
       ],
       "plaene bekannt": "7",
       "magische gegenstaende": "5",
@@ -1351,7 +1030,7 @@
       "level": 15,
       "proficiency_bonus": "+5",
       "features": [
-        "Unterklasse Talent"
+        "Unterklassen-Eigenschaft"
       ],
       "plaene bekannt": "7",
       "magische gegenstaende": "5",
@@ -1368,7 +1047,7 @@
       "level": 16,
       "proficiency_bonus": "+5",
       "features": [
-        "Faehigkeitswert-Verbesserung"
+        "Fähigkeitswert-Verbesserung oder Talent"
       ],
       "plaene bekannt": "7",
       "magische gegenstaende": "5",
@@ -1436,7 +1115,7 @@
       "level": 20,
       "proficiency_bonus": "+6",
       "features": [
-        "Seele der Künstlichkeit"
+        "Seele der Magieschmiedekunst"
       ],
       "plaene bekannt": "8",
       "magische gegenstaende": "6",
@@ -1453,46 +1132,41 @@
   ],
   "subclasses": [
     {
-      "name": "Alchimist",
-      "original_name": "Alchemist",
-      "id": "alchimist",
+      "name": "Alchemist",
+      "id": "alchemist",
       "source_url": "http://dnd2024.wikidot.com/artificer:alchemist",
-      "file": "subclasses/alchimist.json"
+      "file": "subclasses/alchemist.json"
     },
     {
       "name": "Waffenmeister",
-      "original_name": "Armorer",
       "id": "waffenmeister",
       "source_url": "http://dnd2024.wikidot.com/artificer:armorer",
       "file": "subclasses/waffenmeister.json"
     },
     {
       "name": "Artillerist",
-      "original_name": "Artillerist",
       "id": "artillerist",
       "source_url": "http://dnd2024.wikidot.com/artificer:artillerist",
       "file": "subclasses/artillerist.json"
     },
     {
-      "name": "Schlacht Smith",
-      "original_name": "Battle Smith",
-      "id": "schlacht-smith",
+      "name": "Kampfschmied",
+      "id": "kampfschmied",
       "source_url": "http://dnd2024.wikidot.com/artificer:battle-smith",
       "file": "subclasses/schlacht-smith.json"
     },
     {
       "name": "Kartograph",
-      "original_name": "Cartographer",
       "id": "kartograph",
       "source_url": "http://dnd2024.wikidot.com/artificer:cartographer",
       "file": "subclasses/kartograph.json"
     }
   ],
   "subclass_index": [
-    "alchimist.json",
+    "alchemist.json",
     "artillerist.json",
     "kartograph.json",
-    "schlacht-smith.json",
+    "kampfschmied.json",
     "waffenmeister.json"
   ]
 }

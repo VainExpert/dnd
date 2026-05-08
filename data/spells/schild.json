@@ -3,7 +3,7 @@
   "name": "Schild",
   "level": 1,
   "school": "Bannmagie",
-  "casting_time": "1 Reaktion, wenn von Angriff getroffen oder von â€žMagisches Geschossâ€œ anvisiert",
+  "casting_time": "1 Reaktion, wenn von Angriff getroffen oder von „Magisches Geschoss“ anvisiert",
   "range": "Selbst",
   "components": "V, G",
   "duration": "1 Runde (6 s)",

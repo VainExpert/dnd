@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>GM Screen</title>
+  <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
+  <script src="../../theme.js?v=theme-20260422"></script>
+  <script src="../../nav.js" defer></script>
+  <style>
+    .gm-shell{display:grid;gap:14px}
+    .gm-panel{border:1px solid var(--rule);border-radius:8px;background:rgba(255,255,255,.025);padding:14px}
+    .gm-panel h2{margin-top:0}
+    .gm-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .gm-btn{padding:9px 11px;border-radius:8px;border:1px solid var(--rule);background:var(--card-tint);color:var(--text);cursor:pointer}
+    :root[data-theme="light"] .gm-btn,:root.theme-light .gm-btn{background:var(--control)}
+    .gm-btn:hover{border-color:rgba(225,91,79,.35);background:rgba(225,91,79,.12);text-decoration:none}
+    .gm-rule-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+    .gm-rule-card{border:1px solid var(--rule);border-radius:8px;padding:10px;background:rgba(255,255,255,.025)}
+    .gm-rule-title{font-weight:800;margin-bottom:4px}
+    .gm-rule-card a{display:inline-block;margin-top:6px}
+    .gm-picker{display:grid;grid-template-columns:minmax(240px,1fr) auto auto auto;gap:8px;align-items:center;margin-bottom:12px}
+    .gm-stat-table-wrap{overflow:auto;border:1px solid var(--rule);border-radius:8px}
+    .gm-stat-table{width:100%;border-collapse:collapse;min-width:980px}
+    .gm-stat-table th,.gm-stat-table td{padding:9px 10px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+    .gm-stat-table th{position:sticky;top:0;background:var(--panel2);z-index:1;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.3px}
+    .gm-stat-table tr:last-child td{border-bottom:0}
+    .gm-name{font-weight:800}
+    .gm-sub{color:var(--muted);font-size:12px;margin-top:2px}
+    .gm-pill{display:inline-flex;gap:5px;align-items:center;border:1px solid var(--rule);border-radius:999px;padding:5px 8px;background:rgba(255,255,255,.035);white-space:nowrap;margin:2px}
+    .gm-mini-list{display:flex;flex-wrap:wrap;gap:4px}
+    .gm-muted{color:var(--muted)}
+    .gm-empty{padding:16px;color:var(--muted)}
+    @media (max-width:760px){.gm-picker{grid-template-columns:1fr}.gm-stat-table{min-width:860px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">GM Screen</div>
+      <div class="subtitle">Regeln &bull; Anmerkungen &bull; Spielercharaktere</div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar"></aside>
+    <main class="main">
+      <div class="content" style="max-width:1320px;">
+        <div class="gm-shell">
+          <section class="gm-panel">
+            <h1>GM Screen</h1>
+            <div class="gm-rule-grid" id="ruleLinks"></div>
+          </section>
+
+          <section class="gm-panel">
+            <h2>Spielercharaktere</h2>
+            <div class="gm-picker">
+              <select id="pcSelect" class="select"></select>
+              <button id="addPc" class="gm-btn" type="button">SC hinzufügen</button>
+              <button id="addAllPcs" class="gm-btn" type="button">Alle SCs</button>
+              <button id="clearPcs" class="gm-btn" type="button">Auswahl leeren</button>
+            </div>
+            <div id="pcTable"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany, repairText, slugify } from "../../lib.js";
+
+    const STORAGE_KEY = "dnd.gmScreen.selectedPcIds.v1";
+    const ABILITIES = ["str", "dex", "con", "int", "wis", "cha"];
+    const ABILITY_LABELS = { str:"STR", dex:"DEX", con:"CON", int:"INT", wis:"WIS", cha:"CHA" };
+    const RULE_LINKS = [
+      ["Regelübersicht", "Grundregeln, Würfeln, Vorteil/Nachteil", "../../index.html#content/rules/index.md"],
+      ["Regelanmerkungen", "SG, Fertigkeiten, Größen, improvisierter Schaden", "../../index.html#content/rules/gm.md"],
+      ["Kampfregeln", "Züge, Aktionen, Schaden, Deckung, Todesrettung", "../../index.html#content/rules/combat.md"],
+      ["Statuseffekte", "Schneller Zugriff auf alle Zustände", "../../index.html#content/rules/status-effects.md"],
+      ["Zauberregeln", "Komponenten, Konzentration, Rituale, Bereiche", "../../index.html#content/rules/spells.md"],
+      ["Hausregeln", "Kampagnenkonventionen und Sonderregeln", "../../index.html#content/rules/house-rules/index.md"],
+      ["Reise & Auszeit", "Reisen, Rast, Downtime", "../../index.html#content/rules/travel-downtime/index.md"],
+      ["Loot & Crafting", "Schätze, Herstellung, Preise", "../../index.html#content/rules/treasure-crafting/index.md"],
+      ["Encounter & Loot", "Begegnungsbauer und Beutegenerator", "./tools.html"]
+    ];
+
+    const $ = id => document.getElementById(id);
+    let pcs = [];
+    let selectedPcIds = readSelectedPcIds();
+
+    function signed(value){
+      const n = Number(value || 0);
+      return n >= 0 ? `+${n}` : String(n);
+    }
+
+    function abilityModFromScore(score){
+      const n = Number(score);
+      return Number.isFinite(n) ? Math.floor((n - 10) / 2) : 0;
+    }
+
+    function pbFromLevel(level){
+      const n = Math.max(1, Math.min(20, Number(level || 1)));
+      return 2 + Math.floor((n - 1) / 4);
+    }
+
+    function readSelectedPcIds(){
+      try{
+        const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+        return Array.isArray(raw) ? raw.map(String) : [];
+      } catch {
+        return [];
+      }
+    }
+
+    function writeSelectedPcIds(){
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(selectedPcIds));
+    }
+
+    function pathForPc(id){
+      return `../spieler/pc.html?id=${encodeURIComponent(id)}`;
+    }
+
+    function normalizeAbilityMods(pc){
+      const direct = pc.ability_mods || pc.abilities_mods || {};
+      const scores = pc.abilities || pc.character?.ability_scores || {};
+      const out = {};
+      for (const key of ABILITIES){
+        const upper = ABILITY_LABELS[key];
+        const entry = scores[key] ?? scores[upper] ?? {};
+        const directValue = direct[key] ?? direct[upper] ?? entry.mod;
+        out[key] = Number.isFinite(Number(directValue)) ? Number(directValue) : abilityModFromScore(entry.score ?? entry);
+      }
+      return out;
+    }
+
+    function normalizeSaves(pc, mods, pb){
+      const source = pc.saving_throws || pc.saves || pc.character?.saving_throws;
+      if (typeof source === "string" && source.trim()) return source.trim();
+      if (source && typeof source === "object"){
+        return Object.entries(source).map(([key, value]) => `${key.toUpperCase()} ${signed(value)}`).join(", ");
+      }
+      const scores = pc.character?.ability_scores || {};
+      const fromScores = ABILITIES
+        .map(key => {
+          const upper = ABILITY_LABELS[key];
+          const save = scores[upper]?.save;
+          return Number.isFinite(Number(save)) && Number(save) !== mods[key] ? `${upper} ${signed(save)}` : "";
+        })
+        .filter(Boolean);
+      return fromScores.length ? fromScores.join(", ") : `wie Mods; geübt +${pb}`;
+    }
+
+    function normalizePc(pc){
+      const identity = pc.character?.identity || {};
+      const klass = identity.class || {};
+      const level = Number(pc.level ?? klass.level ?? 1);
+      const mods = normalizeAbilityMods(pc);
+      const pb = Number(pc.proficiency_bonus ?? pc.character?.proficiency_bonus ?? pbFromLevel(level));
+      const id = String(pc.id || pc.slug || slugify(identity.name || pc.name || "spielercharakter"));
+      return {
+        id,
+        name: repairText(pc.name || identity.name || "Spielercharakter"),
+        player: repairText(pc.player || identity.player_name || ""),
+        level,
+        race: repairText(pc.race || identity.race || ""),
+        className: repairText(pc.class || klass.name || ""),
+        subclass: repairText(pc.subclass || klass.subclass || ""),
+        hp: Number(pc.hp ?? pc.character?.combat?.hp?.max ?? 0),
+        ac: Number(pc.ac ?? pc.character?.combat?.armor_class ?? 0),
+        speed: Number(pc.speed ?? pc.character?.combat?.speeds?.walk ?? 0),
+        pb,
+        abilityMods: mods,
+        savingThrows: repairText(normalizeSaves(pc, mods, pb)),
+        notes: repairText(pc.notes || "")
+      };
+    }
+
+    function renderRuleLinks(){
+      $("ruleLinks").innerHTML = RULE_LINKS.map(([title, text, href]) => `
+        <div class="gm-rule-card">
+          <div class="gm-rule-title">${escapeHtml(title)}</div>
+          <div class="gm-muted">${escapeHtml(text)}</div>
+          <a href="${escapeHtml(href)}">Öffnen</a>
+        </div>
+      `).join("");
+    }
+
+    function selectedPcs(){
+      const selected = new Set(selectedPcIds);
+      return pcs.filter(pc => selected.has(pc.id));
+    }
+
+    function renderPcOptions(){
+      const selected = new Set(selectedPcIds);
+      const available = pcs.filter(pc => !selected.has(pc.id));
+      $("pcSelect").innerHTML = available.map(pc => {
+        const subtitle = [pc.className, pc.subclass, `Lvl ${pc.level}`, pc.player].filter(Boolean).join(" • ");
+        return `<option value="${escapeHtml(pc.id)}">${escapeHtml(pc.name)}${subtitle ? ` (${escapeHtml(subtitle)})` : ""}</option>`;
+      }).join("") || `<option value="">Keine weiteren SCs verfügbar</option>`;
+      $("addPc").disabled = !available.length;
+      $("addAllPcs").disabled = !pcs.length || selectedPcIds.length === pcs.length;
+      $("clearPcs").disabled = !selectedPcIds.length;
+    }
+
+    function renderPcTable(){
+      const list = selectedPcs();
+      if (!list.length){
+        $("pcTable").innerHTML = `<div class="gm-empty">Noch keine SCs auf dem Screen. Wähle oben vorhandene Charaktere aus.</div>`;
+        return;
+      }
+      $("pcTable").innerHTML = `
+        <div class="gm-stat-table-wrap">
+          <table class="gm-stat-table">
+            <thead>
+              <tr>
+                <th>Name</th><th>Lvl</th><th>Volk</th><th>Klasse</th><th>TP</th><th>RK</th><th>Mods</th><th>Rettungswürfe</th><th>Bewegung</th><th>ÜB</th><th></th>
+              </tr>
+            </thead>
+            <tbody>
+              ${list.map(pc => `
+                <tr>
+                  <td>
+                    <div class="gm-name"><a href="${pathForPc(pc.id)}">${escapeHtml(pc.name)}</a></div>
+                    <div class="gm-sub">${escapeHtml([pc.player, pc.notes].filter(Boolean).join(" · "))}</div>
+                  </td>
+                  <td>${escapeHtml(pc.level || "")}</td>
+                  <td>${escapeHtml(pc.race || "-")}</td>
+                  <td>${escapeHtml([pc.className, pc.subclass].filter(Boolean).join(" / ") || "-")}</td>
+                  <td>${escapeHtml(pc.hp || "-")}</td>
+                  <td>${escapeHtml(pc.ac || "-")}</td>
+                  <td><div class="gm-mini-list">${ABILITIES.map(key => `<span class="gm-pill"><b>${ABILITY_LABELS[key]}</b> ${signed(pc.abilityMods[key])}</span>`).join("")}</div></td>
+                  <td>${escapeHtml(pc.savingThrows || "-")}</td>
+                  <td>${escapeHtml(pc.speed || "-")} m</td>
+                  <td>${signed(pc.pb)}</td>
+                  <td><button class="gm-btn" type="button" data-remove-pc="${escapeHtml(pc.id)}">Entfernen</button></td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+      `;
+      for (const btn of document.querySelectorAll("[data-remove-pc]")){
+        btn.addEventListener("click", () => {
+          selectedPcIds = selectedPcIds.filter(id => id !== btn.dataset.removePc);
+          writeSelectedPcIds();
+          renderAll();
+        });
+      }
+    }
+
+    function renderAll(){
+      selectedPcIds = selectedPcIds.filter(id => pcs.some(pc => pc.id === id));
+      writeSelectedPcIds();
+      renderPcOptions();
+      renderPcTable();
+    }
+
+    async function loadPcs(){
+      try{
+        const pcFiles = await loadIndex("../../data/pcs/index.json");
+        pcs = (await loadMany("../../data/pcs", pcFiles))
+          .filter(Boolean)
+          .map(normalizePc)
+          .sort((a, b) => a.name.localeCompare(b.name, "de"));
+      } catch {
+        pcs = [];
+      }
+      renderAll();
+    }
+
+    $("addPc").addEventListener("click", () => {
+      const id = $("pcSelect").value;
+      if (id && !selectedPcIds.includes(id)) selectedPcIds.push(id);
+      writeSelectedPcIds();
+      renderAll();
+    });
+    $("addAllPcs").addEventListener("click", () => {
+      selectedPcIds = pcs.map(pc => pc.id);
+      writeSelectedPcIds();
+      renderAll();
+    });
+    $("clearPcs").addEventListener("click", () => {
+      selectedPcIds = [];
+      writeSelectedPcIds();
+      renderAll();
+    });
+
+    renderRuleLinks();
+    renderAll();
+    await loadPcs();
+  </script>
+</body>
+</html>

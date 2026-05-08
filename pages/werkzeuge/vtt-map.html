@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Kartenmodus</title>
+  <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
+  <script src="../../theme.js?v=theme-20260422"></script>
+  <script src="../../nav.js" defer></script>
+  <style>
+    .vtt-shell{ display:grid; grid-template-columns:minmax(0,1fr) 320px; gap:12px; align-items:stretch; min-height:calc(100vh - 128px); }
+    .vtt-main{ min-width:0; display:grid; grid-template-rows:auto minmax(420px,1fr); gap:10px; }
+    .vtt-toolbar,.vtt-row{ display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+    .vtt-btn{ min-height:34px; padding:7px 10px; border:1px solid var(--rule); border-radius:8px; background:var(--control); color:var(--text); cursor:pointer; font:inherit; font-size:12px; line-height:1.1; }
+    .vtt-btn:hover,.vtt-btn.active{ border-color:var(--accent-ring); background:var(--accent-soft); text-decoration:none; }
+    .vtt-btn.danger:hover{ border-color:rgba(225,91,79,.7); background:rgba(225,91,79,.18); }
+    .vtt-select,.vtt-input,.vtt-textarea{ border:1px solid var(--rule); border-radius:8px; background:var(--control); color:var(--text); font:inherit; font-size:12px; padding:8px 9px; min-width:0; }
+    .vtt-textarea{ resize:vertical; min-height:70px; line-height:1.35; }
+    .vtt-field{ display:grid; gap:5px; color:var(--muted); font-size:11px; }
+    .vtt-field input[type="checkbox"]{ justify-self:start; }
+    .vtt-tools{ border:1px solid var(--rule-soft); background:var(--card-tint); border-radius:8px; padding:8px; display:grid; gap:8px; }
+    .vtt-map-wrap{ position:relative; overflow:hidden; border:1px solid var(--rule); border-radius:8px; background:#05070b; min-height:420px; touch-action:none; }
+    .vtt-map-content{ position:absolute; left:50%; top:50%; transform-origin:0 0; user-select:none; }
+    .vtt-map-frame{ position:relative; background:#080b12; box-shadow:0 0 0 1px rgba(255,255,255,.08); }
+    .vtt-map-img{ display:block; width:100%; height:100%; object-fit:contain; pointer-events:none; }
+    .vtt-grid{ position:absolute; inset:0; pointer-events:none; opacity:.42; background-image:linear-gradient(to right, rgba(255,255,255,.22) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,.22) 1px, transparent 1px); }
+    .vtt-objects{ position:absolute; inset:0; pointer-events:none; }
+    .vtt-object{ position:absolute; transform:translate(-50%,-50%); pointer-events:auto; cursor:grab; display:grid; place-items:center; color:#fff; text-shadow:0 1px 2px rgba(0,0,0,.75); }
+    .vtt-object.selected{ outline:2px solid #f2c14e; outline-offset:3px; z-index:9999!important; }
+    .vtt-object.locked{ cursor:not-allowed; opacity:.75; }
+    .vtt-token{ border:2px solid rgba(255,255,255,.9); border-radius:50%; overflow:hidden; background:var(--obj-color,#3b82f6); box-shadow:0 2px 8px rgba(0,0,0,.45); }
+    .vtt-token img{ width:100%; height:100%; object-fit:cover; display:block; }
+    .vtt-marker{ border-radius:50% 50% 50% 0; background:var(--obj-color,#e15b4f); transform:translate(-50%,-65%) rotate(-45deg); box-shadow:0 2px 8px rgba(0,0,0,.45); }
+    .vtt-marker span{ transform:rotate(45deg); font-weight:800; font-size:12px; }
+    .vtt-label,.vtt-note{ min-width:36px; padding:4px 7px; border-radius:6px; background:rgba(5,7,11,.72); border:1px solid rgba(255,255,255,.35); font-weight:800; white-space:pre-wrap; text-align:center; }
+    .vtt-note{ background:var(--obj-color,#f2c14e); color:#17140a; text-shadow:none; }
+    .vtt-shape{ border:2px solid var(--obj-color,#61d394); background:color-mix(in srgb, var(--obj-color,#61d394) 20%, transparent); }
+    .vtt-shape.circle{ border-radius:50%; }
+    .vtt-side{ display:grid; gap:10px; align-content:start; min-width:0; }
+    .vtt-panel{ border:1px solid var(--rule-soft); background:var(--card-tint); border-radius:8px; padding:10px; display:grid; gap:8px; }
+    .vtt-panel-title{ font-weight:800; font-size:13px; }
+    .vtt-list{ display:grid; gap:6px; max-height:260px; overflow:auto; padding-right:2px; }
+    .vtt-list-item{ width:100%; text-align:left; border:1px solid var(--rule-soft); background:var(--control); color:var(--text); border-radius:8px; padding:7px; cursor:pointer; display:grid; gap:2px; }
+    .vtt-list-item.active{ border-color:var(--accent-ring); background:var(--accent-soft); }
+    .vtt-list-item span{ color:var(--muted); font-size:11px; }
+    .vtt-props{ display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+    .vtt-props .wide{ grid-column:1 / -1; }
+    .vtt-icon-picker{ display:grid; gap:6px; }
+    .vtt-icon-results{ display:grid; grid-template-columns:repeat(4,1fr); gap:5px; max-height:160px; overflow:auto; }
+    .vtt-icon-choice{ aspect-ratio:1; border:1px solid var(--rule-soft); border-radius:8px; background:var(--control); padding:2px; cursor:pointer; overflow:hidden; }
+    .vtt-icon-choice.active{ border-color:var(--accent-ring); background:var(--accent-soft); }
+    .vtt-icon-choice img{ width:100%; height:100%; object-fit:cover; display:block; border-radius:6px; }
+    .vtt-empty{ color:var(--muted); border:1px dashed var(--rule); border-radius:8px; padding:10px; font-size:12px; }
+    .vtt-status{ color:var(--muted); font-size:12px; min-height:18px; }
+    @media (max-width:1100px){ .vtt-shell{ grid-template-columns:1fr; } .vtt-main{ grid-template-rows:auto minmax(360px,65vh); } .vtt-side{ grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); } }
+    @media (max-width:680px){ .vtt-toolbar{ align-items:stretch; } .vtt-select{ width:100%; } .vtt-props{ grid-template-columns:1fr; } .vtt-main{ grid-template-rows:auto minmax(330px,58vh); } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Kartenmodus</div>
+      <div class="subtitle">Karten &bull; Tokens &bull; Marker &bull; Notizen</div>
+    </div>
+    <div class="top-actions">
+      <a class="home-btn" href="../../index.html">Startseite</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar"></aside>
+    <main class="main">
+      <div class="content" style="max-width:1500px;">
+        <div class="vtt-shell">
+          <section class="vtt-main">
+            <div class="vtt-tools">
+              <div class="vtt-toolbar">
+                <select id="mapSelect" class="vtt-select" aria-label="Karte auswaehlen"></select>
+                <input id="mapSearch" class="vtt-input" type="search" placeholder="Karten suchen..." style="width:min(260px,100%);">
+                <button id="playerViewBtn" class="vtt-btn" type="button">Spieleransicht</button>
+                <button id="exportMapBtn" class="vtt-btn" type="button">Export Karte</button>
+                <button id="exportAllBtn" class="vtt-btn" type="button">Export alle</button>
+                <button id="importBtn" class="vtt-btn" type="button">Import</button>
+                <input id="importFile" type="file" accept="application/json,.json" hidden>
+                <button id="clearMapBtn" class="vtt-btn danger" type="button">Karte leeren</button>
+              </div>
+              <div class="vtt-toolbar" id="toolButtons"></div>
+              <div class="vtt-toolbar">
+                <button id="zoomOutBtn" class="vtt-btn" type="button">-</button>
+                <button id="zoomInBtn" class="vtt-btn" type="button">+</button>
+                <button id="resetViewBtn" class="vtt-btn" type="button">Reset</button>
+                <label class="vtt-field">Grid <input id="gridToggle" type="checkbox"></label>
+                <label class="vtt-field">Snap <input id="snapToggle" type="checkbox"></label>
+                <label class="vtt-field">Gridgroesse <input id="gridSizeInput" class="vtt-input" type="number" min="10" max="240" value="70" style="width:84px;"></label>
+                <span id="status" class="vtt-status"></span>
+              </div>
+            </div>
+
+            <div id="mapWrap" class="vtt-map-wrap">
+              <div id="mapContent" class="vtt-map-content">
+                <div id="mapFrame" class="vtt-map-frame">
+                  <img id="mapImg" class="vtt-map-img" alt="">
+                  <div id="grid" class="vtt-grid" hidden></div>
+                  <div id="objects" class="vtt-objects"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <aside class="vtt-side">
+            <section class="vtt-panel">
+              <div class="vtt-panel-title">Layer</div>
+              <label><input type="checkbox" data-layer-toggle="tokens" checked> Tokens</label>
+              <label><input type="checkbox" data-layer-toggle="markers" checked> Marker</label>
+              <label><input type="checkbox" data-layer-toggle="notes" checked> Notizen/Text</label>
+              <label><input type="checkbox" data-layer-toggle="player" checked> Player Layer</label>
+              <label><input type="checkbox" data-layer-toggle="gm" checked> GM Layer</label>
+            </section>
+
+            <section class="vtt-panel">
+              <div class="vtt-panel-title">Objekte</div>
+              <div id="objectList" class="vtt-list"></div>
+            </section>
+
+            <section class="vtt-panel">
+              <div class="vtt-panel-title">Eigenschaften</div>
+              <div id="propsPanel"></div>
+            </section>
+
+            <section class="vtt-panel">
+              <div class="vtt-panel-title">Icon-Picker</div>
+              <div class="vtt-icon-picker">
+                <input id="iconSearch" class="vtt-input" type="search" placeholder="Icons suchen...">
+                <select id="iconKind" class="vtt-select">
+                  <option value="">Alle Arten</option>
+                  <option value="pc">PC</option>
+                  <option value="npc">NPC</option>
+                  <option value="monster">Monster</option>
+                  <option value="other">Sonstige</option>
+                </select>
+                <div id="iconResults" class="vtt-icon-results"></div>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { escapeHtml } from "../../lib.js";
+
+    const STORAGE_KEY = "dnd.vttMaps.v1";
+    const MAP_USAGE_KEY = "dnd.mapUsageLog.v1";
+    const ACTIVE_SESSION_KEYS = ["dnd.sessionNotes.activeSessionId", "dnd.sessionNotes.activeId"];
+    const tools = [
+      ["select", "Auswahl"],
+      ["pan", "Pan"],
+      ["token", "Token"],
+      ["marker", "Marker"],
+      ["text", "Text"],
+      ["note", "Notiz"],
+      ["rect", "Rechteck"],
+      ["circle", "Kreis"],
+      ["delete", "Loeschen"]
+    ];
+    const layerLabels = { tokens: "Tokens", markers: "Marker", notes: "Notizen", player: "Player", gm: "GM" };
+    const layerByType = { token: "tokens", icon: "tokens", marker: "markers", text: "notes", note: "notes", shape: "markers" };
+
+    const params = new URLSearchParams(location.search);
+    const initialMapId = params.get("map") || "";
+    let playerView = params.get("view") === "player";
+    let maps = [];
+    let icons = [];
+    let selectedIcon = null;
+    let currentMap = null;
+    let currentTool = playerView ? "pan" : "select";
+    let selectedId = "";
+    let store = loadStore();
+    let view = { scale: 1, panX: 0, panY: 0 };
+    let layerVisibility = { tokens: true, markers: true, notes: true, player: true, gm: true };
+    let drag = null;
+    let mapBase = { width: 1000, height: 700 };
+    let gridSizeSource = "auto";
+
+    const mapSelect = document.getElementById("mapSelect");
+    const mapSearch = document.getElementById("mapSearch");
+    const toolButtons = document.getElementById("toolButtons");
+    const mapWrap = document.getElementById("mapWrap");
+    const mapContent = document.getElementById("mapContent");
+    const mapFrame = document.getElementById("mapFrame");
+    const mapImg = document.getElementById("mapImg");
+    const objectsEl = document.getElementById("objects");
+    const gridEl = document.getElementById("grid");
+    const objectList = document.getElementById("objectList");
+    const propsPanel = document.getElementById("propsPanel");
+    const statusEl = document.getElementById("status");
+    const gridToggle = document.getElementById("gridToggle");
+    const snapToggle = document.getElementById("snapToggle");
+    const gridSizeInput = document.getElementById("gridSizeInput");
+    const iconSearch = document.getElementById("iconSearch");
+    const iconKind = document.getElementById("iconKind");
+    const iconResults = document.getElementById("iconResults");
+    const importFile = document.getElementById("importFile");
+
+    function nowIso(){ return new Date().toISOString(); }
+    function uid(prefix){ return `${prefix}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2,8)}`; }
+    function clamp(n, min, max){ return Math.max(min, Math.min(max, n)); }
+    function getMapId(map){ return String(map?.id || map?.file || ""); }
+    function getMapName(map){ return String(map?.title || map?.name || map?.file || "Karte"); }
+    function getIconId(icon){ return String(icon?.id || icon?.file || ""); }
+    function getActiveSessionId(){ return ACTIVE_SESSION_KEYS.map(k => localStorage.getItem(k)).find(Boolean) || ""; }
+    function mapUrl(id){ return `vtt-map.html?map=${encodeURIComponent(id)}`; }
+
+    function loadStore(){
+      try{
+        const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+        return { version: 1, maps: raw.maps && typeof raw.maps === "object" ? raw.maps : {} };
+      } catch {
+        return { version: 1, maps: {} };
+      }
+    }
+
+    function saveStore(){
+      if (currentMap){
+        const data = getMapData();
+        data.view = { ...view, grid: gridToggle.checked, snap: snapToggle.checked, gridSize: currentGridSize(), gridSizeSource };
+        data.updatedAt = nowIso();
+      }
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+    }
+
+    function getMapData(){
+      const mapId = getMapId(currentMap);
+      if (!store.maps[mapId]){
+        store.maps[mapId] = { mapId, view: { scale: 1, panX: 0, panY: 0, grid: false, snap: false, gridSize: 70, gridSizeSource: "auto" }, objects: [], updatedAt: nowIso() };
+      }
+      store.maps[mapId].objects = Array.isArray(store.maps[mapId].objects) ? store.maps[mapId].objects : [];
+      return store.maps[mapId];
+    }
+
+    function normalizeObject(obj){
+      const ts = nowIso();
+      const type = ["token", "icon", "marker", "text", "shape", "note"].includes(obj.type) ? obj.type : "marker";
+      return {
+        id: String(obj.id || uid(type)),
+        type,
+        mapId: String(obj.mapId || getMapId(currentMap)),
+        x: clamp(Number(obj.x) || 0.5, 0, 1),
+        y: clamp(Number(obj.y) || 0.5, 0, 1),
+        width: Number(obj.width) || undefined,
+        height: Number(obj.height) || undefined,
+        size: Number(obj.size) || (type === "text" ? 24 : type === "note" ? 36 : 48),
+        rotation: Number(obj.rotation) || 0,
+        label: String(obj.label || defaultLabel(type)),
+        color: String(obj.color || defaultColor(type)),
+        iconId: String(obj.iconId || ""),
+        imagePath: String(obj.imagePath || ""),
+        visibleToPlayers: obj.visibleToPlayers !== false,
+        gmOnly: !!obj.gmOnly,
+        locked: !!obj.locked,
+        notes: String(obj.notes || ""),
+        layer: String(obj.layer || defaultLayer(type, obj.gmOnly)),
+        order: Number(obj.order) || 0,
+        createdAt: String(obj.createdAt || ts),
+        updatedAt: String(obj.updatedAt || ts)
+      };
+    }
+
+    function defaultLabel(type){
+      if (type === "token" || type === "icon") return selectedIcon?.title || "Token";
+      if (type === "text") return "Text";
+      if (type === "note") return "Notiz";
+      if (type === "shape") return "Flaeche";
+      return "Marker";
+    }
+
+    function defaultColor(type){
+      if (type === "note") return "#f2c14e";
+      if (type === "text") return "#ffffff";
+      if (type === "shape") return "#61d394";
+      if (type === "token" || type === "icon") return "#3b82f6";
+      return "#e15b4f";
+    }
+
+    function defaultLayer(type, gmOnly){
+      if (gmOnly) return "gm";
+      if (type === "token" || type === "icon") return "tokens";
+      if (type === "note" || type === "text") return "notes";
+      return "markers";
+    }
+
+    function setStatus(text){ statusEl.textContent = text || ""; }
+
+    function currentGridSize(){
+      return clamp(Number(gridSizeInput.value) || 70, 10, 240);
+    }
+
+    function readGridDimensions(map){
+      const size = map?.size;
+      if (size && typeof size === "object" && size.grid){
+        const w = Number(size.grid.w || size.grid.width || size.grid.cols || size.grid.columns);
+        const h = Number(size.grid.h || size.grid.height || size.grid.rows);
+        if (w > 0 && h > 0) return { w, h, source: "size.grid" };
+      }
+      const text = [size, map?.title, map?.file].filter(Boolean).join(" ");
+      const match = text.match(/(?:^|[^0-9])(\d{1,3})\s*[xX]\s*(\d{1,3})(?:[^0-9]|$)/);
+      if (!match) return null;
+      const w = Number(match[1]);
+      const h = Number(match[2]);
+      if (w > 0 && h > 0) return { w, h, source: "title/file" };
+      return null;
+    }
+
+    function suggestedGridSize(){
+      const dims = readGridDimensions(currentMap);
+      if (!dims) return null;
+      const cellW = mapBase.width / dims.w;
+      const cellH = mapBase.height / dims.h;
+      return clamp(Math.round(Math.min(cellW, cellH)), 10, 240);
+    }
+
+    function applyMapGridSize(){
+      if (gridSizeSource === "custom") return;
+      const suggested = suggestedGridSize();
+      if (!suggested) return;
+      gridSizeInput.value = suggested;
+    }
+
+    function logUsage(action, summary, map = currentMap){
+      if (!map) return;
+      let entries = [];
+      try{
+        const raw = JSON.parse(localStorage.getItem(MAP_USAGE_KEY) || "{}");
+        entries = Array.isArray(raw) ? raw : (Array.isArray(raw.entries) ? raw.entries : []);
+      } catch {}
+      entries.push({
+        timestamp: nowIso(),
+        sessionId: getActiveSessionId() || undefined,
+        mapId: getMapId(map),
+        mapName: getMapName(map),
+        action,
+        summary: String(summary || "")
+      });
+      localStorage.setItem(MAP_USAGE_KEY, JSON.stringify({ version: 1, entries: entries.slice(-500) }));
+    }
+
+    async function loadData(){
+      try{
+        const idx = await fetch("../../data/maps/index.json", { cache: "no-cache" }).then(r => r.json());
+        maps = Array.isArray(idx.maps) ? idx.maps : [];
+      } catch {
+        maps = [];
+      }
+      try{
+        const idx = await fetch("../../data/icons/index.json", { cache: "no-cache" }).then(r => r.json());
+        icons = Array.isArray(idx.icons) ? idx.icons : [];
+        selectedIcon = icons[0] || null;
+      } catch {
+        icons = [];
+      }
+      renderMapSelect();
+      renderTools();
+      renderIcons();
+      const first = maps.find(m => getMapId(m) === initialMapId) || maps[0] || null;
+      if (first) selectMap(getMapId(first), true);
+      else setStatus("Keine Karten gefunden.");
+    }
+
+    function renderMapSelect(){
+      const q = mapSearch.value.trim().toLowerCase();
+      const filtered = maps.filter(m => [getMapName(m), m.folder_title, m.folder, ...(m.tags || [])].join(" ").toLowerCase().includes(q));
+      mapSelect.innerHTML = filtered.map(m => `<option value="${escapeHtml(getMapId(m))}">${escapeHtml(getMapName(m))}</option>`).join("");
+      if (currentMap && filtered.some(m => getMapId(m) === getMapId(currentMap))) mapSelect.value = getMapId(currentMap);
+    }
+
+    function selectMap(mapId, fromInitial = false){
+      const next = maps.find(m => getMapId(m) === mapId);
+      if (!next) return;
+      currentMap = next;
+      selectedId = "";
+      const data = getMapData();
+      data.objects = data.objects.map(normalizeObject);
+      view = { scale: 1, panX: 0, panY: 0, ...(data.view || {}) };
+      gridSizeSource = data.view?.gridSizeSource || (data.view?.gridSize && Number(data.view.gridSize) !== 70 ? "custom" : "auto");
+      gridToggle.checked = !!data.view?.grid;
+      snapToggle.checked = !!data.view?.snap;
+      gridSizeInput.value = data.view?.gridSize || 70;
+      mapImg.src = `../../assets/maps/${next.file}`;
+      mapImg.alt = getMapName(next);
+      mapSelect.value = getMapId(next);
+      if (!fromInitial) history.replaceState(null, "", mapUrl(getMapId(next)) + (playerView ? "&view=player" : ""));
+      logUsage("opened", `Karte geoeffnet: ${getMapName(next)}`, next);
+      setStatus(getMapName(next));
+      saveStore();
+      renderAll();
+    }
+
+    function fitMap(){
+      const naturalW = mapImg.naturalWidth || 1200;
+      const naturalH = mapImg.naturalHeight || 800;
+      const wrapRect = mapWrap.getBoundingClientRect();
+      const fit = Math.min((wrapRect.width - 32) / naturalW, (wrapRect.height - 32) / naturalH, 1);
+      mapBase.width = Math.max(240, Math.round(naturalW * Math.max(fit, 0.08)));
+      mapBase.height = Math.max(180, Math.round(naturalH * Math.max(fit, 0.08)));
+      mapFrame.style.width = `${mapBase.width}px`;
+      mapFrame.style.height = `${mapBase.height}px`;
+      applyMapGridSize();
+      applyTransform();
+    }
+
+    function applyTransform(){
+      mapContent.style.transform = `translate(calc(-50% + ${view.panX || 0}px), calc(-50% + ${view.panY || 0}px)) scale(${view.scale || 1})`;
+      gridEl.style.backgroundSize = `${Number(gridSizeInput.value) || 70}px ${Number(gridSizeInput.value) || 70}px`;
+    }
+
+    function resetView(){
+      view = { scale: 1, panX: 0, panY: 0 };
+      applyTransform();
+      saveStore();
+    }
+
+    function zoomBy(factor){
+      view.scale = clamp((view.scale || 1) * factor, 0.35, 4);
+      applyTransform();
+      saveStore();
+    }
+
+    function onWheel(e){
+      if (!currentMap) return;
+      e.preventDefault();
+      zoomBy(e.deltaY < 0 ? 1.12 : 1 / 1.12);
+    }
+
+    function clientToMap(clientX, clientY){
+      const rect = mapFrame.getBoundingClientRect();
+      let x = clamp((clientX - rect.left) / rect.width, 0, 1);
+      let y = clamp((clientY - rect.top) / rect.height, 0, 1);
+      if (snapToggle.checked){
+        const grid = Number(gridSizeInput.value) || 70;
+        x = clamp(Math.round((x * mapBase.width) / grid) * grid / mapBase.width, 0, 1);
+        y = clamp(Math.round((y * mapBase.height) / grid) * grid / mapBase.height, 0, 1);
+      }
+      return { x, y };
+    }
+
+    function renderTools(){
+      toolButtons.innerHTML = tools.map(([id, label]) => `<button class="vtt-btn ${id === currentTool ? "active" : ""}" type="button" data-tool="${id}">${label}</button>`).join("");
+      toolButtons.querySelectorAll("[data-tool]").forEach(btn => btn.addEventListener("click", () => {
+        currentTool = btn.dataset.tool;
+        renderTools();
+      }));
+      document.getElementById("playerViewBtn").classList.toggle("active", playerView);
+    }
+
+    function passesView(obj){
+      if (playerView && (obj.gmOnly || !obj.visibleToPlayers)) return false;
+      if (!layerVisibility[layerByType[obj.type] || obj.layer || "markers"]) return false;
+      if (!layerVisibility[obj.layer || "player"]) return false;
+      return true;
+    }
+
+    function renderObjects(){
+      const data = currentMap ? getMapData() : { objects: [] };
+      const objects = data.objects.slice().sort((a,b) => (a.order || 0) - (b.order || 0));
+      objectsEl.innerHTML = objects.filter(passesView).map(objHtml).join("");
+      objectsEl.querySelectorAll("[data-object]").forEach(el => {
+        el.addEventListener("pointerdown", onObjectPointerDown);
+        el.addEventListener("click", e => {
+          e.stopPropagation();
+          if (currentTool === "delete" && !playerView) deleteObject(el.dataset.object);
+          else selectObject(el.dataset.object);
+        });
+      });
+    }
+
+    function objHtml(obj){
+      const style = [
+        `left:${obj.x * 100}%`,
+        `top:${obj.y * 100}%`,
+        `width:${obj.width || obj.size}px`,
+        `height:${obj.height || obj.size}px`,
+        `--obj-color:${escapeHtml(obj.color)}`,
+        `z-index:${100 + (obj.order || 0)}`
+      ].join(";");
+      const selected = obj.id === selectedId ? " selected" : "";
+      const locked = obj.locked ? " locked" : "";
+      if (obj.type === "token" || obj.type === "icon"){
+        const img = obj.imagePath ? `<img src="${escapeHtml(obj.imagePath)}" alt="">` : `<span>${escapeHtml((obj.label || "T").slice(0,2))}</span>`;
+        return `<div class="vtt-object vtt-token${selected}${locked}" data-object="${escapeHtml(obj.id)}" style="${style}" title="${escapeHtml(obj.label)}">${img}</div>`;
+      }
+      if (obj.type === "marker"){
+        return `<div class="vtt-object vtt-marker${selected}${locked}" data-object="${escapeHtml(obj.id)}" style="${style}" title="${escapeHtml(obj.label)}"><span>!</span></div>`;
+      }
+      if (obj.type === "text"){
+        return `<div class="vtt-object${selected}${locked}" data-object="${escapeHtml(obj.id)}" style="left:${obj.x * 100}%;top:${obj.y * 100}%;font-size:${obj.size}px;color:${escapeHtml(obj.color)};z-index:${100 + (obj.order || 0)}"><div class="vtt-label">${escapeHtml(obj.label || "Text")}</div></div>`;
+      }
+      if (obj.type === "note"){
+        return `<div class="vtt-object${selected}${locked}" data-object="${escapeHtml(obj.id)}" style="${style}" title="${escapeHtml(obj.notes || obj.label)}"><div class="vtt-note">${escapeHtml((obj.label || "Notiz").slice(0,18))}</div></div>`;
+      }
+      const shapeClass = obj.label === "Kreis" ? "circle" : "";
+      return `<div class="vtt-object vtt-shape ${shapeClass}${selected}${locked}" data-object="${escapeHtml(obj.id)}" style="${style}" title="${escapeHtml(obj.label)}"></div>`;
+    }
+
+    function renderList(){
+      const data = currentMap ? getMapData() : { objects: [] };
+      const items = data.objects.slice().sort((a,b) => (b.updatedAt || "").localeCompare(a.updatedAt || ""));
+      objectList.innerHTML = items.length ? items.map(obj => `
+        <button class="vtt-list-item ${obj.id === selectedId ? "active" : ""}" type="button" data-list-object="${escapeHtml(obj.id)}">
+          <b>${escapeHtml(obj.label || obj.type)}</b>
+          <span>${escapeHtml(obj.type)} &bull; ${escapeHtml(layerLabels[obj.layer] || obj.layer || "")}${obj.gmOnly ? " &bull; GM" : ""}${obj.locked ? " &bull; locked" : ""}</span>
+        </button>
+      `).join("") : `<div class="vtt-empty">Noch keine Objekte auf dieser Karte.</div>`;
+      objectList.querySelectorAll("[data-list-object]").forEach(btn => btn.addEventListener("click", () => selectObject(btn.dataset.listObject)));
+    }
+
+    function renderProps(){
+      const obj = selectedObject();
+      if (!obj){
+        propsPanel.innerHTML = `<div class="vtt-empty">Kein Objekt ausgewaehlt.</div>`;
+        return;
+      }
+      propsPanel.innerHTML = `
+        <div class="vtt-props">
+          <label class="vtt-field wide">Label<input class="vtt-input" data-prop="label" value="${escapeHtml(obj.label)}"></label>
+          <label class="vtt-field">Farbe<input class="vtt-input" type="color" data-prop="color" value="${escapeHtml(obj.color)}"></label>
+          <label class="vtt-field">Groesse<input class="vtt-input" type="number" min="8" max="360" data-prop-num="size" value="${escapeHtml(obj.size)}"></label>
+          <label class="vtt-field">Breite<input class="vtt-input" type="number" min="8" max="600" data-prop-num="width" value="${escapeHtml(obj.width || obj.size)}"></label>
+          <label class="vtt-field">Hoehe<input class="vtt-input" type="number" min="8" max="600" data-prop-num="height" value="${escapeHtml(obj.height || obj.size)}"></label>
+          <label class="vtt-field">Layer<select class="vtt-select" data-prop="layer">${Object.entries(layerLabels).map(([id,label]) => `<option value="${id}" ${obj.layer === id ? "selected" : ""}>${label}</option>`).join("")}</select></label>
+          <label class="vtt-field">Reihenfolge<input class="vtt-input" type="number" data-prop-num="order" value="${escapeHtml(obj.order)}"></label>
+          <label class="vtt-field">Spieler sichtbar<input type="checkbox" data-prop-check="visibleToPlayers" ${obj.visibleToPlayers ? "checked" : ""}></label>
+          <label class="vtt-field">GM-only<input type="checkbox" data-prop-check="gmOnly" ${obj.gmOnly ? "checked" : ""}></label>
+          <label class="vtt-field">Gesperrt<input type="checkbox" data-prop-check="locked" ${obj.locked ? "checked" : ""}></label>
+          <label class="vtt-field wide">Notizen<textarea class="vtt-textarea" data-prop="notes">${escapeHtml(obj.notes)}</textarea></label>
+        </div>
+        <div class="vtt-row" style="margin-top:8px;">
+          <button class="vtt-btn" type="button" data-action="duplicate">Duplizieren</button>
+          <button class="vtt-btn danger" type="button" data-action="delete">Loeschen</button>
+        </div>
+      `;
+      propsPanel.querySelectorAll("[data-prop]").forEach(el => el.addEventListener("input", () => updateSelected(el.dataset.prop, el.value)));
+      propsPanel.querySelectorAll("[data-prop-num]").forEach(el => el.addEventListener("input", () => updateSelected(el.dataset.propNum, Number(el.value) || 0)));
+      propsPanel.querySelectorAll("[data-prop-check]").forEach(el => el.addEventListener("change", () => updateSelected(el.dataset.propCheck, el.checked)));
+      propsPanel.querySelector("[data-action='duplicate']")?.addEventListener("click", duplicateSelected);
+      propsPanel.querySelector("[data-action='delete']")?.addEventListener("click", () => deleteObject(obj.id));
+    }
+
+    function renderIcons(){
+      const q = iconSearch.value.trim().toLowerCase();
+      const kind = iconKind.value;
+      const filtered = icons.filter(icon => {
+        const hay = [icon.title, icon.kind, icon.file, ...(icon.tags || [])].join(" ").toLowerCase();
+        return (!q || hay.includes(q)) && (!kind || icon.kind === kind);
+      }).slice(0, 80);
+      iconResults.innerHTML = filtered.length ? filtered.map(icon => `
+        <button class="vtt-icon-choice ${getIconId(icon) === getIconId(selectedIcon) ? "active" : ""}" type="button" data-icon="${escapeHtml(getIconId(icon))}" title="${escapeHtml(icon.title || icon.file)}">
+          <img loading="lazy" decoding="async" src="../../assets/icons/${escapeHtml(icon.file)}" alt="">
+        </button>
+      `).join("") : `<div class="vtt-empty" style="grid-column:1/-1;">Keine Icons gefunden.</div>`;
+      iconResults.querySelectorAll("[data-icon]").forEach(btn => btn.addEventListener("click", () => {
+        selectedIcon = icons.find(i => getIconId(i) === btn.dataset.icon) || null;
+        renderIcons();
+      }));
+    }
+
+    function renderAll(){
+      gridEl.hidden = !gridToggle.checked;
+      applyTransform();
+      renderTools();
+      renderObjects();
+      renderList();
+      renderProps();
+    }
+
+    function selectedObject(){
+      if (!currentMap || !selectedId) return null;
+      return getMapData().objects.find(o => o.id === selectedId) || null;
+    }
+
+    function selectObject(id){
+      selectedId = id || "";
+      renderAll();
+    }
+
+    function updateSelected(key, value){
+      const obj = selectedObject();
+      if (!obj || playerView) return;
+      obj[key] = value;
+      if (key === "size"){
+        obj.width = value;
+        obj.height = value;
+      }
+      if (key === "gmOnly" && value) obj.layer = "gm";
+      obj.updatedAt = nowIso();
+      saveStore();
+      renderAll();
+    }
+
+    function addObject(type, point){
+      if (!currentMap || playerView) return;
+      const data = getMapData();
+      const icon = type === "token" || type === "icon" ? selectedIcon : null;
+      const shapeKind = type === "rect" || type === "circle";
+      const gridSize = currentGridSize();
+      const obj = normalizeObject({
+        type: shapeKind ? "shape" : type,
+        x: point.x,
+        y: point.y,
+        label: type === "circle" ? "Kreis" : undefined,
+        iconId: icon ? getIconId(icon) : "",
+        imagePath: icon ? `../../assets/icons/${icon.file}` : "",
+        size: type === "token" || type === "icon" ? gridSize : (type === "text" ? 22 : type === "note" ? gridSize : Math.round(gridSize * 0.8)),
+        width: shapeKind ? gridSize * 2 : (type === "token" || type === "icon" ? gridSize : undefined),
+        height: shapeKind ? gridSize * 2 : (type === "token" || type === "icon" ? gridSize : undefined),
+        order: data.objects.length + 1
+      });
+      data.objects.push(obj);
+      selectedId = obj.id;
+      saveStore();
+      logUsage(type === "note" ? "note_added" : "object_added", `${obj.label || obj.type} auf ${getMapName(currentMap)} platziert`);
+      currentTool = "select";
+      renderAll();
+    }
+
+    function deleteObject(id){
+      if (!currentMap || playerView) return;
+      const data = getMapData();
+      data.objects = data.objects.filter(o => o.id !== id);
+      if (selectedId === id) selectedId = "";
+      saveStore();
+      renderAll();
+    }
+
+    function duplicateSelected(){
+      const obj = selectedObject();
+      if (!obj || playerView) return;
+      const copy = normalizeObject({ ...obj, id: uid(obj.type), x: clamp(obj.x + 0.03, 0, 1), y: clamp(obj.y + 0.03, 0, 1), label: `${obj.label} Kopie`, createdAt: nowIso(), updatedAt: nowIso(), order: (obj.order || 0) + 1 });
+      getMapData().objects.push(copy);
+      selectedId = copy.id;
+      saveStore();
+      renderAll();
+    }
+
+    function onObjectPointerDown(e){
+      if (playerView) return;
+      const obj = getMapData().objects.find(o => o.id === e.currentTarget.dataset.object);
+      if (!obj || obj.locked || currentTool === "delete") return;
+      e.stopPropagation();
+      e.preventDefault();
+      selectObject(obj.id);
+      drag = { mode: "object", id: obj.id, pointerId: e.pointerId };
+      e.currentTarget.setPointerCapture(e.pointerId);
+    }
+
+    function onMapPointerDown(e){
+      if (!currentMap) return;
+      const point = clientToMap(e.clientX, e.clientY);
+      if (["token", "icon", "marker", "text", "note", "rect", "circle"].includes(currentTool)){
+        addObject(currentTool === "icon" ? "token" : currentTool, point);
+        return;
+      }
+      if (currentTool === "pan" || e.target === mapWrap || e.target === mapFrame || e.target === mapImg){
+        drag = { mode: "pan", pointerId: e.pointerId, startX: e.clientX, startY: e.clientY, panX: view.panX || 0, panY: view.panY || 0 };
+        mapWrap.setPointerCapture(e.pointerId);
+        if (e.target !== objectsEl) selectObject("");
+      }
+    }
+
+    function onPointerMove(e){
+      if (!drag) return;
+      if (drag.mode === "pan"){
+        view.panX = drag.panX + (e.clientX - drag.startX);
+        view.panY = drag.panY + (e.clientY - drag.startY);
+        applyTransform();
+      } else if (drag.mode === "object"){
+        const obj = getMapData().objects.find(o => o.id === drag.id);
+        if (!obj || obj.locked) return;
+        const point = clientToMap(e.clientX, e.clientY);
+        obj.x = point.x;
+        obj.y = point.y;
+        obj.updatedAt = nowIso();
+        const el = Array.from(objectsEl.querySelectorAll("[data-object]")).find(node => node.dataset.object === obj.id);
+        if (el){
+          el.style.left = `${obj.x * 100}%`;
+          el.style.top = `${obj.y * 100}%`;
+        }
+      }
+    }
+
+    function onPointerUp(){
+      if (!drag) return;
+      saveStore();
+      drag = null;
+      renderAll();
+    }
+
+    function exportData(scope){
+      const payload = scope === "all" ? store : { version: 1, maps: { [getMapId(currentMap)]: getMapData() } };
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = scope === "all" ? "vtt-maps.json" : `${getMapName(currentMap).toLowerCase().replace(/[^a-z0-9]+/gi, "-")}-vtt.json`;
+      a.click();
+      URL.revokeObjectURL(a.href);
+      logUsage("exported", scope === "all" ? "Alle VTT-Daten exportiert" : "Kartendaten exportiert");
+    }
+
+    function importJson(file){
+      const reader = new FileReader();
+      reader.onload = () => {
+        try{
+          const raw = JSON.parse(String(reader.result || "{}"));
+          const mapsData = raw.maps && typeof raw.maps === "object" ? raw.maps : {};
+          for (const [mapId, data] of Object.entries(mapsData)){
+            store.maps[mapId] = {
+              mapId,
+              view: data.view || { scale: 1, panX: 0, panY: 0 },
+              objects: Array.isArray(data.objects) ? data.objects.map(o => normalizeObject({ ...o, mapId })) : [],
+              updatedAt: data.updatedAt || nowIso()
+            };
+          }
+          saveStore();
+          renderAll();
+          setStatus("Import abgeschlossen.");
+        } catch {
+          alert("Import fehlgeschlagen: keine lesbaren VTT-Daten.");
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    mapSelect.addEventListener("change", () => selectMap(mapSelect.value));
+    mapSearch.addEventListener("input", renderMapSelect);
+    mapImg.addEventListener("load", () => { fitMap(); renderAll(); });
+    window.addEventListener("resize", () => { fitMap(); renderAll(); });
+    mapWrap.addEventListener("pointerdown", onMapPointerDown);
+    mapWrap.addEventListener("pointermove", onPointerMove);
+    mapWrap.addEventListener("pointerup", onPointerUp);
+    mapWrap.addEventListener("pointercancel", onPointerUp);
+    mapWrap.addEventListener("wheel", onWheel, { passive: false });
+    document.getElementById("zoomInBtn").addEventListener("click", () => zoomBy(1.18));
+    document.getElementById("zoomOutBtn").addEventListener("click", () => zoomBy(1 / 1.18));
+    document.getElementById("resetViewBtn").addEventListener("click", resetView);
+    document.getElementById("playerViewBtn").addEventListener("click", () => {
+      playerView = !playerView;
+      const url = mapUrl(getMapId(currentMap)) + (playerView ? "&view=player" : "");
+      history.replaceState(null, "", url);
+      renderAll();
+    });
+    document.getElementById("exportMapBtn").addEventListener("click", () => exportData("map"));
+    document.getElementById("exportAllBtn").addEventListener("click", () => exportData("all"));
+    document.getElementById("importBtn").addEventListener("click", () => importFile.click());
+    importFile.addEventListener("change", () => {
+      const [file] = importFile.files || [];
+      if (file) importJson(file);
+      importFile.value = "";
+    });
+    document.getElementById("clearMapBtn").addEventListener("click", () => {
+      if (!currentMap || playerView) return;
+      if (!confirm("Alle VTT-Objekte auf dieser Karte wirklich loeschen?")) return;
+      getMapData().objects = [];
+      selectedId = "";
+      saveStore();
+      renderAll();
+    });
+    gridToggle.addEventListener("change", () => { saveStore(); renderAll(); });
+    snapToggle.addEventListener("change", saveStore);
+    gridSizeInput.addEventListener("input", () => { gridSizeSource = "custom"; saveStore(); renderAll(); });
+    document.querySelectorAll("[data-layer-toggle]").forEach(el => el.addEventListener("change", () => {
+      layerVisibility[el.dataset.layerToggle] = el.checked;
+      renderAll();
+    }));
+    iconSearch.addEventListener("input", renderIcons);
+    iconKind.addEventListener("change", renderIcons);
+
+    await loadData();
+  </script>
+</body>
+</html>

@@ -22,88 +22,25 @@
 
   <script src="../../nav.js"></script>
   <script type="module">
-    import { escapeHtml, loadIndex, renderRichText, slugify } from "../../lib.js?v=character-options-20260429";
+    import { buildLookupIndex, escapeHtml, loadIndex, loadMany, renderRichText, slugify } from "../../lib.js?v=inline-refs-20260430";
 
     const COLLECTIONS = {
       class: { label: "Klasse", basePath: "../../data/classes", indexPath: "../../data/classes/index.json" },
+      subclass: { label: "Unterklasse", basePath: "../../data/classes/subclasses", indexPath: "../../data/classes/subclasses/index.json" },
       background: { label: "Hintergrund", basePath: "../../data/backgrounds", indexPath: "../../data/backgrounds/index.json" },
       feat: { label: "Talent", basePath: "../../data/feats", indexPath: "../../data/feats/index.json" },
       race: { label: "Volk", basePath: "../../data/races", indexPath: "../../data/races/index.json" }
     };
 
-    const FIELD_LABELS = {
-      id: "ID",
-      original_name: "Originalname",
-      rules_version: "Regelversion",
-      source: "Quelle",
-      source_url: "Quell-URL",
-      source_page: "Quellseite",
-      license: "Lizenz",
-      translation_note: "Uebersetzungshinweis",
-      category: "Kategorie",
-      group: "Gruppe",
-      prerequisite: "Voraussetzung",
-      prerequisites: "Voraussetzungen",
-      requirement: "Voraussetzung",
-      voraussetzung: "Voraussetzung",
-      level: "Stufe",
-      hit_die: "Trefferwuerfel",
-      primary_abilities: "Primaere Attribute",
-      proficiencies: "Uebungen",
-      proficiencies_text: "Uebungen",
-      skill_choices: "Fertigkeitswahl",
-      skill_proficiencies: "Fertigkeitsuebungen",
-      tool_proficiencies: "Werkzeuguebungen",
-      language_choices: "Sprachwahl",
-      ability_scores: "Attributswerte",
-      size: "Groesse",
-      creature_type: "Kreaturentyp",
-      speed: "Bewegung",
-      languages: "Sprachen",
-      senses: "Sinne",
-      equipment: "Ausruestung",
-      starting_equipment: "Startausruestung",
-      multiclass_requirements: "Mehrklassen-Voraussetzungen",
-      spellcasting: "Zauberwirken",
-      spellcasting_overrides: "Zauberwirken-Anpassungen",
-      features: "Merkmale",
-      traits: "Merkmale",
-      spells: "Zauber",
-      levels: "Stufen",
-      subclasses: "Unterklassen",
-      subclass_index: "Unterklassen-Index",
-      class: "Klasse",
-      class_id: "Klassen-ID",
-      granted_feat_id: "Gewaehrtes Talent",
-      granted_action_ids: "Gewaehrte Aktionen",
-      granted_spell_ids: "Gewaehrte Zauber",
-      granted_feature_ids: "Gewaehrte Merkmale",
-      choice_sets: "Auswahlsets",
-      modifiers: "Modifikatoren",
-      tags: "Tags",
-      text: "Beschreibung",
-      description: "Beschreibung",
-      beschreibung: "Beschreibung",
-      summary: "Kurzfassung"
+    const LOOKUP_COLLECTIONS = {
+      ...COLLECTIONS,
+      spell: { label: "Zauber", basePath: "../../data/spells", indexPath: "../../data/spells/index.json" },
+      item: { label: "Gegenstand", basePath: "../../data/items", indexPath: "../../data/items/index.json" }
     };
-
-    const DETAIL_ORDER = [
-      "id", "original_name", "rules_version", "source", "source_url", "source_page", "category", "group",
-      "prerequisites", "prerequisite", "requirement", "voraussetzung", "level", "hit_die",
-      "primary_abilities", "proficiencies", "proficiencies_text", "skill_choices", "skill_proficiencies",
-      "tool_proficiencies", "language_choices", "ability_scores", "size", "creature_type", "speed", "languages", "senses",
-      "equipment", "starting_equipment",
-      "multiclass_requirements", "spellcasting", "spellcasting_overrides", "features", "traits", "spells",
-      "levels", "subclasses", "subclass_index", "class", "class_id", "granted_feat_id", "granted_action_ids",
-      "granted_spell_ids", "granted_feature_ids", "choice_sets", "modifiers", "license", "translation_note", "tags"
-    ];
 
     const view = document.getElementById("view");
     const titleEl = document.getElementById("title");
-
-    function labelFor(key){
-      return FIELD_LABELS[key] || String(key).replaceAll("_", " ");
-    }
+    const optionLookups = {};
 
     function isMeaningful(value){
       if (value == null) return false;
@@ -115,51 +52,74 @@
       return true;
     }
 
-    function renderValue(value){
-      if (Array.isArray(value)) {
-        return `<ul>${value.map(entry => `<li>${renderValue(entry)}</li>`).join("")}</ul>`;
-      }
+    function renderList(value){
+      if (Array.isArray(value)) return value.filter(isMeaningful).map(entry => renderList(entry)).join(", ");
       if (value && typeof value === "object") {
-        return `<dl class="structured-fields">${Object.entries(value)
+        return Object.entries(value)
           .filter(([, entry]) => isMeaningful(entry))
-          .map(([key, entry]) => `<div class="structured-field"><dt>${escapeHtml(labelFor(key))}</dt><dd>${renderValue(entry)}</dd></div>`)
-          .join("")}</dl>`;
+          .map(([key, entry]) => `${escapeHtml(String(key).replaceAll("_", " "))}: ${renderList(entry)}`)
+          .join(", ");
       }
       if (typeof value === "boolean") return escapeHtml(value ? "Ja" : "Nein");
-      return renderRichText(String(value ?? ""), { inlineOnly: true });
+      return richText(String(value ?? ""), { inlineOnly: true });
     }
 
-    function renderEntry(entry){
-      if (!entry || typeof entry !== "object") return renderValue(entry);
+    function subclassLinkList(option){
+      return (Array.isArray(option?.subclasses) ? option.subclasses : [])
+        .map(subclass => {
+          const id = String(subclass?.id || subclass?.file || subclass?.name || "").replace(/^subclasses\//, "").replace(/\.json$/i, "");
+          const name = subclass?.name || id;
+          if (!id || !name) return "";
+          return `[[subclass:${id}|${name}]]`;
+        })
+        .filter(Boolean)
+        .join(", ");
+    }
+
+    function entryText(entry, option){
+      const text = String(entry?.text ?? "");
+      if (option?.collectionLabel !== "Klasse" || !Array.isArray(option.subclasses) || !text) return text;
+      const subclasses = subclassLinkList(option);
+      if (!subclasses) return text;
+
+      return text.replace(/^Name:\s*.+$/i, `Name: ${subclasses}`);
+    }
+
+    function richText(text, options = {}){
+      return renderRichText(text, { lookups: optionLookups, ...options });
+    }
+
+    function renderEntry(entry, option){
+      if (!entry || typeof entry !== "object") return richText(String(entry ?? ""), { inlineOnly: true });
 
       if (entry.type === "heading") {
         const level = Math.min(Math.max(Number(entry.level) || 2, 2), 5);
-        return `<h${level}>${escapeHtml(entry.text || "")}</h${level}>`;
+        return `<h${level}>${richText(entryText(entry, option), { inlineOnly: true })}</h${level}>`;
       }
 
       if (entry.type === "list" && Array.isArray(entry.items)) {
         const tag = entry.ordered ? "ol" : "ul";
-        return `<${tag}>${entry.items.map(item => `<li>${renderRichText(String(item ?? ""), { inlineOnly: true })}</li>`).join("")}</${tag}>`;
+        return `<${tag}>${entry.items.map(item => `<li>${richText(String(item ?? ""), { inlineOnly: true })}</li>`).join("")}</${tag}>`;
       }
 
       if (entry.type === "table" && Array.isArray(entry.rows)) {
         return `<div class="table-scroll"><table class="roll-table"><tbody>${entry.rows.map((row, rowIndex) => {
           const cells = Array.isArray(row) ? row : [row];
           const tag = rowIndex === 0 ? "th" : "td";
-          return `<tr>${cells.map(cell => `<${tag}>${renderRichText(String(cell ?? ""), { inlineOnly: true })}</${tag}>`).join("")}</tr>`;
+          return `<tr>${cells.map(cell => `<${tag}>${richText(String(cell ?? ""), { inlineOnly: true })}</${tag}>`).join("")}</tr>`;
         }).join("")}</tbody></table></div>`;
       }
 
-      if (entry.text) return `<p>${renderRichText(entry.text)}</p>`;
-      return renderValue(entry);
+      if (entry.text) return `<p>${richText(entryText(entry, option))}</p>`;
+      return `<p>${renderList(entry)}</p>`;
     }
 
     function renderDescription(option, fallback){
       if (option.html || option.description_html) return option.html || option.description_html;
       if (Array.isArray(option.entries) && option.entries.some(isMeaningful)) {
-        return option.entries.map(renderEntry).join("");
+        return option.entries.map(entry => renderEntry(entry, option)).join("");
       }
-      return renderRichText(String(fallback || ""));
+      return richText(String(fallback || ""));
     }
 
     function optionName(entry, fallbackId){
@@ -176,6 +136,58 @@
         collectionLabel: collection.label,
         sourceFile
       };
+    }
+
+    function infoRows(option){
+      const rows = [];
+
+      if (option.rules_version) rows.push(["Regelversion", escapeHtml(option.rules_version)]);
+      if (option.source) rows.push(["Quelle", escapeHtml(option.source)]);
+
+      if (option.collectionLabel === "Klasse") {
+        if (option.hit_die) rows.push(["Trefferwürfel", escapeHtml(String(option.hit_die))]);
+        if (option.primary_abilities) rows.push(["Primäre Attribute", renderList(option.primary_abilities)]);
+        if (option.proficiencies_text) rows.push(["Übungen", richText(String(option.proficiencies_text), { inlineOnly: true })]);
+        else if (option.proficiencies) rows.push(["Übungen", renderList(option.proficiencies)]);
+        if (option.multiclass_requirements) rows.push(["Mehrklassen-Voraussetzungen", renderList(option.multiclass_requirements)]);
+      }
+
+      if (option.collectionLabel === "Hintergrund") {
+        if (option.prerequisite || option.requirement || option.voraussetzung) {
+          rows.push(["Voraussetzung", richText(String(option.prerequisite || option.requirement || option.voraussetzung), { inlineOnly: true })]);
+        }
+        if (option.skill_proficiencies) rows.push(["Fertigkeiten", renderList(option.skill_proficiencies)]);
+        if (option.tool_proficiencies) rows.push(["Werkzeuge", renderList(option.tool_proficiencies)]);
+        if (option.languages) rows.push(["Sprachen", renderList(option.languages)]);
+        if (option.equipment || option.starting_equipment) rows.push(["Ausrüstung", renderList(option.equipment || option.starting_equipment)]);
+      }
+
+      if (option.collectionLabel === "Talent") {
+        const prerequisite = option.prerequisite || option.requirement || option.voraussetzung || (Array.isArray(option.prerequisites) ? option.prerequisites.join(", ") : "");
+        if (prerequisite) rows.push(["Voraussetzung", richText(String(prerequisite), { inlineOnly: true })]);
+        if (option.category) rows.push(["Kategorie", escapeHtml(String(option.category))]);
+        if (option.level) rows.push(["Stufe", escapeHtml(String(option.level))]);
+      }
+
+      if (option.collectionLabel === "Volk") {
+        if (option.size) rows.push(["Größe", renderList(option.size)]);
+        if (option.creature_type) rows.push(["Kreaturentyp", renderList(option.creature_type)]);
+        if (option.speed) rows.push(["Bewegung", renderList(option.speed)]);
+        if (option.languages) rows.push(["Sprachen", renderList(option.languages)]);
+        if (option.senses) rows.push(["Sinne", renderList(option.senses)]);
+      }
+
+      return rows;
+    }
+
+    function renderSubclasses(option){
+      if (option.collectionLabel !== "Klasse" || !Array.isArray(option.subclasses) || !option.subclasses.length) return "";
+      return `
+        <div class="mini-box" style="margin-top:12px;">
+          <div class="mini-box-title">Unterklassen</div>
+          <div class="mini-box-text">${richText(subclassLinkList(option), { inlineOnly: true })}</div>
+        </div>
+      `;
     }
 
     async function loadOptionFile(collection, file){
@@ -209,6 +221,20 @@
       console.warn("Charakteroptionen konnten nicht geladen werden.", error);
     }
 
+    try {
+      for (const [kind, definition] of Object.entries(LOOKUP_COLLECTIONS)) {
+        const lookupFiles = await loadIndex(definition.indexPath);
+        const lookupEntries = await loadMany(definition.basePath, lookupFiles);
+        optionLookups[kind] = buildLookupIndex(lookupEntries.map(entry => ({
+          id: entry?.id || entry?.slug || slugify(entry?.name || entry?.title || entry?.titel || entry?.label || ""),
+          name: entry?.name || entry?.title || entry?.titel || entry?.label || entry?.id || entry?.slug || "",
+          aliases: entry?.aliases
+        })));
+      }
+    } catch (error) {
+      console.warn("Charakteroption-Lookups konnten nicht aufgebaut werden.", error);
+    }
+
     const option = entries.find(entry => String(entry.id).toLowerCase() === id.toLowerCase())
       || entries.find(entry => String(entry.name).toLowerCase() === id.toLowerCase())
       || entries.find(entry => String(entry.sourceFile).toLowerCase() === id.toLowerCase());
@@ -221,25 +247,20 @@
     titleEl.textContent = option.name || collection.label;
 
     const description = option.html || option.description_html || option.entries || option.text || option.description || option.beschreibung || option.summary || "";
-    const hidden = new Set(["name", "title", "titel", "label", "slug", "html", "description_html", "entries", "text", "description", "beschreibung", "summary", "collectionLabel", "sourceFile", "type"]);
-    const keys = [
-      ...DETAIL_ORDER.filter(key => Object.prototype.hasOwnProperty.call(option, key)),
-      ...Object.keys(option).filter(key => !DETAIL_ORDER.includes(key) && !hidden.has(key))
-    ];
-
-    const rows = keys
-      .filter(key => isMeaningful(option[key]))
-      .map(key => `<div class="structured-field"><dt>${escapeHtml(labelFor(key))}</dt><dd>${renderValue(option[key])}</dd></div>`)
-      .join("");
+    const rows = infoRows(option);
 
     view.innerHTML = `
       <h1>${escapeHtml(option.name)}</h1>
       <p class="muted">${escapeHtml(option.collectionLabel)}${option.source ? " - " + escapeHtml(option.source) : ""}</p>
 
-      ${rows ? `<div class="mini-box">
-        <div class="mini-box-title">Eigenschaften</div>
-        <dl class="structured-fields">${rows}</dl>
+      ${rows.length ? `<div class="mini-box">
+        <div class="mini-box-title">Werte</div>
+        <div class="mini-box-text">
+          ${rows.map(([label, value]) => `<div><b>${escapeHtml(label)}:</b> ${value}</div>`).join("")}
+        </div>
       </div>` : ""}
+
+      ${renderSubclasses(option)}
 
       ${description ? `<div class="mini-box" style="margin-top:12px;">
         <div class="mini-box-title">Beschreibung</div>

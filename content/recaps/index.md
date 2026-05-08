@@ -2,6 +2,6 @@
 
 Was bisher geschah:
 
-- [Hauptkampagne](content/recaps/hauptkampagne/index.md)
-- [Online-Kampagne](content/recaps/online-kampagne/index.md)
-- [One Shots](content/recaps/one-shots/index.md)
+- [Hauptkampagne](hauptkampagne/index.md)
+- [Online-Kampagne](online-kampagne/index.md)
+- [One Shots](one-shots/index.md)

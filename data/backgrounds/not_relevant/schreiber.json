@@ -1,0 +1,71 @@
+{
+  "id": "schreiber",
+  "type": "background",
+  "name": "Schreiber",
+  "original_name": "Scribe",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/background:scribe",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Sie verbrachten prägende Jahre in einem Skriptorium, einem Kloster, das sich der Bewahrung von Wissen widmete, oder einer Regierungsbehörde, wo Sie lernten, mit klarer Hand zu schreiben und fein geschriebene Texte zu verfassen. Vielleicht haben Sie Regierungsdokumente verfasst oder Literaturbände kopiert. Möglicherweise verfügen Sie über gewisse Fähigkeiten als Autor von Gedichten, Erzählungen oder wissenschaftlichen Forschungen. Vor allem achten Sie sorgfältig auf Details und vermeiden so Fehler in den von Ihnen kopierten und erstellten Dokumenten.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Sie verbrachten prägende Jahre in einem Skriptorium, einem Kloster, das sich der Bewahrung von Wissen widmete, oder einer Regierungsbehörde, wo Sie lernten, mit klarer Hand zu schreiben und fein geschriebene Texte zu verfassen. Vielleicht haben Sie Regierungsdokumente verfasst oder Literaturbände kopiert. Möglicherweise verfügen Sie über gewisse Fähigkeiten als Autor von Gedichten, Erzählungen oder wissenschaftlichen Forschungen. Vor allem achten Sie sorgfältig auf Details und vermeiden so Fehler in den von Ihnen kopierten und erstellten Dokumenten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Geschicklichkeit, Intelligenz, Weisheit, Talent: Geschickte Fertigkeiten, Fähigkeiten: Untersuchung und Wahrnehmung, Werkzeugkompetenz: Kalligraphenbedarf, Ausrüstung: Wählen Sie A oder B: (A) Kalligraphenbedarf, feine Kleidung, Lampe, Öl (3 Fläschchen), Pergament (12 Blatt), 23 GP; oder (B) 50 GP"
+    }
+  ],
+  "text": "Sie verbrachten prägende Jahre in einem Skriptorium, einem Kloster, das sich der Bewahrung von Wissen widmete, oder einer Regierungsbehörde, wo Sie lernten, mit klarer Hand zu schreiben und fein geschriebene Texte zu verfassen. Vielleicht haben Sie Regierungsdokumente verfasst oder Literaturbände kopiert. Möglicherweise verfügen Sie über gewisse Fähigkeiten als Autor von Gedichten, Erzählungen oder wissenschaftlichen Forschungen. Vor allem achten Sie sorgfältig auf Details und vermeiden so Fehler in den von Ihnen kopierten und erstellten Dokumenten.\n\nFähigkeitswerte: Geschicklichkeit, Intelligenz, Weisheit, Talent: Geschickte Fertigkeiten, Fähigkeiten: Untersuchung und Wahrnehmung, Werkzeugkompetenz: Kalligraphenbedarf, Ausrüstung: Wählen Sie A oder B: (A) Kalligraphenbedarf, feine Kleidung, Lampe, Öl (3 Fläschchen), Pergament (12 Blatt), 23 GP; oder (B) 50 GP",
+  "tags": [],
+  "ability_scores": [
+    "dex",
+    "int",
+    "wis"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "dex",
+      "int",
+      "wis"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [],
+  "tool_proficiencies": [
+    "Kalligraphenbedarf"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "geschickte-fertigkeiten-faehigkeiten-untersuchung-und-wahrnehmung",
+  "granted_feat_name": "Geschickte Fertigkeiten, Fähigkeiten: Untersuchung und Wahrnehmung,",
+  "modifiers": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Wählen Sie A oder B: (A) Kalligraphenbedarf, feine Kleidung, Lampe, Öl (3 Fläschchen), Pergament (12 Blatt), 23 GP; oder (B) 50 GP"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "reisefuehrer",
+  "type": "background",
+  "name": "Reisefuehrer",
+  "original_name": "Guide",
+  "rules_version": "2024",
+  "source": "Player's Handbook",
+  "source_url": "http://dnd2024.wikidot.com/background:guide",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Hintergruende",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Du bist im Freien erwachsen geworden, fernab besiedelter Gebiete. Ihr Zuhause war der Ort, an dem Sie Ihr Bettzeug ausbreiteten. Es gibt Wunder in der Wildnis – seltsame Monster, unberührte Wälder und Bäche, überwucherte Ruinen großer Hallen, die einst von Riesen betreten wurden – und Sie haben gelernt, für sich selbst zu sorgen, als Sie sie erkundet haben. Von Zeit zu Zeit haben Sie freundliche Naturpriester angeleitet, die Sie in die Grundlagen der Kanalisierung der Magie der Wildnis einwiesen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Du bist im Freien erwachsen geworden, fernab besiedelter Gebiete. Ihr Zuhause war der Ort, an dem Sie Ihr Bettzeug ausbreiteten. Es gibt Wunder in der Wildnis – seltsame Monster, unberührte Wälder und Bäche, überwucherte Ruinen großer Hallen, die einst von Riesen betreten wurden – und Sie haben gelernt, für sich selbst zu sorgen, als Sie sie erkundet haben. Von Zeit zu Zeit haben Sie freundliche Naturpriester angeleitet, die Sie in die Grundlagen der Kanalisierung der Magie der Wildnis einwiesen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fähigkeitswerte: Geschicklichkeit, Konstitution, Weisheit Talent: Magischer Eingeweihter (Druide) Fertigkeiten: Heimlichkeit und Überleben Werkzeugkompetenz: Werkzeuge des Kartographen Ausrüstung: Wählen Sie A oder B: (A) Kurzbogen, 20 Pfeile, Werkzeuge des Kartographen, Schlafsack, Köcher, Zelt, Kleidung des Reisenden, 3 GP; oder (B) 50 GP"
+    }
+  ],
+  "text": "Du bist im Freien erwachsen geworden, fernab besiedelter Gebiete. Ihr Zuhause war der Ort, an dem Sie Ihr Bettzeug ausbreiteten. Es gibt Wunder in der Wildnis – seltsame Monster, unberührte Wälder und Bäche, überwucherte Ruinen großer Hallen, die einst von Riesen betreten wurden – und Sie haben gelernt, für sich selbst zu sorgen, als Sie sie erkundet haben. Von Zeit zu Zeit haben Sie freundliche Naturpriester angeleitet, die Sie in die Grundlagen der Kanalisierung der Magie der Wildnis einwiesen.\n\nFähigkeitswerte: Geschicklichkeit, Konstitution, Weisheit Talent: Magischer Eingeweihter (Druide) Fertigkeiten: Heimlichkeit und Überleben Werkzeugkompetenz: Werkzeuge des Kartographen Ausrüstung: Wählen Sie A oder B: (A) Kurzbogen, 20 Pfeile, Werkzeuge des Kartographen, Schlafsack, Köcher, Zelt, Kleidung des Reisenden, 3 GP; oder (B) 50 GP",
+  "tags": [],
+  "ability_scores": [
+    "dex",
+    "con",
+    "wis"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "dex",
+      "con",
+      "wis"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Heimlichkeit",
+    "Ueberleben"
+  ],
+  "tool_proficiencies": [
+    "Werkzeuge des Kartographen"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": []
+  },
+  "granted_feat_id": "magischer-eingeweihter-druide",
+  "granted_feat_name": "Magischer Eingeweihter (Druide)",
+  "modifiers": [],
+  "choice_sets": [
+    {
+      "id": "reisefuehrer-background-cantrips",
+      "type": "spell",
+      "choose": 2,
+      "spell_levels": [
+        0
+      ],
+      "source": "reisefuehrer",
+      "spell_list_names": [
+        "Druide"
+      ]
+    },
+    {
+      "id": "reisefuehrer-background-level-1-spell",
+      "type": "spell",
+      "choose": 1,
+      "spell_levels": [
+        1
+      ],
+      "source": "reisefuehrer",
+      "spell_list_names": [
+        "Druide"
+      ]
+    }
+  ],
+  "spellcasting": {
+    "ability": "wis",
+    "spell_choices": [
+      {
+        "id": "reisefuehrer-background-cantrips",
+        "type": "spell",
+        "choose": 2,
+        "spell_levels": [
+          0
+        ],
+        "source": "reisefuehrer",
+        "spell_list_names": [
+          "Druide"
+        ]
+      },
+      {
+        "id": "reisefuehrer-background-level-1-spell",
+        "type": "spell",
+        "choose": 1,
+        "spell_levels": [
+          1
+        ],
+        "source": "reisefuehrer",
+        "spell_list_names": [
+          "Druide"
+        ]
+      }
+    ],
+    "always_prepared": true
+  },
+  "starting_equipment": [
+    {
+      "text": "Wählen Sie A oder B: (A) Kurzbogen, 20 Pfeile, Werkzeuge des Kartographen, Schlafsack, Köcher, Zelt, Kleidung des Reisenden, 3 GP; oder (B) 50 GP"
+    }
+  ]
+}

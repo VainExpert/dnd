@@ -26,6 +26,7 @@
     .preview-title{font-weight:700;margin-bottom:3px}
     .preview-text{color:var(--muted);font-size:13px;line-height:1.45}
     .json-box{min-height:300px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px}
+    .import-box{min-height:150px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px}
     .btn{padding:10px 12px;border-radius:8px;border:1px solid var(--rule);background:#0b0e16;color:var(--text);cursor:pointer}
     .btn:hover{border-color:rgba(225,91,79,.35);background:rgba(225,91,79,.12)}
     @media (max-width:900px){.builder-shell{grid-template-columns:1fr}.ability-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -68,7 +69,7 @@
                 <label class="form-field">Talent <select id="featSelect" class="select"></select></label>
               </div>
               <div class="builder-actions">
-                <button id="addFeat" class="btn" type="button">Talent hinzufuegen</button>
+                <button id="addFeat" class="btn" type="button">Talent hinzufügen</button>
                 <button id="clearFeats" class="btn" type="button">Talente leeren</button>
               </div>
               <div id="featChips" class="chip-row"></div>
@@ -83,13 +84,13 @@
                 <label class="form-field">Zauber <select id="spellSelect" class="select"></select></label>
               </div>
               <div class="builder-actions">
-                <button id="addSpell" class="btn" type="button">Zauber hinzufuegen</button>
+                <button id="addSpell" class="btn" type="button">Zauber hinzufügen</button>
                 <button id="clearSpells" class="btn" type="button">Zauber leeren</button>
               </div>
               <div id="spellChips" class="chip-row"></div>
             </div>
 
-            <h2>Gegenstaende</h2>
+            <h2>Gegenstände</h2>
             <div class="choice-box">
               <div class="form-grid">
                 <label class="form-field">Gegenstand suchen <input id="itemSearch" class="select" type="search" placeholder="Name, Kategorie, Tags"/></label>
@@ -97,14 +98,25 @@
                 <label class="form-field">Anzahl <input id="itemQty" class="select" type="number" min="1" max="999" value="1"/></label>
               </div>
               <div class="builder-actions">
-                <button id="addItem" class="btn" type="button">Gegenstand hinzufuegen</button>
-                <button id="clearItems" class="btn" type="button">Gegenstaende leeren</button>
+                <button id="addItem" class="btn" type="button">Gegenstand hinzufügen</button>
+                <button id="clearItems" class="btn" type="button">Gegenstände leeren</button>
               </div>
               <div id="itemChips" class="chip-row"></div>
             </div>
 
             <h2>Notizen</h2>
-            <textarea id="notes" class="select" rows="5" placeholder="Persoenlichkeit, Aussehen, offene Entscheidungen..."></textarea>
+            <textarea id="notes" class="select" rows="5" placeholder="Persönlichkeit, Aussehen, offene Entscheidungen..."></textarea>
+
+            <h2>Import / Bearbeiten</h2>
+            <div class="choice-box">
+              <label class="form-field">JSON-Datei <input id="importFile" class="select" type="file" accept="application/json,.json"/></label>
+              <label class="form-field">JSON einfügen <textarea id="importText" class="select import-box" placeholder='{"character": {...}}'></textarea></label>
+              <div class="builder-actions">
+                <button id="importJson" class="btn" type="button">JSON importieren</button>
+                <button id="resetForm" class="btn" type="button">Formular leeren</button>
+              </div>
+              <div id="importStatus" class="muted"></div>
+            </div>
           </section>
 
           <aside class="builder-panel">
@@ -113,6 +125,7 @@
             <h2>Export</h2>
             <div class="builder-actions" style="margin-bottom:10px;">
               <button id="download" class="btn" type="button">JSON herunterladen</button>
+              <button id="sheet" class="btn" type="button">Als Charactersheet anzeigen</button>
             </div>
             <textarea id="json" class="select json-box" readonly></textarea>
           </aside>
@@ -126,7 +139,7 @@
 
     const STANDARD = [15, 14, 13, 12, 10, 8];
     const ABILITIES = [
-      ["str", "STR", "Staerke"],
+      ["str", "STR", "Stärke"],
       ["dex", "DEX", "Geschick"],
       ["con", "CON", "Konstitution"],
       ["int", "INT", "Intelligenz"],
@@ -170,6 +183,27 @@
     }
     function searchableText(entry){ return repairText([entry?.name, entry?.original_name, entry?.group, entry?.category, entry?.summary, entry?.text, ...(entry?.prerequisites || [])].join(" ")); }
     function normName(value){ return repairText(value || "").toLowerCase(); }
+    function cleanText(value){ return repairText(String(value ?? "")).trim(); }
+    function firstValue(...values){ return values.find(value => value != null && value !== ""); }
+    function asArray(value){ return Array.isArray(value) ? value : (value == null || value === "" ? [] : [value]); }
+    function refName(value){
+      if (value == null) return "";
+      if (typeof value === "string") return cleanText(value);
+      return cleanText(value.name || value.id || value.item_ref?.name || value.ref?.name || "");
+    }
+    function refId(value){
+      if (value == null) return "";
+      if (typeof value === "string") return slugify(value);
+      return cleanText(value.id || value.item_ref?.id || value.ref?.id || value.name || "");
+    }
+    function findEntry(list, value){
+      const idValue = refId(value);
+      const nameValue = normName(refName(value));
+      return list.find(entry => entry.id === idValue) ||
+        list.find(entry => normName(displayName(entry)) === nameValue) ||
+        list.find(entry => slugify(displayName(entry)) === idValue) ||
+        null;
+    }
     function spellChoices(entry){
       const choices = [];
       if (Array.isArray(entry?.choice_sets)) choices.push(...entry.choice_sets.filter(choice => choice?.type === "spell"));
@@ -228,6 +262,133 @@
       return (await loadMany(`../../data/${base}`, files)).filter(Boolean).sort(byName);
     }
 
+    function resetForm(){
+      nameEl.value = "Neuer Charakter";
+      playerEl.value = "";
+      levelEl.value = "1";
+      speedEl.value = "9";
+      notesEl.value = "";
+      $("abilitySource").value = "";
+      state.feats = [];
+      state.spells = [];
+      state.items = [];
+      state.abilityBase = { str:15, dex:14, con:13, int:12, wis:10, cha:8 };
+      state.abilityAdjust = { str:0, dex:0, con:0, int:0, wis:0, cha:0 };
+      if (races[0]) raceEl.value = races[0].id;
+      if (backgrounds[0]) backgroundEl.value = backgrounds[0].id;
+      if (classes[0]) klassEl.value = classes[0].id;
+      subclassEl.value = "";
+      render();
+    }
+
+    function readAbilityScore(source, key, abbr){
+      const value = source?.[key] ?? source?.[abbr] ?? source?.[abbr.toLowerCase()] ?? source?.[abbr.toUpperCase()];
+      if (value && typeof value === "object") return Number(firstValue(value.score, value.value, value.base));
+      return Number(value);
+    }
+
+    function applyAbilityScores(raw){
+      const c = raw?.character || {};
+      const abilityScores = firstValue(raw?.abilities, c.ability_scores, raw?.ability_scores, {});
+      const generated = raw?.ability_generation || {};
+      const base = generated.base || {};
+      const adjust = generated.adjustments || {};
+      for (const [key, abbr] of ABILITIES.map(([k, a]) => [k, a])) {
+        const score = readAbilityScore(abilityScores, key, abbr);
+        const baseValue = Number(firstValue(base[key], abilityScores?.[abbr]?.base, abilityScores?.[key]?.base, score));
+        state.abilityBase[key] = Number.isFinite(baseValue) ? Math.max(1, Math.min(30, baseValue)) : 10;
+        const adjustValue = Number(firstValue(adjust[key], abilityScores?.[abbr]?.adjustment, abilityScores?.[key]?.adjustment, score - state.abilityBase[key]));
+        state.abilityAdjust[key] = Number.isFinite(adjustValue) ? adjustValue : 0;
+      }
+      $("abilitySource").value = cleanText(generated.source || "");
+    }
+
+    function applyCharacter(raw, sourceLabel = "Import"){
+      if (!raw || typeof raw !== "object") throw new Error("JSON muss ein Objekt enthalten.");
+      const c = raw.character || {};
+      const identity = c.identity || {};
+      const klassObj = identity.class || {};
+      nameEl.value = cleanText(firstValue(raw.name, identity.name, raw.id, "Neuer Charakter"));
+      playerEl.value = cleanText(firstValue(raw.player, identity.player_name, raw.player_name, ""));
+      levelEl.value = Number(firstValue(raw.level, klassObj.level, 1)) || 1;
+      speedEl.value = Number(firstValue(raw.speed, c.combat?.speeds?.walk, c.combat?.speed?.walk, 9)) || 9;
+      notesEl.value = cleanText(firstValue(raw.notes, c.notes, raw.description, ""));
+
+      const race = findEntry(races, firstValue(raw.race, identity.race));
+      const background = findEntry(backgrounds, firstValue(raw.background, identity.background));
+      const klass = findEntry(classes, firstValue(raw.class, klassObj.name, klassObj));
+      if (race) raceEl.value = race.id;
+      if (background) backgroundEl.value = background.id;
+      if (klass) {
+        klassEl.value = klass.id;
+        renderSubclasses();
+        const subclassName = firstValue(raw.subclass, klassObj.subclass);
+        const subclass = (klass.subclasses || []).find(sc => normName(displayName(sc)) === normName(subclassName) || sc.id === slugify(subclassName));
+        subclassEl.value = subclass?.id || "";
+      }
+
+      applyAbilityScores(raw);
+
+      const featRefs = [
+        ...asArray(raw.feats),
+        ...asArray(c.features?.feats),
+        ...asArray(c.features?.talents),
+        ...asArray(c.features?.talents_and_magic_items_text).filter(entry => /talent|feat/i.test([entry?.type, entry?.category].join(" ")))
+      ];
+      state.feats = featRefs.map(ref => findEntry(feats, ref)).filter(Boolean);
+
+      const spellRefs = [
+        ...asArray(raw.spells),
+        ...asArray(c.spellcasting?.spells),
+        ...asArray(c.spellcasting?.cantrips),
+        ...asArray(c.spellcasting?.known_or_prepared),
+        ...Object.entries(c.spellcasting || {}).filter(([key]) => /^level_\d+_spells_listed$/.test(key)).flatMap(([, value]) => asArray(value)),
+        ...asArray(c.spellcasting?.always_prepared).flatMap(entry => asArray(entry?.spells)),
+        ...asArray(c.spellcasting?.special_sources).flatMap(entry => asArray(entry?.spells))
+      ];
+      const spellIds = new Set();
+      state.spells = spellRefs.map(ref => findEntry(spells, ref)).filter(Boolean).filter(sp => {
+        if (spellIds.has(sp.id)) return false;
+        spellIds.add(sp.id);
+        return true;
+      });
+
+      const itemRefs = [
+        ...asArray(raw.items),
+        ...asArray(c.equipment?.items),
+        ...asArray(c.equipment?.attuned_magic_items_listed),
+        ...asArray(c.equipment?.inventory),
+        ...asArray(raw.inventory)
+      ];
+      const itemMap = new Map();
+      for (const ref of itemRefs) {
+        const item = findEntry(items, ref);
+        if (!item) continue;
+        const qty = Math.max(1, Number(firstValue(ref?.quantity, ref?.qty, 1)) || 1);
+        itemMap.set(item.id, { item, qty: (itemMap.get(item.id)?.qty || 0) + qty });
+      }
+      state.items = [...itemMap.values()];
+
+      $("importStatus").textContent = `${sourceLabel} geladen. Export ist aktualisiert.`;
+      render();
+    }
+
+    async function importFromText(text, sourceLabel = "Import"){
+      const raw = JSON.parse(text);
+      applyCharacter(raw, sourceLabel);
+    }
+
+    async function loadCharacterFromUrl(){
+      const params = new URLSearchParams(location.search);
+      const pcId = params.get("pc");
+      if (!pcId) return;
+      const raw = await fetch(`../../data/pcs/${encodeURIComponent(pcId)}.json`, { cache: "no-cache" }).then(res => {
+        if (!res.ok) throw new Error(`SC nicht gefunden: ${pcId}`);
+        return res.json();
+      });
+      applyCharacter(raw, `SC ${pcId}`);
+    }
+
     function renderOptions(){
       raceEl.innerHTML = races.map(optionHtml).join("");
       backgroundEl.innerHTML = backgrounds.map(optionHtml).join("");
@@ -243,7 +404,7 @@
       const klass = selectedClass();
       const subclasses = klass?.subclasses || [];
       const current = subclassEl.value;
-      subclassEl.innerHTML = `<option value="">Keine / spaeter waehlen</option>` + subclasses.map(sc => `<option value="${escapeHtml(sc.id)}">${escapeHtml(displayName(sc))}</option>`).join("");
+      subclassEl.innerHTML = `<option value="">Keine / später wählen</option>` + subclasses.map(sc => `<option value="${escapeHtml(sc.id)}">${escapeHtml(displayName(sc))}</option>`).join("");
       if (subclasses.some(sc => sc.id === current)) subclassEl.value = current;
     }
 
@@ -324,8 +485,8 @@
       $("spellNeed").innerHTML = `
         <div class="preview-title">${sources.length ? "Zauberauswahl empfohlen" : "Zauberauswahl optional"}</div>
         <div class="preview-text">${escapeHtml(sources.length
-          ? `Ausgeloest durch: ${sources.join(", ")}. Die Liste wird, wenn moeglich, nach der gewaehlten Klasse gefiltert.`
-          : "Keine gewaehlte Klasse, kein Hintergrund und kein Talent verlangt laut lokalem Text eindeutig Zauber; du kannst trotzdem Zauber hinzufuegen.")}</div>
+          ? `Ausgelöst durch: ${sources.join(", ")}. Die Liste wird, wenn möglich, nach der gewählten Klasse gefiltert.`
+          : "Keine gewählte Klasse, kein Hintergrund und kein Talent verlangt laut lokalem Text eindeutig Zauber; du kannst trotzdem Zauber hinzufügen.")}</div>
       `;
       spellSelectEl.innerHTML = pool.map(sp => `<option value="${escapeHtml(sp.id)}">${escapeHtml(displayName(sp))}${sp.level != null ? ` (${sp.level === 0 ? "Zaubertrick" : `Grad ${sp.level}`})` : ""}</option>`).join("") || `<option value="">Keine Treffer</option>`;
     }
@@ -337,9 +498,9 @@
     }
 
     function renderChips(){
-      $("featChips").innerHTML = state.feats.map(f => `<span class="chip">${escapeHtml(displayName(f))}<button type="button" data-remove-feat="${escapeHtml(f.id)}">x</button></span>`).join("") || `<span class="muted">Keine Talente gewaehlt.</span>`;
-      $("spellChips").innerHTML = state.spells.map(sp => `<span class="chip">${escapeHtml(displayName(sp))}<button type="button" data-remove-spell="${escapeHtml(sp.id)}">x</button></span>`).join("") || `<span class="muted">Keine Zauber gewaehlt.</span>`;
-      $("itemChips").innerHTML = state.items.map(entry => `<span class="chip">${escapeHtml(entry.qty)}x ${escapeHtml(displayName(entry.item))}<button type="button" data-remove-item="${escapeHtml(entry.item.id)}">x</button></span>`).join("") || `<span class="muted">Keine Gegenstaende gewaehlt.</span>`;
+      $("featChips").innerHTML = state.feats.map(f => `<span class="chip">${escapeHtml(displayName(f))}<button type="button" data-remove-feat="${escapeHtml(f.id)}">x</button></span>`).join("") || `<span class="muted">Keine Talente gewählt.</span>`;
+      $("spellChips").innerHTML = state.spells.map(sp => `<span class="chip">${escapeHtml(displayName(sp))}<button type="button" data-remove-spell="${escapeHtml(sp.id)}">x</button></span>`).join("") || `<span class="muted">Keine Zauber gewählt.</span>`;
+      $("itemChips").innerHTML = state.items.map(entry => `<span class="chip">${escapeHtml(entry.qty)}x ${escapeHtml(displayName(entry.item))}<button type="button" data-remove-item="${escapeHtml(entry.item.id)}">x</button></span>`).join("") || `<span class="muted">Keine Gegenstände gewählt.</span>`;
       for (const btn of document.querySelectorAll("[data-remove-feat]")) btn.addEventListener("click", () => { state.feats = state.feats.filter(f => f.id !== btn.dataset.removeFeat); render(); });
       for (const btn of document.querySelectorAll("[data-remove-spell]")) btn.addEventListener("click", () => { state.spells = state.spells.filter(sp => sp.id !== btn.dataset.removeSpell); render(); });
       for (const btn of document.querySelectorAll("[data-remove-item]")) btn.addEventListener("click", () => { state.items = state.items.filter(e => e.item.id !== btn.dataset.removeItem); render(); });
@@ -416,9 +577,9 @@
         ["Volk", shortText(selectedRace()) || "Keine Beschreibung."],
         ["Hintergrund", shortText(selectedBackground()) || "Keine Beschreibung."],
         ["Klasse", shortText(selectedClass()) || "Keine Beschreibung."],
-        ["Talente", state.feats.map(displayName).join(", ") || "Keine gewaehlt."],
-        ["Zauber", state.spells.map(sp => `${displayName(sp)}${sp.level != null ? ` (${sp.level === 0 ? "Zaubertrick" : `Grad ${sp.level}`})` : ""}`).join(", ") || "Keine gewaehlt."],
-        ["Gegenstaende", state.items.map(e => `${e.qty}x ${displayName(e.item)}`).join(", ") || "Keine gewaehlt."]
+        ["Talente", state.feats.map(displayName).join(", ") || "Keine gewählt."],
+        ["Zauber", state.spells.map(sp => `${displayName(sp)}${sp.level != null ? ` (${sp.level === 0 ? "Zaubertrick" : `Grad ${sp.level}`})` : ""}`).join(", ") || "Keine gewählt."],
+        ["Gegenstände", state.items.map(e => `${e.qty}x ${displayName(e.item)}`).join(", ") || "Keine gewählt."]
       ];
       $("summary").innerHTML = cards.map(([title, text]) => `<div class="preview-card"><div class="preview-title">${escapeHtml(title)}</div><div class="preview-text">${escapeHtml(text)}</div></div>`).join("");
     }
@@ -444,6 +605,14 @@
       a.download = `${character.id || "charakter"}.json`;
       a.click();
       URL.revokeObjectURL(a.href);
+    }
+
+    function showSheet(){
+      const character = buildCharacter();
+      try {
+        sessionStorage.setItem("dnd.characterBuilder.sheet", JSON.stringify(character));
+      } catch {}
+      location.href = `../spieler/pc.html?id=${encodeURIComponent(character.id)}&sheet=1&draft=builder`;
     }
 
     [nameEl, playerEl, levelEl, raceEl, backgroundEl, speedEl, notesEl, $("abilitySource")].forEach(el => el.addEventListener("input", render));
@@ -476,6 +645,26 @@
     });
     $("clearItems").addEventListener("click", () => { state.items = []; render(); });
     $("download").addEventListener("click", downloadJson);
+    $("sheet").addEventListener("click", showSheet);
+    $("resetForm").addEventListener("click", resetForm);
+    $("importJson").addEventListener("click", async () => {
+      try {
+        await importFromText($("importText").value, "Textarea-JSON");
+      } catch (err) {
+        $("importStatus").textContent = `Import fehlgeschlagen: ${err.message || err}`;
+      }
+    });
+    $("importFile").addEventListener("change", async event => {
+      const file = event.currentTarget.files?.[0];
+      if (!file) return;
+      try {
+        const text = await file.text();
+        $("importText").value = text;
+        await importFromText(text, file.name);
+      } catch (err) {
+        $("importStatus").textContent = `Import fehlgeschlagen: ${err.message || err}`;
+      }
+    });
 
     try{
       [races, backgrounds, classes, feats, spells, items] = await Promise.all([
@@ -488,6 +677,7 @@
       ]);
       renderOptions();
       render();
+      await loadCharacterFromUrl().catch(err => { $("importStatus").textContent = err.message || String(err); });
     } catch (err) {
       $("summary").innerHTML = `<p>Die lokalen Daten konnten nicht geladen werden: ${escapeHtml(err.message || err)}</p>`;
     }

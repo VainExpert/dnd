@@ -2,16 +2,15 @@ const PAGES = [
   ["Start", "Startseite", "content/home.md"],
 
   ["Regeln", "Regelübersicht", "content/rules/index.md"],
-  ["Regeln", "Hausregeln & Tischkonventionen", "content/house-rules/index.md"],
-  ["Regeln", "Gegenstands- & Herstellungsregeln", "content/treasure-crafting/index.md"],
-  ["Regeln", "Reise- & Freizeitregeln", "content/travel-downtime/index.md"],
-  ["Regeln", "Charakteroptionen", "content/character-options/index.md"],
+  ["Regeln", "Hausregeln & Tischkonventionen", "content/rules/house-rules/index.md"],
+  ["Regeln", "Gegenstands- & Herstellungsregeln", "content/rules/treasure-crafting/index.md"],
+  ["Regeln", "Reise- & Freizeitregeln", "content/rules/travel-downtime/index.md"],
+  ["Regeln", "Charakteroptionen", "content/rules/character-options/index.md"],
   ["Regeln", "Kampfregeln", "content/rules/combat.md"],
   ["Regeln", "Zauberregeln", "content/rules/spells.md"],
   ["Regeln", "Statuseffekte", "content/rules/status-effects.md"],
-  ["Regeln", "Kritische Treffer", "content/rules/combat.md#kritische-treffer"],
 
-  ["Kern", "Spiele am Tisch", "content/house-rules/games.md"],
+  ["Kern", "Spiele am Tisch", "content/rules/house-rules/games.md"],
   ["Kern", "Sicherheitswerkzeuge & Erwartungen", "content/safety/index.md"],
 
   ["Welt", "Lore-Übersicht", "content/lore/index.md"],
@@ -97,6 +96,11 @@ function normalizeInlineKind(kind) {
   if (value === "npc" || value === "nsc") return "npc";
   if (value === "pc" || value === "charakter") return "pc";
   if (value === "item" || value === "gegenstand") return "item";
+  if (value === "class" || value === "klasse") return "class";
+  if (value === "subclass" || value === "subklasse" || value === "unterklasse") return "subclass";
+  if (value === "background" || value === "hintergrund") return "background";
+  if (value === "feat" || value === "talent") return "feat";
+  if (value === "race" || value === "volk") return "race";
   if (value === "status" || value === "zustand" || value === "condition" || value === "effect" || value === "effekt") return "status";
   if (value === "table" || value === "tabelle") return "table";
   if (value === "roll" || value === "wurf" || value === "wuerfel") return "roll";
@@ -126,14 +130,18 @@ function resolveMarkdownHref(url, currentPath = "") {
   const href = sanitizeMarkdownHref(url);
   if (!href) return null;
   if (href.startsWith("#") || /^(https?:|mailto:|\/)/i.test(href)) return href;
-  if (!/\.md(?:#.*)?$/i.test(href)) return href;
 
   const [targetPath, fragment = ""] = href.split("#", 2);
   const baseDir = String(currentPath || "").replaceAll("\\", "/").replace(/\/[^/]*$/, "");
   const resolvedPath = targetPath.startsWith("content/")
     ? normalizeContentPath(targetPath)
     : normalizeContentPath(`${baseDir}/${targetPath}`);
-  return `#${encodeURIComponent(fragment ? `${resolvedPath}#${fragment}` : resolvedPath)}`;
+
+  if (/\.md$/i.test(targetPath)) {
+    return `#${encodeURIComponent(fragment ? `${resolvedPath}#${fragment}` : resolvedPath)}`;
+  }
+
+  return fragment ? `${resolvedPath}#${fragment}` : resolvedPath;
 }
 
 function applyInlineMarkdown(text) {
@@ -194,7 +202,180 @@ function statusAnchorSlug(value) {
   return aliases[slug] || slug;
 }
 
-function simpleMarkdown(md, currentPath = "") {
+const INLINE_REFERENCE_SOURCES = {
+  spell: { basePath: "data/spells", indexPath: "data/spells/index.json" },
+  monster: { basePath: "data/monsters", indexPath: "data/monsters/index.json" },
+  npc: { basePath: "data/monsters/npc", indexPath: "data/monsters/npc/index.json" },
+  pc: { basePath: "data/pcs", indexPath: "data/pcs/index.json" },
+  item: { basePath: "data/items", indexPath: "data/items/index.json" },
+  table: { basePath: "data/tables", indexPath: "data/tables/index.json" },
+  class: { basePath: "data/classes", indexPath: "data/classes/index.json" },
+  subclass: { basePath: "data/classes/subclasses", indexPath: "data/classes/subclasses/index.json" },
+  background: { basePath: "data/backgrounds", indexPath: "data/backgrounds/index.json" },
+  feat: { basePath: "data/feats", indexPath: "data/feats/index.json" },
+  race: { basePath: "data/races", indexPath: "data/races/index.json" }
+};
+
+const inlineReferenceStores = new Map();
+
+function lookupSlug(value) {
+  return String(value ?? "")
+    .trim()
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/\u00df/g, "ss")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function lookupCandidates(value) {
+  const raw = String(value ?? "").trim();
+  const withoutExtension = raw.replace(/\.(json|html?)$/i, "");
+  return [...new Set([
+    raw,
+    withoutExtension,
+    raw.toLowerCase(),
+    withoutExtension.toLowerCase(),
+    lookupSlug(raw),
+    lookupSlug(withoutExtension)
+  ].filter(Boolean))];
+}
+
+function getEntryName(entry, fallbackId) {
+  return entry?.name || entry?.title || entry?.titel || entry?.label || fallbackId;
+}
+
+function addLookupKeys(map, key, value) {
+  for (const candidate of lookupCandidates(key)) {
+    if (candidate && !map.has(candidate)) map.set(candidate, value);
+  }
+}
+
+function registerInlineReferenceEntry(store, file, entry) {
+  if (!entry || typeof entry !== "object") return;
+
+  const fallbackId = String(file ?? "").split("/").pop().replace(/\.json$/i, "");
+  const id = String(entry.id || entry.slug || fallbackId).trim();
+  const name = String(getEntryName(entry, id)).trim();
+  if (!id && !name) return;
+
+  const hit = { id: id || fallbackId, name: name || id || fallbackId };
+  addLookupKeys(store.entries, hit.id, hit);
+  addLookupKeys(store.entries, hit.name, hit);
+
+  if (Array.isArray(entry.aliases)) {
+    for (const alias of entry.aliases) addLookupKeys(store.entries, alias, hit);
+  }
+}
+
+async function getInlineReferenceStore(kind) {
+  const normalizedKind = normalizeInlineKind(kind);
+  if (inlineReferenceStores.has(normalizedKind)) return inlineReferenceStores.get(normalizedKind);
+
+  const config = INLINE_REFERENCE_SOURCES[normalizedKind];
+  const store = {
+    filesByKey: new Map(),
+    entries: new Map(),
+    pending: new Map()
+  };
+  inlineReferenceStores.set(normalizedKind, store);
+  if (!config) return store;
+
+  try {
+    const response = await fetch(config.indexPath, { cache: "no-cache" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const payload = await response.json();
+    const files = Array.isArray(payload) ? payload : Array.isArray(payload?.files) ? payload.files : [];
+
+    for (const file of files) {
+      const value = String(file ?? "").trim();
+      if (!value) continue;
+      const basename = value.split("/").pop();
+      addLookupKeys(store.filesByKey, value, value);
+      addLookupKeys(store.filesByKey, basename, value);
+    }
+  } catch (error) {
+    console.warn(`Inline-Lookups fuer ${normalizedKind} konnten nicht geladen werden.`, error);
+  }
+
+  return store;
+}
+
+async function ensureInlineReferenceEntry(kind, id) {
+  const normalizedKind = normalizeInlineKind(kind);
+  const store = await getInlineReferenceStore(normalizedKind);
+  const existing = lookupEntityName(normalizedKind, id, { [normalizedKind]: store.entries });
+  if (existing) return existing;
+
+  const file = lookupCandidates(id)
+    .map(candidate => store.filesByKey.get(candidate))
+    .find(Boolean);
+  if (!file) return "";
+
+  if (!store.pending.has(file)) {
+    const config = INLINE_REFERENCE_SOURCES[normalizedKind];
+    const request = fetch(`${config.basePath}/${file}`, { cache: "no-cache" })
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then(entry => {
+        registerInlineReferenceEntry(store, file, entry);
+      })
+      .catch(error => {
+        console.warn(`${normalizedKind}:${file} konnte nicht fuer Inline-Links geladen werden.`, error);
+      })
+      .finally(() => {
+        store.pending.delete(file);
+      });
+    store.pending.set(file, request);
+  }
+
+  await store.pending.get(file);
+  return lookupEntityName(normalizedKind, id, { [normalizedKind]: store.entries });
+}
+
+async function loadInlineReferenceLookups(markdown) {
+  const references = [];
+  const pattern = /\[\[([a-z]+):([^|\]]+)(?:\|([^\]]+))?\]\]/gi;
+
+  for (const match of String(markdown ?? "").matchAll(pattern)) {
+    const kind = normalizeInlineKind(match[1]);
+    const id = String(match[2] ?? "").trim();
+    const label = String(match[3] ?? "").trim();
+    if (!kind || !id || label || kind === "roll" || kind === "status") continue;
+    references.push({ kind, id });
+  }
+
+  const uniqueRefs = new Map();
+  for (const ref of references) {
+    uniqueRefs.set(`${ref.kind}:${lookupSlug(ref.id)}`, ref);
+  }
+
+  await Promise.all([...uniqueRefs.values()].map(ref => ensureInlineReferenceEntry(ref.kind, ref.id)));
+
+  const lookups = {};
+  for (const kind of new Set([...uniqueRefs.values()].map(ref => ref.kind))) {
+    const store = inlineReferenceStores.get(kind);
+    if (store?.entries?.size) lookups[kind] = store.entries;
+  }
+  return lookups;
+}
+
+function lookupEntityName(kind, id, lookups) {
+  const lookup = lookups?.[kind];
+  if (!lookup) return "";
+
+  for (const key of lookupCandidates(id)) {
+    const hit = lookup instanceof Map ? lookup.get(key) : lookup[key];
+    if (hit) return String(hit.name ?? hit.title ?? hit.label ?? hit.id ?? hit);
+  }
+
+  return "";
+}
+
+function simpleMarkdown(md, currentPath = "", { lookups = {} } = {}) {
   const htmlTokens = [];
   const reserveHtml = (html) => {
     const token = `@@HTMLTOKEN_${htmlTokens.length}@@`;
@@ -223,12 +404,18 @@ function simpleMarkdown(md, currentPath = "") {
   function renderInlineReference(kind, id, label) {
     const k = normalizeInlineKind(kind);
     const slug = String(id).trim();
-    const text = applyInlineMarkdown(escapeHtml(String(label || (k === "roll" ? formatRollExpression(slug) : prettifyEntityId(slug)))));
+    const resolvedName = lookupEntityName(k, slug, lookups);
+    const text = applyInlineMarkdown(escapeHtml(String(label || (k === "roll" ? formatRollExpression(slug) : resolvedName || prettifyEntityId(slug)))));
     if (k === "spell") return reserveHtml(`<a href="./pages/zauber/spell.html?id=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`);
     if (k === "monster") return reserveHtml(`<a href="./pages/bestiarium/monster.html?id=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`);
     if (k === "pc") return reserveHtml(`<a href="./pages/spieler/pc.html?id=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`);
     if (k === "npc") return reserveHtml(`<a href="./pages/bestiarium/npc.html?id=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`);
     if (k === "item") return reserveHtml(`<a href="./pages/items/item.html?id=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`);
+    if (k === "class") return reserveHtml(`<a href="./pages/charakteroptionen/option.html?type=class&id=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`);
+    if (k === "subclass") return reserveHtml(`<a href="./pages/charakteroptionen/option.html?type=subclass&id=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`);
+    if (k === "background") return reserveHtml(`<a href="./pages/charakteroptionen/option.html?type=background&id=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`);
+    if (k === "feat") return reserveHtml(`<a href="./pages/charakteroptionen/option.html?type=feat&id=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`);
+    if (k === "race") return reserveHtml(`<a href="./pages/charakteroptionen/option.html?type=race&id=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`);
     if (k === "status") return reserveHtml(`<a href="#${encodeURIComponent(`content/rules/status-effects.md#${statusAnchorSlug(slug)}`)}" target="dnd-reference" rel="noopener">${text}</a>`);
     if (k === "table") return reserveHtml(`<a href="./pages/werkzeuge/dice.html?table_file=${encodeURIComponent(slug)}" target="dnd-reference" rel="noopener">${text}</a>`);
     if (k === "roll") return reserveHtml(`<a href="./pages/werkzeuge/dice.html?expr=${encodeURIComponent(normalizeRollExpression(slug))}&auto=1" target="dnd-dice" rel="noopener">${text}</a>`);
@@ -438,7 +625,8 @@ async function loadPage(path) {
     return;
   }
   const md = await res.text();
-  contentEl.innerHTML = simpleMarkdown(md, path);
+  const lookups = await loadInlineReferenceLookups(md);
+  contentEl.innerHTML = simpleMarkdown(md, path, { lookups });
 }
 
 function getActivePathFromHash() {

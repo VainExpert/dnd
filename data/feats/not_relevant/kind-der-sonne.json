@@ -1,0 +1,58 @@
+{
+  "id": "kind-der-sonne",
+  "type": "feat",
+  "name": "Kind der Sonne",
+  "original_name": "Child of the Sun",
+  "rules_version": "2024",
+  "source": "Lorwyn - First Light",
+  "source_url": "http://dnd2024.wikidot.com/feat:child-of-the-sun",
+  "source_page": "dnd2024.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
+  "category": "Ursprungstalente",
+  "group": "Exotisch",
+  "prerequisites": [],
+  "summary": "Ursprungstalent",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Ursprungstalent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sie profitieren von folgenden Vorteilen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Augen von Eirdu. Sie und Verbündete im Umkreis von 10 Fuß um Sie haben einen Vorteil bei Rettungswürfen, um den Blindzustand zu vermeiden oder zu beenden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Feenfeuer. Du lernst den Zauber „Feenfeuer“. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wenn Sie dieses Talent auswählen). Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können den Zauber auch mit beliebigen Zauberslots wirken, die Sie haben."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wenn du Feenfeuer ohne einen Zauberslot wirkst und diesen Vorteil nutzt, kann das Erleiden von Schaden deine Konzentration auf den Zauber nicht beeinträchtigen."
+    }
+  ],
+  "text": "Ursprungstalent\n\nSie profitieren von folgenden Vorteilen.\n\nAugen von Eirdu. Sie und Verbündete im Umkreis von 10 Fuß um Sie haben einen Vorteil bei Rettungswürfen, um den Blindzustand zu vermeiden oder zu beenden.\n\nFeenfeuer. Du lernst den Zauber „Feenfeuer“. Intelligenz, Weisheit oder Charisma ist Ihre Zauberfähigkeit für diesen Zauber (wählen Sie, wenn Sie dieses Talent auswählen). Du kannst es einmal ohne Zauberslot wirken und erhältst die Fähigkeit, es auf diese Weise zu wirken, wieder, wenn du Lange Rast beendet hast. Sie können den Zauber auch mit beliebigen Zauberslots wirken, die Sie haben.\n\nWenn du Feenfeuer ohne einen Zauberslot wirkst und diesen Vorteil nutzt, kann das Erleiden von Schaden deine Konzentration auf den Zauber nicht beeinträchtigen.",
+  "tags": [],
+  "modifiers": [],
+  "granted_action_ids": [],
+  "granted_spell_ids": [],
+  "granted_feature_ids": [],
+  "choice_sets": [],
+  "spellcasting": {
+    "ability_choices": [
+      "int",
+      "wis",
+      "cha"
+    ],
+    "spell_choices": [],
+    "always_prepared": false
+  }
+}

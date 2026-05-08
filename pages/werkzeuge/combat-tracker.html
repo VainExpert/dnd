@@ -1,0 +1,1168 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Kampftracker</title>
+  <link rel="stylesheet" href="../../styles.css?v=theme-20260422"/>
+  <script src="../../theme.js?v=theme-20260422"></script>
+  <script src="../../nav.js" defer></script>
+  <style>
+    .btn{
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--rule);
+      background:var(--control);
+      color:var(--text);
+      cursor:pointer;
+      font:inherit;
+      font-size:13px;
+      line-height:1;
+    }
+    .btn:hover{ border-color:var(--accent-ring); background:var(--accent-soft); text-decoration:none; }
+    .btn.danger:hover{ border-color:rgba(239,68,68,.55); background:rgba(239,68,68,.12); }
+    .tracker-shell{ display:grid; gap:12px; }
+    .tracker-bar,
+    .tracker-controls,
+    .import-actions,
+    .inline-actions{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .tracker-bar{ justify-content:space-between; }
+    .tracker-controls label,
+    .effect-form label,
+    .roster-form label{
+      display:grid;
+      gap:5px;
+      min-width:130px;
+      color:var(--muted);
+      font-size:12px;
+    }
+    .tracker-grid{
+      display:grid;
+      grid-template-columns:minmax(0, 1.35fr) minmax(280px, .65fr);
+      gap:12px;
+      align-items:start;
+    }
+    .roster-form,
+    .effect-form{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+      gap:8px;
+      align-items:end;
+    }
+    .combat-table{
+      width:100%;
+      border-collapse:separate;
+      border-spacing:0 8px;
+      font-size:12px;
+    }
+    .combat-table th{
+      text-align:left;
+      color:var(--muted);
+      font-size:11px;
+      font-weight:700;
+      padding:0 8px;
+    }
+    .combat-table td{
+      padding:8px;
+      border-top:1px solid var(--rule-soft);
+      border-bottom:1px solid var(--rule-soft);
+      background:var(--card-tint);
+      vertical-align:top;
+    }
+    .combat-table td:first-child{ border-left:1px solid var(--rule-soft); border-radius:8px 0 0 8px; }
+    .combat-table td:last-child{ border-right:1px solid var(--rule-soft); border-radius:0 8px 8px 0; }
+    .combat-table tr.active td{ border-color:var(--accent-ring); background:var(--accent-soft); }
+    .combat-table tr.down td{ opacity:.62; }
+    .combat-name{ display:grid; gap:4px; min-width:150px; }
+    .combat-name strong{ font-size:13px; }
+    .field-short{ width:72px; }
+    .hp-row{ display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+    .hp-row input{ width:64px; }
+    .condition-list,
+    .effect-list,
+    .concentration-list{ display:grid; gap:6px; }
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:5px;
+      border:1px solid var(--rule-soft);
+      border-radius:999px;
+      padding:4px 7px;
+      background:rgba(255,255,255,.025);
+      color:var(--muted);
+      max-width:100%;
+    }
+    .tag.expired{ border-color:rgba(239,68,68,.45); color:#fca5a5; }
+    .tag button{
+      width:20px;
+      height:20px;
+      padding:0;
+      border-radius:999px;
+      border:1px solid var(--rule-soft);
+      background:transparent;
+      color:inherit;
+      cursor:pointer;
+    }
+    .notice{
+      border:1px solid var(--accent-ring);
+      background:var(--accent-soft);
+      border-radius:8px;
+      padding:10px;
+    }
+    .log{
+      max-height:210px;
+      overflow:auto;
+      display:grid;
+      gap:6px;
+      font-size:12px;
+    }
+    .log-entry{
+      border-bottom:1px solid var(--rule-faint);
+      padding-bottom:6px;
+      color:var(--muted);
+    }
+    .save-dots{ display:flex; gap:4px; flex-wrap:wrap; }
+    .dot-btn{
+      width:24px;
+      height:24px;
+      padding:0;
+      border-radius:999px;
+      border:1px solid var(--rule);
+      background:var(--control);
+      color:var(--text);
+      cursor:pointer;
+    }
+    .dot-btn.on{ background:var(--accent-soft); border-color:var(--accent-ring); }
+    .file-input{ max-width:240px; }
+    @media (max-width: 980px){
+      .tracker-grid{ grid-template-columns:1fr; }
+      .tracker-bar{ align-items:flex-start; }
+    }
+    @media (max-width: 760px){
+      .combat-table, .combat-table thead, .combat-table tbody, .combat-table tr, .combat-table td{ display:block; width:100%; }
+      .combat-table thead{ display:none; }
+      .combat-table tr{
+        border:1px solid var(--rule-soft);
+        border-radius:8px;
+        background:var(--card-tint);
+        margin-bottom:10px;
+      }
+      .combat-table td{
+        border:0;
+        border-radius:0;
+        background:transparent;
+        padding:7px 8px;
+      }
+      .combat-table td::before{
+        content:attr(data-label);
+        display:block;
+        color:var(--muted);
+        font-size:10px;
+        text-transform:uppercase;
+        letter-spacing:.35px;
+        margin-bottom:3px;
+      }
+      .combat-table td:first-child,
+      .combat-table td:last-child{ border:0; border-radius:0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Kampftracker</div>
+      <div class="subtitle">Initiative &bull; Runden &bull; HP &bull; Effekte</div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar"></aside>
+    <main class="main">
+      <div class="content" style="max-width:1280px;">
+        <div class="tracker-shell">
+          <div class="tracker-bar">
+            <div>
+              <h1>Kampftracker</h1>
+              <div id="roundSummary" class="pillbar"></div>
+            </div>
+            <div class="tracker-controls">
+              <button id="startCombat" class="btn">Kampf starten</button>
+              <button id="prevTurn" class="btn">Vorheriger Zug</button>
+              <button id="nextTurn" class="btn">N&auml;chster Zug</button>
+              <button id="newRound" class="btn">Neue Runde</button>
+              <button id="resetCombat" class="btn">Kampf zur&uuml;cksetzen</button>
+            </div>
+          </div>
+
+          <div id="pendingImport"></div>
+          <div id="warnings"></div>
+
+          <div class="mini-box">
+            <div class="mini-box-title">Teilnehmer hinzuf&uuml;gen</div>
+            <div class="mini-box-text">
+              <div class="roster-form">
+                <label>
+                  Spielercharakter
+                  <select id="pcSelect" class="select"></select>
+                </label>
+                <button id="addPc" class="btn">SC hinzuf&uuml;gen</button>
+                <button id="addAllPcs" class="btn">Alle SCs</button>
+                <label>
+                  Kreatur / NPC
+                  <input id="creatureSearch" class="select" list="creatureOptions" placeholder="Name oder ID"/>
+                  <datalist id="creatureOptions"></datalist>
+                </label>
+                <button id="addCreature" class="btn">Kreatur hinzuf&uuml;gen</button>
+                <label>
+                  Manueller Name
+                  <input id="manualName" class="select" placeholder="Beschworene Wache"/>
+                </label>
+                <label>
+                  RK
+                  <input id="manualAc" class="select" type="number" min="0"/>
+                </label>
+                <label>
+                  Max-HP
+                  <input id="manualHp" class="select" type="number" min="0"/>
+                </label>
+                <button id="addManual" class="btn">Manuell hinzuf&uuml;gen</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tracker-grid">
+            <section class="mini-box">
+              <div class="mini-box-title">Initiative</div>
+              <div class="mini-box-text">
+                <div class="inline-actions" style="margin-bottom:8px;">
+                  <button id="rollAll" class="btn">Initiative w&uuml;rfeln</button>
+                  <button id="sortInit" class="btn">Sortieren</button>
+                  <button id="clearDefeated" class="btn">Besiegte entfernen</button>
+                </div>
+                <div id="combatList"></div>
+              </div>
+            </section>
+
+            <aside class="mini-box">
+              <div class="mini-box-title">Effekte, Konzentration, Export</div>
+              <div class="mini-box-text">
+                <div class="effect-form">
+                  <label>
+                    Ziel
+                    <select id="effectTarget" class="select"></select>
+                  </label>
+                  <label>
+                    Zustand
+                    <select id="conditionQuick" class="select"></select>
+                  </label>
+                  <button id="addCondition" class="btn">Zustand setzen</button>
+                  <label>
+                    Effektname
+                    <input id="effectName" class="select" placeholder="Segen"/>
+                  </label>
+                  <label>
+                    Quelle
+                    <select id="effectSource" class="select"></select>
+                  </label>
+                  <label>
+                    Dauer
+                    <input id="effectDuration" class="select" type="number" min="0" value="1"/>
+                  </label>
+                  <label>
+                    Ablauf
+                    <select id="effectExpiry" class="select">
+                      <option value="targetEnd">Ende des eigenen Zuges</option>
+                      <option value="targetStart">Beginn des eigenen Zuges</option>
+                      <option value="sourceEnd">Ende des Quell-Zuges</option>
+                      <option value="sourceStart">Beginn des Quell-Zuges</option>
+                      <option value="roundEnd">Ende der Runde</option>
+                      <option value="manual">Manuell</option>
+                    </select>
+                  </label>
+                  <button id="addEffect" class="btn">Effekt hinzuf&uuml;gen</button>
+                  <label>
+                    Konzentration
+                    <input id="concName" class="select" placeholder="Zauber / Effekt"/>
+                  </label>
+                  <label>
+                    Ziel(e)
+                    <input id="concTargets" class="select" placeholder="Ziele"/>
+                  </label>
+                  <label>
+                    SG / Notiz
+                    <input id="concNote" class="select" placeholder="SG 10 oder halber Schaden"/>
+                  </label>
+                  <button id="setConcentration" class="btn">Konzentration setzen</button>
+                </div>
+
+                <h2>Import / Export</h2>
+                <div class="inline-actions">
+                  <button id="exportState" class="btn">JSON exportieren</button>
+                  <label class="btn file-input">
+                    JSON importieren
+                    <input id="importState" type="file" accept="application/json,.json" hidden/>
+                  </label>
+                  <button id="clearState" class="btn danger">Aktuellen Kampf leeren</button>
+                </div>
+
+                <h2>Protokoll</h2>
+                <div id="log" class="log"></div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { escapeHtml, loadIndex, loadMany, normalizeMonster, normalizeNpc, normalizePc } from "../../lib.js";
+
+    const STORAGE_KEY = "dnd.combatTracker.state";
+    const PENDING_KEY = "dnd.pendingCombatEncounter";
+    const COMBAT_LOG_KEY = "dnd.combatLog.v1";
+    const ACTIVE_SESSION_KEY = "dnd.sessionNotes.activeSessionId";
+    const CONDITIONS = [
+      "Betäubt", "Bewusstlos", "Blind", "Bezaubert", "Erschöpft", "Festgesetzt",
+      "Gepackt", "Gelähmt", "Kampfbereit", "Liegend", "Taub", "Unsichtbar", "Vergiftet", "Verängstigt", "Versteinert"
+    ];
+    const EXPIRY_LABELS = {
+      targetEnd: "Ende eigenes",
+      targetStart: "Beginn eigenes",
+      sourceEnd: "Ende Quelle",
+      sourceStart: "Beginn Quelle",
+      roundEnd: "Rundenende",
+      manual: "manuell"
+    };
+
+    const els = {
+      roundSummary: document.getElementById("roundSummary"),
+      pendingImport: document.getElementById("pendingImport"),
+      warnings: document.getElementById("warnings"),
+      pcSelect: document.getElementById("pcSelect"),
+      addPc: document.getElementById("addPc"),
+      addAllPcs: document.getElementById("addAllPcs"),
+      creatureSearch: document.getElementById("creatureSearch"),
+      creatureOptions: document.getElementById("creatureOptions"),
+      addCreature: document.getElementById("addCreature"),
+      manualName: document.getElementById("manualName"),
+      manualAc: document.getElementById("manualAc"),
+      manualHp: document.getElementById("manualHp"),
+      addManual: document.getElementById("addManual"),
+      startCombat: document.getElementById("startCombat"),
+      prevTurn: document.getElementById("prevTurn"),
+      nextTurn: document.getElementById("nextTurn"),
+      newRound: document.getElementById("newRound"),
+      resetCombat: document.getElementById("resetCombat"),
+      rollAll: document.getElementById("rollAll"),
+      sortInit: document.getElementById("sortInit"),
+      clearDefeated: document.getElementById("clearDefeated"),
+      combatList: document.getElementById("combatList"),
+      effectTarget: document.getElementById("effectTarget"),
+      conditionQuick: document.getElementById("conditionQuick"),
+      addCondition: document.getElementById("addCondition"),
+      effectName: document.getElementById("effectName"),
+      effectSource: document.getElementById("effectSource"),
+      effectDuration: document.getElementById("effectDuration"),
+      effectExpiry: document.getElementById("effectExpiry"),
+      addEffect: document.getElementById("addEffect"),
+      concName: document.getElementById("concName"),
+      concTargets: document.getElementById("concTargets"),
+      concNote: document.getElementById("concNote"),
+      setConcentration: document.getElementById("setConcentration"),
+      exportState: document.getElementById("exportState"),
+      importState: document.getElementById("importState"),
+      clearState: document.getElementById("clearState"),
+      log: document.getElementById("log")
+    };
+
+    let pcs = [];
+    let creatures = [];
+    let pendingEncounter = readJson(PENDING_KEY, null);
+    let state = sanitizeState(readJson(STORAGE_KEY, null));
+
+    function readJson(key, fallback){
+      try {
+        const raw = localStorage.getItem(key);
+        return raw ? JSON.parse(raw) : fallback;
+      } catch {
+        return fallback;
+      }
+    }
+
+    function save(){
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function uid(prefix){
+      return `${prefix}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
+    }
+
+    function sanitizeState(raw){
+      const base = {
+        version: 1,
+        combatId: uid("combat"),
+        encounterName: "Kampf",
+        round: 1,
+        activeIndex: 0,
+        started: false,
+        participants: [],
+        log: []
+      };
+      if (!raw || typeof raw !== "object") return base;
+      const participants = Array.isArray(raw.participants) ? raw.participants.map((p, index) => ({
+        id: p.id || uid("p"),
+        sourceId: p.sourceId || p.id || "",
+        type: p.type || "manual",
+        name: p.name || "Teilnehmer",
+        label: p.label || "",
+        initiative: Number.isFinite(Number(p.initiative)) ? Number(p.initiative) : 0,
+        tie: Number.isFinite(Number(p.tie)) ? Number(p.tie) : index,
+        ac: numberOrNull(p.ac),
+        hp: Math.max(0, Number(p.hp ?? p.maxHp ?? 0) || 0),
+        maxHp: Math.max(0, Number(p.maxHp ?? p.hp ?? 0) || 0),
+        tempHp: Math.max(0, Number(p.tempHp) || 0),
+        reaction: p.reaction !== false,
+        deathSaves: {
+          successes: clamp(Number(p.deathSaves?.successes) || 0, 0, 3),
+          failures: clamp(Number(p.deathSaves?.failures) || 0, 0, 3),
+          enabled: !!p.deathSaves?.enabled || p.type === "pc"
+        },
+        conditions: Array.isArray(p.conditions) ? p.conditions : [],
+        effects: Array.isArray(p.effects) ? p.effects.map(normalizeEffect) : [],
+        concentration: p.concentration && typeof p.concentration === "object" ? p.concentration : null
+      })) : [];
+      return {
+        ...base,
+        ...raw,
+        combatId: raw.combatId || uid("combat"),
+        encounterName: raw.encounterName || raw.name || "Kampf",
+        round: Math.max(1, Number(raw.round) || 1),
+        activeIndex: clamp(Number(raw.activeIndex) || 0, 0, Math.max(0, participants.length - 1)),
+        started: !!raw.started,
+        participants,
+        log: Array.isArray(raw.log) ? raw.log.slice(0, 80) : []
+      };
+    }
+
+    function normalizeEffect(effect){
+      return {
+        id: effect.id || uid("e"),
+        name: effect.name || "Effekt",
+        sourceId: effect.sourceId || "",
+        sourceName: effect.sourceName || "",
+        targetId: effect.targetId || "",
+        duration: Math.max(0, Number(effect.duration) || 0),
+        remaining: Math.max(0, Number(effect.remaining ?? effect.duration) || 0),
+        expiry: effect.expiry || "manual",
+        expired: !!effect.expired
+      };
+    }
+
+    function numberOrNull(value){
+      const n = Number(value);
+      return Number.isFinite(n) ? n : null;
+    }
+
+    function clamp(value, min, max){
+      return Math.min(max, Math.max(min, value));
+    }
+
+    function rollDie(sides){
+      return Math.floor(Math.random() * sides) + 1;
+    }
+
+    function dexMod(entity){
+      const dex = Number(entity?.abilities?.dex ?? entity?.abilities?.DEX?.score);
+      return Number.isFinite(dex) ? Math.floor((dex - 10) / 2) : 0;
+    }
+
+    function hpValue(entity){
+      const raw = entity?.hp?.average ?? entity?.hp ?? entity?.hit_points?.average;
+      const n = Number(String(raw ?? "").replace(/[^\d.-]/g, ""));
+      return Number.isFinite(n) && n > 0 ? n : 0;
+    }
+
+    function acValue(entity){
+      const raw = entity?.ac ?? entity?.armor_class?.value;
+      const n = Number(String(raw ?? "").replace(/[^\d.-]/g, ""));
+      return Number.isFinite(n) && n > 0 ? n : null;
+    }
+
+    function crValue(entity){
+      const raw = entity?.challenge?.cr ?? entity?.challenge ?? entity?.challenge_rating ?? "";
+      return String(raw ?? "").trim();
+    }
+
+    function xpValue(entity){
+      const direct = Number(String(entity?.xp ?? entity?.challenge?.xp ?? "").replace(/[^\d.-]/g, ""));
+      return Number.isFinite(direct) && direct > 0 ? direct : "";
+    }
+
+    function participantFromPc(pc){
+      const hp = hpValue(pc);
+      return {
+        id: uid("pc"),
+        sourceId: pc.id || "",
+        type: "pc",
+        name: pc.name || "SC",
+        label: [pc.class, pc.level ? `Lv ${pc.level}` : "", pc.player].filter(Boolean).join(" · "),
+        initiative: dexMod(pc),
+        tie: state.participants.length,
+        ac: acValue(pc),
+        hp,
+        maxHp: hp,
+        tempHp: 0,
+        reaction: true,
+        deathSaves: { successes: 0, failures: 0, enabled: true },
+        conditions: [],
+        effects: [],
+        concentration: null
+      };
+    }
+
+    function participantFromCreature(creature, copy = 1){
+      const hp = hpValue(creature);
+      const name = copy > 1 ? `${creature.name || "Kreatur"} ${copy}` : (creature.name || "Kreatur");
+      return {
+        id: uid("creature"),
+        sourceId: creature.id || "",
+        type: creature.npc ? "npc" : "monster",
+        name,
+        label: [creature.npc ? "NPC" : "Monster", crValue(creature) ? `HG ${crValue(creature)}` : "", xpValue(creature) ? `${xpValue(creature)} EP` : ""].filter(Boolean).join(" · "),
+        initiative: dexMod(creature),
+        tie: state.participants.length,
+        ac: acValue(creature),
+        hp,
+        maxHp: hp,
+        tempHp: 0,
+        reaction: true,
+        deathSaves: { successes: 0, failures: 0, enabled: false },
+        conditions: [],
+        effects: [],
+        concentration: null
+      };
+    }
+
+    function participantManual(name, ac, hp){
+      return {
+        id: uid("manual"),
+        sourceId: "",
+        type: "manual",
+        name: name || "Manueller Eintrag",
+        label: "Manuell",
+        initiative: 0,
+        tie: state.participants.length,
+        ac: numberOrNull(ac),
+        hp: Math.max(0, Number(hp) || 0),
+        maxHp: Math.max(0, Number(hp) || 0),
+        tempHp: 0,
+        reaction: true,
+        deathSaves: { successes: 0, failures: 0, enabled: false },
+        conditions: [],
+        effects: [],
+        concentration: null
+      };
+    }
+
+    function addLog(text){
+      state.log.unshift({ at: new Date().toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" }), text });
+      state.log = state.log.slice(0, 80);
+      writeCombatLog("note", text);
+    }
+
+    function readCombatLog(){
+      try{
+        const raw = JSON.parse(localStorage.getItem(COMBAT_LOG_KEY) || "{}");
+        if (Array.isArray(raw)) return raw;
+        if (Array.isArray(raw.entries)) return raw.entries;
+      } catch {}
+      return [];
+    }
+
+    function activeSessionId(){
+      try{ return localStorage.getItem(ACTIVE_SESSION_KEY) || ""; } catch { return ""; }
+    }
+
+    function writeCombatLog(type, text, data = {}){
+      try{
+        const entries = readCombatLog();
+        entries.push({
+          id: uid("combat-log"),
+          timestamp: new Date().toISOString(),
+          combatId: state.combatId,
+          encounterName: state.encounterName || "Kampf",
+          round: state.round,
+          actor: data.actor || "",
+          target: data.target || "",
+          type,
+          text,
+          data,
+          sessionId: activeSessionId() || undefined
+        });
+        localStorage.setItem(COMBAT_LOG_KEY, JSON.stringify({ version: 1, entries: entries.slice(-800) }));
+      } catch {}
+    }
+
+    function sortParticipants(){
+      state.participants.sort((a, b) => Number(b.initiative) - Number(a.initiative) || Number(a.tie) - Number(b.tie));
+      state.activeIndex = clamp(state.activeIndex, 0, Math.max(0, state.participants.length - 1));
+    }
+
+    function activeParticipant(){
+      return state.participants[state.activeIndex] || null;
+    }
+
+    function tickEffects(moment, actor){
+      if (!actor) return;
+      const isEnd = moment === "end";
+      const isStart = moment === "start";
+      for (const p of state.participants){
+        for (const effect of p.effects){
+          if (effect.expired || effect.expiry === "manual") continue;
+          const targetOwn = p.id === actor.id && ((isStart && effect.expiry === "targetStart") || (isEnd && effect.expiry === "targetEnd"));
+          const sourceOwn = effect.sourceId === actor.id && ((isStart && effect.expiry === "sourceStart") || (isEnd && effect.expiry === "sourceEnd"));
+          if (targetOwn || sourceOwn) decrementEffect(effect, p.name);
+        }
+      }
+    }
+
+    function tickRoundEnd(){
+      for (const p of state.participants){
+        for (const effect of p.effects){
+          if (!effect.expired && effect.expiry === "roundEnd") decrementEffect(effect, p.name);
+        }
+      }
+    }
+
+    function decrementEffect(effect, targetName){
+      if (effect.remaining > 0) effect.remaining -= 1;
+      if (effect.remaining <= 0){
+        effect.expired = true;
+        addLog(`${effect.name} bei ${targetName} ist abgelaufen.`);
+        writeCombatLog("effect_expired", `${effect.name} bei ${targetName} ist abgelaufen.`, { target: targetName, effect: effect.name });
+      }
+    }
+
+    function beginTurn(actor){
+      if (!actor) return;
+      actor.reaction = true;
+      tickEffects("start", actor);
+      writeCombatLog("turn_started", `${actor.name} beginnt den Zug.`, { actor: actor.name });
+    }
+
+    function endTurn(actor){
+      tickEffects("end", actor);
+    }
+
+    function nextTurn(){
+      if (!state.participants.length) return;
+      const current = activeParticipant();
+      endTurn(current);
+      state.activeIndex += 1;
+      if (state.activeIndex >= state.participants.length){
+        tickRoundEnd();
+        state.activeIndex = 0;
+        state.round += 1;
+        addLog(`Runde ${state.round} beginnt.`);
+      }
+      beginTurn(activeParticipant());
+      saveRender();
+    }
+
+    function prevTurn(){
+      if (!state.participants.length) return;
+      state.activeIndex -= 1;
+      if (state.activeIndex < 0){
+        state.activeIndex = state.participants.length - 1;
+        state.round = Math.max(1, state.round - 1);
+      }
+      saveRender();
+    }
+
+    function applyDamage(p, amount){
+      let remaining = Math.max(0, Number(amount) || 0);
+      if (!remaining) return;
+      const beforeHp = p.hp;
+      const beforeTemp = p.tempHp;
+      const tempUsed = Math.min(p.tempHp, remaining);
+      p.tempHp -= tempUsed;
+      remaining -= tempUsed;
+      p.hp = Math.max(0, p.hp - remaining);
+      writeCombatLog("damage", `${p.name} erleidet ${Number(amount) || 0} Schaden.`, { target: p.name, amount: Number(amount) || 0, beforeHp, afterHp: p.hp, beforeTemp, afterTemp: p.tempHp });
+      if (p.concentration) addLog(`${p.name}: Konzentrationswurf noetig (${p.concentration.note || "SG 10 oder halber Schaden"}).`);
+      if (beforeHp > 0 && p.hp <= 0) writeCombatLog("participant_defeated", `${p.name} ist besiegt oder kampfunfaehig.`, { target: p.name });
+    }
+
+    function applyHealing(p, amount){
+      const heal = Math.max(0, Number(amount) || 0);
+      if (!heal) return;
+      const wasDown = p.hp <= 0;
+      const beforeHp = p.hp;
+      p.hp = Math.min(p.maxHp || heal, p.hp + heal);
+      writeCombatLog("healing", `${p.name} erhaelt ${heal} Heilung.`, { target: p.name, amount: heal, beforeHp, afterHp: p.hp });
+      if (wasDown && p.hp > 0){
+        p.deathSaves.successes = 0;
+        p.deathSaves.failures = 0;
+        writeCombatLog("participant_stabilized", `${p.name} ist wieder stabilisiert.`, { target: p.name });
+      }
+    }
+
+    function render(){
+      renderSummary();
+      renderPending();
+      renderRosterControls();
+      renderCombatList();
+      renderEffectTargets();
+      renderWarnings();
+      renderLog();
+    }
+
+    function renderSummary(){
+      const actor = activeParticipant();
+      els.roundSummary.innerHTML = `
+        <span class="pill"><b>Runde</b> ${escapeHtml(state.round)}</span>
+        <span class="pill"><b>Status</b> ${state.started ? "laufend" : "bereit"}</span>
+        <span class="pill"><b>Am Zug</b> ${escapeHtml(actor?.name || "-")}</span>
+        <span class="pill"><b>Teilnehmer</b> ${escapeHtml(state.participants.length)}</span>
+      `;
+    }
+
+    function renderPending(){
+      if (!pendingEncounter || (!pendingEncounter.monsters?.length && !pendingEncounter.party?.length)){
+        els.pendingImport.innerHTML = "";
+        return;
+      }
+      const monsterCount = pendingEncounter.monsters.reduce((sum, entry) => sum + (Number(entry.count) || 0), 0);
+      els.pendingImport.innerHTML = `
+        <div class="notice">
+          <b>Uebernommener Encounter vorhanden</b>
+          <div class="muted">${escapeHtml(pendingEncounter.party?.length || 0)} SCs, ${escapeHtml(monsterCount)} Kreaturen aus dem Encounterbuilder.</div>
+          <div class="import-actions" style="margin-top:8px;">
+            <button class="btn" type="button" data-import-pending="append">Importieren</button>
+            <button class="btn" type="button" data-import-pending="replace">Aktuellen Kampf ersetzen</button>
+            <button class="btn" type="button" data-dismiss-pending>Verwerfen</button>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderRosterControls(){
+      els.pcSelect.innerHTML = pcs.map(pc => `<option value="${escapeHtml(pc.id)}">${escapeHtml(pc.name)}${pc.level ? ` (Lv ${escapeHtml(pc.level)})` : ""}</option>`).join("") || '<option value="">Keine SCs gefunden</option>';
+      const q = (els.creatureSearch.value || "").trim().toLowerCase();
+      const shown = creatures
+        .filter(c => !q || [c.name, c.id, c.label].join(" ").toLowerCase().includes(q))
+        .slice(0, 80);
+      els.creatureOptions.innerHTML = shown.map(c => `<option value="${escapeHtml(c.id || c.name)}">${escapeHtml(c.name || c.id)}</option>`).join("");
+      els.conditionQuick.innerHTML = CONDITIONS.map(name => `<option value="${escapeHtml(name)}">${escapeHtml(name)}</option>`).join("");
+    }
+
+    function renderCombatList(){
+      if (!state.participants.length){
+        els.combatList.innerHTML = "<p>Noch keine Teilnehmer.</p>";
+        return;
+      }
+      const rows = state.participants.map((p, index) => {
+        const effects = p.effects.map(effect => `
+          <span class="tag ${effect.expired ? "expired" : ""}">
+            ${escapeHtml(effect.name)} (${escapeHtml(effect.remaining)} · ${escapeHtml(EXPIRY_LABELS[effect.expiry] || effect.expiry)})
+            <button type="button" data-remove-effect="${escapeHtml(effect.id)}" data-id="${escapeHtml(p.id)}" aria-label="Effekt entfernen">x</button>
+          </span>
+        `).join("");
+        const conditions = p.conditions.map(condition => `
+          <span class="tag">
+            ${escapeHtml(condition)}
+            <button type="button" data-remove-condition="${escapeHtml(condition)}" data-id="${escapeHtml(p.id)}" aria-label="Zustand entfernen">x</button>
+          </span>
+        `).join("");
+        return `
+          <tr class="${index === state.activeIndex ? "active" : ""} ${p.hp <= 0 ? "down" : ""}">
+            <td data-label="Name">
+              <div class="combat-name">
+                <strong>${escapeHtml(p.name)}</strong>
+                <span class="muted">${escapeHtml(p.label || p.type)}${p.ac != null ? ` · RK ${escapeHtml(p.ac)}` : ""}</span>
+                <div class="inline-actions">
+                  <button class="btn" type="button" data-current="${escapeHtml(p.id)}">Zum Zug</button>
+                  <button class="btn danger" type="button" data-remove="${escapeHtml(p.id)}">Entfernen</button>
+                </div>
+              </div>
+            </td>
+            <td data-label="Init">
+              <input class="select field-short" type="number" value="${escapeHtml(p.initiative)}" data-init="${escapeHtml(p.id)}"/>
+            </td>
+            <td data-label="HP">
+              <div class="hp-row">
+                <input class="select" type="number" value="${escapeHtml(p.hp)}" data-hp="${escapeHtml(p.id)}"/>
+                <span>/</span>
+                <input class="select" type="number" value="${escapeHtml(p.maxHp)}" data-maxhp="${escapeHtml(p.id)}"/>
+                <span>Temp</span>
+                <input class="select" type="number" min="0" value="${escapeHtml(p.tempHp)}" data-temphp="${escapeHtml(p.id)}"/>
+              </div>
+              <div class="hp-row" style="margin-top:6px;">
+                <input class="select field-short" type="number" min="0" placeholder="Wert" data-amount="${escapeHtml(p.id)}"/>
+                <button class="btn" type="button" data-damage="${escapeHtml(p.id)}">Schaden</button>
+                <button class="btn" type="button" data-heal="${escapeHtml(p.id)}">Heilung</button>
+              </div>
+            </td>
+            <td data-label="Reaktion">
+              <label class="tag"><input type="checkbox" ${p.reaction ? "checked" : ""} data-reaction="${escapeHtml(p.id)}"/> Reaktion</label>
+            </td>
+            <td data-label="Death Saves">
+              ${renderDeathSaves(p)}
+            </td>
+            <td data-label="Effekte">
+              <div class="condition-list">${conditions || '<span class="muted">Keine Zustände</span>'}</div>
+              <div class="effect-list" style="margin-top:6px;">${effects || '<span class="muted">Keine Effekte</span>'}</div>
+              <div class="concentration-list" style="margin-top:6px;">${renderConcentration(p)}</div>
+            </td>
+          </tr>
+        `;
+      }).join("");
+      els.combatList.innerHTML = `
+        <table class="combat-table">
+          <thead><tr><th>Name</th><th>Init</th><th>HP</th><th>Reaktion</th><th>Death Saves</th><th>Effekte</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      `;
+    }
+
+    function renderDeathSaves(p){
+      if (!p.deathSaves.enabled) {
+        return `<button class="btn" type="button" data-enable-death="${escapeHtml(p.id)}">Aktivieren</button>`;
+      }
+      const successDots = [1, 2, 3].map(n => `<button class="dot-btn ${p.deathSaves.successes >= n ? "on" : ""}" type="button" data-death="${escapeHtml(p.id)}" data-kind="successes" data-value="${n}">S</button>`).join("");
+      const failureDots = [1, 2, 3].map(n => `<button class="dot-btn ${p.deathSaves.failures >= n ? "on" : ""}" type="button" data-death="${escapeHtml(p.id)}" data-kind="failures" data-value="${n}">F</button>`).join("");
+      return `
+        <div class="save-dots">${successDots}</div>
+        <div class="save-dots" style="margin-top:4px;">${failureDots}</div>
+        <button class="btn" type="button" data-reset-death="${escapeHtml(p.id)}" style="margin-top:6px;">Reset</button>
+      `;
+    }
+
+    function renderConcentration(p){
+      if (!p.concentration) return '<span class="muted">Keine Konzentration</span>';
+      return `
+        <span class="tag">
+          Konzentration: ${escapeHtml(p.concentration.name)}
+          ${p.concentration.targets ? `→ ${escapeHtml(p.concentration.targets)}` : ""}
+          <button type="button" data-clear-conc="${escapeHtml(p.id)}" aria-label="Konzentration beenden">x</button>
+        </span>
+        ${p.concentration.note ? `<div class="muted">${escapeHtml(p.concentration.note)}</div>` : ""}
+      `;
+    }
+
+    function renderEffectTargets(){
+      const options = state.participants.map(p => `<option value="${escapeHtml(p.id)}">${escapeHtml(p.name)}</option>`).join("");
+      els.effectTarget.innerHTML = options;
+      els.effectSource.innerHTML = `<option value="">Keine Quelle</option>${options}`;
+    }
+
+    function renderWarnings(){
+      const concentrationWarnings = state.participants
+        .filter(p => p.concentration && p.hp <= 0)
+        .map(p => `<div class="notice">${escapeHtml(p.name)} ist bei 0 HP und konzentriert sich noch auf ${escapeHtml(p.concentration.name)}.</div>`)
+        .join("");
+      els.warnings.innerHTML = concentrationWarnings;
+    }
+
+    function renderLog(){
+      els.log.innerHTML = state.log.map(entry => `<div class="log-entry"><b>${escapeHtml(entry.at)}</b> ${escapeHtml(entry.text)}</div>`).join("") || '<div class="muted">Noch keine Einträge.</div>';
+    }
+
+    function saveRender(){
+      save();
+      render();
+    }
+
+    function findParticipant(id){
+      return state.participants.find(p => p.id === id);
+    }
+
+    function findCreature(value){
+      const q = String(value || "").trim().toLowerCase();
+      return creatures.find(c => String(c.id || "").toLowerCase() === q) || creatures.find(c => String(c.name || "").toLowerCase() === q) || creatures.find(c => String(c.name || "").toLowerCase().includes(q));
+    }
+
+    function importPending(replace){
+      if (!pendingEncounter) return;
+      if (replace) state = sanitizeState(null);
+      const byPc = new Map(pcs.map(pc => [pc.id, pc]));
+      const byCreature = new Map(creatures.map(c => [c.id, c]));
+      for (const entry of pendingEncounter.party || []){
+        const pc = byPc.get(entry.id);
+        state.participants.push(pc ? participantFromPc(pc) : participantManual(entry.name || "SC", entry.ac, entry.hp));
+      }
+      for (const entry of pendingEncounter.monsters || []){
+        const count = Math.max(1, Number(entry.count) || 1);
+        const creature = byCreature.get(entry.id) || {
+          id: entry.id,
+          name: entry.name,
+          hp: entry.hp,
+          ac: entry.ac,
+          challenge: { cr: entry.cr, xp: entry.xp },
+          abilities: {}
+        };
+        for (let i = 1; i <= count; i++) state.participants.push(participantFromCreature(creature, count > 1 ? i : 1));
+      }
+      sortParticipants();
+      addLog("Encounterbuilder-Import übernommen.");
+      pendingEncounter = null;
+      localStorage.removeItem(PENDING_KEY);
+      saveRender();
+    }
+
+    async function loadData(){
+      try {
+        const files = await loadIndex("../../data/pcs/index.json");
+        pcs = (await loadMany("../../data/pcs", files)).map(normalizePc).filter(pc => pc?.id);
+      } catch {
+        pcs = [];
+      }
+
+      try {
+        const files = await loadIndex("../../data/monsters/index.json");
+        creatures = (await loadMany("../../data/monsters", files)).map(normalizeMonster).filter(c => c?.name);
+      } catch {
+        creatures = [];
+      }
+
+      try {
+        const npcFiles = await loadIndex("../../data/monsters/npc/index.json");
+        const npcs = (await loadMany("../../data/monsters/npc", npcFiles)).map(raw => ({ ...normalizeNpc(raw), npc: true })).filter(c => c?.name);
+        creatures = creatures.concat(npcs);
+      } catch {}
+
+      creatures = creatures.map(c => ({
+        ...c,
+        id: c.id || c.slug || String(c.name || "").toLowerCase().replace(/\s+/g, "-"),
+        label: [c.npc ? "NPC" : "Monster", crValue(c) ? `HG ${crValue(c)}` : ""].filter(Boolean).join(" ")
+      })).sort((a, b) => String(a.name).localeCompare(String(b.name), "de"));
+    }
+
+    els.addPc.addEventListener("click", () => {
+      const pc = pcs.find(entry => entry.id === els.pcSelect.value);
+      if (pc) state.participants.push(participantFromPc(pc));
+      saveRender();
+    });
+    els.addAllPcs.addEventListener("click", () => {
+      for (const pc of pcs) state.participants.push(participantFromPc(pc));
+      saveRender();
+    });
+    els.creatureSearch.addEventListener("input", renderRosterControls);
+    els.addCreature.addEventListener("click", () => {
+      const creature = findCreature(els.creatureSearch.value);
+      if (creature) state.participants.push(participantFromCreature(creature));
+      saveRender();
+    });
+    els.addManual.addEventListener("click", () => {
+      state.participants.push(participantManual(els.manualName.value, els.manualAc.value, els.manualHp.value));
+      els.manualName.value = "";
+      saveRender();
+    });
+    els.startCombat.addEventListener("click", () => {
+      state.combatId = state.combatId || uid("combat");
+      state.started = true;
+      sortParticipants();
+      state.activeIndex = 0;
+      beginTurn(activeParticipant());
+      addLog("Kampf gestartet.");
+      writeCombatLog("combat_started", "Kampf gestartet.", { participants: state.participants.map(p => ({ id: p.id, name: p.name, type: p.type })) });
+      saveRender();
+    });
+    els.prevTurn.addEventListener("click", prevTurn);
+    els.nextTurn.addEventListener("click", nextTurn);
+    els.newRound.addEventListener("click", () => {
+      tickRoundEnd();
+      state.round += 1;
+      state.activeIndex = 0;
+      beginTurn(activeParticipant());
+      addLog(`Runde ${state.round} beginnt.`);
+      writeCombatLog("round_changed", `Runde ${state.round} beginnt.`);
+      saveRender();
+    });
+    els.resetCombat.addEventListener("click", () => {
+      state.round = 1;
+      state.activeIndex = 0;
+      state.started = false;
+      for (const p of state.participants) p.reaction = true;
+      addLog("Kampf zurückgesetzt.");
+      writeCombatLog("combat_ended", "Kampf beendet oder zurueckgesetzt.");
+      saveRender();
+    });
+    els.rollAll.addEventListener("click", () => {
+      for (const p of state.participants) p.initiative = rollDie(20) + dexMod(p);
+      sortParticipants();
+      saveRender();
+    });
+    els.sortInit.addEventListener("click", () => {
+      sortParticipants();
+      saveRender();
+    });
+    els.clearDefeated.addEventListener("click", () => {
+      state.participants = state.participants.filter(p => p.hp > 0);
+      state.activeIndex = clamp(state.activeIndex, 0, Math.max(0, state.participants.length - 1));
+      saveRender();
+    });
+    els.addCondition.addEventListener("click", () => {
+      const p = findParticipant(els.effectTarget.value);
+      const condition = els.conditionQuick.value;
+      if (p && condition && !p.conditions.includes(condition)){
+        p.conditions.push(condition);
+        writeCombatLog("condition_added", `${condition} bei ${p.name} hinzugefuegt.`, { target: p.name, condition });
+      }
+      saveRender();
+    });
+    els.addEffect.addEventListener("click", () => {
+      const target = findParticipant(els.effectTarget.value);
+      if (!target) return;
+      const source = findParticipant(els.effectSource.value);
+      const duration = Math.max(0, Number(els.effectDuration.value) || 0);
+      const effect = normalizeEffect({
+        name: els.effectName.value || els.conditionQuick.value || "Effekt",
+        sourceId: source?.id || "",
+        sourceName: source?.name || "",
+        targetId: target.id,
+        duration,
+        remaining: duration,
+        expiry: els.effectExpiry.value
+      });
+      target.effects.push(effect);
+      writeCombatLog("effect_added", `${effect.name} bei ${target.name} hinzugefuegt.`, { actor: source?.name || "", target: target.name, effect });
+      els.effectName.value = "";
+      saveRender();
+    });
+    els.setConcentration.addEventListener("click", () => {
+      const p = findParticipant(els.effectSource.value || els.effectTarget.value);
+      if (!p || !els.concName.value.trim()) return;
+      if (p.concentration && !confirm(`${p.name} konzentriert sich bereits auf ${p.concentration.name}. Ersetzen?`)) return;
+      p.concentration = {
+        name: els.concName.value.trim(),
+        targets: els.concTargets.value.trim(),
+        note: els.concNote.value.trim()
+      };
+      writeCombatLog("concentration_started", `${p.name} konzentriert sich auf ${p.concentration.name}.`, { actor: p.name, concentration: p.concentration });
+      els.concName.value = "";
+      els.concTargets.value = "";
+      els.concNote.value = "";
+      saveRender();
+    });
+    els.exportState.addEventListener("click", () => {
+      const blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `kampftracker-runde-${state.round}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+    els.importState.addEventListener("change", async () => {
+      const [file] = els.importState.files || [];
+      if (!file) return;
+      state = sanitizeState(JSON.parse(await file.text()));
+      saveRender();
+      els.importState.value = "";
+    });
+    els.clearState.addEventListener("click", () => {
+      if (!confirm("Aktuellen Kampf wirklich leeren?")) return;
+      state = sanitizeState(null);
+      saveRender();
+    });
+
+    document.addEventListener("click", event => {
+      const btn = event.target.closest("button");
+      if (!btn) return;
+      const importMode = btn.dataset.importPending;
+      if (importMode) importPending(importMode === "replace");
+      if (btn.dataset.dismissPending != null){
+        pendingEncounter = null;
+        localStorage.removeItem(PENDING_KEY);
+        render();
+      }
+      const id = btn.dataset.id || btn.dataset.remove || btn.dataset.current || btn.dataset.damage || btn.dataset.heal || btn.dataset.enableDeath || btn.dataset.resetDeath || btn.dataset.clearConc || btn.dataset.death;
+      const p = id ? findParticipant(id) : null;
+      if (btn.dataset.current && p){
+        state.activeIndex = state.participants.indexOf(p);
+        writeCombatLog("turn_started", `${p.name} beginnt den Zug.`, { actor: p.name });
+        saveRender();
+      }
+      if (btn.dataset.remove && p){
+        state.participants = state.participants.filter(entry => entry.id !== p.id);
+        saveRender();
+      }
+      if (btn.dataset.damage && p){
+        applyDamage(p, document.querySelector(`[data-amount="${CSS.escape(p.id)}"]`)?.value);
+        saveRender();
+      }
+      if (btn.dataset.heal && p){
+        applyHealing(p, document.querySelector(`[data-amount="${CSS.escape(p.id)}"]`)?.value);
+        saveRender();
+      }
+      if (btn.dataset.enableDeath && p){
+        p.deathSaves.enabled = true;
+        writeCombatLog("death_save_changed", `Death Saves fuer ${p.name} aktiviert.`, { target: p.name, deathSaves: p.deathSaves });
+        saveRender();
+      }
+      if (btn.dataset.resetDeath && p){
+        p.deathSaves.successes = 0;
+        p.deathSaves.failures = 0;
+        writeCombatLog("death_save_changed", `Death Saves fuer ${p.name} zurueckgesetzt.`, { target: p.name, deathSaves: p.deathSaves });
+        saveRender();
+      }
+      if (btn.dataset.death && p){
+        const kind = btn.dataset.kind;
+        p.deathSaves[kind] = p.deathSaves[kind] === Number(btn.dataset.value) ? Number(btn.dataset.value) - 1 : Number(btn.dataset.value);
+        writeCombatLog("death_save_changed", `Death Save ${kind} fuer ${p.name}: ${p.deathSaves[kind]}.`, { target: p.name, kind, deathSaves: p.deathSaves });
+        saveRender();
+      }
+      if (btn.dataset.removeCondition && p){
+        p.conditions = p.conditions.filter(condition => condition !== btn.dataset.removeCondition);
+        writeCombatLog("condition_expired", `${btn.dataset.removeCondition} bei ${p.name} entfernt.`, { target: p.name, condition: btn.dataset.removeCondition });
+        saveRender();
+      }
+      if (btn.dataset.removeEffect && p){
+        const effect = p.effects.find(effect => effect.id === btn.dataset.removeEffect);
+        p.effects = p.effects.filter(effect => effect.id !== btn.dataset.removeEffect);
+        writeCombatLog("effect_expired", `${effect?.name || "Effekt"} bei ${p.name} entfernt.`, { target: p.name, effect });
+        saveRender();
+      }
+      if (btn.dataset.clearConc && p){
+        const concentration = p.concentration;
+        p.concentration = null;
+        writeCombatLog("concentration_broken", `Konzentration von ${p.name} beendet.`, { actor: p.name, concentration });
+        saveRender();
+      }
+    });
+
+    document.addEventListener("input", event => {
+      const input = event.target;
+      const id = input.dataset.init || input.dataset.hp || input.dataset.maxhp || input.dataset.temphp;
+      if (!id) return;
+      const p = findParticipant(id);
+      if (!p) return;
+      if (input.dataset.init) p.initiative = Number(input.value) || 0;
+      if (input.dataset.hp) p.hp = Math.max(0, Number(input.value) || 0);
+      if (input.dataset.maxhp) p.maxHp = Math.max(0, Number(input.value) || 0);
+      if (input.dataset.temphp) p.tempHp = Math.max(0, Number(input.value) || 0);
+      save();
+    });
+
+    document.addEventListener("change", event => {
+      const input = event.target;
+      if (!input.dataset.reaction) return;
+      const p = findParticipant(input.dataset.reaction);
+      if (p) {
+        p.reaction = input.checked;
+        saveRender();
+      }
+    });
+
+    await loadData();
+    render();
+  </script>
+</body>
+</html>

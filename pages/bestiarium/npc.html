@@ -41,7 +41,9 @@
 
     const view = document.getElementById("view");
     const titleEl = document.getElementById("title");
-    const id = new URLSearchParams(location.search).get("id");
+    const params = new URLSearchParams(location.search);
+    const id = params.get("id");
+    const isPlayerView = params.get("view") === "player";
 
     if (!id) {
       view.innerHTML = "<p>Fehlende NSC-ID.</p>";
@@ -265,6 +267,35 @@
       }).join("");
     }
 
+    function npcActions(n){
+      const currentId = encodeURIComponent(n.id || id || n.name || "");
+      return `<div style="display:flex;gap:8px;flex-wrap:wrap;margin:12px 0;">
+        <a class="select" href="npc.html?id=${currentId}&view=${isPlayerView ? "gm" : "player"}">${isPlayerView ? "GM-Ansicht" : "Spieler-URL"}</a>
+        <a class="select" href="../werkzeuge/creature-builder.html?npc=${currentId}">Im Builder bearbeiten</a>
+      </div>`;
+    }
+
+    function isSecretValue(value, key = ""){
+      if (/^(gm_only|dm_only|secret|hidden|private)$/i.test(String(key)) && value) return true;
+      if (typeof value === "string") return /\b(GM|SL|DM|Geheimnis|Nur SL|Nur GM|privat)\b/i.test(value);
+      if (value && typeof value === "object") return Object.entries(value).some(([entryKey, entryValue]) => isSecretValue(entryValue, entryKey));
+      return false;
+    }
+
+    function renderPlayerNpc(n, subtitle){
+      const publicText = [n.public_text, n.description, n.background, n.personality, n.notes].find(value => value && !isSecretValue(value)) || "";
+      view.innerHTML = `
+        ${npcActions(n)}
+        <h1>${escapeHtml(n.name)}</h1>
+        ${subtitle ? `<p class="muted">${escapeHtml(subtitle)}</p>` : ""}
+        ${n.image || n.portrait ? `<img src="${escapeHtml(n.image || n.portrait)}" alt="${escapeHtml(n.name)}" style="max-width:260px;border-radius:8px;margin:8px 0 12px;" />` : ""}
+        <div class="mini-box">
+          <div class="mini-box-title">Öffentliches Wissen</div>
+          <div class="mini-box-text">${publicText ? renderMarkdownText(publicText, { lookups: { spell: spellLookup } }) : "Keine öffentlichen Details hinterlegt."}</div>
+        </div>
+      `;
+    }
+
     const n = await loadNpc(id);
     if (!n) {
       view.innerHTML = `<p>NSC nicht gefunden: <code>${escapeHtml(id)}</code></p>`;
@@ -274,6 +305,9 @@
     titleEl.textContent = n.name || "NSC";
 
     const subtitle = [n.race, n.role, n.faction].filter(Boolean).join(" • ");
+    if (isPlayerView) {
+      renderPlayerNpc(n, subtitle);
+    } else {
     const ab = n.abilities || {};
     const showAbilities = ["str", "dex", "con", "int", "wis", "cha"].some(k => ab?.[k] != null);
     const savesLine = Object.entries(n.saving_throws || {})
@@ -296,6 +330,7 @@
     const languagesLine = Array.isArray(n.languages) ? n.languages.join(", ") : formatList(n.languages);
 
     view.innerHTML = `
+      ${npcActions(n)}
       <h1>${escapeHtml(n.name)}</h1>
       ${subtitle ? `<p class="muted">${escapeHtml(subtitle)}</p>` : ""}
 
@@ -414,6 +449,7 @@
         </div>
       ` : ""}
     `;
+    }
   </script>
 </body>
 </html>

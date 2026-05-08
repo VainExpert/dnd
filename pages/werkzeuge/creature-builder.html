@@ -24,6 +24,7 @@
     .stat-sub{color:var(--muted);margin-bottom:10px}
     .stat-line{border-top:1px solid var(--rule);padding-top:8px;margin-top:8px}
     .json-box{min-height:300px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px}
+    .import-box{min-height:150px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px}
     .btn{padding:10px 12px;border-radius:8px;border:1px solid var(--rule);background:#0b0e16;color:var(--text);cursor:pointer}
     .btn:hover{border-color:rgba(225,91,79,.35);background:rgba(225,91,79,.12)}
     .builder-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
@@ -64,7 +65,7 @@
 
             <h2>Details</h2>
             <div class="form-grid">
-              <label class="form-field">Rettungswuerfe <input id="saves" class="select" placeholder="DEX +4, WIS +2"/></label>
+              <label class="form-field">Rettungswürfe <input id="saves" class="select" placeholder="DEX +4, WIS +2"/></label>
               <label class="form-field">Fertigkeiten <input id="skills" class="select" placeholder="Wahrnehmung +4"/></label>
               <label class="form-field">Sinne <input id="senses" class="select" placeholder="Passive Wahrnehmung 12"/></label>
               <label class="form-field">Sprachen <input id="languages" class="select" placeholder="Gemeinsprache"/></label>
@@ -72,14 +73,25 @@
 
             <h2>Eigenschaften</h2>
             <div id="traits" class="row-list"></div>
-            <div class="builder-actions" style="margin-top:8px;"><button id="addTrait" class="btn" type="button">Eigenschaft hinzufuegen</button></div>
+            <div class="builder-actions" style="margin-top:8px;"><button id="addTrait" class="btn" type="button">Eigenschaft hinzufügen</button></div>
 
             <h2>Aktionen</h2>
             <div id="actions" class="row-list"></div>
-            <div class="builder-actions" style="margin-top:8px;"><button id="addAction" class="btn" type="button">Aktion hinzufuegen</button></div>
+            <div class="builder-actions" style="margin-top:8px;"><button id="addAction" class="btn" type="button">Aktion hinzufügen</button></div>
 
             <h2>Notizen</h2>
             <textarea id="notes" class="select" rows="5"></textarea>
+
+            <h2>Import / Bearbeiten</h2>
+            <div class="choice-box">
+              <label class="form-field">JSON-Datei <input id="importFile" class="select" type="file" accept="application/json,.json"/></label>
+              <label class="form-field">JSON einfügen <textarea id="importText" class="select import-box" placeholder='{"name": "Kreatur", "armor_class": 12}'></textarea></label>
+              <div class="builder-actions">
+                <button id="importJson" class="btn" type="button">JSON importieren</button>
+                <button id="resetForm" class="btn" type="button">Formular leeren</button>
+              </div>
+              <div id="importStatus" class="muted"></div>
+            </div>
           </section>
 
           <aside class="builder-panel">
@@ -100,7 +112,7 @@
     import { escapeHtml, slugify } from "../../lib.js";
 
     const STANDARD = [15, 14, 13, 12, 10, 8];
-    const ABILITIES = [["str","STR","Staerke"],["dex","DEX","Geschick"],["con","CON","Konstitution"],["int","INT","Intelligenz"],["wis","WIS","Weisheit"],["cha","CHA","Charisma"]];
+    const ABILITIES = [["str","STR","Stärke"],["dex","DEX","Geschick"],["con","CON","Konstitution"],["int","INT","Intelligenz"],["wis","WIS","Weisheit"],["cha","CHA","Charisma"]];
     const CR_XP = {"0":10,"1/8":25,"1/4":50,"1/2":100,"1":200,"2":450,"3":700,"4":1100,"5":1800,"6":2300,"7":2900,"8":3900,"9":5000,"10":5900,"11":7200,"12":8400,"13":10000,"14":11500,"15":13000,"16":15000,"17":18000,"18":20000,"19":22000,"20":25000,"21":33000,"22":41000,"23":50000,"24":62000,"25":75000,"26":90000,"27":105000,"28":120000,"29":135000,"30":155000};
     const state = {
       abilityBase: { str:15, dex:14, con:13, int:12, wis:10, cha:8 },
@@ -124,9 +136,142 @@
       return Math.min(9, 3 + Math.floor((n - 5) / 4));
     }
     function splitList(value){ return String(value || "").split(",").map(x => x.trim()).filter(Boolean); }
+    function cleanText(value){ return String(value ?? "").trim(); }
+    function firstValue(...values){ return values.find(value => value != null && value !== ""); }
+    function asArray(value){ return Array.isArray(value) ? value : (value == null || value === "" ? [] : [value]); }
+    function listText(value){
+      if (Array.isArray(value)) return value.map(entry => typeof entry === "object" ? cleanText(entry.name || entry.note || entry.value || entry.text) : cleanText(entry)).filter(Boolean).join(", ");
+      if (value && typeof value === "object") return Object.entries(value).map(([key, entry]) => `${key.toUpperCase()} ${entry}`).join(", ");
+      return cleanText(value);
+    }
+    function speedWalk(value){
+      const speed = value?.speed ?? value?.speeds ?? value;
+      if (speed && typeof speed === "object") return Number(firstValue(speed.walk, speed.walking, speed.land, 0)) || 0;
+      const match = cleanText(speed).match(/[\d.,]+/);
+      return match ? Number(match[0].replace(",", ".")) : 0;
+    }
+    function acValue(value){
+      const ac = value?.armor_class ?? value?.ac;
+      if (Array.isArray(ac)) return Number(firstValue(ac[0]?.value, ac[0]?.ac, ac[0])) || 10;
+      if (ac && typeof ac === "object") return Number(firstValue(ac.value, ac.ac, ac.display)) || 10;
+      return Number(ac) || 10;
+    }
+    function hpValue(value){
+      const hp = value?.hit_points ?? value?.hp;
+      if (hp && typeof hp === "object") return Number(firstValue(hp.average, hp.value, hp.max)) || 1;
+      return Number(hp) || 1;
+    }
+    function hpFormula(value){
+      const hp = value?.hit_points ?? value?.hp;
+      return cleanText(firstValue(hp?.formula, hp?.hit_dice, value?.hit_dice, value?.hit_points_formula, ""));
+    }
+    function normalizeRows(value){
+      return asArray(value).map(entry => {
+        if (typeof entry === "string") return { name: "", text: entry };
+        return { name: cleanText(entry?.name || entry?.title || ""), text: cleanText(firstValue(entry?.text, entry?.desc, entry?.description, entry?.value, entry?.type, "")) };
+      }).filter(entry => entry.name || entry.text);
+    }
+    function readAbility(raw, key, abbr){
+      const source = firstValue(raw.abilities, raw.ability_scores, raw.stats, {});
+      const value = source?.[key] ?? source?.[abbr] ?? source?.[abbr.toUpperCase()] ?? raw[key] ?? raw[abbr];
+      if (value && typeof value === "object") return Number(firstValue(value.score, value.value, value.base));
+      return Number(value);
+    }
 
     function renderCrOptions(){
       $("cr").innerHTML = Object.keys(CR_XP).map(cr => `<option value="${cr}" ${cr === "1/4" ? "selected" : ""}>${cr}</option>`).join("");
+    }
+
+    function resetForm(){
+      $("name").value = "Neue Kreatur";
+      $("kind").value = "monster";
+      $("size").value = "mittel";
+      $("type").value = "Humanoid";
+      $("alignment").value = "neutral";
+      $("cr").value = "1/4";
+      $("ac").value = "12";
+      $("hp").value = "11";
+      $("hpFormula").value = "2d8 + 2";
+      $("speed").value = "9";
+      ["saves","skills","senses","languages","notes","abilitySource"].forEach(id => $(id).value = "");
+      state.abilityBase = { str:15, dex:14, con:13, int:12, wis:10, cha:8 };
+      state.abilityAdjust = { str:0, dex:0, con:0, int:0, wis:0, cha:0 };
+      state.traits = [{ name: "Besondere Eigenschaft", text: "Beschreibe hier eine passive oder besondere Regel." }];
+      state.actions = [{ name: "Angriff", text: "Nah- oder Fernkampfangriff: +4 zum Treffen, Reichweite 1,5 m oder Reichweite 18/72 m, ein Ziel. Treffer: 5 (1d6 + 2) Schaden." }];
+      render();
+    }
+
+    function applyAbilities(raw){
+      const generated = raw.ability_generation || {};
+      const base = generated.base || {};
+      const adjust = generated.adjustments || {};
+      for (const [key, abbr] of ABILITIES.map(([k, a]) => [k, a])) {
+        const score = readAbility(raw, key, abbr);
+        const baseValue = Number(firstValue(base[key], score));
+        state.abilityBase[key] = Number.isFinite(baseValue) ? Math.max(1, Math.min(30, baseValue)) : 10;
+        const adjustValue = Number(firstValue(adjust[key], score - state.abilityBase[key]));
+        state.abilityAdjust[key] = Number.isFinite(adjustValue) ? adjustValue : 0;
+      }
+      $("abilitySource").value = cleanText(generated.source || "");
+    }
+
+    function applyCreature(raw, sourceLabel = "Import"){
+      if (!raw || typeof raw !== "object") throw new Error("JSON muss ein Objekt enthalten.");
+      $("name").value = cleanText(firstValue(raw.name, "Neue Kreatur"));
+      $("kind").value = raw.npc || raw.kind === "npc" || raw.type === "npc" ? "npc" : "monster";
+      $("size").value = cleanText(firstValue(raw.size, "mittel")).toLowerCase();
+      if (![...$("size").options].some(option => option.value === $("size").value)) $("size").value = "mittel";
+      const type = raw.creature_type || raw.type?.type || raw.type || raw.subtype || "Humanoid";
+      $("type").value = cleanText(type);
+      $("alignment").value = cleanText(firstValue(raw.alignment, "neutral"));
+      const cr = String(firstValue(raw.challenge_rating, raw.challenge?.cr, raw.challenge, raw.cr, "1/4"));
+      $("cr").value = CR_XP[cr] != null ? cr : "1/4";
+      $("ac").value = acValue(raw);
+      $("hp").value = hpValue(raw);
+      $("hpFormula").value = hpFormula(raw);
+      $("speed").value = speedWalk(raw) || 9;
+      $("saves").value = listText(firstValue(raw.saving_throws, raw.saves, raw["saving-throws"], ""));
+      $("skills").value = listText(firstValue(raw.skills, ""));
+      $("senses").value = listText(firstValue(raw.senses, ""));
+      $("languages").value = listText(firstValue(raw.languages, ""));
+      $("notes").value = cleanText(firstValue(raw.notes, raw.description, raw.background, ""));
+      applyAbilities(raw);
+      state.traits = normalizeRows(firstValue(raw.traits, raw.special_abilities, raw.features, []));
+      state.actions = normalizeRows(firstValue(raw.actions, raw.action, []));
+      if (!state.traits.length) state.traits = [];
+      if (!state.actions.length) state.actions = [];
+      $("importStatus").textContent = `${sourceLabel} geladen. Export ist aktualisiert.`;
+      render();
+    }
+
+    async function importFromText(text, sourceLabel = "Import"){
+      applyCreature(JSON.parse(text), sourceLabel);
+    }
+
+    async function loadCreatureFromUrl(){
+      const params = new URLSearchParams(location.search);
+      const monsterId = params.get("monster");
+      const npcId = params.get("npc");
+      if (!monsterId && !npcId) return;
+      const wanted = npcId || monsterId;
+      const direct = npcId
+        ? [`../../data/monsters/npc/${encodeURIComponent(npcId)}.json`]
+        : [`../../data/monsters/${encodeURIComponent(monsterId)}.json`, `../../data/monsters/important/${encodeURIComponent(monsterId)}.json`];
+      let raw = null;
+      for (const url of direct) {
+        raw = await fetch(url, { cache: "no-cache" }).then(res => res.ok ? res.json() : null).catch(() => null);
+        if (raw) break;
+      }
+      if (!raw) {
+        const indexUrl = npcId ? "../../data/monsters/npc/index.json" : "../../data/monsters/index.json";
+        const base = npcId ? "../../data/monsters/npc" : "../../data/monsters";
+        const index = await fetch(indexUrl, { cache: "no-cache" }).then(res => res.ok ? res.json() : { files: [] }).catch(() => ({ files: [] }));
+        const files = Array.isArray(index) ? index : (index.files || []);
+        const match = files.find(file => slugify(file.replace(/\.json$/i, "").split("/").pop()) === slugify(wanted));
+        if (match) raw = await fetch(`${base}/${match}`, { cache: "no-cache" }).then(res => res.ok ? res.json() : null);
+      }
+      if (!raw) throw new Error(`Kreatur nicht gefunden: ${wanted}`);
+      applyCreature(raw, npcId ? `NSC ${npcId}` : `Monster ${monsterId}`);
     }
 
     function renderAbilities(){
@@ -244,7 +389,7 @@
           <div class="stat-sub">${escapeHtml(creature.size)} ${escapeHtml(creature.creature_type)}, ${escapeHtml(creature.alignment)}${creature.npc ? " - NSC" : ""}</div>
           <div><b>RK</b> ${escapeHtml(creature.armor_class.value)} | <b>TP</b> ${escapeHtml(creature.hit_points.average)} (${escapeHtml(creature.hit_points.formula)}) | <b>Bewegung</b> ${escapeHtml(creature.speed.walk)} m</div>
           <div class="pillbar" style="margin-top:8px;">${abilityLine}</div>
-          <div class="stat-line"><b>Rettungswuerfe</b> ${escapeHtml(creature.saving_throws || "-")}</div>
+          <div class="stat-line"><b>Rettungswürfe</b> ${escapeHtml(creature.saving_throws || "-")}</div>
           <div><b>Fertigkeiten</b> ${escapeHtml(creature.skills || "-")}</div>
           <div><b>Sinne</b> ${escapeHtml(creature.senses.join(", ") || "-")}</div>
           <div><b>Sprachen</b> ${escapeHtml(creature.languages.join(", ") || "-")}</div>
@@ -284,7 +429,27 @@
     $("addTrait").addEventListener("click", () => { state.traits.push({ name: "", text: "" }); render(); });
     $("addAction").addEventListener("click", () => { state.actions.push({ name: "", text: "" }); render(); });
     $("download").addEventListener("click", downloadJson);
+    $("resetForm").addEventListener("click", resetForm);
+    $("importJson").addEventListener("click", async () => {
+      try {
+        await importFromText($("importText").value, "Textarea-JSON");
+      } catch (err) {
+        $("importStatus").textContent = `Import fehlgeschlagen: ${err.message || err}`;
+      }
+    });
+    $("importFile").addEventListener("change", async event => {
+      const file = event.currentTarget.files?.[0];
+      if (!file) return;
+      try {
+        const text = await file.text();
+        $("importText").value = text;
+        await importFromText(text, file.name);
+      } catch (err) {
+        $("importStatus").textContent = `Import fehlgeschlagen: ${err.message || err}`;
+      }
+    });
     render();
+    await loadCreatureFromUrl().catch(err => { $("importStatus").textContent = err.message || String(err); });
   </script>
 </body>
 </html>

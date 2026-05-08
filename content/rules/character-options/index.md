@@ -1,6 +1,6 @@
 # Charakter-Optionen
 
-[Sammlung öffnen](pages/charakteroptionen/options.html)
+[Sammlung öffnen](../../../pages/charakteroptionen/options.html)
 
 ## Erlaubtes
 

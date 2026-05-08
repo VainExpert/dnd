@@ -21,9 +21,9 @@
         <div class="group">
           <div class="group-title">Start</div>
           <a href="../index.html">Startseite</a>
-          <a href="../index.html#content/house-rules/index.md">Hausregeln</a>
+          <a href="../index.html#content/rules/house-rules/index.md">Hausregeln</a>
           <a href="../index.html#content/safety/index.md">Sicherheit</a>
-          <a href="../index.html#content/character-options/index.md">Charakteroptionen</a>
+          <a href="../index.html#content/rules/character-options/index.md">Charakteroptionen</a>
           <a href="../index.html#content/recaps/index.md">Rückblicke</a>
         </div>
 
@@ -184,7 +184,7 @@
           <h2 class="map-group-title">${escapeHtml(groupTitle)}</h2>
           <div class="map-grid">
             ${items.map(m => `
-              <button class="map-thumb" data-file="${escapeHtml(m.file)}" title="${escapeHtml(m.title)}">
+              <div class="map-thumb" role="button" tabindex="0" data-file="${escapeHtml(m.file)}" title="${escapeHtml(m.title)}">
                 <img loading="lazy" decoding="async" src="../assets/maps/${escapeHtml(m.file)}" alt="" />
                 <div class="map-cap">
                   <div class="map-cap-title">${escapeHtml(m.title)}</div>
@@ -192,8 +192,9 @@
                     ${escapeHtml((m.tags || []).slice(0, 3).join(", "))}
                     ${getSizeLabel(m) ? ` • ${escapeHtml(getSizeLabel(m))}` : ""}
                   </div>
+                  <a class="home-btn" data-vtt-link href="./werkzeuge/vtt-map.html?map=${encodeURIComponent(m.file)}" style="margin-top:8px; min-height:32px;">Im Kartenmodus &ouml;ffnen</a>
                 </div>
-              </button>
+              </div>
             `).join("")}
           </div>
         </div>
@@ -206,6 +207,16 @@
           const m = byFile.get(file);
           if (m) openMap(m);
         });
+        btn.addEventListener("keydown", event => {
+          if (event.key !== "Enter" && event.key !== " ") return;
+          event.preventDefault();
+          const file = btn.getAttribute("data-file");
+          const m = byFile.get(file);
+          if (m) openMap(m);
+        });
+      });
+      gallery.querySelectorAll("[data-vtt-link]").forEach(link => {
+        link.addEventListener("click", event => event.stopPropagation());
       });
     }
 

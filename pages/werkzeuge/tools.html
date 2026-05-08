@@ -142,6 +142,8 @@
       <div class="content" style="max-width:1100px;">
       <h1>Ersteller</h1>
       <div class="tool-row" style="margin-bottom:18px;">
+        <a class="btn" href="./gm-screen.html">GM Screen</a>
+        <a class="btn" href="./inventory.html">Inventar</a>
         <a class="btn" href="./character-builder.html">Charakter erstellen</a>
         <a class="btn" href="./creature-builder.html">NSC/Monster erstellen</a>
       </div>
@@ -153,7 +155,7 @@
           <div class="mini-box-text">
             <div class="tool-row">
               <select id="pcSelect" class="select"></select>
-              <button id="addPc" class="btn">SC hinzufuegen</button>
+              <button id="addPc" class="btn">SC hinzufügen</button>
               <button id="addAllPcs" class="btn">Alle SCs</button>
               <button id="clearPcs" class="btn">Leeren</button>
             </div>
@@ -203,8 +205,9 @@
               <input id="monsterSearch" class="select" type="search" placeholder="Monster suchen..." />
             </label>
             <div class="tool-row">
-              <button id="gen" class="btn">Budget fuellen</button>
-              <button id="addMonster" class="btn">Monster hinzufuegen</button>
+              <button id="gen" class="btn">Budget füllen</button>
+              <button id="addMonster" class="btn">Monster hinzufügen</button>
+              <button id="sendToCombat" class="btn">In Kampftracker übernehmen</button>
               <button id="clearEncounter" class="btn">Encounter leeren</button>
             </div>
           </div>
@@ -225,7 +228,7 @@
               </select>
             </label>
             <label>
-              HG / Anfuehrer-HG
+              HG / Anführer-HG
               <select id="lootCr" class="select">
                 <option>0</option><option>1/8</option><option>1/4</option><option>1/2</option>
                 <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
@@ -253,9 +256,9 @@
           <div class="loot-actions">
             <label class="checkbox-row">
               <input id="lootMagicToggle" type="checkbox" checked />
-              High-Begegnungen mit gewoehnlichen/ungewoehnlichen magischen Items anreichern
+              High-Begegnungen mit gewöhnlichen/ungewöhnlichen magischen Items anreichern
             </label>
-            <button id="lootUseEncounter" class="btn">Encounter uebernehmen</button>
+            <button id="lootUseEncounter" class="btn">Encounter übernehmen</button>
             <button id="lootGenerate" class="btn">Loot generieren</button>
           </div>
 
@@ -266,15 +269,12 @@
       <h2 style="margin-top:26px;">Zufallstabellen</h2>
       <div class="tool-row">
         <select id="table" class="select"></select>
-        <button id="roll" class="btn">Wuerfeln</button>
+        <button id="roll" class="btn">Würfeln</button>
       </div>
       <div id="result" style="margin-top:12px;"></div>
       </div>
     </main>
   </div>
-
-  <script src="../../data/tables/tables-global.js?v=3"></script>
-
   <script type="module">
     import { loadIndex, loadMany, escapeHtml, normalizeItem, normalizeTable, rollTableEntry, renderTableHtml } from "../../lib.js";
     import { TABLE_FILES, TABLE_DATA_BY_FILE } from "../../data/tables/tables-data.js?v=3";
@@ -303,7 +303,7 @@
       const name = tableSel.value;
       const t = tables.find(x => (x.id || x.name) === name);
       if (!t){
-        resultEl.innerHTML = "<p>Keine Eintraege.</p>";
+        resultEl.innerHTML = "<p>Keine Einträge.</p>";
         return;
       }
       const r = rollTableEntry(t);
@@ -373,6 +373,7 @@
     const monsterSearchEl = document.getElementById("monsterSearch");
     const genBtn = document.getElementById("gen");
     const addMonsterBtn = document.getElementById("addMonster");
+    const sendToCombatBtn = document.getElementById("sendToCombat");
     const clearEncounterBtn = document.getElementById("clearEncounter");
     const encEl = document.getElementById("enc");
     const lootModeEl = document.getElementById("lootMode");
@@ -419,18 +420,34 @@
     }
 
     function getMonsterId(m){
-      return m.id || m.slug || m.name || "";
+      return m?.id || m?.slug || m?.name || "";
     }
 
     function getCR(m){
+      if (!m) return "";
       const v = (m.challenge && typeof m.challenge === "object") ? (m.challenge.cr ?? "") : (m.challenge ?? "");
       return String(v ?? "").trim();
     }
 
     function getMonsterXp(m){
+      if (!m) return 0;
       const direct = Number(String(m.xp ?? m.challenge?.xp ?? "").replace(/[^\d.-]/g, ""));
       if (Number.isFinite(direct) && direct > 0) return direct;
       return CR_XP[getCR(m)] ?? 0;
+    }
+
+    function getMonsterHp(m){
+      if (!m) return null;
+      const raw = m.hp?.average ?? m.hp ?? m.hit_points?.average ?? "";
+      const value = Number(String(raw).replace(/[^\d.-]/g, ""));
+      return Number.isFinite(value) && value > 0 ? value : null;
+    }
+
+    function getMonsterAc(m){
+      if (!m) return null;
+      const raw = m.ac ?? m.armor_class?.value ?? "";
+      const value = Number(String(raw).replace(/[^\d.-]/g, ""));
+      return Number.isFinite(value) && value > 0 ? value : null;
     }
 
     function parseCrValue(cr){
@@ -537,7 +554,7 @@
       if (totalXp <= budget.low) return "Low";
       if (totalXp <= budget.moderate) return "Moderate";
       if (totalXp <= budget.high) return "High";
-      return "Ueber High";
+      return "Über High";
     }
 
     function encounterStats(){
@@ -581,20 +598,20 @@
     }
 
     function rollMagicItemsForBand(band, count){
-      const commonPool = magicItemsByRarity("gewoehnlich");
-      const uncommonPool = magicItemsByRarity("ungewoehnlich");
+      const commonPool = magicItemsByRarity("gewöhnlich");
+      const uncommonPool = magicItemsByRarity("ungewöhnlich");
       const picked = [];
       const usedIds = new Set();
 
       for (let i = 0; i < count; i++){
         const roll = Math.random();
-        let rarity = "ungewoehnlich";
-        if (band === LOOT_TABLE_2024[0]) rarity = roll < 0.65 ? "gewoehnlich" : "ungewoehnlich";
-        else if (band === LOOT_TABLE_2024[5]) rarity = roll < 0.35 ? "gewoehnlich" : "ungewoehnlich";
-        else rarity = roll < 0.15 ? "gewoehnlich" : "ungewoehnlich";
+        let rarity = "ungewöhnlich";
+        if (band === LOOT_TABLE_2024[0]) rarity = roll < 0.65 ? "gewöhnlich" : "ungewöhnlich";
+        else if (band === LOOT_TABLE_2024[5]) rarity = roll < 0.35 ? "gewöhnlich" : "ungewöhnlich";
+        else rarity = roll < 0.15 ? "gewöhnlich" : "ungewöhnlich";
 
-        const primaryPool = (rarity === "gewoehnlich" ? commonPool : uncommonPool).filter(item => !usedIds.has(item.id));
-        const fallbackPool = (rarity === "gewoehnlich" ? uncommonPool : commonPool).filter(item => !usedIds.has(item.id));
+        const primaryPool = (rarity === "gewöhnlich" ? commonPool : uncommonPool).filter(item => !usedIds.has(item.id));
+        const fallbackPool = (rarity === "gewöhnlich" ? uncommonPool : commonPool).filter(item => !usedIds.has(item.id));
         const [item] = pickUniqueItems(primaryPool.length ? primaryPool : fallbackPool, 1);
         if (item){
           picked.push(item);
@@ -627,8 +644,8 @@
               </div>
               <p><b>Gold:</b> ${fmtNumber(gp)} GM</p>
               <p class="muted">${escapeHtml(mode === "individual"
-                ? `Durchschnittliche 2024-Einzelbeute fuer ${creatureCount} Kreatur${creatureCount === 1 ? "" : "en"}.`
-                : "Durchschnittlicher 2024-Schatzhort bzw. eine Questbelohnung fuer dieses HG-Band.")}</p>
+                ? `Durchschnittliche 2024-Einzelbeute für ${creatureCount} Kreatur${creatureCount === 1 ? "" : "en"}.`
+                : "Durchschnittlicher 2024-Schatzhort bzw. eine Questbelohnung für dieses HG-Band.")}</p>
             </div>
           </div>
           <div class="mini-box" style="margin:0;">
@@ -642,8 +659,8 @@
                           <div class="muted">${escapeHtml(item.rarity || "magisch")}${item.requires_attunement ? " • Bindung" : ""}</div>
                         </div>
                       `).join("")}</div>`
-                    : "<p>Es konnten keine passenden magischen Gegenstaende aus der lokalen Item-Liste geladen werden.</p>")
-                : "<p>Keine magischen Items: Extras werden nur fuer High-Begegnungen hinzugefuegt.</p>"}
+                    : "<p>Es konnten keine passenden magischen Gegenstände aus der lokalen Item-Liste geladen werden.</p>")
+                : "<p>Keine magischen Items: Extras werden nur für High-Begegnungen hinzugefügt.</p>"}
             </div>
           </div>
         </div>
@@ -717,7 +734,7 @@
               <button class="btn" type="button" data-remove-pc="${escapeHtml(p.id)}" aria-label="SC entfernen">×</button>
             </span>
           `).join("")
-        : '<span class="muted">Keine SCs ausgewaehlt; der manuelle Gruppenwert wird verwendet.</span>';
+        : '<span class="muted">Keine SCs ausgewählt; der manuelle Gruppenwert wird verwendet.</span>';
 
       for (const btn of partyListEl.querySelectorAll("[data-remove-pc]")){
         btn.addEventListener("click", () => {
@@ -781,7 +798,7 @@
               <span class="pill"><b>Rest</b> ${fmtNumber(remaining)} EP</span>
             </div>
             ${extraHtml}
-            ${rows ? `<div class="encounter-list">${rows}</div>` : "<p>Noch keine Monster ausgewaehlt.</p>"}
+            ${rows ? `<div class="encounter-list">${rows}</div>` : "<p>Noch keine Monster ausgewählt.</p>"}
           </div>
         </div>
       `;
@@ -806,9 +823,42 @@
       const stats = encounterStats();
       lootCrEl.value = getCR(stats.leader) || "0";
       lootCreatureCountEl.value = String(Math.max(1, stats.totalCount || 1));
+      if (!stats.totalCount){
+        lootDifficultyEl.value = lootDifficultyEl.value || "low";
+        return;
+      }
       lootDifficultyEl.value = stats.classification === "Low"
         ? "low"
         : (stats.classification === "Moderate" ? "moderate" : "high");
+    }
+
+    function sendEncounterToCombatTracker(){
+      const payload = {
+        version: 1,
+        createdAt: new Date().toISOString(),
+        source: "encounter-builder",
+        party: getSelectedPcs().map(p => ({
+          id: p.id,
+          name: p.name,
+          level: p.level,
+          class: p.class || "",
+          player: p.player || "",
+          hp: Number(p.hp) || null,
+          ac: Number(p.ac) || null
+        })),
+        monsters: encounter.map(entry => ({
+          id: entry.id,
+          name: entry.monster?.name || entry.id || "Monster",
+          count: Math.max(1, Number(entry.count) || 1),
+          cr: getCR(entry.monster),
+          xp: getMonsterXp(entry.monster),
+          hp: getMonsterHp(entry.monster),
+          ac: getMonsterAc(entry.monster)
+        }))
+      };
+
+      localStorage.setItem("dnd.pendingCombatEncounter", JSON.stringify(payload));
+      location.href = "./combat-tracker.html#import";
     }
 
     function updateLootCreatureInput(){
@@ -848,6 +898,7 @@
       }
       addEncounterMonster(pool[0], 1);
     });
+    sendToCombatBtn.addEventListener("click", sendEncounterToCombatTracker);
     clearEncounterBtn.addEventListener("click", () => {
       encounter = [];
       renderEncounter();
@@ -872,49 +923,6 @@
     genBtn.addEventListener("click", generate);
     syncLootControlsFromEncounter();
     renderLoot();
-  </script>
-
-  <script>
-    (function(){
-      const api = window.DND_TABLES;
-      const tableSel = document.getElementById("table");
-      const rollBtn = document.getElementById("roll");
-      const resultEl = document.getElementById("result");
-      if (!api || !tableSel || !rollBtn || !resultEl) return;
-      tableSel.innerHTML = "";
-
-      const tables = (api.files || [])
-        .map(file => api.normalizeTable(api.dataByFile[file], file.replace(/\.json$/i, "")))
-        .filter(Boolean);
-
-      for (const table of tables){
-        const opt = document.createElement("option");
-        opt.value = table.id || table.name;
-        opt.textContent = table.name;
-        tableSel.appendChild(opt);
-      }
-
-      function render(){
-        const selected = tableSel.value;
-        const table = tables.find(entry => (entry.id || entry.name) === selected);
-        if (!table){
-          resultEl.innerHTML = "<p>Keine Eintraege.</p>";
-          return;
-        }
-        const rolled = api.rollTableEntry(table);
-        resultEl.innerHTML = `
-          <div class="mini-box">
-            <div class="mini-box-title">${api.escapeHtml(table.name)}${table.dice ? ` (${api.escapeHtml(table.dice)})` : ""}${rolled.roll != null ? ` • Wurf ${api.escapeHtml(String(rolled.roll))}` : ""}</div>
-            <div class="mini-box-text">
-              ${api.renderTableHtml(table, rolled)}
-            </div>
-          </div>
-        `;
-      }
-
-      rollBtn.addEventListener("click", render);
-      render();
-    })();
   </script>
 </body>
 </html>

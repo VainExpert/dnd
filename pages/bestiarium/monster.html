@@ -42,7 +42,9 @@
 
     const view = document.getElementById("view");
     const titleEl = document.getElementById("title");
-    const id = new URLSearchParams(location.search).get("id");
+    const params = new URLSearchParams(location.search);
+    const id = params.get("id");
+    const isPlayerView = params.get("view") === "player";
 
     if (!id) {
       view.innerHTML = "<p>Fehlende Monster-ID.</p>";
@@ -179,6 +181,35 @@
       }).join("");
     }
 
+    function monsterActions(m){
+      const currentId = encodeURIComponent(m.id || id || m.name || "");
+      return `<div style="display:flex;gap:8px;flex-wrap:wrap;margin:12px 0;">
+        <a class="select" href="monster.html?id=${currentId}&view=${isPlayerView ? "gm" : "player"}">${isPlayerView ? "GM-Ansicht" : "Spieler-URL"}</a>
+        <a class="select" href="../werkzeuge/creature-builder.html?monster=${currentId}">Im Builder bearbeiten</a>
+      </div>`;
+    }
+
+    function isSecretValue(value, key = ""){
+      if (/^(gm_only|dm_only|secret|hidden|private)$/i.test(String(key)) && value) return true;
+      if (typeof value === "string") return /\b(GM|SL|DM|Geheimnis|Nur SL|Nur GM|privat)\b/i.test(value);
+      if (value && typeof value === "object") return Object.entries(value).some(([entryKey, entryValue]) => isSecretValue(entryValue, entryKey));
+      return false;
+    }
+
+    function renderPlayerMonster(m, typeLine){
+      const publicText = [m.public_text, m.description, m.lore, m.notes].find(value => value && !isSecretValue(value)) || "";
+      view.innerHTML = `
+        ${monsterActions(m)}
+        <h1>${escapeHtml(m.name)}</h1>
+        <p class="muted">${escapeHtml(typeLine)}</p>
+        ${m.image || m.portrait ? `<img src="${escapeHtml(m.image || m.portrait)}" alt="${escapeHtml(m.name)}" style="max-width:260px;border-radius:8px;margin:8px 0 12px;" />` : ""}
+        <div class="mini-box">
+          <div class="mini-box-title">Öffentliches Wissen</div>
+          <div class="mini-box-text">${publicText ? renderRichText(publicText, { lookups: { spell: spellLookup } }) : "Keine öffentlichen Details hinterlegt."}</div>
+        </div>
+      `;
+    }
+
     try {
       const m = await loadMonster(id);
 
@@ -191,6 +222,10 @@
 
       const ab = m.abilities || {};
       const typeLine = `${m.size || "—"} ${m.type?.type || "—"}, ${m.alignment || "—"}`;
+
+      if (isPlayerView) {
+        renderPlayerMonster(m, typeLine);
+      } else {
 
       const defenses = [];
       const vul = formatList(m.damage_vulnerabilities);
@@ -214,6 +249,7 @@
       }).join("");
 
       view.innerHTML = `
+        ${monsterActions(m)}
         <h1>${escapeHtml(m.name)}</h1>
         <p class="muted">${escapeHtml(typeLine)}</p>
 
@@ -283,6 +319,7 @@
           ${m.source ? ` • <b>Quelle:</b> ${escapeHtml(typeof m.source === "string" ? m.source : "homebrew")}` : ""}
         </p>
       `;
+      }
     } catch (error) {
       if (!view.innerHTML.trim()) {
         view.innerHTML = `<p>Fehler beim Laden des Monsters: <code>${escapeHtml(id)}</code></p>`;

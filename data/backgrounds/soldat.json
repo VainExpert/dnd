@@ -6,17 +6,14 @@
   "rules_version": "2024",
   "source": "Player's Handbook",
   "source_url": "http://dnd2024.wikidot.com/background:soldier",
-  "source_page": "dnd2024.wikidot.com",
   "license": {
     "name": "Creative Commons Attribution-ShareAlike 3.0 License",
     "spdx": "CC-BY-SA-3.0",
     "url": "https://creativecommons.org/licenses/by-sa/3.0/"
   },
-  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
-  "category": "Hintergruende",
-  "group": "Gewoehnlich",
+  "category": "Hintergründe",
+  "group": "Gewöhnlich",
   "prerequisites": [],
-  "summary": "Sie haben mit der Kriegsvorbereitung begonnen, als Sie das Erwachsenenalter erreichten, und haben nur wenige Erinnerungen an das Leben vor Ihrem Angriff auf die Waffen. Der Kampf liegt dir im Blut. Manchmal ertappt man sich dabei, dass man reflexartig die grundlegenden Kampfübungen ausführt, die man zuerst gelernt hat. Schließlich setzen Sie diese Ausbildung auf dem Schlachtfeld ein und schützen das Reich, indem Sie Krieg führen.",
   "entries": [
     {
       "type": "paragraph",
@@ -24,10 +21,22 @@
     },
     {
       "type": "paragraph",
-      "text": "Fähigkeitswerte: Stärke, Geschicklichkeit, Konstitution Talent: Wilder Angreifer Fertigkeiten: Athletik und Einschüchterung Werkzeugkompetenz: Wählen Sie eine Art Spielset. Ausrüstung: Wählen Sie A oder B: (A) Speer, Kurzbogen, 20 Pfeile, Spielset (wie oben), Heilerausrüstung, Köcher, Kleidung des Reisenden, 14 GP; oder (B) 50 GP"
+      "text": "Fähigkeitswerte: Stärke, Geschicklichkeit, Konstitution Talent: Brutaler Angreifer Fertigkeiten: Athletik und Einschüchtern Werkzeugkompetenz: Wählen Sie eine Art Spielset. Ausrüstung: Wählen Sie A oder B: (A) Speer, Kurzbogen, 20 Pfeile, Spielset (wie oben), Heilerausrüstung, Köcher, Reisekleidung, 14 GM; oder (B) 50 GM"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2014-Merkmale"
+    },
+    {
+      "type": "paragraph",
+      "text": "Militaerische Rolle: Bestimme, welche Rolle du in deiner Einheit hattest, etwa Offizier, Kundschafter, Infanterist, Kavallerist, Heiler, Quartiermeister, Standartentraeger oder Unterstuetzung wie Koch oder Schmied."
+    },
+    {
+      "type": "paragraph",
+      "text": "Militaerrang: Du fuehrst einen Rang aus deiner militaerischen Laufbahn. Angehoerige deiner frueheren Organisation erkennen deine Autoritaet eher an, besonders wenn sie niedriger rangieren. Du kannst deinen Rang nutzen, um Einfluss auf Soldaten zu nehmen, einfache Ausruestung oder Reittiere zeitweise anzufordern und Zugang zu befreundeten Lagern oder Festungen zu erhalten."
     }
   ],
-  "text": "Sie haben mit der Kriegsvorbereitung begonnen, als Sie das Erwachsenenalter erreichten, und haben nur wenige Erinnerungen an das Leben vor Ihrem Angriff auf die Waffen. Der Kampf liegt dir im Blut. Manchmal ertappt man sich dabei, dass man reflexartig die grundlegenden Kampfübungen ausführt, die man zuerst gelernt hat. Schließlich setzen Sie diese Ausbildung auf dem Schlachtfeld ein und schützen das Reich, indem Sie Krieg führen.\n\nFähigkeitswerte: Stärke, Geschicklichkeit, Konstitution Talent: Wilder Angreifer Fertigkeiten: Athletik und Einschüchterung Werkzeugkompetenz: Wählen Sie eine Art Spielset. Ausrüstung: Wählen Sie A oder B: (A) Speer, Kurzbogen, 20 Pfeile, Spielset (wie oben), Heilerausrüstung, Köcher, Kleidung des Reisenden, 14 GP; oder (B) 50 GP",
   "tags": [],
   "ability_scores": [
     "str",
@@ -48,17 +57,17 @@
   },
   "skill_proficiencies": [
     "Athletik",
-    "Einschuechterung"
+    "Einschüchtern"
   ],
   "tool_proficiencies": [
-    "Wählen Sie eine Art Spielset"
+    "Spielset (Wähle eine Art)"
   ],
   "language_choices": {
     "choose": 0,
     "options": []
   },
-  "granted_feat_id": "wilder-angreifer",
-  "granted_feat_name": "Wilder Angreifer",
+  "granted_feat_id": "brutaler-angreifer",
+  "granted_feat_name": "Brutaler Angreifer",
   "modifiers": [],
   "choice_sets": [],
   "spellcasting": {
@@ -68,7 +77,43 @@
   },
   "starting_equipment": [
     {
-      "text": "Wählen Sie A oder B: (A) Speer, Kurzbogen, 20 Pfeile, Spielset (wie oben), Heilerausrüstung, Köcher, Kleidung des Reisenden, 14 GP; oder (B) 50 GP"
+      "text": "Wählen Sie A oder B: (A) Speer, Kurzbogen, 20 Pfeile, Spielset (wie oben), Heilerausrüstung, Köcher, Reisekleidung, 14 GM; oder (B) 50 GM",
+      "a": {
+        "granted_item_ids": [
+          "[[item:speer]]",
+          "[[item:kruzbogen]]",
+          "[[item:koecher|Koecher mit 20 Pfeilen]]",
+          "[[item:heilerausruestung]]",
+          "[[item:reisekleidung]]",
+          "[[item:beutel|Beutel mit 14 GM]]"
+        ]
+      },
+      "b": {
+        "granted_item_ids": [
+          "[[item:beutel|Beutel mit 50 GM]]"
+        ]
+      }
     }
-  ]
+  ],
+  "legacy_features": [
+    {
+      "id": "specialty",
+      "name": "Militaerische Rolle",
+      "original_name": "Specialty",
+      "text": "Bestimme, welche Rolle du in deiner Einheit hattest, etwa Offizier, Kundschafter, Infanterist, Kavallerist, Heiler, Quartiermeister, Standartentraeger oder Unterstuetzung wie Koch oder Schmied.",
+      "source": "Player's Handbook 2014",
+      "source_url": "https://dnd5e.wikidot.com/background:soldier",
+      "rules_version": "2014"
+    },
+    {
+      "id": "military-rank",
+      "name": "Militaerrang",
+      "original_name": "Military Rank",
+      "text": "Du fuehrst einen Rang aus deiner militaerischen Laufbahn. Angehoerige deiner frueheren Organisation erkennen deine Autoritaet eher an, besonders wenn sie niedriger rangieren. Du kannst deinen Rang nutzen, um Einfluss auf Soldaten zu nehmen, einfache Ausruestung oder Reittiere zeitweise anzufordern und Zugang zu befreundeten Lagern oder Festungen zu erhalten.",
+      "source": "Player's Handbook 2014",
+      "source_url": "https://dnd5e.wikidot.com/background:soldier",
+      "rules_version": "2014"
+    }
+  ],
+  "text": "Sie haben mit der Kriegsvorbereitung begonnen, als Sie das Erwachsenenalter erreichten, und haben nur wenige Erinnerungen an das Leben vor Ihrem Angriff auf die Waffen. Der Kampf liegt dir im Blut. Manchmal ertappt man sich dabei, dass man reflexartig die grundlegenden Kampfübungen ausführt, die man zuerst gelernt hat. Schließlich setzen Sie diese Ausbildung auf dem Schlachtfeld ein und schützen das Reich, indem Sie Krieg führen.\n\nFähigkeitswerte: Stärke, Geschicklichkeit, Konstitution Talent: Brutaler Angreifer Fertigkeiten: Athletik und Einschüchtern Werkzeugkompetenz: Wählen Sie eine Art Spielset. Ausrüstung: Wählen Sie A oder B: (A) Speer, Kurzbogen, 20 Pfeile, Spielset (wie oben), Heilerausrüstung, Köcher, Reisekleidung, 14 GM; oder (B) 50 GM\n\n2014-Merkmale\n\nMilitaerische Rolle: Bestimme, welche Rolle du in deiner Einheit hattest, etwa Offizier, Kundschafter, Infanterist, Kavallerist, Heiler, Quartiermeister, Standartentraeger oder Unterstuetzung wie Koch oder Schmied.\n\nMilitaerrang: Du fuehrst einen Rang aus deiner militaerischen Laufbahn. Angehoerige deiner frueheren Organisation erkennen deine Autoritaet eher an, besonders wenn sie niedriger rangieren. Du kannst deinen Rang nutzen, um Einfluss auf Soldaten zu nehmen, einfache Ausruestung oder Reittiere zeitweise anzufordern und Zugang zu befreundeten Lagern oder Festungen zu erhalten."
 }

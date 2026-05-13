@@ -6,17 +6,14 @@
   "rules_version": "2024",
   "source": "Player's Handbook",
   "source_url": "http://dnd2024.wikidot.com/background:wayfarer",
-  "source_page": "dnd2024.wikidot.com",
   "license": {
     "name": "Creative Commons Attribution-ShareAlike 3.0 License",
     "spdx": "CC-BY-SA-3.0",
     "url": "https://creativecommons.org/licenses/by-sa/3.0/"
   },
-  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
-  "category": "Hintergruende",
-  "group": "Gewoehnlich",
+  "category": "Hintergründe",
+  "group": "Gewöhnlich",
   "prerequisites": [],
-  "summary": "Sie sind auf der Straße aufgewachsen, umgeben von ähnlich unglückseligen Ausgestoßenen, von denen einige Freunde und einige Rivalen waren. Du hast geschlafen, wo du konntest, und hast Gelegenheitsarbeiten erledigt, um Essen zu bekommen. Manchmal, wenn der Hunger unerträglich wurde, griffen Sie zum Diebstahl. Dennoch haben Sie nie Ihren Stolz verloren und die Hoffnung nie aufgegeben. Das Schicksal ist mit dir noch nicht fertig.",
   "entries": [
     {
       "type": "paragraph",
@@ -24,10 +21,18 @@
     },
     {
       "type": "paragraph",
-      "text": "Fähigkeitswerte: Geschicklichkeit, Weisheit, Charisma Talent: Glücksfertigkeit Fertigkeiten: Einsicht und Heimlichkeit Werkzeugkompetenz: Diebeswerkzeuge Ausrüstung: Wählen Sie A oder B: (A) 2 Dolche, Diebeswerkzeuge, Spielset (beliebig), Schlafsack, 2 Beutel, Reisekleidung, 16 GP; oder (B) 50 GP"
+      "text": "Fähigkeitswerte: Geschicklichkeit, Weisheit, Charisma Talent: Glück Fertigkeiten: Motiv erkennen und Heimlichkeit Werkzeugkompetenz: Diebeswerkzeuge Ausrüstung: Wählen Sie A oder B: (A) 2 Dolche, Diebeswerkzeuge, Spielset (beliebig), Schlafsack, 2 Beutel, Reisekleidung, 16 GM; oder (B) 50 GM"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2014-Merkmale"
+    },
+    {
+      "type": "paragraph",
+      "text": "Geheimnisse der Stadt: Du kennst die verborgenen Muster, Abkuerzungen und Nebenwege von Staedten. Ausserhalb von Kaempfen kannst du dich und Gefaehrten, die du fuehrst, zwischen zwei Orten innerhalb einer Stadt etwa doppelt so schnell bewegen, wie es auf normalen Wegen moeglich waere."
     }
   ],
-  "text": "Sie sind auf der Straße aufgewachsen, umgeben von ähnlich unglückseligen Ausgestoßenen, von denen einige Freunde und einige Rivalen waren. Du hast geschlafen, wo du konntest, und hast Gelegenheitsarbeiten erledigt, um Essen zu bekommen. Manchmal, wenn der Hunger unerträglich wurde, griffen Sie zum Diebstahl. Dennoch haben Sie nie Ihren Stolz verloren und die Hoffnung nie aufgegeben. Das Schicksal ist mit dir noch nicht fertig.\n\nFähigkeitswerte: Geschicklichkeit, Weisheit, Charisma Talent: Glücksfertigkeit Fertigkeiten: Einsicht und Heimlichkeit Werkzeugkompetenz: Diebeswerkzeuge Ausrüstung: Wählen Sie A oder B: (A) 2 Dolche, Diebeswerkzeuge, Spielset (beliebig), Schlafsack, 2 Beutel, Reisekleidung, 16 GP; oder (B) 50 GP",
   "tags": [],
   "ability_scores": [
     "dex",
@@ -51,14 +56,14 @@
     "Heimlichkeit"
   ],
   "tool_proficiencies": [
-    "Diebeswerkzeuge"
+    "[[item:diebeswerkzeug]]"
   ],
   "language_choices": {
     "choose": 0,
     "options": []
   },
-  "granted_feat_id": "gluecksfertigkeit",
-  "granted_feat_name": "Glücksfertigkeit",
+  "granted_feat_id": "glueck",
+  "granted_feat_name": "Glück",
   "modifiers": [],
   "choice_sets": [],
   "spellcasting": {
@@ -68,7 +73,36 @@
   },
   "starting_equipment": [
     {
-      "text": "Wählen Sie A oder B: (A) 2 Dolche, Diebeswerkzeuge, Spielset (beliebig), Schlafsack, 2 Beutel, Reisekleidung, 16 GP; oder (B) 50 GP"
+      "text": "Wählen Sie A oder B: (A) 2 Dolche, Diebeswerkzeuge, Spielset (beliebig), Schlafsack, 2 Beutel, Reisekleidung, 16 GM; oder (B) 50 GM",
+      "a": {
+        "granted_item_ids": [
+          "2 [[item:dolch]]",
+          "Spielset (beliebig)",
+          "[[item:diebeswerkzeug]]",
+          "[[item:schlafsack]]",
+          "2 [[item:beutel]]",
+          "[[item:reisekleidung]]",
+          "[[item:beutel|Beutel mit 16 GM]]"
+        ]
+      },
+      "b": {
+        "granted_item_ids": [
+          "[[item:beutel|Beutel mit 50 GM]]"
+        ]
+      }
     }
-  ]
+  ],
+  "legacy_features": [
+    {
+      "id": "city-secrets",
+      "name": "Geheimnisse der Stadt",
+      "original_name": "City Secrets",
+      "text": "Du kennst die verborgenen Muster, Abkuerzungen und Nebenwege von Staedten. Ausserhalb von Kaempfen kannst du dich und Gefaehrten, die du fuehrst, zwischen zwei Orten innerhalb einer Stadt etwa doppelt so schnell bewegen, wie es auf normalen Wegen moeglich waere.",
+      "source": "Player's Handbook 2014",
+      "source_url": "https://dnd5e.wikidot.com/background:urchin",
+      "rules_version": "2014",
+      "mapping_note": "2014 Urchin ist hier auf den 2024-Hintergrund Wayfarer/Wanderer gemappt."
+    }
+  ],
+  "text": "Sie sind auf der Straße aufgewachsen, umgeben von ähnlich unglückseligen Ausgestoßenen, von denen einige Freunde und einige Rivalen waren. Du hast geschlafen, wo du konntest, und hast Gelegenheitsarbeiten erledigt, um Essen zu bekommen. Manchmal, wenn der Hunger unerträglich wurde, griffen Sie zum Diebstahl. Dennoch haben Sie nie Ihren Stolz verloren und die Hoffnung nie aufgegeben. Das Schicksal ist mit dir noch nicht fertig.\n\nFähigkeitswerte: Geschicklichkeit, Weisheit, Charisma Talent: Glück Fertigkeiten: Motiv erkennen und Heimlichkeit Werkzeugkompetenz: Diebeswerkzeuge Ausrüstung: Wählen Sie A oder B: (A) 2 Dolche, Diebeswerkzeuge, Spielset (beliebig), Schlafsack, 2 Beutel, Reisekleidung, 16 GM; oder (B) 50 GM\n\n2014-Merkmale\n\nGeheimnisse der Stadt: Du kennst die verborgenen Muster, Abkuerzungen und Nebenwege von Staedten. Ausserhalb von Kaempfen kannst du dich und Gefaehrten, die du fuehrst, zwischen zwei Orten innerhalb einer Stadt etwa doppelt so schnell bewegen, wie es auf normalen Wegen moeglich waere."
 }

@@ -6,17 +6,14 @@
   "rules_version": "2024",
   "source": "Player's Handbook",
   "source_url": "http://dnd2024.wikidot.com/background:acolyte",
-  "source_page": "dnd2024.wikidot.com",
   "license": {
     "name": "Creative Commons Attribution-ShareAlike 3.0 License",
     "spdx": "CC-BY-SA-3.0",
     "url": "https://creativecommons.org/licenses/by-sa/3.0/"
   },
-  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
-  "category": "Hintergruende",
-  "group": "Gewoehnlich",
+  "category": "Hintergründe",
+  "group": "Gewöhnlich",
   "prerequisites": [],
-  "summary": "Sie haben sich dem Dienst in einem Tempel gewidmet, der entweder in einer Stadt liegt oder abgeschieden in einem heiligen Hain liegt. Dort führte man Riten zu Ehren eines Gottes oder Pantheons durch. Sie haben unter einem Priester gedient und Religion studiert. Dank der Unterweisung Ihres Priesters und Ihrer eigenen Hingabe haben Sie auch gelernt, ein Minimum an göttlicher Kraft in den Dienst Ihrer Kultstätte und der Menschen, die dort beteten, zu kanalisieren.",
   "entries": [
     {
       "type": "paragraph",
@@ -24,10 +21,18 @@
     },
     {
       "type": "paragraph",
-      "text": "Fähigkeitswerte: Intelligenz, Weisheit, Charisma Talent: Magischer Eingeweihter (Kleriker) Fertigkeiten: Einsicht und Religion Werkzeugkompetenz: Vorräte des Kalligraphen Ausrüstung: Wählen Sie A oder B: (A) Vorräte des Kalligraphen, Buch (Gebete), Heiliges Symbol, Pergament (10 Blatt), Robe, 8 GP; oder (B) 50 GP"
+      "text": "Fähigkeitswerte: Intelligenz, Weisheit, Charisma Talent: Magischer Eingeweihter (Kleriker) Fertigkeiten: Motiv erkennen und Religion Werkzeugkompetenz: Kalligraphiewerkzeuge Ausrüstung: Wählen Sie A oder B: (A) Kalligraphiewerkzeuge, Buch (Gebete), Heiliges Symbol, Pergament (10 Blatt), Robe, 8 GM; oder (B) 50 GM"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2014-Merkmale"
+    },
+    {
+      "type": "paragraph",
+      "text": "Schutz der Glaeubigen: Andere Angehoerige deines Glaubens achten dich, und du kannst die Riten deiner Gottheit vollziehen. In Tempeln, Schreinen oder vergleichbaren Orten deines Glaubens erhalten du und deine Gefaehrten einfache Heilung und Pflege, solange notwendige Materialkomponenten gestellt werden. Glaubensgeschwister koennen dich auf bescheidenem Lebensstandard unterstuetzen; bei einem vertrauten Tempel kannst du um ungefaehrliche Hilfe bitten, solange du dort in gutem Ansehen stehst."
     }
   ],
-  "text": "Sie haben sich dem Dienst in einem Tempel gewidmet, der entweder in einer Stadt liegt oder abgeschieden in einem heiligen Hain liegt. Dort führte man Riten zu Ehren eines Gottes oder Pantheons durch. Sie haben unter einem Priester gedient und Religion studiert. Dank der Unterweisung Ihres Priesters und Ihrer eigenen Hingabe haben Sie auch gelernt, ein Minimum an göttlicher Kraft in den Dienst Ihrer Kultstätte und der Menschen, die dort beteten, zu kanalisieren.\n\nFähigkeitswerte: Intelligenz, Weisheit, Charisma Talent: Magischer Eingeweihter (Kleriker) Fertigkeiten: Einsicht und Religion Werkzeugkompetenz: Vorräte des Kalligraphen Ausrüstung: Wählen Sie A oder B: (A) Vorräte des Kalligraphen, Buch (Gebete), Heiliges Symbol, Pergament (10 Blatt), Robe, 8 GP; oder (B) 50 GP",
   "tags": [],
   "ability_scores": [
     "int",
@@ -47,11 +52,11 @@
     ]
   },
   "skill_proficiencies": [
-    "Einsicht",
+    "Motiv erkennen",
     "Religion"
   ],
   "tool_proficiencies": [
-    "Vorräte des Kalligraphen"
+    "[[item:kalligraphiewerkzeuge]]"
   ],
   "language_choices": {
     "choose": 0,
@@ -118,7 +123,34 @@
   },
   "starting_equipment": [
     {
-      "text": "Wählen Sie A oder B: (A) Vorräte des Kalligraphen, Buch (Gebete), Heiliges Symbol, Pergament (10 Blatt), Robe, 8 GP; oder (B) 50 GP"
+      "text": "Wählen Sie A oder B: (A) Vorräte des Kalligraphen, Buch (Gebete), Heiliges Symbol, Pergament (10 Blatt), Robe, 8 GM; oder (B) 50 GM",
+      "a": {
+        "granted_item_ids": [
+          "[[item:kalligraphiewerkzeuge]]",
+          "[[item:buch|Gebetsbuch]]",
+          "[[item:heiliges-symbol]]",
+          "[[item:pergament]] (10 Blätter)",
+          "[[item:robe]]",
+          "[[item:beutel|Beutel mit 8 GM]]"
+        ]
+      },
+      "b": {
+        "granted_item_ids": [
+          "[[item:beutel|Beutel mit 50 GM]]"
+        ]
+      }
     }
-  ]
+  ],
+  "legacy_features": [
+    {
+      "id": "shelter-of-the-faithful",
+      "name": "Schutz der Glaeubigen",
+      "original_name": "Shelter of the Faithful",
+      "text": "Andere Angehoerige deines Glaubens achten dich, und du kannst die Riten deiner Gottheit vollziehen. In Tempeln, Schreinen oder vergleichbaren Orten deines Glaubens erhalten du und deine Gefaehrten einfache Heilung und Pflege, solange notwendige Materialkomponenten gestellt werden. Glaubensgeschwister koennen dich auf bescheidenem Lebensstandard unterstuetzen; bei einem vertrauten Tempel kannst du um ungefaehrliche Hilfe bitten, solange du dort in gutem Ansehen stehst.",
+      "source": "Player's Handbook 2014",
+      "source_url": "https://dnd5e.wikidot.com/background:acolyte",
+      "rules_version": "2014"
+    }
+  ],
+  "text": "Sie haben sich dem Dienst in einem Tempel gewidmet, der entweder in einer Stadt liegt oder abgeschieden in einem heiligen Hain liegt. Dort führte man Riten zu Ehren eines Gottes oder Pantheons durch. Sie haben unter einem Priester gedient und Religion studiert. Dank der Unterweisung Ihres Priesters und Ihrer eigenen Hingabe haben Sie auch gelernt, ein Minimum an göttlicher Kraft in den Dienst Ihrer Kultstätte und der Menschen, die dort beteten, zu kanalisieren.\n\nFähigkeitswerte: Intelligenz, Weisheit, Charisma Talent: Magischer Eingeweihter (Kleriker) Fertigkeiten: Motiv erkennen und Religion Werkzeugkompetenz: Kalligraphiewerkzeuge Ausrüstung: Wählen Sie A oder B: (A) Kalligraphiewerkzeuge, Buch (Gebete), Heiliges Symbol, Pergament (10 Blatt), Robe, 8 GM; oder (B) 50 GM\n\n2014-Merkmale\n\nSchutz der Glaeubigen: Andere Angehoerige deines Glaubens achten dich, und du kannst die Riten deiner Gottheit vollziehen. In Tempeln, Schreinen oder vergleichbaren Orten deines Glaubens erhalten du und deine Gefaehrten einfache Heilung und Pflege, solange notwendige Materialkomponenten gestellt werden. Glaubensgeschwister koennen dich auf bescheidenem Lebensstandard unterstuetzen; bei einem vertrauten Tempel kannst du um ungefaehrliche Hilfe bitten, solange du dort in gutem Ansehen stehst."
 }

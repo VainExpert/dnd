@@ -30,41 +30,12 @@ const PAGES = [
   ["Rückblicke", "Archiv der Sitzungsrückblicke", "content/recaps/index.md"],
 ];
 
-const navEl = document.getElementById("nav");
 const contentEl = document.getElementById("content");
 const searchEl = document.getElementById("search");
 
-function groupPages(pages) {
-  const map = new Map();
-  for (const [group, title, path] of pages) {
-    if (!map.has(group)) map.set(group, []);
-    map.get(group).push({ title, path });
-  }
-  return map;
-}
-
-function renderNav(activePath) {
-  if (!navEl) return;
-  navEl.innerHTML = "";
-
-  const grouped = groupPages(PAGES);
-  for (const [group, items] of grouped.entries()) {
-    const groupWrap = document.createElement("div");
-    groupWrap.className = "group";
-
-    const gt = document.createElement("div");
-    gt.className = "group-title";
-    gt.textContent = group;
-    groupWrap.appendChild(gt);
-
-    for (const it of items) {
-      const a = document.createElement("a");
-      a.href = `#${encodeURIComponent(it.path)}`;
-      a.textContent = it.title;
-      if (it.path === activePath) a.classList.add("active");
-      groupWrap.appendChild(a);
-    }
-    navEl.appendChild(groupWrap);
+function renderNav() {
+  if (typeof window.DND_RENDER_NAV === "function") {
+    window.DND_RENDER_NAV();
   }
 }
 

@@ -6,17 +6,14 @@
   "rules_version": "2024",
   "source": "Player's Handbook",
   "source_url": "http://dnd2024.wikidot.com/background:noble",
-  "source_page": "dnd2024.wikidot.com",
   "license": {
     "name": "Creative Commons Attribution-ShareAlike 3.0 License",
     "spdx": "CC-BY-SA-3.0",
     "url": "https://creativecommons.org/licenses/by-sa/3.0/"
   },
-  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
-  "category": "Hintergruende",
-  "group": "Gewoehnlich",
+  "category": "Hintergründe",
+  "group": "Gewöhnlich",
   "prerequisites": [],
-  "summary": "Sie sind in einem Schloss aufgewachsen, umgeben von Reichtum, Macht und Privilegien. Ihre Familie aus Kleinaristokraten sorgte dafür, dass Sie eine erstklassige Ausbildung erhielten, die Sie teils schätzten, teils ablehnten. Durch die Zeit im Schloss, insbesondere durch die vielen Stunden, die Sie damit verbracht haben, Ihre Familie am Hof ​​zu beobachten, haben Sie auch viel über Führung gelernt.",
   "entries": [
     {
       "type": "paragraph",
@@ -24,10 +21,22 @@
     },
     {
       "type": "paragraph",
-      "text": "Fähigkeitswerte: Stärke, Intelligenz, Charisma Talent: Geschickt Fertigkeiten: Geschichte und Überzeugungskraft Werkzeugkompetenz: Wählen Sie eine Art Spielset. Ausrüstung: Wählen Sie A oder B: (A) Spielset (wie oben), feine Kleidung, Parfüm, 29 GP; oder (B) 50 GP"
+      "text": "Fähigkeitswerte: Stärke, Intelligenz, Charisma Talent: Geschickt Fertigkeiten: Geschichte und Überzeugung Werkzeugkompetenz: Wählen Sie eine Art Spielset. Ausrüstung: Wählen Sie A oder B: (A) Spielset (wie oben), feine Kleidung, Parfüm, 29 GM; oder (B) 50 GM"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2014-Merkmale"
+    },
+    {
+      "type": "paragraph",
+      "text": "Privilegierte Stellung: Aufgrund deiner Herkunft trauen dir viele Personen zunaechst Gutes zu. In gehobenen Kreisen bist du willkommen, einfache Leute versuchen meist, dich nicht zu verärgern, und Adlige behandeln dich als Teil ihrer gesellschaftlichen Welt. Wenn es die Umstaende zulassen, kannst du eine Audienz bei einem lokalen Adeligen erwirken."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gefolgsleute: Optionale Ritter-Variante: Du kannst drei deiner Familie treue Bedienstete haben, etwa Boten, Diener oder einen Verwalter; bei einem Ritter kann einer davon ein Knappe sein. Sie erledigen alltaegliche Aufgaben, kaempfen aber nicht fuer dich, meiden offenkundige Gefahr und verlassen dich, wenn sie schlecht behandelt oder zu oft gefaehrdet werden."
     }
   ],
-  "text": "Sie sind in einem Schloss aufgewachsen, umgeben von Reichtum, Macht und Privilegien. Ihre Familie aus Kleinaristokraten sorgte dafür, dass Sie eine erstklassige Ausbildung erhielten, die Sie teils schätzten, teils ablehnten. Durch die Zeit im Schloss, insbesondere durch die vielen Stunden, die Sie damit verbracht haben, Ihre Familie am Hof ​​zu beobachten, haben Sie auch viel über Führung gelernt.\n\nFähigkeitswerte: Stärke, Intelligenz, Charisma Talent: Geschickt Fertigkeiten: Geschichte und Überzeugungskraft Werkzeugkompetenz: Wählen Sie eine Art Spielset. Ausrüstung: Wählen Sie A oder B: (A) Spielset (wie oben), feine Kleidung, Parfüm, 29 GP; oder (B) 50 GP",
   "tags": [],
   "ability_scores": [
     "str",
@@ -48,10 +57,10 @@
   },
   "skill_proficiencies": [
     "Geschichte",
-    "Überzeugungskraft"
+    "Überzeugung"
   ],
   "tool_proficiencies": [
-    "Wählen Sie eine Art Spielset"
+    "Spielset (Wähle eine Art)"
   ],
   "language_choices": {
     "choose": 0,
@@ -68,7 +77,41 @@
   },
   "starting_equipment": [
     {
-      "text": "Wählen Sie A oder B: (A) Spielset (wie oben), feine Kleidung, Parfüm, 29 GP; oder (B) 50 GP"
+      "text": "Wählen Sie A oder B: (A) Spielset (wie oben), feine Kleidung, Parfüm, 29 GM; oder (B) 50 GM",
+      "a": {
+        "granted_item_ids": [
+          "Spielset",
+          "[[item:feine-kleidung]]",
+          "[[item:parfuem]]",
+          "[[item:beutel|Beutel mit 29 GM]]"
+        ]
+      },
+      "b": {
+        "granted_item_ids": [
+          "[[item:beutel|Beutel mit 50 GM]]"
+        ]
+      }
     }
-  ]
+  ],
+  "legacy_features": [
+    {
+      "id": "position-of-privilege",
+      "name": "Privilegierte Stellung",
+      "original_name": "Position of Privilege",
+      "text": "Aufgrund deiner Herkunft trauen dir viele Personen zunaechst Gutes zu. In gehobenen Kreisen bist du willkommen, einfache Leute versuchen meist, dich nicht zu verärgern, und Adlige behandeln dich als Teil ihrer gesellschaftlichen Welt. Wenn es die Umstaende zulassen, kannst du eine Audienz bei einem lokalen Adeligen erwirken.",
+      "source": "Player's Handbook 2014",
+      "source_url": "https://dnd5e.wikidot.com/background:noble",
+      "rules_version": "2014"
+    },
+    {
+      "id": "retainers",
+      "name": "Gefolgsleute",
+      "original_name": "Retainers",
+      "text": "Optionale Ritter-Variante: Du kannst drei deiner Familie treue Bedienstete haben, etwa Boten, Diener oder einen Verwalter; bei einem Ritter kann einer davon ein Knappe sein. Sie erledigen alltaegliche Aufgaben, kaempfen aber nicht fuer dich, meiden offenkundige Gefahr und verlassen dich, wenn sie schlecht behandelt oder zu oft gefaehrdet werden.",
+      "source": "Player's Handbook 2014",
+      "source_url": "https://dnd5e.wikidot.com/background:noble",
+      "rules_version": "2014"
+    }
+  ],
+  "text": "Sie sind in einem Schloss aufgewachsen, umgeben von Reichtum, Macht und Privilegien. Ihre Familie aus Kleinaristokraten sorgte dafür, dass Sie eine erstklassige Ausbildung erhielten, die Sie teils schätzten, teils ablehnten. Durch die Zeit im Schloss, insbesondere durch die vielen Stunden, die Sie damit verbracht haben, Ihre Familie am Hof ​​zu beobachten, haben Sie auch viel über Führung gelernt.\n\nFähigkeitswerte: Stärke, Intelligenz, Charisma Talent: Geschickt Fertigkeiten: Geschichte und Überzeugung Werkzeugkompetenz: Wählen Sie eine Art Spielset. Ausrüstung: Wählen Sie A oder B: (A) Spielset (wie oben), feine Kleidung, Parfüm, 29 GM; oder (B) 50 GM\n\n2014-Merkmale\n\nPrivilegierte Stellung: Aufgrund deiner Herkunft trauen dir viele Personen zunaechst Gutes zu. In gehobenen Kreisen bist du willkommen, einfache Leute versuchen meist, dich nicht zu verärgern, und Adlige behandeln dich als Teil ihrer gesellschaftlichen Welt. Wenn es die Umstaende zulassen, kannst du eine Audienz bei einem lokalen Adeligen erwirken.\n\nGefolgsleute: Optionale Ritter-Variante: Du kannst drei deiner Familie treue Bedienstete haben, etwa Boten, Diener oder einen Verwalter; bei einem Ritter kann einer davon ein Knappe sein. Sie erledigen alltaegliche Aufgaben, kaempfen aber nicht fuer dich, meiden offenkundige Gefahr und verlassen dich, wenn sie schlecht behandelt oder zu oft gefaehrdet werden."
 }

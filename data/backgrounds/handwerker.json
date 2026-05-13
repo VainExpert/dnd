@@ -6,17 +6,14 @@
   "rules_version": "2024",
   "source": "Player's Handbook",
   "source_url": "http://dnd2024.wikidot.com/background:artisan",
-  "source_page": "dnd2024.wikidot.com",
   "license": {
     "name": "Creative Commons Attribution-ShareAlike 3.0 License",
     "spdx": "CC-BY-SA-3.0",
     "url": "https://creativecommons.org/licenses/by-sa/3.0/"
   },
-  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
-  "category": "Hintergruende",
-  "group": "Gewoehnlich",
+  "category": "Hintergründe",
+  "group": "Gewöhnlich",
   "prerequisites": [],
-  "summary": "Sobald Sie stark genug waren, einen Eimer zu tragen, fingen Sie an, in einer Handwerkswerkstatt für ein paar Kupfermünzen pro Tag Böden zu wischen und Arbeitsflächen zu schrubben. Als Sie alt genug für die Lehre waren, lernten Sie, selbst grundlegende Kunsthandwerke herzustellen und ab und zu anspruchsvolle Kunden zu umschmeicheln. Ihr Beruf hat Ihnen auch ein Gespür für Details beschert.",
   "entries": [
     {
       "type": "paragraph",
@@ -24,10 +21,22 @@
     },
     {
       "type": "paragraph",
-      "text": "Fähigkeitswerte: Stärke, Geschicklichkeit, Intelligenz Talent: Handwerker Fertigkeiten: Ermittlung und Überredung Werkzeugkompetenz: Wählen Sie eine Art von Handwerkerwerkzeugen Ausrüstung: Wählen Sie A oder B: (A) Handwerkerwerkzeuge (wie oben), 2 Beutel, Reisekleidung, 32 GP; oder (B) 50 GP"
+      "text": "Fähigkeitswerte: Stärke, Geschicklichkeit, Intelligenz Talent: Handwerker Fertigkeiten: Nachforschung und Überzeugen Werkzeugkompetenz: Wählen Sie eine Art von Handwerkerwerkzeugen Ausrüstung: Wählen Sie A oder B: (A) Handwerkerwerkzeuge (wie oben), 2 Beutel, Reisekleidung, 32 GM; oder (B) 50 GM"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2014-Merkmale"
+    },
+    {
+      "type": "paragraph",
+      "text": "Gildenhandwerk: Lege mit der SL fest, zu welcher Gilde oder welchem Handwerksnetzwerk du gehoerst. Moegliche Felder reichen von Alchemie, Schlosserei, Brauen, Kalligrafie, Zimmerarbeit, Kartografie, Schusterei, Kochen, Glasblaeserei, Juwelierkunst, Lederarbeit, Steinmetzarbeit, Malerei, Toepferei, Schiffbau, Schmiedekunst, Tueftelei, Wagenbau, Weberei bis Holzschnitzerei."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gildenmitgliedschaft: Als angesehenes Gildenmitglied kannst du von anderen Mitgliedern Unterkunft, Verpflegung, berufliche Kontakte und Zugang zu Gildenhaeusern erhalten. Eine Gilde kann dich politisch unterstuetzen oder dir Zugang zu einflussreichen Personen verschaffen, solange du in gutem Stand bist. Regelmaessige Beitraege oder Ausgleich offener Schulden koennen erforderlich sein."
     }
   ],
-  "text": "Sobald Sie stark genug waren, einen Eimer zu tragen, fingen Sie an, in einer Handwerkswerkstatt für ein paar Kupfermünzen pro Tag Böden zu wischen und Arbeitsflächen zu schrubben. Als Sie alt genug für die Lehre waren, lernten Sie, selbst grundlegende Kunsthandwerke herzustellen und ab und zu anspruchsvolle Kunden zu umschmeicheln. Ihr Beruf hat Ihnen auch ein Gespür für Details beschert.\n\nFähigkeitswerte: Stärke, Geschicklichkeit, Intelligenz Talent: Handwerker Fertigkeiten: Ermittlung und Überredung Werkzeugkompetenz: Wählen Sie eine Art von Handwerkerwerkzeugen Ausrüstung: Wählen Sie A oder B: (A) Handwerkerwerkzeuge (wie oben), 2 Beutel, Reisekleidung, 32 GP; oder (B) 50 GP",
   "tags": [],
   "ability_scores": [
     "str",
@@ -47,11 +56,11 @@
     ]
   },
   "skill_proficiencies": [
-    "Ermittlung",
-    "Überredung"
+    "Nachforschung",
+    "Überzeugen"
   ],
   "tool_proficiencies": [
-    "Wählen Sie eine Art von Handwerkerwerkzeugen"
+    "Handwerkerwerkzeugen (Wähle eine Art)"
   ],
   "language_choices": {
     "choose": 0,
@@ -68,7 +77,41 @@
   },
   "starting_equipment": [
     {
-      "text": "Wählen Sie A oder B: (A) Handwerkerwerkzeuge (wie oben), 2 Beutel, Reisekleidung, 32 GP; oder (B) 50 GP"
+      "text": "Wählen Sie A oder B: (A) Handwerkerwerkzeuge (wie oben), 2 Beutel, Reisekleidung, 32 GM; oder (B) 50 GM",
+      "a": {
+        "granted_item_ids": [
+          "Handwerkerwerkzeuge",
+          "2 [[item:beutel]]",
+          "[[item:reisekleidung]]",
+          "[[item:beutel|Beutel mit 29 GM]]"
+        ]
+      },
+      "b": {
+        "granted_item_ids": [
+          "[[item:beutel|Beutel mit 50 GM]]"
+        ]
+      }
     }
-  ]
+  ],
+  "legacy_features": [
+    {
+      "id": "guild-business",
+      "name": "Gildenhandwerk",
+      "original_name": "Guild Business",
+      "text": "Lege mit der SL fest, zu welcher Gilde oder welchem Handwerksnetzwerk du gehoerst. Moegliche Felder reichen von Alchemie, Schlosserei, Brauen, Kalligrafie, Zimmerarbeit, Kartografie, Schusterei, Kochen, Glasblaeserei, Juwelierkunst, Lederarbeit, Steinmetzarbeit, Malerei, Toepferei, Schiffbau, Schmiedekunst, Tueftelei, Wagenbau, Weberei bis Holzschnitzerei.",
+      "source": "Player's Handbook 2014",
+      "source_url": "https://dnd5e.wikidot.com/background:guild-artisan",
+      "rules_version": "2014"
+    },
+    {
+      "id": "guild-membership",
+      "name": "Gildenmitgliedschaft",
+      "original_name": "Guild Membership",
+      "text": "Als angesehenes Gildenmitglied kannst du von anderen Mitgliedern Unterkunft, Verpflegung, berufliche Kontakte und Zugang zu Gildenhaeusern erhalten. Eine Gilde kann dich politisch unterstuetzen oder dir Zugang zu einflussreichen Personen verschaffen, solange du in gutem Stand bist. Regelmaessige Beitraege oder Ausgleich offener Schulden koennen erforderlich sein.",
+      "source": "Player's Handbook 2014",
+      "source_url": "https://dnd5e.wikidot.com/background:guild-artisan",
+      "rules_version": "2014"
+    }
+  ],
+  "text": "Sobald Sie stark genug waren, einen Eimer zu tragen, fingen Sie an, in einer Handwerkswerkstatt für ein paar Kupfermünzen pro Tag Böden zu wischen und Arbeitsflächen zu schrubben. Als Sie alt genug für die Lehre waren, lernten Sie, selbst grundlegende Kunsthandwerke herzustellen und ab und zu anspruchsvolle Kunden zu umschmeicheln. Ihr Beruf hat Ihnen auch ein Gespür für Details beschert.\n\nFähigkeitswerte: Stärke, Geschicklichkeit, Intelligenz Talent: Handwerker Fertigkeiten: Nachforschung und Überzeugen Werkzeugkompetenz: Wählen Sie eine Art von Handwerkerwerkzeugen Ausrüstung: Wählen Sie A oder B: (A) Handwerkerwerkzeuge (wie oben), 2 Beutel, Reisekleidung, 32 GM; oder (B) 50 GM\n\n2014-Merkmale\n\nGildenhandwerk: Lege mit der SL fest, zu welcher Gilde oder welchem Handwerksnetzwerk du gehoerst. Moegliche Felder reichen von Alchemie, Schlosserei, Brauen, Kalligrafie, Zimmerarbeit, Kartografie, Schusterei, Kochen, Glasblaeserei, Juwelierkunst, Lederarbeit, Steinmetzarbeit, Malerei, Toepferei, Schiffbau, Schmiedekunst, Tueftelei, Wagenbau, Weberei bis Holzschnitzerei.\n\nGildenmitgliedschaft: Als angesehenes Gildenmitglied kannst du von anderen Mitgliedern Unterkunft, Verpflegung, berufliche Kontakte und Zugang zu Gildenhaeusern erhalten. Eine Gilde kann dich politisch unterstuetzen oder dir Zugang zu einflussreichen Personen verschaffen, solange du in gutem Stand bist. Regelmaessige Beitraege oder Ausgleich offener Schulden koennen erforderlich sein."
 }

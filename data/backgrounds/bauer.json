@@ -6,17 +6,14 @@
   "rules_version": "2024",
   "source": "Player's Handbook",
   "source_url": "http://dnd2024.wikidot.com/background:farmer",
-  "source_page": "dnd2024.wikidot.com",
   "license": {
     "name": "Creative Commons Attribution-ShareAlike 3.0 License",
     "spdx": "CC-BY-SA-3.0",
     "url": "https://creativecommons.org/licenses/by-sa/3.0/"
   },
-  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
-  "category": "Hintergruende",
-  "group": "Gewoehnlich",
+  "category": "Hintergründe",
+  "group": "Gewöhnlich",
   "prerequisites": [],
-  "summary": "Du bist nah am Land aufgewachsen. Die jahrelange Beschäftigung mit Tieren und der Bewirtschaftung der Erde hat Sie mit Geduld und guter Gesundheit belohnt. Sie haben eine ausgeprägte Wertschätzung für die Großzügigkeit der Natur und gleichzeitig einen gesunden Respekt vor dem Zorn der Natur.",
   "entries": [
     {
       "type": "paragraph",
@@ -24,10 +21,22 @@
     },
     {
       "type": "paragraph",
-      "text": "Fähigkeitswerte: Stärke, Konstitution, Weisheit Talent: Harte Fertigkeit Fertigkeiten: Umgang mit Tieren und Natur Werkzeugkompetenz: Zimmermannswerkzeuge Ausrüstung: Wählen Sie A oder B: (A) Sichel, Zimmermannswerkzeuge, Heilerausrüstung, Eisentopf, Schaufel, Reisekleidung, 30 GP; oder (B) 50 GP"
+      "text": "Fähigkeitswerte: Stärke, Konstitution, Weisheit Talent: Hart Fertigkeiten: Mit Tieren umgehen und Naturkunde Werkzeugkompetenz: Schreinerwerkzeug Ausrüstung: Wählen Sie A oder B: (A) Sichel, Zimmermannswerkzeuge, Heilerausrüstung, Eisentopf, Schaufel, Reisekleidung, 30 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2014-Merkmale"
+    },
+    {
+      "type": "paragraph",
+      "text": "Praegendes Ereignis: Bestimme, welches Ereignis dich aus einem einfachen Leben heraus zum Helden der einfachen Leute machte: etwa Widerstand gegen Tyrannei, Rettung bei einer Katastrophe, Kampf gegen ein Monster, Hilfe fuer Arme, Fuehrung einer Miliz, Waffenraub gegen Unterdruecker, Ausbildung der Bauernschaft, Protest gegen einen Erlass, eine uebernatuerliche Segnung oder Anerkennung nach Kriegsdienst."
+    },
+    {
+      "type": "paragraph",
+      "text": "Laendliche Gastfreundschaft: Unter einfachen Leuten findest du leicht Anschluss. Solange du dich ihnen gegenueber nicht als Gefahr erwiesen hast, kannst du bei ihnen Unterschlupf, Ruhe oder Erholung finden. Sie koennen dich vor Gesetzeshuetern oder Suchenden verbergen, riskieren dafuer aber normalerweise nicht ihr Leben."
     }
   ],
-  "text": "Du bist nah am Land aufgewachsen. Die jahrelange Beschäftigung mit Tieren und der Bewirtschaftung der Erde hat Sie mit Geduld und guter Gesundheit belohnt. Sie haben eine ausgeprägte Wertschätzung für die Großzügigkeit der Natur und gleichzeitig einen gesunden Respekt vor dem Zorn der Natur.\n\nFähigkeitswerte: Stärke, Konstitution, Weisheit Talent: Harte Fertigkeit Fertigkeiten: Umgang mit Tieren und Natur Werkzeugkompetenz: Zimmermannswerkzeuge Ausrüstung: Wählen Sie A oder B: (A) Sichel, Zimmermannswerkzeuge, Heilerausrüstung, Eisentopf, Schaufel, Reisekleidung, 30 GP; oder (B) 50 GP",
   "tags": [],
   "ability_scores": [
     "str",
@@ -47,18 +56,18 @@
     ]
   },
   "skill_proficiencies": [
-    "Tierhandhabung",
-    "Natur"
+    "Mit Tieren umgehen",
+    "Naturkunde"
   ],
   "tool_proficiencies": [
-    "Zimmermannswerkzeuge"
+    "[[item:schreinerwerkzeug]]"
   ],
   "language_choices": {
     "choose": 0,
     "options": []
   },
-  "granted_feat_id": "harte-fertigkeit",
-  "granted_feat_name": "Harte Fertigkeit",
+  "granted_feat_id": "hart",
+  "granted_feat_name": "Hart",
   "modifiers": [],
   "choice_sets": [],
   "spellcasting": {
@@ -68,7 +77,46 @@
   },
   "starting_equipment": [
     {
-      "text": "Wählen Sie A oder B: (A) Sichel, Zimmermannswerkzeuge, Heilerausrüstung, Eisentopf, Schaufel, Reisekleidung, 30 GP; oder (B) 50 GP"
+      "text": "Wählen Sie A oder B: (A) Sichel, Zimmermannswerkzeuge, Heilerausrüstung, Eisentopf, Schaufel, Reisekleidung, 30 GM; oder (B) 50 GM",
+      "a": {
+        "granted_item_ids": [
+          "[[item:sichel]]",
+          "[[item:schreinerwerkzeug]]",
+          "[[item:heilerausruestung]]",
+          "[[item:eisentopf]]",
+          "[[item:schaufel]]",
+          "[[item:reisekleidung]]",
+          "[[item:beutel|Beutel mit 30 GM]]"
+        ]
+      },
+      "b": {
+        "granted_item_ids": [
+          "[[item:beutel|Beutel mit 50 GM]]"
+        ]
+      }
     }
-  ]
+  ],
+  "legacy_features": [
+    {
+      "id": "defining-event",
+      "name": "Praegendes Ereignis",
+      "original_name": "Defining Event",
+      "text": "Bestimme, welches Ereignis dich aus einem einfachen Leben heraus zum Helden der einfachen Leute machte: etwa Widerstand gegen Tyrannei, Rettung bei einer Katastrophe, Kampf gegen ein Monster, Hilfe fuer Arme, Fuehrung einer Miliz, Waffenraub gegen Unterdruecker, Ausbildung der Bauernschaft, Protest gegen einen Erlass, eine uebernatuerliche Segnung oder Anerkennung nach Kriegsdienst.",
+      "source": "Player's Handbook 2014",
+      "source_url": "https://dnd5e.wikidot.com/background:folk-hero",
+      "rules_version": "2014",
+      "mapping_note": "2014 Folk Hero ist hier auf den 2024-Hintergrund Farmer/Bauer gemappt."
+    },
+    {
+      "id": "rustic-hospitality",
+      "name": "Laendliche Gastfreundschaft",
+      "original_name": "Rustic Hospitality",
+      "text": "Unter einfachen Leuten findest du leicht Anschluss. Solange du dich ihnen gegenueber nicht als Gefahr erwiesen hast, kannst du bei ihnen Unterschlupf, Ruhe oder Erholung finden. Sie koennen dich vor Gesetzeshuetern oder Suchenden verbergen, riskieren dafuer aber normalerweise nicht ihr Leben.",
+      "source": "Player's Handbook 2014",
+      "source_url": "https://dnd5e.wikidot.com/background:folk-hero",
+      "rules_version": "2014",
+      "mapping_note": "2014 Folk Hero ist hier auf den 2024-Hintergrund Farmer/Bauer gemappt."
+    }
+  ],
+  "text": "Du bist nah am Land aufgewachsen. Die jahrelange Beschäftigung mit Tieren und der Bewirtschaftung der Erde hat Sie mit Geduld und guter Gesundheit belohnt. Sie haben eine ausgeprägte Wertschätzung für die Großzügigkeit der Natur und gleichzeitig einen gesunden Respekt vor dem Zorn der Natur.\n\nFähigkeitswerte: Stärke, Konstitution, Weisheit Talent: Hart Fertigkeiten: Mit Tieren umgehen und Naturkunde Werkzeugkompetenz: Schreinerwerkzeug Ausrüstung: Wählen Sie A oder B: (A) Sichel, Zimmermannswerkzeuge, Heilerausrüstung, Eisentopf, Schaufel, Reisekleidung, 30 GP; oder (B) 50 GP\n\n2014-Merkmale\n\nPraegendes Ereignis: Bestimme, welches Ereignis dich aus einem einfachen Leben heraus zum Helden der einfachen Leute machte: etwa Widerstand gegen Tyrannei, Rettung bei einer Katastrophe, Kampf gegen ein Monster, Hilfe fuer Arme, Fuehrung einer Miliz, Waffenraub gegen Unterdruecker, Ausbildung der Bauernschaft, Protest gegen einen Erlass, eine uebernatuerliche Segnung oder Anerkennung nach Kriegsdienst.\n\nLaendliche Gastfreundschaft: Unter einfachen Leuten findest du leicht Anschluss. Solange du dich ihnen gegenueber nicht als Gefahr erwiesen hast, kannst du bei ihnen Unterschlupf, Ruhe oder Erholung finden. Sie koennen dich vor Gesetzeshuetern oder Suchenden verbergen, riskieren dafuer aber normalerweise nicht ihr Leben."
 }

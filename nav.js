@@ -166,6 +166,9 @@
     ensureLayout();
   }
 
+  window.DND_NAV_GROUPS = NAV_GROUPS;
+  window.DND_RENDER_NAV = render;
+
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", render, { once: true });
   } else {

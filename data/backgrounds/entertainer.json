@@ -6,17 +6,14 @@
   "rules_version": "2024",
   "source": "Player's Handbook",
   "source_url": "http://dnd2024.wikidot.com/background:entertainer",
-  "source_page": "dnd2024.wikidot.com",
   "license": {
     "name": "Creative Commons Attribution-ShareAlike 3.0 License",
     "spdx": "CC-BY-SA-3.0",
     "url": "https://creativecommons.org/licenses/by-sa/3.0/"
   },
-  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
-  "category": "Hintergruende",
-  "group": "Gewoehnlich",
+  "category": "Hintergründe",
+  "group": "Gewöhnlich",
   "prerequisites": [],
-  "summary": "Sie haben einen Großteil Ihrer Jugend damit verbracht, umherziehende Jahrmärkte und Jahrmärkte zu verfolgen und im Gegenzug für Unterricht Gelegenheitsjobs für Musiker und Akrobaten auszuführen. Vielleicht haben Sie gelernt, wie man auf einem Seil balanciert, wie man in einem bestimmten Stil Laute spielt oder wie man Gedichte mit tadelloser Diktion rezitiert. Bis heute leben Sie vom Applaus und sehnen sich nach der Bühne.",
   "entries": [
     {
       "type": "paragraph",
@@ -24,10 +21,22 @@
     },
     {
       "type": "paragraph",
-      "text": "Fähigkeitswerte: Stärke, Geschicklichkeit, Charisma Talent: Fähigkeiten als Musiker: Akrobatik und Performance-Werkzeugkenntnisse: Wählen Sie eine Art Musikinstrument. Ausrüstung: Wählen Sie A oder B: (A) Musikinstrument (wie oben), 2 Kostüme, Spiegel, Parfüm, Reisekleidung, 11 GP; oder (B) 50 GP"
+      "text": "Fähigkeitswerte: Stärke, Geschicklichkeit, Charisma Talent: Musiker Fertigkeiten: Akrobatik und Performance Werkzeugkenntnisse: Wählen Sie eine Art Musikinstrument. Ausrüstung: Wählen Sie A oder B: (A) Musikinstrument (wie oben), 2 Kostüme, Spiegel, Parfüm, Reisekleidung, 11 GP; oder (B) 50 GP"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2014-Merkmale"
+    },
+    {
+      "type": "paragraph",
+      "text": "Auftrittsnummern: Waehle eine bis drei Nummern, die deine Kunst praegen, etwa Schauspiel, Tanz, Feuerspucken, Narretei, Jonglage, Instrumentalspiel, Dichtung, Gesang, Erzaehlen oder Akrobatik. Eine Gladiator-Variante kann den Kampf als Buehnenkunst behandeln."
+    },
+    {
+      "type": "paragraph",
+      "text": "Auf vielfachen Wunsch: Du findest fast immer einen Ort fuer einen Auftritt, meist eine Taverne oder ein Gasthaus, moeglicherweise auch einen Zirkus, ein Theater oder einen Adelshof. Solange du dort abends auftrittst, bekommst du einfache oder komfortable Unterkunft und Verpflegung. Wo man dich nach einem Auftritt wiedererkennt, begegnen dir viele Einheimische wohlwollend."
     }
   ],
-  "text": "Sie haben einen Großteil Ihrer Jugend damit verbracht, umherziehende Jahrmärkte und Jahrmärkte zu verfolgen und im Gegenzug für Unterricht Gelegenheitsjobs für Musiker und Akrobaten auszuführen. Vielleicht haben Sie gelernt, wie man auf einem Seil balanciert, wie man in einem bestimmten Stil Laute spielt oder wie man Gedichte mit tadelloser Diktion rezitiert. Bis heute leben Sie vom Applaus und sehnen sich nach der Bühne.\n\nFähigkeitswerte: Stärke, Geschicklichkeit, Charisma Talent: Fähigkeiten als Musiker: Akrobatik und Performance-Werkzeugkenntnisse: Wählen Sie eine Art Musikinstrument. Ausrüstung: Wählen Sie A oder B: (A) Musikinstrument (wie oben), 2 Kostüme, Spiegel, Parfüm, Reisekleidung, 11 GP; oder (B) 50 GP",
   "tags": [],
   "ability_scores": [
     "str",
@@ -46,14 +55,19 @@
       1
     ]
   },
-  "skill_proficiencies": [],
-  "tool_proficiencies": [],
+  "skill_proficiencies": [
+    "Akrobatik",
+    "Performance"
+  ],
+  "tool_proficiencies": [
+    "Musikinstrument (Wähle eine Art)"
+  ],
   "language_choices": {
     "choose": 0,
     "options": []
   },
-  "granted_feat_id": "faehigkeiten-als-musiker-akrobatik-und-performance-werkzeugkenntnisse-waehlen-sie-eine-art-musikinstrument",
-  "granted_feat_name": "Fähigkeiten als Musiker: Akrobatik und Performance-Werkzeugkenntnisse: Wählen Sie eine Art Musikinstrument",
+  "granted_feat_id": "musiker",
+  "granted_feat_name": "Musiker",
   "modifiers": [],
   "choice_sets": [],
   "spellcasting": {
@@ -63,7 +77,43 @@
   },
   "starting_equipment": [
     {
-      "text": "Wählen Sie A oder B: (A) Musikinstrument (wie oben), 2 Kostüme, Spiegel, Parfüm, Reisekleidung, 11 GP; oder (B) 50 GP"
+      "text": "Wählen Sie A oder B: (A) Musikinstrument (wie oben), 2 Kostüme, Spiegel, Parfüm, Reisekleidung, 11 GM; oder (B) 50 GM",
+      "a": {
+        "granted_item_ids": [
+          "Musikinstrument",
+          "2 [[item:kostuem]]",
+          "[[item:spiegel]]",
+          "[[item:parfuem]]",
+          "[[item:reisekleidung]]",
+          "[[item:beutel|Beutel mit 11 GM]]"
+        ]
+      },
+      "b": {
+        "granted_item_ids": [
+          "[[item:beutel|Beutel mit 50 GM]]"
+        ]
+      }
     }
-  ]
+  ],
+  "legacy_features": [
+    {
+      "id": "entertainer-routines",
+      "name": "Auftrittsnummern",
+      "original_name": "Entertainer Routines",
+      "text": "Waehle eine bis drei Nummern, die deine Kunst praegen, etwa Schauspiel, Tanz, Feuerspucken, Narretei, Jonglage, Instrumentalspiel, Dichtung, Gesang, Erzaehlen oder Akrobatik. Eine Gladiator-Variante kann den Kampf als Buehnenkunst behandeln.",
+      "source": "Player's Handbook 2014",
+      "source_url": "https://dnd5e.wikidot.com/background:entertainer",
+      "rules_version": "2014"
+    },
+    {
+      "id": "by-popular-demand",
+      "name": "Auf vielfachen Wunsch",
+      "original_name": "By Popular Demand",
+      "text": "Du findest fast immer einen Ort fuer einen Auftritt, meist eine Taverne oder ein Gasthaus, moeglicherweise auch einen Zirkus, ein Theater oder einen Adelshof. Solange du dort abends auftrittst, bekommst du einfache oder komfortable Unterkunft und Verpflegung. Wo man dich nach einem Auftritt wiedererkennt, begegnen dir viele Einheimische wohlwollend.",
+      "source": "Player's Handbook 2014",
+      "source_url": "https://dnd5e.wikidot.com/background:entertainer",
+      "rules_version": "2014"
+    }
+  ],
+  "text": "Sie haben einen Großteil Ihrer Jugend damit verbracht, umherziehende Jahrmärkte und Jahrmärkte zu verfolgen und im Gegenzug für Unterricht Gelegenheitsjobs für Musiker und Akrobaten auszuführen. Vielleicht haben Sie gelernt, wie man auf einem Seil balanciert, wie man in einem bestimmten Stil Laute spielt oder wie man Gedichte mit tadelloser Diktion rezitiert. Bis heute leben Sie vom Applaus und sehnen sich nach der Bühne.\n\nFähigkeitswerte: Stärke, Geschicklichkeit, Charisma Talent: Musiker Fertigkeiten: Akrobatik und Performance Werkzeugkenntnisse: Wählen Sie eine Art Musikinstrument. Ausrüstung: Wählen Sie A oder B: (A) Musikinstrument (wie oben), 2 Kostüme, Spiegel, Parfüm, Reisekleidung, 11 GP; oder (B) 50 GP\n\n2014-Merkmale\n\nAuftrittsnummern: Waehle eine bis drei Nummern, die deine Kunst praegen, etwa Schauspiel, Tanz, Feuerspucken, Narretei, Jonglage, Instrumentalspiel, Dichtung, Gesang, Erzaehlen oder Akrobatik. Eine Gladiator-Variante kann den Kampf als Buehnenkunst behandeln.\n\nAuf vielfachen Wunsch: Du findest fast immer einen Ort fuer einen Auftritt, meist eine Taverne oder ein Gasthaus, moeglicherweise auch einen Zirkus, ein Theater oder einen Adelshof. Solange du dort abends auftrittst, bekommst du einfache oder komfortable Unterkunft und Verpflegung. Wo man dich nach einem Auftritt wiedererkennt, begegnen dir viele Einheimische wohlwollend."
 }

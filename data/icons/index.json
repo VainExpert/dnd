@@ -1,82 +1,83 @@
 {
   "icons": [
     {
-      "title": "1",
+      "title": "Menschen-Frau 1",
       "file": "monsters/1.png",
-      "kind": "monster",
-      "tags": [],
+      "kind": "humanoid",
+      "gender": "female",
+      "tags": ["mensch", "female", "blond", "dorfbewohner", "arm", "hell", "mittelalt"],
       "blurb": "",
       "credit": ""
     },
     {
-      "title": "10",
+      "title": "Menschen-Frau 2",
       "file": "monsters/10.png",
-      "kind": "monster",
-      "tags": [],
+      "kind": "humanoid",
+      "tags": ["mensch", "frau", "braun", "dorfbewohner", "arm", "dunkel", "mittelalt"],
       "blurb": "",
       "credit": ""
     },
     {
-      "title": "100",
+      "title": "Gnom/Halbling-Frau 1",
       "file": "monsters/100.png",
-      "kind": "monster",
-      "tags": [],
+      "kind": "humanoid",
+      "tags": ["gnom", "halbling", "dorfbewohner", "frau", "braun", "hell"],
       "blurb": "",
       "credit": ""
     },
     {
-      "title": "101",
+      "title": "Gnom/Halbing-Mann 1",
       "file": "monsters/101.png",
-      "kind": "monster",
-      "tags": [],
+      "kind": "humanoid",
+      "tags": ["gnom", "halbling", "dorfbewohner", "mann", "braun", "hell"],
       "blurb": "",
       "credit": ""
     },
     {
-      "title": "102",
+      "title": "Ork-Frau 1",
       "file": "monsters/102.png",
-      "kind": "monster",
-      "tags": [],
+      "kind": "humanoid",
+      "tags": ["ork", "frau", "grün", "schwarz", "dorfbewohner"],
       "blurb": "",
       "credit": ""
     },
     {
-      "title": "103",
+      "title": "Tiefling-Mann 1",
       "file": "monsters/103.png",
-      "kind": "monster",
-      "tags": [],
+      "kind": "humanoid",
+      "tags": ["tiefling", "rot", "schwarz", "mann", "dorfbewohner"],
       "blurb": "",
       "credit": ""
     },
     {
-      "title": "104",
+      "title": "Gnom/Halbling-Frau 2",
       "file": "monsters/104.png",
-      "kind": "monster",
-      "tags": [],
+      "kind": "humanoid",
+      "tags": ["gnom", "halbling", "frau", "glatze", "hell", "braun", "dorfbewohner"],
       "blurb": "",
       "credit": ""
     },
     {
-      "title": "105",
+      "title": "Menschen-Frau 3",
       "file": "monsters/105.png",
-      "kind": "monster",
-      "tags": [],
+      "kind": "humanoid",
+      "tags": ["mensch", "frau", "hell", "schwarz", "dorfbewohner"],
       "blurb": "",
       "credit": ""
     },
     {
-      "title": "106",
+      "title": "Gnom/Halbling-Mann 2",
       "file": "monsters/106.png",
-      "kind": "monster",
-      "tags": [],
+      "kind": "humanoid",
+      "tags": ["mann", "gnom", "halbling", "hell", "braun", "dorfbewohner"],
       "blurb": "",
       "credit": ""
     },
     {
-      "title": "107",
+      "title": "Dunkelelf 1",
       "file": "monsters/107.png",
-      "kind": "monster",
-      "tags": [],
+      "kind": "humanoid",
+      "tags": ["dunkelf", "blond", "grau", "dorfbewohner"],
       "blurb": "",
       "credit": ""
     },

@@ -1,0 +1,141 @@
+{
+  "id": "runenschnitzer",
+  "type": "background",
+  "name": "Runenschnitzer",
+  "original_name": "Rune Carver",
+  "rules_version": "2024",
+  "source": "Bigby Presents - Glory of the Giants, angepasst fuer 2024",
+  "source_url": "https://dnd5e.wikidot.com/background:rune-carver",
+  "source_page": "dnd5e.wikidot.com",
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 License",
+    "spdx": "CC-BY-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "translation_note": "Aus dem 2014-kompatiblen Rune-Carver-Hintergrund in das 2024-Hintergrundschema uebertragen. Die Sprache Riesisch und das Talent Runenschaerfer bleiben erhalten, weil sie den Ursprung des Hintergrunds praegen.",
+  "category": "Hintergruende",
+  "group": "Gewoehnlich",
+  "prerequisites": [],
+  "summary": "Du hast dein Leben dem Studium magischer Runen gewidmet und gelernt, alte Zeichen in Holz, Stein, Metall, Stoff oder Knochen mit Macht zu fuellen.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Du hast die Kunst der Runen von einem Meister, aus uralten Gravuren oder aus den Spuren laengst gefallener Kulturen gelernt. Viele dieser Zeichen gehen auf Riesen zurueck, doch du verbindest ihre alte Symbolik mit deiner eigenen Tradition und deinem bevorzugten Material. Fuer dich sind Runen keine bloße Schrift, sondern Werkzeuge, Erinnerungen und kleine Tueren zu verborgener Magie."
+    },
+    {
+      "type": "paragraph",
+      "text": "Faehigkeitswerte: Konstitution, Intelligenz, Weisheit Talent: Runenschaerfer Fertigkeiten: Geschichte und Wahrnehmung Werkzeugkompetenz: Waehle eine Art von Handwerkerwerkzeugen Sprache: Riesisch Ausruestung: Waehle A oder B: (A) Handwerkerwerkzeuge deiner Wahl, kleines Messer, Schleifstein, Reisekleidung, 10 GM; oder (B) 50 GM"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2014-Merkmale"
+    },
+    {
+      "type": "paragraph",
+      "text": "Runenstil: Bestimme dein bevorzugtes Medium fuer Runen: Wachs oder Ton, geschnitzte Holzfiguren, gravierte Glasperlen, bestickte Saeume, geritzte Knochen oder Kerzenwachs, das nach dem Einritzen geglaettet wird. Du kannst mit der SL auch eine eigene passende Methode festlegen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Runenschaerfer: Du erhaeltst das Talent Runenschaerfer. In dieser 2024-Anpassung bleibt es als praegendes Hintergrundtalent erhalten, auch wenn es nicht zu den PHB-Ursprungstalenten gehoert."
+    }
+  ],
+  "text": "Du hast die Kunst der Runen von einem Meister, aus uralten Gravuren oder aus den Spuren laengst gefallener Kulturen gelernt. Viele dieser Zeichen gehen auf Riesen zurueck, doch du verbindest ihre alte Symbolik mit deiner eigenen Tradition und deinem bevorzugten Material. Fuer dich sind Runen keine bloße Schrift, sondern Werkzeuge, Erinnerungen und kleine Tueren zu verborgener Magie.\n\nFaehigkeitswerte: Konstitution, Intelligenz, Weisheit Talent: Runenschaerfer Fertigkeiten: Geschichte und Wahrnehmung Werkzeugkompetenz: Waehle eine Art von Handwerkerwerkzeugen Sprache: Riesisch Ausruestung: Waehle A oder B: (A) Handwerkerwerkzeuge deiner Wahl, kleines Messer, Schleifstein, Reisekleidung, 10 GM; oder (B) 50 GM\n\n2014-Merkmale\n\nRunenstil: Bestimme dein bevorzugtes Medium fuer Runen: Wachs oder Ton, geschnitzte Holzfiguren, gravierte Glasperlen, bestickte Saeume, geritzte Knochen oder Kerzenwachs, das nach dem Einritzen geglaettet wird. Du kannst mit der SL auch eine eigene passende Methode festlegen.\n\nRunenschaerfer: Du erhaeltst das Talent Runenschaerfer. In dieser 2024-Anpassung bleibt es als praegendes Hintergrundtalent erhalten, auch wenn es nicht zu den PHB-Ursprungstalenten gehoert.",
+  "tags": [
+    "runen",
+    "riesen",
+    "magie",
+    "handwerk"
+  ],
+  "ability_scores": [
+    "con",
+    "int",
+    "wis"
+  ],
+  "ability_score_choices": {
+    "choose": 3,
+    "options": [
+      "con",
+      "int",
+      "wis"
+    ],
+    "bonuses": [
+      2,
+      1
+    ]
+  },
+  "skill_proficiencies": [
+    "Geschichte",
+    "Wahrnehmung"
+  ],
+  "tool_proficiencies": [
+    "Handwerkerwerkzeuge (Wähle eine Art)"
+  ],
+  "languages": [
+    "Riesisch"
+  ],
+  "language_choices": {
+    "choose": 0,
+    "options": [
+      "Riesisch"
+    ]
+  },
+  "granted_feat_id": "runenschaerfer",
+  "granted_feat_name": "Runenschaerfer",
+  "modifiers": [],
+  "choice_sets": [
+    {
+      "id": "runenschnitzer-handwerkerwerkzeug",
+      "type": "tool",
+      "choose": 1,
+      "options": [
+        "Handwerkerwerkzeuge"
+      ],
+      "source": "runenschnitzer"
+    }
+  ],
+  "spellcasting": {
+    "ability": null,
+    "spell_choices": [],
+    "always_prepared": false
+  },
+  "starting_equipment": [
+    {
+      "text": "Waehle A oder B: (A) Handwerkerwerkzeuge deiner Wahl, kleines Messer, Schleifstein, Reisekleidung, 10 GM; oder (B) 50 GM",
+      "a": {
+        "granted_item_ids": [
+          "Handwerkerwerkzeuge deiner Wahl",
+          "kleines Messer",
+          "[[item:schleifstein]]",
+          "[[item:wanderkleidung|Reisekleidung]]",
+          "[[item:beutel|Beutel mit 10 GM]]"
+        ]
+      },
+      "b": {
+        "granted_item_ids": [
+          "[[item:beutel|Beutel mit 50 GM]]"
+        ]
+      }
+    }
+  ],
+  "legacy_features": [
+    {
+      "id": "rune-styles",
+      "name": "Runenstil",
+      "original_name": "Rune Styles",
+      "text": "Bestimme dein bevorzugtes Medium fuer Runen: Wachs oder Ton, geschnitzte Holzfiguren, gravierte Glasperlen, bestickte Saeume, geritzte Knochen oder Kerzenwachs, das nach dem Einritzen geglaettet wird. Du kannst mit der SL auch eine eigene passende Methode festlegen.",
+      "source": "Bigby Presents - Glory of the Giants",
+      "source_url": "https://dnd5e.wikidot.com/background:rune-carver",
+      "rules_version": "2014"
+    },
+    {
+      "id": "rune-shaper",
+      "name": "Runenschaerfer",
+      "original_name": "Rune Shaper",
+      "text": "Du erhaeltst das Talent Runenschaerfer. In dieser 2024-Anpassung bleibt es als praegendes Hintergrundtalent erhalten, auch wenn es nicht zu den PHB-Ursprungstalenten gehoert.",
+      "source": "Bigby Presents - Glory of the Giants",
+      "source_url": "https://dnd5e.wikidot.com/background:rune-carver",
+      "rules_version": "2014"
+    }
+  ]
+}

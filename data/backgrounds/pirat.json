@@ -2,41 +2,81 @@
   "id": "pirat",
   "type": "background",
   "name": "Pirat",
-  "original_name": null,
+  "original_name": "Pirate",
   "rules_version": "2024",
-  "source": "",
-  "source_url": null,
-  "source_page": null,
+  "source": "Player's Handbook (2014), angepasst fuer 2024",
+  "source_url": "https://dnd5e.wikidot.com/background:sailor#toc1",
+  "source_page": "dnd5e.wikidot.com",
   "license": {
     "name": "Creative Commons Attribution-ShareAlike 3.0 License",
     "spdx": "CC-BY-SA-3.0",
     "url": "https://creativecommons.org/licenses/by-sa/3.0/"
   },
-  "translation_note": null,
-  "category": "",
-  "group": "",
+  "translation_note": "Aus der 2014-Variante Pirate des Sailor-Hintergrunds in das 2024-Hintergrundschema uebertragen. Die 2024-Spielwerte orientieren sich am Sailor-Hintergrund; Bad Reputation bleibt als erzaehlerisches Variantenmerkmal erhalten.",
+  "category": "Hintergruende",
+  "group": "Gewoehnlich",
   "prerequisites": [],
-  "summary": "",
-  "entries": [],
-  "text": "",
-  "tags": [],
-  "ability_scores": [],
+  "summary": "Du warst auf See zuhause, aber dein Ruf stammt nicht von ehrlicher Arbeit an Deck, sondern von Ueberfaellen, Schmuggel und einschuechternden Geschichten aus den Hafenstaedten.",
+  "entries": [
+    {
+      "type": "paragraph",
+      "text": "Du hast einen Teil deines Lebens unter Piraten verbracht: als Deckhand, Navigator, Beuteteiler oder vielleicht sogar als angehender Kapitaen. Sturm, Blut, Verrat und schnelle Fluchten gehoerten zu deinem Alltag, und in vielen Hafenstaedten reicht dein Name, damit Gespraeche leiser werden. Nun suchst du an Land oder auf neuen Routen nach Reichtum, Freiheit oder einem Ausweg aus deiner Vergangenheit."
+    },
+    {
+      "type": "paragraph",
+      "text": "Faehigkeitswerte: Staerke, Geschicklichkeit, Weisheit Talent: Tavernen-Schlaeger Fertigkeiten: Akrobatik und Wahrnehmung Werkzeugkompetenz: Navigationswerkzeug Ausruestung: Waehle A oder B: (A) Dolch, Navigationswerkzeug, Hanf-Seil, Gluecksbringer, Reisekleidung, 20 GM; oder (B) 50 GM"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2014-Merkmale"
+    },
+    {
+      "type": "paragraph",
+      "text": "Schlechter Ruf: Dein Ruf macht vielen Menschen Angst. In zivilisierten Siedlungen kannst du mit kleineren Vergehen davonkommen, etwa einer unbezahlten Zeche oder eingeschuechterten Ladenbesitzern, weil Betroffene dich oft lieber nicht bei den Behoerden melden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schiffspassage: Optionale Alternative: Wenn deine Piratenvergangenheit eher aus normalem Seefahrtsdienst hervorging, kannst du stattdessen die Schiffspassage des Seemanns verwenden und ueber alte Crewkontakte eine kostenlose, aber nicht frei planbare Passage fuer die Gruppe organisieren."
+    }
+  ],
+  "text": "Du hast einen Teil deines Lebens unter Piraten verbracht: als Deckhand, Navigator, Beuteteiler oder vielleicht sogar als angehender Kapitaen. Sturm, Blut, Verrat und schnelle Fluchten gehoerten zu deinem Alltag, und in vielen Hafenstaedten reicht dein Name, damit Gespraeche leiser werden. Nun suchst du an Land oder auf neuen Routen nach Reichtum, Freiheit oder einem Ausweg aus deiner Vergangenheit.\n\nFaehigkeitswerte: Staerke, Geschicklichkeit, Weisheit Talent: Tavernen-Schlaeger Fertigkeiten: Akrobatik und Wahrnehmung Werkzeugkompetenz: Navigationswerkzeug Ausruestung: Waehle A oder B: (A) Dolch, Navigationswerkzeug, Hanf-Seil, Gluecksbringer, Reisekleidung, 20 GM; oder (B) 50 GM\n\n2014-Merkmale\n\nSchlechter Ruf: Dein Ruf macht vielen Menschen Angst. In zivilisierten Siedlungen kannst du mit kleineren Vergehen davonkommen, etwa einer unbezahlten Zeche oder eingeschuechterten Ladenbesitzern, weil Betroffene dich oft lieber nicht bei den Behoerden melden.\n\nSchiffspassage: Optionale Alternative: Wenn deine Piratenvergangenheit eher aus normalem Seefahrtsdienst hervorging, kannst du stattdessen die Schiffspassage des Seemanns verwenden und ueber alte Crewkontakte eine kostenlose, aber nicht frei planbare Passage fuer die Gruppe organisieren.",
+  "tags": [
+    "see",
+    "pirat",
+    "ruf",
+    "hafen"
+  ],
+  "ability_scores": [
+    "str",
+    "dex",
+    "wis"
+  ],
   "ability_score_choices": {
     "choose": 3,
-    "options": [],
+    "options": [
+      "str",
+      "dex",
+      "wis"
+    ],
     "bonuses": [
       2,
       1
     ]
   },
-  "skill_proficiencies": [],
-  "tool_proficiencies": [],
+  "skill_proficiencies": [
+    "Akrobatik",
+    "Wahrnehmung"
+  ],
+  "tool_proficiencies": [
+    "[[item:navigationswerkzeug]]", "Wasserfahrzeuge"
+  ],
   "language_choices": {
     "choose": 0,
     "options": []
   },
-  "granted_feat_id": null,
-  "granted_feat_name": "",
+  "granted_feat_id": "tavernen-schlaeger",
+  "granted_feat_name": "Tavernen-Schlaeger",
   "modifiers": [],
   "choice_sets": [],
   "spellcasting": {
@@ -44,5 +84,44 @@
     "spell_choices": [],
     "always_prepared": false
   },
-  "starting_equipment": []
+  "starting_equipment": [
+    {
+      "text": "Waehle A oder B: (A) Dolch, Navigationswerkzeug, Hanf-Seil, Gluecksbringer, Reisekleidung, 20 GM; oder (B) 50 GM",
+      "a": {
+        "granted_item_ids": [
+          "[[item:dolch]]",
+          "[[item:navigationswerkzeug]]",
+          "[[item:hanf-seil]]",
+          "Gluecksbringer",
+          "[[item:wanderkleidung|Reisekleidung]]",
+          "[[item:beutel|Beutel mit 20 GM]]"
+        ]
+      },
+      "b": {
+        "granted_item_ids": [
+          "[[item:beutel|Beutel mit 50 GM]]"
+        ]
+      }
+    }
+  ],
+  "legacy_features": [
+    {
+      "id": "bad-reputation",
+      "name": "Schlechter Ruf",
+      "original_name": "Bad Reputation",
+      "text": "Dein Ruf macht vielen Menschen Angst. In zivilisierten Siedlungen kannst du mit kleineren Vergehen davonkommen, etwa einer unbezahlten Zeche oder eingeschuechterten Ladenbesitzern, weil Betroffene dich oft lieber nicht bei den Behoerden melden.",
+      "source": "Player's Handbook 2014",
+      "source_url": "https://dnd5e.wikidot.com/background:sailor",
+      "rules_version": "2014"
+    },
+    {
+      "id": "ships-passage",
+      "name": "Schiffspassage",
+      "original_name": "Ship's Passage",
+      "text": "Optionale Alternative: Wenn deine Piratenvergangenheit eher aus normalem Seefahrtsdienst hervorging, kannst du stattdessen die Schiffspassage des Seemanns verwenden und ueber alte Crewkontakte eine kostenlose, aber nicht frei planbare Passage fuer die Gruppe organisieren.",
+      "source": "Player's Handbook 2014",
+      "source_url": "https://dnd5e.wikidot.com/background:sailor",
+      "rules_version": "2014"
+    }
+  ]
 }

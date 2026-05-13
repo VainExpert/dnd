@@ -6,28 +6,37 @@
   "rules_version": "2024",
   "source": "Player's Handbook",
   "source_url": "http://dnd2024.wikidot.com/background:sage",
-  "source_page": "dnd2024.wikidot.com",
   "license": {
     "name": "Creative Commons Attribution-ShareAlike 3.0 License",
     "spdx": "CC-BY-SA-3.0",
     "url": "https://creativecommons.org/licenses/by-sa/3.0/"
   },
-  "translation_note": "Automatisch aus dem englischen Wikidot-Text ins Deutsche uebersetzt; Inhalte wurden auf den deutschen Text normalisiert.",
-  "category": "Hintergruende",
-  "group": "Gewoehnlich",
+  "category": "Hintergründe",
+  "group": "Gewöhnlich",
   "prerequisites": [],
-  "summary": "Sie verbrachten Ihre prägenden Jahre damit, zwischen Herrenhäusern und Klöstern zu reisen und im Gegenzug für den Zugang zu deren Bibliotheken verschiedene Gelegenheitsarbeiten und Dienstleistungen auszuführen. Sie haben viele lange Abende damit verbracht, Bücher und Schriftrollen zu studieren, die Überlieferungen des Multiversums kennenzulernen – sogar die Grundlagen der Magie – und Ihr Geist sehnt sich nach mehr.",
   "entries": [
     {
       "type": "paragraph",
-      "text": "Sie verbrachten Ihre prägenden Jahre damit, zwischen Herrenhäusern und Klöstern zu reisen und im Gegenzug für den Zugang zu deren Bibliotheken verschiedene Gelegenheitsarbeiten und Dienstleistungen auszuführen. Sie haben viele lange Abende damit verbracht, Bücher und Schriftrollen zu studieren, die Überlieferungen des Multiversums kennenzulernen – sogar die Grundlagen der Magie – und Ihr Geist sehnt sich nach mehr."
+      "text": "Sie verbrachten Ihre prägenden Jahre damit, zwischen Herrenhäusern und Klöstern zu reisen und im Gegenzug für den Zugang zu deren Bibliotheken verschiedene Gelegenheitsarbeiten und Dienstleistungen auszuführen. Sie haben viele lange Abende damit verbracht, Bücher und Schriftrollen zu studieren, die Überlieferungen des Multiversums kennenzulernen - sogar die Grundlagen der Magie - und Ihr Geist sehnt sich nach mehr."
     },
     {
       "type": "paragraph",
-      "text": "Fähigkeitswerte: Konstitution, Intelligenz, Weisheit Talent: Magischer Eingeweihter (Zauberer) Fertigkeiten: Arcana und Geschichte Werkzeugkompetenz: Vorräte des Kalligraphen Ausrüstung: Wählen Sie A oder B: (A) Quartierstab, Vorräte des Kalligraphen, Buch (Geschichte), Pergament (8 Blätter), Robe, 8 GP; oder (B) 50 GP"
+      "text": "Fähigkeitswerte: Konstitution, Intelligenz, Weisheit Talent: Magischer Eingeweihter (Zauberer) Fertigkeiten: Arkane-Kunde und Geschichte Werkzeugkompetenz: Kalligraphiewerkzeuge Ausrüstung: Wählen Sie A oder B: (A) Kampfstab, Kalligraphiewerkzeuge, Buch (Geschichte), Pergament (8 Blätter), Robe, 8 GM; oder (B) 50 GM"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2014-Merkmale"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fachgebiet: Bestimme die Art deiner Gelehrsamkeit, etwa Alchemie, Astronomie, verfemte Akademie, Bibliothekswesen, Professur, Forschung, Zauberlehre oder Schreibkunst. Das Fachgebiet beschreibt, woher dein Wissen und deine Kontakte stammen."
+    },
+    {
+      "type": "paragraph",
+      "text": "Forscher: Wenn du eine bestimmte Information nicht selbst kennst, weisst du oft, wo oder bei wem du danach suchen kannst: Bibliothek, Skriptorium, Universitaet, Gelehrte oder andere sachkundige Wesen. Die SL kann festlegen, dass ein Geheimnis schwer erreichbar ist, nicht auffindbar bleibt oder ein eigenes Abenteuer erfordert."
     }
   ],
-  "text": "Sie verbrachten Ihre prägenden Jahre damit, zwischen Herrenhäusern und Klöstern zu reisen und im Gegenzug für den Zugang zu deren Bibliotheken verschiedene Gelegenheitsarbeiten und Dienstleistungen auszuführen. Sie haben viele lange Abende damit verbracht, Bücher und Schriftrollen zu studieren, die Überlieferungen des Multiversums kennenzulernen – sogar die Grundlagen der Magie – und Ihr Geist sehnt sich nach mehr.\n\nFähigkeitswerte: Konstitution, Intelligenz, Weisheit Talent: Magischer Eingeweihter (Zauberer) Fertigkeiten: Arcana und Geschichte Werkzeugkompetenz: Vorräte des Kalligraphen Ausrüstung: Wählen Sie A oder B: (A) Quartierstab, Vorräte des Kalligraphen, Buch (Geschichte), Pergament (8 Blätter), Robe, 8 GP; oder (B) 50 GP",
   "tags": [],
   "ability_scores": [
     "con",
@@ -51,7 +60,7 @@
     "Geschichte"
   ],
   "tool_proficiencies": [
-    "Vorräte des Kalligraphen"
+    "[[item:kalligraphiewerkzeuge]]"
   ],
   "language_choices": {
     "choose": 0,
@@ -118,7 +127,44 @@
   },
   "starting_equipment": [
     {
-      "text": "Wählen Sie A oder B: (A) Quartierstab, Vorräte des Kalligraphen, Buch (Geschichte), Pergament (8 Blätter), Robe, 8 GP; oder (B) 50 GP"
+      "text": "Wählen Sie A oder B: (A) Kampfstab, Kalligraphiewerkzeuge, Buch (Geschichte), Pergament (8 Blätter), Robe, 8 GM; oder (B) 50 GM",
+      "a": {
+        "granted_item_ids": [
+          "[[item:kampfstab]]",
+          "[[item:kalligraphiewerkzeuge]]",
+          "[[item:buch|Geschichtsbuch]]",
+          "[[item:heiliges-symbol]]",
+          "[[item:pergament]] (8 Blätter)",
+          "[[item:robe]]",
+          "[[item:beutel|Beutel mit 8 GM]]"
+        ]
+      },
+      "b": {
+        "granted_item_ids": [
+          "[[item:beutel|Beutel mit 50 GM]]"
+        ]
+      }
     }
-  ]
+  ],
+  "legacy_features": [
+    {
+      "id": "specialty",
+      "name": "Fachgebiet",
+      "original_name": "Specialty",
+      "text": "Bestimme die Art deiner Gelehrsamkeit, etwa Alchemie, Astronomie, verfemte Akademie, Bibliothekswesen, Professur, Forschung, Zauberlehre oder Schreibkunst. Das Fachgebiet beschreibt, woher dein Wissen und deine Kontakte stammen.",
+      "source": "Player's Handbook 2014",
+      "source_url": "https://dnd5e.wikidot.com/background:sage",
+      "rules_version": "2014"
+    },
+    {
+      "id": "researcher",
+      "name": "Forscher",
+      "original_name": "Researcher",
+      "text": "Wenn du eine bestimmte Information nicht selbst kennst, weisst du oft, wo oder bei wem du danach suchen kannst: Bibliothek, Skriptorium, Universitaet, Gelehrte oder andere sachkundige Wesen. Die SL kann festlegen, dass ein Geheimnis schwer erreichbar ist, nicht auffindbar bleibt oder ein eigenes Abenteuer erfordert.",
+      "source": "Player's Handbook 2014",
+      "source_url": "https://dnd5e.wikidot.com/background:sage",
+      "rules_version": "2014"
+    }
+  ],
+  "text": "Sie verbrachten Ihre prägenden Jahre damit, zwischen Herrenhäusern und Klöstern zu reisen und im Gegenzug für den Zugang zu deren Bibliotheken verschiedene Gelegenheitsarbeiten und Dienstleistungen auszuführen. Sie haben viele lange Abende damit verbracht, Bücher und Schriftrollen zu studieren, die Überlieferungen des Multiversums kennenzulernen - sogar die Grundlagen der Magie - und Ihr Geist sehnt sich nach mehr.\n\nFähigkeitswerte: Konstitution, Intelligenz, Weisheit Talent: Magischer Eingeweihter (Zauberer) Fertigkeiten: Arkane-Kunde und Geschichte Werkzeugkompetenz: Kalligraphiewerkzeuge Ausrüstung: Wählen Sie A oder B: (A) Kampfstab, Kalligraphiewerkzeuge, Buch (Geschichte), Pergament (8 Blätter), Robe, 8 GM; oder (B) 50 GM\n\n2014-Merkmale\n\nFachgebiet: Bestimme die Art deiner Gelehrsamkeit, etwa Alchemie, Astronomie, verfemte Akademie, Bibliothekswesen, Professur, Forschung, Zauberlehre oder Schreibkunst. Das Fachgebiet beschreibt, woher dein Wissen und deine Kontakte stammen.\n\nForscher: Wenn du eine bestimmte Information nicht selbst kennst, weisst du oft, wo oder bei wem du danach suchen kannst: Bibliothek, Skriptorium, Universitaet, Gelehrte oder andere sachkundige Wesen. Die SL kann festlegen, dass ein Geheimnis schwer erreichbar ist, nicht auffindbar bleibt oder ein eigenes Abenteuer erfordert."
 }
